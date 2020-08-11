@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [chatMessage](../resources/chatmessage.md) in the specified [chat](../resources/chat.md). This API cannot create an new chat, you must use the [list chats](chat-list.md) method to retreive the Id of an existing chat before creating a chat message.
+Create a new [chatMessage](../resources/chatmessage.md) in the specified [chat](../resources/chat.md). This API cannot create an new chat; you must use the [list chats](chat-list.md) method to retreive the ID of an existing chat before creating a chat message.
 
 > **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
 
@@ -42,11 +42,11 @@ POST /users/{id}/chats/{id}/messages
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {code}. Required. |
 
 ## Request body
 
-In the request body, supply a JSON representation of [chatMessage](../resources/chatmessage.md) object.
+In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object.
 
 ## Response
 
@@ -54,7 +54,7 @@ If successful, this method returns a `201 Created` response code and a new [chat
 
 ## Examples
 
-For a more comprehensive list of examples please refer to [Create chatMessage in a channel or a chat](chatmessage-post.md).
+For a more comprehensive list of examples, see [Create chatMessage in a channel or a chat](chatmessage-post.md).
 
 ### Request
 
@@ -95,8 +95,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

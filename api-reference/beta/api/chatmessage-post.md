@@ -65,11 +65,12 @@ POST /users/{id}/chats/{id}/messages
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {code}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 
-In the request body, supply a JSON representation of a [message](../resources/chatmessage.md) object. Only the body property is mandatory, other properties are optional.
+In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object. Only the body property is mandatory; other properties are optional.
 
 
 ## Response
@@ -78,7 +79,7 @@ If successful, this method returns a `201 Created` response code and a new [chat
 
 ## Examples
 
-In the following examples, the url can be changed to the patterns described [above](#http-request) to [send message to a chat](chat-post-message.md), [send message to a channel](channel-post-message.md) or [send reply to a channel](channel-post-messagereply.md).
+In the following examples, the URL can use the [HTTP syntax](#http-request) described to [send a message to a chat](chat-post-message.md), [send a message to a channel](channel-post-message.md), or [send reply to a channel](channel-post-messagereply.md).
 
 ### Example 1: Hello World
 
@@ -120,8 +121,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -268,7 +268,7 @@ Content-length: 160
 #### Request
 The following is an example of the request.
 
-> Note: The attachment's ID must be unique and can be a new randomly generated GUID. However, the attachment's ID must be the same in the _body_ and _attachments_ elements.
+> **Note:** The attachment's ID must be unique and can be a new randomly generated GUID. However, the attachment's ID must be the same in the _body_ and _attachments_ elements.
 
 <!-- {
   "blockType": "request",
@@ -445,9 +445,9 @@ Content-type: application/json
 #### Request
 The following is an example of the request.
 
-> Note: The temporaryId in hostedContents collection is a random Id, but must be same across *body* and *hostedContents* elements. (Notice the temporaryId set to **1** and the reference in body as *../hostedContents/**1**/$value*)
+> **Note:** The **temporaryId** in hostedContents collection is a random ID, but must be same across **body** and **hostedContents** elements. (Notice the **temporaryId** set to **1** and the reference in body as `../hostedContents/**1**/$value`.)
 
-> Note: *contentBytes* must be set to binary string i.e. Base64 encoded bytes, this can be achieved in C# by `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+**contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
 <!-- {
   "blockType": "request",

@@ -41,7 +41,8 @@ POST /teams/{id}/channels/{id}/messages
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {code}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 
@@ -54,7 +55,7 @@ If successful, this method returns a `201 Created` response code and a new [chat
 
 ## Examples
 
-For a more comprehensive list of examples please refer to [Create chatMessage in a channel or a chat](chatmessage-post.md).
+For a more comprehensive list of examples, see [Create chatMessage in a channel or a chat](chatmessage-post.md).
 
 ### Request
 The following is an example of the request.
@@ -94,8 +95,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
