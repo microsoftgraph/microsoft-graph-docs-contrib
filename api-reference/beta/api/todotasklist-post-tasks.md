@@ -45,19 +45,19 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|body|[itemBody](../resources/itembody.md)|**TODO: Add Description**|
-|completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|**TODO: Add Description**|
-|dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|**TODO: Add Description**|
-|importance|importance|**TODO: Add Description**. Possible values are: `low`, `normal`, `high`.|
-|isReminderOn|Boolean|**TODO: Add Description**|
-|recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|**TODO: Add Description**|
-|reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|**TODO: Add Description**|
-|status|taskStatus|**TODO: Add Description**. Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|title|String|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|bodyLastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
+|id|String|Unique identifier for the task. By default, this value changes when the item is moved from one list to another.|
+|body|[itemBody](../resources/itembody.md)|The task body that typically contains information about the task.|
+|completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task was finished.|
+|dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task is to be finished.|
+|importance|importance|The importance of the task. Possible values are: `low`, `normal`, `high`.|
+|isReminderOn|Boolean|Set to true if an alert is set to remind the user of the task.|
+|recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|The recurrence pattern for the task.|
+|reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date and time for a reminder alert of the task to occur.|
+|status|taskStatus|Indicates the state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
+|title|String|A brief description of the task.|
+|createdDateTime|DateTimeOffset|The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.|
+|bodyLastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.|
 
 
 
