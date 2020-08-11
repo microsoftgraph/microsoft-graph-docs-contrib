@@ -34,13 +34,6 @@ The rest of the articles in this section help you move your app from Azure AD Gr
 - Links to additional resources and examples to illustrate specific differences.
 - An FAQ to address other questions or concerns
 
-## Next Steps
-
-- Walk through the [app migration checklist](migrate-azure-ad-graph-planning-checklist.md) to help you plan the move.
-- Explore [Microsoft Graph](/graph/overview) concepts and practices.
-- Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
-- To learn more about progress updates and timelines, see [Microsoft Graph or the Azure AD Graph](https://developer.microsoft.com/graph/blogs/microsoft-graph-or-azure-ad-graph/).
-
 
 ## Frequently asked questions (FAQ)
 
@@ -63,4 +56,11 @@ Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It pro
 While we do not have any tools to announce at this time, we are always working on improving our developers' platform experience.  This includes providing tooling and data to facilitate keeping your applications current with API changes.
 
 ### How do I get help migrating my application?  
-See the [Migration guidance](## Next Steps) section of this article. If after reading you have additional questions, you can post on Stack Overflow with the tag `[aadgraph-deprecation]` or open an issue in the API's [GitHub repository](https://github.com/microsoftgraph).
+See the Next Steps section of this article. If after reading you have additional questions, you can post on Stack Overflow with the tag `[aadgraph-deprecation]` or open an issue in the API's [GitHub repository](https://github.com/microsoftgraph).
+
+## Next Steps
+
+- Walk through the [app migration checklist](migrate-azure-ad-graph-planning-checklist.md) to help you plan the move.
+- Explore [Microsoft Graph](/graph/overview) concepts and practices.
+- Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
+- To learn more about progress updates and timelines, see [Microsoft Graph or the Azure AD Graph](https://developer.microsoft.com/graph/blogs/microsoft-graph-or-azure-ad-graph/).
