@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).
 
-> **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
+*We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.*
 
 > **Note**: It is a violation of the [terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
 
@@ -45,7 +45,7 @@ POST /teams/{id}/channels/{id}/messages
 
 ## Request body
 
-In the request body, supply a JSON representation of a [message](../resources/chatmessage.md) object. Only the body property is mandatory, other properties are optional.
+In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object. Only the body property is mandatory, other properties are optional.
 
 
 ## Response
