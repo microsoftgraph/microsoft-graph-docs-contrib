@@ -1,6 +1,6 @@
 ---
 title: "Delete teamsApp"
-description: "Delete a Teams app from your organization's app catalog (the tenant app catalog). "
+description: "Remove a Teams app from an organization's app catalog (the tenant app catalog). "
 localization_priority: Normal
 author: "nkramer"
 ms.prod: "microsoft-teams"
@@ -66,7 +66,7 @@ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 
 None.
 
->**Note:** Use the ID returned from the [List published apps](./teamsapp-list.md) call for to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
+>**Note:** Use the ID returned from the [List published apps](./teamsapp-list.md) call to reference the app you'd like to delete. Do not use the ID from the manifest of the zip app package.
 
 ## Response
 
