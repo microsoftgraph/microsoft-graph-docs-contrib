@@ -41,7 +41,7 @@ Represents the current status of a user within scope of a company's customizable
 |userDisplayName|String|Display name of the user when the acceptance was recorded.|
 |userEmail|String|Email of the user when the acceptance was recorded.|
 |userId|String|ID of the user who accepted the agreement.|
-
+|userPrincipalName|String|UPN of the user when the acceptance was recorded.|
 
 ## Relationships
 None.
@@ -61,20 +61,20 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-      "id": "a161f00d-27b7-42e5-9230-ae0544249a8e_ba1505ac-64bb-40a3-934e-38aaee798cd8",
-      "agreementId": "a161f00d-27b7-42e5-9230-ae0544249a8e",
-      "userId": "ba1505ac-64bb-40a3-934e-38aaee798cd8",
-      "deviceId": "00000000-0000-0000-0000-000000000000",
-      "deviceDisplayName": "Sample display",
-      "deviceOSType": "Sample OS 1",
-      "deviceOSVersion": "1.1",
-      "agreementFileId": "22c7a9b7-5e93-43e3-a33d-7158ee040b0d",
-      "userDisplayName": "user 1",
-      "userPrincipalName": "user_1@testlocal1.ccsctp.net",
-      "userEmail": null,
-      "recordedDateTime": "2020-05-13T16:32:11.6191167Z",
-      "expirationDateTime": "2020-05-16T23:19:00Z",
-      "state": "accepted"
+      "id": "String",
+      "agreementId": "String",
+      "userId": "String",
+      "deviceId": "String",
+      "deviceDisplayName": "String",
+      "deviceOSType": "String",
+      "deviceOSVersion": "String",
+      "agreementFileId": "String",
+      "userDisplayName": "String",
+      "userPrincipalName": "String",
+      "userEmail": "String",
+      "recordedDateTime": "String",
+      "expirationDateTime": "String",
+      "state": "String"
 }
 ```
 

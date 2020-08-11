@@ -1,6 +1,6 @@
 ---
 title: "termsExpiration resource type"
-description: "Represents the settings for tenant's customizable terms of use agreement that is created and managed with Azure Active Directory (Azure AD)."
+description: "Provides additional settings when setting the scheduled expiration of the agreement."
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 author: "raprakasMSFT"
