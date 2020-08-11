@@ -21,6 +21,11 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Deletion | Beta | Removed the **includeProperties** property from the [subscription](/graph/api/resources/subscription?view=graph-rest-beta) entity. This property is replaced by the **includeResourceData** property. |
 | Addition | Beta | Added the ability to get [change notifications delivered via Event Hub](/graph/api/concepts/change-notifications-delivery?view=graph-rest-beta). |
 
+### Identity and access | Identity and sign-in
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition | Beta | Added [passwordSingleSignOnSettings](/graph/api/passwordsinglesignonsettings?view=graph-rest-beta) property to [servicePrincipal](graph/api/resources/servicePrincipal?view=graph-rest-beta) resource
+
 ### Reports | Microsoft 365 usage reports
 
 | **Change type** | **Version**   | **Description**                          |
