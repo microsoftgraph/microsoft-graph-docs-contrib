@@ -33,7 +33,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |id|String| Read-only.|
 |isValidationOnly|Boolean|True if the request is not to be processed for assignment.|
 |justification|String|The requestor's supplied justification.|
-|requestState|String|One of `Denied`, `Delivered`, `PartiallyDelivered`, `Submitted` or `Scheduled`. Read-only.|
+|requestState|String|One of `PendingApproval`, `Canceled`,  `Denied`, `Delivering`, `Delivered`, `PartiallyDelivered`, `Submitted` or `Scheduled`. Read-only.|
 |requestStatus|String|More information on the request processing status. Read-only.|
 |requestType|String|One of `UserAdd`, `UserRemove`, `AdminAdd`, `AdminRemove` or `SystemRemove`. Read-only.|
 |accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| An access package assignment requested to be created.|
