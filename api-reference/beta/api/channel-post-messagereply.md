@@ -47,10 +47,10 @@ If successful, this method returns `201 Created` response code with the [message
 
 ## Example
 
-For a more comprehensive list of examples please refer to [Create chatMessage in a channel or a chat](chatmessage-post.md).
+For a more comprehensive list of examples, see [Create chatMessage in a channel or a chat](chatmessage-post.md).
 
 ### Request
-Here is an example of the request.
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -85,7 +85,7 @@ Content-type: application/json
 
 ### Response
 
-Here is an example of the response.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
