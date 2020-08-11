@@ -41,7 +41,8 @@ POST /teams/{id}/channels/{id}/messages
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {code}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 
