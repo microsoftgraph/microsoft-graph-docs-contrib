@@ -9716,7 +9716,7 @@ items:
               href: api/passwordauthenticationmethod-resetpassword.md
             - name: Get operation status
               href: api/authenticationoperation-get.md
-            - name: Phone
+          - name: Phone
             href: resources/phoneauthenticationmethod.md
             items:
             - name: List
