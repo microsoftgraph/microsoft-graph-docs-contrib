@@ -2,18 +2,13 @@
 description: "Automatically generated file. DO NOT MODIFY"
 ---
 
-```objc
+```java
 
-MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
+IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/policies/claimsMappingPolicies"]]];
-[urlRequest setHTTPMethod:@"POST"];
-[urlRequest setValue:@"claimsMappingPolicies/json" forHTTPHeaderField:@"Content-Type"];
-
-MSGraphClaimsMappingPolicy *claimsMappingPolicy = [[MSGraphClaimsMappingPolicy alloc] init];
-NSMutableArray *definitionList = [[NSMutableArray alloc] init];
-[definitionList addObject: @"{"ClaimsMappingPolicy": {
+ClaimsMappingPolicy claimsMappingPolicy = new ClaimsMappingPolicy();
+LinkedList<String> definitionList = new LinkedList<String>();
+definitionList.add("{"ClaimsMappingPolicy": {
                 "Version": 1,
                 "IncludeBasicClaimSet": "true",
                 "ClaimsSchema": [
@@ -44,22 +39,13 @@ NSMutableArray *definitionList = [[NSMutableArray alloc] init];
                     }
                 ]
             }
-        }"];
-[claimsMappingPolicy setDefinition:definitionList];
-[claimsMappingPolicy setDisplayName:@"AWS Claims policy"];
-[claimsMappingPolicy setIsOrganizationDefault: false];
+        }");
+claimsMappingPolicy.definition = definitionList;
+claimsMappingPolicy.displayName = "AWS Claims policy";
+claimsMappingPolicy.isOrganizationDefault = false;
 
-NSError *error;
-NSData *claimsMappingPolicyData = [claimsMappingPolicy getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:claimsMappingPolicyData];
-
-MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
-	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
-
-		//Request Completed
-
-}];
-
-[meDataTask execute];
+graphClient.policies().claimsMappingPolicies()
+	.buildRequest()
+	.post(claimsMappingPolicy);
 
 ```
