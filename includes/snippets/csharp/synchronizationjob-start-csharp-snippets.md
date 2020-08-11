@@ -6,8 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var chat = await graphClient.Users["{id}"].Chats["{id}"]
+await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs["{jobId}"]
+	.Start()
 	.Request()
-	.GetAsync();
+	.PostAsync();
 
 ```
