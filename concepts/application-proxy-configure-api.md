@@ -17,16 +17,15 @@ Make sure you have the corresponding permissions to call the following APIs.
 
 |Resource type |Method |
 |---------|---------|
-| [applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta)| [Instantiate applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) |
-|[applications](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)<br> [onPremisesPublishing](https://docs.microsoft.com/graph/api/resources/onpremisespublishing?view=graph-rest-beta)|[Update application](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-beta)<br> [Add application to connectorGroup](https://docs.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
+|[applications](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)<br> [onPremisesPublishing](https://docs.microsoft.com/graph/api/resources/onpremisespublishing?view=graph-rest-beta)| [Create application](https://docs.microsoft.com/graph/api/application-post-applications?view=graph-rest-beta&tabs=http) <br> [Update application](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-beta)<br> [Add application to connectorGroup](https://docs.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
 |[connector](https://docs.microsoft.com/graph/api/resources/connector?view=graph-rest-beta)| [Get connectors](https://docs.microsoft.com/graph/api/connector-get?view=graph-rest-beta)
 |[connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Create connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Add connector to connectorGroup](https://docs.microsoft.com/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
-|[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Update servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Create appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
+|[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Create servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-post-serviceprincipals?view=graph-rest-beta&tabs=http) <br> [Update servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Create appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
 
 >[!NOTE]
 > The requests shown in this article uses sample values. You will need update these. The response objects shown may also be shortened for readability. All the properties will be returned from an actual call.
 
-## Step 1: Create a custom application
+## Step 1: Create an application
 
 ### Sign in to Microsoft Graph Explorer (recommended), Postman, or any other API client you use
 
@@ -34,10 +33,9 @@ Make sure you have the corresponding permissions to call the following APIs.
 2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator or App Admin credentials.
 3. Upon successful sign-in, you'll see the user account details in the left pane.
 
-### Create a custom application
+### Create an application
 
-To configure Application Proxy for an app using the API, you must first create a custom application, then update the application's **onPremisesPublishing** property for the app to configure the App Proxy settings.
-Use [instantiate applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) to create an instance of a custom application and service principal in your tenant for management. The template ID for a custom application is: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
+To configure Application Proxy for an app using the API, you must first create an application, add a service principal to the app, then update the application's **onPremisesPublishing** property to configure the App Proxy settings. When creating the application set the application's **signInAudience** to "AzureADMyOrg".
 
 #### Request
 
@@ -49,11 +47,12 @@ Use [instantiate applicationTemplate](https://docs.microsoft.com/graph/api/resou
 }-->
 
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/applicationTemplates/8adf8e6e-67b2-4cf2-a259-e3dc5476c621/instantiate
+POST https://graph.microsoft.com/beta/applications
 Content-type: application/json
 
 {
-  "displayName": "Contoso IWA App"
+  "displayName": "Contoso IWA App",
+  "signInAudience":"AzureADMyOrg"
 }
 ```
 # [C#](#tab/csharp)
@@ -71,7 +70,6 @@ Content-type: application/json
 ---
 
 
-
 #### Response
 
 <!-- {
@@ -86,70 +84,115 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.applicationServicePrincipal",
-    "application": {
-        "objectId": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
-        "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b",
-        "applicationTemplateId": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621",
-        "displayName": "Contoso IWA App",
-        "homepage": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=customappsso|ISV9.1|primary|z",
-        "identifierUris": [],
-        "publicClient": null,
-        "replyUrls": [],
-        "logoutUrl": null,
-        "samlMetadataUrl": null,
-        "errorUrl": null,
-        "groupMembershipClaims": null,
-        "availableToOtherTenants": false
-    },
-    "servicePrincipal": {
-        "objectId": "b00c693f-9658-4c06-bd1b-c402c4653dea",
-        "deletionTimestamp": null,
-        "accountEnabled": true,
-        "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b",
-        "appDisplayName": "Contoso API",
-        "applicationTemplateId": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621",
-        "appRoleAssignmentRequired": true,
-        "displayName": "Contoso API",
-        "errorUrl": null,
-        "logoutUrl": null,
-        "homepage": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=customappsso|ISV9.1|primary|z",
-        "samlMetadataUrl": null,
-        "microsoftFirstParty": null,
-        "publisherName": "f/128 Photography",
-        "preferredTokenSigningKeyThumbprint": null,
-        "replyUrls": [],
-        "servicePrincipalNames": [
-            "d7fbfe28-c60e-46d2-8335-841923950d3b"
-        ],
-        "tags": [
-            "WindowsAzureActiveDirectoryIntegratedApp",
-            "WindowsAzureActiveDirectoryCustomSingleSignOnApplication"
-        ],
-        "notificationEmailAddresses": [],
-        "keyCredentials": [],
-        "passwordCredentials": []
-    }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
+  "id": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
+  "deletedDateTime": null,
+  "addIns": [],
+  "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b",
+  "applicationTemplateId": null,
+  "identifierUris": [],
+  "createdDateTime": "2020-08-11T21:07:47.5919755Z",
+  "description": null,
+  "displayName": "Contoso IWA App",
+  "isAuthorizationServiceEnabled": false,
+  "isDeviceOnlyAuthSupported": null,
+  "isFallbackPublicClient": null,
+  "groupMembershipClaims": null,
+  "notes": null,
+  "optionalClaims": null,
+  "orgRestrictions": [],
+  "publisherDomain": "f128.info",
+  "signInAudience": "AzureADandPersonalMicrosoftAccount",
+  "tags": [],
+  "tokenEncryptionKeyId": null,
+  "uniqueName": null,
+  "verifiedPublisher": {
+      "displayName": null,
+      "verifiedPublisherId": null,
+      "addedDateTime": null
+  },
 }
 ```
 
-
-### Retrieve app object ID and service principal object ID
-Use the response from the previous call to retrieve and save the application object ID and service principal object ID.
+### Retrieve the application object ID and appId
+Use the response from the previous call to retrieve and save the application object ID and appId.
 ```
 "application": {
-	"objectId": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83"
-    }
-"servicePrincipal": {
-	"objectId": "b00c693f-9658-4c06-bd1b-c402c4653dea"
-    }
+  "id": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
+  "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b"
+}
+```
+### Create a servicePrincipal for the application and add required tags
+Use the **appId** to create a servicePrincipal for the application. Then add the tags required for configuring Application Proxy for an app.
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_servicePrincipal"
+}-->
+
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/serviceprincipals
+Content-type: appplication/json
+
+{
+  "appId":"d7fbfe28-c60e-46d2-8335-841923950d3b",
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp",
+    "WindowsAzureActiveDirectoryOnPremApp"
+  ]
+}
+```
+
+#### Response
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals/$entity",
+  "id": "a8cac399-cde5-4516-a674-819503c61313",
+  "deletedDateTime": null,
+  "accountEnabled": true,
+  "alternativeNames": [],
+  "createdDateTime": null,
+  "deviceManagementAppType": null,
+  "appDescription": null,
+  "appDisplayName": "Contoso IWA App",
+  "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b",
+  "applicationTemplateId": null,
+  "appOwnerOrganizationId": "7918d4b5-0442-4a97-be2d-36f9f9962ece",
+  "appRoleAssignmentRequired": false,
+  "description": null,
+  "displayName": "vtestapi2",
+  "errorUrl": null,
+  "homepage": null,
+  "isAuthorizationServiceEnabled": false,
+  "loginUrl": null,
+  "logoutUrl": null,
+  "notes": null,
+  "notificationEmailAddresses": [],
+  "preferredSingleSignOnMode": null,
+  "preferredTokenSigningKeyEndDateTime": null,
+  "preferredTokenSigningKeyThumbprint": null,
+  "publisherName": "f/128 Photography",
+  "replyUrls": [],
+  "samlMetadataUrl": null,
+  "samlSingleSignOnSettings": null,
+  "servicePrincipalNames": [
+      "b92b92d4-3874-46a5-b715-a00ea01cff93"
+  ],
+  "servicePrincipalType": "Application",
+}
 ```
 
 ## Step 2: Configure Application Proxy properties
 
 ### Set the onPremisesPublishing configuration
 
-Use the applicationId from the previous step to configure Application Proxy for the app and update the **onPremisesPublishing** property to the desired configuration. In this example, you're using an app with the internal url: `https://contosoiwaapp.com` and using the default domain for the external url: `https://contosoiwaapp-contoso.msappproxy.net`. 
+Use the application object Id from the previous step to configure Application Proxy for the app and update the **onPremisesPublishing** property to the desired configuration. In this example, you're using an app with the internal url: `https://contosoiwaapp.com` and using the default domain for the external url: `https://contosoiwaapp-contoso.msappproxy.net`. 
 
 #### Request
 
@@ -197,8 +240,8 @@ Content-type: appplication/json
 ```http
 HTTP/1.1 204 No content
 ```
-### Set the redirectUri, identifierUri, and homepageUrl properties
-Update the application's **redirectUri**, **identifierUri**, and **homepageUrl** propertes to the external URL.
+### Set additional required properties to complete configuring the application
+ Update the application's **redirectUri**, **identifierUri**, and **homepageUrl** properties to the external UR configured in onPremisesPublishing property. Then update **[implicitGrantSettings](https://docs.microsoft.com/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0)** to true for enabledTokenIssuance and false for enabledAccessTokenIssuance.
 
 #### Request
 
@@ -211,12 +254,16 @@ Update the application's **redirectUri**, **identifierUri**, and **homepageUrl**
 PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
 Content-type: appplication/json
 
-{   
-   "identifierUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
-   "web": {
-      "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
-      "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net"
-   }
+{
+  "identifierUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
+  "web": {
+    "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
+    "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net",
+    "implicitGrantSettings": {
+      "enableIdTokenIssuance": true,
+      "enableAccessTokenIssuance": false
+    }
+  }
 }
 ```
 #### Response
