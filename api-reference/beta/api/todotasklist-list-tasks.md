@@ -29,9 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /me/todo/lists/{todoTaskListId}/tasks
 GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
-
-GET /users/me/todo/lists/{todoTaskListId}/tasks
 ```
 
 ## Optional query parameters
