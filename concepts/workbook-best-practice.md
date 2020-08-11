@@ -179,6 +179,7 @@ The following example shows the response when the request fails.
 ```http
 HTTP/1.1 500 Internal Server Error
 Content-type: application/json
+
 {
   "error":{
     "code": "internalServerError",
@@ -205,9 +206,9 @@ With the long-running operation pattern, you can get the creation status at spec
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
 {
-
 }
 ```
+
 #### Response
 
 The following is the response when the operation has a status of `running`.
@@ -215,6 +216,7 @@ The following is the response when the operation has a status of `running`.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "id": {operation-id},
     "status": "running"
@@ -226,6 +228,7 @@ The following is the response when the operation status is `succeeded`.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "id": {operation-id},
     "status": "succeeded",
@@ -238,6 +241,7 @@ The following is the response when the operation status is `failed`.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "id": {operation-id},
   "status": "failed",
@@ -276,6 +280,7 @@ The following is the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "id": "id-value",
     "persistChanges": true
