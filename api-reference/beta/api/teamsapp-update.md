@@ -49,17 +49,11 @@ PUT /appCatalogs/teamsApps/{id}
 
 In the request body, include a Teams zip manifest payload. For details, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package)
 
->**Note:** Use the ID returned from the [List published apps](./teamsapp-list.md) call for to reference the app you'd like to update.
-
-Do not use the ID from the manifest of the zip app package.
+>**Note:** Use the ID returned from the [List published apps](./teamsapp-list.md) call for to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
 
 ## Response
 
-If successful, this method returns a `204, No Content` response code.
-
-```http
-HTTP/1.1 204 No Content
-```
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -81,8 +75,6 @@ For Teams application zip file [see Create app package](/microsoftteams/platform
 <!-- markdownlint-disable MD024 -->
 
 ### Response
-
-If successful, this method returns a `204, No Content` response code.
 
 ```http
 HTTP/1.1 204 No Content
