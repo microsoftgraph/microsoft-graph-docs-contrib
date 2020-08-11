@@ -205,9 +205,9 @@ With the long-running operation pattern, you can get the creation status at spec
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
 {
-
 }
 ```
+
 #### Response
 
 The following is the response when the operation has a status of `running`.
