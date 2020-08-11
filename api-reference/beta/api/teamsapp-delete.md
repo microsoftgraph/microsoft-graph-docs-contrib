@@ -14,18 +14,11 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 <!-- markdownlint-disable MD001 -->
-### Delete an app from your organization's app catalog
 
-Delete the [app](../resources/teamsapp.md) from your organization's app catalog (the tenant app catalog).
+Delete an [app](../resources/teamsapp.md) from an organization's app catalog (the tenant app catalog).
 To remove your app from your organization's app catalog, specify `organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.
 
-### Delete a submitted app from the review process
-
-```http
-DELETE /appCatalogs/teamsApps/{id}/appDefinitions/{id}
-```
-
-Cancels the [app](../resources/teamsapp.md) submission and deletes the submitted app.  This API is available to the user who submitted the app.
+You can also use this API to remove a submitted app from the review process.
 
 ## Permissions
 
@@ -44,13 +37,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 
+Delete an app from the app catalog:
+
 ```http
 DELETE /appCatalogs/teamsApps/{id}
 ```
 
-### Delete an application that is currently in submitted status
-
-Apps in a `submitted` state are under review and can be either published or rejected by the IT admin.
+Remove a submitted app that has not been approved:
 
 ```http
 DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
@@ -71,12 +64,6 @@ None.
 ## Response
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
-
-The following is an example of the response.
-
-```http
-HTTP/1.1 204 No Content
-```
 
 ## Example
 
