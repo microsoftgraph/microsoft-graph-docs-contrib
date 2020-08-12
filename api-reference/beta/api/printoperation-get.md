@@ -22,9 +22,9 @@ The logged-in user must be a [Print Administrator](https://docs.microsoft.com/en
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Not supported. |
+|Delegated (work or school account)| Printer.Create, Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|Printer.Read, Printer.Create, Printer.ReadWrite.All, Printer.FullControl.All|
+|Application| Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
