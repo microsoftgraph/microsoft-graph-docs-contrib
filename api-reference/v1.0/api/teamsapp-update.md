@@ -51,11 +51,7 @@ In the request body, include a Teams zip manifest payload. For details, see [Cre
 
 ## Response
 
-If successful, this method returns a `204, No Content` response code.
-
-``
-HTTP/1.1 204 No Content
-``
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -78,8 +74,6 @@ Content-length: 244
 <!-- markdownlint-disable MD024 -->
 
 ### Response
-
-If successful, this method returns a `204, No Content` response code.
 
 <!-- {
   "blockType": "response",
