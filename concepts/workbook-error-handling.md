@@ -77,17 +77,17 @@ For both long running operation pattern and regular pattern, we suggest you to a
 | Code                               | Instructions
 |:-----------------------------------|:---------------------------------------------
 | **accessConflict**   | The failed request conflicts with other clients accessing the workbook (for example, another client has locked the workbook for edit). The Graph client is not expected to resend the failed request until the conflict is resolved. An end-user may choose to manually perform the same operations with Excel Online to get more details of the conflict.
-| **accessDenied**   | XXXXX You cannot perform the requested operation.
+| **accessDenied**   | You cannot perform the requested operation (for example, performing changes to locked cells). The Graph client is not expected to resend the failed request.
 | **badRequestUncategorized**    | An unspecified error is found in the failed request. The Graph client is not expected to resend the failed request.
 | **conflictUncategorized**                   | The failed request conflicts with certain server state. The Graph client is not expected to resend the failed request until the conflict is resolved. An end-user may choose to manually perform the same operations with Excel Online to get more details of the conflict.
-| **filteredRangeConflict**                   | XXXXX The operation failed because it conflicts with a filtered range.
+| **filteredRangeConflict**                   | The operation failed because it conflicts with a filtered range. The Graph client is not expected to resend the failed request.
 | **forbiddenUncategorized**                    | The failed request is not allowed. The Graph client is not expected to resend the failed request. An end-user may choose to manually perform the same operations with Excel Online to get more details of the restrictions.
 | **gatewayTimeoutUncategorized**         | The service wasn’t able to complete the request within the time limit. The Graph client is not expected to resend the failed request until the specified cooldown duration passes.
-| **generalException**         | XXXXX There was an internal error while processing the request.
-| **insertDeleteConflict**         | XXXXX The insert or delete operation attempted resulted in a conflict.
+| **generalException**         | There was an internal error while processing the request. The Graph client is not expected to resend the failed request.
+| **insertDeleteConflict**         | The insert or delete operation attempted resulted in a conflict. The Graph client is not expected to resend the failed request.
 | **internalServerErrorUncategorized**       | An unspecified error has occurred. The Graph client is not expected to resend the failed request. If a session is specified in the failed request, further access to the session is not expected either.
-| **invalidArgument**         | XXXXX The argument is invalid or missing or has an incorrect format.
-| **invalidReference**         | XXXXX This reference is not valid for the current operation.
+| **invalidArgument**         | The argument is invalid or missing or has an incorrect format. The Graph client is not expected to resend the failed request.
+| **invalidReference**         | This reference is not valid for the current operation. The Graph client is not expected to resend the failed request.
 | **invalidSessionAccessConflict**             | The session specified in the request is invalid due to conflicts with other clients that are accessing the workbook (for example, another client has locked the workbook for edit). Further access to the session specified in the failed request is not expected. Recreating sessions with the same createSession request is not expected until the conflict is resolved. Recreating sessions with a different createSession request may or may not succeed. An end-user may choose to manually perform the same operations with Excel Online to get more details of the conflict.
 | **invalidSessionAuthentication**         | The session specified in the request is invalid due to an authentication error. Further access to the session specified in the failed request is not expected. Recreating sessions with the same createSession request is not expected until appropriate authentication information is provided.
 | **invalidSessionNotFound**         | The session specified in the request is invalid because the workbook can’t be found. Further access to the session specified in the failed request is not expected. Recreating sessions with the same createSession request is not expected.
@@ -95,20 +95,21 @@ For both long running operation pattern and regular pattern, we suggest you to a
 | **invalidSessionRestricted**          | The session specified in the request is invalid due to service configurations or restrictions. Further access to the session specified in the failed request is not expected. Recreating sessions with the same createSession request is not expected until the restrictions or configurations blocking the request changes. Recreating sessions with a different createSession request may or may not succeed. An end-user may choose to manually perform the same operations with Excel Online to get more details of the restrictions.
 | **invalidSessionUnexpected**                | The session specified in the request is invalid due to an unexpected issue. Further access to the session specified in the failed request is not expected. Recreating sessions with the same createSession request is not expected. Recreating sessions with a different createSession request may or may not succeed.
 | **invalidSessionUnsupportedWorkbook**              | The session specified in the request is invalid because the workbook contains unsupported features or exceeds the size limit. Usually the unsupported factors are introduced by another client accessing the workbook. Further access to the session specified in the failed request is not expected. Recreating sessions with the same createSession request is not expected until the unsupported factors are removed. Recreating sessions with a different createSession request may or may not succeed. An end-user may choose to manually perform the same operations with Excel Online to get more details of the unsupported factors, or with Excel Desktop where the workbook might be supported.
-| **itemAlreadyExists**         | XXXXX The resource being created already exists.
-| **itemNotFound**         | XXXXX The requested resource doesn't exist.
+| **itemAlreadyExists**         | The resource being created already exists. The Graph client is not expected to resend the failed request.
+| **itemNotFound**         | The requested resource doesn't exist. The Graph client is not expected to resend the failed request.
+| **methodNotAllowed**         | The HTTP method specified in the request is not allowed on the resource. The Graph client is not expected to resend the failed request.
 | **methodNotAllowedUncategorized**              | The HTTP method specified in the request is not allowed on the resource. The Graph client is not expected to resend the failed request.
-| **nonBlankCellOffSheet**         | XXXXX Can't insert new cells because it would push non-empty cells off the end of the worksheet.
+| **nonBlankCellOffSheet**         | Can't insert new cells because it would push non-empty cells off the end of the worksheet. The Graph client is not expected to resend the failed request.
 | **notFoundUncategorized**             | The requested resource cannot be found. The Graph client is not expected to resend the failed request.
 | **notImplementedUncategorized**            | The requested feature is not currently implemented. The Graph client is not expected to resend the failed request.
 | **payloadTooLargeUncategorized**              | The request payload exceeds the size limit. The Graph client is not expected to resend the failed request.
-| **rangeExceedsLimit**         | XXXXX The cell count in range has exceeded the maximum supported number.
-| **requestAborted**         | XXXXX The request was aborted during run time.
+| **rangeExceedsLimit**         | The cell count in range has exceeded the maximum supported number. The Graph client may try to send a request with smaller range size.
+| **requestAborted**         | The request was aborted during run time, which was usually caused by long time calculation from functions in the workbook. The Graph client is not expected to resend the failed request.
 | **serviceUnavailableUncategorized**      | The service is temporarily unavailable or is overloaded. The Graph client is not expected to resend the failed request until the specified cooldown duration passes.
 | **tooManyRequestsUncategorized**             | The failed request exceeds certain frequency limitation. The Graph client is not expected to resend the failed request until the specified cooldown duration passes.
 | **transientFailure**           | The request failed due to a transient error. The Graph client is not expected to resend the failed request until the specified cooldown duration passes.
 | **unauthorizedUncategorized**         | Required authentication information for the resource is either missing or invalid. The Graph client is not expected to resend the failed request.
-| **unsupportedOperation**         | XXXXX The operation being attempted is not supported.
+| **unsupportedOperation**         | The operation being attempted is not supported. The Graph client is not expected to resend the failed request.
 | **unsupportedWorkbook**         | The request failed. The workbook contains unsupported features or exceeds the size limit. The Graph client is not expected to resend the failed request until the unsupported factors are removed.
 
 ### 3. Parse top-level error code
