@@ -1,12 +1,12 @@
 ---
-title: "Use Outlook to organize and attend meetings online"
-description: "In Outlook, a meeting organizer can allow invitees to propose alternative meeting times."
+title: "Use Outlook calendar to organize and enable online meetings"
+description: "In an organization that supports online meeting providers, administrators can set up Outlook calendars to support meetings that use these providers."
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
 ---
 
-# Use Outlook to organize or attend meetings online
+# Use Outlook calendar to organize and enable online meetings
 
 In an organization that supports online meeting providers, administrators can set up Outlook calendars to support meetings that use these providers, with one of these providers being the default provider. You can [create](#create-and-enable-a-meeting-online) or [update](#update-a-meeting-to-enable-it-online) an [event](/graph/api/resources/event) in Outlook and allow attendees to join the meeting online using a supported provider. You can conveniently [get the online meeting information](#get-information-to-join-meeting-online) of the **event**, including the URL to join the meeting. 
 
@@ -14,7 +14,7 @@ In an organization that supports online meeting providers, administrators can se
 
 An organization that supports any of the following online meeting providers can set up Outlook calendars and enable organizing meetings online:
 
-- Microsoft Teams, acquired as part of an Office 365 business or enterprise suite
+- Microsoft Teams, acquired as part of a Microsoft 365 business or enterprise suite
 - Skype
 - Skype for Business
 
@@ -467,7 +467,7 @@ Content-type: application/json
 
 
 ## See also
-- For information on Microsoft Teams interoperability with Office 365, see:
+- For information on Microsoft Teams interoperability with Microsoft 365, see:
   - [How Exchange and Microsoft Teams interact](/microsoftteams/exchange-teams-interact)
   - [Setting your coexistence and upgrade settings](/microsoftteams/setting-your-coexistence-and-upgrade-settings)
 - [Choose an API in Microsoft Graph to create and join online meetings](choose-online-meeting-api.md)

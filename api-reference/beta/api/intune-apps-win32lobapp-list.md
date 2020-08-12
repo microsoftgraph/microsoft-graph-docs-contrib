@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3442
+Content-Length: 3933
 
 {
   "value": [
@@ -134,6 +134,18 @@ Content-Length: 3442
           "detectionType": "exists"
         }
       ],
+      "rules": [
+        {
+          "@odata.type": "microsoft.graph.win32LobAppRegistryRule",
+          "ruleType": "requirement",
+          "check32BitOn64System": true,
+          "keyPath": "Key Path value",
+          "valueName": "Value Name value",
+          "operationType": "exists",
+          "operator": "equal",
+          "comparisonValue": "Comparison Value value"
+        }
+      ],
       "installExperience": {
         "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
         "runAsAccount": "user",
@@ -157,7 +169,8 @@ Content-Length: 3442
         "publisher": "Publisher value"
       },
       "setupFilePath": "Setup File Path value",
-      "installLanguage": "Install Language value"
+      "installLanguage": "Install Language value",
+      "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
     }
   ]
 }
