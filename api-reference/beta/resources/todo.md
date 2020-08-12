@@ -18,8 +18,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List lists](../api/todo-post-lists.md) | [todoTaskLists](todotasklist.md) | Create an To Do task list in the user's mailbox. |
-|[Create lists](../api/todo-list-lists.md) | [todoTaskLists](todotasklist.md) collection | Get all the task lists in the user's mailbox. |
+|[Lists lists](../api/todo-list-lists.md) | [todoTaskLists](todotasklist.md) collection | Get all the task lists in the user's mailbox. |
+|[Create lists](../api/todo-post-lists.md) | [todoTaskLists](todotasklist.md) | Create an To Do task list in the user's mailbox. |
 
 ## Properties
 None

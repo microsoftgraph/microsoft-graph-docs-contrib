@@ -24,13 +24,13 @@ This resource supports
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List todoTaskLists](../api/todotasklist-list.md)|[todoTaskList](todotasklist.md) collection|Get all the [todoTaskLists](todotasklist.md) in the users mailbox.|
-|[Create todoTaskList](../api/todotasklist-post-lists.md)|[todoTaskList](todotasklist.md)|Create a new [todoTaskList](todotasklist.md) object.|
-|[Get todoTaskList](../api/todotasklist-get.md)|[todoTaskList](todotasklist.md)|Read the properties and relationships of the specified [todoTaskList](todotasklist.md).|
-|[Update todoTaskList](../api/todotasklist-update.md)|[todoTaskList](todotasklist.md)| Update the writable properties of the specified [todoTaskList](todotasklist.md).|
-|[Delete todoTaskList](../api/todotasklist-delete.md)|None| Delete the specified [todoTaskList](todotasklist.md) .|
-|[List todoTasks](../api/todotasklist-list-tasks.md)|[todoTask](todotask.md) collection|Get all the [todoTasks](todotask.md) in the specified list.|
-|[Create todoTask](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Create a [todoTask](todotask.md) in the specified task list|
+|[List tasklists](../api/todotasklist-list.md)|[todoTaskList](todotasklist.md) collection|Get all the [todoTaskLists](todotasklist.md) in the users mailbox.|
+|[Create tasklist](../api/todotasklist-post-lists.md)|[todoTaskList](todotasklist.md)|Create a new [todoTaskList](todotasklist.md) object.|
+|[Get tasklist](../api/todotasklist-get.md)|[todoTaskList](todotasklist.md)|Read the properties and relationships of the specified [todoTaskList](todotasklist.md).|
+|[Update tasklist](../api/todotasklist-update.md)|[todoTaskList](todotasklist.md)| Update the writable properties of the specified [todoTaskList](todotasklist.md).|
+|[Delete tasklist](../api/todotasklist-delete.md)|None| Delete the specified [todoTaskList](todotasklist.md) .|
+|[List tasks](../api/todotasklist-list-tasks.md)|[todoTask](todotask.md) collection|Get all the [todoTasks](todotask.md) in the specified list.|
+|[Create task](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Create a [todoTask](todotask.md) in the specified task list|
 
 ## Properties
 |Property|Type|Description|
