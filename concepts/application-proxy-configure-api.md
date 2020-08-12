@@ -602,7 +602,7 @@ Use the following properties to assign a user to the application.
 
 #### Request
 
-
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "ignored",
   "name": "servicePrincipals"
