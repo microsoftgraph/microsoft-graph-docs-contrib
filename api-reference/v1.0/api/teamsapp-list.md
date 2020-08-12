@@ -1,6 +1,6 @@
 ---
 title: "List teamsApp"
-description: "List Teams apps published in the tenant app catalog"
+description: "List Teams apps published in the tenant app catalog."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -11,11 +11,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-List [apps](../resources/teamsapp.md) published in the Microsoft Teams app catalog.This includes apps from the Microsoft Teams store, as well as apps from your organization's app catalog (the tenant app catalog). To get apps from your organization's app catalog only, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.
+List [apps](../resources/teamsapp.md) published in the Microsoft Teams app catalog. This includes apps from the Microsoft Teams store, as well as apps from your organization's app catalog (the tenant app catalog). To get apps from your organization's app catalog only, specify `Organization` as the **distributionMethod** in the [teamsApp](../resources/teamsapp.md) resource.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 > **Note:** Only global administrators can call this API.
 
@@ -45,19 +45,19 @@ This method supports the `$filter`, `$select`, and `$expand` [OData query parame
 
 ## Request body
 
-None.
+Do not supply a request body for this method.
 
-> **Note:** You can filter on any of the fields of the [teamsCatalogApp](../resources/teamsapp.md) object to shorten the list of results. You can use any of the following filter operations: Equal, not-equal, and, or, and not.
+> **Note:** You can filter on any of the fields of the [teamsApp](../resources/teamsapp.md) object to shorten the list of results. You can use any of the following filter operations: Equal, not-equal, and, or, and not.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of [teamsCatalogApp](../resources/teamsapp.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a list of [teamsApp](../resources/teamsapp.md) objects in the response body.
 
 ## Examples
 
 ### Example 1: List all applications
 
-The following example lists all applications that are specific to your tenant.
+The following example lists all apps that are specific to your tenant.
 
 #### Request
 
