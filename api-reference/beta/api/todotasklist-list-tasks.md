@@ -1,5 +1,5 @@
 ---
-title: "List tasks"
+title: "List Todo tasks"
 description: "Get the todoTasks from the tasks navigation property."
 author: "avijityadav"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "Microsoft To Do"
 doc_type: apiPageType
 ---
 
-# List tasks
+# List Todo tasks
 Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -78,7 +78,7 @@ returning **todoTaskList** rather than **todoTask** collections.
 ### HTTP Request
 <!-- { "blockType": "ignored" } -->
 ``` http
-GET https://graph.microsoft.com/beta/me/todo/lists/delta
+GET https://graph.microsoft.com/beta/me/todo/lists/delta?$skiptoken=l7WI41swwioT5csv4k99nvQqyku0jaGqMhc6XyFff5qQTQ7RJOr
 Prefer: odata.maxpagesize=2
 ```
 ### Response
@@ -98,15 +98,15 @@ Content-type: application/json
 Content-length: 254
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders/delta?$skiptoken={_skipToken_}",
+  "@odata.deltaLink":"https://graph.microsoft.com/beta/me/todo/lists/delta?$skiptoken=ldfdgdgfoT5csv4k99nvQqyku0jaGqMhc6XyFff5qQTQ7RJOr",
   "value": [
     {
-      "displayName": "displayName-value",
-      "parentFolderId": "parentFolderId-value",
-      "childFolderCount": 99,
-      "unreadItemCount": 99,
-      "totalItemCount": 99,
-      "wellKnownName": "wellKnownName-value"
+      "@odata.etag":"W/\"4rfRVIPi9EqXgDbc8U7HGwADLLQ93w==\"",
+         "displayName":"List1",
+         "isOwner":true,
+         "isShared":false,
+         "wellknownListName":"none",
+         "id":"AQMkADMwNTcyZjQzLTdkMGItNDdjMy04ZTYwLTJhYmUzNGI5ZD
     }
   ]
 }

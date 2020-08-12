@@ -84,7 +84,7 @@ of incremental changes since the last delta query.
 ### HTTP Request
 <!-- { "blockType": "ignored" } -->
 ``` http
-GET https://graph.microsoft.com/beta/me/todo/lists/{id}/tasks/delta
+GET https://graph.microsoft.com/beta/me/todo/lists/gDbc8U7HGwADDZocJgAAAA==/tasks/delta?$deltatoken=w0vf2jHg2mBXU-I2AK0FSWl0dopNtG8u5YoM
 Prefer: odata.maxpagesize=2
 ```
 
@@ -105,7 +105,7 @@ Content-type: application/json
 Content-length: 337
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders/{id}/messages/delta?$skiptoken={_skipToken_}",
+  "@odata.deltaLink":"https://graph.microsoft.com/beta/me/todo/lists/gDbc8U7HGwADDZocJgAAAA==/tasks/delta?$deltatoken=MoVMZ_DzHG4AhT3WE8VioVS1IXZJ-ArqK5fknOjnKFY",
   "value": [
     {
       "receivedDateTime": "datetime-value",

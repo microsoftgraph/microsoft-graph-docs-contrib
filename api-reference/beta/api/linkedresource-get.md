@@ -55,7 +55,9 @@ If successful, this method returns a `200 OK` response code and a [linkedResourc
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/linkedResources/{linkedResourcesId}
+GET https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources/f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9
+
+GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources/f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9
 ```
 
 
@@ -72,13 +74,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 {
   "value": {
-    "@odata.type": "#microsoft.graph.linkedResource",
-    "id": "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9",
-    "webUrl": "String",
-    "applicationName": "String",
-    "displayName": "String",
-    "externalId": "String"
+     "@odata.type": "#microsoft.graph.linkedResource",
+      "id": "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9",
+      "webUrl": "http://microsoft.com",
+      "applicationName": "Microsoft",
+      "displayName": "Microsoft",
+      "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
   }
 }
 ```
-

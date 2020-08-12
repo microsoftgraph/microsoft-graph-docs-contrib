@@ -62,19 +62,18 @@ If successful, this method returns a `200 OK` response code and an updated [link
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources/{linkedResourcesId}
+PATCH https://graph.microsoft.com/beta/users/{id|userPrincipalName}/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources/f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9
 
-PATCH https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources/{linkedResourcesId}
+PATCH https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources/f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9
 
 Content-Type: application/json
 Content-length: 166
 
 {
   "@odata.type": "#microsoft.graph.linkedResource",
-  "webUrl": "String",
-  "applicationName": "String",
-  "displayName": "String",
-  "externalId": "String"
+  "webUrl": "http://microsoft.com",
+  "applicationName": "Microsoft",
+  "displayName": "Microsoft",
 }
 ```
 
@@ -91,9 +90,9 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.linkedResource",
   "id": "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9",
-  "webUrl": "String",
-  "applicationName": "String",
-  "displayName": "String",
-  "externalId": "String"
+  "webUrl": "http://microsoft.com",
+  "applicationName": "Microsoft",
+  "displayName": "Microsoft",
+  "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 }
 ```
