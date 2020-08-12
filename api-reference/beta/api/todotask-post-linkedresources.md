@@ -93,6 +93,7 @@ Content-length: 166
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.linkedResource",
   "id": "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9",
