@@ -583,7 +583,7 @@ HTTP/1.1 204 No content
   "name": "servicePrincipals"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/b00c693f-9658-4c06-bd1b-c402c4653dea/appRoles
+GET https://graph.microsoft.com/beta/servicePrincipals/a8cac399-cde5-4516-a674-819503c61313/appRoles
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
@@ -610,7 +610,7 @@ HTTP/1.1 200
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals('b00c693f-9658-4c06-bd1b-c402c4653dea')/appRoles",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals('a8cac399-cde5-4516-a674-819503c61313')/appRoles",
     "value": [
         {
             "allowedMemberTypes": [
@@ -656,7 +656,7 @@ Use the following properties to assign a user to the application.
 | principalId | User ID of the user that will be assigned to the app | 2fe96d23-5dc6-4f35-8222-0426a8c115c8 |
 | principalType | Type of user | User |
 | appRoleId |  The App role ID of the default app role of the app | 18d14569-c3bd-439b-9a66-3a2aee01d14f |
-| resourceId | The servicePrincipal ID of the app | b00c693f-9658-4c06-bd1b-c402c4653dea |
+| resourceId | The servicePrincipal ID of the app | a8cac399-cde5-4516-a674-819503c61313 |
 
 #### Request
 
@@ -674,7 +674,7 @@ Content-type: appRoleAssignments/json
   "principalId": "2fe96d23-5dc6-4f35-8222-0426a8c115c8",
   "principalType": "User",
   "appRoleId":"18d14569-c3bd-439b-9a66-3a2aee01d14f",
-  "resourceId":"b00c693f-9658-4c06-bd1b-c402c4653dea"
+  "resourceId":"a8cac399-cde5-4516-a674-819503c61313"
 }
 ```
 # [C#](#tab/csharp)
@@ -710,7 +710,7 @@ Content-type: application/json
     "principalId": "2fe96d23-5dc6-4f35-8222-0426a8c115c8",
     "principalType": "User",
     "resourceDisplayName": "Contoso IWA App",
-    "resourceId": "b00c693f-9658-4c06-bd1b-c402c4653dea"
+    "resourceId": "a8cac399-cde5-4516-a674-819503c61313"
 }
 ```
 
