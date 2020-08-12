@@ -73,7 +73,6 @@ Content-length: 166
 
 {
   "@odata.type": "#microsoft.graph.linkedResource",
-  "webUrl": "String",
   "webUrl": "http:://microsoft.com",
   "applicationName": "Microsoft",
   "displayName": "Microsoft",

@@ -71,6 +71,7 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/todo/lists/dfs
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": {
      "@odata.type": "#microsoft.graph.linkedResource",

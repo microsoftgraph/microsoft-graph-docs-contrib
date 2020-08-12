@@ -72,6 +72,7 @@ GET https://graph.microsoft.com/beta/me/tasks/linkedResources
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": [
     {

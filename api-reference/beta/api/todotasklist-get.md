@@ -72,6 +72,7 @@ GET https://graph.microsoft.com/beta/users/todo/lists/AAMkADIyAAAAABrJAAA=
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": {
     "@odata.type": "#microsoft.graph.todoTaskList",

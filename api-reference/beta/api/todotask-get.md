@@ -72,6 +72,7 @@ GET https://graph.microsoft.com/beta/users/me/todo/lists/AAMkADA1MTHgwAAA=/tasks
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#tasks/$entity",
     "@odata.etag": "W/\"s8/ERWT3WEeFpBGD0bDgAA+TWq9g==\"",

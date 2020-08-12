@@ -116,6 +116,7 @@ Content-length: 608
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.todoTask",
   "id": "721a35e2-35e2-721a-e235-1a72e2351a72",
