@@ -11855,25 +11855,6 @@ items:
       items:
       - name: Overview
         href: resources/todo-overview.md
-      - name: Task
-        href: resources/todotask.md
-        items:
-        - name: List tasks
-          href: api/todotasklist-list-tasks.md
-        - name: Create task
-          href: api/todotasklist-post-tasks.md
-        - name: Get task
-          href: api/todotask-get.md
-        - name: Update task
-          href: api/todotask-update.md
-        - name: Delete task
-          href: api/todotask-delete.md
-        - name: Get task delta
-          href: api/todotask-delta.md
-        - name: Create open extension
-          href: api/opentypeextension-post-opentypeextension.md
-        - name: Get open extension
-          href: api/opentypeextension-get.md
       - name: Tasklist
         href: resources/todotasklist.md
         items:
@@ -11889,6 +11870,25 @@ items:
           href: api/todotasklist-delete.md
         - name: Get tasklist delta
           href: api/todotasklist-delta.md 
+        - name: Create open extension
+          href: api/opentypeextension-post-opentypeextension.md
+        - name: Get open extension
+          href: api/opentypeextension-get.md
+      - name: Task
+        href: resources/todotask.md
+        items:
+        - name: List tasks
+          href: api/todotasklist-list-tasks.md
+        - name: Create task
+          href: api/todotasklist-post-tasks.md
+        - name: Get task
+          href: api/todotask-get.md
+        - name: Update task
+          href: api/todotask-update.md
+        - name: Delete task
+          href: api/todotask-delete.md
+        - name: Get task delta
+          href: api/todotask-delta.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
