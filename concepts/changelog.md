@@ -42,6 +42,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the **contentBytes** property to the [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta) resource.|
 |Addition|beta|Added the **contentType** property to the [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta) resource.|
 |Addition|beta|Added support for sending inline images to the [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta) resource.|
+|Addition|v1.0|Added support for [creating a team](/graph/api/team-post?view=graph-rest-1.0)  directly (without first creating a group), which also enables creating class teams.|
+|Addition | v1.0 | Added [members](/graph/api/team-post-members?view=graph-rest-1.0) navigation property to [team](/graph/api/resources/team?view=graph-rest-1.0) resource type, enabling members to be added with increased reliability and lower latency.|
 
 ## July 2020
 
