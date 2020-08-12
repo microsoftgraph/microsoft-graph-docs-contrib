@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Automate SAML-based SSO app configuration with Microsoft Graph API
 
-In this article, you'll learn how to create and configure an application from the Azure Active Directory (Azure AD) Gallery. This article uses AWS as an example but you can use the steps in this article for any SAML-based app in the Azure AD Gallery.
+In this article, you'll learn how to create and configure an application from the Azure Active Directory (Azure AD) Gallery. This article uses AWS as an example, but you can use the steps in this article for any SAML-based app in the Azure AD Gallery.
 
 **Steps to use Microsoft Graph APIs to automate configuration of SAML-based single sign-on**
 
@@ -22,7 +22,7 @@ In this article, you'll learn how to create and configure an application from th
 | [5. Assign users](#step-5-assign-users) | Assign users and groups to the application
 | [6. Configure the application side](#step-6-configure-the-application-side)| Get Azure AD SAML metadata
 
-**List of all APIs used in the documentation**
+**List of all APIs used in the article**
 
 Make sure you have the corresponding permissions to call the following APIs.
 
@@ -34,13 +34,13 @@ Make sure you have the corresponding permissions to call the following APIs.
 |[claimsMappingPolicy](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)| [Create claimsMappingPolicy](https://docs.microsoft.com/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?view=graph-rest-beta&tabs=http)
 
 >[!NOTE]
->The response objects shown in this article may be shortened for readability. All the properties will be returned from an actual call.
+>The response objects shown in this article might be shortened for readability. All the properties will be returned from an actual call.
 
 ## Step 1: Create the gallery application
 
 ### Sign in to Microsoft Graph Explorer (recommended), Postman, or any other API client you use
 
-1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
+1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator or App Admin credentials.
 3. Upon successful sign-in, you'll see the user account details in the left-hand pane.
 
@@ -50,6 +50,8 @@ Applications in the Azure AD application gallery each have an [application templ
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_applicationtemplates"
@@ -58,6 +60,20 @@ Applications in the Azure AD application gallery each have an [application templ
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/applicationTemplates
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplates-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplates-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-applicationtemplates-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -109,6 +125,8 @@ Using the template ID that you retrieved for your application in the last step, 
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "applicationtemplate_instantiate"
@@ -122,6 +140,20 @@ Content-type: application/json
   "displayName": "AWS Contoso"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/applicationtemplate-instantiate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/applicationtemplate-instantiate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/applicationtemplate-instantiate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -186,12 +218,14 @@ Use the response from the previous call to retrieve and save the application obj
 ```
 ### Set single sign-on mode
 
-In this example, you'll set `saml` as the single sign-on mode in the [servicePrincipal resource type](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0). Other SAML SSO properties that you can configure are: `notificationEmailAddresses`, `loginUrl`, and `samlSingleSignOnSettings.relayState`
+In this example, you'll set `saml` as the single sign-on mode in the [servicePrincipal resource type](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0). Other SAML SSO properties that you can configure are: `notificationEmailAddresses`, `loginUrl`, and `samlSingleSignOnSettings.relayState`.
 
-Before this query will work you need to provide consent on the **Modify permissions** tab in Graph Explorer. Also, make sure you are using the **servicePrincipal** id obtained earlier.
+Before this query will work you need to provide consent on the **Modify permissions** tab in Graph Explorer. Also, make sure you are using the **servicePrincipal** ID that you obtained earlier.
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
@@ -205,6 +239,24 @@ Content-type: servicePrincipal/json
     "preferredSingleSignOnMode": "saml"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -225,6 +277,8 @@ Make sure you are using the **application** id obtained earlier.
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
@@ -245,6 +299,24 @@ Content-type: applications/json
     ]    
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 <!-- {
@@ -259,13 +331,15 @@ HTTP/1.1 204
 
 If the application requires the role information in the token, add the definition of the roles in the application object. For AWS, you can [enable user provisioning](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api) to fetch all the roles from that AWS account. 
 
-For more information, read [Configure the role claim issued in the SAML token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-enterprise-app-role-management)
+For more information, see [Configure the role claim issued in the SAML token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-enterprise-app-role-management).
 
 > [!NOTE] 
 > When adding app roles, don't modify the default app roles msiam_access. 
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
@@ -312,6 +386,24 @@ Content-type: serviceprincipals/json
 
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -340,10 +432,12 @@ In addition to the basic claims, configure the following claims for Azure AD to 
 For more information, see [Customize claims emitted in token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping).
 
 > [!NOTE]
-> Some keys in the claims mapping policy are case sensitive (e.g. "Version"). If you receive an error message such as "Property has an invalid value", it could be a case sensitive issue.
+> Some keys in the claims mapping policy are case sensitive (for example, "Version"). If you receive an error message such as "Property has an invalid value", it might be a case sensitive issue.
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
@@ -393,6 +487,24 @@ Content-type: claimsMappingPolicies/json
     "isOrganizationDefault": false
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -422,6 +534,8 @@ Content-type: claimsMappingPolicies/json
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
@@ -435,6 +549,12 @@ Content-type: claimsMappingPolicies/json
   "@odata.id":"https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/6b33aa8e-51f3-41a6-a0fd-d660d276197a"
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -580,9 +700,9 @@ Add the following information to the service principal:
 * Password
 * Public key 
 
-Extract the private and public key Base64 encoded from the PFX file. To learn more about the properties, read [keyCredential resource type](https://docs.microsoft.com/graph/api/resources/keycredential?view=graph-rest-1.0).
+Extract the private and public key Base64 encoded from the PFX file. To learn more about the properties, see [keyCredential resource type](https://docs.microsoft.com/graph/api/resources/keycredential?view=graph-rest-1.0).
 
-Make sure that the keyId for the keyCredential used for "Sign" matches the keyId of the passwordCredential. You can generate the `customkeyIdentifier` by getting the hash of the cert's thumbprint. See C# reference code above.
+Make sure that the keyId for the keyCredential used for "Sign" matches the keyId of the passwordCredential. You can generate the `customkeyIdentifier` by getting the hash of the cert's thumbprint. See the previous C# reference code.
 
 #### Request
 
@@ -688,6 +808,8 @@ Assign the following user to the service principal and assign the AWS_Role1.
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
@@ -704,6 +826,12 @@ Content-type: appRoleAssignments/json
   "resourceId":"f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 <!-- {
@@ -726,7 +854,7 @@ Content-type: appRoleAssignments/json
 }
 ```
 
-For more information, see [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-1.0) resource type.
+For more information, see [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-1.0).
 
 ## Step 6: Configure the application side
 
@@ -734,7 +862,7 @@ For more information, see [appRoleAssignment](https://docs.microsoft.com/graph/a
 
 Use the following URL to get the Azure AD SAML metadata for the specific configured application. The metadata contains information such as the signing certificate, Azure AD entityID, and Azure AD SingleSignOnService, among others.
 
-https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}
+`https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`
 
 ## Next steps
 - [Use Microsoft Graph APIs to configure user provisioning](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)

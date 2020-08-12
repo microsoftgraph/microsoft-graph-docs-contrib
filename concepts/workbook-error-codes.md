@@ -38,6 +38,7 @@ The following are some additional errors that your app might encounter within th
 | **accessDenied**         | You cannot perform the requested operation.
 | **badRequestUncategorized**               | The request is malformed or incorrect.
 | **conflictUncategorized**                   | The current state conflicts with what the request expects.
+| **filteredRangeConflict**                   | The operation failed because it conflicts with a filtered range.
 | **forbiddenUncategorized**                    | The request is not allowed.
 | **gatewayTimeoutUncategorized**         | The service wasn’t able to complete the request within the time limit.
 | **generalException**         | There was an internal error while processing the request.
