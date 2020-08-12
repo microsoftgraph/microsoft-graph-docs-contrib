@@ -29,9 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+DELETE /me/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources/{linkedResourcesId}
 DELETE /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources/{linkedResourcesId}
-
-DELETE /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources/{linkedResourcesId}
 ```
 
 ## Request headers
