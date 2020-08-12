@@ -534,7 +534,13 @@ The following is an example of the request.
 
 **contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
-```json
+<!-- {
+  "blockType": "request",
+  "name": "create_chatmessage_from_channel"
+}-->
+```http
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+Content-type: application/json
 {
     "subject": null,
     "body": {
@@ -563,7 +569,15 @@ The following is an example of the request.
 
 #### Response
 
-```json
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('13a99602-a5d3-4fed-99d2-7dc3ffe3730d')/channels('19%3A8af03d1e70f5455fbb74d36acbe2957f%40thread.tacv2')/messages/$entity",
     "id": "1597182390555",
