@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update an [app](../resources/teamsapp.md) previously published to the Microsoft Teams app catalog.
-This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
-To publish to your organization's app catalog, specify `organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.
+This API specifically updates an app published to your organization's app catalog (the tenant app catalog).  In order for this to function properly, **distributionMethod** must be set to `organization` in the [teamsCatalogApp](../resources/teamsapp.md) resource.
 
 ## Permissions
 
