@@ -68,7 +68,7 @@ To better handle errors that occur in Excel graph, here are the general steps th
 
 ### 1. Determine whether it is a long running operation error
 
-Before handling an error, the first step is to determine whether the error response is from long running operation pattern or regular pattern. A long running operation error will return a `200 OK` HTTP status code and `failed` operation status in response body, while regular error response will return corresponding HTTP error status code.
+Before handling an error, the first step is to determine whether the error response is from long running operation pattern or regular pattern. A long running operation error will return a `200 OK` HTTP status code and `failed` operation status in response body, while regular error response will return corresponding HTTP error status code. 
 
 ### 2. Parse second-level error code
 
@@ -111,6 +111,8 @@ For both long running operation pattern and regular pattern, we suggest you to a
 | **unauthorizedUncategorized**         | Required authentication information for the resource is either missing or invalid. The Graph client is not expected to resend the failed request.
 | **unsupportedOperation**         | The operation being attempted is not supported. The Graph client is not expected to resend the failed request.
 | **unsupportedWorkbook**         | The request failed. The workbook contains unsupported features or exceeds the size limit. The Graph client is not expected to resend the failed request until the unsupported factors are removed.
+
+>**Note:** For regular pattern, the “failed request” is defined as the request corresponding to the response. For long running operation pattern, the “failed request” is the one that triggers the failed operation.
 
 ### 3. Parse top-level error code
 
