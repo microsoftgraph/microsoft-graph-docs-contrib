@@ -541,6 +541,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
 Content-type: application/json
+
 {
     "subject": null,
     "body": {
