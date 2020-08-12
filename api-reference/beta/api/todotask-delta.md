@@ -107,17 +107,19 @@ Content-length: 337
 {
   "@odata.deltaLink":"https://graph.microsoft.com/beta/me/todo/lists/gDbc8U7HGwADDZocJgAAAA==/tasks/delta?$deltatoken=MoVMZ_DzHG4AhT3WE8VioVS1IXZJ-ArqK5fknOjnKFY",
   "value": [
-    {
-      "receivedDateTime": "datetime-value",
-      "sentDateTime": "datetime-value",
-      "hasAttachments": true,
-      "internetMessageId": "internetMessageId-value",
-      "subject": "subject-value",
-      "body": {
-        "contentType": "contentType-value",
-        "content": "content-value"
-      }
-    }
+         "@odata.etag":"W/\"4rfRVIPi9EqXgDbc8U7HGwADLLQ9xQ==\"",
+         "importance":"normal",
+         "isReminderOn":false,
+         "status":"notStarted",
+         "title":"empty task3",
+         "createdDateTime":"2020-08-12T04:54:29.1925206Z",
+         "lastModifiedDateTime":"2020-08-12T04:54:29.4903939Z",
+         "id":"AAMkADMwNTcyZjQzLTdkMGItNDdjMy04ZTYwLTJhYmUzNGI5ZDEwMwBGAAAAAAB5M0K0qlJySLOAgV22zPnuBwDit9FUg_L0SpeANtzxTscbAAMNmhwmAADit9FUg_L0SpeANtzxTscbAAMxlnrYAAA=",
+         "body":{
+            "content":"",
+            "contentType":"text"
+         }
+      },
   ]
 }
 ```

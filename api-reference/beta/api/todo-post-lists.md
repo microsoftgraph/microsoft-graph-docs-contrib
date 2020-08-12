@@ -1,17 +1,16 @@
 ---
-title: "Create todoTaskList"
-description: "Create a new todoTaskList object."
-author: "avijityadav"
+title: "Create lists"
+description: "Create a new lists object."
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 localization_priority: Normal
-ms.prod: "Microsoft To Do"
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
 ---
 
-# Create todoTaskList
+# Create lists
 Namespace: microsoft.graph
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [todoTaskList](../resources/todotasklist.md) object.
+Create a new lists object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
@@ -47,7 +46,6 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Field indicating title of the task list.|
-
 
 ## Response
 
@@ -92,4 +90,3 @@ Content-Type: application/json
   "wellknownListName": "none"
 }
 ```
-

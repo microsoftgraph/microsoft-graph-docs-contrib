@@ -7,9 +7,8 @@ ms.prod: "Microsoft To Do"
 doc_type: apiPageType
 ---
 
-# List todoTaskLists
+# List lists
 Namespace: microsoft.graph
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the [todoTaskList](../resources/todotasklist.md) objects and their properties.
 
