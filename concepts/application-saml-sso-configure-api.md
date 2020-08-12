@@ -785,8 +785,6 @@ Assign the following user to the service principal and assign the AWS_Role1.
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "ignored",
   "name": "servicePrincipals"
