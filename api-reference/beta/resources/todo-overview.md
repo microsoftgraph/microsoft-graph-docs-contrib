@@ -13,33 +13,33 @@ doc_type: conceptualPageType
 
 You can use Microsoft Graph to create an app that connects with tasks across Microsoft To Do. With Microsoft Graph, you can build a variety of experiences with tasks, from simply syncing tasks from your app to complex task completion scenarios.
  
-Microsoft Graph exposes three resource types for working with To Do. 
+Before you get started with the To Do API, it will be helpful to know about the resources and how they relate to each other.
 
-## todoTaskList
+## TaskList
 
-[todoTaskList](./todotasklist.md) represents a logical container of [todoTask](./todotask.md). To [get all your taskLists](../api/todotasklist-get.md), make the following HTTP request.
+[TaskList](./todotasklist.md) represents a logical container of [Tasks](./todotask.md). Tasks currently can only be created inside a tasklist. To [get all your taskLists](../api/todotasklist-get.md), make the following HTTP request.
 
 ``` http
-GET /todo/lists/
+GET /me/todo/lists/
 ```
 
-## todoTasks
+## Tasks
 
-[todoTask](./todotask.md) represents an item within a **todoTaskList** which track a work item. To get the **todoTasks** from a **todoTaskList**, make the following HTTP request.
+[Task](./todotask.md) represents an item within a taskList which track a work item. To get your tasks from a tasklist, make the following HTTP request.
 ``` http
-GET /todo/lists/{list-id}/tasks
+GET /me/todo/lists/{todoTaskListId}/tasks
 ```
 
 ## LinkedResource
 
-[LinkedResource](linkedresource.md) represent the source of a **todoTask** and help user complete their tasks. To get a **linkedResource** from a task, make the following HTTP request.
+[LinkedResource](linkedresource.md) represent the source of a task and helps user complete their tasks. To get a **linkedResource** from a task, make the following HTTP request.
 ``` http
-GET /todo/lists/{list-id}/{task-id}/linkedresources/{linkedresource-id}
+GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/linkedresources/{linkedResourceId}
 ```
 
 ## Track changes using delta query
 
-If you want to use the To Do delta query API, maintain a local cache of objects that the you is interested in observing in order to apply the changes from the delta response feed.
+If you want to use the To Do delta query API, maintain a local cache of objects that you are interested in observing in order to apply the changes from the delta response feed.
 
 The delta payload objects that the To Do delta query can currently return is of the following types:
 * [todoTasks](./todotask.md)
