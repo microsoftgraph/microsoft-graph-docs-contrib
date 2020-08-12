@@ -534,10 +534,8 @@ Content-type: claimsMappingPolicies/json
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "servicePrincipals"
 }-->
 ```msgraph-interactive
@@ -549,11 +547,6 @@ Content-type: claimsMappingPolicies/json
   "@odata.id":"https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/6b33aa8e-51f3-41a6-a0fd-d660d276197a"
 }
 ```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response
@@ -811,7 +804,7 @@ Assign the following user to the service principal and assign the AWS_Role1.
 
 # [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "servicePrincipals"
 }-->
 ```msgraph-interactive
@@ -826,11 +819,6 @@ Content-type: appRoleAssignments/json
   "resourceId":"f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
 }
 ```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
