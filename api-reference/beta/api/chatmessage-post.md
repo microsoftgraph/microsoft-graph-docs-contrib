@@ -440,12 +440,12 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Sending inlined images along with the message
+### Example 5: Sending inline images along with the message
 
 #### Request
 The following is an example of the request.
 
-> **Note:** The **temporaryId** in hostedContents collection is a random ID, but must be same across **body** and **hostedContents** elements. (Notice the **temporaryId** set to **1** and the reference in body as `../hostedContents/1/$value`.)
+> **Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **body** and **hostedContents** elements. (Notice the **temporaryId** set to **1** and the reference in body as `../hostedContents/1/$value`.)
 
 **contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
@@ -525,12 +525,12 @@ Content-length: 160
 }
 ```
 
-### Example 6 : Card with inline images
+### Example 6: Card with inline images
 
 #### Request
 The following is an example of the request.
 
-> **Note:** The **temporaryId** in hostedContents collection is a random ID, but must be same across **content** (in **attachments**) and **hostedContents** elements. (Notice the **temporaryId** set to **1** and the reference in content as `../hostedContents/1/$value`.)
+> **Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **content** (in **attachments**) and **hostedContents** elements. (Notice the **temporaryId** set to **1** and the reference in content as `../hostedContents/1/$value`.)
 
 **contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
