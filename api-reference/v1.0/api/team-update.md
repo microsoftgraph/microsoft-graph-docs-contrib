@@ -55,6 +55,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "update_team"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/{id}
 Content-type: application/json
@@ -72,11 +73,12 @@ Content-length: 211
     "allowGiphy": true,
     "giphyContentRating": "strict"
   },
- {
+  {
     "isMembershipLimitedToOwners": false
- }
+  }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-team-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
