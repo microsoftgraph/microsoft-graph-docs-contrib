@@ -373,6 +373,8 @@ items:
             href: workbook-best-practice.md
           - name: Error codes
             href: workbook-error-codes.md
+          - name: Error handling
+            href: workbook-error-handling.md
   - name: Develop
     expanded: true
     items:
