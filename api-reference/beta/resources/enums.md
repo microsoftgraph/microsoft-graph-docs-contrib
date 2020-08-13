@@ -1206,7 +1206,6 @@ Possible values for user account types (group membership), per Windows definitio
 | token
 
 ### wellknownListName
-
 | Member
 |:----------------------
 | none
@@ -1215,7 +1214,6 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue
 
 ### taskStatus
-
 | Member
 |:----------------------
 | notStarted
