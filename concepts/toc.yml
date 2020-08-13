@@ -364,15 +364,12 @@ items:
             href: excel-update-range-format.md
           - name: Write data to a workbook
             href: excel-write-to-workbook.md
-          - name: Resources
-            expanded: true
-            items:
-              - name: Best practices
-                href: workbook-best-practice.md
-              - name: Error codes
-                href: workbook-error-codes.md
-              - name: Error handling
-                href: workbook-error-handling.md
+          - name: Best practices
+            href: workbook-best-practice.md
+          - name: Error codes
+            href: workbook-error-codes.md
+          - name: Error handling
+            href: workbook-error-handling.md
   - name: Develop
     expanded: true
     items:
