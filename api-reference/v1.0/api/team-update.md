@@ -62,6 +62,7 @@ Content-type: application/json
 Content-length: 211
 
 {  
+ isMembershipLimitedToOwners": true,
   "memberSettings": {
     "allowCreateUpdateChannels": true
   },
@@ -73,9 +74,6 @@ Content-length: 211
     "allowGiphy": true,
     "giphyContentRating": "strict"
   },
-  {
-    "isMembershipLimitedToOwners": false
-  }
 }
 ```
 
