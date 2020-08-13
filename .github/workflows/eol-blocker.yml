@@ -10,7 +10,7 @@ jobs:
     name: Check files for CRLF
     steps:
     - name: Validate files
-      env:
-        API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        repoToken: ${{ secrets.EOL_BLOCKER_TOKEN }}
       id: validate
-      uses: microsoftgraph/eol-blocker@v1.0.5
+      uses: microsoftgraph/eol-blocker@v1.0.6
