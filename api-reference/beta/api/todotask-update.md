@@ -71,8 +71,8 @@ If successful, this method returns a `200 OK` response code and an updated [todo
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "update_todotask"
-   "@odata.type": "microsoft.graph.todoTask"
+  "name": "update_todotask",
+  "@odata.type": "microsoft.graph.todoTask"
 }
 -->
 ``` http
