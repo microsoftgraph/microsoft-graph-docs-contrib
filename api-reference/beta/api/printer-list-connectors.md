@@ -1,5 +1,5 @@
 ---
-title: List printConnectors
+title: List printConnectors for printer
 description: Retrieve a list of connectors associated with the printer.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# List printConnectors
+# List printConnectors for printer
 
 Namespace: microsoft.graph
 
