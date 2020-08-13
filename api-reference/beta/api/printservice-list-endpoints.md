@@ -1,5 +1,5 @@
 ---
-title: List endpoints
+title: List printServiceEndpoints
 description: Retrieve a list of endpoints exposed by a print service.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# List endpoints
+# List printServiceEndpoints
 
 Namespace: microsoft.graph
 
