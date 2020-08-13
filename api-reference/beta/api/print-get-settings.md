@@ -1,5 +1,5 @@
 ---
-title: Get settings
+title: Get printSettings
 description: Retrieve tenant-wide settings for the Universal Print service.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# Get settings
+# Get printSettings
 
 Namespace: microsoft.graph
 
