@@ -1204,3 +1204,22 @@ Possible values for user account types (group membership), per Windows definitio
 | code
 | id_token
 | token
+
+### wellknownListName
+
+| Member
+|:----------------------
+| none
+| defaultList
+| flaggedEmails
+| unknownFutureValue
+
+### taskStatus
+
+| Member
+|:----------------------
+| notStarted
+| inProgress
+| completed
+| waitingOnOthers
+| deferred
