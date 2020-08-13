@@ -34,8 +34,12 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PUT /appCatalogs/teamsApps/{id}
+POST /appCatalogs/teamsApps/{id}/appDefinitions
 ```
+
+## Optional query parameters
+
+This API consumes a .zip file as the request body and uploads a new Teams app to the Teams app catalog. The optional `requiresReview` parameter is used to trigger the app review process. A user must have admin privileges to bypass the review process.  A user with admin privileges can opt to not set the `requiresReview` Boolean or set it to `false` whereby the app will be considered approved and instantly published.
 
 ## Request headers
 
@@ -63,7 +67,7 @@ If successful, this method returns a `204 No Content` response code.
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PUT https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
+POST https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8/appDefinitions
 Content-type: application/zip
 Content-length: 244
 
@@ -75,11 +79,9 @@ For details about the Teams application zip file, see [Create app package](/micr
 
 ### Response
 
-```http
-HTTP/1.1 204 No Content
-```
+If successful, this method returns a `204 No Content` response code.
 
-### Example 2: Update a previously reviewed and published application to the Teams app catalog
+### Example 2: Update a new version of an existing app for admin review prior to publication in the current tenant catalog
 
 ### Request
 
@@ -93,9 +95,13 @@ HTTP/1.1 204 No Content
 POST https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions?requiresReview=true
 Content-type: application/zip
 Content-length: 244
+
+[Zip file containing a Teams app package]
 ```
 
 ### Response
+
+If successful, this method returns a `201 Created` response code and the key/value pair `publishingState`: `submitted` in the response body. *See* [teamsappdefinition](../resources/teamsappdefinition.md).
 
 <!-- {
   "blockType": "response",
