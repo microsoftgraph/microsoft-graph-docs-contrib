@@ -11183,42 +11183,42 @@
         {
             "source_path": "api-reference\\beta\\api\\policy_assign.md",
             "redirect_url": "/graph/api/resources/policy-overview?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\policy_delete.md",
             "redirect_url": "/graph/api/resources/policy-overview?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\policy_get.md",
             "redirect_url": "/graph/api/resources/policy-overview?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\policy_list.md",
             "redirect_url": "/graph/api/resources/policy-overview?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\policy_list_appliesto.md",
             "redirect_url": "/graph/api/resources/policy-overview?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\policy_list_assigned.md",
             "redirect_url": "/graph/api/resources/policy-overview?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\policy_post.md",
             "redirect_url": "/graph/api/resources/policy-overview?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\policy_update.md",
             "redirect_url": "/graph/api/resources/policy-overview?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\post_forward.md",
