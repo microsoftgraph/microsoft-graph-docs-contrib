@@ -11,17 +11,18 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+
+
 Retrieve the properties and relationships of the specified [team](../resources/team.md).
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application |TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Group.Read.All, Group.ReadWrite.All    |
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
@@ -92,7 +93,6 @@ Content-length: 401
 
 {
   "isArchived": false,
-  "isMembershipLimitedToOwners": true,
   "discoverySettings": {
     "showInTeamsSearchAndSuggestions": true
   },

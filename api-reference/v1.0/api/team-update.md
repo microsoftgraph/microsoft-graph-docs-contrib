@@ -55,14 +55,12 @@ The following is an example of the request.
   "blockType": "request",
   "name": "update_team"
 }-->
-
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/{id}
 Content-type: application/json
 Content-length: 211
 
 {  
- "isMembershipLimitedToOwners": true,
   "memberSettings": {
     "allowCreateUpdateChannels": true
   },
@@ -73,10 +71,9 @@ Content-length: 211
   "funSettings": {
     "allowGiphy": true,
     "giphyContentRating": "strict"
-  },
+  }
 }
 ```
-
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-team-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
