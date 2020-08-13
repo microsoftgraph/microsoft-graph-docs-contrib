@@ -62,7 +62,7 @@ Content-type: application/json
 Content-length: 211
 
 {  
- isMembershipLimitedToOwners": true,
+ "isMembershipLimitedToOwners": true,
   "memberSettings": {
     "allowCreateUpdateChannels": true
   },
