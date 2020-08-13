@@ -13,4 +13,4 @@ jobs:
       with:
         repoToken: ${{ secrets.EOL_BLOCKER_TOKEN }}
       id: validate
-      uses: microsoftgraph/eol-blocker@v1.0.6
+      uses: microsoftgraph/eol-blocker@v1.0.7
