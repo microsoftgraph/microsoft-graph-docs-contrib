@@ -123,7 +123,7 @@ Use the response from the previous call to retrieve and save the application obj
 }
 ```
 ### Create a servicePrincipal for the application and add required tags
-Use the **appId** to create a servicePrincipal for the application. Then add the tags required for configuring Application Proxy for an app.
+Use the **appId** to create a servicePrincipal object for the application. After you create the service principal, add the tags required for configuring Application Proxy for an app.
 
 #### Request
 
