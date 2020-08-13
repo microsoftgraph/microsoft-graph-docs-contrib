@@ -1,5 +1,5 @@
 ---
-title: Get connectors
+title: List printConnectors
 description: Retrieve a list of connectors.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# List connectors
+# List printConnectors
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of connectors.
+Retrieve a list of print connectors.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ Some operators are not supported: `$count`, `$orderby`, `$search`, `$filter`.
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [connector](../resources/printconnector.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [printConnectors](../resources/printconnector.md) objects in the response body.
 ## Example
 ##### Request
 The following is an example of the request.
