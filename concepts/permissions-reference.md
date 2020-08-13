@@ -1647,8 +1647,29 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Teams permissions
+## Taxonomy permissions
 
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TermStore.Read.All_        | Read term store data | Allows app to read various terms, sets, and groups in the term store | Yes  | No |
+| _TermStore.ReadWrite.All_   | Read and write all term store data | Allows the app to edit or delete terms, sets, and groups in the term store | Yes  | No |
+
+### Remarks
+
+Taxonomy permissions are valid only on work or school accounts.
+
+### Example usage
+
+#### Delegated
+
+* _TermStore.Read.All_: Read the termstore for the tenant (`GET /termStore`)
+* _TermStore.ReadWrite.All_: Create new terms in the termStore (`POST /termStore/sets/123/children`)
+
+---
+
+## Teams permissions
 
 #### Delegated permissions
 
@@ -1944,28 +1965,6 @@ Threat assessment permissions are valid only on work or school accounts.
 #### Application
 
 * _Printer.Read.All_: Get a list of all printers in the tenant (`GET /print/printers`)
-
----
-
-## Taxonomy permissions
-
-#### Delegated permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TermStore.Read.All_        | Read term store data | Allows app to read various terms, sets, and groups in the term store | Yes  | No |
-| _TermStore.ReadWrite.All_   | Read and write all term store data | Allows the app to edit or delete terms, sets, and groups in the term store | Yes  | No |
-
-### Remarks
-
-Taxonomy permissions are valid only on work or school accounts.
-
-### Example usage
-
-#### Delegated
-
-* _TermStore.Read.All_: Read the termstore for the tenant (`GET /termStore`)
-* _TermStore.ReadWrite.All_: Create new terms in the termStore (`POST /termStore/sets/123/children`)
 
 ---
 
