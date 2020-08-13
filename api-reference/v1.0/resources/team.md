@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
 A team in Microsoft Teams is a collection of [channel](channel.md) objects.
 A channel represents a topic, and therefore a logical isolation of discussion, within a team.
 
@@ -49,6 +47,7 @@ For more information about working with groups and members in teams, see [Use th
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Settings to configure messaging and mentions in the team.|
 |webUrl|string (readonly) | A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select **Get link to team**. This URL should be treated as an opaque blob, and not parsed. |
 |classSettings|[teamClassSettings](teamclasssettings.md) |Configure settings of a class. Available only when the team represents a class.|
+|isMembershipLimitedToOwners|Boolean|If set to true, the team is currently in the owner only team membership state and not accessible by other team members, e.g., students|
 
 ## Relationships
 

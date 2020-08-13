@@ -93,6 +93,7 @@ Content-length: 401
 
 {
   "isArchived": false,
+  "isMembershipLimitedToOwners":true,
   "discoverySettings": {
     "showInTeamsSearchAndSuggestions": true
   },

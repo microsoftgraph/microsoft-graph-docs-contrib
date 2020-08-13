@@ -71,7 +71,10 @@ Content-length: 211
   "funSettings": {
     "allowGiphy": true,
     "giphyContentRating": "strict"
-  }
+  },
+ {
+    "isMembershipLimitedToOwners": false
+ }
 }
 ```
 # [C#](#tab/csharp)
