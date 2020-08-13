@@ -81,6 +81,7 @@ Content-length: 166
 <!-- {
   "blockType": "response",
   "truncated": true
+  "@odata.type": "microsoft.graph.linkedResource"
 }
 -->
 ``` http

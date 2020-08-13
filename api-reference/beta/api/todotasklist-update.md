@@ -78,6 +78,7 @@ Content-length: 167
 <!-- {
   "blockType": "response",
   "truncated": true
+  "@odata.type": "microsoft.graph.todoTaskList"
 }
 -->
 ``` http

@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/me/tasks/linkedResources
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "collection(microsoft.graph.linkedresource)"
+  "@odata.type": "collection(microsoft.graph.linkedResource)"
 }
 -->
 ``` http

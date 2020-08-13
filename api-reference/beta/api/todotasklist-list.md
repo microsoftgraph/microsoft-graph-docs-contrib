@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/me/todo/lists
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "collection(microsoft.graph.todotasklist)"
+  "@odata.type": "collection(microsoft.graph.todoTaskList)"
 }
 -->
 ``` http
