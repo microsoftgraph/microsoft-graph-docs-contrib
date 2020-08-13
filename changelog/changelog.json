@@ -451,13 +451,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Extensions ",
-      "SubArea": " Open extensions"
-=======
       "WorkloadArea": "Extensions",
       "SubArea": "Open extensions"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -490,13 +485,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-05-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Extensions ",
-      "SubArea": " Open extensions"
-=======
       "WorkloadArea": "Extensions",
       "SubArea": "Open extensions"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -545,13 +535,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-05-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Extensions ",
-      "SubArea": " Schema extensions"
-=======
       "WorkloadArea": "Extensions",
       "SubArea": "Schema extensions"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -594,13 +579,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-03-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Extensions ",
-      "SubArea": " Schema extensions"
-=======
       "WorkloadArea": "Extensions",
       "SubArea": "Schema extensions"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -617,13 +597,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-03-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Extensions ",
-      "SubArea": " Open extensions"
-=======
       "WorkloadArea": "Extensions",
       "SubArea": "Open extensions"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -640,13 +615,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-03-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Extensions ",
-      "SubArea": " Open extensions"
-=======
       "WorkloadArea": "Extensions",
       "SubArea": "Open extensions"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -983,13 +953,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-08-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Reports ",
-      "SubArea": " Microsoft 365 usage reports"
-=======
       "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -1006,13 +971,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-04-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Reports ",
-      "SubArea": " Identity and access reports"
-=======
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -1045,13 +1005,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-04-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Reports ",
-      "SubArea": " Microsoft 365 usage reports"
-=======
       "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -1068,13 +1023,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Reports ",
-      "SubArea": " Microsoft 365 usage reports"
-=======
       "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -1091,13 +1041,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-03-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Reports ",
-      "SubArea": " Microsoft 365 usage reports"
-=======
       "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -1114,13 +1059,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-12-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Reports ",
-      "SubArea": " Microsoft 365 usage reports"
-=======
       "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -1221,13 +1161,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-06-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Reports ",
-      "SubArea": " Identity and access reports"
-=======
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -1252,13 +1187,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-05-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Reports ",
-      "SubArea": " Microsoft 365 usage reports"
-=======
       "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -1703,13 +1633,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " Insights"
-=======
       "WorkloadArea": "People and workplace intelligence",
       "SubArea": "Insights"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -1734,13 +1659,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " Profile"
-=======
       "WorkloadArea": "People and workplace intelligence",
       "SubArea": "Profile"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -1757,13 +1677,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-12-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " Insights"
-=======
       "WorkloadArea": "People and workplace intelligence",
       "SubArea": "Insights"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -1832,13 +1747,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-05-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " Insights"
-=======
       "WorkloadArea": "People and workplace intelligence",
       "SubArea": "Insights"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -1895,13 +1805,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-08-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " People"
-=======
       "WorkloadArea": "People and workplace intelligence",
       "SubArea": "People"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -1942,13 +1847,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " Insights"
-=======
       "WorkloadArea": "People and workplace intelligence",
       "SubArea": "Insights"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -1965,13 +1865,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-08-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " People"
-=======
       "WorkloadArea": "People and workplace intelligence",
       "SubArea": "People"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -1996,13 +1891,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-03-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " People"
-=======
       "WorkloadArea": "People and workplace intelligence",
       "SubArea": "People"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -2175,13 +2065,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -2222,13 +2107,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-07-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -2893,13 +2773,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -3288,13 +3163,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -3657,13 +3527,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -4160,18 +4025,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-05-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
-=======
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
-    },
-    {
       "ChangeList": [
         {
-          "Id": "2f281f4b-01f1-43f0-88aa-49d49e346ce9",
           "ApiChange": "Resource",
           "ChangedApiName": "access reviews",
           "ChangeType": "Addition",
@@ -4293,13 +4148,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-03-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -4502,13 +4352,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-12-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -4601,13 +4446,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-12-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Governance"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -4624,13 +4464,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-11-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -4789,13 +4624,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-10-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -4828,13 +4658,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-10-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Governance"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -5041,13 +4866,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-06-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Governance"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -5320,13 +5140,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-03-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -5403,13 +5218,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-03-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Governance"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -5608,13 +5418,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Directory Management"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory Management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -5693,13 +5498,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-04-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Directory Management"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory Management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -5862,13 +5662,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-10-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -5935,13 +5730,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-09-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -5958,13 +5748,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-09-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -6041,13 +5826,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-08-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Governance"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -6064,13 +5844,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-07-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Directory Management"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory Management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -6087,13 +5862,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-06-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
-=======
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -6998,13 +6768,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Calendar ",
-      "SubArea": " Place"
-=======
       "WorkloadArea": "Calendar",
       "SubArea": "Place"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -7151,13 +6916,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-07-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Calendar ",
-      "SubArea": " Place"
-=======
       "WorkloadArea": "Calendar",
       "SubArea": "Place"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -9600,13 +9360,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Cloud printing"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud printing"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -9823,13 +9578,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -9974,13 +9724,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-06-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Cloud printing"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud printing"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -10277,13 +10022,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-06-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -10356,13 +10096,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-05-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Cloud printing"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud printing"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -10547,13 +10282,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-05-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -10594,13 +10324,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-05-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -10625,13 +10350,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-04-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Cloud printing"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud printing"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -10848,13 +10568,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-04-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -11071,13 +10786,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -11254,13 +10964,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Cloud printing"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud printing"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -11493,13 +11198,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-02-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -11684,13 +11384,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-01-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -11923,13 +11618,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-12-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -12186,13 +11876,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -12689,13 +12374,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -13144,13 +12824,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-09-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -13167,13 +12842,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-09-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -13454,13 +13124,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-08-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -13677,13 +13342,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-07-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -13916,13 +13576,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-06-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -14235,13 +13890,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-05-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -14450,13 +14100,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-04-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -14529,13 +14174,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-04-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -14768,13 +14408,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-03-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -14911,13 +14546,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-02-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -15086,13 +14716,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-01-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -15373,13 +14998,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-10-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -15404,13 +15024,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-10-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -15723,13 +15338,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-09-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -15746,13 +15356,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-09-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -15841,13 +15446,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-08-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -16170,13 +15770,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-06-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -16209,13 +15804,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-06-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -16584,13 +16174,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-05-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -16971,13 +16556,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-04-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -17026,13 +16606,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-04-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -17515,13 +17090,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-03-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -17562,13 +17132,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-03-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -17801,13 +17366,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-02-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -18248,13 +17808,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-01-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -18511,13 +18066,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-12-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -18886,13 +18436,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-11-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -19375,13 +18920,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-10-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -19686,13 +19226,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-09-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -19877,13 +19412,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-08-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -20076,13 +19606,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-07-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -20485,13 +20010,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-06-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -20992,13 +20512,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -21367,13 +20882,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-04-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -22070,13 +21580,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-03-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -22349,13 +21854,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-02-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -22508,13 +22008,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-01-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -22531,13 +22026,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-12-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Devices and apps ",
-      "SubArea": " Corporate management"
-=======
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -22936,13 +22426,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Sites and lists ",
-      "SubArea": " Taxonomy"
-=======
       "WorkloadArea": "Sites and lists",
       "SubArea": "Taxonomy"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -23343,13 +22828,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Cloud communications ",
-      "SubArea": " Call records"
-=======
       "WorkloadArea": "Cloud communications",
       "SubArea": "Call records"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -23466,13 +22946,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-05-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Cloud communications ",
-      "SubArea": " Call records"
-=======
       "WorkloadArea": "Cloud communications",
       "SubArea": "Call records"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -23633,13 +23108,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-03-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Cloud communications ",
-      "SubArea": " Call"
-=======
       "WorkloadArea": "Cloud communications",
       "SubArea": "Call"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -23672,13 +23142,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Cloud communications ",
-      "SubArea": " Online meeting"
-=======
       "WorkloadArea": "Cloud communications",
       "SubArea": "Online meeting"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -23695,13 +23160,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-02-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Cloud communications ",
-      "SubArea": " Call"
-=======
       "WorkloadArea": "Cloud communications",
       "SubArea": "Call"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -23742,13 +23202,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-02-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Cloud communications ",
-      "SubArea": " Call records"
-=======
       "WorkloadArea": "Cloud communications",
       "SubArea": "Call records"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -23849,13 +23304,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Cloud communications ",
-      "SubArea": " Call"
-=======
       "WorkloadArea": "Cloud communications",
       "SubArea": "Call"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -23928,13 +23378,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Cloud Communications ",
-      "SubArea": " Recording"
-=======
       "WorkloadArea": "Cloud Communications",
       "SubArea": "Recording"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -23999,13 +23444,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-09-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Cloud communications ",
-      "SubArea": " Online meeting"
-=======
       "WorkloadArea": "Cloud communications",
       "SubArea": "Online meeting"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
@@ -24488,11 +23928,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-08-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Teamwork ",
-=======
       "WorkloadArea": "Teamwork",
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
       "SubArea": ""
     },
     {
@@ -24650,13 +24086,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-05-01T00:00:00.000Z",
-<<<<<<< HEAD
-      "WorkloadArea": "Teamwork ",
-      "SubArea": " Shifts"
-=======
       "WorkloadArea": "Teamwork",
       "SubArea": "Shifts"
->>>>>>> 5322c6391226f60a8327b3768733ef222ce1679e
     },
     {
       "ChangeList": [
