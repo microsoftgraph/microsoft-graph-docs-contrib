@@ -46,9 +46,9 @@ Some operators are not supported: `$count`, `$orderby`, `$search`, `$filter`.
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [printConnectors](../resources/printconnector.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [printConnector](../resources/printconnector.md) objects in the response body.
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/print/connectors
 
 ---
 
-##### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
