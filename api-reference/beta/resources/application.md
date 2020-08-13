@@ -64,7 +64,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | addIns | [addIn](addin.md) collection | Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may set the addIns property](/onedrive/developer/file-handlers/?view=odsp-graph-online) for its "FileHandler" functionality. This will let services like Office 365 call the application in the context of a document the user is working on. |
 | api | [apiApplication](apiapplication.md) | Specifies settings for an application that implements a web API. |
 | appId | String | The unique identifier for the application that is assigned by Azure AD. Not nullable. Read-only. |
-| appRoles | [appRole](approle.md) collection | The collection of roles declared by the application. With [app role assignments](approleassignment.md), these roles can be assigned to users, groups, or other applications' service principals. Not nullable. |
+| appRoles | [appRole](approle.md) collection | The collection of roles assigned to the application. With [app role assignments](approleassignment.md), these roles can be assigned to users, groups, or service principals associated with other applications. Not nullable. |
 | createdDateTime | DateTimeOffset | The date and time the application was registered. Read-only. |
 | deletedDateTime | DateTimeOffset | The date and time the application was deleted. Read-only. |
 | displayName | String | The display name for the application. |
