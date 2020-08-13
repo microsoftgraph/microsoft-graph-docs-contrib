@@ -1,19 +1,19 @@
 ---
-title: "List b2xUserFlows"
-description: "Retrieve a list of b2xUserFlow objects."
+title: "Delete b2cUserFlow"
+description: "Delete a b2cUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List b2xUserFlows
+# Delete b2cUserFlow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [b2xUserFlow](../resources/b2xuserflows.md) objects.
+Delete an [b2cUserFlow](../resources/b2cuserflows.md).
 
 ## Permissions
 
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
+|Delegated (work or school account)|IdentityUserFlow.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.ReadWrite.All|
 
 The work or school account needs to belong to one of the following roles:
 
@@ -33,9 +33,8 @@ The work or school account needs to belong to one of the following roles:
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
-GET /identity/b2xUserFlows
+DELETE /identity/b2cUserFlows/{id}
 ```
 
 ## Request headers
@@ -50,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [b2xUserFlow](../resources/b2xuserflows.md)  objects in the response body.
+If successful, this method returns `204 No Content` response code.
 
 ## Example
 
@@ -60,12 +59,12 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_b2xUserFlows"
+  "name": "delete_b2cUserFlows"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/b2xUserFlows
+DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}
 ```
 
 ### Response
@@ -76,29 +75,10 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.B2XUserFlows",
-  "isCollection": true
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2xUserFlows",
-    "value": [
-      {
-          "id": "B2X_1_PartnerSignUp",
-          "userFlowType": "signUpOrSignIn",
-          "userFlowTypeVersion": 1
-
-      },
-      {
-          "id": "B2X_1_ContosoSignUp",
-          "userFlowType": "signUpOrSignIn",
-          "userFlowTypeVersion": 1
-      },
-    ]
+  "truncated": true
 }
+-->
+
+``` http
+HTTP/1.1 204 No Content
 ```

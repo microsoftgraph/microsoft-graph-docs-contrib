@@ -1,19 +1,19 @@
 ---
-title: "List b2xUserFlows"
-description: "Retrieve a list of b2xUserFlow objects."
+title: "List b2cUserFlow identityProviders"
+description: "List all identityProviders in a b2cUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List b2xUserFlows
+# List b2cUserFlows identityProviders
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [b2xUserFlow](../resources/b2xuserflows.md) objects.
+Get the identity providers in a [b2cUserFlow](../resources/b2cuserflows.md) object.
 
 ## Permissions
 
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
+|Delegated (work or school account)|IdentityUserFlow.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
+|Application| IdentityUserFlow.ReadWrite.All|
 
 The work or school account needs to belong to one of the following roles:
 
@@ -35,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identity/b2xUserFlows
+GET /b2cUserFlows/{id}/identityProviders
 ```
 
 ## Request headers
@@ -50,9 +50,9 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [b2xUserFlow](../resources/b2xuserflows.md)  objects in the response body.
+If successful, this method returns a `200 OK` response code and a JSON representation of the [identityProviders](../resources/identityprovider.md) in the response body.
 
-## Example
+## Examples
 
 ### Request
 
@@ -60,25 +60,22 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_b2xUserFlows"
+  "name": "get_b2cUserFlow/identityProviders"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/b2xUserFlows
+GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/identityProviders
 ```
 
 ### Response
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.B2XUserFlows",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.IdentityProviders"
 } -->
 
 ```http
@@ -86,19 +83,21 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2xUserFlows",
     "value": [
-      {
-          "id": "B2X_1_PartnerSignUp",
-          "userFlowType": "signUpOrSignIn",
-          "userFlowTypeVersion": 1
-
-      },
-      {
-          "id": "B2X_1_ContosoSignUp",
-          "userFlowType": "signUpOrSignIn",
-          "userFlowTypeVersion": 1
-      },
+        {
+            "id": "Facebook-OAuth",
+            "type": "Facebook",
+            "name": "Facebook",
+            "clientId": "clientIdFromFacebook"
+            "clientSecret": "*****"
+        },
+        {
+            "id": "Google-OAuth",
+            "type": "Google",
+            "name": "Google",
+            "clientId": "clientIdFromGoogle"
+            "clientSecret": "*****"
+        }
     ]
 }
 ```

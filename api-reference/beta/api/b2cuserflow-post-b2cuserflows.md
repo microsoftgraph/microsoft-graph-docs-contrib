@@ -1,19 +1,19 @@
 ---
-title: "Create b2xUserFlow"
-description: "Create a new b2xUserFlow object."
+title: "Create b2cUserFlow"
+description: "Create a new b2cUserFlow object."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Create b2xUserFlow
+# Create b2cUserFlow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [b2xUserFlow](../resources/b2xuserflows.md) object.
+Create a new [b2cUserFlow](../resources/b2cuserflows.md) object.
 
 ## Permissions
 
@@ -35,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /identity/b2xUserFlow
+POST /identity/b2cUserFlows
 ```
 
 ## Request headers
@@ -72,12 +72,12 @@ The following is an example of the request.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/identity/b2xUserFlows
+POST https://graph.microsoft.com/beta/identity/b2cUserFlows
 Content-type: application/json
 Content-length: 154
 
 {
-    "id": "B2X_1_Partner",
+    "id": "B2C_1_Customer",
     "userFlowType": "signUpOrSignIn",
     "userFlowTypeVersion": 1,
 }
@@ -92,7 +92,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.B2XUserFlows"
+  "@odata.type": "microsoft.graph.B2CUserFlows"
 } -->
 
 ```http
@@ -100,8 +100,8 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": "B2X_1_Partner",
+    "id": "B2C_1_Customer",
     "userFlowType": "signUpOrSignIn",
-    "userFlowTypeVersion": 1
+    "userFlowTypeVersion": 3
 }
 ```

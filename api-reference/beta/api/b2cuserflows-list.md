@@ -1,19 +1,19 @@
 ---
-title: "List b2xUserFlows"
-description: "Retrieve a list of b2xUserFlow objects."
+title: "List b2cUserFlows"
+description: "Retrieve a list of b2cUserFlow objects."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List b2xUserFlows
+# List b2cUserFlows
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [b2xUserFlow](../resources/b2xuserflows.md) objects.
+Retrieve a list of [b2cUserFlow](../resources/b2cuserflows.md) objects.
 
 ## Permissions
 
@@ -35,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identity/b2xUserFlows
+GET /identity/b2cUserFlows
 ```
 
 ## Request headers
@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [b2xUserFlow](../resources/b2xuserflows.md)  objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [b2cUserFlow](../resources/b2cuserflows.md)  objects in the response body.
 
 ## Example
 
@@ -60,12 +60,12 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_b2xUserFlows"
+  "name": "get_b2cUserFlows"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/b2xUserFlows
+GET https://graph.microsoft.com/beta/identity/b2cUserFlows
 ```
 
 ### Response
@@ -77,7 +77,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.B2XUserFlows",
+  "@odata.type": "microsoft.graph.B2CUserFlows",
   "isCollection": true
 } -->
 
@@ -86,17 +86,17 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2xUserFlows",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows",
     "value": [
       {
-          "id": "B2X_1_PartnerSignUp",
-          "userFlowType": "signUpOrSignIn",
+          "id": "B2C_1_CustomerSignUp",
+          "userFlowType": "signUp",
           "userFlowTypeVersion": 1
 
       },
       {
-          "id": "B2X_1_ContosoSignUp",
-          "userFlowType": "signUpOrSignIn",
+          "id": "B2X_1_CustomerSignIn",
+          "userFlowType": "signIn",
           "userFlowTypeVersion": 1
       },
     ]
