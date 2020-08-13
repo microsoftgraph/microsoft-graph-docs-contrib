@@ -71,7 +71,8 @@ If successful, this method returns a `200 OK` response code and an updated [todo
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "update_todotask"
+  "name": "update_todotask",
+  "@odata.type": "microsoft.graph.todoTask"
 }
 -->
 ``` http
@@ -93,7 +94,8 @@ Content-length: 608
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+   "@odata.type": "microsoft.graph.todoTask"
 }
 -->
 ``` http
@@ -117,6 +119,8 @@ Content-Type: application/json
     "dueDateTime": {
         "dateTime": "2020-08-25T04:00:00.0000000",
         "timeZone": "UTC"
+    }
+}
    
 ```
 
