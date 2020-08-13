@@ -13,4 +13,4 @@ jobs:
       env:
         API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       id: validate
-      uses: microsoftgraph/eol-blocker@v1.0.2
+      uses: microsoftgraph/eol-blocker@v1.0.3
