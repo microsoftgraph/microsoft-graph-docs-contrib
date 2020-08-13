@@ -35,7 +35,7 @@ Make sure you have the corresponding permissions to call the following APIs.
 
 ### Create an application
 
-To configure Application Proxy for an app using the API, you must first create an application, add a service principal to the app, then update the application's **onPremisesPublishing** property to configure the App Proxy settings. When creating the application set the application's **signInAudience** to "AzureADMyOrg".
+To configure Application Proxy for an app, you must create an application, add a service principal to the application, and then update the value of the application's **onPremisesPublishing** property to configure the App Proxy settings. When creating the application, set the value of its **signInAudience** property to `AzureADMyOrg`.
 
 #### Request
 
