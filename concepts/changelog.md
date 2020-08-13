@@ -25,7 +25,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
-| Change | beta | Added the `allowAllUsers` property to the [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) type. |
+| Change | beta | Added the **allowAllUsers** property to the [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) resource. |
 
 ### Identity and access
 | **Change type** | **Version**   | **Description**                          |
