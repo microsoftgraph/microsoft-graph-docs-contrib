@@ -254,7 +254,7 @@ Content-type: appplication/json
 HTTP/1.1 204 No content
 ```
 ### Set additional required properties to complete configuring the application
- Update the application's **redirectUri**, **identifierUri**, and **homepageUrl** properties to the external UR configured in onPremisesPublishing property. Then update **[implicitGrantSettings](https://docs.microsoft.com/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0)** to true for enabledTokenIssuance and false for enabledAccessTokenIssuance.
+ Update the value of application's **redirectUri**, **identifierUri**, and **homepageUrl** properties to the external URL that is defined as the value of the **onPremisesPublishing** property. Update the **[implicitGrantSettings](https://docs.microsoft.com/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0)** resource to `true` for the value of the **enabledTokenIssuance** property and to `false` for the value of the **enabledAccessTokenIssuance** property.
 
 #### Request
 
