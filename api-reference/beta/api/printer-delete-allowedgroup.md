@@ -1,5 +1,5 @@
 ---
-title: Delete allowedGroup
+title: Delete allowedGroup from printer
 description: Revoke the specified group's access to submit print jobs to the associated printer.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# Delete allowedGroup
+# Delete allowedGroup from printer
 
 Namespace: microsoft.graph
 

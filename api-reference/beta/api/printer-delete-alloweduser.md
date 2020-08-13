@@ -1,5 +1,5 @@
 ---
-title: Delete allowedUser
+title: Delete allowedUser from printer
 description: Revoke the specified user's access to submit print jobs to the associated printer.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# Delete allowedUser
+# Delete allowedUser from printer
 
 Namespace: microsoft.graph
 

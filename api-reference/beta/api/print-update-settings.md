@@ -1,5 +1,5 @@
 ---
-title: Update settings
+title: Update printSettings
 description: Update tenant-wide settings for the Universal Print service.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# Update settings
+# Update printSettings
 
 Namespace: microsoft.graph
 

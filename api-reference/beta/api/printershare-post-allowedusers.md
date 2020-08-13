@@ -1,5 +1,5 @@
 ---
-title: Create allowedUser
+title: Create allowedUser for printerShare
 description: Grant the specified user access to submit print jobs to the associated printer share.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# Create allowedUser
+# Create allowedUser for printerShare
 
 Namespace: microsoft.graph
 

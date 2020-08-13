@@ -1,5 +1,5 @@
 ---
-title: List allowedUsers
+title: List allowedUsers for printerShare
 description: Retrieve a list of users who have been granted access to submit print jobs to the associated printer share.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# List allowedUsers
+# List allowedUsers for printerShare
 
 Namespace: microsoft.graph
 
