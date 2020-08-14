@@ -15,12 +15,12 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of the specified [event](../resources/event.md) object.
 
-There are two scenarios where an app can get an event in another user's calendar:
+TAn app can get an event in another user's calendar if:
 
-* If the app has application permissions, or,
-* If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user. See [details and an example](/graph/outlook-get-shared-events-calendars).
+* The app has application permissions
+* The app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or has given delegated access to that user. See [details and an example](/graph/outlook-get-shared-events-calendars).
 
-Since the **event** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.
+Because the **event** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.
 
 
 ### Support various time zones
@@ -69,7 +69,7 @@ GET /me/calendargroups/{id}/calendars/{id}/events/{id}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -82,10 +82,12 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [event](../resources/event.md) object in the response body.
-## Example
-##### Request 1
-The first example gets the specified event. It specifies the following:
+If successful, this method returns a `200 OK` response code and an [event](../resources/event.md) object in the response body.
+## Examples
+
+### Example 1: Get a specified event
+#### Request
+The following example gets the specified event. It specifies the following:
 
 - A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time. 
 - A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.
@@ -116,7 +118,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ---
 
-##### Response 1
+#### Response
 Here is an example of the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format. 
 
 <!-- {
@@ -203,8 +205,8 @@ Content-length: 1928
     }
 }
 ```
-
-##### Request 2
+### Example 2: Get the body property in text format
+#### Request
 The second example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** property of the specified event in text format.
 
 The request also uses a `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.
@@ -233,7 +235,7 @@ Prefer: outlook.body-content-type="text"
 
 ---
 
-##### Response 2
+#### Response
 Here is an example of the response. The **body** property is returned in text format. 
 
 <!-- {
@@ -261,10 +263,10 @@ Content-length: 636
 }
 ```
 
+### Example 3: Get an event that specifies more than one location
+#### Request
 
-##### Request 3
-
-The third example shows getting an event that specifies more than one location. The request specifies a `$select` query parameter 
+The following example shows getting an event that specifies more than one location. The request specifies a `$select` query parameter 
 to return specific properties. 
 
 
@@ -290,7 +292,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=sub
 
 ---
 
-##### Response 3
+#### Response
 Here is an example of the response. The **locations** property includes details for the 3 locations that the event is organized for. 
 
 Because the request does not specify any `Prefer: outlook.timezone` or `Prefer: outlook.body-content-type` header, 
@@ -393,10 +395,10 @@ Content-length: 1992
   }
 }
 ```
+### Example 4: Expand a series master event
+#### Request
 
-##### Request 4
-
-The fourth example shows expanding a series master event of a recurring series with exceptions and cancelled occurences. The request specifies a `$select` query parameter to return specific properties. 
+The following example shows expanding a series master event of a recurring series with exceptions and cancelled occurences. The request specifies a `$select` query parameter to return specific properties. 
 
 <!-- {
   "blockType": "request",
@@ -405,8 +407,8 @@ The fourth example shows expanding a series master event of a recurring series w
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences$expand=exceptionOccurrences
 ```
-##### Response 4
-Here is an example of the response. The GET operation returns the selected properties for the series master event. Specifically, for events in the **exceptionOccurrences** collection, the operation returns the **id** property, and the applicable, selected properties (**subject**, **start**, **end**, **occurrenceId**). As for events in the **cancelledOccurrences** collection, since the events no longer exist, the operation returns only their **occurrenceId** property values.
+#### Response
+The GET operation returns the selected properties for the series master event. Specifically, for events in the **exceptionOccurrences** collection, the operation returns the **id** property, and the applicable, selected properties (**subject**, **start**, **end**, **occurrenceId**). As for events in the **cancelledOccurrences** collection, since the events no longer exist, the operation returns only their **occurrenceId** property values.
 
 <!-- {
   "blockType": "response",
