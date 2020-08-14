@@ -525,6 +525,8 @@ items:
             href: toolkit/style.md
           - name: Templating components
             href: toolkit/templates.md
+          - name: Component Caching
+            href: toolkit/cache.md
       - name: Resources
         expanded: true
         items:

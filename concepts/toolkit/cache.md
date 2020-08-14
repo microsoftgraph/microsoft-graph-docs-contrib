@@ -29,52 +29,64 @@ let config = {
     invalidationPeriod: number,
     isEnabled: boolean
   },
-  ...
+  users: {
+    invalidationPeriod: number,
+    isEnabled: boolean
+  }
 };
 ```
 
-Cache invalidation period is represented in milliseconds, and has a default value of 3600000ms, or 60 minutes.
+Cache invalidation period is represented in milliseconds, and has a default value of 3600000 (60 minutes).
 
 |  Store  |  Default Invalidation Period  |
 | :-- | :-- |
-| Users | 60min |
-| People | 60min |
-| Photos | 60min |
+| Users | 3,600,000 ms |
+| People | 3,600,000 ms |
+| Photos | 3,600,000 ms |
 
 ### Examples
 
 To individual disable a store simply set the value of `isEnabled` in that store's config properties to false:
 ```JavaScript
+import { CacheService } from '@microsoft/mgt';
+
 CacheService.config.users.isEnabled = false;
 ```
+Disabling the cache does **not** clear the cache.
 
 Changing the invalditation period is similar:
 
 ```JavaScript
+import { CacheService } from '@microsoft/mgt';
+
 CacheService.config.users.invalidationPeriod = 1800000;
 ```
 
 ## Clearing the Cache
 
-The cache is automatically cleared upon user logout, but can be done manually in two different ways:
-
-### Clearing all stores:
+The cache is automatically cleared upon user logout, but can be done manually if desired:
 
 The clear all the stores in the cache, the `clearCacheStores()` method of the CacheService class will clear every store maintained by the CacheService.
 
-### Clearing individual stores:
+```JavaScript
+import { CacheService } from '@microsoft/mgt';
 
-If you want to instead clear an individual store, the CacheStore class provides a `clearCache()` method that will only clear that store.
+CacheService.clearCacheStores();
+```
 
 ## Creating your own cache stores
 
-Cache stores are created using the CacheService static class. You can create your own with 
+If you wish to create and populate your own cache stores for your custom components.
+
+Cache stores are created using the CacheService static class. You can create your own with:
 ```JavaScript
-CacheService.getCache(Schema: CacheSchema, Store: String);
+CacheService.getCache(schema: CacheSchema, storeName: String);
 ```
+> Note: The storeName you reference in the call to getCache() must match one of the stores listed in your CacheSchema object
 
 CacheSchema object is a dictionary with the key/value pairs:
 ```TypeScript
+import { CacheSchema } from '@microsoft/mgt';
 const cacheSchema: CacheSchema = {
   name: string,
   stores: {
@@ -86,36 +98,53 @@ const cacheSchema: CacheSchema = {
 };
 ```
 
-### Example
+Sample of cache implementation:
 
-```JavaScript
-const cacheSchema = {
-  name: 'myCache',
+```TypeScript
+import { CacheItem, CacheSchema, CacheService, CacheStore } from '@microsoft/mgt';
+
+const cacheSchema: CacheSchema = {
+  name: 'users',
   stores: {
-    dogs: {},
-    cats: {},
-    giraffes: {},
+    users: {},
+    usersQuery: {}
   },
   version: 1
 };
 
-// Each CacheStore object must store a sub-interface of CacheItem, which by default provides
-// a timeCached property
-interface DogCacheItem extends CacheItem {
-  age: number;
-  breed: string;
-  color: string;
-  owner: string;
+interface CacheUser extends CacheItem {
+  user?: string;
 }
 
-// instantiate the desired cache store
-const cache = CacheService.getCache<DogCacheItem>(cacheSchema, 'dogs');
+// retrieves invalidation time from cache config
+const getUserInvalidationTime = (): number =>
+  CacheService.config.users.invalidationPeriod || CacheService.config.defaultInvalidationPeriod;
 
-// insert an item
-cache.putValue('dog1', {age: 6, breed: 'German Shepard', color: 'brown', owner: 'Beth Pan'});
+// checks for if cache is enabled
+const usersCacheEnabled = (): boolean => CacheService.config.users.isEnabled && CacheService.config.isEnabled;
 
-// retrieve an item from the cache
-const bethsDog = cache.getValue('dog1');
+// declare the desired cache store
+let cache: CacheStore<CacheUser>
 
+// check if the cache is enabled
+if (usersCacheEnabled()) {
+  cache = CacheService.getCache<CacheUser>(cacheSchema, 'users');
+  const user = await cache.getValue(query);
+
+  // check if an item is retrieved, and if it's not expired
+  if (user && getUserInvalidationTime() > Date.now() - user.timeCached) {
+    return JSON.parse(user.user);
+  }
+}
+
+// graph call
+const graphRes = graph
+  .api('me')
+  .middlewareOptions(prepScopes('user.read'))
+  .get();
+
+// store graph result into the cache if cache is enabled
+if (usersCacheEnabled()) {
+  cache.putValue(userId, { user: JSON.stringify(graphRes) });
+}
 ```
- > Note: The store you reference in the call to getCache() must match one of the stores listed in your CacheSchema object
