@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of the specified [event](../resources/event.md) object.
 
-TAn app can get an event in another user's calendar if:
+An app can get an event in another user's calendar if:
 
 * The app has application permissions
 * The app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or has given delegated access to that user. See [details and an example](/graph/outlook-get-shared-events-calendars).
