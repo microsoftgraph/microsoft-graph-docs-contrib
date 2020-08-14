@@ -207,7 +207,7 @@ Content-length: 1928
 ```
 ### Example 2: Get the body property in text format
 #### Request
-The second example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** property of the specified event in text format.
+The following example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** property of the specified event in text format.
 
 The request also uses a `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.
 
@@ -408,7 +408,7 @@ The following example shows expanding a series master event of a recurring serie
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences$expand=exceptionOccurrences
 ```
 #### Response
-The GET operation returns the selected properties for the series master event. Specifically, for events in the **exceptionOccurrences** collection, the operation returns the **id** property, and the applicable, selected properties (**subject**, **start**, **end**, **occurrenceId**). As for events in the **cancelledOccurrences** collection, since the events no longer exist, the operation returns only their **occurrenceId** property values.
+The GET operation returns the selected properties for the series master event. Specifically, for events in the **exceptionOccurrences** collection, the operation returns the **id** property, and the applicable, selected properties (**subject**, **start**, **end**, **occurrenceId**). As for events in the **cancelledOccurrences** collection, because the events no longer exist, the operation returns only their **occurrenceId** property values.
 
 <!-- {
   "blockType": "response",
