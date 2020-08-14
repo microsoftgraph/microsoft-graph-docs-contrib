@@ -7,7 +7,7 @@
         },
         {
             "source_path": "concepts\\v1-overview.md",
-            "redirect_url": "api/overview?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/overview?view=graph-rest-1.0",
             "redirect_document_id": true
         },
         {
@@ -258,17 +258,17 @@
         {
             "source_path": "api-reference\\beta\\api\\approleassignment_delete.md",
             "redirect_url": "/graph/api/approleassignment-delete?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\approleassignment_get.md",
             "redirect_url": "/graph/api/approleassignment-get?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\approleassignment_update.md",
             "redirect_url": "/graph/api/approleassignment-update?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\attachment_delete.md",
@@ -648,7 +648,7 @@
         {
             "source_path": "api-reference\\beta\\api\\channel_post_chatthreads.md",
             "redirect_url": "/graph/api/channel-post-chatthreads?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\chartaxistitle_get.md",
@@ -1428,7 +1428,7 @@
         {
             "source_path": "api-reference\\beta\\api\\driveItem_subscriptions_socketio.md",
             "redirect_url": "/graph/api/driveItem-subscriptions-socketio?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\driveitem_unfollow.md",
@@ -2798,32 +2798,32 @@
         {
             "source_path": "api-reference\\beta\\api\\intune_apps_ioslobappprovisioningconfiguration_assign.md",
             "redirect_url": "/graph/api/intune-apps-ioslobappprovisioningconfiguration-assign?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_apps_ioslobappprovisioningconfiguration_create.md",
             "redirect_url": "/graph/api/intune-apps-ioslobappprovisioningconfiguration-create?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_apps_ioslobappprovisioningconfiguration_delete.md",
             "redirect_url": "/graph/api/intune-apps-ioslobappprovisioningconfiguration-delete?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_apps_ioslobappprovisioningconfiguration_get.md",
             "redirect_url": "/graph/api/intune-apps-ioslobappprovisioningconfiguration-get?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_apps_ioslobappprovisioningconfiguration_list.md",
             "redirect_url": "/graph/api/intune-apps-ioslobappprovisioningconfiguration-list?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_apps_ioslobappprovisioningconfiguration_update.md",
             "redirect_url": "/graph/api/intune-apps-ioslobappprovisioningconfiguration-update?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_apps_ioslobapp_create.md",
@@ -3528,12 +3528,12 @@
         {
             "source_path": "api-reference\\beta\\api\\intune_apps_mobileapp_getmobileappcount.md",
             "redirect_url": "/graph/api/intune-apps-mobileapp-getmobileappcount?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_apps_mobileapp_gettopmobileapps.md",
             "redirect_url": "/graph/api/intune-apps-mobileapp-gettopmobileapps?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_apps_mobileapp_list.md",
@@ -5753,7 +5753,7 @@
         {
             "source_path": "api-reference\\beta\\api\\intune_deviceconfig_deviceconfiguration_assignedaccessmultimodeprofiles.md",
             "redirect_url": "/graph/api/intune-deviceconfig-deviceconfiguration-assignedaccessmultimodeprofiles?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_deviceconfig_deviceconfiguration_get.md",
@@ -5763,7 +5763,7 @@
         {
             "source_path": "api-reference\\beta\\api\\intune_deviceconfig_deviceconfiguration_gettargetedusersanddevices.md",
             "redirect_url": "/graph/api/intune-deviceconfig-deviceconfiguration-gettargetedusersanddevices?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_deviceconfig_deviceconfiguration_list.md",
@@ -5773,12 +5773,12 @@
         {
             "source_path": "api-reference\\beta\\api\\intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols.md",
             "redirect_url": "/graph/api/intune-deviceconfig-deviceconfiguration-windowsprivacyaccesscontrols?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_deviceconfig_devicemanagement_enablelegacypcmanagement.md",
             "redirect_url": "/graph/api/intune-deviceconfig-devicemanagement-enablelegacypcmanagement?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_deviceconfig_easemailprofileconfigurationbase_get.md",
@@ -7203,27 +7203,27 @@
         {
             "source_path": "api-reference\\beta\\api\\intune_deviceconfig_windowsassignedaccessprofile_create.md",
             "redirect_url": "/graph/api/intune-deviceconfig-windowsassignedaccessprofile-create?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_deviceconfig_windowsassignedaccessprofile_delete.md",
             "redirect_url": "/graph/api/intune-deviceconfig-windowsassignedaccessprofile-delete?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_deviceconfig_windowsassignedaccessprofile_get.md",
             "redirect_url": "/graph/api/intune-deviceconfig-windowsassignedaccessprofile-get?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_deviceconfig_windowsassignedaccessprofile_list.md",
             "redirect_url": "/graph/api/intune-deviceconfig-windowsassignedaccessprofile-list?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_deviceconfig_windowsassignedaccessprofile_update.md",
             "redirect_url": "/graph/api/intune-deviceconfig-windowsassignedaccessprofile-update?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_deviceconfig_windowscertificateprofilebase_get.md",
@@ -7823,37 +7823,37 @@
         {
             "source_path": "api-reference\\beta\\api\\intune_devices_devicemanagementscript_assign.md",
             "redirect_url": "/graph/api/intune-devices-devicemanagementscript-assign?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_devices_devicemanagementscript_create.md",
             "redirect_url": "/graph/api/intune-devices-devicemanagementscript-create?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_devices_devicemanagementscript_delete.md",
             "redirect_url": "/graph/api/intune-devices-devicemanagementscript-delete?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_devices_devicemanagementscript_get.md",
             "redirect_url": "/graph/api/intune-devices-devicemanagementscript-get?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_devices_devicemanagementscript_list.md",
             "redirect_url": "/graph/api/intune-devices-devicemanagementscript-list?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_devices_devicemanagementscript_update.md",
             "redirect_url": "/graph/api/intune-devices-devicemanagementscript-update?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_devices_devicemanagement_sendcustomnotificationtocompanyportal.md",
             "redirect_url": "/graph/api/intune-devices-devicemanagement-sendcustomnotificationtocompanyportal?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\intune_devices_manageddeviceoverview_get.md",
