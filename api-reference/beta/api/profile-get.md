@@ -57,9 +57,11 @@ If successful, this method returns a `200 OK` response code and the requested [p
 
 ## Examples
 
-### GET a user's profile
+### Example 1: GET a user's profile
 
 The following is an example of the GET profile request.
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -276,19 +278,34 @@ Content-type: application/json
 }
 ```
 
-### Expand names and skills collection and select properties within the entities
+### Example 2: Expand names and skills collection and select properties within the entities
 
 The following is an example of using the $expand and $select query parameters to retrieve partial information from a user's profile.
 
-# HTTP
+#### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_profile"
 }-->
 
-```http
-GET  https://graph.microsoft.com/beta/me/profile?$expand=names($select=first,last),skills($select=displayName)
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/profile?$expand=names($select=first,last),skills($select=displayName)
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-profile-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-profile-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-profile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
