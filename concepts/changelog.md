@@ -36,7 +36,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the **contentBytes** property to the [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta) resource.|
 |Addition|beta|Added the **contentType** property to the [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta) resource.|
 |Addition|beta|Added support for sending inline images to the [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta) resource.|
-|Addition|beta|Added the **isMembershipLimitedToOwners** property to the [team](/graph/api/resources/team?view=graph-rest-beta) resource|
+|Addition|beta|Added the **isMembershipLimitedToOwners** property to the [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
 
 ## July 2020
 
