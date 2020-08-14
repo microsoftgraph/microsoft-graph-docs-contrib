@@ -11,6 +11,6 @@ jobs:
     steps:
     - name: Validate files
       with:
-        repoToken: ${{ secrets.EOL_BLOCKER_TOKEN }}
+        repoToken: ${{ secrets.GITHUB_TOKEN }}
       id: validate
       uses: microsoftgraph/eol-blocker@v1.0.7
