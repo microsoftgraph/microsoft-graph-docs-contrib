@@ -99,7 +99,8 @@ The following is a JSON representation of the resource.
   "classification": "string",
   "specialization": "string",
   "visibility": "string",
-  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"}
+  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
+   "isMembershipLimitedToOwners":"boolean"
 }
 ```
 
