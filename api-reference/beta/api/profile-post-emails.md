@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [itemEmail](../resources/itememail.md).
+Create a new [itemEmail](../resources/itememail.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 

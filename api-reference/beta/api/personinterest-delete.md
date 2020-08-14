@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [personInterest](../resources/personinterest.md) object from the user's [profile](../resources/profile.md).
+Deletes a [personInterest](../resources/personinterest.md) object from a user's [profile](../resources/profile.md).
 
 ## Permissions
 

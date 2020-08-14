@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete [profile](../resources/profile.md) object from a user's account.
+Deletes a [profile](../resources/profile.md) object from a user's account.
 
 ## Permissions
 

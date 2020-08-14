@@ -55,7 +55,6 @@ In the request body, supply the values for relevant fields that should be update
 |detail|[positionDetail](../resources/positiondetail.md)|Contains detail about the user's role on the project.|
 |displayName|String|Contains a friendly name for the project.|
 |inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 |sponsors|[relatedPerson](../resources/relatedperson.md) collection|The Person or people who sponsored the project.    |
 
 ## Response

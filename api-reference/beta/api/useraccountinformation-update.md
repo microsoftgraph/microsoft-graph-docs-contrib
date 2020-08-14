@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [userAccountInformation](../resources/useraccountinformation.md) object in a user's [profile](../resources/profile.md).
+Update the properties of an [userAccountInformation](../resources/useraccountinformation.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -51,7 +51,6 @@ In the request body, supply the values for relevant fields that should be update
 |countryCode|String|Contains the two-character country code associated with the users account.  |
 |inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
 |preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|Contains the language the user has associated as preferred for the account.   |
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 
 ## Response
 

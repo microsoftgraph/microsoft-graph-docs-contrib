@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update personCertification
 Namespace: microsoft.graph
 
-Update the properties of an [personCertification](../resources/personcertification.md) object.
+Update the properties of a [personCertification](../resources/personcertification.md) object from a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -54,7 +54,6 @@ In the request body, supply the values for relevant fields that should be update
 |issuedDate       |Date        |The date that the certification was issued.         |
 |issuingAuthority |String      |Authority which granted the certification.          |
 |issuingCompany   |String      |Authority which granted the certification.          |
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 |startDate        |Date        |The date that the certification became valid.       |
 |thumbnailUrl     |String      |URL referencing a thumbnail of the certification.   |
 |webUrl           |String      |URL referencing the certification.                  |

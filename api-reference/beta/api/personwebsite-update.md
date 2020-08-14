@@ -52,7 +52,6 @@ In the request body, supply the values for relevant fields that should be update
 |description|String|Contains a description of the website.|
 |displayName|String|Contains a friendly name for the website.|
 |inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 |webUrl|String|Contains a link to the website itself.|
 
 ## Response

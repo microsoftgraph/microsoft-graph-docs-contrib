@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Create personAnnotation
 Namespace: microsoft.graph
 
-Create a new [personAnnotation](../resources/personannotation.md) object.
+Create a new [personAnnotation](../resources/personannotation.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 

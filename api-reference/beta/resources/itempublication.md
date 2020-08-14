@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a publication or article that has been associated with an account. 
+Represents a publication or article that has been associated with a user's [profile](../resources/profile.md).
 
 Inherits from [itemFacet](../resources/itemfacet.md).
 

@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of an [personAward](../resources/personAward.md) object.
+Update the properties of a [personAward](../resources/personAward.md) object from a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -52,7 +52,6 @@ In the request body, supply the values for relevant fields that should be update
 |inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
 |issuedDate|Date|The date that the award or honor was granted. |
 |issuingAuthority|String|Authority which granted the award or honor.  |
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 |thumbnailUrl|String|URL referencing a thumbnail of the award or honor.  |
 |webUrl|String|URL referencing the award or honor. |
 

@@ -53,7 +53,6 @@ In the request body, supply the values for relevant fields that should be update
 |inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
 |institution|[institutionData](../resources/institutiondata.md)|Contains details of the institution studied at. |
 |program|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Contains extended information about the program or course.|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 |startMonthYear|Date|The month and year the user commenced the activity referenced.|
 
 ## Response

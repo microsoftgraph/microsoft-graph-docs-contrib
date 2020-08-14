@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a physical address and details of the location where the address is found. 
+Represents a physical address and details of the location where the address is found.
 
 Inherits from [itemFacet](../resources/itemfacet.md).
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents extended name information provided by the user or which they have associated with their account.
+Represents extended name information provided by the user or which they have associated within their [profile](../resources/profile.md).
 
 Inherits from [itemFacet](../resources/itemfacet.md).
 

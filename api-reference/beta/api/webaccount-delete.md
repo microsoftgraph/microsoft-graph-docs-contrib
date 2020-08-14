@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [webAccount](../resources/webaccount.md) object from the user's profile.
+Delete a [webAccount](../resources/webaccount.md) object from a user's [profile](../resources/profile.md).
 
 ## Permissions
 

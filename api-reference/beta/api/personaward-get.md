@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Read the properties and relationships of an [personAward](../resources/personaward.md) object.
+Read the properties and relationships of a [personAward](../resources/personaward.md) object from a user's [profile](../resources/profile.md).
 
 ## Permissions
 

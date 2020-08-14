@@ -56,7 +56,6 @@ In the request body, supply the values for relevant fields that should be update
 |inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
 |isCurrent|Boolean|Denotes whether or not the position is current.|
 |manager|[relatedPerson](../resources/relatedperson.md)|Contains detail of the user's manager in this position.|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 
 ## Response
 

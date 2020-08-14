@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Delete personCertification
 Namespace: microsoft.graph
 
-Deletes an [personCertification](../resources/personcertification.md) object.
+Deletes a [personCertification](../resources/personcertification.md) object from a user's [profile](../resources/profile.md).
 
 ## Permissions
 

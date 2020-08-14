@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update personAnnotation
 Namespace: microsoft.graph
 
-Update the properties of a [personAnnotation](../resources/personannotation.md) object.
+Update the properties of a [personAnnotation](../resources/personannotation.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -51,7 +51,6 @@ The following table shows the properties that are possible to update within an e
 |detail|[itemBody](../resources/itembody.md)|Contains the detail of the note itself.|
 |displayName|String|Contains a friendly name for the note.|
 |inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 
 ## Response
 

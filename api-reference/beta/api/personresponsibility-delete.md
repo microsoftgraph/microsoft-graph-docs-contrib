@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Delete personResponsibility
 Namespace: microsoft.graph
 
-Deletes a [personResponsibility](../resources/personresponsibility.md) object.
+Deletes a [personResponsibility](../resources/personresponsibility.md) object from a user's [profile](../resources/profile.md).
 
 ## Permissions
 

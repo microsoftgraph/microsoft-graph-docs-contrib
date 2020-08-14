@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Delete personAnnotation
 Namespace: microsoft.graph
 
-Deletes a [personAnnotation](../resources/personannotation.md) object.
+Deletes a [personAnnotation](../resources/personannotation.md) object from a user's [profile](../resources/profile.md).
 
 ## Permissions
 

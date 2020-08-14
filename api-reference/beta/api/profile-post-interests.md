@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [personInterest](../resources/personinterest.md].
+Create a new [personInterest](../resources/personinterest.md] in a user's [profile](../resources/profile.md).
 
 ## Permissions
 

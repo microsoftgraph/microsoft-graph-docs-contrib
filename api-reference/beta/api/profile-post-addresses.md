@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Create addresses
 Namespace: microsoft.graph
 
-Create a new [itemAddress](../resources/itemaddress.md) object.
+Create a new [itemAddress](../resources/itemaddress.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 

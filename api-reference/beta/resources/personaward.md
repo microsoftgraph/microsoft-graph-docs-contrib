@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an award that has been associated with an account.
+Represents an award that has been associated with a user's [profile](../resources/profile.md).
 
 Inherits from [itemFacet](../resources/itemfacet.md).
 

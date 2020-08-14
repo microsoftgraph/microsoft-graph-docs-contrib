@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of an of an [itemPublication](../resources/itempublication.md) object in a user's [profile](../resources/profile.md).
+Update the properties of an [itemPublication](../resources/itempublication.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 

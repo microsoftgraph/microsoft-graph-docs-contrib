@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Read a collection of [personAward](../resources/personaward.md) objects from a user's [profile](../resources/profile.md).
+Retrieve a list of [personAward](../resources/personaward.md) objects from a user's [profile](../resources/profile.md).
 
 ## Permissions
 

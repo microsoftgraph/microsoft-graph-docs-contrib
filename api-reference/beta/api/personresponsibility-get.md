@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Get personResponsibility
 Namespace: microsoft.graph
 
-Read the properties and relationships of a [personResponsibility](../resources/personresponsibility.md) object.
+Read the properties and relationships of a [personResponsibility](../resources/personresponsibility.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 

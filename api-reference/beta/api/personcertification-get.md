@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Get personCertification
 Namespace: microsoft.graph
 
-Read the properties and relationships of an [personCertification](../resources/personcertification.md) object in a user's [profile](../resources/profile.md).
+Read the properties and relationships of a [personCertification](../resources/personcertification.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 

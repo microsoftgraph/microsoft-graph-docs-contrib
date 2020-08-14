@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Create personResponsibility
 Namespace: microsoft.graph
 
-Create a new [personResponsibility](../resources/personresponsibility.md) object.
+Create a new [personResponsibility](../resources/personresponsibility.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 

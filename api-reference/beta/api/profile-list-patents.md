@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get a collection of [itemPatent](../resources/itempatent.md) objects from a user's [profile](../resources/profile.md).
+Retrieve a list of [itemPatent](../resources/itempatent.md) objects from a user's [profile](../resources/profile.md).
 
 ## Permissions
 

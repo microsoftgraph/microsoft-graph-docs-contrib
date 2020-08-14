@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List publications
 Namespace: microsoft.graph
 
-Get a collection of [itemPublication](../resources/itempublication.md) objects from a user's [profile](../resources/profile.md).
+Retrieve a list of [itemPublication](../resources/itempublication.md) objects from a user's [profile](../resources/profile.md).
 
 ## Permissions
 

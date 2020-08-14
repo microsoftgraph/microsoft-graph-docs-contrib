@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Deletes an [personAward](../resources/personaward.md) object.
+Deletes a [personAward](../resources/personaward.md) object from a user's [profile](../resources/profile.md).
 
 ## Permissions
 

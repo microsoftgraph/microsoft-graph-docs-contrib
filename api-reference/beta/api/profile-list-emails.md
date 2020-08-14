@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves a list of [itemEmail](../resources/itememail.md) objects from a user's [profile](../resources/profile.md).
+Retrieve a list of [itemEmail](../resources/itememail.md) objects from a user's [profile](../resources/profile.md).
 
 ## Permissions
 

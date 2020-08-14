@@ -60,7 +60,6 @@ The following table shows the properties that are possible to update within an e
 |middle|String|Middle name of the user.|
 |nickname|String|Nickname of the user.|
 |pronunciation|[yomiPersonName](../resources/yomipersonname.md)|Guidance on how to pronounce the users name.|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 |suffix|String|Designators used after the users name (eg: PhD.)  |
 |title|String|Honorifics used to prefix a users name (eg: Dr, Sir, Madam, Mrs.)|
 

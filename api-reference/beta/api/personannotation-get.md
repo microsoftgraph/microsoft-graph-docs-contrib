@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Get personAnnotation
 Namespace: microsoft.graph
 
-Read the properties and relationships of a [personAnnotation](../resources/personannotation.md) object.
+Read the properties and relationships of a [personAnnotation](../resources/personannotation.md) object from a user's [profile](../resources/profile.md).
 
 ## Permissions
 

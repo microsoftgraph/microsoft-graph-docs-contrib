@@ -11,7 +11,7 @@ doc_type: resourcePageType
  
 Namespace: microsoft.graph
 
-Represents a granted or filed patent which has been added to an account. 
+Represents a granted or filed patent which has been added to a user's [profile](../resources/profile.md).
 
 Inherits from [itemFacet](../resources/itemfacet.md).
 
