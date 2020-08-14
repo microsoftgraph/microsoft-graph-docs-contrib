@@ -1,5 +1,5 @@
 ---
-title: "Create lists"
+title: "Create todoTaskList"
 description: "Create a new lists object."
 author: "avijityadav"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "Microsoft To Do"
 doc_type: apiPageType
 ---
 
-# Create lists
+# Create todoTaskList
 Namespace: microsoft.graph
 
 Create a new lists object.
@@ -75,7 +75,7 @@ Content-length: 60
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.todotasklist"
+  "@odata.type": "microsoft.graph.todoTaskList"
 }
 -->
 ``` http

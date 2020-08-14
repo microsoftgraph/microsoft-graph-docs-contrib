@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A list in Microsoft To Do that contains one or more [todoTasks](./todotask.md) resource. 
+A list in Microsoft To Do that contains one or more [todoTask](./todotask.md) resources. 
 
 In To Do, there are built-in task lists such as **Flagged emails** and **Tasks** which cannot be renamed or deleted.  You can, however, create additional task lists.
 
@@ -24,13 +24,13 @@ This resource supports
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List tasklists](../api/todotasklist-list.md)|[todoTaskList](todotasklist.md) collection|Get all the [todoTaskLists](todotasklist.md) in the users mailbox.|
-|[Create tasklist](../api/todotasklist-post-lists.md)|[todoTaskList](todotasklist.md)|Create a new [todoTaskList](todotasklist.md) object.|
-|[Get tasklist](../api/todotasklist-get.md)|[todoTaskList](todotasklist.md)|Read the properties and relationships of the specified [todoTaskList](todotasklist.md).|
-|[Update tasklist](../api/todotasklist-update.md)|[todoTaskList](todotasklist.md)| Update the writable properties of the specified [todoTaskList](todotasklist.md).|
-|[Delete tasklist](../api/todotasklist-delete.md)|None| Delete the specified [todoTaskList](todotasklist.md) .|
-|[List tasks](../api/todotasklist-list-tasks.md)|[todoTask](todotask.md) collection|Get all the [todoTasks](todotask.md) in the specified list.|
-|[Create task](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Create a [todoTask](todotask.md) in the specified task list|
+|[List task lists](../api/todotasklist-list.md)|[todoTaskList](todotasklist.md) collection|Get all the [todoTaskList](todotasklist.md) resources in the users mailbox.|
+|[Create task list](../api/todotasklist-post-lists.md)|[todoTaskList](todotasklist.md)|Create a new [todoTaskList](todotasklist.md) object.|
+|[Get task list](../api/todotasklist-get.md)|[todoTaskList](todotasklist.md)|Read the properties and relationships of the specified [todoTaskList](todotasklist.md).|
+|[Update task list](../api/todotasklist-update.md)|[todoTaskList](todotasklist.md)| Update the writable properties of the specified [todoTaskList](todotasklist.md).|
+|[Delete task list](../api/todotasklist-delete.md)|None| Delete the specified [todoTaskList](todotasklist.md) .|
+|[List tasks](../api/todotasklist-list-tasks.md)|[todoTask](todotask.md) collection|Get all the [todoTask](todotask.md) resources in the specified list.|
+|[Create task](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Create a [todoTask](todotask.md) in the specified task list.|
 
 ## Properties
 |Property|Type|Description|
@@ -39,11 +39,12 @@ This resource supports
 |id|String| The identifier of the task list, unique in the user's mailbox. Read-only. Inherited from [entity](entity.md)|
 |isOwner|Boolean| True if the user is owner of the given task list.|
 |isShared|Boolean| True if the task list is shared with other users|
-|wellknownListName|wellknownListName| Property indicating the well known list name if the given list is a well know list. Possible values are: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
+|wellknownListName|wellknownListName| Property indicating the well-known list name if the given list is a well-known list. Possible values are: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|extensions|[extension](extension.md) collection| The collection of open extensions defined for the task list. Nullable.|
 |tasks|[todoTask](todotask.md) collection|The tasks in this task list. Read-only. Nullable.|
 
 ## JSON representation
@@ -51,14 +52,14 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.taskList",
+  "@odata.type": "microsoft.graph.todoTaskList",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.taskList",
+  "@odata.type": "#microsoft.graph.todoTaskList",
   "id": "String (identifier)",
   "displayName": "String",
   "isOwner": "Boolean",

@@ -19,7 +19,7 @@ Represents the source of the [todoTask](./todotask.md) such as an application or
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List linkedResources](../api/todotask-list-linkedresources.md)|[linkedResource](../resources/linkedresource.md) collection|Get the linkedResources from the linkedResources navigation property.|
-|[Create linkedResources](../api/todotask-post-linkedresources.md)|[linkedResource](../resources/linkedresource.md)|Create a new linkedResources object.|
+|[Create linkedResource](../api/todotask-post-linkedresources.md)|[linkedResource](../resources/linkedresource.md)|Create a new linkedResources object.|
 |[Get linkedResource](../api/linkedresource-get.md)|[linkedResource](../resources/linkedresource.md)|Read the properties and relationships of a [linkedResource](../resources/linkedresource.md) object.|
 |[Update linkedResource](../api/linkedresource-update.md)|[linkedResource](../resources/linkedresource.md)|Update the properties of a [linkedResource](../resources/linkedresource.md) object.|
 |[Delete linkedResource](../api/linkedresource-delete.md)|None|Deletes a [linkedResource](../resources/linkedresource.md) object.|
@@ -27,11 +27,11 @@ Represents the source of the [todoTask](./todotask.md) such as an application or
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|applicationName|String|Field indicating app name of the source that is sending the **linkedResource**.|
-|displayName|String|Field indicating title of the **linkedResource**.|
+|applicationName|String|Field indicating the app name of the source that is sending the **linkedResource**.|
+|displayName|String|Field indicating the title of the **linkedResource**.|
 |externalId|String|Id of the object that is associated with this task on the third-party/partner system.|
-|id|String|Server generated Id for the **linkedResource** Inherited from [entity](../resources/entity.md).|
-|webUrl|String|Deeplink to the **linkedResource**|
+|id|String|Server generated ID for the **linkedResource**. Inherited from [entity](../resources/entity.md).|
+|webUrl|String|Deep link to the **linkedResource**.|
 
 ## Relationships
 None.

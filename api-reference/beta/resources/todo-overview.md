@@ -1,6 +1,6 @@
 ---
-title: "Use the To Do Graph API"
-description: "You can use Microsoft Graph to create an app that connects with tasks across Microsoft To Do"
+title: "Use the Microsoft To Do API"
+description: "You can use the Microsoft Graph API to create an app that connects with tasks in Microsoft To Do."
 author: "avijityadav"
 localization_priority: Priority
 ms.prod: "Microsoft To Do"
@@ -11,38 +11,38 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can use Microsoft Graph to create an app that connects with tasks across Microsoft To Do. With Microsoft Graph, you can build a variety of experiences with tasks, from simply syncing tasks from your app to complex task completion scenarios.
+You can use the Microsoft Graph API to create an app that connects with tasks across Microsoft To Do clients. You can build a variety of experiences with tasks, from simple task syncing to complex task completion scenarios.
  
-Before you get started with the To Do API, it will be helpful to know about the resources and how they relate to each other.
+Before you get started with the To Do API, it will be helpful to know about the resources and how they relate to one another.
 
-## TaskList
+## Task list
 
-[TaskList](./todotasklist.md) represents a logical container of [Tasks](./todotask.md). Tasks currently can only be created inside a tasklist. To [get all your taskLists](../api/todotasklist-get.md), make the following HTTP request.
+A [todoTaskList](./todotasklist.md) represents a logical container of [todoTask](./todotask.md) resources. You can currently create tasks only in a task list. To [get all your task lists](../api/todotasklist-get.md), make the following HTTP request:
 
 ``` http
-GET /me/todo/lists/
+GET /me/todo/lists
 ```
 
-## Tasks
+## Task
 
-[Task](./todotask.md) represents an item within a taskList which track a work item. To get your tasks from a tasklist, make the following HTTP request.
+A [todoTask](./todotask.md) represents a task in a list and tracks a work item. To get your tasks from a task list, make the following HTTP request:
 ``` http
 GET /me/todo/lists/{todoTaskListId}/tasks
 ```
 
-## LinkedResource
+## Linked resource
 
-[LinkedResource](linkedresource.md) represent the source of a task and helps user complete their tasks. To get a **linkedResource** from a task, make the following HTTP request.
+A [linkedResource](linkedresource.md) represents the source of a task and helps a user complete their task. To get a linked resource from a task, make the following HTTP request:
 ``` http
 GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/linkedresources/{linkedResourceId}
 ```
 
 ## Track changes using delta query
 
-If you want to use the To Do delta query API, maintain a local cache of objects that you are interested in observing in order to apply the changes from the delta response feed.
+For performance reasons, you may want to maintain a local cache of objects, and periodically synchronize the local cache with the server, using [delta query](/graph/delta-query-overview). 
 
-The delta payload objects that the To Do delta query can currently return is of the following types:
-* [todoTasks](./todotask.md)
+The following To Do API resources support delta query:
+* [todoTask](./todotask.md) collection in a task list
 * [todoTaskList](./todotasklist.md)
 
 ## What's new

@@ -50,11 +50,12 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["dfsdc-f9dfdfs-dcsda9", "e2dc-f9cce2-dce29", "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9"],
   "name": "delete_linkedresource"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/me/todo/lists/123/tasks/456/linkedResources/f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9
+DELETE https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources/f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9
 ```
 
 

@@ -50,11 +50,12 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADIyAAAhrbPXAAA="],
   "name": "delete_todotasklist"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/me/lists/AAMkADIyAAAhrbPXAAA=
+DELETE https://graph.microsoft.com/beta/me/todo/lists/AAMkADIyAAAhrbPXAAA=
 ```
 
 

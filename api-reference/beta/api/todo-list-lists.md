@@ -1,5 +1,5 @@
 ---
-title: "List todoTaskLists"
+title: "List lists"
 description: "Get a list of the todoTaskList objects and their properties."
 author: "avijityadav"
 localization_priority: Normal
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/me/todo/lists
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "collection(microsoft.graph.todotasklist)"
+  "@odata.type": "collection(microsoft.graph.todoTaskList)"
 }
 -->
 ``` http
