@@ -507,16 +507,14 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |_Chat.Read_ |Read your chat messages  |Allows an app to read your 1:1 or group chat messages in Microsoft Teams, on your behalf. |No | No |
 |_Chat.ReadBasic_ |Read names and members of user chat threads  |Allows an app to read the members and descriptions of 1:1 and group chats threads, on behalf of the signed-in user. |No | No |
 |_Chat.ReadWrite_ |Read your chat messages and send new ones  |Allows an app to read and send your 1:1 or group chat messages in Microsoft Teams, on your behalf. |No | No |
-|_Chat.Send_ (private preview)|Send user chat messages  |Allows an app to send 1:1 and group chat messages in Microsoft Teams, on behalf of the signed-in user. |No | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Chat.Read.All_ |Read all chat messages  |Allows the app to read all 1:1 or group chat messages in Microsoft Teams, without a signed-in user. |Yes | No |
-|_Chat.ReadBasic.All_ |Read names and members of user chat threads  |Read names and members of all chat threads. |No | No |
+|_Chat.ReadBasic.All_ |Read names and members of user chat threads  |Read names and members of all chat threads. |Yes | No |
 |_Chat.UpdatePolicyViolation.All_ |Flag chat messages for violating policy |Allows the app to update Microsoft Teams 1:1 or group chat messages by patching a set of Data Loss Prevention (DLP) policy violation properties to handle the output of DLP processing. | Yes | No |
-|_Chat.Send.All_ (private preview)|Send user chat messages  |Allows an app to send 1:1 and group chat messages in Microsoft Teams without a signed-in user. |No | No |
 
 > **Note:** For messages in a channel, see [ChannelMessage permissions](#channel-message-permissions).
 
@@ -1649,8 +1647,29 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Teams permissions
+## Taxonomy permissions
 
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TermStore.Read.All_        | Read term store data | Allows app to read various terms, sets, and groups in the term store | Yes  | No |
+| _TermStore.ReadWrite.All_   | Read and write all term store data | Allows the app to edit or delete terms, sets, and groups in the term store | Yes  | No |
+
+### Remarks
+
+Taxonomy permissions are valid only on work or school accounts.
+
+### Example usage
+
+#### Delegated
+
+* _TermStore.Read.All_: Read the termstore for the tenant (`GET /termStore`)
+* _TermStore.ReadWrite.All_: Create new terms in the termStore (`POST /termStore/sets/123/children`)
+
+---
+
+## Teams permissions
 
 #### Delegated permissions
 
@@ -1888,6 +1907,64 @@ Threat assessment permissions are valid only on work or school accounts.
 #### Application
 
 * _ThreatAssessment.Read.All_: Read threat assessment requests (`GET /informationProtection/threatAssessmentRequests`)
+
+---
+
+## Universal Print permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Printer.Create_ | Register printers | Allows the application to create (register) printers on behalf of the signed-in user. | Yes | No |
+| _Printer.FullControl.All_ | Register, read, update, and unregister printers | Allows the application to create (register), read, update, and delete (unregister) printers on behalf of the signed-in user. | Yes | No |
+| _Printer.Read.All_ | Read printers | Allows the application to read printers on behalf of the signed-in user. | Yes | No |
+| _Printer.ReadWrite.All_ | Read and update printers | Allows the application to read and update printers on behalf of the signed-in user. Does not allow creating (registering) or deleting (unregistering) printers. | Yes | No |
+| _PrinterShare.Read.All_ | Read printer shares | Allows the application to read printer shares on behalf of the signed-in user. | No | No |
+| _PrinterShare.ReadWrite.All_ | Read and write printer shares | Allows the application to read and update printer shares on behalf of the signed-in user. | Yes | No |
+| _PrintJob.Read_ | Read user's print jobs | Allows the application to read the metadata and document content of print jobs that the signed-in user created. | No | No |
+| _PrintJob.Read.All_ | Read print jobs | Allows the application to read the metadata and document content of print jobs on behalf of the signed-in user. | Yes | No |
+| _PrintJob.ReadBasic_ | Read basic information of user's print jobs | Allows the application to read the metadata of print jobs that the signed-in user created. Does not allow access to print job document content. | No | No |
+| _PrintJob.ReadBasic.All_ | Read basic information of print jobs | Allows the application to read the metadata of print jobs on behalf of the signed-in user. Does not allow access to print job document content. | Yes | No |
+| _PrintJob.ReadWrite_ | Read and write user's print jobs | Allows the application to read and update the metadata and document content of print jobs that the signed-in user created. | No | No |
+| _PrintJob.ReadWrite.All_ | Read and write print jobs | Allows the application to read and update the metadata and document content of print jobs on behalf of the signed-in user. | Yes | No |
+| _PrintJob.ReadWriteBasic_ | Read and write basic information of user's print jobs | Allows the application to read and update the metadata of print jobs that the signed-in user created. Does not allow access to print job document content. | No | No |
+| _PrintJob.ReadWriteBasic.All_ | Read and write basic information of print jobs | Allows the application to read and update the metadata of print jobs on behalf of the signed-in user. Does not allow access to print job document content. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Printer.Read.All_ | Read printers | Allows the application to read printers without a signed-in user. | Yes |
+| _Printer.ReadWrite.All_ | Read and update printers | Allows the application to read and update printers without a signed-in user. Does not allow creating (registering) or deleting (unregistering) printers. | Yes |
+| _PrintJob.Manage.All_ | Perform advanced operations on print jobs | Allows the application to perform advanced operations like redirecting a print job to another printer without a signed-in user. Also allows the application to read and update the metadata of print jobs. | Yes |
+| _PrintJob.Read.All_ | Read print jobs | Allows the application to read the metadata and document content of print jobs without a signed-in user. | Yes |
+| _PrintJob.ReadBasic.All_ | Read basic information for print jobs | Allows the application to read the metadata of print jobs without a signed-in user. Does not allow access to print job document content. | Yes |
+| _PrintJob.ReadWrite.All_ | Read and write print jobs | Allows the application to read and update the metadata and document content of print jobs without a signed-in user. | Yes |
+| _PrintJob.ReadWriteBasic.All_ | Read and write basic information for print jobs | Allows the application to read and update the metadata of print jobs without a signed-in user. Does not allow access to print job document content. | Yes |
+| _PrintTaskDefinition.ReadWrite.All_ | Read, write and update print task definitions | Allows the application to read and update print task definitions without a signed-in user. | Yes |
+
+### Remarks
+
+* To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription in addition to the  permissions listed earlier.
+
+* Some permissions distinguish between print job metadata and payload. Metadata describes the configuration of a print job (its name and document configuration, such as whether it should be stapled or printed in color). Payload is the document data itself (the PDF or XPS file to be printed.)
+
+* All PrintJob.* permissions also require at least Printer.Read.All (or a more prviliged permission) because print jobs are stored within printers.
+
+### Example usage
+
+#### Delegated
+
+* _Printer.Read.All_: Get a list of all printers in the tenant (`GET /print/printers`)
+* _PrintJob.Read.All_: Get a list of all print jobs queued to a Printer (`GET /print/printers/{id}/jobs`)
+* _Printer.FullControl.All_: Delete (unregister) a printer (`DELETE /print/printers/{id}`)
+* _PrintJob.ReadWriteBasic.All_: Update metadata (such as current status) of print jobs (`PATCH /print/printers/{id}/jobs/{id}`)
+* _PrintJob.ReadWrite.All_: Create print jobs and upload document data to them (`POST /print/printers/{id}/jobs`)
+
+#### Application
+
+* _Printer.Read.All_: Get a list of all printers in the tenant (`GET /print/printers`)
 
 ---
 
