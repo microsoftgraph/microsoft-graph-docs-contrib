@@ -15,8 +15,8 @@ Namespace: microsoft.graph
 
 Get the list of [applications](../resources/application.md) in this organization.
 
-> NOTE
-> When calling this API using tokens issued for a personal Microsoft account, this API will return the apps owned by the personal Microsoft account. The notion of organizations doesn't exist for personal Microsoft accounts. In order to list applications owned by specific personal Microsoft accounts this API also requires User.Read permission in addition to Application.Read.All or Application.ReadWrite.All.
+> ![NOTE]
+> When calling this API using tokens issued for a personal Microsoft account, it will return the apps owned by the personal Microsoft account. The notion of organizations doesn't exist for personal Microsoft accounts. In order to list applications owned by specific personal Microsoft accounts, this API requires User.Read permission in addition to Application.Read.All or Application.ReadWrite.All.
  
 ## Permissions
 
