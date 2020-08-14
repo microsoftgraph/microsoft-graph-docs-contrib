@@ -57,9 +57,9 @@ If successful, this method returns a `200 OK` response code and the requested [p
 
 ## Examples
 
-### Request
+### GET a user's profile
 
-The following is an example of the request.
+The following is an example of the GET profile request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -83,7 +83,6 @@ GET https://graph.microsoft.com/beta/me/profile
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -274,5 +273,54 @@ Content-type: application/json
   "projects": [],
   "skills": [],
   "webAccounts": []
+}
+```
+
+### Expand names and skills collection and select properties within the entities
+
+The following is an example of using the $expand and $select query parameters to retrieve partial information from a user's profile.
+
+# HTTP
+<!-- {
+  "blockType": "request",
+  "name": "get_profile"
+}-->
+
+```http
+GET  https://graph.microsoft.com/beta/me/profile?$expand=names($select=first,last),skills($select=displayName)
+```
+
+### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.profile"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "id": "34545-32444234-2334452-234332-432234",
+  "names": [
+      {
+          "first": "Innocenty",
+          "last": "Popov"
+      }
+  ],
+  "skills": [
+      {
+          "displayName": "Machine Learning"
+      },
+      {
+          "displayName": "Artificial Intelligence"
+      }
+  ]
 }
 ```
