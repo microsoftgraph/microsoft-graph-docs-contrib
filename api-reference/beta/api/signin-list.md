@@ -3,7 +3,7 @@ title: "List signIns"
 doc_type: apiPageType
 description: "Get a list of the user sign-ins in an Azure Active Directory tenant."
 localization_priority: Normal
-author: "kholtz"
+author: "khotz"
 ms.prod: "microsoft-identity-platform"
 ---
 
