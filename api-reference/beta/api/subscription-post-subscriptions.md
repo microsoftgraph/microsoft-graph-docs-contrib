@@ -145,7 +145,7 @@ The following are valid values for the resource property.
 |[Mail](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
 |[Presence](../resources/presence.md)| `/communications/presences/{id}` (single user), `/communications/presences?$filter=id in ({id},{id}…)` (multiple users)|
 |[Users](../resources/user.md)|`users`|
-|[Security alert](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
+|[Security alert](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
 
 > **Note:** Any path starting with `me` can also be used with `users/{id}` instead of `me` to target a specific user instead of the current user.
 
