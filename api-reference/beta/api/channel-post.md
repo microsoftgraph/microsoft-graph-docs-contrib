@@ -23,7 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Channel.Create.Group ([RSC](https://aka.ms/teams-rsc)), Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All    |
+|Application | Channel.Create.Group*, Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All    |
+
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
@@ -126,7 +128,7 @@ POST https://graph.microsoft.com/beta/teams/{group_id}/channels
 Content-type: application/json
 
 {
-  "@odata.type": "#Microsoft.Teams.Core.channel",
+  "@odata.type": "#Microsoft.Graph.channel",
   "membershipType": "private",
   "displayName": "My First Private Channel",
   "description": "This is my first private channels",

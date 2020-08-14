@@ -2,7 +2,7 @@
 title: "subscription resource type"
 description: "A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:"
 localization_priority: Priority
-author: "baywet"
+author: "davidmu1"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -14,7 +14,8 @@ Namespace: microsoft.graph
 A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:
 
 - An [alert][] from the Microsoft Graph Security API
-- A [conversation][] in an Office 365 group
+- A [callRecord][] produced after a call or meeting in Microsoft Teams
+- A [conversation][] in a Microsoft 365 group
 - Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive
 - A [list][] under a SharePoint [site][]
 - A [message][], [event][], or [contact][] in Outlook
@@ -57,6 +58,7 @@ See [Use the Microsoft Graph API to get change notifications](webhooks.md) for t
 | Group conversations | 4230 minutes (under 3 days)    |
 | Drive root items    | 4230 minutes (under 3 days)    |
 | SharePoint list     | 4230 minutes (under 3 days)    |
+| Teams callRecord    | 4230 minutes (under 3 days)  |
 | Security alerts     | 43200 minutes (under 30 days)  |
 
 > **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
@@ -114,6 +116,7 @@ Here is a JSON representation of the resource.
 [message]: ./message.md
 [user]: ./user.md
 [alert]: ./alert.md
+[callRecord]: ./callrecords-callrecord.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

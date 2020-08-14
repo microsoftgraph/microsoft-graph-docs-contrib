@@ -2,7 +2,7 @@
 title: "Delete subscription"
 description: "Delete a subscription."
 localization_priority: Normal
-author: "baywet"
+author: "davidmu1"
 ms.prod: ""
 doc_type: apiPageType
 ---
@@ -19,6 +19,7 @@ Depending on the resource and the permission type (delegated or application) req
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
+|[callRecord](../resources/callrecords-callrecord.md) | Not supported | Not supported | CallRecords.Read.All |
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md) (user's personal OneDrive) | Not supported | Files.ReadWrite | Not supported |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Not supported | Files.ReadWrite.All |
@@ -62,6 +63,7 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
+For details about how errors are returned, see [Error responses][error-response].
 
 ## Example
 
@@ -109,6 +111,8 @@ Here is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+
+[error-response]: /graph/errors
 
 <!-- {
   "type": "#page.annotation",
