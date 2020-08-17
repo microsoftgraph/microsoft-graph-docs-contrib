@@ -49,7 +49,8 @@ Creating a subscription requires read permission to the resource. For example, t
 > **Note:** `/teams/allMessages` and `/chats/allMessages` are currently in preview,
 and you may use this API without fees, subject to the [Microsoft APIs Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). 
 Starting in August 2020, it will only be available to users and tenants that have the [required licenses](/graph/teams-licenses). 
-Because `/teams/allMessages` and `/chats/allMessages` deliver notifications for all users in the tenant, all users in the tenant must be licensed. 
+Because `/teams/allMessages` and `/chats/allMessages` deliver notifications for all users in the tenant, all users in the tenant must be licensed;
+attempts to create subscriptions without the proper licenses will result in a 401 error code.
 In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
 
 ### driveItem
@@ -149,7 +150,7 @@ The following are valid values for the resource property.
 |[Mail](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
 |[Presence](../resources/presence.md)| `/communications/presences/{id}` (single user), `/communications/presences?$filter=id in ({id},{id}…)` (multiple users)|
 |[Users](../resources/user.md)|`users`|
-|[Security alert](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
+|[Security alert](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
 
 > **Note:** Any path starting with `me` can also be used with `users/{id}` instead of `me` to target a specific user instead of the current user.
 
