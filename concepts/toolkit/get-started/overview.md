@@ -41,7 +41,7 @@ npm install @microsoft/mgt
 If you're using the ES6 modules from the npm package, you will need to include polyfills in your project as they are not automatically included. Polyfills help to fill in missing browser capabilities in browsers that are still in the process of updating to support Web Component standards. To learn more, see polyfills. To install polyfills, run:
 
 ```bash
-npm install @webcomponents/webcomponents.js
+npm install @webcomponents/webcomponentsjs
 ```
 
 The polyfills are already included if you are using the Toolkit via the mgt-loader script.

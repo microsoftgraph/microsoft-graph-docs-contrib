@@ -7,7 +7,9 @@ author: elisenyang
 
 # Build a web application with Microsoft Graph Toolkit
 
-## Add Microsoft Graph Toolkit to your application
+Summary
+
+## Add Microsoft Graph Toolkit to your project
 You can use Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm package.
 
 ### Use via mgt-loader
@@ -55,3 +57,25 @@ Providers.globalProvider = new MsalProvider(config: {
 ```
 ### Creating an app/client ID
 In order to get a client ID, you need to register your application with Azure Active Directory.
+
+## Add components
+Once you've initialized the MSAL provider, you can start using the components.
+
+Using mgt-loader
+
+```html
+<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+<mgt-msal-provider client-id="[CLIENT-ID]"></mgt-msal-provider>
+<mgt-login></mgt-login>
+```
+Using 
+```html
+<script type="module">
+    import {Providers, MsalProvider} from '@microsoft/mgt'
+
+    Providers.globalProvider = new MsalProvider(config: {
+        clientId: "<YOUR_CLIENT_ID>"
+    })
+</script>
+<mgt-login></mgt-login>
+```

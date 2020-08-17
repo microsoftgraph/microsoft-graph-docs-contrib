@@ -503,7 +503,7 @@ items:
             href: sdks/batch-requests.md
           - name: Upload large files
             href: sdks/large-file-upload.md
-      - name: Use the toolkit
+      - name: Use the Toolkit
         items:
           - name: Toolkit overview
             href: toolkit/overview.md
@@ -513,6 +513,14 @@ items:
                 href: toolkit/get-started/overview.md
               - name: Build a web application (JavaScript)
                 href: toolkit/get-started/build-a-web-app.md
+              - name: Build a SharePoint web part
+                href: toolkit/get-started/build-a-sharepoint-web-part.md
+              - name: Build a Microsoft Teams tab
+                href: toolkit/get-started/build-a-microsoft-teams-tab.md
+              - name: Use Toolkit with React
+                href: toolkit/get-started/use-toolkit-with-react.md
+              - name: Use Toolkit with Angular
+                href: toolkit/get-started/use-toolkit-with-angular.md
           - name: Components
             items:
               - name: Login
