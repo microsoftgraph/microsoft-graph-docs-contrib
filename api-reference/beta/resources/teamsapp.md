@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An app in the [Microsoft Teams](teams-api-overview.md) app catalog.
+Represents an app in the [Microsoft Teams](teams-api-overview.md) app catalog.
 
 Users can see these apps in the Microsoft Teams Store, and these apps can be installed in [teams](team.md) using the [Add app to team](../api/teamsappinstallation-add.md) method.
 
