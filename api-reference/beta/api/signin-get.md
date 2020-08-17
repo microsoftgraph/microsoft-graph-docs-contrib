@@ -3,7 +3,7 @@ title: "Get signIn"
 doc_type: apiPageType
 description: "Get a signIn object that contains all sign-ins for an Azure Active Directory tenant."
 localization_priority: Normal
-author: "kholtz"
+author: "khotz"
 ms.prod: "microsoft-identity-platform"
 ---
 
