@@ -61,8 +61,8 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 {
   "id": "string",
   "externalId": "string",
-  "displayName": "Test App",
-  "distributionMethod": "Organization"
+  "displayName": "string",
+  "distributionMethod": "string"
 }
 ```
 
