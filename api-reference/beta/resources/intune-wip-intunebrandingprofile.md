@@ -50,7 +50,9 @@ This entity contains data which is used in customizing the tenant level appearan
 |onlineSupportSiteUrl|String|URL to the company/organization’s IT helpdesk site|
 |onlineSupportSiteName|String|Display name of the company/organization’s IT helpdesk site|
 |privacyUrl|String|URL to the company/organization’s privacy policy|
-|customPrivacyMessage|String|Text comments regarding what the admin has access to on the device|
+|customPrivacyMessage|String|Text comments regarding what the admin doesn't have access to on the device|
+|customCanSeePrivacyMessage|String|Text comments regarding what the admin has access to on the device|
+|customCantSeePrivacyMessage|String|Text comments regarding what the admin doesn't have access to on the device|
 |isRemoveDeviceDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Remove Device' action on corporate owned devices.|
 |isFactoryResetDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Factory Reset' action on corporate owned devices.|
 |companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md) collection|Collection of blocked actions on the company portal as per platform and device ownership types.|
@@ -114,6 +116,8 @@ Here is a JSON representation of the resource.
   "onlineSupportSiteName": "String",
   "privacyUrl": "String",
   "customPrivacyMessage": "String",
+  "customCanSeePrivacyMessage": "String",
+  "customCantSeePrivacyMessage": "String",
   "isRemoveDeviceDisabled": true,
   "isFactoryResetDisabled": true,
   "companyPortalBlockedActions": [

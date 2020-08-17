@@ -22,6 +22,9 @@ Windows Log Collection request entity.
 |:---|:---|:---|
 |[List deviceLogCollectionResponses](../api/intune-devices-devicelogcollectionresponse-list.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) collection|List properties and relationships of the [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) objects.|
 |[Get deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-get.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Read properties and relationships of the [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) object.|
+|[Create deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-create.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Create a new [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) object.|
+|[Delete deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-delete.md)|None|Deletes a [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md).|
+|[Update deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-update.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Update the properties of a [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) object.|
 |[createDownloadUrl action](../api/intune-devices-devicelogcollectionresponse-createdownloadurl.md)|String|Not yet documented|
 
 ## Properties
