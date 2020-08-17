@@ -14,10 +14,10 @@ You can watch this short video to see how quick and easy it is to get started wi
 > [!VIDEO https://www.youtube-nocookie.com/embed/oZCGb2MMxa0]
 
 ## Set up your Microsoft 365 tenant
-In order to develop with the Toolkit, you need a Microsoft 365 tenant. If you don't have one, you can get a Microsoft 365 developer subscription by joining the MIcrosoft 365 Developer Program. See the Microsoft 365 Developer Program documentation for instructions on how to join the program and configure your subscription.
+In order to develop with the Toolkit, you need access to a Microsoft 365 tenant. If you don't have one, you can get a free Microsoft 365 developer subscription by [joining the Microsoft 365 Developer Program](https://developer.microsoft.com/en-us/microsoft-365/dev-program).For instructions on how to join the program and configure your subscription, see [Set up a Microsoft 365 developer subscription](https://docs.microsoft.com/en-us/office/developer-program/microsoft-365-developer-program-get-started).
 
 ## Set up your development environment
-To develop with the Toolkit, you will need a text editor or IDE. You can use the editor or IDE of your choice or install and use Visual Studio Code for free. You will also need a modern web browser like Microsoft Edge, Google Chrome, or Firefox.
+To develop with the Toolkit, you will need a text editor or IDE. You can use the editor or IDE of your choice or install and use [Visual Studio Code](https://code.visualstudio.com/download) for free. You will also need a modern web browser like Microsoft Edge, Google Chrome, or Firefox.
 
 ## Using Microsoft Graph Toolkit
 You can use Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm package.
@@ -48,7 +48,7 @@ Or, just reference the component you need and avoid loading  everything else:
 
 #### Polyfills
 
-If you're using the ES6 modules from the npm package, you will need to include polyfills in your project as they are not automatically included. Polyfills help to fill in missing browser capabilities in browsers that are still in the process of updating to support Web Component standards. To learn more, see polyfills. To install polyfills, run:
+If you're using the ES6 modules from the npm package, you will need to include polyfills in your project as they are not automatically included. Polyfills help to fill in missing browser capabilities in browsers that are still in the process of updating to support Web Component standards. To learn more, see [polyfills](https://www.webcomponents.org/polyfills). To install polyfills, run:
 
 ```bash
 npm install @webcomponents/webcomponentsjs
