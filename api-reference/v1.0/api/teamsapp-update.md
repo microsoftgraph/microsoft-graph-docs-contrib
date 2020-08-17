@@ -11,9 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update an [app](../resources/teamsapp.md) previously published to the Microsoft Teams app catalog.
+Update an [app](../resources/teamsapp.md) previously published to the Microsoft Teams app catalog. To update an app, the **distributionMethod** property for the app must be set to `organization`.
+
 This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
-To publish to your organization's app catalog, specify `organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.
 
 ## Permissions
 
@@ -36,9 +36,11 @@ One of the following permissions is required to call this API. To learn more, in
 POST /appCatalogs/teamsApps/{id}/appDefinitions
 ```
 
-## Optional query parameters
+## Query parameters
 
-This API consumes a .zip file as the request body and uploads a new Teams app to the Teams app catalog. The optional `requiresReview` parameter is used to trigger the app review process. A user must have admin privileges to bypass the review process.  A user with admin privileges can opt to not set the `requiresReview` Boolean or set it to `false` whereby the app will be considered approved and instantly published.
+|Property|Type|Description|
+|----|----|----|
+|requiresReview| Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set  `requiresReview` to `true`. A user who has admin privileges can opt not to set `requiresReview` or set the value to `false`  and the app will be considered approved and will publish instantly.|
 
 ## Request headers
 
@@ -111,7 +113,7 @@ Content-length: 244
 
 ### Response
 
-If successful, this method returns a `201 Created` response code and the key/value pair `publishingState`: `submitted` in the response body. *See* [teamsappdefinition](../resources/teamsappdefinition.md).
+If successful, this method returns a `201 Created` response code and the key/value pair `publishingState`: `submitted` in the response body. For details, see [teamsAppDefinition](../resources/teamsappdefinition.md).
 
 <!-- {
   "blockType": "response",
