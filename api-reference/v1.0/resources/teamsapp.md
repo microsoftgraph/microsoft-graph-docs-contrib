@@ -11,9 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
-An app in the [Microsoft Teams](teams-api-overview.md) app catalog.
+Represents an app in the [Microsoft Teams](teams-api-overview.md) app catalog.
 
 Users can see these apps in the Microsoft Teams Store, and these apps can be installed in [teams](team.md) using the [Add app to team](../api/teamsappinstallation-add.md) method.
 
@@ -24,7 +22,7 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 |[List published apps](../api/teamsapp-list.md) | [teamsApp](teamsapp.md) collection | List published apps from the Microsoft Teams apps catalog.|
 |[Publish an app](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Publish an app to your organization's app catalog.|
 |[Update a published app](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Update a published app in your organization's app catalog.|
-|[Remove a published app](../api/teamsapp-delete.md) | None | Remove a published app from your organization's app catalog.|
+|[Delete a published app](../api/teamsapp-delete.md) | None | Remove a published app from your organization's app catalog.|
 
 ## Properties
 
