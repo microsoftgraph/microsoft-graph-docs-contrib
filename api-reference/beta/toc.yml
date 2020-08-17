@@ -12074,7 +12074,7 @@ items:
           href: api/linkedresource-update.md
         - name: Delete
           href: api/linkedresource-delete.md
-      - name: Outlook tasks(deprecated)
+      - name: Outlook tasks (deprecated)
         items:
         - name: Outlook task
           href: resources/outlooktask.md

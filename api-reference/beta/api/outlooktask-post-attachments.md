@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+>[!NOTE]
+>The outlook task API is deprecated and will stop returning data on August 20, 2022. Please use the new [To Do API](todo-overview.md).
+
 Use this API to add an [attachment](../resources/attachment.md) to an [outlookTask](../resources/outlooktask.md). The attachment can be a file (of [fileAttachment](../resources/fileattachment.md) type) or Outlook item ([itemAttachment](../resources/itemattachment.md) type).
 
 ## Permissions

@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+>[!NOTE]
+>The outlook task API is deprecated and will stop returning data on August 20, 2022. Please use the new [To Do API](todo-overview.md).
+
 Change writable properties of an Outlook task.
 
 The **completedDateTime** property can be set by the **complete** action, or explicitly by a PATCH operation. If you use PATCH to set **completedDateTime**, make sure you set **status** to `completed` as well.

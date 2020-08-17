@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+>[!NOTE]
+>The outlook task API is deprecated and will stop returning data on August 20, 2022. Please use the new [To Do API](todo-overview.md).
+
 A group of folders ([outlookTaskFolder](outlooktaskfolder.md)) that contain Outlook tasks (collection of [outlookTask](outlooktask.md) objects). 
 
 In Outlook, there is a default task group `My Tasks` which you cannot rename or delete. You can, however, create additional task groups. 

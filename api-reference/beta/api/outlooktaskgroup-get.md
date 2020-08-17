@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+>[!NOTE]
+>The outlook task API is deprecated and will stop returning data on August 20, 2022. Please use the new [To Do API](todo-overview.md).
+
 Get the properties and relationships of the specified Outlook task group.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

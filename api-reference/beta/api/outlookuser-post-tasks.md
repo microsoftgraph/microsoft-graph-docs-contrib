@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+>[!NOTE]
+>The outlook task API is deprecated and will stop returning data on August 20, 2022. Please use the new [To Do API](todo-overview.md).
+
 Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox.
 
 The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time 

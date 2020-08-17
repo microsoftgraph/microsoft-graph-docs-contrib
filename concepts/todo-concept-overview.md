@@ -9,21 +9,20 @@ ms.prod: "Microsoft To Do"
 # To Do API overview (preview)
 Microsoft To Do provides a simple way for people to manage their tasks and plan their day. Tasks are organized in task lists, which can be accessed across To Do clients, Outlook and Teams from any device.
 
-**To Do Screenshot with entities**
+**To Do Windows app**
 
-![Screenshot of a Microsoft To Do Windows App](./images/todo-api-entities.png "Image of Microsoft To Do Windows App")
+![Screenshot of a Microsoft To Do Windows App](./images/todo-windows-app.png "Image of Microsoft To Do Windows App")
 
 ## Why integrate with To Do?
-To Do is ideal for personal tasks across work and life. To Do integration can help you reach millions of users who are using To Do to collect tasks from emails, chats, and plans into one integrated view.
 
 ### Ease of organizing and tracking tasks
-To Do helps you create a list for anything, from work assignments to home projects to groceries. You can keep track of deadlines by adding reminders, due dates, and notes. You can access your lists from anywhere with To Do apps for iOS, Android, Mac, Windows, and the web. 
+Microsoft To Do helps you create a list for anything, from work assignments to home projects to groceries. You can keep track of deadlines by adding reminders, due dates, and notes. You can access your lists from anywhere with the Microsoft To Do apps for iOS, Android, Mac, Windows, and the web. 
 
 ### Integrate across Microsoft 365
-To Do is deeply integrated with Microsoft 365 hubs, Outlook, and Teams. Tasks created in those products sync with To Do so you can access and manage them across devices. To Do integration can help you reach millions of users who use To Do to gather tasks from Outlook, Teams, and Planner into one integrated view. 
+To Do is the single destination for personal tasks in Microsoft 365. So it’s deeply integrated with Microsoft 365 hubs, Outlook, and Teams. Tasks created in those products sync with To Do so you can access and manage them across devices. To Do integration can help you reach millions of users who use To Do to gather tasks from Outlook and Teams into one integrated view.  
 
 ### Support task completion using linked resources
-To Do provides a new resource called a _linked resource_, which links tasks to their original sources. Use this to seamlessly integrate To Do in your workflow by creating tasks that link to your product or service.
+Microsoft To Do provides a new entity called _linked resource_, which you can use to create tasks that can link back to their original sources. You can use this to seamlessly integrate To Do in your workflow by creating tasks that link to your product or service. 
 
 ## Common To Do API operations
 

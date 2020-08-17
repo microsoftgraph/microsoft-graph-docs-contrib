@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+>[!NOTE]
+>The outlook task API is deprecated and will stop returning data on August 20, 2022. Please use the new [To Do API](todo-overview.md).
+
 Complete an Outlook task which sets the **completedDateTime** property to the current date, and the **status** property to `completed`.
 
 If you are completing a task in a recurring series, in the response, the task collection will contain the completed task in the series, and the next task in the series.

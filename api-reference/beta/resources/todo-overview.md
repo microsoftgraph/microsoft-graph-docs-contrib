@@ -11,9 +11,11 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can use the Microsoft Graph API to create an app that connects with tasks across Microsoft To Do clients. You can build a variety of experiences with tasks, from simple task syncing to complex task completion scenarios.
+You can use the Microsoft Graph API to create an app that connects with tasks across Microsoft To Do clients. You can build a variety of experiences with tasks, from simple task syncing to complex task completion scenarios. Currently, the API supports only delegated permissions.
  
 Before you get started with the To Do API, it will be helpful to know about the resources and how they relate to one another.
+
+![To Do API entities](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/todo-windows-app.png)
 
 ## Task list
 
