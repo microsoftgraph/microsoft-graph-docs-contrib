@@ -15,8 +15,7 @@ Namespace: microsoft.graph
 
 <!-- markdownlint-disable MD001 -->
 
-Delete an [app](../resources/teamsapp.md) from an organization's app catalog (the tenant app catalog).
-To remove your app from your organization's app catalog, specify `organization` as the **distributionMethod** in the [teamsApp](../resources/teamsapp.md) resource.
+Delete an [app](../resources/teamsapp.md) from an organization's app catalog (the tenant app catalog). To delete an app, the **distributionMethod** property for the app must be set to `organization`.
 
 You can also use this API to remove a submitted app from the review process.
 
