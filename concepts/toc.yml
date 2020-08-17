@@ -508,7 +508,11 @@ items:
           - name: Toolkit overview
             href: toolkit/overview.md
           - name: Get started
-            href: toolkit/get-started.md
+            items:
+              - name: Overview
+                href: toolkit/get-started/overview.md
+              - name: Build a web application (JavaScript)
+                href: toolkit/get-started/build-a-web-app.md
           - name: Components
             items:
               - name: Login

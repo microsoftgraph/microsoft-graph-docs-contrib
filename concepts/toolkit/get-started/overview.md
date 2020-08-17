@@ -30,7 +30,7 @@ To use the Toolkit via mgt-loader, add the reference in a script to your code:
 ```
 
 ### Use via npm (ES6 modules)
-Using the Toolkit via ES6 modules will give you full control of the bundling process and allow you to bundle only the code you need for your site. To use the ES6 modules, add the npm package to your project:
+Using the Toolkit via ES6 modules will give you full control of the bundling process and allow you to bundle only the code you need for your application. To use the ES6 modules, add the npm package to your project:
 
 ```bash
 npm install @microsoft/mgt
@@ -38,7 +38,7 @@ npm install @microsoft/mgt
 
 #### Polyfills
 
-If you're using the ES6 modules from the npm package, you will need to include polyfills in your project as they are not automatically included. Polyfills help to fill in missing browser capabilities in browsers that are still in the process of updating to support Web Component standards. To learn more, see polyfills. To install polyfills, run
+If you're using the ES6 modules from the npm package, you will need to include polyfills in your project as they are not automatically included. Polyfills help to fill in missing browser capabilities in browsers that are still in the process of updating to support Web Component standards. To learn more, see polyfills. To install polyfills, run:
 
 ```bash
 npm install @webcomponents/webcomponents.js
