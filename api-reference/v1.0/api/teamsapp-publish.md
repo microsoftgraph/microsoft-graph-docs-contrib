@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog.
 Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);
-the created resource will have `distributionMethod` = `organization`.
+the created resource will have a **distributionMethod** property value of `organization`.
 
 ## Permissions
 
@@ -38,13 +38,13 @@ POST /appCatalogs/teamsApps
 | Header        | Value           |
 |:--------------|:--------------  |
 | Authorization | Bearer {token}. Required.  |
-| Content-Type  | application/zip |
+| Content-Type  | application/zip. Required. |
 
 ## Request body
 
-Teams Zip Manifest Payload.
-For Teams application zip file [see Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
-You can't create an app for an organization that has the same manifest ID as another app in that organization.
+In the request body, include a Teams zip manifest payload. For details, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
+
+Each app in the app catalog must have a unique manifest id.
 
 ## Response
 
