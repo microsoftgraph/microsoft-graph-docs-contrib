@@ -38,9 +38,11 @@ One of the following permissions is required to call this API. To learn more, in
 POST /appCatalogs/teamsApps/{id}/appDefinitions
 ```
 
-## Optional query parameters
+## Query parameters
 
-This API consumes a .zip file as the request body and uploads a new Teams app to the Teams app catalog. The optional `requiresReview` parameter is used to trigger the app review process. A user must have admin privileges to bypass the review process.  A user with admin privileges can opt to not set the `requiresReview` Boolean or set it to `false` whereby the app will be considered approved and instantly published.
+|Property|Type|Description|
+|----|----|----|
+|requiresReview| Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set  `requiresReview` to `true`. A user who has admin privileges can opt not to set `requiresReview` or set the value to `false`  and the app will be considered approved and will publish instantly.|
 
 ## Request headers
 
