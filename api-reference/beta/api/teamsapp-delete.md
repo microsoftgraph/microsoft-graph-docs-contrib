@@ -42,7 +42,7 @@ To delete an app from the app catalog:
 DELETE /appCatalogs/teamsApps/{id}
 ```
 
-To remove a submitted app that has not been approved:
+To delete an app that has been submitted but has not been approved:
 
 ```http
 DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
