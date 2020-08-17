@@ -4,7 +4,7 @@ description: "Update the properties of photo object."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: "kevinbellinger"
+author: "MSGraphDocsVteam"
 ---
 
 # Update photo

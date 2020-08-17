@@ -4,7 +4,7 @@ description: "Update the photo for any user in the tenant including the signed-i
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: "MSGraphDocsVteam"
+author: "kevinbellinger"
 ---
 
 # Update profilephoto

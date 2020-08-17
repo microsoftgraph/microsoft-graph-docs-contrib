@@ -4,7 +4,7 @@ description: "Get the specified profilePhoto or its metadata (**profilePhoto** p
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: ""
-author: "MSGraphDocsVteam"
+author: "kevinbellinger"
 ---
 
 # Get photo
