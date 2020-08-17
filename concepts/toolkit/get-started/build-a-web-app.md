@@ -7,7 +7,10 @@ author: elisenyang
 
 # Build a web application with Microsoft Graph Toolkit
 
-Summary
+To get started with Microsoft Graph Toolkit in your web application, you will need to:
+1. Add Microsoft Graph Toolkit to your project
+2. Initialize the MSAL Provider
+3. Add components
 
 ## Add Microsoft Graph Toolkit to your project
 You can use Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm package.
@@ -25,18 +28,26 @@ Using the Toolkit via ES6 modules will give you full control of the bundling pro
 ```bash
 npm install @microsoft/mgt
 ```
-
-#### Polyfills
-
-If you're using the ES6 modules from the npm package, you will need to include polyfills in your project as they are not automatically included. Polyfills help to fill in missing browser capabilities in browsers that are still in the process of updating to support Web Component standards. To learn more, see polyfills. To install polyfills, run:
+You will need to include polyfills in your project as they are not automatically included. Polyfills help to fill in missing browser capabilities in browsers that are still in the process of updating to support Web Component standards. To learn more, see polyfills. To install polyfills, run:
 
 ```bash
-npm install @webcomponents/webcomponents.js
+npm install @webcomponents/webcomponentsjs
 ```
 
 The polyfills are already included if you are using the Toolkit via the mgt-loader script.
 
-## Add the MSAL Provider
+Now you can reference the Toolkit in your application with:
+
+```html
+<script src="node_modules/@microsoft/mgt/dist/es6/components.js"></script>
+```
+Or, reference only the components you need and avoid loading everything else. For example, to add the MSAL Provider:
+
+```html
+<script src="node_modules/@microsoft/mgt/dist/es6/components/providers/mgt-msal-provider.js"></script>
+```
+
+## Initialize the MSAL Provider
 The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see Providers. The MSAL Provider uses MSAL.js to sign in users and acquire tokens. You can initialize the MSAL provider in your HTML or JavaScript.
 
 ### Initialize in your HTML page
@@ -51,7 +62,7 @@ To initialize the MSAL provider in your JavaScript, add the following code to yo
 ```js
 import {Providers, MsalProvider} from '@microsoft/mgt'
 
-Providers.globalProvider = new MsalProvider(config: {
+Providers.globalProvider = new MsalProvider({
     clientId: "<YOUR_CLIENT_ID>"
 })
 ```
@@ -59,21 +70,24 @@ Providers.globalProvider = new MsalProvider(config: {
 In order to get a client ID, you need to register your application with Azure Active Directory.
 
 ## Add components
-Once you've initialized the MSAL provider, you can start using the components.
+Once you've initialized the MSAL provider, you can start using any of the components.
 
-Using mgt-loader
+The following is a full working example using mgt-loader, the MSAL Provider initialized in HTML, and the Login component:
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
 <mgt-msal-provider client-id="[CLIENT-ID]"></mgt-msal-provider>
 <mgt-login></mgt-login>
 ```
-Using 
+This is an example using the ES6 modules via npm, the MSAL Provider initialized in JavaScript, and the Login Component
+
 ```html
+<script src="node_modules/@microsoft/mgt/dist/es6/components/providers/mgt-msal-provider.js"></script>
+<script src="node_modules/@microsoft/mgt/dist/es6/components/mgt-login/mgt-login.js"></script>
 <script type="module">
     import {Providers, MsalProvider} from '@microsoft/mgt'
 
-    Providers.globalProvider = new MsalProvider(config: {
+    Providers.globalProvider = new MsalProvider({
         clientId: "<YOUR_CLIENT_ID>"
     })
 </script>

@@ -35,6 +35,16 @@ Using the Toolkit via ES6 modules will give you full control of the bundling pro
 ```bash
 npm install @microsoft/mgt
 ```
+Now you can reference all of the components in the page you are using:
+
+```html
+<script src="node_modules/@microsoft/mgt/dist/es6/components.js"></script>
+```
+
+Or, just reference the component you need and avoid loading  everything else:
+```html
+<script src="node_modules/@microsoft/mgt/dist/es6/components/mgt-login/mgt-login.js"></script>
+```
 
 #### Polyfills
 
