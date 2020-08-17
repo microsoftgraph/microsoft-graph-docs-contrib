@@ -60,15 +60,17 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 ## Request body
 
 In the request body, include a Teams zip manifest payload. For details, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).  
+
 Each app in the app catalog must have a unique manifest `id`.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [teamsCatalogApp](../resources/teamsapp.md) object.
+If successful, this method returns a `200 OK` response code and a [teamsApp](../resources/teamsapp.md) object.
 
 ## Examples
 
-### Request
+### Example 1: Publish an app to the app catalog
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -85,7 +87,7 @@ Content-length: 244
 
 For information about how to create a Microsoft Teams application zip file, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
 <!-- markdownlint-disable MD024 -->
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",
