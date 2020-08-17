@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-List [apps](../resources/teamsapp.md) published in the Microsoft Teams app catalog. This includes apps from the Microsoft Teams store, as well as apps from your organization's app catalog (the tenant app catalog). To get apps from your organization's app catalog only, specify `Organization` as the **distributionMethod** in the [teamsApp](../resources/teamsapp.md) resource.
+List [apps](../resources/teamsapp.md) published in the Microsoft Teams app catalog. This includes apps from the Microsoft Teams store, as well as apps from your organization's app catalog (the tenant app catalog). To get apps from your organization's app catalog only, specify `organization` as the **distributionMethod** in the request.
 
 ## Permissions
 
@@ -37,6 +37,8 @@ GET /appCatalogs/teamsApps
 
 This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
+> **Note:** You can filter on any of the fields of the [teamsApp](../resources/teamsapp.md) object to shorten the list of results. You can use any of the following filter operations: Equal, not-equal, and, or, and not.
+
 ## Request headers
 
 | Header        | Value                     |
@@ -47,15 +49,13 @@ This method supports the `$filter`, `$select`, and `$expand` [OData query parame
 
 Do not supply a request body for this method.
 
-> **Note:** You can filter on any of the fields of the [teamsApp](../resources/teamsapp.md) object to shorten the list of results. You can use any of the following filter operations: Equal, not-equal, and, or, and not.
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and a list of [teamsApp](../resources/teamsapp.md) objects in the response body.
 
 ## Examples
 
-### Example 1: List all applications
+### Example 1: List all applications in your tenant
 
 The following example lists all apps that are specific to your tenant.
 
