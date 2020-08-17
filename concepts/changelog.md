@@ -64,14 +64,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the **contentType** property to the [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta) resource.|
 |Addition|beta|Added support for sending inline images to the [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta) resource.|
 |Addition|beta|Added the **isMembershipLimitedToOwners** property to the [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
-
-### Teamwork
-
-| **Change type** | **Version** | **Description** |
-|:---|:---|:---|
-|Addition|beta and v1.0|Added the **publishingState** property to the [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta) resource.|
-|Addition|beta and v1.0|Added **AppCatalog.Submit** delegated permission to:<br><ul><li> [teamsapp-publish.md](/graph/api/teamsapp-publish?view=graph-rest-beta)</li><li>[teamsapp-delete.md](/graph/api/teamsapp-delete?view=graph-rest-beta)</li>|
-|Addition|beta and v1.0|Added support for `requiresReview` query parameters to:<br><ul><li> [teamsapp-publish](/graph/api/teamsapp-publish?view=graph-rest-beta)</li><li>[teamsapp-update](/graph/api/teamsapp-update?view=graph-rest-beta)|
+|Addition|beta and v1.0|Added the **publishingState** property to the [teamsAppDefinition](/graph/api/resources/teamsappdefinition) resource.|
+|Addition|beta and v1.0|Added **AppCatalog.Submit** delegated permission to:<br><ul><li> [Publish apps](/graph/api/teamsapp-publish?view=graph-rest-beta)</li><li>[Delete app](/graph/api/teamsapp-delete)</li>|
+|Addition|beta and v1.0|Added support for the `requiresReview` query parameter to:<br><ul><li> [Publish apps](/graph/api/teamsapp-publish?view=graph-rest-beta)</li><li>[Update app](/graph/api/teamsapp-update?view=graph-rest-beta)|
 
 ## July 2020
 
