@@ -124,6 +124,8 @@ Delta query is currently supported for the following resources.
 | Planner items\*\* (preview)                                    | [delta](/graph/api/planneruser-list-delta) function of the all segment of [plannerUser](/graph/api/resources/planneruser) resource (preview)                                                     |
 | Schools (preview)                                              | [delta](/graph/api/educationschool-delta) function of the [educationSchool](/graph/api/resources/educationschool) resource (preview)                                                             |
 | Service principals                                   | [delta](/graph/api/serviceprincipal-delta) function of the [servicePrincipal](/graph/api/resources/serviceprincipal) resource                                                          |
+| Tasks in a task list                                           | [delta](/graph/api/todotask-delta) function of the [todoTask](/graph/api/resources/todotask) resource                                                                |
+| Task lists                                                     | [delta](/graph/api/todotasklist-delta) function of the [todoTaskList](/graph/api/resources/todotasklist) resource                                                                |
 | Users                                                          | [delta](/graph/api/user-delta?view=graph-rest-1.0) function of the [user](/graph/api/resources/user?view=graph-rest-1.0) resource                                                                |
 
 
