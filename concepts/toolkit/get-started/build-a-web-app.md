@@ -7,7 +7,7 @@ author: elisenyang
 
 # Build a web application with Microsoft Graph Toolkit
 
-This topic describes how to get started with Microsoft Graph Toolkit in a web application written in vanilla JavaScript. If you would like to use the Toolkit with a web framework, see Use Toolkit with React or Use Toolkit with Angular.
+This topic describes how to get started with Microsoft Graph Toolkit in a web application written in vanilla JavaScript. If you would like to learn how to use the Toolkit with a web framework, see Use Toolkit with React or Use Toolkit with Angular.
 
 To get started with Microsoft Graph Toolkit in your web application, the high-level steps you will need to follow include:
 1. Add Microsoft Graph Toolkit to your project
@@ -84,26 +84,41 @@ The following is a full working example using mgt-loader, the MSAL Provider init
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
-<mgt-msal-provider client-id="[CLIENT-ID]"></mgt-msal-provider>
+<mgt-msal-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal-provider>
 <mgt-login></mgt-login>
 ```
-This is an example using the ES6 modules, the MSAL Provider initialized in JavaScript, and the Login Component:
 
+This is an example using the ES6 modules, the MSAL Provider initialized in HTML, and the Login Component:
 ```html
 <script src="node_modules/@microsoft/mgt/dist/es6/components/providers/mgt-msal-provider.js"></script>
 <script src="node_modules/@microsoft/mgt/dist/es6/components/mgt-login/mgt-login.js"></script>
-<script type="module">
-    import {Providers, MsalProvider} from '@microsoft/mgt'
-
-    Providers.globalProvider = new MsalProvider({
-        clientId: "<YOUR_CLIENT_ID>"
-    })
-</script>
+<mgt-msal-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal-provider>
 <mgt-login></mgt-login>
+```
+
+This is an example using the ES6 modules, the MSAL Provider initialized in JavaScript, and the Login Component:
+
+```js
+import {Providers, MsalProvider} from '@microsoft/mgt'
+
+Providers.globalProvider = new MsalProvider({
+    clientId: "<YOUR_CLIENT_ID>"
+})
+
+function component() {
+    const element = document.createElement('div');
+    element.innerHTML = '<mgt-login></mgt-login>'
+    return element;
+}
+
+document.body.appendChild((component()));
 ```
 
 ## Test your app
 
+In order to test your app, MSAL requires the page to be hosted in a web server for the authentication redirects. 
 
+If you're just getting started and want to play around, you can use [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code or any similar lightweight development server. Download the extension and open your HTML file using live server. 
+> **NOTE:** Make sure the **redirect URI** in your app registration is set to the localhost port your application is hosted on. Go to your app registration in the [Azure portal](https://portal.azure.com), click **Authentication** under manage, and add the correct **redirect URI**.
 
 ## Next Steps

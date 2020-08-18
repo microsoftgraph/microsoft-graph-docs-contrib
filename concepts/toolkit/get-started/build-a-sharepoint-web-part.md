@@ -17,6 +17,6 @@ author: elisenyang
 
 ## Set up your SharePoint Framework development environment
 
-
+Follow the steps to [Set up your SharePoint Framework development environment](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-development-environment).
 
 ## Create a new web part
