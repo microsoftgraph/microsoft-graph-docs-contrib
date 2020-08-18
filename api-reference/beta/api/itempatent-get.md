@@ -35,7 +35,8 @@ GET /users/{id | userPrincipalName}/profile/patents/{id}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the `$select` query parameter. Specify a list of properties to include in the response, separating them by commas. For optimal performance, only select the subset of properties needed.
 
 ## Request headers
 |Name|Description|
