@@ -49,6 +49,8 @@ POST /users/{id|userPrincipalName}/messages
 POST /groups/{id}/events
 POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
+POST /users/{id|userPrincipalName}/todo/lists
+POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks
 ```
 
 >**Note:** This syntax shows some common ways to create the supported resource instances. All other POST syntaxes
@@ -72,8 +74,8 @@ POST /users/{id|userPrincipalName}/messages/{id}/extensions
 POST /organization/{id}/extensions
 POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
-POST /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions
-POST /users/me/todo/lists/{todoTaskListId}/extensions
+POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks/{id}/extensions
+POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 ```
 
 >**Note:** This syntax shows some common ways to identify a resource instance, in order to create an

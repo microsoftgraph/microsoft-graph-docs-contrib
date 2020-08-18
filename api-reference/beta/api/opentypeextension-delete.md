@@ -51,6 +51,7 @@ DELETE /organization/{Id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 DELETE /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
+DELETE /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. 
