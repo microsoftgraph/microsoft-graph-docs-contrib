@@ -33,6 +33,7 @@ POST /directoryRoles/{id}/members/$ref
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) object.
@@ -87,7 +88,6 @@ HTTP/1.1 204 No content
 #### Request
 You can use a specific resource set like users or groups in the request body, or you can use generic **directoryObjects**. This example shows how you can use **directoryObjects**.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_directoryrole"
@@ -101,15 +101,6 @@ Content-length: 30
     "@odata.id":"https://graph.microsoft.com/v1.0/directoryObjects/2c891f12-928d-4da2-8d83-7d2434a0d8dc"
 }
 ```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-directoryrole-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryobject-from-directoryrole-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 The following example shows the response. 
