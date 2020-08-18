@@ -1,16 +1,19 @@
 ---
 title: "Build a web application with Microsoft Graph Toolkit"
-description: "How to get started with building a web application using Microsoft Graph Toolkit."
+description: "How to get started building a web application using Microsoft Graph Toolkit."
 localization_priority: Normal
 author: elisenyang
 ---
 
 # Build a web application with Microsoft Graph Toolkit
 
-To get started with Microsoft Graph Toolkit in your web application, you will need to:
+This topic describes how to get started with Microsoft Graph Toolkit in a web application written in vanilla JavaScript. If you would like to use the Toolkit with a web framework, see Use Toolkit with React or Use Toolkit with Angular.
+
+To get started with Microsoft Graph Toolkit in your web application, the high-level steps you will need to follow include:
 1. Add Microsoft Graph Toolkit to your project
 2. Initialize the MSAL Provider
 3. Add components
+4. Test your application
 
 ## Add Microsoft Graph Toolkit to your project
 You can use Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm package.
@@ -71,7 +74,7 @@ Providers.globalProvider = new MsalProvider({
 The client ID is the only property required to initialize the provider, but there are additional options you can set. See [Msal Provider](../providers/msal.md) for the full list.
 
 ### Creating an app/client ID
-In order to get a client ID, you need to [register your application](https://docs.microsoft.com/en-us/graph/auth-register-app-v2) in Azure AD. 
+In order to get a client ID, you need to [register your application](https://docs.microsoft.com/graph/auth-register-app-v2) in Azure AD. 
 >**Note**: MSAL only supports the Implicit Flow for OAuth. Make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under **Authentication**, find the **Implicit grant** section and select the checkboxes for **Access tokens** and **ID tokens**. 
 
 ## Add components
@@ -98,4 +101,9 @@ This is an example using the ES6 modules, the MSAL Provider initialized in JavaS
 </script>
 <mgt-login></mgt-login>
 ```
+
+## Test your app
+
+
+
 ## Next Steps
