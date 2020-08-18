@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 346
+Content-Length: 423
 
 {
   "value": {
@@ -72,7 +72,8 @@ Content-Length: 346
     "displayName": "Display Name value",
     "onboardingUrl": "https://example.com/onboardingUrl/",
     "onboardingStatus": "onboarding",
-    "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
+    "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00",
+    "onboardingRequestExpiryDateTime": "2017-01-01T00:02:07.7573274-08:00"
   }
 }
 ```
