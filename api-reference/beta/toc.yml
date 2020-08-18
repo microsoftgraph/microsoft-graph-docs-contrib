@@ -377,7 +377,7 @@ items:
             href: api/outlookuser-list-mastercategories.md
         - name: Translate IDs
           href: api/user-translateexchangeids.md
-      - name: Outlook tasks (preview)
+      - name: Outlook tasks (deprecated)
         items:
         - name: Outlook tasks
           href: resources/outlooktask.md
@@ -12076,7 +12076,7 @@ items:
           href: api/linkedresource-delete.md
       - name: Outlook tasks (deprecated)
         items:
-        - name: Outlook task
+        - name: Outlook task (deprecated)
           href: resources/outlooktask.md
           items:
           - name: List
@@ -12095,7 +12095,7 @@ items:
             href: api/outlooktask-list-attachments.md
           - name: Add attachment
             href: api/outlooktask-post-attachments.md
-        - name: Outlook task folder
+        - name: Outlook task folder (deprecated)
           href: resources/outlooktaskfolder.md
           items:
           - name: List
@@ -12112,7 +12112,7 @@ items:
             href: api/outlooktaskfolder-list-tasks.md
           - name: Create tasks in folder
             href: api/outlooktaskfolder-post-tasks.md
-        - name: Outlook task group
+        - name: Outlook task group (deprecated)
           href: resources/outlooktaskgroup.md
           items:
           - name: List
@@ -12136,8 +12136,6 @@ items:
             href: resources/fileattachment.md
           - name: Item attachment type
             href: resources/itemattachment.md
-          - name: Reference attachment type
-            href: resources/referenceattachment.md
           - name: Get attachment
             href: api/attachment-get.md
           - name: Delete attachment

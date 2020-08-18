@@ -13,8 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
->The outlook task API is deprecated and will stop returning data on August 20, 2022. Please use the new [To Do API](../resources/todo-overview.md).
+> [!CAUTION]
+> The Outlook tasks API is deprecated and will stop returning data on August 20, 2022. Please use the new [To Do API](../resources/todo-overview.md).
 
 Create an Outlook task in the specified task folder.
 
@@ -26,8 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.    |
-|Delegated (personal Microsoft account) | Not supported.    |
+|Delegated (work or school account) | Tasks.ReadWrite    |
+|Delegated (personal Microsoft account) | Tasks.ReadWrite    |
 |Application | Not supported. |
 
 ## HTTP request
