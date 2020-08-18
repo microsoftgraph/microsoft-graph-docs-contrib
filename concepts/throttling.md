@@ -29,6 +29,30 @@ The most common causes of throttling of clients include:
 - A large number of requests across all applications in a tenant.
 - A large number of requests from a particular application across all tenants.
 
+## Sample response
+
+Whenever the throttling threshold is exceeded, Microsoft Graph responds with a response similar to this one.
+
+```http
+HTTP/1.1 429 Too Many Requests
+Content-Type: application/json
+Retry-After: 2.128
+
+{
+  "error": {
+    "code": "TooManyRequests",
+    "innerError": {
+      "code": "429",
+      "date": "2020-08-18T12:51:51",
+      "message": "Please retry after",
+      "request-id": "94fb3b52-452a-4535-a601-69e0a90e3aa2",
+      "status": "429"
+    },
+    "message": "Please retry again laster."
+  }
+}
+```
+
 ## Best practices to handle throttling
 
 The following are best practices for handling throttling:
