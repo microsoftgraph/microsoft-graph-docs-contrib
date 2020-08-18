@@ -1,11 +1,11 @@
 ---
-title: "Graph Call Caching"
+title: "Microsoft Graph Toolkit Caching"
 description: "Explaining how the Cache works and how to configure the options provided to developers"
 localization_priority: Normal
 author: adchau
 ---
 
-# Graph Call Caching
+# Caching
 
 The Microsoft Graph Toolkit supports caching of select Graph API calls. Currently, the calls of the users, person, contact, and photo endpoints are being cached by default in three IndexedDB stores.
 
@@ -15,7 +15,7 @@ You can view the cache through the developer panel under the "Application" tab, 
 
 ## Cache configuration
 
-You can find the cache options in the static class `CacheService`, in the `config` property. It is formatted as such:
+You can read and write the cache options through the static class `CacheService.config` object. It is formatted as such:
 
 ```TypeScript
 let config = {
@@ -36,13 +36,7 @@ let config = {
 };
 ```
 
-Cache invalidation period is represented in milliseconds, and has a default value of 3600000 (60 minutes).
-
-|  Store  |  Default Invalidation Period  |
-| :-- | :-- |
-| Users | 3,600,000 ms |
-| People | 3,600,000 ms |
-| Photos | 3,600,000 ms |
+Individual cache invalidation periods are defaulted to `null` in the config object, and defaults to the general `defaultInvalidationPeriod` value of 3,600,000 ms (60 minutes). Any value passed into `config.x.invalidationPeriod` will override `defaultInvalidationPeriod`.
 
 ### Examples
 
@@ -66,7 +60,7 @@ CacheService.config.users.invalidationPeriod = 1800000;
 
 The cache is automatically cleared upon user logout, but can be done manually if desired:
 
-The clear all the stores in the cache, the `clearCacheStores()` method of the CacheService class will clear every store maintained by the CacheService.
+The clear all the stores in the cache, the `clearCaches()` method of the CacheService class will clear every store maintained by the CacheService.
 
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';
