@@ -1,5 +1,5 @@
 ---
-title: "win32LobPowerShellScriptRuleOperationType enum type"
+title: "win32LobAppPowerShellScriptRuleOperationType enum type"
 description: "Contains all supported Powershell Script output detection type."
 author: "dougeby"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
-# win32LobPowerShellScriptRuleOperationType enum type
+# win32LobAppPowerShellScriptRuleOperationType enum type
 
 Namespace: microsoft.graph
 
