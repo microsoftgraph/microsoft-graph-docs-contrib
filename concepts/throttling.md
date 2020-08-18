@@ -31,7 +31,7 @@ The most common causes of throttling of clients include:
 
 ## Sample response
 
-Whenever the throttling threshold is exceeded, Microsoft Graph will respond with a response similar to this one.
+Whenever the throttling threshold is exceeded, Microsoft Graph responds with a response similar to this one.
 
 ```http
 HTTP/1.1 429 Too Many Requests
