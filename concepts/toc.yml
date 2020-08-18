@@ -43,6 +43,8 @@ items:
             href: /graph/tutorials/aspnet-core
           - name: ASP.NET
             href: /learn/modules/msgraph-build-aspnetmvc-apps
+          - name: Azure Functions
+            href: /graph/tutorials/azure-functions
           - name: Microsoft Flow
             href: /graph/tutorials/flow
           - name: iOS Objective-C
@@ -81,7 +83,7 @@ items:
       - name: Groups
         href: office365-groups-concept-overview.md
       - name: Applications
-        items:    
+        items:
           - name: Overview
             href: applications-concept-overview.md
           - name: Automate SAML-based SSO configuration

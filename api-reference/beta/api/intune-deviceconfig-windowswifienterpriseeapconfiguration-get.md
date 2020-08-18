@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2588
+Content-Length: 2719
 
 {
   "value": {
@@ -128,7 +128,10 @@ Content-Length: 2588
     ],
     "authenticationMethod": "usernameAndPassword",
     "innerAuthenticationProtocolForEAPTTLS": "challengeHandshakeAuthenticationProtocol",
-    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
+    "requireCryptographicBinding": true,
+    "performServerValidation": true,
+    "disableUserPromptForServerValidation": true
   }
 }
 ```
