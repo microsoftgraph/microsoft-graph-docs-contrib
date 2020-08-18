@@ -140,9 +140,10 @@ Content-Type: application/json
   ]
 }
 ```
+
 ### Example 3: List applications with a given ID, and return the submission review state
 
-The following example lists applications with a given ID, and expands appDefinitions to return the publishingState, which reflects the app's submission review state. "Submitted" means the review is pending, "Published" means the app was approved by the admin, and "Rejected" means the app was rejected by the admin. 
+The following example lists applications with a given ID, and expands appDefinitions to return the publishingState, which reflects the app's submission review state. "Submitted" means the review is pending, "Published" means the app was approved by the admin, and "Rejected" means the app was rejected by the admin.
 
 #### Request
 
@@ -152,7 +153,7 @@ The following example lists applications with a given ID, and expands appDefinit
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/appCatalogs/teamsApps('876df28f-2e78-423b-94a5-44181bd0e225')?$expand=appDefinitions
+GET  https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id eq '876df28f-2e78-423b-94a5-44181bd0e225'&$expand=appDefinitions
 ```
 
 #### Response
@@ -176,26 +177,26 @@ Content-Type: application/json
       "name": "Test App",
       "version": "1.0.1",
       "distributionMethod": "Organization",
-      "appDefinitions": [ 
-                { 
+      "appDefinitions": [
+                {
 
-                    "id": "NGQyMGNiNDUtZWViYS00ZTEyLWE3YzktMGQ0NDgzYjYxNzU2IyMxLjAuMA==", 
+                    "id": "NGQyMGNiNDUtZWViYS00ZTEyLWE3YzktMGQ0NDgzYjYxNzU2IyMxLjAuMA==",
 
-                    "teamsAppId": "876df28f-2e78-423b-94a5-44181bd0e225", 
+                    "teamsAppId": "876df28f-2e78-423b-94a5-44181bd0e225",
 
-                    "azureADAppId": null, 
+                    "azureADAppId": null,
 
-                    "displayName": "Test App", 
+                    "displayName": "Test App",
 
-                    "version": "1.0.1", 
+                    "version": "1.0.1",
 
-                    "requiredResourceSpecificApplicationPermissions": [], 
+                    "requiredResourceSpecificApplicationPermissions": [],
 
-                    "publishingState": "published" 
+                    "publishingState": "published"
 
-                } 
-        ] 
-    }
-  ]
-}
+                  }
+            ]
+      }
+    ]
+  }
 ```
