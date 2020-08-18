@@ -37,6 +37,8 @@ GET /appCatalogs/teamsApps
 
 This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
+Using `$expand=AppDefinitions` will return more information on the state of the app, such as the `publishingState`, which reflects the app submission review process and returns whether an app has been approved, rejected, or remains under review. 
+
 > **Note:** You can filter on any of the fields of the [teamsApp](../resources/teamsapp.md) object to shorten the list of results. You can use any of the following filter operations: Equal, not-equal, and, or, and not.
 
 ## Request headers
@@ -134,6 +136,65 @@ Content-Type: application/json
       "name": "Test App",
       "version": "1.0.1",
       "distributionMethod": "Organization"
+    }
+  ]
+}
+```
+### Example 3: List applications with a given ID, and return the submission review state
+
+The following example lists applications with a given ID, and expands appDefinitions to return the publishingState, which reflects the app's submission review state. "Submitted" means the review is pending, "Published" means the app was approved by the admin, and "Rejected" means the app was rejected by the admin. 
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsapp"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/appCatalogs/teamsApps('876df28f-2e78-423b-94a5-44181bd0e225')?$expand=appDefinitions
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true,
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "id": "876df28f-2e78-423b-94a5-44181bd0e225",
+      "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
+      "name": "Test App",
+      "version": "1.0.1",
+      "distributionMethod": "Organization",
+      "appDefinitions": [ 
+                { 
+
+                    "id": "NGQyMGNiNDUtZWViYS00ZTEyLWE3YzktMGQ0NDgzYjYxNzU2IyMxLjAuMA==", 
+
+                    "teamsAppId": "876df28f-2e78-423b-94a5-44181bd0e225", 
+
+                    "azureADAppId": null, 
+
+                    "displayName": "Test App", 
+
+                    "version": "1.0.1", 
+
+                    "requiredResourceSpecificApplicationPermissions": [], 
+
+                    "publishingState": "published" 
+
+                } 
+        ] 
     }
   ]
 }
