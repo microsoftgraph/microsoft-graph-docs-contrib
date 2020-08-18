@@ -1,5 +1,5 @@
 ---
-title: "Update b2cUserFlow identityProviders"
+title: "Add identityProviders to a b2cUserFlow"
 description: "Update the identityProviders in a b2cUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Update b2cUserFlows identityProviders
+# Add identityProviders to a b2cUserFlow
 
 Namespace: microsoft.graph
 
@@ -53,7 +53,7 @@ In the request body, provide a JSON representation of the `id` of the [identityP
 
 If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
 
-## Examples
+## Example
 
 ### Request
 
@@ -61,7 +61,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_b2cuserflows/identityprovider"
+  "name": "update_b2cuserflows_identityprovider"
 }
 -->
 

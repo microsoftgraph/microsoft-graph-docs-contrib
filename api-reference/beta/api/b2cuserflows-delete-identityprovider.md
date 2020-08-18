@@ -1,5 +1,5 @@
 ---
-title: "Delete b2cUserFlow identityProvider"
+title: "Delete identityProvider from a b2cUserFlow"
 description: "Delete an identityProvider from a b2cUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Delete b2cUserFlow identityProvider
+# Delete an identityProvider from a b2cUserFlow
 
 Namespace: microsoft.graph
 
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
 
-## Examples
+## Example
 
 ### Request
 
@@ -60,12 +60,12 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_b2xUserFlows/identityProviders"
+  "name": "delete_b2xUserFlows_identityProviders"
 }
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/identityProviders/Facebook-OAUTH/$ref
+DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSignUp/identityProviders/Facebook-OAUTH/$ref
 ```
 
 ### Response

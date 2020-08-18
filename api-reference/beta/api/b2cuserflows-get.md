@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a JSON representation of the [userFlowAttribute](../resources/b2xuserflows.md) in the response body.
 
-## Examples
+## Example
 
 ### Request
 
@@ -60,7 +60,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_b2xUserFlows"
+  "name": "get_b2cUserFlows"
 }
 -->
 
@@ -75,7 +75,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.B2XUserFlows"
+  "@odata.type": "microsoft.graph.b2cUserFlows"
 } -->
 
 ```http

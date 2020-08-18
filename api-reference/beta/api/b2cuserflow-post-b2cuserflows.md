@@ -47,19 +47,26 @@ POST /identity/b2cUserFlows
 
 ## Request body
 
-In the request body, provide a JSON representation of a [b2xUserFlow](../resources/b2xuserflows.md). All the properties listed in the following table are required.
+In the request body, provide a JSON representation of a [b2cUserFlow](../resources/b2cuserflows.md). All the properties listed in the following table are required.
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|id|String|The name of the user flow.|
-|userFlowType|String|The type of user flow you are creating. This value will always be `signUpOrSignIn`.|
+|id|String|The name of the user flow. The name will be pre-pended with `B2C_1` after creation.|
+|userFlowType|String|The type of user flow you are creating. The supported values for userFlowType are:
+
+* signUp
+* signIn
+* signUpOrSignIn
+* passwordReset
+* profileUpdate
+* resourceOwnerPasswordCredentialSignIn|
 |userFlowTypeVersion|Float|The version of the user flow. This value will always be 1.|
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and [b2xUserFlow](../resources/b2xuserflows.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `201 Created` response code and [b2xUserFlow](../resources/b2xuserflows.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details. As part of creation, the prefix of `B2C_1` will be added to the ID, so a location header is returned to point to how to get the details of the object you created.
 
-## Examples
+## Example
 
 ### Request
 
@@ -77,9 +84,9 @@ Content-type: application/json
 Content-length: 154
 
 {
-    "id": "B2C_1_Customer",
+    "id": "Customer",
     "userFlowType": "signUpOrSignIn",
-    "userFlowTypeVersion": 1,
+    "userFlowTypeVersion": 3
 }
 ```
 
@@ -97,6 +104,7 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 201 Created
+Location /identity/b2cUserFlows/B2C_1_Customer
 Content-type: application/json
 
 {

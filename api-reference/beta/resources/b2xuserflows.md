@@ -48,7 +48,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.B2XUserFlow"
+  "@odata.type": "microsoft.graph.B2XUserFlows"
 } -->
 
 ```json

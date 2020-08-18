@@ -50,11 +50,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [b2xUserFlow](../resources/b2xuserflows.md)  objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [b2xUserFlow](../resources/b2xuserflows.md) objects in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1: List all b2xUserFlows
+
+#### Request
 
 The following is an example of the request.
 
@@ -68,7 +70,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/identity/b2xUserFlows
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -77,7 +79,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.B2XUserFlows",
+  "@odata.type": "microsoft.graph.b2xUserFlows",
   "isCollection": true
 } -->
 
@@ -100,5 +102,73 @@ Content-type: application/json
           "userFlowTypeVersion": 1
       },
     ]
+}
+```
+
+### Example 2: List all b2xUserFlows and expand identityProviders
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_b2xUserFlows"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/identity/b2xUserFlows?$expand=identityProviders
+```
+
+#### Response
+
+The following is an example of the response.
+
+**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.b2xUserFlows",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2xUserFlows",
+    "value": [
+      {
+          "id": "B2X_1_PartnerSignUp",
+          "userFlowType": "signUpOrSignIn",
+          "userFlowTypeVersion": 1,
+          "identityProviders": [
+              {
+                "id": "Facebook-OAuth",
+                "type": "Facebook",
+                "name": "Facebook",
+                "clientId": "clientIdFromFacebook",
+                "clientSecret": "*******"
+              }  
+          ]
+      },
+      {
+          "id": "B2X_1_ContosoSignUp",
+          "userFlowType": "signUpOrSignIn",
+          "userFlowTypeVersion": 1,
+          "identityProviders": [
+              {
+                "id": "Facebook-OAuth",
+                "type": "Facebook",
+                "name": "Facebook",
+                "clientId": "clientIdFromFacebook",
+                "clientSecret": "*******"
+              }  
+          ]
+      }
+   ]
 }
 ```

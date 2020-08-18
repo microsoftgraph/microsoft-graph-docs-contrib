@@ -1,5 +1,5 @@
 ---
-title: "List b2xUserFlow identityProviders"
+title: "List all identityProviders in a b2xUserFlow"
 description: "List all identityProviders in a b2xUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,13 +7,13 @@ author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List b2xUserFlows identityProviders
+# List identityProviders in a b2xUserFlow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the identity providers in a [b2xUserFlow](../resources/b2xuserflows.md) object.
+Get the identity providers in a [B2XUserFlow](../resources/b2xuserflows.md) object.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a JSON representation of the [identityProviders](../resources/identityprovider.md) in the response body.
 
-## Examples
+## Example
 
 ### Request
 

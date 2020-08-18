@@ -1,5 +1,5 @@
 ---
-title: "List b2cUserFlow identityProviders"
+title: "List identityProviders in a b2cUserFlow"
 description: "List all identityProviders in a b2cUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List b2cUserFlows identityProviders
+# List identityProviders in a b2cUserFlow
 
 Namespace: microsoft.graph
 
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a JSON representation of the [identityProviders](../resources/identityprovider.md) in the response body.
 
-## Examples
+## Example
 
 ### Request
 

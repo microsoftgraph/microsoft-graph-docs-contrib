@@ -39,7 +39,14 @@ To help you set up the most common identity tasks for your applications, Azure A
 |Property|Type|Description|
 |:---------------|:--------|:----------|
 |id|String|The name of the user flow. This is a required value and is immutable once created. The name will be pre-pended with the value of `B2C_1_` after creation.|
-|userFlowType|String|The [type of user flow](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-versions). The supported values for userFlowType are: <ul></li>signUp </li>signIn </li>signUpOrSignIn </li>passwordReset </li>profileUpdate </li>resourceOwnerPasswordCredentialSignIn</ul>|
+|userFlowType|String|The [type of user flow](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-versions). The supported values for userFlowType are:
+
+- signUp
+- signIn
+- signUpOrSignIn
+- passwordReset
+- profileUpdate
+- resourceOwnerPasswordCredentialSignIn|
 |userFlowVersion|float|The version of the user flow.|
 
 ## Relationships
