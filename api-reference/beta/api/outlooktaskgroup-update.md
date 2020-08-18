@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+>[!NOTE]
+>The outlook task API is deprecated and will stop returning data on August 20, 2022. Please use the new [To Do API](../resources/todo-overview.md).
+
 Update the writable properties of an Outlook task group.
 
 Note that you cannot modify the name of the default task group, "My Tasks".

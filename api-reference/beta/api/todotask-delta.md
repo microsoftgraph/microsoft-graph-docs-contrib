@@ -1,22 +1,21 @@
 ---
-title: "todoTasks: delta"
-description: "Get a set of todoTasks that have been added, deleted, or updated in a specified todoTaskList."
+title: "todoTask: delta"
+description: "Get a set of todoTask resources that have been added, deleted, or updated in a specified todoTaskList."
 localization_priority: Normal
 author: "avijityadav"
 ms.prod: "Microsoft To Do"
 doc_type: apiPageType
 ---
 
-# todoTasks: delta
+# todoTask: delta
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a set of [todoTasks](../resources/todotask.md) that have been added, deleted, or updated in a specified [todoTasksList](../resources/todotasklist.md).
+Get a set of [todoTask](../resources/todotask.md) resources that have been added, deleted, or updated in a specified [todoTaskList](../resources/todotasklist.md).
 
-A **delta** function call for **todoTasks** in a **todoTasksList** is similar to a GET request, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls, you can query for incremental changes in the **todoTask** in that **todoTaskList**. This allows you to maintain and synchronize a local store of a user's **todoTasks** without 
-having to fetch the entire set of **todoTasks** from the server every time.  
+A **delta** function call for **todoTask** resources in a **todoTaskList** is similar to a GET request, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls, you can query for incremental changes in the **todoTask** in that **todoTaskList**. This allows you to maintain and synchronize a local store of a user's **todoTask** resources without having to fetch the entire set from the server every time.  
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -31,12 +30,12 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/todo/lists/{id}/tasks/delta
-GET /users/{id|userPrincipalName}/lists/{todoTaskListId}/tasks/delta
+GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/delta
 ```
 
 ## Query parameters
 
-Tracking changes in **todoTasks** incurs a round of one or more **delta** function calls. If you use any query parameter 
+Tracking changes in a **todoTask** collection incurs a round of one or more **delta** function calls. If you use any query parameter 
 (other than `$deltatoken` and `$skiptoken`), you must specify 
 it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
 into the token portion of the `nextLink` or `deltaLink` URL provided in the response. 
@@ -77,7 +76,7 @@ If successful, this method returns a `200 OK` response code and [todoTask](../re
 The following example shows how to make a single **delta** function call, and limit the maximum number of **todoTask** 
 in the response body to 2.
 
-To track changes in the **todoTasks** in a **todoTaskList**, you would make one or more **delta** function calls to get the set
+To track changes in the **todoTask** resources in a **todoTaskList**, you would make one or more **delta** function calls to get the set
 of incremental changes since the last delta query. 
  
 

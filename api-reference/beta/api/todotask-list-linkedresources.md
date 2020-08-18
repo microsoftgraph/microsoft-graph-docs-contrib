@@ -53,11 +53,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["dfsdc-f9dfdfs-dcsda9", "e2dc-f9cce2-dce29"],
   "name": "get_linkedresource"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/tasks/linkedResources
+GET https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources
 ```
 
 

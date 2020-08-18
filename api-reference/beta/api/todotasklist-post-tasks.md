@@ -1,17 +1,17 @@
 ---
-title: "Create tasks"
-description: "Create a new tasks object."
+title: "Create todoTask"
+description: "Create a new task object."
 author: "avijityadav"
 localization_priority: Normal
 ms.prod: "Microsoft To Do"
 doc_type: apiPageType
 ---
 
-# Create tasks
+# Create todoTask
 Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new tasks object.
+Create a new task object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+>[!NOTE]
+>The outlook task API is deprecated and will stop returning data on August 20, 2022. Please use the new [To Do API](../resources/todo-overview.md).
+
 An Outlook item that can track a work item.
 
 You can use a task to track the start, due and actual completion dates and times, its progress or status, whether it's recurring, and requires reminding.

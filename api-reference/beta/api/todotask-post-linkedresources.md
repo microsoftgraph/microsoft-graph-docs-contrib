@@ -63,11 +63,12 @@ If successful, this method returns a `201 Created` response code and a [linkedRe
 ### Request
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["dfsdc-f9dfdfs-dcsda9", "e2dc-f9cce2-dce29"],
   "name": "create_linkedresource_from_linkedresources"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/linkedResources
+POST https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources
 Content-Type: application/json
 Content-length: 166
 

@@ -53,11 +53,12 @@ If successful, this method returns a `200 OK` response code and a [todoTaskList]
 ### Request
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADIyAAAAABrJAAA="],
   "name": "get_todotasklist"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/todo/lists/AAMkADIyAAAAABrJAAA=
+GET https://graph.microsoft.com/beta/me/todo/lists/AAMkADIyAAAAABrJAAA=
 ```
 
 

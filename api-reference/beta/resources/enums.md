@@ -1189,7 +1189,7 @@ Possible values for user account types (group membership), per Windows definitio
 | generic
 | unknownFutureValue
 
-### openIdConnectResponseMode
+### openIdConnectResponseMode values
 | Member                
 |:----------------------
 | none
@@ -1197,7 +1197,7 @@ Possible values for user account types (group membership), per Windows definitio
 | query 
 | unknownFutureValue 
 
-### openIdConnectResponseTypes
+### openIdConnectResponseTypes values
 | Member                
 |:----------------------
 | none
@@ -1205,8 +1205,7 @@ Possible values for user account types (group membership), per Windows definitio
 | id_token
 | token
 
-### wellknownListName
-
+### wellknownListName values
 | Member
 |:----------------------
 | none
@@ -1214,8 +1213,7 @@ Possible values for user account types (group membership), per Windows definitio
 | flaggedEmails
 | unknownFutureValue
 
-### taskStatus
-
+### taskStatus values
 | Member
 |:----------------------
 | notStarted

@@ -22,7 +22,7 @@ This resource supports
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List tasks](../api/todotasklist-list-tasks.md)|[todoTask](todotask.md) collection|Get all the [todoTasks](todotask.md) in the specified list.|
+|[List tasks](../api/todotasklist-list-tasks.md)|[todoTask](todotask.md) collection|Get all the [todoTask](todotask.md) resources in the specified list.|
 |[Create task](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Create a [todoTask](todotask.md) in the specified task list|
 |[Get task](../api/todotask-get.md)|[todoTask](../resources/todotask.md)|Read the properties and relationships of a [todoTask](../resources/todotask.md) object.|
 |[Update task](../api/todotask-update.md)|[todoTask](../resources/todotask.md)|Update the properties of a [todoTask](../resources/todotask.md) object.|
@@ -50,7 +50,9 @@ This resource supports
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|linkedResources|[linkedResource](../resources/linkedresource.md) collection|Resource linked to the task|
+|extensions|[extension](extension.md) collection| The collection of open extensions defined for the task. Nullable.|
+|linkedResources|[linkedResource](../resources/linkedresource.md) collection|Resource linked to the task.|
+
 
 ## JSON representation
 The following is a JSON representation of the resource.

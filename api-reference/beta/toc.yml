@@ -10149,6 +10149,8 @@ items:
               href: api/accesspackage-post.md
             - name: Get
               href: api/accesspackage-get.md
+            - name: Update
+              href: api/accesspackage-update.md
             - name: Delete
               href: api/accesspackage-delete.md
           - name: Access package assignment
@@ -10165,6 +10167,8 @@ items:
               href: api/accesspackageassignmentpolicy-post.md
             - name: Get
               href: api/accesspackageassignmentpolicy-get.md
+            - name: Update
+              href: api/accesspackageassignmentpolicy-update.md
             - name: Delete
               href: api/accesspackageassignmentpolicy-delete.md
           - name: Access package assignment request
@@ -10192,6 +10196,8 @@ items:
               href: api/accesspackagecatalog-post.md
             - name: Get
               href: api/accesspackagecatalog-get.md
+            - name: Update
+              href: api/accesspackage-update.md
             - name: Delete
               href: api/accesspackagecatalog-delete.md
             - name: List resources
@@ -12017,20 +12023,20 @@ items:
       items:
       - name: Overview
         href: resources/todo-overview.md
-      - name: Tasklist
+      - name: Task list
         href: resources/todotasklist.md
         items:
-        - name: List tasklists
-          href: api/todotasklist-list.md
-        - name: Create tasklist
-          href: api/todotasklist-post-lists.md
-        - name: Get tasklist
+        - name: List task lists
+          href: api/todo-list-lists.md
+        - name: Create task list
+          href: api/todo-post-lists.md
+        - name: Get task list
           href: api/todotasklist-get.md
-        - name: Update tasklist
+        - name: Update task list
           href: api/todotasklist-update.md
-        - name: Delete tasklist
+        - name: Delete task list
           href: api/todotasklist-delete.md
-        - name: Get tasklist delta
+        - name: Get task list delta
           href: api/todotasklist-delta.md 
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
@@ -12058,17 +12064,17 @@ items:
       - name: Linked resource
         href: resources/linkedresource.md
         items:
-        - name: List linked resource
+        - name: List
           href: api/todotask-list-linkedresources.md
-        - name: Create linked resource
+        - name: Create
           href: api/todotask-post-linkedresources.md
-        - name: Get linked resource
+        - name: Get
           href: api/linkedresource-get.md
-        - name: Update linked resource
+        - name: Update
           href: api/linkedresource-update.md
-        - name: Delete linked resource
+        - name: Delete
           href: api/linkedresource-delete.md
-      - name: Outlook tasks(deprecated)
+      - name: Outlook tasks (deprecated)
         items:
         - name: Outlook task
           href: resources/outlooktask.md
