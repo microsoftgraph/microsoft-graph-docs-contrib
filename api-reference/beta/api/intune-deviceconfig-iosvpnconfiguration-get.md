@@ -151,6 +151,7 @@ Content-Length: 3473
         "probeRequiredUrl": "https://example.com/probeRequiredUrl/"
       }
     ],
+    "providerType": "appProxy",
     "proxyServer": {
       "@odata.type": "microsoft.graph.vpnProxyServer",
       "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -158,7 +159,6 @@ Content-Length: 3473
       "port": 4
     },
     "optInToDeviceIdSharing": true,
-    "providerType": "appProxy",
     "userDomain": "User Domain value",
     "strictEnforcement": true,
     "cloudName": "Cloud Name value",
