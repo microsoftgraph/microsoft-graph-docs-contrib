@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tasks
+GET https://graph.microsoft.com/beta/todo/lists/35e2-35e2-721a-e235-1a72e2351a7/tasks
 ```
 
 
@@ -76,31 +76,28 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.todoTask",
-      "id": "721a35e2-35e2-721a-e235-1a72e2351a72",
-      "body": {
-        "@odata.type": "microsoft.graph.itemBody"
-      },
-      "completedDateTime": {
-        "@odata.type": "microsoft.graph.dateTimeTimeZone"
-      },
-      "dueDateTime": {
-        "@odata.type": "microsoft.graph.dateTimeTimeZone"
-      },
-      "importance": "String",
-      "isReminderOn": "Boolean",
-      "recurrence": {
-        "@odata.type": "microsoft.graph.patternedRecurrence"
-      },
-      "reminderDateTime": {
-        "@odata.type": "microsoft.graph.dateTimeTimeZone"
-      },
-      "status": "String",
-      "title": "String",
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedDateTime": "String (timestamp)",
-      "bodyLastModifiedDateTime": "String (timestamp)"
-    }
+            "@odata.etag": "W/\"xzyPKP0BiUGgld+lMKXwbQAAgdhkVw==\"",
+            "importance": "low",
+            "isReminderOn": false,
+            "status": "notStarted",
+            "title": "Linked entity new task 1",
+            "createdDateTime": "2020-07-08T11:15:19.9359889Z",
+            "lastModifiedDateTime": "2020-07-08T11:15:20.0614375Z",
+            "id": "AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtMDACLTAwCgBGAAAD",
+            "body": {
+                "content": "",
+                "contentType": "text"
+            },
+            "linkedResources@odata.context": "https://graph.microsoft.com/beta/$metadata#users('todoservicetest2412201901%40outlook.com')/todo/lists('35e2-35e2-721a-e235-1a72e2351a7')/tasks('AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtMDACLTAwCgBGAAAD')/linkedResources",
+            "linkedResources": [
+                {
+                    "applicationName": "Partner App Name",
+                    "displayName": "Partner App Name",
+                    "externalId": "teset1243434",
+                    "id": "30911960-7321-4cba-9ba0-cdb68e2984c7"
+                }
+            ]
+        }
   ]
 }
 ```

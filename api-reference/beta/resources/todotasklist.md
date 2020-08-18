@@ -24,8 +24,8 @@ This resource supports
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List task lists](../api/todotasklist-list.md)|[todoTaskList](todotasklist.md) collection|Get all the [todoTaskList](todotasklist.md) resources in the users mailbox.|
-|[Create task list](../api/todotasklist-post-lists.md)|[todoTaskList](todotasklist.md)|Create a new [todoTaskList](todotasklist.md) object.|
+|[List lists](../api/todo-list-lists.md) | [todoTaskList](todotasklist.md) collection | Get all the [todoTaskList](todotasklist.md) in the user's mailbox. |
+|[Create todoTaskList](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Create a [todoTaskList](todotasklist.md) in the user's mailbox. |
 |[Get task list](../api/todotasklist-get.md)|[todoTaskList](todotasklist.md)|Read the properties and relationships of the specified [todoTaskList](todotasklist.md).|
 |[Update task list](../api/todotasklist-update.md)|[todoTaskList](todotasklist.md)| Update the writable properties of the specified [todoTaskList](todotasklist.md).|
 |[Delete task list](../api/todotasklist-delete.md)|None| Delete the specified [todoTaskList](todotasklist.md) .|

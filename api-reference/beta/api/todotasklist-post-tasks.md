@@ -80,27 +80,7 @@ Content-Type: application/json
 Content-length: 608
 
 {
-  "@odata.type": "#microsoft.graph.todoTask",
-  "body": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
-  "completedDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "dueDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "importance": "String",
-  "isReminderOn": "Boolean",
-  "recurrence": {
-    "@odata.type": "microsoft.graph.patternedRecurrence"
-  },
-  "reminderDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "status": "String",
-  "title": "String",
-  "bodyLastModifiedDateTime": "String (timestamp)"
+  "title":"A new task"
 }
 ```
 
@@ -118,30 +98,18 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.todoTask",
-  "id": "721a35e2-35e2-721a-e235-1a72e2351a72",
-  "body": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
-  "completedDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "dueDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "importance": "String",
-  "isReminderOn": "Boolean",
-  "recurrence": {
-    "@odata.type": "microsoft.graph.patternedRecurrence"
-  },
-  "reminderDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "status": "String",
-  "title": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "bodyLastModifiedDateTime": "String (timestamp)"
+  "@odata.etag": "W/\"xzyPKP0BiUGgld+lMKXwbQAAnBoTIw==\"",
+    "importance": "low",
+    "isReminderOn": false,
+    "status": "notStarted",
+    "title": "A new task",
+    "createdDateTime": "2020-08-18T09:03:05.8339192Z",
+    "lastModifiedDateTime": "2020-08-18T09:03:06.0827766Z",
+    "id": "AlMKXwbQAAAJws6wcAAAA=",
+    "body": {
+        "content": "",
+        "contentType": "text"
+    }
 }
 ```
 
