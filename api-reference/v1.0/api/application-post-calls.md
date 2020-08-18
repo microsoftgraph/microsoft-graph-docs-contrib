@@ -574,11 +574,13 @@ Content-Type: application/json
       "user": {
         "@odata.type": "#microsoft.graph.identity",
         "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
-        "displayName": "Bob"
+        "displayName": "Bob",
+        "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
       }
     },
     "allowConversationWithoutHost": true
-  }
+  },
+  "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
 }
 ```
 ##### Response

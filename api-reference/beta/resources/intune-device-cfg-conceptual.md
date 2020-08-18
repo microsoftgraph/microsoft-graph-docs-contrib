@@ -353,6 +353,7 @@ The following Graph resources are available to manage settings and features on d
 - [Local security options standard user elevation prompt behavior type](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
 - [macOS apple event receiver](intune-deviceconfig-macosappleeventreceiver.md)
 - [macOS associated domains key/value pair](intune-deviceconfig-macosassociateddomainskeyvaluepair.md)
+- [macOS Azure ad single sign on extension](intune-deviceconfig-macosazureadsinglesignonextension.md)
 - [macOS certificate profile base](intune-deviceconfig-macoscertificateprofilebase.md)
 - [macOS compliance policy](intune-deviceconfig-macoscompliancepolicy.md)
 - [macOS content caching client policy](intune-deviceconfig-macoscontentcachingclientpolicy.md)

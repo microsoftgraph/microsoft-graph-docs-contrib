@@ -107,7 +107,7 @@ POST https://graph.microsoft.com/beta/groups
     "mailEnabled": true,
     "mailNickname": "marketing",
     "securityEnabled": false,
-    "membershipRule": 'user.department -eq "Marketing"',
+    "membershipRule": "user.department -eq \"Marketing\"",
     "membershipRuleProcessingState": "on"
 }
 ```

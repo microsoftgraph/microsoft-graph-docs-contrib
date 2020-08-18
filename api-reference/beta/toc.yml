@@ -2669,6 +2669,8 @@ items:
             href: resources/intune-apps-win32lobapppowershellscriptrequirement.md
           - name: Win32 LOB app power shell script rule
             href: resources/intune-apps-win32lobapppowershellscriptrule.md
+          - name: Win32 LOB app power shell script rule operation type
+            href: resources/intune-apps-win32lobapppowershellscriptruleoperationtype.md
           - name: Win32 LOB app product code detection
             href: resources/intune-apps-win32lobappproductcodedetection.md
           - name: Win32 LOB app product code rule
@@ -2697,8 +2699,6 @@ items:
             href: resources/intune-apps-win32lobappruleoperator.md
           - name: Win32 LOB app rule type
             href: resources/intune-apps-win32lobappruletype.md
-          - name: Win32 LOB power shell script rule operation type
-            href: resources/intune-apps-win32lobpowershellscriptruleoperationtype.md
           - name: Windows AppX
             href: resources/intune-apps-windowsappx.md
             items:
@@ -5172,6 +5172,8 @@ items:
             href: resources/intune-deviceconfig-macosappleeventreceiver.md
           - name: macOS associated domains key/value pair
             href: resources/intune-deviceconfig-macosassociateddomainskeyvaluepair.md
+          - name: macOS Azure ad single sign on extension
+            href: resources/intune-deviceconfig-macosazureadsinglesignonextension.md
           - name: macOS certificate profile base
             href: resources/intune-deviceconfig-macoscertificateprofilebase.md
             items:
@@ -6730,6 +6732,12 @@ items:
               href: api/intune-devices-devicelogcollectionresponse-list.md
             - name: Get
               href: api/intune-devices-devicelogcollectionresponse-get.md
+            - name: Create
+              href: api/intune-devices-devicelogcollectionresponse-create.md
+            - name: Delete
+              href: api/intune-devices-devicelogcollectionresponse-delete.md
+            - name: Update
+              href: api/intune-devices-devicelogcollectionresponse-update.md
             - name: createDownloadUrl action
               href: api/intune-devices-devicelogcollectionresponse-createdownloadurl.md
           - name: Device log collection template type
@@ -7138,6 +7146,8 @@ items:
               href: api/intune-deviceintent-devicemanagementtemplate-update.md
             - name: createInstance action
               href: api/intune-deviceintent-devicemanagementtemplate-createinstance.md
+            - name: importOffice365DeviceConfigurationPolicies action
+              href: api/intune-deviceintent-devicemanagementtemplate-importoffice365deviceconfigurationpolicies.md
           - name: Device management template setting category
             href: resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md
             items:
@@ -7293,6 +7303,19 @@ items:
             href: resources/intune-devices-loggedonuser.md
           - name: Lost mode state
             href: resources/intune-devices-lostmodestate.md
+          - name: Malware state for windows device
+            href: resources/intune-devices-malwarestateforwindowsdevice.md
+            items:
+            - name: List
+              href: api/intune-devices-malwarestateforwindowsdevice-list.md
+            - name: Get
+              href: api/intune-devices-malwarestateforwindowsdevice-get.md
+            - name: Create
+              href: api/intune-devices-malwarestateforwindowsdevice-create.md
+            - name: Delete
+              href: api/intune-devices-malwarestateforwindowsdevice-delete.md
+            - name: Update
+              href: api/intune-devices-malwarestateforwindowsdevice-update.md
           - name: Managed device
             href: resources/intune-devices-manageddevice.md
             items:
@@ -7596,6 +7619,19 @@ items:
             href: resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md
           - name: Update windows device account action parameter
             href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
+          - name: User experience analytics app health application performance
+            href: resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-update.md
           - name: User experience analytics baseline
             href: resources/intune-devices-userexperienceanalyticsbaseline.md
             items:
@@ -7691,6 +7727,21 @@ items:
               href: api/intune-devices-userexperienceanalyticsmetric-delete.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsmetric-update.md
+          - name: User experience analytics metric history
+            href: resources/intune-devices-userexperienceanalyticsmetrichistory.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsmetrichistory-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsmetrichistory-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsmetrichistory-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsmetrichistory-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsmetrichistory-update.md
+          - name: User experience analytics operating system restart category
+            href: resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md
           - name: User experience analytics overview
             href: resources/intune-devices-userexperienceanalyticsoverview.md
             items:
@@ -7780,6 +7831,8 @@ items:
             href: resources/intune-devices-windowsmalwareoverview.md
           - name: Windows malware severity
             href: resources/intune-devices-windowsmalwareseverity.md
+          - name: Windows malware severity count
+            href: resources/intune-devices-windowsmalwareseveritycount.md
           - name: Windows malware state
             href: resources/intune-devices-windowsmalwarestate.md
           - name: Windows malware state count
@@ -8338,6 +8391,8 @@ items:
               href: api/intune-onboarding-vpptoken-synclicenses.md
             - name: revokeLicenses action
               href: api/intune-onboarding-vpptoken-revokelicenses.md
+            - name: syncLicenseCounts action
+              href: api/intune-onboarding-vpptoken-synclicensecounts.md
           - name: VPP token action result
             href: resources/intune-onboarding-vpptokenactionresult.md
           - name: VPP token license summary
@@ -10149,6 +10204,8 @@ items:
               href: api/accesspackage-post.md
             - name: Get
               href: api/accesspackage-get.md
+            - name: Update
+              href: api/accesspackage-update.md
             - name: Delete
               href: api/accesspackage-delete.md
           - name: Access package assignment
@@ -10165,6 +10222,8 @@ items:
               href: api/accesspackageassignmentpolicy-post.md
             - name: Get
               href: api/accesspackageassignmentpolicy-get.md
+            - name: Update
+              href: api/accesspackageassignmentpolicy-update.md
             - name: Delete
               href: api/accesspackageassignmentpolicy-delete.md
           - name: Access package assignment request
@@ -10192,6 +10251,8 @@ items:
               href: api/accesspackagecatalog-post.md
             - name: Get
               href: api/accesspackagecatalog-get.md
+            - name: Update
+              href: api/accesspackage-update.md
             - name: Delete
               href: api/accesspackagecatalog-delete.md
             - name: List resources
@@ -10225,6 +10286,18 @@ items:
               href: api/connectedorganization-update.md
             - name: Delete
               href: api/connectedorganization-delete.md
+            - name: List external sponsors
+              href: api/connectedorganization-list-externalsponsors.md
+            - name: List internal sponsors
+              href: api/connectedorganization-list-internalsponsors.md
+            - name: Add external sponsors
+              href: api/connectedorganization-post-externalsponsors.md
+            - name: Add internal sponsors
+              href: api/connectedorganization-post-internalsponsors.md
+            - name: Remove external sponsors
+              href: api/connectedorganization-delete-externalsponsors.md
+            - name: Remove internal sponsors
+              href: api/connectedorganization-delete-internalsponsors.md
           - name: Entitlement management settings
             href: resources/entitlementmanagementsettings.md
             items:
@@ -11787,7 +11860,7 @@ items:
           href: api/teamsapp-list.md
         - name: Update app in catalog
           href: api/teamsapp-update.md
-        - name: Remove app from catalog
+        - name: Delete app from catalog
           href: api/teamsapp-delete.md
       - name: Apps
         items:
