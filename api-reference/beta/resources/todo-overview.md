@@ -17,7 +17,7 @@ Currently, the API supports only permissions delegated by the signed-in user.
  
 Before you get started with the To Do API, it will be helpful to know about the resources and how they relate to one another.
 
-![To Do API entities](../../../concepts/images/todo-api-entities.png)
+![To Do API entities](/graph/images/todo-api-entities.png)
 
 ## Task list
 
