@@ -1591,10 +1591,6 @@ Security permissions are valid only on work or school accounts.
 | _ShortNotes.Read.All_ | Read all users' short notes | Allows the app to read all the short notes without a signed-in user. | Yes | 
 | _ShortNotes.ReadWrite.All_ | Read, create, edit, and delete all users' short notes | Allows the app to read, create, edit, and delete all the short notes without a signed-in user. | Yes |
 
-### Remarks
-
-A short note in a user's account. Derived from OutlookItem.
-
 ### Example usage
 
 #### Delegated
