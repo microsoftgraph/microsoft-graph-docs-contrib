@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the identity providers in a [B2XUserFlow](../resources/b2xuserflows.md) object.
+Get the identity providers in a [b2xUserFlow](../resources/b2xuserflows.md) object.
 
 ## Permissions
 
