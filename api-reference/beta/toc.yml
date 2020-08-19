@@ -10252,7 +10252,7 @@ items:
             - name: Get
               href: api/accesspackagecatalog-get.md
             - name: Update
-              href: api/accesspackage-update.md
+              href: api/accesspackagecatalog-update.md
             - name: Delete
               href: api/accesspackagecatalog-delete.md
             - name: List resources
