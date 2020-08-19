@@ -52,7 +52,7 @@ In the request body, provide a JSON representation of a [b2cUserFlow](../resourc
 |Property|Type|Description|
 |:---------------|:--------|:----------|
 |id|String|The name of the user flow. The name will be pre-pended with `B2C_1` after creation.|
-|userFlowType|String|The type of user flow you are creating. The supported values for **userFlowType** are:<br/><br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
+|userFlowType|String|The type of user flow you are creating. The supported values for **userFlowType** are:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
 |userFlowTypeVersion|Float|The version of the user flow. This value will always be 1.|
 
 ## Response
