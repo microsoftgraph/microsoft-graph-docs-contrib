@@ -47,7 +47,7 @@ where files are shared, and where tabs are added.
 |email|String| The email address for sending messages to the channel. Read-only.|
 |webUrl|String|A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
 |membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|The type of the channel. Can be set during creation and cannot be changed. Default: standard.|
-|createdDateTime|DateTimeOffset|Represents the time a channel was created.|
+|createdDateTime|dateTimeOffset|Read only. Timestamp at which the channel was created.|
 
 ## Relationships
 
@@ -93,7 +93,7 @@ The following is a JSON representation of the resource.
   "email": "string",
   "webUrl": "string",
   "membershipType": "channelMembershipType",
-  "createdDateTime": "DateTimeOffset"
+  "createdDateTime": "string (timestamp)"
 }
 ```
 
