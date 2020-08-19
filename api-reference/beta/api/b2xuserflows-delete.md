@@ -1,6 +1,6 @@
 ---
 title: "Delete b2xUserFlow"
-description: "Delete a b2xUserFlow."
+description: "Delete a b2xUserFlow object."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [b2xUserFlow](../resources/b2xuserflows.md).
+Delete a [b2xUserFlow](../resources/b2xuserflows.md) object.
 
 ## Permissions
 
