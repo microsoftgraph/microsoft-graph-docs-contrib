@@ -23,6 +23,35 @@ These settings provide flexibility for administrators to use Azure AD tools and 
 
 Keep in mind that the _global administrator role_ is required to read or update these settings. 
 
+### How to configure item insights setting via PowerShell?
+Confirm the following additional prerequisites. Then you can use the Microsoft Graph PowerShell module to set item insights for entire organization or for specific group.
+
+#### Additional prerequisites
+* **Install the required module** - Install the [required module version 0.9.0 and higher](https://www.powershellgallery.com/packages/Microsoft.Graph/0.9.1)
+* **.NET Framework** - You must have [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or the latest available version installed.
+
+#### Examples of method calls
+To get item insights configuration for an organization, use Microsoft Graph PowerShell module and the following command line, where you replace "$OrgID" with your applicable ID organization:
+```powershell
+   Get-MgOrganizationSettingItemInsight -OrganizationId $OrgID
+   ```
+To update item insights configuration for entire organization, use Microsoft Graph PowerShell module and the following command line, where you replace "$OrgID" with your applicable ID organization and specify the required boolean value:
+```powershell
+   Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -IsEnabledInOrganization:$false
+   ```
+To update item insights configuration for Azure AD group, use Microsoft Graph PowerShell module and the following command line, where you replace "$OrgID" with your applicable ID organization, "$GroupId" with your Azure AD group ID:
+```powershell
+   Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -DisabledForGroup $GroupId
+   ```
+>**Note:** If you use Microsoft Graph module version 0.9.0 and lower you need to add -AdditionalProperties @{} at the end of request line of update methods.
+>```powershell
+>Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -DisabledForGroup 28f9ceac-39aa-4829-9a67-b8f1db11eaa1 -AdditionalProperties @{}
+>```
+>or call Update-MgOrganizationSettingItemInsight like this:
+>```powershell
+>Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -BodyParameter @{DisabledForGroup = "85f741b4-e924-41a8-abf8-d61a7b950bb5"; IsEnabledInOrganization = $false}
+>```
+
 ### Available configurations
 Configure item insights settings for users in an organization by [updating](/graph/api/iteminsightssettings-update?view=graph-rest-beta) the **isEnabledInOrganization** and **disabledForGroup** properties accordingly.
 
