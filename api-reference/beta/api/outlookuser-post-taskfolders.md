@@ -13,8 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> [!CAUTION]
-> The Outlook tasks API is deprecated and will stop returning data on August 20, 2022. Please use the new [To Do API](../resources/todo-overview.md).
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Create a task folder in the default task group (`My Tasks`) of the user's mailbox.
 

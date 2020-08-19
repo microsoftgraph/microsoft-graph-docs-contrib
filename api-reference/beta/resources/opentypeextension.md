@@ -29,14 +29,14 @@ Open extensions are supported by the following resources in the corresponding ve
 | [Calendar event](event.md) | GA |
 | Group [calendar event](event.md) | GA |
 | Group conversation thread [post](post.md) | GA |
-| [device](device.md) | GA |
-| [group](group.md) | GA |
-| [message](message.md) | GA |
-| [organization](organization.md) | GA |
+| [Device](device.md) | GA |
+| [Group](group.md) | GA |
+| [Message](message.md) | GA |
+| [Organization](organization.md) | GA |
 | [Personal contact](contact.md) | GA |
-| [user](user.md) | GA |
-| [task](todotask.md)  | Preview only ||
-| [tasklist](todotasklist.md)  | Preview only ||
+| [User](user.md) | GA |
+| [Task](todotask.md)  | Preview only ||
+| [Task list](todotasklist.md)  | Preview only ||
 
 ## Outlook-specific considerations
 
