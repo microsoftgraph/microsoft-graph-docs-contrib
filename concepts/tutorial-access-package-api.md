@@ -16,7 +16,7 @@ The response objects shown in this tutorial may be shortened for readability. Al
 
 ## Prerequisites
 
-To use Azure AD entitlement management, you must have one of the following licenses:
+To use Azure AD entitlement management, you must have one of the following licenses in your tenant:
 
 - Azure AD Premium P2
 - Enterprise Mobility + Security (EMS) E5 license
@@ -25,22 +25,20 @@ For more information, see [License requirements](https://docs.microsoft.com/azur
 
 **List of all APIs used in this tutorial**
 
-Make sure you have the corresponding permissions to call the following APIs.
+The following table lists the APIs and the necessary permissions that your application with delegated permissions will use in this tutorial.
 
-| Resource type | Method |
+| Resource type | Method | Required permission |
 | ------------- | ------ |
-| [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta) |  [Create user](https://docs.microsoft.com/graph/api/user-post-users?view=graph-rest-beta)<br>[Delete user](https://docs.microsoft.com/graph/api/user-delete?view=graph-rest-beta) |
-| [unifiedRoleDefinition](https://docs.microsoft.com/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) | [List unifiedRoleDefinitions](https://docs.microsoft.com/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) |
-| [unifiedRoleAssignment](https://docs.microsoft.com/graph/api/resources/unifiedroleassignment?view=graph-rest-beta) |  [Create unifiedRoleAssignment](https://docs.microsoft.com/graph/api/rbacapplication-post-roleassignments?view=graph-rest-beta) |
-| [group](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-beta) | [Create group](https://docs.microsoft.com/graph/api/group-post-groups?view=graph-rest-beta)<br>[List group members](https://docs.microsoft.com/graph/api/group-list-members?view=graph-rest-beta)<br>[Delete group](https://docs.microsoft.com/graph/api/group-delete?view=graph-rest-beta) |
-| [accessPackageCatalog](https://docs.microsoft.com/graph/api/resources/accesspackagecatalog?view=graph-rest-beta) | [List accessPackageCatalogs](https://docs.microsoft.com/graph/api/accesspackagecatalog-list?view=graph-rest-beta)<br>[List accessPackageResources](https://docs.microsoft.com/graph/api/accesspackagecatalog-list-accesspackageresources?view=graph-rest-beta)<br>[List accessPackageResourceRoles](https://docs.microsoft.com/graph/api/accesspackagecatalog-list-accesspackageresourceroles?view=graph-rest-beta) |
-| [accessPackageResourceRequest](https://docs.microsoft.com/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta) | [Create accessPackageResourceRequest](https://docs.microsoft.com/graph/api/accesspackageresourcerequest-post?view=graph-rest-beta)
-| [accessPackage](https://docs.microsoft.com/graph/api/resources/accesspackage?view=graph-rest-beta) | [Create accessPackage](https://docs.microsoft.com/graph/api/accesspackage-post?view=graph-rest-beta)<br>[Delete accessPackage](https://docs.microsoft.com/graph/api/accesspackage-delete?view=graph-rest-beta) |
-| [accessPackageResourceRoleScope](https://docs.microsoft.com/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta) | [Create accessPackageResourceRoleScope](https://docs.microsoft.com/graph/api/accesspackage-post-accesspackageresourcerolescopes?view=graph-rest-beta) |
-| [accessPackageAssignmentPolicy](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta) | [Create accessPackageAssignmentPolicy](https://docs.microsoft.com/graph/api/accesspackageassignmentpolicy-post?view=graph-rest-beta)<br>[List accessPackageAssignmentPolicies](https://docs.microsoft.com/graph/api/accesspackageassignmentpolicy-list?view=graph-rest-beta)<br>[Delete accessPackageAssignmentPolicies](https://docs.microsoft.com/graph/api/accesspackageassignmentpolicy-delete?view=graph-rest-beta) |
-| [accessPackageAssignmentRequest](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) | [Create accessPackageAssignmentRequest](https://docs.microsoft.com/graph/api/accesspackageassignmentrequest-post?view=graph-rest-beta)<br>[List accessPackageAssignmentRequests](https://docs.microsoft.com/graph/api/accesspackageassignmentrequest-list?view=graph-rest-beta) |
+| [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta) |  [Create user](https://docs.microsoft.com/graph/api/user-post-users?view=graph-rest-beta)<br>[Delete user](https://docs.microsoft.com/graph/api/user-delete?view=graph-rest-beta) | User.ReadWrite.All |
+| [group](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-beta) | [Create group](https://docs.microsoft.com/graph/api/group-post-groups?view=graph-rest-beta)<br>[List group members](https://docs.microsoft.com/graph/api/group-list-members?view=graph-rest-beta)<br>[Delete group](https://docs.microsoft.com/graph/api/group-delete?view=graph-rest-beta) | Group.ReadWrite.All |
+| [accessPackageCatalog](https://docs.microsoft.com/graph/api/resources/accesspackagecatalog?view=graph-rest-beta) | [List accessPackageCatalogs](https://docs.microsoft.com/graph/api/accesspackagecatalog-list?view=graph-rest-beta)<br>[List accessPackageResources](https://docs.microsoft.com/graph/api/accesspackagecatalog-list-accesspackageresources?view=graph-rest-beta)<br>[List accessPackageResourceRoles](https://docs.microsoft.com/graph/api/accesspackagecatalog-list-accesspackageresourceroles?view=graph-rest-beta) | EntitlementManagement.Read.All |
+| [accessPackageResourceRequest](https://docs.microsoft.com/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta) | [Create accessPackageResourceRequest](https://docs.microsoft.com/graph/api/accesspackageresourcerequest-post?view=graph-rest-beta) | EntitlementManagement.ReadWrite.All |
+| [accessPackage](https://docs.microsoft.com/graph/api/resources/accesspackage?view=graph-rest-beta) | [Create accessPackage](https://docs.microsoft.com/graph/api/accesspackage-post?view=graph-rest-beta)<br>[Delete accessPackage](https://docs.microsoft.com/graph/api/accesspackage-delete?view=graph-rest-beta) | EntitlementManagement.ReadWrite.All |
+| [accessPackageResourceRoleScope](https://docs.microsoft.com/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta) | [Create accessPackageResourceRoleScope](https://docs.microsoft.com/graph/api/accesspackage-post-accesspackageresourcerolescopes?view=graph-rest-beta) | EntitlementManagement.ReadWrite.All |
+| [accessPackageAssignmentPolicy](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta) | [Create accessPackageAssignmentPolicy](https://docs.microsoft.com/graph/api/accesspackageassignmentpolicy-post?view=graph-rest-beta)<br>[List accessPackageAssignmentPolicies](https://docs.microsoft.com/graph/api/accesspackageassignmentpolicy-list?view=graph-rest-beta)<br>[Delete accessPackageAssignmentPolicies](https://docs.microsoft.com/graph/api/accesspackageassignmentpolicy-delete?view=graph-rest-beta) | EntitlementManagement.ReadWrite.All |
+| [accessPackageAssignmentRequest](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) | [Create accessPackageAssignmentRequest](https://docs.microsoft.com/graph/api/accesspackageassignmentrequest-post?view=graph-rest-beta)<br>[List accessPackageAssignmentRequests](https://docs.microsoft.com/graph/api/accesspackageassignmentrequest-list?view=graph-rest-beta) | EntitlementManagement.ReadWrite.All |
 
-## Step 1: Create user accounts and a group
+## Step 1: Create a user account and a group
 
 A resource directory has one or more resources to share. In this step, you create a group named **Marketing resources** in the directory that is the target resource for entitlement management. You also set up an internal requestor.
 
@@ -50,58 +48,11 @@ Sign in to Microsoft Graph Explorer (recommended), Postman, or any other API cli
 2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator or App Admin credentials.
 3. Upon successful sign-in, you'll see the user account details in the left-hand pane.
 
-### Create user accounts
+This tutorial assumes that you are calling the Microsoft Graph APIs using an account with the global administrator role.
 
-For this tutorial, you create two user accounts. You create an account for administering an access package, and you create an account that is used to request access to the resources in the access package. When you make these calls, change `contoso.onmicrosoft.com` to the address of your tenant. You can find tenant information on the Azure Active Directory overview page. Record the value of the **id** property that is returned to be used later in the tutorial.
+### Create a user account
 
-#### Request
-
-``` http
-POST https://graph.microsoft.com/beta/users
-Content-type: application/json
-
-{
-  "accountEnabled":true,
-  "displayName":"Admin1",
-  "mailNickname":"Admin1",
-  "userPrincipalName":"Admin1@contoso.onmicrosoft.com",
-  "passwordProfile": {
-    "forceChangePasswordNextSignIn":true,
-    "password":"Contoso1234"
-  }
-}
-```
-
-#### Response
-
-``` http
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
-  "id": "792006a5-1d63-4d63-81c7-ec0808181486",
-  "deletedDateTime": null,
-  "accountEnabled": true,
-  "ageGroup": null,
-  "businessPhones": [],
-  "city": null,
-  "createdDateTime": null,
-  "creationType": null,
-  "companyName": null,
-  "consentProvidedForMinor": null,
-  "country": null,
-  "department": null,
-  "displayName": "Admin1",
-  "employeeId": null,
-  "faxNumber": null,
-  "givenName": null,
-  "imAddresses": [],
-  "infoCatalogs": [],
-  "isResourceAccount": null,
-  "jobTitle": null,
-  "legalAgeGroupClassification": null,
-  "mail": null,
-  "mailNickname": "Admin1"
-}
-```
+For this tutorial, you create a user account that is used to request access to the resources in the access package. When you make these calls, change `contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Azure Active Directory overview page. Record the value of the **id** property that is returned to be used later in the tutorial.
 
 #### Request
 
@@ -149,75 +100,6 @@ Content-type: application/json
   "legalAgeGroupClassification": null,
   "mail": null,
   "mailNickname": "Requestor1",
-}
-```
-
-### Get role definitions
-
-To assign the global administrator privileges to the **Admin1** account, you need to obtain the identifier of the administrator role. In Microsoft Graph, the Global Administrator role is referred to as **Company Administrator**. Record the value of the **id** property that is returned to use later in this tutorial.
-
-#### Request
-
-```http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions?$filter=(displayName eq 'Company Administrator')
-```
-
-#### Response
-
-```http
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions",
-  "value": [
-    {
-      "id": "62e90394-69f5-4237-9190-012177145e10",
-      "description": "Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.",
-      "displayName": "Company Administrator",
-      "isBuiltIn": true,
-      "isEnabled": true,
-      "resourceScopes": [
-        "/"
-      ],
-      "templateId": "62e90394-69f5-4237-9190-012177145e10",
-      "version": "1",
-      "rolePermissions": [
-        {
-          "allowedResourceActions": [],
-          "condition": null
-        }
-      ]
-    }
-  ]
-}
-```
-
-### Assign the administrator role
-
-Use the value of the **id** that you obtained from the Company Administrator role definition as the value for the **roleDefinitionId** property. The value of the **principalId** property is the value of the **id** property of the **Admin1** user account that you created.
-
-#### Request
-
-```http
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments
-Content-type: application/json
-
-{
-  "@odata.type":"#microsoft.graph.unifiedRoleAssignment",
-  "roleDefinitionId":"62e90394-69f5-4237-9190-012177145e10",
-  "principalId":"792006a5-1d63-4d63-81c7-ec0808181486",
-  "directoryScopeId":"/"
-}
-```
-
-#### Response
-
-```http
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments/$entity",
-  "id": "lAPpYvVpN0KRkAEhdxReEKUGIHljHWNNgcfsCAgYFIY-1",
-  "principalId": "792006a5-1d63-4d63-81c7-ec0808181486",
-  "resourceScope": "/",
-  "directoryScopeId": "/",
-  "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10"
 }
 ```
 
@@ -489,9 +371,9 @@ Content-type: application/json
 }
 ```
 
-### Create a direct assignment to the access package
+### Create an access package policy
 
-Now that you created the access package and added resources and roles, you can decide who can access it. In the tutorial, you enable the **Requestor1** account that you created to request access to the resources in the access package. For this task, you need these values:
+Now that you created the access package and added resources and roles, you can decide who can access it by creating an access package policy. In the tutorial, you enable the **Requestor1** account that you created to request access to the resources in the access package. For this task, you need these values:
 - **id** of the access package for the value of the **accessPackageId** property
 - **id** of the **Requestor1** user account for the value of the **id** property in **allowedRequestors**
  
@@ -505,8 +387,8 @@ Content-type: application/json
 
 {
   "accessPackageId": "cf54c6ca-d717-49bc-babe-d140d035dfdd",
-  "displayName": "direct",
-  "description": "direct assignments by administrator",
+  "displayName": "Specific users",
+  "description": "Specific users can request assignment",
   "accessReviewSettings": null,
   "durationInDays": 30,
   "requestorSettings": {
@@ -538,8 +420,8 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageAssignmentPolicies/$entity",
   "id": "6c1f65ec-8c25-4a45-83c2-a1de2a6d0e9f",
   "accessPackageId": "cf54c6ca-d717-49bc-babe-d140d035dfdd",
-  "displayName": "direct",
-  "description": "direct assignments by administrator",
+  "displayName": "Specific users",
+  "description": "Specific users can request assignment",
   "canExtend": false,
   "durationInDays": 30,
   "expirationDateTime": null,
@@ -574,61 +456,6 @@ Content-type: application/json
 
 In this step, the **Requestor1** user account requests access to the resources in the access package.
 
-### Get access package assignment policies
-
-Get the policy that is needed to request access to resources.
-
-#### Request
-
-```http
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies?$filter=(id eq '6c1f65ec-8c25-4a45-83c2-a1de2a6d0e9f')
-```
-
-#### Response
-
-```http
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageAssignmentPolicies",
-  "value": [
-    {
-      "id": "6c1f65ec-8c25-4a45-83c2-a1de2a6d0e9f",
-      "accessPackageId": "cf54c6ca-d717-49bc-babe-d140d035dfdd",
-      "displayName": "direct",
-      "description": "direct assignments by administrator",
-      "canExtend": false,
-      "durationInDays": 30,
-      "expirationDateTime": null,
-      "createdBy": "admin@contoso.onmicrosoft.com",
-      "createdDateTime": "2020-06-29T19:47:44.74Z",
-      "modifiedBy": "admin@contoso.onmicrosoft.com",
-      "modifiedDateTime": "2020-06-29T19:47:44.757Z",
-      "accessReviewSettings": null,
-      "requestorSettings": {
-        "scopeType": "SpecificDirectorySubjects",
-        "acceptRequests": true,
-        "allowedRequestors": [
-          {
-            "@odata.type": "#microsoft.graph.singleUser",
-            "isBackup": false,
-            "id": "ce02eca8-752b-4ecf-ac29-aa9bccd87606",
-            "description": "Requestor1"
-          }
-        ]
-      },
-      "requestApprovalSettings": {
-        "isApprovalRequired": false,
-        "isApprovalRequiredForExtension": false,
-        "isRequestorJustificationRequired": false,
-        "approvalMode": "NoApproval",
-        "approvalStages": []
-      }
-    }
-  ]
-}
-```
-
-### Create an access package request
-
 To request access to resources in the access package, you need to provide these values:
 - **id** of the **Requestor1** user account that you created for the value of the **targetId** property
 - **id** of the assignment policy for the value of the **assignmentPolicyId** property
@@ -643,7 +470,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 Content-type: application/json
 
 {
-  "requestType": "AdminAdd",
+  "requestType": "UserAdd",
   "accessPackageAssignment":{
      "targetId":"ce02eca8-752b-4ecf-ac29-aa9bccd87606",
      "assignmentPolicyId":"6c1f65ec-8c25-4a45-83c2-a1de2a6d0e9f",
@@ -660,7 +487,7 @@ Content-type: application/json
     "createdDateTime": null,
     "completedDate": null,
     "id": "a6bb6942-3ae1-4259-9908-0133aaee9377",
-    "requestType": "AdminAdd",
+    "requestType": "UserAdd",
     "requestState": "Submitted",
     "requestStatus": "Accepted",
     "isValidationOnly": false,
@@ -691,12 +518,43 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
   "createdDateTime": "2020-06-29T20:24:24.683Z",
   "completedDate": "2020-06-29T20:24:47.937Z",
   "id": "a6bb6942-3ae1-4259-9908-0133aaee9377",
-  "requestType": "AdminAdd",
+  "requestType": "UserAdd",
   "requestState": "Delivered",
   "requestStatus": "Fulfilled",
   "isValidationOnly": false,
   "expirationDateTime": null,
   "justification": null
+}
+```
+
+### Get access package assignments
+
+You can also use the **id** of the access package policy that you created to see that resources have been assigned to the **Requestor1** user account.
+
+#### Request
+
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=accessPackageAssignmentPolicy/Id eq '6c1f65ec-8c25-4a45-83c2-a1de2a6d0e9f'
+```
+
+#### Response
+
+```http
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageAssignments",
+  "value": [
+    {
+      "id": "66a38bed-733f-4127-aaeb-743c93cf4409",
+      "catalogId": "ede67938-cda7-4127-a9ca-7c7bf86a19b7",
+      "accessPackageId": "cf54c6ca-d717-49bc-babe-d140d035dfdd",
+      "assignmentPolicyId": "6c1f65ec-8c25-4a45-83c2-a1de2a6d0e9f",
+      "targetId": "2bc42425-6dc5-4f2a-9ebb-7a7464481eb0",
+      "assignmentStatus": "Delivered",
+      "assignmentState": "Delivered",
+      "isExtended": false,
+      "expiredDateTime": null
+    }
+  ]
 }
 ```
 
@@ -741,37 +599,6 @@ GET https://graph.microsoft.com/beta/groups/a468eaea-ed6c-4290-98d2-a96bb1cb4209
       "legalAgeGroupClassification": null,
       "mail": null,
       "mailNickname": "Requestor1"
-    }
-  ]
-}
-```
-
-### Get access package assignments
-
-You can also use the **id** of the access package policy that you created to see that resources have been assigned to the **Requestor1** user account.
-
-#### Request
-
-```http
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=accessPackageAssignmentPolicy/Id eq '6c1f65ec-8c25-4a45-83c2-a1de2a6d0e9f'
-```
-
-#### Response
-
-```http
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageAssignments",
-  "value": [
-    {
-      "id": "66a38bed-733f-4127-aaeb-743c93cf4409",
-      "catalogId": "ede67938-cda7-4127-a9ca-7c7bf86a19b7",
-      "accessPackageId": "cf54c6ca-d717-49bc-babe-d140d035dfdd",
-      "assignmentPolicyId": "6c1f65ec-8c25-4a45-83c2-a1de2a6d0e9f",
-      "targetId": "2bc42425-6dc5-4f2a-9ebb-7a7464481eb0",
-      "assignmentStatus": "Delivered",
-      "assignmentState": "Delivered",
-      "isExtended": false,
-      "expiredDateTime": null
     }
   ]
 }
@@ -829,7 +656,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 #### Response
 
 ```http
-No Content - 204 - 797ms
+No Content - 204
 ```
 
 ### Delete the access package
@@ -845,7 +672,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 #### Response
 
 ```http
-No Content - 204 - 594ms
+No Content - 204
 ```
 
 ### Delete the user accounts
@@ -861,7 +688,7 @@ DELETE https://graph.microsoft.com/beta/users/ce02eca8-752b-4ecf-ac29-aa9bccd876
 #### Response
 
 ```http
-No Content - 204 - 594ms
+No Content - 204
 ```
 
 Delete the **Admin1** administrator account.
@@ -875,7 +702,7 @@ DELETE https://graph.microsoft.com/beta/users/792006a5-1d63-4d63-81c7-ec08081814
 #### Response
 
 ```http
-No Content - 204 - 594ms
+No Content - 204
 ```
 
 ### Delete the group
@@ -891,5 +718,5 @@ DELETE https://graph.microsoft.com/beta/groups/a468eaea-ed6c-4290-98d2-a96bb1cb4
 #### Response
 
 ```http
-No Content - 204 - 594ms
+No Content - 204
 ```
