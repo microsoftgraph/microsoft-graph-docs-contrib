@@ -1,11 +1,11 @@
 ---
-title: "Navigating Microsoft Graph PowerShell SDK"
+title: "Navigating the Microsoft Graph PowerShell SDK"
 description: "The Microsoft Graph PowerShell SDK contains a large number of commands. Learn how to find the right command for what you want to achieve."
 localization_priority: Normal
 author: jasonjoh
 ---
 
-# Get started with the Microsoft Graph PowerShell SDK
+# Navigating the Microsoft Graph PowerShell SDK
 
 The Microsoft Graph API is huge, and it's growing all the time. Because of this, the number of commands in the Microsoft Graph PowerShell SDK is also very large. Finding the right command for what you want to achieve can be challenging, especially if you're not already familiar with Microsoft Graph. Let's look at some ways to help find a particular command.
 
