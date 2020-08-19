@@ -1,21 +1,21 @@
 ---
 title: "Get started with the Microsoft Graph PowerShell SDK"
-description: "Provides instructions for installing the Microsoft Graph PowerShell SDK."
+description: "Get started with the Microsoft Graph PowerShell SDK by using it perform some basic tasks."
 localization_priority: Normal
 author: jasonjoh
 ---
 
 # Get started with the Microsoft Graph PowerShell SDK
 
-## Finding available commands
+In this guide you'll use the Microsoft Graph PowerShell SDK to perform some basic tasks. If you haven't already [installed the SDK](installation.md), please do so before following this guide.
 
-You can use the `Get-Command` command to search the available commands in the SDK. For example, if you're looking for commands related to Microsoft Teams, you can run the following command.
+## API version
+
+By default, the SDK uses the [Microsoft Graph REST API v1.0](/graph/api/overview?view=graph-rest-1.0). You can change this by using the `Select-MgProfile` command.
 
 ```powershell
-Get-Command -Module Microsoft.Graph* *team*
+Select-MgProfile -Name "beta"
 ```
-
-See [something here]() for more information on the naming convention for the commands in the SDK.
 
 ## Authentication
 
@@ -123,3 +123,7 @@ This command differs from the previous commands you used. Instead of just queryi
 ```powershell
 New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" } -Importance "urgent"
 ```
+
+## Next steps
+
+- [Learn how to navigate the SDK](navigating.md)
