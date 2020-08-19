@@ -71,11 +71,12 @@ If successful, this method returns a `201 Created` response code and a [todoTask
 ### Request
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM"],
   "name": "create_todotask_from_tasks"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/todo/lists/AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM/tasks
+POST https://graph.microsoft.com/beta/me/todo/lists/AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM/tasks
 Content-Type: application/json
 Content-length: 608
 

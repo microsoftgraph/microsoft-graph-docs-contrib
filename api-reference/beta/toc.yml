@@ -12261,8 +12261,9 @@ items:
       - name: Outlook tasks (deprecated)
         items:
         - name: Outlook task (deprecated)
-          href: resources/outlooktask.md
           items:
+          - name: Outlook task
+            href: resources/outlooktask.md
           - name: List
             href: api/outlookuser-list-tasks.md
           - name: Create
@@ -12280,8 +12281,9 @@ items:
           - name: Add attachment
             href: api/outlooktask-post-attachments.md
         - name: Outlook task folder (deprecated)
-          href: resources/outlooktaskfolder.md
           items:
+          - name: Outlook task folder
+            href: resources/outlooktaskfolder.md
           - name: List
             href: api/outlookuser-list-taskfolders.md
           - name: Create
@@ -12297,8 +12299,9 @@ items:
           - name: Create tasks in folder
             href: api/outlooktaskfolder-post-tasks.md
         - name: Outlook task group (deprecated)
-          href: resources/outlooktaskgroup.md
           items:
+          - name: Outlook task group
+            href: resources/outlooktaskgroup.md
           - name: List
             href: api/outlookuser-list-taskgroups.md
           - name: Create

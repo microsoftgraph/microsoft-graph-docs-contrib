@@ -53,11 +53,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["35e2-35e2-721a-e235-1a72e2351a7"],
   "name": "get_todotask"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/todo/lists/35e2-35e2-721a-e235-1a72e2351a7/tasks
+GET https://graph.microsoft.com/beta/me/todo/lists/35e2-35e2-721a-e235-1a72e2351a7/tasks
 ```
 
 
