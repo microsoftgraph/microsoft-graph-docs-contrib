@@ -1,19 +1,16 @@
 ---
-title: "List accounts"
-description: "Retrieve a list of userAccountInformation objects."
+title: "List publications"
+description: "Get the itemPublications from the publications navigation property."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
-doc_type: "apiPageType"
+doc_type: apiPageType
 ---
 
-# List accounts
-
+# List publications
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Retrieves properties related to the user's accounts from the [profile](../resources/profile.md).
+Retrieve a list of [itemPublication](../resources/itempublication.md) objects from a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -27,10 +24,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
-
-```http
-GET /me/profile/account
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /me/profile/publications
+GET /users/{id | userPrincipalName}/profile/publications
 ```
 
 ## Optional query parameters
@@ -46,88 +46,86 @@ This method supports the following OData query parameters to help customize the 
 |$top            |int      |Number of results to be returned.                                                                                                                                           |
 
 ## Request headers
-
-| Name           |Description                  |
-|:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
 
 ## Request body
-
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [userAccountInformation](../resources/useraccountinformation.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [itemPublication](../resources/itempublication.md) objects in the response body.
 
 ## Examples
-
-### Request
-
-The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_account"
-}-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/profile/account
+  "name": "get_publications_from_profile"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/me/profile/publications
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-account-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-account-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-account-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
-
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.userAccountInformation",
-  "isCollection": true
-} -->
-
-```http
+  "@odata.type": "collection(microsoft.graph.itemPublication)"
+}
+-->
+``` http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
   "value": [
     {
-      "ageGroup": "ageGroup-value",
-      "countryCode": "countryCode-value",
-      "preferredLanguageTag": {
-        "locale": "locale-value",
-        "displayName": "displayName-value"
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
       },
-      "userPrincipalName": "userPrincipalName-value"
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "source": null,
+      "description": "One persons journey to the top of the branding management field.",
+      "displayName": "Got Brands? The story of Innocenty Popov and his journey to the top.",
+      "publishedDate": "Date",
+      "publisher": "International Association of Branding Management Publishing",
+      "thumbnailUrl": "https://iabm.io/sdhdfhsdhshsd.jpg",
+      "webUrl": "https://www.iabm.io"
     }
   ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List account",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
