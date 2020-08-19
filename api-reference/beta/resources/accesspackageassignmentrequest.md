@@ -45,7 +45,6 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |:-------------|:------------|:------------|
 |requestor|[accessPackageSubject](accesspackagesubject.md)| The subject who requested or, if a direct assignment, was assigned. Read-only. Nullable.|
 
-
 ## JSON representation
 
 The following is a JSON representation of the resource.
