@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 DELETE /me/profile/educationalActivities/{id} 
+DELETE /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 ```
 
 ## Request headers
@@ -58,7 +59,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/user/profile/educationalActivities/{id}
+DELETE https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 ```
 
 ### Response

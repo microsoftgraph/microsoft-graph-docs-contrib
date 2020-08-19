@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Return the directory objects specified in a list of IDs.  
+Return the directory objects specified in a list of IDs.
 
 Some common uses for this function are to:
 
