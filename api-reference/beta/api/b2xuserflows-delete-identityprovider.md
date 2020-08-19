@@ -1,5 +1,5 @@
 ---
-title: "Delete identityProvider from a b2xUserFlow"
+title: "Delete identityProvider from b2xUserFlow"
 description: "Delete an identityProvider from a b2xUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Delete an identityProvider from a b2xUserFlow
+# Delete identityProvider from b2xUserFlow
 
 Namespace: microsoft.graph
 
