@@ -36,7 +36,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |id|String| Read-only.|
 |isExtended|Boolean|Indicates whether the access package assignment is extended. Read-only.|
 |targetId|String| The ID of the subject with the assignment. Read-only.|
-|schedule|[requestSchedule](requestschedule.md)| When the access is to be in force.|
+|schedule|[requestSchedule](requestschedule.md)| When the access is to be in force. Read-only.|
 
 ## Relationships
 

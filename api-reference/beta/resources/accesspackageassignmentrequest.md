@@ -36,6 +36,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |requestState|String|One of `PendingApproval`, `Canceled`,  `Denied`, `Delivering`, `Delivered`, `PartiallyDelivered`, `Submitted` or `Scheduled`. Read-only.|
 |requestStatus|String|More information on the request processing status. Read-only.|
 |requestType|String|One of `UserAdd`, `UserRemove`, `AdminAdd`, `AdminRemove` or `SystemRemove`. Read-only.|
+|schedule|[requestSchedule](requestschedule.md)| When the access is requested to be in force. Read-only.|
 |accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| An access package assignment requested to be created.|
 
 ## Relationships
