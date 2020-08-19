@@ -31,22 +31,15 @@ To help you set up the most common identity tasks for your applications, Azure A
 |[Get user flow](../api/b2cuserflows-get.md) |b2xUserFlow|Retrieve properties of a user flow.|
 |[Delete user flow](../api/b2cuserflows-delete.md)|None|Delete a user flow.|
 |[List identity providers](../api/b2cuserflows-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a user flow.|
-|[Add identity provider](../api/b2cuserflows-update-identityprovider.md)|None|Adds an identity provider to a user flow.|
-|[Delete identity provider](../api/b2cuserflows-delete-identityprovider.md)|None|Deletes an identity provider from a user flow.|
+|[Add identity provider](../api/b2cuserflows-update-identityprovider.md)|None|Add an identity provider to a user flow.|
+|[Delete identity provider](../api/b2cuserflows-delete-identityprovider.md)|None|Delete an identity provider from a user flow.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|id|String|The name of the user flow. This is a required value and is immutable once created. The name will be pre-pended with the value of `B2C_1_` after creation.|
-|userFlowType|String|The [type of user flow](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-versions). The supported values for userFlowType are:
-
-- signUp
-- signIn
-- signUpOrSignIn
-- passwordReset
-- profileUpdate
-- resourceOwnerPasswordCredentialSignIn|
+|id|String|The name of the user flow. This is a required value and is immutable after it's created. The name will be prepended with the value of `B2C_1_` after creation.|
+|userFlowType|String|The [type of user flow](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-versions). The supported values for **userFlowType** are:<br/><br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
 |userFlowVersion|float|The version of the user flow.|
 
 ## Relationships
