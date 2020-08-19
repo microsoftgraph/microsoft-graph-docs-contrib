@@ -25,14 +25,14 @@ User flows are used to enable a [self-service sign up](https://docs.microsoft.co
 |[Get user flow](../api/b2xuserflows-get.md) |b2xUserFlow|Retrieve properties of a user flow.|
 |[Delete user flow](../api/b2xuserflows-delete.md)|None|Delete a user flow.|
 |[List identity providers](../api/b2xuserflows-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a user flow.|
-|[Add identity provider](../api/b2xuserflows-update-identityprovider.md)|None|Adds an identity provider to a user flow.|
-|[Delete identity provider](../api/b2xuserflows-delete-identityprovider.md)|None|Deletes an identity provider from a user flow.|
+|[Add identity provider](../api/b2xuserflows-update-identityprovider.md)|None|Add an identity provider to a user flow.|
+|[Delete identity provider](../api/b2xuserflows-delete-identityprovider.md)|None|Delete an identity provider from a user flow.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|id|String|The name of the user flow. This is a required value and is immutable once created. The name will be pre-pended with the value of `B2X_1_` after creation.|
+|id|String|The name of the user flow. This is a required value and is immutable after it's created. The name will be prepended with the value of `B2X_1_` after creation.|
 |userFlowType|String|The type of user flow. For self-service sign up user flows, the value can only be `signUpOrSignIn` and cannot be modified after creation.|
 |userFlowVersion|float|The version of the user flow. For B2X user flows, the version is always `1`.|
 
