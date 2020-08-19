@@ -58,7 +58,7 @@ The polyfills are already included if you are using the Toolkit via the mgt-load
 
 ## Next Steps
 You're now ready to start developing with Microsoft Graph Toolkit! The following guides are available to help you get started:
-- Build a web application (plain JavaScript)
+- Build a web application (vanilla JavaScript)
 - Build a SharePoint web part
 - Build a Microsoft Teams tab
 - Use the Toolkit with React

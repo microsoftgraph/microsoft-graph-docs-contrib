@@ -7,16 +7,136 @@ author: elisenyang
 
 # Build a SharePoint web part with Microsoft Graph Toolkit
 
-1. Set up your SharePoint Framework development environment
-2. Create a new web part
-3. Add TypeScript to your project
-4. Add Microsoft Graph Toolkit
-5. Add the SharePoint Provider
-6. Add components
-7. Test your web part
+1. Set up your development environment and create a web part
+2. Add TypeScript to your project
+3. Add Microsoft Graph Toolkit
+4. Add the SharePoint Provider
+5. Add components
+6. Configure permissions
+6. Test your web part
 
-## Set up your SharePoint Framework development environment
+## Set up your SharePoint Framework development environment and create a new web part
 
-Follow the steps to [Set up your SharePoint Framework development environment](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-development-environment).
+Follow the steps to [Set up your SharePoint Framework development environment](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-development-environment) and then [create a new web part](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part).
 
-## Create a new web part
+## Add TypeScript to your project
+
+Microsoft Graph Toolkit requires Typescript 3.x. Before adding the Toolkit to your project, make sure you're using a [supported version of Typescript](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x). For example, to add Typescript 3.7, use the following command:
+
+```bash
+npm install @microsoft/rush-stack-compiler-3.7 --save-dev
+```
+Open the `tsconfig.json` file in your project directory, look for this line:
+
+```json
+"extends": "./node_modules/@microsoft/rush-stack-compiler-3.3/includes/tsconfig-web.json",
+```
+and replace it with:
+
+```json
+"extends": "./node_modules/@microsoft/rush-stack-compiler-3.7/includes/tsconfig-web.json",
+```
+
+## Add Microsoft Graph Toolkit
+
+Install the Microsoft Graph Toolkit npm package with the following command:
+
+```bash
+npm install @microsoft/mgt
+```
+
+## Add the SharePoint Provider
+
+In `src\webparts\<your-project>\<your-web-part>.ts`, add the following line to the top of your file, below the existing `import` statements:
+
+```ts
+import { Providers, SharePointProvider } from '@microsoft/mgt';
+```
+
+In the same file, add the following code before the `public render(): void {` line:
+
+```ts
+protected async onInit() {
+    Providers.globalProvider = new SharePointProvider(this.context)
+}
+```
+
+## Add components
+
+Now, you can start adding components to your web part. Simply add the components to the HTML inside of the render method. For example, to add the Person component your code will look like:
+
+```ts
+public render(): void {
+    this.domElement.innerHTML = `
+    <mgt-person person-query="me" view="twolines"><mgt-person>
+    `;
+}
+```
+
+## Configure permissions
+
+Locate the `config\package-solution.json` and set
+
+```json
+"isDomainIsolated": false
+```
+
+Just below that line, add the following:
+
+```json
+"webApiPermissionRequests":[],
+```
+
+Determine which Microsoft Graph API permissions you need depending on the components you're using. You will need to add each permission you need to `webApiPermissionRequests`. For example, if you're using the Person component and the Agenda Component, it may look like
+
+```json
+"webApiPermissionRequests": [
+    {
+        "resource": "Microsoft Graph",
+        "scope": "User.Read"
+    },
+        {
+        "resource": "Microsoft Graph",
+        "scope": "Calendars.Read"
+    }
+]
+```
+## Build and deploy your web part
+
+Build your application by running the following commands:
+
+```bash
+gulp build
+gulp bundle
+gulp package-solution
+```
+
+In the `sharepoint/solution` folder, there will be a new `.sppkg` file. You will need to upload this file to your SharePoint Online App Catalog. Go to the More features page in the SharePoint admin center, select **Open** under **Apps**, select **App Catalog**, select **Distribute apps for SharePoint**, upload your `.sppkg` file, and click **Deploy**.
+
+Next, you need to approve the permissions.
+
+Go to your SharePoint Admin center. In the left-hand navigation, select **Advanced** and then **API Access**. You should see pending requests for each of the permissions you added in your `config\package-solution.json` file. Select and approve each permission.
+
+## Test your web part
+
+You will need to use the hosted workbench to test web parts that use Microsoft Graph Toolkit because the components need the authenticated context in order to call Microsoft Graph. You can find your hosted workbench at https://<YOUR_TENANT>.sharepoint.com/_layouts/15/workbench.aspx.
+
+Open the `config\serve.json` file in your project and replace the  value of `initialPage` with the url for your hosted workbench:
+```json
+"initialPage": "https://<YOUR_TENANT>.sharepoint.com/_layouts/15/workbench.aspx",
+```
+Save the file and then run the following command in the console to build and preview your web part:
+
+```bash
+gulp serve
+```
+
+Your hosted workbench will open in your browser. Add your web part to the page and you should see your web part with the Microsoft Graph Toolkit components in action! As long as the gulp serve command is still running in your console, you can continue to make edits to your code and just need to refresh your browser to see your changes.
+
+## Next Steps
+- Ask a question on StackOverflow
+- 
+
+
+
+
