@@ -142,7 +142,7 @@ Content-Type: application/json
 
 ### Example 3: List applications with a given ID, and return the submission review state
 
-The following example lists applications with a given ID, and expands appDefinitions to return the publishingState, which reflects the app's submission review state. "Submitted" means the review is pending, "Published" means the app was approved by the admin, and "Rejected" means the app was rejected by the admin.
+The following example lists applications with a given ID, and expands **appDefinitions** to return the **publishingState**, which reflects the app's submission review state. `Submitted` means the review is pending, `published` means the app was approved by the admin, and `rejected` means the app was rejected by the admin.
 
 #### Request
 
