@@ -65,7 +65,7 @@ Instance attributes are properties with special behaviors. These properties are 
 
 | Property name| Type   | Description
 |:-----------------------|:-------|:-------------------------|
-|channelCreationMode|ChannelCreationMode|Indicates the channel is in migration state and is currently being used for migration purposes.|
+|@microsoft.graph.channelCreationMode|string|Indicates the channel is in migration state and is currently being used for migration purposes. It accepts one value: `migration`.|
 
 > **Note**: `ChannelCreationMode`  is an enum that takes the value `migration`.
 
