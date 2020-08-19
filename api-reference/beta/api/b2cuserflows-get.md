@@ -1,6 +1,6 @@
 ---
 title: "Get b2cUserFlows"
-description: "Retrieve the properties and relationships a b2cUserFlow."
+description: "Retrieve the properties and relationships a b2cUserFlow object."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [b2cUserFlow](../resources/b2cuserflows.md).
+Retrieve the properties and relationships of a [b2cUserFlow](../resources/b2cuserflows.md) object.
 
 ## Permissions
 
