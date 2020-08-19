@@ -65,7 +65,7 @@ The clear all the stores in the cache, the `clearCaches()` method of the CacheSe
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';
 
-CacheService.clearCacheStores();
+CacheService.clearCaches();
 ```
 
 ## Creating your own cache stores
