@@ -15,7 +15,8 @@ This topic covers how to use Microsoft Graph Toolkit components in a [SharePoint
 4. Add the SharePoint Provider
 5. Add components
 6. Configure permissions
-6. Test your web part
+7. Build and deploy your web part
+8. Test your web part
 
 ## Set up your SharePoint Framework development environment and create a new web part
 
@@ -41,17 +42,64 @@ Replace the line with:
 
 ## Add Microsoft Graph Toolkit
 
-Install the Microsoft Graph Toolkit npm package with the following command:
+Install the Microsoft Graph Toolkit npm package and polyfills with the following command:
 
 ```bash
 npm install @microsoft/mgt
 ```
+If you plan to support IE11 in your web parts, you will need to follow additional steps to ensure cross-browser compatibility:
+
+1. Install the following packages:
+```bash
+npm install -D babel-loader @babel/core @babel/preset-env webpack
+npm install -D @webcomponents/webcomponentsjs regenerator-runtime core-js
+npm install @microsoft/mgt
+```
+
+2. Add the following code to `gulpfile.js`, right above `build.initialize(gulp)`:
+```ts
+build.configureWebpack.mergeConfig({
+  additionalConfiguration: (generatedConfiguration) => {
+    generatedConfiguration.module.rules.push(
+      {
+        test: /\.m?js$/, use:
+        {
+          loader: "babel-loader",
+          options:
+          {
+            presets: [["@babel/preset-env",
+              {
+                targets: {
+                  "ie": "11"
+                }
+              }]]
+          }
+        }
+      }
+    );
+
+    return generatedConfiguration;
+  }
+});
+```
+3. In your `src\webparts\<your-project>\<your-web-part>.ts` file, import the following polyfills before the SharePoint provider in the next step.
+
+```ts
+import 'regenerator-runtime/runtime';
+import 'core-js/es/number';
+import 'core-js/es/math';
+import 'core-js/es/string';
+import 'core-js/es/date';
+import 'core-js/es/array';
+import 'core-js/es/regexp';
+import '@webcomponents/webcomponentsjs/webcomponents-bundle.js';
+```
 
 ## Add the SharePoint Provider
 
-he Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers.md). SharePoint web parts always exist in an authenticated context as the user has already had to log in in order to get the page that hosts your web part. We will use this context to initialize the SharePoint provider.
+The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers.md). SharePoint web parts always exist in an authenticated context as the user has already had to log in in order to get to the page that hosts your web part. We will use this context to initialize the SharePoint provider.
 
-Locate the `src\webparts\<your-project>\<your-web-part>.ts` file in your project folder, and add the following line to the top of your file, right below the existing `import` statements to add the SharePoint provider to your web part:
+First, add the provider to your web part. Locate the `src\webparts\<your-project>\<your-web-part>.ts` file in your project folder, and add the following line to the top of your file, right below the existing `import` statements:
 
 ```ts
 import { Providers, SharePointProvider } from '@microsoft/mgt';

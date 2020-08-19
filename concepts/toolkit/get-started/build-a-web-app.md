@@ -7,7 +7,7 @@ author: elisenyang
 
 # Build a web application with Microsoft Graph Toolkit
 
-This topic describes how to get started with Microsoft Graph Toolkit in a web application written in vanilla JavaScript. If you would like to learn how to use the Toolkit with a web framework, see Use Toolkit with React or Use Toolkit with Angular.
+This topic describes how to get started with Microsoft Graph Toolkit in a web application written in vanilla JavaScript. If you would like to learn how to use the Toolkit with a web framework, see [Use Toolkit with React](./use-toolkit-with-react.md) or [Use Toolkit with Angular](./use-toolkit-with-angular.md).
 
 To get started with Microsoft Graph Toolkit in your web application, the high-level steps you will need to follow include:
 1. Add Microsoft Graph Toolkit to your project
@@ -122,3 +122,6 @@ If you're just getting started and want to play around, you can use [Live Server
 > **NOTE:** Make sure the **redirect URI** in your app registration is set to the localhost port your application is hosted on. Go to your app registration in the [Azure portal](https://portal.azure.com), click **Authentication** under manage, and add the correct **redirect URI**.
 
 ## Next Steps
+- Ask a question on StackOverflow
+- Report bugs or leave a feature request on GitHub
+- 
