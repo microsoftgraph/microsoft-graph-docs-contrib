@@ -4,13 +4,13 @@ description: "Indicates MFA details for a specific sign-in. It includes the auth
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "khotz"
 ---
 
 # mfaDetail resource type
 
 Namespace: microsoft.graph
-Indicates MFA details for a specific sign-in. It includes the authentication method used for signing in as well as auth details (for example: Phone, SMS or voicemail) 
+Indicates MFA details for a specific sign-in. It includes the authentication method used for signing in as well as auth details (for example: Phone, SMS or voicemail)
 
 
 
