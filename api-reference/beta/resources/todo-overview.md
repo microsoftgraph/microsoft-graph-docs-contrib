@@ -17,7 +17,7 @@ Currently, the API supports only permissions delegated by the signed-in user.
  
 Before you get started with the To Do API, it will be helpful to know about the resources and how they relate to one another.
 
-![To Do API entities](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/todo-windows-app.png)
+![To Do API entities](../../../concepts/images/todo-api-entities.png)
 
 ## Task list
 
