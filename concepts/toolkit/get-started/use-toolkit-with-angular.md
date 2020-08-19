@@ -7,7 +7,7 @@ author: elisenyang
 
 # Using Microsoft Graph Toolkit with Angular
 
-Microsoft Graph Toolkit components work great with web frameworks like Angular in addition to vanilla JavaScript and HTML.
+Microsoft Graph Toolkit components work great with web frameworks like Angular in addition to vanilla JavaScript and HTML. This topic covers how to get started using Microsoft Graph Toolkit in your Angular application.
 
 ## Adding Microsoft Graph Toolkit
 
@@ -35,7 +35,7 @@ npm install @microsoft/mgt
 
 The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers.md). The provider you should use depends on the context in which your solution will be used.
 
-For example, to add the [MSAL Provider](../providers/msal.md), import the provider and set it to initialize when the application initializes. Replace `clientId` with the client ID for your application.
+The example below shows how to add the [MSAL Provider](../providers/msal.md). but you can follow the same model with any of the other providers. Import the provider and set it to initialize when the application initializes. Replace `<YOUR-CLIENT-ID>` with the client ID for your application.
 
 ```ts
 import { Component, OnInit } from '@angular/core';
@@ -62,7 +62,7 @@ In order to get a client ID, you need to [register your application](https://doc
 
 ## Adding components
 
-Now, you can use any of the Microsoft Graph Toolkit components as you normally would in your HTML templates. For example, to add the [Person component](../components/person.md), you would use:
+Now, you can use any of the Microsoft Graph Toolkit components as you normally would in your HTML templates. For example, to add the [Person component](../components/person.md), you would add the following to your template:
 
 ```html
 <mgt-person person-query="me" view="twolines"></mgt-person>
@@ -70,11 +70,19 @@ Now, you can use any of the Microsoft Graph Toolkit components as you normally w
 
 ## Templating components with Angular
 
-All of the components support [custom templates](../templates.md) which allow you to modify the content of a component. The default syntax for templating is to use double braces to refer to the property data for each of the returned items.
+All Microsoft Graph Toolkit components support [custom templates](../templates.md) which allow you to modify the content of a component. The default syntax for templating in the components is to use double braces to refer to the property data for each of the returned items like below:
 
-In Angular, double braces are used for databinding and the Angular compiler will throw an error if you try to use a custom template with double braces.
+```html
+<mgt-agenda>
+    <template data-type="event">
+        <div>{{event.subject}}</div>
+    </template>
+</mgt-agenda>
+```
 
-You can avoid these errors by changing the characters used by the Toolkit using the `TemplateHelper`. It is best to do this in your top-level App component so that it applies globally.
+In Angular, however, double braces are used for databinding and the Angular compiler will throw an error if you try to use the double brace syntax.
+
+You can avoid these errors by changing the default characters used by the Toolkit to something other than double braces by using the `TemplateHelper`. It is best to do this in your top-level App component so that it applies globally.
 
 Import the TemplateHelper and use `.setBindingSyntax()` to set your custom binding syntax.
 
@@ -85,7 +93,7 @@ import { Providers, MsalProvider, TemplateHelper } from '@microsoft/mgt;
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css]
+    styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
 
@@ -95,6 +103,15 @@ export class AppComponent implements OnInit {
         TemplateHelper.setBindingSyntax('[[',']]');
     }
 }
+```
+Now, you can use your custom binding syntax to define custom templates.
+
+```html
+<mgt-agenda>
+    <template data-type="event">
+        <div>[[event.subject]]</div>
+    </template>
+</mgt-agenda>
 ```
 
 ## Next Steps
