@@ -55,6 +55,8 @@ The Microsoft Graph Toolkit providers enable authentication and access to Micros
 
 If you would like to use your own backend authentication, use the [Proxy Provider](../providers/proxy.md) in place of the MSAL provider.
 
+You can choose to initialize the provider in either your HTML or your JavaScript code. Both methods are shown below.
+
 ### Initialize in your HTML page
 Add the `mgt-msal-provider` component to your HTML page and set the `client-id` to your application client-id.
 
