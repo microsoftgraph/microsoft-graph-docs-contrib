@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an identity provider from a [b2cUserFlow](../resources/b2cuserflows.md) object. For more information on identity providers available for user flows, see the [identityProviders](../resources/identityprovider.md) API reference.
+Delete an identity provider from a [b2cUserFlow](../resources/b2cuserflows.md) object. For more information about identity providers available for user flows, see the [identityProviders](../resources/identityprovider.md) API reference.
 
 ## Permissions
 
