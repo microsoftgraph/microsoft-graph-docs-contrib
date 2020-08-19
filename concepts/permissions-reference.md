@@ -1575,7 +1575,7 @@ Security permissions are valid only on work or school accounts.
 
 ---
 
-## Short Notes permissions
+## Short Notes permissions ([private preview](#permissions-availability-status))
 
 #### Delegated permissions
 
