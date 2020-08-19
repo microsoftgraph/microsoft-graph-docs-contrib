@@ -57,6 +57,7 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |webUrl|string (readonly) | A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select **Get link to team**. This URL should be treated as an opaque blob, and not parsed. |
 |classSettings|[teamClassSettings](teamclasssettings.md) |Configure settings of a class. Available only when the team represents a class.|
 |isMembershipLimitedToOwners|Boolean|If set to `true`, the team is currently in the owner-only team membership state and not accessible by other team members, such as students.|
+|createdDateTime|DateTimeOffset|Represents the time a team was created.|
 
 ## Relationships
 
@@ -71,6 +72,18 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| The general channel for the team. | 
 |schedule|[schedule](schedule.md)| The schedule of shifts for this team.|
 |template|[teamsTemplate](teamstemplate.md)| The template this team was created from. See [available templates](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-templates). |
+
+## Instance Attributes
+
+Instance attributes are properties with special behaviors. These properties are temporary and either a) define behavior the service should perform or b) provide short-term property values, like a download URL for an item that expires.
+
+| Property name| Type   | Description
+|:-----------------------|:-------|:-------------------------|
+|teamCreationMode|TeamCreationMode|Indicates the team is in migration state and is currently being used for migration purposes.|
+
+> **Note**: `TeamCreationMode`  is an enum that takes the value `migration`.
+
+*See* [Request(create team in migration state)](https://github.com/MicrosoftDocs/msteams-docs/blob/add-import-messages/msteams-platform/graph-api/import-messages/import-external-messages-to-teams.md#request-create-team-in-migration-state) for a POST request example.
 
 ## JSON representation
 
@@ -100,7 +113,8 @@ The following is a JSON representation of the resource.
   "specialization": "string",
   "visibility": "string",
   "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
-   "isMembershipLimitedToOwners":"boolean"
+  "isMembershipLimitedToOwners":"boolean",
+  "createdDateTime": "DateTimeOffset"
 }
 ```
 
