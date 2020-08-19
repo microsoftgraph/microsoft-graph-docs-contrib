@@ -1,6 +1,6 @@
 ---
 title: "Delete b2cUserFlow"
-description: "Delete a b2cUserFlow."
+description: "Delete a b2cUserFlow object."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [b2cUserFlow](../resources/b2cuserflows.md).
+Delete a [b2cUserFlow](../resources/b2cuserflows.md) object.
 
 ## Permissions
 
@@ -70,8 +70,6 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}
 ### Response
 
 The following is an example of the response.
-
-**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
