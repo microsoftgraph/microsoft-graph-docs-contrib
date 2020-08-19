@@ -57,6 +57,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | Beta | Added the [passwordSingleSignOnSettings](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta) property to the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.
+| Addition | v1.0 | The following permission scopes have been added:<ul><li>ShortNotes.Read</li><li>ShortNotes.ReadWrite</li><li>ShortNotes.Read.All</li><li>ShortNotes.ReadWrite.All</li></ul>See the [permissions reference](/graph/permissions-reference#short-notes-permissions) for details. |
 
 ### Calendar
 
