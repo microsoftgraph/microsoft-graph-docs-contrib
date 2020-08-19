@@ -37,7 +37,7 @@ GET /appCatalogs/teamsApps
 
 This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
-Using `$expand=AppDefinitions` will return more information on the state of the app, such as the `publishingState`, which reflects the app submission review process and returns whether an app has been approved, rejected, or remains under review. 
+Using `$expand=AppDefinitions` will return more information about the state of the app, such as the **publishingState**, which reflects the app submission review status and returns whether an app has been approved, rejected, or remains under review. 
 
 > **Note:** You can filter on any of the fields of the [teamsApp](../resources/teamsapp.md) object to shorten the list of results. You can use any of the following filter operations: Equal, not-equal, and, or, and not.
 
@@ -143,7 +143,7 @@ Content-Type: application/json
 
 ### Example 3: List applications with a given ID, and return the submission review state
 
-The following example lists applications with a given ID, and expands appDefinitions to return the publishingState, which reflects the app's submission review state. "Submitted" means the review is pending, "Published" means the app was approved by the admin, and "Rejected" means the app was rejected by the admin.
+The following example lists applications with a given ID, and expands **appDefinitions** to return the **publishingState**, which reflects the app's submission review state. `Submitted` means the review is pending, `published` means the app was approved by the admin, and `rejected` means the app was rejected by the admin.
 
 #### Request
 
