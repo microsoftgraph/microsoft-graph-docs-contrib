@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents any item from a partner application related to the [todoTask](./todotask.md), e.g. an item like email from where a task was created. You can use it to store information and the link back to the related item in your app.
+Represents an item in a partner application related to a [todoTask](./todotask.md). An example is an email that created the task. A **linkedResource** object stores information about that source application, and lets you link back to the related item.
 
 ## Methods
 |Method|Return type|Description|

@@ -37,10 +37,9 @@ Get [reports on Microsoft 365 apps usage](/graph/api/resources/microsoft-365-app
 ### Teamwork
 Get [content hosted in a chat message](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta), such as images or code snippets. See an [example](/graph/api/chatmessagehostedcontent-get?view=graph-rest-beta&branch=master#example-2-get-hosted-content-bytes-for-an-image) to get the content bytes of an image.
 
-### To-do Tasks
-- [To Do API](/graph/api/resources/todo-overview?view=graph-rest-beta) is available in beta.
-- Use [todoTask](/graph/api/resources/todotask?view=graph-rest-beta) to create a task in [todoTaskList](/graph/api/resources/todotasklist?view=graph-rest-beta).
-- Use [linkedResource](/graph/api/resources/linkedresource?view=graph-rest-beta) to link to the source of the task.
+### To-do tasks
+- Debut of a new set of API for [Microsoft To Do](todo-concept-overview.md), allowing app users to organize and track personal tasks across Microsoft 365 client apps. See [Use the Microsoft To Do API](/graph/api/resources/todo-overview?view=graph-rest-beta) for more information.
+- Deprecation of the [Outlook tasks API](/graph/api/resources/outlooktask?view=graph-rest-beta).
 
 ## July 2020: New and generally available
 

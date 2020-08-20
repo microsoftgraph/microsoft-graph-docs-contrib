@@ -13,10 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A **todoTask** represents a task, i.e. a piece of work or personal item that can be tracked and completed.. It is always contained in a [todoTaskList](todotasklist.md). It includes a relationship to a [linkedResource](./linkedResource.md) resource which represents the source of the task.
+A **todoTask** represents a task, such as a piece of work or personal item, that can be tracked and completed. 
 
-This resource supports
-* Adding your data to custom properties as [open extensions](/graph/extensibility-overview).
+A **todoTask** is always contained in a [todoTaskList](todotasklist.md). It includes a relationship to a collection of [linkedResource](./linkedResource.md) objects, tracking one or more sources of the task.
+
+This resource supports the following:
+* Adding your data as custom properties in [open extensions](/graph/extensibility-overview).
 * Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions and updates.
 
 ## Methods
@@ -51,7 +53,7 @@ This resource supports
 |Relationship|Type|Description|
 |:---|:---|:---|
 |extensions|[extension](extension.md) collection| The collection of open extensions defined for the task. Nullable.|
-|linkedResources|[linkedResource](../resources/linkedresource.md) collection|Resource linked to the task.|
+|linkedResources|[linkedResource](../resources/linkedresource.md) collection|A collection of resources linked to the task.|
 
 
 ## JSON representation

@@ -1,6 +1,6 @@
 ---
 title: "Create todoTask"
-description: "Create a new task object."
+description: "Create a new task object in a specified todoTaskList."
 author: "avijityadav"
 localization_priority: Normal
 ms.prod: "outlook"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new task object.
+Create a new task object in a specified [todoTaskList](../resources/todotasklist.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
