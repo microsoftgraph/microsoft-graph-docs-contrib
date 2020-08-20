@@ -88,14 +88,14 @@ Content-type: application/json
             "id": "Facebook-OAuth",
             "type": "Facebook",
             "name": "Facebook",
-            "clientId": "clientIdFromFacebook"
+            "clientId": "clientIdFromFacebook",
             "clientSecret": "*****"
         },
         {
             "id": "Google-OAuth",
             "type": "Google",
             "name": "Google",
-            "clientId": "clientIdFromGoogle"
+            "clientId": "clientIdFromGoogle",
             "clientSecret": "*****"
         }
     ]

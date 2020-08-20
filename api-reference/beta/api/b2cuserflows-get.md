@@ -38,6 +38,12 @@ The work or school account needs to belong to one of the following roles:
 GET /identity/b2cUserFlows/{id}
 ```
 
+## Optional query parameters
+
+You can use `$expand` to expand specific user flow properties that are not expanded by default.
+
+For more information on OData query options, see [OData Query Parameters](https://docs.microsoft.com/graph/query-parameters).
+
 ## Request headers
 
 |Name|Description|
@@ -88,3 +94,14 @@ Content-type: application/json
     "userFlowTypeVersion": 1
 }
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get b2cUserFlow",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: get_b2cUserFlows/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
+  ]
+}-->

@@ -22,7 +22,8 @@ User flows are used to enable a [self-service sign up](https://docs.microsoft.co
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List user flows](../api/b2xuserflows-list.md)|b2xUserFlow collection|Retrieve all user flows.|
-|[Get user flow](../api/b2xuserflows-get.md) |b2xUserFlow|Retrieve properties of a user flow.|
+|[Get user flow](../api/b2xuserflows-get.md)|b2xUserFlow|Retrieve properties of a user flow.|
+|[Create user flow](../api/b2xuserflow-post-b2xuserflows.md)|b2xUserFlow|Create a new user flow.|
 |[Delete user flow](../api/b2xuserflows-delete.md)|None|Delete a user flow.|
 |[List identity providers](../api/b2xuserflows-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a user flow.|
 |[Add identity provider](../api/b2xuserflows-update-identityprovider.md)|None|Add an identity provider to a user flow.|

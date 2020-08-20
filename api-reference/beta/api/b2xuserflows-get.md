@@ -88,3 +88,14 @@ Content-type: application/json
     "userFlowTypeVersion": 1
 }
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get b2xUserFlow",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: get_b2xUserFlows/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
+  ]
+}-->

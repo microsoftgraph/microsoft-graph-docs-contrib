@@ -27,8 +27,9 @@ To help you set up the most common identity tasks for your applications, Azure A
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List user flows](../api/b2cuserflows-list.md)|b2xUserFlow collection|Retrieve all user flows.|
-|[Get user flow](../api/b2cuserflows-get.md) |b2xUserFlow|Retrieve properties of a user flow.|
+|[List user flows](../api/b2cuserflows-list.md)|b2cUserFlow collection|Retrieve all user flows.|
+|[Get user flow](../api/b2cuserflows-get.md)|b2cUserFlow|Retrieve properties of a user flow.|
+|[Create user flow](../api/b2cuserflow-post-b2cuserflows.md)|b2cUserFlow|Create a new user flow.|
 |[Delete user flow](../api/b2cuserflows-delete.md)|None|Delete a user flow.|
 |[List identity providers](../api/b2cuserflows-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a user flow.|
 |[Add identity provider](../api/b2cuserflows-update-identityprovider.md)|None|Add an identity provider to a user flow.|
@@ -55,6 +56,8 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.b2cIdentityUserFlow"
+  "optionalProperties": [],
+  "keyProperty": "id"
 } -->
 
 ```json

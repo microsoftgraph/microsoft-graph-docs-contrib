@@ -106,3 +106,14 @@ Content-type: application/json
     "userFlowTypeVersion": 3
 }
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Create b2CUserFlow",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: create_b2cUserFlow_from_b2cUserFlows/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '3'"
+  ]
+}-->

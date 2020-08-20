@@ -177,3 +177,14 @@ Content-type: application/json
    ]
 }
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "List b2xUserFlows",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: list_b2xUserFlows/container/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
+  ]
+}-->
