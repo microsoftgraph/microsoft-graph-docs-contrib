@@ -81,7 +81,12 @@ Content-Type: application/json
 Content-length: 608
 
 {
-  "title":"A new task"
+  "title":"A new task",
+  "linkedResources": [{
+			"webUrl": "http://microsoft.com",
+			"applicationName": "Microsoft",
+			"displayName": "Microsoft"
+		}]
 }
 ```
 
@@ -110,7 +115,13 @@ Content-Type: application/json
     "body": {
         "content": "",
         "contentType": "text"
-    }
+    },
+    "linkedResources": [{
+      "id": "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9",
+			"webUrl": "http://microsoft.com",
+			"applicationName": "Microsoft",
+			"displayName": "Microsoft"
+		}]
 }
 ```
 
