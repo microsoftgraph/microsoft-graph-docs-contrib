@@ -42,7 +42,7 @@ import { Component, OnInit } from '@angular/core';
 import { Providers, MsalProvider } from '@microsoft/mgt';
 
 @Component({
-    selector: 'app-root,
+    selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css']
 })
@@ -80,15 +80,15 @@ All Microsoft Graph Toolkit components support [custom templates](../templates.m
 </mgt-agenda>
 ```
 
-In Angular, however, double braces are used for databinding and the Angular compiler will throw an error if you try to use the double brace syntax.
+In Angular, however, double braces are used for data binding and the Angular compiler will throw an error if you try to use the double brace syntax.
 
 You can avoid these errors by changing the default characters used by the Toolkit to something other than double braces by using the `TemplateHelper`. It is best to do this in your top-level App component so that it applies globally.
 
-Import the TemplateHelper and use `.setBindingSyntax()` to set your custom binding syntax.
+Import the `TemplateHelper` and use the `.setBindingSyntax()` method to set your custom binding syntax.
 
 ```ts
 import { Component, OnInit } from '@angular/core';
-import { Providers, MsalProvider, TemplateHelper } from '@microsoft/mgt;
+import { Providers, MsalProvider, TemplateHelper } from '@microsoft/mgt';
 
 @Component({
     selector: 'app-root',

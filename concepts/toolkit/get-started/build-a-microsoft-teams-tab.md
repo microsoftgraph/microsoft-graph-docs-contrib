@@ -26,15 +26,16 @@ The easiest way to create a new Teams app is to use the [Microsoft Teams Toolkit
 In order to test your application later, you will need a to host your application over a public facing URL using HTTPS. Install [ngrok](https://ngrok.com/download) and create a tunnel from the Internet to localhost:3000 with the following command:
 
 ```bash
-ngrok http https://localhost:3000
+ngrok http http://localhost:3000
 ```
+Update Development.env
 
 ## Add Microsoft Graph Toolkit
 
-You can use Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm package. To use the Toolkit, you will also need the [Microsoft Teams SDK](https://docs.microsoft.com/en-us/javascript/api/overview/msteams-client?view=msteams-client-js-latest).
+You can use Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm package. To use the Toolkit, you will also need the [Microsoft Teams SDK](https://docs.microsoft.com/en-us/javascript/api/overview/msteams-client?view=msteams-client-js-latest) in your project.
 
 ### Use via mgt-loader
-To use the Toolkit via mgt-loader, add the following references to your `public/index.html` file:
+To use the Toolkit and the Teams SDK via the loaders, add the following references to `public/index.html`:
 
 ```html
 <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
@@ -92,11 +93,11 @@ In order to get a client ID, you need to [register your application](https://doc
 In order to allow users to sign in, you need to provide a URL that the Teams app will open in a popup to  follow the authentication flow. The URL needs to be in your domain, and all this page needs to do is call the `TeamsProvider.handleAuth()` method.
 
 ### Create using HTML
-You can do this in your HTML by adding a new `auth.html` file in the `public` folder (or whichever folder your `index.html` is in) and adding the following code: 
+You can do this in your HTML by adding a new `auth.html` file in the `public` folder (should be at the same level as `index.html`) and adding the following code: 
 
 ```html
 <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js">
+<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
 
 <script>
   mgt.TeamsProvider.handleAuth();
@@ -104,7 +105,7 @@ You can do this in your HTML by adding a new `auth.html` file in the `public` fo
 ```
 
 ### Create using modules
-If you want use a module, add a new file called `Auth.js` to the `components` folder (or whichever folder your `App.js` is in) and add the following code:
+If you want use a module instead, add a new file called `Auth.js` to the `components` folder (or whichever folder your `App.js` is in) and add the following code:
 
 ```js
 import React from 'react';
@@ -121,6 +122,28 @@ function Auth() {
 
 export default Auth;
 ```
+Go to your `App.js` file and import the Auth module you just created at the top of the file:
+```js
+import Auth from "./Auth";
+```
+
+Then, add the your auth component to the router:
+
+```js
+<Router>
+    <Route exact path="/tab" component={Tab} />
+    <Route path="/auth" component={Auth} />
+</Router>
+```
+
+## Add components
+
+Now, you're ready to add any of the Microsoft Graph Toolkit components to your tab. 
+
+## Test your application
+
+To test your application, you need to import your application to Teams.
+
 
 
 
