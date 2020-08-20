@@ -1,5 +1,5 @@
 ---
-title: "List identityProviders in a b2cUserFlow"
+title: "List all identityProviders in a b2cUserFlow"
 description: "List all identityProviders in a b2cUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List identityProviders in a b2cUserFlow
+# List all identityProviders in a b2cUserFlow
 
 Namespace: microsoft.graph
 
@@ -60,7 +60,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_b2cUserFlow/identityProviders"
+  "name": "get_b2cUserFlow_list_identityProviders"
 }
 -->
 
@@ -75,7 +75,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.IdentityProviders"
+  "@odata.type": "microsoft.graph.IdentityProvider"
 } -->
 
 ```http

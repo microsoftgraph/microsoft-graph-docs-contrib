@@ -38,6 +38,12 @@ The work or school account needs to belong to one of the following roles:
 GET /identity/b2xUserFlows
 ```
 
+## Optional query parameters
+
+You can use `$expand` to expand specific user flow properties that are not expanded by default.
+
+For more information on OData query options, see [OData Query Parameters](https://docs.microsoft.com/graph/query-parameters).
+
 ## Request headers
 
 |Name|Description|
@@ -62,7 +68,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_b2xUserFlows"
+  "name": "list_b2xUserFlows"
 }
 -->
 
@@ -79,7 +85,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.b2xUserFlows",
+  "@odata.type": "microsoft.graph.b2xIdentityUserFlow",
   "isCollection": true
 } -->
 
@@ -113,7 +119,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_b2xUserFlows"
+  "name": "list_b2xUserFlows_expand"
 }
 -->
 
@@ -130,7 +136,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.b2xUserFlows",
+  "@odata.type": "microsoft.graph.b2xIdentityUserFlow",
   "isCollection": true
 } -->
 
@@ -139,7 +145,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2xUserFlows",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2xUserFlows(identityProviders)",
     "value": [
       {
           "id": "B2X_1_PartnerSignUp",

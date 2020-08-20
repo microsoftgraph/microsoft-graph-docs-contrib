@@ -7,7 +7,7 @@ author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List identityProviders in a b2xUserFlow
+# List all identityProviders in a b2xUserFlow
 
 Namespace: microsoft.graph
 
@@ -60,7 +60,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_b2xUserFlow/identityProviders"
+  "name": "get_b2xUserFlow_list_identityProviders"
 }
 -->
 
@@ -75,7 +75,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.IdentityProviders"
+  "@odata.type": "microsoft.graph.IdentityProvider"
 } -->
 
 ```http

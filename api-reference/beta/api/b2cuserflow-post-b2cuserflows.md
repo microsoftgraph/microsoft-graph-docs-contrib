@@ -57,7 +57,7 @@ In the request body, provide a JSON representation of a [b2cUserFlow](../resourc
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [b2xUserFlow](../resources/b2xuserflows.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details. As part of creation, the prefix of `B2C_1` will be added to the ID, so a location header is returned to point to how to get the details of the object you created.
+If successful, this method returns a `201 Created` response code and a Location header with a URI to the [b2cUserFlow](../resources/b2cuserflows.md) object created for this request, with the `B2C_1` prefix added to the name. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
 
@@ -67,7 +67,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_b2xuserflow_from_b2xuserflows"
+  "name": "create_b2cuserflow_from_b2cuserflows"
 }
 -->
 
@@ -92,12 +92,12 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.B2CUserFlows"
+  "@odata.type": "microsoft.graph.b2cIdentityUserFlow"
 } -->
 
 ```http
 HTTP/1.1 201 Created
-Location /identity/b2cUserFlows/B2C_1_Customer
+Location: https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer
 Content-type: application/json
 
 {

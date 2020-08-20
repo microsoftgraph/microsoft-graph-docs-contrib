@@ -1,6 +1,6 @@
 ---
-title: "Add identityProviders to a b2xUserFlow"
-description: "Update the identityProviders in a b2xUserFlow."
+title: "Add identityProvider to a b2xUserFlow"
+description: "Add identityProvider in a b2xUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"

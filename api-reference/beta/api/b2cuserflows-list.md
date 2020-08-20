@@ -62,7 +62,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_b2cUserFlows"
+  "name": "list_b2cUserFlows"
 }
 -->
 
@@ -79,7 +79,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.b2cUserFlows",
+  "@odata.type": "microsoft.graph.b2cIdentityUserFlow",
   "isCollection": true
 } -->
 
@@ -113,7 +113,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_b2cUserFlows"
+  "name": "list_b2cUserFlows_expand"
 }
 -->
 
@@ -130,7 +130,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.b2cUserFlows",
+  "@odata.type": "microsoft.graph.b2cIdentityUserFlow",
   "isCollection": true
 } -->
 

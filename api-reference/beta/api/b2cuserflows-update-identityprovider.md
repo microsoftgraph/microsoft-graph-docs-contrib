@@ -1,19 +1,19 @@
 ---
-title: "Add identityProviders to a b2cUserFlow"
-description: "Update the identityProviders in a b2cUserFlow."
+title: "Add identityProvider to a b2cUserFlow"
+description: "Add identityProvider to a b2cUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Add identityProviders to a b2cUserFlow
+# Add identityProvider to a b2cUserFlow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the identity providers in a [b2cUserFlow](../resources/b2cuserflows.md) object.
+Add identity providers in a [b2cUserFlow](../resources/b2cuserflows.md) object.
 
 ## Permissions
 
