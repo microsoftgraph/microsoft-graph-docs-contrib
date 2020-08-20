@@ -100,7 +100,6 @@ Content-type: application/json
           "id": "B2X_1_PartnerSignUp",
           "userFlowType": "signUpOrSignIn",
           "userFlowTypeVersion": 1
-
       },
       {
           "id": "B2X_1_ContosoSignUp",

@@ -94,7 +94,6 @@ Content-type: application/json
           "id": "B2C_1_CustomerSignUp",
           "userFlowType": "signUp",
           "userFlowTypeVersion": 1
-
       },
       {
           "id": "B2C_1_CustomerSignIn",

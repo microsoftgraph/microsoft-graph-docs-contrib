@@ -32,9 +32,9 @@ User flows are used to enable a [self-service sign up](https://docs.microsoft.co
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|id|String|The name of the user flow. This is a required value and is immutable after it's created. The name will be prepended with the value of `B2X_1_` after creation.|
+|id|String|The name of the user flow. This is a required value and is immutable after it's created. The name will be prefixed with the value of `B2X_1_` after creation.|
 |userFlowType|String|The type of user flow. For self-service sign up user flows, the value can only be `signUpOrSignIn` and cannot be modified after creation.|
-|userFlowVersion|float|The version of the user flow. For B2X user flows, the version is always `1`.|
+|userFlowVersion|Single|The version of the user flow. For B2X user flows, the version is always `1`.|
 
 ## Relationships
 
