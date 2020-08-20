@@ -59,17 +59,17 @@ where files are shared, and where tabs are added.
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Metadata for the location where the channel's files are stored.|
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. |
 
-## Instance Attributes
+## Instance attributes
 
 Instance attributes are properties with special behaviors. These properties are temporary and either a) define behavior the service should perform or b) provide short-term property values, like a download URL for an item that expires.
 
 | Property name| Type   | Description
 |:-----------------------|:-------|:-------------------------|
-|@microsoft.graph.channelCreationMode|string|Indicates the channel is in migration state and is currently being used for migration purposes. It accepts one value: `migration`.|
+|@microsoft.graph.channelCreationMode|string|Indicates that the channel is in migration state and is currently being used for migration purposes. It accepts one value: `migration`.|
 
 > **Note**: `ChannelCreationMode`  is an enum that takes the value `migration`.
 
-See* [Request (create channel in migration state)](https://github.com/MicrosoftDocs/msteams-docs/blob/add-import-messages/msteams-platform/graph-api/import-messages/import-external-messages-to-teams.md#request-create-a-channel-in-migration-state) for a POST request example.
+For a POST request example, see [Request (create channel in migration state)](https://github.com/MicrosoftDocs/msteams-docs/blob/add-import-messages/msteams-platform/graph-api/import-messages/import-external-messages-to-teams.md#request-create-a-channel-in-migration-state).
 
 ## JSON representation
 
