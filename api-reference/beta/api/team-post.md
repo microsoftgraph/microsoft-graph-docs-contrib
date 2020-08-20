@@ -1,5 +1,5 @@
 ---
-title: "Create a team"
+title: "Create team"
 description: "Create a new team."
 author: "nkramer"
 localization_priority: Priority
@@ -39,7 +39,7 @@ POST /teams
 | Header        | Value                     |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
-| Content-Type  | application/json          |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
