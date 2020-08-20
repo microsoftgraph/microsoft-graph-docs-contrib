@@ -3,7 +3,7 @@ title: "List Todo tasks"
 description: "Get the todoTask resources from the tasks navigation property."
 author: "avijityadav"
 localization_priority: Normal
-ms.prod: "Microsoft To Do"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 

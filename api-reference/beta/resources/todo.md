@@ -3,7 +3,7 @@ title: "todo resource type"
 description: "Represents the To Do services available to a user."
 author: "avijityadav"
 localization_priority: Normal
-ms.prod: "Microsoft To Do"
+ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 

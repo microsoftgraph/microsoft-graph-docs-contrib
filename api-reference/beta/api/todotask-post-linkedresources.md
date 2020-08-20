@@ -3,7 +3,7 @@ title: "Create linkedResources"
 description: "Create a new linkedResources object."
 author: "avijityadav"
 localization_priority: Normal
-ms.prod: "Microsoft To Do"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 

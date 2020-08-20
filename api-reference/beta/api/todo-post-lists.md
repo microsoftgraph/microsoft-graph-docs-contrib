@@ -3,7 +3,7 @@ title: "Create todoTaskList"
 description: "Create a new lists object."
 author: "avijityadav"
 localization_priority: Normal
-ms.prod: "Microsoft To Do"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
