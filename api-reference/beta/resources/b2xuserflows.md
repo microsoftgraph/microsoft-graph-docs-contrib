@@ -49,7 +49,9 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.b2xIdentityUserFlow"
+  "@odata.type": "microsoft.graph.b2xIdentityUserFlow",
+  "optionalProperties": [],
+  "keyProperty": "id"
 } -->
 
 ```json

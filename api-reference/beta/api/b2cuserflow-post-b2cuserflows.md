@@ -53,15 +53,18 @@ In the request body, provide a JSON representation of a [b2cUserFlow](../resourc
 |:---------------|:--------|:----------|
 |id|String|The name of the user flow. The name will be pre-pended with `B2C_1` after creation.|
 |userFlowType|String|The type of user flow you are creating. The supported values for **userFlowType** are:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
-|userFlowTypeVersion|Float|The version of the user flow. This value will always be 1.|
+|userFlowTypeVersion|Float|The version of the user flow.|
+|identityProviders|[identityProvider](../resources/identityprovider.md)|Optional. The identity providers you want to include in the user flow.|
 
 ## Response
 
 If successful, this method returns a `201 Created` response code and a Location header with a URI to the [b2cUserFlow](../resources/b2cuserflows.md) object created for this request, with the `B2C_1` prefix added to the name. If unsuccessful, a `4xx` error will be returned with specific details.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Create a user flow with the default values
+
+#### Request
 
 The following is an example of the request.
 
@@ -83,7 +86,62 @@ Content-length: 154
 }
 ```
 
-### Response
+#### Response
+
+The following is an example of the response.
+
+**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.b2cIdentityUserFlow"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer
+Content-type: application/json
+
+{
+    "id": "B2C_1_Customer",
+    "userFlowType": "signUpOrSignIn",
+    "userFlowTypeVersion": 3
+}
+```
+
+### Example 2: Create a user flow with the default values and an identity provider
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_b2cuserflow_from_b2cuserflows_identityProvider"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/identity/b2cUserFlows
+Content-type: application/json
+Content-length: 154
+
+{
+    "id": "Customer",
+    "userFlowType": "signUpOrSignIn",
+    "userFlowTypeVersion": 3
+    "identityProviders": [
+        {
+            "id": "Facebook-OAuth",
+            "type": "Facebook",
+            "Name": "Facebook"
+        }
+    ]
+}
+```
+
+#### Response
 
 The following is an example of the response.
 
