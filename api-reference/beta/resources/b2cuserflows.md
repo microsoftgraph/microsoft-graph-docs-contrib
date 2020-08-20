@@ -54,7 +54,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.B2XUserFlow"
+  "@odata.type": "microsoft.graph.b2cIdentityUserFlow"
 } -->
 
 ```json
@@ -62,6 +62,6 @@ The following is a JSON representation of the resource.
     "id": "String (identifier)",
     "userFlowType": "String",
     "userFlowTypeVersion": "Float",
-    "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}]
+    "identityProviders": [{"@odata.type": "microsoft.graph.IdentityProvider"}]
 }
 ```
