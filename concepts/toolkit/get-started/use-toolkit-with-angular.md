@@ -35,7 +35,7 @@ npm install @microsoft/mgt
 
 The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers.md). The provider you should use depends on the context in which your solution will be used.
 
-The example below shows how to add the [MSAL Provider](../providers/msal.md). but you can follow the same model with any of the other providers. Import the provider and set it to initialize when the application initializes. Replace `<YOUR-CLIENT-ID>` with the client ID for your application.
+The example below shows how to add the [MSAL Provider](../providers/msal.md), but you can follow the same model with any of the providers. Import the provider and set it to initialize when the application initializes. Replace `<YOUR-CLIENT-ID>` with the client ID for your application.
 
 ```ts
 import { Component, OnInit } from '@angular/core';
@@ -114,8 +114,8 @@ Now, you can use your custom binding syntax to define custom templates.
 </mgt-agenda>
 ```
 
-## Next Steps
-
-
-
-
+## Next steps
+- Check out this step-by-step tutorial on [building an Angular app](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-14-using-microsoft-graph-toolkit-with-angular/)
+- Try out the components in the [playground](https://mgt.dev)
+- Ask a question on [StackOverflow](https:aka.ms/mgt-question)
+- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt)

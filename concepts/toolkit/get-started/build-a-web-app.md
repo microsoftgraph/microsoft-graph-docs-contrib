@@ -124,6 +124,7 @@ If you're just getting started and want to play around, you can use [Live Server
 > **NOTE:** Make sure the **redirect URI** in your app registration is set to the localhost port your application is hosted on. Go to your app registration in the [Azure portal](https://portal.azure.com), click **Authentication** under manage, and add the correct **redirect URI**.
 
 ## Next Steps
-- Ask a question on StackOverflow
-- Report bugs or leave a feature request on GitHub
-- 
+- Check out this step-by-step tutorial on [building a simple web app](https://developer.microsoft.com/microsoft-365/blogs/a-lap-around-microsoft-graph-toolkit-day-2-zero-to-hero/)
+- Try out the components in the [playground](https://mgt.dev)
+- Ask a question on [StackOverflow](https:aka.ms/mgt-question)
+- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt)

@@ -144,6 +144,12 @@ Now, you're ready to add any of the Microsoft Graph Toolkit components to your t
 
 To test your application, you need to import your application to Teams.
 
+## Next Steps
+- Check out this step-by-step tutorial on [building a Teams tab](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-10-microsoft-graph-toolkit-teams-provider/)
+- Try out the components in the [playground](https://mgt.dev)
+- Ask a question on [StackOverflow](https:aka.ms/mgt-question)
+- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt)
+
 
 
 

@@ -55,7 +55,7 @@ declare global {
   }
 }
 ```
-You can then use it in your tsx as <mgt-login></mgt-login>.
+You can then use it in your tsx as `<mgt-login></mgt-login>`.
 
 ## Using mgt-react
 
@@ -144,6 +144,8 @@ const App = (props) => {
 
 The `template` prop allows you to specify which template to overwrite. In this case, the `MyEvent` component will be repeated for every event, and the `event` object will be passed as part of the `dataContext` prop.
 
-
-
-
+## Next steps
+- Check out this step-by-step tutorial on [building a React app](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-13-using-microsoft-graph-toolkit-with-react/)
+- Try out the components in the [playground](https://mgt.dev)
+- Ask a question on [StackOverflow](https:aka.ms/mgt-question)
+- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt)

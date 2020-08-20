@@ -188,8 +188,10 @@ gulp serve
 Your hosted workbench will automatically open in your browser. Add your web part to the page and you should see your web part with the Microsoft Graph Toolkit components in action! As long as the gulp serve command is still running in your console, you can continue to make edits to your code and then just refresh your browser to see your changes.
 
 ## Next Steps
-- Ask a question on StackOverflow
-- 
+- Check out this step-by-step tutorial on [building a SharePoint web part](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-9-microsoft-graph-toolkit-sharepoint-provider/)
+- Try out the components in the [playground](https://mgt.dev)
+- Ask a question on [StackOverflow](https:aka.ms/mgt-question)
+- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt)
 
 
 
