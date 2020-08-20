@@ -21,7 +21,7 @@ Select-MgProfile -Name "beta"
 
 The PowerShell SDK supports two types of authentication: delegated access, and app-only access. In this guide, you will use delegated access to login as a user, grant consent to the SDK to act on your behalf, and call the Microsoft Graph.
 
-For details on using app-only access for unattended scenarios, see [something here]().
+For details on using app-only access for unattended scenarios, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
 
 ### Determine required permission scopes
 
@@ -127,3 +127,4 @@ New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Conten
 ## Next steps
 
 - [Learn how to navigate the SDK](navigating.md)
+- [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md)
