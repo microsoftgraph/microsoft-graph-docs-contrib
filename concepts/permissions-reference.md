@@ -1591,16 +1591,6 @@ Security permissions are valid only on work or school accounts.
 | _ShortNotes.Read.All_ | Read all users' short notes | Allows the app to read all the short notes without a signed-in user. | Yes | 
 | _ShortNotes.ReadWrite.All_ | Read, create, edit, and delete all users' short notes | Allows the app to read, create, edit, and delete all the short notes without a signed-in user. | Yes |
 
-### Example usage
-
-#### Delegated
-
-* _ShortNotes.Read_: List a user's short notes (`GET /v1.0/me/shortnotes`)
-
-#### Application
-
-* _ShortNotes.Read.All_: List all user's short notes (`GET /v1.0/me/shortnotes`)
-
 ---
 
 ## Sites permissions
