@@ -11,7 +11,10 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can use the Microsoft Graph API to create an app that connects with tasks across Microsoft To Do clients. You can build a variety of experiences with tasks, from simple task syncing to complex task completion scenarios. 
+You can use the Microsoft Graph To Do API to create an app that connects with tasks across Microsoft To Do clients. You can build a variety of experiences with tasks.
+* Create tasks from your app’s workflow (tasks from email, notifications, etc.) and save them into To Do. Don’t forget to use the linkedResource entity to store the link back to your app.
+* Sync your app’s existing tasks with To Do and create a single task view for better task prioritization and manageability.
+* Manage To Do tasks in your custom business application.
 
 Currently, the API supports only permissions delegated by the signed-in user.
  
@@ -29,14 +32,14 @@ GET /me/todo/lists
 
 ## Task
 
-A [todoTask](./todotask.md) represents a task in a list and tracks a work item. To get your tasks from a task list, make the following HTTP request:
+A [todoTask](./todotask.md) represents a task, i.e. a piece of work or personal item that can be tracked and completed. To get your tasks from a task list, make the following HTTP request:
 ``` http
 GET /me/todo/lists/{todoTaskListId}/tasks
 ```
 
 ## Linked resource
 
-A [linkedResource](linkedresource.md) represents the source of a task and helps a user complete their task. To get a linked resource from a task, make the following HTTP request:
+A [linkedResource](linkedresource.md) represents any item from a partner application related to the task, e.g. an item like email from where a task was created. You can use it to store information and the link back to the related item in your app. To get a linked resource from a task, make the following HTTP request:
 ``` http
 GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/linkedresources/{linkedResourceId}
 ```

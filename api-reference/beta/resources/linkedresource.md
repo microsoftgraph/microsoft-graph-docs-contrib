@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the source of the [todoTask](./todotask.md) such as an application or a webURL.
+Represents any item from a partner application related to the [todoTask](./todotask.md), e.g. an item like email from where a task was created. You can use it to store information and the link back to the related item in your app.
 
 ## Methods
 |Method|Return type|Description|
