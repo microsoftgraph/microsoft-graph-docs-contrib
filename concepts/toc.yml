@@ -517,9 +517,9 @@ items:
                 href: toolkit/get-started/build-a-sharepoint-web-part.md
               - name: Build a Microsoft Teams tab
                 href: toolkit/get-started/build-a-microsoft-teams-tab.md
-              - name: Use Toolkit with React
+              - name: Use the Toolkit with React
                 href: toolkit/get-started/use-toolkit-with-react.md
-              - name: Use Toolkit with Angular
+              - name: Use the Toolkit with Angular
                 href: toolkit/get-started/use-toolkit-with-angular.md
           - name: Components
             items:
