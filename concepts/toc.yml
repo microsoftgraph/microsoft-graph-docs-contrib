@@ -504,6 +504,16 @@ items:
             href: sdks/batch-requests.md
           - name: Upload large files
             href: sdks/large-file-upload.md
+      - name: Use PowerShell
+        items:
+          - name: Installation
+            href: powershell/installation.md
+          - name: Get started
+            href: powershell/get-started.md
+          - name: Navigating the SDK
+            href: powershell/navigating.md
+          - name: App-only authentication
+            href: powershell/app-only.md
       - name: Use the toolkit
         items:
           - name: Toolkit overview
