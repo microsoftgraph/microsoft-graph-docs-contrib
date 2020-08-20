@@ -45,7 +45,7 @@ A resource directory has one or more resources to share. In this step, you creat
 Sign in to Microsoft Graph Explorer (recommended), Postman, or any other API client you use.
 
 1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator or App Admin credentials.
+2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account.
 3. Upon successful sign-in, you'll see the user account details in the left-hand pane.
 
 This tutorial assumes that you are calling the Microsoft Graph APIs using an account with the global administrator role.
@@ -105,7 +105,7 @@ Content-type: application/json
 
 ### Create a group
 
-Create a group named **Marketing resources** that is the target resource for entitlement management. Record the value of the **id** property that is returned to use later in this tutorial. 
+In this tutorial, you create a group named **Marketing resources** that is the target resource for entitlement management. You can use an existing group if you already have one. Record the value of the **id** property that is returned to use later in this tutorial. 
 
 #### Request
 
@@ -144,13 +144,13 @@ Content-type: application/json
 }
 ```
 
-## Step 2: Create an access package
+## Step 2: Add resources to a catalog and create an access package
 
-An *access package* is a bundle of resources that a team or project needs and is governed with policies. Access packages are defined in containers called catalogs. In this step, you create a **Marketing Campaign** access package in the General catalog.
+An *access package* is a bundle of resources that a team or project needs and is governed with policies. Access packages are defined in containers called catalogs. Catalogs can reference resources, such as groups, apps and sites, that are used in the access package. In this step, you create a **Marketing Campaign** access package in the General catalog. If you have a different catalog, use its name in the next section.
 
 ### Get the catalog identifier
 
-To add resources to the General catalog, you must first get the identifier of it. Record the value of the **id** property that is returned to use later in this tutorial.
+To add resources to the catalog, you must first get the identifier of it. If you are using the General catalog, run the following request to get its identifier. If you are using a different calatlog, change the filter value in the request to the name of your catalog. Record the value of the **id** property that is returned to use later in this tutorial.
 
 #### Request
 
@@ -180,9 +180,15 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 }
 ```
 
+The response should have a single value, the catalog whose name you provided in the request. If there are no values returned, check that the name of the catalog is correct before you proceed.
+
 ### Add the group to the catalog
 
-Use the **id** of the General catalog for the value of the **catalogId** property to add the group that you created to it. Provide the **id** of the group that you created for the value of the **originId** property.
+To add the group that you created to the catalog, provide the following property values:
+- **catalogId** - the **id** of the catalog that you are using. 
+- **originId** - the **id** of the group that you created.
+- **displayName** - the name of the group.
+- **description** - the description of the group.
 
 #### Request
 
@@ -197,7 +203,6 @@ Content-type: application/json
   "accessPackageResource": {
     "displayName": "Marketing resources",
     "description": "Marketing group",
-    "url": "https://contoso.sharepoint.com/sites/Marketing",
     "resourceType": "AadGroup",
     "originId": "a468eaea-ed6c-4290-98d2-a96bb1cb4209",
     "originSystem": "AadGroup"
@@ -224,7 +229,7 @@ Content-type: application/json
 
 ### Get catalog resources
 
-In later steps in this tutorial, you need the **id** that was assigned to the group resource in the catalog. This identifier is different than the identifier of the group.
+In later steps in this tutorial, you need the **id** that was assigned to the group resource in the catalog. This identifier, which represents the group as a resource in the catalog, is different than the identifier of the group itself in Microsoft Graph. This is because a catalog can have resources which aren't represented in Microsoft Graph.
 
 #### Request
 
@@ -256,7 +261,9 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ### Get resources roles
 
-The group that you added needs to be assigned a role for the access package. Use the **id** of the catalog and the **id** of the group that you recorded to get the **originId** of the Member resource role. Record the value of the **originId** property to use later in this tutorial.
+The access package assigns users to the roles of a resource. The typical role of group is the member role. Other resources, such as SharePoint Online sites and applications, may have many roles. You'll need the Member resource role to use when creating the access package resource role later in this tutorial. 
+
+Use the **id** of the catalog and the **id** of the group that you recorded to get the **originId** of the Member resource role. Record the value of the **originId** property to use later in this tutorial.
 
 #### Request
 
@@ -296,9 +303,11 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 }
 ```
 
+If successful, a single value is returned, which represents the Member role of that group. If no roles are returned, check the **id** values of the catalog and the access package resource.
+
 ### Create the access package
 
-You use the **id** of the General catalog that you recorded earlier to create the access package. Record the **id** of the access package to use later in this tutorial.
+At this point, you have a catalog with a group resource, and you know that you'll use the resource role of group member in the access package. The next step is to create the access package, and then after you have the access package, you can add the resource role to the access package, and create a policy for how users can request access to that resource role. You use the **id** of the General catalog that you recorded earlier to create the access package. Record the **id** of the access package to use later in this tutorial.
 
 #### Request
 
@@ -322,8 +331,8 @@ Content-type: application/json
     {
       "id": "cf54c6ca-d717-49bc-babe-d140d035dfdd",
       "catalogId": "ede67938-cda7-4127-a9ca-7c7bf86a19b7",
-      "displayName": "Sales and Marketing",
-      "description": "Access for Sales and Marketing users and guests",
+      "displayName": "Marketing Campaign",
+      "description": "Access to resources for the campaign",
       "isHidden": false,
       "isRoleScopesVisible": false,
       "createdBy": "admin@contoso.onmicrosoft.com",
@@ -337,7 +346,7 @@ Content-type: application/json
 
 ### Add a resource role to the access package
 
-Add the Member role to the access package using its **id**. Provide the value of the **originId** for the role that you previously recorded.
+Add the group resource's Member role to the access package. Provide the **id** of the access package in the POST request, and the **originId** of the group resource's Member role.
 
 #### Request
 
@@ -370,6 +379,8 @@ Content-type: application/json
   "modifiedDateTime": "2020-06-29T19:32:19.3546568Z"
 }
 ```
+
+The access package now has one resource role, which is group membership, this role is assigned to any user who has the access package.
 
 ### Create an access package policy
 
@@ -675,7 +686,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 No Content - 204
 ```
 
-### Delete the user accounts
+### Delete the user account
 
 Delete the **Requestor1** user account.
 
@@ -683,20 +694,6 @@ Delete the **Requestor1** user account.
 
 ```http
 DELETE https://graph.microsoft.com/beta/users/ce02eca8-752b-4ecf-ac29-aa9bccd87606
-```
-
-#### Response
-
-```http
-No Content - 204
-```
-
-Delete the **Admin1** administrator account.
-
-#### Request
-
-```http
-DELETE https://graph.microsoft.com/beta/users/792006a5-1d63-4d63-81c7-ec0808181486
 ```
 
 #### Response
