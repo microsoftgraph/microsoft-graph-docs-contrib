@@ -54,7 +54,7 @@ In the request body, provide a JSON representation of a [b2xUserFlow](../resourc
 |id|String|The name of the user flow. The name will be pre-pended with `B2X_1` after creation.|
 |userFlowType|String|The type of user flow you are creating. This value will always be `signUpOrSignIn`.|
 |userFlowTypeVersion|Float|The version of the user flow. This value will always be 1.|
-|identityProviders|[identityProvider](../resources/identityprovider.md)|Optional. The identity providers you want to include in the user flow.|
+|identityProviders|[IdentityProvider](../resources/identityprovider.md) collection|Optional. The identity providers you want to include in the user flow.|
 
 ## Response
 

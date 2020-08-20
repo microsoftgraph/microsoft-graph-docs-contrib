@@ -54,7 +54,7 @@ In the request body, provide a JSON representation of a [b2cUserFlow](../resourc
 |id|String|The name of the user flow. The name will be pre-pended with `B2C_1` after creation.|
 |userFlowType|String|The type of user flow you are creating. The supported values for **userFlowType** are:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
 |userFlowTypeVersion|Float|The version of the user flow.|
-|identityProviders|[identityProvider](../resources/identityprovider.md)|Optional. The identity providers you want to include in the user flow.|
+|identityProviders|[IdentityProvider](../resources/identityprovider.md) collection|Optional. The identity providers you want to include in the user flow.|
 
 ## Response
 
@@ -130,7 +130,7 @@ Content-length: 154
 {
     "id": "Customer",
     "userFlowType": "signUpOrSignIn",
-    "userFlowTypeVersion": 3
+    "userFlowTypeVersion": 3,
     "identityProviders": [
         {
             "id": "Facebook-OAuth",

@@ -47,7 +47,7 @@ To help you set up the most common identity tasks for your applications, Azure A
 
 | Relationship       | Type  |Description|
 |:---------------|:--------|:----------|
-|identityProviders|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
+|identityProviders|[IdentityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
 
 ## JSON representation
 
@@ -55,7 +55,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.b2cIdentityUserFlow"
+  "@odata.type": "microsoft.graph.b2cIdentityUserFlow",
   "optionalProperties": [],
   "keyProperty": "id"
 } -->
