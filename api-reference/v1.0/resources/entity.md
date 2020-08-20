@@ -2,8 +2,8 @@
 title: "entity resource type"
 description: ""
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "MSGraphDocsVteam"
+ms.prod: "keylimesoda"
 doc_type: resourcePageType
 ---
 
