@@ -47,13 +47,13 @@ POST /identity/b2cUserFlows
 
 ## Request body
 
-In the request body, provide a JSON representation of a [b2cUserFlow](../resources/b2cuserflows.md). All the properties listed in the following table are required.
+In the request body, provide a JSON representation of a [b2cUserFlow](../resources/b2cuserflows.md).
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|id|String|The name of the user flow. The name will be pre-pended with `B2C_1` after creation.|
-|userFlowType|String|The type of user flow you are creating. The supported values for **userFlowType** are:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
-|userFlowTypeVersion|Float|The version of the user flow.|
+|id|String|Required. The name of the user flow. The name will be pre-pended with `B2C_1` after creation.|
+|userFlowType|String|Required. The type of user flow you are creating. The supported values for **userFlowType** are:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
+|userFlowTypeVersion|Float|Required. The version of the user flow.|
 |identityProviders|[IdentityProvider](../resources/identityprovider.md) collection|Optional. The identity providers you want to include in the user flow.|
 
 ## Response
@@ -172,6 +172,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: create_b2cUserFlow_from_b2cUserFlows/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '3'"
+    "Error: create_b2cUserFlow_from_b2cUserFlows/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '3'",
+    "Error: create_b2cUserFlow_from_b2cUserFlows_identityProvider/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '3'"
   ]
 }-->

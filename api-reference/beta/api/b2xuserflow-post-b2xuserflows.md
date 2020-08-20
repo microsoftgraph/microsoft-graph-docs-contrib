@@ -47,13 +47,13 @@ POST /identity/b2xUserFlow
 
 ## Request body
 
-In the request body, provide a JSON representation of a [b2xUserFlow](../resources/b2xuserflows.md). All the properties listed in the following table are required.
+In the request body, provide a JSON representation of a [b2xUserFlow](../resources/b2xuserflows.md).
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|id|String|The name of the user flow. The name will be pre-pended with `B2X_1` after creation.|
-|userFlowType|String|The type of user flow you are creating. This value will always be `signUpOrSignIn`.|
-|userFlowTypeVersion|Float|The version of the user flow. This value will always be 1.|
+|id|String|Required. The name of the user flow. The name will be pre-pended with `B2X_1` after creation.|
+|userFlowType|String|Required. The type of user flow you are creating. This value will always be `signUpOrSignIn`.|
+|userFlowTypeVersion|Float|Required. The version of the user flow. This value will always be 1.|
 |identityProviders|[IdentityProvider](../resources/identityprovider.md) collection|Optional. The identity providers you want to include in the user flow.|
 
 ## Response
@@ -164,3 +164,15 @@ Content-type: application/json
     "userFlowTypeVersion": 1
 }
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Create b2xUserFlow",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: create_b2xUserFlow_from_b2xUserFlows/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
+    "Error: create_b2xUserFlow_from_b2xUserFlows_identityProvider/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
+  ]
+}-->
