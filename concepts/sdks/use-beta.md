@@ -53,6 +53,17 @@ In order to call the beta API, you must install the [Microsoft Graph Beta Java S
 
 # [Objective-C](#tab/Objective-C)
 
-TODO
+The [Microsoft Graph SDK for ObjC](https://github.com/microsoftgraph/msgraph-sdk-objc) requires you to build a URL string to the API you want to call. It provides a constant `MSGraphBaseURL` for the v1.0 endpoint. To use beta, you simply replace that with `https://graph.microsoft.com/beta`.
+
+However, the models in the [Microsoft Graph Models SDK](https://github.com/microsoftgraph/msgraph-sdk-objc-models) are generated from objects in the v1.0 API, so they may not work with beta objects.
+
+```objectivec
+// GET /me
+NSString* meUrlString = [NSString stringWithFormat:@"%@/me", "https://graph.microsoft.com/beta"];
+
+NSURL* meUrl = [[NSURL alloc] initWithString:meUrlString];
+
+NSMutableURLRequest* meRequest = [[NSMutableURLRequest alloc] initWithURL:meUrl];
+```
 
 ---
