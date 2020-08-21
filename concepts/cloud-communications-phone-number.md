@@ -57,12 +57,11 @@ Assign a virtual user license to your application instance. For details, see [Ph
 
 ### Assign a phone number to the application instance (only tenant admin)
 
-To assign the phone number to the application instance, the tenant addmin:
+To assign the phone number to the application instance, the tenant admin:
 
-1. Signs in to the Skype for Business admin center as a tenant admin
-2. Goes to **Admin center** > **Teams and Skype** > **Skype legacy admin**.
-3. Goes to **Voice** > **Phone numbers**
-4. Assigns a service phone number (+11D format) using the following cmdlet.
+1. Signs in to the Teams admin center as a tenant admin.
+2. Goes to **Teams Admin center** > **Voice** > **Phone Numbers**.
+3. Assigns a service phone number (+11D format) using the following cmdlet.
 
   `PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <user@contoso.com> -TelephoneNumber <phone_number>`
 
