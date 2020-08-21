@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
 Update the writable properties of an Outlook task folder.
 
 You cannot change the **name** property value of the default task folder, "Tasks".

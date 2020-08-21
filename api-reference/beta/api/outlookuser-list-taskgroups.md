@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
 Get all the Outlook task groups in the user's mailbox.
 
 The response always includes the default task group `My Tasks`, and any other task groups that have been created in the mailbox.

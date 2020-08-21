@@ -106,6 +106,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta and v1.0|Added **AppCatalog.Submit** delegated permission to:<br><ul><li> [Publish apps](/graph/api/teamsapp-publish?view=graph-rest-beta)</li><li>[Delete app](/graph/api/teamsapp-delete)</li>|
 |Addition|beta and v1.0|Added support for the `requiresReview` query parameter to:<br><ul><li> [Publish apps](/graph/api/teamsapp-publish?view=graph-rest-beta)</li><li>[Update app](/graph/api/teamsapp-update?view=graph-rest-beta)|
 
+### To-do tasks 
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Introduced the To Do API, Added [todoTask](/graph/api/resources/todotask?view=graph-rest-beta), [todoTaskList](/graph/api/resources/todotasklist?view=graph-rest-beta), and [linkedResource](/graph/api/resources/linkedresource?view=graph-rest-beta) resources|
+|Change|beta|Deprecated the outlook tasks API|
+
 ## July 2020
 
 ### Calendar
