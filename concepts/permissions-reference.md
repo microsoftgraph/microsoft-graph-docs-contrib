@@ -183,13 +183,13 @@ None.
 
 ## AppCatalog resource permissions
 
-
 #### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------| :----------|
 | _AppCatalog.Read.All_ | Read all app catalogs | Allows the app to read the apps in the app catalogs.| No | No |
 | _AppCatalog.ReadWrite.All_ | Read and write to all app catalogs  | Allows the app to create, read, update, and delete apps in the app catalogs. | Yes | No |
+|_AppCatalog.Submit_|Submit an app for admin review|Allows the user to submit and app for admin review for publication in an organization's app catalog and allows user to cancel past submissions that have not been published.</br> &#119821;&#119822;&#119827;&#119812;: Non-admin users submit apps for review by including the  `requiresReview=true` query parameter.|Yes|No|
 
 #### Application permissions
 
@@ -1619,9 +1619,9 @@ Sites permissions are valid only on work or school accounts.
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Tasks.Read_ | Read user tasks (preview) | Allows the app to read user tasks. | No | Yes |
+| _Tasks.Read_ | Read user’s tasks and task lists (preview) | Allows the app to read the signed-in user’s tasks and task lists, including any shared with the user. Doesn't include permission to create, delete, or update anything. | No | Yes |
 | _Tasks.Read.Shared_ | Read user and shared tasks (preview) | Allows the app to read tasks a user has permissions to access, including their own and shared tasks. | No | No |
-| _Tasks.ReadWrite_ | Create, read, update and delete user tasks and containers (preview) | Allows the app to create, read, update and delete tasks and containers (and tasks in them) that are assigned to or shared with the signed-in user.| No | Yes |
+| _Tasks.ReadWrite_ | Create, read, update, and delete user’s tasks and task lists (preview) | Allows the app to create, read, update, and delete the signed-in user's tasks and task lists, including any shared with the user. | No | Yes |
 | _Tasks.ReadWrite.Shared_ | Read and write user and shared tasks (preview) | Allows the app to create, read, update, and delete tasks a user has permissions to, including their own and shared tasks. | No | No |
 
 #### Application permissions
@@ -1629,7 +1629,7 @@ Sites permissions are valid only on work or school accounts.
 None.
 
 ### Remarks
-_Tasks_ permissions are used to control access for Outlook tasks. Access for Microsoft Planner tasks is controlled by [_Group_ permissions](#group-permissions).
+_Tasks_ permissions are used to control access for To Do tasks and Outlook tasks(deprecated). Access for Microsoft Planner tasks is controlled by [_Group_ permissions](#group-permissions).
 
 _Shared_ permissions are currently only supported for work or school accounts. Even with _Shared_ permissions, reads and writes may fail if the user who owns the shared content has not granted the accessing user permissions to modify content within the folder.
 

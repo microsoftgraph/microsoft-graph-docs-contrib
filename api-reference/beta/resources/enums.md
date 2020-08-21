@@ -11,6 +11,81 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### allowedAudiences values
+
+|Member|
+|:---|
+|me|
+|family|
+|contacts|
+|groupMembers|
+|organization|
+|federatedOrganizations|
+|everyone|
+|unknownFutureValue|
+
+### emailType values
+
+|Member|
+|:---|
+|unknown|
+|work|
+|personal|
+|main|
+|other|
+
+### anniversaryType values 
+
+|Member|
+|:---|
+|birthday|
+|wedding|
+|unknownFutureValue|
+
+### skillProficiencyLevel values 
+
+|Member|
+|:---|
+|elementary|
+|limitedWorking|
+|generalProfessional|
+|advancedProfessional|
+|expert|
+|unknownFutureValue|
+
+### languageProficiencyLevel values 
+
+|Member|
+|:---|
+|elementary|
+|conversational|
+|limitedWorking|
+|professionalWorking|
+|fullProfessional|
+|nativeOrBilingual|
+|unknownFutureValue|
+
+### personRelationship values 
+
+|Member|
+|:---|
+|manager|
+|colleague|
+|directReport|
+|dotLineReport|
+|assistant|
+|dotLineManager|
+|alternateContact|
+|friend|
+|spouse|
+|sibling|
+|child|
+|parent|
+|sponsor|
+|emergencyContact|
+|other|
+|unknownFutureValue|
+
 ### attachmentType values
 
 | Member
@@ -1189,7 +1264,7 @@ Possible values for user account types (group membership), per Windows definitio
 | generic
 | unknownFutureValue
 
-### openIdConnectResponseMode
+### openIdConnectResponseMode values
 | Member                
 |:----------------------
 | none
@@ -1197,10 +1272,27 @@ Possible values for user account types (group membership), per Windows definitio
 | query 
 | unknownFutureValue 
 
-### openIdConnectResponseTypes
+### openIdConnectResponseTypes values
 | Member                
 |:----------------------
 | none
 | code
 | id_token
 | token
+
+### wellknownListName values
+| Member
+|:----------------------
+| none
+| defaultList
+| flaggedEmails
+| unknownFutureValue
+
+### taskStatus values
+| Member
+|:----------------------
+| notStarted
+| inProgress
+| completed
+| waitingOnOthers
+| deferred
