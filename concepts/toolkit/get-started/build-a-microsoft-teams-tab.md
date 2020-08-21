@@ -28,11 +28,11 @@ In order to test your application later, you will need a to host your applicatio
 ```bash
 ngrok http http://localhost:3000
 ```
-Update Development.env
+In your project directory, locate the `.publish\Development.env` file and replace the value for `baseUrl0` with your ngrok URL.
 
 ## Add Microsoft Graph Toolkit
 
-You can use Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm package. To use the Toolkit, you will also need the [Microsoft Teams SDK](https://docs.microsoft.com/en-us/javascript/api/overview/msteams-client?view=msteams-client-js-latest) in your project.
+You can use Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm package. To use the Toolkit, you will also need the [Microsoft Teams SDK](https://docs.microsoft.com/javascript/api/overview/msteams-client?view=msteams-client-js-latest).
 
 ### Use via mgt-loader
 To use the Toolkit and the Teams SDK via the loaders, add the following references to `public/index.html`:
@@ -70,7 +70,7 @@ Replace `<YOUR_CLIENT_ID>` with the client ID for your application and `https://
 
 ### Initialize in JavaScript
 
-Locate the `src/components/App.js` file in your project directory. Import the Teams Provider and initialize the provider:
+To initialize the provider in your JavaScript code, Locate the `src/components/App.js` file in your project directory. Import the Teams Provider and initialize the provider:
 
 ```js
 import * as microsoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
@@ -142,7 +142,17 @@ Now, you're ready to add any of the Microsoft Graph Toolkit components to your t
 
 ## Test your application
 
-To test your application, you need to import your application to Teams.
+Build and run your application using the following commands:
+```bash
+npm install
+npm start
+```
+
+To test your application, you need to upload your application to Teams. Open the Microsoft Teams client, select the **...** on the left-hand menu and go to **App Studio**. Click the **Manifest Editor** tab and select **Import an existing app**.
+
+Locate your project directory and upload the **Development.zip** file inside of the **.publish** folder.
+
+Once your app has loaded, scroll down on the left menu and select **Test and Distribute**. Click the **Install** button and then **Add**. You will be redirected to the tab you created.
 
 ## Next Steps
 - Check out this step-by-step tutorial on [building a Teams tab](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-10-microsoft-graph-toolkit-teams-provider/)
