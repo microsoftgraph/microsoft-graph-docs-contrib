@@ -4,7 +4,7 @@ description: "A setting represented by a name/value pair."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "dkershaw10"
 ---
 
 # settingValue resource type
