@@ -41,7 +41,7 @@ User flows are used to enable a [self-service sign up](https://docs.microsoft.co
 
 | Relationship       | Type  |Description|
 |:---------------|:--------|:----------|
-|identityProviders|[IdentityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
+|identityProviders|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
 
 ## JSON representation
 

@@ -47,7 +47,7 @@ To help you set up the most common identity tasks for your applications, Azure A
 
 | Relationship       | Type  |Description|
 |:---------------|:--------|:----------|
-|identityProviders|[IdentityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
+|identityProviders|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
 
 ## JSON representation
 

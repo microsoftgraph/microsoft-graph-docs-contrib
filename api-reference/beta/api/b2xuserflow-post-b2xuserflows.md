@@ -54,7 +54,7 @@ In the request body, provide a JSON representation of a [b2xUserFlow](../resourc
 |id|String|Required. The name of the user flow. The name will be pre-pended with `B2X_1` after creation.|
 |userFlowType|String|Required. The type of user flow you are creating. This value will always be `signUpOrSignIn`.|
 |userFlowTypeVersion|Float|Required. The version of the user flow. This value will always be 1.|
-|identityProviders|[IdentityProvider](../resources/identityprovider.md) collection|Optional. The identity providers you want to include in the user flow.|
+|identityProviders|[identityProvider](../resources/identityprovider.md) collection|Optional. The identity providers you want to include in the user flow.|
 
 ## Response
 
@@ -173,6 +173,6 @@ Content-type: application/json
   "tocPath": "",
   "suppressions": [
     "Error: create_b2xUserFlow_from_b2xUserFlows/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
-    "Error: create_b2xUserFlow_from_b2xUserFlows_identityProvider/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
+    "Error: create_b2xUserFlow_from_b2xUserFlows_identityProviders/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->
