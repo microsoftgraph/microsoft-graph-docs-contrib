@@ -312,6 +312,7 @@ The response includes only the [user purpose](../resources/userpurpose.md) setti
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('622eaaff-0683-4862-9de4-f2ec83c2bd98')/mailboxSettings/userPurpose",
     "value": "user"
