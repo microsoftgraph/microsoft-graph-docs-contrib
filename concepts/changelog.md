@@ -20,6 +20,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added support for [resource-specific consent](https://aka.ms/teams-rsc) (RSC) permissions to v1.0 APIs. |
 | Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-v1.0). |
 
+### Users | Outlook settings
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition | v1.0 | Added the new **userPurpose** property to [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-v1.0). See [userPurpose resource type](/graph/api/resources/userPurpose?view=graph-rest-beta) for information on the supported use cases.|
+|Addition | v1.0 | Added new [userPurpose](/graph/api/resources/userPurpose?view=graph-rest-v1.0) enum type.|
+
 ## October 2020
 
 ### Applications
