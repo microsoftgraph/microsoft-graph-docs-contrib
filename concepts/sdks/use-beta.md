@@ -57,7 +57,7 @@ The [Microsoft Graph SDK for ObjC](https://github.com/microsoftgraph/msgraph-sdk
 
 However, the models in the [Microsoft Graph Models SDK](https://github.com/microsoftgraph/msgraph-sdk-objc-models) are generated from objects in the v1.0 API, so they may not work with beta objects.
 
-```objectivec
+```objc
 // GET /me
 NSString* meUrlString = [NSString stringWithFormat:@"%@/me", "https://graph.microsoft.com/beta"];
 
