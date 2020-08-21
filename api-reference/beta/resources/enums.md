@@ -1264,7 +1264,7 @@ Possible values for user account types (group membership), per Windows definitio
 | generic
 | unknownFutureValue
 
-### openIdConnectResponseMode
+### openIdConnectResponseMode values
 | Member                
 |:----------------------
 | none
@@ -1272,10 +1272,27 @@ Possible values for user account types (group membership), per Windows definitio
 | query 
 | unknownFutureValue 
 
-### openIdConnectResponseTypes
+### openIdConnectResponseTypes values
 | Member                
 |:----------------------
 | none
 | code
 | id_token
 | token
+
+### wellknownListName values
+| Member
+|:----------------------
+| none
+| defaultList
+| flaggedEmails
+| unknownFutureValue
+
+### taskStatus values
+| Member
+|:----------------------
+| notStarted
+| inProgress
+| completed
+| waitingOnOthers
+| deferred

@@ -377,7 +377,7 @@ items:
             href: api/outlookuser-list-mastercategories.md
         - name: Translate IDs
           href: api/user-translateexchangeids.md
-      - name: Outlook tasks (preview)
+      - name: Outlook tasks (deprecated)
         items:
         - name: Outlook tasks
           href: resources/outlooktask.md
@@ -12203,105 +12203,160 @@ items:
         - name: Create notebook
           href: api/onenote-post-notebooks.md
     - name: To-do tasks (preview)
-      href: resources/outlooktask.md
-      displayName: Outlook
+      displayName: Microsoft To Do
       items:
-      - name: Outlook task
-        href: resources/outlooktask.md
+      - name: Overview
+        href: resources/todo-overview.md
+      - name: Task list
+        href: resources/todotasklist.md
+        items:
+        - name: List task lists
+          href: api/todo-list-lists.md
+        - name: Create task list
+          href: api/todo-post-lists.md
+        - name: Get task list
+          href: api/todotasklist-get.md
+        - name: Update task list
+          href: api/todotasklist-update.md
+        - name: Delete task list
+          href: api/todotasklist-delete.md
+        - name: Get task list delta
+          href: api/todotasklist-delta.md 
+        - name: Create open extension
+          href: api/opentypeextension-post-opentypeextension.md
+        - name: Get open extension
+          href: api/opentypeextension-get.md
+      - name: Task
+        href: resources/todotask.md
+        items:
+        - name: List tasks
+          href: api/todotasklist-list-tasks.md
+        - name: Create task
+          href: api/todotasklist-post-tasks.md
+        - name: Get task
+          href: api/todotask-get.md
+        - name: Update task
+          href: api/todotask-update.md
+        - name: Delete task
+          href: api/todotask-delete.md
+        - name: Get task delta
+          href: api/todotask-delta.md
+        - name: Create open extension
+          href: api/opentypeextension-post-opentypeextension.md
+        - name: Get open extension
+          href: api/opentypeextension-get.md
+      - name: Linked resource
+        href: resources/linkedresource.md
         items:
         - name: List
-          href: api/outlookuser-list-tasks.md
+          href: api/todotask-list-linkedresources.md
         - name: Create
-          href: api/outlookuser-post-tasks.md
+          href: api/todotask-post-linkedresources.md
         - name: Get
-          href: api/outlooktask-get.md
+          href: api/linkedresource-get.md
         - name: Update
-          href: api/outlooktask-update.md
+          href: api/linkedresource-update.md
         - name: Delete
-          href: api/outlooktask-delete.md
-        - name: Complete
-          href: api/outlooktask-complete.md
-        - name: List attachments
-          href: api/outlooktask-list-attachments.md
-        - name: Add attachment
-          href: api/outlooktask-post-attachments.md
-      - name: Outlook task folder
-        href: resources/outlooktaskfolder.md
+          href: api/linkedresource-delete.md
+      - name: Outlook tasks (deprecated)
         items:
-        - name: List
-          href: api/outlookuser-list-taskfolders.md
-        - name: Create
-          href: api/outlookuser-post-taskfolders.md
-        - name: Get
-          href: api/outlooktaskfolder-get.md
-        - name: Update
-          href: api/outlooktaskfolder-update.md
-        - name: Delete
-          href: api/outlooktaskfolder-delete.md
-        - name: List tasks in folder
-          href: api/outlooktaskfolder-list-tasks.md
-        - name: Create tasks in folder
-          href: api/outlooktaskfolder-post-tasks.md
-      - name: Outlook task group
-        href: resources/outlooktaskgroup.md
-        items:
-        - name: List
-          href: api/outlookuser-list-taskgroups.md
-        - name: Create
-          href: api/outlookuser-post-taskgroups.md
-        - name: Get
-          href: api/outlooktaskgroup-get.md
-        - name: Update
-          href: api/outlooktaskgroup-update.md
-        - name: Delete
-          href: api/outlooktaskfolder-delete.md
-        - name: List task folders in group
-          href: api/outlooktaskfolder-list-tasks.md
-        - name: Create task folder in group
-          href: api/outlooktaskfolder-post-tasks.md
-      - name: Attachment
-        href: resources/attachment.md
-        items:
-        - name: File attachment type
-          href: resources/fileattachment.md
-        - name: Item attachment type
-          href: resources/itemattachment.md
-        - name: Reference attachment type
-          href: resources/referenceattachment.md
-        - name: Get attachment
-          href: api/attachment-get.md
-        - name: Delete attachment
-          href: api/attachment-delete.md
-      - name: Categories
-        href: resources/outlookcategory.md
-        items:
-        - name: List categories
-          href: api/outlookuser-list-mastercategories.md
-        - name: Create category
-          href: api/outlookuser-post-mastercategories.md
-        - name: Get category
-          href: api/outlookcategory-get.md
-        - name: Update category
-          href: api/outlookcategory-update.md
-        - name: Delete category
-          href: api/outlookcategory-delete.md
-      - name: Extended properties
-        href: resources/extended-properties-overview.md
-        items:
-        - name: Single-value extended properties
-          href: resources/singlevaluelegacyextendedproperty.md
+        - name: Outlook task (deprecated)
           items:
-          - name: Create single-value property
-            href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
-          - name: Get single-value property
-            href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multivalue extended properties
-          href: resources/multivaluelegacyextendedproperty.md
+          - name: Outlook task
+            href: resources/outlooktask.md
+          - name: List
+            href: api/outlookuser-list-tasks.md
+          - name: Create
+            href: api/outlookuser-post-tasks.md
+          - name: Get
+            href: api/outlooktask-get.md
+          - name: Update
+            href: api/outlooktask-update.md
+          - name: Delete
+            href: api/outlooktask-delete.md
+          - name: Complete
+            href: api/outlooktask-complete.md
+          - name: List attachments
+            href: api/outlooktask-list-attachments.md
+          - name: Add attachment
+            href: api/outlooktask-post-attachments.md
+        - name: Outlook task folder (deprecated)
           items:
-          - name: Create multivalue property
-            href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
-          - name: Get multivalue property
-            href: api/multivaluelegacyextendedproperty-get.md
+          - name: Outlook task folder
+            href: resources/outlooktaskfolder.md
+          - name: List
+            href: api/outlookuser-list-taskfolders.md
+          - name: Create
+            href: api/outlookuser-post-taskfolders.md
+          - name: Get
+            href: api/outlooktaskfolder-get.md
+          - name: Update
+            href: api/outlooktaskfolder-update.md
+          - name: Delete
+            href: api/outlooktaskfolder-delete.md
+          - name: List tasks in folder
+            href: api/outlooktaskfolder-list-tasks.md
+          - name: Create tasks in folder
+            href: api/outlooktaskfolder-post-tasks.md
+        - name: Outlook task group (deprecated)
+          items:
+          - name: Outlook task group
+            href: resources/outlooktaskgroup.md
+          - name: List
+            href: api/outlookuser-list-taskgroups.md
+          - name: Create
+            href: api/outlookuser-post-taskgroups.md
+          - name: Get
+            href: api/outlooktaskgroup-get.md
+          - name: Update
+            href: api/outlooktaskgroup-update.md
+          - name: Delete
+            href: api/outlooktaskfolder-delete.md
+          - name: List task folders in group
+            href: api/outlooktaskfolder-list-tasks.md
+          - name: Create task folder in group
+            href: api/outlooktaskfolder-post-tasks.md
+        - name: Attachment
+          href: resources/attachment.md
+          items:
+          - name: File attachment type
+            href: resources/fileattachment.md
+          - name: Item attachment type
+            href: resources/itemattachment.md
+          - name: Get attachment
+            href: api/attachment-get.md
+          - name: Delete attachment
+            href: api/attachment-delete.md
+        - name: Categories
+          href: resources/outlookcategory.md
+          items:
+          - name: List categories
+            href: api/outlookuser-list-mastercategories.md
+          - name: Create category
+            href: api/outlookuser-post-mastercategories.md
+          - name: Get category
+            href: api/outlookcategory-get.md
+          - name: Update category
+            href: api/outlookcategory-update.md
+          - name: Delete category
+            href: api/outlookcategory-delete.md
+        - name: Extended properties
+          href: resources/extended-properties-overview.md
+          items:
+          - name: Single-value extended properties
+            href: resources/singlevaluelegacyextendedproperty.md
+            items:
+            - name: Create single-value property
+              href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+            - name: Get single-value property
+              href: api/singlevaluelegacyextendedproperty-get.md
+          - name: Multivalue extended properties
+            href: resources/multivaluelegacyextendedproperty.md
+            items:
+            - name: Create multivalue property
+              href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+            - name: Get multivalue property
+              href: api/multivaluelegacyextendedproperty-get.md
     - name: Workbooks and charts
       displayName: Excel
       items:

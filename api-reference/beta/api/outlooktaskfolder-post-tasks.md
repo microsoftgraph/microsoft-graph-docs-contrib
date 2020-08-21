@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
 Create an Outlook task in the specified task folder.
 
 The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time 
@@ -23,8 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.    |
-|Delegated (personal Microsoft account) | Not supported.    |
+|Delegated (work or school account) | Tasks.ReadWrite    |
+|Delegated (personal Microsoft account) | Tasks.ReadWrite    |
 |Application | Not supported. |
 
 ## HTTP request
