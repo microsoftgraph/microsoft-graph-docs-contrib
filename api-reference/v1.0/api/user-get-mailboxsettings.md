@@ -302,7 +302,6 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings/userPurpose
 ```
 #### Response
 The response includes only the [user purpose](../resources/userpurpose.md) settings.
-
 <!-- {
   "blockType": "response",
   "name": "get_mailboxsettings_4",
