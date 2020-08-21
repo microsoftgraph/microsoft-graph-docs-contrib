@@ -2,7 +2,7 @@
 title: "fileSecurityState resource type"
 description: "Contains information about the file (not process) related to the alert."
 localization_priority: Normal
-author: ""
+author: "preetikr"
 ms.prod: ""
 doc_type: resourcePageType
 ---

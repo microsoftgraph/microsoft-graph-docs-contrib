@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
+
 Extended properties allow storing custom data and specifically serve as a fallback mechanism for apps to access
 custom data for Outlook MAPI properties when these properties are _not already exposed in the Microsoft Graph API metadata_.
 You can use extended properties REST API to store or get such custom data in the following user resources:

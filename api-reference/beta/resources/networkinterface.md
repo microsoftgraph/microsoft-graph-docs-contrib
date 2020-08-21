@@ -4,7 +4,7 @@ description: "Represents a Network Interface Card (NIC) associated with this hos
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
 # networkInterface resource type

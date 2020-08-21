@@ -4,7 +4,7 @@ description: "Retrieve a list of nameditem objects."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: ""
+author: "ruoyingl"
 ---
 
 # List NamedItemCollection

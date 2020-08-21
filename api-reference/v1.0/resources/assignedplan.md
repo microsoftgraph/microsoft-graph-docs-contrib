@@ -2,7 +2,7 @@
 title: "assignedPlan resource type"
 description: "The **assignedPlans** property of both the user entity and the organization entity is a collection of **assignedPlan**."
 localization_priority: Normal
-author: ""
+author: "krbain"
 ms.prod: ""
 doc_type: resourcePageType
 ---

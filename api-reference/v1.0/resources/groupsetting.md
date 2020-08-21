@@ -58,7 +58,6 @@ Here is a JSON representation of the resource.
   "templateId": "String",
   "values": [{"@odata.type": "microsoft.graph.settingValue"}]
 }
-
 ```
 
 
