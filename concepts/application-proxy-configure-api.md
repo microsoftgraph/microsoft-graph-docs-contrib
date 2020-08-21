@@ -22,20 +22,20 @@ Make sure you have the corresponding permissions to call the following APIs.
 |[connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Create connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Add connector to connectorGroup](https://docs.microsoft.com/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
 |[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Create servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-post-serviceprincipals?view=graph-rest-beta&tabs=http) <br> [Update servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Create appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
 
->[!NOTE]
-> The requests shown in this article uses sample values. You will need update these. The response objects shown may also be shortened for readability. All the properties will be returned from an actual call.
+> [!NOTE]
+> The requests shown in this article use sample values. You will need update these. The response objects shown might also be shortened for readability. 
 
 ## Step 1: Create an application
 
 ### Sign in to Microsoft Graph Explorer (recommended), Postman, or any other API client you use
 
 1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator or App Admin credentials.
-3. Upon successful sign-in, you'll see the user account details in the left pane.
+2. Select **Sign-in with Microsoft** and sign in using an Azure AD global administrator or App Admin credentials.
+3. Upon successful sign in, you'll see the user account details in the left pane.
 
 ### Create an application
 
-To configure Application Proxy for an app using the API, you must first create an application, add a service principal to the app, then update the application's **onPremisesPublishing** property to configure the App Proxy settings. When creating the application set the application's **signInAudience** to "AzureADMyOrg".
+To configure Application Proxy for an app using the API, you create an application, add a service principal to the app, and then update the application's **onPremisesPublishing** property to configure the App Proxy settings. When creating the application, set the application's **signInAudience** to "AzureADMyOrg".
 
 #### Request
 
@@ -99,7 +99,7 @@ Content-type: application/json
 ```
 
 ### Retrieve the application object ID and appId
-Use the response from the previous call to retrieve and save the application object ID and appId.
+Use the response from the previous call to retrieve and save the application object ID and app ID.
 ```
 "application": {
   "id": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
@@ -107,7 +107,7 @@ Use the response from the previous call to retrieve and save the application obj
 }
 ```
 ### Create a servicePrincipal for the application and add required tags
-Use the **appId** to create a servicePrincipal for the application. Then add the tags required for configuring Application Proxy for an app.
+Use the **appId** to create a service principal for the application. Then add the tags required for configuring Application Proxy for an app.
 
 #### Request
 
@@ -182,7 +182,7 @@ Content-type: application/json
 
 ### Set the onPremisesPublishing configuration
 
-Use the application object Id from the previous step to configure Application Proxy for the app and update the **onPremisesPublishing** property to the desired configuration. In this example, you're using an app with the internal url: `https://contosoiwaapp.com` and using the default domain for the external url: `https://contosoiwaapp-contoso.msappproxy.net`. 
+Use the application object ID from the previous step to configure Application Proxy for the app and update the **onPremisesPublishing** property to the desired configuration. In this example, you're using an app with the internal URL: `https://contosoiwaapp.com` and using the default domain for the external URL: `https://contosoiwaapp-contoso.msappproxy.net`. 
 
 #### Request
 
@@ -215,7 +215,7 @@ Content-type: appplication/json
 HTTP/1.1 204 No content
 ```
 ### Complete the configuration of the application
- Update the application's **redirectUri**, **identifierUri**, and **homepageUrl** properties to the external UR configured in onPremisesPublishing property. Then update **[implicitGrantSettings](https://docs.microsoft.com/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0)** to true for enabledTokenIssuance and false for enabledAccessTokenIssuance.
+Update the application's **redirectUri**, **identifierUri**, and **homepageUrl** properties to the external UR configured in the **onPremisesPublishing** property. Then update [implicitGrantSettings](https://docs.microsoft.com/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0) to `true` for **enabledTokenIssuance** and `false` for **enabledAccessTokenIssuance**.
 
 #### Request
 <!-- {
