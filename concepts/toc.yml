@@ -352,6 +352,9 @@ items:
             href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: teams-proactive-messaging.md
+      - name: To-do tasks (preview)
+        href: todo-concept-overview.md
+        displayName: Microsoft To Do
       - name: Workbooks and charts
         displayName: Excel
         items:

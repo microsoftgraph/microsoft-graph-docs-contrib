@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
 A folder that contains Outlook tasks (collection of [outlookTask](outlooktask.md) objects). 
 
 In Outlook, the default task group, `My Tasks`, contains a default task folder, `Tasks`, for the user's mailbox. 
