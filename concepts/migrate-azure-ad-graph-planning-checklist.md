@@ -6,11 +6,11 @@ localization_priority: Normal
 ms.prod: "azure-active-directory"
 ---
 
+# App migration planning checklist
+
 > [!Important]
 > Azure AD Graph API is now deprecated. We will continue to provide technical support and security updates but will no longer provide feature updates.
 > Starting June 30th, 2022, we will end support for Azure AD Graph and will no longer provide technical support or security updates. Apps using Azure AD Graph after this time will no longer receive responses from the Azure AD Graph endpoint.
-
-# App migration planning checklist
 
 Use the following checklist to plan your migration.
 
