@@ -10757,7 +10757,7 @@ items:
             href: api/itemaddress-update.md
           - name: Delete
             href: api/itemaddress-delete.md
-        - name: Anniversary
+        - name: Anniversaries
           items:
           - name: Person anniversary
             href: resources/personanniversary.md
