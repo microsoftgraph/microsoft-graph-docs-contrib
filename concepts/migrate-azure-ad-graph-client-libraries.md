@@ -154,4 +154,4 @@ The Azure AD Graph client library supports only the .NET platform.  However, Mic
 ## Next Steps
 
 - Learn how to [deploy, test, and extend](/graph/migrate-azure-ad-graph-deploy-test-extend) apps you've migrated to Microsoft Graph.
-- Review the [checklist](migrate-azure-ad-graph-overview.md) again.
+- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.

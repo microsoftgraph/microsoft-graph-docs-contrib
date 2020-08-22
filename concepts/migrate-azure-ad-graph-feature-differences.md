@@ -78,7 +78,7 @@ Azure AD Graph used a system called multi-part MIME messages to manage batching.
 ## Next Steps
 
 - Learn about [resource differences](migrate-azure-ad-graph-resource-differences.md) between Azure AD Graph and Microsoft Graph.
-- Review the [checklist](migrate-azure-ad-graph-overview.md) again.
+- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
 
 <!-- {
   "type": "#page.annotation",

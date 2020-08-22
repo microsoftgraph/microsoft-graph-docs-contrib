@@ -121,5 +121,5 @@ When migrating your apps to Microsoft Graph, look for requests that use `$link` 
 ## Next Steps
 
 - Learn about [service feature differences](migrate-azure-ad-graph-feature-differences.md) between Azure AD Graph and Microsoft Graph.
-- Review the [checklist](migrate-azure-ad-graph-overview.md) again.
+- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
 

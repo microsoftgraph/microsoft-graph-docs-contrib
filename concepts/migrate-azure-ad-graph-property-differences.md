@@ -197,5 +197,5 @@ The Azure AD Graph CertificateAuthorityInformation is renamed to **certificateAu
 ## Next Steps
 
 - Learn about [method differences](migrate-azure-ad-graph-method-differences.md) between Azure AD Graph and Microsoft Graph.
-- Review the [checklist](migrate-azure-ad-graph-overview.md) again.
+- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
 

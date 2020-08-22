@@ -29,5 +29,5 @@ To learn more, see [Permissions](permissions-reference.md).
 ## Next Steps
 
 - Learn about [app registration, permissions and consent differences](migrate-azure-ad-graph-app-registration.md) between Azure AD Graph and Microsoft Graph.
-- Review the [checklist](migrate-azure-ad-graph-overview.md) again.
+- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
 

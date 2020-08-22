@@ -33,4 +33,4 @@ However, if you use new features, services, or add additional capabilities, you 
 ## Next Steps
 
 - Learn [authentication library](migrate-azure-ad-graph-authentication-library.md) differences between Azure AD Graph and Microsoft Graph.
-- Review the [checklist](migrate-azure-ad-graph-overview.md) again.
+- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.

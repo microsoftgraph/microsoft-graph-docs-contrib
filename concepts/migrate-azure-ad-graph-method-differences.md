@@ -23,5 +23,4 @@ A handful of Azure AD Graph methods have also changed.  If a method is **not** s
 ## Next Steps
 
 - Learn how to [examine API differences](migrate-azure-ad-graph-audit-api-use.md) in your app between Azure AD Graph and Microsoft graph.
-- Review the [checklist](migrate-azure-ad-graph-overview.md) again.
-
+- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.

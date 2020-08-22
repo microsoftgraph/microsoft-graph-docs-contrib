@@ -55,4 +55,3 @@ If you're currently using the [AD authentication library](https://docs.microsoft
 ## Next Steps
 
 - Learn about [request call syntax](migrate-azure-ad-graph-request-differences.md) to start step 1: reviewing API differences.
-- Review the [checklist](migrate-azure-ad-graph-overview.md) again.

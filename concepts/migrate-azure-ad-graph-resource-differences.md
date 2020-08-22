@@ -35,4 +35,4 @@ If a resource is **not** shown in this list, it is already available in the [v1.
 ## Next Steps
 
 - Learn about [entity property differences](migrate-azure-ad-graph-property-differences.md) between Azure AD Graph and Microsoft Graph.
-- Review the [checklist](migrate-azure-ad-graph-overview.md) again.
+- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
