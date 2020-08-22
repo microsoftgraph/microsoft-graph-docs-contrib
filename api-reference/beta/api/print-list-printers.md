@@ -18,11 +18,13 @@ Retrieve the list of **printers** that are registered in the tenant.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table. The signed in user must be a [Printer Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Users.Read.All |
+|Delegated (work or school account)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+|Application| Not Supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +37,7 @@ This method supports some of the OData query parameters to help customize the re
 
 ### Exceptions
 * The `$expand` and `select` operators are supported for the `share` navigation property, but not for `jobs`.
-* Some operators are not supported: `$count`, `$orderby`, `$search`.
+* Some operators are not supported: `$count`, `$search`.
 
 ## Request headers
 | Name      |Description|

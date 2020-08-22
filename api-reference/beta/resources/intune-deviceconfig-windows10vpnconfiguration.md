@@ -53,7 +53,7 @@ Inherits from [windowsVpnConfiguration](../resources/intune-deviceconfig-windows
 |enableDeviceTunnel|Boolean|Enable device tunnel.|
 |enableDnsRegistration|Boolean|Enable IP address registration with internal DNS.|
 |dnsSuffixes|String collection|Specify DNS suffixes to add to the DNS search list to properly route short names.|
-|authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`, `customEapXml`.|
+|authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`, `customEapXml`, `derivedCredential`.|
 |rememberUserCredentials|Boolean|Remember user credentials.|
 |enableConditionalAccess|Boolean|Enable conditional access.|
 |enableSingleSignOnWithAlternateCertificate|Boolean|Enable single sign-on (SSO) with alternate certificate.|
@@ -68,6 +68,7 @@ Inherits from [windowsVpnConfiguration](../resources/intune-deviceconfig-windows
 |routes|[vpnRoute](../resources/intune-deviceconfig-vpnroute.md) collection|Routes (optional for third-party providers). This collection can contain a maximum of 1000 elements.|
 |dnsRules|[vpnDnsRule](../resources/intune-deviceconfig-vpndnsrule.md) collection|DNS rules. This collection can contain a maximum of 1000 elements.|
 |trustedNetworkDomains|String collection|Trusted Network Domains|
+|cryptographySuite|[cryptographySuite](../resources/intune-deviceconfig-cryptographysuite.md)|Cryptography Suite security settings for IKEv2 VPN in Windows10 and above |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -229,7 +230,16 @@ Here is a JSON representation of the resource.
   ],
   "trustedNetworkDomains": [
     "String"
-  ]
+  ],
+  "cryptographySuite": {
+    "@odata.type": "microsoft.graph.cryptographySuite",
+    "encryptionMethod": "String",
+    "integrityCheckMethod": "String",
+    "dhGroup": "String",
+    "cipherTransformConstants": "String",
+    "authenticationTransformConstants": "String",
+    "pfsGroup": "String"
+  }
 }
 ```
 
