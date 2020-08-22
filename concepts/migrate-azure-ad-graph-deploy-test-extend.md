@@ -51,7 +51,7 @@ This is step 4 of the [process to migrate apps](migrate-azure-ad-graph-planning-
 
 If you run into problems or need help during the migration process, you can:
 
-- Review the [checklist](migrate-azure-ad-graph-overview.md) again
+- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again
 - Post questions to [StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph)
 - Review Microsoft Graph samples to contrast and compare with your existing application code:
   - **Apps that use the REST API**: explore [quick starts and samples](https://developer.microsoft.com/graph/get-started), choosing your platform of choice and run through the quick start or search for an appropriate sample
