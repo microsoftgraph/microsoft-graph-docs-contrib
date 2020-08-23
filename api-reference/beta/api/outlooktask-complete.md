@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
 Complete an Outlook task which sets the **completedDateTime** property to the current date, and the **status** property to `completed`.
 
 If you are completing a task in a recurring series, in the response, the task collection will contain the completed task in the series, and the next task in the series.

@@ -4,7 +4,7 @@ description: "Represents a ranked email address."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "AAmatino"
 ---
 
 # rankedEmailAddress resource type

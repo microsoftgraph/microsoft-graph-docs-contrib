@@ -2,7 +2,7 @@
 title: "hostSecurityState resource type"
 description: "Contains stateful information about the host (including devices, computers, and so on)."
 localization_priority: Normal
-author: ""
+author: "preetikr"
 ms.prod: ""
 doc_type: resourcePageType
 ---
