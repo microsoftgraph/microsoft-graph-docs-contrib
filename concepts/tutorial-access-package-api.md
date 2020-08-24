@@ -25,18 +25,18 @@ To successfully complete this tutorial, make sure that you have the required pre
     2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. After you successfully sign in, you can see the user account details in the left-hand pane.
     3. Select the settings icon to the right of the user account details, and then select **Set permissions**.
 
-        ![Select the Microsoft Graph permissions.](/images/tutorial-access-package-api/set-permissions.png)
+        ![Select the Microsoft Graph permissions.](./images/tutorial-access-package-api/set-permissions.png)
     
     4. Search for the `User` permissions, expand **User (8)**, select the **User.ReadWrite.All** permission, and then select **Consent**.
 
-        ![Search for the user permissions.](/images/tutorial-access-package-api/set-user-permission.png)
+        ![Search for the user permissions.](./images/tutorial-access-package-api/set-user-permission.png)
   
     5. Select **Accept** to accept the consent of the permission. You do not need to consent on behalf of your organization for this permission.
     6. Search for the `Group` permissions, expand **Group (2)**, select the **Group.ReadWrite.All** permission, and then select **Consent**.
     7. Select **Accept** to accept the consent of the permission. You do not need to consent on behalf of your organization for this permission.
     8. Search for the `EntitlementManagement` permissions, expand **EntitlementManagement (2)**, select the **Entitlemanamgent.ReadWrite.All** permission, and then select **Consent**. Because this permission requires admin consent and is needed by a user account that you create in this tutorial, you must select **consent on behalf of your organization**.
 
-        ![Consent for organization](/images/tutorial-access-package-api/consent-for-organization.png)
+        ![Consent for organization](./images/tutorial-access-package-api/consent-for-organization.png)
 
 ## Step 1: Create a user account and a group
 
