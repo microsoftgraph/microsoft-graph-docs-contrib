@@ -1,6 +1,6 @@
 ---
 title: "teamsTemplate resource type"
-description: "Describes the teamsTemplate entity."
+description: "Describes teamsTemplate entity."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
