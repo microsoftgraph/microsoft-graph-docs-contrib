@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var used = await graphClient.Me.Insights.Used
+var search = await graphClient.Me.Drive
+	.Search("Contoso Project")
 	.Request()
-	.OrderBy("LastUsed/LastAccessedDateTime desc")
 	.GetAsync();
 
 ```

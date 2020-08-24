@@ -10,8 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/insights/used')
-	.orderby('LastUsed/LastAccessedDateTime desc')
+let res = await client.api('/me/drive/root/search(q='Contoso Project')')
 	.get();
 
 ```
