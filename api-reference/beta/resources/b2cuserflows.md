@@ -65,6 +65,6 @@ The following is a JSON representation of the resource.
     "id": "String (identifier)",
     "userFlowType": "String",
     "userFlowTypeVersion": "Single",
-    "identityProviders": [{"@odata.type": "microsoft.graph.IdentityProvider"}]
+    "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}]
 }
 ```
