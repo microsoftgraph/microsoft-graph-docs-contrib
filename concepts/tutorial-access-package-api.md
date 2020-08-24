@@ -20,9 +20,9 @@ To successfully complete this tutorial, make sure that you have the required pre
 - Azure AD entitlement management requires specific licenses. For more information, see [License requirements](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview#license-requirements). The following licenses are required in your tenant:
     - Azure AD Premium P2
     - Enterprise Mobility + Security (EMS) E5 license
-- This tutorial assumes that you are Microsoft Graph Explorer, but you can use Postman, or any other API client. To call the Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. For this tutorial, your application uses the `User.ReadWrite.All`, `Group.ReadWrite.All`, and `EntitlementManagement.ReadWrite.All` delegated permissions. Complete the following steps to set permissions in Microsoft Graph Explorer:
+- This tutorial assumes that you are Microsoft Graph Explorer, but you can use Postman, or any other API client. To call the Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. For this tutorial, the `User.ReadWrite.All`, `Group.ReadWrite.All`, and `EntitlementManagement.ReadWrite.All` delegated permissions are needed. Complete the following steps to set permissions in Microsoft Graph Explorer:
     1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-    2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. Upon successful sign-in, you'll see the user account details in the left-hand pane.
+    2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. After you successfully sign in, you can see the user account details in the left-hand pane.
     3. Select the settings icon to the right of the user account details, and then select **Set permissions**.
 
         ![Select the Microsoft Graph permissions.](/images/tutorial-access-package-api/set-permissions.png)
@@ -34,7 +34,7 @@ To successfully complete this tutorial, make sure that you have the required pre
     5. Select **Accept** to accept the consent of the permission. You do not need to consent on behalf of your organization for this permission.
     6. Search for the `Group` permissions, expand **Group (2)**, select the **Group.ReadWrite.All** permission, and then select **Consent**.
     7. Select **Accept** to accept the consent of the permission. You do not need to consent on behalf of your organization for this permission.
-    7. Search for the `EntitlementManagement` permissions, expand **EntitlementManagement (2)**, select the **Entitlemanamgent.ReadWrite.All** permission, and then select **Consent**. Because this permission requires admin consent and is needed by a user account that you create in this tutorial, you must select **consent on behalf of your organization**.
+    8. Search for the `EntitlementManagement` permissions, expand **EntitlementManagement (2)**, select the **Entitlemanamgent.ReadWrite.All** permission, and then select **Consent**. Because this permission requires admin consent and is needed by a user account that you create in this tutorial, you must select **consent on behalf of your organization**.
 
         ![Consent for organization](/images/tutorial-access-package-api/consent-for-organization.png)
 
