@@ -1,6 +1,6 @@
 ---
 title: "aadUserConversationMember resource type"
-description: "Represents an Azure Active Directory user in a chat or channel."
+description: "Represents Azure Active Directory user in a chat or channel."
 localization_priority: Priority
 author: "clearab"
 ms.prod: "microsoft-teams"
