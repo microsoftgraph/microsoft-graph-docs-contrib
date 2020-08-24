@@ -1,6 +1,6 @@
 ---
 title: "Create a team"
-description: "Create a new team."
+description: "Create new team."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
