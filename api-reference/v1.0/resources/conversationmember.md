@@ -1,6 +1,6 @@
 ---
 title: "conversationMember resource type"
-description: "Represents a user in a conversation."
+description: "Represents user in a conversation."
 localization_priority: Normal
 author: "clearab"
 ms.prod: "microsoft-teams"
