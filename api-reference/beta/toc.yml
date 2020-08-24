@@ -10145,7 +10145,7 @@ items:
                href: api/b2cuserflows-update-identityprovider.md
              - name: Delete identity provider
                href: api/b2cuserflows-delete-identityprovider.md
-          - name: B2X user flows
+          - name: Self-service sign up user flows
             href: resources/b2xuserflows.md
             items:
              - name: List
