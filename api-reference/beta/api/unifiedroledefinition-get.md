@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and the requested [u
 
 ## Examples
 
-### Example 1: Get definition of a custom role
+### Example 1: Get the definition of a custom role
 
 #### Request
 
@@ -123,7 +123,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get definition of a built-in role
+### Example 2: Get the definition of a built-in role
 
 #### Request
 
@@ -216,7 +216,7 @@ Content-type: application/json
     ]
 }
 ```
-### Example 3: Get definition of an Azure AD built-in role and $expand on the role it inherits from
+### Example 3: Get the definition of an Azure AD built-in role and $expand on the role it inherits from
 
 #### Request
 
