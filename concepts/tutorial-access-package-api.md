@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # Tutorial: Create an access package using Microsoft Graph APIs
 
-Managing access to all the resources employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it is no longer needed. [Azure Active Directory (Azure AD) entitlement management](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) using Microsoft Graph APIs enables you to manage this type of access.
+Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it is no longer needed. [Azure Active Directory (Azure AD) entitlement management](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) using Microsoft Graph APIs enables you to manage this type of access.
 
 In this tutorial, you've been asked to develop code to create a package of resources for a marketing campaign that internal users can self-service request. Requests do not require approval and user's access expires after 30 days. For this tutorial, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.
 
@@ -16,14 +16,14 @@ The response objects shown in this tutorial may be shortened for readability. Al
 
 ## Prerequisites
 
-To successfully complete this tutorial, make sure that you have the required prereguisites:
+To successfully complete this tutorial, make sure that you have the required prerequisites:
 - Azure AD entitlement management requires specific licenses. For more information, see [License requirements](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview#license-requirements). The following licenses are required in your tenant:
     - Azure AD Premium P2
     - Enterprise Mobility + Security (EMS) E5 license
 - This tutorial assumes that you are Microsoft Graph Explorer, but you can use Postman, or any other API client. To call the Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. For this tutorial, the `User.ReadWrite.All`, `Group.ReadWrite.All`, and `EntitlementManagement.ReadWrite.All` delegated permissions are needed. Complete the following steps to set permissions in Microsoft Graph Explorer:
     1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
     2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. After you successfully sign in, you can see the user account details in the left-hand pane.
-    3. Select the settings icon to the right of the user account details, and then select **Set permissions**.
+    3. Select the settings icon to the right of the user account details, and then select **Select permissions**.
 
         ![Select the Microsoft Graph permissions.](./images/tutorial-access-package-api/set-permissions.png)
     
@@ -34,7 +34,7 @@ To successfully complete this tutorial, make sure that you have the required pre
     5. Select **Accept** to accept the consent of the permission. You do not need to consent on behalf of your organization for this permission.
     6. Search for the `Group` permissions, expand **Group (2)**, select the **Group.ReadWrite.All** permission, and then select **Consent**.
     7. Select **Accept** to accept the consent of the permission. You do not need to consent on behalf of your organization for this permission.
-    8. Search for the `EntitlementManagement` permissions, expand **EntitlementManagement (2)**, select the **Entitlemanamgent.ReadWrite.All** permission, and then select **Consent**. Because this permission requires admin consent and is needed by a user account that you create in this tutorial, you must select **consent on behalf of your organization**.
+    8. Search for the `EntitlementManagement` permissions, expand **EntitlementManagement (2)**, select the **Entitlemanamgent.ReadWrite.All** permission, and then select **Consent**. Because this permission requires admin consent and is needed by a user account that you create in this tutorial, you must select **Consent on behalf of your organization**.
 
         ![Consent for organization](./images/tutorial-access-package-api/consent-for-organization.png)
 
@@ -177,10 +177,10 @@ The response should only contain the catalog whose name you provided in the requ
 ### Add the group to the catalog
 
 To add the group that you created to the catalog, provide the following property values:
-- **catalogId** - the **id** of the catalog that you are using.
-- **displayName** - the name of the group.
-- **description** - the description of the group.
-- **originId** - the **id** of the group that you created.
+- **catalogId** - the **id** of the catalog that you are using
+- **displayName** - the name of the group
+- **description** - the description of the group
+- **originId** - the **id** of the group that you created
 
 #### Request
 
@@ -336,8 +336,7 @@ Content-type: application/json
 
 ### Add a resource role to the access package
 
-Add the Member role of the group resource to the access package. In the request, provide the **id** of the access package. In the request body provide the following values:
-- The **id** of the group catalog resource for the accessPackageResource, and the **originId** of the Member role that you previously recorded.
+Add the Member role of the group resource to the access package. In the request, provide the **id** of the access package. In the request body provide the **id** of the group catalog resource for accessPackageResource, and provide the **originId** of the Member role that you previously recorded.
 
 #### Request
 
@@ -543,7 +542,7 @@ You can also use the **id** of the access package policy that you created to see
 #### Request
 
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=accessPackageAssignmentPolicy/Id eq '6c1f65ec-8c25-4a45-83c2-a1de2a6d0e9f'
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=accessPackageAssignmentPolicy/Id eq 'db440482-1210-4a60-9b55-3ac7a72f63ba'
 ```
 
 #### Response
@@ -553,10 +552,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageAssignments",
   "value": [
     {
-      "id": "66a38bed-733f-4127-aaeb-743c93cf4409",
-      "catalogId": "ede67938-cda7-4127-a9ca-7c7bf86a19b7",
-      "accessPackageId": "cf54c6ca-d717-49bc-babe-d140d035dfdd",
-      "assignmentPolicyId": "6c1f65ec-8c25-4a45-83c2-a1de2a6d0e9f",
+      "id": "a6bb6942-3ae1-4259-9908-0133aaee9377",
+      "catalogId": "cec5d6ab-c75d-47c0-9c1c-92e89f66e384",
+      "accessPackageId": "88203d16-0e31-41d4-87b2-dd402f1435e9",
+      "assignmentPolicyId": "db440482-1210-4a60-9b55-3ac7a72f63ba",
       "targetId": "2bc42425-6dc5-4f2a-9ebb-7a7464481eb0",
       "assignmentStatus": "Delivered",
       "assignmentState": "Delivered",
@@ -574,7 +573,7 @@ After the request has been granted, you can use the **id** that you recorded for
 #### Request
 
 ```http
-GET https://graph.microsoft.com/beta/groups/a468eaea-ed6c-4290-98d2-a96bb1cb4209/members
+GET https://graph.microsoft.com/beta/groups/e93e24d1-2b65-4a6c-a1dd-654a12225487/members
 ```
 
 #### Response:
@@ -585,7 +584,7 @@ GET https://graph.microsoft.com/beta/groups/a468eaea-ed6c-4290-98d2-a96bb1cb4209
   "value": [
     {
       "@odata.type": "#microsoft.graph.user",
-      "id": "ce02eca8-752b-4ecf-ac29-aa9bccd87606",
+      "id": "007d1c7e-7fa8-4e33-b678-5e437acdcddc",
       "deletedDateTime": null,
       "accountEnabled": true,
       "ageGroup": null,
@@ -630,7 +629,7 @@ Content-type: application/json
 {
   "requestType": "AdminRemove",
   "accessPackageAssignment":{
-     "id": "66a38bed-733f-4127-aaeb-743c93cf4409"
+     "id": "a6bb6942-3ae1-4259-9908-0133aaee9377"
   }
 }
 ```
