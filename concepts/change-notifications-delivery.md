@@ -138,7 +138,7 @@ Before you can receive the notifications in your application, you'll need to cre
 
 > **Note:** Create a separate policy for the application that listens to Event Hubs messages instead of reusing the same connection string you set in Azure KeyVault. This ensures that each component of the solution has only the permissions it needs and follows the least permissions security principle.
 
-> **Note:** Your application receives validation messages whenever it creates a new subscription, you should ignore these notifications. The example below represents the body of a validation message.
+> **Note:** Your application receives validation messages whenever it creates a new subscription. You should ignore these notifications. The following example represents the body of a validation message.
 
 ```json
  {
