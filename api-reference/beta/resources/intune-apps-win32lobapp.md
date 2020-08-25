@@ -45,7 +45,7 @@ Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |owner|String|The owner of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|uploadState|Int32|The upload state. Possible values are: 0 - `Not Ready`, 1 - `Ready`, 2 - `Processing`. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -63,11 +63,13 @@ Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |minimumCpuSpeedInMHz|Int32|The value for the minimum CPU speed which is required to install this app.|
 |detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md) collection|The detection rules to detect Win32 Line of Business (LoB) app.|
 |requirementRules|[win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md) collection|The requirement rules to detect Win32 Line of Business (LoB) app.|
+|rules|[win32LobAppRule](../resources/intune-apps-win32lobapprule.md) collection|The detection and requirement rules for this app.|
 |installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|The install experience for this app.|
 |returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md) collection|The return codes for post installation behavior.|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|The MSI details if this Win32 app is an MSI app.|
 |setupFilePath|String|The relative path of the setup file in the encrypted Win32LobApp package.|
 |installLanguage|String|Not yet documented|
+|minimumSupportedWindowsRelease|String|The value for the minimum supported windows release.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -159,6 +161,18 @@ Here is a JSON representation of the resource.
       "detectionType": "String"
     }
   ],
+  "rules": [
+    {
+      "@odata.type": "microsoft.graph.win32LobAppRegistryRule",
+      "ruleType": "String",
+      "check32BitOn64System": true,
+      "keyPath": "String",
+      "valueName": "String",
+      "operationType": "String",
+      "operator": "String",
+      "comparisonValue": "String"
+    }
+  ],
   "installExperience": {
     "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
     "runAsAccount": "String",
@@ -182,7 +196,8 @@ Here is a JSON representation of the resource.
     "publisher": "String"
   },
   "setupFilePath": "String",
-  "installLanguage": "String"
+  "installLanguage": "String",
+  "minimumSupportedWindowsRelease": "String"
 }
 ```
 

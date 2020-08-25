@@ -33,6 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/managedDevices
+GET /deviceManagement/comanagedDevices
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices
 ```
@@ -62,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8628
+Content-Length: 8765
 
 {
   "value": [
@@ -87,6 +88,9 @@ Content-Length: 8628
         "operatingSystemLanguage": "Operating System Language value",
         "isSupervised": true,
         "isEncrypted": true,
+        "batterySerialNumber": "Battery Serial Number value",
+        "batteryHealthPercentage": 7,
+        "batteryChargeCycles": 3,
         "isSharedDevice": true,
         "sharedDeviceCachedUsers": [
           {

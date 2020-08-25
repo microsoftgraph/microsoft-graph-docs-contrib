@@ -1,4 +1,3 @@
-name: Graph Docs
 metadata:
   experimental: true
   experiment_id: "b8938daf-1bcb-4f"
@@ -39,8 +38,12 @@ items:
             href: /graph/tutorials/android
           - name: Angular
             href: /graph/tutorials/angular
+          - name: ASP.NET Core
+            href: /graph/tutorials/aspnet-core
           - name: ASP.NET
             href: /learn/modules/msgraph-build-aspnetmvc-apps
+          - name: Azure Functions
+            href: /graph/tutorials/azure-functions
           - name: Microsoft Flow
             href: /graph/tutorials/flow
           - name: iOS Objective-C
@@ -78,6 +81,16 @@ items:
         href: azuread-users-concept-overview.md
       - name: Groups
         href: office365-groups-concept-overview.md
+      - name: Applications
+        items:
+          - name: Overview
+            href: applications-concept-overview.md
+          - name: Automate SAML-based SSO configuration
+            href: application-saml-sso-configure-api.md
+          - name: Configure application proxy
+            href: application-proxy-configure-api.md
+          - name: Configure provisioning
+            href: application-provisioning-configure-api.md
       - name: Calendar
         displayName: Outlook
         items:
@@ -87,9 +100,9 @@ items:
             href: findmeetingtimes-example.md
           - name: Get free/busy schedule
             href: outlook-get-free-busy-schedule.md
-          - name: Propose new meeting times (preview)
+          - name: Propose new meeting times
             href: outlook-calendar-meeting-proposals.md
-          - name: Organize or attend online meetings
+          - name: Set event as online meeting
             href: outlook-calendar-online-meetings.md
           - name: Choose an online meeting API
             href: choose-online-meeting-api.md
@@ -119,12 +132,10 @@ items:
             href: cloud-communications-online-meetings.md
           - name: Choose an online meeting API
             href: choose-online-meeting-api.md
-          - name: Call records (preview)
+          - name: Call records
             href: cloud-communications-callrecords.md
           - name: Manage phone numbers for bots
             href: cloud-communications-phone-number.md
-          - name: Limits
-            href: cloud-communications-limits.md
       - name: Cross-device experiences
         displayName: Project Rome
         items:
@@ -176,7 +187,7 @@ items:
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
       - name: Financials (preview)
         href: dynamics-business-central-concept-overview.md
-        displayname: Dynamics, Dynamics 365 Business Central
+        displayName: Dynamics, Dynamics 365 Business Central
       - name: Identity and access
         displayName: Azure AD, Microsoft identity platform
         items:
@@ -263,6 +274,10 @@ items:
             href: social-intel-concept-overview.md
           - name: Get information about relevant people
             href: people-example.md
+          - name: Customize the profile card (preview)
+            href: add-properties-profilecard.md
+          - name: Customize insights privacy (preview)
+            href: insights-customize-item-insights-privacy.md
       - name: Personal contacts
         displayName: Outlook, Outlook contacts, Outlook contact, People
         items:
@@ -276,7 +291,7 @@ items:
         items:
           - name: Overview
             href: reportroot-concept-overview.md
-          - name: Authorization for Office 365 usage reports
+          - name: Authorization for Microsoft 365 usage reports
             href: reportroot-authorization.md
       - name: Search (preview)
         items:
@@ -333,8 +348,13 @@ items:
             href: teams-configuring-builtin-tabs.md
           - name: Protected APIs
             href: teams-protected-apis.md
+          - name: Licenses for subscribing to chat messages
+            href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: teams-proactive-messaging.md
+      - name: To-do tasks (preview)
+        href: todo-concept-overview.md
+        displayName: Microsoft To Do
       - name: Workbooks and charts
         displayName: Excel
         items:
@@ -350,6 +370,12 @@ items:
             href: excel-update-range-format.md
           - name: Write data to a workbook
             href: excel-write-to-workbook.md
+          - name: Best practices
+            href: workbook-best-practice.md
+          - name: Error codes
+            href: workbook-error-codes.md
+          - name: Error handling
+            href: workbook-error-handling.md
   - name: Develop
     expanded: true
     items:
@@ -394,11 +420,13 @@ items:
               - name: Overview
                 href: webhooks.md
               - name: Tutorial
-                href: /graph/tutorials/change-notifications
+                href: /learn/modules/msgraph-changenotifications-trackchanges
               - name: Missing Outlook notifications (preview)
                 href: webhooks-outlook-authz.md
               - name: Notifications with resource data (preview)
                 href: webhooks-with-resource-data.md
+              - name: Get notifications delivered different ways (preview)
+                href: change-notifications-delivery.md
           - name: Change tracking
             displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:
@@ -413,7 +441,7 @@ items:
               - name: Get changes to users (example)
                 href: delta-query-users.md
           - name: Add custom data
-            displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+            displayName: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
             items:
               - name: Overview
                 href: extensibility-overview.md
@@ -427,10 +455,8 @@ items:
         expanded: false
         items:
           - name: Azure AD Graph
-            displayname: Migration, Azure AD Graph
+            displayName: Migration, Azure AD Graph
             items:
-              - name: Overview
-                href: migrate-azure-ad-graph-overview.md
               - name: Checklist to migrate apps
                 href: migrate-azure-ad-graph-planning-checklist.md
               - name: "1: Review differences"
@@ -535,6 +561,6 @@ items:
           - name: Errors
             href: errors.md
       - name: v1.0 reference
-        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
+        href: /graph/api/overview?view=graph-rest-1.0
       - name: Beta reference
-        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
+        href: /graph/api/overview?view=graph-rest-beta

@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |---------|-------------|
 |Delegated (work or school account)| ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| ChannelMember.ReadWrite.All, Member.ReadWrite.Group ([RSC](https://aka.ms/teams-rsc)), Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application| ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
@@ -98,6 +98,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "create_conversation_member",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
 ```http

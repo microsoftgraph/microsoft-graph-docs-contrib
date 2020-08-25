@@ -4,7 +4,7 @@ description: "The response status of a meeting request."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "harini84"
 ---
 
 # responseStatus resource type

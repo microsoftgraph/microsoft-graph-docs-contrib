@@ -78,9 +78,8 @@ The following is a JSON representation of the resource.
   "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
   "importance": "string",
-  "locale": "string",
+  "locale": "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
