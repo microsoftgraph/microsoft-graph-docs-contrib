@@ -2,7 +2,7 @@
 title: "servicePlanInfo resource type"
 description: "Contains information about a service plan associated with a subscribed SKU. The **servicePlans** property of the subscribedSku entity is a collection of **servicePlanInfo**."
 localization_priority: Normal
-author: ""
+author: "krbain"
 ms.prod: ""
 doc_type: resourcePageType
 ---

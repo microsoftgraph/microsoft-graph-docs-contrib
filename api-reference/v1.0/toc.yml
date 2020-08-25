@@ -4757,6 +4757,8 @@ items:
         href: resources/team.md
         items:
         - name: Create team
+          href: api/team-post.md
+        - name: Create team from group
           href: api/team-put-teams.md
         - name: Get team
           href: api/team-get.md
@@ -4853,7 +4855,7 @@ items:
           href: api/teamsapp-list.md
         - name: Update app in catalog
           href: api/teamsapp-update.md
-        - name: Remove app from catalog
+        - name: Delete app from catalog
           href: api/teamsapp-delete.md
       - name: App
         items:

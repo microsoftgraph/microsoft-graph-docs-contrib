@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a secureScoreControlP
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
 # List secureScoreControlProfiles
