@@ -85,7 +85,6 @@ Note: The response object shown here may be truncated for brevity.
 } -->
 ```http
 HTTP/1.1 204 No Content
-Content-type: text/plain
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
