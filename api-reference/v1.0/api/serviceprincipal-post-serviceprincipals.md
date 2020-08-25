@@ -11,10 +11,10 @@ ms.prod: "microsoft-identity-platform"
 
 Namespace: microsoft.graph
 
-Create a new [servicePrincipal](../resources/serviceprincipal.md) object.
+Create a new [servicePrincipal](../resources/servicePrincipal.md) object.
 
 > [!IMPORTANT]
-> Adding [**passwordCredential**](../resources/passwordcredential.md) when creating servicePrincipals is not supported. Use the [addPassword](serviceprincipal-addpassword.md) method to add passwords for a servicePrincipal.
+> Adding [**passwordCredential**](../resources/passwordcredential.md) when creating servicePrincipals is not supported. Use the [addPassword](servicePrincipal-addpassword.md) method to add passwords for a servicePrincipal.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,11 +39,11 @@ POST /servicePrincipals
 | Content-Type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of a [serviceprincipal](../resources/serviceprincipal.md) object. The request body must contain  **appId**.
+In the request body, supply a JSON representation of a [servicePrincipal](../resources/servicePrincipal.md) object. The request body must contain  **appId**.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [serviceprincipal](../resources/serviceprincipal.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [servicePrincipal](../resources/servicePrincipal.md) object in the response body.
 
 ## Examples
 ### Request
@@ -53,10 +53,10 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_serviceprincipal_from_serviceprincipals"
+  "name": "create_serviceprincipal_from_servicePrincipals"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/serviceprincipals
+POST https://graph.microsoft.com/v1.0/servicePrincipals
 Content-type: application/json
 
 {
@@ -64,19 +64,19 @@ Content-type: application/json
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-serviceprincipal-from-serviceprincipals-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-serviceprincipal-from-servicePrincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-serviceprincipal-from-serviceprincipals-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-serviceprincipal-from-servicePrincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-serviceprincipal-from-serviceprincipals-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-serviceprincipal-from-servicePrincipals-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-serviceprincipal-from-serviceprincipals-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-serviceprincipal-from-servicePrincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
