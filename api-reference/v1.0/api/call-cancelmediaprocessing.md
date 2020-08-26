@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Cancels processing for any in-progress [play prompt](./call-playprompt.md) or [record response](./call-record.md) operations.
+Cancels processing for any in-progress media operations.
+
+Media operations refer to the IVR operations [PlayPrompt](./call-playprompt.md) and [RecordRespons](./call-record.md), which are by default queued to process in order. CancelMediaProcessing cancels any operation that is in-processed as well as operations that are queued. For example, this can be used to clean up an IVR operation queue for a new media operation. However, this will not cancel a SubscribeToTone operation since it operates independent of any operation queue.
 
 ## Permissions
 
