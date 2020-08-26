@@ -24,7 +24,7 @@ To represent the session in the API, use the `workbook-session-id: {session-id}`
 Suggested [error handling](workbook-error-handling.md) in Excel Graph is based on request type, error code and status code. Here is the definition for request types in Excel Graph.
 
 - **CreateSession request**: It's used to create either a persistent session or a non-persistent session as mentioned above. In the successful response, session Id will be returned by `id` in response body. See [create session](/graph/api/workbook-createsession?view=graph-rest-1.0) for more details.
-- **Sessionful request**: Subsequent requests follow with CreateSession request, they usually have `workbook-session-id: {session-id}` header in request. The exception is poll stataus request, which is in long-running operation pattern. See [working with APIs that take a long time to complete](https://docs.microsoft.com/en-us/graph/workbook-best-practice#working-with-apis-that-take-a-long-time-to-complete) for details.
+- **Sessionful request**: Subsequent requests follow with CreateSession request, they usually have `workbook-session-id: {session-id}` header in request. The exception is poll stataus request, which is in long-running operation pattern. See [working with APIs that take a long time to complete](https://docs.microsoft.com/graph/workbook-best-practice#working-with-apis-that-take-a-long-time-to-complete) for details.
 - **Sessionless request**: Sessionless request is used in Sessionless mode, which doesn't have `workbook-session-id: {session-id}` header.  
 
 
