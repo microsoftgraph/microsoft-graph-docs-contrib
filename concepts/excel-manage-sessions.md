@@ -21,12 +21,11 @@ To represent the session in the API, use the `workbook-session-id: {session-id}`
 >**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.  
 
 ## Request type
-Excel Graph will handle errors happen in above three modes by request types. Here we list the three types of request you can make in Excel.
+Suggested [error handling](workbook-error-handling.md) in Excel Graph is based on request type, error code and status code. Here is the definition for request types in Excel Graph.
 
-- **CreateSession request**: It's used to create either a persistent session or a non-persistent session. In the successful response, `{session-id}` will be used in request header afterwards. See [Create session](/graph/api/workbook-createsession?view=graph-rest-1.0) for more details.
-- **Sessionful request**: After session is successfully created, you can use the `workbook-session-id: {session-id}` header to send sessionful requests afterwards in this session. These sessionful requests include getting result or making changes in Excel file. Another kind of sessionful request is poll status request, which is used in long-running operation pattern. You can get the long-running status at specified location by using poll status request and values include `notStarted`, `running`, `succeeded`, and `failed`. See [best practice](/workbook-best-practice.md) for details on how to manage sessions and how to work with long-running operation pattern.
-- **Sessionless request**: Sessionless request does not pass a session Id.
-
+- **CreateSession request**: It's used to create either a persistent session or a non-persistent session as mentioned above. In the successful response, session Id will be returned by `id` in response body. See [create session](/graph/api/workbook-createsession?view=graph-rest-1.0) for more details.
+- **Sessionful request**: Subsequent requests follow with CreateSession request, they usually have `workbook-session-id: {session-id}` header in request. The exception is poll stataus request, which is in long-running operation pattern. See [working with APIs that take a long time to complete](https://docs.microsoft.com/en-us/graph/workbook-best-practice#working-with-apis-that-take-a-long-time-to-complete) for details.
+- **Sessionless request**: Sessionless request is used in Sessionless mode, which doesn't have `workbook-session-id: {session-id}` header.  
 
 
 
