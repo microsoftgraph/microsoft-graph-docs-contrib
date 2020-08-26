@@ -138,6 +138,14 @@ Namespace: microsoft.graph
 | other              | 6     | An unspecified relationship to the user. |
 | unknownFutureValue | 7     | Marker value for future compatibility.   |
 
+### connectedOrganizationState values 
+
+|Members|
+|:---|
+|configured|
+|proposed|
+|unknownFutureValue|
+
 ### scheduleEntityTheme values
 
 | Member
