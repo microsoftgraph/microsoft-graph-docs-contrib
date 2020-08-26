@@ -51,6 +51,10 @@ In the request body, supply the values for relevant fields that should be update
 |guestUserRoleId|Guid| Represents role templateId for the role that should be granted to guest user. Refer to [List unifiedRoleDefinitions](https://docs.microsoft.com/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta&tabs=http) to find the list of available role templates. Only supported roles today are User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3), and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b). | 
 |enabledPreviewFeatures|Collection(string)| List of features enabled for private preview on the tenant. | 
 |blockMsolPowerShell|Boolean| To disable the use of MSOL PowerShell, set this property to `true`. Setting to `true` will also disable user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure AD Connect or Microsoft Graph. | 
+|defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultUserRolePermissions.md)| Specifies certain customizable permissions for default user role. | 
+|allowedToUseSSPR|Boolean| Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant. | 
+|allowedToSignUpEmailBasedSubscriptions|Boolean| Indicates whether users can sign up for email based subscriptions. | 
+|allowEmailVerifiedUsersToJoinOrganization|Boolean| Indicates whether a user can join the tenant by email validation. | 
 
 ## Response
 
@@ -124,6 +128,62 @@ The following is an example of the request.
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 {
   "blockMsolPowerShell": true
+}
+
+```
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+### Example 4: Update default user role's permission to create applications
+
+#### Request
+
+The following is an example of the request.
+
+```http
+PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+{
+    "defaultUserRolePermissions":
+    {
+      "allowedToCreateApps": false
+    }
+}
+
+```
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 5: Enable users to use SSPR
+
+#### Request
+
+The following is an example of the request.
+
+```http
+PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+{
+    "allowedToUseSSPR": true
 }
 
 ```
