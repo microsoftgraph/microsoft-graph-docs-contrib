@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve a list of [servicePrincipal](../resources/serviceprincipal.md) objects.
+Retrieve a list of [servicePrincipal](../resources/servicePrincipal.md) objects.
 
 ## Permissions
 
@@ -44,7 +44,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [servicePrincipal](../resources/serviceprincipal.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [servicePrincipal](../resources/servicePrincipal.md) objects in the response body.
 
 ## Examples
 ### Request
@@ -58,22 +58,22 @@ Here is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/serviceprincipals
+GET https://graph.microsoft.com/v1.0/servicePrincipals
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-serviceprincipal-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-servicePrincipal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-serviceprincipal-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-servicePrincipal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-serviceprincipal-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-servicePrincipal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-serviceprincipal-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-servicePrincipal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

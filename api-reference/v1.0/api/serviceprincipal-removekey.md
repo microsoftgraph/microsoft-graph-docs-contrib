@@ -11,11 +11,11 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Remove a key credential from a [servicePrincipal](../resources/serviceprincipal.md). This method along with [addKey](serviceprincipal-addkey.md) can be used by a servicePrincipal to automate rolling its expiring keys.
+Remove a key credential from a [servicePrincipal](../resources/servicePrincipal.md). This method along with [addKey](servicePrincipal-addkey.md) can be used by a servicePrincipal to automate rolling its expiring keys.
 
 > [!NOTE]
-> [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) and
-[Update servicePrincipal](../api/serviceprincipal-update.md) operations can continue to be used to add and update key credentials for any servicePrincipal with or without a user's context.
+> [Create servicePrincipal](../api/servicePrincipal-post-servicePrincipals.md) and
+[Update servicePrincipal](../api/servicePrincipal-update.md) operations can continue to be used to add and update key credentials for any servicePrincipal with or without a user's context.
 
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 
@@ -74,7 +74,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/serviceprincipals/{id}/removeKey
+POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/removeKey
 Content-Type: application/json
 
 {
@@ -83,19 +83,19 @@ Content-Type: application/json
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-removekey-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/servicePrincipal-removekey-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-removekey-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/servicePrincipal-removekey-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-removekey-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/servicePrincipal-removekey-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-removekey-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/servicePrincipal-removekey-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

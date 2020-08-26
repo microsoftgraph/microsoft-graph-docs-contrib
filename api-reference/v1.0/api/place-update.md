@@ -12,7 +12,7 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 
-Update the properties of [place](../resources/place.md) object, which can be a [room](../resources/room.md) or [roomList](../resources/roomlist.md). You can identify the **room** or **roomList** by specifying the **id** or **emailAddress** property.
+Update the properties of [place](../resources/place.md) object, which can be a [room](../resources/room.md) or [roomList](../resources/roomList.md). You can identify the **room** or **roomList** by specifying the **id** or **emailAddress** property.
 
 ## Permissions
 
@@ -150,7 +150,7 @@ Content-type: application/json
     "phone": "555-555-0100",
     "nickname": "Conf Room",
     "label": "100",
-    "capacity": "50",
+    "capacity": 50,
     "building": "1",
     "floorLabel": "1P",
     "floorNumber": 1,
@@ -176,14 +176,14 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_roomlist"
+  "name": "update_roomList"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/places/Building1RroomList@contoso.onmicrosoft.com
 Content-type: application/json
 
 {
-  "@odata.type": "microsoft.graph.roomlist",
+  "@odata.type": "microsoft.graph.roomList",
   "displayName": "Building 1",
   "phone":"555-555-0100",
   "address": {
