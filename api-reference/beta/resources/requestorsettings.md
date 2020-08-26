@@ -23,7 +23,7 @@ Used for the **requestorSettings** property of an [access package assignment pol
 |Users in your directory with `userType` value of `member`|`AllExistingDirectoryMemberUsers`|empty array|
 |Users in your directory|`AllExistingDirectorySubjects`|empty array|
 |Users in specific other connected organizations already configured|`SpecificConnectedOrganizationSubjects`|[connectedOrganizationMembers](connectedorganizationmembers.md)|
-|Users from any other connected organizations already configured|`AllExistingConnectedOrganizationSubjects`|empty array|
+|Users from any other connected organizations with state=configured|`AllConfiguredConnectedOrganizationSubjects`|empty array|
 |Any user|`AllExternalSubjects`|empty array|
 
 ## Properties
