@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Continuous Access Evaluation (CAE) is Microsoft’s new approach to managing authentication sessions in real time. CAE allows customers to handle access to resources by supporting instant revocation events.  For more information, see the [Continuous Access Evaluation documentation](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-continuous-access-evaluation).
+Continuous Access Evaluation (CAE) is Microsoft’s new approach to managing authentication sessions in real time. CAE allows customers to handle access to resources by supporting instant revocation events.  For more information, see the [Continuous Access Evaluation documentation](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-continuous-access-evaluation).
 
 ## Methods
 |Method|Return type|Description|
