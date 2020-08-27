@@ -137,6 +137,7 @@ Content-length: 359
         "response": "response-value",
         "time": "datetime-value"
       },
+      "transactionId": null,
       "iCalUId": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,
       "isReminderOn": true
