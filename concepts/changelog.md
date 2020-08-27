@@ -80,11 +80,11 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added a new resource type to [Terms of Use agreement](/graph/api/resources/agreement?view=graph-rest-beta):</br>[agreementFile](/graph/api/resources/agreementfile?view=graph-rest-beta)|
 | Addition | beta | Added [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) internal and external sponsors to entitlement management.  |
 
-### People and workplace intelligence
+### People and workplace intelligence | Profile
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Addition | Beta | Added the following new relationships to [profile API](/graph/api/resources/profile?view=graph-rest-beta) with associated entities and methods: <ul><li>[addresses](/graph/api/resources/itemAddress?view=graph-rest-beta)</li><li>[anniversaries](/graph/api/resources/personAnniversary?view=graph-rest-beta)</li><li>[awards](/graph/api/resources/personAward?view=graph-rest-beta)</li><li>[certifications](/graph/api/resources/personCertification?view=graph-rest-beta)</li><li>[notes](/graph/api/resources/personAnnotation?view=graph-rest-beta)</li><li>[patents](/graph/api/resources/itemPatent?view=graph-rest-beta)</li><li>[publications](/graph/api/resources/itemPublication?view=graph-rest-beta)</li></ul>|
+| Addition | Beta | Added the following new relationships to the [profile](/graph/api/resources/profile?view=graph-rest-beta) API with associated entities and methods: <ul><li>[addresses](/graph/api/resources/itemAddress?view=graph-rest-beta)</li><li>[anniversaries](/graph/api/resources/personAnniversary?view=graph-rest-beta)</li><li>[awards](/graph/api/resources/personAward?view=graph-rest-beta)</li><li>[certifications](/graph/api/resources/personCertification?view=graph-rest-beta)</li><li>[notes](/graph/api/resources/personAnnotation?view=graph-rest-beta)</li><li>[patents](/graph/api/resources/itemPatent?view=graph-rest-beta)</li><li>[publications](/graph/api/resources/itemPublication?view=graph-rest-beta)</li></ul>|
 
 ### Reports | Microsoft 365 usage reports
 
@@ -105,6 +105,15 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta and v1.0|Added the **publishingState** property to the [teamsAppDefinition](/graph/api/resources/teamsappdefinition) resource.|
 |Addition|beta and v1.0|Added **AppCatalog.Submit** delegated permission to:<br><ul><li> [Publish apps](/graph/api/teamsapp-publish?view=graph-rest-beta)</li><li>[Delete app](/graph/api/teamsapp-delete)</li>|
 |Addition|beta and v1.0|Added support for the `requiresReview` query parameter to:<br><ul><li> [Publish apps](/graph/api/teamsapp-publish?view=graph-rest-beta)</li><li>[Update app](/graph/api/teamsapp-update?view=graph-rest-beta)|
+|Addition|v1.0|Added support for [creating a team](/graph/api/team-post?view=graph-rest-1.0) directly (without first creating a group), which also enables creating class teams.|
+|Addition | v1.0 | Added the [members](/graph/api/team-post-members?view=graph-rest-1.0) navigation property to the [team](/graph/api/resources/team?view=graph-rest-1.0) resource type, enabling members to be added with increased reliability and lower latency.|
+
+### To-do tasks 
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Introduced the To Do API. Added the [todoTask](/graph/api/resources/todotask?view=graph-rest-beta), [todoTaskList](/graph/api/resources/todotasklist?view=graph-rest-beta), and [linkedResource](/graph/api/resources/linkedresource?view=graph-rest-beta) resources, and CRUD operations.|
+|Change|beta|Deprecated the Outlook tasks API, including [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-beta), [outlookTaskFolder](/graph/api/resources/outlooktaskfolder?view=graph-rest-beta), [outlookTaskGroup](/graph/api/resources/outlooktaskgroup?view=graph-rest-beta), and related operations and methods.|
 
 ## July 2020
 

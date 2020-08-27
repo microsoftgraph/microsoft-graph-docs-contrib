@@ -140,6 +140,9 @@ This resource supports:
 | **User settings** |||
 | [Get settings](../api/usersettings-get.md) | [userSettings](usersettings.md) | Read the user and organization settings object. |
 | [Update settings](../api/usersettings-update.md) | [userSettings](usersettings.md) | Update the properties of the settings object. |
+| **Todo tasklists** |||
+|[List lists](../api/todo-list-lists.md) | [todoTaskList](todotasklist.md) collection | Get all the task lists in the user's mailbox. |
+|[Create todoTasklist](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Create a To Do task list in the user's mailbox. |
 
 ## Properties
 
@@ -167,7 +170,7 @@ This resource supports:
 | faxNumber | String | The fax number of the user. <br><br>Returned only on $select. |
 | givenName | String | The given name (first name) of the user. <br><br>Returned by default. Supports $filter.|
 | hireDate | DateTimeOffset | The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` <br><br>Returned only on $select. |
-| id | String | The unique identifier for the user. Inherited from [directoryObject](directoryobject.md). <br><br>Returned by default. Not nullable. Read-only.|
+| id | String | The unique identifier for the user. Should be treated as an opaque identifier. Inherited from [directoryObject](directoryobject.md). <br><br>Returned by default. Not nullable. Read-only.|
 | identities | [objectIdentity](objectIdentity.md) collection | Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. May contain multiple items with the same **signInType** value. <br><br>Returned only on $select. Supports $filter. |
 | imAddresses | String collection | The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only.|
 | infoCatalogs | String collection | Identifies the info segments assigned to the user. Returned by default. |
@@ -296,7 +299,7 @@ The age group and minor consent properties are optional properties used by Azure
 |scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) collection| The scoped-role administrative unit memberships for this user. Read-only. Nullable.|
 |settings|[userSettings](usersettings.md) | Read-only. Nullable.|
 |teamwork|[userTeamwork](userteamwork.md)| A container for Microsoft Teams features available for the user. Read-only. Nullable.|
-
+|todo|[todo](todo.md)|Represents the To Do services available to a user. |
 
 ### User preferences for languages and regional formats
 The **user** resource contains a [mailboxSettings](../resources/mailboxsettings.md) property which includes the user's preferred language, date and time formatting, default time zone, and other settings specifically for their primary Exchange mailbox. These preferences are targeted for mail clients and are only available if the user has a mailbox provisioned. You can choose to use **mailboxSettings** if your scenario focuses only on Outlook mail, calendar, contacts, or to-do tasks.
@@ -422,7 +425,7 @@ Here is a JSON representation of the resource
   "directReports": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "drive": {"@odata.type": "microsoft.graph.drive"},
   "drives": [{"@odata.type": "microsoft.graph.drive"}],
-  "insights": {"@odata.type": "microsoft.graph.iteminsights"},
+  "insights": {"@odata.type": "microsoft.graph.itemInsights"},
   "settings": {"@odata.type": "microsoft.graph.userSettings"},
   "events": [{"@odata.type": "microsoft.graph.event"}],
   "extensions": [{"@odata.type": "microsoft.graph.extension"}],
