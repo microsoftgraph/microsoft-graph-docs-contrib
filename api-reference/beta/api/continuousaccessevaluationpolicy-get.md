@@ -70,17 +70,15 @@ The following is an example of the response.
 
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
 
 {
-  "value": {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/continuousAccessEvaluationPolicy/$entity",
-    "id": "00000000-0000-0000-0000-000000000006",
-    "description": "Continuous Access Evaluation automatically blocks access to resources and applications in near real time when a user's access is removed or a client IP address changes.",
-    "displayName": "Continuous Access Evaluation",
-    "isEnabled": true,
-    "users": [ "1608be63-df14-42a4-8932-1c9d963b026f" ],
-    "groups": [ "4308b567-df14-0000-8932-1c9d963b026f" ]
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/continuousAccessEvaluationPolicy/$entity",
+  "id": "00000000-0000-0000-0000-000000000006",
+  "description": "Continuous Access Evaluation automatically blocks access to resources and applications in near real time when a user's access is removed or a client IP address changes.",
+  "displayName": "Continuous Access Evaluation",
+  "isEnabled": true,
+  "users": [ "1608be63-df14-42a4-8932-1c9d963b026f" ],
+  "groups": [ "4308b567-df14-0000-8932-1c9d963b026f" ]
 }
 ```
