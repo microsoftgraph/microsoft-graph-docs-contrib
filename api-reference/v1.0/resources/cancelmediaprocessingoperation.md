@@ -1,6 +1,6 @@
 --- 
-title: "CancelMediaProcessingOperation resource type"
-description: "This resource type is used to describe the response format of Media processing cancel operation."
+title: "cancelMediaProcessingOperation resource type"
+description: "This resource type is used to describe the response format of the cancel media processing operation."
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Describes the response format of media processing cancel operation.
+Describes the response format of the cancel media processing operation.
 
 ## Properties
 
@@ -24,7 +24,7 @@ Describes the response format of media processing cancel operation.
 | status        | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. |
 
 ## Relationships
-None
+None.
 
 ## JSON representation
 
