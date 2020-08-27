@@ -129,8 +129,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_built_in_role_unifiedroledefinition"
@@ -211,8 +209,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_inheritsFrom_unifiedroledefinition"
