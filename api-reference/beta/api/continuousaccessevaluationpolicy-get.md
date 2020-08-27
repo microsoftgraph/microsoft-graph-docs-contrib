@@ -59,6 +59,15 @@ GET https://graph.microsoft.com/beta/identity/continuousAccessEvaluationPolicy
 
 
 ### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.continuousAccessEvaluationPolicy"
+} -->
+
 ``` http
 HTTP/1.1 200 OK
 
