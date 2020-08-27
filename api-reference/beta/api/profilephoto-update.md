@@ -45,6 +45,9 @@ PUT /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
+
+*To update photo for a team, use `PUT /groups/{teamId}/photo/$value`*
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
