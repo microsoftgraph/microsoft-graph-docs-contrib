@@ -144,7 +144,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-### Example 4: Update default user role's permission to create applications
+### Example 4: Disable default user role's permission to create applications
 
 #### Request
 
@@ -174,7 +174,7 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 5: Enable users to use SSPR
+### Example 5: Enable default user role to use Self-Serve Password Reset feature
 
 #### Request
 
