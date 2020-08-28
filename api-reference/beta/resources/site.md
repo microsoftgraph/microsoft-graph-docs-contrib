@@ -86,6 +86,7 @@ The `root` identifier always references the root site for a given target, as fol
 | **lists**         | Collection([list][])             | The collection of lists under this site.
 | **pages**         | Collection([sitePage][])         | The collection of pages in the SitePages list in this site.
 | **sites**         | Collection([site][])             | The collection of the sub-sites under this site.
+| **externalColumns**     | Collection([columnDefinition][])  | The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
@@ -138,7 +139,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
-
+  "externalColumns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   /* inherited from baseItem */
   "name": "string",
   "createdDateTime": "datetime",

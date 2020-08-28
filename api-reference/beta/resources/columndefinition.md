@@ -47,7 +47,18 @@ Here is a JSON representation of a columnDefinition resource.
   "lookup": { "@odata.type": "microsoft.graph.lookupColumn" },
   "number": { "@odata.type": "microsoft.graph.numberColumn" },
   "personOrGroup": { "@odata.type": "microsoft.graph.personOrGroupColumn" },
-  "text": { "@odata.type": "microsoft.graph.textColumn" }
+  "text": { "@odata.type": "microsoft.graph.textColumn" },
+  "isDeletable" : false,
+  "propagateChanges": false,
+  "isReorderable": false,
+  "isSealed": false,
+  "validation": { "@odata.type": "microsoft.graph.columnValidation" },
+  "hyperlinkOrPicture": { "@odata.type": "microsoft.graph.hyperlinkOrPictureColumn" },
+  "term": { "@odata.type": "microsoft.graph.termColumn" },
+  "sourceContentType": { "@odata.type": "microsoft.graph.contentTypeInfo" },
+  "thumbnail": { "@odata.type": "microsoft.graph.thumbnailColumn" },
+  "type": { "@odata.type": "microsoft.graph.columnTypes" },
+  "contentApprovalStatus": { "@odata.type": "microsoft.graph.contentApprovalStatusColumn" }
 }
 ```
 
@@ -80,6 +91,19 @@ The type-related properties (boolean, calculated, choice, currency, dateTime, lo
 | **number**        | [numberColumn][]        | This column stores number values.
 | **personOrGroup** | [personOrGroupColumn][] | This column stores Person or Group values.
 | **text**          | [textColumn][]          | This column stores text values.
+| **isDeletable**       | boolean | Indicates whether this column can be deleted.
+| **propagateChanges**     | boolean | If 'True' changes to this column will be propagated to lists that implement the column. 
+| **isReorderable**         | boolean | Indicates whether values in the column can be reordered. Read-only.
+| **isSealed**              | boolean | Specifies whether column can be changed.
+| **validation**   |  [columnValidation][]    | This column stores validation formula and message for the column. 
+| **hyperlinkOrPicture**  | [hyperlinkOrPictureColumn][] | This column stores hyperlink or picture values. 
+| **term**     | [termColumn][] | This column stores taxonomy terms.
+| **sourceContentType**   |[contentTypeInfo][]  | ContentType from which this column is inherited from. Used only while fetching contentTypes columns | No | No
+| **thumbnail**           |[thumbnailColumn][]      | This column stores thumbnail values. | No | No
+| **type**         | [columnTypes][]  | For site columns, the type of column. | No | Yes
+| **contentApprovalStatus**| [contentApprovalStatusColumn][]     | This column stores content approval status.
+
+
 
 >**Note:** These properties correspond to SharePoint's [SPFieldType][] enumeration.
 While the most common field types are represented in the previous table, this beta API is still missing some.
