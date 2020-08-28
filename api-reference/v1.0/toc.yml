@@ -122,6 +122,8 @@ items:
         href: /graph/sdks/batch-requests?context=graph/api/1.0
       - name: Upload large files
         href: /graph/sdks/large-file-upload?context=graph/api/1.0
+      - name: Use beta API
+        href: /graph/sdks/use-beta?context=graph/api/1.0
   - name: Use the toolkit
     items:
       - name: Toolkit overview
@@ -3527,7 +3529,7 @@ items:
         - name: Update schema extension
           href: api/schemaextension-update.md
         - name: Delete schema extension
-          href: api/schemaextension-delete.md 
+          href: api/schemaextension-delete.md
     - name: Files
       displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
       items:
@@ -3904,7 +3906,7 @@ items:
           href: resources/invitation.md
           items:
           - name: Create invitation
-            href: api/invitation-post.md    
+            href: api/invitation-post.md
         - name: Policy
           href: resources/policy-overview.md
           items:
@@ -4757,6 +4759,8 @@ items:
         href: resources/team.md
         items:
         - name: Create team
+          href: api/team-post.md
+        - name: Create team from group
           href: api/team-put-teams.md
         - name: Get team
           href: api/team-get.md
@@ -4853,7 +4857,7 @@ items:
           href: api/teamsapp-list.md
         - name: Update app in catalog
           href: api/teamsapp-update.md
-        - name: Remove app from catalog
+        - name: Delete app from catalog
           href: api/teamsapp-delete.md
       - name: App
         items:

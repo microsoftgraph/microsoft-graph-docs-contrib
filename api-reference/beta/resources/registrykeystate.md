@@ -4,7 +4,7 @@ description: "Contains information about registry key changes related to the ale
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
 # registryKeyState resource type

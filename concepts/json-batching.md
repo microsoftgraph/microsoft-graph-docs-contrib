@@ -178,5 +178,4 @@ For a list of current limitations related to batching, see [known issues][batchi
 
 ## See also
 
-For more information about the JSON batch request/response format, see the [OData JSON Format Version 4.01 specification][odata-4.01-json], section 18. Note that this specification is currently in a draft version, but is not expected to change.
-
+For more information about the JSON batch request/response format, see the [OData JSON Format Version 4.01 specification](http://docs.oasis-open.org/odata/odata-json-format/v4.01/odata-json-format-v4.01.html#sec_BatchRequestsandResponses), section _Batch Requests and Responses_.
