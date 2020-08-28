@@ -39,16 +39,16 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 Define the scope of the search request using the **entityTypes** property in the **query** request payload.
 The following table describes the types available to query and any of the permission required to access the data .
 
-| EntityType | Any of the scope required to access the items|
-|:------------------|:---------|
-|[message](message.md)|Mail.Read, Mail.ReadWrite|
-|[event](event.md) |Calendars.Read, Calendars.ReadWrite|
-|[driveItem](driveitem.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All|
-|[drive](drive.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All|
-|[list](list.md)|Sites.Read.All, Sites.ReadWrite.All|
-|[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All|
-|[site](site.md)|Sites.Read.All, Sites.ReadWrite.All|
-|[externalItem](externalitem.md)|ExternalItem.Read.All|
+| EntityType | Permission scope required to access the items| Source| Comment|
+|:------------------|:---------|:---------|:---------|
+|[message](message.md)|Mail.Read, Mail.ReadWrite| Exchange| emails|
+|[event](event.md) |Calendars.Read, Calendars.ReadWrite| Exchange|calendar events |
+|[driveItem](driveitem.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | files, folders, pages, news |
+|[drive](drive.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint | Document Libraries|
+|[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Lists. Note that Document Libraries will also be returned under **list** |
+|[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | ListItems. Note that Files and folders will also be returned under **listItem** |
+|[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint |  |
+|[externalItem](externalitem.md)|ExternalItem.Read.All| Connectors| | 
 
 ## Page search results
 
@@ -91,7 +91,7 @@ For **externalItem** and **listItem** entity, they are the only entities which e
 
 if the **stored_fields** don't exist, they will be returned as empty in the **fields** in the response.
 
-TODO : Add a sample for specifying fields in the learn section. 1. For OOB Schema, 2. For ListItem , ExternalItem. 3. For files (using the listItem).
+TODOSEARCHAPI : Link to the Learn section sample for files.
 
 ## Keyword Query Language (KQL) support
 
@@ -116,7 +116,7 @@ Link to the sort sample
 
 The search API returns error responses as defined by [OData error object definition](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), each of which is a JSON object containing a code and a message.
 
-<!---TODO Describe the know errors : bad requests.--->
+<!---TODOSEARCHAPI Describe the know errors : bad requests.--->
 
 ## Known limitations
 
@@ -128,7 +128,7 @@ The search API has the following limitations:
 Any combination involving **messages**, **events**, Sharepoint and OneDrive types , or **externalItem** is currently not supported.  
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
-<!--todo nmoreauteam Fix the link to ContentSource  pls provide the content source url--->
+<!--todosearchAPI nmoreauteam Fix the link to ContentSource  pls provide the content source url--->
 
 - The search API does not support custom sort for **message**, **event** or and **externalItem**. The default sort is the following
 
@@ -136,7 +136,7 @@ Any combination involving **messages**, **events**, Sharepoint and OneDrive type
 
   - Sort **driveItem**, or **externalItem** type results by relevance.
 
-<!---TODO Make a pass on the spec on the big current limitations--->
+<!---TODOSEARCHAPI Make a pass on the spec on the big current limitations--->
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
