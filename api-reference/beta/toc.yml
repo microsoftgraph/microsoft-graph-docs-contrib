@@ -10141,7 +10141,7 @@ items:
                href: api/b2cuserflows-get.md
              - name: List identity providers
                href: api/b2cuserflows-list-identityproviders.md
-             - name: Update identity provider
+             - name: Add identity provider
                href: api/b2cuserflows-update-identityprovider.md
              - name: Delete identity provider
                href: api/b2cuserflows-delete-identityprovider.md
@@ -10158,7 +10158,7 @@ items:
                href: api/b2xuserflows-delete.md
              - name: List identity providers
                href: api/b2xuserflows-list-identityproviders.md
-             - name: Update identity provider
+             - name: Add identity provider
                href: api/b2xuserflows-update-identityprovider.md
              - name: Delete identity provider
                href: api/b2xuserflows-delete-identityprovider.md
