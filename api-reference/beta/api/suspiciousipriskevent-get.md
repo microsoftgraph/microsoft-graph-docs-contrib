@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 author: "cloudhandler"
 ---
 
-# Get suspiciousIpRiskEvent
+# Get suspiciousIpRiskEvent (deprecated)
 
 Namespace: microsoft.graph
 

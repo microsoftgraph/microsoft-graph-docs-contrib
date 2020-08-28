@@ -7,7 +7,7 @@ author: "cloudhandler"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Get leakedCredentialsRiskEvent
+# Get leakedCredentialsRiskEvent (deprecated)
 
 Namespace: microsoft.graph
 

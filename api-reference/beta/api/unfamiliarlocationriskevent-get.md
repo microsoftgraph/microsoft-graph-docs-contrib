@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 author: "cloudhandler"
 ---
 
-# Get unfamiliarLocationRiskEvent
+# Get unfamiliarLocationRiskEvent (deprecated)
 
 Namespace: microsoft.graph
 

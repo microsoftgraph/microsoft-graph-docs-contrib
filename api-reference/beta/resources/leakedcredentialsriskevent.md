@@ -7,7 +7,7 @@ ms.prod: ""
 author: "cloudhandler"
 ---
 
-# leakedCredentialsRiskEvent resource type
+# leakedCredentialsRiskEvent resource type (deprecated)
 
 Namespace: microsoft.graph
 

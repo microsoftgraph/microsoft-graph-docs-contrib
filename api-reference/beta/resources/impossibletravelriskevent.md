@@ -7,7 +7,7 @@ ms.prod: ""
 author: "cloudhandler"
 ---
 
-# impossibleTravelRiskEvent resource type
+# impossibleTravelRiskEvent resource type (deprecated)
 
 Namespace: microsoft.graph
 

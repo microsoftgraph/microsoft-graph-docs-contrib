@@ -7,7 +7,7 @@ author: "cloudhandler"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List impossibleTravelRiskEvents
+# List impossibleTravelRiskEvents (deprecated)
 
 Namespace: microsoft.graph
 

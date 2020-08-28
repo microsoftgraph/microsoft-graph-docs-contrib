@@ -7,7 +7,7 @@ ms.prod: ""
 author: "cloudhandler"
 ---
 
-# suspiciousIpRiskEvent resource type
+# suspiciousIpRiskEvent resource type (deprecated)
 
 Namespace: microsoft.graph
 

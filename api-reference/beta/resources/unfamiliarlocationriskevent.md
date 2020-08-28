@@ -7,7 +7,7 @@ ms.prod: ""
 author: "cloudhandler"
 ---
 
-# unfamiliarLocationRiskEvent resource type
+# unfamiliarLocationRiskEvent resource type (deprecated)
 
 Namespace: microsoft.graph
 

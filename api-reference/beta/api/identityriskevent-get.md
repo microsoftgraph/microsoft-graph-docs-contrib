@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Get identityRiskEvent
+# Get identityRiskEvent (deprecated)
 
 Namespace: microsoft.graph
 
