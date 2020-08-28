@@ -25,12 +25,13 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 
 | Use cases | Properties to define in the query request body |
 |:------------------|:---------|
-|[Scope search based on entity types](#scope-search-based-on-entity-types)| **entityTypes** |
+|[Scope search results based on entity types](#scope-search-based-on-entity-types)| **entityTypes** |
 |[Page results](#page-search-results) | **from** and **size** |
 |[Get the most relevant emails](#get-the-most-relevant-emails) | **enableTopResults** |
 |[Get selected properties](#get-selected-properties) | **stored_fields** |
 |[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
-|[Search external Files](/graph/search-concept-files)| **entityTypes** |
+|[Sort search results](#sort-search-results)| **sort** |
+|[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
 |[Search within a specific contentSource (indexing API)](/graph/search-concept-custom-types)| **contentSources** |
 
 ## Scope search based on entity types
@@ -101,6 +102,16 @@ Depending on the entity type, the searchable properties vary. For details, see:
 - [Email properties](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties)
 - [Site properties](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
 
+## Sort search results
+
+TODOSEARCHAPI@nmoreau
+Link to the sort sample
+
+## Refine results using aggregations
+
+TODOSEARCHAPI@nmoreau
+Link to the sort sample
+
 ## Error handling
 
 The search API returns error responses as defined by [OData error object definition](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), each of which is a JSON object containing a code and a message.
@@ -113,16 +124,19 @@ The search API has the following limitations:
 
 - The **query** method is defined to allow passing a collection of one or more **searchRequest** instances at once. However, the service currently supports only a single [searchRequest](./searchrequest.md) at a time.
 
-- The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. However, currently the only supported combination is **driveItem** and **externalFile**. Other combinations are invalid.
+- The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. However, currently the only supported combination is for Sharepoint and OneDrive entityTypes : **driveItem**, **drive**, **site**, **list**, **listItem**.
+Any combination involving **messages**, **events**, Sharepoint and OneDrive types , or **externalItem** is currently not supported.  
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 <!--todo nmoreauteam Fix the link to ContentSource  pls provide the content source url--->
 
-- The search API does not support custom sort and always sorts results in the following ways:
+- The search API does not support custom sort for **message**, **event** or and **externalItem**. The default sort is the following
 
   - Sort **message** or **event** type results by date.
 
-  - Sort **driveItem**, **externalFile**, or **externalItem** type results by relevance.
+  - Sort **driveItem**, or **externalItem** type results by relevance.
+
+<!---TODO Make a pass on the spec on the big current limitations--->
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

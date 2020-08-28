@@ -28,7 +28,7 @@ TODOSEARCHAPI - Bug 1653398
 
 ## Example
 
-In this example, the content of the [AdventureWorks](https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure) database has been ingested using the Azure SQL built-in connector.
+In this example, the content of the [AdventureWorks](https://docs.microsoft.com/sql/samples/adventureworks-install-configure) database has been ingested using the Azure SQL built-in connector.
 
 ### Request
 
