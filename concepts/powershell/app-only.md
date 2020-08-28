@@ -61,7 +61,7 @@ You can register the application either in the [Azure Active Directory portal](h
 
 1. Select **Certificates & secrets** under **Manage**. Select the **Upload certificate** button. Browse to your certificate's public key file and select **Add**.
 
-# [PowerShell] (#tab/azure-powershell)
+# [PowerShell](#tab/powershell)
 
 > [!NOTE]
 > You must have the Microsoft Graph PowerShell SDK [installed](installation.md) before following these steps.
