@@ -23,7 +23,7 @@ Identity Protection is a tool that allows organizations to discover, investigate
 
 * [identityRiskEvents](identityriskevent.md) - Query Microsoft Graph for a list of risk detections and associated information. This API is deprecated; we recommend that you use **riskDetections** instead.
 
->[!NOTE]
+>[!CAUTION]
 >The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020. For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 ## See also
