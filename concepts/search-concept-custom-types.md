@@ -8,14 +8,16 @@ ms.prod: "search"
 
 # Use the Microsoft Search API in Microsoft Graph to search custom types ingested with the Microsoft Graph connectors
 
-You can use the Microsoft Search API to search accross content ingested via the [Microsoft Graph connectors](https://docs.microsoft.com/en-us/microsoftsearch/connectors-overview). The content can have been imported either via the [built in connectors](https://docs.microsoft.com/en-us/microsoftsearch/connectors-gallery) provided by Microsoft, or via a custom connectors implemented through the [Graph Connectors ingestion API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta).
+You can use the Microsoft Search API to search accross content ingested via the [Microsoft Graph connectors](https://docs.microsoft.com/microsoftsearch/connectors-overview). The content can have been imported either via the [built in connectors](https://docs.microsoft.com/microsoftsearch/connectors-gallery) provided by Microsoft, or via a custom connectors implemented through the [Graph Connectors ingestion API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta).
+
+[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 Once the content has been ingested, you can use the search API to query that particular content.
-
 
 To search for custom types, specify the following in the [query](/graph/api/search-query?view=graph-rest-beta) method request body:
 
 - The **contentSources** property to include the connection ID that is assigned during the connector setup. It is possible to pass multiple connection ID to search accross multiple connections. The results will be a single list, ranked accross the multiple connections.
+
 <!--
 TODOSEARCHAPI - Bug 1653398 
 -->

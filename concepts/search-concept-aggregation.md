@@ -17,6 +17,8 @@ ENDTODO
 TODO : Define aggregations and the various possibilities
 Note that this page will be containing all the API details. So we should focus here on the key scenarios, not the specific API properties.
 
+[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
+
 ## Examples - TODO
 
 ### Example 1 : Request aggregations for a string property - TODO

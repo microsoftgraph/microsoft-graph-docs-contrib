@@ -19,7 +19,7 @@ Search requests run in the context of the signed-in user, identified using an [a
 
 ## Common use cases
 
-The Microsoft Search API provides a [query](../api/search-query.md) method to search across your data in Microsoft Search. This section lists the common use cases, based on the properties you set in the **query** request body.
+The Microsoft Search API provides a [query](../api/search-query.md) method to search across your data in Microsoft Search. This section lists the common use cases, based on the properties and parameteres you set in the **query** request body.
 
 Search requests run on behalf of the user. Search results are scoped to enforce any access control applied to the items.  For example, in the context of files, permissions on the files are evaluated as part of the search request. Users cannot access more items in a search than they can from the enumeration API.
 
@@ -33,7 +33,7 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Search external Files](/graph/search-concept-files)| **entityTypes** |
 |[Search within a specific contentSource (indexing API)](/graph/search-concept-custom-types)| **contentSources** |
 
-### Scope search based on entity types
+## Scope search based on entity types
 
 Define the scope of the search request using the **entityTypes** property in the **query** request payload.
 The following table describes the types available to query and any of the permission required to access the data .
@@ -49,7 +49,7 @@ The following table describes the types available to query and any of the permis
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All|
 |[externalItem](externalitem.md)|ExternalItem.Read.All|
 
-### Page search results
+## Page search results
 
 Control pagination of the search results by specifying the following two properties in the **query** request body:
 
@@ -76,11 +76,11 @@ Best practices:
     | 3    | 75 | 75 |
     | 4    | 150 | 100 |
 
-### Get the most relevant emails
+## Get the most relevant emails
 
 When searching the **message** entity, specifying **enableTopResults** as `true` returns a hybrid list of messages: the first three messages in the response are sorted by relevance; the remaining messages are sorted by date.
 
-### Get selected properties
+## Get selected properties
 
 When searching each kind of entity type, such as `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`, you can specify the **stored_fields** property to specify the fields to be returned in the response. This is equivalent to the [select parameter](/graph/query-parameters#select-parameter) in the REST calls. For search does not support any of those parameters since the behavior is expressed in the POST Body.
 
@@ -92,7 +92,7 @@ if the **stored_fields** don't exist, they will be returned as empty in the **fi
 
 TODO : Add a sample for specifying fields in the learn section. 1. For OOB Schema, 2. For ListItem , ExternalItem. 3. For files (using the listItem).
 
-### Keyword Query Language (KQL) support
+## Keyword Query Language (KQL) support
 
 Specify free text keywords, operators (such as `AND`, `OR`), and property restrictions in KQL syntax in the actual search query string (**query** property of the **query** request body). The syntax and command depend on the entity types (in the **entityTypes** property) you target in the same **query** request body.
 
