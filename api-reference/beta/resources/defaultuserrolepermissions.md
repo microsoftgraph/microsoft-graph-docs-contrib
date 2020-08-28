@@ -13,9 +13,6 @@ doc_type: "resourcePageType"
 
 Contains certains customizable permissions of default user role in Azure AD.
 
-## Methods
-None
-
 ## Properties
 
 | Property | Type | Description |
@@ -26,7 +23,7 @@ None
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
