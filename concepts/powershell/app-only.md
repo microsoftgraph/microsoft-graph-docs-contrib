@@ -29,7 +29,7 @@ You will need an X.509 certificate installed in your user's trusted store on the
 
 You can register the application either in the [Azure Active Directory admin center](https://aad.portal.azure.com), or using PowerShell.
 
-#### [Azure Active Directory admin center](#tab/admin-center)
+# [Azure Active Directory admin center](#tab/admin-center)
 
 1. Open a browser and navigate to the [Azure Active Directory admin center](https://aad.portal.azure.com) and login using an Microsoft 365 tenant organization admin.
 
@@ -61,7 +61,7 @@ You can register the application either in the [Azure Active Directory admin cen
 
 1. Select **Certificates & secrets** under **Manage**. Select the **Upload certificate** button. Browse to your certificate's public key file and select **Add**.
 
-#### [PowerShell] (#tab/powershell)
+# [PowerShell] (#tab/powershell)
 
 > [!NOTE]
 > You must have the Microsoft Graph PowerShell SDK [installed](installation.md) before following these steps.
