@@ -9878,9 +9878,10 @@ items:
         - name: Identity protection
           href: resources/identityprotection-root.md
           items:
-          - name: Identity risk events
-            href: resources/identityriskevent.md
+          - name: Identity risk events (deprecated)
             items:
+            - name: identityRiskEvent
+              href: resources/identityriskevent.md
             - name: List identityRiskEvent
               href: api/identityriskevent-list.md
             - name: Get identityRiskEvent
