@@ -9878,9 +9878,10 @@ items:
         - name: Identity protection
           href: resources/identityprotection-root.md
           items:
-          - name: Identity risk events
-            href: resources/identityriskevent.md
+          - name: Identity risk events (deprecated)
             items:
+            - name: Identity risk event
+              href: resources/identityriskevent.md
             - name: List identityRiskEvent
               href: api/identityriskevent-list.md
             - name: Get identityRiskEvent
@@ -9910,15 +9911,17 @@ items:
             - name: Get unfamiliarLocationRiskEvent
               href: api/unfamiliarlocationriskevent-get.md
           - name: Risk detection
-            href: resources/riskdetection.md
             items:
+            - name: Risk detection
+              href: resources/riskdetection.md
             - name: List risk detections
               href: api/riskdetection-list.md
             - name: Get risk detection
               href: api/riskdetection-get.md
           - name: Risky user
-            href: resources/riskyuser.md
             items:
+            - name: Risky user
+              href: resources/riskyuser.md
             - name: List risky users
               href: api/riskyusers-list.md
             - name: Get risky user
