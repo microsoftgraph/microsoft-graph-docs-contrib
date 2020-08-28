@@ -1,6 +1,6 @@
 ---
 title: "searchResponse resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Description of the searchResponse"
 localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"

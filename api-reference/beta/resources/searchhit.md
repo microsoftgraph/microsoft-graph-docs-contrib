@@ -1,6 +1,6 @@
 ---
 title: "searchHit resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Description of searchHit entity"
 localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"

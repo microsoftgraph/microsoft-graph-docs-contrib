@@ -1,8 +1,4 @@
-TODOSEARCHAPI@Lan Can you please take a stab at this page describing the key scenario for Sharepoint---
-- One example from sharepoint
-- Document the known limitations
-- The whole page below was copied from the Sharepoint File sample page. You should use the same structure. https://docs.microsoft.com/en-us/graph/search-concept-files
-
+---
 title: "Use the Microsoft Search API in Microsoft Graph to search files"
 description: "You can use the Microsoft Search API to search files stored in SharePoint or OneDrive."
 author: "nmoreau"
@@ -12,11 +8,13 @@ ms.prod: "search"
 
 # Use the Microsoft Search API in Microsoft Graph to search files
 
+TODOSEARCHAPI@Lan Can you please take a stab at this page describing the key scenario for Sharepoint---
+- One example from sharepoint
+- Document the known limitations
+- The whole page below was copied from the Sharepoint File sample page. You should use the same structure. https://docs.microsoft.com/en-us/graph/search-concept-files
+ENDTODO
+
 You can use the Microsoft Search API to search files stored in SharePoint or OneDrive. The Microsoft Search API uses a relevance model that makes use of signals from Microsoft Graph about users' relationships and activities. This enables you to return and promote the content that users care about, in a file search experience that is consistent with the **Files** tab that lists search results in SharePoint.
-
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
-
-## Search SharePoint or OneDrive files
 
 You can use KQL in search terms of queries for SharePoint and OneDrive. For example:
 
@@ -25,9 +23,9 @@ You can use KQL in search terms of queries for SharePoint and OneDrive. For exam
 
 In order to be valid, properties restriction should specify a valid, queryable managed property name in the condition.
 
-### Example
+## Example
 
-#### Request
+### Request
 
 ```HTTP
 POST /search/query
@@ -53,9 +51,8 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
 
-<!---TODO nmoreau team Include one example of externalItem response.-->
 ```json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",

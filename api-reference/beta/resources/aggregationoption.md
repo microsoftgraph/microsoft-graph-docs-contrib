@@ -1,6 +1,6 @@
 ---
 title: "search: aggregationOption"
-description: "Specified which should be returned alongside the search results."
+description: "Specifies the aggregationOption entity"
 localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
