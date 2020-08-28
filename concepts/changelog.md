@@ -32,6 +32,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Deletion | Beta | Removed the **includeProperties** property from the [subscription](/graph/api/resources/subscription?view=graph-rest-beta) entity. This property is replaced by the **includeResourceData** property. |
 | Addition | Beta | Added the ability to get [change notifications delivered via Event Hub](change-notifications-delivery.md). |
 
+### Cloud communications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta and v1.0 | Added the **transcription** property to the [call](/graph/api/resources/call) entity.|
+| Addition | v1.0 | Added the **cancelMediaProcessing** API to the [call](/graph/api/resources/call) entity.|
+
 ### Devices and apps | Cloud printing
 
 | **Change type** | **Version**   | **Description**                          |
@@ -115,13 +122,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |:---|:---|:---|
 |Addition|beta|Introduced the To Do API. Added the [todoTask](/graph/api/resources/todotask?view=graph-rest-beta), [todoTaskList](/graph/api/resources/todotasklist?view=graph-rest-beta), and [linkedResource](/graph/api/resources/linkedresource?view=graph-rest-beta) resources, and CRUD operations.|
 |Change|beta|Deprecated the Outlook tasks API, including [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-beta), [outlookTaskFolder](/graph/api/resources/outlooktaskfolder?view=graph-rest-beta), [outlookTaskGroup](/graph/api/resources/outlooktaskgroup?view=graph-rest-beta), and related operations and methods.|
-
-### Cloud communications
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta and v1.0 | Added the **transcription** property to the [call](/graph/api/resources/call) entity.|
-| Addition | v1.0 | Added **cancelMediaProcessing** API to [call](/graph/api/resources/call) in v1.0.|
 
 ## July 2020
 
