@@ -126,6 +126,8 @@ items:
         href: /graph/sdks/batch-requests?context=graph/api/beta
       - name: Upload large files
         href: /graph/sdks/large-file-upload?context=graph/api/beta
+      - name: Use beta API
+        href: /graph/sdks/use-beta?context=graph/api/beta
   - name: Use the toolkit
     items:
       - name: Toolkit overview
@@ -417,7 +419,7 @@ items:
         - name: Get
           href: api/regionalandlanguagesettings-get.md
         - name: Update
-          href: api/regionalandlanguagesettings-update.md   
+          href: api/regionalandlanguagesettings-update.md
       - name: Profile (preview)
         items:
         - name: Profile
@@ -425,7 +427,7 @@ items:
         - name: Get user's profile
           href: api/profile-get.md
         - name: Delete user's profile
-          href: api/profile-delete.md      
+          href: api/profile-delete.md
       - name: Teamwork
         items:
         - name: Installed app
@@ -692,7 +694,7 @@ items:
         - name: Get open extension
           href: api/opentypeextension-get.md
     - name: Applications
-      items: 
+      items:
       - name: Application
         href: resources/application.md
         items:
@@ -830,18 +832,18 @@ items:
           - name: Get
             href: api/connector-get.md
           - name: List memberOf
-            href: api/connector-list-memberof.md 
+            href: api/connector-list-memberof.md
           - name: Add connector to connectorGroup
             href: api/connector-post-memberof.md
         - name: Connector group
           href: resources/connectorgroup.md
           items:
-          - name: List                 
+          - name: List
             href: api/connectorgroup-list.md
           - name: Create
-            href: api/connectorgroup-post.md               
+            href: api/connectorgroup-post.md
           - name: Get
-            href: api/connectorgroup-get.md 
+            href: api/connectorgroup-get.md
           - name: Update
             href: api/connectorgroup-update.md
           - name: Delete
@@ -980,12 +982,12 @@ items:
         - name: Synchronize directory extension attributes
           href: resources/synchronization-configure-with-directory-extension-attributes.md
         - name: Acquire access token
-          href: api/synchronization-synchronization-acquireaccesstoken.md 
+          href: api/synchronization-synchronization-acquireaccesstoken.md
         - name: Directory definition
           href: resources/synchronization-directorydefinition.md
           items:
           - name: Discover
-            href: api/directorydefinition-discover.md  
+            href: api/directorydefinition-discover.md
         - name: Job
           href: resources/synchronization-synchronizationjob.md
           items:
@@ -9685,7 +9687,7 @@ items:
           - name: Create appliesTo
             href: api/featurerolloutpolicy-post-appliesto.md
           - name: Delete appliesTo
-            href: api/featurerolloutpolicy-delete-appliesto.md      
+            href: api/featurerolloutpolicy-delete-appliesto.md
         - name: Organization
           href: resources/organization.md
           items:
@@ -10130,7 +10132,7 @@ items:
           - name: Delete
             href: api/identityuserflow-delete.md
       - name: Governance
-        items: 
+        items:
         - name: Access reviews
           href: resources/accessreviews-root.md
           items:
@@ -10739,13 +10741,13 @@ items:
           - name: List
             href: api/profile-list-accounts.md
           - name: Create
-            href: api/profile-post-accounts.md  
+            href: api/profile-post-accounts.md
           - name: Get
             href: api/useraccountinformation-get.md
           - name: Update
             href: api/useraccountinformation-update.md
           - name: Delete
-            href: api/useraccountinformation-delete.md  
+            href: api/useraccountinformation-delete.md
         - name: Addresses
           items:
           - name: Item address
@@ -11016,16 +11018,16 @@ items:
         items:
         - name: Profile card property
           href: resources/profilecardproperty.md
-        - name: List 
+        - name: List
           href: api/organizationsettings-list-profilecardproperties.md
         - name: Create
-          href: api/organizationsettings-post-profilecardproperties.md  
+          href: api/organizationsettings-post-profilecardproperties.md
         - name: Get
-          href: api/profilecardproperty-get.md    
+          href: api/profilecardproperty-get.md
         - name: Update
-          href: api/profilecardproperty-update.md  
+          href: api/profilecardproperty-update.md
         - name: Delete
-          href: api/profilecardproperty-delete.md    
+          href: api/profilecardproperty-delete.md
       - name: Insights
         href: resources/iteminsights.md
         items:
@@ -11663,48 +11665,48 @@ items:
           href: resources/termstore-store.md
           items:
           - name: Get
-            href: api/termstore-store-get.md        
+            href: api/termstore-store-get.md
           - name: Update
             href: api/termstore-store-update.md
-        - name: Group        
+        - name: Group
           href: resources/termstore-group.md
-          items:        
+          items:
           - name: Create
             href: api/termstore-group-post.md
-          - name: Get 
-            href: api/termstore-store-get-group.md          
+          - name: Get
+            href: api/termstore-store-get-group.md
           - name: Delete
-            href: api/termstore-group-delete.md   
-          - name: List  
+            href: api/termstore-group-delete.md
+          - name: List
             href: api/termstore-list-groups.md
         - name: Set
           href: resources/termstore-set.md
           items:
-          - name: List 
+          - name: List
             href: api/termstore-group-list-sets.md
           - name: List children
             href: api/termstore-term-list-children.md
-          - name: Create 
-            href: api/termstore-set-post.md  
-          - name: Get 
+          - name: Create
+            href: api/termstore-set-post.md
+          - name: Get
             href: api/termstore-set-get.md
-          - name: Update 
+          - name: Update
             href: api/termstore-set-update.md
-          - name: Delete 
-            href: api/termstore-set-delete.md                  
+          - name: Delete
+            href: api/termstore-set-delete.md
         - name: Term
           href: resources/termstore-term.md
           items:
           - name: List children
-            href: api/termstore-term-list-children.md  
-          - name: Create 
-            href: api/termstore-term-post.md      
-          - name: Get 
+            href: api/termstore-term-list-children.md
+          - name: Create
+            href: api/termstore-term-post.md
+          - name: Get
             href: api/termstore-term-get.md
           - name: Update
             href: api/termstore-term-update.md
-          - name: Delete 
-            href: api/termstore-term-delete.md                     
+          - name: Delete
+            href: api/termstore-term-delete.md
         - name: Relation
           href: resources/termstore-relation.md
           items:
@@ -12224,7 +12226,7 @@ items:
         - name: Delete task list
           href: api/todotasklist-delete.md
         - name: Get task list delta
-          href: api/todotasklist-delta.md 
+          href: api/todotasklist-delta.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
@@ -12496,4 +12498,4 @@ items:
         - name: Add named item
           href: api/nameditem-add.md
         - name: List range
-          href: api/nameditem-range.md      
+          href: api/nameditem-range.md
