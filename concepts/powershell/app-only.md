@@ -25,6 +25,13 @@ Before you can use app-only access with the SDK, you need the following.
 
 You will need an X.509 certificate installed in your user's trusted store on the machine where you will run the script. You'll also need the certificate's public key exported in .cer, .pem, or .crt format. You'll need the value of the certificate subject.
 
+```powershell
+# Requires an admin
+Connect-Graph -Scopes "Application.ReadWrite.All"
+
+$app = New-MgApplication -DisplayName "Graph PowerShell Script"
+```
+
 ### Register the application
 
 1. Open a browser and navigate to the [Azure Active Directory admin center](https://aad.portal.azure.com) and login using an Microsoft 365 tenant organization admin.
