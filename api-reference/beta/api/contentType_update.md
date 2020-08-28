@@ -1,6 +1,6 @@
 ---
 author: swapnil1993
-ms.author: swshriva
+ms.author: swapnil1993
 ms.date: 08/30/2020
 title: Update a content type
 ---

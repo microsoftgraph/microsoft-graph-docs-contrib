@@ -129,7 +129,11 @@ To see them when showing **field** values on [listItems][listItem], include the 
 [fieldValueSet]: fieldvalueset.md
 [fields]: fieldvalueset.md
 [listItem]: listitem.md
-
+[termColumn]: termColumn.md
+[contentApprovalStatusColumn]: contentApprovalStatusColumn.md
+[thumbnailColumn]: thumbnailColumn.md
+[hyperlinkOrPictureColumn]: hyperlinkOrPictureColumn.md
+[columnValidation]: columnValidation.md
 [SPFieldType]: https://msdn.microsoft.com/library/microsoft.sharepoint.spfieldtype.aspx
 
 <!--

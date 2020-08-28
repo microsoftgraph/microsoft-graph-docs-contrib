@@ -1,8 +1,8 @@
 ---
-author: swshriva
-ms.author: swshriva
-ms.date: 11/08/2019
-title: HyperlinkOrPictureColumn - OneDrive API
+author: swapnil1993
+ms.author: swapnil1993
+ms.date: 08/28/2020
+title: HyperlinkOrPictureColumn 
 ---
 # HyperlinkOrPictureColumn resource type
 
@@ -16,7 +16,7 @@ Here is a JSON representation of a **hyperlinkOrPictureColumn** resource.
 
 ```json
 {
-  "format": "image | hyperlink",
+  "isPicture": false
 }
 ```
 
@@ -24,27 +24,6 @@ Here is a JSON representation of a **hyperlinkOrPictureColumn** resource.
 
 | Property name      | Type               | Description
 |:-------------------|:-------------------|:----------------------------------------------
-| **format**         | string             | Specifies the display format used for URL columns.
+| isPicture       | boolean             | Specifies whether the display format used for URL columns is an image or a hyperlink. 
 
-## Format
 
-| Value          | Description
-|:---------------|:--------------------------------------------------------------
-| **image**      | Represents a usual anchor tag.
-| **hyperlink**  | Represents an image that serves as a hyperlink.
-
-## Properties
-
-The **hyperlinkOrPictureColumn** resource contains no properties.
-
-<!-- {
-  "type": "#page.annotation",
-  "description": "",
-  "keywords": "",
-  "section": "documentation",
-  "suppressions": [
-    "Warning: /api-reference/v1.0/resources/hyperlinkorpicturecolumn.md:
-      Found potential enums in resource example that weren't defined in a table:(image,hyperlink) are in resource, but () are in table"
-  ],
-  "tocPath": "Resources/HyperlinkOrPictureColumn"
-} -->
