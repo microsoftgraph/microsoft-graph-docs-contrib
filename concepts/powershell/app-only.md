@@ -61,7 +61,7 @@ You can register the application either in the [Azure Active Directory admin cen
 
 1. Select **Certificates & secrets** under **Manage**. Select the **Upload certificate** button. Browse to your certificate's public key file and select **Add**.
 
-#### PowerShell (#tab/powershell)
+#### [PowerShell] (#tab/powershell)
 
 > [!NOTE]
 > You must have the Microsoft Graph PowerShell SDK [installed](installation.md) before following these steps.
@@ -84,6 +84,8 @@ You can register the application either in the [Azure Active Directory admin cen
     > After granting admin consent, the browser will display an error: `AADSTS500113: No reply address is registered for the application`. This is because the app registration does not include a redirect URL. This error can be ignored.
 
 1. Review the rest of the PowerShell output for `Connect-Graph` command pre-filled with the values for your app registration.
+
+---
 
 ## Authenticate
 
