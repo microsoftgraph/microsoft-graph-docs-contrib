@@ -66,7 +66,7 @@ Here is a JSON representation of a **contentType** resource.
 | **columnPositions**       | Collection([columnDefinition][]) | Column order information in a content type.
 | **isBuiltIn**            | boolean| Specifies if a content type is a built-in content type. 
 | **base**   | [contentType][]  | Parent contentType from which this content type is derived. 
-| **documentSet**       | [documentSet][]      | [Document Set](https://docs.microsoft.com/en-us/sharepoint/governance/document-set-planning#about-document-sets) metadata.
+| **documentSet**       | [documentSet][]      | [Document Set](https://docs.microsoft.com/sharepoint/governance/document-set-planning#about-document-sets) metadata.
 | **documentTemplate**  | [documentSetContent][] | Document template metadata. To make sure that documents have consistent content across a site and its subsites, you can associate a Word, Excel, or PowerPoint template with a site content type.
 | **associatedHubsUrls**       | Collection(string) | List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
 | **propagateChanges**   | boolean              | If `true`, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
