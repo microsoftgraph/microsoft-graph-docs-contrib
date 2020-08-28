@@ -36,7 +36,7 @@ The `User.Read.All` permission scope will enable the first two calls, and the `G
 
 ### Sign in
 
-Use the `Connect-Graph` command to sign in with the required scopes.
+Use the `Connect-Graph` command to sign in with the required scopes. You'll need to sign in with an admin account to consent to the required scopes.
 
 ```powershell
 Connect-Graph -Scopes "User.Read.All","Group.ReadWrite.All"
