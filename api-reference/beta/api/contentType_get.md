@@ -1,7 +1,7 @@
 ---
-author: swshriva
-ms.author: swshriva
-ms.date: 30/07/2020
+author: swapnil1993
+ms.author: swapnil1993
+ms.date: 07/30/2020
 title: Get a content type in a site or list
 ---
 # Get a content type in a site or list

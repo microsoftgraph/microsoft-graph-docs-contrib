@@ -1,6 +1,6 @@
 ---
-author: swshriva
-ms.author: swshriva
+author: swapnil1993
+ms.author: swapnil1993
 ms.date: 08/30/2020
 title: Associate a content type with list of hubsites
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Associate a [content type][contentType] with list of hubsites.
- 
+Note: This feature limited to tenants having cortex license
   
 
 ## Permissions  

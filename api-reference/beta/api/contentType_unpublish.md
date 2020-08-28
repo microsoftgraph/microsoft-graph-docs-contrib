@@ -1,7 +1,6 @@
-
 ---
-author: swshriva
-ms.author: swshriva
+author: swapnil1993
+ms.author: swapnil1993
 ms.date: 08/29/2020
 title: Unpublish a site content type
 ---

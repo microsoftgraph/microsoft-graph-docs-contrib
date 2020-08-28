@@ -1,7 +1,7 @@
 ---
-author: swshriva
-ms.author: swshriva
-ms.date: 10/31/2020
+author: swapnil1993
+ms.author: swapnil1993
+ms.date: 08/28/2020
 title: Delete content type from a SharePoint list or Site
 ---
 # Delete a content type from a site or a list
@@ -14,7 +14,7 @@ Removes a [content type][contentType] from a [list][] or a [site][].
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../rest-api/concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -1,7 +1,7 @@
 ---
-author: swshriva
-ms.author: swshriva
-ms.date: 10/19/2020
+author: swapnil1993
+ms.author: swapnil1993
+ms.date: 08/19/2020
 title: Get site content types that can be added to a list
 ---
 # Get site content types that can be added to a list

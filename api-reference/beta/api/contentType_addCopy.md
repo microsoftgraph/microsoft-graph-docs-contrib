@@ -1,6 +1,6 @@
 ---
-author: swshriva
-ms.author: swshriva
+author: swapnil1993
+ms.author: swapnil1993
 ms.date: 08/30/2020
 title: Add copy of site content type to a list
 

@@ -1,7 +1,7 @@
 ---
-author: swshriva
-ms.author: swshriva
-ms.date: 10/31/2020
+author: swapnil1993
+ms.author: swapnil1993
+ms.date: 08/28/2020
 title: Delete a column from a site or list content type.
 ---
 # Delete a column from a content type

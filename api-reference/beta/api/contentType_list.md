@@ -1,7 +1,7 @@
 ---
-author: swshriva
-ms.author: swshriva
-ms.date: 30/07/2020
+author: swapnil1993
+ms.author: swapnil1993
+ms.date: 07/30/2020
 title: List the Sharepoint Content types in a site collection or a list
 ---
 # Enumerate Content types in a site

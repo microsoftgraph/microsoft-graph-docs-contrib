@@ -1,11 +1,8 @@
 ---
-author: swshriva
-ms.author: swshriva
+author: swapnil1993
+ms.author: swapnil1993
 ms.date: 08/08/2020
 title: Create a ContentType in a site
-localization_priority: Normal
-ms.prod: "sharepoint"
-doc_type: apiPageType
 ---
 
 # Create a Content type in a site
@@ -39,16 +36,12 @@ POST /sites/{site-id}/contentTypes
 
 In the request body, supply a JSON representation of the [contentType][] resource to create.
 
-## Response
-
-If successful, this method returns a [contentType][] in the response body for the created contentType.
-
 
 ## Example
 
 Here is an example of how to create a new generic contentType.
 
-# Request
+## Request
 
 <!-- { "blockType": "request", "name": "create-contentType", "scopes": "sites.readwrite.all" } -->
 
@@ -68,6 +61,8 @@ Content-Type: application/json
 ```
 
 ## Response
+If successful, this method returns a [contentType][] in the response body for the created contentType.
+
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.contentType", "truncated": true } -->
 
 ```http

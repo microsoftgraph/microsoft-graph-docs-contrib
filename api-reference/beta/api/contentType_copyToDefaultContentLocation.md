@@ -1,6 +1,6 @@
 ---
-author: swshriva
-ms.author: swshriva
+author: swapnil1993
+ms.author: swapnil1993
 ms.date: 08/30/2020
 title: Copy a file to default content location in a Content Type
 ---
