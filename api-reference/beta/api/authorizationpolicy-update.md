@@ -68,6 +68,11 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 The following is an example of the request. In this example, guest access level is modified to Restricted Guest User.
 
+<!-- {
+  "blockType": "request",
+  "name": "update_authZPolicy_guestUserLevel"
+}-->
+
 ```http
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 {
@@ -95,6 +100,11 @@ HTTP/1.1 204 No Content
 #### Request
 
 The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_authZPolicy_preview"
+}-->
 
 ```http
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
@@ -124,6 +134,11 @@ HTTP/1.1 204 No Content
 
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "update_authZPolicy_blockMSOLPowerShell"
+}-->
+
 ```http
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 {
@@ -149,6 +164,11 @@ HTTP/1.1 204 No Content
 #### Request
 
 The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_authZPolicy_applications"
+}-->
 
 ```http
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
@@ -179,6 +199,11 @@ HTTP/1.1 204 No Content
 #### Request
 
 The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_authZPolicy_SSPR"
+}-->
 
 ```http
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
