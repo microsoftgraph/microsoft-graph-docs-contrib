@@ -17,19 +17,47 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 ### Change notifications
 [Track changes](delta-query-overview.md) of supported resources in the Microsoft Graph for US Government national cloud.
 
+### Teamwork
+- Get the publishing status of a Microsoft Teams [app](/graph/api/resources/teamsapp) through the **publishingState** property of the [app definition](/graph/api/resources/teamsappdefinition). The possible status values are `submitted`, `published`, and `rejected`. See an [example](/graph/api/teamsapp-list?view=graph-rest-1.0&tabs=http#example-3-list-applications-with-a-given-id-and-return-the-submission-review-state).
+- Use the `AppCatalog.Submit` delegated permission to allow a user to [submit an app](/graph/api/teamsapp-publish) and request administrator review. Use the same permssion for a user to [cancel](/graph/api/teamsapp-delete) an app submitted in the past that has not been published. 
 
 ## August 2020: New in preview only
 
 ### Applications
 Support password-based single-sign-on in [service principal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) application resources and specify such [settings](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta) in the **passwordSingleSignOnSettings** property. For information about password-based single sign-on in Azure AD, see [configure password-based single-sign-on](/azure/active-directory/manage-apps/configure-password-single-sign-on-non-gallery-applications).
 
+### Calendar
+Enhance programmatic support for scenarios involving a recurring [event](/graph/api/resources/event?view=graph-rest-beta):
+- Reliably identify any occurrence in a recurring series, including a modified or cancelled occurrence, by using the **occurrenceId** property .
+- Get any exceptions in a recurring series by using the **exceptionOccurrences** property.
+- Get any cancellations in a series using the **cancelledOccurrences** property.
+
 ### Change notifications
 - Use the **includeResourceData** property of a [subscription](/graph/api/resources/subscription?view=graph-rest-beta), to [set up change notifications that include resource data](webhooks-with-resource-data.md). Do not use the **includeProperties** property.
 - Get [change notifications delivered via Event Hub](change-notifications-delivery.md).
 
+### Devices and apps | Cloud printing
+- Grant all users and groups access to a [printer share](/graph/api/resources/printershare?view=graph-rest-beta) by using the **allowAllUser** property.
+- Use new delegated and application permissions to access or manage a [print document](/graph/api/resources/printDocument?view=graph-rest-beta), [print job](/graph/api/resources/printjob?view=graph-rest-beta), [printer](/graph/api/resources/printer?view=graph-rest-beta), [printer share](/graph/api/resources/printershare?view=graph-rest-beta), or [print task definition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta). For details, see cloud printing[August](changelog.md#august-2020) updates.
+
+### Devices and apps | Corporate management
+Intune [August](changelog.md#august-2020) updates in beta.
+
 ### Identity and access | Governance
 - Customize a [terms of use agreement](/graph/api/resources/agreement?view=graph-rest-beta) to support an agreement expiration date and cadence, require the user to accept the agreement per device, or to re-accept the agreement on a set frequency. 
 - Use the **file** property to navigate to a [custom agreement](/graph/api/resources/agreementfile?view=graph-rest-beta) for terms of use. Do not use the **files** property.
+- Add, remove, and list internal or external sponsors who can approve requests from a [connected organization](/graph/api/resources/connectedorganization?view=graph-rest-beta) to access a group, application, or SharePoint Online site. See [entitlement management](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta) for more information.
+
+### People and workplace intelligence | Profile
+Add and manage the following additional properties in a user's [profile](/graph/api/resources/profile?view=graph-rest-beta), and that can be surfaced in shared, people experiences across Microsoft 365 and third-party apps:
+- [addresses](/graph/api/resources/itemAddress?view=graph-rest-beta)
+- [anniversaries](/graph/api/resources/personAnniversary?view=graph-rest-beta)
+- [awards](/graph/api/resources/personAward?view=graph-rest-beta)
+- [certifications](/graph/api/resources/personCertification?view=graph-rest-beta)
+- [notes](/graph/api/resources/personAnnotation?view=graph-rest-beta)
+- [patents](/graph/api/resources/itemPatent?view=graph-rest-beta)
+- [publications](/graph/api/resources/itemPublication?view=graph-rest-beta)
+
 
 ### Reports | Microsoft 365 usage reports
 Get [reports on Microsoft 365 apps usage](/graph/api/resources/microsoft-365-apps-usage-report?view=graph-rest-beta), specifically on user detail, user counts, and platform user counts.

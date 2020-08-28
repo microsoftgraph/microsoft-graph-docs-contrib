@@ -43,7 +43,7 @@ DELETE /appCatalogs/teamsApps/{id}
 To delete an app that has been submitted but has not been approved:
 
 ```http
- DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
+DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 ```
 
 ## Request headers

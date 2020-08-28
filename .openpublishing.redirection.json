@@ -10987,18 +10987,18 @@
         },
         {
             "source_path": "api-reference\\beta\\api\\photo_delete.md",
-            "redirect_url": "/graph/api/photo-delete?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_url": "/graph/api/resources/profilephoto?view=graph-rest-beta",
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\photo_get.md",
-            "redirect_url": "/graph/api/photo-get?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_url": "/graph/api/profilephoto-get?view=graph-rest-beta",
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\photo_update.md",
-            "redirect_url": "/graph/api/photo-update?view=graph-rest-beta",
-            "redirect_document_id": true
+            "redirect_url": "/graph/api/profilephoto-update?view=graph-rest-beta",
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\beta\\api\\plannerassignedtotaskboardtaskformat_get.md",
@@ -22957,18 +22957,18 @@
         },
         {
             "source_path": "api-reference\\v1.0\\api\\photo_delete.md",
-            "redirect_url": "/graph/api/photo-delete?view=graph-rest-1.0",
-            "redirect_document_id": true
+            "redirect_url": "/graph/api/resources/profilephoto?view=graph-rest-1.0",
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\v1.0\\api\\photo_get.md",
-            "redirect_url": "/graph/api/photo-get?view=graph-rest-1.0",
-            "redirect_document_id": true
+            "redirect_url": "/graph/api/profilephoto-get?view=graph-rest-1.0",
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\v1.0\\api\\photo_update.md",
-            "redirect_url": "/graph/api/photo-update?view=graph-rest-1.0",
-            "redirect_document_id": true
+            "redirect_url": "/graph/api/profilephoto-update?view=graph-rest-1.0",
+            "redirect_document_id": false
         },
         {
             "source_path": "api-reference\\v1.0\\api\\plannerassignedtotaskboardtaskformat_get.md",
@@ -26814,6 +26814,38 @@
             "source_path": "concepts/training.md",
             "redirect_url": "/graph/tutorials",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/api/photo-get.md",
+            "redirect_url": "/graph/api/profilephoto-get?view=graph-rest-1.0",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "api-reference/v1.0/api/photo-update.md",
+            "redirect_url": "/graph/api/profilephoto-update?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "api-reference/v1.0/api/photo-delete.md",
+            "redirect_url": "/graph/api/resources/profilephoto?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "api-reference/beta/api/photo-get.md",
+            "redirect_url": "/graph/api/profilephoto-get?view=graph-rest-beta",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "api-reference/beta/api/photo-update.md",
+            "redirect_url": "/graph/api/profilephoto-update?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "api-reference/beta/api/photo-delete.md",
+            "redirect_url": "/graph/api/resources/profilephoto?view=graph-rest-beta",
+            "redirect_document_id": false
         }
     ]
 }
