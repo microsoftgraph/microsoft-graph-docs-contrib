@@ -44,7 +44,9 @@ Content-Type: application/json
 
 ## Known limitations
 
-You can only access user’s own calendar. Shared calendar and delegated access scenarios are not supported.
+- You can only access a user’s own mailbox. Searching delegated mailboxes is not supported.
+- For events, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta) type contains the number of results on the page, not the total number of matching results.
+- Sorting results is not supported for events. A sort clause in the request will return a Bad Request error code in the response.
 
 ## Next steps
 
