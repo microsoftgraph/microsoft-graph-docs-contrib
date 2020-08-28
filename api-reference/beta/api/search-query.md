@@ -144,8 +144,7 @@ Content-type: application/json
           "hits": [
             {
               "_id": "1",
-              "_score": 1,
-              "_sortField": "Relevance",
+              "_score": 1,              
               "_summary": "_summary-value",
               "_source": "The source field will contain the underlying graph entity part of the response"
             }

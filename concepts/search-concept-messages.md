@@ -72,7 +72,6 @@ The following is an example of the response, which contains one message that mat
             {
               "_id": "ptWLQ4o6HYpQg8xmAAATzOzRAAA=",
               "_score": 1,
-              "_sortField": "DateTime",
               "_summary": "Here is a summary of your messages from last week",
               "_source": {
                 "@odata.type": "#microsoft.graph.message",

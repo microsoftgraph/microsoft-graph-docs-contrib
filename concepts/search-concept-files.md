@@ -67,8 +67,7 @@ Content-Type: application/json
           "hits": [
             {
               "_id": "FlULeN/ui/1GjLx1rUfio5UAAEl",
-              "_score": 1,
-              "_sortField": "Relevance",
+              "_score": 1,              
               "_summary": "<c0>Contoso</c0> Detailed Design <ddd/>",
               "_source": {
                 "@odata.type": "#microsoft.graph.driveItem",

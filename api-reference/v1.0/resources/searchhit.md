@@ -43,7 +43,6 @@ The following is a JSON representation of the resource.
 {
   "_id": "String",
   "_score": 1024,
-  "_sortField": "String",
   "_summary": "String",
   "_source": { "@odata.type": "microsoft.graph.entity" }
 }
