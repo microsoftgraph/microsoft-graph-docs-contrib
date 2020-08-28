@@ -25,14 +25,11 @@ Before you can use app-only access with the SDK, you need the following.
 
 You will need an X.509 certificate installed in your user's trusted store on the machine where you will run the script. You'll also need the certificate's public key exported in .cer, .pem, or .crt format. You'll need the value of the certificate subject.
 
-```powershell
-# Requires an admin
-Connect-Graph -Scopes "Application.ReadWrite.All"
-
-$app = New-MgApplication -DisplayName "Graph PowerShell Script"
-```
-
 ### Register the application
+
+You can register the application either in the [Azure Active Directory admin center](https://aad.portal.azure.com), or using PowerShell.
+
+#### [Azure Active Directory admin center](#tab/admin-center)
 
 1. Open a browser and navigate to the [Azure Active Directory admin center](https://aad.portal.azure.com) and login using an Microsoft 365 tenant organization admin.
 
@@ -63,6 +60,30 @@ $app = New-MgApplication -DisplayName "Graph PowerShell Script"
     ![A screenshot of the configured permissions for the webhook with admin consent granted](./images/configured-permissions.png)
 
 1. Select **Certificates & secrets** under **Manage**. Select the **Upload certificate** button. Browse to your certificate's public key file and select **Add**.
+
+#### PowerShell (#tab/powershell)
+
+> [!NOTE]
+> You must have the Microsoft Graph PowerShell SDK [installed](installation.md) before following these steps.
+
+1. Use a text editor to create a new file named **RegisterAppOnly.ps1**. Paste the following code into the file.
+
+    :::code language="powershell" source="RegisterAppOnly.ps1":::
+
+1. Save the file. Open PowerShell in the directory that contains **RegisterAppOnly.ps1** and run the following command.
+
+    ```powershell
+    .\RegisterAppOnly.ps1 -AppName "Graph PowerShell Script" -CertPath "PATH_TO_PUBLIC_KEY_FILE"
+    ```
+
+1. Open your browser as prompted. Sign in with an administrator account and accept the permissions.
+
+1. Review the output for the prompt `Please go to the following URL in your browser to provide admin consent`. Copy the URL provided and paste it in your browser. Sign in with an administrator account to grant admin consent to your newly registered application.
+
+    > [!NOTE]
+    > After granting admin consent, the browser will display an error: `AADSTS500113: No reply address is registered for the application`. This is because the app registration does not include a redirect URL. This error can be ignored.
+
+1. Review the rest of the PowerShell output for `Connect-Graph` command pre-filled with the values for your app registration.
 
 ## Authenticate
 
