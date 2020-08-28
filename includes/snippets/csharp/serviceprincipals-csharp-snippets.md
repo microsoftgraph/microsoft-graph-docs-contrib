@@ -6,11 +6,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var servicePrincipals = await graphClient.ServicePrincipals["b00c693f-9658-4c06-bd1b-c402c4653dea"]
-	.Request()
-	.Select("AppRoles")
-	.GetAsync();
+var claimsMappingPolicy = new ClaimsMappingPolicy
+{
+	Definition = new List<String>()
+	{
+		"{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Source\":\"user\",\"ID\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
+	},
+	DisplayName = "AWS Claims Policy",
+	IsOrganizationDefault = false
+};
 
-var appRoles = servicePrincipals.AppRoles;
+await graphClient.Policies.ClaimsMappingPolicies
+	.Request()
+	.AddAsync(claimsMappingPolicy);
 
 ```

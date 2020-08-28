@@ -24,6 +24,12 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), a connected
 |[Get connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | Read properties and relationships of a connectedOrganization object. |
 |[Update connectedOrganization](../api/connectedorganization-update.md) | | Update a connectedOrganization. |
 |[Delete connectedOrganization](../api/connectedorganization-delete.md) |None | Delete a connectedOrganization. |
+|[List internalSponsors](../api/connectedorganization-list-internalsponsors.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of a connectedOrganization's internal sponsors. |
+|[List externalSponsors](../api/connectedorganization-list-externalsponsors.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of a connectedOrganization's external sponsors. |
+|[Add internalSponsors](../api/connectedorganization-post-internalsponsors.md) | None | Add a user or group to a connectedOrganization's internal sponsors. |
+|[Add externalSponsors](../api/connectedorganization-post-externalsponsors.md) | None | Add a user or group to a connectedOrganization's external sponsors. |
+|[Remove internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | None | Remove a user or group from a connectedOrganization's internal sponsors. |
+|[Remove externalSponsors](../api/connectedorganization-delete-externalsponsors.md) | None | Remove a user or group from a connectedOrganization's external sponsors. |
 
 ## Properties
 

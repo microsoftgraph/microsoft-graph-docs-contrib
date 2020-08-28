@@ -59,8 +59,6 @@ The following example shows how to call this API.
 The following is an example of the request.
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "restore-item",

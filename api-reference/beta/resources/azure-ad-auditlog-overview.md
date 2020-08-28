@@ -4,7 +4,7 @@ description: "Use the activity reports API in Microsoft Graph to access the repo
 localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: "microsoft-identity-platform"
-author: "kholtz"
+author: "khotz"
 ---
 
 # Activity reports API overview

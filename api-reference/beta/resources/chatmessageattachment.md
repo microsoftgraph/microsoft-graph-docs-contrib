@@ -4,7 +4,7 @@ description: "Represents an attachment to a chat message entity."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "clearab"
 ---
 
 # chatMessageAttachment resource type

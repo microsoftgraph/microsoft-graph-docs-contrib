@@ -191,6 +191,7 @@ Content-Type: application/json
   "answeredBy": null,
   "chatInfo": null,
   "meetingInfo": null,
+  "transcription": null,
   "meetingCapability": null,
   "toneInfo": null
 }
@@ -404,6 +405,7 @@ Content-Type: application/json
   "answeredBy": null,
   "chatInfo": null,
   "meetingInfo": null,
+  "transcription": null,
   "meetingCapability": null,
   "toneInfo": null
 }
@@ -592,11 +594,13 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.identity",
         "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
         "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
-        "displayName": "Bob"
+        "displayName": "Bob",
+        "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
       }
     },
     "allowConversationWithoutHost": true
-  }
+  },
+  "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
 }
 ```
 ##### Response
@@ -668,6 +672,7 @@ Content-Type: application/json
     },
     "allowConversationWithoutHost": true
   },
+  "transcription": null,
   "routingPolicies": [],
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
   "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",

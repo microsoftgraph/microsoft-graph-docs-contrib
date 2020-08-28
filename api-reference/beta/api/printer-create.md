@@ -18,13 +18,13 @@ Create (register) a printer with the Universal Print service. This is a long-run
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user's tenant must have an active Universal Print subscription.
+In addition to the following permissions, the user's tenant must have an active Universal Print subscription. The signed in user must be a [Printer Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| User.Read.All |
+|Delegated (work or school account)| Printer.Create, Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+|Application| Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -85,6 +85,14 @@ Content-length: 319
 ```
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-printer-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-printer-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-printer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

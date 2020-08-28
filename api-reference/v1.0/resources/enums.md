@@ -7,10 +7,11 @@ author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ---
 
+# Enum values
 
 Namespace: microsoft.graph
 
-### activityType values 
+### activityType values
 
 |Member|
 |:---|
@@ -18,7 +19,7 @@ Namespace: microsoft.graph
 |user|
 |unknownFutureValue|
 
-### riskDetectionTimingType values 
+### riskDetectionTimingType values
 
 |Member|
 |:---|
@@ -28,7 +29,7 @@ Namespace: microsoft.graph
 |offline|
 |unknownFutureValue|
 
-### tokenIssuerType values 
+### tokenIssuerType values
 
 |Member|
 |:---|
