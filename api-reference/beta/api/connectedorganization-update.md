@@ -47,9 +47,9 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-| `displayName`  |`String` | The connected organization name.  |
-| `description`  |`String` | The connected organization description. |
-| `state`        |`connectedOrganizationState`|The state of a connected organization defines whether assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects` are applicable or not. Possible values are: `configured`, `proposed`.|
+| displayName  |String | The connected organization name.  |
+| description  |String | The connected organization description. |
+| state        |connectedOrganizationState|The state of a connected organization defines whether assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects` are applicable or not. Possible values are: `configured`, `proposed`.|
 
 ## Response
 
