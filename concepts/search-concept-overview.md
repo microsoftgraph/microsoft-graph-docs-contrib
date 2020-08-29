@@ -33,7 +33,7 @@ When you use the Microsoft Search API, your customers benefit from more personal
 The Microsoft Search API supports searching the following content in the Microsoft cloud:
 
 - Outlook email [messages](/graph/api/resources/message?view=graph-rest-beta) and calendar [events](/graph/api/resources/event?view=graph-rest-beta) objects
-- SharePoint and OneDrive files and folders ([driveItem](/graph/api/resources/driveitem?view=graph-rest-beta)), [lists](/graph/api/resources/list?view=graph-rest-beta), [listItems](graph/api/resources/listitem?view=graph-rest-beta), [sites](/graph/api/resources/site?view=graph-rest-beta) and [drives](/graph/api/resources/drive?view=graph-rest-beta)
+- SharePoint and OneDrive files and folders ([driveItem](/graph/api/resources/driveitem?view=graph-rest-beta)), [lists](/graph/api/resources/list?view=graph-rest-beta), [listItems](/graph/api/resources/listitem?view=graph-rest-beta), [sites](/graph/api/resources/site?view=graph-rest-beta) and [drives](/graph/api/resources/drive?view=graph-rest-beta)
 - Content ingested throught the Graph Connectors platform : [externalItems](/graph/api/resources/externalitem?view=graph-rest-beta)
 
 ## API reference

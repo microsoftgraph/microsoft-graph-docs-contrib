@@ -19,7 +19,9 @@ Search requests run in the context of the signed-in user, identified using an [a
 
 ## Common use cases
 
-The Microsoft Search API provides a [query](../api/search-query.md) method to search across your data in Microsoft Search. This section lists the common use cases, based on the properties and parameteres you set in the **query** request body.
+The Microsoft Search API provides a [query](../api/search-query.md) method to search across your data in Microsoft Search, where you pass in the request Body a [searchRequest](searchRequest.md) which defines the specific of your search query.
+
+This section lists the common use cases, based on the properties and parameters you set in the **query** [searchRequest](searchRequest.md) body.
 
 Search requests run on behalf of the user. Search results are scoped to enforce any access control applied to the items.  For example, in the context of files, permissions on the files are evaluated as part of the search request. Users cannot access more items in a search than they can from the enumeration API.
 
@@ -32,7 +34,7 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
 |[Sort search results](#sort-search-results)| **sort** |
 |[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
-|[Search within a specific contentSource (indexing API)](/graph/search-concept-custom-types)| **contentSources** |
+|[Search across Graph connectors](/graph/search-concept-custom-types)| **contentSources** |
 
 ## Scope search based on entity types
 
