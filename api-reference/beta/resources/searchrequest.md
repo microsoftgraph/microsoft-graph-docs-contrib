@@ -22,14 +22,15 @@ The search request to be sent to the query endpoint.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |entityTypes|`entityType` collection| Possible values are: `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`.|
-|contentSources|String collection|Contains the connection to be targeted. <br>Respect the following format : `/external/connections/connectionid` where `connectionid` is the ConnectionId been defined in the Connectors Administration <br> Note contentSource is only applicable when entityType=`externalItem`. |
+|contentSources|String collection|Contains the connection to be targeted. <br>Respect the following format : `/external/connections/connectionid` where `connectionid` is the ConnectionId been defined in the Connectors Administration <br> Note : contentSource is only applicable when entityType=`externalItem`. |
 |query|[searchQuery](searchquery.md)|Contains the query terms.|
 |from|Int32|Specifies the offset for the search results. Offset 0 returns the very first result.|
 |size|Int32|The size of the page to be retrieved.|
 |stored_fields|String collection |Contains the fields to be returned for earch _so urces object. Note this is applicable for all entityTypes, such as `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`.|
-|sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results.|
+|sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most sortProperties in the Collection.|
 |aggregations|[aggregationOption](aggregationOption.md) collection|Specifies which aggregations (also known as refiners) to be retuned alongside the search results.|
-|enableTopResults|Boolean|This triggers hybrid sort for messages : the first 3 messages are the most relevant<br>. This is only applicable for entityType=`message`.|
+|aggregationFilters|String collection|Contains the list of **aggregationsFilterToken** obtained from the [searchHitsBucket](searchHitsBucket.md) which will filter down search results to results contained in the specified bucket|
+|enableTopResults|Boolean|This triggers hybrid sort for messages : the first 3 messages are the most relevant. This property is only applicable to entityType=`message`.|
 
 ## JSON representation
 

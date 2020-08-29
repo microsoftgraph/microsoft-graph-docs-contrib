@@ -8,11 +8,18 @@ ms.prod: "search"
 
 # Use the Microsoft Search API in Microsoft Graph to search files
 
+TODOMSSEARCHAPI@Nmoreau
+
 You can use the Microsoft Search API to search files stored in SharePoint or OneDrive. The Microsoft Search API uses a relevance model that makes use of signals from Microsoft Graph about users' relationships and activities. This enables you to return and promote the content that users care about, in a file search experience that is consistent with the **Files** tab that lists search results in SharePoint.
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 ## Search SharePoint or OneDrive files
+
+## Specify select properties
+See commments in the Api over page.
+
+## Search for Lists, ListItems, Sites, Drives...
 
 You can use KQL in search terms of queries for SharePoint and OneDrive. For example:
 

@@ -11,6 +11,8 @@ ms.prod: "search"
 TODOSEARCHAPI@Lan Can you please take a stab at this page describing the key scenario for Sharepoint---
 - One example from sharepoint
 - Document the known limitations
+- Include single / multi level sort
+- Include an example with sort by author and then relevance
 - The whole page below was copied from the Sharepoint File sample page. You should use the same structure. https://docs.microsoft.com/graph/search-concept-files
 ENDTODO
 

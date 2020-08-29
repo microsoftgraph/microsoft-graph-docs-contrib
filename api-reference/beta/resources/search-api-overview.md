@@ -104,13 +104,34 @@ Depending on the entity type, the searchable properties vary. For details, see:
 
 ## Sort search results
 
-TODOSEARCHAPI@nmoreau
-Link to the sort sample
+Search results in the response are sorted with the following default sort order :
+  - **message** and **event** are sorted by date
+  - All SharePoint, OneDrive and Connectors types are sorted by relevance
+
+The search API call let you customize the search order by specifying the **sortProperties** on the [searchRequest](./searchrequest.md).
+You will be able to specify a list one or many sortable properties, and the sort order.
+
+Note that sorting results is currently only supported on the following SharePoint and OneDrive types : [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md)
+
+The properties on which the sort clause are applied need to be sortable in the SharePoint [search schema](https://docs.microsoft.com/sharepoint/manage-search-schema). If the property is not sortable, the response will return a Bad Request. Note that **relevance** is a valid [sortProperty](sortproperty.md) name.
+
+When specifying a the [sortProperty](sortproperty.md) name, you can either provide the property name from the Microsoft Graph type (ex : [driveItem](driveitem.md)), or the name of the managed property in the search index.
+
+This [page](/graph/search-concept-sort) provides several examples how to sort results.
 
 ## Refine results using aggregations
 
-TODOSEARCHAPI@nmoreau
-Link to the sort sample
+Aggregations (aka Refiners in the SharePoint semantic) are a very popular way to enhance a search experience. They provide, in addition to the results, some level of aggregate information on the matching set of search results. For example, you are able to provide information on who are the most represented authors of documents matching the query, or what are the most represented file types, etc.
+
+In the [searchRequest](./searchrequest.md), you are able to express which aggregations should be returned, in addition to the search results. The description of each aggregation is defined in the the [aggregationOption](./aggregationoption.md), which specifies on which property the aggregation should be computed, the number of [searchHitsBucket](searchHitsBucket.md) to be returned in the response.
+
+Once the response is returned containing the collection of [searchHitsBucket](searchHitsBucket.md), it is possible to refine the search request to only the matching elements contained in one [searchHitsBucket](searchHitsBucket.md). This is achieved by passing back the  **aggregationsFilterToken** value in the subsequent [searchRequest](./searchrequest.md)  **aggregationFilters**
+
+Aggregations are currently only supported on the following SharePoint and OneDrive types : [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md). They will soon be supported for Graph Connectors[externalItem](externalItem.md) refinable properties.
+
+The properties on which the aggregation is requested need to be refinable in the SharePoint [search schema](https://docs.microsoft.com/sharepoint/manage-search-schema). If the property is not sortable, the response will return a Bad Request. Note that **relevance** is a valid [sortProperty](sortproperty.md) name.
+
+This [page](/graph/search-concept-aggregation) provides several examples how to use aggregation to enhance search results, and to narrow down search results.
 
 ## Error handling
 
@@ -130,13 +151,11 @@ Any combination involving **messages**, **events**, Sharepoint and OneDrive type
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 <!--todosearchAPI nmoreauteam Fix the link to ContentSource  pls provide the content source url--->
 
-- The search API does not support custom sort for **message**, **event** or and **externalItem**. The default sort is the following
+- The search API does not support custom sort for **message**, **event** or  **externalItem**.
 
-  - Sort **message** or **event** type results by date.
+- The search API does not support aggregations for **message**, **event**, **drive**, or **externalItem**.
 
-  - Sort **driveItem**, or **externalItem** type results by relevance.
-
-<!---TODOSEARCHAPI Make a pass on the spec on the big current limitations--->
+<!---TODOSEARCHAPI Make a pass on the spec to catch any big current limitations--->
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

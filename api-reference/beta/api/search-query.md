@@ -59,6 +59,8 @@ If successful, this method returns `HTTP 200 OK` response code and a [searchResp
 - Search [files](/graph/search-concept-files)
 - Search [custom types (Connectors)](/graph/search-concept-custom-types) data
 
+@TODOSEARCHAPI-Include the links to all the samples
+
 ## Examples
 
 ### Request
