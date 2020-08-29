@@ -21,7 +21,7 @@ Represents a search query that contains search terms and optional filters.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|query_string|[searchQueryString](searchquerystring.md)|The search query containing the search terms.|
+|query_string|[searchQueryString](searchquerystring.md)|The search query containing the search terms. Required.|
 
 ## JSON representation
 
