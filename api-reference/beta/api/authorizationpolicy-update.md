@@ -108,6 +108,7 @@ The following is an example of the request.
 
 ```http
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+
 {
   "enabledPreviewFeatures": ["assignGroupsToRoles"]
 }
@@ -141,6 +142,7 @@ The following is an example of the request.
 
 ```http
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+
 {
   "blockMsolPowerShell": true
 }
@@ -172,6 +174,7 @@ The following is an example of the request.
 
 ```http
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+
 {
     "defaultUserRolePermissions":
     {
@@ -207,6 +210,7 @@ The following is an example of the request.
 
 ```http
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+
 {
     "allowedToUseSSPR": true
 }
