@@ -75,6 +75,7 @@ The following is an example of the request. In this example, guest access level 
 
 ```http
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+
 {
   "guestUserRole": "2af84b1e-32c8-42b7-82bc-daa82404023b"
 }
