@@ -19,10 +19,10 @@ Provides the details on how the agregations should be generated in the results.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|sortBy|`bucketAggregationSortProperty`| The possible values are `count` to sort by the number of matches in the aggregation, `keyAsString`to sort alphabeticaly based on the key in the aggregation, `keyAsNumber` for numerical sorting based on the key in the aggregation.
-|isDescending|Boolean|Specifies that the sort order is descending. The default sort order is ascending|
-|prefixFilter|String|A filter to define a matching criteria. The key should start with the specified prefix to be returned in the response.|
-|ranges|[bucketAggregationRange](bucketaggregationrange.md) collection|Specifies the manual ranges to compute the aggregations. This is only valid for non string refiners : dates and numeric.|
+|sortBy|`bucketAggregationSortProperty`| The possible values are `count` to sort by the number of matches in the aggregation, `keyAsString`to sort alphabeticaly based on the key in the aggregation, `keyAsNumber` for numerical sorting based on the key in the aggregation. Required.
+|isDescending|Boolean|Specifies that the sort order is descending. The default sort order is ascending. Optional.|
+|prefixFilter|String|A filter to define a matching criteria. The key should start with the specified prefix to be returned in the response. Optional.|
+|ranges|[bucketAggregationRange](bucketaggregationrange.md) collection|Specifies the manual ranges to compute the aggregations. This is only valid for non string refiners : dates and numeric. Optional.|
 
 ## JSON representation
 

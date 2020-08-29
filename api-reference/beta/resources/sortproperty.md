@@ -19,8 +19,8 @@ Represents the sort options to order search results
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|name|String|The name of the property to sort on |
-|isDescending|Boolean|Indicates whether the sort order has to be descending. Default is ascending. This is an optional parameter. |
+|name|String|The name of the property to sort on. Required.|
+|isDescending|Boolean|Indicates whether the sort order has to be descending. Default is ascending. This is an optional parameter. Optional.|
 
 ## JSON representation
 
