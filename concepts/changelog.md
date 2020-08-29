@@ -80,6 +80,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added a new resource type to [Terms of Use agreement](/graph/api/resources/agreement?view=graph-rest-beta):</br>[agreementFile](/graph/api/resources/agreementfile?view=graph-rest-beta)|
 | Addition | beta | Added [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) internal and external sponsors to entitlement management.  |
 | Addition | beta | Added the inheritsPermissionsFrom property to the [unifiedRoleDefinition](/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **connectedOrganizationState** enumeration type and the **state** property to the [connectedOrganization](/graph/api/resources/connectedOrganization?view=graph-rest-beta) resource.|
+| Change   | beta | Renamed **requestorSettings** allowed value from "AllExistingConnectedOrganizationSubjects" to "AllConfiguredConnectedOrganizationSubjects" |
 
 ### People and workplace intelligence | Profile
 
