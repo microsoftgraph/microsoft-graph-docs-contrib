@@ -32,11 +32,21 @@ let config = {
   users: {
     invalidationPeriod: number,
     isEnabled: boolean
-  }
+  },
+  presence: {
+    invalidationPeriod: number,
+    isEnabled: boolean
+  },
+  groups: {
+    invalidationPeriod: number,
+    isEnabled: boolean
+  },
 };
 ```
 
 Individual cache invalidation periods are defaulted to `null` in the config object, and defaults to the general `defaultInvalidationPeriod` value of 3,600,000 ms (60 minutes). Any value passed into `config.x.invalidationPeriod` will override `defaultInvalidationPeriod`.
+
+The presence store is the sole exception, and has a default value of 300000 ms, or 5 minutes.
 
 ### Examples
 
