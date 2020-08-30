@@ -4,7 +4,7 @@ description: "This resource contains history of control states updated by user (
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
  #  secureScoreControlStateUpdate resource type

@@ -2,7 +2,7 @@
 title: "Create subscription"
 description: "Subscribes a listener application to receive change notifications when data on the Microsoft Graph changes."
 localization_priority: Priority
-author: "baywet"
+author: "davidmu1"
 ms.prod: ""
 doc_type: apiPageType
 ---
@@ -124,7 +124,7 @@ The following are valid values for the resource property of the subscription:
 |Conversations|groups('*{id}*')/conversations|
 |Drives|me/drive/root|
 |List|sites/{site-id}/lists/{list-id}|
-|Security alert|security/alerts?$filter=status eq 'New'|
+|Security alert|security/alerts?$filter=status eq 'NewAlert'|
 |Call records|communications/callRecords|
 
 ##### Response

@@ -7,11 +7,14 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# List taskFolders
+# List taskFolders (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Get Outlook task folders in a specific [outlookTaskGroup](../resources/outlooktaskgroup.md).
 ## Permissions
