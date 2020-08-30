@@ -123,8 +123,8 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 | Addition        | v1.0        | Added [delta query](delta-query-overview.md) capability to [servicePrincipal](/graph/api/serviceprincipal-delta). |
 | Addition | beta | Added the [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) to entitlement management.  |
 | Addition        | v1.0        | Added [delta query](delta-query-overview.md) capability for [oauth2PermissionGrant](/graph/api/oauth2Permissiongrant-delta). |
-| Addition | beta | Added the [bitlockerRecoveryKey](/graph/api/resources/bitlockerRecoveryKey?view=graph-rest-beta) resource type|
-| Addition | beta | Added the **volumeType** enumeration type|
+| Addition | beta | Added the [bitlockerRecoveryKey](/graph/api/resources/bitlockerRecoveryKey?view=graph-rest-beta) resource type. |
+| Addition | beta | Added the **volumeType** enumeration type. |
 ### Identity and access | Identity and sign-in
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|

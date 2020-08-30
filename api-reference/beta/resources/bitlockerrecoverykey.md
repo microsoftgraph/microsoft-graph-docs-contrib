@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Collectively represents a stored BitLocker recovery key and contains the actual key. Inherits from [entity](../resources/entity.md).
+Represents a stored BitLocker key that contains the actual recovery key via the **key** property.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List bitlockerRecoveryKeys](../api/bitlockerrecoverykey-list.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) collection|Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) objects and their properties.|
-|[Get bitlockerRecoveryKey](../api/bitlockerrecoverykey-get.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md)|Read the properties and relationships of a [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) object. Note: The key property is not returned by default.|
+|[Get bitlockerRecoveryKey](../api/bitlockerrecoverykey-get.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md)|Read the properties and relationships of a [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) object. Note: The **key** property is not returned by default.|
 
 > NOTE: Only some roles have the permissions to call the above APIs. See a method to learn more.
 
@@ -48,11 +48,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.bitlockerRecoveryKey",
-  "id": "String (identifier)",
-  "createdDateTime": "String (timestamp)",
-  "volumeType": "String",
-  "deviceId": "String",
-  "key": "String"
+  "id": "b465e4e8-e4e8-b465-e8e4-65b4e8e465b4",
+  "createdDateTime": "2020-06-15T13:45:30.0000000Z",
+  "volumeType": 1,
+  "deviceId": "1ab40ab2-32a8-4b00-b6b5-ba724e407de9",
+  "key": "123456-231453-873456-213546-654678-765689-123456-324565"
 }
 ```
 

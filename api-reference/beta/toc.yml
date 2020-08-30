@@ -9442,9 +9442,9 @@ items:
         - name: BitLocker recovery key (preview)
           href: resources/bitlockerrecoverykey.md
           items:
-          - name: Get BitLocker recovery key
+          - name: Get
             href: api/bitlockerrecoverykey-get.md
-          - name: List BitLocker recovery keys 
+          - name: List 
             href: api/bitlockerrecoverykey-list.md
         - name: Contracts
           href: resources/contract.md

@@ -12,18 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) object. Does not return the key property by default.
+Retrieve the properties and relationships of a [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) object. By default, this operation does not return the **key** property which represents the actual recovery key.
 
-One of the following roles must be assigned to call this API: <br>
-* Global administrator
-* Cloud device administrator
-* Helpdesk administrator
-* Intune service administrator
-* Security administrator
-* Security reader
-* Global reader
-* Registered owner of the device that the BitLocker recovery key was originally backed up from
-
+To include the **key** property in the response, use the `$select` OData query parameter. Including the `$select` query parameter triggers Azure AD auditing the operation and generating an audit log. You can find the log in [Azure AD audit logs](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-audit-logs) under the KeyManagement category.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,25 +25,36 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
-## HTTP request
+>NOTE: For delegated permissions to allow apps to get BitLockerRecoveryKey resources on behalf of the signed-in user, the tenant administrator must have assigned the user one of the following roles, or the user must be the **registered owner** of the device that the BitLocker key was originally backed up from. 
+* Global administrator
+* Cloud device administrator
+* Helpdesk administrator
+* Intune service administrator
+* Security administrator
+* Security reader
+* Global reader
 
+## HTTP request
+To get the specified BitLocker key without returning the **key** property:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET /bitlocker/recoveryKeys/{bitlockerRecoveryKeyId}
+GET /bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
+```
+
+To get the specified BitLocker key including its **key** property:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$select=key
 ```
 
 ## Optional query parameters
-This method supports the follwoing OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
-### OData query parameters
-|Parameter|Description|Example|
-|:---|:---|:---|
-|[$select](/graph/query-parameters#select-parameter)|Use to return the 'key' property. Requires BitLocker.Read.All permission.|`/recoveryKeys/{bitlockerRecoveryKeyId}?$select=key`|
-> NOTE: When the $select query parameter is included in the API call, the call is audited, and an audit log is generated. You can find this log in Azure Active Directory audit logs under the KeyManagement category.
-
+This method supports the `$select` OData query parameter to return the **key** property. See [Example 2](#Example-2). For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -70,20 +72,26 @@ If successful, this method returns a `200 OK` response code and a [bitlockerReco
 
 ## Examples
 
-### Example 1: Get BitLocker key without 'key' property by specifying key id
+### Example 1
+Get BitLocker key by specifying the **key id**. Does not return the **key** property.
 
 #### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["b465e4e8-e4e8-b465-e8e4-65b4e8e465b4"],
   "name": "get_bitlockerrecoverykey"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys/{bitlockerRecoveryKeyId}
+GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
+ocp-client-name: "My Friendly Client"
+ocp-client-version: "1.2"
 ```
 
 
 #### Response
+The following is an example of the response.<br>
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -99,27 +107,31 @@ Content-type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.bitlockerRecoveryKey",
     "id": "b465e4e8-e4e8-b465-e8e4-65b4e8e465b4",
-    "createdDateTime": "String (timestamp)",
-    "volumeType": "String",
-    "deviceId": "String"
+    "createdDateTime": "2020-06-15T13:45:30.0000000Z",
+    "volumeType": 1,
+    "deviceId": "1ab40ab2-32a8-4b00-b6b5-ba724e407de9"
   }
 }
 ```
 
-### Example 2: Get BitLocker key with 'key' property by specifying key id
+### Example 2
+Get BitLocker key with **key** property by specifying the **key id**
 
 #### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["b465e4e8-e4e8-b465-e8e4-65b4e8e465b4"],
   "name": "get_bitlockerrecoverykey"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys/{bitlockerRecoveryKeyId}?$select=key
+GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=key
 ```
 
 
 #### Response
+The following is an example of the response. <br>
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -136,9 +148,9 @@ Content-type: application/json
     "@odata.type": "#microsoft.graph.bitlockerRecoveryKey",
     "id": "b465e4e8-e4e8-b465-e8e4-65b4e8e465b4",
     "createdDateTime": "String (timestamp)",
-    "volumeType": "String",
-    "deviceId": "String",
-    "key": "String"
+    "volumeType": 1,
+    "deviceId": "1ab40ab2-32a8-4b00-b6b5-ba724e407de9",
+    "key": "123456-231453-873456-213546-654678-765689-123456-324565"
   }
 }
 ```

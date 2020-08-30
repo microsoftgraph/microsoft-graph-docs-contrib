@@ -12,17 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) objects and their properties. Does not return 'key' property. See [Get bitlockerRecoveryKey](../api/bitlockerrecoverykey-get.md) to retrieve 'key' property.
-
-One of the following roles must be assigned to call this API: <br>
-* Global administrator
-* Cloud device administrator
-* Helpdesk administrator
-* Intune service administrator
-* Security administrator
-* Security reader
-* Global reader
-* Registered owner of the device that the BitLocker recovery key was originally backed up from
+Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) objects and their properties. Does not return **key** property. See [Get bitlockerRecoveryKey](../api/bitlockerrecoverykey-get.md) to read **key** property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,7 +23,17 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
+>NOTE: For delegated permissions to allow apps to get BitLockerRecoveryKey resources on behalf of the signed-in user, the tenant administrator must have assigned the user one of the following roles, or the user must be the registered owner of the device that the BitLocker recovery key was originally backed up from. 
+* Global administrator
+* Cloud device administrator
+* Helpdesk administrator
+* Intune service administrator
+* Security administrator
+* Security reader
+* Global reader
+
 ## HTTP request
+To get a list of BitLocker keys within the tenant:
 
 <!-- {
   "blockType": "ignored"
@@ -43,20 +43,20 @@ One of the following permissions is required to call this API. To learn more, in
 GET /bitlocker/recoveryKeys
 ```
 
+To get a list of BitLocker keys within the tenant filtered by the **device id**:
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId}'
+```
+
 ## Optional query parameters
-This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` OData query parameters to filter results by the **device id** the key was most recently backed up to. See [Example 2](#Example-2). For general information, see [OData query parameters](/graph/query-parameters).
 
 The response may also contain an `odata.nextLink`, which you can use to page through the result set. See [Paging Microsoft Graph data](/graph/paging) for more information.
-
-### OData query parameters
-|Parameter|Description|Example|
-|:---|:---|:---|
-|[$filter](/graph/query-parameters#filter-parameter)|Filters results by device|`/recoveryKeys?$filter=deviceId eq {deviceId}`|
-
-#### Attributes supported by $filter parameter
-|Attribute|Supported operators|
-|:---|:---|
-|deviceId|eq|
 
 ## Request headers
 |Name|Description|
@@ -74,9 +74,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: List all BitLocker keys in the tenant
+### Example 1
+Retrieve a list of BitLocker keys in the tenant.
 
 #### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_bitlockerrecoverykey"
@@ -84,10 +86,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 ``` http
 GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys
+ocp-client-name: "My Friendly Client"
+ocp-client-version: "1.2"
 ```
 
 
 #### Response
+The following is an example of the response.<br>
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -104,34 +109,40 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.bitlockerRecoveryKey",
       "id": "b465e4e8-e4e8-b465-e8e4-65b4e8e465b4",
-      "createdDateTime": "String (timestamp)",
-      "volumeType": "String",
-      "deviceId": "String"
+      "createdDateTime": "2020-06-15T13:45:30.0000000Z",
+      "volumeType": 1,
+      "deviceId": "2ef04ef1-23b0-2e00-a3a5-ab345e567ab6"
     },
     {
       "@odata.type": "#microsoft.graph.bitlockerRecoveryKey",
       "id": "6a30ed7b-247b-4d26-86b5-2f405e55ea42",
-      "createdDateTime": "String (timestamp)",
-      "volumeType": "String",
-      "deviceId": "String"
+      "createdDateTime": "2020-06-15T13:45:30.0000000Z",
+      "volumeType": 1,
+      "deviceId": "1ab40ab2-32a8-4b00-b6b5-ba724e407de9"
     }
   ]
 }
 ```
-### Example 2: List all BitLocker keys for a device
+### Example 2
+Retrieve a list of BitLocker keys filtered by **device id**.
 
 #### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
+  "sampleIds": ["1ab40ab2-32a8-4b00-b6b5-ba724e407de9"],
   "name": "get_bitlockerrecoverykey"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys?$filter=deviceId eq {deviceId}
+GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
+ocp-client-name: "My Friendly Client"
+ocp-client-version: "1.2"
 ```
 
 
 #### Response
+The following is an example of the response.<br>
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -148,9 +159,9 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.bitlockerRecoveryKey",
       "id": "b465e4e8-e4e8-b465-e8e4-65b4e8e465b4",
-      "createdDateTime": "String (timestamp)",
-      "volumeType": "String",
-      "deviceId": "String"
+      "createdDateTime": "2020-06-15T13:45:30.0000000Z",
+      "volumeType": 1,
+      "deviceId": "1ab40ab2-32a8-4b00-b6b5-ba724e407de9"
     }
   ]
 }
