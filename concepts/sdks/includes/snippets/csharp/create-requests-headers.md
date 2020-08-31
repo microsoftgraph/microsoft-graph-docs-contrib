@@ -2,7 +2,6 @@
 
 ```csharp
 //  GET https://graph.microsoft.com/v1.0/users/{user-id}/events
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var events = await graphClient.Me.Events
     .Request()

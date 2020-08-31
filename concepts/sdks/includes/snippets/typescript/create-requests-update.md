@@ -2,6 +2,7 @@
 
 ```typescript
 //PATCH https://graph.microsoft.com/v1.0/teams/{team-id}
+
 const teamSettings = {
   funSettings: {
     allowGiphy: true,

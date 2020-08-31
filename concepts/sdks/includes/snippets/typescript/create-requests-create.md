@@ -2,11 +2,6 @@
 
 ```typescript
 //POST https://graph.microsoft.com/v1.0/me/calendars
-const options = {
-  authProvider,
-};
-
-const client = Client.init(options);
 
 const calendar = {
   name: 'Volunteer'

@@ -2,7 +2,6 @@
 
 ```csharp
 // PATCH https://graph.microsoft.com/v1.0/teams/{team-id}
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var team = new Team
 {

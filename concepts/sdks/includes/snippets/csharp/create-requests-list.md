@@ -3,7 +3,7 @@
 ```csharp
 // GET https://graph.microsoft.com/v1.0/me/messages?$select=subject,sender&$filter=<some condition>&orderBy=receivedDateTime
 
-IUserMessagesCollectionPage messages = await graphClient.Me.Messages
+var messages = await graphClient.Me.Messages
     .Request()
     .Select(m => new {
         m.Subject,

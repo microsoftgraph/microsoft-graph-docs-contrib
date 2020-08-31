@@ -2,11 +2,6 @@
 
 ```typescript
 // GET https://graph.microsoft.com/v1.0/me/events
-const options = {
-  authProvider,
-};
-
-const client = Client.init(options);
 
 let events = await client.api('/me/events')
   .header('Prefer','outlook.timezone="Pacific Standard Time"')
