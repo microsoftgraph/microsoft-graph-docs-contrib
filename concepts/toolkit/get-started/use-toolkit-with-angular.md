@@ -73,6 +73,7 @@ Now, you can use any of the Microsoft Graph Toolkit components as you normally w
 All Microsoft Graph Toolkit components support [custom templates](../templates.md) which allow you to modify the content of a component. The default syntax for templating in the components is to use double braces to refer to the property data for each of the returned items like below:
 
 ```html
+<!-- Double braces are used for data binding in Angular. This will throw an error. -->
 <mgt-agenda>
     <template data-type="event">
         <div>{{event.subject}}</div>

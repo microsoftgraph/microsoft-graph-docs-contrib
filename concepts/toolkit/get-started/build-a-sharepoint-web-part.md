@@ -120,7 +120,7 @@ Now, you can start adding components to your web part. Simply add the components
 ```ts
 public render(): void {
     this.domElement.innerHTML = `
-    <mgt-person person-query="me" view="twolines"><mgt-person>
+      <mgt-person person-query="me" view="twolines"><mgt-person>
     `;
 }
 ```
@@ -145,14 +145,14 @@ Determine which Microsoft Graph API permissions you need depending on the compon
 
 ```json
 "webApiPermissionRequests": [
-    {
-        "resource": "Microsoft Graph",
-        "scope": "User.Read"
-    },
-        {
-        "resource": "Microsoft Graph",
-        "scope": "Calendars.Read"
-    }
+  {
+    "resource": "Microsoft Graph",
+    "scope": "User.Read"
+  },
+  {
+    "resource": "Microsoft Graph",
+    "scope": "Calendars.Read"
+  }
 ]
 ```
 ## Build and deploy your web part

@@ -26,7 +26,7 @@ The easiest way to create a new Teams app is to use the [Microsoft Teams Toolkit
 In order to test your application later, you will need a to host your application over a public facing URL using HTTPS. Install [ngrok](https://ngrok.com/download) and create a tunnel from the Internet to localhost:3000 with the following command:
 
 ```bash
-ngrok http http://localhost:3000
+ngrok http 3000
 ```
 In your project directory, locate the `.publish\Development.env` file and replace the value for `baseUrl0` with your ngrok URL.
 
@@ -139,6 +139,15 @@ Then, add the your auth component to the router:
 ## Add components
 
 Now, you're ready to add any of the Microsoft Graph Toolkit components to your tab. 
+
+You can add components to your HTML as you normally would. For example, to add the Login component add the below code to the body of your `index.html`:
+
+```html
+<mgt-login></mgt-login>
+```
+
+Or, you can add the components to the Tab component. We recommend using the `mgt-react` library 
+
 
 ## Test your application
 
