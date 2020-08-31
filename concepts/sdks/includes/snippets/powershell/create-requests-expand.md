@@ -6,5 +6,6 @@
 $userId = "71766077-aacc-470a-be5e-ba47db3b2e88"
 $messageId = "AQMkAGUy.."
 
+# -ExpandProperty is equivalent to $expand
 $message = Get-MgUserMessage -UserId $userId -MessageId $messageId -ExpandProperty Attachments
 ```
