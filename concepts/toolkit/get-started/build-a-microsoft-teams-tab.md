@@ -85,7 +85,7 @@ Providers.globalProvider = new TeamsProvider ({
 Replace `<YOUR_CLIENT_ID>` with the client ID for your application.
 
 ### Creating an app/client ID
-In order to get a client ID, you need to [register your application](https://docs.microsoft.com/graph/auth-register-app-v2) in Azure AD. 
+In order to get a client ID, you need to [register your application](https://docs.microsoft.com/graph/auth-register-app-v2) in Azure AD. Make sure to add your ngrok url with the full path to the auth popup page to your redirect uris (ex: `https://<YOUR_NGROK_URL>/auth.html`).
 >**Note**: MSAL only supports the Implicit Flow for OAuth. Make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under **Authentication**, find the **Implicit grant** section and select the checkboxes for **Access tokens** and **ID tokens**. 
 
 ## Create the auth popup page
@@ -168,7 +168,6 @@ Once your app has loaded, scroll down on the left menu and select **Test and Dis
 - Try out the components in the [playground](https://mgt.dev)
 - Ask a question on [StackOverflow](https:aka.ms/mgt-question)
 - Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt)
-
 
 
 
