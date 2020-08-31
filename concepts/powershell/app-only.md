@@ -66,6 +66,8 @@ You can register the application either in the [Azure Active Directory portal](h
 > [!NOTE]
 > You must have the Microsoft Graph PowerShell SDK [installed](installation.md) before following these steps.
 
+You may be wondering: "I can use the PowerShell SDK to register an app, so that I can use the PowerShell SDK?" Yes! In this case, you're using the PowerShell SDK with delegated access, logging in as an administrator, and creating the app registration. Then, using that app registration, you're able to use the PowerShell SDK with app-only access, allowing for unattended scripts.
+
 1. Use a text editor to create a new file named **RegisterAppOnly.ps1**. Paste the following code into the file.
 
     :::code language="powershell" source="RegisterAppOnly.ps1":::
