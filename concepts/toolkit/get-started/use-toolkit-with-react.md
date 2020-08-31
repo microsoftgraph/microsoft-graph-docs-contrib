@@ -19,7 +19,7 @@ import '@microsoft/mgt';
 
 class App extends Component {
   render() {
-    return <mgt-person show-name ref={el => (el.personDetails = { displayName: 'Nikola Metulev' })} />;
+    return <mgt-person show-name ref={el => (el.personDetails = { displayName: 'Megan Bowen' })} />;
   }
 }
 ```
@@ -65,11 +65,11 @@ We recommend using `mgt-react` to simplify usage of Microsoft Graph Toolkit comp
 Add the library to your project using
 
 ```bash
-npm install mgt-react
+npm install @microsoft/mgt-react
 ```
 or
 ```bash
-yarn add mgt-react
+yarn add @microsoft/mgt-react
 ```
 ### Using components
 
@@ -147,5 +147,5 @@ The `template` prop allows you to specify which template to overwrite. In this c
 ## Next steps
 - Check out this step-by-step tutorial on [building a React app](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-13-using-microsoft-graph-toolkit-with-react/)
 - Try out the components in the [playground](https://mgt.dev)
-- Ask a question on [StackOverflow](https:aka.ms/mgt-question)
+- Ask a question on [StackOverflow](https://aka.ms/mgt-question)
 - Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt)

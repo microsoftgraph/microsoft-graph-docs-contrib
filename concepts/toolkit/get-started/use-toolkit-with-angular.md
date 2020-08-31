@@ -117,5 +117,5 @@ Now, you can use your custom binding syntax to define custom templates.
 ## Next steps
 - Check out this step-by-step tutorial on [building an Angular app](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-14-using-microsoft-graph-toolkit-with-angular/)
 - Try out the components in the [playground](https://mgt.dev)
-- Ask a question on [StackOverflow](https:aka.ms/mgt-question)
+- Ask a question on [StackOverflow](https://aka.ms/mgt-question)
 - Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt)
