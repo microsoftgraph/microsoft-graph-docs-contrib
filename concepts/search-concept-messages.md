@@ -72,7 +72,6 @@ The following is an example of the response, which contains one message that mat
             {
               "_id": "ptWLQ4o6HYpQg8xmAAATzOzRAAA=",
               "_score": 1,
-              "_sortField": "DateTime",
               "_summary": "Here is a summary of your messages from last week",
               "_source": {
                 "@odata.type": "#microsoft.graph.message",
@@ -149,6 +148,7 @@ Content-Type: application/json
 
 - You can only access a user’s own mailbox. Searching delegated mailboxes is not supported.
 - For messages, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta) type contains the number of results on the page, not the total number of matching results.
+- Sorting results is not supported for events. A sort clause in the request will return a Bad Request error code in the response.
 
 ## Next steps
 

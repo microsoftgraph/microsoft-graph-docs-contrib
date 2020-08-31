@@ -6,21 +6,29 @@ localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API in Microsoft Graph to search custom types
+# Use the Microsoft Search API in Microsoft Graph to search custom types ingested with the Microsoft Graph connectors
 
-You can use the Microsoft Search API to import external data via the [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) resource, and run search queries on this external content.
+You can use the Microsoft Search API to search accross content ingested via the [Microsoft Graph connectors](https://docs.microsoft.com/microsoftsearch/connectors-overview). The content can have been imported either via the [built in connectors](https://docs.microsoft.com/microsoftsearch/connectors-gallery) provided by Microsoft, or via a custom connectors implemented through the [Graph Connectors ingestion API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta).
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
+Once the content has been ingested, you can use the search API to query that particular content.
+
 To search for custom types, specify the following in the [query](/graph/api/search-query?view=graph-rest-beta) method request body:
 
-- The **contentSources** property to include the connection ID that is assigned during the connector setup
+- The **contentSources** property to include the connection ID that is assigned during the connector setup. It is possible to pass multiple connection ID to search accross multiple connections. The results will be a single list, ranked accross the multiple connections.
+
+<!--
+TODOSEARCHAPI - Bug 1653398 
+-->
 
 - The **entityTypes** property as `externalItem`
 
 - The **stored_fields** property to include the fields in the external item you want to retrieve
 
 ## Example
+
+In this example, the content of the [AdventureWorks](https://docs.microsoft.com/sql/samples/adventureworks-install-configure) database has been ingested using the Azure SQL built-in connector.
 
 ### Request
 
@@ -37,21 +45,20 @@ Content-Type: application/json
         "externalItem"
       ],
       "contentSources": [
-        "/external/connections/servicenow-connector-contoso"
+          "/external/connections/azuresqlconnector",
+          "/external/connections/azuresqlconnector2"
       ],
       "query": {
         "query_string": {
-          "query": "contoso tickets"
+          "query": "yang"
         }
       },
       "from": 0,
       "size": 25,
       "stored_fields": [
-        "number",
-        "shortdescription",
-        "syscreatedon",
-        "accessurl",
-        "previewContent"
+        "BusinessEntityID",
+        "firstName",
+        "lastName"
       ]
     }
   ]
@@ -65,6 +72,7 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
   "value": [
     {
+      "searchTerms": ["ya"],
       "hitsContainers": [
         {
           "total": 2,
@@ -73,33 +81,32 @@ Content-Type: application/json
             {
               "_id": "AAMkADc0NDNlNTE0",
               "_score": 1,
-              "_sortField": "Relevance",
+              "_summary": "<ddd/>",
+              "_contentSource": "/external/connections/azuresqlconnector",
               "_source": {
                 "@odata.type": "#microsoft.graph.externalItem",
                 "properties": {
-                  "number": "KB0010025",
-                  "shortdescription": "Contoso maintenance guidelines",
-                  "syscreatedon": "2019-10-14T22:45:02Z",
-                  "accessurl": "https://contoso.service-now.com/kb_view.do?sys_kb_id=6b5465781ba000104793877ddc4bcb81",
-                  "previewContent": "Contoso maintenance guidelines"
+                  "businessEntityID": 20704,
+                  "firstName": "Amy",
+                  "lastName": "Yang"
                 }
               }
             },
-            {
-              "_id": "MG+1glPAAAAAAl3AAA=",
+           {
+              "_id": "AQMkADg3M2I3YWMyLTEwZ",
               "_score": 2,
-              "_sortField": "Relevance",
+              "_summary": "<ddd/>",
+              "_contentSource": "/external/connections/azuresqlconnector2",
               "_source": {
                 "@odata.type": "#microsoft.graph.externalItem",
                 "properties": {
-                  "number": "KB0054396",
-                  "shortdescription": "Contoso : Setting Office for the first time.",
-                  "syscreatedon": "2019-08-09T01:53:26Z",
-                  "accessurl": "https://contoso.service-now.com/kb_view.do?sys_kb_id=004d8d931b0733004793877ddc4bcb29",
-                  "previewContent": "Description:  Setting Office for the first time.  Resolution:    To setup any Office app for the first time, tap any Office app like Word to launch it.    Tap Sign in if you already have a Microsoft Account or a Microsoft 365 work or school account."
+                  "businessEntityID": 20704,
+                  "shortdescription": "Contoso maintenance guidelines",
+                  "firstName": "Amy",
+                  "lastName": "Yang"
                 }
               }
-            }
+            },
           ]
         }
       ]
@@ -110,9 +117,7 @@ Content-Type: application/json
 
 ## Known limitations
 
-- Custom types don’t support searching across multiple sources (specified in **contentSources**). You can search only one connection at a time.
-
-- You must specify the **stored_fields** property; otherwise, search results are not returned.
+- You must specify the **stored_fields** property to get retrievable fields in the search schema.
 
 ## Next steps
 

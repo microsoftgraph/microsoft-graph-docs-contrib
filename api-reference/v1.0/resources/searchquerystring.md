@@ -1,19 +1,19 @@
 ---
-title: "searchQuery resource type"
-description: "searchQuery"
+title: "searchQueryString resource type"
+description: "searchQueryString"
 localization_priority: Normal
 author: "nmoreau"
-ms.prod: "search"
+ms.prod: ""
 doc_type: "resourcePageType"
 ---
 
-# searchQuery resource type
+# searchQueryString resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a search query that contains search terms and optional filters.
+The search terms for the query.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -21,7 +21,7 @@ Represents a search query that contains search terms and optional filters.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|query_string|[searchQueryString](searchquerystring.md)|The search query containing the search terms. Required.|
+|query|String|Contains the actual search terms of the request.|
 
 ## JSON representation
 
@@ -32,13 +32,13 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.searchQuery",
+  "@odata.type": "microsoft.graph.searchQueryString",
   "baseType": null
 }-->
 
 ```json
 {
-  "query_string": {"@odata.type": "microsoft.graph.searchQueryString"}
+  "query": "String"
 }
 ```
 
@@ -46,7 +46,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "searchQuery resource",
+  "description": "searchQueryString resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

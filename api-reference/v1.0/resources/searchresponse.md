@@ -1,19 +1,19 @@
 ---
-title: "searchQuery resource type"
-description: "searchQuery"
+title: "searchResponse resource type. SEARCHAPI1.0"
+description: "PROVIDE DESCRIPTION HERE"
 localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
-# searchQuery resource type
+# searchResponse resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a search query that contains search terms and optional filters.
+The searchResponse contains the results from the search query.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -21,7 +21,8 @@ Represents a search query that contains search terms and optional filters.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|query_string|[searchQueryString](searchquerystring.md)|The search query containing the search terms. Required.|
+|hitsContainers|[searchHitsContainer](searchhitscontainer.md) collection|A collection of search results.|
+|searchTerms|String collection|Contains the search terms sent in the initial search query.|
 
 ## JSON representation
 
@@ -32,13 +33,14 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.searchQuery",
+  "@odata.type": "microsoft.graph.searchResponse",
   "baseType": null
 }-->
 
 ```json
 {
-  "query_string": {"@odata.type": "microsoft.graph.searchQueryString"}
+  "hitsContainers": [{"@odata.type": "microsoft.graph.searchHitsContainer"}],
+  "searchTerms": ["String"]
 }
 ```
 
@@ -46,7 +48,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "searchQuery resource",
+  "description": "searchResponse resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

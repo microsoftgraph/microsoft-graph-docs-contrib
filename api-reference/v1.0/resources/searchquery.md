@@ -1,5 +1,5 @@
 ---
-title: "searchQuery resource type"
+title: "searchQuery resource type SEARCHAPI1.0"
 description: "searchQuery"
 localization_priority: Normal
 author: "nmoreau"
@@ -21,7 +21,7 @@ Represents a search query that contains search terms and optional filters.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|query_string|[searchQueryString](searchquerystring.md)|The search query containing the search terms. Required.|
+|query_string|[searchQueryString](searchquerystring.md)|The search query containing the search terms.|
 
 ## JSON representation
 

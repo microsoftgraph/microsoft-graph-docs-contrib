@@ -1,19 +1,19 @@
 ---
-title: "searchQuery resource type"
-description: "searchQuery"
+title: "searchHit resource type"
+description: "PROVIDE DESCRIPTION HERE SEARCHAPI1.0"
 localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
-# searchQuery resource type
+# searchHit resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a search query that contains search terms and optional filters.
+Represent a single result within the list of search results.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -21,7 +21,10 @@ Represents a search query that contains search terms and optional filters.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|query_string|[searchQueryString](searchquerystring.md)|The search query containing the search terms. Required.|
+|_id|String|The internal identifier for the item.|
+|_score|Int32|The score or the order of the result.|
+|_summary|String|A summary of the result (if summary is available).|
+|_source|[entity](entity.md)|The underlying Graph representation of the search result.|
 
 ## JSON representation
 
@@ -32,13 +35,16 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.searchQuery",
+  "@odata.type": "microsoft.graph.searchHit",
   "baseType": null
 }-->
 
 ```json
 {
-  "query_string": {"@odata.type": "microsoft.graph.searchQueryString"}
+  "_id": "String",
+  "_score": 1024,
+  "_summary": "String",
+  "_source": { "@odata.type": "microsoft.graph.entity" }
 }
 ```
 
@@ -46,7 +52,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "searchQuery resource",
+  "description": "searchHit resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
