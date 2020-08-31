@@ -62,8 +62,6 @@ If successful, this method returns a 200 response code and the updated regionalA
 The following is an example of the request.
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "put_regionalAndLanguageSettings"
@@ -139,9 +137,6 @@ HTTP/1.1 204 No Content
 #### Request
 
 The following is an example of the request.
-
-
-# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {

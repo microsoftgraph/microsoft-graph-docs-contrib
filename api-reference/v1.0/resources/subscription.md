@@ -2,7 +2,7 @@
 title: "subscription resource type"
 description: "A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:"
 localization_priority: Priority
-author: "baywet"
+author: "davidmu1"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -15,7 +15,7 @@ A subscription allows a client app to receive change notifications about changes
 
 - An [alert][] from the Microsoft Graph Security API
 - A [callRecord][] produced after a call or meeting in Microsoft Teams
-- A [conversation][] in an Office 365 group
+- A [conversation][] in a Microsoft 365 group
 - Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive
 - A [list][] under a SharePoint [site][]
 - A [message][], [event][], or [contact][] in Outlook

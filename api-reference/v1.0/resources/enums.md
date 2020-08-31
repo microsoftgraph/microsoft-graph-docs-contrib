@@ -7,8 +7,35 @@ author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ---
 
+# Enum values
 
 Namespace: microsoft.graph
+
+### activityType values
+
+|Member|
+|:---|
+|signin|
+|user|
+|unknownFutureValue|
+
+### riskDetectionTimingType values
+
+|Member|
+|:---|
+|notDefined|
+|realtime|
+|nearRealtime|
+|offline|
+|unknownFutureValue|
+
+### tokenIssuerType values
+
+|Member|
+|:---|
+|AzureAD|
+|ADFederationServices|
+|UnknownFutureValue|
 
 ### attachmentType values
 
