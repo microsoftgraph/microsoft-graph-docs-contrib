@@ -2,7 +2,11 @@
 author: swapnil1993
 ms.author: swapnil1993
 ms.date: 08/28/2020
-title: Delete content type from a SharePoint list or Site
+title: "ContentType delete"
+description: "Delete content type from a SharePoint list or Site"
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: "sharepoint"
 ---
 # Delete a content type from a site or a list
 

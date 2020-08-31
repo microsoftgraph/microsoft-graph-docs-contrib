@@ -2,7 +2,11 @@
 author: swapnil1993
 ms.author: swapnil1993
 ms.date: 08/29/2020
-title: Publish a site content type
+title: "ContentType Publish"
+description: "Publish a site content type"
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: "sharepoint"
 ---
 # Publish a site content type
 Namespace: microsoft.graph

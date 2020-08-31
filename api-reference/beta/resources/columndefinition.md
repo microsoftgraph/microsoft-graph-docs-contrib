@@ -100,7 +100,7 @@ The type-related properties (boolean, calculated, choice, currency, dateTime, lo
 | **term**     | [termColumn][] | This column stores taxonomy terms.
 | **sourceContentType**   |[contentTypeInfo][]  | ContentType from which this column is inherited from. Used only while fetching contentTypes columns | No | No
 | **thumbnail**           |[thumbnailColumn][]      | This column stores thumbnail values. | No | No
-| **type**         | [columnTypes][]  | For site columns, the type of column. | No | Yes
+| **type**         | columnTypes  | For site columns, the type of column. | No | Yes
 | **contentApprovalStatus**| [contentApprovalStatusColumn][]     | This column stores content approval status.
 
 
@@ -134,6 +134,7 @@ To see them when showing **field** values on [listItems][listItem], include the 
 [thumbnailColumn]: thumbnailColumn.md
 [hyperlinkOrPictureColumn]: hyperlinkOrPictureColumn.md
 [columnValidation]: columnValidation.md
+[contentTypeInfo]: contentTypeInfo.md
 [SPFieldType]: https://msdn.microsoft.com/library/microsoft.sharepoint.spfieldtype.aspx
 
 <!--

@@ -2,7 +2,11 @@
 author: swapnil1993
 ms.author: swapnil1993
 ms.date: 08/30/2020
-title: Update a content type
+title: "ContentType update"
+description: "Update a content type"
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: "sharepoint"
 ---
 
 # Update a content type
@@ -37,8 +41,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "request" } -->
 
 ```http
-
 PATCH /sites/{site-id}/contentTypes/{contentType-id}
+
 PATCH /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}
 ```
 
@@ -49,6 +53,8 @@ PATCH /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}
 In the request body, supply a JSON representation of the [contentType][] resource to update.  
 
 ## Example
+
+## Request
 
 ```http
 PATCH /sites/{site-id}/contentTypes/{contentType-id}
@@ -90,6 +96,7 @@ Content-Type: application/json
 		}]
 	}
 }
+
 ```
 
 #### Response
@@ -101,12 +108,9 @@ Content-Type: application/json
   
 
 ```http
-
 HTTP/1.1 200 OK
-
 Content-type: application/json
 
-  
 {
     "id": "0x0101009B237E76EF94DC49B4E58139041E7C60",
     "description": "",
@@ -119,7 +123,6 @@ Content-type: application/json
         "id": "0x0101",
         "name": "Document"
     }
-}
 }
 
 ```

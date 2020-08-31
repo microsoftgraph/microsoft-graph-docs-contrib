@@ -2,7 +2,11 @@
 author: swapnil1993
 ms.author: swapnil1993
 ms.date: 08/19/2020
-title: Get site content types that can be added to a list
+title: "ContentType GetApplicableContentTypesForList"
+description: "Get site content types that can be added to a list"
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: "sharepoint"
 ---
 # Get site content types that can be added to a list
 Namespace: microsoft.graph
@@ -25,8 +29,14 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /sites/{siteId}/oneDrive.getApplicableContentTypesForList(listId={listId})
+GET /sites/{siteId}/getApplicableContentTypesForList(listId='listId')
 ```
+
+## Function Parameters
+
+|Parameter|Type|Required|Description|
+|-|-|-|-|
+|listId| string | Yes| GUID of the list for which the applicable content types need to be fetched |
 
 ## Optional query parameters
 
@@ -37,16 +47,15 @@ To list only custom content types use $filter=isBuiltin eq false
 ## Example
 
 ## Request
-<!-- { "blockType": "request", "name": "get-contentType", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "scopes": "sites.read.all" } -->
 
 ```http
-GET /sites/{siteId}/getApplicableContentTypesForList(listId={listId})
-Content-Type: application/json
+GET /sites/{siteId}/getApplicableContentTypesForList(listId='listId')
 ```
 
 ## Response
 
-<!-- { "blockType": "response" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.contentType", "isCollection": true, "truncated": true } -->
 
 ```http
 HTTP/1.1 200 OK

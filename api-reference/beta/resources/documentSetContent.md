@@ -3,6 +3,10 @@ author: swapnil1993
 ms.author: swapnil1993
 ms.date: 08/28/2020
 title: DocumentSetContent
+description: "The documentSetContent resource contains metadata about file present in default content location of a content."
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # DocumentSetContent resource type
 

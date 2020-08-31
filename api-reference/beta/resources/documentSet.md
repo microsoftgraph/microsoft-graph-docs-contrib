@@ -3,6 +3,10 @@ author: swapnil1993
 ms.author: swapnil1993
 ms.date: 08/28/2020
 title: DocumentSet
+description: "The documentSet resource contains metadata about document set settings."
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # DocumentSet resource type
 

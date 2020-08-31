@@ -2,7 +2,11 @@
 author: swapnil1993
 ms.author: swapnil1993
 ms.date: 08/29/2020
-title: Check publishing status of a site content type
+title: "ContentType isPublished"
+description: "Check publishing status of a site content type"
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: "sharepoint"
 ---
 # Check publishing status of a site content type
 Namespace: microsoft.graph
@@ -25,21 +29,21 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "request" } -->
 
 ```http
-GET/sites/{siteId}/contentTypes/{contentTypeId}/isPublished
+GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 ```
 
 **Note:** The siteId should belong to a content type hub site.
 
 ## Example
 
+## Request
 ```http
-GET /sites/{siteId}/contentTypes/{contentTypeId}/oneDrive.isPublished
-Content-Type: application/json
+GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 ```
 ## Response
-<!-- { "blockType": "response", "@type": "microsoft.graph.contentType", "isCollection": true, "truncated": true } -->
+<!-- { "blockType": "response", "@type": "string"} -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

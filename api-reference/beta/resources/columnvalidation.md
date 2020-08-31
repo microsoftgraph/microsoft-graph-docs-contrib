@@ -3,6 +3,10 @@ author: swapnil1993
 ms.author: swapnil1993
 ms.date: 08/28/2020
 title: ColumnValidation
+description: "The columnValidation resource contains data for validating the column values."
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # ColumnValidation resource type
 

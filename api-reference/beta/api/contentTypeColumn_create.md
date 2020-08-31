@@ -2,7 +2,11 @@
 author: swapnil1993
 ms.author: swapnil1993
 ms.date: 08/30/2020
-title: Add columns in a content type
+title: "ContentType Column create"
+description: "Add columns in a Content type"
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: "sharepoint"
 ---
 
 # Add columns in a Content type
@@ -37,7 +41,6 @@ One of the following permissions is required to call this API. To learn more, in
   
 
 ```http
-
 POST /sites/{site-id}/contentTypes/{contentType-id}/columns
 POST /sites/{site-id}/lists/{list-id}//contentTypes/{contentType-id}/columns
 ```
@@ -59,13 +62,13 @@ Content-Type: application/json
 		{ "id": "c042a256-787d-4a6f-8a8a-cf6ab767f12d" },
 		{ "name": "Custom Column",
 		  "group": "Custom Columns",
-		  "required" " true,
+		  "required": true,
 		  "text":{
 			  "allowMultipleLines":false,
 			  "appendChangesToExistingText":false,
 			  "linesForEditing":0,
 			  "maxLength":255
-		   }
+		   },
           "propagateChanges": false
 		}
 	]
@@ -81,12 +84,9 @@ Content-Type: application/json
   
 
 ```http
-
 HTTP/1.1 200 OK
-
 Content-type: application/json
 
-  
 {
 	"value": [
 		{
@@ -114,6 +114,7 @@ Content-type: application/json
 
 		"maxLength": 255
 
+		}
 		},
 		{
 
@@ -139,6 +140,7 @@ Content-type: application/json
 
 		"maxLength": 255
 
+		}
 		}
 	]
 }

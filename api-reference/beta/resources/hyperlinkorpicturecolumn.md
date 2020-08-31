@@ -3,11 +3,14 @@ author: swapnil1993
 ms.author: swapnil1993
 ms.date: 08/28/2020
 title: HyperlinkOrPictureColumn 
+description: "The hyperlinkOrPictureColumn resource indicates that the column contains URL data which can be an achortag or an image that serves as a hyperlink."
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # HyperlinkOrPictureColumn resource type
 
-The **hyperlinkOrPictureColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column contains URL data which can be
-an achortag or an image that serves as a hyperlink.
+The **hyperlinkOrPictureColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column contains URL data which can be an achortag or an image that serves as a hyperlink.
 
 ## JSON representation
 

@@ -2,8 +2,11 @@
 author: swapnil1993
 ms.author: swapnil1993
 ms.date: 08/30/2020
-title: Add copy of site content type to a list
-
+title: "ContentType AddCopy"
+description: "Add copy of site content type to a list"
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: "sharepoint"
 ---
 
 # Add copy of site content type to a list

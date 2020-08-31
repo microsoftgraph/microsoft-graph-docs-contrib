@@ -2,7 +2,11 @@
 author: swapnil1993
 ms.author: swapnil1993
 ms.date: 08/08/2020
-title: Create a ContentType in a site
+title: "ContentType create"
+description: "Create a Content type in a site"
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: "sharepoint"
 ---
 
 # Create a Content type in a site

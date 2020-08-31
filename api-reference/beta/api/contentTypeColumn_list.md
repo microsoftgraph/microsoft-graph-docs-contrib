@@ -2,7 +2,11 @@
 author: swapnil1993
 ms.author: swapnil1993
 ms.date: 08/30/2020
-title: List columns in a content type
+title: "ContentType Column List"
+description: "List  columns in a Content type"
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: "sharepoint"
 ---
 
 # List  columns in a Content type

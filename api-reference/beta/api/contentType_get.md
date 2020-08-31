@@ -2,7 +2,11 @@
 author: swapnil1993
 ms.author: swapnil1993
 ms.date: 07/30/2020
-title: Get a content type in a site or list
+title: "ContentType Get"
+description: "Get a content type in a site or list"
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: "sharepoint"
 ---
 # Get a content type in a site or list
 

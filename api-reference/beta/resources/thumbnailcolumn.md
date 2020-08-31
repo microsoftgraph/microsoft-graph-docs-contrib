@@ -3,6 +3,10 @@ author: swapnil1993
 ms.author: swapnil1993
 ms.date: 08/28/2020
 title: ThumbnailColumn
+description: "The thumbnailColumn resource indicates that the column contains information about thumbnail."
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # ThumbnailColumn resource type
 

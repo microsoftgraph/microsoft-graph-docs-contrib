@@ -2,7 +2,11 @@
 author: swapnil1993
 ms.author: swapnil1993
 ms.date: 08/29/2020
-title: Unpublish a site content type
+title: "ContentType Unpublish"
+description: "Unpublish a site content type"
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: "sharepoint"
 ---
 # Unpublish a site content type
 Namespace: microsoft.graph

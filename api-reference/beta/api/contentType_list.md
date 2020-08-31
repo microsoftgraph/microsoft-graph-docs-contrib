@@ -2,9 +2,13 @@
 author: swapnil1993
 ms.author: swapnil1993
 ms.date: 07/30/2020
-title: List the Sharepoint Content types in a site collection or a list
+title: "ContentType List"
+description: "List the Sharepoint Content types in a site collection or a list"
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: "sharepoint"
 ---
-# Enumerate Content types in a site
+# Enumerate Content types in a site or a list
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -36,7 +40,7 @@ This method supports some of the OData query parameters to help customize the re
 
 #### Request
 
-<!-- { "blockType": "request", "name": "enum-contentTypes", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "enum-contentTypes", "scopes": "sites.read.all"} -->
 
 ```http
 GET /sites/{site-id}/contentTypes
@@ -46,7 +50,7 @@ GET /sites/{site-id}/contentTypes
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.contentType", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

@@ -2,7 +2,11 @@
 author: swapnil1993
 ms.author: swapnil1993
 ms.date: 08/28/2020
-title: Delete a column from a site or list content type.
+title: "ContentType Column delete"
+description: "Delete a column from a content type"
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: "sharepoint"
 ---
 # Delete a column from a content type
 Namespace: microsoft.graph

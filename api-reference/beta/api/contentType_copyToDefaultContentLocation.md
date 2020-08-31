@@ -2,7 +2,11 @@
 author: swapnil1993
 ms.author: swapnil1993
 ms.date: 08/30/2020
-title: Copy a file to default content location in a Content Type
+title: "ContentType copyToDefaultContentLocation"
+description: "Copy a file to default content location in a Content Type"
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: "sharepoint"
 ---
 
 # Copy a file to default content location in a Content Type

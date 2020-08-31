@@ -2,8 +2,11 @@
 author: swapnil1993
 ms.author: swapnil1993
 ms.date: 08/30/2020
-title: Associate a content type with list of hubsites
-
+title: "ContentType associateWithHubSites"
+description: "Associate a content type with list of hubsites"
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: "sharepoint"
 ---
 
 # Associate a content type with list of hubsites
