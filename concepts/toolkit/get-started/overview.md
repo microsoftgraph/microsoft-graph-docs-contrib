@@ -14,7 +14,7 @@ You can watch this short video to see how quick and easy it is to get started wi
 > [!VIDEO https://www.youtube-nocookie.com/embed/oZCGb2MMxa0]
 
 ## Set up your Microsoft 365 tenant
-In order to develop with the Toolkit, you need access to a Microsoft 365 tenant. If you don't have one, you can get a free Microsoft 365 developer subscription by [joining the Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).For instructions on how to join the program and configure your subscription, see [Set up a Microsoft 365 developer subscription](https://docs.microsoft.com/office/developer-program/microsoft-365-developer-program-get-started).
+In order to develop with the Toolkit, you need access to a Microsoft 365 tenant. If you don't have one, you can get a free Microsoft 365 developer subscription by [joining the Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program). For instructions on how to join the program and configure your subscription, see [Set up a Microsoft 365 developer subscription](https://docs.microsoft.com/office/developer-program/microsoft-365-developer-program-get-started).
 
 ## Set up your development environment
 To develop with the Toolkit, you will need a text editor or IDE. You can use the editor or IDE of your choice or install and use [Visual Studio Code](https://code.visualstudio.com/download) for free. You will also need a modern web browser like Microsoft Edge, Google Chrome, or Firefox.
@@ -48,11 +48,7 @@ Or, just reference the component you need and avoid loading  everything else:
 
 #### Polyfills
 
-If you're using the ES6 modules from the npm package, you will need to include polyfills in your project as they are not automatically included. Polyfills help to fill in missing browser capabilities in browsers that are still in the process of updating to support Web Component standards. To learn more, see [polyfills](https://www.webcomponents.org/polyfills). To install polyfills, run:
-
-```bash
-npm install @webcomponents/webcomponentsjs
-```
+If you're using the ES6 modules from the npm package and you are [targeting a browser such as IE11](https://caniuse.com/#search=components) that does not support web components natively, you will need to include polyfills in your project as they are not automatically included. Polyfills help to fill in missing browser capabilities in browsers that are still in the process of updating to support Web Component standards.  For instructions on including the polyfills, and to learn more, see [polyfills documentation](https://www.webcomponents.org/polyfills). 
 
 The polyfills are already included if you are using the Toolkit via the mgt-loader script.
 
@@ -63,4 +59,3 @@ You're now ready to start developing with Microsoft Graph Toolkit! The following
 - [Build a Microsoft Teams tab](./build-a-microsoft-teams-tab.md)
 - [Use the Toolkit with React](./use-toolkit-with-react.md)
 - [Use the Toolkit with Angular](./use-toolkit-with-angular.md)
-

@@ -10,7 +10,7 @@ author: elisenyang
 This topic covers how to use Microsoft Graph Toolkit components in a [SharePoint client-side web part](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts). To get started, the steps you need to follow include:
 
 1. Set up your development environment and create a web part
-2. Add TypeScript to your project
+2. Update TypeScript in your project
 3. Add Microsoft Graph Toolkit
 4. Add the SharePoint Provider
 5. Add components
@@ -22,7 +22,7 @@ This topic covers how to use Microsoft Graph Toolkit components in a [SharePoint
 
 Follow the steps to [Set up your SharePoint Framework development environment](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-development-environment) and then [create a new web part](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part).
 
-## Add TypeScript to your project
+## Update TypeScript in your project
 
 Microsoft Graph Toolkit requires Typescript 3.x. Before adding the Toolkit to your project, make sure you're using a [supported version of Typescript](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x). For example, to add Typescript 3.7, use the following command:
 
@@ -53,7 +53,6 @@ If you plan to support IE11 in your web parts, you will need to follow additiona
 ```bash
 npm install -D babel-loader @babel/core @babel/preset-env webpack
 npm install -D @webcomponents/webcomponentsjs regenerator-runtime core-js
-npm install @microsoft/mgt
 ```
 
 2. Add the following code to `gulpfile.js`, right above `build.initialize(gulp)`:
@@ -190,9 +189,7 @@ Your hosted workbench will automatically open in your browser. Add your web part
 ## Next Steps
 - Check out this step-by-step tutorial on [building a SharePoint web part](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-9-microsoft-graph-toolkit-sharepoint-provider/)
 - Try out the components in the [playground](https://mgt.dev)
-- Ask a question on [StackOverflow](https:aka.ms/mgt-question)
+- Ask a question on [StackOverflow](https://aka.ms/mgt-question)
 - Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt)
-
-
 
 

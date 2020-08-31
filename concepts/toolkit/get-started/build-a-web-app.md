@@ -31,13 +31,7 @@ Using the Toolkit via ES6 modules will give you full control of the bundling pro
 ```bash
 npm install @microsoft/mgt
 ```
-You will need to include polyfills in your project as they are not automatically included. Polyfills help to fill in missing browser capabilities in browsers that are still in the process of updating to support Web Component standards. To learn more, see [polyfills](https://www.webcomponents.org/polyfills). To install polyfills, run:
-
-```bash
-npm install @webcomponents/webcomponentsjs
-```
-
-The polyfills are already included if you are using the Toolkit via the mgt-loader script.
+> NOTE: If you are targeting a browser such as IE11 that does not support web components natively, you might need to [include polyfills.](./overview.md#polyfills)
 
 Now, you can reference the all of the Toolkit components in your application with:
 
@@ -126,5 +120,5 @@ If you're just getting started and want to play around, you can use [Live Server
 ## Next Steps
 - Check out this step-by-step tutorial on [building a simple web app](https://developer.microsoft.com/microsoft-365/blogs/a-lap-around-microsoft-graph-toolkit-day-2-zero-to-hero/)
 - Try out the components in the [playground](https://mgt.dev)
-- Ask a question on [StackOverflow](https:aka.ms/mgt-question)
+- Ask a question on [StackOverflow](https://aka.ms/mgt-question)
 - Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt)
