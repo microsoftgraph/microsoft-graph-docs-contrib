@@ -79,7 +79,9 @@ Here is a JSON representation of the resource.
         "displayName": "String",
         "roleScopeTagId": "String"
       }
-    ]
+    ],
+    "remoteTenantId": "String",
+    "remoteUserId": "String"
   },
   "activity": "String",
   "activityDateTime": "String (timestamp)",

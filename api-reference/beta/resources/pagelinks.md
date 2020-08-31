@@ -4,7 +4,7 @@ description: "Links for opening a OneNote page."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "jewan-microsoft"
 ---
 
 # pageLinks resource type

@@ -4,7 +4,7 @@ description: "The **assignedPlans** property of both the user entity and the org
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "krbain"
 ---
 
 # assignedPlan resource type
