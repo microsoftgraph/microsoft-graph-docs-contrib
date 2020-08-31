@@ -1,12 +1,16 @@
+<!-- markdownlint-disable MD041 -->
+
 ```csharp
-    GraphServiceClient graphClient = new GraphServiceClient( authProvider );
     
-    var calendar = new Calendar
-    {
-    	Name = "Volunteer"
-    };
-    
-    newCalendar = await graphClient.Me.Calendars
-    	.Request()
-    	.AddAsync(calendar);
+// POST https://graph.microsoft.com/v1.0/me/calendars
+GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+
+var calendar = new Calendar
+{
+    Name = "Volunteer"
+};
+
+newCalendar = await graphClient.Me.Calendars
+    .Request()
+    .AddAsync(calendar);
 ```

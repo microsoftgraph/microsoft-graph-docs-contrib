@@ -1,7 +1,9 @@
-```csharp
-    // GET https://graph.microsoft.com/v1.0/me
+<!-- markdownlint-disable MD041 -->
 
-     User user = await graphClient.Me  
-                .Request()
-                .GetAsync();  
+```csharp
+// GET https://graph.microsoft.com/v1.0/me
+
+User user = await graphClient.Me
+    .Request()
+    .GetAsync();
 ```
