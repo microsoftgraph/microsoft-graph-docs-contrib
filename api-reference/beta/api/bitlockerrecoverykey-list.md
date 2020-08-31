@@ -54,7 +54,7 @@ GET /bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId}'
 ```
 
 ## Optional query parameters
-This method supports the `$filter` OData query parameters to filter results by the **device id** the key was most recently backed up to. See [Example 2](#Example-2). For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` OData query parameters to filter results by the **device id** the key was most recently backed up to. See [Example 2](#example-2). For general information, see [OData query parameters](/graph/query-parameters).
 
 The response may also contain an `odata.nextLink`, which you can use to page through the result set. See [Paging Microsoft Graph data](/graph/paging) for more information.
 
