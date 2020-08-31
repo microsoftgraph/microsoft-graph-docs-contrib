@@ -150,7 +150,7 @@ Content-type: application/json
     "phone": "555-555-0100",
     "nickname": "Conf Room",
     "label": "100",
-    "capacity": 50,
+    "capacity": "50",
     "building": "1",
     "floorLabel": "1P",
     "floorNumber": 1,
