@@ -1,7 +1,6 @@
 <!-- markdownlint-disable MD041 -->
 
 ```csharp
-    
 // POST https://graph.microsoft.com/v1.0/me/calendars
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
