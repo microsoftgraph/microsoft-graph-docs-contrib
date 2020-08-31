@@ -57,4 +57,4 @@ In short, it's important to add the right permission to your `package-solution.j
 
 If you plan to support IE11 in your SPFx webparts, you must use polyfills.
 
-To learn more, see [get-started](../get-started.md#sharepoint).
+To learn more, see [get-started](../get-started/overview.md#polyfills).
