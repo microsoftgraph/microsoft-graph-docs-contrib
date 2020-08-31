@@ -10,7 +10,7 @@ author: elisenyang
 This topic covers how to use Microsoft Graph Toolkit components in a [SharePoint client-side web part](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts). To get started, the steps you need to follow include:
 
 1. Set up your development environment and create a web part
-2. Add TypeScript to your project
+2. Update TypeScript in your project
 3. Add Microsoft Graph Toolkit
 4. Add the SharePoint Provider
 5. Add components
@@ -192,7 +192,6 @@ Your hosted workbench will automatically open in your browser. Add your web part
 - Try out the components in the [playground](https://mgt.dev)
 - Ask a question on [StackOverflow](https:aka.ms/mgt-question)
 - Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt)
-
 
 
 
