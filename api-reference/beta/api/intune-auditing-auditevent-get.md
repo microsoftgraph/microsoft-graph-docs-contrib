@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1765
+Content-Length: 1863
 
 {
   "value": {
@@ -89,7 +89,9 @@ Content-Length: 1765
           "displayName": "Display Name value",
           "roleScopeTagId": "Role Scope Tag Id value"
         }
-      ]
+      ],
+      "remoteTenantId": "Remote Tenant Id value",
+      "remoteUserId": "Remote User Id value"
     },
     "activity": "Activity value",
     "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",

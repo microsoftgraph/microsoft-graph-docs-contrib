@@ -4,7 +4,7 @@ description: "The **licenseAssignmentStates** property of the user entity is a c
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "krbain"
 ---
 
 # licenseAssignmentState resource type
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **licenseAssignmentStates** property of the [user](user.md) entity is a collection of **licenseAssignmentState**. It provides details about license assignments to a user. The details includes information like:  
+The **licenseAssignmentStates** property of the [user](user.md) entity is a collection of **licenseAssignmentState**. It provides details about license assignments to a user. The details includes information like:
 
 - What plans are disabled for a user
 - Whether the license was assigned to the user directly or inherited from a group
 - Current state of the assignment
-- If the assignment state is Error, what is the error detail for the failure? 
+- If the assignment state is Error, what is the error detail for the failure?
 
 
 ## Properties
@@ -43,7 +43,7 @@ Here is a JSON representation of the resource
 {
   "assignedByGroup": "String",
   "disabledPlans": ["string"],
-  "error": " String ",  
+  "error": " String ",
   "skuId": "String ",
   "state": "String"
 }
