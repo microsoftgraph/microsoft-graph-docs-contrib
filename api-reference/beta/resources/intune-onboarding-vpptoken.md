@@ -28,6 +28,7 @@ You purchase multiple licenses for iOS apps through the Apple Volume Purchase Pr
 |[syncLicenses action](../api/intune-onboarding-vpptoken-synclicenses.md)|[vppToken](../resources/intune-onboarding-vpptoken.md)|Syncs licenses associated with a specific appleVolumePurchaseProgramToken|
 |[revokeLicenses action](../api/intune-onboarding-vpptoken-revokelicenses.md)|None|Revoke licenses associated with a specific appleVolumePurchaseProgramToken|
 |[getLicensesForApp function](../api/intune-onboarding-vpptoken-getlicensesforapp.md)|[vppTokenLicenseSummary](../resources/intune-onboarding-vpptokenlicensesummary.md) collection|Not yet documented|
+|[syncLicenseCounts action](../api/intune-onboarding-vpptoken-synclicensecounts.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
