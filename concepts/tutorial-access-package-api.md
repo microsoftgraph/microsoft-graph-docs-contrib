@@ -20,21 +20,20 @@ To successfully complete this tutorial, make sure that you have the required pre
 - Azure AD entitlement management requires specific licenses. For more information, see [License requirements](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview#license-requirements). The following licenses are required in your tenant:
     - Azure AD Premium P2
     - Enterprise Mobility + Security (EMS) E5 license
-- This tutorial assumes that you are Microsoft Graph Explorer, but you can use Postman, or any other API client. To call the Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. For this tutorial, the `User.ReadWrite.All`, `Group.ReadWrite.All`, and `EntitlementManagement.ReadWrite.All` delegated permissions are needed. Complete the following steps to set permissions in Microsoft Graph Explorer:
+- This tutorial assumes that you are using Microsoft Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call the Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. For this tutorial, the `User.ReadWrite.All`, `Group.ReadWrite.All`, and `EntitlementManagement.ReadWrite.All` delegated permissions are needed. Complete the following steps to set permissions in Microsoft Graph Explorer:
     1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
     2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. After you successfully sign in, you can see the user account details in the left-hand pane.
     3. Select the settings icon to the right of the user account details, and then select **Select permissions**.
 
         ![Select the Microsoft Graph permissions.](./images/tutorial-access-package-api/set-permissions.png)
     
-    4. Search for the `User` permissions, expand **User (8)**, select the **User.ReadWrite.All** permission, and then select **Consent**.
+    4. Search for the `User` permissions, expand **User (8)**, and select the **User.ReadWrite.All** permission.
 
         ![Search for the user permissions.](./images/tutorial-access-package-api/set-user-permission.png)
   
-    5. Select **Accept** to accept the consent of the permission. You do not need to consent on behalf of your organization for this permission.
-    6. Search for the `Group` permissions, expand **Group (2)**, select the **Group.ReadWrite.All** permission, and then select **Consent**.
-    7. Select **Accept** to accept the consent of the permission. You do not need to consent on behalf of your organization for this permission.
-    8. Search for the `EntitlementManagement` permissions, expand **EntitlementManagement (2)**, select the **Entitlemanamgent.ReadWrite.All** permission, and then select **Consent**. Because this permission requires admin consent and is needed by a user account that you create in this tutorial, you must select **Consent on behalf of your organization**.
+    5. Search for the `Group` permissions, expand **Group (2)**, select the **Group.ReadWrite.All** permission, and then select **Consent**.
+    6. Select **Accept** to accept the consent of the permissions. You do not need to consent on behalf of your organization for these permissions.
+    7. Search for the `EntitlementManagement` permissions, expand **EntitlementManagement (2)**, select the **Entitlement.ReadWrite.All** permission, and then select **Consent**. Because this permission requires admin consent and is needed by a user account that you create in this tutorial, you must select **Consent on behalf of your organization**.
 
         ![Consent for organization](./images/tutorial-access-package-api/consent-for-organization.png)
 
@@ -49,7 +48,7 @@ For this tutorial, you create a user account that is used to request access to t
 #### Request
 
 ``` http
-POST https://graph.microsoft.com/beta/users
+POST https://graph.microsoft.com/v1.0/users
 Content-type: application/json
 
 {
@@ -68,7 +67,7 @@ Content-type: application/json
 
 ```http
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
   "id": "007d1c7e-7fa8-4e33-b678-5e437acdcddc",
   "deletedDateTime": null,
   "accountEnabled": true,
@@ -102,7 +101,7 @@ In this tutorial, you create a group named **Marketing resources** that is the t
 #### Request
 
 ```http
-POST https://graph.microsoft.com/beta/groups
+POST https://graph.microsoft.com/v1.0/groups
 Content-type: application/json
 
 {
@@ -118,7 +117,7 @@ Content-type: application/json
 
 ```http
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
   "id": "e93e24d1-2b65-4a6c-a1dd-654a12225487",
   "deletedDateTime": null,
   "classification": null,
@@ -142,7 +141,7 @@ An *access package* is a bundle of resources that a team or project needs and is
 
 ### Get the catalog identifier
 
-To add resources to the catalog, you must first get the identifier of it. If you are using the General catalog, run the following request to get its identifier. If you are using a different calatlog, change the filter value in the request to the name of your catalog. Record the value of the **id** property that is returned to use later in this tutorial.
+To add resources to the catalog, you must first get the identifier of it. If you are using the General catalog, run the following request to get its identifier. If you are using a different calalog, change the filter value in the request to the name of your catalog. Record the value of the **id** property that is returned to use later in this tutorial.
 
 #### Request
 
@@ -255,7 +254,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ### Get resources roles
 
-The access package assigns users to the roles of a resource. The typical role of a group is the member role. Other resources, such as SharePoint Online sites and applications, may have many roles. You'll need the Member resource role when you add a resource role to the access package later in this tutorial. 
+The access package assigns users to the roles of a resource. The typical role of a group is the member role. Other resources, such as SharePoint Online sites and applications, may have many roles. The typical role of a group used in an access package is the member role. You'll need the member role when you add a resource role to the access package later in this tutorial. 
 
 In the request, use the **id** of the catalog and the **id** of the group resource in the catalog that you recorded to get the **originId** of the Member resource role. Record the value of the **originId** property to use later in this tutorial.
 
@@ -573,7 +572,7 @@ After the request has been granted, you can use the **id** that you recorded for
 #### Request
 
 ```http
-GET https://graph.microsoft.com/beta/groups/e93e24d1-2b65-4a6c-a1dd-654a12225487/members
+GET https://graph.microsoft.com/v1.0/groups/e93e24d1-2b65-4a6c-a1dd-654a12225487/members
 ```
 
 #### Response:
@@ -690,7 +689,7 @@ Delete the **Requestor1** user account.
 #### Request
 
 ```http
-DELETE https://graph.microsoft.com/beta/users/ce02eca8-752b-4ecf-ac29-aa9bccd87606
+DELETE https://graph.microsoft.com/v1.0/users/ce02eca8-752b-4ecf-ac29-aa9bccd87606
 ```
 
 #### Response
@@ -706,7 +705,7 @@ Delete the **Marketing resources** group.
 #### Request
 
 ```http
-DELETE https://graph.microsoft.com/beta/groups/a468eaea-ed6c-4290-98d2-a96bb1cb4209
+DELETE https://graph.microsoft.com/v1.0/groups/a468eaea-ed6c-4290-98d2-a96bb1cb4209
 ```
 
 #### Response
@@ -720,13 +719,12 @@ No Content - 204
 In this tutorial, you used many APIs to accomplish tasks. The following table lists the APIs that were used. Explore the API reference to learn more about what the APIs can do.
 
 
-| Resource type | Method |
-| ------------- | ------ |
-| [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta) |  [Create user](https://docs.microsoft.com/graph/api/user-post-users?view=graph-rest-beta)<br>[Delete user](https://docs.microsoft.com/graph/api/user-delete?view=graph-rest-beta) |
-| [group](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-beta) | [Create group](https://docs.microsoft.com/graph/api/group-post-groups?view=graph-rest-beta)<br>[List group members](https://docs.microsoft.com/graph/api/group-list-members?view=graph-rest-beta)<br>[Delete group](https://docs.microsoft.com/graph/api/group-delete?view=graph-rest-beta) |
-| [accessPackageCatalog](https://docs.microsoft.com/graph/api/resources/accesspackagecatalog?view=graph-rest-beta) | [List accessPackageCatalogs](https://docs.microsoft.com/graph/api/accesspackagecatalog-list?view=graph-rest-beta)<br>[List accessPackageResources](https://docs.microsoft.com/graph/api/accesspackagecatalog-list-accesspackageresources?view=graph-rest-beta)<br>[List accessPackageResourceRoles](https://docs.microsoft.com/graph/api/accesspackagecatalog-list-accesspackageresourceroles?view=graph-rest-beta) |
-| [accessPackageResourceRequest](https://docs.microsoft.com/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta) | [Create accessPackageResourceRequest](https://docs.microsoft.com/graph/api/accesspackageresourcerequest-post?view=graph-rest-beta) |
-| [accessPackage](https://docs.microsoft.com/graph/api/resources/accesspackage?view=graph-rest-beta) | [Create accessPackage](https://docs.microsoft.com/graph/api/accesspackage-post?view=graph-rest-beta)<br>[Delete accessPackage](https://docs.microsoft.com/graph/api/accesspackage-delete?view=graph-rest-beta) |
-| [accessPackageResourceRoleScope](https://docs.microsoft.com/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta) | [Create accessPackageResourceRoleScope](https://docs.microsoft.com/graph/api/accesspackage-post-accesspackageresourcerolescopes?view=graph-rest-beta) |
-| [accessPackageAssignmentPolicy](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta) | [Create accessPackageAssignmentPolicy](https://docs.microsoft.com/graph/api/accesspackageassignmentpolicy-post?view=graph-rest-beta)<br>[List accessPackageAssignmentPolicies](https://docs.microsoft.com/graph/api/accesspackageassignmentpolicy-list?view=graph-rest-beta)<br>[Delete accessPackageAssignmentPolicies](https://docs.microsoft.com/graph/api/accesspackageassignmentpolicy-delete?view=graph-rest-beta) |
-| [accessPackageAssignmentRequest](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) | [Create accessPackageAssignmentRequest](https://docs.microsoft.com/graph/api/accesspackageassignmentrequest-post?view=graph-rest-beta)<br>[List accessPackageAssignmentRequests](https://docs.microsoft.com/graph/api/accesspackageassignmentrequest-list?view=graph-rest-beta) |
+- [Working with the Azure AD entitlement management API](https://docs.microsoft.com/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta)
+- [accessPackageCatalog](https://docs.microsoft.com/graph/api/resources/accesspackagecatalog?view=graph-rest-beta)
+- [accessPackageResourceRequest](https://docs.microsoft.com/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta)
+- [accessPackage](https://docs.microsoft.com/graph/api/resources/accesspackage?view=graph-rest-beta)
+- [accessPackageResourceRoleScope](https://docs.microsoft.com/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta)
+- [accessPackageAssignmentPolicy](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)
+- [accessPackageAssignmentRequest](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta)
+- [group](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0)
+- [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-1.0)
