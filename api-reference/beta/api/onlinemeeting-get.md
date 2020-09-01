@@ -15,34 +15,42 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
-> **Note:** The `GET` method is currently only supported for a [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). These IDs are generated for Cloud-Video-Interop licensed users and this method is used to get the details to join the meeting.
+> ~~**Note:** The `GET` method is currently only supported for a [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). These IDs are generated for Cloud-Video-Interop licensed users and this method is used to get the details to join the meeting.~~
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged)           |
-|:---------------------------------------|:------------------------------------------------------|
+| :------------------------------------- | :---------------------------------------------------- |
 | Delegated (work or school account)     | Not Supported.                                        |
 | Delegated (personal Microsoft account) | Not Supported.                                        |
-| Application                            | OnlineMeetings.Read.All  							 |
+| Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
+
+> [!IMPORTANT]
+> Retrieving an online meeting with an application token is now available. Administrator will need to create an [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user so the app configured in the policy will be authorized to retrieve an online meeting that user (user ID specified in the reuqest path) has created.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
+GET /users/{userId}/onlineMeetings/{meetingId}
 ```
-> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
+
+> **Note:**
+> 
+> - The `/app` path is deprecated. Going forward, use the `/communications` path.
+> - `meetingId` is the `id` of an onlineMeeting entity
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
-| Name          | Description               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
-| Accept-Language  | Language. Optional. |
+| Name            | Description     | Required |
+| :-------------- | :-------------- | -------- |
+| Authorization   | Bearer {token}. | Yes      |
+| Accept-Language | Language.       | No       |
 
 If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header. The default content will be in English.
 

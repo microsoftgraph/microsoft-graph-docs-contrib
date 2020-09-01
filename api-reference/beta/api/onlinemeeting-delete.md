@@ -17,22 +17,33 @@ Delete an [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Permissions
 
-| Permission type | Permissions (from least to most privileged)                  |
-| :-------------- | :----------------------------------------------------------- |
-| Delegated (work or school account)     | OnlineMeetings.ReadWrite              |
-| Delegated (personal Microsoft account) | Not Supported.                         |
-| Application                            | Not Supported.                                  |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
+| Delegated (personal Microsoft account) | Not Supported.                              |
+| Application                            | OnlineMeetings.ReadWrite.All                |
+
+> [!IMPORTANT]
+> Deleting an online meeting with an application token is now available. Administrator will need to create an [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user so the app configured in the policy will be authorized to delete an online meeting that user (user ID specified in the reuqest path) has created.
 
 ## HTTP request
+
+Requring delegated token
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{id}
 ```
 
+Requring application token
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{id}
+```
+
 ## Request headers
-| Name          | Description               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+| Name          | Description     | Required |
+| :------------ | :-------------- | -------- |
+| Authorization | Bearer {token}. | Yes      |
 
 ## Request body
 Do not supply a request body for this method.

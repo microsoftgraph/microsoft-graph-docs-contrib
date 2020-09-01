@@ -20,27 +20,38 @@ Create an online meeting on behalf of a user by using the object ID (OID) in the
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
-| Delegated (personal Microsoft account) | Not supported.                               |
-| Application                            | Not supported.\* |
+| Permission type                        | Permissions (from least to most privileged)           |
+| :------------------------------------- | :---------------------------------------------------- |
+| Delegated (work or school account)     | OnlineMeetings.ReadWrite                              |
+| Delegated (personal Microsoft account) | Not supported.                                        |
+| Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 
 > [!IMPORTANT]
-> \* Support for creating an online meeting with an application token will be available in the near future. We will provide additional application policies that are complementary to the application-based permission scope. Currently, you must use the /me path with a user token.
+> Creating an online meeting with an application token is now available. Administrator will need to create an [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user so the app configured in the policy will be authorized to create an online meeting on behalf of that user (user ID specified in the reuqest path).
 
 ## HTTP request
+
+Requring delegated permission
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings
 ```
 
+Requring application permission
+<!-- { "blockType": "ignored" } -->
+```http
+POST /users/{userId}/onlineMeetings
+```
+
+> **Note:** `userId` is the object ID in AAD (TODO: more proper definition?)
+
 ## Request headers
-| Name          | Description               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
-| Content-type  | application/json. Required. |
-| Accept-Language  | Language. Optional. |
+
+| Name            | Description       | Required |
+| :-------------- | :---------------- | -------- |
+| Authorization   | Bearer {token}.   | Yes      |
+| Content-type    | application/json. | Yes      |
+| Accept-Language | Language.         | No       |
 
 If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header. The default content will be in English.
 

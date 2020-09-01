@@ -1189,8 +1189,11 @@ The *CreatedByApp* constraint associated with this permission indicates that the
 
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_OnlineMeetings.Read.All_|Read Online Meeting details from the app |Allows the app to read VTC associated online meeting details in your organization without a signed-in user.|Yes|
+|_OnlineMeetings.Read.All_|Read Online Meeting details from the app |Allows the app to read online meeting details in your organization without a signed-in user.|Yes|
 |_OnlineMeetings.ReadWrite.All_|Read Online Meeting details from the app|Allows an app to create, read online meetings without a signed-in user.|Yes|
+
+> **Important**
+Administrators can configure [application access policy](cloud-communication-online-meeting-application-access-policy.md) to allow app to access online meeting on behalf of a user.
 
 ### Example usage
 
@@ -1201,8 +1204,14 @@ The *CreatedByApp* constraint associated with this permission indicates that the
 
 #### Application
 
-* _OnlineMeetings.Read.All_: Retrieve the properties and relationships of an [online meeting](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`GET /beta/communications/onlinemeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'`).
-
+* _OnlineMeetings.Read.All_
+  * Retrieve the properties and relationships of an [online meeting](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`GET /beta/communications/onlinemeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'`).
+  * Retrieve an [online meeting](/graph/api/onlinemeeting-get?view=graph-rest-beta) on behalf of a user (`GET /beta/users/{userId}/onlineMeetings/{id})
+* _OnlineMeetings.ReadWrite.All_
+  * Create an [online meeting](/graph/api/onlinemeeting-get?view=graph-rest-beta) on behalf of a user (`POST /beta/users/{userId}/onlineMeetings/)
+  * Update an [online meeting](/graph/api/onlinemeeting-get?view=graph-rest-beta) on behalf of a user (`PATCH /beta/users/{userId}/onlineMeetings/{id})
+  * Delete an [online meeting](/graph/api/onlinemeeting-get?view=graph-rest-beta) on behalf of a user (`DELETE /beta/users/{userId}/onlineMeetings/{id})
+  
 > **Note**: Creating an [online meeting](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) creates a meeting on behalf of a user, but does not show it on the user's Calendar.
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).

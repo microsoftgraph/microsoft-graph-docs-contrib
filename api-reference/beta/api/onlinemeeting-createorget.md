@@ -21,34 +21,46 @@ Create an [onlineMeeting](../resources/onlinemeeting.md) object with a custom sp
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
-| Delegated (personal Microsoft account) | Not Supported                               |
-| Application                            | Not Supported                |
+| Delegated (personal Microsoft account) | Not Supported.                              |
+| Application                            | OnlineMeetings.ReadWrite.All                |
+
+> [!IMPORTANT]
+> Calling CreateOrGet API with an application token is now available. Administrator will need to create an [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user so the app configured in the policy will be authorized to create or get an online meeting with external ID on behalf of that user (user ID specified in request path).
 
 ## HTTP request
+
+Requring delegated token
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/onlineMeetings/createOrGet
+POST https://graph.microsoft.com/beta/me/onlineMeetings/createOrGet
 ```
 
+Requring application token
+<!-- { "blockType": "ignored" } -->
+```http
+POST https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/createOrGet
+```
+
+
 ## Request headers
-| Name          | Description               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
-| Content-type  | application/json. Required. |
+| Name          | Description       | Required |
+| :------------ | :---------------- | -------- |
+| Authorization | Bearer {token}.   | Yes      |
+| Content-type  | application/json. | Yes      |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter        | Type                                     |Description                                                                                                                                    |
-|:-----------------|:-----------------------------------------|:--------------------------------------------------------------------------|
-| chatInfo         |[chatInfo](../resources/chatinfo.md)                   |The chat information associated with this online meeting.|
-| endDateTime      | DateTime                                 | The meeting end time in UTC. |
-| externalId       | String                                   | The external ID. A custom ID. (Required) |
-| participants     | [meetingParticipants](../resources/meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
-| startDateTime    | DateTime                                 | The meeting start time in UTC. |
-| subject          | String                                   | The subject of the online meeting. |
+| Parameter     | Type                                                       | Description                                                                                          |
+| :------------ | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+| chatInfo      | [chatInfo](../resources/chatinfo.md)                       | The chat information associated with this online meeting.                                            |
+| endDateTime   | DateTime                                                   | The meeting end time in UTC.                                                                         |
+| externalId    | String                                                     | The external ID. A custom ID. (Required)                                                             |
+| participants  | [meetingParticipants](../resources/meetingparticipants.md) | The participants associated with the online meeting.  This includes the organizer and the attendees. |
+| startDateTime | DateTime                                                   | The meeting start time in UTC.                                                                       |
+| subject       | String                                                     | The subject of the online meeting.                                                                   |
 
 >**Note:** If the `startDateTime` and `endDateTime` are not provided, the `startDateTime` will default to the current dateTime value and `endDateTime` value will equal the startDateTime + 1 hour. 
 

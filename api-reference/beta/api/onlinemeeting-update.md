@@ -17,24 +17,34 @@ Update the **startDateTime**, **endDateTime**, **participants**, and **subject**
 
 ## Permissions
 
-| Permission type | Permissions (from least to most privileged)                  |
-| :-------------- | :----------------------------------------------------------- |
-| Delegated (work or school account)     | OnlineMeetings.ReadWrite              |
-| Delegated (personal Microsoft account) | Not Supported.                         |
-| Application                            | Not Supported.                                  |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
+| Delegated (personal Microsoft account) | Not Supported.                              |
+| Application                            | OnlineMeetings.ReadWrite.All                |
 
+> [!IMPORTANT]
+> Updating an online meeting with an application token is now available. Administrator will need to create an [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user so the app configured in the policy will be authorized to update an online meeting that user (user ID specified in the reuqest path) has created.
 
 ## HTTP request
+
+Requring delegated token
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{id}
 ```
 
+Requring application token
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{id}
+```
+
 ## Request headers
-| Name          | Description               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
-| Content-type  | application/json. Required.|
+| Name          | Description       | Required |
+| :------------ | :---------------- | -------- |
+| Authorization | Bearer {token}.   | Yes      |
+| Content-type  | application/json. | Yes      |
 
 ## Request body
 In the request body, supply a JSON representation of the [onlineMeeting](../resources/onlinemeeting.md) object. Only the **startDateTime**, **endDateTime**, **participants**, and **subject** properties can be modified. The **startDateTime** and **endDateTime** must appear in pairs.
