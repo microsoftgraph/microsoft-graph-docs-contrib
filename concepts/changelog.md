@@ -11,6 +11,14 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## September 2020
+
+### Calendar
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added the **transactionId** property to the [event](/graph/api/resources/event?view=graph-rest-1.0) entity.
+
 ## August 2020
 
 ### Applications
@@ -22,7 +30,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | Added the **transactionId** property to the [event](/graph/api/resources/event?view=graph-rest-1.0) entity. |
 | Addition | beta | Added the **cancelledOccurrences**, **exceptionOccurrences**, and **occurrenceId** properties to the [event](/graph/api/resources/event?view=graph-rest-beta) entity.
 
 ### Cloud communications
