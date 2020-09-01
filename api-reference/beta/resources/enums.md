@@ -1265,6 +1265,7 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue
 
 ### userFlowType values
+
 |Member
 |:----------------------
 | signUp
@@ -1276,7 +1277,8 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue
 
 ### openIdConnectResponseMode values
-| Member                
+
+| Member
 |:----------------------
 | none
 | form_post
@@ -1284,7 +1286,8 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue 
 
 ### openIdConnectResponseTypes values
-| Member                
+
+| Member
 |:----------------------
 | none
 | code
@@ -1292,6 +1295,7 @@ Possible values for user account types (group membership), per Windows definitio
 | token
 
 ### wellknownListName values
+
 | Member
 |:----------------------
 | none
@@ -1300,6 +1304,7 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue
 
 ### taskStatus values
+
 | Member
 |:----------------------
 | notStarted
@@ -1315,3 +1320,21 @@ Possible values for user account types (group membership), per Windows definitio
 | configured            | 0     | Connected Organizations with this state value are included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.                                                          |
 | proposed              | 1     | Connected Organizations that are automatically created by the system have this state value. They are not included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.   |
 | unknownFutureValue    | 2     | A sentinel member.                                                                                                                                                                                                 |
+
+### userFlowAttributeDataType values
+
+| Member                | Value | Description                         |
+|:----------------------|:------|:------------------------------------|
+| string                | 1     | String data type                    |
+| boolean               | 2     | Boolean data type                   |
+| int64                 | 3     | Int data type                       |
+| stringCollection      | 4     | String collection data type         |
+| unknownFutureValue    | 5     | A sentinel member.                  |
+
+### userFlowAttributeType values
+
+| Member                | Value | Description                                                        |
+|:----------------------|:------|:-------------------------------------------------------------------|
+| builtIn               | 1     | This user flow attribute type denotes it was created by the system |
+| custom                | 2     | This user flow attribute type denotes it was created by the user   |
+| unknownFutureValue    | 3     | A sentinel member.                                                 |

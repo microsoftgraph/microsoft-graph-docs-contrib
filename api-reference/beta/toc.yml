@@ -10174,6 +10174,19 @@ items:
                href: api/b2xuserflows-update-identityprovider.md
              - name: Delete identity provider
                href: api/b2xuserflows-delete-identityprovider.md
+          - name: User flow attributes
+            href: resources/userflowattributes.md
+            items:
+             - name: List
+               href: api/userflowattributes-list.md
+             - name: Create
+               href: api/userflowattribute-post-userflowattributes.md
+             - name: Get
+               href: api/userflowattributes-get.md
+             - name: Update
+               href: api/userflowattributes-update.md
+             - name: Delete
+               href: api/userflowattributes-delete.md
       - name: Governance
         items:
         - name: Access reviews
