@@ -12,7 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) objects and their properties. Does not return **key** property. See [Get bitlockerRecoveryKey](../api/bitlockerrecoverykey-get.md) to read **key** property.
+Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) objects and their properties. 
+
+This operation does not return the **key** property. For information about how to read the **key** property, see [Get bitlockerRecoveryKey](bitlockerrecoverykey-get.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
->NOTE: For delegated permissions to allow apps to get BitLockerRecoveryKey resources on behalf of the signed-in user, the tenant administrator must have assigned the user one of the following roles, or the user must be the registered owner of the device that the BitLocker recovery key was originally backed up from. 
+>**Note**: For delegated permissions to allow apps to get BitLockerRecoveryKey resources on behalf of the signed-in user, the tenant administrator must have assigned the user one of the following roles, or the user must be the registered owner of the device that the BitLocker recovery key was originally backed up from: 
 * Global administrator
 * Cloud device administrator
 * Helpdesk administrator
@@ -54,9 +56,9 @@ GET /bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId}'
 ```
 
 ## Optional query parameters
-This method supports the `$filter` OData query parameters to filter results by the **device id** the key was most recently backed up to. See [Example 2](#example-2). For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` OData query parameter to filter results by the **device id** the key was most recently backed up to. For details, see [Example 2](#example-2). For general information, see [OData query parameters](/graph/query-parameters).
 
-The response may also contain an `odata.nextLink`, which you can use to page through the result set. See [Paging Microsoft Graph data](/graph/paging) for more information.
+The response might also contain an `odata.nextLink`, which you can use to page through the result set. For details, see [Paging Microsoft Graph data](/graph/paging).
 
 ## Request headers
 |Name|Description|
@@ -92,7 +94,8 @@ ocp-client-version: "1.2"
 
 
 #### Response
-The following is an example of the response.<br>
+The following is an example of the response.
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -142,7 +145,8 @@ ocp-client-version: "1.2"
 
 
 #### Response
-The following is an example of the response.<br>
+The following is an example of the response.
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
