@@ -28,20 +28,31 @@ One of the following permissions is required to call this API. To learn more, in
 
 Calling the `/me` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when using the `/me` endpoint.
 
-## HTTP request
+For a specific user:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
+
+For the signed-in user:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me
+```
+
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+
 ## Request headers
+
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Required.|
 | Content-Type   | application/json |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
