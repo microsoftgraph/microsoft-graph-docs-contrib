@@ -86,7 +86,7 @@ Looking for the API reference for this service?
 
 - [Universal Print API in Microsoft Graph beta](/graph/api/resources/print?view=graph-rest-beta)
 
-## Feedback
+## Provide feedback
 
 We'd love to hear your feedback about the Universal Print APIs. Provide your suggestions on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).
 
