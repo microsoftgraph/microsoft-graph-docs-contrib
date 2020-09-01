@@ -129,7 +129,7 @@ import Auth from "./Auth";
 
 Then, add the your auth component to the router:
 
-```js
+```jsx
 <Router>
     <Route exact path="/tab" component={Tab} />
     <Route path="/auth" component={Auth} />
@@ -146,7 +146,7 @@ You can add components to your HTML as you normally would. For example, to add t
 <mgt-login></mgt-login>
 ```
 
-Or, you can add the components to the Tab component. We recommend using the `mgt-react` library 
+Or, you can add the components in JSX to the Tab component. We recommend using the `mgt-react` library. To learn more, see [Using Microsoft Graph Toolkit with React](./use-the-toolkit-with-react.md#using-mgt-react)
 
 
 ## Test your application

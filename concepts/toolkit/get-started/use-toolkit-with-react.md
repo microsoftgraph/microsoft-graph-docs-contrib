@@ -7,7 +7,9 @@ author: elisenyang
 
 # Using Microsoft Graph Toolkit with React
 
-Microsoft Graph Toolkit components work great with web frameworks like React in addition to vanilla JavaScript and HTML. You can use the components directly in React, but proper interop between web components and React components requires a bit of extra work. We recommend using `mgt-react`, a library that wraps and exports all of the Microsoft Graph Toolkit components as React components. Both methods are shown below.
+Microsoft Graph Toolkit components work great with web frameworks like React in addition to vanilla JavaScript and HTML. You can use the components directly in React, but proper interop between web components and React components requires a bit of extra work. We recommend using `mgt-react`, a library that wraps and exports all of the Microsoft Graph Toolkit components as React components. Both methods are shown below. 
+
+This topic covers how to use Microsoft Graph Toolkit with React. For a full step-by-step walkthrough on how to create a new React application and use Microsoft Graph Toolkit, check out this [tutorial](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-13-using-microsoft-graph-toolkit-with-react/).
 
 ## Web Components and React
 

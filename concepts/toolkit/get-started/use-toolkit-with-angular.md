@@ -7,7 +7,7 @@ author: elisenyang
 
 # Using Microsoft Graph Toolkit with Angular
 
-Microsoft Graph Toolkit components work great with web frameworks like Angular in addition to vanilla JavaScript and HTML. This topic covers how to get started using Microsoft Graph Toolkit in your Angular application.
+Microsoft Graph Toolkit components work great with web frameworks like Angular in addition to vanilla JavaScript and HTML. This topic covers how to use Microsoft Graph Toolkit with Angular. For a full step-by-step walk-through on how to create a new Angular application and use Microsoft Graph Toolkit, check out this [tutorial](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-14-using-microsoft-graph-toolkit-with-angular/).
 
 ## Adding Microsoft Graph Toolkit
 
