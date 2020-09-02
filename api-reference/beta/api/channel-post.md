@@ -1,6 +1,6 @@
 ---
 title: "Create channel"
-description: "Create a new channel in a Microsoft Team, as specified in the request body."
+description: "Create new channel in a Microsoft Team, as specified in the request body."
 localization_priority: Normal
 author: "clearab"
 ms.prod: "microsoft-teams"

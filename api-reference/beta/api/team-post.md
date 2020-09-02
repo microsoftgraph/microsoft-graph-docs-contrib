@@ -1,5 +1,4 @@
 ---
-la-import-messages
 title: "Create team"
 description: "Create a new team."
 author: "nkramer"
