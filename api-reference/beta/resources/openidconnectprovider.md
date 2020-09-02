@@ -24,10 +24,10 @@ Inherits from [identityProvider](../resources/identityprovider.md).
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List](../api/identityprovider-list.md)|identityProvider collection|Retrieve all identity providers configured in a tenant.|
-|[Create](../api/identityprovider-post-identityproviders.md)|identityProvider|Create a new identity provider.|
-|[Get](../api/identityprovider-get.md) |identityProvider|Retrieve properties of an identity provider.|
-|[Update](../api/identityprovider-update.md)|None|Update an identity provider.|
-|[Delete](../api/identityprovider-delete.md)|None|Delete an identity provider.|
+|[Create](../api/identityprovider-post-identityproviders.md)|identityProvider|Create a new OpenID Connect identity provider.|
+|[Get](../api/identityprovider-get.md) |identityProvider|Retrieve properties of an OpenID Connect identity provider.|
+|[Update](../api/identityprovider-update.md)|None|Update an OpenID Connect identity provider.|
+|[Delete](../api/identityprovider-delete.md)|None|Delete an OpenID Connect identity provider.|
 |[List available provider types](../api/identityprovider-list-availableprovidertypes.md)|String collection|Retrieve all available identity provider types.|
 
 ## Properties
