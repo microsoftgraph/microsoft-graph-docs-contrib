@@ -11,9 +11,18 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## September 2020
+
+### Teamwork
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition|beta| Added the **createdDateTime property to the [channel](/graph/api/resources/channel?view=graph-rest-beta) and [team](/graph/api/resources/team?view=graph-rest-beta) resources.|
+
 ## August 2020
 
 ### Applications
+
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | Beta | Added the [passwordSingleSignOnSettings](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta) property to the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.
