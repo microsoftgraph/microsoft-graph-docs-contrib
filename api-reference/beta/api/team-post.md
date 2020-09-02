@@ -2,7 +2,6 @@
 la-import-messages
 title: "Create team"
 description: "Create a new team."
-
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
