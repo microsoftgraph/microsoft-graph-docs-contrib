@@ -9943,6 +9943,8 @@ items:
               href: api/riskyusers-dismiss.md
         - name: Identity provider
           href: resources/identityprovider.md
+        - name: OpenID Connect identity provider
+          href: resources/openidconnectprovider.md
           items:
           - name: List
             href: api/identityprovider-list.md
