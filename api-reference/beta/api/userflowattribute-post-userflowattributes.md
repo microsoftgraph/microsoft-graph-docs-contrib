@@ -3,7 +3,7 @@ title: "Create userFlowAttribute"
 description: "Create a new userFlowAttributes object."
 localization_priority: Normal
 doc_type: apiPageType
-author: "jodougla"
+author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 

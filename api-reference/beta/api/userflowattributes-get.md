@@ -3,7 +3,7 @@ title: "Get userFlowAttribute"
 description: "Retrieve the properties and relationships of a userFlowAttributes object."
 localization_priority: Normal
 doc_type: apiPageType
-author: "jodougla"
+author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 

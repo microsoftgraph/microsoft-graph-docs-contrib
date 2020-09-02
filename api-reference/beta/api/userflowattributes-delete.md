@@ -1,13 +1,13 @@
 ---
-title: "Delete userFlowAttributes"
+title: "Delete userFlowAttribute"
 description: "Delete a userFlowAttribute."
 localization_priority: Normal
 doc_type: apiPageType
-author: "jodougla"
+author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Delete identityProvider
+# Delete userFlowAttribute
 
 Namespace: microsoft.graph
 

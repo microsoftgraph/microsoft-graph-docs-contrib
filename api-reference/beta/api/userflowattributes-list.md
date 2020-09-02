@@ -3,7 +3,7 @@ title: "List userFlowAttributes"
 description: "Retrieve a list of userFlowAttributes objects."
 localization_priority: Normal
 doc_type: apiPageType
-author: "jodougla"
+author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
