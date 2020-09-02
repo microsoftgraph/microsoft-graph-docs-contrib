@@ -1264,7 +1264,18 @@ Possible values for user account types (group membership), per Windows definitio
 | generic
 | unknownFutureValue
 
-### openIdConnectResponseMode
+### userFlowType values
+|Member
+|:----------------------
+| signUp
+| signIn
+| signUpOrSignIn
+| passwordReset
+| profileUpdate
+| resourceOwnerPasswordCredentialSignIn
+| unknownFutureValue
+
+### openIdConnectResponseMode values
 | Member                
 |:----------------------
 | none
@@ -1272,10 +1283,35 @@ Possible values for user account types (group membership), per Windows definitio
 | query 
 | unknownFutureValue 
 
-### openIdConnectResponseTypes
+### openIdConnectResponseTypes values
 | Member                
 |:----------------------
 | none
 | code
 | id_token
 | token
+
+### wellknownListName values
+| Member
+|:----------------------
+| none
+| defaultList
+| flaggedEmails
+| unknownFutureValue
+
+### taskStatus values
+| Member
+|:----------------------
+| notStarted
+| inProgress
+| completed
+| waitingOnOthers
+| deferred
+
+### connectedOrganizationState values
+
+| Member                | Value | Description                                                                                                                                                                                                        |
+|:----------------------| :-----|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| configured            | 0     | Connected Organizations with this state value are included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.                                                          |
+| proposed              | 1     | Connected Organizations that are automatically created by the system have this state value. They are not included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.   |
+| unknownFutureValue    | 2     | A sentinel member.                                                                                                                                                                                                 |

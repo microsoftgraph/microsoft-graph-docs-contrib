@@ -27,8 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/scopedAdministratorOf
-GET /users/{id}/scopedAdministratorOf
+GET /me/scopedRoleMemberOf 
+GET /users/{id}/scopedRoleMemberOf
 
 ```
 ## Optional query parameters
@@ -55,7 +55,7 @@ Here is an example of the request.
   "name": "get_scopedadministratorof"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/scopedAdministratorOf
+GET https://graph.microsoft.com/beta/me/scopedRoleMemberOf
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-scopedadministratorof-csharp-snippets.md)]

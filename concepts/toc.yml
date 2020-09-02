@@ -1,4 +1,3 @@
-name: Graph Docs
 metadata:
   experimental: true
   experiment_id: "b8938daf-1bcb-4f"
@@ -188,7 +187,7 @@ items:
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
       - name: Financials (preview)
         href: dynamics-business-central-concept-overview.md
-        displayname: Dynamics, Dynamics 365 Business Central
+        displayName: Dynamics, Dynamics 365 Business Central
       - name: Identity and access
         displayName: Azure AD, Microsoft identity platform
         items:
@@ -196,6 +195,10 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Authentication methods
             href: authenticationmethods-get-started.md
+          - name: Governance
+            items:
+              - name: Create an access package
+                href: tutorial-access-package-api.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -353,6 +356,9 @@ items:
             href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: teams-proactive-messaging.md
+      - name: To-do tasks (preview)
+        href: todo-concept-overview.md
+        displayName: Microsoft To Do
       - name: Workbooks and charts
         displayName: Excel
         items:
@@ -439,7 +445,7 @@ items:
               - name: Get changes to users (example)
                 href: delta-query-users.md
           - name: Add custom data
-            displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+            displayName: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
             items:
               - name: Overview
                 href: extensibility-overview.md
@@ -453,10 +459,8 @@ items:
         expanded: false
         items:
           - name: Azure AD Graph
-            displayname: Migration, Azure AD Graph
+            displayName: Migration, Azure AD Graph
             items:
-              - name: Overview
-                href: migrate-azure-ad-graph-overview.md
               - name: Checklist to migrate apps
                 href: migrate-azure-ad-graph-planning-checklist.md
               - name: "1: Review differences"
@@ -505,6 +509,8 @@ items:
             href: sdks/batch-requests.md
           - name: Upload large files
             href: sdks/large-file-upload.md
+          - name: Use beta API
+            href: sdks/use-beta.md
       - name: Use the toolkit
         items:
           - name: Toolkit overview
@@ -561,6 +567,6 @@ items:
           - name: Errors
             href: errors.md
       - name: v1.0 reference
-        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
+        href: /graph/api/overview?view=graph-rest-1.0
       - name: Beta reference
-        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
+        href: /graph/api/overview?view=graph-rest-beta
