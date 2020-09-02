@@ -11,13 +11,13 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
-## September 2020
+## September
 
-### Calendar
+### Users
 
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | Added the **transactionId** property to the [event](/graph/api/resources/event?view=graph-rest-1.0) entity.
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Change | beta and v1.0 | Updated the mail property on the [user](/graph/api/resources/user) entity to be writeable. |
 
 ## August 2020
 
@@ -883,7 +883,6 @@ Added new APIs and resources for managing and printing to printers by using the 
 | Addition | beta | Added the [printSettings](/graph/api/resources/printsettings) complex type.|
 | Addition | beta | Added the [printUsageSummaryByPrinter](/graph/api/resources/printusagesummarybyprinter) entity.|
 | Addition | beta | Added the [printUsageSummaryByUser](/graph/api/resources/printusagesummarybyuser) entity.|
-
 
 ## February 2020
 
