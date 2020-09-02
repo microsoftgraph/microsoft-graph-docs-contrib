@@ -1,6 +1,6 @@
 ---
 title: "onlineMeeting resource type"
-description: "Contains information about the meeting, including the join URL, the attendees list, and the description."
+description: "onlineMeeting resource type in Graph beta."
 author: "ananmishr"
 localization_priority: Normal
 doc_type: resourcePageType

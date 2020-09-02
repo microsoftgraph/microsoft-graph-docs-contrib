@@ -1,7 +1,7 @@
 ---
 title: "lobbyBypassSettings resource type"
 description: "Specifies who can bypass the lobby and whether or not to let callers bypass the lobby.."
-author: "frpeng"
+author: "frankpeng7"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
