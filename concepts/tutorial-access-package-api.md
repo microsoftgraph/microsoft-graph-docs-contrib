@@ -12,7 +12,7 @@ Managing access to all the resources that employees need, such as groups, applic
 
 In this tutorial, you've been asked to develop code to create a package of resources for a marketing campaign that internal users can self-service request. Requests do not require approval and user's access expires after 30 days. For this tutorial, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.
 
-The response objects shown in this tutorial may be shortened for readability. All the properties are returned in an actual call.
+>**Note:** The response objects shown in this tutorial might be shortened for readability. 
 
 ## Prerequisites
 
@@ -254,7 +254,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ### Get resources roles
 
-The access package assigns users to the roles of a resource. The typical role of a group is the member role. Other resources, such as SharePoint Online sites and applications, may have many roles. The typical role of a group used in an access package is the member role. You'll need the member role when you add a resource role to the access package later in this tutorial. 
+The access package assigns users to the roles of a resource. The typical role of a group is the member role. Other resources, such as SharePoint Online sites and applications, might have many roles. The typical role of a group used in an access package is the member role. You'll need the member role when you add a resource role to the access package later in this tutorial. 
 
 In the request, use the **id** of the catalog and the **id** of the group resource in the catalog that you recorded to get the **originId** of the Member resource role. Record the value of the **originId** property to use later in this tutorial.
 
@@ -716,7 +716,7 @@ No Content - 204
 
 ## See also
 
-In this tutorial, you used many APIs to accomplish tasks. The following table lists the APIs that were used. Explore the API reference to learn more about what the APIs can do.
+In this tutorial, you used many APIs to accomplish tasks. Explore the API reference for these APIs to learn more about what the APIs can do.
 
 
 - [Working with the Azure AD entitlement management API](https://docs.microsoft.com/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta)
