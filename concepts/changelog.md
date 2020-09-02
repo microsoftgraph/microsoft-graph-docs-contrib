@@ -851,6 +851,11 @@ Added new APIs and resources for managing and printing to printers by using the 
 | Addition | beta | Added the [printUsageSummaryByPrinter](/graph/api/resources/printusagesummarybyprinter) entity.|
 | Addition | beta | Added the [printUsageSummaryByUser](/graph/api/resources/printusagesummarybyuser) entity.|
 
+### Users
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Change | beta and v1.0 | Updated the mail property on the [user](/graph/api/resources/user) entity to be writeable. |
 
 ## February 2020
 
