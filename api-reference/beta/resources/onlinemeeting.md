@@ -43,16 +43,22 @@ Contains information about the meeting, including the URL used to join a meeting
 | videoTeleconferenceId | String                                        | The video teleconferencing ID. Read-only.                                                                                                                                                                                                                   |
 | joinInformation       | [itemBody](itembody.md)                       | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only                                                                                                                                       |
 | externalId            | String                                        | The external ID. A custom ID. Optional.                                                                                                                                                                                                                     |
+| isEntryExitAnnounced  | Boolean                                       | Whether or not to announce when callers join or leave.                                                                                                                                                                                                      |
+| lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies who can bypass the lobby and whether or not to let callers bypass the lobby.                                                                                                                                                                      |
+| allowedPresenters     | String                                        | Specifies who can be a presenter in a meeting. Possible values are listed below.                                                                                                                                                                            |
 
-### autoAdmittedUsers values
-| Value                             | Description                                                                                                                                               |
-| :-------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| organizer                         | Only the meeting organizer is admitted directly.  Everyone else waits in the lobby, until admitted by the organizer                                       |
-| invitedUsersInCompany             | The meeting organizer and the users in the same company invited by the organizer join the meeting directly.  Everyone else waits in lobby until admitted. |
-| everyoneInCompany                 | Everyone in the same company as the organizer join the meeting directly.  Federated, anonymous users wait in lobby until admitted.                        |
-| everyoneInSameAndFederatedCompany | Everyone in same company as the organizer and federated companies join the meeting directly.  Anonymous users wait in lobby until admitted.               |
-| everyone                          | Any user is allowed, which means that everyone (including anonymous users) can join the meeting directly without waiting in lobby.                        |
+> [!IMPORTANT]
+> `autoAdmittedUsers` property is obsolete. Use `lobbyBypassSettings.scope` instead for meeting option configurations.
 
+### allowedPresenters values
+
+| Value              | Description                                                   |
+| ------------------ | ------------------------------------------------------------- |
+| everyone           | Everyone is a presenter (This is default option).             |
+| organization       | Everyone in organizer’s organization is a presenter.          |
+| roleIsPresenter    | Only the participants whose role is presenter are presenters. |
+| organizer          | Only the organizer  is a presenter.                           |
+| unknownFutureValue | Unknow future value.                                          |
 
 ## JSON representation
 
@@ -65,7 +71,6 @@ Contains information about the meeting, including the URL used to join a meeting
 }-->
 ```json
 {
-  "autoAdmittedUsers": "everyone | everyoneInSameAndFederatedCompany | everyoneInCompany | invitedUsersInCompany | organizer",
   "audioConferencing": {"@odata.type": "#microsoft.graph.audioConferencing"},
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
@@ -76,7 +81,10 @@ Contains information about the meeting, including the URL used to join a meeting
   "startDateTime": "String (timestamp)",
   "subject": "String",
   "capabilities": [ "questionAndAnswer" ],
-  "videoTeleconferenceId": "String"
+  "videoTeleconferenceId": "String",
+  "isEntryExitAnnounced": "Boolean",
+  "lobbyBypassSettings": {"@odata.type": "#microsoft.graph.lobbyBypassSettings"},
+  "allowedPresenters": "everyone | organization | roleIsPresenter | organizer | unknownFutureValue"
 }
 ```
 

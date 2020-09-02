@@ -1,0 +1,62 @@
+---
+title: "lobbyBypassSettings resource type"
+description: "Specifies who can bypass the lobby and whether or not to let callers bypass the lobby.."
+author: "frpeng"
+localization_priority: Normal
+ms.prod: "cloud-communications"
+doc_type: resourcePageType
+---
+
+# lobbyBypassSettings resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Specifies who can bypass the lobby and whether or not to let callers bypass the lobby.
+
+## Properties
+
+| Property              | Type    | Description                                                         | Required | Read only |
+| --------------------- | ------- | ------------------------------------------------------------------- | -------- | --------- |
+| scope                 | String  | Specify who can bypass the lobby. Possible values are listed below. | No       | No        |
+| isDialInBypassEnabled | Boolean | Whether or not to always let callers bypass the lobby.              | No       | No        |
+
+### scope values
+
+| Value                    | Description                                                                                                                                              |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| organizer                | Only the organizer is admitted into the meeting.                                                                                                         |
+| organization             | Only the participants from the same company are admitted into the meeting.                                                                               |
+| organizationAndFederated | Only the participants from the same company or trusted organization are admitted into the meeting. Any other participant is placed in the meeting lobby. |
+| everyone                 | Everyone is admitted into the meeting.                                                                                                                   |
+| unknownFutureValue       | Unknow future value.                                                                                                                                     |
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.lobbyBypassSettings"
+}-->
+```json
+{
+  "scope": "organizer | organization | organizationAndFederated | everyone | unknownFutureValue",
+  "isDialInBypassEnabled": "Boolean",
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "lobbyBypassSettings resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->
