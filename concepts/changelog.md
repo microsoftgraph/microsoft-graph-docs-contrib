@@ -13,6 +13,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## September
 
+### Calendar
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added the **transactionId** property to the [event](/graph/api/resources/event?view=graph-rest-1.0) entity.
+
 ### Users
 
 | **Change type** | **Version** | **Description**                          |
