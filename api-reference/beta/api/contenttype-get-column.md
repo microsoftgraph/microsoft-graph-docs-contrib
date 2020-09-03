@@ -1,7 +1,6 @@
 ---
 author: swapnil1993
 ms.author: swapnil1993
-ms.date: 08/30/2020
 title: "ContentType Column Get"
 description: " Get a content type Column"
 localization_priority: Normal
@@ -39,7 +38,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-  
+<!-- {
+  "blockType": "ignored"
+}
+-->
 
 ```http
 
@@ -47,7 +49,10 @@ GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 GET /sites/{site-id}/lists/{list-id}//contentTypes/{contentType-id}/columns/{column-id}
 ```
 
-  
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|  
 
 ## Request body
 
@@ -61,11 +66,11 @@ Do not supply a request body with this method.
 
   
 
-#### Request
+### Request
 
   
 
-<!-- { "blockType": "request", "name": "get-column", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get_column_from_contenttype" } -->
 
   
 

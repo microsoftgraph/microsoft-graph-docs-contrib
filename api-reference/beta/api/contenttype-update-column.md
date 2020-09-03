@@ -1,7 +1,6 @@
 ---
 author: swapnil1993
 ms.author: swapnil1993
-ms.date: 08/30/2020
 title: "ContentType Column Update"
 description: "Update a content type column"
 localization_priority: Normal
@@ -36,7 +35,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-  
+<!-- {
+  "blockType": "ignored"
+}
+-->
 
 ```http
 
@@ -44,15 +46,30 @@ PATCH /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 PATCH /sites/{site-id}/lists/{list-id}//contentTypes/{contentType-id}/columns/{column-id}
 ```
 
-  
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
 
 ## Request body
 
 In the request body, supply a JSON representation of the [columnDefinition][] resource to update.  
 
+## Response
+
+If successful, this method returns a `200 OK` response code and an updated [columnDefinition][] object in the response body.
+
 ## Example
 
-## Request
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "update_contenttype_column"
+}
+-->
 ```http
 PATCH /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 Content-Type: application/json
@@ -72,11 +89,12 @@ Content-Type: application/json
 ```
 
 #### Response
-
-  Returns updated column resource
-
-<!-- { "blockType": "response", "@type": "microsoft.graph.columnDefinition", "truncated": true } -->
-
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
   
 
 ```http

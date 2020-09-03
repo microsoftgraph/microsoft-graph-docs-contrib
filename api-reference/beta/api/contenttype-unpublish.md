@@ -1,7 +1,6 @@
 ---
 author: swapnil1993
 ms.author: swapnil1993
-ms.date: 08/29/2020
 title: "ContentType Unpublish"
 description: "Unpublish a site content type"
 localization_priority: Normal
@@ -26,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "request" } -->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET /sites/{siteId}/contentTypes/{contentTypeId}/unpublish
@@ -34,16 +33,33 @@ GET /sites/{siteId}/contentTypes/{contentTypeId}/unpublish
 
 **Note:** The siteId should belong to a content type hub site.
 
-## Example
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
-```http
-GET /sites/{siteId}/contentTypes/{contentTypeId}/unpublish
-Content-Type: application/json
-```
+## Request body
+Do not supply a request body for this method.
 
 ## Response
 
 If successful, this call returns a `204 No Content` response.
+
+## Example
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "contenttype_unpublish"
+}
+-->
+```http
+GET /sites/{siteId}/contentTypes/{contentTypeId}/unpublish
+```
+
+### Response
+
 <!-- { "blockType": "response" } -->
 
 ```http

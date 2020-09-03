@@ -1,7 +1,6 @@
 ---
 author: swapnil1993
 ms.author: swapnil1993
-ms.date: 08/30/2020
 title: "ContentType update"
 description: "Update a content type"
 localization_priority: Normal
@@ -38,23 +37,38 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "request" } -->
-
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 PATCH /sites/{site-id}/contentTypes/{contentType-id}
 
 PATCH /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}
 ```
 
-  
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
 In the request body, supply a JSON representation of the [contentType][] resource to update.  
 
+## Response
+
+If successful, this method returns a `200 OK` response code and an updated [contentType][] object in the response body.
+
 ## Example
 
-## Request
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "update_contenttype"
+}
+-->
 
 ```http
 PATCH /sites/{site-id}/contentTypes/{contentType-id}
@@ -99,11 +113,9 @@ Content-Type: application/json
 
 ```
 
-#### Response
+### Response
 
-  Returns the updated content type resource.
-
-<!-- { "blockType": "response", "@type": "microsoft.graph.contentType", "truncated": true, "scopes": "sites.readwrite.all"} -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.contentType", "truncated": true"} -->
 
   
 

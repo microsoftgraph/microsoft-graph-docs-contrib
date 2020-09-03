@@ -1,68 +1,80 @@
 ---
 author: swapnil1993
 ms.author: swapnil1993
-ms.date: 08/19/2020
-title: "ContentType GetApplicableContentTypesForList"
-description: "Get site content types that can be added to a list"
+title: "ContentType List"
+description: "List the Sharepoint Content types in a site collection or a list"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
-# Get site content types that can be added to a list
+# Enumerate Content types in a site or a list
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Returns [site][] [contentTypes][contentType] that can be added to a list
+Get the collection of [content types][contentType] in a [site][] or [list][]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All    |
-|Delegated (personal Microsoft account) | Not Supported    |
+|Delegated (personal Microsoft account) | Not supported.    |
 |Application | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 
 ## HTTP request
-
-<!-- { "blockType": "ignored" } -->
-
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
-GET /sites/{siteId}/getApplicableContentTypesForList(listId='listId')
+GET /sites/{site-id}/contentTypes
+
+GET /sites/{site-id}/lists/{list-id}/contentTypes
 ```
-
-## Function Parameters
-
-|Parameter|Type|Required|Description|
-|-|-|-|-|
-|listId| string | Yes| GUID of the list for which the applicable content types need to be fetched |
 
 ## Optional query parameters
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-To list only custom content types use $filter=isBuiltin eq false
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
 
-## Example
-
-## Request
-<!-- { "blockType": "request", "scopes": "sites.read.all" } -->
-
-```http
-GET /sites/{siteId}/getApplicableContentTypesForList(listId='listId')
-```
+## Request body
+Do not supply a request body for this method.
 
 ## Response
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.contentType", "isCollection": true, "truncated": true } -->
+If successful, this method returns a `200 OK` response code and a collection of [contentType](../resources/contenttype.md) objects in the response body.
+
+## Example
+
+### Request
+
+<!-- { "blockType": "request", "name": "enum_contentTypes"} -->
+
+```http
+GET /sites/{site-id}/contentTypes
+```
+
+### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.contentType)"
+}
+-->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "value": [
+  "value": [
     {
         "id":"0x",
         "description":"",
@@ -89,5 +101,7 @@ Content-type: application/json
 }
 ```
 
+
 [contentType]: ../resources/contentType.md
 [site]: ../resources/site.md
+[list]: ../resources/list.md

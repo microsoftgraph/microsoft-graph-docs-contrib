@@ -11614,6 +11614,8 @@ items:
           href: api/site-unfollow.md
         - name: List followed sites
           href: api/sites-list-followed.md
+        - name: Get Applicable Content Types For List
+          href: api/site-getapplicablecontenttypesforlist.md
       - name: Lists
         href: resources/list.md
         items:
@@ -11709,6 +11711,39 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
+      - name: Content Types
+        href: resources/contentType.md
+        items:
+        - name: Get
+          href: api/contenttype-get.md
+        - name: List
+          href: api/contenttype-list.md
+        - name: Create
+          href: api/contenttype-create.md
+        - name: Update
+          href: api/contenttype-update.md
+        - name: Delete
+          href: api/contenttype-delete.md
+        - name: Publish
+          href: api/contenttype-publish.md
+        - name: Unpublish
+          href: api/contenttype-unpublish.md
+        - name: IsPublished
+          href: api/contenttype-ispublished.md
+        - name: Add Copy
+          href: api/contenttype-addcopy.md
+        - name: Copy To Default Content Location
+          href: api/contenttype-copytodefaultcontentlocation.md
+        - name: Associate With Hub Sites
+          href: api/contenttype-associatewithhubsites.md
+        - name: Get Content Type Column
+          href: api/contenttype-column-get.md
+        - name: Update Content Type Column
+          href: api/contenttype-column-update.md
+        - name: Delete Content Type Column
+          href: api/contenttype-column-delete.md
+        - name: List Content Type Columns
+          href: api/contenttype-column-list.md
     - name: Tasks and plans
       displayName: Planner
       items:

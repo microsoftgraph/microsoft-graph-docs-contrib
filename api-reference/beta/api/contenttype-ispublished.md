@@ -1,7 +1,6 @@
 ---
 author: swapnil1993
 ms.author: swapnil1993
-ms.date: 08/29/2020
 title: "ContentType isPublished"
 description: "Check publishing status of a site content type"
 localization_priority: Normal
@@ -26,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "request" } -->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
@@ -34,14 +33,32 @@ GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 
 **Note:** The siteId should belong to a content type hub site.
 
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Function parameters
+Do not supply a request body for this method.
+
 ## Example
 
-## Request
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "contenttype_ispublished"
+}
+-->
 ```http
 GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 ```
-## Response
-<!-- { "blockType": "response", "@type": "string"} -->
+### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Edm.Boolean"
+}
+-->
 
 ```http
 HTTP/1.1 200 OK

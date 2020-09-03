@@ -1,7 +1,6 @@
 ---
 author: swapnil1993
 ms.author: swapnil1993
-ms.date: 08/08/2020
 title: "ContentType create"
 description: "Create a Content type in a site"
 localization_priority: Normal
@@ -36,18 +35,33 @@ One of the following permissions is required to call this API. To learn more, in
 POST /sites/{site-id}/contentTypes
 
 ```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
 ## Request body
 
 In the request body, supply a JSON representation of the [contentType][] resource to create.
+
+## Response
+
+If successful, this method returns a `201 Created` response code and a [contentType][] object in the response body.
 
 
 ## Example
 
 Here is an example of how to create a new generic contentType.
 
-## Request
+### Request
 
-<!-- { "blockType": "request", "name": "create-contentType", "scopes": "sites.readwrite.all" } -->
+<!-- {
+  "blockType": "request",
+  "name": "create_contenttype"
+}
+-->
 
 ```http
 POST /sites/{site-id}/contentTypes
@@ -64,10 +78,14 @@ Content-Type: application/json
 }
 ```
 
-## Response
-If successful, this method returns a [contentType][] in the response body for the created contentType.
-
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.contentType", "truncated": true } -->
+### Response
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.contentType"
+}
+-->
 
 ```http
 HTTP/1.1 201 Created

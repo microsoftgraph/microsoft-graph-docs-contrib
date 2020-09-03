@@ -1,7 +1,6 @@
 ---
 author: swapnil1993
 ms.author: swapnil1993
-ms.date: 08/28/2020
 title: "ContentType delete"
 description: "Delete content type from a SharePoint list or Site"
 localization_priority: Normal
@@ -35,23 +34,38 @@ DELETE /sites/{site-id}/contentTypes/{contentType-id}
 DELETE /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}
 ```
 
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+
 ## Request body
 
 Do not supply a request body with this method.
 
+## Response
+
+If successful, this method returns a `204 No Content` response code.
+
 ## Example
 
-<!-- { "blockType": "request", "name": "delete-contentType", "scopes": "sites.readwrite.all" } -->
+<!-- {
+  "blockType": "request",
+  "name": "delete_contenttype"
+}
+-->
 
 ```http
 DELETE /sites/{site-id}/contentTypes/{contentType-id}
 ```
 
 ## Response
-
-If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.
-
-<!-- { "blockType": "response" } -->
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 
 ```http
 HTTP/1.1 204 No Content
@@ -60,16 +74,3 @@ HTTP/1.1 204 No Content
 [list]: ../resources/list.md
 [contentType]: ../resources/contentType.md
 [site]: ../resources/site.md
-
-
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Delete content type from a SharePoint list or Site",
-  "keywords": "content type",
-  "section": "documentation",
-  "tocPath": "sites/Delete ContentType",
-  "suppressions": [
-  ]
-}
--->

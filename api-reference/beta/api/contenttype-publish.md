@@ -1,7 +1,6 @@
 ---
 author: swapnil1993
 ms.author: swapnil1993
-ms.date: 08/29/2020
 title: "ContentType Publish"
 description: "Publish a site content type"
 localization_priority: Normal
@@ -26,24 +25,42 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "request" } -->
-
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 ```
 
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
 **Note:** The siteId should belong to a content type hub site.
+
+## Request body
+Do not supply a request body for this method.
+
+## Response
+If successful, this call returns a `204 No Content` response.
 
 ## Example
 
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "contenttype_publish"
+}
+-->
 ```http
 GET /sites/{siteId}/contentTypes/{contentTypeId}/publish
-Content-Type: application/json
 ```
 
-## Response
+### Response
 
-If successful, this call returns a `204 No Content` response.
 <!-- { "blockType": "response" } -->
 
 ```http

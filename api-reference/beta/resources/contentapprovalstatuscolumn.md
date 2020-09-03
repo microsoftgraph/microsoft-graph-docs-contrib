@@ -1,16 +1,21 @@
 ---
 author: swapnil1993
 ms.author: swapnil1993
-ms.date: 08/28/2020
 title: ContentapprovalStatusColumn
 description: "The ContentApprovalStatusColumn resource indicates that the column contains information about approval status of the item."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "sharepoint"
 ---
 # ContentApprovalStatusColumn resource type
 
+Namespace: microsoft.graph
+
 The **contentApprovalStatusColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column contains information about approval status of the item.
+
+## Properties
+
+The **contentApprovalStatusColumn** resource contains no properties.
 
 ## JSON representation
 
@@ -21,9 +26,5 @@ Here is a JSON representation of a **contentApprovalStatusColumn** resource.
 {
 }
 ```
-
-## Properties
-
-The **contentApprovalStatusColumn** resource contains no properties.
 
 [columnDefinition]: columnDefinition.md

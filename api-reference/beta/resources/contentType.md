@@ -1,11 +1,10 @@
 ---
 author: daspek
 description: "The contentType resource represents a content type in SharePoint."
-ms.date: 09/12/2017
 title: ContentType
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "sharepoint"
 ---
 # ContentType resource type
 

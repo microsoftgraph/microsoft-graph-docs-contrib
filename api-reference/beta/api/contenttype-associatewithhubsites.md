@@ -1,7 +1,6 @@
 ---
 author: swapnil1993
 ms.author: swapnil1993
-ms.date: 08/30/2020
 title: "ContentType associateWithHubSites"
 description: "Associate a content type with list of hubsites"
 localization_priority: Normal
@@ -37,26 +36,43 @@ One of the following permissions is required to call this API. To learn more, in
   
 
 ## HTTP request
-
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 
 https://graph.microsoft.com/beta/sites/id/contentTypes/id/associateWithHubSites
 ```
-## Parameters
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
+## Request body
+In the request body, supply JSON representation of the parameters.
+
+The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Required|Description|
 |-|-|-|-|
 |hubSiteUrls| Collection(string) | Yes|List of cannonical urls to hteHub Sites where the content type needs to be enforced|
 |propagateToExistingLists| boolean | No|If `true`, content types will be enforced to existing lists in hub sites otherwise will be applied to only newly created lists. 
 
+## Response
 
-## Request body
-
-In the request body, supply a list of canonical urls to the hub sites with which the content types needs to associated.  
+If successful, this action returns a `204 No Content` response code
 
 ## Example
 
-## Request
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "contenttype_associatewithhubsites"
+}
+-->
 ```http
 https://graph.microsoft.com/beta/sites/id/contentTypes/id/associateWithHubSites
 Content-Type: application/json
@@ -73,7 +89,7 @@ Content-Type: application/json
 
 
 
-#### Response
+### Response
 
 
 <!-- { "blockType": "response" } -->

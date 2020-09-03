@@ -1,7 +1,6 @@
 ---
 author: swapnil1993
 ms.author: swapnil1993
-ms.date: 08/28/2020
 title: "ContentType Column delete"
 description: "Delete a column from a content type"
 localization_priority: Normal
@@ -32,25 +31,38 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 DELETE /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{column-id}
 ```
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
 
 ## Request body
+Do not supply a request body for this method.
 
-Do not supply a request body with this method.
+## Response
+
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
-<!-- { "blockType": "request", "name": "delete-column", "scopes": "sites.readwrite.all" } -->
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "delete_columns_from_contenttype"
+}
+-->
 
 ```http
 DELETE /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 ```
 
-## Response
-
-If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.
-
-<!-- { "blockType": "response" } -->
-
+### Response
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 ```http
 HTTP/1.1 204 No Content
 ```

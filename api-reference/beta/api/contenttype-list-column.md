@@ -1,7 +1,6 @@
 ---
 author: swapnil1993
 ms.author: swapnil1993
-ms.date: 08/30/2020
 title: "ContentType Column List"
 description: "List  columns in a Content type"
 localization_priority: Normal
@@ -40,7 +39,10 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
   
-
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 
 GET /sites/{site-id}/contentTypes/{contentType-id}/columns
@@ -48,12 +50,20 @@ GET /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns
 ```
 
   
+## Optional query parameters
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
 
 ## Request body
+Do not supply a request body for this method.
 
-  
+## Response
 
-Do not supply a request body with this method.
+If successful, this method returns a `200 OK` response code and a collection of [columnDefinition][] objects in the response body.
 
   
 
@@ -61,11 +71,11 @@ Do not supply a request body with this method.
 
   
 
-#### Request
+### Request
 
   
 
-<!-- { "blockType": "request", "name": "get-column", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get_columns_from_contenttype" } -->
 
   
 
@@ -76,12 +86,13 @@ GET /sites/{site-id}/contentTypes/{contentType-id}/columns
   
 
 #### Response
-
-  
-
-<!-- { "blockType": "response", "@type": "microsoft.graph.columnDefinition", "truncated": true, "isCollection": true} -->
-
-  
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.columnDefinition)"
+}
+-->  
 
 ```http
 HTTP/1.1 200 OK
