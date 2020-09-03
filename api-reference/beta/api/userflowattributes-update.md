@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [userFlowAttribute](../resources/userflowattributes.md) object.
+Update the properties of a [userFlowAttribute](../resources/userflowattributes.md) object. Only custom user flow attributes can be updated.
 
 ## Permissions
 

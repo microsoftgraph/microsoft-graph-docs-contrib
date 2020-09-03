@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [userFlowAttribute](../resources/userflowattributes.md).
+Delete a [userFlowAttribute](../resources/userflowattributes.md). Only custom user flow attributes can be deleted.
 
 ## Permissions
 

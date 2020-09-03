@@ -47,13 +47,15 @@ POST /identity/userFlowAttributes
 
 ## Request body
 
-In the request body, provide a JSON representation of [userFlowAttribute](../resources/userflowattributes.md). All the properties listed in the following table are required.
+In the request body, provide a JSON representation of [userFlowAttribute](../resources/userflowattributes.md).
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|displayName|String|The display name of the user flow attribute.|
-|description|String|The description of the user flow attribute. It is shown to the user at the time of sign up.|
-|dataType|String|The data type of the user flow attribute. This cannot be modified once the custom user flow attribute is created. The following data types can be used: <ul><li/> `string` : denotes that the dataType for the userFlowAttribute is a string. <li/> `boolean` : denotes that the dataType for the userFlowAttribute is a boolean. <li/> `int64` : denotes that the dataType for the userFlowAttribute is an integer. <li/> `stringCollection` : denotes that the dataType for the userFlowAttribute is a collection of strings.</ul>|
+|id|String|The ID of the user flow attribute. This is a read-only attribute that is automatically created.|
+|displayName|String|Required. The display name of the user flow attribute.|
+|description|String|Required. The description of the user flow attribute. It is shown to the user at the time of sign up.|
+|userFlowAttributeType|String|The type of the user flow attribute. This is a read-only attribute that is automatically set. When creating a new user flow attribute, this property will be set to `custom`.|
+|dataType|String|Required. The data type of the user flow attribute. This cannot be modified once the custom user flow attribute is created. The supported values for **dataType** are:<br/><ul><li>`string`: denotes that the dataType for the userFlowAttribute is a string. </li><li>`boolean`: denotes that the dataType for the userFlowAttribute is a boolean.</li><li>`int64`: denotes that the dataType for the userFlowAttribute is an integer.</li><li> `stringCollection`: denotes that the dataType for the userFlowAttribute is a collection of strings.</li></ul>|
 
 ## Response
 
@@ -79,7 +81,7 @@ Content-length: 154
 {
   "displayName": "Hobby",
   "description": "Your hobby",
-  "dataType": "String",
+  "dataType": "string",
 }
 ```
 
@@ -92,11 +94,12 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.userFlowAttributes"
+  "@odata.type": "microsoft.graph.identityUserFlowAttribute"
 } -->
 
 ```http
 HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/identity/userFlowAttributes/extension_7a95ecd9489b4fb9a45722b913c4703b_Hobby
 Content-type: application/json
 
 {
