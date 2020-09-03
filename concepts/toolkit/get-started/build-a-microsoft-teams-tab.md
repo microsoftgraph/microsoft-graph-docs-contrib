@@ -62,11 +62,11 @@ In `public/index.html`, add the Teams provider like below:
 ```html
 <mgt-teams-provider
   client-id="<YOUR_CLIENT_ID>"
-  auth-popup-url="https://<YOUR-DOMAIN>.com/AUTH-PATH"
+  auth-popup-url="https://<YOUR_NGROK_URL>/auth.html"
 ></mgt-teams-provider>
 ```
 
-Replace `<YOUR_CLIENT_ID>` with the client ID for your application and `https://<YOUR-DOMAIN>.com/AUTH-PATH` with `https://<YOUR_NGROK_URL>/auth.html`.
+Replace `<YOUR_CLIENT_ID>` with the client ID for your application and `<YOUR_NGROK_URL>/` with the ngrok URL you created.
 
 ### Initialize in JavaScript
 
