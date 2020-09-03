@@ -195,6 +195,10 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Authentication methods
             href: authenticationmethods-get-started.md
+          - name: Governance
+            items:
+              - name: Create an access package
+                href: tutorial-access-package-api.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -457,8 +461,6 @@ items:
           - name: Azure AD Graph
             displayName: Migration, Azure AD Graph
             items:
-              - name: Overview
-                href: migrate-azure-ad-graph-overview.md
               - name: Checklist to migrate apps
                 href: migrate-azure-ad-graph-planning-checklist.md
               - name: "1: Review differences"
@@ -507,6 +509,8 @@ items:
             href: sdks/batch-requests.md
           - name: Upload large files
             href: sdks/large-file-upload.md
+          - name: Use beta API
+            href: sdks/use-beta.md
       - name: Use the toolkit
         items:
           - name: Toolkit overview
