@@ -1,14 +1,14 @@
 ---
 title: "Set up change notifications that include resource data (preview)"
 description: "Microsoft Graph uses a webhook mechanism to deliver change notifications to clients. Change notifications can include resource properties."
-author: "baywet"
+author: "davidmu1"
 ms.prod: "non-product-specific"
 localization_priority: Priority
 ---
 
 # Set up change notifications that include resource data (preview)
 
-Microsoft Graph allows apps to subscribe to change notifications for resources via [webhooks](webhooks.md). You can now set up subscriptions to include the changed resource data (such as the content of a Microsoft Teams chat message) in change notifications. Your app can then run its business logic without having to make a separate API call to fetch the changed resource. As a result, the app performs better by making fewer API calls, which is beneficial in large scale scenarios.
+Microsoft Graph allows apps to subscribe to change notifications for resources via [webhooks](webhooks.md). You can set up subscriptions to include the changed resource data (such as the content of a Microsoft Teams chat message or Microsoft Teams presence information) in change notifications. Your app can then run its business logic without having to make a separate API call to fetch the changed resource. As a result, the app performs better by making fewer API calls, which is beneficial in large scale scenarios.
 
 Including resource data as part of change notifications requires you to implement the following additional logic to satisfy data access and security requirements: 
 
@@ -27,12 +27,13 @@ In general, this type of change notifications include the following resource dat
 
 ## Supported resources
 
-Currently, the Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) (preview) resource supports change notifications that include resource data. Specifically, you can set up a subscription that applies to one of the following:
+Currently, the Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) (preview) as well as the Microsoft Teams [presence](/graph/api/resources/presence?view=graph-rest-beta) (preview) resources supports change notifications that include resource data. Specifically, you can set up a subscription that applies to one of the following:
 
 - New or changed messages in a specific Teams channel: `/teams/{id}/channels/{id}/messages`
 - New or changed messages in a specific Teams chat: `/chats/{id}/messages`
+- User's presence information update: `/communications/presences/{id}`
 
-The **chatMessage** resource supports including all the properties of a changed instance in a change notification. It does not support returning only selective properties of the instance. 
+The **chatMessage** and the **presence** resources support including all the properties of a changed instance in a change notification. They do not support returning only selective properties of the instance. 
 
 This article walks through an example of subscribing to change notifications of messages in a Teams channel, with each change notification including the full resource data of the changed **chatMessage** instance.
 
@@ -159,6 +160,8 @@ Note the following:
 }
 ```
 
+> **Note:** for a full description of the data sent when change notifications are delivered, see [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
+
 ### Responding to an authorization challenge
 
 Take the following steps to process an authorization challenge lifecycle notification. The first two steps of acknowledging and validating the lifecycle notification is similar to [responding to a resource change notification](webhooks.md#processing-the-change-notification).
@@ -258,9 +261,12 @@ In the following example, the change notification contains two items for the sam
 	]
 }
 ```
+
+> **Note:** for a full description of the data sent when change notifications are delivered, see [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
+
 ### How to validate
 
-If you are new to token validation, refer to this [blog article](http://www.cloudidentity.com/blog/2014/03/03/principles-of-token-validation/) for a useful overview. Use an SDK, such as Microsoft's [System.IdentityModel.Tokens.Jwt](https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt/) library for .NET, or a third party library for a different platform.
+If you're new to token validation, see [Principles of Token Validation](http://www.cloudidentity.com/blog/2014/03/03/principles-of-token-validation/) for an overview. Use an SDK, such as the [System.IdentityModel.Tokens.Jwt](https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt/) library for .NET, or a third-party library for a different platform.
 
 Be mindful of the following: 
 
@@ -296,7 +302,7 @@ Use the following steps to validate tokens and apps that generate tokens:
 
 ### Example JWT token
 
-Here is an example of the properties included in the JWT token that are needed for validation:
+The following is an example of the properties included in the JWT token that are needed for validation.
 
 ```json
 {
@@ -550,6 +556,9 @@ The following is an example change notification that includes encrypted property
 	]
 }
 ```
+
+> **Note:** for a full description of the data sent when change notifications are delivered, see [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
+
 
 This section contains some useful code snippets that use C# and .NET for each stage of decryption.
 

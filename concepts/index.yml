@@ -80,7 +80,7 @@ conceptualContent:
         - url: https://docs.microsoft.com/en-us/graph/use-the-api
           itemType: overview
           text: Use the API
-        - url: /graph/migrate-azure-ad-graph-overview
+        - url: /graph/migrate-azure-ad-graph-planning-checklist
           itemType: overview
           text: Migrate
         - url: /graph/sdks/sdks-overview
@@ -88,7 +88,7 @@ conceptualContent:
           text: Use the SDKs
         - url: /graph/toolkit/overview
           itemType: overview
-          text: Use the toolkit (preview)
+          text: Use the toolkit
 
 additionalContent:
   sections:
