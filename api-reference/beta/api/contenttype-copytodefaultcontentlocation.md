@@ -76,23 +76,17 @@ If successful, this call returns a `204 No Content` response
 }
 -->
 ```http
-POST https://graph.microsoft.com/v1.0/sites/id/contentTypes/id/copyToDefaultContentLocation 
+POST https://graph.microsoft.com/beta/sites/{id}/contentTypes/{contentTypeId}/copyToDefaultContentLocation 
 Content-Type: application/json
 
 {
-  "sourceFile": {
-       "sharepointIds":​
-
-       {​
-
-           "listId":"e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0",​
-
-           "listItemId":"2"​
-
-       }
-  }
-  },
-  "destinationFileName": "newname.txt"
+	"sourceFile": {
+		"sharepointIds": {
+			"listId": "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0",
+			"listItemId": "2"
+		}
+	},
+	"destinationFileName": "newname.txt"
 }
 ```
 
@@ -104,7 +98,6 @@ Content-Type: application/json
 <!-- { "blockType": "response" } -->
 
 ```http
-
 HTTP/1.1 204 No Content
 
 ```

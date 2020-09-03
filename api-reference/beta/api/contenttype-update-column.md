@@ -77,32 +77,29 @@ Content-Type: application/json
 {
  "name": "Custom Column",
   "group": "Custom Columns",
-  "required" " true,
+  "required": true,
   "text":{
       "allowMultipleLines":false,
       "appendChangesToExistingText":false,
       "linesForEditing":0,
       "maxLength":255
-   }
+   },
   "propagateChanges": false		
 }
 ```
 
-#### Response
+### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.columnDefinition"
 }
 -->
-  
-
 ```http
-
 HTTP/1.1 200 OK
-
 Content-type: application/json
-		
+
 {
 
     "description": "",

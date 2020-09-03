@@ -30,7 +30,7 @@ Here is a JSON representation of a columnDefinition resource.
   "columnGroup": "string",
   "description": "description",
   "displayName": "friendly name",
-  "enforceUniqueValues": "true",
+  "enforceUniqueValues": true,
   "hidden": false,
   "id": "string",
   "indexed": true,

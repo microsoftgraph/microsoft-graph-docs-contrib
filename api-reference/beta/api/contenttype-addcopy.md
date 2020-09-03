@@ -73,7 +73,7 @@ If successful, this call returns a `204 No Content` response
 }
 -->
 ```http
-https://graph.microsoft.com/beta/sites/id/lists/{list-id}/contentTypes/addCopy
+POST https://graph.microsoft.com/beta/sites/id/lists/{list-id}/contentTypes/addCopy
 Content-Type: application/json
 
 {
@@ -89,7 +89,6 @@ Content-Type: application/json
 <!-- { "blockType": "response" } -->
 
 ```http
-
 HTTP/1.1 204 No Content
 
 ```

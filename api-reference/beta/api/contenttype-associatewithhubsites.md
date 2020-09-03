@@ -41,7 +41,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-
 https://graph.microsoft.com/beta/sites/id/contentTypes/id/associateWithHubSites
 ```
 
@@ -59,7 +58,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Required|Description|
 |-|-|-|-|
 |hubSiteUrls| Collection(string) | Yes|List of cannonical urls to hteHub Sites where the content type needs to be enforced|
-|propagateToExistingLists| boolean | No|If `true`, content types will be enforced to existing lists in hub sites otherwise will be applied to only newly created lists. 
+|propagateToExistingLists| Boolean | No|If `true`, content types will be enforced to existing lists in hub sites otherwise will be applied to only newly created lists. 
 
 ## Response
 
@@ -74,7 +73,7 @@ If successful, this action returns a `204 No Content` response code
 }
 -->
 ```http
-https://graph.microsoft.com/beta/sites/id/contentTypes/id/associateWithHubSites
+POST https://graph.microsoft.com/beta/sites/id/contentTypes/id/associateWithHubSites
 Content-Type: application/json
 
 {
@@ -83,7 +82,7 @@ Content-Type: application/json
       "https://graph.microsoft.com/beta/sites/id"
       
     ],
-    "propagateToExistingLists": false)
+    "propagateToExistingLists": false
 }
 ```
 
@@ -94,10 +93,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response" } -->
 
-If successful, this call returns a `204 No Content` response
-
 ```http
-
 HTTP/1.1 204 No Content
 
 ```

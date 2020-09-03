@@ -56,7 +56,7 @@ GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Edm.Boolean"
+  "@odata.type": "string"
 }
 -->
 
