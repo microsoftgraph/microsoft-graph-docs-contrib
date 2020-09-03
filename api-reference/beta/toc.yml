@@ -9907,9 +9907,9 @@ items:
           href: resources/group.md
       - name: Data policy operation
         href: resources/datapolicyoperation.md
-          items:
-          - name: Get data policy operation
-            href: api/datapolicyoperation-get.md
+        items:
+        - name: Get data policy operation
+          href: api/datapolicyoperation-get.md
         - name: Delegated permission grants
           href: resources/oauth2permissiongrant.md
           items:
