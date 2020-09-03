@@ -157,6 +157,7 @@ This resource supports:
 | businessPhones | String collection | The telephone numbers for the user. Only one number can be set for this property. <br><br>Returned by default. |
 | city | String | The city in which the user is located. <br><br>Returned only on $select. Supports $filter. |
 | companyName | String | The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 chararcters.<br><br>Returned only on $select. |
+| costCenter | String | The cost center associated with the user. <br><br>Returned only on $select. Supports $filter. |
 | consentProvidedForMinor | String| Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. <br><br>Returned only on $select. |
 | country | String | The country/region in which the user is located; for example, "US" or "UK". <br><br>Returned only on $select. Supports $filter. |
 | createdDateTime | DateTimeOffset | The date and time the user was created. The value cannot be modified and is automatically populated when the entity is created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. Property is nullable. A null value indicates that an accurate creation time couldn't be determined for the user. <br><br>Returned only on $select. Read-only. Supports $filter. |
@@ -164,7 +165,10 @@ This resource supports:
 | deletedDateTime | DateTimeOffset | The date and time the user was deleted. <br><br>Returned only on $select. |
 | department | String | The name for the department in which the user works. <br><br>Returned only on $select. Supports $filter. |
 | displayName | String | The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. <br><br>Returned by default. Supports $filter and $orderby.|
+| division | String | The name of the division in which the user works. <br><br>Returned only on $select. Supports $filter. |
 | employeeId | String | The employee identifier assigned to the user by the organization. <br><br>Returned only on $select. Supports $filter.|
+| employeeHireDate | DateTimeOffset | The date and time when the user was hired or will start work in case of a future hire. <br><br>Returned only on $select. Supports $filter.|
+| employeeType | String | Captures enterprise worker type: Employee, Contractor, Consultant, Vendor, etc. <br><br>Returned only on $select. Supports $filter.|
 | externalUserState | String | For an external user invited to the tenant using the [invitation API](../api/invitation-post.md), this property represents the invited user's invitation status. For invited users, the state can be `PendingAcceptance` or `Accepted`, or `null` for all other users. <br><br>Returned only on $select. Supports $filter with the supported values. For example: `$filter=externalUserState eq 'PendingAcceptance'`. |
 | externalUserStateChangeDateTime | String | Shows the timestamp for the latest change to the externalUserState property. <br><br>Returned only on $select. |
 | faxNumber | String | The fax number of the user. <br><br>Returned only on $select. |
@@ -176,7 +180,7 @@ This resource supports:
 | infoCatalogs | String collection | Identifies the info segments assigned to the user. Returned by default. |
 | interests | String collection | A list for the user to describe their interests. <br><br>Returned only on $select. |
 | isResourceAccount | Boolean | Do not use – reserved for future use. |
-| jobTitle | String | The user’s job title. <br><br>Returned by default. Supports $filter.|
+| jobTitle | String | The user's job title. <br><br>Returned by default. Supports $filter.|
 | lastPasswordChangeDateTime | DateTimeOffset | The time when this Azure AD user last changed their password. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` <br><br>Returned only on $select. |
 | legalAgeGroupClassification | String | Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on **ageGroup** and **consentProvidedForMinor** properties. Allowed values: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.) <br><br>Returned only on $select. |
 | licenseAssignmentStates | [licenseAssignmentState](licenseassignmentstate.md) collection | State of license assignments for this user. <br><br>Returned only on $select. Read-only. |
@@ -189,7 +193,7 @@ This resource supports:
 | onPremisesDistinguishedName | String | Contains the on-premises Active Directory `distinguished name` or `DN`. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. <br><br>Returned only on $select. Read-only. |
 | onPremisesDomainName | String | Contains the on-premises `domainFQDN`, also called dnsDomainName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. <br><br>Returned only on $select. Read-only. |
 | onPremisesExtensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Contains extensionAttributes 1-15 for the user. Note that the individual extension attributes are neither selectable nor filterable. For an `onPremisesSyncEnabled` user, the source of authority for this set of properties is the on-premises and is read-only and is read-only. For a cloud-only user (where `onPremisesSyncEnabled` is false), these properties may be set during creation or update. These extension attributes are also known as Exchange custom attributes 1-15. <br><br>Returned only on $select. |
-| onPremisesImmutableId | String | This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user’s `userPrincipalName` (UPN) property. **Important:** The **$** and **\_** characters cannot be used when specifying this property. <br><br>Returned only on $select. Supports $filter. |
+| onPremisesImmutableId | String | This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user's `userPrincipalName` (UPN) property. **Important:** The **$** and **\_** characters cannot be used when specifying this property. <br><br>Returned only on $select. Supports $filter. |
 | onPremisesLastSyncDateTime | DateTimeOffset | Indicates the last time at which the object was synced with the on-premises directory; for example: "2013-02-16T03:04:54Z". The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. <br><br>Returned only on $select. Read-only. |
 | onPremisesProvisioningErrors | [onPremisesProvisioningError](onpremisesprovisioningerror.md) collection | Errors when using Microsoft synchronization product during provisioning. <br><br>Returned only on $select. |
 | onPremisesSamAccountName | String | Contains the on-premises `sAMAccountName` synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. <br><br>Returned only on $select. Read-only. |
@@ -197,8 +201,8 @@ This resource supports:
 | onPremisesSyncEnabled | Boolean | `true` if this object is synced from an on-premises directory; `false` if this object was originally synced from an on-premises directory but is no longer synced; `null` if this object has never been synced from an on-premises directory (default). <br><br>Returned only on $select. Read-only. |
 | onPremisesUserPrincipalName | String | Contains the on-premises `userPrincipalName` synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. <br><br>Returned only on $select. Read-only. |
 | otherMails | String collection | A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`.<br><br>Returned only on $select.  Supports $filter. |
-| passwordPolicies | String | Specifies password policies for the user. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two may be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".<br><br>Returned only on $select. |
-| passwordProfile | [passwordProfile](passwordprofile.md) | Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required. <br><br>Returned only on $select. |
+| passwordPolicies | String | Specifies password policies for the user. This value is an enumeration with one possible value being "DisableStrongPassword", which allows weaker passwords than the default policy to be specified. "DisablePasswordExpiration" can also be specified. The two may be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".<br><br>Returned only on $select. |
+| passwordProfile | [passwordProfile](passwordprofile.md) | Specifies the password profile for the user. The profile contains the user's password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required. <br><br>Returned only on $select. |
 | pastProjects | String collection | A list for the user to enumerate their past projects. <br><br>Returned only on $select. |
 | postalCode | String | The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code. <br><br>Returned only on $select. |
 | preferredDataLocation | String | The preferred data location for the user. For more information, see [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Returned only on $select. |
@@ -217,7 +221,7 @@ This resource supports:
 | streetAddress | String | The street address of the user's place of business. <br><br>Returned only on $select.|
 | surname | String | The user's surname (family name or last name). <br><br>Returned by default. Supports $filter. |
 | usageLocation | String | A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: "US", "JP", and "GB". Not nullable. <br><br>Returned only on $select. Supports $filter.|
-| userPrincipalName | String | The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). <br><br>Returned by default. Supports $filter and $orderby.
+| userPrincipalName | String | The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). <br><br>Returned by default. Supports $filter and $orderby.
 | userType | String | A string value that can be used to classify user types in your directory, such as "Member" and "Guest". <br><br>Returned only on $select. Supports $filter. |
 
 ### Legal age group property definitions
@@ -249,7 +253,7 @@ The age group and minor consent properties are optional properties used by Azure
 |:---------------|:--------|:----------|
 |null|0|Default value, no `ageGroup` has been set for the user.|
 |minor|1|The user is consider a minor.|
-|notAdult|2|The user is from a country that has statutory regulations  United States, United Kingdom, European Union or South Korea) and user’s age is more than the upper limit of kid age (as per country) and less than lower limit of adult age (as stipulated based on country or region). So basically, teenagers are considered as `notAdult` in regulated countries.|
+|notAdult|2|The user is from a country that has statutory regulations  United States, United Kingdom, European Union or South Korea) and user's age is more than the upper limit of kid age (as per country) and less than lower limit of adult age (as stipulated based on country or region). So basically, teenagers are considered as `notAdult` in regulated countries.|
 |adult|3|The user should be a treated as an adult.|
 
 #### consentProvidedForMinor property
@@ -282,7 +286,7 @@ The age group and minor consent properties are optional properties used by Azure
 |insights|[itemInsights](iteminsights.md) | Read-only. Nullable.|
 |joinedGroups|[group](group.md) collection| Read-only. Nullable.|
 |mailFolders|[mailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
-|manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
+|manager|[directoryObject](directoryobject.md)|The user or contact that is this user's manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
 |memberOf|[directoryObject](directoryobject.md) collection|The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable.|
 |joinedTeams|[team](team.md) collection|The Microsoft Teams teams that the user is a member of. Read-only. Nullable.|
 |messages|[message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
@@ -364,7 +368,13 @@ Here is a JSON representation of the resource
   "deletedDateTime": "String (timestamp)",
   "department": "string",
   "displayName": "string",
+  "employeeHireDate": "2020-01-01T00:00:00Z",
   "employeeId": "string",
+  "employeeOrgData": {
+      "costCenter": "string",
+      "division": "string"
+  },
+  "employeeType": "string",
   "externalUserState": "PendingAcceptance",
   "externalUserStateChangeDateTime": "2018-11-12T01:13:13Z",
   "faxNumber": "string",
