@@ -3,7 +3,7 @@ title: "Update userFlowAttributes"
 description: "Update properties of a userFlowAttribute."
 localization_priority: Normal
 doc_type: apiPageType
-author: "jodougla"
+author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
