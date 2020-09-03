@@ -45,7 +45,12 @@ PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
 
-To update photo for a team, use `PUT /groups/{teamId}/photo/$value`.
+To update the photo for a team:
+
+<!-- { "blockType": "ignored" } -->
+```http
+PUT /groups/{teamId}/photo/$value`
+```
 
 ## Request headers
 | Header       | Value |
