@@ -11909,7 +11909,7 @@ items:
         - name: Get team photo
           href: api/team-get-photo.md
         - name: Update team photo
-          href: api/team-update-photo.md
+          href: api/profilephoto-update.md
       - name: Group (team)
         href: resources/group.md
         items:
