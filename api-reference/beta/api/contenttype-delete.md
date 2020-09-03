@@ -50,6 +50,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
+### Request
 <!-- {
   "blockType": "request",
   "name": "delete_contenttype"
@@ -60,7 +61,7 @@ If successful, this method returns a `204 No Content` response code.
 DELETE /sites/{site-id}/contentTypes/{contentType-id}
 ```
 
-## Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -79,6 +79,7 @@ Here is a JSON representation of a **contentType** resource.
 | **columnLinks** | [columnLink][] collection | The collection of columns that are required by this content type
 | **baseTypes**   | Collection([contentType][])     | The collection of content types that are ancestors of this content type.
 | **columns**     | Collection([columnDefinition][])  | The collection of column definitions for this contentType.
+
 See [Introduction to content types and content type publishing][contentTypeIntro] for more information.
 
 [columnLink]: columnlink.md

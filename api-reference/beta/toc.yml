@@ -11796,13 +11796,13 @@ items:
         - name: Associate With Hub Sites
           href: api/contenttype-associatewithhubsites.md
         - name: Get Content Type Column
-          href: api/contenttype-column-get.md
+          href: api/contenttype-get-column.md
         - name: Update Content Type Column
-          href: api/contenttype-column-update.md
+          href: api/contenttype-update-column.md
         - name: Delete Content Type Column
-          href: api/contenttype-column-delete.md
+          href: api/contenttype-delete-column.md
         - name: List Content Type Columns
-          href: api/contenttype-column-list.md
+          href: api/contenttype-list-column.md
     - name: Tasks and plans
       displayName: Planner
       items:
