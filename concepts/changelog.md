@@ -11,6 +11,14 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## September 2020
+
+### Reports API
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition        | Beta and v1.0 | Added **outlookM365** and **outlook2019** property to the [emailappusageversionsusercount](/graph/api/resources/emailappusageversionsusercount?view=graph-rest-beta) entity.|
+
 ## August 2020
 
 ### Applications
