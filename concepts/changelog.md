@@ -13,6 +13,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## September 2020
 
+### Calendar
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Change | v1.0 | Corrected the property description to reflect the behavior of the **iCalUId** property of [event](/graph/api/resources/event?view=graph-rest-1.0) entity. |
+
 ### Users
 
 | **Change type** | **Version** | **Description**                          |
