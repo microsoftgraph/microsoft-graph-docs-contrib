@@ -34,26 +34,31 @@ POST /groups/{id}/members/$ref
 ```
 
 ## Request headers
+
 | Header       | Value |
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Content-type   | application/json. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), [group](../resources/group.md), or [organizational contact](../resources/orgcontact.md) object to be added.
 
 ## Response
+
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
+
 ### Example 1: Add a member to a group
+
 #### Request
+
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_member_from_group"
+  "name": "add_member_to_group"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/members/$ref
@@ -64,23 +69,6 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
 }
 ```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-member-from-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-member-from-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-member-from-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-member-from-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 The following is an example of the response.
@@ -95,14 +83,16 @@ HTTP/1.1 204 No Content
 ```
 
 ### Example 2: Add multiple members to a group in a single request
+
 This example shows how to add multiple members to a group with OData bind support in a PATCH operation. Note that up to 20 members can be added in a single request. The POST operation is not supported.
+
 #### Request
+
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_member_from_group"
+  "name": "add_multiple_members_to_group"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/{id}
@@ -117,23 +107,6 @@ Content-length: 30
     ]
 }
 ```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-member-from-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-member-from-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-member-from-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-member-from-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 The following is an example of the response.
