@@ -51,7 +51,7 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 
 If successful, this method returns `HTTP 200 OK` response code and a [searchResponse](../resources/searchresponse.md) collection object in the response body.
-
+ 
 ## Common use cases
 
 - Search [mail messages](/graph/search-concept-messages)
