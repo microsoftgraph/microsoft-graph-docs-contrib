@@ -115,7 +115,7 @@ For both the long-running operation pattern and the regular pattern, we recommen
 
 ### 3. Parse the top-level error code
 
-If you can't find the second-level error code listed in the [Error codes](workbook-error-codes.md#error-code) topic, we recommend that you follow the instructions provided for top-level errors, which are bound to the status code. For details about top-level error codes and messages, see [Detailed error codes](workbook-error-codes.md#detailed-error-code).
+If you can't find the second-level error code listed in the [Detailed error codes](workbook-error-codes.md#detailed-error-code) topic, we recommend that you follow the instructions provided for top-level errors. The top-level error codes are bound to the status code and you can take action according to the corresponding status codes. For details about top-level error codes and messages, see [Error codes](workbook-error-codes.md#error-code).
 
 ### 4. Parse the status code
 
@@ -124,6 +124,10 @@ If the error code you encounter is not in the second-level list or the top-level
 ### 5. Error recovery cooldown
 
 For some of the responses in the regular pattern, a recovery cooldown duration in seconds might be provided via a `Retry-After` header. When a recovery cooldown duration is present, the Microsoft Graph client is not expected to send any followup requests before the specified duration passes.
+
+## Special case handling
+
+In persist or non-persist session mode, we recommend to recreate session if you encounter `503/serviceUnavailable` or `502/badGateway` status code.
 <!-- {
   "type": "#page.annotation",
   "description": "Error handling in Excel Graph.",
