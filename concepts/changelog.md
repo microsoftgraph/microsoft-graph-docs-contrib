@@ -13,6 +13,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## September 2020
 
+### Devices and apps | Cloud printing
+
+| **Change type** | **Version**   | **Description**                          |
+|:---|:---|:---|
+| Addition | beta | Added the [printDocument: $value](/graph/api/printdocument-value?view=graph-rest-beta) method to download the binary file data associated with a document.  | 
+
 ### Users
 
 | **Change type** | **Version** | **Description**                          |
