@@ -19,7 +19,7 @@ This topic covers how to get started using Microsoft Graph Toolkit in a Microsof
 
 ## Create a new Teams application with a custom tab
 
-The easiest way to create a new Teams app is to use the [Microsoft Teams Toolkit extension](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) for Visual Studio Code. Follow the instructions to [set up a new Teams project](https://docs.microsoft.com/microsoftteams/platform/toolkit/visual-studio-code-overview#set-up-a-new-teams-project). Select **Tab** when you get to the **Add capabilities** screen.
+The easiest way to create a new Teams app is to use the [Microsoft Teams Toolkit extension](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) for Visual Studio Code. Follow the instructions to [set up a new Teams project](https://docs.microsoft.com/microsoftteams/platform/toolkit/visual-studio-code-overview#set-up-a-new-teams-project). Select **Tab** when you get to the **Add capabilities** screen and then **Personal tab**.
 
 ## Set up ngrok and create a tunnel
 
@@ -66,7 +66,7 @@ In `public/index.html`, add the Teams provider like below:
 ></mgt-teams-provider>
 ```
 
-Replace `<YOUR_CLIENT_ID>` with the client ID for your application and `<YOUR_NGROK_URL>/` with the ngrok URL you created.
+Replace `<YOUR_CLIENT_ID>` with the client ID for your application and `<YOUR_NGROK_URL>` with the ngrok URL you created.
 
 ### Initialize in JavaScript
 
@@ -79,20 +79,19 @@ import { Providers, TeamsProvider } from '@microsoft/mgt';
 TeamsProvider.microsoftTeamsLib = microsoftTeams;
 Providers.globalProvider = new TeamsProvider ({
     clientId: '<YOUR_CLIENT_ID>',
-    authPopupUrl: '/auth'
+    authPopupUrl: '/auth.html'
 })
 ```
 Replace `<YOUR_CLIENT_ID>` with the client ID for your application.
 
 ### Creating an app/client ID
-In order to get a client ID, you need to [register your application](https://docs.microsoft.com/graph/auth-register-app-v2) in Azure AD. Make sure to add your ngrok url with the full path to the auth popup page to your redirect uris (ex: `https://<YOUR_NGROK_URL>/auth.html`).
+In order to get a client ID, you need to [register your application](https://docs.microsoft.com/graph/auth-register-app-v2) in Azure AD. Make sure to add your ngrok url with the full path to the auth popup page to your redirect URIs (ex: `https://<YOUR_NGROK_URL>/auth.html`).
 >**Note**: MSAL only supports the Implicit Flow for OAuth. Make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under **Authentication**, find the **Implicit grant** section and select the checkboxes for **Access tokens** and **ID tokens**. 
 
 ## Create the auth popup page
 
 In order to allow users to sign in, you need to provide a URL that the Teams app will open in a popup to  follow the authentication flow. The URL needs to be in your domain, and all this page needs to do is call the `TeamsProvider.handleAuth()` method.
 
-### Create using HTML
 You can do this in your HTML by adding a new `auth.html` file in the `public` folder (should be at the same level as `index.html`) and adding the following code: 
 
 ```html
@@ -102,38 +101,6 @@ You can do this in your HTML by adding a new `auth.html` file in the `public` fo
 <script>
   mgt.TeamsProvider.handleAuth();
 </script>
-```
-
-### Create using modules
-If you want use a module instead, add a new file called `Auth.js` to the `components` folder (or whichever folder your `App.js` is in) and add the following code:
-
-```js
-import React from 'react';
-import * as microsoftTeams from '@microsoft/teams-js/dist/MicrosoftTeams';
-import { TeamsProvider } from '@microsoft/mgt';
-
-function Auth() {
-    TeamsProvider.microsoftTeamsLib = microsoftTeams;
-    TeamsProvider.handleAuth()
-    return (
-        <div>Signing you in</div>
-    )
-}
-
-export default Auth;
-```
-Go to your `App.js` file and import the Auth module you just created at the top of the file:
-```js
-import Auth from "./Auth";
-```
-
-Then, add the your auth component to the router:
-
-```jsx
-<Router>
-    <Route exact path="/tab" component={Tab} />
-    <Route path="/auth" component={Auth} />
-</Router>
 ```
 
 ## Add components
@@ -146,8 +113,29 @@ You can add components to your HTML as you normally would. For example, to add t
 <mgt-login></mgt-login>
 ```
 
-Or, you can add the components in JSX to the Tab component. We recommend using the `mgt-react` library. To learn more, see [Using Microsoft Graph Toolkit with React](./use-toolkit-with-react.md#using-mgt-react)
+Or, you can add the components in JSX to the Tab component. We recommend using the `mgt-react` library if you created your Teams app using the Microsoft Teams Toolkit extension. To learn more, see [Using Microsoft Graph Toolkit with React](./use-toolkit-with-react.md#using-mgt-react)
 
+First, install `mgt-react`:
+
+```bash
+npm install @microsoft/mgt-react
+```
+
+Locate the `src/components/Tab.js` file and import the components you want to use from the `mgt-react` library. For example to add the `Login` component use:
+
+```js
+import { Login } from "@microsoft/mgt-react"
+```
+
+Then, add the the component to the `return()` statement of the `render()` method of `Tab`:
+
+```jsx
+render() {
+  return(
+    <Login />
+  );
+}
+```
 
 ## Test your application
 
