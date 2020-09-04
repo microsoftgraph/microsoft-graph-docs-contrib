@@ -37,8 +37,8 @@ GET /print/printers/{id}/jobs
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-* The `documents` property is omitted by default. Use `$expand=documents` to also return a list of [printDocuments](../resources/printdocument.md) for each print job.
-* This method supports filtering print jobs by the user who created them. Use `$filter=createdBy/userPrincipalName eq '{upn}'` where **{upn}** is the [user principal name](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the associated user.
+* The **documents** property is omitted from the response by default. To also return a list of [printDocuments](../resources/printdocument.md) for each print job, use `$expand=documents`.
+* This method supports filtering print jobs by the user who created them. Use `$filter=createdBy/userPrincipalName eq '{upn}'`, where **{upn}** is the [user principal name](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the associated user.
 
 ### Exceptions
 Some operators are not supported: `$count`, `$search`, `$filter`.
