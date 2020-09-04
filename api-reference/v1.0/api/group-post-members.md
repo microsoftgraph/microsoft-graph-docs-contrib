@@ -19,6 +19,7 @@ You can add users, organizational contacts, service principals or other groups.
 > You can only add users to security and Microsoft 365 groups managed through the cloud.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -30,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/members/$ref
+POST /groups/{group-id}/members/$ref
 ```
 
 ## Request headers
@@ -61,7 +62,7 @@ The following is an example of the request.
   "name": "add_member_to_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/members/$ref
+POST https://graph.microsoft.com/v1.0/groups/{group-id}/members/$ref
 Content-type: application/json
 Content-length: 30
 
@@ -70,7 +71,10 @@ Content-length: 30
 }
 ```
 
+In the request body, supply a JSON representation of the id of the directoryObject, user, or group object you want to add.
+
 #### Response
+
 The following is an example of the response.
 
 <!-- {
@@ -95,7 +99,7 @@ The following is an example of the request.
   "name": "add_multiple_members_to_group"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups/{id}
+PATCH https://graph.microsoft.com/v1.0/groups/{group-id}
 Content-type: application/json
 Content-length: 30
 
@@ -107,6 +111,8 @@ Content-length: 30
     ]
 }
 ```
+
+In the request body, supply a JSON representation of the id of the directoryObject, user, or group object you want to add.
 
 #### Response
 The following is an example of the response.
