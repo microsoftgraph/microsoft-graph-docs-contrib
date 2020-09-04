@@ -42,6 +42,7 @@ POST /groups/{group-id}/members/$ref
 | Content-type   | application/json. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), [group](../resources/group.md), or [organizational contact](../resources/orgcontact.md) object to be added.
 
 ## Response
