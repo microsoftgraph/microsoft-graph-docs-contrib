@@ -4,7 +4,7 @@ description: "Represents organization data associated with a user."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: "chmutali"
+author: "cmmdesai"
 ---
 
 # employeeOrgData resource type
