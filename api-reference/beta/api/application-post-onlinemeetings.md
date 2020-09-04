@@ -27,17 +27,17 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 
 > [!IMPORTANT]
-> Creating an online meeting with an application token is now available. Administrator will need to create an [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user so the app configured in the policy will be authorized to create an online meeting on behalf of that user (user ID specified in the reuqest path).
+> Creating an online meeting with an application token is now available. An administrator must create an [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to create an online meeting on behalf of that user (user ID specified in the request path).
 
 ## HTTP request
 
-Requring delegated permission
+Using delegated permission
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings
 ```
 
-Requring application permission
+Using application permission
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{userId}/onlineMeetings
