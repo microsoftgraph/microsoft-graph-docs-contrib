@@ -21,10 +21,10 @@ See also [aadUserConversationMember](aaduserconversationmember.md).
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List members](https://github.com/microsoftgraph/microsoft-graph-docs/blob/conversationmember-list/api-reference/v1.0/api/conversationmember-list.md) | [conversationMember](conversationmember.md) collection | Get the list of all users in the chat or channel.|
-|[Get member](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | Get a single user in the chat or channel.|
-|[Add member](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Add a member to a channel.|
-|[Update member](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Update a member in the channel.|
-|[Delete member](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Delete a member from the channel.|
+|[Get member](https://github.com/microsoftgraph/microsoft-graph-docs/blob/conversationmember-get/api-reference/v1.0/api/conversationmember-get.md) | [conversationMember](conversationmember.md) | Get a single user in the chat or channel.|
+|[Add member](https://github.com/microsoftgraph/microsoft-graph-docs/blob/conversationmember-add/api-reference/v1.0/api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Add a member to a channel.|
+|[Update member](https://github.com/microsoftgraph/microsoft-graph-docs/blob/conversationmember-update/api-reference/v1.0/api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Update a member in the channel.|
+|[Delete member](https://github.com/microsoftgraph/microsoft-graph-docs/blob/conversationmember-delete/api-reference/v1.0/api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Delete a member from the channel.|
 
 ## Properties
 
