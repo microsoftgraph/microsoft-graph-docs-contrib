@@ -71,6 +71,11 @@ You can get secure access to resources by activating administrative privileges o
 
 You can configure access reviews of group memberships and application access. [Access reviews](/graph/api/resources/accessreviews-root?view=graph-rest-beta) is featured in Azure AD Premium P2.
 
+### Establish access request workflows (preview)
+
+The tutorial on how to [create an access package using Microsoft Graph APIs](tutorial-access-package-api.md) illustrates how to use [entitlement management](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta) to create a package of resources that users can self-service request.
+
+
 ## API reference
 
 Looking for the API reference for this service?
