@@ -370,10 +370,7 @@ Here is a JSON representation of the resource
   "displayName": "string",
   "employeeHireDate": "2020-01-01T00:00:00Z",
   "employeeId": "string",
-  "employeeOrgData": {
-      "costCenter": "string",
-      "division": "string"
-  },
+  "employeeOrgData": [{"@odata.type": "microsoft.graph.employeeOrgData"}],
   "employeeType": "string",
   "externalUserState": "PendingAcceptance",
   "externalUserStateChangeDateTime": "2018-11-12T01:13:13Z",
