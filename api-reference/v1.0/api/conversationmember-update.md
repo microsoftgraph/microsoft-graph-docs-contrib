@@ -1,6 +1,6 @@
 ---
 title: "Update conversationMember"
-description: "Update the role of a conversationMember in a team or channel."
+description: "Update the role of conversationMember in a team or channel."
 author: "laujan"
 doc_type: "apiPageType"
 localization_priority: Normal
@@ -11,13 +11,7 @@ ms.prod: "microsoft-teams"
 
 Namespace: microsoft.graph
 
-
-Update the role of a [conversationMember](../resources/conversationmember.md) in a 
-[team](../resources/team.md).
-or [channel](../resources/channel.md).
-
-> [!NOTE]
-> On channels, this operation is only supported on channels with a [channelMembershipType](../resources/enums.md#channelmembershiptype-values) of `private`. Calls with any other [channelMembershipType](../resources/enums.md#channelmembershiptype-values) will return a `400 Bad Request` response.
+Update the role of a [conversationMember](../resources/conversationmember.md) in a [team](../resources/team.md) or [channel](../resources/channel.md).
 
 ## Permissions
 
@@ -74,20 +68,20 @@ content-length: 26
   "roles": ["owner"]
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-conversation-member-csharp-snippets.md)]
+
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-conversation-member-javascript-snippets.md)]
+
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-conversation-member-objc-snippets.md)]
+
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

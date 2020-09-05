@@ -1,6 +1,6 @@
 ---
 title: "Get conversationMember"
-description: "Retrieve a member of a chat or channel."
+description: "Retrieve member of a chat or channel."
 author: "laujan"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve a [conversationMember](../resources/conversationmember.md) from a [chat](../resources/chat.md) or [channel](../resources/channel.md).
+Retrieve a [conversationMember](../resources/conversationmember.md) from a [chat](../resources/chatmessage.md) or [channel](../resources/channel.md).
 
 ## Permissions
 
@@ -65,19 +65,22 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_conversation_member"
 }-->
+
 ```msgraph-interactive
+
 GET https://graph.microsoft.com/V1.0/chats/{id}/members/{id}
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-conversation-member-csharp-snippets.md)]
+
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-conversation-member-javascript-snippets.md)]
+
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-conversation-member-objc-snippets.md)]
+
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

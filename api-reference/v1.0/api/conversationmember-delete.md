@@ -1,6 +1,6 @@
 ---
 title: "Delete conversationMember"
-description: "Delete a conversationMember from a channel."
+description: "Delete conversationMember from a channel."
 author: "laujan"
 doc_type: "apiPageType"
 localization_priority: Normal
@@ -11,11 +11,8 @@ ms.prod: "microsoft-teams"
 
 Namespace: microsoft.graph
 
-
 Delete a [conversationMember](../resources/conversationmember.md) from a [channel](../resources/channel.md).
 
-> [!NOTE]
-> This operation is only supported on channels with a [channelMembershipType](../resources/enums.md#channelmembershiptype-values) of `private`. Calls with any other [channelMembershipType](../resources/enums.md#channelmembershiptype-values) will return a `400 Bad Request` response.
 
 ## Permissions
 
@@ -62,19 +59,18 @@ Here is an example of the request.
 DELETE https://graph.microsoft.com/V1.0/teams/{id}/channels/{id}/members/{id}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-conversation-member-csharp-snippets.md)]
+
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-conversation-member-javascript-snippets.md)]
+
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-conversation-member-objc-snippets.md)]
+
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -83,6 +79,8 @@ Here is an example of the response.
 <!-- {
   "blockType": "response"
 } -->
+
 ```http
+
 HTTP/1.1 204 No Content
 ```

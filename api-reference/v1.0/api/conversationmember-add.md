@@ -1,6 +1,6 @@
 ---
 title: "Add conversationMember"
-description: "Add a conversationMember to a channel."
+description: "Add conversationMember to a channel."
 author: "laujan"
 doc_type: "apiPageType"
 localization_priority: Normal
@@ -11,11 +11,7 @@ ms.prod: "microsoft-teams"
 
 Namespace: microsoft.graph
 
-
 Add a [conversationMember](../resources/conversationmember.md) to a [channel](../resources/channel.md).
-
-> [!NOTE]
->This operation is only supported on channels with a [channelMembershipType](../resources/enums.md#channelmembershiptype-values) of `private`. Calls with any other [channelMembershipType](../resources/enums.md#channelmembershiptype-values) will return a 400 Bad Request response.
 
 ## Permissions
 
@@ -63,7 +59,9 @@ Here is an example of the request.
   "blockType": "request",
   "name": "create_conversation_member"
 } -->
+
 ```http
+
 POST https://graph.microsoft.com/V1.0/teams/{id}/channels/{id}/members/
 content-type: application/json
 content-length: 26
@@ -74,20 +72,14 @@ content-length: 26
   "user@odata.bind": "https://graph.microsoft.com/V1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-conversation-member-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-conversation-member-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+# [C#](#tab/csharp)
+
+# [JavaScript](#tab/javascript) 
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-conversation-member-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
