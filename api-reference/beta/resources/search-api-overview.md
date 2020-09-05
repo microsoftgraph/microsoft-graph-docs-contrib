@@ -49,8 +49,8 @@ The following table describes the types available to query and any of the permis
 |[drive](drive.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint | Document Libraries|
 |[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Lists. Note that Document Libraries will also be returned under **list** |
 |[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | ListItems. Note that Files and folders will also be returned under **listItem** since this is the super class of **driveItem**. In that case |
-|[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint |  |
-|[externalItem](externalitem.md)|ExternalItem.Read.All| Connectors| | 
+|[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites in SharePoint|
+|[externalItem](externalitem.md)|ExternalItem.Read.All| Connectors| All content ingested with the Graph Connectors Platform|
 
 ## Page search results
 
