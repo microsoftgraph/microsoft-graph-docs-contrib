@@ -45,12 +45,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **cancelledOccurrences**, **exceptionOccurrences**, and **occurrenceId** properties to the [event](/graph/api/resources/event?view=graph-rest-beta) entity.
 
-### Cloud communications
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta and v1.0 | Added the **transcription** property to the [call](/graph/api/resources/call) entity.|
-
 ### Change notifications
 
 | **Change type** | **Version**   | **Description**                          |
@@ -65,6 +59,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta and v1.0 | Added the **transcription** property to the [call](/graph/api/resources/call) entity.|
 | Addition | v1.0 | Added the **cancelMediaProcessing** API to the [call](/graph/api/resources/call) entity.|
+| Addition | beta and v1.0 | Added the **transcription** property to the [call](/graph/api/resources/call) entity.|
 
 ### Devices and apps | Cloud printing
 
