@@ -19,6 +19,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |:---|:---|:---|
 | Addition | beta | Added support for `$expand=documents` and `$filter=createdBy/userPrincipalName` query parameters in the [List printJobs](/graph/api/printer-list-jobs?view=graph-rest-beta) method. |
 
+### Teamwork
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition|beta| Added the **createdDateTime** property to the [channel](/graph/api/resources/channel?view=graph-rest-beta) and [team](/graph/api/resources/team?view=graph-rest-beta) resources.|
+
 ### Users
 
 | **Change type** | **Version** | **Description**                          |
@@ -28,6 +34,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ## August 2020
 
 ### Applications
+
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | Beta | Added the [passwordSingleSignOnSettings](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta) property to the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.
