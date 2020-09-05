@@ -19,8 +19,8 @@ Enables to specify some manual ranges in the aggregation request. This in only a
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|from|String| Defines the lower bound from which the aggregation will be computed. This can be a numeric value or a date specified in this format TODOSEARCHAPI |
-|to|String| Defines the lower bound from which the aggregation will be computed. This can be a numeric value or a date specified in this format TODOSEARCHAPI|
+|from|String| Defines the lower bound from which the aggregation will be computed. This can be a numeric value or a date specified in this format |
+|to|String| Defines the lower bound from which the aggregation will be computed. This can be a numeric value or a date specified in this format |
 
 ## JSON representation
 

@@ -90,7 +90,6 @@ For **externalItem** and **listItem** entity, they are the only entities which e
 
 if the **stored_fields** don't exist, they will be returned as empty in the **fields** in the response.
 
-TODOSEARCHAPI : Add a sample for specifying fields in the learn section. 1. For OOB Schema, 2. For ListItem , ExternalItem. 3. For files (using the listItem).
 
 ### Keyword Query Language (KQL) support
 

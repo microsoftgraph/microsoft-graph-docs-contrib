@@ -8,30 +8,18 @@ ms.prod: "search"
 
 # Sort search results
 
-TODOSEARCHAPI@Lan Can you please take a stab at this page describing the key scenario for Sharepoint---
-- One example from sharepoint
-- Document the known limitations
-- Include single / multi level sort
-- Include an example with sort by author and then relevance(Need to confirm with Nicolas)
-- The whole page below was copied from the Sharepoint File sample page. You should use the same structure. https://docs.microsoft.com/graph/search-concept-files
-ENDTODO
+You can use the Microsoft Search API to sort search results using a specific property.
 
-You can use the Microsoft Search API to search files stored in SharePoint or OneDrive. The Microsoft Search API uses a relevance model that makes use of signals from Microsoft Graph about users' relationships and activities. This enables you to return and promote the content that users care about, in a file search experience that is consistent with the **Files** tab that lists search results in SharePoint.
+Sorting is only supported for SharePoint or OneDrive items.
+The property to be sorted on should be *Sortable* in the search schema.
+
+The default sort order is ascending, and you can change it by setting the ***isDescending** property.
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
-You can use KQL in search terms of queries for SharePoint and OneDrive. For example:
+## Example : Single-level Sort
 
-- `"query": "contoso filetype:docx OR filetype:doc"` scopes the query to Word documents.
-- `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` scopes the query to a particular folder within a site.
-
-In order to be valid, properties restriction should specify a valid, queryable managed property name in the condition.
-
-## Example
-
-### Single-level Sort
-
-#### Request 
+### Request
 
 ```HTTP
 POST /search/query
@@ -55,9 +43,7 @@ Content-Type: application/json
               "name": "CreatedDateTime",
               "isDescending": false
           }
-      ],
-      "from": 0,
-      "size": 25
+      ]
     }
   ]
 }
@@ -145,9 +131,9 @@ Content-Type: application/json
 }
 ```
 
-### Multi-level Sort
+## Example : Multi-level Sort
 
-#### Request 
+### Request
 
 ```HTTP
 POST /search/query
@@ -183,7 +169,7 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
 
 ```json
 {
@@ -299,8 +285,7 @@ Content-Type: application/json
 
 ## Known limitations
 
-TODOSEARCHAPI @Nicolas
-- Relevant is not supported by multi-level sort
+- Sort is not supported for **messages, events, externalItems**
 - Sort by relevance is not valid thru request body
 
 ## Next steps

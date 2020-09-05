@@ -48,7 +48,7 @@ The following table describes the types available to query and any of the permis
 |[driveItem](driveitem.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | files, folders, pages, news |
 |[drive](drive.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint | Document Libraries|
 |[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Lists. Note that Document Libraries will also be returned under **list** |
-|[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | ListItems. Note that Files and folders will also be returned under **listItem** |
+|[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | ListItems. Note that Files and folders will also be returned under **listItem** since this is the super class of **driveItem**. In that case |
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint |  |
 |[externalItem](externalitem.md)|ExternalItem.Read.All| Connectors| | 
 
@@ -93,8 +93,6 @@ For **externalItem** and **listItem** entity, they are the only entities which e
 
 if the **stored_fields** don't exist, they will be returned as empty in the **fields** in the response.
 
-TODOSEARCHAPI : Link to the Learn section sample for files.
-
 ## Keyword Query Language (KQL) support
 
 Specify free text keywords, operators (such as `AND`, `OR`), and property restrictions in KQL syntax in the actual search query string (**query** property of the **query** request body). The syntax and command depend on the entity types (in the **entityTypes** property) you target in the same **query** request body.
@@ -115,7 +113,7 @@ You will be able to specify a list one or many sortable properties, and the sort
 
 Note that sorting results is currently only supported on the following SharePoint and OneDrive types : [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md)
 
-The properties on which the sort clause are applied need to be sortable in the SharePoint [search schema](https://docs.microsoft.com/sharepoint/manage-search-schema). If the property is not sortable, the response will return a Bad Request. Note that **relevance** is a valid [sortProperty](sortproperty.md) name.
+The properties on which the sort clause are applied need to be sortable in the SharePoint [search schema](https://docs.microsoft.com/sharepoint/manage-search-schema). If the property is not sortable, the response will return a Bad Request. Note that **relevance** is not a valid [sortProperty](sortproperty.md) name.
 
 When specifying a the [sortProperty](sortproperty.md) name, you can either provide the property name from the Microsoft Graph type (ex : [driveItem](driveitem.md)), or the name of the managed property in the search index.
 
@@ -151,13 +149,10 @@ The search API has the following limitations:
 Any combination involving **messages**, **events**, Sharepoint and OneDrive types , or **externalItem** is currently not supported.  
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
-<!--todosearchAPI nmoreauteam Fix the link to ContentSource  pls provide the content source url--->
 
 - The search API does not support custom sort for **message**, **event** or  **externalItem**.
 
 - The search API does not support aggregations for **message**, **event**, **drive**, or **externalItem**.
-
-<!---TODOSEARCHAPI Make a pass on the spec to catch any big current limitations--->
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

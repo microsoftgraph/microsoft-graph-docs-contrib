@@ -8,21 +8,13 @@ ms.prod: "search"
 
 # Refine search results using aggregations
 
-TODOSEARCHAPI@TingTing Can you please take a stab at this page describing the key scenario for Sharepoint---
-- One example from sharepoint
-- Document the known limitations
-- The whole page below was copied from the Sharepoint File sample page. You should use the same structure. https://docs.microsoft.com/graph/search-concept-files
-ENDTODO
-
-TODO : Define aggregations and the various possibilities
-Note that this page will be containing all the API details. So we should focus here on the key scenarios, not the specific API properties.
+Aggregation enable you to enrich search results by providing a representation of how the results are distributed in the index. 
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
-## Examples
+## Example 1 : Request aggregations for a string property 
 
-### Example 1 : Request aggregations for a string property 
-#### Request
+### Request
 
 ```HTTP
 POST /search/query
@@ -68,9 +60,8 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
 
-<!---TODO nmoreau team Include one example of externalItem response.-->
 ```json
 {
     "@odata.type": "#microsoft.graph.searchResponse",
@@ -125,8 +116,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2 : Request aggregations for a numeric value
-#### Request
+## Example 2 : Request aggregations for a numeric value
+
+### Request
 
 ```HTTP
 POST /search/query
@@ -175,9 +167,8 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
 
-<!---TODO nmoreau team Include one example of externalItem response.-->
 ```json
 {
     "@odata.type": "#microsoft.graph.searchResponse",
@@ -222,7 +213,7 @@ Content-Type: application/json
 
 ## Known limitations
 
-TODOSEARCHAPI
+- Aggregation are only supported for SharePoint or OneDrive items. They are not supported for **externalItems, messages, events**.
 
 ## Next steps
 

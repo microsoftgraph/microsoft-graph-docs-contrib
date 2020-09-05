@@ -56,10 +56,10 @@ If successful, this method returns `HTTP 200 OK` response code and a [searchResp
 
 - Search [mail messages](/graph/search-concept-messages)
 - Search [calendar events](/graph/search-concept-events)
-- Search [files](/graph/search-concept-files)
-- Search [custom types (Connectors)](/graph/search-concept-custom-types) data
-
-@TODOSEARCHAPI-Include the links to all the samples
+- Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
+- Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
+- [Sort](/graph/search-concept-sort) search results
+- Use [aggregations](/graph/search-concept-aggregations) to refine search results
 
 ## Examples
 
