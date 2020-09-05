@@ -59,6 +59,16 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |isMembershipLimitedToOwners|Boolean|If set to `true`, the team is currently in the owner-only team membership state and not accessible by other team members, such as students.|
 |createdDateTime|dateTimeOffset|Read only. Timestamp at which the team was created.|
 
+### Instance attributes
+
+Instance attributes are properties with special behaviors. These properties are temporary and either a) define behavior the service should perform or b) provide short-term property values, like a download URL for an item that expires.
+
+| Property name| Type   | Description
+|:-----------------------|:-------|:-------------------------|
+|@microsoft.graph.teamCreationMode|string|Indicates the team is in migration state and is currently being used for migration purposes. It accepts one value: `migration`.|
+
+For a POST request example, see [Request(create team in migration state)](https://github.com/MicrosoftDocs/msteams-docs/blob/add-import-messages/msteams-platform/graph-api/import-messages/import-external-messages-to-teams.md#request-create-team-in-migration-state).
+
 ## Relationships
 
 | Relationship | Type | Description |
@@ -72,16 +82,6 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| The general channel for the team. | 
 |schedule|[schedule](schedule.md)| The schedule of shifts for this team.|
 |template|[teamsTemplate](teamstemplate.md)| The template this team was created from. See [available templates](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-templates). |
-
-## Instance attributes
-
-Instance attributes are properties with special behaviors. These properties are temporary and either a) define behavior the service should perform or b) provide short-term property values, like a download URL for an item that expires.
-
-| Property name| Type   | Description
-|:-----------------------|:-------|:-------------------------|
-|@microsoft.graph.teamCreationMode|string|Indicates the team is in migration state and is currently being used for migration purposes. It accepts one value: `migration`.|
-
-For a POST request example, see [Request(create team in migration state)](https://github.com/MicrosoftDocs/msteams-docs/blob/add-import-messages/msteams-platform/graph-api/import-messages/import-external-messages-to-teams.md#request-create-team-in-migration-state).
 
 ## JSON representation
 
