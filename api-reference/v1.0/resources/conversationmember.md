@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a user in a [team](team.md).
 See also [aadUserConversationMember](aaduserconversationmember.md).
 
