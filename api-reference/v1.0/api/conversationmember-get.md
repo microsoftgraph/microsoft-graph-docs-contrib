@@ -67,7 +67,6 @@ Here is an example of the request.
 }-->
 
 ```msgraph-interactive
-
 GET https://graph.microsoft.com/V1.0/chats/{id}/members/{id}
 ```
 
