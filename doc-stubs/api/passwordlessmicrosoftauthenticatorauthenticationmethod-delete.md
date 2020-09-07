@@ -10,14 +10,14 @@ doc_type: "apiPageType"
 # Delete passwordlessMicrosoftAuthenticatorAuthenticationMethod
 Namespace: microsoft.graph
 
-Deletes a [passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) object.
+Deletes a user's [Paswordless Phone Sign-in with Microsoft Authenticator method](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions acting on self (from most to least privileged)|Permissions acting on others (from least to most privileged)|
 |:---|:---|:--|
-|Delegated (work or school account)|Not supported.|UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All
+|Delegated (work or school account)|Not supported.|UserAuthenticationMethod.ReadWrite.All
 |Delegated (personal Microsoft account)|Not supported.|Not supported.
 |Application|Not Supported.|Not supported.
 
@@ -35,13 +35,13 @@ For delegated scenarios where an admin is acting on another user, the admin need
 }
 -->
 ``` http
-DELETE /user/authentication/passwordlessMicrosoftAuthenticatorMethods/{passwordlessMicrosoftAuthenticatorAuthenticationMethodId}
+DELETE /users/{id}/authentication/passwordlessMicrosoftAuthenticatorMethods/{id}
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}|
 
 ## Request body
 Do not supply a request body for this method.
@@ -59,7 +59,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/user/authentication/passwordlessMicrosoftAuthenticatorMethods/{passwordlessMicrosoftAuthenticatorAuthenticationMethodId}
+DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/passwordlessMicrosoftAuthenticatorMethods/R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1
 ```
 
 
