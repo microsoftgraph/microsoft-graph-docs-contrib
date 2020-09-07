@@ -1,10 +1,10 @@
 ---
 title: "Delete passwordlessMicrosoftAuthenticatorAuthenticationMethod"
 description: "Deletes a passwordlessMicrosoftAuthenticatorAuthenticationMethod object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: apiPageType
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # Delete passwordlessMicrosoftAuthenticatorAuthenticationMethod
@@ -15,11 +15,18 @@ Deletes a [passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Permission type|Permissions acting on self (from most to least privileged)|Permissions acting on others (from least to most privileged)|
+|:---|:---|:--|
+|Delegated (work or school account)|Not supported.|UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All
+|Delegated (personal Microsoft account)|Not supported.|Not supported.
+|Application|Not Supported.|Not supported.
+
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global admin
+* Global reader
+* Privileged authentication admin
+* Authentication admin
 
 ## HTTP request
 

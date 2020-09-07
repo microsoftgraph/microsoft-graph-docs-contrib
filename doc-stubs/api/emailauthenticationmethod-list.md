@@ -1,25 +1,32 @@
 ---
 title: "List emailAuthenticationMethods"
 description: "Get a list of the emailAuthenticationMethod objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: apiPageType
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # List emailAuthenticationMethods
 Namespace: microsoft.graph
 
-Get a list of the [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) objects and their properties.
+Get a list of the [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) objects and their properties. This call will only return a single object as only one email method can be set on users.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Permission type|Permissions acting on self (from most to least privileged)|Permissions acting on others (from least to most privileged)|
+|:---|:---|:--|
+|Delegated (work or school account)|UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All|UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All
+|Delegated (personal Microsoft account)|Not supported.|Not supported.
+|Application|Not Supported.|Not supported.
+
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global admin
+* Global reader
+* Privileged authentication admin
+* Authentication admin
 
 ## HTTP request
 
@@ -28,16 +35,17 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /user/authentication/emailMethods
+GET /me/authentication/emailMethods
+GET /users/{id}/authentication/emailMethods
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support optional query parameters to customize the response.
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}|
 
 ## Request body
 Do not supply a request body for this method.
@@ -55,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/authentication/emailMethods
+GET https://graph.microsoft.com/beta/me/authentication/emailMethods
 ```
 
 
@@ -74,9 +82,8 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.emailAuthenticationMethod",
-      "id": "2fb54cba-4cba-2fb5-ba4c-b52fba4cb52f",
-      "emailAddress": "String"
+      "id": "3ddfcfc8-9383-446f-83cc-3ab9be4be18f",
+      "emailAddress": "Kim@contoso.com"
     }
   ]
 }

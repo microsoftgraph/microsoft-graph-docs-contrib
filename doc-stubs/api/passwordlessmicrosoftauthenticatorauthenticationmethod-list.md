@@ -1,25 +1,32 @@
 ---
 title: "List passwordlessMicrosoftAuthenticatorAuthenticationMethods"
-description: "Get a list of the passwordlessMicrosoftAuthenticatorAuthenticationMethod objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Retrieve a list of the passwordlessMicrosoftAuthenticatorAuthenticationMethod objects and their properties."
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: apiPageType
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # List passwordlessMicrosoftAuthenticatorAuthenticationMethods
 Namespace: microsoft.graph
 
-Get a list of the [passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) objects and their properties.
+Retrieve a list of the [passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Permission type|Permissions acting on self (from most to least privileged)|Permissions acting on others (from least to most privileged)|
+|:---|:---|:--|
+|Delegated (work or school account)|UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All|UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All
+|Delegated (personal Microsoft account)|Not supported.|Not supported.
+|Application|Not Supported.|Not supported.
+
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global admin
+* Global reader
+* Privileged authentication admin
+* Authentication admin
 
 ## HTTP request
 
@@ -28,16 +35,17 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /user/authentication/passwordlessMicrosoftAuthenticatorMethods
+GET /me/authentication/passwordlessMicrosoftAuthenticatorMethods
+GET /users/{id}/authentication/passwordlessMicrosoftAuthenticatorMethods
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support optional query parameters to customize the response.
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}|
 
 ## Request body
 Do not supply a request body for this method.
@@ -55,11 +63,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/authentication/passwordlessMicrosoftAuthenticatorMethods
+GET https://graph.microsoft.com/beta/me/authentication/passwordlessMicrosoftAuthenticatorMethods
 ```
 
 
 ### Response
+The following is an example of the response.
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -74,10 +84,14 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethod",
-      "id": "ef94ec27-ec27-ef94-27ec-94ef27ec94ef",
-      "displayName": "String",
-      "creationDateTime": "String (timestamp)"
+      "id": "R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1",
+      "displayName": "My mobile phone",
+      "creationDateTime": "2020-09-02T04:16:49Z"
+    },
+    {
+      "id": "J18B378Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJGM1",
+      "displayName": "My tablet",
+      "creationDateTime": "2020-09-02T03:36:19Z"
     }
   ]
 }

@@ -1,25 +1,32 @@
 ---
 title: "List fido2AuthenticationMethod"
-description: "Get a list of the fido2AuthenticationMethod objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Retrieve a list of the fido2AuthenticationMethod objects and their properties."
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List fido2AuthenticationMethod
 Namespace: microsoft.graph
 
-Get a list of the [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) objects and their properties.
+Retrieve a list of the [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Permission type|Permissions acting on self (from most to least privileged)|Permissions acting on others (from least to most privileged)|
+|:---|:---|:--|
+|Delegated (work or school account)|UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All|UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All
+|Delegated (personal Microsoft account)|Not supported.|Not supported.
+|Application|Not Supported.|Not supported.
+
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global admin
+* Global reader
+* Privileged authentication admin
+* Authentication admin
 
 ## HTTP request
 
@@ -28,16 +35,17 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /user/authentication/fido2Methods
+GET /me/authentication/fido2Methods
+GET /users/{id}/authentication/fido2Methods
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support optional query parameters to customize the response.
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}|
 
 ## Request body
 Do not supply a request body for this method.
@@ -55,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/authentication/fido2Methods
+GET https://graph.microsoft.com/beta/me/authentication/fido2Methods
 ```
 
 
@@ -74,18 +82,26 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.fido2AuthenticationMethod",
-      "id": "5cccc189-c189-5ccc-89c1-cc5c89c1cc5c",
-      "displayName": "String",
-      "creationDateTime": "String (timestamp)",
-      "aaGuid": "String",
-      "model": "String",
+      "id": "-2_GRUg2-HYz6_1YG4YRAQ2",
+      "displayName": "Red key",
+      "creationDateTime": "2020-08-10T06:44:09Z",
+      "aaGuid": "2fc0579f-8113-47ea-b116-555a8db9202a",
+      "model": "NFC key",
       "attestationCertificates": [
-        "String"
+          "dbe793efdf1945e2df25d93653a1e8a3268a9075"
       ],
-      "attestationLevel": "String"
+      "attestationLevel": "attested"
+    },
+    {
+      "id": "_jpuR-TGZgk6aQCLF3BQjA2",
+      "displayName": "Blue key",
+      "creationDateTime": "2020-08-10T06:25:38Z",
+      "aaGuid": "c5ef55ff-ad9a-4b9f-b580-ababafe026d0",
+      "model": "USB key",
+      "attestationCertificates": [
+          "b479e7652167f574296e76bfa76731b8ccd22ed7"
+      ],
+      "attestationLevel": "attested"
     }
-  ]
-}
 ```
 
