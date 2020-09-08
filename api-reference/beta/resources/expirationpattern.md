@@ -21,7 +21,16 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |:-------------|:------------|:------------|
 |endDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
 |duration|Duration|The requestor's desired duration of access. If specified in a request, endDateTime should not be present.|
-|type|[expirationPatternType](expirationpatterntype.md)|The requestor's desired expiration pattern type.|
+|type|expirationPatternType|The requestor's desired expiration pattern type.|
+
+### expirationPatternType values
+
+| Member | Value| Description |
+|:---------------|:--------|:----------|
+|notSpecified|0|No expiration schedule was specified.|
+|noExpiration|1|The requestor did not wish the access to expire.|
+|afterDateTime|2|Access will expire after a specified date and time.|
+|afterDuration|3|Access will expire after a specified duration relative to access being granted.|
 
 ## JSON representation
 
