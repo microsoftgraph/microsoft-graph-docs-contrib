@@ -85,13 +85,11 @@ Content-type: application/json
         "/external/connections/connectionfriendlyname"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso product"
-        }
+        "queryString":"contoso product"
       },
       "from": 0,
       "size": 25,
-      "stored_fields": [
+      "fields": [
         "title",
         "description"
       ]
@@ -143,10 +141,10 @@ Content-type: application/json
         {
           "hits": [
             {
-              "_id": "1",
-              "_score": 1,              
-              "_summary": "_summary-value",
-              "_source": "The source field will contain the underlying graph entity part of the response"
+              "hitId": "1",
+              "rank": 1,
+              "summary": "_summary-value",
+              "resource": "The source field will contain the underlying graph entity part of the response"
             }
           ],
           "total": 47,

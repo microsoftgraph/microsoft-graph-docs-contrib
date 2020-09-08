@@ -24,7 +24,7 @@ TODOSEARCHAPI - Bug 1653398
 
 - The **entityTypes** property as `externalItem`
 
-- The **stored_fields** property to include the fields in the external item you want to retrieve
+- The **fields** property to include the fields in the external item you want to retrieve
 
 ## Example
 
@@ -49,13 +49,11 @@ Content-Type: application/json
           "/external/connections/azuresqlconnector2"
       ],
       "query": {
-        "query_string": {
-          "query": "yang"
-        }
+        "queryString": "yang"
       },
       "from": 0,
       "size": 25,
-      "stored_fields": [
+      "fields": [
         "BusinessEntityID",
         "firstName",
         "lastName"
@@ -79,11 +77,11 @@ Content-Type: application/json
           "moreResultsAvailable": false,
           "hits": [
             {
-              "_id": "AAMkADc0NDNlNTE0",
-              "_score": 1,
-              "_summary": "<ddd/>",
-              "_contentSource": "/external/connections/azuresqlconnector",
-              "_source": {
+              "hitId": "AAMkADc0NDNlNTE0",
+              "rank": 1,
+              "summary": "<ddd/>",
+              "contentSource": "/external/connections/azuresqlconnector",
+              "resource": {
                 "@odata.type": "#microsoft.graph.externalItem",
                 "properties": {
                   "businessEntityID": 20704,
@@ -93,11 +91,11 @@ Content-Type: application/json
               }
             },
            {
-              "_id": "AQMkADg3M2I3YWMyLTEwZ",
-              "_score": 2,
-              "_summary": "<ddd/>",
-              "_contentSource": "/external/connections/azuresqlconnector2",
-              "_source": {
+              "hitId": "AQMkADg3M2I3YWMyLTEwZ",
+              "rank": 2,
+              "summary": "<ddd/>",
+              "contentSource": "/external/connections/azuresqlconnector2",
+              "resource": {
                 "@odata.type": "#microsoft.graph.externalItem",
                 "properties": {
                   "businessEntityID": 20704,
@@ -117,7 +115,7 @@ Content-Type: application/json
 
 ## Known limitations
 
-- You must specify the **stored_fields** property to get retrievable fields in the search schema.
+- You must specify the **fields** property to get retrievable fields in the search schema.
 
 ## Next steps
 

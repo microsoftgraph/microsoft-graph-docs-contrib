@@ -41,9 +41,7 @@ Content-Type: application/json
         "message"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso"
-        }
+        "queryString": "contoso"
       },
       "from": 0,
       "size": 25
@@ -54,7 +52,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response, which contains one message that matches the search criterion. 
+The following is an example of the response, which contains one message that matches the search criterion.
 
 ```json
 {
@@ -70,10 +68,10 @@ The following is an example of the response, which contains one message that mat
           "moreResultsAvailable": false,
           "hits": [
             {
-              "_id": "ptWLQ4o6HYpQg8xmAAATzOzRAAA=",
-              "_score": 1,
-              "_summary": "Here is a summary of your messages from last week",
-              "_source": {
+              "hitId": "ptWLQ4o6HYpQg8xmAAATzOzRAAA=",
+              "rank": 1,
+              "summary": "Here is a summary of your messages from last week",
+              "resource": {
                 "@odata.type": "#microsoft.graph.message",
                 "createdDateTime": "2019-10-07T10:00:08Z",
                 "lastModifiedDateTime": "2019-10-07T10:00:11Z",
@@ -132,9 +130,7 @@ Content-Type: application/json
         "message"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso"
-        }
+        "queryString": "contoso"
       },
       "from": 0,
       "size": 15,

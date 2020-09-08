@@ -21,7 +21,7 @@ Represents a search query that contains search terms and optional filters.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|query_string|[searchQueryString](searchquerystring.md)|The search query containing the search terms.|
+|queryString|String|The search query containing the search terms.|
 
 ## JSON representation
 
@@ -38,7 +38,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "query_string": {"@odata.type": "microsoft.graph.searchQueryString"}
+  "queryString": {"String"}
 }
 ```
 

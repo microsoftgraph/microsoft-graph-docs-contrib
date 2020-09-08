@@ -21,10 +21,11 @@ Represent a single result within the list of search results.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|_id|String|The internal identifier for the item.|
-|_score|Int32|The score or the order of the result.|
-|_summary|String|A summary of the result (if summary is available).|
-|_source|[entity](entity.md)|The underlying Graph representation of the search result.|
+|hitId|String|The internal identifier for the item.|
+|rank|Int32|The rank or the order of the result.|
+|summary|String|A summary of the result (if summary is available).|
+|contentSource|String|The name of the contentSource which the **externalItem** is part of .|
+|resource|[entity](entity.md)|The underlying Graph representation of the search result.|
 
 ## JSON representation
 
@@ -41,10 +42,11 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "_id": "String",
-  "_score": 1024,
-  "_summary": "String",
-  "_source": { "@odata.type": "microsoft.graph.entity" }
+  "_hitId": "String",
+  "rank": 1,
+  "summary": "String",
+  "contentSource": "String",
+  "resource": { "@odata.type": "microsoft.graph.entity" }
 }
 ```
 

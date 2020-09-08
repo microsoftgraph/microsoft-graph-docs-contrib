@@ -29,9 +29,7 @@ Content-Type: application/json
           "driveItem"
       ],
       "query": {
-          "query_string": {
-              "query": "test"
-          }
+          "queryString": "test"
       },
       "from": 0,
       "size": 25,
@@ -133,9 +131,7 @@ Content-Type: application/json
                 "driveItem"
             ],
             "query": {
-                "query_string": {
-                    "query": "test"
-                }
+                "queryString": "test"
             },
             "from": 0,
             "size": 10,

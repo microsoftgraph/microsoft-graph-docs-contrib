@@ -26,7 +26,7 @@ The search request to be sent to the query endpoint.
 |query|[searchQuery](searchquery.md)|Contains the query terms.|
 |from|Int32|Specifies the offset for the search results. Offset 0 returns the very first result.|
 |size|Int32|The size of the page to be retrieved.|
-|stored_fields|String collection |Contains the fields to be returned for earch _so urces object. Note this is applicable for all entityTypes, such as `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`.|
+|fields|String collection |Contains the fields to be returned for earch _so urces object. Note this is applicable for all entityTypes, such as `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`.|
 |sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results.|
 |aggregations|[aggregationOption](aggregationOption.md) collection|Specifies which aggregations (also known as refiners) to be retuned alongside the search results.|
 |enableTopResults|Boolean|This triggers hybrid sort for messages : the first 3 messages are the most relevant<br>. This is only applicable for entityType=`message`.|
@@ -51,7 +51,7 @@ The following is a JSON representation of the resource.
   "query": {"@odata.type": "microsoft.graph.searchQuery"},
   "from": 1024,
   "size": 1024,
-  "stored_fields": ["String"],
+  "fields": ["String"],
   "sortProperties": ["@odata.type": "microsoft.graph.sortProperty"],
   "aggregations": ["@odata.type": "microsoft.graph.aggregationOption"],
   "enableTopResults": true

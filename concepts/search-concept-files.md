@@ -33,9 +33,7 @@ Content-Type: application/json
         "driveItem"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso"
-        }
+        "queryString": "contoso"
       }
     }
   ]
@@ -58,10 +56,10 @@ Content-Type: application/json
           "moreResultsAvailable": false,
           "hits": [
             {
-              "_id": "FlULeN/ui/1GjLx1rUfio5UAAEl",
-              "_score": 1,
-              "_summary": "<c0>Contoso</c0> Detailed Design <ddd/>",
-              "_source": {
+              "hitId": "FlULeN/ui/1GjLx1rUfio5UAAEl",
+              "rank": 1,
+              "summary": "<c0>Contoso</c0> Detailed Design <ddd/>",
+              "resource": {
                 "@odata.type": "#microsoft.graph.driveItem",
                 "createdDateTime": "2019-06-10T06:37:43Z",
                 "lastModifiedDateTime": "2019-06-10T06:37:43Z",
@@ -111,9 +109,7 @@ Content-Type: application/json
         "listItem"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso"
-        }
+        "queryString": "contoso"
       }
     }
   ]
@@ -136,10 +132,10 @@ Content-Type: application/json
           "moreResultsAvailable": false,
           "hits": [
             {
-              "_id": "FlULeN/ui/1GjLx1rUfio5UAAEl",
-              "_score": 1,
-              "_summary": "",
-              "_source": {
+              "hitId": "FlULeN/ui/1GjLx1rUfio5UAAEl",
+              "rank": 1,
+              "summary": "",
+              "resource": {
                 "@odata.type": "#microsoft.graph.listItem",
                 "createdDateTime": "2019-06-10T06:37:43Z",
                 "lastModifiedDateTime": "2019-06-10T06:37:43Z",
@@ -185,9 +181,7 @@ Content-Type: application/json
         "site"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso"
-        }
+        "queryString": "contoso"
       }
     }
   ]
@@ -210,10 +204,10 @@ Content-Type: application/json
           "moreResultsAvailable": false,
           "hits": [
             {
-              "_id": "contoso.sharepoint.com,6598ee0b-0f5f-4416-a0ae-66d864efb43a,60024ce8-e74d-4d63-a939-ad00cd738670",
-              "_score": 1,
-              "_summary": "",
-              "_source": {
+              "hitId": "contoso.sharepoint.com,6598ee0b-0f5f-4416-a0ae-66d864efb43a,60024ce8-e74d-4d63-a939-ad00cd738670",
+              "rank": 1,
+              "summary": "",
+              "resource": {
                 "@odata.type": "#microsoft.graph.site",
                 "id": "contoso.sharepoint.com,6598ee0b-0f5f-4416-a0ae-66d864efb43a,60024ce8-e74d-4d63-a939-ad00cd738670",
                 "createdDateTime": "2019-06-10T06:37:43Z",
@@ -232,7 +226,7 @@ Content-Type: application/json
 
 ## Specify select properties
 
-You can specify the fields you want back in the response for the **_source**. This is a way to either trim down the response over the wire, or to request some specific properties not in the out of the box schema.
+You can specify the fields you want back in the response for the **resource**. This is a way to either trim down the response over the wire, or to request some specific properties not in the out of the box schema.
 
 Note that property selection is only available for **listItem** since this is the only entity in Graph that support custom properties.
 
@@ -253,15 +247,12 @@ Content-Type: application/json
         "listItem"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso"
-        }
-      }
-      ,
-        "stored_fields": [
+        "queryString": "contoso"
+      },
+      "fields": [
           "title",
           "contentclass",
-        ]
+      ]
     }
   ]
 }
@@ -283,10 +274,10 @@ Content-Type: application/json
           "moreResultsAvailable": false,
           "hits": [
             {
-              "_id": "contoso.sharepoint.com,6598ee0b-0f5f-4416-a0ae-66d864efb43a,60024ce8-e74d-4d63-a939-ad00cd738670",
-              "_score": 1,
-              "_summary": "",
-              "_source": {
+              "hitId": "contoso.sharepoint.com,6598ee0b-0f5f-4416-a0ae-66d864efb43a,60024ce8-e74d-4d63-a939-ad00cd738670",
+              "rank": 1,
+              "summary": "",
+              "resource": {
                 "@odata.type": "#microsoft.graph.listItem",
                 "createdDateTime": "2019-06-10T06:37:43Z",
                 "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/contoso-designs.docx",

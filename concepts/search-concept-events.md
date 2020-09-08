@@ -31,9 +31,7 @@ Content-Type: application/json
         "event"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso"
-        }
+        "queryString":"contoso"
       },
       "from": 0,
       "size": 25
