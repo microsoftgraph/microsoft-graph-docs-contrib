@@ -1,25 +1,32 @@
 ---
 title: "Get emailAuthenticationMethod"
 description: "Read the properties and relationships of an emailAuthenticationMethod object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: apiPageType
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # Get emailAuthenticationMethod
 Namespace: microsoft.graph
 
-Read the properties and relationships of an [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object.
+Retrieve a user's single [email Authentication Method](../resources/emailauthenticationmethod.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Permission type|Permissions acting on self (from most to least privileged)|Permissions acting on others (from least to most privileged)|
+|:---|:---|:--|
+|Delegated (work or school account)|UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All|UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All
+|Delegated (personal Microsoft account)|Not supported.|Not supported.
+|Application|Not supported.|Not supported.
+
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global admin
+* Global reader
+* Privileged authentication admin
+* Authentication admin
 
 ## HTTP request
 
@@ -28,11 +35,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /user/authentication/emailMethods/{emailAuthenticationMethodId}
+GET /me/authentication/emailMethods/{id}
+GET /users/{id}/authentication/emailMethods/{id}
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -44,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object in the response body.
 
 ## Examples
 
@@ -55,11 +60,13 @@ If successful, this method returns a `200 OK` response code and an [emailAuthent
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/authentication/emailMethods/{emailAuthenticationMethodId}
+GET https://graph.microsoft.com/beta/me/authentication/emailMethods/3ddfcfc8-9383-446f-83cc-3ab9be4be18f
 ```
 
 
 ### Response
+The following is an example of the response.
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -73,9 +80,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 {
   "value": {
-    "@odata.type": "#microsoft.graph.emailAuthenticationMethod",
-    "id": "2fb54cba-4cba-2fb5-ba4c-b52fba4cb52f",
-    "emailAddress": "String"
+      "id": "3ddfcfc8-9383-446f-83cc-3ab9be4be18f",
+      "emailAddress": "Kim@contoso.com"
   }
 }
 ```

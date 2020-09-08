@@ -1,25 +1,32 @@
 ---
 title: "Get fido2AuthenticationMethod"
 description: "Read the properties and relationships of a fido2AuthenticationMethod object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: apiPageType
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # Get fido2AuthenticationMethod
 Namespace: microsoft.graph
 
-Read the properties and relationships of a [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) object.
+Retrieve a user's single [FIDO2 Security Key Authentication Method](../resources/fido2authenticationmethod.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Permission type|Permissions acting on self (from most to least privileged)|Permissions acting on others (from least to most privileged)|
+|:---|:---|:--|
+|Delegated (work or school account)|UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All|UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All
+|Delegated (personal Microsoft account)|Not supported.|Not supported.
+|Application|Not supported.|Not supported.
+
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global admin
+* Global reader
+* Privileged authentication admin
+* Authentication admin
 
 ## HTTP request
 
@@ -28,11 +35,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /user/authentication/fido2Methods/{fido2AuthenticationMethodId}
+GET /me/authentication/fido2AuthenticationMethod/{id}
+GET /users/{id}/authentication/fido2AuthenticationMethod/{id}
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -44,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) object in the response body.
 
 ## Examples
 
@@ -55,11 +60,13 @@ If successful, this method returns a `200 OK` response code and a [fido2Authenti
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/authentication/fido2Methods/{fido2AuthenticationMethodId}
+GET https://graph.microsoft.com/beta/me/authentication/fido2AuthenticationMethod/-2_GRUg2-HYz6_1YG4YRAQ2
 ```
 
 
 ### Response
+The following is an example of the response.
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -73,16 +80,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 {
   "value": {
-    "@odata.type": "#microsoft.graph.fido2AuthenticationMethod",
-    "id": "5cccc189-c189-5ccc-89c1-cc5c89c1cc5c",
-    "displayName": "String",
-    "creationDateTime": "String (timestamp)",
-    "aaGuid": "String",
-    "model": "String",
-    "attestationCertificates": [
-      "String"
-    ],
-    "attestationLevel": "String"
+      "id": "-2_GRUg2-HYz6_1YG4YRAQ2",
+      "displayName": "Red key",
+      "creationDateTime": "2020-08-10T06:44:09Z",
+      "aaGuid": "2fc0579f-8113-47ea-b116-555a8db9202a",
+      "model": "NFC key",
+      "attestationCertificates": [
+          "dbe793efdf1945e2df25d93653a1e8a3268a9075"
+      ],
+      "attestationLevel": "attested"
   }
 }
 ```
