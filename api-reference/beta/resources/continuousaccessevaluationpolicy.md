@@ -28,7 +28,7 @@ Continuous Access Evaluation (CAE) manages authentication sessions in real time.
 |displayName|String|Continuous Access Evaluation. Read-only.|
 |groups|String collection|The collection of group identifiers in scope for evaluation. All groups are in scope when the collection is empty.|
 |id|String|Specifies the identifier of a continuousAccessEvaluationPolicy object. Read-only.|
-|isEnabled|Boolean|True to indicate if continous access evalulation should be performed.|
+|isEnabled|Boolean| `true` to indicate whether continuous access evaluation should be performed; otherwise `false`. |
 |users|String collection|The collection of user identifiers in scope for evaluation. All users are in scope when the collection is empty.|
 
 ## Relationships
