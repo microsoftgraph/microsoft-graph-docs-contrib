@@ -29,7 +29,7 @@ The entitlement management resource types include:
 - [connectedOrganization](connectedorganization.md): A connected organization for external users who can request access.
 - [entitlementManagementSettings](entitlementmanagementsettings.md): Tenant-wide settings for Azure AD entitlement management.
 
-The tutorial on how to [create an access package using Microsoft Graph APIs](../../../concepts/tutorial-access-package-api.md) illustrates how to use entitlement management to  create a package of resources that internal users can self-service request.
+The tutorial on how to [create an access package using Microsoft Graph APIs](https://docs.microsoft.com/graph/tutorial-access-package-api) illustrates how to use entitlement management to  create a package of resources that internal users can self-service request.
 
 Note that the entitlement management feature, including the API, is included in Azure AD Premium P2. The tenant where entitlement management is being used must have a valid purchased or trial Azure AD Premium P2 or EMS E5 subscription.
 
