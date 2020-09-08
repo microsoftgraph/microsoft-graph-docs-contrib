@@ -110,6 +110,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |signInAudience|String| Specifies what Microsoft accounts are supported for the associated application. Read-only.|
 |tags|String collection| Custom strings that can be used to categorize and identify the service principal. Not nullable. |
 |tokenEncryptionKeyId|String|Specifies the keyId of a public key from the keyCredentials collection. When configured, Azure AD issues tokens for this application encrypted using the key specified by this property. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.|
+| verifiedPublisher          | String                            | Specifies the verified publisher of the application which this service principal represents.
 
 ## Relationships
 
@@ -181,7 +182,8 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
   "signInAudience": "String",
   "tags": ["string"],
   "tokenEncryptionKeyId": "String",
-  "useCustomTokenSigningKey": false
+  "useCustomTokenSigningKey": false,
+  "verifiedPublisher": ["string"]
 }
 ```
 
