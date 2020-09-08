@@ -1,25 +1,32 @@
 ---
 title: "Create emailAuthenticationMethod"
 description: "Create a new emailAuthenticationMethod object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: apiPageType
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # Create emailAuthenticationMethod
 Namespace: microsoft.graph
 
-Create a new [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object.
+Set a user's [email Authentication Method](../resources/emailauthenticationmethod.md) object. Email authentication is a Self-service Password Reset method. A user may only have one email authentication method.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Permission type|Permissions acting on self (from most to least privileged)|Permissions acting on others (from least to most privileged)|
+|:---|:---|:--|
+|Delegated (work or school account)|Not supported.|UserAuthenticationMethod.ReadWrite.All
+|Delegated (personal Microsoft account)|Not supported.|Not supported.
+|Application|Not supported.|Not supported.
+
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global admin
+* Global reader
+* Privileged authentication admin
+* Authentication admin
 
 ## HTTP request
 
@@ -28,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /user/authentication/emailMethods
+POST /users/{id}/authentication/emailMethods
 ```
 
 ## Request headers
@@ -38,20 +45,19 @@ POST /user/authentication/emailMethods
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object.
+In the request body, supply a JSON representation of the [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object with the desired email address.
 
 The following table shows the properties that are required when you create the [emailAuthenticationMethod](../resources/emailauthenticationmethod.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|emailAddress|String|**TODO: Add Description**|
+|emailAddress|String|Email address|
 
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object in the response body.
 
 ## Examples
 
@@ -62,18 +68,18 @@ If successful, this method returns a `201 Created` response code and an [emailAu
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/user/authentication/emailMethods
+POST https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/emailMethods
 Content-Type: application/json
-Content-length: 96
 
 {
-  "@odata.type": "#microsoft.graph.emailAuthenticationMethod",
-  "emailAddress": "String"
+  "emailAddress": "kim@contoso.com"
 }
 ```
 
 
 ### Response
+The following is an example of the response.
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -86,9 +92,8 @@ HTTP/1.1 201 Created
 
 Content-Type: application/json
 {
-  "@odata.type": "#microsoft.graph.emailAuthenticationMethod",
-  "id": "2fb54cba-4cba-2fb5-ba4c-b52fba4cb52f",
-  "emailAddress": "String"
+  "id": "3ddfcfc8-9383-446f-83cc-3ab9be4be18f",
+  "emailAddress": "kim@contoso.com"
 }
 ```
 

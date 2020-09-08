@@ -10,7 +10,7 @@ doc_type: "apiPageType"
 # Delete emailAuthenticationMethod
 Namespace: microsoft.graph
 
-Deletes a user's [email Authentication Method](../resources/emailauthenticationmethod.md) object. Email authentication is a Self-service Password Reset method.
+Deletes a user's [email Authentication Method](../resources/emailauthenticationmethod.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
