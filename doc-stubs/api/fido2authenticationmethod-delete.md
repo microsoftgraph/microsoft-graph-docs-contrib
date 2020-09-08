@@ -1,25 +1,32 @@
 ---
 title: "Delete fido2AuthenticationMethod"
 description: "Deletes a fido2AuthenticationMethod object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: apiPageType
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # Delete fido2AuthenticationMethod
 Namespace: microsoft.graph
 
-Deletes a [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) object.
+Deletes a user's [FIDO2 Security Key Authentication Method](../resources/fido2authenticationmethod.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Permission type|Permissions acting on self (from most to least privileged)|Permissions acting on others (from least to most privileged)|
+|:---|:---|:--|
+|Delegated (work or school account)|Not supported.|UserAuthenticationMethod.ReadWrite.All
+|Delegated (personal Microsoft account)|Not supported.|Not supported.
+|Application|Not Supported.|Not supported.
+
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global admin
+* Global reader
+* Privileged authentication admin
+* Authentication admin
 
 ## HTTP request
 
@@ -28,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /user/authentication/fido2Methods/{fido2AuthenticationMethodId}
+DELETE /users/{id}/authentication/fido2Methods/{id}
 ```
 
 ## Request headers
@@ -41,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -52,12 +59,12 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/user/authentication/fido2Methods/{fido2AuthenticationMethodId}
+DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/fido2Methods/_jpuR-TGZtk6aQCLF3BQjA2
 ```
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

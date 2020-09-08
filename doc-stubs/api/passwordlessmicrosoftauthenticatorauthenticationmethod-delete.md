@@ -41,14 +41,14 @@ DELETE /users/{id}/authentication/passwordlessMicrosoftAuthenticatorMethods/{id}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}|
+|Authorization|Bearer {token}. Required.|
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -64,7 +64,7 @@ DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/pas
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
