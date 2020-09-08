@@ -17,7 +17,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Addition        | Beta and v1.0 | Added **outlookM365** and **outlook2019** property to the [emailappusageversionsusercount](/graph/api/resources/emailappusageversionsusercount?view=graph-rest-beta) entity.|
+| Addition        | Beta and v1.0 | Added the **outlookM365** and **outlook2019** properties to the [getEmailAppUsageVersionsUserCounts](/graph/api/resources/emailappusageversionsusercount?view=graph-rest-beta) entity.|
 
 ### Devices and apps | Cloud printing
 
