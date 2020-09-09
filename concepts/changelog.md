@@ -24,7 +24,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added [verified publisher](/graph/api/resources/verifiedPublisher) properties to the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) resources |
-| Addition | v1.0 | Added [setVerifiedPublisher](graph/api/application-setverifiedpublisher) and [unsetVerifiedPublisher](graph/api/application-unsetverifiedpublisher) methods to the [application](/graph/api/resources/application) resource |
+| Addition | v1.0 | Added [setVerifiedPublisher](/graph/api/application-setverifiedpublisher) and [unsetVerifiedPublisher](/graph/api/application-unsetverifiedpublisher) methods to the [application](/graph/api/resources/application) resource |
 
 ## August 2020
 
@@ -592,7 +592,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Addition | beta | Added delegated permission [EntitlementManagement.Read.All](permissions-reference.md#entitlement-management-permissions). |
 | Addition | beta | Added the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource type which controls authorization settings in Azure AD. |
 | Addition | beta | Added [verified publisher](/graph/api/resources/verifiedPublisher?view=graph-rest-beta) properties to the [application](/graph/api/resources/application?view=graph-rest-beta) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resources |
-| Addition | beta | Added [setVerifiedPublisher](graph/api/application-setverifiedpublisher?view=graph-rest-beta) and [unsetVerifiedPublisher](graph/api/application-unsetverifiedpublisher?view=graph-rest-beta) methods to the [application](/graph/api/resources/application?view=graph-rest-beta) resource |
+| Addition | beta | Added [setVerifiedPublisher](/graph/api/application-setverifiedpublisher?view=graph-rest-beta) and [unsetVerifiedPublisher](/graph/api/application-unsetverifiedpublisher?view=graph-rest-beta) methods to the [application](/graph/api/resources/application?view=graph-rest-beta) resource |
 
 ### Teamwork
 
