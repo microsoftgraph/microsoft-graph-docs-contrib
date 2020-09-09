@@ -1,7 +1,7 @@
 ---
 title: "Allow application to access online meetings on behalf of a user "
-description: "<TODO>"
-author: "frpeng"
+description: "Brief documentation of application access policy on Graph's side"
+author: "frankpeng7"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 ---
@@ -52,11 +52,11 @@ Administrators can use ApplicationAccessPolicy cmdlets to control mailbox access
 - OnlineMeetings.Read.All
 - OnlineMeetings.ReadWrite.All
 
-For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](TODO powershell doc). 
+For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/new-csapplicationaccesspolicy).
 
 ## Possible Graph API errors
 
-You might encounter the following error when an API call is denied access due to an app trying to access online meeting without application access policy configured. 
+You might encounter the following error when an API call is denied access due to an app trying to access online meeting without application access policy configured.
 
 ```json
 {
