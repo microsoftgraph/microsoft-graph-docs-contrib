@@ -1,6 +1,6 @@
 ---
 title: "Create onlineMeeting"
-description: "Create an online meeting on behalf of a user specified in the request body."
+description: "[Beta] Create an online meeting on behalf of a user specified in the request body."
 author: "ananmishr"
 localization_priority: Priority
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an online meeting on behalf of a user by using the object ID (OID) in the user token.
+Create an online meeting on behalf of a user by using the object ID (OID) in the user token (delegated permission) or request path (application permission).
 
 > **Note**: The meeting does not show up on the user's calendar.
 
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 
 > [!IMPORTANT]
-> Creating an online meeting with an application token is now available. Administrators must create an [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to create an online meeting on behalf of that user (user ID specified in the request path).
+> Creating an online meeting with an application token is now available. Administrators must create an [application access policy](/concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to create an online meeting on behalf of that user (user ID specified in the request path).
 
 ## HTTP request
 
@@ -43,15 +43,15 @@ Using application permission
 POST /users/{userId}/onlineMeetings
 ```
 
-> **Note:** `userId` is the object ID in AAD (TODO: more proper definition?)
+> **Note:** `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/concepts/cloud-communication-online-meeting-application-access-policy.md).
 
 ## Request headers
 
-| Name            | Description       | Required |
-| :-------------- | :---------------- | -------- |
-| Authorization   | Bearer {token}.   | Yes      |
-| Content-type    | application/json. | Yes      |
-| Accept-Language | Language.         | No       |
+| Name            | Description                 |
+| :-------------- | :-------------------------- |
+| Authorization   | Bearer {token}. Required.   |
+| Content-type    | application/json. Required. |
+| Accept-Language | Language. Optional.         |
 
 If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header. The default content will be in English.
 

@@ -1,6 +1,6 @@
 ---
 title: "Delete onlineMeeting"
-description: "Delete an online meeting."
+description: "[Beta] Delete an online meeting."
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -24,26 +24,31 @@ Delete an [onlineMeeting](../resources/onlinemeeting.md) object.
 | Application                            | OnlineMeetings.ReadWrite.All                |
 
 > [!IMPORTANT]
-> Deleting an online meeting with an application token is now available. Administrators must create an [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to delete an online meeting on behalf of that user (user ID specified in the reuqest path) has created.
+> Deleting an online meeting with an application token is now available. Administrators must create an [application access policy](/concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to delete an online meeting on behalf of that user (user ID specified in the reuqest path) has created.
 
 ## HTTP request
 
 Using delegated token
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{id}
+DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
 ```
 
 Using application token
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{id}
+DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
 ```
 
+> **Note:**
+>
+> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/concepts/cloud-communication-online-meeting-application-access-policy.md).
+> - `meetingId` is the `id` of an [onlineMeeting entity](../resources/onlinemeeting.md)
+
 ## Request headers
-| Name          | Description     | Required |
-| :------------ | :-------------- | -------- |
-| Authorization | Bearer {token}. | Yes      |
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 Do not supply a request body for this method.

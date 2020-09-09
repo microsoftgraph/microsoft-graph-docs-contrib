@@ -1,6 +1,6 @@
 ---
 title: "onlineMeeting: createOrGet"
-description: "Create an online meeting with a custom specified external ID. If the external ID already exists, this API will return the **onlineMeeting** object with that external ID."
+description: "[Beta] Create an online meeting with a custom specified external ID. If the external ID already exists, this API will return the **onlineMeeting** object with that external ID."
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | OnlineMeetings.ReadWrite.All                |
 
 > [!IMPORTANT]
-> Calling CreateOrGet API with an application token is now available. Administrators must create an [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to create or get an online meeting with external ID on behalf of that user (user ID specified in the request path).
+> Calling CreateOrGet API with an application token is now available. Administrators must create an [application access policy](/concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to create or get an online meeting with external ID on behalf of that user (user ID specified in the request path).
 
 ## HTTP request
 
@@ -43,12 +43,13 @@ Using application token
 POST https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/createOrGet
 ```
 
+> **Note:** `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/concepts/cloud-communication-online-meeting-application-access-policy.md).
 
 ## Request headers
-| Name          | Description       | Required |
-| :------------ | :---------------- | -------- |
-| Authorization | Bearer {token}.   | Yes      |
-| Content-type  | application/json. | Yes      |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

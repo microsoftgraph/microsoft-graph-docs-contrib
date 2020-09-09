@@ -1,6 +1,6 @@
 ---
 title: "Get onlineMeeting"
-description: "Retrieve the properties and relationships of an **online meeting** object."
+description: "[Beta] Retrieve the properties and relationships of an **online meeting** object."
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 
 > [!IMPORTANT]
-> Retrieving an online meeting with an application token is now available. Administrators must create an [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to retrieve an online meeting on behalf of that user (user ID specified in the reuqest path).
+> Retrieving an online meeting with an application token is now available. Administrators must create an [application access policy](/concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to retrieve an online meeting on behalf of that user (user ID specified in the reuqest path).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -39,18 +39,19 @@ GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
 > **Note:**
-> 
+>
 > - The `/app` path is deprecated. Going forward, use the `/communications` path.
-> - `meetingId` is the `id` of an onlineMeeting entity
+> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/concepts/cloud-communication-online-meeting-application-access-policy.md).
+> - `meetingId` is the `id` of an [onlineMeeting entity](../resources/onlinemeeting.md)
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
-| Name            | Description     | Required |
-| :-------------- | :-------------- | -------- |
-| Authorization   | Bearer {token}. | Yes      |
-| Accept-Language | Language.       | No       |
+| Name            | Description               |
+| :-------------- | :------------------------ |
+| Authorization   | Bearer {token}. Required. |
+| Accept-Language | Language. Optional.       |
 
 If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header. The default content will be in English.
 
