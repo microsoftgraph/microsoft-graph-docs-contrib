@@ -14,8 +14,10 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 
 ## September 2020: New in preview only
 
-### Search 
+### Search
+
 The Microsoft [Search API](/graph/api/resources/search-api-overview?view=graph-rest-beta) in Graph continues to bring more capabilities, primarily for SharePoint, OneDrive and Graph Connectors : 
+
 - Retrieve [additional types](/graph/api/resources/search-api-overview?view=graph-rest-beta#scope-search-based-on-entity-types) of content from SharePoint and OneDrive: **list**, **listItem**, **site**, **drive**. 
 - Scope the properties you need in the response using [selectProperties](/graph/api/resources/search-api-overview?view=graph-rest-beta#get-selected-properties). Custom properties can now be retrieved on listItems.
 - [Sort](/graph/api/resources/search-api-overview?view=graph-rest-beta#sort-search-results) search results for SharePoint and OneDrive on any sortable property
