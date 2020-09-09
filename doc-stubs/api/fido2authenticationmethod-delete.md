@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 # Delete fido2AuthenticationMethod
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Deletes a user's [FIDO2 Security Key Authentication Method](../resources/fido2authenticationmethod.md) object.
 
 ## Permissions

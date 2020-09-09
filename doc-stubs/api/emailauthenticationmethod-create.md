@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 # Create emailAuthenticationMethod
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Set a user's [email Authentication Method](../resources/emailauthenticationmethod.md) object. Email authentication is a Self-service Password Reset method. A user may only have one email authentication method.
 
 ## Permissions

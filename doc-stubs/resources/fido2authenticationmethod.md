@@ -11,6 +11,8 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 A representation of a FIDO2 security key registered to a user. FIDO2 is a sign-in authentication method.
 
 

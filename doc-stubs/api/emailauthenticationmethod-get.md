@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 # Get emailAuthenticationMethod
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve a user's single [email Authentication Method](../resources/emailauthenticationmethod.md) object.
 
 ## Permissions

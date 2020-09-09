@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 # Delete emailAuthenticationMethod
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Deletes a user's [email Authentication Method](../resources/emailauthenticationmethod.md) object.
 
 ## Permissions

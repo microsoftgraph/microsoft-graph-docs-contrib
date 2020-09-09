@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 # List emailAuthenticationMethods
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get a list of the [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) objects and their properties. This call will only return a single object as only one email method can be set on users.
 
 ## Permissions

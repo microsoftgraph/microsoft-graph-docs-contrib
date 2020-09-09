@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 # Update emailAuthenticationMethod
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update a user's email address associated with an [email Authentication Method](../resources/emailauthenticationmethod.md) object.
 
 ## Permissions

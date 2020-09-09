@@ -10,6 +10,8 @@ doc_type: apiPageType
 # List fido2AuthenticationMethod
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve a list of the [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) objects and their properties.
 
 ## Permissions

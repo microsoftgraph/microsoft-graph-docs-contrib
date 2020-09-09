@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 # Delete passwordlessMicrosoftAuthenticatorAuthenticationMethod
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Deletes a user's [Paswordless Phone Sign-in with Microsoft Authenticator method](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) object.
 
 ## Permissions

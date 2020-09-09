@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 # List passwordlessMicrosoftAuthenticatorAuthenticationMethods
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve a list of the [passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) objects and their properties.
 
 ## Permissions

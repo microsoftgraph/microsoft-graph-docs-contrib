@@ -11,6 +11,8 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 A representation of a Paswordless Phone Sign-in with Microsoft Authenticator method registered to a user.
 
 

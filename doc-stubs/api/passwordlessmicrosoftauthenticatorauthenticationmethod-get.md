@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 # Get passwordlessMicrosoftAuthenticatorAuthenticationMethod
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve a user's single [Paswordless Phone Sign-in with Microsoft Authenticator method](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) object.
 
 ## Permissions
