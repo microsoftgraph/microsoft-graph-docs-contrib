@@ -13,7 +13,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## September 2020
 
-### Reports API
+### Reports
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
