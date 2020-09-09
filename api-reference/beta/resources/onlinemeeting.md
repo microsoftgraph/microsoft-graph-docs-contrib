@@ -1,6 +1,6 @@
 ---
 title: "onlineMeeting resource type"
-description: "onlineMeeting resource type in Graph beta."
+description: "Contains information about a meeting."
 author: "ananmishr"
 localization_priority: Normal
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information about the meeting, including the URL used to join a meeting, the attendees list, and the description.
+Contains information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
 
 ## Methods
 
@@ -48,7 +48,7 @@ Contains information about the meeting, including the URL used to join a meeting
 | allowedPresenters     | onlineMeetingPresenters                       | Specifies who can be a presenter in a meeting. Possible values are listed below.                                                                                                                                                                            |
 
 > [!IMPORTANT]
-> `autoAdmittedUsers` property is obsolete. Use `lobbyBypassSettings.scope` instead for meeting option configurations.
+> The **autoAdmittedUsers** property is obsolete. Use **lobbyBypassSettings.scope** instead for meeting option configurations.
 
 ### onlineMeetingPresenters values
 
