@@ -3,7 +3,7 @@ title: "Update win32LobApp"
 description: "Update the properties of a win32LobApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -232,6 +232,8 @@ Content-Length: 2306
   "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
 }
 ```
+
+
 
 
 

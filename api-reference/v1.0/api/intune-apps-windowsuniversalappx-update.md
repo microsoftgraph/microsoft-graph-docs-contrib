@@ -3,7 +3,7 @@ title: "Update windowsUniversalAppX"
 description: "Update the properties of a windowsUniversalAppX object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -167,6 +167,8 @@ Content-Length: 1361
   "identityVersion": "Identity Version value"
 }
 ```
+
+
 
 
 

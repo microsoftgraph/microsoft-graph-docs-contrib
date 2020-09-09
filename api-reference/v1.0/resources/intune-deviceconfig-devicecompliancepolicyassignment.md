@@ -3,7 +3,7 @@ title: "deviceCompliancePolicyAssignment resource type"
 description: "Device compliance policy assignment."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -50,6 +50,7 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
 
 
 

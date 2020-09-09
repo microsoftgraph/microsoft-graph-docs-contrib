@@ -3,7 +3,7 @@ title: "Create termsAndConditions"
 description: "Create a new termsAndConditions object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -101,6 +101,8 @@ Content-Length: 445
   "version": 7
 }
 ```
+
+
 
 
 

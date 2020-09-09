@@ -3,7 +3,7 @@ title: "deviceEnrollmentConfiguration resource type"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -59,6 +59,7 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
+
 
 
 

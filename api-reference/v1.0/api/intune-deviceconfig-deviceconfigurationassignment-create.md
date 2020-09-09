@@ -3,7 +3,7 @@ title: "Create deviceConfigurationAssignment"
 description: "Create a new deviceConfigurationAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -86,6 +86,8 @@ Content-Length: 218
   }
 }
 ```
+
+
 
 
 

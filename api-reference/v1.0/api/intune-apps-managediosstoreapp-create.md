@@ -3,7 +3,7 @@ title: "Create managedIOSStoreApp"
 description: "Create a new managedIOSStoreApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -166,6 +166,8 @@ Content-Length: 1276
   }
 }
 ```
+
+
 
 
 

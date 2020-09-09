@@ -3,7 +3,7 @@ title: "deviceConfigurationDeviceActivity function"
 description: "Metadata for the device configuration device activity report"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -67,6 +67,8 @@ Content-Length: 123
   }
 }
 ```
+
+
 
 
 

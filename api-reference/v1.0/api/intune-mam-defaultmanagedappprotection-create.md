@@ -3,7 +3,7 @@ title: "Create defaultManagedAppProtection"
 description: "Create a new defaultManagedAppProtection object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -219,6 +219,8 @@ Content-Length: 2181
   "faceIdBlocked": true
 }
 ```
+
+
 
 
 

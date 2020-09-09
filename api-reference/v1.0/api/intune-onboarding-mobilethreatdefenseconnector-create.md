@@ -3,7 +3,7 @@ title: "Create mobileThreatDefenseConnector"
 description: "Create a new mobileThreatDefenseConnector object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -103,6 +103,8 @@ Content-Length: 463
   "partnerUnresponsivenessThresholdInDays": 6
 }
 ```
+
+
 
 
 

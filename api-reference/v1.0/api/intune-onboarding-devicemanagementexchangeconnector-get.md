@@ -3,7 +3,7 @@ title: "Get deviceManagementExchangeConnector"
 description: "Read properties and relationships of the deviceManagementExchangeConnector object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -79,6 +79,8 @@ Content-Length: 580
   }
 }
 ```
+
+
 
 
 

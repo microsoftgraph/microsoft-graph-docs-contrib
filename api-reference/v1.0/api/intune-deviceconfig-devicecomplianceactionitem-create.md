@@ -3,7 +3,7 @@ title: "Create deviceComplianceActionItem"
 description: "Create a new deviceComplianceActionItem object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -95,6 +95,8 @@ Content-Length: 320
   ]
 }
 ```
+
+
 
 
 

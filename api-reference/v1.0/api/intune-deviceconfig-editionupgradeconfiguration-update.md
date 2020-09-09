@@ -3,7 +3,7 @@ title: "Update editionUpgradeConfiguration"
 description: "Update the properties of a editionUpgradeConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -104,6 +104,8 @@ Content-Length: 483
   "productKey": "Product Key value"
 }
 ```
+
+
 
 
 

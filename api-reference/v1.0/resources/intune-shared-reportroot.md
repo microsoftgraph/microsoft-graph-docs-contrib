@@ -3,7 +3,7 @@ title: "reportRoot resource type"
 description: "The resource that represents an instance of History Reports."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -66,6 +66,7 @@ Content-Type: application/json
 {
 }
 ```
+
 
 
 

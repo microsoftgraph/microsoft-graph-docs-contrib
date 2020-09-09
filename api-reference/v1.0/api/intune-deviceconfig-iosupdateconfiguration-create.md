@@ -3,7 +3,7 @@ title: "Create iosUpdateConfiguration"
 description: "Create a new iosUpdateConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -108,6 +108,8 @@ Content-Length: 497
   "utcTimeOffsetInMinutes": 6
 }
 ```
+
+
 
 
 

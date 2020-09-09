@@ -3,7 +3,7 @@ title: "Update androidGeneralDeviceConfiguration"
 description: "Update the properties of a androidGeneralDeviceConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -316,6 +316,8 @@ Content-Length: 3205
   "securityRequireVerifyApps": true
 }
 ```
+
+
 
 
 

@@ -3,7 +3,7 @@ title: "policyPlatformType enum type"
 description: "Suppoorted platform types for policies."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -26,6 +26,7 @@ Suppoorted platform types for policies.
 |windows10AndLater|6|Windows 10 and later.|
 |androidWorkProfile|7|AndroidWorkProfile.|
 |all|100|All platforms.|
+
 
 
 

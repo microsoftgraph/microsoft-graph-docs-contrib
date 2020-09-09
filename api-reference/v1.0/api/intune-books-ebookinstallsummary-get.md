@@ -3,7 +3,7 @@ title: "Get eBookInstallSummary"
 description: "Read properties and relationships of the eBookInstallSummary object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -76,6 +76,8 @@ Content-Length: 320
   }
 }
 ```
+
+
 
 
 

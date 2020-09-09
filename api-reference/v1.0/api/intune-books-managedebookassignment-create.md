@@ -3,7 +3,7 @@ title: "Create managedEBookAssignment"
 description: "Create a new managedEBookAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -89,6 +89,8 @@ Content-Length: 243
   "installIntent": "required"
 }
 ```
+
+
 
 
 

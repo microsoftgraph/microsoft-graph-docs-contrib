@@ -3,7 +3,7 @@ title: "androidWorkProfileDefaultAppPermissionPolicyType enum type"
 description: "Android Work Profile default app permission policy type."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -22,6 +22,7 @@ Android Work Profile default app permission policy type.
 |prompt|1|Prompt.|
 |autoGrant|2|Auto grant.|
 |autoDeny|3|Auto deny.|
+
 
 
 

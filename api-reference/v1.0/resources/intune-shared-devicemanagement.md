@@ -3,7 +3,7 @@ title: "deviceManagement resource type"
 description: "The deviceManagement resource represents a container whose contents vary according to workflow, including:  "
 localization_priority: Normal
 author: "dougeby"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -117,6 +117,7 @@ Here is a JSON representation of the resource.
   "settings": {"@odata.type": "microsoft.graph.deviceManagementSettings"}
 }
 ```
+
 
 
 

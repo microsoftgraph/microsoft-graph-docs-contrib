@@ -3,7 +3,7 @@ title: "Create macOSOfficeSuiteApp"
 description: "Create a new macOSOfficeSuiteApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -124,6 +124,8 @@ Content-Length: 756
   "publishingState": "processing"
 }
 ```
+
+
 
 
 

@@ -3,7 +3,7 @@ title: "Get deviceConfigurationDeviceStateSummary"
 description: "Read properties and relationships of the deviceConfigurationDeviceStateSummary object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -77,6 +77,8 @@ Content-Length: 376
   }
 }
 ```
+
+
 
 
 

@@ -3,7 +3,7 @@ title: "Update windowsInformationProtectionAppLearningSummary"
 description: "Update the properties of a windowsInformationProtectionAppLearningSummary object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -88,6 +88,8 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
+
+
 
 
 

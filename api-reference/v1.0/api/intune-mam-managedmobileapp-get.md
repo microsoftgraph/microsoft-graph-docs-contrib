@@ -3,7 +3,7 @@ title: "Get managedMobileApp"
 description: "Read properties and relationships of the managedMobileApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -77,6 +77,8 @@ Content-Length: 261
   }
 }
 ```
+
+
 
 
 

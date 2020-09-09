@@ -3,7 +3,7 @@ title: "Update macOSGeneralDeviceConfiguration"
 description: "Update the properties of a macOSGeneralDeviceConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -148,6 +148,8 @@ Content-Length: 1078
   "passwordRequired": true
 }
 ```
+
+
 
 
 

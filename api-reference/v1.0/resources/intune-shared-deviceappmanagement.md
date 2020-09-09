@@ -3,7 +3,7 @@ title: "deviceAppManagement resource type"
 description: "Singleton entity that acts as a container for all device app management functionality."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -73,6 +73,7 @@ Here is a JSON representation of the resource.  Note that this is only an exampl
   "microsoftStoreForBusinessLastCompletedApplicationSyncTime": "String (timestamp)"
 }
 ```
+
 
 
 

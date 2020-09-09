@@ -3,7 +3,7 @@ title: "Update sharedPCConfiguration"
 description: "Update the properties of a sharedPCConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -140,6 +140,8 @@ Content-Length: 1032
   "maintenanceStartTime": "11:59:24.7240000"
 }
 ```
+
+
 
 
 

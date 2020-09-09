@@ -3,7 +3,7 @@ title: "Get deviceManagementPartner"
 description: "Read properties and relationships of the deviceManagementPartner object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -78,6 +78,8 @@ Content-Length: 590
   }
 }
 ```
+
+
 
 
 

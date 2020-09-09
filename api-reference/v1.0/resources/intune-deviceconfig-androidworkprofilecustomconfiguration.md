@@ -3,7 +3,7 @@ title: "androidWorkProfileCustomConfiguration resource type"
 description: "Android Work Profile custom configuration"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -76,6 +76,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
 
 
 

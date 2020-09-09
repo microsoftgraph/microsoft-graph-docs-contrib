@@ -3,7 +3,7 @@ title: "Get managedIOSLobApp"
 description: "Read properties and relationships of the managedIOSLobApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -110,6 +110,8 @@ Content-Length: 1582
   }
 }
 ```
+
+
 
 
 

@@ -3,7 +3,7 @@ title: "Create windows81CompliancePolicy"
 description: "Create a new windows81CompliancePolicy object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -125,6 +125,8 @@ Content-Length: 774
   "storageRequireEncryption": true
 }
 ```
+
+
 
 
 

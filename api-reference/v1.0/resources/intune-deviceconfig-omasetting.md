@@ -3,7 +3,7 @@ title: "omaSetting resource type"
 description: "OMA Settings definition."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -40,6 +40,7 @@ Here is a JSON representation of the resource.
   "omaUri": "String"
 }
 ```
+
 
 
 

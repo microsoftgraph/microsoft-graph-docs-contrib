@@ -3,7 +3,7 @@ title: "Create androidCustomConfiguration"
 description: "Create a new androidCustomConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -111,6 +111,8 @@ Content-Length: 574
   ]
 }
 ```
+
+
 
 
 

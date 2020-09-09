@@ -3,7 +3,7 @@ title: "Update managedIOSLobApp"
 description: "Update the properties of a managedIOSLobApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -181,6 +181,8 @@ Content-Length: 1479
   "buildNumber": "Build Number value"
 }
 ```
+
+
 
 
 

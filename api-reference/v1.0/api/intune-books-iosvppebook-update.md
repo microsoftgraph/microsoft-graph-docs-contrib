@@ -3,7 +3,7 @@ title: "Update iosVppEBook"
 description: "Update the properties of a iosVppEBook object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -140,6 +140,8 @@ Content-Length: 964
   "usedLicenseCount": 0
 }
 ```
+
+
 
 
 

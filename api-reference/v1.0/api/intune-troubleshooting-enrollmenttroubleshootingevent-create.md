@@ -3,7 +3,7 @@ title: "Create enrollmentTroubleshootingEvent"
 description: "Create a new enrollmentTroubleshootingEvent object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -109,6 +109,8 @@ Content-Length: 558
   "failureReason": "Failure Reason value"
 }
 ```
+
+
 
 
 
