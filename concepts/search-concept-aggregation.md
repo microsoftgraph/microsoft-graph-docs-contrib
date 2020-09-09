@@ -10,8 +10,6 @@ ms.prod: "search"
 
 Aggregation enable you to enrich search results by providing a representation of how the results are distributed in the index. 
 
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
-
 ## Example 1 : Request aggregations for a string property 
 
 ### Request

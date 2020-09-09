@@ -15,8 +15,6 @@ The property to be sorted on should be *Sortable* in the search schema.
 
 The default sort order is ascending, and you can change it by setting the ***isDescending** property.
 
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
-
 ## Example : Single-level Sort
 
 ### Request

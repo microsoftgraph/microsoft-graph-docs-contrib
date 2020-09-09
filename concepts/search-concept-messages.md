@@ -11,7 +11,7 @@ ms.prod: "search"
 You can use the Microsoft Search API to search for information in email messages, return messages ranked by relevance, and render a dedicated search experience. The search applies to the body and attachments of messages in the user's own mailbox.
 
 >[!WARNING]
->The request and reponse schema has changed : properties in the request and response are deprecated. See [more](/graph/api/resources/search-api-overview?view=graph-rest-beta#schema-change-deprecation-warning).
+>The API Schema has changed : some properties in the request and response are deprecated. See [more details here](/graph/api/resources/search-api-overview?view=graph-rest-beta#schema-change-deprecation-warning). The samples below use the up to date schema.
 
 A search query can include [filters](https://support.office.com/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da) that end users enter in the **Search** text box in Outlook.
 

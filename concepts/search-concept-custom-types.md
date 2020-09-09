@@ -12,6 +12,9 @@ You can use the Microsoft Search API to search accross content ingested via the 
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
+>[!WARNING]
+>The API Schema has changed : some properties in the request and response are deprecated. See [more details here](/graph/api/resources/search-api-overview?view=graph-rest-beta#schema-change-deprecation-warning). The samples below use the up to date schema.
+
 Once the content has been ingested, you can use the search API to query that particular content.
 
 To search for custom types, specify the following in the [query](/graph/api/search-query?view=graph-rest-beta) method request body:
