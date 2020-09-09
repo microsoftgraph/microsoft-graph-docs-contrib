@@ -13,8 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!CAUTION]
-> Some properties were renamed, and their older name will be deprecated by the end of 2020.
+>[!WARNING]
+> some properties below were renamed. See [more details here](search-api-overview?view=graph-rest-beta#schema-change-deprecation-warning). See [more details here](search-api-overview?view=graph-rest-beta#schema-change-deprecation-warning).
 
 Represent a single result within the list of search results.
 

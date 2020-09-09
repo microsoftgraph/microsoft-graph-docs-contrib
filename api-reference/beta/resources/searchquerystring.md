@@ -13,8 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!CAUTION]
->The **searchQueryString** is deprecated and will be removed by the end of 2020. The query string should be now populated on the **queryString** property of the [searchQuery](searchquery.md) entity
+>[!WARNING]
+>The **searchQueryString** is deprecated. The query string should be now populated on the **queryString** property of the [searchQuery](searchquery.md) entity. 
 
 The search terms for the query.
 
