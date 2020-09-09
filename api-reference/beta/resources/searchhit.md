@@ -18,8 +18,6 @@ Namespace: microsoft.graph
 
 Represent a single result within the list of search results.
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
 ## Properties
 
 | Property     | Type        | Description |
@@ -49,7 +47,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "_hitId": "String",
+  "hitId": "String",
   "rank": 1,
   "summary": "String",
   "contentSource": "String",
