@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!WARNING]
-> some properties below were renamed. See [more details here](search-api-overview?view=graph-rest-beta#schema-change-deprecation-warning). See [more details here](search-api-overview?view=graph-rest-beta#schema-change-deprecation-warning).
+>Some properties below were renamed. See [more details here](search-api-overview.md?view=graph-rest-beta#schema-change-deprecation-warning).
 
 Represent a single result within the list of search results.
 
