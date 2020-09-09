@@ -48,7 +48,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | allowedPresenters     | String                                        | Specifies who can be a presenter in a meeting. Possible values are listed below.                                                                                                                                                                            |
 
 > [!IMPORTANT]
-> The **utoAdmittedUsers** property is obsolete. Use **lobbyBypassSettings.scope** instead for meeting option configurations.
+> The **autoAdmittedUsers** property is obsolete. Use **lobbyBypassSettings.scope** instead for meeting option configurations.
 
 ### allowedPresenters values
 
