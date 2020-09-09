@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | OnlineMeetings.ReadWrite.All                |
 
 > [!IMPORTANT]
-> Calling CreateOrGet API with an application token is now available. Administrators must create an [application access policy](/concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to create or get an online meeting with external ID on behalf of that user (user ID specified in the request path).
+> Calling CreateOrGet API with an application token is now available. Administrators must create an [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to create or get an online meeting with external ID on behalf of that user (user ID specified in the request path).
 
 ## HTTP request
 

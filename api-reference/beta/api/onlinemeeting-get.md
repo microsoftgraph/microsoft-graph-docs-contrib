@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 
 > [!IMPORTANT]
-> Retrieving an online meeting with an application token is now available. Administrators must create an [application access policy](/concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to retrieve an online meeting on behalf of that user (user ID specified in the reuqest path).
+> Retrieving an online meeting with an application token is now available. Administrators must create an [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to retrieve an online meeting on behalf of that user (user ID specified in the reuqest path).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
