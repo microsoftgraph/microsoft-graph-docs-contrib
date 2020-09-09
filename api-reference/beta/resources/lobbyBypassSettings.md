@@ -19,7 +19,7 @@ Specifies which participants can bypass the lobby.
 
 | Property              | Type    | Description                                                         | Required | Read only |
 | --------------------- | ------- | ------------------------------------------------------------------- | -------- | --------- |
-| scope                 | String  | Specifies who can bypass the lobby. Possible values are listed below. | No       | No        |
+| scope                 | String  | Specifies the type of participants that are automatically admitted into a meeting, bypassing the lobby. Possible values are listed below. | No       | No        |
 | isDialInBypassEnabled | Boolean | Specifies whether or not to always let dial-in callers bypass the lobby. | No       | No        |
 
 ### scope values
