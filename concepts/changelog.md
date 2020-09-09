@@ -13,6 +13,17 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## September 2020
 
+### Search (beta)
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition        | Beta | Added the ability to filter search to more types in SharePoint and OneDrive : **list**, **listItem**, **site**, **drive**. See [more details here](/graph/api/resources/search-api-overview?view=graph-rest-beta#scope-search-based-on-entity-types).|
+| Addition        | Beta | Added the ability to specify [selected properties](/graph/api/resources/search-api-overview.md?view=graph-rest-beta#get-selected-properties) in the request.|
+| Addition        | Beta | Added the ability to [sort](/graph/api/resources/search-api-overview.md?view=graph-rest-beta#sort-search-results) search results for SharePoint and OneDrive.|
+| Addition        | Beta | Added the ability to [refine results using aggregations](/graph/api/resources/search-api-overview.md?view=graph-rest-beta#refine-results-using-aggregations) for SharePoint and OneDrive.|
+| Addition        | Beta | Added the ability to query external data (ingested via the Graph Connector platform) accross [multiple connections](/graph/search-concept-custom-types.md?view=graph-rest-beta).|
+| Change        | Beta |Some properties in the request and response have been renamed and are deprecated.  See [more details here](/graph/api/resources/search-api-overview.md?view=graph-rest-beta#schema-change-deprecation-warning).|
+
 ### Reports
 
 | **Change type** | **Version** | **Description**                  |
