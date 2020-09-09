@@ -17,8 +17,8 @@ Search requests run in the context of the signed-in user, identified using an [a
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
->[!Schema change and deprecation warning]
-> Some properties in the request and response are deprecated. See [more](search-api-overview#schema-change-deprecation-warning)
+>[!WARNING]
+>The request and reponse schema has changed : properties in the request and response are deprecated. See [more](search-api-overview#schema-change-deprecation-warning).
 
 ## Common use cases
 
