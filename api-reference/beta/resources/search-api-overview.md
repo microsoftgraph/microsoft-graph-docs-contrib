@@ -9,13 +9,14 @@ doc_type: resourcePageType
 
 # Use the Microsoft Search API to query data
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 You can use the Microsoft Search API to query Microsoft 365 data in your apps.
 
 Search requests run in the context of the signed-in user, identified using an [access token with delegated permissions](/graph/auth-v2-user).
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
+>[!Schema change an deprecation warning]
+> Some properties in the request and response are deprecated. See [more](#schema-change-deprecation-warning)
 
 ## Common use cases
 
@@ -153,6 +154,24 @@ Any combination involving **messages**, **events**, Sharepoint and OneDrive type
 - The search API does not support custom sort for **message**, **event** or  **externalItem**.
 
 - The search API does not support aggregations for **message**, **event**, **drive**, or **externalItem**.
+
+## Schema change deprecation warning
+
+Some properties in the request and response have been renamed and are deprecated.
+
+The schema changes for the request are :  
+- [searchRequest](./searchrequest.md) **stored_fields** property becomes **fields**. 
+
+- [searchQuery](./searchquery.md) now has a new string property **queryString** which contains the query string you want to pass. The **query_string** property on [searchQuery](./searchquery.md) and the [searchQueryString](./searchquerystring.md)  type are be deprecated.
+
+The schema changes for the response are :
+
+- [searchHit](./searchhit.md) following properties **_id**, **_score**, **_summary** and **_sources** have been renamed respectively to **hitId**, **rank**, **summary** and **resource**. 
+
+In order to ensure a backward compatibility, the older schema will still be functional until end of 2020.
+You will need to use the new property names and types in the request to get the new property names in the response.
+The older properties names and types will be  removed by the end of calendar year 2020.
+
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
