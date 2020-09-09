@@ -3,7 +3,7 @@ title: "Get managedMobileLobApp"
 description: "Read properties and relationships of the managedMobileLobApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -104,6 +104,8 @@ Content-Length: 1214
   }
 }
 ```
+
+
 
 
 

@@ -3,7 +3,7 @@ title: "Update androidForWorkScepCertificateProfile"
 description: "Update the properties of a androidForWorkScepCertificateProfile object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -221,6 +221,8 @@ Content-Length: 2150
   ]
 }
 ```
+
+
 
 
 

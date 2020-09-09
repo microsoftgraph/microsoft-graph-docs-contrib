@@ -3,7 +3,7 @@ title: "subjectAlternativeNameType enum type"
 description: "Subject Alternative Name Options."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: enumPageType
 ---
 
@@ -25,6 +25,8 @@ Subject Alternative Name Options.
 |userPrincipalName|2|User Principal Name (UPN).|
 |customAzureADAttribute|4|Custom Azure AD Attribute.|
 |domainNameService|8|Domain Name Service (DNS).|
+
+
 
 
 

@@ -3,7 +3,7 @@ title: "rolePermission resource type"
 description: "Contains the set of ResourceActions determining the allowed and not allowed permissions for each role."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -52,6 +52,8 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
 
 
 

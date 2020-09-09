@@ -3,7 +3,7 @@ title: "loggedOnUser resource type"
 description: "Logged On User"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -40,6 +40,8 @@ Here is a JSON representation of the resource.
   "lastLogOnDateTime": "String (timestamp)"
 }
 ```
+
+
 
 
 

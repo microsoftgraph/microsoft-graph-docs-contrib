@@ -3,7 +3,7 @@ title: "Get managedDeviceMobileAppConfigurationDeviceSummary"
 description: "Read properties and relationships of the managedDeviceMobileAppConfigurationDeviceSummary object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -81,6 +81,8 @@ Content-Length: 450
   }
 }
 ```
+
+
 
 
 

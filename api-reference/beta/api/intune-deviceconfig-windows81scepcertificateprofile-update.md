@@ -3,7 +3,7 @@ title: "Update windows81SCEPCertificateProfile"
 description: "Update the properties of a windows81SCEPCertificateProfile object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -224,6 +224,8 @@ Content-Length: 2196
   "certificateStore": "machine"
 }
 ```
+
+
 
 
 

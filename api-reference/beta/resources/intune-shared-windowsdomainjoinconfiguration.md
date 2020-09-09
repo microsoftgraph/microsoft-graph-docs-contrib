@@ -3,7 +3,7 @@ title: "windowsDomainJoinConfiguration resource type"
 description: "Windows Domain Join device configuration."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -80,6 +80,8 @@ Here is a JSON representation of the resource.  Note: The response object shown 
   "activeDirectoryDomainName": "String"
 }
 ```
+
+
 
 
 

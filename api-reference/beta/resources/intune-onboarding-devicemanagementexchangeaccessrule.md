@@ -3,7 +3,7 @@ title: "deviceManagementExchangeAccessRule resource type"
 description: "Device Access Rules in Exchange."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -44,6 +44,8 @@ Here is a JSON representation of the resource.
   "accessLevel": "String"
 }
 ```
+
+
 
 
 

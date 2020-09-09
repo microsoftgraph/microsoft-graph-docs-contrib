@@ -3,7 +3,7 @@ title: "Get deviceManagementComplexSettingInstance"
 description: "Read properties and relationships of the deviceManagementComplexSettingInstance object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -77,6 +77,8 @@ Content-Length: 234
   }
 }
 ```
+
+
 
 
 

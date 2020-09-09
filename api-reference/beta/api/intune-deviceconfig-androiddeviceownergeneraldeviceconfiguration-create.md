@@ -3,7 +3,7 @@ title: "Create androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Create a new androidDeviceOwnerGeneralDeviceConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -488,6 +488,8 @@ Content-Length: 6268
   "workProfilePasswordRequiredType": "required"
 }
 ```
+
+
 
 
 

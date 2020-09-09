@@ -3,7 +3,7 @@ title: "mobileAppInstallSummary resource type"
 description: "Contains properties for the installation summary of a mobile app."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -65,6 +65,8 @@ Here is a JSON representation of the resource.
   "pendingInstallUserCount": 1024
 }
 ```
+
+
 
 
 

@@ -3,7 +3,7 @@ title: "Get windowsCertificateProfileBase"
 description: "Read properties and relationships of the windowsCertificateProfileBase object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -109,6 +109,8 @@ Content-Length: 1576
   }
 }
 ```
+
+
 
 
 

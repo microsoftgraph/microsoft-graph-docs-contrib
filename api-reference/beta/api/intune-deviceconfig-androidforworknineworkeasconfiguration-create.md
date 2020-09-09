@@ -3,7 +3,7 @@ title: "Create androidForWorkNineWorkEasConfiguration"
 description: "Create a new androidForWorkNineWorkEasConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -177,6 +177,8 @@ Content-Length: 1511
   "syncTasks": true
 }
 ```
+
+
 
 
 

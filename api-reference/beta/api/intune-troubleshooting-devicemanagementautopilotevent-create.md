@@ -3,7 +3,7 @@ title: "Create deviceManagementAutopilotEvent"
 description: "Create a new deviceManagementAutopilotEvent object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -150,6 +150,8 @@ Content-Length: 1406
   "enrollmentFailureDetails": "Enrollment Failure Details value"
 }
 ```
+
+
 
 
 

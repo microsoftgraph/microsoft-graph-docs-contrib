@@ -3,7 +3,7 @@ title: "iosImportedPFXCertificateProfile resource type"
 description: "iOS PFX Import certificate profile"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -102,6 +102,8 @@ Here is a JSON representation of the resource.
   "intendedPurpose": "String"
 }
 ```
+
+
 
 
 

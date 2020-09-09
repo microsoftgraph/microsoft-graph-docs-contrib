@@ -3,7 +3,7 @@ title: "exportDeviceAndAppManagementData function"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -85,6 +85,8 @@ Content-Length: 143
   }
 }
 ```
+
+
 
 
 

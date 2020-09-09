@@ -3,7 +3,7 @@ title: "Onboard managed devices with Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) used to onboard (configure and initialize) devices for a tenant organization."
 localization_priority: Normal
 author: "dougeby"
-ms.prod: "intune"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Enroll devices for management in Intune
@@ -56,3 +56,4 @@ The following Graph resources are available to manage enrollment in Intune:
 - [VPP token sync status](intune-onboarding-vpptokensyncstatus.md)
 - [Windows 10 enrollment completion page configuration](intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)
 - [Windows Hello for business PIN usage](intune-onboarding-windowshelloforbusinesspinusage.md)
+

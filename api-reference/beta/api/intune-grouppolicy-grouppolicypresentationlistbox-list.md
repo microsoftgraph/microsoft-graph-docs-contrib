@@ -3,7 +3,7 @@ title: "List groupPolicyPresentationListBoxes"
 description: "List properties and relationships of the groupPolicyPresentationListBox objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -75,6 +75,8 @@ Content-Length: 335
   ]
 }
 ```
+
+
 
 
 

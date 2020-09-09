@@ -3,7 +3,7 @@ title: "Create windowsManagedDevice"
 description: "Create a new windowsManagedDevice object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -524,6 +524,8 @@ Content-Length: 8075
   "managementFeatures": "microsoftManagedDesktop"
 }
 ```
+
+
 
 
 

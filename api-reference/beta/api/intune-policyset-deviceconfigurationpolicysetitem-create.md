@@ -3,7 +3,7 @@ title: "Create deviceConfigurationPolicySetItem"
 description: "Create a new deviceConfigurationPolicySetItem object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -107,6 +107,8 @@ Content-Length: 486
   ]
 }
 ```
+
+
 
 
 

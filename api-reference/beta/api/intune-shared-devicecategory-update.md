@@ -3,7 +3,7 @@ title: "Update deviceCategory"
 description: "Update the properties of a deviceCategory object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -112,6 +112,8 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
+
+
 
 
 

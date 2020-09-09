@@ -3,7 +3,7 @@ title: "Create deviceComplianceScriptDeviceState"
 description: "Create a new deviceComplianceScriptDeviceState object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -99,6 +99,8 @@ Content-Length: 436
   "scriptError": "Script Error value"
 }
 ```
+
+
 
 
 

@@ -3,7 +3,7 @@ title: "iosMobileAppIdentifier resource type"
 description: "The identifier for an iOS app."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -41,6 +41,8 @@ Here is a JSON representation of the resource.
   "bundleId": "String"
 }
 ```
+
+
 
 
 

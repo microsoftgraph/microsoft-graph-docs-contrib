@@ -3,7 +3,7 @@ title: "Create windowsPhoneXAP"
 description: "Create a new windowsPhoneXAP object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -188,6 +188,8 @@ Content-Length: 1466
   "identityVersion": "Identity Version value"
 }
 ```
+
+
 
 
 

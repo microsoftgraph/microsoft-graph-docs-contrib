@@ -3,7 +3,7 @@ title: "List appleDeviceFeaturesConfigurationBases"
 description: "List properties and relationships of the appleDeviceFeaturesConfigurationBase objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -111,6 +111,8 @@ Content-Length: 1646
   ]
 }
 ```
+
+
 
 
 
