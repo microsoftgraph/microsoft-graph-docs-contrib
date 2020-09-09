@@ -1,6 +1,6 @@
 ---
 title: "lobbyBypassSettings resource type"
-description: "Specifies which participants can bypass the lobby."
+description: "Specifies which participants can bypass the meeting lobby."
 author: "frankpeng7"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies which participants can bypass the lobby.
+Specifies which participants can bypass the meeting lobby.
 
 ## Properties
 
