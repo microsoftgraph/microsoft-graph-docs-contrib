@@ -3,7 +3,7 @@ title: "List pfxUserCertificates"
 description: "List properties and relationships of the pfxUserCertificate objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -87,6 +87,7 @@ Content-Length: 894
   ]
 }
 ```
+
 
 
 

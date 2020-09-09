@@ -3,7 +3,7 @@ title: "Update deviceManagementTemplateSettingCategory"
 description: "Update the properties of a deviceManagementTemplateSettingCategory object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -87,6 +87,7 @@ Content-Length: 201
   "hasRequiredSetting": true
 }
 ```
+
 
 
 

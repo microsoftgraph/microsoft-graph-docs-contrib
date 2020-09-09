@@ -3,7 +3,7 @@ title: "Create iosGeneralDeviceConfiguration"
 description: "Create a new iosGeneralDeviceConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -846,6 +846,7 @@ Content-Length: 10765
   "kioskModeAppType": "appStoreApp"
 }
 ```
+
 
 
 

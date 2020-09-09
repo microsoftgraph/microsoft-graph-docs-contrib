@@ -3,7 +3,7 @@ title: "Create deviceManagementScriptDeviceState"
 description: "Create a new deviceManagementScriptDeviceState object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -98,6 +98,7 @@ Content-Length: 330
   "errorDescription": "Error Description value"
 }
 ```
+
 
 
 

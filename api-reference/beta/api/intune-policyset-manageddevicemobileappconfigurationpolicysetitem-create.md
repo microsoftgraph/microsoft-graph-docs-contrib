@@ -3,7 +3,7 @@ title: "Create managedDeviceMobileAppConfigurationPolicySetItem"
 description: "Create a new managedDeviceMobileAppConfigurationPolicySetItem object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -107,6 +107,7 @@ Content-Length: 502
   ]
 }
 ```
+
 
 
 

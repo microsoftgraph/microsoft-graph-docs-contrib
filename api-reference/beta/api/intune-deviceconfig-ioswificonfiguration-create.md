@@ -3,7 +3,7 @@ title: "Create iosWiFiConfiguration"
 description: "Create a new iosWiFiConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -183,6 +183,7 @@ Content-Length: 1663
   "preSharedKey": "Pre Shared Key value"
 }
 ```
+
 
 
 

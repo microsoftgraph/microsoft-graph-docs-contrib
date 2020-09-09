@@ -3,7 +3,7 @@ title: "Get userExperienceAnalyticsAppHealthAppPerformanceByAppVersion"
 description: "Read properties and relationships of the userExperienceAnalyticsAppHealthAppPerformanceByAppVersion object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -79,6 +79,7 @@ Content-Length: 432
   }
 }
 ```
+
 
 
 

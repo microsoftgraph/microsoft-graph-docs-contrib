@@ -3,7 +3,7 @@ title: "Create deviceManagementScriptUserState"
 description: "Create a new deviceManagementScriptUserState object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -91,6 +91,7 @@ Content-Length: 229
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

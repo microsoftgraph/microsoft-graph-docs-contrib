@@ -3,7 +3,7 @@ title: "Create userExperienceAnalyticsDeviceStartupHistory"
 description: "Create a new userExperienceAnalyticsDeviceStartupHistory object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -129,6 +129,7 @@ Content-Length: 729
   "restartFaultBucket": "Restart Fault Bucket value"
 }
 ```
+
 
 
 

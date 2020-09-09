@@ -3,7 +3,7 @@ title: "Create deviceShellScript"
 description: "Create a new deviceShellScript object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -116,6 +116,7 @@ Content-Length: 581
   ]
 }
 ```
+
 
 
 

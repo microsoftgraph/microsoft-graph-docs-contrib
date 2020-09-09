@@ -3,7 +3,7 @@ title: "List managedDeviceMobileAppConfigurationUserStatuses"
 description: "List properties and relationships of the managedDeviceMobileAppConfigurationUserStatus objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -77,6 +77,7 @@ Content-Length: 416
   ]
 }
 ```
+
 
 
 

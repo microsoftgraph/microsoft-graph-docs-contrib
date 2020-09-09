@@ -3,7 +3,7 @@ title: "Create macOSLobApp"
 description: "Create a new macOSLobApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -224,6 +224,7 @@ Content-Length: 1845
   "ignoreVersionDetection": true
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "Create androidForWorkPkcsCertificateProfile"
 description: "Create a new androidForWorkPkcsCertificateProfile object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -192,6 +192,7 @@ Content-Length: 1910
   "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
+
 
 
 

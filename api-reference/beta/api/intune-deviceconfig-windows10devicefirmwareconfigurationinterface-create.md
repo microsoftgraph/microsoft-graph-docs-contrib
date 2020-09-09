@@ -3,7 +3,7 @@ title: "Create windows10DeviceFirmwareConfigurationInterface"
 description: "Create a new windows10DeviceFirmwareConfigurationInterface object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -171,6 +171,7 @@ Content-Length: 1481
   "bootFromBuiltInNetworkAdapters": "enabled"
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "Create securityConfigurationTask"
 description: "Create a new securityConfigurationTask object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -140,6 +140,7 @@ Content-Length: 854
   ]
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "win32LobApp resource type"
 description: "Contains properties and inherited properties for Win32 apps."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -202,6 +202,7 @@ Here is a JSON representation of the resource.
   "minimumSupportedWindowsRelease": "String"
 }
 ```
+
 
 
 

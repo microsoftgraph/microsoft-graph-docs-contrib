@@ -3,7 +3,7 @@ title: "Manage mobile apps with Microsoft Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) related to mobile app management (MAM) for a tenant organization."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 ---
 
 # How to protect your company app data with Microsoft Intune
@@ -75,4 +75,5 @@ The following Graph resources are available to manage app protection polices in 
 - [Windows information protection resource collection](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Windows information protection store app](intune-mam-windowsinformationprotectionstoreapp.md)
 - [Windows information protection wipe action](intune-mam-windowsinformationprotectionwipeaction.md)
+
 

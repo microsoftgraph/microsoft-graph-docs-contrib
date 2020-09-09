@@ -3,7 +3,7 @@ title: "androidImportedPFXCertificateProfile resource type"
 description: "Android PFX Import certificate profile"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -121,6 +121,7 @@ Here is a JSON representation of the resource.
   "intendedPurpose": "String"
 }
 ```
+
 
 
 

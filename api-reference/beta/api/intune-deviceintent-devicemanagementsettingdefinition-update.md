@@ -3,7 +3,7 @@ title: "Update deviceManagementSettingDefinition"
 description: "Update the properties of a deviceManagementSettingDefinition object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -155,6 +155,7 @@ Content-Length: 977
   ]
 }
 ```
+
 
 
 

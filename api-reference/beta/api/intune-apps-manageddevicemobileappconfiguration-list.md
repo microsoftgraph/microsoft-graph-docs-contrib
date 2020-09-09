@@ -3,7 +3,7 @@ title: "List managedDeviceMobileAppConfigurations"
 description: "List properties and relationships of the managedDeviceMobileAppConfiguration objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -82,6 +82,7 @@ Content-Length: 559
   ]
 }
 ```
+
 
 
 

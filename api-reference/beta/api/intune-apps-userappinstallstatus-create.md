@@ -3,7 +3,7 @@ title: "Create userAppInstallStatus"
 description: "Create a new userAppInstallStatus object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -96,6 +96,7 @@ Content-Length: 288
   "notInstalledDeviceCount": 7
 }
 ```
+
 
 
 

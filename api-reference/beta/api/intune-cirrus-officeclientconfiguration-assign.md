@@ -3,7 +3,7 @@ title: "assign action"
 description: "Replace all targeted groups for a policy."
 localization_priority: Normal
 author: "dougeby"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -97,6 +97,7 @@ Content-Length: 274
   ]
 }
 ```
+
 
 
 

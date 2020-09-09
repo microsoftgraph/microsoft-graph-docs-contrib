@@ -3,7 +3,7 @@ title: "Using the Intune Graph API - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) you can use to manage your tenant organization, its devices, apps, access, and resources."
 author: "rolyon"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 ---
 
 # Working with Intune in Microsoft Graph  
@@ -46,6 +46,7 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 
 - Learn [how to use Azure AD](https://docs.microsoft.com/intune/intune-graph-apis) to access the Microsoft Graph API for Intune.  
 - Explore the [PowerShell Intune samples](https://github.com/microsoftgraph/powershell-intune-samples), which show how to use the Microsoft Graph API for Intune in context of working examples.
+
 
 
 

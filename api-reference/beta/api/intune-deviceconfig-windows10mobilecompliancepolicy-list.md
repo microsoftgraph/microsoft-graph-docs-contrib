@@ -3,7 +3,7 @@ title: "List windows10MobileCompliancePolicies"
 description: "List properties and relationships of the windows10MobileCompliancePolicy objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -104,6 +104,7 @@ Content-Length: 1503
   ]
 }
 ```
+
 
 
 

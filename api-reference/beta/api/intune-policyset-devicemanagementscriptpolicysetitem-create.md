@@ -3,7 +3,7 @@ title: "Create deviceManagementScriptPolicySetItem"
 description: "Create a new deviceManagementScriptPolicySetItem object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -107,6 +107,7 @@ Content-Length: 489
   ]
 }
 ```
+
 
 
 

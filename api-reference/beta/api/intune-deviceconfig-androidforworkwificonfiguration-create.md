@@ -3,7 +3,7 @@ title: "Create androidForWorkWiFiConfiguration"
 description: "Create a new androidForWorkWiFiConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -165,6 +165,7 @@ Content-Length: 1387
   "wiFiSecurityType": "wpaEnterprise"
 }
 ```
+
 
 
 

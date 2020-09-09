@@ -3,7 +3,7 @@ title: "Create mobileAppDependency"
 description: "Create a new mobileAppDependency object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -96,6 +96,7 @@ Content-Length: 287
   "dependentAppCount": 1
 }
 ```
+
 
 
 

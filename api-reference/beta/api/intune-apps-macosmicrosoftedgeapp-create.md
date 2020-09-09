@@ -3,7 +3,7 @@ title: "Create macOSMicrosoftEdgeApp"
 description: "Create a new macOSMicrosoftEdgeApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -151,6 +151,7 @@ Content-Length: 971
   "channel": "beta"
 }
 ```
+
 
 
 

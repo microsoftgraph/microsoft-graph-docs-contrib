@@ -3,7 +3,7 @@ title: "Get macOSCustomConfiguration"
 description: "Read properties and relationships of the macOSCustomConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -107,6 +107,7 @@ Content-Length: 1407
   }
 }
 ```
+
 
 
 

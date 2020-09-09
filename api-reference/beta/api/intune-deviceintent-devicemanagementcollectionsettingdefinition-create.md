@@ -3,7 +3,7 @@ title: "Create deviceManagementCollectionSettingDefinition"
 description: "Create a new deviceManagementCollectionSettingDefinition object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -158,6 +158,7 @@ Content-Length: 1044
   "elementDefinitionId": "Element Definition Id value"
 }
 ```
+
 
 
 

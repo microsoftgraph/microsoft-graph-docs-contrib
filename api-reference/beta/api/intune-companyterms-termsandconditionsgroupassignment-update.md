@@ -3,7 +3,7 @@ title: "Update termsAndConditionsGroupAssignment"
 description: "Update the properties of a termsAndConditionsGroupAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -84,6 +84,7 @@ Content-Length: 169
   "targetGroupId": "Target Group Id value"
 }
 ```
+
 
 
 

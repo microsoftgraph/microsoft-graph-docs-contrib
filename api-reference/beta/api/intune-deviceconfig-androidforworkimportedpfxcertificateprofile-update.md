@@ -3,7 +3,7 @@ title: "Update androidForWorkImportedPFXCertificateProfile"
 description: "Update the properties of a androidForWorkImportedPFXCertificateProfile object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -184,6 +184,7 @@ Content-Length: 1671
   "intendedPurpose": "smimeEncryption"
 }
 ```
+
 
 
 
