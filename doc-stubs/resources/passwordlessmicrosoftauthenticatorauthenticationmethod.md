@@ -1,6 +1,6 @@
 ---
 title: "passwordlessMicrosoftAuthenticatorAuthenticationMethod resource type"
-description: "**TODO: Add Description**"
+description: "A representation of a Paswordless Phone Sign-in with Microsoft Authenticator method registered to a user."
 author: "mmcla"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 A representation of a Paswordless Phone Sign-in with Microsoft Authenticator method registered to a user.
 
+> [!NOTE]
+> This resource and associated methods will change in the future.
 
 ## Methods
 |Method|Return type|Description|

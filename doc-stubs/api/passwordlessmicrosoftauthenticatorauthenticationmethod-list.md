@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 
 Retrieve a list of the [passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) objects and their properties.
 
+> [!NOTE]
+> This resource and associated methods will change in the future.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
