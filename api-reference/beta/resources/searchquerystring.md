@@ -3,7 +3,7 @@ title: "searchQueryString resource type"
 description: "searchQueryString"
 localization_priority: Normal
 author: "nmoreau"
-ms.prod: ""
+ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
