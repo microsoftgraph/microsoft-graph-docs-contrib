@@ -27,17 +27,17 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | OnlineMeetings.ReadWrite.All                |
 
 > [!IMPORTANT]
-> Calling CreateOrGet API with an application token is now available. Administrator will need to create an [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user so the app configured in the policy will be authorized to create or get an online meeting with external ID on behalf of that user (user ID specified in request path).
+> Calling CreateOrGet API with an application token is now available. Administrators must create an [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to create an online meeting on behalf of that user (user ID specified in the request path).
 
 ## HTTP request
 
-Requring delegated token
+Using delegated token
 <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings/createOrGet
 ```
 
-Requring application token
+Using application token
 <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/createOrGet
