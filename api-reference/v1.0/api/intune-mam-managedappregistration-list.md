@@ -3,7 +3,7 @@ title: "List managedAppRegistrations"
 description: "List properties and relationships of the managedAppRegistration objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -85,6 +85,7 @@ Content-Length: 806
   ]
 }
 ```
+
 
 
 

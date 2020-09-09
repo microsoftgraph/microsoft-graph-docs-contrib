@@ -3,7 +3,7 @@ title: "allLicensedUsersAssignmentTarget resource type"
 description: "Represents an assignment to all licensed users in the tenant."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -37,6 +37,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget"
 }
 ```
+
 
 
 

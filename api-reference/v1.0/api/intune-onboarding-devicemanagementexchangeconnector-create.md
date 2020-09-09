@@ -3,7 +3,7 @@ title: "Create deviceManagementExchangeConnector"
 description: "Create a new deviceManagementExchangeConnector object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -106,6 +106,7 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
+
 
 
 

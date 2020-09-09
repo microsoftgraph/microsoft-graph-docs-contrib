@@ -3,7 +3,7 @@ title: "Update iosVppEBookAssignment"
 description: "Update the properties of a iosVppEBookAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -89,6 +89,7 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
+
 
 
 

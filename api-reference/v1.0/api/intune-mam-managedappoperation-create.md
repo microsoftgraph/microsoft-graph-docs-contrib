@@ -3,7 +3,7 @@ title: "Create managedAppOperation"
 description: "Create a new managedAppOperation object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -90,6 +90,7 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "Get macOSOfficeSuiteApp"
 description: "Read properties and relationships of the macOSOfficeSuiteApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -87,6 +87,7 @@ Content-Length: 813
   }
 }
 ```
+
 
 
 

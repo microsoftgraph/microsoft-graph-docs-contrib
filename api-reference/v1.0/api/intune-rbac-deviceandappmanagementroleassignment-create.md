@@ -3,7 +3,7 @@ title: "Create deviceAndAppManagementRoleAssignment"
 description: "Create a new deviceAndAppManagementRoleAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -99,6 +99,7 @@ Content-Length: 307
   ]
 }
 ```
+
 
 
 

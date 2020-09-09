@@ -3,7 +3,7 @@ title: "Device configuration in Microsoft Intune"
 description: "Use the Microsoft Intune Device Configuration workload to manage settings and features on all of the devices you manage."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: conceptualPageType
 ---
 
@@ -179,6 +179,7 @@ The following Graph resources are available to manage settings and features on d
 - [Windows update scheduled install](intune-deviceconfig-windowsupdatescheduledinstall.md)
 - [Windows update type](intune-deviceconfig-windowsupdatetype.md)
 - [Windows user account control settings](intune-deviceconfig-windowsuseraccountcontrolsettings.md)
+
 
 
 

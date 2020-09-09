@@ -3,7 +3,7 @@ title: "List iosUpdateDeviceStatuses"
 description: "List properties and relationships of the iosUpdateDeviceStatus objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -80,6 +80,7 @@ Content-Length: 686
   ]
 }
 ```
+
 
 
 

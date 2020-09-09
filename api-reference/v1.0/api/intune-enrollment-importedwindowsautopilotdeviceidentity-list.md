@@ -3,7 +3,7 @@ title: "List importedWindowsAutopilotDeviceIdentities"
 description: "List properties and relationships of the importedWindowsAutopilotDeviceIdentity objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -81,6 +81,7 @@ Content-Length: 675
   ]
 }
 ```
+
 
 
 

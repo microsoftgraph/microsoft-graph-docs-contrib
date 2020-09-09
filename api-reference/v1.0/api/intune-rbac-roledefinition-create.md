@@ -3,7 +3,7 @@ title: "Create roleDefinition"
 description: "Create a new roleDefinition object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -121,6 +121,7 @@ Content-Length: 629
   "isBuiltIn": true
 }
 ```
+
 
 
 

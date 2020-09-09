@@ -3,7 +3,7 @@ title: "Update managedAppPolicyDeploymentSummary"
 description: "Update the properties of a managedAppPolicyDeploymentSummary object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -115,6 +115,7 @@ Content-Length: 637
   "version": "Version value"
 }
 ```
+
 
 
 

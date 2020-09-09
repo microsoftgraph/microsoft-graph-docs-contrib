@@ -3,7 +3,7 @@ title: "deviceManagementTroubleshootingEvent resource type"
 description: "Event representing an general failure."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -50,6 +50,7 @@ Here is a JSON representation of the resource.
   "correlationId": "String"
 }
 ```
+
 
 
 

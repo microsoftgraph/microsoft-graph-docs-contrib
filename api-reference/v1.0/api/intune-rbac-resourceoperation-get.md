@@ -3,7 +3,7 @@ title: "Get resourceOperation"
 description: "Read properties and relationships of the resourceOperation object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -73,6 +73,7 @@ Content-Length: 256
   }
 }
 ```
+
 
 
 

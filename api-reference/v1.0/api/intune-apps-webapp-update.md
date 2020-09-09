@@ -3,7 +3,7 @@ title: "Update webApp"
 description: "Update the properties of a webApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -130,6 +130,7 @@ Content-Length: 817
   "useManagedBrowser": true
 }
 ```
+
 
 
 

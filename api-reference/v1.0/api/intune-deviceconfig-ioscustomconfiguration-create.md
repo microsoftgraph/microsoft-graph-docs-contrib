@@ -3,7 +3,7 @@ title: "Create iosCustomConfiguration"
 description: "Create a new iosCustomConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -101,6 +101,7 @@ Content-Length: 451
   "payload": "cGF5bG9hZA=="
 }
 ```
+
 
 
 

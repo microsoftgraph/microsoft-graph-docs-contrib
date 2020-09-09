@@ -3,7 +3,7 @@ title: "List managedAppConfigurations"
 description: "List properties and relationships of the managedAppConfiguration objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -83,6 +83,7 @@ Content-Length: 592
   ]
 }
 ```
+
 
 
 

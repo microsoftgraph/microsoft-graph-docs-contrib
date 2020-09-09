@@ -3,7 +3,7 @@ title: "How to protect your company app data with Microsoft Intune"
 description: "Microsoft Intune app protection policies help protect your company data and prevent data loss."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: conceptualPageType
 ---
 
@@ -69,6 +69,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Windows information protection proxied domain collection](intune-mam-windowsinformationprotectionproxieddomaincollection.md)
 - [Windows information protection resource collection](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Windows information protection store app](intune-mam-windowsinformationprotectionstoreapp.md)
+
 
 
 

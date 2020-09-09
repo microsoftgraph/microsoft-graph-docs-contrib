@@ -3,7 +3,7 @@ title: "Update deviceCompliancePolicySettingStateSummary"
 description: "Update the properties of a deviceCompliancePolicySettingStateSummary object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -109,6 +109,7 @@ Content-Length: 440
   "conflictDeviceCount": 3
 }
 ```
+
 
 
 

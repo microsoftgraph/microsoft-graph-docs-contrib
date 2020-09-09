@@ -3,7 +3,7 @@ title: "Delete user"
 description: "Deletes a user."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -64,6 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

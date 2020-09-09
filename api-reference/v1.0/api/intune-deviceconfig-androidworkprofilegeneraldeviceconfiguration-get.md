@@ -3,7 +3,7 @@ title: "Get androidWorkProfileGeneralDeviceConfiguration"
 description: "Read properties and relationships of the androidWorkProfileGeneralDeviceConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -109,6 +109,7 @@ Content-Length: 2104
   }
 }
 ```
+
 
 
 

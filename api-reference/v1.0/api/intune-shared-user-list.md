@@ -3,7 +3,7 @@ title: "List users"
 description: "List properties and relationships of the user objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -75,6 +75,7 @@ Content-Length: 136
   ]
 }
 ```
+
 
 
 

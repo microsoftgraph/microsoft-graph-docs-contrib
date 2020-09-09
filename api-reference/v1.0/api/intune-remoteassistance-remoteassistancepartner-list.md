@@ -3,7 +3,7 @@ title: "List remoteAssistancePartners"
 description: "List properties and relationships of the remoteAssistancePartner objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -73,6 +73,7 @@ Content-Length: 372
   ]
 }
 ```
+
 
 
 

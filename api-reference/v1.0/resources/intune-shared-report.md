@@ -3,7 +3,7 @@ title: "report resource type"
 description: "A report that varies according to the workflow, either device configuration profile history or enrollment failures."
 localization_priority: Normal
 author: "rolyon"
-ms.prod: "intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -38,6 +38,7 @@ Here is a JSON representation of the resource.
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "Get user"
 description: "Read properties and relationships of the user object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -75,6 +75,7 @@ Content-Length: 118
   }
 }
 ```
+
 
 
 

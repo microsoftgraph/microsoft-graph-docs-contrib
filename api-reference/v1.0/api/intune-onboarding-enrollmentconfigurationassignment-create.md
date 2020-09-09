@@ -3,7 +3,7 @@ title: "Create enrollmentConfigurationAssignment"
 description: "Create a new enrollmentConfigurationAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -86,6 +86,7 @@ Content-Length: 222
   }
 }
 ```
+
 
 
 

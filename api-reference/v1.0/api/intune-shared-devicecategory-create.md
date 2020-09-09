@@ -3,7 +3,7 @@ title: "Create deviceCategory"
 description: "Create a new deviceCategory object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -86,6 +86,7 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
+
 
 
 

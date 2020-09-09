@@ -3,7 +3,7 @@ title: "edgeSearchEngineBase resource type"
 description: "Allows IT admins to set a default search engine for MDM-Controlled devices. Users can override this and change their default search engine provided the AllowSearchEngineCustomization policy is not set."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -34,6 +34,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.edgeSearchEngineBase"
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "Get win32LobApp"
 description: "Read properties and relationships of the win32LobApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -133,6 +133,7 @@ Content-Length: 2455
   }
 }
 ```
+
 
 
 

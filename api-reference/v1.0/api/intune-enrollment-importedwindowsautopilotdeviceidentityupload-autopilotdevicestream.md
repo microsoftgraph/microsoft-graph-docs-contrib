@@ -3,7 +3,7 @@ title: "autopilotDeviceStream function"
 description: "Create a upload request with autopilot device stream in it."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -64,6 +64,7 @@ Content-Length: 48
   "value": "Autopilot Device Stream value"
 }
 ```
+
 
 
 
