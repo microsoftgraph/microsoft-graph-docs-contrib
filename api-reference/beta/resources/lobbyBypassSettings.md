@@ -17,10 +17,10 @@ Specifies which participants can bypass the meeting lobby.
 
 ## Properties
 
-| Property              | Type    | Description                                                         | Required | Read only |
-| --------------------- | ------- | ------------------------------------------------------------------- | -------- | --------- |
-| scope                 | String  | Specifies the type of participants that are automatically admitted into a meeting, bypassing the lobby. Possible values are listed below. | No       | No        |
-| isDialInBypassEnabled | Boolean | Specifies whether or not to always let dial-in callers bypass the lobby. | No       | No        |
+| Property              | Type    | Description                                                         | 
+| --------------------- | ------- | ------------------------------------------------------------------- | 
+| scope                 | String  | Specifies the type of participants that are automatically admitted into a meeting, bypassing the lobby. Possible values are listed in the following table. Optional.|
+| isDialInBypassEnabled | Boolean | Specifies whether or not to always let dial-in callers bypass the lobby. Optional. | 
 
 ### scope values
 
