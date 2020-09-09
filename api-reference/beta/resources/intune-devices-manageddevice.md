@@ -130,6 +130,8 @@ Devices that are managed or pre-enrolled through Intune
 |specificationVersion|String|Specification version. This property is read-only.|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|Device join type. Possible values are: `unknown`, `azureADJoined`, `azureADRegistered`, `hybridAzureADJoined`.|
 |skuFamily|String|Device sku family|
+|skuNumber|Int32|Device sku number, see also: https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo. Valid values 0 to 2147483647. This property is read-only.|
+|managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Device management features. Possible values are: `none`, `microsoftManagedDesktop`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -331,7 +333,9 @@ Here is a JSON representation of the resource.
   "processorArchitecture": "String",
   "specificationVersion": "String",
   "joinType": "String",
-  "skuFamily": "String"
+  "skuFamily": "String",
+  "skuNumber": 1024,
+  "managementFeatures": "String"
 }
 ```
 

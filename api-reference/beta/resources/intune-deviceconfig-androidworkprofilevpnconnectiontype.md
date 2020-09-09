@@ -28,6 +28,7 @@ Android Work Profile VPN connection type.
 |citrix|5|Citrix|
 |paloAltoGlobalProtect|6|Palo Alto Networks GlobalProtect.|
 |microsoftTunnel|7|Microsoft Tunnel.|
+|netMotionMobility|8|NetMotion Mobility.|
 
 
 

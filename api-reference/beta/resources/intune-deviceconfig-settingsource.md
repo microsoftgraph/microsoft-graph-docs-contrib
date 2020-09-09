@@ -22,6 +22,7 @@ Not yet documented
 |:---|:---|:---|
 |id|String|Not yet documented|
 |displayName|String|Not yet documented|
+|sourceType|[settingSourceType](../resources/intune-shared-settingsourcetype.md)|Not yet documented. Possible values are: `deviceConfiguration`, `deviceIntent`.|
 
 ## Relationships
 None
@@ -37,7 +38,8 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.settingSource",
   "id": "String (identifier)",
-  "displayName": "String"
+  "displayName": "String",
+  "sourceType": "String"
 }
 ```
 

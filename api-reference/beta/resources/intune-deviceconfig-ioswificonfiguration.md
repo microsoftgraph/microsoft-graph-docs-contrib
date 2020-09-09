@@ -52,6 +52,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |proxyManualAddress|String|IP Address or DNS hostname of the proxy server when manual configuration is selected.|
 |proxyManualPort|Int32|Port of the proxy server when manual configuration is selected.|
 |proxyAutomaticConfigurationUrl|String|URL of the proxy server automatic configuration script when automatic configuration is selected. This URL is typically the location of PAC (Proxy Auto Configuration) file.|
+|disableMacAddressRandomization|Boolean|If set to true, forces devices connecting using this Wi-Fi profile to present their actual Wi-Fi MAC address instead of a random MAC address. Applies to iOS 14 and later.|
 |preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
 
 ## Relationships
@@ -116,6 +117,7 @@ Here is a JSON representation of the resource.
   "proxyManualAddress": "String",
   "proxyManualPort": 1024,
   "proxyAutomaticConfigurationUrl": "String",
+  "disableMacAddressRandomization": true,
   "preSharedKey": "String"
 }
 ```

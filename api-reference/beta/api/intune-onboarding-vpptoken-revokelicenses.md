@@ -49,6 +49,7 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |notifyManagedDevices|Boolean|Not yet documented|
+|revokeUntrackedLicenses|Boolean|Not yet documented|
 
 
 
@@ -63,10 +64,11 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
 
 Content-type: application/json
-Content-length: 36
+Content-length: 72
 
 {
-  "notifyManagedDevices": true
+  "notifyManagedDevices": true,
+  "revokeUntrackedLicenses": true
 }
 ```
 

@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5190
+Content-Length: 5300
 
 {
   "value": {
@@ -178,7 +178,9 @@ Content-Length: 5190
     "appActionIfAndroidDeviceModelNotAllowed": "wipe",
     "customDialerAppProtocol": "Custom Dialer App Protocol value",
     "customDialerAppPackageId": "Custom Dialer App Package Id value",
-    "customDialerAppDisplayName": "Custom Dialer App Display Name value"
+    "customDialerAppDisplayName": "Custom Dialer App Display Name value",
+    "biometricAuthenticationBlocked": true,
+    "requiredAndroidSafetyNetEvaluationType": "hardwareBacked"
   }
 }
 ```

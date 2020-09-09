@@ -63,26 +63,23 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 691
+Content-Length: 567
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthApplicationPerformance",
     "id": "c7962a87-2a87-c796-872a-96c7872a96c7",
-    "appName": "App Name value",
-    "appFriendlyName": "App Friendly Name value",
-    "appPublisher": "App Publisher value",
-    "activeDevices": 13,
-    "totalAppUsageDuration": 5,
-    "totalAppCrashes": 15,
-    "totalAppHangs": 13,
-    "meanTimeToFailure": 1,
+    "appHangCount": 12,
     "appHealthScore": 4.666666666666667,
     "appHealthStatus": "App Health Status value",
     "allOrgsHealthScore": 6.0,
-    "allOrgsMeanTimeToFailure": 8,
-    "tenantId": "Tenant Id value",
-    "memaTimeGenerated": "Mema Time Generated value"
+    "activeDeviceCount": 1,
+    "appName": "App Name value",
+    "appDisplayName": "App Display Name value",
+    "appPublisher": "App Publisher value",
+    "appUsageDuration": 0,
+    "appCrashCount": 13,
+    "meanTimeToFailureInMinutes": 10
   }
 }
 ```

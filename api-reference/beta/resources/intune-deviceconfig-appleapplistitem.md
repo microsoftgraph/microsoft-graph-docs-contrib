@@ -26,7 +26,7 @@ Inherits from [appListItem](../resources/intune-deviceconfig-applistitem.md)
 |name|String|The application name Inherited from [appListItem](../resources/intune-deviceconfig-applistitem.md)|
 |publisher|String|The publisher of the application Inherited from [appListItem](../resources/intune-deviceconfig-applistitem.md)|
 |appStoreUrl|String|The Store URL of the application Inherited from [appListItem](../resources/intune-deviceconfig-applistitem.md)|
-|appId|String|The bundle identifier of the application Inherited from [appListItem](../resources/intune-deviceconfig-applistitem.md)|
+|appId|String|The application or bundle identifier of the application Inherited from [appListItem](../resources/intune-deviceconfig-applistitem.md)|
 
 ## Relationships
 None

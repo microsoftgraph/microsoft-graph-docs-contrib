@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8765
+Content-Length: 8844
 
 {
   "value": [
@@ -249,7 +249,9 @@ Content-Length: 8765
       "processorArchitecture": "x86",
       "specificationVersion": "Specification Version value",
       "joinType": "azureADJoined",
-      "skuFamily": "Sku Family value"
+      "skuFamily": "Sku Family value",
+      "skuNumber": 9,
+      "managementFeatures": "microsoftManagedDesktop"
     }
   ]
 }

@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 32668
+Content-Length: 32710
 
 {
   "value": {
@@ -555,6 +555,7 @@ Content-Length: 32668
     "firewallBlockStatefulFTP": true,
     "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
     "firewallPreSharedKeyEncodingMethod": "none",
+    "firewallIPSecExemptionsNone": true,
     "firewallIPSecExemptionsAllowNeighborDiscovery": true,
     "firewallIPSecExemptionsAllowICMP": true,
     "firewallIPSecExemptionsAllowRouterDiscovery": true,

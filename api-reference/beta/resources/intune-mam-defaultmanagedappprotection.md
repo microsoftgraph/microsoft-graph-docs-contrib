@@ -117,6 +117,8 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 |customDialerAppProtocol|String|Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.|
 |customDialerAppPackageId|String|PackageId of a custom dialer app to click-to-open a phone number on Android.|
 |customDialerAppDisplayName|String|Friendly name of a custom dialer app to click-to-open a phone number on Android.|
+|biometricAuthenticationBlocked|Boolean|Indicates whether use of the biometric authentication is allowed in place of a pin if PinRequired is set to True. (Android Only)|
+|requiredAndroidSafetyNetEvaluationType|[androidManagedAppSafetyNetEvaluationType](../resources/intune-mam-androidmanagedappsafetynetevaluationtype.md)|Defines the Android SafetyNet evaluation type requirement for a managed app to work. (Android Only). Possible values are: `basic`, `hardwareBacked`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -245,7 +247,9 @@ Here is a JSON representation of the resource.
   "appActionIfAndroidDeviceModelNotAllowed": "String",
   "customDialerAppProtocol": "String",
   "customDialerAppPackageId": "String",
-  "customDialerAppDisplayName": "String"
+  "customDialerAppDisplayName": "String",
+  "biometricAuthenticationBlocked": true,
+  "requiredAndroidSafetyNetEvaluationType": "String"
 }
 ```
 

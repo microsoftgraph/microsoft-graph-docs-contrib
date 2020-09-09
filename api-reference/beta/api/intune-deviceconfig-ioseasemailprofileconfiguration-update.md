@@ -87,6 +87,7 @@ The following table shows the properties that are required when you create the [
 |useOAuth|Boolean|Specifies whether the connection should use OAuth for authentication.|
 |signingCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Signing Certificate type for this Email profile. Possible values are: `none`, `certificate`, `derivedCredential`.|
 |encryptionCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Encryption Certificate type for this Email profile. Possible values are: `none`, `certificate`, `derivedCredential`.|
+|perAppVPNProfileId|String|Profile ID of the Per-App VPN policy to be used to access emails from the native Mail client|
 
 
 
@@ -100,7 +101,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2131
+Content-length: 2187
 
 {
   "@odata.type": "#microsoft.graph.iosEasEmailProfileConfiguration",
@@ -157,7 +158,8 @@ Content-length: 2131
   "requireSsl": true,
   "useOAuth": true,
   "signingCertificateType": "certificate",
-  "encryptionCertificateType": "certificate"
+  "encryptionCertificateType": "certificate",
+  "perAppVPNProfileId": "Per App VPNProfile Id value"
 }
 ```
 
@@ -166,7 +168,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2303
+Content-Length: 2359
 
 {
   "@odata.type": "#microsoft.graph.iosEasEmailProfileConfiguration",
@@ -226,7 +228,8 @@ Content-Length: 2303
   "requireSsl": true,
   "useOAuth": true,
   "signingCertificateType": "certificate",
-  "encryptionCertificateType": "certificate"
+  "encryptionCertificateType": "certificate",
+  "perAppVPNProfileId": "Per App VPNProfile Id value"
 }
 ```
 

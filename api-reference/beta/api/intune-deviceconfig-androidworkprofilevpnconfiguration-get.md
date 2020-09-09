@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2436
+Content-Length: 2775
 
 {
   "value": {
@@ -138,8 +138,18 @@ Content-Length: 2436
     "targetedPackageIds": [
       "Targeted Package Ids value"
     ],
+    "targetedMobileApps": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      }
+    ],
     "alwaysOn": true,
-    "alwaysOnLockdown": true
+    "alwaysOnLockdown": true,
+    "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
   }
 }
 ```

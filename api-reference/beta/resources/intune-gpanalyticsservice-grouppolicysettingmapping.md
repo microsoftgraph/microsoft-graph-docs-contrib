@@ -49,6 +49,7 @@ The Group Policy setting to MDM/Intune mapping.
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|The scope of the setting. Possible values are: `unknown`, `device`, `user`.|
 |intuneSettingUriList|String collection|The list of Intune Setting URIs this group policy setting maps to|
 |intuneSettingDefinitionId|String|The Intune Setting Definition Id|
+|admxSettingDefinitionId|String|Admx Group Policy Id|
 
 ## Relationships
 None
@@ -87,7 +88,8 @@ Here is a JSON representation of the resource.
   "intuneSettingUriList": [
     "String"
   ],
-  "intuneSettingDefinitionId": "String"
+  "intuneSettingDefinitionId": "String",
+  "admxSettingDefinitionId": "String"
 }
 ```
 

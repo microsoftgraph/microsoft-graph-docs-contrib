@@ -69,6 +69,7 @@ Inherits from [easEmailProfileConfigurationBase](../resources/intune-deviceconfi
 |useOAuth|Boolean|Specifies whether the connection should use OAuth for authentication.|
 |signingCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Signing Certificate type for this Email profile. Possible values are: `none`, `certificate`, `derivedCredential`.|
 |encryptionCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Encryption Certificate type for this Email profile. Possible values are: `none`, `certificate`, `derivedCredential`.|
+|perAppVPNProfileId|String|Profile ID of the Per-App VPN policy to be used to access emails from the native Mail client|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -152,7 +153,8 @@ Here is a JSON representation of the resource.
   "requireSsl": true,
   "useOAuth": true,
   "signingCertificateType": "String",
-  "encryptionCertificateType": "String"
+  "encryptionCertificateType": "String",
+  "perAppVPNProfileId": "String"
 }
 ```
 

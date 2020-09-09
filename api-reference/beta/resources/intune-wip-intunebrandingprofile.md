@@ -60,6 +60,7 @@ This entity contains data which is used in customizing the tenant level appearan
 |showOfficeWebApps|Boolean|Boolean that indicates if Office WebApps will be shown in Company Portal|
 |sendDeviceOwnershipChangePushNotification|Boolean|Boolean that indicates if a push notification is sent to users when their device ownership type changes from personal to corporate|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Customized device enrollment flow displayed to the end user . Possible values are: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
+|disableClientTelemetry|Boolean|Applies to telemetry sent from all clients to the Intune service. When disabled, all proactive troubleshooting and issue warnings within the client are turned off, and telemetry settings appear inactive or hidden to the device user.|
 |roleScopeTagIds|String collection|List of scope tags assigned to the branding profile|
 
 ## Relationships
@@ -132,6 +133,7 @@ Here is a JSON representation of the resource.
   "showOfficeWebApps": true,
   "sendDeviceOwnershipChangePushNotification": true,
   "enrollmentAvailability": "String",
+  "disableClientTelemetry": true,
   "roleScopeTagIds": [
     "String"
   ]

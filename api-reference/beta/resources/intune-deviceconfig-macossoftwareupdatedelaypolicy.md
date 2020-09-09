@@ -1,13 +1,13 @@
 ---
-title: "raPolicyServiceVersions enum type"
-description: "Not yet documented"
+title: "macOSSoftwareUpdateDelayPolicy enum type"
+description: "Flag enum to determine whether to delay software updates for macOS."
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
-# raPolicyServiceVersions enum type
+# macOSSoftwareUpdateDelayPolicy enum type
 
 Namespace: microsoft.graph
 
@@ -15,16 +15,14 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+Flag enum to determine whether to delay software updates for macOS.
 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|initial|1|Not yet documented|
-|betaStart|5000000|Not yet documented|
-|experimentStart|6000000|Not yet documented|
-|mmpcStart|6000001|Not yet documented|
-|iosStart|6000002|Not yet documented|
+|none|0|Software update delays will not be enforced.|
+|delayOSUpdateVisibility|1|Force delays for OS software updates.|
+|delayAppUpdateVisibility|2|Force delays for app software updates.|
 
 
 

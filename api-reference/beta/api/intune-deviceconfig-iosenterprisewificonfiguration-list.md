@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2387
+Content-Length: 2434
 
 {
   "value": [
@@ -107,6 +107,7 @@ Content-Length: 2387
       "proxyManualAddress": "Proxy Manual Address value",
       "proxyManualPort": 15,
       "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+      "disableMacAddressRandomization": true,
       "preSharedKey": "Pre Shared Key value",
       "eapType": "leap",
       "eapFastConfiguration": "useProtectedAccessCredential",

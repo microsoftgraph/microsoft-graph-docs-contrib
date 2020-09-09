@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2568
+Content-Length: 2628
 
 {
   "value": [
@@ -123,7 +123,8 @@ Content-Length: 2568
       "requireSsl": true,
       "useOAuth": true,
       "signingCertificateType": "certificate",
-      "encryptionCertificateType": "certificate"
+      "encryptionCertificateType": "certificate",
+      "perAppVPNProfileId": "Per App VPNProfile Id value"
     }
   ]
 }

@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1011
+Content-Length: 1072
 
 {
   "value": {
@@ -94,6 +94,8 @@ Content-Length: 1011
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "appStoreUrl": "https://example.com/appStoreUrl/"
   }
 }
