@@ -41,7 +41,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}
 > **Note:**
 >
 > - The `/app` path is deprecated. Going forward, use the `/communications` path.
-> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/concepts/cloud-communication-online-meeting-application-access-policy.md).
+> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md).
 > - `meetingId` is the `id` of an [onlineMeeting entity](../resources/onlinemeeting.md)
 
 ## Optional query parameters
