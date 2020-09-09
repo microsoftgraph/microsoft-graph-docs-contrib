@@ -3,7 +3,7 @@ title: "searchHitsContainer resource type"
 description: "Description on searchHitContainer"
 localization_priority: Normal
 author: "nmoreau"
-ms.prod: ""
+ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
