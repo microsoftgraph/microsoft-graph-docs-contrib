@@ -754,7 +754,7 @@ Let users [follow](/graph/api/site-follow?view=graph-rest-beta) or [unfollow](/g
 ### Identity and access
 [Identity providers](/graph/api/resources/identityprovider?view=graph-rest-1.0)
 [Improved auth guides](/graph/auth)
-[Migrating apps from Azure AD Graph to Microsoft Graph](migrate-azure-ad-graph-overview.md)
+[Migrating apps from Azure AD Graph to Microsoft Graph](migrate-azure-ad-graph-planning-checklist.md)
 
 ### SDKs
 [SDK guides](/sdks/sdks-overview.md)
