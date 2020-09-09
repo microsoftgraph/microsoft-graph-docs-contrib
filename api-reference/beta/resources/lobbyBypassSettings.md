@@ -1,6 +1,6 @@
 ---
 title: "lobbyBypassSettings resource type"
-description: "Specifies who can bypass the lobby and whether or not to let callers bypass the lobby.."
+description: "Specifies which participants can bypass the lobby."
 author: "frankpeng7"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -13,23 +13,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies who can bypass the lobby and whether or not to let callers bypass the lobby.
+Specifies which participants can bypass the lobby.
 
 ## Properties
 
 | Property              | Type    | Description                                                         | Required | Read only |
 | --------------------- | ------- | ------------------------------------------------------------------- | -------- | --------- |
-| scope                 | String  | Specify who can bypass the lobby. Possible values are listed below. | No       | No        |
-| isDialInBypassEnabled | Boolean | Whether or not to always let callers bypass the lobby.              | No       | No        |
+| scope                 | String  | Specifies who can bypass the lobby. Possible values are listed below. | No       | No        |
+| isDialInBypassEnabled | Boolean | Specifies whether or not to always let dial-in callers bypass the lobby. | No       | No        |
 
 ### scope values
 
 | Value                    | Description                                                                                                                                              |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| organizer                | Only the organizer is admitted into the meeting.                                                                                                         |
-| organization             | Only the participants from the same company are admitted into the meeting.                                                                               |
-| organizationAndFederated | Only the participants from the same company or trusted organization are admitted into the meeting. Any other participant is placed in the meeting lobby. |
-| everyone                 | Everyone is admitted into the meeting.                                                                                                                   |
+| organizer                | Only the organizer is admitted into the meeting, bypassing the lobby. All other participants are placed in the meeting lobby.                                                                                                         |
+| organization             | Only the participants from the same company are admitted into the meeting, bypassing the lobby. All other participants are placed in the meeting lobby.                                                                              |
+| organizationAndFederated | Only the participants from the same company or trusted organization are admitted into the meeting, bypassing the lobby. All other participants are placed in the meeting lobby. |
+| everyone                 | Everyone is admitted into the meeting. No participants are placed in the meeting lobby.                                                                                                                   |
 | unknownFutureValue       | Unknow future value.                                                                                                                                     |
 
 ## JSON representation
