@@ -76,7 +76,8 @@ Follow the steps above to create and/or grant an application access policy that 
 ## See also
 
 - [Permissions reference](permissions-reference.md)
-- [New-ApplicationAccessPolicy](TODO: powershell document)
-- [Get-ApplicationAccessPolicy](TODO: powershell document)
-- [Remove-ApplicationAccessPolicy](TODO: powershell document)
-- [Set-ApplicationAccessPolicy](TODO: powershell document)
+- [New-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/new-csapplicationaccesspolicy)
+- [Grant-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csapplicationaccesspolicy)
+- [Get-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/get-csapplicationaccesspolicy)
+- [Set-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/set-csapplicationaccesspolicy)
+- [Remove-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/remove-csapplicationaccesspolicy)
