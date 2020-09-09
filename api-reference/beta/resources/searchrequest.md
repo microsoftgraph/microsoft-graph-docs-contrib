@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+>[!CAUTION]
+> One property was renamed and will be deprecated by the end of 2020.
+
 The search request to be sent to the query endpoint.
 
  It contains the type of entities expected in the response, the underlying sources, the paging parameters, the sort options, the aggregations required and the fields requested and the actual search query.
@@ -26,6 +29,7 @@ The search request to be sent to the query endpoint.
 |query|[searchQuery](searchquery.md)|Contains the query terms.|Required|
 |from|Int32|Specifies the offset for the search results. Offset 0 returns the very first result.|Optional|
 |size|Int32|The size of the page to be retrieved.|Optional|
+|stored_fields|String collection | **Deprecated**. This is now replaced with the **fields** property. |Optional|
 |fields|String collection |Contains the fields to be returned for earch resource object. Note this is applicable for all entityTypes, such as `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`.|Optional|
 |sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most sortProperties in the Collection.|Optional|
 |aggregations|[aggregationOption](aggregationOption.md) collection|Specifies which aggregations (also known as refiners) to be retuned alongside the search results.|Optional|

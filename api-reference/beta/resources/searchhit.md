@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+>[!CAUTION]
+> Some properties were renamed, and their older name will be deprecated by the end of 2020.
+
 Represent a single result within the list of search results.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
@@ -21,10 +24,14 @@ Represent a single result within the list of search results.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|_id|String|**Deprecated** . Renamed as **hitId**. The internal identifier for the item.|
 |hitId|String|The internal identifier for the item.|
+|_score|Int32|**Deprecated**. Renamed as **rank**. The score or the order of the result.|
 |rank|Int32|The rank or the order of the result.|
+|_summary|String|**Deprecated**. Renamed as **summary**. A summary of the result (if summary is available).|
 |summary|String|A summary of the result (if summary is available).|
 |contentSource|String|The name of the contentSource which the **externalItem** is part of .|
+|_source|[entity](entity.md)|**Deprecated**. Renamed as **resource**. The underlying Graph representation of the search result.|
 |resource|[entity](entity.md)|The underlying Graph representation of the search result.|
 
 ## JSON representation

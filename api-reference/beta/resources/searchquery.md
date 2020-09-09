@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+>[!CAUTION]
+> One property was renamed and will be deprecated by the end of 2020.
+
 Represents a search query that contains search terms and optional filters.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
@@ -21,6 +24,7 @@ Represents a search query that contains search terms and optional filters.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|query_string|[searchQueryString](searchquerystring.md)|**Deprecated**. This is now replaced with the **queryString** property. The search query containing the search terms. Required.|
 |queryString|String|The search query containing the search terms. Required.|
 
 ## JSON representation
