@@ -13,6 +13,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## September 2020
 
+### Cloud communications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the **lobbyBypassSettings**, **isEntryExitAnnounced** and **allowedPresenters** property to the [onlineMeeting](/graph/api/resources/onlinemeeting) entity.|
+
 ### Reports
 
 | **Change type** | **Version** | **Description**                  |

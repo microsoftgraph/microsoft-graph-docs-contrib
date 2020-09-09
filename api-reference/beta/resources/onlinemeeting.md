@@ -44,13 +44,13 @@ Contains information about the meeting, including the URL used to join a meeting
 | joinInformation       | [itemBody](itembody.md)                       | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only                                                                                                                                       |
 | externalId            | String                                        | The external ID. A custom ID. Optional.                                                                                                                                                                                                                     |
 | isEntryExitAnnounced  | Boolean                                       | Whether or not to announce when callers join or leave.                                                                                                                                                                                                      |
-| lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby.                                                                                                                                                                      |
-| allowedPresenters     | String                                        | Specifies who can be a presenter in a meeting. Possible values are listed below.                                                                                                                                                                            |
+| lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby.                                                                                                                                                                                                  |
+| allowedPresenters     | onlineMeetingPresenters                       | Specifies who can be a presenter in a meeting. Possible values are listed below.                                                                                                                                                                            |
 
 > [!IMPORTANT]
 > `autoAdmittedUsers` property is obsolete. Use `lobbyBypassSettings.scope` instead for meeting option configurations.
 
-### allowedPresenters values
+### onlineMeetingPresenters values
 
 | Value              | Description                                                   |
 | ------------------ | ------------------------------------------------------------- |
