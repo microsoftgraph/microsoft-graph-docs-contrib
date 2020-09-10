@@ -353,17 +353,18 @@ To learn more about the People API, see [Get information about relevant people](
 
 ### Using $search on directory object collections
 
-You can use `$search` query parameter to filter results using tokenization. Tokenized search works by extracting words from your input and output string using spaces, numbers, different casing and symbols to separate the words, detailed as follow:
+You can use `$search` query parameter to filter results using tokenization. Tokenized search works by extracting words from your input and output string using spaces, numbers, different casing, and symbols to separate the words, detailed as follow:
 
 * **Spaces**: `hello world` => `hello`, `world`
-* **Different casing**¹: `HelloWorld` or `helloWORLD` => `hello`, `world` 
-* **Symbols**²: `hello.world` => `hello`, `.`, `world`
+* **Different casing**⁽¹⁾: `HelloWorld` or `helloWORLD` => `hello`, `world`
+* **Symbols**⁽²⁾: `hello.world` => `hello`, `.`, `world`
 * **Numbers**: `hello123world` => `hello`, `123`, `world`
 
-¹ Currently, tokenization only works when the casing is changing from Lower to Upper, so `HELLOworld` is considered a single token: `helloworld`  
-² Tokenization logic also combines words that are separated only by symbols, for example searching for `helloworld` will find `hello-world`.
+⁽¹⁾ Currently, tokenization only works when the casing is changing from Lower to Upper, so `HELLOworld` is considered a single token: `helloworld`
+⁽²⁾ Tokenization logic also combines words that are separated only by symbols, for example searching for `helloworld` will find `hello-world`
 
-> **Note**: after tokenization, the tokens are matched indipendently of the original casing, and they are matched in any order.
+> **Note**: after tokenization, the tokens are matched independently of the original casing, and they are matched in any order.
+> `$search` query parameter on directory objects collections **requires** a special request header: `ConsistencyLevel: eventual`.
 
 The tokenized search support works only on the displayName and description fields. Any field can be put in `$search`, fields other than **displayName** and **description** defaults to `$filter` startswith behavior. For example:
 
