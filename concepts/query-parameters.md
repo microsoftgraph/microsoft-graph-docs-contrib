@@ -353,33 +353,43 @@ To learn more about the People API, see [Get information about relevant people](
 
 ### Using $search on directory object collections
 
-You can use the `$search` query parameter to restrict results based on a search criterion such as looking for words in strings delimited by spaces, casing, and character types (numbers and special characters). The tokenized search support works only on the displayName and description fields. Any field can be put in `$search`, fields other than **displayName** and **description** defaults to `$filter` startswith behavior. For example:
+You can use `$search` query parameter to filter results using tokenization. Tokenized search works by extracting words from your input and output string using spaces, numbers, different casing and symbols to separate the words, detailed as follow:
+
+* **Spaces**: `hello world` => `hello`, `world`
+* **Different casing**¹: `HelloWorld` or `helloWORLD` => `hello`, `world` 
+* **Symbols**²: `hello.world` => `hello`, `.`, `world`
+* **Numbers**: `hello123world` => `hello`, `123`, `world`
+
+¹ Currently, tokenization only works when the casing is changing from Lower to Upper, so `HELLOworld` is considered a single token: `helloworld`
+² Tokenization logic also combines words that are separated only by symbols, for example searching for `helloworld` will find `hello-world`.
+
+> **Note**: after tokenization, the tokens are matched indipendently of the original casing, and they are matched in any order.
+
+The tokenized search support works only on the displayName and description fields. Any field can be put in `$search`, fields other than **displayName** and **description** defaults to `$filter` startswith behavior. For example:
 
 `https://graph.microsoft.com/beta/groups/?$search="displayName:OneVideo"`
- 
-This looks for all groups with display names that look like "OneVideo". `$search` can be used together with `$filter` as well. For example: 
- 
-`https://graph.microsoft.com/beta/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"` 
- 
-This looks for all mail-enabled groups with display names that look like "OneVideo". The results are restricted based on a logical conjunction (an "AND") of the `$filter` and the entire query in the `$search`. The search text is tokenized based on casing, but matches are performed in a case-insensitive manner. For example, "OneVideo" would be split into two input tokens "one" and "video", but matches properties in insensitive to case. 
- 
- 
-The syntax of search follows these rules: 
- 
-- Generic format: $search="clause1" [AND | OR]  "[clauseX]". 
-- Any number of clauses is supported. Parentheses for precedence is also supported. 
-- The syntax for each clause is <property>:<text to search>. 
-- The property name must be specified in clause. Any property that can be used in `$filter` can also be used inside `$search`. Depending on the property, the search behavior is either "search" or "startswith" if search is not supported on the property. 
-- The whole clause part must be put inside double quotes.  
-- Logical operator 'AND' 'OR' must be put outside double quotes. They must be in upper case. 
-- Given that the whole clause part needs to be put inside double quotes, if <text to search> contains double quote and backslash, it needs to be escaped by backslash. No other characters need to be escaped. 
 
-The table below shows some examples. 
- 
+This looks for all groups with display names that look like "OneVideo". `$search` can be used together with `$filter` as well. For example:
+
+`https://graph.microsoft.com/beta/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"`
+
+This looks for all mail-enabled groups with display names that look like "OneVideo". The results are restricted based on a logical conjunction (an "AND") of the `$filter` and the entire query in the `$search`. The search text is tokenized based on casing, but matches are performed in a case-insensitive manner. For example, "OneVideo" would be split into two input tokens "one" and "video", but matches properties in insensitive to case.
+
+The syntax of search follows these rules:
+
+* Generic format: $search="clause1" \[AND \| OR\] "\[clauseX\]"\.
+* Any number of clauses is supported. Parentheses for precedence is also supported.
+* The syntax for each clause is: "\<property>:\<text to search>".
+* The property name must be specified in clause. Any property that can be used in `$filter` can also be used inside `$search`. Depending on the property, the search behavior is either "search" or "startswith" if search is not supported on the property.
+* The whole clause part must be put inside double quotes.
+* Logical operator 'AND' 'OR' must be put outside double quotes. They must be in upper case.
+* Given that the whole clause part needs to be put inside double quotes, if contains double quote and backslash, it needs to be escaped by backslash. No other characters need to be escaped.
+
+The table below shows some examples.
 
 | Object class | Description | Example |
 | ------------ | ----------- | ------- |
-| User | Address book display name of the user. |  `https://graph.microsoft.com/beta/users?$search="displayName:Guthr"` |
+| User | Address book display name of the user. | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr"` |
 | User | Address book display name or mail of the user. | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr" OR "mail:Guthr"` |
 | Group | Address book display name or description of the group. | `https://graph.microsoft.com/beta/groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive")` |
 | Group | Address book display name on a mail enabled group. | `https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"` |
