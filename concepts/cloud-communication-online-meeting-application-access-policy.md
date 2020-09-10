@@ -8,7 +8,7 @@ ms.prod: "cloud-communications"
 
 # Allow application to access online meetings on behalf of a user
 
-TODO: some background?
+TODO: @jsandoval-msft please help provide some background here. Refer to https://docs.microsoft.com/en-us/graph/auth-limit-mailbox-access
 
 Administrators who want to allow an application to access online meeting resources on behalf of a user can use **New-CsApplicationAccessPolicy** and **Grant-CsApplicationAccessPolicy** PowerShell cmdlets to configure access control. This article covers the basic steps to configure an application access policy.
 

@@ -1,6 +1,6 @@
 ---
 title: "Get onlineMeeting"
-description: "[Beta] Retrieve the properties and relationships of an **online meeting** object."
+description: "Retrieve the properties and relationships of an onlineMeeting object."
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
-> ~~**Note:** The `GET` method is currently only supported for a [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). These IDs are generated for Cloud-Video-Interop licensed users and this method is used to get the details to join the meeting.~~
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 
 > [!IMPORTANT]
-> Retrieving an online meeting with an application token is now available. Administrators must create an [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to retrieve an online meeting on behalf of that user (user ID specified in the reuqest path).
+> Retrieving an online meeting with an application token is now available. Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to retrieve an online meeting on behalf of that user (user ID specified in the reuqest path).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -38,11 +36,12 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-> **Note:**
+> **Notes:**
 >
 > - The `/app` path is deprecated. Going forward, use the `/communications` path.
-> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md).
-> - `meetingId` is the `id` of an [onlineMeeting entity](../resources/onlinemeeting.md)
+> - `id` in the first two routes refers to [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up).
+> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/graph/cloud-communication-online-meeting-application-access-policy.md).
+> - `meetingId` is the **id** of an [onlineMeeting entity](../resources/onlinemeeting.md).
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.

@@ -1,6 +1,6 @@
 ---
 title: "Delete onlineMeeting"
-description: "[Beta] Delete an online meeting."
+description: "Delete an online meeting."
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -24,17 +24,17 @@ Delete an [onlineMeeting](../resources/onlinemeeting.md) object.
 | Application                            | OnlineMeetings.ReadWrite.All                |
 
 > [!IMPORTANT]
-> Deleting an online meeting with an application token is now available. Administrators must create an [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to delete an online meeting on behalf of that user (user ID specified in the reuqest path) has created.
+> Administrators must create an [application access policy](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to delete an online meeting on behalf of that user (user ID specified in the reuqest path) has created.
 
 ## HTTP request
 
-Using delegated token
+Using a delegated token
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
 ```
 
-Using application token
+Using an application token
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
@@ -42,8 +42,8 @@ DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId
 
 > **Note:**
 >
-> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/concepts/cloud-communication-online-meeting-application-access-policy.md).
-> - `meetingId` is the `id` of an [onlineMeeting entity](../resources/onlinemeeting.md)
+> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md).
+> - `meetingId` is the **id** of an [onlineMeeting entity](../resources/onlinemeeting.md)
 
 ## Request headers
 | Name          | Description               |

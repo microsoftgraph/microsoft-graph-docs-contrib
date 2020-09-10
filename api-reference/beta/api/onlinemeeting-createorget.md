@@ -1,6 +1,6 @@
 ---
 title: "onlineMeeting: createOrGet"
-description: "[Beta] Create an online meeting with a custom specified external ID. If the external ID already exists, this API will return the **onlineMeeting** object with that external ID."
+description: "Create an online meeting with a custom specified external ID. If the external ID already exists, this API will return the onlineMeeting object with that external ID."
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -27,23 +27,23 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | OnlineMeetings.ReadWrite.All                |
 
 > [!IMPORTANT]
-> Calling CreateOrGet API with an application token is now available. Administrators must create an [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to create or get an online meeting with external ID on behalf of that user (user ID specified in the request path).
+> Administrators must create an [application access policy](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to create or get an online meeting with external ID on behalf of that user (user ID specified in the request path).
 
 ## HTTP request
 
-Using delegated token
+Using a delegated token
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/me/onlineMeetings/createOrGet
+POST /me/onlineMeetings/createOrGet
 ```
 
-Using application token
+Using an application token
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/createOrGet
+POST /users/{userId}/onlineMeetings/createOrGet
 ```
 
-> **Note:** `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](../../../concepts/cloud-communication-online-meeting-application-access-policy.md).
+> **Note:** `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md).
 
 ## Request headers
 | Name          | Description                 |
