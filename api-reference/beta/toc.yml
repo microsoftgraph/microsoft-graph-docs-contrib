@@ -9797,6 +9797,37 @@ items:
               href: api/phoneauthenticationmethod-enablesmssignin.md
             - name: Disable SMS sign-in
               href: api/phoneauthenticationmethod-disablesmssignin.md
+          - name: FIDO2 Security Key
+            href: resources/fido2authenticationmethod.md
+            items:
+            - name: List
+              href: api/fido2authenticationmethod-list.md
+            - name: Get
+              href: api/fido2authenticationmethod-get.md
+            - name: Delete
+              href: api/fido2authenticationmethod-delete.md
+          - name: Paswordless Phone Sign-in
+            href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
+            items:
+            - name: List
+              href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-list.md
+            - name: Get
+              href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
+            - name: Delete
+              href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
+          - name: Email
+            href: resources/emailauthenticationmethod.md
+            items:
+            - name: List
+              href: api/emailauthenticationmethod-list.md
+            - name: Get
+              href: api/emailauthenticationmethod-get.md
+            - name: Update
+              href: api/emailauthenticationmethod-update.md
+            - name: Delete
+              href: api/emailauthenticationmethod-delete.md
+            - name: Add
+              href: api/emailauthenticationmethod-create.md
         - name: Certificate-based auth configuration
           href: resources/certificatebasedauthconfiguration.md
           items:
