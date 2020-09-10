@@ -357,11 +357,11 @@ You can use `$search` query parameter to filter results using tokenization. Toke
 
 * **Spaces**: `hello world` => `hello`, `world`
 * **Different casing**⁽¹⁾: `HelloWorld` or `helloWORLD` => `hello`, `world`
-* **Symbols**⁽²⁾: `hello.world` => `hello`, `.`, `world`
+* **Symbols**⁽²⁾: `hello.world` => `hello`, `.`, `world`, `helloworld`
 * **Numbers**: `hello123world` => `hello`, `123`, `world`
 
-⁽¹⁾ Currently, tokenization only works when the casing is changing from Lower to Upper, so `HELLOworld` is considered a single token: `helloworld`  
-⁽²⁾ Tokenization logic also combines words that are separated only by symbols, for example searching for `helloworld` will find `hello-world`
+⁽¹⁾ Currently, tokenization only works when the casing is changing from Lower to Upper, so `HELLOworld` is considered a single token: `helloworld`, and `HelloWORld` two tokens: `hello`, `world`  
+⁽²⁾ Tokenization logic also combines words that are separated only by symbols, for example searching for `helloworld` will find `hello-world` and `hello.world`
 
 > **Note**: after tokenization, the tokens are matched independently of the original casing, and they are matched in any order.
 > `$search` query parameter on directory objects collections **requires** a special request header: `ConsistencyLevel: eventual`.
@@ -427,8 +427,9 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 ## skipToken parameter
 
-Some requests return multiple pages of data either due to server-side paging or due to the use of the [`$top`](#top-parameter) parameter to limit the page size of the response. Many Microsoft Graph APIs use the `skipToken` query parameter to reference subsequent pages of the result. The `$skiptoken` parameter contains an opaque token that references the next page of results and is returned in the URL provided in the `@odata.nextLink` property in the response. To learn more, see [Paging](./paging.md).
-
+Some requests return multiple pages of data either due to server-side paging or due to the use of the [`$top`](#top-parameter) parameter to limit the page size of the response. Many Microsoft Graph APIs use the `skipToken` query parameter to reference subsequent pages of the result.  
+The `$skiptoken` parameter contains an opaque token that references the next page of results and is returned in the URL provided in the `@odata.nextLink` property in the response. To learn more, see [Paging](./paging.md).
+> **Note:** if you are using Odata Count (adding `$count=true` in the querystring), the `@odata.count` property will be present only in the first page.
 
 ## top parameter
 
