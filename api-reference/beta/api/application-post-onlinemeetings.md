@@ -1,6 +1,6 @@
 ---
 title: "Create onlineMeeting"
-description: "[Beta] Create an online meeting on behalf of a user specified in the request body."
+description: "Create an online meeting on behalf of a user specified in the request body."
 author: "ananmishr"
 localization_priority: Priority
 ms.prod: "cloud-communications"
