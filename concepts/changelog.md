@@ -13,6 +13,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## September 2020
 
+### Calendar
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition | v1.0| Added [cancel](/graph/api/event-cancel?view=graph-rest-v1.0) and [forward](/graph/api/event-forward?view=graph-rest-v1.0) operations to manage [event](/graph/api/resources/event?view=graph-rest-v1.0) resources on [calendar](/graph/api/resources/calendar?view=graph-rest-v1.0). |
+
 ### Cloud communications
 
 | **Change type** | **Version**   | **Description**                          |
