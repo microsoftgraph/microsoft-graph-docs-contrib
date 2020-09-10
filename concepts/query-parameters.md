@@ -360,7 +360,7 @@ You can use `$search` query parameter to filter results using tokenization. Toke
 * **Symbols**⁽²⁾: `hello.world` => `hello`, `.`, `world`
 * **Numbers**: `hello123world` => `hello`, `123`, `world`
 
-⁽¹⁾ Currently, tokenization only works when the casing is changing from Lower to Upper, so `HELLOworld` is considered a single token: `helloworld`
+⁽¹⁾ Currently, tokenization only works when the casing is changing from Lower to Upper, so `HELLOworld` is considered a single token: `helloworld`  
 ⁽²⁾ Tokenization logic also combines words that are separated only by symbols, for example searching for `helloworld` will find `hello-world`
 
 > **Note**: after tokenization, the tokens are matched independently of the original casing, and they are matched in any order.
