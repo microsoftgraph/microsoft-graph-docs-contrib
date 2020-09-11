@@ -1,43 +1,37 @@
 ---
 title: "fido2AuthenticationMethodConfiguration resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: resourcePageType
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # fido2AuthenticationMethodConfiguration resource type
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+A representation of FIDO2 Authentication Methods policy. Authentication Methods policies define configuration settings and users or groups that are enabled to use the authentication method.
 
-Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List fido2AuthenticationMethodConfiguration](../api/fido2authenticationmethodconfiguration-list.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) collection|Get a list of the [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) objects and their properties.|
-|[Create fido2AuthenticationMethodConfiguration](../api/fido2authenticationmethodconfiguration-create.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|Create a new [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object.|
-|[Get fido2AuthenticationMethodConfiguration](../api/fido2authenticationmethodconfiguration-get.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|Read the properties and relationships of a [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object.|
-|[Update fido2AuthenticationMethodConfiguration](../api/fido2authenticationmethodconfiguration-update.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|Update the properties of a [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object.|
-|[Delete fido2AuthenticationMethodConfiguration](../api/fido2authenticationmethodconfiguration-delete.md)|None|Deletes a [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object.|
-|[List includeTargets](../api/fido2authenticationmethodconfiguration-list-includetargets.md)|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|Get the authenticationMethodTargets from the includeTargets navigation property.|
-|[Create includeTargets](../api/fido2authenticationmethodconfiguration-post-includetargets.md)|[authenticationMethodTarget](../resources/authenticationmethodtarget.md)|Create a new includeTargets object.|
-|[Get includeTargets](../api/fido2authenticationmethodconfiguration-get-authenticationmethodtarget.md)|[authenticationMethodTarget](../resources/authenticationmethodtarget.md)|Read the properties and relationships of an [authenticationMethodTarget](../resources/authenticationmethodtarget.md) object.|
-|[Update includeTargets](../api/fido2authenticationmethodconfiguration-update-includetargets.md)|[authenticationMethodTarget](../resources/authenticationmethodtarget.md)|Update the properties of an includeTargets object.|
-|[Delete includeTargets](../api/fido2authenticationmethodconfiguration-delete-includetargets.md)|None|Delete an [authenticationMethodTarget](../resources/authenticationmethodtarget.md) object.|
+|[Get](../api/fido2authenticationmethodconfiguration-get.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|Read the properties and relationships of a fido2AuthenticationMethodConfiguration object.|
+|[Update](../api/fido2authenticationmethodconfiguration-update.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|Update the properties of a fido2AuthenticationMethodConfiguration object.|
+|[Delete](../api/fido2authenticationmethodconfiguration-delete.md)|None|Returns the fido2AuthenticationMethodConfiguration object to its default configuration.|
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|isAttestationEnforced|Boolean|**TODO: Add Description**|
-|isSelfServiceRegistrationAllowed|Boolean|**TODO: Add Description**|
-|keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|**TODO: Add Description**|
-|state|authenticationMethodState|**TODO: Add Description** Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). Possible values are: `enabled`, `disabled`.|
+|id|String|The authentication method policy identifier.|
+|isAttestationEnforced|Boolean|Determines whether attestation must be enforced for FIDO2 security key registration.|
+|isSelfServiceRegistrationAllowed|Boolean|Determines if users can register new FIDO2 security keys.|
+|keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|Controls whether key restrictions are enforced on FIDO2 security keys, either allowing or disallowing certain key types as defined by AAGUID.|
+|state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
 
 ## Relationships
 |Relationship|Type|Description|
