@@ -29,7 +29,7 @@ In addition to the following permissions, the user or app's tenant must have an 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/documents/{id}/$value
+GET /print/printers/{id}/jobs/{id}/documents/{id}/$value
 ```
 ## Request headers
 | Name          | Description               |
