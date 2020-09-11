@@ -85,7 +85,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta and v1.0 | Added the **transcription** property to the [call](/graph/api/resources/call) entity.|
 | Addition | v1.0 | Added the **cancelMediaProcessing** API to the [call](/graph/api/resources/call) entity.|
 | Addition | beta and v1.0 | Added the **transcription** property to the [call](/graph/api/resources/call) entity.|
 
