@@ -166,7 +166,9 @@ The schema changes for the request are :
 
 The schema changes for the response are :
 
-- [searchHit](./searchhit.md) following properties **_id**, **_score**, **_summary** and **_sources** have been renamed respectively to **hitId**, **rank**, **summary** and **resource**. 
+- [searchHit](./searchhit.md) 
+  - the following properties **_id**, **_score**, **_summary** and **_sources** have been renamed respectively to **hitId**, **rank**, **summary** and **resource**.
+  - **_sortField** has been removed. This is a breaking change.
 
 In order to ensure a backward compatibility, the older schema will still be functional until end of 2020.
 You will need to use the new property names and types in the request to get the new property names in the response.

@@ -26,6 +26,7 @@ Represent a single result within the list of search results.
 |hitId|String|The internal identifier for the item.|
 |_score|Int32|**Deprecated**. Renamed as **rank**. The score or the order of the result.|
 |rank|Int32|The rank or the order of the result.|
+|_sortField|String|**Deprecated**. This field has been removed.|
 |_summary|String|**Deprecated**. Renamed as **summary**. A summary of the result (if summary is available).|
 |summary|String|A summary of the result (if summary is available).|
 |contentSource|String|The name of the contentSource which the **externalItem** is part of .|
