@@ -45,7 +45,12 @@ PATCH /identity/continuousAccessEvaluationPolicy
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-For the list of properties, see [continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md).
+|Property|Type|Description|
+|:---|:---|:---|
+|groups|String collection|The collection of group identifiers in scope for evaluation. All groups are in scope when the collection is empty.|
+|isEnabled|Boolean| `true` to indicate whether continuous access evaluation should be performed; otherwise `false`. |
+|users|String collection|The collection of user identifiers in scope for evaluation. All users are in scope when the collection is empty.|
+
 
 ## Response
 
