@@ -353,20 +353,20 @@ To learn more about the People API, see [Get information about relevant people](
 
 ### Using $search on directory object collections
 
-You can use `$search` query parameter to filter results using tokenization. Tokenized search works by extracting words from your input and output string using spaces, numbers, different casing, and symbols to separate the words, detailed as follow:
+You can use a `$search` query parameter to filter results using tokenization. Tokenized search works by extracting words from your input and output string, using spaces, numbers, different casing, and symbols to separate the words, as follow:
 
 * **Spaces**: `hello world` => `hello`, `world`
 * **Different casing**⁽¹⁾: `HelloWorld` or `helloWORLD` => `hello`, `world`
 * **Symbols**⁽²⁾: `hello.world` => `hello`, `.`, `world`, `helloworld`
 * **Numbers**: `hello123world` => `hello`, `123`, `world`
 
-⁽¹⁾ Currently, tokenization only works when the casing is changing from Lower to Upper, so `HELLOworld` is considered a single token: `helloworld`, and `HelloWORld` two tokens: `hello`, `world`  
-⁽²⁾ Tokenization logic also combines words that are separated only by symbols, for example searching for `helloworld` will find `hello-world` and `hello.world`
+⁽¹⁾ Currently, tokenization only works when the casing is changing from lowercase to uppercase, so `HELLOworld` is considered a single token: `helloworld`, and `HelloWORld` is two tokens: `hello`, `world`. 
+⁽²⁾ Tokenization logic also combines words that are separated only by symbols; for example, searching for `helloworld` will find `hello-world` and `hello.world`.
 
 > **Note**: after tokenization, the tokens are matched independently of the original casing, and they are matched in any order.
 > `$search` query parameter on directory objects collections **requires** a special request header: `ConsistencyLevel: eventual`.
 
-The tokenized search support works only on the displayName and description fields. Any field can be put in `$search`, fields other than **displayName** and **description** defaults to `$filter` startswith behavior. For example:
+The tokenized search support works only on the **displayName** and **description** fields. Any field can be put in `$search`; fields other than **displayName** and **description** default to `$filter` startswith behavior. For example:
 
 `https://graph.microsoft.com/beta/groups/?$search="displayName:OneVideo"`
 
@@ -374,7 +374,7 @@ This looks for all groups with display names that look like "OneVideo". `$search
 
 `https://graph.microsoft.com/beta/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"`
 
-This looks for all mail-enabled groups with display names that look like "OneVideo". The results are restricted based on a logical conjunction (an "AND") of the `$filter` and the entire query in the `$search`. The search text is tokenized based on casing, but matches are performed in a case-insensitive manner. For example, "OneVideo" would be split into two input tokens "one" and "video", but matches properties in insensitive to case.
+This looks for all mail-enabled groups with display names that look like "OneVideo". The results are restricted based on a logical conjunction (an "AND") of the `$filter` and the entire query in the `$search`. The search text is tokenized based on casing, but matches are performed in a case-insensitive manner. For example, "OneVideo" would be split into two input tokens "one" and "video", but matches properties insensitive to case.
 
 The syntax of search follows these rules:
 
@@ -384,18 +384,18 @@ The syntax of search follows these rules:
 * The property name must be specified in clause. Any property that can be used in `$filter` can also be used inside `$search`. Depending on the property, the search behavior is either "search" or "startswith" if search is not supported on the property.
 * The whole clause part must be put inside double quotes.
 * Logical operator 'AND' 'OR' must be put outside double quotes. They must be in upper case.
-* Given that the whole clause part needs to be put inside double quotes, if contains double quote and backslash, it needs to be escaped by backslash. No other characters need to be escaped.
+* Given that the whole clause part needs to be put inside double quotes, if it contains double quote and backslash, it needs to be escaped with a backslash. No other characters need to be escaped.
 
-The table below shows some examples.
+The following table shows some examples.
 
 | Object class | Description | Example |
 | ------------ | ----------- | ------- |
 | User | Address book display name of the user. | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr"` |
 | User | Address book display name or mail of the user. | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr" OR "mail:Guthr"` |
 | Group | Address book display name or description of the group. | `https://graph.microsoft.com/beta/groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive")` |
-| Group | Address book display name on a mail enabled group. | `https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"` |
+| Group | Address book display name on a mail-enabled group. | `https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"` |
 
-Both the string inputs you provide in `$search`, as well as the searchable properties indicated above, are split up into parts by spaces, different casing, and character types (numbers and special characters).
+Both the string inputs you provide in `$search`, as well as the searchable properties, are split up into parts by spaces, different casing, and character types (numbers and special characters).
 
 ## select parameter
 
@@ -427,9 +427,9 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 ## skipToken parameter
 
-Some requests return multiple pages of data either due to server-side paging or due to the use of the [`$top`](#top-parameter) parameter to limit the page size of the response. Many Microsoft Graph APIs use the `skipToken` query parameter to reference subsequent pages of the result.  
+Some requests return multiple pages of data, either due to server-side paging or due to the use of the [`$top`](#top-parameter) parameter to limit the page size of the response. Many Microsoft Graph APIs use the `skipToken` query parameter to reference subsequent pages of the result.  
 The `$skiptoken` parameter contains an opaque token that references the next page of results and is returned in the URL provided in the `@odata.nextLink` property in the response. To learn more, see [Paging](./paging.md).
-> **Note:** if you are using Odata Count (adding `$count=true` in the querystring), the `@odata.count` property will be present only in the first page.
+> **Note:** if you're using OData Count (adding `$count=true` in the querystring), the `@odata.count` property will be present only in the first page.
 
 ## top parameter
 
