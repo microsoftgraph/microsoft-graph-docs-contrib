@@ -48,7 +48,7 @@ Represents an Azure AD [access review](accessreviews-root.md).
 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-| `instances`               |[accessReviewInstances](accessreviewinstances.md) collection         | The collection of access reviews instances past, present and future, if the accessReviewScheduleDefinition is a recurring access review, are the children of accessReviewScheduleDefinition. These instances can also be for each unique group, if doing an all groups review. If a review series does not recur, it will always have one instance. |
+| `instances`               |[accessReviewInstances](accessreviewinstances.md) collection         | If the accessReviewScheduleDefinition is a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique group under review in the accessReviewScheduleDefinition. If a review has multiple groups and multiple instances, each group will have a unique instance for each recurrence. |
 
 ## JSON representation
 
