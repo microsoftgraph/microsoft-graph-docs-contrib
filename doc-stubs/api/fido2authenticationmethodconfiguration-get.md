@@ -1,10 +1,10 @@
 ---
 title: "Get fido2AuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a fido2AuthenticationMethodConfiguration object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: apiPageType
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # Get fido2AuthenticationMethodConfiguration
@@ -17,9 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.ReadWrite.AuthenticationMethod|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -28,11 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /fido2AuthenticationMethodConfiguration
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fido2
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -55,11 +52,13 @@ If successful, this method returns a `200 OK` response code and a [fido2Authenti
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/fido2AuthenticationMethodConfiguration
+GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fido2
 ```
 
 
 ### Response
+The following is an example of the response.
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -74,13 +73,23 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
-    "id": "c118ce03-ce03-c118-03ce-18c103ce18c1",
-    "state": "String",
-    "isSelfServiceRegistrationAllowed": "Boolean",
-    "isAttestationEnforced": "Boolean",
+    "id": "Fido2",
+    "state": "enabled",
+    "isSelfServiceRegistrationAllowed": true,
+    "isAttestationEnforced": true,
     "keyRestrictions": {
-      "@odata.type": "microsoft.graph.fido2KeyRestrictions"
-    }
+        "isEnforced": false,
+        "enforcementType": "block",
+        "aaGuids": []
+    },
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false,
+            "useForSignIn": true
+        }
+    ]
   }
 }
 ```
