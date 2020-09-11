@@ -14,7 +14,7 @@ This article describes error codes that are returned by the Workbooks and charts
 
 The following table lists the current error codes and messages. The service might add new error codes at any time. 
 
-| Code                      | Status code | Message
+| Error Code                      | HTTP Status code mapping | Error Message
 |:--------------------------|:----------------------------|:--------------
 | **accessDenied**      | 403 | The caller doesn't have permission to perform the action.
 | **conflict**          | 409 | The current state conflicts with what the request expects.
