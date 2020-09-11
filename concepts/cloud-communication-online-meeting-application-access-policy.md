@@ -8,7 +8,7 @@ ms.prod: "cloud-communications"
 
 # Allow application to access online meetings on behalf of a user
 
-TODO: @jsandoval-msft please help provide some background here. Refer to https://docs.microsoft.com/en-us/graph/auth-limit-mailbox-access
+For some use cases, it is appropriate for an app to call Microsoft Graph to take actions on behalf of a user. These are usually background services or daemon apps that run on a server without the presence of a signed-in user. For example, an app may need to call Microsoft Graph to schedule multiple meetings based on published schedules (e.g. courses) or external scheduling tools. In these cases, the user that the application acts on behalf of is identified as the meeting organizer.
 
 Administrators who want to allow an application to access online meeting resources on behalf of a user can use **New-CsApplicationAccessPolicy** and **Grant-CsApplicationAccessPolicy** PowerShell cmdlets to configure access control. This article covers the basic steps to configure an application access policy.
 
