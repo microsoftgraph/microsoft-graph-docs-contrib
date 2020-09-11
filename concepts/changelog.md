@@ -18,6 +18,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **lobbyBypassSettings**, **isEntryExitAnnounced**, and **allowedPresenters** property to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) entity.|
+| Addition | beta | Added support for using an application token on behalf of a user to operate these actions: **Create**, **Retrieve**, **Update**, **Delete**, **CreateOrGet** on an [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) entity. |
 
 ### Devices and apps | Cloud printing
 
