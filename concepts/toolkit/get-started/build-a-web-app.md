@@ -7,7 +7,7 @@ author: elisenyang
 
 # Build a web application with the Microsoft Graph Toolkit
 
-This topic describes how to get started with the Microsoft Graph Toolkit in a web application written in vanilla JavaScript. If you would like to learn how to use the Toolkit with a web framework, see [Use Toolkit with React](./use-toolkit-with-react.md) or [Use Toolkit with Angular](./use-toolkit-with-angular.md).
+This topic describes how to get started with the Microsoft Graph Toolkit in a web application written in vanilla JavaScript. If you would like to learn how to use the Toolkit with a web framework, see [Use the Toolkit with React](./use-toolkit-with-react.md) or [Use the Toolkit with Angular](./use-toolkit-with-angular.md).
 
 Getting started with the Microsoft Graph Toolkit involves the following steps:
 1. Add Microsoft Graph Toolkit to your project.
