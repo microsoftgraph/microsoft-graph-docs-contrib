@@ -19,7 +19,7 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 [Get a report that includes the count of unique users](/graph/api/reportroot-getemailappusageversionsusercounts) for Outlook 2019 and for Outlook on Microsoft 365.
 
 ### Users
-Aside from getting the SMTP address of a [user](/graph/api/resources/user) through the **mail** property, you can now set that property and udpate the user's email address. 
+Aside from getting the SMTP address of a [user](/graph/api/resources/user) through the **mail** property, you can now set that property and update the user's email address. 
 
 ### Cloud communications
 - Deprecation of the **autoAdmittedUsers** property of [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta). Instead, use the new **lobbyBypassSettings** property and its [values](/graph/api/resources/lobbybypasssettings?view=graph-rest-beta#lobbybypassscope-values).
@@ -51,8 +51,8 @@ The Microsoft [Search API](/graph/api/resources/search-api-overview?view=graph-r
 [Track changes](delta-query-overview.md) of supported resources in the Microsoft Graph for US Government national cloud.
 
 ### Cloud communications
-- [Cancel](/graph/api/call-cancelmediaprocessing) any Interactive Voice Response (IVR) actions that are in prcess or in queue, that are either [playing an audio prompt](/graph/api/call-playprompt) or [recording a response](/graph/api/call-record).
-- Get [call transciption information](/graph/api/resources/calltranscriptioninfo) through the **transciption** property.
+- [Cancel](/graph/api/call-cancelmediaprocessing) any Interactive Voice Response (IVR) actions that are in process or in queue, that are either [playing an audio prompt](/graph/api/call-playprompt) or [recording a response](/graph/api/call-record).
+- Get [call transcription information](/graph/api/resources/calltranscriptioninfo) through the **transcription** property.
 
 ### Teamwork
 - Use an alternative way to [create a team](/graph/api/team-post) directly without first creating a group.
@@ -68,7 +68,7 @@ Support password-based single-sign-on in [service principal](/graph/api/resource
 
 ### Calendar
 Enhance programmatic support for scenarios involving a recurring [event](/graph/api/resources/event?view=graph-rest-beta):
-- Reliably identify any occurrence in a recurring series, including a modified or cancelled occurrence, by using the **occurrenceId** property .
+- Reliably identify any occurrence in a recurring series, including a modified or cancelled occurrence, by using the **occurrenceId** property.
 - Get any exceptions in a recurring series by using the **exceptionOccurrences** property.
 - Get any cancellations in a series using the **cancelledOccurrences** property.
 
