@@ -1,22 +1,22 @@
 ---
-title: "Build a SharePoint web part with Microsoft Graph Toolkit"
+title: "Build a SharePoint web part with the Microsoft Graph Toolkit"
 description: "How to get started building a SharePoint web part using Microsoft Graph Toolkit."
 localization_priority: Normal
 author: elisenyang
 ---
 
-# Build a SharePoint web part with Microsoft Graph Toolkit
+# Build a SharePoint web part with the Microsoft Graph Toolkit
 
-This topic covers how to use Microsoft Graph Toolkit components in a [SharePoint client-side web part](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts). To get started, the steps you need to follow include:
+This topic covers how to use Microsoft Graph Toolkit components in a [SharePoint client-side web part](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts). Getting started involves the following steps:
 
-1. Set up your development environment and create a web part
-2. Update TypeScript in your project
-3. Add Microsoft Graph Toolkit
-4. Add the SharePoint Provider
-5. Add components
-6. Configure permissions
-7. Build and deploy your web part
-8. Test your web part
+1. Set up your development environment and create a web part.
+2. Update TypeScript in your project.
+3. Add the Microsoft Graph Toolkit.
+4. Add the SharePoint Provider.
+5. Add components.
+6. Configure permissions.
+7. Build and deploy your web part.
+8. Test your web part.
 
 ## Set up your SharePoint Framework development environment and create a new web part
 
@@ -24,7 +24,7 @@ Follow the steps to [Set up your SharePoint Framework development environment](h
 
 ## Update TypeScript in your project
 
-Microsoft Graph Toolkit requires Typescript 3.x. Before adding the Toolkit to your project, make sure you're using a [supported version of Typescript](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x). For example, to add Typescript 3.7, use the following command:
+The Microsoft Graph Toolkit requires Typescript 3.x. Before adding the Toolkit to your project, make sure you're using a [supported version of Typescript](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x). For example, to add Typescript 3.7, use the following command:
 
 ```bash
 npm install @microsoft/rush-stack-compiler-3.7 --save-dev
@@ -40,14 +40,14 @@ Replace the line with:
 "extends": "./node_modules/@microsoft/rush-stack-compiler-3.7/includes/tsconfig-web.json",
 ```
 
-## Add Microsoft Graph Toolkit
+## Add the Microsoft Graph Toolkit
 
 Install the Microsoft Graph Toolkit npm package and polyfills with the following command:
 
 ```bash
 npm install @microsoft/mgt
 ```
-If you plan to support IE11 in your web parts, you will need to follow additional steps to ensure cross-browser compatibility:
+If you plan to support IE11 in your web parts, you'll need to follow additional steps to ensure cross-browser compatibility:
 
 1. Install the following packages:
 ```bash
@@ -96,7 +96,7 @@ import '@webcomponents/webcomponentsjs/webcomponents-bundle.js';
 
 ## Add the SharePoint Provider
 
-The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers.md). SharePoint web parts always exist in an authenticated context as the user has already had to log in in order to get to the page that hosts your web part. We will use this context to initialize the [SharePoint provider](../providers/sharepoint.md).
+The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers.md). SharePoint web parts always exist in an authenticated context because the user has already had to sign in in order to get to the page that hosts your web part. Use this context to initialize the [SharePoint provider](../providers/sharepoint.md).
 
 First, add the provider to your web part. Locate the `src\webparts\<your-project>\<your-web-part>.ts` file in your project folder, and add the following line to the top of your file, right below the existing `import` statements:
 
@@ -114,7 +114,7 @@ protected async onInit() {
 
 ## Add components
 
-Now, you can start adding components to your web part. Simply add the components to the HTML inside of the `render()` method, and the components will use the SharePoint context to access Microsoft Graph. For example, to add the [Person component](../components/person.md) your code will look like:
+Now, you can start adding components to your web part. Simply add the components to the HTML inside of the `render()` method, and the components will use the SharePoint context to access Microsoft Graph. For example, to add the [Person component](../components/person.md), your code will look like:
 
 ```ts
 public render(): void {
@@ -140,7 +140,7 @@ Just below that line, add the following:
 "webApiPermissionRequests":[],
 ```
 
-Determine which Microsoft Graph API permissions you need depending on the components you're using. Each component's documentation page provides a list of the permissions that component requires. You will need to add each permission required to `webApiPermissionRequests`. For example, if you're using the Person component and the Agenda Component, your `webApiPermissionRequests` may look like:
+Determine which Microsoft Graph API permissions you need depending on the components you're using. Each component's documentation page provides a list of the permissions that component requires. You will need to add each permission required to `webApiPermissionRequests`. For example, if you're using the Person component and the Agenda component, your `webApiPermissionRequests` might look like:
 
 ```json
 "webApiPermissionRequests": [
@@ -172,7 +172,7 @@ Go to your **SharePoint Admin center**. In the left-hand navigation, select **Ad
 
 ## Test your web part
 
-You're now ready to add your web part to a SharePoint page and test it out. You will need to use the hosted workbench to test web parts that use Microsoft Graph Toolkit because the components need the authenticated context in order to call Microsoft Graph. You can find your hosted workbench at **https://<YOUR_TENANT>.sharepoint.com/_layouts/15/workbench.aspx**.
+You're now ready to add your web part to a SharePoint page and test it out. You will need to use the hosted workbench to test web parts that use the Microsoft Graph Toolkit because the components need the authenticated context in order to call Microsoft Graph. You can find your hosted workbench at **https://<YOUR_TENANT>.sharepoint.com/_layouts/15/workbench.aspx**.
 
 Open the `config\serve.json` file in your project and replace the  value of `initialPage` with the url for your hosted workbench:
 ```json
@@ -187,9 +187,9 @@ gulp serve
 Your hosted workbench will automatically open in your browser. Add your web part to the page and you should see your web part with the Microsoft Graph Toolkit components in action! As long as the gulp serve command is still running in your console, you can continue to make edits to your code and then just refresh your browser to see your changes.
 
 ## Next Steps
-- Check out this step-by-step tutorial on [building a SharePoint web part](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-9-microsoft-graph-toolkit-sharepoint-provider/)
-- Try out the components in the [playground](https://mgt.dev)
-- Ask a question on [StackOverflow](https://aka.ms/mgt-question)
-- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt)
+- Check out this step-by-step tutorial on [building a SharePoint web part](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-9-microsoft-graph-toolkit-sharepoint-provider/).
+- Try out the components in the [playground](https://mgt.dev).
+- Ask a question on [StackOverflow](https://aka.ms/mgt-question).
+- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).
 
 
