@@ -38,6 +38,6 @@ The following is a JSON representation of the resource.
 ```json
 {
   "from": "String",
-  "to": "String",  
+  "to": "String" 
 }
 ```
