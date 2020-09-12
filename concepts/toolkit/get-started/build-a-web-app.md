@@ -1,22 +1,22 @@
 ---
-title: "Build a web application with Microsoft Graph Toolkit"
-description: "How to get started building a web application using Microsoft Graph Toolkit."
+title: "Build a web application with the Microsoft Graph Toolkit"
+description: "How to get started building a web application using the Microsoft Graph Toolkit."
 localization_priority: Normal
 author: elisenyang
 ---
 
 # Build a web application with Microsoft Graph Toolkit
 
-This topic describes how to get started with Microsoft Graph Toolkit in a web application written in vanilla JavaScript. If you would like to learn how to use the Toolkit with a web framework, see [Use Toolkit with React](./use-toolkit-with-react.md) or [Use Toolkit with Angular](./use-toolkit-with-angular.md).
+This topic describes how to get started with the Microsoft Graph Toolkit in a web application written in vanilla JavaScript. If you would like to learn how to use the Toolkit with a web framework, see [Use Toolkit with React](./use-toolkit-with-react.md) or [Use Toolkit with Angular](./use-toolkit-with-angular.md).
 
-To get started with Microsoft Graph Toolkit in your web application, the high-level steps you will need to follow include:
-1. Add Microsoft Graph Toolkit to your project
-2. Initialize the MSAL Provider
-3. Add components
-4. Test your application
+Getting started with the Microsoft Graph Toolkit involves the following steps:
+1. Add Microsoft Graph Toolkit to your project.
+2. Initialize the MSAL Provider.
+3. Add components.
+4. Test your application.
 
-## Add Microsoft Graph Toolkit to your project
-You can use Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm package.
+## Add the Microsoft Graph Toolkit to your project
+You can use the Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm package.
 
 ### Use via mgt-loader
 To use the Toolkit via mgt-loader, add the reference in a script to your code:
@@ -31,9 +31,9 @@ Using the Toolkit via ES6 modules will give you full control of the bundling pro
 ```bash
 npm install @microsoft/mgt
 ```
-> NOTE: If you are targeting a browser such as IE11 that does not support web components natively, you might need to [include polyfills.](./overview.md#polyfills)
+> **Note**: If you're targeting a browser such as IE11 that does not support web components natively, you might need to [include polyfills](./overview.md#polyfills).
 
-Now, you can reference the all of the Toolkit components in your application with:
+Now, you can reference the all the Toolkit components in your application with:
 
 ```html
 <script src="node_modules/@microsoft/mgt/dist/es6/components.js"></script>
@@ -49,7 +49,7 @@ The Microsoft Graph Toolkit providers enable authentication and access to Micros
 
 If you would like to use your own backend authentication, use the [Proxy Provider](../providers/proxy.md) in place of the MSAL provider.
 
-You can choose to initialize the provider in either your HTML or your JavaScript code. Both methods are shown below.
+You can choose to initialize the provider in either your HTML or your JavaScript code. 
 
 ### Initialize in your HTML page
 Add the `mgt-msal-provider` component to your HTML page and set the `client-id` to your application client-id.
@@ -67,14 +67,14 @@ Providers.globalProvider = new MsalProvider({
     clientId: "<YOUR_CLIENT_ID>"
 })
 ```
-The client ID is the only property required to initialize the provider, but there are additional options you can set. See [Msal Provider](../providers/msal.md) for the full list.
+The client ID is the only property required to initialize the provider, but you can set additional options. For the full list, see [Msal Provider](../providers/msal.md).
 
 ### Creating an app/client ID
 In order to get a client ID, you need to [register your application](https://docs.microsoft.com/graph/auth-register-app-v2) in Azure AD. 
 >**Note**: MSAL only supports the Implicit Flow for OAuth. Make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under **Authentication**, find the **Implicit grant** section and select the checkboxes for **Access tokens** and **ID tokens**. 
 
 ## Add components
-Once you've initialized the MSAL provider, you can start using any of the Toolkit components.
+After you initialize the MSAL provider, you can start using any of the Toolkit components.
 
 The following is a full working example using mgt-loader, the MSAL Provider initialized in HTML, and the Login component:
 
@@ -84,7 +84,7 @@ The following is a full working example using mgt-loader, the MSAL Provider init
 <mgt-login></mgt-login>
 ```
 
-This is an example using the ES6 modules, the MSAL Provider initialized in HTML, and the Login Component:
+This is an example using the ES6 modules, the MSAL Provider initialized in HTML, and the Login component:
 ```html
 <script src="node_modules/@microsoft/mgt/dist/es6/components/providers/mgt-msal-provider.js"></script>
 <script src="node_modules/@microsoft/mgt/dist/es6/components/mgt-login/mgt-login.js"></script>
@@ -92,7 +92,7 @@ This is an example using the ES6 modules, the MSAL Provider initialized in HTML,
 <mgt-login></mgt-login>
 ```
 
-This is an example using the ES6 modules, the MSAL Provider initialized in JavaScript, and the Login Component:
+This is an example using the ES6 modules, the MSAL Provider initialized in JavaScript, and the Login component:
 
 ```js
 import {Providers, MsalProvider} from '@microsoft/mgt'
@@ -115,10 +115,10 @@ document.body.appendChild((component()));
 In order to test your app, MSAL requires the page to be hosted in a web server for the authentication redirects. 
 
 If you're just getting started and want to play around, you can use [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code or any similar lightweight development server. Download the extension and open your HTML file using live server. 
-> **NOTE:** Make sure the **redirect URI** in your app registration is set to the localhost port your application is hosted on. Go to your app registration in the [Azure portal](https://portal.azure.com), click **Authentication** under manage, and add the correct **redirect URI**.
+> **Note:** Make sure the **redirect URI** in your app registration is set to the localhost port your application is hosted on. Go to your app registration in the [Azure portal](https://portal.azure.com), click **Authentication** under manage, and add the correct **redirect URI**.
 
 ## Next Steps
-- Check out this step-by-step tutorial on [building a simple web app](https://developer.microsoft.com/microsoft-365/blogs/a-lap-around-microsoft-graph-toolkit-day-2-zero-to-hero/)
-- Try out the components in the [playground](https://mgt.dev)
-- Ask a question on [StackOverflow](https://aka.ms/mgt-question)
-- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt)
+- Check out this step-by-step tutorial on [building a simple web app](https://developer.microsoft.com/microsoft-365/blogs/a-lap-around-microsoft-graph-toolkit-day-2-zero-to-hero/).
+- Try out the components in the [playground](https://mgt.dev).
+- Ask a question on [Stack Overflow](https://aka.ms/mgt-question).
+- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).
