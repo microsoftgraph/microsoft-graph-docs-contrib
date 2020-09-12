@@ -513,7 +513,7 @@ items:
             href: sdks/large-file-upload.md
           - name: Use beta API
             href: sdks/use-beta.md
-      - name: Use the toolkit
+      - name: Use the Toolkit
         items:
           - name: Toolkit overview
             href: toolkit/overview.md
