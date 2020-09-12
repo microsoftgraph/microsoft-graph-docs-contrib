@@ -168,7 +168,7 @@ Content-Type: application/json
 ```
 
 
-### Example 2: C or get an online meeting in a Microsoft Teams channel with an external ID
+### Example 2: Create or get an online meeting in a Microsoft Teams channel with an external ID
 
 #### Request
 
