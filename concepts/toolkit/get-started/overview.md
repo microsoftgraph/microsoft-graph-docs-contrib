@@ -1,6 +1,6 @@
 ---
 title: "Getting started with the Microsoft Graph Toolkit"
-description: "Getting started with using Microsoft Graph Toolkit in your application."
+description: "Get started using the Microsoft Graph Toolkit in your application."
 localization_priority: Normal
 author: elisenyang
 ---
