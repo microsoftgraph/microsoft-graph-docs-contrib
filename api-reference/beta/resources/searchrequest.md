@@ -23,7 +23,7 @@ It contains the type of entities expected in the response, the underlying source
 
 | Property     | Type        | Description | Required/Optional|
 |:-------------|:------------|:------------|:------------|
-|entityTypes|`entityType` collection| Possible values are: `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`. |Required|
+|entityTypes|entityType collection| Possible values are: `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`. |Required|
 |contentSources|String collection|Contains the connection to be targeted. <br>Respect the following format : `/external/connections/connectionid` where `connectionid` is the ConnectionId been defined in the Connectors Administration <br> Note : contentSource is only applicable when entityType=`externalItem`. |Optional|
 |query|[searchQuery](searchquery.md)|Contains the query terms.|Required|
 |from|Int32|Specifies the offset for the search results. Offset 0 returns the very first result.|Optional|
@@ -51,7 +51,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-   "entityTypes": ["String"],
+  "entityTypes": ["String"],
   "contentSources": ["String"],
   "query": {"@odata.type": "microsoft.graph.searchQuery"},
   "from": 1024,
@@ -59,6 +59,7 @@ The following is a JSON representation of the resource.
   "fields": ["String"],
   "sortProperties": ["@odata.type": "microsoft.graph.sortProperty"],
   "aggregations": ["@odata.type": "microsoft.graph.aggregationOption"],
+  "aggregationFilters": ["String"],
   "enableTopResults": true
 }
 ```

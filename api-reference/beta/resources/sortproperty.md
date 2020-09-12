@@ -1,5 +1,5 @@
 ---
-title: "search: sortProperty"
+title: "sortProperty resource type"
 description: "Provides the option to sort search results."
 localization_priority: Normal
 author: "nmoreau"

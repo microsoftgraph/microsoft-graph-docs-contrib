@@ -1,5 +1,5 @@
 ---
-title: "search: aggregationOption"
+title: "aggregationOption resource type"
 description: "Specifies the aggregationOption entity"
 localization_priority: Normal
 author: "nmoreau"
@@ -26,6 +26,15 @@ Specifies which aggregations should be returned alongside the search results.
 ## JSON representation
 
 The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.aggregationOption",
+  "baseType": null
+}-->
 
 ```json
 {

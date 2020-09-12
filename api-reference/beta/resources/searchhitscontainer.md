@@ -42,6 +42,6 @@ The following is a JSON representation of the resource.
   "hits": [{"@odata.type": "microsoft.graph.searchHit"}],
   "moreResultsAvailable": true,
   "total": 1024,
-  "aggregations": [{"@odata.type": "microsoft.graph.aggregationOption"}]
+  "aggregations": [{"@odata.type": "microsoft.graph.searchAggregation"}]
 }
 ```

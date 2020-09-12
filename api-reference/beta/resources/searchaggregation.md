@@ -1,5 +1,5 @@
 ---
-title: "search: searchAggregation"
+title: "searchAggregation resource type"
 description: "Provides the details of the search aggregation in the search response."
 localization_priority: Normal
 author: "nmoreau"
@@ -26,6 +26,15 @@ Provides the details of the search aggregation in the search response.
 ## JSON representation
 
 The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.searchAggregation",
+  "baseType": null
+}-->
 
 ```json
 {
