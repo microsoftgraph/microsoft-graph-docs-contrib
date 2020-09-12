@@ -1573,7 +1573,7 @@ items:
             href: api/printjob-startprintjob.md
           - name: Cancel
             href: api/printjob-cancelprintjob.md
-          - name: Download document's file
+          - name: Download binary file
             href: api/printdocument-value.md
         - name: Print operation
           href: resources/printoperation.md
