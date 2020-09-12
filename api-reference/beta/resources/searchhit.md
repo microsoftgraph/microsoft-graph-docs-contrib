@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!WARNING]
->Some properties below were renamed. See [more details here](search-api-overview.md?preserve-view=true#schema-change-deprecation-warning).
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
 Represent a single result within the list of search results.
 
@@ -22,16 +21,17 @@ Represent a single result within the list of search results.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|_id|String|**Deprecated** . Renamed as **hitId**. The internal identifier for the item.|
-|hitId|String|The internal identifier for the item.|
-|_score|Int32|**Deprecated**. Renamed as **rank**. The score or the order of the result.|
-|rank|Int32|The rank or the order of the result.|
-|_sortField|String|**Deprecated**. This field has been removed.|
-|_summary|String|**Deprecated**. Renamed as **summary**. A summary of the result (if summary is available).|
-|summary|String|A summary of the result (if summary is available).|
 |contentSource|String|The name of the contentSource which the **externalItem** is part of .|
-|_source|[entity](entity.md)|**Deprecated**. Renamed as **resource**. The underlying Graph representation of the search result.|
+|hitId|String|The internal identifier for the item.|
+|rank|Int32|The rank or the order of the result.|
 |resource|[entity](entity.md)|The underlying Graph representation of the search result.|
+|summary|String|A summary of the result (if summary is available).|
+|_id (deprecated)|String| Renamed as **hitId**. The internal identifier for the item.|
+|_score (deprecated)|Int32|Renamed as **rank**. The score or the order of the result.|
+|_sortField (deprecated)|String|This property has been removed.|
+|_source (deprecated)|[entity](entity.md)|Renamed as **resource**. The underlying Graph representation of the search result.|
+|_summary (deprecated)|String|Renamed as **summary**. A summary of the result (if summary is available).|
+
 
 ## JSON representation
 

@@ -26,6 +26,15 @@ Represent the list of search results.
 
 ## JSON representation
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.searchHitsContainer",
+  "baseType": null
+}-->
+
 The following is a JSON representation of the resource.
 
 ```json

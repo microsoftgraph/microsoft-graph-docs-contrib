@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!WARNING]
-> One property below was renamed. See [more details here](search-api-overview.md?preserve-view=true#schema-change-deprecation-warning).
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
 Represents a search query that contains search terms and optional filters.
 
@@ -22,8 +21,9 @@ Represents a search query that contains search terms and optional filters.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|query_string|[searchQueryString](searchquerystring.md)|**Deprecated**. This is now replaced with the **queryString** property. The search query containing the search terms. Required.|
 |queryString|String|The search query containing the search terms. Required.|
+|query_string (deprecated)|[searchQueryString](searchquerystring.md)|This is now replaced by the **queryString** property. The search query containing the search terms. Required.|
+
 
 ## JSON representation
 
@@ -40,7 +40,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "queryString": {"String"}
+  "queryString": "String"
 }
 ```
 

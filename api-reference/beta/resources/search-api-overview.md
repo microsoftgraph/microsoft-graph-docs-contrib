@@ -157,22 +157,22 @@ Any combination involving **messages**, **events**, Sharepoint and OneDrive type
 
 ## Schema change deprecation warning
 
-Some properties in the request and response have been renamed and are deprecated.
+Properties used in a search request and response have been renamed or removed. In most cases, the original properties are being deprecated and replaced by the current properties, as listed in the table below.
 
-The schema changes for the request are :  
-- [searchRequest](./searchrequest.md) **stored_fields** property becomes **fields**. 
+Start updating any existing apps to use current property and type names, and to get current property names in the response.
+For backward compatibility, the original properties and types are accessible and functional until **December 31, 2020**, after which they will be removed.
 
-- [searchQuery](./searchquery.md) now has a new string property **queryString** which contains the query string you want to pass. The **query_string** property on [searchQuery](./searchquery.md) and the [searchQueryString](./searchquerystring.md)  type are be deprecated.
+| Resource                           | Change type   | Original property | Current property|
+|:-----------------------------------|:--------------|:------------------|:----------------|
+| [searchRequest](./searchrequest.md)| Rename property | **stored_fields** | **fields**      |
+| [searchQuery](./searchquery.md)    | Rename property | **query_string** | **queryString** |
+| [searchQueryString](./searchquerystring.md) | Remove type | Not applicable | Not applicable |
+| [searchHit](./searchhit.md)        | Rename property | **_id** | **hitId** |
+| [searchHit](./searchhit.md)        | Rename property | **_score** | **rank** |
+| [searchHit](./searchhit.md)        | Remove property | **_sortField** | Not applicable |
+| [searchHit](./searchhit.md)        | Rename property | **_source** | **resource** |
+| [searchHit](./searchhit.md)        | Rename property | **_summary**  | **summary**  |
 
-The schema changes for the response are :
-
-- [searchHit](./searchhit.md) 
-  - the following properties **_id**, **_score**, **_summary** and **_sources** have been renamed respectively to **hitId**, **rank**, **summary** and **resource**.
-  - **_sortField** has been removed. This is a breaking change.
-
-In order to ensure a backward compatibility, the older schema will still be functional until end of 2020.
-You will need to use the new property names and types in the request to get the new property names in the response.
-The older properties names and types will be  removed by the end of calendar year 2020.
 
 
 ## What's new
