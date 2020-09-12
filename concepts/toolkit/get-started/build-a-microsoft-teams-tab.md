@@ -7,7 +7,7 @@ author: elisenyang
 
 # Build a Microsoft Teams tab with the Microsoft Graph Toolkit
 
-This topic covers how to get started using the Microsoft Graph Toolkit in a Microsoft Teams solution. Getting started includes the following steps:
+This topic covers how to get started using the Microsoft Graph Toolkit in a Microsoft Teams solution. Getting started involves the following steps:
 
 1. Create a new Teams application with a custom tab.
 2. Set up ngrok and create a tunnel.
