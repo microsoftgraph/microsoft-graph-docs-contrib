@@ -40,7 +40,7 @@ The following is a JSON representation of the resource.
 {
   "field": "String",
   "size": 1024,
-  "bucketDefinition": "@odata.type": "microsoft.graph.bucketAggregationDefinition"
+  "bucketDefinition": {"@odata.type": "microsoft.graph.bucketAggregationDefinition"}
 }
 ```
 

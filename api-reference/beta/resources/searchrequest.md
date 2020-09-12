@@ -57,8 +57,8 @@ The following is a JSON representation of the resource.
   "from": 1024,
   "size": 1024,
   "fields": ["String"],
-  "sortProperties": ["@odata.type": "microsoft.graph.sortProperty"],
-  "aggregations": ["@odata.type": "microsoft.graph.aggregationOption"],
+  "sortProperties": [{"@odata.type": "microsoft.graph.sortProperty"}],
+  "aggregations": [{"@odata.type": "microsoft.graph.aggregationOption"}],
   "aggregationFilters": ["String"],
   "enableTopResults": true
 }
