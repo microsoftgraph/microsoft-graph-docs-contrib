@@ -1,19 +1,19 @@
 ---
-title: "Use Microsoft Graph Toolkit with React"
-description: "How to get started using Microsoft Graph Toolkit in a React application."
+title: "Use the Microsoft Graph Toolkit with React"
+description: "Get started using the Microsoft Graph Toolkit in a React application."
 localization_priority: Normal
 author: elisenyang
 ---
 
-# Using Microsoft Graph Toolkit with React
+# Use the Microsoft Graph Toolkit with React
 
-Microsoft Graph Toolkit components work great with web frameworks like React in addition to vanilla JavaScript and HTML. You can use the components directly in React, but proper interop between web components and React components requires a bit of extra work. We recommend using `mgt-react`, a library that wraps and exports all of the Microsoft Graph Toolkit components as React components. Both methods are shown below. 
+Microsoft Graph Toolkit components work great with web frameworks like React in addition to vanilla JavaScript and HTML. You can use the components directly in React, but proper interop between web components and React components requires a bit of extra work. We recommend using `mgt-react`, a library that wraps and exports all the Microsoft Graph Toolkit components as React components. 
 
-This topic covers how to use Microsoft Graph Toolkit with React. For a full step-by-step walkthrough on how to create a new React application and use Microsoft Graph Toolkit, check out this [tutorial](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-13-using-microsoft-graph-toolkit-with-react/).
+This topic covers how to use Microsoft Graph Toolkit with React. For a step-by-step walkthrough that describes how to create a new React application and use Microsoft Graph Toolkit, see [Using Microsoft Graph Toolkit with React](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-13-using-microsoft-graph-toolkit-with-react/).
 
 ## Web Components and React
 
-React passes all data to Custom Elements in the form of HTML attributes. For primitive data this is fine, but it does not work when passing rich data, like objects or arrays. In those cases you will need to use a ref to pass in the object.
+React passes all data to Custom Elements in the form of HTML attributes. For primitive data, this is fine, but it does not work when passing rich data, like objects or arrays. In those cases, you'll need to use a ref to pass in the object.
 
 ```jsx
 //import all the components
@@ -25,7 +25,7 @@ class App extends Component {
   }
 }
 ```
-Because React implements its own synthetic event system, it cannot listen for DOM events coming from custom elements without the use of a workaround. You will need to use a ref to reference the toolkit components and manually attach event listeners with addEventListener, as shown in the following example.
+Because React implements its own synthetic event system, it cannot listen for DOM events coming from custom elements without the use of a workaround. You will need to use a ref to reference the Toolkit components and manually attach event listeners with addEventListener, as shown in the following example.
 
 ```jsx
 // you can just import a single component
@@ -61,10 +61,10 @@ You can then use it in your tsx as `<mgt-login></mgt-login>`.
 
 ## Using mgt-react
 
-We recommend using `mgt-react` to simplify usage of Microsoft Graph Toolkit components and avoid having to implement the work-arounds above. The library wraps all components and exports them as React components. 
+We recommend using `mgt-react` to simplify usage of Microsoft Graph Toolkit components and avoid having to implement workarounds. The library wraps all components and exports them as React components. 
 
 ### Install the library
-Add the library to your project using
+Add the library to your project using:
 
 ```bash
 npm install @microsoft/mgt-react
@@ -75,9 +75,9 @@ yarn add @microsoft/mgt-react
 ```
 ### Using components
 
-All of the Microsoft Graph Toolkit components are available in the library. The names of the React components are in PascalCase and do not include the `Mgt` prefix. For example, the `mgt-person` component is available as `Person`, and the `mgt-people-picker` component is available as `PeoplePicker`.
+All the Microsoft Graph Toolkit components are available in the library. The names of the React components are in PascalCase and do not include the `Mgt` prefix. For example, the `mgt-person` component is available as `Person`, and the `mgt-people-picker` component is available as `PeoplePicker`.
 
-To use the components, first import the Toolkit in your application as `mgt-react` does not import the components automatically.
+To use the components, first import the Toolkit in your application; `mgt-react` does not import the components automatically.
 
 ```jsx
 import '@microsoft/mgt'
@@ -120,7 +120,7 @@ All properties and events map exactly as they are defined on the web component.
 
 #### Templates
 
-All Microsoft Graph Toolkit components support [custom templates](../templates.md) which allow you to modify the content of a component. `mgt-react` allows you to leverage React for writing templates for Microsoft Graph Toolkit components.
+All Microsoft Graph Toolkit components support [custom templates](../templates.md), which allow you to modify the content of a component. `mgt-react` allows you to use React to write templates for Microsoft Graph Toolkit components.
 
 First, define a React component that uses the `MgtTemplateProps` object as its type of props, then use it as a child of the wrapped component.
 
@@ -147,7 +147,7 @@ const App = (props) => {
 The `template` prop allows you to specify which template to overwrite. In this case, the `MyEvent` component will be repeated for every event, and the `event` object will be passed as part of the `dataContext` prop.
 
 ## Next steps
-- Check out this step-by-step tutorial on [building a React app](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-13-using-microsoft-graph-toolkit-with-react/)
-- Try out the components in the [playground](https://mgt.dev)
-- Ask a question on [StackOverflow](https://aka.ms/mgt-question)
-- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt)
+- Check out this step-by-step tutorial on [building a React app](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-13-using-microsoft-graph-toolkit-with-react/).
+- Try out the components in the [playground](https://mgt.dev).
+- Ask a question on [Stack Overflow](https://aka.ms/mgt-question).
+- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).
