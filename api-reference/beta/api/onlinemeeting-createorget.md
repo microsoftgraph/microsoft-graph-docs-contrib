@@ -65,11 +65,10 @@ If successful, this method returns a `201 Created` response code if a new meetin
 
 ## Examples
 
-### Example 1: create or get an online meeting with an external ID
+### Example 1: Create or get an online meeting with an external ID
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-or-get-onlinemeeting"
@@ -98,8 +97,6 @@ Content-Type: application/json
     }
 }
 ```
-
----
 
 #### Response
 
@@ -171,11 +168,10 @@ Content-Type: application/json
 ```
 
 
-### Example 2: create or get an online meeting in a Microsoft Teams channel with an external ID
+### Example 2: C or get an online meeting in a Microsoft Teams channel with an external ID
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-or-get-onlinemeeting"
@@ -206,8 +202,6 @@ Content-Type: application/json
     "subject": "Create a meeting with customId provided"
 }
 ```
-
----
 
 #### Response
 
