@@ -81,6 +81,6 @@ The Microsoft Graph Toolkit is supported in the following browsers.
 
 ## Next steps
 
-- Try out the components in the [playground](https://mgt.dev)
-- [Get started](./get-started/overview.md) with the Microsoft Graph Toolkit
-- Check out Microsoft Graph Toolkit on [GitHub](https://aka.ms/mgt).
+- Try out the components in the [playground](https://mgt.dev).
+- [Get started](./get-started/overview.md) with the Microsoft Graph Toolkit.
+- Check out the Microsoft Graph Toolkit on [GitHub](https://aka.ms/mgt).
