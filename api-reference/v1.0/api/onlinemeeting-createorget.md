@@ -60,11 +60,10 @@ If successful, this method returns a `201 Created` response code if a new meetin
 
 ## Examples
 
-### Create or get an online meeting with an external ID
+### Request
 
-#### Request
+The following example shows how to create or get an online meeting with an external ID.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-or-get-onlinemeeting"
