@@ -47,7 +47,7 @@ In the request body, provide a JSON object with the following parameters.
 | startDateTime    | DateTime                                 | The meeting start time in UTC. |
 | subject          | String                                   | The subject of the online meeting. |
 
->**Notes:**
+> **Notes:**
 >
 > - If the **startDateTime** and **endDateTime** are not provided, the **startDateTime** will default to the current dateTime value and **endDateTime** value will equal the **startDateTime** + 1 hour.
 >
@@ -71,7 +71,7 @@ If successful, this method returns a `201 Created` response code if a new meetin
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/onlineMeetings/createOrGet
+POST https://graph.microsoft.com/v1.0/me/onlineMeetings/createOrGet
 Content-Type: application/json
 
 {

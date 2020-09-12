@@ -50,7 +50,7 @@ In the request body, provide a JSON object with the following parameters.
 | startDateTime    | DateTime                                 | The meeting start time in UTC. |
 | subject          | String                                   | The subject of the online meeting. |
 
->**Notes:**
+> **Notes:**
 >
 > - If the **startDateTime** and **endDateTime** are not provided, the **startDateTime** will default to the current dateTime value and **endDateTime** value will equal the **startDateTime** + 1 hour.
 >
@@ -98,6 +98,8 @@ Content-Type: application/json
     }
 }
 ```
+
+---
 
 #### Response
 
@@ -168,6 +170,7 @@ Content-Type: application/json
 }
 ```
 
+
 ### Example 2: create or get an online meeting in a Microsoft Teams channel with an external ID
 
 #### Request
@@ -177,7 +180,6 @@ Content-Type: application/json
   "blockType": "request",
   "name": "create-or-get-onlinemeeting"
 }-->
-
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings/createOrGet
 Content-Type: application/json
@@ -204,6 +206,8 @@ Content-Type: application/json
     "subject": "Create a meeting with customId provided"
 }
 ```
+
+---
 
 #### Response
 
