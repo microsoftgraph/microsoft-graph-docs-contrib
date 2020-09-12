@@ -189,7 +189,7 @@ Your hosted workbench will automatically open in your browser. Add your web part
 ## Next Steps
 - Check out this step-by-step tutorial on [building a SharePoint web part](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-9-microsoft-graph-toolkit-sharepoint-provider/).
 - Try out the components in the [playground](https://mgt.dev).
-- Ask a question on [StackOverflow](https://aka.ms/mgt-question).
+- Ask a question on [Stack Overflow](https://aka.ms/mgt-question).
 - Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).
 
 
