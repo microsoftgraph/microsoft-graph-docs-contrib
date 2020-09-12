@@ -1,5 +1,5 @@
 ---
-title: "search: bucketaggregationdefinition"
+title: "bucketAggregationDefinition resource type"
 description: "Provides the details on how the agregations should be generated in the results"
 localization_priority: Normal
 author: "nmoreau"
@@ -7,7 +7,7 @@ ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
-# bucketaggregationdefinition resource type
+# bucketAggregationDefinition resource type
 
 Namespace: microsoft.graph
 
@@ -28,13 +28,22 @@ Provides the details on how the agregations should be generated in the results.
 
 The following is a JSON representation of the resource.
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.bucketAggregationDefinition",
+  "baseType": null
+}-->
+
 ```json
 {
   "sortBy": "String",
   "isDescending": "false",
   "size": "5",
   "prefixFilter": "String",
-  "ranges": [{"@odata.type": "microsoft.graph.bucketAggregationDefinition"}]
+  "ranges": [{"@odata.type": "microsoft.graph.bucketAggregationRange"}]
 }
 ```
 
