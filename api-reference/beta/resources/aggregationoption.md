@@ -38,8 +38,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "field": "true",
-  "size": 5,
+  "field": "string",
+  "size": 1024,
   "bucketDefinition": "@odata.type": "microsoft.graph.bucketAggregationDefinition"
 }
 ```
