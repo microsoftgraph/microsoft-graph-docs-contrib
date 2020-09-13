@@ -26,6 +26,8 @@ Represent the list of search results.
 
 ## JSON representation
 
+The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -35,7 +37,6 @@ Represent the list of search results.
   "baseType": null
 }-->
 
-The following is a JSON representation of the resource.
 
 ```json
 {
