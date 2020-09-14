@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /administrativeUnits/{id}/members/{id}/$ref
+DELETE /directory/administrativeUnits/{id}/members/{id}/$ref
 ```
 ## Request headers
 | Name      |Description|
@@ -45,7 +45,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 Here is an example of the request. In the example below, id1 represents the identifier for the target administrative unit, and id2 represents the unique identifier for the member user or group to be removed from the targetted administrative unit. 
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/administrativeUnits/{id1}/members/{id2}/$ref
+DELETE https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id1}/members/{id2}/$ref
 ```
 
 ##### Response
