@@ -1,38 +1,29 @@
 ---
 title: "passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: resourcePageType
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget resource type
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+A collection of users or groups enabled to use Passwordless Phone Sign in with Microsoft Authenticator as part of the [Authentication Method Policy](../resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration.md) in Azure AD.
 
-Inherits from [authenticationMethodTarget](../resources/authenticationmethodtarget.md).
-
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List passwordlessMicrosoftAuthenticatorAuthenticationMethodTargets](../api/passwordlessmicrosoftauthenticatorauthenticationmethodtarget-list.md)|[passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodtarget.md) collection|Get a list of the [passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodtarget.md) objects and their properties.|
-|[Create passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget](../api/passwordlessmicrosoftauthenticatorauthenticationmethodtarget-create.md)|[passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodtarget.md)|Create a new [passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodtarget.md) object.|
-|[Get passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget](../api/passwordlessmicrosoftauthenticatorauthenticationmethodtarget-get.md)|[passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodtarget.md)|Read the properties and relationships of a [passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodtarget.md) object.|
-|[Update passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget](../api/passwordlessmicrosoftauthenticatorauthenticationmethodtarget-update.md)|[passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodtarget.md)|Update the properties of a [passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodtarget.md) object.|
-|[Delete passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget](../api/passwordlessmicrosoftauthenticatorauthenticationmethodtarget-delete.md)|None|Deletes a [passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodtarget.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|isRegistrationRequired|Boolean|**TODO: Add Description** Inherited from [authenticationMethodTarget](../resources/authenticationmethodtarget.md)|
-|shownContext|authenticatorAppContextType|**TODO: Add Description**. Possible values are: `location`, `app`.|
-|targetType|authenticationMethodTargetType|**TODO: Add Description** Inherited from [authenticationMethodTarget](../resources/authenticationmethodtarget.md). Possible values are: `user`, `group`, `unknownFutureValue`.|
-|useForSignIn|Boolean|**TODO: Add Description** Inherited from [authenticationMethodTarget](../resources/authenticationmethodtarget.md)|
+|id|String|Object Id of an Azure AD user or group.|
+|isRegistrationRequired|Boolean|Determines if the user is enforced to register the authentication method.|
+|shownContext|authenticatorAppContextType|Possible values are: `location`, `app`.|
+|targetType|authenticationMethodTargetType|Possible values are: `user`, `group`.|
+|useForSignIn|Boolean|Determines if the authentication method can be used to sign in to Azure AD.|
 
 ## Relationships
 None.

@@ -33,7 +33,7 @@ A representation of a Passwordless Phone Sign-in with Microsoft Authenticator Au
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|includeTargets|[passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodtarget.md) collection|**TODO: Add Description**|
+|includeTargets|[passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodtarget.md) collection|A collection of users or groups that are enabled to use the authentication method.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

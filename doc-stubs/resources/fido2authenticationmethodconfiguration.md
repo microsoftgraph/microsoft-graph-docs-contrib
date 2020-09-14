@@ -36,7 +36,7 @@ A representation of FIDO2 Authentication Methods policy. Authentication Methods 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|**TODO: Add Description**|
+|includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of users or groups that are enabled to use the authentication method.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
