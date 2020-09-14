@@ -34,7 +34,7 @@ Namespace: microsoft.graph
 |main|
 |other|
 
-### anniversaryType values 
+### anniversaryType values
 
 |Member|
 |:---|
@@ -42,7 +42,7 @@ Namespace: microsoft.graph
 |wedding|
 |unknownFutureValue|
 
-### skillProficiencyLevel values 
+### skillProficiencyLevel values
 
 |Member|
 |:---|
@@ -53,7 +53,7 @@ Namespace: microsoft.graph
 |expert|
 |unknownFutureValue|
 
-### languageProficiencyLevel values 
+### languageProficiencyLevel values
 
 |Member|
 |:---|
@@ -65,7 +65,7 @@ Namespace: microsoft.graph
 |nativeOrBilingual|
 |unknownFutureValue|
 
-### personRelationship values 
+### personRelationship values
 
 |Member|
 |:---|
@@ -1276,15 +1276,15 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue
 
 ### openIdConnectResponseMode values
-| Member                
+| Member
 |:----------------------
 | none
 | form_post
-| query 
-| unknownFutureValue 
+| query
+| unknownFutureValue
 
 ### openIdConnectResponseTypes values
-| Member                
+| Member
 |:----------------------
 | none
 | code
@@ -1315,3 +1315,17 @@ Possible values for user account types (group membership), per Windows definitio
 | configured            | 0     | Connected Organizations with this state value are included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.                                                          |
 | proposed              | 1     | Connected Organizations that are automatically created by the system have this state value. They are not included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.   |
 | unknownFutureValue    | 2     | A sentinel member.                                                                                                                                                                                                 |
+
+### identitySourceType values
+
+|Members|
+|:---|
+|azureActiveDirectory|
+|external|
+
+### externalGroupMemberType values
+
+|Members|
+|:---|
+|user|
+|group|
