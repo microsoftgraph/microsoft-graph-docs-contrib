@@ -15,8 +15,7 @@ Namespace: microsoft.graph
 
 Runs the query specified in the request body. Search results are provided in the response.
 
->[!WARNING]
->The API Schema has changed : some properties in the request and response are deprecated. See [more details here](#schema-change-deprecation-warning).
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
 ## Permissions
 
