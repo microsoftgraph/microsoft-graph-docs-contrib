@@ -20,7 +20,7 @@ Represents an Azure AD [access review](accessreviews-root.md).
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-list.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) collection | Lists every `accessReviewScheduleDefinition`. Does not include each properties associated `accessReviewInstance` instances. |
+|[List accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-list.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) collection | Lists every `accessReviewScheduleDefinition`. Does not include associated `accessReviewInstance` instances. |
 
 ## Properties
 | Property                  | Type                                | Required on Create                     | Description |
@@ -82,10 +82,12 @@ Here is a JSON representation of the resource.
 ```
 ## accessReviewScope resource type
 
-The **accessReviewScope** resource type provides
+The **accessReviewScope** resource type defines what will be reviewed. This is expressed as an odata query. The query type must also be expressed so that scenarios can be supported to review entities outside of MicrosoftGraph, such as ARM.
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
+| `query`          |`String`  | The query for what needs to be reviewed. See table for examples. |
+| `queryType`          |`String`  | The type of query. Examples include MicrosoftGraph and ARM. |
 
 ## accessReviewScheduleSettings resource type
 
