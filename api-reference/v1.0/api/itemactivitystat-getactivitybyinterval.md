@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 Get a collection of [itemActivityStats][] resources for the activities that took place on this resource within the specified time interval.
 
 >**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).
+           The API only supports a time range of 90 days for daily counts. So make sure function parameters are valid date: endDateTime - startDateTime < 90 days.
 
 Analytics aggregates might not be available for all action types.
 
