@@ -2,7 +2,6 @@
 title: "Working with Azure Active Directory resources in Microsoft Graph"
 description: "Microsoft Graph for Azure Active Directory (Azure AD) provides REST APIs to help manage your organization, resources, and assets."
 localization_priority: Priority
-author: "kexia"
 doc_type: conceptualPageType
 ms.prod: ""
 author: "dkershaw10"
