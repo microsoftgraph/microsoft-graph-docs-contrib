@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /administrativeUnits/{id}
+GET /directory/administrativeUnits/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
@@ -54,7 +54,7 @@ Here is an example of the request.
   "name": "get_administrativeunit"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/administrativeUnits/{id}
+GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-administrativeunit-csharp-snippets.md)]

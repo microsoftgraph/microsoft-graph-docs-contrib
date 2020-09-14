@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /administrativeUnits/{id}
+PATCH /directory/administrativeUnits/{id}
 ```
 
 ## Request headers
@@ -62,7 +62,7 @@ If successful, this method returns a `204 No Content` response code.
   "name": "update_administrativeunit"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/administrativeUnits/{id}
+PATCH https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}
 Content-type: application/json
 Content-length: 114
 

@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /administrativeUnits
+POST /directory/administrativeUnits
 
 ```
 ## Request headers
@@ -55,7 +55,7 @@ The following is an example of the request.
   "name": "create_administrativeunit_from_administrativeunits"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/administrativeUnits
+POST https://graph.microsoft.com/v1.0/directory/administrativeUnits
 Content-type: application/json
 Content-length: 150
 

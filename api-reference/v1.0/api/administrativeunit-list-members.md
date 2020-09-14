@@ -29,8 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-GET /administrativeUnits/{id}/members
-GET /administrativeUnits/{id}/members/$ref
+GET /directory/administrativeUnits/{id}/members
+GET /directory/administrativeUnits/{id}/members/$ref
 ```
 ## Request headers
 | Name      |Description|
@@ -49,7 +49,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following request will list the members of the administrative unit, returning a collection of users and/or groups.
 
 ```http
-GET https://graph.microsoft.com/v1.0/administrativeUnits/{id}/members
+GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members
 ```
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -82,7 +82,7 @@ Content-length: 100
 ##### List member references
 The following request will list the member references of the administrative unit, returning a collection of `@odata.id` references to the members.
 ```
-GET https://graph.microsoft.com/v1.0/administrativeUnits/{id}/members/$ref
+GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
 ```
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
  

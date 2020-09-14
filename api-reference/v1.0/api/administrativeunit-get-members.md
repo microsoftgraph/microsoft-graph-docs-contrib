@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-GET /administrativeUnits/{id}/members/{id}
+GET /directory/administrativeUnits/{id}/members/{id}
 ```
 ## Request headers
 | Name      |Description|
@@ -45,7 +45,7 @@ If successful, this method returns a `200 OK` response code and a [user](../reso
 Here is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/v1.0/administrativeUnits/{id}/members/{id}
+GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/{id}
 ```
 
 ##### Response

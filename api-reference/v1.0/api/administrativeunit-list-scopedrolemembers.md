@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /administrativeUnits/{id}/scopedRoleMembers
+GET /directory/administrativeUnits/{id}/scopedRoleMembers
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
@@ -51,7 +51,7 @@ Here is an example of the request.
   "name": "get_scopedrolemember"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/administrativeUnits/{id}/scopedRoleMembers
+GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/scopedRoleMembers
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-scopedrolemember-csharp-snippets.md)]

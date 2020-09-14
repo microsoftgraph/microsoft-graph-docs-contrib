@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /administrativeUnits/{id}/scopedRoleMembers
+POST /directory/administrativeUnits/{id}/scopedRoleMembers
 ```
 ## Request headers
 | Name      |Description|
@@ -50,7 +50,7 @@ Here is an example of the request.
   "name": "create_scopedrolemembership_from_administrativeunit"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/administrativeUnits/{id}/scopedRoleMembers
+POST https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/scopedRoleMembers
 Content-type: application/json
 Content-length: 272
 

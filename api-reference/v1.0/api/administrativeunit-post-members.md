@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /administrativeUnits/{id}/members/$ref
+POST /directory/administrativeUnits/{id}/members/$ref
 ```
 ## Request headers
 | Name      |Description|
@@ -47,7 +47,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 Here is an example of the request.
 
 ```http
-POST https://graph.microsoft.com/v1.0/administrativeUnits/{id}/members/$ref
+POST https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
 Content-type: application/json
 Content-length: 109
 
