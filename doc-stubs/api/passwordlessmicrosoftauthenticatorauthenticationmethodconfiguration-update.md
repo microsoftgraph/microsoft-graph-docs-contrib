@@ -1,25 +1,34 @@
 ---
 title: "Update passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration"
 description: "Update the properties of a passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: apiPageType
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # Update passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Update the properties of a [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) object.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Update the properties of the [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) object which represents the Passwordless Phone Sign-in with Microsoft Authenticator authentication method policy for the Azure AD tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.ReadWrite.AuthenticationMethod|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+For delegated scenarios the administrator needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global admin
+* Global reader
+* Privileged authentication admin
+* Authentication admin
 
 ## HTTP request
 
@@ -28,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
+PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/passwordlessMicrosoftAuthenticator
 ```
 
 ## Request headers
@@ -38,20 +47,16 @@ PATCH /passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) object.
+In the request body, supply a JSON representation of a [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) object with the values of fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-The following table shows the properties that are required when you create the [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md).
+For the list of properties, see [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|state|authenticationMethodState|**TODO: Add Description** Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). Possible values are: `enabled`, `disabled`.|
-
+**Note:** The '@odata.type' property with a value of '#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration' must be included in the body.
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) object in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -62,32 +67,23 @@ If successful, this method returns a `200 OK` response code and an updated [pass
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
+PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/passwordlessMicrosoftAuthenticator
 Content-Type: application/json
-Content-length: 131
 
 {
-  "@odata.type": "#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",
-  "state": "String"
+    "@odata.type": "#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",
+    "state": "enabled"
 }
 ```
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-
-Content-Type: application/json
-{
-  "@odata.type": "#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",
-  "id": "1f7504e1-04e1-1f75-e104-751fe104751f",
-  "state": "String"
-}
+HTTP/1.1 204 No Content
 ```
 

@@ -1,25 +1,34 @@
 ---
 title: "Get passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: apiPageType
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # Get passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Read the properties and relationships of a [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) object.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Retrieve the properties and relationships of the [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) object which represents the Passwordless Phone Sign-in with Microsoft Authenticator authentication method policy for the Azure AD tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.ReadWrite.AuthenticationMethod|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+For delegated scenarios the administrator needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global admin
+* Global reader
+* Privileged authentication admin
+* Authentication admin
 
 ## HTTP request
 
@@ -28,11 +37,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/passwordlessMicrosoftAuthenticator
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -55,11 +61,13 @@ If successful, this method returns a `200 OK` response code and a [passwordlessM
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
+GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/passwordlessMicrosoftAuthenticator
 ```
 
 
 ### Response
+The following is an example of the response.
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -72,11 +80,17 @@ HTTP/1.1 200 OK
 
 Content-Type: application/json
 {
-  "value": {
     "@odata.type": "#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",
-    "id": "1f7504e1-04e1-1f75-e104-751fe104751f",
-    "state": "String"
-  }
+    "id": "PasswordlessMicrosoftAuthenticator",
+    "state": "enabled",
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false,
+            "useForSignIn": true
+        }
+    ]
 }
 ```
 

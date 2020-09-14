@@ -1,10 +1,10 @@
 ---
 title: "Update fido2AuthenticationMethodConfiguration"
 description: "Update the properties of a fido2AuthenticationMethodConfiguration object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: apiPageType
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # Update fido2AuthenticationMethodConfiguration
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object which represents the FIDO2 Security Keys authentication method policy for the Azure AD tenant.
+Update the properties of the [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object which represents the FIDO2 Security Keys authentication method policy for the Azure AD tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,6 +22,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Policy.ReadWrite.AuthenticationMethod|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
+
+For delegated scenarios the administrator needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global admin
+* Global reader
+* Privileged authentication admin
+* Authentication admin
 
 ## HTTP request
 
@@ -44,7 +51,7 @@ In the request body, supply a JSON representation of a [fido2AuthenticationMetho
 
 For the list of properties, see [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md).
 
-**Note:** The '@odata,type' property with a value of '#microsoft.graph.fido2AuthenticationMethodConfiguration' must be included in the body.
+**Note:** The '@odata.type' property with a value of '#microsoft.graph.fido2AuthenticationMethodConfiguration' must be included in the body.
 
 
 ## Response
