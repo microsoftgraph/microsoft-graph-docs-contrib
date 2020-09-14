@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-root.md), an access package assignment is an assignment of an access package to a particular subject, for a period of time.  For example, an access package assignment could state that user 'Alice' has the been assigned access via the access package 'Sales' for the period January 2019 through July 2019.
+In [Azure AD entitlement management](entitlementmanagement-root.md), an access package assignment is an assignment of an access package to a particular subject, for a period of time.  For example, an access package assignment can state that user Alice has been assigned access via the access package Sales for the period January 2019 through July 2019.
 
 ## Methods
 
@@ -36,6 +36,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |id|String| Read-only.|
 |isExtended|Boolean|Indicates whether the access package assignment is extended. Read-only.|
 |targetId|String| The ID of the subject with the assignment. Read-only.|
+|schedule|[requestSchedule](requestschedule.md)| When the access assignment is to be in place. Read-only.|
 
 ## Relationships
 
