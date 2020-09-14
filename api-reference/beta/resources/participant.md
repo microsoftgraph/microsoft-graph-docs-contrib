@@ -24,7 +24,7 @@ The participant type.
 | [Invite](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                         | Invite a participant to the call.              |
 | [Mute participant](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Mute a participant in a call.                  |
 | [Mute all participants](../api/participant-muteall.md) | [commsOperation](commsoperation.md) | Mute all the participants in the meeting.      |
-| [Remove participant](../api/participant-remove.md)         | None   | Remove a participant in a call.                  |
+| [Delete participant](../api/participant-delete.md)         | None   | Delete a participant in a call.                  |
 
 ## Properties
 
