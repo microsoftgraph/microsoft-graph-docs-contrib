@@ -20,7 +20,7 @@ Specifies which aggregations should be returned alongside the search results.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |field|String|Specifies which field the aggregation should be computed on. Required.|
-|size|Int32|The number of [searchHitsBucket](searchHitsBucket.md) to be returned. This is not required when the range are provided manualy in the request specified. Optional.|
+|size|Int32|The number of [searchBucket](searchBucket.md) to be returned. This is not required when the range are provided manualy in the request specified. Optional.|
 |bucketDefinition|[bucketAggregationDefinition](bucketaggregationdefinition.md)|Specifies the criterias to compute the aggregations. Optional.|
 
 ## JSON representation

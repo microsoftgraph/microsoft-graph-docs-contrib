@@ -124,9 +124,9 @@ This [page](/graph/search-concept-sort) provides several examples how to sort re
 
 Aggregations (aka Refiners in the SharePoint semantic) are a very popular way to enhance a search experience. They provide, in addition to the results, some level of aggregate information on the matching set of search results. For example, you are able to provide information on who are the most represented authors of documents matching the query, or what are the most represented file types, etc.
 
-In the [searchRequest](./searchrequest.md), you are able to express which aggregations should be returned, in addition to the search results. The description of each aggregation is defined in the the [aggregationOption](./aggregationoption.md), which specifies on which property the aggregation should be computed, the number of [searchHitsBucket](searchHitsBucket.md) to be returned in the response.
+In the [searchRequest](./searchrequest.md), you are able to express which aggregations should be returned, in addition to the search results. The description of each aggregation is defined in the the [aggregationOption](./aggregationoption.md), which specifies on which property the aggregation should be computed, the number of [searchBucket](searchBucket.md) to be returned in the response.
 
-Once the response is returned containing the collection of [searchHitsBucket](searchHitsBucket.md), it is possible to refine the search request to only the matching elements contained in one [searchHitsBucket](searchHitsBucket.md). This is achieved by passing back the  **aggregationsFilterToken** value in the subsequent [searchRequest](./searchrequest.md)  **aggregationFilters**
+Once the response is returned containing the collection of [searchBucket](searchBucket.md), it is possible to refine the search request to only the matching elements contained in one [searchBucket](searchBucket.md). This is achieved by passing back the  **aggregationsFilterToken** value in the subsequent [searchRequest](./searchrequest.md)  **aggregationFilters**
 
 Aggregations are currently only supported on the following SharePoint and OneDrive types : [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md). They will soon be supported for Graph Connectors[externalItem](externalItem.md) refinable properties.
 

@@ -31,7 +31,7 @@ It contains the type of entities expected in the response, the underlying source
 |fields|String collection |Contains the fields to be returned for earch resource object. Note this is applicable for all entityTypes, such as `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`.|
 |sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most sortProperties in the Collection.|
 |aggregations|[aggregationOption](aggregationOption.md) collection|Specifies which aggregations (also known as refiners) to be retuned alongside the search results.|
-|aggregationFilters|String collection|Contains the list of **aggregationsFilterToken** obtained from the [searchHitsBucket](searchHitsBucket.md) which will filter down search results to results contained in the specified bucket|
+|aggregationFilters|String collection|Contains the list of **aggregationsFilterToken** obtained from the [searchBucket](searchBucket.md) which will filter down search results to results contained in the specified bucket|
 |enableTopResults|Boolean|This triggers hybrid sort for messages : the first 3 messages are the most relevant. This property is only applicable to entityType=`message`.|
 |stored_fields (deprecated)|String collection |This is now replaced byse the **fields** property. |
 
