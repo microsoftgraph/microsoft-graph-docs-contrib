@@ -3,7 +3,7 @@ title: "organizationalBrandingProperties resource type"
 description: "Contains details of the organization's branding."
 localization_priority: Normal
 author: "kexia"
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
