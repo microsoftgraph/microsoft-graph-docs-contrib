@@ -1,7 +1,7 @@
 ---
 title: "Delete subscription"
 description: "Delete a subscription."
-localization_priority: Normal
+localization_priority: Normal 
 author: "davidmu1"
 doc_type: apiPageType
 ms.prod: ""
