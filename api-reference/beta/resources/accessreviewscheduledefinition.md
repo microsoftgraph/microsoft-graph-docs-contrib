@@ -33,8 +33,8 @@ Represents an Azure AD [access review](accessreviews-root.md).
 | `descriptionForAdmins`    |`string`                             | Yes  | Description provided by review creators to provide more context of the review to admins. |
 | `descriptionForReviewers` |`string`                             | Yes  | Description provided  by review creators to provide more context of the review to reviewers. |
 | `createdBy`               |`microsoft.graph.userIdentity`       | No  | User who created this review. |
-| `scope`                   |`microsoft.graph.accessReviewScope`  | Yes | Defines scope of users reviewed in a group. See [Supported queries for scope property]() table below. | 
-| `instanceEnumerationScope`|`microsoft.graph.accessReviewScope`  | No | In the case of an all groups review, this determines the scope of which groups will be reviewed. Each group will become a unique accessReviewInstance of the access review series.  See [Supported queries for instanceEnumerationScope property]() table below. | 
+| `scope`                   |`microsoft.graph.accessReviewScope`  | Yes | Defines scope of users reviewed in a group. See 'Supported queries for "scope" property' table below. | 
+| `instanceEnumerationScope`|`microsoft.graph.accessReviewScope`  | No | In the case of an all groups review, this determines the scope of which groups will be reviewed. Each group will become a unique accessReviewInstance of the access review series.  See 'Supported queries for "instanceEnumerationScope" property' table below. | 
 | `settings`                |`microsoft.graph.accessReviewScheduleSettings`| No | The settings for an access review series, see type definition below. |
 | `reviewers`               |`Collection(microsoft.graph.accessReviewReviewerScope)`| Yes | This collection of access review scopes is used to define who are the reviewers. See [Supported queries for reviewers property]() table below. |
 | `instances`               |`Collection(microsoft.graph.accessReviewInstance)`| No | Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there will be an instance for each recurrence. |
@@ -89,12 +89,55 @@ The **accessReviewScope** resource type defines what will be reviewed. This is e
 | `query`          |`String`  | The query for what needs to be reviewed. See table for examples. |
 | `queryType`          |`String`  | The type of query. Examples include MicrosoftGraph and ARM. |
 
-## accessReviewScheduleSettings resource type
+#### Supported queries for "scope" property
 
-The **accessReviewScheduleSettings** resource type provides additional settings when creating an access review, to control the feature behavior when starting an access review. This type has the following properties. 
+|Scenario| Query | Additional Comments |
+|--|--|-- |
+| Review of all users assigned to a group | /groups/{group id}/transitiveMembers ||
+| Review of guest users assigned to a group | /groups/{group id}/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest') ||
+| Review of guest users assigned to all groups | ./transitiveMembers/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest') | Note that the corresponding instanceEnumerationScope should also be passed in along with this|
+| Entitlement Management Access Package Assigment Reviews | /identityGovernance/entitlementManagement/accessPackageAssignments?$filter=(accessPackageId eq '{package id}' and assignmentPolicyId eq '{id}')| Note that only READ is supported for Access Package Assignment Reviews|
+
+#### Supported queries for "instanceEnumerationScope" property
+
+|Scenario| Query | Additional Comments |
+|--|--|--|
+| Review of guest users assigned to all groups, excluding specified groups | /groups?$filter=(groupTypes/any(c:c+eq+'Unified') and id ne '{group id}' and id ne '{group id}' and id ne '{group id}')&$count=true | Note that the corresponding scope should also be passed in along with this. See "Guest users assigned to all groups" in scope property table above. |
+
+## accessReviewReviewerScope resource type
+
+The **accessReviewReviewerScope** is a complex type that allows reviewers to be specified both as a static list of users (i.e., specific users, group owners, group members) or dynamically (i.e., the case where every user is reviewed by their manager). 
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
+| `query`          |`String`  | The query specifying who will be the reviewer. See table for examples. |
+| `queryType`          |`String`  | The type of query. Examples include MicrosoftGraph and ARM. |
+| `queryRoot`          |`String`  | In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query (i.e., ./manager) is specified. |
+
+#### Supported queries for "reviewers" property
+
+|Scenario| Query | Additional Comments |
+|--|--|--|
+| Group owner as reviewer | /groups/{group id}/owners ||
+| Specific user as reviewer | /users/{user id} ||
+| Manager of user being reviewed as reviewer | ./manager | queryRoot must be 'decisions' |
+
+## accessReviewScheduleSettings resource type
+
+The **accessReviewScheduleSettings** is a complex type representing settings of a review.
+
+| Property                     | Type                      | Description |
+| :--------------------------- | :------------------------ | :---------- |
+| `mailNotificationsEnabled`|`Boolean`                | Flag to indicate whether mails are enabled/disabled                |
+| `reminderNotificationsEnabled`|`Boolean`       | Flag to indicate whether reminders are enabled/disabled       |
+| `justificationRequiredOnApproval`|`Boolean` | Flag to indicate whether reviewers are required to provide justification |
+| `defaultDecisionEnabled`|`Boolean` | Flag to indicate whether auto-review feature is enabled |
+| `defaultDecision`|`String` | Can be Approve, Deny, Recommendation |
+| `instanceDurationInDays`|`Int32` | Duration of every instance in days |
+| `recurrence`|`microsoft.graph.patternedRecurrence` | Detailed settings for Recurrence. Using standard outlook recurrence object  |
+| `autoApplyDecisionsEnabled`|`Boolean` | Flag to indicate whether auto-apply feature is enabled |
+| `applyActions`|`Collection(microsoft.graph.accessReviewApplyAction` | Optional field. Only needed for configuring Disable/Delete Apply action. Describes the apply actions to take once a review is complete. accessReviewApplyAction is a base complex type that can have different derived types. There are two types that are currently supported : removeAccessApplyAction and disableAndDeleteUserApplyAction |
+| `recommendationsEnabled`|`Boolean` | Flag to indicate whether recommendations are enabled |
 
 
 
