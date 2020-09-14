@@ -15,7 +15,8 @@ Namespace: microsoft.graph
 
 Runs the query specified in the request body. Search results are provided in the response.
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+>[!WARNING]
+>The API Schema has changed : some properties in the request and response are deprecated. See [more details here](#schema-change-deprecation-warning).
 
 ## Permissions
 
