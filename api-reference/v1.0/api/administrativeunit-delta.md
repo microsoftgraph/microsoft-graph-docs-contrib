@@ -30,7 +30,7 @@ To begin tracking changes, you make a request that includes the delta function o
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /administrativeUnits/delta
+GET /directory/administrativeUnits/delta
 ```
 
 ## Query parameters
@@ -118,7 +118,7 @@ Content-type: application/json
 
 {
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#administrativeunits",
-  "@odata.nextLink":"https://graph.microsoft.com/v1.0/administrativeunits/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/directory/administrativeunits/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
       "displayName": "Management Fast Track",
