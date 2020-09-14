@@ -1,7 +1,12 @@
 ---
 title: "Delete participant"
 description: "Delete participant."
-author: "VinodRavichandran"
+manager: zhengni
+author: jackry6350
+ms.author: yoren
+localization_priority: Normal
+ms.prod: "cloud-communications"
+doc_type: apiPageType
 ---
 
 # Delete participant
