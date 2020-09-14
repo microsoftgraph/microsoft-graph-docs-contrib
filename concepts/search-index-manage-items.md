@@ -7,11 +7,23 @@ ms.prod: ""
 doc_type: conceptualPageType
 ---
 
-# Create, update, and delete items added by your application in the Microsoft Search service index
+# Create, update, and delete items added by your application in the Microsoft Graph Connection
 
 Items added by your application to the Microsoft Search service are represented by the [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) resource in Microsoft Graph.
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
+
+Once you have created a connection, you can add your content. Each item from your data source must be represented as an 'externalItem' in Microsoft Graph with a unique item id. This id is used to create, update or delete the item from Microsoft Graph. You can use the primary key from your data source as the itemId or derive it from one or more fields. 
+
+An 'externalItem' has three key components: access control list, properties, and content.
+
+## Access control list
+The access control list is used to specify whether the given roles are granted or denied access to view items in Microsoft experiences. It is an array of access control entries, each representing an Azure Active Directory User or Group. There is a third access control entry *type* `Everyone` that represents all the users in the tenant.
+
+PIC
+![security_overview_diagram_1.png](./images/
+
+![search-index-manage-items-acl.png](./images/search-index-manage-items-acl.png)
 
 ## Add an item
 
