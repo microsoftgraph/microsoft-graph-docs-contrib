@@ -1,24 +1,26 @@
 ---
 title: "fido2KeyRestrictions resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: resourcePageType
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # fido2KeyRestrictions resource type
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+A representation of key restrictions that are enforced as part of [FIDO2 security keys authentication methods policy](../resources/fido2authenticationmethodconfiguration.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|aaGuids|String collection|**TODO: Add Description**|
-|enforcementType|fido2RestrictionEnforcementType|**TODO: Add Description**. Possible values are: `allow`, `block`, `unknownFutureValue`.|
-|isEnforced|Boolean|**TODO: Add Description**|
+|aaGuids|String collection|A collection of Authenticator Attestation GUIDs. AADGUIDs define key types and manufacturers.|
+|enforcementType|fido2RestrictionEnforcementType|Enforcement type. Possible values are: `allow`, `block`.|
+|isEnforced|Boolean|Determines if the configured key enforcement is enabled.|
 
 ## Relationships
 None.

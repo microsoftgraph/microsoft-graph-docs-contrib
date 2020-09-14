@@ -1,37 +1,28 @@
 ---
 title: "authenticationMethodTarget resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: resourcePageType
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # authenticationMethodTarget resource type
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+A collection of users or groups enabled to use an authentication method as part of an Authentication Method Policy in Azure AD.
 
-Inherits from [entity](../resources/entity.md).
-
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List authenticationMethodTargets](../api/authenticationmethodtarget-list.md)|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|Get a list of the [authenticationMethodTarget](../resources/authenticationmethodtarget.md) objects and their properties.|
-|[Create authenticationMethodTarget](../api/authenticationmethodtarget-create.md)|[authenticationMethodTarget](../resources/authenticationmethodtarget.md)|Create a new [authenticationMethodTarget](../resources/authenticationmethodtarget.md) object.|
-|[Get authenticationMethodTarget](../api/authenticationmethodtarget-get.md)|[authenticationMethodTarget](../resources/authenticationmethodtarget.md)|Read the properties and relationships of an [authenticationMethodTarget](../resources/authenticationmethodtarget.md) object.|
-|[Update authenticationMethodTarget](../api/authenticationmethodtarget-update.md)|[authenticationMethodTarget](../resources/authenticationmethodtarget.md)|Update the properties of an [authenticationMethodTarget](../resources/authenticationmethodtarget.md) object.|
-|[Delete authenticationMethodTarget](../api/authenticationmethodtarget-delete.md)|None|Deletes an [authenticationMethodTarget](../resources/authenticationmethodtarget.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|isRegistrationRequired|Boolean|**TODO: Add Description**|
-|targetType|authenticationMethodTargetType|**TODO: Add Description**. Possible values are: `user`, `group`, `unknownFutureValue`.|
-|useForSignIn|Boolean|**TODO: Add Description**|
+|id|String|Object Id of an Azure AD user or group.|
+|isRegistrationRequired|Boolean|Determines if the user is enforced to register the authentication method.|
+|targetType|authenticationMethodTargetType|Possible values are: `user`, `group`.|
+|useForSignIn|Boolean|Determines if the authentication method can be used to sign in to Azure AD.|
 
 ## Relationships
 None.
