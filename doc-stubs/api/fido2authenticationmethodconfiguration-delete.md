@@ -1,25 +1,27 @@
 ---
 title: "Delete fido2AuthenticationMethodConfiguration"
 description: "Deletes a fido2AuthenticationMethodConfiguration object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: apiPageType
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # Delete fido2AuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Deletes a [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Returns the [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object to its default configuration.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.ReadWrite.AuthenticationMethod|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /fido2AuthenticationMethodConfiguration
+DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fido2
 ```
 
 ## Request headers
@@ -52,12 +54,12 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/fido2AuthenticationMethodConfiguration
+DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fido2
 ```
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
