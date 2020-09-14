@@ -1,5 +1,5 @@
 ---
-title: "List groups"
+title: "List externalGroups"
 description: "Get the externalGroup resources from the groups navigation property."
 author: "snlraju-msft"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "search"
 doc_type: apiPageType
 ---
 
-# List groups
+# List externalGroups
 
 Namespace: microsoft.graph
 

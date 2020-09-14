@@ -1,5 +1,5 @@
 ---
-title: "List members"
+title: "List externalGroupMembers"
 description: "Get the externalGroupMember resources from the members navigation property."
 author: "snlraju-msft"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "search"
 doc_type: apiPageType
 ---
 
-# List members
+# List externalGroupMembers
 
 Namespace: microsoft.graph
 
