@@ -1,30 +1,30 @@
 ---
-title: "Create Channel"
-description: "Create a new channel in a Microsoft Team, as specified in the request body."
-localization_priority: Priority
-author: "nkramer"
+title: "Create channel"
+description: "Create new channel in a Microsoft Team, as specified in the request body."
+localization_priority: Normal
+author: "clearab"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Create Channel
+# Create channel
 
 Namespace: microsoft.graph
 
 
-Create a new [channel](../resources/channel.md) in a Microsoft Team, as specified in the request body.
-
-> **Note**: There is a known issue with application permissions and this API. For details, see the [known issues list](/graph/known-issues#application-permissions).
+Create a new [channel](../resources/channel.md) in a team, as specified in the request body.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (work or school account) | Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All    |
+|Application | Channel.Create.Group*, Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All|
+
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
@@ -33,18 +33,21 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /teams/{id}/channels
 ```
+
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
+
 In the request body, supply a JSON representation of [channel](../resources/channel.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [channel](../resources/channel.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [channel](../resources/channel.md) object in the response body.
 
 ## Examples
 
@@ -60,7 +63,7 @@ The following example shows a request to create a standard channel.
   "name": "create_channel_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels
+POST https://graph.microsoft.com/v1.0/teams/{id}/channels
 Content-type: application/json
 
 {
@@ -132,7 +135,7 @@ Content-type: application/json
      [
         {
            "@odata.type":"#microsoft.graph.aadUserConversationMember",
-           "user@odata.bind":"https://graph.microsoft.com/beta/users('{user_id}')",
+           "user@odata.bind":"https://graph.microsoft.com/v1.0/users('{user_id}')",
            "roles":["owner"]
         }
      ]
