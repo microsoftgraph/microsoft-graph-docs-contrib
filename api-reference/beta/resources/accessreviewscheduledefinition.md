@@ -20,7 +20,7 @@ Represents an Azure AD [access review](accessreviews-root.md).
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-list.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) collection | Lists every `accessReviewScheduleDefinition`. |
+|[List accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-list.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) collection | Lists every `accessReviewScheduleDefinition`. Does not include each properties associated `accessReviewInstance` instances. |
 
 ## Properties
 | Property                  | Type                                | Required on Create                     | Description |

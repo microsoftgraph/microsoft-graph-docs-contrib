@@ -13,14 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects. A list of zero or more **accessReviewScheduleDefinition** objects are returned, for each access review series created.
+Retrieve the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects. A list of zero or more **accessReviewScheduleDefinition** objects are returned, including all of their nested properties, for each access review series created. This does not include associated accessReviewInstances.
 
 >[!NOTE]
-> If any of the access reviews that match the filter is a recurring access review, one **accessReview** object will be returned to represent each recurring series as a whole, in addition to any current, past and the next upcoming instance. For example, if there is a monthly recurring access review of guest members of group A, a quarterly recurring access review of guest members of group B, and a one-time access review of guest members of group C, each of these recurrences have just started, and the caller queries for access reviews with a business flow template of reviews of guest members of groups, three objects will be returned representing the three series, as well as three objects for the current access review instances, and potentially three objects for the next upcoming instances. To retrieve the instances of a recurring access review, or the access review instance scheduled for a particular month or quarter, the caller can subsequently navigate the **instance** relationship of the recurring **accessReview** object. The **instance** relationship links to the **accessReview** objects for a current or the past instances of the recurring access review.
-
-If many access reviews match the filter, to improve efficiency and avoid timeouts, retrieve the result set in pages, by including both the `$top` query parameter with a page size, for example 100, and the `$skip=0` query parameter in the request. These parameters can be included even when you do not anticipate that the request will span multiple pages. When a result set spans multiple pages, Microsoft Graph returns that page with an `@odata.nextLink` property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the `@odata.nextLink` URL in each response, until all the results are returned, as described in [paging Microsoft Graph data in your app](/graph/paging.md).
-
-The **accessReview** objects returned by this API will not include nested structure properties such as **settings**, or relationships.  To retrieve an access review settings or relationships, use the [get accessReview](accessreview-get.md) API.
+>The **accessReviewScheduleDefinition** represents the scheduling of a review series. If a review does not recur, it is still considered a series with one instance. This method does not list the associated instance(s) of each scheduled definition.
 
 
 ## Permissions
@@ -37,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /accessReviews?$filter=businessFlowTemplateId eq {businessFlowTemplate-id}&$top={pagesize}&$skip=0
+GET /identityGovernance/accessReviews/definitions
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -48,11 +44,11 @@ GET /accessReviews?$filter=businessFlowTemplateId eq {businessFlowTemplate-id}&$
 Do not supply a request body.
 
 ## Response
-If successful, this method returns a `200 OK` response code and an array of [accessReview](../resources/accessreview.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and an array of [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects in the response body.
 
 ## Examples
 ##### Request
-The following example shows a request to retrieve all the one-time and recurring access reviews for a business flow template '6e4f3d20-c5c3-407f-9695-8460952bcc68'.
+The following example shows a request to retrieve all the access review series in a tenant.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -60,19 +56,18 @@ The following example shows a request to retrieve all the one-time and recurring
   "name": "get_accessReviews"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/accessReviews?$filter=businessFlowTemplateId+eq+'6e4f3d20-c5c3-407f-9695-8460952bcc68'&$top=100&$skip=0
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreviews-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-accessreviews-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-accessreviews-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 
 ---
 
@@ -94,25 +89,79 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "value":[
-       {
-         "id": "2b83cc42-09db-46f6-8c6e-16fec466a82d",
-         "displayName": "review",
-         "startDateTime": "2017-11-14T01:14:54.89Z",
-         "endDateTime": "2017-12-14T01:14:54.89Z",
-         "status": "InProgress",
-         "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-         "reviewerType": "self",
-         "description": "",
-         "reviewedEntity":{"id":"3b4f7e74-eb82-4120-9ff5-ba429c1ea6df","displayName":"Salesforce"}
-       }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions",
+    "@odata.count": 1,
+    "value": [
+        {
+            "id": "98dcebed-c7f6-46f4-bcf3-4a3fccdb3e2a",
+            "displayName": "Access Review",
+            "createdDateTime": "2020-09-09T14:27:59Z",
+            "lastModifiedDateTime": "2020-09-11T12:02:50Z",
+            "status": "InProgress",
+            "descriptionForAdmins": "Test world",
+            "descriptionForReviewers": "Test world",
+            "createdBy": {
+                "id": "957f1027-c0ee-460d-9269-b8828e59e0fe",
+                "displayName": "MOD Administrator",
+                "userPrincipalName": "admin@microsoft.com"
+            },
+            "scope": {
+                "query": "/groups/119cc181-22f0-4e18-8537-264e7524ee0b/transitiveMembers",
+                "queryType": "MicrosoftGraph"
+            },
+            "instanceEnumerationScope": {
+                "query": "/groups/119cc181-22f0-4e18-8537-264e7524ee0b",
+                "queryType": "MicrosoftGraph"
+            },
+            "reviewers": [
+                {
+                    "query": "./manager",
+                    "queryType": "MicrosoftGraph",
+                    "queryRoot": "decisions"
+                }
+            ],
+            "settings": {
+                "mailNotificationsEnabled": true,
+                "reminderNotificationsEnabled": true,
+                "justificationRequiredOnApproval": true,
+                "defaultDecisionEnabled": false,
+                "defaultDecision": "None",
+                "instanceDurationInDays": 0,
+                "autoApplyDecisionsEnabled": false,
+                "recommendationsEnabled": true,
+                "recurrence": {
+                    "pattern": {
+                        "type": "weekly",
+                        "interval": 1,
+                        "month": 0,
+                        "dayOfMonth": 0,
+                        "daysOfWeek": [],
+                        "firstDayOfWeek": "sunday",
+                        "index": "first"
+                    },
+                    "range": {
+                        "type": "numbered",
+                        "numberOfOccurrences": 0,
+                        "recurrenceTimeZone": null,
+                        "startDate": "2020-09-11",
+                        "endDate": "9999-12-31"
+                    }
+                },
+                "applyActions": [
+                    {
+                        "@odata.type": "#microsoft.graph.removeAccessApplyAction"
+                    }
+                ]
+            }
+        },
+        {...}
     ]
 }
 ```
 
 ## See also
 
-- [Get accessReview](accessreview-get.md)
+- [Get accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
 
 
 <!--
