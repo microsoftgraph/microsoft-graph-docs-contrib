@@ -11,7 +11,7 @@ ms.prod: "sharepoint"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Add copy of [site][site] [content type][contentType]  to a [list][list].
+Add a copy of a [site][site] [content type][contentType]  to a [list][list].
  
   
 
@@ -54,13 +54,13 @@ In the request body, supply JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
-|Parameter|Type|Required|Description|
-|-|-|-|-|
-|contentType| string | Yes| Canonical url to the site content type whose copy will be added to the list|
+|Parameter|Type|Description|
+|-|-|-|
+|contentType| string | Canonical URL of the site content type a copy of which will be added to the list. Required.|
 
 ## Response
 
-If successful, this call returns a `204 No Content` response
+If successful, this call returns a `204 No Content` response.
 
 ## Example
 
