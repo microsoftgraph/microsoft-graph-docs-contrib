@@ -543,7 +543,7 @@ items:
             items:
               - name: Using the providers
                 href: toolkit/providers.md
-              - name: Msal provider
+              - name: MSAL provider
                 href: toolkit/providers/msal.md
               - name: SharePoint provider
                 href: toolkit/providers/sharepoint.md
