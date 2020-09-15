@@ -1,24 +1,24 @@
 ---
-title: "Allow application to access online meetings on behalf of a user "
-description: "Brief documentation of application access policy on Graph's side"
+title: "Allow applicatiosn to access online meetings on behalf of a user"
+description: "Find out how to configure applications to access online meetings on behalf of a user."
 author: "frankpeng7"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 ---
 
-# Allow application to access online meetings on behalf of a user
+# Allow applications to access online meetings on behalf of a user
 
-For some use cases, it is appropriate for an app to call Microsoft Graph to take actions on behalf of a user. These are usually background services or daemon apps that run on a server without the presence of a signed-in user. For example, an app may need to call Microsoft Graph to schedule multiple meetings based on published schedules (e.g. courses) or external scheduling tools. In these cases, the user that the application acts on behalf of is identified as the meeting organizer.
+In some cases, such as for background services or daemon apps that run on a server without the presence of a signed-in user, it is appropriate for an app to call Microsoft Graph to take actions on behalf of a user. For example, an app might need to call Microsoft Graph to schedule multiple meetings based on published schedules (such as courses) or external scheduling tools. In these cases, the user that the application acts on behalf of is identified as the meeting organizer.
 
 Administrators who want to allow an application to access online meeting resources on behalf of a user can use **New-CsApplicationAccessPolicy** and **Grant-CsApplicationAccessPolicy** PowerShell cmdlets to configure access control. This article covers the basic steps to configure an application access policy.
 
-These steps are specific to Online Meetings resources and do not apply to other Microsoft Graph workloads.
+These steps are specific to online meetings and do not apply to other Microsoft Graph resources.
 
-## Configure ApplicationAccessPolicy
+## Configure applicationAccessPolicy
 
 To configure an application access policy and allow applications to access online meetings with application permissions:
 
-1. Identify the app’s applcation (client) ID and user id of the users on behalf of which the app will be authorized to access online meeting.
+1. Identify the app’s applcation (client) ID and the user IDs of the users on behalf of which the app will be authorized to access online meetings.
 
     - Identify the app’s application (client) ID in the [Azure app registration portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
     - Identify the user's user (object) ID in the [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)
@@ -27,14 +27,15 @@ To configure an application access policy and allow applications to access onlin
 
 3. Create an application access policy containing a list of app IDs.
 
-    Run the following cmdlet, replacing the **Identity**, **AppIds**, and **Description**(optional) arguments.
+    Run the following cmdlet, replacing the **Identity**, **AppIds**, and **Description** (optional) arguments.
 
     ```powershell
     New-CsApplicationAccessPolicy -Identity Test-policy -AppIds "ddb80e06-92f3-4978-bc22-a0eee85e6a9e", "ccb80e06-92f3-4978-bc22-a0eee85e6a9e", "bbb80e06-92f3-4978-bc22-a0eee85e6a9e" -Description "description here"
     ```
 
-4. Grant the policy to user to allow the app IDs contained in the policy to access online meeting on behalf of the granted user
-   Run the following cmdlet, replacing the **PolicyName**, and **Identity** arguments.
+4. Grant the policy to the user to allow the app IDs contained in the policy to access online meetings on behalf of the granted user. 
+
+   Run the following cmdlet, replacing the **PolicyName** and **Identity** arguments.
 
    ```powershell
    Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Identity "ddb80e06-92f3-4978-bc22-a0eee85e6a9e"
@@ -42,21 +43,21 @@ To configure an application access policy and allow applications to access onlin
 
 > **Note** 
 > 
-> - _Identity_ refers to the policy name when creating the policy, but user ID when granting the policy
+> - _Identity_ refers to the policy name when creating the policy, but the user ID when granting the policy.
 > - Changes to application access policies can take up to 30 minutes to take effect in Microsoft Graph REST API calls.
 
 ## Supported permissions and additional resources
 
-Administrators can use ApplicationAccessPolicy cmdlets to control mailbox access of an app that has been granted any of the following application permissions:
+Administrators can use ApplicationAccessPolicy cmdlets to control mailbox access for an app that has been granted any of the following application permissions:
 
 - OnlineMeetings.Read.All
 - OnlineMeetings.ReadWrite.All
 
 For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/new-csapplicationaccesspolicy).
 
-## Possible Graph API errors
+## Errors
 
-You might encounter the following error when an API call is denied access due to an app trying to access online meeting without application access policy configured.
+You might encounter the following error when an API call is denied access due to an app trying to access an online meeting when application access policy is not configured.
 
 ```json
 {
@@ -71,7 +72,7 @@ You might encounter the following error when an API call is denied access due to
 }
 ```
 
-Follow the steps above to create and/or grant an application access policy that contains the app ID to the user ID.
+Follow the steps in this article to create and/or grant an application access policy that contains the app ID to the user ID.
 
 ## See also
 
