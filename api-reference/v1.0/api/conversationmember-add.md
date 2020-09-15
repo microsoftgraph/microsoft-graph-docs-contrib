@@ -59,7 +59,6 @@ Here is an example of the request.
   "blockType": "request",
   "name": "create_conversation_member"
 } -->
-
 ```http
 
 POST https://graph.microsoft.com/V1.0/teams/{id}/channels/{id}/members/
@@ -72,7 +71,6 @@ content-length: 26
   "user@odata.bind": "https://graph.microsoft.com/V1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
 }
 ```
-
 # [C#](#tab/csharp)
 
 # [JavaScript](#tab/javascript) 
