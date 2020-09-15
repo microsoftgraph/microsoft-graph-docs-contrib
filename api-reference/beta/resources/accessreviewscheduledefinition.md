@@ -20,7 +20,7 @@ Represents an Azure AD [access review](accessreviews-root.md).
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-list.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) collection | Lists every `accessReviewScheduleDefinition`. Does not include associated `accessReviewInstance` instances. |
+|[List accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-list.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) collection | Lists every `accessReviewScheduleDefinition`. Does not include associated `accessReviewInstance` instances in listings. |
 
 ## Properties
 | Property                  | Type                                | Required on Create                     | Description |
@@ -48,7 +48,7 @@ Represents an Azure AD [access review](accessreviews-root.md).
 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-| `instances`               |[accessReviewInstances](accessreviewinstances.md) collection         | If the accessReviewScheduleDefinition is a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique group under review in the accessReviewScheduleDefinition. If a review has multiple groups and multiple instances, each group will have a unique instance for each recurrence. |
+| `instances`               |[accessReviewInstances](accessreviewinstances.md) collection         | If the `accessReviewScheduleDefinition` is a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique group under review in the `accessReviewScheduleDefinition`. If a review has multiple groups and multiple instances, each group will have a unique instance for each recurrence. |
 
 ## JSON representation
 
@@ -128,16 +128,16 @@ The **accessReviewScheduleSettings** is a complex type representing settings of 
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| `mailNotificationsEnabled`|`Boolean`                | Flag to indicate whether mails are enabled/disabled                |
+| `mailNotificationsEnabled`|`Boolean`                | Flag to indicate whether emails are enabled/disabled                |
 | `reminderNotificationsEnabled`|`Boolean`       | Flag to indicate whether reminders are enabled/disabled       |
-| `justificationRequiredOnApproval`|`Boolean` | Flag to indicate whether reviewers are required to provide justification |
-| `defaultDecisionEnabled`|`Boolean` | Flag to indicate whether auto-review feature is enabled |
-| `defaultDecision`|`String` | Can be Approve, Deny, Recommendation |
-| `instanceDurationInDays`|`Int32` | Duration of every instance in days |
-| `recurrence`|`microsoft.graph.patternedRecurrence` | Detailed settings for Recurrence. Using standard outlook recurrence object  |
-| `autoApplyDecisionsEnabled`|`Boolean` | Flag to indicate whether auto-apply feature is enabled |
-| `applyActions`|`Collection(microsoft.graph.accessReviewApplyAction` | Optional field. Only needed for configuring Disable/Delete Apply action. Describes the apply actions to take once a review is complete. accessReviewApplyAction is a base complex type that can have different derived types. There are two types that are currently supported : removeAccessApplyAction and disableAndDeleteUserApplyAction |
-| `recommendationsEnabled`|`Boolean` | Flag to indicate whether recommendations are enabled |
+| `justificationRequiredOnApproval`|`Boolean` | Flag to indicate whether reviewers are required to provide justification with their decision |
+| `defaultDecisionEnabled`|`Boolean` | Flag to indicate whether auto-review feature is enabled/disabled |
+| `defaultDecision`|`String` | Decision chosen if auto-review featured is enabled. Can be one of "Approve", "Deny", or "Recommendation". |
+| `instanceDurationInDays`|`Int32` | Duration of each recurrence of review (`accessReviewInstance`) in number of days. |
+| `recurrence`|`microsoft.graph.patternedRecurrence` | Detailed settings for Recurrence. Using standard outlook recurrence object.  |
+| `autoApplyDecisionsEnabled`|`Boolean` | Flag to indicate whether auto-apply feature is enabled. |
+| `applyActions`|`Collection(microsoft.graph.accessReviewApplyAction)` | Optional field. Describes the  actions to take once a review is complete. `accessReviewApplyAction` is a base complex type that can have different derived types. There are two types that are currently supported: `removeAccessApplyAction` and `disableAndDeleteUserApplyAction`. |
+| `recommendationsEnabled`|`Boolean` | Flag to indicate whether decision recommendations are enabled/disabled. |
 
 
 
