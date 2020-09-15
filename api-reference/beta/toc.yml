@@ -9797,6 +9797,28 @@ items:
               href: api/phoneauthenticationmethod-enablesmssignin.md
             - name: Disable SMS sign-in
               href: api/phoneauthenticationmethod-disablesmssignin.md
+        - name: Authentication method policy
+          items:
+          - name: Overview
+            href: resources/authenticationmethodspolicies-overview.md
+          - name: FIDO2 Security Key
+            href: resources/fido2authenticationmethodconfiguration.md
+            items:
+            - name: Get
+              href: api/fido2authenticationmethodconfiguration-get.md
+            - name: Update
+              href: api/fido2authenticationmethodconfiguration-update.md
+            - name: Delete
+              href: api/fido2authenticationmethodconfiguration-delete.md
+          - name: Microsoft Authenticator passwordless sign-in
+            href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
+            items:
+            - name: Get
+              href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-get.md
+            - name: Update
+              href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
+            - name: Delete
+              href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
         - name: Certificate-based auth configuration
           href: resources/certificatebasedauthconfiguration.md
           items:
