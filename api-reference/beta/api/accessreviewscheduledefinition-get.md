@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviewscheduledefinition-root.md) feature, retrieve an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object by ID. This returns all properties of the scheduled access review series except for the associated accessReviewInstances. Each accessReviewScheduleDefinition has at least one instance, representing each recurrence of the review, as well as individual groups being reviewed.
+In the Azure AD [access reviews](../resources/accessreview-root.md) feature, retrieve an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object by ID. This returns all properties of the scheduled access review series except for the associated accessReviewInstances. Each accessReviewScheduleDefinition has at least one instance, representing each recurrence of the review, as well as individual groups being reviewed.
 
 To retrieve the instances of the access review series, use the [list accessReviewInstance](accessreviewinstance-list.md) API.
 
@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.ReadWrite.All  |
-|Delegated (personal Microsoft account) | AccessReview.ReadWrite.All |
-|Application                            | AccessReview.ReadWrite.All |
+|Delegated (work or school account)     | AccessReview.Read.All or AccessReview.ReadWrite.All  |
+|Delegated (personal Microsoft account) | AccessReview.Read.All or AccessReview.ReadWrite.All |
+|Application                            | AccessReview.Read.All or AccessReview.ReadWrite.All |
 
 In order to call this API, the signed in user must also be in a directory role that permits them to read an access review, or the user can be assigned as a reviewer on the access review.  For more details, see the role and permission requirements for [access reviews](../resources/accessreviews-root.md).
 
@@ -34,9 +34,7 @@ In order to call this API, the signed in user must also be in a directory role t
 GET /identityGovernance/accessReviews/definitions/{reviewID}
 ```
 ## Request headers
-| Name         | Type        | Description |
-|:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Required. |
+None.
 
 ## Request body
 Do not supply a request body for this method.

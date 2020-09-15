@@ -22,9 +22,10 @@ Represents an Azure AD [access review](accessreviews-root.md).
 |:---------------|:--------|:----------|
 |[List accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-list.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) collection | Lists every `accessReviewScheduleDefinition`. Does not include associated `accessReviewInstance` instances in listings. |
 |[Get accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Get an `accessReviewScheduleDefinition` with a specific id. |
+|[Create accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-create.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Create a new `accessReviewScheduleDefinition`. |
 
 ## Properties
-| Property                  | Type                                | Required on Create                     | Description |
+| Property                  | Type                                | Required                     | Description |
 | :-------------------------| :---------------------------------- | :---------- | :---------- |
 | `id`                      |`String`                             | No  | The feature-assigned unique identifier of an access review.|
 | `displayName`             |`String`                             | Yes | Name of access review series.|
