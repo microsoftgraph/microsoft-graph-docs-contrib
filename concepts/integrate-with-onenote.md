@@ -3,6 +3,8 @@ title: "OneNote API overview"
 description: "OneNote is a digital notebook that lets customers track ideas and notes for home, school, or work, by typing, sketching, or voice, on the web, phone, tablet, or desktop. They can freely organize notes, switch devices and pick up where they left off, and collaborate on notes with others in real time."
 author: "Jewan-microsoft"
 localization_priority: Priority
+ms.prod: "onenote"
+ms.custom: scenarios:getting-started
 ---
 
 # OneNote API overview
@@ -29,7 +31,7 @@ Tap into other powerful OneNote features. The OneNote APIs in Microsoft Graph ru
 
 ### Reach millions of OneNote users on all major platforms
 
-Use OneNote to increase your app usage. OneNote is preinstalled on new Windows devices, and is available for most platforms, online, and as part of Office 365. When you publish apps that use the feature-rich OneNote environment, you have access to broad cross-platform market potential.
+Use OneNote to increase your app usage. OneNote is preinstalled on new Windows devices, and is available for most platforms, online, and as part of Microsoft 365. When you publish apps that use the feature-rich OneNote environment, you have access to broad cross-platform market potential.
 
 <!-- Might be good to show a few examples of Microsoft Graph API calls here, similar to what we have in the featured scenarios topic: featured_scenarios..md You could have an H2 section called "What can I do with OneNote APIs in Microsoft Graph?"-->
 
@@ -39,9 +41,9 @@ The following are some of the most popular requests for working with OneNote res
 
 |Operation|URL|
 |:--------|:--|
-|GET my notebooks|[https://graph.microsoft.com/v1.0/me/onenote/notebooks](https://developer.microsoft.com/graph/graph-explorer?request=me/onenote/notebooks&version=1.0)|
-|GET my sections|[https://graph.microsoft.com/v1.0/me/onenote/sections](https://developer.microsoft.com/graph/graph-explorer?request=me/onenote/sections&version=1.0)|
-|GET my pages|[https://graph.microsoft.com/v1.0/me/onenote/pages](https://developer.microsoft.com/graph/graph-explorer?request=me/onenote/pages&version=1.0)|
+|GET my notebooks|[https://graph.microsoft.com/v1.0/me/onenote/notebooks](https://developer.microsoft.com/graph/graph-explorer?request=me/onenote/notebooks&version=v1.0)|
+|GET my sections|[https://graph.microsoft.com/v1.0/me/onenote/sections](https://developer.microsoft.com/graph/graph-explorer?request=me/onenote/sections&version=v1.0)|
+|GET my pages|[https://graph.microsoft.com/v1.0/me/onenote/pages](https://developer.microsoft.com/graph/graph-explorer?request=me/onenote/pages&version=v1.0)|
 
 ## Learn more about OneNote APIs
 
@@ -73,14 +75,14 @@ Take an in-depth look at Microsoft Graph APIs to learn about the OneNote content
 ## See also
 Find out about a few other OneNote features that are exposed only on the OneNote service-specific REST endpoint.
 
-- [OneNote development](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-landing)
-- [Work with class notebooks](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
-- [Work with asynchronous class notebooks](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
-- [Work with staff notebooks](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
-- [Copy notebooks, sections, and pages](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-copy)
-- [Manage permissions on OneNote entities](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
-- [Use the OneNote save dialog on your webpages](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
-- [Subscribe to webhooks](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-sync)
+- [OneNote development](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-landing)
+- [Work with class notebooks](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
+- [Work with asynchronous class notebooks](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
+- [Work with staff notebooks](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
+- [Copy notebooks, sections, and pages](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-copy)
+- [Manage permissions on OneNote entities](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
+- [Use the OneNote save dialog on your webpages](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
+- [Subscribe to webhooks](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-sync)
 
 ## API reference
 Looking for the API reference for this service?

@@ -1,12 +1,14 @@
 ---
 title: "How to protect your company app data with Microsoft Intune - Microsoft Graph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that manage apps and their policies for a tenant organization."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 ---
 
 # How to protect your company app data with Microsoft Intune
+
+Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -18,6 +20,7 @@ You can use Intune app protection policies to help protect your company’s data
 
 The following Graph resources are available to manage app protection polices in Intune:
 
+- [Android device owner enrollment mode](intune-androidforwork-androiddeviceownerenrollmentmode.md)
 - [Android device owner enrollment profile](intune-androidforwork-androiddeviceownerenrollmentprofile.md)
 - [Android enrollment company code](intune-androidforwork-androidenrollmentcompanycode.md)
 - [Android for Work app](intune-apps-androidforworkapp.md)
@@ -40,9 +43,12 @@ The following Graph resources are available to manage app protection polices in 
 - [Android managed store app configuration schema](intune-androidforwork-androidmanagedstoreappconfigurationschema.md)
 - [Android managed store app configuration schema item](intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)
 - [Android managed store app configuration schema item data type](intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)
+- [Android managed store app track](intune-apps-androidmanagedstoreapptrack.md)
+- [Android managed store web app](intune-apps-androidmanagedstorewebapp.md)
 - [Android minimum operating system](intune-apps-androidminimumoperatingsystem.md)
 - [Android permission action](intune-apps-androidpermissionaction.md)
 - [Android permission action type](intune-apps-androidpermissionactiontype.md)
+- [Android profile applicability](intune-apps-androidprofileapplicability.md)
 - [Android store app](intune-apps-androidstoreapp.md)
 - [App configuration setting item](intune-apps-appconfigurationsettingitem.md)
 - [Certificate status](intune-apps-certificatestatus.md)
@@ -54,28 +60,25 @@ The following Graph resources are available to manage app protection polices in 
 - [Install state](intune-books-installstate.md)
 - [iOS device type](intune-apps-iosdevicetype.md)
 - [iOS LOB app](intune-apps-ioslobapp.md)
-- [iOS LOB app assignment settings](intune-apps-ioslobappassignmentsettings.md)
-- [iOS LOB app provisioning configuration](intune-apps-ioslobappprovisioningconfiguration.md)
 - [iOS LOB app provisioning configuration assignment](intune-apps-ioslobappprovisioningconfigurationassignment.md)
 - [iOS minimum operating system](intune-apps-iosminimumoperatingsystem.md)
 - [iOS mobile app configuration](intune-apps-iosmobileappconfiguration.md)
 - [iOS store app](intune-apps-iosstoreapp.md)
-- [iOS store app assignment settings](intune-apps-iosstoreappassignmentsettings.md)
 - [iOS VPP app](intune-apps-iosvppapp.md)
 - [iOS VPP app assigned device license](intune-apps-iosvppappassigneddevicelicense.md)
 - [iOS VPP app assigned license](intune-apps-iosvppappassignedlicense.md)
 - [iOS VPP app assigned user license](intune-apps-iosvppappassigneduserlicense.md)
-- [iOS VPP app assignment settings](intune-apps-iosvppappassignmentsettings.md)
 - [iOS VPP app revoke licenses action result](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [iOS VPP e-book](intune-books-iosvppebook.md)
 - [iOS VPP e-book assignment](intune-books-iosvppebookassignment.md)
 - [macOS LOB app](intune-apps-macoslobapp.md)
 - [macOS LOB child app](intune-apps-macoslobchildapp.md)
+- [macOS mdatp app](intune-apps-macosmdatpapp.md)
+- [macOS microsoft edge app](intune-apps-macosmicrosoftedgeapp.md)
 - [macOS minimum operating system](intune-apps-macosminimumoperatingsystem.md)
 - [macOS office suite app](intune-apps-macosofficesuiteapp.md)
 - [macOS VPP app](intune-apps-macosvppapp.md)
 - [macOS VPP app assigned license](intune-apps-macosvppappassignedlicense.md)
-- [macOS VPP app assignment settings](intune-apps-macosvppappassignmentsettings.md)
 - [macOS VPP app revoke licenses action result](intune-apps-macosvppapprevokelicensesactionresult.md)
 - [Managed android LOB app](intune-apps-managedandroidlobapp.md)
 - [Managed android store app](intune-apps-managedandroidstoreapp.md)
@@ -94,13 +97,11 @@ The following Graph resources are available to manage app protection polices in 
 - [Managed iOS store app](intune-apps-managediosstoreapp.md)
 - [Managed mobile LOB app](intune-apps-managedmobilelobapp.md)
 - [MDM app config key type](intune-apps-mdmappconfigkeytype.md)
+- [Microsoft edge channel](intune-apps-microsoftedgechannel.md)
 - [Microsoft store for business app](intune-apps-microsoftstoreforbusinessapp.md)
-- [Microsoft store for business app assignment settings](intune-apps-microsoftstoreforbusinessappassignmentsettings.md)
 - [Microsoft store for business contained app](intune-apps-microsoftstoreforbusinesscontainedapp.md)
 - [Microsoft store for business license type](intune-apps-microsoftstoreforbusinesslicensetype.md)
-- [Mobile app](intune-apps-mobileapp.md)
 - [Mobile app assignment](intune-apps-mobileappassignment.md)
-- [Mobile app assignment settings](intune-apps-mobileappassignmentsettings.md)
 - [Mobile app category](intune-apps-mobileappcategory.md)
 - [Mobile app content](intune-apps-mobileappcontent.md)
 - [Mobile app content file](intune-apps-mobileappcontentfile.md)
@@ -133,30 +134,39 @@ The following Graph resources are available to manage app protection polices in 
 - [VPP licensing type](intune-apps-vpplicensingtype.md)
 - [Web app](intune-apps-webapp.md)
 - [Win32 LOB app](intune-apps-win32lobapp.md)
-- [Win32 LOB app assignment settings](intune-apps-win32lobappassignmentsettings.md)
 - [Win32 LOB app detection](intune-apps-win32lobappdetection.md)
 - [Win32 LOB app detection operator](intune-apps-win32lobappdetectionoperator.md)
 - [Win32 LOB app file system detection](intune-apps-win32lobappfilesystemdetection.md)
 - [Win32 LOB app file system detection type](intune-apps-win32lobappfilesystemdetectiontype.md)
+- [Win32 LOB app file system operation type](intune-apps-win32lobappfilesystemoperationtype.md)
 - [Win32 LOB app file system requirement](intune-apps-win32lobappfilesystemrequirement.md)
+- [Win32 LOB app file system rule](intune-apps-win32lobappfilesystemrule.md)
 - [Win32 LOB app install experience](intune-apps-win32lobappinstallexperience.md)
 - [Win32 LOB app msi information](intune-apps-win32lobappmsiinformation.md)
 - [Win32 LOB app msi package type](intune-apps-win32lobappmsipackagetype.md)
-- [Win32 LOB app notification](intune-apps-win32lobappnotification.md)
 - [Win32 LOB app power shell script detection](intune-apps-win32lobapppowershellscriptdetection.md)
 - [Win32 LOB app power shell script detection type](intune-apps-win32lobapppowershellscriptdetectiontype.md)
 - [Win32 LOB app power shell script requirement](intune-apps-win32lobapppowershellscriptrequirement.md)
+- [Win32 LOB app power shell script rule](intune-apps-win32lobapppowershellscriptrule.md)
+- [Win32 LOB app power shell script rule operation type](intune-apps-win32lobapppowershellscriptruleoperationtype.md)
 - [Win32 LOB app product code detection](intune-apps-win32lobappproductcodedetection.md)
+- [Win32 LOB app product code rule](intune-apps-win32lobappproductcoderule.md)
 - [Win32 LOB app registry detection](intune-apps-win32lobappregistrydetection.md)
 - [Win32 LOB app registry detection type](intune-apps-win32lobappregistrydetectiontype.md)
 - [Win32 LOB app registry requirement](intune-apps-win32lobappregistryrequirement.md)
+- [Win32 LOB app registry rule](intune-apps-win32lobappregistryrule.md)
+- [Win32 LOB app registry rule operation type](intune-apps-win32lobappregistryruleoperationtype.md)
 - [Win32 LOB app requirement](intune-apps-win32lobapprequirement.md)
+- [Win32 LOB app restart behavior](intune-apps-win32lobapprestartbehavior.md)
 - [Win32 LOB app return code](intune-apps-win32lobappreturncode.md)
 - [Win32 LOB app return code type](intune-apps-win32lobappreturncodetype.md)
+- [Win32 LOB app rule](intune-apps-win32lobapprule.md)
+- [Win32 LOB app rule operator](intune-apps-win32lobappruleoperator.md)
+- [Win32 LOB app rule type](intune-apps-win32lobappruletype.md)
 - [Windows AppX](intune-apps-windowsappx.md)
-- [Windows AppX app assignment settings](intune-apps-windowsappxappassignmentsettings.md)
 - [Windows architecture](intune-apps-windowsarchitecture.md)
 - [Windows device type](intune-apps-windowsdevicetype.md)
+- [Windows microsoft edge app](intune-apps-windowsmicrosoftedgeapp.md)
 - [Windows minimum operating system](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows mobile MSI](intune-apps-windowsmobilemsi.md)
 - [Windows office client configuration](intune-cirrus-windowsofficeclientconfiguration.md)
@@ -168,6 +178,4 @@ The following Graph resources are available to manage app protection polices in 
 - [Windows phone XAP](intune-apps-windowsphonexap.md)
 - [Windows store app](intune-apps-windowsstoreapp.md)
 - [Windows universal AppX](intune-apps-windowsuniversalappx.md)
-- [Windows universal AppX app assignment settings](intune-apps-windowsuniversalappxappassignmentsettings.md)
 - [Windows universal AppX contained app](intune-apps-windowsuniversalappxcontainedapp.md)
-

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List outcomes
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [educationOutcome](../resources/educationoutcome.md) objects.  There are three types of outcomes: **educationPointsOutcome**, **educationFeedbackOutcome**, and **educationRubricOutcome**.
@@ -67,7 +69,7 @@ The following is an example of the request.
   "name": "get_outcomes"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{id}/outcomes
 ```
 # [C#](#tab/csharp)

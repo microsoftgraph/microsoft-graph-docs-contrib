@@ -2,12 +2,14 @@
 title: "Add Named Item"
 description: "Adds a new name to the collection of the given scope using the user's locale for the formula."
 localization_priority: Normal
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType
 ---
 
 # Add Named Item
+
+Namespace: microsoft.graph
 
 Adds a new name to the collection of the given scope using the user's locale for the formula.
 
@@ -24,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/add
-POST /workbook/worksheets({id|name})/names/add
+POST /workbook/worksheets/{id|name}/names/add
 
 ```
 ## Request headers

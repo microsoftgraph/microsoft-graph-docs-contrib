@@ -4,10 +4,12 @@ description: "The following is a JSON representation of the resource."
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
-author: ""
+author: "JeremyKelley"
 ---
 
 # sharePointSiteUsageDetail resource type
+
+Namespace: microsoft.graph
 
 ## Properties
 
@@ -40,20 +42,20 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "reportRefreshDate": "Date", 
-  "siteId": "Guid", 
-  "siteUrl": "String", 
-  "ownerDisplayName": "String", 
-  "ownerPrincipalName": "String", 
-  "isDeleted": true, 
-  "lastActivityDate": "Date", 
-  "fileCount": 1024, 
-  "activeFileCount": 1024, 
-  "pageViewCount": 1024, 
-  "visitedPageCount": 1024, 
-  "storageUsedInBytes": 1024, 
-  "storageAllocatedInBytes": 1024, 
-  "rootWebTemplate": "String", 
+  "reportRefreshDate": "Date",
+  "siteId": "Guid",
+  "siteUrl": "String",
+  "ownerDisplayName": "String",
+  "ownerPrincipalName": "String",
+  "isDeleted": true,
+  "lastActivityDate": "Date",
+  "fileCount": 1024,
+  "activeFileCount": 1024,
+  "pageViewCount": 1024,
+  "visitedPageCount": 1024,
+  "storageUsedInBytes": 1024,
+  "storageAllocatedInBytes": 1024,
+  "rootWebTemplate": "String",
   "reportPeriod": "String"
 }
 ```

@@ -2,18 +2,20 @@
 title: "patchContentCommand resource type"
 description: "The changes to make to a OneNote page in a PATCH request."
 localization_priority: Normal
-author: ""
+author: "jewan-microsoft"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # patchContentCommand resource type
 
+Namespace: microsoft.graph
+
 The changes to make to a OneNote page in a PATCH request.
 
 ## JSON representation
 
-Here is a JSON representation of the resource, which is sent in the body of the [PATCH pages/{id}`](../api/page-update.md) request. 
+Here is a JSON representation of the resource, which is sent in the body of the [PATCH pages/{id}`](../api/page-update.md) request.
 
 <!-- {
   "blockType": "resource",

@@ -2,12 +2,14 @@
 title: "List events"
 description: "Get a list of event objects in the user's mailbox. The list contains single "
 localization_priority: Priority
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "harini84"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List events
+
+Namespace: microsoft.graph
 
 Get a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single 
 instance meetings and series masters.
@@ -93,7 +95,7 @@ Here is an example of the request. It specifies the following:
   "blockType": "request",
   "name": "get_events"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/events?$select=subject,body,bodyPreview,organizer,attendees,start,end,location
 Prefer: outlook.timezone="Pacific Standard Time"
 ```

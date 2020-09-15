@@ -1,13 +1,15 @@
 ---
 title: "windowsHealthMonitoringScope enum type"
 description: "Device health monitoring scope"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # windowsHealthMonitoringScope enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,6 +23,7 @@ Device health monitoring scope
 |undefined|0|Undefined|
 |healthMonitoring|1|Basic events for windows device health monitoring|
 |bootPerformance|2|Boot performance events|
+|userExperienceAnalytics|4|User experience analytics events|
 
 
 

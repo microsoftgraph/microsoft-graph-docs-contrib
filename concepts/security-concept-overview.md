@@ -4,6 +4,7 @@ description: "You can use the Microsoft Graph Security API to connect Microsoft 
 author: "preetikr"
 localization_priority: Priority
 ms.prod: "security"
+ms.custom: scenarios:getting-started
 ---
 
 # Microsoft Graph Security API overview
@@ -40,7 +41,7 @@ Tag alerts with additional context or threat intelligence to inform response and
 
 ### Unlock security context to drive investigation
 
-Dive deep into related security-relevant inventory (like users, hosts, and apps), then add organizational context from other Microsoft Graph providers (Azure AD, Microsoft Intune, Office 365) to bring business and security contexts together and improve threat response.
+Dive deep into related security-relevant inventory (like users, hosts, and apps), then add organizational context from other Microsoft Graph providers (Azure AD, Microsoft Intune, Microsoft 365) to bring business and security contexts together and improve threat response.
 
 ### Automate security workflows and reporting
 
@@ -81,4 +82,5 @@ Looking for the API reference for this service?
 ## Next steps
 
 - [Use the Microsoft Graph Security API](/graph/api/resources/security-api-overview?view=graph-rest-1.0)
+- Explore [Microsoft Graph Security API samples](https://aka.ms/graphsecurityapicode)
 - Interested in becoming a security provider? Reach out to [graphsecfeedback](mailto:graphsecfeedback@microsoft.com).

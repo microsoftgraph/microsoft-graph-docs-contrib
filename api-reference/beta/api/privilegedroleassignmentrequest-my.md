@@ -3,11 +3,13 @@ title: "privilegedRoleAssignmentRequest: my"
 description: "Get the requester's privileged role assignment requests."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # privilegedRoleAssignmentRequest: my
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,7 +52,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "privilegedroleassignmentrequest_my)"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/my
 ```
 # [C#](#tab/csharp)

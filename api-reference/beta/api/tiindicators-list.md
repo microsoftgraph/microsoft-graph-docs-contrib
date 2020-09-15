@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List threat intelligence indicators
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [tiIndicator](../resources/tiindicator.md) objects.
@@ -61,7 +63,7 @@ The following is an example of the request.
   "name": "get_tiindicators"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/tiIndicators
 ```
 # [C#](#tab/csharp)

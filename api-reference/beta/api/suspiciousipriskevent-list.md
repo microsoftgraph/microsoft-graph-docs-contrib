@@ -3,13 +3,18 @@ title: "List suspiciousIpRiskEvents"
 description: "Retrieve a list of suspiciousipriskevent objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "cloudhandler"
 ---
 
-# List suspiciousIpRiskEvents
+# List suspiciousIpRiskEvents (deprecated)
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+>[!CAUTION]
+>The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020. For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 Retrieve a list of suspiciousipriskevent objects.
 ## Permissions

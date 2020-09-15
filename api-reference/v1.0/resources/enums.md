@@ -2,10 +2,48 @@
 title: "Enum values"
 description: "Microsoft Graph enumeration values."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+ms.prod: "non-product-specific"
+author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ---
+
+# Enum values
+
+Namespace: microsoft.graph
+
+### activityType values
+
+|Member|
+|:---|
+|signin|
+|user|
+|unknownFutureValue|
+
+### riskDetectionTimingType values
+
+|Member|
+|:---|
+|notDefined|
+|realtime|
+|nearRealtime|
+|offline|
+|unknownFutureValue|
+
+### tokenIssuerType values
+
+|Member|
+|:---|
+|AzureAD|
+|ADFederationServices|
+|UnknownFutureValue|
+
+### attachmentType values
+
+| Member
+|:--------------
+| file
+| item
+| reference
 
 ### contactRelationship values
 
@@ -20,9 +58,55 @@ doc_type: enumPageType
 |other|6| An unspecified relationship to the user.|
 |unknownFutureValue|7| Marker value for future compatibility.|
 
+### scheduleEntityTheme values
+
+| Member
+|:-------------------------
+| white
+| blue
+| green
+| purple
+| pink
+| yellow
+| gray
+| darkBlue
+| darkGreen
+| darkPurple
+| darkPink
+| darkYellow
+| unknownFutureValue
+
+
+### timeOffReasonIconType values
+
+|Member|
+|:---|
+|none|
+|car|
+|calendar|
+|running|
+|plane|
+|firstAid|
+|doctor|
+|notWorking|
+|clock|
+|juryDuty|
+|globe|
+|cup|
+|phone|
+|weather|
+|umbrella|
+|piggyBank|
+|dog|
+|cake|
+|trafficCone|
+|pin|
+|sunny|
+|unknownFutureValue|
+
 ### timeZoneStandard values
 
-| Value
+| Member
 |:-----------------
 | windows
 | iana
@@ -42,7 +126,7 @@ doc_type: enumPageType
 
 ### attendeeType values
 
-| Value
+| Member
 |:-------------------------
 | required
 | optional
@@ -51,7 +135,7 @@ doc_type: enumPageType
 
 ### externalAudienceScope values
 
-| Value
+| Member
 |:-------------------------
 | none
 | contactsOnly
@@ -60,7 +144,7 @@ doc_type: enumPageType
 
 ### automaticRepliesStatus values
 
-| Value
+| Member
 |:-------------------------
 | disabled
 | alwaysEnabled
@@ -86,7 +170,7 @@ doc_type: enumPageType
 
 ### educationExternalSource values
 
-| Value
+| Member
 |:-------------------------
 | sis
 | manual
@@ -95,7 +179,7 @@ doc_type: enumPageType
 
 ### educationGender values
 
-| Value
+| Member
 |:-------------------------
 | female
 | male
@@ -105,7 +189,7 @@ doc_type: enumPageType
 
 ### eventType values
 
-| Value
+| Member
 |:-------------------------
 | singleInstance
 | occurrence
@@ -115,7 +199,7 @@ doc_type: enumPageType
 
 ### sensitivity values
 
-| Value
+| Member
 |:-------------------------
 | normal
 | personal
@@ -125,7 +209,7 @@ doc_type: enumPageType
 
 ### importance values
 
-| Value
+| Member
 |:-------------------------
 | low
 | normal
@@ -133,14 +217,14 @@ doc_type: enumPageType
 
 
 ### educationUserRole values
-| Value
+| Member
 |:---------------------
 | student
 | teacher
 
 ### meetingMessageType values
 
-| Value
+| Member
 |:-----------------
 | none
 | meetingRequest
@@ -152,7 +236,7 @@ doc_type: enumPageType
 
 ### followupFlagStatus values
 
-| Value
+| Member
 |:-------------------------
 | notFlagged
 | complete
@@ -161,7 +245,7 @@ doc_type: enumPageType
 
 ### inferenceClassificationType values
 
-| Value
+| Member
 |:-----------------
 | focused
 | other
@@ -169,7 +253,7 @@ doc_type: enumPageType
 
 ### iosNotificationAlertType values
 
-| Value
+| Member
 |:-------------------------
 | deviceDefault
 | banner
@@ -178,7 +262,7 @@ doc_type: enumPageType
 
 ### deviceEnrollmentFailureReason values
 
-| Value
+| Member
 |:-------------
 | unknown
 | authentication
@@ -194,7 +278,7 @@ doc_type: enumPageType
 
 
 ### bodyType values
-| Value
+| Member
 |:---------
 | text
 | html
@@ -202,7 +286,7 @@ doc_type: enumPageType
 
 ### locationType values
 
-| Value
+| Member
 |:-------------------------
 | default
 | conferenceRoom
@@ -217,7 +301,7 @@ doc_type: enumPageType
 
 ### locationUniqueIdType values
 
-| Value
+| Member
 |:-------------------------
 | unknown
 | locationStore
@@ -228,7 +312,7 @@ doc_type: enumPageType
 
 ### messageActionFlag values
 
-| Value
+| Member
 |:-------------------------
 | any
 | call
@@ -255,7 +339,7 @@ doc_type: enumPageType
 
 ### operationStatus values
 
-| Value
+| Member
 |:-----------------
 | NotStarted
 | Running
@@ -265,7 +349,7 @@ doc_type: enumPageType
 
 ### onenotePatchActionType values
 
-| Value
+| Member
 |:-------------------------
 | Replace
 | Append
@@ -275,7 +359,7 @@ doc_type: enumPageType
 
 ### onenotePatchInsertPosition values
 
-| Value
+| Member
 |:-------------------------
 | After
 | Before
@@ -283,7 +367,7 @@ doc_type: enumPageType
 
 ### phoneType values
 
-| Value
+| Member
 |:-------------------------
 | home
 | business
@@ -299,7 +383,7 @@ doc_type: enumPageType
 
 ### plannerPreviewType values
 
-| Value
+| Member
 |:-------------------------
 | automatic
 | noPreview
@@ -310,7 +394,7 @@ doc_type: enumPageType
 
 ### status values
 
-| Value
+| Member
 |:-----------------
 | active
 | updated
@@ -321,7 +405,7 @@ doc_type: enumPageType
 
 ### weekIndex values
 
-| Value
+| Member
 |:-------------------------
 | first
 | second
@@ -332,7 +416,7 @@ doc_type: enumPageType
 
 ### dayOfWeek values
 
-| Value
+| Member
 |:-------------------------
 | sunday
 | monday
@@ -344,7 +428,7 @@ doc_type: enumPageType
 
 ### recurrencePatternType values
 
-| Value
+| Member
 |:-------------------------
 | daily
 | weekly
@@ -356,7 +440,7 @@ doc_type: enumPageType
 
 ### recurrenceRangeType values
 
-| Value
+| Member
 |:-------------------------
 | endDate
 | noEnd
@@ -364,7 +448,7 @@ doc_type: enumPageType
 
 
 ### onenoteSourceService values
-| Value
+| Member
 |:---------------------
 | Unknown
 | OneDrive
@@ -374,7 +458,7 @@ doc_type: enumPageType
 
 ### responseType values
 
-| Value
+| Member
 |:-------------------------
 | none
 | organizer
@@ -386,7 +470,7 @@ doc_type: enumPageType
 
 ### activityDomain values
 
-| Value
+| Member
 |:-------------------------
 | unknown
 | work
@@ -396,7 +480,7 @@ doc_type: enumPageType
 
 ### websiteType values
 
-| Value
+| Member
 |:-------------------------
 | other
 | home
@@ -407,34 +491,34 @@ doc_type: enumPageType
 
 ### categoryColor values
 
-| Member   |Value    
+| Member   |Value
 |:---------|:--------
-| none     | -1      
-| preset0  | 0       
-| preset1  | 1       
-| preset2  | 2       
-| preset3  | 3       
-| preset4  | 4       
-| preset5  | 5       
-| preset6  | 6       
-| preset7  | 7       
-| preset8  | 8       
-| preset9  | 9       
-| preset10 | 10      
-| preset11 | 11      
-| preset12 | 12      
-| preset13 | 13      
-| preset14 | 14      
-| preset15 | 15      
-| preset16 | 16      
-| preset17 | 17      
-| preset18 | 18      
-| preset19 | 19      
-| preset20 | 20      
-| preset21 | 21      
-| preset22 | 22      
-| preset23 | 23      
-| preset24 | 24      
+| none     | -1
+| preset0  | 0
+| preset1  | 1
+| preset2  | 2
+| preset3  | 3
+| preset4  | 4
+| preset5  | 5
+| preset6  | 6
+| preset7  | 7
+| preset8  | 8
+| preset9  | 9
+| preset10 | 10
+| preset11 | 11
+| preset12 | 12
+| preset13 | 13
+| preset14 | 14
+| preset15 | 15
+| preset16 | 16
+| preset17 | 17
+| preset18 | 18
+| preset19 | 19
+| preset20 | 20
+| preset21 | 21
+| preset22 | 22
+| preset23 | 23
+| preset24 | 24
 
 ### alertFeedback values
 
@@ -500,7 +584,7 @@ Possible integrity level values of the process.
 
 ### registryHive values
 
-Enum for registry hives as defined by [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).
+Enum for registry hives as defined by [/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives).
 
 |Member|Value|Description|
 |:---|:---|:---|
@@ -525,7 +609,7 @@ Operation that changed the registry key name and/or value.
 
 ### registryValueType values
 
-Enum for registry value types as defined by [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types).
+Enum for registry value types as defined by [/windows/desktop/sysinfo/registry-value-types](/windows/desktop/sysinfo/registry-value-types).
 
 |Member|Value|Description|
 |:---|:---|:---|
@@ -591,7 +675,7 @@ Possible values for the method of user signin.
 
 Possible values for user account types (group membership), per Windows definition.
 
-|Member|Value|Description|
+|Member|Member|Description|
 |:---|:---|:---|
 |unknown|-1|Unknown.|
 |standard|0|Member of Standard Users group.|
@@ -600,7 +684,7 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### riskDetail values
 
-| Value
+| Member
 |:-------------------------
 | adminGeneratedTemporaryPassword
 | userPerformedSecuredPasswordChange
@@ -614,7 +698,7 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### riskEventTypes values
 
-| Value
+| Member
 |:-------------------------
 | unlikelyTravel
 | anonymizedIPAddress
@@ -627,9 +711,29 @@ Possible values for user account types (group membership), per Windows definitio
 | generic
 | unknownFutureValue
 
+### riskEventType values
+
+|Member|
+|:---|
+|unlikelyTravel|
+|anonymizedIPAddress|
+|maliciousIPAddress|
+|unfamiliarFeatures|
+|malwareInfectedIPAddress|
+|suspiciousIPAddress|
+|leakedCredentials|
+|investigationsThreatIntelligence|
+|generic|
+|adminConfirmedUserCompromised|
+|mcasImpossibleTravel|
+|mcasSuspiciousInboxManipulationRules|
+|investigationsThreatIntelligenceSigninLinked|
+|maliciousIPAddressValidCredentialsBlockedIP|
+|unknownFutureValue|
+
 ### riskLevel values
 
-| Value
+| Member
 |:-------------------------
 | none
 | low
@@ -640,7 +744,7 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### riskState values
 
-| Value
+| Member
 |:-------------------------
 | none
 | confirmedSafe
@@ -649,4 +753,112 @@ Possible values for user account types (group membership), per Windows definitio
 | atRisk
 | confirmedCompromised
 | unknownFutureValue
+
+### exchangeIdFormat values
+
+|Member|
+|:---|
+|entryId|
+|ewsId|
+|immutableEntryId|
+|restId|
+|restImmutableEntryId|
+
+### onlineMeetingProviderType values
+
+|Member|
+|:---|
+|unknown|
+|skypeForBusiness|
+|skypeForConsumer|
+|teamsForBusiness|
+
+### delegateMeetingMessageDeliveryOptions values
+
+|Member|
+|:---|
+|sendToDelegateAndInformationToPrincipal|
+|sendToDelegateAndPrincipal|
+|sendToDelegateOnly|
+
+### calendarRoleType values
+
+|Member|
+|:---|
+|none|
+|freeBusyRead|
+|limitedRead|
+|read|
+|write|
+|delegateWithoutPrivateEventAccess|
+|delegateWithPrivateEventAccess|
+|custom|
+
+### threatAssessmentContentType values
+
+| Member | Value | Description             |
+|:-------|:------|:------------------------|
+| mail   | 1     | Mail threat.            |
+| url    | 2     | URL threat.             |
+| file   | 3     | Attachment file threat. |
+
+### threatExpectedAssessment values
+
+| Member  | Value | Description                       |
+|:--------|:------|:----------------------------------|
+| block   | 1     | The threat should be blocked.     |
+| unblock | 2     | The threat should not be blocked. |
+
+### threatCategory values
+
+| Member             | Value | Description        |
+|:-------------------|:------|:-------------------|
+| spam               | 1     | Spam threat.       |
+| phishing           | 2     | Phishing threat.   |
+| malware            | 3     | Malware threat.    |
+| unknownFutureValue | 4     | A sentinel member. |
+
+### threatAssessmentStatus values
+
+| Member    | Value | Description                              |
+|:----------|:------|:-----------------------------------------|
+| pending   | 1     | The threat assessment still in progress. |
+| completed | 2     | The threat assessment completed.         |
+
+### threatAssessmentRequestSource values
+
+| Member        | Value | Description              |
+|:--------------|:------|:-------------------------|
+| undefined     | 0     | Not yet know.            |
+| user          | 1     | User submission.         |
+| administrator | 2     | Tenant admin submission. |
+
+### threatAssessmentResultType values
+
+| Member             | Value | Description                                          |
+|:-------------------|:------|:-----------------------------------------------------|
+| checkPolicy        | 1     | The policy check result, only for `mail` assessment. |
+| rescan             | 2     | The rescan result.                                   |
+| unknownFutureValue | 3     | A sentinel member.                                   |
+
+### mailDestinationRoutingReason values
+
+| Member                | Value | Description                         |
+|:----------------------|:------|:------------------------------------|
+| none                  | 0     | Not yet know.                       |
+| mailFlowRule          | 1     | Exchange transport rule.            |
+| safeSender            | 2     | Safe sender list.                   |
+| blockedSender         | 3     | Blocked sender list.                |
+| advancedSpamFiltering | 4     | Advanced spam flitering option.     |
+| domainAllowList       | 5     | Sender domain allow list.           |
+| domainBlockList       | 6     | Sender domain block list.           |
+| notInAddressBook      | 7     | Exclude sender not in address book. |
+| firstTimeSender       | 8     | Blocked due to first time sender.   |
+| autoPurgeToInbox      | 9     | TimeTravel move message to inbox.   |
+| autoPurgeToJunk       | 10    | TimeTravel move message to junk.    |
+| autoPurgeToDeleted    | 11    | TimeTravel move message to deleted. |
+| outbound              | 12    | Outbound mail.                      |
+| notJunk               | 13    | Allow due to not junk.              |
+| junk                  | 14    | Blocked due to junk.                |
+| unknownFutureValue    | 15    | A sentinel member.                  |
 

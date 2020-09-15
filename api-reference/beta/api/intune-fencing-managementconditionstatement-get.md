@@ -1,13 +1,15 @@
 ---
 title: "Get managementConditionStatement"
 description: "Read properties and relationships of the managementConditionStatement object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get managementConditionStatement
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -35,7 +37,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -62,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 536
+Content-Length: 573
 
 {
   "value": {
@@ -73,7 +75,8 @@ Content-Length: 536
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "modifiedDateTime": "2017-01-01T00:00:22.8983556-08:00",
     "expression": {
-      "@odata.type": "microsoft.graph.managementConditionExpression"
+      "@odata.type": "microsoft.graph.managementConditionExpressionString",
+      "value": "Value value"
     },
     "eTag": "ETag value",
     "applicablePlatforms": [
@@ -82,9 +85,6 @@ Content-Length: 536
   }
 }
 ```
-
-
-
 
 
 

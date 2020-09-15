@@ -1,13 +1,15 @@
 ---
 title: "Get windowsManagedDevice"
 description: "Read properties and relationships of the windowsManagedDevice object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get windowsManagedDevice
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -31,13 +33,16 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/managedDevices/{managedDeviceId}
+GET /deviceManagement/comanagedDevices/{managedDeviceId}
+GET /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStates/{deviceHealthScriptDeviceStateId}/managedDevice
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice
+GET /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/deviceRunStates/{deviceComplianceScriptDeviceStateId}/managedDevice
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -64,7 +69,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7930
+Content-Length: 8387
 
 {
   "value": {
@@ -88,6 +93,9 @@ Content-Length: 7930
       "operatingSystemLanguage": "Operating System Language value",
       "isSupervised": true,
       "isEncrypted": true,
+      "batterySerialNumber": "Battery Serial Number value",
+      "batteryHealthPercentage": 7,
+      "batteryChargeCycles": 3,
       "isSharedDevice": true,
       "sharedDeviceCachedUsers": [
         {
@@ -104,7 +112,8 @@ Content-Length: 7930
       "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
       "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
       "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
-      "osBuildNumber": "Os Build Number value"
+      "osBuildNumber": "Os Build Number value",
+      "operatingSystemProductType": 10
     },
     "ownerType": "company",
     "managedDeviceOwnerType": "company",
@@ -237,14 +246,18 @@ Content-Length: 7930
     },
     "configurationManagerClientInformation": {
       "@odata.type": "microsoft.graph.configurationManagerClientInformation",
-      "clientIdentifier": "Client Identifier value"
-    }
+      "clientIdentifier": "Client Identifier value",
+      "isBlocked": true
+    },
+    "ethernetMacAddress": "Ethernet Mac Address value",
+    "physicalMemoryInBytes": 5,
+    "processorArchitecture": "x86",
+    "specificationVersion": "Specification Version value",
+    "joinType": "azureADJoined",
+    "skuFamily": "Sku Family value"
   }
 }
 ```
-
-
-
 
 
 

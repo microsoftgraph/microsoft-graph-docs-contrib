@@ -1,13 +1,15 @@
 ---
 title: "List attachments"
 description: "Retrieve a list of attachment objects."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List attachments
+
+Namespace: microsoft.graph
 
 Retrieve a list of attachment objects.
 ## Permissions
@@ -48,7 +50,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "eventmessage_get_attachments_v1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 ```
 # [C#](#tab/csharp)

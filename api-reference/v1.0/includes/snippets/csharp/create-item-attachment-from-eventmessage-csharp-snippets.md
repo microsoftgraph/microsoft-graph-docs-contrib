@@ -6,14 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var attachment = new Attachment
+var attachment = new ItemAttachment
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.type","#Microsoft.OutlookServices.ItemAttachment"}
-	},
 	Name = "name-value",
-	Item = "message or event entity"
+	Item = "{message or event entity}"
 };
 
 await graphClient.Me.Events["{id}"].Attachments

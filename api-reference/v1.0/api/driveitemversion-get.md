@@ -3,11 +3,13 @@ title: "Get a DriveItemVersion resource"
 description: "Retrieve the metadata for a specific version of a DriveItem."
 localization_priority: Normal
 ms.prod: "sharepoint"
-author: ""
+author: "JeremyKelley"
 doc_type: apiPageType
 ---
 
 # Get a DriveItemVersion resource
+
+Namespace: microsoft.graph
 
 Retrieve the metadata for a specific version of a [DriveItem](../resources/driveitem.md).
 
@@ -49,7 +51,7 @@ This example retrieves a version of a file in the current user's drive.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-single-version", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/versions/{version-id}
 ```
 # [C#](#tab/csharp)

@@ -2,12 +2,14 @@
 title: "FormatProtection resource type"
 description: "Represents the format protection of a range object."
 localization_priority: Normal
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # FormatProtection resource type
+
+Namespace: microsoft.graph
 
 Represents the format protection of a range object.
 

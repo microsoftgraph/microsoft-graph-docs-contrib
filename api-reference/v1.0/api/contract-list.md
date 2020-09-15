@@ -2,12 +2,14 @@
 title: "List contracts"
 description: "Retrieve a list of contract objects associated to a partner tenant."
 localization_priority: Normal
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List contracts
+
+Namespace: microsoft.graph
 
 Retrieve a list of [contract](../resources/contract.md) objects associated to a partner tenant.
 
@@ -58,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "blockType": "request",
   "name": "get_contract"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/contracts
 ```
 # [C#](#tab/csharp)

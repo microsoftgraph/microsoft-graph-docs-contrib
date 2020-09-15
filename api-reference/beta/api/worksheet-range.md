@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Worksheet: Range
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets the range object specified by the address or name.
@@ -24,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/Range
+GET /workbook/worksheets/{id|name}/Range
 
 ```
 ## Request headers

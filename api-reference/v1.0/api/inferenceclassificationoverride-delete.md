@@ -2,12 +2,14 @@
 title: "Delete inferenceClassificationOverride"
 description: "Delete an override specified by its ID."
 localization_priority: Normal
-author: ""
+author: "svpsiva"
 ms.prod: ""
 doc_type: apiPageType
 ---
 
 # Delete inferenceClassificationOverride
+
+Namespace: microsoft.graph
 
 Delete an override specified by its ID.
 ## Permissions

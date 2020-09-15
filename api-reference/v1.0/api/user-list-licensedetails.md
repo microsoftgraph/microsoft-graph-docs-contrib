@@ -1,15 +1,17 @@
 ---
 title: "List licenseDetails"
 description: "Retrieve a list of licenseDetails objects."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
 # List licenseDetails
 
-Retrieve a list of licenseDetails objects.
+Namespace: microsoft.graph
+
+Retrieve a list of **licenseDetails** objects for enterprise users.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,7 +29,7 @@ GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
 ## Optional query parameters
-This method does **not** support [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters).
+This method supports the `$select` query parameter. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 | Name      |Description|
@@ -49,7 +51,7 @@ If successful, this method returns a `200 OK` response code and collection of [l
   "blockType": "request",
   "name": "get_licensedetails"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/licenseDetails
 ```
 # [C#](#tab/csharp)

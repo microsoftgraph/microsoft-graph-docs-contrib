@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get plannerTaskDetails
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of **plannertaskdetails** object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,7 +50,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_plannertaskdetails"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/details
 ```
 # [C#](#tab/csharp)

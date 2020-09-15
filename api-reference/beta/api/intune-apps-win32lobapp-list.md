@@ -1,13 +1,15 @@
 ---
 title: "List win32LobApps"
 description: "List properties and relationships of the win32LobApp objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List win32LobApps
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3347
+Content-Length: 3933
 
 {
   "value": [
@@ -132,9 +134,22 @@ Content-Length: 3347
           "detectionType": "exists"
         }
       ],
+      "rules": [
+        {
+          "@odata.type": "microsoft.graph.win32LobAppRegistryRule",
+          "ruleType": "requirement",
+          "check32BitOn64System": true,
+          "keyPath": "Key Path value",
+          "valueName": "Value Name value",
+          "operationType": "exists",
+          "operator": "equal",
+          "comparisonValue": "Comparison Value value"
+        }
+      ],
       "installExperience": {
         "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
-        "runAsAccount": "user"
+        "runAsAccount": "user",
+        "deviceRestartBehavior": "allow"
       },
       "returnCodes": [
         {
@@ -153,14 +168,13 @@ Content-Length: 3347
         "productName": "Product Name value",
         "publisher": "Publisher value"
       },
-      "setupFilePath": "Setup File Path value"
+      "setupFilePath": "Setup File Path value",
+      "installLanguage": "Install Language value",
+      "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
     }
   ]
 }
 ```
-
-
-
 
 
 

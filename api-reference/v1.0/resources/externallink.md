@@ -2,12 +2,14 @@
 title: "externalLink resource type"
 description: "A url that opens a OneNote page or notebook."
 localization_priority: Normal
-author: ""
+author: "jewan-microsoft"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # externalLink resource type
+
+Namespace: microsoft.graph
 
 A url that opens a OneNote page or notebook.
 

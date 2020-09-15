@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List sectionGroups
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [section groups](../resources/sectiongroup.md) from the specified notebook.
@@ -57,7 +59,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "notebook_get_sectiongroups"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sectionGroups
 ```
 # [C#](#tab/csharp)

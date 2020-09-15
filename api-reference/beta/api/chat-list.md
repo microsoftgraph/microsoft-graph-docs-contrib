@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List chats
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [chats](../resources/chat.md) that the user is part of.
@@ -19,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Chat.Read   |
+|Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported.   |
+|Application | Not supported.    |
 
 ## HTTP request
 
@@ -61,7 +63,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_chats"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/chats
 ```
 # [C#](#tab/csharp)

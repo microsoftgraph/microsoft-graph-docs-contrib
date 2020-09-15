@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get educationRubric
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of an [educationRubric](../resources/educationrubric.md) object.
@@ -59,7 +61,7 @@ The following is an example of the request.
   "name": "get_educationrubric"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/me/rubrics/{id}
 ```
 # [C#](#tab/csharp)

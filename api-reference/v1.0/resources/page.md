@@ -2,12 +2,14 @@
 title: "page resource type"
 description: "A page in a OneNote notebook."
 localization_priority: Normal
-author: ""
+author: "jewan-microsoft"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # page resource type
+
+Namespace: microsoft.graph
 
 A page in a OneNote notebook.
 

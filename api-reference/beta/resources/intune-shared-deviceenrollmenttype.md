@@ -1,13 +1,15 @@
 ---
 title: "deviceEnrollmentType enum type"
 description: "Possible ways of adding a mobile device to management."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # deviceEnrollmentType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -28,6 +30,12 @@ Possible ways of adding a mobile device to management.
 |windowsAutoEnrollment|7|Windows 10 automatic enrollment. (Add work account)|
 |windowsBulkAzureDomainJoin|8|Windows 10 bulk Azure AD Join.|
 |windowsCoManagement|9|Windows 10 Co-Management triggered by AutoPilot or Group Policy.|
+|appleUserEnrollment|11|Device managed by Apple user enrollment|
+|appleUserEnrollmentWithServiceAccount|12|Device managed by Apple user enrollment with service account|
+|azureAdJoinUsingAzureVmExtension|14|Azure AD Join enrollment when an Azure VM is provisioned|
+|androidEnterpriseDedicatedDevice|15|Android Enterprise Dedicated Device|
+|androidEnterpriseFullyManaged|16|Android Enterprise Fully Managed|
+|androidEnterpriseCorporateWorkProfile|17|Android Enterprise Corporate Work Profile|
 
 
 

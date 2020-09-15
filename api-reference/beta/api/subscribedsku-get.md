@@ -2,12 +2,14 @@
 title: "Get subscribedSku"
 description: "Retrieve a specific commercial subscription that an organization has acquired."
 localization_priority: Normal
-author: "davidmu1"
+author: "SumitParikh"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get subscribedSku
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_subscribedsku"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/subscribedSkus/{id}
 ```
 # [C#](#tab/csharp)

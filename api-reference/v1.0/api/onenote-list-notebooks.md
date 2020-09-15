@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List notebooks
 
+Namespace: microsoft.graph
+
 Retrieve a list of [notebook](../resources/notebook.md) objects.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -55,7 +57,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_notebooks"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/onenote/notebooks
 ```
 # [C#](#tab/csharp)

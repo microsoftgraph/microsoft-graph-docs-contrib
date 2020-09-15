@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Update taxGroups
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of a tax groups object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -23,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```
-PATCH /financials/companies('{id}')/taxGroups('{id}')
+PATCH /financials/companies/{id}/taxGroups/{id}
 ```
 
 ## Optional query parameters
@@ -48,7 +53,7 @@ If successful, this method returns a `200 OK` response code and an updated **tax
 
 Here is an example of the request.
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/taxGroups('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/taxGroups/{id}
 Content-type: application/json
 
 {

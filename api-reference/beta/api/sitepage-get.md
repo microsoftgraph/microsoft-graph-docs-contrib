@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Get a page in the site pages list of a site
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].
@@ -41,7 +43,7 @@ GET /sites/{site-id}/pages/{page-id}
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-page", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/pages/{page-id}
 ```
 # [C#](#tab/csharp)

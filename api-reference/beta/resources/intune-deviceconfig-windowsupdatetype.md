@@ -1,13 +1,15 @@
 ---
 title: "windowsUpdateType enum type"
 description: "Which branch devices will receive their updates from"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # windowsUpdateType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

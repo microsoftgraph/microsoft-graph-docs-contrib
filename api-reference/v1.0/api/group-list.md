@@ -1,14 +1,17 @@
 ---
 title: "List groups"
-description: "List all the groups available in an organization, including but not limited to Office 365 Groups."
+description: "List all the groups available in an organization, including but not limited to Microsoft 365 groups."
 localization_priority: Priority
-author: "dkershaw10"
+author: "yyuank"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # List groups
-List all the groups in an organization, including but not limited to Office 365 Groups. 
+
+Namespace: microsoft.graph
+
+List all the groups in an organization, including but not limited to Microsoft 365 groups. 
 
 This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, do a [GET](group-get.md) operation for the group and specify the properties in a `$select` OData query option. The **hasMembersWithLicenseErrors** property is an exception and is not returned in the `$select` query.
 
@@ -28,7 +31,7 @@ GET /groups
 ```
 
 ## Optional query parameters
-To list only Office 365 Groups (aka unified groups), apply a filter on **groupTypes**:
+To list only Microsoft 365 groups (aka unified groups), apply a filter on **groupTypes**:
 <!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')
@@ -67,7 +70,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_groups"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups
 ```
 # [C#](#tab/csharp)
@@ -182,7 +185,7 @@ This example uses a `$filter` query option to get those groups that have members
   "blockType": "request",
   "name": "get_groups_withlicenseerrors"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups?$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
 ```
 # [C#](#tab/csharp)

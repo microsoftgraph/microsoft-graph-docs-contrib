@@ -4,10 +4,12 @@ description: ""
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "sureshja"
 ---
 
 # publicError resource type
+
+Namespace: microsoft.graph
 
 ## Properties
 |Property|Type|Description|

@@ -6,17 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var attachment = new Attachment
+var attachment = new FileAttachment
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.type","microsoft.graph.fileAttachment"}
-	},
 	Name = "name-value",
 	ContentType = "contentType-value",
 	IsInline = false,
 	ContentLocation = "contentLocation-value",
-	ContentBytes = "base64-contentBytes-value"
+	ContentBytes = Encoding.ASCII.GetBytes("base64-contentBytes-value")
 };
 
 await graphClient.Me.Messages["{id}"].Attachments

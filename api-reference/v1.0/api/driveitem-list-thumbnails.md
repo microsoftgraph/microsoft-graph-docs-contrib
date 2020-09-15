@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # List thumbnails for a DriveItem
 
+Namespace: microsoft.graph
+
 Retrieve a collection of [ThumbnailSet](../resources/thumbnailset.md) resources for a [DriveItem](../resources/driveitem.md) resource.
 
 A DriveItem can be represented by zero or more [ThumbnailSet](../resources/thumbnailset.md) resources.
@@ -53,6 +55,9 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 This method supports the `$select` [OData puery parameter](/graph/query-parameters) to customize the response.
 
+Additionally, this method supports retrieving the thumbnail with the original orientation EXIF value and without the applied rotation by appending the `originalOrientation=true` query parameter.
+This is currently only supported on OneDrive Personal.
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [ThumbnailSet](../resources/thumbnailset.md) objects in the response body.
@@ -65,7 +70,7 @@ Here is an example of the request which retrieves available thumbnails for an it
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "enum-item-thumbnails", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails
 ```
 # [C#](#tab/csharp)
@@ -124,7 +129,7 @@ Retrieve the metadata for a single thumbnail and size by addressing it directly 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-one-thumbnail", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 ```
 # [C#](#tab/csharp)
@@ -177,7 +182,7 @@ You can directly retrieve the content of the thumbnail by requesting the **conte
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name":"get-thumbnail-content", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
 ```
 # [C#](#tab/csharp)
@@ -224,7 +229,7 @@ This enables your app to retrieve thumbnails and items in a single request, inst
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name":"get-thumbnail-while-listing", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/children?$expand=thumbnails
 ```
 # [C#](#tab/csharp)
@@ -309,7 +314,7 @@ For example if your app needs thumbnails that are 300x400, it can request that s
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-thumbnail-custom-size", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails?select=c300x400_Crop
 ```
 # [C#](#tab/csharp)

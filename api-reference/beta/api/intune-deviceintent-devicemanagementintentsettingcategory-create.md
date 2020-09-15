@@ -1,13 +1,15 @@
 ---
 title: "Create deviceManagementIntentSettingCategory"
 description: "Create a new deviceManagementIntentSettingCategory object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create deviceManagementIntentSettingCategory
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -48,6 +50,7 @@ The following table shows the properties that are required when you create the d
 |:---|:---|:---|
 |id|String|The category ID Inherited from [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |displayName|String|The category name Inherited from [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|hasRequiredSetting|Boolean|The category contains top level required setting Inherited from [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 
 
 
@@ -61,11 +64,12 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/categories
 Content-type: application/json
-Content-length: 119
+Content-length: 150
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntentSettingCategory",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "hasRequiredSetting": true
 }
 ```
 
@@ -74,17 +78,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 168
+Content-Length: 199
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntentSettingCategory",
   "id": "39bf2a82-2a82-39bf-822a-bf39822abf39",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "hasRequiredSetting": true
 }
 ```
-
-
-
 
 
 

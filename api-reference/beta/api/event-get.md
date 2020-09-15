@@ -1,7 +1,7 @@
 ---
 title: "Get event"
 description: "Get the properties and relationships of the specified event object."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -9,16 +9,18 @@ doc_type: apiPageType
 
 # Get event
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the properties and relationships of the specified [event](../resources/event.md) object.
 
-There are two scenarios where an app can get an event in another user's calendar:
+An app can get an event in another user's calendar if:
 
-* If the app has application permissions, or,
-* If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user. See [details and an example](/graph/outlook-get-shared-events-calendars).
+* The app has application permissions
+* The app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or has given delegated access to that user. See [details and an example](/graph/outlook-get-shared-events-calendars).
 
-Since the **event** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.
+Because the **event** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.
 
 
 ### Support various time zones
@@ -67,7 +69,7 @@ GET /me/calendargroups/{id}/calendars/{id}/events/{id}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -80,10 +82,12 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [event](../resources/event.md) object in the response body.
-## Example
-##### Request 1
-The first example gets the specified event. It specifies the following:
+If successful, this method returns a `200 OK` response code and an [event](../resources/event.md) object in the response body.
+## Examples
+
+### Example 1: Get a specified event
+#### Request
+The following example gets the specified event. It specifies the following:
 
 - A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time. 
 - A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.
@@ -96,7 +100,7 @@ The request does not specify any `Prefer: outlook.body-content-type` header to i
   "blockType": "request",
   "name": "get_event"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkAGIAAAoZDOFAAA=/?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
@@ -114,7 +118,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ---
 
-##### Response 1
+#### Response
 Here is an example of the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format. 
 
 <!-- {
@@ -174,8 +178,18 @@ Content-length: 1928
         {
             "type":"required",
             "status":{
-                "response":"none",
+                "response":"tentativelyAccepted",
                 "time":"0001-01-01T00:00:00Z"
+            },
+            "proposedNewTime": {
+                "start": {
+                    "dateTime": "2019-08-16T12:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                },
+                "end": {
+                    "dateTime": "2019-08-16T14:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                }
             },
             "emailAddress":{
                 "name":"Dana Swope",
@@ -191,9 +205,9 @@ Content-length: 1928
     }
 }
 ```
-
-##### Request 2
-The second example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** property of the specified event in text format.
+### Example 2: Get the body property in text format
+#### Request
+The following example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** property of the specified event in text format.
 
 The request also uses a `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.
 
@@ -203,7 +217,7 @@ The request also uses a `$select` query parameter to return specific properties.
   "blockType": "request",
   "name": "get_event_in_text"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkAGI1AAAoZDOFAAA=/?$select=subject,body,bodyPreview
 Prefer: outlook.body-content-type="text"
 ```
@@ -221,7 +235,7 @@ Prefer: outlook.body-content-type="text"
 
 ---
 
-##### Response 2
+#### Response
 Here is an example of the response. The **body** property is returned in text format. 
 
 <!-- {
@@ -249,10 +263,10 @@ Content-length: 636
 }
 ```
 
+### Example 3: Get an event that specifies more than one location
+#### Request
 
-##### Request 3
-
-The third example shows getting an event that specifies more than one location. The request specifies a `$select` query parameter 
+The following example shows getting an event that specifies more than one location. The request specifies a `$select` query parameter 
 to return specific properties. 
 
 
@@ -261,7 +275,7 @@ to return specific properties.
   "blockType": "request",
   "name": "get_event_multiple_locations"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
 ```
 # [C#](#tab/csharp)
@@ -278,7 +292,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=sub
 
 ---
 
-##### Response 3
+#### Response
 Here is an example of the response. The **locations** property includes details for the 3 locations that the event is organized for. 
 
 Because the request does not specify any `Prefer: outlook.timezone` or `Prefer: outlook.body-content-type` header, 
@@ -381,12 +395,74 @@ Content-length: 1992
   }
 }
 ```
+### Example 4: Expand a series master event
+#### Request
+
+The following example shows expanding a series master event of a recurring series with exceptions and cancelled occurences. The request specifies a `$select` query parameter to return specific properties. 
+
+<!-- {
+  "blockType": "request",
+  "name": "get_event_seriesMaster_expansion"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences$expand=exceptionOccurrences
+```
+#### Response
+The GET operation returns the selected properties for the series master event. Specifically, for events in the **exceptionOccurrences** collection, the operation returns the **id** property, and the applicable, selected properties (**subject**, **start**, **end**, **occurrenceId**). As for events in the **cancelledOccurrences** collection, because the events no longer exist, the operation returns only their **occurrenceId** property values.
+
+<!-- {
+  "blockType": "response",
+  "name": "get_event_seriesMaster_expansion",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1992
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences)/$entity",
+  "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
+  "id":"AAMkADAGAADDdm4NAAA=",
+  "subject": "Daily stand-up",
+  "cancelledOccurrences": [
+     "OID.AAMkADAGAADDdm4NAAA=.2020-04-30",
+     "OID.AAMkADAGAADDdm4NAAA=.2020-05-07",
+     "OID.AAMkADAGAADDdm4NAAA=.2020-05-14"
+    ],
+  "occurrenceId": null,
+    "start": {
+        "dateTime": "2020-04-23T11:30:00.0000000",
+        "timeZone": "UTC"
+    },
+  "end": {
+        "dateTime": "2020-04-23T12:00:00.0000000",
+        "timeZone": "UTC"
+    },
+  "exceptionOccurrences": [
+        {
+            "id": "AAMkADM0ZGRhMjdjLTA==",
+            "Subject": "SM update 24",
+            "occurrenceId": "OID.AAMkADAGAADDdm4NAAA=.2020-05-21",
+            "start": {
+                "dateTime": "2020-05-21T11:30:00.0000000",
+                "timeZone": "UTC"
+            },
+            "end": {
+                "dateTime": "2020-05-21T12:00:00.0000000",
+                "timeZone": "UTC"
+            }
+        }
+    ]
+}
+```
 
 ## See also
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
-- [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
-- [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
+- [Add custom data to users using open extensions](/graph/extensibility-open-users)
+- [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

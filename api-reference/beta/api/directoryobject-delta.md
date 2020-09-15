@@ -2,16 +2,18 @@
 title: "directoryObject: delta"
 description: "Get newly created, updated, or deleted directory objects of the following types: user, group and organizational contact, in a single delta query. See Track changes for details."
 localization_priority: Normal
-author: "davidmu1"
+author: "keylimesoda"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # directoryObject: delta
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get newly created, updated, or deleted directory objects of the following types: [user](../resources/user.md), [group](../resources/group.md) and [organizational contact](../resources/orgcontact.md), in a single delta query. See [Track changes](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted directory objects of the following types: [user](../resources/user.md), [group](../resources/group.md) and [organizational contact](../resources/orgcontact.md), in a single delta query. See [change tracking](/graph/delta-query-overview) for details.
 
 ## Permissions
 
@@ -109,7 +111,7 @@ The following is an example of the request. There is no `$select` parameter, so 
   "name": "directory_object_delta"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryObjects/delta
 ```
 # [C#](#tab/csharp)
@@ -199,7 +201,7 @@ The next example shows the use of the alternative minimal response behavior:
   "name": "directoryObject_delta"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryObjects/delta
 Prefer: return=minimal
 ```
@@ -267,7 +269,7 @@ The next example shows the initial request using the `isOf` operator to filter o
   "name": "directoryobject_delta"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isOf('Microsoft.Graph.User')+or+isOf('Microsoft.Graph.Group')
 ```
 # [C#](#tab/csharp)

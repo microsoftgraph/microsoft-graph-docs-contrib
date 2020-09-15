@@ -1,7 +1,7 @@
 ---
 title: "Delete timeOffReason"
-description: "Mark a timeOffReason as inactive by setting the isActive property"
-author: "nkramer"
+description: "Mark a timeOffReason as inactive by setting the isActive property."
+author: "akumar39"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -9,11 +9,13 @@ doc_type: apiPageType
 
 # Delete timeOffReason
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Mark a [timeOffReason](../resources/timeoffreason.md) as inactive by setting the **isActive** property.
+Mark a [timeOffReason](../resources/timeoffreason.md) as inactive by setting the **isActive** property. Every team must include at least one **timeOffReason**.
 
-This method does not remove the specified [timeOffReason](../resources/timeoffreason.md) instance. [timeOffItem](../resources/timeoffitem.md) instances that have been assigned this reason remain assigned to this reason.
+This method does not remove the specified **timeOffReason** instance. [timeOffItem](../resources/timeoffitem.md) instances that have been assigned this reason remain assigned to this reason.
 
 ## Permissions
 
@@ -23,7 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Schedule.ReadWrite.All* |
+
+>\* **Important:** Application permissions are currently in private preview only and are not available for public use.
 
 > **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
 
@@ -40,7 +44,6 @@ DELETE /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
 
 ## Request body
 Do not supply a request body for this method.

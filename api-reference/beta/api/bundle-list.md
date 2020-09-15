@@ -10,6 +10,8 @@ doc_type: apiPageType
 
 # List bundles
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of all the [bundles][bundle] in a user's drive.
@@ -66,7 +68,7 @@ To request an enumeration of all bundles defined in the drive, you can make a re
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-all-bundles", "tags": "service.onedrive" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/bundles
 ```
 # [C#](#tab/csharp)
@@ -127,7 +129,7 @@ To filter the list of bundles returned from a request to the bundles collection,
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "list-album-bundles", "tags": "service.onedrive" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/bundles?filter=bundle/album%20ne%20null
 ```
 # [C#](#tab/csharp)

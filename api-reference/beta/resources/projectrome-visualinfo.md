@@ -4,10 +4,12 @@ description: "A complex type for representing the **visualElements** property in
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: resourcePageType
-author: ""
+author: "ailae"
 ---
 
 # visualInfo resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

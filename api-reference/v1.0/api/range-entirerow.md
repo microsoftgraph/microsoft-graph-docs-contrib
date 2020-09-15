@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: EntireRow
 
+Namespace: microsoft.graph
+
 Gets an object that represents the entire row of the range.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,7 +53,7 @@ Here is an example of the request.
   "isComposable": true,
   "name": "range_entirerow"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/entireRow
 ```
 # [C#](#tab/csharp)

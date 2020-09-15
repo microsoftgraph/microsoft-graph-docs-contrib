@@ -2,12 +2,14 @@
 title: "Get directoryAudit"
 description: "Describes the get method of the directoryAudit resource (entity) from the Microsoft Graph API (beta version)."
 localization_priority: Normal
-author: "davidmu1"
+author: "SarahBar"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get directoryAudit
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -62,7 +64,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_directoryaudit"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/directoryAudits/{id}
 ```
 # [C#](#tab/csharp)

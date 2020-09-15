@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List attachments
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [attachment](../resources/attachment.md) objects attached to a post.
@@ -60,7 +62,7 @@ Here is an example of the request.
   "name": "post_get_attachments_beta",
   "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJfolA==","AAMkADJ-aHAAA="]
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJfolA==/posts/AAMkADJ-aHAAA=/attachments
 ```
 # [C#](#tab/csharp)

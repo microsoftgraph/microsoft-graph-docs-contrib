@@ -1,13 +1,15 @@
 ---
 title: "Update androidForWorkGeneralDeviceConfiguration"
 description: "Update the properties of a androidForWorkGeneralDeviceConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update androidForWorkGeneralDeviceConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -48,18 +50,20 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|The OS edition applicability for this Policy. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|The OS version applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|The device mode applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|The OS edition applicability for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|The OS version applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|The device mode applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|passwordBlockFaceUnlock|Boolean|Indicates whether or not to block face unlock.|
 |passwordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock.|
+|passwordBlockIrisUnlock|Boolean|Indicates whether or not to block iris unlock.|
 |passwordBlockTrustAgents|Boolean|Indicates whether or not to block Smart Lock and other trust agents.|
 |passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 365|
 |passwordMinimumLength|Int32|Minimum length of passwords. Valid values 4 to 16|
@@ -77,7 +81,9 @@ The following table shows the properties that are required when you create the [
 |workProfileBlockCrossProfileContactsSearch|Boolean|Block work profile contacts availability in personal profile.|
 |workProfileBlockCrossProfileCopyPaste|Boolean|Boolean that indicates if the setting disallow cross profile copy/paste is enabled.|
 |workProfileDefaultAppPermissionPolicy|[androidForWorkDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidforworkdefaultapppermissionpolicytype.md)|Type of password that is required. Possible values are: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
+|workProfilePasswordBlockFaceUnlock|Boolean|Indicates whether or not to block face unlock for work profile.|
 |workProfilePasswordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock for work profile.|
+|workProfilePasswordBlockIrisUnlock|Boolean|Indicates whether or not to block iris unlock for work profile.|
 |workProfilePasswordBlockTrustAgents|Boolean|Indicates whether or not to block Smart Lock and other trust agents for work profile.|
 |workProfilePasswordExpirationDays|Int32|Number of days before the work profile password expires. Valid values 1 to 365|
 |workProfilePasswordMinimumLength|Int32|Minimum length of work profile password. Valid values 4 to 16|
@@ -95,6 +101,8 @@ The following table shows the properties that are required when you create the [
 |securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
 |vpnAlwaysOnPackageIdentifier|String|Enable lockdown mode for always-on VPN.|
 |vpnEnableAlwaysOnLockdownMode|Boolean|Enable lockdown mode for always-on VPN.|
+|workProfileAllowWidgets|Boolean|Allow widgets from work profile apps.|
+|workProfileBlockPersonalAppInstallsFromUnknownSources|Boolean|Prevent app installations from unknown sources in the personal profile.|
 
 
 
@@ -108,7 +116,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2811
+Content-length: 3079
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
@@ -140,7 +148,9 @@ Content-length: 2811
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "passwordBlockFaceUnlock": true,
   "passwordBlockFingerprintUnlock": true,
+  "passwordBlockIrisUnlock": true,
   "passwordBlockTrustAgents": true,
   "passwordExpirationDays": 6,
   "passwordMinimumLength": 5,
@@ -158,7 +168,9 @@ Content-length: 2811
   "workProfileBlockCrossProfileContactsSearch": true,
   "workProfileBlockCrossProfileCopyPaste": true,
   "workProfileDefaultAppPermissionPolicy": "prompt",
+  "workProfilePasswordBlockFaceUnlock": true,
   "workProfilePasswordBlockFingerprintUnlock": true,
+  "workProfilePasswordBlockIrisUnlock": true,
   "workProfilePasswordBlockTrustAgents": true,
   "workProfilePasswordExpirationDays": 1,
   "workProfilePasswordMinimumLength": 0,
@@ -175,7 +187,9 @@ Content-length: 2811
   "workProfileRequirePassword": true,
   "securityRequireVerifyApps": true,
   "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
-  "vpnEnableAlwaysOnLockdownMode": true
+  "vpnEnableAlwaysOnLockdownMode": true,
+  "workProfileAllowWidgets": true,
+  "workProfileBlockPersonalAppInstallsFromUnknownSources": true
 }
 ```
 
@@ -184,7 +198,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2983
+Content-Length: 3251
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
@@ -219,7 +233,9 @@ Content-Length: 2983
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "passwordBlockFaceUnlock": true,
   "passwordBlockFingerprintUnlock": true,
+  "passwordBlockIrisUnlock": true,
   "passwordBlockTrustAgents": true,
   "passwordExpirationDays": 6,
   "passwordMinimumLength": 5,
@@ -237,7 +253,9 @@ Content-Length: 2983
   "workProfileBlockCrossProfileContactsSearch": true,
   "workProfileBlockCrossProfileCopyPaste": true,
   "workProfileDefaultAppPermissionPolicy": "prompt",
+  "workProfilePasswordBlockFaceUnlock": true,
   "workProfilePasswordBlockFingerprintUnlock": true,
+  "workProfilePasswordBlockIrisUnlock": true,
   "workProfilePasswordBlockTrustAgents": true,
   "workProfilePasswordExpirationDays": 1,
   "workProfilePasswordMinimumLength": 0,
@@ -254,12 +272,11 @@ Content-Length: 2983
   "workProfileRequirePassword": true,
   "securityRequireVerifyApps": true,
   "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
-  "vpnEnableAlwaysOnLockdownMode": true
+  "vpnEnableAlwaysOnLockdownMode": true,
+  "workProfileAllowWidgets": true,
+  "workProfileBlockPersonalAppInstallsFromUnknownSources": true
 }
 ```
-
-
-
 
 
 

@@ -3,11 +3,13 @@ title: "Delete an activity"
 description: "Delete an existing user activity for your app."
 localization_priority: Normal
 ms.prod: "project-rome"
-author: ""
+author: "ailae"
 doc_type: apiPageType
 ---
 
 # Delete an activity
+
+Namespace: microsoft.graph
 
 Delete an existing user activity for your app.
 

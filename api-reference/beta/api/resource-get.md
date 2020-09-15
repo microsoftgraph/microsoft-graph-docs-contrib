@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get resource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the binary data of a file or image [resource](../resources/onenoteresource.md) object.
@@ -52,7 +54,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_resource"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/onenote/resources/{id}/content
 ```
 # [C#](#tab/csharp)

@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Create shipmentMethods
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a shipment method object in Dynamics 365 Business Central.
 
 ## Permissions
@@ -23,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```
-POST /financials/companies('{id}')/shipmentMethods
+POST /financials/companies/{id}/shipmentMethods
 ```
 
 ## Optional query parameters
@@ -49,7 +54,7 @@ If successful, this method returns ```201 Created``` response code and a **shipm
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/shipmentMethods
+POST https://graph.microsoft.com/beta/financials/companies/{id}/shipmentMethods
 Content-type: application/json
 
 {

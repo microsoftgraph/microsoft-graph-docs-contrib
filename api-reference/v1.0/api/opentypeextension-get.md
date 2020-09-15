@@ -3,11 +3,13 @@ title: "Get open extension"
 description: "Get an open extension (openTypeExtension object) identified by name or fully qualified name."
 localization_priority: Priority
 author: "dkershaw10"
-ms.prod: ""
+ms.prod: "extensions"
 doc_type: apiPageType
 ---
 
 # Get open extension
+
+Namespace: microsoft.graph
 
 Get an open extension ([openTypeExtension](../resources/opentypeextension.md) object) identified by name or fully qualified name.
 
@@ -31,7 +33,7 @@ Depending on the resource that contains the extension and the permission type (d
 | [group event](../resources/event.md) | Group.Read.All | Not supported | Not supported |
 | [group post](../resources/post.md) | Group.Read.All | Not supported | Group.Read.All |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
-| [organization](../resources/organization.md) | User.Read | Not supported | Not supported |
+| [organization](../resources/organization.md) | User.Read | Not supported | Organization.Read.All |
 | [personal contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
 
@@ -115,11 +117,11 @@ instances or collections supports getting open extensions from them in a similar
 
 Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.
 
-|Name|Value|Description|
+|Parameter|Description|Example|
 |:---------------|:--------|:-------|
-|$filter|string|Returns an extension with its **id** matching the `extensionId` parameter value.|
-|$filter with **any** operator|string|Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.|
-|$expand|string|Expands a resource instance to include an extension. |
+|$filter|Returns an extension with its **id** matching the `extensionId` parameter value.|[Request 3](#request-3)|
+|$filter with **any** operator|Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.|[Request 5](#request-5)|
+|$expand|Expands a resource instance to include an extension. |[Request 3](#request-3) and [request 5](#request-5)|
 
 ## Request headers
 | Name       | Value |
@@ -149,7 +151,7 @@ First, by its name:
   "sampleKeys": ["Com.Contoso.Referral", "AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="],
   "name": "get_opentypeextension_1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral
 ```
 # [C#](#tab/csharp)
@@ -216,7 +218,7 @@ The second example references an extension by its name and gets the extension in
   "sampleKeys": ["Com.Contoso.Deal", "f5480dfd-7d77-4d0b-ba2e-3391953cc74a", "AAMkADVl17IsAAA="],
   "name": "get_opentypeextension_2"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions/Com.Contoso.Deal/
 ```
 # [C#](#tab/csharp)
@@ -276,7 +278,7 @@ The filter returns the extension that has its **id** matching a fully qualified 
   "sampleKeys": ["AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="],
   "name": "get_opentypeextension_3"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===?$expand=extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
 ```
 # [C#](#tab/csharp)

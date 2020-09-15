@@ -1,13 +1,15 @@
 ---
 title: "appleVpnConnectionType enum type"
 description: "Apple VPN connection type."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # appleVpnConnectionType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -33,6 +35,9 @@ Apple VPN connection type.
 |citrixSso|12|Citrix Sso.|
 |paloAltoGlobalProtectV2|13|Palo Alto Networks GlobalProtect V2.|
 |ikEv2|14|IKEv2.|
+|alwaysOn|15|AlwaysOn.|
+|microsoftTunnel|16|Microsoft Tunnel.|
+|netMotionMobility|17|NetMotion Mobility.|
 
 
 

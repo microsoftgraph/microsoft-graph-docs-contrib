@@ -4,10 +4,12 @@ description: "Represents a single activity within an app - for example, a TV sho
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: resourcePageType
-author: ""
+author: "ailae"
 ---
 
 # activity resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

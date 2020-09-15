@@ -1,13 +1,15 @@
 ---
 title: "List androidDeviceOwnerGeneralDeviceConfigurations"
 description: "List properties and relationships of the androidDeviceOwnerGeneralDeviceConfiguration objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List androidDeviceOwnerGeneralDeviceConfigurations
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -59,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4772
+Content-Length: 6112
 
 {
   "value": [
@@ -105,12 +107,28 @@ Content-Length: 4772
       "bluetoothBlockContactSharing": true,
       "cameraBlocked": true,
       "cellularBlockWiFiTethering": true,
+      "certificateCredentialConfigurationDisabled": true,
+      "microsoftLauncherConfigurationEnabled": true,
+      "microsoftLauncherCustomWallpaperEnabled": true,
+      "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
+      "microsoftLauncherCustomWallpaperAllowUserModification": true,
+      "microsoftLauncherFeedEnabled": true,
+      "microsoftLauncherFeedAllowUserModification": true,
+      "microsoftLauncherDockPresenceConfiguration": "show",
+      "microsoftLauncherDockPresenceAllowUserModification": true,
+      "microsoftLauncherSearchBarPlacementConfiguration": "top",
+      "enrollmentProfile": "dedicatedDevice",
       "dataRoamingBlocked": true,
       "dateTimeConfigurationBlocked": true,
       "factoryResetDeviceAdministratorEmails": [
         "Factory Reset Device Administrator Emails value"
       ],
       "factoryResetBlocked": true,
+      "globalProxy": {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyAutoConfig",
+        "proxyAutoConfigURL": "Proxy Auto Config URL value"
+      },
+      "googleAccountsBlocked": true,
       "kioskModeScreenSaverConfigurationEnabled": true,
       "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
       "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -133,6 +151,16 @@ Content-Length: 4772
       "kioskModeWiFiConfigurationEnabled": true,
       "kioskModeFlashlightConfigurationEnabled": true,
       "kioskModeMediaVolumeConfigurationEnabled": true,
+      "kioskModeShowDeviceInfo": true,
+      "kioskModeManagedSettingsEntryDisabled": true,
+      "kioskModeDebugMenuEasyAccessEnabled": true,
+      "kioskModeShowAppNotificationBadge": true,
+      "kioskModeScreenOrientation": "portrait",
+      "kioskModeIconSize": "smallest",
+      "kioskModeFolderIcon": "darkSquare",
+      "kioskModeWifiAllowedSsids": [
+        "Kiosk Mode Wifi Allowed Ssids value"
+      ],
       "microphoneForceMute": true,
       "networkEscapeHatchAllowed": true,
       "nfcBlockOutgoingBeam": true,
@@ -171,17 +199,14 @@ Content-Length: 4772
       "usersBlockAdd": true,
       "usersBlockRemove": true,
       "volumeBlockAdjustment": true,
-      "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
       "vpnAlwaysOnLockdownMode": true,
+      "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
       "wifiBlockEditConfigurations": true,
       "wifiBlockEditPolicyDefinedConfigurations": true
     }
   ]
 }
 ```
-
-
-
 
 
 

@@ -3,7 +3,7 @@ title: "Migrate Azure AD Graph .NET apps to Microsoft Graph"
 description: "Describes how to migrate Azure Active Directory (Azure AD) API apps to Microsoft Graph API."
 author: "dkershaw10"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "azure-active-directory"
 ---
 
 # Migrate .NET client library use to Microsoft Graph
@@ -75,8 +75,8 @@ The following steps assume your app is already using ADAL to acquire access toke
     signedInUser = (User)await client.Me.Request().GetAsync();
     ```
 
-    [!NOTE]
-    The Azure AD Graph client library supported LINQ-based query
+    >[!NOTE]
+    >The Azure AD Graph client library supported LINQ-based query
     syntax. However, the Microsoft Graph client library does not.  Consequently, you'll need to convert the relevant queries to a more RESTful expression.  
 
     To do so, change:
@@ -154,5 +154,4 @@ The Azure AD Graph client library supports only the .NET platform.  However, Mic
 ## Next Steps
 
 - Learn how to [deploy, test, and extend](/graph/migrate-azure-ad-graph-deploy-test-extend) apps you've migrated to Microsoft Graph.
-- Explore [Microsoft Graph](/graph/overview) concepts and practices.
-- Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
+- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.

@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # List children of a driveItem
 
+Namespace: microsoft.graph
+
 Return a collection of [DriveItems](../resources/driveitem.md) in the **children** relationship of a DriveItem.
 
 DriveItems with a non-null **folder** or **package** facet can have one or more child DriveItems.
@@ -57,7 +59,7 @@ To retrieve files in the root of the drive, use the `root` relationship on the d
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/root/children
 ```
 # [C#](#tab/csharp)
@@ -88,7 +90,7 @@ To retrieve files in the root of the drive, use the `root` relationship on the d
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-children-files", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/children
 ```
 # [C#](#tab/csharp)

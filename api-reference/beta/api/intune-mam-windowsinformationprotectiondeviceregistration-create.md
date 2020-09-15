@@ -1,13 +1,15 @@
 ---
 title: "Create windowsInformationProtectionDeviceRegistration"
 description: "Create a new windowsInformationProtectionDeviceRegistration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create windowsInformationProtectionDeviceRegistration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -97,9 +99,6 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
-
-
-
 
 
 

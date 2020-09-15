@@ -2,12 +2,14 @@
 title: "List instances"
 description: "Get the instances (occurrences) of an event for a specified time range."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "harini84"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List instances
+
+Namespace: microsoft.graph
 
 Get the instances (occurrences) of an event for a specified time range. 
 
@@ -75,7 +77,7 @@ The following example gets within the specified time range the occurrences and e
   "sampleKeys": ["AAMkAGUzYRgWAAA="],
   "name": "get_instances"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/events/AAMkAGUzYRgWAAA=/instances?startDateTime=2019-04-08T09:00:00.0000000&endDateTime=2019-04-30T09:00:00.0000000&$select=subject,bodyPreview,seriesMasterId,type,recurrence,start,end
 ```
 # [C#](#tab/csharp)

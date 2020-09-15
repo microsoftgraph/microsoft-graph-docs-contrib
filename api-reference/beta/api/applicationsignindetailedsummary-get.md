@@ -2,12 +2,14 @@
 title: "Get applicationSignInDetailedSummary"
 description: "Retrieve the properties and relationships of an applicationSignInDetailSummary object."
 localization_priority: Normal
-author: "davidmu1"
+author: "dhanyahk"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get applicationSignInDetailedSummary
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,7 +56,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_applicationsignindetailedsummary"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/{id}
 ```
 # [C#](#tab/csharp)

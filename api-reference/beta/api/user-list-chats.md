@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List chats
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of chat objects.
@@ -61,7 +63,7 @@ The following is an example of the request.
   "name": "get_chats"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/chats
 ```
 # [C#](#tab/csharp)

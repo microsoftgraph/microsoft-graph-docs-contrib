@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var Stream = "Binary data for the image"
+using var stream = new System.IO.MemoryStream(Encoding.UTF8.GetBytes("Binary data for the image"));
 
 await graphClient.Me.Photo.Content
 	.Request()
-	.PutAsync(Stream);
+	.PutAsync(stream);
 
 ```

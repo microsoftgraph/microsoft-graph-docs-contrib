@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List favoritePlans
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [plannerPlans](../resources/plannerplan.md) that are marked as favorite by a user. You can mark a plan as favorite by [updating the plannerUser resource](planneruser-update.md).
@@ -49,7 +51,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_favoriteplans"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/planner/favoritePlans
 ```
 # [C#](#tab/csharp)

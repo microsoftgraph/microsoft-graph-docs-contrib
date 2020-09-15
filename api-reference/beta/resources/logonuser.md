@@ -4,10 +4,12 @@ description: "Contains stateful information about the logged on user on this hos
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
 # logonUser resource type
+
+Namespace: microsoft.graph
 
 Contains stateful information about the logged on user on this host
 

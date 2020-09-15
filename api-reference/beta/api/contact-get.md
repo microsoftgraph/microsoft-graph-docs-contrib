@@ -1,13 +1,15 @@
 ---
 title: "Get contact"
 description: "Retrieve the properties and relationships of contact object."
-author: "angelgolfer-ms"
+author: "kevinbellinger"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Get contact
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -72,7 +74,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_contact"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/contacts/AAMkAGI2THk0AAA=
 ```
 # [C#](#tab/csharp)

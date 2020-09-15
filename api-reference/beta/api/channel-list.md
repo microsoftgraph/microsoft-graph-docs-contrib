@@ -9,6 +9,8 @@ ms.prod: "microsoft-teams"
 
 # List channels
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [channels](../resources/channel.md) in this [team](../resources/team.md).
@@ -19,9 +21,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (work or school account) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Group.ReadWrite.All    |
+|Application | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, ChannelSettings.Read.Group* , ChannelSettings.Edit.Group* , Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
+
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
@@ -48,18 +52,20 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [Channel](../resources/channel.md) objects in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1: List all channels
 
-Here is an example of the request.
+#### Request
+
+The following example shows a request to list all channels.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_channels"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{id}/channels
 ```
 # [C#](#tab/csharp)
@@ -76,11 +82,11 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels
 
 ---
 
-### Response
+#### Response
 
-Here is an example of the response.
+The following is the response.
 
-> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -99,7 +105,72 @@ Content-length: 262
       "description": "description-value",
       "displayName": "display-name-value",
       "id": "id-value",
-      "membershipType": "membership-type-value"
+      "membershipType": "membership-type-value",
+      "isFavoriteByDefault": false,
+      "webUrl": "webUrl-value",
+      "email": "email-value"
+    }
+  ]
+}
+```
+
+### Example 2: List all private channels
+
+#### Request
+
+The following example shows a request to list all private channels.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_private_channels"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/teams/{id}/channels?$filter=membershipType eq 'private'
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-private-channels-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-private-channels-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-private-channels-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 262
+
+{
+  "value": [
+    {
+      "description": "description-value",
+      "displayName": "display-name-value",
+      "id": "id-value",
+      "membershipType": "membership-type-value",
+      "isFavoriteByDefault": false,
+      "webUrl": "webUrl-value",
+      "email": "email-value"
     }
   ]
 }

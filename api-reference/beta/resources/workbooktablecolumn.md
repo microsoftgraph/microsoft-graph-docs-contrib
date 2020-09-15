@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookTableColumn resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a column in a table.
@@ -34,7 +36,7 @@ Represents a column in a table.
 |:---------------|:--------|:----------|
 |id|int|Returns a unique key that identifies the column within the table. Read-only.|
 |index|int|Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.|
-|name|string|Returns the name of the table column. Read-only.|
+|name|string|Returns the name of the table column.|
 |values|Json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.|
 
 ## Relationships

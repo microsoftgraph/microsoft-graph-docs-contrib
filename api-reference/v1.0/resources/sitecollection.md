@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # SiteCollection resource
 
+Namespace: microsoft.graph
+
 The **siteCollection** resource provides more information about a site collection.
 
 If a [**site**](site.md) resource has a non-null **siteCollection** property, then the site is a root site for a site collection.
@@ -29,6 +31,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "hostname": "contoso.sharepoint.com",
+  "dataLocationCode": "EUR",
   "root": { "@odata.type": "microsoft.graph.root" }
 }
 ```
@@ -38,6 +41,7 @@ Here is a JSON representation of the resource.
 | Property name        | Type     | Description
 |:---------------------|:---------|:---------------------------------------------------
 | **hostname**         | string   | The hostname for the site collection. Read-only.
+| **dataLocationCode** | string   | The geographic region code for where this site collection resides. Read-only.
 | **root**             | [root][] | If present, indicates that this is a root site collection in SharePoint. Read-only.
 
 [root]: root.md

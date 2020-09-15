@@ -21,13 +21,13 @@ var attendees = new List<AttendeeBase>()
 
 var locationConstraint = new LocationConstraint
 {
-	IsRequired = "false",
-	SuggestLocation = "false",
+	IsRequired = false,
+	SuggestLocation = false,
 	Locations = new List<LocationConstraintItem>()
 	{
 		new LocationConstraintItem
 		{
-			ResolveAvailability = "false",
+			ResolveAvailability = false,
 			DisplayName = "Conf room Hood"
 		}
 	}
@@ -36,7 +36,7 @@ var locationConstraint = new LocationConstraint
 var timeConstraint = new TimeConstraint
 {
 	ActivityDomain = ActivityDomain.Work,
-	Timeslots = new List<TimeSlot>()
+	TimeSlots = new List<TimeSlot>()
 	{
 		new TimeSlot
 		{
@@ -56,14 +56,14 @@ var timeConstraint = new TimeConstraint
 
 var isOrganizerOptional = false;
 
-var meetingDuration = "PT1H";
+var meetingDuration = new Duration("PT1H");
 
 var returnSuggestionReasons = true;
 
-var minimumAttendeePercentage = "100";
+var minimumAttendeePercentage = (double)100;
 
 await graphClient.Me
-	.FindMeetingTimes(attendees,locationConstraint,timeConstraint,meetingDuration,maxCandidates,isOrganizerOptional,returnSuggestionReasons,minimumAttendeePercentage)
+	.FindMeetingTimes(attendees,locationConstraint,timeConstraint,meetingDuration,null,isOrganizerOptional,returnSuggestionReasons,minimumAttendeePercentage)
 	.Request()
 	.Header("Prefer","outlook.timezone=\"Pacific Standard Time\"")
 	.PostAsync();

@@ -4,14 +4,18 @@ description: "A contact, event, or message that's attached to another event,"
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "outlook"
-author: "angelgolfer-ms"
+author: "svpsiva"
 ---
 
 # itemAttachment resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A contact, event, or message that's attached to another [event](../resources/event.md),
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
+
+A contact, event, or message that's attached to a user [event](../resources/event.md),
 [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).  
 
 Derived from [attachment](attachment.md).
@@ -20,7 +24,7 @@ Derived from [attachment](attachment.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Read properties and relationships of itemAttachment object.|
+|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Read the properties, relationships, or raw contents of an itemAttachment object.|
 |[Delete](../api/attachment-delete.md) | None |Delete itemAttachment object. |
 
 ## Properties

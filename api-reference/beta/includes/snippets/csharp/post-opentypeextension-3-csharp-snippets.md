@@ -6,16 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var extension = new Extension
+var extension = new OpenTypeExtension
 {
+	ExtensionName = "Com.Contoso.Deal",
 	AdditionalData = new Dictionary<string, object>()
 	{
-		{"@odata.type","microsoft.graph.openTypeExtension"}
-	},
-	ExtensionName = "Com.Contoso.Deal",
-	CompanyName = "Alpine Skis",
-	DealValue = 1010100,
-	ExpirationDate = "2015-07-03T13:04:00Z"
+		{"companyName", "Alpine Skis"},
+		{"dealValue", "1010100"},
+		{"expirationDate", "2015-07-03T13:04:00Z"}
+	}
 };
 
 await graphClient.Groups["f5480dfd-7d77-4d0b-ba2e-3391953cc74a"].Events["AAMkADVl17IsAAA="].Extensions

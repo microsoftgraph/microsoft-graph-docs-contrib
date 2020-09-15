@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List TableCollection
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of table objects.
@@ -51,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_tablecollection"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables
 ```
 # [C#](#tab/csharp)

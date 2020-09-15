@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # oneNoteIdentitySet resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **Support coming soon**
@@ -42,7 +44,7 @@ Here is a JSON representation of the resource.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|user|[oneNoteIdentity](onenoteidentity.md)|A OneNoteIdentity resource that represents a user.|
+|user|[onenoteIdentity](onenoteidentity.md)|A OneNoteIdentity resource that represents a user.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

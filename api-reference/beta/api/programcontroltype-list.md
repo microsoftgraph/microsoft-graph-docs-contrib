@@ -3,11 +3,13 @@ title: "List programControlTypes"
 description: "In the Azure AD access reviews feature, list all the programControlType objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "markwahl-msft"
 ---
 
 # List programControlTypes
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +50,7 @@ If successful, this method returns a `200, OK` response code and an array of [pr
   "blockType": "request",
   "name": "get_programcontroltype"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/programControlTypes
 ```
 # [C#](#tab/csharp)
@@ -94,7 +96,7 @@ Content-type: application/json
         },
         {
             "id": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-            "displayName": "Access Reviews for Office 365 Groups' membership"
+            "displayName": "Access Reviews for Microsoft 365 groups' membership"
         }
     ]
 }

@@ -4,14 +4,16 @@ description: "Describes which part of a team should be cloned. "
 localization_priority: Normal
 doc_type: enumPageType
 ms.prod: ""
-author: ""
+author: "nkramer"
 ---
 
 # clonableTeamParts enum type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes which part of a [team](../resources/team.md) should be cloned. 
+Describes which part of a [team](../resources/team.md) should be cloned.
 
 ## Members
 

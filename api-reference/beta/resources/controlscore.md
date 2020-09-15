@@ -4,10 +4,12 @@ description: "This resource contains a tenant score and description for an indiv
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
 #  controlScore resource type
+
+Namespace: microsoft.graph
 
 This resource contains a tenant score and description for an individual control.
 

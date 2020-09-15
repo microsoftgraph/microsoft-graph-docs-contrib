@@ -1,13 +1,15 @@
 ---
 title: "executeAction action"
 description: "Not yet documented"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # executeAction action
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -31,6 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /deviceManagement/managedDevices/executeAction
+POST /deviceManagement/comanagedDevices/executeAction
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/executeAction
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/executeAction
 ```
@@ -54,6 +57,7 @@ The following table shows the parameters that can be used with this action.
 |deviceIds|String collection|Not yet documented|
 |notificationTitle|String|Not yet documented|
 |notificationBody|String|Not yet documented|
+|deviceName|String|Not yet documented|
 
 
 
@@ -68,7 +72,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/executeAction
 
 Content-type: application/json
-Content-length: 236
+Content-length: 274
 
 {
   "actionName": "delete",
@@ -78,7 +82,8 @@ Content-length: 236
     "Device Ids value"
   ],
   "notificationTitle": "Notification Title value",
-  "notificationBody": "Notification Body value"
+  "notificationBody": "Notification Body value",
+  "deviceName": "Device Name value"
 }
 ```
 
@@ -107,9 +112,6 @@ Content-Length: 385
   }
 }
 ```
-
-
-
 
 
 

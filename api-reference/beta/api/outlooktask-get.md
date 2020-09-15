@@ -2,14 +2,19 @@
 title: "Get outlookTask"
 description: "Get the properties and relationships of an Outlook task in the user's mailbox."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "mashriv"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Get outlookTask
+# Get outlookTask (deprecated)
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Get the properties and relationships of an Outlook task in the user's mailbox.
 
@@ -67,7 +72,7 @@ Here is an example of the request.
   "name": "get_outlooktask"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTrgAAA=
 ```
 # [C#](#tab/csharp)
@@ -149,7 +154,7 @@ This example uses the `Prefer: outlook.timezone` header to specify that the API 
   "name": "get_outlooktask"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MHgwAAA=
 Prefer: outlook.timezone="Pacific Standard Time"
 ```

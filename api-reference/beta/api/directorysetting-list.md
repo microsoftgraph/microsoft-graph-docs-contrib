@@ -1,13 +1,15 @@
 ---
 title: "List directory settings"
 description: "Retrieve a list of directory setting objects."
-author: "davidmu1"
+author: "adimitui"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List directory settings
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,7 +56,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_settings"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/settings
 ```
 # [C#](#tab/csharp)

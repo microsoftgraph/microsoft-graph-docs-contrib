@@ -4,10 +4,12 @@ description: "Describes errors in teamsAsyncOperation."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "billbliss"
 ---
 
 # operationError resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

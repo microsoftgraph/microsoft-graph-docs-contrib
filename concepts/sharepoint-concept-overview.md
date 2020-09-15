@@ -3,6 +3,7 @@ title: "SharePoint sites and content API overview"
 description: "SharePoint is your mobile, intelligent intranet. With SharePoint, users can share and manage content, knowledge, and applications to empower teamwork, find information, and collaborate across an organization. You can use the SharePoint REST API in Microsoft Graph to integrate your solutions with SharePoint sites and content."
 localization_priority: Priority
 ms.prod: "sharepoint"
+ms.custom: scenarios:getting-started
 ---
 
 # SharePoint sites and content API overview
@@ -11,7 +12,7 @@ SharePoint is your mobile, intelligent intranet. With SharePoint, users can shar
 
 ## Why integrate with SharePoint sites and content?
 
-SharePoint sites power team collaboration and communication. Office 365 groups, Microsoft Teams, and portals are all based on SharePoint, so you can use Microsoft Graph to access data no matter where it's kept. Use the SharePoint API in Microsoft Graph to access:
+SharePoint sites power team collaboration and communication. Microsoft 365 groups, Microsoft Teams, and portals are all based on SharePoint, so you can use Microsoft Graph to access data no matter where it's kept. Use the SharePoint API in Microsoft Graph to access:
 
 - Team sites that store the content that users collaborate on with their coworkers.
 - Communication sites and portals where users publish rich content pages to share across the organization.
@@ -41,7 +42,7 @@ As a platform, SharePoint provides several models for extension and integration:
 - The [SharePoint Framework][] provides a way to build web parts using client-side technologies and open source tooling that can be hosted on SharePoint pages.
 - [SharePoint Add-ins][] are self-contained extensions that can be added to a SharePoint site without the need for custom code to run on the server.
 
-When your app runs within a SharePoint page, you can easily use Microsoft Graph to access data across Office 365.
+When your app runs within a SharePoint page, you can easily use Microsoft Graph to access data across Microsoft 365.
 
 To learn about these models in more detail, visit the [SharePoint Dev Center][] or the [SharePoint Developer Docs][].
 

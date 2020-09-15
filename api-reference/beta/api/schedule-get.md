@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get schedule
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [schedule](../resources/schedule.md) object.
@@ -28,7 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Schedule.Read.All*, Schedule.ReadWrite.All* |
+
+>\* **Important:** Application permissions are currently in private preview only and are not available for public use.
 
 > **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
 
@@ -40,12 +44,16 @@ One of the following permissions is required to call this API. To learn more, in
 GET /teams/{teamId}/schedule
 ```
 
+## Optional query parameters
+
+This method does not support OData query parameters to customize the response.
+
 ## Request headers
 
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 Do not supply a request body for this method.
@@ -65,7 +73,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "schedule-get"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule
 ```
 # [C#](#tab/csharp)
@@ -104,7 +112,12 @@ Content-length: 401
   "enabled": true,
   "timeZone": "America/Chicago",
   "provisionStatus": "Completed",
-  "provisionStatusCode": null
+  "provisionStatusCode": null,
+  "timeClockEnabled": true,
+  "openShiftsEnabled": true,
+  "swapShiftsRequestsEnabled": true,
+  "offerShiftRequestsEnabled": true,
+  "timeOffRequestsEnabled": true
 }
 ```
 

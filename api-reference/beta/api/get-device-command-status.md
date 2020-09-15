@@ -3,11 +3,13 @@ title: "Get device command status"
 description: "Get the status of a command on a device. For the  full list of status codes, see List of actionStatus."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
+author: "ailae"
 ms.prod: ""
 ---
 
 # Get device command status
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -180,7 +182,7 @@ In this example, you will need the ID of the device and the ID of the command th
 
 The following example shows the request.
 
-<!-- { 
+<!-- {
   "blockType": "ignored",
   "name": "get_command_payload"
 } -->

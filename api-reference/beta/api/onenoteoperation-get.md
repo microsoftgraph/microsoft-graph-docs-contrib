@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get onenoteOperation
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the status of a long-running OneNote operation. This applies to operations that return the **Operation-Location** header in the response, such as `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup`, `and CopyToSection`.   
@@ -60,7 +62,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_onenoteoperation"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/onenote/operations/{id}
 ```
 # [C#](#tab/csharp)

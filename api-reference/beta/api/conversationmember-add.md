@@ -9,6 +9,8 @@ ms.prod: "microsoft-teams"
 
 # Add conversationMember
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add a [conversationMember](../resources/conversationmember.md) to a [channel](../resources/channel.md).
@@ -22,14 +24,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)|Group.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Group.ReadWrite.All|
+|Delegated (work or school account)| ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Delegated (personal Microsoft account)|Not supported.|
+|Application| ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
 ```http
-POST /teams/{id}/channels/{id}/members/{id}
+POST /teams/{id}/channels/{id}/members
 ```
 
 ## Request headers
@@ -68,7 +70,7 @@ content-type: application/json
 content-length: 26
 
 {
-  "@odata.type": "microsoft.graph.aadConversationMember",
+  "@odata.type": "#microsoft.graph.aadUserConversationMember",
   "roles": [],
   "user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
 }
@@ -96,6 +98,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "create_conversation_member",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
 ```http

@@ -1,13 +1,15 @@
 ---
 title: "auditActor resource type"
 description: "A class containing the properties for Audit Actor."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # auditActor resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -26,6 +28,9 @@ A class containing the properties for Audit Actor.
 |servicePrincipalName|String|Service Principal Name (SPN).|
 |ipAddress|String|IPAddress.|
 |userId|String|User Id.|
+|userRoleScopeTags|[roleScopeTagInfo](../resources/intune-auditing-rolescopetaginfo.md) collection|List of user scope tags when the audit was performed.|
+|remoteTenantId|String|Remote Tenant Id|
+|remoteUserId|String|Remote User Id|
 
 ## Relationships
 None
@@ -49,7 +54,16 @@ Here is a JSON representation of the resource.
   "userPrincipalName": "String",
   "servicePrincipalName": "String",
   "ipAddress": "String",
-  "userId": "String"
+  "userId": "String",
+  "userRoleScopeTags": [
+    {
+      "@odata.type": "microsoft.graph.roleScopeTagInfo",
+      "displayName": "String",
+      "roleScopeTagId": "String"
+    }
+  ],
+  "remoteTenantId": "String",
+  "remoteUserId": "String"
 }
 ```
 

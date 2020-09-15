@@ -4,10 +4,12 @@ description: ""
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsofit-identity-platform"
-author: ""
+author: "markwahl-msft"
 ---
 
 # accessReviewRecurrenceSettings resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

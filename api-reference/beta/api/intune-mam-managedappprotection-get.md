@@ -1,13 +1,15 @@
 ---
 title: "Get managedAppProtection"
 description: "Read properties and relationships of the managedAppProtection object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get managedAppProtection
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -36,7 +38,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2112
+Content-Length: 2513
 
 {
   "value": {
@@ -111,13 +113,20 @@ Content-Length: 2112
     "appActionIfMaximumPinRetriesExceeded": "wipe",
     "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
     "allowedOutboundClipboardSharingExceptionLength": 14,
-    "notificationRestriction": "blockOrganizationalData"
+    "notificationRestriction": "blockOrganizationalData",
+    "previousPinBlockCount": 5,
+    "managedBrowser": "microsoftEdge",
+    "maximumAllowedDeviceThreatLevel": "secured",
+    "mobileThreatDefenseRemediationAction": "wipe",
+    "blockDataIngestionIntoOrganizationDocuments": true,
+    "allowedDataIngestionLocations": [
+      "sharePoint"
+    ],
+    "appActionIfUnableToAuthenticateUser": "wipe",
+    "dialerRestrictionLevel": "managedApps"
   }
 }
 ```
-
-
-
 
 
 

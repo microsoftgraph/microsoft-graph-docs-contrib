@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # workbookRange: rowsBelow
 
+Namespace: microsoft.graph
+
 Gets certain number of rows below a given range.
 
 ## Permissions
@@ -115,7 +117,7 @@ Here is an example of the request.
   "name": "workbookrange_rowsBelow_nocount",
   "idempotent": true
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsBelow
 ```
 # [C#](#tab/csharp)

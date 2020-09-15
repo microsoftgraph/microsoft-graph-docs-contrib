@@ -4,10 +4,12 @@ description: "This resource contains compliance certification data associated wi
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
 #  certificationControl resource type
+
+Namespace: microsoft.graph
 
 Contains compliance certification data associated with secure score control.
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get educationUser
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a user.
 
 ## Permissions
@@ -46,7 +48,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_educationuser"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/users/{user-id}
 ```
 # [C#](#tab/csharp)

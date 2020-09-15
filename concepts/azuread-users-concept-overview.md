@@ -3,6 +3,8 @@ title: "Overview of users in Microsoft Graph"
 description: "Users are the representation of an Azure Active Directory (Azure AD) work or school user account or a Microsoft account in Microsoft Graph. The **user** resource in Microsoft Graph is a hub from which you can access the relationships and resources that are relevant to your users."
 author: "dkershaw10"
 localization_priority: Priority
+ms.prod: "users"
+ms.custom: scenarios:getting-started
 ---
 
 # Overview of users in Microsoft Graph
@@ -30,7 +32,7 @@ Create new users in your organization or update the resources and relationships 
 
 You can view, query, and update user calendar and calendar groups associated with a user, including:
 
-- List and create events on a users calendar.
+- List and create events on a user's calendar.
 - View tasks assigned to a user.
 - Find free meeting times for a set of users.
 - Get a list of reminders set on a user's calendar.

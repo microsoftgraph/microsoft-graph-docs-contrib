@@ -6,16 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryObject = new DirectoryObject
+var group = new Group
 {
 	AdditionalData = new Dictionary<string, object>()
 	{
-		{"@odata.id","https://graph.microsoft.com/v1.0/directoryObjects/{id}"}
+		{"members@odata.bind", "[\"https://graph.microsoft.com/v1.0/directoryObjects/{id}\",\"https://graph.microsoft.com/v1.0/directoryObjects/{id}\",\"https://graph.microsoft.com/v1.0/directoryObjects/{id}\"]"}
 	}
 };
 
-await graphClient.Groups["{id}"].Members.References
+await graphClient.Groups["{id}"]
 	.Request()
-	.AddAsync(directoryObject);
+	.UpdateAsync(group);
 
 ```

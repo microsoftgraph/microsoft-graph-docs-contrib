@@ -4,10 +4,12 @@ description: "Identifiers for objects in Tasks are service-generated string valu
 localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ""
-author: ""
+author: "TarkanSevilmis"
 ---
 
 # Identifiers in Tasks
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

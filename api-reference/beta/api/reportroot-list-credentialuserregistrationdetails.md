@@ -2,12 +2,14 @@
 title: "List credentialUserRegistrationDetails"
 description: "Get a list of credentialUserRegistrationDetails objects for a given tenant."
 localization_priority: Normal
-author: "davidmu1"
+author: "khotz"
 ms.prod: "reports"
 doc_type: "apiPageType"
 ---
 
 # List credentialUserRegistrationDetails
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,13 +39,13 @@ This function supports the optional OData query parameter **$filter**. You can a
 
 | Properties | Description and example |
 | --------- | ----------------------- |
-| userDisplayName | Filter by user name. For example: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`. Supported filter operators: `eq`, and `startswith()`. Supports case insensitive. |
-| userPrincipalName | Filter by user principal name. For example: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |
-| authMethods | Filter by the authentication methods used during registration. For example: `/reports/userCredentialUsageDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`. Supported filter operators: `eq`. |
-| isRegistered | Filter for users who have registered for self-service password reset (SSPR). For example: `/reports/userCredentialUsageDetails?$filter=isRegistered eq true`. Supported filter operators: `eq`. |
-| isEnabled | Filter for users who have been enabled for SSPR. For example: `/reports/userCredentialUsageDetails?$filter=isEnabled eq true`. Supported filtter operators: `eq`. |
-| isCapable | Filter for users who are ready to perform password reset or multi-factor authentication (MFA). For example: `/reports/userCredentialUsageDetails?$filter=isCapable eq true`. Supported filter operators: `eq` |
-| isMfaRegistered | Filter for users who are registered for MFA. For example: `/reports/userCredentialUsageDetails?$filter=isMfaRegistered eq true`. Supported filter operators: `eq`. |
+| userDisplayName | Filter by user name. For example: `/reports/credentialUserRegistrationDetails?$filter=userDisplayName eq 'Contoso'`. Supported filter operators: `eq`, and `startswith()`. Supports case insensitive. |
+| userPrincipalName | Filter by user principal name. For example: `/reports/credentialUserRegistrationDetails?$filter=userPrincipalName eq 'Contoso'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |
+| authMethods | Filter by the authentication methods used during registration. For example: `/reports/credentialUserRegistrationDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`. Supported filter operators: `eq`. |
+| isRegistered | Filter for users who have registered for self-service password reset (SSPR). For example: `/reports/credentialUserRegistrationDetails?$filter=isRegistered eq true`. Supported filter operators: `eq`. |
+| isEnabled | Filter for users who have been enabled for SSPR. For example: `/reports/credentialUserRegistrationDetails?$filter=isEnabled eq true`. Supported filtter operators: `eq`. |
+| isCapable | Filter for users who are ready to perform password reset or multi-factor authentication (MFA). For example: `/reports/credentialUserRegistrationDetails?$filter=isCapable eq true`. Supported filter operators: `eq` |
+| isMfaRegistered | Filter for users who are registered for MFA. For example: `/reports/credentialUserRegistrationDetails?$filter=isMfaRegistered eq true`. Supported filter operators: `eq`. |
 
 ## Request headers
 
@@ -74,7 +76,7 @@ The following is an example of the request.
   "name": "get_credentialuserregistrationdetails"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/credentialUserRegistrationDetails
 ```
 # [C#](#tab/csharp)

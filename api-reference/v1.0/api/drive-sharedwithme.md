@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # List items shared with the signed-in user
 
+Namespace: microsoft.graph
+
 Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that have been shared with the owner of the [Drive](../resources/drive.md).
 
 ## Permissions
@@ -31,7 +33,7 @@ Additionally, without one of the  **All** permissions, shared items returned fro
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/sharedWithMe
 ```
 # [C#](#tab/csharp)
@@ -106,6 +108,10 @@ To access the shared DriveItem resource, you will need to make a request using t
 ```http
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
+
+By default, **sharedWithMe** return items shared within your own tenant. To include items shared from external tenants, append `?allowexternal=true` to the GET request.
+
+
 
 <!-- {
   "type": "#page.annotation",

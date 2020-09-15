@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var synchronizationTemplate = new SynchronizationTemplate
 {
 	Id = "SCIM-Test1",
-	ApplicationId = "{id}",
+	ApplicationId = Guid.Parse("{id}"),
 	FactoryTag = "CustomSCIM"
 };
 

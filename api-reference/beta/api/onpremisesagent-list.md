@@ -2,12 +2,14 @@
 title: "List onPremisesAgents"
 description: "Retrieve a list of onPremisesAgents."
 localization_priority: Normal
-author: "davidmu1"
+author: "japere"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # List onPremisesAgents
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET ~/onPremisesPublishingProfiles/{publishingType}/agents
+GET /onPremisesPublishingProfiles/{publishingType}/agents
 ```
 
 ## Optional query parameters
@@ -61,7 +63,7 @@ The following is an example of the request.
   "name": "get_agents"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agents?$expand=agentGroups
 ```
 # [C#](#tab/csharp)

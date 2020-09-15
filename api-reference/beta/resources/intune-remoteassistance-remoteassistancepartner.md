@@ -1,13 +1,15 @@
 ---
 title: "remoteAssistancePartner resource type"
 description: "RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # remoteAssistancePartner resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -34,6 +36,7 @@ RemoteAssistPartner resources represent the metadata and status of a given Remot
 |onboardingUrl|String|URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|A friendly description of the current TeamViewer connector status. Possible values are: `notOnboarded`, `onboarding`, `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Timestamp of the last request sent to Intune by the TEM partner.|
+|onboardingRequestExpiryDateTime|DateTimeOffset|When the OnboardingStatus is Onboarding, This is the date time when the onboarding request expires.|
 
 ## Relationships
 None
@@ -53,7 +56,8 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "onboardingUrl": "String",
   "onboardingStatus": "String",
-  "lastConnectionDateTime": "String (timestamp)"
+  "lastConnectionDateTime": "String (timestamp)",
+  "onboardingRequestExpiryDateTime": "String (timestamp)"
 }
 ```
 

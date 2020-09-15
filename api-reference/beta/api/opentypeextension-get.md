@@ -4,10 +4,12 @@ description: "Get an open extension (openTypeExtension object) identified by nam
 localization_priority: Normal
 author: "dkershaw10"
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "extensions"
 ---
 
 # Get open extension
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,9 +19,9 @@ The following table lists the three scenarios where you can get an open extensio
 
 |**GET scenario**|**Supported resources**|**Response body**|
 |:-----|:-----|:-----|
-|Get a specific extension from a known resource instance.| [Administrative unit](../resources/administrativeunit.md), [device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md) | Open extension only.|
-|Get a known resource instance expanded with a specific extension.|Administrative unit, device, event, group, group event, group post, message, organization, personal contact, user |A resource instance expanded with the open extension.|
-|Find and expand resource instances with a specific extension. | Event, group event, group post, message, personal contact |Resource instances expanded with the open extension.|
+|Get a specific extension from a known resource instance.| [Administrative unit](../resources/administrativeunit.md), [device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md), [task](../resources/todotask.md), [tasklist](../resources/todotasklist.md)  | Open extension only.|
+|Get a known resource instance expanded with a specific extension.|Administrative unit, device, event, group, group event, group post, message, organization, personal contact, user, task, task list. |A resource instance expanded with the open extension.|
+|Find and expand resource instances with a specific extension. | Event, group event, group post, message, personal contact, task, task list |Resource instances expanded with the open extension.|
 
 ## Permissions
 
@@ -33,9 +35,11 @@ Depending on the resource that contains the extension and the permission type (d
 | [group event](../resources/event.md) | Group.Read.All | Not supported | Not supported |
 | [group post](../resources/post.md) | Group.Read.All | Not supported | Group.Read.All |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
-| [organization](../resources/organization.md) | User.Read | Not supported | Not supported |
+| [organization](../resources/organization.md) | User.Read | Not supported | Organization.Read.All |
 | [personal contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
+| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## HTTP request
 
@@ -58,11 +62,13 @@ GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
 GET /organization/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/extensions/{extensionId}
 ```
 
 ### Get a known resource instance expanded with a matching extension 
 
-For the event, group event, group post, message, personal contact resource types, you can use the same REST request as getting the resource instance, 
+For the event, group event, group post, message, personal contact, task, task list resource types, you can use the same REST request as getting the resource instance, 
 look for an extension that matches a filter on its **id** property, and expand the instance with the extension. The response includes 
 most of the resource properties.
 
@@ -73,6 +79,8 @@ GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/todo/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 ```
 
 
@@ -118,11 +126,11 @@ instances or collections supports getting open extensions from them in a similar
 
 Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.
 
-|**Name**|**Value**|**Description**|
+|Parameter|Description|Example|
 |:---------------|:--------|:-------|
-|$filter|string|Returns an extension with its **id** matching the `extensionId` parameter value.|
-|$filter with **any** operator|string|Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.|
-|$expand|string|Expands a resource instance to include an extension. |
+|$filter|Returns an extension with its **id** matching the `extensionId` parameter value.|[Request 3](#request-3)|
+|$filter with **any** operator|Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.|[Request 5](#request-5)|
+|$expand|Expands a resource instance to include an extension. |[Request 3](#request-3) and [request 5](#request-5)|
 
 ## Request headers
 | Name       | Value |
@@ -151,7 +159,7 @@ First, by its name:
   "blockType": "request",
   "name": "get_opentypeextension_1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==='/extensions/Com.Contoso.Referral
 ```
 # [C#](#tab/csharp)
@@ -213,7 +221,7 @@ The second example references an extension by its name and gets the extension in
   "blockType": "request",
   "name": "get_opentypeextension_2"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions/Com.Contoso.Deal
 ```
 # [C#](#tab/csharp)
@@ -268,7 +276,7 @@ The filter returns the extension that has its **id** matching a fully qualified 
   "blockType": "request",
   "name": "get_opentypeextension_3"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/?$expand=extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
 ```
 # [C#](#tab/csharp)
@@ -381,7 +389,7 @@ The fourth example references an extension by its fully qualified name and gets 
   "blockType": "request",
   "name": "get_opentypeextension_4"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate
 ```
 # [C#](#tab/csharp)

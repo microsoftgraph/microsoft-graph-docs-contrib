@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List sections
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [onenoteSection](../resources/onenotesection.md) objects from the specified section group.
@@ -58,7 +60,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "sectiongroup_get_sections"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/onenote/sectionGroups/{id}/sections
 ```
 # [C#](#tab/csharp)

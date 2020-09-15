@@ -2,12 +2,14 @@
 title: "Get identityProvider"
 description: "Retrieve the properties of an existing identityProvider"
 localization_priority: Priority
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get identityProvider
+
+Namespace: microsoft.graph
 
 Retrieve the properties of an existing [identityProvider](../resources/identityprovider.md).
 
@@ -56,7 +58,7 @@ The following example retrieves a specific **identityProvider**.
   "blockType": "request",
   "name": "get-identityprovider"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 ```
 # [C#](#tab/csharp)

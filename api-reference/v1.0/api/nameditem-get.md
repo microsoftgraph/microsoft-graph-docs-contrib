@@ -2,12 +2,14 @@
 title: "Get NamedItem"
 description: "Retrieve the properties and relationships of nameditem object."
 localization_priority: Normal
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType
 ---
 
 # Get NamedItem
+
+Namespace: microsoft.graph
 
 Retrieve the properties and relationships of nameditem object.
 ## Permissions
@@ -48,7 +50,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_nameditem"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}
 ```
 # [C#](#tab/csharp)

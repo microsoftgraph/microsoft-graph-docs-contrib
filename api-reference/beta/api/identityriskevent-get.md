@@ -3,13 +3,18 @@ title: "Get identityRiskEvent"
 description: "Retrieve the properties and relationships of identityriskevent object."
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "security"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Get identityRiskEvent
+# Get identityRiskEvent (deprecated)
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+>[!CAUTION]
+>The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020. For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 Retrieve the properties and relationships of identityriskevent object.
 ## Permissions
@@ -47,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_identityriskevent"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityRiskEvents/ec50e9fb-9da1-215b-e18c-b7e2a716b2a6-c2b6c2b9-dddc-acd0-2b39-d519d803dbc3-db69711e-9324-ec99-f010-6e63fb972e98
 ```
 # [C#](#tab/csharp)

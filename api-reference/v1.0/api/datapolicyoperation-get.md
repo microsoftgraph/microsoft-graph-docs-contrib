@@ -2,12 +2,14 @@
 title: "Get dataPolicyOperation"
 description: "Retrieve the properties of the dataPolicyOperation object."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get dataPolicyOperation
+
+Namespace: microsoft.graph
 
 Retrieve the properties of a **dataPolicyOperation** object.
 
@@ -43,7 +45,7 @@ If successful, this method returns a `200 OK` response code and a [dataPolicyOpe
   "blockType": "request",
   "name": "get_datapolicyoperation"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/dataPolicyOperations/{id}
 ```
 # [C#](#tab/csharp)

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List sections
 
+Namespace: microsoft.graph
+
 Retrieve a list of [onenoteSection](../resources/section.md) objects from the specified section group.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -56,7 +58,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "sectionsgroup_get_sections"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}/sections
 ```
 # [C#](#tab/csharp)

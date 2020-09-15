@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var governanceRoleAssignmentRequest = new GovernanceRoleAssignmentRequest
+var governanceRoleAssignmentRequest = new GovernanceRoleAssignmentRequestObject
 {
 	RoleDefinitionId = "0e88fd18-50f5-4ee1-9104-01c3ed910065",
 	ResourceId = "e5e7d29d-5465-45ac-885f-4716a5ee74b5",
@@ -17,8 +17,8 @@ var governanceRoleAssignmentRequest = new GovernanceRoleAssignmentRequest
 	Schedule = new GovernanceSchedule
 	{
 		Type = "Once",
-		StartDateTime = "2018-05-12T23:53:55.327Z",
-		EndDateTime = "2018-08-10T23:53:55.327Z"
+		StartDateTime = DateTimeOffset.Parse("2018-05-12T23:53:55.327Z"),
+		EndDateTime = DateTimeOffset.Parse("2018-08-10T23:53:55.327Z")
 	}
 };
 

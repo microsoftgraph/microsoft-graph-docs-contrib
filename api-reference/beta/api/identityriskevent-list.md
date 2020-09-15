@@ -3,13 +3,18 @@ title: "List identityRiskEvents"
 description: "Retrieve a list of identityriskevent objects."
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "security"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# List identityRiskEvents
+# List identityRiskEvents (deprecated)
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+>[!CAUTION]
+>The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020. For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 Retrieve a list of identityriskevent objects.
 
@@ -48,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_identityriskevents"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityRiskEvents
 ```
 # [C#](#tab/csharp)

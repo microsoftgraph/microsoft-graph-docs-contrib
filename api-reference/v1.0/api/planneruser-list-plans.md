@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List plans
 
+Namespace: microsoft.graph
+
 Retrieve a list of **plannerplan** objects shared with a [user](../resources/user.md) object.
 
 ## Permissions
@@ -51,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_plans"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/planner/plans
 ```
 # [C#](#tab/csharp)

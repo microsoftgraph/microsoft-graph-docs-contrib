@@ -2,14 +2,18 @@
 title: "outlookCategory resource type"
 description: "Represents a category by which a user can group Outlook items such as messages and events. In Outlook, the user defines categories in a master list, and can apply one or more of these user-defined"
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # outlookCategory resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
 Represents a category by which a user can group Outlook items such as messages and events. In Outlook, the user defines categories in a master list, and can apply one or more of these user-defined
 categories to an item. 

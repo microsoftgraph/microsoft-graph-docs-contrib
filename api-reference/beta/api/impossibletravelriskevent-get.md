@@ -3,13 +3,18 @@ title: "Get impossibleTravelRiskEvent"
 description: "Retrieve the properties and relationships of an impossibletravelriskevent object."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
-ms.prod: ""
+author: "cloudhandler"
+ms.prod: "microsoft-identity-platform"
 ---
 
-# Get impossibleTravelRiskEvent
+# Get impossibleTravelRiskEvent (deprecated)
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+>[!CAUTION]
+>The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020. For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 Retrieve the properties and relationships of an impossibletravelriskevent object.
 ## Permissions

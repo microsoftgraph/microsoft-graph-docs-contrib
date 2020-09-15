@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 # List followed items
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List the [items](../resources/driveitem.md) that have been followed by the signed in user.
@@ -29,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-followed-items", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/following
 ```
 # [C#](#tab/csharp)

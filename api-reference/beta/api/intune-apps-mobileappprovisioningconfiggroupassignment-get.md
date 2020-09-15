@@ -1,13 +1,15 @@
 ---
 title: "Get mobileAppProvisioningConfigGroupAssignment"
 description: "Read properties and relationships of the mobileAppProvisioningConfigGroupAssignment object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get mobileAppProvisioningConfigGroupAssignment
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -34,7 +36,7 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvision
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -71,9 +73,6 @@ Content-Length: 203
   }
 }
 ```
-
-
-
 
 
 

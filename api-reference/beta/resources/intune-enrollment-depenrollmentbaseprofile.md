@@ -1,13 +1,15 @@
 ---
 title: "depEnrollmentBaseProfile resource type"
 description: "The DepEnrollmentBaseProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # depEnrollmentBaseProfile resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -35,7 +37,7 @@ Inherits from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofi
 |enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal. Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indicates that Company Portal is required on setup assistant enrolled devices Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|Indicates if this is the default profile|
-|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.|
+|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.|
 |supportDepartment|String|Support department information|
 |passCodeDisabled|Boolean|Indicates if Passcode setup pane is disabled|
 |isMandatory|Boolean|Indicates if the profile is mandatory|
@@ -52,7 +54,9 @@ Inherits from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofi
 |diagnosticsDisabled|Boolean|Indicates if diagnostics setup pane is disabled|
 |displayToneSetupDisabled|Boolean|Indicates if displaytone setup screen is disabled|
 |privacyPaneDisabled|Boolean|Indicates if privacy screen is disabled|
+|screenTimeScreenDisabled|Boolean|Indicates if screen timeout setup is disabled|
 |deviceNameTemplate|String|Sets a literal or name pattern.|
+|configurationWebUrl|Boolean|URL for setup assistant login|
 
 ## Relationships
 None
@@ -93,7 +97,9 @@ Here is a JSON representation of the resource.
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
   "privacyPaneDisabled": true,
-  "deviceNameTemplate": "String"
+  "screenTimeScreenDisabled": true,
+  "deviceNameTemplate": "String",
+  "configurationWebUrl": true
 }
 ```
 

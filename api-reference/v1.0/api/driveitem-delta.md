@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Track changes for a Drive
 
+Namespace: microsoft.graph
+
 This method allows your app to track changes to a drive and its children over time.
 
 Your app begins by calling `delta` without any parameters. 
@@ -22,7 +24,7 @@ To check for changes in the future, call `delta` again with the `@odata.deltaLi
 Deleted items are returned with the [`deleted` facet](../resources/deleted.md). 
 Items with this property set should be removed from your local state. 
 
-**Note:** you should only delete a folder locally if it is empty after syncing all the changes.
+>**Note:** you should only delete a folder locally if it is empty after syncing all the changes.
 
 ## Permissions
 
@@ -64,8 +66,8 @@ In addition to the collection of DriveItems, the response will also include one 
 
 | Name                 | Value  | Description                                                                                                                                      |
 |:---------------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| **@odata.nextLink**  | url    | A URL to retrieve the next available page of changes, if there are additional changes in the current set.                                        |
-| **@odata.deltaLink** | url    | A URL returned instead of **@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future.  |
+| **\@odata.nextLink**  | url    | A URL to retrieve the next available page of changes, if there are additional changes in the current set.                                        |
+| **\@odata.deltaLink** | url    | A URL returned instead of **\@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future.  |
 
 ## Example (Initial Request)
 
@@ -79,7 +81,7 @@ Here is an example of the initial request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get_item_delta_first", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta
 ```
 # [C#](#tab/csharp)
@@ -133,8 +135,8 @@ Content-type: application/json
 }
 ```
 
-This response includes the first page of changes, and the **@odata.nextLink** property indicates that there are more items available in the current set of items.
-Your app should continue to request the URL value of **@odata.nextLink** until all pages of items have been retrieved.
+This response includes the first page of changes, and the **\@odata.nextLink** property indicates that there are more items available in the current set of items.
+Your app should continue to request the URL value of **\@odata.nextLink** until all pages of items have been retrieved.
 
 ## Example (Last page in a set)
 
@@ -148,7 +150,7 @@ Here is an example request after the initial request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-delta-last", "tags": "service.graph" }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
 ```
 # [C#](#tab/csharp)
@@ -200,7 +202,7 @@ Content-type: application/json
 
 This response indicates that the item named `folder2` was deleted and the item `file.txt` was either added or modified between the initial request and this request to update the local state.
 
-The final page of items will include the **@odata.deltaLink** property, which provides the URL that can be used later to retrieve changes since the current set of items.
+The final page of items will include the **\@odata.deltaLink** property, which provides the URL that can be used later to retrieve changes since the current set of items.
 
 There may be cases when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if server state has changed and a new token is required).
 In these cases the service will return an `HTTP 410 Gone` error with an error response containing one of the error codes below, and a `Location` header containing a new nextLink that starts a fresh delta enumeration from scratch.
@@ -228,7 +230,7 @@ Using `delta` is the only way to guarantee that you've read all of the data you 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-delta-latest", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/root/delta?token=latest
 ```
 # [C#](#tab/csharp)
@@ -287,6 +289,15 @@ Content-type: application/json
     |---------|----------|
     | Create/Modify | n/a |
     | Delete | `ctag`, `size` |
+
+## Scanning permissions hierarchies
+By default, the delta query response will include sharing information for all items in the query that changed even if they inherit their permissions from their parent and did not have direct sharing changes themselves. This typically then results in a follow up call to get the permission details for every item rather than just the ones whose sharing information changed. You can optimize your understanding of how permission changes happen by adding the `Prefer: hierarchicalsharing` header to your delta query request.
+
+When the `Prefer: hierarchicalsharing` header is provided, sharing information will be returned for the root of the permissions hierarchy, as well as items that explicitly have sharing changes. In cases where the sharing change is to remove sharing from an item, you will find an empty sharing facet to differentiate between items that inherit from their parent and those that are unique but have no sharing links. You will also see this empty sharing facet on the root of a permission hierarchy that is not shared to establish the initial scope.
+
+In many scanning scenarios, you might be interested specifically in changes to permissions. To make it clear in the delta query response which changes are the result of permissions being changed, you can provide the `Prefer: deltashowsharingchanges` header. When this header is provided, all items that appear in the delta query response due to permission changes will have the `@microsoft.graph.sharedChanged":"True"` OData annotation. This feature is applicable to SharePoint and OneDrive for Business but not consumer OneDrive accounts.
+
+> **Note:** The use of `Prefer: deltashowsharingchanges` header requires you to use `Prefer: deltashowremovedasdeleted` and `Prefer: deltatraversepermissiongaps`. These header values can be joint together in a single header: `Prefer: deltashowremovedasdeleted; deltatraversepermissiongaps; deltashowsharingchanges;`.
 
 ## Error responses
 

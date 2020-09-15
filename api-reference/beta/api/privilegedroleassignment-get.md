@@ -3,11 +3,13 @@ title: "Get privilegedRoleAssignment"
 description: "Retrieve the properties and relationships of privilegedRoleAssignment object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # Get privilegedRoleAssignment
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,7 +55,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_privilegedroleassignment"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}
 ```
 # [C#](#tab/csharp)

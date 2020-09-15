@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Get a site resource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve properties and relationships for a [site][] resource.
@@ -61,7 +63,7 @@ GET /groups/{group-id}/sites/root
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-site" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}
 ```
 # [C#](#tab/csharp)

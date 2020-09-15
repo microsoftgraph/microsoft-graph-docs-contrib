@@ -1,26 +1,33 @@
 ---
 title: "Azure AD synchronization API overview"
-description: ") allows you to automate the creation, maintenance, and removal of identities in cloud (software as a service, or SaaS) applications such as Dropbox, Salesforce, ServiceNow, and more. You can use the synchronization APIs in Microsoft Graph to manage identity synchronization programmatically, including:"
+description: "Automate the provisioning of identities from HR systems, Active Directory, and Azure Active Directory to cloud applications."
 localization_priority: Normal
 doc_type: conceptualPageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 
 # Azure AD synchronization API overview
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory (Azure AD) identity synchronization (also called "provisioning") allows you to automate the creation, maintenance, and removal of identities in cloud (software as a service, or SaaS) applications such as Dropbox, Salesforce, ServiceNow, and more. You can use the synchronization APIs in Microsoft Graph to manage identity synchronization programmatically, including:
+Azure Active Directory (Azure AD) identity synchronization (also called "provisioning") allows you to automate the provisioning (creation, maintenance) and de-provisioning (removal) of identities from any of the following:
+- Active Directory to Azure AD
+- Workday to Azure AD
+- Azure AD to cloud applications such as Dropbox, Salesforce, ServiceNow, and more 
+
+You can use the synchronization APIs in Microsoft Graph to manage identity synchronization programmatically, including:
 
 - Create, start, and stop synchronization jobs
 - Make changes to the synchronization schema for jobs
-- Verify the current synchronization status 
+- Verify the current synchronization status
 
 For more information about synchronization in Azure AD, see:
 
-* [Automate user provisioning and deprovisioning to SaaS applications with Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-app-provisioning)
-* [Managing user account provisioning for enterprise apps in the Azure portal](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
+* [Automate user provisioning and deprovisioning to SaaS applications with Azure Active Directory](/azure/active-directory/active-directory-saas-app-provisioning)
+* [Managing user account provisioning for enterprise apps in the Azure portal](/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
 
 You can also try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) in a sample tenant or your own tenant.
 
@@ -60,7 +67,7 @@ The Azure AD synchronization API uses OAuth 2.0 for authorization. Before making
 
 The following example shows how to find service principal object by display name.
 
-**Request** 
+**Request**
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -92,7 +99,7 @@ HTTP/1.1 200 OK
 
 The following example shows how to find the service principal object by app ID.
 
-**Request** 
+**Request**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=AppId eq '219561ee-1480-4c67-9aa6-63d861fae3ef'

@@ -20,7 +20,7 @@ var message = new Message
 			}
 		}
 	},
-	Mentions = new List<Mention>()
+	Mentions = (IMessageMentionsCollectionPage)new List<Mention>()
 	{
 		new Mention
 		{
@@ -34,7 +34,7 @@ var message = new Message
 };
 
 await graphClient.Me
-	.SendMail(message,saveToSentItems)
+	.SendMail(message,null)
 	.Request()
 	.PostAsync();
 

@@ -2,12 +2,14 @@
 title: "keyValue resource type"
 description: "Standard key-value pair resource type."
 localization_priority: Normal
-author: ""
+author: "dougeby"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # keyValue resource type
+
+Namespace: microsoft.graph
 
 Represents a key-value pair.
 

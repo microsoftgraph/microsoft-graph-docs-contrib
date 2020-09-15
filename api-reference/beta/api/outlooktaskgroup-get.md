@@ -1,15 +1,20 @@
 ---
 title: "Get outlookTaskGroup"
 description: "Get the properties and relationships of the specified Outlook task group."
-author: "angelgolfer-ms"
+author: "mashriv"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Get outlookTaskGroup
+# Get outlookTaskGroup (deprecated)
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Get the properties and relationships of the specified Outlook task group.
 ## Permissions
@@ -50,7 +55,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_outlooktaskgroup"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/taskGroups/AAMkADIyAAAhrbe-AAA=
 ```
 # [C#](#tab/csharp)

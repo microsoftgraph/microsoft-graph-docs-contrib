@@ -6,14 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var attachment = new Attachment
+var attachment = new FileAttachment
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.type","#microsoft.graph.fileAttachment"}
-	},
 	Name = "menu.txt",
-	ContentBytes = "base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+	ContentBytes = Encoding.ASCII.GetBytes("base64bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
 };
 
 await graphClient.Me.Events["AAMkAGI1AAAt9AHjAAA="].Attachments

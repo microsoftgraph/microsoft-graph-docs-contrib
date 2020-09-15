@@ -4,10 +4,12 @@ description: "The following is a JSON representation of the resource."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "kszb"
 ---
 
 # skypeForBusinessDeviceUsageUserDetail resource type
+
+Namespace: microsoft.graph
 
 ## Properties
 
@@ -34,14 +36,14 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "reportRefreshDate": "Date", 
-  "userPrincipalName": "String", 
-  "lastActivityDate": "Date", 
-  "usedWindows": true, 
-  "usedWindowsPhone": true, 
-  "usedAndroidPhone": true, 
-  "usediPhone": true, 
-  "usediPad": true, 
+  "reportRefreshDate": "Date",
+  "userPrincipalName": "String",
+  "lastActivityDate": "Date",
+  "usedWindows": true,
+  "usedWindowsPhone": true,
+  "usedAndroidPhone": true,
+  "usediPhone": true,
+  "usediPad": true,
   "reportPeriod": "String"
 }
 ```

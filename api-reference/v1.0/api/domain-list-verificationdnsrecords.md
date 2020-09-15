@@ -1,13 +1,15 @@
 ---
 title: "List verificationDnsRecords"
 description: "Retrieve a list of domainDnsRecord objects."
-author: "davidmu1"
+author: "adimitui"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List verificationDnsRecords
+
+Namespace: microsoft.graph
 
 Retrieve a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects.
 
@@ -62,7 +64,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "blockType": "request",
   "name": "get_verificationdnsrecords"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/domains/{domain-name}/verificationDnsRecords
 ```
 # [C#](#tab/csharp)

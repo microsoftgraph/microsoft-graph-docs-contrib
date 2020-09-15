@@ -1,13 +1,15 @@
 ---
 title: "Get deviceManagementSettingDefinition"
 description: "Read properties and relationships of the deviceManagementSettingDefinition object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get deviceManagementSettingDefinition
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -37,7 +39,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceM
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -64,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 848
+Content-Length: 1062
 
 {
   "value": {
@@ -74,13 +76,17 @@ Content-Length: 848
     "displayName": "Display Name value",
     "isTopLevel": true,
     "description": "Description value",
+    "placeholderText": "Placeholder Text value",
     "documentationUrl": "https://example.com/documentationUrl/",
     "keywords": [
       "Keywords value"
     ],
     "constraints": [
       {
-        "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+        "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+        "supportedTypes": [
+          "Supported Types value"
+        ]
       }
     ],
     "dependencies": [
@@ -89,7 +95,10 @@ Content-Length: 848
         "definitionId": "Definition Id value",
         "constraints": [
           {
-            "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+            "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+            "supportedTypes": [
+              "Supported Types value"
+            ]
           }
         ]
       }
@@ -97,9 +106,6 @@ Content-Length: 848
   }
 }
 ```
-
-
-
 
 
 

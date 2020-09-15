@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List people
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [person](../resources/person.md) objects ordered by their relevance to the [user](../resources/user.md), which is determined by the user's communication and collaboration patterns, and business relationships.
@@ -78,7 +80,7 @@ The following is an example of the default request.
   "name": "get_person_collection_beta"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/people
 ```
 # [C#](#tab/csharp)

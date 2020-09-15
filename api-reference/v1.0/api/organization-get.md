@@ -2,12 +2,14 @@
 title: "Get organization"
 description: "Retrieve the properties and relationships of currently authenticated organization."
 localization_priority: Priority
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get organization
+
+Namespace: microsoft.graph
 
 Get the properties and relationships of the currently authenticated organization.
 
@@ -63,7 +65,7 @@ Here is an example of the request.
   "name": "get_organization"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization
 ```
 # [C#](#tab/csharp)

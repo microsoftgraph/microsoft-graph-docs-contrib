@@ -1,21 +1,23 @@
 ---
 title: "group: validateProperties"
-description: "Validate that an Office 365 group's display name or mail nickname complies with naming policies."
+description: "Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies."
 localization_priority: Normal
-author: "dkershaw10"
+author: "yyuank"
 ms.prod: "groups"
 doc_type: "apiPageType"
 ---
 
 # group: validateProperties
 
-Validate that an Office 365 group's display name or mail nickname complies with naming policies.  Clients can use this API to determine whether a display name or mail nickname is valid before trying to [update](group-update.md) an Office 365 group. To validate the properties before creating a group, use the [directoryobject:validateProperties](directoryobject-validateproperties.md) function.
+Namespace: microsoft.graph
 
-The following policy validations are performed for the display name and mail nickname properties: 
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.  Clients can use this API to determine whether a display name or mail nickname is valid before trying to [update](group-update.md) a Microsoft 365 group. To validate the properties before creating a group, use the [directoryobject:validateProperties](directoryobject-validateproperties.md) function.
+
+The following policy validations are performed for the display name and mail nickname properties:
 1. Validate the prefix and suffix naming policy
 2. Validate the custom banned words policy
 
-This API only returns the first validation failure that is encountered. If the properties fail multiple validations, only the first validation failure is returned. However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy. To learn more about configuring naming policies, see [Configure naming policy](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell).
+This API only returns the first validation failure that is encountered. If the properties fail multiple validations, only the first validation failure is returned. However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy. To learn more about configuring naming policies, see [Configure naming policy](/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell).
 
 ## Permissions
 

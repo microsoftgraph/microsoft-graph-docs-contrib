@@ -2,12 +2,14 @@
 title: "Get bookingAppointment"
 description: "Get the properties and relationships of a bookingAppointment object in the specified bookingbusiness."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
 ---
 
 # Get bookingAppointment
+
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +51,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_bookingappointment"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKnAAA=
 ```
 # [C#](#tab/csharp)

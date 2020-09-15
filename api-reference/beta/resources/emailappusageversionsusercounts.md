@@ -2,12 +2,14 @@
 title: "emailAppUsageVersionsUserCounts resource type"
 description: "The following is a JSON representation of the resource."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "pranoychaudhuri"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # emailAppUsageVersionsUserCounts resource type
+
+Namespace: microsoft.graph
 
 ## Properties
 
@@ -20,6 +22,8 @@ doc_type: resourcePageType
 | outlook2007       | Int64  |
 | undetermined      | Int64  |
 | reportPeriod      | String |
+| outlookM365       | Int64  |
+| outlook2019       | Int64  |
 
 ## JSON representation
 
@@ -38,6 +42,8 @@ The following is a JSON representation of the resource.
   "outlook2010": 1024, 
   "outlook2007": 1024, 
   "undetermined": 1024, 
-  "reportPeriod": "String"
+  "reportPeriod": "String",
+  "outlookM365": 1024,
+  "outlook2019": 1024
 }
 ```

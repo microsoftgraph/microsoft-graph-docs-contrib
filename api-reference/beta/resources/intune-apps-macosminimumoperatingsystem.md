@@ -1,13 +1,15 @@
 ---
 title: "macOSMinimumOperatingSystem resource type"
 description: "The minimum operating system required for a MacOS app."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # macOSMinimumOperatingSystem resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -25,6 +27,8 @@ The minimum operating system required for a MacOS app.
 |v10_11|Boolean|Mac OS 10.11 or later.|
 |v10_12|Boolean|Mac OS 10.12 or later.|
 |v10_13|Boolean|Mac OS 10.13 or later.|
+|v10_14|Boolean|Mac OS 10.14 or later.|
+|v10_15|Boolean|Mac OS 10.15 or later.|
 
 ## Relationships
 None
@@ -45,7 +49,9 @@ Here is a JSON representation of the resource.
   "v10_10": true,
   "v10_11": true,
   "v10_12": true,
-  "v10_13": true
+  "v10_13": true,
+  "v10_14": true,
+  "v10_15": true
 }
 ```
 

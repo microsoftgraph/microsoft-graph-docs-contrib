@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List rows
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of tablerow objects.
@@ -51,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_table_rows"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows?$top=5&$skip=5
 ```
 # [C#](#tab/csharp)

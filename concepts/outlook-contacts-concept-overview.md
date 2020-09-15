@@ -1,14 +1,15 @@
 ---
 title: "Outlook personal contacts API overview"
-description: "Outlook contacts lets you store personal contacts' data, and is part of the Outlook messaging hub in Office 365. Through Outlook, you can manage emails, schedule meetings, find information about users in an organization, initiate online conversations, share files, and collaborate in groups."
+description: "Outlook contacts lets you store personal contacts' data, and is part of the Outlook messaging hub in Microsoft 365. Through Outlook, you can manage emails, schedule meetings, find information about users in an organization, initiate online conversations, share files, and collaborate in groups."
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+ms.custom: scenarios:getting-started
 ---
 
 # Outlook personal contacts API overview
 
-Outlook contacts lets you store personal contacts' data, and is part of the Outlook messaging hub in Office 365. Through Outlook, you can manage emails, schedule meetings, find information about users in an organization, initiate online conversations, share files, and collaborate in groups.
+Outlook contacts lets you store personal contacts' data, and is part of the Outlook messaging hub in Microsoft 365. Through Outlook, you can manage emails, schedule meetings, find information about users in an organization, initiate online conversations, share files, and collaborate in groups.
 
 ## Why integrate with Outlook personal contacts?
 
@@ -37,6 +38,10 @@ You can use the typical CRUD operations for an Outlook [contact](/graph/api/reso
 - The **contact** entity supports a contact photo which is implemented as the same [profilePhoto](/graph/api/resources/profilephoto?view=graph-rest-1.0) entity as a user photo stored in Exchange Online or Azure Active Directory. This eliminates the overhead in converting between contact and user profile photos.
 - You can keep the app local store synchronized by subscribing to [change notifications](/graph/api/resources/webhooks?view=graph-rest-1.0) and [tracking changes](delta-query-overview.md) to contacts and contact folders.
 - You can extend app storage in a contact instance as an [open extension](extensibility-overview.md#open-extensions), or add strongly typed custom data to the contact schema as a [schema extension](extensibility-overview.md#schema-extensions).
+
+## Where is the data?
+
+[!INCLUDE [outlook-mailbox-type-support](../includes/outlook-mailbox-type-support.md)]
 
 ## API reference
 

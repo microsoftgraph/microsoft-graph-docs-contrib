@@ -1,13 +1,15 @@
 ---
 title: "List androidManagedStoreApps"
 description: "List properties and relationships of the androidManagedStoreApp objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List androidManagedStoreApps
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1267
+Content-Length: 1533
 
 {
   "value": [
@@ -93,14 +95,20 @@ Content-Length: 1267
       "usedLicenseCount": 0,
       "totalLicenseCount": 1,
       "appStoreUrl": "https://example.com/appStoreUrl/",
+      "isPrivate": true,
+      "isSystemApp": true,
+      "appTracks": [
+        {
+          "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+          "trackId": "Track Id value",
+          "trackAlias": "Track Alias value"
+        }
+      ],
       "supportsOemConfig": true
     }
   ]
 }
 ```
-
-
-
 
 
 

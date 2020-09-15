@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationRoot resource type
 
+Namespace: microsoft.graph
+
 The `/education` namespace exposes functionality that is specific to the education sector. 
 Some objects in the `/education` namespace can be found in other parts of Microsoft Graph (for example, [users](user.md)). The education namespace provides education-specific properties and features on these objects.
 
@@ -55,7 +57,7 @@ Here is a JSON representation of the resource.
   "blockType": "request",
   "name": "get_education"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education
 ```
 # [C#](#tab/csharp)

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamsTab resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [channel](channel.md) within a [team](team.md). 
@@ -20,7 +22,7 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 |[List tabs](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
 |[Get tab](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a channel.|
 |[Add tab](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
-|[Remove tab](../api/teamstab-delete.md) | None | Removes (unpins) a tab from a channel.|
+|[Delete tab](../api/teamstab-delete.md) | None | Removes (unpins) a tab from a channel.|
 |[Update tab](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
 
 
@@ -33,7 +35,7 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 |  name            |   string                  |  (Deprecated) Name of the tab.     |
 |  teamsAppId           |   string             |  App definition identifier of the tab. This value cannot be changed after tab creation.     |
 |  sortOrderIndex  |   string                  |  Index of the order used for sorting tabs.     |
-|  webUrl          |   string                  |  Deep link url of the tab instance. Read only.     |
+|  webUrl          |   string                  |  Deep link URL of the tab instance. Read only.     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Container for custom settings applied to a tab. The tab is considered configured only once this property is set.     |
 
 ## Relationships
@@ -63,7 +65,6 @@ The following is a JSON representation of the resource.
   "configuration": "teamsTabConfiguration",
   "name": "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

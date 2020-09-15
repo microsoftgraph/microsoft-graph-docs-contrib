@@ -3,11 +3,13 @@ title: "Delete inferenceClassificationOverride"
 description: "Delete a Focused Inbox override specified by its ID."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
+author: "svpsiva"
 ms.prod: ""
 ---
 
 # Delete inferenceClassificationOverride
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

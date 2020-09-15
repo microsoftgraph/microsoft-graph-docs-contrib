@@ -14,7 +14,6 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphEducationSchool *educationSchool = [[MSGraphEducationSchool alloc] init];
 [educationSchool setDisplayName:@"Fabrikam High School"];
 [educationSchool setDescription:@"Magnate school for the arts. Los Angeles School District"];
-[educationSchool setStatus:@"String"];
 [educationSchool setExternalSource: [MSGraphEducationExternalSource sis]];
 [educationSchool setPrincipalEmail:@"AmyR@fabrikam.com"];
 [educationSchool setPrincipalName:@"Amy Roebuck"];
@@ -30,7 +29,6 @@ MSGraphPhysicalAddress *address = [[MSGraphPhysicalAddress alloc] init];
 [address setStreet:@"12345 Main St."];
 [educationSchool setAddress:address];
 [educationSchool setExternalId:@"10002"];
-[educationSchool setFax:@"+1 (253) 555-0101"];
 [educationSchool setPhone:@"+1 (253) 555-0102"];
 
 NSError *error;

@@ -2,12 +2,14 @@
 title: "outlookUser: supportedLanguages"
 description: "Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # outlookUser: supportedLanguages
+
+Namespace: microsoft.graph
 
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
 
@@ -52,7 +54,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "user_supportedlanguages"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/outlook/supportedLanguages
 ```
 # [C#](#tab/csharp)

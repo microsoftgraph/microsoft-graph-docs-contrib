@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List rangeView rows
 
+Namespace: microsoft.graph
+
 Retrieve a list of range view objects.
 
 ## Permissions
@@ -48,7 +50,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_rows"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range(address='A1:Z10')/visibleView/rows
 ```
 # [C#](#tab/csharp)

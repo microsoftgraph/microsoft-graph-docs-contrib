@@ -2,12 +2,14 @@
 title: "Create Message"
 description: "Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut."
 localization_priority: Priority
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "svpsiva"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Create Message
+
+Namespace: microsoft.graph
 
 Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.
 
@@ -124,6 +126,7 @@ Content-type: application/json
     "importance":"low",
     "parentFolderId":"AAMkADNlNWAAAAAAEPAAA=",
     "conversationId":"AAQkADNlNFdXGBnqtY=",
+    "conversationIndex":"AQHTe7/VAniOJVgCxEmtF1z6ZY1rFQ==",
     "isDeliveryReceiptRequested":false,
     "isReadReceiptRequested":false,
     "isRead":true,

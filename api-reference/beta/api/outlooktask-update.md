@@ -1,15 +1,20 @@
 ---
 title: "Update outlooktask"
 description: "Change writable properties of an Outlook task."
-author: "angelgolfer-ms"
+author: "mashriv"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Update outlooktask
+# Update outlooktask (deprecated)
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Change writable properties of an Outlook task.
 

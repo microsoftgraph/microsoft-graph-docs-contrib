@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get plannerProgressTaskBoardTaskFormat
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object.
@@ -50,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_plannerprogresstaskboardtaskformat"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/planner/tasks/{id}/progressTaskBoardFormat
 ```
 # [C#](#tab/csharp)

@@ -2,12 +2,14 @@
 title: "List calendars"
 description: "Get all the user's calendars (`/calendars` navigation property), get the calendars from the default calendar group or from a specific calendar group. "
 localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "harini84"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List calendars
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -65,7 +67,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "user_get_calendars"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendars
 ```
 # [C#](#tab/csharp)
@@ -103,6 +105,7 @@ Content-type: application/json
             "name": "Calendar",
             "color": "auto",
             "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
+            "calendarGroupId":null,
             "isDefaultCalendar": true,
             "canShare":true,
             "canViewPrivateItems":true,
@@ -110,6 +113,12 @@ Content-type: application/json
             "isShared":false,
             "isSharedWithMe":false,
             "canEdit":true,
+            "allowedOnlineMeetingProviders": [
+                "teamsForBusiness"
+            ],
+            "defaultOnlineMeetingProvider": "teamsForBusiness",
+            "isTallyingResponses": true,
+            "isRemovable": false,
             "owner":{
                 "name":"Samantha Booth",
                 "address":"samanthab@adatum.onmicrosoft.com"

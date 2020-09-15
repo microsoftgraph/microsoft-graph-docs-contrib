@@ -4,10 +4,12 @@ description: "Open extensions (formerly known as Office 365 data extensions) pro
 localization_priority: Normal
 author: "dkershaw10"
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "extensions"
 ---
 
 # openTypeExtension resource type (open extensions)
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,12 +29,14 @@ Open extensions are supported by the following resources in the corresponding ve
 | [Calendar event](event.md) | GA |
 | Group [calendar event](event.md) | GA |
 | Group conversation thread [post](post.md) | GA |
-| [device](device.md) | GA |
-| [group](group.md) | GA |
-| [message](message.md) | GA |
-| [organization](organization.md) | GA |
+| [Device](device.md) | GA |
+| [Group](group.md) | GA |
+| [Message](message.md) | GA |
+| [Organization](organization.md) | GA |
 | [Personal contact](contact.md) | GA |
-| [user](user.md) | GA |
+| [User](user.md) | GA |
+| [Task](todotask.md)  | Preview only ||
+| [Task list](todotasklist.md)  | Preview only ||
 
 ## Outlook-specific considerations
 
@@ -86,8 +90,7 @@ None
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Post](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.|
-|[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
+|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [contact](contact.md), [event](event.md), [message](message.md), [post](post.md), [todoTask](todotask.md), or [todoTaskList](todotasklist.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.||[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Update openTypeExtension object. |
 |[Delete](../api/opentypeextension-delete.md) | None |Delete openTypeExtension object. |
 

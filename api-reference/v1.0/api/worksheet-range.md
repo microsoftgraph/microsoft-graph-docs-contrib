@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Worksheet: Range
 
+Namespace: microsoft.graph
+
 Gets the range object specified by the address or name.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "worksheet_range"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='A1:B2')
 ```
 # [C#](#tab/csharp)
@@ -105,7 +107,7 @@ If the optional `address` parameter is not specified, this function returns the 
   "blockType": "request",
   "name": "worksheet_range_noaddress"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/range
 ```
 # [C#](#tab/csharp)

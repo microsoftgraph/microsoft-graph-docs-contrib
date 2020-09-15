@@ -4,10 +4,12 @@ description: "Retrieve the properties and relationships of a secureScoreControlP
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
 # List secureScoreControlProfiles
+
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,7 +59,7 @@ The following is an example of the request.
   "name": "securescorecontrolprofiles_list"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles
 ```
 # [C#](#tab/csharp)

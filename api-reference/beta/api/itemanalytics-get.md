@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # Get analytics
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get [itemAnalytics][] about the views that took place under this resource.
@@ -48,7 +50,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
-```http
+```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/analytics
 ```
 # [C#](#tab/csharp)

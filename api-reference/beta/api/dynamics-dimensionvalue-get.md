@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Get dimensionValues
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the properties and relationships of a dimension value object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -24,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```
-GET /financials/companies('{id}')/dimensions('{id}')/dimensionValues('{id}')
+GET /financials/companies/{id}/dimensions/{id}/dimensionValues/{id}
 ```
 
 ## Optional query parameters
@@ -47,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a **dimensionVal
 
 Here is an example of the request.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/dimensions('{id}')/dimensionValues('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/dimensions/{id}/dimensionValues/{id}
 ```
 
 **Response**

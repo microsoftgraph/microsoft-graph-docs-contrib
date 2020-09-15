@@ -3,20 +3,24 @@ title: "Get attachment"
 description: "Read the properties and relationships of an attachment, attached to an event, message, Outlook task, or post."
 localization_priority: Normal
 doc_type: apiPageType
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 ---
 
 # Get attachment
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an attachment, attached to a user [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
+
+Read the properties, relationships, or raw contents of an attachment, attached to a user [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).
 
 An attachment can be one of the following types:
 
 * A file ([fileAttachment](../resources/fileattachment.md) resource).
-* An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource). You can use `$expand` to further get the properties of that item. See an [example](#request-2) below.
+* An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource). You can use `$expand` to further get the properties of that item. See an [example](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message).
 * A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).
 
 All these types of attachment resources are derived from the [attachment](../resources/attachment.md)
@@ -52,7 +56,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-This section shows the HTTP GET request syntax for each of the entities ([event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md)) that support attachments:
+This section shows the HTTP GET request syntax for each of the entities ([event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), and [post](../resources/post.md)) that support attachments:
 
 - To get the properties and relationships of an attachment, specify the attachment ID to index into the **attachments** collection, attached to the specified [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md) instance.
 - If the attachment is a file or Outlook item (contact, event, or message), you can further get the raw contents of the attachment by appending the path segment `/$value` to the request URL.
@@ -143,6 +147,8 @@ Do not supply a request body for this method.
 If successful, the GET method returns a `200 OK` response code. 
 
 If you're getting the properties and relationships of an attachment, the response body includes an [attachment](../resources/attachment.md) object.
+The properties of that type of attachment are returned: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md), 
+or [referenceAttachment](../resources/referenceattachment.md).
 
 If you're getting the raw contents of a file or item attachment, the response body includes the raw value of the attachment.
 
@@ -161,7 +167,7 @@ Here is an example of the request to get the properties of a file attachment on 
   "sampleKeys": ["AAMkAGUzY5QKjAAA=","AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8="]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=
 ```
 # [C#](#tab/csharp)
@@ -212,7 +218,7 @@ Content-type: application/json
 
 #### Request
 
-The first example shows how to get an item attachment on a message. The properties of the **itemAttachment** are returned.
+The next example shows how to get an item attachment on a message. The properties of the **itemAttachment** are returned.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -221,7 +227,7 @@ The first example shows how to get an item attachment on a message. The properti
   "sampleKeys": ["AAMkADA1M-zAAA=","AAMkADA1M-CJKtzmnlcqVgqI="]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
 # [C#](#tab/csharp)
@@ -267,7 +273,7 @@ Content-type: application/json
 ### Example 3: Expand and get the properties of the item attached to a message
 #### Request
 
-The next example shows how to use `$expand` to get the properties of the item (event, message, Outlook task, or post) that is attached to the message. In this example, that item is
+The next example shows how to use `$expand` to get the properties of the item (contact, event, or message) that is attached to the message. In this example, that item is
 a message; the properties of that attached message are also returned.
 
 # [HTTP](#tab/http)
@@ -277,7 +283,7 @@ a message; the properties of that attached message are also returned.
   "sampleKeys": ["AAMkADA1M-zAAA=","AAMkADA1M-CJKtzmnlcqVgqI="]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
 ```
 # [C#](#tab/csharp)
@@ -388,7 +394,7 @@ Here is an example of the request to get a reference attachment on an event.
   "sampleKeys": ["AAMkAGE1M88AADUv0uAAAG=","AAMkAGE1Mg72tgf7hJp0PICVGCc0g="]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments/AAMkAGE1Mg72tgf7hJp0PICVGCc0g=
 ```
 # [C#](#tab/csharp)

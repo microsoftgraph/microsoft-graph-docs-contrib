@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List notebooks
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [notebook](../resources/notebook.md) objects.
@@ -57,7 +59,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_notebooks"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/onenote/notebooks
 ```
 # [C#](#tab/csharp)

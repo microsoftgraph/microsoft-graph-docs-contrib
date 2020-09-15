@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Worksheet: UsedRange
 
+Namespace: microsoft.graph
+
 The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the worksheet is blank, this function will return the top left cell.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -59,7 +61,7 @@ Here is an example of the request.
   "isComposable": true,
   "name": "worksheet_usedrange"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange
 ```
 # [C#](#tab/csharp)
@@ -111,7 +113,7 @@ Here is an example of the request.
   "isComposable": true,
   "name": "worksheet_usedrange_valuesonly"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange(valuesOnly=true)
 ```
 # [C#](#tab/csharp)

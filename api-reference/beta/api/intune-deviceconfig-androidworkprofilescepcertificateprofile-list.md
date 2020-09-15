@@ -1,13 +1,15 @@
 ---
 title: "List androidWorkProfileScepCertificateProfiles"
 description: "List properties and relationships of the androidWorkProfileScepCertificateProfile objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List androidWorkProfileScepCertificateProfiles
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -128,9 +130,6 @@ Content-Length: 2427
   ]
 }
 ```
-
-
-
 
 
 

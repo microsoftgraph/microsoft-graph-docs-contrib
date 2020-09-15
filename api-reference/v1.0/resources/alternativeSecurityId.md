@@ -2,12 +2,14 @@
 title: "alternativeSecurityId resource type"
 description: "For internal use only."
 localization_priority: Normal
-author: ""
+author: "spunukol"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # alternativeSecurityId resource type
+
+Namespace: microsoft.graph
 
 For internal use only. This complex type will be deprecated in the future.
 

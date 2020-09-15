@@ -58,7 +58,7 @@ The server is too busy to handle the incoming request at this moment. Please try
 One or more of the document libraries on the user or group's OneDrive contains more than 5000 OneNote items (notebooks, sections, section groups), and cannot be queried using the API. Please make sure that none of the user or group's document libraries contains more than 5000 OneNote items. See the [OneNote Dev blog](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) for mitigation steps.
 
 ### 10012
-Unable to create or update the entity because the library that contains the notebook requires items to be checked out before they can be edited. For more information, see [Set up a library to require check-out of files](https://support.office.com/en-us/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7).
+Unable to create or update the entity because the library that contains the notebook requires items to be checked out before they can be edited. For more information, see [Set up a library to require check-out of files](https://support.office.com/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7).
 
 Either remove the check-out requirement from the library, or move the notebook.
 
@@ -328,7 +328,7 @@ The context does not specify a valid user ID. One common error is that PUID/CID 
 ### 20166
 The application has issued too many requests on behalf of a user in a short period of time. To help ensure that the OneNote API remains stable and responsive, the API returns a 429 status code and this error when it detects that an application is using too many resources. 
 
-For more information, see [OneNote API throttling and how to avoid it](https://blogs.msdn.com/b/onenotedev/archive/2016/01/13/onenote-api-throttling-and-best-practices.aspx).
+For more information, see [Microsoft Graph service-specific throttling guidance](/graph/throttling#service-specific-limits).
 
 ### 20168
 The video source specified in the request is not supported. See [Supported video sites](onenote-images-files.md#adding-videos) for the current list.
@@ -338,7 +338,7 @@ The video source specified in the request is not supported. See [Supported video
 Something is wrong with the user's account.
 
 ### 30101
-The user account has exceeded its OneDrive quota. See [OneDrive](https://onedrive.live.com/about/en-us/).
+The user account has exceeded its OneDrive quota. See [OneDrive](https://onedrive.live.com/about/).
 
 ### 30102
 Nothing more can be added to the requested section because it has reached its maximum size.
@@ -360,9 +360,9 @@ The user's personal OneDrive for Business could not be retrieved. The following 
 
 | Cause | Resolution |
 |:------|:------|
-| The user's personal site has not been provisioned. | The user should open OneDrive for Business and follow any instructions to provision the site. If this fails, they should contact their Office 365 tenant administrator. |
+| The user's personal site has not been provisioned. | The user should open OneDrive for Business and follow any instructions to provision the site. If this fails, they should contact their Microsoft 365 tenant administrator. |
 | The user's personal site is currently being provisioned. | Try the request later. |
-| The user does not have a valid OneDrive for Business license. | The user should contact their Office 365 tenant administrator. |
+| The user does not have a valid OneDrive for Business license. | The user should contact their Microsoft 365 tenant administrator. |
 | A network issue prevented the request from being successfully sent. | Try the request later. |
 
 ### 30109

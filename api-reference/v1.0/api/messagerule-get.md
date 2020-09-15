@@ -1,13 +1,15 @@
 ---
 title: "Get rule"
 description: "Get the properties and relationships of a messageRule object."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Get rule
+
+Namespace: microsoft.graph
 
 
 Get the properties and relationships of a [messageRule](../resources/messagerule.md) object.
@@ -51,7 +53,7 @@ Here is an example of the request.
   "sampleKeys": ["inbox", "AQAAAJ5dZqA="],
   "name": "get_messagerule"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=
 ```
 # [C#](#tab/csharp)

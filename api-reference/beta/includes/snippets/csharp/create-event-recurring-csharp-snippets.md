@@ -30,16 +30,16 @@ var @event = new Event
 		{
 			Type = RecurrencePatternType.Weekly,
 			Interval = 1,
-			DaysOfWeek = new List<String>()
+			DaysOfWeek = new List<DayOfWeek>()
 			{
-				"Monday"
+				DayOfWeek.Monday
 			}
 		},
 		Range = new RecurrenceRange
 		{
 			Type = RecurrenceRangeType.EndDate,
-			StartDate = "2017-09-04",
-			EndDate = "2017-12-31"
+			StartDate = new Date(2017,9,4),
+			EndDate = new Date(2017,12,31)
 		}
 	},
 	Location = new Location

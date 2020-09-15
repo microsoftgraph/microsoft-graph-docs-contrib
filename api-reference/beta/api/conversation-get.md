@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get conversation
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of conversation object.
@@ -49,7 +51,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_conversation"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}
 ```
 # [C#](#tab/csharp)

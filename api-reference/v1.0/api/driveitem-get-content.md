@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Download the contents of a DriveItem
 
+Namespace: microsoft.graph
+
 Download the contents of the primary stream (file) of a DriveItem. Only driveItems with the **file** property can be downloaded.
 
 ## Permissions
@@ -50,7 +52,7 @@ Here is an example to download a complete file.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "download-item-content", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/content
 ```
 # [C#](#tab/csharp)

@@ -1,13 +1,15 @@
 ---
 title: "Update userExperienceAnalyticsOverview"
 description: "Update the properties of a userExperienceAnalyticsOverview object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update userExperienceAnalyticsOverview
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -51,6 +53,9 @@ The following table shows the properties that are required when you create the [
 |deviceBootPerformanceOverallScore|Int32|The user experience analytics device boot performance overall score.|
 |bestPracticesOverallScore|Int32|The user experience analytics best practices overall score.|
 |insights|[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md) collection|The user experience analytics insights.|
+|state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics overview. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|deviceBootPerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics 'BootPerformance' category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|bestPracticesHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics 'BestPractices' category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
 
@@ -64,7 +69,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOverview
 Content-type: application/json
-Content-length: 522
+Content-length: 741
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -76,13 +81,18 @@ Content-length: 522
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
       "userExperienceAnalyticsMetricId": "User Experience Analytics Metric Id value",
       "insightId": "Insight Id value",
-      "value": [
+      "values": [
         {
-          "@odata.type": "microsoft.graph.insightValueDouble"
+          "@odata.type": "microsoft.graph.insightValueDouble",
+          "value": 1.6666666666666667
         }
-      ]
+      ],
+      "severity": "informational"
     }
-  ]
+  ],
+  "state": "insufficientData",
+  "deviceBootPerformanceHealthState": "insufficientData",
+  "bestPracticesHealthState": "insufficientData"
 }
 ```
 
@@ -91,7 +101,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 571
+Content-Length: 790
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -104,18 +114,20 @@ Content-Length: 571
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
       "userExperienceAnalyticsMetricId": "User Experience Analytics Metric Id value",
       "insightId": "Insight Id value",
-      "value": [
+      "values": [
         {
-          "@odata.type": "microsoft.graph.insightValueDouble"
+          "@odata.type": "microsoft.graph.insightValueDouble",
+          "value": 1.6666666666666667
         }
-      ]
+      ],
+      "severity": "informational"
     }
-  ]
+  ],
+  "state": "insufficientData",
+  "deviceBootPerformanceHealthState": "insufficientData",
+  "bestPracticesHealthState": "insufficientData"
 }
 ```
-
-
-
 
 
 

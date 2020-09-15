@@ -2,12 +2,14 @@
 title: "locationConstraint resource type"
 description: "The conditions stated by a client for the location of a meeting."
 localization_priority: Normal
-author: ""
+author: "harini84"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # locationConstraint resource type
+
+Namespace: microsoft.graph
 
 The conditions stated by a client for the location of a meeting.
 

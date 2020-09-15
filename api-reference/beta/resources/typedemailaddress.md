@@ -4,10 +4,12 @@ description: "Represents the name, email addresses, and their corresponding emai
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "kevinbellinger"
 ---
 
 # typedEmailAddress resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

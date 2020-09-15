@@ -2,12 +2,14 @@
 title: "Get Contract"
 description: "Retrieve the properties and relationships of contract object."
 localization_priority: Normal
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get Contract
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,7 +59,7 @@ If successful, this method returns a `200 OK` response code and [Contract](../re
   "blockType": "request",
   "name": "get_contract"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/contracts/{id}
 ```
 # [C#](#tab/csharp)

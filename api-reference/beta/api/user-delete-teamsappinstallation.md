@@ -9,6 +9,8 @@ ms.prod: "microsoft-teams"
 
 # Uninstall app for user
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Uninstall an [app](../resources/teamsappinstallation.md) from the personal scope of the specified [user](../resources/user.md).
@@ -19,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |User.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegated (work or school account) | TeamsAppInstallation.ReadWriteForUser |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.ReadWrite.All, Directory.ReadWrite.All  |
+|Application | TeamsAppInstallation.ReadWriteForUser.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

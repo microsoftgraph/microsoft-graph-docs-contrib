@@ -2,14 +2,16 @@
 title: "inferenceClassification resource type"
 description: "Classification of a user's messages to enable focus on those that are more relevant or important to the user. "
 localization_priority: Normal
-author: ""
+author: "svpsiva"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # inferenceClassification resource type
 
-Classification of a user's messages to enable focus on those that are more relevant or important to the user. 
+Namespace: microsoft.graph
+
+Classification of a user's messages to enable focus on those that are more relevant or important to the user.
 
 For more information, see [Manage Focused Inbox](manage-focused-inbox.md).
 

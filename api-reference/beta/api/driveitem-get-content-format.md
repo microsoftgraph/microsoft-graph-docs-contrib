@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Download a file in another format
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to retrieve the contents of an item in a specific format.
@@ -57,7 +59,7 @@ The following values are valid for the **format** parameter:
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /drive/items/{item-id}/content?format={format}
 ```
 # [C#](#tab/csharp)

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # applicationTemplate: instantiate
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add an instance of an application from the Azure AD application gallery into your directory.
@@ -19,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Directory.ReadWrite.All |
+| Delegated (work or school account)     | Application.ReadWrite.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Application.ReadWrite.All|
+| Application                            | Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -56,6 +58,9 @@ The following example shows how to call this API.
 ### Request
 
 The following is an example of the request.
+
+> [!NOTE] 
+> You can use this API to instantiate [non-gallery apps](https://docs.microsoft.com/azure/active-directory/manage-apps/add-non-gallery-app). Use the following ID for **applicationTemplate**: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
 # [HTTP](#tab/http)
 <!-- {

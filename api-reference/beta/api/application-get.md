@@ -1,7 +1,7 @@
 ---
 title: "Get application"
-description: "Retrieve the properties and relationships of application object."
-author: "davidmu1"
+description: "Get the properties and relationships of an application object."
+author: "sureshja"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
@@ -9,18 +9,20 @@ doc_type: apiPageType
 
 # Get application
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of application object.
+Get the properties and relationships of an [application](../resources/application.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
+|Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy,  Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -28,21 +30,21 @@ One of the following permissions is required to call this API. To learn more, in
 GET /applications/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required.  |
+| Name           | Description                |
+|:---------------|:---------------------------|
+| Authorization  | Bearer {token}. Required.  |
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [application](../resources/application.md) object in the response body.
-## Example
-##### Request
+If successful, this method returns a `200 OK` response code and an [application](../resources/application.md) object in the response body.
+## Examples
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -50,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_application"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/applications/{id}
 ```
 # [C#](#tab/csharp)
@@ -67,8 +69,10 @@ GET https://graph.microsoft.com/beta/applications/{id}
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -80,31 +84,57 @@ Content-type: application/json
 Content-length: 1044
 
 {
-  "api": {
-    "acceptedAccessTokenVersion": 1,
-    "publishedPermissionScopes": [
-      {
-        "adminConsentDescription": "adminConsentDescription-value",
-        "adminConsentDisplayName": "adminConsentDisplayName-value",
-        "id": "id-value",
-        "isEnabled": true,
-        "type": "type-value",
-        "userConsentDescription": "userConsentDescription-value",
-        "userConsentDisplayName": "userConsentDisplayName-value",
-        "value": "value-value"
-      }
-    ]
-  },
-  "allowPublicClient": true,
-  "applicationAliases": [
-    "applicationAliases-value"
-  ],
-  "createdDateTime": "datetime-value",
-  "installedClients": {
-    "redirectUrls": [
-      "redirectUrls-value"
-    ]
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
+    "id": "03ef14b0-ca33-4840-8f4f-d6e91916010e",
+    "deletedDateTime": null,
+    "isFallbackPublicClient": null,
+    "appId": "631a96bc-a705-4eda-9f99-fdaf9f54f6a2",
+    "applicationTemplateId": null,
+    "identifierUris": [],
+    "createdDateTime": "2019-09-17T19:10:35.2742618Z",
+    "displayName": "Display name",
+    "isDeviceOnlyAuthSupported": null,
+    "groupMembershipClaims": null,
+    "optionalClaims": null,
+    "addIns": [],
+    "publisherDomain": "contoso.onmicrosoft.com",
+    "signInAudience": "AzureADandPersonalMicrosoftAccount",
+    "tags": [],
+    "tokenEncryptionKeyId": null,
+    "api": {
+        "requestedAccessTokenVersion": 2,
+        "acceptMappedClaims": null,
+        "knownClientApplications": [],
+        "oauth2PermissionScopes": [],
+        "preAuthorizedApplications": []
+    },
+    "appRoles": [],
+    "publicClient": {
+        "redirectUris": []
+    },
+    "info": {
+        "termsOfServiceUrl": null,
+        "supportUrl": null,
+        "privacyStatementUrl": null,
+        "marketingUrl": null,
+        "logoUrl": null
+    },
+    "keyCredentials": [],
+    "parentalControlSettings": {
+        "countriesBlockedForMinors": [],
+        "legalAgeGroupRule": "Allow"
+    },
+    "passwordCredentials": [],
+    "requiredResourceAccess": [],
+    "web": {
+        "redirectUris": [],
+        "homePageUrl": null,
+        "logoutUrl": null,
+        "implicitGrantSettings": {
+            "enableIdTokenIssuance": false,
+            "enableAccessTokenIssuance": false
+        }
+    }
 }
 ```
 

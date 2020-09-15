@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # chatMessageMention resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a mention in a [chatMessage](chatmessage.md) entity. The mention can be to a [user](user.md), [team](team.md), bot, or [channel](channel.md). 
@@ -44,7 +46,6 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.chatMessageMention"
 }-->
 
@@ -54,7 +55,6 @@ The following is a JSON representation of the resource.
   "mentionText": "string",
   "mentioned": {"@odata.type": "microsoft.graph.identitySet"}
  }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

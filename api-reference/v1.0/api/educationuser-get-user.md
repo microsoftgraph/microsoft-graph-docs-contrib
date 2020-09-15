@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get user
 
+Namespace: microsoft.graph
+
 Retrieve the simple directory **user** that corresponds to this **educationUser**.
 
 >**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...beta/education/me/schools` resource in this case.
@@ -46,7 +48,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_educationuser"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/me/user
 ```
 # [C#](#tab/csharp)

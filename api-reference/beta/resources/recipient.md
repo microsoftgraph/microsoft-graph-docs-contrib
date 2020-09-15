@@ -4,14 +4,16 @@ description: "Represents information about a user in the sending or receiving en
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "svpsiva"
 ---
 
 # recipient resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents information about a user in the sending or receiving end of an event, message or group post. 
+Represents information about a user in the sending or receiving end of an event, message or group post.
 
 ## Properties
 | Property	   | Type	|Description|

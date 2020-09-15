@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var synchronizationTemplate = new SynchronizationTemplate
 {
 	Id = "Slack",
-	ApplicationId = "{id}",
+	ApplicationId = Guid.Parse("{id}"),
 	FactoryTag = "CustomSCIM"
 };
 

@@ -56,7 +56,7 @@ Using the beta APIs, you can use $filter to return only the groups that have tea
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
 
-> **Note**: $filter on /groups is only available through the beta endpoint. resourceProvisioningOptions is available in v1.0 and beta.
+> **Note**: Filtering groups by resourceProvisioningOptions is only available through the beta endpoint. resourceProvisioningOptions is available in v1.0 and beta.
 
 > **Note**: Certain unused old teams will not be listed. For details, see [known issues](known-issues.md#missing-teams-in-list-all-teams).
 
@@ -86,7 +86,7 @@ Content-length: xxx
                 "Team"
             ],
             "securityEnabled": false,
-            "visibility": "Private",
+            "visibility": "Private"
         },
         {
             "id": "8090c93e-ba7c-433e-9f39-08c7ba07c0b3",
@@ -102,7 +102,7 @@ Content-length: xxx
                 "Team"
             ],
             "securityEnabled": false,
-            "visibility": "Private",
+            "visibility": "Private"
         }
     ]
 }

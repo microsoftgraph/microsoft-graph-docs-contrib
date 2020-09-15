@@ -1,13 +1,15 @@
 ---
 title: "Get macOSGeneralDeviceConfiguration"
 description: "Read properties and relationships of the macOSGeneralDeviceConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get macOSGeneralDeviceConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -36,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3517
+Content-Length: 4994
 
 {
   "value": {
@@ -156,13 +158,49 @@ Content-Length: 3517
     "classroomForceAutomaticallyJoinClasses": true,
     "classroomForceRequestPermissionToLeaveClasses": true,
     "classroomForceUnpromptedAppAndDeviceLock": true,
-    "iCloudBlockActivityContinuation": true
+    "iCloudBlockActivityContinuation": true,
+    "privacyAccessControls": [
+      {
+        "@odata.type": "microsoft.graph.macOSPrivacyAccessControlItem",
+        "displayName": "Display Name value",
+        "identifier": "Identifier value",
+        "identifierType": "path",
+        "codeRequirement": "Code Requirement value",
+        "staticCodeValidation": true,
+        "blockCamera": true,
+        "blockMicrophone": true,
+        "blockScreenCapture": true,
+        "blockListenEvent": true,
+        "speechRecognition": "enabled",
+        "accessibility": "enabled",
+        "addressBook": "enabled",
+        "calendar": "enabled",
+        "reminders": "enabled",
+        "photos": "enabled",
+        "mediaLibrary": "enabled",
+        "fileProviderPresence": "enabled",
+        "systemPolicyAllFiles": "enabled",
+        "systemPolicySystemAdminFiles": "enabled",
+        "systemPolicyDesktopFolder": "enabled",
+        "systemPolicyDocumentsFolder": "enabled",
+        "systemPolicyDownloadsFolder": "enabled",
+        "systemPolicyNetworkVolumes": "enabled",
+        "systemPolicyRemovableVolumes": "enabled",
+        "postEvent": "enabled",
+        "appleEventsAllowedReceivers": [
+          {
+            "@odata.type": "microsoft.graph.macOSAppleEventReceiver",
+            "codeRequirement": "Code Requirement value",
+            "identifier": "Identifier value",
+            "identifierType": "path",
+            "allowed": true
+          }
+        ]
+      }
+    ]
   }
 }
 ```
-
-
-
 
 
 

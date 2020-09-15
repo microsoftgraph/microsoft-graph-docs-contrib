@@ -2,12 +2,14 @@
 title: "List directoryAudits"
 description: "Describes the list method of the directoryAudit resource (entity) from the Microsoft Graph API (beta version)."
 localization_priority: Normal
-author: "davidmu1"
+author: "SarahBar"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List directoryAudits
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,7 +38,7 @@ GET /auditLogs/directoryAudits
 
 This method supports the following OData query parameters to help customize the response. For details about how to use this parameters, see [OData query parameters](/graph/query_parameters).
 
-|Name     |Description                            |Example|
+|Parameter     |Description                            |Example|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](/graph/query-parameters#filter-parameter)|Filters results (rows). |`/auditLogs/directoryAudits?$filter=createdDateTime le 2018-01-24`<br>`/auditLogs/directoryAudits?$filter=targetResources/any(x: startswith(x/displayName, 'def'))` |
 |[$top](/graph/query-parameters#top-parameter)|Sets the page size of results.|`/auditLogs/directoryAudits?$top=1`|
@@ -44,7 +46,7 @@ This method supports the following OData query parameters to help customize the 
 
 ### Attributes supported by $filter parameter
 
-|Attribute Name |Supported operators|
+|Attribute        |Supported operators|
 |:----------------|:------|
 |activityDisplayName| eq, startswith|
 |activityDateTime| eq, ge, le|
@@ -53,7 +55,7 @@ This method supports the following OData query parameters to help customize the 
 |initiatedBy/user/displayName| eq|
 |initiatedBy/user/userPrincipalName| eq, startswith|
 |initiatedBy/app/appId| eq|
-|initiatedBy/app/appDisplayName| eq|
+|initiatedBy/app/displayName| eq|
 |targetResources/any(t: t/id)| eq|
 |targetResources/any(t:t/displayName)| eq, startswith|
 
@@ -83,7 +85,7 @@ Here is an example of the request.
   "name": "get_directoryaudits"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/directoryAudits
 ```
 # [C#](#tab/csharp)

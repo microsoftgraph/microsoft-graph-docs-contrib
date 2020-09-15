@@ -3,11 +3,13 @@ title: "Get endpoint"
 description: "Retrieve the properties and relationships of a specific endpoint object."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
+author: "yyuank"
 ---
 
 # Get endpoint
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,16 +37,15 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required.|
-| Content-Type   | Application/Json |
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [Endpoint](../resources/endpoint.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [Endpoint](../resources/endpoint.md) object in the response body.
 ## Example
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -52,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [Endpoint](../re
   "blockType": "request",
   "name": "get_endpoint"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 ```
 # [C#](#tab/csharp)
@@ -69,8 +70,9 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 
 ---
 
-##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+Here is an example of the response.
+>Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -3,11 +3,13 @@ title: "physicalOfficeAddress resource type"
 description: "Represents the business address of a resource such as a contact or event."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "dkershaw10"
 ---
 
 # physicalOfficeAddress resource type
+
+Namespace: microsoft.graph
 
 Represents the business address of a resource such as an organizational contact.
 

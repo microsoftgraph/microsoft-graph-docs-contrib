@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List applicationTemplates
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [applicationTemplate](../resources/applicationtemplate.md) objects from the Azure AD application gallery.
@@ -68,7 +70,7 @@ The following is an example of the request.
   "name": "get_applicationtemplates"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/applicationTemplates
 ```
 # [C#](#tab/csharp)

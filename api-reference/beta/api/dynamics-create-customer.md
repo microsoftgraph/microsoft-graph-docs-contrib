@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Create customers
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a customer object in Dynamics 365 Business Central.
 
 ## Permissions
@@ -23,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```
-POST /financials/companies('{id}')/customers
+POST /financials/companies/{id}/customers
 ```
 
 ## Optional query parameters
@@ -48,7 +53,7 @@ If successful, this method returns ```201 Created``` response code and a **custo
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/customers
+POST https://graph.microsoft.com/beta/financials/companies/{id}/customers
 Content-type: application/json
 
 {

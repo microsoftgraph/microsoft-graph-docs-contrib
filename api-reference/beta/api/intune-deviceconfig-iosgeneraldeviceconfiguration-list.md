@@ -1,13 +1,15 @@
 ---
 title: "List iosGeneralDeviceConfigurations"
 description: "List properties and relationships of the iosGeneralDeviceConfiguration objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List iosGeneralDeviceConfigurations
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -59,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11698
+Content-Length: 11930
 
 {
   "value": [
@@ -204,6 +206,8 @@ Content-Length: 11698
       "kioskModeBlockSleepButton": true,
       "kioskModeAllowTouchscreen": true,
       "kioskModeBlockTouchscreen": true,
+      "kioskModeEnableVoiceControl": true,
+      "kioskModeAllowVoiceControlModification": true,
       "kioskModeAllowVoiceOverSettings": true,
       "kioskModeAllowVolumeButtons": true,
       "kioskModeBlockVolumeButtons": true,
@@ -332,6 +336,9 @@ Content-Length: 11698
       "airPrintBlockCredentialsStorage": true,
       "airPrintForceTrustedTLS": true,
       "airPrintBlockiBeaconDiscovery": true,
+      "filesNetworkDriveAccessBlocked": true,
+      "filesUsbDriveAccessBlocked": true,
+      "wifiPowerOnForced": true,
       "blockSystemAppRemoval": true,
       "vpnBlockCreation": true,
       "appRemovalBlocked": true,
@@ -343,19 +350,16 @@ Content-Length: 11698
       "contactsAllowManagedToUnmanagedWrite": true,
       "contactsAllowUnmanagedToManagedRead": true,
       "cellularBlockPersonalHotspotModification": true,
-      "siriDisableServerLogging": true,
       "continuousPathKeyboardBlocked": true,
       "findMyDeviceInFindMyAppBlocked": true,
       "findMyFriendsInFindMyAppBlocked": true,
-      "wiFiBlockPowerModification": true,
-      "iTunesBlocked": true
+      "iTunesBlocked": true,
+      "sharedDeviceBlockTemporarySessions": true,
+      "kioskModeAppType": "appStoreApp"
     }
   ]
 }
 ```
-
-
-
 
 
 

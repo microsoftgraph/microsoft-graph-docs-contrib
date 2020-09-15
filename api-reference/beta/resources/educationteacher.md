@@ -9,16 +9,21 @@ doc_type: resourcePageType
 
 # educationTeacher resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.
 
+> [!IMPORTANT]
+> When using Delegated permission scopes, Graph will only return the `externalId` properties. All other properties require Application scopes.
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|externalId|String| ID of the teacher in the source system.|
-|teacherNumber|String|Teacher number.|
+
+| Property      | Type   | Description                                  |
+| :------------ | :----- | :------------------------------------------- |
+| externalId    | String | Id of the Teacher in external source system. |
+| teacherNumber | String | Teacher number.                              |
 
 ## JSON representation
 
@@ -37,7 +42,6 @@ The following is a JSON representation of the resource.
   "externalId": "String",
   "teacherNumber": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

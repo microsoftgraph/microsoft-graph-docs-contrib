@@ -9,9 +9,12 @@ doc_type: resourcePageType
 
 # conversationMember resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a user in a [chat](chat.md) or a [channel](channel.md).
+See also [aadUserConversationMember](aaduserconversationmember.md).
 
 ## Methods
 

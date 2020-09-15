@@ -4,10 +4,12 @@ description: "Contains stateful information about the cloud application (destina
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
 # cloudAppSecurityState resource type
+
+Namespace: microsoft.graph
 
 Contains stateful information about the cloud application (destinationServiceName, destinationServiceIp).
 

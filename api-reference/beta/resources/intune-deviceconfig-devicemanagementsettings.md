@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementSettings resource type"
 description: "Not yet documented"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementSettings resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -18,7 +20,7 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceComplianceCheckinThresholdDays|Int32|The number of days a device is allowed to go without checking in to remain compliant. Valid values 0 to 120|
+|deviceComplianceCheckinThresholdDays|Int32|The number of days a device is allowed to go without checking in to remain compliant.|
 |isScheduledActionEnabled|Boolean|Is feature enabled or not for scheduled action for rule.|
 |secureByDefault|Boolean|Device should be noncompliant when there is no compliance policy targeted when this is true|
 |enhancedJailBreak|Boolean|Is feature enabled or not for enhanced jailbreak detection.|
@@ -26,6 +28,8 @@ Not yet documented
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|The Derived Credential Provider to use for this account. Possible values are: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
 |derivedCredentialUrl|String|The Derived Credential Provider self-service URI.|
 |androidDeviceAdministratorEnrollmentEnabled|Boolean|The property to determine if Android device administrator enrollment is enabled for this account.|
+|ignoreDevicesForUnsupportedSettingsEnabled|Boolean|The property to determine whether to ignore unsupported compliance settings on certian models of devices.|
+|enableLogCollection|Boolean|Determines whether the log collection feature should be available for use.|
 
 ## Relationships
 None
@@ -47,7 +51,9 @@ Here is a JSON representation of the resource.
   "deviceInactivityBeforeRetirementInDay": 1024,
   "derivedCredentialProvider": "String",
   "derivedCredentialUrl": "String",
-  "androidDeviceAdministratorEnrollmentEnabled": true
+  "androidDeviceAdministratorEnrollmentEnabled": true,
+  "ignoreDevicesForUnsupportedSettingsEnabled": true,
+  "enableLogCollection": true
 }
 ```
 

@@ -1,13 +1,15 @@
 ---
 title: "List administrativeUnits"
 description: "Retrieve a list of administrativeUnit objects."
-author: "davidmu1"
+author: "anandyadavMSFT"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List administrativeUnits
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_administrativeunits"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/administrativeUnits
 ```
 # [C#](#tab/csharp)

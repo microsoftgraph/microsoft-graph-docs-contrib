@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/auditLogs/directoryProvisioning')
+let res = await client.api('/auditLogs/provisioning')
 	.version('beta')
 	.get();
 

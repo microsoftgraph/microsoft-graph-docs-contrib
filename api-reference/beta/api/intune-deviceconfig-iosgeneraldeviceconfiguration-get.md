@@ -1,13 +1,15 @@
 ---
 title: "Get iosGeneralDeviceConfiguration"
 description: "Read properties and relationships of the iosGeneralDeviceConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get iosGeneralDeviceConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -36,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11114
+Content-Length: 11336
 
 {
   "value": {
@@ -207,6 +209,8 @@ Content-Length: 11114
     "kioskModeBlockSleepButton": true,
     "kioskModeAllowTouchscreen": true,
     "kioskModeBlockTouchscreen": true,
+    "kioskModeEnableVoiceControl": true,
+    "kioskModeAllowVoiceControlModification": true,
     "kioskModeAllowVoiceOverSettings": true,
     "kioskModeAllowVolumeButtons": true,
     "kioskModeBlockVolumeButtons": true,
@@ -335,6 +339,9 @@ Content-Length: 11114
     "airPrintBlockCredentialsStorage": true,
     "airPrintForceTrustedTLS": true,
     "airPrintBlockiBeaconDiscovery": true,
+    "filesNetworkDriveAccessBlocked": true,
+    "filesUsbDriveAccessBlocked": true,
+    "wifiPowerOnForced": true,
     "blockSystemAppRemoval": true,
     "vpnBlockCreation": true,
     "appRemovalBlocked": true,
@@ -346,18 +353,15 @@ Content-Length: 11114
     "contactsAllowManagedToUnmanagedWrite": true,
     "contactsAllowUnmanagedToManagedRead": true,
     "cellularBlockPersonalHotspotModification": true,
-    "siriDisableServerLogging": true,
     "continuousPathKeyboardBlocked": true,
     "findMyDeviceInFindMyAppBlocked": true,
     "findMyFriendsInFindMyAppBlocked": true,
-    "wiFiBlockPowerModification": true,
-    "iTunesBlocked": true
+    "iTunesBlocked": true,
+    "sharedDeviceBlockTemporarySessions": true,
+    "kioskModeAppType": "appStoreApp"
   }
 }
 ```
-
-
-
 
 
 

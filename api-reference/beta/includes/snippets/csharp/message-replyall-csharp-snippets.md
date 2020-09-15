@@ -8,16 +8,12 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var message = new Message
 {
-	Attachments = new List<Attachment>()
+	Attachments = (IMessageAttachmentsCollectionPage)new List<Attachment>()
 	{
-		new Attachment
+		new FileAttachment
 		{
-			AdditionalData = new Dictionary<string, object>()
-			{
-				{"@odata.type","#microsoft.graph.fileAttachment"}
-			},
 			Name = "guidelines.txt",
-			ContentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+			ContentBytes = Encoding.ASCII.GetBytes("bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
 		}
 	}
 };

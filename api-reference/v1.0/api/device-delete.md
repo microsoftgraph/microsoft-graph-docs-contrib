@@ -1,13 +1,15 @@
 ---
 title: "Delete device"
 description: "Delete a registered device."
-author: "davidmu1"
+author: "spunukol"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Delete device
+
+Namespace: microsoft.graph
 
 Delete a registered device.
 

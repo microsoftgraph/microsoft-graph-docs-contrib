@@ -2,12 +2,14 @@
 title: "Icon resource type"
 description: "Represents a cell icon."
 localization_priority: Normal
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # Icon resource type
+
+Namespace: microsoft.graph
 
 Represents a cell icon.
 

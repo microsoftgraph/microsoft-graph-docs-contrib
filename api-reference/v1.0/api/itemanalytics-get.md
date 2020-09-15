@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Get itemAnalytics
 
+Namespace: microsoft.graph
+
 Get [itemAnalytics][] about the views that took place under this resource.
 The **itemAnalytics** resource is a convenient way to get activity stats for `allTime` and the `lastSevenDays`.
 For a custom time range or interval, use the [getActivitiesByInterval][] API.
@@ -62,7 +64,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
-```http
+```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/analytics
 ```
 # [C#](#tab/csharp)

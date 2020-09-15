@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get post
 
+Namespace: microsoft.graph
+
 Get the properties and relationships of a post in a specified thread. You can specify both the parent 
 conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 
@@ -51,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_post"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}
 ```
 # [C#](#tab/csharp)

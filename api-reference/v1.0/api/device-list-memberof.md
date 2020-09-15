@@ -1,13 +1,15 @@
 ---
 title: "List device groups"
 description: "Get groups that this device is a direct member of. This operation is not transitive."
-author: "davidmu1"
+author: "spunukol"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List device groups
+
+Namespace: microsoft.graph
 
 Get groups that this device is a direct member of. This operation is not transitive.
 
@@ -20,6 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All, Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +56,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_device_memberof"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf
 ```
 # [C#](#tab/csharp)

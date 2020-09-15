@@ -1,13 +1,15 @@
 ---
 title: "List group settings"
 description: "Retrieve a list of group setting objects."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List group settings
+
+Namespace: microsoft.graph
 
 Retrieve a list of group setting objects.
 
@@ -57,7 +59,7 @@ If successful, this method returns a `200 OK` response code and collection of [g
   "blockType": "request",
   "name": "get_groupsettings"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groupSettings
 ```
 # [C#](#tab/csharp)

@@ -14,7 +14,7 @@ var educationAssignment = new EducationAssignment
 		ContentType = BodyType.Text,
 		Content = "Read chapters 1 through 3"
 	},
-	DueDateTime = "2014-02-01T00:00:00Z"
+	DueDateTime = DateTimeOffset.Parse("2014-02-01T00:00:00Z")
 };
 
 await graphClient.Education.Classes["11021"].Assignments["19002"]

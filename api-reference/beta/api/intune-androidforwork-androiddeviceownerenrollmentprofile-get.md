@@ -1,13 +1,15 @@
 ---
 title: "Get androidDeviceOwnerEnrollmentProfile"
 description: "Read properties and relationships of the androidDeviceOwnerEnrollmentProfile object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get androidDeviceOwnerEnrollmentProfile
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -34,7 +36,7 @@ GET /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwnerEn
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -61,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 858
+Content-Length: 911
 
 {
   "value": {
@@ -70,6 +72,7 @@ Content-Length: 858
     "id": "a8d0245e-245e-a8d0-5e24-d0a85e24d0a8",
     "displayName": "Display Name value",
     "description": "Description value",
+    "enrollmentMode": "corporateOwnedFullyManaged",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "tokenValue": "Token Value value",
@@ -88,9 +91,6 @@ Content-Length: 858
   }
 }
 ```
-
-
-
 
 
 
