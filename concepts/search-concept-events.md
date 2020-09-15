@@ -10,8 +10,7 @@ ms.prod: "search"
 
 You can use the Microsoft Search API to search for events in a user’s primary calendar. The user identity for the search is based on the auth token.
 
->[!WARNING]
->The API Schema has changed : some properties in the request and response are deprecated. See [more details here](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#schema-change-deprecation-warning). The samples below use the up to date schema.
+[!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
 ## Example
 
