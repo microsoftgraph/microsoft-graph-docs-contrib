@@ -26,8 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not Supported.                              |
 | Application                            | OnlineMeetings.ReadWrite.All*                |
 
-> \*[!IMPORTANT]
-> Administrators must create an [application access policy](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to create or get an online meeting with external ID on behalf of that user (user ID specified in the request path).
+> [!IMPORTANT]
+> \* Administrators must create an [application access policy](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to create or get an online meeting with external ID on behalf of that user (user ID specified in the request path).
 
 ## HTTP request
 
