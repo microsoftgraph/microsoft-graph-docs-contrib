@@ -1321,7 +1321,7 @@ Possible values for user account types (group membership), per Windows definitio
 | proposed              | 1     | Connected Organizations that are automatically created by the system have this state value. They are not included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.   |
 | unknownFutureValue    | 2     | A sentinel member.                                                                                                                                                                                                 |
 
-### userFlowAttributeDataType values
+### identityUserFlowAttributeDataType values
 
 | Member                | Value | Description                         |
 |:----------------------|:------|:------------------------------------|
@@ -1331,7 +1331,7 @@ Possible values for user account types (group membership), per Windows definitio
 | stringCollection      | 4     | String collection data type         |
 | unknownFutureValue    | 5     | A sentinel member.                  |
 
-### userFlowAttributeType values
+### identityUserFlowAttributeType values
 
 | Member                | Value | Description                                                        |
 |:----------------------|:------|:-------------------------------------------------------------------|

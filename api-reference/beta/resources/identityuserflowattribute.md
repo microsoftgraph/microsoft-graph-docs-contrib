@@ -21,11 +21,11 @@ Configuring user flow attributes in your Azure Active Directory or Azure AD B2C 
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/userflowattributes-list.md)|identityUserFlowAttributes collection|Retrieve all built in and custom user flow attributes.|
-|[Create](../api/userflowattribute-post-userflowattributes.md)|identityUserFlowAttribute|Create a new `custom user flow attribute`.|
-|[Get](../api/userflowattributes-get.md) |identityUserFlowAttribute|Retrieve properties of a user flow attribute.|
-|[Update](../api/userflowattributes-update.md)|None|Update a `custom user flow attribute`.|
-|[Delete](../api/userflowattributes-delete.md)|None|Delete a `custom user flow attribute`.|
+|[List](../api/identityuserflowattribute-list.md)|identityUserFlowAttributes collection|Retrieve all built in and custom user flow attributes.|
+|[Create](../api/identityuserflowattribute-post-userflowattributes.md)|identityUserFlowAttribute|Create a new `custom user flow attribute`.|
+|[Get](../api/identityuserflowattribute-get.md) |identityUserFlowAttribute|Retrieve properties of a user flow attribute.|
+|[Update](../api/identityuserflowattribute-update.md)|None|Update a `custom user flow attribute`.|
+|[Delete](../api/identityuserflowattribute-delete.md)|None|Delete a `custom user flow attribute`.|
 
 ## Properties
 

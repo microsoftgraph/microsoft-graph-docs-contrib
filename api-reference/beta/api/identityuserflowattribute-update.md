@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [identityUserFlowAttribute](../resources/userflowattributes.md) object. Only custom user flow attributes can be updated.
+Update the properties of a [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object. Only custom user flow attributes can be updated.
 
 ## Permissions
 
@@ -47,7 +47,7 @@ PATCH /userFlowAttributes/{id}
 
 ## Request body
 
-In the request body, provide a JSON object with one or more properties that need to be updated for a [userFlowAttribute](../resources/userflowattributes.md) object.
+In the request body, provide a JSON object with one or more properties that need to be updated for a [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object.
 
 ### userFlowAttributes object
 

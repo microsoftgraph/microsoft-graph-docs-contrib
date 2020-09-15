@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [identityUserFlowAttribute](../resources/userflowattributes.md) object.
+Create a new [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object.
 
 ## Permissions
 
@@ -47,7 +47,7 @@ POST /identity/userFlowAttributes
 
 ## Request body
 
-In the request body, provide a JSON representation of [userFlowAttribute](../resources/userflowattributes.md).
+In the request body, provide a JSON representation of [identityUserFlowAttribute](../resources/identityuserflowattribute.md).
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|

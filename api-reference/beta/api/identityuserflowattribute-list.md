@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [identityUserFlowAttribute](../resources/userflowattributes.md) objects.
+Retrieve a list of [identityUserFlowAttribute](../resources/identityuserflowattribute.md) objects.
 
 ## Permissions
 
@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [userFlowAttributes](../resources/userflowattributes.md)  objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [identityUserFlowAttribute](../resources/identityuserflowattribute.md)  objects in the response body.
 
 ## Example
 

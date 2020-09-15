@@ -1,19 +1,19 @@
 ---
-title: "Get identityUserFlowAttribute"
-description: "Retrieve the properties and relationships of an identityUserFlowAttribute object."
+title: "Delete identityUserFlowAttribute"
+description: "Delete an identityUserFlowAttribute."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Get identityUserFlowAttribute
+# Delete identityUserFlowAttribute
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [identityUserFlowAttribute](../resources/userflowattributes.md).
+Delete an [identityUserFlowAttribute](../resources/identityuserflowattribute.md). Only custom user flow attributes can be deleted.
 
 ## Permissions
 
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
+|Delegated (work or school account)|IdentityUserFlow.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.ReadWrite.All|
 
 The work or school account needs to belong to one of the following roles:
 
@@ -33,9 +33,8 @@ The work or school account needs to belong to one of the following roles:
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
-GET /identity/userFlowAttributes/{id}
+DELETE /identity/userFlowAttributes/{id}
 ```
 
 ## Request headers
@@ -50,9 +49,9 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a JSON representation of the [userFlowAttribute](../resources/userflowattributes.md) in the response body.
+If successful, this method returns `204 No Content` response code.
 
-## Examples
+## Example
 
 ### Request
 
@@ -60,33 +59,26 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_userFlowAttributes"
+  "name": "delete_userFlowAttributes"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/userFlowAttributes/{id}
+DELETE https://graph.microsoft.com/beta/identity/userFlowAttributes/{id}
 ```
 
 ### Response
 
 The following is an example of the response.
 
+**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.identityUserFlowAttribute"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "id": "City",
-    "displayName": "City",
-    "description": "Your city",
-    "userFlowAttributeType": "builtIn",
-    "dataType": "String"
+  "truncated": true
 }
+-->
+
+``` http
+HTTP/1.1 204 No Content
 ```

@@ -1,19 +1,19 @@
 ---
-title: "Delete identityUserFlowAttribute"
-description: "Delete an identityUserFlowAttribute."
+title: "Get identityUserFlowAttribute"
+description: "Retrieve the properties and relationships of an identityUserFlowAttribute object."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Delete identityUserFlowAttribute
+# Get identityUserFlowAttribute
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [identityUserFlowAttribute](../resources/userflowattributes.md). Only custom user flow attributes can be deleted.
+Retrieve the properties and relationships of a [identityUserFlowAttribute](../resources/identityuserflowattribute.md).
 
 ## Permissions
 
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityUserFlow.ReadWrite.All|
+|Delegated (work or school account)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
 The work or school account needs to belong to one of the following roles:
 
@@ -33,8 +33,9 @@ The work or school account needs to belong to one of the following roles:
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
-DELETE /identity/userFlowAttributes/{id}
+GET /identity/userFlowAttributes/{id}
 ```
 
 ## Request headers
@@ -49,9 +50,9 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code.
+If successful, this method returns a `200 OK` response code and a JSON representation of the [identityUserFlowAttribute](../resources/identityuserflowattribute.md) in the response body.
 
-## Example
+## Examples
 
 ### Request
 
@@ -59,26 +60,33 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_userFlowAttributes"
+  "name": "get_userFlowAttributes"
 }
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/userFlowAttributes/{id}
+GET https://graph.microsoft.com/beta/identity/userFlowAttributes/{id}
 ```
 
 ### Response
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
-
 <!-- {
   "blockType": "response",
-  "truncated": true
-}
--->
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityUserFlowAttribute"
+} -->
 
-``` http
-HTTP/1.1 204 No Content
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "id": "City",
+    "displayName": "City",
+    "description": "Your city",
+    "userFlowAttributeType": "builtIn",
+    "dataType": "String"
+}
 ```
