@@ -87,7 +87,8 @@ param1=value&param2=another%20value
 ```
 
 ### Viewers
-Note: This parameter is deprecated and will not be published to the v1.0 endpoint.
+
+>**Note:** This parameter is deprecated and will not be made available on the v1.0 endpoint.
 
 The following values are allowed for the **viewer** parameter.
 
@@ -98,13 +99,13 @@ The following values are allowed for the **viewer** parameter.
 | `office`   | Use the web version of Office to render the file. Only valid for Office documents.
 
 ### Chrome vs chromeless
-Note: This parameter is deprecated and will not be published to the v1.0 endpoint.
+>**Note:** This parameter is deprecated and will not be made available on the v1.0 endpoint.
 
 If `chromeless` is true, the preview will be a bare rendering of the file.
 Otherwise, there may be additional toolbars/buttons displayed for interacting with the document/view.
 
 ### View/edit
-Note: This parameter is deprecated and will not be published to the v1.0 endpoint.
+>**Note:** This parameter is deprecated and will not be made available on the v1.0 endpoint.
 
 If `allowEdit` is true, the document can be modified by user interaction with the embedded preview.
 This capability may not be available for all preview apps or file types.
