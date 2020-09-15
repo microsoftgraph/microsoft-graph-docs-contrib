@@ -1191,7 +1191,7 @@ The *CreatedByApp* constraint associated with this permission indicates that the
 |_OnlineMeetings.ReadWrite.All_|Read Online Meeting details from the app|Allows an app to create, read online meetings without a signed-in user.|Yes|
 
 > **Important**
-Administrators can configure [application access policy](cloud-communication-online-meeting-application-access-policy.md) to allow app to access online meeting on behalf of a user.
+Administrators can configure [application access policy](cloud-communication-online-meeting-application-access-policy.md) to allow apps to access online meetings on behalf of a user.
 
 ### Example usage
 
