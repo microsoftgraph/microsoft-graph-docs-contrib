@@ -64,9 +64,7 @@ Control pagination of the search results by specifying the following two propert
 Note the following limits if you're searching the **event** or **message** entity:
 
 - **from** must start at zero in the first page request; otherwise, the request results in an HTTP 400 `Bad request`.
-- The maximum results per page (**size**) is 200.
-- The maximum total number of items that can be returned by paginating is 1000.
-- Going beyond the limits returns a best effort response. The request does not result in an HTTP 400.
+- The maximum results per page (**size**) is 25 for **message** and **events**. There is no cap for SharePoint or OneDrive items, but a reasonable page size is 200. Larger page size will incur higher latencies.
 
 Best practices:
 
@@ -82,7 +80,7 @@ Best practices:
 
 ## Get the most relevant emails
 
-When searching the **message** entity, specifying **enableTopResults** as `true` returns a hybrid list of messages: the first three messages in the response are sorted by relevance; the remaining messages are sorted by date.
+When searching the **message** entity, specifying **enableTopResults** as `true` returns a hybrid list of messages: the first three messages in the response are sorted by relevance; the remaining messages are sorted by datetime.
 
 ## Get selected properties
 
@@ -92,7 +90,7 @@ For all these entity types, this will enable to trim down the fields returned in
 
 For **externalItem** and **listItem** entity, they are the only entities which enable you to retrieve extended fields configured in the schema. For example, if you created a field for **externalItem** in the search schema, or if you have a custom column on a **listItem**, you will be able to retrieve these properties from search. You will not be able to retrieve the extended properties from all other entities. If you need to retrieve an extended property on a file, then you will have to specify the listItem type in the request to do so.
 
-if the **fields** don't exist, they will be returned as empty in the **fields** in the response.
+if the **fields** specified in the request are not present in the schema, they will be either be returned as empty in the **fields** in the response, or won't be returned in th response. Invalid fields in the request are silently ignored.
 
 ## Keyword Query Language (KQL) support
 
@@ -106,15 +104,16 @@ Depending on the entity type, the searchable properties vary. For details, see:
 ## Sort search results
 
 Search results in the response are sorted with the following default sort order :
-  - **message** and **event** are sorted by date
-  - All SharePoint, OneDrive and Connectors types are sorted by relevance
+
+- **message** and **event** are sorted by date
+- All SharePoint, OneDrive and Connectors types are sorted by relevance
 
 The search API call let you customize the search order by specifying the **sortProperties** on the [searchRequest](./searchrequest.md).
 You will be able to specify a list one or many sortable properties, and the sort order.
 
 Note that sorting results is currently only supported on the following SharePoint and OneDrive types : [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md)
 
-The properties on which the sort clause are applied need to be sortable in the SharePoint [search schema](https://docs.microsoft.com/sharepoint/manage-search-schema). If the property is not sortable, the response will return a Bad Request. Note that **relevance** is not a valid [sortProperty](sortproperty.md) name.
+The properties on which the sort clause are applied need to be sortable in the SharePoint [search schema](https://docs.microsoft.com/sharepoint/manage-search-schema). If the property specified in the request is not sortable or does not exist, the response will return a Bad Request. Note that **relevance** is not a valid [sortProperty](sortproperty.md) name.
 
 When specifying a the [sortProperty](sortproperty.md) name, you can either provide the property name from the Microsoft Graph type (ex : [driveItem](driveitem.md)), or the name of the managed property in the search index.
 
@@ -126,11 +125,11 @@ Aggregations (aka Refiners in the SharePoint semantic) are a very popular way to
 
 In the [searchRequest](./searchrequest.md), you are able to express which aggregations should be returned, in addition to the search results. The description of each aggregation is defined in the the [aggregationOption](./aggregationoption.md), which specifies on which property the aggregation should be computed, the number of [searchBucket](searchBucket.md) to be returned in the response.
 
+The properties on which the aggregation is requested need to be refinable in the SharePoint [search schema](https://docs.microsoft.com/sharepoint/manage-search-schema). If the property specified is not refinable or does not exist, the response will return a Bad Request.
+
 Once the response is returned containing the collection of [searchBucket](searchBucket.md), it is possible to refine the search request to only the matching elements contained in one [searchBucket](searchBucket.md). This is achieved by passing back the  **aggregationsFilterToken** value in the subsequent [searchRequest](./searchrequest.md)  **aggregationFilters**
 
-Aggregations are currently only supported on the following SharePoint and OneDrive types : [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md). They will soon be supported for Graph Connectors[externalItem](externalItem.md) refinable properties.
-
-The properties on which the aggregation is requested need to be refinable in the SharePoint [search schema](https://docs.microsoft.com/sharepoint/manage-search-schema). If the property is not sortable, the response will return a Bad Request. Note that **relevance** is a valid [sortProperty](sortproperty.md) name.
+Aggregations are currently only supported on the following SharePoint and OneDrive types : [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md). They will soon be supported for Graph Connectors[externalItem](externalItem.md)' refinable properties.
 
 This [page](/graph/search-concept-aggregation) provides several examples how to use aggregation to enhance search results, and to narrow down search results.
 
@@ -153,7 +152,7 @@ Any combination involving **messages**, **events**, Sharepoint and OneDrive type
 
 - The search API does not support custom sort for **message**, **event** or  **externalItem**.
 
-- The search API does not support aggregations for **message**, **event**, **drive**, or **externalItem**.
+- The search API does not support aggregations for **message**, **event**, **site** or **drive**.
 
 ## Schema change deprecation warning
 
