@@ -98,8 +98,8 @@ Content-type: application/json
             "createdDateTime": "2020-09-09T14:27:59Z",
             "lastModifiedDateTime": "2020-09-11T12:02:50Z",
             "status": "InProgress",
-            "descriptionForAdmins": "Test world",
-            "descriptionForReviewers": "Test world",
+            "descriptionForAdmins": "",
+            "descriptionForReviewers": "",
             "createdBy": {
                 "id": "957f1027-c0ee-460d-9269-b8828e59e0fe",
                 "displayName": "MOD Administrator",

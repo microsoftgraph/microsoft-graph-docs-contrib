@@ -21,6 +21,7 @@ Represents an Azure AD [access review](accessreviews-root.md).
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-list.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) collection | Lists every `accessReviewScheduleDefinition`. Does not include associated `accessReviewInstance` instances in listings. |
+|[Get accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Get an `accessReviewScheduleDefinition` with a specific id. |
 
 ## Properties
 | Property                  | Type                                | Required on Create                     | Description |
