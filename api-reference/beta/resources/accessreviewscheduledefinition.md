@@ -25,12 +25,12 @@ Represents an Azure AD [access review](accessreviews-root.md).
 |[Create accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-create.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Create a new `accessReviewScheduleDefinition`. |
 
 ## Properties
-| Property                  | Type                                | Required                     | Description |
+| Property                  | Type                                | Required on Create                     | Description |
 | :-------------------------| :---------------------------------- | :---------- | :---------- |
 | `id`                      |`String`                             | No  | The feature-assigned unique identifier of an access review.|
 | `displayName`             |`String`                             | Yes | Name of access review series.|
-| `createdDateTime`         |`DateTimeOffset`                     | Yes | DateTime when review series was created. |
-| `lastModifiedDateTime`    |`DateTimeOffset`                     | Yes | DateTime when review series was last modified.|
+| `createdDateTime`         |`DateTimeOffset`                     | No | DateTime when review series was created. |
+| `lastModifiedDateTime`    |`DateTimeOffset`                     | No | DateTime when review series was last modified.|
 | `status`                  |`string`                             | No  | This read-only field specifies the status of an accessReview. The typical states include `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`. |
 | `descriptionForAdmins`    |`string`                             | Yes  | Description provided by review creators to provide more context of the review to admins. |
 | `descriptionForReviewers` |`string`                             | Yes  | Description provided  by review creators to provide more context of the review to reviewers. |
@@ -130,13 +130,13 @@ The **accessReviewScheduleSettings** is a complex type representing settings of 
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| `mailNotificationsEnabled`|`Boolean`                | Flag to indicate whether emails are enabled/disabled                |
-| `reminderNotificationsEnabled`|`Boolean`       | Flag to indicate whether reminders are enabled/disabled       |
-| `justificationRequiredOnApproval`|`Boolean` | Flag to indicate whether reviewers are required to provide justification with their decision |
-| `defaultDecisionEnabled`|`Boolean` | Flag to indicate whether auto-review feature is enabled/disabled |
-| `defaultDecision`|`String` | Decision chosen if auto-review featured is enabled. Can be one of "Approve", "Deny", or "Recommendation". |
+| `mailNotificationsEnabled`|`Boolean`                | Flag to indicate whether emails are enabled/disabled.                |
+| `reminderNotificationsEnabled`|`Boolean`       | Flag to indicate whether reminders are enabled/disabled.       |
+| `justificationRequiredOnApproval`|`Boolean` | Flag to indicate whether reviewers are required to provide justification with their decision. |
+| `defaultDecisionEnabled`|`Boolean` | Flag to indicate whether default decision is enabled/disabled when reviewers do not respond. |
+| `defaultDecision`|`String` | Decision chosen if `defaultDecisionEnabled` is enabled. Can be one of "Approve", "Deny", or "Recommendation". |
 | `instanceDurationInDays`|`Int32` | Duration of each recurrence of review (`accessReviewInstance`) in number of days. |
-| `recurrence`|`microsoft.graph.patternedRecurrence` | Detailed settings for Recurrence. Using standard outlook recurrence object.  |
+| `recurrence`|`microsoft.graph.patternedRecurrence` | Detailed settings for recurrence. Using standard outlook recurrence object.  |
 | `autoApplyDecisionsEnabled`|`Boolean` | Flag to indicate whether auto-apply feature is enabled. |
 | `applyActions`|`Collection(microsoft.graph.accessReviewApplyAction)` | Optional field. Describes the  actions to take once a review is complete. `accessReviewApplyAction` is a base complex type that can have different derived types. There are two types that are currently supported: `removeAccessApplyAction` and `disableAndDeleteUserApplyAction`. |
 | `recommendationsEnabled`|`Boolean` | Flag to indicate whether decision recommendations are enabled/disabled. |
