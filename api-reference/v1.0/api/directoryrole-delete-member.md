@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 Remove a member from a directoryRole.
 
+> [!Note]
+> You can use both object ID and template ID of the directoryRole with this API. Template ID of a built-in role is immutable and can be seen in role description on Azure portal. It is also documented [here](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +49,9 @@ Do not supply a request body for this method.
 
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
-## Example
+## Examples
+
+### Example 1: Remove directory role member using role objectId
 
 ##### Request
 
@@ -55,11 +60,57 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_directoryobject_from_directoryrole"
+  "name": "delete_directoryobject_from_directoryrole_objectId"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryRoles/{id}/members/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/directoryRoles/{role-objectId}/members/{user-id}/$ref
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-directoryobject-from-directoryrole-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-directoryobject-from-directoryrole-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-directoryobject-from-directoryrole-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-directoryobject-from-directoryrole-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### Response
+
+Here is an example of the response. 
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Remove directory role member using role templateId
+
+##### Request
+
+Here is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "delete_directoryobject_from_directoryrole_templateId"
+}-->
+
+```http
+DELETE https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId={role-templateId}/members/{user-id}/$ref
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directoryobject-from-directoryrole-csharp-snippets.md)]
