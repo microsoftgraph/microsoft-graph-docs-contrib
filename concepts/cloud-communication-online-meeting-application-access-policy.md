@@ -14,7 +14,7 @@ Administrators who want to allow an application to access online meeting resourc
 
 These steps are specific to online meetings and do not apply to other Microsoft Graph resources.
 
-## Configure ApplicationAccessPolicy
+## Configure application access policy
 
 To configure an application access policy and allow applications to access online meetings with application permissions:
 
