@@ -42,7 +42,7 @@ Alerts from the following providers are available via the Microsoft Graph Securi
 
 \*\* Microsoft Defender Advanced Threat Protection requires additional [user roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) to those required by the Microsoft Graph Security API. Only the users in both Microsoft Defender Advanced Threat Protection and Microsoft Graph Security API roles can have access to the Microsoft Defender Advanced Threat Protection data. Because application-only authentication is not limited by this, we recommend that you use an application-only authentication token.
 
-\*\*\* Azure Advanced Threat Protection (Azure ATP) alerts are available via the Microsoft Cloud App Security integration. This means you will get Azure ATP alerts only if you have joined Unified SecOps and connected Azure ATP into Microsoft Cloud App Security. Learn more about [how to integrate Azure ATP and Microsoft Cloud App Security](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/atp-mcas-integration).
+\*\*\* Azure Advanced Threat Protection (Azure ATP) alerts are available via the Microsoft Cloud App Security integration. This means you will get Azure ATP alerts only if you have joined Unified SecOps and connected Azure ATP into Microsoft Cloud App Security. Learn more about [how to integrate Azure ATP and Microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-mcas-integration).
 
 ## Information protection
 
