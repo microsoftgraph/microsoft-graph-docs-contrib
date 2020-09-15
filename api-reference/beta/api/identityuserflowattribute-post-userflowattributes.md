@@ -59,7 +59,7 @@ In the request body, provide a JSON representation of [identityUserFlowAttribute
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and [userFlowAttribute](../resources/userflowattributes.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `201 Created` response code and [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Examples
 
