@@ -1,5 +1,5 @@
 ---
-title: "List members"
+title: "List members of a directory role"
 description: "Retrieve a list of the users that are assigned to the directory role.  Only users can be assigned to a directory role."
 author: "abhijeetsinha"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# List members
+# List members of a directory role
 
 Namespace: microsoft.graph
 
