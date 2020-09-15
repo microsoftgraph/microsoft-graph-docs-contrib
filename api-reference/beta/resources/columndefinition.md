@@ -5,7 +5,7 @@ ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "sharepoint"
 ---
 # columnDefinition resource type
 

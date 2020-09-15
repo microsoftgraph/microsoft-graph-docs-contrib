@@ -4,7 +4,7 @@ title:  "termColumn resource type"
 description: "The termColumn resource indicates that the column's values contains taxonomy data."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "sharepoint"
 ---
 # termColumn resource type
 

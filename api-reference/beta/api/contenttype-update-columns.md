@@ -1,13 +1,13 @@
 ---
 author: swapnil1993
-title: "Update columns"
+title: "Update content type columns"
 description: "Update a content type column"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
 
-# Update columns
+# Update content type columns
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

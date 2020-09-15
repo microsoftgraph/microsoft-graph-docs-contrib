@@ -1,13 +1,13 @@
 ---
 author: swapnil1993
-title: "Delete columns"
+title: "Delete content type columns"
 description: "Delete a column from a content type"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
 
-# Delete columns
+# Delete content type columns
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
