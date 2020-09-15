@@ -134,6 +134,8 @@ items:
             href: cloud-communications-online-meetings.md
           - name: Choose an online meeting API
             href: choose-online-meeting-api.md
+          - name: Configure application access
+            href: cloud-communication-online-meeting-application-access-policy.md
           - name: Call records
             href: cloud-communications-callrecords.md
           - name: Manage phone numbers for bots
