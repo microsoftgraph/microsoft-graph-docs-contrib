@@ -31,13 +31,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-Using a delegated token
+Request when using a delegated token:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/createOrGet
 ```
 
-Using an application token
+Request when using an application token:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{userId}/onlineMeetings/createOrGet
