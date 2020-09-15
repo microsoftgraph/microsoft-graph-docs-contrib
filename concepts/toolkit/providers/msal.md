@@ -1,13 +1,13 @@
 ---
 title: "MSAL provider"
-description: "The MSAL Provider uses MSAL.js to sign in users and acquire tokens to use with the Microsoft Graph"
+description: "The MSAL provider uses MSAL.js to sign in users and acquire tokens to use with the Microsoft Graph"
 localization_priority: Normal
 author: nmetulev
 ---
 
 # MSAL provider
 
-The MSAL Provider uses [MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) to sign in users and acquire tokens to use with the Microsoft Graph.
+The MSAL provider uses [MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) to sign in users and acquire tokens to use with Microsoft Graph.
 
 To learn more, see [providers](../providers.md).
 
