@@ -3,7 +3,7 @@ title: "Update chatMessage with DLP policy violation"
 description: "Update a chatMessage with a Data Loss Prevention (DLP) policy violation."
 author: "clearab"
 doc_type: apiPageType
-localization_priority: Normal
+localization_priority: Normal 
 ms.prod: "microsoft-teams"
 ---
 
