@@ -13,6 +13,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## September 2020
 
+### Calendar
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added the **hexColor** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity. |
+| Addition | v1.0 | Added the **isDraft** property to the [event](/graph/api/resources/event?view=graph-rest-1.0) entity. |
+
 ### Cloud communications
 
 | **Change type** | **Version**   | **Description**                          |

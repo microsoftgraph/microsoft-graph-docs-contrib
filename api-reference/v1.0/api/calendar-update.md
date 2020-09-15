@@ -115,6 +115,7 @@ Content-type: application/json
     "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
     "canShare":true,
     "canViewPrivateItems":true,
+    "hexColor": "",
     "canEdit":true,
     "allowedOnlineMeetingProviders": [
                 "teamsForBusiness"
