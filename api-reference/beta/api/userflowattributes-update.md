@@ -1,19 +1,19 @@
 ---
-title: "Update userFlowAttributes"
-description: "Update properties of a userFlowAttribute."
+title: "Update identityUserFlowAttribute"
+description: "Update properties of an identityUserFlowAttribute."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Update userFlowAttributes
+# Update identityUserFlowAttribute
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [userFlowAttribute](../resources/userflowattributes.md) object. Only custom user flow attributes can be updated.
+Update the properties of a [identityUserFlowAttribute](../resources/userflowattributes.md) object. Only custom user flow attributes can be updated.
 
 ## Permissions
 

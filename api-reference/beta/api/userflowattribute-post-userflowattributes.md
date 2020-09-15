@@ -1,19 +1,19 @@
 ---
-title: "Create userFlowAttribute"
-description: "Create a new userFlowAttributes object."
+title: "Create identityUserFlowAttribute"
+description: "Create a new identityUserFlowAttribute object."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Create userFlowAttribute
+# Create identityUserFlowAttribute
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [userFlowAttribute](../resources/userflowattributes.md) object.
+Create a new [identityUserFlowAttribute](../resources/userflowattributes.md) object.
 
 ## Permissions
 

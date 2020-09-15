@@ -1,19 +1,19 @@
 ---
-title: "Get userFlowAttribute"
-description: "Retrieve the properties and relationships of a userFlowAttributes object."
+title: "Get identityUserFlowAttribute"
+description: "Retrieve the properties and relationships of an identityUserFlowAttribute object."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Get userFlowAttribute
+# Get identityUserFlowAttribute
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [userFlowAttribute](../resources/userflowattributes.md).
+Retrieve the properties and relationships of a [identityUserFlowAttribute](../resources/userflowattributes.md).
 
 ## Permissions
 

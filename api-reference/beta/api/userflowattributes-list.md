@@ -1,19 +1,19 @@
 ---
-title: "List userFlowAttributes"
-description: "Retrieve a list of userFlowAttributes objects."
+title: "List identityUserFlowAttributes"
+description: "Retrieve a list of identityUserFlowAttribute objects."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List userFlowAttributes
+# List identityUserFlowAttributes
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [userFlowAttributes](../resources/userflowattributes.md) objects.
+Retrieve a list of [identityUserFlowAttribute](../resources/userflowattributes.md) objects.
 
 ## Permissions
 

@@ -1,5 +1,5 @@
 ---
-title: "userFlowAttributes resource type"
+title: "identityUserFlowAttribute resource type"
 description: "Represents user flow attributes in an Azure Active Directory tenant and an Azure AD B2C tenant."
 localization_priority: Priority
 doc_type: resourcePageType
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 author: "jkdouglas"
 ---
 
-# userFlowAttributes resource type
+# identityUserFlowAttribute resource type
 
 Namespace: microsoft.graph
 
@@ -21,9 +21,9 @@ Configuring user flow attributes in your Azure Active Directory or Azure AD B2C 
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/userflowattributes-list.md)|userFlowAttributes collection|Retrieve all built in and custom user flow attributes.|
-|[Create](../api/userflowattribute-post-userflowattributes.md)|userFlowAttribute|Create a new `custom user flow attribute`.|
-|[Get](../api/userflowattributes-get.md) |userFlowAttribute|Retrieve properties of a user flow attribute.|
+|[List](../api/userflowattributes-list.md)|identityUserFlowAttributes collection|Retrieve all built in and custom user flow attributes.|
+|[Create](../api/userflowattribute-post-userflowattributes.md)|identityUserFlowAttribute|Create a new `custom user flow attribute`.|
+|[Get](../api/userflowattributes-get.md) |identityUserFlowAttribute|Retrieve properties of a user flow attribute.|
 |[Update](../api/userflowattributes-update.md)|None|Update a `custom user flow attribute`.|
 |[Delete](../api/userflowattributes-delete.md)|None|Delete a `custom user flow attribute`.|
 
