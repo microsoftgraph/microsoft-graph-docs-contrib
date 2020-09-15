@@ -62,12 +62,9 @@ Here is an example of the request.
   "blockType": "request",
   "name": "list_conversation_members"
 }-->
-
 ```msgraph-interactive
-
 GET https://graph.microsoft.com/v1.0/me/chats/{id}/members
 ```
-
 # [C#](#tab/csharp)
 
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
