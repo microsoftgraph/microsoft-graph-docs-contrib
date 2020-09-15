@@ -57,7 +57,7 @@ If successful, this method returns `204 No Content` response code.
   "name": "create_directoryobject_from_directoryrole_objectId"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directoryRoles/{role-id}/members/$ref
+POST https://graph.microsoft.com/v1.0/directoryRoles/{role-objectId}/members/$ref
 Content-type: application/json
 
 {
@@ -107,7 +107,7 @@ Content-type: text/plain
   "name": "create_directoryobject_from_directoryrole_templateId"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId={role-id}/members/$ref
+POST https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId={role-templateId}/members/$ref
 Content-type: application/json
 
 {
