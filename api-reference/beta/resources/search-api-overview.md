@@ -90,9 +90,9 @@ When searching an entity type, such as **message**, **event**, **drive**, **driv
 
 For all these entity types, this will enable to trim down the fields returned in the response (typically to optimize the over the wire payload).
 
-The **listItem** and **externalItem** entities are the only entities which enable you to retrieve extended fields configured in the schema. You cannot retrieve extended properties from all the other entities. For example, if you created a field for **externalItem** in the search schema, or if you have a custom column on a **listItem**, you can retrieve these properties from search. To retrieve an extended property on a file, specify the **listItem** type in the request. 
+The **listItem** and **externalItem** entities are the only entities which enable you to retrieve extended fields configured in the schema. You cannot retrieve extended properties from all the other entities. For example, if you created a field for **externalItem** in the search schema, or if you have a custom column on a **listItem**, you can retrieve these properties from search. To retrieve an extended property on a file, specify the **listItem** type in the request.
 
-if the **fields** specified in the request are not present in the schema, they will be either be returned as empty in the **fields** in the response, or won't be returned in th response. Invalid fields in the request are silently ignored.
+If the **fields** specified in the request are not present in the schema, they will not be returned in the response. Invalid fields in the request are silently ignored.
 
 ## Keyword Query Language (KQL) support
 
@@ -114,7 +114,7 @@ The [query](../api/search-query.md) method lets you customize the search order b
 
 Note that sorting results is currently only supported on the following SharePoint and OneDrive types : [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md).
 
-The properties on which the sort clause are applied need to be sortable in the SharePoint [search schema](https://docs.microsoft.com/sharepoint/manage-search-schema). If the property specified in the request is not sortable or does not exist, the response will return a `HTTP 400 Bad Request`. Note that **relevance** is not a valid [sortProperty](sortproperty.md) name.
+The properties on which the sort clause are applied need to be sortable in the SharePoint [search schema](https://docs.microsoft.com/sharepoint/manage-search-schema). If the property specified in the request is not sortable or does not exist, the response will return a `HTTP 400 Bad Request`. Note that you cannot specifiy to sort documents by relevance using [sortProperty](sortproperty.md).
 
 When specifying the **name** of a [sortProperty](sortproperty.md) object, you can either use the property name from the Microsoft Graph type (for example, in [driveItem](driveitem.md)), or the name of the managed property in the search index.
 

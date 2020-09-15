@@ -280,7 +280,7 @@ Content-Type: application/json
 ## Known limitations
 
 - Sort is not supported for **message**, **event**, and **externalItem**.
-- Sort by relevance is not valid through request body.
+- Sort by relevance cannot be specified in the **sortProperties**.
 
 ## Next steps
 
