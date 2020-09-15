@@ -211,4 +211,4 @@ Content-Type: application/json
 
 ## Next steps
 
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?preserve-view=true)
