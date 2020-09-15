@@ -115,7 +115,7 @@ Content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_directoryrole_members_objectid"
+  "name": "get_directoryrole_members_templateId"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=23f3b4b4-8a29-4420-8052-e4950273bbda/members
