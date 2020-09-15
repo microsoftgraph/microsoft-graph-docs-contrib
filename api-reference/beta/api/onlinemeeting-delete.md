@@ -28,13 +28,13 @@ Delete an [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## HTTP request
 
-Using a delegated token
+Request when using a delegated token
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
 ```
 
-Using an application token
+Request when using an application token:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
@@ -42,8 +42,8 @@ DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId
 
 > **Note:**
 >
-> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md).
-> - `meetingId` is the **id** of an [onlineMeeting entity](../resources/onlinemeeting.md)
+> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md).
+> - `meetingId` is the **id** of an [onlineMeeting entity](../resources/onlinemeeting.md).
 
 ## Request headers
 | Name          | Description               |
