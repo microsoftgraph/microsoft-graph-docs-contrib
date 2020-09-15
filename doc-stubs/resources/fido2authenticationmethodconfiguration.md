@@ -1,6 +1,6 @@
 ---
 title: "fido2AuthenticationMethodConfiguration resource type"
-description: "**TODO: Add Description**"
+description: "A representation of FIDO2 Authentication Methods policy"
 author: "mmcla"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -57,6 +57,9 @@ The following is a JSON representation of the resource.
   "isAttestationEnforced": "Boolean",
   "keyRestrictions": {
     "@odata.type": "microsoft.graph.fido2KeyRestrictions"
+  },
+  "includeTargets": {
+    "@odata.type": "microsoft.graph.authenticationMethodTarget"
   }
 }
 ```

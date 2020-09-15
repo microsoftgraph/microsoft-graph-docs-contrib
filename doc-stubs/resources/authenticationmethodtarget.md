@@ -1,6 +1,6 @@
 ---
 title: "authenticationMethodTarget resource type"
-description: "**TODO: Add Description**"
+description: "A collection of users or groups enabled to use an authentication method as part of an Authentication Method Policy."
 author: "mmcla"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"

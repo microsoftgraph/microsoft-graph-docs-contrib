@@ -1,6 +1,6 @@
 ---
 title: "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration resource type"
-description: "**TODO: Add Description**"
+description: "A representation of a Passwordless Phone Sign-in with Microsoft Authenticator Authentication Methods policy."
 author: "mmcla"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -49,7 +49,10 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",
   "id": "String (identifier)",
-  "state": "String"
+  "state": "String",
+  "includeTargets": {
+    "@odata.type": "microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget"
+  }
 }
 ```
 
