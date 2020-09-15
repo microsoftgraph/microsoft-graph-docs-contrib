@@ -33,7 +33,9 @@ The signed in user must also be in a directory role that permits them to create 
 POST /identityGovernance/accessReviews/definitions
 ```
 ## Request headers
-None.
+| Name         | Description |
+|:-------------|:------------|
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of an [accessReview](../resources/accessreview.md) object.
