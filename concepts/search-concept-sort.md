@@ -8,14 +8,14 @@ ms.prod: "search"
 
 # Sort search results
 
-You can use the Microsoft Search API to sort search results using a specific property.
+The Microsoft Search API allows sorting search results using a specific property.
 
-Sorting is only supported for SharePoint or OneDrive items.
+Sorting is supported only for SharePoint and OneDrive items.
 The property to be sorted on should be *Sortable* in the search schema.
 
-The default sort order is ascending, and you can change it by setting the ***isDescending** property.
+The default sort order is ascending. Set the **isDescending** property to change it.
 
-## Example : Single-level Sort
+## Example : Single-level sort
 
 ### Request
 
@@ -127,7 +127,7 @@ Content-Type: application/json
 }
 ```
 
-## Example : Multi-level Sort
+## Example : Multi-level sort
 
 ### Request
 
@@ -279,8 +279,8 @@ Content-Type: application/json
 
 ## Known limitations
 
-- Sort is not supported for **messages, events, externalItems**
-- Sort by relevance is not valid thru request body
+- Sort is not supported for **message**, **event**, and **externalItem**.
+- Sort by relevance is not valid through request body.
 
 ## Next steps
 

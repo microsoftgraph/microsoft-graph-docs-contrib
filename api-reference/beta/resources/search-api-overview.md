@@ -16,15 +16,15 @@ You can use the Microsoft Search API to query Microsoft 365 data in your apps.
 Search requests run in the context of the signed-in user, identified using an [access token with delegated permissions](/graph/auth-v2-user).
 
 >[!WARNING]
->The API Schema has changed : some properties in the request and response are deprecated. See [more details here](#schema-change-deprecation-warning).
+>The API schema has changed, with properties in a search request and response being renamed or removed. See [more details](#schema-change-deprecation-warning) about the deprecation.
 
 ## Common use cases
 
-The Microsoft Search API provides a [query](../api/search-query.md) method to search across your data in Microsoft Search, where you pass in the request Body a [searchRequest](searchRequest.md) which defines the specific of your search query.
+The Microsoft Search API provides a [query](../api/search-query.md) method to search across your data in Microsoft Search, where you pass a [searchRequest](searchRequest.md) in the request body, defining the specifics of your search.
 
-This section lists the common use cases, based on the properties and parameters you set in the **query** [searchRequest](searchRequest.md) body.
+This section lists the common use cases of the **query** method, based on the properties and parameters you set in the **query** [searchRequest](searchRequest.md) body.
 
-Search requests run on behalf of the user. Search results are scoped to enforce any access control applied to the items.  For example, in the context of files, permissions on the files are evaluated as part of the search request. Users cannot access more items in a search than they can from the enumeration API.
+Search requests run on behalf of the user. Search results are scoped to enforce any access control applied to the items.  For example, in the context of files, permissions on the files are evaluated as part of the search request. Users cannot access more items in a search than they can otherwise obtain from a corresponding GET operation with the same permissions and access control.
 
 | Use cases | Properties to define in the query request body |
 |:------------------|:---------|
@@ -40,18 +40,18 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 ## Scope search based on entity types
 
 Define the scope of the search request using the **entityTypes** property in the **query** request payload.
-The following table describes the types available to query and any of the permission required to access the data .
+The following table describes the types available to query and the supported permissions to access the data.
 
 | EntityType | Permission scope required to access the items| Source| Comment|
 |:------------------|:---------|:---------|:---------|
-|[message](message.md)|Mail.Read, Mail.ReadWrite| Exchange| emails|
-|[event](event.md) |Calendars.Read, Calendars.ReadWrite| Exchange|calendar events |
-|[driveItem](driveitem.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | files, folders, pages, news |
-|[drive](drive.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint | Document Libraries|
-|[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Lists. Note that Document Libraries will also be returned under **list** |
-|[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | ListItems. Note that Files and folders will also be returned under **listItem** since this is the super class of **driveItem**. In that case |
-|[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites in SharePoint|
-|[externalItem](externalitem.md)|ExternalItem.Read.All| Connectors| All content ingested with the Graph Connectors Platform|
+|[message](message.md)|Mail.Read, Mail.ReadWrite| Exchange Online| Email messages.|
+|[event](event.md) |Calendars.Read, Calendars.ReadWrite| Exchange Online|Calendar events. |
+|[drive](drive.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint | Document libraries.|
+|[driveItem](driveitem.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Files, folders, pages, and news. |
+|[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Lists. Note that document libraries are also returned as lists. |
+|[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | List items. Note that files and folders are also returned as list items; **listItem** is the super class of **driveItem**. |
+|[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites in SharePoint.|
+|[externalItem](externalitem.md)|ExternalItem.Read.All| Microsoft Graph connectors| All content ingested with the Microsoft Graph connectors API.|
 
 ## Page search results
 
@@ -64,7 +64,9 @@ Control pagination of the search results by specifying the following two propert
 Note the following limits if you're searching the **event** or **message** entity:
 
 - **from** must start at zero in the first page request; otherwise, the request results in an HTTP 400 `Bad request`.
-- The maximum results per page (**size**) is 25 for **message** and **events**. There is no cap for SharePoint or OneDrive items, but a reasonable page size is 200. Larger page size will incur higher latencies.
+- The maximum results per page (**size**) is 25 for **message** and **event**. 
+
+There is no upper limit for SharePoint or OneDrive items. A reasonable page size is 200. A larger page size generally incurs higher latency.
 
 Best practices:
 
@@ -80,15 +82,15 @@ Best practices:
 
 ## Get the most relevant emails
 
-When searching the **message** entity, specifying **enableTopResults** as `true` returns a hybrid list of messages: the first three messages in the response are sorted by relevance; the remaining messages are sorted by datetime.
+When searching the **message** entity, specifying **enableTopResults** as `true` returns a hybrid list of messages: the first three messages in the response are sorted by relevance; the remaining messages are sorted by date/time.
 
 ## Get selected properties
 
-When searching each kind of entity type, such as `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`, you can specify the **fields** property to specify the fields to be returned in the response. This is equivalent to the [select parameter](/graph/query-parameters#select-parameter) in the REST calls. For search does not support any of those parameters since the behavior is expressed in the POST Body.
+When searching an entity type, such as **message**, **event**, **drive**, **driveItem**, **list**, **listItem**, **site**, **externalItem**, you can specify the **fields** property to specify the properties to be returned in the response. This is equivalent to the [select parameter](/graph/query-parameters#select-parameter) in the REST calls. For search does not support any of those parameters since the behavior is expressed in the POST Body.
 
 For all these entity types, this will enable to trim down the fields returned in the response (typically to optimize the over the wire payload).
 
-For **externalItem** and **listItem** entity, they are the only entities which enable you to retrieve extended fields configured in the schema. For example, if you created a field for **externalItem** in the search schema, or if you have a custom column on a **listItem**, you will be able to retrieve these properties from search. You will not be able to retrieve the extended properties from all other entities. If you need to retrieve an extended property on a file, then you will have to specify the listItem type in the request to do so.
+The **listItem** and **externalItem** entities are the only entities which enable you to retrieve extended fields configured in the schema. You cannot retrieve extended properties from all the other entities. For example, if you created a field for **externalItem** in the search schema, or if you have a custom column on a **listItem**, you can retrieve these properties from search. To retrieve an extended property on a file, specify the **listItem** type in the request. 
 
 if the **fields** specified in the request are not present in the schema, they will be either be returned as empty in the **fields** in the response, or won't be returned in th response. Invalid fields in the request are silently ignored.
 
@@ -103,35 +105,34 @@ Depending on the entity type, the searchable properties vary. For details, see:
 
 ## Sort search results
 
-Search results in the response are sorted with the following default sort order :
+Search results in the response are sorted in the following default sort order :
 
-- **message** and **event** are sorted by date
-- All SharePoint, OneDrive and Connectors types are sorted by relevance
+- **message** and **event** are sorted by date.
+- All SharePoint, OneDrive and connector types are sorted by relevance.
 
-The search API call let you customize the search order by specifying the **sortProperties** on the [searchRequest](./searchrequest.md).
-You will be able to specify a list one or many sortable properties, and the sort order.
+The [query](../api/search-query.md) method lets you customize the search order by specifying the **sortProperties** on the `requests` parameter, which is a collection of [searchRequest](./searchrequest.md) objects. This allows you to specify a list of one or more sortable properties and the sort order.
 
-Note that sorting results is currently only supported on the following SharePoint and OneDrive types : [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md)
+Note that sorting results is currently only supported on the following SharePoint and OneDrive types : [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md).
 
-The properties on which the sort clause are applied need to be sortable in the SharePoint [search schema](https://docs.microsoft.com/sharepoint/manage-search-schema). If the property specified in the request is not sortable or does not exist, the response will return a Bad Request. Note that **relevance** is not a valid [sortProperty](sortproperty.md) name.
+The properties on which the sort clause are applied need to be sortable in the SharePoint [search schema](https://docs.microsoft.com/sharepoint/manage-search-schema). If the property specified in the request is not sortable or does not exist, the response will return a `HTTP 400 Bad Request`. Note that **relevance** is not a valid [sortProperty](sortproperty.md) name.
 
-When specifying a the [sortProperty](sortproperty.md) name, you can either provide the property name from the Microsoft Graph type (ex : [driveItem](driveitem.md)), or the name of the managed property in the search index.
+When specifying the **name** of a [sortProperty](sortproperty.md) object, you can either use the property name from the Microsoft Graph type (for example, in [driveItem](driveitem.md)), or the name of the managed property in the search index.
 
-This [page](/graph/search-concept-sort) provides several examples how to sort results.
+See [sort search results](/graph/search-concept-sort) for examples that show how to sort results.
 
 ## Refine results using aggregations
 
-Aggregations (aka Refiners in the SharePoint semantic) are a very popular way to enhance a search experience. They provide, in addition to the results, some level of aggregate information on the matching set of search results. For example, you are able to provide information on who are the most represented authors of documents matching the query, or what are the most represented file types, etc.
+Aggregations (also known as refiners in SharePoint) are a very popular way to enhance a search experience. In addition to the results, they provide some level of aggregate information on the matching set of search results. For example, you can provide information on the most represented authors of the documents matching the query, or the most represented file types, etc.
 
-In the [searchRequest](./searchrequest.md), you are able to express which aggregations should be returned, in addition to the search results. The description of each aggregation is defined in the the [aggregationOption](./aggregationoption.md), which specifies on which property the aggregation should be computed, the number of [searchBucket](searchBucket.md) to be returned in the response.
+In the [searchRequest](./searchrequest.md), specify the aggregations that should be returned in addition to the search results. The description of each aggregation is defined in the the [aggregationOption](./aggregationoption.md), which specifies the property on which the aggregation should be computed, and the number of [searchBucket](searchBucket.md) to be returned in the response.
 
-The properties on which the aggregation is requested need to be refinable in the SharePoint [search schema](https://docs.microsoft.com/sharepoint/manage-search-schema). If the property specified is not refinable or does not exist, the response will return a Bad Request.
+The properties on which the aggregation is requested need to be refinable in the SharePoint [search schema](https://docs.microsoft.com/sharepoint/manage-search-schema). If the property specified is not refinable or does not exist, the response returns `HTTP 400 Bad Request`.
 
-Once the response is returned containing the collection of [searchBucket](searchBucket.md), it is possible to refine the search request to only the matching elements contained in one [searchBucket](searchBucket.md). This is achieved by passing back the  **aggregationsFilterToken** value in the subsequent [searchRequest](./searchrequest.md)  **aggregationFilters**
+Once the response is returned containing the collection of [searchBucket](searchBucket.md) objects, it is possible to refine the search request to only the matching elements contained in one [searchBucket](searchBucket.md). This is achieved by passing back the  **aggregationsFilterToken** value in the **aggregationFilters** property of the subsequent [searchRequest](./searchrequest.md).
 
-Aggregations are currently only supported on the following SharePoint and OneDrive types : [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md). They will soon be supported for Graph Connectors[externalItem](externalItem.md)' refinable properties.
+Aggregations are currently only supported on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md). Soon they will be supported for refinable properties in [externalItem](externalItem.md) of Microsoft Graph connectors.
 
-This [page](/graph/search-concept-aggregation) provides several examples how to use aggregation to enhance search results, and to narrow down search results.
+See [refine search results](/graph/search-concept-aggregation) for examples that show using aggregation to enhance and narrow down search results.
 
 ## Error handling
 
@@ -146,7 +147,7 @@ The search API has the following limitations:
 - The **query** method is defined to allow passing a collection of one or more **searchRequest** instances at once. However, the service currently supports only a single [searchRequest](./searchrequest.md) at a time.
 
 - The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. However, currently the only supported combination is for Sharepoint and OneDrive entityTypes : **driveItem**, **drive**, **site**, **list**, **listItem**.
-Any combination involving **messages**, **events**, Sharepoint and OneDrive types , or **externalItem** is currently not supported.  
+Any combinations involving **message**, **event**, Sharepoint and OneDrive types , or **externalItem** are currently not supported.  
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 
