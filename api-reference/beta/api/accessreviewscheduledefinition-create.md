@@ -50,7 +50,7 @@ The following table shows the properties accepted to create an accessReview.
 | `scope`                   |`microsoft.graph.accessReviewScope` | Yes | Defines scope of users reviewed in a group. See  [accessReviewScope](../resources/accessreviewscheduledefinition.md). | 
 | `instanceEnumerationScope`|`microsoft.graph.accessReviewScope` | No | In the case of an all groups review, this determines the scope of which groups will be reviewed. See [accessReviewScope](../resources/accessreviewscheduledefinition.md). | 
 | `settings`                |`microsoft.graph.accessReviewScheduleSettings`| No | The settings for an access review series. Recurrence is determined here. See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
-| `reviewers`               |`Collection(microsoft.graph.accessReviewReviewerScope)`| Yes | Defines who the reviewers are. See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). |
+| `reviewers`               |`Collection(microsoft.graph.accessReviewReviewerScope)`| No | Defines who the reviewers are. If none are specified, the review will be a self-review (users reviewed review their own access). See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). |
 
 
 ## Response

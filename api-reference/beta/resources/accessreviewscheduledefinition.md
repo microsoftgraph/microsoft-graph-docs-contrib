@@ -24,6 +24,7 @@ Represents an Azure AD [access review](accessreviews-root.md).
 |[Get accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Get an `accessReviewScheduleDefinition` with a specified id. |
 |[Create accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-create.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Create a new `accessReviewScheduleDefinition`. |
 |[Delete accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Delete an `accessReviewScheduleDefinition` with a specified ID. |
+|[Update accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Update properties of an `accessReviewScheduleDefinition` with a specified ID, including reviewers. |
 
 ## Properties
 | Property                  | Type                                | Required on Create                     | Description |
@@ -109,7 +110,7 @@ The **accessReviewScope** resource type defines what will be reviewed. This is e
 
 ## accessReviewReviewerScope resource type
 
-The **accessReviewReviewerScope** is a complex type that allows reviewers to be specified both as a static list of users (i.e., specific users, group owners, group members) or dynamically (i.e., the case where every user is reviewed by their manager). 
+The **accessReviewReviewerScope** is a complex type that allows reviewers to be specified both as a static list of users (i.e., specific users, group owners, group members) or dynamically (i.e., the case where every user is reviewed by their manager). To create a self-review (users review their own access), do not provide reviewers on accessReviewScheduleDefinition creation.
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
