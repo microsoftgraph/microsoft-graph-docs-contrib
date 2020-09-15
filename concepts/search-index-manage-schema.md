@@ -2,7 +2,7 @@
 title: "Register schema for a Microsoft Graph Connection"
 description: "Learn how to use Microsoft Graph to register schema for your Microsoft Graph Connection"
 localization_priority: Priority
-author: "rsamai-msft"
+author: "rsamai"
 ms.prod: ""
 doc_type: conceptualPageType
 ---

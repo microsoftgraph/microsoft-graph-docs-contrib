@@ -2,7 +2,7 @@
 title: "Create, update, and delete items added by your application in the Microsoft Graph Connection"
 description: "Learn how to use Microsoft Graph to manage items added by your application to the Microsoft Search service"
 localization_priority: Priority
-author: "rsamai-msft"
+author: "rsamai"
 ms.prod: ""
 doc_type: conceptualPageType
 ---
