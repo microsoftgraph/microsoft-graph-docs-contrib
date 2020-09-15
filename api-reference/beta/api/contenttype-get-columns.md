@@ -1,6 +1,5 @@
 ---
 author: swapnil1993
-ms.author: swapnil1993
 title: "ContentType Column Get"
 description: " Get a content type Column"
 localization_priority: Normal

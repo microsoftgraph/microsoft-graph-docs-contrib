@@ -1,13 +1,13 @@
 ---
 author: swapnil1993
-ms.author: swapnil1993
-title: ColumnValidation
+title: "columnValidation resource type"
 description: "The columnValidation resource contains data for validating the column values."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "sharepoint"
 ---
-# ColumnValidation resource type
+
+# columnValidation resource type
 
 Namespace: microsoft.graph
 

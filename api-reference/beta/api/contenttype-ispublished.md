@@ -1,13 +1,13 @@
 ---
 author: swapnil1993
-ms.author: swapnil1993
-title: "ContentType isPublished"
+title: "contentType: isPublished"
 description: "Check publishing status of a site content type"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
-# Check publishing status of a site content type
+
+# contentType: isPublished
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

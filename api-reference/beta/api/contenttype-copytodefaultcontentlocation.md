@@ -1,14 +1,13 @@
 ---
 author: swapnil1993
-ms.author: swapnil1993
-title: "ContentType copyToDefaultContentLocation"
+title: "contentType: copyToDefaultContentLocation"
 description: "Copy a file to default content location in a Content Type"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
 
-# Copy a file to default content location in a Content Type
+# contentType: copyToDefaultContentLocation
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -42,7 +41,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 
-POST https://graph.microsoft.com/v1.0/sites/id/contentTypes/id/copyToDefaultContentLocation 
+POST https://graph.microsoft.com/beta/sites/id/contentTypes/id/copyToDefaultContentLocation 
 ```
 
 ## Request headers

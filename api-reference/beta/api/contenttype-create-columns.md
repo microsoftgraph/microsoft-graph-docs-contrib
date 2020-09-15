@@ -1,15 +1,14 @@
 ---
 author: swapnil1993
-ms.author: swapnil1993
 ms.date: 08/30/2020
-title: "ContentType Column create"
+title: "Create columns"
 description: "Add columns in a Content type"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
 
-# Add columns in a Content type
+# Create columns
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

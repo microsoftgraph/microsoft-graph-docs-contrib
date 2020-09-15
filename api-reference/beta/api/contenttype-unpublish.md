@@ -1,13 +1,13 @@
 ---
 author: swapnil1993
-ms.author: swapnil1993
-title: "ContentType Unpublish"
+title: "contentType: unpublish"
 description: "Unpublish a site content type"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
-# Unpublish a site content type
+
+# contentType: unpublish
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

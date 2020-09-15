@@ -1,14 +1,13 @@
 ---
 author: swapnil1993
-ms.author: swapnil1993
-title: "ContentType update"
+title: "Update contentType"
 description: "Update a content type"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
 
-# Update a content type
+# Update contentType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -1,13 +1,12 @@
 ---
 author: swapnil1993
-ms.author: swapnil1993
-title: ThumbnailColumn
+title: "thumbnailColumn resource type"
 description: "The thumbnailColumn resource indicates that the column contains information about thumbnail."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "sharepoint"
 ---
-# ThumbnailColumn resource type
+# thumbnailColumn resource type
 
 Namespace: microsoft.graph
 

@@ -1,7 +1,6 @@
 ---
 author: swapnil1993
-ms.author: swapnil1993
-title: "ContentType associateWithHubSites"
+title: "contentType: associateWithHubSites"
 description: "Associate a content type with list of hubsites"
 localization_priority: Normal
 doc_type: apiPageType

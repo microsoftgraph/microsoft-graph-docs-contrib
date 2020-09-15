@@ -1,13 +1,13 @@
 ---
 author: swapnil1993
-ms.author: swapnil1993
-title: "ContentType GetApplicableContentTypesForList"
+title: "site: getApplicableContentTypesForList"
 description: "Get site content types that can be added to a list"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
-# Get site content types that can be added to a list
+
+# site: getApplicableContentTypesForList
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

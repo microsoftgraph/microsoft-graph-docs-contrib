@@ -1,14 +1,13 @@
 ---
 author: swapnil1993
-ms.author: swapnil1993
-title: "ContentType Column List"
+title: "List columns"
 description: "List  columns in a Content type"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
 
-# List  columns in a Content type
+# List columns
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

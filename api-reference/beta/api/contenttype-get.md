@@ -1,14 +1,13 @@
 ---
 author: swapnil1993
-ms.author: swapnil1993
-title: "ContentType Get"
+title: "Get contentType"
 description: "Get a content type in a site or list"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
-# Get a content type in a site or list
 
+# Get contentType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

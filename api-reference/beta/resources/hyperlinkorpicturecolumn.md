@@ -1,13 +1,12 @@
 ---
 author: swapnil1993
-ms.author: swapnil1993
-title: HyperlinkOrPictureColumn 
+title: "hyperlinkOrPictureColumn resource type" 
 description: "The hyperlinkOrPictureColumn resource indicates that the column contains URL data which can be an achortag or an image that serves as a hyperlink."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "sharepoint"
 ---
-# HyperlinkOrPictureColumn resource type
+# hyperlinkOrPictureColumn resource type
 
 Namespace: microsoft.graph
 

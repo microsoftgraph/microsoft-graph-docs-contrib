@@ -1,15 +1,13 @@
 ---
 author: swapnil1993
-ms.author: swapnil1993
-title: "ContentType create"
+title: "Create contentType"
 description: "Create a Content type in a site"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
 
-# Create a Content type in a site
-
+# Create contentType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -1,13 +1,13 @@
 ---
 author: swapnil1993
-ms.author: swapnil1993
-title: DocumentSet
+title: "documentSet resource type"
 description: "The documentSet resource contains metadata about document set settings."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "sharepoint"
 ---
-# DocumentSet resource type
+
+# documentSet resource type
 
 Namespace: microsoft.graph
 

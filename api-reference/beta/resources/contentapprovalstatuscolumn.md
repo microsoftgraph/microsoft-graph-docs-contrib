@@ -1,13 +1,13 @@
 ---
 author: swapnil1993
-ms.author: swapnil1993
-title: ContentapprovalStatusColumn
+title: "contentApprovalStatusColumn resource type"
 description: "The ContentApprovalStatusColumn resource indicates that the column contains information about approval status of the item."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "sharepoint"
 ---
-# ContentApprovalStatusColumn resource type
+
+# contentApprovalStatusColumn resource type
 
 Namespace: microsoft.graph
 

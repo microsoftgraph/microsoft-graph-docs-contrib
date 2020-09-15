@@ -1,13 +1,13 @@
 ---
 author: swapnil1993
-ms.author: swapnil1993
-title: DocumentSetContent
+title: "documentSetContent resource type"
 description: "The documentSetContent resource contains metadata about file present in default content location of a content."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "sharepoint"
 ---
-# DocumentSetContent resource type
+
+# documentSetContent resource type
 
 Namespace: microsoft.graph
 

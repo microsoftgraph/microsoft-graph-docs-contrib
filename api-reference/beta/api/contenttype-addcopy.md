@@ -1,15 +1,13 @@
 ---
 author: swapnil1993
-ms.author: swapnil1993
-title: "ContentType AddCopy"
+title: "contentType: addCopy"
 description: "Add copy of site content type to a list"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
 
-# Add copy of site content type to a list
-
+# contentType: addCopy
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

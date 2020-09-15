@@ -1,13 +1,12 @@
 ---
 author: swapnil1993
-ms.author: swapnil1993
-title: TermColumn
+title:  "termColumn resource type"
 description: "The termColumn resource indicates that the column's values contains taxonomy data."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---
-# TermColumn resource type
+# termColumn resource type
 
 Namespace: microsoft.graph
 
