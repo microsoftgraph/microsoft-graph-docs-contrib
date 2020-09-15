@@ -24,7 +24,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-          "driveItem"
+          "listItem"
       ],
       "query": {
           "queryString": "test"
