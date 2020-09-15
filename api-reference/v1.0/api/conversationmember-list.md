@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application| Not supported. |
 
 > [!NOTE]
-> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/concepts/teams-protected-apis).
+> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
