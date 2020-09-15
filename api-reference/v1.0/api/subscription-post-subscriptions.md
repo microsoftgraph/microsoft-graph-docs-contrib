@@ -23,9 +23,9 @@ Subscribes a listener application to receive change notifications when the reque
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Not supported | Not supported | CallRecords.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | Not supported | Not supported | ChannelMessage.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/allMessages -- all channel messages in organization) | Not supported | Not supported | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- all channel messages in organization) | Not supported | Not supported | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Not supported | Not supported | Chat.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/chats/allMessages -- all chat messages in organization) | Not supported | Not supported | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/chats/getAllMessages -- all chat messages in organization) | Not supported | Not supported | Chat.Read.All  |
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md) (user's personal OneDrive) | Not supported | Files.ReadWrite | Not supported |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Not supported | Files.ReadWrite.All |
@@ -41,10 +41,10 @@ Subscribes a listener application to receive change notifications when the reque
 
 **chatMessage** subscriptions with application permissions include resource data, and require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified. Before creating a **chatMessage** subscription, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis). 
 
-> **Note:** `/teams/allMessages` and `/chats/allMessages` are currently in preview,
+> **Note:** `/teams/getAllMessages` and `/chats/getAllMessages` are currently in preview,
 and you may use this API without fees, subject to the [Microsoft APIs Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). 
 Starting in August 2020, it will only be available to users and tenants that have the [required licenses](/graph/teams-licenses). 
-Because `/teams/allMessages` and `/chats/allMessages` deliver notifications for all users in the tenant, all users in the tenant must be licensed;
+Because `/teams/getAllMessages` and `/chats/getAllMessages` deliver notifications for all users in the tenant, all users in the tenant must be licensed;
 attempts to create subscriptions without the proper licenses will result in a 401 error code.
 In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
 
@@ -137,7 +137,7 @@ The following are valid values for the resource property of the subscription:
 | Resource type | Examples |
 |:------ |:----- |
 |[Call records](../resources/callrecords-callrecord.md)|`communications/callRecords`|
-|[Chat message](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/allMessages`, `teams/{id}/channels/{id}/messages`, `teams/allMessages` |
+|[Chat message](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
 |[Contacts](../resources/contact.md)|`me/contacts`|
 |[Conversations](../resources/conversation.md)|`groups('{id}')/conversations`|
 |[Drives](../resources/driveitem.md)|`me/drive/root`|
