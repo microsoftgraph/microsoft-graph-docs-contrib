@@ -23,8 +23,8 @@ Delete an [onlineMeeting](../resources/onlinemeeting.md) object.
 | Delegated (personal Microsoft account) | Not Supported.                              |
 | Application                            | OnlineMeetings.ReadWrite.All*                |
 
-> \*[!IMPORTANT]
-> Administrators must create an [application access policy](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to delete an online meeting on behalf of that user (user ID specified in the reuqest path) has created.
+> [!IMPORTANT]
+> \* Administrators must create an [application access policy](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to delete an online meeting on behalf of that user (user ID specified in the reuqest path) has created.
 
 ## HTTP request
 
