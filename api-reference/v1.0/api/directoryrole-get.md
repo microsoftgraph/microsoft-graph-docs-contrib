@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [directoryRole](
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_directoryrole"
+  "name": "get_directoryrole_objectId"
 }-->
 ```msgraph-interactive
 https://graph.microsoft.com/v1.0/directoryRoles/23f3b4b4-8a29-4420-8052-e4950273bbda
@@ -102,7 +102,7 @@ Content-type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "get_directoryrole"
+  "name": "get_directoryrole_templateId"
 }-->
 ```msgraph-interactive
 https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=4a5d8f65-41da-4de4-8968-e035b65339cf
