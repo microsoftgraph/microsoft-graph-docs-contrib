@@ -1,6 +1,6 @@
 ---
 title: "Reply to a message in a channel"
-description: "Reply to an existing message in a channel."
+description: "Reply to existing message in a channel."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"

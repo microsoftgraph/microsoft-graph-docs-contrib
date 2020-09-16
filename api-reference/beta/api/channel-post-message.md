@@ -1,13 +1,13 @@
 ---
 title: "Create chatMessage in a channel"
-description: "Create a new chatMessage in the specified channel."
+description: "Create new chatMessage in the specified channel."
 localization_priority: Normal
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Create chatMessage in a channel
+# Create chatMessage in channel
 
 Namespace: microsoft.graph
 
