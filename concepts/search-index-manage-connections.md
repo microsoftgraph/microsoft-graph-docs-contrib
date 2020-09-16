@@ -3,7 +3,7 @@ title: "Create, update, and delete connections to the Microsoft Graph Connection
 description: "Learn how to use Microsoft Graph to create and manage connections"
 localization_priority: Priority
 author: "rsamai"
-ms.prod: ""
+ms.prod: "search"
 doc_type: conceptualPageType
 ---
 
@@ -11,44 +11,49 @@ doc_type: conceptualPageType
 
 Connections from external services to the Microsoft Search service are represented by the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta) resource in Microsoft Graph.
 
-The Graph Connectors platform offers a simple way to add your external data into the Microsoft Graph. A connection is a logical container for your external data that an administrator can manage as a single unit in the Graph Connectors platform.
-Once a connection has been created, you can add your content from any external data source such as an on-premises content source or an external SaaS service. You can only view and manage the connections you created or were explicitly [authorized](https://docs.microsoft.com/en-us/graph/api/external-post-connections?view=graph-rest-beta&tabs=http) to manage. A search admin can view and manage all the connections in the tenant from the Modern Admin Center.
+The Microsoft Graph connectors platform offers a simple way to add your external data into the Microsoft Graph. A connection is a logical container for your external data that an administrator can manage as a single unit.
 
-![security_overview_diagram_1.png](./images/search-idex-manage-connections-connector-structure.png)
+Once a connection has been created, you can add your content from any external data source such as an on-premises content source or an external SaaS service. You can only view and manage the connections you created or were explicitly [authorized](/graph/api/external-post-connections?view=graph-rest-beta&tabs=http) to manage. A search admin can view and manage all the connections in the tenant from the Modern Admin Center.
+
+<!-- markdownlint-disable MD036 -->
+![Sample custom helpdesk system Tickets Connector Structure](./images/search-index-manage-connections-connector-structure.png)
+
 *Sample custom helpdesk system Tickets Connector Structure*
 
-![security_overview_diagram_1.png](./images/search-idex-manage-connections-admin-view.png)
+![Admin View of Connections including the custom Tickets Connector](./images/search-index-manage-connections-admin-view.png)
+
 *Admin View of Connections including the custom Tickets Connector*
+<!-- markdownlint-enable MD036 -->
 
-You can model a connection anyway you want, but creating one connection for every instance of your connector is the most common model. For example, each time you set up the [Microsoft-built](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector) Windows file share connector, a new connection is created. You can also create a single connection to add all items from your data source. For example, creating a single connection to add all the tickets and incidents across multiple teams from your helpdesk system.
-
+You can model a connection anyway you want, but creating one connection for every instance of your connector is the most common model. For example, each time you [set up the Microsoft Windows file share connector](/microsoftsearch/configure-connector), a new connection is created. You can also create a single connection to add all items from your data source. For example, creating a single connection to add all the tickets and incidents across multiple teams from your helpdesk system.
 
 ## States and Operations
-Your connection could exist in one of the following states. 
 
-| State                  |  Description    
-|-------------------|--------|------------|--------|--------|--|--------|------|--------|--------|--|--------|--------|--------|--------|
-| **Draft**         | An empty connection is provisioned. The data source, schema, or any settings have not been configured yet.         |
-| **Ready**         | The connection is provisioned with registered schema and is ready for ingestion.     
-| **Obsolete**      | This occurs when a dependent feature, such as an API, has been deprecated. Deleting the connection is the only valid operation.      
-| **LimitExceeded** | If you hit the maximum limit of a single connection or the tenant level quota across all connections, you cannot add more items until you exit the state.      
+Your connection could exist in one of the following states.
 
+| State             | Description                                                                                                                                               |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Draft**         | An empty connection is provisioned. The data source, schema, or any settings have not been configured yet.                                                |
+| **Ready**         | The connection is provisioned with registered schema and is ready for ingestion.                                                                          |
+| **Obsolete**      | This occurs when a dependent feature, such as an API, has been deprecated. Deleting the connection is the only valid operation.                           |
+| **LimitExceeded** | If you hit the maximum limit of a single connection or the tenant level quota across all connections, you cannot add more items until you exit the state. |
 
-|                           | Draft | Ready               | Obsolete          | LimitExceeded               |
-|------------------- |-------   |-------   |----------             |---------------      |
-| Create connection        | ×         | ✓        | ×        | ✓                       |
-| Read connection           | ✓        | ✓        | ✓         | ✓                       |
-| Update connection      | ✓        | ✓        | ×        | ✓                       |
-| Delete connection        | ✓        | ✓        | ✓        | ✓                       |
-| Create schema              | ✓        | ×         | ×        | ×                        |
-| Read schema                 | ×         | ✓        | ✓        | ✓                       |
-| Update schema             | ×         | ×         | ×        | ×                        |
-| Delete schema              | ×         | ×         | ×        | ×                        |
-| Create item                    | ×         | ✓        | ×        | ×                        |
-| Read item                       | ×         | ✓        | ✓        | ✓                       |
-| Update item                  | ×         | ✓        | ×        | ✓                       |
-| Delete item                    | ×         | ✓        | ×        | ✓                       |
+The following table specifies which operations are available in each state.
 
+| Operation         | Draft | Ready | Obsolete | LimitExceeded |
+|-------------------|-------|-------|----------|---------------|
+| Create connection | :x:     | :heavy_check_mark:     | ×        | ✓             |
+| Read connection   | ✓     | ✓     | ✓        | ✓             |
+| Update connection | ✓     | ✓     | ×        | ✓             |
+| Delete connection | ✓     | ✓     | ✓        | ✓             |
+| Create schema     | ✓     | ×     | ×        | ×             |
+| Read schema       | ×     | ✓     | ✓        | ✓             |
+| Update schema     | ×     | ×     | ×        | ×             |
+| Delete schema     | ×     | ×     | ×        | ×             |
+| Create item       | ×     | ✓     | ×        | ×             |
+| Read item         | ×     | ✓     | ✓        | ✓             |
+| Update item       | ×     | ✓     | ×        | ✓             |
+| Delete item       | ×     | ✓     | ×        | ✓             |
 
 A connection allows your application to [define a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta) for items that will be indexed, and provides an endpoint for your service to add, update, or delete items from the index. [Creating a connection](#create-a-connection) is the first step for an application to add items to the search index.
 
@@ -71,6 +76,7 @@ You can change the display name or description of an existing connection by [upd
 You can [delete a connection](/graph/api/externalconnection-delete?view=graph-rest-beta), and remove all items that were indexed via that connection.
 
 ## Next steps
+
 - [Register the connection schema](/graph/concepts/search-index-manage-schema.md)
 - [Review the Graph Connectors API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
 - [Overview for Microsoft Graph Connectors](/microsoftsearch/connectors-overview)
