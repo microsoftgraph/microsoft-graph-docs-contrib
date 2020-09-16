@@ -1,19 +1,19 @@
 ---
-title: "Delete b2cUserFlow"
-description: "Delete a b2cUserFlow object."
+title: "Delete b2cIdentityUserFlow"
+description: "Delete a b2cIdentityUserFlow object."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Delete b2cUserFlow
+# Delete b2cIdentityUserFlow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [b2cUserFlow](../resources/b2cuserflows.md) object.
+Delete a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object.
 
 ## Permissions
 

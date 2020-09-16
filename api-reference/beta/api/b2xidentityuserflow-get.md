@@ -1,19 +1,19 @@
 ---
-title: "Get b2xUserFlows"
-description: "Retrieve the properties and relationships a b2xUserFlow object."
+title: "Get b2xIdentityUserFlow"
+description: "Retrieve the properties and relationships a b2xIdentityUserFlow object."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Get b2xUserFlow
+# Get b2xIdentityUserFlow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [b2xUserFlow](../resources/b2xuserflows.md) object.
+Retrieve the properties and relationships of a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object.
 
 ## Permissions
 
@@ -56,7 +56,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a JSON representation of the [userFlowAttribute](../resources/b2xuserflows.md) in the response body.
+If successful, this method returns a `200 OK` response code and a JSON representation of the [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) in the response body.
 
 ## Example
 
