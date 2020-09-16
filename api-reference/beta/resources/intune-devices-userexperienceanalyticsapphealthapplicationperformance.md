@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsAppHealthApplicationPerformance resource type"
 description: "The user experience analytics applicaiton performance entity contains app performance details."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -30,20 +30,17 @@ The user experience analytics applicaiton performance entity contains app perfor
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics app performance object.|
-|appName|String|The name of the application.|
-|appFriendlyName|String|The friendly name of the application.|
-|appPublisher|String|The publisher of the application.|
-|activeDevices|Int32|The number of devices where the app has been active. Valid values -2147483648 to 2147483647|
-|totalAppUsageDuration|Int32|The total usage time of the application in minutes. Valid values -2147483648 to 2147483647|
-|totalAppCrashes|Int32|The number of crashes for the app. Valid values -2147483648 to 2147483647|
-|totalAppHangs|Int32|The number of hangs for the app. Valid values -2147483648 to 2147483647|
-|meanTimeToFailure|Int32|The mean time to failure for the app in minutes. Valid values -2147483648 to 2147483647|
+|appHangCount|Int32|The number of hangs for the app. Valid values -2147483648 to 2147483647|
 |appHealthScore|Double|The health score of the app. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |appHealthStatus|String|The overall health status of the app.|
 |allOrgsHealthScore|Double|The median health score of the application across all organizations. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
-|allOrgsMeanTimeToFailure|Int32|The median mean time to failure across all orgs for the app in minutes. Valid values -2147483648 to 2147483647|
-|tenantId|String|The id of the tenant associated with this app object.|
-|memaTimeGenerated|String|The time when aggregation was performed in MEMA.|
+|activeDeviceCount|Int32|The number of devices where the app has been active. Valid values -2147483648 to 2147483647|
+|appName|String|The name of the application.|
+|appDisplayName|String|The friendly name of the application.|
+|appPublisher|String|The publisher of the application.|
+|appUsageDuration|Int32|The total usage time of the application in minutes. Valid values -2147483648 to 2147483647|
+|appCrashCount|Int32|The number of crashes for the app. Valid values -2147483648 to 2147483647|
+|meanTimeToFailureInMinutes|Int32|The mean time to failure for the app in minutes. Valid values -2147483648 to 2147483647|
 
 ## Relationships
 None
@@ -60,22 +57,22 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthApplicationPerformance",
   "id": "String (identifier)",
-  "appName": "String",
-  "appFriendlyName": "String",
-  "appPublisher": "String",
-  "activeDevices": 1024,
-  "totalAppUsageDuration": 1024,
-  "totalAppCrashes": 1024,
-  "totalAppHangs": 1024,
-  "meanTimeToFailure": 1024,
+  "appHangCount": 1024,
   "appHealthScore": "4.2",
   "appHealthStatus": "String",
   "allOrgsHealthScore": "4.2",
-  "allOrgsMeanTimeToFailure": 1024,
-  "tenantId": "String",
-  "memaTimeGenerated": "String"
+  "activeDeviceCount": 1024,
+  "appName": "String",
+  "appDisplayName": "String",
+  "appPublisher": "String",
+  "appUsageDuration": 1024,
+  "appCrashCount": 1024,
+  "meanTimeToFailureInMinutes": 1024
 }
 ```
+
+
+
 
 
 
