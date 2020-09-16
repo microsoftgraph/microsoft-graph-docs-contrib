@@ -60,15 +60,9 @@ DELETE https://graph.microsoft.com/V1.0/teams/{id}/channels/{id}/members/{id}
 ```
 # [C#](#tab/csharp)
 
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Objective-C](#tab/objc)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -79,7 +73,6 @@ Here is an example of the response.
 <!-- {
   "blockType": "response"
 } -->
-
 ```http
 
 HTTP/1.1 204 No Content
