@@ -99,7 +99,7 @@ The **accessReviewScope** resource type defines what will be reviewed. This is e
 |--|--|-- |
 | Review of all users assigned to a group | /groups/{group id}/transitiveMembers ||
 | Review of guest users assigned to a group | /groups/{group id}/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest') ||
-| Review of guest users assigned to all groups | ./transitiveMembers/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest') | Note that the corresponding instanceEnumerationScope should also be passed in along with this|
+| Review of guest users assigned to all groups | ./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest') | Note that the corresponding instanceEnumerationScope should also be passed in along with this|
 | Entitlement Management Access Package Assigment Reviews | /identityGovernance/entitlementManagement/accessPackageAssignments?$filter=(accessPackageId eq '{package id}' and assignmentPolicyId eq '{id}')| Note that only READ is supported for Access Package Assignment Reviews|
 
 #### Supported queries for "instanceEnumerationScope" property
