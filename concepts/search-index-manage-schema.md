@@ -36,7 +36,7 @@ The following table represents an example of a possible schema for a work ticket
 
 ### Searchable
 
-If a property is searchable, its value is added to the full text index. When a user performs a search, we return results if there is a search hit in one of the searchable fields or its [content]((search-index-manage-item.md#content)).
+If a property is searchable, its value is added to the full text index. When a user performs a search, we return results if there is a search hit in one of the searchable fields or its [content]((search-index-manage-items.md#content)).
 
 <!-- markdownlint-disable MD036 -->
 <!-->
