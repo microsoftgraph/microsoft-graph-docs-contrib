@@ -20,6 +20,7 @@ Represents an Azure AD [access review](accessreviews-root.md) recurrence. If the
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
+|[List accessReviewInstances](../api/accessreviewinstance-list.md) | [accessReviewInstance](accessreviewinstance.md) collection | Lists every `accessReviewInstance` for a specific `accessReviewScheduleDefinition`. Does not include associated `accessReviewInstanceDecisionItem`s in listings. |
 
 
 ## Properties
