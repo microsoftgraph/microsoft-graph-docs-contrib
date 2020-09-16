@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 Create a new linkedResources object.
 
 > [!NOTE]
-> You can also create a linkedResource object while [creating a todoTask](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&tabs=http#examples&preserve-view=true).
+> You can also create a linkedResource object while [creating a todoTask](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -78,7 +78,6 @@ Content-Type: application/json
 Content-length: 166
 
 {
-  "@odata.type": "#microsoft.graph.linkedResource",
   "webUrl": "https://microsoft.com",
   "applicationName": "Microsoft",
   "displayName": "Microsoft",
