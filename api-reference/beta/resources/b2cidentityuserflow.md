@@ -32,8 +32,8 @@ To help you set up the most common identity tasks for your applications, Azure A
 |[Create user flow](../api/identitycontainer-post-b2cuserflows.md)|b2cIdentityUserFlow|Create a new B2C user flow.|
 |[Delete user flow](../api/b2cidentityuserflow-delete.md)|None|Delete a B2C user flow.|
 |[List identity providers](../api/b2cidentityuserflow-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a B2C user flow.|
-|[Add identity provider](../api/b2cidentityuserflow-update-identityprovider.md)|None|Add an identity provider to a B2C user flow.|
-|[Remove identity provider](../api/b2cidentityuserflow-delete-identityprovider.md)|None|Remove an identity provider from a B2C user flow.|
+|[Add identity provider](../api/b2cidentityuserflow-post-identityproviders.md)|None|Add an identity provider to a B2C user flow.|
+|[Remove identity provider](../api/b2cidentityuserflow-delete-identityproviders.md)|None|Remove an identity provider from a B2C user flow.|
 
 ## Properties
 
