@@ -1,5 +1,5 @@
 ---
-title: "Update chatMessage with DLP policy violation"
+title: "Update chatMessage"
 description: "Update a chatMessage with a Data Loss Prevention (DLP) policy violation."
 author: "clearab"
 doc_type: apiPageType
@@ -11,7 +11,9 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update a chatMessage with a Data Loss Prevention (DLP) policy violation.
+
+Update a [chatMessage](../resources/chatMessage.md). 
+Only the policyViolation field of the chatMessage may be changed.
 
 ## Permissions
 
@@ -21,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Not supported.    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Chat.UpdatePolicyViolation.All for chat a message.</br>ChannelMessage.UpdatePolicyViolation.All for a channel message. |
+|Application | Chat.UpdatePolicyViolation.All for a chat message.</br>ChannelMessage.UpdatePolicyViolation.All for a channel message. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -39,11 +41,8 @@ PATCH /users/(user-id)/chats/{chatThread-id}/chatMessages/{message-id}
 
 ## Request body
 
-In the request body, supply the relevant properties that you would like to update.
-
-| Property   | Type |Description|
-|:---------------|:--------|:----------|
-| policyViolation | [chatMessagePolicyViolation](../resources/chatmessagepolicyviolation.md) | Supply the properties for the Data Loss Prevention (DLP) violation.|
+In the request body, supply a JSON representation of the [chatMessage](../resources/chatMessage.md) object.
+Only the policyViolation field of the chatMessage may be changed.
 
 ## Response
 
@@ -67,7 +66,7 @@ Content-Length: 248
 {
   "policyViolation": {
     "policyTip": {
-      "generalText" : "This item has been blocked by administrator.",
+      "generalText" : "This item has been blocked by the administrator.",
       "complianceUrl" : "https://contoso.com/dlp-policy-page",
       "matchedConditionDescriptions" : ["Credit Card Number"]
     },
