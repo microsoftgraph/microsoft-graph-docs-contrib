@@ -28,7 +28,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 | [list][] under a SharePoint [site][] | Changes to content within the _list_: <br>`/sites/{id}/lists/{id}` | No |
 | Security [alert][] | Changes to a specific alert:<br>`/security/alerts/{id}` <br>Changes to filtered alerts:<br> `/security/alerts/?$filter`| No |
 | Teams [callRecord][] | Changes to _all_ call records: `/communications/callRecords` | No |
-| Teams [chatmessage](/graph/api/resources/subscription?view=graph-rest-v1.0) | Changes to chat messages in all channels in all teams:<br>`/teams/getAllMessages`<br>Changes to chat messages in all chats:<br>`/chats/getAllMessages` | Yes |
+| Teams [chatMessage](/graph/api/resources/subscription?view=graph-rest-v1.0) | Changes to chat messages in all channels in all teams:<br>`/teams/getAllMessages`<br>Changes to chat messages in all chats:<br>`/chats/getAllMessages` | Yes |
 
 > **Note**: Any resource path that begins with `/users/{id}` can also accept `/me` to reference the signed-in user.
 
