@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents an item in a partner application related to a [todoTask](./todotask.md). An example is an email that created the task. A **linkedResource** object stores information about that source application, and lets you link back to the related item.
 
-You can also create a **linkedResource** without providing any link back to item. This can be used when item does not have a link such as a phone message or a note. Here is how the **linkedResource** appears with and without URL.
+You can also create a **linkedResource** without providing any link back to the item. This can be used when the item does not have a link such as a phone message or a note. Here is how the **linkedResource** appears with and without URL.
 
 ![Linked resource](/graph/images/todo-linkedresource.png)
 
