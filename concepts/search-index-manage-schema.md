@@ -17,20 +17,20 @@ The connection [schema](/graph/api/resources/schema?view=graph-rest-beta) determ
 
 The following table represents an example of a possible schema for a work ticket system connector.
 
-| Property        | Type              | Searchable  | Queryable  | Retrievable  | Refinable  | Labels                | Aliases     |
-|---------------- |------------------ |------------ |----------- |------------- |----------- |---------------------- |------------ |
-| ticketId        | String            |             |            |              |            |                       | ID          |
-| title           | String            | ✓           | ✓          | ✓            |            | title                 |             |
-| createdBy       | String            | ✓           | ✓          |              |            | createdBy             | creator     |
-| assignedTo      | String            | ✓           | ✓          |              |            |                       |             |
-| lastEditedDate  | DateTime          |             | ✓          | ✓            | ✓          | lastModifiedDateTime  | editedDate  |
-| lastEditedBy    | String            | ✓           | ✓          | ✓            |            | lastModifiedBy        | edited      |
-| workItemType    | String            |             | ✓          | ✓            |            |                       | ticketType  |
-| priority        | Int64             | ✓           |            |              |            |                       |             |
-| tags            | StringCollection  |             | ✓          | ✓            | ✓          |                       |             |
-| status          | String            |             | ✓          | ✓            |            |                       |             |
-| url             | String            |             |            |              |            | url                   |             |
-| resolved        | Boolean           |             | ✓          | ✓            |            |                       |             |
+| Property       | Type             | Searchable         | Queryable          | Retrievable        | Refinable          | Labels               | Aliases    |
+|----------------|------------------|--------------------|--------------------|--------------------|--------------------|----------------------|------------|
+| ticketId       | String           |                    |                    |                    |                    |                      | ID         |
+| title          | String           | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    | title                |            |
+| createdBy      | String           | :heavy_check_mark: | :heavy_check_mark: |                    |                    | createdBy            | creator    |
+| assignedTo     | String           | :heavy_check_mark: | :heavy_check_mark: |                    |                    |                      |            |
+| lastEditedDate | DateTime         |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | lastModifiedDateTime | editedDate |
+| lastEditedBy   | String           | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    | lastModifiedBy       | edited     |
+| workItemType   | String           |                    | :heavy_check_mark: | :heavy_check_mark: |                    |                      | ticketType |
+| priority       | Int64            | :heavy_check_mark: |                    |                    |                    |                      |            |
+| tags           | StringCollection |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                      |            |
+| status         | String           |                    | :heavy_check_mark: | :heavy_check_mark: |                    |                      |            |
+| url            | String           |                    |                    |                    |                    | url                  |            |
+| resolved       | Boolean          |                    | :heavy_check_mark: | :heavy_check_mark: |                    |                      |            |
 
 ## Property attributes
 

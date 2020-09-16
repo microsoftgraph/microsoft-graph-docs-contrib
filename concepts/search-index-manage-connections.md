@@ -42,20 +42,20 @@ Your connection could exist in one of the following states.
 
 The following table specifies which operations are available in each state.
 
-| Operation         | Draft | Ready | Obsolete | LimitExceeded |
-|-------------------|-------|-------|----------|---------------|
-| Create connection | :x:     | :heavy_check_mark:     | ×        | ✓             |
-| Read connection   | ✓     | ✓     | ✓        | ✓             |
-| Update connection | ✓     | ✓     | ×        | ✓             |
-| Delete connection | ✓     | ✓     | ✓        | ✓             |
-| Create schema     | ✓     | ×     | ×        | ×             |
-| Read schema       | ×     | ✓     | ✓        | ✓             |
-| Update schema     | ×     | ×     | ×        | ×             |
-| Delete schema     | ×     | ×     | ×        | ×             |
-| Create item       | ×     | ✓     | ×        | ×             |
-| Read item         | ×     | ✓     | ✓        | ✓             |
-| Update item       | ×     | ✓     | ×        | ✓             |
-| Delete item       | ×     | ✓     | ×        | ✓             |
+| Operation         | Draft              | Ready              | Obsolete           | LimitExceeded      |
+|-------------------|--------------------|--------------------|--------------------|--------------------|
+| Create connection | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
+| Read connection   | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Update connection | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: |
+| Delete connection | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Create schema     | :heavy_check_mark: | :x:                | :x:                | :x:                |
+| Read schema       | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Update schema     | :x:                | :x:                | :x:                | :x:                |
+| Delete schema     | :x:                | :x:                | :x:                | :x:                |
+| Create item       | :x:                | :heavy_check_mark: | :x:                | :x:                |
+| Read item         | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Update item       | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
+| Delete item       | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
 
 A connection allows your application to [define a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta) for items that will be indexed, and provides an endpoint for your service to add, update, or delete items from the index. [Creating a connection](#create-a-connection) is the first step for an application to add items to the search index.
 
