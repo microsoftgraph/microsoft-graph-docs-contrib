@@ -27,13 +27,13 @@ To help you set up the most common identity tasks for your applications, Azure A
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List user flows](../api/identitycontainer-list-b2cuserflows.md)|b2cIdentityUserFlow collection|Retrieve all user flows.|
-|[Get user flow](../api/b2cidentityuserflow-get.md)|b2cIdentityUserFlow|Retrieve properties of a user flow.|
-|[Create user flow](../api/identitycontainer-post-b2cuserflows.md)|b2cIdentityUserFlow|Create a new user flow.|
-|[Delete user flow](../api/b2cidentityuserflow-delete.md)|None|Delete a user flow.|
-|[List identity providers](../api/b2cidentityuserflow-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a user flow.|
-|[Add identity provider](../api/b2cidentityuserflow-update-identityprovider.md)|None|Add an identity provider to a user flow.|
-|[Delete identity provider](../api/b2cidentityuserflow-delete-identityprovider.md)|None|Delete an identity provider from a user flow.|
+|[List user flows](../api/identitycontainer-list-b2cuserflows.md)|b2cIdentityUserFlow collection|Retrieve all B2C user flows.|
+|[Get user flow](../api/b2cidentityuserflow-get.md)|b2cIdentityUserFlow|Retrieve properties of a B2C user flow.|
+|[Create user flow](../api/identitycontainer-post-b2cuserflows.md)|b2cIdentityUserFlow|Create a new B2C user flow.|
+|[Delete user flow](../api/b2cidentityuserflow-delete.md)|None|Delete a B2C user flow.|
+|[List identity providers](../api/b2cidentityuserflow-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a B2C user flow.|
+|[Add identity provider](../api/b2cidentityuserflow-update-identityprovider.md)|None|Add an identity provider to a B2C user flow.|
+|[Remove identity provider](../api/b2cidentityuserflow-delete-identityprovider.md)|None|Remove an identity provider from a B2C user flow.|
 
 ## Properties
 
@@ -41,7 +41,7 @@ To help you set up the most common identity tasks for your applications, Azure A
 |:---------------|:--------|:----------|
 |id|String|The name of the user flow. This is a required value and is immutable after it's created. The name will be prefixed with the value of `B2C_1_` after creation.|
 |userFlowType|String|The [type of user flow](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-versions). The supported values for **userFlowType** are:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
-|userFlowVersion|Single|The version of the user flow.|
+|userFlowTypeVersion|Single|The version of the user flow.|
 
 ## Relationships
 

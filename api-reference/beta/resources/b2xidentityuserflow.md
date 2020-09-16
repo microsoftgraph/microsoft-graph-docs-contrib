@@ -21,13 +21,13 @@ User flows are used to enable a [self-service sign up](https://docs.microsoft.co
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List user flows](../api/identitycontainer-list-b2xuserflows.md)|b2xIdentityUserFlow collection|Retrieve all user flows.|
-|[Get user flow](../api/b2xidentityuserflow-get.md)|b2xIdentityUserFlow|Retrieve properties of a user flow.|
-|[Create user flow](../api/identitycontainer-post-b2xuserflows.md)|b2xIdentityUserFlow|Create a new user flow.|
-|[Delete user flow](../api/b2xidentityuserflow-delete.md)|None|Delete a user flow.|
-|[List identity providers](../api/b2xidentityuserflow-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a user flow.|
-|[Add identity provider](../api/b2xidentityuserflow-update-identityprovider.md)|None|Add an identity provider to a user flow.|
-|[Delete identity provider](../api/b2xidentityuserflow-delete-identityprovider.md)|None|Delete an identity provider from a user flow.|
+|[List user flows](../api/identitycontainer-list-b2xuserflows.md)|b2xIdentityUserFlow collection|Retrieve all B2X user flows.|
+|[Get user flow](../api/b2xidentityuserflow-get.md)|b2xIdentityUserFlow|Retrieve properties of a B2X user flow.|
+|[Create user flow](../api/identitycontainer-post-b2xuserflows.md)|b2xIdentityUserFlow|Create a new B2X user flow.|
+|[Delete user flow](../api/b2xidentityuserflow-delete.md)|None|Delete a B2X user flow.|
+|[List identity providers](../api/b2xidentityuserflow-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a B2X user flow.|
+|[Add identity provider](../api/b2xidentityuserflow-update-identityprovider.md)|None|Add an identity provider to a B2X user flow.|
+|[Remove identity provider](../api/b2xidentityuserflow-delete-identityprovider.md)|None|Remove an identity provider from a B2X user flow.|
 
 ## Properties
 
@@ -35,7 +35,7 @@ User flows are used to enable a [self-service sign up](https://docs.microsoft.co
 |:---------------|:--------|:----------|
 |id|String|The name of the user flow. This is a required value and is immutable after it's created. The name will be prefixed with the value of `B2X_1_` after creation.|
 |userFlowType|String|The type of user flow. For self-service sign up user flows, the value can only be `signUpOrSignIn` and cannot be modified after creation.|
-|userFlowVersion|Single|The version of the user flow. For B2X user flows, the version is always `1`.|
+|userFlowTypeVersion|Single|The version of the user flow. For B2X user flows, the version is always `1`.|
 
 ## Relationships
 

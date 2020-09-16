@@ -10134,7 +10134,7 @@ items:
           items:
           - name: User flow
             items:
-            - name: identityUserflow
+            - name: User flow
               href: resources/identityuserflow.md
             - name: List
               href: api/identityuserflow-list.md
@@ -10146,7 +10146,7 @@ items:
               href: api/identityuserflow-delete.md
           - name: B2C user flows
             items:
-             - name: b2cIdentityUserFlow
+             - name: B2C user flow
                href: resources/b2cidentityuserflow.md
              - name: List
                href: api/identitycontainer-list-b2cuserflows.md
@@ -10160,11 +10160,11 @@ items:
                href: api/b2cidentityuserflow-list-identityproviders.md
              - name: Add identity provider
                href: api/b2cidentityuserflow-update-identityprovider.md
-             - name: Delete identity provider
+             - name: Remove identity provider
                href: api/b2cidentityuserflow-delete-identityprovider.md
           - name: Self-service sign up user flows
             items:
-             - name: b2xIdentityUserFlow
+             - name: B2X user flow
                href: resources/b2xidentityuserflow.md
              - name: List
                href: api/identitycontainer-list-b2xuserflows.md
@@ -10178,7 +10178,7 @@ items:
                href: api/b2xidentityuserflow-list-identityproviders.md
              - name: Add identity provider
                href: api/b2xidentityuserflow-update-identityprovider.md
-             - name: Delete identity provider
+             - name: Remove identity provider
                href: api/b2xidentityuserflow-delete-identityprovider.md
       - name: Governance
         items:
