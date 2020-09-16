@@ -8,30 +8,16 @@ ms.prod: "search"
 
 # Sort search results
 
-TODOSEARCHAPI@Lan Can you please take a stab at this page describing the key scenario for Sharepoint---
-- One example from sharepoint
-- Document the known limitations
-- Include single / multi level sort
-- Include an example with sort by author and then relevance(Need to confirm with Nicolas)
-- The whole page below was copied from the Sharepoint File sample page. You should use the same structure. https://docs.microsoft.com/graph/search-concept-files
-ENDTODO
+The Microsoft Search API allows sorting search results using a specific property.
 
-You can use the Microsoft Search API to search files stored in SharePoint or OneDrive. The Microsoft Search API uses a relevance model that makes use of signals from Microsoft Graph about users' relationships and activities. This enables you to return and promote the content that users care about, in a file search experience that is consistent with the **Files** tab that lists search results in SharePoint.
+Sorting is supported only for SharePoint and OneDrive items.
+The property to be sorted on should be *Sortable* in the search schema.
 
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
+The default sort order is ascending. Set the **isDescending** property to change it.
 
-You can use KQL in search terms of queries for SharePoint and OneDrive. For example:
+## Example : Single-level sort
 
-- `"query": "contoso filetype:docx OR filetype:doc"` scopes the query to Word documents.
-- `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` scopes the query to a particular folder within a site.
-
-In order to be valid, properties restriction should specify a valid, queryable managed property name in the condition.
-
-## Example
-
-### Single-level Sort
-
-#### Request 
+### Request
 
 ```HTTP
 POST /search/query
@@ -43,19 +29,15 @@ Content-Type: application/json
       "entityTypes": [
           "driveItem"
       ],
-      "query": {
-          "query_string": {
-              "query": "test"
-          }
+       "query": {
+        "queryString": "contoso"
       },
       "sortProperties": [
           {
               "name": "CreatedDateTime",
               "isDescending": false
           }
-      ],
-      "from": 0,
-      "size": 25
+      ]
     }
   ]
 }
@@ -78,10 +60,10 @@ Content-type: application/json
             "hits": [
                 {
                     "@odata.type": "#microsoft.graph.searchHit",
-                    "_id": "01VRZMWHPGDM5KTXS53RF3SSGHW7SGGPKL",
-                    "_score": 1,
-                    "_summary": "As we work to become a more <ddd/> We <c0>test</c0> samples from the region between 10 and 100 times per day <ddd/> and surrounding areas that CPU uses to <c0>test</c0> the quality of your drinking water every day <ddd/> ",
-                    "_source": {
+                    "hitId": "01VRZMWHPGDM5KTXS53RF3SSGHW7SGGPKL",
+                    "rank": 1,
+                    "summary": "As we work to become a more <ddd/> We <c0>test</c0> samples from the region between 10 and 100 times per day <ddd/> and surrounding areas that CPU uses to <c0>test</c0> the quality of your drinking water every day <ddd/> ",
+                    "resource": {
                         "@odata.type": "#microsoft.graph.driveItem",
                         "size": 971838,
                         "fileSystemInfo": {
@@ -110,10 +92,10 @@ Content-type: application/json
                 },
                 {
                     "@odata.type": "#microsoft.graph.searchHit",
-                    "_id": "01BTQFB3LHZTAYBV2VXVEK22ETF5WOQGT2",
-                    "_score": 2,
-                    "_summary": "QT300 Accessories Specs Costs Chart Continue <ddd/> 16 Package 5 14 Grand Total 99 Results Data <c0>Test</c0> Group Gender <c0>Test</c0> Option 1 2 3 18-25 Male Package 4 Color <ddd/> ",
-                    "_source": {
+                    "hitId": "01BTQFB3LHZTAYBV2VXVEK22ETF5WOQGT2",
+                    "rank": 2,
+                    "summary": "QT300 Accessories Specs Costs Chart Continue <ddd/> 16 Package 5 14 Grand Total 99 Results Data <c0>Test</c0> Group Gender <c0>Test</c0> Option 1 2 3 18-25 Male Package 4 Color <ddd/> ",
+                    "resource": {
                         "@odata.type": "#microsoft.graph.driveItem",
                         "size": 34428,
                         "fileSystemInfo": {
@@ -146,9 +128,9 @@ Content-type: application/json
 }
 ```
 
-### Multi-level Sort
+## Example : Multi-level sort
 
-#### Request 
+### Request
 
 ```HTTP
 POST /search/query
@@ -162,10 +144,8 @@ Content-Type: application/json
       "entityTypes": [
           "microsoft.graph.driveItem"
       ],
-      "query": {
-          "query_string": {
-              "query": "test"
-          }
+       "query": {
+        "queryString": "contoso"
       },
       "sortProperties": [
           {
@@ -184,7 +164,7 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
 
 ```json
 {
@@ -198,10 +178,10 @@ Content-Type: application/json
             "hits": [
                 {
                     "@odata.type": "#microsoft.graph.searchHit",
-                    "_id": "01D6DZBXUX6RQ2OM7AIVEJFRQTD3W75L7V",
-                    "_score": 1,
-                    "_summary": "If you are projecting to a second monitor, use Presenter View on your PC to read the talk track and see where to click next (note that this is a PowerPoint, so the “clicks” are <ddd/> ",
-                    "_source": {
+                    "hitId": "01D6DZBXUX6RQ2OM7AIVEJFRQTD3W75L7V",
+                    "rank": 1,
+                    "summary": "If you are projecting to a second monitor, use Presenter View on your PC to read the talk track and see where to click next (note that this is a PowerPoint, so the “clicks” are <ddd/> ",
+                    "resource": {
                         "@odata.type": "#microsoft.graph.driveItem",
                         "size": 34122491,
                         "fileSystemInfo": {
@@ -230,10 +210,10 @@ Content-Type: application/json
                 },
                 {
                     "@odata.type": "#microsoft.graph.searchHit",
-                    "_id": "013C7INN2ZPRBMXUAPJNDKMJ2YHTGQLXJT",
-                    "_score": 2,
-                    "_summary": "You can use the Office Add-ins platform to build solutions that extend Office applications and interact with content in Office documents <ddd/> Your solution can run in Office across <ddd/> ",
-                    "_source": {
+                    "hitId": "013C7INN2ZPRBMXUAPJNDKMJ2YHTGQLXJT",
+                    "rank": 2,
+                    "summary": "You can use the Office Add-ins platform to build solutions that extend Office applications and interact with content in Office documents <ddd/> Your solution can run in Office across <ddd/> ",
+                    "resource": {
                         "@odata.type": "#microsoft.graph.driveItem",
                         "size": 7816159,
                         "fileSystemInfo": {
@@ -262,10 +242,10 @@ Content-Type: application/json
                 },
                 {
                     "@odata.type": "#microsoft.graph.searchHit",
-                    "_id": "013C7INN67OOARDMIO3BE23AHO3AMCC62W",
-                    "_score": 3,
-                    "_summary": "<c0>Test</c0> Credit Card Account Numbers <ddd/> While testing, use only the credit card numbers listed <ddd/> a different character count than the other <c0>test</c0> numbers, it is the correct and functional <ddd/> ",
-                    "_source": {
+                    "hitId": "013C7INN67OOARDMIO3BE23AHO3AMCC62W",
+                    "rank": 3,
+                    "summary": "<c0>Test</c0> Credit Card Account Numbers <ddd/> While testing, use only the credit card numbers listed <ddd/> a different character count than the other <c0>test</c0> numbers, it is the correct and functional <ddd/> ",
+                    "resource": {
                         "@odata.type": "#microsoft.graph.driveItem",
                         "size": 22418,
                         "fileSystemInfo": {
@@ -300,10 +280,9 @@ Content-Type: application/json
 
 ## Known limitations
 
-TODOSEARCHAPI @Nicolas
-- Relevant is not supported by multi-level sort
-- Sort by relevance is not valid thru request body
+- Sort is not supported for **message**, **event**, and **externalItem**.
+- Sort by relevance cannot be specified in the **sortProperties**.
 
 ## Next steps
 
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)

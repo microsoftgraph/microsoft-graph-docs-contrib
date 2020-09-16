@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Runs the query specified in the request body. Search results are provided in the response.
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
 ## Permissions
 
@@ -51,15 +51,15 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 
 If successful, this method returns `HTTP 200 OK` response code and a [searchResponse](../resources/searchresponse.md) collection object in the response body.
-
+ 
 ## Common use cases
 
 - Search [mail messages](/graph/search-concept-messages)
 - Search [calendar events](/graph/search-concept-events)
-- Search [files](/graph/search-concept-files)
-- Search [custom types (Connectors)](/graph/search-concept-custom-types) data
-
-@TODOSEARCHAPI-Include the links to all the samples
+- Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
+- Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
+- [Sort](/graph/search-concept-sort) search results
+- Use [aggregations](/graph/search-concept-aggregations) to refine search results
 
 ## Examples
 
@@ -87,13 +87,11 @@ Content-type: application/json
         "/external/connections/connectionfriendlyname"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso product"
-        }
+        "queryString": "contoso product"
       },
       "from": 0,
       "size": 25,
-      "stored_fields": [
+      "fields": [
         "title",
         "description"
       ]
@@ -145,10 +143,10 @@ Content-type: application/json
         {
           "hits": [
             {
-              "_id": "1",
-              "_score": 1,              
-              "_summary": "_summary-value",
-              "_source": "The source field will contain the underlying graph entity part of the response"
+              "hitId": "1",
+              "rank": 1,
+              "summary": "_summary-value",
+              "resource": "The source field will contain the underlying graph entity part of the response"
             }
           ],
           "total": 47,

@@ -3,7 +3,7 @@ title: "searchQueryString resource type"
 description: "searchQueryString"
 localization_priority: Normal
 author: "nmoreau"
-ms.prod: ""
+ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
@@ -13,9 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The search terms for the query.
+>[!WARNING]
+>The **searchQueryString** is deprecated. The query string should be now populated on the **queryString** property of the [searchQuery](searchquery.md) entity.
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+The search terms for the query.
 
 ## Properties
 

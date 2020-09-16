@@ -10,7 +10,7 @@ ms.prod: "search"
 
 You can use the Microsoft Search API to search for events in a user’s primary calendar. The user identity for the search is based on the auth token.
 
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
+[!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
 ## Example
 
@@ -29,9 +29,7 @@ Content-Type: application/json
         "event"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso"
-        }
+        "queryString":"contoso"
       },
       "from": 0,
       "size": 25
@@ -43,9 +41,9 @@ Content-Type: application/json
 ## Known limitations
 
 - You can only access a user’s own mailbox. Searching delegated mailboxes is not supported.
-- For events, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta) type contains the number of results on the page, not the total number of matching results.
+- For events, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta&preserve-view=true) type contains the number of results on the page, not the total number of matching results.
 - Sorting results is not supported for events. A sort clause in the request will return a Bad Request error code in the response.
 
 ## Next steps
 
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)

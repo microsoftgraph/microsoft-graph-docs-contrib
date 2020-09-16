@@ -8,21 +8,11 @@ ms.prod: "search"
 
 # Refine search results using aggregations
 
-TODOSEARCHAPI@TingTing Can you please take a stab at this page describing the key scenario for Sharepoint---
-- One example from sharepoint
-- Document the known limitations
-- The whole page below was copied from the Sharepoint File sample page. You should use the same structure. https://docs.microsoft.com/graph/search-concept-files
-ENDTODO
+Aggregation enable you to enrich search results by providing a representation of how the results are distributed in the index. 
 
-TODO : Define aggregations and the various possibilities
-Note that this page will be containing all the API details. So we should focus here on the key scenarios, not the specific API properties.
+## Example 1 : Request aggregations for a string property 
 
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
-
-## Examples
-
-### Example 1 : Request aggregations for a string property 
-#### Request
+### Request
 
 ```HTTP
 POST /search/query
@@ -32,12 +22,10 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-          "driveItem"
+          "listItem"
       ],
       "query": {
-          "query_string": {
-              "query": "test"
-          }
+          "queryString": "test"
       },
       "from": 0,
       "size": 25,
@@ -89,19 +77,19 @@ Content-type: application/json
                     "field": "FileType",
                     "buckets": [
                         {
-                            "@odata.type": "#microsoft.substrateSearch.searchHitsBucket",
+                            "@odata.type": "#microsoft.substrateSearch.searchBucket",
                             "key": "docx",
                             "count": 5,
                             "aggregationFilterToken": "\"ǂǂ646f6378\""
                         },
                         {
-                            "@odata.type": "#microsoft.substrateSearch.searchHitsBucket",
+                            "@odata.type": "#microsoft.substrateSearch.searchBucket",
                             "key": "xlsx",
                             "count": 3,
                             "aggregationFilterToken": "\"ǂǂ786c7378\""
                         },
                         {
-                            "@odata.type": "#microsoft.substrateSearch.searchHitsBucket",
+                            "@odata.type": "#microsoft.substrateSearch.searchBucket",
                             "key": "pptx",
                             "count": 1,
                             "aggregationFilterToken": "\"ǂǂ70707478\""
@@ -113,7 +101,7 @@ Content-type: application/json
                     "field": "contentclass",
                     "buckets": [
                         {
-                            "@odata.type": "#microsoft.substrateSearch.searchHitsBucket",
+                            "@odata.type": "#microsoft.substrateSearch.searchBucket",
                             "key": "STS_ListItem_DocumentLibrary",
                             "count": 9,
                             "aggregationFilterToken": "\"ǂǂ5354535f4c6973744974656d5f446f63756d656e744c696272617279\""
@@ -126,8 +114,9 @@ Content-type: application/json
 }
 ```
 
-### Example 2 : Request aggregations for a numeric value
-#### Request
+## Example 2 : Request aggregations for a numeric value
+
+### Request
 
 ```HTTP
 POST /search/query
@@ -142,9 +131,7 @@ Content-Type: application/json
                 "driveItem"
             ],
             "query": {
-                "query_string": {
-                    "query": "test"
-                }
+                "queryString": "test"
             },
             "from": 0,
             "size": 10,
@@ -176,9 +163,8 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
 
-<!---TODO nmoreau team Include one example of externalItem response.-->
 ```json
 {
     "@odata.type": "#microsoft.graph.searchResponse",
@@ -196,19 +182,19 @@ Content-Type: application/json
                     "field": "Size",
                     "buckets": [
                         {
-                            "@odata.type": "#microsoft.substrateSearch.searchHitsBucket",
+                            "@odata.type": "#microsoft.substrateSearch.searchBucket",
                             "key": "Less than 100",
                             "count": 0,
                             "aggregationFilterToken": "range(min, 100)"
                         },
                         {
-                            "@odata.type": "#microsoft.substrateSearch.searchHitsBucket",
+                            "@odata.type": "#microsoft.substrateSearch.searchBucket",
                             "key": "100 up to 1000",
                             "count": 0,
                             "aggregationFilterToken": "range(100, 1000)"
                         },
                         {
-                            "@odata.type": "#microsoft.substrateSearch.searchHitsBucket",
+                            "@odata.type": "#microsoft.substrateSearch.searchBucket",
                             "key": "1000 and up",
                             "count": 9,
                             "aggregationFilterToken": "range(1000, max, to=\"le\")"
@@ -223,8 +209,8 @@ Content-Type: application/json
 
 ## Known limitations
 
-TODOSEARCHAPI
+- Aggregation are only supported for SharePoint or OneDrive items. They are not supported for **externalItems, messages, events**.
 
 ## Next steps
 
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
