@@ -13,6 +13,10 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## September 2020
 
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Introduced the new Administrative Unites API. Administrative units allow organizations to subdivide their Azure Active Directory, and delegate administrative duties to those subdivisions. Subdivisions can represent regions, departments, cost centers, etc. This can now be managed through the Microsoft Graph API.|
+
 ### Cloud communications
 
 | **Change type** | **Version**   | **Description**                          |
