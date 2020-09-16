@@ -24,7 +24,7 @@ Update the **startDateTime**, **endDateTime**, **participants**, and **subject**
 | Application                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to update an online meeting on behalf of that user (user ID specified in the request path).
+> \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to update an online meeting on behalf of that user (user ID specified in the request path).
 
 ## HTTP request
 
@@ -42,7 +42,7 @@ PATCH https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
 
 > **Notes:**
 >
-> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy.md).
+> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId` is the **id** of an [onlineMeeting entity](../resources/onlinemeeting.md).
 
 ## Request headers

@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
-> \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to retrieve an online meeting on behalf of that user (user ID specified in the request path).
+> \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to retrieve an online meeting on behalf of that user (user ID specified in the request path).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}
 >
 > - The `/app` path is deprecated. Going forward, use the `/communications` path.
 > - `id` in the first two routes refers to [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up).
-> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy.md).
+> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId` is the **id** of an [onlineMeeting entity](../resources/onlinemeeting.md).
 
 ## Optional query parameters
