@@ -9,13 +9,13 @@ doc_type: conceptualPageType
 
 # Create, update, and delete connections to the Microsoft Graph connection
 
-Connections from external services to the Microsoft Search service are represented by the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta) resource in Microsoft Graph.
+Connections from external services to the Microsoft Search service are represented by the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) resource in Microsoft Graph.
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 The Microsoft Graph connectors platform offers a simple way to add your external data into the Microsoft Graph. A connection is a logical container for your external data that an administrator can manage as a single unit.
 
-Once a connection has been created, you can add your content from any external data source such as an on-premises content source or an external SaaS service. You can only view and manage the connections you created or were explicitly [authorized](/graph/api/external-post-connections?view=graph-rest-beta&tabs=http) to manage. A search admin can view and manage all the connections in the tenant from the Modern Admin Center.
+Once a connection has been created, you can add your content from any external data source such as an on-premises content source or an external SaaS service. You can only view and manage the connections you created or were explicitly [authorized](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) to manage. A search admin can view and manage all the connections in the tenant from the Modern Admin Center.
 
 <!-- markdownlint-disable MD036 -->
 ![Sample custom helpdesk system Tickets Connector Structure](./images/search-index-manage-connections-connector-structure.png)
@@ -57,29 +57,29 @@ The following table specifies which operations are available in each state.
 | Update item       | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
 | Delete item       | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
 
-A connection allows your application to [define a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta) for items that will be indexed, and provides an endpoint for your service to add, update, or delete items from the index. [Creating a connection](#create-a-connection) is the first step for an application to add items to the search index.
+A connection allows your application to [define a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta&preserve-view=true) for items that will be indexed, and provides an endpoint for your service to add, update, or delete items from the index. [Creating a connection](#create-a-connection) is the first step for an application to add items to the search index.
 
 ## Create a connection
 
 Before an application can add items to the search index, it must create and configure a connection using the following steps.
 
-- [Create a connection](/graph/api/external-post-connections?view=graph-rest-beta) with a unique ID, display name, and description.
-- [Register a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta) to define the fields that will be included in the index.
+- [Create a connection](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) with a unique ID, display name, and description.
+- [Register a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta&preserve-view=true) to define the fields that will be included in the index.
 
 > [!IMPORTANT]
 > Once a schema has been registered, it cannot be changed for an existing connection.
 
 ## Update a connection
 
-You can change the display name or description of an existing connection by [updating the connection](/graph/api/externalconnection-update?view=graph-rest-beta).
+You can change the display name or description of an existing connection by [updating the connection](/graph/api/externalconnection-update?view=graph-rest-beta&preserve-view=true).
 
 ## Delete a connection
 
-You can [delete a connection](/graph/api/externalconnection-delete?view=graph-rest-beta), and remove all items that were indexed via that connection.
+You can [delete a connection](/graph/api/externalconnection-delete?view=graph-rest-beta&preserve-view=true), and remove all items that were indexed via that connection.
 
 ## Next steps
 
 - [Register the connection schema](/graph/concepts/search-index-manage-schema.md)
-- [Review the Graph Connectors API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
+- [Review the Graph Connectors API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Overview for Microsoft Graph Connectors](/microsoftsearch/connectors-overview)
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub
