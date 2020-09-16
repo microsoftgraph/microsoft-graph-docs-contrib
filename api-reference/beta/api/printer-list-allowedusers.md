@@ -1,5 +1,5 @@
 ---
-title: List allowedUsers
+title: List allowedUsers for printer
 description: Retrieve a list of users who have been granted access to submit print jobs to the associated printer.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# List allowedUsers
+# List allowedUsers for printer
 
 Namespace: microsoft.graph
 
@@ -18,19 +18,22 @@ Retrieve a list of users who have been granted access to submit print jobs to th
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user's tenant must have an active Universal Print subscription.
+To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table. The signed in user must be a [Printer Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Users.Read.All |
+|Delegated (work or school account)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+|Application| Not Supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /print/printers/{id}/allowedUsers
 ```
+
+## Optional query parameters
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 | Name      |Description|
@@ -40,7 +43,7 @@ GET /print/printers/{id}/allowedUsers
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [userIdentity](../resources/userIdentity.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [printUserIdentity](../resources/printuseridentity.md) objects in the response body.
 ## Example
 ##### Request
 The following is an example of the request.
@@ -73,7 +76,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.userIdentity",
+  "@odata.type": "microsoft.graph.printUserIdentity",
   "isCollection": true
 } -->
 ```http
@@ -82,7 +85,7 @@ Content-type: application/json
 Content-length: 286
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.printIdentity)",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.printUserIdentity)",
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",

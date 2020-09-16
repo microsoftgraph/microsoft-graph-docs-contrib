@@ -4,7 +4,7 @@ description: "A file (such as a text file or Word document) attached to an event
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "outlook"
-author: "angelgolfer-ms"
+author: "svpsiva"
 ---
 
 # fileAttachment resource type
@@ -12,6 +12,8 @@ author: "angelgolfer-ms"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
 A file (such as a text file or Word document) attached to a user [event](../resources/event.md),
 [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md). 

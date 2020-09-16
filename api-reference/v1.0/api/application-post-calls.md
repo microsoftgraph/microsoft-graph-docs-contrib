@@ -85,7 +85,7 @@ Content-Type: application/json
     "audio"
   ],
   "mediaConfig": {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
   }
 }
 ```
@@ -184,6 +184,7 @@ Content-Type: application/json
   "answeredBy": null,
   "chatInfo": null,
   "meetingInfo": null,
+  "transcription": null,
   "toneInfo": null
 }
 ```
@@ -387,6 +388,7 @@ Content-Type: application/json
   "answeredBy": null,
   "chatInfo": null,
   "meetingInfo": null,
+  "transcription": null,
   "toneInfo": null
 }
 ```
@@ -574,11 +576,13 @@ Content-Type: application/json
       "user": {
         "@odata.type": "#microsoft.graph.identity",
         "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
-        "displayName": "Bob"
+        "displayName": "Bob",
+        "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
       }
     },
     "allowConversationWithoutHost": true
-  }
+  },
+  "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
 }
 ```
 ##### Response
@@ -647,6 +651,7 @@ Content-Type: application/json
     },
     "allowConversationWithoutHost": true
   },
+  "transcription": null,
   "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
   "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#app/calls/$entity",

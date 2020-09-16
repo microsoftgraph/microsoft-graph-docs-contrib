@@ -18,18 +18,18 @@ Retrieve the properties and relationships of a printer share.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user's tenant must have an active Universal Print subscription.
+In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription.
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Users.Read.All |
+|Delegated (work or school account)| PrinterShare.Read.All, PrinterShare.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application|Not Supported.|
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/printerShares/{id}
+GET /print/shares/{id}
 GET /print/printers/{id}/share
 ```
 
@@ -58,7 +58,7 @@ The following is an example of the request.
   "name": "get_printershare"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/printerShares/{id}
+GET https://graph.microsoft.com/beta/print/shares/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printershare-csharp-snippets.md)]
@@ -88,7 +88,7 @@ Content-type: application/json
 Content-length: 225
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printerShares/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
   "id": "d837c17b-3296-4384-a053-828d56e10f50",
   "name": "ShareName",
   "createdDateTime": "2020-02-04T00:00:00.0000000Z"

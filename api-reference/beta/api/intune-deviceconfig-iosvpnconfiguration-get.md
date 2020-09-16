@@ -1,13 +1,15 @@
 ---
 title: "Get iosVpnConfiguration"
 description: "Read properties and relationships of the iosVpnConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get iosVpnConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3198
+Content-Length: 3473
 
 {
   "value": {
@@ -149,6 +151,7 @@ Content-Length: 3198
         "probeRequiredUrl": "https://example.com/probeRequiredUrl/"
       }
     ],
+    "providerType": "appProxy",
     "proxyServer": {
       "@odata.type": "microsoft.graph.vpnProxyServer",
       "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -156,17 +159,24 @@ Content-Length: 3198
       "port": 4
     },
     "optInToDeviceIdSharing": true,
-    "providerType": "appProxy",
     "userDomain": "User Domain value",
     "strictEnforcement": true,
     "cloudName": "Cloud Name value",
     "excludeList": [
       "Exclude List value"
+    ],
+    "targetedMobileApps": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      }
     ]
   }
 }
 ```
-
 
 
 

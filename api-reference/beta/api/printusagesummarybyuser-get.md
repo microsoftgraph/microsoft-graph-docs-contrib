@@ -18,11 +18,11 @@ Retrieve a user's usage summary for a particular time period. See the [printUsag
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user's tenant must have an active Universal Print subscription.
+To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Users.Read.All |
+|Delegated (work or school account)| User.Read |
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application|Not Supported.|
 
@@ -34,6 +34,9 @@ GET /reports/monthlyPrintUsageSummariesByUser/{id}
 GET /print/reports/dailyPrintUsageSummariesByUser/{id}
 GET /print/reports/monthlyPrintUsageSummariesByUser/{id}
 ```
+
+## Optional query parameters
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 | Name      |Description|

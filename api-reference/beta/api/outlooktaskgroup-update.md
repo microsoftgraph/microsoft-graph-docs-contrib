@@ -1,17 +1,20 @@
 ---
 title: "Update outlooktaskgroup"
 description: "Update the writable properties of an Outlook task group."
-author: "angelgolfer-ms"
+author: "mashriv"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Update outlooktaskgroup
+# Update outlooktaskgroup (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Update the writable properties of an Outlook task group.
 

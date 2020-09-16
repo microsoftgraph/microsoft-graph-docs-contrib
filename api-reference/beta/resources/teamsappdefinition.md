@@ -21,6 +21,8 @@ The details of one version of a [teamsApp](teamsapp.md).
 |:------------------- |:-------- |:----------- |
 | id                  | string   | A unique id (not the teams appid). |
 | teamsAppId          | string   | The id from the Teams App manifest. |
+| publishingState| string|The published status of a specific version of a Teams app. Possible values are:</br>`submitted` — The specific version of the Teams app has been submitted and is under review. </br>`published`  — The request to publish the specific version of the Teams app has been approved by the admin and the app is published. </br> `rejected` — The request to publish the specific version of the Teams app was rejected by the admin. |
+| azureADAppId        | string   | The WebApplicationInfo.id from the Teams App manifest. |
 | displayName         | string   | The name of the app provided by the app developer. |
 | version             | string   | The version number of the application. |
 
@@ -37,11 +39,11 @@ The details of one version of a [teamsApp](teamsapp.md).
   "id": "string",
   "teamsAppId": "string",
   "displayName": "Test App",
-  "version": "1.0.0",
+  "version": "1.0.0"
 }
 ```
 
-# See also
+## See also
 
 - [teamsApp](teamsapp.md)
 - [teamsAppInstallation](teamsappinstallation.md)
@@ -59,4 +61,3 @@ The details of one version of a [teamsApp](teamsapp.md).
   "suppressions": []
 }
 -->
-

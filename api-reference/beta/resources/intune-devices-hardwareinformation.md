@@ -1,13 +1,15 @@
 ---
 title: "hardwareInformation resource type"
 description: "Hardware information of a given device."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # hardwareInformation resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -32,6 +34,9 @@ Hardware information of a given device.
 |operatingSystemLanguage|String|Operating system language of the device|
 |isSupervised|Boolean|Supervised mode of the device|
 |isEncrypted|Boolean|Encryption status of the device|
+|batterySerialNumber|String|The serial number of the device’s current battery|
+|batteryHealthPercentage|Int32|The device’s current battery’s health percentage. Valid values 0 to 100|
+|batteryChargeCycles|Int32|The number of charge cycles the device’s current battery has gone through. Valid values 0 to 2147483647|
 |isSharedDevice|Boolean|Shared iPad|
 |sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md) collection|All users on the shared Apple device|
 |tpmSpecificationVersion|String|String that specifies the specification version.|
@@ -41,6 +46,7 @@ Hardware information of a given device.
 |deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|Virtualization-based security status. . Possible values are: `running`, `rebootRequired`, `require64BitArchitecture`, `notLicensed`, `notConfigured`, `doesNotMeetHardwareRequirements`, `other`.|
 |deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Local System Authority (LSA) credential guard status. . Possible values are: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
 |osBuildNumber|String|Operating System Build Number on Android device|
+|operatingSystemProductType|Int32|Int that specifies the Windows Operating System ProductType. More details here https://go.microsoft.com/fwlink/?linkid=2126950. Valid values 0 to 2147483647|
 
 ## Relationships
 None
@@ -69,6 +75,9 @@ Here is a JSON representation of the resource.
   "operatingSystemLanguage": "String",
   "isSupervised": true,
   "isEncrypted": true,
+  "batterySerialNumber": "String",
+  "batteryHealthPercentage": 1024,
+  "batteryChargeCycles": 1024,
   "isSharedDevice": true,
   "sharedDeviceCachedUsers": [
     {
@@ -85,7 +94,8 @@ Here is a JSON representation of the resource.
   "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "String",
   "deviceGuardVirtualizationBasedSecurityState": "String",
   "deviceGuardLocalSystemAuthorityCredentialGuardState": "String",
-  "osBuildNumber": "String"
+  "osBuildNumber": "String",
+  "operatingSystemProductType": 1024
 }
 ```
 

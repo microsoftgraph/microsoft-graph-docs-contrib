@@ -7,74 +7,103 @@ localization_priority: Priority
 
 # What's new in Microsoft Graph
 
-See highlights of what's new in Microsoft Graph, and how you can [share your ideas](#want-to-stay-in-the-loop). For a complete list of API updates, see the [March](changelog.md#march-2020) section of the API changelog. 
+See highlights of what's new in the recent two months in Microsoft Graph, [what's added earlier](whats-new-earlier.md), and how you can [share your ideas](#want-to-stay-in-the-loop). For a detailed list of API-level updates, see the [API changelog](changelog.md). 
 
 > [!IMPORTANT]
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to generally available (GA) status. Do not use preview features in production apps.
 
-## March 2020: New and generally available
-
-### Change notifications
-[Track changes](/graph/api/orgcontact-delta?view=graph-rest-1.0) for [organizational contacts](/graph/api/resources/orgcontact?view=graph-rest-1.0).
-
-### Cloud communications
-- Get the call routing and incoming context of a [call](/graph/api/resources/call?view=graph-rest-1.0).
-- An app can [update the recording status](/graph/api/call-updaterecordingstatus?view=graph-rest-1.0) of a call.
-- Can specify recording information for a [participant](/graph/api/resources/participant?view=graph-rest-1.0), including the initiator and status of the recording.
-- Uniquely identify participants in a conference or participant-to-participant [call](/graph/api/resources/call?view=graph-rest-1.0) using the **callChainId** property.
-- Can identify as part of [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-1.0) the country code and endpoint type (such as Skype for Business, or Skype for Business VOIP) of the participant.
-- Third-party video teleconferencing (VTC) device partners can log and provide media quality data for their video teleconferencing devices through a Cloud Video Interop (CVI) bot and using the [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality?view=graph-rest-1.0) function. Media quality includes open-type data for [audio](/graph/api/resources/teleconferencedeviceaudioquality?view=graph-rest-1.0), [video](/graph/api/resources/teleconferencedevicevideoquality?view=graph-rest-1.0), and [screen-sharing](/graph/api/resources/teleconferencedevicescreensharingquality?view=graph-rest-1.0).
-
-### Files
-- [Remote items](/graph/api/resources/remoteitem?view=graph-rest-1.0) that are shared with a user, added to the user's OneDrive, or returned as a search result can contain metadata for an image or video.
-- [Follow](/graph/api/driveitem-follow?view=graph-rest-1.0) a [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) for convenient access, or for faciliating actions such as move, copy, and save-as. Use [unfollow](/graph/api/driveitem-unfollow?view=graph-rest-1.0) to stop following the drive item.
-- [Grant](/graph/api/permission-grant?view=graph-rest-1.0) permissions to users to access a sharing link, in order to share the corresponding drive item.
-
-### Identity and access
-- Use the **riskEventTypes_v2** property to get the risk event types associated with a [sign-in](/graph/api/resources/signin?view=graph-rest-1.0).
-- Use the `User.ManageIdentities.All` delegated permission to allow an app to read, update, or delete identities that are associated with a user's account, that the signed-in user has access to. Use that permission at the application-level without a signed-in user present. This allows the app to [manage](/graph/api/user-update?view=graph-rest-1.0) which identities a user can sign-in with.
+## September 2020: New and generally available
 
 ### Reports
-Use Teams Service Administrator and Teams Communications Administrator as accepted user roles to allow apps to read Office 365 service usage reports on behalf of a user, as [forms of user-delegated authorization](reportroot-authorization.md). 
+[Get a report that includes the count of unique users](/graph/api/reportroot-getemailappusageversionsusercounts) for Outlook 2019 and for Outlook on Microsoft 365.
 
-### Sites
-- Let users [follow](/graph/api/site-follow?view=graph-rest-1.0) or [unfollow](/graph/api/site-unfollow?view=graph-rest-1.0) SharePoint sites.
-- Use the **subscriptions** navigation property to get [change notification subscriptions](/graph/api/resources/subscription?view=graph-rest-1.0) to a SharePoint [list](/graph/api/resources/list?view=graph-rest-1.0).
+### Users
+Aside from getting the SMTP address of a [user](/graph/api/resources/user) through the **mail** property, you can now set that property and update the user's email address. 
 
-## March 2020: New in preview only
-
-### Calendar
-- Use the **calendarGroupId** property to get the [calendar group](/graph/api/resources/calendargroup?view=graph-rest-beta) in which a [calendar](/graph/api/resources/calendar?view=graph-rest-beta) has been created.
-- Use the **isDraft** property to identify an [event](/graph/api/resources/event?view=graph-rest-beta) as a meeting that the user has updated in Outlook but has not sent to update attendees.
+## September 2020: New in preview only
 
 ### Cloud communications
-- Use [createOrGet](/graph/api/onlinemeeting-createorget?view=graph-rest-beta) to get an [online meeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) instance by a custom external ID, and create one when none already exists.
-- Have the option to use the **externalId** property to identify an online meeting with the custom external ID.
-- Use the optional `Accept-Language` HTTP request header to [create](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) or [get](/graph/api/onlinemeeting-get?view=graph-rest-beta) an instance of online meeting, so that the successful operation displays the content of the **joinInformation** property in the specified language and locale variant.
+- Deprecation of the **autoAdmittedUsers** property of [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta). Instead, use the new **lobbyBypassSettings** property and its [values](/graph/api/resources/lobbybypasssettings?view=graph-rest-beta#lobbybypassscope-values).
+- Use additional settings about announcing callers joining or leaving an online meeting (**isEntryExitAnnounced** property), and allowing specific presenters in the meeting (**allowedPresenters** property).
 
-### Devices and apps
-Intune [March](changelog.md#march-2020) updates.
+### Devices and apps | Cloud printing
+- [Get the documents for each of the print jobs associated with a printer](/graph/api/printer-list-jobs?view=graph-rest-beta), by applying an `$expand` [OData system query option](/graph/api/printer-list-jobs?view=graph-rest-beta#optional-query-parameters). 
+- Filter print jobs by the user who created them, by applying a `$filter` [OData system query option](/graph/api/printer-list-jobs?view=graph-rest-beta#optional-query-parameters).
 
 ### Identity and access
-- Use the `Auditlogs.Read.All` permission to list the [sign-in activity](/graph/api/resources/signinactivity?view=graph-rest-beta) of a [user](/graph/api/resources/user?view=graph-rest-beta).
-- Use the `PrivilegedAccess.Read.AzureResources` application-level permission for [Privileged Identity Management (PIM) of Azure resources](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta), to set up just-in-time access workflow for Azure infrastructure roles at a management group, subscription, resource group, or resource level.
-- Use the [identitySecurityDefaultsEnforcementPolicy](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-beta) entity to [get](/graph/api/identitysecuritydefaultsenforcementpolicy-get?view=graph-rest-beta) or [update](/graph/api/identitysecuritydefaultsenforcementpolicy-update?view=graph-rest-beta) pre-configured default security settings that protect organizations against common attacks.
-- Use an `identity` segment when calling the conditional access APIs. For example, to [get](/graph/api/conditionalaccesspolicy-get?view=graph-rest-beta) a [conditional access policy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta): `GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies/{id}`.
-- Use the **authenticationRequirement** property to get the highest level of authentication that is needed through all the sign-in steps in order for [sign-in](/graph/api/resources/signin?view=graph-rest-beta) to succeed.
-- Use pagination when [listing provisioning events](/graph/api/provisioningobjectsummary-list?view=graph-rest-beta) that occurred in your tenant.
-
-### Search
-- To add data in a file to search results, index the data simply as an [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta). The **externalFile** type has been deprecated.
-- You can now [update](/graph/api/externalitem-update?view=graph-rest-beta) an [item in the index](/graph/api/resources/externalitem?view=graph-rest-beta), by specifically updating the plain-text representation of the item (represented by the **content** property), or the properties bag of the item (represented by the **properties** property). Updating any property in the properties bag overwrites the entire properties bag, so make sure to explicitly include all the properties of the item in the update.
-- Check for `HTTP 429` and the `Retry-After` response header after calling the [create](/graph/api/externalconnection-put-items?view=graph-rest-beta), [update](/graph/api/externalitem-update?view=graph-rest-beta), or [delete](/graph/api/externalitem-delete?view=graph-rest-beta) operation of **externalItem**. Backing off requests using the `Retry-After` delay is the fastest way to recover from [throttling](throttling.md#best-practices-to-handle-throttling).
+Be able to include a [schedule](/graph/api/resources/requestschedule?view=graph-rest-beta) when requesting or removing an [assignment of a user to an access package](/graph/api/resources/accesspackageassignment?view=graph-rest-beta), that specifies access to groups, applications, or SharePoint sites.
 
 ### Teamwork
-Use the `ChannelMessage.Read.All` application-level permission to read [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) instances in channels without a signed-in user.
+Get the date/time at which a Teams [channel](/graph/api/resources/channel?view=graph-rest-beta) or [team](/graph/api/resources/team?view=graph-rest-beta) is created.
 
-### Universal Print
-Debut of the [Universal Print API](universal-print-concept-overview.md) which allows users to print on the web or from an app. The API lets IT administrators manage user and group access to printers in the Microsoft 365 cloud, remote printer sharing to maintain availability, monitor printer status, and report on archived print jobs and usage. 
+## August 2020: New and generally available
 
-Note that as of March 2020, the Universal Print _service_ is in private preview. See [Announcing Universal Print: a cloud-based print solution](https://aka.ms/announcinguniversalprint) for information regarding participation.
+### Change notifications
+[Track changes](delta-query-overview.md) of supported resources in the Microsoft Graph for US Government national cloud.
+
+### Cloud communications
+- [Cancel](/graph/api/call-cancelmediaprocessing) any Interactive Voice Response (IVR) actions that are in process or in queue, that are either [playing an audio prompt](/graph/api/call-playprompt) or [recording a response](/graph/api/call-record).
+- Get [call transcription information](/graph/api/resources/calltranscriptioninfo) through the **transcription** property.
+
+### Teamwork
+- Use an alternative way to [create a team](/graph/api/team-post) directly without first creating a group.
+- Use the **members** navigation property to add members to a team with increased reliability and lower latency.
+- Get the publishing status of a Microsoft Teams [app](/graph/api/resources/teamsapp) through the **publishingState** property of the [app definition](/graph/api/resources/teamsappdefinition). The possible status values are `submitted`, `published`, and `rejected`. See an [example](/graph/api/teamsapp-list?view=graph-rest-1.0&tabs=http#example-3-list-applications-with-a-given-id-and-return-the-submission-review-state).
+- Use the `AppCatalog.Submit` delegated permission to allow a user to [submit an app](/graph/api/teamsapp-publish) and request administrator review. Use the same permission for a user to [cancel](/graph/api/teamsapp-delete) an app submitted in the past that has not been published. 
+
+
+## August 2020: New in preview only
+
+### Applications
+Support password-based single-sign-on in [service principal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) application resources and specify such [settings](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta) in the **passwordSingleSignOnSettings** property. For information about password-based single sign-on in Azure AD, see [configure password-based single-sign-on](/azure/active-directory/manage-apps/configure-password-single-sign-on-non-gallery-applications).
+
+### Calendar
+Enhance programmatic support for scenarios involving a recurring [event](/graph/api/resources/event?view=graph-rest-beta):
+- Reliably identify any occurrence in a recurring series, including a modified or cancelled occurrence, by using the **occurrenceId** property.
+- Get any exceptions in a recurring series by using the **exceptionOccurrences** property.
+- Get any cancellations in a series using the **cancelledOccurrences** property.
+
+### Change notifications
+- Use the **includeResourceData** property of a [subscription](/graph/api/resources/subscription?view=graph-rest-beta), to [set up change notifications that include resource data](webhooks-with-resource-data.md). Do not use the **includeProperties** property.
+- Get [change notifications delivered via Event Hub](change-notifications-delivery.md).
+
+### Devices and apps | Cloud printing
+- Grant all users and groups access to a [printer share](/graph/api/resources/printershare?view=graph-rest-beta) by using the **allowAllUser** property.
+- Use new delegated and application permissions to access or manage a [print document](/graph/api/resources/printDocument?view=graph-rest-beta), [print job](/graph/api/resources/printjob?view=graph-rest-beta), [printer](/graph/api/resources/printer?view=graph-rest-beta), [printer share](/graph/api/resources/printershare?view=graph-rest-beta), or [print task definition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta). For details, see cloud printing [August](changelog.md#august-2020) updates.
+
+### Devices and apps | Corporate management
+Intune [August](changelog.md#august-2020) updates in beta.
+
+### Identity and access | Governance
+- Customize a [terms of use agreement](/graph/api/resources/agreement?view=graph-rest-beta) to support an agreement expiration date and cadence, require the user to accept the agreement per device, or to re-accept the agreement on a set frequency. 
+- Use the **file** property to navigate to a [custom agreement](/graph/api/resources/agreementfile?view=graph-rest-beta) for terms of use. Do not use the **files** property.
+- Add, remove, and list internal or external sponsors who can approve requests from a [connected organization](/graph/api/resources/connectedorganization?view=graph-rest-beta) to access a group, application, or SharePoint Online site. See [entitlement management](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta) for more information.
+
+### Identity and access | Identity and sign-in
+- Enable further customizing an [authorization policy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta) for a tenant, such as allowing the [default user role](/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta) to create applications or security groups or to read other users, allowing users to sign up for email-based subscriptions or to join the tenant by email validation, or letting users self-serve password resets.
+- Manage [predefined, configurable policies as user flows within an Azure Active Directory B2C tenant](/graph/api/resources/b2cuserflows?view=graph-rest-beta). See more information about [B2C user flows](/azure/active-directory-b2c/user-flow-overview).
+- Enable [self-service sign-up experience as B2X user flows in an Azure Active Directory tenant](/graph/api/resources/b2xuserflows?view=graph-rest-beta). See more information about [self-service sign-up](/azure/active-directory/external-identities/self-service-sign-up-overview).
+
+### People and workplace intelligence | Profile
+Add and manage the following additional properties in a user's [profile](/graph/api/resources/profile?view=graph-rest-beta), and that can be surfaced in shared, people experiences across Microsoft 365 and third-party apps:
+- [addresses](/graph/api/resources/itemAddress?view=graph-rest-beta)
+- [anniversaries](/graph/api/resources/personAnniversary?view=graph-rest-beta)
+- [awards](/graph/api/resources/personAward?view=graph-rest-beta)
+- [certifications](/graph/api/resources/personCertification?view=graph-rest-beta)
+- [notes](/graph/api/resources/personAnnotation?view=graph-rest-beta)
+- [patents](/graph/api/resources/itemPatent?view=graph-rest-beta)
+- [publications](/graph/api/resources/itemPublication?view=graph-rest-beta)
+
+
+### Reports | Microsoft 365 usage reports
+Get [reports on Microsoft 365 apps usage](/graph/api/resources/microsoft-365-apps-usage-report?view=graph-rest-beta), specifically on user detail, user counts, and platform user counts.
+
+### Teamwork
+Get [content hosted in a chat message](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta), such as images or code snippets. See an [example](/graph/api/chatmessagehostedcontent-get?view=graph-rest-beta&branch=master#example-2-get-hosted-content-bytes-for-an-image) to get the content bytes of an image.
+
+### To-do tasks
+- Debut of a new set of API for [Microsoft To Do](todo-concept-overview.md), allowing app users to organize and track personal tasks across Microsoft 365 client apps. See [Use the Microsoft To Do API](/graph/api/resources/todo-overview?view=graph-rest-beta) for more information.
+- Deprecation of the [Outlook tasks API](/graph/api/resources/outlooktask?view=graph-rest-beta).
 
 
 ## Want to stay in the loop?
@@ -88,7 +117,7 @@ Here are some ways we can engage:
 
     2. Promoted to **_general availability_ (GA)** status, if sufficient feedback indicates viability. Any related REST API updates are added to the v1.0 endpoint (`https://graph.microsoft.com/v1.0`). 
 - Be an active member in the Microsoft Graph community! [Join](https://aka.ms/microsoftgraphcall) the monthly Microsoft Graph community call.
-- Sign up for the [Office 365 developer program](https://developer.microsoft.com/office/dev-program), get a free Office 365 subscription, and start developing!
+- Sign up for the [Microsoft 365 developer program](https://developer.microsoft.com/office/dev-program), get a free Microsoft 365 subscription, and start developing!
 
 
 ## See also

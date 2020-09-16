@@ -1,13 +1,15 @@
 ---
 title: "managedDeviceEncryptionState resource type"
 description: "Encryption report per device"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # managedDeviceEncryptionState resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -29,7 +31,7 @@ Encryption report per device
 |:---|:---|:---|
 |id|String|Key of the entity.|
 |userPrincipalName|String|User name|
-|deviceType|[deviceTypes](../resources/intune-deviceconfig-devicetypes.md)|Platform of the device. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
+|deviceType|[deviceTypes](../resources/intune-shared-devicetype.md)|Platform of the device. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |osVersion|String|Operating system version of the device|
 |tpmSpecificationVersion|String|Device TPM Version|
 |deviceName|String|Device name|

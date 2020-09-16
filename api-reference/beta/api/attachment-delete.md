@@ -4,7 +4,7 @@ description: "Delete an attachment from a calendar event, message, Outlook task,
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "outlook"
-author: "angelgolfer-ms"
+author: "svpsiva"
 ---
 
 # Delete attachment
@@ -12,6 +12,8 @@ author: "angelgolfer-ms"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
 Delete an attachment from a user calendar [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).
 

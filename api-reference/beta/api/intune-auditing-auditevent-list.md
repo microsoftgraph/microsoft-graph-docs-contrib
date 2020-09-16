@@ -1,13 +1,15 @@
 ---
 title: "List auditEvents"
 description: "List properties and relationships of the auditEvent objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List auditEvents
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1873
+Content-Length: 1975
 
 {
   "value": [
@@ -85,7 +87,9 @@ Content-Length: 1873
             "displayName": "Display Name value",
             "roleScopeTagId": "Role Scope Tag Id value"
           }
-        ]
+        ],
+        "remoteTenantId": "Remote Tenant Id value",
+        "remoteUserId": "Remote User Id value"
       },
       "activity": "Activity value",
       "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -114,7 +118,6 @@ Content-Length: 1873
   ]
 }
 ```
-
 
 
 

@@ -33,7 +33,7 @@ POST /groups/{id}/renew
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token} |
+| Authorization  | Bearer {token}. Required. |
 
 
 ## Request body

@@ -18,18 +18,18 @@ Delete a printer share (unshare the associated [printer](../resources/printer.md
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user's tenant must have an active Universal Print subscription.
+To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table. The signed in user must be a [Printer Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Users.Read.All |
+|Delegated (work or school account)| PrinterShare.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application|Not Supported.|
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /print/printerShares/{id}
+DELETE /print/shares/{id}
 DELETE /print/printers/{id}/share
 ```
 ## Request headers
@@ -53,7 +53,7 @@ The following is an example of the request.
   "name": "delete_printershare"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/print/printerShares/{id}
+DELETE https://graph.microsoft.com/beta/print/shares/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-printershare-csharp-snippets.md)]

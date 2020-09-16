@@ -1,17 +1,20 @@
 ---
 title: "Update outlooktaskfolder"
 description: "Update the writable properties of an Outlook task folder."
-author: "angelgolfer-ms"
+author: "mashriv"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Update outlooktaskfolder
+# Update outlooktaskfolder (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Update the writable properties of an Outlook task folder.
 

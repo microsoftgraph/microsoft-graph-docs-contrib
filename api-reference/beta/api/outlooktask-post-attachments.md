@@ -1,17 +1,20 @@
 ---
 title: "Create attachment"
 description: "Use this API to add an attachment to an outlookTask."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Create attachment
+# Create attachment (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Use this API to add an [attachment](../resources/attachment.md) to an [outlookTask](../resources/outlooktask.md). The attachment can be a file (of [fileAttachment](../resources/fileattachment.md) type) or Outlook item ([itemAttachment](../resources/itemattachment.md) type).
 
@@ -125,7 +128,7 @@ HTTP 201 Created
 Here is an example which attaches an event with another event as an item attachment.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "add_item_attachment_to_task"
 }-->
 

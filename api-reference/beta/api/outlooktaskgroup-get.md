@@ -1,17 +1,20 @@
 ---
 title: "Get outlookTaskGroup"
 description: "Get the properties and relationships of the specified Outlook task group."
-author: "angelgolfer-ms"
+author: "mashriv"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Get outlookTaskGroup
+# Get outlookTaskGroup (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Get the properties and relationships of the specified Outlook task group.
 ## Permissions

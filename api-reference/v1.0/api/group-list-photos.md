@@ -10,6 +10,7 @@ doc_type: apiPageType
 # List photos
 
 Namespace: microsoft.graph
+
 Retrieve a list of [profilePhoto](../resources/profilephoto.md) objects.
 
 ## Permissions

@@ -2,7 +2,7 @@
 title: "List unifiedRoleDefinitions"
 description: "Get a list of unifiedRoleDefinition objects."
 localization_priority: Normal
-author: "davidmu1"
+author: "abhijeetsinha"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
@@ -56,6 +56,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_roledefinitions"
@@ -64,6 +66,20 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-roledefinitions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-roledefinitions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -107,6 +123,12 @@ Content-type: application/json
                     ],
                     "condition": null
                 }
+            ],
+            "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('729827e3-9c14-49f7-bb1b-9608f156bbb8')/inheritsPermissionsFrom",
+            "inheritsPermissionsFrom": [
+                {
+                    "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+                }
             ]
         },
         {
@@ -127,6 +149,12 @@ Content-type: application/json
                         "microsoft.office365.supportTickets/allEntities/allTasks"
                     ],
                     "condition": null
+                }
+            ],
+            "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('f023fd81-a637-4b56-95fd-791ac0226033')/inheritsPermissionsFrom",
+            "inheritsPermissionsFrom": [
+                {
+                    "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
                 }
             ]
         },
@@ -150,6 +178,12 @@ Content-type: application/json
                         "microsoft.office365.supportTickets/allEntities/allTasks"
                     ],
                     "condition": null
+                }
+            ],
+            "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('b0f54661-2d74-4c50-afa3-1ec803f12efe')/inheritsPermissionsFrom",
+            "inheritsPermissionsFrom": [
+                {
+                    "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
                 }
             ]
         }

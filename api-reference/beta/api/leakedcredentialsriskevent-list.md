@@ -3,17 +3,17 @@ title: "List leakedCredentialsRiskEvents"
 description: "Retrieve a list of leakedcredentialsriskevent objects."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
-ms.prod: ""
+author: "cloudhandler"
+ms.prod: "microsoft-identity-platform"
 ---
 
-# List leakedCredentialsRiskEvents
+# List leakedCredentialsRiskEvents (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
+>[!CAUTION]
 >The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020. For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 Retrieve a list of leakedcredentialsriskevent objects.

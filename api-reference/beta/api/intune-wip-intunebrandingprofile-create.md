@@ -1,13 +1,15 @@
 ---
 title: "Create intuneBrandingProfile"
 description: "Create a new intuneBrandingProfile object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create intuneBrandingProfile
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -66,7 +68,9 @@ The following table shows the properties that are required when you create the i
 |onlineSupportSiteUrl|String|URL to the company/organization’s IT helpdesk site|
 |onlineSupportSiteName|String|Display name of the company/organization’s IT helpdesk site|
 |privacyUrl|String|URL to the company/organization’s privacy policy|
-|customPrivacyMessage|String|Text comments regarding what the admin has access to on the device|
+|customPrivacyMessage|String|Text comments regarding what the admin doesn't have access to on the device|
+|customCanSeePrivacyMessage|String|Text comments regarding what the admin has access to on the device|
+|customCantSeePrivacyMessage|String|Text comments regarding what the admin doesn't have access to on the device|
 |isRemoveDeviceDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Remove Device' action on corporate owned devices.|
 |isFactoryResetDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Factory Reset' action on corporate owned devices.|
 |companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md) collection|Collection of blocked actions on the company portal as per platform and device ownership types.|
@@ -88,7 +92,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles
 Content-type: application/json
-Content-length: 1792
+Content-length: 1940
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -127,6 +131,8 @@ Content-length: 1792
   "onlineSupportSiteName": "Online Support Site Name value",
   "privacyUrl": "https://example.com/privacyUrl/",
   "customPrivacyMessage": "Custom Privacy Message value",
+  "customCanSeePrivacyMessage": "Custom Can See Privacy Message value",
+  "customCantSeePrivacyMessage": "Custom Cant See Privacy Message value",
   "isRemoveDeviceDisabled": true,
   "isFactoryResetDisabled": true,
   "companyPortalBlockedActions": [
@@ -152,7 +158,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1964
+Content-Length: 2112
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -194,6 +200,8 @@ Content-Length: 1964
   "onlineSupportSiteName": "Online Support Site Name value",
   "privacyUrl": "https://example.com/privacyUrl/",
   "customPrivacyMessage": "Custom Privacy Message value",
+  "customCanSeePrivacyMessage": "Custom Can See Privacy Message value",
+  "customCantSeePrivacyMessage": "Custom Cant See Privacy Message value",
   "isRemoveDeviceDisabled": true,
   "isFactoryResetDisabled": true,
   "companyPortalBlockedActions": [
@@ -213,7 +221,6 @@ Content-Length: 1964
   ]
 }
 ```
-
 
 
 
