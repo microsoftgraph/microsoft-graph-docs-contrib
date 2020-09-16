@@ -9550,7 +9550,7 @@ items:
           - name: Get
             href: api/bitlockerrecoverykey-get.md
           - name: List 
-            href: api/bitlockerrecoverykey-list.md
+            href: api/bitlocker-list-recoverykeys.md
         - name: Contracts
           href: resources/contract.md
           items:
