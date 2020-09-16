@@ -54,3 +54,4 @@ You can use the following Microsoft Graph APIs to communicate with other Windows
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+

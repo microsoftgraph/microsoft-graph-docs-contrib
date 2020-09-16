@@ -3,7 +3,7 @@ title: "androidDeviceOwnerVpnConfiguration resource type"
 description: "By providing the configurations in this profile you can instruct the Android Fully Managed device to connect to desired VPN endpoint. By specifying the authentication method and security types expected by VPN endpoint you can make the VPN connection seamless for end user."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -51,8 +51,10 @@ Inherits from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfigurati
 |connectionType|[androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `microsoftTunnel`.|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Proxy server.|
 |targetedPackageIds|String collection|Targeted App package IDs.|
+|targetedMobileApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|Targeted mobile apps. This collection can contain a maximum of 500 elements.|
 |alwaysOn|Boolean|Whether or not to enable always-on VPN connection.|
 |alwaysOnLockdown|Boolean|If always-on VPN connection is enabled, whether or not to lock network traffic when that VPN is disconnected.|
+|microsoftTunnelSiteId|String|Microsoft Tunnel site ID.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -131,10 +133,23 @@ Here is a JSON representation of the resource.
   "targetedPackageIds": [
     "String"
   ],
+  "targetedMobileApps": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "String",
+      "publisher": "String",
+      "appStoreUrl": "String",
+      "appId": "String"
+    }
+  ],
   "alwaysOn": true,
-  "alwaysOnLockdown": true
+  "alwaysOnLockdown": true,
+  "microsoftTunnelSiteId": "String"
 }
 ```
+
+
+
 
 
 
