@@ -148,7 +148,7 @@ A few things to note about this type of notification:
 
 ## Responding to reauthorizationRequired notifications
 
-The `reauthorizationRequired`, you must reauthorize the subscription to maintain the data flow.
+When you receive a `reauthorizationRequired` lifecycle notification, you must reauthorize the subscription to maintain the data flow.
 
 You can create a long-lived subscription (3 days), which enables change notifications to flow to the **notificationUrl**. If the conditions of access have changed since the subscription was created, Microsoft Graph may require that you reauthorize the subscription to prove that you still have access to resource data. The following are examples of changes that affect your access to data:
 
