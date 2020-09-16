@@ -56,3 +56,5 @@ The following Graph resources are available to manage enrollment in Intune:
 - [VPP token sync status](intune-onboarding-vpptokensyncstatus.md)
 - [Windows 10 enrollment completion page configuration](intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)
 - [Windows Hello for business PIN usage](intune-onboarding-windowshelloforbusinesspinusage.md)
+
+

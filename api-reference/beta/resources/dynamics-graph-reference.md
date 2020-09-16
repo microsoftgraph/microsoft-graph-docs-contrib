@@ -63,3 +63,5 @@ The Dynamics 365 Business Central API can open up new ways for you to engage wit
 |unitsOfMeasure resource type|[unitsOfMeasure](../resources/dynamics-unitsofmeasure.md)|
 |vendor resource type|[vendor](../resources/dynamics-vendor.md)|
 -->
+
+
