@@ -35,7 +35,7 @@ PATCH /users/(user-id)/chats/{chatThread-id}/chatMessages/{message-id}
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Content-Type | string  | Nature of the data in the body of an entity. Required. |
+| Content-Type | application/json  | Nature of the data in the body of an entity. Required. |
 
 ## Request body
 
