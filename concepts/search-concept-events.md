@@ -6,9 +6,9 @@ localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API in Microsoft Graph to search calendar events
+# Use the Microsoft Search API to search calendar events
 
-You can use the Microsoft Search API to search for events in a user’s primary calendar. The user identity for the search is based on the auth token.
+Use the Microsoft Search API to search for events in a user’s primary calendar. The user identity for the search is based on the auth token.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 

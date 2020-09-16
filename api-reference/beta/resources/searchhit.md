@@ -51,7 +51,12 @@ The following is a JSON representation of the resource.
   "rank": 1,
   "summary": "String",
   "contentSource": "String",
-  "resource": { "@odata.type": "microsoft.graph.entity" }
+  "resource": { "@odata.type": "microsoft.graph.entity" },
+  "_id": "String",
+  "_score": 1024,
+  "_sortField": "String",
+  "_summary": "String",
+  "_source": { "@odata.type": "microsoft.graph.entity" }
 }
 ```
 

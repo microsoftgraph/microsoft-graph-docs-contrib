@@ -166,7 +166,7 @@ For backward compatibility, the original properties and types are accessible and
 |:-----------------------------------|:--------------|:------------------|:----------------|
 | [searchRequest](./searchrequest.md)| Rename property | **stored_fields** | **fields**      |
 | [searchQuery](./searchquery.md)    | Rename property | **query_string** | **queryString** |
-| [searchQueryString](./searchquerystring.md) | Remove type | Not applicable | Not applicable |
+| [searchQueryString](./searchquerystring.md) | Deprecate resource | Not applicable | Not applicable |
 | [searchHit](./searchhit.md)        | Rename property | **_id** | **hitId** |
 | [searchHit](./searchhit.md)        | Rename property | **_score** | **rank** |
 | [searchHit](./searchhit.md)        | Remove property | **_sortField** | Not applicable |

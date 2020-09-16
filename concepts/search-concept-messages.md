@@ -6,9 +6,9 @@ localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API in Microsoft Graph to search messages
+# Use the Microsoft Search API to search Outlook messages
 
-You can use the Microsoft Search API to search for information in email messages, return messages ranked by relevance, and render a dedicated search experience. The search applies to the body and attachments of messages in the user's own mailbox.
+Use the Microsoft Search API to search for information in email messages, return messages ranked by relevance, and render a dedicated search experience. The search applies to the body and attachments of messages in the user's own mailbox.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 

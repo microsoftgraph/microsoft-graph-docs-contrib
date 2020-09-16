@@ -7,15 +7,13 @@ ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
-# searchQueryString resource type
+# searchQueryString resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!WARNING]
->The **searchQueryString** is deprecated. The query string should be now populated on the **queryString** property of the [searchQuery](searchquery.md) entity.
-
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 The search terms for the query.
 
 ## Properties

@@ -60,7 +60,8 @@ The following is a JSON representation of the resource.
   "sortProperties": [{"@odata.type": "microsoft.graph.sortProperty"}],
   "aggregations": [{"@odata.type": "microsoft.graph.aggregationOption"}],
   "aggregationFilters": ["String"],
-  "enableTopResults": true
+  "enableTopResults": true,
+  "stored_fields": ["String"]
 }
 ```
 
