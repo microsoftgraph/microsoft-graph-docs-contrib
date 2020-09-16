@@ -20,11 +20,9 @@ The default sort order is ascending. Set the **isDescending** property to change
 ### Request
 
 ```HTTP
-POST /search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
-```
 
-```json
 {
   "requests": [
     {
@@ -47,7 +45,10 @@ Content-Type: application/json
 
 ### Response
 
-```json
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
     "@odata.type": "#microsoft.graph.searchResponse",
     "searchTerms": [

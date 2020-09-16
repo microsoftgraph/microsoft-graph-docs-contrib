@@ -21,9 +21,7 @@ This example searches in the user's calendar for the keyword "contoso", and will
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
-```
 
-```json
 {
   "requests": [
     {
