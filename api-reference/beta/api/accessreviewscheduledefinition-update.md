@@ -19,12 +19,11 @@ This API is not intended to update properties, including decisions, on the insta
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. Delegated permissions to personal Microsoft accounts are not supported. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     | AccessReview.ReadWrite.All |
-|Delegated (personal Microsoft account) | AccessReview.ReadWrite.All |
 |Application                            | AccessReview.ReadWrite.All |
 
 ## HTTP request
