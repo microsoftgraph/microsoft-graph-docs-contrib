@@ -23,8 +23,8 @@ Represents an Azure AD [access review](accessreviews-root.md).
 |[List accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-list.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) collection | Lists every `accessReviewScheduleDefinition`. Does not include associated `accessReviewInstance` instances in listings. |
 |[Get accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Get an `accessReviewScheduleDefinition` with a specified id. |
 |[Create accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-create.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Create a new `accessReviewScheduleDefinition`. |
-|[Delete accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Delete an `accessReviewScheduleDefinition` with a specified ID. |
-|[Update accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Update properties of an `accessReviewScheduleDefinition` with a specified ID, including reviewers. |
+|[Delete accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | None. | Delete an `accessReviewScheduleDefinition` with a specified ID. |
+|[Update accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | None. | Update properties of an `accessReviewScheduleDefinition` with a specified ID. |
 
 ## Properties
 | Property                  | Type                                | Required on Create                     | Description |
