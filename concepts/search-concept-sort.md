@@ -20,7 +20,7 @@ The default sort order is ascending. Set the **isDescending** property to change
 ### Request
 
 ```HTTP
-POST /search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 
 {

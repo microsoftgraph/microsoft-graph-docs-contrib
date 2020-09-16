@@ -15,7 +15,7 @@ Aggregation enable you to enrich search results by providing a representation of
 ### Request
 
 ```HTTP
-POST /search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 
 {
