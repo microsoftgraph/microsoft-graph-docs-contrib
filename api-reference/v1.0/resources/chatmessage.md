@@ -11,7 +11,7 @@ ms.prod: "microsoft-teams"
 
 Namespace: microsoft.graph
 
-Represents an individual chat message within a [channel](./channel.md) or (in beta) [chat](/graph/api/resources/chat?view=graph-rest-beta). The chat message can be a root chat message or part of a reply thread that is defined by the **replyToId** property in the chat message.
+Represents an individual chat message within a [channel](./channel.md) or (in beta) [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true). The chat message can be a root chat message or part of a reply thread that is defined by the **replyToId** property in the chat message.
 
 ## Methods
 
