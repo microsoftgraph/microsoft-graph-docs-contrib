@@ -60,7 +60,6 @@ Here is an example of the request.
   "name": "create_conversation_member"
 } -->
 ```http
-
 POST https://graph.microsoft.com/V1.0/teams/{id}/channels/{id}/members/
 content-type: application/json
 content-length: 26
