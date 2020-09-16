@@ -7,15 +7,17 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Update accessReview
+# Update accessReviewScheduleDefinition
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, update an existing [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object to change one or more of its properties, including reviewers.
+>[!NOTE]
+>Any updates made to an **accessReviewScheduleDefinition** will only apply to future instances. Currently running instances cannot be updated.
+>Additionally, this API is not intended to update properties, including decisions, on the **accessReviewInstance** level. See [accessReviewInstance](accessreviewinstance.md) for more information on instances.
 
-This API is not intended to update properties, including decisions, on the instance level. See [accessReviewInstance](accessreviewinstance.md) for more information. Additionally, to stop a review early, see [Stop a review]().
+In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, update an existing [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object to change one or more of its properties.
 
 
 ## Permissions
@@ -37,28 +39,25 @@ PUT /identityGovernance/accessReviews/definitions/{reviewID}
 | Content-type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of an [accessReview](../resources/accessreview.md) object.
+In the request body, supply a JSON representation of an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
-The following table shows the properties accepted to update an accessReview.
+The following table shows the properties accepted to update an accessReviewScheduleDefinition.
 
-| Property     | Type       | Required | Description |
-|:-------------|:------------|:-----|:------------|
-| `displayName`             |`String`                     | Yes       | Name of access review series.|
-| `descriptionForAdmins`    |`string`                     | Yes        | Context of the review provided to admins. |
-| `descriptionForReviewers` |`string`                     | Yes        | Context of the review provided to reviewers. |
-| `scope`                   |`microsoft.graph.accessReviewScope` | Yes | Defines scope of users reviewed in a group. See  [accessReviewScope](../resources/accessreviewscheduledefinition.md). | 
-| `instanceEnumerationScope`|`microsoft.graph.accessReviewScope` | No | In the case of an all groups review, this determines the scope of which groups will be reviewed. See [accessReviewScope](../resources/accessreviewscheduledefinition.md). | 
-| `settings`                |`microsoft.graph.accessReviewScheduleSettings`| No | The settings for an access review series. Recurrence is determined here. See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
-| `reviewers`               |`Collection(microsoft.graph.accessReviewReviewerScope)`| No | Defines who the reviewers are. If none are specified, the review will be a self-review (users reviewed review their own access). See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). |
-
-
+| Property     | Type       | Description | Additional Notes |
+|:-------------|:------------|:------------|:------------|
+| `displayName`             |`String`                      | Name of access review series.|
+| `descriptionForAdmins`    |`String`                       | Context of the review provided to admins. |
+| `descriptionForReviewers` |`String`                         | Context of the review provided to reviewers. |
+| `settings`                |`microsoft.graph.accessReviewScheduleSettings`| The settings for an access review series. Recurrence is determined here. See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
+| `reviewers`               |`Collection(microsoft.graph.accessReviewReviewerScope)`|  Defines who the reviewers are. If none are specified, the review will be a self-review (users reviewed review their own access). See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). | Reviewers field is only updatable if individual users assigned as reviewers. |
+Note that a PUT request expects the full object to be passed in, in addition to the properties being updated.
 
 ## Response
 If successful, this method returns a `204, Accepted` response code and no response body.
 
 ## Example
 
-This is an example of updating an access review series.
+This is an example of updating the displayName of an existing access review series.
 
 ##### Request
 In the request body, supply a JSON representation of the new properties of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
