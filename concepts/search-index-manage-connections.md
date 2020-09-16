@@ -1,5 +1,5 @@
 ---
-title: "Create, update, and delete connections to the Microsoft Graph Connection"
+title: "Create, update, and delete connections to the Microsoft Graph connection"
 description: "Learn how to use Microsoft Graph to create and manage connections"
 localization_priority: Priority
 author: "rsamai"
@@ -7,9 +7,11 @@ ms.prod: "search"
 doc_type: conceptualPageType
 ---
 
-# Create, update, and delete connections to the Microsoft Graph Connection
+# Create, update, and delete connections to the Microsoft Graph connection
 
 Connections from external services to the Microsoft Search service are represented by the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta) resource in Microsoft Graph.
+
+[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 The Microsoft Graph connectors platform offers a simple way to add your external data into the Microsoft Graph. A connection is a logical container for your external data that an administrator can manage as a single unit.
 
