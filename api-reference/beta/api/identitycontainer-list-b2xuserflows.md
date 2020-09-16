@@ -1,19 +1,19 @@
 ---
-title: "List b2xUserFlows"
-description: "Retrieve a list of b2xUserFlow objects."
+title: "List b2xIdentityUserFlow objects"
+description: "Retrieve a list of b2xIdentityUserFlow objects."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List b2xUserFlows
+# List b2xIdentityUserFlow objects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [b2xUserFlow](../resources/b2xuserflows.md) objects.
+Retrieve a list of [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) objects.
 
 ## Permissions
 
@@ -56,11 +56,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [b2xUserFlow](../resources/b2xuserflows.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) objects in the response body.
 
 ## Examples
 
-### Example 1: List all b2xUserFlows
+### Example 1: List all b2xIdentityUserFlow objects
 
 #### Request
 
@@ -126,7 +126,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: List all b2xUserFlows and expand identityProviders
+### Example 2: List all b2xIdentityUserFlow objects and expand identityProviders
 
 #### Request
 
