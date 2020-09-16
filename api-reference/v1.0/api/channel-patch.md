@@ -64,7 +64,7 @@ Here is an example of the request.
 PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 ```
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/patch-channel-objc-snippets.md)]
+
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
