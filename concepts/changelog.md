@@ -19,12 +19,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **lobbyBypassSettings**, **isEntryExitAnnounced**, and **allowedPresenters** property to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) entity.|
 
-### Scopes
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | The following permission scopes have been added:<ul><li>ShortNotes.Read</li><li>ShortNotes.ReadWrite</li><li>ShortNotes.Read.All</li><li>ShortNotes.ReadWrite.All</li></ul>See the [permissions reference](/graph/permissions-reference#short-notes-permissions) for details. |
-
 ### Devices and apps | Cloud printing
 
 | **Change type** | **Version**   | **Description**                          |
