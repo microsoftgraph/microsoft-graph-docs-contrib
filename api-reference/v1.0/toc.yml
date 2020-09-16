@@ -3647,8 +3647,6 @@ items:
             href: api/administrativeunit-update.md
           - name: Delete
             href: api/administrativeunit-delete.md
-          - name: Get delta
-            href: api/administrativeunit-delta.md
           - name: Add a member
             href: api/administrativeunit-post-members.md
           - name: List members
