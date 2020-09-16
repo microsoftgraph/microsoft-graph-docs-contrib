@@ -13,6 +13,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## September 2020
 
+### Cloud communications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the **lobbyBypassSettings**, **isEntryExitAnnounced**, and **allowedPresenters** property to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) entity.|
+| Addition | beta | Added support for application permissions to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) entity and associated methods. |
+
 ### Devices and apps | Cloud printing
 
 | **Change type** | **Version**   | **Description**                          |
@@ -82,7 +89,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |:----------------|:------------|:-----------------------------------------|
 | Addition        | Beta and v1.0 | Added the **outlookM365** and **outlook2019** properties to the [getEmailAppUsageVersionsUserCounts](/graph/api/resources/emailappusageversionsusercount?view=graph-rest-beta) entity.|
 
-
 ### Teamwork
 
 | **Change type** | **Version**   | **Description**                          |
@@ -122,7 +128,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta and v1.0 | Added the **transcription** property to the [call](/graph/api/resources/call) entity.|
 | Addition | v1.0 | Added the **cancelMediaProcessing** API to the [call](/graph/api/resources/call) entity.|
 | Addition | beta and v1.0 | Added the **transcription** property to the [call](/graph/api/resources/call) entity.|
 
