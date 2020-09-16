@@ -39,9 +39,11 @@ The following table represents an example of a possible schema for a work ticket
 If a property is searchable, its value is added to the full text index. When a user performs a search, we return results if there is a search hit in one of the searchable fields or its [content]((search-index-manage-item.md#content)).
 
 <!-- markdownlint-disable MD036 -->
+<!-->
 ![A search for "design" displaying results for hits against properties (title, tags) and content](./images/search-index-manage-schema-1.png)
 
 *A search for "design" displaying results for hits against properties (title, tags) and content*
+<-->
 
 ### Queryable
 
@@ -50,6 +52,7 @@ If a property is queryable, you can query against it using knowledge query langu
 > [!NOTE]
 > Suffix matching is not supported.
 
+<!-->
 ![A search for "search ba*" displaying results that match this prefix](./images/search-index-manage-schema-2.png)
 
 *A search for "search ba*" displaying results that match this prefix*
@@ -57,22 +60,27 @@ If a property is queryable, you can query against it using knowledge query langu
 ![A search for "tags:design" scoping down results to items with 'design' in the tags property](./images/search-index-manage-schema-3.png)
 
 *A search for "tags:design" scoping down results to items with 'design' in the tags property*
+<-->
 
 ### Retrievable
 
 If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large properties, such as `editHistory`, or too many properties as retrievable will increase search latency. Be selective and choose relevant properties.
 
+<!-->
 ![A set of retrievable properties (title, lastEditedBy etc.) rendered as a result](./images/search-index-manage-schema-4.png)
 
 *A set of retrievable properties (title, lastEditedBy etc.) rendered as a result*
+<-->
 
 ### Refinable
 
 If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page.
 
+<!-->
 ![A set of retrievable properties (title, lastEditedBy etc.) rendered as a result](./images/search-index-manage-schema-5.png)
 
 *A set of retrievable properties (title, lastEditedBy etc.) rendered as a result*
+<-->
 
 ## Labels
 
@@ -118,9 +126,11 @@ For discovery, i.e. search scenarios, please note:
 
 Labels also affect how default result types are generated. Adding the title label and content at a minimum will ensure that a result type is created for your connection.
 
+<!-->
 ![A default result type with a title and result snippet](./images/search-index-manage-schema-6.png)
 
 *A default result type with a title and result snippet*
+<-->
 
 Your default result type will provide a better experience when you define these labels, when applicable, listed by ascending order:
 
