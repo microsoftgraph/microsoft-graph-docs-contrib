@@ -64,7 +64,7 @@ The following is a JSON representation of the resource.
   "@microsoft.graph.temporaryId": "String (identifier)",
   "id": "String (identifier)",
   "contentBytes": "String (binary)",
-  "contentType": "String",
+  "contentType": "String"
 }
 ```
 
