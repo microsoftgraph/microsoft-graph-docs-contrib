@@ -27,9 +27,7 @@ Note that this page will be containing all the API details. So we should focus h
 ```HTTP
 POST /search/query
 Content-Type: application/json
-```
 
-```json
 {
   "requests": [
     {
@@ -71,7 +69,10 @@ Content-Type: application/json
 #### Response
 
 <!---TODO nmoreau team Include one example of externalItem response.-->
-```json
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
     "@odata.type": "#microsoft.graph.searchResponse",
     "hitsContainers": [

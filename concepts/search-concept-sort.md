@@ -36,9 +36,7 @@ In order to be valid, properties restriction should specify a valid, queryable m
 ```HTTP
 POST /search/query
 Content-Type: application/json
-```
 
-```json
 {
   "requests": [
     {
@@ -65,7 +63,10 @@ Content-Type: application/json
 
 ### Response
 
-```json
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
     "@odata.type": "#microsoft.graph.searchResponse",
     "searchTerms": [

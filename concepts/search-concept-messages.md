@@ -31,9 +31,7 @@ The following example queries messages in the signed-in user's mailbox that cont
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
-```
 
-```json
 {
   "requests": [
     {
@@ -56,7 +54,10 @@ Content-Type: application/json
 
 The following is an example of the response, which contains one message that matches the search criterion. 
 
-```json
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
   "value": [

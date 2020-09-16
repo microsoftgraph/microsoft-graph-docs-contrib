@@ -35,9 +35,7 @@ In this example, the content of the [AdventureWorks](https://docs.microsoft.com/
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
-```
 
-```json
 {
   "requests": [
     {

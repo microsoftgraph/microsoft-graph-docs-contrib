@@ -25,9 +25,7 @@ You can control the scope of your request to SharepPoint and OneDrive by specify
 ```HTTP
 POST /search/query
 Content-Type: application/json
-```
 
-```json
 {
   "requests": [
     {
@@ -48,7 +46,10 @@ Content-Type: application/json
 
 #### Response
 
-```json
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
   "value": [
