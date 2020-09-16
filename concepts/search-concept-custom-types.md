@@ -8,17 +8,17 @@ ms.prod: "search"
 
 # Use the Microsoft Search API to search custom types imported using Microsoft Graph connectors
 
-Use the Microsoft Search API to search accross content ingested and indexed by the [Microsoft Graph connectors](https://docs.microsoft.com/microsoftsearch/connectors-overview). The content can have been imported either via the [built in connectors](https://docs.microsoft.com/microsoftsearch/connectors-gallery) provided by Microsoft, or via a custom connectors implemented through the [Graph Connectors ingestion API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).
+Use the Microsoft Search API to search accross content ingested and indexed by [Microsoft Graph connectors](https://docs.microsoft.com/microsoftsearch/connectors-overview). The content is imported either via [built-in connectors](https://docs.microsoft.com/microsoftsearch/connectors-gallery) provided by Microsoft, or via custom connectors implemented using the [Microsoft Graph connectors ingestion API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-Once the content has been imported and indexed, you can use the search API to query that particular content.
+Once the content has been imported and indexed, you can use the search API to query the content.
 
-To search for custom types, specify the following in the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method request body:
+To search for custom types, specify the following properties in the request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method:
 
-- The **contentSources** property to include the connection ID that is assigned during the connector setup. It is possible to pass multiple connection ID to search accross multiple connections. The results will be a single list, ranked accross the multiple connections.
+- The **contentSources** property to include the connection ID that is assigned during the connector setup. You can pass multiple connection IDs to search across multiple connections. Results are returned in a single list, ranked accross the multiple connections.
 
 <!--
 TODOSEARCHAPI - Bug 1653398 
@@ -26,7 +26,7 @@ TODOSEARCHAPI - Bug 1653398
 
 - The **entityTypes** property as `externalItem`.
 
-- The **fields** property to include the fields in the external item you want to retrieve.
+- The **fields** property to include the fields in the external item to retrieve.
 
 ## Example
 
