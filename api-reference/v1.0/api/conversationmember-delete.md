@@ -74,6 +74,5 @@ Here is an example of the response.
   "blockType": "response"
 } -->
 ```http
-
 HTTP/1.1 204 No Content
 ```
