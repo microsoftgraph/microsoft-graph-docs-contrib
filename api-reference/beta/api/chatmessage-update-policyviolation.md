@@ -1,6 +1,6 @@
 ---
 title: "Update chatMessage"
-description: "Update a chatMessage with a Data Loss Prevention (DLP) policy violation."
+description: "Update the policyViolation property of a chatMessage."
 author: "clearab"
 doc_type: apiPageType
 localization_priority: Normal 
@@ -12,8 +12,7 @@ ms.prod: "microsoft-teams"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-Update a [chatMessage](../resources/chatMessage.md). 
-Only the policyViolation field of the chatMessage may be changed.
+Update a [chatMessage](../resources/chatMessage.md) object. Only the **policyViolation** property of a **chatMessage** can be updated.
 
 ## Permissions
 
