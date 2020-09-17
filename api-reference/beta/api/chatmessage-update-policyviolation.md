@@ -34,15 +34,14 @@ PATCH /users/(user-id)/chats/{chatThread-id}/chatMessages/{message-id}
 
 ## Request headers
 
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type | application/json  | Nature of the data in the body of an entity. Required. |
+| Name       | Description|
+|:-----------|:----------|
+| Authorization  | Bearer {token}. Required. |
+| Content-Type | application/json. Required. |
 
 ## Request body
 
-In the request body, supply a JSON representation of the [chatMessage](../resources/chatMessage.md) object.
-Only the policyViolation field of the chatMessage may be changed.
+In the request body, supply a JSON representation of the [chatMessage](../resources/chatMessage.md) object. Only the **policyViolation** property can be updated.
 
 ## Response
 
@@ -52,7 +51,7 @@ If successful, this method returns a `200 OK` response.
 
 ### Request
 
-The following is an example of the request for updating DLP properties on a Microsoft Teams channel message.
+The following is an example of the request to update the **policyViolation** property on a Microsoft Teams channel message.
 
 <!-- {
   "blockType": "request",
