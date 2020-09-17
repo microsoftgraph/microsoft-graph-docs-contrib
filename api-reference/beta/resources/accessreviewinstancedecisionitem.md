@@ -29,7 +29,7 @@ Represents an Azure AD [access review](accessreviews-root.md) decision on an ins
 | `accessReviewId`                |`String`                      | ID of the review                                                                                       |
 | `reviewedBy`                    |`microsoft.graph.userIdentity`| Reviewer user ID                                                                                       |
 | `reviewedDate`                  |`DateTimeOffset`              | DateTime when review occurred                                                                     |
-| `decision`                      |`String`                      | Result of the review                                                                                   |
+| `decision`                      |`String`                      | Result of the review. Values can be: `Approve` `Deny` `NotReviewed` `DontKnow`.                                                                                   |
 | `justification`                 |`String`                      | Review decision justification                                                                          |
 | `appliedBy`                     |`microsoft.graph.userIdentity`| User ID of the user who applied the decision                                                           |
 | `appliedDateTime`               |`DateTimeOffset`              | DateTime when approval decision was applied                                                           |
