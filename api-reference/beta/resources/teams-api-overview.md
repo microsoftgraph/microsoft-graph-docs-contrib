@@ -131,3 +131,5 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 
 - [Microsoft Teams API overview](/graph/teams-concept-overview)
 - Sample code: [Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [C# mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph)
+
+

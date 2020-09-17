@@ -114,6 +114,9 @@ The following Graph resources are available to manage app protection polices in 
 - [Mobile app publishing state](intune-apps-mobileapppublishingstate.md)
 - [Mobile app relationship](intune-apps-mobileapprelationship.md)
 - [Mobile app relationship state](intune-apps-mobileapprelationshipstate.md)
+- [Mobile app relationship type](intune-apps-mobileapprelationshiptype.md)
+- [Mobile app supersedence](intune-apps-mobileappsupersedence.md)
+- [Mobile app supersedence type](intune-apps-mobileappsupersedencetype.md)
 - [Mobile contained app](intune-apps-mobilecontainedapp.md)
 - [Mobile LOB app](intune-apps-mobilelobapp.md)
 - [Office client checkin status](intune-cirrus-officeclientcheckinstatus.md)
@@ -179,3 +182,5 @@ The following Graph resources are available to manage app protection polices in 
 - [Windows store app](intune-apps-windowsstoreapp.md)
 - [Windows universal AppX](intune-apps-windowsuniversalappx.md)
 - [Windows universal AppX contained app](intune-apps-windowsuniversalappxcontainedapp.md)
+
+

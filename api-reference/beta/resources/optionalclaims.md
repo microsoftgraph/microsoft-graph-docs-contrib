@@ -37,3 +37,5 @@ Here is a JSON representation of the resource.
   "saml2Token": [{"@odata.type": "microsoft.graph.optionalClaim"}]
 }
 ```
+
+
