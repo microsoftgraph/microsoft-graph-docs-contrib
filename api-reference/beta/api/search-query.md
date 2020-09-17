@@ -19,7 +19,7 @@ Runs the query specified in the request body. Search results are provided in the
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). Below, the minimum permission are listed, and individual permission with larger scope will also work. <br> Ex : If you provide Files.ReadWrite.All scope, this will suffice to access ressources protected with Files.Read.All.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). 
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -46,7 +46,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|requests|[searchRequest](../resources/searchrequest.md) collection|The search request to be sent to the query endpoint formatted in a JSON blob. It contains the type of entities expected in the response, the underlying sources, the paging parameters, the requested fields, and the actual search query.|
+|requests|[searchRequest](../resources/searchrequest.md) collection|A collection of search requests each formatted in a JSON blob. Each JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, requested fields, and actual search query.|
 
 ## Response
 
