@@ -33,7 +33,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 |from|Int32|Specifies the offset for the search results. Offset 0 returns the very first result. Optional.|
 |query|[searchQuery](searchquery.md)|Contains the query terms. Required.|
 |size|Int32|The size of the page to be retrieved. Optional.|
-|sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most sort properties in the collection. Optional.|
+|sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most 5 sort properties in the collection. Optional.|
 |stored_fields (deprecated)|String collection |This is now replaced byse the **fields** property. Optional. |
 
 
