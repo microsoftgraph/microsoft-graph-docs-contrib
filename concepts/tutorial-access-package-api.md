@@ -25,17 +25,18 @@ To successfully complete this tutorial, make sure that you have the required pre
     2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. After you successfully sign in, you can see the user account details in the left-hand pane.
     3. Select the settings icon to the right of the user account details, and then select **Select permissions**.
 
-        ![Select the Microsoft Graph permissions.](./images/tutorial-access-package-api/set-permissions.png)
+        ![Select the Microsoft Graph permissions](./images/tutorial-access-package-api/set-permissions.png)
         
-    4. Scroll through the list of permissions to the `Group` permissions, expand **Group (2)**, select the **Group.ReadWrite.All** permission.
-    5. Scroll further down the list of permissions to the `User` permissions, expand **User (8)**, press the **Ctrl** key and select the **User.ReadWrite.All** permission.
+    4. Scroll through the list of permissions to the `Group` permissions, expand **Group (2)**, select the **Group.ReadWrite.All** permission. Scroll further down the list of permissions to the `User` permissions, expand **User (8)**, and select the **User.ReadWrite.All** permission.
 
-        ![Search for the user permissions.](./images/tutorial-access-package-api/set-user-permission.png)
+        ![Search for the user, group, and entitlementmanagement permissions](./images/tutorial-access-package-api/set-user-permission.png)
     
-    6. Select **Accept** to accept the consent of the permissions. You do not need to consent on behalf of your organization for these permissions.
-    7. Search for the `EntitlementManagement` permissions, expand **EntitlementManagement (2)**, select the **Entitlement.ReadWrite.All** permission, and then select **Consent**. Because this permission requires admin consent and is needed by a user account that you create in this tutorial, you must select **Consent on behalf of your organization**.
+    5. Select **Consent**, and then select **Accept** to accept the consent of the permissions. You do not need to consent on behalf of your organization for these permissions.
+    6. Search for the `EntitlementManagement` permissions, expand **EntitlementManagement (2)**, select the **Entitlement.ReadWrite.All** permission, and then select **Consent**. Because this permission requires admin consent and is needed by a user account that you create in this tutorial, you must select **Consent on behalf of your organization**.
 
         ![Consent for organization](./images/tutorial-access-package-api/consent-for-organization.png)
+
+    7. Select **Accept** to accept the consent of the permissions.
 
 ## Step 1: Create a user account and a group
 
