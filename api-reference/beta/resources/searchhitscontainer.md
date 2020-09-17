@@ -1,6 +1,6 @@
 ---
 title: "searchHitsContainer resource type"
-description: "Description on searchHitContainer"
+description: "Represent the list of search results."
 localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
