@@ -63,7 +63,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |importance|string | The importance of the chat message. The possible values are: `normal`, `high`, `urgent`.|
 |reactions| [chatMessageReaction](./chatmessagereaction.md) collection | Reactions for this chat message (for example, Like).|
 |locale|string|Locale of the chat message set by the client.|
-| policyViolation | [chatMessagePolicyViolation](../resources/chatmessagepolicyviolation.md) |Define the properties for the Data Loss Prevention (DLP) violation.|
+| policyViolation | [chatMessagePolicyViolation](../resources/chatmessagepolicyviolation.md) |Defines the properties of a policy violation set by a data loss prevention (DLP) application.|
 
 ## JSON representation
 
