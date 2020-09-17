@@ -26,7 +26,7 @@ Represents an Azure AD [access review](accessreviews-root.md) decision on an ins
 | Property                  | Type                                |  Description |
 | :-------------------------| :---------------------------------- | :---------- |
 | `id`                            |`String`                      | ID of the decision                                                                                     |
-| `accessReviewId`                |`String`                      | ID of the review                                                                                       |
+| `accessReviewId`                |`String`                      | ID of the accessReviewInstance parent                                                                                       |
 | `reviewedBy`                    |`microsoft.graph.userIdentity`| Reviewer user ID                                                                                       |
 | `reviewedDate`                  |`DateTimeOffset`              | DateTime when review occurred                                                                     |
 | `decision`                      |`String`                      | Result of the review. Values can be: `Approve` `Deny` `NotReviewed` `DontKnow`.                                                                                   |
@@ -35,13 +35,13 @@ Represents an Azure AD [access review](accessreviews-root.md) decision on an ins
 | `appliedDateTime`               |`DateTimeOffset`              | DateTime when approval decision was applied                                                           |
 | `applyResult`                   |`String`                      | Result of applying the decision. Values are: `NotApplied` `Success` `Failed` `NotFound` `NotSupported`.                      |
 | `recommendation`          |`String`                      | System-generated recommendation for the approval decision. Values are: `Approve` `Deny` `NotAvailable`. |
-| `target`                       |`microsoft.graph.accessReviewInstanceDecisionItemTarget`                      | Target of this specific decision. Decision Targets can be of different types – each one with its own specific properties. |
+| `target`                       |`microsoft.graph.accessReviewInstanceDecisionItemTarget`                      | Target of this specific decision. Decision Targets can be of different types – each one with its own specific properties. See type definition below. |
 
 ## Relationships
 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-| `instance`               |[accessReviewInstance](accessreviewinstance.md)          | There is exactly one `accessReviewInstance` associated with each decision. The instance is the parent of the decision item, representing the recurrence of an access review the decision is made on. |
+| `instance`               |[accessReviewInstance](accessreviewinstance.md)          | There is exactly one `accessReviewInstance` associated with each decision. The instance is the parent of the decision item, representing the recurrence of the access review the decision is made on. |
 
 
 ## JSON representation
@@ -60,15 +60,31 @@ Here is a JSON representation of the resource.
 ```json
 {
  "id": "string (identifier)",
- "displayName": "string",
- "startDateTime": "string (timestamp)",
- "endDateTime": "string (timestamp)",
- "status": "string",
- "scope": "microsoft.graph.accessReviewScope",
- "decisions": "Collection(microsoft.graph.accessReviewInstanceDecisionItem)",
- "definition":"microsoft.graph.accessReviewScheduleDefinition"
+ "accessReviewId": "string",
+ "reviewedBy": "microsoft.graph.userIdentity",
+ "reviewedDate": "string (timestamp)",
+ "decision": "string",
+ "justification": "string",
+ "appliedBy": "microsoft.graph.userIdentity",
+ "appliedDateTime": "DateTimeOffset",
+ "applyResult": "string",
+ "recommendation": "string",
+ "target":"microsoft.graph.accessReviewInstanceDecisionItemTarget"
 }
 ```
+
+## accessReviewInstanceDecisionItemTarget
+
+The **accessReviewInstanceDecisionItemTarget** represents a base class for different types of targets, each one with its own specific properties. The supported target types are as follows: `accessReviewInstanceDecisionItemUserTarget` and `accessReviewInstanceDecisionItemServicePrincipalTarget`.
+
+## accessReviewInstanceDecisionItemUserTarget
+
+The **accessReviewInstanceDecisionItemUserTarget** represents a user identity as the target for a review
+
+| Property                     | Type                      | Description |
+| :--------------------------- | :------------------------ | :---------- |
+| `userID`          |`String`  | The query for what needs to be reviewed. See table for examples. |
+| `queryType`          |`String`  | The type of query. Examples include MicrosoftGraph and ARM. |
 
 <!--
 {
