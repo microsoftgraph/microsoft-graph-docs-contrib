@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# List bitlockerRecoveryKeys
+# List recoveryKeys
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
