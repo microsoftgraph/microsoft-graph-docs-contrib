@@ -12023,7 +12023,7 @@ items:
         - name: Reply to message
           href: api/channel-post-messagereply.md
         - name: Update message
-          href: api/chatmessage-update-policyviolation.md
+          href: api/chatmessage-update.md
         - name: List hosted content
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content
