@@ -15,8 +15,7 @@ You can use the Microsoft Search API to query Microsoft 365 data in your apps.
 
 Search requests run in the context of the signed-in user, identified using an [access token with delegated permissions](/graph/auth-v2-user).
 
->[!WARNING]
->The API schema has changed, with properties in a search request and response being renamed or removed. See [more details](#schema-change-deprecation-warning) about the deprecation.
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
 ## Common use cases
 
