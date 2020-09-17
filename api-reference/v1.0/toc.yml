@@ -3636,6 +3636,35 @@ items:
         href: resources/azure-ad-overview.md
       - name: Directory management
         items:
+        - name: Administrative unit
+          href: resources/administrativeunit.md
+          items:
+          - name: List
+            href: api/administrativeunit-list.md
+          - name: Create
+            href: api/administrativeunit-post-administrativeunits.md
+          - name: Get
+            href: api/administrativeunit-get.md
+          - name: Update
+            href: api/administrativeunit-update.md
+          - name: Delete
+            href: api/administrativeunit-delete.md
+          - name: Add a member
+            href: api/administrativeunit-post-members.md
+          - name: List members
+            href: api/administrativeunit-list-members.md
+          - name: Get a member
+            href: api/administrativeunit-get-members.md
+          - name: Remove a member
+            href: api/administrativeunit-delete-members.md
+          - name: Add a scoped-role administrator
+            href: api/administrativeunit-post-scopedrolemembers.md
+          - name: List scoped-role administrators
+            href: api/administrativeunit-list-scopedrolemembers.md
+          - name: Get a scoped-role administrator
+            href: api/administrativeunit-get-scopedrolemembers.md
+          - name: Remove a scoped-role administrator
+            href: api/administrativeunit-delete-scopedrolemembers.md
         - name: Contracts
           href: resources/contract.md
           items:

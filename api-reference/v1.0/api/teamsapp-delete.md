@@ -107,3 +107,4 @@ DELETE https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93
 ```http
 HTTP/1.1 204 No Content
 ```
+

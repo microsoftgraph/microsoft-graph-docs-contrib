@@ -27,3 +27,5 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 - See the [notification resource](../resources/projectrome-notification.md) and create notifications to engage with your users. 
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Get started with client integration by following the steps in the [integration overview](/graph/notifications-integration-e2e-overview) topic.
+
+
