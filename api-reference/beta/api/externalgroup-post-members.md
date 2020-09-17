@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|ExternalItem.ReadWrite.All|
 
 ## HTTP request
 
@@ -49,16 +49,16 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description**|
-|type|externalGroupMemberType|**TODO: Add Description**. Possible values are: `user`, `group`.|
-|identitySource|identitySourceType|**TODO: Add Description**. Possible values are: `azureActiveDirectory`, `external`.|
+|id|String|The unique `id` of the member. It would be the objectId in case of Azure Active Directory users or groups and the externalGroupId in case of external groups.|
+|type|externalGroupMemberType|The type of member added to the external group. Possible values are: `user` or `group` when the identitySource is `azureActiveDirectory` and just `group` when the identitySource is `external`.|
+|identitySource|identitySourceType|The identity source that the member belongs to. Possible values are: `azureActiveDirectory`, `external`.|
 
 ## Response
 
 If successful, this method returns a `201 Created` response code and an [externalGroupMember](../resources/externalgroupmember.md) object in the response body.
 
 ## Examples
-
+### Example 1: Add an Azure Active Directory user as a member
 ### Request
 
 <!-- {
@@ -68,14 +68,15 @@ If successful, this method returns a `201 Created` response code and an [externa
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/connections/{connectionsId}/groups/{externalGroupId}/members
+POST https://graph.microsoft.com/beta/connections/contosohr/groups/31bea3d537902000/members
 Content-Type: application/json
 Content-length: 127
 
 {
   "@odata.type": "#microsoft.substrateConnectors.externalGroupMember",
-  "type": "String",
-  "identitySource": "String"
+  "id": "e811976d-83df-4cbd-8b9b-5215b18aa874",
+  "type": "user",
+  "identitySource": "azureActiveDirectory"
 }
 ```
 
@@ -95,8 +96,97 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 {
   "@odata.type": "#microsoft.substrateConnectors.externalGroupMember",
-  "id": "98fad45e-d45e-98fa-5ed4-fa985ed4fa98",
-  "type": "String",
-  "identitySource": "String"
+  "id": "e811976d-83df-4cbd-8b9b-5215b18aa874",
+  "type": "user",
+  "identitySource": "azureActiveDirectory"
+}
+```
+
+
+### Example 2: Add an Azure Active Directory group as a member
+### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_externalgroupmember_from_"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/connections/contosohr/groups/31bea3d537902000/members
+Content-Type: application/json
+Content-length: 127
+
+{
+  "@odata.type": "#microsoft.substrateConnectors.externalGroupMember",
+  "id": "e5477431-1038-484e-bf69-1dfedb97a110",
+  "type": "group",
+  "identitySource": "azureActiveDirectory"
+}
+```
+
+### Response
+
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.substrateConnectors.externalGroupMember"
+}
+-->
+
+``` http
+HTTP/1.1 201 Created
+
+Content-Type: application/json
+{
+  "@odata.type": "#microsoft.substrateConnectors.externalGroupMember",
+  "id": "e5477431-1038-484e-bf69-1dfedb97a110",
+  "type": "group",
+  "identitySource": "azureActiveDirectory"
+}
+```
+
+### Example 3: Add another external group as a member
+### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_externalgroupmember_from_"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/connections/contosohr/groups/31bea3d537902000/members
+Content-Type: application/json
+Content-length: 127
+
+{
+  "@odata.type": "#microsoft.substrateConnectors.externalGroupMember",
+  "id": "1431b9c38ee647f6a",
+  "type": "group",
+  "identitySource": "external"
+}
+```
+
+### Response
+
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.substrateConnectors.externalGroupMember"
+}
+-->
+
+``` http
+HTTP/1.1 201 Created
+
+Content-Type: application/json
+{
+  "@odata.type": "#microsoft.substrateConnectors.externalGroupMember",
+  "id": "14m1b9c38qe647f6a",
+  "type": "group",
+  "identitySource": "external"
 }
 ```

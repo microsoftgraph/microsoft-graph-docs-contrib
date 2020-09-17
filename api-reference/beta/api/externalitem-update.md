@@ -90,10 +90,10 @@ Content-type: application/json
 {
   "acl": [
     {
-      "type": "user",
-      "value": "49103559-feac-4575-8b94-254814dfca72",
+      "type": "everyone",
+      "value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
       "accessType": "grant",
-      "identitySource": "azureActiveDirectory"
+      "identitySource": "external"
     }
   ]
 }

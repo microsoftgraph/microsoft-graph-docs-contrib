@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|ExternalItem.ReadWrite.All|
 
 ## HTTP request
 
@@ -49,9 +49,9 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
+|id|String|The unique `id` of the external group within a connection. It must be alphanumeric and can be up to 128 characters long. |
+|displayName|String|The friendly name of the external group (Optional)|
+|description|String|The description of the external group (Optional)|
 
 ## Response
 
@@ -68,14 +68,15 @@ If successful, this method returns a `201 Created` response code and an [externa
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/connections/{connectionsId}/groups
+POST https://graph.microsoft.com/beta/connections/contosohr/groups
 Content-Type: application/json
 Content-length: 125
 
 {
   "@odata.type": "#microsoft.substrateConnectors.externalGroup",
-  "displayName": "String",
-  "description": "String"
+  "id": "31bea3d537902000",
+  "displayName": "Contoso Marketing",
+  "description": "The product marketing team"
 }
 ```
 
@@ -95,8 +96,8 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 {
   "@odata.type": "#microsoft.substrateConnectors.externalGroup",
-  "id": "db8fac7c-ac7c-db8f-7cac-8fdb7cac8fdb",
-  "displayName": "String",
-  "description": "String"
+  "id": "31bea3d537902000",
+  "displayName": "Contoso Marketing",
+  "description": "The product marketing team"
 }
 ```

@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|ExternalItem.ReadWrite.All|
 
 ## HTTP request
 
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an [externalGrou
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/connections/{connectionsId}/groups/{externalGroupId}
+GET https://graph.microsoft.com/beta/connections/contosohr/groups/31bea3d537902000
 ```
 
 ### Response
@@ -84,7 +84,7 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.substrateConnectors.externalGroup",
     "id": "db8fac7c-ac7c-db8f-7cac-8fdb7cac8fdb",
-    "displayName": "String",
+    "displayName": "Contoso Marketing",
     "description": "String"
   }
 }
