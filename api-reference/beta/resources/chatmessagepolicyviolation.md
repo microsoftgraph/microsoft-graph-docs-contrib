@@ -1,6 +1,6 @@
 ---
 title: "chatMessagePolicyViolation resource type"
-description: "Represents a policy violation on a chat message. Policy violations are typically set by a Data Loss Prevention (DLP) application or provider."
+description: "Represents a policy violation on a chat message. Policy violations are typically set by a data loss prevention (DLP) application."
 author: "clearab"
 doc_type: resourcePageType
 localization_priority: Normal
@@ -10,8 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a policy violation on a chat message. 
-Policy violations are typically set by a data loss prevention (DLP) application which watches for messages that contain data that users aren't supposed to send.
+Represents a policy violation on a chat message. Policy violations are typically set by a data loss prevention (DLP) application. DLP applications monitor chats for messages that contain data that users aren't supposed to send.
 
 ## Properties
 
