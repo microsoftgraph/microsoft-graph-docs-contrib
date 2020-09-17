@@ -40,7 +40,8 @@ PATCH /users/(user-id)/chats/{chatThread-id}/chatMessages/{message-id}
 
 ## Request body
 
-In the request body, supply a JSON representation of the [chatMessage](../resources/chatMessage.md) object. Only the **policyViolation** property can be updated.
+In the request body, supply a JSON representation of a [chatMessage](../resources/chatMessage.md) object, 
+specifying only the **policyViolation** property.
 
 ## Response
 
