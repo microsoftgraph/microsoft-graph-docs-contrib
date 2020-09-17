@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "Create contentType"
-description: "Create a Content type in a site"
+description: "Create a Content type in a site."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
@@ -62,7 +62,7 @@ Here is an example of how to create a new generic contentType.
 -->
 
 ```http
-POST /sites/{site-id}/contentTypes
+POST https://graph.microsoft.com/beta/sites/{id}/contentTypes
 Content-Type: application/json
 
 {

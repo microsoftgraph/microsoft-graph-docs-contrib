@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "documentSetContent resource type"
-description: "The documentSetContent resource contains metadata about file present in default content location of a content."
+description: "The documentSetContent resource contains metadata about a file present in default content location of a content."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "sharepoint"
@@ -11,7 +11,7 @@ ms.prod: "sharepoint"
 
 Namespace: microsoft.graph
 
-The **documentSetContent** resource contains metadata about file present in default content location of a content type.
+The **documentSetContent** resource contains metadata about a file present in default content location of a content type.
 
 ## Properties
 

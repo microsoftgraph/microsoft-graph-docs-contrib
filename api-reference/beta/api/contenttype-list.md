@@ -1,17 +1,17 @@
 ---
 author: swapnil1993
-title: "List contentTypes"
-description: "List the Sharepoint Content types in a site collection or a list"
+title: "List content types"
+description: "List content types in a site or a list"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
 
-# List contentTypes
+# List content types
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the collection of [content types][contentType] in a [site][] or [list][]
+Get the collection of [content types][contentType] in a [site][] or a [list][]
 
 ## Permissions
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 <!-- { "blockType": "request", "name": "enum_contentTypes"} -->
 
 ```http
-GET /sites/{site-id}/contentTypes
+GET https://graph.microsoft.com/beta/sites/{site-id}/contentTypes
 ```
 
 ### Response

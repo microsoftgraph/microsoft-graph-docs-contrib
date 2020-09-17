@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "contentType: isPublished"
-description: "Check publishing status of a site content type"
+description: "Check publishing status of a content type present in content type hub site."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
@@ -11,7 +11,7 @@ ms.prod: "sharepoint"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Check publishing status of a site [contentType][]
+Check publishing status of a [contentType][] present in content type hub site.
 
 ## Permissions
 
@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 }
 -->
 ```http
-GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
+GET https://graph.microsoft.com/beta/sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 ```
 ### Response
 <!-- {

@@ -11,7 +11,7 @@ ms.prod: "sharepoint"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Updates [content type][contentType].
+Updates a [content type][contentType].
   
 
 ## Permissions
@@ -70,7 +70,7 @@ If successful, this method returns a `200 OK` response code and an updated [cont
 -->
 
 ```http
-PATCH /sites/{site-id}/contentTypes/{contentType-id}
+PATCH https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-id}
 Content-Type: application/json
 
 {

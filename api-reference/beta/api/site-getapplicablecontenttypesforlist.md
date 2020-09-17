@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "site: getApplicableContentTypesForList"
-description: "Get site content types that can be added to a list"
+description: "Get site content types that can be added to a list."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
@@ -11,7 +11,7 @@ ms.prod: "sharepoint"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Returns [site][] [contentTypes][contentType] that can be added to a list
+Returns [site][] [contentTypes][contentType] that can be added to a list.
 
 ## Permissions
 
@@ -40,15 +40,19 @@ GET /sites/{siteId}/getApplicableContentTypesForList
 In the request URL, provide the following query parameters with values.
 The following table shows the parameters that can be used with this function.
 
-|Parameter|Type|Required|Description|
+|Parameter|Type|Description|
 |-|-|-|-|
-|listId| string | Yes| GUID of the list for which the applicable content types need to be fetched |
+|listId| string | GUID of the list for which the applicable content types need to be fetched. Required. |
 
 ## Optional query parameters
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-To list only custom content types use $filter=isBuiltin eq false
+To list only custom content types use $filter=isBuiltin eq false.
+
+## Response
+
+If successful, this function returns a `200 OK` response code and a [contentType](../resources/contenttype.md) collection in the response body.
 
 ## Example
 
@@ -59,7 +63,7 @@ To list only custom content types use $filter=isBuiltin eq false
 }
 -->
 ```http
-GET /sites/{siteId}/getApplicableContentTypesForList(listId='listId')
+GET https://graph.microsoft.com/beta/sites/{siteId}/getApplicableContentTypesForList(listId='listId')
 ```
 
 ### Response

@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "List content type columns"
-description: "List  columns in a Content type"
+description: "List columns in a content type."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
@@ -11,7 +11,7 @@ ms.prod: "sharepoint"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the collection of  [columns][columnDefinition] in a [content type][contentType] 
+Get the collection of  [columns][columnDefinition] in a [content type][contentType].
 
   
 
@@ -79,7 +79,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   
 
 ```http
-GET /sites/{site-id}/contentTypes/{contentType-id}/columns
+GET https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-id}/columns
 ```
 
   

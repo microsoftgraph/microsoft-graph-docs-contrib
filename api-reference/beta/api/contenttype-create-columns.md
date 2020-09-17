@@ -1,14 +1,14 @@
 ---
 author: swapnil1993
 ms.date: 08/30/2020
-title: "Create columns"
-description: "Add columns in a Content type"
+title: "Create content type columns"
+description: "Add columns in a content type."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
 
-# Create columns
+# Create content type columns
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -53,7 +53,7 @@ In the request body, supply a JSON representation of the [columnDefinition][] re
 ## Request
 <!-- { "blockType": "request" } -->
 ```http
-POST /sites/{site-id}/contentTypes/{contentType-id}/columns
+POST https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-id}/columns
 Content-Type: application/json
 
 {
@@ -76,7 +76,7 @@ Content-Type: application/json
 
 #### Response
 
-  Returns list of all columns added to a content type
+Returns list of all columns added to a content type.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.columnDefinition", "truncated": true, "scopes": "sites.readwrite.all" } -->
 

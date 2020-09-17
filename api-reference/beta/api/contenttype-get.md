@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "Get contentType"
-description: "Get a content type in a site or list"
+description: "Get a content type in a site or a list."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns the metadata for a [content type][contentType] in a [site][] or [list][].
+Returns the metadata for a [content type][contentType] in a [site][] or a [list][].
 
 ## Permissions
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [contentType](
 -->
 
 ```http
-GET /sites/{site-id}/contentTypes/{contentType-id}
+GET https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-id}
 ```
 
 ### Response

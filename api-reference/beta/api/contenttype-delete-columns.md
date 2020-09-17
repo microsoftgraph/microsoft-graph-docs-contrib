@@ -1,13 +1,13 @@
 ---
 author: swapnil1993
-title: "Delete content type columns"
-description: "Delete a column from a content type"
+title: "Delete a content type column"
+description: "Delete a column from a content type."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
 
-# Delete content type columns
+# Delete a content type column
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -53,7 +53,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ```http
-DELETE /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
+DELETE https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 ```
 
 ### Response

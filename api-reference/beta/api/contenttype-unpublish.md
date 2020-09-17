@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "contentType: unpublish"
-description: "Unpublish a site content type"
+description: "Unpublish a content type present in content type hub site."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
@@ -11,7 +11,7 @@ ms.prod: "sharepoint"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Unpublish a site [contentType][]
+Unpublish a [contentType][] present in content type hub site.
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /sites/{siteId}/contentTypes/{contentTypeId}/unpublish
+POST /sites/{siteId}/contentTypes/{contentTypeId}/unpublish
 ```
 
 **Note:** The siteId should belong to a content type hub site.
@@ -55,7 +55,7 @@ If successful, this call returns a `204 No Content` response.
 }
 -->
 ```http
-GET /sites/{siteId}/contentTypes/{contentTypeId}/unpublish
+POST https://graph.microsoft.com/beta/sites/{siteId}/contentTypes/{contentTypeId}/unpublish
 ```
 
 ### Response

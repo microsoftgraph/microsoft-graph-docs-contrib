@@ -1,19 +1,19 @@
 ---
 author: swapnil1993
 title: "contentType: associateWithHubSites"
-description: "Associate a content type with list of hubsites"
+description: "Associate a content type with list of hubsites."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
 
-# Associate a content type with list of hubsites
+# contentType: associateWithHubSites
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Associate a [content type][contentType] with list of hubsites.
-Note: This feature limited to tenants having cortex license
+Associate a [content type][contentType] with a list of hub sites.
+**Note:** This feature is limited to tenants having an intelligent content services license.
   
 
 ## Permissions  
@@ -40,7 +40,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-https://graph.microsoft.com/beta/sites/id/contentTypes/id/associateWithHubSites
+POST /sites/id/contentTypes/id/associateWithHubSites
 ```
 
 ## Request headers
@@ -50,18 +50,18 @@ https://graph.microsoft.com/beta/sites/id/contentTypes/id/associateWithHubSites
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
-|Parameter|Type|Required|Description|
+|Parameter|Type|Description|
 |-|-|-|-|
-|hubSiteUrls| Collection(string) | Yes|List of cannonical urls to hteHub Sites where the content type needs to be enforced|
-|propagateToExistingLists| Boolean | No|If `true`, content types will be enforced to existing lists in hub sites otherwise will be applied to only newly created lists. 
+|hubSiteUrls| Collection(string) |List of cannonical urls to hteHub Sites where the content type needs to be enforced. Required.|
+|propagateToExistingLists| Boolean |If `true`, content types will be enforced to existing lists in hub sites otherwise will be applied to only newly created lists. 
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code
+If successful, this action returns a `204 No Content` response code.
 
 ## Example
 

@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "contentType: publish"
-description: "Publish a site content type"
+description: "Publish a content type present in contnet type hub site."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
@@ -11,7 +11,7 @@ ms.prod: "sharepoint"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Publishes a site [contentType][]
+Publishes a [contentType][] present in content type hub site.
 
 ## Permissions
 
@@ -56,7 +56,7 @@ If successful, this call returns a `204 No Content` response.
 }
 -->
 ```http
-GET /sites/{siteId}/contentTypes/{contentTypeId}/publish
+POST https://graph.microsoft.com/beta/sites/{siteId}/contentTypes/{contentTypeId}/publish
 ```
 
 ### Response

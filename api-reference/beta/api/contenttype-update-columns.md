@@ -1,13 +1,13 @@
 ---
 author: swapnil1993
-title: "Update content type columns"
+title: "Update a content type column"
 description: "Update a content type column"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
 
-# Update content type columns
+# Update a content type column
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -56,6 +56,7 @@ PATCH /sites/{site-id}/lists/{list-id}//contentTypes/{contentType-id}/columns/{c
 ## Request body
 
 In the request body, supply a JSON representation of the [columnDefinition][] resource to update.  
+**Note:** Only required and hidden properties can be updated for a content type column.
 
 ## Response
 
@@ -74,15 +75,9 @@ PATCH /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 Content-Type: application/json
 
 {
- "name": "Custom Column",
-  "group": "Custom Columns",
+
   "required": true,
-  "text":{
-      "allowMultipleLines":false,
-      "appendChangesToExistingText":false,
-      "linesForEditing":0,
-      "maxLength":255
-   },
+  "hidden": false,
   "propagateChanges": false		
 }
 ```

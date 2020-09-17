@@ -1,13 +1,13 @@
 ---
 author: swapnil1993
-title: "ContentType Column Get"
-description: " Get a content type Column"
+title: "Get a contentType column"
+description: " Get a content type column."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
 
-# Get metadata for a content type Column
+# Get a content type column
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

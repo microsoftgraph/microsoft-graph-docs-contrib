@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "Delete contentType"
-description: "Delete content type from a SharePoint list or Site"
+description: "Delete a content type from a sharepoint list or a site."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
@@ -57,7 +57,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ```http
-DELETE /sites/{site-id}/contentTypes/{contentType-id}
+DELETE https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-id}
 ```
 
 ### Response

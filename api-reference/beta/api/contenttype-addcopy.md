@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "contentType: addCopy"
-description: "Add copy of site content type to a list"
+description: "Add a copy of site content type to a list."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
@@ -11,7 +11,7 @@ ms.prod: "sharepoint"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Add copy of [site][site] [content type][contentType]  to a [list][list].
+Add a copy of [site][site] [content type][contentType] to a [list][list].
  
   
 
@@ -50,17 +50,17 @@ POST /sites/{site-id}/lists/{list-id}/contentTypes/addCopy
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
-|Parameter|Type|Required|Description|
+|Parameter|Type|Description|
 |-|-|-|-|
-|contentType| string | Yes| Canonical url to the site content type whose copy will be added to the list|
+|contentType| string | Canonical url to the site content type whose copy will be added to the list. Required.|
 
 ## Response
 
-If successful, this call returns a `204 No Content` response
+If successful, this call returns a `204 No Content` response.
 
 ## Example
 

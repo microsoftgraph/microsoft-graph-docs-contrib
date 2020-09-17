@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "contentType: copyToDefaultContentLocation"
-description: "Copy a file to default content location in a Content Type"
+description: "Copy a file to default content location in a content type."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
@@ -11,8 +11,7 @@ ms.prod: "sharepoint"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Copy a file to default content location in a [content type][contentType] so that they can be added as default content or template via POST operation.
-  
+Copy a file to a default content location in a [content type][contentType]. The file can then be added as a default file or template via a POST operation.
 
 ## Permissions  
 
@@ -41,7 +40,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 
-POST https://graph.microsoft.com/beta/sites/id/contentTypes/id/copyToDefaultContentLocation 
+POST /sites/id/contentTypes/id/copyToDefaultContentLocation 
 ```
 
 ## Request headers
@@ -51,20 +50,20 @@ POST https://graph.microsoft.com/beta/sites/id/contentTypes/id/copyToDefaultCont
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
 
-|Parameter|Type|Required|Description|
+|Parameter|Type|Description|
 |-|-|-|-|
-|sourceFile| microsoft.graph.itemReference | Yes|Metadata about the source file that needs to be copied to the default content location.|
-|destinationFileName| string | No|Destination filename . 
+|sourceFile| microsoft.graph.itemReference |Metadata about the source file that needs to be copied to the default content location. Required.|
+|destinationFileName| string |Destination filename. 
 
 ## Response
 
 
-If successful, this call returns a `204 No Content` response
+If successful, this call returns a `204 No Content` response.
 
 ## Example
 
