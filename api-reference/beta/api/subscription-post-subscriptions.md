@@ -25,7 +25,7 @@ Creating a subscription requires read permission to the resource. For example, t
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Not supported | Not supported | CallRecords.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Not supported | ChannelMessage.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/allMessages -- all channel messages in organization) | Not supported | Not supported | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- all channel messages in organization) | Not supported | Not supported | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read, Chat.ReadWrite | Not supported | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/allMessages -- all chat messages in organization) | Not supported | Not supported | Chat.Read.All  |
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
@@ -46,7 +46,7 @@ Creating a subscription requires read permission to the resource. For example, t
 
 **chatMessage** subscriptions with application permissions include resource data, and require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified. Before creating a **chatMessage** subscription, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis). 
 
-> **Note:** `/teams/allMessages` and `/chats/allMessages` are only available to users and tenants that have the 
+> **Note:** `/teams/getAllMessages` and `/chats/allMessages` are only available to users and tenants that have the 
 [required licenses](https://aka.ms/teams-changenotification-licenses).
 Because /teams/getAllMessages and 
 /chats/getAllMessages deliver notifications for all users in the tenant, all users in the tenant must be licensed. 
