@@ -93,7 +93,7 @@ Content-type: application/json
       "type": "user",
       "value": "49103559-feac-4575-8b94-254814dfca72",
       "accessType": "grant",
-      "identitySource": "Azure Active Directory"
+      "identitySource": "azureActiveDirectory"
     }
   ]
 }
@@ -136,7 +136,7 @@ Content-type: application/json
       "type": "user",
       "value": "49103559-feac-4575-8b94-254814dfca72",
       "accessType": "grant",
-      "identitySource": "Azure Active Directory"
+      "identitySource": "azureActiveDirectory"
     }
   ],
   "properties": {
@@ -163,3 +163,5 @@ Content-type: application/json
     "Error: update_externalitem/properties:\r\n      Referenced type microsoft.graph.object is not defined in the doc set! Potential suggestion: microsoft.graph.directoryObject"
   ]
 }-->
+
+
