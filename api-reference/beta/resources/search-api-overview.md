@@ -176,4 +176,6 @@ For backward compatibility, the original properties and types are accessible and
 
 
 ## What's new
+
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+
