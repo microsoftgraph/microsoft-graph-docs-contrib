@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure AD [access review](accessreviews-root.md) recurrence. If the parent `accessReviewScheduleDefinition` is a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique group being review in the `accessReviewScheduleDefinition`. If a review has multiple groups and recurs more than once, each group will have a unique instance for each recurrence.
+Represents an Azure AD [access review](accessreviews-root.md) recurrence. If the parent `accessReviewScheduleDefinition` is a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique group being reviewed in the `accessReviewScheduleDefinition`. If a review has multiple groups and recurs more than once, each group will have a unique instance for each recurrence.
 
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List accessReviewInstances](../api/accessreviewinstance-list.md) | [accessReviewInstance](accessreviewinstance.md) collection | Lists every `accessReviewInstance` for a specific `accessReviewScheduleDefinition`. Does not include associated `accessReviewInstanceDecisionItem`s in listings. |
+|[List accessReviewInstance](../api/accessreviewinstance-list.md) | [accessReviewInstance](accessreviewinstance.md) collection | Lists every `accessReviewInstance` for a specific `accessReviewScheduleDefinition`. Does not include associated `accessReviewInstanceDecisionItem`s in listings. |
 
 
 ## Properties
@@ -30,7 +30,7 @@ Represents an Azure AD [access review](accessreviews-root.md) recurrence. If the
 | `displayName`             |`String`                                                         | Name of the parent `accessReviewScheduleDefinition` |
 | `startDateTime`           |`DateTimeOffset`                                                 | DateTime when review instance is scheduled to start. May be in the future. |
 | `endDateTime`             |`DateTimeOffset`                                                 | DateTime when review instance is scheduled to end. |
-| `status`                  |`string`                                                          | This read-only field specifies the status of an accessReview. The typical states include `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`. |
+| `status`                  |`string`                                                          | Read-only. Field specifies the status of an accessReview. The typical states include `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`. |
 | `scope`                   |`microsoft.graph.accessReviewScope`                              | Read-only. Created based on `scope` and `instanceEnumerationScope` at the `accessReviewScheduleDefinition` level. Defines scope of users reviewed in a group. In the case of a single-group review, the scope defined at the `accessReviewScheduleDefinition` level applies to all instances. In the case of all groups review, scope may be different for each group. | 
 | `decisions`               |`Collection(microsoft.graph.accessReviewInstanceDecisionItem)`  | Set of decisions for this review instance. |
 | `definition`              |`microsoft.graph.accessReviewScheduleDefinition`                | Back link to the `accessReviewScheduleDefinition` associated with the instance. |
