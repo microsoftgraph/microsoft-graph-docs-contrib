@@ -11,6 +11,15 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### volumeType values 
+
+| Member
+|:--------------
+| operatingSystemVolume
+| fixedDataVolume
+| removableDataVolume
+| unknownFutureValue
+=======
 ### allowedAudiences values
 
 |Member|
