@@ -27,18 +27,18 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |[Create subscription for new channel messages](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Listen for new and edited channel messages, and reactions to them. |
 |[Get channel chatMessage](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | Get a single root chat message from a channel.|
 |[Create chatMessage in a channel or chat](../api/chatmessage-post.md) | [chatMessage](chatmessage.md)| Create a new top-level chat message in a channel.|
-|[Update chatMessage with DLP violation](../api/chatmessage-update-policyviolation.md)|[chatMessage](chatmessage.md)| Update a chatMessage with a Data Loss Prevention (DLP) policy violation.|
+|[Update chatMessage](../api/chatmessage-update-policyviolation.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
 |**Channel message replies**| | |
 |[List replies to a chatMessage](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md) collection| List of all replies to a chat message in channel.|
 |[Get a reply to a chatMessage](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Get a single reply to a chat message in a channel.|
 |[Reply to a chatMessage in a channel](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Reply to an existing chat message in a channel.|
-|[Update chatMessage with DLP violation](../api/chatmessage-update-policyviolation.md)|[chatMessage](chatmessage.md)| Update a chatMessage with a Data Loss Prevention (DLP) policy violation.|
+|[Update chatMessage](../api/chatmessage-update-policyviolation.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
 |**1:1 and group chat messages**| | |
 |[Get chatMessage in chat](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Get a single chat message in a chat. |
 |[List chatMessages in a chat](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | List chat messages in a 1:1 or group chat. |
 |[Create subscription for new chat messages](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Listen for new and edited chat messages, and reactions to them. |
 |[Create chatMessage in a chat](../api/chat-post-message.md) | [chatMessage](chatmessage.md)| Send a chat message in an existing 1:1 or group chat conversation.|
-|[Update chatMessage with DLP violation](../api/chatmessage-update-policyviolation.md)|[chatMessage](chatmessage.md)| Update a chatMessage with a Data Loss Prevention (DLP) policy violation.|
+|[Update chatMessage](../api/chatmessage-update-policyviolation.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
 |**Hosted content**| | |
 |[List all hosted content](../api/chatmessage-list-chatmessagehostedcontents.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) collection| Get all hosted content in a chat message.|
 |[Get hosted content](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Get hosted content from a chat message.|
@@ -47,8 +47,8 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only. Unique Id of the message.|
-|replyToId| string | Read-only. Id of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels not chats) |
+|id|String| Read-only. Unique ID of the message.|
+|replyToId| string | Read-only. ID of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels, not chats.) |
 |from|[identitySet](identityset.md)| Read only. Details of the sender of the chat message.|
 |etag| string | Read-only. Version number of the chat message. |
 |messageType|string|The type of chat message. The possible values are: `message`.|
