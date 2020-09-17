@@ -28,7 +28,7 @@ It contains the type of entities expected in the response, the underlying source
 |query|[searchQuery](searchquery.md)|Contains the query terms. **Required**.|
 |from|Int32|Specifies the offset for the search results. Offset 0 returns the very first result.|
 |size|Int32|The size of the page to be retrieved.|
-|fields|String collection |Contains the fields to be returned for earch resource object. Note this is applicable for all entityTypes, such as `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`.|
+|fields|String collection |Contains the fields to be returned for each resource object. Using **fields**, you can trim down the number if fields returned by default for each **entityType**. You can also specify additional fields such as custom managed properties for SharePoint and OneDrive, or the custom fields defined on `externalItem` for Graph connectors ingested content. |
 |sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most 5 **sortProperty** in the Collection.|
 |aggregations|[aggregationOption](aggregationOption.md) collection|Specifies which aggregations (also known as refiners) to be retuned alongside the search results.|
 |aggregationFilters|String collection|Contains the list of **aggregationsFilterToken** obtained from the [searchBucket](searchBucket.md) which will filter down search results to results contained in the specified bucket|
