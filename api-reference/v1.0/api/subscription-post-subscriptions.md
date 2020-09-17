@@ -41,12 +41,11 @@ Subscribes a listener application to receive change notifications when the reque
 
 **chatMessage** subscriptions with application permissions include resource data, and require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified. Before creating a **chatMessage** subscription, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis). 
 
-> **Note:** `/teams/getAllMessages` and `/chats/getAllMessages` are currently in preview,
-and you may use this API without fees, subject to the [Microsoft APIs Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). 
-Starting in August 2020, it will only be available to users and tenants that have the [required licenses](/graph/teams-licenses). 
-Because `/teams/getAllMessages` and `/chats/getAllMessages` deliver notifications for all users in the tenant, all users in the tenant must be licensed;
-attempts to create subscriptions without the proper licenses will result in a 401 error code.
-In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
+> **Note:** `/teams/allMessages` and `/chats/allMessages` are only available to users and tenants that have the 
+[required licenses](https://aka.ms/teams-changenotification-licenses).
+Because /teams/getAllMessages and 
+/chats/getAllMessages deliver notifications for all users in the tenant, all users in the tenant must be licensed. 
+Creating a subscription without the proper licenses will return a 401 error code. 
 
 ### driveItem
 
