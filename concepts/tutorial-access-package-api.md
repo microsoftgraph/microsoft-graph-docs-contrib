@@ -36,6 +36,8 @@ To successfully complete this tutorial, make sure that you have the required pre
 
         ![Consent for organization](./images/tutorial-access-package-api/consent-for-organization.png)
 
+    7. Select **Accept** to accept the consent of the permissions.
+
 ## Step 1: Create a user account and a group
 
 In this step, you create a group named **Marketing resources** in the directory that is the target resource for entitlement management. You also create a user account that is set up as an internal requestor.
