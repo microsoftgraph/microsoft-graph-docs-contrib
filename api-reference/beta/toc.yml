@@ -10169,6 +10169,13 @@ items:
               href: api/identitysecuritydefaultsenforcementpolicy-get.md
             - name: Update
               href: api/identitysecuritydefaultsenforcementpolicy-update.md
+          - name: Continuous access evaluation policy
+            href: resources/continuousaccessevaluationpolicy.md
+            items:
+            - name: Get
+              href: api/continuousaccessevaluationpolicy-get.md
+            - name: Update
+              href: api/continuousaccessevaluationpolicy-update.md
         - name: Role management
           href: resources/rolemanagement.md
           items:
