@@ -10176,12 +10176,12 @@ items:
                href: api/b2xuserflows-delete-identityprovider.md
           - name: User flow attributes
             items:
-             - name: identityUserFlowAttribute
+             - name: User flow attribute
                href: resources/identityuserflowattribute.md
              - name: List
                href: api/identityuserflowattribute-list.md
              - name: Create
-               href: api/identityuserflowattribute-post-userflowattributes.md
+               href: api/identityuserflowattribute-create.md
              - name: Get
                href: api/identityuserflowattribute-get.md
              - name: Update
