@@ -29,7 +29,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 |contentSources|String collection|Contains the connection to be targeted. <br>Respects the following format : `/external/connections/connectionid` where `connectionid` is the ConnectionId defined in the Connectors Administration. <br> Note : contentSource is only applicable when entityType=`externalItem`. Optional.|
 |enableTopResults|Boolean|This triggers hybrid sort for messages : the first 3 messages are the most relevant. This property is only applicable to entityType=`message`. Optional.|
 |entityTypes|entityType collection| The types of resources expected in the response. Possible values are: `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`. Required.|
-|fields|String collection |Contains the fields to be returned for earch resource object specified in entityTypes. Note this is applicable to all the resources specified in entityTypes, such as `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`. Optional.|
+|fields|String collection |Contains the fields to be returned for earch resource object specified in **entityTypes**, allowing customization of the fields returned by default otherwise, including additional fields such as custom managed properties from SharePoint and OneDrive, or custom fields in **externalItem** from content ingested by Graph connectors. Optional.|
 |from|Int32|Specifies the offset for the search results. Offset 0 returns the very first result. Optional.|
 |query|[searchQuery](searchquery.md)|Contains the query terms. Required.|
 |size|Int32|The size of the page to be retrieved. Optional.|
