@@ -8,7 +8,7 @@ ms.prod: "search"
 
 # Sort search results
 
-The Microsoft Search API allows sorting search results using a specific property.
+Sort search results by specifying the **sortProperties** property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object, identifying a property of a resource in **entityTypes** to sort matches by, in ascending or descending order.
 
 Sorting is supported only for SharePoint and OneDrive items.
 The property to be sorted on should be *Sortable* in the search schema.
@@ -282,7 +282,7 @@ Content-type: application/json
 ## Known limitations
 
 - Sort is not supported for **message**, **event**, and **externalItem**.
-- Sort by relevance cannot be specified in the **sortProperties**.
+- Sort by relevance cannot be specified in **sortProperties**.
 
 ## Next steps
 
