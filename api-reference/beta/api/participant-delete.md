@@ -1,6 +1,6 @@
 ---
 title: "Delete participant"
-description: "Delete participant for Graph Beta."
+description: "Delete participant."
 manager: zhengni
 author: jackry6350
 ms.author: yoren
@@ -11,9 +11,11 @@ doc_type: apiPageType
 
 # Delete participant
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a specific participant in the call. In some situations it is appropriate for an application to remove a participant from an active call, via the Delete Participant API. This action can be done either before or after the participant answers the call. When an active caller is removed via Delete participant, they are immediately dropped from the call with no pre or post-removal notification.
+Namespace: microsoft.graph
+
+Delete a specific participant in the call. In some situations, it is appropriate for an application to remove a participant from an active call. This action can be done either before or after the participant answers the call. When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not Supported                               |
 | Application                            | None                                        |
 
-Tenant level Application Meeting Configuration is required to allow an application to call this API. Tenant admin should call following cmdlet on Tenant Remote Powershell to grant the permission to the application to call this API. For more information, see [Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md).
+Tenant-level application meeting configuration is required to allow an application to call this API. The tenant admin should call the following cmdlet on the tenant remote PowerShell to grant the permission to the application to call this API. For more information, see [Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md).
 ```
 PS C:\> Set-CsApplicationMeetingConfiguration -AllowRemoveParticipantAppIds @{Add="app_id"}
 ```
@@ -35,7 +37,7 @@ PS C:\> Set-CsApplicationMeetingConfiguration -AllowRemoveParticipantAppIds @{Ad
 DELETE /app/calls/{id}/participants/{id}
 DELETE /communications/calls/{id}/participants/{id}
 ```
-> > **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -46,11 +48,11 @@ DELETE /communications/calls/{id}/participants/{id}
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 
-##### Request
+### Request
 The following example shows the request.
 <!-- {
   "blockType": "request",
@@ -60,7 +62,7 @@ The following example shows the request.
 DELETE https://graph.microsoft.com/beta/communications/calls/{id}/participants/{id}
 ```
 
-##### Response
+### Response
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
