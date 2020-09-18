@@ -78,3 +78,4 @@ Use the Microsoft Graph education APIs to build education solutions that access 
 
 - Explore the resources and methods that are most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+

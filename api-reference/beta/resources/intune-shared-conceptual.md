@@ -75,6 +75,7 @@ The following Graph resources are shared between Intune workflows:
 - [Run as account type](intune-shared-runasaccounttype.md)
 - [Run state](intune-shared-runstate.md)
 - [Saved UI state generation options](intune-shared-saveduistategenerationoptions.md)
+- [Setting source type](intune-shared-settingsourcetype.md)
 - [Targeted managed app configuration](intune-shared-targetedmanagedappconfiguration.md)
 - [URI](intune-shared-uri.md)
 - [User](intune-shared-user.md)
@@ -89,3 +90,5 @@ The following Graph resources are shared between Intune workflows:
 - [Windows domain join configuration](intune-shared-windowsdomainjoinconfiguration.md)
 - [Windows universal AppX app assignment settings](intune-shared-windowsuniversalappxappassignmentsettings.md)
 - [Windows update state](intune-shared-windowsupdatestate.md)
+
+

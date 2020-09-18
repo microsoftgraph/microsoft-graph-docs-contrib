@@ -255,6 +255,28 @@ The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Ap
 
 ---
 
+## BitLocker recovery key permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _BitlockerKey.ReadBasic.All_ | Read basic BitLocker key information | Allows an app to read the BitLocker key's properties for all devices in the tenant. The recovery key is not returned. | Yes | No |
+| _BitlockerKey.Read.All_ | Read the BitLocker key | Allows an app to read the BitLocker keys for all devices in the tenant. The recovery key is returned. | Yes | No |
+
+#### Application permissions
+
+None.
+
+### Example usage
+
+#### Delegated
+
+* _BitlockerKey.ReadBasic.All_: List the BitLocker recovery keys for all devices in the tenant without returning the 'key' property (`GET /bitlocker/recoveryKeys`).
+* _BitlockerKey.Read.All_: Get a BitLocker recovery key with the recovery key (`GET /bitlocker/recoveryKeys/{bitlockerRecoveryKeyId}?$select=key`)
+
+---
+
 ## Bookings permissions
 
 #### Delegated permissions
