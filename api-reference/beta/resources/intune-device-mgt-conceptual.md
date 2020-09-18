@@ -164,6 +164,7 @@ Namespace: microsoft.graph
 - [Managed device](intune-devices-manageddevice.md)
 - [Managed device architecture](intune-devices-manageddevicearchitecture.md)
 - [Managed device cleanup settings](intune-devices-manageddevicecleanupsettings.md)
+- [Managed device management features](intune-devices-manageddevicemanagementfeatures.md)
 - [Managed device models and manufacturers](intune-devices-manageddevicemodelsandmanufacturers.md)
 - [Managed device overview](intune-devices-manageddeviceoverview.md)
 - [Managed device partner reported health state](intune-devices-manageddevicepartnerreportedhealthstate.md)
@@ -212,7 +213,13 @@ Namespace: microsoft.graph
 - [Unary management condition expression](intune-fencing-unarymanagementconditionexpression.md)
 - [Unary management condition expression operator type](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [Update windows device account action parameter](intune-devices-updatewindowsdeviceaccountactionparameter.md)
+- [User experience analytics app health app performance by app version](intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md)
+- [User experience analytics app health app performance by o s version](intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md)
 - [User experience analytics app health application performance](intune-devices-userexperienceanalyticsapphealthapplicationperformance.md)
+- [User experience analytics app health device model performance](intune-devices-userexperienceanalyticsapphealthdevicemodelperformance.md)
+- [User experience analytics app health device performance](intune-devices-userexperienceanalyticsapphealthdeviceperformance.md)
+- [User experience analytics app health device performance details](intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)
+- [User experience analytics app health o s version performance](intune-devices-userexperienceanalyticsapphealthosversionperformance.md)
 - [User experience analytics baseline](intune-devices-userexperienceanalyticsbaseline.md)
 - [User experience analytics category](intune-devices-userexperienceanalyticscategory.md)
 - [User experience analytics device performance](intune-devices-userexperienceanalyticsdeviceperformance.md)
@@ -256,3 +263,5 @@ Namespace: microsoft.graph
 - [Windows management app](intune-devices-windowsmanagementapp.md)
 - [Windows management app health state](intune-devices-windowsmanagementapphealthstate.md)
 - [Windows protection state](intune-devices-windowsprotectionstate.md)
+
+

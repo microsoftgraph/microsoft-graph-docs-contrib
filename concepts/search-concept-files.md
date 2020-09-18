@@ -166,7 +166,7 @@ Content-type: application/json
 }
 ```
 
-## Example - Search Sites
+## Example 3: Search sites
 
 ### Request
 
@@ -292,6 +292,104 @@ Content-type: application/json
                   "contentclass": "STS_ListItem_GenericList",
                   "title": "Contoso issue "
                 }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+## Example 4: Search all content in SharePoint and OneDrive
+
+This example queries all the content in SharePoint or OneDrive sites to which the signed-in user has read access. The **resource** property in the response returns matches that are files and folders as **driveItem** objects, matches that are containers (SharePoint lists) as **list**, and all other matches as **listItem**.
+
+### Request
+
+```HTTP
+POST /search/query
+Content-Type: application/json
+
+{
+  "requests": [
+    {
+      "entityTypes": [
+        "driveItem", "listItem", "list"
+      ],
+      "query": {
+        "queryString": "contoso"
+      }
+    }
+  ]
+}
+```
+
+### Response
+
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "value": [
+    {
+      "searchTerms": [
+        "contoso"
+      ],
+      "hitsContainers": [
+        {
+          "total": 1,
+          "moreResultsAvailable": false,
+          "hits": [
+            {
+              "@odata.type": "#microsoft.graph.searchHitsContainer",
+              "hitId": "FlULeN/ui/1GjLx1rUfio5UAAEl",
+              "rank": 1,
+              "summary": "<c0>Contoso</c0> Detailed Design <ddd/>",
+              "resource": {
+                "@odata.type": "#microsoft.graph.driveItem",
+                "createdDateTime": "2019-06-10T06:37:43Z",
+                "lastModifiedDateTime": "2019-06-10T06:37:43Z",
+                "name": "web_part_test_long Notebook",
+                "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/contoso-designs.docx",
+                "createdBy": {
+                 "user": {
+                   "displayName": "Michaelvincent Santos;Provisioning User"
+                  }
+                },
+                "lastModifiedBy": {
+                  "user": {
+                    "displayName": "Richard Mayer"
+                  }
+                },
+                "parentReference": {
+                  "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0"
+                }
+                "fileSystemInfo": {
+                  "createdDateTime": "2019-06-10T06:37:43Z",
+                  "lastModifiedDateTime": "2019-06-10T06:37:43Z"
+                }
+              }
+            },
+            {
+              "@odata.type": "#microsoft.graph.searchHit",
+              "hitId": "51eef59e-5d49-4d28-96f0-864cf90765e0",
+              "rank": 2,
+              "summary": "",
+              "resource": {
+                "@odata.type": "#microsoft.graph.list",
+                "displayName": "Contoso - Documents",
+                "id": "51eef59e-5d49-4d28-96f0-864cf90765e0",
+                "description": "",
+                "lastModifiedDateTime": "2020-07-08T18:17:59+00:00",
+                "name": "Shared Documents",
+                "parentReference": {
+                "siteId": "microsoft.sharepoint-df.com,220fd155-0ea2-477c-a816-5c08fdc45f5d,fad16ab6-0736-4fbc-a053-087296b47c99"
+                },
+                "webUrl": "https://microsoft.sharepoint-df.com/teams/spoppe/collab/TaskBoard/Contoso/Shared Documents/Forms/AllItems.aspx"
               }
             }
           ]

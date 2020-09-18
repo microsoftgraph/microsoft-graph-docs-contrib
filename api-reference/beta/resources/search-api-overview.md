@@ -15,8 +15,7 @@ You can use the Microsoft Search API to query Microsoft 365 data in your apps.
 
 Search requests run in the context of the signed-in user, identified using an [access token with delegated permissions](/graph/auth-v2-user).
 
->[!WARNING]
->The API schema has changed, with properties in a search request and response being renamed or removed. See [more details](#schema-change-deprecation-warning) about the deprecation.
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
 ## Common use cases
 
@@ -114,7 +113,7 @@ The [query](../api/search-query.md) method lets you customize the search order b
 
 Note that sorting results is currently only supported on the following SharePoint and OneDrive types : [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md).
 
-The properties on which the sort clause are applied need to be sortable in the SharePoint [search schema](https://docs.microsoft.com/sharepoint/manage-search-schema). If the property specified in the request is not sortable or does not exist, the response will return a `HTTP 400 Bad Request`. Note that you cannot specifiy to sort documents by relevance using [sortProperty](sortproperty.md).
+The properties on which the sort clause are applied need to be sortable in the SharePoint [search schema](https://docs.microsoft.com/sharepoint/manage-search-schema). If the property specified in the request is not sortable or does not exist, the response will return an error, `HTTP 400 Bad Request`. Note that you cannot specifiy to sort documents by relevance using [sortProperty](sortproperty.md).
 
 When specifying the **name** of a [sortProperty](sortproperty.md) object, you can either use the property name from the Microsoft Graph type (for example, in [driveItem](driveitem.md)), or the name of the managed property in the search index.
 
@@ -166,7 +165,7 @@ For backward compatibility, the original properties and types are accessible and
 |:-----------------------------------|:--------------|:------------------|:----------------|
 | [searchRequest](./searchrequest.md)| Rename property | **stored_fields** | **fields**      |
 | [searchQuery](./searchquery.md)    | Rename property | **query_string** | **queryString** |
-| [searchQueryString](./searchquerystring.md) | Remove type | Not applicable | Not applicable |
+| [searchQueryString](./searchquerystring.md) | Deprecate resource | Not applicable | Not applicable |
 | [searchHit](./searchhit.md)        | Rename property | **_id** | **hitId** |
 | [searchHit](./searchhit.md)        | Rename property | **_score** | **rank** |
 | [searchHit](./searchhit.md)        | Remove property | **_sortField** | Not applicable |
@@ -176,4 +175,6 @@ For backward compatibility, the original properties and types are accessible and
 
 
 ## What's new
+
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+

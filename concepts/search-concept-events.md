@@ -6,9 +6,9 @@ localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API in Microsoft Graph to search calendar events
+# Use the Microsoft Search API to search calendar events
 
-You can use the Microsoft Search API to search for events in a user’s primary calendar. The user identity for the search is based on the auth token.
+Use the Microsoft Search API to search for events in the signed-in user’s primary calendar. The user identity for the search is based on the auth token.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
@@ -91,7 +91,7 @@ Content-type: application/json
 
 ## Known limitations
 
-- You can only access a user’s own mailbox. Searching delegated mailboxes is not supported.
+- You can access only the signed-in user’s own mailbox. Searching delegated mailboxes is not supported.
 - For events, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta&preserve-view=true) type contains the number of results on the page, not the total number of matching results.
 - Sorting results is not supported for events. A sort clause in the request will return a Bad Request error code in the response.
 

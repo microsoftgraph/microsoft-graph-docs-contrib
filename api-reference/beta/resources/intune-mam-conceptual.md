@@ -23,6 +23,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Android managed app registration](intune-mam-androidmanagedappregistration.md)
 - [Android managed app safety net apps verification type](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
 - [Android managed app safety net device attestation type](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
+- [Android managed app safety net evaluation type](intune-mam-androidmanagedappsafetynetevaluationtype.md)
 - [Android mobile app identifier](intune-mam-androidmobileappidentifier.md)
 - [App management level](intune-mam-appmanagementlevel.md)
 - [Application type](intune-wip-applicationtype.md)
@@ -74,3 +75,5 @@ The following Graph resources are available to manage app protection polices in 
 - [Windows information protection resource collection](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Windows information protection store app](intune-mam-windowsinformationprotectionstoreapp.md)
 - [Windows information protection wipe action](intune-mam-windowsinformationprotectionwipeaction.md)
+
+
