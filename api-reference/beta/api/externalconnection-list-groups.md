@@ -17,11 +17,11 @@ Get the externalGroup resources from the groups navigation property.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|ExternalItem.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported                               |
+| Delegated (personal Microsoft account) | Not supported                               |
+| Application                            | ExternalItem.ReadWrite.All                  |
 
 ## HTTP request
 
@@ -77,8 +77,8 @@ GET https://graph.microsoft.com/beta/connections/contosohr/groups
 
 ``` http
 HTTP/1.1 200 OK
-
 Content-Type: application/json
+
 {
   "value": [
     {

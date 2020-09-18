@@ -17,11 +17,11 @@ Create a new externalGroupMember object.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|ExternalItem.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported                               |
+| Delegated (personal Microsoft account) | Not supported                               |
+| Application                            | ExternalItem.ReadWrite.All                  |
 
 ## HTTP request
 
@@ -36,10 +36,10 @@ POST /connections/{connectionsId}/groups/{externalGroupId}/members
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+| Name          | Description                 |
+|:--------------|:----------------------------|
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -47,18 +47,20 @@ In the request body, supply a JSON representation of the [externalGroupMember](.
 
 The following table shows the properties that are required when you create the [externalGroupMember](../resources/externalgroupmember.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The unique `id` of the member. It would be the objectId in case of Azure Active Directory users or groups and the externalGroupId in case of external groups.|
-|type|externalGroupMemberType|The type of member added to the external group. Possible values are: `user` or `group` when the identitySource is `azureActiveDirectory` and just `group` when the identitySource is `external`.|
-|identitySource|identitySourceType|The identity source that the member belongs to. Possible values are: `azureActiveDirectory`, `external`.|
+| Property       | Type                    | Description                                              |
+|:---------------|:------------------------|:---------------------------------------------------------|
+| id             | String                  | The unique `id` of the member. It would be the objectId in case of Azure Active Directory users or groups and the externalGroupId in case of external groups.                                    |
+| type           | externalGroupMemberType | The type of member added to the external group. Possible values are: `user` or `group` when the identitySource is `azureActiveDirectory` and just `group` when the identitySource is `external`. |
+| identitySource | identitySourceType      | The identity source that the member belongs to. Possible values are: `azureActiveDirectory`, `external`.                                                                                         |
 
 ## Response
 
 If successful, this method returns a `201 Created` response code and an [externalGroupMember](../resources/externalgroupmember.md) object in the response body.
 
 ## Examples
+
 ### Example 1: Add an Azure Active Directory user as a member
+
 ### Request
 
 <!-- {
@@ -70,7 +72,6 @@ If successful, this method returns a `201 Created` response code and an [externa
 ``` http
 POST https://graph.microsoft.com/beta/connections/contosohr/groups/31bea3d537902000/members
 Content-Type: application/json
-Content-length: 127
 
 {
   "@odata.type": "#microsoft.graph.externalGroupMember",
@@ -92,8 +93,8 @@ Content-length: 127
 
 ``` http
 HTTP/1.1 201 Created
-
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.externalGroupMember",
   "id": "e811976d-83df-4cbd-8b9b-5215b18aa874",
@@ -104,6 +105,7 @@ Content-Type: application/json
 
 
 ### Example 2: Add an Azure Active Directory group as a member
+
 ### Request
 
 <!-- {
@@ -115,7 +117,6 @@ Content-Type: application/json
 ``` http
 POST https://graph.microsoft.com/beta/connections/contosohr/groups/31bea3d537902000/members
 Content-Type: application/json
-Content-length: 127
 
 {
   "@odata.type": "#microsoft.graph.externalGroupMember",
@@ -137,8 +138,8 @@ Content-length: 127
 
 ``` http
 HTTP/1.1 201 Created
-
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.externalGroupMember",
   "id": "e5477431-1038-484e-bf69-1dfedb97a110",
@@ -148,6 +149,7 @@ Content-Type: application/json
 ```
 
 ### Example 3: Add another external group as a member
+
 ### Request
 
 <!-- {
@@ -159,7 +161,6 @@ Content-Type: application/json
 ``` http
 POST https://graph.microsoft.com/beta/connections/contosohr/groups/31bea3d537902000/members
 Content-Type: application/json
-Content-length: 127
 
 {
   "@odata.type": "#microsoft.graph.externalGroupMember",
@@ -181,8 +182,8 @@ Content-length: 127
 
 ``` http
 HTTP/1.1 201 Created
-
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.externalGroupMember",
   "id": "14m1b9c38qe647f6a",

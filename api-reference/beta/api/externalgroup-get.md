@@ -17,11 +17,11 @@ Read the properties and relationships of an [externalGroup](../resources/externa
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|ExternalItem.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported                               |
+| Delegated (personal Microsoft account) | Not supported                               |
+| Application                            | ExternalItem.ReadWrite.All                  |
 
 ## HTTP request
 
@@ -40,9 +40,9 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+|:--------------|:--------------------------|
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -78,8 +78,8 @@ GET https://graph.microsoft.com/beta/connections/contosohr/groups/31bea3d5379020
 
 ``` http
 HTTP/1.1 200 OK
-
 Content-Type: application/json
+
 {
   "value": {
     "id": "db8fac7c-ac7c-db8f-7cac-8fdb7cac8fdb",
