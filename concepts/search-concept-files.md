@@ -100,9 +100,7 @@ Content-type: application/json
 ```HTTP
 POST /search/query
 Content-Type: application/json
-```
 
-```json
 {
   "requests": [
     {
@@ -119,7 +117,10 @@ Content-Type: application/json
 
 ### Response
 
-```json
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
   "value": [
@@ -172,9 +173,7 @@ Content-Type: application/json
 ```HTTP
 POST /search/query
 Content-Type: application/json
-```
 
-```json
 {
   "requests": [
     {
@@ -191,7 +190,10 @@ Content-Type: application/json
 
 ### Response
 
-```json
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
   "value": [
@@ -238,9 +240,7 @@ If you want to retrieve a custom property for a **driveItem**, you will have to 
 ```HTTP
 POST /search/query
 Content-Type: application/json
-```
 
-```json
 {
   "requests": [
     {
@@ -261,7 +261,10 @@ Content-Type: application/json
 
 ### Response
 
-```json
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
   "value": [

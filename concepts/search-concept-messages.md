@@ -121,9 +121,7 @@ The following example uses the search query shown in Example 1, and sorts the re
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
-```
 
-```json
 {
   "requests": [
     {
@@ -136,6 +134,66 @@ Content-Type: application/json
       "from": 0,
       "size": 15,
       "enableTopResults": true
+    }
+  ]
+}
+```
+
+#### Response
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "value": [
+    {
+      "searchTerms": [
+        "contoso"
+      ],
+      "hitsContainers": [
+        {
+          "total": 1,
+          "moreResultsAvailable": false,
+          "hits": [
+            {
+              "hitId": "ptWLQ4o6HYpQg8xmAAATzOzRAAA=",
+              "rank": 1,
+              "summary": "Here is a summary of your messages from last week",
+              "resource": {
+                "@odata.type": "#microsoft.graph.message",
+                "createdDateTime": "2019-10-07T10:00:08Z",
+                "lastModifiedDateTime": "2019-10-07T10:00:11Z",
+                "receivedDateTime": "2019-10-07T10:00:09Z",
+                "sentDateTime": "2019-10-07T09:59:52Z",
+                "hasAttachments": false,
+                "subject": "Weekly digest: Microsoft 365 changes",
+                "bodyPreview": "Here is a summary of your messages from last week -   New Feature: Live captions in English-US a",
+                "importance": "normal",
+                "replyTo": [
+                  {
+                    "emailAddress": {
+                      "name": "Goncalo Torres"
+                    }
+                  }
+                ],
+                "sender": {
+                  "emailAddress": {
+                    "name": "Office365 Message Center",
+                    "address": "gtorres@contoso.com"
+                  }
+                },
+                "from": {
+                  "emailAddress": {
+                    "name": "Office365 Message Center",
+                    "address": "gtorres@contoso.com"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
