@@ -54,3 +54,5 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 - See the [Microsoft Search API overview](/graph/search-concept-overview).
 - Drill down on the methods, properties, and relationships of the [externalConnection](externalconnection.md), [schema](schema.md), and [externalItem](externalitem.md) resources.
 - Check out the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub.
+
+
