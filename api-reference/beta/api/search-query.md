@@ -46,20 +46,12 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|requests|[searchRequest](../resources/searchrequest.md) collection|A collection of search requests each formatted in a JSON blob. Each JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, requested fields, and actual search query.|
+|requests|[searchRequest](../resources/searchrequest.md) collection|A collection of one or more search requests each formatted in a JSON blob. Each JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, requested fields, and actual search query. <br> Be aware of [known limitations](../resources/search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results. |
 
 ## Response
 
 If successful, this method returns `HTTP 200 OK` response code and a [searchResponse](../resources/searchresponse.md) collection object in the response body.
  
-## Common use cases
-
-- Search [mail messages](/graph/search-concept-messages)
-- Search [calendar events](/graph/search-concept-events)
-- Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
-- Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
-- [Sort](/graph/search-concept-sort) search results
-- Use [aggregations](/graph/search-concept-aggregations) to refine search results
 
 ## Examples
 
@@ -157,6 +149,15 @@ Content-type: application/json
   ]
 }
 ```
+
+## See also
+- Search [mail messages](/graph/search-concept-messages)
+- Search [calendar events](/graph/search-concept-events)
+- Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
+- Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
+- [Sort](/graph/search-concept-sort) search results
+- Use [aggregations](/graph/search-concept-aggregations) to refine search results
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

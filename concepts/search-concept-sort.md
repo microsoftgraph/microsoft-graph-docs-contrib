@@ -15,7 +15,7 @@ The property to be sorted on should be *Sortable* in the search schema.
 
 The default sort order is ascending. Set the **isDescending** property to change it.
 
-## Example : Single-level sort
+## Example 1: Single-level sort
 
 ### Request
 
@@ -128,7 +128,7 @@ Content-type: application/json
 }
 ```
 
-## Example : Multi-level sort
+## Example 2: Multi-level sort
 
 ### Request
 
