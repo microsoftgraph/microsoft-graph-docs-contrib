@@ -1,5 +1,5 @@
 ---
-title: "List b2cIdentityUserFlow objects"
+title: "List b2cIdentityUserFlows"
 description: "Retrieve a list of b2cIdentityUserFlow objects."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List b2cIdentityUserFlow objects
+# List b2cIdentityUserFlows
 
 Namespace: microsoft.graph
 
