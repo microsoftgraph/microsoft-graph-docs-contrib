@@ -12,6 +12,14 @@ Refine search results and show their distribution in the index.
 
 ## Example 1: Request aggregations for a string property 
 
+The following example searches **listItem** resources and aggregates results by their file type and content class, both of which are string values.
+
+The response includes two [searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta) objects for the two aggregations:
+- The **key** property specifies the actual value (by `FileType` or `contentclass`) for those matching **listItem** objects that are aggregated in the same bucket by that value.
+- The **count** property specifies the number of such objects aggregated in the same bucket.
+- Results aggregated by file type are sorted by count in descending order. In this example, there are 3 buckets for 3 file types: `docx`, `xlsx`, and `pptx`.
+- Results aggregated by content class are sorted by the string value of the content class in descending order. In this example, there is only one bucket with all the matching objects sharing the same content class, `STS_ListItem_DocumentLibrary`.
+
 ### Request
 
 ```HTTP
@@ -115,6 +123,15 @@ Content-type: application/json
 ```
 
 ## Example 2: Request aggregations for a numeric value
+
+The following example searches **driveItem** resources and aggregates results by their size which is a numeric value. The request specifies aggregation by 3 size ranges:
+- Size less than 100
+- Size between 100 and 1000
+- Size 1000 and higher
+
+The response includes 3 **searchBucket** objects, one for each size range aggregation:
+- The 2 buckets of the lower size ranges don't include any search matches.
+- All 9 search matches have sizes 1000 or higher.
 
 ### Request
 
