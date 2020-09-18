@@ -157,7 +157,6 @@ This resource supports:
 | businessPhones | String collection | The telephone numbers for the user. Only one number can be set for this property. <br><br>Returned by default. |
 | city | String | The city in which the user is located. <br><br>Returned only on $select. Supports $filter. |
 | companyName | String | The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 chararcters.<br><br>Returned only on $select. |
-| costCenter | String | The cost center associated with the user. <br><br>Returned only on $select. Supports $filter. |
 | consentProvidedForMinor | String| Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. <br><br>Returned only on $select. |
 | country | String | The country/region in which the user is located; for example, "US" or "UK". <br><br>Returned only on $select. Supports $filter. |
 | createdDateTime | DateTimeOffset | The date and time the user was created. The value cannot be modified and is automatically populated when the entity is created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. Property is nullable. A null value indicates that an accurate creation time couldn't be determined for the user. <br><br>Returned only on $select. Read-only. Supports $filter. |
@@ -165,9 +164,9 @@ This resource supports:
 | deletedDateTime | DateTimeOffset | The date and time the user was deleted. <br><br>Returned only on $select. |
 | department | String | The name for the department in which the user works. <br><br>Returned only on $select. Supports $filter. |
 | displayName | String | The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. <br><br>Returned by default. Supports $filter and $orderby.|
-| division | String | The name of the division in which the user works. <br><br>Returned only on $select. Supports $filter. |
-| employeeId | String | The employee identifier assigned to the user by the organization. <br><br>Returned only on $select. Supports $filter.|
 | employeeHireDate | DateTimeOffset | The date and time when the user was hired or will start work in case of a future hire. <br><br>Returned only on $select. Supports $filter.|
+|employeeOrgData|[employeeOrgData](employeeOrgData.md) collection|Represents organization data (e.g. division and costCenter) associated with a user.|
+| employeeId | String | The employee identifier assigned to the user by the organization. <br><br>Returned only on $select. Supports $filter.|
 | employeeType | String | Captures enterprise worker type: Employee, Contractor, Consultant, Vendor, etc. <br><br>Returned only on $select. Supports $filter.|
 | externalUserState | String | For an external user invited to the tenant using the [invitation API](../api/invitation-post.md), this property represents the invited user's invitation status. For invited users, the state can be `PendingAcceptance` or `Accepted`, or `null` for all other users. <br><br>Returned only on $select. Supports $filter with the supported values. For example: `$filter=externalUserState eq 'PendingAcceptance'`. |
 | externalUserStateChangeDateTime | String | Shows the timestamp for the latest change to the externalUserState property. <br><br>Returned only on $select. |
