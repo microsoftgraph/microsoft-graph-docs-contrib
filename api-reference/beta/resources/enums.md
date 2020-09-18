@@ -11,7 +11,7 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-### volumeType values 
+### volumeType values
 
 | Member
 |:--------------
@@ -1353,14 +1353,14 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### identitySourceType values
 
-|Members|
+|Member|
 |:---|
 |azureActiveDirectory|
 |external|
 
 ### externalGroupMemberType values
 
-|Members|
+|Member|
 |:---|
 |user|
 |group|
