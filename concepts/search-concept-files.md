@@ -17,7 +17,7 @@ The Search API lets you scope the types of content to retrieve in Sharepoint or 
 - [Example 1: Search files](#example-1-search-files)
 - [Example 2: Search list items](#example-2-search-list-items)
 - [Example 3: Search sites](#example-3-search-sites)
-- [Example 4: Search all content in SharePoint and OneDrive](#example-4-search-all-content-in-sharePoint-and-onedrive)
+- [Example 4: Search all content in SharePoint and OneDrive](#example-4-search-all-content-in-sharepoint-and-onedrive)
 
 
 ## Specify select properties
