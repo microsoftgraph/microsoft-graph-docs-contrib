@@ -10,7 +10,7 @@ ms.prod: "search"
 
 Aggregation enable you to enrich search results by providing a representation of how the results are distributed in the index. 
 
-## Example 1 : Request aggregations for a string property 
+## Example 1: Request aggregations for a string property 
 
 ### Request
 
@@ -114,7 +114,7 @@ Content-type: application/json
 }
 ```
 
-## Example 2 : Request aggregations for a numeric value
+## Example 2: Request aggregations for a numeric value
 
 ### Request
 

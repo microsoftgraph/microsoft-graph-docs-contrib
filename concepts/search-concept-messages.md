@@ -20,13 +20,11 @@ Message search applies to work or school accounts. Users can search their own ma
 
 Message search also looks for attachments. The [supported file types](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for message attachment search are the same as those for SharePoint Online search.
 
-## Examples
-
-### Example 1: Search messages in a user's mailbox
+## Example 1: Search messages in a user's mailbox
 
 The following example queries messages in the signed-in user's mailbox that contain the string "contoso" in any part of the message (the sender name, subject, message body, or any attachments). The query returns the first 25 results. The search results are ordered by **DateTime** descending.
 
-#### Request
+### Request
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -48,7 +46,7 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
 
 The following is an example of the response, which contains one message that matches the search criterion.
 
@@ -111,12 +109,12 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Search top results messages
+## Example 2: Search top results messages
 
 The following example uses the search query shown in Example 1, and sorts the results by relevance. 
 
 <!-- markdownlint-disable MD024 -->
-#### Request
+### Request
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
