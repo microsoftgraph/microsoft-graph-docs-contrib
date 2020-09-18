@@ -121,9 +121,7 @@ Content-type: application/json
 ```HTTP
 POST /search/query
 Content-Type: application/json
-```
 
-```json
 {
     "requests": [
         {
@@ -165,7 +163,10 @@ Content-Type: application/json
 
 ### Response
 
-```json
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
     "@odata.type": "#microsoft.graph.searchResponse",
     "hitsContainers": [

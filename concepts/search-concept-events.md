@@ -38,6 +38,57 @@ Content-Type: application/json
 }
 ```
 
+#### Response
+
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "value": [
+  {
+   "@odata.type": "#microsoft.graph.searchResponse",
+   "searchTerms": [
+    "contoso"
+   ],
+   "hitsContainers": [
+    {
+     "@odata.type": "#microsoft.graph.searchHitsContainer",
+     "hits": [
+      {
+       "@odata.type": "#microsoft.graph.searchHit",
+       "hitId": "AAMkADEwODY2NzllLTQ3MmEtNGRlMC05ZTUyLTE4ZDRhYmU1ZGM3NABGAAAAAAA3+iYQBnJnQabRVDelNhnzBwAejhWkAOAxQ6M4c1c9NwfrAAAAAAENAAAejhWkAOAxQ6M4c1c9NwfrAABbUZLJAAA=",
+       "rank": 1,
+       "summary": "Here is a summary of your events from last week",
+       "resource": {
+        "@odata.type": "#microsoft.graph.event",
+        "end": {
+         "dateTime": "2020-06-16T04:15:00Z",
+         "timeZone": "UTC"
+        },
+        "hasAttachments": false,
+        "iCalUId": "040000008200E00074C5B7101A82E008000000007093FDD79B3AD60100000000000000001000000036DAA2262EB4E04DA27DA77985FB8251",
+        "isAllDay": false,
+        "sensitivity": "Normal",
+        "start": {
+         "dateTime": "2020-06-16T03:30:00Z",
+         "timeZone": "UTC"
+        },
+        "subject": "Weekly digest: Microsoft 365 changes",
+        "type": "Single"
+       }
+      }
+     ],
+     "total": 1,
+     "moreResultsAvailable": false
+    }
+   ]
+  }
+ ]
+}
+```
+
 ## Known limitations
 
 - You can access only the signed-in user’s own mailbox. Searching delegated mailboxes is not supported.
