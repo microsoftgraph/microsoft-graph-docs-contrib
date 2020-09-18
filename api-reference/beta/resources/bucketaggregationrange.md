@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enables to specify some manual ranges in the aggregation request. This in only applicable to non string refiners : numeric and dates.
+Specifies the lower and upper limit to a range for aggregating search results. Applies to only refiners of the date or numeric type.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|from|String| Defines the lower bound from which the aggregation will be computed. This can be a numeric value or a date specified in this format. Required.|
-|to|String| Defines the lower bound from which the aggregation will be computed. This can be a numeric value or a date specified in this format. Required.|
+|from|String| Defines the lower bound from which to compute the aggregation. This can be a numeric value or a date specified in this format. Required.|
+|to|String| Defines the upper bound up to which to compute the aggregation. This can be a numeric value or a date specified in this format. Required.|
 
 ## JSON representation
 

@@ -13,17 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the details to generate aggregations in the search results.
+Specifies details to aggregate search results.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |sortBy|bucketAggregationSortProperty| The possible values are `count` to sort by the number of matches in the aggregation, `keyAsString`to sort alphabeticaly based on the key in the aggregation, `keyAsNumber` for numerical sorting based on the key in the aggregation. Required.
-|isDescending|Boolean|`True` to specify the sort order is descending. The default is `false`, with the sort order as ascending. Optional.|
+|isDescending|Boolean|`True` to specify the sort order as descending. The default is `false`, with the sort order as ascending. Optional.|
 |prefixFilter|String|A filter to define a matching criteria. The key should start with the specified prefix to be returned in the response. Optional.|
-|minimumCount|Int32|The minimum number of items that should be present in the aggregation to be returned as a bucket. Optional.|
-|ranges|[bucketAggregationRange](bucketaggregationrange.md) collection|Specifies the manual ranges to compute the aggregations. This is only valid for non-string refiners: dates and numeric. Optional.|
+|minimumCount|Int32|The minimum number of items that should be present in the aggregation to be returned in a bucket. Optional.|
+|ranges|[bucketAggregationRange](bucketaggregationrange.md) collection|Specifies the manual ranges to compute the aggregations. This is only valid for non-string refiners of date or numeric type. Optional.|
 
 ## JSON representation
 
