@@ -225,6 +225,32 @@ Content-Type: application/json
 }
 ```
 
+## Example - Search all content in SharePoint and OneDrive
+
+In the following example, all content in SharePoint and OneDrive is being queried. The response will contain under the **resource** property the most specialized type containing the item: All files will be returned as **driveItem**, containers as **list**, all other items as **listItem**.
+
+### Request
+
+```HTTP
+POST /search/query
+Content-Type: application/json
+```
+
+```json
+{
+  "requests": [
+    {
+      "entityTypes": [
+        "driveItem", "listItem", "list"
+      ],
+      "query": {
+        "queryString": "contoso"
+      }
+    }
+  ]
+}
+```
+
 ## Specify select properties
 
 You can specify the fields you want back in the response for the **resource**. This is a way to either trim down the response over the wire, or to request some specific properties not in the out of the box schema.
