@@ -8,7 +8,7 @@ ms.prod: "search"
 
 # Refine search results using aggregations
 
-Aggregation enable you to enrich search results by providing a representation of how the results are distributed in the index. 
+Refine search results and show their distribution in the index. 
 
 ## Example 1: Request aggregations for a string property 
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 
 ## Known limitations
 
-- Aggregation are only supported for SharePoint or OneDrive items. They are not supported for **externalItems, messages, events**.
+- Aggregation is supported only for SharePoint or OneDrive items. It is not supported for **message**, **event**, and **externalItem**.
 
 ## Next steps
 
