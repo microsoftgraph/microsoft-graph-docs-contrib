@@ -32,7 +32,7 @@ Represents an individual chat message within a [channel](./channel.md) or (in be
 |etag| string | Read-only. Version number of the chat message. |
 |messageType|string|The type of chat message. The possible values are: `message`.|
 |createdDateTime|dateTimeOffset|Read only. Timestamp of when the chat message was created.|
-|lastModifiedDateTime|dateTimeOffset|Read only. Timestamp when the chat message is created (initial setting) or edited, including when a reply is made (if it's a root chat message in a channel) or a reaction is added or removed. |
+|lastModifiedDateTime|dateTimeOffset|Read only. Timestamp when the chat message is created (initial setting) or edited, including when a reaction is added or removed. |
 |lastEditedDateTime|dateTimeOffset|Read only. Timestamp when edits to the chat message were made. Triggers an "Edited" flag in the Teams UI. If no edits are made the value is `null`.|
 |deletedDateTime|dateTimeOffset|Read only. Timestamp at which the chat message was deleted, or null if not deleted. |
 |subject|string| The subject of the chat message, in plaintext.|
@@ -95,4 +95,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
