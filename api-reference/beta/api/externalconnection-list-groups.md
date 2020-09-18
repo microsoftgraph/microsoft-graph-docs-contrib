@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/beta/connections/contosohr/groups
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.substrateConnectors.externalGroup)"
+  "@odata.type": "Collection(microsoft.graph.externalGroup)"
 }
 -->
 
@@ -82,13 +82,11 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.substrateConnectors.externalGroup",
       "id": "31bea3d537902000",
       "displayName": "Contoso Marketing",
       "description": "The product marketing team"
     },
     {
-      "@odata.type": "#microsoft.substrateConnectors.externalGroup",
       "id": "044e0bfc8bcbe5de",
       "displayName": "Contoso Support",
       "description": "Tier 1 customer support team"

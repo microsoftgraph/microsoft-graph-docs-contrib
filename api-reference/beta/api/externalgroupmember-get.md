@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/connections/contosohr/groups/31bea3d5379020
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.substrateConnectors.externalGroupMember"
+  "@odata.type": "microsoft.graph.externalGroupMember"
 }
 -->
 
@@ -82,7 +82,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 {
   "value": {
-    "@odata.type": "#microsoft.substrateConnectors.externalGroupMember",
+    "@odata.type": "#microsoft.graph.externalGroupMember",
     "id": "14m1b9c38qe647f6a",
     "type": "group",
     "identitySource": "external"

@@ -73,7 +73,7 @@ Content-Type: application/json
 Content-length: 125
 
 {
-  "@odata.type": "#microsoft.substrateConnectors.externalGroup",
+  "@odata.type": "#microsoft.graph.externalGroup",
   "id": "31bea3d537902000",
   "displayName": "Contoso Marketing",
   "description": "The product marketing team"
@@ -86,7 +86,7 @@ Content-length: 125
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.substrateConnectors.externalGroup"
+  "@odata.type": "microsoft.graph.externalGroup"
 }
 -->
 
@@ -95,7 +95,7 @@ HTTP/1.1 201 Created
 
 Content-Type: application/json
 {
-  "@odata.type": "#microsoft.substrateConnectors.externalGroup",
+  "@odata.type": "#microsoft.graph.externalGroup",
   "id": "31bea3d537902000",
   "displayName": "Contoso Marketing",
   "description": "The product marketing team"

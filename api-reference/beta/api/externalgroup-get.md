@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/connections/contosohr/groups/31bea3d5379020
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.substrateConnectors.externalGroup"
+  "@odata.type": "microsoft.graph.externalGroup"
 }
 -->
 
@@ -82,7 +82,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 {
   "value": {
-    "@odata.type": "#microsoft.substrateConnectors.externalGroup",
     "id": "db8fac7c-ac7c-db8f-7cac-8fdb7cac8fdb",
     "displayName": "Contoso Marketing",
     "description": "String"

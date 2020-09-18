@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/connections/contosohr/groups/31bea3d5379020
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.substrateConnectors.externalGroupMember)"
+  "@odata.type": "Collection(microsoft.graph.externalGroupMember)"
 }
 -->
 
@@ -83,19 +83,19 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.substrateConnectors.externalGroupMember",
+      "@odata.type": "#microsoft.graph.externalGroupMember",
       "id": "e811976d-83df-4cbd-8b9b-5215b18aa874",
       "type": "user",
       "identitySource": "azureActiveDirectory"
     },
     {
-      "@odata.type": "#microsoft.substrateConnectors.externalGroupMember",
+      "@odata.type": "#microsoft.graph.externalGroupMember",
       "id": "e5477431-1038-484e-bf69-1dfedb97a110",
       "type": "group",
       "identitySource": "azureActiveDirectory"
     },
     {
-      "@odata.type": "#microsoft.substrateConnectors.externalGroupMember",
+      "@odata.type": "#microsoft.graph.externalGroupMember",
       "id": "14m1b9c38qe647f6a",
       "type": "group",
       "identitySource": "external"
