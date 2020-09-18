@@ -8,7 +8,7 @@ ms.prod: "search"
 
 # Use the Microsoft Search API to search content in OneDrive or SharePoint
 
-Use the Microsoft Search API to search content in a file, folder, list, or site stored in SharePoint or OneDrive. The Microsoft Search API uses a relevance model that makes use of signals from Microsoft Graph about users' relationships and activities. This enables you to return and promote the content that users care about, in a search experience that is consistent with search results in SharePoint.
+Use the Microsoft Search API to search content stored in SharePoint or OneDrive : files, folders, lists, listitems or sites.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
@@ -227,7 +227,7 @@ Content-Type: application/json
 
 ## Example - Search all content in SharePoint and OneDrive
 
-In the following example, all content in SharePoint and OneDrive is being queried. The response will contain under the **resource** property the most specialized type containing the item: All files will be returned as **driveItem**, containers as **list**, all other items as **listItem**.
+All content in SharePoint or OneDrive sites that the signed-in user has read access to is queried. The response will contain under the **resource** property the most specialized type containing the item: All files and folders will be returned as **driveItem**, containers (Lists) as **list**, all other items as **listItem**.
 
 ### Request
 
