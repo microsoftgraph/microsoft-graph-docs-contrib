@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /trustFramework/keySets/{id}/getActiveKey
+GET /trustFramework/keySets/{id}/getActiveKey
 ```
 
 ## Request headers
@@ -61,7 +61,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
+GET https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/trustframeworkkeyset-getactivekey-csharp-snippets.md)]
@@ -115,3 +115,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
