@@ -8,7 +8,7 @@ ms.prod: "search"
 
 # Use the Microsoft Search API to search Outlook messages
 
-Use the Microsoft Search API to search for information in email messages, return messages ranked by relevance, and render a dedicated search experience. The search applies to the body and attachments of messages in the user's own mailbox.
+Use the Microsoft Search API to search for information in email messages, return messages ranked by relevance, and render a dedicated search experience. The search applies to the body and attachments of messages in the signed-in user's own mailbox.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
@@ -141,7 +141,7 @@ Content-Type: application/json
 
 ## Known limitations
 
-- You can only access a user’s own mailbox. Searching delegated mailboxes is not supported.
+- You can access only the signed-in user’s own mailbox. Searching delegated mailboxes is not supported.
 - For messages, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta&preserve-view=true) type contains the number of results on the page, not the total number of matching results.
 - Sorting results is not supported for events. A sort clause in the request will return a Bad Request error code in the response.
 
