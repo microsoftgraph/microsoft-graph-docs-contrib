@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not Supported                               |
 | Application                            | None                                        |
 
-Tenant level Application Meeting Configuration is required to allow an application to call this API. Tenant admin should call following cmdlet on Tenant Remote Powershell to grant the permission to the application to call this API. For more information, see https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md.
+Tenant level Application Meeting Configuration is required to allow an application to call this API. Tenant admin should call following cmdlet on Tenant Remote Powershell to grant the permission to the application to call this API. For more information, see [Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md).
 ```
 PS C:\> Set-CsApplicationMeetingConfiguration -AllowRemoveParticipantAppIds @{Add="app_id"}
 ```
