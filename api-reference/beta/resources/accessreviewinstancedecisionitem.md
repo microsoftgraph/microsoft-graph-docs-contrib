@@ -13,12 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure AD [access review](accessreviews-root.md) decision on an instance of a review.
+Represents an Azure AD [access review](accessreviews-root.md) decision on an instance of a review. This decision represents the determination of a user or service principal's access for a given access review.
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
+|[List accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-list.md) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection | Lists every `accessReviewInstanceDecisionItem` for a specific `accessReviewInstance`. |
 
 
 
@@ -79,12 +80,23 @@ The **accessReviewInstanceDecisionItemTarget** represents a base class for diffe
 
 ## accessReviewInstanceDecisionItemUserTarget
 
-The **accessReviewInstanceDecisionItemUserTarget** represents a user identity as the target for a review
+The **accessReviewInstanceDecisionItemUserTarget** represents a user being reviewed.
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| `userID`          |`String`  | The query for what needs to be reviewed. See table for examples. |
-| `queryType`          |`String`  | The type of query. Examples include MicrosoftGraph and ARM. |
+| `userID`          |`String`  | The ID of the user object whose access is being reviewed. |
+| `userDisplayName`          |`String`  | The display name of the user whose access is being reviewed. |
+| `userPrincipalName`          |`String`  | User Principal Name for the user object. |
+
+## accessReviewInstanceDecisionItemServicePrincipalTarget
+
+The **accessReviewInstanceDecisionItemServicePrincipalTarget** represents a service principal being reviewed.
+
+| Property                     | Type                      | Description |
+| :--------------------------- | :------------------------ | :---------- |
+| `servicePrincipalID`          |`String`  | The ID of the service principal whose access is being reviewed. |
+| `servicePrincipalDisplayName`          |`String`  | The display name of the service principal whose access is being reviewed. |
+| `appId`          |`String`  | The appId for the service principal entity being reviewed. |
 
 <!--
 {
