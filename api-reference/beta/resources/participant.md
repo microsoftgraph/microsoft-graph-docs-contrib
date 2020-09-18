@@ -20,11 +20,11 @@ The participant type.
 | Method                                                 | Return Type                                                 | Description                                    |
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
 | [Get participant](../api/participant-get.md)           | [participant](participant.md)                               | Read properties of the **participant** object. |
+| [Delete participant](../api/participant-delete.md)     | None   | Delete a participant in a call.                  |
 | [ConfigureMixer](../api/participant-configuremixer.md) | [commsOperation](commsoperation.md)                         | Configure the participant audio mixer.         |
 | [Invite](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                         | Invite a participant to the call.              |
 | [Mute participant](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Mute a participant in a call.                  |
 | [Mute all participants](../api/participant-muteall.md) | [commsOperation](commsoperation.md) | Mute all the participants in the meeting.      |
-| [Delete participant](../api/participant-delete.md)         | None   | Delete a participant in a call.                  |
 
 ## Properties
 
