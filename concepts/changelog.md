@@ -106,6 +106,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |:----------------|:------------|:-----------------------------------------|
 | Addition        | Beta and v1.0 | Added the **outlookM365** and **outlook2019** properties to the [getEmailAppUsageVersionsUserCounts](/graph/api/resources/emailappusageversionsusercount?view=graph-rest-beta) entity.|
 
+### Search
+
+| **Change type** | **Version** | **Description**                                                                                                             |
+|:----------------|:------------|:----------------------------------------------------------------------------------------------------------------------------|
+| Addition        | beta        | Added the **state** property to [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta) resource |
+| Addition        | beta        | Added the [externalGroup](/graph/api/resources/externalgroup?view=graph-rest-beta) resource                                 |
+| Addition        | beta        | Added the [externalGroupMember](/graph/api/resources/externalgroupmember?view=graph-rest-beta) resource                     |
+
 ### Teamwork
 
 | **Change type** | **Version**   | **Description**                          |
@@ -237,7 +245,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|v1.0|Added support for [creating a team](/graph/api/team-post?view=graph-rest-1.0) directly (without first creating a group), which also enables creating class teams.|
 |Addition | v1.0 | Added the [members](/graph/api/team-post-members?view=graph-rest-1.0) navigation property to the [team](/graph/api/resources/team?view=graph-rest-1.0) resource type, enabling members to be added with increased reliability and lower latency.|
 
-### To-do tasks 
+### To-do tasks
 
 | **Change type** | **Version** | **Description** |
 |:---|:---|:---|
