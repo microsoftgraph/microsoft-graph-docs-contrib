@@ -12144,6 +12144,8 @@ items:
           href: api/chatmessage-post.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
+        - name: Update message
+          href: api/chatmessage-update.md
         - name: List hosted content
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content
