@@ -316,7 +316,7 @@ Content-Type: application/json
 
 ## Example 4: Search all content in SharePoint and OneDrive
 
-All content in SharePoint or OneDrive sites that the signed-in user has read access to is queried. The response will contain under the **resource** property the most specialized type containing the item: All files and folders will be returned as **driveItem**, containers (Lists) as **list**, all other items as **listItem**.
+This example queries all the content in SharePoint or OneDrive sites to which the signed-in user has read access. The **resource** property in the response returns matches that are files and folders as **driveItem** objects, matches that are containers (SharePoint lists) as **list**, and all other matches as **listItem**.
 
 ### Request
 
