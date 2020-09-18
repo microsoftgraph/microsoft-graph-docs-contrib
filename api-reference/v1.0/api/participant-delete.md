@@ -1,6 +1,6 @@
 ---
 title: "Delete participant"
-description: "Delete participant."
+description: "Delete participant for Graph V1.0."
 manager: zhengni
 author: jackry6350
 ms.author: yoren
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 # Delete participant
 
-Delete a specific participant in the call.
+Delete a specific participant in the call. In some situations it is appropriate for an application to remove a participant from an active call, via the Delete Participant API. This action can be done either before or after the participant answers the call. When an active caller is removed via Delete participant, they are immediately dropped from the call with no pre or post-removal notification.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not Supported                               |
 | Application                            | None                                        |
 
-Tenant level Application Meeting Configuration is required to allow an application to call this API. Tenant admin should call following cmdlet on Tenant Remote Powershell to grant the permission to the application to call this API.
+Tenant level Application Meeting Configuration is required to allow an application to call this API. Tenant admin should call following cmdlet on Tenant Remote Powershell to grant the permission to the application to call this API. For more information, see [Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md).
 ```
 PS C:\> Set-CsApplicationMeetingConfiguration -AllowRemoveParticipantAppIds @{Add="app_id"}
 ```
