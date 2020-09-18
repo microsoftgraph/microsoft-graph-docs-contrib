@@ -1,6 +1,6 @@
 ---
 title: "externalConnection resource type"
-description: "A connection to Microsoft Search from an external source."
+description: "A connection is a logical container for your external content in Microsoft Graph"
 localization_priority: Normal
 author: "snlraju-msft"
 ms.prod: "search"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A connection to Microsoft Search from an external source.
+A logical container to add content from an external source into Microsoft Graph.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 

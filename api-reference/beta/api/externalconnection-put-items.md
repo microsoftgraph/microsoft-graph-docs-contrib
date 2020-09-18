@@ -127,8 +127,8 @@ Content-type: application/json
     "assignee": "john@contoso.com"
   },
   "content": {
-    "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
-    "type": "html"
+    "value": "Error in payment gateway...",
+    "type": "text"
   }
 }
 ```
