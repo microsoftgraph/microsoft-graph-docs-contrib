@@ -24,6 +24,7 @@ Represents an Azure AD [access review](accessreviews-root.md) recurrence. If the
 |[Get accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Returns `accessReviewInstance` for an `accessReviewScheduleDefinition`. Does not include associated `accessReviewInstanceDecisionItem`s in object. |
 |[Send accessReviewInstance reminder](../api/accessreviewinstance-sendreminder.md) | None. | Send a reminder to the reviewers of an `accessReviewInstance`. |
 |[Stop accessReviewInstance](../api/accessreviewinstance-stop.md) | None. | Manually stop an `accessReviewInstance`. |
+|[Apply decisions](../api/accessreviewinstance-stop.md) | None. | Manually apply decision on an `accessReviewInstance`. |
 
 
 ## Properties
