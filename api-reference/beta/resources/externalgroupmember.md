@@ -19,7 +19,6 @@ Namespace: microsoft.graph
 |:---|:---|:---|
 |[List externalGroupMembers](../api/externalgroup-list-members.md)|[externalGroupMember](../resources/externalgroupmember.md) collection|Get the externalGroupMember resources from the members navigation property.|
 |[Create externalGroupMembers](../api/externalgroup-post-members.md)|[externalGroupMember](../resources/externalgroupmember.md)|Create a new externalGroupMember object.|
-|[Get externalGroupMember](../api/externalgroupmember-get.md)|[externalGroupMember](../resources/externalgroupmember.md)|Read the properties and relationships of an [externalGroupMember](../resources/externalgroupmember.md) object.|
 |[Delete externalGroupMember](../api/externalgroupmember-delete.md)|None|Deletes an [externalGroupMember](../resources/externalgroupmember.md) object.|
 
 ## Properties
