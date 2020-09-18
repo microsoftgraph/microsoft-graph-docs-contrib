@@ -11,16 +11,16 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the participant type.
+Represents a participant in a call.
 
 ## Methods
 
 | Method                                                 | Return Type                                                 | Description                                    |
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
 | [Get participant](../api/participant-get.md)           | [participant](participant.md)                               | Read properties of the **participant** object. |
+| [Delete participant](../api/participant-delete.md)         | None   | Delete a participant in a call.                  |
 | [Invite](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                        | Invite a participant to the call.              |
 | [Mute participant](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Mute a participant in a call.                  |
-| [Delete participant](../api/participant-delete.md)         | None   | Delete a participant in a call.                  |
 
 ## Properties
 
