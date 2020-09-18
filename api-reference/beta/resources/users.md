@@ -62,3 +62,4 @@ For details and a list of all the properties, see the [user](user.md) object.
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+

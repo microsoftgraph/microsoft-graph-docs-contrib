@@ -68,3 +68,5 @@ Directory resources and APIs can open up new ways for you to engage with users a
 
 Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
 
+
+

@@ -51,6 +51,10 @@ In the request body, supply the values for relevant fields that should be update
 |guestUserRoleId|Guid| Represents role templateId for the role that should be granted to guest user. Refer to [List unifiedRoleDefinitions](https://docs.microsoft.com/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta&tabs=http) to find the list of available role templates. Only supported roles today are User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3), and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b). | 
 |enabledPreviewFeatures|Collection(string)| List of features enabled for private preview on the tenant. | 
 |blockMsolPowerShell|Boolean| To disable the use of MSOL PowerShell, set this property to `true`. Setting to `true` will also disable user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure AD Connect or Microsoft Graph. | 
+|defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultUserRolePermissions.md)| Specifies certain customizable permissions for default user role. | 
+|allowedToUseSSPR|Boolean| Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant. | 
+|allowedToSignUpEmailBasedSubscriptions|Boolean| Indicates whether users can sign up for email based subscriptions. | 
+|allowEmailVerifiedUsersToJoinOrganization|Boolean| Indicates whether a user can join the tenant by email validation. | 
 
 ## Response
 
@@ -64,8 +68,14 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 The following is an example of the request. In this example, guest access level is modified to Restricted Guest User.
 
+<!-- {
+  "blockType": "request",
+  "name": "update_authZPolicy_guestUserLevel"
+}-->
+
 ```http
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+
 {
   "guestUserRole": "2af84b1e-32c8-42b7-82bc-daa82404023b"
 }
@@ -92,13 +102,35 @@ HTTP/1.1 204 No Content
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_authZPolicy_preview"
+}-->
+
 ```http
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+
 {
   "enabledPreviewFeatures": ["assignGroupsToRoles"]
 }
 
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-preview-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authzpolicy-preview-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-authzpolicy-preview-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 The following is an example of the response.
@@ -120,13 +152,35 @@ HTTP/1.1 204 No Content
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_authZPolicy_blockMSOLPowerShell"
+}-->
+
 ```http
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+
 {
   "blockMsolPowerShell": true
 }
 
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-blockmsolpowershell-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authzpolicy-blockmsolpowershell-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-authzpolicy-blockmsolpowershell-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 The following is an example of the response.
@@ -140,3 +194,105 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+### Example 4: Disable default user role's permission to create applications
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_authZPolicy_applications"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+
+{
+    "defaultUserRolePermissions":
+    {
+      "allowedToCreateApps": false
+    }
+}
+
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-applications-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authzpolicy-applications-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-authzpolicy-applications-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 5: Enable default user role to use Self-Serve Password Reset feature
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_authZPolicy_SSPR"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+
+{
+    "allowedToUseSSPR": true
+}
+
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-sspr-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authzpolicy-sspr-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-authzpolicy-sspr-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+

@@ -11,6 +11,15 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### volumeType values 
+
+| Member
+|:--------------
+| operatingSystemVolume
+| fixedDataVolume
+| removableDataVolume
+| unknownFutureValue
+
 ### allowedAudiences values
 
 |Member|
@@ -828,6 +837,15 @@ Possible values for user account types (group membership), per Windows definitio
 | power         | 1     | Member of Power Users group.    |
 | administrator | 2     | Member of Administrators group. |
 
+### chatMessagePolicyViolationDlpActionType values
+
+| Value |
+|:-----------------|
+| none |
+| NotifySender |
+| BlockAccess |
+| BlockAccessExternal |
+
 ### scopeOperatorMultiValuedComparisonType values
 
 |Member|
@@ -1016,6 +1034,23 @@ Possible values for user account types (group membership), per Windows definitio
 |signin|
 |user|
 |unknownFutureValue|
+
+### chatMessagePolicyViolationUserActionType values
+
+| Member   | Int value |  Description |
+|:---------------|:--------|:----------|
+| None | 0 | Default value. This is the value on a message when the user has not taken an action on the message blocked by DLP. |
+| Override | 1 | Sender has overridden the message verdict and sent the message anyway.|
+| ReportFalsePositive | 2 | Sender has reported the message verdict to the admins as a false positive.|
+
+### chatMessagePolicyViolationVerdictDetailsType values
+
+| Member   | Int value |  Description |
+|:---------------|:--------|:----------|
+| None | 0 |  User is not allowed to override the message. User is not allowed to report a message as false positive if policyTip is not provided. In all other scenarios, user can report a message as false positive.|
+| AllowFalsePositiveOverride | 1 |  User is not allowed to explicitly override the block unless this is combined with `AllowOverrideWithoutJustification` or `AllowOverrideWithJustification` flags. Reporting a false positive on the violation automatically overrides the block and sends the message. |
+| AllowOverrideWithoutJustification | 2 | User is allowed to override the block and send the message. Justification text is not required. Exclusive to `AllowOverrideWithJustification`. |
+| AllowOverrideWithJustification | 4 |  User is allowed to override the block and send the message. Justification text is required. Exclusive to `AllowOverrideWithoutJustification`.|
 
 ### entityType values
 
@@ -1264,6 +1299,17 @@ Possible values for user account types (group membership), per Windows definitio
 | generic
 | unknownFutureValue
 
+### userFlowType values
+|Member
+|:----------------------
+| signUp
+| signIn
+| signUpOrSignIn
+| passwordReset
+| profileUpdate
+| resourceOwnerPasswordCredentialSignIn
+| unknownFutureValue
+
 ### openIdConnectResponseMode values
 | Member                
 |:----------------------
@@ -1296,3 +1342,13 @@ Possible values for user account types (group membership), per Windows definitio
 | completed
 | waitingOnOthers
 | deferred
+
+### connectedOrganizationState values
+
+| Member                | Value | Description                                                                                                                                                                                                        |
+|:----------------------| :-----|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| configured            | 0     | Connected Organizations with this state value are included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.                                                          |
+| proposed              | 1     | Connected Organizations that are automatically created by the system have this state value. They are not included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.   |
+| unknownFutureValue    | 2     | A sentinel member.                                                                                                                                                                                                 |
+
+
