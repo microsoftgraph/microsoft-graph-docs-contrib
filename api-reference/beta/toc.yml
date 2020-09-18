@@ -9658,6 +9658,14 @@ items:
             href: api/administrativeunit-get-scopedrolemembers.md
           - name: Remove a scoped-role administrator
             href: api/administrativeunit-delete-scopedrolemembers.md
+        - name: BitLocker recovery key (preview)
+          items:
+          - name: BitLocker recovery key
+            href: resources/bitlockerrecoverykey.md
+          - name: List 
+            href: api/bitlocker-list-recoverykeys.md
+          - name: Get
+            href: api/bitlockerrecoverykey-get.md
         - name: Contracts
           href: resources/contract.md
           items:
@@ -10161,6 +10169,13 @@ items:
               href: api/identitysecuritydefaultsenforcementpolicy-get.md
             - name: Update
               href: api/identitysecuritydefaultsenforcementpolicy-update.md
+          - name: Continuous access evaluation policy
+            href: resources/continuousaccessevaluationpolicy.md
+            items:
+            - name: Get
+              href: api/continuousaccessevaluationpolicy-get.md
+            - name: Update
+              href: api/continuousaccessevaluationpolicy-update.md
         - name: Role management
           href: resources/rolemanagement.md
           items:
@@ -12129,6 +12144,8 @@ items:
           href: api/chatmessage-post.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
+        - name: Update message
+          href: api/chatmessage-update.md
         - name: List hosted content
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content
