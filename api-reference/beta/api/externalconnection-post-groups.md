@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /connections/{connectionsId}/groups
+POST /external/connections/{connectionId}/groups
 ```
 
 ## Request headers
@@ -68,7 +68,7 @@ If successful, this method returns a `201 Created` response code and an [externa
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/connections/contosohr/groups
+POST https://graph.microsoft.com/beta/external/connections/contosohr/groups
 Content-Type: application/json
 
 {
@@ -79,6 +79,7 @@ Content-Type: application/json
 }
 ```
 
+<!-- markdownlint-disable MD024 -->
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.

@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new externalGroupMember object.
+Create a new [externalGroupMember](../resources/externalgroupmember.md) object.
 
 ## Permissions
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /connections/{connectionsId}/groups/{externalGroupId}/members
+POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 ```
 
 ## Request headers
@@ -70,7 +70,7 @@ If successful, this method returns a `201 Created` response code and an [externa
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/connections/contosohr/groups/31bea3d537902000/members
+POST https://graph.microsoft.com/beta/external/connections/contosohr/groups/31bea3d537902000/members
 Content-Type: application/json
 
 {
@@ -81,6 +81,7 @@ Content-Type: application/json
 }
 ```
 
+<!-- markdownlint-disable MD024 -->
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
@@ -103,7 +104,6 @@ Content-Type: application/json
 }
 ```
 
-
 ### Example 2: Add an Azure Active Directory group as a member
 
 ### Request
@@ -115,7 +115,7 @@ Content-Type: application/json
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/connections/contosohr/groups/31bea3d537902000/members
+POST https://graph.microsoft.com/beta/external/connections/contosohr/groups/31bea3d537902000/members
 Content-Type: application/json
 
 {
@@ -159,7 +159,7 @@ Content-Type: application/json
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/connections/contosohr/groups/31bea3d537902000/members
+POST https://graph.microsoft.com/beta/external/connections/contosohr/groups/31bea3d537902000/members
 Content-Type: application/json
 
 {

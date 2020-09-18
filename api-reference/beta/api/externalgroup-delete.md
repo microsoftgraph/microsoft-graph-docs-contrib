@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-DELETE /connections/{connectionsId}/groups/{externalGroupId}
+DELETE /external/connections/{connectionId}/groups/{externalGroupId}
 ```
 
 ## Request headers
@@ -59,9 +59,10 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/connections/contosohr/groups/31bea3d537902000
+DELETE https://graph.microsoft.com/beta/external/connections/contosohr/groups/31bea3d537902000
 ```
 
+<!-- markdownlint-disable MD024 -->
 ### Response
 
 <!-- {
