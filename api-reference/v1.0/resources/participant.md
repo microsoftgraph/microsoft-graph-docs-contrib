@@ -17,6 +17,7 @@ Represents a participant in a call.
 
 | Method                                                 | Return Type                                                 | Description                                    |
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
+| [List participant](../api/participant-get.md)          | [participant](participant.md)                               | Retrieve a list of **participant** objects in the call. |
 | [Get participant](../api/participant-get.md)           | [participant](participant.md)                               | Read properties of the **participant** object. |
 | [Delete participant](../api/participant-delete.md)         | None   | Delete a participant in a call.                  |
 | [Invite](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                        | Invite a participant to the call.              |
