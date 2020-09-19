@@ -29,6 +29,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **lobbyBypassSettings**, **isEntryExitAnnounced**, and **allowedPresenters** property to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) entity.|
 | Addition | beta | Added support for application permissions to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) entity and associated methods. |
+| Addition | beta | Added delete method to the [participant](/graph/api/resources/participant?view=graph-rest-beta) entity. |
+| Addition | v1.0 | Added delete method to the [participant](/graph/api/resources/participant?view=graph-rest-1.0) entity. |
 
 ### Devices and apps | Cloud printing
 

@@ -1078,10 +1078,12 @@ items:
         - name: Participant
           href: resources/participant.md
           items:
-          - name: Get
-            href: api/participant-get.md
           - name: List
             href: api/call-list-participants.md
+          - name: Get
+            href: api/participant-get.md
+          - name: Delete
+            href: api/participant-delete.md
           - name: Mute participant
             href: api/participant-mute.md
           - name: Invite participants
