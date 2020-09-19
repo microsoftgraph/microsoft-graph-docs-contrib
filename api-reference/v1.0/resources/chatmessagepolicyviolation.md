@@ -1,6 +1,6 @@
 ---
 title: "chatMessagePolicyViolation resource type"
-description: "Represents a policy violation on a chat message. Policy violations are typically set by a data loss prevention (DLP) application."
+description: "Represents policy violation on a chat message. Policy violations are typically set by a data loss prevention (DLP) application."
 author: "laujan"
 doc_type: resourcePageType
 localization_priority: Normal

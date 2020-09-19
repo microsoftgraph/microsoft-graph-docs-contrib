@@ -1,6 +1,6 @@
 ---
 title: "chatMessagePolicyViolationPolicyTip resource type"
-description: "Represents the properties of a policy tip on a chatMessagePolicyViolation object. Policy tips provide the sender with information about the policy violation."
+description: "Represents properties of a policy tip on a chatMessagePolicyViolation object. Policy tips provide the sender with information about the policy violation."
 author: "laujan"
 doc_type: resourcePageType
 localization_priority: Normal

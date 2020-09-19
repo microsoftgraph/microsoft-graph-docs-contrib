@@ -1,6 +1,6 @@
 ---
 title: "Update chatMessage"
-description: "Update the policyViolation property of a chatMessage."
+description: "Update policyViolation property of a chatMessage."
 author: "laujan"
 doc_type: apiPageType
 localization_priority: Normal 
