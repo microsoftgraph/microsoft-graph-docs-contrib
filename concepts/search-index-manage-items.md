@@ -30,7 +30,6 @@ External groups can consist of another external group, Azure Active Directory us
 The Properties component is used to add item metadata that is useful in Microsoft Graph experiences. You must [register the schema](/graph/concepts/search-index-manage-schema.md) for the connection before adding items into it and convert datatypes into [supported datatypes](https://docs.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-beta). 
 
 ![search-index-manage-items-1.png](./images/search-index-manage-items-1.png)
-*Property component for Tickets Connector*
 
 ## Content
 The content component is used to add the bulk of the item that needs to be full text indexed. Examples include ticket description, parsed text from a file body, or a wiki page body. 

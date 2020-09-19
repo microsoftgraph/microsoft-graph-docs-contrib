@@ -41,11 +41,11 @@ If a property is searchable, its value is added to the full text index. When a u
 If a property is queryable, you can query against it using knowledge query language (KQL). KQL consists of 1 or more free text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator(*). Note: suffix matching is not supported.
 
 ![search-index-manage-items-schema-2.svg](./images/search-index-manage-items-schema-2.svg)
-*A search for “search ba*” displaying results that match this prefix*
+*A search for “search ba`*`” displaying results that match this prefix*
 
 ![search-index-manage-items-schema-3.svg](./images/search-index-manage-items-schema-3.svg)
 
-*A search for “tags:design” scoping down results to items with 'design' in the tags property*
+*A search for “tags:design” scoping down results to items with "design" in the tags property*
 
 
 ### Retrievable
@@ -53,14 +53,14 @@ If a property is retrievable, its value can be returned in search results. Any p
 
 
 ![search-index-manage-schema-4.svg](./images/search-index-manage-schema-4.svg)
-*A set of retrievable properties (title, lastEditedBy etc.) rendered as a result*
+*A set of retrievable properties (`title`, `lastEditedBy` etc.) rendered as a result*
 
 
 
 ### Refinable
 If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page.
 ![search-index-manage-schema-5.svg](./images/search-index-manage-schema-5.svg)
-*Refine results by 'tags', a refinable property*
+*Refine results by `tags`, a refinable property*
 
 ## Labels 
 A label is a well known tag published by Microsoft that you can add against a property in your schema. Adding a label helps various Microsoft products understand the property and provide a better experience. 
@@ -99,7 +99,7 @@ For discovery, i.e. search scenarios, please note:
 Labels also affect how default result types are generated. Adding the *title* label and content at a minimum will ensure that a result type is created for your connection.
 
 ![search-index-manage-schema-6.svg](./images/search-index-manage-schema-6.svg)
-*A default result type with a title and result snippet*
+*A default result type with `title` and a result snippet*
 
 Your default result type will provide a better experience when you define these labels, when applicable, listed by ascending order:
 1.	title
