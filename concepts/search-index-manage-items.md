@@ -38,7 +38,9 @@ The content component is used to add the bulk of the item that needs to be full 
 Content is one of the key fields influencing [relevance](/graph/concepts/search-index-manage-schema.md) across Microsoft experiences. We support content of the *type* `text` and `HTML`. If your data source has binary files, you can parse them to text before adding them to the Microsoft Graph. 
 ![search-index-manage-items-2.png](./images/search-index-manage-items-2.png)
 Content cannot be directly added into a search result template, but you can use a generated result snippet which is a dynamically generated preview of the relevant sections within content.
-![search-index-manage-items-3.png](./images/search-index-manage-items-3.png)
+
+![search-index-manage-items-3.svg](./images/search-index-manage-items-3.svg)
+*Result snippet generated from content*
 
 When content in your data source changes, you must sync it with your connection items. You can either update the entire item or update one or more of its components- access control list, properties, and content. Once your content has been added to Microsoft Graph, you can search for it through Microsoft Search experience after setting up [verticals and result types](https://docs.microsoft.com/en-us/MicrosoftSearch/customize-search-page) or using the [Microsoft Graph Search API](https://docs.microsoft.com/en-us/graph/api/resources/search-api-overview?view=graph-rest-beta).
 

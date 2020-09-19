@@ -17,7 +17,7 @@ Once a connection has been created, you can add your content from any external d
 ![security_overview_diagram_1.png](./images/search-idex-manage-connections-connector-structure.png)
 *Sample custom helpdesk system Tickets Connector Structure*
 
-![security_overview_diagram_1.png](./images/search-idex-manage-connections-admin-view.png)
+![search-index-manage-connections-admin-view.svg](./images/search-index-manage-connections-admin-view.svg)
 *Admin View of Connections including the custom Tickets Connector*
 
 You can model a connection anyway you want, but creating one connection for every instance of your connector is the most common model. For example, each time you set up the [Microsoft-built](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector) Windows file share connector, a new connection is created. You can also create a single connection to add all items from your data source. For example, creating a single connection to add all the tickets and incidents across multiple teams from your helpdesk system.
