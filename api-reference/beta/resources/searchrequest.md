@@ -27,7 +27,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|:------------|
-|aggregations|[aggregationOption](aggregationOption.md) collection|Specifies which aggregations (also known as refiners) to be retuned alongside the search results. Optional.|
+|aggregations|[aggregationOption](aggregationOption.md) collection|Specifies aggregations (also known as refiners) to be returned alongside search results. Optional.|
 |aggregationFilters|String collection|Contains the list of **aggregationsFilterToken** obtained from the [searchBucket](searchBucket.md) which will filter search results to those contained in the specified bucket. Optional.|
 |contentSources|String collection|Contains the connection to be targeted. <br>Respects the following format : `/external/connections/connectionid` where `connectionid` is the ConnectionId defined in the Connectors Administration. <br> Note : contentSource is only applicable when entityType=`externalItem`. Optional.|
 |enableTopResults|Boolean|This triggers hybrid sort for messages : the first 3 messages are the most relevant. This property is only applicable to entityType=`message`. Optional.|

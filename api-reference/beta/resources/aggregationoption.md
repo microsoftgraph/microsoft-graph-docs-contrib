@@ -19,9 +19,9 @@ Specifies which aggregations should be returned alongside the search results.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|field|String|Specifies the field that the aggregation should be computed on. Required.|
+|field|String|Specifies the field in the schema of the specified entity type that aggregation should be computed on. Required.|
 |size|Int32|The number of [searchBucket](searchBucket.md) resources to be returned. This is not required when the range is provided manually in the search request. Optional.|
-|bucketDefinition|[bucketAggregationDefinition](bucketaggregationdefinition.md)|Specifies the criteria to compute aggregations. Optional.|
+|bucketDefinition|[bucketAggregationDefinition](bucketaggregationdefinition.md)|Specifies the criteria to compute an aggregation. Optional.|
 
 ## JSON representation
 
