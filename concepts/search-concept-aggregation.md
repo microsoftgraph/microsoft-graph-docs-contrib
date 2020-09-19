@@ -10,15 +10,15 @@ ms.prod: "search"
 
 Refine search results and show their distribution in the index. 
 
-## Example 1: Request aggregations for a string property
+## Example 1: Request aggregations by string fields
 
 The following example searches **listItem** resources and aggregates results by their file type and content class, both of which are string values.
 
 The response includes two [searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta) objects for the two aggregations:
 - The **key** property specifies the actual value (by `FileType` or `contentclass`) for those matching **listItem** objects that are aggregated in the same bucket by that value.
 - The **count** property specifies the number of such objects aggregated in the same bucket.
-- Results aggregated by file type are sorted by count in descending order. In this example, there are 3 buckets for 3 file types: `docx`, `xlsx`, and `pptx`.
-- Results aggregated by content class are sorted by the string value of the content class in descending order. In this example, there is only one bucket with all the matching objects sharing the same content class, `STS_ListItem_DocumentLibrary`.
+- Buckets of results aggregated by file type are sorted by count in descending order. In this example, there are 3 buckets for 3 file types: `docx`, `xlsx`, and `pptx`.
+- Buckets of results aggregated by content class are sorted by the string value of the content class in descending order. In this example, there is only one bucket with all the matching objects sharing the same content class, `STS_ListItem_DocumentLibrary`.
 
 ### Request
 
@@ -121,9 +121,11 @@ Content-type: application/json
 }
 ```
 
-## Example 2: Apply an aggregationFilter based on a previous previous request
+## Example 2: Apply an aggregation filter based on a previous request
 
-In this example, we apply an aggregation filter docx using the **aggregationFilterToken** for the FileType property.
+In this example, we apply an aggregation filter that is based on the **aggregationFilterToken** returned for `docx` as the `FileType` field in example 1.
+
+The string value assigned to the **aggregationFilters** property follows the format **"{field}:\\"{aggregationFilterToken}\\""**.
 
 ### Request
 
@@ -143,14 +145,14 @@ Content-Type: application/json
       "from": 0,
       "size": 25,
       "aggregationFilters": [
-                "FileType:\"ǂǂ646f6378\""
-            ],
+        "FileType:\"ǂǂ646f6378\""
+      ]
     }
   ]
 }
 ```
 
-## Example 3: Request aggregations for a numeric value
+## Example 3: Request aggregation by a numeric field
 
 The following example searches **driveItem** resources and aggregates results by their size which is a numeric value. The request specifies aggregation by 3 size ranges:
 - Size less than 100
@@ -254,7 +256,7 @@ Content-type: application/json
 
 ## Known limitations
 
-- Aggregations are supported only for SharePoint or OneDrive items. They are not supported for **message**, **event**, and **externalItem**.
+Aggregations are supported only for SharePoint or OneDrive items. They are not supported for **message**, **event**, and **externalItem**.
 
 ## Next steps
 

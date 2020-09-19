@@ -23,7 +23,7 @@ Represents a container for one or more search results that share the same value 
 |:-------------|:------------|:------------|
 |key|String| The discrete value of the field that an aggregation was computed on.|
 |count|Int32| The number of search matches that share the same value specified in the **key** property. |
-|aggregationsFilterToken|String| A token containing the encoded filter to aggregate search matches by the specific **key** value to matching the field. In order to send the filter, the token should be passed in the `aggregationFilter` in the `searchRequest` with the format *FieldName:\\"{aggregationsFilterToken}\\"\*. Some samples are provided in this [page](/graph/search-concept-aggregation).|
+|aggregationFilterToken|String| A token containing the encoded filter to aggregate search matches by the specific **key** value. To use the filter, pass the token as part of the **aggregationFilter** property in a **searchRequest** object, in the format **"{field}:\\"{aggregationFilterToken}\\""**. See an [example](/graph/search-concept-aggregation#example-2-apply-an-aggregation-filter-based-on-a-previous-request).|
 
 ## JSON representation
 
@@ -42,6 +42,6 @@ The following is a JSON representation of the resource.
 {
   "key": "String",
   "count": "10",  
-  "aggregationFilter": "String"
+  "aggregationFilterToken": "String"
 }
 ```
