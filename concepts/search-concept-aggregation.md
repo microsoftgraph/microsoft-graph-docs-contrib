@@ -10,7 +10,7 @@ ms.prod: "search"
 
 Refine search results and show their distribution in the index. 
 
-## Example 1: Request aggregations for a string property 
+## Example 1: Request aggregations for a string property
 
 ### Request
 
@@ -54,9 +54,8 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
 
-<!---TODO nmoreau team Include one example of externalItem response.-->
 ```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -114,7 +113,36 @@ Content-type: application/json
 }
 ```
 
-## Example 2: Request aggregations for a numeric value
+## Example 2: Apply an aggregationFilter based on a previous previous request
+
+In this example, we apply an aggregation filter docx using the **aggregationFilterToken** for the FileType property.
+
+### Request
+
+```HTTP
+POST https://graph.microsoft.com/beta/search/query
+Content-Type: application/json
+
+{
+  "requests": [
+    {
+      "entityTypes": [
+          "listItem"
+      ],
+      "query": {
+          "queryString": "test"
+      },
+      "from": 0,
+      "size": 25,
+      "aggregationFilters": [
+                "FileType:\"ǂǂ646f6378\""
+            ],
+    }
+  ]
+}
+```
+
+## Example 3: Request aggregations for a numeric value
 
 ### Request
 
@@ -206,11 +234,10 @@ Content-type: application/json
         }
     ]
 }
-```
 
 ## Known limitations
 
-- Aggregation is supported only for SharePoint or OneDrive items. It is not supported for **message**, **event**, and **externalItem**.
+- Aggregations are supported only for SharePoint or OneDrive items. They are not supported for **message**, **event**, and **externalItem**.
 
 ## Next steps
 
