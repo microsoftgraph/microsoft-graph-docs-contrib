@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
-Represent a single result within the list of search results.
+Represents a single result within the list of search results.
 
 ## Properties
 
@@ -23,8 +23,8 @@ Represent a single result within the list of search results.
 |:-------------|:------------|:------------|
 |hitId|String|The internal identifier for the item.|
 |rank|Int32|The rank or the order of the result.|
-|contentSource|String|The name of the contentSource which the **externalItem** is part of .|
-|summary|String|A summary of the result (if summary is available).|
+|contentSource|String|The name of the content source which the **externalItem** is part of .|
+|summary|String|A summary of the result, if a summary is available.|
 |resource|[entity](entity.md)|The underlying Microsoft Graph representation of the search result.|
 |_id (deprecated)|String| Renamed as **hitId**. The internal identifier for the item.|
 |_score (deprecated)|Int32|Renamed as **rank**. The score or the order of the result.|

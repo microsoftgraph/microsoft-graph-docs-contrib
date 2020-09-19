@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The searchResponse contains the results from the search query.
+Represents results from a search query, and the terms used for the query. 
 
 ## Properties
 
