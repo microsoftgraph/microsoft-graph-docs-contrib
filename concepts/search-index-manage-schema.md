@@ -31,8 +31,7 @@ The connection [schema](/graph/api/resources/schema?view=graph-rest-beta) determ
 ### Searchable
 If a property is searchable, its value is added to the full text index. When a user performs a search, we return results if there is a search hit in one of the searchable fields or its [content]((search-index-manage-item.md#content)).
 
-![search-index-manage-items-schema-1.png](./images/search-index-manage-schema-1.png)
-
+![search-index-manage-items-schema-1.svg](./images/search-index-manage-items-schema-1.svg)
 *A search for “design” displaying results for hits against properties (`title`, `tags`) and content*
 
 
@@ -41,23 +40,27 @@ If a property is searchable, its value is added to the full text index. When a u
 ### Queryable
 If a property is queryable, you can query against it using knowledge query language (KQL). KQL consists of 1 or more free text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator(*). Note: suffix matching is not supported.
 
-![search-index-manage-items-schema-2.png](./images/search-index-manage-schema-2.png)
+![search-index-manage-items-schema-2.svg](./images/search-index-manage-items-schema-2.svg)
 *A search for “search ba*” displaying results that match this prefix*
 
-![search-index-manage-items-schema-3.png](./images/search-index-manage-schema-3.png)
+![search-index-manage-items-schema-3.svg](./images/search-index-manage-items-schema-3.svg)
+
 *A search for “tags:design” scoping down results to items with 'design' in the tags property*
 
 
 ### Retrievable
 If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large properties, such as `editHistory`, or too many properties as retrievable will increase search latency. Be selective and choose relevant properties. 
 
-![search-index-manage-schema-4.png](./images/search-index-manage-schema-4.png)
+
+![search-index-manage-schema-4.svg](./images/search-index-manage-schema-4.svg)
 *A set of retrievable properties (title, lastEditedBy etc.) rendered as a result*
+
+
 
 ### Refinable
 If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page.
-![search-index-manage-schema-5.png](./images/search-index-manage-schema-5.png)
-*A set of retrievable properties (title, lastEditedBy etc.) rendered as a result*
+![search-index-manage-schema-5.svg](./images/search-index-manage-schema-5.svg)
+*Refine results by 'tags', a refinable property*
 
 ## Labels 
 A label is a well known tag published by Microsoft that you can add against a property in your schema. Adding a label helps various Microsoft products understand the property and provide a better experience. 
@@ -95,7 +98,7 @@ For discovery, i.e. search scenarios, please note:
 ### Default Result Types
 Labels also affect how default result types are generated. Adding the *title* label and content at a minimum will ensure that a result type is created for your connection.
 
-![search-index-manage-schema-6.png](./images/search-index-manage-schema-6.png)
+![search-index-manage-schema-6.svg](./images/search-index-manage-schema-6.svg)
 *A default result type with a title and result snippet*
 
 Your default result type will provide a better experience when you define these labels, when applicable, listed by ascending order:

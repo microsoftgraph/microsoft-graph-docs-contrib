@@ -24,7 +24,7 @@ You can model a connection anyway you want, but creating one connection for ever
 
 
 ## States and Operations
-Your connection could exist in one of the following states. 
+Your connection could exist in one of the following states.
 
 | State                  |  Description    
 |-------------------|--------|------------|--------|--------|--|--------|------|--------|--------|--|--------|--------|--------|--------|
