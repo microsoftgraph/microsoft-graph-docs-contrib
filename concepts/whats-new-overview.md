@@ -21,6 +21,8 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 ### Users
 Aside from getting the SMTP address of a [user](/graph/api/resources/user) through the **mail** property, you can now set that property and update the user's email address. 
 
+## September 2020: New in preview only
+
 ### Cloud communications
 - Deprecation of the **autoAdmittedUsers** property of [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta). Instead, use the new **lobbyBypassSettings** property and its [values](/graph/api/resources/lobbybypasssettings?view=graph-rest-beta#lobbybypassscope-values).
 - Use additional settings about announcing callers joining or leaving an online meeting (**isEntryExitAnnounced** property), and allowing specific presenters in the meeting (**allowedPresenters** property).
@@ -37,13 +39,14 @@ Get the date/time at which a Teams [channel](/graph/api/resources/channel?view=g
 
 ### Search
 
-The Microsoft [Search API](/graph/api/resources/search-api-overview?view=graph-rest-beta) in Graph continues to bring more capabilities, primarily for SharePoint, OneDrive and Graph Connectors : 
+The [Microsoft Search API](/graph/api/resources/search-api-overview?view=graph-rest-beta) brings additional capabilities for OneDrive, SharePoint, Microsoft Graph connectors: 
 
-- Retrieve [additional types](/graph/api/resources/search-api-overview?view=graph-rest-beta#scope-search-based-on-entity-types) of content from SharePoint and OneDrive: **list**, **listItem**, **site**, **drive**. 
-- Scope the properties you need in the response using [selectProperties](/graph/api/resources/search-api-overview?view=graph-rest-beta#get-selected-properties). Custom properties can now be retrieved on listItems.
-- [Sort](/graph/api/resources/search-api-overview?view=graph-rest-beta#sort-search-results) search results for SharePoint and OneDrive on any sortable property
-- [Refine results using aggregations](/graph/api/resources/search-api-overview?view=graph-rest-beta#refine-results-using-aggregations) for SharePoint and OneDrive.
-- Query external data (ingested with Graph Connectors) accross [multiple connections](/graph/search-concept-custom-types).
+- Get [additional types](/graph/api/resources/search-api-overview?view=graph-rest-beta#scope-search-based-on-entity-types) of content from OneDrive and SharePoint: **drive**, **list**, **listItem**, and **site**. 
+- Scope properties in search results to [selected properties](/graph/api/resources/search-api-overview?view=graph-rest-beta#get-selected-properties). 
+- Get custom properties on [listItem](/graph/api/resources/listitem?view=graph-rest-beta) resources.
+- [Sort](/graph/api/resources/search-api-overview?view=graph-rest-beta#sort-search-results) search results for OneDrive and SharePoint on any sortable property.
+- [Refine results using aggregations](/graph/api/resources/search-api-overview?view=graph-rest-beta#refine-results-using-aggregations) for OneDrive and SharePoint.
+- Query external data ingested by Microsoft Graph connectors across [more than one connection](/graph/search-concept-custom-types).
 
 ## August 2020: New and generally available
 

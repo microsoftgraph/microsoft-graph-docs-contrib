@@ -1,23 +1,23 @@
 ---
 title: "Use the Microsoft Search API in Microsoft Graph to search files"
-description: "You can use the Microsoft Search API to search files stored in SharePoint or OneDrive."
+description: "You can use the Microsoft Search API to search files stored in OneDrive or SharePoint."
 author: "nmoreau"
 localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API to search content in OneDrive or SharePoint
+# Use the Microsoft Search API to search content in OneDrive and SharePoint
 
-Use the Microsoft Search API to search content stored in SharePoint or OneDrive : files, folders, lists, listitems or sites.
+Use the Microsoft Search API to search content stored in OneDrive or SharePoint: files, folders, lists, list items, or sites.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-The Search API lets you scope the types of content to retrieve in Sharepoint or OneDrive by specifying the **entityTypes** property on the [searchRequest](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true). The later part of this article shows a few examples:
+The Search API lets you scope the types of content to retrieve in OneDrive or SharePoint by specifying the **entityTypes** property on the [searchRequest](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true). The later part of this article shows a few examples:
 
 - [Example 1: Search files](#example-1-search-files)
 - [Example 2: Search list items](#example-2-search-list-items)
 - [Example 3: Search sites](#example-3-search-sites)
-- [Example 4: Search all content in SharePoint and OneDrive](#example-4-search-all-content-in-sharepoint-and-onedrive)
+- [Example 4: Search all content in OneDrive and SharePoint](#example-4-search-all-content-in-onedrive-and-sharepoint)
 
 ## Specify select properties
 
@@ -96,7 +96,7 @@ Content-type: application/json
 
 ## Use filters in search queries
 
-You can use KQL in search terms of queries for SharePoint and OneDrive. For example:
+You can use KQL in search terms of queries for OneDrive and SharePoint. For example:
 
 - `"query": "contoso filetype:docx OR filetype:doc"` scopes the query to Word documents.
 - `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` scopes the query to a particular folder within a site.
@@ -316,9 +316,9 @@ Content-type: application/json
 }
 ```
 
-## Example 4: Search all content in SharePoint and OneDrive
+## Example 4: Search all content in OneDrive and SharePoint
 
-This example queries all the content in SharePoint or OneDrive sites to which the signed-in user has read access. The **resource** property in the response returns matches that are files and folders as **driveItem** objects, matches that are containers (SharePoint lists) as **list**, and all other matches as **listItem**.
+This example queries all the content in OneDrive and SharePoint sites to which the signed-in user has read access. The **resource** property in the response returns matches that are files and folders as **driveItem** objects, matches that are containers (SharePoint lists) as **list**, and all other matches as **listItem**.
 
 ### Request
 

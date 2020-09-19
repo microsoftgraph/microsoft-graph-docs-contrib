@@ -311,7 +311,7 @@ items:
                 href: search-concept-messages.md
               - name: Search events
                 href: search-concept-events.md
-              - name: Search content in SharePoint and OneDrive
+              - name: Search content in OneDrive and SharePoint
                 href: search-concept-files.md
               - name: Search connectors
                 href: search-concept-custom-types.md

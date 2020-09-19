@@ -13,17 +13,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## September 2020
 
-### Search
-
-| **Change type** | **Version** | **Description**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Addition        | Beta | Added the ability to filter search to more types in SharePoint and OneDrive : **list**, **listItem**, **site**, **drive**. See [more details here](/graph/api/resources/search-api-overview?view=graph-rest-beta#scope-search-based-on-entity-types).|
-| Addition        | Beta | Added the ability to specify **[selected properties](/graph/api/resources/search-api-overview?view=graph-rest-beta#get-selected-properties)** in the request.|
-| Addition        | Beta | Added the ability to **[sort](/graph/api/resources/search-api-overview?view=graph-rest-beta#sort-search-results) search results** for SharePoint and OneDrive. **sortProperties** has been added to the [searchRequest](/graph/api/resources/searchRequest?view=graph-rest-beta#)|
-| Addition        | Beta | Added the ability to **[refine results using aggregations](/graph/api/resources/search-api-overview?view=graph-rest-beta#refine-results-using-aggregations)** for SharePoint and OneDrive. **aggregations** and **aggregationFilters** have been added to the [searchRequest](/graph/api/resources/searchRequest?view=graph-rest-beta#)|
-| Addition        | Beta | Added the ability to **query external data accross [multiple connections](/graph/search-concept-custom-types)**.|
-| Change        | Beta |Some properties in the request and response have been **renamed** and are **deprecated**.  See [more details here](/graph/api/resources/search-api-overview?view=graph-rest-beta#schema-change-deprecation-warning).|
-
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -117,6 +106,17 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Addition        | Beta and v1.0 | Added the **outlookM365** and **outlook2019** properties to the [getEmailAppUsageVersionsUserCounts](/graph/api/resources/emailappusageversionsusercount?view=graph-rest-beta) entity.|
+
+### Search
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition        | Beta | Search more types in OneDrive and SharePoint: **drive**, **list**, **listItem**, and **site**. See [more details here](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#scope-search-based-on-entity-types).|
+| Addition        | Beta | Identify [selected properties](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#get-selected-properties) to return in search results.|
+| Addition        | Beta | [Sort](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#sort-search-results) search results from OneDrive and SharePoint by specifying **sortProperties** in a [searchRequest](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition        | Beta | [Refine results using aggregations](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#refine-results-using-aggregations) for OneDrive and SharePoint by specifying **aggregations** and **aggregationFilters** in a **searchRequest** resource.|
+| Addition        | Beta | Query external data across [more than one connection](search-concept-custom-types.md).|
+| Change        | Beta |Some properties in the request and response have been renamed and are deprecated.  See [more details](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#schema-change-deprecation-warning) about the deprecation.|
 
 ### Teamwork
 
