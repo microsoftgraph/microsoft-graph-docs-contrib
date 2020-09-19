@@ -91,8 +91,8 @@ Content-length: 401
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('32e3b156-66b2-4135-9aeb-73295a35a55b')/channels('19%3Af253e46c035b42308e9a4a22a87037af%40thread.skype')/filesFolder/$entity",
     "id": "01H7CFEKENJSSIUHGADZBKODARINQC5JMD",
-    "createdDateTime": "2020-01-01T00:00:00Z",
-    "lastModifiedDateTime": "2020-02-23T18:47:13Z",
+    "createdDateTime": "0001-01-01T00:00:00Z",
+    "lastModifiedDateTime": "2020-01-23T18:47:13Z",
     "lastEditedDateTime": null,
     "name": "Documentation Planning",
     "webUrl": "https://microsoft.sharepoint.com/teams/ExtensibilityandFundamentals/Shared%20Documents/Documentation%20Planning",
@@ -103,8 +103,7 @@ Content-length: 401
     },
     "fileSystemInfo": {
         "createdDateTime": "2020-01-23T18:47:12Z",
-        "lastModifiedDateTime": "2020-02-23T18:47:13Z",
-        "lastEditedDateTime": null
+        "lastModifiedDateTime": "2020-01-23T18:47:13Z",
     },
     "folder": {
         "childCount": 7
