@@ -1,5 +1,5 @@
 ---
-title: "Create, update, and delete items added by your application in the Microsoft Graph connection"
+title: "Create, update, and delete items added by your application in the Microsoft Graph Connection"
 description: "Learn how to use Microsoft Graph to manage items added by your application to the Microsoft Search service"
 localization_priority: Priority
 author: "rsamai"
@@ -7,7 +7,7 @@ ms.prod: "search"
 doc_type: conceptualPageType
 ---
 
-# Create, update, and delete items added by your application in a Microsoft Graph connection
+# Create, update, and delete items added by your application in the Microsoft Graph connection
 
 Items added by your application to the Microsoft Search service are represented by the [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) resource in Microsoft Graph.
 

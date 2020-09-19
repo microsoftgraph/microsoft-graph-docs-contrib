@@ -1,5 +1,5 @@
 ---
-title: "Register schema for a Microsoft Graph connection"
+title: "Register schema for the Microsoft Graph Connection"
 description: "Learn how to use Microsoft Graph to register schema for your Microsoft Graph connection"
 localization_priority: Priority
 author: "rsamai"
@@ -7,7 +7,7 @@ ms.prod: "search"
 doc_type: conceptualPageType
 ---
 
-# Register schema for a Microsoft Graph connection
+# Register schema for the Microsoft Graph connection
 
 The connection [schema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true) determines how your content will be used in various Microsoft Graph experiences. Schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before adding items into the connection.
 

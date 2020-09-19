@@ -1,5 +1,5 @@
 ---
-title: "Create, update, and delete connections to the Microsoft Graph connection"
+title: "Create, update, and delete connections in the Microsoft Graph"
 description: "Learn how to use Microsoft Graph to create and manage connections"
 localization_priority: Priority
 author: "rsamai"
@@ -7,7 +7,7 @@ ms.prod: "search"
 doc_type: conceptualPageType
 ---
 
-# Create, update, and delete connections to the Microsoft Graph connection
+# Create, update, and delete connections in the Microsoft Graph
 
 Connections from external services to the Microsoft Search service are represented by the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) resource in Microsoft Graph.
 
@@ -25,8 +25,6 @@ Once a connection has been created, you can add your content from any external d
 ![search-index-manage-connections-admin-view.svg](./images/search-index-manage-connections-admin-view.svg)
 *Admin View of Connections including the custom Tickets Connector*
 
-*Admin View of Connections including the custom Tickets Connector*
-<-->
 <!-- markdownlint-enable MD036 -->
 
 You can model a connection anyway you want, but creating one connection for every instance of your connector is the most common model. For example, each time you [set up the Microsoft Windows file share connector](/microsoftsearch/configure-connector), a new connection is created. You can also create a single connection to add all items from your data source. For example, creating a single connection to add all the tickets and incidents across multiple teams from your helpdesk system.
