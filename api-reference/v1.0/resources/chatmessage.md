@@ -33,7 +33,7 @@ Represents an individual chat message within a [channel](./channel.md) or (in be
 |messageType|string|The type of chat message. The possible values are: `message`.|
 |createdDateTime|dateTimeOffset|Read only. Timestamp of when the chat message was created.|
 |lastModifiedDateTime|dateTimeOffset|Read only. Timestamp when the chat message is created (initial setting) or edited, including when a reaction is added or removed. |
-|lastEditedDateTime|dateTimeOffset|Read only. Timestamp when edits to the chat message were made. Triggers an "Edited" flag in the Teams UI. If no edits are made the value is `null`.|
+|lastEditedDateTime|dateTimeOffset|Read only. Timestamp when edits to the chat message were made. Triggers an "Edited" flag in the Microsoft Teams UI. If no edits are made the value is `null`.|
 |deletedDateTime|dateTimeOffset|Read only. Timestamp at which the chat message was deleted, or null if not deleted. |
 |subject|string| The subject of the chat message, in plaintext.|
 |body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the chat message. Representation is specified by the contentType inside the body. The content is always in HTML if the chat message contains a [chatMessageMention](chatmessagemention.md). |
