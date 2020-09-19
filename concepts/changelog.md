@@ -111,8 +111,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta| Added the **createdDateTime** property to the [channel](/graph/api/resources/channel?view=graph-rest-beta) and [team](/graph/api/resources/team?view=graph-rest-beta) resources.|
-|Addition|beta| Added the [Update chatMessage](/graph/api/chatmessage-update?view=graph-rest-beta) method to the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resource.|
-
+|Addition|beta and v1.0| Added the [Update chatMessage](/graph/api/chatmessage-update?view=graph-rest-beta) method to the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resource.|
 
 ### Users
 

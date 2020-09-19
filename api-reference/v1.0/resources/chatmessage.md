@@ -19,6 +19,7 @@ Represents an individual chat message within a [channel](./channel.md) or (in be
 |:---------------|:--------|:----------|
 |**Channel messages**| | |
 |[Create chatMessage in a channel](../api/channel-post-messages.md) | [chatMessage](#chatmessage-resource-type)| Create a new top-level chat message in a channel.|
+|[Update chatMessage](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
 |**Channel message replies**| | |
 |[Reply to a chatMessage in a channel](../api/channel-post-messagereply.md) | [chatMessage](#chatmessage-resource-type)| Reply to an existing chat message in a channel.|
 
@@ -56,7 +57,9 @@ The following is a JSON representation of the resource.
     "reactions",
     "mentions",
     "subject",
-    "summary"
+    "summary",
+    "policyViolation",
+    "locale"
   ],
   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.chatMessage"
@@ -77,7 +80,9 @@ The following is a JSON representation of the resource.
   "summary": "string",
   "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
-  "importance": "string",
+   "importance": "string",
+  "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
+  "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
   "locale": "string"
 }
 ```
