@@ -85,7 +85,7 @@ DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 
 #### Response
 
-The following is an example of the response.
+The following is an example of the response.git stat
 <!-- {
   "blockType": "response",
   "truncated": true
