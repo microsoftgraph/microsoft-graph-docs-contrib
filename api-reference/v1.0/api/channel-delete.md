@@ -1,7 +1,7 @@
 ---
 title: "Delete channel"
 description: "Delete the channel."
-author: "nkramer"
+author: "nkramer" 
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
