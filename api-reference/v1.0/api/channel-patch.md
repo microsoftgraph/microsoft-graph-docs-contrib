@@ -65,8 +65,6 @@ PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 ```
 # [Objective-C](#tab/objc)
 
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

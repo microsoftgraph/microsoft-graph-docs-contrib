@@ -11,7 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-
 Create a new [channel](../resources/channel.md) in a team, as specified in the request body.
 
 ## Permissions
@@ -72,17 +71,12 @@ Content-type: application/json
   "membershipType": "standard"
 }
 ```
-# [C#](#tab/csharp)
 
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+# [C#](#tab/csharp)
 
 # [JavaScript](#tab/javascript)
 
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Objective-C](#tab/objc)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -97,6 +91,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.channel"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -143,18 +138,11 @@ Content-type: application/json
 ```
 # [C#](#tab/csharp)
 
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 #### Response
 
