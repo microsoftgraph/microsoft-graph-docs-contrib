@@ -11,12 +11,12 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-
 Delete the [channel](../resources/channel.md).
 
 > **Note**: There is a known issue with application permissions and this API. For details, see the [known issues list](/graph/known-issues#application-permissions).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -34,22 +34,31 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 DELETE /teams/{id}/channels/{id}
 ```
+
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
 
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+
 ## Example
+<!-- markdownlint-disable MD001 -->
+
 ##### Request
+
 The following is an example of the request.
+<!-- markdownlint-disable MD025 -->
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_channel"
@@ -58,6 +67,7 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 ```
+
 # [C#](#tab/csharp)
 
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -71,11 +81,11 @@ DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
+<!-- markdownlint-disable MD024 -->
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
