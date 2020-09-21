@@ -62,7 +62,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.accessReview"
+  "@odata.type": "microsoft.graph.accessReviewInstance"
 }-->
 
 ```json
