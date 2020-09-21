@@ -1,13 +1,13 @@
 ---
-title: "Azure AD access reviews"
-description: "You can use Azure AD access reviews to configure one-time or recurring access reviews for attestation of user's access rights."
+title: "Azure AD access reviews - Legacy"
+description: "You can use Azure AD access reviews to configure one-time or recurring access reviews for attestation of user's access rights. This documentation serves the legacy APIs."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: conceptualPageType
 ---
 
-# Azure AD access reviews
+# Azure AD access reviews (Legacy)
 
 Namespace: microsoft.graph
 
