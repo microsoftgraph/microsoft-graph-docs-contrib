@@ -67,7 +67,6 @@ In addition, a user who is an assigned reviewer of an access review can manage t
 
 - [How an administrator can manage user access with Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
 - [How an administrator can manage guest access with Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
-- [How an administrator can manage programs and controls for Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-programs-controls)
 
 
 <!--
