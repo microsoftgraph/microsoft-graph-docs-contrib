@@ -76,7 +76,7 @@ Content-type: application/json
             "hits": [
                 "..."
             ],
-            "total": 8,
+            "total": 9,
             "moreResultsAvailable": false,
             "aggregations": [
                 {
@@ -137,18 +137,64 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-          "listItem"
+          "driveItem"
       ],
       "query": {
           "queryString": "test"
       },
       "from": 0,
-      "size": 25,
+      "size": 20,
+      "aggregations": [
+          {
+              "field": "FileType",
+              "size": 10,
+              "bucketDefinition": {
+                  "sortBy": "count",
+                  "isDescending": "true",
+                  "minimumCount": 0
+              }
+          }
+      ],
       "aggregationFilters": [
-        "FileType:\"ǂǂ646f6378\""
+        "FileType:\"ǂǂ68746d6c\""
       ]
     }
   ]
+}
+```
+
+### Response
+
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.searchResponse",
+    "hitsContainers": [
+        {
+            "@odata.type": "#microsoft.graph.searchHitsContainer",
+            "hits": [
+                "..."
+            ],
+            "total": 69960,
+            "moreResultsAvailable": true,
+            "aggregations": [
+            {
+                "@odata.type": "#microsoft.substrateSearch.searchAggregation",
+                "field": "FileType",
+                "buckets": [
+                    {
+                        "@odata.type": "#microsoft.substrateSearch.searchBucket",
+                        "key": "html",
+                        "count": 69960,
+                        "aggregationFilterToken": "\"ǂǂ68746d6c\""
+                    }
+                ]
+            }
+        ]
+        }
+    ]
 }
 ```
 
@@ -222,7 +268,7 @@ Content-type: application/json
             "hits": [
                 "..."
                     ],
-            "total": 8,
+            "total": 9,
             "moreResultsAvailable": false,
             "aggregations": [
                 {
