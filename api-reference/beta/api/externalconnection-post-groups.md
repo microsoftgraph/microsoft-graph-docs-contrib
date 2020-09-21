@@ -49,9 +49,9 @@ The following table shows the properties that are required when you create the [
 
 | Property    | Type   | Description                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| id          | String | The unique `id` of the external group within a connection. It must be alphanumeric and can be up to 128 characters long. |
-| displayName | String | The friendly name of the external group (Optional)                                                                       |
-| description | String | The description of the external group (Optional)                                                                         |
+| id          | String | The unique ID of the external group within a connection. It must be alphanumeric and can be up to 128 characters long. |
+| displayName | String | The friendly name of the external group. Optional.                                                                      |
+| description | String | The description of the external group. Optional.                                                                         |
 
 ## Response
 
