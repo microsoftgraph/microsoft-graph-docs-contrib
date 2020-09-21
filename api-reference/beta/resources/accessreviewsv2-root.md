@@ -1,5 +1,5 @@
 ---
-title: "Azure AD access reviews"
+title: "Azure AD access reviews - V2"
 description: "You can use Azure AD access reviews to configure one-time or recurring access reviews for attestation of user's access rights."
 localization_priority: Normal
 author: "isabelleatmsft"

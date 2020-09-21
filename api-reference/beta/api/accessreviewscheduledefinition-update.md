@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 >[!NOTE]
 >Any updates made to an **accessReviewScheduleDefinition** will only apply to future instances. Currently running instances cannot be updated.
->Additionally, this API is not intended to update properties, including decisions, on the **accessReviewInstance** level. See [accessReviewInstance](accessreviewinstance.md) for more information on instances.
+>Additionally, this API is not intended to update properties, including decisions, on the **accessReviewInstance** level. See [accessReviewInstance](../resources/accessreviewinstance.md) for more information on instances.
 
 In the Azure AD [access reviews](../resources/accessreviewsv2-root.md) feature, update an existing [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object to change one or more of its properties.
 
@@ -50,6 +50,7 @@ The following table shows the properties accepted to update an accessReviewSched
 | `descriptionForReviewers` |`String`                         | Context of the review provided to reviewers. |
 | `settings`                |`microsoft.graph.accessReviewScheduleSettings`| The settings for an access review series. Recurrence is determined here. See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
 | `reviewers`               |`Collection(microsoft.graph.accessReviewReviewerScope)`|  Defines who the reviewers are. If none are specified, the review will be a self-review (users reviewed review their own access). See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). | Reviewers field is only updatable if individual users assigned as reviewers. |
+
 Note that a PUT request expects the full object to be passed in, in addition to the properties being updated.
 
 ## Response
