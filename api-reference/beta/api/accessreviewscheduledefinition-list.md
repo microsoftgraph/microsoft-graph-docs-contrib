@@ -152,8 +152,7 @@ Content-type: application/json
                     }
                 ]
             }
-        },
-        {...}
+        }
     ]
 }
 ```
