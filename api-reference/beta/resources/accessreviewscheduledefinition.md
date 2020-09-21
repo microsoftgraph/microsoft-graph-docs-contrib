@@ -142,8 +142,17 @@ The **accessReviewScheduleSettings** is a complex type representing settings of 
 | `instanceDurationInDays`|`Int32` | Duration of each recurrence of review (`accessReviewInstance`) in number of days. |
 | `recurrence`|`microsoft.graph.patternedRecurrence` | Detailed settings for recurrence. Using standard outlook recurrence object.  |
 | `autoApplyDecisionsEnabled`|`Boolean` | Flag to indicate whether auto-apply feature is enabled. |
-| `applyActions`|`Collection(microsoft.graph.accessReviewApplyAction)` | Optional field. Describes the  actions to take once a review is complete. `accessReviewApplyAction` is a base complex type that can have different derived types. There are two types that are currently supported: `removeAccessApplyAction` and `disableAndDeleteUserApplyAction`. |
+| `applyActions`|`Collection(microsoft.graph.accessReviewApplyAction)` | Optional field. Describes the  actions to take once a review is complete. There are two types that are currently supported: `removeAccessApplyAction` (default) and `disableAndDeleteUserApplyAction`. Field only needs to be specified in the case of `disableAndDeleteUserApplyAction`. See below for more information. |
 | `recommendationsEnabled`|`Boolean` | Flag to indicate whether decision recommendations are enabled/disabled. |
+
+## accessReviewApplyAction resource type
+
+**accessReviewApplyAction** is a complex type representing a base class for apply actions. There are two derived types currently supported: `removeAccessApplyAction` and `disableAndDeleteApplyAction`.
+
+**removeAccessApplyAction** is a derived type of `accessReviewApplyAction` that indicates removing access of an entity being reviewed upon completion of the review. This is the default type.
+
+**disableAndDeleteUserApplyAction** is a derived type of `accessReviewApplyAction` that indicates disabling and deleting the user being reviewed upon completion of the review.
+
 
 
 
