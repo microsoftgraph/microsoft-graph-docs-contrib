@@ -1297,10 +1297,12 @@ items:
         - name: Participant
           href: resources/participant.md
           items:
-          - name: Get
-            href: api/participant-get.md
           - name: List
             href: api/call-list-participants.md
+          - name: Get
+            href: api/participant-get.md
+          - name: Delete
+            href: api/participant-delete.md
           - name: Configure mixer
             href: api/participant-configuremixer.md
           - name: Mute participant
