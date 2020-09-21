@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure AD [access review](accessreviewsv2-root.md) recurrence. If the parent `accessReviewScheduleDefinition` is a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique group being reviewed in the `accessReviewScheduleDefinition`. If a review has multiple groups and recurs more than once, each group will have a unique instance for each recurrence.
-
+Represents an Azure AD [access review](accessreviewsv2-root.md) recurrence. If the parent **accessReviewScheduleDefinition** is a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique group being reviewed in the **accessReviewScheduleDefinition**. If a review has multiple groups, each group will have a unique instance for each recurrence.
 
 ## Methods
 

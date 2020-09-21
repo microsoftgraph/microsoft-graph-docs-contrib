@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 >[!NOTE]
 >This documentation contains the latest supported version of access reviews APIs. For legacy documentation, see [access reviews legacy APIs](accessreviews-root.md).
+>
+>Currently, only access reviews of group membership is supported by the API.
 
 You can use [Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of user's access rights.
 

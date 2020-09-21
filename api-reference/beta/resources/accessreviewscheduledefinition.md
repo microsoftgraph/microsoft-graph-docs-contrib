@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure AD [access review](accessreviewsv2-root.md).  
+Represents the scheduling of an Azure AD [access review](accessreviewsv2-root.md). 
+
+Each recurrence of the **accessReviewScheduleDefinition** will create an [accessReviewInstance](accessreviewinstance.md). Instances also represent each unique group being reviewed. If a review reviews multiple groups, each group will have a unique instance per each recurrence. In the case of a one-time review, only one instance will be created per group.
 
 
 ## Methods
@@ -52,7 +54,7 @@ Represents an Azure AD [access review](accessreviewsv2-root.md).
 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-| `instances`               |[accessReviewInstances](accessreviewinstances.md) collection         | If the `accessReviewScheduleDefinition` is a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique group under review in the `accessReviewScheduleDefinition`. If a review has multiple groups and multiple instances, each group will have a unique instance for each recurrence. |
+| `instances`               |[accessReviewInstances](accessreviewinstance.md) collection         | If the `accessReviewScheduleDefinition` is a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique group under review in the `accessReviewScheduleDefinition`. If a review has multiple groups and multiple instances, each group will have a unique instance for each recurrence. |
 
 ## JSON representation
 
