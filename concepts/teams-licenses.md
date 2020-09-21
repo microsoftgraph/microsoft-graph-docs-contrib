@@ -17,6 +17,4 @@ Creating chat message subscriptions with application permissions for `/teams/get
 * Microsoft 365 Information Protection and Governance
 * Office 365 Advanced Compliance 
 
-Because `/teams/getAllMessages` and `/chats/getAllMessages` deliver notifications for all users in the tenant, all users in the tenant must be licensed. 
-
 These licenses are not required when creating subscriptions with delegated permissions, with resource-specific consent permissions, or with application permissions for specific channels and chat threads.

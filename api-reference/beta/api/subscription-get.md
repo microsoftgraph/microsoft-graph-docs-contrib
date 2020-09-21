@@ -44,11 +44,8 @@ Depending on the resource and the permission type (delegated or application) req
 
 **chatMessage** subscriptions with application permissions include resource data, and require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified. Before creating a **chatMessage** subscription, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis). 
 
-> **Note:** `/teams/getAllMessages` and `/chats/getAllMessages` are only available to users and tenants that have the 
+> **Note:** `/teams/getAllMessages` and `/chats/getAllMessages` are available to users that have the 
 [required licenses](https://aka.ms/teams-changenotification-licenses).
-Because /teams/getAllMessages and 
-/chats/getAllMessages deliver notifications for all users in the tenant, all users in the tenant must be licensed. 
-Creating a subscription without the proper licenses will return a 401 error code. 
 
 ### driveItem
 
