@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 >[!NOTE]
 >This documentation contains the latest supported version of access reviews APIs. For legacy documentation, see [access reviews legacy APIs](accessreviews-root.md).
 >
->Currently, the API only supports access reviews of group membership.
+>Currently, the Microsoft Graph APIs only supports access reviews of group membership.
 
 You can use [Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of user's access rights.
 
@@ -54,11 +54,11 @@ The following table lists the methods that you can use to interact with access r
 
 ## Role and application permission authorization checks
 
-The following directory roles are required for a calling user to manage access reviews. Note that only access reviews on groups are supported currently.
+The following directory roles are required for a calling user to manage access reviews. Note that only access reviews on groups are supported currently through Microsoft Graph APIs.
 
 | Operation | Application permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|
-| Read | AccessReview.Read.All or AccessReview.ReadWrite.All | Global Administrator, Security Administrator, Security Reader or User Administrator |
+| Read | AccessReview.Read.All or AccessReview.ReadWrite.All | Global Administrator, Global Reader, Security Administrator, Security Reader or User Administrator |
 | Create, Update or Delete | AccessReview.ReadWrite.All | Global Administrator or User Administrator |
 
 In addition, a user who is an assigned reviewer of an access review can manage their decisions, without needing to be in a directory role.
