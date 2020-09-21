@@ -62,7 +62,8 @@ If a property is queryable, you can query against it using knowledge query langu
 
 If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large properties, such as `editHistory`, or too many properties as retrievable will increase search latency. Be selective and choose relevant properties.
 
-![search-index-manage-schema-4.svg](./images/search-index-manage-schema-4.svg)
+![A set of retrievable properties rendered as a result](./images/search-index-manage-schema-4.svg)
+
 *A set of retrievable properties (`title`, `lastEditedBy` etc.) rendered as a result*
 
 ### Refinable
