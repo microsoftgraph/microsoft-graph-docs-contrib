@@ -1,6 +1,6 @@
 ---
 title: "SendReminder accessReviewInstance"
-description: "In the Azure AD access reviews feature, send a reminder to the reviewers of a currently active accessReviewInstance. "
+description: "In the Azure AD access reviews feature, send a reminder to the reviewers of a currently active accessReviewInstance."
 localization_priority: Normal
 author: "isabelleatmsft"
 ms.prod: "microsoft-identity-platform"
