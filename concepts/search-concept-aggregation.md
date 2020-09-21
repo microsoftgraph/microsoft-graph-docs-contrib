@@ -14,7 +14,7 @@ Refine search results and show their distribution in the index.
 
 The following example searches **listItem** resources and aggregates results by their file type and content class, both of which are string values.
 
-The response includes two [searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta) objects for the two aggregations:
+The response includes two [searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) objects for the two aggregations:
 - The **key** property specifies the actual value (by `FileType` or `contentclass`) for those matching **listItem** objects that are aggregated in the same bucket by that value.
 - The **count** property specifies the number of such objects aggregated in the same bucket.
 - Buckets of results aggregated by file type are sorted by count in descending order. In this example, there are 3 buckets for 3 file types: `docx`, `xlsx`, and `pptx`.
@@ -299,6 +299,7 @@ Content-type: application/json
         }
     ]
 }
+```
 
 ## Known limitations
 
