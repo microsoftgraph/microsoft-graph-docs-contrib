@@ -7,11 +7,11 @@ ms.prod: "search"
 doc_type: apiPageType
 ---
 
-# Create groups
+# Create externalGroup
 
 Namespace: microsoft.graph
 
-Create a new externalGroup object.
+Create a new [externalGroup](../resources/externalgroup.md) object.
 
 ## Permissions
 
