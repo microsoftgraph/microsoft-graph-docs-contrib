@@ -16,7 +16,9 @@ Namespace: microsoft.graph
 Retrieve the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects. A list of zero or more **accessReviewScheduleDefinition** objects are returned, including all of their nested properties, for each access review series created. This does not include associated accessReviewInstances.
 
 >[!NOTE]
->The **accessReviewScheduleDefinition** represents the scheduling of a review series. If a review does not recur, it is still considered a series with one instance. This method does not list the associated instance(s) of each scheduled definition.
+>If many **accessReviewScheduleDefinitions** are returned, to improve efficiency and avoid timeouts, retrieve the result set in pages, by including both the $top query parameter with a page size of at most 100, and the $skip=0 query parameter in the request. When a result set spans multiple pages, Microsoft Graph returns that page with an @odata.nextLink property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the @odata.nextLink URL in each response, until all the results are returned, as described in paging Microsoft Graph data in your app.
+>
+>If no query parameters are provided and there are more than 100 results, Microsoft Graph will automatically paginate results at 100 results per page.
 
 
 ## Permissions
@@ -32,7 +34,7 @@ One of the following permissions is required to call this API. Delegated permiss
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /identityGovernance/accessReviews/definitions
+GET /identityGovernance/accessReviews/definitions?$top={pagesize}&$skip=0
 ```
 ## Request headers
 None.
@@ -53,7 +55,7 @@ The following example shows a request to retrieve all the access review series i
   "name": "get_accessReviews"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions?$top=100&$skip=0
 ```
 
 # [C#](#tab/csharp)
