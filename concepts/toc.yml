@@ -519,6 +519,16 @@ items:
             href: sdks/large-file-upload.md
           - name: Use beta API
             href: sdks/use-beta.md
+          - name: Use PowerShell
+            items:
+              - name: Installation
+                href: powershell/installation.md
+              - name: Get started
+                href: powershell/get-started.md
+              - name: Navigating the SDK
+                href: powershell/navigating.md
+              - name: App-only authentication
+                href: powershell/app-only.md
       - name: Use the Toolkit
         items:
           - name: Toolkit overview
