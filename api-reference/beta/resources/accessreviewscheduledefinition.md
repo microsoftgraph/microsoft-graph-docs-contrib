@@ -86,7 +86,7 @@ Here is a JSON representation of the resource.
  "instances": "Collection(microsoft.graph.accessReviewInstance)"
 }
 ```
-## accessReviewScope resource type
+## accessReviewScope
 
 The **accessReviewScope** resource type defines what will be reviewed. This is expressed as an odata query. The query type must also be expressed so that scenarios can be supported to review entities outside of MicrosoftGraph, such as ARM.
 
@@ -110,7 +110,7 @@ The **accessReviewScope** resource type defines what will be reviewed. This is e
 |--|--|--|
 | Review of guest users assigned to all groups, excluding specified groups | /groups?$filter=(groupTypes/any(c:c+eq+'Unified') and id ne '{group id}' and id ne '{group id}' and id ne '{group id}')&$count=true | Note that the corresponding scope should also be passed in along with this. See "Guest users assigned to all groups" in scope property table above. |
 
-## accessReviewReviewerScope resource type
+## accessReviewReviewerScope
 
 The **accessReviewReviewerScope** is a complex type that allows reviewers to be specified both as a static list of users (i.e., specific users, group owners, group members) or dynamically (i.e., the case where every user is reviewed by their manager). To create a self-review (users review their own access), do not provide reviewers on accessReviewScheduleDefinition creation.
 
@@ -128,7 +128,7 @@ The **accessReviewReviewerScope** is a complex type that allows reviewers to be 
 | Specific user as reviewer | /users/{user id} ||
 | Manager of user being reviewed as reviewer | ./manager | queryRoot must be 'decisions' |
 
-## accessReviewScheduleSettings resource type
+## accessReviewScheduleSettings
 
 The **accessReviewScheduleSettings** is a complex type representing settings of a review.
 
@@ -145,7 +145,7 @@ The **accessReviewScheduleSettings** is a complex type representing settings of 
 | `applyActions`|`Collection(microsoft.graph.accessReviewApplyAction)` | Optional field. Describes the  actions to take once a review is complete. There are two types that are currently supported: `removeAccessApplyAction` (default) and `disableAndDeleteUserApplyAction`. Field only needs to be specified in the case of `disableAndDeleteUserApplyAction`. See below for more information. |
 | `recommendationsEnabled`|`Boolean` | Flag to indicate whether decision recommendations are enabled/disabled. |
 
-## accessReviewApplyAction resource type
+## accessReviewApplyAction
 
 **accessReviewApplyAction** is a complex type representing a base class for apply actions. There are two derived types currently supported: `removeAccessApplyAction` and `disableAndDeleteApplyAction`.
 
