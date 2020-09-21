@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 >Any updates made to an **accessReviewScheduleDefinition** will only apply to future instances. Currently running instances cannot be updated.
 >Additionally, this API is not intended to update properties, including decisions, on the **accessReviewInstance** level. See [accessReviewInstance](accessreviewinstance.md) for more information on instances.
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, update an existing [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object to change one or more of its properties.
+In the Azure AD [access reviews](../resources/accessreviewsv2-root.md) feature, update an existing [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object to change one or more of its properties.
 
 
 ## Permissions

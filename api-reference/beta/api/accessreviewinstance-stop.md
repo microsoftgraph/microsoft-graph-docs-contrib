@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, stop a currently active [accessReviewInstance](../resources/accessreviewinstance.md). (To prevent a recurring access review from starting future instances, [update it](accessreviewscheduledefinition-update.md) to change its scheduled end date).  After the access review stops, reviewers can no longer give input, and the access review decisions can be applied.
+In the Azure AD [access reviews](../resources/accessreviewsv2-root.md) feature, stop a currently active [accessReviewInstance](../resources/accessreviewinstance.md). (To prevent a recurring access review from starting future instances, [update it](accessreviewscheduledefinition-update.md) to change its scheduled end date).  After the access review stops, reviewers can no longer give input, and the access review decisions can be applied.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

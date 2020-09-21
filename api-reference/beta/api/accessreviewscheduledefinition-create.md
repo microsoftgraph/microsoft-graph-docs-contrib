@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
+In the Azure AD [access reviews](../resources/accessreviewsv2-root.md) feature, create a new [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
 ## Permissions
 
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. Delegated permiss
 |Delegated (work or school account)     | AccessReview.ReadWrite.All  |
 |Application                            | AccessReview.ReadWrite.All |
 
-The signed in user must also be in a directory role that permits them to create an access review.  For more details, see the role and permission requirements for [access reviews](../resources/accessreviews-root.md).
+The signed in user must also be in a directory role that permits them to create an access review.  For more details, see the role and permission requirements for [access reviews](../resources/accessreviewsv2-root.md).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
