@@ -19,8 +19,8 @@ Specifies the lower and upper limit to a range for aggregating search results. A
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|from|String| Defines the lower bound from which to compute the aggregation. This can be a numeric value or a date specified in this format. Required.|
-|to|String| Defines the upper bound up to which to compute the aggregation. This can be a numeric value or the string representation of a date using the `YYYY-MM-DDTHH:mm:ss.sssZ` format. Required.|
+|from|String| Defines the lower bound from which to compute the aggregation. This can be a numeric value or a string representation of a date using the `YYYY-MM-DDTHH:mm:ss.sssZ` format. Required.|
+|to|String| Defines the upper bound up to which to compute the aggregation. This can be a numeric value or a string representation of a date using the `YYYY-MM-DDTHH:mm:ss.sssZ` format. Required.|
 
 ## JSON representation
 
