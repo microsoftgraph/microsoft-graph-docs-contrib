@@ -56,10 +56,10 @@ The following table lists the methods that you can use to interact with access r
 
 The following directory roles are required for a calling user to manage access reviews. Note that only access reviews on groups are supported currently.
 
-| Target resource | Operation | Application permissions | Required directory role of the calling user |
-|:----------------|:------------------|:------------|:--------------------------------------------|
-|[accessReview](accessreview.md) of a group | Read | AccessReview.Read.All, AccessReview.ReadWrite.Membership or AccessReview.ReadWrite.All | Global Administrator, Security Administrator, Security Reader or User Administrator |
-|[accessReview](accessreview.md) of a group | Create, Update or Delete | AccessReview.ReadWrite.Membership or AccessReview.ReadWrite.All | Global Administrator or User Administrator |
+| Operation | Application permissions | Required directory role of the calling user |
+|:------------------|:------------|:--------------------------------------------|
+| Read | AccessReview.Read.All or AccessReview.ReadWrite.All | Global Administrator, Security Administrator, Security Reader or User Administrator |
+| Create, Update or Delete | AccessReview.ReadWrite.All | Global Administrator or User Administrator |
 
 In addition, a user who is an assigned reviewer of an access review can manage their decisions, without needing to be in a directory role.
 
