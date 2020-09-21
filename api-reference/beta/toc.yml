@@ -11628,6 +11628,10 @@ items:
         items:
         - name: Overview
           href: resources/search-api-overview.md
+        - name: Search request type
+          href: resources/searchrequest.md
+        - name: Search response type
+          href: resources/searchresponse.md
         - name: Query data
           href: api/search-query.md
       - name: Index

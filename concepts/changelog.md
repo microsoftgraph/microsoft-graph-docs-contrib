@@ -14,7 +14,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ## September 2020
 
 ### Cloud communications
-
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **lobbyBypassSettings**, **isEntryExitAnnounced**, and **allowedPresenters** property to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) entity.|
@@ -108,13 +107,23 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |:----------------|:------------|:-----------------------------------------|
 | Addition        | Beta and v1.0 | Added the **outlookM365** and **outlook2019** properties to the [getEmailAppUsageVersionsUserCounts](/graph/api/resources/emailappusageversionsusercount?view=graph-rest-beta) entity.|
 
+### Search
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition        | Beta | Search more types in OneDrive and SharePoint: **drive**, **list**, **listItem**, and **site**. See [more details here](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#scope-search-based-on-entity-types).|
+| Addition        | Beta | Identify [selected properties](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#get-selected-properties) to return in search results.|
+| Addition        | Beta | [Sort](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#sort-search-results) search results from OneDrive and SharePoint by specifying **sortProperties** in a [searchRequest](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition        | Beta | [Refine results using aggregations](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#refine-results-using-aggregations) for OneDrive and SharePoint by specifying **aggregations** and **aggregationFilters** in a **searchRequest** resource.|
+| Addition        | Beta | Query external data across [more than one connection](search-concept-custom-types.md).|
+| Change        | Beta |Some properties in the request and response have been renamed and are deprecated.  See [more details](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#schema-change-deprecation-warning) about the deprecation.|
+
 ### Teamwork
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta| Added the **createdDateTime** property to the [channel](/graph/api/resources/channel?view=graph-rest-beta) and [team](/graph/api/resources/team?view=graph-rest-beta) resources.|
 |Addition|beta| Added the [Update chatMessage](/graph/api/chatmessage-update?view=graph-rest-beta) method to the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resource.|
-
 
 ### Users
 

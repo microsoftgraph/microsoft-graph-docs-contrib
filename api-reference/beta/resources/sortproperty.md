@@ -1,26 +1,26 @@
 ---
-title: "searchQueryString resource type"
-description: "searchQueryString"
+title: "sortProperty resource type"
+description: "Provides the option to sort search results."
 localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
-# searchQueryString resource type (deprecated)
+# sortProperty resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
-The search terms for the query.
+Represents the sort options to order search results.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|query|String|Contains the actual search terms of the request.|
+|name|String|The name of the property to sort on. Required.|
+|isDescending|Boolean|`True` if the sort order is descending. Default is `false`, with the sort order as ascending. Optional.|
 
 ## JSON representation
 
@@ -31,13 +31,14 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.searchQueryString",
+  "@odata.type": "microsoft.graph.sortProperty",
   "baseType": null
 }-->
 
 ```json
 {
-  "query": "String"
+  "name": "String",
+  "isDescending": "true"
 }
 ```
 
@@ -45,9 +46,8 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "searchQueryString resource",
+  "description": "sortProperty resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
 }-->
-
