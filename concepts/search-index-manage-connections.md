@@ -22,7 +22,8 @@ Once a connection has been created, you can add your content from any external d
 
 *Sample custom helpdesk system Tickets Connector Structure*
 
-![search-index-manage-connections-admin-view.svg](./images/search-index-manage-connections-admin-view.svg)
+![Admin View of Connections including the custom Tickets Connector](./images/search-index-manage-connections-admin-view.svg)
+
 *Admin View of Connections including the custom Tickets Connector*
 
 <!-- markdownlint-enable MD036 -->
