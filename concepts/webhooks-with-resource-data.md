@@ -151,7 +151,7 @@ Use the following steps to validate tokens and apps that generate tokens:
 
 1. Validate that the token has not expired.
 
-2. Validate the token has not been tampered with and was issued by the expected authority, Microsoft Identity Platform:
+2. Validate the token has not been tampered with and was issued by the expected authority, Microsoft identity platform:
 
     - Obtain the signing keys from the common configuration endpoint: `https://login.microsoftonline.com/common/.well-known/openid-configuration`. This configuration is cached by your app for a period of time. Be aware that the configuration is updated frequently as signing keys are rotated daily.
     - Verify the signature of the JWT token using those keys.
