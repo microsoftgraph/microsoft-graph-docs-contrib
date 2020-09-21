@@ -39,7 +39,7 @@ None.
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and an [accessReviewInstance](../resources/accessreviewscheduledefinition.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [accessReviewInstance](../resources/accessreviewinstance.md) object in the response body.
 
 ## Example
 ##### Request
