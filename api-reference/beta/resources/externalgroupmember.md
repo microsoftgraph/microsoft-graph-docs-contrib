@@ -1,6 +1,6 @@
 ---
 title: "externalGroupMember resource type"
-description: "Members of an `externalGroup` used to set permissions on external content added to Microsoft Graph"
+description: "Members of an externalGroup used to set permissions on external content added to Microsoft Graph"
 author: "snlraju-msft"
 localization_priority: Normal
 ms.prod: "search"
@@ -11,23 +11,22 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Members of an `externalGroup` used to set permissions on external content added to Microsoft Graph. 
+Members of an [externalGroup](externalgroup.md) used to set permissions on external content added to Microsoft Graph.
 
 ## Methods
 
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Create externalGroupMembers](../api/externalgroup-post-members.md)|[externalGroupMember](../resources/externalgroupmember.md)|Create a new externalGroupMember object.|
-|[Delete externalGroupMember](../api/externalgroupmember-delete.md)|None|Deletes an [externalGroupMember](../resources/externalgroupmember.md) object.|
-
+| Method                                                              | Return type         | Description                              |
+|:--------------------------------------------------------------------|:--------------------|:-----------------------------------------|
+| [Create externalGroupMembers](../api/externalgroup-post-members.md) | externalGroupMember | Create a new externalGroupMember object. |
+| [Delete externalGroupMember](../api/externalgroupmember-delete.md)  | None                | Deletes an externalGroupMember object.   |
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The unique `id` of the member. It would be the objectId in case of Azure Active Directory users or groups and the externalGroupId in case of external groups.|
-|type|externalGroupMemberType|The type of member added to the external group. Possible values are: `user` or `group` when the identitySource is `azureActiveDirectory` and just `group` when the identitySource is `external`.|
-|identitySource|identitySourceType|The identity source that the member belongs to. Possible values are: `azureActiveDirectory`, `external`.|
+| Property       | Type                    | Description                                                          |
+|:---------------|:------------------------|:---------------------------------------------------------------------|
+| id             | String                  | The unique `id` of the member. It would be the objectId in case of Azure Active Directory users or groups and the `id` property of the externalGroup in case of external groups.                                    |
+| type           | externalGroupMemberType | The type of member added to the external group. Possible values are: `user` or `group` when the identitySource is `azureActiveDirectory` and just `group` when the identitySource is `external`. |
+| identitySource | identitySourceType      | The identity source that the member belongs to. Possible values are: `azureActiveDirectory`, `external`.                                                                                         |
 
 ## Relationships
 

@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-External groups (along with Azure Active Directory users & groups) are be used to set permissions on externalItems added to a Microsoft Graph connection. Use `externalGroups` to represent non Azure Active Directory groups or group-like constructs (e.g. Business units, Teams etc.) that determine permission over the content in your external data source.
+External groups (along with Azure Active Directory users & groups) are used to set permissions on externalItems added to a Microsoft Graph connection. Use `externalGroups` to represent non Azure Active Directory groups or group-like constructs (e.g. Business units, Teams etc.) that determine permission over the content in your external data source.
 
 ## Methods
 
@@ -23,17 +23,17 @@ External groups (along with Azure Active Directory users & groups) are be used t
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The unique `id` of the external group within a connection. It must be alphanumeric and can be up to 128 characters long. |
-|displayName|String|The friendly name of the external group (Optional)|
-|description|String|The description of the external group (Optional)|
+| Property    | Type   | Description                                                                                                              |
+|:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
+| id          | String | The unique `id` of the external group within a connection. It must be alphanumeric and can be up to 128 characters long. |
+| displayName | String | The friendly name of the external group (Optional)                                                                       |
+| description | String | The description of the external group (Optional)                                                                         |
 
 ## Relationships
 
-|Relationship|Type|Description|
-|:---|:---|:---|
-|members|[externalGroupMember](../resources/externalgroupmember.md) collection|A member added to an `externalGroup`. You can add Azure Active Directory users, Azure Active Directory groups or other externalGroups as members.|
+| Relationship | Type                                                                  | Description                                               |
+|:-------------|:----------------------------------------------------------------------|:----------------------------------------------------------|
+| members      | [externalGroupMember](../resources/externalgroupmember.md) collection | A member added to an `externalGroup`. You can add Azure Active Directory users, Azure Active Directory groups or other externalGroups as members. |
 
 ## JSON representation
 
