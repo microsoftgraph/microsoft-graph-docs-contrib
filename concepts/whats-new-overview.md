@@ -12,6 +12,7 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 > [!IMPORTANT]
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to generally available (GA) status. Do not use preview features in production apps.
 
+
 ## September 2020: New and generally available
 
 ### Reports
@@ -35,6 +36,17 @@ Be able to include a [schedule](/graph/api/resources/requestschedule?view=graph-
 
 ### Teamwork
 Get the date/time at which a Teams [channel](/graph/api/resources/channel?view=graph-rest-beta) or [team](/graph/api/resources/team?view=graph-rest-beta) is created.
+
+### Search
+
+The [Microsoft Search API](/graph/api/resources/search-api-overview?view=graph-rest-beta) brings additional capabilities for OneDrive, SharePoint, Microsoft Graph connectors: 
+
+- Get [additional types](/graph/api/resources/search-api-overview?view=graph-rest-beta#scope-search-based-on-entity-types) of content from OneDrive and SharePoint: **drive**, **list**, **listItem**, and **site**. 
+- Scope properties in search results to [selected properties](/graph/api/resources/search-api-overview?view=graph-rest-beta#get-selected-properties). 
+- Get custom properties on [listItem](/graph/api/resources/listitem?view=graph-rest-beta) resources.
+- [Sort](/graph/api/resources/search-api-overview?view=graph-rest-beta#sort-search-results) search results for OneDrive and SharePoint on any sortable property.
+- [Refine results using aggregations](/graph/api/resources/search-api-overview?view=graph-rest-beta#refine-results-using-aggregations) for OneDrive and SharePoint.
+- Query external data ingested by Microsoft Graph connectors across [more than one connection](/graph/search-concept-custom-types).
 
 ## August 2020: New and generally available
 
