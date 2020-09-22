@@ -38,7 +38,6 @@ For more information about working with groups and members in teams, see [Use th
 |[Clone team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
 |[List your teams](../api/user-list-joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
 |[List all teams](/graph/teams-list-all-teams) | [group](group.md) collection | List all groups that have teams. |
-|[Get team photo](../api/team-get-photo.md) | Binary data | Get the photo (picture) for a team. |
 
 ## Properties
 
