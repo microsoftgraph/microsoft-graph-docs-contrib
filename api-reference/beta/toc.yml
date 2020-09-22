@@ -42,7 +42,7 @@ items:
         href: /learn/modules/msgraph-changenotifications-trackchanges
       - name: Missing Outlook notifications (preview)
         href: /graph/webhooks-outlook-authz?context=graph/api/beta
-      - name: Notifications with resource data (preview)
+      - name: Notifications with resource data
         href: /graph/webhooks-with-resource-data?context=graph/api/beta
       - name: Get notifications delivered different ways (preview)
         href: /graph/change-notifications-delivery?context=graph/api/beta
@@ -132,6 +132,20 @@ items:
     items:
       - name: Toolkit overview
         href: /graph/toolkit/overview?context=graph/api/beta
+      - name: Get started
+        items:
+          - name: Overview
+            href: /graph/toolkit/get-started/overview?context=graph/api/beta
+          - name: Build a web application (JavaScript)
+            href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/beta
+          - name: Build a SharePoint web part
+            href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/beta
+          - name: Build a Microsoft Teams tab
+            href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/beta
+          - name: Use the Toolkit with React
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/beta
+          - name: Use the Toolkit with Angular
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/beta
       - name: Components
         items:
           - name: Login
@@ -147,7 +161,7 @@ items:
       - name: Providers
         items:
           - name: Using the providers
-            href: /graph//graph/toolkit/providers?context=graph/api/beta
+            href: /graph/toolkit/providers?context=graph/api/beta
           - name: Msal provider
             href: /graph/toolkit/providers/msal?context=graph/api/beta
           - name: SharePoint provider
@@ -9664,7 +9678,7 @@ items:
           items:
           - name: BitLocker recovery key
             href: resources/bitlockerrecoverykey.md
-          - name: List 
+          - name: List
             href: api/bitlocker-list-recoverykeys.md
           - name: Get
             href: api/bitlockerrecoverykey-get.md
@@ -11678,6 +11692,24 @@ items:
             href: api/externalitem-update.md
           - name: Delete
             href: api/externalitem-delete.md
+        - name: External group
+          items:
+          - name: External group
+            href: resources/externalgroup.md
+          - name: Create
+            href: api/externalconnection-post-groups.md
+          - name: Delete
+            href: api/externalgroup-delete.md
+          - name: Create members
+            href: api/externalgroup-post-members.md
+        - name: External group member
+          items:
+          - name: External group member
+            href: resources/externalgroupmember.md
+          - name: Create
+            href: api/externalgroup-post-members.md
+          - name: Delete
+            href: api/externalgroupmember-delete.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
       items:
