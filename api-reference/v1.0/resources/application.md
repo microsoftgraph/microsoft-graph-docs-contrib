@@ -131,7 +131,7 @@ The following is a JSON representation of the resource.
   "signInAudience": "String",
   "tags": ["String"],
   "tokenEncryptionKeyId": "String",
-  "verifiedPublisher": ["String"],
+  "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"},
   "web": {"@odata.type": "microsoft.graph.webApplication"}
 }
 ```
