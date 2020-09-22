@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Deletes an [externalGroup](../resources/externalgroup.md) object.
+Delete an [externalGroup](../resources/externalgroup.md) object.
 
 ## Permissions
 
