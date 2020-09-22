@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE beta-disclaimer]
+
 Create a new [externalGroupMember](../resources/externalgroupmember.md) object.
 
 ## Permissions
