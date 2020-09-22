@@ -13,6 +13,11 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## September 2020
 
+### Sites and lists
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [Get delta](/graph/api/listitem-delta?view=graph-rest-beta) action on [listitem](/graph/api/resoures/listitem?view=graph-rest-beta) resource. |
+
 ### Calendar
 
 | **Change type** | **Version**   | **Description**                          |

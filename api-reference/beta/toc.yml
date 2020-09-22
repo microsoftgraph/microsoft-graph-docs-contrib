@@ -11859,6 +11859,8 @@ items:
           href: api/itemanalytics-get.md
         - name: Get activities by interval
           href: api/itemactivity-getbyinterval.md
+        - name: Get delta
+          href: api/listitem-delta.md
       - name: Pages
         href: resources/sitepage.md
         items:
