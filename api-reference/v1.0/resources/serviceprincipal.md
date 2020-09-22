@@ -157,7 +157,7 @@ Here is a JSON representation of the resource
   "servicePrincipalType": "string",
   "tags": ["string"],
   "tokenEncryptionKeyId": "String",
-  "verifiedPublisher": ["string"]
+  "verifiedPublisher": [{"@odata.type": "microsoft.graph.verifiedPublisher"}]
 }
 ```
 
