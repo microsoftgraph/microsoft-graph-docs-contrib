@@ -11,7 +11,7 @@ author: "jesakowi"
 
 Namespace: microsoft.graph
 
-Verified publisher of the [application](application.md). For more information, see [Publisher Verification Overview](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview). All properties are set as a result of [Set Verified Publisher](../api/application-setverifiedpublisher.md) and can only be removed with [Unset Verified Publisher](../api/application-unsetverifiedpublisher.md).
+Represents the verified publisher of the [application](application.md). For more information, see [Publisher Verification Overview](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview). Verified publishers are set using [Set Verified Publisher](../api/application-setverifiedpublisher.md) and can only be removed using [Unset Verified Publisher](../api/application-unsetverifiedpublisher.md).
 
 ## Properties
 
