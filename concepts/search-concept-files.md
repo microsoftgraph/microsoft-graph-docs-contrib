@@ -415,7 +415,7 @@ Content-type: application/json
 ```
 ## Known limitations
 
-- Query `*` is not supported when search **drive** in the search schema.
+- When searching for **drive**, you need to include in the **queryString** a term contained in the name of the document library. Query `*` is not supported and will not return all available drives.
 
 ## Next steps
 
