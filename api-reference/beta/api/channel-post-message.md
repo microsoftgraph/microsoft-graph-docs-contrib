@@ -1,13 +1,13 @@
 ---
 title: "Create chatMessage in a channel"
-description: "Create a new chatMessage in the specified channel."
+description: "Create new chatMessage in the specified channel."
 localization_priority: Normal
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Create chatMessage in a channel
+# Create chatMessage in channel
 
 Namespace: microsoft.graph
 
@@ -115,7 +115,8 @@ Content-length: 160
     "etag": "id-value",
     "messageType": "message",
     "createdDateTime": "2019-02-04T19:58:15.511Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deleted": false,
     "subject": null,
     "summary": null,
