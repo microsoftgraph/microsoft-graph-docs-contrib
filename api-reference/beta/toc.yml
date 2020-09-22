@@ -9664,7 +9664,7 @@ items:
           items:
           - name: BitLocker recovery key
             href: resources/bitlockerrecoverykey.md
-          - name: List 
+          - name: List
             href: api/bitlocker-list-recoverykeys.md
           - name: Get
             href: api/bitlockerrecoverykey-get.md
@@ -11678,6 +11678,24 @@ items:
             href: api/externalitem-update.md
           - name: Delete
             href: api/externalitem-delete.md
+        - name: External group
+          items:
+          - name: External group
+            href: resources/externalgroup.md
+          - name: Create
+            href: api/externalconnection-post-groups.md
+          - name: Delete
+            href: api/externalgroup-delete.md
+          - name: Create members
+            href: api/externalgroup-post-members.md
+        - name: External group member
+          items:
+          - name: External group member
+            href: resources/externalgroupmember.md
+          - name: Create
+            href: api/externalgroup-post-members.md
+          - name: Delete
+            href: api/externalgroupmember-delete.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
       items:
