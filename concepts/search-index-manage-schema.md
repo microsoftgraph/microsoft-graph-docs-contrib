@@ -114,7 +114,7 @@ For discovery, i.e. search scenarios, please note:
 - When you use a property as label that contains large content, you might increase search latency and have to wait longer for search to return results.
 - Especially in the scenario where you configure a custom vertical that allows search over more than one connection, the search outcomes greatly benefit from appointing as many labels as possible.
 
-### Default Result Types
+### Default result types
 
 Labels also affect how default result types are generated. Adding the title and content labels at a minimum will ensure that a result type is created for your connection.
 
@@ -131,7 +131,7 @@ Your default result type will provide a better experience when you define these 
 - fileName
 - fileExtension
 
-Finally, when assigning labels, please ensure the following:
+Finally, when assigning labels, ensure the following:
 
 - The properties that you select to function as labels need to be marked retrievable.
 - The properties and their assigned labels must have the same datatype.
