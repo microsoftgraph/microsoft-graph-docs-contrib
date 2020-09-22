@@ -5,6 +5,14 @@ author: "MSGraphDocsVteam"
 localization_priority: Priority
 ---
 
+### Files
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the [createLink](https://docs.microsoft.com/en-us/graph/api/listItem-createLink?view=graph-rest-beta) method to the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listItem?view=graph-rest-beta) resource|
+|Addition|beta|Added the [revokeGrants](https://docs.microsoft.com/en-us/graph/api/permission-revokeGrants?view=graph-rest-beta) method to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource|
+|Deletion|beta|Removed the **message** parameter from the [createLink](https://docs.microsoft.com/en-us/graph/api/driveItem-createLink?view=graph-rest-beta) method
+
 # Changelog for Microsoft Graph
 
 This changelog covers specific API-level changes in Microsoft Graph v1.0 and beta.
