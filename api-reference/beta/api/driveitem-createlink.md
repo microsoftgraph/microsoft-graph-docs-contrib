@@ -17,7 +17,7 @@ You can use **createLink** action to share a [DriveItem](../resources/driveitem.
 The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.
 If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 
-Item resources inherit sharing permissions from their ancestors.
+DriveItem resources inherit sharing permissions from their ancestors.
 
 ## Permissions
 

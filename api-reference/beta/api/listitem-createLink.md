@@ -18,8 +18,7 @@ You can use **createLink** action to share a [ListItem](../resources/listitem.md
 The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.
 If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 
-Item resources inherit sharing permissions from their ancestors.
-
+ListItem resources inherit sharing permissions from their ancestors.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
