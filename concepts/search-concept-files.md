@@ -413,6 +413,9 @@ Content-type: application/json
   ]
 }
 ```
+## Known limitations
+
+- Query `*` is not supported when search **drive** in the search schema.
 
 ## Next steps
 
