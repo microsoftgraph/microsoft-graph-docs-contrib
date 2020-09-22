@@ -39,7 +39,7 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 [Create]: ../api/listitem-create.md
 [Delete]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
-[item-changes]: ../api/listitem_delta.md
+[item-changes]: ../api/listitem-delta.md
 
 ## JSON representation
 
