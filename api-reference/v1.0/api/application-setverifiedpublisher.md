@@ -42,7 +42,7 @@ In the request body, provide the following required properties.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| verifiedPublisherId | string | The MPN id of the verified publisher to be set on the application, from the publisher's Partner Center account. |
+| verifiedPublisherId | string | The Microsoft Partner Network ID (MPNID) of the verified publisher to be set on the application, from the publisher's Partner Center account. |
 
 ## Response
 
@@ -64,7 +64,7 @@ POST https://graph.microsoft.com/v1.0/applications/{id}/setVerifiedPublisher
 Content-type: application/json
 
 {
-    "verifiedPublisherId": "123..."
+    "verifiedPublisherId": "1234567"
 }
 ```
 
