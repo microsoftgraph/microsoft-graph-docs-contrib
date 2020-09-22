@@ -19,7 +19,7 @@ Represents a verified publisher of an [application](application.md). For more in
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|displayName|String|The verified publisher name from the app publisher's Partner Center account.|
+|displayName|String|The verified publisher name from the app publisher's Microsoft Partner Network (MPN) account.|
 |verifiedPublisherId|String| The id of the verified publisher from the app publisher's Partner Center account. |
 |addedDateTime|DateTimeOffSet| The timestamp when the verified publisher was first added or most recently updated. |
 
