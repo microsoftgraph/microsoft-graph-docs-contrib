@@ -60,7 +60,7 @@ The following is an example of the request.
   "name": "trustframeworkkeyset_getactivekey"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
 ```
 # [C#](#tab/csharp)
