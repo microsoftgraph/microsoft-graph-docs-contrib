@@ -183,7 +183,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
   "tags": ["string"],
   "tokenEncryptionKeyId": "String",
   "useCustomTokenSigningKey": false,
-  "verifiedPublisher": [{"@odata.type": "microsoft.graph.verifiedPublisher"}]
+  "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"}
 }
 ```
 
