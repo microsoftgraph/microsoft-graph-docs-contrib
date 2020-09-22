@@ -12,10 +12,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Revoke access to a [ListItem][] or [DriveItem][] granted via a sharing link by removing the specified [Recipients][] from the link.
+Revoke access to a [ListItem][] or [DriveItem][] granted via a sharing link by removing the specified [Grantees][] from the link.
 [ListItem]: ../resources/listItem.md
 [DriveItem]: ../resources/driveItem.md
-[Recipients]: ../../rest-api/resources/DriveRecipient.md
+[Grantees]: ../../rest-api/resources/DriveRecipient.md
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,12 +33,12 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /drives/{drive-id}/items/{item-id}/permissions/{perm-id}/revokeGrants
-PATCH /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
-PATCH /me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
-PATCH /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
-PATCH /sites/{site-id}/lists/{list-id}/items/{listItem-id}/permissions/{perm-id}/revokeGrants
-PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
+POST /drives/{drive-id}/items/{item-id}/permissions/{perm-id}/revokeGrants
+POST /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
+POST /me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
+POST /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
+POST /sites/{site-id}/lists/{list-id}/items/{listItem-id}/permissions/{perm-id}/revokeGrants
+POST /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 ```
 
 ## Request headers
