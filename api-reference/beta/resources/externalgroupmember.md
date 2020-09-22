@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE beta-disclaimer]
+
 Represents a member of an [externalGroup](externalgroup.md) used to set permissions on external content added to Microsoft Graph.
 
 ## Methods
