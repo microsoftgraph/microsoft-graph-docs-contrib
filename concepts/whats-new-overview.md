@@ -86,7 +86,7 @@ Organizations can [get](/graph/api/continuousaccessevaluationpolicy-get?view=gra
   - [Sort](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#sort-search-results) search results for OneDrive and SharePoint on any sortable property.
   - [Refine results using aggregations](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#refine-results-using-aggregations) for OneDrive and SharePoint.
 - Query external data ingested by Microsoft Graph connectors across [more than one connection](/graph/search-concept-custom-types).
-- Take advantage of enhanced content to learn about:
+- Take advantage of enhanced content for Microsoft Graph connectors to learn about:
   - [Managing connections](search-index-manage-connections.md)
   - [Managing schema](search-index-manage-schema.md)
   - [Managing items](search-index-manage-items.md)
@@ -103,7 +103,7 @@ Organizations can [get](/graph/api/continuousaccessevaluationpolicy-get?view=gra
 ### Teamwork
 - Use an alternative way to [create a team](/graph/api/team-post) directly without first creating a group.
 - Use the **members** navigation property to add members to a team with increased reliability and lower latency.
-- Get the publishing status of a Microsoft Teams [app](/graph/api/resources/teamsapp) through the **publishingState** property of the [app definition](/graph/api/resources/teamsappdefinition). The possible status values are `submitted`, `published`, and `rejected`. See an [example](/graph/api/teamsapp-list?view=graph-rest-1.0&tabs=http#example-3-list-applications-with-a-given-id-and-return-the-submission-review-state).
+- Get the publishing status of a Microsoft Teams [app](/graph/api/resources/teamsapp) through the **publishingState** property of the [app definition](/graph/api/resources/teamsappdefinition). The possible status values are `submitted`, `published`, and `rejected`. See an [example](/graph/api/teamsapp-list?view=graph-rest-1.0&preserve-view=true#example-3-list-applications-with-a-given-id-and-return-the-submission-review-state).
 - Use the `AppCatalog.Submit` delegated permission to allow a user to [submit an app](/graph/api/teamsapp-publish) and request administrator review. Use the same permission for a user to [cancel](/graph/api/teamsapp-delete) an app submitted in the past that has not been published. 
 
 
