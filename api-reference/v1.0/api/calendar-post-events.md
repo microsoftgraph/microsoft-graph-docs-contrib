@@ -61,8 +61,6 @@ If successful, this method returns `201 Created` response code and [event](../re
 
 #### Request
 The following example creates an event in a specific calendar and assigns the event an optional **transactionId** value.
-Here is an example of the request.
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -123,7 +121,9 @@ Content-type: application/json
 
 
 #### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -221,9 +221,6 @@ Content-type: application/json
 #### Request
 The following example creates an event in the specified calendar of the signed-in user's and enables it as an online meeting.
 
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
-
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -284,7 +281,9 @@ Content-type: application/json
 
 
 #### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
