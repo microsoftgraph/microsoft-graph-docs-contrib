@@ -1,6 +1,6 @@
 ---
 title: "verifiedPublisher resource type"
-description: "Verified publisher of the application."
+description: "Represents the verified publisher of the application."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
