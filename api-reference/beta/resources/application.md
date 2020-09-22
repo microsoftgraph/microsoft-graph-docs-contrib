@@ -89,7 +89,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | signInAudience             | String                                                         | Specifies what Microsoft accounts are supported for the current application. Supported values are:<ul><li>`AzureADMyOrg`: Users with a Microsoft work or school account in my organization’s Azure AD tenant (i.e. single tenant)</li><li>`AzureADMultipleOrgs`: Users with a Microsoft work or school account in any organization’s Azure AD tenant (i.e. multi-tenant)</li> <li>`AzureADandPersonalMicrosoftAccount`: Users with a personal Microsoft account, or a work or school account in any organization’s Azure AD tenant</li></ul>                 |
 | tags                       | String collection                                              | Custom strings that can be used to categorize and identify the application. Not nullable.                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | tokenEncryptionKeyId       | String                                                         | Specifies the keyId of a public key from the keyCredentials collection. When configured, Azure AD encrypts all the tokens it emits by using the key this property points to. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.                                                                                                                                                                                                                     |
-| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                         | Specifies the verified publisher of the application.
+| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                         | Specifies the verified publisher of the application.|
 | web                        | [webApplication](webapplication.md)                            | Specifies settings for a web application.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 ## Relationships
@@ -144,7 +144,7 @@ The following is a JSON representation of the resource.
   "signInAudience": "String",
   "tags": ["String"],
   "tokenEncryptionKeyId": "String",
-  "verifiedPublisher": ["String"],
+  "verifiedPublisher": [{"@odata.type": "microsoft.graph.verifiedPublisher"}],
   "web": {"@odata.type": "microsoft.graph.webApplication"}
 }
 ```
