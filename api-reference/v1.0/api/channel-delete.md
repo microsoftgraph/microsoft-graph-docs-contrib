@@ -70,15 +70,9 @@ DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 
 # [C#](#tab/csharp)
 
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Objective-C](#tab/objc)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 <!-- markdownlint-disable MD024 -->
