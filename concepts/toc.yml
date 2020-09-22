@@ -435,7 +435,7 @@ items:
                 href: /learn/modules/msgraph-changenotifications-trackchanges
               - name: Missing Outlook notifications (preview)
                 href: webhooks-outlook-authz.md
-              - name: Notifications with resource data (preview)
+              - name: Notifications with resource data
                 href: webhooks-with-resource-data.md
               - name: Get notifications delivered different ways (preview)
                 href: change-notifications-delivery.md

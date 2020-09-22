@@ -2,7 +2,7 @@
 title: "changeNotificationEncryptedContent resource type"
 description: "A changeNotificationEncryptedContent object represents the encrypted data attached to a change notification."
 localization_priority: Normal
-author: "davidmu1"
+author: "baywet"
 doc_type: resourcePageType
 ms.prod: ""
 ---
@@ -11,11 +11,9 @@ ms.prod: ""
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the encrypted data attached to a change notification.
 
-For details, see [Set up change notifications that include resource data (preview)](/graph/webhooks-with-resource-data.md).
+For more information, see [Set up change notifications that include resource data (preview)](/graph/webhooks-with-resource-data.md).
 
 ## Properties
 
@@ -49,8 +47,8 @@ The following is a JSON representation of the resource.
 }
 ```
 
-<!-- uuid: 564a955a-4837-424d-b7b8-3c6c33d5176d
-2020-05-25 14:57:30 UTC -->
+<!-- uuid: 6bb14c3d-16ef-4ea3-8dc7-c88b9190081c
+2020-08-05 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",
@@ -61,5 +59,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-
