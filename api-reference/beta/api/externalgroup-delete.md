@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE beta-disclaimer]
+
 Delete an [externalGroup](../resources/externalgroup.md) object.
 
 ## Permissions
