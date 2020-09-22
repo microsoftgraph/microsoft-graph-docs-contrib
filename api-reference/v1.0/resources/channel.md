@@ -47,18 +47,6 @@ where files are shared, and where tabs are added.
 |membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|The type of the channel. Can be set during creation and cannot be changed. Default: standard.|
 |createdDateTime|dateTimeOffset|Read only. Timestamp at which the channel was created.|
 
-### Instance attributes
-
-Instance attributes are properties with special behaviors. These properties are temporary and either a) define behavior the service should perform or b) provide short-term property values, like a download URL for an item that expires.
-
-| Property name| Type   | Description
-|:-----------------------|:-------|:-------------------------|
-|@microsoft.graph.channelCreationMode|string|Indicates that the channel is in migration state and is currently being used for migration purposes. It accepts one value: `migration`.|
-
-> **Note**: `ChannelCreationMode`  is an enum that takes the value `migration`.
-
-For a POST request example, see [Request (create channel in migration state)](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams#request-create-a-team-in-migration-state).
-
 ## Relationships
 
 | Relationship | Type |Description|
