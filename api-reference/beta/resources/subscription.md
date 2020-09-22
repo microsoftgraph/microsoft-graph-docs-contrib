@@ -80,12 +80,25 @@ None.
 
 Here is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.subscription"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.subscription",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "toppable": false,
+        "countable": false,
+        "expandable": false,
+        "filterable": false,
+        "referenceable": false,
+        "selectable": false,
+        "sortable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -132,3 +145,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+
