@@ -130,6 +130,20 @@ items:
     items:
       - name: Toolkit overview
         href: /graph/toolkit/overview?context=graph/api/1.0
+      - name: Get started
+        items:
+          - name: Overview
+            href: /graph/toolkit/get-started/overview?context=graph/api/1.0
+          - name: Build a web application (JavaScript)
+            href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
+          - name: Build a SharePoint web part
+            href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/1.0
+          - name: Build a Microsoft Teams tab
+            href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/1.0
+          - name: Use the Toolkit with React
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/1.0
+          - name: Use the Toolkit with Angular
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/1.0
       - name: Components
         items:
           - name: Login
