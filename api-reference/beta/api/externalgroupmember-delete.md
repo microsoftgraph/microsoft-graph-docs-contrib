@@ -1,6 +1,6 @@
 ---
 title: "Delete externalGroupMember"
-description: "Deletes an externalGroupMember object."
+description: "Delete an externalGroupMember object."
 author: "snlraju-msft"
 localization_priority: Normal
 ms.prod: "search"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Deletes an [externalGroupMember](../resources/externalgroupmember.md) object.
+Delete an [externalGroupMember](../resources/externalgroupmember.md) object.
 
 ## Permissions
 
