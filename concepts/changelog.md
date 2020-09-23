@@ -42,6 +42,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta| Added the **createdDateTime** property to the [channel](/graph/api/resources/channel?view=graph-rest-beta) and [team](/graph/api/resources/team?view=graph-rest-beta) resources.|
+|Addition|v1.0| Created the methods [List members](../api/team-list-members.md), [Add members](../api/team-post-members.md), and [Remove members](../api/team-delete-members.md) and added them to the methods table in [team](../resources/team.md) resource type.|
 
 
 ### Users
