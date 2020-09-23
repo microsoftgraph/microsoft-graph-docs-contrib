@@ -34,11 +34,10 @@ POST /applications/{id}/unsetVerifiedPublisher
 | Name           | Description                |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json. Required.|
 
 ## Request body
 
-None
+Do not supply a request body for this method.
 
 ## Response
 
@@ -57,7 +56,6 @@ The following is an example of the request.
 
 ```http
 POST https://graph.microsoft.com/v1.0/applications/{id}/unsetVerifiedPublisher
-Content-type: application/json
 ```
 
 ### Response
