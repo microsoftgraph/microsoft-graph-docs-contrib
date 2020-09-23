@@ -21,8 +21,7 @@ Represents an Azure AD [access review](accessreviewsv2-root.md) decision on an i
 |:---------------|:--------|:----------|
 |[List accessReviewInstanceDecisionItems](../api/accessreviewinstancedecisionitem-list.md) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection | Lists every `accessReviewInstanceDecisionItem` for a specific `accessReviewInstance`. |
 |[List accessReviewInstanceDecisionItems pending approval](../api/accessreviewinstancedecisionitem-listpendingapproval.md) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection. | Get all `accessReviewInstanceDecisionItems` assigned to the calling user, for a specific `accessReviewInstance`. |
-
-
+|[Update accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-update.md) | None. | For any `accessReviewInstanceDecisionItems` that the calling user is assigned a reviewer on, calling user can record a decision by patching the decision object. |
 
 ## Properties
 | Property                  | Type                                |  Description |
