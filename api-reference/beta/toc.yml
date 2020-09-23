@@ -10323,26 +10323,42 @@ items:
           - name: Access review schedule definition
             href: resources/accessreviewscheduledefinition.md
             items:
-            - name: List access reviews
-              href: api/accessreview-list.md
-            - name: Get access review
-              href: api/accessreview-get.md
-            - name: Create access review
-              href: api/accessreview-create.md
-            - name: Stop
-              href: api/accessreview-stop.md
+            - name: List
+              href: api/accessreviewscheduledefinition-list.md
+            - name: Get
+              href: api/accessreviewscheduledefinition-get.md
+            - name: Create
+              href: api/accessreviewscheduledefinition-create.md
+            - name: Delete
+              href: api/accessreviewscheduledefinition-delete.md 
+            - name: Update
+              href: api/accessreviewscheduledefinition-update.md
           - name: Access review instance
             href: resources/accessreviewinstance.md
             items:
             - name: List
-              href: api/businessflowtemplate-list.md
+              href: api/accessreviewinstance-list.md
+            - name: Get
+              href: api/accessreviewinstance-get.md
+            - name: List pending approval
+              href: api/accessreviewinstance-listpendingapproval.md
+            - name: Send reminder
+              href: api/accessreviewinstance-sendreminder.md
+            - name: Stop
+              href: api/accessreviewinstance-stop.md
+            - name: Accept recommendations
+              href: api/accessreviewinstance-acceptrecommendations.md
+            - name: Apply decisions
+              href: api/accessreviewinstance-applydecisions.md
           - name: Access review instance decision item
             href: resources/accessreviewinstancedecisionitem.md
             items:
-            - name: Create
-              href: api/program-create.md
-            - name: Delete
-              href: api/program-delete.md
+            - name: List
+              href: api/accessreviewinstancedecisionitem-list.md
+            - name: List pending approval
+              href: api/accessreviewinstancedecisionitem-listpendingapproval.md
+            - name: Update
+              href: api/accessreviewinstancedecisionitem-update.md
         - name: Access reviews (legacy)
           href: resources/accessreviews-root.md
           items:
