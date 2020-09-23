@@ -4783,6 +4783,16 @@ items:
           href: api/team-get.md
         - name: Update team
           href: api/team-update.md
+        - name: Delete team
+          href: /graph/api/group-delete?view=graph-rest-1.0
+        - name: List members
+          href: /api/team-list-members.md
+        - name: Add members
+          href: /api/team-post-members.md
+        - name: Remove members
+          href: /api/team-delete-members.md
+        - name: Change member's role
+          href: /graph/api/conversationmember-update?view=graph-rest-beta&tabs=http  
         - name: Archive team
           href: api/team-archive.md
         - name: Unarchive team
