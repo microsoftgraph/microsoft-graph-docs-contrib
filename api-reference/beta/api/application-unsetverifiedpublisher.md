@@ -40,7 +40,7 @@ POST /applications/{id}/unsetVerifiedPublisher
 
 ## Request body
 
-None
+Do not supply a request body for this method.
 
 ## Response
 
