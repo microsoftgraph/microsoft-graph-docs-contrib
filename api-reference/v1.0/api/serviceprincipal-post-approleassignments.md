@@ -100,7 +100,7 @@ Content-Length: 110
 ---
 
 
-In this example, `{id}` and `{principalId-value}` would both be the `id` of the assigned client service principal, and `{resoruceId}` would be the `id` of the resource service principal (the API).
+In this example, `{id}` and `{principalId-value}` would both be the `id` of the assigned client service principal, and `{resourceId}` would be the `id` of the resource service principal (the API).
 
 ### Response
 
@@ -143,3 +143,4 @@ Content-length: 253
   ]
 }
 -->
+
