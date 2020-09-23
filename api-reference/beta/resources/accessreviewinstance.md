@@ -26,6 +26,7 @@ Every **accessReviewInstance** contains a list of [decisions](accessreviewinstan
 |[List accessReviewInstances pending approval](../api/accessreviewinstance-listpendingapproval.md) | [accessReviewInstance](accessreviewinstance.md) collection. | Get all `accessReviewInstances` assigned to the calling user. |
 |[Send accessReviewInstance reminder](../api/accessreviewinstance-sendreminder.md) | None. | Send a reminder to the reviewers of an `accessReviewInstance`. |
 |[Stop accessReviewInstance](../api/accessreviewinstance-stop.md) | None. | Manually stop an `accessReviewInstance`. |
+|[Accept recommendations](../api/accessreviewinstance-acceptrecommendations.md) | None. | Allows the calling user to accept the decision recommendation for each NotReviewed `accessReviewInstanceDecisionItem` that they are the reviewer on for a specific `accessReviewInstance`. |
 |[Apply decisions](../api/accessreviewinstance-applydecisions.md) | None. | Manually apply decision on an `accessReviewInstance`. |
 
 
