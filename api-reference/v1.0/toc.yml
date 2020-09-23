@@ -4904,8 +4904,6 @@ items:
           href: api/channel-post-messages.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
-        - name: Update message
-          href: api/chatmessage-update.md  
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -4913,6 +4911,8 @@ items:
           href: api/channel-post-messages.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
+        - name: Update message
+          href: api/chatmessage-update.md  
       - name: App catalog
         items:
         - name: App in catalog
