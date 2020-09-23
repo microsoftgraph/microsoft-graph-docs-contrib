@@ -161,7 +161,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Change | v1.0 | Updated the description for **iCalUId** property to the [event](/graph/api/resources/event?view=graph-rest-1.0) entity. |
 | Addition | beta | Added the **cancelledOccurrences**, **exceptionOccurrences**, and **occurrenceId** properties to the [event](/graph/api/resources/event?view=graph-rest-beta) entity.
 
 ### Change notifications
