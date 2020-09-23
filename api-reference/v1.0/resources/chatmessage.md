@@ -19,6 +19,7 @@ Represents an individual chat message within a [channel](./channel.md) or (in be
 |:---------------|:--------|:----------|
 |**Channel messages**| | |
 |[Create chatMessage in a channel](../api/channel-post-messages.md) | [chatMessage](#chatmessage-resource-type)| Create a new top-level chat message in a channel.|
+|[Update chatMessage](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
 |**Channel message replies**| | |
 |[Reply to a chatMessage in a channel](../api/channel-post-messagereply.md) | [chatMessage](#chatmessage-resource-type)| Reply to an existing chat message in a channel.|
 
@@ -41,6 +42,7 @@ Represents an individual chat message within a [channel](./channel.md) or (in be
 |attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Attached files. Attachments are currently read-only – sending attachments is not supported. |
 |mentions|[chatMessageMention](chatmessagemention.md) collection| List of entities mentioned in the chat message. Currently supports user, bot, team, channel.|
 |importance| string | The importance of the chat message. The possible values are: `normal`, `high`, `urgent`.|
+| policyViolation | [chatMessagePolicyViolation](../resources/chatmessagepolicyviolation.md) |Defines the properties of a policy violation set by a data loss prevention (DLP) application.|
 |locale|string|Locale of the chat message set by the client.|
 
 ## JSON representation
@@ -54,10 +56,11 @@ The following is a JSON representation of the resource.
     "deletedDateTime",
     "attachments",
     "importance",
-    "reactions",
     "mentions",
     "subject",
-    "summary"
+    "summary",
+    "policyViolation",
+    "locale"
   ],
   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.chatMessage"
@@ -78,7 +81,8 @@ The following is a JSON representation of the resource.
   "summary": "string",
   "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
-  "importance": "string",
+   "importance": "string",
+  "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
   "locale": "string"
 }
 ```
