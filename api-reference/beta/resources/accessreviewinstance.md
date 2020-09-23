@@ -23,9 +23,11 @@ Every **accessReviewInstance** contains a list of [decisions](accessreviewinstan
 |:---------------|:--------|:----------|
 |[List accessReviewInstance](../api/accessreviewinstance-list.md) | [accessReviewInstance](accessreviewinstance.md) collection | Lists every `accessReviewInstance` for a specific `accessReviewScheduleDefinition`. Does not include associated `accessReviewInstanceDecisionItem`s in listings. |
 |[Get accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Returns `accessReviewInstance` for an `accessReviewScheduleDefinition`. Does not include associated `accessReviewInstanceDecisionItem`s in object. |
+|[List accessReviewInstances pending approval](../api/accessreviewinstance-listpendingapproval.md) | [accessReviewInstance](accessreviewinstance.md) collection. | Get all `accessReviewInstances` assigned to the calling user. |
 |[Send accessReviewInstance reminder](../api/accessreviewinstance-sendreminder.md) | None. | Send a reminder to the reviewers of an `accessReviewInstance`. |
 |[Stop accessReviewInstance](../api/accessreviewinstance-stop.md) | None. | Manually stop an `accessReviewInstance`. |
 |[Apply decisions](../api/accessreviewinstance-applydecisions.md) | None. | Manually apply decision on an `accessReviewInstance`. |
+
 
 
 ## Properties
@@ -77,6 +79,13 @@ Here is a JSON representation of the resource.
  "definition":"microsoft.graph.accessReviewScheduleDefinition"
 }
 ```
+## user
+
+**user** is an entity type representing a reviewer, that exposes the reviewer's pending access review instances to that reviewer. The reviewer can also submit decisions via the API.
+
+| Property                     | Type                      | Description |
+| :--------------------------- | :------------------------ | :---------- |
+| `pendingAccessReviewInstances`|`Collection(microsoft.graph.accessReviewInstance)`                | Navigation property to get list of access reviews pending approval by reviewer.     
 
 <!--
 {
