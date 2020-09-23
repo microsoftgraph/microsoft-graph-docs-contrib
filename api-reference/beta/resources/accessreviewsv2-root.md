@@ -47,10 +47,14 @@ The following table lists the methods that you can use to interact with access r
 |[Update accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | None. | Update properties of an `accessReviewScheduleDefinition` with a specified ID. |
 |[List accessReviewInstance](../api/accessreviewinstance-list.md) | [accessReviewInstance](accessreviewinstance.md) collection | Lists every `accessReviewInstance` for a specific `accessReviewScheduleDefinition`. Does not include associated `accessReviewInstanceDecisionItem`s in listings. |
 |[Get accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Returns `accessReviewInstance` for an `accessReviewScheduleDefinition`. Does not include associated `accessReviewInstanceDecisionItem`s in object. |
+|[List accessReviewInstances pending approval](../api/accessreviewinstance-listpendingapproval.md) | [accessReviewInstance](accessreviewinstance.md) collection. | Get all `accessReviewInstances` assigned to the calling user. |
 |[Send accessReviewInstance reminder](../api/accessreviewinstance-sendreminder.md) | None. | Send a reminder to the reviewers of an `accessReviewInstance`. |
 |[Stop accessReviewInstance](../api/accessreviewinstance-stop.md) | None. | Manually stop an `accessReviewInstance`. |
+|[Accept recommendations](../api/accessreviewinstance-acceptrecommendations.md) | None. | Allows the calling user to accept the decision recommendation for each NotReviewed `accessReviewInstanceDecisionItem` that they are the reviewer on for a specific `accessReviewInstance`. |
 |[Apply decisions](../api/accessreviewinstance-applydecisions.md) | None. | Manually apply decision on an `accessReviewInstance`. |
-|[List accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-list.md) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection | Lists every `accessReviewInstanceDecisionItem` for a specific `accessReviewInstance`. |
+|[List accessReviewInstanceDecisionItems](../api/accessreviewinstancedecisionitem-list.md) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection | Lists every `accessReviewInstanceDecisionItem` for a specific `accessReviewInstance`. |
+|[List accessReviewInstanceDecisionItems pending approval](../api/accessreviewinstancedecisionitem-listpendingapproval.md) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection. | Get all `accessReviewInstanceDecisionItems` assigned to the calling user, for a specific `accessReviewInstance`. |
+|[Update accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-update.md) | None. | For any `accessReviewInstanceDecisionItems` that the calling user is assigned a reviewer on, calling user can record a decision by patching the decision object. |
 
 ## Role and application permission authorization checks
 
