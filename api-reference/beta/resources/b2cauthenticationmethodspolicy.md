@@ -51,7 +51,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "id": "String",
+    "id": "b2CAuthenticationMethodsPolicy",
     "isEmailPasswordAuthenticationEnabled": true,
     "isUserNameAuthenticationEnabled": false
 }
