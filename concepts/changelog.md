@@ -17,7 +17,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Change | v1.0 | Corrected the property description to reflect the behavior of the **iCalUId** property of the [event](/graph/api/resources/event?view=graph-rest-1.0) entity. |
 | Addition | v1.0 | Added the **transactionId** property to the [event](/graph/api/resources/event?view=graph-rest-1.0) entity.
 
 ### Change notifications
