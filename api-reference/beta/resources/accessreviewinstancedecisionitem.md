@@ -36,7 +36,7 @@ Represents an Azure AD [access review](accessreviewsv2-root.md) decision on an i
 | `appliedDateTime`               |`DateTimeOffset`              | DateTime when approval decision was applied                                                           |
 | `applyResult`                   |`String`                      | Result of applying the decision. Values are: `NotApplied` `Success` `Failed` `NotFound` `NotSupported`.                      |
 | `recommendation`          |`String`                      | System-generated recommendation for the approval decision. Values are: `Approve` `Deny` `NotAvailable`. |
-| `target`                       |`microsoft.graph.accessReviewInstanceDecisionItemTarget`                      | Target of this specific decision. Decision Targets can be of different types – each one with its own specific properties. See type definition below. |
+| `target`                       |`microsoft.graph.accessReviewInstanceDecisionItemTarget`                      | Target of this specific decision. Decision Targets can be of different types – each one with its own specific properties. See [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md). |
 
 ## Relationships
 
@@ -74,34 +74,10 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## accessReviewInstanceDecisionItemTarget
-
-The **accessReviewInstanceDecisionItemTarget** represents a base class for different types of targets, each one with its own specific properties. The supported target types are as follows: `accessReviewInstanceDecisionItemUserTarget` and `accessReviewInstanceDecisionItemServicePrincipalTarget`.
-
-## accessReviewInstanceDecisionItemUserTarget
-
-The **accessReviewInstanceDecisionItemUserTarget** represents a user being reviewed.
-
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
-| `userID`          |`String`  | The ID of the user object whose access is being reviewed. |
-| `userDisplayName`          |`String`  | The display name of the user whose access is being reviewed. |
-| `userPrincipalName`          |`String`  | User Principal Name for the user object. |
-
-## accessReviewInstanceDecisionItemServicePrincipalTarget
-
-The **accessReviewInstanceDecisionItemServicePrincipalTarget** represents a service principal being reviewed.
-
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
-| `servicePrincipalID`          |`String`  | The ID of the service principal whose access is being reviewed. |
-| `servicePrincipalDisplayName`          |`String`  | The display name of the service principal whose access is being reviewed. |
-| `appId`          |`String`  | The appId for the service principal entity being reviewed. |
-
 <!--
 {
   "type": "#page.annotation",
-  "description": "accessReview resource",
+  "description": "accessReviewInstanceDecisionItem resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
