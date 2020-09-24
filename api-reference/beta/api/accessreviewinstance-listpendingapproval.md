@@ -76,6 +76,9 @@ GET https://graph.microsoft.com/beta/me/pendingAccessReviewInstances?$expand=def
   "isCollection": "true"
 } -->
 ```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('957f1027-c0ee-460d-9269-b8828e59e0fe')/pendingAccessReviewInstances(definition())",
     "@odata.count": 1,
