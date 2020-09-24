@@ -1,6 +1,6 @@
 ---
 title: "Update b2cAuthenticationMethodsPolicy"
-description: "Retrieve the properties and relationships of an b2cAuthenticationMethodsPolicy object."
+description: "Update properties of an b2cAuthenticationMethodsPolicy object."
 localization_priority: Priority
 author: "namkedia"
 ms.prod: "microsoft-identity-platform"
@@ -33,10 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
 ```
 
-## Optional query parameters
-
-This method does not support optional query parameters to customize the response.
-
 ## Request headers
 
 |Name|Description|
@@ -52,9 +48,8 @@ The following table shows the properties that are required when you update the [
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|isPhoneOneTimePasswordAuthenticationEnabled|Boolean|This property lets the tenant admin configure if the phone one time password authentication method is enabled|
-|isEmailPasswordAuthenticationEnabled|Boolean|This property lets the tenant admin configure if the email and password authentication method is enabled|
-|isUserNameAuthenticationEnabled|Boolean|This property lets the tenant admin configure if the user name and password authentication method is enabled|
+|isEmailPasswordAuthenticationEnabled|Boolean|This property lets the tenant admin configure local accounts using email if the email and password authentication method is enabled|
+|isUserNameAuthenticationEnabled|Boolean|This property lets the tenant admin configure local accounts using username if the user name and password authentication method is enabled|
 
 ## Response
 
@@ -72,7 +67,11 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/policies/b2cauthenticationmethodspolicy
+PATCH https://graph.microsoft.com/v1.0/policies/b2cAuthenticationMethodsPolicy
+{
+    "isEmailPasswordAuthenticationEnabled": false,
+    "isUserNameAuthenticationEnabled": true
+}
 ```
 
 ### Response

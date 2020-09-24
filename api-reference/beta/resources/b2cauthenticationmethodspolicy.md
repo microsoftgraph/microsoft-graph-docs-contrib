@@ -1,6 +1,6 @@
 ---
 title: "b2cAuthenticationMethodsPolicy resource type"
-description: "Represents a local account authentication method registered to a user configured in a B2C tenant."
+description: "Represents a local account authentication method registered to a user configured in an Azure Active Directory (Azure AD) B2C tenant."
 localization_priority: Priority
 author: "namkedia"
 ms.prod: "microsoft-identity-platform"
@@ -13,11 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure AD B2C allows tenant admins to choose a mechanism for letting end customers register via local accounts. Local accounts are the accounts where the identity assertion is being done by Azure AD. As opposed to federated identity providers where assertion is made by Google, Facebook etc.
+Azure Active Directory (Azure AD) B2C allows tenant admins to choose a mechanism for letting end customers register via local accounts. Local accounts are the accounts where the identity assertion is being done by Azure AD. As opposed to federated identity providers where assertion is made by Google, Facebook etc.
 
-The Local accounts in Azure AD B2C do not follow the settings or paradigms from AAD. The methods set by Azure AD authentication methods policy are not used or enforced by AAD B2C. AAD B2C stores these settings in a different policy and these settings are consumed by user flows.
-
-In the Azure portal they are called Local Accounts. As of now we do not have plans to change the portal naming.
+The local accounts in Azure AD B2C do not follow the settings or paradigms from Azure AD. The Azure AD authentication methods policy is not used or enforced by Azure AD B2C. Azure AD B2C stores these settings in a different policy, which are consumed by user flows.
 
 ## Methods
 
@@ -28,12 +26,11 @@ In the Azure portal they are called Local Accounts. As of now we do not have pla
 
 ## Properties
 
-| Property     | Type        | Description |Key	|Required |	Read Only|
-|:-------------|:------------|:------------|:---|:--------|:---------|
-|id|String|The id of the B2C authentication methods policy|Yes|No|Yes|
-|isPhoneOneTimePasswordAuthenticationEnabled|Boolean|This property lets the tenant admin configure if the phone one time password authentication method is enabled|No|No|No|
-|isEmailPasswordAuthenticationEnabled|Boolean|This property lets the tenant admin configure if the email and password authentication method is enabled|No|No|No|
-|isUserNameAuthenticationEnabled|Boolean|This property lets the tenant admin configure if the user name and password authentication method is enabled|No|No|No|
+| Property     | Type        | Description |Key	|
+|:-------------|:------------|:------------|:---|
+|id|String|The id of the B2C authentication methods policy. This is a required and read only property.|Yes|
+|isEmailPasswordAuthenticationEnabled|Boolean|This property lets the tenant admin configure local accounts using email if the email and password authentication method is enabled|No|
+|isUserNameAuthenticationEnabled|Boolean|This property lets the tenant admin configure local accounts using username if the user name and password authentication method is enabled|No|
 ## Relationships
 
 None.
@@ -55,8 +52,7 @@ The following is a JSON representation of the resource.
 ```json
 {
     "id": "String",
-    "isPhoneOneTimePasswordAuthenticationEnabled": false,
-    "isEmailPasswordAuthenticationEnabled": false,
+    "isEmailPasswordAuthenticationEnabled": true,
     "isUserNameAuthenticationEnabled": false
 }
 ```
