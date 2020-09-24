@@ -4831,7 +4831,7 @@ items:
         - name: Update team
           href: api/team-update.md
         - name: Delete team
-          href: /graph/api/group-delete?view=graph-rest-1.0
+          href: api/group-delete.md
         - name: List members
           href: /api/team-list-members.md
         - name: Add members
@@ -4839,7 +4839,7 @@ items:
         - name: Remove members
           href: /api/team-delete-members.md
         - name: Change member's role
-          href: /graph/api/conversationmember-update?view=graph-rest-beta&tabs=http  
+          href: api/conversationmember-update.md
         - name: Archive team
           href: api/team-archive.md
         - name: Unarchive team
@@ -4849,7 +4849,7 @@ items:
         - name: List your teams
           href: api/user-list-joinedteams.md
         - name: List all teams
-          href: /graph/teams-list-all-teams?context=graph/api/1.0
+          href: api/teams-list-all-teams.md
         - name: Get primary channel
           href: api/team-get-primarychannel.md
       - name: Group (team)
