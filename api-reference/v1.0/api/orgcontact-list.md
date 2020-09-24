@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/contacts
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -93,14 +93,13 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 222
 
 {
   "value": [
     {
-      "companyName": "companyName-value",
-      "department": "department-value",
-      "displayName": "displayName-value",
+      "companyName": "Contoso",
+      "department": "Marketing",
+      "displayName": "Eric S",
       "givenName":"Eric",
       "jobTitle":"Accountant",
       "mail":"erics@contoso.com",
@@ -115,7 +114,7 @@ Content-length: 222
           "state":"WA",
           "street":"Contoso Way"
         }
-      ]
+      ],
       "phones":[
         {
           "number":"111-1111",
@@ -189,6 +188,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#contacts",
   "@odata.count":1,
@@ -232,6 +232,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#contacts",
   "@odata.count":22,

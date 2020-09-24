@@ -185,6 +185,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups(displayName,id)",
   "@odata.count":7,
@@ -216,7 +217,9 @@ ConsistencyLevel: eventual
 #### Response
 
 The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -226,6 +229,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
   "@odata.count":76,
