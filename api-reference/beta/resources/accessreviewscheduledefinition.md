@@ -87,24 +87,6 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## accessReviewReviewerScope
-
-The **accessReviewReviewerScope** is a complex type that allows reviewers to be specified both as a static list of users (i.e., specific users, group owners, group members) or dynamically (i.e., the case where every user is reviewed by their manager). To create a self-review (users review their own access), do not provide reviewers on accessReviewScheduleDefinition creation.
-
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
-| `query`          |`String`  | The query specifying who will be the reviewer. See table for examples. |
-| `queryType`          |`String`  | The type of query. Examples include MicrosoftGraph and ARM. |
-| `queryRoot`          |`String`  | In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query (i.e., ./manager) is specified. |
-
-#### Supported queries for "reviewers" property
-
-|Scenario| Query | Additional Comments |
-|--|--|--|
-| Group owner as reviewer | /groups/{group id}/owners ||
-| Specific user as reviewer | /users/{user id} ||
-| Manager of user being reviewed as reviewer | ./manager | queryRoot must be 'decisions' |
-
 ## accessReviewScheduleSettings
 
 The **accessReviewScheduleSettings** is a complex type representing settings of a review.
