@@ -4831,7 +4831,7 @@ items:
         - name: Update team
           href: api/team-update.md
         - name: Delete team
-          href: api/group-delete.md
+          href: api/team-delete.md
         - name: List members
           href: api/team-list-members.md
         - name: Add members
