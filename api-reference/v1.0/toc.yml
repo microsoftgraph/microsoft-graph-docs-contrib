@@ -4833,11 +4833,11 @@ items:
         - name: Delete team
           href: api/group-delete.md
         - name: List members
-          href: /api/team-list-members.md
+          href: api/team-list-members.md
         - name: Add members
-          href: /api/team-post-members.md
+          href: api/team-post-members.md
         - name: Remove members
-          href: /api/team-delete-members.md
+          href: api/team-delete-members.md
         - name: Change member's role
           href: api/conversationmember-update.md
         - name: Archive team
