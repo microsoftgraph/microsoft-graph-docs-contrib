@@ -4838,8 +4838,6 @@ items:
           href: api/team-post-members.md
         - name: Remove members
           href: api/team-delete-members.md
-        - name: Change member's role
-          href: api/conversationmember-update.md
         - name: Archive team
           href: api/team-archive.md
         - name: Unarchive team
