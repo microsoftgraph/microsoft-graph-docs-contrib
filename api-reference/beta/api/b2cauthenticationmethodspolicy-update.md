@@ -48,8 +48,8 @@ The following table shows the properties that are required when you update the [
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|isEmailPasswordAuthenticationEnabled|Boolean|This property lets the tenant admin configure local accounts using email if the email and password authentication method is enabled|
-|isUserNameAuthenticationEnabled|Boolean|This property lets the tenant admin configure local accounts using username if the user name and password authentication method is enabled|
+|isEmailPasswordAuthenticationEnabled|Boolean|The tenant admin configure local accounts using email if the email and password authentication method is enabled|
+|isUserNameAuthenticationEnabled|Boolean|The tenant admin configure local accounts using username if the user name and password authentication method is enabled|
 
 ## Response
 

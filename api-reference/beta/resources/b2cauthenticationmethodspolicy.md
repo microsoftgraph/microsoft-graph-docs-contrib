@@ -29,8 +29,8 @@ The local accounts in Azure AD B2C do not follow the settings or paradigms from 
 | Property     | Type        | Description |Key	|
 |:-------------|:------------|:------------|:---|
 |id|String|The id of the B2C authentication methods policy. This is a required and read only property.|Yes|
-|isEmailPasswordAuthenticationEnabled|Boolean|This property lets the tenant admin configure local accounts using email if the email and password authentication method is enabled|No|
-|isUserNameAuthenticationEnabled|Boolean|This property lets the tenant admin configure local accounts using username if the user name and password authentication method is enabled|No|
+|isEmailPasswordAuthenticationEnabled|Boolean|The tenant admin configure local accounts using email if the email and password authentication method is enabled|No|
+|isUserNameAuthenticationEnabled|Boolean|The tenant admin configure local accounts using username if the user name and password authentication method is enabled|No|
 ## Relationships
 
 None.
