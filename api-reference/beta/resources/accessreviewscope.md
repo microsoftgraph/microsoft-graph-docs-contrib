@@ -49,7 +49,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
+  "@odata.type": "microsoft.graph.accessReviewScope"
 }-->
 
 ```json
@@ -62,7 +62,7 @@ Here is a JSON representation of the resource.
 <!--
 {
   "type": "#page.annotation",
-  "description": "accessReview resource",
+  "description": "accessReviewScope resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
