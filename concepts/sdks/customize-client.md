@@ -100,4 +100,25 @@ export default class CustomLoggingHandler implements Middleware {
 }
 ```
 
+## [Java](#tab/java)
+
+```java
+// you can configure any OkHttpClient option and add interceptors
+// Note: com.microsoft.graph:microsoft-graph:2.3 or above is required
+final OkHttpClient httpClient = HttpClients.createDefault(coreAuthenticationProvider)
+                                .newBuilder()
+                                .followSslRedirects(false)
+                                .build();
+
+final IHttpProvider httpProvider = DefaultClientConfig
+                          .createWithAuthenticationProvider(authenticationProvider)
+                          .getHttpProvider(httpClient);
+
+final IGraphServiceClient graphServiceClient = GraphServiceClient
+                .builder()
+                .authenticationProvider(authenticationProvider)
+                .httpProvider(httpProvider)
+                .buildClient();
+```
+
 ---
