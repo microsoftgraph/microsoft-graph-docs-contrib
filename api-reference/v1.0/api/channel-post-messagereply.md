@@ -46,14 +46,14 @@ In the request body, supply a JSON representation of a [message](../resources/ch
 If successful, this method returns `201 Created` response code with the [message](../resources/chatmessage.md) that was created.
 
 ## Example
+
 ### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_reply_message"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/messages/{id}/replies
 Content-type: application/json
@@ -65,19 +65,6 @@ Content-type: application/json
   }
 }
 ```
-# [C#](#tab/csharp)
-
-
-# [JavaScript](#tab/javascript)
-
-
-# [Objective-C](#tab/objc)
-
-
-# [Java](#tab/java)
-
-
----
 
 ### Response
 
@@ -86,6 +73,7 @@ Content-type: application/json
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -139,4 +127,3 @@ Content-length: 160
   ]
 }
 -->
-

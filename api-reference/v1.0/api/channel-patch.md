@@ -24,7 +24,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
-
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
@@ -54,17 +53,10 @@ If successful, this method returns a `204 No Content` response code.
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_channel"
 }-->
-```http
-PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
-```
-# [Objective-C](#tab/objc)
-
----
 
 ### Response
 

@@ -68,14 +68,6 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 ```
 
-# [C#](#tab/csharp)
-
-# [JavaScript](#tab/javascript)
-
-# [Objective-C](#tab/objc)
-
----
-
 ### Response
 
 Here is an example of the response.
@@ -87,6 +79,7 @@ Here is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.channel"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

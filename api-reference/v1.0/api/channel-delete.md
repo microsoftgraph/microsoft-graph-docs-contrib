@@ -57,8 +57,6 @@ If successful, this method returns `204 No Content` response code. It does not r
 The following is an example of the request.
 <!-- markdownlint-disable MD025 -->
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "delete_channel"
@@ -68,13 +66,6 @@ The following is an example of the request.
 DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 ```
 
-# [C#](#tab/csharp)
-
-# [JavaScript](#tab/javascript)
-
-# [Objective-C](#tab/objc)
-
----
 <!-- markdownlint-disable MD024 -->
 
 #### Response

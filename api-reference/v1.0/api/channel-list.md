@@ -58,24 +58,10 @@ If successful, this method returns a `200 OK` response code and collection of [C
 
 The following example shows a request to list all channels.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_channels"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels
-```
-# [C#](#tab/csharp)
-
-
-# [JavaScript](#tab/javascript)
-
-
-# [Objective-C](#tab/objc)
-
-
----
 
 #### Response
 
@@ -115,26 +101,10 @@ Content-length: 262
 
 The following example shows a request to list all private channels.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_private_channels"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels?$filter=membershipType eq 'private'
-```
-# [C#](#tab/csharp)
-
-
-# [JavaScript](#tab/javascript)
-
-
-# [Objective-C](#tab/objc)
-
-
----
-
 
 #### Response
 
@@ -148,6 +118,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.channel",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

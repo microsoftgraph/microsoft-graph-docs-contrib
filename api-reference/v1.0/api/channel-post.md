@@ -54,11 +54,11 @@ If successful, this method returns a `201 Created` response code and a [channel]
 
 The following example shows a request to create a standard channel.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_group"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{id}/channels
 Content-type: application/json
@@ -69,14 +69,6 @@ Content-type: application/json
   "membershipType": "standard"
 }
 ```
-
-# [C#](#tab/csharp)
-
-# [JavaScript](#tab/javascript)
-
-# [Objective-C](#tab/objc)
-
----
 
 #### Response
 
@@ -108,8 +100,6 @@ Content-length: 201
 
 The following example shows a request to create a private channel and add a user as an team owner.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_user"
@@ -134,13 +124,6 @@ Content-type: application/json
      ]
 }
 ```
-# [C#](#tab/csharp)
-
-# [JavaScript](#tab/javascript)
-
-# [Objective-C](#tab/objc)
-
----
 
 #### Response
 
