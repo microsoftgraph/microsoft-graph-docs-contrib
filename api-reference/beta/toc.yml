@@ -10333,6 +10333,12 @@ items:
               href: api/accessreviewscheduledefinition-delete.md 
             - name: Update
               href: api/accessreviewscheduledefinition-update.md
+          - name: Access review schedule settings
+            href: resources/accessreviewschedulesettings.md
+          - name: Access review scope
+            href: resources/accessreviewscope.md
+          - name: Access review reviewer scope
+            href: resources/accessreviewreviewerscope.md
           - name: Access review instance
             href: resources/accessreviewinstance.md
             items:
