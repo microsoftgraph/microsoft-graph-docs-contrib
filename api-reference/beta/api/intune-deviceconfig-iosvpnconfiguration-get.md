@@ -3,7 +3,7 @@ title: "Get iosVpnConfiguration"
 description: "Read properties and relationships of the iosVpnConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3473
+Content-Length: 3645
 
 {
   "value": {
@@ -152,6 +152,10 @@ Content-Length: 3473
       }
     ],
     "providerType": "appProxy",
+    "excludedDomains": [
+      "Excluded Domains value"
+    ],
+    "disableOnDemandUserOverride": true,
     "proxyServer": {
       "@odata.type": "microsoft.graph.vpnProxyServer",
       "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -173,10 +177,14 @@ Content-Length: 3473
         "appStoreUrl": "https://example.com/appStoreUrl/",
         "appId": "App Id value"
       }
-    ]
+    ],
+    "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
   }
 }
 ```
+
+
+
 
 
 
