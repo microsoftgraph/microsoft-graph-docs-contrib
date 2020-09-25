@@ -8,7 +8,7 @@ ms.prod: "microsoft.informationprotection"
 
 # Information Protection overview
 
-Microsoft Information Protection helps organizations to classify, label, and protect data based on [sensitivity](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels). 
+Microsoft Information Protection helps organizations to classify, label, and protect data based on [sensitivity](/Office365/SecurityCompliance/sensitivity-labels). 
 
 Organizations use labels to aid:
 
@@ -24,7 +24,7 @@ More than a million organizations with tens of millions of users use Microsoft I
 
 ### Label information in line-of-business applications
 
-Enterprise developers use Microsoft Information Protection to label and protect sensitive customer information on export from line-of-business applications to ensure the safety of customer information. Connecting your applications to the Microsoft Information Protection ecosystem enables applications to apply, update, and delete [sensitivity labels](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels) in your own application data, without the overhead of integrating a full SDK.
+Enterprise developers use Microsoft Information Protection to label and protect sensitive customer information on export from line-of-business applications to ensure the safety of customer information. Connecting your applications to the Microsoft Information Protection ecosystem enables applications to apply, update, and delete [sensitivity labels](/Office365/SecurityCompliance/sensitivity-labels) in your own application data, without the overhead of integrating a full SDK.
 
 ## What can I do with Microsoft Information Protection label APIs in Microsoft Graph? 
 
