@@ -9806,7 +9806,7 @@ items:
               href: api/fido2authenticationmethod-get.md
             - name: Delete
               href: api/fido2authenticationmethod-delete.md
-          - name: Paswordless Phone Sign-in
+          - name: Microsoft Authenticator Paswordless Phone Sign-in
             href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
             items:
             - name: List

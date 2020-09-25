@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a user's [Paswordless Phone Sign-in with Microsoft Authenticator method](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) object.
+Deletes a user's [Microsoft Authenticator Passwordless Phone Sign-in method](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) object.
 
 > [!NOTE]
 > This resource and associated methods will change in the future.
