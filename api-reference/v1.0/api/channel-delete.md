@@ -52,7 +52,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 ## Example
 <!-- markdownlint-disable MD001 -->
 
-##### Request
+### Request
 
 The following is an example of the request.
 <!-- markdownlint-disable MD025 -->
@@ -68,9 +68,9 @@ DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 
 <!-- markdownlint-disable MD024 -->
 
-#### Response
+### Response
 
-The following is an example of the response.git stat
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
