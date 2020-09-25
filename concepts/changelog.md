@@ -23,7 +23,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
-| Addition | beta | Added the [printDocument: $value](/graph/api/printdocument-value?view=graph-rest-beta) method to download the binary file data associated with a document.  | 
+| Addition | beta | Added the [Download printDocument binary file](/graph/api/printdocument-get-file?view=graph-rest-beta) method to download the binary file data associated with a document.  | 
 | Addition | beta | Added support for `$expand=documents` and `$filter=createdBy/userPrincipalName` query parameters in the [List printJobs](/graph/api/printer-list-jobs?view=graph-rest-beta) method. |
 
 ### Identity and access

@@ -1,5 +1,5 @@
 ---
-title: "printDocument: $value"
+title: "Download printDocument binary file"
 description: Download the binary file associated with the document.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# printDocument: $value
+# Download printDocument binary file
 
 Namespace: microsoft.graph
 
