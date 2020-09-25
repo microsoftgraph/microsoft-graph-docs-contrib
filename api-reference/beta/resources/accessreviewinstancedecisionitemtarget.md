@@ -46,7 +46,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemUserTarget"
+  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemTarget"
 }-->
 
 ```json
