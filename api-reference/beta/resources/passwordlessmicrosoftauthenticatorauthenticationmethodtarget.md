@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A collection of users or groups enabled to use Passwordless Phone Sign in with Microsoft Authenticator as part of the [Authentication Method Policy](../resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration.md) in Azure AD.
+A collection of users or groups enabled to use Passwordless Phone Sign-in with Microsoft Authenticator authentication methods policy](../resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration.md) in Azure AD.
 
 
 ## Properties
