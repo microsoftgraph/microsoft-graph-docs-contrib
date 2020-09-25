@@ -31,7 +31,6 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 
 ## See also
 
-- [Overview of Microsoft Graph](/graph/overview)
+- [Overview of Microsoft Graph]()
 - [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
 - [Microsoft Graph quick start](https://developer.microsoft.com/graph/quick-start)
-
