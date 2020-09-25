@@ -68,6 +68,7 @@ The following is an example of the request.
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/policies/b2cAuthenticationMethodsPolicy
+
 {
     "isEmailPasswordAuthenticationEnabled": false,
     "isUserNameAuthenticationEnabled": true
