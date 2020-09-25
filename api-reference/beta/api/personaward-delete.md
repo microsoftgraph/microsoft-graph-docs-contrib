@@ -82,3 +82,5 @@ DELETE https://graph.microsoft.com/beta/user/{userId}/profile/awards/{personAwar
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+

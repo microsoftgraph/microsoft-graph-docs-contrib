@@ -3,7 +3,7 @@ title: "Create androidDeviceOwnerVpnConfiguration"
 description: "Create a new androidDeviceOwnerVpnConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -68,8 +68,10 @@ The following table shows the properties that are required when you create the a
 |connectionType|[androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `microsoftTunnel`.|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Proxy server.|
 |targetedPackageIds|String collection|Targeted App package IDs.|
+|targetedMobileApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|Targeted mobile apps. This collection can contain a maximum of 500 elements.|
 |alwaysOn|Boolean|Whether or not to enable always-on VPN connection.|
 |alwaysOnLockdown|Boolean|If always-on VPN connection is enabled, whether or not to lock network traffic when that VPN is disconnected.|
+|microsoftTunnelSiteId|String|Microsoft Tunnel site ID.|
 
 
 
@@ -83,7 +85,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1758
+Content-length: 2077
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerVpnConfiguration",
@@ -137,8 +139,18 @@ Content-length: 1758
   "targetedPackageIds": [
     "Targeted Package Ids value"
   ],
+  "targetedMobileApps": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
+  ],
   "alwaysOn": true,
-  "alwaysOnLockdown": true
+  "alwaysOnLockdown": true,
+  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
 }
 ```
 
@@ -147,7 +159,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1930
+Content-Length: 2249
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerVpnConfiguration",
@@ -204,10 +216,23 @@ Content-Length: 1930
   "targetedPackageIds": [
     "Targeted Package Ids value"
   ],
+  "targetedMobileApps": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
+  ],
   "alwaysOn": true,
-  "alwaysOnLockdown": true
+  "alwaysOnLockdown": true,
+  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
 }
 ```
+
+
+
 
 
 
