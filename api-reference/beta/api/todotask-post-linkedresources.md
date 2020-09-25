@@ -1,6 +1,6 @@
 ---
-title: "Create linkedResources"
-description: "Create a new linkedResources object."
+title: "Create linkedResource"
+description: "Create a new linkedResource object."
 author: "avijityadav"
 localization_priority: Normal
 ms.prod: "outlook"
@@ -11,10 +11,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new linkedResources object.
+Create a new **linkedResource** object.
 
-> [!NOTE]
-> You can also create a linkedResource object while [creating a todoTask](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples).
+You can also create a **linkedResource** object while [creating a todoTask](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
