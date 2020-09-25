@@ -112,7 +112,7 @@ If your app polls to see whether a resource has changed, you can only do that on
 If you need to hear about changes more frequently than that, you should [create a subscription](../api/subscription-post-subscriptions.md) to that resource and receive change notifications (webhooks). 
 If you don't find support for the type of subscription you need, we encourage you to provide feedback via [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359626). 
 
-When polling for new messages, you must specify a date range where supported. For details, see [get channel messages delta](/graph/api/chatmessage-delta?view=graph-rest-beta).
+When polling for new messages, you must specify a date range where supported. For details, see [get channel messages delta](../../beta/api/chatmessage-delta.md?view=graph-rest-beta).
 
 Polling is doing a GET operation on a resource over and over again to see if that resource has changed. 
 You're allowed to GET the same resource multiple times a day, as long as it's not polling. 
@@ -120,7 +120,7 @@ For example, it is okay to GET /me/joinedTeams every time the user visits/refres
 but it is not okay to GET /me/joinedTeams in a loop every 30 seconds to refresh that web page.
 
 Apps that don't follow these polling requirements will be considered in violation of the
-[Microsoft APIs Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use). This may result in additional [throttling](/graph/throttling) 
+[Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use). This may result in additional [throttling](/graph/throttling) 
 or the suspension or termination of your use of the Microsoft APIs.
 
 ## What's new
@@ -130,4 +130,3 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 
 - [Microsoft Teams API overview](/graph/teams-concept-overview)
 - Sample code: [Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [C# mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph)
-
