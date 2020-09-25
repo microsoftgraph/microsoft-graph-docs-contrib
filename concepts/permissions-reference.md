@@ -255,6 +255,28 @@ The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Ap
 
 ---
 
+## BitLocker recovery key permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _BitlockerKey.ReadBasic.All_ | Read basic BitLocker key information | Allows an app to read the BitLocker key's properties for all devices in the tenant. The recovery key is not returned. | Yes | No |
+| _BitlockerKey.Read.All_ | Read the BitLocker key | Allows an app to read the BitLocker keys for all devices in the tenant. The recovery key is returned. | Yes | No |
+
+#### Application permissions
+
+None.
+
+### Example usage
+
+#### Delegated
+
+* _BitlockerKey.ReadBasic.All_: List the BitLocker recovery keys for all devices in the tenant without returning the 'key' property (`GET /bitlocker/recoveryKeys`).
+* _BitlockerKey.Read.All_: Get a BitLocker recovery key with the recovery key (`GET /bitlocker/recoveryKeys/{bitlockerRecoveryKeyId}?$select=key`)
+
+---
+
 ## Bookings permissions
 
 #### Delegated permissions
@@ -405,13 +427,10 @@ None.
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_CallRecords.Read.All_|Read all call records|Allows the app to read call records for all calls and online meetings without a signed-in user.|Yes|
-|_CallRecords.Read.PstnCalls_|Read PSTN and direct routing call log data (preview)|Allows the app to read all PSTN and direct routing call log data without a signed-in user.|Yes|
 
 ### Remarks
 
 The _CallRecords.Read.All_ permission grants an application privileged access to [callRecords](/graph/api/resources/callrecords-callrecord) for every call and online meeting within your organization, including calls to and from external phone numbers. This includes potentially sensitive details about who participated in the call, as well as technical information pertaining to these calls and meetings that can be used for network troubleshooting, such as IP addresses, device details, and other network information.
-
-The _CallRecords.Read.PstnCalls_ permission grants an application access to [PSTN (calling plans)](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) and [direct routing](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta) call logs. This includes potentially sensitive information about users as well as calls to and from external phone numbers.
 
 > **Important:** Discretion should be used when granting these permissions to applications. Call records can provide insights into the operation of your business, and so can be a target for malicious actors. Only grant these permissions to applications you trust to meet your data protection requirements.
 
@@ -425,7 +444,7 @@ The _CallRecords.Read.PstnCalls_ permission grants an application access to [PST
 
 * _CallRecords.Read.All_: Retrieve a call record (`GET /v1.0/communications/callRecords/{id}`).
 * _CallRecords.Read.All_: Subscribe to new call records (`POST /v1.0/subscriptions`).
-* _CallRecords.Read.PstnCalls_: Retrieve direct routing call records within the specified time range (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getDirectRoutingCalls(fromDateTime={start date and time),toDateTime={end date and time))`)
+* _CallRecords.Read.All_: Retrieve direct routing call records within the specified time range (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getDirectRoutingCalls(fromDateTime={start date and time),toDateTime={end date and time))`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
@@ -1190,8 +1209,11 @@ The *CreatedByApp* constraint associated with this permission indicates that the
 
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_OnlineMeetings.Read.All_|Read Online Meeting details from the app |Allows the app to read VTC associated online meeting details in your organization without a signed-in user.|Yes|
+|_OnlineMeetings.Read.All_|Read Online Meeting details from the app |Allows the app to read online meeting details in your organization without a signed-in user.|Yes|
 |_OnlineMeetings.ReadWrite.All_|Read Online Meeting details from the app|Allows an app to create, read online meetings without a signed-in user.|Yes|
+
+> **Important**
+Administrators can configure [application access policy](cloud-communication-online-meeting-application-access-policy.md) to allow apps to access online meetings on behalf of a user.
 
 ### Example usage
 
@@ -1202,8 +1224,14 @@ The *CreatedByApp* constraint associated with this permission indicates that the
 
 #### Application
 
-* _OnlineMeetings.Read.All_: Retrieve the properties and relationships of an [online meeting](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`GET /beta/communications/onlinemeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'`).
-
+* _OnlineMeetings.Read.All_
+  * Retrieve the properties and relationships of an [online meeting](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`GET /beta/communications/onlinemeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'`).
+  * Retrieve an [online meeting](/graph/api/onlinemeeting-get?view=graph-rest-beta) on behalf of a user (`GET /beta/users/{userId}/onlineMeetings/{id})
+* _OnlineMeetings.ReadWrite.All_
+  * Create an [online meeting](/graph/api/onlinemeeting-get?view=graph-rest-beta) on behalf of a user (`POST /beta/users/{userId}/onlineMeetings/)
+  * Update an [online meeting](/graph/api/onlinemeeting-get?view=graph-rest-beta) on behalf of a user (`PATCH /beta/users/{userId}/onlineMeetings/{id})
+  * Delete an [online meeting](/graph/api/onlinemeeting-get?view=graph-rest-beta) on behalf of a user (`DELETE /beta/users/{userId}/onlineMeetings/{id})
+  
 > **Note**: Creating an [online meeting](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) creates a meeting on behalf of a user, but does not show it on the user's Calendar.
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
@@ -1524,7 +1552,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
-| _ExternalItem.Read.All_ | Read external data | Allows an app to read external data ingested via the Microsoft Search indexing API| Yes | No |
+| _ExternalItem.ReadWrite.All_ | Read or write external data | Allows an app to ingest  via the Microsoft Graph Connectors indexing API, or query data ingested via the Microsoft Graph Connectors| Yes | No |
 
 ### Remarks
 Search permissions are only valid for work or school accounts.
@@ -1537,7 +1565,7 @@ Access to data via search requires the corresponding permission. Ex : _Files.Rea
 
 #### Application
 
-* _ExternalItem.Read.All__:  Access external data from the [search API](/graph/api/resources/search-api-overview) (`POST /search/query`).
+* _ExternalItem.ReadWrite.All_ :  Access external data from the [search API](/graph/api/resources/search-api-overview) (`POST /search/query`).
 
 ---
 
@@ -1575,6 +1603,24 @@ Security permissions are valid only on work or school accounts.
 
 - _SecurityEvents.Read.All_: Read the list of all security alerts from all licensed security providers available to your tenant (`GET /beta/security/alerts`)
 - _SecurityEvents.ReadWrite.All_: Update or read security alerts from all licensed security providers available to your tenant  (`PATCH /beta/security/alerts/{id}`)
+
+---
+
+## Short Notes permissions ([private preview](#permissions-availability-status))
+
+#### Delegated permissions
+
+|   Permission    |  Display String  | Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ShortNotes.Read_ | Read short notes of the signed-in user | Allows the app to read all the short notes a sign-in user has access to. | No | Yes |
+| _ShortNotes.ReadWrite_ | Read, create, edit, and delete short notes of the signed-in user | Allows the app to read, create, edit, and delete short notes of a signed-in user. | No | Yes |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _ShortNotes.Read.All_ | Read all users' short notes | Allows the app to read all the short notes without a signed-in user. | Yes | 
+| _ShortNotes.ReadWrite.All_ | Read, create, edit, and delete all users' short notes | Allows the app to read, create, edit, and delete all the short notes without a signed-in user. | Yes |
 
 ---
 

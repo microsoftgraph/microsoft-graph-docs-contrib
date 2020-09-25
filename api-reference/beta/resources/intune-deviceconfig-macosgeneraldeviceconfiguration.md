@@ -3,7 +3,7 @@ title: "macOSGeneralDeviceConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the macOSGeneralDeviceConfiguration resource."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -82,6 +82,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |passwordBlockAirDropSharing|Boolean|Indicates whether or not to block sharing passwords with the AirDrop passwords feature.|
 |softwareUpdatesEnforcedDelayInDays|Int32|Sets how many days a software update will be delyed for a supervised device. Valid values 0 to 90|
 |softwareUpdatesForceDelayed|Boolean|Indicates whether or not to delay user visibility of software updates when the device is in supervised mode.|
+|updateDelayPolicy|[macOSSoftwareUpdateDelayPolicy](../resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md)|Determines whether to delay OS and/or app updates for macOS. Possible values are: `none`, `delayOSUpdateVisibility`, `delayAppUpdateVisibility`.|
 |contentCachingBlocked|Boolean|Indicates whether or not to allow content caching.|
 |iCloudBlockPhotoLibrary|Boolean|Indicates whether or not to block iCloud Photo Library.|
 |screenCaptureBlocked|Boolean|Indicates whether or not to block the user from taking Screenshots.|
@@ -195,6 +196,7 @@ Here is a JSON representation of the resource.
   "passwordBlockAirDropSharing": true,
   "softwareUpdatesEnforcedDelayInDays": 1024,
   "softwareUpdatesForceDelayed": true,
+  "updateDelayPolicy": "String",
   "contentCachingBlocked": true,
   "iCloudBlockPhotoLibrary": true,
   "screenCaptureBlocked": true,
@@ -245,6 +247,9 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+
 
 
 

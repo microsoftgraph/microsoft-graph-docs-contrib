@@ -132,3 +132,5 @@ The following is a JSON representation of the resource.
 
 - [Creating a group with a team](/graph/teams-create-group-and-team)
 - [Use the Microsoft Graph API to work with Microsoft Teams](teams-api-overview.md)
+
+
