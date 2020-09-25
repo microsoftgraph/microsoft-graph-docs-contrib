@@ -64,7 +64,7 @@ In the request body, supply a JSON representation of the [accessReviewScheduleDe
 
 <!-- {
   "blockType": "ignored",
-  "name": "create_accessReview_from_accessReviews"
+  "name": "create_accessReviewScheduleDefinition"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/accessReviews
@@ -103,7 +103,12 @@ Content-type: application/json
         "type": "noEnd",
         "startDate": "2020-09-08T12:02:30.667Z"
       }
-    }
+    },
+    "applyActions": [
+      {
+        "@odata.type": "microsoft.graph.disableAndDeleteUserApplyAction"
+      }
+    ]
   }
 }
 ```
