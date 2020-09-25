@@ -42,7 +42,7 @@ An **accessReviewScheduleDefinition** contains a list of [accessReviewInstance](
 | `scope`                   |`microsoft.graph.accessReviewScope`  | Yes | Defines scope of users reviewed in a group. For supported scopes, see [accessReviewScope](accessreviewscope.md). | 
 | `instanceEnumerationScope`|`microsoft.graph.accessReviewScope`  | No | In the case of an all groups review, this determines the scope of which groups will be reviewed. Each group will become a unique accessReviewInstance of the access review series.  For supported scopes, see [accessReviewScope](accessreviewscope.md). | 
 | `settings`                |`microsoft.graph.accessReviewScheduleSettings`| No | The settings for an access review series, see type definition below. |
-| `reviewers`               |`Collection(microsoft.graph.accessReviewReviewerScope)`| Yes | This collection of access review scopes is used to define who are the reviewers. See [Supported queries for reviewers property]() table below. |
+| `reviewers`               |`Collection(microsoft.graph.accessReviewReviewerScope)`| Yes | This collection of access review scopes is used to define who are the reviewers. See [accessReviewReviewerScope](accessreviewreviewerscope.md). |
 | `instances`               |`Collection(microsoft.graph.accessReviewInstance)`| No | Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there will be an instance for each recurrence. |
 
 
