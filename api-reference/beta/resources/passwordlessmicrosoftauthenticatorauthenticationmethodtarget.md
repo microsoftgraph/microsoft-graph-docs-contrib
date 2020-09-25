@@ -1,6 +1,6 @@
 ---
 title: "passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget resource type"
-description: "A collection of users or groups enabled to use Passwordless Phone Sign in with Microsoft Authenticator as part of the Authentication Method Policy."
+description: "A collection of users or groups enabled to use Passwordless Phone Sign-in with Microsoft Authenticator authentication methods policy."
 author: "mmcla"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -48,4 +48,3 @@ The following is a JSON representation of the resource.
   "shownContext": "String"
 }
 ```
-
