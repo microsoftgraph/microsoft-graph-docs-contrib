@@ -18,7 +18,7 @@ Authentication methods policies define [authentication methods](https://docs.mic
 The authentication method policies APIs are used to manage policy settings. For example:
 
 * Define the types of FIDO2 security keys that can be used in the Azure AD tenant.
-* Define which users or groups of users are allowed to use FIDO2 security keys or Passwordless Phone Sign in to sign in to Azure AD.
+* Define the users or groups of users who are allowed to use FIDO2 Security Keys or Passwordless Phone Sign-in to sign in to Azure AD.
 
 ## What authentication methods policies can be managed in Microsoft Graph?
 
