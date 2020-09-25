@@ -1562,6 +1562,11 @@ items:
             href: api/printconnector-update.md
           - name: Delete
             href: api/printconnector-delete.md
+        - name: Print document
+          href: resources/printdocument.md
+          items:
+          - name: Upload data
+            href: api/printdocument-uploaddata.md
         - name: Print job
           href: resources/printjob.md
           items:
@@ -1574,7 +1579,7 @@ items:
           - name: Cancel
             href: api/printjob-cancelprintjob.md
           - name: Download binary file
-            href: api/printdocument-value.md
+            href: api/printdocument-get-file.md
         - name: Print operation
           href: resources/printoperation.md
           items:
