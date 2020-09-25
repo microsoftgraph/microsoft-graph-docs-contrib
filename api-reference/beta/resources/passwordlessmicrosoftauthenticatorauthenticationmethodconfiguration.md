@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A representation of a Passwordless Phone Sign-in with Microsoft Authenticator Authentication Methods policy. Authentication Methods policies define configuration settings and users or groups that are enabled to use the authentication method.
+Represents a Passwordless Phone Sign-in with Microsoft Authenticator authentication methods policy. Authentication methods policies define configuration settings and users or groups that are enabled to use the authentication method.
 
 
 ## Methods
