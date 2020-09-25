@@ -9810,7 +9810,7 @@ items:
               href: api/fido2authenticationmethodconfiguration-update.md
             - name: Delete
               href: api/fido2authenticationmethodconfiguration-delete.md
-          - name: Microsoft Authenticator passwordless sign-in
+          - name: Microsoft Authenticator Passwordless Sign-in
             href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
             items:
             - name: Get
