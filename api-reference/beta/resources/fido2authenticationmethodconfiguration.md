@@ -1,6 +1,6 @@
 ---
 title: "fido2AuthenticationMethodConfiguration resource type"
-description: "A representation of FIDO2 Authentication Methods policy"
+description: "Represents a FIDO2 authentication methods policy"
 author: "mmcla"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
