@@ -165,8 +165,8 @@ This resource supports:
 | department | String | The name for the department in which the user works. <br><br>Returned only on $select. Supports $filter. |
 | displayName | String | The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. <br><br>Returned by default. Supports $filter and $orderby.|
 | employeeHireDate | DateTimeOffset | The date and time when the user was hired or will start work in case of a future hire. <br><br>Returned only on $select. Supports $filter.|
-|employeeOrgData|[employeeOrgData](employee-org-data.md) collection|Represents organization data (e.g. division and costCenter) associated with a user.|
 | employeeId | String | The employee identifier assigned to the user by the organization. <br><br>Returned only on $select. Supports $filter.|
+|employeeOrgData|[employeeOrgData](employee-org-data.md) collection|Represents organization data (e.g. division and costCenter) associated with a user.|
 | employeeType | String | Captures enterprise worker type: Employee, Contractor, Consultant, Vendor, etc. <br><br>Returned only on $select. Supports $filter.|
 | externalUserState | String | For an external user invited to the tenant using the [invitation API](../api/invitation-post.md), this property represents the invited user's invitation status. For invited users, the state can be `PendingAcceptance` or `Accepted`, or `null` for all other users. <br><br>Returned only on $select. Supports $filter with the supported values. For example: `$filter=externalUserState eq 'PendingAcceptance'`. |
 | externalUserStateChangeDateTime | String | Shows the timestamp for the latest change to the externalUserState property. <br><br>Returned only on $select. |
