@@ -1567,6 +1567,8 @@ items:
           items:
           - name: Upload data
             href: api/printdocument-uploaddata.md
+          - name: Download binary file
+            href: api/printdocument-get-file.md
         - name: Print job
           href: resources/printjob.md
           items:
@@ -1578,8 +1580,6 @@ items:
             href: api/printjob-startprintjob.md
           - name: Cancel
             href: api/printjob-cancelprintjob.md
-          - name: Download binary file
-            href: api/printdocument-get-file.md
         - name: Print operation
           href: resources/printoperation.md
           items:
