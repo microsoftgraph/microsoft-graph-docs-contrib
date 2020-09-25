@@ -2,7 +2,7 @@
 title: "Integrate your Android app with the client-side SDK for user notifications"
 description: "Integrate your Android app with user notifications client SDK"
 localization_priority: Priority
-ms.prod: "Microsoft Graph notifications"
+ms.prod: "notifications"
 ---
 
 # Integrate your Android app with the client-side SDK for user notifications
