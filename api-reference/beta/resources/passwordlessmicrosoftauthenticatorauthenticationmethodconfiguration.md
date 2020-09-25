@@ -1,6 +1,6 @@
 ---
 title: "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration resource type"
-description: "Represents a Passwordless Phone Sign-in with Microsoft Authenticator authentication methods policy."
+description: "Represents a Microsoft Authenticator Passwordless Phone Sign-in authentication methods policy."
 author: "mmcla"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Passwordless Phone Sign-in with Microsoft Authenticator authentication methods policy. Authentication methods policies define configuration settings and users or groups that are enabled to use the authentication method.
+Represents a Microsoft Authenticator Passwordless Phone Sign-in authentication methods policy. Authentication methods policies define configuration settings and users or groups that are enabled to use the authentication method.
 
 
 ## Methods
