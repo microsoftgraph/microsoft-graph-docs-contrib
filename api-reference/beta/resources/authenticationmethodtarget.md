@@ -1,6 +1,6 @@
 ---
 title: "authenticationMethodTarget resource type"
-description: "A collection of users or groups enabled to use an authentication method as part of an Authentication Method Policy."
+description: "A collection of users or groups enabled to use an authentication method as part of an authentication method policy."
 author: "mmcla"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A collection of users or groups enabled to use an authentication method as part of an Authentication Method Policy in Azure AD.
+A collection of users or groups enabled to use an authentication method as part of an authentication method policy in Azure AD.
 
 
 ## Properties
@@ -46,4 +46,3 @@ The following is a JSON representation of the resource.
   "useForSignIn": "Boolean"
 }
 ```
-

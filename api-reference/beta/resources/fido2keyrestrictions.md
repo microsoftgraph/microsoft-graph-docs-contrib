@@ -1,6 +1,6 @@
 ---
 title: "fido2KeyRestrictions resource type"
-description: "A representation of key restrictions that are enforced as part of FIDO2 security keys authentication methods policy"
+description: "Represents the key restrictions that are enforced as part of the FIDO2 security keys authentication methods policy."
 author: "mmcla"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -42,4 +42,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-

@@ -1,6 +1,6 @@
 ---
 title: "fido2AuthenticationMethodConfiguration resource type"
-description: "A representation of FIDO2 Authentication Methods policy"
+description: "Represents a FIDO2 authentication methods policy"
 author: "mmcla"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A representation of FIDO2 Authentication Methods policy. Authentication Methods policies define configuration settings and users or groups that are enabled to use the authentication method.
+Represents a FIDO2 authentication methods policy. Authentication methods policies define configuration settings and users or groups who are enabled to use the authentication method.
 
 
 ## Methods
@@ -36,7 +36,7 @@ A representation of FIDO2 Authentication Methods policy. Authentication Methods 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of users or groups that are enabled to use the authentication method.|
+|includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of users or groups who are enabled to use the authentication method.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -63,4 +63,3 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-
