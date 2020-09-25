@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Authentication methods policies define [Authentication methods](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) settings and users that are allowed to use them to sign in and perform MFA in Azure Active Directory (AD). Authentication methods policies that can be managed in Microsoft Graph today include FIDO2 security keys and Passwordless Phone Sign in wuth Microsoft Authenticator app.
+Authentication methods policies define [authentication methods](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD). Authentication methods policies that can be managed in Microsoft Graph include FIDO2 Security Keys and Passwordless Phone Sign-in with Microsoft Authenticator app.
 
 The authentication method policies APIs are used to manage policy settings. For example:
 
