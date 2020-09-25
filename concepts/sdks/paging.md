@@ -61,6 +61,27 @@ let pageIterator = new PageIterator(client, response, callback);
 await pageIterator.iterate();
 ```
 
+### [Java](#tab/java)
+
+```java
+IMessageCollectionPage messagesPage = graphClient.me().messages()
+    .buildRequest()
+    .select("Sender,Subject")
+    .top(10)
+    .get();
+
+
+while(messagesPage != null) {
+  final List<Message> messages = messagesPage.GetCurrentPage();
+  final IMessageCollectionRequestBuilder nextPage = messagesPage.GetNextPage();
+  if(nextPage == null) {
+    break;
+  } else {
+    messagePage = nextPage.get();
+  }
+}
+```
+
 ---
 
 ## Stopping and resuming the iteration
