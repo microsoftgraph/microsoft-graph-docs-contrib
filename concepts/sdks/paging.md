@@ -77,7 +77,7 @@ while(messagesPage != null) {
   if(nextPage == null) {
     break;
   } else {
-    messagePage = nextPage.get();
+    messagePage = nextPage.buildRequest().get();
   }
 }
 ```
@@ -156,6 +156,12 @@ while (!pageIterator.isComplete()) {
   count = 0;
   await pageIterator.resume();
 }
+```
+
+### [Java](#tab/java)
+
+```java
+// not supported in java SDK
 ```
 
 ---
