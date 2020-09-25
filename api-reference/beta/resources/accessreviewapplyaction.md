@@ -36,7 +36,9 @@ This is an empty class.
   "@odata.type": "microsoft.graph.accessReviewApplyAction"
 }-->
      
-
+```json
+{}
+```
 
 <!--
 {
