@@ -21,7 +21,7 @@ A representation of FIDO2 Authentication Methods policy. Authentication Methods 
 |:---|:---|:---|
 |[Get](../api/fido2authenticationmethodconfiguration-get.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|Read the properties and relationships of a fido2AuthenticationMethodConfiguration object.|
 |[Update](../api/fido2authenticationmethodconfiguration-update.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|Update the properties of a fido2AuthenticationMethodConfiguration object.|
-|[Delete](../api/fido2authenticationmethodconfiguration-delete.md)|None|Returns the fido2AuthenticationMethodConfiguration object to its default configuration.|
+|[Delete](../api/fido2authenticationmethodconfiguration-delete.md)|None|Reverts the fido2AuthenticationMethodConfiguration object to its default configuration.|
 
 
 ## Properties
@@ -30,7 +30,7 @@ A representation of FIDO2 Authentication Methods policy. Authentication Methods 
 |id|String|The authentication method policy identifier.|
 |isAttestationEnforced|Boolean|Determines whether attestation must be enforced for FIDO2 security key registration.|
 |isSelfServiceRegistrationAllowed|Boolean|Determines if users can register new FIDO2 security keys.|
-|keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|Controls whether key restrictions are enforced on FIDO2 security keys, either allowing or disallowing certain key types as defined by AAGUID.|
+|keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|Controls whether key restrictions are enforced on FIDO2 security keys, either allowing or disallowing certain key types as defined by Authenticator Attestation GUID (AAGUID), an identifier that indicates the type (e.g. make and model) of the authenticator.|
 |state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
 
 ## Relationships

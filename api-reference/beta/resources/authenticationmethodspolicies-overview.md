@@ -29,5 +29,4 @@ The authentication method policies APIs are used to manage policy settings. For 
 
 ## Next steps
 
-* Review the authentication methods policies and their various methods.
 * Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).

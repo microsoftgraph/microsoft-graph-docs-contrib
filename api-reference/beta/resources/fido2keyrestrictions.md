@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A representation of key restrictions that are enforced as part of [FIDO2 security keys authentication methods policy](../resources/fido2authenticationmethodconfiguration.md).
+Represents the key restrictions that are enforced as part of the [FIDO2 security keys authentication methods policy](../resources/fido2authenticationmethodconfiguration.md).
 
 ## Properties
 |Property|Type|Description|
