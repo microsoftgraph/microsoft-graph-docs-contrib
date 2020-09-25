@@ -42,7 +42,7 @@ PATCH https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
 
 ## Request body
 
-In the request body, you should supply a JSON representation of the [b2cAuthenticationMethodsPolicy](../resources/b2cauthenticationmethodspolicy.md) object.
+In the request body, supply a JSON representation of the [b2cAuthenticationMethodsPolicy](../resources/b2cauthenticationmethodspolicy.md) object.
 
 The following table shows the properties that are required when you update the [b2cAuthenticationMethodsPolicy](../resources/b2cauthenticationmethodspolicy.md).
 
