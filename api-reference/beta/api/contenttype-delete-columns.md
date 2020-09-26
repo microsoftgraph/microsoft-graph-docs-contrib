@@ -11,7 +11,7 @@ ms.prod: "sharepoint"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Removes a [column][columndefinition] from a [list][] or a [site][] [content type][contentType].
+Remove a [column][columndefinition] from a [list][] or a [site][] [content type][contentType].
 
 
 ## Permissions
@@ -57,7 +57,7 @@ DELETE https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentTyp
 ```
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
