@@ -51,7 +51,7 @@ If successful, this method returns a `201 Created` response code and a [contentT
 
 ## Example
 
-Here is an example of how to create a new generic contentType.
+The following example shows how to create a new generic content type.
 
 ### Request
 
