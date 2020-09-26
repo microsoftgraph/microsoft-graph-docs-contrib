@@ -1,20 +1,19 @@
 ---
 author: swapnil1993
-ms.date: 08/30/2020
-title: "Create content type columns"
+title: "Create contentType columns"
 description: "Add columns in a content type."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
 
-# Create content type columns
+# Create contentType columns
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Adds [columns][columnDefinition] to a [content type][contentType] .
-For site  [content types][contentType] new site  [columns][columnDefinition] will be created if they don't exist.
-For list [content types][contentType] new list [columns][columnDefinition] will be created if they don't exist.
+Adds [columns][columnDefinition] to a [content type][contentType].
+For site  [content types][contentType], new site  [columns][columnDefinition] will be created if they don't exist.
+For list [content types][contentType], new list [columns][columnDefinition] will be created if they don't exist.
   
 
 ## Permissions
