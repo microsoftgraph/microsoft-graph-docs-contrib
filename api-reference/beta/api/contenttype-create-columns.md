@@ -49,7 +49,7 @@ In the request body, supply a JSON representation of the [columnDefinition][] re
 
 ## Example
 
-## Request
+### Request
 <!-- { "blockType": "request" } -->
 ```http
 POST https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-id}/columns
@@ -73,9 +73,9 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
 
-Returns list of all columns added to a content type.
+The response returns a list of all columns added to a content type.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.columnDefinition", "truncated": true, "scopes": "sites.readwrite.all" } -->
 
