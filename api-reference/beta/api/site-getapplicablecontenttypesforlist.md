@@ -43,11 +43,10 @@ To list only custom content types, use `$filter=isBuiltin eq false`.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
+In the request URL, provide the following query parameter and value.
 
 |Parameter|Type|Description|
-|-|-|-|-|
+|-|-|-|
 |listId| string | GUID of the list for which the applicable content types need to be fetched. Required. |
 
 ## Response
