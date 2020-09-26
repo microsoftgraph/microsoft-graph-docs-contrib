@@ -68,24 +68,17 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-  
-
 ### Request
 
-  
-
 <!-- { "blockType": "request", "name": "get_columns_from_contenttype" } -->
-
-  
+ 
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-id}/columns
 ```
 
-  
-
-#### Response
-**Note:** The response object shown here might be shortened for readability.
+### Response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
