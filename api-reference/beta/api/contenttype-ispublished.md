@@ -30,8 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 ```
-
-**Note:** The siteId represents a content type hub site.
+>**Note:** The siteId represents a content type hub site.
 
 ## Request headers
 |Name|Description|
