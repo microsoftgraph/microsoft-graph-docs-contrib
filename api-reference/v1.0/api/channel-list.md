@@ -63,6 +63,10 @@ The following example shows a request to list all channels.
   "name": "list_channels"
 }-->
 
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels
+```
+
 #### Response
 
 The following is the response.
