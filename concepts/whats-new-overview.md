@@ -41,11 +41,11 @@ GA of the Microsoft Graph PowerShell SDK (https://github.com/microsoftgraph/msgr
 
 ### Use the Toolkit
 Try the new step-by-step getting-started tutorials for Microsoft Graph Toolkit and experience the convenience the toolkit brings:
-- [Build a web application in JavaScript](/graph/toolkit/get-started/build-a-web-app)
-- [Build a SharePoint web part](/graph/toolkit/get-started/build-a-sharepoint-web-part)
-- [Build a Microsoft Teams tab](/graph/toolkit/get-started/build-a-microsoft-teams-tab)
-- [Use the toolkit with React](/graph/toolkit/get-started/use-toolkit-with-react)
-- [Use the toolkit with Angular](/graph/toolkit/get-started/use-toolkit-with-angular)
+- [Build a web application in JavaScript](./toolkit/get-started/build-a-web-app.md)
+- [Build a SharePoint web part](./toolkit/get-started/build-a-sharepoint-web-part.md)
+- [Build a Microsoft Teams tab](./toolkit/get-started/build-a-microsoft-teams-tab.md)
+- [Use the toolkit with React](./toolkit/get-started/use-toolkit-with-react.md)
+- [Use the toolkit with Angular](./toolkit/get-started/use-toolkit-with-angular.md)
 
 ### Users
 Aside from getting the SMTP address of a [user](/graph/api/resources/user) through the **mail** property, you can now set that property and update the user's email address. 
@@ -85,7 +85,7 @@ Organizations can [get](/graph/api/continuousaccessevaluationpolicy-get?view=gra
   - Get custom properties on [listItem](/graph/api/resources/listitem?view=graph-rest-beta&preserve-view=true) resources.
   - [Sort](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#sort-search-results) search results for OneDrive and SharePoint on any sortable property.
   - [Refine results using aggregations](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#refine-results-using-aggregations) for OneDrive and SharePoint.
-- Query external data ingested by Microsoft Graph connectors across [more than one connection](/graph/search-concept-custom-types).
+- Query external data ingested by Microsoft Graph connectors across [more than one connection](./search-concept-custom-types.md).
 - Take advantage of enhanced content for Microsoft Graph connectors to learn about:
   - [Managing connections](search-index-manage-connections.md)
   - [Managing schema](search-index-manage-schema.md)
@@ -180,4 +180,3 @@ Here are some ways we can engage:
 - Browse details of Microsoft Graph API additions, and API behavior updates in the [changelog](changelog.md).
 - Find [highlights of earlier releases](whats-new-earlier.md).
 - Learn more about [versioning, support, and breaking change policies for Microsoft Graph](versioning-and-support.md).
-
