@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns the metadata for a [content type][contentType] in a [site][] or a [list][].
+Retrieve the metadata for a [content type][contentType] in a [site][] or a [list][].
 
 ## Permissions
 
