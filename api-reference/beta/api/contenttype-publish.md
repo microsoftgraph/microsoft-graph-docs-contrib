@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "contentType: publish"
-description: "Publish a content type present in contnet type hub site."
+description: "Publish a content type present in content type hub site."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
@@ -33,13 +33,13 @@ One of the following permissions is required to call this API. To learn more, in
 POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 ```
 
+>**Note:** The siteId represents a content type hub site.
+
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
-
-**Note:** The siteId should belong to a content type hub site.
 
 ## Request body
 Do not supply a request body for this method.
