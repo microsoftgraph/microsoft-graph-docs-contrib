@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Associate a [content type][contentType] with a list of hub sites.
-**Note:** This feature is limited to tenants having an intelligent content services license.
+**Note:** This feature is limited to tenants that have an intelligent content services license.
   
 
 ## Permissions  
@@ -55,9 +55,9 @@ In the request body, supply a JSON representation of the parameters.
 The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
-|-|-|-|-|
-|hubSiteUrls| Collection(string) |List of cannonical urls to hteHub Sites where the content type needs to be enforced. Required.|
-|propagateToExistingLists| Boolean |If `true`, content types will be enforced to existing lists in hub sites otherwise will be applied to only newly created lists. 
+|-|-|-|
+|hubSiteUrls| Collection(string) |List of cannonical URLs to the hub sites where the content type needs to be enforced. Required.|
+|propagateToExistingLists| Boolean |If `true`, content types will be enforced on existing lists in the hub sites; otherwise, it will be applied only to newly created lists. 
 
 ## Response
 
