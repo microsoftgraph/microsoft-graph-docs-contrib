@@ -36,7 +36,7 @@ GA of the [administrative units API](/graph/api/resources/administrativeunit) th
 - [Get notifications on changes](webhooks.md) in [chat messages](/graph/api/resources/chatmessage).
 
 ### Use the SDKs
-GA of the Microsoft Graph PowerShell SDK (https://github.com/microsoftgraph/msgraph-sdk-powershell) which enables access to the entire surface of Microsoft Graph in a straightforward and consistent way.
+GA of the [Microsoft Graph PowerShell SDK](https://github.com/microsoftgraph/msgraph-sdk-powershell) which enables access to the entire surface of Microsoft Graph in a straightforward and consistent way.
 
 ### Use the Toolkit
 Try the new step-by-step getting-started tutorials for Microsoft Graph Toolkit and experience the convenience the toolkit brings:
