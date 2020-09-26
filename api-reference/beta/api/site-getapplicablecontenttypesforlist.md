@@ -11,7 +11,8 @@ ms.prod: "sharepoint"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Returns [site][] [contentTypes][contentType] that can be added to a list.
+
+Get [site][] [contentTypes][contentType] that can be added to a list.
 
 ## Permissions
 
@@ -30,25 +31,24 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /sites/{siteId}/getApplicableContentTypesForList
 ```
+## Optional query parameters
+
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+To list only custom content types, use `$filter=isBuiltin eq false`.
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
-## Function Parameters
+## Request body
 In the request URL, provide the following query parameters with values.
 The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |-|-|-|-|
 |listId| string | GUID of the list for which the applicable content types need to be fetched. Required. |
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
-To list only custom content types use $filter=isBuiltin eq false.
 
 ## Response
 
