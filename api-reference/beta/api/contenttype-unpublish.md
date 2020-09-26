@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "contentType: unpublish"
-description: "Unpublish a content type present in content type hub site."
+description: "Unpublish a content type from a content type hub site."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
@@ -11,7 +11,7 @@ ms.prod: "sharepoint"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Unpublish a [contentType][] present in content type hub site.
+Unpublish a [contentType][] from a content type hub site.
 
 ## Permissions
 
@@ -31,20 +31,19 @@ One of the following permissions is required to call this API. To learn more, in
 POST /sites/{siteId}/contentTypes/{contentTypeId}/unpublish
 ```
 
-**Note:** The siteId should belong to a content type hub site.
+>**Note:** The siteId represents a content type hub site.
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this call returns a `204 No Content` response.
+If successful, this method returns a `204 No Content` response.
 
 ## Example
 
