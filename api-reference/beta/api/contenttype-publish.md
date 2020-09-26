@@ -39,7 +39,6 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
 
 ## Request body
 Do not supply a request body for this method.
