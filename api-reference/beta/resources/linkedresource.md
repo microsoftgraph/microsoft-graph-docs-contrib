@@ -17,7 +17,7 @@ Represents an item in a partner application related to a [todoTask](./todotask.m
 
 ![Linked resource in task details pane](/graph/images/todo-linkedresource-taskdetail.png)
 
-Some **linkedResource** objects are not associated with any web URLs, in which case, the **webUrl** property is not required. For example, the linked item can be from a custom business app or native platform app such as an SMS app on a mobile phone.. Here is how the **linkedResource** appears with and without URL.
+Some **linkedResource** objects are not associated with any web URLs, in which case, the **webUrl** property is not required. For example, the linked item can be from a custom business app or native platform app, such as an SMS app on a mobile phone. Here is how a **linkedResource** appears with and without URL.
 
 ![Linked resource with and without URL](/graph/images/todo-linkedresource.png)
 
