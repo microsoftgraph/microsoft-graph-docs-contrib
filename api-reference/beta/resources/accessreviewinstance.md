@@ -1,8 +1,8 @@
 ---
 title: "accessReviewInstance resource type"
-description: "In the Azure AD access reviews feature, the `accessReviewInstance` represents a recurrence of an `accessReviewScheduleDefinition`.  "
-localization_priority: Normal
+description: "In the Azure AD access reviews feature, the `accessReviewInstance` represents a recurrence of an `accessReviewScheduleDefinition`."
 author: "isabelleatmsft"
+localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
@@ -21,9 +21,9 @@ Every **accessReviewInstance** contains a list of [decisions](accessreviewinstan
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List accessReviewInstance](../api/accessreviewinstance-list.md) | [accessReviewInstance](accessreviewinstance.md) collection | Lists every `accessReviewInstance` for a specific `accessReviewScheduleDefinition`. Does not include associated `accessReviewInstanceDecisionItem`s in listings. |
+|[List accessReviewInstances](../api/accessreviewinstance-list.md) | [accessReviewInstance](accessreviewinstance.md) collection | Get a list of the [accessReviewInstance](../resources/accessreviewinstance.md) objects and their properties. |
 |[Get accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Returns `accessReviewInstance` for an `accessReviewScheduleDefinition`. Does not include associated `accessReviewInstanceDecisionItem`s in object. |
-|[List accessReviewInstances pending approval](../api/accessreviewinstance-listpendingapproval.md) | [accessReviewInstance](accessreviewinstance.md) collection. | Get all `accessReviewInstance` assigned to the calling user. |
+|[List pendingAccessReviewInstances](../api/user-list-pendingaccessreviewinstances.md) | [accessReviewInstance](accessreviewinstance.md) collection. | Get all pending `accessReviewInstance` resources assigned to the calling user. |
 |[Send accessReviewInstance reminder](../api/accessreviewinstance-sendreminder.md) | None. | Send a reminder to the reviewers of an `accessReviewInstance`. |
 |[Stop accessReviewInstance](../api/accessreviewinstance-stop.md) | None. | Manually stop an `accessReviewInstance`. |
 |[Accept recommendations](../api/accessreviewinstance-acceptrecommendations.md) | None. | Allows the calling user to accept the decision recommendation for each NotReviewed `accessReviewInstanceDecisionItem` that they are the reviewer on for a specific `accessReviewInstance`. |
@@ -43,12 +43,7 @@ Every **accessReviewInstance** contains a list of [decisions](accessreviewinstan
 | `decisions`               |`Collection(microsoft.graph.accessReviewInstanceDecisionItem)`  | Set of decisions for this review instance. |
 | `definition`              |`microsoft.graph.accessReviewScheduleDefinition`                | Back link to the `accessReviewScheduleDefinition` associated with the instance. |
 
-
-
 ## Relationships
-
-
-
 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
@@ -62,22 +57,23 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.accessReviewInstance"
-}-->
+  "@odata.type": "microsoft.graph.accessReviewInstance",
+  "baseType": "",
+  "openType": false
+}
+-->
 
 ```json
 {
+ "@odata.type": "#microsoft.graph.accessReviewInstance",
  "id": "string (identifier)",
  "displayName": "string",
  "startDateTime": "string (timestamp)",
  "endDateTime": "string (timestamp)",
  "status": "string",
- "scope": "microsoft.graph.accessReviewScope",
- "decisions": "Collection(microsoft.graph.accessReviewInstanceDecisionItem)",
- "definition":"microsoft.graph.accessReviewScheduleDefinition"
+ "scope": {
+    "@odata.type": "microsoft.graph.accessReviewScope"
+  }
 }
 ```
 ## user
@@ -86,7 +82,7 @@ Here is a JSON representation of the resource.
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| `pendingAccessReviewInstances`|`Collection(microsoft.graph.accessReviewInstance)`                | Navigation property to get list of access reviews pending approval by reviewer.     
+| `pendingAccessReviewInstances`|`Collection(microsoft.graph.accessReviewInstance)`                | Navigation property to get list of access reviews pending approval by reviewer.  |   
 
 <!--
 {
