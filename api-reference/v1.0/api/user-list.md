@@ -65,7 +65,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_users"
-}-->
+} -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users
 ```
@@ -111,7 +111,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_signinname_users"
-}-->
+} -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
 ```
@@ -150,7 +150,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_signin_last_time"
-}-->
+} -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,userPrincipalName,signInActivity
 ```
@@ -196,8 +196,8 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  get_signin_last_time_filter
-}-->
+  "name": "get_signin_last_time_filter"
+} -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'Eric')&$select=displayName,signInActivity
 ```
@@ -241,7 +241,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_signin_last_time_range"
-}-->
+} -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?filter=signInActivity/lastSignInDateTime le 2019-06-01T00:00:00Z
 ```
@@ -294,7 +294,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_count_only"
-}-->
+} -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/$count
 ConsistencyLevel: eventual
@@ -327,7 +327,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_a_count"
-}-->
+} -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'a')&$orderby=displayName&$count=true&$top=1
 ConsistencyLevel: eventual
@@ -374,7 +374,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_wa_count"
-}-->
+} -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$search="displayName:wa"&$orderby=displayName&$count=true
 ConsistencyLevel: eventual
@@ -420,7 +420,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_to_count"
-}-->
+} -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$search="displayName:wa" OR "displayName:to"&$orderbydisplayName&$count=true
 ConsistencyLevel: eventual
