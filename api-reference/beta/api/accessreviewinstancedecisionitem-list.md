@@ -51,7 +51,7 @@ The following example shows a request to retrieve all the decisions on an instan
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_accessReviews"
+  "name": "list_accessReviewInstanceDecisionItem"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-444404f3baa6/instances/14444cdb-6a18-4c08-ba2c-48c02f0a0138/decisions?$top=100&$skip=0
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.accessReview",
+  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem",
   "isCollection": "true"
 } -->
 ```http
@@ -207,7 +207,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get accessReviews",
+  "description": "List accessReviewInstanceDecisionItem",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

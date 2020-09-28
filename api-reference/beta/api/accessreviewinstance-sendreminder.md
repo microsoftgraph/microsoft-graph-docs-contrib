@@ -63,18 +63,16 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": false
 } -->
 ```http
 HTTP/1.1 204 No Content
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2017-06-25 00:00:01 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "SendReminder accessReview",
+  "description": "SendReminder accessReviewInstance",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
@@ -82,5 +80,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

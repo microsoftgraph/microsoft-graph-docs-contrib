@@ -43,7 +43,7 @@ If successful, this method returns a `204, No Content` response code. It does no
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_accessReview"
+  "name": "delete_accessReviewScheduleDefinition"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/29f2d16e-9ca6-4052-bbfe-802c48981fd8
@@ -63,18 +63,16 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definit
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": false
 } -->
 ```http
 HTTP/1.1 204 No Content
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2017-06-25 00:00:01 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "Delete accessReview",
+  "description": "Delete accessReviewScheduleDefinition",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

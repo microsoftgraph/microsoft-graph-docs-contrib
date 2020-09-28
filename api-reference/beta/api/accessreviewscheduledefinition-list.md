@@ -52,7 +52,7 @@ The following example shows a request to retrieve all the access review series i
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_accessReviews"
+  "name": "list_accessReviewScheduleDefinition"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions?$top=100&$skip=0
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.accessReview",
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition",
   "isCollection": "true"
 } -->
 ```http
@@ -165,7 +165,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get accessReviews",
+  "description": "List accessReviewScheduleDefinition",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

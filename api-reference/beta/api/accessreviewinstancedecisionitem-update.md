@@ -62,8 +62,8 @@ This is an example of approving access for a user represented by an `accessRevie
 PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/decisions/654b34e7-b48f-4772-a2d4-08f1d0dd014c
 
 {
-    "decision":"Approve",
-    "justification":"I trust this person"
+  "decision": "Approve",
+  "justification": "I trust this person"
 }
 ```
 # [C#](#tab/csharp)
@@ -82,7 +82,7 @@ PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": false
 } -->
 ```http
 HTTP/1.1 204 Accepted

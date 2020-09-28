@@ -51,7 +51,7 @@ The following example shows a request to retrieve all the access review series i
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_accessReviewInstances_pendingapproval"
+  "name": "list_accessReviewInstance_pendingapproval"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/pendingAccessReviewInstances?$expand=definition&$top=100&$skip=0
@@ -160,7 +160,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get accessReviews",
+  "description": "List accessReviewInstance pendingApproval",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

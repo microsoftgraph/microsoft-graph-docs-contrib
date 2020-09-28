@@ -45,7 +45,7 @@ If successful, this method returns a `204, No Content` response code. It does no
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "sendReminder_accessReview"
+  "name": "acceptrecommendations_accessReviewInstance"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/acceptRecommendations()
@@ -65,7 +65,7 @@ POST https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-6
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": false
 } -->
 ```http
 HTTP/1.1 204 No Content

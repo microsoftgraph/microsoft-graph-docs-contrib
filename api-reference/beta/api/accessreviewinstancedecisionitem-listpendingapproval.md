@@ -51,7 +51,7 @@ The following example shows a request to retrieve all the decisions on an instan
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_accessReviewInstanceDecisionItems_pendingapproval"
+  "name": "list_accessReviewInstanceDecisionItem_pendingapproval"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/decisions?$top=100&$skip=0
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.accessReview",
+  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem",
   "isCollection": "true"
 } -->
 ```http
@@ -155,7 +155,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get accessReviews",
+  "description": "List accessReviewInstanceDecisionItem pendingApproval",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

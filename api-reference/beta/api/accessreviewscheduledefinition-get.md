@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and an [accessReview
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_accessReview"
+  "name": "get_accessReviewScheduleDefinition"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/2b83cc42-09db-46f6-8c6e-16fec466a82d
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.accessReview",
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition",
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -145,7 +145,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get accessReview",
+  "description": "Get accessReviewScheduleDefinition",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

@@ -43,7 +43,7 @@ If successful, this method returns a `204, No Content` response code. It does no
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "stop_accessReview"
+  "name": "stop_accessReviewInstance"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/2b83cc42-09db-46f6-8c6e-16fec466a82d/instances/61a617dd-238f-4037-8fa5-d800e515f5bc/stop()
@@ -63,18 +63,16 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": false
 } -->
 ```http
 HTTP/1.1 204 No Content
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2017-06-25 00:00:01 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "Stop accessReview",
+  "description": "Stop accessReviewInstance",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
@@ -82,5 +80,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-
