@@ -57,14 +57,13 @@ If successful, this method returns a `200 OK` response code and a [channel](../r
 
 Here is an example of the request.
 
+# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
   "name": "get_channel"
 }-->
 <!-- markdownlint-disable MD025 -->
-
-# [HTTP](#tab/http)
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
@@ -87,8 +86,10 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](../includes/snippets/java/get-channel-java-snippets.md)]	
+[!INCLUDE [sample-code](../includes/snippets/java/get-channel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
