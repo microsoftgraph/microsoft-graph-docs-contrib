@@ -1,8 +1,8 @@
 ---
 title: "accessReviewApplyAction resource type"
-description: "In the Azure AD access reviews feature, the `accessReviewApplyAction` represents the action to take on reviewed users after an access review instance is completed.  "
-localization_priority: Normal
+description: "In the Azure AD access reviews feature, the `accessReviewApplyAction` represents the action to take on reviewed users after an access review instance is completed."
 author: "isabelleatmsft"
+localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
@@ -20,24 +20,24 @@ Namespace: microsoft.graph
 **disableAndDeleteUserApplyAction** is a derived type of `accessReviewApplyAction` that indicates disabling and deleting the user being reviewed upon completion of the review. This is the non-default type and needs to specified in `accessReviewScheduleSettings`.
 
 ## Properties
-None. This is an empty class.
+|Property|Type|Description|
+|:---|:---|:---|
+
+## Relationships
+None.
 
 
 ## JSON representation
-
-This is an empty class.
-
+The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.accessReviewApplyAction"
-}-->
-     
-```json
-{}
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.accessReviewApplyAction"
+}
 ```
 
 <!--
