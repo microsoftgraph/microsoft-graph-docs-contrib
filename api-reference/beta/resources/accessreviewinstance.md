@@ -91,7 +91,7 @@ Here is a JSON representation of the resource.
 <!--
 {
   "type": "#page.annotation",
-  "description": "accessReview resource",
+  "description": "accessReviewInstance resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
