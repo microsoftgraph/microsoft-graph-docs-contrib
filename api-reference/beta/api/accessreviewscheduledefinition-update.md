@@ -67,7 +67,7 @@ In the request body, supply a JSON representation of the new properties of the [
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_accessReview"
+  "name": "update_accessReviewScheduleDefinition"
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-f75e04444aa6
@@ -124,8 +124,7 @@ PUT https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.accessReview"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 204 Accepted
@@ -134,7 +133,7 @@ HTTP/1.1 204 Accepted
 <!--
 {
   "type": "#page.annotation",
-  "description": "Update accessReview",
+  "description": "Update accessReviewScheduleDefinition",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

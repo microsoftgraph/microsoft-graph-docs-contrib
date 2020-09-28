@@ -63,7 +63,7 @@ This is an example of creating an access review series with a specific user as t
 In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_accessReviewScheduleDefinition"
 }-->
 ```http
@@ -118,7 +118,7 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.accessReview"
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -185,7 +185,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create accessReview",
+  "description": "Create accessReviewScheduleDefinition",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
