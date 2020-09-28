@@ -1,6 +1,6 @@
 ---
 title: "Update b2cAuthenticationMethodsPolicy"
-description: "Update properties of an b2cAuthenticationMethodsPolicy object."
+description: "Update properties of a b2cAuthenticationMethodsPolicy object."
 localization_priority: Priority
 author: "namkedia"
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [b2cAuthenticationMethodsPolicy](../resources/b2cauthenticationmethodspolicy.md) object.
+Update the properties of a [b2cAuthenticationMethodsPolicy](../resources/b2cauthenticationmethodspolicy.md) object.
 
 ## Permissions
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
+PATCH /policies/b2cAuthenticationMethodsPolicy
 ```
 
 ## Request headers
@@ -48,8 +48,8 @@ The following table shows the properties that are required when you update the [
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|isEmailPasswordAuthenticationEnabled|Boolean|The tenant admin configure local accounts using email if the email and password authentication method is enabled|
-|isUserNameAuthenticationEnabled|Boolean|The tenant admin configure local accounts using username if the user name and password authentication method is enabled|
+|isEmailPasswordAuthenticationEnabled|Boolean|The tenant admin can configure local accounts using email if the email and password authentication method is enabled.|
+|isUserNameAuthenticationEnabled|Boolean|The tenant admin can configure local accounts using username if the user name and password authentication method is enabled.|
 
 ## Response
 
@@ -67,7 +67,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/policies/b2cAuthenticationMethodsPolicy
+PATCH https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
 
 {
     "isEmailPasswordAuthenticationEnabled": false,

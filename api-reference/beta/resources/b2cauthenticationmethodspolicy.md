@@ -13,24 +13,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory (Azure AD) B2C allows tenant admins to choose a mechanism for letting end customers register via local accounts. Local accounts are the accounts where the identity assertion is being done by Azure AD. As opposed to federated identity providers where assertion is made by Google, Facebook etc.
+Azure Active Directory (Azure AD) B2C allows tenant admins to choose a mechanism for letting end users register via local accounts. Local accounts are the accounts where Azure AD does the identity assertion, as opposed to a federated identity provider such as Google or Facebook etc.
 
-The local accounts in Azure AD B2C do not follow the settings or paradigms from Azure AD. The Azure AD authentication methods policy is not used or enforced by Azure AD B2C. Azure AD B2C stores these settings in a different policy, which are consumed by user flows.
+The local accounts in Azure AD B2C do not follow the settings or paradigms from Azure AD. The Azure AD authentication methods policy is not used or enforced by Azure AD B2C. Azure AD B2C stores these settings in a different policy, which is consumed by user flows.
 
 ## Methods
 
 | Method       | Return type | Description |
 |:-------------|:------------|:------------|
-| [Get b2cAuthenticationMethodsPolicy](../api/b2cauthenticationmethodspolicy-get.md) | [b2cauthenticationmethodspolicy](b2cauthenticationmethodspolicy.md) | Read the properties of an **b2cauthenticationmethodspolicy** object. |
-| [Update b2cAuthenticationMethodsPolicy](../api/b2cauthenticationmethodspolicy-update.md) | None | Update the properties of an **b2cauthenticationmethodspolicy** objects. |
+| [Get b2cAuthenticationMethodsPolicy](../api/b2cauthenticationmethodspolicy-get.md) | [b2cauthenticationmethodspolicy](b2cauthenticationmethodspolicy.md) | Read the properties of a **b2cauthenticationmethodspolicy** object. |
+| [Update b2cAuthenticationMethodsPolicy](../api/b2cauthenticationmethodspolicy-update.md) | None | Update the properties of a **b2cauthenticationmethodspolicy** objects. |
 
 ## Properties
 
-| Property     | Type        | Description |Key	|
-|:-------------|:------------|:------------|:---|
-|id|String|The id of the B2C authentication methods policy. This is a required and read only property.|Yes|
-|isEmailPasswordAuthenticationEnabled|Boolean|The tenant admin configure local accounts using email if the email and password authentication method is enabled|No|
-|isUserNameAuthenticationEnabled|Boolean|The tenant admin configure local accounts using username if the user name and password authentication method is enabled|No|
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|id|String|The id of the B2C authentication methods policy. This is a read only property and the key.|
+|isEmailPasswordAuthenticationEnabled|Boolean|The tenant admin can configure local accounts using email if the email and password authentication method is enabled.|
+|isUserNameAuthenticationEnabled|Boolean|The tenant admin can configure local accounts using username if the user name and password authentication method is enabled.|
+
 ## Relationships
 
 None.

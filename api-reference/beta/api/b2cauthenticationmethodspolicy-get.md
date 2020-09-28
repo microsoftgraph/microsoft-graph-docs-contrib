@@ -1,6 +1,6 @@
 ---
 title: "Get b2cAuthenticationMethodsPolicy"
-description: "Read the properties of an b2cAuthenticationMethodsPolicy object."
+description: "Read the properties of a b2cAuthenticationMethodsPolicy object."
 localization_priority: Priority
 author: "namkedia"
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties of an [b2cAuthenticationMethodsPolicy](../resources/b2cauthenticationmethodspolicy.md) object.
+Read the properties of a [b2cAuthenticationMethodsPolicy](../resources/b2cauthenticationmethodspolicy.md) object.
 
 ## Permissions
 
@@ -77,7 +77,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#b2cAuthenticationMethodsPolicy",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#b2cAuthenticationMethodsPolicy",
     "id": "b2CAuthenticationMethodsPolicy",
     "isEmailPasswordAuthenticationEnabled": true,
     "isUserNameAuthenticationEnabled": false
