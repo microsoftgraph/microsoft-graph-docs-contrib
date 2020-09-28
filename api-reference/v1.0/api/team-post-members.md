@@ -42,7 +42,8 @@ In the request body, supply a JSON representation of the [conversationMember](..
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [conversationMember](../resources/conversationmember.md) object in the response body. 
+For best results, stagger calls with 2 seconds of buffer. 
 
 ## Examples
 
