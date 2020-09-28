@@ -12,9 +12,9 @@ ms.prod: "sharepoint"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Adds [columns][columnDefinition] to a [content type][contentType] .
-For site  [content types][contentType] new site  [columns][columnDefinition] will be created if they don't exist.
-For list [content types][contentType] new list [columns][columnDefinition] will be created if they don't exist.
+Adds [columns][columnDefinition] to a [content type][contentType].
+For site  [content types][contentType], new site  [columns][columnDefinition] will be created if they don't exist.
+For list [content types][contentType], new list [columns][columnDefinition] will be created if they don't exist.
   
 
 ## Permissions
@@ -49,7 +49,7 @@ If successful, this method returns a `201 Created` response code and a collectio
 
 ## Example
 
-## Request
+### Request
 <!-- { "blockType": "request" } -->
 ```http
 POST https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-id}/columns
@@ -73,9 +73,9 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
 
-Returns list of all columns added to a content type.
+The response returns a list of all columns added to a content type.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.columnDefinition", "truncated": true, "scopes": "sites.readwrite.all" } -->
 

@@ -11,7 +11,7 @@ ms.prod: "sharepoint"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Returns the metadata for a [contentType][] [column][columnDefinition].
+Retrieve the metadata for a [contentType][] [column][columnDefinition].
 
   
 

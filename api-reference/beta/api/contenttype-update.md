@@ -11,7 +11,7 @@ ms.prod: "sharepoint"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Updates a [content type][contentType].
+Update a [content type][contentType].
   
 
 ## Permissions
@@ -38,7 +38,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ```http
 PATCH /sites/{site-id}/contentTypes/{contentType-id}
-
 PATCH /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}
 ```
 

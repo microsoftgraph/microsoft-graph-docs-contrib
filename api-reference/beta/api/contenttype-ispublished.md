@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "contentType: isPublished"
-description: "Check publishing status of a content type present in content type hub site."
+description: "Check the publishing status of a content type in a content type hub site."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
@@ -11,7 +11,7 @@ ms.prod: "sharepoint"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Check publishing status of a [contentType][] present in content type hub site.
+Check the publishing status of a [contentType][] in a content type hub site.
 
 ## Permissions
 
@@ -30,8 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 ```
-
-**Note:** The siteId should belong to a content type hub site.
+>**Note:** The siteId represents a content type hub site.
 
 ## Request headers
 |Name|Description|
@@ -41,7 +40,7 @@ GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 ## Response
 If successful, this call returns a `200 OK` response and a boolean value specifying the publishing state of the content type.
 
-## Function parameters
+## Request body
 Do not supply a request body for this method.
 
 ## Example

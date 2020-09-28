@@ -1,13 +1,13 @@
 ---
 author: swapnil1993
-title: "List content types"
+title: "List contentTypes"
 description: "List content types in a site or a list"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
 
-# List content types
+# List contentTypes
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -30,7 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ```http
 GET /sites/{site-id}/contentTypes
-
 GET /sites/{site-id}/lists/{list-id}/contentTypes
 ```
 

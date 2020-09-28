@@ -11,7 +11,7 @@ ms.prod: "sharepoint"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Updates [content type][contentType] [column][columnDefinition].
+Update a [content type][contentType] [column][columnDefinition].
   
 
 ## Permissions  
@@ -36,7 +36,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-
 PATCH /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 PATCH /sites/{site-id}/lists/{list-id}//contentTypes/{contentType-id}/columns/{column-id}
 ```
@@ -52,7 +51,8 @@ PATCH /sites/{site-id}/lists/{list-id}//contentTypes/{contentType-id}/columns/{c
 ## Request body
 
 In the request body, supply a JSON representation of the [columnDefinition][] resource to update.  
-**Note:** Only required and hidden properties can be updated for a content type column.
+
+>**Note:** Only required and hidden properties can be updated.
 
 ## Response
 
@@ -71,7 +71,6 @@ PATCH /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 Content-Type: application/json
 
 {
-
   "required": true,
   "hidden": false,
   "propagateChanges": false		
@@ -79,7 +78,8 @@ Content-Type: application/json
 ```
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

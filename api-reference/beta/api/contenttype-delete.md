@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes a [content type][contentType] from a [list][] or a [site][].
+Remove a [content type][contentType] from a [list][] or a [site][].
 
 
 ## Permissions

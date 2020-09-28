@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "contentType: copyToDefaultContentLocation"
-description: "Copy a file to default content location in a content type."
+description: "Copy a file to a default content location in a content type."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
@@ -52,8 +52,8 @@ The following table shows the parameters that can be used with this action.
 
 
 |Parameter|Type|Description|
-|-|-|-|-|
-|sourceFile| microsoft.graph.itemReference |Metadata about the source file that needs to be copied to the default content location. Required.|
+|-|-|-|
+|sourceFile| [itemReference](../resources/itemreference.md) |Metadata about the source file that needs to be copied to the default content location. Required.|
 |destinationFileName| string |Destination filename. 
 
 ## Response

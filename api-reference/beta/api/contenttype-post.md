@@ -51,7 +51,7 @@ If successful, this method returns a `201 Created` response code and a [contentT
 
 ## Example
 
-Here is an example of how to create a new generic contentType.
+The following example shows how to create a new generic content type.
 
 ### Request
 
@@ -77,7 +77,8 @@ Content-Type: application/json
 ```
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
