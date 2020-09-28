@@ -1,8 +1,8 @@
 ---
 title: "accessReviewInstanceDecisionItem resource type"
-description: "In the Azure AD access reviews feature, the `accessReviewInstanceDecisionItem` represents a decision on a user's access on an `accessReviewInstance`.  "
-localization_priority: Normal
+description: "In the Azure AD access reviews feature, the `accessReviewInstanceDecisionItem` represents a decision on a user's access on an `accessReviewInstance`."
 author: "isabelleatmsft"
+localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
@@ -29,7 +29,7 @@ Represents an Azure AD [access review](accessreviewsv2-root.md) decision on an i
 | `id`                            |`String`                      | ID of the decision                                                                                     |
 | `accessReviewId`                |`String`                      | ID of the accessReviewInstance parent                                                                                       |
 | `reviewedBy`                    |`microsoft.graph.userIdentity`| Reviewer user ID                                                                                       |
-| `reviewedDate`                  |`DateTimeOffset`              | DateTime when review occurred                                                                     |
+| `reviewedDateTime`                  |`DateTimeOffset`              | DateTime when review occurred                                                                     |
 | `decision`                      |`String`                      | Result of the review. Values can be: `Approve` `Deny` `NotReviewed` `DontKnow`.                                                                                   |
 | `justification`                 |`String`                      | Review decision justification                                                                          |
 | `appliedBy`                     |`microsoft.graph.userIdentity`| User ID of the user who applied the decision                                                           |
@@ -52,25 +52,32 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem"
-}-->
+  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem",
+  "baseType": "",
+  "openType": true
+}
+-->
 
 ```json
 {
+ "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
  "id": "string (identifier)",
  "accessReviewId": "string",
- "reviewedBy": "microsoft.graph.userIdentity",
- "reviewedDate": "string (timestamp)",
+ "reviewedBy": {
+    "@odata.type": "microsoft.graph.userIdentity"
+ },
+ "reviewedDateTime": "string (timestamp)",
  "decision": "string",
  "justification": "string",
- "appliedBy": "microsoft.graph.userIdentity",
+ "appliedBy": {
+    "@odata.type": "microsoft.graph.userIdentity"
+  },
  "appliedDateTime": "DateTimeOffset",
  "applyResult": "string",
  "recommendation": "string",
- "target":"microsoft.graph.accessReviewInstanceDecisionItemTarget"
+ "target": {
+    "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemTarget"
+  }
 }
 ```
 
