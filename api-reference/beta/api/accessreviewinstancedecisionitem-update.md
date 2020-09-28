@@ -82,17 +82,16 @@ PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.accessReview"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 204 Accepted
 ```
 
 <!--
-{s
+{
   "type": "#page.annotation",
-  "description": "Update accessReview",
+  "description": "Update accessReviewInstanceDecisionItem",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
