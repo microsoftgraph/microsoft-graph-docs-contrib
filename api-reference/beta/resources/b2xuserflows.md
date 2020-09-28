@@ -62,3 +62,5 @@ The following is a JSON representation of the resource.
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}]
 }
 ```
+
+

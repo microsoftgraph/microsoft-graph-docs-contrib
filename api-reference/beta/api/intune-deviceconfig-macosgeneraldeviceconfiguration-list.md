@@ -3,7 +3,7 @@ title: "List macOSGeneralDeviceConfigurations"
 description: "List properties and relationships of the macOSGeneralDeviceConfiguration objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5266
+Content-Length: 5321
 
 {
   "value": [
@@ -147,6 +147,7 @@ Content-Length: 5266
       "passwordBlockAirDropSharing": true,
       "softwareUpdatesEnforcedDelayInDays": 2,
       "softwareUpdatesForceDelayed": true,
+      "updateDelayPolicy": "delayOSUpdateVisibility",
       "contentCachingBlocked": true,
       "iCloudBlockPhotoLibrary": true,
       "screenCaptureBlocked": true,
@@ -199,6 +200,9 @@ Content-Length: 5266
   ]
 }
 ```
+
+
+
 
 
 

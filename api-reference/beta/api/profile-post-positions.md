@@ -94,7 +94,7 @@ Content-type: application/json
       "webUrl": "https://www.adventureworks.com"
     },
     "jobTitle": "Senior Product Branding Manager II",
-    "role": "consulting",
+    "role": "consulting"
   },
   "isCurrent": true
 }
@@ -183,3 +183,5 @@ Content-type: application/json
   "isCurrent": true
 }
 ```
+
+
