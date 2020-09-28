@@ -11,7 +11,8 @@ ms.prod: "sharepoint"
 
 Namespace: microsoft.graph
 
-The **documentSet** resource contains metadata about document set settings.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Contains metadata about document set settings.
 
 ## Properties
 

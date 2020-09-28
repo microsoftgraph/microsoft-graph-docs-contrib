@@ -53,43 +53,15 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ### Sites and lists
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added content type apis to do CRUD operations on [content type](/graph/api/resources/contenttype?view=graph-rest-beta) and its [columns](/graph/api/resources/columnDefinition?view=graph-rest-beta)).  |
-|Addition|beta|Added the **columnValidation** property to [columnDefinition](https://docs.microsoft.com/graph/api/resources/columnDefinition?view=graph-rest-beta) resource|
-|Addition|beta|Added the **contentApprovalStatus** property to [columnDefinition](https://docs.microsoft.com/graph/api/resources/columnDefinition?view=graph-rest-beta) resource|
-|Addition|beta|Added the **hyperlinkOrPicture** property to [columnDefinition](https://docs.microsoft.com/graph/api/resources/columnDefinition?view=graph-rest-beta) resource|
-|Addition|beta|Added the **isDeletable** property to [columnDefinition](https://docs.microsoft.com/graph/api/resources/columnDefinition?view=graph-rest-beta) resource|
-|Addition|beta|Added the **isReorderable** property to [columnDefinition](https://docs.microsoft.com/graph/api/resources/columnDefinition?view=graph-rest-beta) resource|
-|Addition|beta|Added the **isSealed** property to [columnDefinition](https://docs.microsoft.com/graph/api/resources/columnDefinition?view=graph-rest-beta) resource|
-|Addition|beta|Added the **propagateChanges** property to [columnDefinition](https://docs.microsoft.com/graph/api/resources/columnDefinition?view=graph-rest-beta) resource|
-|Addition|beta|Added the **term** property to [columnDefinition](https://docs.microsoft.com/graph/api/resources/columnDefinition?view=graph-rest-beta) resource|
-|Addition|beta|Added the **thumbnail** property to [columnDefinition](https://docs.microsoft.com/graph/api/resources/columnDefinition?view=graph-rest-beta) resource|
-|Addition|beta|Added the **type** property to [columnDefinition](https://docs.microsoft.com/graph/api/resources/columnDefinition?view=graph-rest-beta) resource|
-|Addition|beta|Added the **associatedHubUrls** property to [contentType](https://docs.microsoft.com/graph/api/resources/contentType?view=graph-rest-beta) resource|
-|Addition|beta|Added the **documentSet** property to [contentType](https://docs.microsoft.com/graph/api/resources/contentType?view=graph-rest-beta) resource|
-|Addition|beta|Added the **documentTemplate** property to [contentType](https://docs.microsoft.com/graph/api/resources/contentType?view=graph-rest-beta) resource|
-|Addition|beta|Added the **isBuiltIn** property to [contentType](https://docs.microsoft.com/graph/api/resources/contentType?view=graph-rest-beta) resource|
-|Addition|beta|Added the **propagateChanges** property to [contentType](https://docs.microsoft.com/graph/api/resources/contentType?view=graph-rest-beta) resource|
-|Addition|beta|Added the **base** relationship to [contentType](https://docs.microsoft.com/graph/api/resources/contentType?view=graph-rest-beta) resource|
-|Addition|beta|Added the **baseTypes** relationship to [contentType](https://docs.microsoft.com/graph/api/resources/contentType?view=graph-rest-beta) resource|
-|Addition|beta|Added the **columnPositions** relationship to [contentType](https://docs.microsoft.com/graph/api/resources/contentType?view=graph-rest-beta) resource|
-|Addition|beta|Added the **columns** relationship to [contentType](https://docs.microsoft.com/graph/api/resources/contentType?view=graph-rest-beta) resource|
+| Addition | beta | Added content type apis to perform CRUD operations on [content type](/graph/api/resources/contenttype?view=graph-rest-beta) and its [columns](/graph/api/resources/columnDefinition?view=graph-rest-beta)).  |
+|Addition|beta|Added **columnValidation**,  **contentApprovalStatus**, **hyperlinkOrPicture**, **isDeletable**, **isReorderable**, **isSealed**, **propagateChanges**, **term**, **thumbnail**, **type** properties to [columnDefinition](https://docs.microsoft.com/graph/api/resources/columnDefinition?view=graph-rest-beta) resource|
+|Addition|beta|Added **associatedHubUrls**, **columnPositions**, **documentSet**, **documentTemplate**, **isBuiltIn**, **propagateChanges** properties to [contentType](https://docs.microsoft.com/graph/api/resources/contentType?view=graph-rest-beta) resource|
+|Addition|beta|Added **base**, **baseTypes**, **columns** relationships to [contentType](https://docs.microsoft.com/graph/api/resources/contentType?view=graph-rest-beta) resource|
 |Addition|beta|Added the **externalColumns** relationship to [site](https://docs.microsoft.com/graph/api/resources/site?view=graph-rest-beta) resource|
-|Addition|beta|Added the [columnValidation](https://docs.microsoft.com/graph/api/resources/columnValidation?view=graph-rest-beta) resource type|
-|Addition|beta|Added the [contentApprovalStatusColumn](https://docs.microsoft.com/graph/api/resources/contentApprovalStatusColumn?view=graph-rest-beta) resource type|
-|Addition|beta|Added the [displayNameLocalization](https://docs.microsoft.com/graph/api/resources/displayNameLocalization?view=graph-rest-beta) resource type|
-|Addition|beta|Added the [documentSet](https://docs.microsoft.com/graph/api/resources/documentSet?view=graph-rest-beta) resource type|
-|Addition|beta|Added the [documentSetContent](https://docs.microsoft.com/graph/api/resources/documentSetContent?view=graph-rest-beta) resource type|
-|Addition|beta|Added the [hyperlinkOrPictureColumn](https://docs.microsoft.com/graph/api/resources/hyperlinkOrPictureColumn?view=graph-rest-beta) resource type|
-|Addition|beta|Added the [termColumn](https://docs.microsoft.com/graph/api/resources/termColumn?view=graph-rest-beta) resource type|
-|Addition|beta|Added the [thumbnailColumn](https://docs.microsoft.com/graph/api/resources/thumbnailColumn?view=graph-rest-beta) resource type|
 |Addition|beta|Added the **columnTypes** enumeration type|
-|Addition|beta|Added the [addCopy](https://docs.microsoft.com/graph/api/contentType-addCopy?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/graph/api/resources/contentType?view=graph-rest-beta) resource|
-|Addition|beta|Added the [associateWithHubSites](https://docs.microsoft.com/graph/api/contentType-associateWithHubSites?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/graph/api/resources/contentType?view=graph-rest-beta) resource|
-|Addition|beta|Added the [copyToDefaultContentLocation](https://docs.microsoft.com/graph/api/contentType-copyToDefaultContentLocation?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/graph/api/resources/contentType?view=graph-rest-beta) resource|
-|Addition|beta|Added the [publish](https://docs.microsoft.com/graph/api/contentType-publish?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/graph/api/resources/contentType?view=graph-rest-beta) resource|
-|Addition|beta|Added the [unpublish](https://docs.microsoft.com/graph/api/contentType-unpublish?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/graph/api/resources/contentType?view=graph-rest-beta) resource|
+|Addition|beta|Added the [addCopy](https://docs.microsoft.com/graph/api/contentType-addCopy?view=graph-rest-beta), [associateWithHubSites](https://docs.microsoft.com/graph/api/contentType-associateWithHubSites?view=graph-rest-beta), [copyToDefaultContentLocation](https://docs.microsoft.com/graph/api/contentType-copyToDefaultContentLocation?view=graph-rest-beta), [publish](https://docs.microsoft.com/graph/api/contentType-publish?view=graph-rest-beta), [unpublish](https://docs.microsoft.com/graph/api/contentType-unpublish?view=graph-rest-beta), [isPublished](https://docs.microsoft.com/graph/api/contentType-isPublished?view=graph-rest-beta)  methods to the [contentType](https://docs.microsoft.com/graph/api/resources/contentType?view=graph-rest-beta) resource|
 |Addition|beta|Added the [getApplicableContentTypesForList](https://docs.microsoft.com/graph/api/site-getApplicableContentTypesForList?view=graph-rest-beta) method to the [site](https://docs.microsoft.com/graph/api/resources/site?view=graph-rest-beta) resource|
-|Addition|beta|Added the [isPublished](https://docs.microsoft.com/graph/api/contentType-isPublished?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/graph/api/resources/contentType?view=graph-rest-beta) resource|
+|Addition|beta|Added the  resource|
 
 ## August 2020
 

@@ -10,7 +10,8 @@ ms.prod: "sharepoint"
 
 Namespace: microsoft.graph
 
-The **termColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column's values contains taxonomy data.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Indicates that the column's values contains taxonomy data.
 
 ## Properties
 

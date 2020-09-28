@@ -1,13 +1,13 @@
 ---
 author: swapnil1993
-title: "Update a content type column"
+title: "Update columnDefinition"
 description: "Update a content type column"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
 
-# Update a content type column
+# Update columnDefinition
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -21,13 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
   
 
 |Permission type | Permissions (from least to most privileged) |
-
 |:--------------------|:---------------------------------------------------------|
-
 |Delegated (work or school account) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
-
 |Delegated (personal Microsoft account) | Not supported. |
-
 |Application | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 
   
@@ -95,36 +91,21 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-
-    "description": "",
-
-    "displayName": "Custom Column",
-
-    "enforceUniqueValues": false,
-
-    "hidden": false,
-
-    "id": "11dfef35-e2f7-4f17-82b0-6fba34445103",
-
-    "indexed": false,
-
-    "name": "Custom Column",
-
-    "readOnly": false,
-
-    "required": true,
-
-    "text": {
-
+  "description": "",
+  "displayName": "Custom Column",
+  "enforceUniqueValues": false,
+  "hidden": false,
+  "id": "11dfef35-e2f7-4f17-82b0-6fba34445103",
+  "indexed": false,
+  "name": "Custom Column",
+  "readOnly": false,
+  "required": true,
+  "text": {
     "allowMultipleLines": false,
-
     "appendChangesToExistingText": false,
-
     "linesForEditing": 0,
-
     "maxLength": 255
-
-    }
+  }
 }
 
 ```

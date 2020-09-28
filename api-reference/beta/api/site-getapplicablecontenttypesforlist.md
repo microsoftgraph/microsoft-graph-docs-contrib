@@ -36,19 +36,16 @@ GET /sites/{siteId}/getApplicableContentTypesForList
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
+## Request body
+Do not supply a request body for this method.
+
 ## Function Parameters
 In the request URL, provide the following query parameters with values.
 The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |-|-|-|-|
-|listId| string | GUID of the list for which the applicable content types need to be fetched. Required. |
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
-To list only custom content types use $filter=isBuiltin eq false.
+|listId| String | GUID of the list for which the applicable content types need to be fetched. Required. |
 
 ## Response
 

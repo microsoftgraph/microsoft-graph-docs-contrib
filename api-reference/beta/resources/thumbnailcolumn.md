@@ -9,7 +9,7 @@ ms.prod: "sharepoint"
 # thumbnailColumn resource type
 
 Namespace: microsoft.graph
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 The **thumbnailColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column contains information about thumbnail.
 
 ## Properties

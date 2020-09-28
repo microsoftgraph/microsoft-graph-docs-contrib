@@ -11,7 +11,8 @@ ms.prod: "sharepoint"
 
 Namespace: microsoft.graph
 
-The **contentApprovalStatusColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column contains information about approval status of the item.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Indicates that the column contains information about approval status of the item.
 
 ## Properties
 

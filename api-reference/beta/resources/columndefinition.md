@@ -98,9 +98,9 @@ The type-related properties (boolean, calculated, choice, currency, dateTime, lo
 | **validation**   |  [columnValidation][]    | This column stores validation formula and message for the column. 
 | **hyperlinkOrPicture**  | [hyperlinkOrPictureColumn][] | This column stores hyperlink or picture values. 
 | **term**     | [termColumn][] | This column stores taxonomy terms.
-| **sourceContentType**   |[contentTypeInfo][]  | ContentType from which this column is inherited from. Used only while fetching contentTypes columns | No | No
-| **thumbnail**           |[thumbnailColumn][]      | This column stores thumbnail values. | No | No
-| **type**         | columnTypes  | For site columns, the type of column. | No | Yes
+| **sourceContentType**   |[contentTypeInfo][]  | ContentType from which this column is inherited from. Used only while fetching contentTypes columns.
+| **thumbnail**           |[thumbnailColumn][]      | This column stores thumbnail values.
+| **type**         | columnTypes  | For site columns, the type of column. Read-only
 | **contentApprovalStatus**| [contentApprovalStatusColumn][]     | This column stores content approval status.
 
 

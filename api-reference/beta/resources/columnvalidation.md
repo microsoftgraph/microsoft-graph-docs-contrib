@@ -10,8 +10,8 @@ ms.prod: "sharepoint"
 # columnValidation resource type
 
 Namespace: microsoft.graph
-
-The **columnValidation** on a [columnDefinition](columnDefinition.md) resource contains data for validating the column.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Contains metadata for validating the column.
 
 
 ## Properties

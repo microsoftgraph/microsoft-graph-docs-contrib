@@ -11673,7 +11673,7 @@ items:
           href: api/site-unfollow.md
         - name: List followed sites
           href: api/sites-list-followed.md
-        - name: Get Applicable Content Types For List
+        - name: Get applicable content types for list
           href: api/site-getapplicablecontenttypesforlist.md
       - name: Lists
         href: resources/list.md
@@ -11773,12 +11773,12 @@ items:
       - name: Content Types
         href: resources/contentType.md
         items:
-        - name: Get
-          href: api/contenttype-get.md
         - name: List
           href: api/contenttype-list.md
         - name: Create
-          href: api/contenttype-create.md
+          href: api/contenttype-post.md
+        - name: Get
+          href: api/contenttype-get.md
         - name: Update
           href: api/contenttype-update.md
         - name: Delete
@@ -11791,18 +11791,20 @@ items:
           href: api/contenttype-ispublished.md
         - name: Add Copy
           href: api/contenttype-addcopy.md
-        - name: Copy To Default Content Location
+        - name: Copy to default content location
           href: api/contenttype-copytodefaultcontentlocation.md
-        - name: Associate With Hub Sites
+        - name: Associate with hub sites
           href: api/contenttype-associatewithhubsites.md
-        - name: Get Content Type Column
-          href: api/contenttype-get-columns.md
-        - name: Update Content Type Column
-          href: api/contenttype-update-columns.md
-        - name: Delete Content Type Column
-          href: api/contenttype-delete-columns.md
-        - name: List Content Type Columns
+        - name: List content type columns
           href: api/contenttype-list-columns.md
+        - name: Create content type column
+          href: api/contenttype-post-columns.md
+        - name: Get content type column
+          href: api/contenttype-get-columns.md
+        - name: Update content type column
+          href: api/contenttype-update-columns.md
+        - name: Delete content type column
+          href: api/contenttype-delete-columns.md
     - name: Tasks and plans
       displayName: Planner
       items:

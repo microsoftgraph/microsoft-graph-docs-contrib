@@ -10,7 +10,8 @@ ms.prod: "sharepoint"
 
 Namespace: microsoft.graph
 
-The **hyperlinkOrPictureColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column contains URL data which can be an achortag or an image that serves as a hyperlink.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Indicates that the column contains URL data which can be an achortag or an image that serves as a hyperlink.
 
 
 ## Properties

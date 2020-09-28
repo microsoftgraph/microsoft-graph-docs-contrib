@@ -38,6 +38,9 @@ GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
+## Response
+If successful, this call returns a `200 OK` response and a boolean value specifying the publishing state of the content type.
+
 ## Function parameters
 Do not supply a request body for this method.
 

@@ -11,7 +11,8 @@ ms.prod: "sharepoint"
 
 Namespace: microsoft.graph
 
-The **documentSetContent** resource contains metadata about a file present in default content location of a content type.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Contains metadata about a file present in default content location of a content type.
 
 ## Properties
 
