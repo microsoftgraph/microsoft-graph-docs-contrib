@@ -2115,7 +2115,7 @@ With these permissions, all authentication methods can be read and managed on a 
 * Second factor of multi-factor authentication/MFA (phone numbers)
 * Self-Service Password Reset/SSPR (email address)
 
-## Authentication methods policies permissions ([preview](#permissions-availability-status))
+## Authentication methods policy permissions ([preview](#permissions-availability-status))
 
 #### Delegated permissions
 
