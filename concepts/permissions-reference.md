@@ -2115,6 +2115,31 @@ With these permissions, all authentication methods can be read and managed on a 
 * Second factor of multi-factor authentication/MFA (phone numbers)
 * Self-Service Password Reset/SSPR (email address)
 
+## Authentication methods policies permissions ([preview](#permissions-availability-status))
+
+#### Delegated permissions
+
+|Permission                              |Display String                        |Description        |Admin Consent Required | Microsoft Account supported |
+|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|:----------------------------|
+|_Policy.ReadWrite.AuthenticationMethod_ (preview)        |Read and write all authentication methods policies.       |Allows the app to read and write all authentication methods policies on an Azure AD tenant. Additionally, the signed-in user must have the Global Administrator role assigned. |Yes|No|
+
+#### Application permissions
+
+|Permission                              |Display String                        |Description        |Admin Consent Required |
+|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|
+|_Policy.ReadWrite.AuthenticationMethod_ (private preview)   |Read and write all authentication methods policies.    |Allows the app to read and write all authentication methods policies on an Azure AD tenant. Additionally, the signed-in user must have the Global Administrator role assigned. |Yes|
+
+
+### Remarks
+
+User authentication method permissions are used to manage authentication methods on users. With these permissions, a delegated user or application can register new authentication methods on a user, read the authentication methods the user already has registered, update those authentication methods, and remove them from the user.
+
+With these permissions, all authentication methods can be read and managed on a user. This includes methods used for:
+
+* Primary authentication (password)
+* Second factor of multi-factor authentication/MFA (phone numbers)
+* Self-Service Password Reset/SSPR (email address)
+
 ## Permission scenarios
 
 This section shows some common scenarios that target [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph/api/resources/group?view=graph-rest-1.0) resources in an organization. The tables show the permissions that an app needs to be able to perform specific operations required by the scenario. Note that in some cases the ability of the app to perform specific operations will depend on whether a permission is an application or delegated permission. In the case of delegated permissions, the app's effective permissions will also depend on the privileges of the signed-in user within the organization. For more information, see  [Delegated permissions, Application permissions, and effective permissions](auth/auth-concepts.md#microsoft-graph-permissions).
