@@ -24,3 +24,4 @@ Describes which part of a [team](../resources/team.md) should be cloned.
 |settings|4|Copies all settings within the team, along with key group settings.|
 |channels|8|copies the channel structure (but not the messages in the channel).|
 |members|16|copies the members and owners of the team.|
+
