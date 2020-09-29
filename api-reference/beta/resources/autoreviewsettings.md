@@ -9,6 +9,10 @@ doc_type: resourcePageType
 
 # autoReviewSettings resource type
 
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 The **autoReviewSettings** resource type is used in the [accessReviewSettings](accessreviewsettings.md) resource and specifies the behavior for when an access review completes.    
 
 ## Properties

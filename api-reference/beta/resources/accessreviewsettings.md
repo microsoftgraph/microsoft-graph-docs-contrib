@@ -9,6 +9,10 @@ doc_type: resourcePageType
 
 # accessReviewSettings resource type
 
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Provides additional settings when creating an access review, to control the feature behavior when starting an access review.
 
 ## Properties

@@ -9,6 +9,10 @@ doc_type: resourcePageType
 
 # accessReviewRecurrenceSettings resource type
 
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 The **accessReviewRecurrenceSettings** resource type is used in the [accessReviewSettings](accessreviewsettings.md) resource and specifies that the access review recurs at regular intervals.
 
 ## Properties
