@@ -137,8 +137,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [b2cUserFlows](/graph/api/resources/b2cuserflows?view=graph-rest-beta) entity for managing user flows in an Azure Active Directory B2C tenant. |
-| Addition | beta | Added the [b2xUserFlows](/graph/api/resources/b2xuserflows?view=graph-rest-beta) entity for managing self-service sign up user flows in an Azure Active Directory tenant. |
+| Addition | beta | Added the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) entity for managing user flows in an Azure Active Directory B2C tenant. |
+| Addition | beta | Added the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) entity for managing self-service sign up user flows in an Azure Active Directory tenant. |
 
 ### People and workplace intelligence | Profile
 
