@@ -1,7 +1,7 @@
 ---
 title: "Create team"
 description: "Create a new team."
-author: "lajanuar"
+author: "laujan"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
