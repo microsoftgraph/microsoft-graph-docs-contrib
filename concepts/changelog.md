@@ -13,17 +13,31 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## September 2020
 
-### Cloud communications
+### Calendar
 
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added the **transactionId** property to the [event](/graph/api/resources/event?view=graph-rest-1.0) entity.
+
+### Change notifications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added [chatMessage](/graph/api/resources/presence) to the resources supported for [change notifications](/graph/webhooks). |
+
+### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **lobbyBypassSettings**, **isEntryExitAnnounced**, and **allowedPresenters** property to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) entity.|
 | Addition | beta | Added support for application permissions to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) entity and associated methods. |
+| Addition | beta | Added delete method to the [participant](/graph/api/resources/participant?view=graph-rest-beta) entity. |
+| Addition | v1.0 | Added delete method to the [participant](/graph/api/resources/participant?view=graph-rest-1.0) entity. |
 
 ### Devices and apps | Cloud printing
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
+| Addition | beta | Added the [Download printDocument binary file](/graph/api/printdocument-get-file?view=graph-rest-beta) method to download the binary file data associated with a document.  | 
 | Addition | beta | Added support for `$expand=documents` and `$filter=createdBy/userPrincipalName` query parameters in the [List printJobs](/graph/api/printer-list-jobs?view=graph-rest-beta) method. |
 
 ### Devices and apps | Corporate management
@@ -88,6 +102,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **schedule** property to [accessPackageAssignment](/graph/api/resources/accesspackageassignment?view=graph-rest-beta) and [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) in entitlement management.|
 | Addition | beta | Added the [bitlockerRecoveryKey](/graph/api/resources/bitlockerRecoveryKey?view=graph-rest-beta) resource type.|
 | Addition | beta | Added the **volumeType** enumeration type.|
+| Addition | beta | Added the **directorySizeQuota** complex type to the [organization](/graph/api/resources/organization?view=graph-rest-beta) entity. |
 
 ### Identity and access | Directory management
 
@@ -106,12 +121,29 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |:----------------|:------------|:-----------------------------------------|
 | Addition        | Beta and v1.0 | Added the **outlookM365** and **outlook2019** properties to the [getEmailAppUsageVersionsUserCounts](/graph/api/resources/emailappusageversionsusercount?view=graph-rest-beta) entity.|
 
+### Search
+
+| **Change type** | **Version** | **Description**                                                                                                             |
+|:----------------|:------------|:----------------------------------------------------------------------------------------------------------------------------|
+| Addition        | beta        | Added the **state** property to the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta) resource. |
+| Addition        | beta        | Added the [externalGroup](/graph/api/resources/externalgroup?view=graph-rest-beta) resource.                                 |
+| Addition        | beta        | Added the [externalGroupMember](/graph/api/resources/externalgroupmember?view=graph-rest-beta) resource.                     |
+| Addition        | beta | Search more types in OneDrive and SharePoint: **drive**, **list**, **listItem**, and **site**. See [more details here](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#scope-search-based-on-entity-types).|
+| Addition        | beta | Identify [selected properties](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#get-selected-properties) to return in search results.|
+| Addition        | beta | [Sort](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#sort-search-results) search results from OneDrive and SharePoint by specifying **sortProperties** in a [searchRequest](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition        | beta | [Refine results using aggregations](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#refine-results-using-aggregations) for OneDrive and SharePoint by specifying **aggregations** and **aggregationFilters** in a **searchRequest** resource.|
+| Addition        | beta | Query external data across [more than one connection](search-concept-custom-types.md).|
+| Change        | beta |Some properties in the request and response have been renamed and are deprecated.  See [more details](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#schema-change-deprecation-warning) about the deprecation.|
+
 ### Teamwork
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Addition|Beta and v1.0|Added **lastEditedDateTime** property to the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resource.|
+|Change| Beta and v1.0| Changed **lastModifiedDateTime** property in the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resource to represent the time the entity was last touched. It will always be set and never have a `null` value|
 |Addition|beta| Added the **createdDateTime** property to the [channel](/graph/api/resources/channel?view=graph-rest-beta) and [team](/graph/api/resources/team?view=graph-rest-beta) resources.|
-
+|Addition|beta and v1.0| Added the [Update chatMessage](/graph/api/chatmessage-update) method to the [chatMessage](/graph/api/resources/chatmessage) resource.|
+|Addition|v1.0| Added the [List members](/graph/api/team-list-members?view=graph-rest-1.0&preserve-view=true), [Add members](/graph/api/team-post-members?view=graph-rest-1.0&preserve-view=true), and [Remove members](/graph/api/team-delete-members?view=graph-rest-1.0&preserve-view=true) methods.|
 
 ### Users
 
@@ -236,7 +268,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|v1.0|Added support for [creating a team](/graph/api/team-post?view=graph-rest-1.0) directly (without first creating a group), which also enables creating class teams.|
 |Addition | v1.0 | Added the [members](/graph/api/team-post-members?view=graph-rest-1.0) navigation property to the [team](/graph/api/resources/team?view=graph-rest-1.0) resource type, enabling members to be added with increased reliability and lower latency.|
 
-### To-do tasks 
+### To-do tasks
 
 | **Change type** | **Version** | **Description** |
 |:---|:---|:---|
