@@ -21,7 +21,7 @@ Represents a company's used and total directory quota.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
