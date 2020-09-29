@@ -125,12 +125,7 @@ Content-type: application/json
                 "startDate": "2020-09-15",
                 "endDate": "9999-12-31"
             }
-        },
-        "applyActions": [
-            {
-                "@odata.type": "#microsoft.graph.removeAccessApplyAction"
-            }
-        ]
+        }
     }
 }
 ```
