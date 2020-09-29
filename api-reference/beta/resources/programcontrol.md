@@ -23,6 +23,8 @@ In the Azure AD [access reviews](accessreviews-root.md) feature, the program con
 | [Create programControl](../api/programcontrol-create.md) |	[programControl](programcontrol.md)	|	Add a programControl to a program. |
 | [Delete programControl](../api/programcontrol-delete.md) | None. | Remove a programControl from a program. |
 | [List programControls](../api/programcontrol-list.md) | [programControl](programcontrol.md) collection | List controls across all programs in the tenant. |
+| [List programControls of a program](../api/program-listcontrols.md) | [programControl](programcontrol.md) collection |	Get a collection of the controls of a program. |
+| [List programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) collection| List program control types. |
 
 ## Properties
 
@@ -43,13 +45,6 @@ In the Azure AD [access reviews](accessreviews-root.md) feature, the program con
 | Relationship | Type	| Description |
 |:------------ |:---- |:----------- |
 | program | [program](program.md) | The program this control is part of. |
-
-## See also
-
-| Method | Return Type | Description |
-|:------ |:----------- |:----------- |
-| [List programControls of a program](../api/program-listcontrols.md) | [programControl](programcontrol.md) collection |	Get a collection of the controls of a program. |
-| [List programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) collection| List program control types. |
 
 ## JSON representation
 

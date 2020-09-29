@@ -48,7 +48,7 @@ Represents an Azure AD [access review](accessreviews-root.md).
 | reviewerType | String | The relationship type of reviewer to the target object, one of `self`, `delegated` or `entityOwners`. Required on create. | 
 | createdBy | [userIdentity](useridentity.md) | The user who created this review. |
 | reviewedEntity | [identity](identity.md) | The object for which the access reviews is reviewing the access rights assignments. This can be the group for the review of memberships of users in a group, or the app for a review of assignments of users to an application. Required on create. | 
-| settings | [accessReviewSettings](accessreviewsettings) | The settings of an accessReview, see type definition below. |
+| settings | [accessReviewSettings](accessreviewsettings.md) | The settings of an accessReview, see type definition below. |
 
 ## Relationships
 

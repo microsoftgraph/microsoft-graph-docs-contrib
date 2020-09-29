@@ -25,7 +25,7 @@ Provides additional settings when creating an access review, to control the feat
 | activityDurationInDays | Int64 | The number of days of user activities to show to reviewers. |
 | autoReviewEnabled | Boolean | Indicates whether a decision should be set if the reviewer did not supply one. For use when auto-apply is enabled. If you don't want to have a review decision recorded unless the reviewer makes an explicit choice, set it to `false`.|
 | autoReviewSettings | [autoReviewSettings](autoreviewsettings.md) | Detailed settings for how the feature should set the review decision. For use when auto-apply is enabled. |
-| recurrenceSettings | [accessReviewRecurrenceSettings](accessreviewrecurrencesettings) | Detailed settings for recurrence. |
+| recurrenceSettings | [accessReviewRecurrenceSettings](accessreviewrecurrencesettings.md) | Detailed settings for recurrence. |
 | autoApplyReviewResultsEnabled | Boolean | Indicates whether the auto-apply capability, to automatically change the target object access resource, is enabled.  If not enabled, a user must, after the review completes, apply the access review. |
 | accessRecommendationsEnabled | Boolean | Indicates whether showing recommendations to reviewers is enabled. |
 
