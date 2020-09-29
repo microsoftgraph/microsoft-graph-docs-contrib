@@ -35,10 +35,6 @@ The **accessReviewReviewerScope** defines who will review instances of an [acces
 None.
 
 ## JSON representation
-
-Here is a JSON representation of the resource.
-
-## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

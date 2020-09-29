@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstanceDecisionItemServicePrincipalTarget resource type"
-description: "In the Azure AD access reviews feature, the `accessReviewInstanceDecisionItemTarget` represents the target of a review as either a user target or a service principal target."
+description: "In the Azure AD access reviews feature, the `accessReviewInstanceDecisionItemServicePrincipalTarget` represents the target of a review as a service principal target."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
