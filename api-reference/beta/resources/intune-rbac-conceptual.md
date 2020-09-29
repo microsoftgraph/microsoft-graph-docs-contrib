@@ -31,3 +31,5 @@ The following Graph resources are available to manage role-based access control 
 - [Role permission](intune-rbac-rolepermission.md)
 - [Role scope tag](intune-rbac-rolescopetag.md)
 - [Role scope tag auto assignment](intune-rbac-rolescopetagautoassignment.md)
+
+

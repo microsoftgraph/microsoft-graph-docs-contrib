@@ -55,3 +55,4 @@ The following To Do API resources support delta query:
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+
