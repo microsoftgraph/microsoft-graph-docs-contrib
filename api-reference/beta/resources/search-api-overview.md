@@ -93,7 +93,7 @@ The **listItem** and **externalItem** entities are the only supported entities t
 
 If the **fields** specified in the request are not present in the schema, they will not be returned in the response. Invalid fields in the request are silently ignored.
 
-If you do not specify any **fields** in the request, then you will get the default set of properties for all types. For extended properties, **listItem** and **externalItem** behave differently when no **fields** are passed in the request :
+If you do not specify any **fields** in the request, then you will get the default set of properties for all types. For extended properties, **listItem** and **externalItem** behave differently when no **fields** are passed in the request:
 
 - **listItem** will not return any field.
 - **externalItem** will return all the fields marked with the *retrievable* attribute in the Graph Connector schema for that particular connection.
@@ -109,14 +109,14 @@ Depending on the entity type, the searchable properties vary. For details, see:
 
 ## Sort search results
 
-Search results in the response are sorted in the following default sort order :
+Search results in the response are sorted in the following default sort order:
 
 - **message** and **event** are sorted by date.
 - All SharePoint, OneDrive and connector types are sorted by relevance.
 
 The [query](../api/search-query.md) method lets you customize the search order by specifying the **sortProperties** on the `requests` parameter, which is a collection of [searchRequest](./searchrequest.md) objects. This allows you to specify a list of one or more sortable properties and the sort order.
 
-Note that sorting results is currently only supported on the following SharePoint and OneDrive types : [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md).
+Note that sorting results is currently only supported on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md).
 
 The properties on which the sort clause are applied need to be sortable in the SharePoint [search schema](https://docs.microsoft.com/sharepoint/manage-search-schema). If the property specified in the request is not sortable or does not exist, the response will return an error, `HTTP 400 Bad Request`. Note that you cannot specifiy to sort documents by relevance using [sortProperty](sortproperty.md).
 
@@ -142,7 +142,7 @@ See [refine search results](/graph/search-concept-aggregation) for examples that
 
 The search API returns error responses as defined by [OData error object definition](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), each of which is a JSON object containing a code and a message.
 
-<!---TODOSEARCHAPI Describe the know errors : bad requests.--->
+<!---TODOSEARCHAPI Describe the know errors: bad requests.--->
 
 ## Known limitations
 
@@ -150,7 +150,7 @@ The search API has the following limitations:
 
 - The **query** method is defined to allow passing a collection of one or more **searchRequest** instances at once. However, the service currently supports only a single [searchRequest](./searchrequest.md) at a time.
 
-- The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. However, currently the only supported combination is for Sharepoint and OneDrive entityTypes : **driveItem**, **drive**, **site**, **list**, **listItem**.
+- The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. However, currently the only supported combination is for Sharepoint and OneDrive entityTypes: **driveItem**, **drive**, **site**, **list**, **listItem**.
 Any combinations involving **message**, **event**, Sharepoint and OneDrive types , or **externalItem** are currently not supported.  
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
