@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # incomingContext resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The context associated with an incoming call.
@@ -56,3 +58,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

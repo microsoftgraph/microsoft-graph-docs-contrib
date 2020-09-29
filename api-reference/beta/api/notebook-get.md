@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get notebook
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [notebook](../resources/notebook.md) object.
@@ -116,3 +118,5 @@ Content-length: 284
   ]
 }
 -->
+
+

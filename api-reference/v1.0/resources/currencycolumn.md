@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # CurrencyColumn resource type
 
+Namespace: microsoft.graph
+
 The **currencyColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values represent currency.
 
 ## JSON representation
@@ -37,3 +39,4 @@ Here is a JSON representation of a **currencyColumn** resource.
   "section": "documentation",
   "tocPath": "Resources/CurrencyColumn"
 } -->
+

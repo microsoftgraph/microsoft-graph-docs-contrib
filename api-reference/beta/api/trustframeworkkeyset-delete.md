@@ -2,12 +2,14 @@
 title: "Delete trustFrameworkKeySet"
 description: "Delete a **trustFrameworkKeySet** object."
 localization_priority: Normal
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # Delete trustFrameworkKeySet
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -97,3 +99,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

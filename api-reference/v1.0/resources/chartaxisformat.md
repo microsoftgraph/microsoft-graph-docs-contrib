@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartAxisFormat resource type
 
+Namespace: microsoft.graph
+
 Encapsulates the format properties for the chart axis.
 
 
@@ -52,3 +54,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

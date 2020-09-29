@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create plannerBucket
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to create a new **plannerBucket**.
@@ -110,3 +112,5 @@ Content-length: 145
   ]
 }
 -->
+
+

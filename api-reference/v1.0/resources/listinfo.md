@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # ListInfo resource
 
+Namespace: microsoft.graph
+
 The **listInfo** complex type provides additional information about a [list][].
 
 [list]: list.md
@@ -61,3 +63,4 @@ For developers familiar with SharePoint's CSOM APIs, the `template` value corres
   ],
   "tocPath": ""
 }-->
+

@@ -1,13 +1,15 @@
 ---
 title: "Delete messageRule"
 description: "Delete the specified messageRule object."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Delete messageRule
+
+Namespace: microsoft.graph
 
 
 Delete the specified [messageRule](../resources/messagerule.md) object.
@@ -93,3 +95,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

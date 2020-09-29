@@ -1,13 +1,15 @@
 ---
 title: "Update iosManagedAppProtection"
 description: "Update the properties of a iosManagedAppProtection object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Update iosManagedAppProtection
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -260,6 +262,7 @@ Content-Length: 2795
   "customBrowserProtocol": "Custom Browser Protocol value"
 }
 ```
+
 
 
 

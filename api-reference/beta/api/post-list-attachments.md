@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List attachments
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [attachment](../resources/attachment.md) objects attached to a post.
@@ -122,3 +124,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

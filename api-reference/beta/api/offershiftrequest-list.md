@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List offerShiftRequest
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of all [offerShiftRequest](../resources/offershiftrequest.md) objects in a team.
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/schedule/offerShiftRequests
+GET /teams/{teamId}/schedule/offerShiftRequests
 ```
 
 ## Optional query parameters
@@ -64,7 +66,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/schedule/offerShiftRequests
+GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/offerShiftRequests
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-offershiftrequest-csharp-snippets.md)]
@@ -114,3 +116,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

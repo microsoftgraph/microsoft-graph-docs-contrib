@@ -4,10 +4,12 @@ description: "Represents an individual template setting definition, including th
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "dkershaw10"
 ---
 
 # settingTemplateValue resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,3 +58,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

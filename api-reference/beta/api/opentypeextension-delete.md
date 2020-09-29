@@ -4,10 +4,12 @@ description: "Delete an open extension (openTypeExtension object) from the speci
 localization_priority: Normal
 author: "dkershaw10"
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "extensions"
 ---
 
 # Delete open extension
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,9 +27,11 @@ Depending on the resource you're deleting the extension from and the permission 
 | [group event](../resources/event.md) | Group.ReadWrite.All | Not supported | Not supported |
 | [group post](../resources/post.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
-| [organization](../resources/organization.md) | Directory.AccessAsUser.All | Not supported | Not supported |
+| [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [user](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
+| [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
+| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## HTTP request
 
@@ -46,6 +50,8 @@ DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
 DELETE /organization/{Id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
+DELETE /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
+DELETE /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. 
@@ -128,3 +134,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

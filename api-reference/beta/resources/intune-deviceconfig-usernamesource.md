@@ -1,13 +1,15 @@
 ---
 title: "usernameSource enum type"
 description: "Username source."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # usernameSource enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,6 +23,9 @@ Username source.
 |userPrincipalName|0|User principal name.|
 |primarySmtpAddress|1|Primary SMTP address.|
 |samAccountName|2|The user sam account name.|
+
+
+
 
 
 

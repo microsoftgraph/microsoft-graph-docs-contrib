@@ -1,13 +1,15 @@
 ---
 title: "Send mail"
 description: "Send the message specified in the request body. The message is saved in the Sent Items folder by default."
-author: "dkershaw10"
+author: "svpsiva"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Send mail
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -327,3 +329,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

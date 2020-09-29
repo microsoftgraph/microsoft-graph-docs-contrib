@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List schools
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of schools in which the class is taught.
@@ -142,3 +144,5 @@ Content-length: 892
   ]
 }
 -->
+
+

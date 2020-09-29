@@ -2,12 +2,14 @@
 title: "group: checkMemberObjects"
 description: "Check for membership in a list of groups or directory roles for the specified group object."
 localization_priority: Normal
-author: "davidmu1"
+author: "yyuank"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # group: checkMemberObjects
+
+Namespace: microsoft.graph
 
 Check for membership in a list of groups or directory roles for the specified group. This method is transitive.
 
@@ -128,3 +130,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

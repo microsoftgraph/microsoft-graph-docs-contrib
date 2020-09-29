@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List classes
 
+Namespace: microsoft.graph
+
 Retrieve a list of all class objects. 
 
 ## Permissions
@@ -117,3 +119,4 @@ Content-length: 277
   "suppressions": [
   ]
 }-->
+

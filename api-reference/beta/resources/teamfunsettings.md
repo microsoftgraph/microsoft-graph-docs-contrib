@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamFunSettings resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Settings to configure use of Giphy, memes, and stickers in the [team](team.md).
@@ -51,3 +53,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Update countriesRegions
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of a country/region object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -75,3 +80,5 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-16T15:22:31.753Z"
 }
 ```
+
+

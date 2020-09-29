@@ -1,13 +1,15 @@
 ---
 title: "roleAssignment resource type"
 description: "The Role Assignment resource. Role assignments tie together a role definition with members and scopes. There can be one or more role assignments per role. This applies to custom and built-in roles."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # roleAssignment resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -62,6 +64,9 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+
 
 
 

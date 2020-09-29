@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Remove educationClass
 
+Namespace: microsoft.graph
+
 Delete a class from a school.
 
 ## Permissions
@@ -89,3 +91,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

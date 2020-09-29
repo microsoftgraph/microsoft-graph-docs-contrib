@@ -2,12 +2,14 @@
 title: "claimsMappingPolicy resource type"
 description: "Represents a policy that can control the lifetime of an access token issued by Azure Active Directory (Azure AD)."
 localization_priority: Normal
-author: "davidmu1"
+author: "paulgarn"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
 # claimsMappingPolicy resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,6 +33,9 @@ Inherits from [stsPolicy](stsPolicy.md).
 | [Update claimsMappingPolicy](../api/claimsmappingpolicy-update.md) | None | Update a claimsMappingPolicy object. |
 | [Delete claimsMappingPolicy](../api/claimsmappingpolicy-delete.md) | None | Delete a claimsMappingPolicy object. |
 | [List appliesTo](../api/claimsmappingpolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
+| [Assign claimsMappingPolicy](../api/serviceprincipal-post-claimsmappingpolicies.md) | None | Assign a claimsMappingPolicy to a [servicePrincipal](serviceprincipal.md) object. |
+| [List assigned claimsMappingPolicy](../api/serviceprincipal-list-claimsmappingpolicies.md) | [claimsMappingPolicy](claimsmappingpolicy.md) collection | List the claimsMappingPolicy objects that are assigned to a [servicePrincipal](serviceprincipal.md) object. |
+| [Remove claimsMappingPolicy](../api/serviceprincipal-delete-claimsmappingpolicies.md) | None | Remove a claimsMappingPolicy from a [servicePrincipal](serviceprincipal.md) object. |
 
 ## Properties
 
@@ -134,3 +139,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

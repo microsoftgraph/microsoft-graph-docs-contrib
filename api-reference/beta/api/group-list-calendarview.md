@@ -2,12 +2,14 @@
 title: "List calendarView"
 description: "Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the default calendar of a group."
 localization_priority: Normal
-author: "dkershaw10"
+author: "yyuank"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # List calendarView
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -278,3 +280,5 @@ Preference-Applied: outlook.body-content-type="text"
   ]
 }
 -->
+
+

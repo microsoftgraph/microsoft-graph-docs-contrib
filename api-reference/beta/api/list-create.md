@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Create a new list
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [list][] in a [site][].
@@ -130,3 +132,5 @@ Default properties will be returned from the actual call.
   ]
 }
 -->
+
+

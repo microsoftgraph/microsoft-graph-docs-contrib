@@ -1,13 +1,15 @@
 ---
 title: "dayOfWeek enum type"
 description: "Possible values for a weekday"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # dayOfWeek enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -25,6 +27,9 @@ Possible values for a weekday
 |thursday|4|Thursday.|
 |friday|5|Friday.|
 |saturday|6|Saturday.|
+
+
+
 
 
 

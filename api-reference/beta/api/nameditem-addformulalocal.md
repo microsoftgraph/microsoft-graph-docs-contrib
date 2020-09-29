@@ -4,10 +4,12 @@ description: "Adds a new name to the collection of the given scope using the use
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: ""
+author: "ruoyingl"
 ---
 
 # Add Named Item FormulaLocal
+
+Namespace: microsoft.graph
 Adds a new name to the collection of the given scope using the user's locale for the formula.
 
 ## Permissions
@@ -23,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/add
-POST /workbook/worksheets({id|name})/names/add
+POST /workbook/worksheets/{id|name}/names/add
 
 ```
 ## Request headers
@@ -120,3 +122,5 @@ Content-length: 109
   "suppressions": [
   ]
 }-->
+
+

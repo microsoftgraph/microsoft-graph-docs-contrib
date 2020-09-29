@@ -9,12 +9,14 @@ doc_type: resourcePageType
 
 # office365ActivationCounts resource type
 
+Namespace: microsoft.graph
+
 ## Properties
 
 | Property          | Type   | Description                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | Date   | The latest date of the content.          |
-| productType       | String | The product type, such as "Office 365 ProPlus", "Project Client", or "Visio Pro for Office 365". |
+| productType       | String | The product type, such as "Microsoft 365 ProPlus" or "Project Client". |
 | windows           | Int64  | The activation count on Windows. This number includes every activation on any Windows computer. |
 | mac               | Int64  | The activation count on Mac OS.          |
 | android           | Int64  | The activation count on an Android device.  |
@@ -41,3 +43,5 @@ The following is a JSON representation of the resource.
   "windows10Mobile": 1024
 }
 ```
+
+

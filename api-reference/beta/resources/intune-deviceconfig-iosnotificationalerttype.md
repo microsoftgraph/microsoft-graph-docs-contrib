@@ -1,13 +1,15 @@
 ---
 title: "iosNotificationAlertType enum type"
 description: "Notification Settings Alert Type."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # iosNotificationAlertType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,6 +24,9 @@ Notification Settings Alert Type.
 |banner|1|Banner.|
 |modal|2|Modal.|
 |none|3|None.|
+
+
+
 
 
 

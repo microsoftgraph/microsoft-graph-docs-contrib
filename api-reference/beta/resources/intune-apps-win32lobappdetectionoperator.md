@@ -1,13 +1,15 @@
 ---
 title: "win32LobAppDetectionOperator enum type"
 description: "Contains properties for detection operator."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # win32LobAppDetectionOperator enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -25,6 +27,9 @@ Contains properties for detection operator.
 |greaterThanOrEqual|5|Greater than or equal operator.|
 |lessThan|8|Less than operator.|
 |lessThanOrEqual|9|Less than or equal operator.|
+
+
+
 
 
 

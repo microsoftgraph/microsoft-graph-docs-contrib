@@ -1,15 +1,20 @@
 ---
 title: "Get outlookTaskFolder"
 description: "Get the properties and relationships of the specified Outlook task folder."
-author: "angelgolfer-ms"
+author: "mashriv"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Get outlookTaskFolder
+# Get outlookTaskFolder (deprecated)
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Get the properties and relationships of the specified Outlook task folder.
 ## Permissions
@@ -104,3 +109,5 @@ Content-length: 151
   ]
 }
 -->
+
+

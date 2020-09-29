@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete timeOff
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [timeOff](../resources/timeoff.md) instance from a [schedule](../resources/schedule.md).
@@ -105,3 +107,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -1,13 +1,15 @@
 ---
 title: "configurationManagerActionType enum type"
 description: "Action type on Configuration Manager client"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # configurationManagerActionType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,6 +24,9 @@ Action type on Configuration Manager client
 |refreshUserPolicy|1|Refresh user policy on Configuration Manager client|
 |wakeUpClient|2|Wake up Configuration Manager client|
 |appEvaluation|3|Evaluation application policy on Configuration Manager client|
+
+
+
 
 
 

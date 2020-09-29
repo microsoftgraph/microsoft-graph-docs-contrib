@@ -1,13 +1,15 @@
 ---
 title: "Delete calendarGroup"
 description: "Delete a calendar group other than the default calendar group."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Delete calendarGroup
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -104,3 +106,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

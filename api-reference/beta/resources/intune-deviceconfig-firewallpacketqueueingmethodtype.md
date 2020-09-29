@@ -1,13 +1,15 @@
 ---
 title: "firewallPacketQueueingMethodType enum type"
 description: "Possible values for firewallPacketQueueingMethod"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # firewallPacketQueueingMethodType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -23,6 +25,9 @@ Possible values for firewallPacketQueueingMethod
 |queueInbound|2|Queue inbound encrypted packets|
 |queueOutbound|3|Queue decrypted outbound packets for forwarding|
 |queueBoth|4|Queue both inbound and outbound packets|
+
+
+
 
 
 

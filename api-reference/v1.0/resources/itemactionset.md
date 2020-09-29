@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # itemActionSet resource type
 
+Namespace: microsoft.graph
+
 The **itemActionSet** resource provides information about the actions that made up an [activity][itemActivity] on an item.
 
 >**Note:** Item activity records are currently only available on SharePoint and OneDrive for Business.
@@ -79,3 +81,4 @@ The following actions are currently available. Because new actions might be adde
   "suppressions": []
 }
 -->
+

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # ChartLineFormat: clear
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Clear the line format of a chart element.
@@ -93,3 +95,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

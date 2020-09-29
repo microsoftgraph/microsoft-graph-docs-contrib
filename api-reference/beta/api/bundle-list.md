@@ -10,6 +10,8 @@ doc_type: apiPageType
 
 # List bundles
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of all the [bundles][bundle] in a user's drive.
@@ -199,3 +201,5 @@ The response object shown here might be shortened for readability. All the prope
   "section": "documentation",
   "tocPath": "Bundles/List"
 } -->
+
+

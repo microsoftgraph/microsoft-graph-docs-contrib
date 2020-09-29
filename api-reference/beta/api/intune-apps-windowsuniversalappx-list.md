@@ -1,13 +1,15 @@
 ---
 title: "List windowsUniversalAppXs"
 description: "List properties and relationships of the windowsUniversalAppX objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # List windowsUniversalAppXs
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1854
+Content-Length: 1919
 
 {
   "value": [
@@ -88,6 +90,8 @@ Content-Length: 1854
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
@@ -114,6 +118,7 @@ Content-Length: 1854
   ]
 }
 ```
+
 
 
 

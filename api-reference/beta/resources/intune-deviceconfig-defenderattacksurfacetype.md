@@ -1,13 +1,15 @@
 ---
 title: "defenderAttackSurfaceType enum type"
 description: "Possible values of Defender Attack Surface Reduction Rules"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # defenderAttackSurfaceType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,6 +23,9 @@ Possible values of Defender Attack Surface Reduction Rules
 |userDefined|0|Device default value, no intent.|
 |block|1|Block functionality.|
 |auditMode|2|Does not change functionality but generate logs.|
+
+
+
 
 
 

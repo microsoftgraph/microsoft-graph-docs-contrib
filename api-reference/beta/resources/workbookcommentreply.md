@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # workbookCommentReply resource type
 
+Namespace: microsoft.graph
+
 Represents a reply to an excel comment.
 
 ## Methods
@@ -62,3 +64,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

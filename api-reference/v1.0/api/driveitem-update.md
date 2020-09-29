@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Update DriveItem properties
 
+Namespace: microsoft.graph
+
 Update the metadata for a [DriveItem](../resources/driveitem.md) by ID or path.
 
 You can also use update to [move an item](driveitem-move.md) to another parent by updating the item's **parentReference** property.
@@ -121,3 +123,4 @@ See [Error Responses][error-response] for details about how errors are returned.
   "suppressions": [
   ]
 } -->
+

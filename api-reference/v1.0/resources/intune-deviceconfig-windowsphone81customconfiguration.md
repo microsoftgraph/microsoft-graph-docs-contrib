@@ -1,13 +1,15 @@
 ---
 title: "windowsPhone81CustomConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the windowsPhone81CustomConfiguration resource."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # windowsPhone81CustomConfiguration resource type
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -74,6 +76,11 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+
+
+
 
 
 

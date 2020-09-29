@@ -1,13 +1,15 @@
 ---
 title: "managementCondition resource type"
 description: "Management conditions are events that can be triggered dynamically such as geo-fences, time-fences, and network-fences."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # managementCondition resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -62,6 +64,9 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+
 
 
 

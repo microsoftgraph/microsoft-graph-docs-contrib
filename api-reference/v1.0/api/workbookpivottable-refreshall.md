@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # workbookPivotTable: refreshAll
 
+Namespace: microsoft.graph
+
 Refreshes the PivotTable within a given worksheet.
 
 ## Permissions
@@ -89,3 +91,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

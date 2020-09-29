@@ -1,13 +1,15 @@
 ---
 title: "Get device"
 description: "Get the properties and relationships of a device object."
-author: "davidmu1"
+author: "spunukol"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get device
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -113,3 +115,5 @@ Content-length: 322
   ]
 }
 -->
+
+

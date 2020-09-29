@@ -2,12 +2,14 @@
 title: "Configuring the invitation message"
 description: "The invitedUserMessageInfo object allows you to configure the invitation message."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "elisolMS"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # Configuring the invitation message
+
+Namespace: microsoft.graph
 
 The invitedUserMessageInfo object allows you to configure the [invitation](invitation.md) message.
 
@@ -40,3 +42,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

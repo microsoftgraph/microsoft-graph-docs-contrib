@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List timeOffReasons
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Get the list of [timeOffReasons](../resources/timeoffreason.md) in a [schedule](../resources/schedule.md).
 
@@ -129,3 +131,5 @@ Content-length: 401
   ]
 }
 -->
+
+

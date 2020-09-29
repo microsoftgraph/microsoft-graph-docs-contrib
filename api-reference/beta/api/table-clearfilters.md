@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Table: clearFilters
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Clears all the filters currently applied on the table.
@@ -92,3 +94,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

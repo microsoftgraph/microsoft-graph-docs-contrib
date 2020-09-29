@@ -1,13 +1,15 @@
 ---
 title: "List mobileAppRelationships"
 description: "List properties and relationships of the mobileAppRelationship objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # List mobileAppRelationships
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 248
+Content-Length: 279
 
 {
   "value": [
@@ -66,11 +68,13 @@ Content-Length: 248
       "@odata.type": "#microsoft.graph.mobileAppRelationship",
       "id": "7b4b5b14-5b14-7b4b-145b-4b7b145b4b7b",
       "targetId": "Target Id value",
-      "targetDisplayName": "Target Display Name value"
+      "targetDisplayName": "Target Display Name value",
+      "targetType": "parent"
     }
   ]
 }
 ```
+
 
 
 

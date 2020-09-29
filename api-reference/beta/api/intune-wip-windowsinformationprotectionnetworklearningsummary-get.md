@@ -1,13 +1,15 @@
 ---
 title: "Get windowsInformationProtectionNetworkLearningSummary"
 description: "Read properties and relationships of the windowsInformationProtectionNetworkLearningSummary object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get windowsInformationProtectionNetworkLearningSummary
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -72,6 +74,7 @@ Content-Length: 213
   }
 }
 ```
+
 
 
 

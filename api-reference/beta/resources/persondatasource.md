@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # personDataSource resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the sources the user data comes from, such as Directory and Outlook Contacts.
@@ -48,3 +50,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamMessagingSettings resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Settings to configure messaging and mentions in the [team](team.md).
@@ -53,3 +55,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

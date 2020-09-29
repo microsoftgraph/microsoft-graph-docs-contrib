@@ -8,6 +8,8 @@ doc_type: resourcePageType
 ---
 
 # post resource type
+
+Namespace: microsoft.graph
 Represents an individual Post item within a [conversationThread](conversationthread.md) entity.
 
 Even though you cannot explicitly create a post, doing any of the following would create a post:
@@ -147,3 +149,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

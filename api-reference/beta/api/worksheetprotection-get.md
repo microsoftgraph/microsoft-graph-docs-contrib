@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get workbookWorksheetProtection
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of workbookWorksheetProtection object.
@@ -97,3 +99,5 @@ Content-length: 23
   ]
 }
 -->
+
+

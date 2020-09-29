@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # recordOperation resource type
 
+Namespace: microsoft.graph
+
 This resource type contains information related to audio recording.
 
 ## Properties
@@ -59,3 +61,4 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+

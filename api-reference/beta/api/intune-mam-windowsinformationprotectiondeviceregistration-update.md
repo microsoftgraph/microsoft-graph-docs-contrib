@@ -1,13 +1,15 @@
 ---
 title: "Update windowsInformationProtectionDeviceRegistration"
 description: "Update the properties of a windowsInformationProtectionDeviceRegistration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Update windowsInformationProtectionDeviceRegistration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -97,6 +99,7 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
+
 
 
 

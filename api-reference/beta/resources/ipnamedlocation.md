@@ -2,12 +2,14 @@
 title: "ipNamedLocation resource type"
 description: "Represents an Azure Active Directory named location defined by IP ranges. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy."
 localization_priority: Normal
-author: "davidmu1"
+author: "videor"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # ipNamedLocation resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -73,3 +75,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

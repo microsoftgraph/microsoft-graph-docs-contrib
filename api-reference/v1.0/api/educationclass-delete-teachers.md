@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Remove teacher
 
+Namespace: microsoft.graph
+
 Remove a teacher from a class.
 
 ## Permissions
@@ -88,3 +90,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

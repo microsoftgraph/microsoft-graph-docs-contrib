@@ -1,13 +1,15 @@
 ---
 title: "Update user"
 description: "Update the properties of a user object."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
 # Update user
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | User.ReadWrite    |
-|Application | User.ReadWrite.All, Directory.ReadWrite.All |
+|Application | User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All |
 
 >[!NOTE]
 > - When updating the **passwordProfile** property, the following permission is required: Directory.AccessAsUser.All.
@@ -61,6 +63,7 @@ In the request body, supply the values for relevant fields that should be update
 |identities|[objectIdentity](../resources/objectidentity.md) collection| Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft, by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. Any update to **identities** will replace the entire collection and you must supply the userPrincipalName **signInType** identity in the collection.|
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user’s job title.|
+|mail|String|The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". Changes to this property will also update the user's **proxyAddresses** collection to include the value as a SMTP address. <br><br>Returned by default. Supports $filter.|
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created.|
 |mobilePhone|String|The primary cellular telephone number for the user.|
 |mySite|String|The URL for the user's personal site.|
@@ -84,6 +87,9 @@ In the request body, supply the values for relevant fields that should be update
 
 Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to 
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **user** instance.
+
+> [!NOTE] 
+> The follow properties cannot be updated using an application-only context: **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**.
 
 ## Response
 
@@ -208,3 +214,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -1,13 +1,15 @@
 ---
 title: "List registeredUsers"
 description: "Retrieve a list of users that are registered users of the device."
-author: "davidmu1"
+author: "spunukol"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List registeredUsers
+
+Namespace: microsoft.graph
 
 Retrieve a list of users that are registered users of the device.
 
@@ -105,3 +107,4 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
+

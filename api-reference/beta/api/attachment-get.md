@@ -3,13 +3,17 @@ title: "Get attachment"
 description: "Read the properties and relationships of an attachment, attached to an event, message, Outlook task, or post."
 localization_priority: Normal
 doc_type: apiPageType
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 ---
 
 # Get attachment
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
 Read the properties, relationships, or raw contents of an attachment, attached to a user [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).
 
@@ -689,3 +693,5 @@ QkVHSU46VkNBTEVOREFSDQpNRVRIT0Q6UkVRVUVTVA0KUFJPRElEOk1pY3Jvc29mdCBFeGNoYW5n
   ]
 }
 -->
+
+

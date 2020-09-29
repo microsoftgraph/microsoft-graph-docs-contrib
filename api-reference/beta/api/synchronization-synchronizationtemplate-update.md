@@ -3,11 +3,13 @@ title: "Update synchronizationTemplate"
 description: "Update (override) the synchronization template associated with a given application."
 localization_priority: Normal
 doc_type: apiPageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 
 # Update synchronizationTemplate
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ### HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT application/{id}/synchronization/templates/{templateId}
+PATCH application/{id}/synchronization/templates/{templateId}
 ```
 
 ## Request headers
@@ -104,3 +106,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

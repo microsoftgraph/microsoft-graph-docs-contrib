@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # TableColumn: delete
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes the column from the table.
@@ -75,3 +77,5 @@ HTTP/1.1 200 OK
   "suppressions": []
 }
 -->
+
+

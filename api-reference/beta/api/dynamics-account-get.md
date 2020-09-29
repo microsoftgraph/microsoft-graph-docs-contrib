@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Get accounts
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the properties and relationships of an account object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -23,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 
 ## HTTP request
-```
+```http
 GET /financials/companies/{id}/accounts/{id}
 ```
 
@@ -67,3 +72,5 @@ Here is an example of the response.
     "lastModifiedDateTime": "2017-03-15T02:20:58.747Z"
 }
 ```
+
+

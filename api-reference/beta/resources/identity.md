@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # identity resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **Identity** resource represents an identity of an _actor_.
@@ -52,3 +54,5 @@ In this case, the **displayName** property for the identity will be returned, bu
   "suppressions": []
 }
 -->
+
+

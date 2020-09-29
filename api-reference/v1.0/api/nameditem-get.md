@@ -2,12 +2,14 @@
 title: "Get NamedItem"
 description: "Retrieve the properties and relationships of nameditem object."
 localization_priority: Normal
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType
 ---
 
 # Get NamedItem
+
+Namespace: microsoft.graph
 
 Retrieve the properties and relationships of nameditem object.
 ## Permissions
@@ -101,3 +103,4 @@ Content-length: 87
   "suppressions": [
   ]
 }-->
+

@@ -4,10 +4,12 @@ description: "Create a new or replace an existing history item for an existing u
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: apiPageType
-author: ""
+author: "ailae"
 ---
 
 # Create or replace a historyItem
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -111,3 +113,5 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
+
+

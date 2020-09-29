@@ -2,12 +2,14 @@
 title: "Get onPremisesAgent"
 description: "Retrieve the properties and relationships of an onPremisesAgent object."
 localization_priority: Normal
-author: "davidmu1"
+author: "japere"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # Get onPremisesAgent
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -118,3 +120,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

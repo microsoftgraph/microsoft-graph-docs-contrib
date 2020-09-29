@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # SpecialFolder resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **SpecialFolder** resource groups special folder-related data items into a single structure.
@@ -74,3 +76,5 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "suppressions": []
 }
 -->
+
+

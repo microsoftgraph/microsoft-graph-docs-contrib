@@ -3,11 +3,13 @@ title: "localeInfo resource type"
 description: "Information about the locale, including the preferred language and country/region, of the signed-in user."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "outlook"
+author: "svpsiva"
 ---
 
 # localeInfo resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,3 +54,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

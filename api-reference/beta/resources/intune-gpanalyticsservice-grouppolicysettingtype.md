@@ -1,13 +1,15 @@
 ---
 title: "groupPolicySettingType enum type"
 description: "Setting type of the group policy."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # groupPolicySettingType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -25,6 +27,9 @@ Setting type of the group policy.
 |userRightsAssignment|4|UserRightsAssignment setting type|
 |auditSetting|5|AuditSetting setting type|
 |windowsFirewallSettings|6|WindowsFirewallSettings setting type|
+
+
+
 
 
 

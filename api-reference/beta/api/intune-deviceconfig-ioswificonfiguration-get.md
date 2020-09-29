@@ -1,13 +1,15 @@
 ---
 title: "Get iosWiFiConfiguration"
 description: "Read properties and relationships of the iosWiFiConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get iosWiFiConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1723
+Content-Length: 1768
 
 {
   "value": {
@@ -108,10 +110,12 @@ Content-Length: 1723
     "proxyManualAddress": "Proxy Manual Address value",
     "proxyManualPort": 15,
     "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+    "disableMacAddressRandomization": true,
     "preSharedKey": "Pre Shared Key value"
   }
 }
 ```
+
 
 
 

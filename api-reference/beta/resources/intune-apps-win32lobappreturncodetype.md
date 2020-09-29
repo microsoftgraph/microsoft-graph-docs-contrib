@@ -1,13 +1,15 @@
 ---
 title: "win32LobAppReturnCodeType enum type"
 description: "Indicates the type of return code."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # win32LobAppReturnCodeType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -23,6 +25,9 @@ Indicates the type of return code.
 |softReboot|2|Soft-reboot is required.|
 |hardReboot|3|Hard-reboot is required.|
 |retry|4|Retry.|
+
+
+
 
 
 

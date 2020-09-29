@@ -2,12 +2,14 @@
 title: "device: checkMemberObjects"
 description: "Check for membership in a list of groups or directory roles for the specified device object."
 localization_priority: Normal
-author: "davidmu1"
+author: "spunukol"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # device: checkMemberObjects
+
+Namespace: microsoft.graph
 
 Check for membership in a list of groups or directory roles for the specified device object. This method is transitive.
 
@@ -128,3 +130,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -1,13 +1,15 @@
 ---
 title: "List officeSuiteApps"
 description: "List properties and relationships of the officeSuiteApp objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # List officeSuiteApps
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2032
+Content-Length: 2120
 
 {
   "value": [
@@ -88,6 +90,8 @@ Content-Length: 2032
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "autoAcceptEula": true,
       "productIds": [
         "o365BusinessRetail"
@@ -95,6 +99,7 @@ Content-Length: 2032
       "excludedApps": {
         "@odata.type": "microsoft.graph.excludedApps",
         "access": true,
+        "bing": true,
         "excel": true,
         "groove": true,
         "infoPath": true,
@@ -124,6 +129,7 @@ Content-Length: 2032
   ]
 }
 ```
+
 
 
 

@@ -2,12 +2,14 @@
 title: "entity resource type"
 description: ""
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "MSGraphDocsVteam"
+ms.prod: "keylimesoda"
 doc_type: resourcePageType
 ---
 
 # entity resource type
+
+Namespace: microsoft.graph
 
 ## Properties
 | Property	   | Type	|Description|
@@ -47,3 +49,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

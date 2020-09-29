@@ -1,13 +1,15 @@
 ---
 title: "mobileAppIntent enum type"
 description: "Indicates the status of the mobile app on the device."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # mobileAppIntent enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -25,6 +27,9 @@ Indicates the status of the mobile app on the device.
 |requiredAndAvailableInstall|4|RequiredAndAvailableInstall|
 |availableInstallWithoutEnrollment|5|AvailableInstallWithoutEnrollment|
 |exclude|6|Exclude|
+
+
+
 
 
 

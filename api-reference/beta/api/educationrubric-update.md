@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Update educationRubric
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of an [educationRubric](../resources/educationrubric.md) object.
@@ -192,3 +194,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

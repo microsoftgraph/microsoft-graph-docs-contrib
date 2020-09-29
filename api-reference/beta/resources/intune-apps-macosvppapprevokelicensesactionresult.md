@@ -1,13 +1,15 @@
 ---
 title: "macOsVppAppRevokeLicensesActionResult resource type"
 description: "Defines results for actions on MacOS Vpp Apps, contains inherited properties for ActionResult."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # macOsVppAppRevokeLicensesActionResult resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -52,6 +54,9 @@ Here is a JSON representation of the resource.
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

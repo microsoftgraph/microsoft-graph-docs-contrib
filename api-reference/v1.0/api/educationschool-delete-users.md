@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Remove educationUser from an educationSchool
 
+Namespace: microsoft.graph
+
 Delete a user from a school.
 
 ## Permissions
@@ -88,3 +90,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

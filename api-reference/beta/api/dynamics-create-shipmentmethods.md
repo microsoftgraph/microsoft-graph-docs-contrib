@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Create shipmentMethods
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a shipment method object in Dynamics 365 Business Central.
 
 ## Permissions
@@ -76,3 +81,5 @@ Content-type: application/json
 }
 
 ```
+
+

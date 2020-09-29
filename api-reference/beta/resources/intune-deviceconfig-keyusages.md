@@ -1,13 +1,15 @@
 ---
 title: "keyUsages enum type"
 description: "Key Usage Options."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # keyUsages enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -20,6 +22,9 @@ Key Usage Options.
 |:---|:---|:---|
 |keyEncipherment|1|Key Encipherment Usage.|
 |digitalSignature|2|Digital Signature Usage.|
+
+
+
 
 
 

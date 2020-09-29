@@ -4,10 +4,12 @@ description: "Contains information about registry key changes related to the ale
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
 # registryKeyState resource type
+
+Namespace: microsoft.graph
 
 Contains information about registry key changes related to the alert, and the process that changed the registry keys.
 
@@ -63,3 +65,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -1,13 +1,15 @@
 ---
 title: "Create User"
 description: "Use this API to create a new User."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Create User
+
+Namespace: microsoft.graph
 
 Create a new [user](../resources/user.md).
 The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
@@ -181,7 +183,8 @@ Content-type: application/json
     }
   ],
   "passwordProfile" : {
-    "password": "password-value"
+    "password": "password-value",
+    "forceChangePasswordNextSignIn": false
   },
   "passwordPolicies": "DisablePasswordExpiration"
 }
@@ -204,8 +207,6 @@ Content-type: application/json
 
 ---
 
-
----
 
 #### Response
 
@@ -262,3 +263,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

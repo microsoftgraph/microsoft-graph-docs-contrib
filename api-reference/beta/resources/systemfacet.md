@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # System facet
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **System** facet indicates that the object is managed by the system for its own operation.
@@ -37,3 +39,5 @@ None. This facet is a null or not-null value and contains no properties.
   "suppressions": []
 }
 -->
+
+

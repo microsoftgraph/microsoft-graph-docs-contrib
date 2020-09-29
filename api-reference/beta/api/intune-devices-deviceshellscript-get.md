@@ -1,13 +1,15 @@
 ---
 title: "Get deviceShellScript"
 description: "Read properties and relationships of the deviceShellScript object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get deviceShellScript
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -61,11 +63,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 520
+Content-Length: 630
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceShellScript",
+    "executionFrequency": "PT2M43.444327S",
+    "retryCount": 10,
+    "blockExecutionNotifications": true,
     "id": "ca9e0ad8-0ad8-ca9e-d80a-9ecad80a9eca",
     "displayName": "Display Name value",
     "description": "Description value",
@@ -80,6 +85,7 @@ Content-Length: 520
   }
 }
 ```
+
 
 
 

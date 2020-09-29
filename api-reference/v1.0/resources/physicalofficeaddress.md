@@ -2,12 +2,14 @@
 title: "physicalOfficeAddress resource type"
 description: "Represents the business address of a resource such as a contact or event."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # physicalOfficeAddress resource type
+
+Namespace: microsoft.graph
 
 Represents the business address of a resource such as an organizational contact.
 
@@ -55,3 +57,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get call
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a call object.
 
 ## Permissions
@@ -143,6 +145,7 @@ Content-Type: application/json
   "answeredBy": null,
   "chatInfo": null,
   "meetingInfo": null,
+  "transcription": null,
   "toneInfo": null
 }
 ```
@@ -241,6 +244,11 @@ Content-Type: application/json
     },
     "allowConversationWithoutHost": true
   },
+  "transcription": {
+    "@odata.type": "#microsoft.graph.callTranscriptionInfo",
+    "state": "inactive",
+    "lastModifiedDateTime": "2020-05-28T00:10:54.104318Z"
+  },
   "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
   "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#communications/calls/$entity",
@@ -265,3 +273,4 @@ Content-Type: application/json
   ]
 }
 -->
+

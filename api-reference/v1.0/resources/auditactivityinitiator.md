@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # auditActivityInitiator resource type
 
+Namespace: microsoft.graph
+
 Identity the resource object that initiates the activity. The initiator can be a user, an app, or a system (which is considered an app).
 
 ## Properties
@@ -47,3 +49,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

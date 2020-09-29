@@ -3,11 +3,13 @@ title: "Update formatprotection"
 description: "Update the properties of formatprotection object."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 ---
 
 # Update formatprotection
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -108,3 +110,5 @@ Content-length: 45
   ]
 }
 -->
+
+

@@ -1,13 +1,15 @@
 ---
 title: "List rejectedSenders"
 description: "Get a list of users or groups that are in the rejected-senders list for this group. "
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # List rejectedSenders
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -109,3 +111,5 @@ Content-length: 55
   ]
 }
 -->
+
+

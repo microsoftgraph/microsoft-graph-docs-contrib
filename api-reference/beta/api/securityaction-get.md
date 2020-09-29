@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get securityAction
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [securityAction](../resources/securityaction.md) object.
@@ -117,3 +119,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

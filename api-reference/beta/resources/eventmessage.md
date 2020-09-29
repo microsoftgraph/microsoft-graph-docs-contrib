@@ -2,12 +2,14 @@
 title: "eventMessage resource type"
 description: "A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline). "
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "harini84"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # eventMessage resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -104,7 +106,7 @@ Here is a JSON representation of the resource
 |conversationIndex|Edm.Binary|Indicates the position of the message within the conversation.|
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|The end time of the requested meeting.|
-|flag|[followUpFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
+|flag|[followupFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |from|[recipient](recipient.md)|The owner of the mailbox from which the message is sent. In most cases, this value is the same as the **sender** property, except for sharing or delegation scenarios. The value must correspond to the actual mailbox used. Find out more about [setting the from and sender properties](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) of a message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
 |id|String| Unique identifier for the message. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Read-only. |
@@ -189,3 +191,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

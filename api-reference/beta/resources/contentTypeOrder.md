@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # ContentTypeOrder resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **contentTypeOrder** resource specifies in which order the Content Type will appear in the selection UI.
@@ -42,3 +44,5 @@ Here is a JSON representation of a **contentTypeOrder** resource.
   "suppressions": []
 }
 -->
+
+

@@ -4,10 +4,12 @@ description: "For internal use only. This complex type will be deprecated in the
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "spunukol"
 ---
 
 # alternativeSecurityId resource type
+
+Namespace: microsoft.graph
 
 For internal use only. This complex type will be deprecated in the future.
 
@@ -32,3 +34,5 @@ For internal use only. This complex type will be deprecated in the future.
 | type             | Int32      | For internal use only
 | identityProvider | string     | For internal use only
 | key              | Edm.Binary | For internal use only
+
+

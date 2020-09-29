@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # notebook resource type
 
+Namespace: microsoft.graph
+
 A OneNote notebook.
 
 ## JSON representation
@@ -88,3 +90,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

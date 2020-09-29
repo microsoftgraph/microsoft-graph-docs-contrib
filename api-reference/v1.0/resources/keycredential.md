@@ -4,10 +4,12 @@ description: "Contains a key credential associated with an application or a serv
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # keyCredential resource type
+
+Namespace: microsoft.graph
 
 Contains a key credential associated with an application <!--or a service principal-->. The **keyCredentials** property of the [application](application.md) <!--and [servicePrincipal](serviceprincipal.md)--> entity is a collection of **keyCredential**.
 
@@ -61,3 +63,4 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+

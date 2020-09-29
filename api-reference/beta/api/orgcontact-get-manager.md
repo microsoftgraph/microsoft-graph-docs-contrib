@@ -2,12 +2,14 @@
 title: "orgContact: Get manager"
 description: "Get the contact's manager"
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # orgContact: Get manager
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -121,3 +123,5 @@ Content-length: 455
   ]
 }
 -->
+
+

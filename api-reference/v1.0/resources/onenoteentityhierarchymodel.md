@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # onenoteEntityHierarchyModel resource
 
+Namespace: microsoft.graph
+
 This is a base type for OneNote entities.
 
 ## JSON representation
@@ -52,3 +54,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

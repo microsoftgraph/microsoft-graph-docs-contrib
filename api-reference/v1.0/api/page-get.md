@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get page
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a [page](../resources/page.md) object.
 
 **Getting page information**
@@ -105,3 +107,4 @@ Content-length: 312
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # workbookRange: columnsBefore
 
+Namespace: microsoft.graph
+
 Gets a certain number of columns to the left of the given range.
 
 ## Permissions
@@ -112,3 +114,4 @@ Content-length: 157
   "suppressions": [
   ]
 }-->
+

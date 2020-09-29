@@ -10,6 +10,11 @@ doc_type: resourcePageType
 ---
 
 # trialBalance resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a trial balance in Dynamics 365 Business Central.
 
 ## Methods
@@ -54,4 +59,6 @@ Here is a JSON representation of the resource.
 }
 
 ```
+
+
 

@@ -2,12 +2,14 @@
 title: "event: delta"
 description: "Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) "
 localization_priority: Priority
-author: "angelgolfer-ms"
+author: "harini84"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # event: delta
+
+Namespace: microsoft.graph
 
 Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) 
 of the user's primary calendar.
@@ -135,6 +137,7 @@ Content-length: 359
         "response": "response-value",
         "time": "datetime-value"
       },
+      "transactionId": null,
       "iCalUId": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,
       "isReminderOn": true
@@ -159,3 +162,4 @@ Content-length: 359
   "suppressions": [
   ]
 }-->
+

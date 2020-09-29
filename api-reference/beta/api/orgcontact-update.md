@@ -2,12 +2,14 @@
 title: "Update orgcontact"
 description: "Update the properties of orgcontact object."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Update orgcontact
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -134,3 +136,5 @@ Content-length: 222
   ]
 }
 -->
+
+

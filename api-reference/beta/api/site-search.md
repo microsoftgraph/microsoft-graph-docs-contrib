@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Search for sites
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Search across a SharePoint tenant for [sites][] that match keywords provided.
@@ -93,3 +95,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

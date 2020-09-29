@@ -1,13 +1,15 @@
 ---
 title: "iosLobAppAssignmentSettings resource type"
 description: "Contains properties used to assign an iOS LOB mobile app to a group."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # iosLobAppAssignmentSettings resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -42,6 +44,9 @@ Here is a JSON representation of the resource.
   "uninstallOnDeviceRemoval": true
 }
 ```
+
+
+
 
 
 

@@ -2,12 +2,14 @@
 title: "userCredentialUsageDetails resource type"
 description: "Represents the self-service password reset usage for a given tenant."
 localization_priority: Normal
-author: "davidmu1"
+author: "khotz"
 ms.prod: "reports"
 doc_type: "resourcePageType"
 ---
 
 # userCredentialUsageDetails resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -72,3 +74,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete personName
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [personName](../resources/personname.md) object from a user's [profile](../resources/profile.md).
@@ -29,11 +31,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 DELETE /me/profile/names/{id}
+DELETE /users/{id | userPrincipalName}/profile/names/{id}
 ```
 
 ## Request headers
 
-| Name           |Description                  | 
+| Name           |Description                  |
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
 | Content-Type   | application/json. Required. |
@@ -75,7 +78,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/names/{id}
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
@@ -89,12 +91,4 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Delete personName",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

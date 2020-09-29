@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create page
 
+Namespace: microsoft.graph
+
 Create a new [page](../resources/page.md) in the specified section.
 
 ## Permissions
@@ -120,3 +122,4 @@ Content-length: 312
   "section": "documentation",
   "tocPath": ""
 }-->
+

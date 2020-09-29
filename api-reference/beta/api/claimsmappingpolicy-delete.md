@@ -2,12 +2,14 @@
 title: "Delete claimsMappingPolicy"
 description: "Delete claimsMappingPolicy."
 localization_priority: Normal
-author: "davidmu1"
+author: "paulgarn"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # Delete claimsMappingPolicy
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -97,3 +99,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

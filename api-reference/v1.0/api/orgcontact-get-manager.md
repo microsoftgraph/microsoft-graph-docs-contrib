@@ -2,12 +2,14 @@
 title: "Get manager"
 description: "Get this organizational contact's manager."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get manager
+
+Namespace: microsoft.graph
 
 Get this organizational contact's manager.
 
@@ -124,3 +126,4 @@ Content-length: 455
   ]
 }
 -->
+

@@ -1,13 +1,15 @@
 ---
 title: "windowsSpotlightEnablementSettings enum type"
 description: "Allows IT admind to set a predefined default search engine for MDM-Controlled devices"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # windowsSpotlightEnablementSettings enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,6 +23,9 @@ Allows IT admind to set a predefined default search engine for MDM-Controlled de
 |notConfigured|0|Spotlight on lock screen is not configured|
 |disabled|1|Disable Windows Spotlight on lock screen|
 |enabled|2|Enable Windows Spotlight on lock screen|
+
+
+
 
 
 

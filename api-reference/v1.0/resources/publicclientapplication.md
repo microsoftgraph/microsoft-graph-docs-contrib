@@ -4,10 +4,12 @@ description: "Specifies settings for non Web App or Web Api. (e.g. Mobile or oth
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # publicClientApplication resource type
+
+Namespace: microsoft.graph
 
 Specifies settings for non-web app or non-web API (for example, mobile or other public clients such as an installed application running on a desktop device).
 
@@ -48,3 +50,4 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+

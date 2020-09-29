@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationSubmissionIndividualRecipient resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A subclass of [educationSubmissionRecipient](educationsubmissionrecipient.md) that indicates that a submission is assigned to an individual in the class.  
@@ -50,3 +52,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

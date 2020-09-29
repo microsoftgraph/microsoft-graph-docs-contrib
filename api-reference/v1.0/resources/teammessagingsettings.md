@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamMessagingSettings resource type
 
+Namespace: microsoft.graph
+
 
 
 Settings to configure messaging and mentions in the [team](team.md).
@@ -50,3 +52,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

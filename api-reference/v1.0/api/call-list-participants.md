@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List participants
 
+Namespace: microsoft.graph
+
 Retrieve a list of participant objects in the call.
 
 ## Permissions
@@ -174,3 +176,4 @@ Content-Type: application/json
   ]
 }
 -->
+

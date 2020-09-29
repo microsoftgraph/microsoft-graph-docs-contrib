@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # personType resource type
 
+Namespace: microsoft.graph
+
 Represents the type of person.
 
 
@@ -46,3 +48,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

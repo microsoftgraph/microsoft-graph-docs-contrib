@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete schedulingGroup
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Mark a [schedulingGroup](../resources/schedulinggroup.md) as inactive by setting its **isActive** property.
@@ -106,3 +108,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

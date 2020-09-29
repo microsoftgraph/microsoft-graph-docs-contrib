@@ -1,6 +1,6 @@
 ---
 title: "searchResponse resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Description of the searchResponse"
 localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
@@ -9,11 +9,11 @@ doc_type: "resourcePageType"
 
 # searchResponse resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The searchResponse contains the results from the search query.
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Represents results from a search query, and the terms used for the query. 
 
 ## Properties
 
@@ -51,3 +51,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

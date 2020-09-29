@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # meetingInfo resource type
 
+Namespace: microsoft.graph
+
 This is an abstract class that contains meeting specific information.
  
 To join an existing meeting, you must either specify the [organizerMeetingInfo](organizermeetinginfo.md) 
@@ -51,3 +53,4 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+

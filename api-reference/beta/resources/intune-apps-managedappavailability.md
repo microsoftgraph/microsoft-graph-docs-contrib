@@ -1,13 +1,15 @@
 ---
 title: "managedAppAvailability enum type"
 description: "A managed (MAM) application's availability."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # managedAppAvailability enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -20,6 +22,9 @@ A managed (MAM) application's availability.
 |:---|:---|:---|
 |global|0|A globally available app to all tenants.|
 |lineOfBusiness|1|A line of business apps private to an organization.|
+
+
+
 
 
 

@@ -3,11 +3,13 @@ title: "Listing versions of a DriveItem"
 description: "OneDrive and SharePoint can be configured to retain the history for files."
 localization_priority: Normal
 ms.prod: "sharepoint"
-author: ""
+author: "JeremyKelley"
 doc_type: apiPageType
 ---
 
 # Listing versions of a DriveItem
+
+Namespace: microsoft.graph
 
 OneDrive and SharePoint can be configured to retain the history for files.
 Depending on the service and configuration, a new version can be created for each edit, each time the file is saved, manually, or never.
@@ -140,3 +142,4 @@ When your app retrieves the list of available versions for a file, a [DriveItemV
   "suppressions": [
   ]
 } -->
+

@@ -2,12 +2,14 @@
 title: "Create trustFrameworkKeySet"
 description: "Create a new **trustFrameworkKeySet** object."
 localization_priority: Normal
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # Create trustFrameworkKeySet
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -203,3 +205,5 @@ Location: /trustFramework/keySets('B2C_1A_keyset1')
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

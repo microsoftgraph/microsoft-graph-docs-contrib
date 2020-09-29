@@ -2,22 +2,24 @@
 title: "Get FormatProtection"
 description: "Retrieve the properties and relationships of formatprotection object."
 localization_priority: Normal
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType
 ---
 
 # Get FormatProtection
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of formatprotection object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | Files.ReadWrite    | 
-|Delegated (personal Microsoft account) | Not supported.    | 
-|Application | Not supported. | 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -100,3 +102,4 @@ Content-length: 45
   "suppressions": [
   ]
 }-->
+

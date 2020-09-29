@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartSeriesFormat resource type
 
+Namespace: microsoft.graph
+
 encapsulates the format properties for the chart series
 
 
@@ -53,3 +55,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

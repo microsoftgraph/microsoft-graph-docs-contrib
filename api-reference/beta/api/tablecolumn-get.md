@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get TableColumn
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of tablecolumn object.
@@ -101,3 +103,5 @@ Content-length: 81
   ]
 }
 -->
+
+

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete page
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a OneNote page.
@@ -87,3 +89,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

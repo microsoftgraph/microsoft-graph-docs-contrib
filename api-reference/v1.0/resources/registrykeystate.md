@@ -2,12 +2,14 @@
 title: "registryKeyState resource type"
 description: "Contains information about registry key changes related to the alert, and the process that changed the registry keys."
 localization_priority: Normal
-author: ""
+author: "preetikr"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # registryKeyState resource type
+
+Namespace: microsoft.graph
 
 Contains information about registry key changes related to the alert, and the process that changed the registry keys.
 
@@ -63,3 +65,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

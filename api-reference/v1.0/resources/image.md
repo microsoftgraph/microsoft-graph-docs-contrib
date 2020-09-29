@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # Image resource type
 
+Namespace: microsoft.graph
+
 The **Image** resource groups image-related properties into a single structure.
 If a [**DriveItem**](driveitem.md) has a non-null **image** facet, the item represents a bitmap image.
 
@@ -47,3 +49,4 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/Image"
 } -->
+

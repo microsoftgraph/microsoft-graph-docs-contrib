@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # ThumbnailSet resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **ThumbnailSet** resource is a keyed collection of [thumbnail](thumbnail.md) resources.
@@ -57,3 +59,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

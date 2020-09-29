@@ -1,13 +1,15 @@
 ---
 title: "Create managedAppOperation"
 description: "Create a new managedAppOperation object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Create managedAppOperation
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -88,6 +90,11 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
+
+
+
+
 
 
 

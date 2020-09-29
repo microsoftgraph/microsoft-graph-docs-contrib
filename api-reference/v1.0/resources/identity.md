@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # Identity resource type
 
+Namespace: microsoft.graph
+
 The **Identity** resource represents an identity of an _actor_.
 For example, an actor can be a user, device, or application.
 
@@ -49,3 +51,4 @@ In this case, the **displayName** property for the identity will be returned, bu
   "tocPath": "Resources/Identity"
 
 } -->
+

@@ -1,13 +1,15 @@
 ---
 title: "Create managedDeviceMobileAppConfigurationUserStatus"
 description: "Create a new managedDeviceMobileAppConfigurationUserStatus object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Create managedDeviceMobileAppConfigurationUserStatus
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -92,6 +94,11 @@ Content-Length: 355
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
+
+
 
 
 

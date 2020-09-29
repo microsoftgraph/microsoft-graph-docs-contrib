@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # notebook resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A OneNote notebook.
@@ -93,3 +95,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

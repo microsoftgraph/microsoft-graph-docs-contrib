@@ -1,7 +1,7 @@
 ---
 title: "Get incremental changes for users"
 description: "Delta query lets you query for additions, deletions, or updates to users, by way of a series of delta function calls. Delta query enables you discover changes to users without having to fetch the entire set of users from Microsoft Graph and compare changes."
-author: "baywet"
+author: "davidmu1"
 localization_priority: Priority
 ms.custom: graphiamtop20
 ---
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3
 
 ## nextLink response
 
-The response contains a `nextLink` and another `skipToken`, indicating there are more users available. You continue making requests using the nextLink URL until a deltaLink URL is returned in the response.
+The response contains another `nextLink` with a new `skipToken` value, which indicates that more groups are available. You should continue making requests using the `nextLink` URL until a `deltaLink` URL is returned in the final response, even if the value is an empty array (this can happen under certain circumstances).
 
 ```http
 HTTP/1.1 200 OK

@@ -1,13 +1,15 @@
 ---
 title: "List trendingAround"
 description: "Calculated insight that returns the list of items trending around a user."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
 # List trendingAround
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -67,3 +69,5 @@ Content-length: 226
   "webUrl": "webUrl-value",
 }
 ```
+
+

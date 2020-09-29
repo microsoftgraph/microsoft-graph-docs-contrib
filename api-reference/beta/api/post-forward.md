@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # post: forward
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Forward a post to a recipient. You can specify both the parent conversation and thread in the request, 
@@ -112,3 +114,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

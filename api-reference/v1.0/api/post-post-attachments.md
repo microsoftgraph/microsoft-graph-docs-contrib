@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add attachment
 
+Namespace: microsoft.graph
+
 Add an [attachment](../resources/attachment.md) when creating a group post.
 
 This operation limits the size of the attachment you can add to under 4 MB.
@@ -202,7 +204,7 @@ Content-type: application/json
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-reference-attachment-with-post-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-item-attachment-with-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -242,3 +244,4 @@ HTTP/1.1 202 Accpted
   "suppressions": [
   ]
 }-->
+

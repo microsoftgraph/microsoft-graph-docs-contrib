@@ -1,13 +1,15 @@
 ---
 title: "targetedManagedAppConfiguration resource type"
 description: "Configuration used to deliver a set of custom settings as-is to all users in the targeted security group"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # targetedManagedAppConfiguration resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -85,6 +87,9 @@ Here is a JSON representation of the resource.
   "isAssigned": true
 }
 ```
+
+
+
 
 
 

@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 
 # driveItem: restore
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Restore a [driveItem](../resources/driveitem.md) that has been deleted and is currently in the recycle bin. **NOTE**: This functionality is currently only available for OneDrive Personal.
@@ -126,3 +128,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Items/Restore"
 }-->
+
+

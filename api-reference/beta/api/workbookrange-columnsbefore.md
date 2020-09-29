@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # workbookRange: columnsBefore
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets a certain number of columns to the left of the given range.
@@ -107,3 +109,5 @@ Content-length: 157
   "suppressions": [
   ]
 }-->
+
+

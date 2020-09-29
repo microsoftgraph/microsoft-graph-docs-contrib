@@ -4,10 +4,12 @@ description: "Basic profile information of the application."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # informationalUrl resource type
+
+Namespace: microsoft.graph
 
 Basic profile information of the application.
 
@@ -56,3 +58,4 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+

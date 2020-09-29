@@ -1,13 +1,15 @@
 ---
 title: "officeUpdateChannel enum type"
 description: "The Enum to specify the Office365 Updates Channel."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # officeUpdateChannel enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -23,6 +25,10 @@ The Enum to specify the Office365 Updates Channel.
 |deferred|2|Not yet documented|
 |firstReleaseCurrent|3|Not yet documented|
 |firstReleaseDeferred|4|Not yet documented|
+|monthlyEnterprise|5|Not yet documented|
+
+
+
 
 
 

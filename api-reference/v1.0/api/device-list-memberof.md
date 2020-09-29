@@ -1,13 +1,15 @@
 ---
 title: "List device groups"
 description: "Get groups that this device is a direct member of. This operation is not transitive."
-author: "davidmu1"
+author: "spunukol"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List device groups
+
+Namespace: microsoft.graph
 
 Get groups that this device is a direct member of. This operation is not transitive.
 
@@ -115,3 +117,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # RangeFill: clear
 
+Namespace: microsoft.graph
+
 Resets the range background.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -92,3 +94,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

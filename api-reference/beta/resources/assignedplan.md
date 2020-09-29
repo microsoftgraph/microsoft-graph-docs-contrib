@@ -4,10 +4,12 @@ description: "The **assignedPlans** property of both the user entity and the org
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "krbain"
 ---
 
 # assignedPlan resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,3 +58,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

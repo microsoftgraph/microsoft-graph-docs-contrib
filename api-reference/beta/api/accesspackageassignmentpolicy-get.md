@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get accessPackageAssignmentPolicy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve the properties and relationships of an
@@ -20,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
+| Delegated (work or school account)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -100,10 +102,10 @@ Content-type: application/json
   "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
   "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
   "displayName": "All Users",
-  "description": "All users can request for access to the directory.",
-  "isEnabled": false,
+  "description": "All users in the directory can request access.",
   "canExtend": false,
-  "durationInDays": 365
+  "durationInDays": 365,
+  "accessReviewSettings": null
 }
 ```
 
@@ -116,3 +118,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

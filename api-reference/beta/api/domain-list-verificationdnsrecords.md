@@ -1,13 +1,15 @@
 ---
 title: "List verificationDnsRecords"
 description: "Retrieve a list of domainDnsRecord objects."
-author: "davidmu1"
+author: "adimitui"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List verificationDnsRecords
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -123,3 +125,5 @@ Content-length: 220
   ]
 }
 -->
+
+

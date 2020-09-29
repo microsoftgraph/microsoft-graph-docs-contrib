@@ -4,10 +4,12 @@ description: "Retrieve the properties and relationships of a secureScores object
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
 # List secureScores
+
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -155,3 +157,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

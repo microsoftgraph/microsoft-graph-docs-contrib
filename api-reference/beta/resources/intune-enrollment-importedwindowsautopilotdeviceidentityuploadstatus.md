@@ -1,13 +1,15 @@
 ---
 title: "importedWindowsAutopilotDeviceIdentityUploadStatus enum type"
 description: "Not yet documented"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # importedWindowsAutopilotDeviceIdentityUploadStatus enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,6 +24,9 @@ Not yet documented
 |pending|1|Pending status.|
 |complete|2|Complete status.|
 |error|3|Error status.|
+
+
+
 
 
 

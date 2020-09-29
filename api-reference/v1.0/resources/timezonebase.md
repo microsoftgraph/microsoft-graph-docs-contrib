@@ -2,12 +2,14 @@
 title: "timeZoneBase resource type"
 description: "The basic representation of a time zone."
 localization_priority: Normal
-author: ""
+author: "svpsiva"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # timeZoneBase resource type
+
+Namespace: microsoft.graph
 
 The basic representation of a time zone.
 
@@ -46,3 +48,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

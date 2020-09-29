@@ -1,13 +1,15 @@
 ---
 title: "Create device"
 description: "Create a new device."
-author: "davidmu1"
+author: "spunukol"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Create device
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -134,3 +136,5 @@ Content-length: 364
   ]
 }
 -->
+
+

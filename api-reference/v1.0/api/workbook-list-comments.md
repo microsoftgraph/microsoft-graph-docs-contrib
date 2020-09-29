@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List workbookComments
 
+Namespace: microsoft.graph
+
 Retrieve a list of  [workbookComment](../resources/workbookcomment.md) objects.
 
 ## Permissions
@@ -56,7 +58,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/drive/root/workbook/comments
+GET https://graph.microsoft.com/v1.0/drive/items/{id}/workbook/comments
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-comments-csharp-snippets.md)]
@@ -114,3 +116,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Update companyInformation
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of a company information object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -89,3 +94,5 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z"
   }
 ```
+
+

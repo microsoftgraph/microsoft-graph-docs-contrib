@@ -1,13 +1,15 @@
 ---
 title: "Update mobileAppContentFile"
 description: "Update the properties of a mobileAppContentFile object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Update mobileAppContentFile
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -111,6 +113,7 @@ Content-Length: 503
   "isDependency": true
 }
 ```
+
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "windowsUserAccountControlSettings enum type"
 description: "Possible values for Windows user account control settings."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # windowsUserAccountControlSettings enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -23,6 +25,9 @@ Possible values for Windows user account control settings.
 |notifyOnAppChanges|2|Notify on app changes.|
 |notifyOnAppChangesWithoutDimming|3|Notify on app changes without dimming desktop.|
 |neverNotify|4|Never notify.|
+
+
+
 
 
 

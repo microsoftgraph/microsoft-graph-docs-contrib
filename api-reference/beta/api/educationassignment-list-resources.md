@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List educationAssignmentResources
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get all the resources associated with this assignment.
@@ -137,3 +139,5 @@ Content-length: 1011
   "suppressions": []
 }
 -->
+
+

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create or replace schedule
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create or replace a [schedule](../resources/schedule.md) object.
@@ -136,3 +138,5 @@ Content-length: 401
   ]
 }
 -->
+
+

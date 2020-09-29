@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookTableRow resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a row in a table.
@@ -68,3 +70,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

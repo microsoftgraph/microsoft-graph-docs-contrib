@@ -10,6 +10,11 @@ doc_type: resourcePageType
 ---
 
 # countriesRegions resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a countriesRegions object in Dynamics 365 Business Central, which is part of an address.
 
 ## Methods
@@ -49,5 +54,7 @@ Here is a JSON representation of the countriesRegions.
 }
 
 ```
+
+
 
 

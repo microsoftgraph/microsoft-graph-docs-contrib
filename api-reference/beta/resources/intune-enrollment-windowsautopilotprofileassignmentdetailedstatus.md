@@ -1,13 +1,15 @@
 ---
 title: "windowsAutopilotProfileAssignmentDetailedStatus enum type"
 description: "Not yet documented"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # windowsAutopilotProfileAssignmentDetailedStatus enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -23,6 +25,9 @@ Not yet documented
 |surfaceHubProfileNotSupported|2|This can happen if a SurfaceHub AutoPilot Profile is assigned to a device that is not SurfaceHub.|
 |holoLensProfileNotSupported|3|This can happen if a HoloLens AutoPilot Profile is assigned to a device that is not HoloLens.|
 |windowsPcProfileNotSupported|4|This can happen if a WindowsPc AutoPilot Profile is assigned to a device that is not WindowsPc.|
+
+
+
 
 
 

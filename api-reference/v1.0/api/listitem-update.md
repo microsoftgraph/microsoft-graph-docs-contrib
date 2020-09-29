@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Update listItem
 
+Namespace: microsoft.graph
+
 Update the properties on a **[listItem][]**.
 
 ## Permissions
@@ -113,3 +115,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

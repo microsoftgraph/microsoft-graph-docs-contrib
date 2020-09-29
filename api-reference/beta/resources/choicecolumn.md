@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # ChoiceColumn resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **choiceColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values can be selected from a list of choices.
@@ -45,3 +47,5 @@ Here is a JSON representation of a **choiceColumn** resource.
   "suppressions": []
 }
 -->
+
+

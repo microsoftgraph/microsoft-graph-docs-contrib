@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Copy a DriveItem
 
+Namespace: microsoft.graph
+
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
 ## Permissions
@@ -116,3 +118,4 @@ The response from the API will only indicate that the copy operation was accepte
   "suppressions": [
   ]
 } -->
+

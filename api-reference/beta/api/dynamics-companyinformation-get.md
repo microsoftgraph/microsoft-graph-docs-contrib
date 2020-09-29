@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Get companyInformation
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the properties and relationships of a company information object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -78,3 +83,5 @@ Here is an example of the response.
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z"
 }
 ```
+
+

@@ -2,12 +2,14 @@
 title: "detailsInfo resource type"
 description: "A property bag that can contain any information about the associated identity or system."
 localization_priority: Normal
-author: "davidmu1"
+author: "khotz"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
 # detailsInfo resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,3 +35,5 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.detailsInfo"
 }
 ```
+
+

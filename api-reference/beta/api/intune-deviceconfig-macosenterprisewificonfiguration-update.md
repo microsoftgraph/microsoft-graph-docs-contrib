@@ -1,13 +1,15 @@
 ---
 title: "Update macOSEnterpriseWiFiConfiguration"
 description: "Update the properties of a macOSEnterpriseWiFiConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Update macOSEnterpriseWiFiConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -201,6 +203,7 @@ Content-Length: 2030
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```
+
 
 
 

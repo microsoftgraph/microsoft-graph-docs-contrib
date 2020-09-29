@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # workbookApplication: calculate
 
+Namespace: microsoft.graph
+
 Recalculate all currently opened workbooks in Excel.
 
 ## Permissions
@@ -108,3 +110,4 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+

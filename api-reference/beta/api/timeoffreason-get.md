@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get timeOffReason
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [timeOffReason](../resources/timeoffreason.md) object by ID.
@@ -34,6 +36,10 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```
+
+## Optional query parameters
+
+This method does not support OData query parameters to customize the response.
 
 ## Request headers
 
@@ -125,3 +131,5 @@ Content-length: 401
   ]
 }
 -->
+
+

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationTeacher resource type
 
+Namespace: microsoft.graph
+
 Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.
 
 
@@ -47,3 +49,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

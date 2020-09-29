@@ -2,14 +2,19 @@
 title: "Create outlookTaskGroup"
 description: "Create an Outlook task group in the user's mailbox."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "mashriv"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Create outlookTaskGroup
+# Create outlookTaskGroup (deprecated)
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Create an Outlook task group in the user's mailbox.
 ## Permissions
@@ -107,3 +112,5 @@ Content-length: 138
   ]
 }
 -->
+
+

@@ -1,13 +1,15 @@
 ---
 title: "Update userExperienceAnalyticsCategory"
 description: "Update the properties of a userExperienceAnalyticsCategory object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Update userExperienceAnalyticsCategory
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -30,8 +32,10 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+PATCH /deviceManagement/userExperienceAnalyticsAppHealthOverview
 PATCH /deviceManagement/userExperienceAnalyticsCategories/{userExperienceAnalyticsCategoryId}
 PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/bestPracticesMetrics
+PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/rebootAnalyticsMetrics
 PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics
 ```
 
@@ -63,9 +67,9 @@ If successful, this method returns a `200 OK` response code and an updated [user
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsCategories/{userExperienceAnalyticsCategoryId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthOverview
 Content-type: application/json
-Content-length: 572
+Content-length: 553
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsCategory",
@@ -78,7 +82,7 @@ Content-length: 572
       "values": [
         {
           "@odata.type": "microsoft.graph.insightValueDouble",
-          "value": "<Unknown Primitive Type Edm.Double>"
+          "value": 1.6666666666666667
         }
       ],
       "severity": "informational"
@@ -93,7 +97,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 621
+Content-Length: 602
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsCategory",
@@ -107,7 +111,7 @@ Content-Length: 621
       "values": [
         {
           "@odata.type": "microsoft.graph.insightValueDouble",
-          "value": "<Unknown Primitive Type Edm.Double>"
+          "value": 1.6666666666666667
         }
       ],
       "severity": "informational"
@@ -116,6 +120,7 @@ Content-Length: 621
   "state": "insufficientData"
 }
 ```
+
 
 
 

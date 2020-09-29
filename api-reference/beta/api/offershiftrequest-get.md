@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get offerShiftRequest
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of an [offerShiftRequest](../resources/offershiftrequest.md) object.
@@ -30,12 +32,12 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/schedule/offerShiftRequests
+GET /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support OData query parameters to customize the response.
 
 ## Request headers
 
@@ -64,7 +66,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/schedule/offerShiftRequests
+GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-offershiftrequest-csharp-snippets.md)]
@@ -114,3 +116,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

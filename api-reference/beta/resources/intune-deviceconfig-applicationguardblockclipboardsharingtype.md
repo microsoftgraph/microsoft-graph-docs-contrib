@@ -1,13 +1,15 @@
 ---
 title: "applicationGuardBlockClipboardSharingType enum type"
 description: "Possible values for applicationGuardBlockClipboardSharingType"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # applicationGuardBlockClipboardSharingType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -23,6 +25,9 @@ Possible values for applicationGuardBlockClipboardSharingType
 |blockHostToContainer|2|Block clipboard to share data from Host to Container|
 |blockContainerToHost|3|Block clipboard to share data from Container to Host|
 |blockNone|4|Block clipboard to share data neither from Host to Container nor from Container to Host|
+
+
+
 
 
 

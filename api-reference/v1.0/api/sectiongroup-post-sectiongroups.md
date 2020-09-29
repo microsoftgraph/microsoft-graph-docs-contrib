@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create sectionGroup
 
+Namespace: microsoft.graph
+
 Create a new [section group](../resources/sectiongroup.md) in the specified section group.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -120,3 +122,4 @@ Content-length: 305
   "suppressions": [
   ]
 }-->
+

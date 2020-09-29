@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # openShiftChangeRequest: decline
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Decline an [openshiftchangerequest](../resources/openshiftchangerequest.md) object.
@@ -92,3 +94,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # participant: mute
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Mute a specific participant in the call.
@@ -173,3 +175,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

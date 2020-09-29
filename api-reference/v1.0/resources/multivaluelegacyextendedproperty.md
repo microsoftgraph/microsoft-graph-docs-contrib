@@ -2,16 +2,18 @@
 title: "multiValueLegacyExtendedProperty resource type"
 description: "An extended property that contains a collection of values."
 localization_priority: Normal
-author: ""
+author: "svpsiva"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # multiValueLegacyExtendedProperty resource type
 
+Namespace: microsoft.graph
+
 An extended property that contains a collection of values.
 
-See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
+See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use
 open extensions or extended properties, and how to specify extended properties.
 
 ## Methods
@@ -59,3 +61,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

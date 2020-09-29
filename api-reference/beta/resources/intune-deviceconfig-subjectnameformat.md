@@ -1,13 +1,15 @@
 ---
 title: "subjectNameFormat enum type"
 description: "Subject Name Format Options."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # subjectNameFormat enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -27,6 +29,9 @@ Subject Name Format Options.
 |commonNameAsAadDeviceId|7|Common Name As Serial Number.|
 |commonNameAsIntuneDeviceId|8|Common Name As Serial Number.|
 |commonNameAsDurableDeviceId|9|Common Name As Serial Number.|
+
+
+
 
 
 

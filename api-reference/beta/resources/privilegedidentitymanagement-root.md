@@ -3,15 +3,17 @@ title: "Privileged Identity Management"
 description: "APIs for Azure AD Privileged Identity Management to manage Azure Active Directory roles and Azure resource roles."
 localization_priority: Priority
 doc_type: conceptualPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # Privileged Identity Management
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Azure Active Directory (Azure AD) Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) is a service that enables you to manage, control, and monitor access to important resources in your organization. This includes access to resources in Azure AD, Azure resources, and other Microsoft Online Services like Office 365 or Microsoft Intune. Microsoft Graph provides APIs that you can use to manage Azure AD roles and Azure resource roles.
+[Azure Active Directory (Azure AD) Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) is a service that enables you to manage, control, and monitor access to important resources in your organization. This includes access to resources in Azure AD, Azure resources, and other Microsoft Online Services like Microsoft 365 or Microsoft Intune. Microsoft Graph provides APIs that you can use to manage Azure AD roles and Azure resource roles.
 
 - [APIs for Azure AD roles](privilegedidentitymanagement-directory.md)
 - [APIs for Azure resource roles](privilegedidentitymanagement-resources.md)
@@ -31,3 +33,5 @@ author: ""
   "suppressions": []
 }
 -->
+
+

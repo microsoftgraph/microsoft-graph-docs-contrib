@@ -1,13 +1,15 @@
 ---
 title: "Create iosCompliancePolicy"
 description: "Create a new iosCompliancePolicy object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Create iosCompliancePolicy
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -169,6 +171,7 @@ Content-Length: 1413
   ]
 }
 ```
+
 
 
 

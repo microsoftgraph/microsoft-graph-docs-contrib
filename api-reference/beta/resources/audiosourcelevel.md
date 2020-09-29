@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # audioSourceLevel resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Level configuration for other sources.
@@ -52,3 +54,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

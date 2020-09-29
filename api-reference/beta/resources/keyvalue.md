@@ -2,12 +2,14 @@
 title: "keyValue resource type"
 description: "Provides additional relevant information about the sign-in request"
 localization_priority: Normal
-author: "davidmu1"
+author: "khotz"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
 # keyValue resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,3 +53,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

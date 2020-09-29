@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # mediaInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The media information used in actions for prompts.
@@ -50,3 +52,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

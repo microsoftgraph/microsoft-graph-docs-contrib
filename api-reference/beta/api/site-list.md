@@ -4,10 +4,12 @@ description: "List the available [sites][] in an organization that match provide
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
-author: ""
+author: "JeremyKelley"
 ---
 
 # Enumerate sites
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -115,3 +117,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

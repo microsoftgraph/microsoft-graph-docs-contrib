@@ -9,6 +9,8 @@ author: "svpsiva"
 
 # convertIdResult resource type
 
+Namespace: microsoft.graph
+
 The result of an ID format conversion performed by the [translateExchangeIds](../api/user-translateexchangeids.md) function.
 
 ## Properties
@@ -41,3 +43,4 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+

@@ -1,13 +1,15 @@
 ---
 title: "Update deviceConfigurationConflictSummary"
 description: "Update the properties of a deviceConfigurationConflictSummary object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Update deviceConfigurationConflictSummary
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -63,7 +65,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationConflictSummaryId}
 Content-type: application/json
-Content-length: 361
+Content-length: 398
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationConflictSummary",
@@ -71,7 +73,8 @@ Content-length: 361
     {
       "@odata.type": "microsoft.graph.settingSource",
       "id": "Id value",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "sourceType": "deviceIntent"
     }
   ],
   "contributingSettings": [
@@ -86,7 +89,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 410
+Content-Length: 447
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationConflictSummary",
@@ -94,7 +97,8 @@ Content-Length: 410
     {
       "@odata.type": "microsoft.graph.settingSource",
       "id": "Id value",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "sourceType": "deviceIntent"
     }
   ],
   "id": "d5f22c23-2c23-d5f2-232c-f2d5232cf2d5",
@@ -104,6 +108,7 @@ Content-Length: 410
   "deviceCheckinsImpacted": 6
 }
 ```
+
 
 
 

@@ -3,11 +3,13 @@ title: "DriveItemVersion resource type"
 description: "The **DriveItemVersion** resource represents a specific version of a DriveItem."
 localization_priority: Normal
 ms.prod: "sharepoint"
-author: ""
+author: "JeremyKelley"
 doc_type: resourcePageType
 ---
 
 # DriveItemVersion resource type
+
+Namespace: microsoft.graph
 
 The **DriveItemVersion** resource represents a specific version of a [DriveItem](driveitem.md).
 
@@ -68,3 +70,4 @@ In the previous table, the examples use `/drive`, but there are many valid reque
   "section": "documentation",
   "tocPath": "Facets/Version"
 } -->
+

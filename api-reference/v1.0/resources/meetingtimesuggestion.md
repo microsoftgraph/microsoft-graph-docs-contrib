@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # meetingTimeSuggestion resource type
 
+Namespace: microsoft.graph
+
 A meeting suggestion that includes information like meeting time, attendance likelihood, individual 
 availability, and available meeting locations.
 
@@ -56,3 +58,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # educationOnPremisesInfo resource type
 
+Namespace: microsoft.graph
+
 Additional information used to associate an on-premises Active Directory user account to their Azure AD user object.
 
 ## Properties
@@ -44,3 +46,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Remove educationCategory
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Remove an [educationCategory](../resources/educationcategory.md) from an [educationAssignment](../resources/educationassignment.md).
@@ -77,3 +79,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

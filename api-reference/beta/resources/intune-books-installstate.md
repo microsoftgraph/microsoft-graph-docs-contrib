@@ -1,13 +1,15 @@
 ---
 title: "installState enum type"
 description: "Possible values for install state."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # installState enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -24,6 +26,9 @@ Possible values for install state.
 |notInstalled|3|Not Installed.|
 |uninstallFailed|4|Uninstall Failed.|
 |unknown|5|Unknown.|
+
+
+
 
 
 

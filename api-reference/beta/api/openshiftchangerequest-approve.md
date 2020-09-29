@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # openShiftChangeRequest: approve
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Approve an [openshiftchangerequest](../resources/openshiftchangerequest.md) object.
@@ -93,3 +95,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

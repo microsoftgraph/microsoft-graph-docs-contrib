@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # List available drives
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [Drive](../resources/drive.md) resources available for a target User, Group, or [Site](../resources/site.md).
@@ -192,3 +194,5 @@ To list them, include `system` in your `$select` statement.
   ]
 }
 -->
+
+

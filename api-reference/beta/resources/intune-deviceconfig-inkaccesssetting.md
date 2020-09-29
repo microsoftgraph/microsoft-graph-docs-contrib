@@ -1,13 +1,15 @@
 ---
 title: "inkAccessSetting enum type"
 description: "Values for the InkWorkspaceAccess setting."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # inkAccessSetting enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,6 +23,9 @@ Values for the InkWorkspaceAccess setting.
 |notConfigured|0|Not configured.|
 |enabled|1|Enabled.|
 |disabled|2|Disabled.|
+
+
+
 
 
 

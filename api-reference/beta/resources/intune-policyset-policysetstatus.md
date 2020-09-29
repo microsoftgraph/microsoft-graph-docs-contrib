@@ -1,13 +1,15 @@
 ---
 title: "policySetStatus enum type"
 description: "The enum to specify the status of PolicySet."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # policySetStatus enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -24,6 +26,9 @@ The enum to specify the status of PolicySet.
 |success|3|All PolicySet items are deployed. Doesn’t mean that all deployment succeeded. |
 |error|4|PolicySet processing completely failed.|
 |notAssigned|5|PolicySet/PolicySetItem is not assigned to any group.|
+
+
+
 
 
 

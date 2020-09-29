@@ -1,6 +1,6 @@
 ---
 title: "schema resource type"
-description: "Describes the type of content and how to index each property in items in a Microsoft Search connection."
+description: "The connection schema determines how your content added into a connection will be used in various Microsoft Graph experiences."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.prod: "search"
@@ -9,9 +9,11 @@ doc_type: "resourcePageType"
 
 # schema resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the type of content and how to index each property in items in a Microsoft Search [connection](externalconnection.md).
+The [connection](externalconnection.md) schema determines how your external content will be used in various Microsoft Graph experiences. Schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before adding items into the connection.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -26,8 +28,8 @@ Describes the type of content and how to index each property in items in a Micro
 
 | Property   | Type                               | Description                |
 |:-----------|:-----------------------------------|:---------------------------|
-| baseType   | String                             | Possible values are `microsoft.graph.externalItem` and `microsoft.graph.externalFile`. Required. |
-| properties | [property](property.md) collection | The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 64. Required when `baseType` is set to `microsoft.graph.externalItem`. Ignored when `baseType` is set to `microsoft.graph.externalFile`. |
+| baseType   | String                             | Must be set to `microsoft.graph.externalItem`. Required. |
+| properties | [property](property.md) collection | The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128. |
 
 ## Relationships
 
@@ -64,3 +66,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

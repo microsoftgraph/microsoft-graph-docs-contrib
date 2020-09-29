@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # RangeFont resource type
 
+Namespace: microsoft.graph
+
 This object represents the font attributes (font name, font size, color, etc.) for an object.
 
 
@@ -65,3 +67,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

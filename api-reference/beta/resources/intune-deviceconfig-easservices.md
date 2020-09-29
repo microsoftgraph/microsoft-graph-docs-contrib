@@ -1,13 +1,15 @@
 ---
 title: "easServices enum type"
 description: "Exchange Active Sync services."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # easServices enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -24,6 +26,9 @@ Exchange Active Sync services.
 |email|4|Enables synchronization of email.|
 |notes|8|Enables synchronization of notes.|
 |reminders|16|Enables synchronization of reminders.|
+
+
+
 
 
 

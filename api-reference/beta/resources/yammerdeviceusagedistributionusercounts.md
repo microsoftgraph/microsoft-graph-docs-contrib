@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # yammerDeviceUsageDistributionUserCounts resource type
 
+Namespace: microsoft.graph
+
 ## Properties
 
 | Property          | Type   |
@@ -43,3 +45,5 @@ The following is a JSON representation of the resource.
   "reportPeriod": "String"
 }
 ```
+
+

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete tab from channel
 
+Namespace: microsoft.graph
+
 
 
 Removes (unpins) a tab from the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
@@ -18,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (work or school account) | TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All |
+|Application | TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
@@ -69,3 +71,4 @@ HTTP/1.1 204 No Content
   "tocPath": ""
 }
 -->
+

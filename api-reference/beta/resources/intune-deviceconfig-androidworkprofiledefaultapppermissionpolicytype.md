@@ -1,13 +1,15 @@
 ---
 title: "androidWorkProfileDefaultAppPermissionPolicyType enum type"
 description: "Android Work Profile default app permission policy type."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # androidWorkProfileDefaultAppPermissionPolicyType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,6 +24,9 @@ Android Work Profile default app permission policy type.
 |prompt|1|Prompt.|
 |autoGrant|2|Auto grant.|
 |autoDeny|3|Auto deny.|
+
+
+
 
 
 

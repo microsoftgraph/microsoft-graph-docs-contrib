@@ -10,6 +10,8 @@ doc_type: apiPageType
 
 # Get bundle
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the metadata for a [bundle][] based on the bundle's unique ID.
@@ -179,3 +181,5 @@ The response object shown here might be shortened for readability. All the prope
   "section": "documentation",
   "tocPath": "Bundles/Get Bundle Metadata"
 } -->
+
+

@@ -3,11 +3,13 @@ title: "Delete program"
 description: "In the Azure AD access reviews feature, delete a program object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "markwahl-msft"
 ---
 
 # Delete program
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -92,3 +94,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

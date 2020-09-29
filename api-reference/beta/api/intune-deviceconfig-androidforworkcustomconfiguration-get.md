@@ -1,13 +1,15 @@
 ---
 title: "Get androidForWorkCustomConfiguration"
 description: "Read properties and relationships of the androidForWorkCustomConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get androidForWorkCustomConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1576
+Content-Length: 1519
 
 {
   "value": {
@@ -101,17 +103,16 @@ Content-Length: 1576
     "version": 7,
     "omaSettings": [
       {
-        "@odata.type": "microsoft.graph.omaSettingInteger",
+        "@odata.type": "microsoft.graph.omaSetting",
         "displayName": "Display Name value",
         "description": "Description value",
-        "omaUri": "Oma Uri value",
-        "value": 5,
-        "isReadOnly": true
+        "omaUri": "Oma Uri value"
       }
     ]
   }
 }
 ```
+
 
 
 

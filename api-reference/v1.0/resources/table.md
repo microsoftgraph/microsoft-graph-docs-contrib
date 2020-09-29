@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # Table resource type
 
+Namespace: microsoft.graph
+
 Represents an Excel table.
 
 
@@ -95,3 +97,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

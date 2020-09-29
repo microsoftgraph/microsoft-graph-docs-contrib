@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # album resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A photo album is a way to virtually group [driveItems][driveItem] with [photo][] facets together in a [bundle][]. Bundles of this type will have the **album** property set on the [bundle][] resource.
@@ -37,3 +39,5 @@ To remove a custom-set cover, you can set the **coverImageItemId** property to n
 [bundle]: bundle.md
 [driveItem]: driveItem.md
 [photo]: photo.md
+
+

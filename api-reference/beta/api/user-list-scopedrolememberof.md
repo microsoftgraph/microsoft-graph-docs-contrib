@@ -1,13 +1,15 @@
 ---
 title: "List scopedAdministratorOf"
 description: "Retrieve a list of scopedRoleMembership for the user."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
 # List scopedAdministratorOf
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,8 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/scopedAdministratorOf
-GET /users/{id}/scopedAdministratorOf
+GET /me/scopedRoleMemberOf 
+GET /users/{id}/scopedRoleMemberOf
 
 ```
 ## Optional query parameters
@@ -53,7 +55,7 @@ Here is an example of the request.
   "name": "get_scopedadministratorof"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/scopedAdministratorOf
+GET https://graph.microsoft.com/beta/me/scopedRoleMemberOf
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-scopedadministratorof-csharp-snippets.md)]
@@ -111,3 +113,5 @@ Content-length: 307
   ]
 }
 -->
+
+

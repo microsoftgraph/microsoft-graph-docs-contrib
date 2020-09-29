@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update chartgridlines
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of chartgridlines object.
@@ -106,3 +108,5 @@ Content-length: 21
   ]
 }
 -->
+
+

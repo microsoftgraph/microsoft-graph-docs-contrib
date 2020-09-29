@@ -1,13 +1,15 @@
 ---
 title: "Delete conversation thread"
 description: "Delete a thread object."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Delete conversation thread
+
+Namespace: microsoft.graph
 Delete a [thread](../resources/conversationthread.md) object.
 
 ## Permissions
@@ -90,3 +92,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

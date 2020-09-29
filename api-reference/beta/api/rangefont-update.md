@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update rangefont
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of rangefont object.
@@ -121,3 +123,5 @@ Content-length: 134
   ]
 }
 -->
+
+

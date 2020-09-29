@@ -1,13 +1,15 @@
 ---
 title: "Add owner"
 description: "Add an owner to an application."
-author: "davidmu1"
+author: "sureshja"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Add owner
+
+Namespace: microsoft.graph
 
 Add an owner to an [application](../resources/application.md) by posting to the owners collection.
 
@@ -16,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Directory.AccessAsUser.All    |
+|Delegated (work or school account) |  Application.ReadWrite.All and Directory.Read.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.ReadWrite.OwnedBy and Directory.Read.All, Application.ReadWrite.All and Directory.Read.All |
 
@@ -105,3 +107,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

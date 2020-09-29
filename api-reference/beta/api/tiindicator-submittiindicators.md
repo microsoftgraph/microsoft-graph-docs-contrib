@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # tiIndicator: submitTiIndicators
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.
@@ -167,3 +169,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookChartAxes resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the chart axes.
@@ -59,3 +61,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

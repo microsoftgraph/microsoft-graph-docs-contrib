@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # workbookPivotTable: refresh
 
+Namespace: microsoft.graph
+
 Refreshes the PivotTable.
 
 
@@ -90,3 +92,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

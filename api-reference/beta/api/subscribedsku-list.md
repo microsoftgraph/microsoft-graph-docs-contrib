@@ -2,12 +2,14 @@
 title: "List subscribedSkus"
 description: "Retrieve the list of commercial subscriptions that an organization has acquired."
 localization_priority: Normal
-author: "davidmu1"
+author: "SumitParikh"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List subscribedSkus
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -121,3 +123,5 @@ Content-length: 547
   ]
 }
 -->
+
+

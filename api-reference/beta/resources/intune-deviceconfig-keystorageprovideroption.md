@@ -1,13 +1,15 @@
 ---
 title: "keyStorageProviderOption enum type"
 description: "Key Storage Provider (KSP) Import Options."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # keyStorageProviderOption enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,6 +24,9 @@ Key Storage Provider (KSP) Import Options.
 |useTpmKspOtherwiseFail|1|Import to Trusted Platform Module (TPM) KSP if present, otherwise fail.|
 |usePassportForWorkKspOtherwiseFail|2|Import to Passport for work KSP if available, otherwise fail.|
 |useSoftwareKsp|3|Import to Software KSP.|
+
+
+
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementPartnerAppType enum type"
 description: "Partner App Type."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # deviceManagementPartnerAppType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,6 +23,9 @@ Partner App Type.
 |unknown|0|Partner App type is unknown.|
 |singleTenantApp|1|Partner App is Single tenant in AAD.|
 |multiTenantApp|2|Partner App is Multi tenant in AAD.|
+
+
+
 
 
 

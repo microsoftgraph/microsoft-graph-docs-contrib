@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # DriveItemVersion resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **DriveItemVersion** resource represents a specific version of a [DriveItem](driveitem.md).
@@ -75,3 +77,5 @@ The following table defines the relationships that the **driveItemVersion** reso
   "suppressions": []
 }
 -->
+
+

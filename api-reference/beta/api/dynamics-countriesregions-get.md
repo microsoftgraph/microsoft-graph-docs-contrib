@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Get countriesRegions
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the properties and relationships of a countriesRegions object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -64,3 +69,5 @@ Here is an example of the response.
   "lastModifiedDateTime": "2017-03-14T15:22:31.753Z"
 }
 ```
+
+

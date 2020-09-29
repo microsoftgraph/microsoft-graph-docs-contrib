@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete workforceIntegration
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an instance of a [workforceIntegration](../resources/workforceintegration.md).
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /teamwork/workforceIntegrations
+DELETE /teamwork/workforceIntegrations/{workforceIntegrationId}
 ```
 
 ## Request headers
@@ -58,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/teamwork/workforceIntegrations
+DELETE https://graph.microsoft.com/beta/teamwork/workforceIntegrations/{workforceIntegrationId}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-workforceintegration-csharp-snippets.md)]
@@ -97,3 +99,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

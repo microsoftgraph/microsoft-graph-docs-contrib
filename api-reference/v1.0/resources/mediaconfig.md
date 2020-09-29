@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # mediaConfig resource type
 
+Namespace: microsoft.graph
+
 An abstract base class that contains the media configuration used to connect to a call.
 
 ## JSON representation
@@ -37,3 +39,4 @@ An abstract base class that contains the media configuration used to connect to 
   "suppressions": []
 }
 -->
+

@@ -4,10 +4,12 @@ description: " > **Important:** APIs under the /beta version in Microsoft Graph 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
 # fileSecurityState resource type
+
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,3 +58,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

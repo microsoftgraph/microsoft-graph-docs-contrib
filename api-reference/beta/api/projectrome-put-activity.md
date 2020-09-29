@@ -4,10 +4,12 @@ description: "Create a new or replace an existing user activity for your app. If
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: apiPageType
-author: ""
+author: "ailae"
 ---
 
 # Create or replace an activity
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -301,3 +303,5 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
+
+

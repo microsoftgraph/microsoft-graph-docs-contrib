@@ -1,13 +1,15 @@
 ---
 title: "androidWorkProfileCompliancePolicy resource type"
 description: "This class contains compliance settings for Android Work Profile."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # androidWorkProfileCompliancePolicy resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -117,6 +119,9 @@ Here is a JSON representation of the resource.
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
+
+
+
 
 
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List shared
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Calculated insight that includes the list of documents shared with a user.
@@ -112,4 +114,6 @@ Here is an example of the response. Note: The response object shown here may be 
                 "type: "type-value" 
 }
 ```
+
+
 

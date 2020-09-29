@@ -1,13 +1,15 @@
 ---
 title: "androidEnterpriseAlwaysOnVpnPackageType enum type"
 description: "Not yet documented"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # androidEnterpriseAlwaysOnVpnPackageType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -24,6 +26,9 @@ Not yet documented
 |f5Access|3|F5 Access.|
 |paloAltoNetworksGlobalProtect|4|Palo Alto Networks GlobalProtect.|
 |pulseSecure|5|Pulse Secure.|
+
+
+
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "applePushNotificationCertificate resource type"
 description: "Apple push notification certificate."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # applePushNotificationCertificate resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,6 +23,7 @@ Apple push notification certificate.
 |[Get applePushNotificationCertificate](../api/intune-devices-applepushnotificationcertificate-get.md)|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|Read properties and relationships of the [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) object.|
 |[Update applePushNotificationCertificate](../api/intune-devices-applepushnotificationcertificate-update.md)|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|Update the properties of a [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) object.|
 |[downloadApplePushNotificationCertificateSigningRequest function](../api/intune-devices-applepushnotificationcertificate-downloadapplepushnotificationcertificatesigningrequest.md)|String|Download Apple push notification certificate signing request|
+|[generateApplePushNotificationCertificateSigningRequest action](../api/intune-devices-applepushnotificationcertificate-generateapplepushnotificationcertificatesigningrequest.md)|String|Download Apple push notification certificate signing request|
 
 ## Properties
 |Property|Type|Description|
@@ -60,6 +63,9 @@ Here is a JSON representation of the resource.
   "certificate": "String"
 }
 ```
+
+
+
 
 
 

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete accessPackage
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [accessPackage](../resources/accesspackage.md) object.
@@ -98,3 +100,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

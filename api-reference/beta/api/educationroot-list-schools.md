@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List educationSchools
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of all school objects.
@@ -142,3 +144,5 @@ Content-length: 345
   ]
 }
 -->
+
+

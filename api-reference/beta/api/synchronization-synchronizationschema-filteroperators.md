@@ -3,11 +3,13 @@ title: "synchronizationSchema: filterOperators"
 description: "List all operators supported in the scoping filters."
 localization_priority: Normal
 doc_type: apiPageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 
 # synchronizationSchema: filterOperators
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -198,3 +200,5 @@ non-string type names like "Integer" or "Boolean"
   ]
 }
 -->
+
+

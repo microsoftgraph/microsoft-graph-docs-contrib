@@ -1,13 +1,15 @@
 ---
 title: "Create mailFolder"
 description: "Use this API to create a new child mailFolder."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Create mailFolder
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -129,3 +131,5 @@ Content-length: 179
   ]
 }
 -->
+
+

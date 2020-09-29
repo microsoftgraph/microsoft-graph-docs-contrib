@@ -9,6 +9,8 @@ ms.prod: "cloud-communications"
 
 # Get presence
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a user's [presence](../resources/presence.md) information.
@@ -18,15 +20,16 @@ One of the following permissions is required to call these APIs. To learn more, 
 
 | Permission type | Permissions (from least to most privileged)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Delegated (work or school account)     | Presence.Read, Presence.Read.All                         |
-| Delegated (personal Microsoft account) | Not Supported.                         |
-| Application                            | Not Supported.                                  |
+| Delegated (work or school account)     | Presence.Read, Presence.Read.All      |
+| Delegated (personal Microsoft account) | Not Supported.                        |
+| Application                            | Not Supported.                        |
 
 ## HTTP Requests
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/presence
 GET /users/{id}/presence
+GET /communications/presences
 ```
 
 ## Request Headers
@@ -145,6 +148,61 @@ Content-Length: 1574
 }
 ```
 
+### Example 3: Get the presence information of another user
+
+The following example shows how to get the presence information for another user. This operation requires the Presence.Read.All permission.
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get-user-presences"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d-8eaa-e39d80d3a647
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-presences-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-presences-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-user-presences-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "name": "get-user-presences",
+  "@odata.type": "microsoft.graph.presence",
+  "truncated":"true"
+}-->
+
+```http
+HTTP/1.1 200 OK
+
+{
+    "value": [
+        {
+            "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
+            "availability": "Away",
+            "activity": "BeRightBack"
+        }
+    ]
+}
+```
+
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -158,3 +216,5 @@ Content-Length: 1574
   ]
 }
 -->
+
+

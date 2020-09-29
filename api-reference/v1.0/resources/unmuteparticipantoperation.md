@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # unmuteParticipantOperation resource type
 
+Namespace: microsoft.graph
+
 Describes the response format of a call participant unmute operation.
 
 ## Properties
@@ -52,3 +54,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

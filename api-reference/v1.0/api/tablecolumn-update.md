@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update tablecolumn
 
+Namespace: microsoft.graph
+
 Update the properties of tablecolumn object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -112,3 +114,4 @@ Content-length: 81
   "suppressions": [
   ]
 }-->
+

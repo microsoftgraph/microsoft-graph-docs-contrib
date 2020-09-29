@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update charttitle
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of charttitle object.
@@ -110,3 +112,5 @@ Content-length: 64
   ]
 }
 -->
+
+

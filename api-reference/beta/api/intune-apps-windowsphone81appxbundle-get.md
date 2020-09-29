@@ -1,13 +1,15 @@
 ---
 title: "Get windowsPhone81AppXBundle"
 description: "Read properties and relationships of the windowsPhone81AppXBundle object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get windowsPhone81AppXBundle
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2642
+Content-Length: 2703
 
 {
   "value": {
@@ -92,6 +94,8 @@ Content-Length: 2642
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "committedContentVersion": "Committed Content Version value",
     "fileName": "File Name value",
     "size": 4,
@@ -140,6 +144,7 @@ Content-Length: 2642
   }
 }
 ```
+
 
 
 

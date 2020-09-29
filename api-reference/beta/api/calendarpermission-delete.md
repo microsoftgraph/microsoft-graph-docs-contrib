@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete calendarPermission
 
+Namespace: microsoft.graph
+
 Delete calendarPermission.
 
 ## Permissions
@@ -106,3 +108,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -2,12 +2,14 @@
 title: "conditionalAccessLocations resource type"
 description: "Represents locations included in and excluded from the policy scope."
 localization_priority: Normal
-author: "davidmu1"
+author: "videor"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # conditionalAccessLocations resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,3 +56,4 @@ None.
   "section": "documentation",
   "tocPath": ""
 }-->
+

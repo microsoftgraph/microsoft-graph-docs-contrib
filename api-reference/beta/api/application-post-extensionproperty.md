@@ -2,12 +2,14 @@
 title: "Create extensionProperty"
 description: "Create a new extensionProperty."
 localization_priority: Normal
-author: "davidmu1"
+author: "sureshja"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # Create extensionProperty
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Application.ReadWrite.All    |
+|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -35,7 +37,7 @@ POST /applications/{id}/extensionProperties
 | Name       | Description|
 |:-----------|:----------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-type | application/json. Required. |
+| Content-Type | application/json. Required. |
 
 ## Request body
 
@@ -128,3 +130,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

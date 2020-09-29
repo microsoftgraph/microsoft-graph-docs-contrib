@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # quota resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **quota** resource provides details about space constrains on a [drive](drive.md) resource.
@@ -66,3 +68,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

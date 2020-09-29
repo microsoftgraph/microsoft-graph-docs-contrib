@@ -2,12 +2,14 @@
 title: "Update profilephoto"
 description: "Update the photo for the signed-in **user**, or the specified **group** or **contact**. Since there"
 localization_priority: Priority
-author: ""
+author: "kevinbellinger"
 ms.prod: ""
 doc_type: apiPageType
 ---
 
 # Update profilephoto
+
+Namespace: microsoft.graph
 
 Update the photo for the signed-in **user**, or the specified **group** or **contact**. Since there
 is currently a limit of 4MB on the total size of each REST request, this limits the size of the photo
@@ -107,3 +109,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

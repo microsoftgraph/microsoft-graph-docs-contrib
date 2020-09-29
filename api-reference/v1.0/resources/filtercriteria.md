@@ -2,12 +2,14 @@
 title: "FilterCriteria resource type"
 description: "Represents the filtering criteria applied to a column."
 localization_priority: Normal
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # FilterCriteria resource type
+
+Namespace: microsoft.graph
 
 Represents the filtering criteria applied to a column.
 
@@ -55,3 +57,4 @@ Here is a JSON representation of the resource.
       Property 'values' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table."
   ]
 } -->
+

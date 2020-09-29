@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get ChartPoint
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of chartpoint object.
@@ -98,3 +100,5 @@ Content-length: 20
   ]
 }
 -->
+
+

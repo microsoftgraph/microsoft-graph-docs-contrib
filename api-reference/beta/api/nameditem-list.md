@@ -4,10 +4,12 @@ description: "Retrieve a list of nameditem objects."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: ""
+author: "ruoyingl"
 ---
 
 # List NamedItemCollection
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -106,3 +108,5 @@ Content-length: 136
   ]
 }
 -->
+
+

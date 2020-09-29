@@ -1,13 +1,15 @@
 ---
 title: "Create androidWorkProfilePkcsCertificateProfile"
 description: "Create a new androidWorkProfilePkcsCertificateProfile object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Create androidWorkProfilePkcsCertificateProfile
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -211,6 +213,7 @@ Content-Length: 2204
   ]
 }
 ```
+
 
 
 

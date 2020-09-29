@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: EntireRow
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets an object that represents the entire row of the range.
@@ -104,3 +106,5 @@ Content-length: 169
   ]
 }
 -->
+
+

@@ -2,12 +2,14 @@
 title: "List contracts"
 description: "Retrieve a list of contract objects associated to a partner tenant."
 localization_priority: Normal
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List contracts
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -117,3 +119,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamMemberSettings resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the [team](team.md).
@@ -55,3 +57,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

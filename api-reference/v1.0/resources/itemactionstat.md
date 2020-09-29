@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # itemActionStat resource type
 
+Namespace: microsoft.graph
+
 The **itemActionStat** resource provides aggregate details about an action over a period of time.
 
 ## Properties
@@ -43,3 +45,4 @@ The **itemActionStat** resource provides aggregate details about an action over 
   "suppressions": []
 }
 -->
+

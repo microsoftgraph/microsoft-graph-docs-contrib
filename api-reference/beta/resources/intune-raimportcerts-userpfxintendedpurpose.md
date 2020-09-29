@@ -1,13 +1,15 @@
 ---
 title: "userPfxIntendedPurpose enum type"
 description: "Supported values for the intended purpose of a user PFX certificate."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # userPfxIntendedPurpose enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -23,6 +25,9 @@ Supported values for the intended purpose of a user PFX certificate.
 |smimeSigning|2|Valid for S/MIME signing.|
 |vpn|4|Valid for use in VPN.|
 |wifi|8|Valid for use in WiFi.|
+
+
+
 
 
 

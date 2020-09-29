@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # securityAction: cancelSecurityAction
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Cancel a security operation.
@@ -101,3 +103,5 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+
+

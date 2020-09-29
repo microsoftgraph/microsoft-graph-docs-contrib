@@ -2,12 +2,14 @@
 title: "Delete certificateBasedAuthConfiguration"
 description: "Delete certificateBasedAuthConfiguration."
 localization_priority: Normal
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # Delete certificateBasedAuthConfiguration
+
+Namespace: microsoft.graph
 
 Delete a [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) object.
 
@@ -99,3 +101,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

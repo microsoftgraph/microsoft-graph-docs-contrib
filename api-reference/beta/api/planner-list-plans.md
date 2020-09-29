@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List plans
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of **plannerplan** objects.
@@ -115,3 +117,5 @@ Content-length: 421
   ]
 }
 -->
+
+

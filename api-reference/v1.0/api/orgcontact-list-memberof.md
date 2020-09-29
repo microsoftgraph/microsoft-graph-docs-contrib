@@ -2,12 +2,14 @@
 title: "List memberOf"
 description: "List the groups that this organizaitonal contact is a member of."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List memberOf
+
+Namespace: microsoft.graph
 
 List the groups that this [organizational contact](../resources/orgcontact.md) is a member of.
 
@@ -116,3 +118,4 @@ Content-length: 155
   ]
 }
 -->
+

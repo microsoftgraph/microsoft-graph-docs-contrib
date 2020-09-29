@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List openShift
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List [openshift](../resources/openshift.md) objects in a team.
@@ -159,3 +161,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

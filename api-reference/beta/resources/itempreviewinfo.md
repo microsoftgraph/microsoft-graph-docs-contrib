@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # ItemPreviewInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **ItemPreviewInfo** resource contains information on how to embed a preview of a [DriveItem](driveitem.md).
@@ -42,3 +44,5 @@ param1=value&param2=another%20value
 ```
 
 The formats of URLs and parameters should be considered opaque.
+
+

@@ -1,13 +1,15 @@
 ---
 title: "macOSWiFiConfiguration resource type"
 description: "By providing the configurations in this profile you can instruct the macOS device to connect to desired Wi-Fi endpoint. By specifying the authentication method and security types expected by Wi-Fi endpoint you can make the Wi-Fi connection seamless for end user."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # macOSWiFiConfiguration resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -117,6 +119,9 @@ Here is a JSON representation of the resource.
   "preSharedKey": "String"
 }
 ```
+
+
+
 
 
 

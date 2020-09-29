@@ -1,13 +1,15 @@
 ---
 title: "contactFolder resource type"
 description: "A folder that contains contacts."
-author: "angelgolfer-ms"
+author: "kevinbellinger"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # contactFolder resource type
+
+Namespace: microsoft.graph
 
 A folder that contains contacts.
 
@@ -106,3 +108,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

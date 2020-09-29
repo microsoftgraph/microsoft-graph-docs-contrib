@@ -1,13 +1,15 @@
 ---
 title: "List devices"
 description: "Retrieve a list of device objects registered in the organization."
-author: "davidmu1"
+author: "spunukol"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List devices
+
+Namespace: microsoft.graph
 
 Retrieve a list of device objects registered in the organization.
 
@@ -107,3 +109,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

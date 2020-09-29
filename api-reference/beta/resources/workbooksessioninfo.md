@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookSessionInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Provides information about workbook session.
@@ -50,3 +52,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

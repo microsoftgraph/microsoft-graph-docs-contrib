@@ -1,13 +1,15 @@
 ---
 title: "androidEasEmailProfileConfiguration resource type"
 description: "By providing configurations in this profile you can instruct the native email client on KNOX devices to communicate with an Exchange server and get email, contacts, calendar, tasks, and notes. Furthermore, you can also specify how much email to sync and how often the device should sync."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # androidEasEmailProfileConfiguration resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -129,6 +131,9 @@ Here is a JSON representation of the resource.
   "customDomainName": "String"
 }
 ```
+
+
+
 
 
 

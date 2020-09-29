@@ -4,10 +4,12 @@ description: "Declares the optional claims requested by an application."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # optionalClaims resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,3 +37,5 @@ Here is a JSON representation of the resource.
   "saml2Token": [{"@odata.type": "microsoft.graph.optionalClaim"}]
 }
 ```
+
+

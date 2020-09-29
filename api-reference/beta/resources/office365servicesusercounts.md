@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # office365ServicesUserCounts resource type
 
+Namespace: microsoft.graph
+
 ## Properties
 
 | Property                 | Type   | Description                              |
@@ -26,8 +28,8 @@ doc_type: resourcePageType
 | yammerInactive           | Int64  | The number of inactive users on Yammer.  |
 | teamsActive              | Int64  | The number of active users on Microsoft Teams. Any user who posted messages in team channels, sent messages in private chat sessions, or participated in meetings or calls is considered an active user. |
 | teamsInactive            | Int64  | The number of inactive users on Microsoft Teams.     |
-| office365Active          | Int64  | The number of active users on Office 365.   |
-| office365Inactive        | Int64  | The number of inactive users on Office 365.     |
+| office365Active          | Int64  | The number of active users on Microsoft 365.   |
+| office365Inactive        | Int64  | The number of inactive users on Microsoft 365.     |
 | reportPeriod             | String | The number of days the report covers.    |
 
 ## JSON representation
@@ -59,3 +61,5 @@ The following is a JSON representation of the resource.
   "reportPeriod": "String"
 }
 ```
+
+

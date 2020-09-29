@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # List items shared with the signed-in user
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that have been shared with the owner of the [Drive](../resources/drive.md).
@@ -103,6 +105,7 @@ To access the shared DriveItem resource, you will need to make a request using t
 ```http
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
+By default, **sharedWithMe** returns items shared within your own tenant. To include items shared from external tenants, append `?allowexternal=true` to the GET request.
 
 <!--
 {
@@ -115,3 +118,5 @@ GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
   ]
 }
 -->
+
+

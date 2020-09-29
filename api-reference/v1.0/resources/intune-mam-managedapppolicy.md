@@ -1,13 +1,15 @@
 ---
 title: "managedAppPolicy resource type"
 description: "The ManagedAppPolicy resource represents a base type for platform specific policies."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # managedAppPolicy resource type
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -52,6 +54,11 @@ Here is a JSON representation of the resource.
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 

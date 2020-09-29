@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # columnDefinition resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## JSON representation
@@ -116,3 +118,5 @@ To see them when showing **field** values on [listItems][listItem], include the 
   "suppressions": []
 }
 -->
+
+

@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Update unitsOfMeasure
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of a units of measure object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -75,4 +80,6 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-15T01:21:09.563Z"
 }
 ```
+
+
 

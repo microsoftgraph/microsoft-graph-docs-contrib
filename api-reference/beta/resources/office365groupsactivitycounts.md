@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # office365GroupsActivityCounts resource type
 
+Namespace: microsoft.graph
+
 ## Properties
 
 | Property               | Type   | Description                              |
@@ -41,3 +43,5 @@ The following is a JSON representation of the resource.
   "reportPeriod": "String"
 }
 ```
+
+

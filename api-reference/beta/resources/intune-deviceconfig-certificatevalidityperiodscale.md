@@ -1,13 +1,15 @@
 ---
 title: "certificateValidityPeriodScale enum type"
 description: "Certificate Validity Period Options."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # certificateValidityPeriodScale enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,6 +23,9 @@ Certificate Validity Period Options.
 |days|0|Days.|
 |months|1|Months.|
 |years|2|Years.|
+
+
+
 
 
 

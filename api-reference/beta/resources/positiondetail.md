@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # positionDetail resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents information about positions related to entities within a user's [profile](profile.md).
@@ -59,3 +61,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

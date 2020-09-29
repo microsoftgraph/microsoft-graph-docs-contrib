@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # List items shared with the signed-in user
 
+Namespace: microsoft.graph
+
 Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that have been shared with the owner of the [Drive](../resources/drive.md).
 
 ## Permissions
@@ -107,6 +109,10 @@ To access the shared DriveItem resource, you will need to make a request using t
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
 
+By default, **sharedWithMe** return items shared within your own tenant. To include items shared from external tenants, append `?allowexternal=true` to the GET request.
+
+
+
 <!-- {
   "type": "#page.annotation",
   "description": "List the items shared with the owner of a drive.",
@@ -116,3 +122,4 @@ GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
   "suppressions": [
   ]
 } -->
+

@@ -4,10 +4,12 @@ description: "Here is a JSON representation of the resource"
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "MSGraphDocsVteam"
 ---
 
 # chunkedUploadSessionDescriptor resource type
+
+Namespace: microsoft.graph
 
 
 ## Properties
@@ -43,3 +45,5 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

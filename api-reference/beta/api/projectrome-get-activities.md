@@ -4,10 +4,12 @@ description: "Get activities for a given user. Unlike the **recent** OData funct
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: apiPageType
-author: ""
+author: "ailae"
 ---
 
 # Get user activities
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -150,3 +152,5 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
+
+

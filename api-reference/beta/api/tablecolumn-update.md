@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update tablecolumn
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of tablecolumn object.
@@ -113,3 +115,5 @@ Content-length: 81
   ]
 }
 -->
+
+

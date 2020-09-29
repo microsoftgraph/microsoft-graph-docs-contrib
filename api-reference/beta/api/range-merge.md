@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: merge
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Merge the range cells into one region in the worksheet.
@@ -104,3 +106,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

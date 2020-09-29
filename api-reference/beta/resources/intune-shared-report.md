@@ -2,12 +2,14 @@
 title: "report resource type"
 description: "Describes the report resource of the Microsoft Graph API for Intune, which supports multiple workflows."
 localization_priority: Normal
-author: "rolyon"
+author: "dougeby"
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # report resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -40,6 +42,9 @@ Here is a JSON representation of the resource.
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
+
+
+
 
 
 

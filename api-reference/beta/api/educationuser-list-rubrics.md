@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List rubrics
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [educationRubric](../resources/educationrubric.md) objects.
@@ -181,3 +183,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

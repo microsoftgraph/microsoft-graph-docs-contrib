@@ -2,12 +2,14 @@
 title: "List registeredDevices"
 description: "Get the list of user's registered devices."
 localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "krbain"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
 # List registeredDevices
+
+Namespace: microsoft.graph
 
 Get the list of user's registered devices.
 ## Permissions
@@ -103,3 +105,4 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
+

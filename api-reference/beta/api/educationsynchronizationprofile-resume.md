@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Resume sync on an educationSynchronizationProfile
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Resume the sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
@@ -87,3 +89,5 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+
+

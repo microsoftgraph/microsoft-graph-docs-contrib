@@ -1,13 +1,15 @@
 ---
 title: "windows10EditionType enum type"
 description: "Windows 10 Edition type."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # windows10EditionType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -38,6 +40,9 @@ Windows 10 Edition type.
 |windows10Mobile|17|Windows 10 Mobile|
 |windows10IoTCore|18|Windows 10 IoT Core|
 |windows10IoTCoreCommercial|19|Windows 10 IoT Core Commercial|
+
+
+
 
 
 

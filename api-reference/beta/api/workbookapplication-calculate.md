@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # workbookApplication: calculate
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recalculate all currently opened workbooks in Excel.
@@ -105,3 +107,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

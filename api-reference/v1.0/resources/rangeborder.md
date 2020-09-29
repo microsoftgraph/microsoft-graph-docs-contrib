@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # RangeBorder resource type
 
+Namespace: microsoft.graph
+
 Represents the border of an object.
 
 
@@ -65,3 +67,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

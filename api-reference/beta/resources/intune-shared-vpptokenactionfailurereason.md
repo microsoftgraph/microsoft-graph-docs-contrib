@@ -1,13 +1,15 @@
 ---
 title: "vppTokenActionFailureReason enum type"
 description: "Possible types of reasons for an Apple Volume Purchase Program token action failure."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # vppTokenActionFailureReason enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -23,6 +25,9 @@ Possible types of reasons for an Apple Volume Purchase Program token action fail
 |internalError|2|There was an internal error.|
 |expiredVppToken|3|There was an error because the Apple Volume Purchase Program token was expired.|
 |expiredApplePushNotificationCertificate|4|There was an error because the Apple Volume Purchase Program Push Notification certificate expired.|
+
+
+
 
 
 

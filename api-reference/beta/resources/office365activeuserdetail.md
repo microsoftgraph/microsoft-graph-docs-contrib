@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # office365ActiveUserDetail resource type
 
+Namespace: microsoft.graph
+
 ## Properties
 
 | Property                          | Type              | Description                              |
@@ -75,3 +77,5 @@ The following is a JSON representation of the resource.
   "assignedProducts": ["String"]
 }
 ```
+
+

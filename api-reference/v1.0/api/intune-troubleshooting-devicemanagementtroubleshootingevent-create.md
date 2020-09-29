@@ -1,13 +1,15 @@
 ---
 title: "Create deviceManagementTroubleshootingEvent"
 description: "Create a new deviceManagementTroubleshootingEvent object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Create deviceManagementTroubleshootingEvent
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -83,6 +85,11 @@ Content-Length: 228
   "correlationId": "Correlation Id value"
 }
 ```
+
+
+
+
+
 
 
 

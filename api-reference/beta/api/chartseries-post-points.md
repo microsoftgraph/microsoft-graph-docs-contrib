@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create ChartPoint
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to create a new ChartPoint.
@@ -101,3 +103,5 @@ Content-length: 3
   ]
 }
 -->
+
+

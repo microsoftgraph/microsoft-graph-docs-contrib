@@ -1,13 +1,15 @@
 ---
 title: "Delete conversation"
 description: "Delete a conversation object."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Delete conversation
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -90,3 +92,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

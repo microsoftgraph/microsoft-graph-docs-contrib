@@ -3,11 +3,13 @@ title: "Get FormatProtection"
 description: "Retrieve the properties and relationships of formatprotection object."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 ---
 
 # Get FormatProtection
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -99,3 +101,5 @@ Content-length: 45
   ]
 }
 -->
+
+

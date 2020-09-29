@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get plannerPlanDetails
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of **plannerplandetails** object.
@@ -109,3 +111,5 @@ Content-length: 373
   ]
 }
 -->
+
+

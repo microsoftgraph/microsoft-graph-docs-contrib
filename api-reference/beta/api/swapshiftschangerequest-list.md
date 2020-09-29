@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List swapShiftsChangeRequest
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) objects in the team.
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/swapShiftsChangeRequests
+GET /teams/{teamId}/schedule/swapShiftsChangeRequests
 ```
 
 ## Optional query parameters
@@ -64,7 +66,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/swapShiftsChangeRequests
+GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/swapShiftsChangeRequests
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-swapshiftschangerequest-csharp-snippets.md)]
@@ -129,3 +131,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

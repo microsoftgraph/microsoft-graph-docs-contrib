@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get ChartLineFormat
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of chartlineformat object.
@@ -99,3 +101,5 @@ Content-length: 28
   ]
 }
 -->
+
+

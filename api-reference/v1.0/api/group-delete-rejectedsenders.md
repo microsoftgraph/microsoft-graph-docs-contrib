@@ -1,13 +1,15 @@
 ---
 title: "Remove rejectedSender"
 description: "Remove a user or group from the rejected-senders list."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Remove rejectedSender
+
+Namespace: microsoft.graph
 Remove a user or group from the rejected-senders list.
 
 ## Permissions
@@ -90,3 +92,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

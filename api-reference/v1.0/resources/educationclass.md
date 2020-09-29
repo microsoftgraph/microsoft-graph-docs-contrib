@@ -1,6 +1,6 @@
 ---
 title: "educationClass resource type"
-description: "Represents a class within a school. The **educationClass** resource corresponds to the Office 365 group and shares the same ID. Students are regular members of the class, and teachers are owners and have appropriate rights. For Office experiences to work correctly, teachers must be members of both the teachers and members collections.  "
+description: "Represents a class within a school. The **educationClass** resource corresponds to the Microsoft 365 group and shares the same ID. Students are regular members of the class, and teachers are owners and have appropriate rights. For Office experiences to work correctly, teachers must be members of both the teachers and members collections.  "
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
@@ -9,7 +9,9 @@ doc_type: resourcePageType
 
 # educationClass resource type
 
-Represents a class within a school. The **educationClass** resource corresponds to the Office 365 group and shares the same ID. Students are regular members of the class, and teachers are owners and have appropriate rights. For Office experiences to work correctly, teachers must be members of both the teachers and members collections.  
+Namespace: microsoft.graph
+
+Represents a class within a school. The **educationClass** resource corresponds to the Microsoft 365 group and shares the same ID. Students are regular members of the class, and teachers are owners and have appropriate rights. For Office experiences to work correctly, teachers must be members of both the teachers and members collections.  
 
 
 ## Methods
@@ -24,7 +26,7 @@ Represents a class within a school. The **educationClass** resource corresponds 
 |[Add teacher](../api/educationclass-post-teachers.md) |[educationUser](educationuser.md)| Add a new **educationUser** for the class by posting to the teachers navigation property.|
 |[List teachers](../api/educationclass-list-teachers.md) |[educationUser](educationuser.md) collection| Get a list of teachers for the class.|
 |[Remove teacher](../api/educationclass-delete-teachers.md) |[educationUser](educationuser.md)| Remove an **educationUser** from the class through the teachers navigation property.|
-|[Get group](../api/educationclass-get-group.md) |[group](group.md)| Get the Office 365 **group** that corresponds to this **educationClass**.|
+|[Get group](../api/educationclass-get-group.md) |[group](group.md)| Get the Microsoft 365 **group** that corresponds to this **educationClass**.|
 |[Update](../api/educationclass-update.md) | [educationClass](educationclass.md)	|Update **educationClass** object. |
 |[Delete](../api/educationclass-delete.md) | None |Delete **educationClass** object. |
 
@@ -87,3 +89,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

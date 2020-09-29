@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get educationRubric
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of an [educationRubric](../resources/educationrubric.md) object.
@@ -193,3 +195,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

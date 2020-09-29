@@ -1,13 +1,15 @@
 ---
 title: "deviceConfigurationConflictSummary resource type"
 description: "Conflict summary for a set of device configuration policies."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # deviceConfigurationConflictSummary resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -50,7 +52,8 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.settingSource",
       "id": "String",
-      "displayName": "String"
+      "displayName": "String",
+      "sourceType": "String"
     }
   ],
   "id": "String (identifier)",
@@ -60,6 +63,9 @@ Here is a JSON representation of the resource.
   "deviceCheckinsImpacted": 1024
 }
 ```
+
+
+
 
 
 

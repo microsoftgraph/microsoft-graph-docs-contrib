@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Create items
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create an item in Dynamics 365 Business Central for use on invoices, quotes, etc.
 
 ## Permissions
@@ -84,4 +89,6 @@ Content-type: application/json
   "lastModifiedDateTime": "2015-11-09T02:14:32Z"
 }
 ```
+
+
 

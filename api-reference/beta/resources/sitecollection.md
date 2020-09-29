@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # SiteCollection resource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **siteCollection** resource provides more information about a site collection.
@@ -57,3 +59,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

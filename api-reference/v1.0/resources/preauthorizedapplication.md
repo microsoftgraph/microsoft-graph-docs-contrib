@@ -4,10 +4,12 @@ description: "Lists the pre-authorized client applications"
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # preAuthorizedApplication resource type
+
+Namespace: microsoft.graph
 
 Lists the client applications that are pre-authorized with the specified permissions to access this application's APIs. Users are not required to consent to any pre-authorized application (for the permissions specified). However, any additional permissions not listed in preAuthorizedApplications (requested through incremental consent for example) will require user consent.
 
@@ -50,3 +52,4 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # Chart resource type
 
+Namespace: microsoft.graph
+
 Represents a chart object in a workbook.
 
 
@@ -82,3 +84,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

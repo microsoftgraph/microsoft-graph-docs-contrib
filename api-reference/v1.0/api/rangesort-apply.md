@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # RangeSort: apply
 
+Namespace: microsoft.graph
+
 Perform a sort operation.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -122,3 +124,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

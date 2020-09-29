@@ -8,6 +8,11 @@ doc_type: resourcePageType
 ---
 
 # Dimensions resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a dimension in Dynamics 365 Business Central.
 
 ## Methods
@@ -39,4 +44,6 @@ Here is a JSON representation of the resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
+
+
 

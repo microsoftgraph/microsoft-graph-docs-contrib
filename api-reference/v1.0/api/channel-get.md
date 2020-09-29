@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get channel
 
+Namespace: microsoft.graph
+
 
 
 Retrieve the properties and relationships of a [channel](../resources/channel.md).
@@ -28,7 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}
-
 ```
 
 ## Optional query parameters
@@ -108,3 +109,4 @@ Content-length: 201
   "suppressions": [
   ]
 }-->
+

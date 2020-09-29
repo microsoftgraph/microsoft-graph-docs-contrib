@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # audioConferencing resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents phone access information for an [onlineMeeting](onlinemeeting.md).
@@ -54,3 +56,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

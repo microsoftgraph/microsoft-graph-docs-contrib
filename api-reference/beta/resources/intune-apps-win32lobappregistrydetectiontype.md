@@ -1,13 +1,15 @@
 ---
 title: "win32LobAppRegistryDetectionType enum type"
 description: "Contains all supported registry data detection type."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # win32LobAppRegistryDetectionType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -24,6 +26,9 @@ Contains all supported registry data detection type.
 |string|3|String value type.|
 |integer|4|Integer value type.|
 |version|5|Version value type.|
+
+
+
 
 
 

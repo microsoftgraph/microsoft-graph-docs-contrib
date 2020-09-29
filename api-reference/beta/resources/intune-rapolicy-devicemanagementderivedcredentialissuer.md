@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementDerivedCredentialIssuer enum type"
 description: "Supported values for the derived credential issuer."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # deviceManagementDerivedCredentialIssuer enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,6 +24,9 @@ Supported values for the derived credential issuer.
 |entrustDatacard|1|Entrust Datacard|
 |purebred|2|Purebred|
 |xTec|3|XTec|
+
+
+
 
 
 

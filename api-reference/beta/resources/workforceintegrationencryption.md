@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # workforceIntegrationEncryption resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An encryption entity defining the protocol and secret for a [workforceintegration](../resources/workforceintegration.md).
@@ -49,3 +51,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

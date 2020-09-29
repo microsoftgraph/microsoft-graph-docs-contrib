@@ -1,13 +1,15 @@
 ---
 title: "Create androidGeneralDeviceConfiguration"
 description: "Create a new androidGeneralDeviceConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Create androidGeneralDeviceConfiguration
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -314,6 +316,11 @@ Content-Length: 3205
   "securityRequireVerifyApps": true
 }
 ```
+
+
+
+
+
 
 
 

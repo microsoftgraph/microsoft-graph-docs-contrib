@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get shift
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [shift](../resources/shift.md) object by ID.
@@ -17,11 +19,11 @@ Retrieve the properties and relationships of a [shift](../resources/shift.md) ob
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |s
-|Application | Schedule.Read.All*, Schedule.ReadWrite.All* |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Group.Read.All, Group.ReadWrite.All         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Schedule.Read.All*, Schedule.ReadWrite.All* |
 
 >\* **Important:** Application permissions are currently in private preview only and are not available for public use.
 
@@ -34,6 +36,10 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /teams/{teamId}/schedule/shifts/{shiftId}
 ```
+
+## Optional query parameters
+
+This method does not support OData query parameters to customize the response.
 
 ## Request headers
 
@@ -79,7 +85,7 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts/{shiftId}
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
@@ -125,3 +131,5 @@ Content-length: 401
   ]
 }
 -->
+
+

@@ -1,13 +1,15 @@
 ---
 title: "Get deviceCategory"
 description: "Read properties and relationships of the deviceCategory object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get deviceCategory
+
+Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
@@ -99,6 +101,7 @@ Content-Length: 211
   }
 }
 ```
+
 
 
 

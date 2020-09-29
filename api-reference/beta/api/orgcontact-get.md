@@ -2,12 +2,14 @@
 title: "Get orgContact"
 description: "Retrieve the properties and relationships of orgcontact object."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get orgContact
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -115,3 +117,5 @@ Content-length: 222
   ]
 }
 -->
+
+

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # educationPointsOutcome resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An [educationOutcome](educationoutcome.md) that gives a numerical grade.
@@ -60,3 +62,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

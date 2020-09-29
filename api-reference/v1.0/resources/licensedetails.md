@@ -2,12 +2,14 @@
 title: "licenseDetails resource type"
 description: "Contains information about a license assigned to a user."
 localization_priority: Normal
-author: ""
+author: "krbain"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # licenseDetails resource type
+
+Namespace: microsoft.graph
 
 Contains information about a license assigned to a user.
 
@@ -61,3 +63,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete plannerTask
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete **plannerTask**.
@@ -91,3 +93,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

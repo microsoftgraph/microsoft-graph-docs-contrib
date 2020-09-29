@@ -2,12 +2,14 @@
 title: "emailAppUsageUserDetail resource type"
 description: "The following is a JSON representation of the resource."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "pranoychaudhuri"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # emailAppUsageUserDetail resource type
+
+Namespace: microsoft.graph
 
 ## Properties
 
@@ -59,3 +61,5 @@ The following is a JSON representation of the resource.
   "reportPeriod": "String"
 }
 ```
+
+

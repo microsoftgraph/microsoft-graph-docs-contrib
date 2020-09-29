@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get openShift
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of an [openshift](../resources/openshift.md) object.
@@ -33,8 +35,8 @@ GET /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-  
+This method does not support OData query parameters to customize the response.
+
 ## Request headers
 
 | Name      |Description|
@@ -155,3 +157,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

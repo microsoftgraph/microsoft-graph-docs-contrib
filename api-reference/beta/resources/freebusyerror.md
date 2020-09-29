@@ -4,13 +4,15 @@ description: "Represents error information from attempting to get the availabili
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "harini84"
 ---
 
 # freeBusyError resource type
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- 
+
 Represents error information from attempting to get the availability of a user, distribution list, or resource.
 
 ## Properties
@@ -52,3 +54,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete audio routing group
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete the specified [audioRoutingGroup](../resources/audioroutinggroup.md).
@@ -95,3 +97,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

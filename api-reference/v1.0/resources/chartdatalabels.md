@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartDataLabels resource type
 
+Namespace: microsoft.graph
+
 Represents a collection of all the data labels on a chart point.
 
 
@@ -70,3 +72,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

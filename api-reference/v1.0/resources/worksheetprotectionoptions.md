@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # WorksheetProtectionOptions resource type
 
+Namespace: microsoft.graph
+
 Represents the options in sheet protection.
 
 ## Properties
@@ -64,3 +66,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

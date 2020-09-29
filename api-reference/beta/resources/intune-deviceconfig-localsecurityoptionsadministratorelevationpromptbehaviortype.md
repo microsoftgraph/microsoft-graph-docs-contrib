@@ -1,13 +1,15 @@
 ---
 title: "localSecurityOptionsAdministratorElevationPromptBehaviorType enum type"
 description: "Possible values for LocalSecurityOptionsAdministratorElevationPromptBehavior"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # localSecurityOptionsAdministratorElevationPromptBehaviorType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -25,6 +27,9 @@ Possible values for LocalSecurityOptionsAdministratorElevationPromptBehavior
 |promptForCredentials|4|Prompt for credentials|
 |promptForConsent|5|Prompt for consent|
 |promptForConsentForNonWindowsBinaries|6|Prompt for consent for non-Windows binaries|
+
+
+
 
 
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Create a page in the site pages list of a site
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [sitePage][] in the site pages [list][] in a [site][].
@@ -97,6 +99,10 @@ Content-Type: application/json
 ```
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-page-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-page-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -202,3 +208,5 @@ Content-type: application/json
   "suppressions": []
 }
 -->
+
+

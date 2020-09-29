@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Chart: delete
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes the chart object.
@@ -74,3 +76,5 @@ HTTP/1.1 200 OK
   "suppressions": []
 }
 -->
+
+

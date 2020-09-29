@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List timesOff
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the list of [timeOff](../resources/timeoff.md) instances in a [schedule](../resources/schedule.md).
@@ -140,3 +142,5 @@ Content-length: 401
   ]
 }
 -->
+
+

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete itemEmail
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [itemEmail](../resources/itememail.md) object from a user's [profile](../resources/profile.md).
@@ -28,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /me/profile/emails/{id} 
+DELETE /me/profile/emails/{id}
+DELETE /users/{id | userPrincipalName}/profile/emails/{id}
 ```
 
 ## Request headers
@@ -60,6 +63,7 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/me/profile/emails/{id}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-itememail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -73,7 +77,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/emails/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -97,3 +100,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

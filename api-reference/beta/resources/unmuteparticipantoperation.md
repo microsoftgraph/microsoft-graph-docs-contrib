@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # unmuteParticipantOperation resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes the response format of a call participant unmute operation.
@@ -54,3 +56,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

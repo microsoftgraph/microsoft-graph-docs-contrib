@@ -1,6 +1,6 @@
 ---
 title: "Get group"
-description: "Retrieve the Office 365 **group** that corresponds to this **educationClass**."
+description: "Retrieve the Microsoft 365 **group** that corresponds to this **educationClass**."
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
@@ -9,7 +9,9 @@ doc_type: apiPageType
 
 # Get group
 
-Retrieve the Office 365 **group** that corresponds to this **educationClass**.
+Namespace: microsoft.graph
+
+Retrieve the Microsoft 365 **group** that corresponds to this **educationClass**.
 
 >**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...beta/education/me/schools` resource in this case.
 
@@ -114,3 +116,4 @@ Content-length: xxx
   "suppressions": [
   ]
 }-->
+

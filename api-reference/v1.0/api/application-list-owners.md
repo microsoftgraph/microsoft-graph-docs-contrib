@@ -1,13 +1,15 @@
 ---
 title: "List owners"
 description: "Retrieve a list of owners (directoryObject objects) for an application."
-author: "davidmu1"
+author: "sureshja"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List owners
+
+Namespace: microsoft.graph
 
 Retrieve a list of owners for an application that are [directoryObject](../resources/directoryobject.md) objects.
 
@@ -16,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, Directory.ReadWrite.All |
+|Application | Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -29,9 +31,9 @@ GET /applications/{id}/owners
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required.  |
+| Name           | Description                |
+|:---------------|:---------------------------|
+| Authorization  | Bearer {token}. Required.  |
 
 ## Request body
 Do not supply a request body for this method.
@@ -107,3 +109,4 @@ Content-length: 55
   ]
 }
 -->
+

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # RangeSort resource type
 
+Namespace: microsoft.graph
+
 Manages sorting operations on Range objects.
 
 
@@ -101,3 +103,4 @@ Content-Type: application/json
   "suppressions": [
   ]
 }-->
+

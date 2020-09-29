@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 # ChoiceColumn resource type
 
+Namespace: microsoft.graph
+
 The **choiceColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values can be selected from a list of choices.
 
 ## JSON representation
@@ -45,3 +47,4 @@ Here is a JSON representation of a **choiceColumn** resource.
   ],
   "tocPath": "Resources/ChoiceColumn"
 } -->
+

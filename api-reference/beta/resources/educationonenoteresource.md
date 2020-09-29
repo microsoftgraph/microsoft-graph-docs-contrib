@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationOneNoteResource resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A subclass of [educationResource](educationresource.md). This represents the location of the OneNote page.  
@@ -51,3 +53,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

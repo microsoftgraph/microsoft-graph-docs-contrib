@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete educationRubric
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [educationRubric](../resources/educationrubric.md) object.
@@ -97,3 +99,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -1,13 +1,16 @@
 ---
 title: "Get event"
 description: "Get an event object."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Get event
+
+Namespace: microsoft.graph
+
 Get an [event](../resources/event.md) object.
 
 ## Permissions
@@ -230,3 +233,4 @@ Content-length: 1728
   "suppressions": [
   ]
 }-->
+

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # onenoteOperationError resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An error from a failed OneNote operation.
@@ -50,3 +52,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

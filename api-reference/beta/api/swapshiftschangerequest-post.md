@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create swapShiftsChangeRequest
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an instance of a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/swapShiftsChangeRequests
+POST /teams/{teamId}/schedule/swapShiftsChangeRequests
 ```
 
 ## Optional query parameters
@@ -116,3 +118,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

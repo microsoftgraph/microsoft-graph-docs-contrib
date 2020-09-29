@@ -3,11 +3,13 @@ title: "governanceResource: register"
 description: "Register a governanceResource object in PIM."
 localization_priority: Normal
 doc_type: apiPageType
-author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # governanceResource: register
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -91,3 +93,5 @@ HTTP/1.1 200 OK
   "suppressions": []
 }
 -->
+
+

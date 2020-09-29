@@ -1,13 +1,15 @@
 ---
 title: "windows10DeviceModeType enum type"
 description: "Windows 10 Device Mode type."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # windows10DeviceModeType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -20,6 +22,9 @@ Windows 10 Device Mode type.
 |:---|:---|:---|
 |standardConfiguration|0|Standard Configuration|
 |sModeConfiguration|1|S Mode Configuration|
+
+
+
 
 
 

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # invitationParticipantInfo resource type
 
+Namespace: microsoft.graph
+
 This resource is used to represent the entity that is being invited to a group call. 
 
 ## Properties
@@ -48,3 +50,4 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+

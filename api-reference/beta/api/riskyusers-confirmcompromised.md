@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # riskyUser: confirmCompromised
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >**Note:** The riskyUsers API requires an Azure AD Premium P2 license.
@@ -28,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /riskyUsers/confirmCompromised
+POST /identityProtection/riskyUsers/confirmCompromised
 ```
 
 
@@ -42,8 +45,9 @@ Specify the risky user IDs to dismiss in the request body.
 ## Response
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
-## Example
-##### Request
+## Examples
+### Example 1: Confirm users as compromised
+#### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -76,7 +80,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+#### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
@@ -85,7 +89,48 @@ Here is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+### Example 2: Confirm a user as compromised
+#### Request
+Here is an example of the request.
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "confirm_riskyuser"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityProtection/riskyUsers/confirmCompromised
+Content-type: application/json
+
+{
+  "userIds": [
+    "29f270bb-4d23-4f68-8a57-dc73dc0d4caf"
+  ]
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/confirm-riskyuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/confirm-riskyuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/confirm-riskyuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 204 No Content
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -97,3 +142,5 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+
+

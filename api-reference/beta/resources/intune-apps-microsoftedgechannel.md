@@ -1,13 +1,15 @@
 ---
 title: "microsoftEdgeChannel enum type"
 description: "The enum to specify the channels for Microsoft Edge apps."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # microsoftEdgeChannel enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,6 +23,9 @@ The enum to specify the channels for Microsoft Edge apps.
 |dev|0|Not yet documented|
 |beta|1|Not yet documented|
 |stable|2|Not yet documented|
+
+
+
 
 
 

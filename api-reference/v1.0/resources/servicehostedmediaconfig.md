@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # serviceHostedMediaConfig resource type
 
+Namespace: microsoft.graph
+
 The media that's hosted remotely. This is inherited from [mediaConfig](mediaconfig.md).
 
 ## Properties
@@ -48,3 +50,4 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+

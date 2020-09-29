@@ -9,9 +9,11 @@ doc_type: "apiPageType"
 
 # Delete personInterest
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [personInterest](../resources/personinterest.md) object from the user's [profile](../resources/profile.md).
+Deletes a [personInterest](../resources/personinterest.md) object from a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -29,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 DELETE /me/profile/interests/{id}
+DELETE /users/{id | userPrincipalName}/profile/interests/{id}
 ```
 
 ## Request headers
@@ -88,12 +91,4 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Delete personInterest",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

@@ -2,12 +2,14 @@
 title: "orgContact: getMemberObjects"
 description: "Return all the groups that this organizational contact is a member of. The check is transitive."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # orgContact: getMemberObjects
+
+Namespace: microsoft.graph
 
 Return all the groups that this [organizational contact](../resources/orgcontact.md) is a member of. The check is transitive. Organizational contacts cannot be members of directory roles. No directory roles will be returned.
 
@@ -116,3 +118,4 @@ Content-length: 39
   ]
 }
 -->
+

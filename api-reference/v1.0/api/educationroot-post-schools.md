@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create educationSchool
 
+Namespace: microsoft.graph
+
 Create a school.
 
 ## Permissions
@@ -63,7 +65,6 @@ Content-length: 292
 {
   "displayName": "Fabrikam High School",
   "description": "Magnate school for the arts. Los Angeles School District",
-  "status": "String",
   "externalSource": "String",
   "principalEmail": "AmyR@fabrikam.com",
   "principalName": "Amy Roebuck",
@@ -158,3 +159,4 @@ Content-length: 292
   "suppressions": [
   ]
 }-->
+

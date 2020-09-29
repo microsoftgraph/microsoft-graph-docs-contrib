@@ -1,13 +1,15 @@
 ---
 title: "devicePlatformType enum type"
 description: "Supported platform types."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # devicePlatformType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -27,6 +29,9 @@ Supported platform types.
 |windows10AndLater|6|Windows 10 and later.|
 |androidWorkProfile|7|Android Work Profile.|
 |unknown|8|Unknown.|
+
+
+
 
 
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # TableSort: reapply
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Reapplies the current sorting parameters to the table.
@@ -92,3 +94,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

@@ -10,6 +10,8 @@ ms.prod: ""
 
 # CreateAction resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The presence of the **CreateAction** resource on an [**itemActivity**][activity] indicates that the activity created an item.
@@ -49,3 +51,5 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
+
+

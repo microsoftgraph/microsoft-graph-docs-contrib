@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # openShift resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an unassigned, open shift in a [schedule](../resources/schedule.md).
@@ -65,3 +67,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

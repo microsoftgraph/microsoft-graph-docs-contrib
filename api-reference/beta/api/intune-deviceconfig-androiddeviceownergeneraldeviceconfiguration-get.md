@@ -1,13 +1,15 @@
 ---
 title: "Get androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Read properties and relationships of the androidDeviceOwnerGeneralDeviceConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get androidDeviceOwnerGeneralDeviceConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4799
+Content-Length: 6589
 
 {
   "value": {
@@ -109,6 +111,16 @@ Content-Length: 4799
     "cameraBlocked": true,
     "cellularBlockWiFiTethering": true,
     "certificateCredentialConfigurationDisabled": true,
+    "microsoftLauncherConfigurationEnabled": true,
+    "microsoftLauncherCustomWallpaperEnabled": true,
+    "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
+    "microsoftLauncherCustomWallpaperAllowUserModification": true,
+    "microsoftLauncherFeedEnabled": true,
+    "microsoftLauncherFeedAllowUserModification": true,
+    "microsoftLauncherDockPresenceConfiguration": "show",
+    "microsoftLauncherDockPresenceAllowUserModification": true,
+    "microsoftLauncherSearchBarPlacementConfiguration": "top",
+    "enrollmentProfile": "dedicatedDevice",
     "dataRoamingBlocked": true,
     "dateTimeConfigurationBlocked": true,
     "factoryResetDeviceAdministratorEmails": [
@@ -142,6 +154,16 @@ Content-Length: 4799
     "kioskModeWiFiConfigurationEnabled": true,
     "kioskModeFlashlightConfigurationEnabled": true,
     "kioskModeMediaVolumeConfigurationEnabled": true,
+    "kioskModeShowDeviceInfo": true,
+    "kioskModeManagedSettingsEntryDisabled": true,
+    "kioskModeDebugMenuEasyAccessEnabled": true,
+    "kioskModeShowAppNotificationBadge": true,
+    "kioskModeScreenOrientation": "portrait",
+    "kioskModeIconSize": "smallest",
+    "kioskModeFolderIcon": "darkSquare",
+    "kioskModeWifiAllowedSsids": [
+      "Kiosk Mode Wifi Allowed Ssids value"
+    ],
     "microphoneForceMute": true,
     "networkEscapeHatchAllowed": true,
     "nfcBlockOutgoingBeam": true,
@@ -183,10 +205,25 @@ Content-Length: 4799
     "vpnAlwaysOnLockdownMode": true,
     "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
     "wifiBlockEditConfigurations": true,
-    "wifiBlockEditPolicyDefinedConfigurations": true
+    "wifiBlockEditPolicyDefinedConfigurations": true,
+    "personalProfileAppsAllowInstallFromUnknownSources": true,
+    "personalProfileCameraBlocked": true,
+    "personalProfileScreenCaptureBlocked": true,
+    "workProfilePasswordExpirationDays": 1,
+    "workProfilePasswordMinimumLength": 0,
+    "workProfilePasswordMinimumNumericCharacters": 11,
+    "workProfilePasswordMinimumNonLetterCharacters": 13,
+    "workProfilePasswordMinimumLetterCharacters": 10,
+    "workProfilePasswordMinimumLowerCaseCharacters": 13,
+    "workProfilePasswordMinimumUpperCaseCharacters": 13,
+    "workProfilePasswordMinimumSymbolCharacters": 10,
+    "workProfilePasswordPreviousPasswordCountToBlock": 15,
+    "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
+    "workProfilePasswordRequiredType": "required"
   }
 }
 ```
+
 
 
 

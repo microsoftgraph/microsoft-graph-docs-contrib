@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # audioRoutingGroup resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The audio routing group stores a private audio route between participants in a multiparty conversation. Source is the participant itself and the receivers are a subset of other participants in the multiparty conversation.
@@ -72,3 +74,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

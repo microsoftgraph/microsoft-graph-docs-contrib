@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # modifiedProperty resource type
 
+Namespace: microsoft.graph
+
 Indicates all the properties on an Azure AD resource that have been modified, including the old and new values.
 
 ## Properties
@@ -48,3 +50,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

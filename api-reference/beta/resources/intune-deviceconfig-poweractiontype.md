@@ -1,13 +1,15 @@
 ---
 title: "powerActionType enum type"
 description: "Power action types"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # powerActionType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -23,6 +25,9 @@ Power action types
 |sleep|2|Put device in sleep state|
 |hibernate|3|Put device in hibernate state|
 |shutdown|4|Shutdown device|
+
+
+
 
 
 

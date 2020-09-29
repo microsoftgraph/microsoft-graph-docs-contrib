@@ -2,12 +2,15 @@
 title: "Remove member"
 description: "Use this API to remove a member from a group via the **members** navigation property."
 localization_priority: Priority
-author: "dkershaw10"
+author: "yyuank"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Remove member
+
+Namespace: microsoft.graph
+
 Use this API to remove a member from a group via the **members** navigation property.
 
 ## Permissions
@@ -91,3 +94,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

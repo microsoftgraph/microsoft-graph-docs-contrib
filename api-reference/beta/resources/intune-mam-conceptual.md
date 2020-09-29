@@ -1,12 +1,14 @@
 ---
 title: "Manage mobile apps with Microsoft Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) related to mobile app management (MAM) for a tenant organization."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 ---
 
 # How to protect your company app data with Microsoft Intune
+
+Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -21,6 +23,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Android managed app registration](intune-mam-androidmanagedappregistration.md)
 - [Android managed app safety net apps verification type](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
 - [Android managed app safety net device attestation type](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
+- [Android managed app safety net evaluation type](intune-mam-androidmanagedappsafetynetevaluationtype.md)
 - [Android mobile app identifier](intune-mam-androidmobileappidentifier.md)
 - [App management level](intune-mam-appmanagementlevel.md)
 - [Application type](intune-wip-applicationtype.md)
@@ -41,6 +44,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Managed app flagged reason](intune-mam-managedappflaggedreason.md)
 - [Managed app notification restriction](intune-mam-managedappnotificationrestriction.md)
 - [Managed app operation](intune-mam-managedappoperation.md)
+- [Managed app phone number redirect level](intune-mam-managedappphonenumberredirectlevel.md)
 - [Managed app PIN character set](intune-mam-managedapppincharacterset.md)
 - [Managed app policy](intune-mam-managedapppolicy.md)
 - [Managed app policy deployment summary](intune-mam-managedapppolicydeploymentsummary.md)

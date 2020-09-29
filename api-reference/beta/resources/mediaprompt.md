@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # mediaPrompt resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains information about the audio file to be played and other additional settings.
@@ -66,3 +68,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

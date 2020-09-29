@@ -9,6 +9,8 @@ ms.prod: "microsoft-teams"
 
 # chatMessageReaction resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a reaction to a [chatMessage](chatmessage.md) entity. 
@@ -53,3 +55,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

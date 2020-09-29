@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # onlineMeetingInfo resource type
 
+Namespace: microsoft.graph
+
 Details for an attendee to join the meeting online.
 
 ## Properties
@@ -51,3 +53,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->s
+
+

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # audioConferencing resource type
 
+Namespace: microsoft.graph
+
 Represents phone access information for an [onlineMeeting](onlinemeeting.md).
 
 ## Properties
@@ -52,3 +54,4 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+

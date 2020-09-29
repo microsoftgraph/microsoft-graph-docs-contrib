@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update plannerBucketTaskBoardTaskFormat
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of **plannerBucketTaskBoardTaskFormat** object.
@@ -109,3 +111,5 @@ Content-length: 68
   ]
 }
 -->
+
+

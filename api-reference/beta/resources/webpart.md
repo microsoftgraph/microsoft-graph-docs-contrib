@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # webPart resource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **webPart** resource represents type and rendering information for a web part on a [sitePage](sitepage.md).
@@ -52,3 +54,5 @@ For more information about pages, see [sitePage](sitepage.md).
   "suppressions": []
 }
 -->
+
+

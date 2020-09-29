@@ -1,13 +1,15 @@
 ---
 title: "Get a user"
 description: "Retrieve the properties and relationships of user object."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
 # Get a user
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,20 +26,33 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | User.Read, User.ReadWrite    |
 |Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-## HTTP request
+Calling the `/me` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when using the `/me` endpoint.
+
+For a specific user:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
+
+For the signed-in user:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me
+```
+
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+
 ## Request headers
+
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Required.|
 | Content-Type   | application/json |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -178,3 +193,5 @@ Content-length: 491
   ]
 }
 -->
+
+

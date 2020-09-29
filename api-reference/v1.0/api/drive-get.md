@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Get Drive
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource.
 
 A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
@@ -253,7 +255,7 @@ If the drive does not exist and cannot be provisioned automatically (when using 
 
 <!-- {
   "type": "#page.annotation",
-  "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
+  "description": "Get metadata for a OneDrive, OneDrive for Business, or Microsoft 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
   "suppressions": [
@@ -266,3 +268,4 @@ If the drive does not exist and cannot be provisioned automatically (when using 
   ],
   "tocPath": "Drives/Get drive"
 } -->
+

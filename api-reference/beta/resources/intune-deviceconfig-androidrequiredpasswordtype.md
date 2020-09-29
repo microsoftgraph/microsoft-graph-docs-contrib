@@ -1,13 +1,15 @@
 ---
 title: "androidRequiredPasswordType enum type"
 description: "Android required password type."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # androidRequiredPasswordType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -26,6 +28,9 @@ Android required password type.
 |numeric|5|Numeric password required.|
 |numericComplex|6|Numeric complex password required.|
 |any|7|A password or pattern is required, and any is acceptable.|
+
+
+
 
 
 

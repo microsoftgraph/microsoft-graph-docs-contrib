@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Update journals
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of a journal object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -75,4 +80,6 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-05-17T11:30:01.313Z"
 }
 ```
+
+
 

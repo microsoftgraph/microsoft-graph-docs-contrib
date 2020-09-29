@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Get paymentMethods
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the properties and relationships of a payment method object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -65,5 +70,7 @@ Here is an example of the response.
   "lastModifiedDateTime": "2017-03-22T08:35:48.33Z"
 }
 ```
+
+
 
 

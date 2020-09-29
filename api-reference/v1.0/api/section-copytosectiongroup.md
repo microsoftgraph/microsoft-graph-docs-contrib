@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 
 # section: copyToSectionGroup
+
+Namespace: microsoft.graph
 Copies a section to a specific section group.
 
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
@@ -39,7 +41,7 @@ In the request body, provide a JSON object that contains the parameters that you
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|groupId|String|The id of the group to copy to. Use only when copying to an Office 365 group.|
+|groupId|String|The id of the group to copy to. Use only when copying to a Microsoft 365 group.|
 |id|String|Required. The id of the destination section group. |
 |renameAs|String|The name of the copy. Defaults to the name of the existing item. |
 
@@ -113,3 +115,4 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+

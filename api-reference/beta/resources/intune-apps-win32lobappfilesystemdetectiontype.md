@@ -1,13 +1,15 @@
 ---
 title: "win32LobAppFileSystemDetectionType enum type"
 description: "Contains all supported file system detection type."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # win32LobAppFileSystemDetectionType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -25,6 +27,9 @@ Contains all supported file system detection type.
 |version|4|Version value type.|
 |sizeInMB|5|Size detection type.|
 |doesNotExist|6|The specified file or folder does not exist.|
+
+
+
 
 
 

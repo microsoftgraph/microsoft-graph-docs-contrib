@@ -9,6 +9,8 @@ author: "finsharp"
 
 # command resource type
 
+Namespace: microsoft.graph
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -25,6 +27,8 @@ Here is a JSON representation of the resource.
 {
 }
 ```
+
+
 
 
 

@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # aadUserConversationMember resource type
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Namespace: microsoft.graph
 
 Represents an Azure Active Directory user in a [chat](chat.md) or [channel](channel.md). This type inherits from [conversationMember](conversationmember.md).
 
@@ -66,3 +66,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

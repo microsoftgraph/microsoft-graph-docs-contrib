@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # SubscribeToToneOperation resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes the response format of creation of subscription to receive DTMF tones.
@@ -54,3 +56,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

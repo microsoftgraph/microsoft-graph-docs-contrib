@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # trending resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Rich relationship connecting a user to documents that are trending around the user (are relevant to the user). OneDrive files, and files stored on SharePoint team sites can trend around the user.
@@ -56,3 +58,5 @@ Here is a JSON representation of the resource
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+

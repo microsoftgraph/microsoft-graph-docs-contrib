@@ -4,10 +4,12 @@ description: "Get the properties of the specified schemaExtension definition."
 localization_priority: Normal
 author: "dkershaw10"
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "extensions"
 ---
 
 # Get schemaExtension
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | User.Read, Application.Read.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All |
+|Application | Application.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -117,3 +119,5 @@ Content-length: 201
   ]
 }
 -->
+
+

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get educationRubric attached to educationAssignment
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the [educationRubric](../resources/educationrubric.md) object attached to an [educationAssignment](../resources/educationassignment.md), if one exists.
@@ -191,3 +193,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,11 +3,13 @@ title: "Update icon"
 description: "Update the properties of icon object."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 ---
 
 # Update icon
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -90,3 +92,5 @@ Content-length: 39
   "suppressions": []
 }
 -->
+
+

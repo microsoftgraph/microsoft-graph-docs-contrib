@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create call
 
+Namespace: microsoft.graph
+
 Create [call](../resources/call.md) enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting. You will need to [register the calling bot](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) and go through the list of permissions needed as mentioned below.
 
 > **Note:** Currently, only VoIP calls are supported. 
@@ -83,7 +85,7 @@ Content-Type: application/json
     "audio"
   ],
   "mediaConfig": {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
   }
 }
 ```
@@ -125,6 +127,7 @@ Content-Type: application/json
   "state": "establishing",
   "direction": "outgoing",
   "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
   "source": {
     "@odata.type": "#microsoft.graph.participantInfo",
     "identity": {
@@ -181,6 +184,7 @@ Content-Type: application/json
   "answeredBy": null,
   "chatInfo": null,
   "meetingInfo": null,
+  "transcription": null,
   "toneInfo": null
 }
 ```
@@ -340,6 +344,7 @@ Content-Type: application/json
   "state": "establishing",
   "direction": "outgoing",
   "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
   "source": {
     "@odata.type": "#microsoft.graph.participantInfo",
     "identity": {
@@ -383,6 +388,7 @@ Content-Type: application/json
   "answeredBy": null,
   "chatInfo": null,
   "meetingInfo": null,
+  "transcription": null,
   "toneInfo": null
 }
 ```
@@ -570,11 +576,13 @@ Content-Type: application/json
       "user": {
         "@odata.type": "#microsoft.graph.identity",
         "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
-        "displayName": "Bob"
+        "displayName": "Bob",
+        "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
       }
     },
     "allowConversationWithoutHost": true
-  }
+  },
+  "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
 }
 ```
 ##### Response
@@ -594,6 +602,7 @@ Content-Type: application/json
   "state": "establishing",
   "direction": "outgoing",
   "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
   "source": {
     "@odata.type": "#microsoft.graph.participantInfo",
     "identity": {
@@ -642,6 +651,7 @@ Content-Type: application/json
     },
     "allowConversationWithoutHost": true
   },
+  "transcription": null,
   "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
   "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#app/calls/$entity",
@@ -899,3 +909,4 @@ Content-Type: application/json
   ]
 }
 -->
+

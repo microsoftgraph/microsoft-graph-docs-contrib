@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # Shared resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **Shared** resource indicates a DriveItem has been shared with others.
@@ -64,3 +66,5 @@ For more information about the facets on a **driveItem**, see [**driveItem**](dr
   "suppressions": []
 }
 -->
+
+

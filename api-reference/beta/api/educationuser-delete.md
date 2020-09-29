@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete educationUser
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a user.
@@ -95,3 +97,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

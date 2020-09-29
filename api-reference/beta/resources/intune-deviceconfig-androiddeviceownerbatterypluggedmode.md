@@ -1,13 +1,15 @@
 ---
 title: "androidDeviceOwnerBatteryPluggedMode enum type"
 description: "Android Device Owner possible values for states of the device's plugged-in power modes."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # androidDeviceOwnerBatteryPluggedMode enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,6 +24,9 @@ Android Device Owner possible values for states of the device's plugged-in power
 |ac|1|Power source is an AC charger.|
 |usb|2|Power source is a USB port.|
 |wireless|3|Power source is wireless.|
+
+
+
 
 
 

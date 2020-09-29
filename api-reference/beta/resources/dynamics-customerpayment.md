@@ -10,6 +10,11 @@ doc_type: resourcePageType
 ---
 
 # customerPayments resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a customer payment in Dynamics 365 Business Central. A customer payment is entered as a line in a customer payment journal.
 
 ## Methods
@@ -74,4 +79,6 @@ Here is a JSON representation of the resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
+
+
 

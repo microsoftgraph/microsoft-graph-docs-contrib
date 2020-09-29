@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add a student
 
+Namespace: microsoft.graph
+
 Add a member to a class.
 
 ## Permissions
@@ -99,3 +101,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

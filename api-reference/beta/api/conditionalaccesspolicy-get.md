@@ -2,12 +2,14 @@
 title: "Get conditionalAccessPolicy"
 description: "Retrieve the properties and relationships of a conditionalAccessPolicy object."
 localization_priority: Normal
-author: "davidmu1"
+author: "videor"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get conditionalAccessPolicy
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /conditionalAccess/policies/{id}
+GET /identity/conditionalAccess/policies/{id}
 ```
 
 ## Optional query parameters
@@ -62,7 +64,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/conditionalAccess/policies/{id}
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-conditionalaccesspolicy-csharp-snippets.md)]
@@ -108,9 +110,8 @@ Content-type: application/json
             "low"
         ],
         "clientAppTypes": [
-            "modern",
-            "easSupported",
-            "easUnsupported",
+            "mobileAppsAndDesktopClients",
+            "exchangeActiveSync",
             "other"
         ],
         "applications": {
@@ -165,11 +166,12 @@ Content-type: application/json
                 "d2136c9c-b049-47ae-b9cf-316e04ef7198"
             ]
         },
-        "deviceStates": {
-            "includeStates": [
+        "deviceStates": null,
+        "devices": {
+            "includeDeviceStates": [
                 "All"
             ],
-            "excludeStates": [
+            "excludeDeviceStates": [
                 "Compliant"
             ]
         }
@@ -214,3 +216,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

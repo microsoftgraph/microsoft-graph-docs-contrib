@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get workbookchart
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of chart object.
@@ -99,3 +101,5 @@ Content-length: 52
   ]
 }
 -->
+
+

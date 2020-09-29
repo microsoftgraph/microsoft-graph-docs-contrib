@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartLegendFormat resource type
 
+Namespace: microsoft.graph
+
 Encapsulates the format properties of a chart legend.
 
 
@@ -53,3 +55,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

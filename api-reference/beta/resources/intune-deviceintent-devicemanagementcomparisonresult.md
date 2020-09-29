@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementComparisonResult enum type"
 description: "Setting comparison result type"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # deviceManagementComparisonResult enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -23,6 +25,9 @@ Setting comparison result type
 |notEqual|2|The setting values are not equal|
 |added|3|The setting is added|
 |removed|4|The setting is removed|
+
+
+
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "List mobileApps"
 description: "List properties and relationships of the mobileApp objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # List mobileApps
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -84,6 +86,11 @@ Content-Length: 855
   ]
 }
 ```
+
+
+
+
+
 
 
 

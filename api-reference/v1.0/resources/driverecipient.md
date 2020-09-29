@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # DriveRecipient resource
 
+Namespace: microsoft.graph
+
 The **DriveRecipient** resource represents a person, group, or other recipient to share with using the [invite](../api/driveitem-invite.md) action.
 
 ## JSON representation
@@ -48,3 +50,4 @@ Only one of these values is required.
   "section": "documentation",
   "tocPath": "Resources/Recipients"
 } -->
+

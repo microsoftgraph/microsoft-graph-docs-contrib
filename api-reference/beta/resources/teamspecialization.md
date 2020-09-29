@@ -9,6 +9,8 @@ doc_type: enumPageType
 
 # teamSpecialization enum type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Indicates whether the [team](../resources/team.md) is intended for a particular use case. Each [team](../resources/team.md) specialization has access to unique behaviors and experiences targeted to its use case. Default is 'none'.
@@ -23,3 +25,5 @@ Indicates whether the [team](../resources/team.md) is intended for a particular 
 | educationProfessionalLearningCommunity | 3 | Team experience optimized for a PLC. Learn more about PLC [here](https://en.wikipedia.org/wiki/Professional_learning_community). |
 | educationStaff     | 4     |  Team type for an optimized experience for staff in an organization, where a staff leader, like a principal, is the admin and teachers are members in a team that comes with a specialized notebook. For more details, see [OneNote staff notebook for education](https://www.onenote.com/staffnotebookedu). |
 | unknownFutureValue | 7     | Sentinel value reserved as a placeholder for future expansion of the enum. |
+
+

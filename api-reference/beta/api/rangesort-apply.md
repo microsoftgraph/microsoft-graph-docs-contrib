@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # RangeSort: apply
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Perform a sort operation.
@@ -124,3 +126,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

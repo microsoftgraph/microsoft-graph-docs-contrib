@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get section
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a [onenoteSection](../resources/section.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -116,3 +118,4 @@ Content-length: 272
   "suppressions": [
   ]
 }-->
+

@@ -2,12 +2,14 @@
 title: "Create accessReview"
 description: "In the Azure AD access reviews feature, create a new accessReview object."
 localization_priority: Normal
-author: "davidmu1"
+author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Create accessReview
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -74,10 +76,8 @@ This is an example of creating a one-time (not recurring) access review, explici
 ### Request
 In the request body, supply a JSON representation of the [accessReview](../resources/accessreview.md) object.
 
-
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "create_accessReview_from_accessReviews"
 }-->
 ```http
@@ -89,7 +89,7 @@ Content-type: application/json
     "startDateTime":"2017-02-10T00:35:53.214Z",
     "endDateTime":"2017-03-12T00:35:53.214Z",
     "reviewedEntity": {
-        "id": "99025615-a0b1-47ec-9117-35377b10998b",
+        "id": "99025615-a0b1-47ec-9117-35377b10998b"
     },
     "reviewerType" : "delegated",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
@@ -124,20 +124,6 @@ Content-type: application/json
     }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreview-from-accessreviews-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreview-from-accessreviews-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-accessreview-from-accessreviews-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -173,3 +159,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

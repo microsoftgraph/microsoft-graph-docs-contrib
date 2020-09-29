@@ -3,11 +3,13 @@ title: "List overrides"
 description: "Get the Focused Inbox overrides that a user has set up to always classify messages from certain senders in specific ways."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
+author: "svpsiva"
 ms.prod: ""
 ---
 
 # List overrides
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -114,3 +116,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

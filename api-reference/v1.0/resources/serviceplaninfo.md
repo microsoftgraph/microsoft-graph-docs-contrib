@@ -2,12 +2,14 @@
 title: "servicePlanInfo resource type"
 description: "Contains information about a service plan associated with a subscribed SKU. The **servicePlans** property of the subscribedSku entity is a collection of **servicePlanInfo**."
 localization_priority: Normal
-author: ""
+author: "krbain"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # servicePlanInfo resource type
+
+Namespace: microsoft.graph
 
 Contains information about a service plan associated with a subscribed SKU. The **servicePlans** property of the [subscribedSku](subscribedsku.md) entity is a collection of **servicePlanInfo**.
 
@@ -51,3 +53,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

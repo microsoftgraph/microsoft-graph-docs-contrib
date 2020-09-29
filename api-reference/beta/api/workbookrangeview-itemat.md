@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # workbookRangeView: itemAt
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Permissions
@@ -77,3 +79,5 @@ Content-length: 194
   "index": 99
 }
 ```
+
+

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List classes
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of all class objects. 
@@ -117,3 +119,5 @@ Content-length: 277
   ]
 }
 -->
+
+

@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 # itemPreviewInfo resource type
 
+Namespace: microsoft.graph
+
 The **itemPreviewInfo** resource contains information on how to embed a preview of a [driveItem](driveitem.md).
 
 ## JSON representation
@@ -41,3 +43,4 @@ param1=value&param2=another%20value
 ```
 
 The formats of URLs and parameters should be considered opaque.
+

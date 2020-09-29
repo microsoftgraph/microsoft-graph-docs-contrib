@@ -1,13 +1,15 @@
 ---
 title: "Create windowsDefenderApplicationControlSupplementalPolicy"
 description: "Create a new windowsDefenderApplicationControlSupplementalPolicy object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Create windowsDefenderApplicationControlSupplementalPolicy
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -106,6 +108,7 @@ Content-Length: 517
   ]
 }
 ```
+
 
 
 

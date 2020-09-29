@@ -2,14 +2,16 @@
 title: "OneNoteResource resource type"
 description: "An image or other file resource on a OneNote page. "
 localization_priority: Normal
-author: ""
+author: "jewan-microsoft"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # OneNoteResource resource type
 
-An image or other file resource on a OneNote page. 
+Namespace: microsoft.graph
+
+An image or other file resource on a OneNote page.
 
 You can get the binary data of a resource, but getting a JSON representation of a resource object or a resource collection is not supported.
 
@@ -42,10 +44,10 @@ GET ../onenote/pages/{id}/content
 
 In the page HTML, an `img` tag includes endpoints for the original image resource in the `data-fullres-src` attribute and the optimized image in the `src` attribute:
 ```
-<img 
-    src="image-resource-url"  
+<img
+    src="image-resource-url"
     data-src-type="media-type"
-    data-fullres-src="image-resource-url"  
+    data-fullres-src="image-resource-url"
     data-fullres-src-type="media-type" ... />
 ```
 
@@ -54,7 +56,7 @@ An `object` tag (which represents files such as PDF, DOCX, and PNG) includes the
 ```
 <object
     data="file-resource-url"
-    data-attachment="file-name.file-type" 
+    data-attachment="file-name.file-type"
     type="media-type" ... />
 ```
 
@@ -83,3 +85,4 @@ None.
   "section": "documentation",
   "tocPath": ""
 }-->
+

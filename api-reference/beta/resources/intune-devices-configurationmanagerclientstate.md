@@ -1,13 +1,15 @@
 ---
 title: "configurationManagerClientState enum type"
 description: "Configuration manager client state"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # configurationManagerClientState enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -24,6 +26,9 @@ Configuration manager client state
 |installFailed|8|The configuration manager agent failed to install.|
 |updateFailed|11|The update from version x to version y of the configuration manager agent failed. |
 |communicationError|19|The configuration manager agent was able to reach the configuration manager service in the past but is now no longer able to. |
+
+
+
 
 
 

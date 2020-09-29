@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete educationSchool
 
+Namespace: microsoft.graph
+
 Delete a school.
 
 ## Permissions
@@ -89,3 +91,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

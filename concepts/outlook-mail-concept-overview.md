@@ -1,6 +1,6 @@
 ---
 title: "Outlook mail API overview"
-description: "Outlook is a messaging communication hub in Office 365. It also lets you manage contacts, schedule meetings, find information about users in an organization,"
+description: "Outlook is a messaging communication hub in Microsoft 365. It also lets you manage contacts, schedule meetings, find information about users in an organization,"
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Outlook mail API overview
 
-Outlook is a messaging communication hub in Office 365. It also lets you manage contacts, schedule meetings, find information about users in an organization,
+Outlook is a messaging communication hub in Microsoft 365. It also lets you manage contacts, schedule meetings, find information about users in an organization,
 initiate online conversations, share files, and collaborate in groups.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/L-gm25wusIQ]
@@ -75,9 +75,10 @@ Looking for the API reference for this service?
   - [Creating and sending messages](outlook-create-send-messages.md)
   - Ways to [organize messages](outlook-organize-messages.md)
   - [Getting the MIME content of a message](outlook-get-mime-message.md)
+  - [Attaching large files to Outlook messages or events](outlook-large-attachments.md)
   - [Getting shared messages](outlook-share-messages-folders.md)
-  - [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)
   - How to [send mail from another user](outlook-send-mail-from-other-user.md)
+  - [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)
 
 - Find out more about [using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0.
 

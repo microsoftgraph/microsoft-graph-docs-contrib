@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # commsNotifications resource type
 
+Namespace: microsoft.graph
+
 List of notifications used by the Communications servers for sending multiple notifications in a single batch.
 
 ## Properties
@@ -46,3 +48,4 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+

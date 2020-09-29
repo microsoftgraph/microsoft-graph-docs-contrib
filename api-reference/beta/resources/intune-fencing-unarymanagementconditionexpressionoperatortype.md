@@ -1,13 +1,15 @@
 ---
 title: "unaryManagementConditionExpressionOperatorType enum type"
 description: "Supported operators for unary management condition expressions"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # unaryManagementConditionExpressionOperatorType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -19,6 +21,9 @@ Supported operators for unary management condition expressions
 |Member|Value|Description|
 |:---|:---|:---|
 |not|0|Negates the evaluation of the operand.|
+
+
+
 
 
 

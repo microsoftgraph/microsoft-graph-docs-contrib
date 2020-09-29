@@ -4,10 +4,12 @@ description: "Specifies whether this web application can request tokens using th
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # implicitGrantSettings resource type
+
+Namespace: microsoft.graph
 
 Specifies whether this web application can request tokens using the OAuth 2.0 implicit flow. Separate properties are available to request ID and access tokens as part of the implicit flow. To enable implicit flow, at least one of the following properties must be set to true.
 
@@ -32,3 +34,4 @@ Here is a JSON representation of the resource.
 }
 
 ```
+

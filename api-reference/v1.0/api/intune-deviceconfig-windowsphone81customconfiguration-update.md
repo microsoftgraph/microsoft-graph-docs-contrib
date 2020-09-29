@@ -1,13 +1,15 @@
 ---
 title: "Update windowsPhone81CustomConfiguration"
 description: "Update the properties of a windowsPhone81CustomConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Update windowsPhone81CustomConfiguration
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -109,6 +111,11 @@ Content-Length: 581
   ]
 }
 ```
+
+
+
+
+
 
 
 

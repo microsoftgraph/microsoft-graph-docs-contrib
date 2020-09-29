@@ -2,14 +2,16 @@
 title: "recurrencePattern resource type"
 description: "Describes the frequency by which a recurring event repeats. "
 localization_priority: Normal
-author: ""
+author: "harini84"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # recurrencePattern resource type
 
-Describes the frequency by which a recurring [event](event.md) repeats. 
+Namespace: microsoft.graph
+
+Describes the frequency by which a recurring [event](event.md) repeats.
 
 You can specify the recurrence pattern of a recurring event in one of 6 ways depending on your scenario. For each pattern type, specify the amount of time between occurrences. The actual occurrences of the recurring event always follow this pattern falling within the date range that you specify for the event. A recurring event is always defined by its **recurrencePattern** (how frequently the event repeats), and its [recurrenceRange](recurrencerange.md) (over how long the event repeats).
 
@@ -76,3 +78,4 @@ Here is a JSON representation of the resource
   ],
   "tocPath": ""
 }-->
+

@@ -4,10 +4,12 @@ description: "A complex type for representing the **attribution** property in th
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: resourcePageType
-author: ""
+author: "ailae"
 ---
 
 # imageInfo resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,3 +58,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

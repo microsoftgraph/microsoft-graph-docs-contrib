@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Download contents of a DriveItemVersion resource (preview)
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the contents of a specific version of a [driveItem](../resources/driveitem.md). 
@@ -104,3 +106,5 @@ When your app retrieves the list of available versions for a file, a [driveItemV
   ]
 }
 -->
+
+

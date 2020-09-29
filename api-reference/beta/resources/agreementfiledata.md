@@ -4,10 +4,12 @@ description: "Represents the blob of an Azure Active Directory (Azure AD) terms 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "raprakasMSFT"
 ---
 
 # agreementFileData resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,3 +51,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

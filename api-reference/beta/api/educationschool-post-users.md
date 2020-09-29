@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add educationUser to an educationSchool
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add a user to a school.
@@ -111,3 +113,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

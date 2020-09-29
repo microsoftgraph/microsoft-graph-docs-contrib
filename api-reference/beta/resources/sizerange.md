@@ -4,10 +4,12 @@ description: "Specifies the maximum and minimum sizes (in kilobytes) that an inc
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "svpsiva"
 ---
 
 # sizeRange resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,3 +52,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

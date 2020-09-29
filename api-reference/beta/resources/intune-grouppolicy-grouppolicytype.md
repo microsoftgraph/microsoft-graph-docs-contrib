@@ -1,13 +1,15 @@
 ---
 title: "groupPolicyType enum type"
 description: "Type of Group Policy File or Definition."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # groupPolicyType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -20,6 +22,9 @@ Type of Group Policy File or Definition.
 |:---|:---|:---|
 |admxBacked|0|Group Policy administrative templates built-in to the Policy configuration service provider (CSP).|
 |admxIngested|1|Group Policy administrative templates installed using the Policy configuration service provider (CSP).|
+
+
+
 
 
 

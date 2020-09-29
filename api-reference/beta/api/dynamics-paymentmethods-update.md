@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Update paymentMethods
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of a payment method object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -73,5 +78,7 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-22T08:35:48.33Z"
 }
 ```
+
+
 
 

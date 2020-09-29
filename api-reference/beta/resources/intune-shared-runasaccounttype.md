@@ -1,13 +1,15 @@
 ---
 title: "runAsAccountType enum type"
 description: "Indicates the type of execution context the app runs in."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # runAsAccountType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -20,6 +22,9 @@ Indicates the type of execution context the app runs in.
 |:---|:---|:---|
 |system|0|System context|
 |user|1|User context|
+
+
+
 
 
 

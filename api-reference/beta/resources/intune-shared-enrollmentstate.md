@@ -1,13 +1,15 @@
 ---
 title: "enrollmentState enum type"
 description: "Not yet documented"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # enrollmentState enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -24,6 +26,9 @@ Not yet documented
 |failed|3|Not enrolled and there is enrollment failure record.|
 |notContacted|4|Device is imported but not enrolled.|
 |blocked|5|Device is enrolled as userless, but is blocked from moving to user enrollment because the app failed to install.|
+
+
+
 
 
 

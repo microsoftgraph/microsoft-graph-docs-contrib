@@ -1,13 +1,15 @@
 ---
 title: "Create registeredOwner"
 description: "Add a user as a registered owner of the device."
-author: "davidmu1"
+author: "spunukol"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Create registeredOwner
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,7 +40,7 @@ In the request body, supply a JSON representation of [directoryObject](../resour
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 ##### Request
@@ -55,12 +57,19 @@ Content-type: application/json
 Content-length: 30
 
 {
-  "directoryObject": {
-  }
+  "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"
 }
 ```
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-device-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryobject-from-device-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-device-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -74,15 +83,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.directoryObject"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 51
-
-{
-  "directoryObject": {
-    "id": "id-value"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -98,3 +99,5 @@ Content-length: 51
   ]
 }
 -->
+
+

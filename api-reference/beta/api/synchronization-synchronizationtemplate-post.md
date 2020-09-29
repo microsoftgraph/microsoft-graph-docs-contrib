@@ -3,11 +3,13 @@ title: "Create synchronizationTemplate"
 description: "Create a new synchronization template for a given application."
 localization_priority: Normal
 doc_type: apiPageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 
 # Create synchronizationTemplate
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -112,3 +114,5 @@ HTTP/1.1 201 Created
   ]
 }
 -->
+
+

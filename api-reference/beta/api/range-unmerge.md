@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: unmerge
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Unmerge the range cells into separate cells.
@@ -93,3 +95,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

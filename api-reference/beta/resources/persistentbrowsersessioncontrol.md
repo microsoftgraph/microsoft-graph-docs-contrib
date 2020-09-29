@@ -2,16 +2,18 @@
 title: "persistentBrowserSessionControl resource type"
 description: "Session control to define whether to persist cookies or not."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # persistentBrowserSessionControl resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Session control to define whether to persist cookies or not. Inehrits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
+Session control to define whether to persist cookies or not. Inherits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
 
 ## Properties
 
@@ -53,3 +55,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

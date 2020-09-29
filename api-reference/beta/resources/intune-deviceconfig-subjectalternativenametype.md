@@ -1,13 +1,15 @@
 ---
 title: "subjectAlternativeNameType enum type"
 description: "Subject Alternative Name Options."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # subjectAlternativeNameType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -23,6 +25,9 @@ Subject Alternative Name Options.
 |userPrincipalName|2|User Principal Name (UPN).|
 |customAzureADAttribute|4|Custom Azure AD Attribute.|
 |domainNameService|8|Domain Name Service (DNS).|
+
+
+
 
 
 

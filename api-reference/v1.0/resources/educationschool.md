@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationSchool resource type
 
+Namespace: microsoft.graph
+
 A resource representing a school and used to manage the classes, teachers, and students of the represented school.  
 
 ## Methods
@@ -92,3 +94,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

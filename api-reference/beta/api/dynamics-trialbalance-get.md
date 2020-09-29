@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Get trialBalance
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the properties and relationships of a trial balance report object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -68,4 +73,6 @@ Here is an example of the response.
   "dateFilter": "2019-12-31"    
 }
 ```
+
+
 

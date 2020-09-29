@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # userAnalytics resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The user's settings and activity statistics.
@@ -61,3 +63,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

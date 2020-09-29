@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookChartGridlinesFormat resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Encapsulates the format properties for chart gridlines.
@@ -57,3 +59,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

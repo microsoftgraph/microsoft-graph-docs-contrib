@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get participant
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a **participant** object.
 
 ## Permissions
@@ -132,3 +134,4 @@ Content-Type: application/json
   ]
 }
 -->
+

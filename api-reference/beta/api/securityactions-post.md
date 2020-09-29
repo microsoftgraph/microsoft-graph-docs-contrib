@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create securityAction
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [securityAction](../resources/securityaction.md) object.
@@ -142,3 +144,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

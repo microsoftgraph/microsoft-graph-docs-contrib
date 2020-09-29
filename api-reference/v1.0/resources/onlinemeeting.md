@@ -9,6 +9,8 @@ ms.prod: "cloud-communications"
 
 # onlineMeeting resource type
 
+Namespace: microsoft.graph
+
 Contains information about the meeting, including the URL used to join a meeting, the attendees list, and the description.
 
 ## Methods
@@ -17,7 +19,8 @@ Contains information about the meeting, including the URL used to join a meeting
 |:---------------|:--------|:----------|
 | [Create onlineMeeting](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting. |
 | [Get onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Read the properties and relationships of an **onlineMeeting** object. |
-| [Delete onlineMeeting](../api/onlinemeeting-delete.md) | None | Delete an online meeting |
+| [Delete onlineMeeting](../api/onlinemeeting-delete.md) | None | Delete an online meeting. |
+| [Create or get onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting with a custom, external ID. If the meeting already exists, retrieve its properties. |
 
 ## Properties
 
@@ -33,7 +36,7 @@ Contains information about the meeting, including the URL used to join a meeting
 | participants              | [meetingParticipants](meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
 | subject                   | String                                                 | The subject of the online meeting. |
 | videoTeleconferenceId     | String                                                 | The video teleconferencing ID. Read-only. |
-
+| joinInformation | [itemBody](itembody.md) | The join information in the language and locale variant specified in the `Accept-Language` request HTTP header. Read-only. |
 
 ## JSON representation
 
@@ -68,3 +71,4 @@ Contains information about the meeting, including the URL used to join a meeting
   "section": "documentation",
   "tocPath": ""
 }-->
+

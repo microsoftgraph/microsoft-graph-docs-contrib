@@ -10,6 +10,8 @@ doc_type: "resourcePageType"
 
 # pendingContentUpdate resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Indicates that an operation that might affect the binary content of the **driveItem** is pending completion.
@@ -48,3 +50,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

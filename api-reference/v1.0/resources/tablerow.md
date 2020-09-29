@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # TableRow resource type
 
+Namespace: microsoft.graph
+
 Represents a row in a table.
 
 
@@ -62,3 +64,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

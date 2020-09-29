@@ -2,12 +2,14 @@
 title: "officeConfigurationAssignmentTarget resource type"
 description: "Office Client Configuration Assignment Target."
 localization_priority: Normal
-author: "rolyon"
-ms.prod: "Intune"
+author: "dougeby"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # officeConfigurationAssignmentTarget resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -35,6 +37,9 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.officeConfigurationAssignmentTarget"
 }
 ```
+
+
+
 
 
 

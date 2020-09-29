@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # plannerCategoryDescriptions resource type
 
+Namespace: microsoft.graph
+
 The **plannerCategoryDescriptions** resource represents the descriptive labels for the categories that have been defined for a plan. It belongs to the [plan details](plannerplandetails.md) object. There can be up to 6 categories defined. 
 
 
@@ -54,3 +56,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

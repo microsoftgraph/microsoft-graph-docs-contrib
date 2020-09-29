@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # locationConstraintItem resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The conditions stated by a client for the location of a meeting.
@@ -66,3 +68,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

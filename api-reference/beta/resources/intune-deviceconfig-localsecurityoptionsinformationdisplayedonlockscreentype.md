@@ -1,13 +1,15 @@
 ---
 title: "localSecurityOptionsInformationDisplayedOnLockScreenType enum type"
 description: "Possible values for LocalSecurityOptionsInformationDisplayedOnLockScreen"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # localSecurityOptionsInformationDisplayedOnLockScreenType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,6 +24,9 @@ Possible values for LocalSecurityOptionsInformationDisplayedOnLockScreen
 |administrators|1|User display name, domain and user names|
 |administratorsAndPowerUsers|2|User display name only|
 |administratorsAndInteractiveUsers|3|Do not display user information|
+
+
+
 
 
 

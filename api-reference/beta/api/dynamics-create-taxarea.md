@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Create taxAreas
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Creates a tax area object in Dynamics 365 Business Central.
 
 ## Permissions
@@ -72,3 +77,5 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-05-17T11:30:01.313Z"
 }
 ```
+
+

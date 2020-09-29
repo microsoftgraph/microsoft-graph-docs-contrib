@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # workbookPivotTable: refresh
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Refreshes the PivotTable.
@@ -90,3 +92,5 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+
+

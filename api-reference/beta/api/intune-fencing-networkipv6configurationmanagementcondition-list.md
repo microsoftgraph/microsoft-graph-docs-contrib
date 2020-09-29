@@ -1,13 +1,15 @@
 ---
 title: "List networkIPv6ConfigurationManagementConditions"
 description: "List properties and relationships of the networkIPv6ConfigurationManagementCondition objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # List networkIPv6ConfigurationManagementConditions
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -87,6 +89,7 @@ Content-Length: 760
   ]
 }
 ```
+
 
 
 

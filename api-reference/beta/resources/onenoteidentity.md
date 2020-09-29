@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # oneNoteIdentity resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **Support coming soon**
@@ -55,3 +57,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

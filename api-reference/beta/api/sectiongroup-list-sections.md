@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List sections
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [onenoteSection](../resources/onenotesection.md) objects from the specified section group.
@@ -124,3 +126,5 @@ Content-length: 345
   ]
 }
 -->
+
+

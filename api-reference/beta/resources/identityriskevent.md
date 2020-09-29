@@ -3,15 +3,17 @@ title: "identityRiskEvent resource type"
 description: "A risk event detected by Azure Active Directory Identity Protection. It is the base type for each specific risk event type:"
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "security"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
-# identityRiskEvent resource type
+# identityRiskEvent resource type (deprecated)
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
+>[!CAUTION]
 >The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020. For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 A risk event detected by [Azure Active Directory Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/). It is the base type for each specific risk event type:
@@ -94,3 +96,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # shift resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A unit of scheduled work in a [schedule](schedule.md). 
@@ -71,3 +73,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

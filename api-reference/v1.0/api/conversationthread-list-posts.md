@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List posts
 
+Namespace: microsoft.graph
+
 Get the posts of the specified thread. You can specify both the parent conversation and the thread, or, 
 you can specify the thread without referencing the parent conversation.
 
@@ -122,3 +124,4 @@ Content-length: 523
   "suppressions": [
   ]
 }-->
+

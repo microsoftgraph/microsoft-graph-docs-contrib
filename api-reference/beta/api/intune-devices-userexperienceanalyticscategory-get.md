@@ -1,13 +1,15 @@
 ---
 title: "Get userExperienceAnalyticsCategory"
 description: "Read properties and relationships of the userExperienceAnalyticsCategory object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get userExperienceAnalyticsCategory
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -30,8 +32,10 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /deviceManagement/userExperienceAnalyticsAppHealthOverview
 GET /deviceManagement/userExperienceAnalyticsCategories/{userExperienceAnalyticsCategoryId}
 GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/bestPracticesMetrics
+GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/rebootAnalyticsMetrics
 GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics
 ```
 
@@ -55,7 +59,7 @@ If successful, this method returns a `200 OK` response code and [userExperienceA
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsCategories/{userExperienceAnalyticsCategoryId}
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthOverview
 ```
 
 ### Response
@@ -63,7 +67,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 676
+Content-Length: 657
 
 {
   "value": {
@@ -78,7 +82,7 @@ Content-Length: 676
         "values": [
           {
             "@odata.type": "microsoft.graph.insightValueDouble",
-            "value": "<Unknown Primitive Type Edm.Double>"
+            "value": 1.6666666666666667
           }
         ],
         "severity": "informational"
@@ -88,6 +92,7 @@ Content-Length: 676
   }
 }
 ```
+
 
 
 

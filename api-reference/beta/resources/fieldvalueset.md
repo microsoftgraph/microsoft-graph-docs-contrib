@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # FieldValueSet resource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the column values in a [listItem](listitem.md) resource.
@@ -58,3 +60,5 @@ You may request up to 12 lookup fields in a single query, plus any number of reg
   "suppressions": []
 }
 -->
+
+

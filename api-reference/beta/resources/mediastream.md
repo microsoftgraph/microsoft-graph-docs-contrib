@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # mediaStream resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains information about the media channel.
@@ -57,3 +59,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

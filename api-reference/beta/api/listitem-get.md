@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Get an item in a list
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Returns the metadata for an [item][] in a [list][].
@@ -90,3 +92,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

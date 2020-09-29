@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookTableColumn resource type
 
+Namespace: microsoft.graph
+
 Represents a column in a table.
 
 
@@ -71,3 +73,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

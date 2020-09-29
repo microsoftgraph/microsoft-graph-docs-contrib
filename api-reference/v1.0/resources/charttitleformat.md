@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartTitleFormat resource type
 
+Namespace: microsoft.graph
+
 Encapsulates the format properties for the chart title.
 
 
@@ -53,3 +55,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

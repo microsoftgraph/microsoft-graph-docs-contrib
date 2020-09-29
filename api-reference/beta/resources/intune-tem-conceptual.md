@@ -2,11 +2,13 @@
 title: "Telecom expense management in Microsoft Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) related to telecom expense management for a tenant organization."
 localization_priority: Normal
-author: "rolyon"
+author: "dougeby"
 ms.prod: "intune"
 ---
 
 # Telecom expense management in Microsoft Intune
+
+Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -17,3 +19,6 @@ You can limit data usage and roaming on corporate-owned devices when you use the
 The following Graph resources are available to manage telecom expenses in Intune:
 
 - [Telecom expense management partner](intune-tem-telecomexpensemanagementpartner.md)
+
+
+

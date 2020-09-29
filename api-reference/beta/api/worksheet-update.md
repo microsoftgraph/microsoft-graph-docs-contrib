@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update worksheet
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of worksheet object.
@@ -111,3 +113,5 @@ Content-length: 100
   ]
 }
 -->
+
+

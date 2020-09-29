@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get educationUser
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a user.
 
 ## Permissions
@@ -126,3 +128,4 @@ Content-length: 508
   "suppressions": [
   ]
 }-->
+

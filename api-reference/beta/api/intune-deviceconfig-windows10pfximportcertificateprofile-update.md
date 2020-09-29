@@ -1,13 +1,15 @@
 ---
 title: "Update windows10PFXImportCertificateProfile"
 description: "Update the properties of a windows10PFXImportCertificateProfile object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Update windows10PFXImportCertificateProfile
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -152,6 +154,7 @@ Content-Length: 1262
   "keyStorageProvider": "useTpmKspOtherwiseFail"
 }
 ```
+
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "Update contactfolder"
 description: "Update the properties of contactfolder object."
-author: "angelgolfer-ms"
+author: "kevinbellinger"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Update contactfolder
+
+Namespace: microsoft.graph
 
 Update the properties of contactfolder object.
 ## Permissions
@@ -109,3 +111,4 @@ Content-length: 104
   "suppressions": [
   ]
 }-->
+

@@ -1,13 +1,15 @@
 ---
 title: "Delete a group setting"
 description: "Delete a group setting."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Delete a group setting
+
+Namespace: microsoft.graph
 
 Delete a group setting.
 
@@ -93,3 +95,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

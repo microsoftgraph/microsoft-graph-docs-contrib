@@ -2,12 +2,14 @@
 title: "provisioningSystemDetails resource type"
 description: "Represents the system that a user was provisioned to or from."
 localization_priority: Normal
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
 # provisioningSystemDetails resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,3 +53,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

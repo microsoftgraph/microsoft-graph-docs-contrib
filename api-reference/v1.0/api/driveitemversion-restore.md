@@ -3,11 +3,13 @@ title: "Restore a previous version of a DriveItem"
 description: "Restore a previous version of a DriveItem to be the current version. This will create a new version with the contents of the previous version, but preserves all existing versions of the file."
 localization_priority: Normal
 ms.prod: "sharepoint"
-author: ""
+author: "JeremyKelley"
 doc_type: apiPageType
 ---
 
 # Restore a previous version of a DriveItem
+
+Namespace: microsoft.graph
 
 Restore a previous version of a DriveItem to be the current version. This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
 
@@ -88,3 +90,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 } -->
+

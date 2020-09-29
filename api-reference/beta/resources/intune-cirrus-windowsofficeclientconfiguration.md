@@ -2,12 +2,14 @@
 title: "windowsOfficeClientConfiguration resource type"
 description: "Entity that describes office policy settings for Windows."
 localization_priority: Normal
-author: "rolyon"
-ms.prod: "Intune"
+author: "dougeby"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # windowsOfficeClientConfiguration resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -84,6 +86,9 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+
 
 
 

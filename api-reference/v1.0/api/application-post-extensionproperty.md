@@ -2,12 +2,14 @@
 title: "Create extensionProperty"
 description: "Create a new extensionProperty."
 localization_priority: Normal
-author: "davidmu1"
+author: "sureshja"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # Create extensionProperty
+
+Namespace: microsoft.graph
 
 Create a new [extensionProperty](../resources/extensionproperty.md) definition. You can use this operation to add a custom property value to the targeted object type defined in the **extensionProperty**, using standard creation and update requests to the target object.
 
@@ -17,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
@@ -33,7 +35,7 @@ POST /applications/{id}/extensionProperties
 | Name       | Description|
 |:-----------|:----------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-type | application/json. Required. |
+| Content-Type | application/json. Required. |
 
 ## Request body
 
@@ -130,3 +132,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

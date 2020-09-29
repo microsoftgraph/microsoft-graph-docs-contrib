@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # ItemActivity resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **ItemActivity** resource provides information about activities that took place on an item or within a container.
@@ -108,3 +110,5 @@ New actions may get logged in the future, so make sure your app is tolerant of h
   "suppressions": []
 }
 -->
+
+

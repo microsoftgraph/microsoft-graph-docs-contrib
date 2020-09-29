@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartPointFormat resource type
 
+Namespace: microsoft.graph
+
 Represents formatting object for chart points.
 
 
@@ -51,3 +53,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

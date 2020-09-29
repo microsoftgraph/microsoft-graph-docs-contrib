@@ -2,12 +2,14 @@
 title: "List orgContacts"
 description: "Retrieve the list of organizational contacts for this organization."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List orgContacts
+
+Namespace: microsoft.graph
 
 Get the list of [organizational contacts](../resources/orgcontact.md) for this organization.
 
@@ -125,3 +127,4 @@ Content-length: 222
   ]
 }
 -->
+

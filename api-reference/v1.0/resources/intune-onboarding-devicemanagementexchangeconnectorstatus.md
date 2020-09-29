@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementExchangeConnectorStatus enum type"
 description: "The current status of the Exchange Connector."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # deviceManagementExchangeConnectorStatus enum type
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -20,6 +22,11 @@ The current status of the Exchange Connector.
 |connectionPending|1|Pending Connection to the Exchange Environment.|
 |connected|2|Connected to the Exchange Environment|
 |disconnected|3|Disconnected from the Exchange Environment|
+
+
+
+
+
 
 
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List threads
 
+Namespace: microsoft.graph
+
 Get all the threads in a group conversation.
 
 Note: You can also [get all the threads of a group](group-list-threads.md).
@@ -18,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All, Group.Read.All    |
+|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Group.Read.All, Group.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -124,3 +126,4 @@ Content-length: 536
   "suppressions": [
   ]
 }-->
+

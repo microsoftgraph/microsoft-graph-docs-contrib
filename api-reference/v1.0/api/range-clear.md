@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: clear
 
+Namespace: microsoft.graph
+
 Clear range values, format, fill, border, etc.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -102,3 +104,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

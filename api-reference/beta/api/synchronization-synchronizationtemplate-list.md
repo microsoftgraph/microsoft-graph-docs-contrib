@@ -3,11 +3,13 @@ title: "List existing synchronization templates"
 description: "List the synchronization templates associated with a given application or service principal."
 localization_priority: Normal
 doc_type: apiPageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 
 # List existing synchronization templates
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -110,3 +112,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

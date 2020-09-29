@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Get Drive
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource.
@@ -235,7 +237,7 @@ If the drive does not exist and cannot be provisioned automatically (when using 
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
+  "description": "Get metadata for a OneDrive, OneDrive for Business, or Microsoft 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
   "tocPath": "Drives/Get drive",
@@ -243,3 +245,5 @@ If the drive does not exist and cannot be provisioned automatically (when using 
   ]
 }
 -->
+
+

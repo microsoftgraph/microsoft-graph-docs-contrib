@@ -1,13 +1,15 @@
 ---
 title: "bitLockerRecoveryPasswordRotationType enum type"
 description: "BitLocker recovery password rotation type"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # bitLockerRecoveryPasswordRotationType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,6 +24,9 @@ BitLocker recovery password rotation type
 |disabled|1|Recovery password rotation off|
 |enabledForAzureAd|2|Recovery password rotation on for Azure AD joined devices|
 |enabledForAzureAdAndHybrid|3|Recovery password rotation on for both Azure AD joined and hybrid joined devices|
+
+
+
 
 
 

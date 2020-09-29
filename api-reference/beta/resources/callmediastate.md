@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # callMediaState resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the media state for a [call](call.md).
@@ -45,3 +47,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -1,13 +1,15 @@
 ---
 title: "managedAppFlaggedReason enum type"
 description: "The reason for which a user has been flagged"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # managedAppFlaggedReason enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,6 +24,9 @@ The reason for which a user has been flagged
 |rootedDevice|1|The app registration is running on a rooted/unlocked device.|
 |androidBootloaderUnlocked|2|The app registration is running on an Android device on which the bootloader is unlocked.|
 |androidFactoryRomModified|3|The app registration is running on an Android device on which the factory ROM has been modified.|
+
+
+
 
 
 

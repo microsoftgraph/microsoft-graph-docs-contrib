@@ -1,13 +1,15 @@
 ---
 title: "Get iosEasEmailProfileConfiguration"
 description: "Read properties and relationships of the iosEasEmailProfileConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get iosEasEmailProfileConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2438
+Content-Length: 2496
 
 {
   "value": {
@@ -124,10 +126,12 @@ Content-Length: 2438
     "requireSsl": true,
     "useOAuth": true,
     "signingCertificateType": "certificate",
-    "encryptionCertificateType": "certificate"
+    "encryptionCertificateType": "certificate",
+    "perAppVPNProfileId": "Per App VPNProfile Id value"
   }
 }
 ```
+
 
 
 

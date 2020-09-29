@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # audioDuckingConfiguration resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Parameters for ducking of other sources (phasing in and out of other sources.)
@@ -55,3 +57,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

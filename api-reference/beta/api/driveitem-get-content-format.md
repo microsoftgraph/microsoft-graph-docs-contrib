@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Download a file in another format
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to retrieve the contents of an item in a specific format.
@@ -108,3 +110,5 @@ See [Error Responses][error-response] for more information about how errors are 
   ]
 }
 -->
+
+

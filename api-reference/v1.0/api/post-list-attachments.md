@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List attachments
 
+Namespace: microsoft.graph
+
 Retrieve a list of [attachment](../resources/attachment.md) objects attached to a post.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -122,3 +124,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

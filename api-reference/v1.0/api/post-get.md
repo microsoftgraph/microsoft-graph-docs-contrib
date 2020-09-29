@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get post
 
+Namespace: microsoft.graph
+
 Get the properties and relationships of a post in a specified thread. You can specify both the parent 
 conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 
@@ -126,3 +128,4 @@ Content-length: 414
   "suppressions": [
   ]
 }-->
+

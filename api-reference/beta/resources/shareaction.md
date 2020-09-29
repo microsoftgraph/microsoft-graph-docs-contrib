@@ -10,6 +10,8 @@ ms.prod: ""
 
 # ShareAction resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **ShareAction** resource provides information about an [activity][activity] that shared an item.
@@ -52,3 +54,5 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
+
+

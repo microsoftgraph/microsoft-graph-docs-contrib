@@ -1,13 +1,15 @@
 ---
 title: "Get androidGeneralDeviceConfiguration"
 description: "Read properties and relationships of the androidGeneralDeviceConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get androidGeneralDeviceConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4367
+Content-Length: 4409
 
 {
   "value": {
@@ -143,6 +145,7 @@ Content-Length: 4367
     "passwordPreviousPasswordBlockCount": 2,
     "passwordSignInFailureCountBeforeFactoryReset": 12,
     "passwordRequiredType": "alphabetic",
+    "requiredPasswordComplexity": "low",
     "passwordRequired": true,
     "powerOffBlocked": true,
     "factoryResetBlocked": true,
@@ -191,6 +194,7 @@ Content-Length: 4367
   }
 }
 ```
+
 
 
 

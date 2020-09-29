@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # ListInfo resource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **listInfo** complex type provides additional information about a [list][].
@@ -60,3 +62,5 @@ For developers familiar with SharePoint's CSOM APIs, the `template` value corres
   "suppressions": []
 }
 -->
+
+

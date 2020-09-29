@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # SearchResult resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **SearchResult** resource indicates than an item is the response to a search query.
@@ -49,3 +51,5 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "suppressions": []
 }
 -->
+
+

@@ -1,13 +1,15 @@
 ---
 title: "Update device"
 description: "Update the properties of a registered device."
-author: "davidmu1"
+author: "spunukol"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Update device
+
+Namespace: microsoft.graph
 
 Update the properties of a registered device.
 
@@ -108,3 +110,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

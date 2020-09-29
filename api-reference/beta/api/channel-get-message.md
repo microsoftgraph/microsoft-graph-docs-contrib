@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get channel message
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a single [message](../resources/chatmessage.md) (without its replies) in a [channel](../resources/channel.md) of a team.
@@ -18,9 +20,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)|Group.Read.All, Group.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application| Group.Read.All, Group.ReadWrite.All |
+|Delegated (work or school account)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Delegated (personal Microsoft account)|Not supported.|
+|Application| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
@@ -93,7 +97,8 @@ Content-type: application/json
     "etag": "1555375673184",
     "messageType": "message",
     "createdDateTime": "2019-04-16T00:47:53.184Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": "",
     "summary": null,
@@ -167,3 +172,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

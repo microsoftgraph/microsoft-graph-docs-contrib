@@ -1,13 +1,15 @@
 ---
 title: "Update roleScopeTag"
 description: "Update the properties of a roleScopeTag object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Update roleScopeTag
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -89,6 +91,7 @@ Content-Length: 204
   "isBuiltIn": true
 }
 ```
+
 
 
 

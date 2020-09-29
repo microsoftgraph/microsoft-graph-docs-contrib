@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # licenseAssignmentState resource type
 
+Namespace: microsoft.graph
+
 
 The **licenseAssignmentStates** property of the [user](user.md) entity is a collection of **licenseAssignmentState** objects. It provides details about license assignments to a user. The details include information such as:  
 
@@ -53,3 +55,4 @@ The following is a JSON representation of the resource.
       Referenced type microsoft.graph.licenseAssignmentState is not defined in the doc set! Potential suggestion: UNKNOWN"
   ]
 }-->
+

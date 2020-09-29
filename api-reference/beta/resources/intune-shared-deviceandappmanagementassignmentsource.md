@@ -1,13 +1,15 @@
 ---
 title: "deviceAndAppManagementAssignmentSource enum type"
 description: "Represents source of assignment."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # deviceAndAppManagementAssignmentSource enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -20,6 +22,9 @@ Represents source of assignment.
 |:---|:---|:---|
 |direct|0|Direct indicates a direct assignment.|
 |policySets|1|PolicySets indicates assignment was made via PolicySet assignment.|
+
+
+
 
 
 

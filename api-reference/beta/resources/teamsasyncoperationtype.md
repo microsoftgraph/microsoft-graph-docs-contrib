@@ -9,6 +9,8 @@ doc_type: enumPageType
 
 # teamsAsyncOperationType enum type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Types of [teamsAsyncOperation](teamsasyncoperation.md). Members will be added here as more async operations are supported.
@@ -22,4 +24,6 @@ Types of [teamsAsyncOperation](teamsasyncoperation.md). Members will be added he
 |archiveTeam|2|Operation to archive a team.|
 |unarchiveTeam|3|Operation to restore an archived team.|
 |createTeam|3|Operation to create a team from scratch.|
+
+
 

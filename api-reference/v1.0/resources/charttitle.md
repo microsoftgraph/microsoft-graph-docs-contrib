@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartTitle resource type
 
+Namespace: microsoft.graph
+
 Represents a chart title object of a chart.
 
 
@@ -62,3 +64,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

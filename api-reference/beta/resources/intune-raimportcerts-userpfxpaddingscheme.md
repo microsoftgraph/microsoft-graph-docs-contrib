@@ -1,13 +1,15 @@
 ---
 title: "userPfxPaddingScheme enum type"
 description: "Supported values for the padding scheme used by encryption provider."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # userPfxPaddingScheme enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -24,6 +26,9 @@ Supported values for the padding scheme used by encryption provider.
 |oaepSha256|3|Use OAEP SHA-256 padding.|
 |oaepSha384|4|Use OAEP SHA-384 padding.|
 |oaepSha512|5|Use OAEP SHA-512 padding.|
+
+
+
 
 
 

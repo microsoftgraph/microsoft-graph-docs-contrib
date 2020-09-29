@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookChartLegendFormat resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Encapsulates the format properties of a chart legend.
@@ -60,3 +62,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -1,13 +1,15 @@
 ---
 title: "mobileAppPublishingState enum type"
 description: "Indicates the publishing state of an app."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # mobileAppPublishingState enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,6 +23,9 @@ Indicates the publishing state of an app.
 |notPublished|0|The app is not yet published.|
 |processing|1|The app is pending service-side processing.|
 |published|2|The app is published.|
+
+
+
 
 
 

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # targetResource resource type
 
+Namespace: microsoft.graph
+
 Represents target resource types associated with audit activity. 
 
 ## Properties
@@ -55,3 +57,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

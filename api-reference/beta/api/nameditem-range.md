@@ -4,10 +4,12 @@ description: "Returns the range object that is associated with the name. Throws 
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: ""
+author: "ruoyingl"
 ---
 
 # NamedItem: Range
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -102,3 +104,5 @@ Content-length: 169
   ]
 }
 -->
+
+

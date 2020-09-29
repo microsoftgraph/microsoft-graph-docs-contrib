@@ -1,13 +1,15 @@
 ---
 title: "Get androidWorkProfileCompliancePolicy"
 description: "Read properties and relationships of the androidWorkProfileCompliancePolicy object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get androidWorkProfileCompliancePolicy
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -101,6 +103,7 @@ Content-Length: 1607
   }
 }
 ```
+
 
 
 

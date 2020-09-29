@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # participantInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains additional properties about the participant identity
@@ -59,3 +61,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

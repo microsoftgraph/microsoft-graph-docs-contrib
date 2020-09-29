@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete plannerPlan
 
+Namespace: microsoft.graph
+
 Delete **plannerPlan**.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -92,3 +94,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # callRoute resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The callRoute type.
@@ -51,3 +53,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

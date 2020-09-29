@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Update shipmentMethods
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of a shipment method object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -73,4 +78,6 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-15T02:20:57.09Z"
   }
 ```
+
+
 

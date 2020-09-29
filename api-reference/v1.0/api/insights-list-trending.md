@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List trending
 
+Namespace: microsoft.graph
+
 Calculated insight that includes a list of documents trending around the user.
 
 ## Permissions
@@ -100,5 +102,6 @@ Content-length: 801
     ]
 }
 ```
+
 
 

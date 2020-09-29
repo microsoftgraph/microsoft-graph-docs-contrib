@@ -1,13 +1,15 @@
 ---
 title: "chassisType enum type"
 description: "Chassis type."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # chassisType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -27,6 +29,9 @@ Chassis type.
 |tablet|101|Mobile tablet.|
 |mobileOther|102|Other mobile.|
 |mobileUnknown|103|Unknown mobile.|
+
+
+
 
 
 

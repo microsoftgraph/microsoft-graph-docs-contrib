@@ -1,15 +1,20 @@
 ---
 title: "List attachments"
 description: "Get a list of attachment objects attached to an Outlook task."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# List attachments
+# List attachments (deprecated)
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Get a list of [attachment](../resources/attachment.md) objects attached to an Outlook task.
 
@@ -122,3 +127,5 @@ Content-length: 215
   ]
 }
 -->
+
+

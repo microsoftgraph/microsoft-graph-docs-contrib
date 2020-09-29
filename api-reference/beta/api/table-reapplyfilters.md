@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Table: reapplyFilters
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Reapplies all the filters currently on the table.
@@ -92,3 +94,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

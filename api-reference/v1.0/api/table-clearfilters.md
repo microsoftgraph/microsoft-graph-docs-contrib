@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Table: clearFilters
 
+Namespace: microsoft.graph
+
 Clears all the filters currently applied on the table.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -91,3 +93,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # TableRow: Range
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Returns the range object associated with the entire row.
@@ -103,3 +105,5 @@ Content-length: 169
   ]
 }
 -->
+
+

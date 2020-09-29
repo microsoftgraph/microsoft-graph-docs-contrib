@@ -1,13 +1,15 @@
 ---
 title: "ndesConnectorState enum type"
 description: "The current status of the Ndes Connector."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # ndesConnectorState enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,6 +23,9 @@ The current status of the Ndes Connector.
 |none|0|State not available yet for this connector.|
 |active|1|Ndes connector has connected recently|
 |inactive|2|No recent activity for the Ndes connector|
+
+
+
 
 
 

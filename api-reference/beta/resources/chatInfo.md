@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # chatInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains information associated with Microsoft Teams meetings.
@@ -52,3 +54,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

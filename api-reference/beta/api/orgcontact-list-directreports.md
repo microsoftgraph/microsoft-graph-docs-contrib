@@ -2,12 +2,14 @@
 title: "orgContact: List directReports"
 description: "Get the contact's direct reports."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # orgContact: List directReports
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -104,3 +106,5 @@ Content-length: 55
   ]
 }
 -->
+
+

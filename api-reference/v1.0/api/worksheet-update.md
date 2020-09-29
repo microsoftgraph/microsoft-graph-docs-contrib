@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update worksheet
 
+Namespace: microsoft.graph
+
 Update the properties of worksheet object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -111,3 +113,4 @@ Content-length: 100
   "suppressions": [
   ]
 }-->
+

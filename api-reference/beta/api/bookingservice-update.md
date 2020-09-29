@@ -2,12 +2,14 @@
 title: "Update bookingservice"
 description: "Update the properties of a bookingService object in the specified bookingbusiness."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
 ---
 
 # Update bookingservice
+
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -117,3 +119,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

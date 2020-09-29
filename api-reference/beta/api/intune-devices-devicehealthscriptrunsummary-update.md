@@ -1,13 +1,15 @@
 ---
 title: "Update deviceHealthScriptRunSummary"
 description: "Update the properties of a deviceHealthScriptRunSummary object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Update deviceHealthScriptRunSummary
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -109,6 +111,7 @@ Content-Length: 543
   "issueRemediatedCumulativeDeviceCount": 4
 }
 ```
+
 
 
 

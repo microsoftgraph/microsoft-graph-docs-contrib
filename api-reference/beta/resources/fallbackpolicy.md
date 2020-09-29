@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # fallbackPolicy resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Allows fallback policy to be specified for iOS endpoints only and is designed to be used for high-priority raw notifications that might not be delivered to devices due to platform specific restrictions (e.g. battery saver mode).
@@ -17,7 +19,7 @@ Allows fallback policy to be specified for iOS endpoints only and is designed to
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| endpointFallback | [fallbackPolicyProperties](fallbackpolicyproperties.md) | EndpointFallback policy object handles notification fallback policy at an end point level and is currently limited to iOS. |   
+| endpointFallback | [fallbackpolicyProperties](fallbackpolicyproperties.md) | EndpointFallback policy object handles notification fallback policy at an end point level and is currently limited to iOS. |   
 
 
 ## JSON representation
@@ -48,3 +50,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

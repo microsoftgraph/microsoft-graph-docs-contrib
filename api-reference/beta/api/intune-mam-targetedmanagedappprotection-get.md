@@ -1,13 +1,15 @@
 ---
 title: "Get targetedManagedAppProtection"
 description: "Read properties and relationships of the targetedManagedAppProtection object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get targetedManagedAppProtection
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2549
+Content-Length: 2595
 
 {
   "value": {
@@ -121,11 +123,13 @@ Content-Length: 2549
       "sharePoint"
     ],
     "appActionIfUnableToAuthenticateUser": "wipe",
+    "dialerRestrictionLevel": "managedApps",
     "isAssigned": true,
     "targetedAppManagementLevels": "unmanaged"
   }
 }
 ```
+
 
 
 

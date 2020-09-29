@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookChartAreaFormat resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Encapsulates the format properties for the overall chart area.
@@ -59,3 +61,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

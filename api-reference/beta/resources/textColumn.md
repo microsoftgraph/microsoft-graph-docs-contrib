@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # TextColumn resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **textColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are text.
@@ -48,3 +50,5 @@ Here is a JSON representation of a **textColumn** resource.
   "suppressions": []
 }
 -->
+
+

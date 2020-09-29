@@ -2,12 +2,14 @@
 title: "Update nameditem"
 description: "Update the properties of nameditem object."
 localization_priority: Normal
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType
 ---
 
 # Update nameditem
+
+Namespace: microsoft.graph
 
 Update the properties of nameditem object.
 ## Permissions
@@ -114,3 +116,4 @@ Content-length: 87
   "suppressions": [
   ]
 }-->
+

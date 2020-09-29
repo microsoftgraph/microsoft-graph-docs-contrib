@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List sectionGroups
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [sectionGroup](../resources/sectiongroup.md) objects.
@@ -124,3 +126,5 @@ Content-length: 378
   ]
 }
 -->
+
+

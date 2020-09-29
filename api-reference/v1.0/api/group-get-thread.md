@@ -1,13 +1,16 @@
 ---
 title: "Get conversation thread"
 description: "Get a thread object."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Get conversation thread
+
+Namespace: microsoft.graph
+
 Get a [thread](../resources/conversationthread.md) object.
 
 ## Permissions
@@ -17,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Group.Read.All, Group.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -109,3 +112,4 @@ Content-length: 655
   "suppressions": [
   ]
 }-->
+

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationSubmissionResource resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A wrapper around a resource for use on a submission. The wrapper adds a pointer to the assignment resource if this was copied from the assignment.  
@@ -64,3 +66,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

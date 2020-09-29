@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List connections
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [externalConnections](../resources/externalconnection.md).
@@ -133,3 +135,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

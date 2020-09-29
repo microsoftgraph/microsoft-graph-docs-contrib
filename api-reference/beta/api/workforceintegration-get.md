@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get workforceIntegration
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [workforceintegration](../resources/workforceintegration.md) object.
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teamwork/workforceIntegrations
+GET /teamwork/workforceIntegrations/{workforceIntegrationId}
 ```
 
 ## Optional query parameters
@@ -118,3 +120,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

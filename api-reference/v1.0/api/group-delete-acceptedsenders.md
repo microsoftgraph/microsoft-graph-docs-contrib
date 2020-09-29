@@ -1,13 +1,15 @@
 ---
 title: "Remove acceptedSender"
 description: "Remove a user or group from the accepted-senders list. "
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Remove acceptedSender
+
+Namespace: microsoft.graph
 Remove a user or group from the accepted-senders list. 
 
 ## Permissions
@@ -92,3 +94,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

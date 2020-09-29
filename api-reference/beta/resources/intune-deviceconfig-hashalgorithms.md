@@ -1,13 +1,15 @@
 ---
 title: "hashAlgorithms enum type"
 description: "Hash Algorithm Options."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # hashAlgorithms enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -20,6 +22,9 @@ Hash Algorithm Options.
 |:---|:---|:---|
 |sha1|1|SHA-1 Hash Algorithm.|
 |sha2|2|SHA-2 Hash Algorithm.|
+
+
+
 
 
 

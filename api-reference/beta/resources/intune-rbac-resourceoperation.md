@@ -1,13 +1,15 @@
 ---
 title: "resourceOperation resource type"
 description: "Describes the resourceOperation resource (entity) of the Microsoft Graph API (REST), which supports Intune workflows related to role-based access control (RBAC)."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # resourceOperation resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -57,6 +59,9 @@ Here is a JSON representation of the resource.
   "enabledForScopeValidation": true
 }
 ```
+
+
+
 
 
 

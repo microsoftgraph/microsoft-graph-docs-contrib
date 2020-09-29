@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update educationschool properties
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a school object.
@@ -145,3 +147,5 @@ Content-length: 292
   ]
 }
 -->
+
+

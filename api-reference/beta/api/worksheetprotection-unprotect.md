@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # workbookWorksheetProtection: unprotect
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Unprotect a worksheet
@@ -102,3 +104,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

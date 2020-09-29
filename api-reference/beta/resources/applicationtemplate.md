@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # applicationTemplate resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an application in the [Azure AD application gallery](/azure/active-directory/saas-apps/tutorial-list).
@@ -76,3 +78,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

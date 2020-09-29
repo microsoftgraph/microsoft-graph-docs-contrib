@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: Row
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets a row contained in the range.
@@ -99,3 +101,5 @@ Content-length: 169
   "suppressions": []
 }
 -->
+
+

@@ -1,13 +1,15 @@
 ---
 title: "userExperienceAnalyticsSummarizedBy enum type"
 description: "Not yet documented"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # userExperienceAnalyticsSummarizedBy enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -24,6 +26,9 @@ Not yet documented
 |modelRegression|4|Not yet documented|
 |manufacturerRegression|5|Not yet documented|
 |operatingSystemVersionRegression|6|Not yet documented|
+
+
+
 
 
 

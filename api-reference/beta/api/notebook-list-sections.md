@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List sections
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [section](../resources/onenotesection.md) objects from the specified notebook.
@@ -125,3 +127,5 @@ Content-length: 345
   ]
 }
 -->
+
+

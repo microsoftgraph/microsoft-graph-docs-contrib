@@ -1,13 +1,15 @@
 ---
 title: "List androidStoreApps"
 description: "List properties and relationships of the androidStoreApp objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # List androidStoreApps
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1615
+Content-Length: 1680
 
 {
   "value": [
@@ -88,6 +90,8 @@ Content-Length: 1615
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "packageId": "Package Id value",
       "appIdentifier": "App Identifier value",
       "appStoreUrl": "https://example.com/appStoreUrl/",
@@ -112,6 +116,7 @@ Content-Length: 1615
   ]
 }
 ```
+
 
 
 

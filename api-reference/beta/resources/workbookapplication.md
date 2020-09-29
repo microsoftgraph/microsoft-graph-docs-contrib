@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookApplication resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the Excel application that manages the workbook.
@@ -60,3 +62,5 @@ None.
   "suppressions": []
 }
 -->
+
+

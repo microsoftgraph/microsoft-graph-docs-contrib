@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Table: delete
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes the table.
@@ -75,3 +77,5 @@ HTTP/1.1 200 OK
   "suppressions": []
 }
 -->
+
+

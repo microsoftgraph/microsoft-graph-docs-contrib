@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookChart resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a chart object in a workbook.
@@ -87,3 +89,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -1,0 +1,60 @@
+---
+title: "aadUserConversationMember resource type"
+description: "Represents Azure Active Directory user in a chat or channel."
+localization_priority: Priority
+author: "clearab"
+ms.prod: "microsoft-teams"
+doc_type: resourcePageType
+---
+
+# aadUserConversationMember resource type
+
+Namespace: microsoft.graph
+
+Represents an Azure Active Directory user in a [team](team.md).
+This type inherits from [conversationMember](conversationmember.md).
+
+## Properties
+
+| Property   | Type |Description|
+|:---------------|:--------|:----------|
+|id|String| Read-only. Unique ID of the user.|
+|displayName| string | The display name of the user. |
+|roles| string collection | The roles for that user. |
+|userId| string | The guid of the user. |
+|email| string  | The email address of the user. |
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.aadUserConversationMember"
+}-->
+
+```json
+{
+  "id": "string (identifier)",
+  "displayName" : "string",
+  "roles" : ["string"],
+  "userId" : "string",
+  "email" : "string"
+}
+
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "aadUserConversationMember",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->
+

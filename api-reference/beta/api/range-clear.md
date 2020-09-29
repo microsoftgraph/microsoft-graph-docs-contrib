@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: clear
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Clear range values, format, fill, border, etc.
@@ -104,3 +106,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

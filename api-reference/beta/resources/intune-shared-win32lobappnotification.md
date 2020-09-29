@@ -1,13 +1,15 @@
 ---
 title: "win32LobAppNotification enum type"
 description: "Contains value for notification status."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # win32LobAppNotification enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,6 +23,9 @@ Contains value for notification status.
 |showAll|0|Show all notifications.|
 |showReboot|1|Only show restart notification and suppress other notifications.|
 |hideAll|2|Hide all notifications.|
+
+
+
 
 
 

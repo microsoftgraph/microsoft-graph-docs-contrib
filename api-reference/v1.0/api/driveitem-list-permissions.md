@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # List sharing permissions on a driveItem
 
+Namespace: microsoft.graph
+
 List the effective sharing permissions on a [driveItem](../resources/driveitem.md).
 
 ## Access to sharing permissions
@@ -167,3 +169,4 @@ how errors are returned.
   "suppressions": [
   ]
 } -->
+

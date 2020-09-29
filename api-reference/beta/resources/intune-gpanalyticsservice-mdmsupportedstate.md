@@ -1,13 +1,15 @@
 ---
 title: "mdmSupportedState enum type"
 description: "Mdm Support Status of the setting."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # mdmSupportedState enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,6 +24,9 @@ Mdm Support Status of the setting.
 |supported|1|Setting is supported.|
 |unsupported|2|Setting is unsupported.|
 |deprecated|3|Setting is depcrecated.|
+
+
+
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "windowsStartMenuModeType enum type"
 description: "Type of display modes for the start menu."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # windowsStartMenuModeType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,6 +23,9 @@ Type of display modes for the start menu.
 |userDefined|0|User defined. Default value.|
 |fullScreen|1|Full screen.|
 |nonFullScreen|2|Non-full screen.|
+
+
+
 
 
 

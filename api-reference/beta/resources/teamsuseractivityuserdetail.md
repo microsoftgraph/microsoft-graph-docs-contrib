@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamsUserActivityUserDetail resource type
 
+Namespace: microsoft.graph
+
 ## Properties
 
 | Property                | Type              |
@@ -51,3 +53,5 @@ The following is a JSON representaion of the resource.
   "reportPeriod": "String"
 }
 ```
+
+

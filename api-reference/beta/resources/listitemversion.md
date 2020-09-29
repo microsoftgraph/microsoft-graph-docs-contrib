@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # ListItemVersion resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **listItemVersion** resource represents a previous version of a [ListItem](listitem.md) resource.
@@ -72,3 +74,5 @@ The following table defines the relationships that the **driveItemVersion** reso
   "suppressions": []
 }
 -->
+
+

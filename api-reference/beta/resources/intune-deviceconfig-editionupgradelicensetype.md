@@ -1,13 +1,15 @@
 ---
 title: "editionUpgradeLicenseType enum type"
 description: "Edition Upgrade License type"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # editionUpgradeLicenseType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,6 +23,9 @@ Edition Upgrade License type
 |productKey|0|Product Key Type|
 |licenseFile|1|License File Type|
 |notConfigured|2|NotConfigured|
+
+
+
 
 
 

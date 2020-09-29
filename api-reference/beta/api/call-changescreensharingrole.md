@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # call: changeScreenSharingRole
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Allow applications to share screen content with the participants of a group call.
@@ -158,3 +160,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

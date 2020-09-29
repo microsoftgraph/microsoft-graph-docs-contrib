@@ -1,13 +1,15 @@
 ---
 title: "Working with the authentication methods usage report API"
 description: "The authentication methods usage report helps an organization understand how their end users are using Azure Active Directory capabilities such as self-service password reset and multi-factor authentication (MFA)."
-author: davidmu1
 localization_priority: Normal
-ms.prod: reports
-doc_type: conceptualPageType
+author: "khotz"
+ms.prod: "microsoft-identity-platform"
+doc_type: "conceptualPageType"
 ---
 
 # Working with the authentication methods usage report API
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,6 +41,8 @@ Usage reports are available for licensed features that take advantage of self-se
 - Learn how to [deploy Azure Active Directory self-service password reset](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
 - Learn how to deploy [Azure Active Directory MFA](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted).
 - Learn how to enable [combined security info registration](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined).
+
+
 
 
 

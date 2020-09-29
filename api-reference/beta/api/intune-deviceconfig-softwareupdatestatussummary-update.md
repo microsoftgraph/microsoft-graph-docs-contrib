@@ -1,13 +1,15 @@
 ---
 title: "Update softwareUpdateStatusSummary"
 description: "Update the properties of a softwareUpdateStatusSummary object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Update softwareUpdateStatusSummary
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -124,6 +126,7 @@ Content-Length: 567
   "notApplicableUserCount": 6
 }
 ```
+
 
 
 

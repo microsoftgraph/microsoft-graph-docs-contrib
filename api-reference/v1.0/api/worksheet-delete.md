@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Worksheet: delete
 
+Namespace: microsoft.graph
+
 Deletes the worksheet from the workbook.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -68,3 +70,4 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+

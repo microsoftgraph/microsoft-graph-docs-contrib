@@ -9,6 +9,92 @@ author: "MSGraphDocsvTeam"
 
 # Enum values
 
+Namespace: microsoft.graph
+
+### volumeType values
+
+| Member
+|:--------------
+| operatingSystemVolume
+| fixedDataVolume
+| removableDataVolume
+| unknownFutureValue
+
+### allowedAudiences values
+
+|Member|
+|:---|
+|me|
+|family|
+|contacts|
+|groupMembers|
+|organization|
+|federatedOrganizations|
+|everyone|
+|unknownFutureValue|
+
+### emailType values
+
+|Member|
+|:---|
+|unknown|
+|work|
+|personal|
+|main|
+|other|
+
+### anniversaryType values
+
+|Member|
+|:---|
+|birthday|
+|wedding|
+|unknownFutureValue|
+
+### skillProficiencyLevel values
+
+|Member|
+|:---|
+|elementary|
+|limitedWorking|
+|generalProfessional|
+|advancedProfessional|
+|expert|
+|unknownFutureValue|
+
+### languageProficiencyLevel values
+
+|Member|
+|:---|
+|elementary|
+|conversational|
+|limitedWorking|
+|professionalWorking|
+|fullProfessional|
+|nativeOrBilingual|
+|unknownFutureValue|
+
+### personRelationship values
+
+|Member|
+|:---|
+|manager|
+|colleague|
+|directReport|
+|dotLineReport|
+|assistant|
+|dotLineManager|
+|alternateContact|
+|friend|
+|spouse|
+|sibling|
+|child|
+|parent|
+|sponsor|
+|emergencyContact|
+|other|
+|unknownFutureValue|
+
 ### attachmentType values
 
 | Member
@@ -43,11 +129,22 @@ author: "MSGraphDocsvTeam"
 
 |Member|
 |:---|
-|microsoft.graph.event|
-|microsoft.graph.message|
-|microsoft.graph.driveItem|
-|microsoft.graph.externalFile|
-|microsoft.graph.externalItem|
+|event|
+|message|
+|driveItem|
+|externalItem|
+|site|
+|list|
+|listItem|
+|drive|
+
+### bucketAggregationSortProperty values
+
+|Member|
+|:---|
+|count|
+|keyAsString|
+|keyAsNumber|
 
 ### contactRelationship values
 
@@ -248,9 +345,9 @@ author: "MSGraphDocsvTeam"
 | Member
 |:-------------------------
 | sis
+| lms
 | manual
 | unknownFutureValue
-
 
 ### educationGender values
 
@@ -752,6 +849,15 @@ Possible values for user account types (group membership), per Windows definitio
 | power         | 1     | Member of Power Users group.    |
 | administrator | 2     | Member of Administrators group. |
 
+### chatMessagePolicyViolationDlpActionType values
+
+| Value |
+|:-----------------|
+| none |
+| NotifySender |
+| BlockAccess |
+| BlockAccessExternal |
+
 ### scopeOperatorMultiValuedComparisonType values
 
 |Member|
@@ -940,6 +1046,23 @@ Possible values for user account types (group membership), per Windows definitio
 |signin|
 |user|
 |unknownFutureValue|
+
+### chatMessagePolicyViolationUserActionType values
+
+| Member   | Int value |  Description |
+|:---------------|:--------|:----------|
+| None | 0 | Default value. This is the value on a message when the user has not taken an action on the message blocked by DLP. |
+| Override | 1 | Sender has overridden the message verdict and sent the message anyway.|
+| ReportFalsePositive | 2 | Sender has reported the message verdict to the admins as a false positive.|
+
+### chatMessagePolicyViolationVerdictDetailsType values
+
+| Member   | Int value |  Description |
+|:---------------|:--------|:----------|
+| None | 0 |  User is not allowed to override the message. User is not allowed to report a message as false positive if policyTip is not provided. In all other scenarios, user can report a message as false positive.|
+| AllowFalsePositiveOverride | 1 |  User is not allowed to explicitly override the block unless this is combined with `AllowOverrideWithoutJustification` or `AllowOverrideWithJustification` flags. Reporting a false positive on the violation automatically overrides the block and sends the message. |
+| AllowOverrideWithoutJustification | 2 | User is allowed to override the block and send the message. Justification text is not required. Exclusive to `AllowOverrideWithJustification`. |
+| AllowOverrideWithJustification | 4 |  User is allowed to override the block and send the message. Justification text is required. Exclusive to `AllowOverrideWithoutJustification`.|
 
 ### entityType values
 
@@ -1172,3 +1295,93 @@ Possible values for user account types (group membership), per Windows definitio
 |:-----------------------------|:------|:-----------------------------------------------------------------------|
 | threatCategory               | 1     | Aggregate threat assessment request by `threatCategory`.               |
 | mailDestinationRoutingReason | 2     | Aggregate threat assessment request by `mailDestinationRoutingReason`. |
+
+### riskEventTypes values
+
+| Member
+|:-------------------------
+| unlikelyTravel
+| anonymizedIPAddress
+| maliciousIPAddress
+| unfamiliarFeatures
+| malwareInfectedIPAddress
+| suspiciousIPAddress
+| leakedCredentials
+| investigationsThreatIntelligence
+| generic
+| unknownFutureValue
+
+### userFlowType values
+|Member
+|:----------------------
+| signUp
+| signIn
+| signUpOrSignIn
+| passwordReset
+| profileUpdate
+| resourceOwnerPasswordCredentialSignIn
+| unknownFutureValue
+
+### openIdConnectResponseMode values
+| Member
+|:----------------------
+| none
+| form_post
+| query
+| unknownFutureValue
+
+### openIdConnectResponseTypes values
+| Member
+|:----------------------
+| none
+| code
+| id_token
+| token
+
+### wellknownListName values
+| Member
+|:----------------------
+| none
+| defaultList
+| flaggedEmails
+| unknownFutureValue
+
+### taskStatus values
+| Member
+|:----------------------
+| notStarted
+| inProgress
+| completed
+| waitingOnOthers
+| deferred
+
+### connectedOrganizationState values
+
+| Member                | Value | Description                                                                                                                                                                                                        |
+|:----------------------| :-----|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| configured            | 0     | Connected Organizations with this state value are included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.                                                          |
+| proposed              | 1     | Connected Organizations that are automatically created by the system have this state value. They are not included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.   |
+| unknownFutureValue    | 2     | A sentinel member.                                                                                                                                                                                                 |
+
+### identitySourceType values
+
+|Member|
+|:---|
+|azureActiveDirectory|
+|external|
+
+### externalGroupMemberType values
+
+|Member|
+|:---|
+|user|
+|group|
+
+### connectionState values
+
+|Member|
+|:---|
+|draft|
+|ready|
+|obsolete|
+|limitExceeded|

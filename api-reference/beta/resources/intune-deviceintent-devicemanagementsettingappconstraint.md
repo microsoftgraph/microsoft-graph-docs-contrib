@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementSettingAppConstraint resource type"
 description: "Constraint enforcing the setting contains only vaild app types."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementSettingAppConstraint resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -41,6 +43,9 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+
 
 
 

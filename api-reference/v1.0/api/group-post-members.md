@@ -1,21 +1,25 @@
 ---
 title: "Add member"
-description: "Add a member to an Office 365 group, a security group, or a mail-enabled security group through the **members** navigation property."
+description: "Add a member to a Microsoft 365 group, a security group, or a mail-enabled security group through the **members** navigation property."
 localization_priority: Priority
-author: "dkershaw10"
+author: "yyuank"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Add member
-Add a member to an Office 365 group or a security group through the **members** navigation property.
 
-You can add users, organizational contacts, or other groups. 
+Namespace: microsoft.graph
+
+Add a member to a Microsoft 365 group or a security group through the **members** navigation property.
+
+You can add users, organizational contacts, service principals or other groups. 
 
 > [!IMPORTANT]
-> You can only add users to security and Office 365 groups managed through the cloud.
+> You can only add users to security and Microsoft 365 groups managed through the cloud.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -27,32 +31,40 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/members/$ref
+POST /groups/{group-id}/members/$ref
 ```
 
 ## Request headers
+
 | Header       | Value |
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Content-type   | application/json. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), [group](../resources/group.md), or [organizational contact](../resources/orgcontact.md) object to be added.
 
 ## Response
+
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
-## Example
+## Examples
+
+### Example 1: Add a member to a group
+
 #### Request
+
 The following is an example of the request.
+
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_member_from_group"
+  "name": "add_member_to_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/members/$ref
+POST https://graph.microsoft.com/v1.0/groups/{group-id}/members/$ref
 Content-type: application/json
 Content-length: 30
 
@@ -60,23 +72,87 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/add-member-to-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-member-from-group-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-member-to-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-member-from-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-member-from-group-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/add-member-to-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-member-from-group-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/add-member-to-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+
+In the request body, supply a JSON representation of the id of the directoryObject, user, or group object you want to add.
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Add multiple members to a group in a single request
+
+This example shows how to add multiple members to a group with OData bind support in a PATCH operation. Note that up to 20 members can be added in a single request. The POST operation is not supported.
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "add_multiple_members_to_group"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/groups/{group-id}
+Content-type: application/json
+Content-length: 30
+
+{
+  "members@odata.bind": [
+    "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+    "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+    "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+    ]
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/add-multiple-members-to-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-multiple-members-to-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/add-multiple-members-to-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/add-multiple-members-to-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+In the request body, supply a JSON representation of the id of the directoryObject, user, or group object you want to add.
 
 #### Response
 The following is an example of the response.
@@ -101,3 +177,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

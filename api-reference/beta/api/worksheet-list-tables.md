@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List tables
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of table objects.
@@ -106,3 +108,5 @@ Content-length: 158
   ]
 }
 -->
+
+

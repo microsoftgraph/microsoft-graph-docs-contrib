@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Chart: setPosition
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Positions the chart relative to cells on the worksheet.
@@ -104,3 +106,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

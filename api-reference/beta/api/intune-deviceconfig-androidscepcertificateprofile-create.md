@@ -1,13 +1,15 @@
 ---
 title: "Create androidScepCertificateProfile"
 description: "Create a new androidScepCertificateProfile object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Create androidScepCertificateProfile
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -67,7 +69,7 @@ The following table shows the properties that are required when you create the a
 |scepServerUrls|String collection|SCEP Server Url(s)|
 |subjectNameFormatString|String|Custom format to use with SubjectNameFormat = Custom. Example: CN={{EmailAddress}},E={{EmailAddress}},OU=Enterprise Users,O=Contoso Corporation,L=Redmond,ST=WA,C=US|
 |keyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|SCEP Key Usage. Possible values are: `keyEncipherment`, `digitalSignature`.|
-|keySize|[keySize](../resources/intune-deviceconfig-keysize.md)|SCEP Key Size. Possible values are: `size1024`, `size2048`.|
+|keySize|[keySize](../resources/intune-deviceconfig-keysize.md)|SCEP Key Size. Possible values are: `size1024`, `size2048`, `size4096`.|
 |hashAlgorithm|[hashAlgorithms](../resources/intune-deviceconfig-hashalgorithms.md)|SCEP Hash Algorithm. Possible values are: `sha1`, `sha2`.|
 |subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
 
@@ -200,6 +202,7 @@ Content-Length: 1919
   "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
+
 
 
 

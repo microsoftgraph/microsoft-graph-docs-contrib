@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # FieldValueSet resource
 
+Namespace: microsoft.graph
+
 Represents the column values in a [listItem](listitem.md) resource.
 
 ## JSON representation
@@ -56,3 +58,4 @@ You may request up to 12 lookup fields in a single query, plus any number of reg
   "section": "documentation",
   "tocPath": "Resources/FieldValueSet"
 } -->
+

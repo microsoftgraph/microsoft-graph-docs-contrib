@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationAssignmentRecipient resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Used within the **assignments.assignTo** property. This superclass is abstract and you cannot
@@ -49,3 +51,5 @@ None.
   "suppressions": []
 }
 -->
+
+

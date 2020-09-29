@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementDerivedCredentialNotificationType enum type"
 description: "Supported values for the notification type to use."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # deviceManagementDerivedCredentialNotificationType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,6 +23,9 @@ Supported values for the notification type to use.
 |none|0|None|
 |companyPortal|1|Company Portal|
 |email|2|Email|
+
+
+
 
 
 

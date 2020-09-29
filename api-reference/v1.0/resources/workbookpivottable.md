@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # pivotTable resource type
 
+Namespace: microsoft.graph
+
 Represents an Excel PivotTable.
 
 ## Methods
@@ -49,3 +51,4 @@ Here is a JSON representation of the resource.
 }
 
 ```
+

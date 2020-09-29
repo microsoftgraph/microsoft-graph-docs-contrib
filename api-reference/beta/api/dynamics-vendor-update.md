@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Update vendors
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of a vendor object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -90,5 +95,7 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-07T00:35:29.667Z"
 }
 ```
+
+
 
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # user: translateExchangeIds
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Translate identifiers of Outlook-related resources between formats.
@@ -146,3 +148,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

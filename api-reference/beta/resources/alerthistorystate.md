@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # alertHistoryState resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stores changes made to alerts.
@@ -59,3 +61,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

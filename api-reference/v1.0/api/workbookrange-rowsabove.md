@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # workbookRange: rowsAbove
 
+Namespace: microsoft.graph
+
 Gets a certain number of rows above a given range.
 
 ## Permissions
@@ -167,3 +169,4 @@ Content-length: 157
   "suppressions": [
   ]
 }-->
+

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get workbookChartFont
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of chartfont object.
@@ -104,3 +106,5 @@ Content-length: 134
   ]
 }
 -->
+
+

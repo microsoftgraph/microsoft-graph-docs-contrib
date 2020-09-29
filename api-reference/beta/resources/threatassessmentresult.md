@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # threatAssessmentResult resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a threat assessment result item.
@@ -54,3 +56,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

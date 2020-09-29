@@ -3,11 +3,13 @@ title: "Get Icon"
 description: "Retrieve the properties and relationships of icon object."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 ---
 
 # Get Icon
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -81,3 +83,5 @@ Content-length: 39
   "suppressions": []
 }
 -->
+
+

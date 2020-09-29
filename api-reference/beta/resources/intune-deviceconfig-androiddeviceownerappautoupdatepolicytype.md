@@ -1,13 +1,15 @@
 ---
 title: "androidDeviceOwnerAppAutoUpdatePolicyType enum type"
 description: "Android Device Owner possible values for states of the device's app auto update policy."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # androidDeviceOwnerAppAutoUpdatePolicyType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -23,6 +25,9 @@ Android Device Owner possible values for states of the device's app auto update 
 |never|2|Apps are never auto-updated.|
 |wiFiOnly|3|Apps are auto-updated over Wi-Fi only.|
 |always|4|Apps are auto-updated at any time. Data charges may apply.|
+
+
+
 
 
 

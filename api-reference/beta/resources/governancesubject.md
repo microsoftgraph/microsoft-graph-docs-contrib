@@ -4,10 +4,12 @@ description: "Represents users, groups, and service principals being managed in 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "shauliu"
 ---
 
 # governanceSubject resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +43,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String",  
+  "id": "String",
   "displayName": "String",
   "email": "String",
   "principalName": "String",
@@ -62,3 +64,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

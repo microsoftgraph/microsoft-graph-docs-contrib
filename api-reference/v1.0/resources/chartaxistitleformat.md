@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartAxisTitleFormat resource type
 
+Namespace: microsoft.graph
+
 Represents the chart axis title formatting.
 
 
@@ -49,3 +51,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

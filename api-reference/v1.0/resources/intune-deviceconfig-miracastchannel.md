@@ -1,13 +1,15 @@
 ---
 title: "miracastChannel enum type"
 description: "Possible values for Miracast channel."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # miracastChannel enum type
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -37,6 +39,11 @@ Possible values for Miracast channel.
 |oneHundredFiftySeven|157|OneHundredFifty-Seven.|
 |oneHundredSixtyOne|161|OneHundredSixty-One.|
 |oneHundredSixtyFive|165|OneHundredSixty-Five.|
+
+
+
+
+
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "Get deviceManagementIntegerSettingInstance"
 description: "Read properties and relationships of the deviceManagementIntegerSettingInstance object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get deviceManagementIntegerSettingInstance
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -76,6 +78,7 @@ Content-Length: 251
   }
 }
 ```
+
 
 
 

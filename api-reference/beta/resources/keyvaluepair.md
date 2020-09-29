@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # keyValuePair resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Key value pair for action parameters.
@@ -49,3 +51,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # signInLocation resource type
 
+Namespace: microsoft.graph
+
 Provides the city, state and country/region from where the sign-in happened.
 
 ## Properties
@@ -51,3 +53,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

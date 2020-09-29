@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookChartAxis resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a single axis in a chart.
@@ -81,3 +83,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

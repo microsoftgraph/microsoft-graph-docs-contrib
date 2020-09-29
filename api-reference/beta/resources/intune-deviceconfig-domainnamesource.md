@@ -1,13 +1,15 @@
 ---
 title: "domainNameSource enum type"
 description: "Domainname source."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # domainNameSource enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -20,6 +22,9 @@ Domainname source.
 |:---|:---|:---|
 |fullDomainName|0|Full domain name.|
 |netBiosDomainName|1|net bios domain name.|
+
+
+
 
 
 

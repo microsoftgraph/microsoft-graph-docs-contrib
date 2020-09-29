@@ -2,12 +2,14 @@
 title: "directoryDefinition: discover"
 description: "Discover the latest schema definition for provisioning to an application. "
 localization_priority: Normal
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # directoryDefinition: discover
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -111,3 +113,5 @@ Content-type: application/json
   "version": "bf8c03ac-d45e-47fe-b3a1-711a9418b2b1"
 }
  ```
+
+

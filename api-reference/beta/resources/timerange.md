@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # timeRange resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A time range resource with a start and end time.
@@ -49,3 +51,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

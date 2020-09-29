@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # informationProtectionLabel: evaluateRemoval
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Indicate to the consuming application what actions it should take to remove the label information.
@@ -195,3 +197,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

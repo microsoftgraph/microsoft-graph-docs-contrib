@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create schedulingGroup
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [schedulingGroup](../resources/schedulinggroup.md).
@@ -136,3 +138,5 @@ Content-length: 401
   ]
 }
 -->
+
+

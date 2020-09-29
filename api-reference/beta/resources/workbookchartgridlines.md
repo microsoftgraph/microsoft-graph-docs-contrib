@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookChartGridlines resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents major or minor gridlines on a chart axis.
@@ -63,3 +65,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

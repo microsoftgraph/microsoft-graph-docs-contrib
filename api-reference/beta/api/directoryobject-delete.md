@@ -1,13 +1,15 @@
 ---
 title: "Delete directoryObject"
 description: "Delete directoryObject."
-author: "davidmu1"
+author: "keylimesoda"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Delete directoryObject
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -73,3 +75,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

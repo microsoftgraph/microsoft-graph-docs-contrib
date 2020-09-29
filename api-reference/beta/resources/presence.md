@@ -9,9 +9,13 @@ ms.prod: "cloud-communications"
 
 # presence resource type
 
+Namespace: microsoft.graph
+
 Contains information about a user's presence, including their availability and user activity.
 
 > **Note:** This resource is currently only supported for Microsoft Teams users.
+
+This resource supports subscribing to [change notifications](/graph/webhooks).
 
 ## Methods
 
@@ -52,3 +56,5 @@ The following is a JSON representation of the resource.
    "activity":"string"
 }
 ```
+
+

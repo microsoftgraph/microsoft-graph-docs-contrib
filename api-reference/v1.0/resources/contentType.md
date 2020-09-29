@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 # ContentType resource type
 
+Namespace: microsoft.graph
+
 The **contentType** resource represents a _content type_ in SharePoint.
 Content types allow you to define a set of columns that must be present on every [**listItem**][listItem] in a [**list**][list].
 
@@ -76,3 +78,4 @@ See [Introduction to content types and content type publishing][contentTypeIntro
   "section": "documentation",
   "tocPath": "Resources/ContentType"
 } -->
+

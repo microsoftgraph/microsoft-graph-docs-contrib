@@ -10,6 +10,11 @@ doc_type: resourcePageType
 ---
 
 # accounts resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents an account object in Dynamics 365 Business Central.
 
 ## Methods
@@ -48,5 +53,6 @@ Here is a JSON representation of the resource.
   "blocked": "boolean",
   "lastModifiedDateTime": "datetime"
 }
-
 ```
+
+

@@ -1,13 +1,15 @@
 ---
 title: "weeklySchedule enum type"
 description: "Possible values for a weekly schedule."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # weeklySchedule enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -28,6 +30,9 @@ Possible values for a weekly schedule.
 |friday|7|Friday.|
 |saturday|8|Saturday.|
 |noScheduledScan|9|No Scheduled Scan|
+
+
+
 
 
 

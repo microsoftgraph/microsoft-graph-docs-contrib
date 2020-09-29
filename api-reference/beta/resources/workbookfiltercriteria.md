@@ -4,10 +4,12 @@ description: "Represents the filtering criteria applied to a column."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "excel"
-author: ""
+author: "ruoyingl"
 ---
 
 # workbookFilterCriteria resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,3 +39,5 @@ Here is a JSON representation of the resource.
   "operator":"string"
 }
 ```
+
+

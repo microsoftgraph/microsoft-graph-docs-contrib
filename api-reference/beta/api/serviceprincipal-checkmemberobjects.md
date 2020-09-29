@@ -2,16 +2,18 @@
 title: "servicePrincipal: checkMemberObjects"
 description: "Check for membership in a list of groups, directory roles, or administrative units for the specified service principle object."
 localization_priority: Normal
-author: "davidmu1"
+author: "sureshja"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # servicePrincipal: checkMemberObjects
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Check for membership in a list of groups, directory roles, or administrative units for the specified service principle object. This method is transitive.
+Check for membership in a list of groups, directory roles, or administrative units for the specified [servicePrincipal](../resources/serviceprincipal.md) object. This method is transitive.
 
 ## Permissions
 
@@ -57,6 +59,7 @@ The following example shows how to call this API.
 ### Request
 
 The following is an example of the request.
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -126,3 +129,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

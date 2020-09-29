@@ -2,12 +2,14 @@
 title: "List subscribedSkus"
 description: "Retrieve the list of commercial subscriptions that an organization has acquired."
 localization_priority: Priority
-author: "davidmu1"
+author: "SumitParikh"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List subscribedSkus
+
+Namespace: microsoft.graph
 
 Get the list of commercial subscriptions that an organization has acquired.
 
@@ -143,3 +145,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update rangeborder
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of rangeborder object.
@@ -115,3 +117,5 @@ Content-length: 136
   ]
 }
 -->
+
+

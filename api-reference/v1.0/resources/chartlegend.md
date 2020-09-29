@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartLegend resource type
 
+Namespace: microsoft.graph
+
 Represents the legend in a chart.
 
 
@@ -63,3 +65,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

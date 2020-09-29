@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # PublicationFacet resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **publicationFacet** resource provides details on the published status of a [driveItemVersion](driveitemversion.md) or [driveItem](driveitem.md) resource.
@@ -46,3 +48,5 @@ The **publicationFacet** resource provides details on the published status of a 
   "suppressions": []
 }
 -->
+
+

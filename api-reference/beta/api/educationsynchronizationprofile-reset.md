@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Reset sync on an educationSynchronizationProfile
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Reset the sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
@@ -89,3 +91,5 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+
+

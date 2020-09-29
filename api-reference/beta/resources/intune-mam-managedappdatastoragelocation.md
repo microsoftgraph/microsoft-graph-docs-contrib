@@ -1,13 +1,15 @@
 ---
 title: "managedAppDataStorageLocation enum type"
 description: "Storage locations where managed apps can potentially store their data"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # managedAppDataStorageLocation enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,6 +23,9 @@ Storage locations where managed apps can potentially store their data
 |oneDriveForBusiness|1|OneDrive for business|
 |sharePoint|2|SharePoint|
 |localStorage|6|Local storage on the device|
+
+
+
 
 
 

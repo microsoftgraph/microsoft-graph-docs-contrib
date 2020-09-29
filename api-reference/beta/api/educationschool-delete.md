@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete educationSchool
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a school.
@@ -89,3 +91,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

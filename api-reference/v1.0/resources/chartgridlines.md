@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartGridlines resource type
 
+Namespace: microsoft.graph
+
 Represents major or minor gridlines on a chart axis.
 
 
@@ -58,3 +60,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # RangeFill resource type
 
+Namespace: microsoft.graph
+
 Represents the background of a range object.
 
 
@@ -56,3 +58,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

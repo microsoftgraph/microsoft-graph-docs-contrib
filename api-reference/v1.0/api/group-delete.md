@@ -1,7 +1,7 @@
 ---
 title: "Delete group - Microsoft Graph API"
-description: "Describes the delete method of the group resource (entity) of the Microsoft Graph API (REST)."
-author: "dkershaw10"
+description: "Delete a group resource."
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
@@ -9,9 +9,11 @@ doc_type: apiPageType
 
 # Delete group
 
+Namespace: microsoft.graph
+
 Delete group.  
 
-When deleted, Office 365 groups are moved to a temporary container and can be restored within 30 days.  After that time, they are permanently deleted.  To learn more, see [deletedItems](../resources/directory.md).  This applies only to Office 365 groups.
+When deleted, Microsoft 365 groups are moved to a temporary container and can be restored within 30 days.  After that time, they are permanently deleted.  To learn more, see [deletedItems](../resources/directory.md).  This applies only to Microsoft 365 groups.
 
 ## Permissions
 
@@ -99,3 +101,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

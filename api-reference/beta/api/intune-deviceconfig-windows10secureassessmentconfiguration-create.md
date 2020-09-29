@@ -1,13 +1,15 @@
 ---
 title: "Create windows10SecureAssessmentConfiguration"
 description: "Create a new windows10SecureAssessmentConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Create windows10SecureAssessmentConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -172,6 +174,7 @@ Content-Length: 1575
   "assessmentAppUserModelId": "Assessment App User Model Id value"
 }
 ```
+
 
 
 

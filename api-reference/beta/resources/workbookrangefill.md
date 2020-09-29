@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookRangeFill resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the background of a range object.
@@ -62,3 +64,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -1,13 +1,15 @@
 ---
 title: "windowsKioskAppType enum type"
 description: "The type of Windows kiosk app."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # windowsKioskAppType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,6 +24,9 @@ The type of Windows kiosk app.
 |store|1|Store App.|
 |desktop|2|Desktop App.|
 |aumId|3|Input by AUMID.|
+
+
+
 
 
 

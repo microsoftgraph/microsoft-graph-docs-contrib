@@ -2,12 +2,14 @@
 title: "Contract resource type"
 description: "Represents an existing partnership that the partner tenant has with a customer tenant."
 localization_priority: Normal
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # Contract resource type
+
+Namespace: microsoft.graph
 Represents an existing partnership that the partner tenant has with a customer tenant.
 
 > **Important:**
@@ -65,3 +67,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

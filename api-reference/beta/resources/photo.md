@@ -10,6 +10,8 @@ doc_type: "resourcePageType"
 
 # photo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **photo** resource provides photo and camera properties, for example, EXIF metadata, on a [driveItem](driveitem.md).
@@ -67,3 +69,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

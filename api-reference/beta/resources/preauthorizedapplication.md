@@ -4,10 +4,12 @@ description: "Lists the pre-authorized client applications"
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # preAuthorizedApplication resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,3 +54,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

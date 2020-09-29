@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List notebooks
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [notebook](../resources/notebook.md) objects.
@@ -123,3 +125,5 @@ Content-length: 369
   ]
 }
 -->
+
+

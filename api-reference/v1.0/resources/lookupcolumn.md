@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # LookupColumn resource type
 
+Namespace: microsoft.graph
+
 The **lookupColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are looked up from another source in the site.
 
 ## JSON representation
@@ -45,3 +47,4 @@ Here is a JSON representation of a **lookupColumn** resource.
   "section": "documentation",
   "tocPath": "Resources/LookupColumn"
 } -->
+

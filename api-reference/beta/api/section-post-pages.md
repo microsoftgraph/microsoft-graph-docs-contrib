@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create page
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [page](../resources/onenotepage.md) in the specified section.
@@ -124,3 +126,5 @@ Content-length: 312
   "suppressions": []
 }
 -->
+
+

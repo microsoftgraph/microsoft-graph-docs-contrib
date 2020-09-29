@@ -1,13 +1,15 @@
 ---
 title: "managementConditionExpressionString resource type"
 description: "A management condition expression string is a string representation of a management condition expression."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # managementConditionExpressionString resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -39,6 +41,9 @@ Here is a JSON representation of the resource.
   "value": "String"
 }
 ```
+
+
+
 
 
 

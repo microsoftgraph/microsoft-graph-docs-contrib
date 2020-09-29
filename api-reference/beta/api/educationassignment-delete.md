@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete educationAssignment
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an existing assignment. Only teachers within a class can delete assignments.
@@ -101,3 +103,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

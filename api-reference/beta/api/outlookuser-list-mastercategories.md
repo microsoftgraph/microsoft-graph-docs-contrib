@@ -1,13 +1,15 @@
 ---
 title: "List Outlook categories"
 description: "Get all the categories that have been defined for the user."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List Outlook categories
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -131,3 +133,5 @@ Content-length: 727
   ]
 }
 -->
+
+

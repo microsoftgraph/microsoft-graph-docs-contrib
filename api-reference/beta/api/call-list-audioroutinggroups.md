@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List audio routing groups
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of **audioRoutingGroup** objects.
@@ -118,3 +120,5 @@ Content-Length: 302
   ]
 }
 -->
+
+

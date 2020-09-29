@@ -1,13 +1,15 @@
 ---
 title: "appleUserInitiatedEnrollmentType enum type"
 description: "Not yet documented"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # appleUserInitiatedEnrollmentType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,6 +23,9 @@ Not yet documented
 |unknown|0|Unknown enrollment type|
 |device|1|Device enrollment type|
 |user|2|User enrollment type|
+
+
+
 
 
 

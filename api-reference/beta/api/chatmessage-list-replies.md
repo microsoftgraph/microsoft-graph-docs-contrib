@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List replies
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of chatmessage objects.
@@ -21,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Chat.Read, Chat.ReadWrite |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Chat.Read.All |
+| Application                            | Chat.Read.All, Chat.ReadWrite.All |
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
@@ -138,3 +140,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

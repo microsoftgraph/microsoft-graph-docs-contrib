@@ -1,13 +1,15 @@
 ---
 title: "groupPolicyPresentationValueDecimal resource type"
 description: "The entity represents an unsigned integer value of a decimal text box presentation on a policy definition."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationValueDecimal resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,6 +60,9 @@ Here is a JSON representation of the resource.
   "value": 1024
 }
 ```
+
+
+
 
 
 

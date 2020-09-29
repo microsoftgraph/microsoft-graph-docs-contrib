@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamsAppInstallation resource type
 
+Namespace: microsoft.graph
+
 A [teamsApp](teamsapp.md) installed in a [team](team.md). Any bots that are part of the app will become part of any team the app is added to.
 
 ## Methods
@@ -47,7 +49,7 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md). Any bots that are part
 }
 ```
 
-# See also
+## See also
 
 - [teamsApp](teamsapp.md)
 - [teamsAppDefinition](teamsappdefinition.md)
@@ -62,3 +64,4 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md). Any bots that are part
   "section": "documentation",
   "tocPath": ""
 }-->
+

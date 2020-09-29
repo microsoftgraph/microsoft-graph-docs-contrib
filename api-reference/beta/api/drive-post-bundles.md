@@ -10,6 +10,8 @@ doc_type: apiPageType
 
 # Create bundle
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add a new [bundle][] to the user's drive.
@@ -70,7 +72,7 @@ Content-Type: application/json
 
 {
   "name": "Just some files",
-  "@name.conflictBehavior" : "rename",
+  "@microsoft.graph.conflictBehavior" : "rename",
   "bundle": { },
   "children": [
     { "id": "1234asdf" },
@@ -128,7 +130,7 @@ Content-Type: application/json
 
 {
   "name": "My Day at the Beach",
-  "@name.conflictBehavior" : "rename",
+  "@microsoft.graph.conflictBehavior" : "rename",
   "bundle": { "album": {} },
   "children": [
     { "id": "1234asdf" }
@@ -186,3 +188,5 @@ If `My Day at the Beach 1` is taken, then the number would be incremented again 
   "section": "documentation",
   "tocPath": "Bundles/Create"
 } -->
+
+

@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Delete a DriveItem
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [DriveItem](../resources/driveitem.md) by using its ID or path.
@@ -96,3 +98,5 @@ how errors are returned.
   ]
 }
 -->
+
+

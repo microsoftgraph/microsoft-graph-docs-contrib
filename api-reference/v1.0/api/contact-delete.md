@@ -1,13 +1,15 @@
 ---
 title: "Delete contact"
 description: "Delete a contact."
-author: "angelgolfer-ms"
+author: "kevinbellinger"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Delete contact
+
+Namespace: microsoft.graph
 
 Delete a contact.
 ## Permissions
@@ -100,3 +102,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

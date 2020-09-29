@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update chartfont
 
+Namespace: microsoft.graph
+
 Update the properties of chartfont object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -121,3 +123,4 @@ Content-length: 134
   "suppressions": [
   ]
 }-->
+

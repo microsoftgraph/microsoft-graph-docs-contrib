@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # DateTimeColumn resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **dateTimeColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are dates or times.
@@ -51,3 +53,5 @@ Here is a JSON representation of a **dateTimeColumn** resource.
   "suppressions": []
 }
 -->
+
+

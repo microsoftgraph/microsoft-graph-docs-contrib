@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # TableSort resource type
 
+Namespace: microsoft.graph
+
 Manages sorting operations on Table objects.
 
 
@@ -59,3 +61,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

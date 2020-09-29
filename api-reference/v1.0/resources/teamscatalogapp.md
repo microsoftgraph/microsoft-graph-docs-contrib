@@ -9,4 +9,7 @@ doc_type: resourcePageType
 
 # teamsCatalogApp resource type
 
+Namespace: microsoft.graph
+
 see [teamsApp](teamsapp.md).
+

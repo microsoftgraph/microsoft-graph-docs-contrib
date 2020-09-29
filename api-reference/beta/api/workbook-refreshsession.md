@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Refresh Session
 
+Namespace: microsoft.graph
+
 Use this API to refresh an existing workbook session. 
 
 ## Permissions
@@ -97,3 +99,5 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+
+

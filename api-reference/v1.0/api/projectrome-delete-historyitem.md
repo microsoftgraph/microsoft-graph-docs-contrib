@@ -3,11 +3,13 @@ title: "Delete a historyItem"
 description: "Delete an existing history item for an existing user activity."
 localization_priority: Normal
 ms.prod: "project-rome"
-author: ""
+author: "ailae"
 doc_type: apiPageType
 ---
 
 # Delete a historyItem
+
+Namespace: microsoft.graph
 
 Delete an existing history item for an existing user activity.
 
@@ -91,3 +93,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

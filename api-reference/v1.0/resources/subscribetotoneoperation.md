@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # SubscribeToToneOperation resource type
 
+Namespace: microsoft.graph
+
 Describes the response format of creation of subscription to receive DTMF tones.
 
 ## Properties
@@ -50,3 +52,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

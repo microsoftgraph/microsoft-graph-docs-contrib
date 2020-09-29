@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # plannerPlanContextCollection resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
@@ -58,3 +60,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

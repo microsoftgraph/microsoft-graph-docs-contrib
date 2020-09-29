@@ -1,13 +1,15 @@
 ---
 title: "getRoleScopeTagsByResource function"
 description: "Not yet documented"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # getRoleScopeTagsByResource function
+
+Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
@@ -78,6 +80,7 @@ Content-Length: 231
   ]
 }
 ```
+
 
 
 

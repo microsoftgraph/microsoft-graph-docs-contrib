@@ -1,13 +1,15 @@
 ---
 title: "defenderThreatAction enum type"
 description: "Defender’s default action to take on detected Malware threats."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # defenderThreatAction enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -25,6 +27,9 @@ Defender’s default action to take on detected Malware threats.
 |allow|4|Allow the detected threat.|
 |userDefined|5|Allow the user to determine the action to take with the detected threat.|
 |block|6|Block the detected threat.|
+
+
+
 
 
 

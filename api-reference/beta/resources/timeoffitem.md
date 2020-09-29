@@ -4,10 +4,12 @@ description: "Represents a version of the timeOff."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
-doc_type: resourcePageType_
+doc_type: resourcePageType
 ---
 
 # timeOffItem resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,3 +54,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

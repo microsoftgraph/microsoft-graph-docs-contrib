@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # toneInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A single DTMF event.
@@ -50,3 +52,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

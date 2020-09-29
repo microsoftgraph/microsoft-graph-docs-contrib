@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # onenoteOperation resource type
 
+Namespace: microsoft.graph
+
 The status of certain long-running OneNote operations.
 
 ## JSON representation
@@ -66,3 +68,4 @@ None
   "section": "documentation",
   "tocPath": ""
 }-->
+

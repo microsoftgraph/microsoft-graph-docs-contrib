@@ -1,13 +1,15 @@
 ---
 title: "userExperienceAnalyticsCategory resource type"
 description: "The user experience analytics category entity contains the scores and insights for the various metrics of a category."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # userExperienceAnalyticsCategory resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -55,7 +57,7 @@ Here is a JSON representation of the resource.
       "values": [
         {
           "@odata.type": "microsoft.graph.insightValueDouble",
-          "value": "<Unknown Primitive Type Edm.Double>"
+          "value": "4.2"
         }
       ],
       "severity": "String"
@@ -64,6 +66,9 @@ Here is a JSON representation of the resource.
   "state": "String"
 }
 ```
+
+
+
 
 
 

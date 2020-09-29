@@ -2,12 +2,14 @@
 title: "device: checkMemberObjects"
 description: "Check for membership in a list of groups, directory roles, or administrative units for the specified device object."
 localization_priority: Normal
-author: "davidmu1"
+author: "spunukol"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # device: checkMemberObjects
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -126,3 +128,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

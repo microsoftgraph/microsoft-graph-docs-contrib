@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List users
 
+Namespace: microsoft.graph
+
 Retrieve a list of user objects. These user objects will include education-specific properties.
 
 ## Permissions
@@ -131,3 +133,4 @@ Content-length: 593
   "suppressions": [
   ]
 }-->
+

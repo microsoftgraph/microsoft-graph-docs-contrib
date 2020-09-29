@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # user: findMeetingTimes
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
@@ -158,7 +160,7 @@ Content-Type: application/json
   },  
   "timeConstraint": {
     "activityDomain":"work", 
-    "timeslots": [ 
+    "timeSlots": [ 
       { 
         "start": { 
           "dateTime": "2019-04-16T09:00:00",  
@@ -384,3 +386,5 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
   ]
 }
 -->
+
+

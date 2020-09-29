@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 # Follow drive item
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Follow a [driveItem](../resources/driveitem.md).
@@ -95,3 +97,5 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-12-12T10:40:59Z"
 }
 ```
+
+

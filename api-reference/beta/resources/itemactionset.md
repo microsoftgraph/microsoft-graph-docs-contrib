@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # ItemActionSet resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **ItemActionSet** resource provides information about the actions that made up an [activity][itemActivity] on an item.
@@ -84,3 +86,5 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
+
+

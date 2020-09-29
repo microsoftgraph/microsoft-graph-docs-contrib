@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # signInStatus resource type
 
+Namespace: microsoft.graph
+
 Provides the sign-in status (Success or Failure) of the sign-in.
 
 ## Properties
@@ -49,3 +51,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -2,12 +2,14 @@
 title: "Create namedLocation"
 description: "Create a new namedLocation."
 localization_priority: Normal
-author: "davidmu1"
+author: "videor"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Create namedLocation
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,16 +21,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.ReadWrite.ConditionalAccess |
+| Delegated (work or school account)     | Policy.Read.All and Policy.ReadWrite.ConditionalAccess |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | Policy.Read.All and Policy.ReadWrite.ConditionalAccess |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /conditionalAccess/namedLocations
+POST /identity/conditionalAccess/namedLocations
 ```
 
 ## Request headers
@@ -61,7 +63,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/conditionalAccess/namedLocations
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations
 Content-type: application/json
 
 {
@@ -86,6 +88,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-namedlocation-from-conditionalaccessroot-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-namedlocation-from-conditionalaccessroot-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -138,7 +144,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/conditionalAccess/namedLocations
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations
 Content-type: application/json
 
 {
@@ -192,3 +198,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

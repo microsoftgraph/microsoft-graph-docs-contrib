@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get place
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Get the properties and relationships of a [place](../resources/place.md) object specified by either its ID or email address. 
 
@@ -38,13 +40,9 @@ GET /places/{id}
 ```
 
 ## Optional query parameters
+Use $select to get specific **place** properties.
 
-This method supports the following query parameters to help customize the response:
-* $filter
-* $select
-* $top
-
-For general information, see [OData query parameters](/graph/query-parameters).
+For more information on OData query options, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -216,3 +214,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

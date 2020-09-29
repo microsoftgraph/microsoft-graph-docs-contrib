@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update tiIndicator
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [tiIndicator](../resources/tiindicator.md) object.
@@ -216,3 +218,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

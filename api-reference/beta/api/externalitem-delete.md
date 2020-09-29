@@ -1,6 +1,6 @@
 ---
 title: "Delete externalItem"
-description: "Delete an externalItem or externalFile."
+description: "Delete an externalItem."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.prod: "search"
@@ -9,9 +9,11 @@ doc_type: "apiPageType"
 
 # Delete externalItem
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [externalitem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md).
+Delete an [externalitem](../resources/externalitem.md).
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -38,7 +40,7 @@ DELETE /external/connections/{connection-id}/items/{item-id}
 | Parameter     | Type   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
 | connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnection.md) |
-| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md). |
+| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md). |
 
 ## Request headers
 
@@ -67,10 +69,18 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
+DELETE https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
 ```
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-externalitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-externalitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-externalitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -100,3 +110,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

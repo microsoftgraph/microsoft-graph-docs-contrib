@@ -2,12 +2,14 @@
 title: "List windowsOfficeClientSecurityConfigurations"
 description: "List properties and relationships of the windowsOfficeClientSecurityConfiguration objects."
 localization_priority: Normal
-author: "rolyon"
-ms.prod: "Intune"
+author: "dougeby"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # List windowsOfficeClientSecurityConfigurations
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -95,6 +97,7 @@ Content-Length: 1222
   ]
 }
 ```
+
 
 
 

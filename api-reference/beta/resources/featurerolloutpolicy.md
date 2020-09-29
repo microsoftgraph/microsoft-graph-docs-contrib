@@ -2,12 +2,14 @@
 title: "featureRolloutPolicy resource type"
 description: "Represents a feature rollout policy associated with a directory object."
 localization_priority: Normal
-author: "davidmu1"
+author: "keylimesoda"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
 # featureRolloutPolicy resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,17 +38,21 @@ The following are pre-requisites for each of the features that are currently sup
 
 * Enable [PasswordHashSync](/azure/active-directory/hybrid/whatis-phs) from the “Optional features” page in Azure AD Connect.
 
+### EmailAsAlternateId
+
+* Associate alternate email  with user accounts.
+
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [List featureRolloutPolicies](../api/directory-list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Retrieve a list of featureRolloutPolicy objects. |
-| [Get featureRolloutPolicy](../api/featurerolloutpolicy-get.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Retrieve the properties and relationships of featurerolloutpolicy object. ||
-| [Create featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Create a new featureRolloutPolicy object.
-| [Update featureRolloutPolicy](../api/featurerolloutpolicy-update.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Update the properties of featurerolloutpolicy object. |
-| [Delete featureRolloutPolicy](../api/featurerolloutpolicy-delete.md) | None | Delete a featureRolloutPolicy object. |
-| [Assign appliesTo](../api/featurerolloutpolicy-post-appliesto.md) | [directoryObject](directoryobject.md) | Assign a directoryObject to feature rollout. |
-| [Remove appliesTo](../api/featurerolloutpolicy-delete-appliesto.md) | None | Remove a directoryObject from feature rollout. |
+| Method                                                                         | Return Type                                     | Description                                                               |
+|:-------------------------------------------------------------------------------|:------------------------------------------------|:--------------------------------------------------------------------------|
+| [List featureRolloutPolicies](../api/directory-list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Retrieve a list of featureRolloutPolicy objects.                          |
+| [Get featureRolloutPolicy](../api/featurerolloutpolicy-get.md)                 | [featureRolloutPolicy](featurerolloutpolicy.md) | Retrieve the properties and relationships of featurerolloutpolicy object. |
+| [Create featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Create a new featureRolloutPolicy object.                                 |
+| [Update featureRolloutPolicy](../api/featurerolloutpolicy-update.md)           | [featureRolloutPolicy](featurerolloutpolicy.md) | Update the properties of featurerolloutpolicy object.                     |
+| [Delete featureRolloutPolicy](../api/featurerolloutpolicy-delete.md)           | None                                            | Delete a featureRolloutPolicy object.                                     |
+| [Assign appliesTo](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | Assign a directoryObject to feature rollout.                              |
+| [Remove appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | None                                            | Remove a directoryObject from feature rollout.                            |
 
 ## Properties
 
@@ -99,3 +105,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

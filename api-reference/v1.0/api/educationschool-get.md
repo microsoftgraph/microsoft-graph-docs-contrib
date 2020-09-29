@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get educationSchool
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of the school object.
 
 ## Permissions
@@ -104,3 +106,4 @@ Content-length: 292
   "suppressions": [
   ]
 }-->
+

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # workbookRange: resizedRange
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.
@@ -95,3 +97,5 @@ Content-length: 157
   "suppressions": []
 }
 -->
+
+

@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 # BooleanColumn resource type
 
+Namespace: microsoft.graph
+
 The **booleanColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column holds a boolean value.
 
 ## JSON representation
@@ -33,3 +35,4 @@ The **booleanColumn** resource contains no properties.
   "section": "documentation",
   "tocPath": "Resources/BooleanColumn"
 } -->
+

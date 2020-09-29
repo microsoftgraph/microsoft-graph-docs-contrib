@@ -1,13 +1,15 @@
 ---
 title: "deviceConfigurationPolicySetItem resource type"
 description: "A class containing the properties used for device configuration PolicySetItem."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # deviceConfigurationPolicySetItem resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -67,6 +69,9 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+
 
 
 

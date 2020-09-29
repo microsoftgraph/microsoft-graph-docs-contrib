@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # sectionGroup resource type
 
+Namespace: microsoft.graph
+
 A section group in a OneNote notebook. Section groups can contain sections and section groups.
 
 ## JSON representation
@@ -81,3 +83,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

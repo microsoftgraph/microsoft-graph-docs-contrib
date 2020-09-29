@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # securityVendorInformation resource type
 
+Namespace: microsoft.graph
+
 Contains details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).
 
 ## Properties
@@ -51,3 +53,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

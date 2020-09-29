@@ -9,6 +9,8 @@ author: "grangeryy"
 
 # itemBody resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents properties of the body of an item, such as a message, event or group post.
@@ -36,7 +38,6 @@ Here is a JSON representation of the resource
   "content": "string",
   "contentType": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -51,3 +52,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

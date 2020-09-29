@@ -1,13 +1,15 @@
 ---
 title: "ratingUnitedKingdomTelevisionType enum type"
 description: "TV content rating labels in United Kingdom"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # ratingUnitedKingdomTelevisionType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,6 +23,9 @@ TV content rating labels in United Kingdom
 |allAllowed|0|Default value, allow all TV shows content|
 |allBlocked|1|Do not allow any TV shows content|
 |caution|2|Allowing TV contents with a warning message|
+
+
+
 
 
 

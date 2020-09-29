@@ -1,16 +1,19 @@
 ---
 title: "List memberOf"
 description: "Get groups that the group is a direct member of. "
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Priority
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # List memberOf
+
+Namespace: microsoft.graph
+
 Get groups that the group is a direct member of. 
 
-This operation is not transitive. Unlike getting a user's Office 365 Groups, this returns all types of groups, not just Office 365 groups.
+This operation is not transitive. Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -108,3 +111,4 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
+

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List pivotTables
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of workbookpivottable objects.
@@ -102,3 +104,5 @@ Content-length: 83
   "suppressions": [
   ]
 }-->
+
+

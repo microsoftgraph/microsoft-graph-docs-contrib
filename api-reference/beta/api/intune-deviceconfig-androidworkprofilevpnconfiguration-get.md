@@ -1,13 +1,15 @@
 ---
 title: "Get androidWorkProfileVpnConfiguration"
 description: "Read properties and relationships of the androidWorkProfileVpnConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get androidWorkProfileVpnConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2073
+Content-Length: 2775
 
 {
   "value": {
@@ -126,10 +128,32 @@ Content-Length: 2073
         "value": "Value value"
       }
     ],
-    "authenticationMethod": "usernameAndPassword"
+    "authenticationMethod": "usernameAndPassword",
+    "proxyServer": {
+      "@odata.type": "microsoft.graph.vpnProxyServer",
+      "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
+      "address": "Address value",
+      "port": 4
+    },
+    "targetedPackageIds": [
+      "Targeted Package Ids value"
+    ],
+    "targetedMobileApps": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      }
+    ],
+    "alwaysOn": true,
+    "alwaysOnLockdown": true,
+    "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
   }
 }
 ```
+
 
 
 

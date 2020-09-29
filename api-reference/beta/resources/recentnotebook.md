@@ -4,10 +4,12 @@ description: "A recently accessed OneNote notebook. A **recentNotebook** is simi
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "jewan-microsoft"
 ---
 
 # recentNotebook resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,3 +50,5 @@ The following is a JSON representation of the resource.
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | [notebook](notebook.md) collection | Get a collection of the most recently accessed notebooks for the user. |
+
+

@@ -4,10 +4,12 @@ description: "Retrieve the metadata for a specific version of a DriveItem."
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
-author: ""
+author: "JeremyKelley"
 ---
 
 # Get a DriveItemVersion resource (preview)
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -110,3 +112,5 @@ When your app retrieves the list of available versions for a file, a [DriveItemV
   ]
 }
 -->
+
+

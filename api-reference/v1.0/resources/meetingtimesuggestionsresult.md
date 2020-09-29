@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # meetingTimeSuggestionsResult resource type
 
+Namespace: microsoft.graph
+
 A collection of meeting suggestions if there is any, or the reason if there isn't.
 
 The following are the possible reasons that [findMeetingTimes](../api/user-findmeetingtimes.md) does not return any meeting suggestions.
@@ -55,3 +57,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -1,13 +1,15 @@
 ---
 title: "synchronizationJobRestartCriteria resource type"
-description: "Defines the scope of the [synchronizationJob: restart](../api/synchronization_synchronizationjob_restart.md) action."
+description: "Defines the scope of the synchronizationJob: restart action."
 localization_priority: Normal
 doc_type: resourcePageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 
 # synchronizationJobRestartCriteria resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,8 +34,11 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "resetScope": "String"
+    "criteria": {
+        "resetScope": "String"
+    }
 }
+
 
 ```
 
@@ -49,3 +54,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

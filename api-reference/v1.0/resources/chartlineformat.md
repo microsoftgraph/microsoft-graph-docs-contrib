@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartLineFormat resource type
 
+Namespace: microsoft.graph
+
 Enapsulates the formatting options for line elements.
 
 
@@ -56,3 +58,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # plannerUser resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **plannerUser** resource provides access to Planner resources for a [user](user.md). 
@@ -72,3 +74,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

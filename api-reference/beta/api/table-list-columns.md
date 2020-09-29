@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List columns
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of tablecolumn objects.
@@ -113,3 +115,5 @@ Example:
   ]
 }
 -->
+
+

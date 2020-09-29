@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Delete paymentTerms
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Delete a payment terms object from Dynamics 365 Business Central.
 
 ## Permissions
@@ -59,3 +64,5 @@ Here is an example of the response.
 ```json
 HTTP/1.1 204 No Content
 ```
+
+

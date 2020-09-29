@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List channel message replies
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List all the replies of a [message](../resources/chatmessage.md) in a [channel](../resources/channel.md) of a team.
@@ -20,9 +22,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)|Group.Read.All,Group.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application| Group.Read.All,Group.ReadWrite.All|
+|Delegated (work or school account)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Delegated (personal Microsoft account)|Not supported.|
+|Application| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
@@ -47,7 +51,7 @@ The other [OData query parameters](/graph/query-parameters) are not currently su
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [chatmessage](../resources/channel.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [chatmessage](../resources/chatmessage.md) objects in the response body.
 ## Example
 ##### Request
 In this example, the specified message has two replies. Each reply has one or more [chatMessageMention](../resources/chatmessagemention.md) objects.
@@ -99,7 +103,8 @@ Content-type: application/json
             "etag": "1555377090002",
             "messageType": "message",
             "createdDateTime": "2019-04-16T01:11:30.002Z",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": null,
             "summary": null,
@@ -159,7 +164,8 @@ Content-type: application/json
             "etag": "1555375848360",
             "messageType": "message",
             "createdDateTime": "2019-04-16T00:50:48.36Z",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": null,
             "summary": null,
@@ -216,3 +222,5 @@ Content-type: application/json
   ]
 }
 -->
+
+
