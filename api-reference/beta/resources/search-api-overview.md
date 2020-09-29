@@ -93,6 +93,11 @@ The **listItem** and **externalItem** entities are the only supported entities t
 
 If the **fields** specified in the request are not present in the schema, they will not be returned in the response. Invalid fields in the request are silently ignored.
 
+If you do not specify any **fields** in the request, then you will get the default set of properties for all types. For extended properties, **listItem** and **externalItem** behave differently when no **fields** are passed in the request :
+
+- **listItem** will not return any field.
+- **externalItem** will return all the fields marked with the *retrievable* attribute in the Graph Connector schema for that particular connection.
+
 ## Keyword Query Language (KQL) support
 
 Specify free text keywords, operators (such as `AND`, `OR`), and property restrictions in KQL syntax in the actual search query string (**query** property of the **query** request body). The syntax and command depend on the entity types (in the **entityTypes** property) you target in the same **query** request body.
