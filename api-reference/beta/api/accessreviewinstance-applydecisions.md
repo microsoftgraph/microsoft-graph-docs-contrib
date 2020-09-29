@@ -1,13 +1,13 @@
 ---
 title: "Apply accessReviewInstance decisions"
 description: "In the Azure AD access reviews feature, apply decisions on an accessReviewInstance. "
-localization_priority: Normal
 author: "isabelleatmsft"
+localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Apply accessReviewInstance decisions
+# accessReviewInstance: applyDecisions
 
 Namespace: microsoft.graph
 
@@ -21,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     | AccessReview.ReadWrite.All |
+|Delegated (personal Microsoft account)|None.|
 |Application                            | AccessReview.ReadWrite.All |
 
 ## HTTP request
@@ -28,59 +29,40 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /identityGovernance/accessReviews/definitions/{definitionId}/instances/{instanceId}/applyDecisions()
 ```
+
 ## Request headers
-None.
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.
+If successful, this action returns a `204 No Content` response code.
 
-## Example
-##### Request
+## Examples
 
-# [HTTP](#tab/http)
+### Request
 <!-- {
   "blockType": "request",
-  "name": "applyDecisions_accessReviewInstance"
-}-->
+  "name": "accessreviewinstance_applydecisions"
+}
+-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/04e5c3b2-9db2-40d3-a204-128f4956ae8e/instances/70463350-742e-4909-bfa5-bc23447bd002/applyDecisions()
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+### Response
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": false
-} -->
-```http
-HTTP/1.1 204 No Content
-```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2017-06-25 00:00:01 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "SendReminder accessReview",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
+  "truncated": true
 }
 -->
-
-
+``` http
+HTTP/1.1 204 No Content
+```
