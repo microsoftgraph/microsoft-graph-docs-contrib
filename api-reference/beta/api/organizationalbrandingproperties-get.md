@@ -42,6 +42,9 @@ This method supports some of the OData query parameters to help customize the re
 | Authorization | Bearer {token}. Required. |
 | Accept-Language  | Localization to get. Optional.  |
 
+>[!NOTE]
+>Accept-Language | Localization to get is still required for Microsoft Graph Explorer.
+
 ## Request body
 
 Do not supply a request body for this method.
@@ -101,6 +104,48 @@ Content-Type: application/json
 
 Requests for /branding always return the **mediaContentType**, **mediaReadLink**, and **mediaEditLink** properties. If a locale has been applied, the **mediaEditLink** is the **mediaEditLink** for the locale (which is always non-null), and the **mediaReadLink** and **mediaContentType** are the **mediaReadLink** and **mediaContentType** of the locale if the **mediaReadLink** of the locale is non-null; otherwise, the default **mediaReadLink** and **mediaContentType**.
 
+### Example 1.1: Get the default branding - Microsoft Graph Explorer specific
+
+#### Request
+
+The following is an example of the request with no "Accept-Language" request header utilizing Microsoft Graph Explorer.
+<!-- {
+  "blockType": "request",
+  "name": "get_organizationalbrandingproperties"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** Accept-Language | Localization to get is still required for Microsoft Graph Explorer to avoid getting an error described below.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+} -->
+
+```http
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+
+{
+    "error": {
+        "code": "Request_UnsupportedQuery",
+        "message": "Invalid locale id value en-US,en;q=0.9. It must be a valid ISO-639 locale.",
+        "innerError": {
+            "date": "2020-09-28T20:35:19",
+            "request-id": "344d8205-4112-4567-be7a-336a21449fd6",
+            "client-request-id": "a6bccd5b-4c32-a7a5-46c5-0c443f75c331"
+        }
+    }
+}
+```
 ### Example 2: Get organizational branding but no branding configured
 
 #### Request
