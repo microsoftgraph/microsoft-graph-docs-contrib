@@ -74,7 +74,6 @@ The following is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/identity/userFlowAttributes/extension_d09380e2b4c642b9a203fb816a04a7ad_Hobby
 Content-type: application/json
-Content-length: 41
 
 {
   "description": "Your new hobby"

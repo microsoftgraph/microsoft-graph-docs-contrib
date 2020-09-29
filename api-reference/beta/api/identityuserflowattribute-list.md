@@ -93,14 +93,14 @@ Content-type: application/json
           "displayName": "City",
           "description": "Your city",
           "userFlowAttributeType": "builtIn",
-          "dataType": "String"
+          "dataType": "string"
       },
       {
           "id": "extension_d09380e2b4c6429a203fb816a04a7ad_Hobby",
           "displayName": "Hobby",
           "description": "Your hobby",
           "userFlowAttributeType": "custom",
-          "dataType": "String",
+          "dataType": "string",
       },
     ]
 }

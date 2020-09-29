@@ -76,7 +76,6 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/identity/userFlowAttributes
 Content-type: application/json
-Content-length: 154
 
 {
   "displayName": "Hobby",
@@ -107,6 +106,6 @@ Content-type: application/json
     "displayName": "Hobby",
     "description": "Your hobby",
     "userFlowAttributeType": "custom",
-    "dataType": "String"
+    "dataType": "string"
 }
 ```

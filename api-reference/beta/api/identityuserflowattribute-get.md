@@ -87,6 +87,6 @@ Content-type: application/json
     "displayName": "City",
     "description": "Your city",
     "userFlowAttributeType": "builtIn",
-    "dataType": "String"
+    "dataType": "string"
 }
 ```
