@@ -1,8 +1,8 @@
 ---
 title: "accessReviewReviewerScope resource type"
-description: "In the Azure AD access reviews feature, the `accessReviewReviewerScope` represents who will review an access review.  "
-localization_priority: Normal
+description: "In the Azure AD access reviews feature, the `accessReviewReviewerScope` represents who will review an access review."
 author: "isabelleatmsft"
+localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
@@ -31,24 +31,26 @@ The **accessReviewReviewerScope** defines who will review instances of an [acces
 | Specific user as reviewer | /users/{user id} ||
 | Manager of user being reviewed as reviewer | ./manager | queryRoot must be 'decisions' |
 
+## Relationships
+None.
+
 ## JSON representation
 
 Here is a JSON representation of the resource.
 
+## JSON representation
+The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.accessReviewReviewerScope"
-}-->
-
-```json
+}
+-->
+``` json
 {
- "query": "string",
- "queryType": "string",
- "queryRoot": "string"
+  "@odata.type": "#microsoft.graph.accessReviewReviewerScope",
+  "query": "String",
+  "queryType": "String",
+  "queryRoot": "String"
 }
 ```
 
