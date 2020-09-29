@@ -49,7 +49,7 @@ PATCH /users/{id}/authentication/emailMethods/{id}
 ## Request body
 In the request body, supply a JSON representation of the [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object with the updated email address.
 
-The following table shows the properties that are required when you create the [emailAuthenticationMethod](../resources/emailauthenticationmethod.md).
+The following table shows the properties that are required when you update the [emailAuthenticationMethod](../resources/emailauthenticationmethod.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -97,4 +97,3 @@ Content-Type: application/json
   "emailAddress": "kim@contoso.com"
 }
 ```
-
