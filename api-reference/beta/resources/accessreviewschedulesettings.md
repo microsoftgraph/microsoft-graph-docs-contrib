@@ -1,8 +1,8 @@
 ---
 title: "accessReviewScheduleSettings resource type"
-description: "In the Azure AD access reviews feature, the `accessReviewScheduleSettings` represents the settings associated with an access review series.  "
-localization_priority: Normal
+description: "In the Azure AD access reviews feature, the `accessReviewScheduleSettings` represents the settings associated with an access review series."
 author: "isabelleatmsft"
+localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
@@ -24,36 +24,40 @@ The **accessReviewScheduleSettings** defines the settings of an [accessReviewSch
 | `defaultDecisionEnabled`|`Boolean` | Flag to indicate whether default decision is enabled/disabled when reviewers do not respond. |
 | `defaultDecision`|`String` | Decision chosen if `defaultDecisionEnabled` is enabled. Can be one of "Approve", "Deny", or "Recommendation". |
 | `instanceDurationInDays`|`Int32` | Duration of each recurrence of review (`accessReviewInstance`) in number of days. |
-| `recurrence`|`microsoft.graph.patternedRecurrence` | Detailed settings for recurrence. Using standard outlook recurrence object.  |
+| `recurrence`|[patternedRecurrence](../resources/patternedrecurrence.md) | Detailed settings for recurrence. Using standard outlook recurrence object.  |
 | `autoApplyDecisionsEnabled`|`Boolean` | Flag to indicate whether auto-apply feature is enabled. |
-| `applyActions`|`Collection(microsoft.graph.accessReviewApplyAction)` | Optional field. Describes the  actions to take once a review is complete. There are two types that are currently supported: `removeAccessApplyAction` (default) and `disableAndDeleteUserApplyAction`. Field only needs to be specified in the case of `disableAndDeleteUserApplyAction`. See [accessReviewApplyAction](accessreviewapplyaction.md). |
+| `applyActions`|[accessReviewApplyAction](../resources/accessreviewapplyaction.md) collection | Optional field. Describes the  actions to take once a review is complete. There are two types that are currently supported: `removeAccessApplyAction` (default) and `disableAndDeleteUserApplyAction`. Field only needs to be specified in the case of `disableAndDeleteUserApplyAction`. See [accessReviewApplyAction](accessreviewapplyaction.md). |
 | `recommendationsEnabled`|`Boolean` | Flag to indicate whether decision recommendations are enabled/disabled. |
 
+## Relationships
+None.
+
 ## JSON representation
-
-Here is a JSON representation of the resource.
-
+The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.accessReviewScheduleSettings"
-}-->
-
-```json
+}
+-->
+``` json
 {
- "mailNotificationsEnabled": "boolean",
- "reminderNotificationsEnabled": "boolean",
- "justificationRequiredOnApproval": "boolean",
- "defaultDecisionEnabled": "boolean",
- "defaultDecision": "string",
- "instanceDurationInDays": "Int32",
- "recurrence": "microsoft.graph.patternedRecurrence",
- "autoApplyDecisionsEnabled": "boolean",
- "applyActions": "Collection(microsoft.graph.accessReviewApplyAction)",
- "recommendationsEnabled": "boolean"
+  "@odata.type": "#microsoft.graph.accessReviewScheduleSettings",
+  "mailNotificationsEnabled": "Boolean",
+  "reminderNotificationsEnabled": "Boolean",
+  "justificationRequiredOnApproval": "Boolean",
+  "defaultDecisionEnabled": "Boolean",
+  "defaultDecision": "String",
+  "instanceDurationInDays": "Integer",
+  "recurrence": {
+    "@odata.type": "microsoft.graph.patternedRecurrence"
+  },
+  "autoApplyDecisionsEnabled": "Boolean",
+  "applyActions": [
+    {
+      "@odata.type": "microsoft.graph.removeAccessApplyAction"
+    }
+  ],
+  "recommendationsEnabled": "Boolean"
 }
 ```
 
