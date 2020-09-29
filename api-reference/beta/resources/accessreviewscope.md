@@ -1,8 +1,8 @@
 ---
 title: "accessReviewScope resource type"
 description: "In the Azure AD access reviews feature, the `accessReviewScope` represents what entities will be reviewed in an access review.  "
-localization_priority: Normal
 author: "isabelleatmsft"
+localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
@@ -14,7 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **accessReviewScope** defines what entities will be reviewed in an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). This is expressed as an odata query. The query type must also be expressed so that scenarios can be supported to review entities outside of MicrosoftGraph, such as ARM.
-
 
 ## Properties
 | Property                  | Type                                 | Description |
@@ -39,23 +38,21 @@ The following are queries supported as the `instanceEnumerationScope` property i
 |--|--|--|
 | Review of guest users assigned to all groups, excluding specified groups | /groups?$filter=(groupTypes/any(c:c+eq+'Unified') and id ne '{group id}' and id ne '{group id}' and id ne '{group id}')&$count=true | Note that the corresponding scope should also be passed in along with this. See "Guest users assigned to all groups" in scope property table above. |
 
+## Relationships
+None.
+
 ## JSON representation
-
-Here is a JSON representation of the resource.
-
+The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.accessReviewScope"
-}-->
-
-```json
+}
+-->
+``` json
 {
- "query": "string",
- "queryType": "string"
+  "@odata.type": "#microsoft.graph.accessReviewScope",
+  "query": "String",
+  "queryType": "String"
 }
 ```
 
