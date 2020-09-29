@@ -1,6 +1,6 @@
 ---
 title: "List members of a directory role"
-description: "Retrieve a list of the users that are assigned to the directory role.  Only users can be assigned to a directory role."
+description: "Retrieve a list of the users that are assigned to the directory role."
 author: "abhijeetsinha"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve a list of the users that are assigned to the directory role.  Only users can be assigned to a directory role.
+Retrieve a list of the users that are assigned to the directory role. 
 
 > [!Note]
 > You can use both object ID and template ID of the directoryRole with this API. Template ID of a built-in role is immutable and can be seen in role description on Azure portal. It is also documented [here](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
