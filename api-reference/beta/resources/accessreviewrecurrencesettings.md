@@ -34,8 +34,8 @@ The **accessReviewRecurrenceSettings** resource type is used in the [accessRevie
 {
   "recurrenceType": "string",
   "recurrenceEndType": "string",
-  "durationInDays": 1024,
-  "recurrenceCount": 1024
+  "durationInDays":"Int32",
+  "recurrenceCount":"Int32"
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
