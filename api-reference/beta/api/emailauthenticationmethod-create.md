@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set a user's [email Authentication Method](../resources/emailauthenticationmethod.md) object. Email authentication is a Self-service Password Reset method. A user may only have one email authentication method.
+Set a user's [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object. Email authentication is a self-service password reset method. A user may only have one email authentication method.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -98,4 +98,3 @@ Content-Type: application/json
   "emailAddress": "kim@contoso.com"
 }
 ```
-
