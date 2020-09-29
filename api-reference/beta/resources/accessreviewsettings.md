@@ -36,15 +36,15 @@ Provides additional settings when creating an access review, to control the feat
 }-->
 ```json
 {
-  "mailNotificationsEnabled": true,
-  "remindersEnabled": true,  
-  "justificationRequiredOnApproval": true,
-  "activityDurationInDays": 1024,
-  "autoReviewEnabled": false,
-  "autoReviewSettings": {"@odata.type": "microsoft.graph.autoReviewSettings"},
-  "recurrenceSettings": {"@odata.type": "microsoft.graph.accessReviewRecurrenceSettings"},
-  "autoApplyReviewResultsEnabled": false,
-  "accessRecommendationsEnabled": false
+  "mailNotificationsEnabled":"boolean",
+  "remindersEnabled":"boolean",
+  "justificationRequiredOnApproval":"boolean",
+  "recurrenceSettings":{"@odata.type": "microsoft.graph.accessReviewRecurrenceSettings"},
+  "autoReviewEnabled":"boolean",
+  "activityDurationInDays":"Int32",
+  "autoReviewSettings":{"@odata.type": "microsoft.graph.autoReviewSettings"},
+  "autoApplyReviewResultsEnabled":"boolean",
+  "accessRecommendationsEnabled":"boolean"
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
