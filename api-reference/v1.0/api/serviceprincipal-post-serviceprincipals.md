@@ -39,7 +39,7 @@ POST /servicePrincipals
 | Content-Type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of a [servicePrincipal](../resources/servicePrincipal.md) object. The request body must contain  **appId**.
+In the request body, supply a JSON representation of a [servicePrincipal](../resources/serviceprincipal.md) object. The request body must contain  **appId**.
 
 ## Response
 
