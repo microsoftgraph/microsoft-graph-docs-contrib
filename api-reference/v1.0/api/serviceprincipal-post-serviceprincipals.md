@@ -11,7 +11,7 @@ ms.prod: "microsoft-identity-platform"
 
 Namespace: microsoft.graph
 
-Create a new [servicePrincipal](../resources/servicePrincipal.md) object.
+Create a new [servicePrincipal](../resources/serviceprincipal.md) object.
 
 > [!IMPORTANT]
 > Adding [**passwordCredential**](../resources/passwordcredential.md) when creating servicePrincipals is not supported. Use the [addPassword](servicePrincipal-addpassword.md) method to add passwords for a servicePrincipal.
