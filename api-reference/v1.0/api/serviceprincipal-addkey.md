@@ -137,7 +137,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "servicePrincipal_addkey"
+  "name": "serviceprincipal_addkey"
 }-->
 
 ```http
