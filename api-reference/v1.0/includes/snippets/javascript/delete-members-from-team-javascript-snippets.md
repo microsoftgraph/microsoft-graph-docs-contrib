@@ -10,12 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const todoTaskList = {
-  displayName: "Travel items"
-};
-
-let res = await client.api('/me/todo/lists')
-	.version('beta')
-	.post(todoTaskList);
+let res = await client.api('/teams/{teamsId}/members/{membership-id}')
+	.delete();
 
 ```
