@@ -9827,7 +9827,7 @@ items:
             - name: Delete
               href: api/emailauthenticationmethod-delete.md
             - name: Add
-              href: api/emailauthenticationmethod-create.md
+              href: api/emailauthenticationmethod-post.md
         - name: Certificate-based auth configuration
           href: resources/certificatebasedauthconfiguration.md
           items:
