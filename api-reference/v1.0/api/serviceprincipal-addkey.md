@@ -19,7 +19,7 @@ Adds a key credential to a [servicePrincipal](../resources/serviceprincipal.md).
 
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed. 
 
-ServicePrincipals that don’t have any existing valid certificates (i.e.: no certificates have been added yet, or all certificates have expired), won’t be able to use this service action. [Update servicePrincipal](../api/servicePrincipal-update.md) can be used to perform an update instead.
+ServicePrincipals that don’t have any existing valid certificates (i.e.: no certificates have been added yet, or all certificates have expired), won’t be able to use this service action. [Update servicePrincipal](../api/serviceprincipal-update.md) can be used to perform an update instead.
 
 ## Permissions
 
