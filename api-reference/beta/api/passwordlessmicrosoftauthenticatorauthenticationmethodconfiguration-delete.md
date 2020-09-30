@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Removes changes made to the [Microsoft Authenticator Phone Sign-in authentication method policy](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) by reverting the policy to it's default configuration.
 
+> [!NOTE]
+> There are substantial schema changes planned for APIs managing the Microsoft Authenticator app while in Graph beta. Please don't take a production dependency on these APIs because the calling patterns will change!
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

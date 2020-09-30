@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Represents a Microsoft Authenticator Passwordless Phone Sign-in authentication methods policy. Authentication methods policies define configuration settings and users or groups that are enabled to use the authentication method.
 
+> [!NOTE]
+> There are substantial schema changes planned for APIs managing the Microsoft Authenticator app while in Graph beta. Please don't take a production dependency on these APIs because the calling patterns will change!
 
 ## Methods
 |Method|Return type|Description|
