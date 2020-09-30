@@ -3,6 +3,7 @@ title: "Get channel"
 description: "Retrieve the properties and relationships of a channel."
 author: "nkramer"
 doc_type: apiPageType
+ms.prod: "microsoft-teams"
 localization_priority: Normal
 ---
 
@@ -62,7 +63,6 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_channel"
 }-->
-<!-- markdownlint-disable MD025 -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
