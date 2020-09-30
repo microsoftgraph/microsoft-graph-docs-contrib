@@ -53,7 +53,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_serviceprincipal_from_servicePrincipals"
+  "name": "create_serviceprincipal_from_serviceprincipals"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals
