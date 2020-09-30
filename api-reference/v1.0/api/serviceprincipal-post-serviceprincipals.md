@@ -43,7 +43,7 @@ In the request body, supply a JSON representation of a [servicePrincipal](../res
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [servicePrincipal](../resources/servicePrincipal.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [servicePrincipal](../resources/serviceprincipal.md) object in the response body.
 
 ## Examples
 ### Request
