@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Remove a key credential from a [servicePrincipal](../resources/servicePrincipal.md). This method along with [addKey](servicePrincipal-addkey.md) can be used by a servicePrincipal to automate rolling its expiring keys.
+Remove a key credential from a [servicePrincipal](../resources/serviceprincipal.md). This method along with [addKey](serviceprincipal-addkey.md) can be used by a servicePrincipal to automate rolling its expiring keys.
 
 > [!NOTE]
 > [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) and
