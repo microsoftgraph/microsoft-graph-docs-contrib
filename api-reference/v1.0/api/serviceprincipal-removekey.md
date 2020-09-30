@@ -15,7 +15,7 @@ Remove a key credential from a [servicePrincipal](../resources/servicePrincipal.
 
 > [!NOTE]
 > [Create servicePrincipal](../api/servicePrincipal-post-servicePrincipals.md) and
-[Update servicePrincipal](../api/servicePrincipal-update.md) operations can continue to be used to add and update key credentials for any servicePrincipal with or without a user's context.
+[Update servicePrincipal](../api/serviceprincipal-update.md) operations can continue to be used to add and update key credentials for any servicePrincipal with or without a user's context.
 
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 
