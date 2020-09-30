@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve a list of [servicePrincipal](../resources/servicePrincipal.md) objects.
+Retrieve a list of [servicePrincipal](../resources/serviceprincipal.md) objects.
 
 ## Permissions
 
