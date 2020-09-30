@@ -1,10 +1,9 @@
 ---
 title: "Get channel"
 description: "Retrieve the properties and relationships of a channel."
-author: "clearab"
+author: "nkramer"
 doc_type: apiPageType
 localization_priority: Normal
-ms.prod: "microsoft-teams"
 ---
 
 # Get channel
