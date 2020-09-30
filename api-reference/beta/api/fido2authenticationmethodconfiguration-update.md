@@ -49,7 +49,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/f
 ## Request body
 In the request body, supply a JSON representation of a [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object with the values of fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-For the list of properties, see [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md).
+For the list of properties that can be updated, see [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md).
 
 **Note:** The '@odata.type' property with a value of '#microsoft.graph.fido2AuthenticationMethodConfiguration' must be included in the body.
 
