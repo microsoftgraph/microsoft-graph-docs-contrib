@@ -49,7 +49,7 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "servicePrincipal_delete_owners"
+  "name": "serviceprincipal_delete_owners"
 }-->
 
 ```http
