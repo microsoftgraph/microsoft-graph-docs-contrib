@@ -187,3 +187,4 @@ Content-Type: application/json
     "Error: serviceprincipal_addkey:\r\n      Resource type was null or missing, so we assume there is no response to validate."
     ]
 }-->
+

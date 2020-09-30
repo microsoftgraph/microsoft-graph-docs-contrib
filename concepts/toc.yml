@@ -44,8 +44,6 @@ items:
             href: /learn/modules/msgraph-build-aspnetmvc-apps
           - name: Azure Functions
             href: /graph/tutorials/azure-functions
-          - name: Microsoft Flow
-            href: /graph/tutorials/flow
           - name: iOS Objective-C
             href: /graph/tutorials/ios-objectivec
           - name: iOS Swift
@@ -58,6 +56,8 @@ items:
             href: /graph/tutorials/node
           - name: PHP
             href: /graph/tutorials/php
+          - name: Power Automate
+            href: /graph/tutorials/power-automate
           - name: Python
             href: /graph/tutorials/python
           - name: React
@@ -66,6 +66,8 @@ items:
             href: /graph/tutorials/react-native
           - name: Ruby
             href: /graph/tutorials/ruby
+          - name: SharePoint Framework
+            href: /graph/tutorials/spfx
           - name: UWP
             href: /graph/tutorials/uwp
           - name: Xamarin
@@ -132,6 +134,8 @@ items:
             href: cloud-communications-online-meetings.md
           - name: Choose an online meeting API
             href: choose-online-meeting-api.md
+          - name: Configure application access
+            href: cloud-communication-online-meeting-application-access-policy.md
           - name: Call records
             href: cloud-communications-callrecords.md
           - name: Manage phone numbers for bots
@@ -195,6 +199,10 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Authentication methods
             href: authenticationmethods-get-started.md
+          - name: Governance
+            items:
+              - name: Create an access package
+                href: tutorial-access-package-api.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -303,14 +311,20 @@ items:
                 href: search-concept-messages.md
               - name: Search events
                 href: search-concept-events.md
-              - name: Search files
+              - name: Search content in OneDrive and SharePoint
                 href: search-concept-files.md
               - name: Search connectors
                 href: search-concept-custom-types.md
+              - name: Sort search results
+                href: search-concept-sort.md
+              - name: Refine search results
+                href: search-concept-aggregation.md
           - name: Index
             items:
               - name: Manage connections
                 href: search-index-manage-connections.md
+              - name: Manage schema
+                href: search-index-manage-schema.md
               - name: Manage items
                 href: search-index-manage-items.md
       - name: Security
@@ -423,7 +437,7 @@ items:
                 href: /learn/modules/msgraph-changenotifications-trackchanges
               - name: Missing Outlook notifications (preview)
                 href: webhooks-outlook-authz.md
-              - name: Notifications with resource data (preview)
+              - name: Notifications with resource data
                 href: webhooks-with-resource-data.md
               - name: Get notifications delivered different ways (preview)
                 href: change-notifications-delivery.md
@@ -507,12 +521,34 @@ items:
             href: sdks/large-file-upload.md
           - name: Use beta API
             href: sdks/use-beta.md
-      - name: Use the toolkit
+          - name: Use PowerShell
+            items:
+              - name: Installation
+                href: powershell/installation.md
+              - name: Get started
+                href: powershell/get-started.md
+              - name: Navigating the SDK
+                href: powershell/navigating.md
+              - name: App-only authentication
+                href: powershell/app-only.md
+      - name: Use the Toolkit
         items:
           - name: Toolkit overview
             href: toolkit/overview.md
           - name: Get started
-            href: toolkit/get-started.md
+            items:
+              - name: Overview
+                href: toolkit/get-started/overview.md
+              - name: Build a web application (JavaScript)
+                href: toolkit/get-started/build-a-web-app.md
+              - name: Build a SharePoint web part
+                href: toolkit/get-started/build-a-sharepoint-web-part.md
+              - name: Build a Microsoft Teams tab
+                href: toolkit/get-started/build-a-microsoft-teams-tab.md
+              - name: Use the Toolkit with React
+                href: toolkit/get-started/use-toolkit-with-react.md
+              - name: Use the Toolkit with Angular
+                href: toolkit/get-started/use-toolkit-with-angular.md
           - name: Components
             items:
               - name: Login
@@ -537,7 +573,7 @@ items:
             items:
               - name: Using the providers
                 href: toolkit/providers.md
-              - name: Msal provider
+              - name: MSAL provider
                 href: toolkit/providers/msal.md
               - name: SharePoint provider
                 href: toolkit/providers/sharepoint.md
