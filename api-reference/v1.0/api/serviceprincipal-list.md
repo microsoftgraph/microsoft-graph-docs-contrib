@@ -61,7 +61,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/servicePrincipals
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-servicePrincipal-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-serviceprincipal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
