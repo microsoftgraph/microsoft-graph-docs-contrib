@@ -57,7 +57,7 @@ Making a GET request to the linked URL can be used to get the status of an ongoi
 
 ## Example
 ### Request
-The following is an example of the request. For help creating the required Certificate Signing Request (CSR), see the [CSR generation code sample](/universal-print/hardware/universal-print-oem-certificate-signing-request).
+The following is an example of the request.
 
 
 # [HTTP](#tab/http)
