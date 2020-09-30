@@ -16,7 +16,8 @@ Namespace: microsoft.graph
 A representation of a Microsoft Authenticator Passwordless Phone Sign-in method registered to a user.
 
 > [!NOTE]
-> This resource and associated methods will change in the future.
+> There are substantial schema changes planned for APIs managing the Microsoft Authenticator app while in Graph beta. Please don't take a production dependency on 
+> these APIs because the calling patterns will change!
 
 ## Methods
 |Method|Return type|Description|

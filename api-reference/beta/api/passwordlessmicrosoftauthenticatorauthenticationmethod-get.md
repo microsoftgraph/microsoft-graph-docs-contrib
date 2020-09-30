@@ -15,7 +15,8 @@ Namespace: microsoft.graph
 Retrieve a user's single [Microsoft Authenticator Passwordless Phone Sign-in method](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) object.
 
 > [!NOTE]
-> This resource and associated methods will change in the future.
+> There are substantial schema changes planned for APIs managing the Microsoft Authenticator app while in Graph beta. Please don't take a production dependency on 
+> these APIs because the calling patterns will change!
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
