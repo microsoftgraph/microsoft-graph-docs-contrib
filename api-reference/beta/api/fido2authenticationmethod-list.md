@@ -108,5 +108,7 @@ Content-length: 491
       ],
       "attestationLevel": "attested"
     }
+  ]
+}
 ```
 
