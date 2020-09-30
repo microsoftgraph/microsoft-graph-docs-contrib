@@ -37,7 +37,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 }
 -->
 ``` http
-POST /users/{id}/authentication/emailMethods
+POST /users/{id | userPrincipalName}/authentication/emailMethods
 ```
 
 ## Request headers

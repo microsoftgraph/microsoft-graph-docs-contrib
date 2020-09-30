@@ -42,7 +42,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 -->
 ``` http
 GET /me/authentication/passwordlessMicrosoftAuthenticatorMethods
-GET /users/{id}/authentication/passwordlessMicrosoftAuthenticatorMethods
+GET /users/{id | userPrincipalName}/authentication/passwordlessMicrosoftAuthenticatorMethods
 ```
 
 ## Optional query parameters

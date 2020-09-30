@@ -38,7 +38,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 -->
 ``` http
 GET /me/authentication/emailMethods
-GET /users/{id}/authentication/emailMethods
+GET /users/{id | userPrincipalName}/authentication/emailMethods
 ```
 
 ## Optional query parameters

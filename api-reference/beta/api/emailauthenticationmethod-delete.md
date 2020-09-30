@@ -37,7 +37,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 }
 -->
 ``` http
-DELETE /users/{id}/authentication/emailMethods/{id}
+DELETE /users/{id | userPrincipalName}/authentication/emailMethods/{id}
 ```
 
 ## Request headers

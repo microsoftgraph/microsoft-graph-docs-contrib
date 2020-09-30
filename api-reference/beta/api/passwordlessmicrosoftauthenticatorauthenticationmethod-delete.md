@@ -41,7 +41,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 }
 -->
 ``` http
-DELETE /users/{id}/authentication/passwordlessMicrosoftAuthenticatorMethods/{id}
+DELETE /users/{id | userPrincipalName}/authentication/passwordlessMicrosoftAuthenticatorMethods/{id}
 ```
 
 ## Request headers

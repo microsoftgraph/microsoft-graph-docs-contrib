@@ -37,7 +37,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 }
 -->
 ``` http
-DELETE /users/{id}/authentication/fido2Methods/{id}
+DELETE /users/{id | userPrincipalName}/authentication/fido2Methods/{id}
 ```
 
 ## Request headers
