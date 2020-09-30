@@ -1,52 +1,19 @@
 ---
 author: daspek
 description: "The contentType resource represents a content type in SharePoint."
-title: ContentType
+title: contentType
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "sharepoint"
 ---
-# ContentType resource type
+# contentType resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **contentType** resource represents a _content type_ in SharePoint.
+Represents a _content type_ in SharePoint.
 Content types allow you to define a set of columns that must be present on every [**listItem**][listItem] in a [**list**][list].
-
-[list]: list.md
-[listItem]: listitem.md
-
-## JSON representation
-
-Here is a JSON representation of a **contentType** resource.
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType","keyProperty":"id" } -->
-
-```json
-{
-  "description": "string",
-  "group": "string",
-  "hidden": false,
-  "id": "string",
-  "inheritedFrom": { "@type": "microsoft.graph.itemReference" },
-  "name": "string",
-  "order": { "@type": "microsoft.graph.contentTypeOrder" },
-  "parentId": "string",
-  "readOnly": false,
-  "sealed": false,
-  "columnLinks": [{ "@type": "microsoft.graph.columnLink" }],
-  "base": { "@type": "microsoft.graph.contentType" },
-  "columnPositions" : [{ "@type": "microsoft.graph.columnDefinition" }],
-  "isBuiltIn" : false,
-  "documentSet" : { "@type": "microsoft.graph.documentSet" },
-  "documentTemplate" : { "@type": "microsoft.graph.documentSetContent" },
-  "associatedHubsUrls" : ["string"],
-  "propagateChanges" : false,
-  "baseTypes" : [{ "@type": "microsoft.graph.contentType" }],
-  "columns" : [{ "@type": "microsoft.graph.columnDefinition" }],
-}
-```
 
 ## Properties
 
@@ -91,6 +58,39 @@ See [Introduction to content types and content type publishing][contentTypeIntro
 [documentSet]: documentSet.md
 [documentSetContent]: documentSetContent.md
 
+## JSON representation
+
+The following is a JSON representation of a **contentType** resource.
+
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType","keyProperty":"id" } -->
+
+```json
+{
+  "description": "string",
+  "group": "string",
+  "hidden": false,
+  "id": "string",
+  "inheritedFrom": { "@type": "microsoft.graph.itemReference" },
+  "name": "string",
+  "order": { "@type": "microsoft.graph.contentTypeOrder" },
+  "parentId": "string",
+  "readOnly": false,
+  "sealed": false,
+  "columnLinks": [{ "@type": "microsoft.graph.columnLink" }],
+  "base": { "@type": "microsoft.graph.contentType" },
+  "columnPositions" : [{ "@type": "microsoft.graph.columnDefinition" }],
+  "isBuiltIn" : false,
+  "documentSet" : { "@type": "microsoft.graph.documentSet" },
+  "documentTemplate" : { "@type": "microsoft.graph.documentSetContent" },
+  "associatedHubsUrls" : ["string"],
+  "propagateChanges" : false,
+  "baseTypes" : [{ "@type": "microsoft.graph.contentType" }],
+  "columns" : [{ "@type": "microsoft.graph.columnDefinition" }],
+}
+```
+
+[list]: list.md
+[listItem]: listitem.md
 <!--
 {
   "type": "#page.annotation",
