@@ -39,7 +39,15 @@ This resource supports
 |id|String| The identifier of the task list, unique in the user's mailbox. Read-only. Inherited from [entity](entity.md)|
 |isOwner|Boolean| True if the user is owner of the given task list.|
 |isShared|Boolean| True if the task list is shared with other users|
-|wellknownListName|wellknownListName| Property indicating the well-known list name if the given list is a well-known list. Possible values are: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
+|wellknownListName|wellknownListName| Property indicating the list name if the given list is a well-known list. Possible values are: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
+
+### wellknownListName values
+|Member|Description|
+|:---|:---|
+|none| User created list.|
+|defaultList| Built-in **Tasks** list.|
+|flaggedEmails| Built-in **Flagged email** list. Tasks from flagged emails are present in this list.|
+|unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 |Relationship|Type|Description|
