@@ -52,8 +52,6 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",
   "id": "String (identifier)",
   "state": "String",
-  "includeTargets": {
-    "@odata.type": "microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget"
-  }
+  "includeTargets": [ { "@odata.type": "microsoft.graph.authenticationMethodTarget" } ]
 }
 ```

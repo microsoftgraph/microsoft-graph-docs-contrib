@@ -77,8 +77,8 @@ The following is an example of the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-
-Content-Type: application/json
+Content-type: application/json
+Content-length: 491
 {
   "value": {
     "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
