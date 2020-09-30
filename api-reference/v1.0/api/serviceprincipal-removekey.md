@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 Remove a key credential from a [servicePrincipal](../resources/servicePrincipal.md). This method along with [addKey](servicePrincipal-addkey.md) can be used by a servicePrincipal to automate rolling its expiring keys.
 
 > [!NOTE]
-> [Create servicePrincipal](../api/servicePrincipal-post-servicePrincipals.md) and
+> [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) and
 [Update servicePrincipal](../api/serviceprincipal-update.md) operations can continue to be used to add and update key credentials for any servicePrincipal with or without a user's context.
 
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
