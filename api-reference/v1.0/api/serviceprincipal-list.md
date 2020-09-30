@@ -54,7 +54,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_servicePrincipal"
+  "name": "list_serviceprincipal"
 }-->
 
 ```msgraph-interactive
