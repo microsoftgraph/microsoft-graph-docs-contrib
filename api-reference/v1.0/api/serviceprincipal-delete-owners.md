@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Remove an owner from a [servicePrincipal](../resources/servicePrincipal.md) object.
+Remove an owner from a [servicePrincipal](../resources/serviceprincipal.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
