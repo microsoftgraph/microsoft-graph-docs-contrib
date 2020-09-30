@@ -2127,18 +2127,12 @@ With these permissions, all authentication methods can be read and managed on a 
 
 |Permission                              |Display String                        |Description        |Admin Consent Required |
 |:---------------------------------------|:-------------------------------------|:------------------|:----------------------|
-|_Policy.ReadWrite.AuthenticationMethod_ (private preview)   |Read and write all authentication methods policies.    |Allows the app to read and write all authentication methods policies on an Azure AD tenant. Additionally, the signed-in user must have the Global Administrator role assigned. |Yes|
+|_Policy.ReadWrite.AuthenticationMethod_ (private preview)   |Read and write all authentication methods policies.    |Allows the app to read and write all authentication methods policies on an Azure AD tenant. |Yes|
 
 
 ### Remarks
 
-User authentication method permissions are used to manage authentication methods on users. With these permissions, a delegated user or application can register new authentication methods on a user, read the authentication methods the user already has registered, update those authentication methods, and remove them from the user.
-
-With these permissions, all authentication methods can be read and managed on a user. This includes methods used for:
-
-* Primary authentication (password)
-* Second factor of multi-factor authentication/MFA (phone numbers)
-* Self-Service Password Reset/SSPR (email address)
+Authentication methods policy permissions are used to manage settings in the authentication methods policy, including enabling and disabling authentication methods, allowing users and groups to use those methods, and configuring other settings related to the authentication methods that users may register and use in a tenant.
 
 ## Permission scenarios
 
