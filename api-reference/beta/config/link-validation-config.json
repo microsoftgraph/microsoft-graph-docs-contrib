@@ -2,6 +2,7 @@
     "pathsToIgnore": [
         "/azure",
         "/dotnet",
+        "/dynamics-nav",
         "/exchange",
         "/graph",
         "/legal",
