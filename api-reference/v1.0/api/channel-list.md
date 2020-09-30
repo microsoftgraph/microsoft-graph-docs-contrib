@@ -90,7 +90,6 @@ Content-length: 262
       "description": "description-value",
       "displayName": "display-name-value",
       "id": "id-value",
-      "membershipType": "membership-type-value",
       "isFavoriteByDefault": false,
       "webUrl": "webUrl-value",
       "email": "email-value"
@@ -134,7 +133,6 @@ Content-length: 262
       "description": "description-value",
       "displayName": "display-name-value",
       "id": "id-value",
-      "membershipType": "membership-type-value",
       "isFavoriteByDefault": false,
       "webUrl": "webUrl-value",
       "email": "email-value"
