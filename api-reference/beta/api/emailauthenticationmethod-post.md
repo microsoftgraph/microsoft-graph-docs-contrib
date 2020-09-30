@@ -90,9 +90,10 @@ The following is an example of the response.
 }
 -->
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 491
 
-Content-Type: application/json
 {
   "id": "3ddfcfc8-9383-446f-83cc-3ab9be4be18f",
   "emailAddress": "kim@contoso.com"
