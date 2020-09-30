@@ -43,7 +43,7 @@ This method supports some of the OData query parameters to help customize the re
 | Accept-Language  | Localization to get. Optional.  |
 
 >[!NOTE]
->Accept-Language | Localization to get is still required for Microsoft Graph Explorer.
+>Accept-Language request header is required for Microsoft Graph Explorer only.
 
 ## Request body
 
@@ -104,11 +104,61 @@ Content-Type: application/json
 
 Requests for /branding always return the **mediaContentType**, **mediaReadLink**, and **mediaEditLink** properties. If a locale has been applied, the **mediaEditLink** is the **mediaEditLink** for the locale (which is always non-null), and the **mediaReadLink** and **mediaContentType** are the **mediaReadLink** and **mediaContentType** of the locale if the **mediaReadLink** of the locale is non-null; otherwise, the default **mediaReadLink** and **mediaContentType**.
 
-### Example 1.1: Get the default branding - Microsoft Graph Explorer specific
+### Example 2: Get the default branding with Accept-Language request header using Microsoft Graph Explorer
 
 #### Request
 
-The following is an example of the request with no "Accept-Language" request header utilizing Microsoft Graph Explorer.
+The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_organizationalbrandingproperties"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
+Accept-Language: default
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "backgroundColor":"#FFFF33",
+  "backgroundImage@odata.mediaContentType":"image/*",
+  "backgroundImage@odata.mediaReadLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/backgroundImage",
+  "backgroundImage@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/backgroundImage",
+  "bannerLogo@odata.mediaContentType":"image/*",
+  "bannerLogo@odata.mediaReadLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo",
+  "bannerLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo",
+  "id": "und",
+  "squareLogo@odata.mediaContentType":"image/*",
+  "squareLogo@odata.mediaReadLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/squareLogo",
+  "squareLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/squareLogo",
+  "signInPageText":"Default",
+  "usernameHintText":"DefaultHint"
+}
+```
+
+Requests for /branding always return the **mediaContentType**, **mediaReadLink**, and **mediaEditLink** properties. If a locale has been applied, the **mediaEditLink** is the **mediaEditLink** for the locale (which is always non-null), and the **mediaReadLink** and **mediaContentType** are the **mediaReadLink** and **mediaContentType** of the locale if the **mediaReadLink** of the locale is non-null; otherwise, the default **mediaReadLink** and **mediaContentType**.
+
+### Example 3: Get the default branding without Accept-Language request header using Microsoft Graph Explorer
+
+#### Request
+
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_organizationalbrandingproperties"
@@ -122,7 +172,7 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 The following is an example of the response.
 
-> **Note:** Accept-Language | Localization to get is still required for Microsoft Graph Explorer to avoid getting an error described below.
+> **Note:** Accept-Language request header is required for Microsoft Graph Explorer to avoid getting an error.
 
 <!-- {
   "blockType": "response",
@@ -146,7 +196,10 @@ Content-Type: application/json
     }
 }
 ```
-### Example 2: Get organizational branding but no branding configured
+
+Requests for /branding always return the **mediaContentType**, **mediaReadLink**, and **mediaEditLink** properties. If a locale has been applied, the **mediaEditLink** is the **mediaEditLink** for the locale (which is always non-null), and the **mediaReadLink** and **mediaContentType** are the **mediaReadLink** and **mediaContentType** of the locale if the **mediaReadLink** of the locale is non-null; otherwise, the default **mediaReadLink** and **mediaContentType**.
+
+### Example 4: Get organizational branding but no branding configured
 
 #### Request
 
@@ -174,8 +227,9 @@ The following is an example of the response.
 HTTP/1.1 404 NOT FOUND
 ```
 
-### Example 3: Get organizational branding for the French locale
+### Example 5: Get organizational branding for the French locale
 The Accept-Langauge header is used to apply a particular localization to the branding. Properties that are null in the specified localization are returned from the default branding. If the Accept-Language header is specified in the request, the response will include the Content-Language header, unless it is `und`.
+
 #### Request
 
 The following is an example of the request.
@@ -223,7 +277,7 @@ Content-Language: fr
 }
 ```
 
-### Example 4: Get bannerLogo for the French locale
+### Example 6: Get bannerLogo for the French locale
 Returns **bannerLogo** for the fr locale if it exists. If the localization does not exist, returns the default **bannerLogo**.
 
 #### Request
@@ -260,7 +314,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 5: Get bannerLogo when no bannerLogo is configured
+### Example 7: Get bannerLogo when no bannerLogo is configured
 
 This example shows a request for a property that does not exist on the default branding or the language specified in the Accept-Language header.
 
