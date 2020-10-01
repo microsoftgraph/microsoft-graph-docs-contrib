@@ -563,6 +563,32 @@ items:
           href: api/group-post-rejectedsenders.md
         - name: Remove rejected senders
           href: api/group-delete-rejectedsenders.md
+      - name: Conversation member
+        href: resources/conversationmember.md
+        items:
+        - name: List members
+          href: api/conversationmember-list.md
+        - name: Get member
+          href: api/conversationmember-get.md
+        - name: Add member
+          href: api/conversationmember-add.md
+        - name: Update member
+          href: api/conversationmember-update.md
+        - name: Delete member
+          href: api/conversationmember-delete.md
+      - name: Aaduser conversation member
+        href: resources/aaduserconversationmember.md
+        items:
+        - name: List members
+          href: api/conversationmember-list.md
+        - name: Get member
+          href: api/conversationmember-get.md
+        - name: Add member
+          href: api/conversationmember-add.md
+        - name: Update member
+          href: api/conversationmember-update.md
+        - name: Delete member
+          href: api/conversationmember-delete.md        
       - name: Conversation thread
         href: resources/conversationthread.md
         items:
