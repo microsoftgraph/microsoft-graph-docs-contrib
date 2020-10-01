@@ -57,6 +57,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 The following is an example of the request.
 <!-- markdownlint-disable MD025 -->
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_channel"
