@@ -614,7 +614,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |_Device.ReadWrite.All_ |Read and write devices |Allows the app to read and write all device properties without a signed in user. Does not allow device creation, device deletion, or update of device alternative security identifiers. |Yes |
 
 > [!NOTE]
-> Currently, when the application permission *Device.ReadWrite.All* is granted, the deprecated directory role [Device Managers](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#deprecated-roles) will be granted to the app's service principal. This directory roles assignment is not removed automatically when the associated application permissions is revoked. To ensure an application's access to read or write to devices is removed, customers must also remove any related directory roles which were granted to the application.
+> Currently, when the application permission *Device.ReadWrite.All* is granted, the deprecated [Device Managers](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#deprecated-roles) directory role will be granted to the app's service principal. This directory role assignment is not removed automatically when the associated application permissions is revoked. To ensure that an application's access to read or write to devices is removed, customers must also remove any related directory roles that were granted to the application.
 
 ### Example usage
 
