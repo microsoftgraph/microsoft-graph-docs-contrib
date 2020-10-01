@@ -2,7 +2,7 @@
 title: "Create channel"
 description: "Create new channel in a Microsoft Team, as specified in the request body."
 localization_priority: Normal
-author: "clearab"
+author: "nkramer"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -69,6 +69,22 @@ Content-type: application/json
   "membershipType": "standard"
 }
 ```
+
+# [C#](#tab/csharp)	
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)	
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-from-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-channel-from-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-channel-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 #### Response
 
