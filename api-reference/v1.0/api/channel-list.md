@@ -129,10 +129,12 @@ The following example shows a request to list all private channels.
   "blockType": "request",
   "name": "list_private_channels"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{id}/channels?$filter=membershipType eq 'private'
 ```
 
+# [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-channels-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
