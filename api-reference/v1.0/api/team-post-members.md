@@ -29,6 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /teams/{teamsId}/members
+POST /teams/{teamsId}/channels/{channelId}/members
 ```
 
 ## Request headers
