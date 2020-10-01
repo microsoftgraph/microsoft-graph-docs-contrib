@@ -57,6 +57,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "patch_channel"
 }-->
+```http
+PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
+```
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/patch-channel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
