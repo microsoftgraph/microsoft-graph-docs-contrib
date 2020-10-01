@@ -136,8 +136,6 @@ Content-Type: application/json
 
 # [Objective-C](#tab/objc)
 
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Response
@@ -162,7 +160,7 @@ The following is a request with a full payload. The client can override values i
 
 # [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "create_team_post_full_payload"
 }-->
 ```http
@@ -286,7 +284,6 @@ A few thing to note about this call:
 * In order to create a team, the group you're creating it from must have a least one owner.
 * The team that's created will always inherit from the group's display name, visibility, specialization, and members. Therefore, when making this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **members@odata.bind** properties will return an error.
 * If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. We recommend that you retry the Create team call three times, with a 10 second delay between calls.
-
 
 #### Request
 
@@ -542,3 +539,4 @@ Content-Length: 0
 - [Getting started with Retail Teams templates](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
 - [Getting started with Healthcare Teams templates](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
 - [Creating a group with a team](/graph/teams-create-group-and-team)
+
