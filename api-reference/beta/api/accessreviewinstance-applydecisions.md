@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /identityGovernance/accessReviews/definitions/{definitionId}/instances/{instanceId}/applyDecisions()
+POST /identityGovernance/accessReviews/definitions/{definitionId}/instances/{instanceId}/applyDecisions
 ```
 
 ## Request headers
@@ -51,7 +51,7 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/04e5c3b2-9db2-40d3-a204-128f4956ae8e/instances/70463350-742e-4909-bfa5-bc23447bd002/applyDecisions()
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/04e5c3b2-9db2-40d3-a204-128f4956ae8e/instances/70463350-742e-4909-bfa5-bc23447bd002/applyDecisions
 ```
 
 ---

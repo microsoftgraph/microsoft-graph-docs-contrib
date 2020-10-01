@@ -28,7 +28,7 @@ The signed in user must also be a reviewer on the `accessReviewInstance`.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/pendingAccessReviewInstances/{instanceID}/acceptRecommendations()
+POST /me/pendingAccessReviewInstances/{instanceID}/acceptRecommendations
 ```
 ## Request headers
 None.
@@ -48,7 +48,7 @@ If successful, this method returns a `204, No Content` response code. It does no
   "name": "acceptrecommendations_accessReviewInstance"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/acceptRecommendations()
+POST https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/acceptRecommendations
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

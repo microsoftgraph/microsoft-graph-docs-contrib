@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /identityGovernance/accessReviews/definitions/{definitionId}/instances/{instanceId}/sendReminder()
+POST /identityGovernance/accessReviews/definitions/{definitionId}/instances/{instanceId}/sendReminder
 ```
 ## Request headers
 None.
@@ -46,7 +46,7 @@ If successful, this method returns a `204, No Content` response code. It does no
   "name": "sendReminder_accessReview"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/04e5c3b2-9db2-40d3-a204-128f4956ae8e/instances/70463350-742e-4909-bfa5-bc23447bd002/sendReminder()
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/04e5c3b2-9db2-40d3-a204-128f4956ae8e/instances/70463350-742e-4909-bfa5-bc23447bd002/sendReminder
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
