@@ -10376,6 +10376,10 @@ items:
               href: api/accessreviewinstancedecisionitem-update.md
           - name: Access review instance decision item target
             href: resources/accessreviewinstancedecisionitemtarget.md
+          - name: Access review instance decision item user target
+            href: resources/accessreviewinstancedecisionitemusertarget.md
+          - name: Access review instance decision item service principal target
+            href: resources/accessreviewinstancedecisionitemserviceprincipaltarget.md
         - name: Access reviews (legacy)
           href: resources/accessreviews-root.md
           items:
