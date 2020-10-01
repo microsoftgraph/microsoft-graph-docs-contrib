@@ -260,6 +260,7 @@ Content-Type: application/json
 # [Objective-C](#tab/objc)
 
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
