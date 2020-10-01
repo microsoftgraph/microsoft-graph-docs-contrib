@@ -55,26 +55,26 @@ Here is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "patch_channel"
+  "name": "update_channel"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/patch-channels-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-channels-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/patch-channels-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-channels-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/patch-channels-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/update-channels-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/patch-channels-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-channels-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
