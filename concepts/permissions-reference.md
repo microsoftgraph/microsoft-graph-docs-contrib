@@ -613,6 +613,9 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_Device.ReadWrite.All_ |Read and write devices |Allows the app to read and write all device properties without a signed in user. Does not allow device creation, device deletion, or update of device alternative security identifiers. |Yes |
 
+> [!NOTE]
+> Currently, when the application permission *Device.ReadWrite.All* is granted, the deprecated directory role [Device Managers](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#deprecated-roles) will be granted to the app's service principal. This directory roles assignment is not removed automatically when the associated application permissions is revoked. To ensure an application's access to read or write to devices is removed, customers must also remove any related directory roles which were granted to the application.
+
 ### Example usage
 
 #### Application
@@ -649,6 +652,9 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 Directory permissions provide the highest level of privilege for accessing directory resources such as [User](/graph/api/resources/user?view=graph-rest-1.0), [Group](/graph/api/resources/group?view=graph-rest-1.0), and [Device](/graph/api/resources/device?view=graph-rest-1.0) in an organization.
 
 They also exclusively control access to other directory resources like: [organizational contacts](/graph/api/resources/orgcontact?view=graph-rest-beta), [schema extension APIs](/graph/api/resources/schemaextension?view=graph-rest-beta), [Privileged Identity Management (PIM) APIs](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta), as well as many of the resources and APIs listed under the **Azure Active Directory** node in the v1.0 and beta API reference documentation. These include administrative units, directory roles, directory settings, policy, and many more.
+
+> [!NOTE]
+> Currently, when the application permission *Directory.Read.All* is granted, the directory role [Directory Readers](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-readers-permissions) will be granted to the app's service principal. When *Directory.ReadWrite.All* is granted, the directory role [Directory Writers](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-writers-permissions) is also granted. These directory roles are not removed automatically when the associated application permissions are revoked. To remove an application's access to read or write to the directory, customers must also remove any directory roles which were granted to the application.
 
 The _Directory.ReadWrite.All_ permission grants the following privileges:
 
