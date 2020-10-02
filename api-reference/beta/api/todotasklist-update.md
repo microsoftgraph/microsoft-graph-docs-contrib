@@ -71,7 +71,7 @@ Content-Type: application/json
 Content-length: 167
 
 {
-  "displayName": "Vacation Plan",
+  "displayName": "Vacation Plan"
 }
 ```
 # [JavaScript](#tab/javascript)
