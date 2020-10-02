@@ -24,6 +24,13 @@ Namespace: microsoft.graph
 |everyone|
 |unknownFutureValue|
 
+### attestationLevel values
+
+|Member|
+|:---|
+|attested|
+|notAttested|
+
 ### emailType values
 
 |Member|
