@@ -84,7 +84,7 @@ Content-type: application/json
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-channel-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
+---
 #### Response
 
 The following example shows the response.
