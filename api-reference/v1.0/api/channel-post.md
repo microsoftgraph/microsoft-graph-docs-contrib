@@ -49,11 +49,11 @@ If successful, this method returns a `201 Created` response code and a [channel]
 ## Examples
 
 ### Example 1: Create a standard channel
-
 #### Request
 
 The following example shows a request to create a standard channel.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_group"
@@ -69,7 +69,6 @@ Content-type: application/json
   "membershipType": "standard"
 }
 ```
-
 # [C#](#tab/csharp)	
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -96,7 +95,7 @@ The following example shows the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.channel"
-} -->
+}-->
 
 ```http
 HTTP/1.1 201 Created
@@ -120,7 +119,6 @@ The following example shows a request to create a private channel and add a user
   "blockType": "request",
   "name": "create_channel_from_user"
 }-->
-
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{group_id}/channels
 Content-type: application/json
@@ -149,7 +147,7 @@ The following example shows the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.channel"
-} -->
+}-->
 
 ```http
 HTTP/1.1 201 Created
