@@ -21,8 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Group.ReadWrite.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Group.ReadWrite.All, Directory.ReadWrite.All |
-| Application                            | Teamwork.Migrate.All |
+| Application                            | Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All |
 
 ## HTTP request
 
@@ -55,7 +54,6 @@ The following is an example of a minimal request. By omitting other properties, 
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_post"
@@ -70,19 +68,6 @@ Content-Type: application/json
   "description": "My Sample Team’s Description"
 }
 ```
-# [C#](#tab/csharp)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ##### Response
 <!-- {
@@ -104,7 +89,6 @@ The following is an example of a minimal request using application permissions. 
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_post_minimal"
@@ -126,17 +110,6 @@ Content-Type: application/json
   ]
 }
 ```
-# [C#](#tab/csharp)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-
----
 
 #### Response
 <!-- {
@@ -247,19 +220,6 @@ Content-Type: application/json
     ]
 }
 ```
-# [C#](#tab/csharp)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 <!-- {
@@ -301,19 +261,6 @@ Content-Type: application/json
   "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
 }
 ```
-# [C#](#tab/csharp)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 <!-- {
@@ -376,19 +323,6 @@ Content-Type: application/json
     ]
 }
 ```
-# [C#](#tab/csharp)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 <!-- {
@@ -429,19 +363,7 @@ Content-Type: application/json
   "description": "My Class Team’s Description"
 }
 ```
-# [C#](#tab/csharp)
 
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 <!-- {
@@ -505,19 +427,6 @@ Content-Type: application/json
     ]
 }
 ```
-# [C#](#tab/csharp)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 <!-- {
