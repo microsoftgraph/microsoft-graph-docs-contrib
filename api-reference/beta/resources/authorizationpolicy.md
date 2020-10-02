@@ -66,7 +66,7 @@ The following is a JSON representation of the resource.
   "allowedToUseSSPR": true,
   "allowedToSignUpEmailBasedSubscriptions": true,
   "allowEmailVerifiedUsersToJoinOrganization": true,
-  "allowInvitesFrom": "[String]"
+  "allowInvitesFrom": "String"
 }
 ```
 
