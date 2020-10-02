@@ -49,11 +49,11 @@ If successful, this method returns `201 Created` response code with the [message
 
 ### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_reply_message"
 }-->
-
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/messages/{id}/replies
 Content-type: application/json
@@ -65,7 +65,6 @@ Content-type: application/json
   }
 }
 ```
-
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-reply-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
