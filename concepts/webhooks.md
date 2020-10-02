@@ -21,7 +21,7 @@ After Microsoft Graph accepts the subscription request, it pushes change notific
 
 By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with change notifications.
 
-An app can also subscribe to change notifications that include resource data, to avoid having to make additional API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. More resource types will support this type of notifications in the future. For details about how to work with these notifications, see [Set up change notifications that include resource data (preview)](webhooks-with-resource-data.md).
+An app can also subscribe to change notifications that include resource data, to avoid having to make additional API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. For details about how to work with these notifications, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
 
 ## Supported resources
 
@@ -38,7 +38,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
 - Security [alert][]
 - Teams [callRecord][]
-- Teams [chatMessage][] (preview)
+- Teams [chatMessage][]
 - Teams [presence][] (preview)
 
 You can create a subscription to a specific Outlook folder such as the Inbox:
@@ -98,7 +98,7 @@ Each Teams resource has different subscription quotas.
 - For subscriptions to **callRecords**:
   - Per organization: 100 total subscriptions
 
-- For subscriptions to **chatMessages** (channels or chats) (preview):
+- For subscriptions to **chatMessages** (channels or chats):
   - Per app and channel or chat combination: 1 subscription
   - Per organization: 10,000 total subscriptions
 
@@ -274,7 +274,7 @@ The following code samples are available on GitHub.
 
 ## Firewall configuration
 
-You can optionally configure the firewall that protects your notification URL to allow inbound connections only from Microsoft Graph. This allows you to reduce further exposure to invalid change notifications that are sent to your notification URL. These invalid change notifications can be trying to trigger the custom logic that you implemented. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Microsoft 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls).
+You can optionally configure the firewall that protects your notification URL to allow inbound connections only from Microsoft Graph. This allows you to reduce further exposure to invalid change notifications that are sent to your notification URL. These invalid change notifications can be trying to trigger the custom logic that you implemented. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Microsoft 365](/office365/enterprise/additional-office365-ip-addresses-and-urls).
 
 > **Note:** The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
 
@@ -285,7 +285,7 @@ The following table lists the latency to expect between an event happening in th
 | Resource | Average latency | Maximum latency |
 |:-----|:-----|:-----|
 |[callRecord][] | Less than 15 minutes | 60 minutes |
-|[chatMessage][] (preview) | Less than 10 seconds | 1 minute |
+|[chatMessage][] | Less than 10 seconds | 1 minute |
 |[contact][] | Unknown | Unknown |
 |[driveItem][] | Less than 1 minute | 5 minutes |
 |[event][] | Unknown | Unknown |
