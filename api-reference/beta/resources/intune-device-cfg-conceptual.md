@@ -79,6 +79,7 @@ The following Graph resources are available to manage settings and features on d
 - [Android keyguard feature](intune-deviceconfig-androidkeyguardfeature.md)
 - [Android OMA cp configuration](intune-deviceconfig-androidomacpconfiguration.md)
 - [Android PKCS certificate profile](intune-deviceconfig-androidpkcscertificateprofile.md)
+- [Android required password complexity](intune-deviceconfig-androidrequiredpasswordcomplexity.md)
 - [Android required password type](intune-deviceconfig-androidrequiredpasswordtype.md)
 - [Android SCEP certificate profile](intune-deviceconfig-androidscepcertificateprofile.md)
 - [Android trusted root certificate](intune-deviceconfig-androidtrustedrootcertificate.md)
@@ -381,6 +382,7 @@ The following Graph resources are available to manage settings and features on d
 - [macOS redirect single sign on extension](intune-deviceconfig-macosredirectsinglesignonextension.md)
 - [macOS SCEP certificate profile](intune-deviceconfig-macosscepcertificateprofile.md)
 - [macOS single sign on extension](intune-deviceconfig-macossinglesignonextension.md)
+- [macOS software update delay policy](intune-deviceconfig-macossoftwareupdatedelaypolicy.md)
 - [macOS system extension](intune-deviceconfig-macossystemextension.md)
 - [macOS system extension type](intune-deviceconfig-macossystemextensiontype.md)
 - [macOS system extension type mapping](intune-deviceconfig-macossystemextensiontypemapping.md)
@@ -605,3 +607,5 @@ The following Graph resources are available to manage settings and features on d
 - [Windows Wi-Fi configuration](intune-deviceconfig-windowswificonfiguration.md)
 - [Windows Wi-Fi enterprise e a p configuration](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
 - [Wired network interface](intune-deviceconfig-wirednetworkinterface.md)
+
+
