@@ -35,7 +35,8 @@ Represents a policy that can control Azure Active Directory authorization settin
 |allowedToUseSSPR|Boolean| Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant. | 
 |allowedToSignUpEmailBasedSubscriptions|Boolean| Indicates whether users can sign up for email based subscriptions. | 
 |allowEmailVerifiedUsersToJoinOrganization|Boolean| Indicates whether a user can join the tenant by email validation. | 
-
+|allowInvitesFrom|String|Indicates who can invite external users to the organization. Possible values are:<br><li>
+`none` - Prevent everyone, including admins, from inviting external users. Default setting for US Government.</li><li>`adminsAndGuestInviters` - Allow members of Global Administrators, User Administrators, and Guest Inviter roles to invite external users.</li><li>`adminsGuestInvitersAndAllMembers` - Allow the above admin roles and all other User role members to invite external users.</li><li>`everyone` - Allow everyone in the organization, including guest users, to invite external users. Default setting for all cloud environments except US Government.</li><li>`unknownFutureValue` - placeholder for evolvable enums.</li>|
 
 ## Relationships
 None.
@@ -65,7 +66,8 @@ The following is a JSON representation of the resource.
   "defaultUserRolePermissions": {"@odata.type": "microsoft.graph.defaultUserRolePermissions"},
   "allowedToUseSSPR": true,
   "allowedToSignUpEmailBasedSubscriptions": true,
-  "allowEmailVerifiedUsersToJoinOrganization": true
+  "allowEmailVerifiedUsersToJoinOrganization": true,
+  "allowInvitesFrom": "[String]"
 }
 ```
 
