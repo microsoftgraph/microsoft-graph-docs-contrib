@@ -1,6 +1,6 @@
 ---
 title: "Get conversationMember"
-description: "Retrieve member of a chat or channel."
+description: "Retrieve member of chat or channel."
 author: "laujan"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
