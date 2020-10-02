@@ -220,6 +220,7 @@ Content-Type: application/json
     ]
 }
 ```
+---
 
 #### Response
 <!-- {
@@ -261,7 +262,7 @@ Content-Type: application/json
   "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
 }
 ```
-
+---
 #### Response
 <!-- {
   "blockType": "response",
@@ -323,7 +324,7 @@ Content-Type: application/json
     ]
 }
 ```
-
+---
 #### Response
 <!-- {
   "blockType": "response",
@@ -363,7 +364,7 @@ Content-Type: application/json
   "description": "My Class Team’s Description"
 }
 ```
-
+---
 
 #### Response
 <!-- {
@@ -427,7 +428,7 @@ Content-Type: application/json
     ]
 }
 ```
-
+---
 #### Response
 <!-- {
   "blockType": "response",
