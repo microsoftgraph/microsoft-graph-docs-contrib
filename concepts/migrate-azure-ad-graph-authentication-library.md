@@ -37,7 +37,7 @@ If your app currently uses ADAL, use a two-stage migration approach:
 
 MSAL provides multiple benefits over ADAL, including incremental consent, richer single sign-on experiences, support for personal Microsoft accounts, use of standards-based protocols and so on.  
 
-When you switch your app over to MSAL, you'll need to make a few changes, including setting the **scopes** parameter in the token acquistion request:
+When you switch your app over to MSAL, you'll need to make a few changes, including setting the **scopes** parameter in the token acquisition request:
 
 ``` csharp
 var scopes = new string[] { "https://graph.microsoft.com/.default" };
