@@ -128,19 +128,19 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 Use the `$filter` query parameter to retrieve just a subset of a collection. The `$filter` query parameter can also be used to retrieve relationships like members, memberOf, transitiveMembers, and transitiveMemberOf. For example, get all the security groups I'm a member of.
 
-The following example can be used to find users whose display name starts with the letter 'J', use `startswith`.
+The following example can be used to find users whose display name starts with the letter 'J', use `startsWith`.
 
 ```http
-GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
+GET https://graph.microsoft.com/v1.0/users?$filter=startsWith(displayName,'J')
 ```
 
 [Try in Graph Explorer][filter-example]
 
-Support for `$filter` operators varies across Microsoft Graph APIs. The following logical operators are generally supported: 
+Support for `$filter` operators varies across Microsoft Graph APIs. The following logical operators are generally supported:
 
 - equals `eq` / not equals `ne`
 - less than `lt` / greater than `gt`
-- less or equals than `le` / greater or equals than `ge`
+- less than or equal to `le` / greater than or equal to `ge`
 - and `and` / or `or`
 - in `in`
 - Negation `not`
@@ -149,7 +149,7 @@ Support for `$filter` operators varies across Microsoft Graph APIs. The followin
 - Starts With `startsWith`
 - Ends With `endsWith`
 
-> **Note:** support for these operators varies by entity. Please read the specific entity documentation for details.
+> **Note:** as the support for these operators varies by entity, please read the specific entity documentation for details.  
 > The `contains` string operator is currently not supported on any Microsoft Graph resources.
 
 For some usage examples, see the following table. For more details about `$filter` syntax, see the [OData protocol][odata-filter].  
