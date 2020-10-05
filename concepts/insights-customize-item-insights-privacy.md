@@ -48,7 +48,7 @@ Alternatively, you can change the default and disable item insights for a specif
 >```powershell
 >Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -DisabledForGroup 28f9ceac-39aa-4829-9a67-b8f1db11eaa1 -AdditionalProperties @{}
 >```
->or call Update-MgOrganizationSettingItemInsight like this:
+>Or use the `Update-MgOrganizationSettingItemInsight` cmdlet like the following
 >```powershell
 >Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -BodyParameter @{DisabledForGroup = "85f741b4-e924-41a8-abf8-d61a7b950bb5"; IsEnabledInOrganization = $false}
 >```
