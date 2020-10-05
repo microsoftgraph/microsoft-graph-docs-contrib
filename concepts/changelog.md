@@ -17,7 +17,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | v1.0 | Methods table **[conversationMember](conversationmember.md) resource type** with following methods [List members](../api/conversationmember-list.md), [Get member](../api/conversationmember-get.md), [Add member](../api/conversationmember-add.md), [Update member](../api/conversationmember-update.md) and, [Delete member](../api/conversationmember-delete.md)|
+| Addition | v1.0 | Methods table **[conversationMember](conversationmember.md)** and **[aadUserConversationMember](aaduserconversationmember.md) resource type** with following methods [List members](../api/conversationmember-list.md), [Get member](../api/conversationmember-get.md), [Add member](../api/conversationmember-add.md), [Update member](../api/conversationmember-update.md), and [Delete member](../api/conversationmember-delete.md)|
 
 ## September 2020
 
