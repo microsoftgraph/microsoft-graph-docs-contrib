@@ -24,26 +24,27 @@ These settings provide flexibility for administrators to use Azure AD tools and 
 Keep in mind that the _global administrator role_ is required to read or update these settings. 
 
 ### How to configure item insights setting via PowerShell?
-Confirm the following additional prerequisites. Then you can use the Microsoft Graph PowerShell module to set item insights for entire organization or for specific group.
+Confirm the following additional prerequisites. Then you can use the [Microsoft Graph PowerShell SDK](/graph/powershell/installation) to set item insights for entire organization or for specific group.
 
 #### Additional prerequisites
-* **Install the required module** - Install the [required module version 0.9.0 and higher](https://www.powershellgallery.com/packages/Microsoft.Graph/0.9.1)
-* **.NET Framework** - You must have [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or the latest available version installed.
+* **Install the prerequisite module** - Install the [prerequisite module version 0.9.0 and higher](https://www.powershellgallery.com/packages/Microsoft.Graph)
+* **.NET Framework** - You must have [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or a later version installed.
 
 #### Examples of method calls
-To get item insights configuration for an organization, use Microsoft Graph PowerShell module and the following command line, where you replace "$OrgID" with your applicable ID organization:
+To get item insights configuration for an organization, use the Microsoft Graph PowerShell module and the following command, where you replace `$OrgID` with your applicable ID organization:
 ```powershell
    Get-MgOrganizationSettingItemInsight -OrganizationId $OrgID
    ```
-To update item insights configuration for entire organization, use Microsoft Graph PowerShell module and the following command line, where you replace "$OrgID" with your applicable ID organization and specify the required boolean value:
+
+By default, item insights are enabled for the entire organization. You can use the Microsoft Graph PowerShell module  to change that and disable item insights for everyone in the organization. Use the following command, where you replace `$OrgID` with your organization ID and specify `-IsEnabledInOrganization` as `false` :
 ```powershell
    Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -IsEnabledInOrganization:$false
    ```
-To update item insights configuration for Azure AD group, use Microsoft Graph PowerShell module and the following command line, where you replace "$OrgID" with your applicable ID organization, "$GroupId" with your Azure AD group ID:
+Alternatively, you can change the default and disable item insights for a specific Azure AD group. Use the following command, where you replace `$OrgID` with your organization ID, and `$GroupID` with the Azure AD group ID:
 ```powershell
    Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -DisabledForGroup $GroupId
    ```
->**Note:** If you use Microsoft Graph module version 0.9.0 and lower you need to add -AdditionalProperties @{} at the end of request line of update methods.
+>**Note:** If you use the Microsoft Graph PowerShell module version 0.9.0 and lower, you need to add `-AdditionalProperties @{}` at the end of command.
 >```powershell
 >Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -DisabledForGroup 28f9ceac-39aa-4829-9a67-b8f1db11eaa1 -AdditionalProperties @{}
 >```
