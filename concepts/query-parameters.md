@@ -146,10 +146,11 @@ Support for `$filter` operators varies across Microsoft Graph APIs. The followin
 - Negation `not`
 - lambda operator any `any`
 - lambda operator all `all`
-- Starts With `startsWith`
-- Ends With `endsWith`
+- Starts with `startsWith`
+- Ends with `endsWith`
 
-> **Note:** as the support for these operators varies by entity, please read the specific entity documentation for details.  
+> **Note:** Support for these operators varies by entity. See the specific entity documentation for details. 
+>
 > The `contains` string operator is currently not supported on any Microsoft Graph resources.
 
 For some usage examples, see the following table. For more details about `$filter` syntax, see the [OData protocol][odata-filter].  
