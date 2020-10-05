@@ -105,7 +105,7 @@ Content-length: 254
          "isOwner":true,
          "isShared":false,
          "wellknownListName":"none",
-         "id":"AQMkADMwNTcyZjQzLTdkMGItNDdjMy04ZTYwLTJhYmUzNGI5ZD
+         "id":"AQMkADMwNTcyZjQzLTdkMGItNDdjMy04ZTYwLTJhYmUzNGI5ZD"
     }
   ]
 }

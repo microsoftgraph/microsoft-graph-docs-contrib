@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /teams/{teamsId}/members
+POST /teams/{teamsId}/channels/{channelId}/members
 ```
 
 ## Request headers
@@ -44,7 +45,7 @@ In the request body, supply a JSON representation of the [conversationMember](..
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [conversationMember](../resources/conversationmember.md) object in the response body. For best results, stagger calls with 2 seconds of buffer.
 
 ## Examples
 
