@@ -11,14 +11,14 @@ author: "jesakowi"
 
 Namespace: microsoft.graph
 
-Represents the verified publisher of the [application](application.md). For more information, see [Publisher Verification Overview](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview). Verified publishers are set using [Set Verified Publisher](../api/application-setverifiedpublisher.md) and can only be removed using [Unset Verified Publisher](../api/application-unsetverifiedpublisher.md).
+Represents the verified publisher of the [application](application.md). For more information, see [Publisher verification](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview). Verified publishers are set using [setVerifiedPublisher](../api/application-setverifiedpublisher.md) and can only be removed using [unsetVerifiedPublisher](../api/application-unsetverifiedpublisher.md).
 
 ## Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 |displayName|String|The verified publisher name from the app publisher's Partner Center account.|
-|verifiedPublisherId|String| The id of the verified publisher from the app publisher's Partner Center account. |
+|verifiedPublisherId|String| The ID of the verified publisher from the app publisher's Partner Center account. |
 |addedDateTime|DateTimeOffSet| The timestamp when the verified publisher was first added or most recently updated. |
 
 
