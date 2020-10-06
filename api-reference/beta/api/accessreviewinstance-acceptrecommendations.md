@@ -1,5 +1,5 @@
 ---
-title: "Accept recommendations for an accessReviewInstance"
+title: "accessReviewInstance: acceptRecommendations"
 description: "In the Azure AD access reviews feature, allow calling user to accept recommendations on all NotReviewed decisions on an `accessReviewInstance` that they are the reviewer on. "
 localization_priority: Normal
 author: "isabelleatmsft"
@@ -84,5 +84,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
 
