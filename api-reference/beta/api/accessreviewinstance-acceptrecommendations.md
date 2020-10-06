@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Accept recommendations
+# accessReviewInstance: acceptRecommendations
 
 Namespace: microsoft.graph
 
