@@ -72,6 +72,7 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -117,7 +118,6 @@ Content-length: 160
     "createdDateTime": "2019-02-04T19:58:15.511Z",
     "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
     "lastEditedDateTime": null,
-    "deleted": false,
     "subject": null,
     "summary": null,
     "importance": "normal",
