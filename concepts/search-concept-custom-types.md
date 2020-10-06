@@ -26,7 +26,7 @@ TODOSEARCHAPI - Bug 1653398
 
 - The **entityTypes** property as `externalItem`.
 
-- The **fields** property to include the fields in the external item to retrieve. Note that if you do not include any **fields** in the request, the response will contain all the fields marked as *retrievable* in the Graph Connectors search schema for that particular connection.
+- The **fields** property to include the fields in the external item to retrieve. Note that if you do not include any **fields** in the request, the response will contain all the fields marked as *retrievable* in the data schema specified for the specified connections in the **contentSources** property.
 
 ## Example
 
