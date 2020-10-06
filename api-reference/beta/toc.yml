@@ -12069,8 +12069,6 @@ items:
           href: api/team-clone.md
         - name: List your teams
           href: api/user-list-joinedteams.md
-        - name: List all teams
-          href: /graph/teams-list-all-teams?context=graph/api/beta
         - name: Get primary channel
           href: api/team-get-primarychannel.md
         - name: Get team photo
