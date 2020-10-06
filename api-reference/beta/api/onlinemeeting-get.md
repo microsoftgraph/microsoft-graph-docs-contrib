@@ -169,12 +169,11 @@ Content-Length: 1574
 
 ### Example 2: Retrieve an online meeting by JoinWebUrl
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-onlineMeeting"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings?$filter=JoinWebUrl%20eq%20'https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522dc17674c-81d9-4adb-bfb2-8f6a442e4622%2522%257d'
 ```
 
