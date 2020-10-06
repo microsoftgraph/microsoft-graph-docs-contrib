@@ -17,7 +17,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | v1.0 | Methods table **[conversationMember](/graph/api/resources/conversationmember)** and **[aadUserConversationMember](/graph/api/resources/aaduserconversationmember) resource type** with following methods [List members](..graph//api/conversationmember-list), [Get member](..graph//api/conversationmember-get), [Add member](..graph//api/conversationmember-add), [Update member](..graph//api/conversationmember-update), and [Delete member](..graph//api/conversationmember-delete)|
+| Addition | v1.0 | Methods table **[conversationMember](/graph/api/resources/conversationmember)** and **[aadUserConversationMember](/graph/api/resources/aaduserconversationmember) resource type** with following methods [List members](..graph/api/conversationmember-list), [Get member](..graph/api/conversationmember-get), [Add member](..graph/api/conversationmember-add), [Update member](..graph/api/conversationmember-update), and [Delete member](..graph/api/conversationmember-delete)|
 
 ## September 2020
 
