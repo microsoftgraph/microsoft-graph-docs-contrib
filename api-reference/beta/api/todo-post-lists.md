@@ -67,7 +67,7 @@ Content-Type: application/json
 Content-length: 60
 
 {
-  "displayName": "Travel items",
+  "displayName": "Travel items"
 }
 ```
 # [JavaScript](#tab/javascript)
@@ -107,3 +107,5 @@ Content-Type: application/json
   "wellknownListName": "none"
 }
 ```
+
+

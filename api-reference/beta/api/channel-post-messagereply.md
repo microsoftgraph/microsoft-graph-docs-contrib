@@ -1,6 +1,6 @@
 ---
 title: "Reply to a message in a channel"
-description: "Reply to an existing message in a channel."
+description: "Reply to existing message in a channel."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -17,7 +17,7 @@ Create a new reply to a [chatMessage](../resources/chatmessage.md) in a specifie
 
 > **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
 
-> **Note**: It is a violation of the [terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
+> **Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -103,7 +103,8 @@ Content-length: 160
     "etag": "id-value",
     "messageType": "message",
     "createdDateTime": "2019-02-04T19:58:15.511Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deleted": false,
     "subject": null,
     "summary": null,

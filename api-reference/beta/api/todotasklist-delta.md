@@ -105,7 +105,7 @@ Content-length: 254
          "isOwner":true,
          "isShared":false,
          "wellknownListName":"none",
-         "id":"AQMkADMwNTcyZjQzLTdkMGItNDdjMy04ZTYwLTJhYmUzNGI5ZD
+         "id":"AQMkADMwNTcyZjQzLTdkMGItNDdjMy04ZTYwLTJhYmUzNGI5ZD"
     }
   ]
 }
@@ -114,3 +114,4 @@ Content-length: 254
 ## See also
 
 - [Microsoft Graph delta query](/graph/delta-query-overview)
+
