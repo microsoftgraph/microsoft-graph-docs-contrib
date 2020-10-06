@@ -104,8 +104,9 @@ Content-type: application/json
 Content-length: 337
 
 {
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/me/todo/lists/gDbc8U7HGwADDZocJgAAAA==/tasks/delta?$deltatoken=MoVMZ_DzHG4AhT3WE8VioVS1IXZJ-ArqK5fknOjnKFY",
-  "value": [
+   "@odata.deltaLink":"https://graph.microsoft.com/beta/me/todo/lists/gDbc8U7HGwADDZocJgAAAA==/tasks/delta?$deltatoken=MoVMZ_DzHG4AhT3WE8VioVS1IXZJ-ArqK5fknOjnKFY",
+   "value":[
+      {
          "@odata.etag":"W/\"4rfRVIPi9EqXgDbc8U7HGwADLLQ9xQ==\"",
          "importance":"normal",
          "isReminderOn":false,
@@ -118,8 +119,8 @@ Content-length: 337
             "content":"",
             "contentType":"text"
          }
-      },
-  ]
+      }
+   ]
 }
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: "team resource type"
 description: "A team in Microsoft Teams is a collection of channels. "
-author: "laujan"
+author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
@@ -34,7 +34,6 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |[Unarchive team](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
 |[Clone team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
 |[List your teams](../api/user-list-joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
-|[List all teams](/graph/teams-list-all-teams) | [group](group.md) collection | List all groups that have teams. |
 |[Get team photo](../api/team-get-photo.md) | Binary data | Get the photo (picture) for a team. |
 
 ## Properties
@@ -130,7 +129,8 @@ The following is a JSON representation of the resource.
 
 ## See also
 
-- [Creating a group with a team](/graph/teams-create-group-and-team)
 - [Use the Microsoft Graph API to work with Microsoft Teams](teams-api-overview.md)
+- [Creating a group with a team](/graph/teams-create-group-and-team)
+- [List all teams](/graph/teams-list-all-teams)
 
 
