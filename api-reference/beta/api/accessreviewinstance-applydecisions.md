@@ -1,6 +1,6 @@
 ---
-title: "Apply accessReviewInstance decisions"
-description: "In the Azure AD access reviews feature, apply decisions on an accessReviewInstance. "
+accessReviewInstance: applyDecisions
+description: "Apply decisions on an accessReviewInstance. "
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviewsv2-root.md) feature, apply review decisions on an [accessReviewInstance](../resources/accessreviewinstance.md).
+Apply review decisions on an [accessReviewInstance](../resources/accessreviewinstance.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -21,13 +21,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     | AccessReview.ReadWrite.All |
-|Delegated (personal Microsoft account)|None.|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application                            | AccessReview.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /identityGovernance/accessReviews/definitions/{definitionId}/instances/{instanceId}/applyDecisions
+POST /identityGovernance/accessReviews/definitions/{definition-id}/instances/{instance-id}/applyDecisions
 ```
 
 ## Request headers

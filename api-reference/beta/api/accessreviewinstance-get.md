@@ -1,6 +1,6 @@
 ---
 title: "Get accessReviewInstance"
-description: "In the Azure AD access reviews feature, retrieve an accessReviewInstance object."
+description: "Retrieve an accessReviewInstance object."
 localization_priority: Normal
 author: "isabelleatmsft"
 ms.prod: "microsoft-identity-platform"
@@ -13,24 +13,24 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviewsv2-root.md) feature, retrieve an [accessReviewInstance](../resources/accessreviewinstance.md) object by ID of **accessReviewInstance** and parent **accessReviewScheduleDefinition**. This returns all properties of the instance except for the associated **accessReviewInstanceDecisionItem**s.
+Retrieve an [accessReviewInstance](../resources/accessreviewinstance.md) object using the identifier of an accessReviewInstance and its parent accessReviewScheduleDefinition. This returns all properties of the instance except for the associated accessReviewInstanceDecisionItems.
 
-To retrieve the decisions on the instance, use the [list accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem-list.md) API.
+To retrieve the decisions on the instance, use [List accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem-list.md).
 
 ## Permissions
-One of the following permissions is required to call this API. Delegated permissions to personal Microsoft accounts are not supported. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.Read.All or AccessReview.ReadWrite.All  |
-|Application                            | AccessReview.Read.All or AccessReview.ReadWrite.All |
+|Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
 In order to call this API, the signed in user must also be in a directory role that permits them to read an access review, or the user can be assigned as a reviewer on the access review.  For more details, see the role and permission requirements for [access reviews](../resources/accessreviewsv2-root.md).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /identityGovernance/accessReviews/definitions/{definitionId}/instances/{instanceId}
+GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{instance-id}
 ```
 ## Request headers
 None.
@@ -41,7 +41,7 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and an [accessReviewInstance](../resources/accessreviewinstance.md) object in the response body.
 
-## Example
+## Examples
 ##### Request
 
 

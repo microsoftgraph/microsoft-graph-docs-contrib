@@ -23,12 +23,12 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)     | AccessReview.ReadWrite.All |
 |Application                            | AccessReview.ReadWrite.All |
 
-The signed in user must also be a reviewer on the `accessReviewInstance`.
+The signed-in user must also be a reviewer on the accessReviewInstance.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/pendingAccessReviewInstances/{instanceID}/acceptRecommendations
+POST /me/pendingAccessReviewInstances/{instance-id}/acceptRecommendations
 ```
 ## Request headers
 None.
@@ -39,7 +39,7 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.
 
-## Example
+## Examples
 ##### Request
 
 # [HTTP](#tab/http)
