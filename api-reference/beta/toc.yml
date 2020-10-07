@@ -469,6 +469,16 @@ items:
       - name: Group
         href: resources/group.md
         items:
+        - name: List groups
+          href: api/group-list.md
+        - name: Create group
+          href: api/group-post-groups.md
+        - name: Get group
+          href: api/group-get.md
+        - name: Update group
+          href: api/group-update.md
+        - name: Delete group
+          href: api/group-delete.md
         - name: Add favorite
           href: api/group-addfavorite.md
         - name: Add member
@@ -479,10 +489,6 @@ items:
           href: api/group-assignlicense.md
         - name: Check member groups
           href: api/group-checkmembergroups.md
-        - name: Create group
-          href: api/group-post-groups.md
-        - name: Delete group
-          href: api/group-delete.md
         - name: Evaluate dynamic membership
           href: api/group-evaluatedynamicmembership.md
         - name: Get deleted group
@@ -491,8 +497,6 @@ items:
           href: api/group-delta.md
         - name: Get endpoint
           href: api/endpoint-get.md
-        - name: Get group
-          href: api/group-get.md
         - name: Get member groups
           href: api/group-getmembergroups.md
         - name: Get member objects
@@ -500,9 +504,7 @@ items:
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List endpoints
-          href: api/group-list-endpoints.md
-        - name: List groups
-          href: api/group-list.md
+          href: api/group-list-endpoints.md        
         - name: List joined teams
           href: api/user-list-joinedteams.md
         - name: List lifecycle policies
@@ -534,9 +536,7 @@ items:
         - name: Subscribe by mail
           href: api/group-subscribebymail.md
         - name: Unsubscribe by mail
-          href: api/group-unsubscribebymail.md
-        - name: Update group
-          href: api/group-update.md
+          href: api/group-unsubscribebymail.md       
         - name: Validate properties
           href: api/group-validateproperties.md
       - name: App role assignments
