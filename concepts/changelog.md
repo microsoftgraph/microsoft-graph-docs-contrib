@@ -10,6 +10,7 @@ localization_priority: Priority
 This changelog covers specific API-level changes in Microsoft Graph v1.0 and beta.
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
+
 ## October 2020
 
 ### Identity and access | Identity and sign-in
@@ -118,9 +119,11 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Introduced the [administrative units API](/graph/api/resources/administrativeunit?view=graph-rest-1.0). Administrative units allow organizations to subdivide their Azure Active Directory, and delegate administrative duties to those subdivisions. Subdivisions can represent regions, departments, cost centers, and so on. This can now be managed through the Microsoft Graph API.|
 
 ### Identity and access | Identity and sign-in
+
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta|Added the [continuousAccessEvaluationPolicy](/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta) resource type.|
+|Addition|beta|Added the **permissionGrantPolicyIdsAssignedToDefaultUserRole** property to the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource.|
 
 ### Reports
 
