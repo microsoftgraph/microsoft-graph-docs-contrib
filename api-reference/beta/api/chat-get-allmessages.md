@@ -45,14 +45,11 @@ GET https://graph.microsoft.com/beta/users/{id}/chats/allMessages?$top=50&$filte
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-
-## Request body
-
+| Authorization  | Bearer {token}. Required. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of[chatmessages](../resources/chatmessage.md) in the response body.
+If successful, this method returns a `200 OK` response code and a list of [chatmessages](../resources/chatmessage.md) in the response body.
 
 ## Example
 ##### Request
