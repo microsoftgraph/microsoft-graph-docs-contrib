@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All |
 
-> **Note**: The application permission _Sites.Manage.All_ will be required if the SharePoint list has content approval settings turned on. Otherwise, Graph won't retrieve those list items that have an approval status other than Approved.
+> **Note**: The application permission Sites.Manage.All is required if the SharePoint list has content approval settings turned on. Otherwise, Microsoft Graph won't retrieve those list items that have an approval status other than approved.
 
 ## HTTP request
 
