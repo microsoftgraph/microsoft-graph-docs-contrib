@@ -55,7 +55,7 @@ In the request body, supply the values for relevant fields that should be update
 |allowedToUseSSPR|Boolean| Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant. | 
 |allowedToSignUpEmailBasedSubscriptions|Boolean| Indicates whether users can sign up for email based subscriptions. | 
 |allowEmailVerifiedUsersToJoinOrganization|Boolean| Indicates whether a user can join the tenant by email validation. |
-| permissionGrantPolicyIdsAssignedToDefaultUserRole | String collection | Indicates if user consent to apps is allowed, and if it is, which app consent policy (permissionGrantPolicy) governs the permission for users to grant consent. Values should be in the format `managePermissionGrantsForSelf.{id}`, where `{id}` is the **id** of a built-in or custom [app consent policy](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-app-consent-policies). An empty list indicates user consent to apps is disabled. |
+| permissionGrantPolicyIdsAssignedToDefaultUserRole | String collection | Indicates if user consent to apps is allowed, and if it is, which [app consent policy](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-app-consent-policies) governs the permission for users to grant consent. Values should be in the format `managePermissionGrantsForSelf.{id}`, where `{id}` is the **id** of a built-in or custom [app consent policy](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-app-consent-policies). An empty list indicates user consent to apps is disabled. |
 
 ## Response
 
@@ -82,6 +82,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 }
 
 ```
+
 #### Response
 
 The following is an example of the response.
@@ -300,8 +301,6 @@ HTTP/1.1 204 No Content
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authZPolicy_disableUserConsent"
@@ -314,8 +313,6 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
     "permissionGrantPolicyIdsAssignedToDefaultUserRole": [ ]
 }
 ```
-
----
 
 #### Response
 
@@ -335,9 +332,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request which allows user consent to apps, subject to the built-in [app consent policy][app consent policy](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-app-consent-policies) `microsoft-user-default-low`, which allows delegated permissions classified "low", for client apps from verified publishers or registered in the same tenant.
-
-# [HTTP](#tab/http)
+The following is an example of the request which allows user consent to apps, subject to the built-in [app consent policy](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-app-consent-policies) `microsoft-user-default-low`, which allows delegated permissions classified "low", for client apps from verified publishers or registered in the same tenant.
 
 <!-- {
   "blockType": "request",
@@ -353,8 +348,6 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
     ]
 }
 ```
-
----
 
 #### Response
 
