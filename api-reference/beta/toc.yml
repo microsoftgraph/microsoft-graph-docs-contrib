@@ -500,7 +500,7 @@ items:
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List endpoints
-          href: api/group-list-endpoint.md
+          href: api/group-list-endpoints.md
         - name: List groups
           href: api/group-list.md
         - name: List joined teams

@@ -461,7 +461,7 @@ items:
         - name: List lifecycle policies
           href: api/group-list-grouplifecyclepolicies.md
         - name: List endpoints
-          href: api/group-list-endpoint.md
+          href: api/group-list-endpoints.md
         - name: List member of
           href: api/group-list-memberof.md
         - name: List transitive member of
