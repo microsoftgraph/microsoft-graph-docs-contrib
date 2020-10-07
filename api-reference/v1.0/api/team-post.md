@@ -123,12 +123,14 @@ Content-Type: application/json
   "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
   "displayName": "My Sample Team",
   "description": "My Sample Team’s Description",
-  "members@odata.bind": [
-            {
-            "@odata.type": "#microsoft.graph.aadUserConversationMember",
-            "roles": ["owner"],
-            "userId": "0040b377-61d8-43db-94f5-81374122dc7e"
-        }
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": [
+        "owner"
+      ],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('0040b377-61d8-43db-94f5-81374122dc7e')"
+    }
   ]
 }
 ```
@@ -289,8 +291,6 @@ A few thing to note about this call:
 #### Request
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_from_group"
@@ -344,8 +344,6 @@ The following is a request that converts an existing group with extended propert
 To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
 #### Request
-
-# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {
@@ -426,8 +424,6 @@ To learn more about supported base template types, see [Get started with Teams t
 #### Request
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_non_standard"
@@ -483,8 +479,6 @@ Base template types can be extended with additional properties, enabling you to 
 To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
 #### Request
-
-# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {
