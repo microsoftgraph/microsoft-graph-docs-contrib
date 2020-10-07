@@ -81,3 +81,5 @@ DELETE https://graph.microsoft.com/beta/user/{userId}/profile/addresses/{id}
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+

@@ -3,7 +3,7 @@ title: "Create userExperienceAnalyticsDevicePerformance"
 description: "Create a new userExperienceAnalyticsDevicePerformance object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -135,6 +135,9 @@ Content-Length: 684
   "averageRestarts": 5.0
 }
 ```
+
+
+
 
 
 

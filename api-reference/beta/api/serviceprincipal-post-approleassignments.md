@@ -11,8 +11,6 @@ author: "sureshja"
 
 Namespace: microsoft.graph
 
-Namespace: microsoft.graph
-
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Assign an app role to a client service principal.
@@ -99,7 +97,7 @@ Content-Length: 110
 ---
 
 
-In this example, `{id}` and `{principalId-value}` would both be the `id` of the assigned client service principal, and `{resoruceId}` would be the `id` of the resource service principal (the API).
+In this example, `{id}` and `{principalId-value}` would both be the `id` of the assigned client service principal, and `{resourceId}` would be the `id` of the resource service principal (the API).
 
 ### Response
 
@@ -142,3 +140,5 @@ Content-length: 253
   ]
 }
 -->
+
+
