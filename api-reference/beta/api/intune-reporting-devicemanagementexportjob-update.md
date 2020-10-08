@@ -3,7 +3,7 @@ title: "Update deviceManagementExportJob"
 description: "Update the properties of a deviceManagementExportJob object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -112,9 +112,6 @@ Content-Length: 453
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
-
-
-
 
 
 

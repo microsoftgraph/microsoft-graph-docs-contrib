@@ -3,7 +3,7 @@ title: "androidDeviceOwnerEnrollmentMode enum type"
 description: "The enrollment mode for an enrollment profile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -23,9 +23,6 @@ The enrollment mode for an enrollment profile.
 |corporateOwnedDedicatedDevice|0|Not yet documented|
 |corporateOwnedFullyManaged|1|Not yet documented|
 |corporateOwnedWorkProfile|2|Not yet documented|
-
-
-
 
 
 

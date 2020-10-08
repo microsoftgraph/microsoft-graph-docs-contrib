@@ -3,7 +3,7 @@ title: "List deviceManagementScriptAssignments"
 description: "List properties and relationships of the deviceManagementScriptAssignment objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/deviceShellScripts/{deviceShellScriptId}/assignments
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments
+GET /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeShellScriptId}/assignments
 ```
 
 ## Request headers
@@ -77,9 +78,6 @@ Content-Length: 437
   ]
 }
 ```
-
-
-
 
 
 

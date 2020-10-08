@@ -3,7 +3,7 @@ title: "Update windows81WifiImportConfiguration"
 description: "Update the properties of a windows81WifiImportConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -160,9 +160,6 @@ Content-Length: 1326
   "payload": "cGF5bG9hZA=="
 }
 ```
-
-
-
 
 
 

@@ -3,7 +3,7 @@ title: "Update iosDeviceFeaturesConfiguration"
 description: "Update the properties of a iosDeviceFeaturesConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -507,9 +507,6 @@ Content-Length: 6888
   }
 }
 ```
-
-
-
 
 
 

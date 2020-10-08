@@ -3,7 +3,7 @@ title: "Get deviceManagementScriptRunSummary"
 description: "Read properties and relationships of the deviceManagementScriptRunSummary object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/deviceShellScripts/{deviceShellScriptId}/runSummary
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSummary
+GET /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeShellScriptId}/runSummary
 ```
 
 ## Optional query parameters
@@ -77,9 +78,6 @@ Content-Length: 259
   }
 }
 ```
-
-
-
 
 
 

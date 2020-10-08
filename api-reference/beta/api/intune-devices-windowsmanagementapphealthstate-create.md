@@ -3,7 +3,7 @@ title: "Create windowsManagementAppHealthState"
 description: "Create a new windowsManagementAppHealthState object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -96,9 +96,6 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
-
-
-
 
 
 

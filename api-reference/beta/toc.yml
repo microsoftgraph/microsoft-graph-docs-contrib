@@ -1757,6 +1757,8 @@ items:
               href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
             - name: createToken action
               href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
+          - name: Android device owner enrollment token type
+            href: resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md
           - name: Android enrollment company code
             href: resources/intune-androidforwork-androidenrollmentcompanycode.md
           - name: Android for Work app
@@ -5223,8 +5225,8 @@ items:
             href: resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md
           - name: macOS apple event receiver
             href: resources/intune-deviceconfig-macosappleeventreceiver.md
-          - name: macOS associated domains key/value pair
-            href: resources/intune-deviceconfig-macosassociateddomainskeyvaluepair.md
+          - name: macOS associated domains item
+            href: resources/intune-deviceconfig-macosassociateddomainsitem.md
           - name: macOS Azure ad single sign on extension
             href: resources/intune-deviceconfig-macosazureadsinglesignonextension.md
           - name: macOS certificate profile base
@@ -5407,8 +5409,68 @@ items:
               href: api/intune-deviceconfig-macosscepcertificateprofile-update.md
           - name: macOS single sign on extension
             href: resources/intune-deviceconfig-macossinglesignonextension.md
+          - name: macOS software update account summary
+            href: resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-list.md
+            - name: Get
+              href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-get.md
+            - name: Create
+              href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-update.md
+          - name: macOS software update behavior
+            href: resources/intune-deviceconfig-macossoftwareupdatebehavior.md
+          - name: macOS software update category
+            href: resources/intune-deviceconfig-macossoftwareupdatecategory.md
+          - name: macOS software update category summary
+            href: resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-list.md
+            - name: Get
+              href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-get.md
+            - name: Create
+              href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-update.md
+          - name: macOS software update configuration
+            href: resources/intune-deviceconfig-macossoftwareupdateconfiguration.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-macossoftwareupdateconfiguration-list.md
+            - name: Get
+              href: api/intune-deviceconfig-macossoftwareupdateconfiguration-get.md
+            - name: Create
+              href: api/intune-deviceconfig-macossoftwareupdateconfiguration-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-macossoftwareupdateconfiguration-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-macossoftwareupdateconfiguration-update.md
           - name: macOS software update delay policy
             href: resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md
+          - name: macOS software update schedule type
+            href: resources/intune-deviceconfig-macossoftwareupdatescheduletype.md
+          - name: macOS software update state
+            href: resources/intune-deviceconfig-macossoftwareupdatestate.md
+          - name: macOS software update state summary
+            href: resources/intune-deviceconfig-macossoftwareupdatestatesummary.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-macossoftwareupdatestatesummary-list.md
+            - name: Get
+              href: api/intune-deviceconfig-macossoftwareupdatestatesummary-get.md
+            - name: Create
+              href: api/intune-deviceconfig-macossoftwareupdatestatesummary-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-macossoftwareupdatestatesummary-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-macossoftwareupdatestatesummary-update.md
           - name: macOS system extension
             href: resources/intune-deviceconfig-macossystemextension.md
           - name: macOS system extension type
@@ -6686,6 +6748,23 @@ items:
               href: api/intune-devices-devicecompliancescriptrunsummary-get.md
             - name: Update
               href: api/intune-devices-devicecompliancescriptrunsummary-update.md
+          - name: Device custom attribute shell script
+            href: resources/intune-devices-devicecustomattributeshellscript.md
+            items:
+            - name: List
+              href: api/intune-devices-devicecustomattributeshellscript-list.md
+            - name: Get
+              href: api/intune-devices-devicecustomattributeshellscript-get.md
+            - name: Create
+              href: api/intune-devices-devicecustomattributeshellscript-create.md
+            - name: Delete
+              href: api/intune-devices-devicecustomattributeshellscript-delete.md
+            - name: Update
+              href: api/intune-devices-devicecustomattributeshellscript-update.md
+            - name: assign action
+              href: api/intune-devices-devicecustomattributeshellscript-assign.md
+          - name: Device custom attribute value type
+            href: resources/intune-devices-devicecustomattributevaluetype.md
           - name: Device enrollment failure reason
             href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
           - name: Device exchange access state summary
@@ -7633,6 +7712,8 @@ items:
               href: api/intune-deviceintent-securitybaselinecategorystatesummary-update.md
           - name: Security baseline compliance state
             href: resources/intune-deviceintent-securitybaselinecompliancestate.md
+          - name: Security baseline contributing policy
+            href: resources/intune-deviceintent-securitybaselinecontributingpolicy.md
           - name: Security baseline device state
             href: resources/intune-deviceintent-securitybaselinedevicestate.md
             items:
@@ -7646,6 +7727,8 @@ items:
               href: api/intune-deviceintent-securitybaselinedevicestate-delete.md
             - name: Update
               href: api/intune-deviceintent-securitybaselinedevicestate-update.md
+          - name: Security baseline policy source type
+            href: resources/intune-deviceintent-securitybaselinepolicysourcetype.md
           - name: Security baseline state summary
             href: resources/intune-deviceintent-securitybaselinestatesummary.md
             items:
@@ -8746,7 +8829,7 @@ items:
               href: api/intune-shared-devicecompliancepolicy-get.md
             - name: assign action
               href: api/intune-shared-devicecompliancepolicy-assign.md
-            - name: refreshDeviceComplianceReportSummarization action
+            - name: |refreshDeviceComplianceReportSummarization action
               href: api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
             - name: hasPayloadLinks action
               href: api/intune-shared-devicecompliancepolicy-haspayloadlinks.md
@@ -8802,6 +8885,8 @@ items:
               href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
+            - name: deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|Create
+              href: api/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
           - name: Device management script
@@ -9073,7 +9158,7 @@ items:
             - name: Delete
               href: api/intune-tem-telecomexpensemanagementpartner-delete.md
             - name: Update
-              href: api/intune-tem-telecomexpensemanagementpartner-update.md
+              href: api/intune-tem-telecomexpensemanagementpartner-update.md  
     - name: Education
       items:
       - name: Overview

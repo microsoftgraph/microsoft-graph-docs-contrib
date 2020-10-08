@@ -3,7 +3,7 @@ title: "mobileAppRelationship resource type"
 description: "Describes a relationship between two mobile apps."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -51,9 +51,6 @@ Here is a JSON representation of the resource.
   "targetType": "String"
 }
 ```
-
-
-
 
 
 

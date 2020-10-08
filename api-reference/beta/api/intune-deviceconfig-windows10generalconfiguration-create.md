@@ -3,7 +3,7 @@ title: "Create windows10GeneralConfiguration"
 description: "Create a new windows10GeneralConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -1080,9 +1080,6 @@ Content-Length: 15181
   "configureTimeZone": "Configure Time Zone value"
 }
 ```
-
-
-
 
 
 
