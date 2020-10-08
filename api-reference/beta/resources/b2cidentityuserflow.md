@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents a user flow within an Azure Active Directory B2C tenant.
 
-To help you set up the most common identity tasks for your applications, Azure Active Directory B2C includes predefined, configurable policies called [user flows](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview). A user flow lets you determine how users interact with your application when they do things like sign in, sign up, edit a profile, or reset a password. You can create many user flows of different types in your tenant and use them in your applications as needed. With user flows, you can control the following capabilities:
+To help you set up the most common identity tasks for your applications, Azure Active Directory B2C includes predefined, configurable policies called [user flows](/azure/active-directory-b2c/user-flow-overview). A user flow lets you determine how users interact with your application when they do things like sign in, sign up, edit a profile, or reset a password. You can create many user flows of different types in your tenant and use them in your applications as needed. With user flows, you can control the following capabilities:
 
 - Account types used for sign-in, such as social accounts like a Facebook or local account
 - Attributes to be collected from the consumer, such as first name, postal code, and shoe size
@@ -68,5 +68,3 @@ The following is a JSON representation of the resource.
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}]
 }
 ```
-
-
