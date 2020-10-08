@@ -53,9 +53,9 @@ If successful, this method returns a `200 OK` response code and a list of [conve
 
 ## Example
 
-##### Request
+### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -65,9 +65,9 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/me/chats/{id}/members
 ```
 
-##### Response
+### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
