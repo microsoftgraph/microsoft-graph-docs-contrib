@@ -9942,43 +9942,51 @@ items:
               href: api/authenticationflowspolicy-update.md
         - name: Authentication methods
           items:
-          - name: Overview
+          - name: B2B Authentication methods
             href: resources/authenticationmethods-overview.md
-          - name: Authentication method
-            href: resources/authenticationmethod.md
+            item:
+            - name: Authentication method
+              href: resources/authenticationmethod.md
+              items:
+              - name: List
+                href: api/authentication-list-methods.md
+              - name: Get
+                href: api/authenticationmethod-get.md
+            - name: Password
+              href: resources/passwordauthenticationmethod.md
+              items:
+              - name: List
+                href: api/authentication-list-passwordmethods.md
+              - name: Get
+                href: api/passwordauthenticationmethod-get.md
+              - name: Reset
+                href: api/passwordauthenticationmethod-resetpassword.md
+              - name: Get operation status
+                href: api/authenticationoperation-get.md
+            - name: Phone
+              href: resources/phoneauthenticationmethod.md
+              items:
+              - name: List
+                href: api/authentication-list-phonemethods.md
+              - name: Get
+                href: api/phoneauthenticationmethod-get.md
+              - name: Update
+                href: api/phoneauthenticationmethod-update.md
+              - name: Delete
+                href: api/phoneauthenticationmethod-delete.md
+              - name: Add
+                href: api/authentication-post-phonemethods.md
+              - name: Enable SMS sign-in
+                href: api/phoneauthenticationmethod-enablesmssignin.md
+              - name: Disable SMS sign-in
+                href: api/phoneauthenticationmethod-disablesmssignin.md
+          - name: B2C Authentication methods
+            href: resources/b2cauthenticationmethodspolicy.md
             items:
-            - name: List
-              href: api/authentication-list-methods.md
             - name: Get
-              href: api/authenticationmethod-get.md
-          - name: Password
-            href: resources/passwordauthenticationmethod.md
-            items:
-            - name: List
-              href: api/authentication-list-passwordmethods.md
-            - name: Get
-              href: api/passwordauthenticationmethod-get.md
-            - name: Reset
-              href: api/passwordauthenticationmethod-resetpassword.md
-            - name: Get operation status
-              href: api/authenticationoperation-get.md
-          - name: Phone
-            href: resources/phoneauthenticationmethod.md
-            items:
-            - name: List
-              href: api/authentication-list-phonemethods.md
-            - name: Get
-              href: api/phoneauthenticationmethod-get.md
+              href: api/b2cauthenticationmethodspolicy-get.md
             - name: Update
-              href: api/phoneauthenticationmethod-update.md
-            - name: Delete
-              href: api/phoneauthenticationmethod-delete.md
-            - name: Add
-              href: api/authentication-post-phonemethods.md
-            - name: Enable SMS sign-in
-              href: api/phoneauthenticationmethod-enablesmssignin.md
-            - name: Disable SMS sign-in
-              href: api/phoneauthenticationmethod-disablesmssignin.md
+              href: api/b2cauthenticationmethodspolicy-update.md
         - name: Certificate-based auth configuration
           href: resources/certificatebasedauthconfiguration.md
           items:
