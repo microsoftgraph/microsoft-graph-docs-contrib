@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/organization/settings/profileCardProperties/{id}
+PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/{id}
 ```
 
 ## Request headers
@@ -60,13 +60,15 @@ If successful, this method returns a `200 OK` response code and an updated [prof
 ### Request
 
 The following example adds a localized label "Kostnads Senter" for the locale "no-NB".
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_profilecardproperty"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/organization/settings/profileCardProperties/CustomAttribute1
+PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/CustomAttribute1
 Content-type: application/json
 
 {
@@ -82,6 +84,20 @@ Content-type: application/json
   ]
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-profilecardproperty-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-profilecardproperty-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-profilecardproperty-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -128,3 +144,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

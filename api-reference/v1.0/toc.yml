@@ -42,6 +42,8 @@ items:
         href: /learn/modules/msgraph-changenotifications-trackchanges
       - name: Missing Outlook notifications (preview)
         href: /graph/webhooks-outlook-authz?context=graph/api/1.0
+      - name: Notifications with resource data
+        href: /graph/webhooks-with-resource-data?context=graph/api/1.0
     - name: Change tracking
       displayname: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
       items:
@@ -122,10 +124,26 @@ items:
         href: /graph/sdks/batch-requests?context=graph/api/1.0
       - name: Upload large files
         href: /graph/sdks/large-file-upload?context=graph/api/1.0
+      - name: Use beta API
+        href: /graph/sdks/use-beta?context=graph/api/1.0
   - name: Use the toolkit
     items:
       - name: Toolkit overview
         href: /graph/toolkit/overview?context=graph/api/1.0
+      - name: Get started
+        items:
+          - name: Overview
+            href: /graph/toolkit/get-started/overview?context=graph/api/1.0
+          - name: Build a web application (JavaScript)
+            href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
+          - name: Build a SharePoint web part
+            href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/1.0
+          - name: Build a Microsoft Teams tab
+            href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/1.0
+          - name: Use the Toolkit with React
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/1.0
+          - name: Use the Toolkit with Angular
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/1.0
       - name: Components
         items:
           - name: Login
@@ -584,18 +602,21 @@ items:
         - name: List children
           href: api/driveitem-list-children.md
       - name: Extended properties
-        href: resources/extended-properties-overview.md
         items:
-        - name: Single-value extended property
-          href: resources/singlevaluelegacyextendedproperty.md
+        - name: Overview
+          href: resources/extended-properties-overview.md
+        - name: Single-value extended properties
           items:
+          - name: Single-value extended property
+            href: resources/singlevaluelegacyextendedproperty.md
           - name: Create single-value property
             href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
           - name: Get single-value property
             href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended property
-          href: resources/multivaluelegacyextendedproperty.md
+        - name: Multi-value extended properties
           items:
+          - name: Multi-value extended property
+            href: resources/multivaluelegacyextendedproperty.md
           - name: Create multi-value property
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
@@ -689,6 +710,26 @@ items:
             href: api/application-post-owners.md
           - name: Remove
             href: api/application-delete-owners.md
+        - name: Policies
+          items:
+          - name: Token issuance policy
+            href: resources/tokenissuancepolicy.md
+            items:
+            - name: Assign
+              href: api/application-post-tokenissuancepolicies.md
+            - name: List
+              href: api/application-list-tokenissuancepolicies.md
+            - name: Remove
+              href: api/application-delete-tokenissuancepolicies.md
+          - name: Token lifetime policy
+            href: resources/tokenlifetimepolicy.md
+            items:
+            - name: Assign
+              href: api/application-post-tokenlifetimepolicies.md
+            - name: List
+              href: api/application-list-tokenlifetimepolicies.md
+            - name: Remove
+              href: api/application-delete-tokenlifetimepolicies.md
       - name: Service principal
         href: resources/serviceprincipal.md
         items:
@@ -702,6 +743,8 @@ items:
           href: api/serviceprincipal-update.md
         - name: Delete
           href: api/serviceprincipal-delete.md
+        - name: Get delta
+          href: api/serviceprincipal-delta.md
         - name: List created objects
           href: api/serviceprincipal-list-createdobjects.md
         - name: List owned objects
@@ -759,30 +802,42 @@ items:
             href: api/serviceprincipal-delete-owners.md
         - name: Policies
           items:
-          - name: Assign claimsMappingPolicy
-            href: api/serviceprincipal-post-claimsmappingpolicies.md
-          - name: List claimsMappingPolicies
-            href: api/serviceprincipal-list-claimsmappingpolicies.md
-          - name: Remove claimsMappingPolicy
-            href: api/serviceprincipal-delete-claimsmappingpolicies.md
-          - name: Assign homeRealmDiscoveryPolicy
-            href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-          - name: List homeRealmDiscoveryPolicies
-            href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
-          - name: Remove homeRealmDiscoveryPolicy
-            href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
-          - name: Assign tokenIssuancePolicy
-            href: api/application-post-tokenissuancepolicies.md
-          - name: List tokenIssuancePolicies
-            href: api/application-list-tokenissuancepolicies.md
-          - name: Remove tokenIssuancePolicy
-            href: api/application-delete-tokenissuancepolicies.md
-          - name: Assign tokenLifetimePolicy
-            href: api/application-post-tokenlifetimepolicies.md
-          - name: List tokenLifetimePolicies
-            href: api/application-list-tokenlifetimepolicies.md
-          - name: Remove tokenLifetimePolicy
-            href: api/application-delete-tokenlifetimepolicies.md
+          - name: Claims mapping policy
+            href: resources/claimsmappingpolicy.md
+            items:
+            - name: Assign
+              href: api/serviceprincipal-post-claimsmappingpolicies.md
+            - name: List
+              href: api/serviceprincipal-list-claimsmappingpolicies.md
+            - name: Remove
+              href: api/serviceprincipal-delete-claimsmappingpolicies.md
+          - name: Home realm discovery policy
+            href: resources/homerealmdiscoverypolicy.md
+            items:
+            - name: Assign
+              href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+            - name: List
+              href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+            - name: Remove
+              href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+          - name: Token issuance policy
+            href: resources/tokenissuancepolicy.md
+            items:
+            - name: Assign
+              href: api/application-post-tokenissuancepolicies.md
+            - name: List
+              href: api/application-list-tokenissuancepolicies.md
+            - name: Remove
+              href: api/application-delete-tokenissuancepolicies.md
+          - name: Token lifetime policy
+            href: resources/tokenlifetimepolicy.md
+            items:
+            - name: Assign
+              href: api/application-post-tokenlifetimepolicies.md
+            - name: List
+              href: api/application-list-tokenlifetimepolicies.md
+            - name: Remove
+              href: api/application-delete-tokenlifetimepolicies.md
     - name: Calendar
       displayname: Outlook calendar
       items:
@@ -936,8 +991,9 @@ items:
         - name: Delete
           href: api/calendarpermission-delete.md
       - name: Categories
-        href: resources/outlookcategory.md
         items:
+        - name: Category
+          href: resources/outlookcategory.md
         - name: List categories
           href: api/outlookuser-list-mastercategories.md
         - name: Create category
@@ -949,36 +1005,39 @@ items:
         - name: Delete category
           href: api/outlookcategory-delete.md
       - name: Extended properties
-        href: resources/extended-properties-overview.md
         items:
-        - name: Single-value extended property
-          href: resources/singlevaluelegacyextendedproperty.md
+        - name: Overview
+          href: resources/extended-properties-overview.md
+        - name: Single-value extended properties
           items:
+          - name: Single-value extended property
+            href: resources/singlevaluelegacyextendedproperty.md
           - name: Create single-value property
             href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
           - name: Get single-value property
             href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended property
-          href: resources/multivaluelegacyextendedproperty.md
+        - name: Multi-value extended properties
           items:
+          - name: Multi-value extended property
+            href: resources/multivaluelegacyextendedproperty.md
           - name: Create multi-value property
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
+      - name: Place
+        items:
         - name: Place
-          items:
-          - name: Place
-            href: resources/place.md
-          - name: Room type
-            href: resources/room.md
-          - name: Room list type
-            href: resources/roomlist.md
-          - name: List places
-            href: api/place-list.md
-          - name: Get place
-            href: api/place-get.md
-          - name: Update place
-            href: api/place-update.md
+          href: resources/place.md
+        - name: Room type
+          href: resources/room.md
+        - name: Room list type
+          href: resources/roomlist.md
+        - name: List places
+          href: api/place-list.md
+        - name: Get place
+          href: api/place-get.md
+        - name: Update place
+          href: api/place-update.md
     - name: Change notifications
       displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
       items:
@@ -1028,15 +1087,19 @@ items:
             href: api/call-playprompt.md
           - name: Record response
             href: api/call-record.md
+          - name: Cancel media processing
+            href: api/call-cancelmediaprocessing.md
           - name: Subscribe to tone
             href: api/call-subscribetotone.md
         - name: Participant
           href: resources/participant.md
           items:
-          - name: Get
-            href: api/participant-get.md
           - name: List
             href: api/call-list-participants.md
+          - name: Get
+            href: api/participant-get.md
+          - name: Delete
+            href: api/participant-delete.md
           - name: Mute participant
             href: api/participant-mute.md
           - name: Invite participants
@@ -1051,17 +1114,6 @@ items:
           href: api/call-updaterecordingstatus.md
         - name: Log teleconference device quality data
           href: api/call-logteleconferencedevicequality.md
-      - name: Online meeting
-        href: resources/onlinemeeting.md
-        items:
-        - name: Create
-          href: api/application-post-onlinemeetings.md
-        - name: Get
-          href: api/onlinemeeting-get.md
-        - name: Delete
-          href: api/onlinemeeting-delete.md
-        - name: Create or get
-          href: api/onlinemeeting-createorget.md
       - name: Call records
         items:
         - name: Overview
@@ -1078,6 +1130,17 @@ items:
             href: resources/callrecords-session.md
           - name: List sessions
             href: api/callrecords-session-list.md
+      - name: Online meeting
+        href: resources/onlinemeeting.md
+        items:
+        - name: Create
+          href: api/application-post-onlinemeetings.md
+        - name: Get
+          href: api/onlinemeeting-get.md
+        - name: Delete
+          href: api/onlinemeeting-delete.md
+        - name: Create or get
+          href: api/onlinemeeting-createorget.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -3493,7 +3556,7 @@ items:
         - name: Update schema extension
           href: api/schemaextension-update.md
         - name: Delete schema extension
-          href: api/schemaextension-delete.md 
+          href: api/schemaextension-delete.md
     - name: Files
       displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
       items:
@@ -3589,6 +3652,35 @@ items:
         href: resources/azure-ad-overview.md
       - name: Directory management
         items:
+        - name: Administrative unit
+          href: resources/administrativeunit.md
+          items:
+          - name: List
+            href: api/administrativeunit-list.md
+          - name: Create
+            href: api/administrativeunit-post-administrativeunits.md
+          - name: Get
+            href: api/administrativeunit-get.md
+          - name: Update
+            href: api/administrativeunit-update.md
+          - name: Delete
+            href: api/administrativeunit-delete.md
+          - name: Add a member
+            href: api/administrativeunit-post-members.md
+          - name: List members
+            href: api/administrativeunit-list-members.md
+          - name: Get a member
+            href: api/administrativeunit-get-members.md
+          - name: Remove a member
+            href: api/administrativeunit-delete-members.md
+          - name: Add a scoped-role administrator
+            href: api/administrativeunit-post-scopedrolemembers.md
+          - name: List scoped-role administrators
+            href: api/administrativeunit-list-scopedrolemembers.md
+          - name: Get a scoped-role administrator
+            href: api/administrativeunit-get-scopedrolemembers.md
+          - name: Remove a scoped-role administrator
+            href: api/administrativeunit-delete-scopedrolemembers.md
         - name: Contracts
           href: resources/contract.md
           items:
@@ -3628,6 +3720,10 @@ items:
             href: api/device-post-registeredowners.md
           - name: Create registered user
             href: api/device-post-registeredusers.md
+          - name: Remove registered owner
+            href: api/device-delete-registeredowners.md
+          - name: Remove registered user
+            href: api/device-delete-registeredusers.md
           - name: List device groups
             href: api/device-list-memberof.md
           - name: List device transitive groups
@@ -3643,6 +3739,8 @@ items:
             href: api/directoryobject-get.md
           - name: Delete directory object
             href: api/directoryobject-delete.md
+          - name: Get available extension properties
+            href: api/directoryobject-getavailableextensionproperties.md
           - name: Get member objects
             href: api/directoryobject-getmemberobjects.md
           - name: Get member groups
@@ -3735,23 +3833,6 @@ items:
               href: api/subscribedsku-get.md
       - name: Identity and sign-in
         items:
-        - name: Audit logs
-          href: resources/azure-ad-auditlog-overview.md
-          items:
-          - name: Directory audit
-            href: resources/directoryaudit.md
-            items:
-            - name: List directory audits
-              href: api/directoryaudit-list.md
-            - name: Get directory audit
-              href: api/directoryaudit-get.md
-          - name: Sign-in
-            href: resources/signin.md
-            items:
-            - name: List sign-ins
-              href: api/signin-list.md
-            - name: Get sign-in
-              href: api/signin-get.md
         - name: Certificate-based auth configuration
           href: resources/certificatebasedauthconfiguration.md
           items:
@@ -3763,6 +3844,62 @@ items:
             href: api/certificatebasedauthconfiguration-get.md
           - name: Delete
             href: api/certificatebasedauthconfiguration-delete.md
+        - name: Conditional access
+          items:
+          - name: Policies
+            items:
+            - name: Conditional access policy
+              href: resources/conditionalaccesspolicy.md
+            - name: List
+              href: api/conditionalaccessroot-list-policies.md
+            - name: Create
+              href: api/conditionalaccessroot-post-policies.md
+            - name: Get
+              href: api/conditionalaccesspolicy-get.md
+            - name: Update
+              href: api/conditionalaccesspolicy-update.md
+            - name: Delete
+              href: api/conditionalaccesspolicy-delete.md
+          - name: Named locations
+            items:
+            - name: Named location
+              items:
+              - name: Named location
+                href: resources/namedlocation.md
+              - name: List
+                href: api/conditionalaccessroot-list-namedlocations.md
+              - name: Get
+                href: api/namedlocation-get.md
+              - name: Delete
+                href: api/namedlocation-delete.md
+            - name: Country named location
+              items:
+              - name: Country named location
+                href: resources/countrynamedlocation.md
+              - name: List
+                href: api/conditionalaccessroot-list-namedlocations.md
+              - name: Create
+                href: api/conditionalaccessroot-post-namedlocations.md
+              - name: Get
+                href: api/countrynamedlocation-get.md
+              - name: Update
+                href: api/countrynamedlocation-update.md
+              - name: Delete
+                href: api/countrynamedlocation-delete.md
+            - name: IP named location
+              items:
+              - name: IP named location
+                href: resources/ipnamedlocation.md
+              - name: List
+                href: api/conditionalaccessroot-list-namedlocations.md
+              - name: Create
+                href: api/conditionalaccessroot-post-namedlocations.md
+              - name: Get
+                href: api/ipnamedlocation-get.md
+              - name: Update
+                href: api/ipnamedlocation-update.md
+              - name: Delete
+                href: api/ipnamedlocation-delete.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -3781,6 +3918,8 @@ items:
             href: api/oauth2permissiongrant-update.md
           - name: Delete
             href: api/oauth2permissiongrant-delete.md
+          - name: Get delta
+            href: api/oauth2permissiongrant-delta.md
         - name: Identity protection
           href: resources/identityprotectionroot.md
           items:
@@ -3819,33 +3958,11 @@ items:
             href: api/identityprovider-update.md
           - name: Delete identity provider
             href: api/identityprovider-delete.md
-        - name: Information protection
-          items:
-          - name: Threat assessment
-            items:
-            - name: Overview
-              href: resources/threatassessment-api-overview.md
-            - name: Threat assessment request
-              href: resources/threatassessmentrequest.md
-            - name: Mail assessment request
-              href: resources/mailassessmentrequest.md
-            - name: Email file assessment request
-              href: resources/emailfileassessmentrequest.md
-            - name: File assessment request
-              href: resources/fileAssessmentRequest.md
-            - name: URL assessment request
-              href: resources/urlassessmentrequest.md
-            - name: List
-              href: api/informationprotection-list-threatassessmentrequests.md
-            - name: Create
-              href: api/informationprotection-post-threatassessmentrequests.md
-            - name: Get
-              href: api/threatassessmentrequest-get.md
         - name: Invitation manager
           href: resources/invitation.md
           items:
           - name: Create invitation
-            href: api/invitation-post.md    
+            href: api/invitation-post.md
         - name: Policy
           href: resources/policy-overview.md
           items:
@@ -3922,6 +4039,13 @@ items:
               href: api/tokenlifetimepolicy-delete.md
             - name: List applied to applications
               href: api/tokenlifetimepolicy-list-appliesto.md
+          - name: Security defaults policy
+            href: resources/identitysecuritydefaultsenforcementpolicy.md
+            items:
+            - name: Get
+              href: api/identitysecuritydefaultsenforcementpolicy-get.md
+            - name: Update
+              href: api/identitysecuritydefaultsenforcementpolicy-update.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
@@ -3988,8 +4112,9 @@ items:
         - name: Delete attachment
           href: api/attachment-delete.md
       - name: Categories
-        href: resources/outlookcategory.md
         items:
+        - name: Category
+          href: resources/outlookcategory.md
         - name: List categories
           href: api/outlookuser-list-mastercategories.md
         - name: Create category
@@ -4071,18 +4196,21 @@ items:
         - name: Delete rule
           href: api/messagerule-delete.md
       - name: Extended properties
-        href: resources/extended-properties-overview.md
         items:
-        - name: Single-value extended property
-          href: resources/singlevaluelegacyextendedproperty.md
+        - name: Overview
+          href: resources/extended-properties-overview.md
+        - name: Single-value extended properties
           items:
+          - name: Single-value extended property
+            href: resources/singlevaluelegacyextendedproperty.md
           - name: Create single-value property
             href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
           - name: Get single-value property
             href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended property
-          href: resources/multivaluelegacyextendedproperty.md
+        - name: Multi-value extended properties
           items:
+          - name: Multi-value extended property
+            href: resources/multivaluelegacyextendedproperty.md
           - name: Create multi-value property
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
@@ -4255,8 +4383,9 @@ items:
         - name: Get contact delta
           href: api/contact-delta.md
       - name: Categories
-        href: resources/outlookcategory.md
         items:
+        - name: Category
+          href: resources/outlookcategory.md
         - name: List categories
           href: api/outlookuser-list-mastercategories.md
         - name: Create category
@@ -4268,18 +4397,21 @@ items:
         - name: Delete category
           href: api/outlookcategory-delete.md
       - name: Extended properties
-        href: resources/extended-properties-overview.md
         items:
-        - name: Single-value extended property
-          href: resources/singlevaluelegacyextendedproperty.md
+        - name: Overview
+          href: resources/extended-properties-overview.md
+        - name: Single-value extended properties
           items:
+          - name: Single-value extended property
+            href: resources/singlevaluelegacyextendedproperty.md
           - name: Create single-value property
             href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
           - name: Get single-value property
             href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended property
-          href: resources/multivaluelegacyextendedproperty.md
+        - name: Multi-value extended properties
           items:
+          - name: Multi-value extended property
+            href: resources/multivaluelegacyextendedproperty.md
           - name: Create multi-value property
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
@@ -4288,6 +4420,23 @@ items:
       items:
       - name: Overview
         href: resources/report.md
+      - name: Azure AD activity
+        href: resources/azure-ad-auditlog-overview.md
+        items:
+        - name: Directory audit
+          href: resources/directoryaudit.md
+          items:
+          - name: List directory audits
+            href: api/directoryaudit-list.md
+          - name: Get directory audit
+            href: api/directoryaudit-get.md
+        - name: Sign-in
+          href: resources/signin.md
+          items:
+          - name: List sign-ins
+            href: api/signin-list.md
+          - name: Get sign-in
+            href: api/signin-get.md
       - name: Microsoft Teams device usage
         href: resources/microsoft-teams-device-usage-reports.md
         items:
@@ -4498,6 +4647,28 @@ items:
           href: api/alert-get.md
         - name: Update alert
           href: api/alert-update.md
+      - name: Information protection
+        items:
+        - name: Threat assessment
+          items:
+          - name: Overview
+            href: resources/threatassessment-api-overview.md
+          - name: Threat assessment request
+            href: resources/threatassessmentrequest.md
+          - name: Mail assessment request
+            href: resources/mailassessmentrequest.md
+          - name: Email file assessment request
+            href: resources/emailfileassessmentrequest.md
+          - name: File assessment request
+            href: resources/fileAssessmentRequest.md
+          - name: URL assessment request
+            href: resources/urlassessmentrequest.md
+          - name: List
+            href: api/informationprotection-list-threatassessmentrequests.md
+          - name: Create
+            href: api/informationprotection-post-threatassessmentrequests.md
+          - name: Get
+            href: api/threatassessmentrequest-get.md
       - name: Secure scores
         href: resources/securescore.md
         items:
@@ -4652,11 +4823,21 @@ items:
         href: resources/team.md
         items:
         - name: Create team
+          href: api/team-post.md
+        - name: Create team from group
           href: api/team-put-teams.md
         - name: Get team
           href: api/team-get.md
         - name: Update team
           href: api/team-update.md
+        - name: Delete team
+          href: api/group-delete.md
+        - name: List members
+          href: api/team-list-members.md
+        - name: Add members
+          href: api/team-post-members.md
+        - name: Remove members
+          href: api/team-delete-members.md
         - name: Archive team
           href: api/team-archive.md
         - name: Unarchive team
@@ -4665,8 +4846,6 @@ items:
           href: api/team-clone.md
         - name: List your teams
           href: api/user-list-joinedteams.md
-        - name: List all teams
-          href: /graph/teams-list-all-teams?context=graph/api/1.0
         - name: Get primary channel
           href: api/team-get-primarychannel.md
       - name: Group (team)
@@ -4738,6 +4917,8 @@ items:
           href: api/channel-post-messages.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
+        - name: Update message
+          href: api/chatmessage-update.md  
       - name: App catalog
         items:
         - name: App in catalog
@@ -4748,7 +4929,7 @@ items:
           href: api/teamsapp-list.md
         - name: Update app in catalog
           href: api/teamsapp-update.md
-        - name: Remove app from catalog
+        - name: Delete app from catalog
           href: api/teamsapp-delete.md
       - name: App
         items:

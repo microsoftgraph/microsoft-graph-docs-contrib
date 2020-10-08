@@ -3,7 +3,7 @@ title: "List windowsManagedDevices"
 description: "List properties and relationships of the windowsManagedDevice objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8628
+Content-Length: 8844
 
 {
   "value": [
@@ -88,6 +88,9 @@ Content-Length: 8628
         "operatingSystemLanguage": "Operating System Language value",
         "isSupervised": true,
         "isEncrypted": true,
+        "batterySerialNumber": "Battery Serial Number value",
+        "batteryHealthPercentage": 7,
+        "batteryChargeCycles": 3,
         "isSharedDevice": true,
         "sharedDeviceCachedUsers": [
           {
@@ -246,11 +249,16 @@ Content-Length: 8628
       "processorArchitecture": "x86",
       "specificationVersion": "Specification Version value",
       "joinType": "azureADJoined",
-      "skuFamily": "Sku Family value"
+      "skuFamily": "Sku Family value",
+      "skuNumber": 9,
+      "managementFeatures": "microsoftManagedDesktop"
     }
   ]
 }
 ```
+
+
+
 
 
 

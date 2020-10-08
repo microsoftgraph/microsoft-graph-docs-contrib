@@ -106,6 +106,7 @@ Content-type: application/json
   "groupTypes": [
       "Unified"
   ],
+  "isAssignableToRole": null,
   "mail": "golfassist@contoso.com",
   "mailEnabled": true,
   "mailNickname": "golfassist",
@@ -207,3 +208,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

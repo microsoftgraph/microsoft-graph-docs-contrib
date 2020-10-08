@@ -3,7 +3,7 @@ title: "Create windowsManagedDevice"
 description: "Create a new windowsManagedDevice object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -63,7 +63,7 @@ The following table shows the properties that are required when you create the w
 |lastSyncDateTime|DateTimeOffset|The date and time that the device last completed a successful sync with Intune. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |chassisType|[chassisType](../resources/intune-devices-chassistype.md)|Chassis type of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
 |operatingSystem|String|Operating system of the device. Windows, iOS, etc. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Platform of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `blackberry`, `palm`, `unknown`.|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Platform of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `cloudPC`, `blackberry`, `palm`, `unknown`.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Compliance state of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|whether the device is jail broken or rooted. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|Management channel of the device. Intune, EAS, etc. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `windowsManagementCloudApi`.|
@@ -126,6 +126,8 @@ The following table shows the properties that are required when you create the w
 |specificationVersion|String|Specification version. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|Device join type Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `azureADJoined`, `azureADRegistered`, `hybridAzureADJoined`.|
 |skuFamily|String|Device sku family Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|skuNumber|Int32|Device sku number, see also: https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo. Valid values 0 to 2147483647. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Device management features Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `none`, `microsoftManagedDesktop`.|
 
 
 
@@ -139,7 +141,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices
 Content-type: application/json
-Content-length: 7830
+Content-length: 8026
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -161,6 +163,9 @@ Content-length: 7830
     "operatingSystemLanguage": "Operating System Language value",
     "isSupervised": true,
     "isEncrypted": true,
+    "batterySerialNumber": "Battery Serial Number value",
+    "batteryHealthPercentage": 7,
+    "batteryChargeCycles": 3,
     "isSharedDevice": true,
     "sharedDeviceCachedUsers": [
       {
@@ -319,7 +324,9 @@ Content-length: 7830
   "processorArchitecture": "x86",
   "specificationVersion": "Specification Version value",
   "joinType": "azureADJoined",
-  "skuFamily": "Sku Family value"
+  "skuFamily": "Sku Family value",
+  "skuNumber": 9,
+  "managementFeatures": "microsoftManagedDesktop"
 }
 ```
 
@@ -328,7 +335,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 7879
+Content-Length: 8075
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -351,6 +358,9 @@ Content-Length: 7879
     "operatingSystemLanguage": "Operating System Language value",
     "isSupervised": true,
     "isEncrypted": true,
+    "batterySerialNumber": "Battery Serial Number value",
+    "batteryHealthPercentage": 7,
+    "batteryChargeCycles": 3,
     "isSharedDevice": true,
     "sharedDeviceCachedUsers": [
       {
@@ -509,9 +519,14 @@ Content-Length: 7879
   "processorArchitecture": "x86",
   "specificationVersion": "Specification Version value",
   "joinType": "azureADJoined",
-  "skuFamily": "Sku Family value"
+  "skuFamily": "Sku Family value",
+  "skuNumber": 9,
+  "managementFeatures": "microsoftManagedDesktop"
 }
 ```
+
+
+
 
 
 

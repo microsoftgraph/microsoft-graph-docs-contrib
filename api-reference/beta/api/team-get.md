@@ -88,6 +88,7 @@ Content-type: application/json
 Content-length: 401
 
 {
+  "isMembershipLimitedToOwners": true,
   "isArchived" : false,
   "memberSettings": {
     "allowCreateUpdateChannels": true,
@@ -131,3 +132,5 @@ Content-length: 401
   "suppressions": []
 }
 -->
+
+

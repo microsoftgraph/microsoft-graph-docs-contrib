@@ -28,7 +28,6 @@ var schema = new Schema
 			Type = PropertyType.String,
 			IsQueryable = true,
 			IsRetrievable = true,
-			IsRefinable = true,
 			IsSearchable = false
 		},
 		new Property
@@ -40,7 +39,7 @@ var schema = new Schema
 	}
 };
 
-await graphClient.Connections["contosohr"].Schema
+await graphClient.External.Connections["contosohr"].Schema
 	.Request()
 	.Header("Prefer","respond-async")
 	.AddAsync(schema);

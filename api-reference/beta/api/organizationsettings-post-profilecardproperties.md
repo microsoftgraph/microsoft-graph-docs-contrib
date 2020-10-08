@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [profileCardProperty](../resources/profilecardproperty.md) for an organization. The new property is identified by its **directoryPropertyName** property.
 
-For more information on adding properties to the profile card for an organization, see customize the profile card.
+For more information on adding properties to the profile card for an organization, see [customize the profile card](/graph/add-properties-profilecard).
 
 ## Permissions
 
@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/organization/settings/profileCardProperties
+POST https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties
 ```
 
 ## Request headers
@@ -57,13 +57,15 @@ If successful, this method returns `201 Created` response code and a new [profil
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_profilecardproperty_from_organizationsettings"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/organization/settings/profileCardProperties
+POST https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties
 Content-type: application/json
 
 {
@@ -81,6 +83,20 @@ Content-type: application/json
   ]
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-profilecardproperty-from-organizationsettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-profilecardproperty-from-organizationsettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-profilecardproperty-from-organizationsettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -123,3 +139,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
