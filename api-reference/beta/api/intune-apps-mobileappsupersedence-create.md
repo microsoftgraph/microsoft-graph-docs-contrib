@@ -3,7 +3,7 @@ title: "Create mobileAppSupersedence"
 description: "Create a new mobileAppSupersedence object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -99,6 +99,8 @@ Content-Length: 317
   "supersedingAppCount": 3
 }
 ```
+
+
 
 
 
