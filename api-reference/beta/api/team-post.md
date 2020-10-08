@@ -548,8 +548,6 @@ Content-Length: 0
 ## See also
 
 - [Available templates](/MicrosoftTeams/get-started-with-teams-templates)
-- [Getting started with Retail Teams templates](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
-- [Getting started with Healthcare Teams templates](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
+- [Getting started with Retail Teams templates](/MicrosoftTeams/get-started-with-retail-teams-templates)
+- [Getting started with Healthcare Teams templates](/MicrosoftTeams/healthcare/healthcare-templates)
 - [Creating a group with a team](/graph/teams-create-group-and-team)
-
-
