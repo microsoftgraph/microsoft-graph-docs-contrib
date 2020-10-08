@@ -16,16 +16,16 @@ Namespace: microsoft.graph
 A collection of users or groups enabled to use Microsoft Authenticator Passwordless Phone Sign-in authentication methods policy](../resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration.md) in Azure AD.
 
 > [!NOTE]
-> There are substantial schema changes planned for APIs managing the Microsoft Authenticator app while in Graph beta. Please don't take a production dependency on these APIs because the calling patterns will change!
+> Substantial schema changes are planned for APIs that manage the Microsoft Authenticator app while the APIs are in Mirosoft Graph beta. Because the calling patterns will change, we recommend that you do not take a production dependency on these APIs.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Object Id of an Azure AD user or group.|
-|isRegistrationRequired|Boolean|Determines if the user is enforced to register the authentication method.|
+|id|String|Object ID of an Azure AD user or group.|
+|isRegistrationRequired|Boolean|Determines whether the user is enforced to register the authentication method.|
 |shownContext|authenticatorAppContextType|Possible values are: `location`, `app`.|
 |targetType|authenticationMethodTargetType|Possible values are: `user`, `group`.|
-|useForSignIn|Boolean|Determines if the authentication method can be used to sign in to Azure AD.|
+|useForSignIn|Boolean|Determines whether the authentication method can be used to sign in to Azure AD.|
 
 ## Relationships
 None.
