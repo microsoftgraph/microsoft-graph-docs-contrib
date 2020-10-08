@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var linkedResource = new LinkedResource
 {
-	WebUrl = "http:://microsoft.com",
+	WebUrl = "https://microsoft.com",
 	ApplicationName = "Microsoft",
 	DisplayName = "Microsoft",
 	ExternalId = "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
