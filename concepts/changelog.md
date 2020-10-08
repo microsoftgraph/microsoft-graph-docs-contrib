@@ -19,7 +19,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta|Added the **allowInvitesFrom** property to the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource.|
 |Addition|beta|Added the [b2cAuthenticationMethodsPolicy](/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta) resource type and the following opertations: [Get b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta) and [Update b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta).|
-|Addition|beta|Added the **Policy.ReadWrite.AuthenticationMethod** permission to the [permissions-reference](permissions-reference.md#Policy permissions).|
+|Addition|beta|Added the **Policy.ReadWrite.AuthenticationMethod** permission to the [permissions-reference](permissions-reference.md#policy-permissions).|
 
 ## September 2020
 
