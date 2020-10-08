@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
+GET /policies/b2cAuthenticationMethodsPolicy
 ```
 
 ## Request headers
