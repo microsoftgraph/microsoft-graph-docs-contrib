@@ -46,8 +46,8 @@ In the request body, supply a JSON representation of a [message](../resources/ch
 If successful, this method returns `201 Created` response code with the [message](../resources/chatmessage.md) that was created.
 
 ## Example
-### Request
 
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -90,6 +90,7 @@ Content-type: application/json
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -143,4 +144,3 @@ Content-length: 160
   ]
 }
 -->
-

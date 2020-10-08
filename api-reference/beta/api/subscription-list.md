@@ -56,7 +56,7 @@ GET /subscriptions
 
 ## Optional query parameters
 
-This method does not support the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method does not support the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -155,5 +155,3 @@ Content-length: 586
 > **Note:** the `clientState` property value is not returned for security purposes.  
 
 When a request returns multiple pages of data, the response includes an `@odata.nextLink` property to help you manage the results.  To learn more, see [Paging Microsoft Graph data in your app](/graph/paging).
-
-

@@ -18,7 +18,7 @@ Update the properties of a [printer](../resources/printer.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user's tenant must have an active Universal Print subscription. The signed in user must be a [Printer Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+In addition to the following permissions, the user's tenant must have an active Universal Print subscription. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 Only the app that registered the printer is allowed to update the printer using application permissions.
 
@@ -178,5 +178,3 @@ Content-length: 1313
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
