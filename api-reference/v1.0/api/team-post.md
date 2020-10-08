@@ -1,5 +1,5 @@
 ---
-title: "Create a team"
+title: "Create team"
 description: "Create a new team."
 author: "nkramer"
 localization_priority: Priority
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Group.ReadWrite.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Group.ReadWrite.All, Directory.ReadWrite.All |
+| Application                            | Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All |
 
 ## HTTP request
 
@@ -36,7 +36,7 @@ POST /teams
 | Header        | Value                     |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
-| Content-Type  | application/json          |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -82,6 +82,9 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-team-post-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -102,7 +105,7 @@ Content-Length: 0
 
 ### Example 2: Application permissions
 
-The following is an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `owners` collection.
+The following is an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.
 
 #### Request
 
@@ -120,8 +123,12 @@ Content-Type: application/json
   "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
   "displayName": "My Sample Team",
   "description": "My Sample Team’s Description",
-  "owners@odata.bind": [
-    "https://graph.microsoft.com/v1.0/users('userId')"
+  "members@odata.bind": [
+            {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "roles": ["owner"],
+            "userId": "0040b377-61d8-43db-94f5-81374122dc7e"
+        }
   ]
 }
 ```
@@ -137,8 +144,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-minimal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-team-post-minimal-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 #### Response
 <!-- {
@@ -160,6 +171,7 @@ The following is a request with a full payload. The client can override values i
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "ignored",
   "name": "create_team_post_full_payload"
@@ -248,7 +260,7 @@ Content-Type: application/json
     ]
 }
 ```
-
+---
 
 #### Response
 <!-- {
@@ -271,12 +283,12 @@ The following example shows how you can create a new [team](../resources/team.md
 A few thing to note about this call:
 
 * In order to create a team, the group you're creating it from must have a least one owner.
-* The team that's created will always inherit from the group's display name, visibility, specialization, and owners. Therefore, when making this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **owners@odata.bind** properties will return an error.
+* The team that's created will always inherit from the group's display name, visibility, specialization, and members. Therefore, when making this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **members@odata.bind** properties will return an error.
 * If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. We recommend that you retry the Create team call three times, with a 10 second delay between calls.
-
 
 #### Request
 
+# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {
@@ -284,11 +296,11 @@ A few thing to note about this call:
   "name": "create_team_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams
+POST https://graph.microsoft.com/v1.0/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
   "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
 }
 ```
@@ -304,10 +316,13 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-team-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-team-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-
+---
 #### Response
 <!-- {
   "blockType": "response",
@@ -330,6 +345,7 @@ To learn more about supported base template types and supported properties, see 
 
 #### Request
 
+# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {
@@ -337,11 +353,11 @@ To learn more about supported base template types and supported properties, see 
   "name": "convert_team_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams
+POST https://graph.microsoft.com/v1.0/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
   "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')",
   "channels": [
         {
@@ -370,10 +386,6 @@ Content-Type: application/json
     ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -382,10 +394,13 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/convert-team-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-
+---
 #### Response
 <!-- {
   "blockType": "response",
@@ -410,6 +425,7 @@ To learn more about supported base template types, see [Get started with Teams t
 
 #### Request
 
+# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {
@@ -417,11 +433,11 @@ To learn more about supported base template types, see [Get started with Teams t
   "name": "convert_team_from_non_standard"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams
+POST https://graph.microsoft.com/v1.0/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
+  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')",
   "displayName": "My Class Team",
   "description": "My Class Team’s Description"
 }
@@ -438,8 +454,13 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-non-standard-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/convert-team-from-non-standard-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
+---
 
 #### Response
 <!-- {
@@ -463,6 +484,7 @@ To learn more about supported base template types and supported properties, see 
 
 #### Request
 
+# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {
@@ -470,11 +492,11 @@ To learn more about supported base template types and supported properties, see 
   "name": "convert_team_from_non_standard2"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams
+POST https://graph.microsoft.com/v1.0/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
+  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')",
   "displayName": "My Class Team",
   "description": "My Class Team’s Description",
   "channels": [
@@ -504,10 +526,6 @@ Content-Type: application/json
     ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-non-standard2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-non-standard2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -516,9 +534,13 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-non-standard2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/convert-team-from-non-standard2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
+---
 #### Response
 <!-- {
   "blockType": "response",
@@ -536,7 +558,6 @@ Content-Length: 0
 ## See also
 
 - [Available templates](/MicrosoftTeams/get-started-with-teams-templates)
-- [Getting started with Retail Teams templates](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
-- [Getting started with Healthcare Teams templates](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
+- [Getting started with Retail Teams templates](/MicrosoftTeams/get-started-with-retail-teams-templates)
+- [Getting started with Healthcare Teams templates](/MicrosoftTeams/healthcare/healthcare-templates)
 - [Creating a group with a team](/graph/teams-create-group-and-team)
-

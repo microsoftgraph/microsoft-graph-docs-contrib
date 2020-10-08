@@ -1,7 +1,7 @@
 name: Reference
 items:
   - name: Overview of Microsoft Graph
-    href: /graph/overview
+    href: ./overview.md
   - name: Get auth tokens
     items:
     - name: Overview
@@ -77,7 +77,7 @@ items:
       displayname: Migration, Azure AD Graph
       items:
       - name: Overview
-        href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
+        href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph%252fapi%252fbeta
       - name: Checklist to migrate apps
         href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
       - name: "1: Review differences"
@@ -12069,8 +12069,6 @@ items:
           href: api/team-clone.md
         - name: List your teams
           href: api/user-list-joinedteams.md
-        - name: List all teams
-          href: /graph/teams-list-all-teams?context=graph/api/beta
         - name: Get primary channel
           href: api/team-get-primarychannel.md
         - name: Get team photo

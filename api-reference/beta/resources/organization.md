@@ -43,7 +43,7 @@ This resource lets you add your own data to custom properties using [extensions]
 | directorySizeQuota | [directorySizeQuota](directorySizeQuota.md) | The directory size quota information of an organization. |
 | displayName | String | The display name for the tenant. |
 | id | String | The tenant ID, a unique identifier representing the organization (or tenant). Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |
-| isMultipleDataLocationsForServicesEnabled | Boolean | **true** if organization is Multi-Geo enabled; **false** if organization is not Multi-Geo enabled; **null** (default). Read-only. For more information, see [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). |
+| isMultipleDataLocationsForServicesEnabled | Boolean | **true** if organization is Multi-Geo enabled; **false** if organization is not Multi-Geo enabled; **null** (default). Read-only. For more information, see [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | String collection | Not nullable. |
 | objectType | String | A string that identifies the object type. For tenants the value is always “Company”. |
 | onPremisesLastSyncDateTime | DateTimeOffset | The time and date at which the tenant was last synced with the on-premise directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
@@ -130,5 +130,3 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
-
-

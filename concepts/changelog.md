@@ -17,8 +17,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+<<<<<<< patch-2
 | Addition | v1.0 | Added the **AlternateIdLogin** field to the [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-1.0) policy definition.|
 | Addition | beta | Added the **AlternateIdLogin** field to the [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta) policy definition.|
+=======
+|Addition|beta|Added the **allowInvitesFrom** property to the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource.|
+>>>>>>> master
 
 ## September 2020
 
@@ -120,9 +124,11 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Introduced the [administrative units API](/graph/api/resources/administrativeunit?view=graph-rest-1.0). Administrative units allow organizations to subdivide their Azure Active Directory, and delegate administrative duties to those subdivisions. Subdivisions can represent regions, departments, cost centers, and so on. This can now be managed through the Microsoft Graph API.|
 
 ### Identity and access | Identity and sign-in
+
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta|Added the [continuousAccessEvaluationPolicy](/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta) resource type.|
+|Addition|beta|Added the **permissionGrantPolicyIdsAssignedToDefaultUserRole** property to the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true) resource.|
 
 ### Reports
 
