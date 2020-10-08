@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "f441d7f8-7f77-4e1d-9f40-9c3c88b1bd96",
+          "ApiChange": "Resource",
+          "ChangedApiName": "permissionGrantPolicyIdsAssignedToDefaultUserRole",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissionGrantPolicyIdsAssignedToDefaultUserRole** property to the [authorizationPolicy](https://docs.microsoft.com/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "authorizationPolicy"
+        }
+      ],
+      "Id": "c3354cc0-3a57-4f4a-89d0-d0474224ffb3",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-09-01T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4d0e93d9-7b06-4b52-91d9-9766a15d3615",
           "ApiChange": "Property",
           "ChangedApiName": "settings",
