@@ -1,15 +1,22 @@
 {
     "pathsToIgnore": [
+        "/aspnet",
         "/azure",
         "/dotnet",
+        "/dynamics-nav",
         "/exchange",
         "/graph",
+        "/legal",
+        "/mem",
         "/microsoft-365",
         "/microsoftsearch",
         "/microsoftteams",
         "/office",
         "/office365",
         "/onedrive",
+        "/openspecs",
+        "/powershell",
+        "/previous-versions",
         "/sharepoint",
         "/windows",
         "/windows-hardware"

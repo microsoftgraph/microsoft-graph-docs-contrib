@@ -1,7 +1,7 @@
 name: Reference
 items:
   - name: Overview of Microsoft Graph
-    href: /graph/overview
+    href: ./overview.md
   - name: Get auth tokens
     items:
     - name: Overview
@@ -42,7 +42,7 @@ items:
         href: /learn/modules/msgraph-changenotifications-trackchanges
       - name: Missing Outlook notifications (preview)
         href: /graph/webhooks-outlook-authz?context=graph/api/beta
-      - name: Notifications with resource data (preview)
+      - name: Notifications with resource data
         href: /graph/webhooks-with-resource-data?context=graph/api/beta
       - name: Get notifications delivered different ways (preview)
         href: /graph/change-notifications-delivery?context=graph/api/beta
@@ -77,7 +77,7 @@ items:
       displayname: Migration, Azure AD Graph
       items:
       - name: Overview
-        href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
+        href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph%252fapi%252fbeta
       - name: Checklist to migrate apps
         href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
       - name: "1: Review differences"
@@ -132,6 +132,20 @@ items:
     items:
       - name: Toolkit overview
         href: /graph/toolkit/overview?context=graph/api/beta
+      - name: Get started
+        items:
+          - name: Overview
+            href: /graph/toolkit/get-started/overview?context=graph/api/beta
+          - name: Build a web application (JavaScript)
+            href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/beta
+          - name: Build a SharePoint web part
+            href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/beta
+          - name: Build a Microsoft Teams tab
+            href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/beta
+          - name: Use the Toolkit with React
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/beta
+          - name: Use the Toolkit with Angular
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/beta
       - name: Components
         items:
           - name: Login
@@ -147,7 +161,7 @@ items:
       - name: Providers
         items:
           - name: Using the providers
-            href: /graph//graph/toolkit/providers?context=graph/api/beta
+            href: /graph/toolkit/providers?context=graph/api/beta
           - name: Msal provider
             href: /graph/toolkit/providers/msal?context=graph/api/beta
           - name: SharePoint provider
@@ -1297,10 +1311,12 @@ items:
         - name: Participant
           href: resources/participant.md
           items:
-          - name: Get
-            href: api/participant-get.md
           - name: List
             href: api/call-list-participants.md
+          - name: Get
+            href: api/participant-get.md
+          - name: Delete
+            href: api/participant-delete.md
           - name: Configure mixer
             href: api/participant-configuremixer.md
           - name: Mute participant
@@ -1562,6 +1578,13 @@ items:
             href: api/printconnector-update.md
           - name: Delete
             href: api/printconnector-delete.md
+        - name: Print document
+          href: resources/printdocument.md
+          items:
+          - name: Upload data
+            href: api/printdocument-uploaddata.md
+          - name: Download binary file
+            href: api/printdocument-get-file.md
         - name: Print job
           href: resources/printjob.md
           items:
@@ -2519,6 +2542,23 @@ items:
               href: api/intune-apps-mobileapprelationship-get.md
           - name: Mobile app relationship state
             href: resources/intune-apps-mobileapprelationshipstate.md
+          - name: Mobile app relationship type
+            href: resources/intune-apps-mobileapprelationshiptype.md
+          - name: Mobile app supersedence
+            href: resources/intune-apps-mobileappsupersedence.md
+            items:
+            - name: List
+              href: api/intune-apps-mobileappsupersedence-list.md
+            - name: Get
+              href: api/intune-apps-mobileappsupersedence-get.md
+            - name: Create
+              href: api/intune-apps-mobileappsupersedence-create.md
+            - name: Delete
+              href: api/intune-apps-mobileappsupersedence-delete.md
+            - name: Update
+              href: api/intune-apps-mobileappsupersedence-update.md
+          - name: Mobile app supersedence type
+            href: resources/intune-apps-mobileappsupersedencetype.md
           - name: Mobile contained app
             href: resources/intune-apps-mobilecontainedapp.md
             items:
@@ -3171,6 +3211,8 @@ items:
             href: resources/intune-enrollment-outofboxexperiencesettings.md
           - name: Platform
             href: resources/intune-enrollment-platform.md
+          - name: Suggested enrollment limit
+            href: resources/intune-enrollment-suggestedenrollmentlimit.md
           - name: Windows autopilot deployment profile assignment
             href: resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md
             items:
@@ -3721,6 +3763,8 @@ items:
               href: api/intune-deviceconfig-androidpkcscertificateprofile-delete.md
             - name: Update
               href: api/intune-deviceconfig-androidpkcscertificateprofile-update.md
+          - name: Android required password complexity
+            href: resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md
           - name: Android required password type
             href: resources/intune-deviceconfig-androidrequiredpasswordtype.md
           - name: Android SCEP certificate profile
@@ -5363,6 +5407,8 @@ items:
               href: api/intune-deviceconfig-macosscepcertificateprofile-update.md
           - name: macOS single sign on extension
             href: resources/intune-deviceconfig-macossinglesignonextension.md
+          - name: macOS software update delay policy
+            href: resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md
           - name: macOS system extension
             href: resources/intune-deviceconfig-macossystemextension.md
           - name: macOS system extension type
@@ -7392,6 +7438,8 @@ items:
             href: resources/intune-devices-manageddevicearchitecture.md
           - name: Managed device cleanup settings
             href: resources/intune-devices-manageddevicecleanupsettings.md
+          - name: Managed device management features
+            href: resources/intune-devices-manageddevicemanagementfeatures.md
           - name: Managed device models and manufacturers
             href: resources/intune-devices-manageddevicemodelsandmanufacturers.md
           - name: Managed device overview
@@ -7628,6 +7676,32 @@ items:
             href: resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md
           - name: Update windows device account action parameter
             href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
+          - name: User experience analytics app health app performance by app version
+            href: resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-update.md
+          - name: User experience analytics app health app performance by o s version
+            href: resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-update.md
           - name: User experience analytics app health application performance
             href: resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md
             items:
@@ -7641,6 +7715,58 @@ items:
               href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-delete.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-update.md
+          - name: User experience analytics app health device model performance
+            href: resources/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-update.md
+          - name: User experience analytics app health device performance
+            href: resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-update.md
+          - name: User experience analytics app health device performance details
+            href: resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-update.md
+          - name: User experience analytics app health o s version performance
+            href: resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-update.md
           - name: User experience analytics baseline
             href: resources/intune-devices-userexperienceanalyticsbaseline.md
             items:
@@ -7904,6 +8030,8 @@ items:
             href: resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md
           - name: Android managed app safety net device attestation type
             href: resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md
+          - name: Android managed app safety net evaluation type
+            href: resources/intune-mam-androidmanagedappsafetynetevaluationtype.md
           - name: Android mobile app identifier
             href: resources/intune-mam-androidmobileappidentifier.md
           - name: App management level
@@ -8837,6 +8965,8 @@ items:
             href: resources/intune-shared-runstate.md
           - name: Saved UI state generation options
             href: resources/intune-shared-saveduistategenerationoptions.md
+          - name: Setting source type
+            href: resources/intune-shared-settingsourcetype.md
           - name: Targeted managed app configuration
             href: resources/intune-shared-targetedmanagedappconfiguration.md
             items:
@@ -9551,6 +9681,14 @@ items:
             href: api/administrativeunit-get-scopedrolemembers.md
           - name: Remove a scoped-role administrator
             href: api/administrativeunit-delete-scopedrolemembers.md
+        - name: BitLocker recovery key (preview)
+          items:
+          - name: BitLocker recovery key
+            href: resources/bitlockerrecoverykey.md
+          - name: List
+            href: api/bitlocker-list-recoverykeys.md
+          - name: Get
+            href: api/bitlockerrecoverykey-get.md
         - name: Contracts
           href: resources/contract.md
           items:
@@ -10085,6 +10223,13 @@ items:
               href: api/identitysecuritydefaultsenforcementpolicy-get.md
             - name: Update
               href: api/identitysecuritydefaultsenforcementpolicy-update.md
+          - name: Continuous access evaluation policy
+            href: resources/continuousaccessevaluationpolicy.md
+            items:
+            - name: Get
+              href: api/continuousaccessevaluationpolicy-get.md
+            - name: Update
+              href: api/continuousaccessevaluationpolicy-update.md
         - name: Role management
           href: resources/rolemanagement.md
           items:
@@ -11535,6 +11680,10 @@ items:
         items:
         - name: Overview
           href: resources/search-api-overview.md
+        - name: Search request type
+          href: resources/searchrequest.md
+        - name: Search response type
+          href: resources/searchresponse.md
         - name: Query data
           href: api/search-query.md
       - name: Index
@@ -11581,6 +11730,24 @@ items:
             href: api/externalitem-update.md
           - name: Delete
             href: api/externalitem-delete.md
+        - name: External group
+          items:
+          - name: External group
+            href: resources/externalgroup.md
+          - name: Create
+            href: api/externalconnection-post-groups.md
+          - name: Delete
+            href: api/externalgroup-delete.md
+          - name: Create members
+            href: api/externalgroup-post-members.md
+        - name: External group member
+          items:
+          - name: External group member
+            href: resources/externalgroupmember.md
+          - name: Create
+            href: api/externalgroup-post-members.md
+          - name: Delete
+            href: api/externalgroupmember-delete.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
       items:
@@ -11933,8 +12100,6 @@ items:
           href: api/team-clone.md
         - name: List your teams
           href: api/user-list-joinedteams.md
-        - name: List all teams
-          href: /graph/teams-list-all-teams?context=graph/api/beta
         - name: Get primary channel
           href: api/team-get-primarychannel.md
         - name: Get team photo
@@ -12053,6 +12218,8 @@ items:
           href: api/chatmessage-post.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
+        - name: Update message
+          href: api/chatmessage-update.md
         - name: List hosted content
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content

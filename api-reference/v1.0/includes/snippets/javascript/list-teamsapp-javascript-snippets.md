@@ -11,8 +11,7 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/appCatalogs/teamsApps')
-	.filter('id eq '876df28f-2e78-423b-94a5-44181bd0e225',')
-	.expand('appDefinitions')
+	.filter('id eq 'b1c5353a-7aca-41b3-830f-27d5218fe0e5'')
 	.get();
 
 ```

@@ -11,6 +11,15 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### volumeType values
+
+| Member
+|:--------------
+| operatingSystemVolume
+| fixedDataVolume
+| removableDataVolume
+| unknownFutureValue
+
 ### allowedAudiences values
 
 |Member|
@@ -41,7 +50,7 @@ Namespace: microsoft.graph
 |main|
 |other|
 
-### anniversaryType values 
+### anniversaryType values
 
 |Member|
 |:---|
@@ -49,7 +58,7 @@ Namespace: microsoft.graph
 |wedding|
 |unknownFutureValue|
 
-### skillProficiencyLevel values 
+### skillProficiencyLevel values
 
 |Member|
 |:---|
@@ -60,7 +69,7 @@ Namespace: microsoft.graph
 |expert|
 |unknownFutureValue|
 
-### languageProficiencyLevel values 
+### languageProficiencyLevel values
 
 |Member|
 |:---|
@@ -72,7 +81,7 @@ Namespace: microsoft.graph
 |nativeOrBilingual|
 |unknownFutureValue|
 
-### personRelationship values 
+### personRelationship values
 
 |Member|
 |:---|
@@ -131,6 +140,18 @@ Namespace: microsoft.graph
 |message|
 |driveItem|
 |externalItem|
+|site|
+|list|
+|listItem|
+|drive|
+
+### bucketAggregationSortProperty values
+
+|Member|
+|:---|
+|count|
+|keyAsString|
+|keyAsNumber|
 
 ### contactRelationship values
 
@@ -736,7 +757,7 @@ Possible feedback values on the alert provided by an analyst.
 
 ### registryHive values
 
-Enum for registry hives as defined by [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives).
+Enum for registry hives as defined by [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives).
 
 | Member                  | Value | Description                       |
 | :---------------------- | :---- | :-------------------------------- |
@@ -761,7 +782,7 @@ Operation that changed the registry key name and/or value.
 
 ### registryValueType values
 
-Enum for registry value types as defined by [Registry value types](https://docs.microsoft.com/windows/desktop/sysinfo/registry-value-types).
+Enum for registry value types as defined by [Registry value types](/windows/desktop/sysinfo/registry-value-types).
 
 | Member            | Value | Description                                  |
 | :---------------- | :---- | :------------------------------------------- |
@@ -834,6 +855,15 @@ Possible values for user account types (group membership), per Windows definitio
 | standard      | 0     | Member of Standard Users group. |
 | power         | 1     | Member of Power Users group.    |
 | administrator | 2     | Member of Administrators group. |
+
+### chatMessagePolicyViolationDlpActionType values
+
+| Value |
+|:-----------------|
+| none |
+| NotifySender |
+| BlockAccess |
+| BlockAccessExternal |
 
 ### scopeOperatorMultiValuedComparisonType values
 
@@ -1023,6 +1053,23 @@ Possible values for user account types (group membership), per Windows definitio
 |signin|
 |user|
 |unknownFutureValue|
+
+### chatMessagePolicyViolationUserActionType values
+
+| Member   | Int value |  Description |
+|:---------------|:--------|:----------|
+| None | 0 | Default value. This is the value on a message when the user has not taken an action on the message blocked by DLP. |
+| Override | 1 | Sender has overridden the message verdict and sent the message anyway.|
+| ReportFalsePositive | 2 | Sender has reported the message verdict to the admins as a false positive.|
+
+### chatMessagePolicyViolationVerdictDetailsType values
+
+| Member   | Int value |  Description |
+|:---------------|:--------|:----------|
+| None | 0 |  User is not allowed to override the message. User is not allowed to report a message as false positive if policyTip is not provided. In all other scenarios, user can report a message as false positive.|
+| AllowFalsePositiveOverride | 1 |  User is not allowed to explicitly override the block unless this is combined with `AllowOverrideWithoutJustification` or `AllowOverrideWithJustification` flags. Reporting a false positive on the violation automatically overrides the block and sends the message. |
+| AllowOverrideWithoutJustification | 2 | User is allowed to override the block and send the message. Justification text is not required. Exclusive to `AllowOverrideWithJustification`. |
+| AllowOverrideWithJustification | 4 |  User is allowed to override the block and send the message. Justification text is required. Exclusive to `AllowOverrideWithoutJustification`.|
 
 ### entityType values
 
@@ -1283,15 +1330,15 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue
 
 ### openIdConnectResponseMode values
-| Member                
+| Member
 |:----------------------
 | none
 | form_post
-| query 
-| unknownFutureValue 
+| query
+| unknownFutureValue
 
 ### openIdConnectResponseTypes values
-| Member                
+| Member
 |:----------------------
 | none
 | code
@@ -1322,3 +1369,26 @@ Possible values for user account types (group membership), per Windows definitio
 | configured            | 0     | Connected Organizations with this state value are included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.                                                          |
 | proposed              | 1     | Connected Organizations that are automatically created by the system have this state value. They are not included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.   |
 | unknownFutureValue    | 2     | A sentinel member.                                                                                                                                                                                                 |
+
+### identitySourceType values
+
+|Member|
+|:---|
+|azureActiveDirectory|
+|external|
+
+### externalGroupMemberType values
+
+|Member|
+|:---|
+|user|
+|group|
+
+### connectionState values
+
+|Member|
+|:---|
+|draft|
+|ready|
+|obsolete|
+|limitExceeded|
