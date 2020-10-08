@@ -25,7 +25,7 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |[Create team from group](../api/team-put-teams.md) | [team](team.md) | Create a new team, or add a team to an existing group.|
 |[Get team](../api/team-get.md) | [team](team.md) | Retrieve the properties and relationships of the specified team.|
 |[Update team](../api/team-update.md) | [team](team.md) |Update the properties of the specified team. |
-|[Delete team](../api/group-delete.md?view=graph-rest-1.0&preserve-view=true) | None |Delete the team and its associated group. |
+|[Delete team](../api/group-delete.md) | None |Delete the team and its associated group. |
 |[List members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) collection|Get the conversationMembers from the members navigation property.|
 |[Add members](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Add a new member.|
 |[Remove members](../api/team-delete-members.md)|None|Delete a [conversationMember](../resources/conversationmember.md) object.|
