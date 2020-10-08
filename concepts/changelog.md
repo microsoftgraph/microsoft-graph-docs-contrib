@@ -17,7 +17,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | v1.0 | Methods table **[conversationMember](/graph/api/resources/conversationmember)** and **[aadUserConversationMember](/graph/api/resources/aaduserconversationmember) resource type** with following methods [List members](/graph/api/conversationmember-list), [Get member](/graph/api/conversationmember-get), [Add member](/graph/api/conversationmember-add), [Update member](/graph/api/conversationmember-update), and [Delete member](/graph/api/conversationmember-delete)|
+| Addition | v1.0 | Added the [List members](/graph/api/conversationmember-list?view=graph-rest-beta), [Get member](/graph/api/conversationmember-get?view=graph-rest-beta), [Add member](/graph/api/conversationmember-add?view=graph-rest-beta), [Update member](/graph/api/conversationmember-update?view=graph-rest-beta), and [Delete member](/graph/api/conversationmember-delete?view=graph-rest-beta) methods to the [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta) and [aadUserConversationMember](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta) resources.|
 
 ## September 2020
 
