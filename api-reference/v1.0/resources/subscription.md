@@ -15,6 +15,7 @@ A subscription allows a client app to receive change notifications about changes
 
 - An [alert][] from the Microsoft Graph Security API
 - A [callRecord][] produced after a call or meeting in Microsoft Teams
+- A [chatMessage][] sent via teams or channels in Microsoft Teams
 - A [conversation][] in a Microsoft 365 group
 - Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive
 - A [list][] under a SharePoint [site][]
@@ -45,21 +46,23 @@ See [Use the Microsoft Graph API to get change notifications](webhooks.md) for t
 | id | string | Unique identifier for the subscription. Read-only. |
 | applicationId | string | Identifier of the application used to create the subscription. Read-only. |
 | creatorId | string | Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the id of the service principal corresponding to the app. Read-only. |
+| includeResourceData | Boolean | When set to `true`, change notifications [include resource data](/graph/webhooks-with-resource-data) (such as content of a chat message). Optional. | 
+| encryptionCertificate | string | A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional. Required when **includeResourceData** is true. | 
+| encryptionCertificateId | string | A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Optional. 
 | latestSupportedTlsVersion | String | Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by **notificationUrl**, supports. The possible values are: `v1_0`, `v1_1`, `v1_2`, `v1_3`. </br></br>For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set [timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. </br></br>For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to `v1_2`. |
 
 ### Maximum length of subscription per resource type
 
 | Resource            | Maximum expiration time  |
 |:--------------------|:-------------------------|
-| User, group, other directory resources   | 4230 minutes (under 3 days)    |
-| Mail                | 4230 minutes (under 3 days)    |
-| Calendar            | 4230 minutes (under 3 days)    |
-| Contacts            | 4230 minutes (under 3 days)    |
-| Group conversations | 4230 minutes (under 3 days)    |
-| Drive root items    | 4230 minutes (under 3 days)    |
-| SharePoint list     | 4230 minutes (under 3 days)    |
-| Teams callRecord    | 4230 minutes (under 3 days)  |
-| Security alerts     | 43200 minutes (under 30 days)  |
+| Security **alert**     | 43200 minutes (under 30 days)  |
+| Teams **callRecord**    | 4230 minutes (under 3 days)  |
+| Teams **chatMessage**    | 60 minutes (1 hour)  |
+| Group **conversation** | 4230 minutes (under 3 days)    |
+| OneDrive **driveItem**    | 4230 minutes (under 3 days)    |
+| SharePoint **list**    | 4230 minutes (under 3 days)    |
+| Outlook **message**, **event**, **contact**              | 4230 minutes (under 3 days)    |
+| **user**, **group**, other directory resources   | 4230 minutes (under 3 days)    |
 
 > **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
 
@@ -102,6 +105,9 @@ Here is a JSON representation of the resource.
   "id": "string (identifier)",
   "clientState": "string",
   "creatorId": "string",
+  "includeResourceData": "boolean",
+  "encryptionCertificate": "string",
+  "encryptionCertificateId": "string",
   "latestSupportedTlsVersion": "string"
 }
 ```
@@ -116,6 +122,7 @@ Here is a JSON representation of the resource.
 [message]: ./message.md
 [user]: ./user.md
 [alert]: ./alert.md
+[chatMessage]: ./chatmessage.md
 [callRecord]: ./callrecords-callrecord.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -127,3 +134,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

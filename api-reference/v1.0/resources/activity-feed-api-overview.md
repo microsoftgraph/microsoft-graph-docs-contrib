@@ -72,3 +72,4 @@ The user activities that you create will vary based on the interaction pattern o
 
 - See [how Microsoft experiences are using activities](https://channel9.msdn.com/events/Build/2017/B8108).
 - Learn about [the activity feed API and pick up where I left off](https://channel9.msdn.com/Events/Windows/Windows-Developer-Day-Fall-Creators-Update/WinDev011).
+

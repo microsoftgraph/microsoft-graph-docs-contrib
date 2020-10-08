@@ -1,13 +1,13 @@
 ---
-title: "raPolicyServiceVersions enum type"
-description: "Not yet documented"
+title: "androidManagedAppSafetyNetEvaluationType enum type"
+description: "An admin enforced Android SafetyNet evaluation type requirement on a managed app."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
-# raPolicyServiceVersions enum type
+# androidManagedAppSafetyNetEvaluationType enum type
 
 Namespace: microsoft.graph
 
@@ -15,16 +15,16 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+An admin enforced Android SafetyNet evaluation type requirement on a managed app.
 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|initial|1|Not yet documented|
-|betaStart|5000000|Not yet documented|
-|experimentStart|6000000|Not yet documented|
-|mmpcStart|6000001|Not yet documented|
-|iosStart|6000002|Not yet documented|
+|basic|0|Require basic evaluation|
+|hardwareBacked|1|Require hardware backed evaluation|
+
+
+
 
 
 
