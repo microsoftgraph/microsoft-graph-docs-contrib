@@ -23,7 +23,7 @@ Both **room** and **roomList** are derived from the **place** object.
 
 By default, this operation returns 100 places per page.
 
-Compared with the [findRooms](../../beta/api/user-findrooms.md?tabs=http&view=graph-rest-beta) and [findRoomLists](../../beta/api/user-findroomlists.md?view=graph-rest-beta) functions, this operation returns a richer payload for rooms and room lists. See [details](../resources/place.md#using-the-places-api) for how they compare.
+Compared with the [findRooms](../../beta/api/user-findrooms.md) and [findRoomLists](../../beta/api/user-findroomlists.md) functions, this operation returns a richer payload for rooms and room lists. See [details](../resources/place.md#using-the-places-api) for how they compare.
 
 ## Permissions
 
