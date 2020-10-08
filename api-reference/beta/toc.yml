@@ -10290,8 +10290,9 @@ items:
         - name: User flows
           items:
           - name: User flow
-            href: resources/identityuserflow.md
             items:
+            - name: User flow
+              href: resources/identityuserflow.md
             - name: List
               href: api/identityuserflow-list.md
             - name: Create
@@ -10301,39 +10302,41 @@ items:
             - name: Delete
               href: api/identityuserflow-delete.md
           - name: B2C user flows
-            href: resources/b2cuserflows.md
             items:
+             - name: B2C user flow
+               href: resources/b2cidentityuserflow.md
              - name: List
-               href: api/b2cuserflows-list.md
+               href: api/identitycontainer-list-b2cuserflows.md
              - name: Create
-               href: api/b2cuserflow-post-b2cuserflows.md
+               href: api/identitycontainer-post-b2cuserflows.md
              - name: Get
-               href: api/b2cuserflows-get.md
+               href: api/b2cidentityuserflow-get.md
              - name: Delete
-               href: api/b2cuserflows-get.md
+               href: api/b2cidentityuserflow-delete.md
              - name: List identity providers
-               href: api/b2cuserflows-list-identityproviders.md
+               href: api/b2cidentityuserflow-list-identityproviders.md
              - name: Add identity provider
-               href: api/b2cuserflows-update-identityprovider.md
-             - name: Delete identity provider
-               href: api/b2cuserflows-delete-identityprovider.md
+               href: api/b2cidentityuserflow-post-identityproviders.md
+             - name: Remove identity provider
+               href: api/b2cidentityuserflow-delete-identityproviders.md
           - name: Self-service sign up user flows
-            href: resources/b2xuserflows.md
             items:
+             - name: B2X user flow
+               href: resources/b2xidentityuserflow.md
              - name: List
-               href: api/b2xuserflows-list.md
+               href: api/identitycontainer-list-b2xuserflows.md
              - name: Create
-               href: api/b2xuserflow-post-b2xuserflows.md
+               href: api/identitycontainer-post-b2xuserflows.md
              - name: Get
-               href: api/b2xuserflows-get.md
+               href: api/b2xidentityuserflow-get.md
              - name: Delete
-               href: api/b2xuserflows-delete.md
+               href: api/b2xidentityuserflow-delete.md
              - name: List identity providers
-               href: api/b2xuserflows-list-identityproviders.md
+               href: api/b2xidentityuserflow-list-identityproviders.md
              - name: Add identity provider
-               href: api/b2xuserflows-update-identityprovider.md
-             - name: Delete identity provider
-               href: api/b2xuserflows-delete-identityprovider.md
+               href: api/b2xidentityuserflow-post-identityproviders.md
+             - name: Remove identity provider
+               href: api/b2xidentityuserflow-delete-identityproviders.md
       - name: Governance
         items:
         - name: Access reviews
