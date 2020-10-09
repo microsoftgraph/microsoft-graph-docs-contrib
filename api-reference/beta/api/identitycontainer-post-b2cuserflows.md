@@ -1,19 +1,19 @@
 ---
-title: "Create b2cUserFlow"
-description: "Create a new b2cUserFlow object."
+title: "Create b2cIdentityUserFlow"
+description: "Create a new b2cIdentityUserFlow object."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Create b2cUserFlow
+# Create b2cIdentityUserFlow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [b2cUserFlow](../resources/b2cuserflows.md) object.
+Create a new [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object.
 
 ## Permissions
 
@@ -47,7 +47,7 @@ POST /identity/b2cUserFlows
 
 ## Request body
 
-In the request body, provide a JSON representation of a [b2cUserFlow](../resources/b2cuserflows.md).
+In the request body, provide a JSON representation of a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md).
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
@@ -58,7 +58,7 @@ In the request body, provide a JSON representation of a [b2cUserFlow](../resourc
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a Location header with a URI to the [b2cUserFlow](../resources/b2cuserflows.md) object created for this request, with the `B2C_1` prefix added to the name. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `201 Created` response code and a Location header with a URI to the [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object created for this request, with the `B2C_1` prefix added to the name. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Examples
 
