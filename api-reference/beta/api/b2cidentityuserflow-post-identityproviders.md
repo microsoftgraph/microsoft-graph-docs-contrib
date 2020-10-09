@@ -1,19 +1,19 @@
 ---
-title: "Delete identityProvider from a b2cUserFlow"
-description: "Delete an identityProvider from a b2cUserFlow."
+title: "Add identityProvider to a b2cIdentityUserFlow"
+description: "Add identityProvider to a b2cIdentityUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Delete an identityProvider from a b2cUserFlow
+# Add identityProvider to a b2cIdentityUserFlow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an identity provider from a [b2cUserFlow](../resources/b2cuserflows.md) object. For more information about identity providers available for user flows, see the [identityProviders](../resources/identityprovider.md) API reference.
+Add identity providers in a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object.
 
 ## Permissions
 
@@ -35,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /b2cUserFlows/{id}/identityProviders/{id}/$ref
+PATCH /b2cUserFlows/{id}/identityProviders/$ref
 ```
 
 ## Request headers
@@ -43,10 +43,11 @@ DELETE /b2cUserFlows/{id}/identityProviders/{id}/$ref
 |Name|Description|
 |:---------------|:----------|
 |Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, provide a JSON representation of the `id` of the [identityProvider](../resources/identityprovider.md) you want to add. For more information about identity providers available for user flows, see the [identityProviders](../resources/identityprovider.md) API reference.
 
 ## Response
 
@@ -62,23 +63,29 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_b2xUserFlows_identityProviders"
+  "name": "update_b2cuserflows_identityprovider"
 }
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSignUp/identityProviders/Facebook-OAUTH/$ref
+PATCH https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/identityProviders/$ref
+Content-type: application/json
+Content-length: 30
+
+{
+  "@odata.id": "https://graph.microsoft.com/beta/identityProviders/{id}"
+}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-b2xuserflows-identityproviders-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-b2cuserflows-identityprovider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-b2xuserflows-identityproviders-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-b2cuserflows-identityprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-b2xuserflows-identityproviders-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/update-b2cuserflows-identityprovider-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

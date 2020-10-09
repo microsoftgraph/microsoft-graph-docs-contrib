@@ -21,6 +21,30 @@
     {
       "ChangeList": [
         {
+          "Id": "c61f3da2-e7fe-43ee-aa34-f76945c4bfa0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "b2cAuthenticationMethodsPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [b2cAuthenticationMethodsPolicy](https://docs.microsoft.com/en-us/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta) resource type and the following operations: [Get b2cAuthenticationMethodsPolicy](https://docs.microsoft.com/en-us/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta) and [Update b2cAuthenticationMethodsPolicy](https://docs.microsoft.com/en-us/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta).",
+          "Target": ""
+        },
+        {
+          "Id": "c61f3da2-e7fe-43ee-aa34-f76945c4bfa0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Policy.ReadWrite.AuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added delegated and application permission [Policy.ReadWrite.AuthenticationMethod](https://docs.microsoft.com/en-us/graph/permissions-reference#policy-permissions).",
+          "Target": "Policy.ReadWrite.AuthenticationMethod"
+        }
+      ],
+      "Cloud": "prd",
+      "Version": "beta",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f441d7f8-7f77-4e1d-9f40-9c3c88b1bd96",
           "ApiChange": "Resource",
           "ChangedApiName": "permissionGrantPolicyIdsAssignedToDefaultUserRole",

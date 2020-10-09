@@ -18,6 +18,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta|Added the **allowInvitesFrom** property to the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource.|
+|Addition|beta|Added the [b2cAuthenticationMethodsPolicy](/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta) resource type and the following opertations: [Get b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta) and [Update b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta).|
+|Addition|beta|Added the **Policy.ReadWrite.AuthenticationMethod** permission to the [Permissions reference](permissions-reference.md#policy-permissions).|
 
 ## September 2020
 
@@ -256,8 +258,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [b2cUserFlows](/graph/api/resources/b2cuserflows?view=graph-rest-beta) entity for managing user flows in an Azure Active Directory B2C tenant. |
-| Addition | beta | Added the [b2xUserFlows](/graph/api/resources/b2xuserflows?view=graph-rest-beta) entity for managing self-service sign up user flows in an Azure Active Directory tenant. |
+| Addition | beta | Added the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) entity for managing user flows in an Azure Active Directory B2C tenant. |
+| Addition | beta | Added the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) entity for managing self-service sign up user flows in an Azure Active Directory tenant. |
 
 ### People and workplace intelligence | Profile
 
