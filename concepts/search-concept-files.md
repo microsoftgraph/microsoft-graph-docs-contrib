@@ -414,6 +414,10 @@ Content-type: application/json
 }
 ```
 
+## Known limitations
+
+When searching for **drive**, you need to include in the **queryString** a term contained in the name of the document library. Querying `*` is not supported and does not return all available drives.
+
 ## Next steps
 
 - [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
