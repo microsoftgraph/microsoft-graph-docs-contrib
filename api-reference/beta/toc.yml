@@ -440,6 +440,32 @@ items:
           href: api/user-upgrade-teamsappinstallation.md
         - name: Uninstall app
           href: api/user-delete-teamsappinstallation.md
+      - name: Conversation member
+        href: resources/conversationmember.md
+        items:
+        - name: List members
+          href: api/conversationmember-list.md
+        - name: Get member
+          href: api/conversationmember-get.md
+        - name: Add member
+          href: api/conversationmember-add.md
+        - name: Update member
+          href: api/conversationmember-update.md
+        - name: Delete member
+          href: api/conversationmember-delete.md
+      - name: Azure AD user conversation member
+        href: resources/aaduserconversationmember.md
+        items:
+        - name: List members
+          href: api/conversationmember-list.md
+        - name: Get member
+          href: api/conversationmember-get.md
+        - name: Add member
+          href: api/conversationmember-add.md
+        - name: Update member
+          href: api/conversationmember-update.md
+        - name: Delete member
+          href: api/conversationmember-delete.md
       - name: User settings
         items:
         - name: User settings
