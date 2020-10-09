@@ -90,7 +90,7 @@ The following table lists the methods that you can use to interact with entitlem
 
 ## See also
 
- - [What is Azure AD entitlement management?](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)
+ - [What is Azure AD entitlement management?](/azure/active-directory/governance/entitlement-management-overview)
 
 
 
@@ -103,5 +103,3 @@ The following table lists the methods that you can use to interact with entitlem
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

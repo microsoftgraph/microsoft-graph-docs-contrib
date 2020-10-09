@@ -128,48 +128,46 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 Use the `$filter` query parameter to retrieve just a subset of a collection. The `$filter` query parameter can also be used to retrieve relationships like members, memberOf, transitiveMembers, and transitiveMemberOf. For example, get all the security groups I'm a member of.
 
-The following example can be used to find users whose display name starts with the letter 'J', use `startswith`.
+The following example can be used to find users whose display name starts with the letter 'J', use `startsWith`.
 
 ```http
-GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
+GET https://graph.microsoft.com/v1.0/users?$filter=startsWith(displayName,'J')
 ```
 
 [Try in Graph Explorer][filter-example]
 
-Support for `$filter` operators varies across Microsoft Graph APIs. The following logical operators are generally supported: 
+Support for `$filter` operators varies across Microsoft Graph APIs. The following logical operators are generally supported:
 
-- equals (`eq`)
-- in (`in`)
-- not equals (`ne`)
-- greater than (`gt`)
-- greater than or equals (`ge`)
-- less than (`lt`), less than or equals (`le`)
-- and (`and`)
-- or (`or`)
-- not (`not`)
- 
-The `startswith` string operator is often supported. The `any` lambda operator is supported for some APIs. 
+- equals `eq` / not equals `ne`
+- less than `lt` / greater than `gt`
+- less than or equal to `le` / greater than or equal to `ge`
+- and `and` / or `or`
+- in `in`
+- Negation `not`
+- lambda operator any `any`
+- lambda operator all `all`
+- Starts with `startsWith`
+- Ends with `endsWith`
 
-> **Note:** You must [specify properties in certain ways](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query) when using both `$filter` and `$orderby` in the same query to get messages.
+> **Note:** Support for these operators varies by entity. See the specific entity documentation for details. 
+>
+> The `contains` string operator is currently not supported on any Microsoft Graph resources.
 
 For some usage examples, see the following table. For more details about `$filter` syntax, see the [OData protocol][odata-filter].  
-
 The following table shows some examples that use the `$filter` query parameter.
 
 > **Note:** Click the examples to try them in [Graph Explorer][graph-explorer].
 
 | Description | Example
 |:------------|:--------|
-| Search for users with the name Mary across multiple properties. | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
+| Get all users with the name Mary across multiple properties. | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
+| Get all users with mail domain equal to 'hotmail.com' | [`https://graph.microsoft.com/v1.0/users?$count=true&$filter=endsWith(mail,'@hotmail.com')`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40hotmail.com')%26%24select%3Did%2CdisplayName%2Cmail&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
 | Get all the signed-in user's events that start after 7/1/2017. | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) |
 | Get all emails from a specific address received by the signed-in user. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
 | Get all emails received by the signed-in user in April 2017. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
 | Get all unread mail in the signed-in user's Inbox. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
 | List all Microsoft 365 groups in an organization. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
 | Use OData cast to get transitive membership in groups with a display name that starts with 'a' including a count of returned objects. | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0) |
-
-> **Note:** Please read the documentation for the specific directory objects (Azure AD resources) to learn more about `$filter` operator support.
-> The `contains` string operator is currently not supported on any Microsoft Graph resources.
 
 ## format parameter
 

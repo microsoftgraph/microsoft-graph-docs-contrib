@@ -1,19 +1,19 @@
 ---
-title: "List b2cUserFlows"
-description: "Retrieve a list of b2cUserFlow objects."
+title: "List b2xIdentityUserFlows"
+description: "Retrieve a list of b2xIdentityUserFlow objects."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List b2cUserFlows
+# List b2xIdentityUserFlows
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [b2cUserFlow](../resources/b2cuserflows.md) objects.
+Retrieve a list of [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) objects.
 
 ## Permissions
 
@@ -35,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identity/b2cUserFlows
+GET /identity/b2xUserFlows
 ```
 
 ## Optional query parameters
@@ -56,11 +56,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [b2cUserFlow](../resources/b2cuserflows.md)  objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) objects in the response body.
 
 ## Examples
 
-### Example 1: List all b2cUserFlows
+### Example 1: List all b2xIdentityUserFlow objects
 
 #### Request
 
@@ -70,23 +70,23 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_b2cUserFlows"
+  "name": "list_b2xUserFlows"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/b2cUserFlows
+GET https://graph.microsoft.com/beta/identity/b2xUserFlows
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-b2cuserflows-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-b2xuserflows-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-b2cuserflows-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-b2xuserflows-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-b2cuserflows-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-b2xuserflows-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -101,7 +101,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.b2cIdentityUserFlow",
+  "@odata.type": "microsoft.graph.b2xIdentityUserFlow",
   "isCollection": true
 } -->
 
@@ -110,23 +110,23 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2xUserFlows",
     "value": [
       {
-          "id": "B2C_1_CustomerSignUp",
-          "userFlowType": "signUp",
+          "id": "B2X_1_PartnerSignUp",
+          "userFlowType": "signUpOrSignIn",
           "userFlowTypeVersion": 1
       },
       {
-          "id": "B2C_1_CustomerSignIn",
-          "userFlowType": "signIn",
+          "id": "B2X_1_ContosoSignUp",
+          "userFlowType": "signUpOrSignIn",
           "userFlowTypeVersion": 1
       },
     ]
 }
 ```
 
-### Example 2: List all b2cUserFlows and expand identityProviders
+### Example 2: List all b2xIdentityUserFlow objects and expand identityProviders
 
 #### Request
 
@@ -136,23 +136,23 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_b2cUserFlows_expand"
+  "name": "list_b2xUserFlows_expand"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/b2cUserFlows?$expand=identityProviders
+GET https://graph.microsoft.com/beta/identity/b2xUserFlows?$expand=identityProviders
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-b2cuserflows-expand-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-b2xuserflows-expand-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-b2cuserflows-expand-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-b2xuserflows-expand-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-b2cuserflows-expand-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-b2xuserflows-expand-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -167,7 +167,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.b2cIdentityUserFlow",
+  "@odata.type": "microsoft.graph.b2xIdentityUserFlow",
   "isCollection": true
 } -->
 
@@ -176,11 +176,11 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2xUserFlows(identityProviders)",
     "value": [
       {
-          "id": "B2C_1_CustomerSignUp",
-          "userFlowType": "signUp",
+          "id": "B2X_1_PartnerSignUp",
+          "userFlowType": "signUpOrSignIn",
           "userFlowTypeVersion": 1,
           "identityProviders": [
               {
@@ -193,8 +193,8 @@ Content-type: application/json
           ]
       },
       {
-          "id": "B2C_1_CustomerSignIn",
-          "userFlowType": "signIn",
+          "id": "B2X_1_ContosoSignUp",
+          "userFlowType": "signUpOrSignIn",
           "userFlowTypeVersion": 1,
           "identityProviders": [
               {
@@ -212,13 +212,13 @@ Content-type: application/json
 
 <!-- {
   "type": "#page.annotation",
-  "description": "List b2cUserFlows",
+  "description": "List b2xUserFlows",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: list_b2cUserFlows/container/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
-    "Error: list_b2cUserFlows_expand/container/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
+    "Error: list_b2xUserFlows/container/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
+    "Error: list_b2xUserFlows_expand/container/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->
 
