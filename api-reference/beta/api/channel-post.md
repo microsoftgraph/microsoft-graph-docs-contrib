@@ -73,6 +73,7 @@ Content-type: application/json
   "membershipType": "standard"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -116,7 +117,6 @@ Content-length: 201
 
 The following example shows a request to create a private channel and add a user as an team owner.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -156,7 +156,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -183,6 +182,43 @@ Content-length: 201
     "membershipType": "private"
 }
 ```
+
+### Example 3: Create a channel in migration mode
+<!-- markdownlint-disable MD024 -->
+
+#### Request
+
+The following example shows how to create a channel for imported messages.
+
+```http
+POST https://graph.microsoft.com/beta/teams/{id}/channels
+
+Content-Type: application/json
+{
+  "@microsoft.graph.channelCreationMode": "migration",
+  "displayName": "Architecture Discussion",
+  "description": "This channel is where we debate all future architecture plans",
+  "membershipType": "standard",
+  "createdDateTime": "2020-03-14T11:22:17.067Z"
+}
+```
+
+#### Response
+
+```http
+HTTP/1.1 202 Accepted
+Location: /teams/{teamId}/channels/{channelId}/operations/{operationId}
+Content-Location: /teams/{teamId}/channels/{channelId}
+```
+
+####  Error Message
+
+```http
+400 Bad Request
+```
+
+* `createdDateTime`  set for future.
+* `createdDateTime`  correctly specified but `channelCreationMode`  instance attribute  is missing or set to invalid value.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

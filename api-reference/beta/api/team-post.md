@@ -86,13 +86,17 @@ Content-Type: application/json
 
 ---
 
+<!-- markdownlint-disable MD024 -->
+<!-- markdownlint-disable MD001 -->
 
 ##### Response
+
 <!-- {
   "blockType": "response",
   "name": "create_team_post",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -106,12 +110,14 @@ Content-Length: 0
 The following is an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.
 
 #### Request
+<!-- markdownlint-disable MD025 -->
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_post_minimal"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -129,6 +135,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-minimal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -143,13 +150,13 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response",
   "name": "create_team_post_minimal",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -169,6 +176,7 @@ The following is a request with a full payload. The client can override values i
   "blockType": "request",
   "name": "create_team_post_full_payload"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -274,6 +282,7 @@ Content-Type: application/json
   "name": "create_team_post_full_payload",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -292,7 +301,6 @@ A few thing to note about this call:
 * The team that's created will always inherit from the group's display name, visibility, specialization, and members. Therefore, when making this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **members@odata.bind** properties will return an error.
 * If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. We recommend that you retry the Create team call three times, with a 10 second delay between calls.
 
-
 #### Request
 
 # [HTTP](#tab/http)
@@ -300,6 +308,7 @@ A few thing to note about this call:
   "blockType": "request",
   "name": "create_team_from_group"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -309,6 +318,7 @@ Content-Type: application/json
   "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -323,13 +333,13 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response",
   "name": "create_team_from_group",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -351,6 +361,7 @@ To learn more about supported base template types and supported properties, see 
   "blockType": "request",
   "name": "convert_team_from_group"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -399,13 +410,13 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response",
   "name": "convert_team_from_group",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -429,6 +440,7 @@ To learn more about supported base template types, see [Get started with Teams t
   "blockType": "request",
   "name": "convert_team_from_non_standard"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -530,13 +542,13 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response",
   "name": "convert_team_from_non_standard2",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -545,9 +557,45 @@ Content-Location: /teams/{teamId}
 Content-Length: 0
 ```
 
+### Example 8: Create a team in migration mode
+
+#### Request
+
+The following example shows how to create a team for imported messages.
+
+```http
+POST https://graph.microsoft.com/beta/teams
+
+Content-Type: application/json
+{
+  "@microsoft.graph.teamCreationMode": "migration",
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+  "displayName": "My Sample Team",
+  "description": "My Sample Team’s Description",
+  "createdDateTime": "2020-03-14T11:22:17.067Z"
+}
+```
+
+#### Response
+
+```http
+HTTP/1.1 202 Accepted
+Location: /teams/{teamId}/operations/{operationId}
+Content-Location: /teams/{teamId}
+```
+
+#### Error messages
+
+```http
+400 Bad Request
+```
+
+* `createdDateTime`  set for future.
+* `createdDateTime`  correctly specified, but `teamCreationMode`  instance attribute  is missing or set to invalid value.
+
 ## See also
 
-- [Available templates](/MicrosoftTeams/get-started-with-teams-templates)
-- [Getting started with Retail Teams templates](/MicrosoftTeams/get-started-with-retail-teams-templates)
-- [Getting started with Healthcare Teams templates](/MicrosoftTeams/healthcare/healthcare-templates)
-- [Creating a group with a team](/graph/teams-create-group-and-team)
+* [Available templates](/MicrosoftTeams/get-started-with-teams-templates)
+* [Getting started with Retail Teams templates](/MicrosoftTeams/get-started-with-retail-teams-templates)
+* [Getting started with Healthcare Teams templates](/MicrosoftTeams/healthcare/healthcare-templates)
+* [Creating a group with a team](/graph/teams-create-group-and-team)
