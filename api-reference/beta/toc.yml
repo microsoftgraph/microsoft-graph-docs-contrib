@@ -10016,7 +10016,7 @@ items:
             - name: Update
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
             - name: Delete
-              href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.m
+              href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
         - name: Certificate-based auth configuration
           href: resources/certificatebasedauthconfiguration.md
           items:
