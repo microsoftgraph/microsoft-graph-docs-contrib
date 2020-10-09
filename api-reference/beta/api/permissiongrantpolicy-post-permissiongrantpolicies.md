@@ -1,19 +1,19 @@
 ---
-title: "Create a new permissionGrantPolicy"
-description: "Creates a new permissionGrantPolicy describing the conditions under which permissions may be granted."
+title: "Create a permission grant policy"
+description: "Creates a permissionGrantPolicy object that describes the conditions under which permissions may be granted."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 
-# Create a permissionGrantPolicy
+# Create a permission grant policy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a new [permissionGrantPolicy](../resources/permissiongrantpolicy.md). A permission grant policy is used to describe the conditions under which permissions can be granted (for example, during application consent).
+Creates a [permissionGrantPolicy](../resources/permissiongrantpolicy.md). A permission grant policy is used to describe the conditions under which permissions can be granted (for example, during application consent).
 
 After creating the permission grant policy, you can [add include condition sets](permissiongrantpolicy-post-includes.md) to add matching rules, and [add exclude condition sets](permissiongrantpolicy-post-excludes.md) to add exclusion rules.
 
@@ -53,9 +53,7 @@ If successful, this method returns a `201 Created` response code and a [permissi
 
 ### Request
 
-Here is an example of the request.
-
-# [HTTP](#tab/http)
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -66,7 +64,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/policies/permissionGrantPolicies
 Content-Type: application/json
-Content-Length: 110
 
 {
   "id": "my-custom-consent-policy",
@@ -75,11 +72,9 @@ Content-Length: 110
 }
 ```
 
----
-
 ### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -92,7 +87,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 281
 
 {
   "id": "my-custom-consent-policy",

@@ -1388,14 +1388,14 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### permissionClassificationType values
 
-| Member | Value | Description            |
-|:-------|:------|:-----------------------|
-| low    | 1     | Low impact permission. |
+| Member
+|:-------
+| low
 
 ### permissionType values
 
-| Member                   | Value | Description                                                             |
-|:-------------------------|:------|:------------------------------------------------------------------------|
-| application              | 1     | Application permission (app role).                                      |
-| delegated                | 2     | Delegated permission.                                                   |
-| delegatedUserConsentable | 3     | Delegated permissions which is not configured to require admin consent. |
+| Member
+|:-------------------------
+| application
+| delegated
+| delegatedUserConsentable

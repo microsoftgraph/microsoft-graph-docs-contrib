@@ -1,5 +1,5 @@
 ---
-title: "Delete q permissionGrantPoliciy"
+title: "Delete a permission grant policy"
 description: "Delete a permissionGrantPolicy object."
 localization_priority: Normal
 doc_type: "apiPageType"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 
-# Delete permissionGrantPolicy
+# Delete a permission grant policy
 
 Namespace: microsoft.graph
 
@@ -45,15 +45,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request to delete a custom permission grant policy.
-
-# [HTTP](#tab/http)
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -63,8 +61,6 @@ The following is an example of the request to delete a custom permission grant p
 ```msgraph-interactive
 DELETE https://graph.microsoft.com/beta/policies/permissionGrantPolicies/my-custom-consent-policy
 ```
-
----
 
 ### Response
 

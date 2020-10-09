@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add conditions under which a permission grant event is *excluded* in a permission grant policy by adding a [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) to the **excludes** collection of a  [permissionGrantPolicy](../resources/permissionGrantPolicy.md).
+Add conditions under which a permission grant event is *excluded* in a permission grant policy. You do this by adding a [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) to the **excludes** collection of a  [permissionGrantPolicy](../resources/permissionGrantPolicy.md).
 
 ## Permissions
 
@@ -54,8 +54,6 @@ If successful, this method returns a `201 Created` response code and an [permiss
 
 In this example, *all* delegated permissions for Microsoft Graph (**appId** 00000003-0000-0000-c000-000000000000) are excluded from the permission grant policy.
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "truncated": true,
@@ -65,7 +63,6 @@ In this example, *all* delegated permissions for Microsoft Graph (**appId** 0000
 ```http
 POST https://graph.microsoft.com/beta/policies/permissionGrantPolicies/my-custom-consent-policy/excludes
 Content-Type: application/json
-Content-Length: 110
 
 {
   "permissionType": "delegated",
@@ -73,11 +70,9 @@ Content-Length: 110
 }
 ```
 
----
-
 ### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -90,7 +85,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 253
 
 {
   "id": "9a532f49-e646-405d-8c7c-d4c8e8a4d294",

@@ -1,13 +1,13 @@
 ---
-title: "Delete a delegatedPermissionClassification from a service principal"
-description: "Remove a permission classification from API's service principal."
+title: "Delete a delegated permission classification from a service principal"
+description: "Delete a delegated permission classification from an API's service principal."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 
-# Remove a delegatedPermissionClassification from a service principal
+# Delete a delegated permission classification from a service principal
 
 Namespace: microsoft.graph
 
@@ -45,16 +45,14 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
 ### Request
 
-Here is an example of the request to delete a permission classification for delegated permission.
+The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_delete_delegatedpermissionclassifications"
@@ -63,8 +61,6 @@ Here is an example of the request to delete a permission classification for dele
 ```http
 DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/delegatedPermissionClassifications/{id}
 ```
-
----
 
 ### Response
 

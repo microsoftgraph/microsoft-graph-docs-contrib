@@ -54,9 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request to retrieve the **includes** condition sets of the built-on permission grant policy `microsoft-application-admin`. This permission grant policy includes all delegated permissions, and all application permissions excluding application permissions for Microsoft Graph and application permissions for Azure AD Graph.
-
-# [HTTP](#tab/http)
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -67,11 +65,9 @@ The following is an example of the request to retrieve the **includes** conditio
 GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-application-admin/includes
 ```
 
----
-
 ### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -85,7 +81,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 784
 
 {
   "value": [

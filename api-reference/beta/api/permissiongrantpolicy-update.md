@@ -56,9 +56,7 @@ If successful, this method returns a `204 No Content` response code and does not
 
 ### Request
 
-The following is an example of the request to update the display name of a custom permission grant policy.
-
-# [HTTP](#tab/http)
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -68,7 +66,6 @@ The following is an example of the request to update the display name of a custo
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/policies/permissionGrantPolicies/my-custom-consent-policy
 Content-Type: application/json
-Content-Length: 110
 
 {
   "displayName": "Custom permission grant policy"

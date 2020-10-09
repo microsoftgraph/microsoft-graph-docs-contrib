@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a single  [permissionGrantPolicy](../resources/permissiongrantpolicy.md) object.
+Retrieve a single [permissionGrantPolicy](../resources/permissiongrantpolicy.md) object.
 
 ## Permissions
 
@@ -57,8 +57,6 @@ If successful, this method returns a `200 OK` response code and the requested [p
 
 The following is an example of the request. In this example, the requested policy is the built-in permission grant policy `microsoft-user-default-low`, which includes delegated permissions classified low, for apps from verified publishers or apps registered in this tenant.
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "get_permissiongrantpolicy"
@@ -68,11 +66,9 @@ The following is an example of the request. In this example, the requested polic
 GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-user-default-low
 ```
 
----
-
 ### Response
 
-The following is an example of the response. The policy has two `includes` condition sets, one which matches with delegated permission classified `low` for client apps registered in this tenant, and the other which matches  delegated permissions classified `low` for apps from verified publishers (regardless of which tenant the app is registered in).
+The following is an example of the response. The policy has two `includes` condition sets, one which matches with delegated permission classified `low` for client apps registered in this tenant, and the other which matches delegated permissions classified `low` for apps from verified publishers (regardless of which tenant the app is registered in).
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 

@@ -51,9 +51,7 @@ If successful, this method returns a `201 Created` response code and an [delegat
 
 ### Request
 
-In this example, the delegated permission "User.Read" is being classified "low".
-
-# [HTTP](#tab/http)
+In the following example, the delegated permission "User.Read" is being classified "low".
 
 <!-- {
   "blockType": "request",
@@ -63,7 +61,6 @@ In this example, the delegated permission "User.Read" is being classified "low".
 ```http
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/delegatedPermissionClassifications
 Content-Type: application/json
-Content-Length: 110
 
 {
   "permissionId": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
@@ -72,11 +69,9 @@ Content-Length: 110
 }
 ```
 
----
-
 ### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -88,7 +83,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 253
 
 {
   "id": "2G3-4TG6YU2J54hjnaRoPQE",

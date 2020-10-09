@@ -1,5 +1,5 @@
 ---
-title: "Delete an includes condition set from a permissionGrantPolicy"
+title: "Delete an includes condition set from a permission grant policy"
 description: "Deletes an included condition set from permission grant policy."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 
-# Remove a includes condition set from a permission grant policy
+# Delete an includes condition set from a permission grant policy
 
 Namespace: microsoft.graph
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /policies/permissionGrantPolicies/{id}/includes/{id}
+DELETE /policies/permissionGrantPolicies/{permissiongrantpolicy-id}/includes/{include-id}
 ```
 
 ## Request headers
@@ -45,15 +45,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
 ### Request
 
-Here is an example of the request to delete an **includes** condition set from a custom permission grant policy.
-
-# [HTTP](#tab/http)
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -63,8 +61,6 @@ Here is an example of the request to delete an **includes** condition set from a
 ```http
 DELETE https://graph.microsoft.com/beta/policies/permissionGrantPolicies/my-custom-consent-policy/includes/198d8d6b-ecf6-47bc-a3dd-eaa2fe0544c5
 ```
-
----
 
 ### Response
 
