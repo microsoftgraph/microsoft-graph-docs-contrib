@@ -3,7 +3,7 @@ title: "Create windowsManagedDevice"
 description: "Create a new windowsManagedDevice object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -126,6 +126,8 @@ The following table shows the properties that are required when you create the w
 |specificationVersion|String|Specification version. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|Device join type Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `azureADJoined`, `azureADRegistered`, `hybridAzureADJoined`.|
 |skuFamily|String|Device sku family Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|skuNumber|Int32|Device sku number, see also: https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo. Valid values 0 to 2147483647. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Device management features Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `none`, `microsoftManagedDesktop`.|
 
 
 
@@ -139,7 +141,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices
 Content-type: application/json
-Content-length: 7955
+Content-length: 8026
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -322,7 +324,9 @@ Content-length: 7955
   "processorArchitecture": "x86",
   "specificationVersion": "Specification Version value",
   "joinType": "azureADJoined",
-  "skuFamily": "Sku Family value"
+  "skuFamily": "Sku Family value",
+  "skuNumber": 9,
+  "managementFeatures": "microsoftManagedDesktop"
 }
 ```
 
@@ -331,7 +335,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 8004
+Content-Length: 8075
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -515,9 +519,14 @@ Content-Length: 8004
   "processorArchitecture": "x86",
   "specificationVersion": "Specification Version value",
   "joinType": "azureADJoined",
-  "skuFamily": "Sku Family value"
+  "skuFamily": "Sku Family value",
+  "skuNumber": 9,
+  "managementFeatures": "microsoftManagedDesktop"
 }
 ```
+
+
+
 
 
 

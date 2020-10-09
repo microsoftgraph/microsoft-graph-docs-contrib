@@ -84,15 +84,22 @@ Content-Type: application/json
 Content-length: 608
 
 {
-    "dueDateTime":
-    {
-        "dateTime":"2020-07-25T16:00:00",
-        "timeZone":"Eastern Standard Time"
-    }
+   "dueDateTime":{
+      "dateTime":"2020-07-25T16:00:00",
+      "timeZone":"Eastern Standard Time"
+   }
 }
 ```
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-todotask-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-todotask-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-todotask-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -132,4 +139,6 @@ Content-Type: application/json
 }
    
 ```
+
+
 

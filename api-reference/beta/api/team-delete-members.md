@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 DELETE /teams/{team-id}/members/{membership-id}
+DELETE /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 ```
 
 ## Request headers
@@ -84,4 +85,6 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 

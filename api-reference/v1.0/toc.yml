@@ -42,6 +42,8 @@ items:
         href: /learn/modules/msgraph-changenotifications-trackchanges
       - name: Missing Outlook notifications (preview)
         href: /graph/webhooks-outlook-authz?context=graph/api/1.0
+      - name: Notifications with resource data
+        href: /graph/webhooks-with-resource-data?context=graph/api/1.0
     - name: Change tracking
       displayname: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
       items:
@@ -128,6 +130,20 @@ items:
     items:
       - name: Toolkit overview
         href: /graph/toolkit/overview?context=graph/api/1.0
+      - name: Get started
+        items:
+          - name: Overview
+            href: /graph/toolkit/get-started/overview?context=graph/api/1.0
+          - name: Build a web application (JavaScript)
+            href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
+          - name: Build a SharePoint web part
+            href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/1.0
+          - name: Build a Microsoft Teams tab
+            href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/1.0
+          - name: Use the Toolkit with React
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/1.0
+          - name: Use the Toolkit with Angular
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/1.0
       - name: Components
         items:
           - name: Login
@@ -394,6 +410,16 @@ items:
       - name: Group
         href: resources/group.md
         items:
+        - name: List groups
+          href: api/group-list.md
+        - name: Create group
+          href: api/group-post-groups.md
+        - name: Get group
+          href: api/group-get.md
+        - name: Update group
+          href: api/group-update.md
+        - name: Delete group
+          href: api/group-delete.md
         - name: Add favorite
           href: api/group-addfavorite.md
         - name: Add member
@@ -405,15 +431,11 @@ items:
         - name: Check member groups
           href: api/group-checkmembergroups.md
         - name: Check member objects
-          href: api/group-checkmemberobjects.md
-        - name: Create group
-          href: api/group-post-groups.md
-        - name: Delete group
-          href: api/group-delete.md
+          href: api/group-checkmemberobjects.md 
         - name: Get delta
           href: api/group-delta.md
-        - name: Get group
-          href: api/group-get.md
+        - name: Get endpoint
+          href: api/endpoint-get.md
         - name: Get member groups
           href: api/group-getmembergroups.md
         - name: Get member objects
@@ -438,8 +460,8 @@ items:
             href: api/groupsettingtemplate-list.md
           - name: Get group setting template
             href: api/groupsettingtemplate-get.md
-        - name: List groups
-          href: api/group-list.md
+        - name: List endpoints
+          href: api/group-list-endpoints.md
         - name: List lifecycle policies
           href: api/group-list-grouplifecyclepolicies.md
         - name: List member of
@@ -454,8 +476,6 @@ items:
           href: api/group-list-owners.md
         - name: List photos
           href: api/group-list-photos.md
-        - name: Update group
-          href: api/group-update.md
         - name: Remove favorite
           href: api/group-removefavorite.md
         - name: Remove member
@@ -1078,10 +1098,12 @@ items:
         - name: Participant
           href: resources/participant.md
           items:
-          - name: Get
-            href: api/participant-get.md
           - name: List
             href: api/call-list-participants.md
+          - name: Get
+            href: api/participant-get.md
+          - name: Delete
+            href: api/participant-delete.md
           - name: Mute participant
             href: api/participant-mute.md
           - name: Invite participants
@@ -3634,6 +3656,35 @@ items:
         href: resources/azure-ad-overview.md
       - name: Directory management
         items:
+        - name: Administrative unit
+          href: resources/administrativeunit.md
+          items:
+          - name: List
+            href: api/administrativeunit-list.md
+          - name: Create
+            href: api/administrativeunit-post-administrativeunits.md
+          - name: Get
+            href: api/administrativeunit-get.md
+          - name: Update
+            href: api/administrativeunit-update.md
+          - name: Delete
+            href: api/administrativeunit-delete.md
+          - name: Add a member
+            href: api/administrativeunit-post-members.md
+          - name: List members
+            href: api/administrativeunit-list-members.md
+          - name: Get a member
+            href: api/administrativeunit-get-members.md
+          - name: Remove a member
+            href: api/administrativeunit-delete-members.md
+          - name: Add a scoped-role administrator
+            href: api/administrativeunit-post-scopedrolemembers.md
+          - name: List scoped-role administrators
+            href: api/administrativeunit-list-scopedrolemembers.md
+          - name: Get a scoped-role administrator
+            href: api/administrativeunit-get-scopedrolemembers.md
+          - name: Remove a scoped-role administrator
+            href: api/administrativeunit-delete-scopedrolemembers.md
         - name: Contracts
           href: resources/contract.md
           items:
@@ -4783,6 +4834,14 @@ items:
           href: api/team-get.md
         - name: Update team
           href: api/team-update.md
+        - name: Delete team
+          href: api/group-delete.md
+        - name: List members
+          href: api/team-list-members.md
+        - name: Add members
+          href: api/team-post-members.md
+        - name: Remove members
+          href: api/team-delete-members.md
         - name: Archive team
           href: api/team-archive.md
         - name: Unarchive team
@@ -4791,8 +4850,6 @@ items:
           href: api/team-clone.md
         - name: List your teams
           href: api/user-list-joinedteams.md
-        - name: List all teams
-          href: /graph/teams-list-all-teams?context=graph/api/1.0
         - name: Get primary channel
           href: api/team-get-primarychannel.md
       - name: Group (team)
@@ -4890,6 +4947,8 @@ items:
           href: api/conversationmember-update.md
         - name: Delete member
           href: api/conversationmember-delete.md
+        - name: Update message
+          href: api/chatmessage-update.md  
       - name: App catalog
         items:
         - name: App in catalog

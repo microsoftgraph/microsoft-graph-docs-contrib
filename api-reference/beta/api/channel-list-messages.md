@@ -113,7 +113,8 @@ Content-type: application/json
             "etag": "1555375673184",
             "messageType": "message",
             "createdDateTime": "2019-04-16T00:47:53.184Z",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": "",
             "summary": null,
@@ -159,7 +160,8 @@ Content-type: application/json
             "etag": "1548100551893",
             "messageType": "message",
             "createdDateTime": "2019-01-21T19:55:51.644Z",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": "",
             "summary": null,
@@ -220,7 +222,8 @@ Content-type: application/json
             "etag": "1548100547534",
             "messageType": "message",
             "createdDateTime": "2019-01-21T19:55:47.534Z",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": "",
             "summary": null,
@@ -262,3 +265,5 @@ Content-type: application/json
   ]
 }
 -->
+
+
