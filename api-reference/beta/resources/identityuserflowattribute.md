@@ -35,7 +35,7 @@ Configuring user flow attributes in your Azure AD or Azure AD B2C tenant allows 
 |displayName|String|The display name of the user flow attribute.|
 |description|String|The description of the user flow attribute. It's shown to the user at the time of sign-up.|
 |userFlowAttributeType|String|The type of the user flow attribute. This is a read-only attribute that is automatically set. Depending on the type of attribute, the values for this property will be `builtIn` or `custom`.|
-|dataType|String|The data type of the user flow attribute. This cannot be modified once the custom user flow attribute is created. The supported values for **dataType** are:<br/><ul><li>`string` : denotes that the dataType for the userFlowAttribute is a string. </li><li>`boolean` : denotes that the dataType for the userFlowAttribute is a boolean.</li><li>`int64` : denotes that the dataType for the userFlowAttribute is an integer.</li><li> `stringCollection` : denotes that the dataType for the userFlowAttribute is a collection of strings.</li></ul>|
+|dataType|String|The data type of the user flow attribute. This cannot be modified once the custom user flow attribute is created. The supported values for **dataType** are:<br/><ul><li>`string` : denotes that the dataType for the identityUserFlowAttribute is a string. </li><li>`boolean` : denotes that the dataType for the identityUserFlowAttribute is a boolean.</li><li>`int64` : denotes that the dataType for the identityUserFlowAttribute is an integer.</li></ul>|
 
 ## JSON representation
 
