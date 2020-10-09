@@ -1,19 +1,19 @@
 ---
-title: "List all identityProviders in a b2cUserFlow"
-description: "List all identityProviders in a b2cUserFlow."
+title: "Get b2xIdentityUserFlow"
+description: "Retrieve the properties and relationships a b2xIdentityUserFlow object."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List all identityProviders in a b2cUserFlow
+# Get b2xIdentityUserFlow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the identity providers in a [b2cUserFlow](../resources/b2cuserflows.md) object.
+Retrieve the properties and relationships of a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object.
 
 ## Permissions
 
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityUserFlow.ReadWrite.All|
+|Delegated (work or school account)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application| IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
 The work or school account needs to belong to one of the following roles:
 
@@ -35,8 +35,14 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /b2cUserFlows/{id}/identityProviders
+GET /identity/b2xUserFlows/{id}
 ```
+
+## Optional query parameters
+
+You can use `$expand` to expand specific user flow properties that are not expanded by default.
+
+For more information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -50,7 +56,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a JSON representation of the [identityProviders](../resources/identityprovider.md) in the response body.
+If successful, this method returns a `200 OK` response code and a JSON representation of the [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) in the response body.
 
 ## Example
 
@@ -62,23 +68,23 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_b2cUserFlow_list_identityProviders"
+  "name": "get_b2xUserFlows"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/identityProviders
+GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-b2cuserflow-list-identityproviders-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-b2xuserflows-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-b2cuserflow-list-identityproviders-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-b2xuserflows-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-b2cuserflow-list-identityproviders-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-b2xuserflows-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -91,7 +97,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.identityProvider"
+  "@odata.type": "microsoft.graph.b2xIdentityUserFlow"
 } -->
 
 ```http
@@ -99,23 +105,21 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "value": [
-        {
-            "id": "Facebook-OAuth",
-            "type": "Facebook",
-            "name": "Facebook",
-            "clientId": "clientIdFromFacebook",
-            "clientSecret": "*****"
-        },
-        {
-            "id": "Google-OAuth",
-            "type": "Google",
-            "name": "Google",
-            "clientId": "clientIdFromGoogle",
-            "clientSecret": "*****"
-        }
-    ]
+    "id": "B2X_1_PartnerSignUp",
+    "userFlowType": "signUpOrSignIn",
+    "userFlowTypeVersion": 1
 }
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get b2xUserFlow",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: get_b2xUserFlows/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
+  ]
+}-->
 
 
