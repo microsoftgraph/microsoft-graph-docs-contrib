@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [permissionGrantPolicy](../resources/permissiongrantpolicy.md).
+Delete a [permissionGrantPolicy](../resources/permissiongrantpolicy.md) object.
 
 ## Permissions
 

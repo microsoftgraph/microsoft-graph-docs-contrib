@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request to retrieve the delegated permission classifications for a service principal.
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/delegatedPermissionC
 
 ### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
