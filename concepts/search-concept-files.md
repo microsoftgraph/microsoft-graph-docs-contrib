@@ -21,6 +21,7 @@ The Search API lets you scope the types of content to retrieve in OneDrive or Sh
 - [Example 5: Use filters in search queries](#example-5-use-filters-in-search-queries)
 - [Example 6: Specify select properties](#example-6-specify-select-properties)
 
+
 ## Example 1: Search files
 
 ### Request
@@ -330,7 +331,7 @@ Content-type: application/json
 }
 ```
 
-## Example 5 : Use filters in search queries
+## Example 5: Use filters in search queries
 
 You can use KQL in search terms of queries for OneDrive and SharePoint. For example:
 
@@ -341,7 +342,7 @@ You can use KQL in search terms of queries for OneDrive and SharePoint. For exam
 
 In order to be valid, properties restriction should specify a valid, queryable managed property name in the condition.
 
-## Example 6 : Specify select properties
+## Example 6: Specify select properties
 
 You can specify the fields you want back in the response, as part of the **fields** sub-property of a [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta&preserve-view=true) object in the response. This is a way to either trim down the response over the wire, or to request some specific properties that are not part of the out-of-the-box schema.
 
