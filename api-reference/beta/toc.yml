@@ -9986,7 +9986,7 @@ items:
             - name: Get
               href: api/b2cauthenticationmethodspolicy-get.md
             - name: Update
-              href: api/phoneauthenticationmethod-update.md
+              href: api/b2cauthenticationmethodspolicy-update.md
             - name: Delete
               href: api/phoneauthenticationmethod-delete.md
             - name: Add
@@ -9995,37 +9995,28 @@ items:
               href: api/phoneauthenticationmethod-enablesmssignin.md
             - name: Disable SMS sign-in
               href: api/phoneauthenticationmethod-disablesmssignin.md
+        - name: Authentication method policy
+          items:
+          - name: Overview
+            href: resources/authenticationmethodspolicies-overview.md
           - name: FIDO2 Security Key
-            href: resources/fido2authenticationmethod.md
+            href: resources/fido2authenticationmethodconfiguration.md
             items:
-            - name: List
-              href: api/fido2authenticationmethod-list.md
             - name: Get
-              href: api/fido2authenticationmethod-get.md
-            - name: Delete
-              href: api/fido2authenticationmethod-delete.md
-          - name: Microsoft Authenticator Paswordless Phone Sign-in
-            href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
-            items:
-            - name: List
-              href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-list.md
-            - name: Get
-              href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
-            - name: Delete
-              href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
-          - name: Email
-            href: resources/emailauthenticationmethod.md
-            items:
-            - name: List
-              href: api/emailauthenticationmethod-list.md
-            - name: Get
-              href: api/emailauthenticationmethod-get.md
+              href: api/fido2authenticationmethodconfiguration-get.md
             - name: Update
-              href: api/emailauthenticationmethod-update.md
+              href: api/fido2authenticationmethodconfiguration-update.md
             - name: Delete
-              href: api/emailauthenticationmethod-delete.md
-            - name: Add
-              href: api/emailauthenticationmethod-post.md
+              href: api/fido2authenticationmethodconfiguration-delete.md
+          - name: Microsoft Authenticator Passwordless Phone Sign-in
+            href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
+            items:
+            - name: Get
+              href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-get.md
+            - name: Update
+              href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
+            - name: Delete
+              href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
         - name: Certificate-based auth configuration
           href: resources/certificatebasedauthconfiguration.md
           items:
