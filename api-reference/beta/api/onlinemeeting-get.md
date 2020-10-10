@@ -167,7 +167,65 @@ Content-Length: 1574
     }  
 ```
 
-### Example 2: Retrieve an online meeting by JoinWebUrl
+### Example 2: Retrieve an online meeting by meeting ID
+
+#### Request
+
+Using user token
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2
+```
+
+Using app token
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2
+```
+
+#### Response
+
+> **Note:** The response object shown here has been shortened for readability. All the properties will be returned from an actual call.
+
+```json
+{
+    "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2",
+    "creationDateTime": "2020-09-29T22:35:33.1594516Z",
+    "startDateTime": "2020-09-29T22:35:31.389759Z",
+    "endDateTime": "2020-09-29T23:35:31.389759Z",
+    "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
+    "subject": null,
+    "autoAdmittedUsers": "EveryoneInCompany",
+    "isEntryExitAnnounced": true,
+    "allowedPresenters": "everyone",
+    "videoTeleconferenceId": "(redacted)",
+    "participants": {
+        "organizer": {
+            "upn": "(redacted)",
+            "role": "presenter",
+            "identity": {
+                "user": {
+                    "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+                    "displayName": null,
+                    "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+                    "identityProvider": "AAD"
+                }
+            }
+        },
+        "attendees": [],
+        "producers": [],
+        "contributors": []
+    },
+    "lobbyBypassSettings": {
+        "scope": "organization",
+        "isDialInBypassEnabled": false
+    }
+}
+```
+
+### Example 3: Retrieve an online meeting by JoinWebUrl
+
+#### Request
 
 <!-- { "blockType": "ignored" } -->
 ```http
