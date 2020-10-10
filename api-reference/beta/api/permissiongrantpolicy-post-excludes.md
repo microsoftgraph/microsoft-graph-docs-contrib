@@ -1,5 +1,5 @@
 ---
-title: "Add permissionGrantConditionSet to excludes collection of permissionGrantPolicy"
+title: "Create permissionGrantConditionSet in excludes collection of permissionGrantPolicy"
 description: "Add conditions under which a permission grant event is excluded in a permission grant policy."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 
-# Add permissionGrantConditionSet to excludes collection of permissionGrantPolicy
+# Create permissionGrantConditionSet in excludes collection of permissionGrantPolicy
 
 Namespace: microsoft.graph
 

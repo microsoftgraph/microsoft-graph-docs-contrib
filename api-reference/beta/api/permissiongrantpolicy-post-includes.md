@@ -1,5 +1,5 @@
 ---
-title: "Add permissionGrantConditionSet to includes collection of permissionGrantPolicy"
+title: "Create permissionGrantConditionSet in includes collection of permissionGrantPolicy"
 description: "Add conditions under which a permission grant event is included in a permission grant policy."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 
-# Add permissionGrantConditionSet to includes collection of permissionGrantPolicy
+# Create permissionGrantConditionSet in includes collection of permissionGrantPolicy
 
 Namespace: microsoft.graph
 
