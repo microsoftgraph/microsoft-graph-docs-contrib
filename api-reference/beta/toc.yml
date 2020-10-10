@@ -930,9 +930,9 @@ items:
           items:
           - name: List
             href: api/serviceprincipal-list-delegatedpermissionclassifications.md
-          - name: Add
+          - name: Create
             href: api/serviceprincipal-post-delegatedpermissionclassifications.md
-          - name: Remove
+          - name: Delete
             href: api/serviceprincipal-delete-delegatedpermissionclassifications.md
         - name: Membership
           items:
@@ -10264,15 +10264,15 @@ items:
               items:
                 - name: List includes
                   href: api/permissiongrantpolicy-list-includes.md
-                - name: Add to includes
+                - name: Create in includes
                   href: api/permissiongrantpolicy-post-includes.md
-                - name: Remove from includes
+                - name: Delete from includes
                   href: api/permissiongrantpolicy-delete-includes.md
                 - name: List excludes
                   href: api/permissiongrantpolicy-list-excludes.md
-                - name: Add to excludes
+                - name: Create in excludes
                   href: api/permissiongrantpolicy-post-excludes.md
-                - name: Remove from excludes
+                - name: Delete from excludes
                   href: api/permissiongrantpolicy-delete-excludes.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
