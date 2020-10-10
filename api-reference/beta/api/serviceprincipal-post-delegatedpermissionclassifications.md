@@ -1,5 +1,5 @@
 ---
-title: "Add a delegatedPermissionClassification to a service principal"
+title: "Add delegatedPermissionClassification to delegatedPermissionClassifications collection of servicePrincipal"
 description: "Classify a permission by adding a delegatedPermissionClassification to the API's service principal."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 
-# Add a delegatedPermissionClassification to a service principal
+# Add delegatedPermissionClassification to delegatedPermissionClassifications collection of servicePrincipal
 
 Namespace: microsoft.graph
 

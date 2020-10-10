@@ -1,5 +1,5 @@
 ---
-title: "Update permissionGrantPoliciy"
+title: "Update permissionGrantPolicy"
 description: "Update a permissionGrantPolicy object."
 localization_priority: Normal
 doc_type: "apiPageType"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update properties of a  [permissionGrantPolicy](../resources/permissiongrantpolicy.md). 
+Update properties of a  [permissionGrantPolicy](../resources/permissiongrantpolicy.md).
 
 ## Permissions
 

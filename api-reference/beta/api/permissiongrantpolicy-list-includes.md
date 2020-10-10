@@ -1,5 +1,5 @@
 ---
-title: "List includes condition sets for a permission grant policy"
+title: "List includes collection of permissionGrantPolicy"
 description: "Retrieve a list of the condition sets which describe conditions under which a permission grant event is included in a permission grant policy."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 
-# List includes condition sets for a permission grant policy
+# List includes collection of permissionGrantPolicy
 
 Namespace: microsoft.graph
 

@@ -1,5 +1,5 @@
 ---
-title: "Delete an includes condition set from a permission grant policy"
+title: "Delete permissionGrantConditionSet from includes collection of permissionGrantPolicy"
 description: "Deletes an included condition set from permission grant policy."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 
-# Delete an includes condition set from a permission grant policy
+# Delete permissionGrantConditionSet from includes collection of permissionGrantPolicy
 
 Namespace: microsoft.graph
 

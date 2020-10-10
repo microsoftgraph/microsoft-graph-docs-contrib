@@ -1,5 +1,5 @@
 ---
-title: "Delete a delegated permission classification from a service principal"
+title: "Delete delegatedPermissionClassification from delegatedPermissionClassifications collection of servicePrincipal"
 description: "Delete a delegated permission classification from an API's service principal."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 
-# Delete a delegated permission classification from a service principal
+# Delete delegatedPermissionClassification from delegatedPermissionClassifications collection of servicePrincipal
 
 Namespace: microsoft.graph
 

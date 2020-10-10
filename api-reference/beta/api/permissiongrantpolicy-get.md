@@ -1,5 +1,5 @@
 ---
-title: "Get permissionGrantPoliciy"
+title: "Get permissionGrantPolicy"
 description: "Retrieve a single permissionGrantPolicy object."
 localization_priority: Normal
 doc_type: "apiPageType"

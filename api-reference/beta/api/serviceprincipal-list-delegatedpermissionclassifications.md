@@ -1,5 +1,5 @@
 ---
-title: "List delegatedPermissionClassifications for a service principal"
+title: "List delegatedPermissionClassifications collection of servicePrincipal"
 description: "Retrieve a list of classifications given to delegated permissions exposed by an API's service principal."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 
-# List delegatedPermissionClassifications granted for a service principal
+# List delegatedPermissionClassifications collection of servicePrincipal
 
 Namespace: microsoft.graph
 

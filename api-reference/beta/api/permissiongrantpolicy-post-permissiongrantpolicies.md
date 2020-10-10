@@ -1,5 +1,5 @@
 ---
-title: "Create a permission grant policy"
+title: "Create permissionGrantPolicy"
 description: "Creates a permissionGrantPolicy object that describes the conditions under which permissions may be granted."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 
-# Create a permission grant policy
+# Create permissionGrantPolicy
 
 Namespace: microsoft.graph
 

@@ -1,5 +1,5 @@
 ---
-title: "Delete a permission grant policy"
+title: "Delete permissionGrantPolicy"
 description: "Delete a permissionGrantPolicy object."
 localization_priority: Normal
 doc_type: "apiPageType"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 
-# Delete a permission grant policy
+# Delete permissionGrantPolicy
 
 Namespace: microsoft.graph
 
