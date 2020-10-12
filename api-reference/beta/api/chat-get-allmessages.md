@@ -37,7 +37,11 @@ GET /users/{id}/chats/allMessages
 
 This operation supports [date range parameters](/graph/query-parameters) to customize the response.
 
-GET /beta/users/{id}/chats/allMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
+### Example
+
+```http
+GET /users/{id}/chats/allMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
+```
 
 ## Request headers
 | Header       | Value |
