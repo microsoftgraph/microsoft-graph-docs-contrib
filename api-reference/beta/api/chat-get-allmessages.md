@@ -13,10 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> [!Important] 
-> APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the Version selector.
-
-Retrieve all 1:1, group chats, meeting chats and Private channel messages the user is involved in.
+Get all [chats](../resources/chatmessage.md) that a user is a participant in, including individual and group chats, meeting chats, and private channel messages.
 
 ## Permissions
 
@@ -33,7 +30,7 @@ The following permissions are required to call this API. To learn more, includin
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/users/{id}/chats/allMessages
+GET /users/{id}/chats/allMessages
 ```
 
 ## Optional query parameters
@@ -49,7 +46,7 @@ GET https://graph.microsoft.com/beta/users/{id}/chats/allMessages?$top=50&$filte
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of [chatmessages](../resources/chatmessage.md) in the response body.
+If successful, this method returns a `200 OK` response code and a list of [chatMessages](../resources/chatmessage.md) in the response body.
 
 ## Example
 ##### Request
@@ -63,17 +60,18 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/chats/allMessages
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chat-message-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-message-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chat-message-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 
 ---
 
