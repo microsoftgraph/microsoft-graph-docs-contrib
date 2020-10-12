@@ -55,3 +55,4 @@ The following is a JSON representation of the resource.
       Referenced type microsoft.graph.licenseAssignmentState is not defined in the doc set! Potential suggestion: UNKNOWN"
   ]
 }-->
+

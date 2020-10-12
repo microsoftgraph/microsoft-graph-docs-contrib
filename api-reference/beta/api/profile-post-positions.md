@@ -67,6 +67,8 @@ If successful, this method returns `201, Created` response code and a new [workP
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_workposition_from_profile"
@@ -92,11 +94,25 @@ Content-type: application/json
       "webUrl": "https://www.adventureworks.com"
     },
     "jobTitle": "Senior Product Branding Manager II",
-    "role": "consulting",
+    "role": "consulting"
   },
   "isCurrent": true
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-workposition-from-profile-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-workposition-from-profile-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-workposition-from-profile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -167,3 +183,5 @@ Content-type: application/json
   "isCurrent": true
 }
 ```
+
+

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
+
 Create one or more single-value extended properties in a new or existing instance of a resource.
 
 The following user resources are supported:
@@ -293,4 +295,6 @@ To see the newly created extended property, [get the message expanded with the e
   "suppressions": []
 }
 -->
+
+
 
