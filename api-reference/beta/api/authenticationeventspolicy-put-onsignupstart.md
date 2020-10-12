@@ -1,13 +1,13 @@
 ---
-title: "Create onSignupStart"
-description: "Create a new authenticationAction object."
+title: "Replace onSignupStart"
+description: "Replace an authenticationAction object."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Create onSignupStart
+# Replace onSignupStart
 
 Namespace: microsoft.graph
 
