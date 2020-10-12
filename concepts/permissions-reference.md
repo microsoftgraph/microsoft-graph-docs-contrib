@@ -1367,6 +1367,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _Policy.ReadWrite.ConditionalAccess_ | Read and write your organization's conditional access policies | Allows the app to read and write your organization's conditional access policies on behalf of the signed-in user. | Yes | No |
 | _Policy.ReadWrite.FeatureRollout_ | Read and write your organization's feature rollout policies | Allows the app to read and write your organization's feature rollout policies on behalf of the signed-in user. Includes abilities to assign and remove users and groups to rollout of a specific feature. | Yes | No |
 | _Policy.ReadWrite.TrustFramework_ | Read and write your organization's trust framework policies | Allows the app to read and write your organization's trust framework policies on behalf of the signed-in user. | Yes | No |
+| _Policy.ReadWrite.AuthenticationMethod_ | Read and write your organization's authentication method policies | Allows the app to read and write the authentication method policies, on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 
@@ -1378,6 +1379,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _Policy.ReadWrite.Authorization_ | Read and write your organization's authorization policy | Allows the app to read and write your organization's authorization policy on behalf of the signed-in user.  For example, authorization policies can control some of the permissions that the out-of-the-box user role has by default. | Yes | No |
 | _Policy.ReadWrite.FeatureRollout_ | Read and write feature rollout policies | Allows the app to read and write feature rollout policies without a signed-in user. Includes abilities to assign and remove users and groups to rollout of a specific feature. | Yes |
 | _Policy.ReadWrite.TrustFramework_ | Read and write your organization's trust framework policies | Allows the app to read and write your organization's trust framework policies without a signed in user. | Yes |
+| _Policy.ReadWrite.AuthenticationMethod_ | Read and write your organization's authentication method policies | Allows the app to read and write the authentication method policies, on behalf of the signed-in user. | Yes |
 
 ### Example usage
 
@@ -1531,26 +1533,26 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ExternalItem.ReadWrite.All_ | Read and Write external data | Allows an app to write external data into the indexing API. | Yes | No |
+| _ExternalItem.ReadWrite.All_ | Read and Write external data | Allows an app to write external with the Microsoft Graph connectors indexing API. | Yes | No |
 
 #### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
-| _ExternalItem.ReadWrite.All_ | Read or write external data | Allows an app to ingest  via the Microsoft Graph Connectors indexing API, or query data ingested via the Microsoft Graph Connectors| Yes | No |
+| _ExternalItem.Read.All_ | Read external data | Allows an app to query data ingested with Microsoft Graph connectors| Yes | No |
 
 ### Remarks
 Search permissions are only valid for work or school accounts.
 
 This search permission is only applicable to ingested data from the indexing API.
 
-Access to data via search requires the corresponding permission. Ex : _Files.Read.All_ to access files via search.
+Access to data via search requires the read permission to the item. Ex : _Files.Read.All_ to access files via search.
 
 ### Example usage
 
-#### Application
+#### Delegated
 
-* _ExternalItem.ReadWrite.All_ :  Access external data from the [search API](/graph/api/resources/search-api-overview) (`POST /search/query`).
+* _ExternalItem.Read.All_ :  Access external data from the [search API](/graph/api/resources/search-api-overview) (`POST /search/query`).
 
 ---
 
@@ -2147,6 +2149,25 @@ With these permissions, all authentication methods can be read and managed on a 
 * Primary authentication (password)
 * Second factor of multi-factor authentication/MFA (phone numbers)
 * Self-Service Password Reset/SSPR (email address)
+
+## Authentication methods policy permissions ([preview](#permissions-availability-status))
+
+#### Delegated permissions
+
+|Permission                              |Display String                        |Description        |Admin Consent Required | Microsoft Account supported |
+|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|:----------------------------|
+|_Policy.ReadWrite.AuthenticationMethod_ (preview)        |Read and write all authentication methods policies.       |Allows the app to read and write all authentication methods policies on an Azure AD tenant. Additionally, the signed-in user must have the Global Administrator role assigned. |Yes|No|
+
+#### Application permissions
+
+|Permission                              |Display String                        |Description        |Admin Consent Required |
+|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|
+|_Policy.ReadWrite.AuthenticationMethod_ (private preview)   |Read and write all authentication methods policies.    |Allows the app to read and write all authentication methods policies on an Azure AD tenant. |Yes|
+
+
+### Remarks
+
+Authentication methods policy permissions are used to manage settings in the authentication methods policy, including enabling and disabling authentication methods, allowing users and groups to use those methods, and configuring other settings related to the authentication methods that users may register and use in a tenant.
 
 ## Permission scenarios
 

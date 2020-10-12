@@ -1,19 +1,19 @@
 ---
-title: "Delete b2cUserFlow"
-description: "Delete a b2cUserFlow object."
+title: "Delete b2xIdentityUserFlow"
+description: "Delete a b2xIdentityUserFlow object."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Delete b2cUserFlow
+# Delete b2xIdentityUserFlow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [b2cUserFlow](../resources/b2cuserflows.md) object.
+Delete a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ The work or school account needs to belong to one of the following roles:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /identity/b2cUserFlows/{id}
+DELETE /identity/b2xUserFlows/{id}
 ```
 
 ## Request headers
@@ -61,23 +61,23 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_b2cUserFlows"
+  "name": "delete_b2xUserFlows"
 }
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}
+DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-b2cuserflows-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-b2xuserflows-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-b2cuserflows-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-b2xuserflows-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-b2cuserflows-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-b2xuserflows-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -86,6 +86,8 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}
 ### Response
 
 The following is an example of the response.
+
+**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
