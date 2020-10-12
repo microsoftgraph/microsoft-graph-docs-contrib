@@ -24,7 +24,7 @@ The people API returns people ordered by relevance to a user, based on that user
 
 The insights API uses advanced analytics and machine learning to provide the most relevant files users need throughout their work day. The API powers familiar Microsoft 365 experiences, including Office Delve, SharePoint Home, the Discover view in OneDrive for Business, and Outlook on the web.
 
-![People and insights API return relevant people and documents for a user](images/social-intel-concept-overview-data.png)
+![People and insights API return relevant people and documents for a user](images/social-intel-concept-overview-data-update2020.png)
 
 ## Why integrate with people data?
 
