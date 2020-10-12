@@ -9,7 +9,7 @@ ms.prod: "insights"
 
 # Use the People API in Microsoft Graph to get information about the people most relevant to you
 
-Microsoft Graph applications can use the People API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. People can be local contacts, contacts from social networking or from an organization’s directory, and people from recent communications (such as email and Skype). Along with generating this insight, the People API also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization.
+Microsoft Graph applications can use the People API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. People can be local contacts or from an organization’s directory, and people from recent communications. Along with generating this insight, the People API also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization.
 The People API is particularly useful for people picking scenarios, such as composing an email or creating a meeting. For example, you can use the People API in email compose scenarios.
 
 ## Authorization
@@ -472,7 +472,7 @@ Content-type: application/json
 }
 ```
 ### Types of results included
-By default, Microsoft Graph serves mailbox-only results, which do not include directory/organization results. To retrieve directory results, specify an HTTP header, as shown.
+By default, Microsoft Graph serves mailbox-only results, which are your saved contacts or people you are most likely to interact with. To retrieve organizational wide directory results, specify a HTTP header, as shown.
 
 ```http
 "X-PeopleQuery-QuerySources: Mailbox,Directory”
@@ -690,7 +690,7 @@ Content-type: application/json
 
 ### Browse another user’s relevant people
 
-The following request gets the people most relevant to another person in the signed-in user's organization. This request requires the People.Read.All permission. All the query parameters described in the above sections apply as well.
+The following request gets the people most relevant to another person in the signed-in user's organization as described in <a href="### Working with feature implementation ">Working With feature </a>. This request requires the People.Read.All permission. All the query parameters described in the above sections apply as well.
 
 In this example, Roscoe Seidel's relevant people are displayed.
 
