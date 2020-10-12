@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Authentication events are used to invoke user flows at specific points in the authentication flow. When creating authentication events, you are enabling a specific application to be associated with a user flow, therefore enabling a [self-service sign up](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) process on it. Once you create an authentication event for an application, users who go to that application will be able to initiate a sign-up flow that provisions a guest account.
+Authentication events are used to invoke actions at specific points in the authentication flow. By assigning [invokeUserFlowAction](../resources/invokeuserflowaction.md) to an authenticationEventsPolicy, you are selecting an application to be associated with a user flow, therefore enabling a [self-service sign up](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) process on it. Once the authentication event for invoking a user flow is created, users who go to that application will be able to initiate a sign-up flow that provisions a guest account.
 
 ## Methods
 
