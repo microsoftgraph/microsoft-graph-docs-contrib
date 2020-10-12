@@ -1,19 +1,19 @@
 ---
-title: "Delete identityProvider from b2xUserFlow"
-description: "Delete an identityProvider from a b2xUserFlow."
+title: "Delete b2cIdentityUserFlow"
+description: "Delete a b2cIdentityUserFlow object."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Delete identityProvider from b2xUserFlow
+# Delete b2cIdentityUserFlow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an identity provider from a [b2xUserFlow](../resources/b2xuserflows.md) object. For self-service sign up user flows, the values can be `Google-OAUTH` or `Facebook-OAUTH`.
+Delete a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object.
 
 ## Permissions
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account)|IdentityUserFlow.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application| IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.ReadWrite.All|
 
 The work or school account needs to belong to one of the following roles:
 
@@ -33,9 +33,8 @@ The work or school account needs to belong to one of the following roles:
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
-DELETE /b2xUserFlows/{id}/identityProviders/{id}/$ref
+DELETE /identity/b2cUserFlows/{id}
 ```
 
 ## Request headers
@@ -50,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns `204 No Content` response code.
 
 ## Example
 
@@ -62,23 +61,23 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_b2xUserFlows_identityProviders"
+  "name": "delete_b2cUserFlows"
 }
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_PartnerSignUp/identityProviders/Facebook-OAUTH/$ref
+DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-b2xuserflows-identityproviders-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-b2cuserflows-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-b2xuserflows-identityproviders-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-b2cuserflows-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-b2xuserflows-identityproviders-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-b2cuserflows-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -91,9 +90,10 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
-} -->
+}
+-->
 
-```http
+``` http
 HTTP/1.1 204 No Content
 ```
 
