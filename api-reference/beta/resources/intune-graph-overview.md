@@ -16,6 +16,8 @@ The Microsoft Graph API for Intune enables programmatic access to Intune informa
 
 For mobile device management (MDM) scenarios, the Microsoft Graph API for Intune supports standalone deployments; Intune [hybrid deployments](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) are not supported. 
 
+All Beta Microsoft Graph APIs for Intune complete full testing and validation by the Intune team before being deployed in Microsoft Graph.  Changes may occur to the Beta API's.  Review the [changelog](https://docs.microsoft.com/en-us/graph/changelog) for the latest API changes. 
+
 ## Using the Microsoft Graph API for Intune
 
 Intune provides data into Microsoft Graph in the same way as other cloud services do, with rich entity information and relationship navigation. Use Microsoft Graph to combine information from other services and Intune to build rich cross-service applications for IT professionals or end users.     
@@ -37,7 +39,7 @@ The following example shows how you can determine whether an application is inst
 
 ## Using Microsoft Graph permissions
 
-Microsof Graph controls access to resources via permissions. As a developer, you must specify the permissions you need to access Intune resources. Typically, you specify the permissions in the Azure Active Directory portal. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference).
+Microsoft Graph controls access to resources via permissions. As a developer, you must specify the permissions you need to access Intune resources. Typically, you specify the permissions in the Azure Active Directory portal. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
