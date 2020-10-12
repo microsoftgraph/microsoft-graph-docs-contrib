@@ -9981,6 +9981,7 @@ items:
               - name: Disable SMS sign-in
                 href: api/phoneauthenticationmethod-disablesmssignin.md
           - name: B2C authentication methods
+            href: resources/b2cauthenticationmethodspolicy.md
             items:
             - name: Delete
               href: api/phoneauthenticationmethod-delete.md
