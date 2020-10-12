@@ -3,7 +3,7 @@ title: "Delete subscription"
 description: "Delete a subscription."
 localization_priority: Normal
 author: "davidmu1"
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
