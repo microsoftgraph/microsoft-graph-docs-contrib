@@ -9941,11 +9941,9 @@ items:
             - name: Update
               href: api/authenticationflowspolicy-update.md
         - name: Authentication methods
+          href: resources/authenticationmethods-overview.md
           items:
           - name: B2B authentication methods
-            href: resources/authenticationmethods-overview.md
-            items:
-            - name: Authentication method
               href: resources/authenticationmethod.md
               items:
               - name: List
@@ -9991,7 +9989,7 @@ items:
               href: api/phoneauthenticationmethod-enablesmssignin.md
             - name: Disable SMS sign-in
               href: api/phoneauthenticationmethod-disablesmssignin.md
-          - name: FIDO2 Security Key
+          - name: FIDO2
             href: resources/fido2authenticationmethod.md
             items:
             - name: List
@@ -10026,7 +10024,7 @@ items:
           items:
           - name: Overview
             href: resources/authenticationmethodspolicies-overview.md
-          - name: FIDO2 Security Key
+          - name: FIDO2 policy
             href: resources/fido2authenticationmethodconfiguration.md
             items:
             - name: Get
@@ -10035,7 +10033,7 @@ items:
               href: api/fido2authenticationmethodconfiguration-update.md
             - name: Delete
               href: api/fido2authenticationmethodconfiguration-delete.md
-          - name: Microsoft Authenticator Passwordless Phone Sign-in
+          - name: Microsoft Authenticator Passwordless Phone Sign-in policy
             href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
             items:
             - name: Get
@@ -10044,7 +10042,7 @@ items:
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
             - name: Delete
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
-          - name: B2C authentication methods
+          - name: B2C authentication methods policy
             href: resources/b2cauthenticationmethodspolicy.md
             items:
             - name: Get
