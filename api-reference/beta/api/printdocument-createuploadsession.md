@@ -20,6 +20,7 @@ As part of the response, this action returns an upload URL that you can use in s
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription and have a permission that grants [Get printer](printer-get.md) or [Get printerShare](printershare-get.md) access depending upon whether printer or printerShare is being used.
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -29,9 +30,18 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+To create an upload session using **printer**: 
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /print/printers/{id}/jobs/{id}/documents/{id}/createUploadSession
+```
+
+To create an upload session using **printerShare**: 
+
+<!-- { "blockType": "ignored" } -->
+```http
+POST /print/shares/{id}/jobs/{id}/documents/{id}/createUploadSession
 ```
 
 ## Request headers
@@ -72,7 +82,7 @@ The following example shows how to create an upload session that you can use in 
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/print/printers/1c879027-5120-4aaf-954a-ebfd509a3bcc/jobs/46207/documents/9001bcd9-e36a-4f51-bfc6-140c3ad7f9f7/createUploadSession
+POST https://graph.microsoft.com/beta/print/shares/1c879027-5120-4aaf-954a-ebfd509a3bcc/jobs/46207/documents/9001bcd9-e36a-4f51-bfc6-140c3ad7f9f7/createUploadSession
 Content-type: application/json
 
 {
@@ -99,8 +109,6 @@ Content-type: application/json
 
 
 ### Response
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
