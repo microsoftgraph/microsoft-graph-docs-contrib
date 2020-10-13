@@ -19,7 +19,7 @@ Represents the processing status of the printer, including any errors.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |state|printerProcessingState|The current processing state. Valid values are described in the following table. Read-only.|
-|details|printerProcessingStateDetail collection|The list of reasons describing why the printer is in the current state. Valid values are described in the following table. Read-only.|
+|details|printerProcessingStateDetail collection|The list of details describing why the printer is in the current state. Valid values are described in the following table. Read-only.|
 |description|String|A human-readable description of the printer's current processing state. Read-only.|
 
 ### printerProcessingState values
