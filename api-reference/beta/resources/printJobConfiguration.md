@@ -1,19 +1,19 @@
 ---
-title: printerDocumentConfiguration resource type
-description: A group of settings that a printer should use to print a document.
+title: printJobConfiguration resource type
+description: A group of settings that a printer should use to print a job.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
 ---
 
-# printerDocumentConfiguration resource type
+# printJobConfiguration resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A group of settings that a printer should use to print a document.
+A group of settings that a printer should use to print a job.
 
 ## Properties
 | Property     | Type        | Description |
@@ -21,7 +21,7 @@ A group of settings that a printer should use to print a document.
 |pageRanges|[integerRange](integerrange.md) collection|The page ranges to print. Read-only.|
 |quality|printQuality|The print quality to use when printing the job. Valid values are described in the table below. Read-only.|
 |dpi|Int32|The resolution to use when printing the job, expressed in dots per inch (DPI). Read-only.|
-|feedDirection|printerFeedDirection|The direction to use when feeding media into the printer. Valid values are described in the following table. Read-only.|
+|feedOrientation|printerFeedOrientation|The orientation to use when feeding media into the printer. Valid values are described in the following table. Read-only.|
 |orientation|printOrientation|The orientation setting the printer should use when printing the job. Valid values are described in the following table.|
 |duplexMode|printDuplexMode|The duplex mode the printer should use when printing the job. Valid values are described in the table below. Read-only.|
 |copies|Int32|The number of copies that should be printed. Read-only.|
@@ -46,7 +46,7 @@ A group of settings that a printer should use to print a document.
 |high|2|The printer will print the job using high (commonly known as "best" or "fine") quality.|
 |unknownFutureValue|3|Evolvable enumeration sentinel value. Do not use.|
 
-## printerFeedDirection values
+## printerFeedOrientation values
 
 |Member|Value|Description|
 |:---|:---|
@@ -138,7 +138,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.printerDocumentConfiguration"
+  "@odata.type": "microsoft.graph.printJobConfiguration"
 }-->
 
 ```json
@@ -146,7 +146,7 @@ The following is a JSON representation of the resource.
   "pageRanges": [{"@odata.type": "microsoft.graph.integerRange"}],
   "quality": {"@odata.type": "microsoft.graph.printQuality"},
   "dpi": 12345,
-  "feedDirection": {"@odata.type": "microsoft.graph.printerFeedDirection"},
+  "feedOrientation": {"@odata.type": "microsoft.graph.printerFeedOrientation"},
   "orientation": {"@odata.type": "microsoft.graph.printOrientation"},
   "duplexMode": {"@odata.type": "microsoft.graph.printDuplexMode"},
   "copies": 12345,
