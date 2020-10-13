@@ -28,13 +28,13 @@ Microsoft To Do provides a new entity called _linked resource_, which you can us
 
 |Operation|Request|
 |:--------|:--|
-| List all the task lists | GET https://graph.microsoft.com/beta/me/todo/lists |
-| List all tasks in a task list | GET https://graph.microsoft.com/me/todo/lists/{todoTaskListId}/tasks |
-| Create a new task | POST https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks |
-| Update a task | PATCH https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
-| Delete a task | DELETE https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
+| List all the task lists | GET https://graph.microsoft.com/v1.0/me/todo/lists |
+| List all tasks in a task list | GET https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks |
+| Create a new task | POST https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks |
+| Update a task | PATCH https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
+| Delete a task | DELETE https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
 
 ## API reference
 Looking for the API reference for this service?
 
-- [To Do API in Microsoft Graph](/graph/api/resources/todo-overview?view=graph-rest-beta)
+- [To Do API in Microsoft Graph](/graph/api/resources/todo-overview?view=graph-rest-1.0)
