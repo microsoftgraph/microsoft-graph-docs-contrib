@@ -46,7 +46,7 @@ A group of settings that a printer should use to print a job.
 |high|2|The printer will print the job using high (commonly known as "best" or "fine") quality.|
 |unknownFutureValue|3|Evolvable enumeration sentinel value. Do not use.|
 
-## printerFeedOrientation values
+### printerFeedOrientation values
 
 |Member|Value|Description|
 |:---|:---|
@@ -54,7 +54,7 @@ A group of settings that a printer should use to print a job.
 |shortEdgeFirst|1|The printer will consume sheets from the active tray in "portrait" orientation, with the short edge of the sheet first.|
 |unknownFutureValue|2|Evolvable enumeration sentinel value. Do not use.|
 
-## printOrientation values
+### printOrientation values
 
 |Member|Value|Description|
 |:---|:---|:---|
