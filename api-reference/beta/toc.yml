@@ -9946,10 +9946,10 @@ items:
           - name: B2B authentication methods
             href: resources/authenticationmethod.md
             items:
-              - name: List
-                href: api/authentication-list-methods.md
-              - name: Get
-                href: api/authenticationmethod-get.md
+            - name: List
+              href: api/authentication-list-methods.md
+            - name: Get
+              href: api/authenticationmethod-get.md
             - name: Password
               href: resources/passwordauthenticationmethod.md
               items:
