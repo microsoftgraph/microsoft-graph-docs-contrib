@@ -31,6 +31,7 @@ Represents a print job that has been queued for a printer.
 |id|String|The printer's GUID. Read-only.|
 |createdDateTime|DateTimeOffset|The DateTimeOffset when the job was created. Read-only.|
 |status|[printJobStatus](printjobstatus.md)|The status of the print job. Read-only.|
+|configuration|[printJobConfiguration](printJobConfiguration.md)|A group of settings that a printer should use to print a job.|
 
 ## Relationships
 | Relationship | Type        | Description |
