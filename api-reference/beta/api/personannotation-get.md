@@ -62,15 +62,15 @@ If successful, this method returns a `200 OK` response code and a [personAnnotat
 GET https://graph.microsoft.com/beta/me/profile/notes/{id}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-interests-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-personannotation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-interests-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-personannotation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-interests-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-personannotation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -116,3 +116,5 @@ Content-Type: application/json
   "displayName": "About Me"
 }
 ```
+
+

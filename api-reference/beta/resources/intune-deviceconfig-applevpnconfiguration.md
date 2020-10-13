@@ -3,7 +3,7 @@ title: "appleVpnConfiguration resource type"
 description: "Apple VPN configuration profile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -55,6 +55,8 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |safariDomains|String collection|Safari domains when this VPN per App setting is enabled. In addition to the apps associated with this VPN, Safari domains specified here will also be able to trigger this VPN connection.|
 |onDemandRules|[vpnOnDemandRule](../resources/intune-deviceconfig-vpnondemandrule.md) collection|On-Demand Rules. This collection can contain a maximum of 500 elements.|
 |providerType|[vpnProviderType](../resources/intune-deviceconfig-vpnprovidertype.md)|Provider type for per-app VPN. Possible values are: `notConfigured`, `appProxy`, `packetTunnel`.|
+|excludedDomains|String collection|Domains that are accessed through the public internet instead of through VPN, even when per-app VPN is activated|
+|disableOnDemandUserOverride|Boolean|Toggle to prevent user from disabling automatic VPN in the Settings app|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Proxy Server.|
 |optInToDeviceIdSharing|Boolean|Opt-In to sharing the device's Id to third-party vpn clients for use during network access control validation.|
 
@@ -162,6 +164,10 @@ Here is a JSON representation of the resource.
     }
   ],
   "providerType": "String",
+  "excludedDomains": [
+    "String"
+  ],
+  "disableOnDemandUserOverride": true,
   "proxyServer": {
     "@odata.type": "microsoft.graph.vpnProxyServer",
     "automaticConfigurationScriptUrl": "String",
@@ -171,6 +177,9 @@ Here is a JSON representation of the resource.
   "optInToDeviceIdSharing": true
 }
 ```
+
+
+
 
 
 

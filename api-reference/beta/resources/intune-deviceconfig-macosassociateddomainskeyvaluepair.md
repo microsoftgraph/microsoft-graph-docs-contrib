@@ -3,7 +3,7 @@ title: "macOSAssociatedDomainsKeyValuePair resource type"
 description: "Key value pair for associated domains"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -43,6 +43,9 @@ Here is a JSON representation of the resource.
   "value": "String"
 }
 ```
+
+
+
 
 
 

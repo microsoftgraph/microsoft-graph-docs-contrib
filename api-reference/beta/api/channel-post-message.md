@@ -1,13 +1,13 @@
 ---
 title: "Create chatMessage in a channel"
-description: "Create a new chatMessage in the specified channel."
+description: "Create new chatMessage in the specified channel."
 localization_priority: Normal
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Create chatMessage in a channel
+# Create chatMessage in channel
 
 Namespace: microsoft.graph
 
@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 Create a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).
 
-*We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.*
+> **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
 
-> **Note**: It is a violation of the [terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
+> **Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
 
 ## Permissions
 
@@ -115,7 +115,8 @@ Content-length: 160
     "etag": "id-value",
     "messageType": "message",
     "createdDateTime": "2019-02-04T19:58:15.511Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deleted": false,
     "subject": null,
     "summary": null,
