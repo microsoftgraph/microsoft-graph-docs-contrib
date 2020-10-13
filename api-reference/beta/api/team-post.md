@@ -761,7 +761,7 @@ HTTP/1.1 204 NoContent
 
 Action called on a team or channel that is not in migrationMode.
 
-#### Example 12: Add team members
+### Example 12: Add team members
 
 > **Note:** You can add a member to a team [using the Teams UI](https://support.microsoft.com/office/add-members-to-a-team-in-teams-aff2249d-b456-4bc3-81e7-52327b6b38e9) or Microsoft Graph [Add member](/graph/api/group-post-members?view=graph-rest-beta&tabs=http) API:
 
