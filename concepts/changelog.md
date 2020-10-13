@@ -26,6 +26,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## September 2020
 
+### Applications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added [delegatedPermissionClassifications](/graph/api/resources/delegatedpermissionclassification?view=graph-rest-beta) navigation to the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.
+
 ### Calendar
 
 | **Change type** | **Version**   | **Description**                          |
@@ -39,6 +45,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added [chatMessage](/graph/api/resources/presence) to the resources supported for [change notifications](/graph/webhooks). |
 
 ### Cloud communications
+
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **lobbyBypassSettings**, **isEntryExitAnnounced**, and **allowedPresenters** property to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) entity.|
@@ -113,6 +120,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **schedule** property to [accessPackageAssignment](/graph/api/resources/accesspackageassignment?view=graph-rest-beta) and [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) in entitlement management.|
+| Addition | beta | Added the [permissionGrantPolicy](/graph/api/resources/permissiongrantpolicy?view=graph-rest-beta) resource type.|
 | Addition | beta | Added the [bitlockerRecoveryKey](/graph/api/resources/bitlockerRecoveryKey?view=graph-rest-beta) resource type.|
 | Addition | beta | Added the **volumeType** enumeration type.|
 | Addition | beta | Added the **directorySizeQuota** complex type to the [organization](/graph/api/resources/organization?view=graph-rest-beta) entity. |
@@ -128,6 +136,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta|Added the [continuousAccessEvaluationPolicy](/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta) resource type.|
+|Addition|beta|Added the [permissionGrantPolicy](/graph/api/resources/permissiongrantpolicy?view=graph-rest-beta&preserve-view=true) resource type. Permission grant policies describe the conditions which must be met for permissions to be granted to apps.|
 |Addition|beta|Added the **permissionGrantPolicyIdsAssignedToDefaultUserRole** property to the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true) resource.|
 
 ### Reports
