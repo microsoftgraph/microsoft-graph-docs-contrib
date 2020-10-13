@@ -87,6 +87,8 @@ Some [trending](/graph/api/resources/insights-trending) or [used](/graph/api/res
 
 - For a user who has disabled item insights, querying the [trending](/graph/api/resources/insights-trending) and [used](/graph/api/resources/insights-used) resources in Microsoft Graph API return `HTTP 403 Forbidden`.
 
+- The Discover section in Outlook Mobile does not display documents of a user who has disabled item insights.
+
 
 ## Transition period
 To accommodate configuring item insights settings, through the end of 2020, Microsoft 365 respects both Delve settings and item insights settings, and enforces the stricter of the two if they differ. This means that a user is considered as opted out of item insights if the user has opted out by either Delve controls or item insights settings.
