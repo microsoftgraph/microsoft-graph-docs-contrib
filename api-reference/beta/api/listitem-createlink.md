@@ -1,45 +1,44 @@
 ---
-author: JeremyKelley
-description: "You can use createLink action to share a DriveItem via a sharing link."
-title: "driveItem: createLink"
+title: "listItem: createLink"
+description: "You can use createLink action to share a ListItem via a sharing link."
+author: "learafa"
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# driveItem: createLink
+
+# listItem: createLink
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can use **createLink** action to share a [DriveItem](../resources/driveitem.md) via a sharing link.
+You can use **createLink** action to share a [ListItem](../resources/listitem.md) via a sharing link.
 
 The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.
 If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 
-DriveItem resources inherit sharing permissions from their ancestors.
+ListItem resources inherit sharing permissions from their ancestors.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
 |Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
 |Application | Files.ReadWrite.All, Sites.ReadWrite.All |
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
-
-```http
-POST /drives/{driveId}/items/{itemId}/createLink
-POST /groups/{groupId}/drive/items/{itemId}/createLink
-POST /me/drive/items/{itemId}/createLink
-POST /sites/{siteId}/drive/items/{itemId}/createLink
-POST /users/{userId}/drive/items/{itemId}/createLink
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 ```
+
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -47,12 +46,12 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 |Content-Type|application/json. Required.|
 
 ## Request body
+In the request body, supply JSON representation of the parameters.
 
-The body of the request defines properties of the sharing link your application is requesting.
-The request should be a JSON object with the following properties.
+The following table shows the parameters that can be used with this action.
 
-|   Property                 |  Type  |                                 Description                                                               |
-| :----------------------| :----- | :---------------------------------------------------------------------------------------------------------|
+|Parameter|Type|Description|
+|:---|:---|:---|
 |type|String|Optional.The password of the sharing link that is set by the creator.|
 |scope|String|Optional. The scope of link to create. Either anonymous, organization or users.|
 |expirationDateTime|DateTimeOffset|A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission.|
@@ -72,7 +71,7 @@ The following values are allowed for the **type** parameter.
 | blocksDownload | Creates a read-only link that blocks download to the Item. This option is only available for files in OneDrive for Business and SharePoint.  |
 | createOnly     | Creates an upload-only link to the Item. This option is only available for folders in OneDrive for Business and SharePoint.             |
 | addressBar     | Gets the admin-allowed address bar link to the Item. Only available in OneDrive for Business and SharePoint. The organization admin configures whether this link type is supported, and what features are supported by this link type. |
-| adminDefault   | Creates the admin-allowed default link to the DriveItem. Only available in OneDrive for Business and SharePoint. The policy is enforced for the organization by the admin |
+| adminDefault   | Creates the admin-allowed default link to the ListItem. Only available in OneDrive for Business and SharePoint. The policy is enforced for the organization by the admin |
 
 ### Scope types
 
@@ -96,16 +95,13 @@ The following example requests a sharing link to be created for the DriveItem sp
 The sharing link is configured to be read-only and usable by anyone with the link.
 
 ### Request
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "driveItem_createlink"
-}-->
-
-```http
-POST /me/drive/items/{itemId}/createLink
+  "name": "listitem_createlink"
+}
+-->
+``` http
+POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 
 Content-Type: application/json
 Content-length: 212
@@ -123,21 +119,6 @@ Content-length: 212
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/item-createlink-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/item-createlink-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/item-createlink-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -146,8 +127,7 @@ Content-length: 212
   "@odata.type": "oneDrive.permission"
 }
 -->
-
-```http
+``` http
 HTTP/1.1 201 Created
 
 Content-Type: application/json
@@ -175,12 +155,8 @@ To create a company sharable link, use the **scope** parameter with a value of `
 
 ### Request
 
-
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite service.sharepoint" } -->
-
 ```http
-POST /me/drive/items/{item-id}/createLink
+POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 Content-Type: application/json
 
 {
@@ -188,20 +164,6 @@ Content-Type: application/json
   "scope": "organization"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-link-scoped-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-link-scoped-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-link-scoped-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 
@@ -235,32 +197,14 @@ When an embed link is created the `webHtml` property contains the HTML code for 
 
 ### Request
 
-
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite service.onedrive" } -->
-
 ```http
-POST /me/drive/items/{item-id}/createLink
+POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 Content-Type: application/json
 
 {
   "type": "embed"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-embedded-link-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-embedded-link-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-embedded-link-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 

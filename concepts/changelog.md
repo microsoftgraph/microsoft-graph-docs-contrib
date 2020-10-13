@@ -13,6 +13,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## October 2020
 
+### Files
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the [createLink](https://docs.microsoft.com/en-us/graph/api/listItem-createLink?view=graph-rest-beta) method to the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listItem?view=graph-rest-beta) resource|
+
 ### Identity and access | Identity and sign-in
 
 | **Change type** | **Version**   | **Description**                          |
