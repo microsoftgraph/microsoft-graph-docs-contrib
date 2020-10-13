@@ -29,7 +29,7 @@ To use the Universal Print service, the user or app's tenant must have an active
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /print/printers/{id}/resetDefaults
+POST /print/printers/{id}/restoreFactoryDefaults
 ```
 ## Request headers
 | Name          | Description   |
