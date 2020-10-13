@@ -32,7 +32,7 @@ Confirm the following additional prerequisites. Then you can use the [Microsoft 
 * **PowerShell module** - Install [module version 0.9.1 or higher](https://www.powershellgallery.com/packages/Microsoft.Graph).
 * **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or a higher version.
 
-#### Examples of method calls
+#### Command examples
 To get item insights configuration for an organization, use the Microsoft Graph PowerShell module and the following command, where you replace `$OrgID` with your applicable ID organization:
 ```powershell
    Get-MgOrganizationSettingItemInsight -OrganizationId $OrgID
