@@ -32,6 +32,9 @@ Represents a print job that has been queued for a printer.
 |createdDateTime|DateTimeOffset|The DateTimeOffset when the job was created. Read-only.|
 |status|[printJobStatus](printjobstatus.md)|The status of the print job. Read-only.|
 |configuration|[printJobConfiguration](printJobConfiguration.md)|A group of settings that a printer should use to print a job.|
+|isFetchable|Edm.Boolean|If true, document can be fetched by printer.|
+|redirectedFrom|Edm.String|Contains source job url, if the job has been redirected from another printer.|
+|redirectedTo|Edm.String|Contains destination job url, if the job has been redirected to another printer.|
 
 ## Relationships
 | Relationship | Type        | Description |
@@ -58,8 +61,12 @@ The following is a JSON representation of the resource.
 {
   "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
+  "isFetchable": "Boolean",
+  "redirectedFrom": "String",
+  "redirectedTo": "String",
   "status": {"@odata.type": "microsoft.graph.printJobStatus"},
   "createdBy": {"@odata.type": "microsoft.graph.userIdentity"},
+  "configuration": {"@odata.type": "microsoft.graph.printJobConfiguration"},
   "documents": [ {"@odata.type": "microsoft.graph.printDocument"} ]
 }
 
