@@ -28,6 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 > [!IMPORTANT]
 > \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to retrieve an online meeting on behalf of that user (user ID specified in the request path).
 
+## Optional query parameters
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -168,7 +171,7 @@ Content-Length: 1574
 ```
 
 ### Example 2: Retrieve an online meeting by meeting ID
-Retrieving meeting information via meeting ID can be done with either a user or application token. The meeting ID is provided in the response object when creating an [onlineMeeting](graph/api/application-post-onlinemeetings). This option is available to support use cases where the meeting ID is known, such as when an application first creates the meeting, then retrieves  meeting information later as a seperate action.
+Retrieving meeting information via meeting ID can be done with either a user or application token. The meeting ID is provided in the response object when creating an [onlineMeeting](../resources/onlinemeeting.md). This option is available to support use cases where the meeting ID is known, such as when an application first creates the meeting, then retrieves  meeting information later as a seperate action.
 
 #### Request
 
