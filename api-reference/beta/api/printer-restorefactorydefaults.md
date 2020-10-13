@@ -1,5 +1,5 @@
 ---
-title: "printer: resetDefaults"
+title: "printer: restoreFactoryDefaults"
 description: Reset a printer's default settings.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# printer: resetDefaults
+# printer: restoreFactoryDefaults
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reset a [printer](../resources/printer.md)'s default settings.
+Restore a [printer](../resources/printer.md)'s defaults settings to factory defaults.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,21 +49,21 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "printer-resetdefaults"
+  "name": "printer-restorefactorydefaults"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/print/printers/{id}/resetDefaults
+POST https://graph.microsoft.com/beta/print/printers/{id}/restoreFactoryDefaults
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/printer-resetdefaults-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/printer-restorefactorydefaults-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/printer-resetdefaults-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/printer-restorefactorydefaults-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/printer-resetdefaults-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/printer-restorefactorydefaults-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -84,7 +84,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "printer: resetDefaults",
+  "description": "printer: restoreFactoryDefaults",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
