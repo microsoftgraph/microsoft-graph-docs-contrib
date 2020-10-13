@@ -23,6 +23,15 @@ Represents organization data associated with a user. The **employeeOrgData** pro
 
 ## JSON representation
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "costCenter",
+    "division"
+  ],
+  "@odata.type": "microsoft.graph.employeeOrgData"
+}-->
+
 Here is a JSON representation of the resource
 
 ```json
