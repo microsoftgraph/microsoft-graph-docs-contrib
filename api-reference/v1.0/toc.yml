@@ -4840,6 +4840,29 @@ items:
           href: api/user-list-joinedteams.md
         - name: List all teams
           href: /graph/teams-list-all-teams?context=graph/api/1.0
+      - name: Channel 
+        href: resources/channel.md
+        items:
+        - name: List channel
+          href: api/channel-list.md
+        - name: Create channel
+          href: api/channel-create.md
+        - name: Get channel
+          href: api/channel-get.md
+        - name: Update channel
+          href: api/channel-update.md
+        - name: Delete channel
+          href: api/channel-delete.md
+        - name: List channel members
+          href: api/conversationmember-list.md
+        - name: Get channel member
+          href: api/conversationmember-get.md
+        - name: Add channel member
+          href: api/conversationmember-add.md
+        - name: Update channel member
+          href: api/conversationmember-update.md
+        - name: Delete channel member
+          href: api/conversationmember-delete.md
         - name: Get primary channel
           href: api/team-get-primarychannel.md
       - name: Group (team)
