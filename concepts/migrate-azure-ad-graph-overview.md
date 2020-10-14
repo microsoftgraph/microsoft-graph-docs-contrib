@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # Migrate Azure AD Graph apps to Microsoft Graph
 
-Microsoft Graph is fully replacing Azure Active Directory (Azure AD) Graph. For most production apps, Microsoft Graph can already fully support Azure AD scenarios. You should start moving your Azure AD Graph apps to Microsoft Graph now.
+Microsoft Graph is fully replacing Azure Active Directory (Azure AD) Graph. For production apps, Microsoft Graph can already fully support Azure AD scenarios. You should start moving your Azure AD Graph apps to Microsoft Graph now.
 
 In addition, Microsoft Graph supports many new Azure AD datasets and features that are not available in Azure AD Graph. Switch to Microsoft Graph to take advantage of these new APIs, all through one single endpoint, including:
 
