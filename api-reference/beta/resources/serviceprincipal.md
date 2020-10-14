@@ -123,6 +123,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Applications that this service principal is assigned to. Read-only. Nullable.|
 |claimsMappingPolicies|[claimsMappingPolicy](claimsmappingpolicy.md) collection|The claimsMappingPolicies assigned to this service principal.|
 |createdObjects|[directoryObject](directoryobject.md) collection|Directory objects created by this service principal. Read-only. Nullable.|
+|delegatedPermissionClassifications|[delegatedPermissionClassification](delegatedpermissionclassification.md) collection|The permission classifications for delegated permissions exposed by the app that this service principal represents.|
 |endpoints|[endpoint](endpoint.md) collection|Endpoints available for discovery. Services like Sharepoint populate this property with a tenant specific SharePoint endpoints that other applications can discover and use in their experiences.|
 |homeRealmDiscoveryPolicies|[homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection|The homeRealmDiscoveryPolicies assigned to this service principal.|
 |memberOf|[directoryObject](directoryobject.md) collection|Roles that this service principal is a member of. HTTP Methods: GET Read-only. Nullable.|
