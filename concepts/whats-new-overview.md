@@ -15,7 +15,7 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 ## October 2020: New in preview only
 
 ### Identity and access | Identity and sign-in
-- Manage [authentication method policies](/graph/api/resources/authenticationmethodspolicies-overview?view=graph-rest-beta&preserve-view=true) to define users who can use specific multi-factor authentication methods to sign into Azure Active Directory. Configure policies to define the following:
+- Manage [authentication method policies](/graph/api/resources/authenticationmethodspolicies-overview?view=graph-rest-beta&preserve-view=true) to identify users who can use specific multi-factor authentication methods to sign into Azure Active Directory. Configure policies to define the following:
   - The types of FIDO2 security keys that can be used in the Azure AD tenant.
   - The users or groups of users who are allowed to use FIDO2 Security Keys or Passwordless Phone Sign-in to sign in to Azure AD.
 - Configure an [email authentication method](/graph/api/resources/emailauthenticationmethod?view=graph-rest-beta&preserve-view=true) for users to self-serve password resets.
