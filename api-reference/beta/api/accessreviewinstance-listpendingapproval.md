@@ -103,7 +103,7 @@ Content-type: application/json
                 "createdBy": {
                     "id": "957f1027-c0ee-460d-9269-b8828e59e0fe",
                     "displayName": "MOD Administrator",
-                    "userPrincipalName": "admin@microsoft.com"
+                    "userPrincipalName": "admin@msft.com"
                 },
                 "scope": {
                     "query": "/groups/04b3d70b-c770-46cb-b751-d857d2beedff/transitiveMembers",
