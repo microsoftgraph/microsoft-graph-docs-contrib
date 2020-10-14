@@ -52,7 +52,9 @@ If successful, this method returns a `200 OK` response code and an [authenticati
 
 ## Examples
 
-### Request
+### Example 1: Get an onSignUpStart action by id
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -64,7 +66,7 @@ If successful, this method returns a `200 OK` response code and an [authenticati
 GET https://graph.microsoft.com/beta/identity/events/onSignupStart/{id}
 ```
 
-### Response
+#### Response
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -79,6 +81,7 @@ HTTP/1.1 200 OK
 
 Content-Type: application/json
 {
+  "odata.context": "https://graph.microsoft.com/beta/$metadata#identity/events/onSignUpStart/$entity,
   "value": {
     "@odata.type": "#microsoft.graph.invokeUserFlowAction",
     "id": "2adb5c12-5c12-2adb-125c-db2a125cdb2a",
@@ -91,3 +94,46 @@ Content-Type: application/json
   }
 }
 ```
+
+### Example 2: Expand invokeUserFlowAction for a specific onSignUpStart event
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_authenticationaction"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/identity/events/onSignupStart/{id}
+```
+
+#### Response
+
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationAction"
+}
+-->
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/events/onSignUpStart(microsoft.graph.invokeUserFlowAction/userFlow())/$entity,
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.invokeUserFlowAction",
+      "id": "2adb5c12-5c12-2adb-125c-db2a125cdb2a",
+      "priority": "101",
+      "sourceFilter": {
+        "includeApplications": [
+            "3dfff01b-0afb-4a07-967f-d1ccbd81102a"
+        ]
+      },
+      "userFlow": {
+            "id": "B2X_1_Partner",
+            "userFlowType": "signUpOrSignIn",
+            "userFlowTypeVersion": 1
+    }
+  }
+}
