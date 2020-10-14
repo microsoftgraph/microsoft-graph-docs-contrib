@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Complete the message migration mode on the [team](../resources/team.md) in a team.
+Complete the message migration mode on a [team](../resources/team.md).
 
 ## Permissions
 
