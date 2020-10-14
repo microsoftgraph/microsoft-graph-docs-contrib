@@ -53,6 +53,8 @@ If successful, this method returns a `201 Created` response code and an [delegat
 
 In the following example, the delegated permission "User.Read" is being classified "low".
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_create_delegatedpermissionclassification"
@@ -68,6 +70,12 @@ Content-Type: application/json
   "classification": "low"
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-create-delegatedpermissionclassification-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
