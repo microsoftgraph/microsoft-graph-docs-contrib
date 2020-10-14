@@ -35,7 +35,7 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |[Clone team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
 |[List your teams](../api/user-list-joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
 |[Get team photo](../api/team-get-photo.md) | Binary data | Get the photo (picture) for a team. |
-|[Complete migration](../api/team-completemigration.md)|[team](team.md)| This action ends the migration mode on the channel it is being called on and frees the channel for general use, e.g., allowing users to post and read messages.|
+|[Complete migration](../api/team-completemigration.md)|[team](team.md)| This action ends the migration mode on the team it is being called on and frees the team for general use, e.g., allowing users to post and read messages.|
 
 ## Properties
 

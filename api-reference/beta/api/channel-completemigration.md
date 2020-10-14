@@ -1,5 +1,5 @@
 ---
-title: "Channel complete migration"
+title: "Complete migration for a channel"
 description: "End the message migration mode on the channel resource."
 localization_priority: Normal
 author: "laujan"

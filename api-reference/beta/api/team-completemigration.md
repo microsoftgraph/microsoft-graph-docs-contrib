@@ -1,5 +1,5 @@
 ---
-title: "Team complete migration"
+title: "Complete migration for a team"
 description: "End the message migration mode on the team resource."
 localization_priority: Normal
 author: "laujan"
