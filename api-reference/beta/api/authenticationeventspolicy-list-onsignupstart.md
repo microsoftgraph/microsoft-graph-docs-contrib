@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 <!-- {
   "blockType": "request",
-  "name": "get_authenticationaction"
+  "name": "list_authenticationaction"
 }
 -->
 
@@ -115,7 +115,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "get_authenticationaction_invokeuserflowaction"
+  "name": "list_authenticationaction_invokeuserflowaction"
 }
 -->
 
