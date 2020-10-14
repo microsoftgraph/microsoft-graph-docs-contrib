@@ -21,9 +21,9 @@ Information about a participant in a meeting.
 | :------- | :---------------------------- | :--------------------------------------------------------------------------------- |
 | identity | [identitySet](identityset.md) | Identity information of the participant.                                           |
 | upn      | String                        | User principal name of the participant.                                            |
-| role     | onlineMeetingRole             | Specifies the participant's role in the meeting. Possible values are listed below. |
+| role     | onlineMeetingRole             | Specifies the participant's role in the meeting.  |
 
-### onlineMeetingRole values
+### role values
 
 | Value              | Description                     |
 | ------------------ | ------------------------------- |
@@ -46,7 +46,7 @@ The following is a JSON representation of the resource.
 {
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
   "upn": "String",
-  "role": "attendee | presenter | unknownFutureValue"
+  "role": "String"
 }
 ```
 
