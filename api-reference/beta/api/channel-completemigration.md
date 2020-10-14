@@ -74,6 +74,18 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
+## Tips and additional information
+
+* You can import messages from users who are not in Teams.
+
+* Once the `completeMigration` request is made, you cannot import further messages into the team.
+
+* Team members can only be added to the new team after the `completeMigration` request has returned a successful response.
+
+* Throttling: Messages import at 5 RPS per channel.
+
+* If you need to make a correction to the migration results, you need to delete the team and repeat the steps to create the team and channel and re-migrate the messages.
+
 <!-- uuid: 5793eec6-0e5a-11eb-adc1-0242ac120002
 2020-10-14 20:22:11 UTC -->
 <!--

@@ -246,9 +246,12 @@ HTTP/1.1 200 OK
 }
 ```
 
-### Example 3: Import messages with inline image
+### Example 3: Import messages with inline images
 
-> **Note**:  There are no special permission scopes in this scenario since the request is part of `chatMessage`; scopes for `chatMessage` apply here as well.
+> [!NOTE]
+> Currently, inline images are the only media type supported by the import message API schema.
+
+> There are no special permission scopes in this scenario since the request is part of `chatMessage`; scopes for `chatMessage` apply here as well.
 
 #### Request
 
