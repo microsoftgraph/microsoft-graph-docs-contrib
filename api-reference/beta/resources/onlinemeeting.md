@@ -60,7 +60,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | organizer          | Only the organizer  is a presenter.                           |
 | unknownFutureValue | Unknow future value.                                          |
 
-**Note**: **role** needs to be specified for each attendee if value of **allowedPresenters** is `roleIsPresenter`.
+>**Note**: If the value of **allowedPresenters** is `roleIsPresenter`, you must specify **role** for each attendee.
 
 ## JSON representation
 
@@ -86,7 +86,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
   "videoTeleconferenceId": "String",
   "isEntryExitAnnounced": "Boolean",
   "lobbyBypassSettings": {"@odata.type": "#microsoft.graph.lobbyBypassSettings"},
-  "allowedPresenters": "everyone | organization | roleIsPresenter | organizer | unknownFutureValue"
+  "allowedPresenters": "String"
 }
 ```
 
