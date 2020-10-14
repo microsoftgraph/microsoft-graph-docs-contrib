@@ -35,6 +35,7 @@ where files are shared, and where tabs are added.
 |[Create chatMessage in a channel](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | Send a message to a channel. |
 |[Create chatMessage reply in a channel](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Reply to a message in a channel.|
 |[Get files folder](../api/driveitem-get.md)| [driveItem](driveitem.md) | Retrieves the details of the SharePoint folder where the files for the channel are stored. |
+|[Complete migration](../api/channel-completemigration.md)|[channel](channel.md)| This action ends the migration mode on the channel it is being called on and frees the channel for general use, e.g., allowing users to post and read messages.|
 
 ## Properties
 
