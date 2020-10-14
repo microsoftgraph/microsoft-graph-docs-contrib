@@ -129,7 +129,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "delegatedPermissionClassifications",
           "ChangeType": "Addition",
-          "Description": "Added [delegatedPermissionClassifications](https://docs.microsoft.com/graph/api/resources/delegatedpermissionclassification?view=graph-rest-beta) navigation to the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.",
+          "Description": "Added [delegatedPermissionClassification](https://docs.microsoft.com/graph/api/resources/delegatedpermissionclassification?view=graph-rest-beta) navigation to the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.",
           "Target": "servicePrincipal"
         }
       ],
