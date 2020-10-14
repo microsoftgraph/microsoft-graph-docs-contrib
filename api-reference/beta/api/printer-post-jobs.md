@@ -39,7 +39,9 @@ POST print/printers/{id}/jobs
 | Content-type  | application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of a [printJob](../resources/printjob.md) object, including one [printDocument](../resources/printDocument.md) object. The job and document IDs are set automatically during resource creation.
+In the request body, supply a JSON representation of a [printJob](../resources/printjob.md) object.
+The printJob object should only contain **configuration**. All properties of **configuration** are nullable.
+Rest of the fields including job and document IDs are set automatically during resource creation.
 
 Right now, Universal Print supports only one **printDocument** per **printJob** object.
 
@@ -56,6 +58,43 @@ The following is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/print/printers/{id}/jobs
+Content-type: application/json
+
+{
+  "configuration": {
+    "feedOrientation": "longEdgeFirst",
+    "pageRanges": [
+      {
+        "start": 1,
+        "end": 1
+      }
+    ],
+    "quality": "medium",
+    "dpi": 600,
+    "orientation": "landscape",
+    "copies": 1,
+    "duplexMode": "oneSided",
+    "colorMode": "blackAndWhite",
+    "inputBin": "by-pass-tray",
+    "outputBin": "output-tray",
+    "mediaSize": "A4",
+    "margin": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "mediaType": "stationery",
+    "finishings": [
+      "staple"
+    ],
+    "pagesPerSheet": 1,
+    "multipageLayout": "clockwiseFromBottomLeft",
+    "collate": false,
+    "scaling": "shrinkToFit",
+    "fitPdfToPage": false
+  }
+}
 ```
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-printjob-javascript-snippets.md)]
@@ -77,21 +116,70 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.printJob"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 425
+Content-length: 1065
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printJobs/$entity",
-  "value": [
-    {
-      "id": "5182",
-      "createdDateTime": "2020-02-04T00:00:00.0000000Z",
-      "createdBy": {},
-      "status": {
-        "processingState": "completed",
-        "processingStateDescription": "The print job has completed successfully and no further processing will take place."
+  "id": "1825",
+  "createdDateTime": "2020-10-14T05:16:49-07:00",
+  "isFetchable": false,
+  "redirectedFrom": null,
+  "redirectedTo": null,
+  "createdBy": {
+    "id": "{userId}",
+    "displayName": "{username}",
+    "ipAddress": null,
+    "userPrincipalName": "{userupn}"
+  },
+  "status": {
+    "state": "paused",
+    "description": "The job is not a candidate for processing yet.",
+    "isAcquiredByPrinter": false,
+    "details": [
+      "uploadPending"
+    ]
+  },
+  "configuration": {
+    "quality": "medium",
+    "dpi": 600,
+    "feedOrientation": "longEdgeFirst",
+    "orientation": "landscape",
+    "duplexMode": "oneSided",
+    "copies": 1,
+    "colorMode": "blackAndWhite",
+    "inputBin": "by-pass-tray",
+    "outputBin": "output-tray",
+    "mediaSize": "A4",
+    "mediaType": "stationery",
+    "finishings": [
+      "staple"
+    ],
+    "pagesPerSheet": 1,
+    "multipageLayout": "clockwiseFromBottomLeft",
+    "collate": false,
+    "scaling": "shrinkToFit",
+    "fitPdfToPage": false,
+    "pageRanges": [
+      {
+        "start": 1,
+        "end": 1
       }
+    ],
+    "margin": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    }
+  },
+  "documents": [
+    {
+      "id": "1477576d-5dab-4ea9-865c-c0b82cd70bd5",
+      "displayName": "",
+      "contentType": "",
+      "size": 0
     }
   ]
 }
