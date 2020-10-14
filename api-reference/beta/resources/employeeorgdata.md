@@ -23,20 +23,30 @@ Represents organization data associated with a user. The **employeeOrgData** pro
 
 ## JSON representation
 
+Here is a JSON representation of the resource
+
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-    "costCenter",
-    "division"
-  ],
+  "optionalProperties": [],
   "@odata.type": "microsoft.graph.employeeOrgData"
 }-->
 
-Here is a JSON representation of the resource
-
 ```json
-  "employeeOrgData": {
-      "costCenter": "string",
-      "division": "string"
-  }
+{
+  "costCenter": "string",
+  "division": "string"
+}
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2020-10-24 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "employeeOrgData resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->
