@@ -11,6 +11,14 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## October 2020
+
+### Teamwork
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|v1.0|Added the members in methods table [List channels](../api/channel-list), [Create channel](../api/channel-post),  [Get channel](../api/channel-get), [Update channel](../api/channel-patch), [Delete channel](../api/channel-delete), [List channel members](../api/conversationmember-list), [Get channel member](../api/conversationmember-get), [Add channel member](../api/conversationmember-add), [Update channel member](../api/conversationmember-update), [Delete channel member](../api/conversationmember-delete), [Channel](../resources/channel).|
+
 ## September 2020
 
 ### Calendar
