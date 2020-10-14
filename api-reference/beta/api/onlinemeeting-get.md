@@ -28,9 +28,6 @@ One of the following permissions is required to call this API. To learn more, in
 > [!IMPORTANT]
 > \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to retrieve an online meeting on behalf of that user (user ID specified in the request path).
 
-## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
-
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -47,6 +44,9 @@ GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 > - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId` is the **id** of an [onlineMeeting entity](../resources/onlinemeeting.md).
 > - `joinWebUrl` must be URL encoded and this route can only be used to retrieve meetings created by `userId`.
+
+## Optional query parameters
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name            | Description               |
@@ -171,17 +171,17 @@ Content-Length: 1574
 ```
 
 ### Example 2: Retrieve an online meeting by meeting ID
-Retrieving meeting information via meeting ID can be done with either a user or application token. The meeting ID is provided in the response object when creating an [onlineMeeting](../resources/onlinemeeting.md). This option is available to support use cases where the meeting ID is known, such as when an application first creates the meeting, then retrieves  meeting information later as a seperate action.
+You can retrieve meeting information via meeting ID with either a user or application token. The meeting ID is provided in the response object when creating an [onlineMeeting](../resources/onlinemeeting.md). This option is available to support use cases where the meeting ID is known, such as when an application first creates the meeting, then retrieves meeting information later as a seperate action.
 
 #### Request
 
-Using user token
+The following request uses a user token.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2
 ```
 
-Using app token
+The following request uses an app token.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2
@@ -228,17 +228,17 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 ```
 
 ### Example 3: Retrieve an online meeting by JoinWebUrl
-Retrieving meeting information via JoinWebUrl can be done with either a user or application token. This option is available to support use cases where the meeting ID is not known but the JoinWebUrl is, such as when a user creates a meeting (e.g. in the MicroSoft Teams Client), and a seperate application needs to retrieve meeting details as a follow-on action.
+You can retrieve meeting information via JoinWebUrl by using either a user or application token. This option is available to support use cases where the meeting ID is not known but the JoinWebUrl is, such as when a user creates a meeting (for example in the Microsoft Teams client), and a seperate application needs to retrieve meeting details as a followup action.
 
 #### Request
 
-Using user token
+The following request uses a user token.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/onlineMeetings?$filter=JoinWebUrl%20eq%20'https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522dc17674c-81d9-4adb-bfb2-8f6a442e4622%2522%257d'
 ```
 
-Using app token
+The following request uses an app token.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings?$filter=JoinWebUrl%20eq%20'https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522dc17674c-81d9-4adb-bfb2-8f6a442e4622%2522%257d'
