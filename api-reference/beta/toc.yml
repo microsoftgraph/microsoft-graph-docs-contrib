@@ -12120,7 +12120,7 @@ items:
           href: api/team-get-photo.md
         - name: Update team photo
           href: api/profilephoto-update.md
-        - name: Complete migration (team)
+        - name: Complete migration
           href: api/team-completemigration.md
       - name: Group (team)
         href: resources/group.md
@@ -12178,7 +12178,7 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
-        - name: Complete migration (channel)
+        - name: Complete migration
           href: api/channel-completemigration.md
         - name: Get files folder
           href: api/channel-get-filesfolder.md
