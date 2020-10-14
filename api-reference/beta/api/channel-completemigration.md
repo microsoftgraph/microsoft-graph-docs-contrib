@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Channel complete migration
+# Complete migration for a channel
 
 Namespace: microsoft.graph
 

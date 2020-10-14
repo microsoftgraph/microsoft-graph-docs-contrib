@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Team complete migration
+# Complete migration for a team
 
 Namespace: microsoft.graph
 
