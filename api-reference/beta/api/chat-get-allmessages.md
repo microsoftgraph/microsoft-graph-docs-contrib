@@ -35,9 +35,7 @@ GET /users/{id}/chats/allMessages
 
 ## Optional query parameters
 
-This operation supports [date range parameters](/graph/query-parameters) to customize the response.
-
-### Example
+This operation supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
 
 ```http
 GET /users/{id}/chats/allMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
@@ -53,10 +51,9 @@ GET /users/{id}/chats/allMessages?$top=50&$filter=lastModifiedDateTime gt 2020-0
 If successful, this method returns a `200 OK` response code and a list of [chatMessages](../resources/chatmessage.md) in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
 
-# [HTTP](#tab/http)
+### Request
+
 <!-- {
   "blockType": "request",
   "name": "get_chat_message"
@@ -65,25 +62,9 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/users/{id}/chats/allMessages
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-chat-message-csharp-snippets.md)]
+### Response
 
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-message-javascript-snippets.md)]
-
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-chat-message-objc-snippets.md)]
-
-
----
-
-
-##### Response
-Here is an example of the response. 
-
->**Note:** The response object shown here is shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here is shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
