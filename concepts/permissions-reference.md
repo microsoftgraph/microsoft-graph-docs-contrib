@@ -1708,14 +1708,14 @@ Taxonomy permissions are valid only on work or school accounts.
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Team.ReadBasic.All_ | Read the names and descriptions of teams | Read the names and descriptions of teams, on behalf of the signed-in user.	| No | No |
-| _Teams.Create_ (private preview) | Create teams | Create teams, on behalf of the signed-in user. | Yes | No |
+| _Team.Create_  | Create teams | Create teams, on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Team.ReadBasic.All_ | Get a list of all teams | Get a list of all teams, without a signed-in user.	| Yes | No |
-| _Teams.Create_ (private preview) | Create teams | Create teams, without a signed-in user. | Yes | No |
+| _Team.Create_  | Create teams | Create teams, without a signed-in user. | Yes | No |
 |_Teamwork.Migrate.All_|Manage migration to Microsoft Teams|Creating and managing resources for migration to Microsoft Teams|Yes|Yes|
 
 ## Team settings permissions
