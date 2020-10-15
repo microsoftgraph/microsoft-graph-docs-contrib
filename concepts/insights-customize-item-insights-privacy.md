@@ -87,7 +87,7 @@ Some [trending](/graph/api/resources/insights-trending) or [used](/graph/api/res
 
 - For a user who has disabled item insights, querying the [trending](/graph/api/resources/insights-trending) and [used](/graph/api/resources/insights-used) resources in Microsoft Graph API return `HTTP 403 Forbidden`.
 
-- The Discover section in Outlook Mobile does not display documents of a user who has disabled item insights.
+- The **Search** >> **Discovery** section in Outlook mobile does not display documents of users who have disabled item insights.
 
 
 ## Transition period
