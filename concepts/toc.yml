@@ -175,8 +175,14 @@ items:
         expanded: true
         items:
           - name: Cloud printing (preview)
-            href: universal-print-concept-overview.md
-            displayName: Universal Print
+            expanded: true
+            items: 
+              - name: Overview
+                href: universal-print-concept-overview.md
+                displayName: Universal Print                
+              - name: Print job submission
+                href: universal-print-job-submission.md
+                displayName: Universal Print Job Submission
           - name: Corporate management
             href: intune-concept-overview.md
             displayName: Intune
