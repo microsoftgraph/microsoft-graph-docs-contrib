@@ -1,6 +1,6 @@
 ---
 title: "Delete onSignupStart"
-description: "Delete an authenticationAction object."
+description: "Remove an authenticationAction from an authenticationEventsPolicy."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Delete an [authenticationAction](../resources/authenticationaction.md) object.
+Remove an [authenticationAction](../resources/authenticationaction.md) from an [authenticationEventsPolicy](../resources/authenticationeventspolicy.md).
 
 ## Permissions
 
@@ -64,7 +64,6 @@ DELETE https://graph.microsoft.com/beta/identity/events/onSignupStart/{id}
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
