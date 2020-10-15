@@ -197,8 +197,6 @@ POST https://graph.microsoft.com/beta/teams/teamId/channels/channelId/messages
 }
 ```
 
----
-
 ### Response
 
 The following is an example of the response.
@@ -281,8 +279,6 @@ POST https://graph.microsoft.com/beta/teams/teamId/channels/channelId/messages
 }
 ```
 
----
-
 #### Response
 
 The following is an example of the response.
@@ -333,8 +329,7 @@ HTTP/1.1 200 OK
 
 ## See also
 
-* [Import third-party platform messages to Teams using Microsoft Graph](/
-microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+* [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 
 * [Create channel](channel-post.md)
 

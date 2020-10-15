@@ -222,34 +222,10 @@ Content-Location: /teams/{teamId}/channels/{channelId}
 * `createdDateTime`  set for future.
 * `createdDateTime`  correctly specified but `channelCreationMode`  instance attribute  is missing or set to invalid value.
 
-### Example 4: Complete migration (channel)
-
-> **Note**: Once the message migration process has completed, both the team and channel are taken out of migration mode using the `completeMigration` method. This step opens the team and channel resources for general use by team members. The action is bound to the team instance.
-
-#### Request
-
-```http
-POST https://graph.microsoft.com/beta/teams/teamId/channels/channelId/completeMigration
-```
-
-#### Response
-
-```http
-HTTP/1.1 204 NoContent
-```
-
-#### Error Response
-
-```http
-400 Bad Request
-```
-
-Action called on a team or channel that is not in migrationMode.
-
 ## See also
 
+* [Complete migration for a channel](channel-completemigration.md)
 * [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
-
 * [Create team](team-post.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Group.ReadWrite.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All |
+| Application                            |  Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All  |
 
 ## HTTP request
 
@@ -591,38 +591,12 @@ Content-Location: /teams/{teamId}
 * `createdDateTime`  set for future.
 * `createdDateTime`  correctly specified, but `teamCreationMode`  instance attribute  is missing or set to invalid value.
 
-### Example 9: Complete migration (team)
-
-> **Note**: Once the message migration process has completed, both the team and channel are taken out of migration mode using the `completeMigration` method. This step opens the team and channel resources for general use by team members. The action is bound to the team instance.
-
-#### Request
-
-```http
-POST https://graph.microsoft.com/beta/teams/teamId/completeMigration
-```
-
-#### Response
-
-```http
-HTTP/1.1 204 NoContent
-```
-
-#### Error Response
-
-```http
-400 Bad Request
-```
-
-Action called on a team or channel that is not in migrationMode.
-
 ## See also
 
+* [Complete migration for a team](team-completemigration.md)
+* [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+* [Create channel](channel-post.md)
 * [Available templates](/MicrosoftTeams/get-started-with-teams-templates)
 * [Getting started with Retail Teams templates](/MicrosoftTeams/get-started-with-retail-teams-templates)
 * [Getting started with Healthcare Teams templates](/MicrosoftTeams/healthcare/healthcare-templates)
 * [Creating a group with a team](/graph/teams-create-group-and-team)
-
-* [Import third-party platform messages to Teams using Microsoft Graph](/
-microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
-
-* [Create channel](channel-post.md)
