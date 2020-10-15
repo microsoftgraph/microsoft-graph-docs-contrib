@@ -87,7 +87,7 @@ Some [trending](/graph/api/resources/insights-trending) or [used](/graph/api/res
 
 - For a user who has disabled item insights, querying the [trending](/graph/api/resources/insights-trending) and [used](/graph/api/resources/insights-used) resources in Microsoft Graph API return `HTTP 403 Forbidden`.
 
-- The **Search** >> **Discovery** section in Outlook mobile does not display documents of users who have disabled item insights.
+- If the **Discover** section is enabled for a user searching in Outlook mobile, the **Discover** section does not display documents of users who have disabled item insights.
 
 
 ## Transition period
@@ -98,3 +98,8 @@ After this transition period, Delve settings control only Delve experience, and 
 
 > [!NOTE]
 > During the transition period, due to technical reasons, the SharePoint start page may provide stale suggestions if an organization disables item insights for all users. This issue will be addressed in upcoming server-side changes. 
+
+## See also
+Learn more about Delve and using Delve feature settings to control documents showing up in the **Discover** feed: 
+- [Connect and collaborate in Office Delve](https://support.microsoft.com/office/connect-and-collaborate-in-office-delve-46f92806-b52c-4187-b60e-b3bf8d25f73e)
+- [Are my documents safe in Office Delve?](https://support.microsoft.com/office/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3)
