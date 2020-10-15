@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Group.ReadWrite.All, Directory.ReadWrite.All |
+| Delegated (work or school account)     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            |  Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All  |
+| Application                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -122,16 +122,18 @@ POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
-  "displayName": "My Sample Team",
-  "description": "My Sample Team’s Description",
-  "members@odata.bind": [
-            {
-            "@odata.type": "#microsoft.graph.aadUserConversationMember",
-            "roles": ["owner"],
-            "userId": "0040b377-61d8-43db-94f5-81374122dc7e"
-        }
-  ]
+   "template@odata.bind":"https://graph.microsoft.com/beta/teamsTemplates('standard')",
+   "displayName":"My Sample Team",
+   "description":"My Sample Team’s Description",
+   "members@odata.bind":[
+      {
+         "@odata.type":"#microsoft.graph.aadUserConversationMember",
+         "roles":[
+            "owner"
+         ],
+         "userId":"0040b377-61d8-43db-94f5-81374122dc7e"
+      }
+   ]
 }
 ```
 
@@ -293,7 +295,7 @@ Content-Length: 0
 
 The following example shows how you can create a new [team](../resources/team.md) from a [group](../resources/group.md), given a **groupId**.
 
-A few thing to note about this call:
+A few things to note about this call:
 
 * In order to create a team, the group you're creating it from must have a least one owner.
 * The team that's created will always inherit from the group's display name, visibility, specialization, and members. Therefore, when making this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **members@odata.bind** properties will return an error.
@@ -365,33 +367,33 @@ POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
-  "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')",
-  "channels": [
-        {
-            "displayName": "Class Announcements 📢",
-            "isFavoriteByDefault": true
-        },
-        {
-            "displayName": "Homework 🏋️",
-            "isFavoriteByDefault": true,
-        }
-    ],
-    "memberSettings": {
-        "allowCreateUpdateChannels": false,
-        "allowDeleteChannels": false,
-        "allowAddRemoveApps": false,
-        "allowCreateUpdateRemoveTabs": false,
-        "allowCreateUpdateRemoveConnectors": false
-    },
-    "installedApps": [
-        {
-            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
-        },
-        {
-            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
-        }
-    ]
+   "template@odata.bind":"https://graph.microsoft.com/beta/teamsTemplates('standard')",
+   "group@odata.bind":"https://graph.microsoft.com/v1.0/groups('groupId')",
+   "channels":[
+      {
+         "displayName":"Class Announcements 📢",
+         "isFavoriteByDefault":true
+      },
+      {
+         "displayName":"Homework 🏋️",
+         "isFavoriteByDefault":true
+      }
+   ],
+   "memberSettings":{
+      "allowCreateUpdateChannels":false,
+      "allowDeleteChannels":false,
+      "allowAddRemoveApps":false,
+      "allowCreateUpdateRemoveTabs":false,
+      "allowCreateUpdateRemoveConnectors":false
+   },
+   "installedApps":[
+      {
+         "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
+      },
+      {
+         "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
+      }
+   ]
 }
 ```
 # [C#](#tab/csharp)
@@ -496,34 +498,34 @@ POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
-  "displayName": "My Class Team",
-  "description": "My Class Team’s Description",
-  "channels": [
-        {
-            "displayName": "Class Announcements 📢",
-            "isFavoriteByDefault": true
-        },
-        {
-            "displayName": "Homework 🏋️",
-            "isFavoriteByDefault": true,
-        }
-    ],
-    "memberSettings": {
-        "allowCreateUpdateChannels": false,
-        "allowDeleteChannels": false,
-        "allowAddRemoveApps": false,
-        "allowCreateUpdateRemoveTabs": false,
-        "allowCreateUpdateRemoveConnectors": false
-    },
-    "installedApps": [
-        {
-            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
-        },
-        {
-            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
-        }
-    ]
+   "template@odata.bind":"https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
+   "displayName":"My Class Team",
+   "description":"My Class Team’s Description",
+   "channels":[
+      {
+         "displayName":"Class Announcements 📢",
+         "isFavoriteByDefault":true
+      },
+      {
+         "displayName":"Homework 🏋️",
+         "isFavoriteByDefault":true
+      }
+   ],
+   "memberSettings":{
+      "allowCreateUpdateChannels":false,
+      "allowDeleteChannels":false,
+      "allowAddRemoveApps":false,
+      "allowCreateUpdateRemoveTabs":false,
+      "allowCreateUpdateRemoveConnectors":false
+   },
+   "installedApps":[
+      {
+         "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
+      },
+      {
+         "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
+      }
+   ]
 }
 ```
 # [C#](#tab/csharp)
