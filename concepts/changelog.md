@@ -18,6 +18,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version** | **Description** |
 |:---|:---|:---|
 |Addition|v1.0|Added the members in methods table [List channels](../api/channel-list), [Create channel](../api/channel-post),  [Get channel](../api/channel-get), [Update channel](../api/channel-patch), [Delete channel](../api/channel-delete), [List channel members](../api/conversationmember-list), [Get channel member](../api/conversationmember-get), [Add channel member](../api/conversationmember-add), [Update channel member](../api/conversationmember-update), [Delete channel member](../api/conversationmember-delete), and updated [channel resource type](../resources/channel).|
+=======
+### Applications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta and v1.0 | Added [verified publisher](/graph/api/resources/verifiedPublisher) properties to the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) resources. |
+| Addition | beta and v1.0 | Added [setVerifiedPublisher](/graph/api/application-setverifiedpublisher) and [unsetVerifiedPublisher](/graph/api/application-unsetverifiedpublisher) methods to the [application](/graph/api/resources/application) resource. |
 
 ### Identity and access | Identity and sign-in
 
