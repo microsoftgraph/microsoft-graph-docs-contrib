@@ -4860,11 +4860,11 @@ items:
         - name: List channel
           href: api/channel-list.md
         - name: Create channel
-          href: api/channel-create.md
+          href: api/channel-post.md
         - name: Get channel
           href: api/channel-get.md
         - name: Update channel
-          href: api/channel-update.md
+          href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
         - name: List channel members
