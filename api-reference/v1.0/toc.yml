@@ -4850,6 +4850,8 @@ items:
           href: api/team-clone.md
         - name: List your teams
           href: api/user-list-joinedteams.md
+        - name: Get primary channel
+          href: api/team-get-primarychannel.md
         - name: List all teams
           href: /graph/teams-list-all-teams?context=graph/api/1.0
       - name: Channel 
@@ -4875,8 +4877,6 @@ items:
           href: api/conversationmember-update.md
         - name: Delete channel member
           href: api/conversationmember-delete.md
-        - name: Get primary channel
-          href: api/team-get-primarychannel.md
       - name: Group (team)
         href: resources/group.md
         items:
