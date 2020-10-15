@@ -53,7 +53,6 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_conversation_member"
@@ -68,17 +67,6 @@ content-length: 26
   "roles": ["owner"]
 }
 ```
-
-# [C#](#tab/csharp)
-
-
-# [JavaScript](#tab/javascript)
-
-
-# [Objective-C](#tab/objc)
-
-
----
 
 ### Response
 
