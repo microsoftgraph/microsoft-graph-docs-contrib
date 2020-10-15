@@ -13,6 +13,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## October 2020
 
+### Applications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta and v1.0 | Added [verified publisher](/graph/api/resources/verifiedPublisher) properties to the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) resources. |
+| Addition | beta and v1.0 | Added [setVerifiedPublisher](/graph/api/application-setverifiedpublisher) and [unsetVerifiedPublisher](/graph/api/application-unsetverifiedpublisher) methods to the [application](/graph/api/resources/application) resource. |
+
 ### Identity and access | Identity and sign-in
 
 | **Change type** | **Version**   | **Description**                          |
