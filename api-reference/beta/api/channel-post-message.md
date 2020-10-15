@@ -197,6 +197,7 @@ POST https://graph.microsoft.com/beta/teams/teamId/channels/channelId/messages
 }
 ```
 
+---
 ### Response
 
 The following is an example of the response.
@@ -278,6 +279,8 @@ POST https://graph.microsoft.com/beta/teams/teamId/channels/channelId/messages
    ]
 }
 ```
+
+---
 
 #### Response
 
