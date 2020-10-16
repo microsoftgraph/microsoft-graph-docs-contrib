@@ -17,7 +17,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description** |
 |:---|:---|:---|
-|Addition|v1.0|Added the members in methods table [List channels](/graph/api/channel-list), [Create channel](/graph/api/channel-post),  [Get channel](/graph/api/channel-get), [Update channel](/graph/api/channel-patch), [Delete channel](/graph/api/channel-delete), [List channel members](/graph/api/conversationmember-list), [Get channel member](/graph/api/conversationmember-get), [Add channel member](/graph/api/conversationmember-add), [Update channel member](/graph/api/conversationmember-update), [Delete channel member](/graph/api/conversationmember-delete), and updated [channel resource type](/graph/resources/channel).|
+|Addition|v1.0|Added the members in methods table [List channels](/graph/api/channel-list), [Create channel](/graph/api/channel-post),  [Get channel](/graph/api/channel-get), [Update channel](/graph/api/channel-patch), [Delete channel](/graph/api/channel-delete), [List channel members](/graph/api/conversationmember-list), [Get channel member](/graph/api/conversationmember-get), [Add channel member](/graph/api/conversationmember-add), [Update a member in a channel](/graph/api/conversationmember-update), [Delete channel member](/graph/api/conversationmember-delete), and updated [channel resource type](/graph/resources/channel).|
 
 ### Applications
 
