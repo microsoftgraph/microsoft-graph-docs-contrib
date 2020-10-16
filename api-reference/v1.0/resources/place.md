@@ -23,7 +23,7 @@ The [findRooms](/graph/api/user-findrooms) and [findRoomLists](/graph/api/user-f
 |Places API |findRooms and findRoomLists functions|
 |:------------------------------------|:-----------------------------|
 |Supports getting all the rooms or room lists in a tenant, and all the rooms in a room list | Similar support - get all the rooms or room lists in a tenant, and all the rooms in a room list|
-|[List places](../api/place-list.md) can return more than 100 rooms in a tenant | [findRooms](../../beta/api/user-findrooms.md) returns up to the first 100 rooms in a tenant |
+|[List places](../api/place-list.md) can return more than 100 rooms in a tenant | [findRooms](/graph/api/user-findrooms) returns up to the first 100 rooms in a tenant |
 |Supports [getting an individual room or room list](../api/place-get.md) in a tenant | Does not support getting an individual room or room list in a tenant
 |Defines the specific entities of [room](room.md) and [roomList](roomlist.md) which specify a richer property set, in addition to the display name and SMTP address. | Each room and room list is of a lighter weight [emailAddress](emailaddress.md) type which specifies only the display name and SMTP address|
 |Supports only organizational scenarios with delegated (work or school accounts) or application permissions | Similar support for only organizational scenarios with delegated or application permissions|
