@@ -12,12 +12,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Revoke access to a [ListItem][] or [DriveItem][] granted via a sharing link by removing the specified [Grantees][] from the link.
-**Note**: This functionality is only available for sharing links scoped to users.
+Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by removing the specified [recipient][] from the link.
 
-[ListItem]: ../resources/listItem.md
-[DriveItem]: ../resources/driveItem.md
-[Grantees]: ../resources/DriveRecipient.md
+>**Note:** This functionality is only available for sharing links scoped to users.
+
+[listItem]: ../resources/listitem.md
+[driveItem]: ../resources/driveitem.md
+[recipient]: ../resources/driverecipient.md
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -87,9 +88,10 @@ Content-length: 95
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
 
 If successful, this method returns a [Permission](../resources/permission.md) resource in the response body that represents the updated state of the sharing link.
+
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -117,11 +119,6 @@ Content-Type: application/json
 }
 ```
 
-## Error responses
-
-See [Error Responses][error-response] for details about how errors are returned.
-
-[error-response]: /graph/errors
 
 <!-- {
   "type": "#page.annotation",
