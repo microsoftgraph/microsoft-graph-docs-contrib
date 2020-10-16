@@ -49,7 +49,7 @@ Represents a printer device that has been registered with the Universal Print se
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |jobs|[printJob](printjob.md) collection| The list of jobs that are queued for printing by the printer.|
-|shares|[printerShare](printershare.md) collection| The list of printerShares that are associated with the printer. Read-only. Nullable.|
+|shares|[printerShare](printershare.md) collection| The list of printerShares that are associated with the printer. Currently, only one printerShare can be associated with the printer. Read-only. Nullable.|
 |connectors|[printConnector](printconnector.md)|The connectors that are associated with the printer.|
 |taskTriggers|[printTaskTrigger](printtasktrigger.md) collection|A list of task triggers that are associated with the printer.|
 
