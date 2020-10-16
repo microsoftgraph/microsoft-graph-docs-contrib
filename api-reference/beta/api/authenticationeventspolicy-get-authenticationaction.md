@@ -139,7 +139,8 @@ Content-Type: application/json
             "id": "B2X_1_Partner",
             "userFlowType": "signUpOrSignIn",
             "userFlowTypeVersion": 1
-    }
+      }
+    ]
   }
 }
 ```
