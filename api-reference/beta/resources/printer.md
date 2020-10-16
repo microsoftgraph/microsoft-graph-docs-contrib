@@ -25,7 +25,7 @@ Represents a printer device that has been registered with the Universal Print se
 | [Delete](../api/printer-delete.md) | None | Unregister the physical printer from the Universal Print service. |
 | [restorePrinterDefaults](../api/printer-restoreprinterdefaults.md) | None | Restore a printer's defaults settings to factory defaults. |
 | [List jobs](../api/printer-list-jobs.md) | [printJob](printjob.md) collection | Get a list of print jobs that are queued for processing by the printer. |
-| [Create job](../api/printer-post-jobs.md) | [printJob](printjob.md) | Create a new print job for the printer. To start printing the job, use [startPrintJob](../api/printjob-startprintjob.md). |
+| [Create job](../api/printer-post-jobs.md) | [printJob](printjob.md) | Create a new print job for the printer. To start printing the job, use [start](../api/printjob-start.md). |
 | [List connectors](../api/printer-list-connectors.md) | [printConnector](printconnector.md) collection | Get a list of connectors that this printer is associated with. |
 | [List taskTriggers](../api/printer-list-tasktriggers.md) | None | List [printTaskTriggers](printtasktrigger.md) associated with this printer. |
 | [Create taskTrigger](../api/printer-post-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) | Create a [printTaskTrigger](printtasktrigger.md) that runs when print events occur. |
