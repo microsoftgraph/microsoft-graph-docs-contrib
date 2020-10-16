@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents information for print document upload
+Describes the document that is being uploaded
 
 ## JSON representation
 
