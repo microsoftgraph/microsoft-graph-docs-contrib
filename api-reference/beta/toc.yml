@@ -1585,21 +1585,23 @@ items:
         - name: Print document
           href: resources/printdocument.md
           items:
-          - name: Upload data
-            href: api/printdocument-uploaddata.md
+          - name: Create upload session
+            href: api/printdocument-createuploadsession.md
           - name: Download binary file
             href: api/printdocument-get-file.md
         - name: Print job
           href: resources/printjob.md
           items:
-          - name: Create
-            href: api/printer-post-jobs.md
+          - name: Create job for printer
+            href: api/printer-post-jobs.md            
+          - name: Create job for printer share
+            href: api/printershare-post-jobs.md
           - name: Get
             href: api/printjob-get.md
           - name: Start
-            href: api/printjob-startprintjob.md
+            href: api/printjob-start.md
           - name: Cancel
-            href: api/printjob-cancelprintjob.md
+            href: api/printjob-cancel.md
         - name: Print operation
           href: resources/printoperation.md
           items:
@@ -1618,8 +1620,6 @@ items:
             href: api/printer-update.md
           - name: Delete
             href: api/printer-delete.md
-          - name: Get capabilities
-            href: api/printer-getcapabilities.md
           - name: Get task trigger
             href: api/printtasktrigger-get.md
           - name: List connectors
@@ -1646,8 +1646,8 @@ items:
             href: api/printer-delete-alloweduser.md
           - name: Delete task trigger
             href: api/printer-delete-tasktrigger.md
-          - name: Reset defaults
-            href: api/printer-resetdefaults.md
+          - name: Restore factory defaults
+            href: api/printer-restorefactorydefaults.md
         - name: Printer share
           href: resources/printershare.md
           items:
