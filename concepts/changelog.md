@@ -19,10 +19,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |:---|:---|:---|
 | Addition | beta | Added the [createUploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta) action for printDocument. | 
 | Change | beta | Deprecated **uploadData** action on [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta) resource. | 
-| Change | beta | Added **isFetchable** property to [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource. | 
-| Change | beta | Added **redirectedTo** property to [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource. | 
-| Change | beta | Added **redirectedFrom** property to [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource. | 
-| Change | beta | Added **configuration** property to [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource. | 
+| Change | beta | Added properties to [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource: <br/><ul><li>isFetchable</li><li>redirectedFrom</li><li>redirectedTo</li><li>configuration</li></ul> | 
 | Change | beta | Deprecated **configuration** property on [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta) resource. | 
 | Change | beta | Added **shares** navigation property on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource. | 
 | Change | beta | **resetDefaults** action on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource has been renamed to [restoreFactoryDefaults](/graph/api/printer-restorefactorydefaults?view=graph-rest-beta). | 
