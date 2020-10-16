@@ -49,6 +49,8 @@ The following is a JSON representation of the resource.
   "sourceFilter": {
     "@odata.type": "microsoft.graph.authenticationSourceFilter"
   },
-  "userFlow": "microsoft.graph.b2xIdentityUserFlow"
+  "userFlow": {
+    "@odata.type": "microsoft.graph.b2xIdentityUserFlow"
+  }
 }
 ```
