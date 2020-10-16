@@ -163,7 +163,7 @@ Content-Type: application/json
           "includeApplications": [
               "b0e1638f-4c39-4cd1-82b3-91d1caef65f8"
         ]
-      }
+      },
       "userFlow": {
           "id": "B2X_1_Partner",
           "userFlowType": "signUpOrSignIn",
