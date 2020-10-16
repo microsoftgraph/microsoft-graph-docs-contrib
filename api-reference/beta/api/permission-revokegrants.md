@@ -94,7 +94,7 @@ If successful, this method returns a [Permission](../resources/permission.md) re
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "oneDrive.permission"
+  "@odata.type": "microsoft.graph.permission"
 }
 -->
 
