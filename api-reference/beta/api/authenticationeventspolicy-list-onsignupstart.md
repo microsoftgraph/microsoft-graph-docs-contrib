@@ -129,7 +129,7 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart?$expand=micro
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.authenticationAction)"
+  "@odata.type": "Collection(microsoft.graph.invokeUserFlowAction)"
 }
 -->
 

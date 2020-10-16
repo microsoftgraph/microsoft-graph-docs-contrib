@@ -113,7 +113,7 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart/{id}?$expand=
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authenticationAction"
+  "@odata.type": "microsoft.graph.invokeUserFlowAction"
 }
 -->
 
