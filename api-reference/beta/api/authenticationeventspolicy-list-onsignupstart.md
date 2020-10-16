@@ -88,7 +88,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.invokeUserFlowAction",
       "id": "2adb5c12-5c12-2adb-125c-db2a125cdb2a",
-      "priority": "101",
+      "priority": 101,
       "sourceFilter": {
         "includeApplications": [
             "3dfff01b-0afb-4a07-967f-d1ccbd81102a"
@@ -143,7 +143,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.invokeUserFlowAction",
       "id": "2adb5c12-5c12-2adb-125c-db2a125cdb2a",
-      "priority": "101",
+      "priority": 101,
       "sourceFilter": {
         "includeApplications": [
             "3dfff01b-0afb-4a07-967f-d1ccbd81102a"
