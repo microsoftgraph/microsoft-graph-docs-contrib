@@ -1,5 +1,5 @@
 ---
-title: " participantInfo resource type"
+title: "participantInfo resource type"
 description: "Contains additional properties about the participant identity"
 author: "ananmishr"
 localization_priority: Normal
