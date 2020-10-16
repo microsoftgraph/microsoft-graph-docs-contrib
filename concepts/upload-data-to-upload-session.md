@@ -1,5 +1,5 @@
 ---
-title: "Universal Print Job Submission"
+title: "Upload data to upload session"
 description: "Universal Print is a modern print solution that organizations can use to manage their print infrastructure through cloud services from Microsoft."
 author: "nilakhan"
 localization_priority: Priority
@@ -7,20 +7,7 @@ ms.prod: "universal-print"
 ms.custom: scenarios:getting-started
 ---
 
-# Print job submission
-
-Moving print infrastructure to the cloud enables printing documents directly from web and mobile applications.
-- Users can submit print jobs to printerShare.
-- Printer admins can also submit print jobs to a printer, for doing preliminary testing before sharing the printer with the organization.
-
-Follow these steps to submit print jobs to printerShare:
-
-1. [Create a print job](/graph/api/printershare-post-jobs?view=graph-rest-beta) and store the resulting document ID.
-2. [Create an uploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta) for the document. 
-3. [Upload bytes to the created upload session](#upload-bytes-to-the-upload-session).
-4. [Start the print job](/graph/api/printjob-start?view=graph-rest-beta).
-
-## Upload bytes to the upload session
+# Upload data to the upload session
 
 To upload the file, or a portion of the file, your app makes a PUT request to the uploadUrl value received in the createUploadSession response.
 You can upload the entire file, or split the file into multiple byte ranges, as long as the maximum bytes in any given request is less than 10 MB.
