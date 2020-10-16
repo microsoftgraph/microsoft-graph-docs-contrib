@@ -10024,13 +10024,13 @@ items:
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
             - name: Delete
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
-          - name: B2C authentication methods policy
-            href: resources/b2cauthenticationmethodspolicy.md
-            items:
-            - name: Get
-              href: api/b2cauthenticationmethodspolicy-get.md
-            - name: Update
-              href: api/b2cauthenticationmethodspolicy-update.md
+        - name: B2C authentication methods policy
+          href: resources/b2cauthenticationmethodspolicy.md
+          items:
+          - name: Get
+            href: api/b2cauthenticationmethodspolicy-get.md
+          - name: Update
+            href: api/b2cauthenticationmethodspolicy-update.md
         - name: Certificate-based auth configuration
           href: resources/certificatebasedauthconfiguration.md
           items:
