@@ -40,7 +40,7 @@ A group of settings that a printer should use to print a job.
 ### printQuality values
 
 |Member|Value|Description|
-|:---|:---|
+|:---|:---|:---|
 |low|0|The printer will print the job using low (commonly known as "draft") quality.|
 |medium|1|The printer will print the job using medim (commonly known as "normal") quality.|
 |high|2|The printer will print the job using high (commonly known as "best" or "fine") quality.|
@@ -49,7 +49,7 @@ A group of settings that a printer should use to print a job.
 ### printerFeedOrientation values
 
 |Member|Value|Description|
-|:---|:---|
+|:---|:---|:---|
 |longEdgeFirst|0|The printer will consume sheets from the active tray in "landscape" orientation, with the long edge of the sheet first.|
 |shortEdgeFirst|1|The printer will consume sheets from the active tray in "portrait" orientation, with the short edge of the sheet first.|
 |unknownFutureValue|2|Evolvable enumeration sentinel value. Do not use.|
