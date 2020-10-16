@@ -81,7 +81,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "odata.context": "https://graph.microsoft.com/beta/$metadata#identity/events/onSignUpStart/$entity,
+  "odata.context": "https://graph.microsoft.com/beta/$metadata#identity/events/onSignUpStart/$entity",
   "value": {
     "@odata.type": "#microsoft.graph.invokeUserFlowAction",
     "id": "2adb5c12-5c12-2adb-125c-db2a125cdb2a",
@@ -124,7 +124,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/events/onSignUpStart(microsoft.graph.invokeUserFlowAction/userFlow())/$entity,
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/events/onSignUpStart(microsoft.graph.invokeUserFlowAction/userFlow())/$entity",
   "value": [
     {
       "@odata.type": "#microsoft.graph.invokeUserFlowAction",
