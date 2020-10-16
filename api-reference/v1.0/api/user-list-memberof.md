@@ -32,7 +32,7 @@ or
 GET /users/{id | userPrincipalName}/memberOf
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response. $filter is not supported. 
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response. $filter is not supported. 
 
 ## Request headers
 | Header       | Value |
@@ -115,4 +115,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
