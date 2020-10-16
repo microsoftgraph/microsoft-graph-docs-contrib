@@ -98,6 +98,7 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/events/onSignupStart/Microsoft.Graph.InvokeUserFlowAction/$entity",
     "@odata.type": "#Microsoft.Graph.InvokeUserFlowAction",

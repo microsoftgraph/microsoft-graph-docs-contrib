@@ -79,6 +79,7 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart/{id}
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "odata.context": "https://graph.microsoft.com/beta/$metadata#identity/events/onSignUpStart/$entity,
   "value": {
@@ -121,6 +122,7 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart/{id}
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/events/onSignUpStart(microsoft.graph.invokeUserFlowAction/userFlow())/$entity,
   "value": [

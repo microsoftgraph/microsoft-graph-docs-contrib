@@ -75,6 +75,7 @@ GET https://graph.microsoft.com/beta/identity/events
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": {
     "@odata.type": "#microsoft.graph.authenticationEventsPolicy",
