@@ -82,16 +82,14 @@ Content-Type: application/json
 
 {
   "odata.context": "https://graph.microsoft.com/beta/$metadata#identity/events/onSignUpStart/$entity",
-  "value": {
-    "@odata.type": "#microsoft.graph.invokeUserFlowAction",
-    "id": "2adb5c12-5c12-2adb-125c-db2a125cdb2a",
-    "priority": 101,
-    "sourceFilter": {
-        "includeApplications": [
-            "3dfff01b-0afb-4a07-967f-d1ccbd81102a"
-        ]
-     }
-  }
+  "@odata.type": "#microsoft.graph.invokeUserFlowAction",
+  "id": "2adb5c12-5c12-2adb-125c-db2a125cdb2a",
+  "priority": 101,
+  "sourceFilter": {
+      "includeApplications": [
+          "3dfff01b-0afb-4a07-967f-d1ccbd81102a"
+      ]
+   }
 }
 ```
 
@@ -106,7 +104,7 @@ Content-Type: application/json
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/events/onSignupStart/{id}
+GET https://graph.microsoft.com/beta/identity/events/onSignupStart/{id}?$expand=microsoft.graph.invokeUserFlowAction/userFlow
 ```
 
 #### Response
@@ -125,22 +123,18 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/events/onSignUpStart(microsoft.graph.invokeUserFlowAction/userFlow())/$entity",
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.invokeUserFlowAction",
-      "id": "2adb5c12-5c12-2adb-125c-db2a125cdb2a",
-      "priority": 101,
-      "sourceFilter": {
-        "includeApplications": [
-            "3dfff01b-0afb-4a07-967f-d1ccbd81102a"
-        ]
-      },
-      "userFlow": {
-            "id": "B2X_1_Partner",
-            "userFlowType": "signUpOrSignIn",
-            "userFlowTypeVersion": 1
-      }
-    }
-  ]
+  "@odata.type": "#microsoft.graph.invokeUserFlowAction",
+  "id": "2adb5c12-5c12-2adb-125c-db2a125cdb2a",
+  "priority": 101,
+  "sourceFilter": {
+      "includeApplications": [
+          "3dfff01b-0afb-4a07-967f-d1ccbd81102a"
+      ]
+  },
+  "userFlow": {
+      "id": "B2X_1_Partner",
+      "userFlowType": "signUpOrSignIn",
+      "userFlowTypeVersion": 1
+  }
 }
 ```

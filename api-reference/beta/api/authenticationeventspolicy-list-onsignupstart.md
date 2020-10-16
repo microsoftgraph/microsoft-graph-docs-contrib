@@ -156,18 +156,18 @@ Content-Type: application/json
       }
     },
     {
-      "@odata.type": "#Microsoft.Graph.InvokeUserFlowAction",
+      "@odata.type": "#microsoft.graph.InvokeUserFlowAction",
       "id": "0a09997f-fa0c-4f3c-9d02-76762ac069c8",
       "priority": 100,
       "sourceFilter": {
-          "includeApplications": [
-              "b0e1638f-4c39-4cd1-82b3-91d1caef65f8"
+        "includeApplications": [
+            "b0e1638f-4c39-4cd1-82b3-91d1caef65f8"
         ]
       },
       "userFlow": {
-          "id": "B2X_1_Partner",
-          "userFlowType": "signUpOrSignIn",
-          "userFlowTypeVersion": 1
+            "id": "B2X_1_Partner",
+            "userFlowType": "signUpOrSignIn",
+            "userFlowTypeVersion": 1
       }
     }
   ]
