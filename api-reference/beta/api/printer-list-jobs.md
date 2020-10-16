@@ -1,5 +1,5 @@
 ---
-title: List printJobs
+title: List printJobs for a printer
 description: Retrieve a list of print jobs associated with the printer.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# List printJobs for printer
+# List printJobs for a printer
 
 Namespace: microsoft.graph
 
