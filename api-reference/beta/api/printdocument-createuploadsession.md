@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create an upload session that allows an app to iteratively upload ranges of a binary file linked to the print document.
 
-As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries. Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded. This allows transfer to be resumed, in case the network connection is dropped during upload. 
+As part of the response, this action returns an upload URL that can be used in subsequent sequential `PUT` queries. Request headers for each `PUT` operation can be used to specify the exact range of bytes to be uploaded. This allows transfer to be resumed, in case the network connection is dropped during upload. 
 
 ## Permissions
 
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a new [uploadSes
 
 >**Note**: 
 >
->The **uploadUrl** property returned as part of the **uploadSession** response object is an opaque URL for subsequent `PUT` queries to upload byte ranges of the file. It contains the appropriate auth token for subsequent `PUT` queries that expire by **expirationDateTime**. Do not customize this URL.
+>The **uploadUrl** property returned as part of the **uploadSession** response object is an opaque URL for subsequent `PUT` queries to upload byte ranges of the file. It contains the appropriate auth token for subsequent `PUT` queries that expire by **expirationDateTime**. Do not change this URL.
 >
 
 ## Examples
