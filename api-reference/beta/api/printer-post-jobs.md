@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# Create printJob for printer
+# Create printJob for a printer
 
 Namespace: microsoft.graph
 
