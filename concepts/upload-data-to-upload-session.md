@@ -11,7 +11,7 @@ ms.custom: scenarios:getting-started
 
 Printing a document using Universal Print is done by [creating a print job](/graph/api/printershare-post-jobs?view=graph-rest-beta), uploading a document, and then [starting the print job](/graph/api/printjob-start?view=graph-rest-beta). This walkthrough covers the second step, uploading a document, which starts with [creating an upload session](/graph/api/printdocument-createuploadsession?view=graph-rest-beta).
 
-To upload the file, or a portion of the file, your app makes a PUT request to the uploadUrl value received in the createUploadSession response.
+To upload a file, or a portion of a file, your app makes a PUT request to the uploadUrl value received in the createUploadSession response.
 You can upload the entire file, or split the file into multiple byte ranges, as long as the maximum bytes in any given request is less than 10 MB.
 
 The segments of the file can be uploaded in any order and can be uploaded in parallel, with up to four concurrent requests. 
