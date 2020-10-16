@@ -180,8 +180,8 @@ items:
               - name: Overview
                 href: universal-print-concept-overview.md
                 displayName: Universal Print                
-              - name: Print job submission
-                href: universal-print-job-submission.md
+              - name: Upload data to upload session
+                href: upload-data-to-upload-session.md
                 displayName: Universal Print Job Submission
           - name: Corporate management
             href: intune-concept-overview.md
