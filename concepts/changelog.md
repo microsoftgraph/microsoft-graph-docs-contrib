@@ -32,7 +32,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Change | beta | **resetDefaults** action on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource has been renamed to [restoreFactoryDefaults](/graph/api/printer-restorefactorydefaults?view=graph-rest-beta). | 
 | Change | beta | **startPrintJob** action on [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource has been renamed to [start](/graph/api/printjob-start?view=graph-rest-beta). | 
 | Change | beta | **cancelPrintJob** action on [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource has been renamed to [cancel](/graph/api/printjob-cancel?view=graph-rest-beta). | 
-| Change | beta | Deprecated **getCapabilities** action on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource. | 
+| Change | beta | Deprecated **getCapabilities** function on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource. | 
 | Change | beta | Deprecated **allowedUsers** property on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource. | 
 | Change | beta | Deprecated **allowedGroups** property on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource. |
 | Change | beta | Added **feedOrientations** property to [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta) resource. | 
