@@ -10,17 +10,27 @@ localization_priority: Priority
 This changelog covers specific API-level changes in Microsoft Graph v1.0 and beta.
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
+
 ## October 2020
 
 ### Devices and apps | Cloud printing
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
-| Addition | beta | Added the CreateUploadSession action for printDocument | 
-| Addition | beta | Added JobStateReasons to printJobStatus | 
-| Addition | beta | Added IsFetchable to printJob | 
-
-## October 2020
+| Addition | beta | Added the [createUploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta) action for printDocument. | 
+| Change | beta | Added **details** property to [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta) resource. | 
+| Change | beta | Added **isFetchable** property to [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource. | 
+| Change | beta | Added **configuration** property to [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource. | 
+| Change | beta | Deprecated **configuration** property on [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta) resource. | 
+| Change | beta | Added **shares** navigation property on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource. | 
+| Change | beta | **resetDefaults** action on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource has been renamed to [restoreFactoryDefaults](/graph/api/printer-restorefactorydefaults?view=graph-rest-beta). | 
+| Change | beta | **startPrintJob** action on [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource has been renamed to [start](/graph/api/printjob-start?view=graph-rest-beta). | 
+| Change | beta | **cancelPrintJob** action on [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource has been renamed to [cancel](/graph/api/printjob-cancel?view=graph-rest-beta). | 
+| Change | beta | Deprecated **uploadData** action on [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta) resource. | 
+| Change | beta | Deprecated **getCapabilities** action on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource. | 
+| Change | beta | Deprecated **allowedUsers** property on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource. | 
+| Change | beta | Deprecated **allowedGroups** property on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource. |
+| Change | beta | Renamed properties on [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta) resource: <br/><ul><li>processingState -> state</li><li>processingStateReasons -> details</li><li>processingStateDescription -> description</li></ul> |  
 
 ### Identity and access | Identity and sign-in
 
