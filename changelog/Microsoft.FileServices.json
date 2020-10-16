@@ -7,7 +7,7 @@
           "ApiChange":"Method",
           "ChangedApiName":"revokeGrants",
           "ChangeType":"Addition",
-          "Description":"Added the [revokeGrants](https://docs.microsoft.com/en-us/graph/api/permission-revokeGrants?view=graph-rest-beta) method to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource",
+          "Description":"Added the [revokeGrants](https://docs.microsoft.com/en-us/graph/api/permission-revokeGrants?view=graph-rest-beta) method to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource.",
           "Target":"permission"
         },
         {
