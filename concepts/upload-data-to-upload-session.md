@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Upload data to the upload session
 
-To upload the file, or a portion of the file, your app makes a PUT request to the uploadUrl value received in the createUploadSession response.
+To upload the file, or a portion of the file, your app makes a PUT request to the uploadUrl value received in the [createUploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta) response.
 You can upload the entire file, or split the file into multiple byte ranges, as long as the maximum bytes in any given request is less than 10 MB.
 
 The segments of the file can be uploaded in any order and can be uploaded in parallel, with up to four concurrent requests. 
