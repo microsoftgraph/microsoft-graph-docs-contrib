@@ -1601,9 +1601,9 @@ items:
         - name: Print job
           href: resources/printjob.md
           items:
-          - name: Create job for printer
+          - name: Create job for a printer
             href: api/printer-post-jobs.md            
-          - name: Create job for printer share
+          - name: Create job for a printer share
             href: api/printershare-post-jobs.md
           - name: Get
             href: api/printjob-get.md
