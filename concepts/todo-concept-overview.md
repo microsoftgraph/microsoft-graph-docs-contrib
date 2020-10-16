@@ -6,7 +6,7 @@ localization_priority: Priority
 ms.prod: "outlook"
 ---
 
-# To Do API overview (preview)
+# To Do API overview
 Microsoft To Do provides a simple way for people to manage their tasks and plan their day. Tasks are organized in task lists, which can be accessed across To Do clients, Outlook and Teams from any device.
 
 **To Do Windows app**
@@ -37,4 +37,4 @@ Microsoft To Do provides a new entity called _linked resource_, which you can us
 ## API reference
 Looking for the API reference for this service?
 
-- [To Do API in Microsoft Graph](/graph/api/resources/todo-overview?view=graph-rest-1.0)
+- [To Do API in Microsoft Graph](/graph/api/resources/todo-overview)
