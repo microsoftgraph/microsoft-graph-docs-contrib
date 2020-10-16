@@ -41,7 +41,7 @@ POST print/shares/{id}/jobs
 ## Request body
 In the request body, supply a JSON representation of a [printJob](../resources/printjob.md) object.
 The printJob object should only contain **configuration**. All properties of **configuration** are nullable.
-Rest of the fields including job and document IDs are set automatically during resource creation.
+All other fields including job and document IDs are set automatically during resource creation.
 
 Right now, Universal Print supports only one **printDocument** per **printJob** object.
 
