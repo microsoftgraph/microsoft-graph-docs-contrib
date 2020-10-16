@@ -103,3 +103,4 @@ After this transition period, Delve settings control only Delve experience, and 
 Learn more about Delve and using Delve feature settings to control documents showing up in the **Discover** feed: 
 - [Connect and collaborate in Office Delve](https://support.microsoft.com/office/connect-and-collaborate-in-office-delve-46f92806-b52c-4187-b60e-b3bf8d25f73e)
 - [Are my documents safe in Office Delve?](https://support.microsoft.com/office/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3)
+- [Delve for admins](/sharepoint/delve-for-office-365-admins)
