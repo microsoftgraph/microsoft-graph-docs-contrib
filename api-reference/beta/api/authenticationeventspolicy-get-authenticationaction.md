@@ -140,7 +140,7 @@ Content-Type: application/json
             "userFlowType": "signUpOrSignIn",
             "userFlowTypeVersion": 1
       }
-    ]
-  }
+    }
+  ]
 }
 ```
