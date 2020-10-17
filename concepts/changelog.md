@@ -26,6 +26,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **platformId** property to the [participantInfo](/graph/api/resources/participantInfo?view=graph-rest-beta) resource. |
 
+### Files
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the [revokeGrants](/graph/api/permission-revokeGrants?view=graph-rest-beta) method to the [permission](/graph/api/resources/permission?view=graph-rest-beta) resource.|
+
 ### Identity and access | Identity and sign-in
 
 | **Change type** | **Version**   | **Description**                          |
