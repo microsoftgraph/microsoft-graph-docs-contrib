@@ -37,16 +37,16 @@ POST /print/printers/{id}/jobs/{id}/cancel
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
+Request body should be empty.
 
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 The following example shows how to call this API.
-##### Request
+### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob-cancel"
@@ -55,10 +55,7 @@ The following is an example of the request.
 POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/cancel
 ```
 
----
-
-
-##### Response
+### Response
 The following is an example of the response. 
 <!-- {
   "blockType": "response",
