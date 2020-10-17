@@ -1,6 +1,6 @@
 ---
 title: "Get allChatMessages"
-description: "Retrieve all 1:1, group chats, meeting chats and Private channel messages"
+description: "Get all chats that a user is a participant in."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
