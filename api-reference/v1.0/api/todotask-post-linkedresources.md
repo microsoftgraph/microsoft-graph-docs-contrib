@@ -10,9 +10,9 @@ doc_type: apiPageType
 # Create linkedResource
 Namespace: microsoft.graph
 
-Create a new **linkedResource** object.
+Create a [linkedResource](../resources/linkedresource.md) object to associate the specified [task](../resources/todotask.md) with an item in a partner application. For example, you can associate a task with an email item in Outlook that spurred the task, and you can create a **linkedResource** object to track its association.
 
-You can also create a **linkedResource** object while [creating a todoTask](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples).
+You can also create a **linkedResource** object while [creating a task](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
