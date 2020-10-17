@@ -20,6 +20,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta and v1.0 | Added [verified publisher](/graph/api/resources/verifiedPublisher) properties to the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) resources. |
 | Addition | beta and v1.0 | Added [setVerifiedPublisher](/graph/api/application-setverifiedpublisher) and [unsetVerifiedPublisher](/graph/api/application-unsetverifiedpublisher) methods to the [application](/graph/api/resources/application) resource. |
 
+### Files
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the [revokeGrants](/graph/api/permission-revokeGrants?view=graph-rest-beta) method to the [permission](/graph/api/resources/permission?view=graph-rest-beta) resource.|
+
 ### Identity and access | Identity and sign-in
 
 | **Change type** | **Version**   | **Description**                          |
