@@ -37,6 +37,7 @@ POST /print/printers/{id}/restoreFactoryDefaults
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
+Request body should be empty.
 
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
@@ -46,7 +47,6 @@ The following example shows how to call this API.
 ##### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printer-restorefactorydefaults"
@@ -54,9 +54,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/print/printers/{id}/restoreFactoryDefaults
 ```
-
----
-
 
 ##### Response
 The following is an example of the response. 
