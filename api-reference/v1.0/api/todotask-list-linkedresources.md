@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List linkedResources
 Namespace: microsoft.graph
 
-Get information of one or more items in a partner application, based on which the specified [task](../resources/todotask.md) was created. The information is represented in a [linkedResource](../resources/linkedresource.md) object for each item, and includes an external ID for the item in the partner application, and if applicable, a deep link to that item in the application.
+Get information of one or more items in a partner application, based on which a specified [task](../resources/todotask.md) was created. The information is represented in a [linkedResource](../resources/linkedresource.md) object for each item. It includes an external ID for the item in the partner application, and if applicable, a deep link to that item in the application.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
