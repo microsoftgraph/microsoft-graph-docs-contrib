@@ -86,7 +86,7 @@ Content-type: application/json
     },
     "mediaType": "stationery",
     "finishings": [
-      "staple"
+      staple
     ],
     "pagesPerSheet": 1,
     "multipageLayout": "clockwiseFromBottomLeft",
@@ -154,7 +154,7 @@ Content-length: 1065
     "mediaSize": "A4",
     "mediaType": "stationery",
     "finishings": [
-      "staple"
+      staple
     ],
     "pagesPerSheet": 1,
     "multipageLayout": "clockwiseFromBottomLeft",
