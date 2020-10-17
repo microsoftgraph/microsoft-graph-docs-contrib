@@ -9411,6 +9411,8 @@ items:
           href: api/shares-get.md
         - name: Grant access to sharing link
           href: api/permission-grant.md
+        - name: Revoke grants on sharing link
+          href: api/permission-revokegrants.md
         - name: List permissions
           href: api/driveitem-list-permissions.md
         - name: Add permissions
