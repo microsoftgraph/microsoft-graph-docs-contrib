@@ -74,7 +74,6 @@ The following example shows how to create an upload session that you can use in 
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printDocument_createuploadsession",
@@ -93,9 +92,6 @@ Content-type: application/json
   }
 }
 ```
-
----
-
 
 ### Response
 
