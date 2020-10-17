@@ -45,7 +45,7 @@ Here is a JSON representation of the resource
 }
 ```
 
-// Example
+## Example
 
 ```json
 {

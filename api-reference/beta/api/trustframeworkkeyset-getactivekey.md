@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All. |
+| Delegated (work or school account)     | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All. |
+| Application                            | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All |
 
 ## HTTP request
 
@@ -60,7 +60,7 @@ The following is an example of the request.
   "name": "trustframeworkkeyset_getactivekey"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
 ```
 # [C#](#tab/csharp)

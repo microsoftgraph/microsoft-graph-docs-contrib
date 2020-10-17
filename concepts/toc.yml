@@ -323,6 +323,8 @@ items:
             items:
               - name: Manage connections
                 href: search-index-manage-connections.md
+              - name: Manage schema
+                href: search-index-manage-schema.md
               - name: Manage items
                 href: search-index-manage-items.md
       - name: Security

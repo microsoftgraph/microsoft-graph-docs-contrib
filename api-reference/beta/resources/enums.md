@@ -11,7 +11,7 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-### volumeType values 
+### volumeType values
 
 | Member
 |:--------------
@@ -33,6 +33,13 @@ Namespace: microsoft.graph
 |everyone|
 |unknownFutureValue|
 
+### attestationLevel values
+
+|Member|
+|:---|
+|attested|
+|notAttested|
+
 ### emailType values
 
 |Member|
@@ -43,7 +50,35 @@ Namespace: microsoft.graph
 |main|
 |other|
 
-### anniversaryType values 
+### authenticationMethodTargetType values
+
+|Member|
+|:---|
+|user|
+|group|
+
+### authenticationMethodState values
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+
+### fido2RestrictionEnforcementType values
+
+|Member|
+|:---|
+|allow|
+|block|
+
+### authenticatorAppContextType values
+
+|Member|
+|:---|
+|location|
+|app|
+
+### anniversaryType values
 
 |Member|
 |:---|
@@ -51,7 +86,7 @@ Namespace: microsoft.graph
 |wedding|
 |unknownFutureValue|
 
-### skillProficiencyLevel values 
+### skillProficiencyLevel values
 
 |Member|
 |:---|
@@ -62,7 +97,7 @@ Namespace: microsoft.graph
 |expert|
 |unknownFutureValue|
 
-### languageProficiencyLevel values 
+### languageProficiencyLevel values
 
 |Member|
 |:---|
@@ -74,7 +109,7 @@ Namespace: microsoft.graph
 |nativeOrBilingual|
 |unknownFutureValue|
 
-### personRelationship values 
+### personRelationship values
 
 |Member|
 |:---|
@@ -750,7 +785,7 @@ Possible feedback values on the alert provided by an analyst.
 
 ### registryHive values
 
-Enum for registry hives as defined by [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives).
+Enum for registry hives as defined by [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives).
 
 | Member                  | Value | Description                       |
 | :---------------------- | :---- | :-------------------------------- |
@@ -775,7 +810,7 @@ Operation that changed the registry key name and/or value.
 
 ### registryValueType values
 
-Enum for registry value types as defined by [Registry value types](https://docs.microsoft.com/windows/desktop/sysinfo/registry-value-types).
+Enum for registry value types as defined by [Registry value types](/windows/desktop/sysinfo/registry-value-types).
 
 | Member            | Value | Description                                  |
 | :---------------- | :---- | :------------------------------------------- |
@@ -1323,15 +1358,15 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue
 
 ### openIdConnectResponseMode values
-| Member                
+| Member
 |:----------------------
 | none
 | form_post
-| query 
-| unknownFutureValue 
+| query
+| unknownFutureValue
 
 ### openIdConnectResponseTypes values
-| Member                
+| Member
 |:----------------------
 | none
 | code
@@ -1363,4 +1398,39 @@ Possible values for user account types (group membership), per Windows definitio
 | proposed              | 1     | Connected Organizations that are automatically created by the system have this state value. They are not included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.   |
 | unknownFutureValue    | 2     | A sentinel member.                                                                                                                                                                                                 |
 
+### identitySourceType values
 
+|Member|
+|:---|
+|azureActiveDirectory|
+|external|
+
+### externalGroupMemberType values
+
+|Member|
+|:---|
+|user|
+|group|
+
+### connectionState values
+
+|Member|
+|:---|
+|draft|
+|ready|
+|obsolete|
+|limitExceeded|
+
+### permissionClassificationType values
+
+| Member
+|:-------
+| low
+
+### permissionType values
+
+| Member
+|:-------------------------
+| application
+| delegated
+| delegatedUserConsentable
