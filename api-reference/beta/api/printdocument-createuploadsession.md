@@ -66,7 +66,6 @@ If successful, this method returns a `200 OK` response code and a new [uploadSes
 >**Note**: 
 >
 >The **uploadUrl** property returned as part of the **uploadSession** response object is an opaque URL for subsequent `PUT` queries to upload byte ranges of the file. It contains the appropriate auth token for subsequent `PUT` queries that expire by **expirationDateTime**. Do not change this URL.
->
 
 ## Examples
 
