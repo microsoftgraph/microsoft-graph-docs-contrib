@@ -35,7 +35,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |:---------------|:--------|:----------|
 |`id`|`string`|Unique id of the user at risk|
 |`isDeleted`|`bool`|Indicates whether the user is deleted. Possible values are: `true`, `false`|
-|`isProcessing`|`bool`|Indicates wehther a user's risky state is being processed by the backend|
+|`isProcessing`|`bool`|Indicates whether a user's risky state is being processed by the backend|
 |`riskLastUpdatedDateTime`|`datetime`|The date and time that the risky user was last updated|
 |`riskLevel`|`riskLevel`| The possible values are low, medium, high, hidden, none, unknownFutureValue.  |
 |`riskState`|`riskState`| The possible values are none, confirmedSafe, remediated, atRisk, unknownFutureValue.  |
