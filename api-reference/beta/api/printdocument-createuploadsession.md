@@ -76,10 +76,8 @@ The following example shows how to create an upload session that you can use in 
 
 <!-- {
   "blockType": "request",
-  "name": "printDocument_createuploadsession",
-  "sampleKeys": ["AAMkADI5MAAIT3drCAAA="]
+  "name": "printDocument_createuploadsession"
 }-->
-
 ```http
 POST https://graph.microsoft.com/beta/print/shares/1c879027-5120-4aaf-954a-ebfd509a3bcc/jobs/46207/documents/9001bcd9-e36a-4f51-bfc6-140c3ad7f9f7/createUploadSession
 Content-type: application/json
@@ -101,7 +99,6 @@ Content-type: application/json
   "truncated": true,
   "@odata.type": "microsoft.graph.uploadSession"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -115,15 +112,3 @@ Content-type: application/json
     ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "printDocument: createUploadSession",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-
-
