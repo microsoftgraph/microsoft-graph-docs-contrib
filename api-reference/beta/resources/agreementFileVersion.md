@@ -4,7 +4,7 @@ description: "Represents a version of the localized policy files of terms of use
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: rajadineshkumarmurugesan
+author: rajadineshmurugesan-microsoft
 ---
 
 # agreementFileVersion resource type
