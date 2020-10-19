@@ -102,7 +102,8 @@ Content-Type: application/json
          "device":null,
          "phone":null
       },
-      "id":null
+      "id":null,
+      "platformId": "4505"
    },
    "mediaStreams":[
       {
