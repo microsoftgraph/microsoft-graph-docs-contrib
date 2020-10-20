@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/users/{id}/chats/getAllMessages
 ```http
 HTTP/1.1 200 OK 
 Content-type: application/json 
-Content-length: 201 
+Content-length: 347 
 
 { 
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(chatMessage)", 
