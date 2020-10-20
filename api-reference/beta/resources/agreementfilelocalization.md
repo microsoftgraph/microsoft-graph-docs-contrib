@@ -60,7 +60,7 @@ The following is a JSON representation of the resource.
   "fileData": {"@odata.type": "microsoft.graph.agreementFileData"},
   "fileName": "String",
   "id": "String (identifier)",
-  "isDefault": true,
+  "isDefault": "Boolean",
   "language": "String"
 }
 
