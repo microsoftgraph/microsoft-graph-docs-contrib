@@ -22,8 +22,8 @@ Represents a customizable terms of use agreement file that a tenant manages with
 | [Create agreementFileLocalization](../api/agreementfilelocalization-post-agreementfilelocalizations.md) | [agreementFileLocalization](agreementFileLocalization.md) | Create a new agreementFileLocalization. |
 | [List agreementFileLocalizations](../api/agreementfilelocalization-list.md) | [agreementFileLocalization](agreementFileLocalization.md) collection | Get an agreementFileLocalization object collection. |
 | [Get agreementFileLocalization](../api/agreementfilelocalization-get.md) | [agreementFileLocalization](agreementFileLocalization.md) | Read properties and relationships of an agreementFileLocalization object. |
-| [List agreementFileVersions](../api/agreementfileversion-list.md) | [agreementFileVersion](agreementFileVersion.md) collection | Get an agreementFileVersion object collection. |
-| [Get agreementFileVersion](../api/agreementfileversion-get.md) | [agreementFileVersion](agreementFileVersion.md) | Read properties and relationships of an agreementFileVersion object. |
+<!--| [List agreementFileVersions](../api/agreementfileversion-list.md) | [agreementFileVersion](agreementFileVersion.md) collection | Get an agreementFileVersion object collection. |
+| [Get agreementFileVersion](../api/agreementfileversion-get.md) | [agreementFileVersion](agreementFileVersion.md) | Read properties and relationships of an agreementFileVersion object. |-->
 
 ## Properties
 | Property     | Type        | Description |
