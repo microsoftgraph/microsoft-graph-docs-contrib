@@ -131,15 +131,15 @@ This resource supports:
 |deletedDateTime| DateTimeOffset | The date and time the user was deleted. <br><br>Returned only on $select. |
 |department|String|The name for the department in which the user works. Supports $filter.|
 |displayName|String|The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|
-|employeeHireDate| DateTimeOffset | The date and time when the user was hired or will start work in case of a future hire. <br><br>Returned only on $select. Supports $filter.|
-|employeeId|String|The employee identifier assigned to the user by the organization. Supports $filter.|
-|employeeOrgData|[employeeOrgData](employee-org-data.md) collection|Represents organization data (e.g. division and costCenter) associated with a user.|
-|employeeType | String | Captures enterprise worker type: Employee, Contractor, Consultant, Vendor, etc. <br><br>Returned only on $select. Supports $filter.|
+| employeeHireDate | DateTimeOffset | The date and time when the user was hired or will start work in case of a future hire. <br><br>Returned only on $select. Supports $filter.|
+| employeeId | String | The employee identifier assigned to the user by the organization. <br><br>Returned only on $select. Supports $filter.|
+|employeeOrgData|[employeeOrgData](employeeorgdata.md) |Represents organization data (e.g. division and costCenter) associated with a user. <br><br>Returned only on $select.|
+| employeeType | String | Captures enterprise worker type: Employee, Contractor, Consultant, Vendor, etc. <br><br>Returned only on $select. Supports $filter.|
 |externalUserState|String|For an external user invited to the tenant using the [invitation API](../api/invitation-post.md), this property represents the invited user's invitation status. For invited users, the state can be `PendingAcceptance` or `Accepted`, or `null` for all other users. <br><br>Returned only on `$select`. Supports `$filter` with the supported values. For example: `$filter=externalUserState eq 'PendingAcceptance'`.|
 |externalUserStateChangeDateTime|DateTimeOffset|Shows the timestamp for the latest change to the **externalUserState** property. <br><br>Returned only on `$select`.|
 |faxNumber|String|The fax number of the user.|
 |givenName|String|The given name (first name) of the user. Supports $filter.|
-|hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+| hireDate | DateTimeOffset | The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. <br><br>Returned only on $select. <br><br> Note: This property is specific to SharePoint online. We recommend using the native *employeeHireDate* property to set and update hire date values using Graph APIs. |
 |id|String|The unique identifier for the user. Should be treated as an opaque identifier. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
 |identities|[objectIdentity](objectIdentity.md) collection| Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. May contain multiple items with the same **signInType** value. <br>Supports $filter.|
 |imAddresses|String collection|The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only.|
@@ -441,7 +441,7 @@ Here is a JSON representation of the resource
   "displayName": "string",
   "employeeHireDate": "2020-01-01T00:00:00Z",
   "employeeId": "string",
-  "employeeOrgData": [{"@odata.type": "microsoft.graph.employeeOrgData"}],
+  "employeeOrgData": {"@odata.type": "microsoft.graph.employeeOrgData"},
   "employeeType": "string",
   "faxNumber" : "string",
   "givenName": "string",
