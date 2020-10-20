@@ -454,6 +454,14 @@ items:
           href: api/user-upgrade-teamsappinstallation.md
         - name: Uninstall app
           href: api/user-delete-teamsappinstallation.md
+      - name: To-do tasks
+        items:
+        - name: Task list
+          href: resources/todotasklist.md
+        - name: List task list
+          href: api/todo-list-lists.md
+        - name: Create task list
+          href: api/todo-post-lists.md
       - name: User settings
         items:
         - name: User settings
