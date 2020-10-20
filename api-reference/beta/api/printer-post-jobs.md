@@ -39,16 +39,14 @@ POST print/printers/{id}/jobs
 | Content-type  | application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of a [printJob](../resources/printjob.md) object.
-The printJob object should only contain **configuration**. All properties of **configuration** are nullable.
-All other fields including job and document IDs are set automatically during resource creation.
+In the request body, supply a JSON representation of a [printJob](../resources/printjob.md) object. The printJob object should only contain **configuration**. All properties of **configuration** are nullable. All other fields, including job and document IDs, are set automatically during resource creation.
 
 Right now, Universal Print supports only one **printDocument** per **printJob** object.
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [printJob](../resources/printjob.md) object and associated [printDocument](../resources/printDocument.md) in the response body. 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -104,7 +102,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
