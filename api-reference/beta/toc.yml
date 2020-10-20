@@ -456,12 +456,16 @@ items:
           href: api/user-delete-teamsappinstallation.md
       - name: To-do tasks
         items:
-        - name: Task list
-          href: resources/todotasklist.md
-        - name: List task list
-          href: api/todo-list-lists.md
+        - name: Task
+          href: resources/todotask.md
         - name: Create task list
           href: api/todo-post-lists.md
+        - name: Create task
+          href: api/todotasklist-post-tasks.md
+        - name: List task lists
+          href: api/todo-list-lists.md
+        - name: List tasks
+          href: api/todotasklist-list-tasks.md
       - name: User settings
         items:
         - name: User settings
