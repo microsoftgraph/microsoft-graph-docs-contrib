@@ -1,19 +1,19 @@
 ---
-title: "Get allChatMessages"
-description: "Get all chats that a user is a participant in."
+title: "chat: getAllMessages"
+description: "Get messages from all chats that a user is a participant in."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get allChatMessages
+# GetAllChatMessages
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all [chats](../resources/chatmessage.md) that a user is a participant in, including individual and group chats, meeting chats, and private channel messages.
+Get all messages from all [chats](../resources/chatmessage.md) that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
 
 ## Permissions
 
@@ -30,7 +30,7 @@ The following permissions are required to call this API. To learn more, includin
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{id}/chats/allMessages
+GET /users/{id}/chats/getAllMessages
 ```
 
 ## Optional query parameters
@@ -38,7 +38,7 @@ GET /users/{id}/chats/allMessages
 This operation supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
 
 ```http
-GET /users/{id}/chats/allMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
+GET /users/{id}/chats/getAllMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
 ```
 
 ## Request headers
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a list of [chatM
   "name": "get_chat_message"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}/chats/allMessages
+GET https://graph.microsoft.com/beta/users/{id}/chats/getAllMessages
 ```
 
 ### Response
@@ -78,7 +78,7 @@ Content-length: 201
 { 
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(chatMessage)", 
     "@odata.count": 10, 
-    "@odata.nextLink": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats/allMessages?$skip=10", 
+    "@odata.nextLink": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats/getAllMessages?$skip=10", 
     "value": [ 
 { 
             "@odata.type": "#microsoft.graph.chatMessage", 
