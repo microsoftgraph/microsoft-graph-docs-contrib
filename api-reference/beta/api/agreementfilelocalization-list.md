@@ -82,30 +82,31 @@ Content-length: 146
 
 {
   "value": [
-  {
-    "id": "22c7a9b7-5e93-43e3-a33d-7158ee040b0d",
-    "fileName": "ToU_2020-07-01.pdf",
-    "language": "en",
-    "isDefault": true,
-    "isMajorVersion": false,
-    "createdDateTime": "2020-07-01T00:00:00.0000000Z"
-  },
-  {
-    "id": "09c75118-cff0-4ad4-9434-23b3b2aa8981",
-    "fileName": "ToU_2020-06-01.pdf",
-    "language": "en",
-    "isDefault": false,
-    "isMajorVersion": false,
-    "createdDateTime": "2020-06-01T00:00:00.0000000Z"
-  },
-  {
-    "id": "81f08c30-ed21-4c72-a762-c565e439791f",
-    "fileName": "ToU_2020-05-01.pdf",
-    "language": "en",
-    "isDefault": false,
-    "isMajorVersion": false,
-    "createdDateTime": "2020-05-01T00:00:00.0000000Z"
-  }]
+    {
+      "id": "22c7a9b7-5e93-43e3-a33d-7158ee040b0d",
+      "fileName": "ToU_2020-07-01.pdf",
+      "language": "en",
+      "isDefault": true,
+      "isMajorVersion": false,
+      "createdDateTime": "2020-07-01T00:00:00.0000000Z"
+    },
+    {
+      "id": "09c75118-cff0-4ad4-9434-23b3b2aa8981",
+      "fileName": "ToU_2020-06-01.pdf",
+      "language": "en",
+      "isDefault": false,
+      "isMajorVersion": false,
+      "createdDateTime": "2020-06-01T00:00:00.0000000Z"
+    },
+    {
+      "id": "81f08c30-ed21-4c72-a762-c565e439791f",
+      "fileName": "ToU_2020-05-01.pdf",
+      "language": "en",
+      "isDefault": false,
+      "isMajorVersion": false,
+      "createdDateTime": "2020-05-01T00:00:00.0000000Z"
+    }
+  ]
 }
 ```
 
