@@ -17,7 +17,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition|Beta|Add the [Get allChatMessages](/graph/api/chat-get-allmessages) method to the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resource.|
+|Addition|Beta|Add the [GetAllChatMessages](/graph/api/chat-getallmessages) method to the [chat](/graph/api/resources/chat?view=graph-rest-beta) collection resource.|
 
 ### Applications
 
