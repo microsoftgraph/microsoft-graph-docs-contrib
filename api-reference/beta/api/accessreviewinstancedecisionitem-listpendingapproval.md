@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.Read.All or AccessReview.ReadWrite.All  |
+|Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Application                            | AccessReview.Read.All or AccessReview.ReadWrite.All |
 
  The signed in user must also be in a directory role that permits them to read an access review. The signed in user will also only see decisions of which they are assigned reviewer in that decision's instance's `accessReviewScheduleDefinition`.
