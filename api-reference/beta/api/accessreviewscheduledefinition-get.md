@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviewsv2-root.md) feature, retrieve an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object by ID. This returns all properties of the scheduled access review series except for the associated accessReviewInstances. Each accessReviewScheduleDefinition has at least one instance, representing each recurrence of the review, as well as individual groups being reviewed.
+Retrieve an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object by ID. This returns all properties of the scheduled access review series except for the associated accessReviewInstances. Each accessReviewScheduleDefinition has at least one instance, representing each recurrence of the review, as well as individual groups being reviewed.
 
 To retrieve the instances of the access review series, use the [list accessReviewInstance](accessreviewinstance-list.md) API.
 
