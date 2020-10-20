@@ -24,8 +24,6 @@ Participants in a meeting.
 | producers | [meetingParticipantInfo](meetingparticipantinfo.md) collection | For broadcast meeting only. |
 | contributors | [meetingParticipantInfo](meetingparticipantinfo.md) collection | For broadcast meeting only. |
 
-Question to @jsandoval-msft: according to Graph Review results we are deprecating "producers" and "contributors" and using "role" inside "attendees"/"organizer" to differentiate the role of meeting participants. Should we remove "producers" and "contributors" here? (in most cases they are null as we don't officially support live events yet)
-
 ## JSON representation
 
 The following is a JSON representation of the resource.

@@ -60,7 +60,11 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | organizer          | Only the organizer  is a presenter.                           |
 | unknownFutureValue | Unknow future value.                                          |
 
+<<<<<<< HEAD
 >**Note**: If the value of **allowedPresenters** is `roleIsPresenter`, you must specify **role** for each attendee.
+=======
+**Note**: If the value of **allowedPresenters** is set to `roleIsPresenter`, please specify each meeting participant's meeting role using **role** property in [meetingParticipantInfo](../resources/meetingparticipantinfo.md).
+>>>>>>> addressed comments
 
 ## JSON representation
 
