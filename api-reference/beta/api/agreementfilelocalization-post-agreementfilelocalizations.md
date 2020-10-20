@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /agreements/{id}/file/localizations
+POST /agreements('id')/file/localizations
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -60,7 +60,7 @@ In the request body, supply a JSON representation of the [agreementfilelocalizat
   "name": "create_agreement_from_agreements"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/agreements/(id)/file/localizations
+POST https://graph.microsoft.com/beta/agreements('id')/file/localizations
 Content-type: application/json
 
 {
