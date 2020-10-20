@@ -19,7 +19,7 @@ Inherits from [accessReviewInstanceDecisionItemTarget](../resources/accessreview
 |Property|Type|Description|
 |:---|:---|:---|
 |userDisplayName|String|Name of user.|
-|userId|String|Identifier of user.|
+| userId | String | The identifier of user. |
 |userPrincipalName|String|User principal name.|
 
 ## Relationships
