@@ -1,6 +1,6 @@
 ---
 title: "agreementFileVersion resource type"
-description: "Represents a version of the localized policy files of terms of use agreement in Azure Active Directory (Azure AD). It contains metadata about the agreement file (for example, the name, the language, and whether it is the default file)."
+description: "Represents a version of the localized policy file of terms of use agreement in Azure Active Directory (Azure AD). It contains metadata about the agreement file (for example, the name, the language, and whether it is the default file)."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
@@ -13,17 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a customizable version of terms of use agreement file that a tenant manages with Azure Active Directory (Azure AD). It contains metadata about the agreement file (for example, the name, the language, and whether it is the default file).
-
-<!--
-## Methods
-
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [Get agreementFile](../api/agreementfile-get.md) | [agreementFile](agreementfile.md) | Read properties and relationships of an **agreementFile** object. |
-| [Update](../api/agreementfile-update.md) | [agreementFile](agreementfile.md) | Update an **agreementFile** object. |
-| [Delete](../api/agreementfile-delete.md) | None | Delete an **agreementFile** object. |
--->
+Represents a customized version of terms of use agreement file that a tenant manages with Azure Active Directory (Azure AD). It contains metadata about the agreement file (for example, the name, the language, and whether it is the default file).
 
 ## Properties
 | Property     | Type        | Description |
@@ -36,24 +26,9 @@ Represents a customizable version of terms of use agreement file that a tenant m
 |isMajorVersion|Boolean|Indicates whether the agreement file is a major version update. Major version updates invalidate the agreement's acceptances on the corresponding language. |
 |createdDateTime|DateTimeOffset|The date time representing when the file was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.|
 
-<!--
-## Relationships
-| Relationship | Type        | Description |
-|:-------------|:------------|:------------|
-| versions | Collection(microsoft.azure.termsOfUse.agreementFileVersion) | The version history for the localized agreement file |
--->
-
 ## JSON representation
 
 The following is a JSON representation of the resource.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.agreementFileLocalization"
-}-->
 
 ```json
 {
@@ -61,22 +36,9 @@ The following is a JSON representation of the resource.
   "fileName": "String",
   "id": "String (identifier)",
   "isDefault": true,
-  "language": "String"
+  "language": "String",
+  "isMajorVersion": "Boolean",
+  "createdDateTime": "DateTimeOffset"
 }
 
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "agreementFileLocalization resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->
-
-
