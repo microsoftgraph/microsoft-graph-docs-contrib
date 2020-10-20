@@ -1,5 +1,5 @@
 ---
-title: Create printJob for a printer.
+title: Create printJob for a printer
 description: Create a new printJob for a printer. 
 author: braedenp-msft
 localization_priority: Normal
