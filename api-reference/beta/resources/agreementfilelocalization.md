@@ -37,10 +37,12 @@ Represents a customizable terms of use agreement file that a tenant manages with
 |createdDateTime|DateTimeOffset|The date time representing when the file was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.|
 
 
+<!--
 ## Relationships
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |versions|[agreementFileVersion](agreementFileVersion.md) collection|The version history for the localized agreement file.|
+-->
 
 ## JSON representation
 
