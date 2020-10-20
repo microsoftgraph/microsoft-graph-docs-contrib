@@ -43,14 +43,14 @@ This operation does not currently support [OData query parameters](/graph/query-
 
 ## Subscribe for changes
 
-`chatMessage` supports subcribing to changes (creation, updation and deletion) using [Graph Change Notifications](webhooks.md). This allows callers to subscribe and get changes in realtime.
+`chatMessage` supports subcribing to changes (creation, updation and deletion) using [Graph Change Notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in realtime.
 
-Please refer to [Subscription documentation](subscription.md) on how to create subscription.
+Please refer to [Subscription documentation](../resources/subscription.md) on how to create subscription.
 
 | Subscription resource | Description  | Allows [include resource data](../../../concepts/webhooks-with-resource-data.md) | Permission types supported | Query parameters supported |
 |:----------------------|:-------------|:---------------------------------------------------------------------------------|:---------------------------|:---------------------------|
-| /chats/getAllMessages | Allows subscribing to messages for all [chats](chat.md) across the tenant. | Yes | Application | None |
-| /chats/{chatId}/messages | Allows subscribing to messages in a specific [chat](chat.md) | Yes (only in Application) | Application, Delegated | $search |
+| /chats/getAllMessages | Allows subscribing to messages for all [chats](../resources/chat.md) across the tenant. | Yes | Application | None |
+| /chats/{chatId}/messages | Allows subscribing to messages in a specific [chat](../resources/chat.md) | Yes (only in Application) | Application, Delegated | $search |
 
 ## Request headers
 

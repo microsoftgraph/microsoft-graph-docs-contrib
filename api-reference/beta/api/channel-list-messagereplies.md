@@ -50,9 +50,8 @@ Please refer to [Subscription documentation](../resources/subscription.md) on ho
 
 | Subscription resource | Description  | Allows [include resource data](../../../concepts/webhooks-with-resource-data.md) | Permission types supported | Query parameters supported |
 |:----------------------|:-------------|:---------------------------------------------------------------------------------|:---------------------------|:---------------------------|
-| /teams/getAllMessages | Allows subscribing to messages (and replies) for all [teams](team.md) across the tenant. | Yes | Application | None |
-| /chats/getAllMessages | Allows subscribing to messages for all [chats](chat.md) across the tenant. | Yes | Application | None |
-| /teams/{teamId}/channels/{channelId}/messages | Allows subscribing to messages (and replies) in a specific [channel](channel.md) in a [team](team.md) | Yes (only in Application) | Application, Delegated | $search |
+| /teams/getAllMessages | Allows subscribing to messages (and replies) for all [teams](../resources/team.md) across the tenant. | Yes | Application | None |
+| /teams/{teamId}/channels/{channelId}/messages | Allows subscribing to messages (and replies) in a specific [channel](../resources/channel.md) in a [team](../resources/team.md) | Yes (only in Application) | Application, Delegated | $search |
 
 ## Request headers
 | Header       | Value |
