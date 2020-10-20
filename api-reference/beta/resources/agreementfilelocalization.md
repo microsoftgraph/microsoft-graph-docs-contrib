@@ -15,15 +15,17 @@ Namespace: microsoft.graph
 
 Represents a customizable terms of use agreement file that a tenant manages with Azure Active Directory (Azure AD). It contains metadata about the agreement file (for example, the name, the language, and whether it is the default file).
 
+<!--
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create agreementFileLocalization](../api/agreementfilelocalization-post-agreementfilelocalizations.md) | [agreementFileLocalization](agreementFileLocalization.md) | Create a new agreementFileLocalization. |
-| [List agreementFileLocalizations](../api/agreementfilelocalization-list.md) | [agreementFileLocalization](agreementFileLocalization.md) collection | Get an agreementFileLocalization object collection. |
-| [Get agreementFileLocalization](../api/agreementfilelocalization-get.md) | [agreementFileLocalization](agreementFileLocalization.md) | Read properties and relationships of an agreementFileLocalization object. |
-<!--| [List agreementFileVersions](../api/agreementfileversion-list.md) | [agreementFileVersion](agreementFileVersion.md) collection | Get an agreementFileVersion object collection. |
-| [Get agreementFileVersion](../api/agreementfileversion-get.md) | [agreementFileVersion](agreementFileVersion.md) | Read properties and relationships of an agreementFileVersion object. |-->
+| [Create agreementFileLocalization](../api/agreementfilelocalization-post-agreementfilelocalizations.md) | [agreementfilelocalization](agreementfilelocalization.md) | Create a new agreementFileLocalization. |
+| [List agreementFileLocalizations](../api/agreementfilelocalization-list.md) | [agreementfilelocalization](agreementfilelocalization.md) collection | Get an agreementFileLocalization object collection. |
+| [Get agreementFileLocalization](../api/agreementfilelocalization-get.md) | [agreementfilelocalization](agreementfilelocalization.md) | Read properties and relationships of an agreementFileLocalization object. |
+| [List agreementFileVersions](../api/agreementfileversion-list.md) | [agreementfileversion](agreementfileversion.md) collection | Get an agreementFileVersion object collection. |
+| [Get agreementFileVersion](../api/agreementfileversion-get.md) | [agreementfileversion](agreementfileversion.md) | Read properties and relationships of an agreementFileVersion object. |
+-->
 
 ## Properties
 | Property     | Type        | Description |
@@ -36,12 +38,10 @@ Represents a customizable terms of use agreement file that a tenant manages with
 |isMajorVersion|Boolean|Indicates whether the agreement file is a major version update. Major version updates invalidate the agreement's acceptances on the corresponding language. |
 |createdDateTime|DateTimeOffset|The date time representing when the file was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.|
 
-<!--
 ## Relationships
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|versions|[agreementFileVersion](agreementFileVersion.md) collection|The version history for the localized agreement file.|
--->
+|versions|[agreementFileVersion](agreementfileversion.md) collection|The version history for the localized agreement file.|
 
 ## JSON representation
 
