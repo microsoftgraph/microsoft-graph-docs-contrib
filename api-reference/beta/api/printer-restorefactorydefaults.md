@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a [printer](../resources/printer.md)'s defaults settings to factory defaults.
+Restore a [printer](../resources/printer.md)'s settings to the default settings.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -37,14 +37,14 @@ POST /print/printers/{id}/restoreFactoryDefaults
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-Request body should be empty.
+Do not supply a request body for this method.
 
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 The following example shows how to call this API.
-##### Request
+### Request
 The following is an example of the request.
 
 <!-- {
@@ -55,7 +55,7 @@ The following is an example of the request.
 POST https://graph.microsoft.com/beta/print/printers/{id}/restoreFactoryDefaults
 ```
 
-##### Response
+### Response
 The following is an example of the response. 
 <!-- {
   "blockType": "response",
