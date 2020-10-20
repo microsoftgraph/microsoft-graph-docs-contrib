@@ -39,7 +39,7 @@ Represents a customizable terms of use agreement file that a tenant manages with
 ## Relationships
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-| versions | [agreementFileVersion](agreementFileVersion.md) collection | The version history for the localized agreement file |
+| versions | [agreementFileVersion](agreementFileVersion.md) collection | The version history for the localized agreement file. |
 
 ## JSON representation
 
@@ -51,7 +51,9 @@ The following is a JSON representation of the resource.
   "fileName": "String",
   "id": "String (identifier)",
   "isDefault": true,
-  "language": "String"
+  "language": "String",
+  "isMajorVersion": "Boolean",
+  "createdDateTime": "DateTimeOffset"
 }
 
 ```
