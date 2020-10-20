@@ -52,8 +52,8 @@ The other [OData query parameters](/graph/query-parameters) are not currently su
 
 Please refer to [Subscription documentation](../resources/subscription.md) on how to create subscription.
 
-| Subscription resource | Description  | Allows [include resource data](../../../concepts/webhooks-with-resource-data.md) | Permission types supported | Query parameters supported |
-|:----------------------|:-------------|:---------------------------------------------------------------------------------|:---------------------------|:---------------------------|
+| Subscription resource | Description  | Allows [include resource data](/graph/webhooks-with-resource-data) | Permission types supported | Query parameters supported |
+|:----------------------|:-------------|:-------------------------------------------------------------------|:---------------------------|:---------------------------|
 | /teams/getAllMessages | Allows subscribing to messages (and replies) for all [teams](../resources/team.md) across the tenant. | Yes | Application | None |
 | /teams/{teamId}/channels/{channelId}/messages | Allows subscribing to messages (and replies) in a specific [channel](../resources/channel.md) in a [team](../resources/team.md) | Yes (only in Application) | Application, Delegated | $search |
 

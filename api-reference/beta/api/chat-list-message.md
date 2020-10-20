@@ -47,8 +47,8 @@ This operation does not currently support [OData query parameters](/graph/query-
 
 Please refer to [Subscription documentation](../resources/subscription.md) on how to create subscription.
 
-| Subscription resource | Description  | Allows [include resource data](../../../concepts/webhooks-with-resource-data.md) | Permission types supported | Query parameters supported |
-|:----------------------|:-------------|:---------------------------------------------------------------------------------|:---------------------------|:---------------------------|
+| Subscription resource | Description  | Allows [include resource data](/graph/webhooks-with-resource-data) | Permission types supported | Query parameters supported |
+|:----------------------|:-------------|:-------------------------------------------------------------------|:---------------------------|:---------------------------|
 | /chats/getAllMessages | Allows subscribing to messages for all [chats](../resources/chat.md) across the tenant. | Yes | Application | None |
 | /chats/{chatId}/messages | Allows subscribing to messages in a specific [chat](../resources/chat.md) | Yes (only in Application) | Application, Delegated | $search |
 
