@@ -1,6 +1,6 @@
 ---
 title: "Using the Intune Graph API - Microsoft Graph API"
-description: "Lists the Microsoft Graph API for Intune endpoints (REST) you can use to manage your tenant organization, its devices, apps, access, and resources."
+description: "Lists the Microsoft Graph API for Intune endpoints (REST) you can use to manage your tenant organization and its devices, apps, access, and resources."
 author: "rolyon"
 localization_priority: Priority
 ms.prod: "intune"
@@ -8,7 +8,7 @@ ms.prod: "intune"
 
 # Working with Intune in Microsoft Graph  
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -16,11 +16,11 @@ The Microsoft Graph API for Intune enables programmatic access to Intune informa
 
 For mobile device management (MDM) scenarios, the Microsoft Graph API for Intune supports standalone deployments; Intune [hybrid deployments](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) are not supported. 
 
-All Beta Microsoft Graph APIs for Intune complete full testing and validation by the Intune team before being deployed in Microsoft Graph.  Changes may occur to the Beta API's.  Review the [changelog](https://docs.microsoft.com/en-us/graph/changelog) for the latest API changes. 
+All Microsoft Graph beta APIs for Intune are tested and validated by the Intune team before they're deployed. For the latest API changes, see the [changelog](/graph/changelog). 
 
 ## Using the Microsoft Graph API for Intune
 
-Intune provides data into Microsoft Graph in the same way as other cloud services do, with rich entity information and relationship navigation. Use Microsoft Graph to combine information from other services and Intune to build rich cross-service applications for IT professionals or end users.     
+Intune provides data into Microsoft Graph in the same way that other cloud services do, with rich entity information and relationship navigation. Use Microsoft Graph to combine information from other services and Intune to build rich cross-service applications for IT professionals or end users.     
 
 The following example shows how you can determine whether an application is installed on a user's device: 
 
