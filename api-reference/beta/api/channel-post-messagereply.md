@@ -153,7 +153,8 @@ The following example show how to import back-in-time messages using the `create
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/teamId/channels/channelId/messages
+POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies
+{
 
 {
    "replyToId":null,
@@ -201,7 +202,7 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 
 {
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('teamId')/channels('channelId')/messages/$entity",
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams/{teamId}/channels/{channelId}/messages/$entity",
    "id":"id-value",
    "replyToId":null,
    "etag":"id-value",
