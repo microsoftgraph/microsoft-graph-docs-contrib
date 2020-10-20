@@ -1,6 +1,6 @@
 ---
 title: "Get accessReviewScheduleDefinition"
-description: "In the Azure AD access reviews feature, retrieve an accessReviewScheduleDefinition object."
+description: "Retrieve an accessReviewScheduleDefinition object."
 localization_priority: Normal
 author: "isabelleatmsft"
 ms.prod: "microsoft-identity-platform"
