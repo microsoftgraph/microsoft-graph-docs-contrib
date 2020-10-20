@@ -1,6 +1,6 @@
 ---
 title: "Stop accessReviewInstance"
-description: "In the Azure AD access reviews feature, stop a currently active accessReviewInstance."
+description: "Stop a currently active accessReviewInstance."
 localization_priority: Normal
 author: "isabelleatmsft"
 ms.prod: "microsoft-identity-platform"
