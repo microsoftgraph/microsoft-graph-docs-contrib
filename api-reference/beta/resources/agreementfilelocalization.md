@@ -59,9 +59,7 @@ The following is a JSON representation of the resource.
   "fileName": "String",
   "id": "String (identifier)",
   "isDefault": "Boolean",
-  "language": "String",
-  "isMajorVersion": "Boolean",
-  "createdDateTime": "DateTimeOffset"
+  "language": "String"
 }
 
 ```
