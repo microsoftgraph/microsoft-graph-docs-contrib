@@ -81,26 +81,28 @@ Content-type: application/json
 Content-length: 491
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
-    "id": "Fido2",
-    "state": "enabled",
-    "isSelfServiceRegistrationAllowed": true,
-    "isAttestationEnforced": true,
-    "keyRestrictions": {
-        "isEnforced": false,
-        "enforcementType": "block",
-        "aaGuids": []
-    },
-    "includeTargets": [
-        {
-            "targetType": "group",
-            "id": "all_users",
-            "isRegistrationRequired": false,
-            "useForSignIn": true
-        }
-    ]
-  }
+   "value":{
+      "@odata.type":"#microsoft.graph.fido2AuthenticationMethodConfiguration",
+      "id":"Fido2",
+      "state":"enabled",
+      "isSelfServiceRegistrationAllowed":true,
+      "isAttestationEnforced":true,
+      "keyRestrictions":{
+         "isEnforced":false,
+         "enforcementType":"block",
+         "aaGuids":[
+            
+         ]
+      },
+      "includeTargets":[
+         {
+            "targetType":"group",
+            "id":"all_users",
+            "isRegistrationRequired":false,
+            "useForSignIn":true
+         }
+      ]
+   }
 }
 ```
 
