@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /identityGovernance/accessReviews/definitions/{definitionId}/instances/{instanceId}/stop
+POST /identityGovernance/accessReviews/definitions/{definition-id}/instances/{instance-id}/stop
 ```
 
 ## Request headers
