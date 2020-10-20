@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and [agreementFileVe
   "name": "get_agreement"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/agreements('id')/file/localizations('localizationId')/versions('versionId')
+GET https://graph.microsoft.com/beta/agreements/{id}/file/localizations/{localizationId}/versions/{versionId}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-agreement-csharp-snippets.md)]
