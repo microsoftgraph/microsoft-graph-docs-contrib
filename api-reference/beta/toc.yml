@@ -12288,7 +12288,7 @@ items:
         - name: Update message
           href: api/chatmessage-update.md
         - name: Get all chat messages
-          href: api/chat-get-allmessages.md  
+          href: api/chat-getallmessages.md  
         - name: List hosted content
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content
