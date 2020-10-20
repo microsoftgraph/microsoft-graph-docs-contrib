@@ -15,15 +15,15 @@ Namespace: microsoft.graph
 
 Represents a customizable terms of use agreement file that a tenant manages with Azure Active Directory (Azure AD). It contains metadata about the agreement file (for example, the name, the language, and whether it is the default file).
 
-<!--
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get agreementFile](../api/agreementfile-get.md) | [agreementFile](agreementfile.md) | Read properties and relationships of an **agreementFile** object. |
-| [Update](../api/agreementfile-update.md) | [agreementFile](agreementfile.md) | Update an **agreementFile** object. |
-| [Delete](../api/agreementfile-delete.md) | None | Delete an **agreementFile** object. |
--->
+| [Create agreementFileLocalization](../api/agreementfilelocalization-post-agreementfilelocalizations.md) | [agreementFileLocalization](agreementFileLocalization.md) | Create a new agreementFileLocalization. |
+| [List agreementFileLocalizations](../api/agreementfilelocalization-list.md) | [agreementFileLocalization](agreementFileLocalization.md) collection | Get an agreementFileLocalization object collection. |
+| [Get agreementFileLocalization](../api/agreementfilelocalization-get.md) | [agreementFileLocalization](agreementFileLocalization.md) | Read properties and relationships of an agreementFileLocalization object. |
+| [List agreementFileVersions](../api/agreementfileversion-list.md) | [agreementFileVersion](agreementFileVersion.md) collection | Get an agreementFileVersion object collection. |
+| [Get agreementFileVersion](../api/agreementfileversion-get.md) | [agreementFileVersion](agreementFileVersion.md) | Read properties and relationships of an agreementFileVersion object. |
 
 ## Properties
 | Property     | Type        | Description |
