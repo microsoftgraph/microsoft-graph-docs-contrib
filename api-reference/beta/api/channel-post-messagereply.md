@@ -18,6 +18,10 @@ Create a new reply to a [chatMessage](../resources/chatmessage.md) in a specifie
 > **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
 
 > **Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
+<!-- markdownlint-disable MD024 -->
+<!-- markdownlint-disable MD022 -->
+<!-- markdownlint-disable MD025 -->
+<!-- markdownlint-disable MD001 -->
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,6 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /teams/{id}/channels/{id}/messages/{id}/replies
 ```
+
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
@@ -57,6 +62,7 @@ The following is an example of a request.
   "blockType": "request",
   "name": "post_reply_message"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/replies
 Content-type: application/json
@@ -68,6 +74,7 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-reply-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -82,7 +89,6 @@ Content-type: application/json
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
@@ -91,6 +97,7 @@ The following is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -128,6 +135,102 @@ Content-length: 160
     "attachments": [],
     "mentions": [],
     "reactions": []
+}
+```
+
+### Example: Import messages
+
+> **Note**:  There are no special permission scopes in this scenario since the request is part of chatMessage; scopes for chatMessage apply here as well.
+
+#### Request
+
+The following example show how to import back-in-time messages using the `createDateTime` and `from` keys in the request body.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "import_chatmessage_from_channel"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/teamId/channels/channelId/messages
+
+{
+   "replyToId":null,
+   "messageType":"message",
+   "createdDateTime":"2019-02-04T19:58:15.511Z",
+   "lastModifiedDateTime":null,
+   "deleted":false,
+   "subject":null,
+   "summary":null,
+   "importance":"normal",
+   "locale":"en-us",
+   "policyViolation":null,
+   "from":{
+      "application":null,
+      "device":null,
+      "conversation":null,
+      "user":{
+         "id":"id-value",
+         "displayName":"Joh Doe",
+         "userIdentityType":"aadUser"
+      }
+   },
+   "body":{
+      "contentType":"html",
+      "content":"Hello World"
+   },
+   "attachments":[ ],
+   "mentions":[ ],
+   "reactions":[ ]
+}
+```
+
+---
+### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 200 OK
+
+{
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('teamId')/channels('channelId')/messages/$entity",
+   "id":"id-value",
+   "replyToId":null,
+   "etag":"id-value",
+   "messageType":"message",
+   "createdDateTime":"2019-02-04T19:58:15.511Z",
+   "lastModifiedDateTime":null,
+   "deleted":false,
+   "subject":null,
+   "summary":null,
+   "importance":"normal",
+   "locale":"en-us",
+   "policyViolation":null,
+   "from":{
+      "application":null,
+      "device":null,
+      "conversation":null,
+      "user":{
+         "id":"id-value",
+         "displayName":"Joh Doe",
+         "userIdentityType":"aadUser"
+      }
+   },
+   "body":{
+      "contentType":"html",
+      "content":"Hello World"
+   },
+   "attachments":[ ],
+   "mentions":[ ],
+   "reactions":[ ]
 }
 ```
 
