@@ -4947,6 +4947,14 @@ items:
           href: api/teamsappinstallation-delete.md
         - name: Upgrade installed app for team
           href: api/teamsappinstallation-upgrade.md
+        - name: List apps for user
+          href: api/user-list-teamsappinstallation.md
+        - name: Add app for user
+          href: api/user-add-teamsappinstallation.md
+        - name: Remove app for user
+          href: api/user-delete-teamsappinstallation.md
+        - name: Upgrade installed app for user
+          href: api/user-upgrade-teamsappinstallation.md
       - name: Tab
         href: resources/teamstab.md
         items:
