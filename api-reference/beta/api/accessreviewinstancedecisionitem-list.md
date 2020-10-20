@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
- The signed in user must also be in a directory role that permits them to read an access review.
+ The signed-in user must also be in a directory role that permits them to read an access review.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
