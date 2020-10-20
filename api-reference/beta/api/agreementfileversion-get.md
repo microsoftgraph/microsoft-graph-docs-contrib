@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 author: "rajadineshmurugesan-microsoft"
 ---
 
-# Get agreement
+# Get agreementFileVersion
 
 Namespace: microsoft.graph
 
