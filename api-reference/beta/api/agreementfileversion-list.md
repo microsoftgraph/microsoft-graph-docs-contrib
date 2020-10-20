@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /agreements/{id}/file/localizations/{localizationId}/versions
+GET /agreements/{id}/file/localizations('localizationId')/versions
 ```
 <!--
 ## Optional query parameters
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and collection of [a
   "name": "get_agreements"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/agreements/(id)/file/localizations/(localizationId)/versions
+GET https://graph.microsoft.com/beta/agreements('id')/file/localizations('localizationId')/versions
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-agreements-csharp-snippets.md)]
