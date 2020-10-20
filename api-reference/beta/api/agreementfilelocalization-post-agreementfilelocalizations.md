@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /agreements('id')/file/localizations
+POST /agreements/{id}/file/localizations
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -40,7 +40,7 @@ The following table shows the properties that are required when you create a use
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|fileData|[agreementFileData](agreementfiledata.md)|Data representing the terms of use PDF document. Read-only.|
+|fileData|[agreementFileData](../resources/agreementfiledata.md)|Data representing the terms of use PDF document. Read-only.|
 |fileName|String|Name of the agreement file (for example, TOU.pdf). Read-only.|
 |isDefault|Boolean|Indicates whether this is the default agreement file if none of the cultures matches the client preference. If none of the files are marked as default, the first one will be treated as the default. Read-only.|
 |language|String|Culture of the agreement file in the format languagecode2-country/regioncode2. languagecode2 is a lowercase two-letter code derived from ISO 639-1. country/regioncode2 is derived from ISO 3166 and usually consists of two uppercase letters, or a BCP-47 language tag (for example, en-US). Read-only.|
@@ -60,7 +60,7 @@ In the request body, supply a JSON representation of the [agreementfilelocalizat
   "name": "create_agreement_from_agreements"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/agreements('id')/file/localizations
+POST https://graph.microsoft.com/beta/agreements/{id}/file/localizations
 Content-type: application/json
 
 {
