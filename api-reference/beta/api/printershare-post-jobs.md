@@ -1,5 +1,5 @@
 ---
-title: Create printJob for a printerShare.
+title: Create printJob for a printerShare
 description: Create a new printJob for a printerShare. 
 author: braedenp-msft
 localization_priority: Normal
@@ -48,7 +48,7 @@ Right now, Universal Print supports only one **printDocument** per **printJob** 
 ## Response
 If successful, this method returns a `201 Created` response code and a [printJob](../resources/printjob.md) object and associated [printDocument](../resources/printDocument.md) in the response body. 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -104,7 +104,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
