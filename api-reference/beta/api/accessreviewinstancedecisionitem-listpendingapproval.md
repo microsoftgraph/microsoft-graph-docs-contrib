@@ -21,7 +21,7 @@ Retrieve the [accessReviewInstanceDecisionItem](../resources/accessreviewinstanc
 >If no query parameters are provided and there are more than 100 results, Microsoft Graph will automatically paginate results at 100 results per page.
 
 ## Permissions
-One of the following permissions is required to call this API. Delegated permissions to personal Microsoft accounts are not supported. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
