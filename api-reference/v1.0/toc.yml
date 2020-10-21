@@ -4921,6 +4921,8 @@ items:
           href: api/channel-post-messages.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
+        - name: Update message
+          href: api/chatmessage-update.md 
       - name: Conversation member
         href: resources/conversationmember.md
         items:
@@ -4946,9 +4948,7 @@ items:
         - name: Update member
           href: api/conversationmember-update.md
         - name: Delete member
-          href: api/conversationmember-delete.md
-        - name: Update message
-          href: api/chatmessage-update.md  
+          href: api/conversationmember-delete.md         
       - name: App catalog
         items:
         - name: App in catalog
