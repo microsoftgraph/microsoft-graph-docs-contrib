@@ -16,12 +16,12 @@ Represents organization data associated with a user. The **employeeOrgData** pro
 ## Properties
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-| division | String | The name of the division in which the user works. <br><br>Returned only on $select. Supports $filter. |
-| costCenter | String | The cost center associated with the user. <br><br>Returned only on $select. Supports $filter. |
+| division | String | The name of the division in which the user works. <br><br>Returned only on `$select`. Supports `$filter`. |
+| costCenter | String | The cost center associated with the user. <br><br>Returned only on `$select`. Supports `$filter`. |
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
