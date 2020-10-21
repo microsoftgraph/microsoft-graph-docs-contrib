@@ -512,6 +512,38 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _ChatMessage.Send_ (private preview) | Send user chat messages | Allows an app to send 1:1 and group chat messages in Microsoft Teams, on behalf of the signed-in user. | No | No |
 
+---
+
+## Cloud PC permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_CloudPC.Read.All_ | Read Cloud PCs | Allows the app to read the properties of Cloud PCs. | No | No |
+|_CloudPC.ReadWrite.All_ | Read and write Cloud PCs | Allows the app to read and write the properties of Cloud PCs. | Yes | No |
+
+#### Application permissions
+
+None.
+
+### Remarks
+
+> **Note:**  
+
+### Example usage
+
+#### Delegated
+
+* _CloudPC.Read.All_: Check the current state of Cloud PCs (`GET /deviceManagement/virtualEndpoint/cloudPCs`).
+* _CloudPC.ReadWrite.All_: Update the Cloud PC user settings (`PATCH /deviceManagement/virtualEndpoint/selfServiceSettings`).
+
+#### Application
+
+None.
+
+---
+
 ## Cloud printing permissions
 
 #### Application permissions
