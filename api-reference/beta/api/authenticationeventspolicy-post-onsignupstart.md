@@ -72,7 +72,7 @@ POST https://graph.microsoft.com/beta/identity/events/onSignupStart
 Content-Type: application/json
 
 {
-    "@odata.type": "#Microsoft.Graph.InvokeUserFlowAction",
+    "@odata.type": "#microsoft.graph.invokeUserFlowAction",
     "priority": 101,
     "sourceFilter": {
         "includeApplications": [
@@ -101,7 +101,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/events/onSignupStart/Microsoft.Graph.InvokeUserFlowAction/$entity",
-    "@odata.type": "#Microsoft.Graph.InvokeUserFlowAction",
+    "@odata.type": "#microsoft.graph.invokeUserFlowAction",
     "id": "2be3336b-e3b4-44f3-9128-b6fd9ad39bb8",
     "priority": 101,
     "sourceFilter": {
