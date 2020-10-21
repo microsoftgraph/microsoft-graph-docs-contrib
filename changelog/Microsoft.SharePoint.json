@@ -3,15 +3,15 @@
     {
       "ChangeList": [
         {
-          "Id": "ee27c4ef-e19e-40d7-be77-24bb6141f0f9",
+          "Id": "a7d3e2be-9671-4a76-9622-cc5de62b3522",
           "ApiChange": "Resource",
           "ChangedApiName": "termStore.store,termStore.term,termStore.set,termStore.relation",
           "ChangeType": "Addition",
-          "Description": "Introduced the taxonomy API, including the [termStore.store](https://docs.microsoft.com/en-us/graph/api/resources/termstore-store?view=graph-rest-beta), [termStore.term](https://docs.microsoft.com/en-us/graph/api/resources/termstore-term?view=graph-rest-beta), [termStore.set](https://docs.microsoft.com/en-us/graph/api/resources/termstore-set?view=graph-rest-beta), and [termStore.relation](https://docs.microsoft.com/en-us/graph/api/resources/termstore-relation?view=graph-rest-beta) resources and associated methods.",
+          "Description": "Introduced the taxonomy API, including the [termStore.store](/graph/api/resources/termstore-store?view=graph-rest-beta), [termStore.term](/graph/api/resources/termstore-term?view=graph-rest-beta), [termStore.set](/graph/api/resources/termstore-set?view=graph-rest-beta), and [termStore.relation](/graph/api/resources/termstore-relation?view=graph-rest-beta) resources and associated methods.",
           "Target": "termStore.store,termStore.term,termStore.set,termStore.relation"
         }
       ],
-      "Id": "ee27c4ef-e19e-40d7-be77-24bb6141f0f9",
+      "Id": "a7d3e2be-9671-4a76-9622-cc5de62b3522",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
@@ -21,15 +21,15 @@
     {
       "ChangeList": [
         {
-          "Id": "555e2002-7ad3-4796-bb70-6ed09d1ea9c7",
+          "Id": "9905039f-23a2-4ff8-b8fc-931f5ba70745",
           "ApiChange": "Resource",
           "ChangedApiName": "geolocationColumn",
           "ChangeType": "Addition",
-          "Description": "Added the [geolocationColumn](https://docs.microsoft.com/en-us/graph/api/resources/geolocationcolumn?view=graph-rest-1.0) resource. The **geolocationColumn** resource applies to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the [geolocationColumn](/graph/api/resources/geolocationcolumn?view=graph-rest-1.0) resource. The **geolocationColumn** resource applies to the [columnDefinition](/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "geolocationColumn,columnDefinition"
         }
       ],
-      "Id": "555e2002-7ad3-4796-bb70-6ed09d1ea9c7",
+      "Id": "9905039f-23a2-4ff8-b8fc-931f5ba70745",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-06-01T00:00:00",
@@ -39,15 +39,15 @@
     {
       "ChangeList": [
         {
-          "Id": "69dc54ba-6702-4e5c-acc9-3666fc0ec19f",
+          "Id": "77813f14-6993-45f9-861f-6d88738c2476",
           "ApiChange": "Property",
           "ChangedApiName": "followedSites",
           "ChangeType": "Addition",
-          "Description": "Added the **followedSites** navigation property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity to [list the sites followed by the signed-in user](https://docs.microsoft.com/en-us/graph/api/sites-list-followed?view=graph-rest-beta).",
+          "Description": "Added the **followedSites** navigation property to the [user](/graph/api/resources/user?view=graph-rest-beta) entity to [list the sites followed by the signed-in user](/graph/api/sites-list-followed?view=graph-rest-beta).",
           "Target": "user,list the sites followed by the signed-in user"
         }
       ],
-      "Id": "69dc54ba-6702-4e5c-acc9-3666fc0ec19f",
+      "Id": "77813f14-6993-45f9-861f-6d88738c2476",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-04-01T00:00:00",
@@ -57,31 +57,31 @@
     {
       "ChangeList": [
         {
-          "Id": "69dc54ba-6702-4e5c-acc9-3666fc0ec19f",
+          "Id": "77813f14-6993-45f9-861f-6d88738c2476",
           "ApiChange": "Property",
           "ChangedApiName": "followedSites",
           "ChangeType": "Addition",
-          "Description": "Added the **followedSites** navigation property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) entity to [list the sites followed by the signed-in user](https://docs.microsoft.com/en-us/graph/api/sites-list-followed?view=graph-rest-1.0).",
+          "Description": "Added the **followedSites** navigation property to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity to [list the sites followed by the signed-in user](/graph/api/sites-list-followed?view=graph-rest-1.0).",
           "Target": "user,list the sites followed by the signed-in user"
         },
         {
-          "Id": "69dc54ba-6702-4e5c-acc9-3666fc0ec19f",
+          "Id": "77813f14-6993-45f9-861f-6d88738c2476",
           "ApiChange": "Property",
           "ChangedApiName": "dataLocatonCode",
           "ChangeType": "Addition",
-          "Description": "Added the **dataLocatonCode** property on the [siteCollection](https://docs.microsoft.com/en-us/graph/api/resources/sitecollection?view=graph-rest-1.0) resource.",
+          "Description": "Added the **dataLocatonCode** property on the [siteCollection](/graph/api/resources/sitecollection?view=graph-rest-1.0) resource.",
           "Target": "siteCollection"
         },
         {
-          "Id": "69dc54ba-6702-4e5c-acc9-3666fc0ec19f",
+          "Id": "77813f14-6993-45f9-861f-6d88738c2476",
           "ApiChange": "Property",
           "ChangedApiName": "tenantId",
           "ChangeType": "Addition",
-          "Description": "Added the **tenantId** property on the [sharepointIds](https://docs.microsoft.com/en-us/graph/api/resources/sharepointids?view=graph-rest-1.0) resource.",
+          "Description": "Added the **tenantId** property on the [sharepointIds](/graph/api/resources/sharepointids?view=graph-rest-1.0) resource.",
           "Target": "sharepointIds"
         }
       ],
-      "Id": "69dc54ba-6702-4e5c-acc9-3666fc0ec19f",
+      "Id": "77813f14-6993-45f9-861f-6d88738c2476",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-04-01T00:00:00",
@@ -91,31 +91,31 @@
     {
       "ChangeList": [
         {
-          "Id": "adff8f97-3d1f-4fcf-abf5-946824a82f40",
+          "Id": "8ef4a453-de39-4fb5-9191-697a8aceb0fe",
           "ApiChange": "Property",
           "ChangedApiName": "followSite,user",
           "ChangeType": "Addition",
-          "Description": "Added the [followSite](https://docs.microsoft.com/en-us/graph/api/site-follow?view=graph-rest-1.0) navigation property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) entity.",
+          "Description": "Added the [followSite](/graph/api/site-follow?view=graph-rest-1.0) navigation property to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity.",
           "Target": "followSite,user"
         },
         {
-          "Id": "adff8f97-3d1f-4fcf-abf5-946824a82f40",
+          "Id": "8ef4a453-de39-4fb5-9191-697a8aceb0fe",
           "ApiChange": "Property",
           "ChangedApiName": "unfollowSite,user",
           "ChangeType": "Addition",
-          "Description": "Added the [unfollowSite](https://docs.microsoft.com/en-us/graph/api/site-unfollow?view=graph-rest-1.0) navigation property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) entity.",
+          "Description": "Added the [unfollowSite](/graph/api/site-unfollow?view=graph-rest-1.0) navigation property to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity.",
           "Target": "unfollowSite,user"
         },
         {
-          "Id": "adff8f97-3d1f-4fcf-abf5-946824a82f40",
+          "Id": "8ef4a453-de39-4fb5-9191-697a8aceb0fe",
           "ApiChange": "Property",
           "ChangedApiName": "subscriptions",
           "ChangeType": "Addition",
-          "Description": "Added the **subscriptions** navigation property to the [list](https://docs.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-1.0) entity.",
+          "Description": "Added the **subscriptions** navigation property to the [list](/graph/api/resources/list?view=graph-rest-1.0) entity.",
           "Target": "list"
         }
       ],
-      "Id": "adff8f97-3d1f-4fcf-abf5-946824a82f40",
+      "Id": "8ef4a453-de39-4fb5-9191-697a8aceb0fe",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-03-01T00:00:00",
@@ -125,15 +125,15 @@
     {
       "ChangeList": [
         {
-          "Id": "e892845a-c4e5-4035-a4b2-92574117856e",
+          "Id": "8982ceff-6388-4e34-bf19-0c573e39a8ee",
           "ApiChange": "Property",
           "ChangedApiName": "subscriptions",
           "ChangeType": "Addition",
-          "Description": "Added the **subscriptions** navigation property to the [list](https://docs.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-beta) entity.",
+          "Description": "Added the **subscriptions** navigation property to the [list](/graph/api/resources/list?view=graph-rest-beta) entity.",
           "Target": "list"
         }
       ],
-      "Id": "e892845a-c4e5-4035-a4b2-92574117856e",
+      "Id": "8982ceff-6388-4e34-bf19-0c573e39a8ee",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-07-01T00:00:00",
@@ -143,23 +143,23 @@
     {
       "ChangeList": [
         {
-          "Id": "560ae293-c419-4a10-9299-c29926935364",
+          "Id": "599effec-92db-490d-85b8-5b7c56f32009",
           "ApiChange": "Property",
           "ChangedApiName": "followSite,user",
           "ChangeType": "Addition",
-          "Description": "Added the [followSite](https://docs.microsoft.com/en-us/graph/api/follow-site?view=graph-rest-beta) navigation property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity set",
+          "Description": "Added the [followSite](/graph/api/follow-site?view=graph-rest-beta) navigation property to the [user](/graph/api/resources/user?view=graph-rest-beta) entity set",
           "Target": "followSite,user"
         },
         {
-          "Id": "560ae293-c419-4a10-9299-c29926935364",
+          "Id": "599effec-92db-490d-85b8-5b7c56f32009",
           "ApiChange": "Property",
           "ChangedApiName": "unfollowSite,user",
           "ChangeType": "Addition",
-          "Description": "Added the [unfollowSite](https://docs.microsoft.com/en-us/graph/api/unfollow-site?view=graph-rest-beta) navigation property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity set",
+          "Description": "Added the [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta) navigation property to the [user](/graph/api/resources/user?view=graph-rest-beta) entity set",
           "Target": "unfollowSite,user"
         }
       ],
-      "Id": "560ae293-c419-4a10-9299-c29926935364",
+      "Id": "599effec-92db-490d-85b8-5b7c56f32009",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-06-01T00:00:00",
@@ -169,111 +169,111 @@
     {
       "ChangeList": [
         {
-          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
-          "Description": "Added the **analytics** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity.",
+          "Description": "Added the **analytics** property to the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) entity.",
           "Target": "driveItem"
         },
         {
-          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
-          "Description": "Added the **analytics** property to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) entity.",
+          "Description": "Added the **analytics** property to the [site](/graph/api/resources/site?view=graph-rest-beta) entity.",
           "Target": "site"
         },
         {
-          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
-          "Description": "Added the **analytics** property to the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) entity.",
+          "Description": "Added the **analytics** property to the [listItem](/graph/api/resources/listitem?view=graph-rest-beta) entity.",
           "Target": "listItem"
         },
         {
-          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
-          "Description": "Added the **getActivitiesByInterval** function on the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity.",
+          "Description": "Added the **getActivitiesByInterval** function on the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) entity.",
           "Target": "driveItem"
         },
         {
-          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
-          "Description": "Added the **getActivitiesByInterval** function on the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) entity.",
+          "Description": "Added the **getActivitiesByInterval** function on the [site](/graph/api/resources/site?view=graph-rest-beta) entity.",
           "Target": "site"
         },
         {
-          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
-          "Description": "Added the **getActivitiesByInterval** function on the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) entity.",
+          "Description": "Added the **getActivitiesByInterval** function on the [listItem](/graph/api/resources/listitem?view=graph-rest-beta) entity.",
           "Target": "listItem"
         },
         {
-          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
           "ApiChange": "Resource",
           "ChangedApiName": "itemAnalytics",
           "ChangeType": "Addition",
-          "Description": "Added the [itemAnalytics](https://docs.microsoft.com/en-us/graph/api/resources/itemanalytics?view=graph-rest-beta) entity.",
+          "Description": "Added the [itemAnalytics](/graph/api/resources/itemanalytics?view=graph-rest-beta) entity.",
           "Target": "itemAnalytics"
         },
         {
-          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
           "ApiChange": "Resource",
           "ChangedApiName": "itemActivityStat",
           "ChangeType": "Addition",
-          "Description": "Added the [itemActivityStat](https://docs.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) entity.",
+          "Description": "Added the [itemActivityStat](/graph/api/resources/itemactivity?view=graph-rest-beta) entity.",
           "Target": "itemActivityStat"
         },
         {
-          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
           "ApiChange": "Resource",
           "ChangedApiName": "itemActionStat",
           "ChangeType": "Addition",
-          "Description": "Added the [itemActionStat](https://docs.microsoft.com/en-us/graph/api/resources/itemactionstat?view=graph-rest-beta) complex type.",
+          "Description": "Added the [itemActionStat](/graph/api/resources/itemactionstat?view=graph-rest-beta) complex type.",
           "Target": "itemActionStat"
         },
         {
-          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
           "ApiChange": "Resource",
           "ChangedApiName": "accessAction",
           "ChangeType": "Addition",
-          "Description": "Added the [accessAction](https://docs.microsoft.com/en-us/graph/api/resources/accessaction?view=graph-rest-beta) complex type.",
+          "Description": "Added the [accessAction](/graph/api/resources/accessaction?view=graph-rest-beta) complex type.",
           "Target": "accessAction"
         },
         {
-          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
           "ApiChange": "Resource",
           "ChangedApiName": "incompleteData",
           "ChangeType": "Addition",
-          "Description": "Added the [incompleteData](https://docs.microsoft.com/en-us/graph/api/resources/incompletedata?view=graph-rest-beta) complex type.",
+          "Description": "Added the [incompleteData](/graph/api/resources/incompletedata?view=graph-rest-beta) complex type.",
           "Target": "incompleteData"
         },
         {
-          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
           "ApiChange": "Property",
           "ChangedApiName": "access",
           "ChangeType": "Addition",
-          "Description": "Added the **access** property to the [itemActivity](https://docs.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) complex type.",
+          "Description": "Added the **access** property to the [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta) complex type.",
           "Target": "itemActivity"
         },
         {
-          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
           "ApiChange": "Property",
           "ChangedApiName": "location",
           "ChangeType": "Addition",
-          "Description": "Added the **location** property to the [itemActivity](https://docs.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) complex type.",
+          "Description": "Added the **location** property to the [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta) complex type.",
           "Target": "itemActivity"
         }
       ],
-      "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+      "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-04-01T00:00:00",
@@ -283,7 +283,7 @@
     {
       "ChangeList": [
         {
-          "Id": "9d6765f8-cee7-4668-89bb-7fed34cfa98d",
+          "Id": "e1e3d753-ac6b-46f1-ae4e-c296496bf36f",
           "ApiChange": "Resource",
           "ChangedApiName": "site",
           "ChangeType": "Change",
@@ -291,7 +291,7 @@
           "Target": ""
         }
       ],
-      "Id": "9d6765f8-cee7-4668-89bb-7fed34cfa98d",
+      "Id": "e1e3d753-ac6b-46f1-ae4e-c296496bf36f",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -301,7 +301,7 @@
     {
       "ChangeList": [
         {
-          "Id": "9d6765f8-cee7-4668-89bb-7fed34cfa98d",
+          "Id": "e1e3d753-ac6b-46f1-ae4e-c296496bf36f",
           "ApiChange": "Resource",
           "ChangedApiName": "site,siteCollection",
           "ChangeType": "Addition",
@@ -309,7 +309,7 @@
           "Target": ""
         }
       ],
-      "Id": "9d6765f8-cee7-4668-89bb-7fed34cfa98d",
+      "Id": "e1e3d753-ac6b-46f1-ae4e-c296496bf36f",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -319,7 +319,7 @@
     {
       "ChangeList": [
         {
-          "Id": "dea685cf-638a-4be1-99e5-a8e5e5f3300f",
+          "Id": "8c237ba8-7eda-482e-a997-23e47437c5ae",
           "ApiChange": "Property",
           "ChangedApiName": "sharepoint,sites,fieldDefinition,columnDefinition,siteCollectionId,siteId,site,sharepointIds,listItemId,listItem,sharepointIds,columnSet,listItem,fields,site",
           "ChangeType": "Change",
@@ -327,7 +327,7 @@
           "Target": ""
         },
         {
-          "Id": "dea685cf-638a-4be1-99e5-a8e5e5f3300f",
+          "Id": "8c237ba8-7eda-482e-a997-23e47437c5ae",
           "ApiChange": "Property",
           "ChangedApiName": "booleanColumn,calculatedColumn,choiceColumn,dateTimeColumn,lookupColumn,numberColumn,personOrGroupColumn,textColumn,displayName,site,columns,site,list,listItem,sharedDriveItem,sharepointIds,list,listItem,site,columnDefinition",
           "ChangeType": "Addition",
@@ -335,7 +335,7 @@
           "Target": ""
         }
       ],
-      "Id": "dea685cf-638a-4be1-99e5-a8e5e5f3300f",
+      "Id": "8c237ba8-7eda-482e-a997-23e47437c5ae",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -345,23 +345,23 @@
     {
       "ChangeList": [
         {
-          "Id": "6c3b3f4c-1902-48e6-b8cb-c62cb7358f8d",
+          "Id": "ccda3c06-16d6-43da-9bee-794de8d60ad6",
           "ApiChange": "Resource",
           "ChangedApiName": "lists by ID,path/URL",
           "ChangeType": "Addition",
-          "Description": "Access to SharePoint sites and [lists by ID](https://docs.microsoft.com/en-us/graph/api/list-get?view=graph-rest-beta) or [path/URL](https://docs.microsoft.com/en-us/graph/api/baseitem-getbyurl?view=graph-rest-beta).",
+          "Description": "Access to SharePoint sites and [lists by ID](/graph/api/list-get?view=graph-rest-beta) or [path/URL](/graph/api/baseitem-getbyurl?view=graph-rest-beta).",
           "Target": "lists by ID,path/URL"
         },
         {
-          "Id": "6c3b3f4c-1902-48e6-b8cb-c62cb7358f8d",
+          "Id": "ccda3c06-16d6-43da-9bee-794de8d60ad6",
           "ApiChange": "Resource",
           "ChangedApiName": "listing, creating, getting, and deleting instances of listItem",
           "ChangeType": "Addition",
-          "Description": "Support for [listing, creating, getting, and deleting instances of listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta).",
+          "Description": "Support for [listing, creating, getting, and deleting instances of listItem](/graph/api/resources/listitem?view=graph-rest-beta).",
           "Target": "listing, creating, getting, and deleting instances of listItem"
         }
       ],
-      "Id": "6c3b3f4c-1902-48e6-b8cb-c62cb7358f8d",
+      "Id": "ccda3c06-16d6-43da-9bee-794de8d60ad6",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-09-01T00:00:00",
