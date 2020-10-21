@@ -44,13 +44,20 @@ This resource lets you add your own data to custom properties using [extensions]
 |alternativeSecurityIds|alternativeSecurityId collection| For internal use only. Not nullable. |
 |approximateLastSignInDateTime|DateTimeOffset| The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
 |complianceExpirationDateTime|DateTimeOffset| The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
+|deviceCategory|String|Device category display name. Property set by Intune for administrators to use to organize devices.|
 |deviceId|Guid| Unique identifier set by Azure Device Registration Service at the time of registration. |
 |deviceMetadata|String| For internal use only. Set to null. |
+|deviceOwnership|String|Ownership of the device. This property is set by Intune. Possible values are: unknown, company, personal.|
 |deviceVersion|Int32| For internal use only. |
 |displayName|String| The display name for the device. Required. |
+|domainName|String|The on-premises domain name of Hybrid Azure AD joined devices. This property is set by Intune.|
+|enrollmentProfileName|String|Enrollment profile applied to the device, e.g. Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name. This property is set by Intune.|
+|enrollmentType|String|Enrollment type of the device. This property is set by Intune. Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.|
 |id|String|The unique identifier for the device. Inherited from [directoryObject](directoryobject.md). Key, Not nullable. Read-only.|
 |isCompliant|Boolean|**true** if the device complies with Mobile Device Management (MDM) policies; otherwise, **false**. Read-only. This can only be updated by Intune for any device OS type or by an [approved MDM app](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices.|
 |isManaged|Boolean|**true** if the device is managed by a Mobile Device Management (MDM) app; otherwise, **false**. This can only be updated by Intune for any device OS type or by an [approved MDM app](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices. |
+|isRooted|Boolean|**true** if device is rooted; **false** if device is jail-broken. This can only be updated by Intune.|
+|managementType|String|Management channel of the device.  This property is set by Intune. Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.|
 |manufacturer|String| Manufacturer of the device. Read-only. |
 |mdmAppId|String|Application identifier used to register device into MDM. <br><br>Read-only. Supports $filter.|
 |model|String| Model of the device. Read-only. |
@@ -60,6 +67,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |operatingSystemVersion|String| Operating system version of the device. Required. |
 |physicalIds|String collection| For internal use only. Not nullable. |
 |profileType|String|The profile type of the device. Possible values:<br />**RegisteredDevice** (default)<br />**SecureVM**<br />**Printer**<br />**Shared**<br />**IoT**|
+|registrationDateTime|DateTimeOffset|Date and time of when the device was registered. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
 |systemLabels|String collection| List of labels applied to the device by the system. |
 |hostNames|String collection| List of hostNames for the device.|
 |trustType|String| Type of trust for the joined device. Read-only. Possible values: <br />**Workplace** - indicates *bring your own personal devices*<br />**AzureAd** - Cloud only joined devices<br />**ServerAd** - on-premises domain joined devices joined to Azure AD. For more details, see [Introduction to device management in Azure Active Directory](/azure/active-directory/device-management-introduction) |
@@ -102,13 +110,19 @@ The following is a JSON representation of the resource.
   "accountEnabled": true,
   "approximateLastSignInDateTime": "String (timestamp)",
   "complianceExpirationDateTime": "String (timestamp)",
+  "deviceCategory": "string",
   "deviceId": "string",
   "deviceMetadata": "string",
+  "deviceOwnership": "string",
   "deviceVersion": 1024,
   "displayName": "string",
+  "domainName": "string",
+  "enrollmentProfileName": "string",
+  "enrollmentType": "string",
   "id": "string (identifier)",
   "isCompliant": true,
   "isManaged": true,
+  "isRooted": true,
   "mdmAppId": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
@@ -116,6 +130,7 @@ The following is a JSON representation of the resource.
   "operatingSystemVersion": "string",
   "physicalIds": ["string"],
   "profileType": "string",
+  "registrationDateTime": "String (timestamp)",
   "systemLabels": ["string"],
   "hostNames" : ["string"],
   "trustType": "string",
@@ -124,6 +139,7 @@ The following is a JSON representation of the resource.
   "Platform": "string",
   "Kind": "string",
   "Model": "string",
+  "managementType": "string",
   "Manufacturer": "string"
 }
 ```
