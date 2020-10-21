@@ -458,14 +458,14 @@ items:
         items:
         - name: Task
           href: resources/todotask.md
-        - name: Create task list
-          href: api/todo-post-lists.md
         - name: Create task
           href: api/todotasklist-post-tasks.md
-        - name: List task lists
-          href: api/todo-list-lists.md
+        - name: Create task list
+          href: api/todo-post-lists.md
         - name: List tasks
           href: api/todotasklist-list-tasks.md
+        - name: List task lists
+          href: api/todo-list-lists.md
       - name: User settings
         items:
         - name: User settings
