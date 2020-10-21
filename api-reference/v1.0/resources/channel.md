@@ -1,7 +1,7 @@
 ---
 title: "channel resource type"
 description: "A channel is a collection of chatMessages within a team. "
-author: "clearab"
+author: "nkramer
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
