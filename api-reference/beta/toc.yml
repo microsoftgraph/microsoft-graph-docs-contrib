@@ -12140,7 +12140,7 @@ items:
         href: resources/teams-api-overview.md
       - name: Team
         href: resources/team.md
-        items:
+        items:       
         - name: Create team
           href: api/team-post.md
         - name: Create team from group
@@ -12291,6 +12291,32 @@ items:
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
+      - name: Conversation member
+        href: resources/conversationmember.md
+        items:
+        - name: List members
+          href: api/conversationmember-list.md
+        - name: Get member
+          href: api/conversationmember-get.md
+        - name: Add member
+          href: api/conversationmember-add.md
+        - name: Update member
+          href: api/conversationmember-update.md
+        - name: Delete member
+          href: api/conversationmember-delete.md
+      - name: Azure AD user conversation member
+        href: resources/aaduserconversationmember.md
+        items:
+        - name: List members
+          href: api/conversationmember-list.md
+        - name: Get member
+          href: api/conversationmember-get.md
+        - name: Add member
+          href: api/conversationmember-add.md
+        - name: Update member
+          href: api/conversationmember-update.md
+        - name: Delete member
+          href: api/conversationmember-delete.md
       - name: App catalog
         items:
         - name: App in catalog
