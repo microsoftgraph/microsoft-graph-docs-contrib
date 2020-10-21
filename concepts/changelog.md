@@ -41,7 +41,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | Added [List app for users](/graph/api/user-list-teamsappinstallation), [Add app for user](/graph/api/user-add-teamsappinstallation), [Remove app for user](/graph/api/user-delete-teamsappinstallation), and [Upgrade installed app for user](/graph/api/user-upgrade-teamsappinstallation) methods to the [teamsAppInstallation](/graph/api/resources/teamsappinstallation) resource. |
+| Addition | v1.0 | Added [List apps for user](/graph/api/user-list-teamsappinstallation), [Add app for user](/graph/api/user-add-teamsappinstallation), [Remove app for user](/graph/api/user-delete-teamsappinstallation), and [Upgrade installed app for user](/graph/api/user-upgrade-teamsappinstallation) methods to the [teamsAppInstallation](/graph/api/resources/teamsappinstallation) resource. |
 
 ## September 2020
 
