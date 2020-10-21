@@ -527,10 +527,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 None.
 
-### Remarks
-
-> **Note:**  
-
 ### Example usage
 
 #### Delegated
