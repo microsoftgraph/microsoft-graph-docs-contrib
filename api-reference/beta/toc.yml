@@ -925,6 +925,15 @@ items:
           items:
           - name: List delegated permission grants
             href: api/serviceprincipal-list-oauth2permissiongrants.md
+        - name: Delegated permission classifications
+          href: resources/delegatedpermissionclassification.md
+          items:
+          - name: List
+            href: api/serviceprincipal-list-delegatedpermissionclassifications.md
+          - name: Create
+            href: api/serviceprincipal-post-delegatedpermissionclassifications.md
+          - name: Delete
+            href: api/serviceprincipal-delete-delegatedpermissionclassifications.md
         - name: Membership
           items:
           - name: List memberOf
@@ -9402,6 +9411,8 @@ items:
           href: api/shares-get.md
         - name: Grant access to sharing link
           href: api/permission-grant.md
+        - name: Revoke grants on sharing link
+          href: api/permission-revokegrants.md
         - name: List permissions
           href: api/driveitem-list-permissions.md
         - name: Add permissions
@@ -9941,52 +9952,35 @@ items:
             - name: Update
               href: api/authenticationflowspolicy-update.md
         - name: Authentication methods
+          href: resources/authenticationmethods-overview.md
           items:
-          - name: B2B Authentication methods
-            href: resources/authenticationmethods-overview.md
-            item:
-            - name: Authentication method
-              href: resources/authenticationmethod.md
-              items:
-              - name: List
-                href: api/authentication-list-methods.md
-              - name: Get
-                href: api/authenticationmethod-get.md
-            - name: Password
-              href: resources/passwordauthenticationmethod.md
-              items:
-              - name: List
-                href: api/authentication-list-passwordmethods.md
-              - name: Get
-                href: api/passwordauthenticationmethod-get.md
-              - name: Reset
-                href: api/passwordauthenticationmethod-resetpassword.md
-              - name: Get operation status
-                href: api/authenticationoperation-get.md
-            - name: Phone
-              href: resources/phoneauthenticationmethod.md
-              items:
-              - name: List
-                href: api/authentication-list-phonemethods.md
-              - name: Get
-                href: api/phoneauthenticationmethod-get.md
-              - name: Update
-                href: api/phoneauthenticationmethod-update.md
-              - name: Delete
-                href: api/phoneauthenticationmethod-delete.md
-              - name: Add
-                href: api/authentication-post-phonemethods.md
-              - name: Enable SMS sign-in
-                href: api/phoneauthenticationmethod-enablesmssignin.md
-              - name: Disable SMS sign-in
-                href: api/phoneauthenticationmethod-disablesmssignin.md
-          - name: B2C Authentication methods
-            href: resources/b2cauthenticationmethodspolicy.md
+          - name: FIDO2 security keys
+            href: resources/fido2authenticationmethod.md
             items:
+            - name: List
+              href: api/fido2authenticationmethod-list.md
             - name: Get
-              href: api/b2cauthenticationmethodspolicy-get.md
+              href: api/fido2authenticationmethod-get.md
+            - name: Delete
+              href: api/fido2authenticationmethod-delete.md
+          - name: Microsoft Authenticator Passwordless Phone Sign-In
+            href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
+            items:
+            - name: List
+              href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-list.md
+            - name: Get
+              href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
+            - name: Delete
+              href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
+          - name: Phone
+            href: resources/phoneauthenticationmethod.md
+            items:
+            - name: List
+              href: api/authentication-list-phonemethods.md
+            - name: Get
+              href: api/phoneauthenticationmethod-get.md
             - name: Update
-              href: api/b2cauthenticationmethodspolicy-update.md
+              href: api/phoneauthenticationmethod-update.md
             - name: Delete
               href: api/phoneauthenticationmethod-delete.md
             - name: Add
@@ -9995,11 +9989,35 @@ items:
               href: api/phoneauthenticationmethod-enablesmssignin.md
             - name: Disable SMS sign-in
               href: api/phoneauthenticationmethod-disablesmssignin.md
+          - name: Email
+            href: resources/emailauthenticationmethod.md
+            items:
+            - name: List
+              href: api/emailauthenticationmethod-list.md
+            - name: Get
+              href: api/emailauthenticationmethod-get.md
+            - name: Update
+              href: api/emailauthenticationmethod-update.md
+            - name: Delete
+              href: api/emailauthenticationmethod-delete.md
+            - name: Add
+              href: api/emailauthenticationmethod-post.md
+          - name: Password
+            href: resources/passwordauthenticationmethod.md
+            items:
+            - name: List
+              href: api/authentication-list-passwordmethods.md
+            - name: Get
+              href: api/passwordauthenticationmethod-get.md
+            - name: Reset
+              href: api/passwordauthenticationmethod-resetpassword.md
+            - name: Get operation status
+              href: api/authenticationoperation-get.md
         - name: Authentication method policy
           items:
           - name: Overview
             href: resources/authenticationmethodspolicies-overview.md
-          - name: FIDO2 Security Key
+          - name: FIDO2 policy
             href: resources/fido2authenticationmethodconfiguration.md
             items:
             - name: Get
@@ -10008,7 +10026,7 @@ items:
               href: api/fido2authenticationmethodconfiguration-update.md
             - name: Delete
               href: api/fido2authenticationmethodconfiguration-delete.md
-          - name: Microsoft Authenticator Passwordless Phone Sign-in
+          - name: Microsoft Authenticator Passwordless Phone Sign-in policy
             href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
             items:
             - name: Get
@@ -10017,6 +10035,13 @@ items:
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
             - name: Delete
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
+        - name: B2C authentication methods policy
+          href: resources/b2cauthenticationmethodspolicy.md
+          items:
+          - name: Get
+            href: api/b2cauthenticationmethodspolicy-get.md
+          - name: Update
+            href: api/b2cauthenticationmethodspolicy-update.md
         - name: Certificate-based auth configuration
           href: resources/certificatebasedauthconfiguration.md
           items:
@@ -10237,6 +10262,34 @@ items:
               href: api/homerealmdiscoverypolicy-delete.md
             - name: List applied to applications
               href: api/homerealmdiscoverypolicy-list-appliesto.md
+          - name: Permission grant policy
+            href: resources/permissiongrantpolicy.md
+            items:
+            - name: Create
+              href: api/permissiongrantpolicy-post-permissiongrantpolicies.md
+            - name: List
+              href: api/permissiongrantpolicy-list.md
+            - name: Get
+              href: api/permissiongrantpolicy-get.md
+            - name: Update
+              href: api/permissiongrantpolicy-update.md
+            - name: Delete
+              href: api/permissiongrantpolicy-delete.md
+            - name: Permission grant condition sets
+              href: resources/permissiongrantconditionset.md
+              items:
+                - name: List includes
+                  href: api/permissiongrantpolicy-list-includes.md
+                - name: Create in includes
+                  href: api/permissiongrantpolicy-post-includes.md
+                - name: Delete from includes
+                  href: api/permissiongrantpolicy-delete-includes.md
+                - name: List excludes
+                  href: api/permissiongrantpolicy-list-excludes.md
+                - name: Create in excludes
+                  href: api/permissiongrantpolicy-post-excludes.md
+                - name: Delete from excludes
+                  href: api/permissiongrantpolicy-delete-excludes.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:
