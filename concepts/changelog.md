@@ -41,7 +41,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | beta and v1.0 | Added properties **employeeType**, **employeeOrgData** and **employeeHireDate** - on the [user](/graph/api/resources/user) entity. |
+| Addition | beta and v1.0 | Added the **employeeType**, **employeeOrgData**, and **employeeHireDate** properties to the [user](/graph/api/resources/user) entity. |
 
 ## September 2020
 
