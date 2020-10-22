@@ -1,24 +1,24 @@
 ---
-title: List printJobs for a printer
-description: Retrieve a list of print jobs associated with the printer.
+title: List printJobs for a printerShare
+description: Retrieve a list of print jobs associated with the printe share.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# List printJobs for a printer
+# List printJobs for a printerShare
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of print jobs associated with the [printer](../resources/printer.md).
+Retrieve a list of print jobs associated with the [printerShare](../resources/printershare.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, a permission that grants [Get printer](printer-get.md) access, and one of the permissions listed in the following table. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, a permission that grants [Get printerShare](printershare-get.md) access, and one of the permissions listed in the following table. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 To read print jobs from another user, the signed in user needs to be a print administrator and have the PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, or PrintJob.ReadWrite.All permission.
 
@@ -31,7 +31,7 @@ To read print jobs from another user, the signed in user needs to be a print adm
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/printers/{id}/jobs
+GET /print/shares/{id}/jobs
 ```
 
 ## Optional query parameters
@@ -62,9 +62,8 @@ The following is an example of the request.
   "name": "get_jobs"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/printers/{id}/jobs
+GET https://graph.microsoft.com/beta/print/shares/{id}/jobs
 ```
-
 ---
 
 ### Response
@@ -82,10 +81,10 @@ Content-type: application/json
 Content-length: 461
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares('f37141d9-0afb-484f-96d3-0ef0a679e6c1')/jobs",
   "value": [
     {
-      "id": "5182",
+      "id": "103",
       "createdDateTime": "2020-02-04T00:00:00.0000000Z",
       "createdBy": {},
       "status": {
