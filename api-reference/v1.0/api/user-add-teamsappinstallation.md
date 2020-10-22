@@ -75,7 +75,6 @@ Content-type: application/json
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-add-teamsapp-objc-snippets.md)]
 
----
 
 ### Response
 
