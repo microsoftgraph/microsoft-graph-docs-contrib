@@ -49,10 +49,25 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_delete_teamsApp"
 }-->
+```http
+DELETE https://graph.microsoft.com/v1.0/users/{id}/teamwork/installedApps/{id}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-delete-teamsapp-csharp-snippets.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-delete-teamsapp-javascript-snippets.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-delete-teamsapp-objc-snippets.md)]
+
+---
+
 
 ### Response
 
