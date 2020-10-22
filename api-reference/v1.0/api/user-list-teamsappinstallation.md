@@ -1,5 +1,5 @@
 ---
-title: "List apps installed for user"
+title: "List teamsAppInstallation"
 description: "Retrieve the list of apps installed in the personal scope of the specified user."
 author: "clearab"
 doc_type: "apiPageType"
