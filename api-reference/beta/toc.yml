@@ -10510,7 +10510,7 @@ items:
              - name: List
                href: api/identityuserflowattribute-list.md
              - name: Create
-               href: api/identityuserflowattribute-create.md
+               href: api/identityuserflowattribute-post.md
              - name: Get
                href: api/identityuserflowattribute-get.md
              - name: Update
