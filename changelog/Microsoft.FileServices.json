@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "revokeGrants,permission",
           "ChangeType": "Addition",
-          "Description": "Added the [revokeGrants](/graph/api/permission-revokeGrants?view=graph-rest-beta) method to the [permission](/graph/api/resources/permission?view=graph-rest-beta) resource.",
+          "Description": "Added the [revokeGrants](https://docs.microsoft.com/en-us/graph/api/permission-revokeGrants?view=graph-rest-beta) method to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource.",
           "Target": "revokeGrants,permission"
         }
       ],
@@ -25,7 +25,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "pendingOperations",
           "ChangeType": "Addition",
-          "Description": "Added the [pendingOperations](/graph/api/resources/pendingOperations?view=graph-rest-1.0) and [pendingContentUpdate](/graph/api/resources/pendingContentUpdate?view=graph-rest-1.0) resources. The **pendingOperations** resource applies to the [driveItem](/graph/api/resources/driveItem?view=graph-rest-1.0) resource.",
+          "Description": "Added the [pendingOperations](https://docs.microsoft.com/en-us/graph/api/resources/pendingOperations?view=graph-rest-1.0) and [pendingContentUpdate](https://docs.microsoft.com/en-us/graph/api/resources/pendingContentUpdate?view=graph-rest-1.0) resources. The **pendingOperations** resource applies to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-1.0) resource.",
           "Target": "pendingOperations,pendingContentUpdate,driveItem"
         },
         {
@@ -33,7 +33,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "restore,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [restore](/graph/api/driveitem-restore?view=graph-rest-1.0) action to the [driveItem](/graph/api/resources/driveItem?view=graph-rest-1.0) resource.",
+          "Description": "Added the [restore](https://docs.microsoft.com/en-us/graph/api/driveitem-restore?view=graph-rest-1.0) action to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-1.0) resource.",
           "Target": "restore,driveItem"
         },
         {
@@ -41,7 +41,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "orientation",
           "ChangeType": "Addition",
-          "Description": "Added the **orientation** property to the [photo](/graph/api/resources/photo?view=graph-rest-1.0) resource.",
+          "Description": "Added the **orientation** property to the [photo](https://docs.microsoft.com/en-us/graph/api/resources/photo?view=graph-rest-1.0) resource.",
           "Target": "photo"
         },
         {
@@ -49,7 +49,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sha256Hash",
           "ChangeType": "Addition",
-          "Description": "Added the **sha256Hash** property to the [hashes](/graph/api/resources/hashes?view=graph-rest-1.0) resource.",
+          "Description": "Added the **sha256Hash** property to the [hashes](https://docs.microsoft.com/en-us/graph/api/resources/hashes?view=graph-rest-1.0) resource.",
           "Target": "hashes"
         },
         {
@@ -57,7 +57,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "deferCommit",
           "ChangeType": "Addition",
-          "Description": "Added the **deferCommit** parameter to the [createUploadSession](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0) action.",
+          "Description": "Added the **deferCommit** parameter to the [createUploadSession](https://docs.microsoft.com/en-us/graph/api/driveitem-createuploadsession?view=graph-rest-1.0) action.",
           "Target": "createUploadSession"
         },
         {
@@ -65,7 +65,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "storagePlanInformation",
           "ChangeType": "Addition",
-          "Description": "Added the [storagePlanInformation](/graph/api/resources/storagePlanInformation?view=graph-rest-1.0) resource. The **storagePlanInformation** resource applies to the [quota](/graph/api/resources/quota?view=graph-rest-1.0) resource.",
+          "Description": "Added the [storagePlanInformation](https://docs.microsoft.com/en-us/graph/api/resources/storagePlanInformation?view=graph-rest-1.0) resource. The **storagePlanInformation** resource applies to the [quota](https://docs.microsoft.com/en-us/graph/api/resources/quota?view=graph-rest-1.0) resource.",
           "Target": "storagePlanInformation,quota"
         },
         {
@@ -73,7 +73,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "fileSize",
           "ChangeType": "Addition",
-          "Description": "Added the **fileSize** property to the [driveItemUploadableProperties](/graph/api/resources/driveItemUploadableProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **fileSize** property to the [driveItemUploadableProperties](https://docs.microsoft.com/en-us/graph/api/resources/driveItemUploadableProperties?view=graph-rest-1.0) resource.",
           "Target": "driveItemUploadableProperties"
         },
         {
@@ -81,7 +81,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "name",
           "ChangeType": "Addition",
-          "Description": "Added the **name** property to the [contentTypeInfo](/graph/api/resources/contentTypeInfo?view=graph-rest-1.0) resource.",
+          "Description": "Added the **name** property to the [contentTypeInfo](https://docs.microsoft.com/en-us/graph/api/resources/contentTypeInfo?view=graph-rest-1.0) resource.",
           "Target": "contentTypeInfo"
         }
       ],
@@ -99,7 +99,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "check in,check out,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [check in](/graph/api/driveitem-checkin?view=graph-rest-1.0) and [check out](/graph/api/driveitem-checkin?view=graph-rest-1.0) actions on the [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
+          "Description": "Added the [check in](https://docs.microsoft.com/en-us/graph/api/driveitem-checkin?view=graph-rest-1.0) and [check out](https://docs.microsoft.com/en-us/graph/api/driveitem-checkin?view=graph-rest-1.0) actions on the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
           "Target": "check in,check out,driveItem"
         },
         {
@@ -107,7 +107,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime,password,message",
           "ChangeType": "Addition",
-          "Description": "Added the **expirationDateTime**, **password**, and **message** properties on the [createLink](/graph/api/driveitem-createlink?view=graph-rest-1.0) action on a [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
+          "Description": "Added the **expirationDateTime**, **password**, and **message** properties on the [createLink](https://docs.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-1.0) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
           "Target": "createLink,driveItem"
         },
         {
@@ -115,7 +115,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "preventsDownload",
           "ChangeType": "Addition",
-          "Description": "Added the **preventsDownload** property on the [sharingLink](/graph/api/resources/sharinglink?view=graph-rest-1.0) resource.",
+          "Description": "Added the **preventsDownload** property on the [sharingLink](https://docs.microsoft.com/en-us/graph/api/resources/sharinglink?view=graph-rest-1.0) resource.",
           "Target": "sharingLink"
         },
         {
@@ -123,7 +123,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "permission",
           "ChangeType": "Addition",
-          "Description": "Added the **permission** property on the [sharedDriveItem](/graph/api/resources/shareddriveitem?view=graph-rest-1.0) resource.",
+          "Description": "Added the **permission** property on the [sharedDriveItem](https://docs.microsoft.com/en-us/graph/api/resources/shareddriveitem?view=graph-rest-1.0) resource.",
           "Target": "sharedDriveItem"
         },
         {
@@ -131,7 +131,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime,hasPassword,grantedToIdentities",
           "ChangeType": "Addition",
-          "Description": "Added the **expirationDateTime**, **hasPassword**, and **grantedToIdentities** properties on the [permission](/graph/api/resources/permission?view=graph-rest-1.0) resource.",
+          "Description": "Added the **expirationDateTime**, **hasPassword**, and **grantedToIdentities** properties on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource.",
           "Target": "permission"
         },
         {
@@ -139,7 +139,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime,password",
           "ChangeType": "Addition",
-          "Description": "Added the **expirationDateTime**, and **password** properties on the [invite](/graph/api/driveitem-invite?view=graph-rest-1.0) action on a [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
+          "Description": "Added the **expirationDateTime**, and **password** properties on the [invite](https://docs.microsoft.com/en-us/graph/api/driveitem-invite?view=graph-rest-1.0) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
           "Target": "invite,driveItem"
         }
       ],
@@ -157,7 +157,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "image,video",
           "ChangeType": "Addition",
-          "Description": "Added **image** and **video** properties on the [remoteItem](/graph/api/resources/remoteitem?view=graph-rest-1.0) resource. These properties allow you to retrieve media type thumbnails when combined with an expand function.",
+          "Description": "Added **image** and **video** properties on the [remoteItem](https://docs.microsoft.com/en-us/graph/api/resources/remoteitem?view=graph-rest-1.0) resource. These properties allow you to retrieve media type thumbnails when combined with an expand function.",
           "Target": "remoteItem"
         },
         {
@@ -165,7 +165,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "grant",
           "ChangeType": "Addition",
-          "Description": "Added the **grant** action to the [permission](/graph/api/resources/permission?view=graph-rest-1.0) entity.",
+          "Description": "Added the **grant** action to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) entity.",
           "Target": "permission"
         },
         {
@@ -173,7 +173,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "following",
           "ChangeType": "Addition",
-          "Description": "Added the **following** navigation property to the [drive](/graph/api/resources/drive?view=graph-rest-1.0) entity.",
+          "Description": "Added the **following** navigation property to the [drive](https://docs.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-1.0) entity.",
           "Target": "drive"
         },
         {
@@ -181,7 +181,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "follow,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [follow](/graph/api/driveitem-follow?view=graph-rest-1.0) action on [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0).",
+          "Description": "Added the [follow](https://docs.microsoft.com/en-us/graph/api/driveitem-follow?view=graph-rest-1.0) action on [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0).",
           "Target": "follow,driveItem"
         },
         {
@@ -189,7 +189,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "unfollow,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [unfollow](/graph/api/driveitem-unfollow?view=graph-rest-1.0) action on [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0).",
+          "Description": "Added the [unfollow](https://docs.microsoft.com/en-us/graph/api/driveitem-unfollow?view=graph-rest-1.0) action on [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0).",
           "Target": "unfollow,driveItem"
         }
       ],
@@ -207,7 +207,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "pendingOperations",
           "ChangeType": "Addition",
-          "Description": "Added the [pendingOperations](/graph/api/resources/pendingOperations?view=graph-rest-beta) and [pendingContentUpdate](/graph/api/resources/pendingContentUpdate?view=graph-rest-beta) resources. The **pendingOperations** resource applies to the [driveItem](/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+          "Description": "Added the [pendingOperations](https://docs.microsoft.com/en-us/graph/api/resources/pendingOperations?view=graph-rest-beta) and [pendingContentUpdate](https://docs.microsoft.com/en-us/graph/api/resources/pendingContentUpdate?view=graph-rest-beta) resources. The **pendingOperations** resource applies to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
           "Target": "pendingOperations,pendingContentUpdate,driveItem"
         },
         {
@@ -215,7 +215,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "restore,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [restore](/graph/api/driveitem-restore?view=graph-rest-beta) action to the [driveItem](/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+          "Description": "Added the [restore](https://docs.microsoft.com/en-us/graph/api/driveitem-restore?view=graph-rest-beta) action to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
           "Target": "restore,driveItem"
         },
         {
@@ -223,7 +223,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "orientation",
           "ChangeType": "Addition",
-          "Description": "Added the **orientation** property to the [photo](/graph/api/resources/photo?view=graph-rest-beta) resource.",
+          "Description": "Added the **orientation** property to the [photo](https://docs.microsoft.com/en-us/graph/api/resources/photo?view=graph-rest-beta) resource.",
           "Target": "photo"
         },
         {
@@ -231,7 +231,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sha256Hash",
           "ChangeType": "Addition",
-          "Description": "Added the **sha256Hash** property to the [hashes](/graph/api/resources/hashes?view=graph-rest-beta) resource.",
+          "Description": "Added the **sha256Hash** property to the [hashes](https://docs.microsoft.com/en-us/graph/api/resources/hashes?view=graph-rest-beta) resource.",
           "Target": "hashes"
         }
       ],
@@ -249,7 +249,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "unfollow,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [unfollow](/graph/api/driveitem-unfollow?view=graph-rest-beta) action on [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta)",
+          "Description": "Added the [unfollow](https://docs.microsoft.com/en-us/graph/api/driveitem-unfollow?view=graph-rest-beta) action on [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta)",
           "Target": "unfollow,driveItem"
         }
       ],
@@ -267,7 +267,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "expirationDatetime,password",
           "ChangeType": "Addition",
-          "Description": "Added the **expirationDatetime** and **password** properties to the [createLink](/graph/api/driveitem-createlink?view=graph-rest-beta) action.",
+          "Description": "Added the **expirationDatetime** and **password** properties to the [createLink](https://docs.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta) action.",
           "Target": "createLink"
         }
       ],
@@ -285,7 +285,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "bundle",
           "ChangeType": "Addition",
-          "Description": "Added the [bundle](/graph/api/resources/bundle?view=graph-rest-beta) complex type",
+          "Description": "Added the [bundle](https://docs.microsoft.com/en-us/graph/api/resources/bundle?view=graph-rest-beta) complex type",
           "Target": "bundle"
         },
         {
@@ -293,7 +293,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "album",
           "ChangeType": "Addition",
-          "Description": "Added the [album](/graph/api/resources/album?view=graph-rest-beta) complex type",
+          "Description": "Added the [album](https://docs.microsoft.com/en-us/graph/api/resources/album?view=graph-rest-beta) complex type",
           "Target": "album"
         },
         {
@@ -301,7 +301,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "bundles",
           "ChangeType": "Addition",
-          "Description": "Added the **bundles** navigation property to the [drive](/graph/api/resources/drive?view=graph-rest-beta) entity",
+          "Description": "Added the **bundles** navigation property to the [drive](https://docs.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-beta) entity",
           "Target": "drive"
         },
         {
@@ -309,7 +309,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "bundle",
           "ChangeType": "Addition",
-          "Description": "Added the **bundle** property to the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) entity",
+          "Description": "Added the **bundle** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity",
           "Target": "driveItem"
         },
         {
@@ -317,7 +317,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "grant",
           "ChangeType": "Addition",
-          "Description": "Added the **grant** action to the [permission](/graph/api/resources/permission?view=graph-rest-beta) entity",
+          "Description": "Added the **grant** action to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) entity",
           "Target": "permission"
         }
       ],
@@ -335,7 +335,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **expirationDateTime** property to the [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset type.",
+          "Description": "Added the **expirationDateTime** property to the [driveItem_invite](https://docs.microsoft.com/en-us/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset type.",
           "Target": "driveItem_invite"
         },
         {
@@ -343,7 +343,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "password",
           "ChangeType": "Addition",
-          "Description": "Added the **password** property to the [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) string type.",
+          "Description": "Added the **password** property to the [driveItem_invite](https://docs.microsoft.com/en-us/graph/api/resources/driveItem_invite?view=graph-rest-beta) string type.",
           "Target": "driveItem_invite"
         }
       ],
@@ -361,7 +361,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "subscriptions",
           "ChangeType": "Addition",
-          "Description": "Added the **subscriptions** navigation property to the [driveItem](/graph/api/resources/driveItem?view=graph-rest-1.0) entity",
+          "Description": "Added the **subscriptions** navigation property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-1.0) entity",
           "Target": "driveItem"
         }
       ],
@@ -379,7 +379,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **expirationDateTime** property to the [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset type.",
+          "Description": "Added the **expirationDateTime** property to the [driveItem_invite](https://docs.microsoft.com/en-us/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset type.",
           "Target": "driveItem_invite"
         },
         {
@@ -387,7 +387,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "password",
           "ChangeType": "Addition",
-          "Description": "Added the **password** property to the [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) string type.",
+          "Description": "Added the **password** property to the [driveItem_invite](https://docs.microsoft.com/en-us/graph/api/resources/driveItem_invite?view=graph-rest-beta) string type.",
           "Target": "driveItem_invite"
         }
       ],
@@ -405,7 +405,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deferCommit",
           "ChangeType": "Addition",
-          "Description": "Added the **deferCommit** argument to the [createUploadSession](/graph/api/driveitem-createuploadsession?view=graph-rest-beta) action on [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta)",
+          "Description": "Added the **deferCommit** argument to the [createUploadSession](https://docs.microsoft.com/en-us/graph/api/driveitem-createuploadsession?view=graph-rest-beta) action on [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta)",
           "Target": "createUploadSession,driveItem"
         },
         {
@@ -413,7 +413,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "storagePlanInformation",
           "ChangeType": "Addition",
-          "Description": "Added the [storagePlanInformation](/graph/api/resources/storageplaninformation?view=graph-rest-beta) complex type",
+          "Description": "Added the [storagePlanInformation](https://docs.microsoft.com/en-us/graph/api/resources/storageplaninformation?view=graph-rest-beta) complex type",
           "Target": "storagePlanInformation"
         },
         {
@@ -421,7 +421,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "storagePlanInformation",
           "ChangeType": "Addition",
-          "Description": "Added the **storagePlanInformation** property to the [quota](/graph/api/resources/quota?view=graph-rest-beta) complex type",
+          "Description": "Added the **storagePlanInformation** property to the [quota](https://docs.microsoft.com/en-us/graph/api/resources/quota?view=graph-rest-beta) complex type",
           "Target": "quota"
         },
         {
@@ -429,7 +429,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "following",
           "ChangeType": "Addition",
-          "Description": "Added the **following** navigation property to the [drive](/graph/api/resources/drive?view=graph-rest-beta) entity",
+          "Description": "Added the **following** navigation property to the [drive](https://docs.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-beta) entity",
           "Target": "drive"
         },
         {
@@ -437,7 +437,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "follow,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [follow](/graph/api/driveitem-follow?view=graph-rest-beta) action on [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta)",
+          "Description": "Added the [follow](https://docs.microsoft.com/en-us/graph/api/driveitem-follow?view=graph-rest-beta) action on [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta)",
           "Target": "follow,driveItem"
         },
         {
@@ -445,7 +445,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "hasPassword",
           "ChangeType": "Addition",
-          "Description": "Added the **hasPassword** property to the [permission](/graph/api/resources/permission?view=graph-rest-beta) entity",
+          "Description": "Added the **hasPassword** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) entity",
           "Target": "permission"
         },
         {
@@ -453,7 +453,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "preventsDownload",
           "ChangeType": "Addition",
-          "Description": "Added the **preventsDownload** property to the [sharingLink](/graph/api/resources/sharinglink?view=graph-rest-beta) complex type",
+          "Description": "Added the **preventsDownload** property to the [sharingLink](https://docs.microsoft.com/en-us/graph/api/resources/sharinglink?view=graph-rest-beta) complex type",
           "Target": "sharingLink"
         },
         {
@@ -461,7 +461,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "permission",
           "ChangeType": "Addition",
-          "Description": "Added the **permission** navigation property to the [sharedDriveItem](/graph/api/resources/shareddriveitem?view=graph-rest-beta) entity",
+          "Description": "Added the **permission** navigation property to the [sharedDriveItem](https://docs.microsoft.com/en-us/graph/api/resources/shareddriveitem?view=graph-rest-beta) entity",
           "Target": "sharedDriveItem"
         },
         {
@@ -469,7 +469,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "geolocation",
           "ChangeType": "Addition",
-          "Description": "Added the **geolocation** property to the [columnDefinition](/graph/api/resources/columndefinition?view=graph-rest-beta) entity",
+          "Description": "Added the **geolocation** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columndefinition?view=graph-rest-beta) entity",
           "Target": "columnDefinition"
         },
         {
@@ -477,7 +477,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "geolocationColumn",
           "ChangeType": "Addition",
-          "Description": "Added the [geolocationColumn](/graph/api/resources/geolocationcolumn?view=graph-rest-beta) complex type",
+          "Description": "Added the [geolocationColumn](https://docs.microsoft.com/en-us/graph/api/resources/geolocationcolumn?view=graph-rest-beta) complex type",
           "Target": "geolocationColumn"
         },
         {
@@ -485,7 +485,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
-          "Description": "Added the **analytics** property to the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) entity",
+          "Description": "Added the **analytics** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity",
           "Target": "driveItem"
         },
         {
@@ -493,7 +493,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
-          "Description": "Added the **analytics** property to the [site](/graph/api/resources/site?view=graph-rest-beta) entity",
+          "Description": "Added the **analytics** property to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) entity",
           "Target": "site"
         },
         {
@@ -501,7 +501,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
-          "Description": "Added the **analytics** property to the [listItem](/graph/api/resources/listitem?view=graph-rest-beta) entity",
+          "Description": "Added the **analytics** property to the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) entity",
           "Target": "listItem"
         },
         {
@@ -509,7 +509,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
-          "Description": "Added the **getActivitiesByInterval** function on the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) entity",
+          "Description": "Added the **getActivitiesByInterval** function on the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity",
           "Target": "driveItem"
         },
         {
@@ -517,7 +517,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
-          "Description": "Added the **getActivitiesByInterval** function on the [site](/graph/api/resources/site?view=graph-rest-beta) entity",
+          "Description": "Added the **getActivitiesByInterval** function on the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) entity",
           "Target": "site"
         },
         {
@@ -525,7 +525,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
-          "Description": "Added the **getActivitiesByInterval** function on the [listItem](/graph/api/resources/listitem?view=graph-rest-beta) entity",
+          "Description": "Added the **getActivitiesByInterval** function on the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) entity",
           "Target": "listItem"
         },
         {
@@ -533,7 +533,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "itemAnalytics",
           "ChangeType": "Addition",
-          "Description": "Added the [itemAnalytics](/graph/api/resources/itemanalytics?view=graph-rest-beta) entity",
+          "Description": "Added the [itemAnalytics](https://docs.microsoft.com/en-us/graph/api/resources/itemanalytics?view=graph-rest-beta) entity",
           "Target": "itemAnalytics"
         },
         {
@@ -541,7 +541,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "itemActivityStat",
           "ChangeType": "Addition",
-          "Description": "Added the [itemActivityStat](/graph/api/resources/itemactivity?view=graph-rest-beta) entity",
+          "Description": "Added the [itemActivityStat](https://docs.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) entity",
           "Target": "itemActivityStat"
         },
         {
@@ -549,7 +549,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "itemActionStat",
           "ChangeType": "Addition",
-          "Description": "Added the [itemActionStat](/graph/api/resources/itemactionstat?view=graph-rest-beta) complex type",
+          "Description": "Added the [itemActionStat](https://docs.microsoft.com/en-us/graph/api/resources/itemactionstat?view=graph-rest-beta) complex type",
           "Target": "itemActionStat"
         },
         {
@@ -557,7 +557,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessAction",
           "ChangeType": "Addition",
-          "Description": "Added the [accessAction](/graph/api/resources/accessaction?view=graph-rest-beta) complex type",
+          "Description": "Added the [accessAction](https://docs.microsoft.com/en-us/graph/api/resources/accessaction?view=graph-rest-beta) complex type",
           "Target": "accessAction"
         },
         {
@@ -565,7 +565,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "incompleteData",
           "ChangeType": "Addition",
-          "Description": "Added the [incompleteData](/graph/api/resources/incompletedata?view=graph-rest-beta) complex type",
+          "Description": "Added the [incompleteData](https://docs.microsoft.com/en-us/graph/api/resources/incompletedata?view=graph-rest-beta) complex type",
           "Target": "incompleteData"
         },
         {
@@ -573,7 +573,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "access",
           "ChangeType": "Addition",
-          "Description": "Added the **access** property to the [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta) complex type",
+          "Description": "Added the **access** property to the [itemActivity](https://docs.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) complex type",
           "Target": "itemActivity"
         },
         {
@@ -581,7 +581,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "location",
           "ChangeType": "Addition",
-          "Description": "Added the **location** property to the [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta) complex type",
+          "Description": "Added the **location** property to the [itemActivity](https://docs.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) complex type",
           "Target": "itemActivity"
         }
       ],
@@ -599,7 +599,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "preview",
           "ChangeType": "Addition",
-          "Description": "Added the **preview** action on the [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) entity",
+          "Description": "Added the **preview** action on the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) entity",
           "Target": "driveItem"
         },
         {
@@ -607,7 +607,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "itemPreviewInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [itemPreviewInfo](/graph/api/resources/itempreviewinfo?view=graph-rest-1.0) complex type",
+          "Description": "Added the [itemPreviewInfo](https://docs.microsoft.com/en-us/graph/api/resources/itempreviewinfo?view=graph-rest-1.0) complex type",
           "Target": "itemPreviewInfo"
         }
       ],
@@ -625,7 +625,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "itemPreviewInfo",
           "ChangeType": "Addition",
-          "Description": "Added new complex type:, [itemPreviewInfo](/graph/api/resources/itempreviewinfo?view=graph-rest-beta), ",
+          "Description": "Added new complex type:, [itemPreviewInfo](https://docs.microsoft.com/en-us/graph/api/resources/itempreviewinfo?view=graph-rest-beta), ",
           "Target": "itemPreviewInfo"
         },
         {
@@ -633,7 +633,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "contentTypeInfo",
           "ChangeType": "Addition",
-          "Description": "Added the \u003Cb\u003Ename\u003C/b\u003E property to the [contentTypeInfo](/graph/api/resources/contenttypeinfo?view=graph-rest-beta) complex type",
+          "Description": "Added the \u003Cb\u003Ename\u003C/b\u003E property to the [contentTypeInfo](https://docs.microsoft.com/en-us/graph/api/resources/contenttypeinfo?view=graph-rest-beta) complex type",
           "Target": "contentTypeInfo"
         },
         {
@@ -641,7 +641,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deleteAction",
           "ChangeType": "Addition",
-          "Description": "Added the \u003Cb\u003EobjectType\u003C/b\u003E property to the [deleteAction](/graph/api/resources/deleteaction?view=graph-rest-beta) complex type",
+          "Description": "Added the \u003Cb\u003EobjectType\u003C/b\u003E property to the [deleteAction](https://docs.microsoft.com/en-us/graph/api/resources/deleteaction?view=graph-rest-beta) complex type",
           "Target": "deleteAction"
         },
         {
@@ -649,7 +649,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "renameAction",
           "ChangeType": "Addition",
-          "Description": "Added the \u003Cb\u003EnewName\u003C/b\u003E property to the [renameAction](/graph/api/resources/renameaction?view=graph-rest-beta) complex type",
+          "Description": "Added the \u003Cb\u003EnewName\u003C/b\u003E property to the [renameAction](https://docs.microsoft.com/en-us/graph/api/resources/renameaction?view=graph-rest-beta) complex type",
           "Target": "renameAction"
         },
         {
@@ -657,7 +657,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharepointIds",
           "ChangeType": "Addition",
-          "Description": "Added the \u003Cb\u003EtenantId\u003C/b\u003E property to the [sharepointIds](/graph/api/resources/renameaction?view=graph-rest-beta) complex type",
+          "Description": "Added the \u003Cb\u003EtenantId\u003C/b\u003E property to the [sharepointIds](https://docs.microsoft.com/en-us/graph/api/resources/renameaction?view=graph-rest-beta) complex type",
           "Target": "sharepointIds"
         },
         {
@@ -665,7 +665,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "itemActivityTimeSet",
           "ChangeType": "Addition",
-          "Description": "Added the \u003Cb\u003ElastRecordedDateTime\u003C/b\u003E property to the [itemActivityTimeSet](/graph/api/resources/itemactivitytimeset?view=graph-rest-beta) complex type",
+          "Description": "Added the \u003Cb\u003ElastRecordedDateTime\u003C/b\u003E property to the [itemActivityTimeSet](https://docs.microsoft.com/en-us/graph/api/resources/itemactivitytimeset?view=graph-rest-beta) complex type",
           "Target": "itemActivityTimeSet"
         },
         {
@@ -673,7 +673,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "preview,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [preview](/graph/api/driveitem-preview?view=graph-rest-beta) action for the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) entity",
+          "Description": "Added the [preview](https://docs.microsoft.com/en-us/graph/api/driveitem-preview?view=graph-rest-beta) action for the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity",
           "Target": "preview,driveItem"
         }
       ],
@@ -691,7 +691,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "baseItemVersion,driveItemVersion,listItemVersion",
           "ChangeType": "Addition",
-          "Description": "Added new entities:, [baseItemVersion](/graph/api/resources/baseitemversion?view=graph-rest-1.0), [driveItemVersion](/graph/api/resources/driveitemversion?view=graph-rest-1.0), [listItemVersion](/graph/api/resources/listitemversion?view=graph-rest-1.0), ",
+          "Description": "Added new entities:, [baseItemVersion](https://docs.microsoft.com/en-us/graph/api/resources/baseitemversion?view=graph-rest-1.0), [driveItemVersion](https://docs.microsoft.com/en-us/graph/api/resources/driveitemversion?view=graph-rest-1.0), [listItemVersion](https://docs.microsoft.com/en-us/graph/api/resources/listitemversion?view=graph-rest-1.0), ",
           "Target": "baseItemVersion,driveItemVersion,listItemVersion"
         },
         {
@@ -699,7 +699,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "publicationFacet",
           "ChangeType": "Addition",
-          "Description": "Added new complex types:, [publicationFacet](/graph/api/resources/publicationfacet?view=graph-rest-1.0), ",
+          "Description": "Added new complex types:, [publicationFacet](https://docs.microsoft.com/en-us/graph/api/resources/publicationfacet?view=graph-rest-1.0), ",
           "Target": "publicationFacet"
         },
         {
@@ -707,7 +707,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the \u003Cb\u003Epublication\u003C/b\u003E property to the [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) entity",
+          "Description": "Added the \u003Cb\u003Epublication\u003C/b\u003E property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) entity",
           "Target": "driveItem"
         },
         {
@@ -715,7 +715,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the \u003Cb\u003Eversions\u003C/b\u003E navigation property to the [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) entity",
+          "Description": "Added the \u003Cb\u003Eversions\u003C/b\u003E navigation property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) entity",
           "Target": "driveItem"
         },
         {
@@ -723,7 +723,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "listItem",
           "ChangeType": "Addition",
-          "Description": "Added the \u003Cb\u003Eversions\u003C/b\u003E navigation property to the [listItem](/graph/api/resources/listitem?view=graph-rest-1.0) entity",
+          "Description": "Added the \u003Cb\u003Eversions\u003C/b\u003E navigation property to the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-1.0) entity",
           "Target": "listItem"
         },
         {
@@ -731,7 +731,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "siteCollection",
           "ChangeType": "Addition",
-          "Description": "Added the \u003Cb\u003Eroot\u003C/b\u003E property to the [siteCollection](/graph/api/resources/sitecollection?view=graph-rest-1.0) entity",
+          "Description": "Added the \u003Cb\u003Eroot\u003C/b\u003E property to the [siteCollection](https://docs.microsoft.com/en-us/graph/api/resources/sitecollection?view=graph-rest-1.0) entity",
           "Target": "siteCollection"
         },
         {
@@ -739,7 +739,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "restoreVersion,driveItemVersion",
           "ChangeType": "Addition",
-          "Description": "Added the [restoreVersion](/graph/api/driveitemversion-restore?view=graph-rest-1.0) action for the [driveItemVersion](/graph/api/resources/driveitemversion?view=graph-rest-1.0) entity",
+          "Description": "Added the [restoreVersion](https://docs.microsoft.com/en-us/graph/api/driveitemversion-restore?view=graph-rest-1.0) action for the [driveItemVersion](https://docs.microsoft.com/en-us/graph/api/resources/driveitemversion?view=graph-rest-1.0) entity",
           "Target": "restoreVersion,driveItemVersion"
         },
         {
@@ -747,7 +747,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "restoreVersion,listItemVersion",
           "ChangeType": "Addition",
-          "Description": "Added the [restoreVersion](/graph/api/listitemversion-restore?view=graph-rest-1.0) action for the [listItemVersion](/graph/api/resources/listitemversion?view=graph-rest-1.0) entity",
+          "Description": "Added the [restoreVersion](https://docs.microsoft.com/en-us/graph/api/listitemversion-restore?view=graph-rest-1.0) action for the [listItemVersion](https://docs.microsoft.com/en-us/graph/api/resources/listitemversion?view=graph-rest-1.0) entity",
           "Target": "restoreVersion,listItemVersion"
         }
       ],
