@@ -9,22 +9,21 @@ ms.custom: scenarios:getting-started
 
 # Upload documents using the Microsoft Graph Universal Print API
 
-Printing a document using Universal Print is done by [creating a print job](/graph/api/printershare-post-jobs?view=graph-rest-beta), uploading a document, and then [starting the print job](/graph/api/printjob-start?view=graph-rest-beta). This walkthrough covers the second step, uploading a document, which starts with [creating an upload session](/graph/api/printdocument-createuploadsession?view=graph-rest-beta).
+To print a document using the Universal Print API in Microsoft Graph, you [create a print job](/graph/api/printershare-post-jobs?view=graph-rest-beta), upload a document, and then [start the print job](/graph/api/printjob-start?view=graph-rest-beta). This article describes how to upload a document, which starts with [creating an upload session](/graph/api/printdocument-createuploadsession?view=graph-rest-beta).
 
-To upload a file, or a portion of a file, your app makes a PUT request to the uploadUrl value received in the createUploadSession response.
+To upload a file, or a portion of a file, your app makes a PUT request to the **uploadUrl** value received in the **createUploadSession** response.
 You can upload the entire file, or split the file into multiple byte ranges, as long as the maximum bytes in any given request is less than 10 MB.
 
-The segments of the file can be uploaded in any order and can be uploaded in parallel, with up to four concurrent requests. 
-When all the binary segments of document are uploaded, the binary file is linked to the printDocument.
+The segments of the file can be uploaded in any order and can be uploaded in parallel, with up to four concurrent requests. When all the binary segments of document are uploaded, the binary file is linked to the **printDocument**.
 
-### HTTP Request
+## HTTP request
 
-Make a PUT request to the uploadUrl value received in the createUploadSession response.
+Make a PUT request to the **uploadUrl** value received in the **createUploadSession** response.
 
 ### Request headers
 | Name          | Description   |
 |:--------------|:--------------|
-| Content-Range | bytes {startByteIndex}-{endByteIndex}‬/{documentSizeInBytes} Required.|
+| Content-Range | bytes {startByteIndex}-{endByteIndex}‬/{documentSizeInBytes}. Required.|
 | Content-Length | {contentLength}‬ Required.|
 
 ### Request body
@@ -39,7 +38,7 @@ Content-Length: 72797
 
 <bytes 0-72796 of the file>
 ```
-### HTTP Response
+### HTTP response
 
 When the request is complete, the server will respond with `202 Accepted` if there are more byte ranges that need to be uploaded.
 
@@ -55,9 +54,7 @@ Content-Type: application/json
 }
 ```
 
-Your app can use the **nextExpectedRanges** value to determine where to start the next byte range.
-You may see multiple ranges specified, indicating parts of the file that the server has not yet received. 
-The **nextExpectedRanges** property indicates ranges of the file that have not been received and not a pattern for how your app should upload the file.
+Your app can use the **nextExpectedRanges** value to determine where to start the next byte range. You might see multiple ranges specified, indicating parts of the file that the server has not yet received. The **nextExpectedRanges** property indicates ranges of the file that have not been received and not a pattern for how your app should upload the file.
 
 <!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 
@@ -78,12 +75,11 @@ Content-Type: application/json
 
 * On failures when the client sent a fragment the server had already received, the server will respond with `HTTP 416 Requested Range Not Satisfiable`. 
   You can [request upload status](#get-the-upload-session) to get a more detailed list of missing ranges.
-* Including the Authorization header when issuing the `PUT` call may result in a `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when creating upload session. It should be not be included when uploading data to upload session.
+* Including the Authorization header when issuing the `PUT` call might result in a `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when creating upload session. It should be not be included when uploading data to upload session.
 
 ## Completing a file
 
-When the last byte range of a file is received the server will response with an `HTTP 201 Created`.
-The response body will also include the property set for the associated **printDocument**.
+When the last byte range of a file is received, the server will response with an `HTTP 201 Created`. The response body will also include the property set for the associated **printDocument**.
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "printjob.readwrite" } -->
 
@@ -109,9 +105,10 @@ Content-Type: application/json
 }
 ```
 
-**Note:** Upload session gets deleted after document upload is complete.
+>**Note:** Upload session is deleted after document upload is complete.
 
 ## Get the upload session
+
 To get upload session, send a GET request to the upload URL. 
 
 ### Request
@@ -122,8 +119,6 @@ GET https://print.print.microsoft.com/uploadSessions/5400be13-5a4e-4c20-be70-90c
 ```
 
 ### Response
-
-The following example shows the response.
 
 <!-- { "blockType": "response" } -->
 ```http
@@ -141,8 +136,7 @@ Content-Type: application/json
 
 ## Cancel the upload session
 
-To cancel an upload session send a DELETE request to the upload URL.
-This should be used in scenarios where the upload is aborted, for example, if the user cancels the transfer.
+To cancel an upload session, send a DELETE request to the upload URL. This should be used in scenarios where the upload is aborted, for example, if the user cancels the transfer.
 
 Temporary files and their accompanying upload session are automatically cleaned up after the **expirationDateTime** has passed.
 
@@ -155,8 +149,6 @@ DELETE https://print.print.microsoft.com/uploadSessions/5400be13-5a4e-4c20-be70-
 ```
 
 ### Response
-
-The following example shows the response.
 
 <!-- { "blockType": "response" } -->
 
