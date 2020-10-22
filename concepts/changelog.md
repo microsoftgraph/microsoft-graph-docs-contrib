@@ -237,6 +237,18 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **replyRestriction** enumeration type. |
 | Addition | beta | Added the **userNewMessageRestriction** enumeration type. |
 
+### Identity and access | Devices
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+| Addition | beta | Added the **deviceCategory** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **deviceOwnership** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **domainName** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **enrollmentProfileName** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **enrollmentType** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **isRooted** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **managementType** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **registrationDateTime** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource. |
 
 
 ## November 2020
