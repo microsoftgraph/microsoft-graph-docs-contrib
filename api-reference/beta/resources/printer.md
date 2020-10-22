@@ -71,16 +71,16 @@ The following is a JSON representation of the resource.
 ```json
 {
   "id": "String (identifier)",
-  "name": "String",
+  "displayName": "String",
   "manufacturer": "String",
   "model": "String",
   "isShared": true,
   "registeredDateTime": "String (timestamp)",
-  "acceptingJobs": true,
-  "registeredBy": {"@odata.type": "microsoft.graph.printUserIdentity"},
+  "isAcceptingJobs": true,
   "location": {"@odata.type": "microsoft.graph.printerLocation"},
   "status": {"@odata.type": "microsoft.graph.printerStatus"},
-  "defaults": {"@odata.type": "microsoft.graph.printerDefaults"}
+  "defaults": {"@odata.type": "microsoft.graph.printerDefaults"},
+  "capabilities": {"@odata.type": "microsoft.graph.printerCapabilities"}
 }
 ```
 
