@@ -143,14 +143,8 @@ Content-length: 160
 > **Note**:  There are no special permission scopes in this scenario since the request is part of chatMessage; scopes for chatMessage apply here as well.
 
 #### Request
-
+<!-- { "blockType": "ignored" } -->
 The following example show how to import back-in-time messages using the `createDateTime` and `from` keys in the request body.
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "import_chatmessage_from_channel"
-}-->
 
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies
