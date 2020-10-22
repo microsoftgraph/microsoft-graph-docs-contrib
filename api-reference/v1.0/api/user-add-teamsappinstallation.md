@@ -53,7 +53,6 @@ If successful, this method returns a `201 Created` response code. It does not re
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_add_teamsApp"
