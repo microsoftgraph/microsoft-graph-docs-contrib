@@ -47,4 +47,3 @@ Device type.
 
 
 
-

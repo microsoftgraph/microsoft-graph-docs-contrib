@@ -40,7 +40,7 @@ GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 > **Notes:**
 >
 > - The `/app` path is deprecated. Going forward, use the `/communications` path.
-> - `id` in the first two routes refers to [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up).
+> - `id` in the first two routes refers to [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up).
 > - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId` is the **id** of an [onlineMeeting entity](../resources/onlinemeeting.md).
 > - `joinWebUrl` must be URL encoded and this route can only be used to retrieve meetings created by `userId`.
@@ -134,7 +134,8 @@ Content-Length: 1574
             "displayName": "Tyler Stein"
           }
         },
-        "upn": "upn-value"
+        "upn": "upn-value",
+        "role": "attendee"
       }
     ],
     "organizer": {
@@ -147,7 +148,8 @@ Content-Length: 1574
           "displayName": "Jasmine Miller"
         }
       },
-      "upn": "upn-value"
+      "upn": "upn-value",
+      "role": "presenter"
     }
   },
   "startDateTime": "2018-05-30T00:30:00Z",
@@ -301,5 +303,3 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
   ]
 }
 -->
-
-
