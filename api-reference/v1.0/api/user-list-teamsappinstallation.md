@@ -57,10 +57,25 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_list_teamsApps"
 }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/{id}/teamwork/installedApps
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-csharp-snippets.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-list-teamsapps-javascript-snippets.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-list-teamsapps-objc-snippets.md)]
+
+---
+
 
 #### Response
 
