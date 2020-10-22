@@ -49,7 +49,7 @@ PATCH /userFlowAttributes/{id}
 
 In the request body, provide a JSON object with one or more properties that need to be updated for a [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object.
 
-### userFlowAttributes object
+**Note:** The only property you can update on an identityUserFlowAttribute object is description.
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
