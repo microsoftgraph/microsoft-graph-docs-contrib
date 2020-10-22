@@ -1,24 +1,24 @@
 ---
-title: Create printJob for a printer
-description: Create a new printJob for a printer. 
+title: Create printJob for a printerShare
+description: Create a new printJob for a printerShare. 
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# Create printJob for a printer
+# Create printJob for a printerShare
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [printJob](../resources/printJob.md) for a [printer](../resources/printer.md). 
+Create a new [printJob](../resources/printJob.md) for a [printerShare](../resources/printerShare.md). 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription and have a permission that grants [Get printer](printer-get.md) access. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription and have a permission that grants [Get printerShare](printerShare-get.md) access. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
@@ -29,7 +29,7 @@ In addition to the following permissions, the user or app's tenant must have an 
 ## HTTP request
 
 ```http
-POST print/printers/{id}/jobs
+POST print/shares/{id}/jobs
 ```
 
 ## Request headers
@@ -39,7 +39,9 @@ POST print/printers/{id}/jobs
 | Content-type  | application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of a [printJob](../resources/printjob.md) object. The printJob object should only contain **configuration**. All properties of **configuration** are nullable. All other fields, including job and document IDs, are set automatically during resource creation.
+In the request body, supply a JSON representation of a [printJob](../resources/printjob.md) object.
+The printJob object should only contain **configuration**. All properties of **configuration** are nullable.
+All other fields including job and document IDs are set automatically during resource creation.
 
 Right now, Universal Print supports only one **printDocument** per **printJob** object.
 
@@ -55,7 +57,7 @@ The following is an example of the request.
   "name": "create_printjob"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/print/printers/{id}/jobs
+POST https://graph.microsoft.com/beta/print/shares/{id}/jobs
 Content-type: application/json
 
 {
