@@ -30,6 +30,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **role** property to the [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo?view=graph-rest-beta) entity.|
+| Addition | beta | Added new action to retrieve an [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) by JoinWebUrl.|
 
 ### Devices and apps | Cloud printing
 
