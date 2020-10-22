@@ -1,5 +1,5 @@
 ---
-title: "Uninstall app for user"
+title: "Delete teamsAppInstallation"
 description: "Uninstall an app from the personal scope of the specified user."
 author: "clearab"
 doc_type: "apiPageType"
