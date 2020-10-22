@@ -60,9 +60,8 @@ You can use several properties to customize the component.
 | view            | view           | Set to control how the person is rendered. Default is `avatar` <br /> `avatar` - show only avatar <br /> `oneline` - show avatar and first line (`displayName` by default) <br /> `twolines` - show avatar and two lines of text (`displayName` and `mail` by default)|
 | line1-property  | line1Property  | Sets the property of the personDetails to use for the first line of text. Default is `displayName`.|
 | line2-property  | line2Property  | Sets the property of the personDetails to use for the second line of text. Default is `mail`.|
+| line3-property  | line3Property  | Sets the property of the personDetails to use for the third line of text. Default is `jobTitle`.|
 | show-presence   | showPresence   | Set flag to display person presence - default is `false`.|
-| show-name       | showName       | **DEPRECATED - use `view`.**  Set flag to display person display name - default is `false`. |
-| show-email      | showEmail      | **DEPRECATED - use `view`.** Set flag to display person email - default is `false`.        |
 
 ## CSS custom properties
 
@@ -73,19 +72,29 @@ mgt-person {
   --avatar-size: 48px;
   --avatar-border: 0;
   --avatar-border-radius: 50%;
+  
   --initials-color: white;
   --initials-background-color: magenta;
+
+  --presence-background-color: #ffffff;
+  --presence-icon-color: #ffffff;
+
   --font-family: 'Segoe UI';
   --font-size: 14px;
   --font-weight: 500;
   --color: black;
-  --presence-background-color: #ffffff;
-  --presence-icon-color: #ffffff;
   --text-transform: none;
+
   --line2-font-size: 12px;
   --line2-font-weight: 400;
   --line2-color: black;
   --line2-text-transform: none;
+
+  --line3-font-size: 12px;
+  --line3-font-weight: 400;
+  --line3-color: black;
+  --line3-text-transform: none;
+
   --details-spacing: 12px;
 }
 ```
