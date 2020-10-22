@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Upgrade installed app for user
+# teamsAppInstallation: upgrade
 
 Namespace: microsoft.graph
 
@@ -50,11 +50,24 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_upgrade_teamsApp"
 }-->
+```http
+POST /users/{id}/teamwork/installedApps/{id}/upgrade
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-upgrade-teamsapp-csharp-snippets.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-upgrade-teamsapp-javascript-snippets.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-upgrade-teamsapp-objc-snippets.md)]
+
+---
 
 ### Response
 
