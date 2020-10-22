@@ -1,6 +1,6 @@
 ---
 title: "Reduce missing subscriptions and change notifications"
-description: "Outlook might suspend delivery of change notifications due to security events such as user's password reset. Special lifecycle events - `subscriptionRemoved` and `missed` - need to be handled to ensure uninterrupted delivery of change notifications."
+description: "Apps subscribing to change notifications might get their subscriptions removed and miss some change notifications. Apps should implement logic to detect and recover from the loss, and resume a continuous change notification flow."
 author: "davidmu1"
 localization_priority: Priority
 ms.custom: graphiamtop20
@@ -20,7 +20,7 @@ When such an event happens, Outlook sends a special lifecycle notification, `sub
 
 Outlook also sends another lifecycle notification, `missed`, if a change notification cannot be delivered to an app.
 
-An app subscribing to change notifications, should listen to the `subscriptionRemoved` and `missed` signals and do the following:
+An app subscribing to change notifications should listen to the `subscriptionRemoved` and `missed` signals and do the following:
 
 - Upon receiving a `subscriptionRemoved` lifecycle notification, the app should recreate the subscription in order to maintain a continuous flow.
 - On receiving a `missed` lifecycle notification, the app should resynchronize resource data using Microsoft Graph.
@@ -46,12 +46,12 @@ Content-Type: application/json
 }
 ```
  
-> **Important:** Use the same hostname (FQDN) for both notifications URLs. 
+> [!IMPORTANT]
+> Use the same hostname (FQDN) for both notifications URLs. 
 
-> **Note:** You need to validate both endpoints as described in [Managing subscriptions](webhooks.md#managing-subscriptions).
-If you choose to use the same URL for both endpoints you will receive and respond to two validation requests.
+You need to validate both endpoints, as described in [Managing subscriptions](webhooks.md#managing-subscriptions). If you choose to use the same URL for both endpoints, you will receive and respond to two validation requests.
 
-> **Note:** You cannot update (`PATCH`) the existing subscriptions to add the **lifecycleNotificationUrl** property. You should remove such existing subscriptions, and create new subscriptions and specify the **lifecycleNotificationUrl** property. Existing subscriptions without **lifecycleNotificationUrl** property will not receive the `subscriptionRemoved` and `missed`.
+> **Note:** You cannot update (`PATCH`) the existing subscriptions to add the **lifecycleNotificationUrl** property. You should remove such existing subscriptions, create new subscriptions, and specify the **lifecycleNotificationUrl** property. Existing subscriptions without a **lifecycleNotificationUrl** property will not receive the `subscriptionRemoved` and `missed` notifications.
 
 ## Responding to subscriptionRemoved notifications
 
