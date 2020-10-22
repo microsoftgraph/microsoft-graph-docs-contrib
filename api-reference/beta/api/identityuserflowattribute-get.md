@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [identityUserFlowAttribute](../resources/identityuserflowattribute.md).
+Retrieve the properties and relationships of a [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object.
 
 ## Permissions
 
@@ -56,8 +56,6 @@ If successful, this method returns a `200 OK` response code and a JSON represent
 
 ### Request
 
-The following is an example of the request.
-
 <!-- {
   "blockType": "request",
   "name": "get_userFlowAttributes"
@@ -69,8 +67,6 @@ GET https://graph.microsoft.com/beta/identity/userFlowAttributes/{id}
 ```
 
 ### Response
-
-The following is an example of the response.
 
 <!-- {
   "blockType": "response",
