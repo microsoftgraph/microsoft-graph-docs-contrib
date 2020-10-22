@@ -44,6 +44,7 @@ Represents a printer device that has been registered with the Universal Print se
 |isAcceptingJobs|Boolean|Whether the printer is currently accepting new print jobs.|
 |location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer.|
 |defaults|[printerDefaults](printerdefaults.md)|The printer's default print settings.|
+|capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer associated with this printer share.|
 
 ## Relationships
 | Relationship | Type        | Description |
