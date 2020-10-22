@@ -1,5 +1,5 @@
 ---
-title: "Install app for user"
+title: "Create teamsAppInstallation"
 description: "Install an app in the personal scope of the specified user."
 author: "clearab"
 doc_type: "apiPageType"
