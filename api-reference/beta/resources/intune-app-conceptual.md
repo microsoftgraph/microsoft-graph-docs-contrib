@@ -22,6 +22,7 @@ The following Graph resources are available to manage app protection polices in 
 
 - [Android device owner enrollment mode](intune-androidforwork-androiddeviceownerenrollmentmode.md)
 - [Android device owner enrollment profile](intune-androidforwork-androiddeviceownerenrollmentprofile.md)
+- [Android device owner enrollment token type](intune-androidforwork-androiddeviceownerenrollmenttokentype.md)
 - [Android enrollment company code](intune-androidforwork-androidenrollmentcompanycode.md)
 - [Android for Work app](intune-apps-androidforworkapp.md)
 - [Android for Work app configuration schema](intune-androidforwork-androidforworkappconfigurationschema.md)
@@ -182,5 +183,3 @@ The following Graph resources are available to manage app protection polices in 
 - [Windows store app](intune-apps-windowsstoreapp.md)
 - [Windows universal AppX](intune-apps-windowsuniversalappx.md)
 - [Windows universal AppX contained app](intune-apps-windowsuniversalappxcontainedapp.md)
-
-

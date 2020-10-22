@@ -1,5 +1,5 @@
 ---
-title: "printer: resetDefaults"
+title: "printer: restoreFactoryDefaults"
 description: Reset a printer's default settings.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# printer: resetDefaults
+# printer: restoreFactoryDefaults
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reset a [printer](../resources/printer.md)'s default settings.
+Restore a [printer](../resources/printer.md)'s settings to the factory settings.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,7 +29,7 @@ To use the Universal Print service, the user or app's tenant must have an active
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /print/printers/{id}/resetDefaults
+POST /print/printers/{id}/restoreFactoryDefaults
 ```
 ## Request headers
 | Name          | Description   |
@@ -37,39 +37,25 @@ POST /print/printers/{id}/resetDefaults
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
+Do not supply a request body for this method.
 
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 The following example shows how to call this API.
-##### Request
+### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "printer-resetdefaults"
+  "name": "printer-restorefactorydefaults"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/print/printers/{id}/resetDefaults
+POST https://graph.microsoft.com/beta/print/printers/{id}/restoreFactoryDefaults
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/printer-resetdefaults-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/printer-resetdefaults-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/printer-resetdefaults-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### Response
+### Response
 The following is an example of the response. 
 <!-- {
   "blockType": "response",
@@ -84,7 +70,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "printer: resetDefaults",
+  "description": "printer: restoreFactoryDefaults",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
