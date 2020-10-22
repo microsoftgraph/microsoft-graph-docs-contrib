@@ -17,8 +17,71 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added the **AlternateIdLogin** field to the [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-1.0) policy definition.|
+| Addition | beta | Added the **AlternateIdLogin** field to the [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta) policy definition.|
+| Addition | beta | Added the [fido2AuthenticationMethodConfiguration](/graph/api/resources/fido2AuthenticationMethodConfiguration?view=graph-rest-beta) entity for managing users' FIDO2 Security Keys authentication method policy. |
+| Addition | beta | Added the [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) entity for managing users' Microsoft Authenticator Passwordless Phone Sign-in authentication method policy. |
+| Addition | beta | Added the [emailauthenticationmethod](/graph/api/resources/emailauthenticationmethod?view=graph-rest-beta) entity for managing users' email authentication method. |
 | Addition | beta and v1.0 | Added [verified publisher](/graph/api/resources/verifiedPublisher) properties to the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) resources. |
 | Addition | beta and v1.0 | Added [setVerifiedPublisher](/graph/api/application-setverifiedpublisher) and [unsetVerifiedPublisher](/graph/api/application-unsetverifiedpublisher) methods to the [application](/graph/api/resources/application) resource. |
+
+### Cloud communications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the **role** property to the [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo?view=graph-rest-beta) entity.|
+
+### Devices and apps | Cloud printing
+
+| **Change type** | **Version**   | **Description**                          |
+|:---|:---|:---|
+| Addition | beta | Added the [createUploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta) action for printDocument. | 
+| Change | beta | Deprecated **uploadData** action on [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta) resource. | 
+| Change | beta | Added properties to [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource: <br/><ul><li>isFetchable</li><li>redirectedFrom</li><li>redirectedTo</li><li>configuration</li></ul> | 
+| Change | beta | Deprecated **configuration** property on [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta) resource. | 
+| Change | beta | Added **shares** navigation property on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource. | 
+| Change | beta | **resetDefaults** action on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource has been renamed to [restoreFactoryDefaults](/graph/api/printer-restorefactorydefaults?view=graph-rest-beta). | 
+| Change | beta | **startPrintJob** action on [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource has been renamed to [start](/graph/api/printjob-start?view=graph-rest-beta). | 
+| Change | beta | **cancelPrintJob** action on [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource has been renamed to [cancel](/graph/api/printjob-cancel?view=graph-rest-beta). | 
+| Change | beta | Deprecated **getCapabilities** function on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource. | 
+| Change | beta | Deprecated **allowedUsers** property on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource. | 
+| Change | beta | Deprecated **allowedGroups** property on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource. |
+| Change | beta | Added **feedOrientations** property to [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta) resource. | 
+| Change | beta | Deprecated **feedDirections** property on [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta) resource. | 
+| Change | beta | Added **details** property to [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta) resource. | 
+| Change | beta | Deprecated **processingStateReasons** property on [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta) resource. | 
+| Change | beta | Renamed properties on [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta) resource: <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li></ul> |  
+| Change | beta | Added **details** property to [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta) resource. | 
+| Change | beta | Renamed properties on [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta) resource: <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li><li>acquiredByPrinter -> isAcquiredByPrinter</li></ul> |  
+
+### Devices and apps | Corporate management
+
+| **Change type** | **Version**   | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added new entities:<br/>[deviceCustomAttributeShellScript](/graph/api/resources/intune-devices-devicecustomattributeshellscript?view=graph-rest-beta)<br/>[macOSSoftwareUpdateAccountSummary](/graph/api/resources/intune-deviceconfig-macossoftwareupdateaccountsummary?view=graph-rest-beta)<br/>[macOSSoftwareUpdateCategorySummary](/graph/api/resources/intune-deviceconfig-macossoftwareupdatecategorysummary?view=graph-rest-beta)<br/>[macOSSoftwareUpdateConfiguration](/graph/api/resources/intune-deviceconfig-macossoftwareupdateconfiguration?view=graph-rest-beta)<br/>[macOSSoftwareUpdateStateSummary](/graph/api/resources/intune-deviceconfig-macossoftwareupdatestatesummary?view=graph-rest-beta)<br/>|
+|Addition|beta|Added new complex types:<br/>[macOSAssociatedDomainsItem](/graph/api/resources/intune-deviceconfig-macosassociateddomainsitem?view=graph-rest-beta)<br/>|
+|Addition|beta|Added new enum types:<br/>[androidDeviceOwnerEnrollmentTokenType](/graph/api/resources/intune-androidforwork-androiddeviceownerenrollmenttokentype?view=graph-rest-beta)<br/>[deviceCustomAttributeValueType](/graph/api/resources/intune-devices-devicecustomattributevaluetype?view=graph-rest-beta)<br/>[macOSSoftwareUpdateBehavior](/graph/api/resources/intune-deviceconfig-macossoftwareupdatebehavior?view=graph-rest-beta)<br/>[macOSSoftwareUpdateCategory](/graph/api/resources/intune-deviceconfig-macossoftwareupdatecategory?view=graph-rest-beta)<br/>[macOSSoftwareUpdateScheduleType](/graph/api/resources/intune-deviceconfig-macossoftwareupdatescheduletype?view=graph-rest-beta)<br/>[macOSSoftwareUpdateState](/graph/api/resources/intune-deviceconfig-macossoftwareupdatestate?view=graph-rest-beta)<br/>|
+|Addition|beta|Added the [assign](/graph/api/intune-devices-devicecustomattributeshellscript-assign?view=graph-rest-beta) action on [deviceCustomAttributeShellScript](/graph/api/resources/intune-devices-devicecustomattributeshellscript?view=graph-rest-beta) |
+|Deletion|beta|Removed the following entities:<br/>**todo**<br/>**todoTask**<br/>**todoTaskList**<br/>|
+|Deletion|beta|Removed the following complex types:<br/>**macOSAssociatedDomainsKeyValuePair**<br/>|
+|Addition|beta|Added the **enrollmentTokenType** property to the [androidDeviceOwnerEnrollmentProfile](/graph/api/resources/intune-androidforwork-androiddeviceownerenrollmentprofile?view=graph-rest-beta) entity|
+|Addition|beta|Added the **customData** and **customKeyValueData** properties to the [androidDeviceOwnerVpnConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownervpnconfiguration?view=graph-rest-beta) entity|
+|Addition|beta|Added the **blockAfterCompanyPortalUpdateDeferralInDays**, **warnAfterCompanyPortalUpdateDeferralInDays** and **wipeAfterCompanyPortalUpdateDeferralInDays** properties to the [androidManagedAppProtection](/graph/api/resources/intune-shared-androidmanagedappprotection?view=graph-rest-beta) entity|
+|Addition|beta|Added the **blockAfterCompanyPortalUpdateDeferralInDays**, **warnAfterCompanyPortalUpdateDeferralInDays** and **wipeAfterCompanyPortalUpdateDeferralInDays** properties to the [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta) entity|
+|Deletion|beta|Removed the **passCodeDisabled** and **zoomDisabled** properties from the [depEnrollmentBaseProfile](/graph/api/resources/intune-enrollment-depenrollmentbaseprofile?view=graph-rest-beta) entity|
+|Addition|beta|Added the **passCodeDisabled**, **zoomDisabled**, **restoreCompletedScreenDisabled** and **updateCompleteScreenDisabled** properties to the [depIOSEnrollmentProfile](/graph/api/resources/intune-enrollment-depiosenrollmentprofile?view=graph-rest-beta) entity|
+|Addition|beta|Added the **passCodeDisabled**, **zoomDisabled** and **accessibilityScreenDisabled** properties to the [depMacOSEnrollmentProfile](/graph/api/resources/intune-enrollment-depmacosenrollmentprofile?view=graph-rest-beta) entity|
+|Addition|beta|Added the **headerTitle** and **headerSubtitle** properties to the [deviceManagementSettingDefinition](/graph/api/resources/intune-deviceintent-devicemanagementsettingdefinition?view=graph-rest-beta) entity|
+|Addition|beta|Added the **advancedThreatProtectionRequiredSecurityLevel** property to the [iosCompliancePolicy](/graph/api/resources/intune-deviceconfig-ioscompliancepolicy?view=graph-rest-beta) entity|
+|Addition|beta|Added the **appAssociatedDomains** property to the [macOSDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-macosdevicefeaturesconfiguration?view=graph-rest-beta) entity|
+|Addition|beta|Added the **passwordMaximumAttemptCount** and **passwordMinutesUntilFailedLoginReset** properties to the [macOSGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-macosgeneraldeviceconfiguration?view=graph-rest-beta) entity|
+|Addition|beta|Added the **installAsManaged** property to the [macOSLobApp](/graph/api/resources/intune-apps-macoslobapp?view=graph-rest-beta) entity|
+|Change|beta|Changed the following properties on the [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta) entity:<br/>**defenderSecurityCenterDisableAccountUI** from required to optional<br/>**defenderSecurityCenterDisableAppBrowserUI** from required to optional<br/>**defenderSecurityCenterDisableClearTpmUI** from required to optional<br/>**defenderSecurityCenterDisableFamilyUI** from required to optional<br/>**defenderSecurityCenterDisableHardwareUI** from required to optional<br/>**defenderSecurityCenterDisableHealthUI** from required to optional<br/>**defenderSecurityCenterDisableNetworkUI** from required to optional<br/>**defenderSecurityCenterDisableNotificationAreaUI** from required to optional<br/>**defenderSecurityCenterDisableRansomwareUI** from required to optional<br/>**defenderSecurityCenterDisableSecureBootUI** from required to optional<br/>**defenderSecurityCenterDisableTroubleshootingUI** from required to optional<br/>**defenderSecurityCenterDisableVirusUI** from required to optional<br/>**defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI** from required to optional<br/>|
+|Addition|beta|Added the **macOSSoftwareUpdateAccountSummaries** and **deviceCustomAttributeShellScripts** navigation properties to the [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) entity|
+|Addition|beta|Added the **ipAddressV4** and **subnetAddress** properties to the [hardwareInformation](/graph/api/resources/intune-devices-hardwareinformation?view=graph-rest-beta) complex type|
+|Addition|beta|Added the **uninstallOnDeviceRemoval** property to the [macOsVppAppAssignmentSettings](/graph/api/resources/intune-apps-macosvppappassignmentsettings?view=graph-rest-beta) complex type|
+|Addition|beta|Added the **netMotionMobility** member to the [androidVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidvpnconnectiontype?view=graph-rest-beta) enum type|
+|Addition|beta|Added the **universalResourceIdentifier** member to the [subjectAlternativeNameType](/graph/api/resources/intune-deviceconfig-subjectalternativenametype?view=graph-rest-beta) enum type|
 
 ### Files
 
@@ -36,6 +99,18 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the **allowInvitesFrom** property to the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource.|
 |Addition|beta|Added the [b2cAuthenticationMethodsPolicy](/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta) resource type and the following opertations: [Get b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta) and [Update b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta).|
 |Addition|beta|Added the **Policy.ReadWrite.AuthenticationMethod** permission to the [Permissions reference](permissions-reference.md#policy-permissions).|
+
+### Teamwork
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | v1.0 | Added the [List members](/graph/api/conversationmember-list?view=graph-rest-beta), [Get member](/graph/api/conversationmember-get?view=graph-rest-beta), [Add member](/graph/api/conversationmember-add?view=graph-rest-beta), [Update member](/graph/api/conversationmember-update?view=graph-rest-beta), and [Delete member](/graph/api/conversationmember-delete?view=graph-rest-beta) methods to the [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta) and [aadUserConversationMember](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta) resources.|
+
+### Users
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | beta and v1.0 | Added the **employeeType**, **employeeOrgData**, and **employeeHireDate** properties to the [user](/graph/api/resources/user) entity. |
 
 ## September 2020
 
