@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a user in a [chat](chat.md) or a [channel](channel.md).
+See also [aadUserConversationMember](aaduserconversationmember.md).
 
 ## Methods
 
@@ -66,3 +67,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

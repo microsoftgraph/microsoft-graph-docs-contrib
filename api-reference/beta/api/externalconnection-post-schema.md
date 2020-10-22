@@ -73,7 +73,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/connections/contosohr/schema
+POST https://graph.microsoft.com/beta/external/connections/contosohr/schema
 Content-type: application/json
 Prefer: respond-async
 
@@ -94,7 +94,6 @@ Prefer: respond-async
       "type": "String",
       "isQueryable": "true",
       "isRetrievable": "true",
-      "isRefinable": "true",
       "isSearchable": "false"
     },
     {
@@ -144,3 +143,5 @@ Location: https://graph.microsoft.com/beta/external/connections/contosohr/operat
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

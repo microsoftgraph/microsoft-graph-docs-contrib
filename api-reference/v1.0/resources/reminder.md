@@ -2,7 +2,7 @@
 title: "reminder resource type"
 description: "A reminder for an event in a user calendar."
 localization_priority: Normal
-author: ""
+author: "harini84"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -60,3 +60,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

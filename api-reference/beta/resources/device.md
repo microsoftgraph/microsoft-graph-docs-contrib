@@ -48,8 +48,8 @@ This resource lets you add your own data to custom properties using [extensions]
 |deviceVersion|Int32| For internal use only. |
 |displayName|String| The display name for the device. Required. |
 |id|String|The unique identifier for the device. Inherited from [directoryObject](directoryobject.md). Key, Not nullable. Read-only.|
-|isCompliant|Boolean|**true** if the device complies with Mobile Device Management (MDM) policies; otherwise, **false**. Read-only. This can only be updated by Intune for any device OS type or by an [approved MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices.|
-|isManaged|Boolean|**true** if the device is managed by a Mobile Device Management (MDM) app; otherwise, **false**. This can only be updated by Intune for any device OS type or by an [approved MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices. |
+|isCompliant|Boolean|**true** if the device complies with Mobile Device Management (MDM) policies; otherwise, **false**. Read-only. This can only be updated by Intune for any device OS type or by an [approved MDM app](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices.|
+|isManaged|Boolean|**true** if the device is managed by a Mobile Device Management (MDM) app; otherwise, **false**. This can only be updated by Intune for any device OS type or by an [approved MDM app](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices. |
 |manufacturer|String| Manufacturer of the device. Read-only. |
 |mdmAppId|String|Application identifier used to register device into MDM. <br><br>Read-only. Supports $filter.|
 |model|String| Model of the device. Read-only. |
