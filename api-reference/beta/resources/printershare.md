@@ -75,7 +75,7 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "manufacturer": "String",
   "model": "String",
-  "createdDateTime": "String (timestamp)"
+  "createdDateTime": "String (timestamp)",
   "isAcceptingJobs": true,
   "allowAllUsers": false,
   "location": {"@odata.type": "microsoft.graph.printerLocation"},
