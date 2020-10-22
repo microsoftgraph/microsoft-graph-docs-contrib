@@ -1,6 +1,6 @@
 ---
 title: "teamsAppInstallation resource type"
-description: "A teamsApp installed in a team"
+description: "Represents a teamsApp installed in a team or the personal scope of a user."
 author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) (in beta), or the personal scope of a [user](user.md). Any bots that are part of the app will become part of any team, chat, or user's personal scope that the app is added to.
+Represents a [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) (in beta), or the personal scope of a [user](user.md). Any bots that are part of the app will become part of any team, chat, or user's personal scope that the app is added to.
 
 ## Methods
 
