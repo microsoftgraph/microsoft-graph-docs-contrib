@@ -72,7 +72,7 @@ Content-length: 166
   "@odata.type": "#microsoft.graph.linkedResource",
   "webUrl": "http://microsoft.com",
   "applicationName": "Microsoft",
-  "displayName": "Microsoft",
+  "displayName": "Microsoft"
 }
 ```
 # [JavaScript](#tab/javascript)

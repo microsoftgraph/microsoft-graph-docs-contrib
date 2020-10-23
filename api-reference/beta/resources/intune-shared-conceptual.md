@@ -90,5 +90,3 @@ The following Graph resources are shared between Intune workflows:
 - [Windows domain join configuration](intune-shared-windowsdomainjoinconfiguration.md)
 - [Windows universal AppX app assignment settings](intune-shared-windowsuniversalappxappassignmentsettings.md)
 - [Windows update state](intune-shared-windowsupdatestate.md)
-
-
