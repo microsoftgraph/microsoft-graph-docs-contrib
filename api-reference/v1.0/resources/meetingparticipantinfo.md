@@ -19,7 +19,7 @@ Information about a participant in a meeting.
 | :------- | :---------------------------- | :---------------------------------------------------------------------------------- |
 | identity | [identitySet](identityset.md) | Identity information of the participant.                                            |
 | upn      | String                        | User principal name of the participant.                                             |
-| role     | onlineMeetingRole             | Specifies the participant's role in the meeting.  Possible values are listed below. |
+| role     | onlineMeetingRole             | Specifies the participant's role in the meeting.  Possible values are listed in the following table. |
 
 ### onlineMeetingRole values
 
