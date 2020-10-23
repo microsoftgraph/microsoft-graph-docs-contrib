@@ -37,6 +37,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **role** property to the [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo?view=graph-rest-beta) complex type.|
 | Addition | beta | Added new action to retrieve an [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) by JoinWebUrl.|
+| Addition | v1.0 | Added the **lobbyBypassSettings**, **isEntryExitAnnounced**, and **allowedPresenters** property to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-1.0) entity to support meeting option configuration.|
 
 ### Devices and apps | Cloud printing
 
