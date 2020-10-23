@@ -1,13 +1,13 @@
 ---
-title: "Add conversationMemberto a channel"
-description: "Add conversationMember to a channel."
+title: "Add member to a channel"
+description: "Add member to a channel."
 author: "laujan" 
 doc_type: "apiPageType"
 localization_priority: Normal 
 ms.prod: "microsoft-teams"
 ---
 
-# Add conversationMemberto a channel
+# Add member to a channel
 
 Namespace: microsoft.graph
 
@@ -56,7 +56,7 @@ Here is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_conversation_member"
+  "name": "create_member"
 } -->
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members/
@@ -78,7 +78,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member",
+  "name": "create_member",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
 ```http
