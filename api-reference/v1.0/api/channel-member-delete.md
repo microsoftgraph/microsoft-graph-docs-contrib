@@ -1,5 +1,5 @@
 ---
-title: "Delete member from a channel"
+title: "Delete a member from a channel"
 description: "Remove a member from a channel."
 author: "laujan"
 doc_type: "apiPageType"
@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Delete member from a channel
+# Delete a member from a channel
 
 Namespace: microsoft.graph
  
