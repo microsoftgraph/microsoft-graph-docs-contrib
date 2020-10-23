@@ -1,6 +1,6 @@
 ---
-title: "Update conversationMember in a channel"
-description: "Update the role of conversationMember in a channel."
+title: "Update member in a channel"
+description: "Update the role of member in a channel."
 author: "laujan"
 doc_type: "apiPageType"
 localization_priority: Normal
@@ -55,7 +55,7 @@ Here is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_conversation_member"
+  "name": "update_member"
 } -->
 ```http
 PATCH https://graph.microsoft.com/V1.0/channels/{id}/members/{id}
