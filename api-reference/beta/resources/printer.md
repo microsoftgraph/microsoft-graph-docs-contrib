@@ -23,7 +23,7 @@ Represents a printer device that has been registered with the Universal Print se
 | [Get](../api/printer-get.md) | [printer](printer.md) | Read the properties and relationships of the printer object. |
 | [Update](../api/printer-update.md) | [printer](printer.md) | Update the printer object. |
 | [Delete](../api/printer-delete.md) | None | Unregister the physical printer from the Universal Print service. |
-| [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md) | None | Restore a printer's defaults settings to the values specified by the manufacturer. |
+| [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md) | None | Restore a printer's default settings to the values specified by the manufacturer. |
 | [List jobs](../api/printer-list-jobs.md) | [printJob](printjob.md) collection | Get a list of print jobs that are queued for processing by the printer. |
 | [Create job](../api/printer-post-jobs.md) | [printJob](printjob.md) | Create a new print job for the printer. To start printing the job, use [start](../api/printjob-start.md). |
 | [List connectors](../api/printer-list-connectors.md) | [printConnector](printconnector.md) collection | Get a list of connectors that this printer is associated with. |
