@@ -41,7 +41,7 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "scope": "organizer | organization | organizationAndFederated | everyone | unknownFutureValue",
+  "scope": "String",
   "isDialInBypassEnabled": "Boolean",
 }
 ```
