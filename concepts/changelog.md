@@ -131,8 +131,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|v1.0|Added the **taskStatus** enumeration type.|
 |Addition|v1.0|Added the [delta](/graph/api/todoTaskList-delta?view=graph-rest-1.0) method to the [todoTaskList](/graph/api/resources/todoTaskList?view=graph-rest-1.0) resource.|
 |Addition|v1.0|Added the [delta](/graph/api/todoTask-delta?view=graph-rest-1.0) method to the [todoTask](/graph/api/resources/todoTask?view=graph-rest-1.0) resource.|
-|Addition|v1.0|Added the [delta](/graph/api/todoTaskList-delta?view=graph-rest-1.0) method to the [todoTaskList](/graph/api/resources/todoTaskList?view=graph-rest-1.0) resource.|
-|Addition|v1.0|Added the [delta](/graph/api/todoTask-delta?view=graph-rest-1.0) method to the [todoTask](/graph/api/resources/todoTask?view=graph-rest-1.0) resource.|
+
 
 ### Users
 
