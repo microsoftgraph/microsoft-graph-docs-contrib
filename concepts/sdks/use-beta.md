@@ -7,7 +7,7 @@ author: jasonjoh
 
 # Use the Microsoft Graph SDKs with the beta API
 
-The Microsoft Graph SDKs use the [v1.0](/graph/api/overview?view=graph-rest-1.0) Microsoft Graph endpoint by default. The SDKs can be used with the [beta](/graph/api/overview?view=graph-rest-beta) endpoint for non-production applications. The method for accessing the beta endpoint depends on which SDK you are using.
+Many of the Microsoft Graph SDKs use the [v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=false) Microsoft Graph endpoint by default. The SDKs can be used with the [beta](/graph/api/overview?view=graph-rest-beta&preserve-view=true) endpoint for non-production applications. The method for accessing the beta endpoint depends on which SDK you are using.
 
 [!INCLUDE [beta-disclaimer](../../api-reference/includes/beta-disclaimer.md)]
 
