@@ -1,16 +1,16 @@
 ---
-title: "Delete conversationMember from a channel"
-description: "Delete conversationMember from a channel."
+title: "Delete member from a channel"
+description: "Remove a member from a channel."
 author: "laujan"
 doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Delete conversationMember
+# Delete member from a channel
 
 Namespace: microsoft.graph
-
+ 
 Delete a [conversationMember](../resources/conversationmember.md) from a [channel](../resources/channel.md).
 
 
@@ -52,7 +52,7 @@ Here is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_conversation_member"
+  "name": "delete_member"
 } -->
 ```http
 DELETE https://graph.microsoft.com/V1.0/channels/{id}/members/{id}
