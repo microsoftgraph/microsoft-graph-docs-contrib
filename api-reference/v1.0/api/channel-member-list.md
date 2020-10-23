@@ -1,13 +1,13 @@
 ---
-title: "List conversationMember of a channel"
-description: "List member of a channel."
+title: "List member from a channel"
+description: "List member from a channel."
 author: "laujan"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List conversationMember in a channel
+# List member from a channel
 
 Namespace: microsoft.graph
 
@@ -60,7 +60,7 @@ Here is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_conversation_member"
+  "name": "list_member"
 }-->
 
 ```msgraph-interactive
@@ -75,7 +75,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "list_conversation_member",
+  "name": "list_member",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
 ```http
