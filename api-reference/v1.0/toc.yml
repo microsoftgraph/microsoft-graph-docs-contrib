@@ -4910,22 +4910,14 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
-        - name: List channel members
-          href: api/conversationmember-list.md
-        - name: Get channel member
-          href: api/conversationmember-get.md
-        - name: Add channel member
-          href: api/conversationmember-add.md
-        - name: Update a member in a channel
-          href: api/conversationmember-update.md
-        - name: Delete channel member
-          href: api/conversationmember-delete.md
-        - name: Get files folder
-          href: api/channel-get-filesfolder.md
-        - name: Send message
-          href: api/channel-post-messages.md
-        - name: Reply to message
-          href: api/channel-post-messagereply.md
+        - name: List members in a channel
+          href: api/channel-members-list.md
+        - name: Add a member to a channel 
+          href: api/channel-members-add.md
+        - name: Update the role of a member in a channel
+          href: api/channel-members-update.md
+        - name: Delete a member from a channel
+          href: api/channel-members-delete.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
