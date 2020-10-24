@@ -27,7 +27,7 @@ An app subscribing to change notifications should listen to the `subscriptionRem
 
 To receive lifecycle notifications, you can use the existing **notificationUrl** endpoint that already receives change notifications, or you can register a separate **lifecycleNotificationUrl** to receive `subscriptionRemoved` and `missed` lifecycle notifications in a separate endpoint.
 
-Lifecycle notifications are emitted for subscriptions created on these resource types:
+Lifecycle notifications are supported for subscriptions created on these resource types:
 
 - Outlook [message][]
 - Outlook [event][]
