@@ -239,7 +239,7 @@ Examples of group features that support only delegated permissions:
 
 ### Policy
 
-Using Microsoft Graph to create and name a Microsoft 365 group bypasses any Microsoft 365 group policies that are configured through Outlook Web App.
+Using Microsoft Graph to create and name a Microsoft 365 group bypasses any Microsoft 365 group policies that are configured through Outlook on the web.
 
 ### Setting the allowExternalSenders property
 
