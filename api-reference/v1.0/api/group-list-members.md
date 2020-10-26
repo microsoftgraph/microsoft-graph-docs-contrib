@@ -32,7 +32,7 @@ GET /groups/{id}/members
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the users that are a member of the group. You can use `$search` on the **displayName** property. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the users that are a member of the group. You can use `$search` on the **displayName** and **description** properties. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
 
 ## Request headers
 
@@ -101,10 +101,7 @@ Content-type: application/json
   "value": [
     {
       "id": "11111111-2222-3333-4444-555555555555",
-      "mail": "group1@contoso.com",
-      "mailEnabled": true,
-      "mailNickname": "Contoso1",
-      "securityEnabled": true
+      "mail": "group1@contoso.com"
     }
   ]
 }
@@ -131,16 +128,14 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
-  "isCollection": true
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
 893
+```
 
 ### Example 3: Use OData cast to get only a count of user membership
 
@@ -162,17 +157,14 @@ ConsistencyLevel: eventual
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
-  "isCollection": true
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
 893
+```
 
 ### Example 4: Use $searchand OData cast to get user membership in groups with display names that contain the letters 'Pr' including a count of returned objects
 
@@ -215,7 +207,7 @@ Content-type: application/json
     },
     {
       "displayName":"Preston Morales",
-      "id":"11111111-2222-3333-4444-555555555555"
+      "id":"66666666-7777-8888-9999-000000000000"
     }
   ]
 }
@@ -258,10 +250,7 @@ Content-type: application/json
   "value":[
     {
       "displayName":"AAD Contoso Users",
-      "mail":"AADContoso_Users@contoso.com",
-      "mailEnabled":true,
-      "mailNickname":"AADContoso_Users",
-      "securityEnabled":true
+      "mail":"AADContoso_Users@contoso.com"
     }
   ]
 }

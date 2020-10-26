@@ -30,7 +30,7 @@ GET /devices
 ```
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. You can use `$search` on the **displayName** property. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. You can use `$search` on the **displayName** and **description** properties. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
 
 ## Request headers
 
@@ -131,17 +131,14 @@ ConsistencyLevel: eventual
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.device",
-  "isCollection": true
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
 294
+```
 
 ### Example 3: Use $filter and $top to get one device with a display name that starts with 'a' including a count of returned objects
 
@@ -199,7 +196,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_video_count"
+  "name": "get_android_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/devices?$search="displayName:Android"&$count=true

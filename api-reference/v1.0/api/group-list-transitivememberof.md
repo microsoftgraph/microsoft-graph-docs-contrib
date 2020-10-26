@@ -103,10 +103,7 @@ Content-type: application/json
   "value": [
     {
       "id": "11111111-2222-3333-4444-555555555555",
-      "mail": "group1@contoso.com",
-      "mailEnabled": true,
-      "mailNickname": "ContosoGroup1",
-      "securityEnabled": true
+      "mail": "group1@contoso.com"
     }
   ]
 }
@@ -132,17 +129,14 @@ ConsistencyLevel: eventual
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
-  "isCollection": true
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
 294
+```
 
 ### Example 3: Use OData cast to get only a count of transitive membership in groups
 
@@ -164,18 +158,14 @@ ConsistencyLevel: eventual
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
-  "isCollection": true
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
 294
-
+```
 
 ### Example 4: Use OData cast and $search to get membership in groups with display names that contain the letters 'tier' including a count of returned objects
 
@@ -257,10 +247,7 @@ Content-type: application/json
   "value":[
     {
       "displayName":"AAD Contoso Users",
-      "mail":"AADContoso_Users@contoso.com",
-      "mailEnabled":true,
-      "mailNickname":"AADContoso_Users",
-      "securityEnabled":true
+      "mail":"AADContoso_Users@contoso.com"
     }
   ]
 }
