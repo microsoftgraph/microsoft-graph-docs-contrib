@@ -237,7 +237,7 @@ Content-type: application/json
   "@odata.count":76,
   "value":[
     {
-      "displayName":"AAD Contoso Users",
+      "displayName":"Joseph Price",
       "mail":"AADContoso_Users@contoso.com",
       "mailEnabled":true,
       "mailNickname":"AADContoso_Users",
