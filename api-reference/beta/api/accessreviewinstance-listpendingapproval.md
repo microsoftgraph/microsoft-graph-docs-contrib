@@ -45,10 +45,9 @@ Do not supply a request body.
 If successful, this method returns a `200 OK` response code and an array of [accessReviewInstance](../resources/accessreviewinstance.md) objects in the response body.
 
 ## Examples
-##### Request
+### Request
 The following example shows a request to retrieve all the access review series in a tenant.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accessReviewInstance_pendingapproval"
@@ -57,17 +56,7 @@ The following example shows a request to retrieve all the access review series i
 GET https://graph.microsoft.com/beta/me/pendingAccessReviewInstances?$expand=definition&$top=100&$skip=0
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
