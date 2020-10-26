@@ -17,11 +17,8 @@ At the time of first release in 2014, Office Graph was a backend service for Del
 While existing apps could continue to use **officeGraphInsights**, these apps should upgrade to **itemInsights** to gain the flexibility to fine-tune item insights in Office Graph and Delve.
 
 ## How to customize item insights?
-By default, item insights are enabled for an organization. To disable item insights for all users in the organization, set the **isEnabledInOrganization** property to `false`. To disable item insights for a _subset_ of users in an Azure AD group, set the **disabledForGroup** property to the ID of that group; find out more about [creating a group and adding users as members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
 
-Item insights settings provide flexibility for administrators to use Azure AD tools and disable item insights for only members of a specified group and not necessarily across the organization. Configure these properties in an app by using the Microsoft Graph REST API or PowerShell SDK with due permissions.
-
-When configuring item insights settings, keep in mind that the _global administrator role_ is required. 
+Item insights settings provide flexibility for administrators to use Azure AD tools. Administrators can disable item insights for an entire organization, or for only members of a specified Azure AD group. Configure item insights by using the Microsoft Graph REST API or PowerShell SDK with due permissions. Keep in mind that the _global administrator role_ is required. 
 
 The next section describes using PowerShell cmdlets to configure insights settings. If you're using the REST API, skip the next section and continue with [checking out available configurations](#available-configurations). Then refer to the [read](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) REST operations for more information.
 
@@ -60,8 +57,13 @@ If you use Microsoft Graph PowerShell module version 0.9.0 or lower, use one of 
   Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -BodyParameter @{DisabledForGroup = "85f741b4-e924-41a8-abf8-d61a7b950bb5"; IsEnabledInOrganization = $false}
   ```
 
-### Available configurations
-Configure item insights settings for users in an organization by [updating](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) the **isEnabledInOrganization** and **disabledForGroup** properties accordingly.
+### Configure item insights using REST API
+As stated earlier, by default, item insights are enabled for the entire organization. You can change the default in one of two ways:
+
+- Disable item insights for all users in the organization, by setting the **isEnabledInOrganization** property of the [itemInsightsSettings](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) resource to `false`. 
+- Disable item insights for a _subset_ of users, by assigning these users in an Azure AD group, and setting the **disabledForGroup** property to the ID of that group. Find out more about [creating a group and adding users as members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
+
+Use the [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) operation to set the **isEnabledInOrganization** and **disabledForGroup** properties accordingly.
 
 | How item insights are enabled | isEnabledInOrganization | disabledForGroup |
 |:-------------|:------------|:------------|
@@ -87,7 +89,7 @@ Some [trending](/graph/api/resources/insights-trending) or [used](/graph/api/res
 
 - For a user who has disabled item insights, querying the [trending](/graph/api/resources/insights-trending) and [used](/graph/api/resources/insights-used) resources in Microsoft Graph API return `HTTP 403 Forbidden`.
 
-- Where the **Discover** section is enabled for a user searching in Outlook mobile, the **Discover** section does not display documents of users who have disabled item insights.
+- Where the **Discover** section is enabled for a user searching in Outlook mobile, disabling item insights for that user would hide documents in the **Discover** section, that are trending around the user. Trending documents are otherwise recommended and displayed based on other activities of the user.
 
 
 ## Transition period
