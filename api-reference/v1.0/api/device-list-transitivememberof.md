@@ -150,7 +150,7 @@ Content-type: text/plain
 
 294
 
-### Example 3: Use OData cast and $search to get membership with display names that contain the letters 'Video' including a count of returned objects
+### Example 3: Use OData cast and $search to get group membership with display names that contain the letters 'Video' including a count of returned objects
 
 #### Request
 
