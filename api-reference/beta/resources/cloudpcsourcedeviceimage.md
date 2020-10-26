@@ -11,13 +11,19 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+Customer managed image resource
+
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[getSourceImages](../api/cloudpcdeviceimage-getsourceimages.md)|[cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) collection|Get all managed image resources from the customer’s Azure subscriptions.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
+|id|String|Id of the source image that is in customer’s Azure subscriptions |
+|displayName|String|Display name of the source image |
 
 ## Relationships
 None.

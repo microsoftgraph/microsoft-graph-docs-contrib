@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [cloudPcD
 
 <!-- {
   "blockType": "request",
-  "name": "create_cloudpcdeviceimage"
+  "name": "create_cloudpcdeviceimage_from_cloudpcdeviceimage"
 }
 -->
 

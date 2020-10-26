@@ -64,7 +64,7 @@ If successful, this method returns a `201 Created` response code and a [cloudPcO
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_cloudpconpremisesconnection"
+  "name": "create_cloudpconpremisesconnection_from_cloudpconpremisesconnection"
 }
 -->
 ``` http
@@ -109,8 +109,11 @@ Content-Type: application/json
   "organizationalUnit": "OU=Domain Controllers, DC=contoso001, DC=com",
   "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG",
   "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET",
-  "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet",  
-  "healthCheckStatus": "pending",
+  "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet",
+  "healthCheckStatus": {
+    "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionStatus",
+    "pending"
+    },
   "inUse": false
 }
 ```

@@ -87,12 +87,15 @@ Content-Type: application/json
     "enabled": true,
     "assignments": [
       {
+        "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget"
         "groupId":"1e4f451f-48a2-4ef4-9e43-d471a86fca94"
       },
       {
+        "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget"
         "groupId":"2eac0d4a-8147-4428-9902-71bb11e86f33"
       },
       {
+        "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget"
         "groupId":"5f4ddccc-bd47-4066-a49d-577573b58550"
       }
     ]

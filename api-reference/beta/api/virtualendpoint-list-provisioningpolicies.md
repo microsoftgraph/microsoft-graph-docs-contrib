@@ -90,7 +90,10 @@ Content-Type: application/json
       "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701b553",
       "imageId": "53a93bfd-2006-4b76-8f30-5c0f60988105",
       "imageDisplayName": "Custom image name",
-      "imageType": "custom"
+      "imageType": {
+        "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicyImageType",
+        "custom"
+      }
     },
     {
       "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
@@ -100,7 +103,10 @@ Content-Type: application/json
       "onPremisesConnectionId": "6bf90392-5fea-459a-9e9d-a2484abb1ef8",
       "imageId": "MicrosoftWindowsDesktop_Windows-10_19h1-evd",
       "imageDisplayName": "Windows-10 19h1-evd",
-      "imageType": "gallery"
+      "imageType": {
+        "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicyImageType",
+        "gallery"
+      }
     }
   ]
 }

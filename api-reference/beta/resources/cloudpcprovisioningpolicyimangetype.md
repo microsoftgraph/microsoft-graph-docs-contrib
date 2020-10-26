@@ -6,13 +6,11 @@ localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: enumTypes
 ---
+### cloudPcProvisioningPolicyImageType enum type
 
-### cloudPcDeviceImageStatus enum type
-
-Possible image status
+Possible types of images that can be used in a provisioning policy
 
 |Members|Value|Description|
 |:---|:---|:---|
-|pending|0|The image upload is in progress|
-|ready|1|The image is ready for use on Cloud PCs|
-|failed|2|Failed to upload the image|
+|custom|0|The image type is custom|
+|gallery|1|The image type is gallery|

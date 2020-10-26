@@ -90,7 +90,10 @@ Content-Type: application/json
     "onPremisesConnectionId": "6bf90392-5fea-459a-9e9d-a2484abb1ef8",
     "imageId": "MicrosoftWindowsDesktop_Windows-10_19h1-evd",
     "imageDisplayName": "Windows-10 19h1-evd",
-    "imageType": "gallery"
+    "imageType": {
+      "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicyImageType",
+      "gallery"
+    }
   }
 }
 ```

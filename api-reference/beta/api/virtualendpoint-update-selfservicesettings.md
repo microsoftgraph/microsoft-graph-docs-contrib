@@ -43,9 +43,9 @@ PATCH /deviceManagement/virtualEndpoint/selfServiceSettings
 
 ## Request body
 
-In the request body, supply a JSON representation of the [cloupdPcSelfServiceSettings](../resources/cloupdpcselfservicesettings.md) object.
+In the request body, supply a JSON representation of the [cloudPcSelfServiceSettings](../resources/cloudpcselfservicesettings.md) object.
 
-The following table shows the properties that are required when you create the [cloupdPcSelfServiceSettings](../resources/cloupdpcselfservicesettings.md).
+The following table shows the properties that are required when you create the [cloudPcSelfServiceSettings](../resources/cloudpcselfservicesettings.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [cloupdPcSelfServiceSettings](../resources/cloupdpcselfservicesettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [cloudPcSelfServiceSettings](../resources/cloudpcselfservicesettings.md) object in the response body.
 
 ## Examples
 
@@ -73,19 +73,23 @@ Content-Type: application/json
 Content-length: 248
 
 {
-  "@odata.type": "#microsoft.graph.cloupdPcSelfServiceSettings",
+  "@odata.type": "#microsoft.graph.cloudPcSelfServiceSettings",
   "enabled": true,
   "assignments": [
     {
+      "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget"
       "groupId":"1e4f451f-48a2-4ef4-9e43-d471a86fca94"
     },
     {
+      "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget"
       "groupId":"2eac0d4a-8147-4428-9902-71bb11e86f33"
     },
     {
+      "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget"
       "groupId":"5f4ddccc-bd47-4066-a49d-577573b58550"
     },
     {
+      "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget"
       "groupId":"9e2278ee-581a-4304-aa73-426e77d2b57a"
     }
   ]
@@ -106,7 +110,7 @@ HTTP/1.1 200 OK
 
 Content-Type: application/json
 {
-  "@odata.type": "#microsoft.graph.cloupdPcSelfServiceSettings",
+  "@odata.type": "#microsoft.graph.cloudPcSelfServiceSettings",
   "id": "1aa74782-4782-1aa7-8247-a71a8247a71a",
   "enabled": "true",
   "assignments": [
