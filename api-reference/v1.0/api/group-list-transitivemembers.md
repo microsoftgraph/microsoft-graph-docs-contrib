@@ -181,7 +181,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group",
+  "@odata.type": "microsoft.graph.user",
   "isCollection": true
 } -->
 ```http
