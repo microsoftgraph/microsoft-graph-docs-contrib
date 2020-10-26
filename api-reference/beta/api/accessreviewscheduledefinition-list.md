@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects. A list of zero or more **accessReviewScheduleDefinition** objects are returned, including all of their nested properties, for each access review series created. This does not include associated accessReviewInstances.
+Retrieve the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects. A list of zero or more accessReviewScheduleDefinition objects are returned, including all of their nested properties, for each access review series created. This does not include associated accessReviewInstances.
 
 >[!NOTE]
 >If many **accessReviewScheduleDefinitions** are returned, to improve efficiency and avoid timeouts, retrieve the result set in pages, by including both the $top query parameter with a page size of at most 100, and the $skip=0 query parameter in the request. When a result set spans multiple pages, Microsoft Graph returns that page with an @odata.nextLink property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the @odata.nextLink URL in each response, until all the results are returned, as described in paging Microsoft Graph data in your app.
@@ -22,14 +22,15 @@ Retrieve the [accessReviewScheduleDefinition](../resources/accessreviewscheduled
 
 
 ## Permissions
-One of the following permissions is required to call this API. Delegated permissions to personal Microsoft accounts are not supported. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.Read.All or AccessReview.ReadWrite.All  |
-|Application                            | AccessReview.Read.All or AccessReview.ReadWrite.All |
+|Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Delegated (personal Microsoft account)|Not supported.|
+|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
- The signed in user must also be in a directory role that permits them to read an access review.
+ The signed-in user must also be in a directory role that permits them to read an access review.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -46,10 +47,9 @@ Do not supply a request body.
 If successful, this method returns a `200 OK` response code and an array of [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects in the response body.
 
 ## Examples
-##### Request
+### Request
 The following example shows a request to retrieve all the access review series in a tenant.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accessReviewScheduleDefinition"
@@ -57,25 +57,9 @@ The following example shows a request to retrieve all the access review series i
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions?$top=100&$skip=0
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-
 ---
 
-
-
----
-
-
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
