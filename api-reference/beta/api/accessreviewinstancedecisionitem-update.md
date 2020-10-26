@@ -1,6 +1,6 @@
 ---
-title: "Patch accessReviewInstanceDecisionItem"
-description: "In the Azure AD access reviews feature, update an existing accessReviewInstanceDecisionItem object that calling user is the reviewer of."
+title: "Update accessReviewInstanceDecisionItem"
+description: "Update an existing accessReviewInstanceDecisionItem object that calling user is the reviewer of."
 localization_priority: Normal
 author: "isabelleatmsft"
 ms.prod: "microsoft-identity-platform"
@@ -13,11 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Update access decisions, known as [accessReviewInstanceDecisionItems](../resources/accessreviewinstancedecisionitem.md), for which the user is the reviewer.
+
 >[!NOTE]
 >Any updates made to an **accessReviewInstanceDecisionItem** can only be made by calling users who are listed as reviewer for the parent [accessReviewInstance](../resources/accessreviewinstance.md).
-
-In the Azure AD [access reviews](../resources/accessreviewsv2-root.md) feature, reviewers can use this API to update access decisions, known as [accessReviewInstanceDecisionItems](../resources/accessreviewinstancedecisionitem.md), for which they are the reviewer.
-
 
 ## Permissions
 One of the following permissions is required to call this API. Delegated permissions to personal Microsoft accounts are not supported. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,12 +24,13 @@ One of the following permissions is required to call this API. Delegated permiss
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     | AccessReview.ReadWrite.All |
+|Delegated (personal Microsoft account)|Not supported.|
 |Application                            | AccessReview.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/pendingAccessReviewInstances/{instanceID}/decisions/{decisionID}
+PATCH /me/pendingAccessReviewInstances/{instance-id}/decisions/{decision-id}
 ```
 ## Request headers
 | Name         | Description |
@@ -42,18 +42,17 @@ The following table shows the properties accepted to update an `accessReviewInst
 
 | Property     | Type       | Description |
 |:-------------|:------------|:------------|
-| `decision`             |`String`                      | Access decision for the entity being reviewed. Possible values are: `Approve` `Deny` `NotReviewed` `DontKnow`. |
-| `justification`    |`String`                       | Context of the review provided to admins. |
+| decision  | String | Access decision for the entity being reviewed. Possible values are: `Approve` `Deny` `NotReviewed` `DontKnow`.  |
+|  justification | String | Context of the review provided to admins. |
 
 ## Response
 If successful, this method returns a `204, NoContent` response code and no response body.
 
-## Example
+### Request
+## Examples
 
 This is an example of approving access for a user represented by an `accessReviewInstanceDecisionItem`.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accessReviewInstanceDecisionItem"
@@ -66,19 +65,10 @@ PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-
   "justification": "I trust this person"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
