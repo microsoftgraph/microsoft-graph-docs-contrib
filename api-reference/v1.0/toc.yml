@@ -40,8 +40,8 @@ items:
         href: /graph/webhooks?context=graph/api/1.0
       - name: Tutorial
         href: /learn/modules/msgraph-changenotifications-trackchanges
-      - name: Missing Outlook notifications (preview)
-        href: /graph/webhooks-outlook-authz?context=graph/api/1.0
+      - name: Missing change notifications
+        href: /graph/webhooks-lifecycle
       - name: Notifications with resource data
         href: /graph/webhooks-with-resource-data?context=graph/api/1.0
     - name: Change tracking
@@ -582,7 +582,7 @@ items:
         - name: Create rejected sender
           href: api/group-post-rejectedsenders.md
         - name: Remove rejected senders
-          href: api/group-delete-rejectedsenders.md
+          href: api/group-delete-rejectedsenders.md  
       - name: Conversation thread
         href: resources/conversationthread.md
         items:
@@ -4922,7 +4922,33 @@ items:
         - name: Reply to message
           href: api/channel-post-messagereply.md
         - name: Update message
-          href: api/chatmessage-update.md  
+          href: api/chatmessage-update.md 
+      - name: Conversation member
+        href: resources/conversationmember.md
+        items:
+        - name: List members
+          href: api/conversationmember-list.md
+        - name: Get member
+          href: api/conversationmember-get.md
+        - name: Add member
+          href: api/conversationmember-add.md
+        - name: Update member
+          href: api/conversationmember-update.md
+        - name: Delete member
+          href: api/conversationmember-delete.md
+      - name: Azure AD user conversation member
+        href: resources/aaduserconversationmember.md
+        items:
+        - name: List members
+          href: api/conversationmember-list.md
+        - name: Get member
+          href: api/conversationmember-get.md
+        - name: Add member
+          href: api/conversationmember-add.md
+        - name: Update member
+          href: api/conversationmember-update.md
+        - name: Delete member
+          href: api/conversationmember-delete.md         
       - name: App catalog
         items:
         - name: App in catalog

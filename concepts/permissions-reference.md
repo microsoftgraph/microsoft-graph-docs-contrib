@@ -601,8 +601,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _Directory.Read.All_ |Read directory data | Allows the app to read data in your organization's directory, such as users, groups and apps. **Note**: Users may consent to applications that require this permission if the application is registered in their own organization’s tenant.| Yes | No |
 | _Directory.ReadWrite.All_ |Read and write directory data | Allows the app to read and write data in your organization's directory, such as users, and groups. It does not allow the app to delete users or groups, or reset user passwords. | Yes | No |
 | _Directory.AccessAsUser.All_ |Access directory as the signed-in user  | Allows the app to have the same access to information in the directory as the signed-in user. | Yes | No |
-| _PrivilegedAccess.ReadWrite.AzureAD_ |Read and write Privileged Identity Management data for Directory  | Allows the app to have read and write access to Privileged Identity Management APIs for Azure AD. | Yes | No |
-| _PrivilegedAccess.ReadWrite.AzureResources_ |Read and write Privileged Identity Management data for Azure Resources | Allows the app to have read and write access to Privileged Identity Management APIs for Azure resources. | Yes | No |
 
 <br/>
 
@@ -919,6 +917,43 @@ The following usages are valid for both delegated and application permissions:
 * Read all risky users and properties in the tenant (`GET /beta/riskyUsers`)
 * Read all risky users whose aggregate risk level is Medium (`GET /beta/riskyUsers?$filter=risk/riskLevelAggregated eq microsoft.graph.riskLevel'medium'`)
 * Read the risk information for a specific user (`GET /beta/riskyUsers/$filter=id eq ‘{userObjectId}’`)
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
+## Identity user flow permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _IdentityUserFlow.Read.All_ |   Read all identity user flows in a tenant  | Allows the app to read your organization's user flows. | Yes | No |
+| _IdentityUserFlow.ReadWrite.All_ |   Read and write all identity user flows in a tenant.    | Allows teh app to read or write your organization's user flows. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _IdentityUserFlow.Read.All_ |   Read all identity user flows in a tenant  | Allows the app to read your organization's user flows. | Yes | No |
+| _IdentityUserFlow.ReadWrite.All_ |   Read and write all identity user flows in a tenant.    | Allows teh app to read or write your organization's user flows. | Yes | No |
+
+### Remarks
+
+_IdentityUserFlow.Read.All_ and _IdentityUserFlow.ReadWrite.ALL_ is valid only for work or school accounts. For an app with delegated permissions to read or write user flows, the signed-in user must be a member of one of the following administrator roles: Global Administrator, External Identities User Flow Administrator. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
+
+### Example usage
+
+#### Delegated and Application
+
+The following usages are valid for both delegated and application permissions:
+
+* _IdentityUserFlow.Read.All_: Read all user flows in an Azure AD B2C tenant (`GET beta/identity/b2cUserFlows`)
+* _IdentityUserFlow.Read.All_: Read all user flows in an Azure Active Directory (Azure AD) tenant (`GET beta/identity/b2xUserFlows`)
+* _IdentityUserFlow.ReadWrite.All_: Create a new user flow in an Azure AD B2C tenant (`POST beta/identity/b2cUserFlows`)
+* _IdentityUserFlow.ReadWrite.All_: Create a new user flow in an Azure Active Directory (Azure AD) tenant (`POST beta/identity/b2xUserflows`)
+* _IdentitytUserFlow.ReadWrite.All_: Add an identity provider to an Azure AD B2C user flow (`PATCH beta/identity/b2cUserFlows/{id}/identityProviders/$ref`)
+* _IdentityUserFlow.ReadWrite.All_: Remove an identity provider from an Azure AD B2C user flow (`DELETE beta/identity/b2cUserFlows/{id}/identityProviders/{id}`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
@@ -1334,6 +1369,26 @@ The People.Read.All permission is only valid for work and school accounts.
 * _People.Read.All_: Read a list of relevant people to another user in the same organization (`GET /users('{id})/people`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
+## Privileged access permissions
+
+#### Delegated permissions
+
+| Permission | Display String | Description | Admin Consent Required | Microsoft Account supported |
+|:---------- |:-------------- |:----------- |:---------------------- |:----------------- |
+| _PrivilegedAccess.ReadWrite.AzureAD_ |Read and write Privileged Identity Management data for Directory  | Allows the app to have read and write access to Privileged Identity Management APIs for Azure AD. | Yes | No |
+| _PrivilegedAccess.ReadWrite.AzureADGroups_ |Read and write Privileged Identity Management data for privileged access groups | Allows the app to have read and write access to Privileged Identity Management APIs for groups. | Yes | No |
+| _PrivilegedAccess.ReadWrite.AzureResources_ |Read and write Privileged Identity Management data for Azure Resources | Allows the app to have read and write access to Privileged Identity Management APIs for Azure resources. | Yes | No |
+
+#### Application permissions
+
+| Permission | Display String | Description | Admin Consent Required |
+|:---------- |:-------------- |:----------- |:---------------------- |
+| _PrivilegedAccess.Read.AzureAD_ |Read Privileged Identity Management data for Directory  | Allows the app to have read access to Privileged Identity Management APIs for Azure AD. | Yes |
+| _PrivilegedAccess.Read.AzureADGroups_ |Read Privileged Identity Management data for privileged access groups | Allows the app to have read access to Privileged Identity Management APIs for groups. | Yes |
+| _PrivilegedAccess.Read.AzureADResources_ |Read Privileged Identity Management data for Azure resources | Allows the app to have read access to Privileged Identity Management APIs for Azure AD resources. | Yes |
 
 ---
 

@@ -23,6 +23,8 @@ Represents a printer that is intended to be discoverable by users and printing a
 | [Get](../api/printershare-get.md) | [printerShare](printershare.md) | Read properties and relationships of a **printerShare** object. |
 | [Update](../api/printershare-update.md) | [printerShare](printershare.md) | Update a **printerShare** object. |
 | [Delete](../api/printershare-delete.md) | None | Unshare a printer. |
+| [List jobs](../api/printershare-list-jobs.md) | [printJob](printjob.md) collection | Get a list of print jobs that are queued for processing by the printerShare. |
+| [Create job](../api/printershare-post-jobs.md) | [printJob](printjob.md) | Create a new print job for the printerShare. To start printing the job, use [start](../api/printjob-start.md). |
 | [List allowedUsers](../api/printershare-list-allowedusers.md) | [printUserIdentity](printuseridentity.md) collection | Retrieve a list of users who have been granted access to submit print jobs to the associated printer share. |
 | [Add allowedUser](../api/printershare-post-allowedusers.md) | None | Grant the specified user access to submit print jobs to the associated printer share. |
 | [Remove allowedUser](../api/printershare-delete-alloweduser.md) | None | Revoke printer share access from the specified user. |
