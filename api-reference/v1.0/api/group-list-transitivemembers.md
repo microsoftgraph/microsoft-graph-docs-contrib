@@ -109,6 +109,7 @@ Content-type: application/json
 {
   "value": [
     {
+      "@odata.type": "#microsoft.graph.user",
       "id": "11111111-2222-3333-4444-555555555555",
       "mail": "group1@contoso.com",
       "mailEnabled": true,
