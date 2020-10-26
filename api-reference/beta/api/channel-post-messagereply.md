@@ -140,7 +140,7 @@ Content-length: 160
 
 ### Example: Import messages
 
-> **Note**:  There are no special permission scopes in this scenario since the request is part of chatMessage; scopes for chatMessage apply here as well.
+> **Note**: No special permission scopes are required for this scenario because the request is part of **chatMessage**; scopes for **chatMessage** apply here as well.
 
 #### Request
 <!-- { "blockType": "ignored" } -->
@@ -148,7 +148,6 @@ The following example show how to import back-in-time messages using the `create
 
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies
-{
 
 {
    "replyToId":null,
