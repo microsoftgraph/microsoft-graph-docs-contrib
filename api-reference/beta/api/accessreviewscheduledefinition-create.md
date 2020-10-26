@@ -1,6 +1,6 @@
 ---
 title: "Create accessReviewScheduleDefinition"
-description: "In the Azure AD access reviews feature, create a new accessReviewScheduleDefinition object."
+description: "Create a new accessReviewScheduleDefinition object."
 localization_priority: Normal
 author: "isabelleatmsft"
 ms.prod: "microsoft-identity-platform"
@@ -13,18 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviewsv2-root.md) feature, create a new [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
+Create a new [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
 ## Permissions
 
-One of the following permissions is required to call this API. Delegated permissions to personal Microsoft accounts are not supported. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     | AccessReview.ReadWrite.All  |
+|Delegated (personal Microsoft account)|Not supported.|
 |Application                            | AccessReview.ReadWrite.All |
 
-The signed in user must also be in a directory role that permits them to create an access review.  For more details, see the role and permission requirements for [access reviews](../resources/accessreviewsv2-root.md).
+The signed-in user must also be in a directory role that permits them to create an access review.  For more details, see the role and permission requirements for [access reviews](../resources/accessreviewsv2-root.md).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -41,21 +42,21 @@ In the request body, supply a JSON representation of an [accessReview](../resour
 
 The following table shows the properties accepted to create an accessReview.
 
-| Property     | Type       | Required | Description |
-|:-------------|:------------|:-----|:------------|
-| `displayName`             |`String`                     | Yes       | Name of access review series.|
-| `descriptionForAdmins`    |`string`                     | Yes        | Context of the review provided to admins. |
-| `descriptionForReviewers` |`string`                     | Yes        | Context of the review provided to reviewers. |
-| `scope`                   |`microsoft.graph.accessReviewScope` | Yes | Defines scope of users reviewed in a group. See  [accessReviewScope](../resources/accessreviewscheduledefinition.md). | 
-| `instanceEnumerationScope`|`microsoft.graph.accessReviewScope` | No | In the case of an all groups review, this determines the scope of which groups will be reviewed. See [accessReviewScope](../resources/accessreviewscheduledefinition.md). | 
-| `settings`                |`microsoft.graph.accessReviewScheduleSettings`| No | The settings for an access review series. Recurrence is determined here. See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
-| `reviewers`               |`Collection(microsoft.graph.accessReviewReviewerScope)`| No | Defines who the reviewers are. If none are specified, the review will be a self-review (users reviewed review their own access). See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). |
+| Property | Type | Description |
+|:-------------|:------------|:------------|
+| displayName | String | Name of access review series. Required.|
+| descriptionForAdmins | string | Context of the review provided to admins. Required. |
+  descriptionForReviewers | string | Context of the review provided to reviewers. Required. |
+| scope | [accessReviewScope](../resources/accessreviewscope.md) | Defines the scope of users reviewed in a group. See  [accessReviewScope](../resources/accessreviewscheduledefinition.md). Required.| 
+| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | In the case of an all groups review, this determines the scope of which groups will be reviewed. See [accessReviewScope](../resources/accessreviewscheduledefinition.md). | 
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| No | The settings for an access review series. Recurrence is determined here. See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
+| reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Defines who the reviewers are. If none are specified, the review is a self-review (users reviewed review their own access). See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). |
 
 
 ## Response
 If successful, this method returns a `201, Created` response code and an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object in the response body.
 
-## Example 
+## Examples
 
 This is an example of creating an access review series with a specific user as the reviewer. The review reviews all members of a specific group. It recurs weekly.
 
