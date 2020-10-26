@@ -1,6 +1,6 @@
 ---
 title: "Update accessReviewScheduleDefinition"
-description: "In the Azure AD access reviews feature, update an existing accessReviewScheduleDefinition object to change one or more of its properties."
+description: "Update an existing accessReviewScheduleDefinition object to change one or more of its properties."
 localization_priority: Normal
 author: "isabelleatmsft"
 ms.prod: "microsoft-identity-platform"
@@ -13,25 +13,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Update an existing [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object to change one or more of its properties.
+
 >[!NOTE]
->Any updates made to an **accessReviewScheduleDefinition** will only apply to future instances. Currently running instances cannot be updated.
->Additionally, this API is not intended to update properties, including decisions, on the **accessReviewInstance** level. See [accessReviewInstance](../resources/accessreviewinstance.md) for more information on instances.
-
-In the Azure AD [access reviews](../resources/accessreviewsv2-root.md) feature, update an existing [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object to change one or more of its properties.
-
+>Any updates made to an accessReviewScheduleDefinition only apply to future instances. Currently running instances cannot be updated.
+>Additionally, this API is not intended to update properties, including decisions, on the accessReviewInstance level. See [accessReviewInstance](../resources/accessreviewinstance.md) for more information on instances.
 
 ## Permissions
-One of the following permissions is required to call this API. Delegated permissions to personal Microsoft accounts are not supported. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     | AccessReview.ReadWrite.All |
+|Delegated (personal Microsoft account)|Not supported.|
 |Application                            | AccessReview.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT /identityGovernance/accessReviews/definitions/{reviewID}
+PUT /identityGovernance/accessReviews/definitions/{review-id}
 ```
 ## Request headers
 | Name         | Description |
