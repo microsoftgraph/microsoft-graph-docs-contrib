@@ -1,5 +1,5 @@
 ---
-title: "Complete migration for a channel"
+title: "channel: completeMigration"
 description: "End the message migration mode on the channel resource."
 localization_priority: Normal
 author: "laujan"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Complete migration for a channel
+# channel: completeMigration
 
 Namespace: microsoft.graph
 
@@ -42,7 +42,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 
@@ -51,7 +51,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 The following is an example of the request.
 <!-- markdownlint-disable MD025 -->
 <!-- markdownlint-disable MD022 -->
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "completeMigration_channel"
@@ -76,7 +76,7 @@ HTTP/1.1 204 No Content
 
 ## Tips and additional information
 
-* Once the `completeMigration` request is made, you cannot import further messages into the team.
+* When the `completeMigration` request is made, you cannot import further messages into the team.
 
 * Team members can only be added to the new team after the `completeMigration` request has returned a successful response.
 
