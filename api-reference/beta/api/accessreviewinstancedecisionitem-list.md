@@ -26,6 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Delegated (personal Microsoft account)|Not supported.|
 |Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
  The signed-in user must also be in a directory role that permits them to read an access review.
@@ -45,10 +46,9 @@ Do not supply a request body.
 If successful, this method returns a `200 OK` response code and an array of [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) objects in the response body.
 
 ## Examples
-##### Request
+### Request
 The following example shows a request to retrieve all the decisions on an instance of an access review.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accessReviewInstanceDecisionItem"
@@ -57,24 +57,9 @@ The following example shows a request to retrieve all the decisions on an instan
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-444404f3baa6/instances/14444cdb-6a18-4c08-ba2c-48c02f0a0138/decisions?$top=100&$skip=0
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-
 ---
 
-
-
----
-
-
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
