@@ -40,8 +40,8 @@ items:
         href: /graph/webhooks?context=graph/api/beta
       - name: Tutorial
         href: /learn/modules/msgraph-changenotifications-trackchanges
-      - name: Missing Outlook notifications (preview)
-        href: /graph/webhooks-outlook-authz?context=graph/api/beta
+      - name: Missing change notifications
+        href: /graph/webhooks-lifecycle
       - name: Notifications with resource data
         href: /graph/webhooks-with-resource-data?context=graph/api/beta
       - name: Get notifications delivered different ways (preview)
@@ -1594,21 +1594,23 @@ items:
         - name: Print document
           href: resources/printdocument.md
           items:
-          - name: Upload data
-            href: api/printdocument-uploaddata.md
+          - name: Create upload session
+            href: api/printdocument-createuploadsession.md
           - name: Download binary file
             href: api/printdocument-get-file.md
         - name: Print job
           href: resources/printjob.md
           items:
-          - name: Create
-            href: api/printer-post-jobs.md
+          - name: Create job for a printer
+            href: api/printer-post-jobs.md            
+          - name: Create job for a printer share
+            href: api/printershare-post-jobs.md
           - name: Get
             href: api/printjob-get.md
           - name: Start
-            href: api/printjob-startprintjob.md
+            href: api/printjob-start.md
           - name: Cancel
-            href: api/printjob-cancelprintjob.md
+            href: api/printjob-cancel.md
         - name: Print operation
           href: resources/printoperation.md
           items:
@@ -1627,8 +1629,6 @@ items:
             href: api/printer-update.md
           - name: Delete
             href: api/printer-delete.md
-          - name: Get capabilities
-            href: api/printer-getcapabilities.md
           - name: Get task trigger
             href: api/printtasktrigger-get.md
           - name: List connectors
@@ -1655,8 +1655,8 @@ items:
             href: api/printer-delete-alloweduser.md
           - name: Delete task trigger
             href: api/printer-delete-tasktrigger.md
-          - name: Reset defaults
-            href: api/printer-resetdefaults.md
+          - name: Restore factory defaults
+            href: api/printer-restorefactorydefaults.md
         - name: Printer share
           href: resources/printershare.md
           items:
@@ -1770,6 +1770,8 @@ items:
               href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
             - name: createToken action
               href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
+          - name: Android device owner enrollment token type
+            href: resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md
           - name: Android enrollment company code
             href: resources/intune-androidforwork-androidenrollmentcompanycode.md
           - name: Android for Work app
@@ -5236,8 +5238,8 @@ items:
             href: resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md
           - name: macOS apple event receiver
             href: resources/intune-deviceconfig-macosappleeventreceiver.md
-          - name: macOS associated domains key/value pair
-            href: resources/intune-deviceconfig-macosassociateddomainskeyvaluepair.md
+          - name: macOS associated domains item
+            href: resources/intune-deviceconfig-macosassociateddomainsitem.md
           - name: macOS Azure ad single sign on extension
             href: resources/intune-deviceconfig-macosazureadsinglesignonextension.md
           - name: macOS certificate profile base
@@ -5420,8 +5422,68 @@ items:
               href: api/intune-deviceconfig-macosscepcertificateprofile-update.md
           - name: macOS single sign on extension
             href: resources/intune-deviceconfig-macossinglesignonextension.md
+          - name: macOS software update account summary
+            href: resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-list.md
+            - name: Get
+              href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-get.md
+            - name: Create
+              href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-update.md
+          - name: macOS software update behavior
+            href: resources/intune-deviceconfig-macossoftwareupdatebehavior.md
+          - name: macOS software update category
+            href: resources/intune-deviceconfig-macossoftwareupdatecategory.md
+          - name: macOS software update category summary
+            href: resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-list.md
+            - name: Get
+              href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-get.md
+            - name: Create
+              href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-update.md
+          - name: macOS software update configuration
+            href: resources/intune-deviceconfig-macossoftwareupdateconfiguration.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-macossoftwareupdateconfiguration-list.md
+            - name: Get
+              href: api/intune-deviceconfig-macossoftwareupdateconfiguration-get.md
+            - name: Create
+              href: api/intune-deviceconfig-macossoftwareupdateconfiguration-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-macossoftwareupdateconfiguration-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-macossoftwareupdateconfiguration-update.md
           - name: macOS software update delay policy
             href: resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md
+          - name: macOS software update schedule type
+            href: resources/intune-deviceconfig-macossoftwareupdatescheduletype.md
+          - name: macOS software update state
+            href: resources/intune-deviceconfig-macossoftwareupdatestate.md
+          - name: macOS software update state summary
+            href: resources/intune-deviceconfig-macossoftwareupdatestatesummary.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-macossoftwareupdatestatesummary-list.md
+            - name: Get
+              href: api/intune-deviceconfig-macossoftwareupdatestatesummary-get.md
+            - name: Create
+              href: api/intune-deviceconfig-macossoftwareupdatestatesummary-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-macossoftwareupdatestatesummary-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-macossoftwareupdatestatesummary-update.md
           - name: macOS system extension
             href: resources/intune-deviceconfig-macossystemextension.md
           - name: macOS system extension type
@@ -6699,6 +6761,23 @@ items:
               href: api/intune-devices-devicecompliancescriptrunsummary-get.md
             - name: Update
               href: api/intune-devices-devicecompliancescriptrunsummary-update.md
+          - name: Device custom attribute shell script
+            href: resources/intune-devices-devicecustomattributeshellscript.md
+            items:
+            - name: List
+              href: api/intune-devices-devicecustomattributeshellscript-list.md
+            - name: Get
+              href: api/intune-devices-devicecustomattributeshellscript-get.md
+            - name: Create
+              href: api/intune-devices-devicecustomattributeshellscript-create.md
+            - name: Delete
+              href: api/intune-devices-devicecustomattributeshellscript-delete.md
+            - name: Update
+              href: api/intune-devices-devicecustomattributeshellscript-update.md
+            - name: assign action
+              href: api/intune-devices-devicecustomattributeshellscript-assign.md
+          - name: Device custom attribute value type
+            href: resources/intune-devices-devicecustomattributevaluetype.md
           - name: Device enrollment failure reason
             href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
           - name: Device exchange access state summary
@@ -7646,6 +7725,8 @@ items:
               href: api/intune-deviceintent-securitybaselinecategorystatesummary-update.md
           - name: Security baseline compliance state
             href: resources/intune-deviceintent-securitybaselinecompliancestate.md
+          - name: Security baseline contributing policy
+            href: resources/intune-deviceintent-securitybaselinecontributingpolicy.md
           - name: Security baseline device state
             href: resources/intune-deviceintent-securitybaselinedevicestate.md
             items:
@@ -7659,6 +7740,8 @@ items:
               href: api/intune-deviceintent-securitybaselinedevicestate-delete.md
             - name: Update
               href: api/intune-deviceintent-securitybaselinedevicestate-update.md
+          - name: Security baseline policy source type
+            href: resources/intune-deviceintent-securitybaselinepolicysourcetype.md
           - name: Security baseline state summary
             href: resources/intune-deviceintent-securitybaselinestatesummary.md
             items:
@@ -9086,7 +9169,7 @@ items:
             - name: Delete
               href: api/intune-tem-telecomexpensemanagementpartner-delete.md
             - name: Update
-              href: api/intune-tem-telecomexpensemanagementpartner-update.md
+              href: api/intune-tem-telecomexpensemanagementpartner-update.md  
     - name: Education
       items:
       - name: Overview
@@ -9411,6 +9494,8 @@ items:
           href: api/shares-get.md
         - name: Grant access to sharing link
           href: api/permission-grant.md
+        - name: Revoke grants on sharing link
+          href: api/permission-revokegrants.md
         - name: List permissions
           href: api/driveitem-list-permissions.md
         - name: Add permissions
@@ -9950,52 +10035,35 @@ items:
             - name: Update
               href: api/authenticationflowspolicy-update.md
         - name: Authentication methods
+          href: resources/authenticationmethods-overview.md
           items:
-          - name: B2B Authentication methods
-            href: resources/authenticationmethods-overview.md
-            item:
-            - name: Authentication method
-              href: resources/authenticationmethod.md
-              items:
-              - name: List
-                href: api/authentication-list-methods.md
-              - name: Get
-                href: api/authenticationmethod-get.md
-            - name: Password
-              href: resources/passwordauthenticationmethod.md
-              items:
-              - name: List
-                href: api/authentication-list-passwordmethods.md
-              - name: Get
-                href: api/passwordauthenticationmethod-get.md
-              - name: Reset
-                href: api/passwordauthenticationmethod-resetpassword.md
-              - name: Get operation status
-                href: api/authenticationoperation-get.md
-            - name: Phone
-              href: resources/phoneauthenticationmethod.md
-              items:
-              - name: List
-                href: api/authentication-list-phonemethods.md
-              - name: Get
-                href: api/phoneauthenticationmethod-get.md
-              - name: Update
-                href: api/phoneauthenticationmethod-update.md
-              - name: Delete
-                href: api/phoneauthenticationmethod-delete.md
-              - name: Add
-                href: api/authentication-post-phonemethods.md
-              - name: Enable SMS sign-in
-                href: api/phoneauthenticationmethod-enablesmssignin.md
-              - name: Disable SMS sign-in
-                href: api/phoneauthenticationmethod-disablesmssignin.md
-          - name: B2C Authentication methods
-            href: resources/b2cauthenticationmethodspolicy.md
+          - name: FIDO2 security keys
+            href: resources/fido2authenticationmethod.md
             items:
+            - name: List
+              href: api/fido2authenticationmethod-list.md
             - name: Get
-              href: api/b2cauthenticationmethodspolicy-get.md
+              href: api/fido2authenticationmethod-get.md
+            - name: Delete
+              href: api/fido2authenticationmethod-delete.md
+          - name: Microsoft Authenticator Passwordless Phone Sign-In
+            href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
+            items:
+            - name: List
+              href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-list.md
+            - name: Get
+              href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
+            - name: Delete
+              href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
+          - name: Phone
+            href: resources/phoneauthenticationmethod.md
+            items:
+            - name: List
+              href: api/authentication-list-phonemethods.md
+            - name: Get
+              href: api/phoneauthenticationmethod-get.md
             - name: Update
-              href: api/b2cauthenticationmethodspolicy-update.md
+              href: api/phoneauthenticationmethod-update.md
             - name: Delete
               href: api/phoneauthenticationmethod-delete.md
             - name: Add
@@ -10004,11 +10072,35 @@ items:
               href: api/phoneauthenticationmethod-enablesmssignin.md
             - name: Disable SMS sign-in
               href: api/phoneauthenticationmethod-disablesmssignin.md
+          - name: Email
+            href: resources/emailauthenticationmethod.md
+            items:
+            - name: List
+              href: api/emailauthenticationmethod-list.md
+            - name: Get
+              href: api/emailauthenticationmethod-get.md
+            - name: Update
+              href: api/emailauthenticationmethod-update.md
+            - name: Delete
+              href: api/emailauthenticationmethod-delete.md
+            - name: Add
+              href: api/emailauthenticationmethod-post.md
+          - name: Password
+            href: resources/passwordauthenticationmethod.md
+            items:
+            - name: List
+              href: api/authentication-list-passwordmethods.md
+            - name: Get
+              href: api/passwordauthenticationmethod-get.md
+            - name: Reset
+              href: api/passwordauthenticationmethod-resetpassword.md
+            - name: Get operation status
+              href: api/authenticationoperation-get.md
         - name: Authentication method policy
           items:
           - name: Overview
             href: resources/authenticationmethodspolicies-overview.md
-          - name: FIDO2 Security Key
+          - name: FIDO2 policy
             href: resources/fido2authenticationmethodconfiguration.md
             items:
             - name: Get
@@ -10017,7 +10109,7 @@ items:
               href: api/fido2authenticationmethodconfiguration-update.md
             - name: Delete
               href: api/fido2authenticationmethodconfiguration-delete.md
-          - name: Microsoft Authenticator Passwordless Phone Sign-in
+          - name: Microsoft Authenticator Passwordless Phone Sign-in policy
             href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
             items:
             - name: Get
@@ -10026,6 +10118,13 @@ items:
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
             - name: Delete
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
+        - name: B2C authentication methods policy
+          href: resources/b2cauthenticationmethodspolicy.md
+          items:
+          - name: Get
+            href: api/b2cauthenticationmethodspolicy-get.md
+          - name: Update
+            href: api/b2cauthenticationmethodspolicy-update.md
         - name: Certificate-based auth configuration
           href: resources/certificatebasedauthconfiguration.md
           items:
@@ -10404,6 +10503,20 @@ items:
                href: api/b2xidentityuserflow-post-identityproviders.md
              - name: Remove identity provider
                href: api/b2xidentityuserflow-delete-identityproviders.md
+          - name: User flow attributes
+            items:
+             - name: User flow attribute
+               href: resources/identityuserflowattribute.md
+             - name: List
+               href: api/identityuserflowattribute-list.md
+             - name: Create
+               href: api/identityuserflowattribute-post.md
+             - name: Get
+               href: api/identityuserflowattribute-get.md
+             - name: Update
+               href: api/identityuserflowattribute-update.md
+             - name: Delete
+               href: api/identityuserflowattribute-delete.md
       - name: Governance
         items:
         - name: Access reviews
@@ -12180,7 +12293,7 @@ items:
         href: resources/teams-api-overview.md
       - name: Team
         href: resources/team.md
-        items:
+        items:       
         - name: Create team
           href: api/team-post.md
         - name: Create team from group
@@ -12331,6 +12444,32 @@ items:
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
+      - name: Conversation member
+        href: resources/conversationmember.md
+        items:
+        - name: List members
+          href: api/conversationmember-list.md
+        - name: Get member
+          href: api/conversationmember-get.md
+        - name: Add member
+          href: api/conversationmember-add.md
+        - name: Update member
+          href: api/conversationmember-update.md
+        - name: Delete member
+          href: api/conversationmember-delete.md
+      - name: Azure AD user conversation member
+        href: resources/aaduserconversationmember.md
+        items:
+        - name: List members
+          href: api/conversationmember-list.md
+        - name: Get member
+          href: api/conversationmember-get.md
+        - name: Add member
+          href: api/conversationmember-add.md
+        - name: Update member
+          href: api/conversationmember-update.md
+        - name: Delete member
+          href: api/conversationmember-delete.md
       - name: App catalog
         items:
         - name: App in catalog
