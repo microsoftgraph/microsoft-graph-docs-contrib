@@ -79,7 +79,6 @@ Here is a JSON representation of the resource
   "name": "string",
   "size": 1024
 }
-
 ```
 
 
