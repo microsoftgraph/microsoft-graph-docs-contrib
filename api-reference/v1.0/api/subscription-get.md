@@ -140,6 +140,7 @@ Content-length: 252
   "changeType":"created,updated",
   "clientState":"secretClientValue",
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
+  "lifecycleNotificationUrl":"https://webhook.azurewebsites.net/api/send/lifecycleNotifications",
   "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
   "creatorId": "string",
   "latestSupportedTlsVersion": "v1_2",
