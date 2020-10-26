@@ -1,9 +1,9 @@
 ---
 title: "Create cloudPcOnPremisesConnection"
 description: "Re-run the health checks of an on premises connection."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "jiajyang"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft_cloudpc"
 doc_type: apiPageType
 ---
 
@@ -54,7 +54,7 @@ If successful, this method returns a `204 No Content` response code.
 
 <!-- {
   "blockType": "request",
-  "name": "create_cloudpconpremisesconnection_from_"
+  "name": "cloudpconpremisesconnection_runhealthcheck"
 }
 -->
 
@@ -67,8 +67,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremise
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.cloudPcOnPremisesConnection"
+  "truncated": true
 }
 -->
 

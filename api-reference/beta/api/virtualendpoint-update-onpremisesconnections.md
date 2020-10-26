@@ -1,9 +1,9 @@
 ---
 title: "Update onPremisesConnections"
 description: "Update the properties of an onPremisesConnections object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "jiajyang"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft_cloudpc"
 doc_type: apiPageType
 ---
 
@@ -95,9 +95,11 @@ Content-length: 556
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcOnPremisesConnection"
 }
 -->
 

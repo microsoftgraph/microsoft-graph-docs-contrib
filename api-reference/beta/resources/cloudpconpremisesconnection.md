@@ -1,9 +1,9 @@
 ---
 title: "cloudPcOnPremisesConnection resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Entity that represents a defined collection of Azure resource information that can be used to establish an on-premises connection"
+author: "jiajyang"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft_cloudpc"
 doc_type: resourcePageType
 ---
 
@@ -54,7 +54,8 @@ The following is a JSON representation of the resource.
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.cloudPcOnPremisesConnection",
   "baseType": "microsoft.graph.entity",
-  "openType": false
+  "openType": false,
+  "optionalProperties": "healthCheckStatusDetails"
 }
 -->
 

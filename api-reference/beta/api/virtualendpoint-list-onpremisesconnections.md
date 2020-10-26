@@ -1,9 +1,9 @@
 ---
 title: "List onPremisesConnections"
 description: "Get the cloudPcOnPremisesConnection resources from the onPremisesConnections navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "jiajyang"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft_cloudpc"
 doc_type: apiPageType
 ---
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 <!-- {
   "blockType": "request",
-  "name": "get_cloudpconpremisesconnection"
+  "name": "list_cloudpconpremisesconnections"
 }
 -->
 

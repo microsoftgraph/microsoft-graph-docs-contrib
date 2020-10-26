@@ -1,9 +1,9 @@
 ---
 title: "cloudPcManagementGroupAssignmentTarget resource type"
 description: "Complex type that represents the assignment target group. Base type: CloudPcManagementAssignmentTarget"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "jiajyang"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft_cloudpc"
 doc_type: resourcePageType
 ---
 
@@ -30,6 +30,7 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.cloudPcManagementAssignmentTarget"
   "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget"
 }
 -->

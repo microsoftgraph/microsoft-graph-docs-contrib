@@ -1,9 +1,9 @@
 ---
 title: "cloudPcProvisioningPolicy resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Entity that represents a defined collection of provisioning policies properties"
+author: "jiajyang"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft_cloudpc"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+Entity that represents a defined collection of provisioning policies properties
 
 ## Methods
 
@@ -49,7 +49,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.cloudPcProvisioningPolicy",
-  "baseType": "",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->

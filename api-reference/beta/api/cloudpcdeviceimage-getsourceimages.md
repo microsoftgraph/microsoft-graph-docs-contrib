@@ -1,9 +1,9 @@
 ---
 title: "cloudPcDeviceImage: getSourceImages"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Get all managed image resources from the customer’s Azure subscriptions"
+author: "jiajyang"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft_cloudpc"
 doc_type: apiPageType
 ---
 
@@ -68,6 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "cloudpcdeviceimage_getsourceimages_response"
   "@odata.type": "Collection(microsoft.graph.cloudPcSourceDeviceImage)"
 }
 -->

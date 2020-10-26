@@ -1,9 +1,9 @@
 ---
 title: "cloudPC resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Cloud PC devices."
+author: "jiajyang"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft_cloudpc"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Cloud PC management is a feature that allows admins to get/list cloud PCs.
+Cloud PC devices.
 
 ## Methods
 
@@ -47,7 +47,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.cloudPC",
-  "baseType": "",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->

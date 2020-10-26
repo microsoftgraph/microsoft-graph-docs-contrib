@@ -1,10 +1,10 @@
 ---
-title: "Enum values"
-description: "Microsoft Graph enumeration values"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+title: "cloudPcOnPremisesConnectionHealthCheckErrorType enum type"
+description: "cloudPcOnPremisesConnection health check error values"
+author: "jiajyang"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: enumTypes
+ms.prod: "microsoft_cloudpc"
+doc_type: enumPageType
 ---
 
 ### cloudPcOnPremisesConnectionHealthCheckErrorType values

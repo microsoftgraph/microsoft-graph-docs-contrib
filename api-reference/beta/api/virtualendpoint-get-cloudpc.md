@@ -1,9 +1,9 @@
 ---
 title: "Get cloudPCs"
 description: "Read the properties and relationships of a cloudPC object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "jiajyang"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft_cloudpc"
 doc_type: apiPageType
 ---
 
@@ -72,6 +72,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "get_cloudpc"
   "@odata.type": "microsoft.graph.cloudPC"
 }
 -->

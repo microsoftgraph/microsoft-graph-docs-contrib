@@ -1,13 +1,13 @@
 ---
-title: "cloudPcDeviceImage resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+title: "cloudPcStatus enum type"
+description: "Cloud PC status types"
+author: "jiajyang"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: resourcePageType
+ms.prod: "microsoft_cloudpc"
+doc_type: enumPageType
 ---
 
-### cloudPcStatus values
+### cloudPcStatus enum type
 
 Namespace: microsoft.graph
 

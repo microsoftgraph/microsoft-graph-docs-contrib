@@ -1,9 +1,9 @@
 ---
 title: "Update provisioningPolicies"
 description: "Update the properties of a provisioningPolicies object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "jiajyang"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft_cloudpc"
 doc_type: apiPageType
 ---
 
@@ -83,10 +83,7 @@ Content-length: 245
   "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701b553",
   "imageId": "53a93bfd-2006-4b76-8f30-5c0f60988105",
   "imageDisplayName": "Custom image name",
-  "imageType": {
-    "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicyImageType",
-    "customer"
-  }
+  "imageType": "Custom"
 }
 ```
 
@@ -95,7 +92,8 @@ Content-length: 245
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcProvisioningPolicy"
 }
 -->
 

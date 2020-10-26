@@ -1,9 +1,9 @@
 ---
 title: "Add assignments"
 description: "Add assignments by posting to the assignments collection."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "jiajyang"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft_cloudpc"
 doc_type: apiPageType
 ---
 
@@ -62,7 +62,8 @@ If successful, this method returns a `204 No Content` response code and a [cloud
 
 <!-- {
   "blockType": "request",
-  "name": "create_cloudpcprovisioningpolicyassignment_from_"
+  "name": "assign_cloudpcprovisioningpolicy",
+  "@odata.type": "microsoft.graph.cloudPcProvisioningPolicyAssignment",
 }
 -->
 
