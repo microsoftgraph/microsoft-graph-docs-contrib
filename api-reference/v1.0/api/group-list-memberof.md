@@ -34,7 +34,7 @@ GET /groups/{id}/memberOf
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the groups the group is a member of. You can use `$search` on the **displayName** property. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the groups the group is a member of. You can use `$search` on the **displayName** and **description** properties. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
 
 ## Request headers
 
@@ -163,7 +163,13 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
+<<<<<<< HEAD
   "truncated": true
+=======
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+>>>>>>> 2347459ef2c8553401e4240e4061f8e4092daf66
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -196,7 +202,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
 ```http
@@ -204,7 +210,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
   "@odata.count":1396,
   "value":[
     {
@@ -240,7 +246,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
 ```http
@@ -248,7 +254,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
   "@odata.count":76,
   "value":[
     {
@@ -273,4 +279,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

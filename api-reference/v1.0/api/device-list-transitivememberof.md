@@ -35,7 +35,11 @@ GET /devices/{id | userPrincipalName}/transitiveMemberOf
 
 ## Optional query parameters
 
+<<<<<<< HEAD
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the directoryRoles the user is a member of. You can use `$search` on the **displayName** and **descriptions** properties. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
+=======
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the directoryRoles the user is a member of. You can use `$search` on the **displayName** and **description** properties. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
+>>>>>>> 2347459ef2c8553401e4240e4061f8e4092daf66
 
 ## Request headers
 
@@ -147,7 +151,7 @@ Content-type: text/plain
 294
 ```
 
-### Example 3: Use OData cast and $search to get membership with display names that contain the letters 'Video' including a count of returned objects
+### Example 3: Use OData cast and $search to get group membership with display names that contain the letters 'Video' including a count of returned objects
 
 #### Request
 
@@ -247,4 +251,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

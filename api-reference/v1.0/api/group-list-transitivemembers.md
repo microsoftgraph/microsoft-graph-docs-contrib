@@ -109,8 +109,17 @@ Content-type: application/json
 {
   "value": [
     {
+      "@odata.type": "#microsoft.graph.user",
       "id": "11111111-2222-3333-4444-555555555555",
+<<<<<<< HEAD
       "mail": "group1@contoso.com"
+=======
+     "displayName": "Joseph Price",
+     "mail": "Joseph.Price@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "Contoso1",
+      "securityEnabled": true
+>>>>>>> 2347459ef2c8553401e4240e4061f8e4092daf66
     }
   ]
 }
@@ -172,7 +181,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group",
+  "@odata.type": "microsoft.graph.user",
   "isCollection": true
 } -->
 ```http
@@ -180,11 +189,11 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups(displayName,id)",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users(displayName,id)",
   "@odata.count":7,
   "value":[
     {
-      "displayName":"Contoso-tier Query Notification",
+      "displayName":"Joseph Price",
       "id":"11111111-2222-3333-4444-555555555555"
     }
   ]
@@ -216,7 +225,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group",
+  "@odata.type": "microsoft.graph.user",
   "isCollection": true
 } -->
 ```http
@@ -224,12 +233,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
   "@odata.count":76,
   "value":[
     {
+<<<<<<< HEAD
       "displayName":"AAD Contoso Users",
       "mail":"AADContoso_Users@contoso.com"
+=======
+      "displayName":"Joseph Price",
+      "mail":"Joseph.Price@contoso.com",
+      "mailEnabled":true,
+      "mailNickname":"AADContoso_Users",
+      "securityEnabled":true
+>>>>>>> 2347459ef2c8553401e4240e4061f8e4092daf66
     }
   ]
 }
@@ -245,4 +262,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
