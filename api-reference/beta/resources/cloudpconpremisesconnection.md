@@ -22,7 +22,6 @@ Entity that represents a defined collection of Azure resource information that c
 |[Create cloudPcOnPremisesConnection](../api/virtualendpoint-post-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Create a new [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.|
 |[Update cloudPcOnPremisesConnection](../api/virtualendpoint-update-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Update the properties of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.|
 |[Delete cloudPcOnPremisesConnection](../api/virtualendpoint-delete-onpremisesconnections.md)|None|Deletes a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.|
-|[RunHealthChecks of cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|None|Run the health checks of an on premises connection.|
 
 ## Properties
 
@@ -73,9 +72,7 @@ The following is a JSON representation of the resource.
   "resourceGroupId": "String",
   "virtualNetworkId": "String",
   "subnetId": "String",
-  "healthCheckStatus": {
-    "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatus"
-  },
+  "healthCheckStatus": "string",
   "healthCheckStatusDetails": {
     "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetails"
   },

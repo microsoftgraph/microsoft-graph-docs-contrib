@@ -12,6 +12,11 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 The details of a health check item
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[RunHealthChecks of cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|None|Run the health checks of an on premises connection.|
 
 ## Properties
 
@@ -45,9 +50,7 @@ The following is a JSON representation of the resource.
   "status": "String",
   "startDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
-  "errorType": {
-    "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheckErrorType"
-  },
+  "errorType": "String",
   "recommendedAction": "String",
   "additionalDetails": "String"
 }

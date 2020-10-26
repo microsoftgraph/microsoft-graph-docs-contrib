@@ -61,12 +61,8 @@ The following is a JSON representation of the resource.
   "osBuildNumber": "String",
   "version": "String",
   "lastModifiedDateTime": "String (timestamp)",
-  "status": {
-    "@odata.type": "#microsoft.graph.cloudPcDeviceImageStatus"
-  },
-  "statusDetails": {
-    "@odata.type": "#microsoft.graph.cloudPcDeviceImageStatusDetails"
-  },
+  "status": "String",
+  "statusDetails": "String",
   "sourceImageResourceId": "String"
 }
 ```

@@ -94,25 +94,19 @@ Content-Type: application/json
     "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/DomainControllerRG",
     "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/DomainControllerRG/providers/Microsoft.Network/virtualNetworks/DomainControllerRG-vnet",
     "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/DomainControllerRG/providers/Microsoft.Network/virtualNetworks/DomainControllerRG-vnet/subnets/default",
-    "healthCheckStatus": {
-      "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionStatus",
-      "failed"
-    },
+    "healthCheckStatus": "failed",
     "healthCheckStatusDetails": {
-      "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionStatusDetails",
+      "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetails",
       "startDateTime": "2020-06-17T12:43:14Z",
       "endDateTime": "2020-06-17T12:43:32Z",
       "healthChecks": [
         {
-          "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
+          "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
           "status": "failed",
           "displayName": "Check DNS Resolution",
           "startDateTime": "2020-06-17T12:43:14Z",
           "endDateTime": "2020-06-17T12:43:15Z",
-          "errorType": {
-            "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionHealthCheckErrorType",
-            "dnsCheckFqdnNotFound"
-          },
+          "errorType": "dnsCheckFqdnNotFound",
           "recommendedAction": "We did not find the provided domain name; please re-enter",
           "additionalDdetails": null
         },
@@ -122,10 +116,7 @@ Content-Type: application/json
           "displayName": "Check AD Domain Join",
           "startDateTime": "2020-06-17T12:43:15Z",
           "endDateTime": "2020-06-17T12:43:26Z",
-          "errorType": {
-            "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionHealthCheckErrorType",
-            null
-          },
+          "errorType": null,
           "recommendedAction": null,
           "additionalDetails": null
         },
@@ -135,12 +126,9 @@ Content-Type: application/json
           "displayName": "Check Endpoint Connectivity",
           "startDateTime": "2020-06-17T12:43:27Z",
           "endDateTime": "2020-06-17T12:43:32Z",
-          "errorType": {
-            "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionHealthCheckErrorType",
-            "endpointConnectivityCheckUrlNotWhitelisted"
-          },
+          "errorType": "endpointConnectivityCheckUrlNotWhitelisted",
           "recommendedAction": "The following URLs need to be whitelisted in your network firewall settings <Link to whitelist documentation>",
-          "additionaldDetails": "mrsglobalsteus2prod.blob.core.windows.net, prod.warmpath.msftcloudes.com, catalogartifact.azureedge.net, kms.core.windows.net" 
+          "additionaldDetails": "mrsglobalsteus2prod.blob.core.windows.net, prod.warmpath.msftcloudes.com, catalogartifact.azureedge.net, kms.core.windows.net"
         },
         {
           "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
@@ -148,10 +136,7 @@ Content-Type: application/json
           "displayName": "Check AAD Sync Status",
           "startDateTime": null,
           "endDateTime": null,
-          "errorType": {
-            "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionHealthCheckErrorType",
-            null
-          },
+          "errorType": null,
           "recommendedAction": null,
           "additionaldDetails": null
         }

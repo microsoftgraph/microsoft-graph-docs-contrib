@@ -92,10 +92,7 @@ Content-Type: application/json
       "provisioningPolicyId": "7ed725ad-0a00-4117-b557-d965c3732450",
       "servicePlanId": "dbb9148c-ff83-4a4c-8d7f-28752e93c0ce",
       "servicePlanName": "lite",
-      "status": {
-        "@odata.type": "microsoft.graph.cloudPcOnStatus",
-        "provisioned"
-      },
+      "status": "provisioned",
       "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
       "lastModifiedDateTime": "2020-07-23T10:29:57Z"
     }

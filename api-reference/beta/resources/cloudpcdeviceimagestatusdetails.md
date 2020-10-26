@@ -15,12 +15,3 @@ Possible image status details
 |:---|:---|:---|
 |internalServerError|0|There was an internal server error while processing the image|
 |sourceImageNotFound|1|Source image is inaccessible or not found|
-
-### cloudPcProvisioningPolicyImageType values
-
-Possible types of images that can be used in a provisioning policy
-
-|Members|Value|Description|
-|:---|:---|:---|
-|custom|0|The image type is custom|
-|gallery|1|The image type is gallery|

@@ -73,16 +73,12 @@ Content-length: 170
 
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicyAssignment",
-"assignments": [
+  "assignments": [
     {
       "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26bfd9",
       "target":{
+        "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget 
         "groupId":"64ff06de-9c00-4a5a-98b5-7f5abe26bfd9"
-        }
-    },
-    {
-      "target":{
-        "groupId":"655d5e08-4667-44d7-8cfb-6ca757a848da"
         }
     }
   ]

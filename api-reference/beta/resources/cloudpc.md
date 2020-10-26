@@ -63,9 +63,7 @@ The following is a JSON representation of the resource.
   "provisioningPolicyId": "String",
   "servicePlanId": "String",
   "servicePlanName": "String",
-  "status": {
-    "@odata.type": "microsoft.graph.cloudPcOnStatus"
-  },
+  "status": "String",
   "userPrincipalName": "String",
   "lastModifiedDateTime": "String (timestamp)"
 }

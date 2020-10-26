@@ -110,10 +110,7 @@ Content-Type: application/json
   "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG",
   "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET",
   "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet",
-  "healthCheckStatus": {
-    "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionStatus",
-    "pending"
-    },
+  "healthCheckStatus": "pending",
   "inUse": false
 }
 ```

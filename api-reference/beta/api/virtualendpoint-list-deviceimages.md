@@ -91,14 +91,8 @@ Content-Type: application/json
       "version": "2.3.5",
       "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/SIGTEST/providers/Microsoft.Compute/images/imagefordemo",
       "lastModifiedDateTime": "2020-07-21T07:03:44Z",
-      "status": {
-        "@odata.type": "#microsoft.graph.cloudPcDeviceImageStatus",
-        "pending"
-      },
-      "statusDetails": {
-        "@odata.type": "#microsoft.graph.cloudPcDeviceImageStatusDetails",
-        null
-      }
+      "status": "pending",
+      "statusDetails": null
     }
   ]
 }

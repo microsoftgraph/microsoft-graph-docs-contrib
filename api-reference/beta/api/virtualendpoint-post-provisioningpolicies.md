@@ -84,10 +84,7 @@ Content-length: 245
   "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1cca7f033",
   "imageId": "MicrosoftWindowsDesktop_Windows-10_19h1-evd",
   "imageDisplayName": "Windows-10 19h1-evd",
-  "imageType": {
-    "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicyImageType",
-    "gallery"
-  }
+  "imageType": "gallery"
 }
 ```
 
@@ -113,9 +110,6 @@ Content-Type: application/json
   "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1cca7f033",
   "imageId": "MicrosoftWindowsDesktop_Windows-10_19h1-evd",
   "imageDisplayName": "Windows-10 19h1-evd",
-  "imageType": {
-    "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicyImageType",
-    "gallery"
-  }
+  "imageType": "gallery"
   }
 ```

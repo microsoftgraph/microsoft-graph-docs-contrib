@@ -111,9 +111,6 @@ Content-Type: application/json
   "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701b553",
   "imageId": "53a93bfd-2006-4b76-8f30-5c0f60988105",
   "imageDisplayName": "Custom image name",
-  "imageType": {
-    "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicyImageType",
-    "customer"
-  }
+  "imageType": "customer"
 }
 ```
