@@ -151,7 +151,7 @@ Content-length: 160
 
 ### Example 2: Import messages (text only)
 
-> **Note**:  There are no special permission scopes in this scenario since the request is part of chatMessage; scopes for chatMessage apply here as well.
+> **Note**: No special permission scopes are required for this scenario because the request is part of **chatMessage**; scopes for **chatMessage** apply here as well.
 
 #### Request
 <!-- { "blockType": "ignored" } -->
@@ -243,11 +243,11 @@ HTTP/1.1 200 OK
 > [!NOTE]
 > Currently, inline images are the only media type supported by the import message API schema.
 
-> There are no special permission scopes in this scenario since the request is part of `chatMessage`; scopes for `chatMessage` apply here as well.
+> **Note**: No special permission scopes are required for this scenario because the request is part of **chatMessage**; scopes for **chatMessage** apply here as well.
 
 #### Request
 <!-- { "blockType": "ignored" } -->
-The following example show how to import back-in-time messages containing inline images using the `createDateTime` and `from` keys in the request body.
+The following example shows how to import back-in-time messages containing inline images using the `createDateTime` and `from` keys in the request body.
 
 ```http
 POST https://graph.microsoft.com/beta/teams/teamId/channels/channelId/messages
@@ -318,7 +318,6 @@ HTTP/1.1 200 OK
 ## See also
 
 * [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
-
 * [Create channel](channel-post.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
