@@ -914,7 +914,7 @@ API snippets ([example](/graph/api/user-get?view=graph-rest-1.0&preserve-view=tr
 [Get raw/MIME content of file or item attachments](/graph/api/attachment-get?view=graph-rest-beta&preserve-view=true#get-the-raw-contents-of-a-file-or-item-attachment) in an event, message, Outlook task, or group post
 
 ### Change notifications
-[Reduce missing change notifications for Outlook resources](webhooks-outlook-authz.md)
+[Reduce missing change notifications](webhooks-lifecycle.md)
 
 ### Devices and apps
 - Intune [January](changelog.md#january-2019) updates 
