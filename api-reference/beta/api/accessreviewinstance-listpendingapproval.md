@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the [accessReviewInstance](../resources/accessreviewinstance.md) objects pending approval by the calling user. A list of zero or more **accessReviewInstance** objects are returned, of which the calling user is an assigned reviewer.
+Retrieve the [accessReviewInstance](../resources/accessreviewinstance.md) objects pending approval by the calling user. A list of zero or more accessReviewInstance objects are returned, of which the calling user is an assigned reviewer.
 
 >[!NOTE]
 >If many **accessReviewInstances** are returned, to improve efficiency and avoid timeouts, retrieve the result set in pages, by including both the $top query parameter with a page size of at most 100, and the $skip=0 query parameter in the request. When a result set spans multiple pages, Microsoft Graph returns that page with an @odata.nextLink property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the @odata.nextLink URL in each response, until all the results are returned, as described in paging Microsoft Graph data in your app.
@@ -21,14 +21,14 @@ Retrieve the [accessReviewInstance](../resources/accessreviewinstance.md) object
 >If no query parameters are provided and there are more than 100 results, Microsoft Graph will automatically paginate results at 100 results per page.
 
 ## Permissions
-One of the following permissions is required to call this API. Delegated permissions to personal Microsoft accounts are not supported. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.Read.All or AccessReview.ReadWrite.All  |
-|Application                            | AccessReview.Read.All or AccessReview.ReadWrite.All |
+|Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
- The signed in user must also be in a directory role that permits them to read an access review. The signed in user will also only see instances of which they are assigned reviewer in that instance's `accessReviewScheduleDefinition`.
+ The signed-in user must also be in a directory role that permits them to read an access review. The signed-in user only sees instances of which they are assigned reviewer in the accessReviewScheduleDefinition of the instance.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

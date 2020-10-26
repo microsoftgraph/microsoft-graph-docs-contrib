@@ -1,6 +1,6 @@
 ---
 title: "SendReminder accessReviewInstance"
-description: "In the Azure AD access reviews feature, send a reminder to the reviewers of a currently active accessReviewInstance."
+description: "Sends a reminder to the reviewers of a currently active accessReviewInstance."
 localization_priority: Normal
 author: "isabelleatmsft"
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviewsv2-root.md) feature, send a reminder to the reviewers of a currently active [accessReviewInstance](../resources/accessreviewinstance.md).
+Send a reminder to the reviewers of a currently active [accessReviewInstance](../resources/accessreviewinstance.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -37,7 +37,7 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.
 
-## Example
+## Examples
 ##### Request
 
 # [HTTP](#tab/http)

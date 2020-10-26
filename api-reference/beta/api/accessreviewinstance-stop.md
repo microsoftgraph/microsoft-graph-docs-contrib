@@ -1,6 +1,6 @@
 ---
 title: "Stop accessReviewInstance"
-description: "In the Azure AD access reviews feature, stop a currently active accessReviewInstance."
+description: "Stop a currently active accessReviewInstance."
 localization_priority: Normal
 author: "isabelleatmsft"
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviewsv2-root.md) feature, stop a currently active [accessReviewInstance](../resources/accessreviewinstance.md). (To prevent a recurring access review from starting future instances, [update it](accessreviewscheduledefinition-update.md) to change its scheduled end date).  After the access review stops, reviewers can no longer give input, and the access review decisions can be applied.
+Stop a currently active [accessReviewInstance](../resources/accessreviewinstance.md). To prevent a recurring access review from starting future instances, [update it](accessreviewscheduledefinition-update.md) to change its scheduled end date.  After the access review stops, reviewers can no longer give input, and the access review decisions can be applied.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /identityGovernance/accessReviews/definitions/{definitionId}/instances/{instanceId}/stop
+POST /identityGovernance/accessReviews/definitions/{definition-id}/instances/{instance-id}/stop
 ```
 
 ## Request headers
@@ -37,7 +37,7 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.
 
-## Example
+## Examples
 ##### Request
 
 # [HTTP](#tab/http)
