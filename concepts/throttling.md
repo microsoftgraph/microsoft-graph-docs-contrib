@@ -459,6 +459,18 @@ dataPolicyOperation.
 
 [!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
 
+The following limits apply to requests on Assignment Service Beta API
+
+| Request Type                 | Limit per app per tenant     | Limit per tenant for all apps |
+|---------------------------|------------------------------|----------------------------|
+| Any         | 5K per 10 sec   | 15K per request per 10 sec |
+| GET MeAssignment)  | 50 per 10 sec | 150 per 10 sec |  
+
+The preceding limits apply to the following resources: 
+[educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta)
+[educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta)
+[educationResourc](/graph/api/resources/educationresource?view=graph-rest-beta)
+
 ### Excel service limits
 
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
