@@ -189,7 +189,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups(displayName,id)",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users(displayName,id)",
   "@odata.count":7,
   "value":[
     {
