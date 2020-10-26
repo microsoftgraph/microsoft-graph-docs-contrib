@@ -1,5 +1,5 @@
 ---
-title: "Complete migration for a team"
+title: "team: completeMigration"
 description: "End the message migration mode on the team resource."
 localization_priority: Normal
 author: "laujan"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Complete migration for a team
+# team: completeMigration
 
 Namespace: microsoft.graph
 
@@ -42,7 +42,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 
