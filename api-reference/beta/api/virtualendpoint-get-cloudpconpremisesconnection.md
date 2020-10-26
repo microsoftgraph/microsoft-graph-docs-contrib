@@ -64,51 +64,6 @@ If successful, this method returns a `200 OK` response code and a [cloudPcOnPrem
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}
-```
-
-### Response
-
-**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.cloudPcOnPremisesConnection"
-}
--->
-
-``` http
-HTTP/1.1 200 OK
-
-Content-Type: application/json
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
-    "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdcc43ec9",
-    "displayName": "test-1",
-    "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ad47",
-    "subscriptionName": "CPC customer 001 test subscription",
-    "adDomainName": "microsoft.com",
-    "adDomainUsername": "dcadmin@cpccustomer001.onmicrosoft.com",
-    "organizationalUnit": "ou",
-    "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/DomainControllerRG",
-    "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/DomainControllerRG/providers/Microsoft.Network/virtualNetworks/DomainControllerRG-vnet",
-    "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/DomainControllerRG/providers/Microsoft.Network/virtualNetworks/DomainControllerRG-vnet/subnets/default",
-    "healthCheckStatus": "running",
-    "inUse": false
-  }
-}
-```
-
-### Request
-
-<!-- {
-  "blockType": "request",
-  "name": "get_cloudpconpremisesconnection"
-}
--->
-
-``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}?$select=id,displayName,subscriptionId,subscriptionName,adDomainName,adDomainUsername,organizationalUnit,virtualNetworkId,subnetId,healthCheckStatus,healthCheckStatusDetails,inUse
 ```
 
@@ -141,10 +96,12 @@ Content-Type: application/json
     "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/DomainControllerRG/providers/Microsoft.Network/virtualNetworks/DomainControllerRG-vnet/subnets/default",
     "healthCheckStatus": "failed",
     "healthCheckStatusDetails": {
+      "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetails",
       "startDateTime": "2020-06-17T12:43:14Z",
       "endDateTime": "2020-06-17T12:43:32Z",
       "healthChecks": [
         {
+          "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
           "status": "failed",
           "displayName": "Check DNS Resolution",
           "startDateTime": "2020-06-17T12:43:14Z",
@@ -154,24 +111,27 @@ Content-Type: application/json
           "additionalDdetails": null
         },
         {
+          "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
           "status": "passed",
           "displayName": "Check AD Domain Join",
           "startDateTime": "2020-06-17T12:43:15Z",
-          "endDateTime": "2020-06-17T12:43:26Z",  
+          "endDateTime": "2020-06-17T12:43:26Z",
           "errorType": null,
           "recommendedAction": null,
           "additionalDetails": null
         },
         {
+          "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
           "status": "failed",
           "displayName": "Check Endpoint Connectivity",
           "startDateTime": "2020-06-17T12:43:27Z",
           "endDateTime": "2020-06-17T12:43:32Z",
           "errorType": "endpointConnectivityCheckUrlNotWhitelisted",
           "recommendedAction": "The following URLs need to be whitelisted in your network firewall settings <Link to whitelist documentation>",
-          "additionaldDetails": "mrsglobalsteus2prod.blob.core.windows.net, prod.warmpath.msftcloudes.com, catalogartifact.azureedge.net, kms.core.windows.net"
+          "additionaldDetails": "mrsglobalsteus2prod.blob.core.windows.net, prod.warmpath.msftcloudes.com, catalogartifact.azureedge.net, kms.core.windows.net" 
         },
         {
+          "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
           "status": "passed",
           "displayName": "Check AAD Sync Status",
           "startDateTime": null,
@@ -181,7 +141,7 @@ Content-Type: application/json
           "additionaldDetails": null
         }
       ]
-    },
+    }
     "inUse": false
   }
 }

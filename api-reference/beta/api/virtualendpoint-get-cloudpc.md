@@ -92,7 +92,8 @@ Content-Type: application/json
     "servicePlanId": "dbb9148c-ff83-4a4c-8d7f-28752e93c0ce",
     "servicePlanName": "lite",
     "status": "provisioned",
-    "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",    "lastModifiedDateTime": "2020-07-23T10:29:57Z"
+    "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
+    "lastModifiedDateTime": "2020-07-23T10:29:57Z"
   }
 }
 ```

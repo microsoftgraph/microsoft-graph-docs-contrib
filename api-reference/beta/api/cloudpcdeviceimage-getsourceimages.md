@@ -79,7 +79,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "microsoft.graph.cloudPcSourceDeviceImage",
+      "@odata.type": "#microsoft.graph.cloudPcSourceDeviceImage",
       "id": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/SIGTEST/providers/Microsoft.Compute/images/imagefordemo",
       "displayName": "imagefordemo"
     }

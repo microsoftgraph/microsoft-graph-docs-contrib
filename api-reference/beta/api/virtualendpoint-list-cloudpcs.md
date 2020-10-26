@@ -95,20 +95,6 @@ Content-Type: application/json
       "status": "provisioned",
       "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
       "lastModifiedDateTime": "2020-07-23T10:29:57Z"
-    },
-    {
-      "@odata.type": "#microsoft.graph.cloudPC",
-      "id": "ac74ae8b-85f7-4272-88cc-5419267403ed",
-      "displayName": "Demo-1",
-      "imageDisplayName": "Custom image name",
-      "managedDeviceId": "e87f50c7-fa7f-4687-aade-dd45f3d65970",  
-      "managedDeviceName": "A00001D3000",
-      "provisioningPolicyId": "13fa0778-ba00-438a-96d3-488c86029dff",
-      "servicePlanId": "da5615b4-a484-4742-a019-2d52c91cbfd0",
-      "servicePlanName": "standard",
-      "status": "provisioning",
-      "userPrincipalName": "mrichard@cpccustomer001.onmicrosoft.com",
-      "lastModifiedDateTime": "2020-07-28T18:14:34Z"
     }
   ]
 }

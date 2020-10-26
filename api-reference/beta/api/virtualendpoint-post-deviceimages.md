@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [cloudPcD
 
 <!-- {
   "blockType": "request",
-  "name": "create_cloudpcdeviceimage_from_"
+  "name": "create_cloudpcdeviceimage"
 }
 -->
 
@@ -76,6 +76,7 @@ Content-Type: application/json
 Content-length: 235
 
 {
+  "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
   "displayName": "graph",
   "osBuildNumber": "1902",
   "operatingSystem": "Windows 10 Enterprise",

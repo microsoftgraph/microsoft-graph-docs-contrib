@@ -1,6 +1,6 @@
 ---
 title: "Get selfServiceSettings"
-description: "Read the properties and relationships of a cloupdPcSelfServiceSettings object."
+description: "Read the properties and relationships of a cloudPcSelfServiceSettings object."
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Read the properties and relationships of a [cloupdPcSelfServiceSettings](../resources/cloupdpcselfservicesettings.md) object.
+Read the properties and relationships of a [cloudPcSelfServiceSettings](../resources/cloudpcselfservicesettings.md) object.
 
 ## Permissions
 
@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [cloupdPcSelfServiceSettings](../resources/cloupdpcselfservicesettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [cloudPcSelfServiceSettings](../resources/cloudpcselfservicesettings.md) object in the response body.
 
 ## Examples
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [cloupdPcSelfS
 
 <!-- {
   "blockType": "request",
-  "name": "get_cloupdpcselfservicesettings"
+  "name": "get_cloudpcselfservicesettings"
 }
 -->
 
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/selfServic
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.cloupdPcSelfServiceSettings"
+  "@odata.type": "microsoft.graph.cloudPcSelfServiceSettings"
 }
 -->
 
@@ -82,7 +82,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 {
   "value": {
-    "@odata.type": "#microsoft.graph.cloupdPcSelfServiceSettings",
+    "@odata.type": "#microsoft.graph.cloudPcSelfServiceSettings",
     "id": "7a585ddc-143d-4fcc-94bc-50438c51d689",
     "enabled": true,
     "assignments": [

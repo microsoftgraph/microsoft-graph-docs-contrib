@@ -68,7 +68,7 @@ If successful, this method returns a `201 Created` response code and a [cloudPcP
 
 <!-- {
   "blockType": "request",
-  "name": "create_cloudpcprovisioningpolicy_from_"
+  "name": "create_cloudpcprovisioningpolicy"
 }
 -->
 

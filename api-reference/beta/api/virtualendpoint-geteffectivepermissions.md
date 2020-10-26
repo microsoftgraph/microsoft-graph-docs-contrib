@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a String collection in the response body. If the user has full permissions, the response is ["*"].
+If successful, this function returns a `200 OK` response code and a String collection in the response body. If the user has full permissions, the response is `["*"]`.
 
 ## Examples
 
