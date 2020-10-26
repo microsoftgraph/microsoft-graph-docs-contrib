@@ -253,7 +253,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
   "@odata.count":76,
   "value":[
     {
