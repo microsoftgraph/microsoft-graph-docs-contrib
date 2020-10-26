@@ -194,8 +194,8 @@ The following example shows how to create a channel for imported messages.
 
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels
-
 Content-Type: application/json
+
 {
   "@microsoft.graph.channelCreationMode": "migration",
   "displayName": "Architecture Discussion",
