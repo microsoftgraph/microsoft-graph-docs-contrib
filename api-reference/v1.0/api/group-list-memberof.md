@@ -162,14 +162,7 @@ ConsistencyLevel: eventual
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-<<<<<<< HEAD
-  "truncated": true
-=======
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group",
-  "isCollection": true
->>>>>>> 2347459ef2c8553401e4240e4061f8e4092daf66
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

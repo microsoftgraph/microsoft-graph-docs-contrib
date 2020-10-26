@@ -249,18 +249,8 @@ Content-type: application/json
   "@odata.count":76,
   "value":[
     {
-<<<<<<< HEAD
       "displayName":"AAD Contoso Users",
       "mail":"AADContoso_Users@contoso.com"
-=======
-      "@odata.type": "#microsoft.graph.user",
-      "id": "11111111-2222-3333-4444-555555555555",
-      "displayName": "Joseph Price",
-      "mail":"Joseph.Price@contoso.com",
-      "mailEnabled":true,
-      "mailNickname":"AADContoso_Users",
-      "securityEnabled":true
->>>>>>> 2347459ef2c8553401e4240e4061f8e4092daf66
     }
   ]
 }
