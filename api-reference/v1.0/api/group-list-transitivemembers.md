@@ -238,7 +238,7 @@ Content-type: application/json
   "value":[
     {
       "displayName":"Joseph Price",
-      "mail":"AADContoso_Users@contoso.com",
+      "mail":"Joseph.Price@contoso.com",
       "mailEnabled":true,
       "mailNickname":"AADContoso_Users",
       "securityEnabled":true
