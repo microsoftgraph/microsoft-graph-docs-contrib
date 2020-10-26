@@ -127,8 +127,7 @@ ConsistencyLevel: eventual
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true
+  "blockType": "ignored"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -157,7 +156,7 @@ ConsistencyLevel: eventual
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response"
+  "blockType": "ignored"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -237,7 +236,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObjects",
+  "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": true
 } -->
 ```http

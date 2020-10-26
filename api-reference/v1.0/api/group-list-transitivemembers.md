@@ -111,15 +111,7 @@ Content-type: application/json
     {
       "@odata.type": "#microsoft.graph.user",
       "id": "11111111-2222-3333-4444-555555555555",
-<<<<<<< HEAD
       "mail": "group1@contoso.com"
-=======
-     "displayName": "Joseph Price",
-     "mail": "Joseph.Price@contoso.com",
-      "mailEnabled": true,
-      "mailNickname": "Contoso1",
-      "securityEnabled": true
->>>>>>> 2347459ef2c8553401e4240e4061f8e4092daf66
     }
   ]
 }
@@ -148,7 +140,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
-  "blockType": "response"
+  "blockType": "ignored"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -237,16 +229,8 @@ Content-type: application/json
   "@odata.count":76,
   "value":[
     {
-<<<<<<< HEAD
       "displayName":"AAD Contoso Users",
       "mail":"AADContoso_Users@contoso.com"
-=======
-      "displayName":"Joseph Price",
-      "mail":"Joseph.Price@contoso.com",
-      "mailEnabled":true,
-      "mailNickname":"AADContoso_Users",
-      "securityEnabled":true
->>>>>>> 2347459ef2c8553401e4240e4061f8e4092daf66
     }
   ]
 }
