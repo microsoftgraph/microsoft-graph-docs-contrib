@@ -30,7 +30,7 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.cloudPcManagementAssignmentTarget"
+  "baseType": "microsoft.graph.cloudPcManagementAssignmentTarget",
   "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget"
 }
 -->

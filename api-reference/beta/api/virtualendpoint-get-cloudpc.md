@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "get_cloudpc"
+  "name": "get_cloudpc",
   "@odata.type": "microsoft.graph.cloudPC"
 }
 -->

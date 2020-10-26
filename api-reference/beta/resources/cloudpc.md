@@ -32,7 +32,7 @@ Cloud PC devices.
 |provisioningPolicyId|String|The Cloud PC's provisioning policy id|
 |servicePlanId|String|The Cloud PC's service plan id|
 |servicePlanName|String|The Cloud PC's service plan name|
-|status|[cloudPcStatus](../resources/cloudpcstatus.md)|Status of the Cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `upgradeFailed`, `provisionFailed`, `deprovisionFailed`, `reprovisionFailed`.|
+|status|cloudPcStatus|Status of the Cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `upgradeFailed`, `provisionFailed`, `deprovisionFailed`, `reprovisionFailed`.|
 |userPrincipalName|String|UserPrincipalName (UPN) of the user assigned to use the Cloud PC|
 |lastModifiedDateTime|DateTimeOffset|The Cloud PC's last modified date and time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.|
 

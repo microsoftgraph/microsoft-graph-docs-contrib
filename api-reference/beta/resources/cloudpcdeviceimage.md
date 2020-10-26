@@ -33,8 +33,8 @@ The cloudPCDeviceImage used for provision CloudPC.
 |osBuildNumber|String|The image's OS build version, e.g. 1909|
 |operatingSystem|String|The image's operating system, e.g. Windows 10 Enterprise.|
 |lastModifiedDateTime|DateTimeOffset|The images's last modified date and time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. time|
-|status|[cloudPcDeviceImageStatus](../resources/cloudpcdeviceimagestatus.md)|The image's status. It can be upload pending, failed to upload, or ready to use. Possible values are: `pending`, `ready`, `failed`.|
-|statusDetails|[cloudPcDeviceImageStatusDetails](../resources/cloudpcdeviceimagestatusdetails.md)|The image's status details. It indicates the reason the upload failed. Possible values are: `internalServerError`, `sourceImageNotFound`.|
+|status|cloudPcDeviceImageStatus|The image's status. It can be upload pending, failed to upload, or ready to use. Possible values are: `pending`, `ready`, `failed`.|
+|statusDetails|cloudPcDeviceImageStatusDetails|The image's status details. It indicates the reason the upload failed. Possible values are: `internalServerError`, `sourceImageNotFound`.|
 
 ## Relationships
 

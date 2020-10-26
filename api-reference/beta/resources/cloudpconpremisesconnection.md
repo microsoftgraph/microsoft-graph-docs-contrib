@@ -38,7 +38,7 @@ Entity that represents a defined collection of Azure resource information that c
 |resourceGroupId|String|The id of the target resource group. It should be in this format: “/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}”.|
 |virtualNetworkId|String|The id of the target virtual network. It should be in this format: “/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}”.|
 |subnetId|String|The id of the target subnet. It should be in this format: “/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}”.|
-|healthCheckStatus|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnectionstatus.md)|The health check status of the on-premises connection. For example, if status is “passed”, the on-premises connection has passed all our checks. Possible values are: `Pending`, `Running`, `Passed`, `Failed`, `UnknownFutureValue`.|
+|healthCheckStatus|cloudPcOnPremisesConnectionStatus|The health check status of the on-premises connection. For example, if status is “passed”, the on-premises connection has passed all our checks. Possible values are: `Pending`, `Running`, `Passed`, `Failed`, `UnknownFutureValue`.|
 |healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|The details of the health checks done and their corresponding health check results.|
 |inUse|Boolean|The on-premises connection is in use or not. If the connection is in use, it cannot be deleted.|
 
@@ -55,7 +55,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.cloudPcOnPremisesConnection",
   "baseType": "microsoft.graph.entity",
   "openType": false,
-  "optionalProperties": "healthCheckStatusDetails"
+  "optionalProperties": ["healthCheckStatusDetails"]
 }
 -->
 

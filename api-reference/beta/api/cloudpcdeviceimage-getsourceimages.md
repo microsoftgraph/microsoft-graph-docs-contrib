@@ -68,7 +68,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "cloudpcdeviceimage_getsourceimages_response"
   "@odata.type": "Collection(microsoft.graph.cloudPcSourceDeviceImage)"
 }
 -->

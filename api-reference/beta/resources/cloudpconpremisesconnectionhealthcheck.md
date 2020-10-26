@@ -26,7 +26,7 @@ The details of a health check item
 |status|cloudPcOnPremisesConnectionStatus|The status of the specific health check item. Possible values are: `Pending`, `Running`, `Passed`, `Failed`, `UnknownFutureValue`.|
 |startDateTime|DateTimeOffset|The start time of the specific health check item.|
 |endDateTime|DateTimeOffset|The end time of the specific health check item.|
-|errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](../resources/cloudpconpremisesconnectionstatus.md)|The error type of the health check item. Possible values are: `DnsCheckFqdnNotFound`, `DnsCheckUnknownError`, `AdJoinCheckFqdnNotFound`, `AdJoinCheckIncorrectCredentials`, `AdJoinCheckOrganizationalUnitNotFound`, `AdJoinCheckOrganizationalUnitIncorrectFormat`, `AdJoinCheckUnknownError`, `EndpointConnectivityCheckUrlNotWhitelisted`, `EndpointConnectivityCheckUnknownError`, `AadConnectivityCheckUnknownError`,`resourceAvailabilityCheckNoSubnetIP`,`resourceAvailabilityCheckUnknownError`,`internalServerUnknownError`.|
+|errorType|cloudPcOnPremisesConnectionHealthCheckErrorType|The error type of the health check item. Possible values are: `DnsCheckFqdnNotFound`, `DnsCheckUnknownError`, `AdJoinCheckFqdnNotFound`, `AdJoinCheckIncorrectCredentials`, `AdJoinCheckOrganizationalUnitNotFound`, `AdJoinCheckOrganizationalUnitIncorrectFormat`, `AdJoinCheckUnknownError`, `EndpointConnectivityCheckUrlNotWhitelisted`, `EndpointConnectivityCheckUnknownError`, `AadConnectivityCheckUnknownError`,`resourceAvailabilityCheckNoSubnetIP`,`resourceAvailabilityCheckUnknownError`,`internalServerUnknownError`.|
 |recommendedAction|String|The recommended action to fix the corresponding error.|
 |additionalDetails|String|Additional details about the health check or the recommended action.|
 
