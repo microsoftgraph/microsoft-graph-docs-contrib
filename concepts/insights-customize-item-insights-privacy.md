@@ -18,9 +18,9 @@ While existing apps could continue to use **officeGraphInsights**, these apps sh
 
 ## How to customize item insights?
 
-Item insights settings provide flexibility for administrators to use Azure AD tools. Administrators can disable item insights for an entire organization, or for only members of a specified Azure AD group. Configure item insights by using the Microsoft Graph REST API or PowerShell SDK with due permissions. Keep in mind that the _global administrator role_ is required. 
+Item insights settings provide flexibility for administrators to use Azure AD tools. Administrators can disable item insights for an entire organization, or for only members of a specified Azure AD group. Configure item insights by using the PowerShell SDK or Microsoft Graph REST API with due permissions. Keep in mind that the _global administrator role_ is required. 
 
-The next section describes using PowerShell cmdlets to configure insights settings. If you're using the REST API, skip the next section and continue with [checking out available configurations](#available-configurations). Then refer to the [read](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) REST operations for more information.
+The next section describes using PowerShell cmdlets to configure insights settings. If you're using the REST API, skip the next section and continue with [Configure item insights using REST API](#configure-item-insights-using-rest-api). Then refer to the [read](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) REST operations for more information.
 
 ### How to configure item insights setting via PowerShell?
 Confirm the following additional prerequisites. Then you can use the [Microsoft Graph PowerShell SDK](/graph/powershell/installation) to set item insights for an entire organization or for specific groups.
@@ -58,7 +58,7 @@ If you use Microsoft Graph PowerShell module version 0.9.0 or lower, use one of 
   ```
 
 ### Configure item insights using REST API
-As stated earlier, by default, item insights are enabled for the entire organization. You can change the default in one of two ways:
+As stated earlier, by default, item insights privacy settings are enabled for the entire organization. You can change the default in one of two ways:
 
 - Disable item insights for all users in the organization, by setting the **isEnabledInOrganization** property of the [itemInsightsSettings](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) resource to `false`. 
 - Disable item insights for a _subset_ of users, by assigning these users in an Azure AD group, and setting the **disabledForGroup** property to the ID of that group. Find out more about [creating a group and adding users as members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
@@ -72,7 +72,7 @@ Use the [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&pre
 | Disabled for the entire organization | `false` | ignored |
 
 Keep the following in mind when updating item insights settings:
-- The item insights privacy settings ([itemInsightsSettings](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) resource) are available only in the beta endpoint.
+- [Item insights settings](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) are available only in the beta endpoint.
 - Get the ID of an Azure AD group from the Azure portal, and make sure the group exists, because the update operation does not check the existence of the group. Specifying a non-existent group in **disabledForGroup** does _not_ disable insights for any users in the organization.
 - Updating settings can take up to 8 hours to be applied across all Microsoft 365 experiences.
 - Regardless of item insights settings, Delve continues to respect Delve tenant and user level [privacy settings](/sharepoint/delve-for-office-365-admins#control-access-to-delve-and-related-features?view=graph-rest-beta&preserve-view=true).
