@@ -97,8 +97,8 @@ Content-length: 235
 
 ``` http
 HTTP/1.1 201 Created
-
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
   "id": "eda7ed64-7705-4079-9d08-c2bd883f4cfc",

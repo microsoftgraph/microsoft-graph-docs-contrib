@@ -99,8 +99,8 @@ Content-length: 245
 
 ``` http
 HTTP/1.1 200 OK
-
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
   "id": "8931f750-f750-8931-50f7-318950f73189",

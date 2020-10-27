@@ -105,8 +105,8 @@ Content-length: 556
 
 ``` http
 HTTP/1.1 200 OK
-
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
   "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdcc43ec9",
