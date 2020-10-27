@@ -565,8 +565,8 @@ The following example shows how to create a team for imported messages.
 
 ```http
 POST https://graph.microsoft.com/beta/teams
-
 Content-Type: application/json
+
 {
   "@microsoft.graph.teamCreationMode": "migration",
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
