@@ -50,6 +50,11 @@ In the request body, supply a JSON representation of [channel](../resources/chan
 
 If successful, this method returns a `201 Created` response code and a [channel](../resources/channel.md) object in the response body.
 
+If the request is unsuccessful, this method returns a `400 Bad Request` response code. Common reasons for this response are as follows:
+
+* `createdDateTime`  set for future.
+* `createdDateTime`  correctly specified but `channelCreationMode`  instance attribute  is missing or set to invalid value.
+
 ## Examples
 
 ### Example 1: Create a standard channel
@@ -212,15 +217,6 @@ HTTP/1.1 202 Accepted
 Location: /teams/{teamId}/channels/{channelId}/operations/{operationId}
 Content-Location: /teams/{teamId}/channels/{channelId}
 ```
-
-#### Error Message
-
-```http
-400 Bad Request
-```
-
-* `createdDateTime`  set for future.
-* `createdDateTime`  correctly specified but `channelCreationMode`  instance attribute  is missing or set to invalid value.
 
 ## See also
 

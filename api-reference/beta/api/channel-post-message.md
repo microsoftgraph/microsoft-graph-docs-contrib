@@ -158,7 +158,7 @@ Content-length: 160
 The following example show how to import back-in-time messages using the `createDateTime` and `from` keys in the request body.
 
 ```http
-POST https://graph.microsoft.com/beta/teams/teamId/channels/channelId/messages
+POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
 
 {
    "replyToId":null,
@@ -250,7 +250,7 @@ HTTP/1.1 200 OK
 The following example shows how to import back-in-time messages containing inline images using the `createDateTime` and `from` keys in the request body.
 
 ```http
-POST https://graph.microsoft.com/beta/teams/teamId/channels/channelId/messages
+POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
 
 {
    "body":{

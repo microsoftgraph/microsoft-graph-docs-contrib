@@ -1,19 +1,23 @@
 ---
-title: "Complete migration for a team"
-description: "End the message migration mode on the team resource."
+title: "team: completeMigration"
+description: "Complete the migration of external messages by removing migration mode from a team.""
 localization_priority: Normal
 author: "laujan"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Complete migration for a team
+# team: completeMigration
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Complete the message migration mode on a [team](../resources/team.md).
+Complete the message migration process by removing `migration mode` from a [team](../resources/team.md). `Migration mode` is a special state where certain operations are barred, like message POST and membership operations during the data migration process.
+
+* Once the `completeMigration` request is made, you cannot import further messages into the team.
+
+* Team members can only be added to the new team after the `completeMigration` request has returned a successful response.
 
 ## Permissions
 
@@ -21,6 +25,8 @@ The following permission is required to call this API. To learn more, *see* [Per
 
 |Permission type      | Permission  |
 |:--------------------|:---------------------------------------------------------|
+| Delegated (work or school account)  | Not supported.|
+| Delegated (personal Microsoft account) | Not supported. |
 |Application | Teamwork.Migrate.All|
 
 ## HTTP request
@@ -34,7 +40,6 @@ POST /teams/{teamId}/completeMigration
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json. Required.  |
 
 ## Request body
 
@@ -51,14 +56,14 @@ If successful, this method returns `204 No Content` response code. It does not r
 The following is an example of the request.
 <!-- markdownlint-disable MD025 -->
 <!-- markdownlint-disable MD022 -->
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "completeMigration_team"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/teamId/completeMigration
+POST https://graph.microsoft.com/beta/teams/{teamId}/completeMigration
 ```
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD024 -->
@@ -73,12 +78,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-
-## Tips and additional information
-
-* Once the `completeMigration` request is made, you cannot import further messages into the team.
-
-* Team members can only be added to the new team after the `completeMigration` request has returned a successful response.
 
 <!-- uuid: d945a9a4-0e5b-11eb-adc1-0242ac120002
 2020-10-14 20:22:11 UTC -->

@@ -50,7 +50,7 @@ In the request body, supply a JSON representation of a [message](../resources/ch
 
 If successful, this method returns `201 Created` response code with the [message](../resources/chatmessage.md) that was created.
 
-## Example
+## Example 1: create a new reply to a chatMessage
 
 For a more comprehensive list of examples, see [Create chatMessage in a channel or a chat](chatmessage-post.md).
 
@@ -138,7 +138,7 @@ Content-length: 160
 }
 ```
 
-### Example: Import messages
+### Example 2: Import messages
 
 > **Note**: No special permission scopes are required for this scenario because the request is part of **chatMessage**; scopes for **chatMessage** apply here as well.
 
