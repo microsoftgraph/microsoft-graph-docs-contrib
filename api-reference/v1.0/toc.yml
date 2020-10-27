@@ -4918,6 +4918,10 @@ items:
           href: api/channel-members-update.md
         - name: Delete a member from a channel
           href: api/channel-members-delete.md
+        - name: Get files folder
+          href: api/channel-get-filesfolder.md
+        - name: Send message
+          href: api/channel-post-messages.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
