@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstance resource type"
-description: "In the Azure AD access reviews feature, the `accessReviewInstance` represents a recurrence of an `accessReviewScheduleDefinition`."
+description: "Represents a recurrence of an `accessReviewScheduleDefinition`."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -13,35 +13,35 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure AD [access review](accessreviewsv2-root.md) recurrence. If the parent **accessReviewScheduleDefinition** is a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique group being reviewed in the schedule definition. If a schedule definition reviews multiple groups, each group will have a unique instance for each recurrence.
+Represents an Azure AD [access review](accessreviewsv2-root.md) recurrence. If the parent accessReviewScheduleDefinition is a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique group being reviewed in the schedule definition. If a schedule definition reviews multiple groups, each group will have a unique instance for each recurrence.
 
 Every **accessReviewInstance** contains a list of [decisions](accessreviewinstancedecisionitem.md) that reviewers can take action on. There is one decision per identity being reviewed.
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method | Return Type | Description |
 |:---------------|:--------|:----------|
 |[List accessReviewInstances](../api/accessreviewinstance-list.md) | [accessReviewInstance](accessreviewinstance.md) collection | Get a list of the [accessReviewInstance](../resources/accessreviewinstance.md) objects and their properties. |
-|[Get accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Returns `accessReviewInstance` for an `accessReviewScheduleDefinition`. Does not include associated `accessReviewInstanceDecisionItem`s in object. |
-|[List pendingAccessReviewInstances](../api/accessreviewinstance-listpendingapproval.md) | [accessReviewInstance](accessreviewinstance.md) collection. | Get all pending `accessReviewInstance` resources assigned to the calling user. |
+|[Get accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Returns accessReviewInstance for an accessReviewScheduleDefinition. Does not include associated accessReviewInstanceDecisionItem`s in the object. |
+|[List pendingAccessReviewInstances](../api/accessreviewinstance-listpendingapproval.md) | [accessReviewInstance](accessreviewinstance.md) collection. | Get all pending accessReviewInstance resources assigned to the calling user. |
 |[Send accessReviewInstance reminder](../api/accessreviewinstance-sendreminder.md) | None. | Send a reminder to the reviewers of an accessReviewInstance. |
 |[Stop accessReviewInstance](../api/accessreviewinstance-stop.md) | None. | Manually stop an accessReviewInstance. |
 |[Accept recommendations](../api/accessreviewinstance-acceptrecommendations.md) | None. | Allows the calling user to accept the decision recommendation for each NotReviewed accessReviewInstanceDecisionItem that they are the reviewer on for a specific accessReviewInstance. |
-|[Apply decisions](../api/accessreviewinstance-applydecisions.md) | None. | Manually apply decision on an `accessReviewInstance`. |
+|[Apply decisions](../api/accessreviewinstance-applydecisions.md) | None. | Manually apply decision on an accessReviewInstance. |
 
 
 
 ## Properties
-| Property                  | Type                                |  Description |
+| Property | Type | Description |
 | :-------------------------| :---------------------------------- | :---------- |
-| `id`                      |`String`                                                         | Unique identifier of the instance |
-| `displayName`             |`String`                                                         | Name of the parent `accessReviewScheduleDefinition` |
-| `startDateTime`           |`DateTimeOffset`                                                 | DateTime when review instance is scheduled to start. May be in the future. |
-| `endDateTime`             |`DateTimeOffset`                                                 | DateTime when review instance is scheduled to end. |
-| `status`                  |`string`                                                          | Read-only. Field specifies the status of an accessReview. The typical states include `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`. |
-| `scope`                   |`microsoft.graph.accessReviewScope`                              | Read-only. Created based on `scope` and `instanceEnumerationScope` at the `accessReviewScheduleDefinition` level. Defines scope of users reviewed in a group. In the case of a single-group review, the scope defined at the `accessReviewScheduleDefinition` level applies to all instances. In the case of all groups review, scope may be different for each group. | 
-| `decisions`               |`Collection(microsoft.graph.accessReviewInstanceDecisionItem)`  | Set of decisions for this review instance. |
-| `definition`              |`microsoft.graph.accessReviewScheduleDefinition`                | Back link to the `accessReviewScheduleDefinition` associated with the instance. |
+| id | String | Unique identifier of the instance. |
+| displayName | String | Name of the parent accessReviewScheduleDefinition. |
+| startDateTime | DateTimeOffset | DateTime when review instance is scheduled to start. May be in the future. |
+| endDateTime | DateTimeOffset | DateTime when review instance is scheduled to end. |
+| status | string | Specifies the status of an accessReview. The typical states include `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`.  Read-only.|
+| scope | [accessReviewScope](accessreviewscope.md) | Created based on **scope** and **instanceEnumerationScope** at the accessReviewScheduleDefinition level. Defines the scope of users reviewed in a group. In the case of a single-group review, the scope defined at the `accessReviewScheduleDefinition` level applies to all instances. In the case of all groups review, scope may be different for each group. Read-only.  | 
+| decisions | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection | Each user reviewed in an accessReviewInstance has a decision item representing if they were approved, denied, or not yet reviewed. |
+| definition |[accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | There is exactly one accessReviewScheduleDefinition associated with each instance. It is the parent schedule for the instance, where instances are created for each recurrence of a review definition and each group selected to review by the definition. |
 
 ## Relationships
 
