@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)|ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All. |
+|Delegated (work or school account)|ChannelMember.ReadWrite.All. |
 |Delegated (personal Microsoft account)|Not supported|
-|Application|ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All. |
+|Application|ChannelMember.ReadWrite.All. |
 
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 
 ### Request
 
-Here is an example of the request.
+Here is an example of the request to apply the "owner" role to an existing member of a channel.
 
 <!-- {
   "blockType": "request",
