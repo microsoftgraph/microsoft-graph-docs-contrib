@@ -44,6 +44,9 @@ Subscribes a listener application to receive change notifications when the reque
 > **Note:** `/teams/getAllMessages` and `/chats/getAllMessages` are available to users that have the
 [required licenses](https://aka.ms/teams-changenotification-licenses).
 
+> **Note:** `/chats/getAllMessages` only returns messages from chats owned by the tenant. 
+If a chat thread is initiated by a user outside the tenant, that chat thread is not owned by the tenant, and does not create change notifications.
+
 ### driveItem
 
 Additional limitations apply for subscriptions on OneDrive items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.
