@@ -1,6 +1,6 @@
 ---
 title: "accessReviewScheduleDefinition resource type"
-description: "In the Azure AD access reviews feature, the `accessReviewScheduleDefinition` represents an access review or access review series."
+description: "Represents an access review or access review series."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
