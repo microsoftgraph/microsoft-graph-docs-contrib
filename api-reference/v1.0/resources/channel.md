@@ -24,9 +24,9 @@ where files are shared, and where tabs are added.
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Update properties of the channel.|
 |[Delete channel](../api/channel-delete.md) | None | Delete a channel.|
 |[List tabs](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
-|[List members in a channel](../api/channel-members-list.md) | [conversationMember](conversationmember.md) collection | Get the list of members in a channel.|
-|[Add a member to a channel](../api/channel-members-add.md) | [conversationMember](conversationmember.md) | Add members to a channel. Only supported for `channelType` of `private`.|
-|[Update the role of a member in a channel](../api/channel-members-update.md) | [conversationMember](conversationmember.md) | Update the properties of a member of the channel. Only supported for channel with membershipType of 'private`.|
+|[List members of a channel](../api/channel-members-list.md) | [conversationMember](conversationmember.md) collection | Get the list of members in a channel.|
+|[Add a member to a channel](../api/channel-members-add.md) | [conversationMember](conversationmember.md) | Add members to a channel. Only supported for `channel`with membershipType of `private`.|
+|[Update the role of a member in a channel](../api/channel-members-update.md) | [conversationMember](conversationmember.md) | Update the properties of a member of the channel. Only supported for channel with membershipType of `private`.|
 |[Delete a member from a channel](../api/channel-members-delete.md) | None | Delete a member from a channel. Only supported for `channelType` of `private`.|
 
 ## Properties
