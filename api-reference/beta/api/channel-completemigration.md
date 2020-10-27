@@ -13,11 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Complete the message migration process by removing `migration mode` from a [channel](../resources/channel.md) in a team. `Migration mode` is a special state where certain operations are barred, like message POST and membership operations during the data migration process.
+Complete the message migration process by removing `migration mode` from a [channel](../resources/channel.md) in a team. `Migration mode` is a special state that prevents certain operations, like creating messages and adding members, during the data migration process.
 
-* When the `completeMigration` request is made, you cannot import further messages into the team.
-
-* Team members can only be added to the new team after the `completeMigration` request has returned a successful response.
+After a **completeMigration** request is made, you cannot import additional messages into the team. You can add members to the team after the request returns a successful response.
 
 ## Permissions
 
