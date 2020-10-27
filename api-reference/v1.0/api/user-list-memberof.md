@@ -142,14 +142,14 @@ ConsistencyLevel: eventual
 The following is an example of the response.
 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-
-294
 ```
+
+`294`
 
 ### Example 4: Use $search and OData cast to get membership in groups with display names that contain the letters 'tier' including a count of returned objects
 

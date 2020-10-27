@@ -136,14 +136,14 @@ ConsistencyLevel: eventual
 The following is an example of the response.
 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-
-394
 ```
+
+`394`
 
 ### Example 3: Use OData cast to get only a count of group membership
 
@@ -165,14 +165,14 @@ ConsistencyLevel: eventual
 The following is an example of the response.
 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-
-394
 ```
+
+`394`
 
 ### Example 4: Use $search and OData cast to get group membership with display names that contain the letters 'Video' including a count of returned objects
 
