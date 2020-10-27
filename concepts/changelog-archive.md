@@ -145,6 +145,8 @@ This topic contains archived changelog entries for Microsoft Graph. For current 
 |Addition|beta and v1.0| Added the [Update chatMessage](/graph/api/chatmessage-update) method to the [chatMessage](/graph/api/resources/chatmessage) resource.|
 |Addition|v1.0| Added the [List members](/graph/api/team-list-members?view=graph-rest-1.0&preserve-view=true), [Add members](/graph/api/team-post-members?view=graph-rest-1.0&preserve-view=true), and [Remove members](/graph/api/team-delete-members?view=graph-rest-1.0&preserve-view=true) methods.|
 
+### Identity and access | Identity and sign-in
+
 ### Users
 
 | **Change type** | **Version** | **Description**                          |
