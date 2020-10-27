@@ -64,7 +64,7 @@ Here is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/V1.0/channels/{id}/members/{id}
+GET https://graph.microsoft.com/v1.0/channels/{id}/members/{id}
 ```
 
 ### Response
