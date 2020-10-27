@@ -113,7 +113,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.cloudPcSelfServiceSettings",
   "id": "1aa74782-4782-1aa7-8247-a71a8247a71a",
-  "enabled": "true",
+  "enabled": true,
   "assignments": [
     {
       "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
