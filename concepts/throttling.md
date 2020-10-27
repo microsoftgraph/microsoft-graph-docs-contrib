@@ -463,7 +463,7 @@ The following limits apply to requests on the assignment service beta API:
 
 | Request Type                 | Limit per app per tenant     | Limit per tenant for all apps |
 |---------------------------|------------------------------|----------------------------|
-| Any         | 5K per 10 sec   | 15K per request per 10 sec |
+| Any         | 5000 requests per 10 seconds   | 15 000 requests per 10 seconds |
 | GET MeAssignment)  | 50 per 10 sec | 150 per 10 sec |  
 
 The preceding limits apply to the following resources: 
