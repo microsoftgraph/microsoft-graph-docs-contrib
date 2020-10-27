@@ -75,7 +75,21 @@ The following is a JSON representation of the resource.
   "subnetId": "String",
   "healthCheckStatus": "string",
   "healthCheckStatusDetails": {
-    "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetails"
+    "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetails",
+    "startDateTime": "String (timestamp)",
+    "endDateTime": "String (timestamp)",
+    "healthChecks": [
+      {
+        "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
+        "displayName": "String",
+        "status": "String",
+        "startDateTime": "String (timestamp)",
+        "endDateTime": "String (timestamp)",
+        "errorType": "String",
+        "recommendedAction": "String",
+        "additionalDetails": "String"
+      }
+    ]
   },
   "inUse": "Boolean"
 }

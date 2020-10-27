@@ -41,7 +41,14 @@ The following is a JSON representation of the resource.
   "endDateTime": "String (timestamp)",
   "healthChecks": [
     {
-      "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck"
+      "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
+      "displayName": "String",
+      "status": "String",
+      "startDateTime": "String (timestamp)",
+      "endDateTime": "String (timestamp)",
+      "errorType": "String",
+      "recommendedAction": "String",
+      "additionalDetails": "String"
     }
   ]
 }

@@ -51,7 +51,8 @@ The following is a JSON representation of the resource.
   "enabled": "Boolean",
   "assignments": [
     {
-      "@odata.type": "microsoft.graph.cloudPcManagementAssignmentTarget"
+      "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
+      "groupId": "String"
     }
   ]
 }

@@ -49,7 +49,8 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicyAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.cloudPcManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
+    "groupId": "String"
   }
 }
 ```
