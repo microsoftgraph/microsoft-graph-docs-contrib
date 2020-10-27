@@ -1,6 +1,6 @@
 ---
 title: "team: completeMigration"
-description: "Complete the migration of external messages by removing migration mode from a team.""
+description: "Complete the migration of external messages by removing migration mode from a team."
 localization_priority: Normal
 author: "laujan"
 ms.prod: "microsoft-teams"
