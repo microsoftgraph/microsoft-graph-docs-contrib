@@ -459,6 +459,7 @@ dataPolicyOperation.
 
 [!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
 
+### Assignment service limits
 The following limits apply to requests on the assignment service beta API:
 
 | Request Type                 | Limit per app per tenant     | Limit per tenant for all apps |
