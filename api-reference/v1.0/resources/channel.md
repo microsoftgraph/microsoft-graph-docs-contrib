@@ -24,10 +24,10 @@ where files are shared, and where tabs are added.
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Update properties of the channel.|
 |[Delete channel](../api/channel-delete.md) | None | Delete a channel.|
 |[List tabs](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
-|[List members in a channel](../api/channel-members-list.md) | [conversationMember](conversationmember.md) collection | Get the list of conversation members in a channel.|
-|[Add a member to a channel](../api/channel-members-add.md) | [conversationMember](conversationmember.md) | Add conversation members to a channel a new channel. Only supported for `channelType` of `private`.|
-|[Update the role of a member in a channel](../api/channel-members-update.md) | [conversationMember](conversationmember.md) | Update properties of the channel. Only supported for `channelType` of `private`|
-|[Delete a member from a channel](../api/channel-members-delete.md) | None | Delete a conversation member from a channel. Only supported for `channelType` of `private`.|
+|[List members in a channel](../api/channel-members-list.md) | [conversationMember](conversationmember.md) collection | Get the list of members in a channel.|
+|[Add a member to a channel](../api/channel-members-add.md) | [conversationMember](conversationmember.md) | Add members to a channel. Only supported for `channelType` of `private`.|
+|[Update the role of a member in a channel](../api/channel-members-update.md) | [conversationMember](conversationmember.md) | Update the properties of a member of the channel. Only supported for channel with membershipType of 'private`.|
+|[Delete a member from a channel](../api/channel-members-delete.md) | None | Delete a member from a channel. Only supported for `channelType` of `private`.|
 
 ## Properties
 
@@ -39,7 +39,7 @@ where files are shared, and where tabs are added.
 |isFavoriteByDefault|Boolean|Indicates whether the channel should automatically be marked 'favorite' for all members of the team. Can only be set programmatically with [Create team](../api/team-post.md). Default: `false`.|
 |email|String| The email address for sending messages to the channel. Read-only.|
 |webUrl|String|A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
-|membershipType|channelMembershipType|The type of the channel. Can be set during creation and cannot be changed. Possible values are: `Default` - Channel inherits the list of members of the parent team; `private` - Channel can have members that are a subset of all the members on the parent team.
+|membershipType|channelMembershipType|The type of the channel. Can be set during creation and cannot be changed. Possible values are 'standard' - Channel inherits the list of members of the parent team; `private` - Channel can have members that are a subset of all the members on the parent team.
 |createdDateTime|dateTimeOffset|Read only. Timestamp at which the channel was created.|
 
 ## Relationships
