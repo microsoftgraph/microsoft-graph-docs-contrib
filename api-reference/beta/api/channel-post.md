@@ -50,10 +50,10 @@ In the request body, supply a JSON representation of [channel](../resources/chan
 
 If successful, this method returns a `201 Created` response code and a [channel](../resources/channel.md) object in the response body.
 
-If the request is unsuccessful, this method returns a `400 Bad Request` response code. Common reasons for this response are as follows:
+If the request is unsuccessful, this method returns a `400 Bad Request` response code. The following are common reasons for this response:
 
-* `createdDateTime`  set for future.
-* `createdDateTime`  correctly specified but `channelCreationMode`  instance attribute  is missing or set to invalid value.
+* **createdDateTime** is set in the future.
+* **createdDateTime** is correctly specified but the **channelCreationMode** instance attribute is missing or set to an invalid value.
 
 ## Examples
 
