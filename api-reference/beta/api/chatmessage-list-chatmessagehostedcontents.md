@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account)| For **user** or **chat** resource: Chat.Read, Chat.ReadWrite<br/><br/>For **channel** resource: ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| Chat.ReadWrite.All<br/><br/>For **channel** resource: ChannelMessage.Read.Group*, ChannelMessage.Read.All, For **user** or **chat** resource: Chat.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Application| For **user** or **chat** resource: Chat.Read.All, Chat.ReadWrite.All<br/><br/>For **channel** resource: ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
