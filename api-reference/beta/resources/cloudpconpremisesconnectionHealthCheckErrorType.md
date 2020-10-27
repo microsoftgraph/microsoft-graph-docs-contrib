@@ -7,7 +7,7 @@ ms.prod: "microsoft_cloudpc"
 doc_type: enumPageType
 ---
 
-# cloudPcOnPremisesConnectionHealthCheckErrorType values
+# cloudPcOnPremisesConnectionHealthCheckErrorType enum type
 
 Namespace: microsoft.graph
 
