@@ -4910,7 +4910,7 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
-        - name: List members in a channel
+        - name: List members of a channel
           href: api/channel-members-list.md
         - name: Add a member to a channel 
           href: api/channel-members-add.md
