@@ -30,7 +30,7 @@ Represents a [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](/g
 
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | A unique ID (not the teams appID). |
+| id                  | string   | A unique ID (not the Teams appID). |
 
 ## Relationships
 
