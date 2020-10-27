@@ -584,14 +584,19 @@ Location: /teams/{teamId}/operations/{operationId}
 Content-Location: /teams/{teamId}
 ```
 
-#### Error messages
+#### Error response
+
+If the request is unsuccessful, this method returns a `400 Bad Request` response code. 
 
 ```http
 400 Bad Request
 ```
 
-* `createdDateTime`  set for future.
-* `createdDateTime`  correctly specified, but `teamCreationMode`  instance attribute  is missing or set to invalid value.
+The following are common reasons for this response:
+
+* **createdDateTime** is set in the future.
+* **createdDateTime** is correctly specified but the **channelCreationMode** instance attribute is missing or set to an invalid value.
+
 
 ## See also
 

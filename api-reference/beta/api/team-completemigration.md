@@ -15,13 +15,11 @@ Namespace: microsoft.graph
 
 Complete the message migration process by removing `migration mode` from a [team](../resources/team.md). `Migration mode` is a special state where certain operations are barred, like message POST and membership operations during the data migration process.
 
-* Once the `completeMigration` request is made, you cannot import further messages into the team.
-
-* Team members can only be added to the new team after the `completeMigration` request has returned a successful response.
+After a **completeMigration** request is made, you cannot import additional messages into the team. You can add members to the team after the request returns a successful response.
 
 ## Permissions
 
-The following permission is required to call this API. To learn more, *see* [Permissions](/graph/permissions-reference).
+The following permission is required to call this API. To learn more, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permission  |
 |:--------------------|:---------------------------------------------------------|
