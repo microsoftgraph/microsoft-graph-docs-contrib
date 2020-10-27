@@ -469,7 +469,7 @@ The following limits apply to requests on the assignment service beta API:
 The preceding limits apply to the following resources: 
 [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta)
 [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta)
-[educationResourc](/graph/api/resources/educationresource?view=graph-rest-beta)
+[educationResource](/graph/api/resources/educationresource?view=graph-rest-beta)
 
 ### Excel service limits
 
