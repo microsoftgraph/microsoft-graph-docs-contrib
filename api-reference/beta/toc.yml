@@ -10551,7 +10551,7 @@ items:
             - name: Get
               href: api/accessreviewinstance-get.md
             - name: List pending approval
-              href: api/accessreviewinstance-listpendingapproval.md
+              href: api/accessreviewinstance-pendingaccessreviewinstances.md
             - name: Send reminder
               href: api/accessreviewinstance-sendreminder.md
             - name: Stop

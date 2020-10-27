@@ -41,7 +41,6 @@ If successful, this method returns a `204, No Content` response code. It does no
 ## Examples
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "stop_accessReviewInstance"

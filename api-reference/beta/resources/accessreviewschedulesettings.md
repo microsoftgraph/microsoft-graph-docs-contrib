@@ -16,18 +16,18 @@ Namespace: microsoft.graph
 The **accessReviewScheduleSettings** defines the settings of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). 
 
 ## Properties
-| Property                  | Type                                 | Description |
-| :-------------------------| :---------- | :---------- |
-| `mailNotificationsEnabled`|`Boolean`                | Flag to indicate whether emails are enabled/disabled.                |
-| `reminderNotificationsEnabled`|`Boolean`       | Flag to indicate whether reminders are enabled/disabled.       |
-| `justificationRequiredOnApproval`|`Boolean` | Flag to indicate whether reviewers are required to provide justification with their decision. |
-| `defaultDecisionEnabled`|`Boolean` | Flag to indicate whether default decision is enabled/disabled when reviewers do not respond. |
-| `defaultDecision`|`String` | Decision chosen if `defaultDecisionEnabled` is enabled. Can be one of "Approve", "Deny", or "Recommendation". |
-| `instanceDurationInDays`|`Int32` | Duration of each recurrence of review (`accessReviewInstance`) in number of days. |
-| `recurrence`|[patternedRecurrence](../resources/patternedrecurrence.md) | Detailed settings for recurrence. Using standard outlook recurrence object.  |
-| `autoApplyDecisionsEnabled`|`Boolean` | Flag to indicate whether auto-apply feature is enabled. |
-| `applyActions`|[accessReviewApplyAction](../resources/accessreviewapplyaction.md) collection | Optional field. Describes the  actions to take once a review is complete. There are two types that are currently supported: `removeAccessApplyAction` (default) and `disableAndDeleteUserApplyAction`. Field only needs to be specified in the case of `disableAndDeleteUserApplyAction`. See [accessReviewApplyAction](accessreviewapplyaction.md). |
-| `recommendationsEnabled`|`Boolean` | Flag to indicate whether decision recommendations are enabled/disabled. |
+| Property    | Type   | Description |
+| :---------------| :---------- | :---------- |
+| mailNotificationsEnabled|Boolean | Flag to indicate whether emails are enabled/disabled.                |
+| reminderNotificationsEnabled|Boolean  | Flag to indicate whether reminders are enabled/disabled.   |
+| justificationRequiredOnApproval|Boolean | Flag to indicate whether reviewers are required to provide justification with their decision. |
+| defaultDecisionEnabled|Boolean | Flag to indicate whether default decision is enabled/disabled when reviewers do not respond. |
+| defaultDecision|String | Decision chosen if `defaultDecisionEnabled` is enabled. Can be one of "Approve", "Deny", or "Recommendation". |
+| instanceDurationInDays|Int32 | Duration of each recurrence of review (`accessReviewInstance`) in number of days. |
+| recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | Detailed settings for recurrence. Using standard outlook recurrence object.  |
+| autoApplyDecisionsEnabled|Boolean | Flag to indicate whether auto-apply feature is enabled. |
+| applyActions|[accessReviewApplyAction](../resources/accessreviewapplyaction.md) collection | Optional field. Describes the  actions to take once a review is complete. There are two types that are currently supported: `removeAccessApplyAction` (default) and `disableAndDeleteUserApplyAction`. Field only needs to be specified in the case of `disableAndDeleteUserApplyAction`. See [accessReviewApplyAction](accessreviewapplyaction.md). |
+| recommendationsEnabled|Boolean | Flag to indicate whether decision recommendations are enabled/disabled. |
 
 ## Relationships
 None.

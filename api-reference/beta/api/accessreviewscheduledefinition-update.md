@@ -61,7 +61,7 @@ If successful, this method returns a `204, Accepted` response code and no respon
 
 This is an example of updating the displayName of an existing access review series.
 
-##### Request
+### Request
 In the request body, supply a JSON representation of the new properties of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
 

@@ -17,7 +17,7 @@ The accessReviewReviewerScope defines who will review instances of an [accessRev
 
 
 ## Properties
-| Property                  | Type                                 | Description |
+| Property | Type | Description |
 | :-------------------------| :---------- | :---------- |
 | query | String | The query specifying who will be the reviewer. See table for examples. |
 | queryType | String | The type of query. Examples include `MicrosoftGraph` and `ARM`. |

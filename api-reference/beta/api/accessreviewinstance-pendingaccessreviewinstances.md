@@ -1,5 +1,5 @@
 ---
-title: "List accessReviewInstances pending approval"
+title: "accessReviewInstance: pendingAccessReviewInstances"
 description: "Retrieve accessReviewInstance objects pending approval by calling user."
 localization_priority: Normal
 author: "isabelleatmsft"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# List accessReviewInstances pending approval
+# accessReviewInstance: pendingAccessReviewInstances
 
 Namespace: microsoft.graph
 

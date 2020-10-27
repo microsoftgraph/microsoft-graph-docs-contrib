@@ -16,10 +16,10 @@ Namespace: microsoft.graph
 The **accessReviewScope** defines what entities will be reviewed in an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). This is expressed as an odata query. The query type must also be expressed so that scenarios can be supported to review entities outside of MicrosoftGraph, such as ARM.
 
 ## Properties
-| Property                  | Type                                 | Description |
+| Property   | Type  | Description |
 | :-------------------------| :---------- | :---------- |
-| `query`          |`String`  | The query specifying what will be reviewed. See table for examples. |
-| `queryType`          |`String`  | The type of query. Examples include MicrosoftGraph and ARM. |
+| query |String  | The query specifying what will be reviewed. See table for examples. |
+|queryType  |String | The type of query. Examples include MicrosoftGraph and ARM. |
 
 ### Supported queries for accessReviewScope as scope
 The following are queries supported as the `scope` property in an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md)

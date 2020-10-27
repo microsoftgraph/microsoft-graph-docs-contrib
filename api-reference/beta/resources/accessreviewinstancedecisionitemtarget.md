@@ -16,8 +16,7 @@ Namespace: microsoft.graph
 Represents a base class for different types of review targets, each one with its own specific properties. The supported target types are: [accessReviewInstanceDecisionItemUserTarget](accessreviewinstancedecisionitemusertarget.md) and [accessReviewInstanceDecisionItemServicePrincipalTarget](accessreviewinstancedecisionitemserviceprincipaltarget.md).
 
 ## Properties
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
+None.
 
 ## JSON representation
 The following is a JSON representation of the resource.

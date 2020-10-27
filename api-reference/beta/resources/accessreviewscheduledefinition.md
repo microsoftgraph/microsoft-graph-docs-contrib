@@ -28,21 +28,21 @@ An accessReviewScheduleDefinition contains a list of [accessReviewInstance](acce
 |[Update accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | None. | Update properties of an accessReviewScheduleDefinition with a specified identifier. |
 
 ## Properties
-| Property                  | Type                                | Required on Create                     | Description |
-| :-------------------------| :---------------------------------- | :---------- | :---------- |
-| `id`                      |`String`                             | No  | The feature-assigned unique identifier of an access review.|
-| `displayName`             |`String`                             | Yes | Name of access review series.|
-| `createdDateTime`         |`DateTimeOffset`                     | No | DateTime when review series was created. |
-| `lastModifiedDateTime`    |`DateTimeOffset`                     | No | DateTime when review series was last modified.|
-| `status`                  |`string`                             | No  | This read-only field specifies the status of an accessReview. The typical states include `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`. |
-| `descriptionForAdmins`    |`string`                             | Yes  | Description provided by review creators to provide more context of the review to admins. |
-| `descriptionForReviewers` |`string`                             | Yes  | Description provided  by review creators to provide more context of the review to reviewers. |
-| `createdBy`               |[userIdentity](../resources/useridentity.md)       | No  | User who created this review. |
-| `scope`                   |[accessReviewScope](../resources/accessreviewscope.md)  | Yes | Defines scope of users reviewed in a group. For supported scopes, see [accessReviewScope](accessreviewscope.md). | 
-| `instanceEnumerationScope`|[accessReviewScope](../resources/accessreviewscope.md)  | No | In the case of an all groups review, this determines the scope of which groups will be reviewed. Each group will become a unique accessReviewInstance of the access review series.  For supported scopes, see [accessReviewScope](accessreviewscope.md). | 
-| `settings`                |[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| No | The settings for an access review series, see type definition below. |
-| `reviewers`               |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| Yes | This collection of access review scopes is used to define who are the reviewers. See [accessReviewReviewerScope](accessreviewreviewerscope.md). |
-| `instances`               |`Collection(microsoft.graph.accessReviewInstance)`| No | Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there will be an instance for each recurrence. |
+| Property | Type | Description |
+| :------------------| :-------------- | :---------- |
+| id | String | The feature-assigned unique identifier of an access review.|
+| displayName | String   | Name of access review series. Required on create. |
+| createdDateTime  |DateTimeOffset  | DateTime when review series was created. |
+| lastModifiedDateTime | DateTimeOffset   | DateTime when review series was last modified.|
+| status  |string   | This read-only field specifies the status of an accessReview. The typical states include `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`. |
+| descriptionForAdmins  |string  |  Description provided by review creators to provide more context of the review to admins. Required on create. |
+| descriptionForReviewers |string | Description provided  by review creators to provide more context of the review to reviewers. Required on create. |
+| createdBy  |[userIdentity](../resources/useridentity.md)  | User who created this review. |
+| scope  |[accessReviewScope](../resources/accessreviewscope.md)  | Defines scope of users reviewed in a group. For supported scopes, see [accessReviewScope](accessreviewscope.md). Required on create. |
+| instanceEnumerationScope|[accessReviewScope](../resources/accessreviewscope.md)  | In the case of an all groups review, this determines the scope of which groups will be reviewed. Each group will become a unique accessReviewInstance of the access review series.  For supported scopes, see [accessReviewScope](accessreviewscope.md). | 
+| settings  |[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| The settings for an access review series, see type definition below. |
+| reviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This collection of access review scopes is used to define who are the reviewers. See [accessReviewReviewerScope](accessreviewreviewerscope.md). Required on create. |
+| instances |Collection(microsoft.graph.accessReviewInstance)|  Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there will be an instance for each recurrence. |
 
 ## Relationships
 

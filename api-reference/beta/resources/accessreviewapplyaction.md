@@ -20,8 +20,7 @@ Represents a base class for apply actions in the [accessReviewScheduleSettings](
 - **disableAndDeleteUserApplyAction** is a derived type of accessReviewApplyAction that indicates disabling and deleting the user being reviewed upon completion of the review. This is the non-default type and needs to specified in accessReviewScheduleSettings.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
