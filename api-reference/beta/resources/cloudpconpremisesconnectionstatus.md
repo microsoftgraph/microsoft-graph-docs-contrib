@@ -7,14 +7,14 @@ ms.prod: "microsoft_cloudpc"
 doc_type: enumPageType
 ---
 
-### cloudPcOnPremisesConnectionStatus enum type
+# cloudPcOnPremisesConnectionStatus enum type
 
 Namespace: microsoft.graph
 
 Possible on-premises connection status
 
 ## Members
-|Members|Value|Description|
+|Member|Value|Description|
 |:---|:---|:---|
 |pending|0|Created and waiting for health checks|
 |running|10|Health checks are running|

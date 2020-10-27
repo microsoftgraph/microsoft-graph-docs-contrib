@@ -7,12 +7,12 @@ ms.prod: "microsoft_cloudpc"
 doc_type: enumPageType
 ---
 
-### cloudPcDeviceImageStatusDetails enum type
+# cloudPcDeviceImageStatusDetails enum type
 
 Possible image status details
 
 ## Members
-|Members|Value|Description|
+|Member|Value|Description|
 |:---|:---|:---|
 |internalServerError|0|There was an internal server error while processing the image|
 |sourceImageNotFound|1|Source image is inaccessible or not found|

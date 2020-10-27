@@ -7,12 +7,12 @@ ms.prod: "microsoft_cloudpc"
 doc_type: enumPageType
 ---
 
-### cloudPcDeviceImageStatus enum type
+# cloudPcDeviceImageStatus enum type
 
 Possible image status
 
 ## Members
-|Members|Value|Description|
+|Member|Value|Description|
 |:---|:---|:---|
 |pending|0|The image upload is in progress|
 |ready|1|The image is ready for use on Cloud PCs|
