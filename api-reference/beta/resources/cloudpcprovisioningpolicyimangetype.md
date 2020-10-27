@@ -10,6 +10,7 @@ doc_type: enumPageType
 
 Possible types of images that can be used in a provisioning policy
 
+## Members
 |Members|Value|Description|
 |:---|:---|:---|
 |custom|0|The image type is custom|

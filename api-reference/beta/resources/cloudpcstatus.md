@@ -13,6 +13,7 @@ Namespace: microsoft.graph
 
 Possible Cloud PC status types
 
+## Members
 |Members|Value|Description|
 |:---|:---|:---|
 |notProvisioned|0|The Cloud PC is currently not provisioned|

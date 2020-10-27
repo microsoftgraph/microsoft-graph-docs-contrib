@@ -11,6 +11,7 @@ doc_type: enumPageType
 
 Possible image status details
 
+## Members
 |Members|Value|Description|
 |:---|:---|:---|
 |internalServerError|0|There was an internal server error while processing the image|

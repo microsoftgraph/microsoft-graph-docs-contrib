@@ -11,6 +11,7 @@ doc_type: enumPageType
 
 Possible image status
 
+## Members
 |Members|Value|Description|
 |:---|:---|:---|
 |pending|0|The image upload is in progress|

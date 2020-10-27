@@ -13,6 +13,7 @@ Namespace: microsoft.graph
 
 Possible cloudPcOnPremisesConnection health check error values
 
+## Members
 |Members|Value|Description|
 |:---|:---|:---|
 |dnsCheckFqdnNotFound|100|The dns check failed since the fully qualified domain name is not found|
