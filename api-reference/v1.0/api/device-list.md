@@ -131,7 +131,7 @@ ConsistencyLevel: eventual
 The following is an example of the response.
 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -140,14 +140,14 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-
-893
 ```
+
+`893`
 
 ### Example 3: Use OData cast and $search to get membership in groups with display names that contain the letters 'tier' including a count of returned objects
 

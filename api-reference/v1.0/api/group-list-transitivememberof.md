@@ -159,7 +159,7 @@ ConsistencyLevel: eventual
 The following is an example of the response.
 
 <!-- {
-  "blockType": "reponse"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
