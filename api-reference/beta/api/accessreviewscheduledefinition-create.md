@@ -35,6 +35,7 @@ POST /identityGovernance/accessReviews/definitions
 ## Request headers
 | Name         | Description |
 |:-------------|:------------|
+|Authorization|Bearer {token}. Required.|
 | Content-type | application/json. Required. |
 
 ## Request body
