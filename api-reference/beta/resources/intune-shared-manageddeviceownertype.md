@@ -28,4 +28,3 @@ Owner type of device.
 
 
 
-
