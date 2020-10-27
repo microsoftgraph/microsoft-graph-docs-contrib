@@ -1,5 +1,5 @@
 ---
-title: "Create teamsAppInstallation"
+title: "Create userScopeTeamsAppInstallation"
 description: "Install an app in the personal scope of the specified user."
 author: "clearab"
 doc_type: "apiPageType"
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadWriteForUser |
+|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser, TeamsAppInstallation.ReadWrite |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsAppInstallation.ReadWriteForUser.All |
+|Application | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
