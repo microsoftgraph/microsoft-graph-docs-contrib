@@ -76,13 +76,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-## user
-
-**user** is an entity type representing a reviewer, that exposes the reviewer's pending access review instances to that reviewer. The reviewer can also submit decisions via the API.
-
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
-| `pendingAccessReviewInstances`|`Collection(microsoft.graph.accessReviewInstance)`                | Navigation property to get list of access reviews pending approval by reviewer.  |   
 
 <!--
 {
