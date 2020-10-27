@@ -1,13 +1,13 @@
 ---
-title: "List member from a channel"
-description: "List member from a channel."
+title: "List members of a channel"
+description: "List members of a channel."
 author: "laujan"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List member from a channel
+# List members of a channel
 
 Namespace: microsoft.graph
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)|ChannelMember.Read.All, ChannelMember.ReadWrite, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
+|Delegated (work or school account)|ChannelMember.Read.All, ChannelMember.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Member.Read.Group*, ChannelMember.Read.All, ChannelMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Application|ChannelMember.Read.All, ChannelMember.ReadWrite.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
