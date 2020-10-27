@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstanceDecisionItemServicePrincipalTarget resource type"
-description: "In the Azure AD access reviews feature, the `accessReviewInstanceDecisionItemServicePrincipalTarget` represents the target of a review as a service principal target."
+description: "Represents the target of a review as a service principal target."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -11,16 +11,16 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **accessReviewInstanceDecisionItemServicePrincipalTarget** represents a service principal under review in an [accessReviewInstance](accessreviewinstance.md).
+Represents a service principal under review in an [accessReviewInstance](accessreviewinstance.md).
 
 Inherits from [accessReviewInstanceDecisionItemTarget](../resources/accessreviewinstancedecisionitemtarget.md).
 
 ## Properties
-| Property                     | Type                      | Description |
+| Property | Type | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| `servicePrincipalID`          |`String`  | The ID of the service principal whose access is being reviewed. |
-| `servicePrincipalDisplayName`          |`String`  | The display name of the service principal whose access is being reviewed. |
-| `appId`          |`String`  | The appId for the service principal entity being reviewed. |
+| servicePrincipalID | String | The identifier of the service principal whose access is being reviewed. |
+| servicePrincipalDisplayName | String | The display name of the service principal whose access is being reviewed. |
+| appId | String | The appId for the service principal entity being reviewed. |
 
 ## Relationships
 None.
