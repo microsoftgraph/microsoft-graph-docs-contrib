@@ -12352,6 +12352,8 @@ items:
           href: api/conversationmember-delete.md
         - name: Update the role of a member in channel
           href: api/conversationmember-update.md
+        - name: Get all channel messages
+          href: api/channel-getallmessages.md  
       - name: Chat
         href: resources/chat.md
         items:
