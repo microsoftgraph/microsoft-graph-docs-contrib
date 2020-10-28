@@ -1,6 +1,6 @@
 ---
-accessReviewInstance: applyDecisions
-description: "Apply decisions on an accessReviewInstance. "
+title: "accessReviewInstance: applyDecisions"
+description: "Apply decisions on an accessReviewInstance."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
