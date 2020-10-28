@@ -4911,13 +4911,13 @@ items:
         - name: Delete channel
           href: api/channel-delete.md
         - name: List members of a channel
-          href: api/channel-members-list.md
+          href: api/channel-list-members.md
         - name: Add a member to a channel 
-          href: api/channel-members-add.md
+          href: api/channel-add-members.md
         - name: Update the role of a member in a channel
-          href: api/channel-members-update.md
+          href: api/channel-update-members.md
         - name: Delete a member from a channel
-          href: api/channel-members-delete.md
+          href: api/channel-delete-members.md
         - name: Get files folder
           href: api/channel-get-filesfolder.md
         - name: Send message
