@@ -1,6 +1,6 @@
 ---
 title: "List userScopeTeamsAppInstallation"
-description: "Retrieve one-on-one chat between the user and the Teams app installed in the personal scope of the specified user."
+description: "Retrieve one-on-one chat between the specified user and the Teams app."
 author: "AkJo"
 doc_type: "apiPageType"
 localization_priority: Normal
