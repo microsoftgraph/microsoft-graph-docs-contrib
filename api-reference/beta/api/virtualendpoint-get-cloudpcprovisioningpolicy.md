@@ -79,8 +79,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 ``` http
 HTTP/1.1 200 OK
-
 Content-Type: application/json
+
 {
   "value": {
     "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",

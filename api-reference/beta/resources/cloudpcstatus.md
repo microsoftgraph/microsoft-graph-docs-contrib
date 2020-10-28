@@ -7,14 +7,14 @@ ms.prod: "microsoft_cloudpc"
 doc_type: enumPageType
 ---
 
-### cloudPcStatus enum type
+# cloudPcStatus enum type
 
 Namespace: microsoft.graph
 
 Possible Cloud PC status types
 
 ## Members
-|Members|Value|Description|
+|Member|Value|Description|
 |:---|:---|:---|
 |notProvisioned|0|The Cloud PC is currently not provisioned|
 |provisioning|1|Cloud PC provisioning is in progress|

@@ -7,14 +7,14 @@ ms.prod: "microsoft_cloudpc"
 doc_type: enumPageType
 ---
 
-### cloudPcOnPremisesConnectionHealthCheckErrorType values
+# cloudPcOnPremisesConnectionHealthCheckErrorType enum type
 
 Namespace: microsoft.graph
 
 Possible cloudPcOnPremisesConnection health check error values
 
 ## Members
-|Members|Value|Description|
+|Member|Value|Description|
 |:---|:---|:---|
 |dnsCheckFqdnNotFound|100|The dns check failed since the fully qualified domain name is not found|
 |dnsCheckUnknownError|199|The dns check failed due to an unknown error
