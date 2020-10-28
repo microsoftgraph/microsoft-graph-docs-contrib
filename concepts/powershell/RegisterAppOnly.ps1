@@ -26,7 +26,7 @@ $GroupReadAll = @{
 }
 
 # Requires an admin
-Connect-Graph -Scopes "Application.ReadWrite.All User.Read"
+Connect-MgGraph -Scopes "Application.ReadWrite.All User.Read"
 
 # Get context for access to tenant ID
 $context = Get-MgContext
@@ -55,19 +55,19 @@ Write-Host -ForeGroundColor Yellow "Please go to the following URL in your brows
 Write-Host $adminConsentUrl
 Write-Host
 
-# Generate Connect-Graph command
-$connectGraph = "Connect-Graph -ClientId """ + $appRegistration.AppId + """ -TenantId """`
+# Generate Connect-MgGraph command
+$connectGraph = "Connect-MgGraph -ClientId """ + $appRegistration.AppId + """ -TenantId """`
  + $context.TenantId + """ -CertificateName """ + $cert.SubjectName.Name + """"
-Write-Host -ForeGroundColor Cyan "After providing admin consent, you can use the following values with Connect-Graph for app-only:"
+Write-Host -ForeGroundColor Cyan "After providing admin consent, you can use the following values with Connect-MgGraph for app-only:"
 Write-Host $connectGraph
 
 if ($StayConnected -eq $false)
 {
-  Disconnect-Graph
+  Disconnect-MgGraph
   Write-Host "Disconnected from Microsoft Graph"
 }
 else
 {
   Write-Host
-  Write-Host -ForegroundColor Yellow "The connection to Microsoft Graph is still active. To disconnect, use Disconnect-Graph"
+  Write-Host -ForegroundColor Yellow "The connection to Microsoft Graph is still active. To disconnect, use Disconnect-MgGraph"
 }

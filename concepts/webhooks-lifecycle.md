@@ -16,9 +16,9 @@ Certain events can cause a subscription to be removed. These events include:
 - User's device is out of compliance
 -	User's account has been revoked
 
-When such an event happens, Outlook sends a special lifecycle notification, `subscriptionRemoved`.
+When such an event happens, Microsoft Graph sends a special lifecycle notification, `subscriptionRemoved`.
 
-Outlook also sends another lifecycle notification, `missed`, if a change notification cannot be delivered to an app.
+Microsoft Graph also sends another lifecycle notification, `missed`, if a change notification cannot be delivered to an app.
 
 An app subscribing to change notifications should listen to the `subscriptionRemoved` and `missed` signals and do the following:
 
@@ -26,6 +26,15 @@ An app subscribing to change notifications should listen to the `subscriptionRem
 - On receiving a `missed` lifecycle notification, the app should resynchronize resource data using Microsoft Graph.
 
 To receive lifecycle notifications, you can use the existing **notificationUrl** endpoint that already receives change notifications, or you can register a separate **lifecycleNotificationUrl** to receive `subscriptionRemoved` and `missed` lifecycle notifications in a separate endpoint.
+
+Lifecycle notifications are supported for subscriptions created on these resource types:
+
+- Outlook [message][]
+- Outlook [event][]
+- Outlook personal [contact][]
+- Teams [chatMessage][]
+
+For other resource types, you may still provide a `lifecycleNotificationUrl` when creating the subscription and your application will receive lifecycle notifications whenver the resource implements it.
 
 ## Creating a subscription
 
@@ -255,3 +264,9 @@ You should implement your code in a future-proof way so it does not break when M
 - [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
 - [Delete subscription](/graph/api/subscription-delete?view=graph-rest-1.0)
 - [Update subscription](/graph/api/subscription-update?view=graph-rest-1.0)
+
+
+[contact]: /graph/api/resources/contact?view=graph-rest-1.0
+[event]: /graph/api/resources/event?view=graph-rest-1.0
+[message]: /graph/api/resources/message?view=graph-rest-1.0
+[chatMessage]: /graph/api/resources/chatmessage
