@@ -7,7 +7,7 @@ author: jasonjoh
 
 # Use the Microsoft Graph SDKs with the beta API
 
-The Microsoft Graph SDKs use the [v1.0](/graph/api/overview?view=graph-rest-1.0) Microsoft Graph endpoint by default. The SDKs can be used with the [beta](/graph/api/overview?view=graph-rest-beta) endpoint for non-production applications. The method for accessing the beta endpoint depends on which SDK you are using.
+Many of the Microsoft Graph SDKs use the [v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=false) Microsoft Graph endpoint by default. The SDKs can be used with the [beta](/graph/api/overview?view=graph-rest-beta&preserve-view=true) endpoint for non-production applications. The method for accessing the beta endpoint depends on which SDK you are using.
 
 [!INCLUDE [beta-disclaimer](../../api-reference/includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ using Microsoft.Graph.Beta;
 GraphServiceClient graphClient = new GraphServiceClient(...);
 ```
 
-## [TypeScript](#tab/typeScript)
+# [TypeScript](#tab/typeScript)
 
 The [Microsoft Graph JavaScript Client Library](https://github.com/microsoftgraph/msgraph-sdk-javascript) can call the beta API in one of two ways.
 
@@ -71,6 +71,33 @@ NSString* meUrlString = [NSString stringWithFormat:@"%@/me", "https://graph.micr
 NSURL* meUrl = [[NSURL alloc] initWithString:meUrlString];
 
 NSMutableURLRequest* meRequest = [[NSMutableURLRequest alloc] initWithURL:meUrl];
+```
+
+# [PHP](#tab/PHP)
+
+The [Microsoft Graph SDK for PHP](https://github.com/microsoftgraph/msgraph-sdk-php) supports the beta endpoint and models. You set the beta endpoint with the `setApiVersion` method. You will need to disambiguate the v1.0 and beta models by providing an alias.
+
+```php
+use Microsoft\Graph\Graph;
+use Beta\Microsoft\Graph\Model as BetaModel;
+
+class UseBeta
+{
+    public function run()
+    {
+        $accessToken = 'xxx';
+
+        $graph = new Graph();
+        $graph->setAccessToken($accessToken);
+
+        $user = $graph->setApiVersion("beta")
+                      ->createRequest("GET", "/me")
+                      ->setReturnType(BetaModel\User::class)
+                      ->execute();
+
+        echo "Hello, I am $user->getGivenName() ";
+    }
+}
 ```
 
 ---
