@@ -36,16 +36,16 @@ The `User.Read.All` permission scope will enable the first two calls, and the `G
 
 ### Sign in
 
-Use the `Connect-Graph` command to sign in with the required scopes. You'll need to sign in with an admin account to consent to the required scopes.
+Use the `Connect-MgGraph` command to sign in with the required scopes. You'll need to sign in with an admin account to consent to the required scopes.
 
 ```powershell
-Connect-Graph -Scopes "User.Read.All","Group.ReadWrite.All"
+Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 ```
 
 The command prompts you to go to a web page to sign in using a device code. Once you've done that, the command indicates success with a `Welcome To Microsoft Graph!` message. You only need to do this once per session.
 
 > [!TIP]
-> You can add additional permissions by repeating the `Connect-Graph` command with the new permission scopes.
+> You can add additional permissions by repeating the `Connect-MgGraph` command with the new permission scopes.
 
 ## Call Microsoft Graph
 
