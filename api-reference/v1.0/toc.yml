@@ -4914,6 +4914,11 @@ items:
           href: api/channel-post-messages.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
+      - name: Chat
+        href: resources/chat.md
+        items:
+        - name: Get one-on-one chat between user and Teams app
+          href: api/user-chat-userScopeTeamsAppInstallation.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -4922,33 +4927,7 @@ items:
         - name: Reply to message
           href: api/channel-post-messagereply.md
         - name: Update message
-          href: api/chatmessage-update.md 
-      - name: Conversation member
-        href: resources/conversationmember.md
-        items:
-        - name: List members
-          href: api/conversationmember-list.md
-        - name: Get member
-          href: api/conversationmember-get.md
-        - name: Add member
-          href: api/conversationmember-add.md
-        - name: Update member
-          href: api/conversationmember-update.md
-        - name: Delete member
-          href: api/conversationmember-delete.md
-      - name: Azure AD user conversation member
-        href: resources/aaduserconversationmember.md
-        items:
-        - name: List members
-          href: api/conversationmember-list.md
-        - name: Get member
-          href: api/conversationmember-get.md
-        - name: Add member
-          href: api/conversationmember-add.md
-        - name: Update member
-          href: api/conversationmember-update.md
-        - name: Delete member
-          href: api/conversationmember-delete.md         
+          href: api/chatmessage-update.md      
       - name: App catalog
         items:
         - name: App in catalog
@@ -4981,6 +4960,8 @@ items:
           href: api/user-delete-teamsappinstallation.md
         - name: Upgrade installed app for user
           href: api/user-upgrade-teamsappinstallation.md
+        - name: List chat between user and Teams app
+          href: api/user-chat-userScopeTeamsAppInstallation.md
       - name: Tab
         href: resources/teamstab.md
         items:
