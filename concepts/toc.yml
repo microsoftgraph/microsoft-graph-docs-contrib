@@ -549,6 +549,8 @@ items:
             items:
               - name: Overview
                 href: toolkit/get-started/overview.md
+              - name: Create an Azure Active Directory app
+                href: toolkit/get-started/add-aad-app-registration.md
               - name: Build a web application (JavaScript)
                 href: toolkit/get-started/build-a-web-app.md
               - name: Build a SharePoint web part

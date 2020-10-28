@@ -2,7 +2,7 @@
 title: "Use the Microsoft Graph Toolkit with React"
 description: "Get started using the Microsoft Graph Toolkit in a React application."
 localization_priority: Normal
-author: elisenyang
+author: waldekmastykarz
 ---
 
 # Use the Microsoft Graph Toolkit with React
@@ -93,6 +93,8 @@ Now that we have registered our application with Azure Active Directory, we can 
 
     Next, in the provider, we specify the ID of our Azure AD application.
 
+    Finally, we add the **Login** Microsoft Graph Toolkit React component which will display the **Sign In** button people can use to sign in with their Microsoft account to your app.
+
 1. Replace the value of the `clientId` property with the value of the `Application (client) ID` property you copied previously in the Azure Portal
 1. Go back to the browser where your React app is running. You should now see a **Sign In** button
    ![React app showing the Sign In button](../images/mgt-react-signin-button.png)
@@ -159,7 +161,7 @@ Microsoft Graph Toolkit not only simplifies authentication to Microsoft 365 but 
 
 ## Next steps
 
-- See [what's in the Microsoft Graph Toolkit](https://docs.microsoft.com/graph/toolkit/overview#whats-in-the-microsoft-graph-toolkit?WT.mc_id=m365-10340-wmastyka)
+- See [what's in the Microsoft Graph Toolkit](../overview.md)
 - Try out the components in the [playground](https://mgt.dev).
 - Ask a question on [Stack Overflow](https://aka.ms/mgt-question).
 - Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).

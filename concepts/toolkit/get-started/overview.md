@@ -54,6 +54,8 @@ The polyfills are already included if you're using the Toolkit via the mgt-loade
 
 ## Next Steps
 You're now ready to start developing with the Microsoft Graph Toolkit! The following guides are available to help you get started:
+
+- [Create an Azure Active Directory app](./add-aad-app-registration.md)
 - [Build a web application](./build-a-web-app.md) (vanilla JavaScript)
 - [Build a SharePoint web part](./build-a-sharepoint-web-part.md)
 - [Build a Microsoft Teams tab](./build-a-microsoft-teams-tab.md)
