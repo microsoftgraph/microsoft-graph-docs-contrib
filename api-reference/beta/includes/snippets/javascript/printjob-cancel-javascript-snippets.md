@@ -10,12 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-const authorizationPolicy = {
-   blockMsolPowerShell:true
-};
-
-let res = await client.api('/policies/authorizationPolicy/authorizationPolicy')
+let res = await client.api('/print/printers/{id}/jobs/{id}/cancel')
 	.version('beta')
-	.update(authorizationPolicy);
+	.post();
 
 ```
