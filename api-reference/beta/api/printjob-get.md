@@ -29,12 +29,12 @@ In addition to the following permissions, the user or app's tenant must have an 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 
-To get job from a printer:
+To get a job from a printer:
 ```http
 GET /print/printers/{id}/jobs/{id}
 ```
 
-To get job from a printer share:
+To get a job from a printer share:
 ```http
 GET /print/shares/{id}/jobs/{id}
 ```
