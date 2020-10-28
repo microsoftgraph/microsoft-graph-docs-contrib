@@ -25,7 +25,7 @@ Represents a [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](ch
 |[Add app for user](../api/user-add-teamsappinstallation.md) | None | Adds (installs) an app in the personal scope of a user. |
 |[Remove app for user](../api/user-delete-teamsappinstallation.md) | None | Removes (uninstalls) an app in the personal scope of a user. |
 |[Upgrade app installed for user](../api/user-upgrade-teamsappinstallation.md) | None | Upgrades to the latest version of the app installed in the personal scope of a user.|
-|[List chat between user and Teams app](../api/user-userScopeTeamsAppInstallation.md) | [chat](chat.md) | Lists the one-on-one chat between the specified user and Teams app. |
+|[List chat between user and Teams app](../api/user-userScopeTeamsAppInstallation.md) | [chat](chat.md) | Lists one-on-one chat between the user and Teams app. |
 
 ## Properties
 
