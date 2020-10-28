@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get a set of [todoTaskList](../resources/todotasklist.md) resources that have been added, deleted, or removed in Microsoft To Do.
 
 A **delta** function call for **todoTaskList** is similar to a GET request, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls, 
@@ -76,7 +74,7 @@ The main differences between tracking **todoTaskList** and tracking **todoTask**
 
 <!-- { "blockType": "ignored" } -->
 ``` http
-GET https://graph.microsoft.com/beta/me/todo/lists/delta
+GET https://graph.microsoft.com/v1.0/me/todo/lists/delta
 Prefer: odata.maxpagesize=2
 ```
 ### Response
@@ -96,7 +94,7 @@ Content-type: application/json
 Content-length: 254
 
 {
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/me/todo/lists/delta?$skiptoken=ldfdgdgfoT5csv4k99nvQqyku0jaGqMhc6XyFff5qQTQ7RJOr",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/todo/lists/delta?$skiptoken=ldfdgdgfoT5csv4k99nvQqyku0jaGqMhc6XyFff5qQTQ7RJOr",
   "value": [
     {
       "@odata.etag":"W/\"4rfRVIPi9EqXgDbc8U7HGwADLLQ93w==\"",
