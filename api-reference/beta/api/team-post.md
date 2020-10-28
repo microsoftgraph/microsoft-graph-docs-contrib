@@ -595,7 +595,7 @@ If the request is unsuccessful, this method returns a `400 Bad Request` response
 The following are common reasons for this response:
 
 * **createdDateTime** is set in the future.
-* **createdDateTime** is correctly specified but the **channelCreationMode** instance attribute is missing or set to an invalid value.
+* **createdDateTime** is correctly specified but the **teamCreationMode** instance attribute is missing or set to an invalid value.
 
 
 ## See also
