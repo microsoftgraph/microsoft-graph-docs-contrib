@@ -100,6 +100,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
   "value": [
     {
       "id": "11111111-2222-3333-4444-555555555555",
