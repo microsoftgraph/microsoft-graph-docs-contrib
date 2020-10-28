@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application| ChannelMember.ReadWrite.All |
 
 ## HTTP request
-<!-- { "blockType": "ignored"} -->
+
 ```http
 DELETE /channels/{id}/members/{id}
 ```
@@ -68,3 +68,16 @@ Here is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Get channel",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
