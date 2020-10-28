@@ -211,7 +211,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
 ```http
