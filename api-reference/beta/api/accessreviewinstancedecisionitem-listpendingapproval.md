@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/pendingAccessReviewInstances/{instance-id}/decisions?$top={pagesize}&$skip=0
+GET /me/pendingAccessReviewInstances/{instance-id}/decisions
 ```
 ## Request headers
 None.
