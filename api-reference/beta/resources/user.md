@@ -154,7 +154,7 @@ This resource supports:
 | assignedLicenses | [assignedLicense](assignedlicense.md) collection | The licenses that are assigned to the user. <br><br>Returned only on `$select`. Not nullable. |
 | assignedPlans | [assignedPlan](assignedplan.md) collection | The plans that are assigned to the user. <br><br>Returned only on `$select`. Read-only. Not nullable. |
 | birthday | DateTimeOffset | The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` <br><br>Returned only on `$select`. |
-| businessPhones | String collection | The telephone numbers for the user. Only one number can be set for this property. <br><br>Returned by default. |
+| businessPhones | String collection | The telephone numbers for the user. Only one number can be set for this property. <br><br>Returned by default. Read-only for users synced from on-premises directory. |
 | city | String | The city in which the user is located. <br><br>Returned only on `$select`. Supports `$filter`. |
 | companyName | String | The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 chararcters.<br><br>Returned only on `$select`. |
 | consentProvidedForMinor | String| Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. <br><br>Returned only on `$select`. |
@@ -186,7 +186,7 @@ This resource supports:
 | mail | String | The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". <br><br>Returned by default. Supports `$filter`. |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | Settings for the primary mailbox of the signed-in user. You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update-mailboxsettings.md) settings for sending automatic replies to incoming messages, locale, and time zone. <br><br>Returned only on `$select`. |
 | mailNickname | String | The mail alias for the user. This property must be specified when a user is created. <br><br>Returned only on `$select`. Supports `$filter`. |
-| mobilePhone | String | The primary cellular telephone number for the user. <br><br>Returned by default. |
+| mobilePhone | String | The primary cellular telephone number for the user. <br><br>Returned by default. Read-only for users synced from on-premises directory. |
 | mySite | String | The URL for the user's personal site. <br><br>Returned only on `$select`. |
 | officeLocation | String | The office location in the user's place of business. <br><br>Returned by default. |
 | onPremisesDistinguishedName | String | Contains the on-premises Active Directory `distinguished name` or `DN`. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. <br><br>Returned only on `$select`. Read-only. |
