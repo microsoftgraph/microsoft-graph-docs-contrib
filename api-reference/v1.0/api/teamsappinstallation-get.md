@@ -1,13 +1,13 @@
 ---
 title: "Get an app in team"
-description: "Retrieve an app installed in the specified team."
+description: "Retrieve an app installed in team."
 author: "AkJo"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get an app in the specified team
+# Get the installed app in team
 
 Namespace: microsoft.graph
 
