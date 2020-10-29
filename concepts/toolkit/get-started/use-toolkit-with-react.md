@@ -17,7 +17,7 @@ Following sections take you step-by-step through the process of using Microsoft 
 
 ## Prerequisites
 
-To follow the steps below, you'll need a development machine with [Node.js](https://nodejs.org) and an account with Microsoft Azure. You can [get one for free](https://azure.microsoft.com/free/https://azure.microsoft.com/free/?WT.mc_id=m365-10340-wmastyka) if you don't have one yet.
+To follow the steps in this article, you'll need a Microsoft 365 development environment as well as a few tools. See the [getting started](./overview.md) page for the exact instructions to setup your machine.
 
 ## Create a React app
 
@@ -74,7 +74,7 @@ Now that we have registered our application with Azure Active Directory, we can 
       
       function App() {
         Providers.globalProvider = new MsalProvider({
-          clientId: 'd7cb93c9-9097-4e38-8f06-7c0088ac3318'
+          clientId: 'REPLACE_WITH_CLIENTID'
         });
       
         return (
@@ -120,7 +120,7 @@ Microsoft Graph Toolkit not only simplifies authentication to Microsoft 365 but 
     function App() {
       const [isLoggedIn, setIsLoggedIn] = useState(false);
       Providers.globalProvider = new MsalProvider({
-        clientId: 'd7cb93c9-9097-4e38-8f06-7c0088ac3318',
+        clientId: 'REPLACE_WITH_CLIENTID',
         scopes: ['calendars.read', 'user.read', 'openid', 'profile', 'people.read', 'user.readbasic.all']
       });
       Providers.globalProvider.onStateChanged(e => {
