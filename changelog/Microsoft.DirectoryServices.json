@@ -61,6 +61,42 @@
     {
       "ChangeList": [
         {
+          "Id": "b6d9ad0a-0022-4bb4-bcda-30dbad8f006c",
+          "ApiChange": "Property",
+          "ChangedApiName": "businessPhones,mobilePhone",
+          "ChangeType": "Change",
+          "Description": "Changed the **businessPhones** and **mobilePhone** properties to read-only for users synced from on-premises directory on the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity.",
+          "Target": "user"
+        }
+      ],
+      "Id": "ba3d7197-1fee-4e87-adca-c7a8c28efdec",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-27T00:00:00",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f7a49137-8a12-4988-8c7b-cd51cff6a20f",
+          "ApiChange": "Property",
+          "ChangedApiName": "businessPhones,mobilePhone",
+          "ChangeType": "Change",
+          "Description": "Changed the **businessPhones** and **mobilePhone** properties to read-only for users synced from on-premises directory on the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) entity.",
+          "Target": "user"
+        }
+      ],
+      "Id": "ba3d7197-1fee-4e87-adca-c7a8c28efdec",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-10-27T00:00:00",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ba3d7197-1fee-4e87-adca-c7a8c28efdec",
           "ApiChange": "Property",
           "ChangedApiName": "employeeType,employeeOrgData,employeeHireDate",

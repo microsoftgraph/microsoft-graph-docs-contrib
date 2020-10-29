@@ -1,7 +1,41 @@
 {
   "changelog": [
+     {
+      "ChangeList": [
+        {
+          "Id": "02e69865-7b7d-4b24-986c-78b906237f31",
+          "ApiChange": "Method",
+          "ChangedApiName": "completeMigration",
+          "ChangeType": "Addition",
+          "Description": "Added support for **completeMigration** to the [channel](https://docs.microsoft.com/graph/api/resources/channel?view=graph-rest-beta) and [team](https://docs.microsoft.com/graph/api/resources/team?view=graph-rest-beta) resources.",
+          "Target": "channel,team"
+        },
+        {
+          "Id": "2294de07-b926-4fc7-87d5-3d1cf4e55d57",
+          "ApiChange": "Property",
+          "ChangedApiName": "teamCreationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamCreationMode** property to the  [team](https://docs.microsoft.com/graph/api/resources/team?view=graph-rest-beta) resource.",
+          "Target": "team"
+        }
+      ],
+      "Id": "4b1a936b-7bc2-4419-9fb1-f61c09d06697",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-27T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
+        {
+          "Id": "e592c67e-815f-44f6-8002-fe55a0c120fd",
+          "ApiChange": "Property",
+          "ChangedApiName": "channelCreationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **channelCreationMode** property to the [channel](https://docs.microsoft.com/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel,team"
+        },
         {
           "Id": "4b1a936b-7bc2-4419-9fb1-f61c09d06697",
           "ApiChange": "Property",
