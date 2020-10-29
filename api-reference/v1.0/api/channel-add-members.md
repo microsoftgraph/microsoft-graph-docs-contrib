@@ -108,7 +108,7 @@ Here is a request to add a member with "owner" role to the channel.
   "name": "create_member"
 } -->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members/
+POST https://graph.microsoft.com/v1.0/channels/{id}/members/{id}
 content-type: application/json
 content-length: 26
 {
