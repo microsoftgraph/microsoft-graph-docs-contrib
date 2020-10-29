@@ -185,6 +185,14 @@ Expect varying delays between the time a change is made to a resource instance, 
 
 Delta queries are available for customers hosted on the public cloud and Microsoft Graph China operated by 21Vianet only.
 
+### Replays
+
+Your application must be prepared for replays, which occur when the same change appears in subsequent responses. While delta query makes a best effort to reduce replays, they are still possible.
+
+### Synchronization Reset
+
+Delta query can return a response code of `410 (gone)` and a **Location** header containing a request URL with an empty delta token (same as the initial query). This is an indication that the application must restart with a full synchronization of the target tenant. This usually happens to prevent data inconsistency due to internal maintenance or migration of the target tenant.
+
 ### Token duration
 
 Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again. For directory objects (**application**, **administrativeUnit**, **directoryObject**, **directoryRole**, **group**, **orgContact**, **oauth2permissiongrant**, **servicePrincipal**, and **user**), the limit is 7 days. For education objects (**educationSchool**, **educationUser**, and **educationClass**), the limit is 7 days. For Outlook entities (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask**, and **todoTaskList**), the upper limit is not fixed; it's dependent on the size of the internal delta token cache. While new delta tokens are continuously added in the cache, after the cache capacity is exceeded, the older delta tokens are deleted.
