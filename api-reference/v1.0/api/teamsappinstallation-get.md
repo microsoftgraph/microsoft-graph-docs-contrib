@@ -1,0 +1,173 @@
+---
+title: "Get an app in team"
+description: "Retrieve an app installed in the specified team."
+author: "AkJo"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+doc_type: apiPageType
+---
+
+# Get an app in the specified team
+
+Namespace: microsoft.graph
+
+Retrieve the [app](../resources/teamsappinstallation.md) installed in the specified [team](../resources/team.md).
+
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteForTeam, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+## HTTP request
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /teams/{id}/installedApps/{id}
+```
+
+## Optional query parameters
+
+This method supports the $filter, $select, and $expand [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+## Request headers
+
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required.  |
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and an app [teamsAppInstallation](../resources/teamsappinstallation.md) in the response body.
+
+## Examples
+
+### Example 1: List the installed app
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_installed_teams_apps"
+}-->
+
+```msgraph-interactive
+GET /teams/{id}/installedApps/{id}
+```
+
+---
+
+#### Response
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "name": "get_installed_teams_apps",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "id": "id-value"
+    }
+  ]
+}
+```
+
+### Example 2: Get the names and other details of the installed app
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_installed_teams_apps_expand"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps/{id}?$expand=teamsAppDefinition
+```
+
+---
+
+#### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "name": "get_installed_teams_apps_expand",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+        {
+            "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg=",
+            "teamsAppDefinition": {
+                "id": "MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==",
+                "teamsAppId": "0d820ecd-def2-4297-adad-78056cde7c78",
+                "displayName": "OneNote",
+                "version": "1.0.0"
+            }
+        },
+        {
+            "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZmQ5MjVhMC0zNTdmLTRkMjUtODQ1Ni1iMzAyMmFhYTQxYTk=",
+            "teamsAppDefinition": {
+                "id": "MGZkOTI1YTAtMzU3Zi00ZDI1LTg0NTYtYjMwMjJhYWE0MWE5IyMxLjc=",
+                "teamsAppId": "0fd925a0-357f-4d25-8456-b3022aaa41a9",
+                "displayName": "SurveyMonkey",
+                "version": "1.7"
+            }
+        },
+        {
+            "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMyYTUyNzcwMy0xZjZmLTQ1NTktYTMzMi1kOGE3ZDI4OGNkODg=",
+            "teamsAppDefinition": {
+                "id": "MmE1Mjc3MDMtMWY2Zi00NTU5LWEzMzItZDhhN2QyODhjZDg4IyMxLjA=",
+                "teamsAppId": "2a527703-1f6f-4559-a332-d8a7d288cd88",
+                "displayName": "SharePoint",
+                "version": "1.0"
+            }
+        }
+  ]
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List owners",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}-->
+
