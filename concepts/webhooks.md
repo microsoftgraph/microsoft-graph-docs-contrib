@@ -296,8 +296,8 @@ The following table lists the latency to expect between an event happening in th
 |[message][] | Unknown | Unknown |
 |[alert][] | Less than 3 minutes | 5 minutes |
 |[presence][] (preview) | Less than 10 seconds | 1 minute |
-|[user][] | Less than 2 minutes | 15 minutes |
 |[printTaskDefinition][] | Less than 1 minute | 5 minutes |
+|[user][] | Less than 2 minutes | 15 minutes |
 
 >**Note:** The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
 
