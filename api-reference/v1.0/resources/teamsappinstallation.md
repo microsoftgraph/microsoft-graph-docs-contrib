@@ -11,17 +11,19 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md), or the personal scope of a [user](user.md). Any bots that are part of the app will become part of any team, chat, or user's personal scope that the app is added to.
+Represents a [teamsApp](teamsapp.md) installed in a [team](team.md) or the personal scope of a [user](user.md). Any bots that are part of the app will become part of any team or user's personal scope that the app is added to.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List apps installed in team](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) | Lists apps installed in a team.|
+|[Get an app installed in team](../api/teamsappinstallation-get.md) | [teamsAppInstallation](teamsappinstallation.md) | Lists apps installed in a team.|
 |[Add app to team](../api/teamsappinstallation-add.md) | None | Adds (installs) an app to a team.|
 |[Remove app from team](../api/teamsappinstallation-delete.md) | None | Removes (uninstalls) an app from a team.|
 |[Upgrade app installed in team](../api/teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app installed in team.|
 |[List apps installed for user](../api/user-list-teamsappinstallation.md)| [teamsAppInstallation](teamsappinstallation.md) collection | Lists apps installed in the personal scope of a user. |
+|[Get an app installed for user](../api/user-get-teamsappinstallation.md)| [teamAppInstallation](teamsappinstallation.md) | Lists the specified app installed in the personal scope of a user. |
 |[Add app for user](../api/user-add-teamsappinstallation.md) | None | Adds (installs) an app in the personal scope of a user. |
 |[Remove app for user](../api/user-delete-teamsappinstallation.md) | None | Removes (uninstalls) an app from the personal scope of a user. |
 |[Upgrade app installed for user](../api/user-upgrade-teamsappinstallation.md) | None | Upgrades to the latest version of the app installed in the personal scope of a user.|
