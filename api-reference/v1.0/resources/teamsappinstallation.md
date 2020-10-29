@@ -18,7 +18,7 @@ Represents a [teamsApp](teamsapp.md) installed in a [team](team.md) or the perso
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List apps installed in team](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) | Lists apps installed in a team.|
-|[Get an app installed in team](../api/teamsappinstallation-get.md) | [teamsAppInstallation](teamsappinstallation.md) | Lists apps installed in a team.|
+|[Get the installed app in team](../api/teamsappinstallation-get.md) | [teamsAppInstallation](teamsappinstallation.md) | Lists apps installed in a team.|
 |[Add app to team](../api/teamsappinstallation-add.md) | None | Adds (installs) an app to a team.|
 |[Remove app from team](../api/teamsappinstallation-delete.md) | None | Removes (uninstalls) an app from a team.|
 |[Upgrade app installed in team](../api/teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app installed in team.|
