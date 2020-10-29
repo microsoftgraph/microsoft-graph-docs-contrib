@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application| ChannelMember.ReadWrite.All |
 
 ## HTTP request
-<!-- { "blockType": "ignored"} -->
+<!-- {"blockType": "ignored"} -->
 ```http
 POST /teams/{id}/channels/{id}/members
 ```
@@ -64,7 +64,6 @@ Here is an example of the request to add a basic member to the channel.
 POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members/
 content-type: application/json
 content-length: 26
-
 {
   "@odata.type": "#microsoft.graph.aadUserConversationMember",
   "roles": [],
