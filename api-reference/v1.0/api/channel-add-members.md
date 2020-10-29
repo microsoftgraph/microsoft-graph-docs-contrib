@@ -62,8 +62,9 @@ Here is an example of the request to add a basic member to the channel.
   "blockType": "request",
   "name": "create_member"
 } -->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/channels/{id}/members/{id}
+```
 content-type: application/json
 content-length: 26
 {
@@ -111,7 +112,7 @@ Here is a request to add a member with "owner" role to the channel.
   "blockType": "request",
   "name": "create_member"
 } -->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/channels/{id}/members/{id}
 content-type: application/json
 content-length: 26
