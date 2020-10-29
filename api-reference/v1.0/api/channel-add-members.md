@@ -57,6 +57,7 @@ If successful, this method returns a `201 Created` response code and a [conversa
 
 Here is an example of the request to add a basic member to the channel.
 
+
 <!-- {
   "blockType": "request",
   "name": "create_member"
@@ -127,6 +128,7 @@ content-length: 26
 Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "request",
   "name": "create_member"
