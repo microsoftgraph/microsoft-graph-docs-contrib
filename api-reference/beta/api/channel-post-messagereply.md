@@ -140,7 +140,7 @@ Content-length: 160
 
 ### Example 2: Import messages
 
-> **Note**: No special permission scopes are required for this scenario because the request is part of **chatMessage**; scopes for **chatMessage** apply here as well.
+> **Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario.
 
 #### Request
 <!-- { "blockType": "ignored" } -->
