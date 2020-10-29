@@ -11,7 +11,7 @@ ms.prod: "microsoft-teams"
 
 Namespace: microsoft.graph
 
-Retrieve the [chat](../resources/chat.md) of the specified [user](../resources/user.md).
+Retrieve the [chat](../resources/chat.md) of the specified [user](../resources/user.md) and [Teams app](../resources/teamsapp.md).
 
 ## Permissions
 
