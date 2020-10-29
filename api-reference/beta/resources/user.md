@@ -58,6 +58,7 @@ This resource supports:
 | [List contacts](../api/user-list-contacts.md) | [contact](contact.md) collection | Get a contact collection from the default contacts folder of the signed-in user. |
 | [List contactFolders](../api/user-list-contactfolders.md) | [contactFolder](contactfolder.md) collection | Get the contact folder collection in the default contacts folder of the signed-in user. |
 | **Directory objects**|||
+| [activateServicePlan](../api/user-activateserviceplan.md) | Boolean | Activate a service with a given `servicePlanId` and `skuId` for a given [user](user.md) |
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription. |
 | [checkMemberGroups](../api/user-checkmembergroups.md) | String collection | Check for membership in a list of groups. The check is transitive. |
 | [checkMemberObjects](../api/user-checkmemberobjects.md) | String collection | Check for membership in a list of group, directory role, or administrative unit objects. The check is transitive. |

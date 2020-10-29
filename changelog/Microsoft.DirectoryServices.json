@@ -4449,6 +4449,24 @@
       "CreatedDateTime": "2016-02-01T00:00:00",
       "WorkloadArea": "Users",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5ff829bc-19bb-11eb-baa1-5b13c31fb2cd",
+          "ApiChange": "Method",
+          "ChangedApiName": "activateServicePlan",
+          "ChangeType": "Addition",
+          "Description": "Added the [activateServicePlan](https://docs.microsoft.com/en-us/graph/api/user-activateServicePlan?view=graph-rest-beta) method to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource",
+          "Target": "user"
+        }
+      ],
+      "Id": "5fe7cb81-19bb-11eb-baa1-5b13c31fb2cd",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-29T07:50:12.353Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
     }
   ]
 }
