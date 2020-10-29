@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- {"blockType": "ignored"} -->
 ```http
-POST /teams/{id}/channels/{id}/members
+POST /channels/{id}/members
 ```
 
 ## Request headers
@@ -60,6 +60,7 @@ Here is an example of the request to add a basic member to the channel.
   "blockType": "request",
   "name": "create_member"
 } -->
+```msgraph-interactive
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members/
 content-type: application/json
