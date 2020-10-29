@@ -4956,7 +4956,7 @@ items:
           href: resources/teamsappinstallation.md
         - name: List apps in team
           href: api/teamsappinstallation-list.md
-        - name: Get an app from team
+        - name: Get an app installed in team
           href: api/teamsappinstallation-get.md
         - name: Add app to team
           href: api/teamsappinstallation-add.md
