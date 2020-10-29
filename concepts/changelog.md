@@ -121,6 +121,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the **teamCreationMode** property to the  [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
 |Addition|beta|Added the **channelCreationMode** property to the [channel](/graph/api/resources/channel?view=graph-rest-beta) resource.|
 | Addition | v1.0 | Added support for [resource-specific consent](https://aka.ms/teams-rsc) (RSC) permissions to v1.0 APIs. |
+| Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-v1.0). |
 
 ### To-do tasks
 
