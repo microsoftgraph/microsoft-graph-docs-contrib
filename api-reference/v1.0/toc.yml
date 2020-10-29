@@ -4917,8 +4917,8 @@ items:
       - name: Chat
         href: resources/chat.md
         items:
-        - name: Get one-on-one chat between user and Teams app
-          href: api/user-chat-userScopeTeamsAppInstallation.md
+        - name: List one-on-one chat between user and the app
+          href: api/userscopeteamsappinstallation-get-chat.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -4960,8 +4960,8 @@ items:
           href: api/user-delete-teamsappinstallation.md
         - name: Upgrade installed app for user
           href: api/user-upgrade-teamsappinstallation.md
-        - name: List chat between user and Teams app
-          href: api/user-chat-userScopeTeamsAppInstallation.md
+        - name: List one-on-one chat between user and the app
+          href: api/userscopeteamsappinstallation-get-chat.md
       - name: Tab
         href: resources/teamstab.md
         items:
