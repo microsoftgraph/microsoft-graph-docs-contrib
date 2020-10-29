@@ -39,6 +39,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[presence](../resources/presence.md) | Presence.Read.All | Not supported | Not supported |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+|[printTaskDefinition](../resources/printtaskdefinition.md) | Not supported | Not supported | PrintTaskDefinition.ReadWrite.All |
 
 ### chatMessage
 
