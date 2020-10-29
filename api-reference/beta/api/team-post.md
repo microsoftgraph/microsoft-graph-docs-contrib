@@ -125,7 +125,7 @@ Content-Type: application/json
    "template@odata.bind":"https://graph.microsoft.com/beta/teamsTemplates('standard')",
    "displayName":"My Sample Team",
    "description":"My Sample Team’s Description",
-   "members@odata.bind":[
+   "members":[
       {
          "@odata.type":"#microsoft.graph.aadUserConversationMember",
          "roles":[
@@ -595,7 +595,7 @@ If the request is unsuccessful, this method returns a `400 Bad Request` response
 The following are common reasons for this response:
 
 * **createdDateTime** is set in the future.
-* **createdDateTime** is correctly specified but the **channelCreationMode** instance attribute is missing or set to an invalid value.
+* **createdDateTime** is correctly specified but the **teamCreationMode** instance attribute is missing or set to an invalid value.
 
 
 ## See also
