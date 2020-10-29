@@ -24,6 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application| ChannelMember.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored"} -->
 ```http
 POST /channels/{id}/members/{id}
@@ -97,11 +98,13 @@ Content-length: 468
   "email": null
 }
 ```
+
 ### Example 2
 
 Here is a request to add a member with "owner" role to the channel.
 
 #### Request
+
 
 <!-- {
   "blockType": "request",
@@ -132,7 +135,6 @@ Here is an example of the response.
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 468
-
 {
   "@odata.context": "https://graph.microsoft.com/V1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
   "@odata.type": "#microsoft.graph.aadUserConversationMember",
