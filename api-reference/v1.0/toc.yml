@@ -4914,6 +4914,16 @@ items:
           href: api/channel-post-messages.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
+        - name: List members
+          href: api/channel-list-members.md
+        - name: Get member
+          href: api/channel-get-member.md
+        - name: Add member
+          href: api/channel-add-member.md
+        - name: Update member
+          href: api/channel-update-member.md
+        - name: Delet member
+          href: api/channel-delete-member.md
       - name: Chat
         href: resources/chat.md
         items:
@@ -4946,6 +4956,8 @@ items:
           href: resources/teamsappinstallation.md
         - name: List apps in team
           href: api/teamsappinstallation-list.md
+        - name: Get an app from team
+          href: api/teamsappinstallation-get.md
         - name: Add app to team
           href: api/teamsappinstallation-add.md
         - name: Remove app from team
@@ -4954,6 +4966,8 @@ items:
           href: api/teamsappinstallation-upgrade.md
         - name: List apps for user
           href: api/user-list-teamsappinstallation.md
+        - name: Get an app installed for a user
+          href: api/user-get-teamsappinstallation.md
         - name: Add app for user
           href: api/user-add-teamsappinstallation.md
         - name: Remove app for user
