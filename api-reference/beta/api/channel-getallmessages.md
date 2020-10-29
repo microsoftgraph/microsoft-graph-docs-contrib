@@ -43,10 +43,6 @@ If successful, this method returns a `200 OK` response code.
 
 ### Request
 
-<!-- {
-  "blockType": "request",
-  "name": "get_chat_message"
-}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{id}/channels/getAllMessages
 ```
