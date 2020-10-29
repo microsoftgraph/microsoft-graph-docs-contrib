@@ -58,7 +58,7 @@ Here is an example of the request to add a basic member to the channel.
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/channels/{id}/members/{id}
-```
+
 content-type: application/json
 content-length: 26
 {
