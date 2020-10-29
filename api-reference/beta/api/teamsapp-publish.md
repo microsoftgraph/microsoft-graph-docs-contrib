@@ -106,7 +106,6 @@ Content-Type: application/json
   "version": "1.0.0",
   "distributionMethod": "organization"
 }
-
 ```
 
 ### Example 2: Upload a new application for review to an organization's app catalog

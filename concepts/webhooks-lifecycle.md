@@ -1,69 +1,74 @@
 ---
-title: "Reduce missing subscriptions and change notifications for Outlook resources (preview)"
-description: "Outlook might suspend delivery of change notifications due to security events such as user's password reset. Special lifecycle events - `subscriptionRemoved` and `missed` - need to be handled to ensure uninterrupted delivery of change notifications."
+title: "Reduce missing subscriptions and change notifications"
+description: "Apps subscribing to change notifications might get their subscriptions removed and miss some change notifications. Apps should implement logic to detect and recover from the loss, and resume a continuous change notification flow."
 author: "davidmu1"
 localization_priority: Priority
 ms.custom: graphiamtop20
 ---
 
-# Reduce missing subscriptions and change notifications for Outlook resources (preview) 
+# Reduce missing subscriptions and change notifications
 
-Apps subscribing to change notifications for Outlook resources might get their subscriptions removed and miss some change notifications. Apps should implement logic to detect and recover from the loss, and resume a continuous change notification flow.
+Apps subscribing to change notifications might get their subscriptions removed and miss some change notifications. Apps should implement logic to detect and recover from the loss, and resume a continuous change notification flow.
 
-Certain events in Outlook can cause a subscription to be removed. These events include:
+Certain events can cause a subscription to be removed. These events include:
 
 - User's password has been reset
 - User's device is out of compliance
 -	User's account has been revoked
 
-When such an event happens, Outlook sends a special lifecycle notification, `subscriptionRemoved`.
+When such an event happens, Microsoft Graph sends a special lifecycle notification, `subscriptionRemoved`.
 
-Outlook also sends another lifecycle notification, `missed`, if a change notification cannot be delivered to an app.
+Microsoft Graph also sends another lifecycle notification, `missed`, if a change notification cannot be delivered to an app.
 
-An app subscribing to change notifications for Outlook resources, such as **message** and **event**, should listen to the `subscriptionRemoved` and `missed` signals and do the following:
+An app subscribing to change notifications should listen to the `subscriptionRemoved` and `missed` signals and do the following:
 
 - Upon receiving a `subscriptionRemoved` lifecycle notification, the app should recreate the subscription in order to maintain a continuous flow.
 - On receiving a `missed` lifecycle notification, the app should resynchronize resource data using Microsoft Graph.
 
 To receive lifecycle notifications, you can use the existing **notificationUrl** endpoint that already receives change notifications, or you can register a separate **lifecycleNotificationUrl** to receive `subscriptionRemoved` and `missed` lifecycle notifications in a separate endpoint.
 
+Lifecycle notifications are supported for subscriptions created on these resource types:
+
+- Outlook [message][]
+- Outlook [event][]
+- Outlook personal [contact][]
+- Teams [chatMessage][]
+
+For other resource types, you may still provide a `lifecycleNotificationUrl` when creating the subscription and your application will receive lifecycle notifications whenver the resource implements it.
+
 ## Creating a subscription
 
-When creating a subscription, you must specify a separate notification endpoint using the **lifecycleNotificationUrl** property. If you specify the endpoint, all current and future types of lifecycle notifications will be delivered there. Otherwise, `subscriptionRemoved` and `missed` lifecycle notifications will not be delivered.
-
-> **Note:** The **lifecycleNotificationUrl** property can only be set or read using Microsoft Graph beta APIs. However, subscriptions created using beta APIs are stored in the same production environment as those created using v1.0, so you can implement the new Outlook flow in addition to your subscriptions creating using v1.0 APIs.
-
-> Subscriptions created via the v1.0 APIs will receive lifecycle notifications. 
+When creating a subscription, you must specify a separate notification endpoint using the **lifecycleNotificationUrl** property. If you specify the endpoint, all current and future types of lifecycle notifications will be delivered there. Otherwise, `subscriptionRemoved` and `missed` lifecycle notifications will not be delivered. This endpoint can be the same as the **notificationUrl**.
 
 ### Subscription request example
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
   "resource": "/users/{id}/messages",
-  "expirationDateTime": "2019-03-20T11:00:00.0000000Z",
+  "expirationDateTime": "2020-03-20T11:00:00.0000000Z",
   "clientState": "<secretClientState>"
 }
 ```
  
-> **Important:** Use the same hostname for both notifications URLs. 
+> [!IMPORTANT]
+> Use the same hostname (FQDN) for both notifications URLs. 
 
-> **Note:** You need to validate both endpoints as described in [Managing subscriptions](webhooks.md#managing-subscriptions).
-If you choose to use the same URL for both endpoints you will receive and respond to two validation requests.
+You need to validate both endpoints, as described in [Managing subscriptions](webhooks.md#managing-subscriptions). If you choose to use the same URL for both endpoints, you will receive and respond to two validation requests.
 
-> **Note:** You cannot update (`PATCH`) the existing subscriptions to add the **lifecycleNotificationUrl** property. You should remove such existing subscriptions, and create new subscriptions and specify the **lifecycleNotificationUrl** property. Existing subscriptions without **lifecycleNotificationUrl** property will not receive the `subscriptionRemoved` and `missed`.
+> **Note:** You cannot update (`PATCH`) the existing subscriptions to add the **lifecycleNotificationUrl** property. You should remove such existing subscriptions, create new subscriptions, and specify the **lifecycleNotificationUrl** property. Existing subscriptions without a **lifecycleNotificationUrl** property will not receive the `subscriptionRemoved` and `missed` notifications.
 
 ## Responding to subscriptionRemoved notifications
 
 The `subscriptionRemoved` lifecycle notification informs you that a subscription has been removed and should be recreated, if you want to continue receiving change notifications. 
 
-You can create a long-lived subscription (3 days), and change notifications will start flowing to the **notificationUrl**. However, the conditions of access to the resource data might change over time. For example, an event in the Outlook service might occur that requires the app to re-authenticate the user. In such a case, the flow is as follows:
+You can create a long-lived subscription (3 days), and change notifications will start flowing to the **notificationUrl**. However, the conditions of access to the resource data might change over time. For example, an event in the service might occur that requires the app to re-authenticate the user. In such a case, the flow is as follows:
 
-1. Outlook detects that a subscription needs to be removed from Microsoft Graph.
+1. The service detects that a subscription needs to be removed from Microsoft Graph.
     
     There is no set cadence for these events. They might occur frequently for some resources, and almost never for others.
 
@@ -133,6 +138,7 @@ These signals inform you that some change notifications might not have been deli
 ```
 
 A few things to note about this type of notification:
+
 - The `"lifecycleEvent": "missed"` field designates this as a signal about missed change notifications. Other types of lifecycle notifications are also possible, and new ones will be introduced in the future.
 - The lifecycle notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state change.
 - Similar to change notifications, lifecycle notifications might be batched together (in the **value** array), each with a possibly different **lifecycleEvent** value. Process each lifecycle notification in the batch accordingly.
@@ -258,3 +264,9 @@ You should implement your code in a future-proof way so it does not break when M
 - [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
 - [Delete subscription](/graph/api/subscription-delete?view=graph-rest-1.0)
 - [Update subscription](/graph/api/subscription-update?view=graph-rest-1.0)
+
+
+[contact]: /graph/api/resources/contact?view=graph-rest-1.0
+[event]: /graph/api/resources/event?view=graph-rest-1.0
+[message]: /graph/api/resources/message?view=graph-rest-1.0
+[chatMessage]: /graph/api/resources/chatmessage

@@ -113,9 +113,6 @@ This resource supports:
 | [List Outlook categories](../api/outlookuser-list-mastercategories.md) | [outlookCategory](outlookcategory.md) collection                                 | Get all the categories that have been defined for the user. |
 | [Translate Exchange Ids](../api/user-translateexchangeids.md) | [convertIdResult](convertidresult.md) collection | Translate identifiers of Outlook-related resources between formats. |
 | [Update user mailbox settings](../api/user-update-mailboxsettings.md) | [mailboxSettings](mailboxsettings.md) | Enable, configure, or disable one or more user's mailboxSettings. |
-| **Outlook tasks** |||
-| [Create outlookTask](../api/outlookuser-post-tasks.md) | [outlookTask](outlooktask.md) | Create an Outlook task in the default task group (My Tasks) and default task folder (Tasks) in the user's mailbox. |
-| [List tasks](../api/outlookuser-list-tasks.md) | [outlookTask](outlooktask.md) collection | Get all the Outlook tasks in the user's mailbox. |
 | **People** |||
 | [List people](../api/user-list-people.md) | [person](person.md) | Retrieve a list of person objects ordered by their relevance to the user, which is determined by the user's communication and collaboration patterns, and business relationships. |
 | **Photo** |||
@@ -137,12 +134,18 @@ This resource supports:
 | [List apps installed for user](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsappinstallation.md) | Retrieve the list of apps installed in the personal scope of the specified user. |
 | [Upgrade app](../api/user-upgrade-teamsappinstallation.md) | None | Upgrade an app installation in the personal scope of the specified user to the latest version of the app. |
 | [Uninstall app for user](../api/user-delete-teamsappinstallation.md) | None  | Uninstall an app from the personal scope of the specified user. |
+| **To-do tasks** |||
+|[Create task](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Create a [todoTask](todotask.md) in the specified task list.|
+|[Create task list](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Create a To Do task list in the user's mailbox. |
+|[List tasks](../api/todotasklist-list-tasks.md)|[todoTask](todotask.md) collection|Get all the [todoTask](todotask.md) resources in the specified list.|
+|[List task lists](../api/todo-list-lists.md) | [todoTaskList](todotasklist.md) collection | Get all the task lists in the user's mailbox. |
 | **User settings** |||
 | [Get settings](../api/usersettings-get.md) | [userSettings](usersettings.md) | Read the user and organization settings object. |
 | [Update settings](../api/usersettings-update.md) | [userSettings](usersettings.md) | Update the properties of the settings object. |
-| **Todo tasklists** |||
-|[List lists](../api/todo-list-lists.md) | [todoTaskList](todotasklist.md) collection | Get all the task lists in the user's mailbox. |
-|[Create todoTasklist](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Create a To Do task list in the user's mailbox. |
+| **Outlook tasks** (deprecated)|||
+| [Create outlookTask](../api/outlookuser-post-tasks.md) (deprecated) | [outlookTask](outlooktask.md) | Create an Outlook task in the default task group (My Tasks) and default task folder (Tasks) in the user's mailbox. |
+| [List tasks](../api/outlookuser-list-tasks.md) (deprecated) | [outlookTask](outlooktask.md) collection | Get all the Outlook tasks in the user's mailbox. |
+
 
 ## Properties
 
@@ -154,7 +157,7 @@ This resource supports:
 | assignedLicenses | [assignedLicense](assignedlicense.md) collection | The licenses that are assigned to the user. <br><br>Returned only on `$select`. Not nullable. |
 | assignedPlans | [assignedPlan](assignedplan.md) collection | The plans that are assigned to the user. <br><br>Returned only on `$select`. Read-only. Not nullable. |
 | birthday | DateTimeOffset | The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` <br><br>Returned only on `$select`. |
-| businessPhones | String collection | The telephone numbers for the user. Only one number can be set for this property. <br><br>Returned by default. |
+| businessPhones | String collection | The telephone numbers for the user. Only one number can be set for this property. <br><br>Returned by default. Read-only for users synced from on-premises directory. |
 | city | String | The city in which the user is located. <br><br>Returned only on `$select`. Supports `$filter`. |
 | companyName | String | The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 chararcters.<br><br>Returned only on `$select`. |
 | consentProvidedForMinor | String| Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. <br><br>Returned only on `$select`. |
@@ -186,7 +189,7 @@ This resource supports:
 | mail | String | The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". <br><br>Returned by default. Supports `$filter`. |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | Settings for the primary mailbox of the signed-in user. You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update-mailboxsettings.md) settings for sending automatic replies to incoming messages, locale, and time zone. <br><br>Returned only on `$select`. |
 | mailNickname | String | The mail alias for the user. This property must be specified when a user is created. <br><br>Returned only on `$select`. Supports `$filter`. |
-| mobilePhone | String | The primary cellular telephone number for the user. <br><br>Returned by default. |
+| mobilePhone | String | The primary cellular telephone number for the user. <br><br>Returned by default. Read-only for users synced from on-premises directory. |
 | mySite | String | The URL for the user's personal site. <br><br>Returned only on `$select`. |
 | officeLocation | String | The office location in the user's place of business. <br><br>Returned by default. |
 | onPremisesDistinguishedName | String | Contains the on-premises Active Directory `distinguished name` or `DN`. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. <br><br>Returned only on `$select`. Read-only. |

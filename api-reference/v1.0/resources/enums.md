@@ -895,3 +895,19 @@ Possible values for user account types (group membership), per Windows definitio
 | standard           | 0     |Channel inherits the list of members of the parent team.|
 | private            | 1     |Channel can have members that are a subset of all the members on the parent team.|
 | unknownFutureValue | 2     |      |
+### wellknownListName values
+| Member
+|:----------------------
+| none
+| defaultList
+| flaggedEmails
+| unknownFutureValue
+
+### taskStatus values
+| Member
+|:----------------------
+| notStarted
+| inProgress
+| completed
+| waitingOnOthers
+| deferred

@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "ed0be9d2-45e4-47bd-a989-2cb7b389e348",
+          "ApiChange": "Resource",
+          "ChangedApiName": "application,device,servicePrincipal,group",
+          "ChangeType": "Addition",
+          "Description": "Added support for `$count`, `$search`, and `$filter` query parameters for improving query capabilities to: <br><ul><li>[List applications](https://docs.microsoft.com/en-us/graph/api/application-list?view=graph-rest-1.0)</li><li>[List devices](https://docs.microsoft.com/en-us/graph/api/device-list?view=graph-rest-1.0)</li><li>[List device groups](https://docs.microsoft.com/en-us/graph/api/device-list-memberof?view=graph-rest-1.0)</li><li>[List device transitive groups](https://docs.microsoft.com/en-us/graph/api/device-list-transitivememberof?view=graph-rest-1.0)</li><li>[List groups](https://docs.microsoft.com/en-us/graph/api/group-list?view=graph-rest-1.0)</li><li>[List group memberOf](https://docs.microsoft.com/en-us/graph/api/group-list-memberof?view=graph-rest-1.0)</li><li>[List group members](https://docs.microsoft.com/en-us/graph/api/group-list-members?view=graph-rest-1.0)</li><li>[List group transitive memberOf](https://docs.microsoft.com/en-us/graph/api/group-list-transitivememberof?view=graph-rest-1.0)</li><li>[List group transitive members](https://docs.microsoft.com/en-us/graph/api/group-list-transitivemembers?view=graph-rest-1.0)</li><li>[List orgContacts](https://docs.microsoft.com/en-us/graph/api/orgcontact-list?view=graph-rest-1.0)</li><li>[List servicePrincipals](https://docs.microsoft.com/en-us/graph/api/serviceprincipal-list?view=graph-rest-1.0)</li><li>[List servicePrincipal memberOf](https://docs.microsoft.com/en-us/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0)</li><li>[List servicePrincipal transitive memberOf](https://docs.microsoft.com/en-us/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0)</li><li>[List users](https://docs.microsoft.com/en-us/graph/api/user-list?view=graph-rest-1.0)</li><li>[List user memberOf](https://docs.microsoft.com/en-us/graph/api/user-list-memberof?view=graph-rest-1.0)</li><li>[List user transitive memberOf](https://docs.microsoft.com/en-us/graph/api/user-list-transitivememberof?view=graph-rest-1.0)</li></ul><br>Added examples for using OData cast to: <ul><li>[List group memberOf](https://docs.microsoft.com/en-us/graph/api/group-list-memberof?view=graph-rest-1.0)</li><li>[List group members](https://docs.microsoft.com/en-us/graph/api/group-list-members?view=graph-rest-1.0)</li><li>[List group transitive memberOf](https://docs.microsoft.com/en-us/graph/api/group-list-transitivememberof?view=graph-rest-1.0)</li><li>[List servicePrincipal memberOf](https://docs.microsoft.com/en-us/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0)</li><li>[List servicePrincipal transitive memberOf](https://docs.microsoft.com/en-us/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0)</li><li>[List user memberOf](https://docs.microsoft.com/en-us/graph/api/user-list-memberof?view=graph-rest-1.0)</li><li>[List user transitive memberOf](https://docs.microsoft.com/en-us/graph/api/user-list-transitivememberof?view=graph-rest-1.0)</li></ul>",
+          "Target": ""
+        }
+      ],
+      "Id": "ed0be9d2-45e4-47bd-a989-2cb7b389e348",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-10-28T00:00:00",
+      "WorkloadArea": "Identity and access ",
+      "SubArea": " "
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "579f1883-c1b6-4884-bf17-8666729ac36d",
           "ApiChange": "Resource",
           "ChangedApiName": "fido2AuthenticationMethodConfiguration",
@@ -61,6 +79,42 @@
     {
       "ChangeList": [
         {
+          "Id": "b6d9ad0a-0022-4bb4-bcda-30dbad8f006c",
+          "ApiChange": "Property",
+          "ChangedApiName": "businessPhones,mobilePhone",
+          "ChangeType": "Change",
+          "Description": "Changed the **businessPhones** and **mobilePhone** properties to read-only for users synced from on-premises directory on the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity.",
+          "Target": "user"
+        }
+      ],
+      "Id": "ba3d7197-1fee-4e87-adca-c7a8c28efdec",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-27T00:00:00",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f7a49137-8a12-4988-8c7b-cd51cff6a20f",
+          "ApiChange": "Property",
+          "ChangedApiName": "businessPhones,mobilePhone",
+          "ChangeType": "Change",
+          "Description": "Changed the **businessPhones** and **mobilePhone** properties to read-only for users synced from on-premises directory on the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) entity.",
+          "Target": "user"
+        }
+      ],
+      "Id": "ba3d7197-1fee-4e87-adca-c7a8c28efdec",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-10-27T00:00:00",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ba3d7197-1fee-4e87-adca-c7a8c28efdec",
           "ApiChange": "Property",
           "ChangedApiName": "employeeType,employeeOrgData,employeeHireDate",
@@ -79,6 +133,24 @@
     {
       "ChangeList": [
         {
+          "Id": "b4207eda-007b-4f10-8ebb-4089b55023c6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityUserFlowAttribute",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityUserFlowAttribute](https://docs.microsoft.com/graph/api/resources/identityuserflowattribute?view=graph-rest-beta) entity for managing user flow attributes in an Azure Active Directory or Azure Active Directory B2C tenant.",
+          "Target": ""
+        }
+      ],
+      "Id": "b4207eda-007b-4f10-8ebb-4089b55023c6",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-08T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+      },
+     {
+        "ChangeList": [
+         {
           "Id": "f2f991a4-d767-42a0-929a-eb01a6cbef42",
           "ApiChange": "Property",
           "ChangedApiName": "schedule",
