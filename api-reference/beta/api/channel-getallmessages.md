@@ -61,6 +61,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/getAllMessages
 } -->
 ```http
 HTTP/1.1 200 OK
+
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metdata#Collection(chatMessage)"
     "@odata.count": 2,
