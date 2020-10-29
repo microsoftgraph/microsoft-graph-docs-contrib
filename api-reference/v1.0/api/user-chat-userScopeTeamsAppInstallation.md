@@ -33,7 +33,7 @@ GET /users/{id}/teamwork/installedApps/{id}/chat
 
 ## Optional query parameters
 
-This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the $select [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [teamsAppInstallation](../resources/teamsappinstallation.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and an instance of [chat](../resources/chat.md) object in the response body.
 
 ## Examples
 
@@ -73,7 +73,7 @@ The following is an example of the response.
   "blockType": "response",
   "name": "user_chat_teamsApps",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "@odata.type": "microsoft.graph.chat",
   "isCollection": true
 } -->
 
