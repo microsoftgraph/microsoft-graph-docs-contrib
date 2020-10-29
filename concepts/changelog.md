@@ -96,6 +96,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |:---|:---|:---|
 |Addition|beta|Added the [revokeGrants](/graph/api/permission-revokeGrants?view=graph-rest-beta) method to the [permission](/graph/api/resources/permission?view=graph-rest-beta) resource.|
 
+### Identity and access
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added support for `$count`, `$search`, and `$filter` query parameters for improving query capabilities to: <br><ul><li>[List applications](/graph/api/application-list?view=graph-rest-1.0)</li><li>[List devices](/graph/api/device-list?view=graph-rest-1.0)</li><li>[List device groups](/graph/api/device-list-memberof?view=graph-rest-1.0)</li><li>[List device transitive groups](/graph/api/device-list-transitivememberof?view=graph-rest-1.0)</li><li>[List groups](/graph/api/group-list?view=graph-rest-1.0)</li><li>[List group memberOf](/graph/api/group-list-memberof?view=graph-rest-1.0)</li><li>[List group members](/graph/api/group-list-members?view=graph-rest-1.0)</li><li>[List group transitive memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-1.0)</li><li>[List group transitive members](/graph/api/group-list-transitivemembers?view=graph-rest-1.0)</li><li>[List orgContacts](/graph/api/orgcontact-list?view=graph-rest-1.0)</li><li>[List servicePrincipals](/graph/api/serviceprincipal-list?view=graph-rest-1.0)</li><li>[List servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0)</li><li>[List servicePrincipal transitive memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0)</li><li>[List users](/graph/api/user-list?view=graph-rest-1.0)</li><li>[List user memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0)</li><li>[List user transitive memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-1.0)</li></ul><br>Added examples for using OData cast to: <ul><li>[List group memberOf](/graph/api/group-list-memberof?view=graph-rest-1.0)</li><li>[List group members](/graph/api/group-list-members?view=graph-rest-1.0)</li><li>[List group transitive memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-1.0)</li><li>[List servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0)</li><li>[List servicePrincipal transitive memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0)</li><li>[List user memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0)</li><li>[List user transitive memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-1.0)</li></ul> |
+
 ### Identity and access | Identity and sign-in
 
 | **Change type** | **Version**   | **Description**                          |
@@ -246,6 +252,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **volumeType** enumeration type.|
 | Addition | beta | Added the **directorySizeQuota** complex type to the [organization](/graph/api/resources/organization?view=graph-rest-beta) entity. |
 
+
 ### Identity and access | Directory management
 
 | **Change type** | **Version**   | **Description**                          |
@@ -284,6 +291,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Addition|Beta and v1.0|Added **lastEditedDateTime** property to the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resource.|	
+|Change| Beta and v1.0| Changed **lastModifiedDateTime** property in the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resource to represent the time the entity was last touched. It will always be set and never have a `null` value|	
+|Addition|beta| Added the **createdDateTime** property to the [channel](/graph/api/resources/channel?view=graph-rest-beta) and [team](/graph/api/resources/team?view=graph-rest-beta) resources.|
 |Addition|beta and v1.0| Added the [Update chatMessage](/graph/api/chatmessage-update) method to the [chatMessage](/graph/api/resources/chatmessage) resource.|
 |Addition|v1.0| Added the [List members](/graph/api/team-list-members?view=graph-rest-1.0&preserve-view=true), [Add members](/graph/api/team-post-members?view=graph-rest-1.0&preserve-view=true), and [Remove members](/graph/api/team-delete-members?view=graph-rest-1.0&preserve-view=true) methods.|
 
