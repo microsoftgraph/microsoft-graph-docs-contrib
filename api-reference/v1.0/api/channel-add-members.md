@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application| ChannelMember.ReadWrite.All |
 
 ## HTTP request
-<!-- {"blockType": "ignored"} -->
+
 ```http
 POST /channels/{id}/members/{id}
 ```
@@ -60,7 +60,6 @@ Here is an example of the request to add a basic member to the channel.
   "blockType": "request",
   "name": "create_member"
 } -->
-```msgraph-interactive
 ```http
 POST https://graph.microsoft.com/v1.0/channels/{id}/members/{id}
 content-type: application/json
