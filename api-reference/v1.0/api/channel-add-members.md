@@ -25,7 +25,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored"} -->
 ```http
 POST /channels/{id}/members/{id}
 ```
@@ -57,11 +56,6 @@ If successful, this method returns a `201 Created` response code and a [conversa
 
 Here is an example of the request to add a basic member to the channel.
 
-
-<!-- {
-  "blockType": "request",
-  "name": "create_member"
-} -->
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/channels/{id}/members/{id}
 ```
@@ -79,12 +73,7 @@ content-length: 26
 Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "name": "create_member",
-  "@odata.type": "microsoft.graph.conversationMember"
-} -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -107,11 +96,6 @@ Here is a request to add a member with "owner" role to the channel.
 
 #### Request
 
-
-<!-- {
-  "blockType": "request",
-  "name": "create_member"
-} -->
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/channels/{id}/members/{id}
 content-type: application/json
@@ -130,14 +114,11 @@ Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-<!-- {
-  "blockType": "request",
-  "name": "create_member"
-} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 468
+
 {
   "@odata.context": "https://graph.microsoft.com/V1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
   "@odata.type": "#microsoft.graph.aadUserConversationMember",
