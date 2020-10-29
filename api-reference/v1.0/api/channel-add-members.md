@@ -62,7 +62,7 @@ Here is an example of the request to add a basic member to the channel.
 } -->
 ```msgraph-interactive
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members/
+POST https://graph.microsoft.com/v1.0/channels/{id}/members/{id}
 content-type: application/json
 content-length: 26
 {
