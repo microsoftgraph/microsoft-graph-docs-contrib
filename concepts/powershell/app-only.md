@@ -85,7 +85,7 @@ You may be wondering: "I can use the PowerShell SDK to register an app, so that 
     > [!NOTE]
     > After granting admin consent, the browser will display an error: `AADSTS500113: No reply address is registered for the application`. This is because the app registration does not include a redirect URL. This error can be ignored.
 
-1. Review the rest of the PowerShell output for `Connect-Graph` command pre-filled with the values for your app registration.
+1. Review the rest of the PowerShell output for `Connect-MgGraph` command pre-filled with the values for your app registration.
 
 ---
 
@@ -100,7 +100,7 @@ You should have three pieces of information after completing the configuration s
 Let's use those to test authentication. Open PowerShell and run the following command, replacing the placeholders with your information.
 
 ```powershell
-Connect-Graph -ClientID YOUR_APP_ID -TenantId YOUR_TENANT_ID -CertificateName YOUR_CERT_SUBJECT
+Connect-MgGraph -ClientID YOUR_APP_ID -TenantId YOUR_TENANT_ID -CertificateName YOUR_CERT_SUBJECT
 ```
 
 If this succeeds, you will see `Welcome To Microsoft Graph!`. Run `Get-MgContext` to verify that you've authenticated with app-only. The output should look like the following.
@@ -123,7 +123,7 @@ Create a new file named **GraphAppOnly.ps1** and add the following code.
 
 ```powershell
 # Authenticate
-Connect-Graph -ClientID YOUR_APP_ID -TenantId YOUR_TENANT_ID -CertificateName YOUR_CERT_SUBJECT
+Connect-MgGraph -ClientID YOUR_APP_ID -TenantId YOUR_TENANT_ID -CertificateName YOUR_CERT_SUBJECT
 
 Write-Host "USERS:"
 Write-Host "======================================================"
@@ -136,10 +136,10 @@ Write-Host "======================================================"
 Get-MgGroup -Property "id,displayName" -PageSize 50 | Format-Table DisplayName, Id
 
 # Disconnect
-Disconnect-Graph
+Disconnect-MgGraph
 ```
 
-Replace the placeholders in the `Connect-Graph` command with your information. Save the file, then open PowerShell in the directory where you created the file. Run the script with the following command.
+Replace the placeholders in the `Connect-MgGraph` command with your information. Save the file, then open PowerShell in the directory where you created the file. Run the script with the following command.
 
 ```powershell
 .\GraphAppOnly.ps1

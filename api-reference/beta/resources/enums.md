@@ -33,6 +33,13 @@ Namespace: microsoft.graph
 |everyone|
 |unknownFutureValue|
 
+### attestationLevel values
+
+|Member|
+|:---|
+|attested|
+|notAttested|
+
 ### emailType values
 
 |Member|
@@ -42,6 +49,34 @@ Namespace: microsoft.graph
 |personal|
 |main|
 |other|
+
+### authenticationMethodTargetType values
+
+|Member|
+|:---|
+|user|
+|group|
+
+### authenticationMethodState values
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+
+### fido2RestrictionEnforcementType values
+
+|Member|
+|:---|
+|allow|
+|block|
+
+### authenticatorAppContextType values
+
+|Member|
+|:---|
+|location|
+|app|
 
 ### anniversaryType values
 
@@ -1312,6 +1347,7 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue
 
 ### userFlowType values
+
 |Member
 |:----------------------
 | signUp
@@ -1323,6 +1359,7 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue
 
 ### openIdConnectResponseMode values
+
 | Member
 |:----------------------
 | none
@@ -1331,6 +1368,7 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue
 
 ### openIdConnectResponseTypes values
+
 | Member
 |:----------------------
 | none
@@ -1339,6 +1377,7 @@ Possible values for user account types (group membership), per Windows definitio
 | token
 
 ### wellknownListName values
+
 | Member
 |:----------------------
 | none
@@ -1347,6 +1386,7 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue
 
 ### taskStatus values
+
 | Member
 |:----------------------
 | notStarted
@@ -1377,6 +1417,24 @@ Possible values for user account types (group membership), per Windows definitio
 |user|
 |group|
 
+### identityUserFlowAttributeDataType values
+
+| Member                | Value | Description                         |
+|:----------------------|:------|:------------------------------------|
+| string                | 1     | String data type                    |
+| boolean               | 2     | Boolean data type                   |
+| int64                 | 3     | Int data type                       |
+| stringCollection      | 4     | String collection data type         |
+| unknownFutureValue    | 5     | A sentinel member.                  |
+
+### identityUserFlowAttributeType values
+
+| Member                | Value | Description                                                        |
+|:----------------------|:------|:-------------------------------------------------------------------|
+| builtIn               | 1     | This user flow attribute type denotes it was created by the system |
+| custom                | 2     | This user flow attribute type denotes it was created by the user   |
+| unknownFutureValue    | 3     | A sentinel member.                                                 |
+
 ### connectionState values
 
 |Member|
@@ -1385,3 +1443,17 @@ Possible values for user account types (group membership), per Windows definitio
 |ready|
 |obsolete|
 |limitExceeded|
+
+### permissionClassificationType values
+
+| Member
+|:-------
+| low
+
+### permissionType values
+
+| Member
+|:-------------------------
+| application
+| delegated
+| delegatedUserConsentable
