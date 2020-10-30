@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application| ChannelMember.ReadWrite.All |
 
 ## HTTP request
-
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /channels/{id}/members/{id}
 ```
@@ -55,7 +55,10 @@ If successful, this method returns a `201 Created` response code and a [conversa
 #### Request
 
 Here is an example of the request to add a basic member to the channel.
-
+<!-- {
+  "blockType": "request",
+  "name": "add_member"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/channels/{id}/members/{id}
 
@@ -96,6 +99,10 @@ Here is a request to add a member with "owner" role to the channel.
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "add_member"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/channels/{id}/members/{id}
 content-type: application/json
