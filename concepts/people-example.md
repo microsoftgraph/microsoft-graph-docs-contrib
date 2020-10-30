@@ -690,7 +690,7 @@ Content-type: application/json
 
 ### Browse another user’s relevant people
 
-The following request gets the people most relevant to another person in the signed-in user's organization, as described in the [implementation of the working- with feature](#implementation-of-the-working-with-feature). This request requires the People.Read.All permission. All the query parameters described in the above sections apply as well.
+The following request gets the people most relevant to another person in the signed-in user's organization, as described in the [implementation of the working-with feature](#implementation-of-the-working-with-feature). This request requires the People.Read.All permission. All the query parameters described in the above sections apply as well.
 
 In this example, Roscoe Seidel's relevant people are displayed.
 
