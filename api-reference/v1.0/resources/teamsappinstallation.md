@@ -23,7 +23,7 @@ Represents a [teamsApp](teamsapp.md) installed in a [team](team.md) or the perso
 |[Remove app from team](../api/teamsappinstallation-delete.md) | None | Removes (uninstalls) an app from a team.|
 |[Upgrade app installed in team](../api/teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app installed in team.|
 |[List apps installed for user](../api/user-list-teamsappinstallation.md)| [teamsAppInstallation](teamsappinstallation.md) collection | Lists apps installed in the personal scope of a user. |
-|[Get an app installed for user](../api/user-get-teamsappinstallation.md)| [teamAppInstallation](teamsappinstallation.md) | Lists the specified app installed in the personal scope of a user. |
+|[Get installed app for user](../api/user-get-teamsappinstallation.md)| [teamAppInstallation](teamsappinstallation.md) | Lists the specified app installed in the personal scope of a user. |
 |[Add app for user](../api/user-add-teamsappinstallation.md) | None | Adds (installs) an app in the personal scope of a user. |
 |[Remove app for user](../api/user-delete-teamsappinstallation.md) | None | Removes (uninstalls) an app from the personal scope of a user. |
 |[Upgrade app installed for user](../api/user-upgrade-teamsappinstallation.md) | None | Upgrades to the latest version of the app installed in the personal scope of a user.|
