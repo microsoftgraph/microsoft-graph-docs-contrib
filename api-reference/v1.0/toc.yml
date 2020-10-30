@@ -4927,10 +4927,10 @@ items:
       - name: Chat
         href: resources/chat.md
         items:
-        - name: List one-on-one chat between user and the app
+        - name: Get chat between user and app
           href: api/userscopeteamsappinstallation-get-chat.md
-      - name: Chat message
-        href: resources/chatmessage.md
+       -name: Chat message
+        href: resources/chatmessage.md 
         items:
         - name: Send message
           href: api/channel-post-messages.md
@@ -4974,7 +4974,7 @@ items:
           href: api/user-delete-teamsappinstallation.md
         - name: Upgrade installed app for user
           href: api/user-upgrade-teamsappinstallation.md
-        - name: List one-on-one chat between user and the app
+        - name: Get chat between user and app
           href: api/userscopeteamsappinstallation-get-chat.md
       - name: Tab
         href: resources/teamstab.md
