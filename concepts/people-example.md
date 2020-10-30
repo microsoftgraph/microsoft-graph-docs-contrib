@@ -690,7 +690,7 @@ Content-type: application/json
 
 ### Browse another user’s relevant people
 
-The following request gets the people most relevant to another person in the signed-in user's organization as described in <a href="#working-with-feature-implementation">Working With </a>feature. This request requires the People.Read.All permission. All the query parameters described in the above sections apply as well.
+The following request gets the people most relevant to another person in the signed-in user's organization, as described in the [implementation of the working- with feature](#implementation-of-the-working-with-feature). This request requires the People.Read.All permission. All the query parameters described in the above sections apply as well.
 
 In this example, Roscoe Seidel's relevant people are displayed.
 
@@ -948,7 +948,7 @@ GET https://graph.microsoft.com/v1.0/me/people?$search="tiler"                //
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"            //matches Tyler's name. Note the quotes to enclose the space.
 ```
 
-### Working with feature implementation
+### Implementation of the working-with feature
  
 There must be a public relationship between the profile owner and the other people in order for those people to show up on the profile owner's list. The following illustration shows a User A, an index of relationships with other users (User B), and a public profile showing a subset of user relationships.
 
@@ -975,4 +975,4 @@ The ranking doesn’t change based on who User A is (the person looking at someo
  
 In order for User C to appear, the profile owner must be in a relatively small group/DL with that user that is public (meaning the membership list is available in the directory).
  
-People external to the organization will not show on the profile owner's list. People they email or meet with, but who are not part of the same organization, will not show up in the Working with section.
+People external to the organization do not show on the profile owner's list. People they email or meet with, but who are not part of the same organization, do not show up as people the owner works with either.
