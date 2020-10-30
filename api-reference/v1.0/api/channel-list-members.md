@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+
 ```http
 GET /channels/{id}/members/{id}
 ```
@@ -58,12 +58,7 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 
 Here is an example of the request.
 
-<!-- {
-  "blockType": "request",
-  "name": "list_member"
-}-->
-
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/channels/{id}/members/{id}
 ```
 
@@ -72,12 +67,7 @@ GET https://graph.microsoft.com/v1.0/channels/{id}/members/{id}
 Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "name": "list_member",
-  "@odata.type": "microsoft.graph.conversationMember"
-} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
