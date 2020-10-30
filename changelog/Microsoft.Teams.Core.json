@@ -28,22 +28,6 @@
         },
         {
           "Id": "e94cb262-641b-4376-9451-00741b7e48cc",
-          "ApiChange": "Resource",
-          "ChangedApiName": "completeMigration",
-          "ChangeType": "Addition",
-          "Description": "Added support for **completeMigration** to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) and [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resources.",
-          "Target": "channel,team"
-        },
-        {
-          "Id": "e94cb262-641b-4376-9451-00741b7e48cc",
-          "ApiChange": "Property",
-          "ChangedApiName": "teamCreationMode",
-          "ChangeType": "Addition",
-          "Description": "Added the **teamCreationMode** property to the  [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
-          "Target": "team"
-        },
-        {
-          "Id": "e94cb262-641b-4376-9451-00741b7e48cc",
           "ApiChange": "Property",
           "ChangedApiName": "channelCreationMode",
           "ChangeType": "Addition",
