@@ -24,6 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application| ChannelMember.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /channels/{id}/members/{id}
@@ -55,6 +56,7 @@ If successful, this method returns a `201 Created` response code and a [conversa
 #### Request
 
 Here is an example of the request to add a basic member to the channel.
+
 <!-- {
   "blockType": "request",
   "name": "add_member"
