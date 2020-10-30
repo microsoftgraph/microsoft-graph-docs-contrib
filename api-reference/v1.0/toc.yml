@@ -4929,9 +4929,10 @@ items:
         items:
         - name: Get chat between user and app
           href: api/userscopeteamsappinstallation-get-chat.md
-       - name: Chat message
-         href: resources/chatmessage.md 
+      - name: Chat message
          items:
+        - name: Chat message
+          href: resources/chatmessage.md
         - name: Send message
           href: api/channel-post-messages.md
         - name: Reply to message
