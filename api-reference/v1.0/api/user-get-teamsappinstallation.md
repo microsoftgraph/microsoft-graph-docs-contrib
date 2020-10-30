@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Get an app installed for user
+# Get installed app for user
 
 Namespace: microsoft.graph
 
