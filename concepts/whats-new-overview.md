@@ -72,8 +72,8 @@ Intune [October](changelog.md#october-2020) updates for the beta version.
 Administrators can see [examples of using PowerShell cmdlets](insights-customize-item-insights-privacy.md#how-to-configure-item-insights-setting-via-powershell) to customize item insight settings for an organization.
 
 ### Teamwork
-- Use the instance attribute **channelCreationMode** to indicate that a [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true#instance-attributes) is being created to serve migration of data. Use the [completeMigration](/graph/api/channel-completemigration?view=graph-rest-beta&preserve-view=true) to indicate migration is over, such that members can post and read messages.
-- Use the instance attribute **teamCreationMode** to indicate that a [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta&preserve-view=true#instance-attributes) is being created to serve migration. Use the [completeMigration](/graph/api/team-completemigration?view=graph-rest-beta&preserve-view=true) to indicate migration is over, such that member operations can happen, and members can post messages.
+- Use the instance attribute **channelCreationMode** to indicate that a [channel](https://docs.microsoft.com/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true#instance-attributes) is being created to serve migration of data. Use the [completeMigration](/graph/api/channel-completemigration?view=graph-rest-beta&preserve-view=true) to indicate migration is over, such that members can post and read messages.
+- Use the instance attribute **teamCreationMode** to indicate that a [team](https://docs.microsoft.com/graph/api/resources/team?view=graph-rest-beta&preserve-view=true#instance-attributes) is being created to serve migration. Use the [completeMigration](/graph/api/team-completemigration?view=graph-rest-beta&preserve-view=true) to indicate migration is over, such that member operations can happen, and members can post messages.
 
 
 ## September 2020: New and generally available
