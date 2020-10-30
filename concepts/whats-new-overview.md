@@ -67,8 +67,6 @@ Intune [October](changelog.md#october-2020) updates for the beta version.
 ### People and workplace intelligence | Insights 
 Administrators can see [examples of using PowerShell cmdlets](insights-customize-item-insights-privacy.md#how-to-configure-item-insights-setting-via-powershell) to customize item insight settings for an organization.
 
-
-
 ## September 2020: New and generally available
 
 ### Calendar
