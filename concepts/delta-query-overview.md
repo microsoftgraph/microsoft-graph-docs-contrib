@@ -189,7 +189,7 @@ Delta queries are available for customers hosted on the public cloud and Microso
 
 Your application must be prepared for replays, which occur when the same change appears in subsequent responses. While delta query makes a best effort to reduce replays, they are still possible.
 
-### Synchronization Reset
+### Synchronization reset
 
 Delta query can return a response code of `410 (gone)` and a **Location** header containing a request URL with an empty delta token (same as the initial query). This is an indication that the application must restart with a full synchronization of the target tenant. This usually happens to prevent data inconsistency due to internal maintenance or migration of the target tenant.
 
