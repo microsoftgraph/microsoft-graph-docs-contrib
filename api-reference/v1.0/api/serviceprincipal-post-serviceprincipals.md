@@ -60,7 +60,7 @@ POST https://graph.microsoft.com/v1.0/serviceprincipals
 Content-type: application/json
 
 {
-  "appId": "65415bb1-9267-4313-bbf5-ae259732ee12",
+  "appId": "65415bb1-9267-4313-bbf5-ae259732ee12"
 }
 ```
 # [C#](#tab/csharp)

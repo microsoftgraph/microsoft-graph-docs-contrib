@@ -1,7 +1,7 @@
 name: Reference
 items:
   - name: Overview of Microsoft Graph
-    href: ./overview.md
+    href: /graph/overview
   - name: Get auth tokens
     items:
     - name: Overview
@@ -321,8 +321,9 @@ items:
           - name: Update settings
             href: api/usersettings-update.md
       - name: Mail
-        href: resources/message.md
         items:
+        - name: Message
+          href: resources/message.md
         - name: Create mail folder
           href: api/user-post-mailfolders.md
         - name: Create message
@@ -344,8 +345,9 @@ items:
         - name: Send mail
           href: api/user-sendmail.md
       - name: Notes
-        href: resources/onenote.md
         items:
+        - name: Onenote
+          href: resources/onenote.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
         - name: List notebooks
@@ -403,6 +405,18 @@ items:
         items:
         - name: List tasks
           href: api/planneruser-list-tasks.md
+      - name: To-do tasks
+        items:
+        - name: Task
+          href: resources/todotask.md
+        - name: Create task
+          href: api/todotasklist-post-tasks.md
+        - name: Create task list
+          href: api/todo-post-lists.md
+        - name: List tasks
+          href: api/todotasklist-list-tasks.md
+        - name: List task lists
+          href: api/todo-list-lists.md
     - name: Groups
       items:
       - name: Overview
@@ -5177,6 +5191,62 @@ items:
           href: api/onenote-list-notebooks.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
+    - name: To-do tasks
+      displayName: Microsoft To Do
+      items:
+      - name: Overview
+        href: resources/todo-overview.md
+      - name: Task list
+        href: resources/todotasklist.md
+        items:
+        - name: List task lists
+          href: api/todo-list-lists.md
+        - name: Create task list
+          href: api/todo-post-lists.md
+        - name: Get task list
+          href: api/todotasklist-get.md
+        - name: Update task list
+          href: api/todotasklist-update.md
+        - name: Delete task list
+          href: api/todotasklist-delete.md
+        - name: Get task list delta
+          href: api/todotasklist-delta.md
+        - name: Create open extension
+          href: api/opentypeextension-post-opentypeextension.md
+        - name: Get open extension
+          href: api/opentypeextension-get.md
+      - name: Task
+        href: resources/todotask.md
+        items:
+        - name: List tasks
+          href: api/todotasklist-list-tasks.md
+        - name: Create task
+          href: api/todotasklist-post-tasks.md
+        - name: Get task
+          href: api/todotask-get.md
+        - name: Update task
+          href: api/todotask-update.md
+        - name: Delete task
+          href: api/todotask-delete.md
+        - name: Get task delta
+          href: api/todotask-delta.md
+        - name: Create open extension
+          href: api/opentypeextension-post-opentypeextension.md
+        - name: Get open extension
+          href: api/opentypeextension-get.md
+      - name: Linked resource
+        href: resources/linkedresource.md
+        items:
+        - name: List
+          href: api/todotask-list-linkedresources.md
+        - name: Create
+          href: api/todotask-post-linkedresources.md
+        - name: Get
+          href: api/linkedresource-get.md
+        - name: Update
+          href: api/linkedresource-update.md
+        - name: Delete
+          href: api/linkedresource-delete.md
     - name: Workbooks and charts
       displayName: Excel
       items:
