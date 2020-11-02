@@ -15,7 +15,7 @@
             "ApiChange": "Method",
             "ChangedApiName": "read channel message",
             "ChangeType": "Addition",
-            "Description": "Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-v1.0).",
+            "Description": "Added [read channel message APIs](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-v1.0).",
             "Target": "chatMessage"
           }
         ],
