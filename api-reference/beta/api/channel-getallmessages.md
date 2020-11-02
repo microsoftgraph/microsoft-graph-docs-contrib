@@ -44,7 +44,7 @@ If successful, this method returns a `200 OK` response code.
 ### Request
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/{id}/channels/getAllMessages
+GET https://graph.microsoft.com/beta/teams/0e05a7e4-a48d-4615-b0b7-c7494da9ce68/channels/allMessages?$top=2
 ```
 
 ### Response
