@@ -1,6 +1,6 @@
 ---
 title: "Get deviceImages"
-description: "Read the properties and relationships of a cloudPcDeviceImage object."
+description: "View the properties and relationships of a cloudPcDeviceImage object."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Read the properties and relationships of a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.
+View the properties and relationships of a specific [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.
 
 ## Permissions
 

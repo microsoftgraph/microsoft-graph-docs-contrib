@@ -11,9 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-CloudPC provisioning policy assignments.
-
-Inherits from [entity](../resources/entity.md).
+Represents a defined collection of provisioning policy assignments.
 
 ## Methods
 
@@ -25,8 +23,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The provisioning policy assignment id. If the target is a group, the id is in the format of {policyId}_{groupId}|
-|target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|The assignment target for the provisioning policy.|
+|id|String|The ID of the provisioning policy assignment. If target is a user group, then the ID is shown as {policyId}_{groupId}. |
+|target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|The assignment target for the provisioning policy. Currently, the only target supported for this policy is a user group.|
 
 ## Relationships
 

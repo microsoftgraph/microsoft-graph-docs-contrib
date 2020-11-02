@@ -1,6 +1,6 @@
 ---
 title: "Create provisioningPolicies"
-description: "Create a new cloudPcProvisioningPolicy object."
+description: "Create a new Cloud PC provisioning policy."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new cloudPcProvisioningPolicy object.
+Create a new Cloud PC provisioning policy.
 
 ## Permissions
 
@@ -49,14 +49,13 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The provisioning policy id. Inherited from [entity](../resources/entity.md)|
-|displayName|String|The provisioning policy display name|
-|description|String|The provisioning policy description|
-|onPremisesConnectionId|String|Id of the cloudPcOnPremisesConnection that indicates the virtual network that will enable Cloud PCs to have network connectivity and the domain that the Cloud PCs should join|
-|imageId|String|Id of the OS Image to provision Cloud PCs with. For gallery type image, the id is of {publisher_offer_sku} format|
-|imageDisplayName|String|Display name of the OS Image to provision Cloud PCs with|
-|imageType|cloudPcProvisioningPolicyImageType|Type of the OS Image to provision Cloud PCs with. The type can be gallery or custom. Possible values are: `gallery`, `custom`.|
-|assignments|[CloudPcProvisioningPolicyAssignment](../resources/CloudPcProvisioningPolicyAssignment.md) collection|The collection of assignments for the provisioning policy|
+|id|String|The provisioning policy ID.|
+|displayName|String|The display name for the provisioning policy.|
+|description|String|The provisioning policy description.|
+|onPremisesConnectionId|String|The ID of the cloudPcOnPremisesConnection. To ensure that Cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the Cloud PC service.|
+|imageId|String|The ID of the OS image you want to provision on Cloud PCs. The format for a gallery type image is: {publisher_offer_sku}.|
+|imageDisplayName|String|The display name for the OS image you’re provisioning.|
+|imageType|[cloudPcProvisioningPolicyImageType](../resources/cloudpcprovisioningpolicyimangetype.md)|The type of OS image (custom or gallery) you want to provision on Cloud PCs. Possible values are: `gallery`, `custom`.|
 
 ## Response
 

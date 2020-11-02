@@ -1,6 +1,6 @@
 ---
 title: "Update selfServiceSettings"
-description: "Update the properties of a selfServiceSettings object."
+description: "Edit the properties of the self-service setting."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of a selfServiceSettings object.
+Edit the properties of the self-service setting.
 
 ## Permissions
 
@@ -49,9 +49,9 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The id of self-service setting, which is the AAD tenant id. Inherited from [entity](../resources/entity.md)|
-|enabled|Boolean|Whether self service is allowed at the tenant level. Boolean values can be "true" or "false"|
-|assignments|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md) collection|AAD user groups that are allowed to perform self-service if tenant level self service is enabled. Only Security Groups or Office 365 Groups are supported.|
+|id|String|The ID of the self-service setting, which is the same as your Azure AD tenant ID.|
+|enabled|Boolean|When true, self-service is enabled at the tenant level. When false, self-service is disabled at the tenant level.|
+|assignments|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md) collection|The IDs of the Azure AD user groups that are allowed to perform self-service when tenant-level self service is enabled. Only security groups and Office 365 Groups are supported.|
 
 ## Response
 

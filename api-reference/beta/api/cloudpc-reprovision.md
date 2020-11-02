@@ -1,17 +1,17 @@
 ---
-title: "Delete onPremisesConnections"
-description: "Delete a cloudPcOnPremisesConnection object."
+title: "CloudPC-Reprovision"
+description: "Reprovision a specific Cloud PC."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
 doc_type: apiPageType
 ---
 
-# Delete onPremisesConnections
+# CloudPC-Reprovision
 
 Namespace: microsoft.graph
 
-Delete a specific on-premises connection. When you delete a connection, permissions to the service are removed from the specified Azure resources. You can’t delete an connection that’s in use.
+Reprovision a specific Cloud PC.
 
 ## Permissions
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-DELETE /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
+POST /deviceManagement/virtualEndpoint/cloudPCs/{id}/reprovision
 ```
 
 ## Request headers
@@ -54,12 +54,12 @@ If successful, this method returns a `204 No Content` response code.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_onpremisesconnections_from_virtualendpoint"
+  "name": "cloudpconpremisesconnection_runhealthcheck"
 }
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{id}/reprovision
 ```
 
 ### Response

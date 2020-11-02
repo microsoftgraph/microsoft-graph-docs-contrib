@@ -1,17 +1,17 @@
 ---
-title: "Create cloudPcOnPremisesConnection"
-description: "Re-run the health checks of an on premises connection."
+title: "CloudPcOnPremisesConnection-RunHealthChecks"
+description: "Run health checks on the Cloud PC on-premises connection."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
 doc_type: apiPageType
 ---
 
-# Re-run the health checks of on premises connection
+# CloudPcOnPremisesConnection-RunHealthChecks
 
 Namespace: microsoft.graph
 
-Re-run the health checks of an on premises connection.
+Run health checks on the Cloud PC on-premises connection.
 
 ## Permissions
 

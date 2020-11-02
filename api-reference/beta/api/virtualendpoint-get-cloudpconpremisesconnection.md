@@ -1,6 +1,6 @@
 ---
 title: "Get onPremisesConnections"
-description: "Read the properties and relationships of a cloudPcOnPremisesConnection object."
+description: "View the properties and relationships of the cloudPcOnPremisesConnection object."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Read the properties and relationships of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
+View the properties and relationships of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 
 ## Permissions
 

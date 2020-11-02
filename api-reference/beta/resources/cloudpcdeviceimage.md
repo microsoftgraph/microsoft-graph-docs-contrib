@@ -1,6 +1,6 @@
 ---
 title: "cloudPcDeviceImage resource type"
-description: "The cloudPCDeviceImage used for provision CloudPC."
+description: "Device image management lets you upload a custom OS image (a managed image resource on Azure) on Cloud PCs."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,30 +11,31 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The cloudPCDeviceImage used for provision CloudPC.
+Device image management lets you upload a custom OS image (a managed image resource on Azure) on Cloud PCs.
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List cloudPcDeviceImages](../api/virtualendpoint-list-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) collection|Get the cloudPcDeviceImage resources from the cloudPcDeviceImages navigation property.|
-|[Create cloudPcDeviceImages](../api/virtualendpoint-post-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Create a new cloudPcDeviceImage object.|
 |[Get cloudPcDeviceImages](../api/virtualendpoint-get-cloudpcdeviceimage.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Read the properties and relationships of a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.|
+|[Create cloudPcDeviceImages](../api/virtualendpoint-post-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Create a new cloudPcDeviceImage object.|
 |[Delete cloudPcDeviceImages](../api/virtualendpoint-delete-deviceimages.md)|None|Delete a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.|
+|[getSourceImages](../api/cloudpcdeviceimage-getsourceimages.md)|[cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) collection|Get all managed image resources from the customer's Azure subscriptions.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the image resource in Cloud PC. This property is read-only.|
-|sourceImageResourceId|String|Id of the source image resource on Azure. It should be in this format: “/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}”|
-|displayName|String|The image's display name|
-|version|String|The image version, e.g. 0.0.1, 1.5.13|
-|osBuildNumber|String|The image's OS build version, e.g. 1909|
-|operatingSystem|String|The image's operating system, e.g. Windows 10 Enterprise.|
-|lastModifiedDateTime|DateTimeOffset|The images's last modified date and time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. time|
-|status|cloudPcDeviceImageStatus|The image's status. It can be upload pending, failed to upload, or ready to use. Possible values are: `pending`, `ready`, `failed`.|
-|statusDetails|cloudPcDeviceImageStatusDetails|The image's status details. It indicates the reason the upload failed. Possible values are: `internalServerError`, `sourceImageNotFound`.|
+|id|String|The ID of the image resource on Cloud PC.This property is read-only.|
+|sourceImageResourceId|String|The ID of the source image resource on Azure. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
+|displayName|String|The image's display name.|
+|version|String|The image version. For example: 0.0.1, 1.5.13.|
+|osBuildNumber|String|The image's OS build version. For example: 1909.|
+|operatingSystem|String|The image's operating system. For example: Windows 10 Enterprise.|
+|lastModifiedDateTime|DateTimeOffset|The data and time that the image was last modified. The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|
+|status|[cloudPcDeviceImageStatus](../resources/cloudpcdeviceimagestatus.md)|The status of the image on Cloud PC. Possible status include upload pending, failed to upload, or ready to use. Possible values are: `pending`, `ready`, `failed`.|
+|statusDetails|[cloudPcDeviceImageStatusDetails](../resources/cloudpcdeviceimagestatusdetails.md)|The details of the image's status, which indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`.|
 
 ## Relationships
 

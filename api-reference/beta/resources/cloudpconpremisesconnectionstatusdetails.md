@@ -1,6 +1,6 @@
 ---
 title: "cloudPcOnPremisesConnectionStatusDetails resource type"
-description: "The details of an on-premises connection health check"
+description: "The status details of a Cloud PC on-premises connection."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The details of an on-premises connection health check
+The status details of a Cloud PC on-premises connection.
 
 ## Properties
 

@@ -1,6 +1,7 @@
 ---
 title: "List deviceImages"
-description: "Get the cloudPcDeviceImage resources from the deviceImages navigation property."
+description: "View the properties and relationships of OS images uploaded to Cloud PC.
+"
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the cloudPcDeviceImage resources from the deviceImages navigation property.
+View the properties and relationships of OS images uploaded to Cloud PC.
 
 ## Permissions
 

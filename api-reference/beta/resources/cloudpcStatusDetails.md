@@ -1,0 +1,45 @@
+---
+title: "cloudPC resource type"
+description: "The details of the Cloud PC status."
+author: "jiajyang"
+localization_priority: Normal
+ms.prod: "microsoft_cloudpc"
+doc_type: resourcePageType
+---
+
+# cloudPcStatusDetails resource type
+
+Namespace: microsoft.graph
+
+The details of the Cloud PC status.
+
+# Properties
+
+|Property|Type|Description|
+|:---|:---|:---|
+|code|String|The code associated with the Cloud PC status.|
+|message|String|The status message.|
+|additionalInformation|[KeyValuePair](../resources/keyvaluepair.md) collection|Any additional information about the Cloud PC status.|
+
+## Relationships
+
+None.
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.cloudPcStatusDetails",
+  "openType": false
+}
+-->
+
+``` json
+{
+  "@odata.type": "#microsoft.graph.cloudPcStatusDetails",
+  "code": "String",
+  "message": "String",
+  "additionalInformation": "microsoft.graph.keyValuePair"
+}
+```

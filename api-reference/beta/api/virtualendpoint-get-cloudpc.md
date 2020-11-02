@@ -1,6 +1,6 @@
 ---
 title: "Get cloudPCs"
-description: "Read the properties and relationships of a cloudPC object."
+description: "View the properties and relationships of a cloudPC object."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Read the properties and relationships of a [cloudPC](../resources/cloudpc.md) object.
+View the properties and relationships of a specific [cloudPC](../resources/cloudpc.md) object.
 
 ## Permissions
 
@@ -84,17 +84,28 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.cloudPC",
-    "id": "662009bc-7732-4f6f-8726-25883518b33e",
-    "displayName": "Demo-0",
-    "imageDisplayName": "Windows-10 19h1-evd",
-    "managedDeviceId": "bdc8e6dd-0455-4412-83d9-c818664fe1f1",
-    "managedDeviceName": "A00001KU000",
-    "provisioningPolicyId": "7ed725ad-0a00-4117-b557-d965c3732450",
-    "servicePlanId": "dbb9148c-ff83-4a4c-8d7f-28752e93c0ce",
-    "servicePlanName": "lite",
-    "status": "provisioned",
-    "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
-    "lastModifiedDateTime": "2020-07-23T10:29:57Z"
+    "id": "ac74ae8b-85f7-4272-88cc-5419267403ed",
+    "displayName": "Demo-1",
+    "imageDisplayName": "Custom image name",
+    "managedDeviceId": "e87f50c7-fa7f-4687-aade-dd45f3d65970",  
+    "managedDeviceName": "A00001D3000",
+    "provisioningPolicyId": "13fa0778-ba00-438a-96d3-488c86029dff",
+    "servicePlanId": "da5615b4-a484-4742-a019-2d52c91cbfd0",
+    "servicePlanName": "standard",
+    "status": "failed",
+    "statusDetails": {
+    "code": "internalServerError",
+    "message": "There was an internal server error. Please contact support xxx.",
+    "additionalInformation": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "correlationId",
+          "value": "52367774-cfb7-4e9c-ab51-1b864c31f2d1"
+        }
+      ]
+    },
+    "userPrincipalName": "mrichard@cpccustomer001.onmicrosoft.com",
+    "lastModifiedDateTime": "2020-07-28T18:14:34Z"
   }
 }
 ```

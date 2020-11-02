@@ -1,6 +1,7 @@
 ---
 title: "Create deviceImages"
-description: "Create a new cloudPcDeviceImage object."
+description: "Upload a custom OS image that you can later provision on Cloud PCs.
+"
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new cloudPcDeviceImage object.
+Upload a custom OS image that you can later provision on Cloud PCs.
 
 ## Permissions
 
@@ -49,12 +50,12 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The id of the image resource in Cloud PC. Inherited from [entity](../resources/entity.md)|
-|displayName|String|The image's display name|
-|sourceImageResourceId|String|Id of the source image resource on Azure. It should be in this format: “/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}”|
-|operatingSystem|String|The image's operating system, e.g. Windows 10 Enterprise|
-|osBuildNumber|String|The image's OS build version, e.g. 1909|
-|version|String|The image version, e.g. 0.0.1, 1.5.13|
+|id|String|The ID of the image resource on Cloud PC.This property is read-only.|
+|displayName|String|The image's display name.|
+|sourceImageResourceId|String|The ID of the source image resource on Azure. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
+|operatingSystem|String|The image's operating system. For example: Windows 10 Enterprise.|
+|osBuildNumber|String|The image's OS build version. For example: 1909.|
+|version|String|The image version. For example: 0.0.1, 1.5.13.|
 
 ## Response
 

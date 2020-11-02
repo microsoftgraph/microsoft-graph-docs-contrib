@@ -11,6 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+View the self-service setting permissions at the tenant-level and group-level.
 Read the properties and relationships of a [cloudPcSelfServiceSettings](../resources/cloudpcselfservicesettings.md) object.
 
 ## Permissions

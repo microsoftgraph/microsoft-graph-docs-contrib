@@ -14,22 +14,24 @@ Namespace: microsoft.graph
 cloudPcManagement assignment target
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+Not applicable.
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcManagementAssignmentTarget"
 }
 -->
+
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcManagementAssignmentTarget"
 }
 ```
-

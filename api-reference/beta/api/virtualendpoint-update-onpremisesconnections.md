@@ -1,6 +1,6 @@
 ---
 title: "Update onPremisesConnections"
-description: "Update the properties of an onPremisesConnections object."
+description: "Update the properties of a cloudPcOnPremisesConnection object."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of an onPremisesConnections object.
+Update the properties of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 
 ## Permissions
 
@@ -49,15 +49,15 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The on-premises connection id. Inherited from [entity](../resources/entity.md)|
-|displayName|String|The on-premises connection display name|
-|subscriptionId|String|The id of the target Azure subscription|
-|adDomainName|String|Active Directory domain name to join|
-|adDomainUsername|String|The username of the domain administrator|
-|adDomainPassword|String|The encrypted password of the domain administrator|
-|resourceGroupId|String|The id of the target resource group. It should be in this format: “/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}”|
-|virtualNetworkId|String|The name of the target virtual network. It should be in this format: “/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}”|
-|subnetId|String|The id of the target subnet. It should be in this format: “/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}”|
+|id|String|The unique identifier for the on-premises connection.Read-only.|
+|displayName|String|The display name for the on-premises connection.|
+|subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
+|adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join.|
+|adDomainUsername|String|The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: contoso@microsoft.com.|
+|adDomainPassword|String|The password associated with adDomainUsername.|
+|resourceGroupId|String|The ID of the target resource group. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
+|virtualNetworkId|String|The ID of the target virtual network. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
+|subnetId|String|The ID of the target subnet. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
 
 ## Response
 

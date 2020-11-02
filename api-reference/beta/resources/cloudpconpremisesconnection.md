@@ -1,6 +1,6 @@
 ---
 title: "cloudPcOnPremisesConnection resource type"
-description: "Entity that represents a defined collection of Azure resource information that can be used to establish an on-premises connection"
+description: "A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs"
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,36 +11,37 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Entity that represents a defined collection of Azure resource information that can be used to establish an on-premises connection
+A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get cloudPcOnPremisesConnection](../api/virtualendpoint-get-cloudpconpremisesconnection.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Read the properties and relationships of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.|
 |[List cloudPcOnPremisesConnections](../api/virtualendpoint-list-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) collection|Get a list of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) objects and their properties.|
-|[Create cloudPcOnPremisesConnection](../api/virtualendpoint-post-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Create a new [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.|
+|[Get cloudPcOnPremisesConnection](../api/virtualendpoint-get-cloudpconpremisesconnection.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|View the properties and relationships of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.|
+|[Create cloudPcOnPremisesConnection](../api/virtualendpoint-post-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Create an on-premises connection  for provisioning Cloud PCs.|
 |[Update cloudPcOnPremisesConnection](../api/virtualendpoint-update-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Update the properties of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.|
-|[Delete cloudPcOnPremisesConnection](../api/virtualendpoint-delete-onpremisesconnections.md)|None|Deletes a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.|
+|[Delete cloudPcOnPremisesConnection](../api/virtualendpoint-delete-onpremisesconnections.md)|None|Delete a specific on-premises connection. When you delete a connection, permissions to the service are removed from the specified Azure resources. You can’t delete an connection that’s in use.|
+|[RunHealthChecks of cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|None|Run health checks on the Cloud PC on-premises connection.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the on-premises connection. This property is read-only.|
-|displayName|String|The on-premises connection display name.|
-|subscriptionId|String|The id of the target Azure subscription.|
-|subscriptionName|String|The name of the target Azure subscription.|
-|adDomainName|String|Azure Directory domain name to join.|
-|adDomainUsername|String|The username of the domain administrator.|
-|adDomainPassword|String|The encrypted password of the domain administrator.|
-|organizationalUnit|String|Organizational unit (OU) where the computer account will be created. This is an optional field. If this parameter is null, the well known computer object container (OU) will be used as published in the domain.|
-|resourceGroupId|String|The id of the target resource group. It should be in this format: “/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}”.|
-|virtualNetworkId|String|The id of the target virtual network. It should be in this format: “/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}”.|
-|subnetId|String|The id of the target subnet. It should be in this format: “/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}”.|
-|healthCheckStatus|cloudPcOnPremisesConnectionStatus|The health check status of the on-premises connection. For example, if status is “passed”, the on-premises connection has passed all our checks. Possible values are: `Pending`, `Running`, `Passed`, `Failed`, `UnknownFutureValue`.|
-|healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|The details of the health checks done and their corresponding health check results.|
-|inUse|Boolean|The on-premises connection is in use or not. If the connection is in use, it cannot be deleted.|
+|id|String|The unique identifier for the on-premises connection.Read-only.|
+|displayName|String|The display name for the on-premises connection.|
+|subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
+|subscriptionName|String|The name of the target Azure subscription. Read-only.|
+|adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join.|
+|adDomainUsername|String|The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: contoso@microsoft.com|
+|adDomainPassword|String|The password associated with adDomainUsername.|
+|organizationalUnit|String|The organizational unit (OU) in which the computer account is created. If left null, the OU that’s configured as the default (a well-known computer object container) in your Active Directory domain (OU) is used. Optional.|
+|resourceGroupId|String|The ID of the target resource group. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
+|virtualNetworkId|String|The ID of the target virtual network. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
+|subnetId|String|The ID of the target subnet. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
+|healthCheckStatus|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnectionstatus.md)|The status of the most recent health check done on the on-premises connection. For example, if status is "passed", the on-premises connection has passed all checks run by the service. Read-only. Possible values are: `Pending`, `Running`, `Passed`, `Failed`, `UnknownFutureValue`.|
+|healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|The details of the connection's health checks and the corresponding results. Read-only.|
+|inUse|Boolean|When true, the on-premises connection is in use. When false, the connection is not in use. You cannot delete a connection that’s in use. Read-only.|
 
 ## Relationships
 

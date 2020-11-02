@@ -1,6 +1,6 @@
 ---
 title: "List cloudPCs"
-description: "Get the cloudPC resources from the cloudPCs navigation property."
+description: "View a list of existing Cloud PCs and their properties."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the cloudPC resources from the cloudPCs navigation property.
+View a list of existing Cloud PCs and their properties.
 
 ## Permissions
 

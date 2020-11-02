@@ -12,8 +12,9 @@ doc_type: enumPageType
 Possible image status
 
 ## Members
+
 |Member|Value|Description|
 |:---|:---|:---|
-|pending|0|The image upload is in progress|
-|ready|1|The image is ready for use on Cloud PCs|
-|failed|2|Failed to upload the image|
+|pending|0|The image upload is in progress.|
+|ready|1|The image is ready for use on Cloud PCs.|
+|failed|2|The image couldn’t be uploaded. |

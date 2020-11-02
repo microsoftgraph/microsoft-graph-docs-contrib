@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Delete a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.
+Delete a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object. You can’t delete a policy that’s in use.
 
 ## Permissions
 

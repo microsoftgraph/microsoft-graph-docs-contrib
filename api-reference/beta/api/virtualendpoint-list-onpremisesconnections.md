@@ -1,6 +1,6 @@
 ---
 title: "List onPremisesConnections"
-description: "Get the cloudPcOnPremisesConnection resources from the onPremisesConnections navigation property."
+description: "Get a list of the cloudPcOnPremisesConnection objects and their properties."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the cloudPcOnPremisesConnection resources from the onPremisesConnections navigation property.
+Get a list of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) objects and their properties.
 
 ## Permissions
 

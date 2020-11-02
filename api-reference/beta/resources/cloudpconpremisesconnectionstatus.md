@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 Possible on-premises connection status
 
 ## Members
+
 |Member|Value|Description|
 |:---|:---|:---|
 |pending|0|Created and waiting for health checks|

@@ -1,6 +1,6 @@
 ---
 title: "Add assignments"
-description: "Add assignments by posting to the assignments collection."
+description: "Assign the Cloud PC provisioning policy to your group."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Assign the provisioning policy to a group.
+Assign the Cloud PC provisioning policy to your group.
 
 ## Permissions
 
@@ -49,12 +49,12 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The provisioning policy assignment id. If the target is a group, the id is in the format of {policyId}_{groupId}|
-|target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|The assignment target for the provisioning policy.|
+|id|String|The ID of the provisioning policy assignment. If target is a user group, then the ID is shown as {policyId}_{groupId}. |
+|target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|The assignment target for the provisioning policy. Currently, the only target supported for this policy is a user group.|
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and a [cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 

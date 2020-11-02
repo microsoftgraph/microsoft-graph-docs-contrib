@@ -9170,6 +9170,65 @@ items:
               href: api/intune-tem-telecomexpensemanagementpartner-delete.md
             - name: Update
               href: api/intune-tem-telecomexpensemanagementpartner-update.md  
+      - name: Virtual endpoint
+        href: resources/virtualendpoint.md
+        displayName: CloudPC
+        items:
+        - name: CloudPC
+          href: resources/cloudpc.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-cloudpcs.md
+          - name: Get
+            href: api/virtualendpoint-get-cloudpc.md
+          - name: Reprovision
+            href: api/cloudpc-reprovision.md
+        - name: DeviceImages
+          href: resources/cloudpcdeviceimage.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-deviceimages.md
+          - name: Get
+            href: api/virtualendpoint-get-cloudpcdeviceimage.md
+          - name: Create
+            href: api/virtualendpoint-post-deviceimages.md
+          - name: Delete
+            href: api/virtualendpoint-delete-deviceimages.md
+        - name: OnPremisesConnections
+          href: resources/cloudpconpremisesconnection.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-onpremisesconnections.md
+          - name: Get
+            href: api/virtualendpoint-get-cloudpconpremisesconnection.md
+          - name: Create
+            href: api/virtualendpoint-post-onpremisesconnections.md
+          - name: Update
+            href: api/virtualendpoint-update-onpremisesconnections.md
+          - name: Delete
+            href: api/virtualendpoint-delete-onpremisesconnections.md
+        - name: ProvisioningPolicies
+          href: resources/cloudpcprovisioningpolicy.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-provisioningpolicies.md
+          - name: Get
+            href: api/virtualendpoint-get-cloudpcprovisioningpolicy.md
+          - name: Create
+            href: api/virtualendpoint-post-provisioningpolicies.md
+          - name: Update
+            href: api/virtualendpoint-update-provisioningpolicies.md
+          - name: Delete
+            href: api/virtualendpoint-delete-provisioningpolicies.md
+        - name: SelfServiceSettings
+          href: resources/cloudpcselfservicesettings.md
+          items:
+          - name: Get
+            href: api/virtualendpoint-get-cloudpcselfservicesettings.md
+          - name: Update
+            href: api/virtualendpoint-update-selfservicesettings.md
+        - name: Get effective permission
+          href: api/virtualendpoint-geteffectivepermissions.md
     - name: Education
       items:
       - name: Overview

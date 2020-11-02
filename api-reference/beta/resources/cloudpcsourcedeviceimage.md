@@ -1,6 +1,6 @@
 ---
 title: "cloudPcSourceDeviceImage resource type"
-description: "Customer managed image resource"
+description: "The source image associated with your Azure subscription. "
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,24 +11,27 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Customer managed image resource
+The source image associated with your Azure subscription.
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[getSourceImages](../api/cloudpcdeviceimage-getsourceimages.md)|[cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) collection|Get all managed image resources from the customer’s Azure subscriptions.|
+|[getSourceImages](../api/cloudpcdeviceimage-getsourceimages.md)|[cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) collection|Get all managed image resources from the customer's Azure subscriptions.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Id of the source image that is in customer’s Azure subscriptions |
-|displayName|String|Display name of the source image |
+|id|String|The ID of the source image.|
+|displayName|String|The display name for the source image.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -36,6 +39,7 @@ The following is a JSON representation of the resource.
   "baseType": "microsoft.graph.entity"
 }
 -->
+
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcSourceDeviceImage",
@@ -43,4 +47,3 @@ The following is a JSON representation of the resource.
   "displayName": "String"
 }
 ```
-

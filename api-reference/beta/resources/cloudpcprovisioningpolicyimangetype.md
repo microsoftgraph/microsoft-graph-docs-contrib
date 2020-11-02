@@ -1,6 +1,6 @@
 ---
 title: "cloudPcProvisioningPolicyImageType enum type"
-description: "cloudPcProvisioningPolicy image type"
+description: "The types of images that can be used in cloudPcProvisioningPolicy. "
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -9,10 +9,11 @@ doc_type: enumPageType
 
 # cloudPcProvisioningPolicyImageType enum type
 
-Possible types of images that can be used in a provisioning policy
+The types of images that can be used in cloudPcProvisioningPolicy.
 
 ## Members
+
 |Member|Value|Description|
 |:---|:---|:---|
-|custom|0|The image type is custom|
-|gallery|1|The image type is gallery|
+|custom|0|Use to identify the image type as custom.|
+|gallery|1|Use to identify the image type as gallery.|
