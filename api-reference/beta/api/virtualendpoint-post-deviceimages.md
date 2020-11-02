@@ -1,7 +1,6 @@
 ---
 title: "Create deviceImages"
-description: "Upload a custom OS image that you can later provision on Cloud PCs.
-"
+description: "Upload a custom OS image that you can later provision on Cloud PCs."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"

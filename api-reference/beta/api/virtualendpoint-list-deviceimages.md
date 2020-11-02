@@ -1,7 +1,6 @@
 ---
 title: "List deviceImages"
-description: "View the properties and relationships of OS images uploaded to Cloud PC.
-"
+description: "View the properties and relationships of OS images uploaded to Cloud PC."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
