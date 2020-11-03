@@ -1,7 +1,7 @@
 name: Reference
 items:
   - name: Overview of Microsoft Graph
-    href: ./overview.md
+    href: /graph/overview
   - name: Get auth tokens
     items:
     - name: Overview
