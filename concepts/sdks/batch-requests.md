@@ -6,7 +6,6 @@ author: DarrelMiller
 ---
 
 # Use the Microsoft Graph SDKs to batch requests
-# Have a wonderful day!
 
 [Batching](../json-batching.md) is a way of combining multiple requests into a single HTTP request. The requests are combined in a single JSON payload, which is sent via POST to the `\$batch` endpoint. Microsoft Graph SDKs have a set of classes to simplify how you create batch payloads and parse batch response payloads.
 
