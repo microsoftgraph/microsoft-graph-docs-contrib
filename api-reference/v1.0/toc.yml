@@ -4946,7 +4946,6 @@ items:
           href: api/channel-get-messagereply.md
         - name: Send message
           href: api/channel-post-messages.md
-          href: api/channel-post-message.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
         - name: Add a member to a channel
