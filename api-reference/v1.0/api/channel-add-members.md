@@ -2,7 +2,7 @@
 title: "Add member to a channel"
 description: "Add member to a channel."
 author: "laujan" 
-doc_type: "apiPageType"
+doc_type: apiPageType
 localization_priority: Normal 
 ms.prod: "microsoft-teams"
 ---
