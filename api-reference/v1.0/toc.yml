@@ -4914,18 +4914,28 @@ items:
         items:
         - name: List channels
           href: api/channel-list.md
-        - name: Get channel
-          href: api/channel-get.md
         - name: Create channel
           href: api/channel-post.md
+        - name: Get channel
+          href: api/channel-get.md
         - name: Update channel
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
         - name: Get files folder
           href: api/channel-get-filesfolder.md
+        - name: List channel messages
+          href: api/channel-list-messages.md
+        - name: Get channel messages delta
+          href: api/chatmessage-delta.md
+        - name: Get channel message
+          href: api/channel-get-message.md
+        - name: List message replies
+          href: api/channel-list-messagereplies.md
+        - name: Get message reply
+          href: api/channel-get-messagereply.md
         - name: Send message
-          href: api/channel-post-messages.md
+          href: api/channel-post-message.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
         - name: List members
@@ -4938,11 +4948,27 @@ items:
           href: api/channel-update-member.md
         - name: Delet member
           href: api/channel-delete-member.md
+        - name: Add a member to a channel
+          href: api/conversationmember-add.md
+        - name: Remove a member from a channel
+          href: api/conversationmember-delete.md
+        - name: Update the role of a member in channel
+          href: api/conversationmember-update.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
+        - name: List channel messages
+          href: api/channel-list-messages.md
+        - name: Get channel messages delta
+          href: api/chatmessage-delta.md
+        - name: Get channel message
+          href: api/channel-get-message.md
+        - name: List message replies
+          href: api/channel-list-messagereplies.md
+        - name: Get message reply
+          href: api/channel-get-messagereply.md
         - name: Send message
-          href: api/channel-post-messages.md
+          href: api/chatmessage-post.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
         - name: Update message
@@ -4951,8 +4977,8 @@ items:
         href: resources/chat.md
         items:
         - name: Get chat between user and app
-          href: api/userscopeteamsappinstallation-get-chat.md
-      - name: App catalog
+          href: api/userscopeteamsappinstallation-get-chat.md       
+     - name: App catalog
         items:
         - name: App in catalog
           href: resources/teamsapp.md

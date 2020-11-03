@@ -1,5 +1,31 @@
 {
   "changelog": [
+      {
+        "ChangeList": [
+          {
+            "Id": "5421a0d9-a155-43d1-ac9c-8d8e00529c2f",
+            "ApiChange": "Resource",
+            "ChangedApiName": "resource-specific consent",
+            "ChangeType": "Addition",
+            "Description": "Added support for [resource-specific consent](https://aka.ms/teams-rsc) (RSC) permissions to v1.0 APIs.",
+            "Target": "resource-specific consent"
+          },
+          {
+            "Id": "5421a0d9-a155-43d1-ac9c-8d8e00529c2f",
+            "ApiChange": "Method",
+            "ChangedApiName": "read channel message",
+            "ChangeType": "Addition",
+            "Description": "Added [read channel message APIs](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-v1.0).",
+            "Target": "chatMessage"
+          }
+        ],
+        "Id": "5421a0d9-a155-43d1-ac9c-8d8e00529c2f",
+        "Cloud": "prd",
+        "Version": "v1.0",
+        "CreatedDateTime": "2020-10-28T00:00:00",
+        "WorkloadArea": "Teamwork",
+        "SubArea": ""
+      },
     {
       "ChangeList": [
         {
