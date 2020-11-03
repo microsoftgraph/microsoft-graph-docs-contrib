@@ -25,7 +25,7 @@ Subject Alternative Name Options.
 |userPrincipalName|2|User Principal Name (UPN).|
 |customAzureADAttribute|4|Custom Azure AD Attribute.|
 |domainNameService|8|Domain Name Service (DNS).|
-
+|universalResourceIdentifier|16|Universal Resource Identifier (URI).|
 
 
 

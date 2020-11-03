@@ -37,7 +37,7 @@ GET /users/{id}/joinedTeams
 ```
 
 ## Optional query parameters
-The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
+The [OData Query Parameters](/graph/query-parameters) are not currently supported.
 
 ## Request headers
 | Header       | Value |
@@ -117,4 +117,3 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
-

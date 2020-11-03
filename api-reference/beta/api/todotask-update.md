@@ -84,11 +84,10 @@ Content-Type: application/json
 Content-length: 608
 
 {
-    "dueDateTime":
-    {
-        "dateTime":"2020-07-25T16:00:00",
-        "timeZone":"Eastern Standard Time"
-    }
+   "dueDateTime":{
+      "dateTime":"2020-07-25T16:00:00",
+      "timeZone":"Eastern Standard Time"
+   }
 }
 ```
 # [JavaScript](#tab/javascript)

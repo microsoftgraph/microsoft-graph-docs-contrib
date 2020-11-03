@@ -47,12 +47,12 @@ Looking for the API reference for this service?
 
 - Learn more about [Microsoft Search](/microsoftsearch/).
 - Learn more about a few key use cases:
-- 
   - [Manage connections to index external content](search-index-manage-connections.md)
   - [Index external content](search-index-manage-items.md)
   - [Search Outlook messages](search-concept-messages.md)
   - [Search calendar events](search-concept-events.md)
   - [Search content in Sharepoint and OneDrive](search-concept-files.md)
+  - [Search external content](search-concept-custom-types.md)
   - [Sort search results](search-concept-sort.md)
   - [Refine search results](search-concept-aggregation.md)
   

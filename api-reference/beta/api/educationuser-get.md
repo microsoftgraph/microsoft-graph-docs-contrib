@@ -42,7 +42,7 @@ GET /education/users/{id}
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -155,5 +155,3 @@ Content-length: 508
   ]
 }
 -->
-
-
