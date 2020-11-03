@@ -23,7 +23,7 @@ Represents a printer device that has been registered with the Universal Print se
 | [Get](../api/printer-get.md) | [printer](printer.md) | Read the properties and relationships of the printer object. |
 | [Update](../api/printer-update.md) | [printer](printer.md) | Update the printer object. |
 | [Delete](../api/printer-delete.md) | None | Unregister the physical printer from the Universal Print service. |
-| [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md) | None | Restore a printer's defaults settings to factory defaults. |
+| [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md) | None | Restore a printer's default settings to the values specified by the manufacturer. |
 | [List jobs](../api/printer-list-jobs.md) | [printJob](printjob.md) collection | Get a list of print jobs that are queued for processing by the printer. |
 | [Create job](../api/printer-post-jobs.md) | [printJob](printjob.md) | Create a new print job for the printer. To start printing the job, use [start](../api/printjob-start.md). |
 | [List connectors](../api/printer-list-connectors.md) | [printConnector](printconnector.md) collection | Get a list of connectors that this printer is associated with. |
@@ -44,6 +44,7 @@ Represents a printer device that has been registered with the Universal Print se
 |isAcceptingJobs|Boolean|Whether the printer is currently accepting new print jobs.|
 |location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer.|
 |defaults|[printerDefaults](printerdefaults.md)|The printer's default print settings.|
+|capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer associated with this printer share.|
 
 ## Relationships
 | Relationship | Type        | Description |
@@ -70,16 +71,16 @@ The following is a JSON representation of the resource.
 ```json
 {
   "id": "String (identifier)",
-  "name": "String",
+  "displayName": "String",
   "manufacturer": "String",
   "model": "String",
   "isShared": true,
   "registeredDateTime": "String (timestamp)",
-  "acceptingJobs": true,
-  "registeredBy": {"@odata.type": "microsoft.graph.printUserIdentity"},
+  "isAcceptingJobs": true,
   "location": {"@odata.type": "microsoft.graph.printerLocation"},
   "status": {"@odata.type": "microsoft.graph.printerStatus"},
-  "defaults": {"@odata.type": "microsoft.graph.printerDefaults"}
+  "defaults": {"@odata.type": "microsoft.graph.printerDefaults"},
+  "capabilities": {"@odata.type": "microsoft.graph.printerCapabilities"}
 }
 ```
 
