@@ -4978,8 +4978,7 @@ items:
         items:
         - name: Get chat between user and app
           href: api/userscopeteamsappinstallation-get-chat.md
-          
-     - name: App catalog
+      - name: App catalog
         items:
         - name: App in catalog
           href: resources/teamsapp.md
