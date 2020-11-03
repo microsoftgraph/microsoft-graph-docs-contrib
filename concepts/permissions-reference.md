@@ -521,7 +521,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_CloudPC.Read.All_ | Read Cloud PCs | Allows the app to read the properties of Cloud PCs on behalf of the signed-in user. | No | No |
-|_CloudPC.ReadWrite.All_ | Allows the app to read and write the properties of Cloud PCs on behalf of the signed-in user. | Yes | No |
+|_CloudPC.ReadWrite.All_ | Read and write Cloud PCs | Allows the app to read and write the properties of Cloud PCs on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 
