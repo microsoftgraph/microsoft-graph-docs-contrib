@@ -28,6 +28,8 @@ TODOSEARCHAPI - Bug 1653398
 
 - The **fields** property to include the fields in the external item to retrieve. Note that if you do not include any **fields** in the request, the response will contain all the fields marked as *retrievable* in the data schema specified for the specified connections in the **contentSources** property.
 
+- Refining results using aggregations with **numeric and string refiner** is supported for Microsoft Graph connectors.
+
 ## Example
 
 In this example, the content of the [AdventureWorks](/sql/samples/adventureworks-install-configure) database has been ingested using the Azure SQL built-in connector.
