@@ -11,6 +11,15 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## November 2020
+
+### Teamwork
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | v1.0 | Added support for [resource-specific consent](https://aka.ms/teams-rsc) (RSC) permissions to v1.0 APIs. |
+| Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-v1.0). |
+
 ## October 2020
 
 ### Applications
@@ -39,6 +48,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
+| Change | beta | Added new permission requirements to: <ul><li>[Get printUsageSummaryByPrinter](/graph/api/printusagesummarybyprinter-get.md?view=graph-rest-beta)</li><li>[getPrinterArchivedPrintJobs](/graph/api/reports-getprinterarchivedprintjobs.md?view=graph-rest-beta)</li><li>[List dailyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-dailyprintusagesummariesbyprinter.md?view=graph-rest-beta)</li><li>[List monthlyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter.md?view=graph-rest-beta)</li><li>[Get printUsageSummaryByUser](/graph/api/printusagesummarybyuser-get.md?view=graph-rest-beta)</li><li>[getUserArchivedPrintJobs](/graph/api/reports-getuserarchivedprintjobs.md?view=graph-rest-beta)</li><li>[getGroupArchivedPrintJobs](/graph/api/reports-getgrouparchivedprintjobs.md?view=graph-rest-beta)</li><li>[List dailyPrintUsageSummariesByUser](/graph/api/reportroot-list-dailyprintusagesummariesbyuser.md?view=graph-rest-beta)</li><li>[List monthlyPrintUsageSummariesByUser](/graph/api/reportroot-list-monthlyprintusagesummariesbyuser.md?view=graph-rest-beta)</li></ul>|
+| Change | beta | Removed **allowedUsers** property on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource. | 
+| Change | beta | Removed **allowedGroups** property on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource. |
 | Addition | beta | Added the [createUploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta) action for printDocument. | 
 | Change | beta | Deprecated **uploadData** action on [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta) resource. | 
 | Change | beta | Added properties to [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource: <br/><ul><li>isFetchable</li><li>redirectedFrom</li><li>redirectedTo</li><li>configuration</li></ul> | 
@@ -120,6 +132,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the **teamCreationMode** property to the  [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
 |Addition|beta|Added the **channelCreationMode** property to the [channel](/graph/api/resources/channel?view=graph-rest-beta) resource.|
 | Addition | v1.0 | Added the [List members](/graph/api/conversationmember-list?view=graph-rest-beta), [Get member](/graph/api/conversationmember-get?view=graph-rest-beta), [Add member](/graph/api/conversationmember-add?view=graph-rest-beta), [Update member](/graph/api/conversationmember-update?view=graph-rest-beta), and [Delete member](/graph/api/conversationmember-delete?view=graph-rest-beta) methods to the [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta) and [aadUserConversationMember](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta) resources.|
+|Addition|beta|Added support for **completeMigration** to the [channel](/graph/api/resources/channel?view=graph-rest-beta) and [team](/graph/api/resources/team?view=graph-rest-beta) resources.
+| Addition | v1.0 | Added support for [resource-specific consent](https://aka.ms/teams-rsc) (RSC) permissions to v1.0 APIs. |
+| Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-v1.0). |
 
 ### To-do tasks
 
@@ -136,7 +151,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|v1.0|Added the **taskStatus** enumeration type.|
 |Addition|v1.0|Added the [delta](/graph/api/todoTaskList-delta?view=graph-rest-1.0) method to the [todoTaskList](/graph/api/resources/todoTaskList?view=graph-rest-1.0) resource.|
 |Addition|v1.0|Added the [delta](/graph/api/todoTask-delta?view=graph-rest-1.0) method to the [todoTask](/graph/api/resources/todoTask?view=graph-rest-1.0) resource.|
-
 
 ### Users
 
