@@ -1651,22 +1651,10 @@ items:
             href: api/printer-list-jobs.md
           - name: Create print job
             href: api/printer-post-jobs.md
-          - name: List allowed users
-            href: api/printer-list-allowedusers.md
-          - name: List allowed groups
-            href: api/printer-list-allowedgroups.md
           - name: List task triggers
             href: api/printer-list-tasktriggers.md
-          - name: Create allowed group
-            href: api/printer-post-allowedgroups.md
-          - name: Create allowed user
-            href: api/printer-post-allowedusers.md
           - name: Create task trigger
             href: api/printer-post-tasktriggers.md
-          - name: Delete allowed group
-            href: api/printer-delete-allowedgroup.md
-          - name: Delete allowed user
-            href: api/printer-delete-alloweduser.md
           - name: Delete task trigger
             href: api/printer-delete-tasktrigger.md
           - name: Restore factory defaults
