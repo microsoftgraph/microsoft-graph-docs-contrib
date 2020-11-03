@@ -28,7 +28,7 @@ TODOSEARCHAPI - Bug 1653398
 
 - The **fields** property to include the fields in the external item to retrieve. Note that if you do not include any **fields** in the request, the response will contain all the fields marked as *retrievable* in the data schema specified for the specified connections in the **contentSources** property.
 
-In addition, you can aggregate search results based on properties in an [externalItem](../api-reference/beta/resources/externalItem.md). that are numeric or string type, and that are set to be refinable in the schema[search-concept-aggregation.md].
+In addition, you can aggregate search results in the [externalItem](../api-reference/beta/resources/externalItem.md) that are numeric or string type, and that are set to be refinable in the [schema](search-concept-aggregation.md).
 
 ## Example
 
