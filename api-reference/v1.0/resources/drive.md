@@ -108,7 +108,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 | [Get root folder for user's default Drive][item-get]       | `GET /drive/root`           |
 | [List children under the Drive][item-children]             | `GET /drive/root/children`  |
 | [List changes for all Items in the Drive][item-changes]    | `GET /drive/root/delta`     |
-| [List user's followed driveItems][drive-following]         | `Get /drive/followed`       |
+| [List user's followed driveItems][drive-following]         | `Get /drive/following`       |
 | [Search for Items in the Drive][item-search]               | `GET /drive/root/search`    |
 | [Access special folder](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
 
