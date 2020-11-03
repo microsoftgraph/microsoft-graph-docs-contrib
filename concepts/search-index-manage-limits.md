@@ -8,15 +8,16 @@ doc_type: conceptualPageType
 ---
 
 # Connection System Limits in the Microsoft Graph
-
 ## Connection limits
 | Limit             | Description                                                                                                                                               |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **10 connections**         | Max number of connections per Microsoft 365 tenant                     |
-| **700,000 items**         | Max number of items per connection                                            |
-| **70 GB**      |Max byte size of a connection       |
+| **700,000 items**         | Max number of items per connection                               |
+| **70 GB**      |Max byte size of a connection      |
+
 <br/><br/>
 ## Schema limits
+
 | Limit             | Description                                                                                                                                               |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **128 properties**         | Max number of properties                     |
