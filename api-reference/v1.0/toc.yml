@@ -4977,7 +4977,8 @@ items:
         href: resources/chat.md
         items:
         - name: Get chat between user and app
-          href: api/userscopeteamsappinstallation-get-chat.md       
+          href: api/userscopeteamsappinstallation-get-chat.md
+          
      - name: App catalog
         items:
         - name: App in catalog
