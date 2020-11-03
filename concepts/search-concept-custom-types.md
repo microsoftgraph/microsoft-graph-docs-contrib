@@ -28,7 +28,7 @@ TODOSEARCHAPI - Bug 1653398
 
 - The **fields** property to include the fields in the external item to retrieve. Note that if you do not include any **fields** in the request, the response will contain all the fields marked as *retrievable* in the data schema specified for the specified connections in the **contentSources** property.
 
-- Refining results using aggregations with **numeric and string refiner** is supported for Microsoft Graph Connectors.
+- Refining results using aggregations with **numeric and string refiner** is supported for Microsoft Graph connectors.
 
 ## Example
 
