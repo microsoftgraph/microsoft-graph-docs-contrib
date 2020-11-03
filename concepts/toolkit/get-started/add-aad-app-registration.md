@@ -7,7 +7,7 @@ author: waldekmastykarz
 
 # Create an Azure Active Directory app
 
-Microsoft Graph, the API that you use to connect to Microsoft 365, is secured with OAuth 2.0. In order to connect your app to Microsoft 365, you will need to create an app in Azure Active Directory (AAD) and grant this app permissions to access specific resources on behalf of the person using your app.
+Microsoft Graph, the API that you use to connect to Microsoft 365, is secured with OAuth 2.0. In order to connect your app to Microsoft 365, you will need to create an app in Azure Active Directory (AAD) and grant this app permissions to access specific resources on behalf of the person using your app. This topic details how to regiser and configure an web application to use with Microsoft Graph Toolkit.
 
 ## Add new application registration in Azure Active Directory
 
