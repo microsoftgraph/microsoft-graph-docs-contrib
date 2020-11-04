@@ -9240,7 +9240,8 @@ items:
             href: api/cloudpcprovisioningpolicy-post-assignments.md
         - name: Cloud PC provisioning policy assignment
           href: resources/cloudpcprovisioningpolicyassignment.md
-          - items: Assign Cloud PC provisioning policy
+          items: 
+          - name: Assign Cloud PC provisioning policy
             href: api/cloudpcprovisioningpolicy-post-assignments.md
         - name: Cloud PC provisioning policy image type
           href: resources/cloudpcprovisioningpolicyimangetype.md
