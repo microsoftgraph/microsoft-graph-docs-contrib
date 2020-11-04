@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Delete a specific on-premises connection. When you delete a connection, permissions to the service are removed from the specified Azure resources. You can’t delete an connection that’s in use.
+Delete a specific [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object. When you delete a connection, permissions to the service are removed from the specified Azure resources. You can’t delete an connection that’s in use.
 
 ## Permissions
 

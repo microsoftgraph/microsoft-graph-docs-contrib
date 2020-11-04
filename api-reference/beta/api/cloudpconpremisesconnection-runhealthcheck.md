@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Run health checks on the Cloud PC on-premises connection.
+Run health checks on the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 
 ## Permissions
 

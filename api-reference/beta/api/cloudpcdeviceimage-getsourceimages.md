@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-View a list of all managed image resources from you Azure subscriptions. These source images can be uploaded and used on Cloud PCs.
+Get [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) objects. View a list of all managed image resources from you Azure subscriptions. These source images can be uploaded and used on Cloud PCs.
 
 ## Permissions
 

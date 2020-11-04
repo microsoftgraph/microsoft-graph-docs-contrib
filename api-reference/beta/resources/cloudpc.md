@@ -15,7 +15,6 @@ Cloud managed virtual desktops.
 
 ## Methods
 
-TODO
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List properties and relationships of the [cloudPC](../resources/cloudpc.md) objects.|
