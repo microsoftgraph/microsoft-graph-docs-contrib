@@ -9,12 +9,14 @@ doc_type: resourcePageType
 
 # virtualEndpoint resource type
 
+TODO
 Namespace: microsoft.graph
 
 Project Deschutes is a new fixed-price SaaS service being worked on by the CMX organization (Commercial Management Experiences led by Brad Anderson). As part of this service, Desktop admins (Intune/SCCM admins) will be able to provision virtual desktops for their licensed users and manage these virtual endpoints alongside their physical PC estate in Microsoft Endpoint Manager (Portal and APIs). We are releasing a new set of APIs to allow customers and partners to provision and manage these virtual desktops.
 
 ## Methods
 
+TODO
 |Method|Return type|Description|
 |:---|:---|:---|
 |[getEffectivePermissions](../api/virtualendpoint-geteffectivepermissions.md)|String collection|effective permissions of the currently authenticated user.|
@@ -49,6 +51,7 @@ Project Deschutes is a new fixed-price SaaS service being worked on by the CMX o
 
 ## Relationships
 
+TODO
 |Relationship|Type|Description|
 |:---|:---|:---|
 |cloudPCs|[cloudPC](../resources/cloudpc.md) collection|Cloud managed virtual desktops.|

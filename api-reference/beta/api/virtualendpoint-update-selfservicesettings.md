@@ -1,6 +1,6 @@
 ---
 title: "Update selfServiceSettings"
-description: "Edit the properties of the self-service setting."
+description: "Update the properties of the self-service setting."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Edit the properties of the self-service setting.
+Update the properties of a [cloudPcSelfServiceSettings](../resources/cloudpcselfservicesettings.md) object.
 
 ## Permissions
 
@@ -36,10 +36,10 @@ PATCH /deviceManagement/virtualEndpoint/selfServiceSettings
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+| Name          | Description                |
+| :------------ | :------------------------  |
+| Authorization | Bearer {token}. Required.  |
+| Content-Type  | application/json. Required.|
 
 ## Request body
 
@@ -49,7 +49,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The ID of the self-service setting, which is the same as your Azure AD tenant ID.|
+|id|String|Unique Identifier for the self-service setting, which is the same as your Azure AD tenant ID. Read-only.|
 |enabled|Boolean|When true, self-service is enabled at the tenant level. When false, self-service is disabled at the tenant level.|
 |assignments|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md) collection|The IDs of the Azure AD user groups that are allowed to perform self-service when tenant-level self service is enabled. Only security groups and Office 365 Groups are supported.|
 
@@ -70,6 +70,7 @@ If successful, this method returns a `200 OK` response code and an updated [clou
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/selfServiceSettings
 Content-Type: application/json
+Content-length: 675
 
 {
   "@odata.type": "#microsoft.graph.cloudPcSelfServiceSettings",
@@ -108,6 +109,7 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+Content-length: 722
 
 {
   "@odata.type": "#microsoft.graph.cloudPcSelfServiceSettings",

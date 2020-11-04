@@ -36,9 +36,9 @@ GET /deviceManagement/virtualEndpoint/getEffectivePermissions
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Function parameters
 
@@ -78,17 +78,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 {
   "value": [
-    "Microsoft.CloudPC/CloudPCs/Read",
-    "Microsoft.CloudPC/OnPremisesConnections/Read",
-    "Microsoft.CloudPC/DeviceImages/Read",
-    "Microsoft.CloudPC/DeviceImages/Create",
-    "Microsoft.CloudPC/DeviceImages/Delete",
-    "Microsoft.CloudPC/SelfServiceSettings/Read",
-    "Microsoft.CloudPC/SelfServiceSettings/Update",
-    "Microsoft.CloudPC/ProvisioningPolicies/Read",
-    "Microsoft.CloudPC/ProvisioningPolicies/Create"
-    "Microsoft.CloudPC/ProvisioningPolicies/Update",
-    "Microsoft.CloudPC/ProvisioningPolicies/Delete"
+    "Microsoft.CloudPC/CloudPCs/Read"
   ]
 }
 ```

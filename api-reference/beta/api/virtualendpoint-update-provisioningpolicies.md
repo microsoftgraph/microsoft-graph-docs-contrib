@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of a provisioningPolicies object.
+Update the properties of a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.
 
 ## Permissions
 
@@ -36,10 +36,10 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+| Name          | Description                |
+| :------------ | :------------------------  |
+| Authorization | Bearer {token}. Required.  |
+| Content-Type  | application/json. Required.|
 
 ## Request body
 
@@ -49,7 +49,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The provisioning policy ID.|
+|id|String|Unique identifier for the Cloud PC provisioning policy. Read-only|
 |displayName|String|The display name for the provisioning policy. |
 |description|String|The provisioning policy description.|
 |onPremisesConnectionId|String|The ID of the cloudPcOnPremisesConnection. To ensure that Cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the Cloud PC service.|
@@ -74,6 +74,7 @@ If successful, this method returns a `200 OK` response code and an updated [clou
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 Content-Type: application/json
+Content-length: 308
 
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
@@ -82,7 +83,7 @@ Content-Type: application/json
   "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
   "imageId": "Image ID value",
   "imageDisplayName": "Image Display Name value",
-  "imageType": "Custom"
+  "imageType": "custom"
 }
 ```
 
@@ -99,6 +100,7 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+Content-length: 355
 
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
@@ -108,6 +110,6 @@ Content-Type: application/json
   "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
   "imageId": "Image ID value",
   "imageDisplayName": "Image Display Name value",
-  "imageType": "customer"
+  "imageType": "custom"
 }
 ```

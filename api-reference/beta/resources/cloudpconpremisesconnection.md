@@ -1,6 +1,6 @@
 ---
 title: "cloudPcOnPremisesConnection resource type"
-description: "A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs"
+description: "Represents a defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,29 +11,29 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs
+Represents a defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List cloudPcOnPremisesConnections](../api/virtualendpoint-list-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) collection|Get a list of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) objects and their properties.|
-|[Get cloudPcOnPremisesConnection](../api/virtualendpoint-get-cloudpconpremisesconnection.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|View the properties and relationships of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.|
-|[Create cloudPcOnPremisesConnection](../api/virtualendpoint-post-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Create an on-premises connection  for provisioning Cloud PCs.|
+|[List cloudPcOnPremisesConnections](../api/virtualendpoint-list-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) collection|List properties and relationships of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) objects.|
+|[Get cloudPcOnPremisesConnection](../api/virtualendpoint-get-cloudpconpremisesconnection.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Read the properties and relationships of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.|
+|[Create cloudPcOnPremisesConnection](../api/virtualendpoint-post-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Create a new [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.|
 |[Update cloudPcOnPremisesConnection](../api/virtualendpoint-update-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Update the properties of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.|
-|[Delete cloudPcOnPremisesConnection](../api/virtualendpoint-delete-onpremisesconnections.md)|None|Delete a specific on-premises connection. When you delete a connection, permissions to the service are removed from the specified Azure resources. You can’t delete an connection that’s in use.|
-|[RunHealthChecks of cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|None|Run health checks on the Cloud PC on-premises connection.|
+|[Delete cloudPcOnPremisesConnection](../api/virtualendpoint-delete-onpremisesconnections.md)|None|Delete a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object. You can’t delete an connection that’s in use.|
+|[RunHealthChecks of cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|None|Run health checks on the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for the on-premises connection.Read-only.|
+|id|String|Unique identifier for the on-premises connection. Read-only.|
 |displayName|String|The display name for the on-premises connection.|
 |subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
 |subscriptionName|String|The name of the target Azure subscription. Read-only.|
 |adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join.|
-|adDomainUsername|String|The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: contoso@microsoft.com|
+|adDomainUsername|String|The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: contoso@microsoft.com.|
 |adDomainPassword|String|The password associated with adDomainUsername.|
 |organizationalUnit|String|The organizational unit (OU) in which the computer account is created. If left null, the OU that’s configured as the default (a well-known computer object container) in your Active Directory domain (OU) is used. Optional.|
 |resourceGroupId|String|The ID of the target resource group. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
@@ -81,7 +81,7 @@ The following is a JSON representation of the resource.
     "endDateTime": "String (timestamp)",
     "healthChecks": [
       {
-        "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
+        "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
         "displayName": "String",
         "status": "String",
         "startDateTime": "String (timestamp)",

@@ -1,6 +1,6 @@
 ---
 title: "Get deviceImages"
-description: "View the properties and relationships of a cloudPcDeviceImage object."
+description: "Read the properties and relationships of a cloudPcDeviceImage object."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-View the properties and relationships of a specific [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.
+Read the properties and relationships of a specific [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.
 
 ## Permissions
 
@@ -40,9 +40,9 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 

@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Upload a custom OS image that you can later provision on Cloud PCs.
+Create a new [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object. Upload a custom OS image that you can later provision on Cloud PCs.
 
 ## Permissions
 
@@ -36,10 +36,10 @@ POST /deviceManagement/virtualEndpoint/deviceImages
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+| Name          | Description                |
+| :------------ | :------------------------  |
+| Authorization | Bearer {token}. Required.  |
+| Content-Type  | application/json. Required.|
 
 ## Request body
 
@@ -49,7 +49,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The ID of the image resource on Cloud PC.This property is read-only.|
+|id|String|Unique Identifier for the image resource on Cloud PC.|
 |displayName|String|The image's display name.|
 |sourceImageResourceId|String|The ID of the source image resource on Azure. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |operatingSystem|String|The image's operating system. For example: Windows 10 Enterprise.|
@@ -73,7 +73,7 @@ If successful, this method returns a `201 Created` response code and a [cloudPcD
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages
 Content-Type: application/json
-Content-length: 235
+Content-length: 363
 
 {
   "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
@@ -98,6 +98,7 @@ Content-length: 235
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+Content-length: 508
 
 {
   "@odata.type": "#microsoft.graph.cloudPcDeviceImage",

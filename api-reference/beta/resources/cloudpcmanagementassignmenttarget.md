@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-cloudPcManagement assignment target
+Base type for assignment targets.
 
 ## Properties
 

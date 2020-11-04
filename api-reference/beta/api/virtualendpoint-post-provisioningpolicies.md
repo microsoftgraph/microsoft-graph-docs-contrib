@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new Cloud PC provisioning policy.
+Create a new [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.
 
 ## Permissions
 
@@ -36,10 +36,10 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+| Name          | Description                |
+| :------------ | :------------------------  |
+| Authorization | Bearer {token}. Required.  |
+| Content-Type  | application/json. Required.|
 
 ## Request body
 
@@ -49,7 +49,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The provisioning policy ID.|
+|id|String|Unique identifier for the Cloud PC provisioning policy. Read-only.|
 |displayName|String|The display name for the provisioning policy.|
 |description|String|The provisioning policy description.|
 |onPremisesConnectionId|String|The ID of the cloudPcOnPremisesConnection. To ensure that Cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the Cloud PC service.|
@@ -74,6 +74,7 @@ If successful, this method returns a `201 Created` response code and a [cloudPcP
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies
 Content-Type: application/json
+Content-length: 309
 
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
@@ -99,6 +100,7 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+Content-length: 357
 
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
@@ -108,6 +110,6 @@ Content-Type: application/json
   "onPremisesConnectionId": "6bf90392-5fea-459a-9e9d-a2484abbffff",
   "imageId": "Image ID value",
   "imageDisplayName": "Image Display Name value",
-  "imageType": "gallery"
+  "imageType": "custom"
   }
 ```

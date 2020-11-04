@@ -1,6 +1,6 @@
 ---
 title: "Get onPremisesConnections"
-description: "View the properties and relationships of the cloudPcOnPremisesConnection object."
+description: "Read the properties and relationships of the cloudPcOnPremisesConnection object."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-View the properties and relationships of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
+Read the properties and relationships of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 
 ## Permissions
 
@@ -60,6 +60,51 @@ If successful, this method returns a `200 OK` response code and a [cloudPcOnPrem
 <!-- {
   "blockType": "request",
   "name": "get_cloudpconpremisesconnection"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}
+```
+
+### Response
+
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcOnPremisesConnection"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
+    "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
+    "displayName": "Display Name value",
+    "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
+    "subscriptionName": "Subscription Name value",
+    "adDomainName": "Active Directory Domain Name value",
+    "adDomainUsername": "Active Directory Domain User Name value",
+    "organizationalUnit": "Organization Unit value",
+    "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG",
+    "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet",
+    "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default",
+    "healthCheckStatus": "running",
+    "inUse": false
+  }
+}
+```
+
+### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_cloudpconpremisesconnection_withDetails"
 }
 -->
 

@@ -1,6 +1,6 @@
 ---
 title: "List deviceImages"
-description: "View the properties and relationships of OS images uploaded to Cloud PC."
+description: "List the properties and relationships of OS images uploaded to Cloud PC."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-View the properties and relationships of OS images uploaded to Cloud PC.
+List the properties and relationships of the [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) objects (OS images) uploaded to Cloud PC.
 
 ## Permissions
 
@@ -40,9 +40,9 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 

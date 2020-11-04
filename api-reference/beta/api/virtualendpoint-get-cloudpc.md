@@ -11,15 +11,16 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-View the properties and relationships of a specific [cloudPC](../resources/cloudpc.md) object.
+Read the properties and relationships of a specific [cloudPC](../resources/cloudpc.md) object.
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+TODO
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|CloudPC.ReadWrite.All,CloudPC.Read.All|
+|Delegated (work or school account)|CloudPC.ReadWrite.All, CloudPC.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -40,9 +41,9 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -95,13 +96,13 @@ Content-Type: application/json
     "status": "failed",
     "statusDetails": {
     "@odata.type": "microsoft.graph.cloudPcStatusDetails",
-    "code": "internalServerError",
-    "message": "There was an internal server error. Please contact IT support.",
+    "code": "Sample code",
+    "message": "Sample message",
     "additionalInformation": [
         {
           "@odata.type": "microsoft.graph.keyValuePair",
-          "name": "correlationId",
-          "value": "52367774-cfb7-4e9c-ab51-1b864c31ffff"
+          "name": "Name value",
+          "value": "Sample value"
         }
       ]
     },

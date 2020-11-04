@@ -9,7 +9,7 @@ doc_type: enumPageType
 
 # cloudPcDeviceImageStatusDetails enum type
 
-Possible image status details
+Cloud PC device image status details
 
 ## Members
 

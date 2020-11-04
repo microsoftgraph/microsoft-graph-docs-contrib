@@ -1,6 +1,6 @@
 ---
 title: "cloudPC resource type"
-description: "Cloud PC devices."
+description: "Cloud managed virtual desktops."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,21 +11,22 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Cloud managed virtual desktops. Use the Cloud PC management feature to view a list of the existing Cloud PCs in your tenant.
+Cloud managed virtual desktops.
 
 ## Methods
 
+TODO
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|Get the cloudPC resources from the cloudPCs navigation property.|
-|[Get cloudPCs](../api/virtualendpoint-get-cloudpc.md)|[cloudPC](../resources/cloudpc.md)|Read the properties and relationships of a [cloudPC](../resources/cloudpc.md) object.|
-|[Reprovision](../api/cloudpc-reprovision.md)|None|Reprovision a specific Cloud PC.|
+|[List cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List properties and relationships of the [cloudPC](../resources/cloudpc.md) objects.|
+|[Get cloudPC](../api/virtualendpoint-get-cloudpc.md)|[cloudPC](../resources/cloudpc.md)|Read the properties and relationships of a [cloudPC](../resources/cloudpc.md) object.|
+|[Reprovision](../api/cloudpc-reprovision.md)|None|Reprovision [cloudPC](../resources/cloudpc.md) object.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The Cloud PC ID|
+|id|String|Unique identifier for the Cloud PC. Read-only|
 |displayName|String|The Cloud PC display name.|
 |imageDisplayName|String|Name of the OS image that's on the Cloud PC.|
 |managedDeviceId|String|The Cloud PC’s Intune device ID.|

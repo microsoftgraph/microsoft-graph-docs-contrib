@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The status details of a Cloud PC on-premises connection.
+The status details of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).
 
 ## Properties
 
@@ -41,7 +41,7 @@ The following is a JSON representation of the resource.
   "endDateTime": "String (timestamp)",
   "healthChecks": [
     {
-      "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
+      "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
       "displayName": "String",
       "status": "String",
       "startDateTime": "String (timestamp)",

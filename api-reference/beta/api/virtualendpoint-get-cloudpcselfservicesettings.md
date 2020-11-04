@@ -11,7 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-View the self-service setting permissions at the tenant-level and group-level.
 Read the properties and relationships of a [cloudPcSelfServiceSettings](../resources/cloudpcselfservicesettings.md) object.
 
 ## Permissions
@@ -41,9 +40,9 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 

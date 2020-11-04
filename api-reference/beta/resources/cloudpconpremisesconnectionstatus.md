@@ -11,7 +11,7 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
-Possible on-premises connection status
+[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) status type.
 
 ## Members
 

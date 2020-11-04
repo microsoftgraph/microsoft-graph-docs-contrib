@@ -11,7 +11,7 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
-Possible Cloud PC status types
+Cloud PC status type
 
 ## Members
 

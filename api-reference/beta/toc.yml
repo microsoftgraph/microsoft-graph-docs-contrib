@@ -9170,11 +9170,11 @@ items:
               href: api/intune-tem-telecomexpensemanagementpartner-delete.md
             - name: Update
               href: api/intune-tem-telecomexpensemanagementpartner-update.md  
-      - name: Virtual endpoint(preview)
+      - name: Virtual endpoint (preview)
         href: resources/virtualendpoint.md
-        displayName: CloudPC
+        displayName: Cloud PC
         items:
-        - name: CloudPC
+        - name: Cloud PC
           href: resources/cloudpc.md
           items:
           - name: List
@@ -9183,7 +9183,7 @@ items:
             href: api/virtualendpoint-get-cloudpc.md
           - name: Reprovision
             href: api/cloudpc-reprovision.md
-        - name: DeviceImages
+        - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
           items:
           - name: List
@@ -9194,7 +9194,13 @@ items:
             href: api/virtualendpoint-post-deviceimages.md
           - name: Delete
             href: api/virtualendpoint-delete-deviceimages.md
-        - name: OnPremisesConnections
+          - name: Get source images
+            href: api/cloudpcdeviceimage-getsourceimages.md
+        - name: Cloud PC device image status
+          href: resources/cloudpcdeviceimagestatus.md
+        - name: Cloud PC device image status details
+          href: resources/cloudpcdeviceimagestatusdetails.md
+        - name: Cloud PC on-premises connection
           href: resources/cloudpconpremisesconnection.md
           items:
           - name: List
@@ -9207,7 +9213,17 @@ items:
             href: api/virtualendpoint-update-onpremisesconnections.md
           - name: Delete
             href: api/virtualendpoint-delete-onpremisesconnections.md
-        - name: ProvisioningPolicies
+          - name: Run health checks
+            href: api/cloudpconpremisesconnection-runhealthcheck.md
+        - name: Cloud PC on-premises connection health check
+          href: resources/cloudpconpremisesconnectionhealthcheck.md
+        - name: Cloud PC on-premises connection health check error type
+          href: resources/cloudpconpremisesconnectionHealthCheckErrorType.md
+        - name: Cloud PC on-premises connection status
+          href: resources/cloudpconpremisesconnectionstatus.md
+        - name: Cloud PC on-premises connection status details
+          href: resoureces/cloudpconpremisesconnectionstatusdetails.md
+        - name: Cloud PC provisioning policy
           href: resources/cloudpcprovisioningpolicy.md
           items:
           - name: List
@@ -9220,15 +9236,33 @@ items:
             href: api/virtualendpoint-update-provisioningpolicies.md
           - name: Delete
             href: api/virtualendpoint-delete-provisioningpolicies.md
-        - name: SelfServiceSettings
+          - name: Assign
+            href: api/cloudpcprovisioningpolicy-post-assignments.md
+        - name: Cloud PC provisioning policy assignment
+          href: resources/cloudpcprovisioningpolicyassignment.md
+          - items: Assign Cloud PC provisioning policy
+            href: api/cloudpcprovisioningpolicy-post-assignments.md
+        - name: Cloud PC provisioning policy image type
+          href: resources/cloudpcprovisioningpolicyimangetype.md
+        - name: Cloud PC self-service settings
           href: resources/cloudpcselfservicesettings.md
           items:
           - name: Get
             href: api/virtualendpoint-get-cloudpcselfservicesettings.md
           - name: Update
             href: api/virtualendpoint-update-selfservicesettings.md
-        - name: Get effective permission
-          href: api/virtualendpoint-geteffectivepermissions.md
+        - name: Cloud PC source device image
+          href: resources/cloudpcsourcedeviceimage.md
+        - name: Cloud PC status
+          href: resources/cloudpcstatus.md
+        - name: Cloud PC status details
+          href: resources/cloudpcstatusdetails.md
+        - name: Shared resources
+          items:
+          - name: Cloud PC management assignment target
+            href: resoureces/cloudpcmanagementassignmenttarget.md
+          - name: Cloud PC management group assignment target
+            href: resources/cloudpcmanagementgroupassignmenttarget.md
     - name: Education
       items:
       - name: Overview

@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-View the properties and relationships of a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.
+Read the properties and relationships of a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.
 
 ## Permissions
 
@@ -41,9 +41,9 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -90,7 +90,57 @@ Content-Type: application/json
     "onPremisesConnectionId": "6bf90392-5fea-459a-9e9d-a2484abbffff",
     "imageId": "Image ID value",
     "imageDisplayName": "Image Display Name value",
-    "imageType": "gallery"
+    "imageType": "custom"
+  }
+}
+```
+
+### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_cloudpcprovisioningpolicy"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/{id}?$expand=assignments
+```
+
+### Response
+
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcProvisioningPolicy"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
+    "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff",
+    "displayName": "Display Name value",
+    "description": "Description value",
+    "onPremisesConnectionId": "6bf90392-5fea-459a-9e9d-a2484abbffff",
+    "imageId": "Image ID value",
+    "imageDisplayName": "Image Display Name value",
+    "imageType": "custom",
+    "assignments": [
+      {
+        "@odata.type": "microsoft.graph.cloudPcProvisioningPolicyAssignment",
+        "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
+        "target": {
+          "@odata.type":"microsoft.graph.cloudPCManagementGroupAssignmentTarget",
+          "groupId":"64ff06de-9c00-4a5a-98b5-7f5abe26bfd9"
+          }
+      }
+    ]
   }
 }
 ```

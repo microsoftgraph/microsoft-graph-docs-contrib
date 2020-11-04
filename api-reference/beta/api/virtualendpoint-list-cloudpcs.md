@@ -1,6 +1,6 @@
 ---
 title: "List cloudPCs"
-description: "View a list of existing Cloud PCs and their properties."
+description: "List properties and relationships of the cloudPC objects."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: "microsoft_cloudpc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-View a list of existing Cloud PCs and their properties.
+List properties and relationships of the [cloudPC](../resources/cloudpc.md) objects.
 
 ## Permissions
 
@@ -40,9 +40,9 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -88,13 +88,14 @@ Content-Type: application/json
       "displayName": "Display Name value",
       "imageDisplayName": "Image Display Name value",
       "managedDeviceId": "bdc8e6dd-0455-4412-83d9-c818664fffff",
-      "managedDeviceName": " Managed Device Name value",
+      "managedDeviceName": "Managed Device Name value",
       "provisioningPolicyId": "7ed725ad-0a00-4117-b557-d965c373ffff",
       "servicePlanId": "dbb9148c-ff83-4a4c-8d7f-28752e93ffff",
       "servicePlanName": "lite",
       "status": "provisioned",
       "userPrincipalName": "User Principal Name value",
-      "lastModifiedDateTime": "2020-11-03T10:29:57Z"
+      "lastModifiedDateTime": "2020-11-03T10:29:57Z",
+      "statusDetails": null
     }
   ]
 }

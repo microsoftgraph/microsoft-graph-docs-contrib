@@ -11,7 +11,7 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
-Possible cloudPcOnPremisesConnection health check error values
+The type of cloudPcOnPremisesConnection health check error.
 
 ## Members
 

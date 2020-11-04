@@ -9,7 +9,7 @@ doc_type: enumPageType
 
 # cloudPcProvisioningPolicyImageType enum type
 
-The types of images that can be used in cloudPcProvisioningPolicy.
+The types of images that can be used in [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md).
 
 ## Members
 

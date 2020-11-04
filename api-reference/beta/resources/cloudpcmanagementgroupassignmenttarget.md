@@ -11,8 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Complex type that represents the assignment target group. Base type: CloudPcManagementAssignmentTarget
-
+Complex type that represents the assignment target group.
 Inherits from [cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md).
 
 ## Properties
