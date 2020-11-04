@@ -13,12 +13,6 @@ Namespace: microsoft.graph
 
 The source image associated with your Azure subscription.
 
-## Methods
-
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Get cloudPcSourceDeviceImage](../api/cloudpcdeviceimage-getsourceimages.md)|[cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) collection|Get all managed image resources from the customer's Azure subscriptions.|
-
 ## Properties
 
 |Property|Type|Description|
