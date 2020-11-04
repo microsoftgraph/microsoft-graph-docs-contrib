@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-GET /channels/{id}/members/{id}
+GET /channels/{id}/members
 ```
 
 ## Optional query parameters
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 Here is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/v1.0/channels/{id}/members/{id}
+GET https://graph.microsoft.com/v1.0/channels/{id}/members
 ```
 
 ### Response
@@ -73,10 +73,30 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 201
 
-{
-  "id": "id-value",
-  "displayName": "display-name-value"
+"@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('2ab9c796-2902-45f8-b712-7c5a63cf41c4')/channels('19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype')/members",
+"@odata.count": 2,
+"value": [
+    {
+        "@odata.type": "#microsoft.graph.aadUserConversationMember",
+        "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJkMTQ=",
+        "roles": [],
+        "displayName": "Joe Self",
+        "userId": "eef9cb36-06de-469b-87cd-70f4cbe32d14",
+        "email": "jself@teamsip.onmicrosoft.com"
+    },
+    {
+        "@odata.type": "#microsoft.graph.aadUserConversationMember",
+        "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNiMzI0NmY0NC1jMDkxLTQ2MjctOTZjNi0yNWIxOGZhMmM5MTA=",
+        "roles": [
+            "owner"
+        ],
+        "displayName": "Anagha Kothurwar",
+        "userId": "b3246f44-c091-4627-96c6-25b18fa2c910",
+        "email": "ankothur@teamsip.onmicrosoft.com"
+    }
+]
 }
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
