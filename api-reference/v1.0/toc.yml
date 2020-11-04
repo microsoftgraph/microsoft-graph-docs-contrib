@@ -5006,7 +5006,7 @@ items:
           href: api/teamsappinstallation-upgrade.md
         - name: List apps for user
           href: api/user-list-teamsappinstallation.md
-        - name: Gets the installed app for user
+        - name: Gets installed app for user
           href: api/user-get-teamsappinstallation.md
         - name: Add app for user
           href: api/user-add-teamsappinstallation.md
