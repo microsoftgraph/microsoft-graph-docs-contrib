@@ -21,7 +21,7 @@ To create an application in Azure Active Directory, you need to add a new applic
 1. From the top menu, select the **New registration** button
    ![The 'New registration' button highlighted on the App registrations page in the Azure Portal](../images/aad-app-registration-spa/mgt-azure-add-appreg-newreg-button.png)
 1. Enter the name for your app, eg. `My M365 app`
-1. For the type of supported account types, select `Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)`
+1. For the type of [supported account types](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app), select `Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)`
 1. In the **Redirect URI** field, in the dropdown select `Web` and in the URL field enter `https://localhost:3000`
 1. Confirm changes by selecting the **Register** button
    ![New app registration form in the Azure Portal filled in with data](../images/aad-app-registration-spa/mgt-azure-add-appreg-newreg.png)
