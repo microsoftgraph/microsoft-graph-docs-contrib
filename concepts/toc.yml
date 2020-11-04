@@ -376,7 +376,7 @@ items:
             href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: teams-proactive-messaging.md
-      - name: To-do tasks (preview)
+      - name: To-do tasks
         href: todo-concept-overview.md
         displayName: Microsoft To Do
       - name: Workbooks and charts
@@ -445,8 +445,8 @@ items:
                 href: webhooks.md
               - name: Tutorial
                 href: /learn/modules/msgraph-changenotifications-trackchanges
-              - name: Missing Outlook notifications (preview)
-                href: webhooks-outlook-authz.md
+              - name: Missing change notifications
+                href: webhooks-lifecycle.md
               - name: Notifications with resource data
                 href: webhooks-with-resource-data.md
               - name: Get notifications delivered different ways (preview)

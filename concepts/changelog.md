@@ -11,6 +11,15 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## November 2020
+
+### Teamwork
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | v1.0 | Added support for [resource-specific consent](https://aka.ms/teams-rsc) (RSC) permissions to v1.0 APIs. |
+| Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-v1.0). |
+
 ## October 2020
 
 ### Applications
@@ -19,22 +28,29 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added the **AlternateIdLogin** field to the [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-1.0) policy definition.|
 | Addition | beta | Added the **AlternateIdLogin** field to the [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta) policy definition.|
-| Addition | beta | Added the [fido2AuthenticationMethodConfiguration](/graph/api/resources/fido2AuthenticationMethodConfiguration?view=graph-rest-beta) entity for managing users' FIDO2 Security Keys authentication method policy. |
-| Addition | beta | Added the [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) entity for managing users' Microsoft Authenticator Passwordless Phone Sign-in authentication method policy. |
-| Addition | beta | Added the [emailauthenticationmethod](/graph/api/resources/emailauthenticationmethod?view=graph-rest-beta) entity for managing users' email authentication method. |
 | Addition | beta and v1.0 | Added [verified publisher](/graph/api/resources/verifiedPublisher) properties to the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) resources. |
 | Addition | beta and v1.0 | Added [setVerifiedPublisher](/graph/api/application-setverifiedpublisher) and [unsetVerifiedPublisher](/graph/api/application-unsetverifiedpublisher) methods to the [application](/graph/api/resources/application) resource. |
+
+### Change notifications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added [lifecycle notifications](./webhooks-lifecycle.md) for personal [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-1.0), [contact](/graph/api/resources/contact?view=graph-rest-1.0), [event](/graph/api/resources/event?view=graph-rest-1.0), and [message](/graph/api/resources/message?view=graph-rest-1.0).|
 
 ### Cloud communications
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the **role** property to the [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo?view=graph-rest-beta) entity.|
+| Addition | beta | Added the **role** property to the [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo?view=graph-rest-beta) complex type.|
+| Addition | beta | Added new action to retrieve an [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) by JoinWebUrl.|
 
 ### Devices and apps | Cloud printing
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
+| Change | beta | Added new permission requirements to: <ul><li>[Get printUsageSummaryByPrinter](/graph/api/printusagesummarybyprinter-get.md?view=graph-rest-beta)</li><li>[getPrinterArchivedPrintJobs](/graph/api/reports-getprinterarchivedprintjobs.md?view=graph-rest-beta)</li><li>[List dailyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-dailyprintusagesummariesbyprinter.md?view=graph-rest-beta)</li><li>[List monthlyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter.md?view=graph-rest-beta)</li><li>[Get printUsageSummaryByUser](/graph/api/printusagesummarybyuser-get.md?view=graph-rest-beta)</li><li>[getUserArchivedPrintJobs](/graph/api/reports-getuserarchivedprintjobs.md?view=graph-rest-beta)</li><li>[getGroupArchivedPrintJobs](/graph/api/reports-getgrouparchivedprintjobs.md?view=graph-rest-beta)</li><li>[List dailyPrintUsageSummariesByUser](/graph/api/reportroot-list-dailyprintusagesummariesbyuser.md?view=graph-rest-beta)</li><li>[List monthlyPrintUsageSummariesByUser](/graph/api/reportroot-list-monthlyprintusagesummariesbyuser.md?view=graph-rest-beta)</li></ul>|
+| Change | beta | Removed **allowedUsers** property on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource. | 
+| Change | beta | Removed **allowedGroups** property on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource. |
 | Addition | beta | Added the [createUploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta) action for printDocument. | 
 | Change | beta | Deprecated **uploadData** action on [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta) resource. | 
 | Change | beta | Added properties to [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource: <br/><ul><li>isFetchable</li><li>redirectedFrom</li><li>redirectedTo</li><li>configuration</li></ul> | 
@@ -89,6 +105,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |:---|:---|:---|
 |Addition|beta|Added the [revokeGrants](/graph/api/permission-revokeGrants?view=graph-rest-beta) method to the [permission](/graph/api/resources/permission?view=graph-rest-beta) resource.|
 
+### Identity and access
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added support for `$count`, `$search`, and `$filter` query parameters for improving query capabilities to: <br><ul><li>[List applications](/graph/api/application-list?view=graph-rest-1.0)</li><li>[List devices](/graph/api/device-list?view=graph-rest-1.0)</li><li>[List device groups](/graph/api/device-list-memberof?view=graph-rest-1.0)</li><li>[List device transitive groups](/graph/api/device-list-transitivememberof?view=graph-rest-1.0)</li><li>[List groups](/graph/api/group-list?view=graph-rest-1.0)</li><li>[List group memberOf](/graph/api/group-list-memberof?view=graph-rest-1.0)</li><li>[List group members](/graph/api/group-list-members?view=graph-rest-1.0)</li><li>[List group transitive memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-1.0)</li><li>[List group transitive members](/graph/api/group-list-transitivemembers?view=graph-rest-1.0)</li><li>[List orgContacts](/graph/api/orgcontact-list?view=graph-rest-1.0)</li><li>[List servicePrincipals](/graph/api/serviceprincipal-list?view=graph-rest-1.0)</li><li>[List servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0)</li><li>[List servicePrincipal transitive memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0)</li><li>[List users](/graph/api/user-list?view=graph-rest-1.0)</li><li>[List user memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0)</li><li>[List user transitive memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-1.0)</li></ul><br>Added examples for using OData cast to: <ul><li>[List group memberOf](/graph/api/group-list-memberof?view=graph-rest-1.0)</li><li>[List group members](/graph/api/group-list-members?view=graph-rest-1.0)</li><li>[List group transitive memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-1.0)</li><li>[List servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0)</li><li>[List servicePrincipal transitive memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0)</li><li>[List user memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0)</li><li>[List user transitive memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-1.0)</li></ul> |
+
 ### Identity and access | Identity and sign-in
 
 | **Change type** | **Version**   | **Description**                          |
@@ -97,6 +119,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) entity for managing users' Microsoft Authenticator Passwordless Phone Sign-in authentication method policy. |
 | Addition | beta | Added the [emailAuthenticationMethod](/graph/api/resources/emailauthenticationmethod?view=graph-rest-beta) entity for managing users' email authentication method. |
 |Addition|beta|Added the **allowInvitesFrom** property to the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource.|
+| Addition | beta | Added the [identityUserFlowAttribute](/graph/api/resources/identityuserflowattribute?view=graph-rest-beta) entity for managing user flow attributes in an Azure Active Directory or Azure Active Directory B2C tenant. |
+|Addition|beta|Added the **IdentityUserFlow.ReadWrite.All** and **IdentityUserFlow.Read.All** permissions to the [Permissions reference](permissions-reference.md#policy-permissions).|
 |Addition|beta|Added the [b2cAuthenticationMethodsPolicy](/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta) resource type and the following opertations: [Get b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta) and [Update b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta).|
 |Addition|beta|Added the **Policy.ReadWrite.AuthenticationMethod** permission to the [Permissions reference](permissions-reference.md#policy-permissions).|
 
@@ -104,13 +128,36 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
+|Addition|beta|Added support for **completeMigration** to the [channel](/graph/api/resources/channel?view=graph-rest-beta) and [team](/graph/api/resources/team?view=graph-rest-beta) resources|
+|Addition|beta|Added the **teamCreationMode** property to the  [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
+|Addition|beta|Added the **channelCreationMode** property to the [channel](/graph/api/resources/channel?view=graph-rest-beta) resource.|
 | Addition | v1.0 | Added the [List members](/graph/api/conversationmember-list?view=graph-rest-beta), [Get member](/graph/api/conversationmember-get?view=graph-rest-beta), [Add member](/graph/api/conversationmember-add?view=graph-rest-beta), [Update member](/graph/api/conversationmember-update?view=graph-rest-beta), and [Delete member](/graph/api/conversationmember-delete?view=graph-rest-beta) methods to the [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta) and [aadUserConversationMember](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta) resources.|
+|Addition|beta|Added support for **completeMigration** to the [channel](/graph/api/resources/channel?view=graph-rest-beta) and [team](/graph/api/resources/team?view=graph-rest-beta) resources.
+| Addition | v1.0 | Added support for [resource-specific consent](https://aka.ms/teams-rsc) (RSC) permissions to v1.0 APIs. |
+| Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-v1.0). |
+
+### To-do tasks
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|v1.0|Added the **todo** relationship to [user](/graph/api/resources/user?view=graph-rest-1.0) resource.|
+|Addition|v1.0|Added the [todo](/graph/api/resources/todo?view=graph-rest-1.0) resource type.|
+|Addition|v1.0|Added the [todoTaskList](/graph/api/resources/todoTaskList?view=graph-rest-1.0) resource type.|
+|Addition|v1.0|Added the [todoTask](/graph/api/resources/todoTask?view=graph-rest-1.0) resource type.|
+|Addition|v1.0|Added the [linkedResource](/graph/api/resources/linkedResource?view=graph-rest-1.0) resource type.|
+|Addition|v1.0|Added the **wellknownListName** enumeration type.|
+|Addition|v1.0|Added the **bodyType** enumeration type.|
+|Addition|v1.0|Added the **importance** enumeration type.|
+|Addition|v1.0|Added the **taskStatus** enumeration type.|
+|Addition|v1.0|Added the [delta](/graph/api/todoTaskList-delta?view=graph-rest-1.0) method to the [todoTaskList](/graph/api/resources/todoTaskList?view=graph-rest-1.0) resource.|
+|Addition|v1.0|Added the [delta](/graph/api/todoTask-delta?view=graph-rest-1.0) method to the [todoTask](/graph/api/resources/todoTask?view=graph-rest-1.0) resource.|
 
 ### Users
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | beta and v1.0 | Added the **employeeType**, **employeeOrgData**, and **employeeHireDate** properties to the [user](/graph/api/resources/user) entity. |
+| Change | beta and v1.0 | Changed the **businessPhones** and **mobilePhone** properties to read-only for users synced from on-premises directory on the [user](/graph/api/resources/user) entity. |
 
 ## September 2020
 
@@ -213,6 +260,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **volumeType** enumeration type.|
 | Addition | beta | Added the **directorySizeQuota** complex type to the [organization](/graph/api/resources/organization?view=graph-rest-beta) entity. |
 
+
 ### Identity and access | Directory management
 
 | **Change type** | **Version**   | **Description**                          |
@@ -247,17 +295,15 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition        | beta | Query external data across [more than one connection](search-concept-custom-types.md).|
 | Change        | beta |Some properties in the request and response have been renamed and are deprecated.  See [more details](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#schema-change-deprecation-warning) about the deprecation.|
 
-### Teamwork
+### Teamwork 
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition|Beta and v1.0|Added **lastEditedDateTime** property to the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resource.|
-|Change| Beta and v1.0| Changed **lastModifiedDateTime** property in the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resource to represent the time the entity was last touched. It will always be set and never have a `null` value|
+|Addition|Beta and v1.0|Added **lastEditedDateTime** property to the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resource.|	
+|Change| Beta and v1.0| Changed **lastModifiedDateTime** property in the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resource to represent the time the entity was last touched. It will always be set and never have a `null` value|	
 |Addition|beta| Added the **createdDateTime** property to the [channel](/graph/api/resources/channel?view=graph-rest-beta) and [team](/graph/api/resources/team?view=graph-rest-beta) resources.|
 |Addition|beta and v1.0| Added the [Update chatMessage](/graph/api/chatmessage-update) method to the [chatMessage](/graph/api/resources/chatmessage) resource.|
 |Addition|v1.0| Added the [List members](/graph/api/team-list-members?view=graph-rest-1.0&preserve-view=true), [Add members](/graph/api/team-post-members?view=graph-rest-1.0&preserve-view=true), and [Remove members](/graph/api/team-delete-members?view=graph-rest-1.0&preserve-view=true) methods.|
-
-### Identity and access | Identity and sign-in
 
 ### Users
 
@@ -405,7 +451,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Removal | beta and v1.0 | Removed the erronously introduced **sequenceNumber** property from the [changeNotification](/graph/api/resources/changenotification) type.|
-| Addition | beta | Adds [presence](/graph/api/resources/presence) to the resources supported for [change notifications](/graph/webhooks). |
+| Addition | Beta | Added [presence](/graph/api/resources/presence) to the resources supported for [change notifications](/graph/webhooks). |
 
 ### Cloud communications
 
@@ -2269,7 +2315,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added two types of lifecycle notifications, `subscriptionRemoved` and `missed`, available for Outlook resources. Subscribing apps can take appropriate actions to mitigate notification interruptions. For more details, see [Reduce missing subscriptions and notifications for Outlook resources (preview)](webhooks-outlook-authz.md).|
+| Addition | beta | Added two types of lifecycle notifications, `subscriptionRemoved` and `missed`, available for Outlook resources. Subscribing apps can take appropriate actions to mitigate notification interruptions. For more details, see [Reduce missing subscriptions and notifications for Outlook resources (preview)](webhooks-lifecycle.md).|
 
 ### Devices and apps | Corporate management
 |Change type|Version|Description|

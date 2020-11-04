@@ -78,9 +78,8 @@ The following is an example of the request. In this example, guest access level 
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-  "guestUserRole": "2af84b1e-32c8-42b7-82bc-daa82404023b"
+   "guestUserRole":"2af84b1e-32c8-42b7-82bc-daa82404023b"
 }
-
 ```
 
 #### Response
@@ -114,9 +113,10 @@ The following is an example of the request.
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-  "enabledPreviewFeatures": ["assignGroupsToRoles"]
+   "enabledPreviewFeatures":[
+      "assignGroupsToRoles"
+   ]
 }
-
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-preview-csharp-snippets.md)]
@@ -162,9 +162,8 @@ The following is an example of the request.
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-  "blockMsolPowerShell": true
+   "blockMsolPowerShell":true
 }
-
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-blockmsolpowershell-csharp-snippets.md)]
@@ -211,12 +210,10 @@ The following is an example of the request.
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-    "defaultUserRolePermissions":
-    {
-      "allowedToCreateApps": false
-    }
+   "defaultUserRolePermissions":{
+      "allowedToCreateApps":false
+   }
 }
-
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-applications-csharp-snippets.md)]
@@ -263,9 +260,8 @@ The following is an example of the request.
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-    "allowedToUseSSPR": true
+   "allowedToUseSSPR":true
 }
-
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-sspr-csharp-snippets.md)]
@@ -312,7 +308,9 @@ The following is an example of the request.
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-    "permissionGrantPolicyIdsAssignedToDefaultUserRole": [ ]
+   "permissionGrantPolicyIdsAssignedToDefaultUserRole":[
+   
+   ]
 }
 ```
 # [C#](#tab/csharp)
@@ -361,9 +359,9 @@ The following is an example of the request that allows user consent to apps, sub
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-    "permissionGrantPolicyIdsAssignedToDefaultUserRole": [
-        "managePermissionGrantsForSelf.microsoft-user-default-low"
-    ]
+   "permissionGrantPolicyIdsAssignedToDefaultUserRole":[
+      "managePermissionGrantsForSelf.microsoft-user-default-low"
+   ]
 }
 ```
 # [C#](#tab/csharp)
