@@ -3,7 +3,7 @@ title: "cloudPcOnPremisesConnectionStatus enum type"
 description: "cloudPc on-premises connection status"
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft_cloudpc"
+ms.prod: "microsoft-cloudpc"
 doc_type: enumPageType
 ---
 

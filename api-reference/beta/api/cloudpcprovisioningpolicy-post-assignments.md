@@ -3,7 +3,7 @@ title: "Add assignments"
 description: "Assign the Cloud PC provisioning policy to your group."
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft_cloudpc"
+ms.prod: "microsoft-cloudpc"
 doc_type: apiPageType
 ---
 

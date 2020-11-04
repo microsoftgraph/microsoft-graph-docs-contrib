@@ -3,7 +3,7 @@ title: "cloudPcProvisioningPolicyAssignment resource type"
 description: "CloudPC provisioning policy assignments"
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft_cloudpc"
+ms.prod: "microsoft-cloudpc"
 doc_type: resourcePageType
 ---
 

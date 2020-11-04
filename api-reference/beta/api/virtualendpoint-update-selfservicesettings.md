@@ -3,7 +3,7 @@ title: "Update selfServiceSettings"
 description: "Update the properties of the self-service setting."
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft_cloudpc"
+ms.prod: "microsoft-cloudpc"
 doc_type: apiPageType
 ---
 

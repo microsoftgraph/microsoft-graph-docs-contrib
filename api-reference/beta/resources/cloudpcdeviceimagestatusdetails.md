@@ -3,7 +3,7 @@ title: "cloudPcDeviceImageStatusDetails enum type"
 description: "cloudPcDeviceImage status details"
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft_cloudpc"
+ms.prod: "microsoft-cloudpc"
 doc_type: enumPageType
 ---
 

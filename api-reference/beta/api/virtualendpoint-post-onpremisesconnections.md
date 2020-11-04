@@ -3,7 +3,7 @@ title: "Create onPremisesConnections"
 description: "Create an on-premises connection  for provisioning Cloud PCs."
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft_cloudpc"
+ms.prod: "microsoft-cloudpc"
 doc_type: apiPageType
 ---
 

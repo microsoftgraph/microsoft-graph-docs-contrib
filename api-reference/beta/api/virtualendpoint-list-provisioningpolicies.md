@@ -3,7 +3,7 @@ title: "List provisioningPolicies"
 description: "View the properties and relationships of all cloud PC provisioning policies."
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft_cloudpc"
+ms.prod: "microsoft-cloudpc"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Delete deviceImages"
 description: "Delete a cloudPcDeviceImage object."
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft_cloudpc"
+ms.prod: "microsoft-cloudpc"
 doc_type: apiPageType
 ---
 

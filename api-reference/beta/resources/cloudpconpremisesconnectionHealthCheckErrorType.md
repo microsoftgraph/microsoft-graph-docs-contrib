@@ -3,7 +3,7 @@ title: "cloudPcOnPremisesConnectionHealthCheckErrorType enum type"
 description: "cloudPcOnPremisesConnection health check error values"
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft_cloudpc"
+ms.prod: "microsoft-cloudpc"
 doc_type: enumPageType
 ---
 
