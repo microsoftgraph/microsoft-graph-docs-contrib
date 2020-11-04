@@ -11,7 +11,7 @@ ms.prod: "microsoft-teams"
 
 Namespace: microsoft.graph
 
-Add a [conversationMember](../resources/conversationmember.md) to a [channel](../resources/channel.md).
+Add a [conversationMember](../resources/conversationmember.md) to a [channel](../resources/channel.md). This operation is allowed only for channels with membershipType of 'private'.
 
 ## Permissions
 
