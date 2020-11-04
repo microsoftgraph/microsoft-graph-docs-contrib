@@ -17,7 +17,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 
 |  Method       |  Return Type  | Description| Permissions |
 |:---------------|:--------|:----------|-----------|
-|[Get chat between user and app](../api/userscopeteamsappinstallation-get-chat.md) | [userScopeTeamsAppInstallation](userScopeTeamsAppInstallation.md)| Get one-on-one chat between user and the app | Delegated and application* |
+|[Get chat between user and app](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Get one-on-one chat between user and the app | Delegated and application* |
 
 >**Note:** When using application permissions, be sure you know how you're going to get the chat ID. Because listing chats with application permissions is not supported, 
 not all scenarios are possible. It is possible to get chat IDs with delegated permissions, and from [change notifications for /chats/getAllMessages](../api/subscription-post-subscriptions.md) with application permissions.
