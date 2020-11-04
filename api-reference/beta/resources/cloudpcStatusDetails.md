@@ -1,5 +1,5 @@
 ---
-title: "cloudPC resource type"
+title: "cloudPcStatusDetails resource type"
 description: "The details of the Cloud PC status."
 author: "jiajyang"
 localization_priority: Normal
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 The details of the Cloud PC status.
 
-# Properties
+## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|

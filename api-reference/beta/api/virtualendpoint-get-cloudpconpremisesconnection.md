@@ -172,8 +172,8 @@ Content-Type: application/json
           "startDateTime": "2020-11-03T12:43:27Z",
           "endDateTime": "2020-11-03T12:43:32Z",
           "errorType": "endpointConnectivityCheckUrlNotWhitelisted",
-          "recommendedAction": "The following URLs need to be whitelisted in your network firewall settings <Link to whitelist documentation>",
-          "additionaldDetails": "URLs value"
+          "recommendedAction": "Recommended Action value",
+          "additionaldDetails": "Additional Details value"
         },
         {
           "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
