@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve  [conversationMember]s(../resources/conversationmember.md) from a [channel](../resources/channel.md).
+Retrieve  [conversationMembers](../resources/conversationmember.md) from a [channel](../resources/channel.md).
 
 ## Permissions
 
