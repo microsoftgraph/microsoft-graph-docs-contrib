@@ -64,7 +64,7 @@ The following is an example of the response.
   "name": "user_chat_teamsApps",
   "truncated": true,
   "@odata.type": "microsoft.graph.chat",
-  "isCollection": true
+  "isCollection": false
 } -->
 
 ```http
@@ -72,12 +72,9 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "id-value"
-    }
-  ]
-}
+   "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats/$entity",
+   "id": "19:0de69e5e-2da8-4cf2-821f-5e6585b2c65b_f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c@unq.gbl.spaces"
+ }
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
