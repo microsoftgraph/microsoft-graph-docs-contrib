@@ -70,7 +70,6 @@ If successful, this method returns a `200 OK` response code and an updated [clou
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/selfServiceSettings
 Content-Type: application/json
-Content-length: 248
 
 {
   "@odata.type": "#microsoft.graph.cloudPcSelfServiceSettings",
@@ -78,19 +77,19 @@ Content-length: 248
   "assignments": [
     {
       "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
-      "groupId":"1e4f451f-48a2-4ef4-9e43-d471a86fca94"
+      "groupId":"1e4f451f-48a2-4ef4-9e43-d471a86fffff"
     },
     {
       "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
-      "groupId":"2eac0d4a-8147-4428-9902-71bb11e86f33"
+      "groupId":"2eac0d4a-8147-4428-9902-71bb11e8ffff"
     },
     {
       "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
-      "groupId":"5f4ddccc-bd47-4066-a49d-577573b58550"
+      "groupId":"5f4ddccc-bd47-4066-a49d-577573b5ffff"
     },
     {
       "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
-      "groupId":"9e2278ee-581a-4304-aa73-426e77d2b57a"
+      "groupId":"9e2278ee-581a-4304-aa73-426e77d2ffff"
     }
   ]
 }
@@ -117,19 +116,19 @@ Content-Type: application/json
   "assignments": [
     {
       "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
-      "groupId":"1e4f451f-48a2-4ef4-9e43-d471a86fca94"
+      "groupId":"1e4f451f-48a2-4ef4-9e43-d471a86fffff"
     },
     {
       "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
-      "groupId":"2eac0d4a-8147-4428-9902-71bb11e86f33"
+      "groupId":"2eac0d4a-8147-4428-9902-71bb11e8ffff"
     },
     {
       "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
-      "groupId":"5f4ddccc-bd47-4066-a49d-577573b58550"
+      "groupId":"5f4ddccc-bd47-4066-a49d-577573b5ffff"
     },
     {
       "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
-      "groupId":"9e2278ee-581a-4304-aa73-426e77d2b57a"
+      "groupId":"9e2278ee-581a-4304-aa73-426e77d2ffff"
     }
   ]
 }

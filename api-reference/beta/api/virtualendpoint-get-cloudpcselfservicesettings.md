@@ -84,20 +84,20 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.cloudPcSelfServiceSettings",
-    "id": "7a585ddc-143d-4fcc-94bc-50438c51d689",
+    "id": "7a585ddc-143d-4fcc-94bc-50438c51ffff",
     "enabled": true,
     "assignments": [
       {
         "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
-        "groupId":"1e4f451f-48a2-4ef4-9e43-d471a86fca94"
+        "groupId":"1e4f451f-48a2-4ef4-9e43-d471a86fffff"
       },
       {
         "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
-        "groupId":"2eac0d4a-8147-4428-9902-71bb11e86f33"
+        "groupId":"2eac0d4a-8147-4428-9902-71bb11e8ffff"
       },
       {
         "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
-        "groupId":"5f4ddccc-bd47-4066-a49d-577573b58550"
+        "groupId":"5f4ddccc-bd47-4066-a49d-577573b5ffff"
       }
     ]
   }

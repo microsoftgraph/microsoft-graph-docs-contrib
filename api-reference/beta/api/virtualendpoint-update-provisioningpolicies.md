@@ -74,15 +74,14 @@ If successful, this method returns a `200 OK` response code and an updated [clou
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 Content-Type: application/json
-Content-length: 245
 
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-  "displayName": "HR provisioning policy",
-  "description": "Provisioning policy for India HR employees",
-  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701b553",
-  "imageId": "53a93bfd-2006-4b76-8f30-5c0f60988105",
-  "imageDisplayName": "Custom image name",
+  "displayName": "Display Name value",
+  "description": "Description value",
+  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+  "imageId": "Image ID value",
+  "imageDisplayName": "Image Display Name value",
   "imageType": "Custom"
 }
 ```
@@ -103,12 +102,12 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-  "id": "8931f750-f750-8931-50f7-318950f73189",
-  "displayName": "HR provisioning policy",
-  "description": "Provisioning policy for India HR employees",
-  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701b553",
-  "imageId": "53a93bfd-2006-4b76-8f30-5c0f60988105",
-  "imageDisplayName": "Custom image name",
+  "id": "8931f750-f750-8931-50f7-318950f7ffff",
+  "displayName": "Display Name value",
+  "description": "Description value",
+  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+  "imageId": "Image ID value",
+  "imageDisplayName": "Image Display Name value",
   "imageType": "customer"
 }
 ```

@@ -76,19 +76,18 @@ If successful, this method returns a `200 OK` response code and an updated [clou
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections
 Content-Type: application/json
-Content-length: 556
 
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
-  "displayName": "test-canary-02",
-  "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ad47",
-  "adDomainName": "contoso001.com",
-  "adDomainUsername": "dcadmin",
-  "adDomainPassword": "12345",
-  "organizationalUnit": "OU=Domain Controllers, DC=contoso001, DC=com",
-  "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG",
-  "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET",
-  "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet"
+  "displayName": "Display Name value",
+  "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
+  "subscriptionName": "Subscription Name value",
+  "adDomainName": "Active Directory Domain Name value",
+  "adDomainUsername": "Active Directory Domain User Name value",
+  "organizationalUnit": "Organization Unit value",
+  "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG",
+  "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet",
+  "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default"
 }
 ```
 
@@ -109,16 +108,16 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
-  "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdcc43ec9",
-  "displayName": "test-canary-02",
-  "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ad47",
-  "subscriptionName": "CPC customer 001 test subscription",
-  "adDomainName": "contoso001.com",
-  "adDomainUsername": "dcadmin",
-  "organizationalUnit": "OU=Domain Controllers, DC=contoso001, DC=com",
-  "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG",
-  "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET",
-  "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet",
+  "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdcc4ffff",
+  "displayName": "Display Name value",
+  "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
+  "subscriptionName": "Subscription Name value",
+  "adDomainName": "Active Directory Domain Name value",
+  "adDomainUsername": "Active Directory Domain User Name value",
+  "organizationalUnit": "Organization Unit value",
+  "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG",
+  "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet",
+  "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default"
   "healthCheckStatus": "running",
   "inUse": false
 }

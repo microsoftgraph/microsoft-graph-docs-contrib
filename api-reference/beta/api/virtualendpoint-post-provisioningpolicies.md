@@ -74,15 +74,14 @@ If successful, this method returns a `201 Created` response code and a [cloudPcP
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies
 Content-Type: application/json
-Content-length: 245
 
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-  "displayName": "HR provisioning policy",
-  "description": "Provisioning policy for India HR employees",
-  "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1cca7f033",
-  "imageId": "MicrosoftWindowsDesktop_Windows-10_19h1-evd",
-  "imageDisplayName": "Windows-10 19h1-evd",
+  "displayName": "Display Name value",
+  "description": "Description value",
+  "onPremisesConnectionId": "6bf90392-5fea-459a-9e9d-a2484abbffff",
+  "imageId": "Image ID value",
+  "imageDisplayName": "Image Display Name value",
   "imageType": "gallery"
 }
 ```
@@ -103,12 +102,12 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-  "id": "1d164206-bf41-4fd2-8424-a3192d392273",
-  "displayName": "HR provisioning policy",
-  "description": "Provisioning policy for India HR employees",
-  "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1cca7f033",
-  "imageId": "MicrosoftWindowsDesktop_Windows-10_19h1-evd",
-  "imageDisplayName": "Windows-10 19h1-evd",
+  "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
+  "displayName": "Display Name value",
+  "description": "Description value",
+  "onPremisesConnectionId": "6bf90392-5fea-459a-9e9d-a2484abbffff",
+  "imageId": "Image ID value",
+  "imageDisplayName": "Image Display Name value",
   "imageType": "gallery"
   }
 ```

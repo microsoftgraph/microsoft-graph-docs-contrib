@@ -40,6 +40,10 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.cloudPcStatusDetails",
   "code": "String",
   "message": "String",
-  "additionalInformation": "microsoft.graph.keyValuePair"
+  "additionalInformation": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair"
+    }
+  ]
 }
 ```

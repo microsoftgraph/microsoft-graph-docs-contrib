@@ -84,17 +84,17 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.cloudPC",
-      "id": "662009bc-7732-4f6f-8726-25883518b33e",
-      "displayName": "Demo-0",
-      "imageDisplayName": "Windows-10 19h1-evd",
-      "managedDeviceId": "bdc8e6dd-0455-4412-83d9-c818664fe1f1",
-      "managedDeviceName": " A00002GI001",
-      "provisioningPolicyId": "7ed725ad-0a00-4117-b557-d965c3732450",
-      "servicePlanId": "dbb9148c-ff83-4a4c-8d7f-28752e93c0ce",
+      "id": "662009bc-7732-4f6f-8726-25883518ffff",
+      "displayName": "Display Name value",
+      "imageDisplayName": "Image Display Name value",
+      "managedDeviceId": "bdc8e6dd-0455-4412-83d9-c818664fffff",
+      "managedDeviceName": " Managed Device Name value",
+      "provisioningPolicyId": "7ed725ad-0a00-4117-b557-d965c373ffff",
+      "servicePlanId": "dbb9148c-ff83-4a4c-8d7f-28752e93ffff",
       "servicePlanName": "lite",
       "status": "provisioned",
-      "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
-      "lastModifiedDateTime": "2020-07-23T10:29:57Z"
+      "userPrincipalName": "User Principal Name value",
+      "lastModifiedDateTime": "2020-11-03T10:29:57Z"
     }
   ]
 }

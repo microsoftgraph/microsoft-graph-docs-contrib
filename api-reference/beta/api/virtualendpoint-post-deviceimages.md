@@ -77,11 +77,11 @@ Content-length: 235
 
 {
   "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
-  "displayName": "graph",
-  "osBuildNumber": "1902",
-  "operatingSystem": "Windows 10 Enterprise",
-  "version": "2.3.5",
-  "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/SIGTEST/providers/Microsoft.Compute/images/imagefordemo"
+  "displayName": "Display Name value",
+  "osBuildNumber": "OS Build Number value",
+  "operatingSystem": "Operating System value",
+  "version": "Version value",
+  "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImage"
 }
 ```
 
@@ -101,13 +101,13 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
-  "id": "eda7ed64-7705-4079-9d08-c2bd883f4cfc",
-  "displayName": "graph",
-  "osBuildNumber": "1902",
-  "operatingSystem": "Windows 10 Enterprise",
-  "version": "2.3.5",
-  "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/SIGTEST/providers/Microsoft.Compute/images/imagefordemo",
-  "lastModifiedDateTime": "2020-07-21T07:03:44.97Z",
+  "id": "eda7ed64-7705-4079-9d08-c2bd883fffff",
+  "displayName": "Display Name value",
+  "osBuildNumber": "OS Build Number value",
+  "operatingSystem": "Operating System value",
+  "version": "Version value",
+  "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImage",
+  "lastModifiedDateTime": "2020-11-03T07:03:44.97Z",
   "status": "pending",
   "statusDetails": null
 }

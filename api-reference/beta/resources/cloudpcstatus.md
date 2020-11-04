@@ -23,4 +23,7 @@ Possible Cloud PC status types
 |upgrading|3|Cloud PC resize is in progress.|
 |inGracePeriod|4|The Cloud PC is in the one week grace period before it’s deprovisioned.|
 |deprovisioning|5|The Cloud PC is deprovisioning.|
-|failed|6|The Cloud PC has failed.|
+|upgradeFailed|6|The Cloud PC failed to upgrade|
+|provisionFailed|7|The Cloud PC failed to provision|
+|deprovisionFailed|8|The Cloud PC failed to deprovision|
+|reprovisionFailed|9|The Cloud PC failed to reprovision|

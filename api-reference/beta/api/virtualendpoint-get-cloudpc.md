@@ -84,28 +84,29 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.cloudPC",
-    "id": "ac74ae8b-85f7-4272-88cc-5419267403ed",
-    "displayName": "Demo-1",
-    "imageDisplayName": "Custom image name",
-    "managedDeviceId": "e87f50c7-fa7f-4687-aade-dd45f3d65970",  
-    "managedDeviceName": "A00001D3000",
-    "provisioningPolicyId": "13fa0778-ba00-438a-96d3-488c86029dff",
-    "servicePlanId": "da5615b4-a484-4742-a019-2d52c91cbfd0",
+    "id": "ac74ae8b-85f7-4272-88cc-54192674ffff",
+    "displayName": "Display Name value",
+    "imageDisplayName": "Image Display Name value",
+    "managedDeviceId": "e87f50c7-fa7f-4687-aade-dd45f3d6ffff",  
+    "managedDeviceName": "Device Name value",
+    "provisioningPolicyId": "13fa0778-ba00-438a-96d3-488c8602ffff",
+    "servicePlanId": "da5615b4-a484-4742-a019-2d52c91cffff",
     "servicePlanName": "standard",
     "status": "failed",
     "statusDetails": {
+    "@odata.type": "microsoft.graph.cloudPcStatusDetails",
     "code": "internalServerError",
-    "message": "There was an internal server error. Please contact support xxx.",
+    "message": "There was an internal server error. Please contact IT support.",
     "additionalInformation": [
         {
           "@odata.type": "microsoft.graph.keyValuePair",
           "name": "correlationId",
-          "value": "52367774-cfb7-4e9c-ab51-1b864c31f2d1"
+          "value": "52367774-cfb7-4e9c-ab51-1b864c31ffff"
         }
       ]
     },
-    "userPrincipalName": "mrichard@cpccustomer001.onmicrosoft.com",
-    "lastModifiedDateTime": "2020-07-28T18:14:34Z"
+    "userPrincipalName": "User Principal Name value",
+    "lastModifiedDateTime": "2020-11-03T18:14:34Z"
   }
 }
 ```

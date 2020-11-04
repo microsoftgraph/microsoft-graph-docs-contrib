@@ -70,16 +70,15 @@ If successful, this method returns a `204 No Content` response code.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assign
 Content-Type: application/json
-Content-length: 170
 
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicyAssignment",
   "assignments": [
     {
-      "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26bfd9",
+      "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
       "target":{
         "@odata.type": "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
-        "groupId":"64ff06de-9c00-4a5a-98b5-7f5abe26bfd9"
+        "groupId":"64ff06de-9c00-4a5a-98b5-7f5abe26ffff"
         }
     }
   ]

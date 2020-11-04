@@ -84,12 +84,12 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-    "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b",
-    "displayName": "Marketing provisioning policy",
-    "description": "Provisioning policy for West US marketing employees",
-    "onPremisesConnectionId": "6bf90392-5fea-459a-9e9d-a2484abb1ef8",
-    "imageId": "MicrosoftWindowsDesktop_Windows-10_19h1-evd",
-    "imageDisplayName": "Windows-10 19h1-evd",
+    "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff",
+    "displayName": "Display Name value",
+    "description": "Description value",
+    "onPremisesConnectionId": "6bf90392-5fea-459a-9e9d-a2484abbffff",
+    "imageId": "Image ID value",
+    "imageDisplayName": "Image Display Name value",
     "imageType": "gallery"
   }
 }

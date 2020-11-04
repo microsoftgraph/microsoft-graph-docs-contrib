@@ -85,11 +85,11 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
       "id": "1d164206-bf41-4fd2-8424-a3192d392273",
-      "displayName": "HR provisioning policy",
-      "description": "Provisioning policy for India HR employees",
-      "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701b553",
-      "imageId": "53a93bfd-2006-4b76-8f30-5c0f60988105",
-      "imageDisplayName": "Custom image name",
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+      "imageId": "Image ID value",
+      "imageDisplayName": "Image Display Name value",
       "imageType":"custom"
     }
   ]

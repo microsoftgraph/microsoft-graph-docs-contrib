@@ -56,22 +56,3 @@ Project Deschutes is a new fixed-price SaaS service being worked on by the CMX o
 |onPremisesConnections|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) collection|A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.|
 |provisioningPolicies|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) collection|Cloud PC provisioning policy.|
 |selfServiceSettings|[cloudPcSelfServiceSettings](../resources/cloudpcselfservicesettings.md)|Self-service upgrade setting. Each tenant has one self-service upgrade setting, where the ID property is your Azure AD tenant ID. This setting allows an admin to enable a user to self-upgrade their Cloud PC.|
-
-## JSON representation
-
-The following is a JSON representation of the resource.
-<!-- {
-  "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.virtualEndpoint",
-  "baseType": "",
-  "openType": false
-}
--->
-
-``` json
-{
-  "@odata.type": "#microsoft.graph.virtualEndpoint",
-  "id": "String (identifier)"
-}
-```
