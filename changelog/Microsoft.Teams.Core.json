@@ -18,6 +18,22 @@
             "Description": "Added [read channel message APIs](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-v1.0).",
             "Target": "chatMessage"
           }
+          {
+            "Id": "5421a0d9-a155-43d1-ac9c-8d8e00529c2f",
+            "ApiChange": "Method",
+            "ChangedApiName": "getAllMessages",
+            "ChangeType": "Addition",
+            "Description": "Added [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/chat-getallmessages?view=graph-rest-beta).",
+            "Target": "chat-getallmessages"
+          }
+          {
+            "Id": "5421a0d9-a155-43d1-ac9c-8d8e00529c2f",
+            "ApiChange": "Method",
+            "ChangedApiName": "getAllMessages",
+            "ChangeType": "Addition",
+            "Description": "Added [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/channel-getallmessages?view=graph-rest-beta).",
+            "Target": "channel-getallmessages"
+          }
         ],
         "Id": "5421a0d9-a155-43d1-ac9c-8d8e00529c2f",
         "Cloud": "prd",
