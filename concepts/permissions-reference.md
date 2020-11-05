@@ -1554,7 +1554,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _RoleManagement.Read.All_ | Read role management data for all RBAC providers | Allows the app to read the role-based access control (RBAC) settings for all supported [RBAC providers](https://docs.microsoft.com/graph/api/resources/rolemanagement?view=graph-rest-beta), on behalf of the signed-in user. This includes reading role definitions and role assignments. | Yes | No |
+| _RoleManagement.Read.All_ | Read role management data for all RBAC providers | Allows the app to read the role-based access control (RBAC) settings for all supported [RBAC providers](/graph/api/resources/rolemanagement?view=graph-rest-beta), on behalf of the signed-in user. This includes reading role definitions and role assignments. | Yes | No |
 | _RoleManagement.Read.Directory_ | Read role management data for Azure AD | Allows the app to read the role-based access control (RBAC) settings for your company's directory, on behalf of the signed-in user.  This includes reading directory role templates, directory roles and memberships. | Yes | No |
 | _RoleManagement.ReadWrite.Directory_ | Read and write role management data for Azure AD | Allows the app to read and manage the role-based access control (RBAC) settings for your company's directory, on behalf of the signed-in user. This includes instantiating directory roles and managing directory role membership, and reading directory role templates, directory roles and memberships. | Yes | No |
 
@@ -1562,7 +1562,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _RoleManagement.Read.All_ | Read role management data for all RBAC providers | Allows the app to read the role-based access control (RBAC) settings for all supported [RBAC providers](https://docs.microsoft.com/graph/api/resources/rolemanagement?view=graph-rest-beta), without a signed-in user. This includes reading role definitions and role assignments. | Yes |
+| _RoleManagement.Read.All_ | Read role management data for all RBAC providers | Allows the app to read the role-based access control (RBAC) settings for all supported [RBAC providers](/graph/api/resources/rolemanagement?view=graph-rest-beta), without a signed-in user. This includes reading role definitions and role assignments. | Yes |
 | _RoleManagement.Read.Directory_ | Read role management data for Azure AD | Allows the app to read the role-based access control (RBAC) settings for your company's directory, without a signed-in user.  This includes reading directory role templates, directory roles and memberships. | Yes |
 | _RoleManagement.ReadWrite.Directory_ | Read and write role management data for Azure AD | Allows the app to read and manage the role-based access control (RBAC) settings for your company's directory, without a signed-in user. This includes instantiating directory roles and managing directory role membership, and reading directory role templates, directory roles and memberships. | Yes |
 
@@ -1892,18 +1892,20 @@ Taxonomy permissions are valid only on work or school accounts.
 | Permission | Display String | Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | TeamSettings.Read.Group | Read this team's settings. | Read this team's settings, without a signed-in user. |No | No |
+| TeamSettings.ReadWrite.Group | Update the settings for this team. | Read and write this team's settings, without a signed-in user. |No | No |
 | ChannelSettings.Read.Group | Read the names, descriptions, and settings of this team’s channels. | Read this group's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
-| ChannelSettings.Edit.Group | Edit the names, descriptions, and settings of this team’s channels.| Edit this group's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
+| ChannelSettings.ReadWrite.Group | Update the names, descriptions, and settings of this team’s channels.| Update this group's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
 |Channel.Create.Group | Create channels in this team. | Create channels in this group, without a signed-in user. |No | No |
 |Channel.Delete.Group | Delete this team's channels. | Delete this group's channels, without a signed-in user. |No | No |
 |ChannelMessage.Read.Group | Read the team’s channel messages. | Allows an app to read this group's channel's messages, without a signed-in user. |No | No |
-|TeamsApp.Read.Group | See which apps are installed in this team. | See which apps are installed in this group, without a signed-in user. |No | No |
+|TeamsAppInstallation.Read.Group | See which apps are installed in this team. | See which apps are installed in this group, without a signed-in user. |No | No |
 |TeamsTab.Read.Group | Read this team's tabs. | Read this group's tabs, without a signed-in user. |No | No |
 |TeamsTab.Create.Group | Create tabs in this team. | Create tabs in this group, without a signed-in user. |No | No |
-|TeamsTab.Edit.Group | Edit this team's tabs. | Edit this group's tabs, without a signed-in user. |No | No |
+|TeamsTab.ReadWrite.Group | Update this team's tabs. | Update this group's tabs, without a signed-in user. |No | No |
 |TeamsTab.Delete.Group | Delete this team's tabs. | Delete this group's tabs, without a signed-in user. |No | No |
-|Member.Read.Group | Read this team's members.| Read this group's members, without a signed-in user. |No | No |
-|Owner.Read.Group| Read this team's owners.	| Read this group's owners, without a signed-in user. |No | No |
+|TeamMember.Read.Group | Read this team's members. | Read this team's members, without a signed-in user. |No | No |
+|Member.Read.Group | Read this group's members.| Read this group's members, without a signed-in user. |No | No |
+|Owner.Read.Group| Read this group's owners.	| Read this group's owners, without a signed-in user. |No | No |
 
 ## Teams settings permissions
 

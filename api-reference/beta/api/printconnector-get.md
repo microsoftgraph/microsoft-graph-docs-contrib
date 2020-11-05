@@ -86,7 +86,7 @@ Content-length: 1097
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/connectors/$entity",
   "id": "9953d245-3f6e-418c-a438-67f50e69a430",
-  "name": "ConnectorName",
+  "displayName": "ConnectorName",
   "fullyQualifiedDomainName": "CONNECTOR-MACHINE",
   "operatingSystem": "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555",
   "appVersion": "0.19.7338.23496",

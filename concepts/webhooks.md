@@ -165,7 +165,7 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
     ```
 
-1. The client must properly decode the `validationToken` provided in the preceding step, and escape any HTML/JavaScript.
+1. The client must properly URL decode the `validationToken` query parameter provided in the preceding step, and escape any HTML/JavaScript.
 
    Escaping is a good practice because malicious actors can use the notification endpoint for cross-site scripting type of attacks.
 
@@ -175,7 +175,7 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
 
     - A status code of `HTTP 200 OK`.
     - A content type of `text/plain`.
-    - A body that includes the _decoded_ validation token.
+    - A body that includes the _URL decoded_ validation token. Simply reflect back the same string that was sent in the `validationToken` query parameter.
 
     The client should discard the validation token after providing it in the response.
 
