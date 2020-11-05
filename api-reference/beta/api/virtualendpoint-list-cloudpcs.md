@@ -3,7 +3,7 @@ title: "List cloudPCs"
 description: "List properties and relationships of the cloudPC objects."
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft-cloudpc"
+ms.prod: ""
 doc_type: apiPageType
 ---
 

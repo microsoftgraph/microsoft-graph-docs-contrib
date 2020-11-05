@@ -3,7 +3,7 @@ title: "cloudPcSelfServiceSettings resource type"
 description: "The self-service upgrade setting."
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft-cloudpc"
+ms.prod: ""
 doc_type: resourcePageType
 ---
 

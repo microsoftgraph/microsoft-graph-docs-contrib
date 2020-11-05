@@ -3,7 +3,7 @@ title: "Delete provisioningPolicies"
 description: "Delete a cloudPcProvisioningPolicy object."
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft-cloudpc"
+ms.prod: ""
 doc_type: apiPageType
 ---
 

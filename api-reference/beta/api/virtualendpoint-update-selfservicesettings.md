@@ -3,13 +3,15 @@ title: "Update selfServiceSettings"
 description: "Update the properties of the self-service setting."
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft-cloudpc"
+ms.prod: ""
 doc_type: apiPageType
 ---
 
 # Update selfServiceSettings
 
 Namespace: microsoft.graph
+
+> **Note:** The input group ID must be valid and the group must exist in Azure Active Directory.
 
 Update the properties of a [cloudPcSelfServiceSettings](../resources/cloudpcselfservicesettings.md) object.
 

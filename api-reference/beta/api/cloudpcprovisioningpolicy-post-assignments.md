@@ -3,13 +3,15 @@ title: "Add assignments"
 description: "Assign the Cloud PC provisioning policy to your group."
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft-cloudpc"
+ms.prod: ""
 doc_type: apiPageType
 ---
 
 # Add assignments
 
 Namespace: microsoft.graph
+
+> **Note:** The input group ID must be valid and the group must exist in Azure Active Directory.
 
 Assign [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) to user groups.
 

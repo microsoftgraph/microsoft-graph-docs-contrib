@@ -3,7 +3,7 @@ title: "Get cloudPCs"
 description: "View the properties and relationships of a cloudPC object."
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft-cloudpc"
+ms.prod: ""
 doc_type: apiPageType
 ---
 

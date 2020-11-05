@@ -3,7 +3,7 @@ title: "Get selfServiceSettings"
 description: "Read the properties and relationships of a cloudPcSelfServiceSettings object."
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft-cloudpc"
+ms.prod: ""
 doc_type: apiPageType
 ---
 

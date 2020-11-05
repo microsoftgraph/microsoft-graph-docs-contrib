@@ -3,7 +3,7 @@ title: "cloudPcOnPremisesConnectionHealthCheck resource type"
 description: "The result of a Cloud PC on-premises connection health check."
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft-cloudpc"
+ms.prod: ""
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "cloudPcProvisioningPolicyImageType enum type"
 description: "The types of images that can be used in cloudPcProvisioningPolicy. "
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft-cloudpc"
+ms.prod: ""
 doc_type: enumPageType
 ---
 

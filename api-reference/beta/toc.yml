@@ -9171,8 +9171,6 @@ items:
             - name: Update
               href: api/intune-tem-telecomexpensemanagementpartner-update.md  
       - name: Virtual endpoint (preview)
-        href: resources/virtualendpoint.md
-        displayName: Cloud PC
         items:
         - name: Cloud PC
           href: resources/cloudpc.md
@@ -9264,6 +9262,8 @@ items:
             href: resources/cloudpcmanagementassignmenttarget.md
           - name: Cloud PC management group assignment target
             href: resources/cloudpcmanagementgroupassignmenttarget.md
+        - name: Virtual endpoint
+          href: resources/virtualendpoint.md
     - name: Education
       items:
       - name: Overview

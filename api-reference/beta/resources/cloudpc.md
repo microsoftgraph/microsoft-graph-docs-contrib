@@ -3,7 +3,7 @@ title: "cloudPC resource type"
 description: "Cloud managed virtual desktops."
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft-cloudpc"
+ms.prod: ""
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Create provisioningPolicies"
 description: "Create a new Cloud PC provisioning policy."
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft-cloudpc"
+ms.prod: ""
 doc_type: apiPageType
 ---
 

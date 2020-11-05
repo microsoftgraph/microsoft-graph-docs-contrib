@@ -3,7 +3,7 @@ title: "Get onPremisesConnections"
 description: "Read the properties and relationships of the cloudPcOnPremisesConnection object."
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft-cloudpc"
+ms.prod: ""
 doc_type: apiPageType
 ---
 

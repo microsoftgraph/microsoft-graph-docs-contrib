@@ -3,7 +3,7 @@ title: "cloudPcProvisioningPolicyAssignment resource type"
 description: "CloudPC provisioning policy assignments"
 author: "jiajyang"
 localization_priority: Normal
-ms.prod: "microsoft-cloudpc"
+ms.prod: ""
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ Represents a defined collection of provisioning policy assignments.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Assign cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-post-assignments.md)|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md)|Add assignments by posting to the assignments collection.|
+|[Assign cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-post-assignments.md)|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md)|Assign [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) to user groups.|
 
 ## Properties
 
