@@ -34,6 +34,7 @@ POST /channels/{id}/members/{id}
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+| Content-type | application/json. Required. |
 
 ## Request body
 
@@ -50,17 +51,15 @@ If successful, this method returns a `201 Created` response code and a [conversa
 
 ## Examples
 
-### Example 1
+### Example 1: Add a member to a channel
 
 #### Request
 
-Here is an example of the request to add a basic member to the channel.
-
 ```http
 POST https://graph.microsoft.com/v1.0/channels/{id}/members/{id}
-
 content-type: application/json
 content-length: 26
+
 {
   "@odata.type": "#microsoft.graph.aadUserConversationMember",
   "roles": [],
@@ -70,9 +69,7 @@ content-length: 26
 
 #### Response
 
-Here is an example of the response.
-
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. 
 
 ```http
 HTTP/1.1 201 Created
@@ -90,9 +87,7 @@ Content-length: 468
 }
 ```
 
-### Example 2
-
-Here is a request to add a member with "owner" role to the channel.
+### Example 2: Add a member with the owner role to a channel
 
 #### Request
 
@@ -113,7 +108,7 @@ content-length: 26
 
 Here is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. 
 
 ```http
 HTTP/1.1 201 Created
