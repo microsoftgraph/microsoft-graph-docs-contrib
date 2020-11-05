@@ -1,5 +1,5 @@
 ---
-title: "Update member in a channel"
+title: "Update conversationMember in a channel"
 description: "Update the role of member in a channel."
 author: "laujan"
 doc_type: "apiPageType"
@@ -36,22 +36,22 @@ PATCH /channels/{id}/members/{id}
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-
+`
 In the request body, supply the values for the relevant fields to update. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|roles|string collection|The roles for that user. Must be "owner" or empty. Guest users must always have role "guest" and cannot change. |
+|roles|string collection|The roles for that user. Must be `owner` or empty. Guest users must always have role `guest` and cannot change. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [conversationMember](../resources/conversationmember.md) object in the response body.
 
 ## Example
 
 ### Request
 
-Here is an example of the request to apply the "owner" role to an existing member of a channel.
+The following is a request to apply the `owner` role to an existing member of a channel.
 
 <!-- {
   "blockType": "request",
@@ -70,9 +70,7 @@ content-length: 26
 
 ### Response
 
-Here is an example of the response.
-
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
