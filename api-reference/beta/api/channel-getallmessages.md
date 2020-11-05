@@ -37,14 +37,14 @@ GET https://graph.microsoft.com/beta/teams/0e05a7e4-a48d-4615-b0b7-c7494da9ce68/
 
 ## Response
 
-If successful, this method returns a `200 OK` response code.
+If successful, this method returns a `200 OK` response code and also returns all the messages in the channel.
 
 ## Example
 
 ### Request
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/0e05a7e4-a48d-4615-b0b7-c7494da9ce68/channels/allMessages?$top=2
+GET https://graph.microsoft.com/beta/teams/0e05a7e4-a48d-4615-b0b7-c7494da9ce68/channels/getAllMessages?$top=2
 ```
 
 ### Response
