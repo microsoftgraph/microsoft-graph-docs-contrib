@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [conditionalAccessPolicy](../resources/authenticationcontextclassreference.md) objects.
+Retrieve a list of [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) objects.
 
 ## Permissions
 

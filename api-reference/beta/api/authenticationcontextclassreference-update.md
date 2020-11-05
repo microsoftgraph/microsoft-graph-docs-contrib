@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [conditionalAccessPolicy](../resources/authenticationcontextclassreference.md) object.
+Update the properties of an [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object.
 
 ## Permissions
 
