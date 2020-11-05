@@ -4916,8 +4916,6 @@ items:
         items:
         - name: List channels
           href: api/channel-list.md
-        - name: Create channel
-          href: api/channel-post.md
         - name: Get channel
           href: api/channel-get.md
         - name: Update channel
