@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve  [conversationMembers](../resources/conversationmember.md) from a [channel](../resources/channel.md).
+Retrieve a list of [conversationMembers](../resources/conversationmember.md) from a [channel](../resources/channel.md).
 
 ## Permissions
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/v1.0/channels/{id}/members
 
 Here is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. 
 
 ```http
 HTTP/1.1 200 OK
