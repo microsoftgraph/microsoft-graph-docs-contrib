@@ -32,7 +32,7 @@ Represents an Azure Active Directory authentication context class reference. Aut
 |id|String| Identifier used to reference the authentication context class. The id is used to trigger step-up authentication for the referenced authentication requirements and is the value that will be issued in the acrs claim. This value in the claim is used to verify the required authentication context has been satisfied. |
 |displayName|String| DisplayName is the friendly name of the authenticationContextClassReference. This value should be used to identify the authentication context class reference when building user facing admin experiences, like selection UX. |
 |description|String| Description is a short explanation the policies that will be enforced by authenticationContextClassReference. This value should be used to provide secondary text to describe the authentication context class reference when building user facing admin experiences, like selection UX.|
-|isAvailable|Boolean| IsAvailable is set to true if the authenticationContextClassReference has been published by the security admin and ready for use by apps. When it is set to false it should not be shown in admin UX experiences, because the value is not currently available for selection.|
+|isAvailable|boolean| IsAvailable is set to true if the authenticationContextClassReference has been published by the security admin and ready for use by apps. When it is set to false it should not be shown in admin UX experiences, because the value is not currently available for selection.|
 
 ## Relationships
 
@@ -60,7 +60,7 @@ The following is a JSON representation of the resource.
             "id": "String",
             "displayName": "String",
             "description": "String",
-            "isAvailable": Boolean,
+            "isAvailable": "boolean",
         }
      }
 
