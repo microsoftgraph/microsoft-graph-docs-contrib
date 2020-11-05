@@ -5,10 +5,10 @@
         {
           "Id": "4db99971-9137-4010-aa6b-7a53dbfb0c23",
           "ApiChange": "Resource",
-          "ChangedApiName": "task definition notifications, change notifications",
+          "ChangedApiName": "print task definition notifications, change notifications",
           "ChangeType": "Addition",
           "Description": "Added [printTaskDefinition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta) to the resources supported for [change notifications](/graph/webhooks).",
-          "Target": "task definition notifications, change notifications"
+          "Target": "print task definition notifications, change notifications"
         }
       ],
       "Id": "4db99971-9137-4010-aa6b-7a53dbfb0c23",
