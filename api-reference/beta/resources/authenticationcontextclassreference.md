@@ -19,10 +19,10 @@ Represents an Azure Active Directory authentication context class reference. Aut
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List authenticationContextClassReference](../api/conditionalaccessroot-list-policies.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) collection | Get all of the conditionalAccessPolicies objects in the organization. |
-| [Create authenticationContextClassReference](../api/conditionalaccessroot-post-policies.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | Create a new conditionalAccessPolicy object. |
-| [Get authenticationContextClassReference](../api/conditionalaccesspolicy-get.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | Read properties and relationships of a conditionalAccessPolicy object. |
-| [Update authenticationContextClassReference](../api/conditionalaccesspolicy-update.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | Update a conditionalAccessPolicy object. |
+| [List authenticationContextClassReference](../api/conditionalaccessroot-list-policies.md) | [authenticationContextClassReference](authenticationContextClassReference.md) collection | Get all of the conditionalAccessPolicies objects in the organization. |
+| [Create authenticationContextClassReference](../api/conditionalaccessroot-post-policies.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Create a new conditionalAccessPolicy object. |
+| [Get authenticationContextClassReference](../api/conditionalaccesspolicy-get.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Read properties and relationships of a conditionalAccessPolicy object. |
+| [Update authenticationContextClassReference](../api/conditionalaccesspolicy-update.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Update a conditionalAccessPolicy object. |
 | [Delete authenticationContextClassReference](../api/conditionalaccesspolicy-delete.md) | None | Delete a conditionalAccessPolicy object. |
 
 ## Properties
@@ -60,7 +60,7 @@ The following is a JSON representation of the resource.
             "id": "String",
             "displayName": "String",
             "description": "String",
-            "isAvailable": “Boolean”,
+            "isAvailable": Boolean,
         }
      }
 
