@@ -41,7 +41,7 @@ In the request body, supply the values for the relevant fields to update. Existi
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|roles|string collection|The roles for that user. Must be `owner` or empty. Guest users must always have role `guest` and cannot change. |
+|roles|string collection|The role for the user. Must be `owner` or empty. Guest users must always have role `guest` and this value cannot be updated. |
 
 ## Response
 
