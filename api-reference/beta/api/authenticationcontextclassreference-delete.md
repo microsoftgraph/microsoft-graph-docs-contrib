@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object.
+Delete an [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object.
 
 ## Permissions
 
@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationContextClassReferences
+DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationContextClassReferences/{id}
 ```
 ---
 
