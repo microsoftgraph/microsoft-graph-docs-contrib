@@ -7,11 +7,11 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get members of a channel
+# Get member of a channel
 
 Namespace: microsoft.graph
 
-Retrieve [conversationMember](../resources/conversationmember.md) from a [channel](../resources/channel.md).
+Get a [conversationMember](../resources/conversationmember.md) from a [channel](../resources/channel.md).
 
 ## Permissions
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/v1.0/channels/{id}/members/{id}
 
 Here is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. 
 
 ```http
 HTTP/1.1 200 OK
