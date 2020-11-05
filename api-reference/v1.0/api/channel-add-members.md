@@ -42,7 +42,7 @@ Include the following properties in the request body.
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|roles|string collection|The roles for that user.|
+|roles|string collection|The role for the user. Must be `owner` or empty.|
 |user|[user](../resources/user.md)|The user to add to the channel.|
 
 ## Response
