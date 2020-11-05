@@ -35,6 +35,14 @@ The following permissions are required to call this API. To learn more, includin
 GET https://graph.microsoft.com/beta/teams/{id}/channels/getAllMessages?$filter=lastModifiedDateTime ge '2020-04-01' and lastModifiedDateTime le '2020-04-02'
 ```
 
+## Optional query parameters
+
+This operation does not currently support [OData query parameters](/graph/query-parameters) to customize the response.
+
+## Request body
+
+Do not supply a request body for this method.
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and also returns all the messages in the channel.
