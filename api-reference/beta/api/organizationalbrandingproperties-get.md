@@ -40,7 +40,7 @@ This method supports some of the OData query parameters to help customize the re
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token}. Required. |
-| Accept-Language  | Localization to get. Optional.  |
+| Accept-Language  | Locale to get. Optional.  |
 
 >[!NOTE]
 >Accept-Language request header is required for Microsoft Graph Explorer only.
