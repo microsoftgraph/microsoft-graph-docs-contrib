@@ -1,13 +1,13 @@
 ---
-title: "Get member of a channel"
-description: "Get member of a channel."
+title: "Get member of channel"
+description: "Get member of channel."
 author: "laujan"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get member of a channel
+# Get member of channel
 
 Namespace: microsoft.graph
 
@@ -73,7 +73,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 201
 {
-"@odata.context": "https://graph.microsoft.com/V1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
+"@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
 "@odata.type": "#microsoft.graph.aadUserConversationMember",
 "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
 "roles": ["owner"],
@@ -89,7 +89,7 @@ Content-length: 201
 <!--
 {
   "type": "#page.annotation",
-  "description": "conversation: member list",
+  "description": "get channel member",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
