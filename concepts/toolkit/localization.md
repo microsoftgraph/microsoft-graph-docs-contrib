@@ -20,13 +20,13 @@ export const strings = {
 };
 ```
 
-The component itself then must use the BaseComponent's `_string` property which is updated if the `string` property of LocalizationHelper is updated.
+The component itself then must use the BaseComponent's `string` property which is updated if the `string` property of LocalizationHelper is updated.
 
 `packages/mgt/src/components/mgt-people-picker/mgt-people-picker.ts`
 
 ```html
 <div label="loading-text" aria-label="loading" class="loading-text">
-  ${this._strings.loadingMessage}
+  ${this.strings.loadingMessage}
 </div>
 ```
 
@@ -69,3 +69,32 @@ example:
   };
 </script>
 ```
+
+## Right to Left
+
+The Microsoft Graph Toolkit components support bi-directional markup for right-to-left language scripts.
+
+Each component inherits its direction via an internal property in `MgtBaseComponent` by default is `ltr`.
+
+```ts
+  @internalProperty() public direction = 'ltr';
+```
+
+this property is then updated by the `LocalizationHelper.ts`on the event that either changes:
+
+```ts
+document.body.getAttribute("dir") ||
+  document.documentElement.getAttribute("dir");
+```
+
+At this time, an Web API MutationObserver is implemented to watch for further changes to the `dir` attribute. The user will be able to dynamically change this value.
+
+## implementation
+
+Implementation relies on the usage of the `dir` attribute which must be implemented in the document structure [w3 spec standard](https://www.w3.org/International/questions/qa-bidi-css-markup#detail), Specific the `body` tag:
+
+```html
+<body dir="rtl"></body>
+```
+
+![right-to-left](./images/rightToLeft.png)
