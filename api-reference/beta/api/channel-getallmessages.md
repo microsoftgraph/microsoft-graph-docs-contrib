@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/beta/teams/0e05a7e4-a48d-4615-b0b7-c7494da9ce68/
 
 ### Response
 
->**Note:** The response object shown here is shortened for readability. 
+>**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
