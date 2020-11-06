@@ -52,7 +52,7 @@ Here is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_member"
+  "name": "delete_channel-member"
 } -->
 ```http
 DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members/{id}
@@ -73,7 +73,7 @@ HTTP/1.1 204 No Content
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get channel",
+  "description": "Delete channel member",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
