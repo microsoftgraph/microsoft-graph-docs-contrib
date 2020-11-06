@@ -212,5 +212,5 @@ Content-Type: application/json
 ```
 
 ## See also
-[Microsoft Graph Change Notifications](webhooks.md) overview.
-[Microsoft Teams API overview](teams-concept-overview.md)
+- [Microsoft Graph Change Notifications](webhooks.md) overview.
+- [Microsoft Teams API overview](teams-concept-overview.md)
