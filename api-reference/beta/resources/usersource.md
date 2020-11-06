@@ -36,6 +36,15 @@ Data source entity for a user - This is the container for a custodian's mailbox 
 |id|String|The ID of the unifiedGroupSource - This is not the ID of the actual group|
 |includedSources|sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
 
+### sourceType values
+
+Types of source related to the user. Includes mailbox and site both by default.
+
+|Member|Description|
+|:----|-----------|
+|mailbox|Represents a mailbox.|
+|site|Represents a OneDrive for Business site.|
+
 ## Relationships
 
 None.

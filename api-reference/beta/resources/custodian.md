@@ -28,10 +28,10 @@ eDiscovery custodians are a user and all of their digital assets such as email a
 |[activate](../api/custodian-activate.md)|None|If a custodian has been released from a case, use activate to [re-activate the custodian](https://docs.microsoft.com/microsoft-365/compliance/manage-new-custodians#re-activate-custodian) and make them part of the case again.|
 |[List siteSources](../api/sitesource-list.md)|[siteSource](../resources/sitesource.md) collection|Get the siteSource resources from the siteSources navigation property.|
 |[Create siteSources](../api/sitesource-create.md)|[siteSource](../resources/sitesource.md)|Create a new siteSource object.|
-|[List unifiedGroupSources](../api/unifiedgroupsources-list.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md) collection|Get the unifiedGroupSource resources from the unifiedGroupSources navigation property.|
-|[Create unifiedGroupSources](../api/unifiedgroupsources-create.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md)|Create a new unifiedGroupSource object.|
-|[List userSources](../api/usersources-list.md)|[userSource](../resources/usersource.md) collection|Get the userSource resources from the userSources navigation property.|
-|[Create userSources](../api/usersources-create.md)|[userSource](../resources/usersource.md)|Create a new userSource object.|
+|[List unifiedGroupSources](../api/unifiedgroupsource-list.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md) collection|Get the unifiedGroupSource resources from the unifiedGroupSources navigation property.|
+|[Create unifiedGroupSources](../api/unifiedgroupsource-create.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md)|Create a new unifiedGroupSource object.|
+|[List userSources](../api/usersource-list.md)|[userSource](../resources/usersource.md) collection|Get the userSource resources from the userSources navigation property.|
+|[Create userSources](../api/usersource-create.md)|[userSource](../resources/usersource.md)|Create a new userSource object.|
 
 ## Properties
 
@@ -51,10 +51,10 @@ eDiscovery custodians are a user and all of their digital assets such as email a
 
 Status of the custodian in the case.  To learn more about custodian management, see [Work with custodians and non-custodial data sources in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/managing-custodians)
 
-|Members|
-|:---|
-|active|
-|released|
+|Member|Description|
+|:----|-----------|
+|active|Custodian is an active part of the case - see [Manage custodians in an Advanced eDiscovery case](https://docs.microsoft.com/microsoft-365/compliance/manage-new-custodians)|
+|released|Custodian is released from the case - see [Manage custodians in an Advanced eDiscovery case](https://docs.microsoft.com/microsoft-365/compliance/manage-new-custodians)|
 
 ## Relationships
 

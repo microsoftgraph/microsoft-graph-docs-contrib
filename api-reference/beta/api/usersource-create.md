@@ -51,12 +51,8 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [dataSource](../resources/datasource.md)|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [dataSource](../resources/datasource.md)|
-|createdBy|[identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [dataSource](../resources/datasource.md)|
-|id|String|**TODO: Add Description** Inherited from [dataSource](../resources/datasource.md)|
-|email|String|**TODO: Add Description**|
-|includedSources|sourceType|**TODO: Add Description**. Possible values are: `mailbox`, `site`.|
+|email|String|SMTP address of the user.|
+|includedSources|sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
 
 ## Response
 
@@ -65,29 +61,26 @@ If successful, this method returns a `201 Created` response code and a [userSour
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "create_usersource_from_"
 }
 -->
+
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/userSources
 Content-Type: application/json
 Content-length: 233
 
 {
-  "@odata.type": "#microsoft.compliance.ediscovery.contract.userSource",
-  "displayName": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "email": "String",
-  "includedSources": "String"
+    "email":"megan@contoso.com",
+    "includedSources":"mailbox, site"
 }
 ```
 
-
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -95,20 +88,23 @@ Content-length: 233
   "@odata.type": "microsoft.compliance.ediscovery.contract.userSource"
 }
 -->
+
 ``` http
 HTTP/1.1 201 Created
 
 Content-Type: application/json
 {
-  "@odata.type": "#microsoft.compliance.ediscovery.contract.userSource",
-  "displayName": "String",
-  "createdDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "id": "d8df5a8b-5a8b-d8df-8b5a-dfd88b5adfd8",
-  "email": "String",
-  "includedSources": "String"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('4c8f8f70-7785-4bd4-b296-c98376a2c5e1')/custodians('45454331323337443946343043464239')/userSources/$entity",
+    "displayName": "Megan Bowen",
+    "createdDateTime": "2020-11-06T16:09:08.4905571Z",
+    "id": "34383036-3741-4545-3242-373530353435",
+    "email": "megan@contoso.com",
+    "includedSources": "mailbox,site",
+    "createdBy": {
+        "user": {
+            "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
+            "displayName": null
+        }
+    }
 }
 ```
-

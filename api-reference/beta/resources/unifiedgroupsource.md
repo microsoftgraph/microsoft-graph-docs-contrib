@@ -36,10 +36,12 @@ Data source entity for Groups - This is the container for a custodian's group
 
 ### sourceType values
 
-|Members|
-|:---|
-|mailbox|
-|site|
+Types of source related to the user. Includes mailbox and site both by default.
+
+|Member|Description|
+|:----|-----------|
+|mailbox|Represents a mailbox.|
+|site|Represents a SharePoint site.|
 
 ## Relationships
 

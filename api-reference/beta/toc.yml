@@ -1431,6 +1431,23 @@ items:
             href: api/ediscoverycase-update.md
           - name: Delete
             href: api/ediscoverycase-delete.md
+        - name: Custodian
+          href: resources/custodian.md
+          items:
+          - name: List
+            href: api/custodian-list.md
+          - name: Create
+            href: api/custodian-create.md
+          - name: Get
+            href: api/custodian-get.md
+          - name: Update
+            href: api/custodian-update.md
+          - name: Delete
+            href: api/custodian-delete.md
+          - name: Activate
+            href: api/custodian-activate.md
+          - name: Release
+            href: api/custodian-release.md
         - name: eDiscovery Review set
           href: resources/reviewset.md
           items:
@@ -1453,6 +1470,39 @@ items:
             href: api/reviewsetquery-update.md
           - name: Delete
             href: api/reviewsetquery-delete.md
+        - name: Site source
+          href: resources/sitesource.md
+          items:
+          - name: List
+            href: api/sitesource-list.md
+          - name: Create
+            href: api/sitesource-create.md
+          - name: Get
+            href: api/sitesource-get.md
+          - name: Delete
+            href: api/sitesource-delete.md
+          name: Unified group source
+          href: resources/unifiedgroupsource.md
+          items:
+          - name: List
+            href: api/unifiedgroupsource-list.md
+          - name: Create
+            href: api/unifiedgroupsource-create.md
+          - name: Get
+            href: api/unifiedgroupsource-get.md
+          - name: Delete
+            href: api/unifiedgroupsource-delete.md
+        - name: User source
+          href: resources/usersource.md
+          items:
+          - name: List
+            href: api/usersource-list.md
+          - name: Create
+            href: api/usersource-create.md
+          - name: Get
+            href: api/usersource-get.md
+          - name: Delete
+            href: api/usersource-delete.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
