@@ -47,14 +47,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 
 `chatMessage` supports subcribing to changes (creation, updation and deletion) using [Graph change notifications](webhooks.md). This allows callers to subscribe and get changes in realtime.
 
-Please refer to [subscription documentation](subscription.md) on how to create subscription.
-
-| Subscription resource | Description  | Allows [include resource data](/graph/webhooks-with-resource-data) | Permission types supported |
-|:----------------------|:-------------|:-------------------------------------------------------------------|:---------------------------|
-| /teams/getAllMessages | Allows subscribing to messages (and replies) for all [teams](team.md) across the tenant. | Yes | Application |
-| /chats/getAllMessages | Allows subscribing to messages for all [chats](chat.md) across the tenant. | Yes | Application |
-| /teams/{id}/channels/{id}/messages | Allows subscribing to messages (and replies) in a specific [channel](channel.md) in a [team](team.md) | Yes (only in Application) | Application, Delegated |
-| /chats/{id}/messages | Allows subscribing to messages in a specific [chat](chat.md) | Yes (only in Application) | Application, Delegated |
+Please refer to [chatMessage change notification](/graph/teams-changenotifications-chatMessage) documentation to get details about different resources and examples.
 
 ## Properties
 

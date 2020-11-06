@@ -79,6 +79,10 @@ Microsoft Teams apps give work groups a new tool to make collaboration a more pr
 
 You can create web sites, services, and native platform applications that run outside the Microsoft Teams user experience, and call the Teams API to automate Teams scenarios.
 
+### Get notified for changes in Teams
+
+Microsoft Teams supports subscribing to changes (creation, updation or deletion) to messages in [channels](/graph/api/resources/channel?view=graph-rest-1.0) and [chats](/graph/api/resources/channel?view=graph-rest-beta) to allows apps to get near-instant updates. You can refer to [chatMessage subscription](teamwork-changenotifications-chatMessage) documentation on how to subscribe to changes.
+
 **Types of apps enabled for Microsoft Teams**
 
 ![Call the Microsoft Teams API from tabs, bots, websites, and services](images/teamsappendpoints.png)

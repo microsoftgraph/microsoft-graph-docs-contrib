@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [messages](../resources/chatmessage.md) in a [chat](../resources/chat.md). 
+Retrieve the list of [messages](../resources/chatmessage.md) in a [chat](../resources/chat.md).
+
+> This API supports subcribing to changes (creation, updation and deletion) using [Graph change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in realtime. Please refer to ['chatMessage`](../resources/chatMessage.md) documentation for more details.
 
 ## Permissions
 
@@ -67,8 +69,6 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body.
 
 ## Example
-
-### GET API examples
 
 #### Example 1: Getting messages in a chat using GET API
 
@@ -276,68 +276,6 @@ Content-length: 201
     ]
 }
 ```
-
-### Subscription based examples
-
-Please refer to [Subscription documentation](../resources/subscription.md) on how to create subscription. This allows listening to changes (creation, updation and deletion) using [Graph Change Notifications](../resources/webhooks.md)
-
->  *Note* : Delegated subscriptions do not support `includeResourceData` to be set to true and hence do not require encryption certificate details.
-
-#### Example 1: Subscribing to messages in a chat
-
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-{
-  "changeType": "created,updated",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/chats/{id}/messages",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
-
-### Example 2: Subscribing to messages in a chat where message contains certain text
-
-In the request below, only messages which contain `Hello` will be sent to subscriber.
-
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-{
-  "changeType": "created,updated",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/chats/{id}/messages?$search=Hello",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
-
-### Example 3: Subscribing to messages in all chats across the tenant
-
-This subscription allows listening to all messages across all the chats in the tenant. This is only supported for **Application** permissions.
-
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-{
-  "changeType": "created,updated",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/chats/getAllMessages",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

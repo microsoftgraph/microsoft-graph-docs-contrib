@@ -17,6 +17,8 @@ Retrieve the list of [messages](../resources/chatmessage.md) (without the replie
 
 To get the replies for a message, call the [list message replies](channel-list-messagereplies.md) or the [get message reply](channel-get-messagereply.md) API. 
 
+> This API supports subcribing to changes (creation, updation and deletion) using [Graph change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in realtime. Please refer to ['chatMessage`](../resources/chatMessage.md) documentation for more details.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,17 +48,6 @@ The other [OData query parameters](/graph/query-parameters) are not currently su
 
 > **Note:** [GET /teams/{id}/channels/{id}/messages/delta](chatmessage-delta.md) supports filtering by date, which provides similar data to GET /teams/{id}/channels/{id}/messages.
 
-## Subscribe for changes
-
-[`chatMessage`](../resources/chatMessage.md) supports subcribing to changes (creation, updation and deletion) using [Graph change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in realtime.
-
-Please refer to [subscription documentation](../resources/subscription.md) on how to create subscription.
-
-| Subscription resource | Description  | Allows [include resource data](/graph/webhooks-with-resource-data) | Permission types supported |
-|:----------------------|:-------------|:-------------------------------------------------------------------|:---------------------------|
-| /teams/getAllMessages | Allows subscribing to messages (and replies) for all [teams](../resources/team.md) across the tenant. | Yes | Application |
-| /teams/{id}/channels/{id}/messages | Allows subscribing to messages (and replies) in a specific [channel](../resources/channel.md) in a [team](../resources/team.md) | Yes (only in Application) | Application, Delegated |
-
 ## Request headers
 
 | Header       | Value |
@@ -72,8 +63,6 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body.
 
 ## Example
-
-### GET API examples
 
 #### Example 1: Getting messages in a channel using GET API
 
@@ -264,67 +253,6 @@ Content-type: application/json
             "reactions": []
         }
     ]
-}
-```
-
-### Subscription based examples
-
-Please refer to [Subscription documentation](../resources/subscription.md) on how to create subscription. This allows listening to changes (creation, updation and deletion) using [Graph Change Notifications](../resources/webhooks.md)
-
->  *Note* : Delegated subscriptions do not support `includeResourceData` to be set to true and hence do not require encryption certificate details.
-
-#### Example 1: Subscribing to messages (and replies) in a channel
-
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-{
-  "changeType": "created,updated",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/channels/{id}/messages",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
-
-### Example 2: Subscribing to messages (and replies) in a channel where message contains certain text
-
-In the request below, only messages which contain `Hello` will be sent to subscriber.
-
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-{
-  "changeType": "created,updated",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/channels/{id}/messages?$search=Hello",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
-
-### Example 3: Subscribing to messages (and replies) in all teams across the tenant
-
-This subscription allows listening to all messages (and replies) across all the teams in the tenant. This is only supported for Application permissions.
-
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-{
-  "changeType": "created,updated",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/getAllMessages",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
 }
 ```
 
