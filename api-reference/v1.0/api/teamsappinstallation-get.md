@@ -1,6 +1,6 @@
 ---
-title: "Get an app in team"
-description: "Retrieve an app installed in team."
+title: "Get installed app in team"
+description: "Get an app installed in team."
 author: "AkJo"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -33,7 +33,7 @@ GET /teams/{id}/installedApps/{id}
 
 ## Optional query parameters
 
-This method supports the $filter, $select, and $expand [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -47,11 +47,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an app [teamsAppInstallation](../resources/teamsappinstallation.md) in the response body.
+If successful, this method returns a `200 OK` response code and a [teamsAppInstallation](../resources/teamsappinstallation.md) object in the response body.
 
 ## Examples
 
-### Example 1: List the installed app
+### Example 1: Get the installed app
 #### Request
 
 The following is an example of the request.
