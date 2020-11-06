@@ -18,7 +18,7 @@ This type inherits from [teamsAppInstallation](teamsappinstallation.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List apps installed for user](../api/user-list-teamsappinstallation.md)| [teamsAppInstallation](teamsappinstallation.md) collection | List apps installed in the personal scope of a user. |
+|[Get apps installed for user](../api/user-list-teamsappinstallation.md)| [teamsAppInstallation](teamsappinstallation.md) collection | List apps installed in the personal scope of a user. |
 |[Gets the installed app for user](../api/user-get-teamsappinstallation.md)| [teamAppInstallation](teamsappinstallation.md) | List the specified app installed in the personal scope of a user. |
 |[Add app for user](../api/user-add-teamsappinstallation.md) | None | Adds (installs) an app in the personal scope of a user. |
 |[Remove app for user](../api/user-delete-teamsappinstallation.md) | None | Removes (uninstalls) an app in the personal scope of a user. |
