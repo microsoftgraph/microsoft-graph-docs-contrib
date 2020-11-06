@@ -9170,7 +9170,7 @@ items:
               href: api/intune-tem-telecomexpensemanagementpartner-delete.md
             - name: Update
               href: api/intune-tem-telecomexpensemanagementpartner-update.md  
-      - name: Virtual endpoint (preview)
+      - name: Cloud desktop (preview)
         items:
         - name: Cloud PC
           href: resources/cloudpc.md
