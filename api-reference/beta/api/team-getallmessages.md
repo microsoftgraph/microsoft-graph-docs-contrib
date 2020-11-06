@@ -30,7 +30,7 @@ The following permissions are required to call this API. To learn more, includin
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{id}/team/getAllMessages
+GET /users/{id}/teams/getAllMessages
 ```
 
 ## Optional query parameters
