@@ -19,6 +19,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added support for [resource-specific consent](https://aka.ms/teams-rsc) (RSC) permissions to v1.0 APIs. |
 | Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-v1.0). |
+| Addition | Beta | Added [List members in a channel](/graph/api/channel-list-members), [Add a member to a channel](/graph/api/channel-add-members),  [Update the role of a member in a channel](/graph/api/channel-update-members), [Delete a member from a channel](/graph/api/channel-delete-members), updated [channel](/graph/api/resources/channel) resource file.|
 
 ## October 2020
 
