@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-POST /team/{id}/channels/{id}/members/{id}
+POST /teams/{id}/channels/{id}/members/{id}
 ```
 
 ## Request headers
@@ -56,7 +56,7 @@ If successful, this method returns a `201 Created` response code and a [conversa
 #### Request
 
 ```http
-POST https://graph.microsoft.com/v1.0/team/{id}/channels/{id}/members/{id}
+POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members/{id}
 content-type: application/json
 content-length: 26
 
@@ -77,7 +77,7 @@ Content-type: application/json
 Content-length: 468
 
 {
-  "@odata.context": "https://graph.microsoft.com/V1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
   "@odata.type": "#microsoft.graph.aadUserConversationMember",
   "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
   "roles": [],
@@ -92,7 +92,7 @@ Content-length: 468
 #### Request
 
 ```http
-POST https://graph.microsoft.com/v1.0/channels/{id}/members/{id}
+POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members/{id}
 content-type: application/json
 content-length: 26
 
