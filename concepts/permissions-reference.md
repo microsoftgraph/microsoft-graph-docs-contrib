@@ -520,8 +520,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_CloudPC.Read.All_ | Read Cloud PCs | Allows the app to read the properties of Cloud PCs on behalf of the signed-in user. | No | No |
-|_CloudPC.ReadWrite.All_ | Read and write Cloud PCs | Allows the app to read and write the properties of Cloud PCs on behalf of the signed-in user. | Yes | No |
+|_CloudPC.Read.All_ | Read Cloud PCs | Allows the app to read Cloud PC properties, such as display name and provisioning policy, on behalf of the signed-in user. | No | No |
+|_CloudPC.ReadWrite.All_ | Read and write Cloud PCs | Allows the app to read and edit Cloud PC properties, such as provisioning policy, on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 
@@ -531,8 +531,8 @@ None.
 
 #### Delegated
 
-* _CloudPC.Read.All_: Check the current state of Cloud PCs (`GET /deviceManagement/virtualEndpoint/cloudPCs`).
-* _CloudPC.ReadWrite.All_: Update the Cloud PC user settings (`PATCH /deviceManagement/virtualEndpoint/selfServiceSettings`).
+* _CloudPC.Read.All_: View the properties of all Cloud PCs (`GET /deviceManagement/virtualEndpoint/cloudPCs`).
+* _CloudPC.ReadWrite.All_: Edit the Cloud PC provisioning policy (`PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}`).
 
 #### Application
 
