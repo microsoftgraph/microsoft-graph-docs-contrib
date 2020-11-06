@@ -12274,6 +12274,8 @@ items:
           href: api/profilephoto-update.md
         - name: Complete migration for team
           href: api/team-completemigration.md
+        - name: Get all team messages
+          href: api/team-getallmessages.md
       - name: Group (team)
         href: resources/group.md
         items:
