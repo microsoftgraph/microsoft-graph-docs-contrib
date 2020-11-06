@@ -1,5 +1,5 @@
 ---
-title: "Update conversationMember in a channel"
+title: "Update member in channel"
 description: "Update the role of member in a channel."
 author: "laujan"
 doc_type: "apiPageType"
@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Update conversationMember in a channel
+# Update member in a channel
 
 Namespace: microsoft.graph
 
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
 ```http
-PATCH /channels/{id}/members/{id}
+PATCH /teams/{id}/channels/{id}/members/{id}
 ```
 
 ## Request headers
@@ -58,7 +58,7 @@ The following is a request to apply the `owner` role to an existing member of a 
   "name": "update_member"
 } -->
 ```http
-PATCH https://graph.microsoft.com/v1.0/channels/{id}/members/{id}
+PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members/{id}
 content-type: application/json
 content-length: 26
 
@@ -96,7 +96,7 @@ Content-length: 475
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get channel",
+  "description": "update role of channel member",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
