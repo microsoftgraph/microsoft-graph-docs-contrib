@@ -1,5 +1,5 @@
 ---
-title: "Delete a member from a channel"
+title: "Delete member from channel"
 description: "Remove a member from a channel."
 author: "laujan"
 doc_type: "apiPageType"
@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Delete a member from a channel
+# Delete member from channel
 
 Namespace: microsoft.graph
  
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-DELETE /channels/{id}/members/{id}
+DELETE /teams/{id}/channels/{id}/members/{id}
 ```
 
 ## Request headers
@@ -55,7 +55,7 @@ Here is an example of the request.
   "name": "delete_member"
 } -->
 ```http
-DELETE https://graph.microsoft.com/v1.0/channels/{id}/members/{id}
+DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members/{id}
 ```
 
 ### Response
