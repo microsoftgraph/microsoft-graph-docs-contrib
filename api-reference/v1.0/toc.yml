@@ -4937,12 +4937,40 @@ items:
         - name: Reply to message
           href: api/channel-post-messagereply.md
         - name: Update message
-          href: api/chatmessage-update.md 
+          href: api/chatmessage-update.md
+        - name: Send message
+          href: api/channel-post-message.md
       - name: Chat
         href: resources/chat.md
         items:
         - name: Get chat between user and app
           href: api/userscopeteamsappinstallation-get-chat.md
+      - name: Conversation member
+        href: resources/conversationmember.md
+        items:
+        - name: List members
+          href: api/conversationmember-list.md
+        - name: Get member
+          href: api/conversationmember-get.md
+        - name: Add member
+          href: api/conversationmember-add.md
+        - name: Update member
+          href: api/conversationmember-update.md
+        - name: Delete member
+          href: api/conversationmember-delete.md
+      - name: Azure AD user conversation member
+        href: resources/aaduserconversationmember.md
+        items:
+        - name: List members
+          href: api/conversationmember-list.md
+        - name: Get member
+          href: api/conversationmember-get.md
+        - name: Add member
+          href: api/conversationmember-add.md
+        - name: Update member
+          href: api/conversationmember-update.md
+        - name: Delete member
+          href: api/conversationmember-delete.md
       - name: App catalog
         items:
         - name: App in catalog
@@ -4959,7 +4987,7 @@ items:
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
-        - name: List apps in team
+        - name: Get apps in team
           href: api/teamsappinstallation-list.md
         - name: Get app installed in a team
           href: api/teamsappinstallation-get.md
