@@ -1,6 +1,6 @@
 ---
 title: "virtualEndpoint resource type"
-description: "**TODO: Add Description**"
+description: "The virtualEndpoint resource represents a container for Cloud PC management functionality."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: ""

@@ -9181,6 +9181,10 @@ items:
             href: api/virtualendpoint-get-cloudpc.md
           - name: Reprovision
             href: api/cloudpc-reprovision.md
+        - name: Cloud PC status
+          href: resources/cloudpcstatus.md
+        - name: Cloud PC status details
+          href: resources/cloudpcstatusdetails.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
           items:
@@ -9198,6 +9202,8 @@ items:
           href: resources/cloudpcdeviceimagestatus.md
         - name: Cloud PC device image status details
           href: resources/cloudpcdeviceimagestatusdetails.md
+        - name: Cloud PC source device image
+          href: resources/cloudpcsourcedeviceimage.md
         - name: Cloud PC on-premises connection
           href: resources/cloudpconpremisesconnection.md
           items:
@@ -9250,12 +9256,6 @@ items:
             href: api/virtualendpoint-get-cloudpcselfservicesettings.md
           - name: Update
             href: api/virtualendpoint-update-selfservicesettings.md
-        - name: Cloud PC source device image
-          href: resources/cloudpcsourcedeviceimage.md
-        - name: Cloud PC status
-          href: resources/cloudpcstatus.md
-        - name: Cloud PC status details
-          href: resources/cloudpcstatusdetails.md
         - name: Shared resources
           items:
           - name: Cloud PC management assignment target
