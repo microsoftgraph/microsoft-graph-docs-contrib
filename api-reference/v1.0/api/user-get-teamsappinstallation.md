@@ -31,10 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 GET /users/{id}/teamwork/installedApps/{id}
 ```
 
-## Optional query parameters
-
-This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
-
 ## Request headers
 
 | Header       | Value |
