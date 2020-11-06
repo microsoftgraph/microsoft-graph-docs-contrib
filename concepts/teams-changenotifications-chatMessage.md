@@ -93,7 +93,7 @@ Additionally, channel-level subscription supports keyword based search using **$
 
 #### Examples
 
-#### Example 1 : Subscribing to all messages (and replies) in a channel
+##### Example 1 : Subscribing to all messages (and replies) in a channel
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -110,7 +110,7 @@ Content-Type: application/json
 }
 ```
 
-#### Example 2 : Subscribing to messages (and replies) in a channel where message contains certain text
+##### Example 2 : Subscribing to messages (and replies) in a channel where message contains certain text
 
 In the request below, only messages which contain `Hello` will be sent to subscriber.
 
@@ -129,7 +129,7 @@ Content-Type: application/json
 }
 ```
 
-#### Example 3 : Subscribing to messages (and replies) in a channel without resource data
+##### Example 3 : Subscribing to messages (and replies) in a channel without resource data
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -196,7 +196,7 @@ Content-Type: application/json
 }
 ```
 
-#### Example 3 : Subscribing to messages (and replies) in a chat without resource data
+##### Example 3 : Subscribing to messages (and replies) in a chat without resource data
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
