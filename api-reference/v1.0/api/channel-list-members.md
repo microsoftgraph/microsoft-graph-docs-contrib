@@ -104,7 +104,7 @@ Content-length: 201
 <!--
 {
   "type": "#page.annotation",
-  "description": "conversation: member list",
+  "description": "channel member list",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
