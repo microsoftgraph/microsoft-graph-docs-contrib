@@ -1,6 +1,32 @@
 {
   "changelog": [
-      {
+    {
+        "ChangeList": [
+          {
+            "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
+            "ApiChange": "Method",
+            "ChangedApiName": "getAllMessages",
+            "ChangeType": "Addition",
+            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/chat-getallmessages?view=graph-rest-beta) method to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+            "Target": "chat-getallmessages"
+          }
+          {
+            "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
+            "ApiChange": "Method",
+            "ChangedApiName": "getAllMessages",
+            "ChangeType": "Addition",
+            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/channel-getallmessages?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+            "Target": "channel-getallmessages"
+          }
+        ],
+        "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2020-11-05T00:00:00",
+        "WorkloadArea": "Teamwork",
+        "SubArea": ""
+      },  
+    {
         "ChangeList": [
           {
             "Id": "5421a0d9-a155-43d1-ac9c-8d8e00529c2f",
@@ -17,22 +43,6 @@
             "ChangeType": "Addition",
             "Description": "Added [read channel message APIs](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-v1.0).",
             "Target": "chatMessage"
-          }
-          {
-            "Id": "5421a0d9-a155-43d1-ac9c-8d8e00529c2f",
-            "ApiChange": "Method",
-            "ChangedApiName": "getAllMessages",
-            "ChangeType": "Addition",
-            "Description": "Added [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/chat-getallmessages?view=graph-rest-beta).",
-            "Target": "chat-getallmessages"
-          }
-          {
-            "Id": "5421a0d9-a155-43d1-ac9c-8d8e00529c2f",
-            "ApiChange": "Method",
-            "ChangedApiName": "getAllMessages",
-            "ChangeType": "Addition",
-            "Description": "Added [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/channel-getallmessages?view=graph-rest-beta).",
-            "Target": "channel-getallmessages"
           }
         ],
         "Id": "5421a0d9-a155-43d1-ac9c-8d8e00529c2f",
