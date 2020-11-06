@@ -21,6 +21,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-v1.0). |
 | Addition | v1.0 | Added [Get the installed app in team](/graph/api/teamsappinstallation-get?view=graph-rest-v1.0), [Get apps for user](/graph/api/user-list-teamsappinstallation?view=graph-rest-v1.0), [Get installed app for user](/graph/api/user-get-teamsappinstallation?view=graph-rest-v1.0), [Add app for user](/graph/api/user-add-teamsappinstallation?view=graph-rest-v1.0), [Remove app for user](/graph/api/user-delete-teamsappinstallation?view=graph-rest-v1.0), and [Upgrade installed app for user](/graph/api/user-upgrade-teamsappinstallation?view=graph-rest-v1.0) methods to the [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-v1.0) resource. |
 | Addition | v1.0 | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-v1.0) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-v1.0) resource. |
+| Addition | beta | Added [Get the installed app in team](/graph/api/teamsappinstallation-get?view=graph-rest-beta), [Get installed app for user](/graph/api/user-get-teamsappinstallation?view=graph-rest-beta)|
+| Addition | beta | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-beta) resource. |
+
 
 ## October 2020
 
