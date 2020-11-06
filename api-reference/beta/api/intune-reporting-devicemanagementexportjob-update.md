@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create the [
 |select|String collection|Columns selected from the report|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Format of the exported report. Possible values are: `csv`, `pdf`.|
 |snapshotId|String|A snapshot is an identifiable subset of the dataset represented by the ReportName. A sessionId or CachedReportConfiguration id can be used here. If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId. Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.|
-|status|[deviceManagementReportStatus](../resources/intune-shared-devicemanagementreportstatus.md)|Status of the export job. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
+|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the export job. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |url|String|Temporary location of the exported report|
 |requestDateTime|DateTimeOffset|Time that the exported report was requested|
 |expirationDateTime|DateTimeOffset|Time that the exported report expires|

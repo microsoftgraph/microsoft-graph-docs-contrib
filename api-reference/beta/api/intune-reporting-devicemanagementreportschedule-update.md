@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Update the properties of a [deviceManagementReportSchedule](../resources/intune-shared-devicemanagementreportschedule.md) object.
+Update the properties of a [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) object.
 
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,9 +42,9 @@ PATCH /deviceManagement/reports/reportSchedules/{deviceManagementReportScheduleI
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [deviceManagementReportSchedule](../resources/intune-shared-devicemanagementreportschedule.md) object.
+In the request body, supply a JSON representation for the [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) object.
 
-The following table shows the properties that are required when you create the [deviceManagementReportSchedule](../resources/intune-shared-devicemanagementreportschedule.md).
+The following table shows the properties that are required when you create the [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -65,7 +65,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceManagementReportSchedule](../resources/intune-shared-devicemanagementreportschedule.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) object in the response body.
 
 ## Example
 

@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create the d
 |select|String collection|Columns selected from the report|
 |orderBy|String collection|Ordering of columns in the report|
 |metadata|String|Caller-managed metadata associated with the report|
-|status|[deviceManagementReportStatus](../resources/intune-shared-devicemanagementreportstatus.md)|Status of the cached report. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
+|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the cached report. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |lastRefreshDateTime|DateTimeOffset|Time that the cached report was last refreshed|
 |expirationDateTime|DateTimeOffset|Time that the cached report expires|
 
