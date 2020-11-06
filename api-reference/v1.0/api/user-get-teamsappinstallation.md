@@ -33,7 +33,7 @@ GET /users/{id}/teamwork/installedApps/{id}
 
 ## Optional query parameters
 
-This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and an [app](../reso
 
 ## Examples
 
-### Example 1: List an app installed for the specified user
+### Example 1: Get an app installed for the specified user
 
 #### Request
 
