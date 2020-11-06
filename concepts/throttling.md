@@ -169,7 +169,7 @@ The following resources are provided by the Outlook service.
 | -------------- | ------------ |
 | [Calls](/graph/api/resources/call) | 10,000 calls/month and 100 concurrent calls   |
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
-| [Presence](/graph/api/resources/presence) (preview)   | 2 rps |
+| [Presence](/graph/api/resources/presence) (preview)   | 50 requests per second |
 
 ### OneNote service limits
 
