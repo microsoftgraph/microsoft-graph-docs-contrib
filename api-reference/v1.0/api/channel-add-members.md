@@ -1,13 +1,13 @@
 ---
-title: "Add member to a channel"
-description: "Add member to a channel."
+title: "Add member to channel"
+description: "Add member to channel."
 author: "laujan" 
 doc_type: apiPageType
 localization_priority: Normal 
 ms.prod: "microsoft-teams"
 ---
 
-# Add member to a channel
+# Add member to channel
 
 Namespace: microsoft.graph
 
@@ -131,7 +131,7 @@ Content-length: 468
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get channel",
+  "description": "Add member to channel",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
