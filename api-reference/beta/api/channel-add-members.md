@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-POST /teams/{id}/channels/{id}/members/{id}
+POST /teams/{id}/channels/{id}/members
 ```
 
 ## Request headers
@@ -58,7 +58,7 @@ If successful, this method returns a `201 Created` response code and a [conversa
 #### Request
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/members/{id}
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/members
 content-type: application/json
 content-length: 26
 
@@ -94,7 +94,7 @@ Content-length: 468
 #### Request
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/members/{id}
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/members
 content-type: application/json
 content-length: 26
 
