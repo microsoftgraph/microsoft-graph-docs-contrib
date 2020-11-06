@@ -31,10 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 GET /teams/{id}/installedApps/{id}
 ```
 
-## Optional query parameters
-
-This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
-
 ## Request headers
 
 | Header       | Value |
@@ -76,7 +72,7 @@ The following is an example of the response.
   "name": "get_installed_teams_apps",
   "truncated": true,
   "@odata.type": "microsoft.graph.teamsAppInstallation",
-  "isCollection": true
+  "isCollection": false
 } -->
 
 ```http
@@ -119,7 +115,7 @@ The following is an example of the response.
   "name": "get_installed_teams_apps_expand",
   "truncated": true,
   "@odata.type": "microsoft.graph.teamsAppInstallation",
-  "isCollection": true
+  "isCollection": false
 } -->
 
 ```http
@@ -135,24 +131,6 @@ Content-type: application/json
                 "teamsAppId": "0d820ecd-def2-4297-adad-78056cde7c78",
                 "displayName": "OneNote",
                 "version": "1.0.0"
-            }
-        },
-        {
-            "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZmQ5MjVhMC0zNTdmLTRkMjUtODQ1Ni1iMzAyMmFhYTQxYTk=",
-            "teamsAppDefinition": {
-                "id": "MGZkOTI1YTAtMzU3Zi00ZDI1LTg0NTYtYjMwMjJhYWE0MWE5IyMxLjc=",
-                "teamsAppId": "0fd925a0-357f-4d25-8456-b3022aaa41a9",
-                "displayName": "SurveyMonkey",
-                "version": "1.7"
-            }
-        },
-        {
-            "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMyYTUyNzcwMy0xZjZmLTQ1NTktYTMzMi1kOGE3ZDI4OGNkODg=",
-            "teamsAppDefinition": {
-                "id": "MmE1Mjc3MDMtMWY2Zi00NTU5LWEzMzItZDhhN2QyODhjZDg4IyMxLjA=",
-                "teamsAppId": "2a527703-1f6f-4559-a332-d8a7d288cd88",
-                "displayName": "SharePoint",
-                "version": "1.0"
             }
         }
   ]
