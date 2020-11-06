@@ -18,8 +18,8 @@ This type inherits from [teamsAppInstallation](teamsappinstallation.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List apps installed for user](../api/user-list-teamsappinstallation.md)| [teamsAppInstallation](teamsappinstallation.md) collection | Lists apps installed in the personal scope of a user. |
-|[Gets the installed app for user](../api/user-get-teamsappinstallation.md)| [teamAppInstallation](teamsappinstallation.md) | Lists the specified app installed in the personal scope of a user. |
+|[List apps installed for user](../api/user-list-teamsappinstallation.md)| [teamsAppInstallation](teamsappinstallation.md) collection | List apps installed in the personal scope of a user. |
+|[Gets the installed app for user](../api/user-get-teamsappinstallation.md)| [teamAppInstallation](teamsappinstallation.md) | List the specified app installed in the personal scope of a user. |
 |[Add app for user](../api/user-add-teamsappinstallation.md) | None | Adds (installs) an app in the personal scope of a user. |
 |[Remove app for user](../api/user-delete-teamsappinstallation.md) | None | Removes (uninstalls) an app in the personal scope of a user. |
 |[Upgrade app installed for user](../api/user-upgrade-teamsappinstallation.md) | None | Upgrades to the latest version of the app installed in the personal scope of a user.|
@@ -29,7 +29,7 @@ This type inherits from [teamsAppInstallation](teamsappinstallation.md).
 
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | A unique ID (not the Teams appID). |
+| id                  | string   | A unique ID (not the Teams app ID). |
 
 ## Relationships
 
