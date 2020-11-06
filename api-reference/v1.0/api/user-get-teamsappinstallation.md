@@ -70,7 +70,7 @@ The following is an example of the response.
   "name": "user_list_teamsApps",
   "truncated": true,
   "@odata.type": "microsoft.graph.teamsAppInstallation",
-  "isCollection": true
+  "isCollection": false
 } -->
 
 ```http
@@ -85,7 +85,7 @@ Content-type: application/json
   ]
 }
 ```
-### Example 2: Get the names and other details of apps installed for the user
+### Example 2: Get the names and other details of the app installed for the user
 
 #### Request
 
@@ -108,7 +108,7 @@ The following is an example of the response.
   "name": "user_list_teamsApps_details",
   "truncated": true,
   "@odata.type": "microsoft.graph.teamsAppInstallation",
-  "isCollection": true
+  "isCollection": false
 } -->
 
 ```http
@@ -118,32 +118,15 @@ Content-type: application/json
 {
     "value": [
         {
-            "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg=",
-            "teamsAppDefinition": {
-                "id": "MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==",
-                "teamsAppId": "0d820ecd-def2-4297-adad-78056cde7c78",
-                "displayName": "OneNote",
-                "version": "1.0.0"
-            }
-        },
-        {
-            "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZmQ5MjVhMC0zNTdmLTRkMjUtODQ1Ni1iMzAyMmFhYTQxYTk=",
-            "teamsAppDefinition": {
-                "id": "MGZkOTI1YTAtMzU3Zi00ZDI1LTg0NTYtYjMwMjJhYWE0MWE5IyMxLjc=",
-                "teamsAppId": "0fd925a0-357f-4d25-8456-b3022aaa41a9",
-                "displayName": "SurveyMonkey",
-                "version": "1.7"
-            }
-        },
-        {
-            "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMyYTUyNzcwMy0xZjZmLTQ1NTktYTMzMi1kOGE3ZDI4OGNkODg=",
-            "teamsAppDefinition": {
-                "id": "MmE1Mjc3MDMtMWY2Zi00NTU5LWEzMzItZDhhN2QyODhjZDg4IyMxLjA=",
-                "teamsAppId": "2a527703-1f6f-4559-a332-d8a7d288cd88",
-                "displayName": "SharePoint",
-                "version": "1.0"
-            }
-        }
+          "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('5b649834-7412-4cce-9e69-176e95a394f5')/installedApps(teamsAppDefinition())/$entity",
+          "id": "NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk=",
+          "teamsAppDefinition": {
+                                  "id": "YTZiNjMzNjUtMzFhNC00ZjQzLTkyZWMtNzEwYjcxNTU3YWY5IyMwLjk=",
+                                  "teamsAppId": "a6b63365-31a4-4f43-92ec-710b71557af9",
+                                  "displayName": "Power Apps",
+                                  "version": "0.9"
+                                }
+          }
   ]
 }
 ```
@@ -152,7 +135,7 @@ Content-type: application/json
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "User list teamsAppInstallations",
+  "description": "User get teamsAppInstallations",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
