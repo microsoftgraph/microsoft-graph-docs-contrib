@@ -3,7 +3,7 @@ title: "androidWorkProfileCertificateProfileBase resource type"
 description: "Android Work Profile certificate profile base."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -115,6 +115,7 @@ Here is a JSON representation of the resource.
   "subjectAlternativeNameType": "String"
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "windowsMicrosoftEdgeApp resource type"
 description: "Contains properties and inherited properties for the Microsoft Edge app on Windows."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -106,6 +106,7 @@ Here is a JSON representation of the resource.
   "displayLanguageLocale": "String"
 }
 ```
+
 
 
 

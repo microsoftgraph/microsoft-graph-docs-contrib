@@ -3,7 +3,7 @@ title: "Create managedAndroidStoreApp"
 description: "Create a new managedAndroidStoreApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -195,6 +195,7 @@ Content-Length: 1493
   }
 }
 ```
+
 
 
 

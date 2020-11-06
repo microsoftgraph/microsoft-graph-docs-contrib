@@ -3,7 +3,7 @@ title: "androidVpnConnectionType enum type"
 description: "Android VPN connection type."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -28,6 +28,7 @@ Android VPN connection type.
 |citrix|5|Citrix|
 |microsoftTunnel|7|Microsoft Tunnel.|
 |netMotionMobility|8|NetMotion Mobility.|
+
 
 
 

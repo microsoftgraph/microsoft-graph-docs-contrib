@@ -3,7 +3,7 @@ title: "Update windowsPhone81AppX"
 description: "Update the properties of a windowsPhone81AppX object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -205,6 +205,7 @@ Content-Length: 1742
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

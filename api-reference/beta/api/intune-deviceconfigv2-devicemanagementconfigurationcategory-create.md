@@ -3,7 +3,7 @@ title: "Create deviceManagementConfigurationCategory"
 description: "Create a new deviceManagementConfigurationCategory object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -99,6 +99,7 @@ Content-Length: 317
   "technologies": "mdm"
 }
 ```
+
 
 
 

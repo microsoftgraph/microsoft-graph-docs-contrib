@@ -3,7 +3,7 @@ title: "Update deviceManagementTemplate"
 description: "Update the properties of a deviceManagementTemplate object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -109,6 +109,7 @@ Content-Length: 454
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
+
 
 
 

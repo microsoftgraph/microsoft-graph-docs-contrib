@@ -3,7 +3,7 @@ title: "List userExperienceAnalyticsAppHealthDevicePerformanceDetailses"
 description: "List properties and relationships of the userExperienceAnalyticsAppHealthDevicePerformanceDetails objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -76,6 +76,7 @@ Content-Length: 435
   ]
 }
 ```
+
 
 
 

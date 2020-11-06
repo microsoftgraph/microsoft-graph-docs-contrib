@@ -3,7 +3,7 @@ title: "deviceManagementResourceAccessProfileAssignment resource type"
 description: "Entity that describes tenant level settings for derived credentials"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -58,6 +58,7 @@ Here is a JSON representation of the resource.
   "sourceId": "String"
 }
 ```
+
 
 
 

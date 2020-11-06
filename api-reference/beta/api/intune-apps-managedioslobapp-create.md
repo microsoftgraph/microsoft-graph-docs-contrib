@@ -3,7 +3,7 @@ title: "Create managedIOSLobApp"
 description: "Create a new managedIOSLobApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -208,6 +208,7 @@ Content-Length: 1718
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

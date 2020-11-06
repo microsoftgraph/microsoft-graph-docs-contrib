@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationTechnologies enum type"
 description: "Describes which technology this setting can be deployed with"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -24,6 +24,7 @@ Describes which technology this setting can be deployed with
 |mdm|1|Setting can be deployed through the MDM channel|
 |windows10XManagement|2|Setting can be deployed through the Windows10XManagement channel|
 |configManager|4|Setting can be deployed through the ConfigManager channel|
+
 
 
 

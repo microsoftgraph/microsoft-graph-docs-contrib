@@ -3,7 +3,7 @@ title: "Update deviceManagementConfigurationSimpleSettingCollectionDefinition"
 description: "Update the properties of a deviceManagementConfigurationSimpleSettingCollectionDefinition object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -427,6 +427,7 @@ Content-Length: 9232
   "minimumCount": 12
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "androidDeviceOwnerKioskCustomizationSystemNavigation enum type"
 description: "An enum representing possible values for kiosk customization system navigation."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -23,6 +23,7 @@ An enum representing possible values for kiosk customization system navigation.
 |notConfigured|0|Not configured; this value defaults to NAVIGATION_DISABLED.|
 |navigationEnabled|1|Home and overview buttons are enabled.|
 |homeButtonOnly|2| Only the home button is enabled.|
+
 
 
 
