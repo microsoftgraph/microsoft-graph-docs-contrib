@@ -3,7 +3,7 @@ title: "macOSFirewallApplication resource type"
 description: "Represents an app in the list of macOS firewall applications"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -40,8 +40,6 @@ Here is a JSON representation of the resource.
   "allowsIncomingConnections": true
 }
 ```
-
-
 
 
 

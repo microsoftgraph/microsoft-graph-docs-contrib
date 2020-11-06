@@ -3,7 +3,7 @@ title: "macOsVppApp resource type"
 description: "Contains properties and inherited properties for MacOS Volume-Purchased Program (VPP) Apps."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -144,8 +144,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

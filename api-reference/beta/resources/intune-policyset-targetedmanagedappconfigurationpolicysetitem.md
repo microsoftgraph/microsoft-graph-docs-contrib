@@ -3,7 +3,7 @@ title: "targetedManagedAppConfigurationPolicySetItem resource type"
 description: "A class containing the properties used for Targeted managed app configuration PolicySetItem."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -69,8 +69,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

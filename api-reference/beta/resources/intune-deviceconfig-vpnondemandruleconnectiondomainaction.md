@@ -3,7 +3,7 @@ title: "vpnOnDemandRuleConnectionDomainAction enum type"
 description: "VPN On-Demand Rule Connection Domain Action."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -22,8 +22,6 @@ VPN On-Demand Rule Connection Domain Action.
 |:---|:---|:---|
 |connectIfNeeded|0|Connect if needed.|
 |neverConnect|1|Never connect.|
-
-
 
 
 

@@ -3,7 +3,7 @@ title: "Create macOSWiFiConfiguration"
 description: "Create a new macOSWiFiConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -180,8 +180,6 @@ Content-Length: 1622
   "preSharedKey": "Pre Shared Key value"
 }
 ```
-
-
 
 
 

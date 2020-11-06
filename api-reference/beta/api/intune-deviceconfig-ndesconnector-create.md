@@ -3,7 +3,7 @@ title: "Create ndesConnector"
 description: "Create a new ndesConnector object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -90,8 +90,6 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
-
-
 
 
 

@@ -3,7 +3,7 @@ title: "Create androidWorkProfileEnterpriseWiFiConfiguration"
 description: "Create a new androidWorkProfileEnterpriseWiFiConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -186,8 +186,6 @@ Content-Length: 1843
   "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/"
 }
 ```
-
-
 
 
 

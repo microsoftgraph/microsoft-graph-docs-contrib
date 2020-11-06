@@ -3,7 +3,7 @@ title: "Update groupPolicyPresentationComboBox"
 description: "Update the properties of a groupPolicyPresentationComboBox object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -103,8 +103,6 @@ Content-Length: 346
   "maxLength": 9
 }
 ```
-
-
 
 
 

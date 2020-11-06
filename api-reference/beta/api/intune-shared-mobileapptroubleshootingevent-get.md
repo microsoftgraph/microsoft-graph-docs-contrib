@@ -3,7 +3,7 @@ title: "Get mobileAppTroubleshootingEvent"
 description: "Describes the Get mobileAppTroubleshootingEvent method of the Microsoft Graph API for Intune, which supports multiple workflows."
 localization_priority: Normal
 author: "dougeby"
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -77,8 +77,6 @@ Content-Length: 143
   }
 }
 ```
-
-
 
 
 

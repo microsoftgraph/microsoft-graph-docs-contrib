@@ -3,7 +3,7 @@ title: "Get androidWiFiConfiguration"
 description: "Read properties and relationships of the androidWiFiConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -109,8 +109,6 @@ Content-Length: 1473
   }
 }
 ```
-
-
 
 
 

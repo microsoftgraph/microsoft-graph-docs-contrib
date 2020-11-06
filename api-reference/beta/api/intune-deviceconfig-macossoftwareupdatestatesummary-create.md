@@ -3,7 +3,7 @@ title: "Create macOSSoftwareUpdateStateSummary"
 description: "Create a new macOSSoftwareUpdateStateSummary object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -99,8 +99,6 @@ Content-Length: 380
   "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
 }
 ```
-
-
 
 
 

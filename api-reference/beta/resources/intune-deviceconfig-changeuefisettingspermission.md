@@ -3,7 +3,7 @@ title: "changeUefiSettingsPermission enum type"
 description: "Defines the permission level granted to users to enable them change Uefi settings"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -22,8 +22,6 @@ Defines the permission level granted to users to enable them change Uefi setting
 |:---|:---|:---|
 |notConfiguredOnly|0|Device default value, no intent.|
 |none|1|Prevent change of UEFI setting permission|
-
-
 
 
 

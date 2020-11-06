@@ -3,7 +3,7 @@ title: "List groupPolicyPresentationTexts"
 description: "List properties and relationships of the groupPolicyPresentationText objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -73,8 +73,6 @@ Content-Length: 258
   ]
 }
 ```
-
-
 
 
 

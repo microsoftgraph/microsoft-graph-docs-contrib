@@ -3,7 +3,7 @@ title: "Create groupPolicyPresentationValueLongDecimal"
 description: "Create a new groupPolicyPresentationValueLongDecimal object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -88,8 +88,6 @@ Content-Length: 268
   "value": 5
 }
 ```
-
-
 
 
 

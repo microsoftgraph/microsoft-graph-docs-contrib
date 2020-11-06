@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsAppHealthAppPerformanceByAppVersion resource type
 description: "The user experience analytics applicaiton performance entity contains app performance details by app version."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -62,8 +62,6 @@ Here is a JSON representation of the resource.
   "meanTimeToFailureInMinutes": 1024
 }
 ```
-
-
 
 
 

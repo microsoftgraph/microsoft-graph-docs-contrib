@@ -3,7 +3,7 @@ title: "Get iosVpnConfiguration"
 description: "Read properties and relationships of the iosVpnConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -182,8 +182,6 @@ Content-Length: 3645
   }
 }
 ```
-
-
 
 
 

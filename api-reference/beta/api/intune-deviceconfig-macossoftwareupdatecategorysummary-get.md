@@ -3,7 +3,7 @@ title: "Get macOSSoftwareUpdateCategorySummary"
 description: "Read properties and relationships of the macOSSoftwareUpdateCategorySummary object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -80,8 +80,6 @@ Content-Length: 461
   }
 }
 ```
-
-
 
 
 

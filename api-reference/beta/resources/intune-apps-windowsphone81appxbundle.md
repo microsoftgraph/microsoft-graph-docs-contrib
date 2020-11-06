@@ -3,7 +3,7 @@ title: "windowsPhone81AppXBundle resource type"
 description: "Contains properties and inherited properties for Windows Phone 8.1 AppX Bundle Line Of Business apps."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -160,8 +160,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

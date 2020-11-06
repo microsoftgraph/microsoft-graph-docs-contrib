@@ -3,7 +3,7 @@ title: "Update windowsStoreApp"
 description: "Update the properties of a windowsStoreApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -153,8 +153,6 @@ Content-Length: 997
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
-
-
 
 
 

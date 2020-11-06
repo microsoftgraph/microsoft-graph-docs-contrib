@@ -3,7 +3,7 @@ title: "Create deviceCompliancePolicySettingStateSummary"
 description: "Create a new deviceCompliancePolicySettingStateSummary object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -111,8 +111,6 @@ Content-Length: 451
   "conflictDeviceCount": 3
 }
 ```
-
-
 
 
 

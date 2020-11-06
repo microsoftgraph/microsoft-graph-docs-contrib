@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsBaseline resource type"
 description: "The user experience analytics baseline entity contains baseline values against which to compare the user experience analytics scores."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -60,8 +60,6 @@ Here is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

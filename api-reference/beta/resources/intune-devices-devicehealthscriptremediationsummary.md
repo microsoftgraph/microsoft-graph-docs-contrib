@@ -3,7 +3,7 @@ title: "deviceHealthScriptRemediationSummary resource type"
 description: "The number of device health scripts deployed and the number of devices the scripts remediated."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -40,8 +40,6 @@ Here is a JSON representation of the resource.
   "remediatedDeviceCount": 1024
 }
 ```
-
-
 
 
 

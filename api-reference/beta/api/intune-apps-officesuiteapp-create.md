@@ -3,7 +3,7 @@ title: "Create officeSuiteApp"
 description: "Create a new officeSuiteApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -226,8 +226,6 @@ Content-Length: 1847
   "officeConfigurationXml": "b2ZmaWNlQ29uZmlndXJhdGlvblhtbA=="
 }
 ```
-
-
 
 
 

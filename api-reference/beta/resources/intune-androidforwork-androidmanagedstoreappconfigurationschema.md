@@ -3,7 +3,7 @@ title: "androidManagedStoreAppConfigurationSchema resource type"
 description: "Schema describing an Android application's custom configurations."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -100,8 +100,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

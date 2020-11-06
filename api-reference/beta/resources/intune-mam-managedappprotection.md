@@ -3,7 +3,7 @@ title: "managedAppProtection resource type"
 description: "Policy used to configure detailed management settings for a specified set of apps"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -149,8 +149,6 @@ Here is a JSON representation of the resource.
   "dialerRestrictionLevel": "String"
 }
 ```
-
-
 
 
 

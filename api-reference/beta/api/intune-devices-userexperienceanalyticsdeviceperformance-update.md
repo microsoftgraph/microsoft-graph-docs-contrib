@@ -3,7 +3,7 @@ title: "Update userExperienceAnalyticsDevicePerformance"
 description: "Update the properties of a userExperienceAnalyticsDevicePerformance object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -135,8 +135,6 @@ Content-Length: 684
   "averageRestarts": 5.0
 }
 ```
-
-
 
 
 

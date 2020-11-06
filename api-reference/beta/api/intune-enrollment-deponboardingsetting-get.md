@@ -3,7 +3,7 @@ title: "Get depOnboardingSetting"
 description: "Read properties and relationships of the depOnboardingSetting object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -86,8 +86,6 @@ Content-Length: 740
   }
 }
 ```
-
-
 
 
 

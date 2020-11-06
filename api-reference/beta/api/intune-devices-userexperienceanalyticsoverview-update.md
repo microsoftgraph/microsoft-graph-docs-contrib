@@ -3,7 +3,7 @@ title: "Update userExperienceAnalyticsOverview"
 description: "Update the properties of a userExperienceAnalyticsOverview object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -128,8 +128,6 @@ Content-Length: 790
   "bestPracticesHealthState": "insufficientData"
 }
 ```
-
-
 
 
 

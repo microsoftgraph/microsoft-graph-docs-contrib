@@ -3,7 +3,7 @@ title: "Update groupPolicyPresentationValueLongDecimal"
 description: "Update the properties of a groupPolicyPresentationValueLongDecimal object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -88,8 +88,6 @@ Content-Length: 268
   "value": 5
 }
 ```
-
-
 
 
 

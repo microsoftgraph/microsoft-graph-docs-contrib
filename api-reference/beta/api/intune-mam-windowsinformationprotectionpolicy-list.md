@@ -3,7 +3,7 @@ title: "List windowsInformationProtectionPolicies"
 description: "List properties and relationships of the windowsInformationProtectionPolicy objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -207,8 +207,6 @@ Content-Length: 5122
   ]
 }
 ```
-
-
 
 
 

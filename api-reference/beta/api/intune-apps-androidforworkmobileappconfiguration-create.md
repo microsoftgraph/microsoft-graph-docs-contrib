@@ -3,7 +3,7 @@ title: "Create androidForWorkMobileAppConfiguration"
 description: "Create a new androidForWorkMobileAppConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -132,8 +132,6 @@ Content-Length: 781
   "profileApplicability": "androidWorkProfile"
 }
 ```
-
-
 
 
 

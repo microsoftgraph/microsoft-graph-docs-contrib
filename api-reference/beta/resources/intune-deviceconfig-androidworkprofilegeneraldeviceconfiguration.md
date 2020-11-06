@@ -3,7 +3,7 @@ title: "androidWorkProfileGeneralDeviceConfiguration resource type"
 description: "Android Work Profile general device configuration."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -183,8 +183,6 @@ Here is a JSON representation of the resource.
   "workProfileBlockPersonalAppInstallsFromUnknownSources": true
 }
 ```
-
-
 
 
 

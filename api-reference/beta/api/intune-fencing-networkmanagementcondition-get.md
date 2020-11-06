@@ -3,7 +3,7 @@ title: "Get networkManagementCondition"
 description: "Read properties and relationships of the networkManagementCondition object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -82,8 +82,6 @@ Content-Length: 475
   }
 }
 ```
-
-
 
 
 

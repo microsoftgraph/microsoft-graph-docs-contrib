@@ -3,7 +3,7 @@ title: "Get deviceConfigurationPolicySetItem"
 description: "Read properties and relationships of the deviceConfigurationPolicySetItem object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -82,8 +82,6 @@ Content-Length: 529
   }
 }
 ```
-
-
 
 
 

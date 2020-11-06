@@ -3,7 +3,7 @@ title: "updateGlobalScript action"
 description: "Update the Proprietary Device Health Script"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -81,8 +81,6 @@ Content-Length: 45
   "value": "Update Global Script value"
 }
 ```
-
-
 
 
 

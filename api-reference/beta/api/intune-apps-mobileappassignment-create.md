@@ -3,7 +3,7 @@ title: "Create mobileAppAssignment"
 description: "Create a new mobileAppAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -112,8 +112,6 @@ Content-Length: 640
   "sourceId": "Source Id value"
 }
 ```
-
-
 
 
 

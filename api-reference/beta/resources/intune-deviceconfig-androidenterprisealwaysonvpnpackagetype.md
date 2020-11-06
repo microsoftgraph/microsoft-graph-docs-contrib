@@ -3,7 +3,7 @@ title: "androidEnterpriseAlwaysOnVpnPackageType enum type"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -26,8 +26,6 @@ Not yet documented
 |f5Access|3|F5 Access.|
 |paloAltoNetworksGlobalProtect|4|Palo Alto Networks GlobalProtect.|
 |pulseSecure|5|Pulse Secure.|
-
-
 
 
 

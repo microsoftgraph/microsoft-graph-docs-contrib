@@ -3,7 +3,7 @@ title: "Update windowsHealthMonitoringConfiguration"
 description: "Update the properties of a windowsHealthMonitoringConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -160,8 +160,6 @@ Content-Length: 1416
   "configDeviceHealthMonitoringCustomScope": "Config Device Health Monitoring Custom Scope value"
 }
 ```
-
-
 
 
 

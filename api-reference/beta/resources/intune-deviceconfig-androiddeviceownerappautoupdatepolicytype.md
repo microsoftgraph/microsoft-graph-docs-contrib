@@ -3,7 +3,7 @@ title: "androidDeviceOwnerAppAutoUpdatePolicyType enum type"
 description: "Android Device Owner possible values for states of the device's app auto update policy."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -25,8 +25,6 @@ Android Device Owner possible values for states of the device's app auto update 
 |never|2|Apps are never auto-updated.|
 |wiFiOnly|3|Apps are auto-updated over Wi-Fi only.|
 |always|4|Apps are auto-updated at any time. Data charges may apply.|
-
-
 
 
 

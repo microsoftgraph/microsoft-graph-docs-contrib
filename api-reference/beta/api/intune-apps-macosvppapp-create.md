@@ -3,7 +3,7 @@ title: "Create macOsVppApp"
 description: "Create a new macOsVppApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -219,8 +219,6 @@ Content-Length: 2098
   ]
 }
 ```
-
-
 
 
 

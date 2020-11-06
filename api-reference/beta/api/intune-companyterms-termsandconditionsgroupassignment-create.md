@@ -3,7 +3,7 @@ title: "Create termsAndConditionsGroupAssignment"
 description: "Create a new termsAndConditionsGroupAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -84,8 +84,6 @@ Content-Length: 169
   "targetGroupId": "Target Group Id value"
 }
 ```
-
-
 
 
 

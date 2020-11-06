@@ -3,7 +3,7 @@ title: "Get comanagementEligibleDevice"
 description: "Read properties and relationships of the comanagementEligibleDevice object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -91,8 +91,6 @@ Content-Length: 824
   }
 }
 ```
-
-
 
 
 

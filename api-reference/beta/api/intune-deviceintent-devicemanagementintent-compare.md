@@ -3,7 +3,7 @@ title: "compare function"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -83,8 +83,6 @@ Content-Length: 364
   ]
 }
 ```
-
-
 
 
 

@@ -3,7 +3,7 @@ title: "Create windowsDefenderApplicationControlSupplementalPolicyDeploymentStat
 description: "Create a new windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -108,8 +108,6 @@ Content-Length: 535
   "policyVersion": "Policy Version value"
 }
 ```
-
-
 
 
 

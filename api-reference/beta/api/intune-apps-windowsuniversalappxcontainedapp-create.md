@@ -3,7 +3,7 @@ title: "Create windowsUniversalAppXContainedApp"
 description: "Create a new windowsUniversalAppXContainedApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -86,8 +86,6 @@ Content-Length: 171
   "appUserModelId": "App User Model Id value"
 }
 ```
-
-
 
 
 

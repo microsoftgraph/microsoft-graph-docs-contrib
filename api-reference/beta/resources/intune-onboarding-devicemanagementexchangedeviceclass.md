@@ -3,7 +3,7 @@ title: "deviceManagementExchangeDeviceClass resource type"
 description: "Device Class in Exchange."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -40,8 +40,6 @@ Here is a JSON representation of the resource.
   "type": "String"
 }
 ```
-
-
 
 
 

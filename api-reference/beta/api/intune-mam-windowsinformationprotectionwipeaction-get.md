@@ -3,7 +3,7 @@ title: "Get windowsInformationProtectionWipeAction"
 description: "Read properties and relationships of the windowsInformationProtectionWipeAction object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -78,8 +78,6 @@ Content-Length: 496
   }
 }
 ```
-
-
 
 
 

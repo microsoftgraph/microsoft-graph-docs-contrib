@@ -3,7 +3,7 @@ title: "officeClientConfigurationAssignment resource type"
 description: "Office Client Configuration Assignment."
 localization_priority: Normal
 author: "dougeby"
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -51,8 +51,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
 
 
 

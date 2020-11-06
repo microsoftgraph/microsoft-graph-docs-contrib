@@ -3,7 +3,7 @@ title: "groupPolicyPresentationDropdownList resource type"
 description: "Represents an ADMX dropdownList element and an ADMX enum element."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -73,8 +73,6 @@ Here is a JSON representation of the resource.
   "required": true
 }
 ```
-
-
 
 
 

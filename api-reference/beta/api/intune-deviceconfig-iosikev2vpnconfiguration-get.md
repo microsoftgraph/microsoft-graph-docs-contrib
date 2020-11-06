@@ -3,7 +3,7 @@ title: "Get iosikEv2VpnConfiguration"
 description: "Read properties and relationships of the iosikEv2VpnConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -234,8 +234,6 @@ Content-Length: 5943
   }
 }
 ```
-
-
 
 
 

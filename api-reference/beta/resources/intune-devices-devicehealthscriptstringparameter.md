@@ -3,7 +3,7 @@ title: "deviceHealthScriptStringParameter resource type"
 description: "Properties of the  String script parameter."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -49,8 +49,6 @@ Here is a JSON representation of the resource.
   "defaultValue": "String"
 }
 ```
-
-
 
 
 

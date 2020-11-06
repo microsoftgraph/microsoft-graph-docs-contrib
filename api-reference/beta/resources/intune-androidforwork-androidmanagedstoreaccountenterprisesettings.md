@@ -3,7 +3,7 @@ title: "androidManagedStoreAccountEnterpriseSettings resource type"
 description: "Enterprise settings for an Android managed store account."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -87,8 +87,6 @@ Here is a JSON representation of the resource.
   "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
 }
 ```
-
-
 
 
 

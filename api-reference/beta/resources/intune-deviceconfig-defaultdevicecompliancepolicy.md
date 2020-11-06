@@ -3,7 +3,7 @@ title: "defaultDeviceCompliancePolicy resource type"
 description: "Default device compliance policy rules that are enforced account wide."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -73,8 +73,6 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
-
-
 
 
 

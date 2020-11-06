@@ -3,7 +3,7 @@ title: "groupPolicyPresentationListBox resource type"
 description: "Represents an ADMX listBox element and an ADMX list element."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -61,8 +61,6 @@ Here is a JSON representation of the resource.
   "valuePrefix": "String"
 }
 ```
-
-
 
 
 

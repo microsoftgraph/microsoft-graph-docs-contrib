@@ -3,7 +3,7 @@ title: "Create androidWorkProfileTrustedRootCertificate"
 description: "Create a new androidWorkProfileTrustedRootCertificate object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -156,8 +156,6 @@ Content-Length: 1323
   "certFileName": "Cert File Name value"
 }
 ```
-
-
 
 
 

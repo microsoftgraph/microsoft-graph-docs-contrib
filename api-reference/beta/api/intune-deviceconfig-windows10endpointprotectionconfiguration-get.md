@@ -3,7 +3,7 @@ title: "Get windows10EndpointProtectionConfiguration"
 description: "Read properties and relationships of the windows10EndpointProtectionConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -809,8 +809,6 @@ Content-Length: 32710
   }
 }
 ```
-
-
 
 
 

@@ -3,7 +3,7 @@ title: "code enum type"
 description: "Error code for rule validation."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -52,8 +52,6 @@ Error code for rule validation.
 |unrecognizedLocale|29|Unrecognized locale error.|
 |unknown|30|Unknown error.|
 |remediationStringsMissing|31|Remediation strings missing error.|
-
-
 
 
 

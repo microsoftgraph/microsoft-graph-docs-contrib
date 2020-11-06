@@ -3,7 +3,7 @@ title: "List windows81VpnConfigurations"
 description: "List properties and relationships of the windows81VpnConfiguration objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -124,8 +124,6 @@ Content-Length: 2209
   ]
 }
 ```
-
-
 
 
 

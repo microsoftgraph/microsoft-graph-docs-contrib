@@ -3,7 +3,7 @@ title: "Get appleVppTokenTroubleshootingEvent"
 description: "Read properties and relationships of the appleVppTokenTroubleshootingEvent object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -97,8 +97,6 @@ Content-Length: 1003
   }
 }
 ```
-
-
 
 
 

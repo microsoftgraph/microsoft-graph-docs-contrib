@@ -3,7 +3,7 @@ title: "Create deviceManagementAbstractComplexSettingDefinition"
 description: "Create a new deviceManagementAbstractComplexSettingDefinition object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -168,8 +168,6 @@ Content-Length: 1137
   ]
 }
 ```
-
-
 
 
 

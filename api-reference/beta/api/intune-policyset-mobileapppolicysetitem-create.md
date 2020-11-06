@@ -3,7 +3,7 @@ title: "Create mobileAppPolicySetItem"
 description: "Create a new mobileAppPolicySetItem object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -121,8 +121,6 @@ Content-Length: 686
   }
 }
 ```
-
-
 
 
 

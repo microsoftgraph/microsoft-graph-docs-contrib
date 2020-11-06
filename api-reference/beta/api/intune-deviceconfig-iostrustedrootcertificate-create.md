@@ -3,7 +3,7 @@ title: "Create iosTrustedRootCertificate"
 description: "Create a new iosTrustedRootCertificate object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -155,8 +155,6 @@ Content-Length: 1308
   "certFileName": "Cert File Name value"
 }
 ```
-
-
 
 
 

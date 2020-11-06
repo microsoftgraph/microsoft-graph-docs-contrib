@@ -3,7 +3,7 @@ title: "Create windowsPrivacyDataAccessControlItem"
 description: "Create a new windowsPrivacyDataAccessControlItem object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -93,8 +93,6 @@ Content-Length: 299
   "appDisplayName": "App Display Name value"
 }
 ```
-
-
 
 
 

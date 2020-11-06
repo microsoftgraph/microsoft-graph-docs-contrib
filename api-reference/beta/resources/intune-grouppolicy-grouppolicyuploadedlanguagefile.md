@@ -3,7 +3,7 @@ title: "groupPolicyUploadedLanguageFile resource type"
 description: "The entity represents an ADML (Administrative Template language) XML file uploaded by Administrator."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -46,8 +46,6 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

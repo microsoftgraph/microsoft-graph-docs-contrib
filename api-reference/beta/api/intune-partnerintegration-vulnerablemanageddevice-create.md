@@ -3,7 +3,7 @@ title: "Create vulnerableManagedDevice"
 description: "Create a new vulnerableManagedDevice object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -90,8 +90,6 @@ Content-Length: 263
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
-
-
 
 
 

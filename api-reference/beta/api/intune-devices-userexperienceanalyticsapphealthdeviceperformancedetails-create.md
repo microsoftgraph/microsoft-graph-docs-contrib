@@ -3,7 +3,7 @@ title: "Create userExperienceAnalyticsAppHealthDevicePerformanceDetails"
 description: "Create a new userExperienceAnalyticsAppHealthDevicePerformanceDetails object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -96,8 +96,6 @@ Content-Length: 374
   "deviceDisplayName": "Device Display Name value"
 }
 ```
-
-
 
 
 

@@ -3,7 +3,7 @@ title: "Create iosLobApp"
 description: "Create a new iosLobApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -202,8 +202,6 @@ Content-Length: 1640
   "identityVersion": "Identity Version value"
 }
 ```
-
-
 
 
 

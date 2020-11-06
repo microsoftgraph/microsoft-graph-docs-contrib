@@ -3,7 +3,7 @@ title: "Create userExperienceAnalyticsAppHealthOSVersionPerformance"
 description: "Create a new userExperienceAnalyticsAppHealthOSVersionPerformance object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -99,8 +99,6 @@ Content-Length: 406
   "osVersionAppHealthStatus": "Os Version App Health Status value"
 }
 ```
-
-
 
 
 

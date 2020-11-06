@@ -3,7 +3,7 @@ title: "lanManagerAuthenticationLevel enum type"
 description: "Possible values for LanManagerAuthenticationLevel"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -26,8 +26,6 @@ Possible values for LanManagerAuthenticationLevel
 |lmAndNtlmV2|3|Send LM & NTLMv2 responses only|
 |lmNtlmV2AndNotLm|4|Send LM & NTLMv2 responses only. Refuse LM|
 |lmNtlmV2AndNotLmOrNtm|5|Send LM & NTLMv2 responses only. Refuse LM & NTLM|
-
-
 
 
 

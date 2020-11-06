@@ -3,7 +3,7 @@ title: "Create windowsMicrosoftEdgeApp"
 description: "Create a new windowsMicrosoftEdgeApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -154,8 +154,6 @@ Content-Length: 1034
   "displayLanguageLocale": "Display Language Locale value"
 }
 ```
-
-
 
 
 

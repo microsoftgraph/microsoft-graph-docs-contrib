@@ -3,7 +3,7 @@ title: "List androidOmaCpConfigurations"
 description: "List properties and relationships of the androidOmaCpConfiguration objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -103,8 +103,6 @@ Content-Length: 1416
   ]
 }
 ```
-
-
 
 
 

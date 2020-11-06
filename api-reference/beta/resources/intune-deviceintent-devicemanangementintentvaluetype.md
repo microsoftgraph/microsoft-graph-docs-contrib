@@ -3,7 +3,7 @@ title: "deviceManangementIntentValueType enum type"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -26,8 +26,6 @@ Not yet documented
 |complex|3|The setting value is a complex object|
 |collection|4|The setting value is a collection|
 |abstractComplex|5|The setting value is an abstract complex object|
-
-
 
 
 

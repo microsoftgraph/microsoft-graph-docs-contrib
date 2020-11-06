@@ -3,7 +3,7 @@ title: "windows10AssociatedApps resource type"
 description: "Windows 10 Associated Application definition."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -40,8 +40,6 @@ Here is a JSON representation of the resource.
   "identifier": "String"
 }
 ```
-
-
 
 
 

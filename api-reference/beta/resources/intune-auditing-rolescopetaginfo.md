@@ -3,7 +3,7 @@ title: "roleScopeTagInfo resource type"
 description: "A class containing the properties of Role Scope Tag Object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -40,8 +40,6 @@ Here is a JSON representation of the resource.
   "roleScopeTagId": "String"
 }
 ```
-
-
 
 
 

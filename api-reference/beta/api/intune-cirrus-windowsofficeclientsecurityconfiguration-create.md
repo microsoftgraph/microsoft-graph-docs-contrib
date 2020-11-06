@@ -3,7 +3,7 @@ title: "Create windowsOfficeClientSecurityConfiguration"
 description: "Create a new windowsOfficeClientSecurityConfiguration object."
 localization_priority: Normal
 author: "dougeby"
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -143,8 +143,6 @@ Content-Length: 1077
   ]
 }
 ```
-
-
 
 
 

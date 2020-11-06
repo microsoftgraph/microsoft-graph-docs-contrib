@@ -3,7 +3,7 @@ title: "applicationGuardBlockFileTransferType enum type"
 description: "Possible values for applicationGuardBlockFileTransfer"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -25,8 +25,6 @@ Possible values for applicationGuardBlockFileTransfer
 |blockImageFile|2|Block clipboard to transfer Image file|
 |blockNone|3|Neither of text file or image file is blocked from transferring|
 |blockTextFile|4|Block clipboard to transfer Text file|
-
-
 
 
 

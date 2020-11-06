@@ -3,7 +3,7 @@ title: "Update deviceConfigurationUserOverview"
 description: "Update the properties of a deviceConfigurationUserOverview object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -114,8 +114,6 @@ Content-Length: 355
   "configurationVersion": 4
 }
 ```
-
-
 
 
 

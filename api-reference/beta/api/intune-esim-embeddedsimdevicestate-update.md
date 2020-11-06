@@ -3,7 +3,7 @@ title: "Update embeddedSIMDeviceState"
 description: "Update the properties of a embeddedSIMDeviceState object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -103,8 +103,6 @@ Content-Length: 529
   "stateDetails": "State Details value"
 }
 ```
-
-
 
 
 

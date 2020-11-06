@@ -3,7 +3,7 @@ title: "List unsupportedDeviceConfigurations"
 description: "List properties and relationships of the unsupportedDeviceConfiguration objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -110,8 +110,6 @@ Content-Length: 1656
   ]
 }
 ```
-
-
 
 
 

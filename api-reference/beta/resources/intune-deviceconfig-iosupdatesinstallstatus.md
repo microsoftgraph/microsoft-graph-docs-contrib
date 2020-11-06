@@ -3,7 +3,7 @@ title: "iosUpdatesInstallStatus enum type"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -42,8 +42,6 @@ Not yet documented
 |updateError|-2016330697|Not yet documented|
 |deviceOsHigherThanDesiredOsVersion|-2016330696|Not yet documented|
 |updateScanFailed|-2016324062|Not yet documented|
-
-
 
 
 

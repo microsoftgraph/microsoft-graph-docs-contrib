@@ -3,7 +3,7 @@ title: "androidManagedStoreAccountBindStatus enum type"
 description: "Bind status of the tenant with the Google EMM API"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -24,8 +24,6 @@ Bind status of the tenant with the Google EMM API
 |bound|1|Not yet documented|
 |boundAndValidated|2|Not yet documented|
 |unbinding|3|Not yet documented|
-
-
 
 
 

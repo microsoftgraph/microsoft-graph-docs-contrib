@@ -3,7 +3,7 @@ title: "Get macOSGeneralDeviceConfiguration"
 description: "Read properties and relationships of the macOSGeneralDeviceConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5135
+Content-Length: 5093
 
 {
   "value": {
@@ -151,7 +151,6 @@ Content-Length: 5135
     "passwordBlockProximityRequests": true,
     "passwordBlockAirDropSharing": true,
     "softwareUpdatesEnforcedDelayInDays": 2,
-    "softwareUpdatesForceDelayed": true,
     "updateDelayPolicy": "delayOSUpdateVisibility",
     "contentCachingBlocked": true,
     "iCloudBlockPhotoLibrary": true,
@@ -204,8 +203,6 @@ Content-Length: 5135
   }
 }
 ```
-
-
 
 
 

@@ -3,7 +3,7 @@ title: "iosStoreApp resource type"
 description: "Contains properties and inherited properties for iOS store apps."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -122,8 +122,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
 
 
 

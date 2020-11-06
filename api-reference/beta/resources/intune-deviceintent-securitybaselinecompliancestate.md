@@ -3,7 +3,7 @@ title: "securityBaselineComplianceState enum type"
 description: "Security Baseline Compliance State"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -26,8 +26,6 @@ Security Baseline Compliance State
 |notSecure|3|Not secure state|
 |error|4|Error state|
 |conflict|5|Conflict state|
-
-
 
 
 

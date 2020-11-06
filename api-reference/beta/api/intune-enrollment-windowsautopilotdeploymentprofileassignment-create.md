@@ -3,7 +3,7 @@ title: "Create windowsAutopilotDeploymentProfileAssignment"
 description: "Create a new windowsAutopilotDeploymentProfileAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -98,8 +98,6 @@ Content-Length: 460
   "sourceId": "Source Id value"
 }
 ```
-
-
 
 
 

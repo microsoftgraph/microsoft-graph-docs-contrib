@@ -3,7 +3,7 @@ title: "Update deviceManagementCachedReportConfiguration"
 description: "Update the properties of a deviceManagementCachedReportConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create the [
 |select|String collection|Columns selected from the report|
 |orderBy|String collection|Ordering of columns in the report|
 |metadata|String|Caller-managed metadata associated with the report|
-|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the cached report. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
+|status|[deviceManagementReportStatus](../resources/intune-shared-devicemanagementreportstatus.md)|Status of the cached report. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |lastRefreshDateTime|DateTimeOffset|Time that the cached report was last refreshed|
 |expirationDateTime|DateTimeOffset|Time that the cached report expires|
 
@@ -113,8 +113,6 @@ Content-Length: 467
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
-
-
 
 
 

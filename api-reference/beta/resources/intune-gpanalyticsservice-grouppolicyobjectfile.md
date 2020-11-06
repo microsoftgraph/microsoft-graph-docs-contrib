@@ -3,7 +3,7 @@ title: "groupPolicyObjectFile resource type"
 description: "The Group Policy Object file uploaded by admin."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -58,8 +58,6 @@ Here is a JSON representation of the resource.
   "content": "String"
 }
 ```
-
-
 
 
 

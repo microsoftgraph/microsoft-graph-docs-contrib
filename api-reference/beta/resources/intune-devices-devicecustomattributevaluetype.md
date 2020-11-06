@@ -3,7 +3,7 @@ title: "deviceCustomAttributeValueType enum type"
 description: "Represents the expected type for a macOS custom attribute script value."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -23,8 +23,6 @@ Represents the expected type for a macOS custom attribute script value.
 |integer|0|Indicates the value for a custom attribute script is an integer.|
 |string|1|Indicates the value for a custom attribute script is a string.|
 |dateTime|2|Indicates the value for a custom attribute script is a date conforming to ISO 8601.|
-
-
 
 
 

@@ -3,7 +3,7 @@ title: "List androidDeviceOwnerTrustedRootCertificates"
 description: "List properties and relationships of the androidDeviceOwnerTrustedRootCertificate objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -104,8 +104,6 @@ Content-Length: 1492
   ]
 }
 ```
-
-
 
 
 

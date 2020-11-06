@@ -3,7 +3,7 @@ title: "Get macOSMdatpApp"
 description: "Read properties and relationships of the macOSMdatpApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -99,8 +99,6 @@ Content-Length: 1014
   }
 }
 ```
-
-
 
 
 

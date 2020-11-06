@@ -3,7 +3,7 @@ title: "Update windowsManagementApp"
 description: "Update the properties of a windowsManagementApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -84,8 +84,6 @@ Content-Length: 161
   "availableVersion": "Available Version value"
 }
 ```
-
-
 
 
 

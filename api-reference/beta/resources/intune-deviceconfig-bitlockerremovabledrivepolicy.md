@@ -3,7 +3,7 @@ title: "bitLockerRemovableDrivePolicy resource type"
 description: "BitLocker Removable Drive Policies."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -42,8 +42,6 @@ Here is a JSON representation of the resource.
   "blockCrossOrganizationWriteAccess": true
 }
 ```
-
-
 
 
 

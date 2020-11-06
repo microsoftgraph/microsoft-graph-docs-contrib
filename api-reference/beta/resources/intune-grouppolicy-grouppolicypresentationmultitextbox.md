@@ -3,7 +3,7 @@ title: "groupPolicyPresentationMultiTextBox resource type"
 description: "Represents an ADMX multiTextBox element and an ADMX multiText element."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -63,8 +63,6 @@ Here is a JSON representation of the resource.
   "maxStrings": 1024
 }
 ```
-
-
 
 
 

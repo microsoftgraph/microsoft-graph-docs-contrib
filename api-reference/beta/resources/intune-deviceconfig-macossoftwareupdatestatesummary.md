@@ -3,7 +3,7 @@ title: "macOSSoftwareUpdateStateSummary resource type"
 description: "MacOS software update state summary for a device and user"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -60,8 +60,6 @@ Here is a JSON representation of the resource.
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

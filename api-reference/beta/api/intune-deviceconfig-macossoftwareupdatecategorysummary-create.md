@@ -3,7 +3,7 @@ title: "Create macOSSoftwareUpdateCategorySummary"
 description: "Create a new macOSSoftwareUpdateCategorySummary object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -105,8 +105,6 @@ Content-Length: 422
   "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
 }
 ```
-
-
 
 
 

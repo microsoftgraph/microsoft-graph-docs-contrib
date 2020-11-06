@@ -3,7 +3,7 @@ title: "Create userExperienceAnalyticsMetricHistory"
 description: "Create a new userExperienceAnalyticsMetricHistory object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -84,8 +84,6 @@ Content-Length: 185
   "metricDateTime": "2017-01-01T00:00:28.4495993-08:00"
 }
 ```
-
-
 
 
 

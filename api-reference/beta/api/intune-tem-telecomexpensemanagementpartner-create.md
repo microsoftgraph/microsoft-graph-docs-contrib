@@ -3,7 +3,7 @@ title: "Create telecomExpenseManagementPartner"
 description: "Create a new telecomExpenseManagementPartner object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -96,8 +96,6 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
-
-
 
 
 

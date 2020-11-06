@@ -3,7 +3,7 @@ title: "Create iosVppEBookAssignment"
 description: "Create a new iosVppEBookAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -95,8 +95,6 @@ Content-Length: 409
   "installIntent": "required"
 }
 ```
-
-
 
 
 

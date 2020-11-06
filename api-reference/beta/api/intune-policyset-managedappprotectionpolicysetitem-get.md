@@ -3,7 +3,7 @@ title: "Get managedAppProtectionPolicySetItem"
 description: "Read properties and relationships of the managedAppProtectionPolicySetItem object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -83,8 +83,6 @@ Content-Length: 606
   }
 }
 ```
-
-
 
 
 

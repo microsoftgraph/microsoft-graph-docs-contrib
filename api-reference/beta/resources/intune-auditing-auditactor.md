@@ -3,7 +3,7 @@ title: "auditActor resource type"
 description: "A class containing the properties for Audit Actor."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -66,8 +66,6 @@ Here is a JSON representation of the resource.
   "remoteUserId": "String"
 }
 ```
-
-
 
 
 

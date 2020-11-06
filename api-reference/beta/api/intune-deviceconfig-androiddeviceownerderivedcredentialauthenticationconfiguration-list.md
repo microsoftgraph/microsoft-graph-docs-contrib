@@ -3,7 +3,7 @@ title: "List androidDeviceOwnerDerivedCredentialAuthenticationConfigurations"
 description: "List properties and relationships of the androidDeviceOwnerDerivedCredentialAuthenticationConfiguration objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -102,8 +102,6 @@ Content-Length: 1398
   ]
 }
 ```
-
-
 
 
 

@@ -3,7 +3,7 @@ title: "mobileAppTroubleshootingDeviceCheckinHistory resource type"
 description: "History Item contained in the Mobile App Troubleshooting Event."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -56,8 +56,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
 
 
 

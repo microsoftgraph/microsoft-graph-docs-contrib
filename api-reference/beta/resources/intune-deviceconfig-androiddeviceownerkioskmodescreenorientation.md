@@ -3,7 +3,7 @@ title: "androidDeviceOwnerKioskModeScreenOrientation enum type"
 description: "Android Device Owner Kiosk Mode managed home screen orientation."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -24,8 +24,6 @@ Android Device Owner Kiosk Mode managed home screen orientation.
 |portrait|1|Portrait orientation.|
 |landscape|2|Landscape orientation.|
 |autoRotate|3|Auto rotate between portrait and landscape orientations.|
-
-
 
 
 

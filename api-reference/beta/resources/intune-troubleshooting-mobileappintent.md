@@ -3,7 +3,7 @@ title: "mobileAppIntent enum type"
 description: "Indicates the status of the mobile app on the device."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -27,8 +27,6 @@ Indicates the status of the mobile app on the device.
 |requiredAndAvailableInstall|4|RequiredAndAvailableInstall|
 |availableInstallWithoutEnrollment|5|AvailableInstallWithoutEnrollment|
 |exclude|6|Exclude|
-
-
 
 
 

@@ -3,7 +3,7 @@ title: "mobileAppIntentAndStateDetail resource type"
 description: "Mobile App Intent and Install State for a given device."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -55,8 +55,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

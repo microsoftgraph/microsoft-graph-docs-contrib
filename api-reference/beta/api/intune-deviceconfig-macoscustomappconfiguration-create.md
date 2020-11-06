@@ -3,7 +3,7 @@ title: "Create macOSCustomAppConfiguration"
 description: "Create a new macOSCustomAppConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -159,8 +159,6 @@ Content-Length: 1321
   "configurationXml": "Y29uZmlndXJhdGlvblhtbA=="
 }
 ```
-
-
 
 
 

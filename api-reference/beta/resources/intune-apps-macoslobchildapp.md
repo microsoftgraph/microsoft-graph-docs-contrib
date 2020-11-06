@@ -3,7 +3,7 @@ title: "macOSLobChildApp resource type"
 description: "Contains properties the MacOS LOB App in a bundle package"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -42,8 +42,6 @@ Here is a JSON representation of the resource.
   "versionNumber": "String"
 }
 ```
-
-
 
 
 

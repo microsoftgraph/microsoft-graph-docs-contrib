@@ -3,7 +3,7 @@ title: "Get macOSScepCertificateProfile"
 description: "Read properties and relationships of the macOSScepCertificateProfile object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -132,8 +132,6 @@ Content-Length: 2273
   }
 }
 ```
-
-
 
 
 

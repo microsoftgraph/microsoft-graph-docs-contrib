@@ -3,7 +3,7 @@ title: "assign action"
 description: "Replace all targeted groups for a policy."
 localization_priority: Normal
 author: "dougeby"
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -97,8 +97,6 @@ Content-Length: 274
   ]
 }
 ```
-
-
 
 
 

@@ -3,7 +3,7 @@ title: "edgeHomeButtonHidden resource type"
 description: "Hide the home button."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -39,8 +39,6 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.edgeHomeButtonHidden"
 }
 ```
-
-
 
 
 

@@ -3,7 +3,7 @@ title: "deviceManagementSettingRegexConstraint resource type"
 description: "Constraint enforcing the setting matches against a given RegEx pattern"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -41,8 +41,6 @@ Here is a JSON representation of the resource.
   "regex": "String"
 }
 ```
-
-
 
 
 

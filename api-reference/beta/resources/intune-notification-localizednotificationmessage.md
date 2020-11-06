@@ -3,7 +3,7 @@ title: "localizedNotificationMessage resource type"
 description: "The text content of a Notification Message Template for the specified locale."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -58,8 +58,6 @@ Here is a JSON representation of the resource.
   "isDefault": true
 }
 ```
-
-
 
 
 

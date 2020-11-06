@@ -3,7 +3,7 @@ title: "Update deviceConfigurationAssignment"
 description: "Update the properties of a deviceConfigurationAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -107,8 +107,6 @@ Content-Length: 434
   "sourceId": "Source Id value"
 }
 ```
-
-
 
 
 

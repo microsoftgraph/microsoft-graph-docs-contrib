@@ -3,7 +3,7 @@ title: "Get deviceManagementAutopilotPolicyStatusDetail"
 description: "Read properties and relationships of the deviceManagementAutopilotPolicyStatusDetail object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -77,8 +77,6 @@ Content-Length: 377
   }
 }
 ```
-
-
 
 
 

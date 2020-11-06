@@ -3,7 +3,7 @@ title: "deviceOperatingSystemSummary resource type"
 description: "Device operating system summary."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -62,8 +62,6 @@ Here is a JSON representation of the resource.
   "aospUserlessCount": 1024
 }
 ```
-
-
 
 
 

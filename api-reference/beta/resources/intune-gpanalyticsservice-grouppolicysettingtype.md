@@ -3,7 +3,7 @@ title: "groupPolicySettingType enum type"
 description: "Setting type of the group policy."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -27,8 +27,6 @@ Setting type of the group policy.
 |userRightsAssignment|4|UserRightsAssignment setting type|
 |auditSetting|5|AuditSetting setting type|
 |windowsFirewallSettings|6|WindowsFirewallSettings setting type|
-
-
 
 
 
