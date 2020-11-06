@@ -43,17 +43,6 @@ GET /chats/{id}/messages
 
 This operation does not currently support [OData query parameters](/graph/query-parameters) to customize the response.
 
-## Subscribe for changes
-
-`chatMessage` supports subcribing to changes (creation, updation and deletion) using [Graph change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in realtime.
-
-Please refer to [subscription documentation](../resources/subscription.md) on how to create subscription.
-
-| Subscription resource | Description  | Allows [include resource data](/graph/webhooks-with-resource-data) | Permission types supported |
-|:----------------------|:-------------|:-------------------------------------------------------------------|:---------------------------|
-| /chats/getAllMessages | Allows subscribing to messages for all [chats](../resources/chat.md) across the tenant. | Yes | Application |
-| /chats/{chatId}/messages | Allows subscribing to messages in a specific [chat](../resources/chat.md) | Yes (only in Application) | Application, Delegated |
-
 ## Request headers
 
 | Header       | Value |
