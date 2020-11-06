@@ -30,4 +30,3 @@ Defines the Action Types for an Intune Application.
 
 
 
-

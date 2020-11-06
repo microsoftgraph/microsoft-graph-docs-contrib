@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/deviceShellScripts/{deviceShellScriptId}/assignments
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments
+GET /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeShellScriptId}/assignments
 ```
 
 ## Request headers
@@ -77,7 +78,6 @@ Content-Length: 437
   ]
 }
 ```
-
 
 
 

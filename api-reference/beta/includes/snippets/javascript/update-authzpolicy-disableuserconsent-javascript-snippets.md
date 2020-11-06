@@ -11,7 +11,9 @@ const options = {
 const client = Client.init(options);
 
 const authorizationPolicy = {
-    permissionGrantPolicyIdsAssignedToDefaultUserRole: [ ]
+   permissionGrantPolicyIdsAssignedToDefaultUserRole:[
+   
+   ]
 };
 
 let res = await client.api('/policies/authorizationPolicy/authorizationPolicy')
