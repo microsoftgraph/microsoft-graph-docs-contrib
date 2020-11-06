@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# GetAllChannelMessages
+# channel: getAllMessages
 
 Namespace: microsoft.graph
 
