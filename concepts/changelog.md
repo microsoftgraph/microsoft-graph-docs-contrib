@@ -11,6 +11,20 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## November 2020
+
+### Cloud communications
+| **Change type** | **Version**   | **Description**                                                                                              |
+| :-------------- | :------------ | :---------------------------------------                                                                     |
+| Addition        | beta          | Added the **participantCapacity** option to [answer](/graph/api-reference/beta/api/call-answer) method.      |
+| Addition        | beta          | Added new resource type [participantJoiningNotification](/graph/api/resource/participantjoiningnotification) |
+| Addition        | beta          | Added new resource type [participantLeftNotification](/graph/api/resource/participantleftnotification)       |
+| Addition        | beta          | Added new resource type [participantJoiningResponse](/graph/api/resource/participantjoiningresponse)         |
+| Addition        | beta          | Added new resource type [acceptJoinResponse](/graph/api/resource/acceptjoinresponse)                         |
+| Addition        | beta          | Added new resource type [rejectJoinResponse](/graph/api/resource/rejectjoinresponse)                         |
+| Addition        | beta          | Added new resource type [inviteNewBotResponse](/graph/api/resource/invitenewbotresponse)                     |
+
+
 ## October 2020
 
 ### Applications
