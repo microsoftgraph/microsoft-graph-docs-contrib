@@ -38,7 +38,7 @@ GET /users/{id}/team/getAllMessages
 This operation supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
 
 ```http
-GET /users/{id}/team/getAllMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
+GET /users/{id}/teams/getAllMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
 ```
 
 ## Request headers
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [team](../reso
 ### Request
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}/team/getAllMessages
+GET https://graph.microsoft.com/beta/users/{id}/teams/getAllMessages
 ```
 
 ### Response
