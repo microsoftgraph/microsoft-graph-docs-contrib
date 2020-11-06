@@ -32,7 +32,7 @@ The following permissions are required to call this API. To learn more, includin
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/getAllMessages?$filter=lastModifiedDateTime ge '2020-04-01' and lastModifiedDateTime le '2020-04-02'
+GET /teams/{id}/channels/getAllMessages?$filter=lastModifiedDateTime ge '2020-04-01' and lastModifiedDateTime le '2020-04-02'
 ```
 
 ## Optional query parameters
