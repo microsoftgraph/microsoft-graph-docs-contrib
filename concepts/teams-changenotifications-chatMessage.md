@@ -3,7 +3,8 @@ title: "Get notifications for messages in a channel or chat"
 description: "Change notifications enables you to listen to changes to messages in channel or chat"
 author: "RamjotSingh"
 localization_priority: Priority
-ms.custom: graphiamtop20
+ms.prod: "microsoft-teams"
+ms.custom: scenarios:getting-started
 ---
 
 # Get notifications for messages in Microsoft Teams channels and chats
@@ -16,7 +17,7 @@ Change notifications enables you to listen to messages in a low latency model by
 
 ## Subscribing to changes at tenant level
 
-To track all changes related to messages at tenant level you can use subscriptions at tenant level for channel and chat messages. This requires creation of 2 subscriptions, one to track all messages across [channels](/graph/api/resources/channel?view=graph-rest-1.0) and other to track all messages across [chats](/graph/api/resources/chat?view=graph-rest-1.0&preserve-view=true).
+To track all changes related to messages at tenant level you can use subscriptions at tenant level for channel and chat messages. This requires creation of 2 subscriptions, one to track all messages across [channels](/graph/api/resources/channel?view=graph-rest-1.0&preserve-view=true) and other to track all messages across [chats](/graph/api/resources/chat?view=graph-rest-1.0&preserve-view=true).
 
 ### Subscribing to messages across channels
 
