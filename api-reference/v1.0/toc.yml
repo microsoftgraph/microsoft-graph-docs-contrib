@@ -4940,6 +4940,25 @@ items:
           href: api/chatmessage-update.md
         - name: Send message
           href: api/channel-post-message.md
+      - name: Chat message
+        href: resources/chatmessage.md
+        items:
+        - name: List channel messages
+          href: api/channel-list-messages.md
+        - name: Get channel messages delta
+          href: api/chatmessage-delta.md
+        - name: Get channel message
+          href: api/channel-get-message.md
+        - name: List message replies
+          href: api/channel-list-messagereplies.md
+        - name: Get message reply
+          href: api/channel-get-messagereply.md
+        - name: Send message
+          href: api/chatmessage-post.md
+        - name: Reply to message
+          href: api/channel-post-messagereply.md
+        - name: Update message
+          href: api/chatmessage-update.md
       - name: Chat
         href: resources/chat.md
         items:
@@ -4987,7 +5006,7 @@ items:
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
-        - name: Get apps in team
+        - name: List apps in team
           href: api/teamsappinstallation-list.md
         - name: Get app installed in a team
           href: api/teamsappinstallation-get.md
@@ -4997,7 +5016,7 @@ items:
           href: api/teamsappinstallation-delete.md
         - name: Upgrade installed app for team
           href: api/teamsappinstallation-upgrade.md
-        - name: List apps for user
+        - name: Get apps for user
           href: api/user-list-teamsappinstallation.md
         - name: Gets installed app for user
           href: api/user-get-teamsappinstallation.md
