@@ -20,7 +20,7 @@ To track all changes related to messages at tenant level you can use subscriptio
 
 ### Subscribing to messages across channels
 
-Changes notifications for all messages and replies across channels can be subscribed to by subscribing to `/teams/getAllMessages`. This resource supports [include resource data](webhooks-with-resource-data.md) to allow receiving resource data in the notification.
+Changes notifications for all messages and replies across channels in a tenant can be subscribed to by subscribing to `/teams/getAllMessages`. This resource supports [include resource data](webhooks-with-resource-data.md) to allow receiving resource data in the notification.
 
 #### Permissions
 
@@ -49,7 +49,7 @@ Content-Type: application/json
 
 ### Subscribing to messages across chats
 
-Changes notifications for all messages across chats can be subscribed to by subscribing to `/chats/getAllMessages`. This resource supports [include resource data](webhooks-with-resource-data.md) to allow receiving resource data in the notification.
+Changes notifications for all messages across chats in a tenant can be subscribed to by subscribing to `/chats/getAllMessages`. This resource supports [include resource data](webhooks-with-resource-data.md) to allow receiving resource data in the notification.
 
 #### Permissions
 
@@ -78,7 +78,7 @@ Content-Type: application/json
 
 ## Subscribing to messages in a channel
 
-To track messages and replies at a channel level, you can create change notification subscription at a channel level. This can be done by subsricing to `/teams{id}/channels/{id}/messages` resource. This resource supports [include resource data](webhooks-with-resource-data.md) in *application-only mode* to allow receiving resource data in the notification.
+To track messages and replies at a channel level, you can create change notification subscription at a channel level. This can be done by subscribing to `/teams{id}/channels/{id}/messages` resource. This resource supports [include resource data](webhooks-with-resource-data.md) in *application-only mode* to allow receiving resource data in the notification.
 
 Additionally, channel-level subscription supports keyword based search using **$search**.
 

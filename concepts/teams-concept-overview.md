@@ -79,10 +79,6 @@ Microsoft Teams apps give work groups a new tool to make collaboration a more pr
 
 You can create web sites, services, and native platform applications that run outside the Microsoft Teams user experience, and call the Teams API to automate Teams scenarios.
 
-### Get notified for changes in Teams
-
-Microsoft Teams supports subscribing to changes (creation, updation or deletion) to messages in [channels](/graph/api/resources/channel?view=graph-rest-1.0&preserve-view=true) and [chats](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) to allows apps to get near-instant updates. You can refer to [chatMessage subscription](teams-changenotifications-chatMessage) documentation on how to subscribe to changes.
-
 **Types of apps enabled for Microsoft Teams**
 
 ![Call the Microsoft Teams API from tabs, bots, websites, and services](images/teamsappendpoints.png)
@@ -102,6 +98,10 @@ Microsoft Teams APIs can enhance apps inside and outside of Teams:
 |Services|Enhance your client applications with Microsoft Graph data via your web service.|
 | [Activity feed](/microsoftteams/platform/concepts/activity-feed)|Engage users via feed notifications.|
 | [Calling and online meetings (preview)](/graph/api/resources/communications-api-overview) |Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|
+
+### Get notified for changes in Teams
+
+Microsoft Teams supports subscribing to changes (creation, updation or deletion) to messages in [channels](/graph/api/resources/channel?view=graph-rest-1.0&preserve-view=true) and [chats](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) to allows apps to get near-instant updates. You can refer to [chatMessage subscription](teams-changenotifications-chatMessage) documentation on how to subscribe to changes.
 
 ## API reference
 
