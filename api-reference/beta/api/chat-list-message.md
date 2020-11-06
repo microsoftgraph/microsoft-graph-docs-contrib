@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the list of [messages](../resources/chatmessage.md) in a [chat](../resources/chat.md).
 
-> This API supports subcribing to changes (creation, updation and deletion) using [Graph change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in realtime. Please refer to ['chatMessage`](../resources/chatMessage.md) documentation for more details.
+> This API supports subscribing to changes (create, update and delete) using [change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in real-time. Please refer to [chatMessage](../resources/chatMessage.md) documentation for more details.
 
 ## Permissions
 
@@ -290,5 +290,4 @@ Content-length: 201
   ]
 }
 -->
-
 

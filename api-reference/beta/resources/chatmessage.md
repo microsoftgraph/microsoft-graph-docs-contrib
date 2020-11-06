@@ -45,7 +45,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 
 ## Subscribe for changes
 
-`chatMessage` supports subcribing to changes (creation, updation and deletion) using [Graph change notifications](webhooks.md). This allows callers to subscribe and get changes in realtime.
+`chatMessage` supports subscribing to changes (create, update and delete) using [change notifications](webhooks.md). This allows callers to subscribe and get changes in real-time.
 
 Please refer to [chatMessage change notification](/graph/teams-changenotifications-chatMessage) documentation to get details about different resources and examples.
 
@@ -127,4 +127,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-

@@ -17,7 +17,7 @@ List all the replies of a [message](../resources/chatmessage.md) in a [channel](
 
 This method lists only the replies of the specified message, if any. To get the message itself, simply call [get channel message](channel-get-message.md).
 
-> This API supports subcribing to changes (creation, updation and deletion) using [Graph change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in realtime. Please refer to ['chatMessage`](../resources/chatMessage.md) documentation for more details.
+> This API supports subscribing to changes (create, update and delete) using [change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in real-time. Please refer to [chatMessage](../resources/chatMessage.md) documentation for more details.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -239,5 +239,4 @@ Content-type: application/json
   ]
 }
 -->
-
 
