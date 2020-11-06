@@ -17,7 +17,7 @@ Represents a defined collection of provisioning policy assignments.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Assign cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-post-assignments.md)|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md)|Assign [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) to user groups.|
+|[Assign cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-assign.md)|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md)|Assign [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) to user groups.|
 
 ## Properties
 

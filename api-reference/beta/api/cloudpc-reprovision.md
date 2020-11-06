@@ -1,5 +1,5 @@
 ---
-title: "CloudPC: Reprovision"
+title: "cloudPC: reprovision"
 description: "Reprovision a specific Cloud PC."
 author: "jiajyang"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: ""
 doc_type: apiPageType
 ---
 
-# CloudPC: Reprovision
+# cloudPC: reprovision
 
 Namespace: microsoft.graph
 

@@ -1,5 +1,5 @@
 ---
-title: "Add assignments"
+title: "cloudPcProvisioningPolicy: assign"
 description: "Assign the Cloud PC provisioning policy to your group."
 author: "jiajyang"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: ""
 doc_type: apiPageType
 ---
 
-# Add assignments
+# cloudPcProvisioningPolicy: assign
 
 Namespace: microsoft.graph
 
