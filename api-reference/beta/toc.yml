@@ -9224,6 +9224,11 @@ items:
             href: api/cloudpcprovisioningpolicy-delete.md
           - name: Assign
             href: api/cloudpcprovisioningpolicy-post-assignments.md
+        - name: Cloud PC provisioning policy assignment
+          href: resources/cloudpcprovisioningpolicyassignment.md
+          items:
+          - name: Assign Cloud PC provisioning policy
+            href: api/cloudpcprovisioningpolicy-post-assignments.md
         - name: Shared resources
           items:
           - name: Cloud PC management assignment target
