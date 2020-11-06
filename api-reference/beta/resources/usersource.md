@@ -1,6 +1,6 @@
 ---
 title: "userSource resource type"
-description: "**TODO: Add Description**"
+description: "Data source entity used to specify user mailbox or site sources."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "compliance"
@@ -22,7 +22,6 @@ Data source entity for a user - This is the container for a custodian's mailbox 
 |[List userSources](../api/usersource-list.md)|[userSource](../resources/usersource.md) collection|Get a list of the [userSource](../resources/usersource.md) objects and their properties.|
 |[Create userSource](../api/usersource-create.md)|[userSource](../resources/usersource.md)|Create a new [userSource](../resources/usersource.md) object.|
 |[Get userSource](../api/usersource-get.md)|[userSource](../resources/usersource.md)|Read the properties and relationships of a [userSource](../resources/usersource.md) object.|
-|[Update userSource](../api/usersource-update.md)|[userSource](../resources/usersource.md)|Update the properties of a [userSource](../resources/usersource.md) object.|
 |[Delete userSource](../api/usersource-delete.md)|None|Deletes a [userSource](../resources/usersource.md) object.|
 
 ## Properties

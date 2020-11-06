@@ -1,6 +1,6 @@
 ---
 title: "siteSource resource type"
-description: "**TODO: Add Description**"
+description: "Data source entity for SharePoint sites"
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "compliance"

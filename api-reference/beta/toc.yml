@@ -1481,7 +1481,7 @@ items:
             href: api/sitesource-get.md
           - name: Delete
             href: api/sitesource-delete.md
-          name: Unified group source
+        - name: Unified group source
           href: resources/unifiedgroupsource.md
           items:
           - name: List

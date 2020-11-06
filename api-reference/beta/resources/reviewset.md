@@ -22,8 +22,8 @@ Represents static set of electronically stored information collected for use in 
 | [List reviewSet](../api/reviewset-list.md) | [reviewSet](reviewset.md) collection | Get a collection of review sets. |
 | [Get reviewSet](../api/reviewset-get.md) | [reviewSet](reviewset.md) | Read the properties and relationships of a **reviewSet** object. |
 | [Create reviewSet](../api/reviewset-post.md) | [reviewSet](reviewset.md) | Create a new review set. |
-| [List queries](../api/reviewset-list-queries.md)|[reviewSetQuery](../resources/reviewsetquery.md) collection|Get the reviewSetQuery resources from the queries navigation property.|
-| [Create queries](../api/reviewset-post-queries.md)|[reviewSetQuery](../resources/reviewsetquery.md)|Create a new reviewSetQuery object.|
+| [List queries](../api/reviewsetquery-list.md)|[reviewSetQuery](../resources/reviewsetquery.md) collection|Get the reviewSetQuery resources from the queries navigation property.|
+| [Create queries](../api/reviewsetquery-post.md)|[reviewSetQuery](../resources/reviewsetquery.md)|Create a new reviewSetQuery object.|
 
 ## Properties
 

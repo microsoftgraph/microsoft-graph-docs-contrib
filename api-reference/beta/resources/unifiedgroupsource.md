@@ -1,6 +1,6 @@
 ---
 title: "unifiedGroupSource resource type"
-description: "**TODO: Add Description**"
+description: "Data source entity for Groups"
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "compliance"

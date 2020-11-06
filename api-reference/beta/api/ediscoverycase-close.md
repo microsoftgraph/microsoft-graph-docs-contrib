@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryCase: close"
-description: "**TODO: Add Description**"
+description: "Method to close an eDiscovery case"
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "compliance"
@@ -52,6 +52,7 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "ediscoverycase_close"
