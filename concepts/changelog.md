@@ -19,6 +19,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added support for [resource-specific consent](https://aka.ms/teams-rsc) (RSC) permissions to v1.0 APIs. |
 | Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-v1.0). |
+| Addition | v1.0 | Added [Get the installed app in team](/graph/api/teamsappinstallation-get), [List apps for user](/graph/api/user-list-teamsappinstallation), [Get installed app for user](/graph/api/user-get-teamsappinstallation), [Add app for user](/graph/api/user-add-teamsappinstallation), [Remove app for user](/graph/api/user-delete-teamsappinstallation), and [Upgrade installed app for user](/graph/api/user-upgrade-teamsappinstallation) methods to the [teamsAppInstallation](/graph/api/resources/teamsappinstallation) resource. |
 
 ## October 2020
 
@@ -128,7 +129,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | Added [Get the installed app in team](/graph/api/teamsappinstallation-get), [List apps for user](/graph/api/user-list-teamsappinstallation), [Get installed app for user](/graph/api/user-get-teamsappinstallation), [Add app for user](/graph/api/user-add-teamsappinstallation), [Remove app for user](/graph/api/user-delete-teamsappinstallation), and [Upgrade installed app for user](/graph/api/user-upgrade-teamsappinstallation) methods to the [teamsAppInstallation](/graph/api/resources/teamsappinstallation) resource. |
 | Addition | v1.0 | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation) resource. |
 |Addition|beta|Added support for **completeMigration** to the [channel](/graph/api/resources/channel?view=graph-rest-beta) and [team](/graph/api/resources/team?view=graph-rest-beta) resources|
 |Addition|beta|Added the **teamCreationMode** property to the  [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
