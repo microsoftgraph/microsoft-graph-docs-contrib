@@ -1,5 +1,5 @@
 ---
-title: "List teamsAppInstallation"
+title: "Get apps installed for user"
 description: "Retrieve the list of apps installed in the personal scope of the specified user."
 author: "clearab"
 doc_type: "apiPageType"
@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# List apps installed for user
+# Get apps installed for user
 
 Namespace: microsoft.graph
 
