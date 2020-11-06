@@ -1,5 +1,5 @@
 ---
-title: "Create userScopeTeamsAppInstallation"
+title: "Install app for user"
 description: "Install an app in the personal scope of the specified user."
 author: "clearab"
 doc_type: "apiPageType"
@@ -34,6 +34,7 @@ POST /users/{id}/teamwork/installedApps
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+| Content-type | application/json. Required.|
 
 ## Request body
 
