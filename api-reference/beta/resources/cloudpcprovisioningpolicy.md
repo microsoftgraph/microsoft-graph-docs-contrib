@@ -34,7 +34,7 @@ Represents a Cloud PC provisioning policy.
 |onPremisesConnectionId|String|The ID of the cloudPcOnPremisesConnection. To ensure that Cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the Cloud PC service.|
 |imageId|String|The ID of the OS image you want to provision on Cloud PCs. The format for a gallery type image is: {publisher_offer_sku}.|
 |imageDisplayName|String|The display name for the OS image you’re provisioning.|
-|imageType|[cloudPcProvisioningPolicyImageType](../resources/cloudpcprovisioningpolicyimangetype.md)|The type of OS image (custom or gallery) you want to provision on Cloud PCs. Possible values are: `gallery`, `custom`.|
+|imageType|PenumcloudPcProvisioningPolicyImageType|The type of OS image (custom or gallery) you want to provision on Cloud PCs. Possible values are: `gallery`, `custom`.|
 
 ## Relationships
 
