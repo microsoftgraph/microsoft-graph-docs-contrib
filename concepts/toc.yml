@@ -442,7 +442,7 @@ items:
               - name: Get notifications delivered different ways (preview)
                 href: change-notifications-delivery.md
               - name: Get notifications for chatMessages (example)
-                href: teamwork-changenotifications-chatMessage.md
+                href: teams-changenotifications-chatMessage.md
           - name: Change tracking
             displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:

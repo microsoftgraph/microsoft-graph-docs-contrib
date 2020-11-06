@@ -81,7 +81,7 @@ You can create web sites, services, and native platform applications that run ou
 
 ### Get notified for changes in Teams
 
-Microsoft Teams supports subscribing to changes (creation, updation or deletion) to messages in [channels](/graph/api/resources/channel?view=graph-rest-1.0) and [chats](/graph/api/resources/channel?view=graph-rest-beta) to allows apps to get near-instant updates. You can refer to [chatMessage subscription](teamwork-changenotifications-chatMessage) documentation on how to subscribe to changes.
+Microsoft Teams supports subscribing to changes (creation, updation or deletion) to messages in [channels](/graph/api/resources/channel?view=graph-rest-1.0&preserve-view=true) and [chats](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) to allows apps to get near-instant updates. You can refer to [chatMessage subscription](teams-changenotifications-chatMessage) documentation on how to subscribe to changes.
 
 **Types of apps enabled for Microsoft Teams**
 
