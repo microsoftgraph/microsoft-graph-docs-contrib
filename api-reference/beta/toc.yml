@@ -12363,7 +12363,7 @@ items:
           href: api/chat-get.md
         - name: List chat members
           href: api/conversationmember-list.md
-        - name: Get chat member
+        - name: Get chat memberGet chat between user and app
           href: api/conversationmember-get.md
         - name: List messages in a chat
           href: api/chat-list-message.md
@@ -12371,6 +12371,8 @@ items:
           href: api/chat-get-message.md
         - name: Send message in chat
           href: api/chat-post-message.md
+        - name: Get chat between user and app 
+          href: api/userscopeteamsappinstallation-get-chat.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -12444,14 +12446,18 @@ items:
           href: api/teamsappinstallation-delete.md
         - name: Upgrade installed app for team
           href: api/teamsappinstallation-upgrade.md
-        - name: List apps for user
+        - name: Get apps for user
           href: api/user-list-teamsappinstallation.md
+        - name: Gets installed app for user
+          href: api/user-get-teamsappinstallation.md
         - name: Add app for user
           href: api/user-add-teamsappinstallation.md
         - name: Remove app for user
           href: api/user-delete-teamsappinstallation.md
         - name: Upgrade installed app for user
           href: api/user-upgrade-teamsappinstallation.md
+        - name: Get chat between user and app
+          href: api/userscopeteamsappinstallation-get-chat.md
       - name: Tab
         href: resources/teamstab.md
         items:
