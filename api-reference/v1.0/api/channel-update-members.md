@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Update member in a channel
+# Update member in channel
 
 Namespace: microsoft.graph
 
