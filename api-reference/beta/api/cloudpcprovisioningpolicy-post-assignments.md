@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-> **Note:** The input group ID must be valid and the group must exist in Azure Active Directory.
-
 Assign [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) to user groups.
 
 ## Permissions
@@ -33,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assign/
+POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assign
 ```
 
 ## Request headers

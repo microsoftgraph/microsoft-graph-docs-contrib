@@ -18,7 +18,7 @@ Cloud managed virtual desktops.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List properties and relationships of the [cloudPC](../resources/cloudpc.md) objects.|
-|[Get cloudPC](../api/virtualendpoint-get-cloudpc.md)|[cloudPC](../resources/cloudpc.md)|Read the properties and relationships of a [cloudPC](../resources/cloudpc.md) object.|
+|[Get cloudPC](../api/cloudpc-get.md)|[cloudPC](../resources/cloudpc.md)|Read the properties and relationships of a [cloudPC](../resources/cloudpc.md) object.|
 |[Reprovision](../api/cloudpc-reprovision.md)|None|Reprovision [cloudPC](../resources/cloudpc.md) object.|
 
 ## Properties

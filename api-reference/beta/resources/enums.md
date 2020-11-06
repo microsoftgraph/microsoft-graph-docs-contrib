@@ -212,7 +212,6 @@ Namespace: microsoft.graph
 | darkYellow
 | unknownFutureValue
 
-
 ### timeOffReasonIconType values
 
 |Member|
@@ -284,7 +283,6 @@ Namespace: microsoft.graph
 | windows
 | iana
 
-
 ### freeBusyStatus values
 
 | Member           | Value |
@@ -296,7 +294,6 @@ Namespace: microsoft.graph
 | workingElsewhere | 4     |
 | unknown          | -1    |
 
-
 ### physicalAddressType values
 
 | Member
@@ -306,7 +303,6 @@ Namespace: microsoft.graph
 | business
 | other
 
-
 ### attendeeType values
 
 | Member
@@ -314,7 +310,6 @@ Namespace: microsoft.graph
 | required
 | optional
 | resource
-
 
 ### externalAudienceScope values
 
@@ -324,7 +319,6 @@ Namespace: microsoft.graph
 | contactsOnly
 | all
 
-
 ### automaticRepliesStatus values
 
 | Member
@@ -332,7 +326,6 @@ Namespace: microsoft.graph
 | disabled
 | alwaysEnabled
 | scheduled
-
 
 ### calendarColor values
 
@@ -350,7 +343,6 @@ Namespace: microsoft.graph
 | lightRed    | 8     |
 | maxColor    | 9     |
 
-
 ### educationSynchronizationProfileState values
 
 | Member             | Value |
@@ -361,7 +353,6 @@ Namespace: microsoft.graph
 | provisioned        | 6     |
 | provisioning       | 7     |
 | unknownFutureValue | 8     |
-
 
 ### educationSynchronizationStatus values
 
@@ -393,7 +384,6 @@ Namespace: microsoft.graph
 | other
 | unknownFutureValue
 
-
 ### eventType values
 
 | Member
@@ -402,7 +392,6 @@ Namespace: microsoft.graph
 | occurrence
 | exception
 | seriesMaster
-
 
 ### sensitivity values
 
@@ -413,7 +402,6 @@ Namespace: microsoft.graph
 | private
 | confidential
 
-
 ### importance values
 
 | Member
@@ -422,14 +410,13 @@ Namespace: microsoft.graph
 | normal
 | high
 
-
 ### educationUserRole values
+
 | Member
 |:---------------------
 | student
 | teacher
 | faculty
-
 
 ### meetingMessageType values
 
@@ -442,7 +429,6 @@ Namespace: microsoft.graph
 | meetingTentativelyAccepted
 | meetingDeclined
 
-
 ### followupFlagStatus values
 
 | Member
@@ -451,14 +437,12 @@ Namespace: microsoft.graph
 | complete
 | flagged
 
-
 ### inferenceClassificationType values
 
 | Member
 |:-----------------
 | focused
 | other
-
 
 ### iosNotificationAlertType values
 
@@ -485,13 +469,12 @@ Namespace: microsoft.graph
 | enrollmentRestrictionsEnforced
 | clientDisconnected
 
-
 ### bodyType values
+
 | Member
 |:---------
 | text
 | html
-
 
 ### locationType values
 
@@ -518,7 +501,6 @@ Namespace: microsoft.graph
 | private
 | bing
 
-
 ### messageActionFlag values
 
 | Member
@@ -535,7 +517,6 @@ Namespace: microsoft.graph
 | replyToAll
 | review
 
-
 ### onenoteUserRole values
 
 | Member      | Value |
@@ -545,7 +526,6 @@ Namespace: microsoft.graph
 | Reader      | 2     |
 | None        | -1    |
 
-
 ### operationStatus values
 
 | Member
@@ -554,7 +534,6 @@ Namespace: microsoft.graph
 | Running
 | Completed
 | Failed
-
 
 ### onenotePatchActionType values
 
@@ -573,7 +552,6 @@ Namespace: microsoft.graph
 | After
 | Before
 
-
 ### phoneType values
 
 | Member
@@ -589,7 +567,6 @@ Namespace: microsoft.graph
 | pager
 | radio
 
-
 ### plannerPreviewType values
 
 | Member
@@ -599,7 +576,6 @@ Namespace: microsoft.graph
 | checklist
 | description
 | reference
-
 
 ### status values
 
@@ -611,7 +587,6 @@ Namespace: microsoft.graph
 | ignored
 | unknownFutureValue
 
-
 ### weekIndex values
 
 | Member
@@ -621,7 +596,6 @@ Namespace: microsoft.graph
 | third
 | fourth
 | last
-
 
 ### dayOfWeek values
 
@@ -646,7 +620,6 @@ Namespace: microsoft.graph
 | absoluteYearly
 | relativeYearly
 
-
 ### recurrenceRangeType values
 
 | Member
@@ -655,15 +628,14 @@ Namespace: microsoft.graph
 | noEnd
 | numbered
 
-
 ### onenoteSourceService values
+
 | Member
 |:---------------------
 | Unknown
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
-
 
 ### responseType values
 
@@ -676,7 +648,6 @@ Namespace: microsoft.graph
 | declined
 | notResponded
 
-
 ### activityDomain values
 
 | Member
@@ -685,7 +656,6 @@ Namespace: microsoft.graph
 | work
 | personal
 | unrestricted
-
 
 ### websiteType values
 
@@ -696,7 +666,6 @@ Namespace: microsoft.graph
 | work
 | blog
 | profile
-
 
 ### categoryColor values
 
@@ -1457,3 +1426,68 @@ Possible values for user account types (group membership), per Windows definitio
 | application
 | delegated
 | delegatedUserConsentable
+
+### cloudPcDeviceImageStatus values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|pending|0|The image upload is in progress.|
+|ready|1|The image is ready for use on Cloud PCs.|
+|failed|2|The image couldn’t be uploaded. |
+
+### cloudPcDeviceImageStatusDetails values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|internalServerError|0|There was an internal server error while processing the image|
+|sourceImageNotFound|1|Source image is inaccessible or not found|
+
+### cloudPcOnPremisesConnectionHealthCheckErrorType values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|dnsCheckFqdnNotFound|100|The DNS check failed because the fully qualified domain name was not found.|
+|dnsCheckUnknownError|199|The DNS check failed due to an unknown error.|
+|adJoinCheckFqdnNotFound|200|The active domain join check failed because the fully qualified domain name was not found.|
+|adJoinCheckIncorrectCredentials| 201|The active domain join check failed because the domain credentials are incorrect. |
+|adJoinCheckOrganizationalUnitNotFound| 202|The active domain join check failed because the specified organizational unit was not found.|
+|adJoinCheckOrganizationalUnitIncorrectFormat| 203|The active domain join check failed beccause the format of the specified organizational unit is incorrect. Example format: "OU=OU1,OU=OU2,OU=OU3,DC=DC1"|
+|adJoinCheckUnknownError |299| The active domain join check failed due to an unknown error.|
+|endpointConnectivityCheckUrlNotWhitelisted| 300|The endpoint connectivity check failed because the url isn’t on the allowlist in the network firewall settings.|
+|endpointConnectivityCheckUnknownError| 399| The endpoint connectivity check failed due to an unknown error.|
+|aadConnectivityCheckUnknownError |499| The Azure Active Directory connectivity check failed due to an unknown error.|
+|resourceAvailabilityCheckNoSubnetIP |500| The resource availability check failed because there were no available IP addresses in the subnet.|
+|resourceAvailabilityCheckUnknownError |599|The resource availability check failed due to an unknown error.|
+|internalServerUnknownError |999|The health check failed due to an unknown internal server error.|
+
+### cloudPcOnPremisesConnectionStatus values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|pending|0|Created and waiting for health checks|
+|running|10|Health checks are running|
+|passed|20|Checks passed|
+|failed|30|Checks failed|
+|unknownFutureValue|999|Unknown future status (reserved, not used right now)|
+
+### cloudPcProvisioningPolicyImageType values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|custom|0|Use to identify the image type as custom.|
+|gallery|1|Use to identify the image type as gallery.|
+
+### cloudPcStatus values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|notProvisioned|0|The Cloud PC hasn’t been provisioned.|
+|provisioning|1|Cloud PC provisioning is in progress.|
+|provisioned|2|The Cloud PC is provisioned and can be accessed by end users.|
+|upgrading|3|Cloud PC resize is in progress.|
+|inGracePeriod|4|The Cloud PC is in the one week grace period before it’s deprovisioned.|
+|deprovisioning|5|The Cloud PC is deprovisioning.|
+|upgradeFailed|6|The Cloud PC failed to upgrade|
+|provisionFailed|7|The Cloud PC failed to provision|
+|deprovisionFailed|8|The Cloud PC failed to deprovision|
+|reprovisionFailed|9|The Cloud PC failed to reprovision|

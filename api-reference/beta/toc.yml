@@ -9178,84 +9178,52 @@ items:
           - name: List
             href: api/virtualendpoint-list-cloudpcs.md
           - name: Get
-            href: api/virtualendpoint-get-cloudpc.md
+            href: api/cloudpc-get.md
           - name: Reprovision
             href: api/cloudpc-reprovision.md
-        - name: Cloud PC status
-          href: resources/cloudpcstatus.md
-        - name: Cloud PC status details
-          href: resources/cloudpcstatusdetails.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
           items:
           - name: List
             href: api/virtualendpoint-list-deviceimages.md
           - name: Get
-            href: api/virtualendpoint-get-cloudpcdeviceimage.md
+            href: api/cloudpcdeviceimage-get.md
           - name: Create
             href: api/virtualendpoint-post-deviceimages.md
           - name: Delete
-            href: api/virtualendpoint-delete-deviceimages.md
+            href: api/cloudpcdeviceimage-delete.md
           - name: Get source images
             href: api/cloudpcdeviceimage-getsourceimages.md
-        - name: Cloud PC device image status
-          href: resources/cloudpcdeviceimagestatus.md
-        - name: Cloud PC device image status details
-          href: resources/cloudpcdeviceimagestatusdetails.md
-        - name: Cloud PC source device image
-          href: resources/cloudpcsourcedeviceimage.md
         - name: Cloud PC on-premises connection
           href: resources/cloudpconpremisesconnection.md
           items:
           - name: List
             href: api/virtualendpoint-list-onpremisesconnections.md
           - name: Get
-            href: api/virtualendpoint-get-cloudpconpremisesconnection.md
+            href: api/cloudpconpremisesconnection-get.md
           - name: Create
             href: api/virtualendpoint-post-onpremisesconnections.md
           - name: Update
-            href: api/virtualendpoint-update-onpremisesconnections.md
+            href: api/cloudpconpremisesconnection-update.md
           - name: Delete
-            href: api/virtualendpoint-delete-onpremisesconnections.md
+            href: api/cloudpconpremisesconnection-delete.md
           - name: Run health checks
             href: api/cloudpconpremisesconnection-runhealthcheck.md
-        - name: Cloud PC on-premises connection health check
-          href: resources/cloudpconpremisesconnectionhealthcheck.md
-        - name: Cloud PC on-premises connection health check error type
-          href: resources/cloudpconpremisesconnectionHealthCheckErrorType.md
-        - name: Cloud PC on-premises connection status
-          href: resources/cloudpconpremisesconnectionstatus.md
-        - name: Cloud PC on-premises connection status details
-          href: resources/cloudpconpremisesconnectionstatusdetails.md
         - name: Cloud PC provisioning policy
           href: resources/cloudpcprovisioningpolicy.md
           items:
           - name: List
             href: api/virtualendpoint-list-provisioningpolicies.md
           - name: Get
-            href: api/virtualendpoint-get-cloudpcprovisioningpolicy.md
+            href: api/cloudpcprovisioningpolicy-get.md
           - name: Create
             href: api/virtualendpoint-post-provisioningpolicies.md
           - name: Update
-            href: api/virtualendpoint-update-provisioningpolicies.md
+            href: api/cloudpcprovisioningpolicy-update.md
           - name: Delete
-            href: api/virtualendpoint-delete-provisioningpolicies.md
+            href: api/cloudpcprovisioningpolicy-delete.md
           - name: Assign
             href: api/cloudpcprovisioningpolicy-post-assignments.md
-        - name: Cloud PC provisioning policy assignment
-          href: resources/cloudpcprovisioningpolicyassignment.md
-          items: 
-          - name: Assign Cloud PC provisioning policy
-            href: api/cloudpcprovisioningpolicy-post-assignments.md
-        - name: Cloud PC provisioning policy image type
-          href: resources/cloudpcprovisioningpolicyimangetype.md
-        - name: Cloud PC self-service settings
-          href: resources/cloudpcselfservicesettings.md
-          items:
-          - name: Get
-            href: api/virtualendpoint-get-cloudpcselfservicesettings.md
-          - name: Update
-            href: api/virtualendpoint-update-selfservicesettings.md
         - name: Shared resources
           items:
           - name: Cloud PC management assignment target

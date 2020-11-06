@@ -40,7 +40,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages/getSourceImages
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
-## Function parameters
+## Request body
 
 Do not supply a request body for this method.
 
