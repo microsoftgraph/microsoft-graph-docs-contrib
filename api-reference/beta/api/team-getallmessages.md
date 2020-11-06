@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/users/{id}/teams/getAllMessages
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chatMessage"
+  "@odata.type": "microsoft.graph.team"
 } -->
 ```http
 HTTP/1.1 200 OK 
@@ -74,10 +74,10 @@ Content-length: 347
 { 
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(chatMessage)", 
     "@odata.count": 10, 
-    "@odata.nextLink": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats/getAllMessages?$skip=10", 
+    "@odata.nextLink": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/teams/getAllMessages?$skip=10", 
     "value": [ 
 { 
-            "@odata.type": "#microsoft.graph.chatMessage", 
+            "@odata.type": "#microsoft.graph.team", 
             "id": "1600457965467", 
             "replyToId": null, 
             "etag": "1600457965467", 
