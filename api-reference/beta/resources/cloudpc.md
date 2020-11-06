@@ -25,7 +25,7 @@ Cloud managed virtual desktops.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the Cloud PC. Read-only|
+|id|String|Unique identifier for the Cloud PC. Read-only.|
 |displayName|String|The Cloud PC display name.|
 |imageDisplayName|String|Name of the OS image that's on the Cloud PC.|
 |managedDeviceId|String|The Cloud PC’s Intune device ID.|
