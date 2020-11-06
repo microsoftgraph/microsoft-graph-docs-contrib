@@ -1,5 +1,5 @@
 ---
-title: "List userScopeTeamsAppInstallation"
+title: "Get 1:1 chat between the specified user and Teams app"
 description: "Retrieve one-on-one chat between the specified user and the Teams app."
 author: "AkJo"
 doc_type: "apiPageType"
@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# List one-on-one chat between the specified user and Teams app
+# Get one-on-one chat between the specified user and Teams app
 
 Namespace: microsoft.graph
 
