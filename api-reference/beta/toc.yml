@@ -553,6 +553,49 @@ items:
           href: api/group-unsubscribebymail.md       
         - name: Validate properties
           href: api/group-validateproperties.md
+     - name: Channel
+        href: resources/channel.md
+        items:
+        - name: List channels
+          href: api/channel-list.md
+        - name: Get channel
+          href: api/channel-get.md
+        - name: Update channel
+          href: api/channel-patch.md
+        - name: Delete channel
+          href: api/channel-delete.md
+        - name: List members of channel
+          href: api/channel-list-members.md
+        - name: Get member of channel
+          href: api/channel-get-members.md
+        - name: Add  member to  channel 
+          href: api/channel-add-members.md
+        - name: Update role of member in channel
+          href: api/channel-update-members.md
+        - name: Delete member from channel
+          href: api/channel-delete-members.md
+        - name: Get files folder
+          href: api/channel-get-filesfolder.md
+        - name: List channel messages
+          href: api/channel-list-messages.md
+        - name: Get channel messages delta
+          href: api/chatmessage-delta.md
+        - name: Get channel message
+          href: api/channel-get-message.md
+        - name: List message replies
+          href: api/channel-list-messagereplies.md
+        - name: Get message reply
+          href: api/channel-get-messagereply.md
+        - name: Send message
+          href: api/channel-post-messages.md
+        - name: Reply to message
+          href: api/channel-post-messagereply.md
+        - name: Add a member to a channel
+          href: api/conversationmember-add.md
+        - name: Remove a member from a channel
+          href: api/conversationmember-delete.md
+        - name: Update the role of a member in channel
+          href: api/conversationmember-update.md
       - name: App role assignments
         href: resources/approleassignment.md
         items:
