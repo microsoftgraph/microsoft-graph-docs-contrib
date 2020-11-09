@@ -23,8 +23,8 @@
             "ApiChange": "Method",
             "ChangedApiName": "getAllMessages",
             "ChangeType": "Addition",
-            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/team-getallmessages?view=graph-rest-beta) method to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
-            "Target": "team-getallmessages"
+            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/teams-getallmessages?view=graph-rest-beta) method to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
+            "Target": "teams-getallmessages"
           }
         ],
         "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
