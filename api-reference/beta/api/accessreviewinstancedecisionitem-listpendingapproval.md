@@ -27,7 +27,6 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
  The signed-in user must also be in a directory role that permits them to read an access review. The signed-in user will also only see decisions of which they are assigned reviewer in that decision's instance's accessReviewScheduleDefinition.
 
@@ -73,7 +72,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('957f1027-c0ee-460d-9269-b8828e59e0fe')/pendingAccessReviewInstances('70a68410-67f3-4d4c-b946-6989e050be19')/decisions",
     "@odata.count": 2,
     "value": [
         {

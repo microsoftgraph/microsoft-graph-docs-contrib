@@ -69,7 +69,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('60860cdd-fb4d-4054-91ba-f75e04f34444')/instances",
     "value": [
         {
             "id": "12490cdb-6a18-4c08-ba2c-44442f0a0138",

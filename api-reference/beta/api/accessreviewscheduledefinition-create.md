@@ -127,7 +127,6 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions/$entity",
     "id": "29f2d16e-9ca6-4052-bbfe-802c48944448",
     "displayName": "Test create",
     "createdDateTime": "0001-01-01T00:00:00Z",

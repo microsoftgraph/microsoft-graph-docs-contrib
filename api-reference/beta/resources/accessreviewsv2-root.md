@@ -1,5 +1,5 @@
 ---
-title: "Azure AD access reviews - Version 2"
+title: "Azure AD access reviews - beta update"
 description: "You can use Azure AD access reviews to configure one-time or recurring access reviews for attestation of user's access rights. This documentation serves the 2nd version of the APIs."
 localization_priority: Normal
 author: "isabelleatmsft"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->This documentation contains the latest supported version of access reviews APIs. For legacy documentation, see [access reviews legacy APIs](accessreviews-root.md).
+>This documentation contains the latest supported version of access reviews APIs for reviews on Microsoft 365 Groups. For reviews on other resources, see [access reviews APIs](accessreviews-root.md).
 >
 >Currently, the Microsoft Graph APIs only supports access reviews of group membership.
 

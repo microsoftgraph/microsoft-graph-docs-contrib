@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     | AccessReview.ReadWrite.All |
 | Delegated (personal Microsoft account)| Not supported. |
-|Application                            | AccessReview.ReadWrite.All |
 
 The signed-in user must also be a reviewer on the accessReviewInstance.
 

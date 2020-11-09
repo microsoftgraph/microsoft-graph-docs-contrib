@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Apply review decisions on an [accessReviewInstance](../resources/accessreviewinstance.md).
 
+Note that decisions will be applied automatically if the autoApplyDecisionsEnabled parameter is True in the review's [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md).
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

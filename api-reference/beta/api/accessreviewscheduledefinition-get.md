@@ -66,7 +66,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions/$entity",
     "id": "60860cdd-fb4d-4054-91ba-f7544443baa6",
     "displayName": "Test world",
     "createdDateTime": "2020-09-14T20:03:36.7391027Z",

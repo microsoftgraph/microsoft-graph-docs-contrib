@@ -25,7 +25,6 @@ One of the following permissions is required to call this API. Delegated permiss
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     | AccessReview.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application                            | AccessReview.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
