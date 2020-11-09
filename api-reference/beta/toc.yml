@@ -12363,7 +12363,7 @@ items:
           href: api/chat-get.md
         - name: List chat members
           href: api/conversationmember-list.md
-        - name: Get chat memberGet chat between user and app
+        - name: Get chat member
           href: api/conversationmember-get.md
         - name: List messages in a chat
           href: api/chat-list-message.md
