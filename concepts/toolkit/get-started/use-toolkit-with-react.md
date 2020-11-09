@@ -13,8 +13,6 @@ If you're building apps with React, you can use the **@microsoft/mgt-react** pac
 
 This article describes the step-by-step process of using the Microsoft Graph Toolkit to create a React app and connect it to Microsoft 365. After completing the steps, you'll have a React app that shows the upcoming appointments of the currently signed in user from Microsoft 365.
 
-![Finished app](../images/mgt-finished-app.png)
-
 ## Prerequisites
 
 To follow the steps in this article, you'll need a Microsoft 365 development environment and a few tools. For details, see [getting started](./overview.md).
@@ -52,8 +50,6 @@ HTTPS=true npm start
 
 You should be able to open your app in the browser via `https://localhost:3000`.
 
-![Newly created React app running in the browser](../images/mgt-base-react-app.png)
-
 [!INCLUDE [AAD with implicit flow app registration](../includes/aad-app-registration-spa.md)]
 
 ## Connect React app to Microsoft 365
@@ -65,7 +61,6 @@ Now that you have registered your application with Azure Active Directory (Azure
 1. In the Azure Portal, go to your application registration.
 1. Verify that you are on the **Overview** page.
 1. From the **Essentials** section, copy the value of the **Application (client) ID** property
-   ![Application ID copied from the app registration overview page in the Azure Portal](../images/mgt-azure-add-appreg-copyappid.png)
 
 ### Configure the Microsoft Graph Toolkit authentication provider
 
@@ -163,7 +158,6 @@ export default App;
 You should now be able to sign in to your application with your Microsoft account.
 
 1. Go back to the browser where your React app is running. You should now see a **Sign In** button.
-   ![React app showing the Sign In button](../images/mgt-react-signin-button.png)
 1. When you click the **Sign In** button, you will be prompted to sign in with your Microsoft account (you can use the same account as the one you accessed the Azure Portal with).
 1. Because this is the first time you're using this Azure AD application, you need to consent its use in your organization.
 1. After signing in, you will be redirected to your React app. Notice that the **Sign In** button changed to show your user's name
@@ -172,8 +166,6 @@ You should now be able to sign in to your application with your Microsoft accoun
 ## Load data from Microsoft 365
 
 Microsoft Graph Toolkit not only simplifies authentication to Microsoft 365, but also loading its data. In this example, you'll show the signed in person's calendar.
-
-![Person's calendar displayed using Microsoft Graph Toolkit](../images/mgt-finished-app.png)
 
 ### Specify permissions needed for your application
 
