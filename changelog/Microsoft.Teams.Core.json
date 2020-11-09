@@ -7,16 +7,16 @@
             "ApiChange": "Method",
             "ChangedApiName": "getAllMessages",
             "ChangeType": "Addition",
-            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/chat-getallmessages?view=graph-rest-beta) method to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
-            "Target": "chat-getallmessages"
+            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/chats-getallmessages?view=graph-rest-beta) method to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+            "Target": "chats-getallmessages"
           },
           {
             "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
             "ApiChange": "Method",
             "ChangedApiName": "getAllMessages",
             "ChangeType": "Addition",
-            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/channel-getallmessages?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
-            "Target": "channel-getallmessages"
+            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/channels-getallmessages?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+            "Target": "channels-getallmessages"
           },
           {
             "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
