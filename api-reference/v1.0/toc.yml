@@ -5014,7 +5014,7 @@ items:
           href: api/teamsappinstallation-delete.md
         - name: Upgrade installed app for team
           href: api/teamsappinstallation-upgrade.md
-        - name: Get apps for user
+        - name: List apps for user
           href: api/user-list-teamsappinstallation.md
         - name: Gets installed app for user
           href: api/user-get-teamsappinstallation.md
