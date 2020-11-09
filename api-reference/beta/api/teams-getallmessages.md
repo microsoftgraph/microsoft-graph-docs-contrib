@@ -17,4 +17,4 @@ This resource is used to create webhooks to get notifications for all messages a
 
 ## See also
 
-[Webhooks](https://docs.microsoft.com/en-us/graph/api/resources/webhooks?view=graph-rest-1.0)
+[Webhooks](https://docs.microsoft.com/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true)
