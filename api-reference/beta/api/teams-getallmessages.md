@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource is used to create webhooks to get notifications for all messages across all teams in an organization. Please refer [Webhooks](../resources/webhooks.md)
+This resource is used to create webhooks to get notifications for all messages across all teams in an organization. Please refer [Webhooks](../resources/webhooks.md).
 
 ## See also
 
