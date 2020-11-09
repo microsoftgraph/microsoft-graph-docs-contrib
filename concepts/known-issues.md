@@ -335,15 +335,6 @@ To get a list of teams, see [list all teams](teams-list-all-teams.md) and
 ### POST /teams is only available in beta
 To create teams in v1.0, see [create team](/graph/api/team-put-teams).
 
-### Missing teams in list all teams
-
-Some teams that were created in the past but haven't been used recently by a Microsoft Teams user aren't listed by
-[list all teams](teams-list-all-teams.md).
-New teams will be listed.
-Certain old teams don't have a **resourceProvisioningOptions** property that contains "Team",
-which is set on newly created teams and teams that are visited in Microsoft Teams.
-In the future, we will set **resourceProvisioningOptions** on existing teams that have not been opened in Microsoft Teams.
-
 ## Users
 
 ### No instant access after creation
