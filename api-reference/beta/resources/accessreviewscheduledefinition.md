@@ -36,7 +36,7 @@ An accessReviewScheduleDefinition contains a list of [accessReviewInstance](acce
 | lastModifiedDateTime | DateTimeOffset   | DateTime when review series was last modified.|
 | status  |string   | This read-only field specifies the status of an accessReview. The typical states include `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`. |
 | descriptionForAdmins  |string  |  Description provided by review creators to provide more context of the review to admins. |
-| descriptionForReviewers |string | Description provided  by review creators to provide more context of the review to reviewers. |
+| descriptionForReviewers |string | Description provided  by review creators to provide more context of the review to reviewers. Reviewers will see this description in the email sent to them requesting their review. |
 | createdBy  |[userIdentity](../resources/useridentity.md)  | User who created this review. |
 | scope  |[accessReviewScope](../resources/accessreviewscope.md)  | Defines scope of users reviewed in a group. For supported scopes, see [accessReviewScope](accessreviewscope.md). Required on create. |
 | instanceEnumerationScope|[accessReviewScope](../resources/accessreviewscope.md)  | In the case of an all groups review, this determines the scope of which groups will be reviewed. Each group will become a unique accessReviewInstance of the access review series.  For supported scopes, see [accessReviewScope](accessreviewscope.md). | 
