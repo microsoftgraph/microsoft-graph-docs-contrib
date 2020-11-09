@@ -36,7 +36,7 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |[List your teams](../api/user-list-joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
 |[Get team photo](../api/team-get-photo.md) | Binary data | Get the photo (picture) for a team. |
 |[Complete migration](../api/team-completemigration.md)|[team](team.md)| Removes migration mode from the team and makes the team available to users to post and read messages.|
-|[Get all team messages](../api/team-getallmessages.md) | [team](team.md) | Get all messages from teams that a user is a participant in.|
+|[Get all team messages](../api/teams-getallmessages.md) | [team](team.md) | Get all messages from teams that a user is a participant in.|
 
 ## Properties
 
