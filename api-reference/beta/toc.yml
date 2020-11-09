@@ -12357,7 +12357,7 @@ items:
         - name: Update the role of a member in channel
           href: api/conversationmember-update.md
         - name: Get all channel messages
-          href: api/channel-getallmessages.md  
+          href: api/channels-getallmessages.md  
       - name: Chat
         href: resources/chat.md
         items:
@@ -12395,7 +12395,7 @@ items:
         - name: Update message
           href: api/chatmessage-update.md
         - name: Get all chat messages
-          href: api/chat-getallmessages.md  
+          href: api/chats-getallmessages.md  
         - name: List hosted content
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content
