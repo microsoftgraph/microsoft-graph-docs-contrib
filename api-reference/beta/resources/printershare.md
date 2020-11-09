@@ -72,8 +72,16 @@ The following is a JSON representation of the resource.
 ```json
 {
   "id": "String (identifier)",
-  "name": "String",
-  "createdDateTime": "String (timestamp)"
+  "displayName": "String",
+  "manufacturer": "String",
+  "model": "String",
+  "createdDateTime": "String (timestamp)",
+  "isAcceptingJobs": true,
+  "allowAllUsers": false,
+  "location": {"@odata.type": "microsoft.graph.printerLocation"},
+  "status": {"@odata.type": "microsoft.graph.printerStatus"},
+  "defaults": {"@odata.type": "microsoft.graph.printerDefaults"},
+  "capabilities": {"@odata.type": "microsoft.graph.printerCapabilities"}
 }
 ```
 

@@ -1,7 +1,7 @@
 name: Reference
 items:
   - name: Overview of Microsoft Graph
-    href: ./overview.md
+    href: /graph/overview
   - name: Get auth tokens
     items:
     - name: Overview
@@ -329,8 +329,9 @@ items:
           - name: Update
             href: api/iteminsightssettings-update.md
       - name: Mail
-        href: resources/message.md
         items:
+        - name: Message
+          href: resources/message.md
         - name: Create mail folder
           href: api/user-post-mailfolders.md
         - name: Create message
@@ -352,8 +353,9 @@ items:
         - name: Send mail
           href: api/user-sendmail.md
       - name: Notes
-        href: resources/onenote.md
         items:
+        - name: Onenote
+          href: resources/onenote.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
         - name: List notebooks
@@ -454,6 +456,18 @@ items:
           href: api/user-upgrade-teamsappinstallation.md
         - name: Uninstall app
           href: api/user-delete-teamsappinstallation.md
+      - name: To-do tasks
+        items:
+        - name: Task
+          href: resources/todotask.md
+        - name: Create task
+          href: api/todotasklist-post-tasks.md
+        - name: Create task list
+          href: api/todo-post-lists.md
+        - name: List tasks
+          href: api/todotasklist-list-tasks.md
+        - name: List task lists
+          href: api/todo-list-lists.md
       - name: User settings
         items:
         - name: User settings
@@ -1637,22 +1651,10 @@ items:
             href: api/printer-list-jobs.md
           - name: Create print job
             href: api/printer-post-jobs.md
-          - name: List allowed users
-            href: api/printer-list-allowedusers.md
-          - name: List allowed groups
-            href: api/printer-list-allowedgroups.md
           - name: List task triggers
             href: api/printer-list-tasktriggers.md
-          - name: Create allowed group
-            href: api/printer-post-allowedgroups.md
-          - name: Create allowed user
-            href: api/printer-post-allowedusers.md
           - name: Create task trigger
             href: api/printer-post-tasktriggers.md
-          - name: Delete allowed group
-            href: api/printer-delete-allowedgroup.md
-          - name: Delete allowed user
-            href: api/printer-delete-alloweduser.md
           - name: Delete task trigger
             href: api/printer-delete-tasktrigger.md
           - name: Restore factory defaults
@@ -12718,7 +12720,7 @@ items:
           href: api/onenote-list-notebooks.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
-    - name: To-do tasks (preview)
+    - name: To-do tasks
       displayName: Microsoft To Do
       items:
       - name: Overview
