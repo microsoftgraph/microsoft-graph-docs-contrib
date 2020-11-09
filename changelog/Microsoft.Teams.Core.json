@@ -1,5 +1,48 @@
 {
   "changelog": [
+    
+    {
+        "ChangeList": [
+          {
+            "Id": "0c70d79b-33ef-4ec7-a3e0-ec29d43c410e",
+            "ApiChange": "Resource",
+            "ChangedApiName": "userScopeTeamsAppInstallation",
+            "ChangeType": "Addition",
+            "Description": "Added new API [userScopeTeamsAppInstallation](https://docs.microsoft.com/en-us/graph/api/resources/userscopeteamsappinstallation?view=graph-rest-beta).",
+            "Target": "userscopeteamsappinstallation"
+          },
+          {
+            "Id": "0c70d79b-33ef-4ec7-a3e0-ec29d43c410e",
+            "ApiChange": "Method",
+            "ChangedApiName": "Get the installed app in team",
+            "ChangeType": "Addition",
+            "Description": "Added [Get the installed app in team](https://docs.microsoft.com/en-us/graph/api/teamsappinstallation-get?view=graph-rest-beta).",
+            "Target": "teamsappinstallation-get"
+          },
+          {
+            "Id": "0c70d79b-33ef-4ec7-a3e0-ec29d43c410e",
+            "ApiChange": "Method",
+            "ChangedApiName": "Get installed app for user",
+            "ChangeType": "Addition",
+            "Description": "Added [Get intalled app for user](https://docs.microsoft.com/en-us/graph/api/user-get-teamsappinstallation?view=graph-rest-beta).",
+            "Target": "user-get-teamsappinstallation"
+          },
+          {
+            "Id": "0c70d79b-33ef-4ec7-a3e0-ec29d43c410e",
+            "ApiChange": "Method",
+            "ChangedApiName": "Get chat between user and app",
+            "ChangeType": "Addition",
+            "Description": "Added [Get chat between user and app](https://docs.microsoft.com/en-us/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta).",
+            "Target": "userscopeteamsappinstallation-get-chat"
+          }
+        ],
+        "Id": "0c70d79b-33ef-4ec7-a3e0-ec29d43c410e",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2020-11-09T00:00:00",
+        "WorkloadArea": "Teamwork",
+        "SubArea": ""
+      },
     {
         "ChangeList": [
           {
@@ -72,7 +115,7 @@
             "ChangedApiName": "teamsAppInstallation",
             "ChangeType": "Addition",
             "Description": "Added methods to the [teamsAppInsatllation](https://docs.microsoft.com/en-us/graph/api/resource/teamsappinstallation?view=graph-rest-v1.0) Methods table",
-            "Target": "user-upgrade-teamsappinstallation"
+            "Target": "teamsAppInstallation"
           }
         ],
         "Id": "9445dfee-ec0e-4f79-aa50-d8270614f48a",
