@@ -30,30 +30,34 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/manager
-GET /me?$expand=manager($levels=max)
 GET /users/{id | userPrincipalName}/manager
+```
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me?$expand=manager
+GET /users?$expand=manager($levels=max)
 GET /users/{id | userPrincipalName}/?$expand=manager($levels=max)
 ```
 
 ## Optional query parameters
 
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.  
-`$expand` manager query requires:
+If your request includes`$expand=manager($levels=max)` parameter to get the manager's chain, you must also include the following:
 
-- `?$expand=manager($levels=max)` QueryString parameter
 - `$count=true` QueryString parameter
 - `ConsistencyLevel=eventual` request header
 
->**Note:** `max` is the only allowed value for `$levels`.  
+>**Note:** `max` is the only allowed value for `$levels`.
 > When `$level` parameter is not specified, only the immediate manager is returned.  
-> You can specify `$select` inside `$expand` to select the manager's properties: `$expand=manager($levels=max;$select=id,displayName)`
+> You can specify `$select` inside `$expand` to select the individual managers' properties: `$expand=manager($levels=max;$select=id,displayName)`
 
 ## Request headers
 
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Required.  |
-| ConsistencyLevel | eventual. Needed only for `$expand` with `$levels=max` |
+| ConsistencyLevel | eventual. Required when the request includes the `$expand=manager($levels=max)` parameter. |
 
 ## Request body
 
@@ -65,9 +69,11 @@ If successful, this method returns a `200 OK` response code and a [directoryObje
 
 ## Examples
 
-##### Get Manager Request
+### Example 1: Get Manager Request
 
 The following is an example of the Get Manager request.
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,7 +101,7 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 
 ---
 
-##### Get Manager Response
+#### Response
 
 The following is an example of the response.
 >**Note**: The response object shown here might be shortened for readability.
@@ -118,37 +124,22 @@ Content-type: application/json
 }
 ```
 
-##### Get Transitive Managers Request
+### Example 2: Get manager chain up to the root level
 
 The following is an example of the Get Transitive Managers request.
 
-# [HTTP](#tab/http)
+#### Request
+
 <!-- {
   "blockType": "request",
   "name": "get_transitive_managers"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me?$expand=manager($levels=max;$select=id,displayName)&$select=id,displayName&$count=true
+ConsistencyLevel: eventual
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-transitive-manager-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-transitive-manager-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-transitive-manager-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-transitive-manager-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-##### Get Transitive Managers Response
+#### Response
 
 The following is an example of the response. Transitive Managers are displayed hierarchically.
 >**Note**: The response object shown here might be shortened for readability.
