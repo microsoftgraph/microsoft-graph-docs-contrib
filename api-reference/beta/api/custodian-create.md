@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [custodian](../resources/custodian.md) object.  Once the custodian object is created, you will need to create the custodians [UserSource](../resources/usersource.md) to reference their Mailbox and OD4B site.
+Create a new [custodian](../resources/custodian.md) object. After the custodian object is created, you will need to create the custodian's [userSource](../resources/usersource.md) to reference their mailbox and OneDrive for Business site.
 
 ## Permissions
 
@@ -51,8 +51,8 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|email|String|Custodian's primary smtp address. Required.|
-|applyHoldToSources|Boolean|Indicate if hold is applied to custodian's sources (such as mailboxes, sites, or Teams).|
+|email|String|Custodian's primary SMTP address. Required.|
+|applyHoldToSources|Boolean|Indicates whether a hold is applied to the custodian's sources (such as mailboxes, sites, or Teams).|
 
 ## Response
 
