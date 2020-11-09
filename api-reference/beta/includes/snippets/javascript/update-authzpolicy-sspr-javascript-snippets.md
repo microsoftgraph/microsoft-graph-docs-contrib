@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const authorizationPolicy = {
-    allowedToUseSSPR: true
+   allowedToUseSSPR:true
 };
 
 let res = await client.api('/policies/authorizationPolicy/authorizationPolicy')

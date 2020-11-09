@@ -1,7 +1,7 @@
 ---
 title: "channel resource type"
 description: "A channel is a collection of chatMessages within a team. "
-author: "clearab"
+author: "laujan"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
@@ -35,6 +35,7 @@ where files are shared, and where tabs are added.
 |[Create chatMessage in a channel](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | Send a message to a channel. |
 |[Create chatMessage reply in a channel](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Reply to a message in a channel.|
 |[Get files folder](../api/driveitem-get.md)| [driveItem](driveitem.md) | Retrieves the details of the SharePoint folder where the files for the channel are stored. |
+|[Complete migration](../api/channel-completemigration.md)|[channel](channel.md)| Removes thee migration mode from the channel and makes the channel available to users to post and read messages.|
 
 ## Properties
 
@@ -57,7 +58,7 @@ Instance attributes are properties with special behaviors. These properties are 
 |:-----------------------|:-------|:-------------------------|
 |@microsoft.graph.channelCreationMode|string|Indicates that the channel is in migration state and is currently being used for migration purposes. It accepts one value: `migration`.|
 
-> **Note**: `ChannelCreationMode`  is an enum that takes the value `migration`.
+> **Note**: `channelCreationMode`  is an enum that takes the value `migration`.
 
 For a POST request example, see [Request (create channel in migration state)](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams#request-create-a-team-in-migration-state).
 
@@ -109,5 +110,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-
