@@ -21,7 +21,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-v1.0). |
 | Addition | beta | Added the [getAllMessages](/graph/api/chat-getallmessages?view=graph-rest-beta) method to the [chat](/graph/api/resources/chat?view=graph-rest-beta)  resource.|
 | Addition | beta | Added the [getAllMessages](/graph/api/channel-getallmessages?view=graph-rest-beta) method to the [channel](/graph/api/resources/channel?view=graph-rest-beta) resource.|
-| Addition | beta | Added the [getAllMessages](/graph/api/team-getallmessages?view=graph-rest-beta) method to the [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
+| Addition | beta | Added the [getAllMessages](/graph/api/teams-getallmessages?view=graph-rest-beta) method to the [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
 
 ## October 2020
 
