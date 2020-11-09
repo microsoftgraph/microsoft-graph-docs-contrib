@@ -32,6 +32,7 @@ where files are shared, and where tabs are added.
 |[Add members to channel](../api/channel-add-members.md) | [conversationMember](conversationmember.md) | Add members to a channel. Only supported for `channel`with membershipType of `private`.|
 |[Update the role of a member in a channel](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Update the properties of a member of the channel. Only supported for channel with membershipType of `private`.|
 |[Delete a member from a channel](../api/channel-delete-members.md) | None | Delete a member from a channel. Only supported for `channelType` of `private`.|
+|[Complete migration](../api/channel-completemigration.md)|[channel](channel.md)| Removes thee migration mode from the channel and makes the channel available to users to post and read messages.|
 
 ## Properties
 
