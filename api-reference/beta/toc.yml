@@ -1490,7 +1490,7 @@ items:
           - name: List
             href: api/sitesource-list.md
           - name: Create
-            href: api/sitesource-create.md
+            href: api/sitesource-post.md
           - name: Get
             href: api/sitesource-get.md
           - name: Delete
