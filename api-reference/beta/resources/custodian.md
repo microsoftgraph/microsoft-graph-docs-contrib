@@ -20,7 +20,7 @@ eDiscovery custodians are a user and all of their digital assets such as email a
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List custodians](../api/custodian-list.md)|[custodian](../resources/custodian.md) collection|Get a list of the [custodian](../resources/custodian.md) objects and their properties.|
-|[Create custodian](../api/custodian-create.md)|[custodian](../resources/custodian.md)|Create a new [custodian](../resources/custodian.md) object.|
+|[Create custodian](../api/custodian-post.md)|[custodian](../resources/custodian.md)|Create a new [custodian](../resources/custodian.md) object.|
 |[Get custodian](../api/custodian-get.md)|[custodian](../resources/custodian.md)|Read the properties and relationships of a [custodian](../resources/custodian.md) object.|
 |[Update custodian](../api/custodian-update.md)|[custodian](../resources/custodian.md)|Update the properties of a [custodian](../resources/custodian.md) object.|
 |[Delete custodian](../api/custodian-delete.md)|None|Deletes a [custodian](../resources/custodian.md) object.|
