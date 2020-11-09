@@ -39,10 +39,10 @@
         {
           "Id": "5421a0d9-a155-43d1-ac9c-8d8e00529c2f",
           "ApiChange": "Resource",
-          "ChangedApiName": "List members,Get member,Add member,Update member,Delete member,conversationMember,aadUserConversationMember",
+          "ChangedApiName":  "List members of channel,Get member of channel, Add member to channel, Update role of member in channel, Delete member from channel",
           "ChangeType": "Addition",
           "Description": "[List members of channel](https://docs.microsoft.com/en-us/graph/api/channel-list-members?view=graph-rest-beta), [Get member of channel](https://docs.microsoft.com/en-us/graph/api/channel-get-members?view=graph-rest-beta) [Add member to channel](https://docs.microsoft.com/en-us/graph/api/channel-add-members?view=graph-rest-beta),  [Update role of member in channel](https://docs.microsoft.com/en-us/graph/api/channel-update-members?view=graph-rest-beta), [Delete member from channel](https://docs.microsoft.com/en-us/graph/api/channel-delete-members?view=graph-rest-beta), updated [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource file.",         
-          "Target": "List members of channel, Get member of channel, Add memberto channel, Update role of member in channel, Delete member from channel, channel resource type".
+          "Target": "channel"
         }
       ],
       "Id": "5421a0d9-a155-43d1-ac9c-8d8e00529c2f",
@@ -117,10 +117,10 @@
         {
           "Id": "e94cb262-641b-4376-9451-00741b7e48cc",
           "ApiChange": "Resource",
-          "ChangedApiName": "List members,Get member,Add member,Update member,Delete member,conversationMember,aadUserConversationMember",
+          "ChangedApiName": "List members of channel,Get member of channel, Add member to channel, Update role of member in channel, Delete member from channel",
           "ChangeType": "Addition",
-          "Description": [List members of channel](https://docs.microsoft.com/en-us/graph/api/channel-list-members?view=graph-rest-v1.0), [Get member of channel](https://docs.microsoft.com/en-us/graph/api/channel-get-members?view=graph-rest-v1.0) [Add member to channel](https://docs.microsoft.com/en-us/graph/api/channel-add-members?view=graph-rest-v1.0),  [Update role of member in channel](https://docs.microsoft.com/en-us/graph/api/channel-update-members?view=graph-rest-v1.0), [Delete member from channel](https://docs.microsoft.com/en-us/graph/api/channel-delete-members?view=graph-rest-v1.0), updated [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-v1.0) resource file.|         
-          "Target": "List members of channel, Get member of channel, Add memberto channel, Update role of member in channel, Delete member from channel, channel resource type".
+          "Description": "[List members of channel](https://docs.microsoft.com/en-us/graph/api/channel-list-members?view=graph-rest-v1.0), [Get member of channel](https://docs.microsoft.com/en-us/graph/api/channel-get-members?view=graph-rest-v1.0) [Add member to channel](https://docs.microsoft.com/en-us/graph/api/channel-add-members?view=graph-rest-v1.0),  [Update role of member in channel](https://docs.microsoft.com/en-us/graph/api/channel-update-members?view=graph-rest-v1.0), [Delete member from channel](https://docs.microsoft.com/en-us/graph/api/channel-delete-members?view=graph-rest-v1.0), updated [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-v1.0) resource file",        
+          "Target": "channel"
         }
       ],
       "Id": "e94cb262-641b-4376-9451-00741b7e48cc",
@@ -180,7 +180,7 @@
           "ChangedApiName": "List members,Add members,Remove members",
           "ChangeType": "Addition",
           "Description": "Added the [List members](https://docs.microsoft.com/en-us/graph/api/team-list-members?view=graph-rest-1.0\u0026preserve-view=true), [Add members](https://docs.microsoft.com/en-us/graph/api/team-post-members?view=graph-rest-1.0\u0026preserve-view=true), and [Remove members](https://docs.microsoft.com/en-us/graph/api/team-delete-members?view=graph-rest-1.0\u0026preserve-view=true) methods.",
-          "Target": "List members,Add members,Remove members"
+          "Target": "channel"
         }
       ],
       "Id": "426b7709-5f5b-48b1-b1da-b6ad6d690c19",
