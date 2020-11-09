@@ -27,11 +27,11 @@ eDiscovery custodians are a user and all of their digital assets such as email a
 |[release](../api/custodian-release.md)|None|[Release a custodian from a case](https://docs.microsoft.com/microsoft-365/compliance/manage-new-custodians#release-a-custodian-from-a-case)|
 |[activate](../api/custodian-activate.md)|None|If a custodian has been released from a case, use activate to [re-activate the custodian](https://docs.microsoft.com/microsoft-365/compliance/manage-new-custodians#re-activate-custodian) and make them part of the case again.|
 |[List siteSources](../api/sitesource-list.md)|[siteSource](../resources/sitesource.md) collection|Get the siteSource resources from the siteSources navigation property.|
-|[Create siteSources](../api/sitesource-create.md)|[siteSource](../resources/sitesource.md)|Create a new siteSource object.|
+|[Create siteSources](../api/sitesource-post.md)|[siteSource](../resources/sitesource.md)|Create a new siteSource object.|
 |[List unifiedGroupSources](../api/unifiedgroupsource-list.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md) collection|Get the unifiedGroupSource resources from the unifiedGroupSources navigation property.|
-|[Create unifiedGroupSources](../api/unifiedgroupsource-create.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md)|Create a new unifiedGroupSource object.|
+|[Create unifiedGroupSources](../api/unifiedgroupsource-post.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md)|Create a new unifiedGroupSource object.|
 |[List userSources](../api/usersource-list.md)|[userSource](../resources/usersource.md) collection|Get the userSource resources from the userSources navigation property.|
-|[Create userSources](../api/usersource-create.md)|[userSource](../resources/usersource.md)|Create a new userSource object.|
+|[Create userSources](../api/usersource-post.md)|[userSource](../resources/usersource.md)|Create a new userSource object.|
 
 ## Properties
 

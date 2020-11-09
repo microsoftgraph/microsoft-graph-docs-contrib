@@ -20,7 +20,7 @@ Data source entity for Groups - This is the container for a custodian's group
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List unifiedGroupSources](../api/unifiedgroupsource-list.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md) collection|Get a list of the [unifiedGroupSource](../resources/unifiedgroupsource.md) objects and their properties.|
-|[Create unifiedGroupSource](../api/unifiedgroupsource-create.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md)|Create a new [unifiedGroupSource](../resources/unifiedgroupsource.md) object.|
+|[Create unifiedGroupSource](../api/unifiedgroupsource-post.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md)|Create a new [unifiedGroupSource](../resources/unifiedgroupsource.md) object.|
 |[Get unifiedGroupSource](../api/unifiedgroupsource-get.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md)|Read the properties and relationships of an [unifiedGroupSource](../resources/unifiedgroupsource.md) object.|
 |[Delete unifiedGroupSource](../api/unifiedgroupsource-delete.md)|None|Deletes an [unifiedGroupSource](../resources/unifiedgroupsource.md) object.|
 

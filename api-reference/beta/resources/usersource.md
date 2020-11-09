@@ -20,7 +20,7 @@ Data source entity for a user - This is the container for a custodian's mailbox 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List userSources](../api/usersource-list.md)|[userSource](../resources/usersource.md) collection|Get a list of the [userSource](../resources/usersource.md) objects and their properties.|
-|[Create userSource](../api/usersource-create.md)|[userSource](../resources/usersource.md)|Create a new [userSource](../resources/usersource.md) object.|
+|[Create userSource](../api/usersource-post.md)|[userSource](../resources/usersource.md)|Create a new [userSource](../resources/usersource.md) object.|
 |[Get userSource](../api/usersource-get.md)|[userSource](../resources/usersource.md)|Read the properties and relationships of a [userSource](../resources/usersource.md) object.|
 |[Delete userSource](../api/usersource-delete.md)|None|Deletes a [userSource](../resources/usersource.md) object.|
 
