@@ -1,6 +1,6 @@
 ---
 title: "Delete custodian"
-description: "Deletes a custodian object."
+description: "Delete a custodian object."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "compliance"
@@ -66,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/{ediscoveryC
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
