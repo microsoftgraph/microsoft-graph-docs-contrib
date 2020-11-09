@@ -1,6 +1,6 @@
 ---
 title: "custodian: activate"
-description: "Reactivate a custodian in a case"
+description: "Reactivate a custodian in a case."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "compliance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-If a custodian has been released from a case, use activate to [re-activate the custodian](https://docs.microsoft.com/microsoft-365/compliance/manage-new-custodians#re-activate-custodian) and make them part of the case again.
+Activate a custodian that has been released from a case to make them part of the case again. For details, see [Manage custodians in an Advanced eDiscovery case](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian).
 
 ## Permissions
 
@@ -67,7 +67,6 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{ediscoveryCas
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
