@@ -1429,65 +1429,65 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### cloudPcDeviceImageStatus values
 
-|Member|Value|
-|:---|:---|
-|pending|0|
-|ready|1|
-|failed|2|
+|Member|
+|:---|
+|pending|
+|ready|
+|failed|
 
 ### cloudPcDeviceImageStatusDetails values
 
-|Member|Value|
-|:---|:---|
-|internalServerError|0|
-|sourceImageNotFound|1|
+|Member|
+|:---|
+|internalServerError|
+|sourceImageNotFound|
 
 ### cloudPcOnPremisesConnectionHealthCheckErrorType values
 
-|Member|Value|
-|:---|:---|
-|dnsCheckFqdnNotFound|100|
-|dnsCheckUnknownError|199|
-|adJoinCheckFqdnNotFound|200|
-|adJoinCheckIncorrectCredentials| 201|
-|adJoinCheckOrganizationalUnitNotFound| 202|
-|adJoinCheckOrganizationalUnitIncorrectFormat| 203|
-|adJoinCheckUnknownError |299|
-|endpointConnectivityCheckUrlNotWhitelisted| 300|
-|endpointConnectivityCheckUnknownError| 399|
-|aadConnectivityCheckUnknownError |499|
-|resourceAvailabilityCheckNoSubnetIP |500|
-|resourceAvailabilityCheckUnknownError |599|
-|internalServerUnknownError |999|
+|Member|
+|:---|
+|dnsCheckFqdnNotFound|
+|dnsCheckUnknownError|
+|adJoinCheckFqdnNotFound|
+|adJoinCheckIncorrectCredentials|
+|adJoinCheckOrganizationalUnitNotFound|
+|adJoinCheckOrganizationalUnitIncorrectFormat|
+|adJoinCheckUnknownError |
+|endpointConnectivityCheckUrlNotWhitelisted|
+|endpointConnectivityCheckUnknownError|
+|aadConnectivityCheckUnknownError |
+|resourceAvailabilityCheckNoSubnetIP |
+|resourceAvailabilityCheckUnknownError |
+|internalServerUnknownError |
 
 ### cloudPcOnPremisesConnectionStatus values
 
-|Member|Value|
-|:---|:---|
-|pending|0|
-|running|10|
-|passed|20|
-|failed|30|
-|unknownFutureValue|999|
+|Member|
+|:---|
+|pending|
+|running|
+|passed|
+|failed|
+|unknownFutureValue|
 
 ### cloudPcProvisioningPolicyImageType values
 
-|Member|Value|
-|:---|:---|
-|custom|0|
-|gallery|1|
+|Member|
+|:---|
+|custom|
+|gallery|
 
 ### cloudPcStatus values
 
-|Member|Value|
-|:---|:---|
-|notProvisioned|0|
-|provisioning|1|
-|provisioned|2|
-|upgrading|3|
-|inGracePeriod|4|
-|deprovisioning|5|
-|upgradeFailed|6|
-|provisionFailed|7|
-|deprovisionFailed|8|
-|reprovisionFailed|9|
+|Member|
+|:---|
+|notProvisioned|
+|provisioning|
+|provisioned|
+|upgrading|
+|inGracePeriod|
+|deprovisioning|
+|upgradeFailed|
+|provisionFailed|
+|deprovisionFailed|
+|reprovisionFailed|
