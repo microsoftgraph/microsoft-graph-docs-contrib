@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object by ID. This returns all properties of the scheduled access review series except for the associated accessReviewInstances. Each accessReviewScheduleDefinition has at least one instance, representing each recurrence of the review, as well as individual groups being reviewed.
+Retrieve an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object by ID. This returns all properties of the scheduled access review series except for the associated accessReviewInstances. Each accessReviewScheduleDefinition has at least one instance. An instance represents an individual group under review during one recurrence of the review.
 
 To retrieve the instances of the access review series, use the [list accessReviewInstance](accessreviewinstance-list.md) API.
 

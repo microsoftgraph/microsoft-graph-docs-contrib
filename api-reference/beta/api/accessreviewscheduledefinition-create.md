@@ -50,7 +50,7 @@ The following table shows the properties accepted to create an accessReview.
   descriptionForReviewers | string | Context of the review provided to reviewers. Required. |
 | scope | [accessReviewScope](../resources/accessreviewscope.md) | Defines the scope of users reviewed in a group. See  [accessReviewScope](../resources/accessreviewscheduledefinition.md). Required.| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | In the case of an all groups review, this determines the scope of which groups will be reviewed. See [accessReviewScope](../resources/accessreviewscheduledefinition.md). | 
-| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| No | The settings for an access review series. Recurrence is determined here. See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| The settings for an access review series. Recurrence is determined here. See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
 | reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Defines who the reviewers are. If none are specified, the review is a self-review (users reviewed review their own access). See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). |
 
 
@@ -59,7 +59,7 @@ If successful, this method returns a `201, Created` response code and an [access
 
 ## Examples
 
-This is an example of creating an access review series with a specific user as the reviewer. The review reviews all members of a specific group. It recurs weekly.
+This is an example of creating an access review series with a specific user, whose user object id is 7eae4444-d425-48b2-adf2-3c777f6256f3, as the reviewer. The review reviews all members of a specific group, whose group object id is b7a059cb-038a-4802-8fc9-b9d1ed0c4444. It recurs weekly.
 
 ### Request
 In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
@@ -74,8 +74,8 @@ Content-type: application/json
 
 {
   "displayName": "Test create",
-  "descriptionForAdmins": "Test create",
-  "descriptionForReviewers": "Test create",
+  "descriptionForAdmins": "New scheduled access review",
+  "descriptionForReviewers": "If you have any questions, contact jerry@contoso.com",
   "scope": {
     "query": "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0c4444/transitiveMembers",
     "queryType": "MicrosoftGraph"

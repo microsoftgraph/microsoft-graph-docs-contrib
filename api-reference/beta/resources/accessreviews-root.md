@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+>[!NOTE]
+>A newer version of Access Review APIs can be found [here](accessreviewsv2-root.md). This new version only supports reviews of group membership at this time. For reviews of all other resources, please use the legacy APIs.
+
 You can use [Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of user's access rights.
 
 Typical customer scenarios for access reviews of group memberships and application access are:
