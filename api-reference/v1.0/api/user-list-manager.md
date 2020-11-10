@@ -43,9 +43,10 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=max)
 ## Optional query parameters
 
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.  
-If your request includes`$expand=manager($levels=max)` parameter to get the manager's chain, you must also include the following:
 
-- `$count=true` QueryString parameter
+If your request includes the `$expand=manager($levels=max)` parameter to get the manager's chain, you must also include the following:
+
+- `$count=true` query string parameter
 - `ConsistencyLevel=eventual` request header
 
 >**Note:** `max` is the only allowed value for `$levels`.
@@ -69,9 +70,9 @@ If successful, this method returns a `200 OK` response code and a [directoryObje
 
 ## Examples
 
-### Example 1: Get Manager Request
+### Example 1: Get manager
 
-The following is an example of the Get Manager request.
+The following example shows a request to get the manager.
 
 #### Request
 
@@ -126,7 +127,7 @@ Content-type: application/json
 
 ### Example 2: Get manager chain up to the root level
 
-The following is an example of the Get Transitive Managers request.
+The following example shows a request to get the manager chain up to the root level.
 
 #### Request
 
@@ -141,7 +142,8 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response. Transitive Managers are displayed hierarchically.
+The following is an example of the response. Transitive managers are displayed hierarchically.
+
 >**Note**: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
