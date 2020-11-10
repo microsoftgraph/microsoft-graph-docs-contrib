@@ -44,17 +44,6 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response. 
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
-## Subscribe for changes
-
-[`chatMessage`](../resources/chatMessage.md) supports subcribing to changes (creation, updation and deletion) using [Graph change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in realtime.
-
-Please refer to [subscription documentation](../resources/subscription.md) on how to create subscription.
-
-| Subscription resource | Description  | Allows [include resource data](/graph/webhooks-with-resource-data) | Permission types supported |
-|:----------------------|:-------------|:-------------------------------------------------------------------|:---------------------------|
-| /teams/getAllMessages | Allows subscribing to messages (and replies) for all [teams](../resources/team.md) across the tenant. | Yes | Application |
-| /teams/{id}/channels/{id}/messages | Allows subscribing to messages (and replies) in a specific [channel](../resources/channel.md) in a [team](../resources/team.md) | Yes (only in Application) | Application, Delegated |
-
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
