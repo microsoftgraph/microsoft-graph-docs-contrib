@@ -4651,6 +4651,19 @@ items:
           href: api/reportroot-getyammergroupsactivitygroupcounts.md
         - name: Get activity counts
           href: api/reportroot-getyammergroupsactivitycounts.md
+    - name: Search
+      displayname: Microsoft Search API
+      items:
+      - name: Query
+        items:
+        - name: Overview
+          href: resources/search-api-overview.md
+        - name: Search request type
+          href: resources/searchrequest.md
+        - name: Search response type
+          href: resources/searchresponse.md
+        - name: Query data
+          href: api/search-query.md
     - name: Security
       displayname: Security API, Microsoft Intelligent Security Graph
       items:
