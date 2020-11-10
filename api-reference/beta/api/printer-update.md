@@ -28,7 +28,8 @@ Only the app that registered the printer is allowed to update the printer using 
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application| Printer.ReadWrite.All |
 
-   >**NOTE:** Right now, only printers that don't have physical device can be updated using application permissions.
+>**NOTE:** Right now, only printers that don't have physical device can be updated using application permissions.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -45,7 +46,8 @@ PATCH /print/printers/{id}
 ### Delegated permissions and JSON payload
 
 If using delegated permissions, in the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. 
-Following properties can be updated using delegated permissions:
+
+The following properties can be updated using delegated permissions.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -55,7 +57,8 @@ Following properties can be updated using delegated permissions:
 
 ### Application permissions and JSON payload
 In the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. 
-Following properties can be updated using application permissions:
+
+The following properties can be updated using application permissions.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
