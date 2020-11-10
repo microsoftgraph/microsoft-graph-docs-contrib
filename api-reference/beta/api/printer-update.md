@@ -61,8 +61,8 @@ Following properties can be updated using application permissions:
 |defaults|[printerDefaults](../resources/printerdefaults.md)|The printer's default print settings.|
 |capabilities|[printerCapabilities](../resources/printerCapabilities.md)|The capabilities of the printer associated with this printer share.|
 |displayName|String|The name of the printer.|
-|manufacturer|String|The manufacturer reported by the printer.|
-|model|String|The model name reported by the printer.|
+|manufacturer|String|The manufacturer of the printer.|
+|model|String|The model name of the printer.|
 |status|[printerStatus](printerstatus.md)|The processing status of the printer, including any errors.|
 |isAcceptingJobs|Boolean|Whether the printer is currently accepting new print jobs.|
 
