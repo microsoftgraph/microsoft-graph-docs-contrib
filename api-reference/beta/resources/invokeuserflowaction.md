@@ -27,7 +27,7 @@ Inherits from [authenticationAction](../resources/authenticationaction.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|userFlow|[b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)|The user flow that will be invoked if this action is executed.|
+|userFlow|[b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)|The user flow that is invoked if this action is executed.|
 
 ## JSON representation
 
