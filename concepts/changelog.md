@@ -237,7 +237,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the [b2cAuthenticationMethodsPolicy](/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta&preserve-view=true) resource type and the following opertations: [Get b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta&preserve-view=true) and [Update b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta&preserve-view=true).|
 |Addition|beta|Added the **Policy.ReadWrite.AuthenticationMethod** permission to the [Permissions reference](permissions-reference.md#policy-permissions).|
 |Addition|v1.0|Added the [permissionGrantPolicy](/graph/api/resources/permissiongrantpolicy?view=graph-rest-1.0&preserve-view=true) resource type. Permission grant policies describe the conditions which must be met for permissions to be granted to apps.|
-|Addition|v1.0|Added the [authorizationPolicy](https://docs.microsoft.com/en-us/graph/api/resources/authorizationPolicy?view=graph-rest-1.0) resource type.|
+|Addition|v1.0|Added the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-1.0) resource type.|
 
 ### Teamwork
 

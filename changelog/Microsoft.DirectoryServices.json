@@ -119,7 +119,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authorizationPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [authorizationPolicy](https://docs.microsoft.com/en-us/graph/api/resources/authorizationPolicy?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [authorizationPolicy](https://docs.microsoft.com/graph/api/resources/authorizationPolicy?view=graph-rest-1.0) resource type.",
           "Target": "authorizationPolicy"
         }
       ],
