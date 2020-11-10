@@ -107,9 +107,15 @@ This resource supports:
 | [List tasks](../api/planneruser-list-tasks.md)                                             | [plannerTask](plannertask.md) collection                                         | Get plannerTasks assigned to the user.                                                                                                                                                                                              |
 | **Schema extensions**                                                                      |                                                                                  |                                                                                                                                                                                                                                     |
 | [Add schema extension values](/graph/extensibility-schema-groups)                          | None                                                                             | Create a schema extension definition and then use it to add custom typed data to a resource.                                                                                                                                        |
+| **To-do tasks** |||
+|[Create task](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Create a [todoTask](todotask.md) in the specified task list.|
+|[Create task list](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Create a To Do task list in the user's mailbox. |
+|[List tasks](../api/todotasklist-list-tasks.md)|[todoTask](todotask.md) collection|Get all the [todoTask](todotask.md) resources in the specified list.|
+|[List task lists](../api/todo-list-lists.md) | [todoTaskList](todotasklist.md) collection | Get all the task lists in the user's mailbox. |
 | **User settings**                                                                          |                                                                                  |                                                                                                                                                                                                                                     |
 | [Get settings](../api/usersettings-get.md)                                                 | [userSettings](usersettings.md)                                                  | Read the user and organization settings object.                                                                                                                                                                                     |
 | [Update settings](../api/usersettings-update.md)                                           | [userSettings](usersettings.md)                                                  | Update the properties of the settings object.                                                                                                                                                                                       |
+
 
 ## Properties
 
@@ -260,6 +266,7 @@ The age group and minor consent properties are optional properties used by Azure
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
 |planner|[plannerUser](planneruser.md)| Entry-point to the Planner resource that might exist for a user. Read-only.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable.|
+|todo|[todo](todo.md)|Represents the To Do services available to a user. |
 
 ## JSON representation
 

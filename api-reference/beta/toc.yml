@@ -329,8 +329,9 @@ items:
           - name: Update
             href: api/iteminsightssettings-update.md
       - name: Mail
-        href: resources/message.md
         items:
+        - name: Message
+          href: resources/message.md
         - name: Create mail folder
           href: api/user-post-mailfolders.md
         - name: Create message
@@ -352,8 +353,9 @@ items:
         - name: Send mail
           href: api/user-sendmail.md
       - name: Notes
-        href: resources/onenote.md
         items:
+        - name: Onenote
+          href: resources/onenote.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
         - name: List notebooks
@@ -454,6 +456,18 @@ items:
           href: api/user-upgrade-teamsappinstallation.md
         - name: Uninstall app
           href: api/user-delete-teamsappinstallation.md
+      - name: To-do tasks
+        items:
+        - name: Task
+          href: resources/todotask.md
+        - name: Create task
+          href: api/todotasklist-post-tasks.md
+        - name: Create task list
+          href: api/todo-post-lists.md
+        - name: List tasks
+          href: api/todotasklist-list-tasks.md
+        - name: List task lists
+          href: api/todo-list-lists.md
       - name: User settings
         items:
         - name: User settings
@@ -12709,7 +12723,7 @@ items:
           href: api/onenote-list-notebooks.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
-    - name: To-do tasks (preview)
+    - name: To-do tasks
       displayName: Microsoft To Do
       items:
       - name: Overview

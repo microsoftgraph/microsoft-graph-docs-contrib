@@ -121,6 +121,23 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the **teamCreationMode** property to the  [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
 |Addition|beta|Added the **channelCreationMode** property to the [channel](/graph/api/resources/channel?view=graph-rest-beta) resource.|
 
+### To-do tasks
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|v1.0|Added the **todo** relationship to [user](/graph/api/resources/user?view=graph-rest-1.0) resource.|
+|Addition|v1.0|Added the [todo](/graph/api/resources/todo?view=graph-rest-1.0) resource type.|
+|Addition|v1.0|Added the [todoTaskList](/graph/api/resources/todoTaskList?view=graph-rest-1.0) resource type.|
+|Addition|v1.0|Added the [todoTask](/graph/api/resources/todoTask?view=graph-rest-1.0) resource type.|
+|Addition|v1.0|Added the [linkedResource](/graph/api/resources/linkedResource?view=graph-rest-1.0) resource type.|
+|Addition|v1.0|Added the **wellknownListName** enumeration type.|
+|Addition|v1.0|Added the **bodyType** enumeration type.|
+|Addition|v1.0|Added the **importance** enumeration type.|
+|Addition|v1.0|Added the **taskStatus** enumeration type.|
+|Addition|v1.0|Added the [delta](/graph/api/todoTaskList-delta?view=graph-rest-1.0) method to the [todoTaskList](/graph/api/resources/todoTaskList?view=graph-rest-1.0) resource.|
+|Addition|v1.0|Added the [delta](/graph/api/todoTask-delta?view=graph-rest-1.0) method to the [todoTask](/graph/api/resources/todoTask?view=graph-rest-1.0) resource.|
+
+
 ### Users
 
 | **Change type** | **Version** | **Description**                          |
