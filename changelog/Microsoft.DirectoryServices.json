@@ -115,6 +115,25 @@
     {
       "ChangeList": [
         {
+          "Id": "a4f81577-234e-11eb-8b0e-705e20bbe57e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authorizationPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [authorizationPolicy](https://docs.microsoft.com/en-us/graph/api/resources/authorizationPolicy?view=graph-rest-1.0) resource type.",
+          "Target": "authorizationPolicy"
+        }
+      ],
+      "Id": "a4f353ec-234e-11eb-8b0e-705e20bbe57e",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-11-10T12:17:04.676Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+              {
+        {
           "Id": "118736d5-b41d-43c0-9328-355d05cff91c",
           "ApiChange": "resource, methods",
           "ChangedApiName": "organizationalBrandingProperties",
@@ -237,12 +256,8 @@
           "Target": "application"
         }
       ],
-      "Id": "2f7cfb1b-38bc-4842-b90f-bc0b1e401231",
       "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2020-11-10T00:00:00",
       "WorkloadArea": "Identity and access",
-      "SubArea": ""
     },
     {
       "ChangeList": [
