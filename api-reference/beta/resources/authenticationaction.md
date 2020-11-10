@@ -17,7 +17,7 @@ Defines the action to take during an authentication event. An authenticationActi
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List onSignupStart](../api/authenticationeventspolicy-list-onsignupstart.md)|[authenticationAction](../resources/authenticationaction.md) collection|Get the authenticationAction resources from the onSignupStart navigation property.|
+|[List onSignupStart](../api/authenticationeventspolicy-list-onsignupstart.md)|[authenticationAction](../resources/authenticationaction.md) collection|Get the authenticationAction objects from the onSignupStart object.|
 |[Create onSignupStart](../api/authenticationeventspolicy-post-onsignupstart.md)|[authenticationAction](../resources/authenticationaction.md)|Create a new authenticationAction object.|
 |[Update onSignupStart](../api/authenticationeventspolicy-update-onsignupstart.md)|[authenticationAction](../resources/authenticationaction.md)|Update the properties of an onSignupStart object.|
 |[Get onSignupStart](../api/authenticationeventspolicy-get-authenticationaction.md)|[authenticationAction](../resources/authenticationaction.md)|Read the properties and relationships of an [authenticationAction](../resources/authenticationaction.md) object.|
@@ -28,8 +28,8 @@ Defines the action to take during an authentication event. An authenticationActi
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The identifier of the action.|
-|priority|Int32|The priority of the action which is used for determining one out of multiple applicable actions.|
-|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filter based on the source of the authentication which is used to determine whether the action is executed or not.|
+|priority|Int32|The priority of the action that is used to determine one out of multiple applicable actions.|
+|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filter based on the source of the authentication that is used to determine whether the action is executed.|
 
 ## Relationships
 
@@ -57,4 +57,3 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-

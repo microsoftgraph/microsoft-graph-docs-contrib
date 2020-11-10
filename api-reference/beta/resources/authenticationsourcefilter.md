@@ -11,13 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Filter based on the source of the authentication which is used to determine whether the action is executed or not.
+Filter based on the source of the authentication that is used to determine whether the action is executed.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|includeApplications|String collection|Applications to include. These applications will trigger the associated action when used as the client application in the authentication flow.|
+|includeApplications|String collection|Applications to include. These applications trigger the associated action when used as the client application in the authentication flow.|
 
 ## Relationships
 

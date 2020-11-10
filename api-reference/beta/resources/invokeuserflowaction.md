@@ -20,14 +20,14 @@ Inherits from [authenticationAction](../resources/authenticationaction.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The identifier of the action. Inherited from [authenticationAction](../resources/authenticationaction.md)|
-|priority|Int32|The priority of the action which is used for determining one out of multiple applicable actions. Inherited from [authenticationAction](../resources/authenticationaction.md)|
-|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filter based on the source of the authentication which is used to determine whether the action is executed or not. Inherited from [authenticationAction](../resources/authenticationaction.md)|
+|priority|Int32|The priority of the action that is used to determine one out of multiple applicable actions. Inherited from [authenticationAction](../resources/authenticationaction.md)|
+|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filter based on the source of the authentication that is used to determine whether the action is executed. Inherited from [authenticationAction](../resources/authenticationaction.md)|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|userFlow|[b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)|The user flow that will be invoked if this action is executed.|
+|userFlow|[b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)|The user flow that is invoked if this action is executed.|
 
 ## JSON representation
 
