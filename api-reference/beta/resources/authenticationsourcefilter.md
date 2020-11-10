@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Filter based on the source of the authentication which is used to determine whether the action is executed or not.
+Filter based on the source of the authentication that is used to determine whether the action is executed.
 
 ## Properties
 
