@@ -9,7 +9,7 @@ author: waldekmastykarz
 
 Microsoft Graph Toolkit is a set of web components that simplify connecting to Microsoft Graph and allow you to focus on your application instead. Microsoft Graph Toolkit is available as a generic set of web components distributed through the **@microsoft/mgt** npm package.
 
-If you're building apps with React, you can use the **@microsoft/mgt-react** package, which wraps MGT web components in React components and makes it easier to pass complex data.
+If you're building apps with React, you can use the **@microsoft/mgt-react** package, which wraps Microsoft Graph Toolkit web components in React components and makes it easier to pass complex data.
 
 This article describes the step-by-step process of using the Microsoft Graph Toolkit to create a React app and connect it to Microsoft 365. After completing the steps, you'll have a React app that shows the upcoming appointments of the currently signed in user from Microsoft 365.
 
