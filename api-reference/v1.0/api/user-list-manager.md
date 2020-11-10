@@ -11,8 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Returns the user or organizational contact assigned as the user's manager.  
-Optionally, you can expand the manager's chain up to the root node.
+Returns the user or organizational contact assigned as the user's manager. Optionally, you can expand the manager's chain up to the root node.
 
 ## Permissions
 
@@ -27,12 +26,14 @@ One of the following permissions is required to call this API. To learn more, in
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
+
+Get the manager:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
-
+Get the management chain:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me?$expand=manager
