@@ -50,7 +50,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |priority|Int32|The priority of the action that is used to determine one out of multiple applicable actions.|
-|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filter based on the source of the authentication which is used to determine whether the action is executed or not.|
+|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filter based on the source of the authentication that is used to determine whether the action is executed.|
 |userFlow|[b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)|The reference to the user flow object that is invoked in this action.|
 
 ## Response
