@@ -28,6 +28,7 @@ Only the app that registered the printer is allowed to update the printer using 
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application| Printer.ReadWrite.All |
 
+   >**NOTE:** Right now, only printers that don't have physical device can be updated using application permissions.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
