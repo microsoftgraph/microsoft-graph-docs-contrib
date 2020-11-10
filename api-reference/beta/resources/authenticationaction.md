@@ -17,11 +17,11 @@ Defines the action to take during an authentication event. An authenticationActi
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List onSignupStart](../api/authenticationeventspolicy-list-onsignupstart.md)|[authenticationAction](../resources/authenticationaction.md) collection|Get the authenticationAction objects from the onSignupStart object.|
-|[Create onSignupStart](../api/authenticationeventspolicy-post-onsignupstart.md)|[authenticationAction](../resources/authenticationaction.md)|Create a new authenticationAction object.|
-|[Update onSignupStart](../api/authenticationeventspolicy-update-onsignupstart.md)|[authenticationAction](../resources/authenticationaction.md)|Update the properties of an onSignupStart object.|
-|[Get onSignupStart](../api/authenticationeventspolicy-get-authenticationaction.md)|[authenticationAction](../resources/authenticationaction.md)|Read the properties and relationships of an [authenticationAction](../resources/authenticationaction.md) object.|
-|[Delete onSignupStart](../api/authenticationeventspolicy-delete-onsignupstart.md)|None|Delete an [authenticationAction](../resources/authenticationaction.md) object.|
+|[List authenticationActions](../api/authenticationaction-list.md)|[authenticationAction](../resources/authenticationaction.md) collection|Get the authenticationAction objects for a specific authentication event.|
+|[Create authenticationAction](../api/authenticationaction-create.md)|[authenticationAction](../resources/authenticationaction.md)|Create a new authenticationAction object.|
+|[Update authenticationAction](../api/authenticationaction-update.md)|[authenticationAction](../resources/authenticationaction.md)|Update the properties of an authenticationAction object.|
+|[Get authenticationAction](../api/authenticationaction-get.md)|[authenticationAction](../resources/authenticationaction.md)|Read the properties and relationships of an [authenticationAction](../resources/authenticationaction.md) object.|
+|[Remove authenticationAction](../api/authenticationaction-remove.md)|None|Remove an [authenticationAction](../resources/authenticationaction.md) object.|
 
 ## Properties
 

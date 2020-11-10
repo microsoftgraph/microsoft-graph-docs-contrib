@@ -9937,16 +9937,16 @@ items:
             href: resources/authenticationeventspolicy.md
           - name: Get
             href: api/authenticationeventspolicy-get.md
-          - name: List onSignUpStart actions
-            href: api/authenticationeventspolicy-list-onsignupstart.md
-          - name: Get onSignUpStart action
-            href: api/authenticationeventspolicy-get-authenticationaction.md
-          - name: Create onSignUpStart action
-            href: api/authenticationeventspolicy-post-onsignupstart.md
-          - name: Update onSignUpStart action
-            href: api/authenticationeventspolicy-update-onsignupstart.md
-          - name: Delete onSignUpStart action
-            href: api/authenticationeventspolicy-delete-onsignupstart.md
+          - name: List authenticationActions
+            href: api/authenticationaction-list.md
+          - name: Get authenticationAction
+            href: api/authenticationaction-get.md
+          - name: Create authenticationAction
+            href: api/authenticationaction-create.md
+          - name: Update authenticationAction
+            href: api/authenticationaction-update.md
+          - name: Remove authenticationAction
+            href: api/authenticationaction-remove.md
         - name: Authentication flows policy
           items:
           - name: Authentication flows policy

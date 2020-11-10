@@ -18,11 +18,11 @@ Authentication events are used to invoke actions at specific points in the authe
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get events](../api/authenticationeventspolicy-get.md)|[authenticationEventsPolicy](../resources/authenticationeventspolicy.md)|Read the properties and relationships of an [authenticationEventsPolicy](../resources/authenticationeventspolicy.md) object.|
-|[List authenticationAction](../api/authenticationaction-list.md)|[authenticationAction](../resources/authenticationaction.md) collection|Get the authenticationAction resources from the onSignupStart navigation property.|
+|[List authenticationActions](../api/authenticationaction-list.md)|[authenticationAction](../resources/authenticationaction.md) collection|Get the authenticationAction objects for a specific authentication event.|
 |[Create authenticationAction](../api/authenticationaction-create.md)|[authenticationAction](../resources/authenticationaction.md)|Create a new authenticationAction object.|
+|[Update authenticationAction](../api/authenticationaction-update.md)|[authenticationAction](../resources/authenticationaction.md)|Update the properties of an authenticationAction object.|
 |[Get authenticationAction](../api/authenticationaction-get.md)|[authenticationAction](../resources/authenticationaction.md)|Read the properties and relationships of an [authenticationAction](../resources/authenticationaction.md) object.|
-|[Update authenticationAction](../api/authenticationaction-update.md)|[authenticationAction](../resources/authenticationaction.md)|Update the properties of an onSignupStart object.|
-|[Remove authenticationAction](../api/authenticationaction-remove.md)|None|Delete an [authenticationAction](../resources/authenticationaction.md) object.|
+|[Remove authenticationAction](../api/authenticationaction-remove.md)|None|Remove an [authenticationAction](../resources/authenticationaction.md) object.|
 
 ## Properties
 
