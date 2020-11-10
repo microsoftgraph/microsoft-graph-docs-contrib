@@ -40,6 +40,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Teams [callRecord][]
 - Teams [chatMessage][]
 - Teams [presence][] (preview)
+- Print [printTaskDefinition][]
 
 You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
@@ -295,6 +296,7 @@ The following table lists the latency to expect between an event happening in th
 |[message][] | Unknown | Unknown |
 |[alert][] | Less than 3 minutes | 5 minutes |
 |[presence][] (preview) | Less than 10 seconds | 1 minute |
+|[printTaskDefinition][] | Less than 1 minute | 5 minutes |
 |[user][] | Less than 2 minutes | 15 minutes |
 
 >**Note:** The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
@@ -321,3 +323,4 @@ The following table lists the latency to expect between an event happening in th
 [presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
+[printTaskDefinition]: /graph/api/resources/printtaskdefinition
