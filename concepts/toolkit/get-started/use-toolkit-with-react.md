@@ -19,13 +19,11 @@ To follow the steps in this article, you'll need a Microsoft 365 development env
 
 ## Create a React app
 
-Create a new React app by running the following command.
+Create a new React app by running the following command. This will create a new React app using TypeScript, which will help you write more robust code and avoid runtime errors.
 
 ```cmd
 npx create-react-app my-m365-app --template typescript
 ```
-
-This will create a new React app using TypeScript, which will help you write more robust code and avoid runtime errors.
 
 Change the working directory to the newly created app.
 
@@ -39,7 +37,7 @@ Next, install the **mgt-react** npm package, which contains the Microsoft Graph 
 npm i @microsoft/mgt-react
 ```
 
-Confirm that you can run the app
+Confirm that you can run the app.
 
 ```cmd
 HTTPS=true npm start
@@ -109,9 +107,9 @@ With these changes, the **src/index.tsx** file will look like the following.
   serviceWorker.unregister();
   ```
 
-### Add the Sign In button
+### Add the Sign in button
 
-Add the **Login** Microsoft Graph Toolkit React component, which will display the **Sign In** button people can use to sign in with their Microsoft account to your app.
+Add the **Login** Microsoft Graph Toolkit React component, which will display the **Sign in** button people can use to sign in with their Microsoft account to your app.
 
 1. In the code editor, open the **src/App.tsx** file, and to the list of imports add:
 
@@ -157,10 +155,10 @@ export default App;
 
 You should now be able to sign in to your application with your Microsoft account.
 
-1. Go back to the browser where your React app is running. You should now see a **Sign In** button.
-1. When you click the **Sign In** button, you will be prompted to sign in with your Microsoft account (you can use the same account as the one you accessed the Azure Portal with).
+1. Go back to the browser where your React app is running. You should now see a **Sign in** button.
+1. When you click the **Sign in** button, you will be prompted to sign in with your Microsoft account (you can use the same account as the one you accessed the Azure Portal with).
 1. Because this is the first time you're using this Azure AD application, you need to consent its use in your organization.
-1. After signing in, you will be redirected to your React app. Notice that the **Sign In** button changed to show your user's name
+1. After signing in, you will be redirected to your React app. Notice that the **Sign in** button changed to show your user's name
   ![React app showing user info retrieved from Microsoft 365 using Microsoft Graph Toolkit](../images/mgt-react-userinfo.png).
 
 ## Load data from Microsoft 365
@@ -171,7 +169,7 @@ Microsoft Graph Toolkit not only simplifies authentication to Microsoft 365, but
 
 Before you can load data from Microsoft 365, you need to specify the list of permission scopes your application must be granted to access user's data. These scopes differ depending on what kind of information you want to show. In this case, you will need access to people's calendar as well as basic access to information about people that is also displayed in the calendar. You can find the scopes required by each API in the [Microsoft Graph API documentation](/graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0).
 
-1. In the code editor, open the **src/index.tsx** file, and update the Provider initialization code.
+1. In the code editor, open the **src/index.tsx** file, and update the provider initialization code.
 
     ```tsx
     Providers.globalProvider = new MsalProvider({
@@ -182,11 +180,11 @@ Before you can load data from Microsoft 365, you need to specify the list of per
 
 ### Show user's data after signing in
 
-Next, extend the application to show data from the user's calendar. You can access this information only after the user has signed in. To do this, you will need to trackthe  user's sign in state and show the calendar data after the user has signed in with their Microsoft account.
+Next, extend the application to show data from the user's calendar. You can access this information only after the user has signed in. To do this, you will need to track the  user's sign in state and show the calendar data after the user has signed in with their Microsoft account.
 
 #### Track user's sign in state
 
-To track the user's sign in state in your application, you will use the React `useState` and `useEffect` hooks in combination with Provider event handlers.
+To track the user's sign in state in your application, you will use the React `useState` and `useEffect` hooks in combination with provider event handlers.
 
 1. In the code editor, open the **src/App.tsx** file and extend the existing React `import` statement.
 
