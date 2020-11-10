@@ -67,7 +67,7 @@ The following properties can be updated using application permissions.
 |displayName|String|The name of the printer.|
 |manufacturer|String|The manufacturer of the printer.|
 |model|String|The model name of the printer.|
-|status|[printerStatus](printerstatus.md)|The processing status of the printer, including any errors.|
+|status|[printerStatus](../resources/printerstatus.md)|The processing status of the printer, including any errors.|
 |isAcceptingJobs|Boolean|Whether the printer is currently accepting new print jobs.|
 
 ### Application permissions and IPP payload
