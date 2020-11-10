@@ -29,7 +29,7 @@ Defines the action to take during an authentication event. An authenticationActi
 |:---|:---|:---|
 |id|String|The identifier of the action.|
 |priority|Int32|The priority of the action which is used for determining one out of multiple applicable actions.|
-|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filter based on the source of the authentication which is used to determine whether the action is executed or not.|
+|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filter based on the source of the authentication that is used to determine whether the action is executed.|
 
 ## Relationships
 
