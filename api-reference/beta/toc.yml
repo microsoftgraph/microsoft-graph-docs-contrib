@@ -10120,6 +10120,15 @@ items:
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
             - name: Delete
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
+          - name: Email policy
+            href: resources/emailauthenticationmethodconfiguration.md
+            items:
+            - name: Get
+              href: api/emailauthenticationmethodconfiguration-get.md
+            - name: Update
+              href: api/emailauthenticationmethodconfiguration-update.md
+            - name: Delete
+              href: api/emailauthenticationmethodconfiguration-delete.md
         - name: B2C authentication methods policy
           href: resources/b2cauthenticationmethodspolicy.md
           items:
