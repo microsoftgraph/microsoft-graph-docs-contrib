@@ -1,5 +1,5 @@
 ---
-title: "List onSignupStart"
+title: "List authenticationActions"
 description: "Get the authenticationAction resources from the onSignupStart navigation property."
 author: "jkdouglas"
 localization_priority: Normal
@@ -7,11 +7,11 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# List onSignupStart
+# List authenticationActions
 
 Namespace: microsoft.graph
 
-Get the authenticationAction resources from the onSignupStart navigation property.
+Get the authenticationAction resources from the onSignupStart event.
 
 ## Permissions
 
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: List onSignUpStart actions
+### Example 1: List authenticationActions for the onSignUpStart event
 
 #### Request
 
@@ -109,7 +109,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Expand invokeUserFlowActions in onSignUpStart
+### Example 2: Expand invokeUserFlowActions in authenticationActions for the onSignUpStart event
 
 #### Request
 

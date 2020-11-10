@@ -1,5 +1,5 @@
 ---
-title: "Delete onSignupStart"
+title: "Remove authenticationAction"
 description: "Remove an authenticationAction from an authenticationEventsPolicy."
 author: "jkdouglas"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Delete onSignupStart
+# Remove authenticationAction
 
 Namespace: microsoft.graph
 

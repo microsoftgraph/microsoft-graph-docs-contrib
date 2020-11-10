@@ -1,17 +1,17 @@
 ---
-title: "Update onSignupStart"
-description: "Update the properties of an onSignupStart object."
+title: "Update authenticationAction"
+description: "Update the properties of an authenticationAction object."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Update onSignupStart
+# Update authenticationAction
 
 Namespace: microsoft.graph
 
-Update the properties of an onSignupStart object.
+Update the properties of an authenticationAction object.
 
 ## Permissions
 
