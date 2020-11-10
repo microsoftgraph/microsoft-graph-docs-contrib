@@ -21,7 +21,7 @@ Inherits from [authenticationAction](../resources/authenticationaction.md).
 |:---|:---|:---|
 |id|String|The identifier of the action. Inherited from [authenticationAction](../resources/authenticationaction.md)|
 |priority|Int32|The priority of the action which is used for determining one out of multiple applicable actions. Inherited from [authenticationAction](../resources/authenticationaction.md)|
-|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filter based on the source of the authentication which is used to determine whether the action is executed or not. Inherited from [authenticationAction](../resources/authenticationaction.md)|
+|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filter based on the source of the authentication that is used to determine whether the action is executed. Inherited from [authenticationAction](../resources/authenticationaction.md)|
 
 ## Relationships
 
