@@ -1,5 +1,5 @@
 ---
-title: "Get notifications for messages in a channel or chat"
+title: "Get change notifications for messages in Teams channels and chats using Microsoft Graph"
 description: "Change notifications enables you to listen to changes to messages in channel or chat"
 author: "RamjotSingh"
 localization_priority: Priority
@@ -7,9 +7,9 @@ ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
 
-# Get notifications for messages in Microsoft Teams channels and chats
+# Get change notifications for messages in Teams channels and chats using Microsoft Graph
 
-Change notifications enables you to listen to changes (create, update and delete) to [messages](/graph/api/resources/chatMessage?view=graph-rest-1.0&preserve-view=true) in [channel](/graph/api/resources/channel?view=graph-rest-1.0&preserve-view=true) or [chat](/graph/api/resources/chat?view=graph-rest-1.0&preserve-view=true).
+Change notifications enable you to listen to changes (create, update and delete) to [messages](/graph/api/resources/chatMessage?view=graph-rest-1.0&preserve-view=true) in [channel](/graph/api/resources/channel?view=graph-rest-1.0&preserve-view=true) or [chat](/graph/api/resources/chat?view=graph-rest-1.0&preserve-view=true).
 
 Change notifications enables you to listen to messages in a low latency model by maintaining a [subscription](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true). You can additionally get the resource data in the notifications and thus avoiding the need to call into API to get the payload.
 

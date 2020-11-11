@@ -17,7 +17,7 @@ Retrieve the list of [messages](../resources/chatmessage.md) (without the replie
 
 To get the replies for a message, call the [list message replies](channel-list-messagereplies.md) or the [get message reply](channel-get-messagereply.md) API. 
 
-> This API supports subscribing to changes (create, update and delete) using [change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in real-time. Please refer to [chatMessage change notification](/graph/teams-changenotifications-chatMessage) documentation for more details.
+> **Note**: This API supports subscribing to changes (create, update, and delete) using [change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatMessage).
 
 ## Permissions
 
@@ -64,9 +64,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-#### Example 1: Getting messages in a channel using GET API
-
-##### Request
+### Request
 
 Here is an example of the request.
 
@@ -93,7 +91,7 @@ GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/
 
 ---
 
-##### Response
+### Response
 Here is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.

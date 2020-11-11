@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the list of [messages](../resources/chatmessage.md) in a [chat](../resources/chat.md).
 
-> This API supports subscribing to changes (create, update and delete) using [change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in real-time. Please refer to [chatMessage change notification](/graph/teams-changenotifications-chatMessage) for more details.
+> **Note**: This API supports subscribing to changes (create, update, and delete) using [change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatMessage).
 
 ## Permissions
 
@@ -59,9 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-#### Example 1: Getting messages in a chat using GET API
-
-##### Request
+### Request
 
 Here is an example of the request.
 
@@ -87,7 +85,7 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages
 
 ---
 
-##### Response
+### Response
 Here is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
