@@ -99,9 +99,9 @@ Microsoft Teams APIs can enhance apps inside and outside of Teams:
 | [Activity feed](/microsoftteams/platform/concepts/activity-feed)|Engage users via feed notifications.|
 | [Calling and online meetings (preview)](/graph/api/resources/communications-api-overview) |Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|
 
-### Get notified for changes in Teams
+### Get notified for changes in Microsoft Teams
 
-Microsoft Teams supports subscribing to changes (creation, updation or deletion) to messages in [channels](/graph/api/resources/channel?view=graph-rest-1.0&preserve-view=true) and [chats](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) to allows apps to get near-instant updates. You can refer to [chatMessage subscription](teams-changenotifications-chatMessage) documentation on how to subscribe to changes.
+Microsoft Teams supports subscribing to changes (creation, updation or deletion) to messages in [channels](/graph/api/resources/channel?preserve-view=true) and [chats](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) to allows apps to get near-instant updates. You can refer to [chatMessage subscription](teams-changenotifications-chatmessage) documentation on how to subscribe to changes.
 
 ## API reference
 

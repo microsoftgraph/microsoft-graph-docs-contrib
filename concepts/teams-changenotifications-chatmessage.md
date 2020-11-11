@@ -9,15 +9,15 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for messages in Teams channels and chats using Microsoft Graph
 
-Change notifications enable you to listen to changes (create, update and delete) to [messages](/graph/api/resources/chatMessage?view=graph-rest-1.0&preserve-view=true) in [channel](/graph/api/resources/channel?view=graph-rest-1.0&preserve-view=true) or [chat](/graph/api/resources/chat?view=graph-rest-1.0&preserve-view=true).
+Change notifications enable you to listen to changes (create, update and delete) to [messages](/graph/api/resources/chatMessage?preserve-view=true) in [channel](/graph/api/resources/channel?preserve-view=true) or [chat](/graph/api/resources/chat?preserve-view=true).
 
-Change notifications enables you to listen to messages in a low latency model by maintaining a [subscription](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true). You can additionally get the resource data in the notifications and thus avoiding the need to call into API to get the payload.
+Change notifications enables you to listen to messages in a low latency model by maintaining a [subscription](/graph/api/resources/webhooks?preserve-view=true). You can additionally get the resource data in the notifications and thus avoiding the need to call into API to get the payload.
 
 *The maximum time a subscription can last is 60 minutes, however subscriptions can be renewed till the caller has permissions to access to resource.*
 
 ## Subscribing to changes at tenant level
 
-To track all changes related to messages at tenant level you can use subscriptions at tenant level for channel and chat messages. This requires creation of 2 subscriptions, one to track all messages across [channels](/graph/api/resources/channel?view=graph-rest-1.0&preserve-view=true) and other to track all messages across [chats](/graph/api/resources/chat?view=graph-rest-1.0&preserve-view=true).
+To track all changes related to messages at tenant level you can use subscriptions at tenant level for channel and chat messages. This requires creation of 2 subscriptions, one to track all messages across [channels](/graph/api/resources/channel?preserve-view=true) and other to track all messages across [chats](/graph/api/resources/chat?preserve-view=true).
 
 ### Subscribing to messages across channels
 
