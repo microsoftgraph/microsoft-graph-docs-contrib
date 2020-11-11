@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)| TeamMember.ReadWrite.All|
+|Delegated (work or school account)| TeamMember.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application| TeamMember.ReadWrite.All|
+|Application| TeamMember.ReadWrite.All |
 
 ## HTTP request
 
@@ -80,6 +80,10 @@ Content-length: 26
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-conversationmember-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-conversationmember-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -87,6 +87,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-reply-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-reply-message-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -140,7 +144,7 @@ Content-length: 160
 
 ### Example 2: Import messages
 
-> **Note**: No special permission scopes are required for this scenario because the request is part of **chatMessage**; scopes for **chatMessage** apply here as well.
+> **Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario.
 
 #### Request
 <!-- { "blockType": "ignored" } -->
