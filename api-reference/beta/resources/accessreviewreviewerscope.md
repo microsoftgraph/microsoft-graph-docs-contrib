@@ -25,11 +25,11 @@ The accessReviewReviewerScope defines who will review instances of an [accessRev
 
 ### Supported queries for accessReviewReviewerScope
 
-|Scenario| Query | Additional Comments |
-|--|--|--|
-| Group owner as reviewer | /groups/{group id}/owners ||
-| Specific user as reviewer | /users/{user id} ||
-| Manager of user being reviewed as reviewer | ./manager | queryRoot must be 'decisions' |
+|Scenario| query | queryType | queryRoot |
+|--|--|--|--|
+| Group owner as reviewer | /groups/{group id}/owners |MicrosoftGraph||
+| Specific user as reviewer | /users/{user id} |MicrosoftGraph||
+| Manager of user being reviewed as reviewer | ./manager | MicrosoftGraph |decisions|
 
 ## Relationships
 None.

@@ -28,7 +28,7 @@ The following are queries supported as the `scope` property in an [accessReviewS
 |--|--|-- |
 | Review of all users assigned to a group | /groups/{group id}/transitiveMembers ||
 | Review of guest users assigned to a group | /groups/{group id}/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest') ||
-| Review of guest users assigned to all groups | ./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest') | Note that the corresponding instanceEnumerationScope should also be passed in along with this|
+| Review of guest users assigned to all groups | ./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest') | Note that the corresponding instanceEnumerationScope should also be passed in to the accessReviewScheduleDefinition. See table below for instanceEnumerationScope query. |
 | Entitlement Management Access Package Assigment Reviews | /identityGovernance/entitlementManagement/accessPackageAssignments?$filter=(accessPackageId eq '{package id}' and assignmentPolicyId eq '{id}')| Note that only READ is supported for Access Package Assignment Reviews|
 
 ### Supported queries for accessReviewScope as instanceEnumerationScope
@@ -36,7 +36,7 @@ The following are queries supported as the `instanceEnumerationScope` property i
 
 |Scenario| Query | Additional Comments |
 |--|--|--|
-| Review of guest users assigned to all groups, excluding specified groups | /groups?$filter=(groupTypes/any(c:c+eq+'Unified') and id ne '{group id}' and id ne '{group id}' and id ne '{group id}')&$count=true | Note that the corresponding scope should also be passed in along with this. See "Guest users assigned to all groups" in scope property table above. |
+| Review of guest users assigned to all groups, excluding specified groups | /groups?$filter=(groupTypes/any(c:c+eq+'Unified') and id ne '{group id}' and id ne '{group id}' and id ne '{group id}')&$count=true | Note that the corresponding scope should also be passed in to the accessReviewScheduleDefinition. See "Review of guest users assigned to all groups" in scope property table above for the scope query. |
 
 ## Relationships
 None.

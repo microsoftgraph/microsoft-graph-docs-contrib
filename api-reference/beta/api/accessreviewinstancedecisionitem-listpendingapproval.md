@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Delegated (personal Microsoft account)|Not supported.|
 
- The signed-in user must also be in a directory role that permits them to read an access review. The signed-in user will also only see decisions of which they are assigned reviewer in that decision's instance's accessReviewScheduleDefinition.
+The signed-in user will also only see decisions of which they are assigned reviewer in that decision's instance's accessReviewScheduleDefinition.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ If successful, this method returns a `200 OK` response code and an array of [acc
 
 ## Examples
 ### Request
-The following example shows a request to retrieve all the decisions on an instance of an access review.
+The following example shows a request to retrieve all the decisions on an instance of an access review pending the calling user's approval.
 
 <!-- {
   "blockType": "request",

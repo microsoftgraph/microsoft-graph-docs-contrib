@@ -105,12 +105,7 @@ Content-type: application/json
         "type": "noEnd",
         "startDate": "2020-09-08T12:02:30.667Z"
       }
-    },
-    "applyActions": [
-      {
-        "@odata.type": "microsoft.graph.disableAndDeleteUserApplyAction"
-      }
-    ]
+    }
   }
 }
 ```
