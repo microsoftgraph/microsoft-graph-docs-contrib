@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## HTTP request
-
+<!-- { "blockType": "ignored"} -->
 ```http
 GET /teams/{id}/channels/{id}/members/{id}
 ```
@@ -57,7 +57,10 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 ### Request
 
 Here is an example of the request.
-
+<!-- {
+  "blockType": "request",
+  "name": "channel-get_member"
+} -->
 ```http
 GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members/{id}
 ```
@@ -67,7 +70,10 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members/{id}
 Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. 
-
+<!-- {
+  "blockType": "request",
+  "name": "get_channel_member"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -89,7 +95,7 @@ Content-length: 201
 <!--
 {
   "type": "#page.annotation",
-  "description": "get channel member",
+  "description": "get_channel_member",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
