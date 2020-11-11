@@ -1456,8 +1456,6 @@ items:
             href: api/custodian-get.md
           - name: Update
             href: api/custodian-update.md
-          - name: Delete
-            href: api/custodian-delete.md
           - name: Activate
             href: api/custodian-activate.md
           - name: Release

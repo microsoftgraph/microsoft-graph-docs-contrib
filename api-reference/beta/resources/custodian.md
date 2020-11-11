@@ -23,7 +23,6 @@ eDiscovery custodians are a user and all of their digital assets such as email a
 |[Create custodian](../api/custodian-post.md)|[custodian](../resources/custodian.md)|Create a new [custodian](../resources/custodian.md) object.|
 |[Get custodian](../api/custodian-get.md)|[custodian](../resources/custodian.md)|Read the properties and relationships of a [custodian](../resources/custodian.md) object.|
 |[Update custodian](../api/custodian-update.md)|[custodian](../resources/custodian.md)|Update the properties of a [custodian](../resources/custodian.md) object.|
-|[Delete custodian](../api/custodian-delete.md)|None|Deletes a [custodian](../resources/custodian.md) object.|
 |[release](../api/custodian-release.md)|None|[Release a custodian from a case](https://docs.microsoft.com/microsoft-365/compliance/manage-new-custodians#release-a-custodian-from-a-case)|
 |[activate](../api/custodian-activate.md)|None|If a custodian has been released from a case, use activate to [re-activate the custodian](https://docs.microsoft.com/microsoft-365/compliance/manage-new-custodians#re-activate-custodian) and make them part of the case again.|
 |[List siteSources](../api/sitesource-list.md)|[siteSource](../resources/sitesource.md) collection|Get the siteSource resources from the siteSources navigation property.|
