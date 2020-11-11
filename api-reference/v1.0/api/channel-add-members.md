@@ -124,8 +124,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.channel",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.conversationMember"
 } -->
 
 ```http
