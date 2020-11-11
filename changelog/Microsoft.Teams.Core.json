@@ -4,7 +4,7 @@
     {
         "ChangeList": [
           {
-            "Id": "0c70d79b-33ef-4ec7-a3e0-ec29d43c410e",
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
             "ApiChange": "Resource",
             "ChangedApiName": "userScopeTeamsAppInstallation",
             "ChangeType": "Addition",
@@ -12,7 +12,7 @@
             "Target": "userscopeteamsappinstallation"
           },
           {
-            "Id": "0c70d79b-33ef-4ec7-a3e0-ec29d43c410e",
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
             "ApiChange": "Method",
             "ChangedApiName": "Get the installed app in team",
             "ChangeType": "Addition",
@@ -20,7 +20,7 @@
             "Target": "teamsappinstallation-get"
           },
           {
-            "Id": "0c70d79b-33ef-4ec7-a3e0-ec29d43c410e",
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
             "ApiChange": "Method",
             "ChangedApiName": "Get installed app for user",
             "ChangeType": "Addition",
@@ -28,7 +28,7 @@
             "Target": "user-get-teamsappinstallation"
           },
           {
-            "Id": "0c70d79b-33ef-4ec7-a3e0-ec29d43c410e",
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
             "ApiChange": "Method",
             "ChangedApiName": "Get chat between user and app",
             "ChangeType": "Addition",
@@ -36,7 +36,7 @@
             "Target": "userscopeteamsappinstallation-get-chat"
           }
         ],
-        "Id": "0c70d79b-33ef-4ec7-a3e0-ec29d43c410e",
+        "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
         "Cloud": "prd",
         "Version": "beta",
         "CreatedDateTime": "2020-11-09T00:00:00",
@@ -46,7 +46,7 @@
     {
         "ChangeList": [
           {
-            "Id": "9445dfee-ec0e-4f79-aa50-d8270614f48a",
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
             "ApiChange": "Resource",
             "ChangedApiName": "userScopeTeamsAppInstallation",
             "ChangeType": "Addition",
@@ -54,7 +54,7 @@
             "Target": "userscopeteamsappinstallation"
           },
           {
-            "Id": "9445dfee-ec0e-4f79-aa50-d8270614f48a",
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
             "ApiChange": "Method",
             "ChangedApiName": "Get the installed app in team",
             "ChangeType": "Addition",
@@ -62,7 +62,7 @@
             "Target": "teamsappinstallation-get"
           },
           {
-            "Id": "9445dfee-ec0e-4f79-aa50-d8270614f48a",
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
             "ApiChange": "Method",
             "ChangedApiName": "List apps for user",
             "ChangeType": "Addition",
@@ -70,7 +70,7 @@
             "Target": "user-list-teamsappinstallation"
           },
           {
-            "Id": "9445dfee-ec0e-4f79-aa50-d8270614f48a",
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
             "ApiChange": "Method",
             "ChangedApiName": "Get installed app for user",
             "ChangeType": "Addition",
@@ -78,7 +78,7 @@
             "Target": "user-get-teamsappinstallation"
           },
           {
-            "Id": "9445dfee-ec0e-4f79-aa50-d8270614f48a",
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
             "ApiChange": "Method",
             "ChangedApiName": "Add app for user",
             "ChangeType": "Addition",
@@ -86,7 +86,7 @@
             "Target": "user-add-teamsappinstallation"
           },
           {
-            "Id": "9445dfee-ec0e-4f79-aa50-d8270614f48a",
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
             "ApiChange": "Method",
             "ChangedApiName": "Remove app for user",
             "ChangeType": "Addition",
@@ -94,7 +94,7 @@
             "Target": "user-delete-teamsappinstallation"
           },
           {
-            "Id": "9445dfee-ec0e-4f79-aa50-d8270614f48a",
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
             "ApiChange": "Method",
             "ChangedApiName": "Upgrade installed app for user",
             "ChangeType": "Addition",
@@ -102,7 +102,7 @@
             "Target": "user-upgrade-teamsappinstallation"
           },
           {
-            "Id": "9445dfee-ec0e-4f79-aa50-d8270614f48a",
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
             "ApiChange": "Method",
             "ChangedApiName": "Get chat between user and app",
             "ChangeType": "Addition",
@@ -110,7 +110,7 @@
             "Target": "userscopeteamsappinstallation-get-chat"
           },
           {
-            "Id": "9445dfee-ec0e-4f79-aa50-d8270614f48a",
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
             "ApiChange": "Resource",
             "ChangedApiName": "teamsAppInstallation",
             "ChangeType": "Addition",
@@ -118,7 +118,7 @@
             "Target": "teamsAppInstallation"
           }
         ],
-        "Id": "9445dfee-ec0e-4f79-aa50-d8270614f48a",
+        "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
         "Cloud": "prd",
         "Version": "v1.0",
         "CreatedDateTime": "2020-11-09T00:00:00",
