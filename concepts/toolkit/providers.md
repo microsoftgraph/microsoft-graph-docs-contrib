@@ -62,7 +62,7 @@ All providers expose the `getAccessToken` method that returns a promise with a v
 
 In scennarios where you want to add Toolkit components to an application with pre-existing authentication code, you can create a custom provider that hooks into your authentication mechanism, instead of using our predefined providers. The toolkit provides two ways to create new providers:
 
-- Create a new `SimpleProvider` that returns an access token from your auhtentication code by passing in a function.
+- Create a new `SimpleProvider` that returns an access token from your authentication code by passing in a function.
 - Extend the `IProvider` abstract class.
 
 For more details about each one, see [custom providers](./providers/custom.md).
