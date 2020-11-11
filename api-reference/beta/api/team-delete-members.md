@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Delete members
+# Remove members from team
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)| TeamMember.ReadWrite.All|
+|Delegated (work or school account)| TeamMember.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application| TeamMember.ReadWrite.All|
+|Application| TeamMember.ReadWrite.All |
 
 ## HTTP request
 
@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 DELETE /teams/{team-id}/members/{membership-id}
+DELETE /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 ```
 
 ## Request headers
@@ -70,6 +71,10 @@ DELETE https://graph.microsoft.com/beta/teams/{teamsId}/members/{membership-id}
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-members-from-team-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-members-from-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -84,4 +89,6 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
