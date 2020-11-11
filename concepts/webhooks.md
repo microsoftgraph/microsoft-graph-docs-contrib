@@ -41,6 +41,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Teams [chatMessage][]
 - Teams [presence][] (preview)
 - Print [printTaskDefinition][]
+- ToDo Task [todoTask]
 
 You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
@@ -61,6 +62,9 @@ Or to the root folder of a SharePoint/OneDrive for Business drive:
 Or to a new [Security API](security-concept-overview.md) alert:
 `/security/alerts?$filter=status eq 'newAlert'`,
 `/security/alerts?$filter=vendorInformation/provider eq 'ASC'`
+
+Or to the tasks in user's To Do list:
+`/me/todo/lists/{todoTaskListId}/tasks`
 
 ### Azure AD resource limitations
 
@@ -298,6 +302,7 @@ The following table lists the latency to expect between an event happening in th
 |[presence][] (preview) | Less than 10 seconds | 1 minute |
 |[printTaskDefinition][] | Less than 1 minute | 5 minutes |
 |[user][] | Less than 2 minutes | 15 minutes |
+|[todoTask][] | Less than 2 minutes | 15 minutes |
 
 >**Note:** The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
 
@@ -324,3 +329,4 @@ The following table lists the latency to expect between an event happening in th
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
+[todoTask]: /graph/api/resources/todotask
