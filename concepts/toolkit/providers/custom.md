@@ -26,7 +26,7 @@ let provider = new SimpleProvider((scopes: string[]) => {
 
 In addition, you can also provide an optional `login` and `logout` functions that can handle the sign in and sign out calls from the [Login](../components/login.md) component. 
 > [!IMPORTANT] 
-> To indicate to the components that they can start calling the Microsoft Graph APIs once a user successfully signs in, you need to call `provider.setState(ProviderState.SignedIn)`. An example of this is shown inside of the `login` function below.
+> To indicate to the components that they can start calling the Microsoft Graph APIs once a user successfully signs in, you need to call `Providers.setState(ProviderState.SignedIn)`. An example of this is shown inside of the `login` function below.
 
 ```ts
 function getAccessToken(scopes: string[]) {
@@ -35,7 +35,7 @@ function getAccessToken(scopes: string[]) {
 
 function login() {
   //login code
-  mgt.Providers.globalProvider.setState(mgt.ProviderState.SignedIn)
+  Providers.globalProvider.setState(ProviderState.SignedIn)
 }
 
 function logout() {
