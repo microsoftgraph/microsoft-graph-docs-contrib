@@ -405,6 +405,32 @@ items:
         items:
         - name: List tasks
           href: api/planneruser-list-tasks.md
+      - name: Teamwork
+        items:
+        - name: Installed app
+          href: resources/teamsappinstallation.md
+        - name: List apps in team
+          href: api/teamsappinstallation-list.md
+        - name: Get app installed in a team
+          href: api/teamsappinstallation-get.md
+        - name: Add app to team
+          href: api/teamsappinstallation-add.md
+        - name: Remove app from team
+          href: api/teamsappinstallation-delete.md
+        - name: Upgrade installed app for team
+          href: api/teamsappinstallation-upgrade.md
+        - name: Add app for user
+          href: api/user-add-teamsappinstallation.md
+        - name: List apps for user
+          href: api/user-list-teamsappinstallation.md
+        - name: Gets installed app for user
+          href: api/user-get-teamsappinstallation.md
+        - name: Upgrade installed app for user
+          href: api/user-upgrade-teamsappinstallation.md
+        - name: Remove app for user
+          href: api/user-delete-teamsappinstallation.md
+        - name: Get chat between user and app
+          href: api/userscopeteamsappinstallation-get-chat.md 
       - name: To-do tasks
         items:
         - name: Task
