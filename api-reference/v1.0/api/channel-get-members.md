@@ -79,6 +79,7 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 201
+
 {
 "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
 "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -94,6 +95,7 @@ Content-length: 201
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
+
 {
   "type": "#page.annotation",
   "description": "get_channel_member",
