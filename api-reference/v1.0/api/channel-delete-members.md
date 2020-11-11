@@ -25,6 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application| ChannelMember.ReadWrite.All |
 
 ## HTTP request
+<!-- { "blockType": "ignored"} -->
 
 ```http
 DELETE /teams/{id}/channels/{id}/members/{id}
