@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application| ChannelMember.ReadWrite.All |
 
 ## HTTP request
-
+<!-- { "blockType": "ignored"} -->
 ```http
 POST /teams/{id}/channels/{id}/members
 ```
@@ -54,7 +54,10 @@ If successful, this method returns a `201 Created` response code and a [conversa
 ### Example 1: Add a member to a channel
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "channel_add_member"
+} -->
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members
 content-type: application/json
@@ -70,6 +73,12 @@ content-length: 26
 #### Response
 
 >**Note:** The response object shown here might be shortened for readability. 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel",
+  "isCollection": true
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -90,6 +99,10 @@ Content-length: 468
 ### Example 2: Add a member with the owner role to a channel
 
 #### Request
+<!-- {
+  "blockType": "request",
+  "name": "channel_add_member"
+} -->
 
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members
@@ -109,6 +122,12 @@ content-length: 26
 Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel",
+  "isCollection": true
+} -->
 
 ```http
 HTTP/1.1 201 Created
