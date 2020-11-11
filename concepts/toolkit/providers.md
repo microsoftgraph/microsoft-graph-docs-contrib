@@ -7,27 +7,40 @@ author: nmetulev
 
 # Microsoft Graph Toolkit providers
 
-The Microsoft Graph Toolkit providers enable authentication and Microsoft Graph access for all components. Each provider provides implementation for acquiring the necessary access token for calling the Microsoft Graph APIs.
+The Microsoft Graph Toolkit providers enable your application to authenticate with and access Microsoft Graph to retreive the data to be rendered in the components. Each provider encapsulates and provides the implementation for acquiring the access token to call the Microsoft Graph APIs, so that you don't have to write this code yourself. You can also use the providers on their own, without components, to quickly implement authentication for your app and make your own calls to Microsoft Graph via the JavaScript SDK client.
 
-For the components to use a provider, you must set the `Providers.globalProvider` property to the value for a provider you'd like to use.
+The Toolkit includes the following providers:
 
-The following example shows how to use the MsalProvider.
+|Providers|Description|
+|---------|-----------|
+|[Msal](./providers/msal.md)|Uses MSAL.js to sign in users and acquire tokens to use with Microsoft Graph.|
+|[SharePoint](./providers/sharepoint.md)|Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.|
+|[Teams](./providers/teams.md)|Authenticates and provides Microsoft Graph access to components inside of Microsoft Teams tabs.|
+|[Proxy](./providers/proxy.md)|Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.|
+|[Custom](./providers/custom.md)|Create a custom provider to enable authentication and access to Microsoft Graph with your application's existing authentication code.|
+
+## Initializing a provider
+
+To use a provider in your app, you need to initialize a new provider and then set it as the global provider in the Providers namespace. We recommend doing this before you start using any of the components. You can do this one of two ways:
+
+**Option 1: Initialize in code**
+
+To initalize a provider in your JavaScript code, create a new provider instance and set the value of the `Providers.globalProvider` property to the provider you'd like to use. The following example shows how to use the MsalProvider.
 
 ```js
 Providers.globalProvider = new MsalProvider({
-  clientId: '[CLIENT_ID]'
+  clientId: '[YOUR_CLIENT_ID]'
 });
 ```
 
-The toolkit implements the following providers:
+**Option 2: Use the provider component**
 
-- [MsalProvider](./providers/msal.md)
-- [SharePointProvider](./providers/sharepoint.md)
-- [TeamsProvider](./providers/teams.md)
-- [ProxyProvider](./providers/proxy.md)
-- [SimpleProvider](./providers/custom.md)
+You can also use the component version of the provider directly in your HTML. Behind the scenees, a new provider is initialized and set as the global provider. The following example shows how to use the MsalProvider.
 
-You can create a provider at any time. We recommend that you create the provider before you use any of the components. This section describes how to initialize a provider.
+```HTML
+<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+<mgt-msal-provider client-id="[YOUR_CLIENT_ID]"></mgt-msal-provider>
+```
 
 ## Providers namespace
 
@@ -41,18 +54,22 @@ Set this property to a provider that you want to use globally. All components us
 
 The `callbackFunction` function will be called when a provider is changed or when the state of a provider changes. A `ProvidersChangedState` enum value will be passed to the function to indicate what updated.
 
+- `getAccessToken({'scopes': scopes[]}) : Promise<string>`
+
+All providers expose the `getAccessToken` method that returns a promise with a valid access token string to be used when making calls to Microsoft Graph.
+
 ## Implement your own provider
 
-The toolkit provides two ways to create new providers:
+In scennarios where you want to add Toolkit components to an application with pre-existing authentication code, you can create a custom provider that hooks into your authentication mechanism, instead of using our predefined providers. The toolkit provides two ways to create new providers:
 
-- Create a new `SimpleProvider` by passing in a function for getting an access token.
+- Create a new `SimpleProvider` that returns an access token from your auhtentication code by passing in a function.
 - Extend the `IProvider` abstract class.
 
 For more details about each one, see [custom providers](./providers/custom.md).
 
 ## Using multiple providers
 
-In some scenarios, your application will run in a different environment and require a different provider. For example, the app might run as both a web application and a Microsoft Teams tab and you might need to use the MsalProvider and the TeamsProvider. For this scenario, all provider components have the `depends-on` attribute to create a fallback chain, as shown in the following example.
+In some scenarios, your application will run in different environments and require a different provider for each. For example, the app might run as both a web application and a Microsoft Teams tab, which means you might need to use both the MsalProvider and the TeamsProvider. For this scenario, all provider components have the `depends-on` attribute to create a fallback chain, as shown in the following example.
 
 ```html
 <mgt-teams-provider
@@ -64,7 +81,7 @@ In some scenarios, your application will run in a different environment and requ
   depends-on="mgt-teams-provider" ></mgt-msal-provider>
 ```
 
-In this scenario, the MsalProvider will only be used if the TeamsProvider is not available in the current environment.
+In this scenario, the MsalProvider will only be used if your app is running as a web application and the TeamsProvider is not available in the current environment.
 
 To accomplish the same in code, you can use the `isAvailable` property on the provider, as shown.
 
