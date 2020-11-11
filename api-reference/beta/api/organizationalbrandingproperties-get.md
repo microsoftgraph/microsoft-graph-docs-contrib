@@ -40,10 +40,9 @@ This method supports some of the OData query parameters to help customize the re
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token}. Required. |
-| Accept-Language  | Locale to get. Optional.  |
 
 >[!NOTE]
->Accept-Language request header is required for Microsoft Graph Explorer only.
+>If you try the query in Graph Explorer, you must also include the Accept-Language request header with a valid ISO-639 locale.
 
 ## Request body
 
@@ -57,6 +56,9 @@ If successful, this method returns a `200 OK` response code and the requested [o
 
 ### Example 1: Get the default branding
 
+>[!NOTE]
+>If you try the example in Graph Explorer, you must also include the Accept-Language request header with a valid ISO-639 locale to avoid getting an error "Invalid locale id value en-US,en;q=0.9. It must be a valid ISO-639 locale."
+
 #### Request
 
 The following is an example of the request.
@@ -104,102 +106,7 @@ Content-Type: application/json
 
 Requests for /branding always return the **mediaContentType**, **mediaReadLink**, and **mediaEditLink** properties. If a locale has been applied, the **mediaEditLink** is the **mediaEditLink** for the locale (which is always non-null), and the **mediaReadLink** and **mediaContentType** are the **mediaReadLink** and **mediaContentType** of the locale if the **mediaReadLink** of the locale is non-null; otherwise, the default **mediaReadLink** and **mediaContentType**.
 
-### Example 2: Get the default branding with Accept-Language request header using Microsoft Graph Explorer
-
-#### Request
-
-The following is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "get_organizationalbrandingproperties"
-}-->
-
-```http
-GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
-Accept-Language: default
-```
-
-#### Response
-
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "backgroundColor":"#FFFF33",
-  "backgroundImage@odata.mediaContentType":"image/*",
-  "backgroundImage@odata.mediaReadLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/backgroundImage",
-  "backgroundImage@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/backgroundImage",
-  "bannerLogo@odata.mediaContentType":"image/*",
-  "bannerLogo@odata.mediaReadLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo",
-  "bannerLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo",
-  "id": "und",
-  "squareLogo@odata.mediaContentType":"image/*",
-  "squareLogo@odata.mediaReadLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/squareLogo",
-  "squareLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/squareLogo",
-  "signInPageText":"Default",
-  "usernameHintText":"DefaultHint"
-}
-```
-
-Requests for /branding always return the **mediaContentType**, **mediaReadLink**, and **mediaEditLink** properties. If a locale has been applied, the **mediaEditLink** is the **mediaEditLink** for the locale (which is always non-null), and the **mediaReadLink** and **mediaContentType** are the **mediaReadLink** and **mediaContentType** of the locale if the **mediaReadLink** of the locale is non-null; otherwise, the default **mediaReadLink** and **mediaContentType**.
-
-### Example 3: Get the default branding without Accept-Language request header using Microsoft Graph Explorer
-
-#### Request
-
-The following is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "get_organizationalbrandingproperties"
-}-->
-
-```http
-GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
-```
-
-#### Response
-
-The following is an example of the response.
-
-> **Note:** Accept-Language request header is required for Microsoft Graph Explorer to avoid getting an error.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
-} -->
-
-```http
-HTTP/1.1 400 Bad Request
-Content-Type: application/json
-
-{
-    "error": {
-        "code": "Request_UnsupportedQuery",
-        "message": "Invalid locale id value en-US,en;q=0.9. It must be a valid ISO-639 locale.",
-        "innerError": {
-            "date": "2020-09-28T20:35:19",
-            "request-id": "344d8205-4112-4567-be7a-336a21449fd6",
-            "client-request-id": "a6bccd5b-4c32-a7a5-46c5-0c443f75c331"
-        }
-    }
-}
-```
-
-Requests for /branding always return the **mediaContentType**, **mediaReadLink**, and **mediaEditLink** properties. If a locale has been applied, the **mediaEditLink** is the **mediaEditLink** for the locale (which is always non-null), and the **mediaReadLink** and **mediaContentType** are the **mediaReadLink** and **mediaContentType** of the locale if the **mediaReadLink** of the locale is non-null; otherwise, the default **mediaReadLink** and **mediaContentType**.
-
-### Example 4: Get organizational branding but no branding configured
+### Example 2: Get organizational branding but no branding configured
 
 #### Request
 
@@ -227,7 +134,7 @@ The following is an example of the response.
 HTTP/1.1 404 NOT FOUND
 ```
 
-### Example 5: Get organizational branding for the French locale
+### Example 3: Get organizational branding for the French locale
 The Accept-Langauge header is used to apply a particular localization to the branding. Properties that are null in the specified localization are returned from the default branding. If the Accept-Language header is specified in the request, the response will include the Content-Language header, unless it is `und`.
 
 #### Request
@@ -277,7 +184,7 @@ Content-Language: fr
 }
 ```
 
-### Example 6: Get bannerLogo for the French locale
+### Example 4: Get bannerLogo for the French locale
 Returns **bannerLogo** for the fr locale if it exists. If the localization does not exist, returns the default **bannerLogo**.
 
 #### Request
@@ -314,7 +221,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 7: Get bannerLogo when no bannerLogo is configured
+### Example 5: Get bannerLogo when no bannerLogo is configured
 
 This example shows a request for a property that does not exist on the default branding or the language specified in the Accept-Language header.
 
