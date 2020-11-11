@@ -1,5 +1,5 @@
 ---
-title: "Get onPremisesConnections"
+title: "Get cloudPcOnPremisesConnection"
 description: "Read the properties and relationships of the cloudPcOnPremisesConnection object."
 author: "jiajyang"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: ""
 doc_type: apiPageType
 ---
 
-# Get onPremisesConnections
+# Get cloudPcOnPremisesConnection
 
 Namespace: microsoft.graph
 
@@ -32,12 +32,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 ``` http
 GET /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
-GET /deviceManagement/virtualEndpoint/onPremisesConnections/{id}?$select=id,displayName,subscriptionId,subscriptionName,adDomainName,adDomainUsername,organizationalUnit,virtualNetworkId,subnetId,healthCheckStatus,healthCheckStatusDetails,inUse
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -55,7 +54,9 @@ If successful, this method returns a `200 OK` response code and a [cloudPcOnPrem
 
 ## Examples
 
-### Request
+### Example 1
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -67,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcOnPrem
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 ```
 
-### Response
+#### Response
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -100,7 +101,9 @@ Content-Type: application/json
 }
 ```
 
-### Request
+### Example 2
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -112,7 +115,7 @@ Content-Type: application/json
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}?$select=id,displayName,subscriptionId,subscriptionName,adDomainName,adDomainUsername,organizationalUnit,virtualNetworkId,subnetId,healthCheckStatus,healthCheckStatusDetails,inUse
 ```
 
-### Response
+#### Response
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

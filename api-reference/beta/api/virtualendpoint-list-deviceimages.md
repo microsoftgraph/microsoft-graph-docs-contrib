@@ -1,17 +1,17 @@
 ---
-title: "List deviceImages"
-description: "List the properties and relationships of OS images uploaded to Cloud PC."
+title: "List cloudPcDeviceImages"
+description: "List the properties and relationships of OS images uploaded to cloud PC."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: ""
 doc_type: apiPageType
 ---
 
-# List deviceImages
+# List cloudPcDeviceImages
 
 Namespace: microsoft.graph
 
-List the properties and relationships of the [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) objects (OS images) uploaded to Cloud PC.
+List the properties and relationships of the [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) objects (OS images) uploaded to cloud PC.
 
 ## Permissions
 
@@ -36,7 +36,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

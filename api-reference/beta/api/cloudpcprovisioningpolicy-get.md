@@ -1,5 +1,5 @@
 ---
-title: "Get provisioningPolicies"
+title: "Get cloudPcProvisioningPolicy"
 description: "Read the properties and relationships of a cloudPcProvisioningPolicy object."
 author: "jiajyang"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: ""
 doc_type: apiPageType
 ---
 
-# Get provisioningPolicies
+# Get cloudPcProvisioningPolicy
 
 Namespace: microsoft.graph
 
@@ -32,12 +32,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 ``` http
 GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
-GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}?$expand=assignments
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -55,7 +54,9 @@ If successful, this method returns a `200 OK` response code and a [cloudPcProvis
 
 ## Examples
 
-### Request
+### Example 1
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -67,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcProvis
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 ```
 
-### Response
+#### Response
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -95,7 +96,9 @@ Content-Type: application/json
 }
 ```
 
-### Request
+### Example 2
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -107,7 +110,7 @@ Content-Type: application/json
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/{id}?$expand=assignments
 ```
 
-### Response
+#### Response
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

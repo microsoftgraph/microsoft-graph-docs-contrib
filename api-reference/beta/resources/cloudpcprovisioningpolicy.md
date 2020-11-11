@@ -1,6 +1,6 @@
 ---
 title: "cloudPcProvisioningPolicy resource type"
-description: "Represents a Cloud PC provisioning policy."
+description: "Represents a cloud PC provisioning policy."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: ""
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a Cloud PC provisioning policy.
+Represents a cloud PC provisioning policy.
 
 ## Methods
 
@@ -28,19 +28,19 @@ Represents a Cloud PC provisioning policy.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the Cloud PC provisioning policy. Read-only.|
+|id|String|Unique identifier for the cloud PC provisioning policy. Read-only.|
 |displayName|String|The display name for the provisioning policy.|
 |description|String|The provisioning policy description.|
-|onPremisesConnectionId|String|The ID of the cloudPcOnPremisesConnection. To ensure that Cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the Cloud PC service.|
-|imageId|String|The ID of the OS image you want to provision on Cloud PCs. The format for a gallery type image is: {publisher_offer_sku}.|
+|onPremisesConnectionId|String|The ID of the cloudPcOnPremisesConnection. To ensure that cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the cloud PC service.|
+|imageId|String|The ID of the OS image you want to provision on cloud PCs. The format for a gallery type image is: {publisher_offer_sku}.|
 |imageDisplayName|String|The display name for the OS image you’re provisioning.|
-|imageType|cloudPcProvisioningPolicyImageType|The type of OS image (custom or gallery) you want to provision on Cloud PCs. Possible values are: `gallery`, `custom`.|
+|imageType|cloudPcProvisioningPolicyImageType|The type of OS image (custom or gallery) you want to provision on cloud PCs. Possible values are: `gallery`, `custom`.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|assignments|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) collection|A defined collection of provisioning policy assignments.|
+|assignments|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) collection|A defined collection of provisioning policy assignments. Returned only on `$expand`. See an [example](../api/cloudpcprovisioningpolicy-get.md) of getting the assignments relationship. |
 
 ## JSON representation
 

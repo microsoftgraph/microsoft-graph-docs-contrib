@@ -1,6 +1,6 @@
 ---
 title: "cloudPcDeviceImage resource type"
-description: "Represents the image resource on Cloud PC."
+description: "Represents the image resource on cloud PC."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: ""
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the image resource on Cloud PC.
+Represents the image resource on cloud PC.
 
 ## Methods
 
@@ -27,14 +27,14 @@ Represents the image resource on Cloud PC.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the image resource on Cloud PC. Read-only.|
+|id|String|Unique identifier for the image resource on cloud PC. Read-only.|
 |sourceImageResourceId|String|The ID of the source image resource on Azure. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |displayName|String|The image's display name.|
 |version|String|The image version. For example: 0.0.1, 1.5.13.|
 |osBuildNumber|String|The image's OS build version. For example: 1909.|
 |operatingSystem|String|The image's operating system. For example: Windows 10 Enterprise.|
 |lastModifiedDateTime|DateTimeOffset|The data and time that the image was last modified. The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|
-|status|cloudPcDeviceImageStatus|The status of the image on Cloud PC. Possible status include upload pending, failed to upload, or ready to use. Possible values are: `pending`, `ready`, `failed`.|
+|status|cloudPcDeviceImageStatus|The status of the image on cloud PC. Possible status include upload pending, failed to upload, or ready to use. Possible values are: `pending`, `ready`, `failed`.|
 |statusDetails|cloudPcDeviceImageStatusDetails|The details of the image's status, which indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`.|
 
 ## Relationships

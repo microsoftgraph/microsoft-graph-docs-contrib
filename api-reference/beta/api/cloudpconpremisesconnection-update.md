@@ -1,5 +1,5 @@
 ---
-title: "Update onPremisesConnections"
+title: "Update cloudPcOnPremisesConnection"
 description: "Update the properties of a cloudPcOnPremisesConnection object."
 author: "jiajyang"
 localization_priority: Normal
@@ -7,11 +7,12 @@ ms.prod: ""
 doc_type: apiPageType
 ---
 
-# Update onPremisesConnections
+# Update cloudPcOnPremisesConnection
 
 Namespace: microsoft.graph
 
 Update the properties of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
+Once the on-premises connection passes health check, which is indicated by the `healthCheckStatus` property, you cannot update it.
 
 ## Permissions
 
@@ -49,7 +50,6 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the on-premises connection. Read-only.|
 |displayName|String|The display name for the on-premises connection.|
 |subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
 |adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join.|
@@ -74,7 +74,7 @@ If successful, this method returns a `200 OK` response code and an updated [clou
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections
+PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 Content-Type: application/json
 Content-length: 800
 

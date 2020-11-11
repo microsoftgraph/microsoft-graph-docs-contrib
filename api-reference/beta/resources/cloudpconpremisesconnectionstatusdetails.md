@@ -1,6 +1,6 @@
 ---
 title: "cloudPcOnPremisesConnectionStatusDetails resource type"
-description: "The status details of a Cloud PC on-premises connection."
+description: "The status details of a cloud PC on-premises connection."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: ""

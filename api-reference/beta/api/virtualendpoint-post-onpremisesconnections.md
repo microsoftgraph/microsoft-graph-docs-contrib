@@ -1,17 +1,17 @@
 ---
-title: "Create onPremisesConnections"
-description: "Create an on-premises connection  for provisioning Cloud PCs."
+title: "Create cloudPcOnPremisesConnection"
+description: "Create an on-premises connection  for provisioning cloud PCs."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: ""
 doc_type: apiPageType
 ---
 
-# Create onPremisesConnections
+# Create cloudPcOnPremisesConnections
 
 Namespace: microsoft.graph
 
-Create a new [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object for provisioning Cloud PCs.
+Create a new [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object for provisioning cloud PCs.
 
 ## Permissions
 
@@ -49,7 +49,6 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the on-premises connection. Read-only.|
 |displayName|String|The display name for the on-premises connection.|
 |subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
 |adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join.|

@@ -1,5 +1,5 @@
 ---
-title: "Delete onPremisesConnections"
+title: "Delete cloudPcOnPremisesConnection"
 description: "Delete a cloudPcOnPremisesConnection object."
 author: "jiajyang"
 localization_priority: Normal
@@ -7,11 +7,16 @@ ms.prod: ""
 doc_type: apiPageType
 ---
 
-# Delete onPremisesConnections
+# Delete cloudPcOnPremisesConnection
 
 Namespace: microsoft.graph
 
-Delete a specific [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object. When you delete a connection, permissions to the service are removed from the specified Azure resources. You can’t delete an connection that’s in use.
+Delete a specific [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
+
+When you delete a connection, permissions to the service are removed from the specified Azure resources.
+
+Once the on-premises connection passes health check, which is indicated by the `healthCheckStatus` property, you cannot delete it.
+You cannot delete a connection when it's in use, as indicated by the `inUse` property.
 
 ## Permissions
 

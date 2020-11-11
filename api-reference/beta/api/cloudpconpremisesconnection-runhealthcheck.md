@@ -1,17 +1,18 @@
 ---
 title: "CloudPcOnPremisesConnection-RunHealthChecks"
-description: "Run health checks on the Cloud PC on-premises connection."
+description: "Run health checks on the cloud PC on-premises connection."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: ""
 doc_type: apiPageType
 ---
 
-# CloudPcOnPremisesConnection-RunHealthChecks
+# CloudPcOnPremisesConnection: runHealthChecks
 
 Namespace: microsoft.graph
 
 Run health checks on the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
+This will trigger a new health check for this [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object and change the healthCheckStatus and [healthCheckStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md) properties when check finished.
 
 ## Permissions
 

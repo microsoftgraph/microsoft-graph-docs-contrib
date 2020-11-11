@@ -1,5 +1,5 @@
 ---
-title: "Delete provisioningPolicies"
+title: "Delete cloudPcProvisioningPolicy"
 description: "Delete a cloudPcProvisioningPolicy object."
 author: "jiajyang"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: ""
 doc_type: apiPageType
 ---
 
-# Delete provisioningPolicies
+# Delete cloudPcProvisioningPolicy
 
 Namespace: microsoft.graph
 

@@ -1,5 +1,5 @@
 ---
-title: "List provisioningPolicies"
+title: "List cloudPcProvisioningPolicy"
 description: "View the properties and relationships of all cloud PC provisioning policies."
 author: "jiajyang"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: ""
 doc_type: apiPageType
 ---
 
-# List provisioningPolicies
+# List cloudPcProvisioningPolicies
 
 Namespace: microsoft.graph
 
@@ -36,7 +36,7 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$select`, `$filter` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

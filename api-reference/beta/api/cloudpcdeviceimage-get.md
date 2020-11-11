@@ -1,5 +1,5 @@
 ---
-title: "Get deviceImages"
+title: "Get cloudPcDeviceImages"
 description: "Read the properties and relationships of a cloudPcDeviceImage object."
 author: "jiajyang"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: ""
 doc_type: apiPageType
 ---
 
-# Get deviceImages
+# Get cloudPcDeviceImages
 
 Namespace: microsoft.graph
 
@@ -36,7 +36,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages/{id}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

@@ -1,17 +1,17 @@
 ---
-title: "Create deviceImages"
-description: "Upload a custom OS image that you can later provision on Cloud PCs."
+title: "Create cloudPcDeviceImage"
+description: "Upload a custom OS image that you can later provision on cloud PCs."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: ""
 doc_type: apiPageType
 ---
 
-# Create deviceImages
+# Create cloudPcDeviceImages
 
 Namespace: microsoft.graph
 
-Create a new [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object. Upload a custom OS image that you can later provision on Cloud PCs.
+Create a new [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object. Upload a custom OS image that you can later provision on cloud PCs.
 
 ## Permissions
 
@@ -49,7 +49,6 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the image resource on Cloud PC.|
 |displayName|String|The image's display name.|
 |sourceImageResourceId|String|The ID of the source image resource on Azure. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |operatingSystem|String|The image's operating system. For example: Windows 10 Enterprise.|

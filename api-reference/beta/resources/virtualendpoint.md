@@ -1,6 +1,6 @@
 ---
 title: "virtualEndpoint resource type"
-description: "The virtualEndpoint resource represents a container for Cloud PC management functionality."
+description: "The virtualEndpoint resource represents a container for cloud PC management functionality."
 author: "jiajyang"
 localization_priority: Normal
 ms.prod: ""
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The virtualEndpoint resource represents a container for Cloud PC management functionality.
+The virtualEndpoint resource represents a container for cloud PC management functionality.
 
 ## Methods
 
@@ -30,9 +30,9 @@ The virtualEndpoint resource represents a container for Cloud PC management func
 |Relationship|Type|Description|
 |:---|:---|:---|
 |cloudPCs|[cloudPC](../resources/cloudpc.md) collection|Cloud managed virtual desktops.|
-|deviceImages|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) collection|The image resource on Cloud PC.|
-|onPremisesConnections|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) collection|A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.|
-|provisioningPolicies|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) collection|Cloud PC provisioning policy.|
+|deviceImages|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) collection|The image resource on cloud PC.|
+|onPremisesConnections|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) collection|A defined collection of Azure resource information that can be used to establish on-premises network connectivity for cloud PCs.|
+|provisioningPolicies|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) collection|cloud PC provisioning policy.|
 
 ## JSON representation
 

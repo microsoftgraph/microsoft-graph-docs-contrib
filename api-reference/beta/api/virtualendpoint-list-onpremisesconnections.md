@@ -1,5 +1,5 @@
 ---
-title: "List onPremisesConnections"
+title: "List cloudPcOnPremisesConnection"
 description: "Get a list of the cloudPcOnPremisesConnection objects and their properties."
 author: "jiajyang"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: ""
 doc_type: apiPageType
 ---
 
-# List onPremisesConnections
+# List cloudPcOnPremisesConnections
 
 Namespace: microsoft.graph
 
@@ -36,7 +36,7 @@ GET /deviceManagement/virtualEndpoint/onPremisesConnections
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

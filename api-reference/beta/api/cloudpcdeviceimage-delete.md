@@ -1,5 +1,5 @@
 ---
-title: "Delete deviceImages"
+title: "Delete cloudPcDeviceImage"
 description: "Delete a cloudPcDeviceImage object."
 author: "jiajyang"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: ""
 doc_type: apiPageType
 ---
 
-# Delete deviceImages
+# Delete cloudPcDeviceImage
 
 Namespace: microsoft.graph
 
