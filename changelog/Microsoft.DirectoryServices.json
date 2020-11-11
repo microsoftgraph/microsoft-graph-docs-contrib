@@ -4,6 +4,24 @@
       "ChangeList": [
         {
           "Id": "2f7cfb1b-38bc-4842-b90f-bc0b1e401231",
+          "ApiChange": "Property",
+          "ChangedApiName": "application",
+          "ChangeType": "Addition",
+          "Description": "Added the **spa** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "2f7cfb1b-38bc-4842-b90f-bc0b1e401231",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-11-10T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2f7cfb1b-38bc-4842-b90f-bc0b1e401231",
           "ApiChange": "Parameter",
           "ChangedApiName": "$count,$search,$filter",
           "ChangeType": "Addition",
