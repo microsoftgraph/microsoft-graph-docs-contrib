@@ -60,14 +60,6 @@ If successful, this method returns a `201 Created` response code and a [conversa
 } -->
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members
-content-type: application/json
-content-length: 26
-
-{
-  "@odata.type": "#microsoft.graph.aadUserConversationMember",
-  "roles": [],
-  "user@odata.bind": "https://graph.microsoft.com/v1.0/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
-}
 ```
 
 #### Response
@@ -105,15 +97,6 @@ Content-length: 468
 
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members
-content-type: application/json
-content-length: 26
-
-{
-  "@odata.type": "#microsoft.graph.aadUserConversationMember",
-  "roles": ["owner"],
-  "user@odata.bind": "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
-   "https://graph.microsoft.com/v1.0/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
-}
 ```
 
 #### Response
