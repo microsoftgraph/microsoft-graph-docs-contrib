@@ -1,9 +1,53 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
         {
-          "Id": "e40a651f-de79-4730-a8f4-e5198500ecb7",
+          "Id": "31591e8c-641d-455a-bdea-5b111f39b085",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profile,addresses,anniversaries,awards,certifications,notes,patents,publications",
+          "ChangeType": "Addition",
+          "Description": "Added the following new relationships to the [profile](https://docs.microsoft.com/en-us/graph/api/resources/profile?view=graph-rest-beta) API with associated entities and methods: \u003Cul\u003E\u003Cli\u003E[addresses](https://docs.microsoft.com/en-us/graph/api/resources/itemAddress?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[anniversaries](https://docs.microsoft.com/en-us/graph/api/resources/personAnniversary?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[awards](https://docs.microsoft.com/en-us/graph/api/resources/personAward?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[certifications](https://docs.microsoft.com/en-us/graph/api/resources/personCertification?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[notes](https://docs.microsoft.com/en-us/graph/api/resources/personAnnotation?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[patents](https://docs.microsoft.com/en-us/graph/api/resources/itemPatent?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[publications](https://docs.microsoft.com/en-us/graph/api/resources/itemPublication?view=graph-rest-beta)\u003C/li\u003E\u003C/ul\u003E",
+          "Target": "profile,addresses,anniversaries,awards,certifications,notes,patents,publications"
+        }
+      ],
+      "Id": "31591e8c-641d-455a-bdea-5b111f39b085",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-08-01T00:00:00",
+      "WorkloadArea": "People and workplace intelligence ",
+      "SubArea": " Profile"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8c224202-825a-4190-9b47-ff758248262d",
+          "ApiChange": "Property",
+          "ChangedApiName": "itemInsights,organizationSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **itemInsights** navigation property to the **organizationSettings** entity.",
+          "Target": ""
+        },
+        {
+          "Id": "8c224202-825a-4190-9b47-ff758248262d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "itemInsightsSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **itemInsightsSettings** entity and the following operations: ,  [Get itemInsightSettings](https://docs.microsoft.com/en-us/graph/api/iteminsightssettings-get?view=graph-rest-beta) ,  [Update itemInsightSettings](https://docs.microsoft.com/en-us/graph/api/iteminsightssettings-update?view=graph-rest-beta)",
+          "Target": "Get itemInsightSettings,Update itemInsightSettings"
+        }
+      ],
+      "Id": "8c224202-825a-4190-9b47-ff758248262d",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-07-01T00:00:00",
+      "WorkloadArea": "People and workplace intelligence ",
+      "SubArea": " Insights"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a9247538-0fcc-463f-8439-cf5a7e86dd19",
           "ApiChange": "Property",
           "ChangedApiName": "profileCardProperties",
           "ChangeType": "Addition",
@@ -11,25 +55,25 @@
           "Target": "organizationSettings"
         },
         {
-          "Id": "e40a651f-de79-4730-a8f4-e5198500ecb7",
+          "Id": "a9247538-0fcc-463f-8439-cf5a7e86dd19",
           "ApiChange": "Resource",
           "ChangedApiName": "profileCardProperty",
           "ChangeType": "Addition",
-          "Description": "Added the **profileCardProperty** entity and the following operations: ,  [List](https://docs.microsoft.com/en-us/graph/api/organizationsettings-list-profilecardproperties) ,  [Create](https://docs.microsoft.com/en-us/graph/api/organizationsettings-post-profilecardproperties) ,  [Get](https://docs.microsoft.com/en-us/graph/api/profilecardproperty-get?view=graph-rest-beta) ,  [Update](https://docs.microsoft.com/en-us/graph/api/profilecardproperty-update?view=graph-rest-beta) ,  [Delete](https://docs.microsoft.com/en-us/graph/api/profilecardproperty-delete)",
+          "Description": "Added the **profileCardProperty** entity and the following operations: ,  [List](https://docs.microsoft.com/en-us/graph/api/organizationsettings-list-profilecardproperties) ,  [Create](https://docs.microsoft.com/en-us/graph/api/organizationsettings-post-profilecardproperties) ,  [Get](https://docs.microsoft.com/en-us/graph/api/profilecardproperty-get?view=graph-rest-beta) ,  [Update](https://docs.microsoft.com/en-us/graph/api/profilecardproperty-update?view=graph-rest-beta) ,  [Delete](https://docs.microsoft.com/en-us/graph/api/profilecardproperty-delete).",
           "Target": "List,Create,Get,Update,Delete"
         }
       ],
-      "Id": "e40a651f-de79-4730-a8f4-e5198500ecb7",
+      "Id": "a9247538-0fcc-463f-8439-cf5a7e86dd19",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
       "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": ""
+      "SubArea": " Profile"
     },
     {
       "ChangeList": [
         {
-          "Id": "5e51cc99-f8aa-487d-a1b0-1f5eff137f01",
+          "Id": "99f277e8-b0bb-4193-8248-095bb0842f78",
           "ApiChange": "Resource",
           "ChangedApiName": "officeGraphInsights,trending,usedInsight,sharedInsight,Why integrate with document-based insights?",
           "ChangeType": "Addition",
@@ -37,17 +81,17 @@
           "Target": "officeGraphInsights,trending,usedInsight,sharedInsight,Why integrate with document-based insights?"
         }
       ],
-      "Id": "5e51cc99-f8aa-487d-a1b0-1f5eff137f01",
+      "Id": "99f277e8-b0bb-4193-8248-095bb0842f78",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-12-01T00:00:00",
       "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": ""
+      "SubArea": " Insights"
     },
     {
       "ChangeList": [
         {
-          "Id": "ad1bb310-465f-404e-9b07-69d9de4513e4",
+          "Id": "8010b2c9-d937-436f-84b1-74b9a5eb67cf",
           "ApiChange": "method",
           "ChangedApiName": "profile API",
           "ChangeType": "Addition",
@@ -55,7 +99,7 @@
           "Target": "profile API"
         }
       ],
-      "Id": "ad1bb310-465f-404e-9b07-69d9de4513e4",
+      "Id": "8010b2c9-d937-436f-84b1-74b9a5eb67cf",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
@@ -65,7 +109,7 @@
     {
       "ChangeList": [
         {
-          "Id": "7ecc70f2-033a-49c3-89b6-f966b0b595ad",
+          "Id": "82f7015c-fd60-442f-8d1c-7affba36df0c",
           "ApiChange": "Resource",
           "ChangedApiName": "analytics API",
           "ChangeType": "Addition",
@@ -73,7 +117,7 @@
           "Target": "analytics API"
         },
         {
-          "Id": "7ecc70f2-033a-49c3-89b6-f966b0b595ad",
+          "Id": "82f7015c-fd60-442f-8d1c-7affba36df0c",
           "ApiChange": "Resource",
           "ChangedApiName": "settings API,analytics API",
           "ChangeType": "Addition",
@@ -81,7 +125,7 @@
           "Target": "settings API,analytics API"
         },
         {
-          "Id": "7ecc70f2-033a-49c3-89b6-f966b0b595ad",
+          "Id": "82f7015c-fd60-442f-8d1c-7affba36df0c",
           "ApiChange": "Resource",
           "ChangedApiName": "activityStatistics,callActivityStatistics,chatActivityStatistics,emailActivityStatistics,focusActivityStatistics,meetingActivityStatistics",
           "ChangeType": "Addition",
@@ -89,17 +133,17 @@
           "Target": "activityStatistics,callActivityStatistics,chatActivityStatistics,emailActivityStatistics,focusActivityStatistics,meetingActivityStatistics"
         }
       ],
-      "Id": "7ecc70f2-033a-49c3-89b6-f966b0b595ad",
+      "Id": "82f7015c-fd60-442f-8d1c-7affba36df0c",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-08-01T00:00:00",
-      "WorkloadArea": "Social and workplace intelligence",
+      "WorkloadArea": "People and workplace intelligence",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "485112ed-2c0c-4045-9e53-3c4776f05347",
+          "Id": "45a46158-d7bc-42b2-bcfd-6aa75db1d410",
           "ApiChange": "Resource",
           "ChangedApiName": "settings,Get,Update",
           "ChangeType": "Addition",
@@ -107,17 +151,17 @@
           "Target": "settings,Get,Update"
         }
       ],
-      "Id": "485112ed-2c0c-4045-9e53-3c4776f05347",
+      "Id": "45a46158-d7bc-42b2-bcfd-6aa75db1d410",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-05-01T00:00:00",
-      "WorkloadArea": "Social and workplace intelligence ",
-      "SubArea": ""
+      "WorkloadArea": "People and workplace intelligence ",
+      "SubArea": " Insights"
     },
     {
       "ChangeList": [
         {
-          "Id": "cbc772d3-1ecf-4353-89f8-d1292e10911b",
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
           "ApiChange": "Resource",
           "ChangedApiName": "People APIs,Get relevant information about people",
           "ChangeType": "Addition",
@@ -125,7 +169,7 @@
           "Target": "People APIs,Get relevant information about people"
         },
         {
-          "Id": "cbc772d3-1ecf-4353-89f8-d1292e10911b",
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
           "ApiChange": "Resource",
           "ChangedApiName": "Permissions",
           "ChangeType": "Addition",
@@ -133,7 +177,7 @@
           "Target": "Permissions"
         },
         {
-          "Id": "cbc772d3-1ecf-4353-89f8-d1292e10911b",
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
           "ApiChange": "Resource",
           "ChangedApiName": "personType",
           "ChangeType": "Addition",
@@ -141,7 +185,7 @@
           "Target": "personType"
         },
         {
-          "Id": "cbc772d3-1ecf-4353-89f8-d1292e10911b",
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
           "ApiChange": "Resource",
           "ChangedApiName": "rankedEmailAddress",
           "ChangeType": "Change",
@@ -149,7 +193,7 @@
           "Target": "scoredEmailAddress"
         },
         {
-          "Id": "cbc772d3-1ecf-4353-89f8-d1292e10911b",
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
           "ApiChange": "Property",
           "ChangedApiName": "scoredEmailAddresses,emailAddresses,jobTitle,title,sources,mailboxType,personType,sources,mailboxType,imAddress",
           "ChangeType": "Change",
@@ -157,7 +201,7 @@
           "Target": "person,scoredEmailAddress,personType"
         },
         {
-          "Id": "cbc772d3-1ecf-4353-89f8-d1292e10911b",
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
           "ApiChange": "Resource",
           "ChangedApiName": "personDataSource",
           "ChangeType": "Deletion",
@@ -165,17 +209,17 @@
           "Target": ""
         }
       ],
-      "Id": "cbc772d3-1ecf-4353-89f8-d1292e10911b",
+      "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-08-01T00:00:00",
-      "WorkloadArea": "Social and workplace intelligence ",
-      "SubArea": ""
+      "WorkloadArea": "People and workplace intelligence ",
+      "SubArea": " People"
     },
     {
       "ChangeList": [
         {
-          "Id": "707373b7-f3b5-4009-9310-e4892d6bfd38",
+          "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
           "ApiChange": "Resource",
           "ChangedApiName": "Shared API,sharingDetail,insightIdentity",
           "ChangeType": "Addition",
@@ -183,7 +227,7 @@
           "Target": "Shared API,sharingDetail,insightIdentity"
         },
         {
-          "Id": "707373b7-f3b5-4009-9310-e4892d6bfd38",
+          "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
           "ApiChange": "Resource",
           "ChangedApiName": "Used API,usageDetails",
           "ChangeType": "Addition",
@@ -191,7 +235,7 @@
           "Target": "Used API,usageDetails"
         },
         {
-          "Id": "707373b7-f3b5-4009-9310-e4892d6bfd38",
+          "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
           "ApiChange": "Property",
           "ChangedApiName": "Type",
           "ChangeType": "Change",
@@ -199,7 +243,7 @@
           "Target": "resourceVisualization"
         },
         {
-          "Id": "707373b7-f3b5-4009-9310-e4892d6bfd38",
+          "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
           "ApiChange": "Resource",
           "ChangedApiName": "workingWith,trendingAround",
           "ChangeType": "Deletion",
@@ -207,17 +251,17 @@
           "Target": ""
         }
       ],
-      "Id": "707373b7-f3b5-4009-9310-e4892d6bfd38",
+      "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
-      "WorkloadArea": "Social and workplace intelligence ",
-      "SubArea": ""
+      "WorkloadArea": "People and workplace intelligence ",
+      "SubArea": " Insights"
     },
     {
       "ChangeList": [
         {
-          "Id": "dee0be72-6daa-4ebb-9031-1cb9ce01077f",
+          "Id": "52a2d5fe-1db2-46ff-af8b-2dd5179fb20b",
           "ApiChange": "Resource",
           "ChangedApiName": "Upcoming changes to Contacts and People APIs",
           "ChangeType": "Change",
@@ -225,17 +269,17 @@
           "Target": "Upcoming changes to Contacts and People APIs"
         }
       ],
-      "Id": "dee0be72-6daa-4ebb-9031-1cb9ce01077f",
+      "Id": "52a2d5fe-1db2-46ff-af8b-2dd5179fb20b",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-08-01T00:00:00",
-      "WorkloadArea": "Social and workplace intelligence ",
-      "SubArea": ""
+      "WorkloadArea": "People and workplace intelligence ",
+      "SubArea": " People"
     },
     {
       "ChangeList": [
         {
-          "Id": "becbf959-a369-47c3-903f-2c779861064d",
+          "Id": "bdae8773-190a-4645-a342-7da30a4b0012",
           "ApiChange": "Property",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -243,7 +287,7 @@
           "Target": ""
         },
         {
-          "Id": "becbf959-a369-47c3-903f-2c779861064d",
+          "Id": "bdae8773-190a-4645-a342-7da30a4b0012",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -251,12 +295,12 @@
           "Target": ""
         }
       ],
-      "Id": "becbf959-a369-47c3-903f-2c779861064d",
+      "Id": "bdae8773-190a-4645-a342-7da30a4b0012",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-03-01T00:00:00",
-      "WorkloadArea": "Social and workplace intelligence ",
-      "SubArea": ""
+      "WorkloadArea": "People and workplace intelligence ",
+      "SubArea": " People"
     }
   ]
 }

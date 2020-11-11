@@ -1,9 +1,27 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
         {
-          "Id": "cbdb2a6c-69a6-494c-8d8f-5bc2d1552821",
+          "Id": "d0ae3ac8-8d01-4235-b584-66a251ba1605",
+          "ApiChange": "Resource",
+          "ChangedApiName": "revokeGrants,permission",
+          "ChangeType": "Addition",
+          "Description": "Added the [revokeGrants](https://docs.microsoft.com/en-us/graph/api/permission-revokeGrants?view=graph-rest-beta) method to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource.",
+          "Target": "revokeGrants,permission"
+        }
+      ],
+      "Id": "d0ae3ac8-8d01-4235-b584-66a251ba1605",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-15T00:00:00",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f444c7a3-65ae-4369-ae50-1cc83c1368d6",
           "ApiChange": "Resource",
           "ChangedApiName": "pendingOperations",
           "ChangeType": "Addition",
@@ -11,7 +29,7 @@
           "Target": "pendingOperations,pendingContentUpdate,driveItem"
         },
         {
-          "Id": "cbdb2a6c-69a6-494c-8d8f-5bc2d1552821",
+          "Id": "f444c7a3-65ae-4369-ae50-1cc83c1368d6",
           "ApiChange": "Resource",
           "ChangedApiName": "restore,driveItem",
           "ChangeType": "Addition",
@@ -19,7 +37,7 @@
           "Target": "restore,driveItem"
         },
         {
-          "Id": "cbdb2a6c-69a6-494c-8d8f-5bc2d1552821",
+          "Id": "f444c7a3-65ae-4369-ae50-1cc83c1368d6",
           "ApiChange": "Property",
           "ChangedApiName": "orientation",
           "ChangeType": "Addition",
@@ -27,7 +45,7 @@
           "Target": "photo"
         },
         {
-          "Id": "cbdb2a6c-69a6-494c-8d8f-5bc2d1552821",
+          "Id": "f444c7a3-65ae-4369-ae50-1cc83c1368d6",
           "ApiChange": "Property",
           "ChangedApiName": "sha256Hash",
           "ChangeType": "Addition",
@@ -35,7 +53,7 @@
           "Target": "hashes"
         },
         {
-          "Id": "cbdb2a6c-69a6-494c-8d8f-5bc2d1552821",
+          "Id": "f444c7a3-65ae-4369-ae50-1cc83c1368d6",
           "ApiChange": "Parameter",
           "ChangedApiName": "deferCommit",
           "ChangeType": "Addition",
@@ -43,7 +61,7 @@
           "Target": "createUploadSession"
         },
         {
-          "Id": "cbdb2a6c-69a6-494c-8d8f-5bc2d1552821",
+          "Id": "f444c7a3-65ae-4369-ae50-1cc83c1368d6",
           "ApiChange": "Resource",
           "ChangedApiName": "storagePlanInformation",
           "ChangeType": "Addition",
@@ -51,7 +69,7 @@
           "Target": "storagePlanInformation,quota"
         },
         {
-          "Id": "cbdb2a6c-69a6-494c-8d8f-5bc2d1552821",
+          "Id": "f444c7a3-65ae-4369-ae50-1cc83c1368d6",
           "ApiChange": "Property",
           "ChangedApiName": "fileSize",
           "ChangeType": "Addition",
@@ -59,7 +77,7 @@
           "Target": "driveItemUploadableProperties"
         },
         {
-          "Id": "cbdb2a6c-69a6-494c-8d8f-5bc2d1552821",
+          "Id": "f444c7a3-65ae-4369-ae50-1cc83c1368d6",
           "ApiChange": "Property",
           "ChangedApiName": "name",
           "ChangeType": "Addition",
@@ -67,7 +85,7 @@
           "Target": "contentTypeInfo"
         }
       ],
-      "Id": "cbdb2a6c-69a6-494c-8d8f-5bc2d1552821",
+      "Id": "f444c7a3-65ae-4369-ae50-1cc83c1368d6",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-06-01T00:00:00",
@@ -77,7 +95,7 @@
     {
       "ChangeList": [
         {
-          "Id": "6957dd17-c2c8-4225-8536-67f97b9c4ce3",
+          "Id": "1bf72b5c-49dc-493f-b9c4-7ba481a71bf2",
           "ApiChange": "Resource",
           "ChangedApiName": "check in,check out,driveItem",
           "ChangeType": "Addition",
@@ -85,7 +103,7 @@
           "Target": "check in,check out,driveItem"
         },
         {
-          "Id": "6957dd17-c2c8-4225-8536-67f97b9c4ce3",
+          "Id": "1bf72b5c-49dc-493f-b9c4-7ba481a71bf2",
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime,password,message",
           "ChangeType": "Addition",
@@ -93,7 +111,7 @@
           "Target": "createLink,driveItem"
         },
         {
-          "Id": "6957dd17-c2c8-4225-8536-67f97b9c4ce3",
+          "Id": "1bf72b5c-49dc-493f-b9c4-7ba481a71bf2",
           "ApiChange": "Property",
           "ChangedApiName": "preventsDownload",
           "ChangeType": "Addition",
@@ -101,7 +119,7 @@
           "Target": "sharingLink"
         },
         {
-          "Id": "6957dd17-c2c8-4225-8536-67f97b9c4ce3",
+          "Id": "1bf72b5c-49dc-493f-b9c4-7ba481a71bf2",
           "ApiChange": "Property",
           "ChangedApiName": "permission",
           "ChangeType": "Addition",
@@ -109,7 +127,7 @@
           "Target": "sharedDriveItem"
         },
         {
-          "Id": "6957dd17-c2c8-4225-8536-67f97b9c4ce3",
+          "Id": "1bf72b5c-49dc-493f-b9c4-7ba481a71bf2",
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime,hasPassword,grantedToIdentities",
           "ChangeType": "Addition",
@@ -117,7 +135,7 @@
           "Target": "permission"
         },
         {
-          "Id": "6957dd17-c2c8-4225-8536-67f97b9c4ce3",
+          "Id": "1bf72b5c-49dc-493f-b9c4-7ba481a71bf2",
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime,password",
           "ChangeType": "Addition",
@@ -125,7 +143,7 @@
           "Target": "invite,driveItem"
         }
       ],
-      "Id": "6957dd17-c2c8-4225-8536-67f97b9c4ce3",
+      "Id": "1bf72b5c-49dc-493f-b9c4-7ba481a71bf2",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-04-01T00:00:00",
@@ -135,7 +153,7 @@
     {
       "ChangeList": [
         {
-          "Id": "9068d40d-37c2-48ce-bdc2-f5307fce675e",
+          "Id": "ebde237a-60b1-44f6-a7c2-b3cbffe69085",
           "ApiChange": "Property",
           "ChangedApiName": "image,video",
           "ChangeType": "Addition",
@@ -143,7 +161,7 @@
           "Target": "remoteItem"
         },
         {
-          "Id": "9068d40d-37c2-48ce-bdc2-f5307fce675e",
+          "Id": "ebde237a-60b1-44f6-a7c2-b3cbffe69085",
           "ApiChange": "Resource",
           "ChangedApiName": "grant",
           "ChangeType": "Addition",
@@ -151,7 +169,7 @@
           "Target": "permission"
         },
         {
-          "Id": "9068d40d-37c2-48ce-bdc2-f5307fce675e",
+          "Id": "ebde237a-60b1-44f6-a7c2-b3cbffe69085",
           "ApiChange": "Property",
           "ChangedApiName": "following",
           "ChangeType": "Addition",
@@ -159,7 +177,7 @@
           "Target": "drive"
         },
         {
-          "Id": "9068d40d-37c2-48ce-bdc2-f5307fce675e",
+          "Id": "ebde237a-60b1-44f6-a7c2-b3cbffe69085",
           "ApiChange": "Resource",
           "ChangedApiName": "follow,driveItem",
           "ChangeType": "Addition",
@@ -167,7 +185,7 @@
           "Target": "follow,driveItem"
         },
         {
-          "Id": "9068d40d-37c2-48ce-bdc2-f5307fce675e",
+          "Id": "ebde237a-60b1-44f6-a7c2-b3cbffe69085",
           "ApiChange": "Resource",
           "ChangedApiName": "unfollow,driveItem",
           "ChangeType": "Addition",
@@ -175,7 +193,7 @@
           "Target": "unfollow,driveItem"
         }
       ],
-      "Id": "9068d40d-37c2-48ce-bdc2-f5307fce675e",
+      "Id": "ebde237a-60b1-44f6-a7c2-b3cbffe69085",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-03-01T00:00:00",
@@ -185,7 +203,7 @@
     {
       "ChangeList": [
         {
-          "Id": "5fe3706e-4726-42ab-a05a-81e2b1ea078b",
+          "Id": "0c88622b-27aa-42ea-a5e9-5aff70352ed3",
           "ApiChange": "Resource",
           "ChangedApiName": "pendingOperations",
           "ChangeType": "Addition",
@@ -193,7 +211,7 @@
           "Target": "pendingOperations,pendingContentUpdate,driveItem"
         },
         {
-          "Id": "5fe3706e-4726-42ab-a05a-81e2b1ea078b",
+          "Id": "0c88622b-27aa-42ea-a5e9-5aff70352ed3",
           "ApiChange": "Resource",
           "ChangedApiName": "restore,driveItem",
           "ChangeType": "Addition",
@@ -201,7 +219,7 @@
           "Target": "restore,driveItem"
         },
         {
-          "Id": "5fe3706e-4726-42ab-a05a-81e2b1ea078b",
+          "Id": "0c88622b-27aa-42ea-a5e9-5aff70352ed3",
           "ApiChange": "Property",
           "ChangedApiName": "orientation",
           "ChangeType": "Addition",
@@ -209,7 +227,7 @@
           "Target": "photo"
         },
         {
-          "Id": "5fe3706e-4726-42ab-a05a-81e2b1ea078b",
+          "Id": "0c88622b-27aa-42ea-a5e9-5aff70352ed3",
           "ApiChange": "Property",
           "ChangedApiName": "sha256Hash",
           "ChangeType": "Addition",
@@ -217,7 +235,7 @@
           "Target": "hashes"
         }
       ],
-      "Id": "5fe3706e-4726-42ab-a05a-81e2b1ea078b",
+      "Id": "0c88622b-27aa-42ea-a5e9-5aff70352ed3",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-09-01T00:00:00",
@@ -227,7 +245,7 @@
     {
       "ChangeList": [
         {
-          "Id": "b19fe0ab-212e-4a63-bc84-7b5570fddcc1",
+          "Id": "0be72988-c58c-46e3-9037-30c09055afb0",
           "ApiChange": "Resource",
           "ChangedApiName": "unfollow,driveItem",
           "ChangeType": "Addition",
@@ -235,7 +253,7 @@
           "Target": "unfollow,driveItem"
         }
       ],
-      "Id": "b19fe0ab-212e-4a63-bc84-7b5570fddcc1",
+      "Id": "0be72988-c58c-46e3-9037-30c09055afb0",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-08-01T00:00:00",
@@ -245,7 +263,7 @@
     {
       "ChangeList": [
         {
-          "Id": "d63cc1cf-7b19-424a-a9cf-578d4f5d0412",
+          "Id": "b1301589-b835-4f01-8681-09d1a5b37f77",
           "ApiChange": "Property",
           "ChangedApiName": "expirationDatetime,password",
           "ChangeType": "Addition",
@@ -253,17 +271,17 @@
           "Target": "createLink"
         }
       ],
-      "Id": "d63cc1cf-7b19-424a-a9cf-578d4f5d0412",
+      "Id": "b1301589-b835-4f01-8681-09d1a5b37f77",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-07-01T00:00:00",
-      "WorkloadArea": "Files (OneDrive for Business)",
+      "WorkloadArea": "Files",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "78f81dad-21f2-4229-8c4d-be5e29e8b31b",
+          "Id": "37beea5f-9c8c-423d-9f86-df1562373dc4",
           "ApiChange": "Resource",
           "ChangedApiName": "bundle",
           "ChangeType": "Addition",
@@ -271,7 +289,7 @@
           "Target": "bundle"
         },
         {
-          "Id": "78f81dad-21f2-4229-8c4d-be5e29e8b31b",
+          "Id": "37beea5f-9c8c-423d-9f86-df1562373dc4",
           "ApiChange": "Resource",
           "ChangedApiName": "album",
           "ChangeType": "Addition",
@@ -279,7 +297,7 @@
           "Target": "album"
         },
         {
-          "Id": "78f81dad-21f2-4229-8c4d-be5e29e8b31b",
+          "Id": "37beea5f-9c8c-423d-9f86-df1562373dc4",
           "ApiChange": "Property",
           "ChangedApiName": "bundles",
           "ChangeType": "Addition",
@@ -287,7 +305,7 @@
           "Target": "drive"
         },
         {
-          "Id": "78f81dad-21f2-4229-8c4d-be5e29e8b31b",
+          "Id": "37beea5f-9c8c-423d-9f86-df1562373dc4",
           "ApiChange": "Property",
           "ChangedApiName": "bundle",
           "ChangeType": "Addition",
@@ -295,7 +313,7 @@
           "Target": "driveItem"
         },
         {
-          "Id": "78f81dad-21f2-4229-8c4d-be5e29e8b31b",
+          "Id": "37beea5f-9c8c-423d-9f86-df1562373dc4",
           "ApiChange": "Resource",
           "ChangedApiName": "grant",
           "ChangeType": "Addition",
@@ -303,131 +321,17 @@
           "Target": "permission"
         }
       ],
-      "Id": "78f81dad-21f2-4229-8c4d-be5e29e8b31b",
+      "Id": "37beea5f-9c8c-423d-9f86-df1562373dc4",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-05-01T00:00:00",
-      "WorkloadArea": "Files (OneDrive)",
+      "WorkloadArea": "Files",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
-          "ApiChange": "Property",
-          "ChangedApiName": "analytics",
-          "ChangeType": "Addition",
-          "Description": "Added the **analytics** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity.",
-          "Target": "driveItem"
-        },
-        {
-          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
-          "ApiChange": "Property",
-          "ChangedApiName": "analytics",
-          "ChangeType": "Addition",
-          "Description": "Added the **analytics** property to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) entity.",
-          "Target": "site"
-        },
-        {
-          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
-          "ApiChange": "Property",
-          "ChangedApiName": "analytics",
-          "ChangeType": "Addition",
-          "Description": "Added the **analytics** property to the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) entity.",
-          "Target": "listItem"
-        },
-        {
-          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
-          "ApiChange": "Resource",
-          "ChangedApiName": "getActivitiesByInterval",
-          "ChangeType": "Addition",
-          "Description": "Added the **getActivitiesByInterval** function on the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity.",
-          "Target": "driveItem"
-        },
-        {
-          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
-          "ApiChange": "Resource",
-          "ChangedApiName": "getActivitiesByInterval",
-          "ChangeType": "Addition",
-          "Description": "Added the **getActivitiesByInterval** function on the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) entity.",
-          "Target": "site"
-        },
-        {
-          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
-          "ApiChange": "Resource",
-          "ChangedApiName": "getActivitiesByInterval",
-          "ChangeType": "Addition",
-          "Description": "Added the **getActivitiesByInterval** function on the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) entity.",
-          "Target": "listItem"
-        },
-        {
-          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
-          "ApiChange": "Resource",
-          "ChangedApiName": "itemAnalytics",
-          "ChangeType": "Addition",
-          "Description": "Added the [itemAnalytics](https://docs.microsoft.com/en-us/graph/api/resources/itemanalytics?view=graph-rest-beta) entity.",
-          "Target": "itemAnalytics"
-        },
-        {
-          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
-          "ApiChange": "Resource",
-          "ChangedApiName": "itemActivityStat",
-          "ChangeType": "Addition",
-          "Description": "Added the [itemActivityStat](https://docs.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) entity.",
-          "Target": "itemActivityStat"
-        },
-        {
-          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
-          "ApiChange": "Resource",
-          "ChangedApiName": "itemActionStat",
-          "ChangeType": "Addition",
-          "Description": "Added the [itemActionStat](https://docs.microsoft.com/en-us/graph/api/resources/itemactionstat?view=graph-rest-beta) complex type.",
-          "Target": "itemActionStat"
-        },
-        {
-          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessAction",
-          "ChangeType": "Addition",
-          "Description": "Added the [accessAction](https://docs.microsoft.com/en-us/graph/api/resources/accessaction?view=graph-rest-beta) complex type.",
-          "Target": "accessAction"
-        },
-        {
-          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
-          "ApiChange": "Resource",
-          "ChangedApiName": "incompleteData",
-          "ChangeType": "Addition",
-          "Description": "Added the [incompleteData](https://docs.microsoft.com/en-us/graph/api/resources/incompletedata?view=graph-rest-beta) complex type.",
-          "Target": "incompleteData"
-        },
-        {
-          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
-          "ApiChange": "Property",
-          "ChangedApiName": "access",
-          "ChangeType": "Addition",
-          "Description": "Added the **access** property to the [itemActivity](https://docs.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) complex type.",
-          "Target": "itemActivity"
-        },
-        {
-          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
-          "ApiChange": "Property",
-          "ChangedApiName": "location",
-          "ChangeType": "Addition",
-          "Description": "Added the **location** property to the [itemActivity](https://docs.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) complex type.",
-          "Target": "itemActivity"
-        }
-      ],
-      "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
-      "Cloud": "prd",
-      "Version": "v1.0",
-      "CreatedDateTime": "2019-04-01T00:00:00",
-      "WorkloadArea": "Files, sites and lists (OneDrive for Business and SharePoint)",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "839dba53-23da-4ac6-888e-fc4c7fd2d548",
+          "Id": "48b547db-b370-4514-974e-d499d2b9e763",
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime",
           "ChangeType": "Addition",
@@ -435,7 +339,7 @@
           "Target": "driveItem_invite"
         },
         {
-          "Id": "839dba53-23da-4ac6-888e-fc4c7fd2d548",
+          "Id": "48b547db-b370-4514-974e-d499d2b9e763",
           "ApiChange": "Property",
           "ChangedApiName": "password",
           "ChangeType": "Addition",
@@ -443,17 +347,17 @@
           "Target": "driveItem_invite"
         }
       ],
-      "Id": "839dba53-23da-4ac6-888e-fc4c7fd2d548",
+      "Id": "48b547db-b370-4514-974e-d499d2b9e763",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-03-01T00:00:00",
-      "WorkloadArea": "Files (OneDrive for Business)",
+      "WorkloadArea": "Files",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "839dba53-23da-4ac6-888e-fc4c7fd2d548",
+          "Id": "48b547db-b370-4514-974e-d499d2b9e763",
           "ApiChange": "Property",
           "ChangedApiName": "subscriptions",
           "ChangeType": "Addition",
@@ -461,17 +365,17 @@
           "Target": "driveItem"
         }
       ],
-      "Id": "839dba53-23da-4ac6-888e-fc4c7fd2d548",
+      "Id": "48b547db-b370-4514-974e-d499d2b9e763",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-03-01T00:00:00",
-      "WorkloadArea": "Files (OneDrive for Business)",
+      "WorkloadArea": "Files",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "480952a8-1602-4795-9b85-5da5022944b4",
+          "Id": "c5040d49-9511-42c3-8585-90a0bb45bb9f",
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime",
           "ChangeType": "Addition",
@@ -479,7 +383,7 @@
           "Target": "driveItem_invite"
         },
         {
-          "Id": "480952a8-1602-4795-9b85-5da5022944b4",
+          "Id": "c5040d49-9511-42c3-8585-90a0bb45bb9f",
           "ApiChange": "Property",
           "ChangedApiName": "password",
           "ChangeType": "Addition",
@@ -487,17 +391,17 @@
           "Target": "driveItem_invite"
         }
       ],
-      "Id": "480952a8-1602-4795-9b85-5da5022944b4",
+      "Id": "c5040d49-9511-42c3-8585-90a0bb45bb9f",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-02-01T00:00:00",
-      "WorkloadArea": "Files (OneDrive for Business)",
+      "WorkloadArea": "Files",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Resource",
           "ChangedApiName": "deferCommit",
           "ChangeType": "Addition",
@@ -505,7 +409,7 @@
           "Target": "createUploadSession,driveItem"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Resource",
           "ChangedApiName": "storagePlanInformation",
           "ChangeType": "Addition",
@@ -513,7 +417,7 @@
           "Target": "storagePlanInformation"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Property",
           "ChangedApiName": "storagePlanInformation",
           "ChangeType": "Addition",
@@ -521,7 +425,7 @@
           "Target": "quota"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Property",
           "ChangedApiName": "following",
           "ChangeType": "Addition",
@@ -529,7 +433,7 @@
           "Target": "drive"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Resource",
           "ChangedApiName": "follow,driveItem",
           "ChangeType": "Addition",
@@ -537,7 +441,7 @@
           "Target": "follow,driveItem"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Property",
           "ChangedApiName": "hasPassword",
           "ChangeType": "Addition",
@@ -545,7 +449,7 @@
           "Target": "permission"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Property",
           "ChangedApiName": "preventsDownload",
           "ChangeType": "Addition",
@@ -553,7 +457,7 @@
           "Target": "sharingLink"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Property",
           "ChangedApiName": "permission",
           "ChangeType": "Addition",
@@ -561,7 +465,7 @@
           "Target": "sharedDriveItem"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Property",
           "ChangedApiName": "geolocation",
           "ChangeType": "Addition",
@@ -569,7 +473,7 @@
           "Target": "columnDefinition"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Resource",
           "ChangedApiName": "geolocationColumn",
           "ChangeType": "Addition",
@@ -577,7 +481,7 @@
           "Target": "geolocationColumn"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
@@ -585,7 +489,7 @@
           "Target": "driveItem"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
@@ -593,7 +497,7 @@
           "Target": "site"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
@@ -601,7 +505,7 @@
           "Target": "listItem"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
@@ -609,7 +513,7 @@
           "Target": "driveItem"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
@@ -617,7 +521,7 @@
           "Target": "site"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
@@ -625,7 +529,7 @@
           "Target": "listItem"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Resource",
           "ChangedApiName": "itemAnalytics",
           "ChangeType": "Addition",
@@ -633,7 +537,7 @@
           "Target": "itemAnalytics"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Resource",
           "ChangedApiName": "itemActivityStat",
           "ChangeType": "Addition",
@@ -641,7 +545,7 @@
           "Target": "itemActivityStat"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Resource",
           "ChangedApiName": "itemActionStat",
           "ChangeType": "Addition",
@@ -649,7 +553,7 @@
           "Target": "itemActionStat"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Resource",
           "ChangedApiName": "accessAction",
           "ChangeType": "Addition",
@@ -657,7 +561,7 @@
           "Target": "accessAction"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Resource",
           "ChangedApiName": "incompleteData",
           "ChangeType": "Addition",
@@ -665,7 +569,7 @@
           "Target": "incompleteData"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Property",
           "ChangedApiName": "access",
           "ChangeType": "Addition",
@@ -673,7 +577,7 @@
           "Target": "itemActivity"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Property",
           "ChangedApiName": "location",
           "ChangeType": "Addition",
@@ -681,17 +585,17 @@
           "Target": "itemActivity"
         }
       ],
-      "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+      "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-09-01T00:00:00",
-      "WorkloadArea": "Files, sites, and lists (OneDrive for Business and SharePoint)",
+      "WorkloadArea": "Files",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Resource",
           "ChangedApiName": "preview",
           "ChangeType": "Addition",
@@ -699,7 +603,7 @@
           "Target": "driveItem"
         },
         {
-          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
           "ApiChange": "Resource",
           "ChangedApiName": "itemPreviewInfo",
           "ChangeType": "Addition",
@@ -707,17 +611,17 @@
           "Target": "itemPreviewInfo"
         }
       ],
-      "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+      "Id": "96090dbc-fbdc-4250-a4cc-4672d2799ca9",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-09-01T00:00:00",
-      "WorkloadArea": "Files, sites, and lists (OneDrive for Business and SharePoint)",
+      "WorkloadArea": "Files",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "Id": "db0e845d-f4e7-46a1-be8c-36ed877104f1",
           "ApiChange": "Resource",
           "ChangedApiName": "itemPreviewInfo",
           "ChangeType": "Addition",
@@ -725,7 +629,7 @@
           "Target": "itemPreviewInfo"
         },
         {
-          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "Id": "db0e845d-f4e7-46a1-be8c-36ed877104f1",
           "ApiChange": "Property",
           "ChangedApiName": "contentTypeInfo",
           "ChangeType": "Addition",
@@ -733,7 +637,7 @@
           "Target": "contentTypeInfo"
         },
         {
-          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "Id": "db0e845d-f4e7-46a1-be8c-36ed877104f1",
           "ApiChange": "Property",
           "ChangedApiName": "deleteAction",
           "ChangeType": "Addition",
@@ -741,7 +645,7 @@
           "Target": "deleteAction"
         },
         {
-          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "Id": "db0e845d-f4e7-46a1-be8c-36ed877104f1",
           "ApiChange": "Property",
           "ChangedApiName": "renameAction",
           "ChangeType": "Addition",
@@ -749,7 +653,7 @@
           "Target": "renameAction"
         },
         {
-          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "Id": "db0e845d-f4e7-46a1-be8c-36ed877104f1",
           "ApiChange": "Property",
           "ChangedApiName": "sharepointIds",
           "ChangeType": "Addition",
@@ -757,7 +661,7 @@
           "Target": "sharepointIds"
         },
         {
-          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "Id": "db0e845d-f4e7-46a1-be8c-36ed877104f1",
           "ApiChange": "Property",
           "ChangedApiName": "itemActivityTimeSet",
           "ChangeType": "Addition",
@@ -765,7 +669,7 @@
           "Target": "itemActivityTimeSet"
         },
         {
-          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "Id": "db0e845d-f4e7-46a1-be8c-36ed877104f1",
           "ApiChange": "Resource",
           "ChangedApiName": "preview,driveItem",
           "ChangeType": "Addition",
@@ -773,17 +677,17 @@
           "Target": "preview,driveItem"
         }
       ],
-      "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+      "Id": "db0e845d-f4e7-46a1-be8c-36ed877104f1",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-03-01T00:00:00",
-      "WorkloadArea": "Files (OneDrive for Business)",
+      "WorkloadArea": "Files",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "Id": "db0e845d-f4e7-46a1-be8c-36ed877104f1",
           "ApiChange": "Resource",
           "ChangedApiName": "baseItemVersion,driveItemVersion,listItemVersion",
           "ChangeType": "Addition",
@@ -791,7 +695,7 @@
           "Target": "baseItemVersion,driveItemVersion,listItemVersion"
         },
         {
-          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "Id": "db0e845d-f4e7-46a1-be8c-36ed877104f1",
           "ApiChange": "Resource",
           "ChangedApiName": "publicationFacet",
           "ChangeType": "Addition",
@@ -799,7 +703,7 @@
           "Target": "publicationFacet"
         },
         {
-          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "Id": "db0e845d-f4e7-46a1-be8c-36ed877104f1",
           "ApiChange": "Property",
           "ChangedApiName": "driveItem",
           "ChangeType": "Addition",
@@ -807,7 +711,7 @@
           "Target": "driveItem"
         },
         {
-          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "Id": "db0e845d-f4e7-46a1-be8c-36ed877104f1",
           "ApiChange": "Property",
           "ChangedApiName": "driveItem",
           "ChangeType": "Addition",
@@ -815,7 +719,7 @@
           "Target": "driveItem"
         },
         {
-          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "Id": "db0e845d-f4e7-46a1-be8c-36ed877104f1",
           "ApiChange": "Property",
           "ChangedApiName": "listItem",
           "ChangeType": "Addition",
@@ -823,7 +727,7 @@
           "Target": "listItem"
         },
         {
-          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "Id": "db0e845d-f4e7-46a1-be8c-36ed877104f1",
           "ApiChange": "Property",
           "ChangedApiName": "siteCollection",
           "ChangeType": "Addition",
@@ -831,7 +735,7 @@
           "Target": "siteCollection"
         },
         {
-          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "Id": "db0e845d-f4e7-46a1-be8c-36ed877104f1",
           "ApiChange": "Resource",
           "ChangedApiName": "restoreVersion,driveItemVersion",
           "ChangeType": "Addition",
@@ -839,7 +743,7 @@
           "Target": "restoreVersion,driveItemVersion"
         },
         {
-          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "Id": "db0e845d-f4e7-46a1-be8c-36ed877104f1",
           "ApiChange": "Resource",
           "ChangedApiName": "restoreVersion,listItemVersion",
           "ChangeType": "Addition",
@@ -847,17 +751,17 @@
           "Target": "restoreVersion,listItemVersion"
         }
       ],
-      "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+      "Id": "db0e845d-f4e7-46a1-be8c-36ed877104f1",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-03-01T00:00:00",
-      "WorkloadArea": "Files (OneDrive for Business)",
+      "WorkloadArea": "Files",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "Id": "b3d225d5-c098-440d-b732-31466745c40f",
           "ApiChange": "Property",
           "ChangedApiName": "system",
           "ChangeType": "Addition",
@@ -865,7 +769,7 @@
           "Target": "Drive,Drive-beta"
         },
         {
-          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "Id": "b3d225d5-c098-440d-b732-31466745c40f",
           "ApiChange": "Resource",
           "ChangedApiName": "activities",
           "ChangeType": "Addition",
@@ -873,7 +777,7 @@
           "Target": "Drive,Drive-beta"
         },
         {
-          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "Id": "b3d225d5-c098-440d-b732-31466745c40f",
           "ApiChange": "Property",
           "ChangedApiName": "publication",
           "ChangeType": "Addition",
@@ -881,7 +785,7 @@
           "Target": "DriveItem,DriveItem-beta"
         },
         {
-          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "Id": "b3d225d5-c098-440d-b732-31466745c40f",
           "ApiChange": "Resource",
           "ChangedApiName": "activities,versions",
           "ChangeType": "Addition",
@@ -889,7 +793,7 @@
           "Target": "DriveItem,DriveItem-beta"
         },
         {
-          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "Id": "b3d225d5-c098-440d-b732-31466745c40f",
           "ApiChange": "Resource",
           "ChangedApiName": "DriveItemVersion,DriveItemVersion-beta,ItemActivity,ItemActivity-beta",
           "ChangeType": "Addition",
@@ -897,7 +801,7 @@
           "Target": "DriveItemVersion,DriveItemVersion-beta,ItemActivity,ItemActivity-beta"
         },
         {
-          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "Id": "b3d225d5-c098-440d-b732-31466745c40f",
           "ApiChange": "Resource",
           "ChangedApiName": "CommentAction,CommentAction-beta,CreateAction,CreateAction-beta,DeleteAction,DeleteAction-beta,EditAction,EditAction-beta,ItemActionSet,ItemActionSet-beta,ItemActivityTimeSet,ItemActivityTimeSet-beta,MentionAction,MentionAction-beta,MoveAction,MoveAction-beta,PublicationFacet,PublicationFacet-beta,RenameAction,RenameAction-beta,RestoreAction,RestoreAction-beta,ShareAction,ShareAction-beta,VersionAction,VersionAction-beta",
           "ChangeType": "Addition",
@@ -905,7 +809,7 @@
           "Target": "CommentAction,CommentAction-beta,CreateAction,CreateAction-beta,DeleteAction,DeleteAction-beta,EditAction,EditAction-beta,ItemActionSet,ItemActionSet-beta,ItemActivityTimeSet,ItemActivityTimeSet-beta,MentionAction,MentionAction-beta,MoveAction,MoveAction-beta,PublicationFacet,PublicationFacet-beta,RenameAction,RenameAction-beta,RestoreAction,RestoreAction-beta,ShareAction,ShareAction-beta,VersionAction,VersionAction-beta"
         },
         {
-          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "Id": "b3d225d5-c098-440d-b732-31466745c40f",
           "ApiChange": "Property",
           "ChangedApiName": "driveType",
           "ChangeType": "Addition",
@@ -913,7 +817,7 @@
           "Target": "ItemReference,ItemReference-beta"
         },
         {
-          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "Id": "b3d225d5-c098-440d-b732-31466745c40f",
           "ApiChange": "Property",
           "ChangedApiName": "tenantId",
           "ChangeType": "Deletion",
@@ -921,7 +825,7 @@
           "Target": "SharepointIds,SharepointIds-beta"
         },
         {
-          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "Id": "b3d225d5-c098-440d-b732-31466745c40f",
           "ApiChange": "Resource",
           "ChangedApiName": "CheckIn,CheckIn-beta,CheckOut,CheckOut-beta,DriveItem,DriveItem-beta",
           "ChangeType": "Addition",
@@ -929,7 +833,7 @@
           "Target": "CheckIn,CheckIn-beta,CheckOut,CheckOut-beta,DriveItem,DriveItem-beta"
         },
         {
-          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "Id": "b3d225d5-c098-440d-b732-31466745c40f",
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime,password,message,recipients",
           "ChangeType": "Addition",
@@ -937,17 +841,17 @@
           "Target": "CreateLink,CreateLink-beta,DriveItem,DriveItem-beta"
         }
       ],
-      "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+      "Id": "b3d225d5-c098-440d-b732-31466745c40f",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-09-01T00:00:00",
-      "WorkloadArea": "Files (OneDrive for Business)",
+      "WorkloadArea": "Files",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "Id": "b3d225d5-c098-440d-b732-31466745c40f",
           "ApiChange": "Property",
           "ChangedApiName": "system",
           "ChangeType": "Addition",
@@ -955,7 +859,7 @@
           "Target": "Drive,"
         },
         {
-          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "Id": "b3d225d5-c098-440d-b732-31466745c40f",
           "ApiChange": "Resource",
           "ChangedApiName": "list",
           "ChangeType": "Addition",
@@ -963,7 +867,7 @@
           "Target": "Drive,"
         },
         {
-          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "Id": "b3d225d5-c098-440d-b732-31466745c40f",
           "ApiChange": "Resource",
           "ChangedApiName": "listItem",
           "ChangeType": "Addition",
@@ -971,7 +875,7 @@
           "Target": "DriveItem,"
         },
         {
-          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "Id": "b3d225d5-c098-440d-b732-31466745c40f",
           "ApiChange": "Resource",
           "ChangedApiName": "list,listItem",
           "ChangeType": "Addition",
@@ -979,7 +883,7 @@
           "Target": "SharedDriveItem,"
         },
         {
-          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "Id": "b3d225d5-c098-440d-b732-31466745c40f",
           "ApiChange": "Resource",
           "ChangedApiName": "FolderView,",
           "ChangeType": "Addition",
@@ -987,7 +891,7 @@
           "Target": "FolderView,"
         },
         {
-          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "Id": "b3d225d5-c098-440d-b732-31466745c40f",
           "ApiChange": "Property",
           "ChangedApiName": "view",
           "ChangeType": "Addition",
@@ -995,7 +899,7 @@
           "Target": "Folder,"
         },
         {
-          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "Id": "b3d225d5-c098-440d-b732-31466745c40f",
           "ApiChange": "Property",
           "ChangedApiName": "driveType",
           "ChangeType": "Addition",
@@ -1003,7 +907,7 @@
           "Target": "ItemReference,"
         },
         {
-          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "Id": "b3d225d5-c098-440d-b732-31466745c40f",
           "ApiChange": "Property",
           "ChangedApiName": "audioBitsPerSample,audioChannels,audioFormat,audioSamplesPerSecond,fourCC,frameRate",
           "ChangeType": "Addition",
@@ -1011,7 +915,7 @@
           "Target": "Video,"
         },
         {
-          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "Id": "b3d225d5-c098-440d-b732-31466745c40f",
           "ApiChange": "Property",
           "ChangedApiName": "audioBitsPerSample,audioChannels,audioFormat,audioSamplesPerSecond,fourCC,frameRate",
           "ChangeType": "Addition",
@@ -1019,17 +923,17 @@
           "Target": "Video,Video-beta"
         }
       ],
-      "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+      "Id": "b3d225d5-c098-440d-b732-31466745c40f",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-09-01T00:00:00",
-      "WorkloadArea": "Files (OneDrive for Business)",
+      "WorkloadArea": "Files",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "56d2b63f-142a-4346-bfe9-8aabc86ef0e0",
+          "Id": "164c3fa1-35c4-4b49-b6f5-3ecdc1db008e",
           "ApiChange": "Property",
           "ChangedApiName": "configuratorUrl,webHtml,sharingLink,folderView,view,folder,listItem,driveItem,list,drive",
           "ChangeType": "Change",
@@ -1037,7 +941,7 @@
           "Target": ""
         }
       ],
-      "Id": "56d2b63f-142a-4346-bfe9-8aabc86ef0e0",
+      "Id": "164c3fa1-35c4-4b49-b6f5-3ecdc1db008e",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -1047,7 +951,7 @@
     {
       "ChangeList": [
         {
-          "Id": "56d2b63f-142a-4346-bfe9-8aabc86ef0e0",
+          "Id": "164c3fa1-35c4-4b49-b6f5-3ecdc1db008e",
           "ApiChange": "Property",
           "ChangedApiName": "baseItem,driveItem",
           "ChangeType": "Addition",
@@ -1055,7 +959,7 @@
           "Target": ""
         },
         {
-          "Id": "56d2b63f-142a-4346-bfe9-8aabc86ef0e0",
+          "Id": "164c3fa1-35c4-4b49-b6f5-3ecdc1db008e",
           "ApiChange": "Property",
           "ChangedApiName": "sourceItemId,thumbnail,siteUrl,sharepointIds,sharedBy,sharedDateTime,shared,shared,remoteItem,sharepointIds,drive,itemReference,lastAccessedDateTime,fileSystemInfo,driveItem,site,sharedDriveItem,parentReference,baseItem",
           "ChangeType": "Addition",
@@ -1063,7 +967,7 @@
           "Target": ""
         },
         {
-          "Id": "56d2b63f-142a-4346-bfe9-8aabc86ef0e0",
+          "Id": "164c3fa1-35c4-4b49-b6f5-3ecdc1db008e",
           "ApiChange": "Resource",
           "ChangedApiName": "driveItem,sharedDriveItem,baseItem,identity",
           "ChangeType": "Change",
@@ -1071,7 +975,7 @@
           "Target": ""
         }
       ],
-      "Id": "56d2b63f-142a-4346-bfe9-8aabc86ef0e0",
+      "Id": "164c3fa1-35c4-4b49-b6f5-3ecdc1db008e",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -1081,7 +985,7 @@
     {
       "ChangeList": [
         {
-          "Id": "e1a3997a-6aff-4782-9bdc-81d4ea8ce12f",
+          "Id": "e02f3115-51d9-4ae9-914a-bf481ec8a843",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -1089,7 +993,7 @@
           "Target": ""
         },
         {
-          "Id": "e1a3997a-6aff-4782-9bdc-81d4ea8ce12f",
+          "Id": "e02f3115-51d9-4ae9-914a-bf481ec8a843",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -1097,7 +1001,7 @@
           "Target": ""
         },
         {
-          "Id": "e1a3997a-6aff-4782-9bdc-81d4ea8ce12f",
+          "Id": "e02f3115-51d9-4ae9-914a-bf481ec8a843",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -1105,7 +1009,7 @@
           "Target": ""
         },
         {
-          "Id": "e1a3997a-6aff-4782-9bdc-81d4ea8ce12f",
+          "Id": "e02f3115-51d9-4ae9-914a-bf481ec8a843",
           "ApiChange": "Property",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -1113,7 +1017,7 @@
           "Target": ""
         },
         {
-          "Id": "e1a3997a-6aff-4782-9bdc-81d4ea8ce12f",
+          "Id": "e02f3115-51d9-4ae9-914a-bf481ec8a843",
           "ApiChange": "Property",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -1121,7 +1025,7 @@
           "Target": ""
         },
         {
-          "Id": "e1a3997a-6aff-4782-9bdc-81d4ea8ce12f",
+          "Id": "e02f3115-51d9-4ae9-914a-bf481ec8a843",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -1129,7 +1033,7 @@
           "Target": ""
         },
         {
-          "Id": "e1a3997a-6aff-4782-9bdc-81d4ea8ce12f",
+          "Id": "e02f3115-51d9-4ae9-914a-bf481ec8a843",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -1137,7 +1041,7 @@
           "Target": ""
         }
       ],
-      "Id": "e1a3997a-6aff-4782-9bdc-81d4ea8ce12f",
+      "Id": "e02f3115-51d9-4ae9-914a-bf481ec8a843",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-09-01T00:00:00",
@@ -1147,7 +1051,7 @@
     {
       "ChangeList": [
         {
-          "Id": "34514922-af70-44b3-be37-130b8fc3467d",
+          "Id": "148856d2-071a-4251-b504-cd60ad274362",
           "ApiChange": "method",
           "ChangedApiName": "CreateUploadSession,driveItem",
           "ChangeType": "Addition",
@@ -1155,7 +1059,7 @@
           "Target": ""
         },
         {
-          "Id": "34514922-af70-44b3-be37-130b8fc3467d",
+          "Id": "148856d2-071a-4251-b504-cd60ad274362",
           "ApiChange": "Property",
           "ChangedApiName": "sharepointIds,root",
           "ChangeType": "Addition",
@@ -1163,7 +1067,7 @@
           "Target": ""
         },
         {
-          "Id": "34514922-af70-44b3-be37-130b8fc3467d",
+          "Id": "148856d2-071a-4251-b504-cd60ad274362",
           "ApiChange": "Resource",
           "ChangedApiName": "Shares",
           "ChangeType": "Addition",
@@ -1171,7 +1075,7 @@
           "Target": ""
         },
         {
-          "Id": "34514922-af70-44b3-be37-130b8fc3467d",
+          "Id": "148856d2-071a-4251-b504-cd60ad274362",
           "ApiChange": "method",
           "ChangedApiName": "Invite",
           "ChangeType": "Addition",
@@ -1179,7 +1083,7 @@
           "Target": ""
         },
         {
-          "Id": "34514922-af70-44b3-be37-130b8fc3467d",
+          "Id": "148856d2-071a-4251-b504-cd60ad274362",
           "ApiChange": "method",
           "ChangedApiName": "Search",
           "ChangeType": "Addition",
@@ -1187,7 +1091,7 @@
           "Target": ""
         },
         {
-          "Id": "34514922-af70-44b3-be37-130b8fc3467d",
+          "Id": "148856d2-071a-4251-b504-cd60ad274362",
           "ApiChange": "Property",
           "ChangedApiName": "processingMetadata",
           "ChangeType": "Addition",
@@ -1195,7 +1099,7 @@
           "Target": ""
         },
         {
-          "Id": "34514922-af70-44b3-be37-130b8fc3467d",
+          "Id": "148856d2-071a-4251-b504-cd60ad274362",
           "ApiChange": "Property",
           "ChangedApiName": "quickXorHash",
           "ChangeType": "Addition",
@@ -1203,7 +1107,7 @@
           "Target": ""
         }
       ],
-      "Id": "34514922-af70-44b3-be37-130b8fc3467d",
+      "Id": "148856d2-071a-4251-b504-cd60ad274362",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2016-09-01T00:00:00",
@@ -1213,7 +1117,7 @@
     {
       "ChangeList": [
         {
-          "Id": "5492edbb-9032-4b8b-a57e-b7b91fe146ef",
+          "Id": "c86b8667-3dbb-4d93-8276-ef6e553a1698",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -1221,7 +1125,7 @@
           "Target": ""
         }
       ],
-      "Id": "5492edbb-9032-4b8b-a57e-b7b91fe146ef",
+      "Id": "c86b8667-3dbb-4d93-8276-ef6e553a1698",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-03-01T00:00:00",
@@ -1231,7 +1135,7 @@
     {
       "ChangeList": [
         {
-          "Id": "5492edbb-9032-4b8b-a57e-b7b91fe146ef",
+          "Id": "c86b8667-3dbb-4d93-8276-ef6e553a1698",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -1239,7 +1143,7 @@
           "Target": ""
         },
         {
-          "Id": "5492edbb-9032-4b8b-a57e-b7b91fe146ef",
+          "Id": "c86b8667-3dbb-4d93-8276-ef6e553a1698",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -1247,7 +1151,7 @@
           "Target": ""
         },
         {
-          "Id": "5492edbb-9032-4b8b-a57e-b7b91fe146ef",
+          "Id": "c86b8667-3dbb-4d93-8276-ef6e553a1698",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -1255,7 +1159,7 @@
           "Target": ""
         },
         {
-          "Id": "5492edbb-9032-4b8b-a57e-b7b91fe146ef",
+          "Id": "c86b8667-3dbb-4d93-8276-ef6e553a1698",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -1263,7 +1167,7 @@
           "Target": ""
         },
         {
-          "Id": "5492edbb-9032-4b8b-a57e-b7b91fe146ef",
+          "Id": "c86b8667-3dbb-4d93-8276-ef6e553a1698",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -1271,7 +1175,7 @@
           "Target": ""
         },
         {
-          "Id": "5492edbb-9032-4b8b-a57e-b7b91fe146ef",
+          "Id": "c86b8667-3dbb-4d93-8276-ef6e553a1698",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -1279,7 +1183,7 @@
           "Target": ""
         },
         {
-          "Id": "5492edbb-9032-4b8b-a57e-b7b91fe146ef",
+          "Id": "c86b8667-3dbb-4d93-8276-ef6e553a1698",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -1287,7 +1191,7 @@
           "Target": ""
         }
       ],
-      "Id": "5492edbb-9032-4b8b-a57e-b7b91fe146ef",
+      "Id": "c86b8667-3dbb-4d93-8276-ef6e553a1698",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2016-03-01T00:00:00",
@@ -1297,7 +1201,7 @@
     {
       "ChangeList": [
         {
-          "Id": "5b8d228e-51d5-4586-ac05-a46121a18839",
+          "Id": "1f372c0d-a54b-4d8c-a99d-5a8fe1829dfa",
           "ApiChange": "Property",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -1305,7 +1209,7 @@
           "Target": ""
         }
       ],
-      "Id": "5b8d228e-51d5-4586-ac05-a46121a18839",
+      "Id": "1f372c0d-a54b-4d8c-a99d-5a8fe1829dfa",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2016-02-01T00:00:00",

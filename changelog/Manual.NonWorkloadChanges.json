@@ -1,9 +1,27 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
         {
-          "Id": "183ccf82-eeac-41ca-89e4-031452d250dd",
+          "Id": "0a01c9dd-93ec-4529-875e-842a925277d1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ediscoveryCase,reviewSet,reviewSetQuery",
+          "ChangeType": "Addition",
+          "Description": "Introduced the compliance eDiscovery API, including the [ediscoveryCase](https://docs.microsoft.com/en-us/graph/api/resources/ediscoverycase?view=graph-rest-beta), [reviewSet](https://docs.microsoft.com/en-us/graph/api/resources/reviewset?view=graph-rest-beta), and [reviewSetQuery](https://docs.microsoft.com/en-us/graph/api/resources/reviewsetquery?view=graph-rest-beta), and operations.",
+          "Target": "ediscoveryCase,reviewSet,reviewSetQuery"
+        }
+      ],
+      "Id": "0a01c9dd-93ec-4529-875e-842a925277d1",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-07-01T00:00:00",
+      "WorkloadArea": "Compliance ",
+      "SubArea": " eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "13bdd50b-5817-4a82-a7c9-730696cebdfc",
           "ApiChange": "Resource",
           "ChangedApiName": "schema extensions,Microsoft Cloud for US Government",
           "ChangeType": "Addition",
@@ -11,17 +29,17 @@
           "Target": "schema extensions,Microsoft Cloud for US Government"
         }
       ],
-      "Id": "183ccf82-eeac-41ca-89e4-031452d250dd",
+      "Id": "13bdd50b-5817-4a82-a7c9-730696cebdfc",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-07-01T00:00:00",
       "WorkloadArea": "Extensions ",
-      "SubArea": ""
+      "SubArea": " Schema extensions"
     },
     {
       "ChangeList": [
         {
-          "Id": "283cedd4-bc19-42e8-b69b-8b1d3099adf0",
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
           "ApiChange": "Resource",
           "ChangedApiName": "mgt-get",
           "ChangeType": "Addition",
@@ -29,7 +47,7 @@
           "Target": "mgt-get"
         },
         {
-          "Id": "283cedd4-bc19-42e8-b69b-8b1d3099adf0",
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
           "ApiChange": "Resource",
           "ChangedApiName": "Proxy provider",
           "ChangeType": "Addition",
@@ -37,7 +55,7 @@
           "Target": "Proxy provider"
         },
         {
-          "Id": "283cedd4-bc19-42e8-b69b-8b1d3099adf0",
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
           "ApiChange": "Resource",
           "ChangedApiName": "inherit-details",
           "ChangeType": "Addition",
@@ -45,7 +63,7 @@
           "Target": "person card component"
         },
         {
-          "Id": "283cedd4-bc19-42e8-b69b-8b1d3099adf0",
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
           "ApiChange": "Property",
           "ChangedApiName": "selectedPeople",
           "ChangeType": "Addition",
@@ -53,7 +71,7 @@
           "Target": "people picker component"
         },
         {
-          "Id": "283cedd4-bc19-42e8-b69b-8b1d3099adf0",
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
           "ApiChange": "Resource",
           "ChangedApiName": "loading,error",
           "ChangeType": "Addition",
@@ -61,7 +79,7 @@
           "Target": "people picker component"
         },
         {
-          "Id": "283cedd4-bc19-42e8-b69b-8b1d3099adf0",
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
           "ApiChange": "Resource",
           "ChangedApiName": "task,task-details",
           "ChangeType": "Addition",
@@ -69,7 +87,7 @@
           "Target": "tasks component"
         },
         {
-          "Id": "283cedd4-bc19-42e8-b69b-8b1d3099adf0",
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
           "ApiChange": "Property",
           "ChangedApiName": "isNewTaskVisible",
           "ChangeType": "Addition",
@@ -77,7 +95,7 @@
           "Target": "tasks component"
         },
         {
-          "Id": "283cedd4-bc19-42e8-b69b-8b1d3099adf0",
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
           "ApiChange": "Resource",
           "ChangedApiName": "group-id",
           "ChangeType": "Addition",
@@ -85,7 +103,7 @@
           "Target": "tasks component"
         },
         {
-          "Id": "283cedd4-bc19-42e8-b69b-8b1d3099adf0",
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
           "ApiChange": "Property",
           "ChangedApiName": "taskFilter",
           "ChangeType": "Addition",
@@ -93,7 +111,7 @@
           "Target": "tasks component"
         },
         {
-          "Id": "283cedd4-bc19-42e8-b69b-8b1d3099adf0",
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
           "ApiChange": "Resource",
           "ChangedApiName": "eventClick",
           "ChangeType": "Addition",
@@ -101,7 +119,7 @@
           "Target": "agenda component"
         },
         {
-          "Id": "283cedd4-bc19-42e8-b69b-8b1d3099adf0",
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
           "ApiChange": "Resource",
           "ChangedApiName": "person-card",
           "ChangeType": "Addition",
@@ -109,7 +127,7 @@
           "Target": "people component"
         },
         {
-          "Id": "283cedd4-bc19-42e8-b69b-8b1d3099adf0",
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
           "ApiChange": "Resource",
           "ChangedApiName": "user-ids",
           "ChangeType": "Addition",
@@ -117,7 +135,7 @@
           "Target": "people component"
         }
       ],
-      "Id": "283cedd4-bc19-42e8-b69b-8b1d3099adf0",
+      "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-12-01T00:00:00",
@@ -127,7 +145,7 @@
     {
       "ChangeList": [
         {
-          "Id": "c1eacb53-f837-4c59-b9cb-6a1d9bb145e3",
+          "Id": "72618597-8ff0-48ac-96ca-3dc6a2acfb62",
           "ApiChange": "Property",
           "ChangedApiName": "allowNewTimeProposals",
           "ChangeType": "Addition",
@@ -135,7 +153,7 @@
           "Target": "event,eventMessageRequest"
         },
         {
-          "Id": "c1eacb53-f837-4c59-b9cb-6a1d9bb145e3",
+          "Id": "72618597-8ff0-48ac-96ca-3dc6a2acfb62",
           "ApiChange": "Parameter",
           "ChangedApiName": "proposedNewTime,event",
           "ChangeType": "Addition",
@@ -143,7 +161,7 @@
           "Target": "tentativelyAccept,decline"
         },
         {
-          "Id": "c1eacb53-f837-4c59-b9cb-6a1d9bb145e3",
+          "Id": "72618597-8ff0-48ac-96ca-3dc6a2acfb62",
           "ApiChange": "Property",
           "ChangedApiName": "proposedNewTime,responseType",
           "ChangeType": "Addition",
@@ -151,7 +169,7 @@
           "Target": "eventMessageResponse,eventMessage"
         },
         {
-          "Id": "c1eacb53-f837-4c59-b9cb-6a1d9bb145e3",
+          "Id": "72618597-8ff0-48ac-96ca-3dc6a2acfb62",
           "ApiChange": "Property",
           "ChangedApiName": "proposedNewTime",
           "ChangeType": "Addition",
@@ -159,7 +177,7 @@
           "Target": "attendee"
         }
       ],
-      "Id": "c1eacb53-f837-4c59-b9cb-6a1d9bb145e3",
+      "Id": "72618597-8ff0-48ac-96ca-3dc6a2acfb62",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
@@ -169,7 +187,25 @@
     {
       "ChangeList": [
         {
-          "Id": "75314067-b269-4c9d-bd7c-fcf4304ce283",
+          "Id": "6446fff4-2844-409c-93e0-988408e3df12",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Microsoft Graph data connect (preview)",
+          "ChangeType": "Addition",
+          "Description": "Introduced the ability to access Microsoft 365 data in bulk. For details, see [Microsoft Graph data connect (preview)](data-connect-overview.md).",
+          "Target": "Microsoft Graph data connect (preview)"
+        }
+      ],
+      "Id": "6446fff4-2844-409c-93e0-988408e3df12",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2018-09-01T00:00:00",
+      "WorkloadArea": "Data access",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "701fd3ae-9365-4fef-8196-bbf769e3fe4b",
           "ApiChange": "Resource",
           "ChangedApiName": "bookingBusiness,List,Create,Get,Update,Delete,Publish,Unpublish,Microsoft Bookings API",
           "ChangeType": "Addition",
@@ -177,7 +213,7 @@
           "Target": "bookingBusiness,List,Create,Get,Update,Delete,Publish,Unpublish,Microsoft Bookings API"
         },
         {
-          "Id": "75314067-b269-4c9d-bd7c-fcf4304ce283",
+          "Id": "701fd3ae-9365-4fef-8196-bbf769e3fe4b",
           "ApiChange": "Resource",
           "ChangedApiName": "bookingAppointment,List,Create,Get,Update,Delete,Cancel",
           "ChangeType": "Addition",
@@ -185,7 +221,7 @@
           "Target": "bookingAppointment,List,Create,Get,Update,Delete,Cancel"
         },
         {
-          "Id": "75314067-b269-4c9d-bd7c-fcf4304ce283",
+          "Id": "701fd3ae-9365-4fef-8196-bbf769e3fe4b",
           "ApiChange": "Resource",
           "ChangedApiName": "bookingCurrency,List,Get",
           "ChangeType": "Addition",
@@ -193,7 +229,7 @@
           "Target": "bookingCurrency,List,Get"
         },
         {
-          "Id": "75314067-b269-4c9d-bd7c-fcf4304ce283",
+          "Id": "701fd3ae-9365-4fef-8196-bbf769e3fe4b",
           "ApiChange": "Resource",
           "ChangedApiName": "bookingCustomer,List,Create,Get,Update,Delete",
           "ChangeType": "Addition",
@@ -201,7 +237,7 @@
           "Target": "bookingCustomer,List,Create,Get,Update,Delete"
         },
         {
-          "Id": "75314067-b269-4c9d-bd7c-fcf4304ce283",
+          "Id": "701fd3ae-9365-4fef-8196-bbf769e3fe4b",
           "ApiChange": "Resource",
           "ChangedApiName": "bookingService,List,Create,Get,Update,Delete",
           "ChangeType": "Addition",
@@ -209,7 +245,7 @@
           "Target": "bookingService,List,Create,Get,Update,Delete"
         },
         {
-          "Id": "75314067-b269-4c9d-bd7c-fcf4304ce283",
+          "Id": "701fd3ae-9365-4fef-8196-bbf769e3fe4b",
           "ApiChange": "Resource",
           "ChangedApiName": "bookingStaffMember,List,Create,Get,Update,Delete",
           "ChangeType": "Addition",
@@ -217,7 +253,7 @@
           "Target": "bookingStaffMember,List,Create,Get,Update,Delete"
         },
         {
-          "Id": "75314067-b269-4c9d-bd7c-fcf4304ce283",
+          "Id": "701fd3ae-9365-4fef-8196-bbf769e3fe4b",
           "ApiChange": "Resource",
           "ChangedApiName": "bookingNamedEntity,bookingPerson,bookingReminder,bookingWorkHours,bookingWorkTimeSlot",
           "ChangeType": "Addition",
@@ -225,17 +261,17 @@
           "Target": "bookingNamedEntity,bookingPerson,bookingReminder,bookingWorkHours,bookingWorkTimeSlot"
         }
       ],
-      "Id": "75314067-b269-4c9d-bd7c-fcf4304ce283",
+      "Id": "701fd3ae-9365-4fef-8196-bbf769e3fe4b",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-05-01T00:00:00",
-      "WorkloadArea": "Customer booking (Microsoft Bookings)",
+      "WorkloadArea": "Customer booking",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "4d98dcd1-a06c-487a-b2c5-0313049a4e10",
+          "Id": "f88a3741-db20-48a3-8e14-e3430f99ec77",
           "ApiChange": "Resource",
           "ChangedApiName": "JSON batching",
           "ChangeType": "Change",
@@ -243,7 +279,7 @@
           "Target": "JSON batching"
         }
       ],
-      "Id": "4d98dcd1-a06c-487a-b2c5-0313049a4e10",
+      "Id": "f88a3741-db20-48a3-8e14-e3430f99ec77",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-01-01T00:00:00",
@@ -253,7 +289,7 @@
     {
       "ChangeList": [
         {
-          "Id": "4d98dcd1-a06c-487a-b2c5-0313049a4e10",
+          "Id": "f88a3741-db20-48a3-8e14-e3430f99ec77",
           "ApiChange": "Resource",
           "ChangedApiName": "JSON batching",
           "ChangeType": "Addition",
@@ -261,7 +297,7 @@
           "Target": "JSON batching"
         }
       ],
-      "Id": "4d98dcd1-a06c-487a-b2c5-0313049a4e10",
+      "Id": "f88a3741-db20-48a3-8e14-e3430f99ec77",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-01-01T00:00:00",
@@ -271,7 +307,7 @@
     {
       "ChangeList": [
         {
-          "Id": "80b3f3dd-d8c4-4af9-9482-c6372b08a4ff",
+          "Id": "67c58ec6-075c-4bf3-89a8-d45cb2567cc5",
           "ApiChange": "Resource",
           "ChangedApiName": "users,groups",
           "ChangeType": "Change",
@@ -279,7 +315,7 @@
           "Target": "users,groups"
         }
       ],
-      "Id": "80b3f3dd-d8c4-4af9-9482-c6372b08a4ff",
+      "Id": "67c58ec6-075c-4bf3-89a8-d45cb2567cc5",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -289,7 +325,7 @@
     {
       "ChangeList": [
         {
-          "Id": "80b3f3dd-d8c4-4af9-9482-c6372b08a4ff",
+          "Id": "67c58ec6-075c-4bf3-89a8-d45cb2567cc5",
           "ApiChange": "Resource",
           "ChangedApiName": "delta query,Get incremental changes to groups,Get incremental changes to messages in a folder,Get incremental changes to users",
           "ChangeType": "Addition",
@@ -297,7 +333,7 @@
           "Target": "delta query,Get incremental changes to groups,Get incremental changes to messages in a folder,Get incremental changes to users"
         }
       ],
-      "Id": "80b3f3dd-d8c4-4af9-9482-c6372b08a4ff",
+      "Id": "67c58ec6-075c-4bf3-89a8-d45cb2567cc5",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -307,7 +343,7 @@
     {
       "ChangeList": [
         {
-          "Id": "ec413e38-101e-4017-a153-b0f9c91a7a05",
+          "Id": "c6dfdc40-cdc3-41af-8259-c09e431ebadf",
           "ApiChange": "Property",
           "ChangedApiName": "user",
           "ChangeType": "Change",
@@ -315,7 +351,7 @@
           "Target": "user"
         },
         {
-          "Id": "ec413e38-101e-4017-a153-b0f9c91a7a05",
+          "Id": "c6dfdc40-cdc3-41af-8259-c09e431ebadf",
           "ApiChange": "Property",
           "ChangedApiName": "group",
           "ChangeType": "Change",
@@ -323,7 +359,7 @@
           "Target": "group"
         },
         {
-          "Id": "ec413e38-101e-4017-a153-b0f9c91a7a05",
+          "Id": "c6dfdc40-cdc3-41af-8259-c09e431ebadf",
           "ApiChange": "Property",
           "ChangedApiName": "application",
           "ChangeType": "Change",
@@ -331,7 +367,7 @@
           "Target": "application"
         }
       ],
-      "Id": "ec413e38-101e-4017-a153-b0f9c91a7a05",
+      "Id": "c6dfdc40-cdc3-41af-8259-c09e431ebadf",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -341,7 +377,7 @@
     {
       "ChangeList": [
         {
-          "Id": "d03b7e7b-f807-4add-973c-2274b1554dfe",
+          "Id": "cbee22dd-507a-49e0-8571-004daaf91fc6",
           "ApiChange": "Resource",
           "ChangedApiName": "domains,domain,domainDnsRecord,domainDnsCnameRecord,domainDnsMxRecord,domainDnsSrvRecord,domainDnsTxtRecord,domainDnsUnavailableRecord,verify",
           "ChangeType": "Addition",
@@ -349,7 +385,7 @@
           "Target": "domains,domain,domainDnsRecord,domainDnsCnameRecord,domainDnsMxRecord,domainDnsSrvRecord,domainDnsTxtRecord,domainDnsUnavailableRecord,verify"
         }
       ],
-      "Id": "d03b7e7b-f807-4add-973c-2274b1554dfe",
+      "Id": "cbee22dd-507a-49e0-8571-004daaf91fc6",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -359,7 +395,7 @@
     {
       "ChangeList": [
         {
-          "Id": "5c481222-55de-47a6-bcd8-9a0dadaceeb7",
+          "Id": "d63dc0c9-1b01-40c3-9b52-7de74a02df56",
           "ApiChange": "Resource",
           "ChangedApiName": "contract",
           "ChangeType": "Addition",
@@ -367,7 +403,7 @@
           "Target": "contract"
         }
       ],
-      "Id": "5c481222-55de-47a6-bcd8-9a0dadaceeb7",
+      "Id": "d63dc0c9-1b01-40c3-9b52-7de74a02df56",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -377,7 +413,7 @@
     {
       "ChangeList": [
         {
-          "Id": "dc9e28d5-1a5a-4332-bfde-f5208927cda9",
+          "Id": "b35b7681-3136-430b-9ff0-8d77b38d5a13",
           "ApiChange": "Resource",
           "ChangedApiName": "licenseDetails",
           "ChangeType": "Addition",
@@ -385,7 +421,7 @@
           "Target": "licenseDetails"
         },
         {
-          "Id": "dc9e28d5-1a5a-4332-bfde-f5208927cda9",
+          "Id": "b35b7681-3136-430b-9ff0-8d77b38d5a13",
           "ApiChange": "Property",
           "ChangedApiName": "licensedetails,users",
           "ChangeType": "Change",
@@ -393,7 +429,7 @@
           "Target": "licensedetails,users"
         }
       ],
-      "Id": "dc9e28d5-1a5a-4332-bfde-f5208927cda9",
+      "Id": "b35b7681-3136-430b-9ff0-8d77b38d5a13",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -403,7 +439,7 @@
     {
       "ChangeList": [
         {
-          "Id": "ea7bfda8-5c2d-4c3b-8d38-935856093ba7",
+          "Id": "87a1ff39-8824-454e-a021-4cebbd907775",
           "ApiChange": "Resource",
           "ChangedApiName": "$expand",
           "ChangeType": "Addition",
@@ -411,17 +447,17 @@
           "Target": "get open extensions,administrativeUnit"
         }
       ],
-      "Id": "ea7bfda8-5c2d-4c3b-8d38-935856093ba7",
+      "Id": "87a1ff39-8824-454e-a021-4cebbd907775",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
-      "WorkloadArea": "Open extensions",
-      "SubArea": ""
+      "WorkloadArea": "Extensions ",
+      "SubArea": " Open extensions"
     },
     {
       "ChangeList": [
         {
-          "Id": "ea7bfda8-5c2d-4c3b-8d38-935856093ba7",
+          "Id": "87a1ff39-8824-454e-a021-4cebbd907775",
           "ApiChange": "Resource",
           "ChangedApiName": "openTypeExtension,device,group,organization,user",
           "ChangeType": "Addition",
@@ -429,7 +465,7 @@
           "Target": "openTypeExtension,device,group,organization,user"
         },
         {
-          "Id": "ea7bfda8-5c2d-4c3b-8d38-935856093ba7",
+          "Id": "87a1ff39-8824-454e-a021-4cebbd907775",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -437,7 +473,7 @@
           "Target": ""
         },
         {
-          "Id": "ea7bfda8-5c2d-4c3b-8d38-935856093ba7",
+          "Id": "87a1ff39-8824-454e-a021-4cebbd907775",
           "ApiChange": "Resource",
           "ChangedApiName": "$expand",
           "ChangeType": "Addition",
@@ -445,17 +481,17 @@
           "Target": "get open extensions,device,group,organization,post,user"
         }
       ],
-      "Id": "ea7bfda8-5c2d-4c3b-8d38-935856093ba7",
+      "Id": "87a1ff39-8824-454e-a021-4cebbd907775",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-05-01T00:00:00",
-      "WorkloadArea": "Open extensions",
-      "SubArea": ""
+      "WorkloadArea": "Extensions ",
+      "SubArea": " Open extensions"
     },
     {
       "ChangeList": [
         {
-          "Id": "ad408394-caf9-44e2-989c-70b9169a70e0",
+          "Id": "2f2c8f95-3315-4d43-a8c0-bb74451112b5",
           "ApiChange": "Resource",
           "ChangedApiName": "schemaExtension,contact,device,event,group,message,organization,post,user,administrativeUnit",
           "ChangeType": "Addition",
@@ -463,7 +499,7 @@
           "Target": "schemaExtension,contact,device,event,group,message,organization,post,user,administrativeUnit"
         },
         {
-          "Id": "ad408394-caf9-44e2-989c-70b9169a70e0",
+          "Id": "2f2c8f95-3315-4d43-a8c0-bb74451112b5",
           "ApiChange": "Resource",
           "ChangedApiName": "contact,device,event,group,message,organization,post,user",
           "ChangeType": "Addition",
@@ -471,7 +507,7 @@
           "Target": "contact,device,event,group,message,organization,post,user"
         },
         {
-          "Id": "ad408394-caf9-44e2-989c-70b9169a70e0",
+          "Id": "2f2c8f95-3315-4d43-a8c0-bb74451112b5",
           "ApiChange": "Property",
           "ChangedApiName": "$filter",
           "ChangeType": "Addition",
@@ -479,7 +515,7 @@
           "Target": "example"
         },
         {
-          "Id": "ad408394-caf9-44e2-989c-70b9169a70e0",
+          "Id": "2f2c8f95-3315-4d43-a8c0-bb74451112b5",
           "ApiChange": "Resource",
           "ChangedApiName": "Deleting a schema extension definition",
           "ChangeType": "Change",
@@ -487,7 +523,7 @@
           "Target": "Deleting a schema extension definition"
         },
         {
-          "Id": "ad408394-caf9-44e2-989c-70b9169a70e0",
+          "Id": "2f2c8f95-3315-4d43-a8c0-bb74451112b5",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Change",
@@ -495,17 +531,17 @@
           "Target": ""
         }
       ],
-      "Id": "ad408394-caf9-44e2-989c-70b9169a70e0",
+      "Id": "2f2c8f95-3315-4d43-a8c0-bb74451112b5",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-05-01T00:00:00",
-      "WorkloadArea": "Schema extensions",
-      "SubArea": ""
+      "WorkloadArea": "Extensions ",
+      "SubArea": " Schema extensions"
     },
     {
       "ChangeList": [
         {
-          "Id": "3002c28e-5a57-4afc-87cf-bdc327debfef",
+          "Id": "1bd344b2-067c-460e-9a19-57d5ed0b5715",
           "ApiChange": "Resource",
           "ChangedApiName": "authorization topic",
           "ChangeType": "Addition",
@@ -513,7 +549,7 @@
           "Target": "authorization topic"
         }
       ],
-      "Id": "3002c28e-5a57-4afc-87cf-bdc327debfef",
+      "Id": "1bd344b2-067c-460e-9a19-57d5ed0b5715",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-04-01T00:00:00",
@@ -523,7 +559,7 @@
     {
       "ChangeList": [
         {
-          "Id": "08d0c7c7-8c03-411d-82ea-dd4f1e5222be",
+          "Id": "1aab83f4-ed55-4a81-8e12-a8c4f40a84ff",
           "ApiChange": "Resource",
           "ChangedApiName": "schema extensions,Add custom data to groups using Schema Extensions (preview)",
           "ChangeType": "Addition",
@@ -531,7 +567,7 @@
           "Target": "schema extensions,Add custom data to groups using Schema Extensions (preview)"
         },
         {
-          "Id": "08d0c7c7-8c03-411d-82ea-dd4f1e5222be",
+          "Id": "1aab83f4-ed55-4a81-8e12-a8c4f40a84ff",
           "ApiChange": "Resource",
           "ChangedApiName": "schema extensions",
           "ChangeType": "Addition",
@@ -539,17 +575,17 @@
           "Target": "schema extensions"
         }
       ],
-      "Id": "08d0c7c7-8c03-411d-82ea-dd4f1e5222be",
+      "Id": "1aab83f4-ed55-4a81-8e12-a8c4f40a84ff",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-03-01T00:00:00",
-      "WorkloadArea": "Schema extensions",
-      "SubArea": ""
+      "WorkloadArea": "Extensions ",
+      "SubArea": " Schema extensions"
     },
     {
       "ChangeList": [
         {
-          "Id": "9449c578-8316-48f3-8767-cb6b9d43f321",
+          "Id": "1b6493c3-30c6-429c-9ced-cba8af346387",
           "ApiChange": "Resource",
           "ChangedApiName": "open extensions,Add custom data to users using open extensions (preview)",
           "ChangeType": "Addition",
@@ -557,17 +593,17 @@
           "Target": "open extensions,Add custom data to users using open extensions (preview)"
         }
       ],
-      "Id": "9449c578-8316-48f3-8767-cb6b9d43f321",
+      "Id": "1b6493c3-30c6-429c-9ced-cba8af346387",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-03-01T00:00:00",
-      "WorkloadArea": "Open extensions",
-      "SubArea": ""
+      "WorkloadArea": "Extensions ",
+      "SubArea": " Open extensions"
     },
     {
       "ChangeList": [
         {
-          "Id": "9449c578-8316-48f3-8767-cb6b9d43f321",
+          "Id": "1b6493c3-30c6-429c-9ced-cba8af346387",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Change",
@@ -575,17 +611,17 @@
           "Target": ""
         }
       ],
-      "Id": "9449c578-8316-48f3-8767-cb6b9d43f321",
+      "Id": "1b6493c3-30c6-429c-9ced-cba8af346387",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-03-01T00:00:00",
-      "WorkloadArea": "Open extensions",
-      "SubArea": ""
+      "WorkloadArea": "Extensions ",
+      "SubArea": " Open extensions"
     },
     {
       "ChangeList": [
         {
-          "Id": "392adb24-169a-4127-b267-f4531b1bbe2c",
+          "Id": "f4f79b77-0682-41a7-927b-bae57967c5e3",
           "ApiChange": "Resource",
           "ChangedApiName": "delta query,Get incremental changes to groups (preview),Get incremental changes to messages in a folder (preview),Get incremental changes to users (preview)",
           "ChangeType": "Addition",
@@ -593,7 +629,7 @@
           "Target": "delta query,Get incremental changes to groups (preview),Get incremental changes to messages in a folder (preview),Get incremental changes to users (preview)"
         }
       ],
-      "Id": "392adb24-169a-4127-b267-f4531b1bbe2c",
+      "Id": "f4f79b77-0682-41a7-927b-bae57967c5e3",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-12-01T00:00:00",
@@ -603,31 +639,31 @@
     {
       "ChangeList": [
         {
-          "Id": "1aa63ca9-a837-49ba-b6a6-ec990b2c2721",
+          "Id": "e91d9ba7-e1af-44c4-9b80-b6aba05cecaa",
           "ApiChange": "Resource",
           "ChangedApiName": "daemon \u0026 long running processes in business scenarios",
           "ChangeType": "Addition",
-          "Description": "The v2.0 auth endpoint now supports the client_credentials OAuth grant, which can be used for [daemon \u0026 long running processes in business scenarios](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).",
+          "Description": "The v2.0 auth endpoint now supports the client_credentials OAuth grant, which can be used for [daemon \u0026 long running processes in business scenarios](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).",
           "Target": "daemon \u0026 long running processes in business scenarios"
         },
         {
-          "Id": "1aa63ca9-a837-49ba-b6a6-ec990b2c2721",
+          "Id": "e91d9ba7-e1af-44c4-9b80-b6aba05cecaa",
           "ApiChange": "Resource",
           "ChangedApiName": "permission scopes that require administrator\u0027s consent,admin consent endpoint",
           "ChangeType": "Addition",
-          "Description": "The v2.0 auth endpoint now supports [permission scopes that require administrator\u0027s consent](permissions-reference.md), via the [admin consent endpoint](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions).",
+          "Description": "The v2.0 auth endpoint now supports [permission scopes that require administrator\u0027s consent](permissions-reference.md), via the [admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions).",
           "Target": "permission scopes that require administrator\u0027s consent,admin consent endpoint"
         },
         {
-          "Id": "1aa63ca9-a837-49ba-b6a6-ec990b2c2721",
+          "Id": "e91d9ba7-e1af-44c4-9b80-b6aba05cecaa",
           "ApiChange": "Resource",
           "ChangedApiName": "admin consent endpoint",
           "ChangeType": "Addition",
-          "Description": "The v2.0 auth endpoint now supports administrative consent for all users in a tenant, via the [admin consent endpoint](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions).",
+          "Description": "The v2.0 auth endpoint now supports administrative consent for all users in a tenant, via the [admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions).",
           "Target": "admin consent endpoint"
         }
       ],
-      "Id": "1aa63ca9-a837-49ba-b6a6-ec990b2c2721",
+      "Id": "e91d9ba7-e1af-44c4-9b80-b6aba05cecaa",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2016-10-01T00:00:00",
@@ -637,7 +673,7 @@
     {
       "ChangeList": [
         {
-          "Id": "c2e27397-302a-4a77-a669-ceccf9bcd4a7",
+          "Id": "b0c3999b-a15b-408e-9b94-356fb44405a0",
           "ApiChange": "Resource",
           "ChangedApiName": "Note:",
           "ChangeType": "Addition",
@@ -645,7 +681,7 @@
           "Target": "hybrid deployments"
         }
       ],
-      "Id": "c2e27397-302a-4a77-a669-ceccf9bcd4a7",
+      "Id": "b0c3999b-a15b-408e-9b94-356fb44405a0",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2016-09-01T00:00:00",
@@ -655,7 +691,7 @@
     {
       "ChangeList": [
         {
-          "Id": "f97256e2-7f50-43c8-aa96-ad05cb3bf671",
+          "Id": "62954073-e0b4-4300-addd-53676a9ead63",
           "ApiChange": "Parameter",
           "ChangedApiName": "",
           "ChangeType": "Change",
@@ -663,7 +699,7 @@
           "Target": ""
         }
       ],
-      "Id": "f97256e2-7f50-43c8-aa96-ad05cb3bf671",
+      "Id": "62954073-e0b4-4300-addd-53676a9ead63",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-09-01T00:00:00",
@@ -673,7 +709,7 @@
     {
       "ChangeList": [
         {
-          "Id": "87de2133-a448-47b2-86a5-6a5fedca926c",
+          "Id": "5705ba5c-af3b-4cb5-a327-d430d57bd9cc",
           "ApiChange": "Property",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -681,7 +717,7 @@
           "Target": ""
         },
         {
-          "Id": "87de2133-a448-47b2-86a5-6a5fedca926c",
+          "Id": "5705ba5c-af3b-4cb5-a327-d430d57bd9cc",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -689,7 +725,7 @@
           "Target": ""
         },
         {
-          "Id": "87de2133-a448-47b2-86a5-6a5fedca926c",
+          "Id": "5705ba5c-af3b-4cb5-a327-d430d57bd9cc",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -697,7 +733,7 @@
           "Target": ""
         }
       ],
-      "Id": "87de2133-a448-47b2-86a5-6a5fedca926c",
+      "Id": "5705ba5c-af3b-4cb5-a327-d430d57bd9cc",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-04-01T00:00:00",
@@ -707,7 +743,7 @@
     {
       "ChangeList": [
         {
-          "Id": "87de2133-a448-47b2-86a5-6a5fedca926c",
+          "Id": "5705ba5c-af3b-4cb5-a327-d430d57bd9cc",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -715,7 +751,7 @@
           "Target": ""
         },
         {
-          "Id": "87de2133-a448-47b2-86a5-6a5fedca926c",
+          "Id": "5705ba5c-af3b-4cb5-a327-d430d57bd9cc",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -723,7 +759,7 @@
           "Target": ""
         }
       ],
-      "Id": "87de2133-a448-47b2-86a5-6a5fedca926c",
+      "Id": "5705ba5c-af3b-4cb5-a327-d430d57bd9cc",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2016-04-01T00:00:00",
@@ -733,7 +769,7 @@
     {
       "ChangeList": [
         {
-          "Id": "8ad8ed6c-6fbb-4d28-b47f-744dbd4dee70",
+          "Id": "ff2fbf5f-72bb-4c76-acfa-adbd50c46eb7",
           "ApiChange": "Property",
           "ChangedApiName": "",
           "ChangeType": "Change",
@@ -741,7 +777,7 @@
           "Target": ""
         },
         {
-          "Id": "8ad8ed6c-6fbb-4d28-b47f-744dbd4dee70",
+          "Id": "ff2fbf5f-72bb-4c76-acfa-adbd50c46eb7",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -749,7 +785,7 @@
           "Target": ""
         }
       ],
-      "Id": "8ad8ed6c-6fbb-4d28-b47f-744dbd4dee70",
+      "Id": "ff2fbf5f-72bb-4c76-acfa-adbd50c46eb7",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-03-01T00:00:00",
@@ -759,7 +795,7 @@
     {
       "ChangeList": [
         {
-          "Id": "8ad8ed6c-6fbb-4d28-b47f-744dbd4dee70",
+          "Id": "ff2fbf5f-72bb-4c76-acfa-adbd50c46eb7",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -767,7 +803,7 @@
           "Target": ""
         },
         {
-          "Id": "8ad8ed6c-6fbb-4d28-b47f-744dbd4dee70",
+          "Id": "ff2fbf5f-72bb-4c76-acfa-adbd50c46eb7",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -775,7 +811,7 @@
           "Target": ""
         },
         {
-          "Id": "8ad8ed6c-6fbb-4d28-b47f-744dbd4dee70",
+          "Id": "ff2fbf5f-72bb-4c76-acfa-adbd50c46eb7",
           "ApiChange": "Property",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -783,7 +819,7 @@
           "Target": ""
         }
       ],
-      "Id": "8ad8ed6c-6fbb-4d28-b47f-744dbd4dee70",
+      "Id": "ff2fbf5f-72bb-4c76-acfa-adbd50c46eb7",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2016-03-01T00:00:00",
@@ -793,7 +829,7 @@
     {
       "ChangeList": [
         {
-          "Id": "a3938b02-31d7-4151-bc6a-f1a382c417c9",
+          "Id": "5ea132db-190c-4c33-9886-ee286db069e5",
           "ApiChange": "Property",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -801,7 +837,7 @@
           "Target": ""
         }
       ],
-      "Id": "a3938b02-31d7-4151-bc6a-f1a382c417c9",
+      "Id": "5ea132db-190c-4c33-9886-ee286db069e5",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2016-03-01T00:00:00",
@@ -811,7 +847,7 @@
     {
       "ChangeList": [
         {
-          "Id": "512ff09c-e82c-4701-9510-e83a0c4d225d",
+          "Id": "cf0701aa-a514-446d-be76-bcbfe3571d5d",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Deletion",
@@ -819,7 +855,7 @@
           "Target": ""
         }
       ],
-      "Id": "512ff09c-e82c-4701-9510-e83a0c4d225d",
+      "Id": "cf0701aa-a514-446d-be76-bcbfe3571d5d",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-02-01T00:00:00",
@@ -829,7 +865,7 @@
     {
       "ChangeList": [
         {
-          "Id": "512ff09c-e82c-4701-9510-e83a0c4d225d",
+          "Id": "cf0701aa-a514-446d-be76-bcbfe3571d5d",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Change",
@@ -837,7 +873,7 @@
           "Target": ""
         },
         {
-          "Id": "512ff09c-e82c-4701-9510-e83a0c4d225d",
+          "Id": "cf0701aa-a514-446d-be76-bcbfe3571d5d",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Change",
@@ -845,7 +881,7 @@
           "Target": ""
         }
       ],
-      "Id": "512ff09c-e82c-4701-9510-e83a0c4d225d",
+      "Id": "cf0701aa-a514-446d-be76-bcbfe3571d5d",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2016-02-01T00:00:00",
@@ -855,7 +891,7 @@
     {
       "ChangeList": [
         {
-          "Id": "a8712069-ac8f-4152-9626-3365ea49b380",
+          "Id": "a8b0a61a-f840-431c-9a78-39c2cb17d1a7",
           "ApiChange": "Property",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -863,7 +899,7 @@
           "Target": ""
         },
         {
-          "Id": "a8712069-ac8f-4152-9626-3365ea49b380",
+          "Id": "a8b0a61a-f840-431c-9a78-39c2cb17d1a7",
           "ApiChange": "Property",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -871,7 +907,7 @@
           "Target": ""
         },
         {
-          "Id": "a8712069-ac8f-4152-9626-3365ea49b380",
+          "Id": "a8b0a61a-f840-431c-9a78-39c2cb17d1a7",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -879,7 +915,7 @@
           "Target": ""
         }
       ],
-      "Id": "a8712069-ac8f-4152-9626-3365ea49b380",
+      "Id": "a8b0a61a-f840-431c-9a78-39c2cb17d1a7",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2015-12-01T00:00:00",

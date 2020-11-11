@@ -1,9 +1,9 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
         {
-          "Id": "d6ee5b6a-60f7-42f8-9344-6d7cfb01b522",
+          "Id": "230ea331-2105-45d0-bb78-bc0063bc729f",
           "ApiChange": "Resource",
           "ChangedApiName": "Financials API reference",
           "ChangeType": "Addition",
@@ -11,17 +11,17 @@
           "Target": "Financials API reference"
         }
       ],
-      "Id": "d6ee5b6a-60f7-42f8-9344-6d7cfb01b522",
+      "Id": "230ea331-2105-45d0-bb78-bc0063bc729f",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-03-01T00:00:00",
-      "WorkloadArea": "Financials (Dynamics 365 Business Central)",
+      "WorkloadArea": "Financials",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "5a428312-9939-48c1-b62c-6a3c3012b6d2",
+          "Id": "d950a95c-3700-4c85-98c2-a3daee152fee",
           "ApiChange": "Resource",
           "ChangedApiName": "Financials API reference",
           "ChangeType": "Addition",
@@ -29,11 +29,11 @@
           "Target": "Financials API reference"
         }
       ],
-      "Id": "5a428312-9939-48c1-b62c-6a3c3012b6d2",
+      "Id": "d950a95c-3700-4c85-98c2-a3daee152fee",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-09-01T00:00:00",
-      "WorkloadArea": "Financials (Dynamics 365 Business Central)",
+      "WorkloadArea": "Financials",
       "SubArea": ""
     }
   ]
