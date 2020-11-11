@@ -71,8 +71,9 @@ Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
-  "blockType": "request",
-  "name": "get_channel_member"
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conversationMember"
 } -->
 ```http
 HTTP/1.1 200 OK
