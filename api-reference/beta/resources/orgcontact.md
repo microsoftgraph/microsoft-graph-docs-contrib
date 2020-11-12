@@ -1,10 +1,10 @@
 ---
 title: "orgContact resource type"
 description: "Here is a JSON representation of the resource"
-localization\_priority: Normal
+localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
-doc\_type: resourcePageType
+doc_type: resourcePageType
 ---
 
 # orgContact resource type
