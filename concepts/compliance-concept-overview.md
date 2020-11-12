@@ -33,6 +33,6 @@ Many organizations execute a high volume of cases and eDiscovery requests and wo
 
 - Learn more about how to work with Compliance.
 - Explore your own data from the user resource in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-- Explore Compliance Graph APIs in [Microsoft Graph beta](https://docs.microsoft.com/graph/api/resources/complianceapioverview?view=graph-rest-beta).
+- Explore Compliance Graph APIs in [Microsoft Graph beta](https://docs.microsoft.com/graph/api/resources/complianceapioverview?view=graph-rest-beta&preserve-view=true).
 - Coming soon – Compliance Graph APIs in Microsoft Graph v1.0
 - Learn Microsoft Graph with [Samples and SDKs](https://developer.microsoft.com/graph/gallery/?filterBy=Samples,SDKs).
