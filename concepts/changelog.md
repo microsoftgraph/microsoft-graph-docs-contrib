@@ -13,21 +13,21 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## November 2020
 
-### Identity and access
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-|Addition|beta|Added resource types [accessReviewApplyAction](/graph/api/resources/accessreviewapplyaction.md), [accessReviewInstance](
-/graph/api/resources/accessreviewinstance.md), [accessReviewInstanceDecisionItem](/graph/api/resources/accessreviewinstancedecisionitem.md), [accessReviewInstanceDecisionItemServicePrincipalTarget](/graph/api/resources/accessreviewinstancedecisionitemserviceprincipaltarget.md), [accessReviewInstanceDecisionItemTarget](/graph/api/resources/accessreviewinstancedecisionitemtarget.md), [accessReviewInstanceDecisionItemUserTarget](/graph/api/resources/accessreviewinstancedecisionitemusertarget.md), [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope.md), [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition.md), [accessReviewScheduleSettings](/graph/api/resources/accessreviewschedulesettings.md), [accessReviewScope](/graph/api/resources/accessreviewscope.md) and [access reviews root](/graph/api/resources/accessreviewsv2-root.md)
-|Addition|beta|Added [acceptRecommendations](/graph/api/accessreviewinstance-acceptrecommendations.md), [applyDecisions](/graph/api/accessreviewinstance-applydecisions.md), [get](/graph/api/accessreviewinstance-get.md), [list](/graph/api/accessreviewinstance-list.md), [list pendingAccessReviewInstances](/graph/api/accessreviewinstance-pendingaccessreviewinstances.md), [sendReminder](/graph/api/accessreviewinstance-sendreminder.md), [stop](/graph/api/accessreviewinstance-stop.md) methods to the [accessReviewInstance](/graph/api/resources/accessreviewinstance.md) resource.
-|Addition|beta|Added [list](/graph/api/accessreviewinstancedecisionitem-list.md), [listPendingApproval](/graph/api/accessreviewinstancedecisionitem-listpendingapproval.md), [update](/graph/api/accessreviewinstancedecisionitem-update.md) methods to the [accessReviewInstanceDecisionItem](/graph/api/resources/accessreviewinstancedecisionitem.md) resource.
-|Addition|beta|Added [create](/graph/api/accessreviewscheduledefinition-create.md), [delete](/graph/api/accessreviewscheduledefinition-delete.md), [get](/graph/api/accessreviewscheduledefinition-get.md), [list](/graph/api/accessreviewscheduledefinition-list.md), [update](/graph/api/accessreviewscheduledefinition-update.md) methods to the [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition.md) resource.
-
 ### Change notifications
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added [printTaskDefinition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true) to the resources supported for [change notifications](/graph/webhooks).|
+
+### Identity and access | Governance
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition|beta|Added resource types [accessReviewApplyAction](/graph/api/resources/accessreviewapplyaction.md), [accessReviewInstance](
+/graph/api/resources/accessreviewinstance.md), [accessReviewInstanceDecisionItem](/graph/api/resources/accessreviewinstancedecisionitem.md), [accessReviewInstanceDecisionItemServicePrincipalTarget](/graph/api/resources/accessreviewinstancedecisionitemserviceprincipaltarget.md), [accessReviewInstanceDecisionItemTarget](/graph/api/resources/accessreviewinstancedecisionitemtarget.md), [accessReviewInstanceDecisionItemUserTarget](/graph/api/resources/accessreviewinstancedecisionitemusertarget.md), [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope.md), [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition.md), [accessReviewScheduleSettings](/graph/api/resources/accessreviewschedulesettings.md), [accessReviewScope](/graph/api/resources/accessreviewscope.md) and [access reviews root](/graph/api/resources/accessreviewsv2-root.md)|
+|Addition|beta|Added [acceptRecommendations](/graph/api/accessreviewinstance-acceptrecommendations.md), [applyDecisions](/graph/api/accessreviewinstance-applydecisions.md), [get](/graph/api/accessreviewinstance-get.md), [list](/graph/api/accessreviewinstance-list.md), [list pendingAccessReviewInstances](/graph/api/accessreviewinstance-pendingaccessreviewinstances.md), [sendReminder](/graph/api/accessreviewinstance-sendreminder.md), [stop](/graph/api/accessreviewinstance-stop.md) methods to the [accessReviewInstance](/graph/api/resources/accessreviewinstance.md) resource.
+|Addition|beta|Added [list](/graph/api/accessreviewinstancedecisionitem-list.md), [listPendingApproval](/graph/api/accessreviewinstancedecisionitem-listpendingapproval.md), [update](/graph/api/accessreviewinstancedecisionitem-update.md) methods to the [accessReviewInstanceDecisionItem](/graph/api/resources/accessreviewinstancedecisionitem.md) resource.|
+|Addition|beta|Added [create](/graph/api/accessreviewscheduledefinition-create.md), [delete](/graph/api/accessreviewscheduledefinition-delete.md), [get](/graph/api/accessreviewscheduledefinition-get.md), [list](/graph/api/accessreviewscheduledefinition-list.md), [update](/graph/api/accessreviewscheduledefinition-update.md) methods to the [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition.md) resource.|
 
 ### Teamwork
 
