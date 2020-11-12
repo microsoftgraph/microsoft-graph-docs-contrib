@@ -87,7 +87,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.orgcontact",
+  "@odata.type": "microsoft.graph.orgContact",
   "isCollection": true
 } -->
 ```http
@@ -169,7 +169,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.orgcontact",
+  "@odata.type": "microsoft.graph.orgContact",
   "isCollection": true
 } -->
 ```http
@@ -222,7 +222,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.orgcontact",
+  "@odata.type": "microsoft.graph.orgContact",
   "isCollection": true
 } -->
 ```http
@@ -285,7 +285,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.orgcontact",
+  "@odata.type": "microsoft.graph.orgContact",
   "isCollection": true
 } -->
 ```http
