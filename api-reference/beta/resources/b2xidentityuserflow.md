@@ -28,6 +28,11 @@ User flows are used to enable a [self-service sign up](/azure/active-directory/e
 |[List identity providers](../api/b2xidentityuserflow-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a B2X user flow.|
 |[Add identity provider](../api/b2xidentityuserflow-post-identityproviders.md)|None|Add an identity provider to a B2X user flow.|
 |[Remove identity provider](../api/b2xidentityuserflow-delete-identityproviders.md)|None|Remove an identity provider from a B2X user flow.|
+|[List user attribute assignments](../api/b2xidentityuserflow-list-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|Retrieve all user attribute assignments in a B2X user flow.|
+|[Get user attribute assignment](../api/b2xidentityuserflow-get-identityuserflowattributeassignment.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Retrieve a specific user attribute assignment in a B2X user flow.|
+|[Create user attribute assignment](../api/b2xidentityuserflow-post-userattributeassignment.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Create a user attribute assignment in a B2X user flow.|
+|[Update user attribute assignment](../api/b2xidentityuserflow-update-userattributeassignment.md)|None|Update a specific user attribute assignment in a B2X user flow.|
+|[Delete user attribute assignment](../api/b2xidentityuserflow-delete-userattributeassignment.md)|None|Delete a specific user attribute assignment in a B2X user flow.|
 
 ## Properties
 
@@ -42,6 +47,7 @@ User flows are used to enable a [self-service sign up](/azure/active-directory/e
 | Relationship       | Type  |Description|
 |:---------------|:--------|:----------|
 |identityProviders|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
+|userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignments.md) collection|The user attribute assignments included in the user flow.|
 
 ## JSON representation
 
@@ -59,6 +65,7 @@ The following is a JSON representation of the resource.
     "id": "String (identifier)",
     "userFlowType": "String",
     "userFlowTypeVersion": "Single",
-    "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}]
+    "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
+    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}]
 }
 ```
