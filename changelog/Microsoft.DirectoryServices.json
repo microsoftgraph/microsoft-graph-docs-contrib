@@ -3,6 +3,14 @@
     {
       "ChangeList": [
         {
+          "Id": "118736d5-b41d-43c0-9328-355d05cff91c",
+          "ApiChange": "resource, methods",
+          "ChangedApiName": "organizationalBrandingProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true) resource type and associated methods, which allow for the customization of the visual look and feel of sign-in screens.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
           "Id": "31bc17bd-c296-4925-8108-fa6ebb795ffe",
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewApplyAction",

@@ -10194,11 +10194,52 @@ items:
                 href: api/ipnamedlocation-update.md
               - name: Delete
                 href: api/ipnamedlocation-delete.md
-        - name: Data policy operation
-          href: resources/datapolicyoperation.md
-          items:
-          - name: Get data policy operation
-            href: api/datapolicyoperation-get.md
+      - name: Organization
+        href: resources/organization.md
+        items:
+        - name: Get org details
+          href: api/organization-get.md
+        - name: Update org details
+          href: api/organization-update.md
+      - name: Organizational branding
+        href: resources/organizationalbrandingproperties.md
+        items:
+        - name: Create
+          href: api/organizationalbrandingproperties-create.md
+        - name: Get 
+          href: api/organizationalbrandingproperties-get.md
+        - name: Update
+          href: api/organizationalbrandingproperties-update.md
+        - name: Delete
+          href: api/organizationalbrandingproperties-delete.md
+        - name: Create localized 
+          href: api/organizationalbrandingpropertieslocalization-create.md
+        - name: Get localized
+          href: api/organizationalbrandingpropertieslocalization-get.md
+        - name: Update localized
+          href: api/organizationalbrandingpropertieslocalization-update.md
+        - name: Delete localized
+          href: api/organizationalbrandingpropertieslocalization-delete.md 
+      - name: Organizational contacts
+        href: resources/orgcontact.md
+        items:
+        - name: List org contacts
+          href: api/orgcontact-list.md
+        - name: Get org contact
+          href: api/orgcontact-get.md
+        - name: Update org contact
+          href: api/orgcontact-update.md
+        - name: Delete org contact
+          href: api/orgcontact-delete.md
+        - name: Get org contact delta
+          href: api/orgcontact-delta.md
+        - name: Groups
+          href: resources/group.md
+      - name: Data policy operation
+        href: resources/datapolicyoperation.md
+        items:
+        - name: Get data policy operation
+          href: api/datapolicyoperation-get.md
         - name: Delegated permission grants
           href: resources/oauth2permissiongrant.md
           items:
