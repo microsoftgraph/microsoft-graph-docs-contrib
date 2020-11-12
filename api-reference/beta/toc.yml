@@ -46,6 +46,8 @@ items:
         href: /graph/webhooks-with-resource-data?context=graph/api/beta
       - name: Get notifications delivered different ways (preview)
         href: /graph/change-notifications-delivery?context=graph/api/beta
+      - name: Get change notifications for chat and channel messages
+        href: /graph/teams-changenotifications-chatmessage.md?context=graph/api/beta
     - name: Change tracking
       displayname: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD
       items:
