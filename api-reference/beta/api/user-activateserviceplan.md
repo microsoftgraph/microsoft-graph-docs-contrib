@@ -1,9 +1,9 @@
 ---
 title: "user: activateServicePlan"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Activate a service plan with a given `servicePlanId` and `skuId` for a given user."
+author: "dkershaw10"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
