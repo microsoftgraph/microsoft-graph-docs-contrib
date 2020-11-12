@@ -54,7 +54,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | Added [lifecycle notifications](./webhooks-lifecycle.md) for personal [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-1.0&preserve-view=true), [contact](/graph/api/resources/contact?view=graph-rest-1.0&preserve-view=true), [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true), and [message](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true).|
+| Addition | v1.0 | Added [lifecycle notifications](../webhooks-lifecycle.md) for personal [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-1.0&preserve-view=true), [contact](/graph/api/resources/contact?view=graph-rest-1.0&preserve-view=true), [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true), and [message](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true).|
 
 ### Cloud communications
 
