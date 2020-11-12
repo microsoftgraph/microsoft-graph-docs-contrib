@@ -47,30 +47,67 @@ You can also use the component version of the provider directly in your HTML. Be
 <mgt-msal-provider client-id="YOUR_CLIENT_ID"></mgt-msal-provider>
 ```
 
-## Providers namespace
+## Provider state
 
-The `Providers` namespace exposes the following properties and functions:
+The provider keeps track of the user's authentication state and communicates this to the components. For example, when a user successfully signs in, the `ProviderState` is updated to `SignedIn`, signaling to the components that they are now able to make calls to Microsoft Graph. The `ProviderState` enum defines three states, as shown.
 
-- `globalProvider : IProvider`
+```ts
+export enum ProviderState {
+  Loading,
+  SignedOut,
+  SignedIn
+}
+```
 
-Set this property to a provider that you want to use globally. All components use this property to get a reference to the provider. Setting this property will fire the `onProvidersChanged` event.
+In some scenarios, you will want to show certain functionality or perform an action only after a user has successfully signed in. You can access and check the provider state, as shown in the following example.
 
-- `function onProviderUpdated(callbackFunction)`
+```js
+import { Providers, ProviderState } from '@microsoft/mgt'
 
-The `callbackFunction` function will be called when a provider is changed or when the state of a provider changes. A `ProvidersChangedState` enum value will be passed to the function to indicate what updated.
+//assuming a provider has already been initialized
 
-- `getAccessToken({'scopes': scopes[]}) : Promise<string>`
+if (Providers.globalProvider.state == ProviderState.SignedIn) {
+  //your code here
+}
+```
 
-All providers expose the `getAccessToken` method that returns a promise with a valid access token string to be used when making calls to Microsoft Graph.
+## Getting an access token
 
-## Implement your own provider
+Each provider exposes a function called `getAccessToken` that can retreive the current access token or retrieve a new access token for the provided scopes. The following example shows how to get a new access token with the `User.Read` permission scope.
 
-In scennarios where you want to add Toolkit components to an application with pre-existing authentication code, you can create a custom provider that hooks into your authentication mechanism, instead of using our predefined providers. The toolkit provides two ways to create new providers:
+```js
+import { Providers, ProviderState } from "@microsoft/mgt";
 
-- Create a new `SimpleProvider` that returns an access token from your authentication code by passing in a function.
-- Extend the `IProvider` abstract class.
+//assuming a provider has already been initialized
 
-For more details about each one, see [custom providers](./providers/custom.md).
+if (Providers.globalProvider.state == ProviderState.SignedIn) {
+  const token = Provider.globalProvider.getAccessToken({scopes: 'User.Read']})
+}
+```
+
+## Making your own calls to Microsoft Graph
+
+All components can access Microsoft Graph without any customization required as long as you initialize a provider (as described in the previous sections). If you want to make your own calls to Microsoft Graph, you can do so by getting a reference to the same Microsoft Graph SDK used by the components. First, get a reference to the global `IProvider` and then use the `graph` object as shown:
+
+```js
+import { Providers } from '@microsoft/mgt';
+
+let provider = Providers.globalProvider;
+if (provider) {
+  let graphClient = provider.graph.client;
+  let userDetails = await graphClient.api('me').get();
+}
+```
+There might be cases where you need to pass additional permissions, depending on the API you're calling. The following example shows how to do this.
+
+```js
+import { prepScopes } from '@microsoft/mgt';
+
+graphClient
+  .api('me')
+  .middlewareOptions(prepScopes('user.read', 'calendar.read'))
+  .get();
+```
 
 ## Using multiple providers
 
@@ -98,29 +135,23 @@ if (TeamsProvider.isAvailable) {
 }
 ```
 
-## Making your own calls to Microsoft Graph
+## Providers namespace
 
-All components can access Microsoft Graph without any customization required as long as you initialize a provider (as described in the previous section). To get a reference to the same Microsoft Graph SDK used by the components, first get a reference to the global IProvider and then use the `Graph` object, as shown:
+The `Providers` namespace exposes the following properties and functions:
 
-```js
-import { Providers } from '@microsoft/mgt';
+- `globalProvider : IProvider`
 
-let provider = Providers.globalProvider;
-if (provider) {
-  let graphClient = provider.graph.client;
-  let userDetails = await graphClient.api('me').get();
-}
-```
+Set this property to a provider that you want to use globally. All components use this property to get a reference to the provider. Setting this property will fire the `onProvidersChanged` event.
 
-There might be cases were you will need to pass additional permissions, depending on the API you're calling.
+- `function onProviderUpdated(callbackFunction)`
 
-```js
-import { prepScopes } from '@microsoft/mgt';
+The `callbackFunction` function will be called when a provider is changed or when the state of a provider changes. A `ProvidersChangedState` enum value will be passed to the function to indicate what updated.
 
-graphClient
-  .api('me')
-  .middlewareOptions(prepScopes('user.read', 'calendar.read'))
-  .get();
-```
+## Implement your own provider
 
-The `graph` object is an instance of the [Microsoft Graph Javascript SDK](https://github.com/microsoftgraph/msgraph-sdk-javascript) and you can use it to make any calls to Microsoft Graph.
+In scennarios where you want to add Toolkit components to an application with pre-existing authentication code, you can create a custom provider that hooks into your authentication mechanism, instead of using our predefined providers. The toolkit provides two ways to create new providers:
+
+- Create a new `SimpleProvider` that returns an access token from your authentication code by passing in a function.
+- Extend the `IProvider` abstract class.
+
+For more details about each one, see [custom providers](./providers/custom.md).
