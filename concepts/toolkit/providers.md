@@ -28,6 +28,7 @@ To use a provider in your app, you need to initialize a new provider and then se
 To initalize a provider in your JavaScript code, create a new provider instance and set the value of the `Providers.globalProvider` property to the provider you'd like to use. The following example shows how to use the MsalProvider.
 
 ```js
+import {Providers, MsalProvider } from "@microsoft/mgt";
 Providers.globalProvider = new MsalProvider({
   clientId: '[YOUR_CLIENT_ID]'
 });
