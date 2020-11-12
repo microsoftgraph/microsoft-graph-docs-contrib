@@ -75,25 +75,25 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
 | Change | beta | Added new permission requirements to: <ul><li>[Get printUsageSummaryByPrinter](/graph/api/printusagesummarybyprinter-get?view=graph-rest-beta&preserve-view=true)</li><li>[getPrinterArchivedPrintJobs](/graph/api/reports-getprinterarchivedprintjobs?view=graph-rest-beta&preserve-view=true)</li><li>[List dailyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-dailyprintusagesummariesbyprinter?view=graph-rest-beta&preserve-view=true)</li><li>[List monthlyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter?view=graph-rest-beta&preserve-view=true)</li><li>[Get printUsageSummaryByUser](/graph/api/printusagesummarybyuser-get?view=graph-rest-beta&preserve-view=true)</li><li>[getUserArchivedPrintJobs](/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-beta&preserve-view=true)</li><li>[getGroupArchivedPrintJobs](/graph/api/reports-getgrouparchivedprintjobs?view=graph-rest-beta&preserve-view=true)</li><li>[List dailyPrintUsageSummariesByUser](/graph/api/reportroot-list-dailyprintusagesummariesbyuser?view=graph-rest-beta&preserve-view=true)</li><li>[List monthlyPrintUsageSummariesByUser](/graph/api/reportroot-list-monthlyprintusagesummariesbyuser?view=graph-rest-beta&preserve-view=true)</li></ul>|
-| Change | beta | Removed **allowedUsers** property on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource. | 
+| Change | beta | Removed **allowedUsers** property on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource. |
 | Change | beta | Removed **allowedGroups** property on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource. |
-| Addition | beta | Added the [createUploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta&preserve-view=true) action for printDocument. | 
-| Change | beta | Deprecated **uploadData** action on [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta&preserve-view=true) resource. | 
-| Change | beta | Added properties to [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource: <br/><ul><li>isFetchable</li><li>redirectedFrom</li><li>redirectedTo</li><li>configuration</li></ul> | 
-| Change | beta | Deprecated **configuration** property on [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta&preserve-view=true) resource. | 
-| Change | beta | Added **shares** navigation property on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource. | 
-| Change | beta | **resetDefaults** action on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource has been renamed to [restoreFactoryDefaults](/graph/api/printer-restorefactorydefaults?view=graph-rest-beta&preserve-view=true). | 
-| Change | beta | **startPrintJob** action on [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource has been renamed to [start](/graph/api/printjob-start?view=graph-rest-beta&preserve-view=true). | 
-| Change | beta | **cancelPrintJob** action on [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource has been renamed to [cancel](/graph/api/printjob-cancel?view=graph-rest-beta&preserve-view=true). | 
-| Change | beta | Deprecated **getCapabilities** function on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource. | 
-| Change | beta | Deprecated **allowedUsers** property on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource. | 
+| Addition | beta | Added the [createUploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta&preserve-view=true) action for printDocument. |
+| Change | beta | Deprecated **uploadData** action on [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta&preserve-view=true) resource. |
+| Change | beta | Added properties to [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource: <br/><ul><li>isFetchable</li><li>redirectedFrom</li><li>redirectedTo</li><li>configuration</li></ul> |
+| Change | beta | Deprecated **configuration** property on [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta&preserve-view=true) resource. |
+| Change | beta | Added **shares** navigation property on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource. |
+| Change | beta | **resetDefaults** action on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource has been renamed to [restoreFactoryDefaults](/graph/api/printer-restorefactorydefaults?view=graph-rest-beta&preserve-view=true). |
+| Change | beta | **startPrintJob** action on [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource has been renamed to [start](/graph/api/printjob-start?view=graph-rest-beta&preserve-view=true). |
+| Change | beta | **cancelPrintJob** action on [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource has been renamed to [cancel](/graph/api/printjob-cancel?view=graph-rest-beta&preserve-view=true). |
+| Change | beta | Deprecated **getCapabilities** function on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource. |
+| Change | beta | Deprecated **allowedUsers** property on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource. |
 | Change | beta | Deprecated **allowedGroups** property on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource. |
-| Change | beta | Added **feedOrientations** property to [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource. | 
-| Change | beta | Deprecated **feedDirections** property on [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource. | 
-| Change | beta | Added **details** property to [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource. | 
-| Change | beta | Deprecated **processingStateReasons** property on [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource. | 
+| Change | beta | Added **feedOrientations** property to [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource. |
+| Change | beta | Deprecated **feedDirections** property on [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource. |
+| Change | beta | Added **details** property to [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource. |
+| Change | beta | Deprecated **processingStateReasons** property on [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource. |
 | Change | beta | Renamed properties on [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource: <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li></ul> |  
-| Change | beta | Added **details** property to [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true) resource. | 
+| Change | beta | Added **details** property to [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true) resource. |
 | Change | beta | Renamed properties on [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true) resource: <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li><li>acquiredByPrinter -> isAcquiredByPrinter</li></ul> |  
 
 ### Devices and apps | Corporate management
@@ -217,7 +217,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
-| Addition | beta | Added the [Download printDocument binary file](/graph/api/printdocument-get-file?view=graph-rest-beta&preserve-view=true) method to download the binary file data associated with a document.  | 
+| Addition | beta | Added the [Download printDocument binary file](/graph/api/printdocument-get-file?view=graph-rest-beta&preserve-view=true) method to download the binary file data associated with a document.  |
 | Addition | beta | Added support for `$expand=documents` and `$filter=createdBy/userPrincipalName` query parameters in the [List printJobs](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true) method. |
 
 ### Devices and apps | Corporate management
@@ -320,12 +320,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition        | beta | Query external data across [more than one connection](search-concept-custom-types.md).|
 | Change        | beta |Some properties in the request and response have been renamed and are deprecated.  See [more details](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#schema-change-deprecation-warning) about the deprecation.|
 
-### Teamwork 
+### Teamwork
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition|Beta and v1.0|Added **lastEditedDateTime** property to the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) resource.|	
-|Change| Beta and v1.0| Changed **lastModifiedDateTime** property in the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) resource to represent the time the entity was last touched. It will always be set and never have a `null` value|	
+|Addition|Beta and v1.0|Added **lastEditedDateTime** property to the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) resource.|
+|Change| Beta and v1.0| Changed **lastModifiedDateTime** property in the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) resource to represent the time the entity was last touched. It will always be set and never have a `null` value|
 |Addition|beta| Added the **createdDateTime** property to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) and [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) resources.|
 |Addition|beta and v1.0| Added the [Update chatMessage](/graph/api/chatmessage-update) method to the [chatMessage](/graph/api/resources/chatmessage) resource.|
 |Addition|v1.0| Added the [List members](/graph/api/team-list-members?view=graph-rest-1.0&preserve-view=true), [Add members](/graph/api/team-post-members?view=graph-rest-1.0&preserve-view=true), and [Remove members](/graph/api/team-delete-members?view=graph-rest-1.0&preserve-view=true) methods.|
@@ -1649,39 +1649,6 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 |Addition|beta|Added the [summarizeDeviceRegressionPerformance](/graph/api/intune-devices-userexperienceanalyticsregressionsummary-summarizedeviceregressionperformance?view=graph-rest-beta&preserve-view=true) function on [userExperienceAnalyticsRegressionSummary](/graph/api/resources/intune-devices-userexperienceanalyticsregressionsummary?view=graph-rest-beta&preserve-view=true) |
 |Deletion|beta|Removed the following complex types:<br/>**deviceHealthScriptComplianceRule**<br/>|
 |Deletion|beta|Removed the following enum types:<br/>**deviceHealthScriptComplianceRuleOperator**<br/>**deviceHealthScriptDetectionType**<br/>|
-<<<<<<< HEAD
-|Deletion|beta|Removed the [executeAction](/graph/api/intune-devices-manageddevice-executeaction?view=graph-rest-beta) action on [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) collection |
-|Addition|beta|Added the **globalProxy** property to the [androidDeviceOwnerGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta) entity|
-|Addition|beta|Added the **workProfileBlockPersonalAppInstallsFromUnknownSources** property to the [androidForWorkGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration?view=graph-rest-beta) entity|
-|Addition|beta|Added the **minimumRequiredCompanyPortalVersion**, **minimumWarningCompanyPortalVersion** and **minimumWipeCompanyPortalVersion** properties to the [androidManagedAppProtection](/graph/api/resources/intune-shared-androidmanagedappprotection?view=graph-rest-beta) entity|
-|Addition|beta|Added the **workProfileBlockPersonalAppInstallsFromUnknownSources** property to the [androidWorkProfileGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration?view=graph-rest-beta) entity|
-|Addition|beta|Added the **remediation** property to the [appVulnerabilityTask](/graph/api/resources/intune-partnerintegration-appvulnerabilitytask?view=graph-rest-beta) entity|
-|Addition|beta|Added the **minimumRequiredCompanyPortalVersion**, **minimumWarningCompanyPortalVersion** and **minimumWipeCompanyPortalVersion** properties to the [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta) entity|
-|Addition|beta|Added the **configurationWebUrl** property to the [depEnrollmentBaseProfile](/graph/api/resources/intune-enrollment-depenrollmentbaseprofile?view=graph-rest-beta) entity|
-|Addition|beta|Added the **source** and **sourceId** properties to the [deviceCompliancePolicyAssignment](/graph/api/resources/intune-deviceconfig-devicecompliancepolicyassignment?view=graph-rest-beta) entity|
-|Addition|beta|Added the **publisher**, **version**, **displayName**, **description**, **detectionScriptContent**, **createdDateTime**, **lastModifiedDateTime**, **runAsAccount**, **enforceSignatureCheck**, **runAs32Bit** and **roleScopeTagIds** properties to the [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript?view=graph-rest-beta) entity|
-|Deletion|beta|Removed the **complianceRule** property from the [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript?view=graph-rest-beta) entity|
-|Addition|beta|Added the **groupPolicyObjectFiles** property to the [deviceManagement](/graph/api/resources/intune-gpanalyticsservice-devicemanagement?view=graph-rest-beta) entity|
-|Deletion|beta|Removed the **runSchedule** property from the [deviceManagementScript](/graph/api/resources/intune-shared-devicemanagementscript?view=graph-rest-beta) entity|
-|Deletion|beta|Removed the **lastSyncDateTime**, **preRemediationDetectionScriptOutput**, **remediationScriptError** and **postRemediationDetectionScriptOutput** properties from the [deviceManagementScriptDeviceState](/graph/api/resources/intune-devices-devicemanagementscriptdevicestate?view=graph-rest-beta) entity|
-|Deletion|beta|Removed the **compliantDeviceCount**, **notCompliantDeviceCount** and **pendingDeviceCount** properties from the [deviceManagementScriptRunSummary](/graph/api/resources/intune-devices-devicemanagementscriptrunsummary?view=graph-rest-beta) entity|
-|Addition|beta|Added the **platformType** property to the [deviceManagementTemplate](/graph/api/resources/intune-deviceintent-devicemanagementtemplate?view=graph-rest-beta) entity|
-|Addition|beta|Added the **source** and **sourceId** properties to the [enrollmentConfigurationAssignment](/graph/api/resources/intune-onboarding-enrollmentconfigurationassignment?view=graph-rest-beta) entity|
-|Addition|beta|Added the **mdmAppId** and **securityIdentifier** properties to the [group](/graph/api/resources/group?view=graph-rest-beta) entity|
-|Addition|beta|Added the **isDeleted** property to the [importedAppleDeviceIdentity](/graph/api/resources/intune-enrollment-importedappledeviceidentity?view=graph-rest-beta) entity|
-|Addition|beta|Added the **filesNetworkDriveAccessBlocked**, **filesUsbDriveAccessBlocked** and **wifiPowerOnForced** properties to the [iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration?view=graph-rest-beta) entity|
-|Deletion|beta|Removed the **wiFiBlockPowerModification** property from the [iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration?view=graph-rest-beta) entity|
-|Addition|beta|Added the **previousPinBlockCount**, **maximumAllowedDeviceThreatLevel** and **mobileThreatDefenseRemediationAction** properties to the [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-beta) entity|
-|Addition|beta|Added the **source** and **sourceId** properties to the [mobileAppAssignment](/graph/api/resources/intune-apps-mobileappassignment?view=graph-rest-beta) entity|
-|Addition|beta|Added the **androidMobileApplicationManagementEnabled** and **iosMobileApplicationManagementEnabled** properties to the [mobileThreatDefenseConnector](/graph/api/resources/intune-onboarding-mobilethreatdefenseconnector?view=graph-rest-beta) entity|
-|Change|beta|Changed the following properties on the [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta) entity:<br/>**energySaverOnBatteryThresholdPercentage** from required to optional<br/>**energySaverPluggedInThresholdPercentage** from required to optional<br/>|
-|Addition|beta|Added the **source** and **sourceId** properties to the [windowsAutopilotDeploymentProfileAssignment](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofileassignment?view=graph-rest-beta) entity|
-|Addition|beta|Added the [filesFolder](/graph/api/channel-get-filesfolder?view=graph-rest-beta) navigation property to the [channel](/graph/api/resources/channel?view=graph-rest-beta) entity|
-|Addition|beta|Added the **wdacSupplementalPolicies** navigation property to the [deviceAppManagement](/graph/api/resources/intune-unlock-deviceappmanagement?view=graph-rest-beta) entity|
-|Addition|beta|Added the **assignments**, **runSummary** and **deviceRunStates** navigation properties to the [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript?view=graph-rest-beta) entity|
-|Addition|beta|Added the **deviceHealthScripts**, **userExperienceAnalyticsDevicePerformance**, **userExperienceAnalyticsRegressionSummary**, **userExperienceAnalyticsDeviceStartupHistory**, **groupPolicyMigrationReports** and **reports** navigation properties to the [deviceManagement](/graph/api/resources/intune-devices-devicemanagement?view=graph-rest-beta) entity|
-|Addition|beta|Added the **singleSignOnExtensionPkinitCertificate** navigation property to the [
-=======
 |Deletion|beta|Removed the [executeAction](/graph/api/intune-devices-manageddevice-executeaction?view=graph-rest-beta&preserve-view=true) action on [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta&preserve-view=true) collection |
 |Addition|beta|Added the **globalProxy** property to the [androidDeviceOwnerGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta&preserve-view=true) entity|
 |Addition|beta|Added the **workProfileBlockPersonalAppInstallsFromUnknownSources** property to the [androidForWorkGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration?view=graph-rest-beta&preserve-view=true) entity|
@@ -5559,4 +5526,3 @@ Added support for dynamic group membership through the public preview API, inclu
 | Fix             | v1.0 and beta | Fixed being able to select certain user properties on other users, when referencing the user by user principal name (UPN). For example: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
 | Fix             | v1.0 and beta | Fixed calling the _microsoft.graph.reminderView_ user bound function, which was failing with the following error: Could not find a property named businessPhones on type  Microsoft.OutlookServices.Reminder. |
 | Fix             | v1.0 and beta | Fixed user creation and update (POST/PATCH /v1.0/users), which was failing with a 400 error. |
->>>>>>> master
