@@ -1651,22 +1651,10 @@ items:
             href: api/printer-list-jobs.md
           - name: Create print job
             href: api/printer-post-jobs.md
-          - name: List allowed users
-            href: api/printer-list-allowedusers.md
-          - name: List allowed groups
-            href: api/printer-list-allowedgroups.md
           - name: List task triggers
             href: api/printer-list-tasktriggers.md
-          - name: Create allowed group
-            href: api/printer-post-allowedgroups.md
-          - name: Create allowed user
-            href: api/printer-post-allowedusers.md
           - name: Create task trigger
             href: api/printer-post-tasktriggers.md
-          - name: Delete allowed group
-            href: api/printer-delete-allowedgroup.md
-          - name: Delete allowed user
-            href: api/printer-delete-alloweduser.md
           - name: Delete task trigger
             href: api/printer-delete-tasktrigger.md
           - name: Restore factory defaults
@@ -10574,6 +10562,62 @@ items:
                href: api/identityuserflowattribute-delete.md
       - name: Governance
         items:
+        - name: Access reviews
+          href: resources/accessreviewsv2-root.md
+          items:
+          - name: Access review schedule definition
+            href: resources/accessreviewscheduledefinition.md
+            items:
+            - name: List
+              href: api/accessreviewscheduledefinition-list.md
+            - name: Get
+              href: api/accessreviewscheduledefinition-get.md
+            - name: Create
+              href: api/accessreviewscheduledefinition-create.md
+            - name: Delete
+              href: api/accessreviewscheduledefinition-delete.md 
+            - name: Update
+              href: api/accessreviewscheduledefinition-update.md
+          - name: Access review schedule settings
+            href: resources/accessreviewschedulesettings.md
+          - name: Access review apply action
+            href: resources/accessreviewapplyaction.md
+          - name: Access review scope
+            href: resources/accessreviewscope.md
+          - name: Access review reviewer scope
+            href: resources/accessreviewreviewerscope.md
+          - name: Access review instance
+            href: resources/accessreviewinstance.md
+            items:
+            - name: List
+              href: api/accessreviewinstance-list.md
+            - name: Get
+              href: api/accessreviewinstance-get.md
+            - name: List pending approval
+              href: api/accessreviewinstance-pendingaccessreviewinstances.md
+            - name: Send reminder
+              href: api/accessreviewinstance-sendreminder.md
+            - name: Stop
+              href: api/accessreviewinstance-stop.md
+            - name: Accept recommendations
+              href: api/accessreviewinstance-acceptrecommendations.md
+            - name: Apply decisions
+              href: api/accessreviewinstance-applydecisions.md
+          - name: Access review instance decision item
+            href: resources/accessreviewinstancedecisionitem.md
+            items:
+            - name: List
+              href: api/accessreviewinstancedecisionitem-list.md
+            - name: List pending approval
+              href: api/accessreviewinstancedecisionitem-listpendingapproval.md
+            - name: Update
+              href: api/accessreviewinstancedecisionitem-update.md
+          - name: Access review instance decision item target
+            href: resources/accessreviewinstancedecisionitemtarget.md
+          - name: Access review instance decision item user target
+            href: resources/accessreviewinstancedecisionitemusertarget.md
+          - name: Access review instance decision item service principal target
+            href: resources/accessreviewinstancedecisionitemserviceprincipaltarget.md
         - name: Access reviews
           href: resources/accessreviews-root.md
           items:

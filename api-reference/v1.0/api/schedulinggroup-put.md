@@ -61,7 +61,7 @@ The following is an example of the request.
   "name": "schedule-put-schedulinggroups"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
+PUT https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 Content-type: application/json
 Prefer: return=representation
 

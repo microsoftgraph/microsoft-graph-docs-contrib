@@ -68,7 +68,7 @@ The following example lists all apps that are specific to your tenant.
   "name": "list_teamsapp"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApp?$filter=distributionMethod eq 'organization'
 ```
 
