@@ -40,7 +40,7 @@ You can also use the component version of the provider directly in your HTML. Be
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
-<mgt-msal-provider client-id="[YOUR_CLIENT_ID]"></mgt-msal-provider>
+<mgt-msal-provider client-id="YOUR_CLIENT_ID"></mgt-msal-provider>
 ```
 
 ## Providers namespace
