@@ -37,8 +37,10 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the [getAllMessages](/graph/api/chats-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)  resource.|
 | Addition | beta | Added the [getAllMessages](/graph/api/channels-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added the [getAllMessages](/graph/api/teams-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | v1.0 | Added support for [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) (RSC) permissions to v1.0 APIs. |
+| Addition | v1.0 | Added [APIs for reading channel message](/graph/api/resources/chatmessage?view=graph-rest-1.0&preserve-view=true). |
 
-## October 2020
+### Identity and access
 
 ### Applications
 
@@ -47,7 +49,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added the **AlternateIdLogin** field to the [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-1.0&preserve-view=true) policy definition.|
 | Addition | beta | Added the **AlternateIdLogin** field to the [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta&preserve-view=true) policy definition.|
 | Addition | beta and v1.0 | Added [verified publisher](/graph/api/resources/verifiedPublisher) properties to the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) resources. |
-| Addition | beta and v1.0 | Added [setVerifiedPublisher](/graph/api/application-setverifiedpublisher) and [unsetVerifiedPublisher](/graph/api/application-unsetverifiedpublisher) methods to the [application](/graph/api/resources/application) resource. |
 
 ### Change notifications
 
@@ -416,6 +417,10 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) entity for managing user flows in an Azure Active Directory B2C tenant. |
 | Addition | beta | Added the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) entity for managing self-service sign up user flows in an Azure Active Directory tenant. |
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6986a9070ad31f1adba318b69cf227629046aa9c
 
 ### People and workplace intelligence | Profile
 
@@ -910,7 +915,6 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added the **externalUserState** and **externalUserStateChangeDateTime** properties to the [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) resource. |
 | Addition | v1.0 | Added support for [subscription](/graph/api/resources/subscription) to the **user** resource in [Microsoft Cloud China operated by 21Vianet](deployments.md). |
-
 
 ## April 2020
 

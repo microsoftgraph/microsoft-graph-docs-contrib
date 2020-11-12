@@ -1,19 +1,19 @@
 ---
-title: "channels: getAllMessages"
-description: "Get messages from all channels that a user is a participant in."
+title: "Get channel messages"
+description: "Retrieve all messages in a team channel."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# channels: getAllMessages
+# Get channel messages
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all messages from all [channels](../resources/channel.md) that a user is a participant in, including text, audio, and video conversations.
+Retrieve all [messages](../resources/chatmessage.md) in a [team](../resources/team.md) [channel](../resources/channel.md) including text, audio, and video conversations.
 
 ## Permissions
 
