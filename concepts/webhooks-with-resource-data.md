@@ -37,7 +37,7 @@ Currently, the Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?vi
 
 The **chatMessage** and the **presence** (preview) resources support including all the properties of a changed instance in a change notification. They do not support returning only selective properties of the instance. 
 
-This article walks through an example of subscribing to change notifications of messages in a Teams channel, with each change notification including the full resource data of the changed **chatMessage** instance. For more details about **chatMessage** based subscriptions refer to the [get change notifications for chat and channel messages](teams-changenotifications-chatmessage) documentation.
+This article walks through an example that shows you how to subscribe to change notifications for messages in a Teams channel, with each change notification including the full resource data of the changed **chatMessage** instance. For more details about **chatMessage**-based subscriptions, see [Get change notifications for chat and channel messages](teams-changenotifications-chatmessage).
 
 ## Creating a subscription
 
