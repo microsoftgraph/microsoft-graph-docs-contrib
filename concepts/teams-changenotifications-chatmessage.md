@@ -9,19 +9,17 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for messages in Teams channels and chats using Microsoft Graph
 
-Change notifications enable you to listen to changes (create, update and delete) to [messages](/graph/api/resources/chatMessage?preserve-view=true) in [channel](/graph/api/resources/channel?preserve-view=true) or [chat](/graph/api/resources/chat?preserve-view=true).
+Change notifications enable you to subscribe to changes (create, update, and delete) to [messages](/graph/api/resources/chatMessage?preserve-view=true) in a [channel](/graph/api/resources/channel?preserve-view=true) or [chat](/graph/api/resources/chat?preserve-view=true). Change notifications provide a low latency model by allowing you to maintain a [subscription](/graph/api/resources/webhooks?preserve-view=true). You can also get the resource data in the notifications and therefore avoid calling into API to get the payload.
 
-Change notifications enables you to listen to messages in a low latency model by maintaining a [subscription](/graph/api/resources/webhooks?preserve-view=true). You can additionally get the resource data in the notifications and thus avoiding the need to call into API to get the payload.
+>**Note:** The maximum time a subscription can last is 60 minutes; however, subscriptions can be renewed until the caller has permissions to access to resource.
 
-*The maximum time a subscription can last is 60 minutes, however subscriptions can be renewed till the caller has permissions to access to resource.*
+## Subscribe to changes at the tenant level
 
-## Subscribing to changes at tenant level
+To track all changes related to messages in a tenant, you can use subscriptions at a tenant level for channel and chat messages. This requires you to create two subscriptions: one to track all messages across [channels](/graph/api/resources/channel?preserve-view=true), and one to track all messages across [chats](/graph/api/resources/chat?preserve-view=true).
 
-To track all changes related to messages at tenant level you can use subscriptions at tenant level for channel and chat messages. This requires creation of 2 subscriptions, one to track all messages across [channels](/graph/api/resources/channel?preserve-view=true) and other to track all messages across [chats](/graph/api/resources/chat?preserve-view=true).
+### Subscribe to messages across channels
 
-### Subscribing to messages across channels
-
-Changes notifications for all messages and replies across channels in a tenant can be subscribed to by subscribing to `/teams/getAllMessages`. This resource supports [include resource data](webhooks-with-resource-data.md) to allow receiving resource data in the notification.
+To get to change notifications for all messages and replies across channels in a tenant, subscribe to `/teams/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
@@ -31,11 +29,12 @@ Changes notifications for all messages and replies across channels in a tenant c
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | ChannelMessage.Read.All |
 
-#### Examples
+#### Example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
@@ -48,9 +47,9 @@ Content-Type: application/json
 }
 ```
 
-### Subscribing to messages across chats
+### Subscribe to messages across chats
 
-Changes notifications for all messages across chats in a tenant can be subscribed to by subscribing to `/chats/getAllMessages`. This resource supports [include resource data](webhooks-with-resource-data.md) to allow receiving resource data in the notification.
+To get change notifications for all messages across chats in a tenant, subscribe to `/chats/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
@@ -60,11 +59,12 @@ Changes notifications for all messages across chats in a tenant can be subscribe
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Chat.Read.All |
 
-#### Examples
+#### Example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created,updated,deleted",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
@@ -77,13 +77,13 @@ Content-Type: application/json
 }
 ```
 
-## Subscribing to messages in a channel
+## Subscribe to messages in a channel
 
-To track messages and replies at a channel level, you can create change notification subscription at a channel level. This can be done by subscribing to `/teams{id}/channels/{id}/messages` resource. This resource supports [include resource data](webhooks-with-resource-data.md) in *application-only mode* to allow receiving resource data in the notification.
+To track messages and replies in a channel, you can create a change notification subscription at a channel level. To do this, subscribe to `/teams{id}/channels/{id}/messages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in *application-only mode*.
 
-Additionally, channel-level subscription supports keyword based search using **$search**.
+Channel-level subscriptions also support keyword-based search via the `$search` query parameter.
 
-#### Permissions
+### Permissions
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -91,13 +91,12 @@ Additionally, channel-level subscription supports keyword based search using **$
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | ChannelMessage.Read.All |
 
-#### Examples
-
-##### Example 1 : Subscribing to all messages (and replies) in a channel
+### Example 1: Subscribe to all messages (and replies) in a channel
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
@@ -110,13 +109,14 @@ Content-Type: application/json
 }
 ```
 
-##### Example 2 : Subscribing to messages (and replies) in a channel where message contains certain text
+### Example 2: Subscribe to messages (and replies) in a channel that contain certain text
 
-In the request below, only messages which contain `Hello` will be sent to subscriber.
+The following request will send messages that contain `Hello` to the subscriber.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
@@ -129,11 +129,12 @@ Content-Type: application/json
 }
 ```
 
-##### Example 3 : Subscribing to messages (and replies) in a channel without resource data
+### Example 3: Subscribe to messages (and replies) in a channel without resource data
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
@@ -144,13 +145,13 @@ Content-Type: application/json
 }
 ```
 
-## Subscribing to messages in a chat
+## Subscribe to messages in a chat
 
-To track messages at a chat level, you can create change notification subscription at a chat level. This can be done by subsricing to `/chats{id}/messages` resource. This resource supports [include resource data](webhooks-with-resource-data.md) in *application-only mode* to allow receiving resource data in the notification.
+To track messages in a chat, you can create a change notification subscription at a chat level. To do this, subscribe to `/chats{id}/messages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in *application-only mode*.
 
-Additionally, chat-level subscription supports keyword based search using **$search**.
+Chat-level subscriptions also support keyword-based search via the `$search` query parameter.
 
-#### Permissions
+### Permissions
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -158,13 +159,12 @@ Additionally, chat-level subscription supports keyword based search using **$sea
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Chat.Read.All |
 
-#### Examples
-
-##### Example 1: Subscribing to messages in a chat
+### Example 1: Subscribe to messages in a chat
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
@@ -177,13 +177,14 @@ Content-Type: application/json
 }
 ```
 
-##### Example 2: Subscribing to messages in a chat where message contains certain text
+### Example 2: Subscribe to messages in a chat that contain certain text
 
-In the request below, only messages which contain `Hello` will be sent to subscriber.
+The following request will send messages that contain `Hello` to the subscriber.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
@@ -196,7 +197,7 @@ Content-Type: application/json
 }
 ```
 
-##### Example 3 : Subscribing to messages (and replies) in a chat without resource data
+### Example 3: Subscribe to messages (and replies) in a chat without resource data
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -212,5 +213,5 @@ Content-Type: application/json
 ```
 
 ## See also
-- [Microsoft Graph Change Notifications](webhooks.md) overview.
+- [Microsoft Graph change notifications](webhooks.md)
 - [Microsoft Teams API overview](teams-concept-overview.md)
