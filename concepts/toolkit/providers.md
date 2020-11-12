@@ -7,7 +7,11 @@ author: nmetulev
 
 # Microsoft Graph Toolkit providers
 
-The Microsoft Graph Toolkit providers enable your application to authenticate with and access Microsoft Graph to retreive the data to be rendered in the components. Each provider encapsulates and provides the implementation for acquiring the access token to call the Microsoft Graph APIs, so that you don't have to write this code yourself. You can also use the providers on their own, without components, to quickly implement authentication for your app and make your own calls to Microsoft Graph via the JavaScript SDK client.
+The Microsoft Graph Toolkit providers enable your application to authenticate with Microsoft Identity and access Microsoft Graph in only few lines of code. Each provider handles user authentication and acquiring the access tokens to call Microsoft Graph APIs, so that you don't have to write this code yourself. 
+
+You can use the providers on their own, without components, to quickly implement authentication for your app and make calls to Microsoft Graph via the JavaScript client SDK.
+
+The providers are required when using the Microsoft Graph Toolkit components as the components use them to access Microsoft Graph. If you already have your own authentication and simply want to use the components, you can use a [custom provider](./providers/custom.md) instead.
 
 The Toolkit includes the following providers:
 
