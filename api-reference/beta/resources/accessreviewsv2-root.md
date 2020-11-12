@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: conceptualPageType
 ---
 
-# Azure AD access reviews
+# Azure AD access reviews (Preview)
 
 Namespace: microsoft.graph
 

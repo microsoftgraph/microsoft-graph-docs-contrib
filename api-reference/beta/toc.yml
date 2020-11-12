@@ -10521,7 +10521,7 @@ items:
                href: api/identityuserflowattribute-delete.md
       - name: Governance
         items:
-        - name: Access reviews
+        - name: Access reviews (Preview)
           href: resources/accessreviewsv2-root.md
           items:
           - name: Access review schedule definition
