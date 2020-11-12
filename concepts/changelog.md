@@ -13,6 +13,10 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## November 2020
 
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added [email authentication method configuration](/graph/api/resources/emailauthenticationmethodconfiguration?view=graph-rest-beta) to the [authentication methods policy](/graph/api/resources/authenticationmethodspolicies-overview) API.|
+
 ### Change notifications
 
 | **Change type** | **Version**   | **Description**                          |
