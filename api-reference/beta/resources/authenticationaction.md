@@ -18,7 +18,7 @@ Defines the action to take during an authentication event. An authenticationActi
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List authenticationActions](../api/authenticationaction-list.md)|[authenticationAction](../resources/authenticationaction.md) collection|Get the authenticationAction objects for a specific authentication event.|
-|[Create authenticationAction](../api/authenticationaction-create.md)|[authenticationAction](../resources/authenticationaction.md)|Create a new authenticationAction object.|
+|[Add authenticationAction](../api/authenticationaction-create.md)|[authenticationAction](../resources/authenticationaction.md)|Create a new authenticationAction object.|
 |[Update authenticationAction](../api/authenticationaction-update.md)|[authenticationAction](../resources/authenticationaction.md)|Update the properties of an authenticationAction object.|
 |[Get authenticationAction](../api/authenticationaction-get.md)|[authenticationAction](../resources/authenticationaction.md)|Read the properties and relationships of an [authenticationAction](../resources/authenticationaction.md) object.|
 |[Remove authenticationAction](../api/authenticationaction-remove.md)|None|Remove an [authenticationAction](../resources/authenticationaction.md) object.|

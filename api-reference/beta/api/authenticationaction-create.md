@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Create authenticationAction
+# Add authenticationAction
 
 Namespace: microsoft.graph
 
