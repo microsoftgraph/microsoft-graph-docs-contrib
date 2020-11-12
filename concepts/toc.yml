@@ -124,6 +124,8 @@ items:
             href: outlook-large-attachments.md
           - name: Immutable ID
             href: outlook-immutable-id.md
+      - name: Users
+        href: compliance-concept-overview.md
       - name: Cloud communications
         items:
           - name: Overview
