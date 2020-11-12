@@ -30,7 +30,7 @@ To initalize a provider in your JavaScript code, create a new provider instance 
 ```js
 import {Providers, MsalProvider } from "@microsoft/mgt";
 Providers.globalProvider = new MsalProvider({
-  clientId: '[YOUR_CLIENT_ID]'
+  clientId: 'YOUR_CLIENT_ID'
 });
 ```
 
