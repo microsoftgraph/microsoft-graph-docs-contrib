@@ -36,7 +36,7 @@ Providers.globalProvider = new MsalProvider({
 
 **Option 2: Use the provider component**
 
-You can also use the component version of the provider directly in your HTML. Behind the scenees, a new provider is initialized and set as the global provider. The following example shows how to use the MsalProvider.
+You can also use the component version of the provider directly in your HTML. Behind the scenes, a new provider is initialized and set as the global provider. The following example shows how to use the MsalProvider.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
