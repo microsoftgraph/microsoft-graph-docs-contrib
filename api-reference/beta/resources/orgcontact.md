@@ -64,6 +64,18 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "directReports",
+    "manager",
+    "memberOf"
+  ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.orgContact"
+}-->
+
 ``` json
 {
   "addresses": [{"@odata.type": "microsoft.graph.physicalOfficeAddress"}],
