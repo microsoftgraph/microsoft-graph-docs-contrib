@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewApplyAction",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewApplyAction](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewapplyaction?view=graph-rest-beta) resource type",
+          "Description": "Added the [accessReviewApplyAction](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewapplyaction?view=graph-rest-beta) resource type.",
           "Target": "accessReviewApplyAction"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewInstanceDecisionItem",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource type",
+          "Description": "Added the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource type.",
           "Target": "accessReviewInstanceDecisionItem"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewInstanceDecisionItemServicePrincipalTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewInstanceDecisionItemServicePrincipalTarget](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemServicePrincipalTarget?view=graph-rest-beta) resource type",
+          "Description": "Added the [accessReviewInstanceDecisionItemServicePrincipalTarget](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemServicePrincipalTarget?view=graph-rest-beta) resource type.",
           "Target": "accessReviewInstanceDecisionItemServicePrincipalTarget"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewInstanceDecisionItemTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewInstanceDecisionItemTarget](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemTarget?view=graph-rest-beta) resource type",
+          "Description": "Added the [accessReviewInstanceDecisionItemTarget](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemTarget?view=graph-rest-beta) resource type.",
           "Target": "accessReviewInstanceDecisionItemTarget"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewInstanceDecisionItemUserTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewInstanceDecisionItemUserTarget](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemUserTarget?view=graph-rest-beta) resource type",
+          "Description": "Added the [accessReviewInstanceDecisionItemUserTarget](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemUserTarget?view=graph-rest-beta) resource type.",
           "Target": "accessReviewInstanceDecisionItemUserTarget"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewReviewerScope",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewReviewerScope](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewReviewerScope?view=graph-rest-beta) resource type",
+          "Description": "Added the [accessReviewReviewerScope](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewReviewerScope?view=graph-rest-beta) resource type.",
           "Target": "accessReviewReviewerScope"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewScheduleDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleDefinition?view=graph-rest-beta) resource type",
+          "Description": "Added the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleDefinition?view=graph-rest-beta) resource type.",
           "Target": "accessReviewScheduleDefinition"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewScheduleSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta) resource type",
+          "Description": "Added the [accessReviewScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta) resource type.",
           "Target": "accessReviewScheduleSettings"
         },
         {
@@ -71,7 +71,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewScope",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewScope](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScope?view=graph-rest-beta) resource type",
+          "Description": "Added the [accessReviewScope](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScope?view=graph-rest-beta) resource type.",
           "Target": "accessReviewScope"
         },
         {
@@ -104,7 +104,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-09-28T20:33:59.215Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Identity governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
