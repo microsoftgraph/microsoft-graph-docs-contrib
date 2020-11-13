@@ -252,7 +252,7 @@ Content-type: application/json
 The following is an example of the request.
 
 <!-- {
-  "blockType": "ignroed",
+  "blockType": "ignored",
   "name": "get_video_count"
 }-->
 ```msgraph-interactive
