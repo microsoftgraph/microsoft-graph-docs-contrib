@@ -30,9 +30,9 @@ User flows are used to enable a [self-service sign up](/azure/active-directory/e
 |[Remove identity provider](../api/b2xidentityuserflow-delete-identityproviders.md)|None|Remove an identity provider from a B2X user flow.|
 |[List user attribute assignments](../api/b2xidentityuserflow-list-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|Retrieve all user attribute assignments in a B2X user flow.|
 |[Get user attribute assignment](../api/b2xidentityuserflow-get-identityuserflowattributeassignment.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Retrieve a specific user attribute assignment in a B2X user flow.|
-|[Create user attribute assignment](../api/b2xidentityuserflow-post-userattributeassignment.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Create a user attribute assignment in a B2X user flow.|
-|[Update user attribute assignment](../api/b2xidentityuserflow-update-userattributeassignment.md)|None|Update a specific user attribute assignment in a B2X user flow.|
-|[Delete user attribute assignment](../api/b2xidentityuserflow-delete-userattributeassignment.md)|None|Delete a specific user attribute assignment in a B2X user flow.|
+|[Create user attribute assignment](../api/b2xidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Create a user attribute assignment in a B2X user flow.|
+|[Update user attribute assignment](../api/b2xidentityuserflow-update-userattributeassignments.md)|None|Update a specific user attribute assignment in a B2X user flow.|
+|[Delete user attribute assignment](../api/b2xidentityuserflow-delete-userattributeassignments.md)|None|Delete a specific user attribute assignment in a B2X user flow.|
 
 ## Properties
 

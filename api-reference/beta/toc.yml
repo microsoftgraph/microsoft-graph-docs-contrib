@@ -10528,6 +10528,16 @@ items:
                href: api/b2cidentityuserflow-post-identityproviders.md
              - name: Remove identity provider
                href: api/b2cidentityuserflow-delete-identityproviders.md
+             - name: List user attribute assignments
+               href: api/b2cidentityuserflow-list-userattributeassignments.md
+             - name: Get user attribute assignment
+               href: api/b2cidentityuserflow-get-identityuserflowattributeassignment.md
+             - name: Create user attribute assignment
+               href: api/b2cidentityuserflow-post-userattributeassignments.md
+             - name: Update user attribute assignment
+               href: api/b2cidentityuserflow-update-userattributeassignments.md
+             - name: Delete user attribute assignment
+               href: api/b2cidentityuserflow-delete-userattributeassignments.md
           - name: Self-service sign up user flows
             items:
              - name: B2X user flow
@@ -10546,6 +10556,16 @@ items:
                href: api/b2xidentityuserflow-post-identityproviders.md
              - name: Remove identity provider
                href: api/b2xidentityuserflow-delete-identityproviders.md
+             - name: List user attribute assignments
+               href: api/b2xidentityuserflow-list-userattributeassignments.md
+             - name: Get user attribute assignment
+               href: api/b2xidentityuserflow-get-identityuserflowattributeassignment.md
+             - name: Create user attribute assignment
+               href: api/b2xidentityuserflow-post-userattributeassignments.md
+             - name: Update user attribute assignment
+               href: api/b2xidentityuserflow-update-userattributeassignments.md
+             - name: Delete user attribute assignment
+               href: api/b2xidentityuserflow-delete-userattributeassignments.md
           - name: User flow attributes
             items:
              - name: User flow attribute
