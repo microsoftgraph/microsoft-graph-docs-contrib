@@ -1457,3 +1457,14 @@ Possible values for user account types (group membership), per Windows definitio
 | application
 | delegated
 | delegatedUserConsentable
+
+### identityUserFlowAttributeInputType
+
+|Member|
+|:---|
+|textBox|
+|dateTimeDropDown|
+|radioSingleSelect|
+|dropdownSingleSelect|
+|emailBox|
+|checkboxMultiSelect|
