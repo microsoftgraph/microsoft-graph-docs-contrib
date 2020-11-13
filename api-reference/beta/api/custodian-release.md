@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Releases a custodian from a case](https://docs.microsoft.com/microsoft-365/compliance/manage-new-custodians#release-a-custodian-from-a-case)
+Release a custodian from a case. For details, see [Release a custodian from a case](/microsoft-365/compliance/manage-new-custodians#release-a-custodian-from-a-case).
 
 ## Permissions
 
@@ -67,7 +67,6 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea241
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
