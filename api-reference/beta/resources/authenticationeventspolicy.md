@@ -17,12 +17,9 @@ Authentication events are used to invoke actions at specific points in the authe
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get events](../api/authenticationeventspolicy-get.md)|[authenticationEventsPolicy](../resources/authenticationeventspolicy.md)|Read the properties and relationships of an [authenticationEventsPolicy](../resources/authenticationeventspolicy.md) object.|
-|[List authenticationActions](../api/authenticationaction-list.md)|[authenticationAction](../resources/authenticationaction.md) collection|Get the authenticationAction objects for a specific authentication event.|
-|[Create authenticationAction](../api/authenticationaction-create.md)|[authenticationAction](../resources/authenticationaction.md)|Create a new authenticationAction object.|
-|[Update authenticationAction](../api/authenticationaction-update.md)|[authenticationAction](../resources/authenticationaction.md)|Update the properties of an authenticationAction object.|
-|[Get authenticationAction](../api/authenticationaction-get.md)|[authenticationAction](../resources/authenticationaction.md)|Read the properties and relationships of an [authenticationAction](../resources/authenticationaction.md) object.|
-|[Remove authenticationAction](../api/authenticationaction-remove.md)|None|Remove an [authenticationAction](../resources/authenticationaction.md) object.|
+|[Get authenticationEventsPolicy](../api/authenticationeventspolicy-get.md)|[authenticationEventsPolicy](../resources/authenticationeventspolicy.md)|Get the authentication events that are supported and defined by policy for the tenant.|
+|[List onSignUpStart](../api/authenticationeventspolicy-list-onsignupstart.md)|[authenticationAction](../resources/authenticationaction.md) collection|Get the collection of authenticationAction resources supported by the onSignupStart event.|
+|[Create authenticationAction](../api/authenticationeventspolicy-post-onsignupstart.md)|[authenticationAction](../resources/authenticationaction.md)|Create a new authenticationAction object for the onSignupStart event.|
 
 ## Properties
 

@@ -1,17 +1,17 @@
 ---
 title: "Create authenticationAction"
-description: "Create a new authenticationAction object."
+description: "Create a new authenticationAction object for the onSignUpStart event."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Add authenticationAction
+# Create authenticationAction
 
 Namespace: microsoft.graph
 
-Create a new authenticationAction object.
+Create a new authenticationAction object for the onSignUpStart event.
 
 ## Permissions
 
@@ -51,7 +51,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |priority|Int32|The priority of the action that is used to determine one out of multiple applicable actions.|
 |sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filter based on the source of the authentication that is used to determine whether the action is executed.|
-|userFlow|String|The identifier of the [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object that will be invoked in this action.|
+|userFlow|[b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)|The [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object that will be invoked when this action executes.|
 
 ## Response
 

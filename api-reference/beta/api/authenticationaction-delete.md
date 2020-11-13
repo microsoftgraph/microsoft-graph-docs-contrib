@@ -1,6 +1,6 @@
 ---
-title: "Remove authenticationAction"
-description: "Remove an authenticationAction from an authenticationEventsPolicy."
+title: "Delete authenticationAction"
+description: "Deletes an authenticationAction from an event supported by an authenticationEventsPolicy."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Remove an [authenticationAction](../resources/authenticationaction.md) from an [authenticationEventsPolicy](../resources/authenticationeventspolicy.md).
+Delete an [authenticationAction](../resources/authenticationaction.md) from an event supported by an [authenticationEventsPolicy](../resources/authenticationeventspolicy.md).
 
 ## Permissions
 

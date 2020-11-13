@@ -1,6 +1,6 @@
 ---
 title: "Get authenticationEventsPolicy"
-description: "Read the properties and relationships of an authenticationEventsPolicy object."
+description: "Get the authentication events that are supported and defined by policy for the tenant."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Read the properties and relationships of an [authenticationEventsPolicy](../resources/authenticationeventspolicy.md) object.
+Get the authentication events that are supported and defined by policy for the tenant.
 
 ## Permissions
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 An action that is used to invoke a user flow during an authentication event. Authentication events are controlled by the [authenticationEventsPolicy](../resources/authenticationeventspolicy.md).
 
-Inherits from [authenticationAction](../resources/authenticationaction.md).
+Inherits from the abstract base type [authenticationAction](../resources/authenticationaction.md).
 
 ## Properties
 
@@ -27,7 +27,7 @@ Inherits from [authenticationAction](../resources/authenticationaction.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|userFlow|[b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)|The user flow that is invoked if this action is executed.|
+|userFlow|[b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)|The user flow that is invoked when this action executes.|
 
 ## JSON representation
 

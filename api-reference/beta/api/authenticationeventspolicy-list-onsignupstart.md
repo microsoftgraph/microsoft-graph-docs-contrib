@@ -1,17 +1,17 @@
 ---
-title: "List authenticationActions"
-description: "Get the authenticationAction resources from the onSignupStart navigation property."
+title: "List onSignUpStart"
+description: "Get the collection of authenticationAction resources supported by the onSignupStart event."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# List authenticationActions
+# List onSignUpStart
 
 Namespace: microsoft.graph
 
-Get the authenticationAction resources from the onSignupStart event.
+Get the collection of authenticationAction resources supported by the onSignupStart event.
 
 ## Permissions
 
