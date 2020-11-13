@@ -1,5 +1,5 @@
 ---
-title: "Get 1:1 chat between the specified user and Teams app"
+title: "Get chat between user and teamsApp"
 description: "Retrieve one-on-one chat between the specified user and the Teams app."
 author: "AkJo"
 doc_type: "apiPageType"
@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Get one-on-one chat between the specified user and Teams app
+# Get chat between user and teamsApp
 
 Namespace: microsoft.graph
 
