@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Sort search results
+# Sort search results (beta)
 
 Sort search results by specifying the **sortProperties** property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object, identifying a property of a resource in **entityTypes** to sort matches by, in ascending or descending order.
 

@@ -128,7 +128,6 @@ Any combinations involving **message**, **event**, SharePoint and OneDrive types
   - [Search Outlook messages](/graph/search-concept-messages)
   - [Search calendar events](/graph/search-concept-events)
   - [Search content in Sharepoint and OneDrive](/graph/search-concept-files)
-  - [Search external content](/graph/search-concept-custom-types)
 
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 

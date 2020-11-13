@@ -311,7 +311,7 @@ items:
             href: reportroot-concept-overview.md
           - name: Authorization for Microsoft 365 usage reports
             href: reportroot-authorization.md
-      - name: Search (preview)
+      - name: Search
         items:
           - name: Overview
             href: search-concept-overview.md
@@ -451,6 +451,8 @@ items:
                 href: webhooks-with-resource-data.md
               - name: Get notifications delivered different ways (preview)
                 href: change-notifications-delivery.md
+              - name: Get change notifications for chat and channel messages
+                href: teams-changenotifications-chatmessage.md
           - name: Change tracking
             displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:
