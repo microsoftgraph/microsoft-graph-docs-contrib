@@ -81,12 +81,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows('userFlowId')/userAttributeAssignments/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2xUserFlows('userFlowId')/userAttributeAssignments/$entity",
     "id": "City",
-    "optional": false,
+    "isOptional": false,
     "requiresVerification": false,
     "userInputType": "TextBox",
-    "label": "City",
+    "displayName": "City",
     "userAttributeValues": [
         {
             "name": "S",

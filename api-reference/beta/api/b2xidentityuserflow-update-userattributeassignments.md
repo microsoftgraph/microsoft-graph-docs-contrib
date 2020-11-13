@@ -57,7 +57,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) object in the response body.
+If successful, this method returns a `204 OK` response code.
 
 ## Examples
 
