@@ -1,5 +1,5 @@
 ---
-title: "Azure AD access reviews"
+title: "Azure AD access reviews (all resources)"
 description: "You can use Azure AD access reviews to configure one-time or recurring access reviews for attestation of user's access rights. This documentation serves the legacy APIs."
 localization_priority: Normal
 author: "markwahl-msft"
@@ -7,14 +7,14 @@ ms.prod: "microsoft-identity-platform"
 doc_type: conceptualPageType
 ---
 
-# Azure AD access reviews
+# Azure AD access reviews (all resources)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->A newer version of Access Review APIs can be found [here](accessreviewsv2-root.md). This new version only supports reviews of group membership at this time. For reviews of all other resources, please use the legacy APIs.
+>For access review APIs that apply to group memeberships, see [Access Reviews (group memberships)](accessreviewsv2-root.md). These access review APIs apply to all other resource types.
 
 You can use [Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of user's access rights.
 
