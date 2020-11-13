@@ -19,12 +19,27 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added [printTaskDefinition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true) to the resources supported for [change notifications](/graph/webhooks).|
 
+### Identity and access | Governance
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition|beta|Added resource types [accessReviewApplyAction](/graph/api/resources/accessreviewapplyaction?view=graph-rest-beta&preserve-view=true), [accessReviewInstance](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true), [accessReviewInstanceDecisionItem](/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta&preserve-view=true), [accessReviewInstanceDecisionItemServicePrincipalTarget](/graph/api/resources/accessreviewinstancedecisionitemserviceprincipaltarget?view=graph-rest-beta&preserve-view=true), [accessReviewInstanceDecisionItemTarget](/graph/api/resources/accessreviewinstancedecisionitemtarget?view=graph-rest-beta&preserve-view=true), [accessReviewInstanceDecisionItemUserTarget](/graph/api/resources/accessreviewinstancedecisionitemusertarget?view=graph-rest-beta&preserve-view=true), [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true), [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true), [accessReviewScheduleSettings](/graph/api/resources/accessreviewschedulesettings?view=graph-rest-beta&preserve-view=true), [accessReviewScope](/graph/api/resources/accessreviewscope?view=graph-rest-beta&preserve-view=true) and [access reviews root](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true).|
+|Addition|beta|Added [acceptRecommendations](/graph/api/accessreviewinstance-acceptrecommendations?view=graph-rest-beta&preserve-view=true), [applyDecisions](/graph/api/accessreviewinstance-applydecisions?view=graph-rest-beta&preserve-view=true), [get](/graph/api/accessreviewinstance-get?view=graph-rest-beta&preserve-view=true), [list](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true), [list pendingAccessReviewInstances](/graph/api/accessreviewinstance-pendingaccessreviewinstances?view=graph-rest-beta&preserve-view=true), [sendReminder](/graph/api/accessreviewinstance-sendreminder?view=graph-rest-beta&preserve-view=true), [stop](/graph/api/accessreviewinstance-stop?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewInstance](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true) resource.|
+|Addition|beta|Added [list](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true), [listPendingApproval](/graph/api/accessreviewinstancedecisionitem-listpendingapproval?view=graph-rest-beta&preserve-view=true), [update](/graph/api/accessreviewinstancedecisionitem-update?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewInstanceDecisionItem](/graph/api/resources/accessreviewinstancedecisionitem.md) resource.|
+|Addition|beta|Added [create](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true), [delete](/graph/api/accessreviewscheduledefinition-delete?view=graph-rest-beta&preserve-view=true), [get](/graph/api/accessreviewscheduledefinition-get?view=graph-rest-beta&preserve-view=true), [list](/graph/api/accessreviewscheduledefinition-list?view=graph-rest-beta&preserve-view=true), [update](/graph/api/accessreviewscheduledefinition-update?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) resource.|
+
 ### Teamwork
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added support for [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) (RSC) permissions to v1.0 APIs. |
 | Addition | v1.0 | Added [APIs for reading channel message](/graph/api/resources/chatmessage?view=graph-rest-1.0&preserve-view=true). |
+
+### Identity and access
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [organizationalBrandingProperties](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true) resource type and associated methods, which allow for the customization of the visual look and feel of sign-in screens.|
 
 ## October 2020
 
@@ -404,6 +419,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) entity for managing user flows in an Azure Active Directory B2C tenant. |
 | Addition | beta | Added the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) entity for managing self-service sign up user flows in an Azure Active Directory tenant. |
+
 
 ### People and workplace intelligence | Profile
 
@@ -898,7 +914,6 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added the **externalUserState** and **externalUserStateChangeDateTime** properties to the [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) resource. |
 | Addition | v1.0 | Added support for [subscription](/graph/api/resources/subscription) to the **user** resource in [Microsoft Cloud China operated by 21Vianet](deployments.md). |
-
 
 ## April 2020
 
