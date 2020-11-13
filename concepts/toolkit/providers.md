@@ -169,7 +169,7 @@ Once, you have the right providers initialized for your application, you can add
 <mgt-login></mgt-login>
 ```
 
- In scenarios where you want to implement this yourself, rather than using the Toolkit's Login component, you can do so by using the `login` and `logout` methods.
+ In scenarios where you want to implement this yourself, rather than using the Toolkit's Login component, you can do so by using the `login` and `logout` methods of the provider.
 
 ## Implement your own provider
 
