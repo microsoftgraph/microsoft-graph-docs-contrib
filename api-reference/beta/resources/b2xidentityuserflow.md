@@ -47,7 +47,7 @@ User flows are used to enable a [self-service sign up](/azure/active-directory/e
 | Relationship       | Type  |Description|
 |:---------------|:--------|:----------|
 |identityProviders|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
-|userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignments.md) collection|The user attribute assignments included in the user flow.|
+|userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|The user attribute assignments included in the user flow.|
 
 ## JSON representation
 

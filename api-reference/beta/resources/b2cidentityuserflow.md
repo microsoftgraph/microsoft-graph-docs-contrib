@@ -53,7 +53,7 @@ To help you set up the most common identity tasks for your applications, Azure A
 | Relationship       | Type  |Description|
 |:---------------|:--------|:----------|
 |identityProviders|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
-|userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignments.md) collection|The user attribute assignments included in the user flow.|
+|userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|The user attribute assignments included in the user flow.|
 
 ## JSON representation
 
