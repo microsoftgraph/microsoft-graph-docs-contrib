@@ -71,14 +71,14 @@ If successful, this method returns a `201 Created` response code and an [identit
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userAttributeAssignments
+POST https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Partner/userAttributeAssignments
 Content-Type: application/json
 
 {
-    "optional": false,
+    "isOptional": false,
     "requiresVerification": false,
     "userInputType": "TextBox",
-    "label": "Shoe size",
+    "displayName": "Shoe size",
     "userAttributeValues": [],
     "userAttribute": {
         "id": "extension_guid_shoeSize"
@@ -103,18 +103,10 @@ Location /identity/b2xUserFlows('B2X_1_Partner')/assignments('extension_guid_sho
 
 {
     "id": "extension_guid_shoeSize",
-    "optional": false,
+    "isOptional": false,
     "requiresVerification": false,
     "userInputType": "TextBox",
-    "label": "Shoe size",
-    "userAttributeValues": [],
-    "userAttribute": {
-        "@odata.type": "#Microsoft.Graph.CustomUserFlowAttribute",
-        "id": "extension_guid_shoeSize",
-        "displayName": "Shoe size",
-        "description": "Your shoe size",
-        "userFlowAttributeType": "custom",
-        "dataType": "string"
-    }
+    "displayName": "Shoe size",
+    "userAttributeValues": []
 }
 ```

@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /identity/b2cUserFlows/{b2cIdentityUserFlowId}/userAttributeAssignments
+POST /identity/b2cUserFlows/{id}/userAttributeAssignments
 ```
 
 ## Request headers
@@ -71,7 +71,7 @@ If successful, this method returns a `201 Created` response code and an [identit
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/identity/b2cUserFlows/{b2cIdentityUserFlowId}/userAttributeAssignments
+POST https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Consumer/userAttributeAssignments
 Content-Type: application/json
 
 {
@@ -107,14 +107,6 @@ Location /identity/b2cUserFlows('B2C_1_Consumer')/assignments('extension_guid_sh
     "requiresVerification": false,
     "userInputType": "TextBox",
     "displayName": "Shoe size",
-    "userAttributeValues": [],
-    "userAttribute": {
-        "@odata.type": "#Microsoft.Graph.CustomUserFlowAttribute",
-        "id": "extension_guid_shoeSize",
-        "displayName": "Shoe size",
-        "description": "Your shoe size",
-        "userFlowAttributeType": "custom",
-        "dataType": "string"
-    }
+    "userAttributeValues": []
 }
 ```
