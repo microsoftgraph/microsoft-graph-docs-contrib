@@ -27,9 +27,18 @@ The Toolkit includes the following providers:
 
 To use a provider in your app, you need to initialize a new provider and then set it as the global provider in the Providers namespace. We recommend doing this before you start using any of the components. You can do this one of two ways:
 
-**Option 1: Initialize in code**
+**Option 1: Use the provider component**
 
-To initalize a provider in your JavaScript code, create a new provider instance and set the value of the `Providers.globalProvider` property to the provider you'd like to use. The following example shows how to use the MsalProvider.
+You can use the component version of the provider directly in your HTML. Behind the scenes, a new provider is initialized and set as the global provider. The following example shows how to use the MsalProvider.
+
+```HTML
+<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+<mgt-msal-provider client-id="YOUR_CLIENT_ID"></mgt-msal-provider>
+```
+
+**Option 2: Initialize in code**
+
+Initializing your provider in your JavaScript code enables you to provide more options. To do this, create a new provider instance and set the value of the `Providers.globalProvider` property to the provider you'd like to use. The following example shows how to use the MsalProvider.
 
 ```js
 import {Providers, MsalProvider } from "@microsoft/mgt";
@@ -37,14 +46,27 @@ Providers.globalProvider = new MsalProvider({
   clientId: 'YOUR_CLIENT_ID'
 });
 ```
+> **Note:** For details on how to register your app and get a client ID, see [Create an Azure Active Directory app](../get-started/aad-aad-app-registration.md).
 
-**Option 2: Use the provider component**
+## Permission Scopes
 
-You can also use the component version of the provider directly in your HTML. Behind the scenes, a new provider is initialized and set as the global provider. The following example shows how to use the MsalProvider.
+We recommend adding all of the permission scopes your application needs to the `scopes` attribute or property when initializing your provider. This is optional, but will improve your user experience by presenting a single consent screen to the user with an aggregated list of all permissions requested by the components in your app, rather than presenting separate screens for each component. The following examples show how to do this with the MsalProvider.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
-<mgt-msal-provider client-id="YOUR_CLIENT_ID"></mgt-msal-provider>
+<mgt-msal-provider client-id="YOUR_CLIENT_ID"
+                   scopes="user.read,people.read"
+                   ></mgt-msal-provider>
+```
+
+If you're initializing the provider in code, use the `scopes` property.
+
+```js
+import {Providers, MsalProvider } from "@microsoft/mgt";
+Providers.globalProvider = new MsalProvider({
+  clientId: 'YOUR_CLIENT_ID'
+  scopes:['user.read','people.read']
+});
 ```
 
 ## Provider state
@@ -70,6 +92,7 @@ if (Providers.globalProvider.state === ProviderState.SignedIn) {
   //your code here
 }
 ```
+You can also use the `Providers.onProviderUpdated` method to get notified whenever the state of the provider changes.
 
 ## Getting an access token
 
@@ -134,18 +157,17 @@ if (TeamsProvider.isAvailable) {
     Providers.globalProvider = new MsalProvider(msalConfig)
 }
 ```
+## User Login/Logout
 
-## Providers namespace
+Once, you have the right providers initialized for your application, you can add the Toolkit's [Login component](../components/login.md) to easily and quickly implement user login and logout. The component works with the provider out of the box to handle all of the authentication logic and login/logout functionality. The following is an example of using the MsalProvider and the Login component.
 
-The `Providers` namespace exposes the following properties and functions:
+```HTML
+<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+<mgt-msal-provider client-id="YOUR_CLIENT_ID"></mgt-msal-provider>
+<mgt-login></mgt-login>
+```
 
-- `globalProvider : IProvider`
-
-Set this property to a provider that you want to use globally. All components use this property to get a reference to the provider. Setting this property will fire the `onProvidersChanged` event.
-
-- `function onProviderUpdated(callbackFunction)`
-
-The `callbackFunction` function will be called when a provider is changed or when the state of a provider changes. A `ProvidersChangedState` enum value will be passed to the function to indicate what updated.
+ In scenarios where you want to implement this yourself, rather than using the Toolkit's Login component, you can do so by using the `login` and `logout` methods.
 
 ## Implement your own provider
 
