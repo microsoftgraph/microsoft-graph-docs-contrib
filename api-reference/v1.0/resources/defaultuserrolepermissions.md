@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # defaultUserRolePermissions resource type
 
-Contains certain customizable permissions of default user role in Azure AD.
+Contains certain customizable permissions of default user role in Azure Active Directory (AD).
 
 ## Properties
 
