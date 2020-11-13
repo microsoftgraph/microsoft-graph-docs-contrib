@@ -311,7 +311,7 @@ items:
             href: reportroot-concept-overview.md
           - name: Authorization for Microsoft 365 usage reports
             href: reportroot-authorization.md
-      - name: Search (preview)
+      - name: Search
         items:
           - name: Overview
             href: search-concept-overview.md

@@ -13,6 +13,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## November 2020
 
+
 ### Change notifications
 
 | **Change type** | **Version**   | **Description**                          |
@@ -40,6 +41,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [organizationalBrandingProperties](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true) resource type and associated methods, which allow for the customization of the visual look and feel of sign-in screens.|
+
+### Search
+
+| **Change type** | **Version** | **Description**                              |
+|:----------------|:------------|:---------------------------------------------|
+| Addition        | v1.0        | Added the [Microsoft Search API](search-concept-overview.md) that constitutes [querying](/graph/api/search-query?view=graph-rest-v1.0) capabilities for content in M365. |
+| Addition        | v1.0        | Added the [query](/graph/api/search-query?view=graph-rest-v1.0) action. |
+| Addition        | v1.0        | Added the [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-v1.0), [searchQuery](/graph/api/resources/searchquery?view=graph-rest-v1.0), [searchResponse](/graph/api/resources/searchresponse?view=graph-rest-v1.0), [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-v1.0), and [searchHit](/graph/api/resources/searchhit?view=graph-rest-v1.0) complex types. |
 
 ## October 2020
 

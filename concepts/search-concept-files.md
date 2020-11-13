@@ -27,7 +27,7 @@ The Search API lets you scope the types of content to retrieve in OneDrive or Sh
 ### Request
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST /search/query
 Content-Type: application/json
 
 {
@@ -51,7 +51,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [

@@ -6,9 +6,9 @@ localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Refine search results using aggregations
+# Refine search results using aggregations (beta)
 
-Refine search results and show their distribution in the index. 
+Refine search results and show their distribution in the index.
 
 ## Example 1: Request aggregations by string fields
 

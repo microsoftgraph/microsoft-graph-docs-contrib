@@ -23,6 +23,14 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
   - Get a specific reply or all replies in a channel.
   - [Track new or updated messages in a channel](/graph/api/chatmessage-delta).
 
+### Search
+- [Microsoft Search query](/graph/api/resources/search-api-overview) API in Graph is GA.
+- GA of the query API applies to 
+  - email [messages](/graph/search-concept-messsages),
+  - calendar [events](/graph/search-concept-events) ,
+  - content in [OneDrive and SharePoint](/graph/search-concept-files).
+
+
 ## November 2020: New in preview only
 
 ### Devices and apps | Cloud printing

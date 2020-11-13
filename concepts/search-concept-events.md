@@ -19,7 +19,7 @@ Use the Microsoft Search API to search for events in the signed-in user’s prim
 This example searches in the user's calendar for the keyword "contoso", and will return up to 25 results.
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST /search/query
 Content-Type: application/json
 
 {
