@@ -30,7 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. |
 
 > [!NOTE]
-> Additionally for the delegated flow, the signed-in user can only update schemaExtensions they own (where the **owner** property of the schemaExtension is the `appId` of an application the signed-in user owns).
+> Additionally for the delegated flow, the signed-in user can only update schemaExtensions they own (where the **owner** property of the schemaExtension is the `appId` of an application the signed-in user owns). This allows a signed-in user to make updates through other applications they don't own, like [Microsoft Graph Explorer](https://aks.ms/ge).
+
+
+> [!NOTE]
+> When using Graph Explorer to update a schemaExtension, you'll need to specify the **owner** property in the PATCH request body. For more information, see the [Extensions](/graph/known-issues#extensions) section in [Known issues with Microsoft Graph](/graph/known-issues).
 
 ## HTTP request
 
