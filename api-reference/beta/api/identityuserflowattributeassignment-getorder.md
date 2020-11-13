@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttributeAss
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.Cpim.Api.DataModels.assignmentOrder"
+  "@odata.type": "microsoft.graph.assignmentOrder"
 }
 -->
 
