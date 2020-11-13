@@ -46,7 +46,7 @@ Providers.globalProvider = new MsalProvider({
   clientId: 'YOUR_CLIENT_ID'
 });
 ```
-> **Note:** For details on how to register your app and get a client ID, see [Create an Azure Active Directory app](../get-started/aad-aad-app-registration.md).
+> **Note:** For details on how to register your app and get a client ID, see [Create an Azure Active Directory app](./get-started/add-aad-app-registration.md).
 
 ## Permission Scopes
 
@@ -161,7 +161,7 @@ if (TeamsProvider.isAvailable) {
 ```
 ## User Login/Logout
 
-Once, you have the right providers initialized for your application, you can add the Toolkit's [Login component](../components/login.md) to easily and quickly implement user login and logout. The component works with the provider out of the box to handle all of the authentication logic and login/logout functionality. The following is an example of using the MsalProvider and the Login component.
+Once, you have the right providers initialized for your application, you can add the Toolkit's [Login component](./components/login.md) to easily and quickly implement user login and logout. The component works with the provider out of the box to handle all of the authentication logic and login/logout functionality. The following is an example of using the MsalProvider and the Login component.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
