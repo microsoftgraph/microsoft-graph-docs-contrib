@@ -85,10 +85,10 @@ Content-Type: application/json
     "value": [
         {
             "id": "City",
-            "optional": false,
+            "isOptional": false,
             "requiresVerification": false,
             "userInputType": "RadioSingleSelect",
-            "label": "City",
+            "displayName": "City",
             "userAttributeValues": [
                 {
                     "name": "S",
@@ -107,10 +107,10 @@ Content-Type: application/json
         },
         {
             "id": "extension_guid_shoeSize",
-            "optional": false,
+            "isOptional": false,
             "requiresVerification": false,
             "userInputType": "TextBox",
-            "label": "Shoe size",
+            "displayName": "Shoe size",
             "userFlowId": "B2C_1_Consumer",
             "userAttributeValues": [],
             "userAttribute": {

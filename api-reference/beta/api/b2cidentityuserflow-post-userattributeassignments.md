@@ -75,10 +75,10 @@ POST https://graph.microsoft.com/beta/identity/b2cUserFlows/{b2cIdentityUserFlow
 Content-Type: application/json
 
 {
-    "optional": false,
+    "isOptional": false,
     "requiresVerification": false,
     "userInputType": "TextBox",
-    "label": "Shoe size",
+    "displayName": "Shoe size",
     "userAttributeValues": [],
     "userAttribute": {
         "id": "extension_guid_shoeSize"
@@ -103,10 +103,10 @@ Location /identity/b2cUserFlows('B2C_1_Consumer')/assignments('extension_guid_sh
 
 {
     "id": "extension_guid_shoeSize",
-    "optional": false,
+    "isOptional": false,
     "requiresVerification": false,
     "userInputType": "TextBox",
-    "label": "Shoe size",
+    "displayName": "Shoe size",
     "userAttributeValues": [],
     "userAttribute": {
         "@odata.type": "#Microsoft.Graph.CustomUserFlowAttribute",
