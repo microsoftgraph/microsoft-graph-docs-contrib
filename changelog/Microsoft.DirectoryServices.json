@@ -3,6 +3,14 @@
     {
       "ChangeList": [
         {
+          "Id": "118736d5-b41d-43c0-9328-355d05cff91c",
+          "ApiChange": "resource, methods",
+          "ChangedApiName": "organizationalBrandingProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true) resource type and associated methods, which allow for the customization of the visual look and feel of sign-in screens.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
           "Id": "31bc17bd-c296-4925-8108-fa6ebb795ffe",
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewApplyAction",
@@ -102,9 +110,27 @@
       "Id": "f009a562-01c9-11eb-ae82-4aac1e5e935a",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-09-28T20:33:59.215Z",
+      "CreatedDateTime": "2020-11-11T20:33:59.215Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2f7cfb1b-38bc-4842-b90f-bc0b1e401231",
+          "ApiChange": "Property",
+          "ChangedApiName": "application",
+          "ChangeType": "Addition",
+          "Description": "Added the **spa** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "2f7cfb1b-38bc-4842-b90f-bc0b1e401231",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-11-10T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": ""
     },
     {
       "ChangeList": [

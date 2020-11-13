@@ -19,6 +19,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added [printTaskDefinition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true) to the resources supported for [change notifications](/graph/webhooks).|
 
+### Identity and access
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the **spa** property to the [application](/graph/api/resources/application?view=graph-rest-beta) resource. |
+| Addition | beta | Added the [organizationalBrandingProperties](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true) resource type and associated methods, which allow for the customization of the visual look and feel of sign-in screens.|
+
+
 ### Identity and access | Governance
 
 | **Change type** | **Version**   | **Description**                          |
@@ -64,25 +72,25 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
 | Change | beta | Added new permission requirements to: <ul><li>[Get printUsageSummaryByPrinter](/graph/api/printusagesummarybyprinter-get?view=graph-rest-beta&preserve-view=true)</li><li>[getPrinterArchivedPrintJobs](/graph/api/reports-getprinterarchivedprintjobs?view=graph-rest-beta&preserve-view=true)</li><li>[List dailyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-dailyprintusagesummariesbyprinter?view=graph-rest-beta&preserve-view=true)</li><li>[List monthlyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter?view=graph-rest-beta&preserve-view=true)</li><li>[Get printUsageSummaryByUser](/graph/api/printusagesummarybyuser-get?view=graph-rest-beta&preserve-view=true)</li><li>[getUserArchivedPrintJobs](/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-beta&preserve-view=true)</li><li>[getGroupArchivedPrintJobs](/graph/api/reports-getgrouparchivedprintjobs?view=graph-rest-beta&preserve-view=true)</li><li>[List dailyPrintUsageSummariesByUser](/graph/api/reportroot-list-dailyprintusagesummariesbyuser?view=graph-rest-beta&preserve-view=true)</li><li>[List monthlyPrintUsageSummariesByUser](/graph/api/reportroot-list-monthlyprintusagesummariesbyuser?view=graph-rest-beta&preserve-view=true)</li></ul>|
-| Change | beta | Removed **allowedUsers** property on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource. | 
+| Change | beta | Removed **allowedUsers** property on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource. |
 | Change | beta | Removed **allowedGroups** property on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource. |
-| Addition | beta | Added the [createUploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta&preserve-view=true) action for printDocument. | 
-| Change | beta | Deprecated **uploadData** action on [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta&preserve-view=true) resource. | 
-| Change | beta | Added properties to [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource: <br/><ul><li>isFetchable</li><li>redirectedFrom</li><li>redirectedTo</li><li>configuration</li></ul> | 
-| Change | beta | Deprecated **configuration** property on [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta&preserve-view=true) resource. | 
-| Change | beta | Added **shares** navigation property on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource. | 
-| Change | beta | **resetDefaults** action on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource has been renamed to [restoreFactoryDefaults](/graph/api/printer-restorefactorydefaults?view=graph-rest-beta&preserve-view=true). | 
-| Change | beta | **startPrintJob** action on [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource has been renamed to [start](/graph/api/printjob-start?view=graph-rest-beta&preserve-view=true). | 
-| Change | beta | **cancelPrintJob** action on [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource has been renamed to [cancel](/graph/api/printjob-cancel?view=graph-rest-beta&preserve-view=true). | 
-| Change | beta | Deprecated **getCapabilities** function on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource. | 
-| Change | beta | Deprecated **allowedUsers** property on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource. | 
+| Addition | beta | Added the [createUploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta&preserve-view=true) action for printDocument. |
+| Change | beta | Deprecated **uploadData** action on [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta&preserve-view=true) resource. |
+| Change | beta | Added properties to [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource: <br/><ul><li>isFetchable</li><li>redirectedFrom</li><li>redirectedTo</li><li>configuration</li></ul> |
+| Change | beta | Deprecated **configuration** property on [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta&preserve-view=true) resource. |
+| Change | beta | Added **shares** navigation property on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource. |
+| Change | beta | **resetDefaults** action on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource has been renamed to [restoreFactoryDefaults](/graph/api/printer-restorefactorydefaults?view=graph-rest-beta&preserve-view=true). |
+| Change | beta | **startPrintJob** action on [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource has been renamed to [start](/graph/api/printjob-start?view=graph-rest-beta&preserve-view=true). |
+| Change | beta | **cancelPrintJob** action on [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource has been renamed to [cancel](/graph/api/printjob-cancel?view=graph-rest-beta&preserve-view=true). |
+| Change | beta | Deprecated **getCapabilities** function on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource. |
+| Change | beta | Deprecated **allowedUsers** property on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource. |
 | Change | beta | Deprecated **allowedGroups** property on [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) resource. |
-| Change | beta | Added **feedOrientations** property to [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource. | 
-| Change | beta | Deprecated **feedDirections** property on [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource. | 
-| Change | beta | Added **details** property to [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource. | 
-| Change | beta | Deprecated **processingStateReasons** property on [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource. | 
+| Change | beta | Added **feedOrientations** property to [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource. |
+| Change | beta | Deprecated **feedDirections** property on [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource. |
+| Change | beta | Added **details** property to [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource. |
+| Change | beta | Deprecated **processingStateReasons** property on [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource. |
 | Change | beta | Renamed properties on [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource: <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li></ul> |  
-| Change | beta | Added **details** property to [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true) resource. | 
+| Change | beta | Added **details** property to [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true) resource. |
 | Change | beta | Renamed properties on [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true) resource: <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li><li>acquiredByPrinter -> isAcquiredByPrinter</li></ul> |  
 
 ### Devices and apps | Corporate management
@@ -206,7 +214,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
-| Addition | beta | Added the [Download printDocument binary file](/graph/api/printdocument-get-file?view=graph-rest-beta&preserve-view=true) method to download the binary file data associated with a document.  | 
+| Addition | beta | Added the [Download printDocument binary file](/graph/api/printdocument-get-file?view=graph-rest-beta&preserve-view=true) method to download the binary file data associated with a document.  |
 | Addition | beta | Added support for `$expand=documents` and `$filter=createdBy/userPrincipalName` query parameters in the [List printJobs](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true) method. |
 
 ### Devices and apps | Corporate management
@@ -309,12 +317,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition        | beta | Query external data across [more than one connection](search-concept-custom-types.md).|
 | Change        | beta |Some properties in the request and response have been renamed and are deprecated.  See [more details](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#schema-change-deprecation-warning) about the deprecation.|
 
-### Teamwork 
+### Teamwork
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition|Beta and v1.0|Added **lastEditedDateTime** property to the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) resource.|	
-|Change| Beta and v1.0| Changed **lastModifiedDateTime** property in the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) resource to represent the time the entity was last touched. It will always be set and never have a `null` value|	
+|Addition|Beta and v1.0|Added **lastEditedDateTime** property to the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) resource.|
+|Change| Beta and v1.0| Changed **lastModifiedDateTime** property in the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) resource to represent the time the entity was last touched. It will always be set and never have a `null` value|
 |Addition|beta| Added the **createdDateTime** property to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) and [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) resources.|
 |Addition|beta and v1.0| Added the [Update chatMessage](/graph/api/chatmessage-update) method to the [chatMessage](/graph/api/resources/chatmessage) resource.|
 |Addition|v1.0| Added the [List members](/graph/api/team-list-members?view=graph-rest-1.0&preserve-view=true), [Add members](/graph/api/team-post-members?view=graph-rest-1.0&preserve-view=true), and [Remove members](/graph/api/team-delete-members?view=graph-rest-1.0&preserve-view=true) methods.|
@@ -413,6 +421,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) entity for managing user flows in an Azure Active Directory B2C tenant. |
 | Addition | beta | Added the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) entity for managing self-service sign up user flows in an Azure Active Directory tenant. |
+
 
 ### People and workplace intelligence | Profile
 
@@ -907,7 +916,6 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added the **externalUserState** and **externalUserStateChangeDateTime** properties to the [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) resource. |
 | Addition | v1.0 | Added support for [subscription](/graph/api/resources/subscription) to the **user** resource in [Microsoft Cloud China operated by 21Vianet](deployments.md). |
-
 
 ## April 2020
 
