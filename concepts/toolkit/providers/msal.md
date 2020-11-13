@@ -67,4 +67,4 @@ To learn more about MSAL.js and for additional options you can use when initiali
 
 ## Creating an app/client ID
 
-For details about how to register an app and get a client ID, see [Crate an Azure Active Directory app](../get-started/aad-aad-app-registration.md).
+For details about how to register an app and get a client ID, see [Create an Azure Active Directory app](../get-started/aad-aad-app-registration.md).

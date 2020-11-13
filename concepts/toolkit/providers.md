@@ -69,6 +69,8 @@ Providers.globalProvider = new MsalProvider({
 });
 ```
 
+You can find the list of permission scopes required by each component in the "Microsoft Graph permissions" section of each component's documentation page.
+
 ## Provider state
 
 The provider keeps track of the user's authentication state and communicates this to the components. For example, when a user successfully signs in, the `ProviderState` is updated to `SignedIn`, signaling to the components that they are now able to make calls to Microsoft Graph. The `ProviderState` enum defines three states, as shown.
