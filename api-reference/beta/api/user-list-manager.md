@@ -53,8 +53,8 @@ If your request includes the `$expand=manager($levels=max)` parameter to get the
 - `ConsistencyLevel=eventual` request header
 
 >**Note:** `max` is the only allowed value for `$levels`.
-> When `$level` parameter is not specified, only the immediate manager is returned.  
-> You can specify `$select` inside `$expand` to select the individual managers' properties: `$expand=manager($levels=max;$select=id,displayName)`
+> When the `$level` parameter is not specified, only the immediate manager is returned.  
+> You can specify `$select` inside `$expand` to select the individual manager's properties: `$expand=manager($levels=max;$select=id,displayName)`
 
 ## Request headers
 
