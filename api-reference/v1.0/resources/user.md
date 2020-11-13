@@ -483,7 +483,6 @@ Here is a JSON representation of the resource
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
   "pastProjects": ["string"],
   "postalCode": "string",
-  "preferredDataLocation": "string",
   "preferredLanguage": "string",
   "preferredName": "string",
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
