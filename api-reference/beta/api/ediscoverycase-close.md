@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Closes an eDiscovery case, see [Close a case](https://docs.microsoft.com/microsoft-365/compliance/close-or-delete-case#close-a-case) to learn more.
+Close an eDiscovery case. For details, see [Close a case](/microsoft-365/compliance/close-or-delete-case#close-a-case).
 
 ## Permissions
 
@@ -39,7 +39,6 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/close
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -65,7 +64,6 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
