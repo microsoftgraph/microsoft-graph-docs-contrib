@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)| TeamMember.ReadWrite.All|
+|Delegated (work or school account)| TeamMember.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application| TeamMember.ReadWrite.All|
+|Application| TeamMember.ReadWrite.All |
 
 ## HTTP request
 
@@ -69,6 +69,10 @@ DELETE https://graph.microsoft.com/beta/teams/{teamsId}/members/{membership-id}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-members-from-team-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-members-from-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

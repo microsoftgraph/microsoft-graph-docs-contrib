@@ -16,9 +16,9 @@ Certain events can cause a subscription to be removed. These events include:
 - User's device is out of compliance
 -	User's account has been revoked
 
-When such an event happens, Outlook sends a special lifecycle notification, `subscriptionRemoved`.
+When such an event happens, Microsoft Graph sends a special lifecycle notification, `subscriptionRemoved`.
 
-Outlook also sends another lifecycle notification, `missed`, if a change notification cannot be delivered to an app.
+Microsoft Graph also sends another lifecycle notification, `missed`, if a change notification cannot be delivered to an app.
 
 An app subscribing to change notifications should listen to the `subscriptionRemoved` and `missed` signals and do the following:
 
@@ -26,6 +26,15 @@ An app subscribing to change notifications should listen to the `subscriptionRem
 - On receiving a `missed` lifecycle notification, the app should resynchronize resource data using Microsoft Graph.
 
 To receive lifecycle notifications, you can use the existing **notificationUrl** endpoint that already receives change notifications, or you can register a separate **lifecycleNotificationUrl** to receive `subscriptionRemoved` and `missed` lifecycle notifications in a separate endpoint.
+
+Lifecycle notifications are supported for subscriptions created on these resource types:
+
+- Outlook [message][]
+- Outlook [event][]
+- Outlook personal [contact][]
+- Teams [chatMessage][]
+
+For other resource types, you may still provide a `lifecycleNotificationUrl` when creating the subscription and your application will receive lifecycle notifications whenever the resource implements it.
 
 ## Creating a subscription
 
@@ -65,7 +74,7 @@ You can create a long-lived subscription (3 days), and change notifications will
 
 2. Microsoft Graph sends a `subscriptionRemoved` lifecycle notification to the **lifecycleNotificationUrl** (if specified).  
 
-3. You can respond to this lifecycle notification by creating a new subscription for the same resource. To do this, you need to present a valid access token; in some cases this means the app needs to re-authenticate the user to obtain a new valid access token.
+3. You can respond to this lifecycle notification by creating a new subscription for the same resource. To do this, you need to present a valid access token; in some cases, this means the app needs to re-authenticate the user to obtain a new valid access token.
 
 4. If you successfully create a new subscription, change notifications will start flowing again. However, if you fail (for example, the app can't obtain a valid access token), change notifications will not be sent.
 
@@ -150,7 +159,7 @@ When you receive a `reauthorizationRequired` lifecycle notification, you must re
 You can create a long-lived subscription (3 days), which enables change notifications to flow to the **notificationUrl**. If the conditions of access have changed since the subscription was created, Microsoft Graph may require that you reauthorize the subscription to prove that you still have access to resource data. The following are examples of changes that affect your access to data:
 
 - A tenant administrator may revoke your app's permissions to read a resource.
-- In an interactive scenario, the user who provides the authentication token to your app may be subject to dynamic policies based on various factors, such as their location, device state, or risk assesment. For example, if the user changes their physical location, the user may no longer be allowed to access the data, and your app will not be able to reauthorize the subscription. For more information about dynamic policies that control access, see [Azure AD conditional access policies](/azure/active-directory/conditional-access/overview). 
+- In an interactive scenario, the user who provides the authentication token to your app may be subject to dynamic policies based on various factors, such as their location, device state, or risk assessment. For example, if the user changes their physical location, the user may no longer be allowed to access the data, and your app will not be able to reauthorize the subscription. For more information about dynamic policies that control access, see [Azure AD conditional access policies](/azure/active-directory/conditional-access/overview). 
 
 The following steps represent the flow of an authorization challenge for an active subscription:
 
@@ -238,11 +247,11 @@ The following information can help you understand authorization challenges:
 
 In the future, Microsoft Graph will add more types of subscription lifecycle notifications. They will be posted to the same endpoint: **lifecycleNotificationUrl**, but they will have a different value under **lifecycleEvent** and might contain a slightly different schema and properties, specific to the scenario for which they will be issued.
 
-You should implement your code in a future-proof way so it does not break when Microsoft Graph introduces new types of lifecycle notifications. We recommend the following approach:
+You should implement your code in a future-proof way, so it does not break when Microsoft Graph introduces new types of lifecycle notifications. We recommend the following approach:
 
 1. Explicitly identify each lifecycle notification as an event that you support, using the **lifecycleEvent** property. For example, look for the `"lifecycleEvent": "subscriptionRemoved"` property to identify a specific event, and handle it.
 
-2. Watch for announcements of lifecycle notifications for new scenarions. There might be more types of lifecycle notifications in the future.
+2. Watch for announcements of lifecycle notifications for new scenarios. There might be more types of lifecycle notifications in the future.
 
 3. In your app, ignore any lifecycle notification that the app does not recognize, and log them to gain awareness.
 
@@ -255,3 +264,9 @@ You should implement your code in a future-proof way so it does not break when M
 - [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
 - [Delete subscription](/graph/api/subscription-delete?view=graph-rest-1.0)
 - [Update subscription](/graph/api/subscription-update?view=graph-rest-1.0)
+
+
+[contact]: /graph/api/resources/contact?view=graph-rest-1.0
+[event]: /graph/api/resources/event?view=graph-rest-1.0
+[message]: /graph/api/resources/message?view=graph-rest-1.0
+[chatMessage]: /graph/api/resources/chatmessage
