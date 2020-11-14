@@ -24,7 +24,7 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
   - Get a specific reply or all replies in a channel.
   - [Track new or updated messages in a channel](/graph/api/chatmessage-delta).
 
-## November 2020
+## November 2020: New in preview only
 
 ### Devices and apps | Cloud printing
 [Subscribe to change notifications](webhooks.md) on a [print task definition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true).
@@ -32,7 +32,7 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 ### Search
 You can aggregate numeric or string type search results that are imported by [Microsoft Graph connectors](/microsoftsearch/connectors-overview) and that are set to be refinable in the [schema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true). See more information about [refining search results using aggregations](search-concept-aggregation.md).
 
-## October 2020
+## October 2020: New and generally available
 
 ### Application
 - Allow [email as an alternate login ID to Azure AD](/azure/active-directory/authentication/howto-authentication-use-email-signin), using a [Home Realm Discovery](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#home-realm-discovery) policy. A Home Realm Discovery policy determines after a user provides a sign-in ID, whether to prompt the user to authenticate. In this case, setting the **AlternateIdLogin** property of a [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy) resource can enable a user to sign in with an email address.
