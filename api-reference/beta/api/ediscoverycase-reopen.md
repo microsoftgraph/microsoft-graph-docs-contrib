@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Reopens an eDiscovery case that was closed.  See [Reopen a closed case](https://docs.microsoft.com/microsoft-365/compliance/close-or-delete-case#reopen-a-closed-case) to learn more
+Reopen an eDiscovery case that was closed. For details, see [Reopen a closed case](/microsoft-365/compliance/close-or-delete-case#reopen-a-closed-case).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +38,6 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/reopen
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -64,7 +63,6 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
