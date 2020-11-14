@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [siteSource](../resources/sitesource.md) objects and their properties.
+Get a list of [siteSource](../resources/sitesource.md) objects and their properties.
 
 ## Permissions
 
