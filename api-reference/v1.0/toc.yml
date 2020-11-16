@@ -4949,7 +4949,7 @@ items:
           href: api/channel-list-messagereplies.md
         - name: Get message reply
           href: api/channel-get-messagereply.md
-        - name: Send message
+        - name: Reply to message
           href: api/channel-post-messagereply.md
         - name: Update message
           href: api/chatmessage-update.md
