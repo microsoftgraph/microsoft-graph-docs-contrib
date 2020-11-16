@@ -50,7 +50,7 @@ Providers.globalProvider = new MsalProvider({
 
 ## Permission Scopes
 
-We recommend adding all of the permission scopes your application needs to the `scopes` attribute or property when initializing your provider. This is optional, but will improve your user experience by presenting a single consent screen to the user with an aggregated list of all permissions requested by the components in your app, rather than presenting separate screens for each component. The following examples show how to do this with the MsalProvider.
+We recommend adding all of the permission scopes your application needs to the `scopes` attribute or property when initializing your provider (Note: This does not apply to the [SharePoint provider](./providers/sharepoint.md)). This is optional, but will improve your user experience by presenting a single consent screen to the user with an aggregated list of permissions requested by all components in your app, rather than presenting separate screens for each component. The following examples show how to do this with the MsalProvider.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -59,7 +59,7 @@ We recommend adding all of the permission scopes your application needs to the `
                    ></mgt-msal-provider>
 ```
 
-If you're initializing the provider in code, use the `scopes` property.
+If you're initializing the provider in code, provide the permission scopes in an array in the `scopes` property.
 
 ```js
 import {Providers, MsalProvider } from "@microsoft/mgt";
@@ -69,11 +69,11 @@ Providers.globalProvider = new MsalProvider({
 });
 ```
 
-You can find the list of permission scopes required by each component in the "Microsoft Graph permissions" section of each component's documentation page.
+You can find the list of permission scopes required by each component in the **Microsoft Graph permissions** section of each component's documentation page.
 
 ## Provider state
 
-The provider keeps track of the user's authentication state and communicates this to the components. For example, when a user successfully signs in, the `ProviderState` is updated to `SignedIn`, signaling to the components that they are now able to make calls to Microsoft Graph. The `ProviderState` enum defines three states, as shown.
+The provider keeps track of the user's authentication state and communicates it to the components. For example, when a user successfully signs in, the `ProviderState` is updated to `SignedIn`, signaling to the components that they are now able to make calls to Microsoft Graph. The `ProviderState` enum defines three states, as shown.
 
 ```ts
 export enum ProviderState {
@@ -95,6 +95,24 @@ if (Providers.globalProvider.state === ProviderState.SignedIn) {
 }
 ```
 You can also use the `Providers.onProviderUpdated` method to get notified whenever the state of the provider changes.
+
+```js
+import { Providers, ProviderState } from "@microsoft/mgt";
+
+//assuming a provider has already been initialized
+
+const providerStateChanged = () => {
+  if (Providers.globalProvider.state === ProviderState.SignedIn) {
+    // user is now signed in
+  }
+}
+
+// register a callback for when the state changes
+Providers.onProviderUpdated(providerStateChanged);
+
+// remove callback if necessary
+Providers.removeProviderUpdatedListener(providerStateChanged);
+```
 
 ## Getting an access token
 
