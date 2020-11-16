@@ -1,7 +1,7 @@
 ---
 title: "List cloudPcOnPremisesConnection"
 description: "Get a list of the cloudPcOnPremisesConnection objects and their properties."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: apiPageType

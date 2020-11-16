@@ -1,7 +1,7 @@
 ---
 title: "cloudPcManagementGroupAssignmentTarget resource type"
 description: "Complex type that represents the assignment target group. Base type: CloudPcManagementAssignmentTarget"
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: resourcePageType

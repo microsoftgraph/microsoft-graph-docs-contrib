@@ -1,7 +1,7 @@
 ---
 title: "virtualEndpoint resource type"
 description: "The virtualEndpoint resource represents a container for cloud PC management functionality."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: resourcePageType

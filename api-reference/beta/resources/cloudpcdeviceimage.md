@@ -1,7 +1,7 @@
 ---
 title: "cloudPcDeviceImage resource type"
 description: "Represents the image resource on cloud PC."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: resourcePageType

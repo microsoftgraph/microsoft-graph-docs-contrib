@@ -1,7 +1,7 @@
 ---
 title: "Delete cloudPcOnPremisesConnection"
 description: "Delete a cloudPcOnPremisesConnection object."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: apiPageType

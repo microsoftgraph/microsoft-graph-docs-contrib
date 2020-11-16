@@ -1,7 +1,7 @@
 ---
 title: "cloudPcStatusDetails resource type"
 description: "The details of the cloud PC status."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: resourcePageType

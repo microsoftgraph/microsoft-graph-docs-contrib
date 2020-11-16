@@ -1,7 +1,7 @@
 ---
 title: "cloudPC: reprovision"
 description: "Reprovision a specific cloud PC."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: apiPageType

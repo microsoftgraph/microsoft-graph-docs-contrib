@@ -1,7 +1,7 @@
 ---
 title: "cloudPcOnPremisesConnectionHealthCheck resource type"
 description: "The result of a cloud PC on-premises connection health check."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: resourcePageType

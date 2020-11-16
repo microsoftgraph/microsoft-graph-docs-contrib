@@ -1,7 +1,7 @@
 ---
 title: "CloudPcOnPremisesConnection-RunHealthChecks"
 description: "Run health checks on the cloud PC on-premises connection."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: apiPageType

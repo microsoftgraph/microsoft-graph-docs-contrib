@@ -1,7 +1,7 @@
 ---
 title: "cloudPcOnPremisesConnection resource type"
 description: "Represents a defined collection of Azure resource information that can be used to establish on-premises network connectivity for cloud PCs."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "List cloudPCs"
 description: "List properties and relationships of the cloudPC objects."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: apiPageType

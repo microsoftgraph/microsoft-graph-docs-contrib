@@ -1,7 +1,7 @@
 ---
 title: "cloudPC resource type"
 description: "Cloud managed virtual desktops."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: resourcePageType

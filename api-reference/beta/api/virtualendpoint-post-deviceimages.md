@@ -1,7 +1,7 @@
 ---
 title: "Create cloudPcDeviceImage"
 description: "Upload a custom OS image that you can later provision on cloud PCs."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: apiPageType

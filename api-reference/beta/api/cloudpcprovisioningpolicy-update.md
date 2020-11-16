@@ -1,7 +1,7 @@
 ---
 title: "Update cloudPcProvisioningPolicy"
 description: "Update the properties of a cloudPcProvisioningPolicy object."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: apiPageType

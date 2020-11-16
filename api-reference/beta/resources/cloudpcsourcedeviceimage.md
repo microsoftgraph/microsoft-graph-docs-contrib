@@ -1,7 +1,7 @@
 ---
 title: "cloudPcSourceDeviceImage resource type"
 description: "The source image associated with your Azure subscription. "
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: resourcePageType

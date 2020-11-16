@@ -1,7 +1,7 @@
 ---
 title: "List cloudPcDeviceImages"
 description: "List the properties and relationships of OS images uploaded to cloud PC."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: apiPageType

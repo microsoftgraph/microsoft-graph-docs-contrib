@@ -1,7 +1,7 @@
 ---
 title: "Get cloudPcProvisioningPolicy"
 description: "Read the properties and relationships of a cloudPcProvisioningPolicy object."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "cloudPcProvisioningPolicy: assign"
 description: "Assign the cloud PC provisioning policy to your group."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: apiPageType

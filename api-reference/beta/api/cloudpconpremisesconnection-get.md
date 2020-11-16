@@ -1,7 +1,7 @@
 ---
 title: "Get cloudPcOnPremisesConnection"
 description: "Read the properties and relationships of the cloudPcOnPremisesConnection object."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: apiPageType

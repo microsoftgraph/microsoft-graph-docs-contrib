@@ -1,7 +1,7 @@
 ---
 title: "List cloudPcProvisioningPolicy"
 description: "View the properties and relationships of all cloud PC provisioning policies."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: apiPageType

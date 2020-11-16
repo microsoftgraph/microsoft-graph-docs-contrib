@@ -1,7 +1,7 @@
 ---
 title: "Create cloudPcOnPremisesConnection"
 description: "Create an on-premises connection  for provisioning cloud PCs."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: apiPageType

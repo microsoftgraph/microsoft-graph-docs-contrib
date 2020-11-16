@@ -1,7 +1,7 @@
 ---
 title: "Get cloudPcDeviceImages"
 description: "Read the properties and relationships of a cloudPcDeviceImage object."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: apiPageType

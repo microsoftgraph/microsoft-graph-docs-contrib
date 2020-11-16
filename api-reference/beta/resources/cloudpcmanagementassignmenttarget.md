@@ -1,7 +1,7 @@
 ---
 title: "cloudPcManagementAssignmentTarget resource type"
 description: "cloudPcManagement assignment target. Base type."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: resourcePageType

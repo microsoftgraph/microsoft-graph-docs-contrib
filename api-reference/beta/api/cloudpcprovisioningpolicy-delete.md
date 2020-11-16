@@ -1,7 +1,7 @@
 ---
 title: "Delete cloudPcProvisioningPolicy"
 description: "Delete a cloudPcProvisioningPolicy object."
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: apiPageType

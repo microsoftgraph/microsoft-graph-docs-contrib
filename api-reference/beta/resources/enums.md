@@ -1456,6 +1456,9 @@ Possible values for user account types (group membership), per Windows definitio
 |endpointConnectivityCheckUrlNotWhitelisted|
 |endpointConnectivityCheckUnknownError|
 |aadConnectivityCheckUnknownError |
+|resourceAvailabilityCheckNoSubnetIP |
+|resourceAvailabilityCheckUnknownError |
+|internalServerUnknownError |
 
 ### cloudPcOnPremisesConnectionStatus values
 

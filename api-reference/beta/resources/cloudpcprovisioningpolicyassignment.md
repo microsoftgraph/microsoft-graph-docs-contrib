@@ -1,7 +1,7 @@
 ---
 title: "cloudPcProvisioningPolicyAssignment resource type"
 description: "CloudPC provisioning policy assignments"
-author: "jiajyang"
+author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: ""
 doc_type: resourcePageType
