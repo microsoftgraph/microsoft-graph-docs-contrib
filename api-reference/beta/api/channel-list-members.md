@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## HTTP request
+<!-- { "blockType": "ignored"} -->
 
 ```http
 GET /teams{id}/channels/{id}/members
@@ -59,9 +60,12 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 ### Request
 
 Here is an example of the request.
-
+<!-- {
+  "blockType": "request",
+  "name": "channel-list_member"
+} -->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/members
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members
 ```
 
 ### Response
@@ -69,13 +73,19 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/members
 Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conversationMember"
+} -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 201
 
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('2ab9c796-2902-45f8-b712-7c5a63cf41c4')/channels('19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype')/members",
+{
+"@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('2ab9c796-2902-45f8-b712-7c5a63cf41c4')/channels('19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype')/members",
 "@odata.count": 2,
 "value": [
     {
