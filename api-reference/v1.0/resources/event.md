@@ -69,6 +69,7 @@ by providing a [delta](../api/event-delta.md) function.
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |end|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event ends. By default, the end time is in UTC.|
 |hasAttachments|Boolean|Set to true if the event has attachments.|
+|hideAttendees|Boolean|When set to true, the tracking list is hidden from meeting attendees. Each attendee only sees themselves in the meeting invite and meeting tracking list.|
 |iCalUId|String|A unique identifier for an event across calendars. This ID is different for each occurrence in a recurring series. Read-only.|
 |id|String| Read-only.|
 |importance|importance|The importance of the event. The possible values are: `low`, `normal`, `high`.|
@@ -200,6 +201,7 @@ Here is a JSON representation of the resource
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "hasAttachments": true,
+  "hideAttendees": false,
   "iCalUId": "string",
   "id": "string (identifier)",
   "importance": "String",
