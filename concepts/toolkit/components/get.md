@@ -28,6 +28,7 @@ You can use several attributes to change the behavior of the component. The only
 | version | version | Optional API version to use when making the GET request. Default is `v1.0`.  |
 | max-pages | maxPages | Optional number of pages (for resources that support paging). Default is 3. Setting this value to 0 will get all pages.  |
 | polling-rate | pollingRate | Optional number of miliseconds. When set, the component will poll the request URI for updates in the defined interval. If using a delta query, polling will always query the delta API. The template will only refresh when the data changes. |
+| type | type | Optional type of the expected response. Default is `json`. Supports `json` or `image` (only be supported on endpoints ending with `/photo/value$`). |
 | N/A | response | Read-only response from Microsoft Graph if request was successful.  |
 | N/A |error| Read-only error from Microsoft Graph if request was not successful. |
 
@@ -55,7 +56,7 @@ The `mgt-get` component supports several [templates](../templates.md) that you c
 
 ## Microsoft Graph permissions
 
-For more information about permissions, see the Microsoft Graph [permissions reference](https://docs.microsoft.com/graph/permissions-reference). 
+For more information about permissions, see the Microsoft Graph [permissions reference](../../permissions-reference.md). 
 
 ## Authentication
 

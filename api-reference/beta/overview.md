@@ -20,7 +20,7 @@ The reference content in this section documents the Microsoft Graph beta endpoin
 
 Microsoft Graph API requests to the beta endpoint use the following pattern:
 
-```
+```http
 https://graph.microsoft.com/beta/{resource}?[query_parameters]
 ```
 
@@ -34,4 +34,3 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 - [Overview of Microsoft Graph](/graph/overview)
 - [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
 - [Microsoft Graph quick start](https://developer.microsoft.com/graph/quick-start)
-

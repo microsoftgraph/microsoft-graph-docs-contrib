@@ -15,6 +15,8 @@ Contains information about a user's presence, including their availability and u
 
 > **Note:** This resource is currently only supported for Microsoft Teams users.
 
+This resource supports subscribing to [change notifications](/graph/webhooks).
+
 ## Methods
 
 | Method                                                            | Return Type                                       | Description                                  |
@@ -31,7 +33,7 @@ Contains information about a user's presence, including their availability and u
 |availability    |  string collection   | 	The base presence information for a user. Possible values are `Available`, `AvailableIdle`,  `Away`, `BeRightBack`, `Busy`, `BusyIdle`, `DoNotDisturb`, `Offline`, `PresenceUnknown`  |
 |activity    |  string collection      | 	The supplemental information to a user's availability. Possible values are `Available`, `Away`, `BeRightBack`,`Busy`, `DoNotDisturb`, `InACall`, `InAConferenceCall`, `Inactive`,`InAMeeting`, `Offline`, `OffWork`,`OutOfOffice`, `PresenceUnknown`,`Presenting`, `UrgentInterruptionsOnly`.       |
 
->**Note:** To learn more about the different presence states, see [User presence in Teams](https://docs.microsoft.com/microsoftteams/presence-admins). 
+>**Note:** To learn more about the different presence states, see [User presence in Teams](/microsoftteams/presence-admins). 
 
 ## Relationships
 

@@ -30,6 +30,7 @@ By default, the `mgt-agenda` component fetches events from the `/me/calendarview
 | event-query | eventQuery | A string that represents an alternative query to be used when fetching events from Microsoft Graph. Optionally, add the delegated scope at the end of the string by delimiting it with `|` (`/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all`). |
 | events | events | An array of events to get or set the list of events rendered by the component - use this property to access the events loaded by the component. Set this value to load your own events - if value is set by developer, the `date`, `days`, or `event-query` attributes have no effect. |
 | group-by-day | groupByDay | A Boolean value to group events by day - by default events are not grouped. |
+| preferred-timezone | preferredTimezone | Name of the preferred timezone to use when retrieving events from Graph, eg. `Pacific Standard Time`. By default uses the UTC timezone. The preferred timezone for the current user can be retrieved by calling the `me/mailboxSettings` Graph endpoint and reading the value of the `timeZone` property. |
 
 The following example changes the behavior of the component to fetch data for a specific date and up to three days.
 
@@ -48,6 +49,11 @@ The following example changes the behavior of the component to fetch data from a
   event-query="/me/events?orderby=start/dateTime"
   ></mgt-agenda>
 ```
+
+## Methods
+| Method | Description |
+| --- | --- |
+| reload() | Call the method to reload the component with potential new data based on its properties. |
 
 ## CSS custom properties
 
@@ -123,7 +129,6 @@ The following events are fired from the control.
 | --- | --- |
 | eventClick | The user clicks or taps an event.|
 
-
 ## Permissions
 
 This component uses the following Microsoft Graph APIs and permissions:
@@ -133,6 +138,14 @@ This component uses the following Microsoft Graph APIs and permissions:
 | [/me/calendarview](/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | Calendars.Read |
 
 The component allows you to specify a different Microsoft Graph query to call (such as `/groups/{id}/calendar/calendarView`). In this case, append the permission to the end of the string, delimited by `|`.
+
+When using the default template and default `renderAttendees` template, additional APIs and permissions are required. The default template for this component uses a [mgt-people](people.md) component for events that have attendees, which requires the following.
+
+| Resource | Permission |
+| - | - |
+| [/users](/graph/api/user-list?view=graph-rest-1.0) | Users.ReadBasic.All |
+| [/me/calendarview](/graph/api/user-list-people?view=graph-rest-1.0) | People.Read |
+| [/me/calendarview](/graph/api/user-list-contacts?view=graph-rest-1.0) | Contacts.Read |
 
 ## Authentication
 
