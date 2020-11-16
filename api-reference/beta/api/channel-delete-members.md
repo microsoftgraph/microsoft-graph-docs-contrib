@@ -13,7 +13,7 @@ Namespace: microsoft.graph
  
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [conversationMember](../resources/conversationmember.md) from a [channel](../resources/channel.md). This operation is allowed only for channels with membershipType of 'private'.
+Delete a [conversationMember](../resources/conversationmember.md) from a [channel](../resources/channel.md). This operation is allowed only for channels with membershipType of `private`.
 
 
 ## Permissions
@@ -27,6 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application| ChannelMember.ReadWrite.All |
 
 ## HTTP request
+<!-- { "blockType": "ignored"} -->
 
 ```http
 DELETE /teams/{id}/channels/{id}/members/{id}
@@ -56,9 +57,8 @@ Here is an example of the request.
   "blockType": "request",
   "name": "delete_channel-member"
 } -->
-
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/members/{id}
+DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members/{id}
 ```
 
 ### Response
@@ -71,13 +71,12 @@ Here is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "Delete channel member",
+  "description": "Delete_channel_member",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
@@ -85,3 +84,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
