@@ -41,7 +41,7 @@ public render(): void {
 
 ## Sample
 
-For detailed step-by-step instructions on how to initalize the SharePoint provider, see the [Build a SharePoint web part](../get-started/build-a-sharepoing-web-part.md) getting started guide.
+For detailed step-by-step instructions on how to initalize the SharePoint provider, see the [Build a SharePoint web part](../get-started/build-a-sharepoint-web-part.md) getting started guide.
 
 For a pre-built example that shows you how to use the various components in your SharePoint web parts, see the [SharePoint webpart sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) in the Microsoft Graph Toolkit repository.
 
