@@ -11,7 +11,8 @@ ms.prod: "microsoft-teams"
 
 Namespace: microsoft.graph
 
-Add a [conversationMember](../resources/conversationmember.md) to a [channel](../resources/channel.md). This operation is allowed only for channels with membershipType of 'private'.
+Add a [conversationMember](../resources/conversationmember.md) to a [channel](../resources/channel.md). This operation is allowed only for channels with membershipType of
+`private`.
 
 ## Permissions
 
@@ -125,11 +126,9 @@ Content-length: 468
   "email": null
 }
 ```
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
-
 {
   "type": "#page.annotation",
   "description": "Add member to channel",
