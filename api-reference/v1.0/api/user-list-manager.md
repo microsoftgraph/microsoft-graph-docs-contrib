@@ -109,7 +109,7 @@ The following is an example of the response.
 >**Note**: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.user",
   "isCollection": false
 } -->
@@ -148,7 +148,7 @@ The following is an example of the response. Transitive managers are displayed h
 >**Note**: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.user",
   "isCollection": false
 } -->
