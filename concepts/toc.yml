@@ -525,6 +525,10 @@ items:
             href: toolkit/style.md
           - name: Templating components
             href: toolkit/templates.md
+          - name: Localizing components
+            href: toolkit/localization.md
+          - name: Right-To-Left
+            href: toolkit/right-to-left.md
       - name: Resources
         expanded: true
         items:
