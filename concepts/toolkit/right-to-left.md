@@ -1,5 +1,5 @@
 ---
-title: "Right-To-Left Support with the Microsoft Graph Toolkit"
+title: "Right-to-left (rtl) support with the Microsoft Graph Toolkit"
 description: "Use LocalizationHelper to change direction"
 localization_priority: Normal
 author: vogtn
