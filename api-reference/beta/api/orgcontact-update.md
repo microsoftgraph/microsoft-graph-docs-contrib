@@ -62,8 +62,8 @@ In the request body, supply the values for relevant fields that should be update
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
-##### Request
-Here is an example of the request.
+#####equest
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -100,8 +100,8 @@ Content-length: 222
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+The following is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true,
