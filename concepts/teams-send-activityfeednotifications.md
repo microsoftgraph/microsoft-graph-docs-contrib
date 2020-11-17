@@ -20,7 +20,7 @@ Following example shows how these components together show details about a notif
 
 ![FeedExample](images/teams-activityfeednotifications/examplefeednotification.png)
 
-## Requirements for using the Activity feed notification APIs
+## Requirements for using the activity feed notification APIs
 
 Activity feed APIs do not work in a standalone fashion, but work in tandem with the [teams app](/microsoftteams/platform/overview). To send activity feed notifications, following requirements must be met
 
