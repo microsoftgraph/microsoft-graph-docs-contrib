@@ -1457,3 +1457,12 @@ Possible values for user account types (group membership), per Windows definitio
 | application
 | delegated
 | delegatedUserConsentable
+
+### teamworkActivityTopicSource values 
+
+**Source of the topic for Microsoft Teams activity feed notification**
+
+|Members|
+|:---|
+|entityUrl|
+|text|
