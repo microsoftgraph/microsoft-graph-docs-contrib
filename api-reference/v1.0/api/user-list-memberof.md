@@ -105,7 +105,7 @@ Content-type: application/json
       "@odata.type": "#microsoft.graph.group",
       "displayName": "All Users",
       "mailEnabled": false,
-      "securityEnabled": true,
+      "securityEnabled": true
     }
   ]
 }
@@ -140,8 +140,6 @@ HTTP/1.1 200 OK
 Content-type: text/plain
 ```
 
-`893`
-
 ### Example 3: Use OData cast to get only a count of group membership
 
 #### Request
@@ -168,8 +166,6 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: text/plain
 ```
-
-`294`
 
 ### Example 4: Use $search and OData cast to get membership in groups with display names that contain the letters 'tier' including a count of returned objects
 
