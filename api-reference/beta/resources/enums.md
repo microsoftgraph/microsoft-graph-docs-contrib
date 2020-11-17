@@ -1460,7 +1460,7 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### teamworkActivityTopicSource values 
 
-|Members|
-|:---|
-|entityUrl|
-|text|
+| Member
+|:---
+| entityUrl
+| text
