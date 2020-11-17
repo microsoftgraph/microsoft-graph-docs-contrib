@@ -9,7 +9,7 @@ author: vogtn
 
 Localization is a important aspect of application development to support users with various language requirements globally.
 
-The Microsoft Graph Toolkit components can localize designated strings so the user-interface reflects the desiered linguistic experience.
+The Microsoft Graph Toolkit components can be localized so the user-interface reflects the desired linguistic experience.
 
 ## Use LocalizationHelper to add localized strings
 
