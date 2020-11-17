@@ -18,14 +18,6 @@
             "Description": "Added [read channel message APIs](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-v1.0).",
             "Target": "chatMessage"
           },
-          {
-            "Id": "5421a0d9-a155-43d1-ac9c-8d8e00529c2f",
-            "ApiChange": "Resource",
-            "ChangedApiName": "resource-specific consent",
-            "ChangeType": "Addition",
-            "Description": "Added support for [resource-specific consent](https://aka.ms/teams-rsc) (RSC) permissions to v1.0 APIs.",
-            "Target": "resource-specific consent"
-          }
         ],
         "Id": "5421a0d9-a155-43d1-ac9c-8d8e00529c2f",
         "Cloud": "prd",
@@ -39,15 +31,15 @@
         {
           "Id": "f9c592f2-d73c-410d-9542-21623e8e6de9",
           "ApiChange": "Method",
-          "ChangedApiName":  "List members of channel,Get member of channel, Add member to channel, Update role of member in channel, Delete member from channel",
+          "ChangedApiName":  "channel",
           "ChangeType": "Addition",
-          "Description": "[List members of channel](https://docs.microsoft.com/en-us/graph/api/channel-list-members?view=graph-rest-beta), [Get member of channel](https://docs.microsoft.com/en-us/graph/api/channel-get-members?view=graph-rest-beta) [Add member to channel](https://docs.microsoft.com/en-us/graph/api/channel-add-members?view=graph-rest-beta),  [Update role of member in channel](https://docs.microsoft.com/en-us/graph/api/channel-update-members?view=graph-rest-beta), [Delete member from channel](https://docs.microsoft.com/en-us/graph/api/channel-delete-members?view=graph-rest-beta), updated [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource file.",         
+          "Description": "Added the following methods to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource: [List members of channel](https://docs.microsoft.com/en-us/graph/api/channel-list-members?view=graph-rest-beta), [Get member of channel](https://docs.microsoft.com/en-us/graph/api/channel-get-members?view=graph-rest-beta) [Add member to channel](https://docs.microsoft.com/en-us/graph/api/channel-add-members?view=graph-rest-beta),  [Update role of member in channel](https://docs.microsoft.com/en-us/graph/api/channel-update-members?view=graph-rest-beta), [Delete member from channel](https://docs.microsoft.com/en-us/graph/api/channel-delete-members?view=graph-rest-beta).",         
           "Target": "channel"
         }
       ],
       "Id": "f9c592f2-d73c-410d-9542-21623e8e6de9",
       "Cloud": "prd",
-      "Version": "Beta",
+      "Version": "beta",
       "CreatedDateTime": "2020-11-09T00:00:00",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
@@ -99,10 +91,10 @@
         {
           "Id": "e94cb262-641b-4376-9451-00741b7e48cc",
           "ApiChange": "Resource",
-          "ChangedApiName": "List members,Get member,Add member,Update member,Delete member,conversationMember,aadUserConversationMember",
+          "ChangedApiName": "conversationMember,aadUserConversationMember",
           "ChangeType": "Addition",
           "Description": "Added the [List members](https://docs.microsoft.com/en-us/graph/api/conversationmember-list?view=graph-rest-beta), [Get member](https://docs.microsoft.com/en-us/graph/api/conversationmember-get?view=graph-rest-beta), [Add member](https://docs.microsoft.com/en-us/graph/api/conversationmember-add?view=graph-rest-beta), [Update member](https://docs.microsoft.com/en-us/graph/api/conversationmember-update?view=graph-rest-beta), and [Delete member](https://docs.microsoft.com/en-us/graph/api/conversationmember-delete?view=graph-rest-beta) methods to the [conversationMember](https://docs.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta) and [aadUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/aaduserconversationmember?view=graph-rest-beta) resources.",
-          "Target": "List members,Get member,Add member,Update member,Delete member,conversationMember,aadUserConversationMember"
+          "Target": "conversationMember,aadUserConversationMember"
         }
       ],
       "Id": "e94cb262-641b-4376-9451-00741b7e48cc",
@@ -117,9 +109,9 @@
         {
           "Id": "b921111b-b37e-4043-ba34-c87145bcbfd6",
           "ApiChange": "Method",
-          "ChangedApiName": "List members of channel,Get member of channel, Add member to channel, Update role of member in channel, Delete member from channel",
+          "ChangedApiName": "channel",
           "ChangeType": "Addition",
-          "Description": "[List members of channel](https://docs.microsoft.com/en-us/graph/api/channel-list-members?view=graph-rest-v1.0), [Get member of channel](https://docs.microsoft.com/en-us/graph/api/channel-get-members?view=graph-rest-v1.0) [Add member to channel](https://docs.microsoft.com/en-us/graph/api/channel-add-members?view=graph-rest-v1.0),  [Update role of member in channel](https://docs.microsoft.com/en-us/graph/api/channel-update-members?view=graph-rest-v1.0), [Delete member from channel](https://docs.microsoft.com/en-us/graph/api/channel-delete-members?view=graph-rest-v1.0), updated [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-v1.0) resource file",        
+          "Description": "Added the following methods to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-v1.0) resource: [List members of channel](https://docs.microsoft.com/en-us/graph/api/channel-list-members?view=graph-rest-v1.0), [Get member of channel](https://docs.microsoft.com/en-us/graph/api/channel-get-members?view=graph-rest-v1.0) [Add member to channel](https://docs.microsoft.com/en-us/graph/api/channel-add-members?view=graph-rest-v1.0),  [Update role of member in channel](https://docs.microsoft.com/en-us/graph/api/channel-update-members?view=graph-rest-v1.0), [Delete member from channel](https://docs.microsoft.com/en-us/graph/api/channel-delete-members?view=graph-rest-v1.0).",        
           "Target": "channel"
         }
       ],
