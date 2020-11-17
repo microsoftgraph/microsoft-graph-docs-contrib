@@ -5,7 +5,7 @@ localization_priority: Normal
 author: vogtn
 ---
 
-# Localizing the Microsoft Graph Toolkit
+# Localizing the Microsoft Graph Toolkit Components
 
 Localization is a important aspect of application development to support users with various language requirements globally.
 
