@@ -34,6 +34,7 @@ PATCH /teams/{id}/channels/{id}/members/{id}
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+| Content-type | application/json. Required. |
 
 ## Request body
 `
