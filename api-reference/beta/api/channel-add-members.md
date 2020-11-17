@@ -61,7 +61,7 @@ If successful, this method returns a `201 Created` response code and a [conversa
   "name": "channel_add_member"
 } -->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/members
 ```
 
 #### Response
@@ -79,7 +79,7 @@ Content-type: application/json
 Content-length: 468
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
   "@odata.type": "#microsoft.graph.aadUserConversationMember",
   "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
   "roles": [],
@@ -98,7 +98,7 @@ Content-length: 468
 } -->
 
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/members
 ```
 
 #### Response
@@ -118,7 +118,7 @@ Content-type: application/json
 Content-length: 468
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
   "@odata.type": "#microsoft.graph.aadUserConversationMember",
   "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
   "roles": ["owner"],
