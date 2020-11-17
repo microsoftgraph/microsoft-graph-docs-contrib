@@ -58,7 +58,7 @@ In the request body, supply the values for relevant fields that should be update
 |body|[ItemBody](../resources/itembody.md)|The body of the message associated with the event.|
 |categories|String collection|The categories associated with the event.|
 | end|DateTimeTimeZone|The date, time, and time zone that the event ends.|
-|hideAttendees|Boolean|When set to true, the tracking list is hidden from meeting attendees. Each attendee only sees themselves in the meeting invite and meeting tracking list.|
+|hideAttendees|Boolean|When set to `true`, the tracking list is hidden from meeting attendees. Each attendee only sees themselves in the meeting invite and meeting tracking list.|
 |importance|String|The importance of the event. The possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day.|
 |isOnlineMeeting|Boolean| `True` if this event has online meeting information, `false` otherwise. Default is false. Optional.|
@@ -135,7 +135,9 @@ Content-length: 285
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
