@@ -30,6 +30,7 @@ By default, the `mgt-agenda` component fetches events from the `/me/calendarview
 | event-query | eventQuery | A string that represents an alternative query to be used when fetching events from Microsoft Graph. Optionally, add the delegated scope at the end of the string by delimiting it with `|` (`/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all`). |
 | events | events | An array of events to get or set the list of events rendered by the component - use this property to access the events loaded by the component. Set this value to load your own events - if value is set by developer, the `date`, `days`, or `event-query` attributes have no effect. |
 | group-by-day | groupByDay | A Boolean value to group events by day - by default events are not grouped. |
+| preferred-timezone | preferredTimezone | Name of the preferred timezone to use when retrieving events from Graph, eg. `Pacific Standard Time`. By default uses the UTC timezone. The preferred timezone for the current user can be retrieved by calling the `me/mailboxSettings` Graph endpoint and reading the value of the `timeZone` property. |
 
 The following example changes the behavior of the component to fetch data for a specific date and up to three days.
 
@@ -48,6 +49,11 @@ The following example changes the behavior of the component to fetch data from a
   event-query="/me/events?orderby=start/dateTime"
   ></mgt-agenda>
 ```
+
+## Methods
+| Method | Description |
+| --- | --- |
+| reload() | Call the method to reload the component with potential new data based on its properties. |
 
 ## CSS custom properties
 
