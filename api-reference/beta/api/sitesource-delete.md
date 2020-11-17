@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [siteSource](../resources/sitesource.md) object.
+Delete a [siteSource](../resources/sitesource.md) object.
 
 ## Permissions
 
@@ -66,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-778
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

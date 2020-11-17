@@ -51,7 +51,7 @@ The following table lists the properties of a [custodian](../resources/custodian
 
 |Property|Type|Description|
 |:---|:---|:---|
-|applyHoldToSources|Boolean|Identifies whether a custodians sources were placed on hold during creation - see [Place custodians on hold](https://docs.microsoft.com/microsoft-365/compliance/add-custodians-to-case#step-4-place-custodians-on-hold) to learn more.|
+|applyHoldToSources|Boolean|Identifies whether a custodian's sources were placed on hold during creation. For details, see [Place custodians on hold](/microsoft-365/compliance/add-custodians-to-case#step-4-place-custodians-on-hold).|
 
 ## Response
 
