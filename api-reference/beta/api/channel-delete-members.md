@@ -58,7 +58,7 @@ Here is an example of the request.
   "name": "delete_channel-member"
 } -->
 ```http
-DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members/{id}
+DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/members/{id}
 ```
 
 ### Response
