@@ -19,7 +19,7 @@ Use the [profileCardProperty](/graph/api/resources/profilecardproperty?view=grap
 Additional properties will display in the **Contact** section of the profile card in Microsoft 365.
 
 > [!NOTE]
-> Operations on the **profileCardProperty** resource that use delegated permissions requires the signed-in user to have a tenant administrator or global administrator role.
+> Operations on the **profileCardProperty** resource that use delegated permissions require the signed-in user to have a tenant administrator or global administrator role.
 
 ## Make additional attributes visible
 
