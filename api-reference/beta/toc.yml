@@ -12537,6 +12537,20 @@ items:
           href: api/user-delete-teamsappinstallation.md
         - name: Upgrade installed app for user
           href: api/user-upgrade-teamsappinstallation.md
+      - name: Activity Feed
+        items:
+        - name: Notification topic
+          href: resources/teamworkactivitytopic.md
+        - name: Notification recipient
+          href: resources/teamworknotificationrecipient.md
+        - name: Azure AD user notification recipient
+          href: resources/aadusernotificationrecipient.md
+        - name: Send notification to user in chat scope
+          href: api/chat-sendactivitynotification.md
+        - name: Send notification to user in team scope
+          href: api/chat-sendactivitynotification.md
+        - name: Send notification to user in personal scope
+          href: api/userteamwork-sendactivitynotification.md
       - name: Tab
         href: resources/teamstab.md
         items:
