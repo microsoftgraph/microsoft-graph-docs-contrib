@@ -80,8 +80,6 @@ The following example shows a request to get the manager.
 #### Request
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_manager"
