@@ -11,7 +11,7 @@ Use the Teams provider inside your Microsoft Teams tab to facilitate authenticat
 
 To learn more about authentication providers, see [providers](../providers.md).
 
->**Tip:** For a detailed step-by-step guide on how to get started with creating a Microsot Teams application with the Teams Provider, see the [Build a Microsoft Teams tab](../get-started/build-a-microsoft-teams-tab.md) getting started guide.
+>**Tip:** For details about how to get started with creating a Microsot Teams application with the Teams Provider, see the [Build a Microsoft Teams tab](../get-started/build-a-microsoft-teams-tab.md) getting started guide.
 
 ## Get started
 
