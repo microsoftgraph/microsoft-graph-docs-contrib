@@ -11,15 +11,15 @@ The Microsoft Graph Toolkit providers enable your application to authenticate wi
 
 You can use the providers on their own, without components, to quickly implement authentication for your app and make calls to Microsoft Graph via the JavaScript client SDK.
 
-The providers are required when using the Microsoft Graph Toolkit components as the components use them to access Microsoft Graph. If you already have your own authentication and simply want to use the components, you can use a [custom provider](./providers/custom.md) instead.
+The providers are required when using the Microsoft Graph Toolkit components as the components use them to access Microsoft Graph. If you already have your own authentication and want to use the components, you can use a [custom provider](./providers/custom.md) instead.
 
-The Toolkit includes the following providers:
+The Toolkit includes the following providers.
 
 |Providers|Description|
 |---------|-----------|
 |[Msal](./providers/msal.md)|Uses MSAL.js to sign in users and acquire tokens to use with Microsoft Graph in a web application.|
 |[SharePoint](./providers/sharepoint.md)|Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.|
-|[Teams](./providers/teams.md)|Authenticates and provides Microsoft Graph access to components inside of Microsoft Teams tabs.|
+|[Teams](./providers/teams.md)|Authenticates and provides Microsoft Graph access to components inside  Microsoft Teams tabs.|
 |[Proxy](./providers/proxy.md)|Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.|
 |[Custom](./providers/custom.md)|Create a custom provider to enable authentication and access to Microsoft Graph with your application's existing authentication code.|
 
@@ -46,11 +46,11 @@ Providers.globalProvider = new MsalProvider({
   clientId: 'YOUR_CLIENT_ID'
 });
 ```
-> **Note:** For details on how to register your app and get a client ID, see [Create an Azure Active Directory app](./get-started/add-aad-app-registration.md).
+> **Note:** For details about how to register your app and get a client ID, see [Create an Azure Active Directory app](./get-started/add-aad-app-registration.md).
 
 ## Permission Scopes
 
-We recommend adding all of the permission scopes your application needs to the `scopes` attribute or property when initializing your provider (Note: This does not apply to the [SharePoint provider](./providers/sharepoint.md)). This is optional, but will improve your user experience by presenting a single consent screen to the user with an aggregated list of permissions requested by all components in your app, rather than presenting separate screens for each component. The following examples show how to do this with the MsalProvider.
+We recommend adding all the permission scopes your application needs to the `scopes` attribute or property when initializing your provider (this does not apply to the [SharePoint provider](./providers/sharepoint.md)). This is optional, but will improve your user experience by presenting a single consent screen to the user with an aggregated list of permissions requested by all components in your app, rather than presenting separate screens for each component. The following examples show how to do this with the MsalProvider.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -179,7 +179,7 @@ if (TeamsProvider.isAvailable) {
 ```
 ## User Login/Logout
 
-Once, you have the right providers initialized for your application, you can add the Toolkit's [Login component](./components/login.md) to easily and quickly implement user login and logout. The component works with the provider out of the box to handle all of the authentication logic and login/logout functionality. The following is an example of using the MsalProvider and the Login component.
+When you have the right providers initialized for your application, you can add the Toolkit's [Login component](./components/login.md) to easily and quickly implement user login and logout. The component works with the provider to handle all of the authentication logic and login/logout functionality. The following example uses the MsalProvider and the Login component.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -187,11 +187,11 @@ Once, you have the right providers initialized for your application, you can add
 <mgt-login></mgt-login>
 ```
 
- In scenarios where you want to implement this yourself, rather than using the Toolkit's Login component, you can do so by using the `login` and `logout` methods of the provider.
+In scenarios where you want to implement this yourself, rather than using the Toolkit's Login component, you can do so by using the `login` and `logout` methods of the provider.
 
 ## Implement your own provider
 
-In scennarios where you want to add Toolkit components to an application with pre-existing authentication code, you can create a custom provider that hooks into your authentication mechanism, instead of using our predefined providers. The toolkit provides two ways to create new providers:
+In scenarios where you want to add Toolkit components to an application with pre-existing authentication code, you can create a custom provider that hooks into your authentication mechanism, instead of using our predefined providers. The toolkit provides two ways to create new providers:
 
 - Create a new `SimpleProvider` that returns an access token from your authentication code by passing in a function.
 - Extend the `IProvider` abstract class.
