@@ -33,7 +33,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "onlineMeeting",
           "ChangeType": "Addition",
-          "Description": "Added the **lobbyBypassSettings**, **isEntryExitAnnounced**, and **allowedPresenters** property to [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) to support meeting option configuration.",
+          "Description": "Added the **lobbyBypassSettings**, **isEntryExitAnnounced**, and **allowedPresenters** properties to [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) to support meeting option configuration.",
           "Target": "onlineMeeting"
         }
       ],
