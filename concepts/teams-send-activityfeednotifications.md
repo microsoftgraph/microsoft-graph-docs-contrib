@@ -1,4 +1,12 @@
-# Send Activity feed notifications to users in Microsoft Teams
+---
+title: "Send activity feed notifications to users in Microsoft Teams"
+description: "Send activity feed notifications to users in Microsoft Teams using teams app and microsoft graph."
+author: "RamjotSingh"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+---
+
+# Send activity feed notifications to users in Microsoft Teams
 
 Microsoft Teams Activity feed acts as an excellent way to triage the things which require attention. It is *the* place to inform users of changes or things which require their attention. Activity feed notifications APIs enable applications to get user's attention related to their apps. This allows apps to build richer experiences and have better user engagement.
 
@@ -247,8 +255,8 @@ HTTP/1.1 204 No Content
 
 As a user of Microsoft Teams, user can customize the notifications they see in their feed, as a pop-up etc. Notifications generated through activity feed APIs follow the same suit. Users can choose how they are notified about a notification. To customize this, you can go to settings in Microsoft Teams and customize the notification settings. Teams apps will appear in the list for user to choose from as shown below
 
-![NotificationSettings](images/teams-activityfeednotifications/notificationsettings.png)
+![NotificationSettingsInTeams](images/teams-activityfeednotifications/notificationsettings.png)
 
 Users can click on **Edit** button next to an app and customize the notifications. See the example below. `description` in the teams app manifest is displayed here.
 
-![NotificationSettings](images/teams-activityfeednotifications/applevelnotificationsettings.png)
+![NotificationSettingsForAnApp](images/teams-activityfeednotifications/applevelnotificationsettings.png)
