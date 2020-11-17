@@ -57,7 +57,7 @@ Following resources are supported when setting `source` of `topic` to entity url
 - [Chat](../resources/chat.md)
 - [Chat message](../resources/chatmessage.md)
 
-> **Note:** The entity url must be same or under the chat in the url. Additionally, the [teams app](/microsoftteams/platform/overview) must be installed in the chat.
+> **Note:** The entity url must be same or child resource of the chat in the url. Additionally, the [teams app](/microsoftteams/platform/overview) must be installed in the chat.
 
 ## Response
 

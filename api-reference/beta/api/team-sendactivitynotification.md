@@ -57,7 +57,7 @@ Following resources are supported when setting `source` of `topic` to entity url
 - [Channel message](../resources/chatmessage.md)
 - [Channel tab](../resources/teamstab.md)
 
-> **Note:** The entity url must be same or under the team in the url. Additionally, the [teams app](/microsoftteams/platform/overview) must be installed in the team.
+> **Note:** The entity url must be same or child resource of the team in the url. Additionally, the [teams app](/microsoftteams/platform/overview) must be installed in the team.
 
 ## Response
 

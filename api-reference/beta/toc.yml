@@ -12548,7 +12548,7 @@ items:
         - name: Send notification to user in chat scope
           href: api/chat-sendactivitynotification.md
         - name: Send notification to user in team scope
-          href: api/chat-sendactivitynotification.md
+          href: api/team-sendactivitynotification.md
         - name: Send notification to user in personal scope
           href: api/userteamwork-sendactivitynotification.md
       - name: Tab
