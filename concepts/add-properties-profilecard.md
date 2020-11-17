@@ -43,14 +43,14 @@ The following table shows how the Azure AD attributes correspond with properties
 | StateOrProvince | state |
 | Alias | mailNickname |
 
-You can add any of these attributes to the profile card by configuring your [organization settings](/graph/api/resources/organizationsettings?view=graph-rest-beta) and adding the attribute as the *directoryPropertyName*\* property of a **profileCardProperty** in Microsoft Graph. When you make additional attributes visible, you must use the property names for `en-us`. You don't have to add localized values. The additional properties will automatically be shown in the language settings that the user has specified for Microsoft 365.
+You can add any of these attributes to the profile card by configuring your [organization settings](/graph/api/resources/organizationsettings?view=graph-rest-beta) and adding the attribute as the **directoryPropertyName** property of a **profileCardProperty** in Microsoft Graph. When you make additional attributes visible, you must use the property names for `en-us`. You don't have to add localized values. The additional properties will automatically be shown in the language settings that the user has specified for Microsoft 365.
 
 > [!IMPORTANT]
 > When adding an attribute to profile card, it takes up to 24 hours for the addition to be displayed.
 
 ## Example
 
-The following example displays the `Alias` attribute on the profile card:
+The following example displays the `Alias` attribute on the profile card.
 
 ``` http
 POST https://graph.microsoft.com/beta/organization/{tenantid}/settings/profileCardProperties
@@ -151,12 +151,8 @@ Content-type: application/json
 
 ## See also
 
-[Find your Microsoft 365 tenant ID](/onedrive/find-your-office-365-tenant-id)
-
-[onPremisesExtensionAttributes resource type](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-beta)
-
-[User resource type](/graph/api/resources/user?view=graph-rest-beta)
-
-[Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
-
-[Get profileCardProperty](/graph/api/profilecardproperty-get?view=graph-rest-beta)
+- [Find your Microsoft 365 tenant ID](/onedrive/find-your-office-365-tenant-id)
+- [onPremisesExtensionAttributes resource type](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-beta)
+- [User resource type](/graph/api/resources/user?view=graph-rest-beta)
+- [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
+- [Get profileCardProperty](/graph/api/profilecardproperty-get?view=graph-rest-beta)
