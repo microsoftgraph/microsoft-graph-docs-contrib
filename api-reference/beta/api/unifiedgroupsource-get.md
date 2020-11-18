@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [unifiedGroupSource](../resources/unifiedgroupsource.md) object.
+Read the properties and relationships of a [unifiedGroupSource](../resources/unifiedgroupsource.md) object.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [unifiedGroupSource](../resources/unifiedgroupsource.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [unifiedGroupSource](../resources/unifiedgroupsource.md) object in the response body.
 
 ## Examples
 
