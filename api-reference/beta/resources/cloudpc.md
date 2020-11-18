@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Cloud managed virtual desktops.
+Represents a cloud-managed virtual desktop.
 
 ## Methods
 

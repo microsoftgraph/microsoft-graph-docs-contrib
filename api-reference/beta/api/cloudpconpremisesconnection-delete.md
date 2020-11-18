@@ -15,8 +15,9 @@ Delete a specific [cloudPcOnPremisesConnection](../resources/cloudpconpremisesco
 
 When you delete a connection, permissions to the service are removed from the specified Azure resources.
 
-Once the on-premises connection passes health check, which is indicated by the `healthCheckStatus` property, you cannot delete it.
-You cannot delete a connection when it's in use, as indicated by the `inUse` property.
+You cannot delete an on-premises connection once it passes health check, which is indicated by the `healthCheckStatus` property.
+
+You cannot delete a connection when it's in use either, as indicated by the `inUse` property.
 
 ## Permissions
 

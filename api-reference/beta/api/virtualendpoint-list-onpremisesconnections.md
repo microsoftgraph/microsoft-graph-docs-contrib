@@ -7,7 +7,7 @@ ms.prod: ""
 doc_type: apiPageType
 ---
 
-# List cloudPcOnPremisesConnections
+# List onPremisesConnections
 
 Namespace: microsoft.graph
 

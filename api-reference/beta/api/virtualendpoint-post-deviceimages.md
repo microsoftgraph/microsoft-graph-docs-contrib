@@ -7,7 +7,7 @@ ms.prod: ""
 doc_type: apiPageType
 ---
 
-# Create cloudPcDeviceImages
+# Create cloudPcDeviceImage
 
 Namespace: microsoft.graph
 

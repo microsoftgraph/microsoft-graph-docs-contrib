@@ -7,7 +7,7 @@ ms.prod: ""
 doc_type: apiPageType
 ---
 
-# List cloudPcProvisioningPolicies
+# List provisioningPolicies
 
 Namespace: microsoft.graph
 

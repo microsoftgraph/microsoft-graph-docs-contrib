@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcProvis
 
 ## Examples
 
-### Example 1
+### Example 1: Get the properties of the specified provisioning policy
 
 #### Request
 
@@ -96,7 +96,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2
+### Example 2: Get the properties of the specified provisioning policy and expand on the assignments
 
 #### Request
 

@@ -7,7 +7,7 @@ ms.prod: ""
 doc_type: apiPageType
 ---
 
-# Get cloudPCs
+# Get cloudPC
 
 Namespace: microsoft.graph
 
