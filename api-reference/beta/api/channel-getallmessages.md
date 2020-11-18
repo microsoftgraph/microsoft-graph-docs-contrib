@@ -1,13 +1,13 @@
 ---
-title: "Get channel messages"
+title: "Get all channel messages"
 description: "Retrieve all messages in a team channel."
-author: "nkramer"
+author: "laujan"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get channel messages
+# Get all channel messages
 
 Namespace: microsoft.graph
 
