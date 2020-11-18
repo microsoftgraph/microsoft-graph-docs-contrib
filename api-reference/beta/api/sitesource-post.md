@@ -51,7 +51,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|site@odata.bind|String|Id of the site - site Id can be obtained from [site resource](../resources/site.md).  Using [Get a site resource by path](../api/site-getbypath.md) is likely the most straight forward approach.  The usage is {hostname}:/{relative-path}, for the site URL `https://contoso.sharepoint.com/sites/HumanResources`, the Graph request would be `https://graph.microsoft.com/v1.0/sites/contoso`.sharepoint.com:/sites/HumanResources. The id is the first GUID listed in the id field.|
+|site@odata.bind|String|ID of the site, which you can get from the [site](../resources/site.md) resource by using the [Get a site resource by path](../api/site-getbypath.md) method. The usage is {hostname}:/{relative-path}. For the site URL `https://contoso.sharepoint.com/sites/HumanResources`, the Microsoft Graph request would be `https://graph.microsoft.com/v1.0/sites/contoso`.sharepoint.com:/sites/HumanResources. The ID is the first GUID listed in the ID field.|
 
 ## Response
 
