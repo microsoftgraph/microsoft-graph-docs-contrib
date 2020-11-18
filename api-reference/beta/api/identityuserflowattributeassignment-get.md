@@ -1,17 +1,17 @@
 ---
-title: "Get userAttributeAssignments from b2cIdentityUserFlow"
-description: "Read the properties and relationships of an identityUserFlowAttributeAssignment object in a b2cIdentityUserFlow."
+title: "Get userAttributeAssignments"
+description: "Read the properties and relationships of an identityUserFlowAttributeAssignment object."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Get userAttributeAssignments from b2cIdentityUserFlow
+# Get identityUserFlowAttributeAssignment
 
 Namespace: microsoft.graph
 
-Read the properties and relationships of an [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) object from a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md).
+Read the properties and relationships of an [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) object.
 
 ## Permissions
 
@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ``` http
 GET /identity/b2cUserFlows/{id}/userAttributeAssignments/{id}
+GET /identity/b2xUserFlows/{id}/userAttributeAssignments/{id}
 ```
 
 ## Optional query parameters

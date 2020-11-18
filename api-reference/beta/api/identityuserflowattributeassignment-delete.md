@@ -1,17 +1,17 @@
 ---
-title: "Delete userAttributeAssignments from b2cIdentityUserFlow"
-description: "Delete an identityUserFlowAttributeAssignment object from a b2cIdentityUserFlow."
+title: "Delete userAttributeAssignment"
+description: "Delete an identityUserFlowAttributeAssignment object."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Delete userAttributeAssignments from b2cIdentityUserFlow
+# Delete userAttributeAssignment
 
 Namespace: microsoft.graph
 
-Delete an [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) object from a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md).
+Delete an [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) object.
 
 ## Permissions
 
@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ``` http
 DELETE /identity/b2cUserFlows/{id}/userAttributeAssignments/{id}
+DELETE /identity/b2xUserFlows/{id}/userAttributeAssignments/{id}
 ```
 
 ## Request headers

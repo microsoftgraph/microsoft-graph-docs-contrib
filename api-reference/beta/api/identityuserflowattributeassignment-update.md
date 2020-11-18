@@ -1,17 +1,17 @@
 ---
-title: "Update userAttributeAssignments in b2xIdentityUserFlow"
-description: "Update the properties of a userAttributeAssignments object in a b2xIdentityUserFlow."
+title: "Update identityUserFlowAttributeAssignment"
+description: "Update the properties of a userAttributeAssignments object."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Update userAttributeAssignments in b2xIdentityUserFlow
+# Update identityUserFlowAttributeAssignment
 
 Namespace: microsoft.graph
 
-Update the properties of a userAttributeAssignments object in a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md).
+Update the properties of a identityUserFlowAttributeAssignment object.
 
 ## Permissions
 
@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
+PATCH /identity/b2cUserFlows/{id}/userAttributeAssignments/{id}
 PATCH /identity/b2xUserFlows/{id}/userAttributeAssignments/{id}
 ```
 
@@ -57,7 +58,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `204 OK` response code.
+If successful, this method returns a `200 OK` response code and an updated [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) object in the response body.
 
 ## Examples
 
@@ -70,7 +71,7 @@ If successful, this method returns a `204 OK` response code.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userAttributeAssignments/{id}
+PATCH https://graph.microsoft.com/beta/identity/b2cUserFlows/{b2cIdentityUserFlowId}/userAttributeAssignments/{id}
 Content-Type: application/json
 
 {
