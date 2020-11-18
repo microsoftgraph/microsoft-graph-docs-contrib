@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
     "clientAppTypes",
     "locations",
     "platforms",
-    "signInRiskLevels"
+    "signInRiskLevels",
     "userRiskLevels"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessConditionSet",
