@@ -35,7 +35,7 @@ Review set queries are used to query and cull data stored in an eDiscovery [revi
 | id |String| The unique identifier of the query. Read-only.|
 | lastModifiedBy | [identitySet](/graph/api/resources/identityset) | The user who last modified the query. |
 | lastModifiedDateTime |DateTimeOffset | The date and time the query was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-| query | String | The query string in KQL (Keyword Query Language) query. Please refer to [Document metadata fields in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery) for more details.  This field maps directly to the keywords condition.  You can refine searches by using fields listed in the *searchable field name* paired with values, e.g. *subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016* |
+| query | String | The query string in KQL (Keyword Query Language) query. For details, see [Document metadata fields in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).  This field maps directly to the keywords condition.  You can refine searches by using fields listed in the *searchable field name* paired with values; for example, *subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016* |
 
 ## Relationships
 
