@@ -130,11 +130,6 @@ This resource supports:
 | **Schema extensions** |||
 | [Add schema extension values](/graph/extensibility-schema-groups) | None | Create a schema extension definition and then use it to add custom typed data to a resource. |
 | **Teamwork** |||
-|[List apps installed in team](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) collection | Lists apps installed in a team.|
-|[Get app installed in a team](../api/teamsappinstallation-get.md) | [teamsAppInstallation](teamsappinstallation.md) | Lists apps installed in a team.|
-|[Add app to team](../api/teamsappinstallation-add.md) |None | Adds (installs) an app to a team.|
-|[Remove app from team](../api/teamsappinstallation-delete.md) | None | Removes (uninstalls) an app from a team.|
-|[Upgrade app installed in team](../api/teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app installed in team.|
 |[List apps installed for user](../api/user-list-teamsappinstallation.md) | [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) collection | Lists apps installed in the personal scope of a user.|
 |[Gets the installed app for user](../api/user-get-teamsappinstallation.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Lists the specified app installed in the personal scope of a user. |
 |[Add app for user](../api/user-add-teamsappinstallation.md) | | Adds (installs) an app in the personal scope of a user.|
