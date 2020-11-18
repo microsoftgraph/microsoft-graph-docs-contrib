@@ -126,7 +126,7 @@ Content-type: application/json
 
 The following is an example of the request.
 
->**Note:** When filtering on **identities**, you must supply both **issuer** and **issuerAssignedId**.
+>**Note:** When filtering on **identities**, you must supply both **issuer** and **issuerAssignedId**. The value of **issuerAssignedId** must be the email address of the user account, not the user principal name (UPN). If a UPN is used, the response will be an empty list.
 
 
 # [HTTP](#tab/http)
