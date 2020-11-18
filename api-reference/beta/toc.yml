@@ -10564,7 +10564,7 @@ items:
                href: api/identityuserflowattribute-delete.md
       - name: Governance
         items:
-        - name: Access reviews
+        - name: Access reviews (groups)
           href: resources/accessreviewsv2-root.md
           items:
           - name: Access review schedule definition
@@ -10580,14 +10580,6 @@ items:
               href: api/accessreviewscheduledefinition-delete.md 
             - name: Update
               href: api/accessreviewscheduledefinition-update.md
-          - name: Access review schedule settings
-            href: resources/accessreviewschedulesettings.md
-          - name: Access review apply action
-            href: resources/accessreviewapplyaction.md
-          - name: Access review scope
-            href: resources/accessreviewscope.md
-          - name: Access review reviewer scope
-            href: resources/accessreviewreviewerscope.md
           - name: Access review instance
             href: resources/accessreviewinstance.md
             items:
@@ -10614,13 +10606,7 @@ items:
               href: api/accessreviewinstancedecisionitem-listpendingapproval.md
             - name: Update
               href: api/accessreviewinstancedecisionitem-update.md
-          - name: Access review instance decision item target
-            href: resources/accessreviewinstancedecisionitemtarget.md
-          - name: Access review instance decision item user target
-            href: resources/accessreviewinstancedecisionitemusertarget.md
-          - name: Access review instance decision item service principal target
-            href: resources/accessreviewinstancedecisionitemserviceprincipaltarget.md
-        - name: Access reviews
+        - name: Access reviews (all resources)
           href: resources/accessreviews-root.md
           items:
           - name: Access review
