@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [unifiedGroupSource](../resources/unifiedgroupsource.md) object.
+Delete a [unifiedGroupSource](../resources/unifiedgroupsource.md) object.
 
 ## Permissions
 
@@ -66,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/{ediscoveryC
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
