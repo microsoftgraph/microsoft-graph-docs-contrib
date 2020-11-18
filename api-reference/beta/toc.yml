@@ -9287,7 +9287,6 @@ items:
             href: resources/cloudpcmanagementassignmenttarget.md
           - name: Cloud PC management group assignment target
             href: resources/cloudpcmanagementgroupassignmenttarget.md
-              href: api/intune-tem-telecomexpensemanagementpartner-update.md        
     - name: Education
       items:
       - name: Overview
