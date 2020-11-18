@@ -135,9 +135,8 @@ Content-length: 285
 
 ### Response
 
-Here is an example of the response.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity.
 
->**Note:** Note: The response object shown here may be truncated for brevity.
 <!-- {
   "blockType": "response",
   "truncated": true,
