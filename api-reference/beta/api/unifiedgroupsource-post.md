@@ -52,11 +52,11 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |includedSources|sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
-|group@odata.bind|String|Id of the group - the group Id can be obtained from [List groups](../api/group-list.md).
+|group@odata.bind|String|ID of the group. To get the group ID, use the [List groups](../api/group-list.md) operation.|
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [unifiedGroupSource](../resources/unifiedgroupsource.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [unifiedGroupSource](../resources/unifiedgroupsource.md) object in the response body.
 
 ## Examples
 
