@@ -47,6 +47,24 @@
     {
       "ChangeList": [
         {
+          "Id": "b921111b-b37e-4043-ba34-c87145bcbfd6",
+          "ApiChange": "Method",
+          "ChangedApiName": "channel",
+          "ChangeType": "Addition",
+          "Description": "Added the following methods to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-v1.0) resource: [List members of channel](https://docs.microsoft.com/en-us/graph/api/channel-list-members?view=graph-rest-v1.0), [Get member of channel](https://docs.microsoft.com/en-us/graph/api/channel-get-members?view=graph-rest-v1.0) [Add member to channel](https://docs.microsoft.com/en-us/graph/api/channel-add-members?view=graph-rest-v1.0),  [Update role of member in channel](https://docs.microsoft.com/en-us/graph/api/channel-update-members?view=graph-rest-v1.0), [Delete member from channel](https://docs.microsoft.com/en-us/graph/api/channel-delete-members?view=graph-rest-v1.0).",        
+          "Target": "channel"
+        }
+      ],
+      "Id": "b921111b-b37e-4043-ba34-c87145bcbfd6",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-10-15T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e94cb262-641b-4376-9451-00741b7e48cc",
           "ApiChange": "Resource",
           "ChangedApiName": "completeMigration",
@@ -104,24 +122,7 @@
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
-    {
-      "ChangeList": [
-        {
-          "Id": "b921111b-b37e-4043-ba34-c87145bcbfd6",
-          "ApiChange": "Method",
-          "ChangedApiName": "channel",
-          "ChangeType": "Addition",
-          "Description": "Added the following methods to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-v1.0) resource: [List members of channel](https://docs.microsoft.com/en-us/graph/api/channel-list-members?view=graph-rest-v1.0), [Get member of channel](https://docs.microsoft.com/en-us/graph/api/channel-get-members?view=graph-rest-v1.0) [Add member to channel](https://docs.microsoft.com/en-us/graph/api/channel-add-members?view=graph-rest-v1.0),  [Update role of member in channel](https://docs.microsoft.com/en-us/graph/api/channel-update-members?view=graph-rest-v1.0), [Delete member from channel](https://docs.microsoft.com/en-us/graph/api/channel-delete-members?view=graph-rest-v1.0).",        
-          "Target": "channel"
-        }
-      ],
-      "Id": "b921111b-b37e-4043-ba34-c87145bcbfd6",
-      "Cloud": "prd",
-      "Version": "v1.0",
-      "CreatedDateTime": "2020-10-15T00:00:00",
-      "WorkloadArea": "Teamwork",
-      "SubArea": ""
-    },
+    
     {
       "ChangeList": [
         {
