@@ -27,5 +27,3 @@ Scope of the group policy setting.
 
 
 
-
-

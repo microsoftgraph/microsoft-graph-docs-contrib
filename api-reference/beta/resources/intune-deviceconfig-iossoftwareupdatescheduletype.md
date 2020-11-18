@@ -28,5 +28,3 @@ Update schedule type for iOS software updates.
 
 
 
-
-

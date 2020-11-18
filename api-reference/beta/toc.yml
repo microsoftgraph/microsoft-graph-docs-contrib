@@ -1,7 +1,7 @@
 name: Reference
 items:
   - name: Overview of Microsoft Graph
-    href: ./overview.md
+    href: /graph/overview
   - name: Get auth tokens
     items:
     - name: Overview
@@ -40,12 +40,14 @@ items:
         href: /graph/webhooks?context=graph/api/beta
       - name: Tutorial
         href: /learn/modules/msgraph-changenotifications-trackchanges
-      - name: Missing Outlook notifications (preview)
-        href: /graph/webhooks-outlook-authz?context=graph/api/beta
+      - name: Missing change notifications
+        href: /graph/webhooks-lifecycle
       - name: Notifications with resource data
         href: /graph/webhooks-with-resource-data?context=graph/api/beta
       - name: Get notifications delivered different ways (preview)
         href: /graph/change-notifications-delivery?context=graph/api/beta
+      - name: Get change notifications for chat and channel messages
+        href: /graph/teams-changenotifications-chatmessage?context=graph/api/beta
     - name: Change tracking
       displayname: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD
       items:
@@ -329,8 +331,9 @@ items:
           - name: Update
             href: api/iteminsightssettings-update.md
       - name: Mail
-        href: resources/message.md
         items:
+        - name: Message
+          href: resources/message.md
         - name: Create mail folder
           href: api/user-post-mailfolders.md
         - name: Create message
@@ -352,8 +355,9 @@ items:
         - name: Send mail
           href: api/user-sendmail.md
       - name: Notes
-        href: resources/onenote.md
         items:
+        - name: Onenote
+          href: resources/onenote.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
         - name: List notebooks
@@ -454,6 +458,18 @@ items:
           href: api/user-upgrade-teamsappinstallation.md
         - name: Uninstall app
           href: api/user-delete-teamsappinstallation.md
+      - name: To-do tasks
+        items:
+        - name: Task
+          href: resources/todotask.md
+        - name: Create task
+          href: api/todotasklist-post-tasks.md
+        - name: Create task list
+          href: api/todo-post-lists.md
+        - name: List tasks
+          href: api/todotasklist-list-tasks.md
+        - name: List task lists
+          href: api/todo-list-lists.md
       - name: User settings
         items:
         - name: User settings
@@ -1594,21 +1610,23 @@ items:
         - name: Print document
           href: resources/printdocument.md
           items:
-          - name: Upload data
-            href: api/printdocument-uploaddata.md
+          - name: Create upload session
+            href: api/printdocument-createuploadsession.md
           - name: Download binary file
             href: api/printdocument-get-file.md
         - name: Print job
           href: resources/printjob.md
           items:
-          - name: Create
-            href: api/printer-post-jobs.md
+          - name: Create job for a printer
+            href: api/printer-post-jobs.md            
+          - name: Create job for a printer share
+            href: api/printershare-post-jobs.md
           - name: Get
             href: api/printjob-get.md
           - name: Start
-            href: api/printjob-startprintjob.md
+            href: api/printjob-start.md
           - name: Cancel
-            href: api/printjob-cancelprintjob.md
+            href: api/printjob-cancel.md
         - name: Print operation
           href: resources/printoperation.md
           items:
@@ -1627,8 +1645,6 @@ items:
             href: api/printer-update.md
           - name: Delete
             href: api/printer-delete.md
-          - name: Get capabilities
-            href: api/printer-getcapabilities.md
           - name: Get task trigger
             href: api/printtasktrigger-get.md
           - name: List connectors
@@ -1637,26 +1653,14 @@ items:
             href: api/printer-list-jobs.md
           - name: Create print job
             href: api/printer-post-jobs.md
-          - name: List allowed users
-            href: api/printer-list-allowedusers.md
-          - name: List allowed groups
-            href: api/printer-list-allowedgroups.md
           - name: List task triggers
             href: api/printer-list-tasktriggers.md
-          - name: Create allowed group
-            href: api/printer-post-allowedgroups.md
-          - name: Create allowed user
-            href: api/printer-post-allowedusers.md
           - name: Create task trigger
             href: api/printer-post-tasktriggers.md
-          - name: Delete allowed group
-            href: api/printer-delete-allowedgroup.md
-          - name: Delete allowed user
-            href: api/printer-delete-alloweduser.md
           - name: Delete task trigger
             href: api/printer-delete-tasktrigger.md
-          - name: Reset defaults
-            href: api/printer-resetdefaults.md
+          - name: Restore factory defaults
+            href: api/printer-restorefactorydefaults.md
         - name: Printer share
           href: resources/printershare.md
           items:
@@ -1770,6 +1774,8 @@ items:
               href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
             - name: createToken action
               href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
+          - name: Android device owner enrollment token type
+            href: resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md
           - name: Android enrollment company code
             href: resources/intune-androidforwork-androidenrollmentcompanycode.md
           - name: Android for Work app
@@ -2170,6 +2176,8 @@ items:
               href: api/intune-apps-macoslobapp-delete.md
             - name: Update
               href: api/intune-apps-macoslobapp-update.md
+          - name: macOS LOB app assignment settings
+            href: resources/intune-apps-macoslobappassignmentsettings.md
           - name: macOS LOB child app
             href: resources/intune-apps-macoslobchildapp.md
           - name: macOS mdatp app
@@ -3433,6 +3441,10 @@ items:
               href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-delete.md
             - name: Update
               href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-update.md
+          - name: Android device owner kiosk customization status bar
+            href: resources/intune-deviceconfig-androiddeviceownerkioskcustomizationstatusbar.md
+          - name: Android device owner kiosk customization system navigation
+            href: resources/intune-deviceconfig-androiddeviceownerkioskcustomizationsystemnavigation.md
           - name: Android device owner kiosk mode folder icon
             href: resources/intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md
           - name: Android device owner kiosk mode icon size
@@ -4081,16 +4093,10 @@ items:
               href: api/intune-deviceconfig-carttoclassassociation-delete.md
             - name: Update
               href: api/intune-deviceconfig-carttoclassassociation-update.md
-          - name: Certificate destination store
-            href: resources/intune-deviceconfig-certificatedestinationstore.md
           - name: Certificate issuance states
             href: resources/intune-deviceconfig-certificateissuancestates.md
           - name: Certificate revocation status
             href: resources/intune-deviceconfig-certificaterevocationstatus.md
-          - name: Certificate store
-            href: resources/intune-deviceconfig-certificatestore.md
-          - name: Certificate validity period scale
-            href: resources/intune-deviceconfig-certificatevalidityperiodscale.md
           - name: Change uefi settings permission
             href: resources/intune-deviceconfig-changeuefisettingspermission.md
           - name: Code
@@ -4497,8 +4503,6 @@ items:
             href: resources/intune-deviceconfig-encryptionreportpolicydetails.md
           - name: Encryption state
             href: resources/intune-deviceconfig-encryptionstate.md
-          - name: Extended key usage
-            href: resources/intune-deviceconfig-extendedkeyusage.md
           - name: File vault state
             href: resources/intune-deviceconfig-filevaultstate.md
           - name: Firewall certificate revocation list check method type
@@ -4879,8 +4883,6 @@ items:
               href: api/intune-grouppolicy-grouppolicyuploadedpresentation-delete.md
             - name: Update
               href: api/intune-grouppolicy-grouppolicyuploadedpresentation-update.md
-          - name: Hash algorithms
-            href: resources/intune-deviceconfig-hashalgorithms.md
           - name: Ink access setting
             href: resources/intune-deviceconfig-inkaccesssetting.md
           - name: Intended purpose
@@ -5072,6 +5074,8 @@ items:
             href: resources/intune-deviceconfig-iosnetworkusagerule.md
           - name: iOS notification alert type
             href: resources/intune-deviceconfig-iosnotificationalerttype.md
+          - name: iOS notification preview visibility
+            href: resources/intune-deviceconfig-iosnotificationpreviewvisibility.md
           - name: iOS notification settings
             href: resources/intune-deviceconfig-iosnotificationsettings.md
           - name: iOS PKCS certificate profile
@@ -5206,16 +5210,10 @@ items:
             href: resources/intune-deviceconfig-keyintegervaluepair.md
           - name: Key real value pair
             href: resources/intune-deviceconfig-keyrealvaluepair.md
-          - name: Key size
-            href: resources/intune-deviceconfig-keysize.md
-          - name: Key storage provider option
-            href: resources/intune-deviceconfig-keystorageprovideroption.md
           - name: Key string value pair
             href: resources/intune-deviceconfig-keystringvaluepair.md
           - name: Key typed value pair
             href: resources/intune-deviceconfig-keytypedvaluepair.md
-          - name: Key usages
-            href: resources/intune-deviceconfig-keyusages.md
           - name: Key value
             href: resources/intune-deviceconfig-keyvalue.md
           - name: LAN manager authentication level
@@ -5236,8 +5234,8 @@ items:
             href: resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md
           - name: macOS apple event receiver
             href: resources/intune-deviceconfig-macosappleeventreceiver.md
-          - name: macOS associated domains key/value pair
-            href: resources/intune-deviceconfig-macosassociateddomainskeyvaluepair.md
+          - name: macOS associated domains item
+            href: resources/intune-deviceconfig-macosassociateddomainsitem.md
           - name: macOS Azure ad single sign on extension
             href: resources/intune-deviceconfig-macosazureadsinglesignonextension.md
           - name: macOS certificate profile base
@@ -5420,8 +5418,68 @@ items:
               href: api/intune-deviceconfig-macosscepcertificateprofile-update.md
           - name: macOS single sign on extension
             href: resources/intune-deviceconfig-macossinglesignonextension.md
+          - name: macOS software update account summary
+            href: resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-list.md
+            - name: Get
+              href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-get.md
+            - name: Create
+              href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-update.md
+          - name: macOS software update behavior
+            href: resources/intune-deviceconfig-macossoftwareupdatebehavior.md
+          - name: macOS software update category
+            href: resources/intune-deviceconfig-macossoftwareupdatecategory.md
+          - name: macOS software update category summary
+            href: resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-list.md
+            - name: Get
+              href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-get.md
+            - name: Create
+              href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-update.md
+          - name: macOS software update configuration
+            href: resources/intune-deviceconfig-macossoftwareupdateconfiguration.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-macossoftwareupdateconfiguration-list.md
+            - name: Get
+              href: api/intune-deviceconfig-macossoftwareupdateconfiguration-get.md
+            - name: Create
+              href: api/intune-deviceconfig-macossoftwareupdateconfiguration-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-macossoftwareupdateconfiguration-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-macossoftwareupdateconfiguration-update.md
           - name: macOS software update delay policy
             href: resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md
+          - name: macOS software update schedule type
+            href: resources/intune-deviceconfig-macossoftwareupdatescheduletype.md
+          - name: macOS software update state
+            href: resources/intune-deviceconfig-macossoftwareupdatestate.md
+          - name: macOS software update state summary
+            href: resources/intune-deviceconfig-macossoftwareupdatestatesummary.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-macossoftwareupdatestatesummary-list.md
+            - name: Get
+              href: api/intune-deviceconfig-macossoftwareupdatestatesummary-get.md
+            - name: Create
+              href: api/intune-deviceconfig-macossoftwareupdatestatesummary-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-macossoftwareupdatestatesummary-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-macossoftwareupdatestatesummary-update.md
           - name: macOS system extension
             href: resources/intune-deviceconfig-macossystemextension.md
           - name: macOS system extension type
@@ -5757,8 +5815,6 @@ items:
             href: resources/intune-deviceconfig-specifiedcaptivenetworkplugins.md
           - name: State management setting
             href: resources/intune-deviceconfig-statemanagementsetting.md
-          - name: Subject alternative name type
-            href: resources/intune-deviceconfig-subjectalternativenametype.md
           - name: Subject name format
             href: resources/intune-deviceconfig-subjectnameformat.md
           - name: Unsupported device configuration
@@ -5856,6 +5912,8 @@ items:
             href: resources/intune-deviceconfig-welcomescreenmeetinginformation.md
           - name: Wi-Fi authentication method
             href: resources/intune-deviceconfig-wifiauthenticationmethod.md
+          - name: Wi-Fi authentication type
+            href: resources/intune-deviceconfig-wifiauthenticationtype.md
           - name: Wi-Fi proxy setting
             href: resources/intune-deviceconfig-wifiproxysetting.md
           - name: Wi-Fi security type
@@ -6699,6 +6757,23 @@ items:
               href: api/intune-devices-devicecompliancescriptrunsummary-get.md
             - name: Update
               href: api/intune-devices-devicecompliancescriptrunsummary-update.md
+          - name: Device custom attribute shell script
+            href: resources/intune-devices-devicecustomattributeshellscript.md
+            items:
+            - name: List
+              href: api/intune-devices-devicecustomattributeshellscript-list.md
+            - name: Get
+              href: api/intune-devices-devicecustomattributeshellscript-get.md
+            - name: Create
+              href: api/intune-devices-devicecustomattributeshellscript-create.md
+            - name: Delete
+              href: api/intune-devices-devicecustomattributeshellscript-delete.md
+            - name: Update
+              href: api/intune-devices-devicecustomattributeshellscript-update.md
+            - name: assign action
+              href: api/intune-devices-devicecustomattributeshellscript-assign.md
+          - name: Device custom attribute value type
+            href: resources/intune-devices-devicecustomattributevaluetype.md
           - name: Device enrollment failure reason
             href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
           - name: Device exchange access state summary
@@ -7585,6 +7660,8 @@ items:
             href: resources/intune-notification-notificationtemplatebrandingoptions.md
           - name: Os version count
             href: resources/intune-devices-osversioncount.md
+          - name: Platform type
+            href: resources/intune-esim-platformtype.md
           - name: Remediation state
             href: resources/intune-devices-remediationstate.md
           - name: Remote action
@@ -7646,6 +7723,8 @@ items:
               href: api/intune-deviceintent-securitybaselinecategorystatesummary-update.md
           - name: Security baseline compliance state
             href: resources/intune-deviceintent-securitybaselinecompliancestate.md
+          - name: Security baseline contributing policy
+            href: resources/intune-deviceintent-securitybaselinecontributingpolicy.md
           - name: Security baseline device state
             href: resources/intune-deviceintent-securitybaselinedevicestate.md
             items:
@@ -7659,6 +7738,8 @@ items:
               href: api/intune-deviceintent-securitybaselinedevicestate-delete.md
             - name: Update
               href: api/intune-deviceintent-securitybaselinedevicestate-update.md
+          - name: Security baseline policy source type
+            href: resources/intune-deviceintent-securitybaselinepolicysourcetype.md
           - name: Security baseline state summary
             href: resources/intune-deviceintent-securitybaselinestatesummary.md
             items:
@@ -7929,6 +8010,8 @@ items:
             href: resources/intune-troubleshooting-windowsautopilotdeploymentstate.md
           - name: Windows autopilot enrollment type
             href: resources/intune-troubleshooting-windowsautopilotenrollmenttype.md
+          - name: Windows defender product status
+            href: resources/intune-devices-windowsdefenderproductstatus.md
           - name: Windows defender scan action result
             href: resources/intune-devices-windowsdefenderscanactionresult.md
           - name: Windows device account
@@ -8361,6 +8444,19 @@ items:
             href: resources/intune-onboarding-compliancemanagementpartnerassignment.md
           - name: Device and app management data
             href: resources/intune-onboarding-deviceandappmanagementdata.md
+          - name: Device comanagement authority configuration
+            href: resources/intune-onboarding-devicecomanagementauthorityconfiguration.md
+            items:
+            - name: List
+              href: api/intune-onboarding-devicecomanagementauthorityconfiguration-list.md
+            - name: Get
+              href: api/intune-onboarding-devicecomanagementauthorityconfiguration-get.md
+            - name: Create
+              href: api/intune-onboarding-devicecomanagementauthorityconfiguration-create.md
+            - name: Delete
+              href: api/intune-onboarding-devicecomanagementauthorityconfiguration-delete.md
+            - name: Update
+              href: api/intune-onboarding-devicecomanagementauthorityconfiguration-update.md
           - name: Device enrollment limit configuration
             href: resources/intune-onboarding-deviceenrollmentlimitconfiguration.md
             items:
@@ -8716,6 +8812,12 @@ items:
               href: api/intune-shared-androidmanagedappprotection-haspayloadlinks.md
           - name: Android managed store app assignment settings
             href: resources/intune-shared-androidmanagedstoreappassignmentsettings.md
+          - name: Certificate destination store
+            href: resources/intune-shared-certificatedestinationstore.md
+          - name: Certificate store
+            href: resources/intune-shared-certificatestore.md
+          - name: Certificate validity period scale
+            href: resources/intune-shared-certificatevalidityperiodscale.md
           - name: Company portal action
             href: resources/intune-shared-companyportalaction.md
           - name: Company portal blocked action
@@ -8817,6 +8919,29 @@ items:
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
+          - name: Device management reports
+            href: resources/intune-shared-devicemanagementreports.md
+            items:
+            - name: Get
+              href: api/intune-reporting-devicemanagementreports-get.md
+            - name: Update
+              href: api/intune-reporting-devicemanagementreports-update.md
+            - name: getDeviceNonComplianceReport action
+              href: api/intune-reporting-devicemanagementreports-getdevicenoncompliancereport.md
+            - name: getPolicyNonComplianceReport action
+              href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancereport.md
+            - name: getPolicyNonComplianceMetadata action
+              href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancemetadata.md
+            - name: getPolicyNonComplianceSummaryReport action
+              href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancesummaryreport.md
+            - name: getSettingNonComplianceReport action
+              href: api/intune-reporting-devicemanagementreports-getsettingnoncompliancereport.md
+            - name: getReportFilters action
+              href: api/intune-reporting-devicemanagementreports-getreportfilters.md
+            - name: getHistoricalReport action
+              href: api/intune-reporting-devicemanagementreports-gethistoricalreport.md
+            - name: getCachedReport action
+              href: api/intune-reporting-devicemanagementreports-getcachedreport.md
           - name: Device management script
             href: resources/intune-shared-devicemanagementscript.md
             items:
@@ -8846,8 +8971,12 @@ items:
             href: resources/intune-shared-enrollmentstate.md
           - name: Exclusion group assignment target
             href: resources/intune-shared-exclusiongroupassignmenttarget.md
+          - name: Extended key usage
+            href: resources/intune-shared-extendedkeyusage.md
           - name: Group assignment target
             href: resources/intune-shared-groupassignmenttarget.md
+          - name: Hash algorithms
+            href: resources/intune-shared-hashalgorithms.md
           - name: Install intent
             href: resources/intune-shared-installintent.md
           - name: iOS LOB app assignment settings
@@ -8894,6 +9023,12 @@ items:
             href: resources/intune-shared-ipv4range.md
           - name: IPv6 range
             href: resources/intune-shared-ipv6range.md
+          - name: Key size
+            href: resources/intune-shared-keysize.md
+          - name: Key storage provider option
+            href: resources/intune-shared-keystorageprovideroption.md
+          - name: Key usages
+            href: resources/intune-shared-keyusages.md
           - name: Key/value pair
             href: resources/intune-shared-keyvaluepair.md
           - name: macOS VPP app assignment settings
@@ -8980,6 +9115,8 @@ items:
             href: resources/intune-shared-saveduistategenerationoptions.md
           - name: Setting source type
             href: resources/intune-shared-settingsourcetype.md
+          - name: Subject alternative name type
+            href: resources/intune-shared-subjectalternativenametype.md
           - name: Targeted managed app configuration
             href: resources/intune-shared-targetedmanagedappconfiguration.md
             items:
@@ -9086,7 +9223,7 @@ items:
             - name: Delete
               href: api/intune-tem-telecomexpensemanagementpartner-delete.md
             - name: Update
-              href: api/intune-tem-telecomexpensemanagementpartner-update.md
+              href: api/intune-tem-telecomexpensemanagementpartner-update.md        
     - name: Education
       items:
       - name: Overview
@@ -10114,21 +10251,28 @@ items:
           items:
           - name: Get data policy operation
             href: api/datapolicyoperation-get.md
-        - name: Delegated permission grants
-          href: resources/oauth2permissiongrant.md
-          items:
-          - name: List delegated permission grants
-            href: api/oauth2permissiongrant-list.md
-          - name: Get delegated permission grants
-            href: api/oauth2permissiongrant-get.md
-          - name: Create delegated permission grant
-            href: api/oauth2permissiongrant-post.md
-          - name: Update delegated permission grant
-            href: api/oauth2permissiongrant-update.md
-          - name: Delete delegated permission grant
-            href: api/oauth2permissiongrant-delete.md
-          - name: Get delta
-            href: api/oauth2permissiongrant-delta.md
+          - name: Delegated permission grants
+            href: resources/oauth2permissiongrant.md
+            items:
+            - name: List delegated permission grants
+              href: api/oauth2permissiongrant-list.md
+            - name: Get delegated permission grants
+              href: api/oauth2permissiongrant-get.md
+            - name: Create delegated permission grant
+              href: api/oauth2permissiongrant-post.md
+            - name: Update delegated permission grant
+              href: api/oauth2permissiongrant-update.md
+            - name: Delete delegated permission grant
+              href: api/oauth2permissiongrant-delete.md
+            - name: Get delta
+              href: api/oauth2permissiongrant-delta.md
+            - name: Organization
+              href: resources/organization.md
+              items:
+              - name: Get org details
+                href: api/organization-get.md
+              - name: Update org details
+                href: api/organization-update.md
         - name: Identity protection
           href: resources/identityprotection-root.md
           items:
@@ -10208,7 +10352,41 @@ items:
           href: resources/invitation.md
           items:
           - name: Create invitation
-            href: api/invitation-post.md
+            href: api/invitation-post.md        
+        - name: Organizational branding
+          href: resources/organizationalbrandingproperties.md
+          items:
+          - name: Create
+            href: api/organizationalbrandingproperties-create.md
+          - name: Get 
+            href: api/organizationalbrandingproperties-get.md
+          - name: Update
+            href: api/organizationalbrandingproperties-update.md
+          - name: Delete
+            href: api/organizationalbrandingproperties-delete.md
+          - name: Create localized 
+            href: api/organizationalbrandingpropertieslocalization-create.md
+          - name: Get localized
+            href: api/organizationalbrandingpropertieslocalization-get.md
+          - name: Update localized
+            href: api/organizationalbrandingpropertieslocalization-update.md
+          - name: Delete localized
+            href: api/organizationalbrandingpropertieslocalization-delete.md 
+        - name: Organizational contacts
+          href: resources/orgcontact.md
+          items:
+          - name: List org contacts
+            href: api/orgcontact-list.md
+          - name: Get org contact
+            href: api/orgcontact-get.md
+          - name: Update org contact
+            href: api/orgcontact-update.md
+          - name: Delete org contact
+            href: api/orgcontact-delete.md
+          - name: Get org contact delta
+            href: api/orgcontact-delta.md
+          - name: Groups
+            href: resources/group.md       
         - name: Policy
           href: resources/policy-overview.md
           items:
@@ -10420,9 +10598,65 @@ items:
                href: api/b2xidentityuserflow-post-identityproviders.md
              - name: Remove identity provider
                href: api/b2xidentityuserflow-delete-identityproviders.md
+          - name: User flow attributes
+            items:
+             - name: User flow attribute
+               href: resources/identityuserflowattribute.md
+             - name: List
+               href: api/identityuserflowattribute-list.md
+             - name: Create
+               href: api/identityuserflowattribute-post.md
+             - name: Get
+               href: api/identityuserflowattribute-get.md
+             - name: Update
+               href: api/identityuserflowattribute-update.md
+             - name: Delete
+               href: api/identityuserflowattribute-delete.md
       - name: Governance
         items:
-        - name: Access reviews
+        - name: Access reviews (groups)
+          href: resources/accessreviewsv2-root.md
+          items:
+          - name: Access review schedule definition
+            href: resources/accessreviewscheduledefinition.md
+            items:
+            - name: List
+              href: api/accessreviewscheduledefinition-list.md
+            - name: Get
+              href: api/accessreviewscheduledefinition-get.md
+            - name: Create
+              href: api/accessreviewscheduledefinition-create.md
+            - name: Delete
+              href: api/accessreviewscheduledefinition-delete.md 
+            - name: Update
+              href: api/accessreviewscheduledefinition-update.md
+          - name: Access review instance
+            href: resources/accessreviewinstance.md
+            items:
+            - name: List
+              href: api/accessreviewinstance-list.md
+            - name: Get
+              href: api/accessreviewinstance-get.md
+            - name: List pending approval
+              href: api/accessreviewinstance-pendingaccessreviewinstances.md
+            - name: Send reminder
+              href: api/accessreviewinstance-sendreminder.md
+            - name: Stop
+              href: api/accessreviewinstance-stop.md
+            - name: Accept recommendations
+              href: api/accessreviewinstance-acceptrecommendations.md
+            - name: Apply decisions
+              href: api/accessreviewinstance-applydecisions.md
+          - name: Access review instance decision item
+            href: resources/accessreviewinstancedecisionitem.md
+            items:
+            - name: List
+              href: api/accessreviewinstancedecisionitem-list.md
+            - name: List pending approval
+              href: api/accessreviewinstancedecisionitem-listpendingapproval.md
+            - name: Update
+              href: api/accessreviewinstancedecisionitem-update.md
+        - name: Access reviews (all resources)
           href: resources/accessreviews-root.md
           items:
           - name: Access review
@@ -12140,7 +12374,7 @@ items:
         href: resources/teams-api-overview.md
       - name: Team
         href: resources/team.md
-        items:
+        items:       
         - name: Create team
           href: api/team-post.md
         - name: Create team from group
@@ -12173,6 +12407,8 @@ items:
           href: api/team-get-photo.md
         - name: Update team photo
           href: api/profilephoto-update.md
+        - name: Complete migration for team
+          href: api/team-completemigration.md
       - name: Group (team)
         href: resources/group.md
         items:
@@ -12229,6 +12465,8 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
+        - name: Complete migration for channel
+          href: api/channel-completemigration.md
         - name: Get files folder
           href: api/channel-get-filesfolder.md
         - name: List channel messages
@@ -12291,6 +12529,32 @@ items:
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
+      - name: Conversation member
+        href: resources/conversationmember.md
+        items:
+        - name: List members
+          href: api/conversationmember-list.md
+        - name: Get member
+          href: api/conversationmember-get.md
+        - name: Add member
+          href: api/conversationmember-add.md
+        - name: Update member
+          href: api/conversationmember-update.md
+        - name: Delete member
+          href: api/conversationmember-delete.md
+      - name: Azure AD user conversation member
+        href: resources/aaduserconversationmember.md
+        items:
+        - name: List members
+          href: api/conversationmember-list.md
+        - name: Get member
+          href: api/conversationmember-get.md
+        - name: Add member
+          href: api/conversationmember-add.md
+        - name: Update member
+          href: api/conversationmember-update.md
+        - name: Delete member
+          href: api/conversationmember-delete.md
       - name: App catalog
         items:
         - name: App in catalog
@@ -12526,7 +12790,7 @@ items:
           href: api/onenote-list-notebooks.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
-    - name: To-do tasks (preview)
+    - name: To-do tasks
       displayName: Microsoft To Do
       items:
       - name: Overview
