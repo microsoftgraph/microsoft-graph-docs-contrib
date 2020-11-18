@@ -62,7 +62,7 @@ In the request body, supply the values for relevant fields that should be update
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
-#####equest
+##### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
