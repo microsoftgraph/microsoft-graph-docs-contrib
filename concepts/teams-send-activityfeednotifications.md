@@ -251,9 +251,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-## Customizing the how the notifications alert you
+## Customizing how the notifications alert you
 
-As a user of Microsoft Teams, user can customize the notifications they see in their feed, as a pop-up etc. Notifications generated through activity feed APIs follow the same suit. Users can choose how they are notified about a notification. To customize this, you can go to settings in Microsoft Teams and customize the notification settings. Teams apps will appear in the list for user to choose from as shown below
+As a user of Microsoft Teams, user can customize the notifications they see in their feed, as a banner etc. Notifications generated through activity feed APIs follow the same suit. Users can choose how they are notified about a notification. To customize this, you can go to settings in Microsoft Teams and customize the notification settings. Teams apps will appear in the list for user to choose from, as shown below
 
 ![NotificationSettingsInTeams](images/teams-activityfeednotifications/notificationsettings.png)
 
