@@ -1142,11 +1142,6 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.participantInfo",
     "identity": {
       "@odata.type": "#microsoft.graph.identitySet",
-      "application": {
-        "@odata.type": "#microsoft.graph.identity",
-        "displayName": "Calling Bot",
-        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
-      },
       "applicationInstance": {
         "@odata.type": "#microsoft.graph.identity",
         "displayName": "Calling Bot",
@@ -1165,7 +1160,6 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.identitySet",
         "phone": {
           "@odata.type": "#microsoft.graph.identity",
-          "displayName": "+12345678901",
           "id": "+12345678901"
         }
       }
@@ -1223,11 +1217,6 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.participantInfo",
     "identity": {
       "@odata.type": "#microsoft.graph.identitySet",
-      "application": {
-        "@odata.type": "#microsoft.graph.identity",
-        "displayName": "Calling Bot",
-        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
-      },
       "applicationInstance": {
         "@odata.type": "#microsoft.graph.identity",
         "displayName": "Calling Bot",
@@ -1246,7 +1235,6 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.identitySet",
         "phone": {
           "@odata.type": "#microsoft.graph.identity",
-          "displayName": "+12345678901",
           "id": "+12345678901"
         }
       },
