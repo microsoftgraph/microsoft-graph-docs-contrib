@@ -53,7 +53,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description** |
 |:---|:---|:---|
-|Addition|beta|Added the [virtualEndpoint](/graph/api/resources/virtualEndpoint?view=graph-rest-beta&preserve-view=true) resource type|
 |Addition|beta|Added the [cloudPcOnPremisesConnection](/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta&preserve-view=true) resource type|
 |Addition|beta|Added the [cloudPcDeviceImage](/graph/api/resources/cloudPcDeviceImage?view=graph-rest-beta&preserve-view=true) resource type|
 |Addition|beta|Added the [cloudPC](/graph/api/resources/cloudPC?view=graph-rest-beta&preserve-view=true) resource type|
@@ -71,6 +70,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the [reprovision](/graph/api/cloudPC-reprovision?view=graph-rest-beta&preserve-view=true) method to the [cloudPC](/graph/api/resources/cloudPC?view=graph-rest-beta&preserve-view=true) resource|
 |Addition|beta|Added the [getEffectivePermissions](/graph/api/virtualEndpoint-getEffectivePermissions?view=graph-rest-beta&preserve-view=true) method to the [virtualEndpoint](/graph/api/resources/virtualEndpoint?view=graph-rest-beta&preserve-view=true) resource|
 |Addition|beta|Added the [getSourceImages](/graph/api/cloudPcDeviceImage-getSourceImages?view=graph-rest-beta&preserve-view=true) method to the [cloudPcDeviceImage](/graph/api/resources/cloudPcDeviceImage?view=graph-rest-beta&preserve-view=true) resource|
+
 
 ### Devices and apps | Corporate management
 
@@ -113,6 +113,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added [acceptRecommendations](/graph/api/accessreviewinstance-acceptrecommendations?view=graph-rest-beta&preserve-view=true), [applyDecisions](/graph/api/accessreviewinstance-applydecisions?view=graph-rest-beta&preserve-view=true), [get](/graph/api/accessreviewinstance-get?view=graph-rest-beta&preserve-view=true), [list](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true), [list pendingAccessReviewInstances](/graph/api/accessreviewinstance-pendingaccessreviewinstances?view=graph-rest-beta&preserve-view=true), [sendReminder](/graph/api/accessreviewinstance-sendreminder?view=graph-rest-beta&preserve-view=true), [stop](/graph/api/accessreviewinstance-stop?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewInstance](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true) resource.|
 |Addition|beta|Added [list](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true), [listPendingApproval](/graph/api/accessreviewinstancedecisionitem-listpendingapproval?view=graph-rest-beta&preserve-view=true), [update](/graph/api/accessreviewinstancedecisionitem-update?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewInstanceDecisionItem](/graph/api/resources/accessreviewinstancedecisionitem.md) resource.|
 |Addition|beta|Added [create](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true), [delete](/graph/api/accessreviewscheduledefinition-delete?view=graph-rest-beta&preserve-view=true), [get](/graph/api/accessreviewscheduledefinition-get?view=graph-rest-beta&preserve-view=true), [list](/graph/api/accessreviewscheduledefinition-list?view=graph-rest-beta&preserve-view=true), [update](/graph/api/accessreviewscheduledefinition-update?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) resource.|
+
+### Identity and access | Identity and sign-in
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition|v1.0|Added the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true) resource type.|
 
 ### Search
 
@@ -237,7 +243,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the [b2cAuthenticationMethodsPolicy](/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta&preserve-view=true) resource type and the following opertations: [Get b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta&preserve-view=true) and [Update b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta&preserve-view=true).|
 |Addition|beta|Added the **Policy.ReadWrite.AuthenticationMethod** permission to the [Permissions reference](permissions-reference.md#policy-permissions).|
 |Addition|v1.0|Added the [permissionGrantPolicy](/graph/api/resources/permissiongrantpolicy?view=graph-rest-1.0&preserve-view=true) resource type. Permission grant policies describe the conditions which must be met for permissions to be granted to apps.|
-|Addition|v1.0|Added the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-1.0) resource type.|
+|Addition|v1.0|Added the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true) resource type.|
 
 ### Teamwork
 
