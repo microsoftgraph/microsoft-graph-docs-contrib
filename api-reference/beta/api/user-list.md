@@ -121,7 +121,7 @@ Content-type: application/json
 Find a user account using a sign-in name (also known as a local account).
 
 >[!NOTE]
->When filtering on **identities**, you must supply both **issuer** and **issuerAssignedId**.
+>When filtering on **identities**, you must supply both **issuer** and **issuerAssignedId**. The value of **issuerAssignedId** must be the email address of the user account, not the user principal name (UPN). If a UPN is used, the response will be an empty list.
 
 #### Request
 
