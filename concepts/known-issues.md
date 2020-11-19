@@ -204,6 +204,10 @@ You must first create the resource instance and then do a `PATCH` to that instan
 
 Directory resources, such as **device**, **group** and **user**, currently limit the total number of schema extension property values that can be set on a resource instance, to 100.
 
+### Updating a schemaExtension definition using Microsoft Graph Explorer
+
+When using `PATCH` to update a schemaExtension using Graph Explorer, you must specify the **owner** property and set it to its current `appid` value (which will need to be an `appId` of an application that you own). This is also the case for any client application whose `appId` is not the same as the **owner**.
+
 ### Filtering on schema extension properties not supported on all entity types
 
 Filtering on schema extension properties (using the `$filter` expression) is not supported for Outlook entity types - **contact**, **event**, **message**, or **post**.

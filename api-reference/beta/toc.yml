@@ -10004,10 +10004,6 @@ items:
             href: api/orgcontact-list.md
           - name: Get org contact
             href: api/orgcontact-get.md
-          - name: Update org contact
-            href: api/orgcontact-update.md
-          - name: Delete org contact
-            href: api/orgcontact-delete.md
           - name: Get org contact delta
             href: api/orgcontact-delta.md
           - name: Groups
