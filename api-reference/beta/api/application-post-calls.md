@@ -1121,6 +1121,29 @@ Content-Type: application/json
 
 > **Note:** This call needs the Calls.Initiate.All permission.
 
+##### Prerequisite
+This call needs application instance with PSTN number assigned.
+###### Step 1: Create application instance.
+The tenant admin should call the following cmdlets on the tenant remote PowerShell to create application instance. For more information, see [New-CsOnlineApplicationInstance](https://docs.microsoft.com/en-us/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps) and [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/en-us/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps).
+```
+PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
+PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
+```
+###### Step 2: Assign Microsoft 365 licenses.
+1. Use tenant admin credential to sign in https://admin.microsoft.com/ and navigate to **Users -> Active users** tab.
+2. Select the application instance and assign **Microsoft 365 Domestic and International Calling Plan** and **Microsoft 365 Phone System - Virtual User** licenses and click **Save changes**. If the tenant is running out of those licenses, navigate to **Billing -> Purchase services** tab to purchase.
+###### Step 3: Acquire PSTN number.
+1. Use tenant admin credential to sign in https://admin.teams.microsoft.com/ and click on **Legacy portal** tab on the left panel.
+2. In the new page, navigate to **voice -> phone numbers** tab.
+3. Click **+** button and select **New Service Numbers** and go to **Add new service numbers** page.
+4. Select **Country/Region**, **State/Region**, **City** and input **Quantity**, and click **add** button to search. Then click **acquire numbers** button. The newly acquired number will be shown on **phone numbers** tab.
+###### Step 4: Assign PSTN number to application instance.
+The tenant admin should call the following cmdlets on the tenant remote PowerShell to assign PSTN number to  application instance. For more information, see [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/en-us/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps) and [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/en-us/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps).
+```
+PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
+PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
+```
+
 ##### Request
 The following example shows the request which makes a peer-to-peer call between the bot and a PSTN number. In this example, the media is hosted by the service. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
 
@@ -1283,6 +1306,9 @@ Content-Type: application/json
 ### Example 10: Create peer-to-peer PSTN call with application hosted media
 
 > **Note**: This example needs Calls.Initiate.All and Calls.AccessMedia.All permissions.
+
+##### Prerequisite
+This call needs application instance with PSTN number assigned. Follow same steps in previous example.
 
 ##### Request
 The following example shows the request which makes a peer-to-peer call between the bot and a PSTN number. In this example the media is hosted locally by the application. The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.
