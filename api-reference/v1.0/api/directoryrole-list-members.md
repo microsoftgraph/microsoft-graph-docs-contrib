@@ -118,7 +118,7 @@ Content-type: application/json
   "name": "get_directoryrole_members_templateId"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=23f3b4b4-8a29-4420-8052-e4950273bbda/members
+GET https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=4a5d8f65-41da-4de4-8968-e035b65339cf/members
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryrole-members-csharp-snippets.md)]
