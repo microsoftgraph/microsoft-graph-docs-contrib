@@ -12541,8 +12541,6 @@ items:
         items:
         - name: Notification topic
           href: resources/teamworkactivitytopic.md
-        - name: Notification recipient
-          href: resources/teamworknotificationrecipient.md
         - name: Azure AD user notification recipient
           href: resources/aadusernotificationrecipient.md
         - name: Send notification to user in chat scope

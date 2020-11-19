@@ -46,10 +46,10 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Topic of the notification. Specifies the resource being talked about.|
-|activityType|String|Activity type. This must be declared in the [teams app manifest](/microsoftteams/platform/overview).|
+|activityType|String|Activity type. This must be declared in the [Teams app manifest](/microsoftteams/platform/overview).|
 |chainId|Int64|Optional. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification.|
 |previewText|[itemBody](../resources/itembody.md)|Preview text for the notification. Microsoft Teams will only show first 150 characters.|
-|templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|Values for template variables defined in the activity feed entry corresponding to `activityType` in [teams app manifest](/microsoftteams/platform/overview).|
+|templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview).|
 |recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Recipient of the notification. Only AzureAD users are supported. See also [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md). |
 
 Following resources are supported when setting `source` of `topic` to entity url
@@ -58,7 +58,7 @@ Following resources are supported when setting `source` of `topic` to entity url
 - [Channel message](../resources/chatmessage.md)
 - [Channel tab](../resources/teamstab.md)
 
-> **Note:** The entity url must be same or child resource of the team in the url. Additionally, the [teams app](/microsoftteams/platform/overview) must be installed in the team.
+> **Note:** The entity url must be same or child resource of the team in the url. Additionally, the [Teams app](/microsoftteams/platform/overview) must be installed in the team.
 
 ## Response
 
@@ -66,9 +66,9 @@ If successful, this action returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1 : Notify a user about a pending user add requests in a team
+### Example 1 : Notify a user about pending finance approval requests
 
-This example shows how you can send an activity feed notification for a team. This example notifies the team owner about pending member add requests.
+This example shows how you can send an activity feed notification for a team. This example notifies the team owner about pending finance approval requests.
 
 #### Request
 <!-- {
@@ -86,16 +86,16 @@ Content-Type: application/json
         "source": "entityUrl",
         "value": "https://graph.microsoft.com/beta/teams/{teamId}"
     },
-    "activityType": "pendingMemberAddRequests",
+    "activityType": "pendingFinanceApprovalRequests",
     "previewText": {
-        "content": "MicrosoftTeamsIsAwesome team has pending user add requests"
+        "content": "Internal spending team has a pending finance approval requests"
     },
     "recipient": {
         "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
         "userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
     },
     "templateParameters": [
-        `{
+        {
             "name": "pendingRequestCount",
             "value": "5"
         }

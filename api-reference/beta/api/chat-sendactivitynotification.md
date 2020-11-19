@@ -46,10 +46,10 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Topic of the notification. Specifies the resource being talked about.|
-|activityType|String|Activity type. This must be declared in the [teams app manifest](/microsoftteams/platform/overview).|
+|activityType|String|Activity type. This must be declared in the [Teams app manifest](/microsoftteams/platform/overview).|
 |chainId|Int64|Optional. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification.|
 |previewText|[itemBody](../resources/itembody.md)|Preview text for the notification. Microsoft Teams will only show first 150 characters.|
-|templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|Values for template variables defined in the activity feed entry corresponding to `activityType` in [teams app manifest](/microsoftteams/platform/overview).|
+|templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview).|
 |recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Recipient of the notification. Only AzureAD users are supported. See also [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md). |
 
 Following resources are supported when setting `source` of `topic` to entity url
@@ -57,7 +57,7 @@ Following resources are supported when setting `source` of `topic` to entity url
 - [Chat](../resources/chat.md)
 - [Chat message](../resources/chatmessage.md)
 
-> **Note:** The entity url must be same or child resource of the chat in the url. Additionally, the [teams app](/microsoftteams/platform/overview) must be installed in the chat.
+> **Note:** The entity url must be same or child resource of the chat in the url. Additionally, the [Teams app](/microsoftteams/platform/overview) must be installed in the chat.
 
 ## Response
 
@@ -163,7 +163,7 @@ HTTP/1.1 204 No Content
 ### Example 3 : Notify a user about an event in relation to a chat
 
 As seen in examples above, you can link to different aspects of the chat. However if you want to link an aspect which is not part of the chat, or is not represented by Microsoft Graph. You can
-set the source of the `topic` to `text` and pass in a custom value for it. `webUrl` is required when using `topic` source as `text`.
+set the source of the `topic` to `text` and pass in a custom value for it. Additionally, `webUrl` is required when using `topic` source as `text`.
 
 #### Request
 <!-- {
