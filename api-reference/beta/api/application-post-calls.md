@@ -1124,7 +1124,7 @@ Content-Type: application/json
 ##### Prerequisite
 This call needs application instance with PSTN number assigned.
 ###### Step 1: Create application instance.
-The tenant admin should call the following cmdlets on the tenant remote PowerShell to create application instance. For more information, see [New-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps) and [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps).
+The tenant admin should call the following cmdlets on the tenant remote PowerShell to create application instance. For more information, see [New-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) and [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
 ```
 PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
 PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
@@ -1138,7 +1138,7 @@ PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 3. Click **+** button and select **New Service Numbers** and go to **Add new service numbers** page.
 4. Select **Country/Region**, **State/Region**, **City** and input **Quantity**, and click **add** button to search. Then click **acquire numbers** button. The newly acquired number will be shown on **phone numbers** tab.
 ###### Step 4: Assign PSTN number to application instance.
-The tenant admin should call the following cmdlets on the tenant remote PowerShell to assign PSTN number to  application instance. For more information, see [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps) and [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps).
+The tenant admin should call the following cmdlets on the tenant remote PowerShell to assign PSTN number to  application instance. For more information, see [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) and [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
 ```
 PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
 PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
