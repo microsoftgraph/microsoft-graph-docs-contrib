@@ -23,7 +23,7 @@ Represents the type of conditions that govern when the policy applies.
 |locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locations included in and excluded from the policy. |
 |platforms|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Platforms included in and excluded from the policy. |
 |signInRiskLevels|String collection| Sign-in risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `none`.|
-|userRiskLevels|String collection| User risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `none`.|
+|userRiskLevels|String collection| User risk levels included in the policy. Possible values are: `low`, `medium`, `high`.|
 
 ## Relationships
 
