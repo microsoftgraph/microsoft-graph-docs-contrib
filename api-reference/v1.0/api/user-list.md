@@ -134,7 +134,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_signinname_users"
 } -->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
 ```
 # [C#](#tab/csharp)
@@ -193,7 +193,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_signin_last_time"
 } -->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,userPrincipalName,signInActivity
 ```
 # [C#](#tab/csharp)
@@ -328,7 +328,7 @@ The following is an example of the request.
   "blockType": "ignored",
   "name": "get_signin_last_time_range"
 } -->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users?filter=signInActivity/lastSignInDateTime le 2019-06-01T00:00:00Z
 ```
 
