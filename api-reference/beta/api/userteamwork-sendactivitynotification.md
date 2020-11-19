@@ -94,16 +94,6 @@ Content-Type: application/json
 
 ```
 
-### Response
-<!-- {
-  "blockType": "response",
-  "truncated": false
-}
--->
-``` http
-HTTP/1.1 204 No Content
-```
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -116,8 +106,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2 : Notify a user about an event using custom topic
 
-As seen in examples above, you can link to different aspects of the team. However if you want to link an aspect which is not part of the team, is not represented by Microsoft Graph, or want to customize the name. You can
-set the source of the `topic` to `text` and pass in a custom value for it. `webUrl` is required when using `topic` source as `text`.
+If you want to link an aspect which is not represented by Microsoft Graph, or want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. `webUrl` is required when using `topic` source as `text`.
 
 #### Request
 <!-- {

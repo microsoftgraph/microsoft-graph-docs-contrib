@@ -56,7 +56,7 @@ To use the sections listed below you must use [Teams app manifest](/microsofttea
 |id|string|Azure AD app Id (client Id)|
 |resource|string|Resource associated with the Azure AD app. Also known as reply or redirect url in Azure Portal.|
 
-> **Note:** : You might get an error if multiple Teams app in the same scope (team, chat or user) are using the same Azure AD app. Please ensure you are using unique Azure AD apps.
+> **Note:** You might get an error if multiple Teams apps in the same scope (team, chat or user) are using the same Azure AD app. Please ensure you are using unique Azure AD apps.
 
 #### activities section changes
 
@@ -202,7 +202,7 @@ HTTP/1.1 204 No Content
 
 #### Example 3 : Notify a user about an event using a custom topic
 
-As seen in examples above, you can link to different aspects of a team or a chat. However, if you want to link an aspect which is not part of the team, is not represented by Microsoft Graph, or want to customize the name. You can set the source of the `topic` to `text` and pass in a custom value for it. Additionally, `webUrl` is required when using `topic` source as `text`.
+As seen in examples above, you can link to different aspects of a team or a chat. However, if you want to link an aspect which is not part of the team, is not represented by Microsoft Graph, or want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. Additionally, `webUrl` is required when using `topic` source as `text`.
 
 The Yammer notification shown the example above, uses custom topic since Yammer's resources are not supported by Microsoft Graph.
 
@@ -254,7 +254,7 @@ HTTP/1.1 204 No Content
 
 ## Customizing how the notifications alert you
 
-As a user of Microsoft Teams, user can customize the notifications they see in their feed, as a banner etc. Notifications generated through activity feed APIs follow the same suit. Users can choose how they are notified about a notification. To customize this, you can go to settings in Microsoft Teams and customize the notification settings. Teams apps will appear in the list for user to choose from, as shown below
+As a user of Microsoft Teams, a user can customize the notifications they see in their feed, as a banner etc. Notifications generated through activity feed APIs follow the same suit. Users can choose how they are notified about a notification. To customize this, you can go to settings in Microsoft Teams and customize the notification settings. Teams apps will appear in the list for user to choose from, as shown below
 
 ![NotificationSettingsInTeams](images/teams-activityfeednotifications/notificationsettings.png)
 

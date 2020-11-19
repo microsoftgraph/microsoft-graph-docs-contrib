@@ -55,6 +55,7 @@ The following table shows the parameters that can be used with this action.
 Following resources are supported when setting `source` of `topic` to entity url
 
 - [Team](../resources/team.md)
+- [Channel](../resources/channel.md)
 - [Channel message](../resources/chatmessage.md)
 - [Channel tab](../resources/teamstab.md)
 

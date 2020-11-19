@@ -23,6 +23,7 @@ Topic of an activity feed notification.
 Following resources are supported when setting `source` of `topic` to entity url
 
 - [Team](../resources/team.md)
+- [Channel](../resources/channel.md)
 - [Channel message](../resources/chatmessage.md)
 - [Channel tab](../resources/teamstab.md)
 - [Chat](../resources/chat.md)
