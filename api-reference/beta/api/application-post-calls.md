@@ -1143,6 +1143,7 @@ The tenant admin should call the following cmdlets on the tenant remote PowerShe
 PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
 PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 ```
+> **Note:** If a tenant has Australian PSTN numbers assigned to any application instances, this call may not be working. If a tenant is newly created, it may take several days to have this feature available.
 
 ##### Request
 The following example shows the request which makes a peer-to-peer call between the bot and a PSTN number. In this example, the media is hosted by the service. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
@@ -1309,6 +1310,8 @@ Content-Type: application/json
 
 ##### Prerequisite
 This call needs application instance with PSTN number assigned. Follow same steps in previous example.
+
+> **Note:** If a tenant has Australian PSTN numbers assigned to any application instances, this call may not be working. If a tenant is newly created, it may take several days to have this feature available.
 
 ##### Request
 The following example shows the request which makes a peer-to-peer call between the bot and a PSTN number. In this example the media is hosted locally by the application. The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.
