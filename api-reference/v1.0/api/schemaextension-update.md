@@ -10,8 +10,12 @@ doc_type: apiPageType
 # Update schemaExtension
 
 Namespace: microsoft.graph
-Update properties in the definition of the specified [schemaExtension](../resources/schemaextension.md). Additive updates to the extension can only be made when the extension is in the **InDevelopment** or **Available** status. 
+
+Update properties in the definition of the specified [schemaExtension](../resources/schemaextension.md). 
+
 This means custom properties or target resource types cannot be removed from the definition, but new custom properties can be added and the description of the extension changed.
+
+Additive updates to the extension can only be made when the extension is in the **InDevelopment** or **Available** status. 
 
 The update applies to all the resources that are included in the **targetTypes** property of the extension. These resources are among the 
 [supporting resource types](/graph/extensibility-overview#supported-resources).
