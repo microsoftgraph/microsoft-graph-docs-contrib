@@ -16,7 +16,7 @@ Activity feed notification in Microsoft Teams is comprised of multiple bits of i
 
 ![FeedTemplate](images/teams-activityfeednotifications/notificationtemplate.png)
 
-Following example shows how these components together show details about a notification
+Following example shows how these components together show details about a notification. The following notification is about user mentioned in a Yammer community.
 
 ![FeedExample](images/teams-activityfeednotifications/examplefeednotification.png)
 
@@ -204,7 +204,7 @@ HTTP/1.1 204 No Content
 
 As seen in examples above, you can link to different aspects of a team or a chat. However, if you want to link an aspect which is not part of the team, is not represented by Microsoft Graph, or want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. Additionally, `webUrl` is required when using `topic` source as `text`.
 
-The Yammer notification shown the example above, uses custom topic since Yammer's resources are not supported by Microsoft Graph.
+The Yammer notification shown the section above, uses custom topic since Yammer's resources are not supported by Microsoft Graph.
 
 > **Note:** `webUrl` must start with the Microsoft Teams domain (teams.microsoft.com for example).
 
