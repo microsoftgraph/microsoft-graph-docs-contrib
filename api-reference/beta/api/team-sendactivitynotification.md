@@ -178,7 +178,7 @@ set the source of the `topic` to `text` and pass in a custom value for it. `webU
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/team/{teamId}/sendActivityNotification
+POST https://graph.microsoft.com/beta/teams/{teamId}/sendActivityNotification
 
 Content-Type: application/json
 

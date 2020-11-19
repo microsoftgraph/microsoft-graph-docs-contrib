@@ -115,7 +115,7 @@ If you want to link an aspect which is not represented by Microsoft Graph, or wa
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/team/{teamId}/sendActivityNotification
+POST https://graph.microsoft.com/beta/{userId}/teamwork/sendActivityNotification
 
 Content-Type: application/json
 
@@ -128,10 +128,6 @@ Content-Type: application/json
     "activityType": "deploymentApprovalRequired",
     "previewText": {
         "content": "New deployment requires your approval"
-    },
-    "recipient": {
-        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
-        "userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
     },
     "templateParameters": [
         {

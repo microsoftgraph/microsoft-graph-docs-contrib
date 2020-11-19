@@ -22,7 +22,7 @@ Following example shows how these components together show details about a notif
 
 ## Requirements for using the activity feed notification APIs
 
-Activity feed APIs do not work in a standalone fashion, but work in tandem with a [Teams app](/microsoftteams/platform/overview). To send activity feed notifications, the following requirements must be met
+Activity feed APIs do not work in a standalone fashion, but work in tandem with a [Teams app](/microsoftteams/platform/overview). To send activity feed notifications, the following requirements must be met:
 
 - The Teams app manifest must have the Azure AD app Id added to the `webApplicationInfo` section. Please refer to [manifest schema documentation](/microsoftteams/platform/resources/schema/manifest-schema)
 - Activity types must be declared in the `activities` section. Please refer to [manifest schema documentation](/microsoftteams/platform/resources/schema/manifest-schema)
@@ -204,7 +204,7 @@ HTTP/1.1 204 No Content
 
 As seen in examples above, you can link to different aspects of a team or a chat. However, if you want to link an aspect which is not part of the team, is not represented by Microsoft Graph, or want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. Additionally, `webUrl` is required when using `topic` source as `text`.
 
-The Yammer notification shown the section above, uses custom topic since Yammer's resources are not supported by Microsoft Graph.
+The Yammer notification shown in the section above uses custom topic since Yammer's resources are not supported by Microsoft Graph.
 
 > **Note:** `webUrl` must start with the Microsoft Teams domain (teams.microsoft.com for example).
 
