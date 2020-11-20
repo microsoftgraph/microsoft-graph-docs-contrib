@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 The virtualEndpoint resource represents a container for APIs to manage cloud PC.
 
-The cloud PC API can be used to provision and manage virtual desktops for employees in an organization. Use the API in conjunction with the [Intune API](../resources/intune-graph-overview.md) to manage physical and virtual endpoints.
+Use the cloud PC API to provision and manage virtual desktops for employees in an organization. Use it in conjunction with the [Intune API](../resources/intune-graph-overview.md) to manage physical and virtual endpoints.
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get effective permission](../api/virtualendpoint-geteffectivepermissions.md)|String collection|View the effective permissions of the currently authenticated user.|
+|[Get effective permissions](../api/virtualendpoint-geteffectivepermissions.md)|String collection|View the effective permissions of the currently authenticated user.|
 |[List cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List properties and relationships of the [cloudPC](../resources/cloudpc.md) objects.|
 |[Get cloudPC](../api/cloudpc-get.md)|[cloudPC](../resources/cloudpc.md)|Read the properties and relationships of a [cloudPC](../resources/cloudpc.md) object.|
 |[Reprovision](../api/cloudpc-reprovision.md)|None|Reprovision a [cloudPC](../resources/cloudpc.md) object.|

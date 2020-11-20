@@ -9228,6 +9228,9 @@ items:
         items:
         - name: Virtual endpoint
           href: resources/virtualendpoint.md
+          items:
+          - name: Get effective permissions
+            href: api/virtualendpoint-geteffectivepermissions.md
         - name: Cloud PC
           href: resources/cloudpc.md
           items:
@@ -9278,15 +9281,13 @@ items:
             href: api/cloudpcprovisioningpolicy-update.md
           - name: Delete
             href: api/cloudpcprovisioningpolicy-delete.md
+          - name: Assign
+            href: api/cloudpcprovisioningpolicy-assign.md
         - name: Cloud PC provisioning policy assignment
           href: resources/cloudpcprovisioningpolicyassignment.md
           items:
-        - name: Shared resources
-          items:
-          - name: Cloud PC management assignment target
-            href: resources/cloudpcmanagementassignmenttarget.md
-          - name: Cloud PC management group assignment target
-            href: resources/cloudpcmanagementgroupassignmenttarget.md
+          - name: Assign
+            href: api/cloudpcprovisioningpolicy-assign.md
     - name: Education
       items:
       - name: Overview

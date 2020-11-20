@@ -7,7 +7,7 @@ ms.prod: ""
 doc_type: apiPageType
 ---
 
-# List DeviceImages
+# List deviceImages
 
 Namespace: microsoft.graph
 

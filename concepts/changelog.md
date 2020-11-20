@@ -13,7 +13,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## November 2020
 
-### Devices and apps | Cloud managed Desktop
+### Devices and apps | Cloud PC
 
 | **Change type** | **Version** | **Description** |
 |:---|:---|:---|
