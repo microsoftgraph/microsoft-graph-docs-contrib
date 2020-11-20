@@ -53,8 +53,6 @@ For best results, stagger calls with a 2 second buffer.
 
 ### Request
 
-### Request
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
