@@ -68,7 +68,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the **firewallSharedAppList**, **firewallSharedIpList** and **firewallSharedPortlist** members to the [deviceManagementTemplateSubtype](/graph/api/resources/intune-deviceintent-devicemanagementtemplatesubtype?view=graph-rest-beta&preserve-view=true) enum type|
 |Addition|beta|Added the **firewallSharedSettings** member to the [deviceManagementTemplateType](/graph/api/resources/intune-deviceintent-devicemanagementtemplatetype?view=graph-rest-beta&preserve-view=true) enum type|
 |Addition|beta|Added the **upgradeFailed** member to the [microsoftTunnelServerHealthStatus](/graph/api/resources/intune-mstunnel-microsofttunnelserverhealthstatus?view=graph-rest-beta&preserve-view=true) enum type|
->>>>>>> master
 
 ### Teamwork
 
