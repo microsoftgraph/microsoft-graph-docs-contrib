@@ -41,7 +41,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Teams [chatMessage][]
 - Teams [presence][] (preview)
 - Print [printTaskDefinition][]
-- ToDo Task [todoTask]
+- Task [todoTask][] (preview)
 
 You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
@@ -63,7 +63,7 @@ Or to a new [Security API](security-concept-overview.md) alert:
 `/security/alerts?$filter=status eq 'newAlert'`,
 `/security/alerts?$filter=vendorInformation/provider eq 'ASC'`
 
-Or to the tasks in user's To Do list:
+Or to the tasks in a user's To Do list:
 `/me/todo/lists/{todoTaskListId}/tasks`
 
 ### Azure AD resource limitations

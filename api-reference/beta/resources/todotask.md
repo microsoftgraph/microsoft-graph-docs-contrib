@@ -20,6 +20,7 @@ A **todoTask** is always contained in a [todoTaskList](todotasklist.md). It incl
 This resource supports the following:
 * Adding your data as custom properties in [open extensions](/graph/extensibility-overview).
 * Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions and updates.
+* Subscribing to [change notifications](/graph/webhooks).
 
 ## Methods
 |Method|Return type|Description|
