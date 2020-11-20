@@ -7,7 +7,7 @@
             "ApiChange": "Method",
             "ChangedApiName": "getAllMessages",
             "ChangeType": "Addition",
-            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/chats-getallmessages?view=graph-rest-beta) method to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/chat-getallmessages?view=graph-rest-beta) method to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
             "Target": "chats-getallmessages"
           },
           {
@@ -15,7 +15,7 @@
             "ApiChange": "Method",
             "ChangedApiName": "getAllMessages",
             "ChangeType": "Addition",
-            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/channels-getallmessages?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/channel-getallmessages?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
             "Target": "channels-getallmessages"
           },
           {
@@ -23,7 +23,7 @@
             "ApiChange": "Method",
             "ChangedApiName": "getAllMessages",
             "ChangeType": "Addition",
-            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/teams-getallmessages?view=graph-rest-beta) method to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
+            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/team-getallmessages?view=graph-rest-beta) method to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
             "Target": "teams-getallmessages"
           }
         ],
