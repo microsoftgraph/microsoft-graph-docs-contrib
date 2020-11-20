@@ -165,7 +165,7 @@ HTTP/1.1 204 No Content
 
 ### Example 3: Notify a user about an event using custom topic
 
-As seen in the previous examples, you can link to different aspects of the team. However, if you want to link to an aspect that is not part of the team or is not represented by Microsoft Graph, or you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. `webUrl` is required when s to `topic` source to `text`.
+As seen in the previous examples, you can link to different aspects of the team. However, if you want to link to an aspect that is not part of the team or is not represented by Microsoft Graph, or you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. `webUrl` is required when setting `topic` source to `text`.
 
 #### Request
 <!-- {
