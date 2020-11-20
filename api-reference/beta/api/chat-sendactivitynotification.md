@@ -10,8 +10,7 @@ doc_type: apiPageType
 # chat: sendActivityNotification
 Namespace: microsoft.graph
 
-Sends an activity feed notification in scope of a chat. For more details about sending notifications and the requirements for the same, refer to the documentation
-[sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
+Send an activity feed notification in scope of a chat. For more details about sending notifications and the requirements for doing so, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,14 +49,14 @@ The following table shows the parameters that can be used with this action.
 |chainId|Int64|Optional. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification.|
 |previewText|[itemBody](../resources/itembody.md)|Preview text for the notification. Microsoft Teams will only show first 150 characters.|
 |templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview).|
-|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Recipient of the notification. Only AzureAD users are supported. See also [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md). |
+|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Recipient of the notification. Only Azure AD users are supported. See also [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md). |
 
 Following resources are supported when setting `source` of `topic` to entity url
 
 - [Chat](../resources/chat.md)
 - [Chat message](../resources/chatmessage.md)
 
-> **Note:** The entity url must be same or child resource of the chat in the url. Additionally, the [Teams app](/microsoftteams/platform/overview) must be installed in the chat.
+> **Note:** The entity URL must be the same as or a child resource of the chat in the URL. Additionally, the [Teams app](/microsoftteams/platform/overview) must be installed in the chat.
 
 ## Response
 
@@ -65,10 +64,9 @@ If successful, this action returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1 : Notify a user about a task created in a chat
+### Example 1: Notify a user about a task created in a chat
 
-This example shows how you can send an activity feed notification for a new task created in a chat. For more details about sending notifications and the requirements for the same, refer to the documentation
-[sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
+This example shows how you can send an activity feed notification for a new task created in a chat. For more details, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
 #### Request
 <!-- {
@@ -113,9 +111,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2 : Notify a user about a approval needed in a chat message
+### Example 2: Notify a user about a approval needed in a chat message
 
-Similar to the example above, we are using `topic` as an `entityUrl`. However, in this case we are linking to a message in the chat. The message can contains a card with the approval button on it.
+Similar to the previous example, this example uses `topic` as an `entityUrl`. However, in this case, it links to a message in the chat. The message can contains a card with the approval button on it.
 
 #### Request
 <!-- {
@@ -125,7 +123,6 @@ Similar to the example above, we are using `topic` as an `entityUrl`. However, i
 -->
 ``` http
 POST https://graph.microsoft.com/beta/chats/{chatId}/sendActivityNotification
-
 Content-Type: application/json
 
 {
@@ -160,10 +157,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 3 : Notify a user about an event in relation to a chat
+### Example 3: Notify a user about an event in relation to a chat
 
-As seen in examples above, you can link to different aspects of the chat. However if you want to link an aspect which is not part of the chat, or is not represented by Microsoft Graph. You can
-set the source of the `topic` to `text` and pass in a custom value for it. Additionally, `webUrl` is required when using `topic` source as `text`.
+As shown in the previous examples, you can link to different aspects of the chat. However, if you want to link an aspect that is not part of the chat, or is not represented by Microsoft Graph, you can set the source of the `topic` to `text` and pass in a custom value for it. Also, `webUrl` is required when using `topic` source as `text`.
 
 #### Request
 <!-- {
