@@ -76,7 +76,6 @@ This example shows how you can send an activity feed notification for a new task
 -->
 ``` http
 POST https://graph.microsoft.com/beta/chats/{chatId}/sendActivityNotification
-
 Content-Type: application/json
 
 {
@@ -113,7 +112,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Notify a user about a approval needed in a chat message
 
-Similar to the previous example, this example uses `topic` as an `entityUrl`. However, in this case, it links to a message in the chat. The message can contains a card with the approval button on it.
+Similar to the previous example, this example uses `entityUrl` for the `topic`. However, in this case, it links to a message in the chat. The message can contains a card with the approval button on it.
 
 #### Request
 <!-- {
@@ -159,7 +158,7 @@ HTTP/1.1 204 No Content
 
 ### Example 3: Notify a user about an event in relation to a chat
 
-As shown in the previous examples, you can link to different aspects of the chat. However, if you want to link an aspect that is not part of the chat, or is not represented by Microsoft Graph, you can set the source of the `topic` to `text` and pass in a custom value for it. Also, `webUrl` is required when using `topic` source as `text`.
+As shown in the previous examples, you can link to different aspects of the chat. However, if you want to link to an aspect that is not part of the chat, or is not represented by Microsoft Graph, you can set the source of the `topic` to `text` and pass in a custom value for it. Also, `webUrl` is required when setting `topic` source to `text`.
 
 #### Request
 <!-- {
@@ -169,7 +168,6 @@ As shown in the previous examples, you can link to different aspects of the chat
 -->
 ``` http
 POST https://graph.microsoft.com/beta/chats/{chatId}/sendActivityNotification
-
 Content-Type: application/json
 
 {
