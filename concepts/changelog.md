@@ -85,6 +85,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **AlternateIdLogin** field to the [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta&preserve-view=true) policy definition.|
 | Addition | beta and v1.0 | Added [verified publisher](/graph/api/resources/verifiedPublisher) properties to the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) resources. |
 | Addition | beta and v1.0 | Added [setVerifiedPublisher](/graph/api/application-setverifiedpublisher) and [unsetVerifiedPublisher](/graph/api/application-unsetverifiedpublisher) methods to the [application](/graph/api/resources/application) resource. |
+| Addition | v1.0 | Added [delegatedPermissionClassification](/graph/api/resources/delegatedpermissionclassification?view=graph-rest-1.0&preserve-view=true) navigation to the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0&preserve-view=true) resource.
 
 ### Change notifications
 
@@ -178,6 +179,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the **IdentityUserFlow.ReadWrite.All** and **IdentityUserFlow.Read.All** permissions to the [Permissions reference](permissions-reference.md#policy-permissions).|
 |Addition|beta|Added the [b2cAuthenticationMethodsPolicy](/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta&preserve-view=true) resource type and the following opertations: [Get b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta&preserve-view=true) and [Update b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta&preserve-view=true).|
 |Addition|beta|Added the **Policy.ReadWrite.AuthenticationMethod** permission to the [Permissions reference](permissions-reference.md#policy-permissions).|
+|Addition|v1.0|Added the [permissionGrantPolicy](/graph/api/resources/permissiongrantpolicy?view=graph-rest-1.0&preserve-view=true) resource type. Permission grant policies describe the conditions which must be met for permissions to be granted to apps.|
 
 ### Teamwork
 

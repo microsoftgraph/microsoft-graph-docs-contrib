@@ -904,3 +904,17 @@ Possible values for user account types (group membership), per Windows definitio
 | completed
 | waitingOnOthers
 | deferred
+
+### permissionClassificationType values
+
+| Member
+|:-------
+| low
+
+### permissionType values
+
+| Member
+|:-------------------------
+| application
+| delegated
+| delegatedUserConsentable
