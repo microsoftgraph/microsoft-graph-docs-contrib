@@ -5,7 +5,7 @@ localization_priority: Normal
 author: vogtn
 ---
 
-## Display Microsoft Graph Toolkit components right-to-left (rtl)
+# Display Microsoft Graph Toolkit components right-to-left (rtl)
 
 The Microsoft Graph Toolkit components support bi-directional markup for right-to-left language scripts.
 
