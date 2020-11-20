@@ -41,9 +41,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added support for [resource-specific consent](https://aka.ms/teams-rsc) (RSC) permissions to v1.0 APIs. |
 | Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-1.0&preserve-view=true). |
-| Addition | beta | Added the [getAllMessages](/graph/api/chats-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)  resource.|
-| Addition | beta | Added the [getAllMessages](/graph/api/channels-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource.|
-| Addition | beta | Added the [getAllMessages](/graph/api/teams-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the [getAllMessages](/graph/api/chat-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [chatmessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true)  resource.|
+| Addition | beta | Added the [getAllMessages](/graph/api/channel-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the [getAllMessages](/graph/api/team-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | v1.0 | Added support for [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) (RSC) permissions to v1.0 APIs. |
 | Addition | v1.0 | Added [APIs for reading channel message](/graph/api/resources/chatmessage?view=graph-rest-1.0&preserve-view=true). |
 
