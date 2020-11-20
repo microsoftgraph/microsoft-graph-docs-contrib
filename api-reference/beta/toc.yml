@@ -12360,7 +12360,7 @@ items:
         - name: Complete migration for team
           href: api/team-completemigration.md
         - name: Get all team messages
-          href: api/teams-getallmessages.md
+          href: api/team-getallmessages.md
       - name: Group (team)
         href: resources/group.md
         items:
