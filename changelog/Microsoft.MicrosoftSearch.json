@@ -71,8 +71,8 @@
             "Cloud": "prd",
             "Version": "v1.0",
             "CreatedDateTime": "2020-11-12T19:20:54.087Z",
-            "WorkloadArea": "People and workplace intelligence",
-            "SubArea": "Analytics"
+            "WorkloadArea": "Search",
+            "SubArea": ""
         }
     ]
 }

@@ -54,9 +54,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description**                              |
 |:----------------|:------------|:---------------------------------------------|
-| Addition        | v1.0        | Added the [Microsoft Search API](search-concept-overview.md) that constitutes [querying](/graph/api/search-query?view=graph-rest-v1.0) capabilities for content in M365. |
-| Addition        | v1.0        | Added the [query](/graph/api/search-query?view=graph-rest-v1.0) action. |
-| Addition        | v1.0        | Added the [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-v1.0), [searchQuery](/graph/api/resources/searchquery?view=graph-rest-v1.0), [searchResponse](/graph/api/resources/searchresponse?view=graph-rest-v1.0), [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-v1.0), and [searchHit](/graph/api/resources/searchhit?view=graph-rest-v1.0) complex types. |
+| Addition        | v1.0        | Added the [Microsoft Search API](search-concept-overview.md) that constitutes [querying](/graph/api/search-query?view=graph-rest-1.0&preserve-view=true) capabilities for content in M365. |
+| Addition        | v1.0        | Added the [query](/graph/api/search-query?view=graph-rest-1.0&preserve-view=true) action. |
+| Addition        | v1.0        | Added the [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-1.0&preserve-view=true), [searchQuery](/graph/api/resources/searchquery?view=graph-rest-1.0&preserve-view=true), [searchResponse](/graph/api/resources/searchresponse?view=graph-rest-1.0&preserve-view=true), [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-1.0&preserve-view=true), and [searchHit](/graph/api/resources/searchhit?view=graph-rest-1.0&preserve-view=true) complex types. |
 
 ## October 2020
 
