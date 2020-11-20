@@ -87,6 +87,10 @@ content-length: 26
 [!INCLUDE [sample-code](../includes/snippets/objc/create-conversation-member-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-conversation-member-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -98,6 +102,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "create_conversation_member",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
 ```http
@@ -115,3 +120,5 @@ Content-length: 468
   "email": null
 }
 ```
+
+

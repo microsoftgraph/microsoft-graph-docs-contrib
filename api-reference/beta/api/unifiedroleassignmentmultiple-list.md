@@ -34,8 +34,7 @@ GET /roleManagement/deviceManagement/roleAssignments
 ```
 
 ## Optional query parameters
-
-This operation requires the `$filter` query parameter. You can filter on the `roleDefinitionId` or `principalId` properties. The `roleDefinitionId` property can be either a role object ID or a role template object ID. For general information, see [OData query parameters](/graph/query-parameters).
+You can filter on the `roleDefinitionId` or `principalId` properties. The `roleDefinitionId` property can be either a role object ID or a role template object ID. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -111,3 +110,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

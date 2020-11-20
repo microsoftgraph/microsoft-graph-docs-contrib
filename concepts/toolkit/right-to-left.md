@@ -1,11 +1,11 @@
 ---
-title: "Right-To-Left Support with the Microsoft Graph Toolkit"
-description: "Use LocalizationHelper to change direction"
+title: "Right-to-left (rtl) support with the Microsoft Graph Toolkit"
+description: "Right-to-left (rtl) support in the Microsoft Graph Toolkit components"
 localization_priority: Normal
 author: vogtn
 ---
 
-## Right to Left
+## Display Microsoft Graph Toolkit components right-to-left (rtl)
 
 The Microsoft Graph Toolkit components support bi-directional markup for right-to-left language scripts.
 

@@ -48,7 +48,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Example
 
-## Request
+### Request
 
 Here is an example of the request.
 
@@ -100,3 +100,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

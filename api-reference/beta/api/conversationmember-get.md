@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |---------|-------------|
 |Delegated (work or school account)| For **user** or **chat** resource: Chat.ReadBasic, Chat.Read, Chat.ReadWrite<br/><br/>For **channel** resource: ChannelMember.Read.All, ChannelMember.ReadWrite, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| For **user** or **chat** resource: Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All<br/><br/>For **channel** resource: Member.Read.Group*, ChannelMember.Read.All, ChannelMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Application| For **user** or **chat** resource: Not supported.<br/><br/>For **channel** resource: Member.Read.Group*, ChannelMember.Read.All, ChannelMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-conversation-member-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-conversation-member-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -92,6 +96,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "get_conversation_member",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
 ```http
@@ -118,3 +123,5 @@ Content-length: 201
   ]
 }
 -->
+
+

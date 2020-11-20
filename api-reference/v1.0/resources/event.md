@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 An event in a [user](user.md) calendar, or the default calendar of a Microsoft 365 [group](group.md).
 
-The maximum number of attendees included in an **event**, and the maximum number of reciepients in an [eventMessage](eventmessage.md) sent from an Exchange Online mailbox is 500. For more information, see [sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
+The maximum number of attendees included in an **event**, and the maximum number of recipients in an [eventMessage](eventmessage.md) sent from an Exchange Online mailbox is 500. For more information, see [sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 This resource supports:
 
@@ -60,6 +60,7 @@ by providing a [delta](../api/event-delta.md) function.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|allowNewTimeProposals| Boolean | `True` if the meeting organizer allows invitees to propose a new time when responding, `false` otherwise. Optional. Default is `true`. |
 |attendees|[attendee](attendee.md) collection|The collection of attendees for the event.|
 |body|[itemBody](itembody.md)|The body of the message associated with the event. It can be in HTML or text format.|
 |bodyPreview|String|The preview of the message associated with the event. It is in text format.|
@@ -68,7 +69,7 @@ by providing a [delta](../api/event-delta.md) function.
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |end|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event ends. By default, the end time is in UTC.|
 |hasAttachments|Boolean|Set to true if the event has attachments.|
-|iCalUId|String|A unique identifier that is shared by all instances of an event across different calendars. Read-only.|
+|iCalUId|String|A unique identifier for an event across calendars. This ID is different for each occurrence in a recurring series. Read-only.|
 |id|String| Read-only.|
 |importance|importance|The importance of the event. The possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day.|
@@ -88,15 +89,16 @@ by providing a [delta](../api/event-delta.md) function.
 |originalStartTimeZone|String|The start time zone that was set when the event was created. A value of `tzone://Microsoft/Custom` indicates that a legacy custom time zone was set in desktop Outlook. |
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|The recurrence pattern for the event.|
 |reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
-|responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
+|responseRequested|Boolean|Default is true, which represents the organizer would like an invitee to send a response to the event.|
 |responseStatus|[responseStatus](responsestatus.md)|Indicates the type of response sent in response to an event message.|
 |sensitivity|sensitivity| The possible values are: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|String|The ID for the recurring series master item, if this event is part of a recurring series.|
 |showAs|freeBusyStatus|The status to show. The possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |start|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event starts. By default, the start time is in UTC.|
 |subject|String|The text of the event's subject line.|
+|transactionId |String |A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event. This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request. After you set **transactionId** when creating an event, you cannot change **transactionId** in a subsequent update. This property is only returned in a response payload if an app has set it. Optional.|
 |type|eventType|The event type. The possible values are: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Read-only.|
-|webLink|String|The URL to open the event in Outlook on the web.<br/><br/>Outlook on the web opens the event in the browser if you are signed in to your mailbox. Otherwise, Outlook on the web prompts you to sign in.<br/><br/>This URL can be accessed from within an iFrame.|
+|webLink|String|The URL to open the event in Outlook on the web.<br/><br/>Outlook on the web opens the event in the browser if you are signed in to your mailbox. Otherwise, Outlook on the web prompts you to sign in.<br/><br/>This URL cannot be accessed from within an iFrame.|
 
 > [!NOTE]
 > The **webLink** property specifies a URL that opens the event in only earlier versions of Outlook on the web. The following are the URL formats, with _{event-id}_ being the _**URL-encoded**_ value of the **id** property:
@@ -189,6 +191,7 @@ Here is a JSON representation of the resource
 
 ```json
 {
+  "allowNewTimeProposals": "Boolean",
   "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "bodyPreview": "string",
@@ -224,6 +227,7 @@ Here is a JSON representation of the resource
   "showAs": "String",
   "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "subject": "string",
+  "transactionId": "string",
   "type": "String",
   "webLink": "string",
 
@@ -257,3 +261,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

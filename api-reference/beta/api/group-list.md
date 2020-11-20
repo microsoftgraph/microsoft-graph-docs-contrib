@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/groups
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-groups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -113,16 +117,75 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups",
-  "value": [
-    {
-      "id": "11111111-2222-3333-4444-555555555555",
-      "mail": "group1@contoso.com",
-      "mailEnabled": true,
-      "mailNickname": "ContosoGroup1",
-      "securityEnabled": true
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups",
+    "value": [
+         {
+            "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+            "deletedDateTime": null,
+            "classification": null,
+            "createdDateTime": "2018-12-22T02:21:05Z",
+            "description": "Self help community for golf",
+            "displayName": "Golf Assist",
+            "expirationDateTime": null,
+            "groupTypes": [
+                "Unified"
+            ],
+            "isAssignableToRole": null,
+            "mail": "golfassist@contoso.com",
+            "mailEnabled": true,
+            "mailNickname": "golfassist",
+            "membershipRule": null,
+            "membershipRuleProcessingState": null,
+            "onPremisesLastSyncDateTime": null,
+            "onPremisesSecurityIdentifier": null,
+            "onPremisesSyncEnabled": null,
+            "preferredDataLocation": "CAN",
+            "preferredLanguage": null,
+            "proxyAddresses": [
+                "smtp:golfassist@contoso.onmicrosoft.com",
+                "SMTP:golfassist@contoso.com"
+            ],
+            "renewedDateTime": "2018-12-22T02:21:05Z",
+            "resourceBehaviorOptions": [],
+            "resourceProvisioningOptions": [],
+            "securityEnabled": false,
+            "theme": null,
+            "visibility": "Public",
+            "onPremisesProvisioningErrors": []
+        },
+        {
+            "id": "d7797254-3084-44d0-99c9-a3b5ab149538",
+            "deletedDateTime": null,
+            "classification": null,
+            "createdDateTime": "2018-11-19T20:29:40Z",
+            "description": "Talk about golf",
+            "displayName": "Golf Discussion",
+            "expirationDateTime": null,
+            "groupTypes": [],
+            "isAssignableToRole": null,
+            "mail": "golftalk@contoso.com",
+            "mailEnabled": true,
+            "mailNickname": "golftalk",
+            "membershipRule": null,
+            "membershipRuleProcessingState": null,
+            "onPremisesLastSyncDateTime": null,
+            "onPremisesSecurityIdentifier": null,
+            "onPremisesSyncEnabled": null,
+            "preferredDataLocation": "CAN",
+            "preferredLanguage": null,
+            "proxyAddresses": [
+                "smtp:golftalk@contoso.onmicrosoft.com",
+                "SMTP:golftalk@contoso.com"
+            ],
+            "renewedDateTime": "2018-11-19T20:29:40Z",
+            "resourceBehaviorOptions": [],
+            "resourceProvisioningOptions": [],
+            "securityEnabled": false,
+            "theme": null,
+            "visibility": null,
+            "onPremisesProvisioningErrors": []
+        }
+    ]
 }
 ```
 
@@ -130,30 +193,14 @@ Content-type: application/json
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_groups_withlicenseerrors_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups?$count=true&$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
 ConsistencyLevel: eventual
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-groups-withlicenseerrors-count-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-groups-withlicenseerrors-count-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-groups-withlicenseerrors-count-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 
@@ -191,30 +238,14 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_count_only"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/$count
 ConsistencyLevel: eventual
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-count-only-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-count-only-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-count-only-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 
@@ -241,7 +272,7 @@ Content-type: text/plain
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_a_count"
 }-->
 ```msgraph-interactive
@@ -282,30 +313,14 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_video_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups?$search="displayName:Video"&$count=true
 ConsistencyLevel: eventual
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-video-count-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-video-count-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-video-count-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 
@@ -342,7 +357,7 @@ Content-type: application/json
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_video_count"
 }-->
 ```msgraph-interactive
@@ -396,3 +411,5 @@ Content-type: application/json
   ]
 }
 -->
+
+
