@@ -53,7 +53,7 @@ items:
         href: /graph/delta-query-events?context=graph/api/1.0
       - name: Get changes to groups (example)
         href: /graph/delta-query-groups?context=graph/api/1.0
-      - name: Get changes to messages (example)F
+      - name: Get changes to messages (example)
         href: /graph/delta-query-messages?context=graph/api/1.0
       - name: Get changes to users (example)
         href: /graph/delta-query-users?context=graph/api/1.0
