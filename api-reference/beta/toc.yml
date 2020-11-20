@@ -11951,7 +11951,7 @@ items:
           href: resources/searchresponse.md
         - name: Query data
           href: api/search-query.md
-      - name: Index
+      - name: Index (preview)
         items:
         - name: Overview
           href: resources/indexing-api-overview.md

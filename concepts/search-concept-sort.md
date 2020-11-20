@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Sort search results (beta)
+# Sort search results (preview)
 
 Sort search results by specifying the **sortProperties** property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object, identifying a property of a resource in **entityTypes** to sort matches by, in ascending or descending order.
 
@@ -133,7 +133,7 @@ Content-type: application/json
 ### Request
 
 ```HTTP
-POST /search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 
 {

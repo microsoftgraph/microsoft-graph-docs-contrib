@@ -28,7 +28,6 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Get the most relevant emails](#get-the-most-relevant-emails) | **enableTopResults** |
 |[Get selected properties](#get-selected-properties) | **fields** |
 |[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
-|[Search across Graph connectors](/graph/search-concept-custom-types)| **contentSources** |
 
 ## Scope search based on entity types
 
@@ -44,7 +43,6 @@ The following table describes the types available to query and the supported per
 |[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Lists. Note that document libraries are also returned as lists. |
 |[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | List items. Note that files and folders are also returned as list items; **listItem** is the super class of **driveItem**. |
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites in SharePoint.|
-|externalItem|ExternalItem.Read.All| Microsoft Graph connectors| All content ingested with the Microsoft Graph connectors API.|
 
 ## Page search results
 

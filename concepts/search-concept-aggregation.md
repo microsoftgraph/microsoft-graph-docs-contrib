@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Refine search results using aggregations (beta)
+# Refine search results using aggregations (preview)
 
 Refine search results and show their distribution in the index.
 
@@ -212,7 +212,7 @@ The response includes 3 **searchBucket** objects, one for each size range aggreg
 ### Request
 
 ```HTTP
-POST /search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 
 {
