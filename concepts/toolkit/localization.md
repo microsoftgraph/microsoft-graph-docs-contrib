@@ -49,27 +49,66 @@ LocalizationHelper.strings = {
 };
 ```
 
-## Localizating components in the Microsoft Graph Toolkit
+## Strings
 
-Each component and subsequent folder contains it's own set of strings that can be
-localized:
-
-`packages/mgt/src/components/mgt-people-picker/strings.ts`
+### Login
 
 ```ts
-export const strings = {
-  inputPlaceholderText: "Start typing a name",
-  noResultsFound: `We didn't find any matches.`,
-  loadingMessage: "Loading...",
-};
+{
+  signInLinkSubtitle: 'Sign In',
+  signOutLinkSubtitle: 'Sign Out'
+}
 ```
 
-The component itself then must use the BaseComponent's `string` property which is updated if the `string` property of LocalizationHelper is updated.
+### People-Picker
 
-`packages/mgt/src/components/mgt-people-picker/mgt-people-picker.ts`
+```ts
+{
+  inputPlaceholderText: 'Start typing a name',
+  noResultsFound: `We didn't find any matches.`,
+  loadingMessage: 'Loading...'
+}
+```
 
-```html
-<div label="loading-text" aria-label="loading" class="loading-text">
-  ${this.strings.loadingMessage}
-</div>
+### Teams-Channel-Picker
+
+```ts
+{
+  inputPlaceholderText: 'Select a channel',
+  noResultsFound: `We didn't find any matches.`,
+  loadingMessage: 'Loading...'
+}
+```
+
+### Tasks
+
+```ts
+{
+  removeTaskSubtitle: 'Delete Task',
+  cancelNewTaskSubtitle: 'cancel',
+  newTaskPlaceholder: 'Task...',
+  addTaskButtonSubtitle: 'Add'
+}
+```
+
+### Tasks-Base
+
+```ts
+{
+  removeTaskSubtitle: 'Delete Task',
+  cancelNewTaskSubtitle: 'cancel',
+  newTaskPlaceholder: 'Task...',
+  addTaskButtonSubtitle: 'Add'
+}
+```
+
+### Todo
+
+```ts
+{
+  removeTaskSubtitle: 'Delete Task',
+  cancelNewTaskSubtitle: 'cancel',
+  newTaskPlaceholder: 'Task...',
+  addTaskButtonSubtitle: 'Add'
+}
 ```
