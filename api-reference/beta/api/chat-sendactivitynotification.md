@@ -51,7 +51,7 @@ The following table shows the parameters that can be used with this action.
 |templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview).|
 |recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Recipient of the notification. Only Azure AD users are supported. See also [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md). |
 
-The following resources are supported when setting `source` value of the **topic** property to `entityURL`:
+The following resources are supported when setting the `source` value of the **topic** property to `entityURL`:
 
 - [chat](../resources/chat.md)
 - [chatMessage](../resources/chatmessage.md)
