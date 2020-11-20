@@ -11,7 +11,7 @@ ms.prod: "microsoft-teams"
 
 Namespace: microsoft.graph
 
-Update the role of a [conversationMember](../resources/conversationmember.md) in a [channel](../resources/channel.md). This operation is allowed only for channels with membershipType of `private`.
+Update the role of a [conversationMember](../resources/conversationmember.md) in a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `private`.
 
 ## Permissions
 
@@ -37,7 +37,7 @@ PATCH /teams/{id}/channels/{id}/members/{id}
 | Content-type | application/json. Required. |
 
 ## Request body
-`
+
 In the request body, supply the values for the relevant fields to update. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property   | Type |Description|
@@ -59,7 +59,7 @@ The following is a request to apply the `owner` role to an existing member of a 
   "name": "update_member"
 } -->
 ```http
-PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members/{id}
+PATCH https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members/8b081ef6-4792-4def-b2c9-c363a1bf41d5
 content-type: application/json
 content-length: 26
 
