@@ -1,6 +1,6 @@
 ---
 title: "userTeamwork: sendActivityNotification"
-description:  Sends an activity feed notification to a user
+description:  Send an activity feed notification to a user.
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
@@ -10,8 +10,7 @@ doc_type: apiPageType
 # userTeamwork: sendActivityNotification
 Namespace: microsoft.graph
 
-Sends an activity feed notification to a user. For more details about sending notifications and the requirements for the same, refer to the documentation
-[sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
+Send an activity feed notification to a user. For more details about sending notifications and the requirements for doing so, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,10 +50,10 @@ The following table shows the parameters that can be used with this action.
 |previewText|[itemBody](../resources/itembody.md)|Preview text for the notification. Microsoft Teams will only show first 150 characters.|
 |templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview).|
 
-Following resources are supported when setting `source` of `topic` to entity url
+The following resources are supported when setting the `source` value of the **topic** property to `entityUrl`:
 
-- Personal [Teams app installation](../resources/teamsappinstallation.md)
-- Teams app in [apps catalog](../resources/teamscatalogapp.md)
+- [teamsAppInstallation](../resources/teamsappinstallation.md)
+- [teamsCatalogApp](../resources/teamscatalogapp.md)
 
 ## Response
 
@@ -62,7 +61,7 @@ If successful, this action returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1 : Send notification to a user for a task created
+### Example 1: Send notification to a user for a task created
 
 #### Request
 <!-- {
@@ -72,7 +71,6 @@ If successful, this action returns a `204 No Content` response code.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/users/{userId}/teamwork/sendActivityNotification
-
 Content-Type: application/json
 
 {
@@ -104,9 +102,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2 : Notify a user about an event using custom topic
+### Example 2: Notify a user about an event using custom topic
 
-If you want to link an aspect which is not represented by Microsoft Graph, or want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. `webUrl` is required when using `topic` source as `text`.
+If you want to link an aspect that is not represented by Microsoft Graph, or you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. `webUrl` is required when using `topic` source as `text`.
 
 #### Request
 <!-- {
