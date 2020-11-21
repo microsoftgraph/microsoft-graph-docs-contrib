@@ -212,6 +212,7 @@ Namespace: microsoft.graph
 | darkYellow
 | unknownFutureValue
 
+
 ### timeOffReasonIconType values
 
 |Member|
@@ -283,6 +284,7 @@ Namespace: microsoft.graph
 | windows
 | iana
 
+
 ### freeBusyStatus values
 
 | Member           | Value |
@@ -294,6 +296,7 @@ Namespace: microsoft.graph
 | workingElsewhere | 4     |
 | unknown          | -1    |
 
+
 ### physicalAddressType values
 
 | Member
@@ -303,6 +306,7 @@ Namespace: microsoft.graph
 | business
 | other
 
+
 ### attendeeType values
 
 | Member
@@ -310,6 +314,7 @@ Namespace: microsoft.graph
 | required
 | optional
 | resource
+
 
 ### externalAudienceScope values
 
@@ -319,6 +324,7 @@ Namespace: microsoft.graph
 | contactsOnly
 | all
 
+
 ### automaticRepliesStatus values
 
 | Member
@@ -326,6 +332,7 @@ Namespace: microsoft.graph
 | disabled
 | alwaysEnabled
 | scheduled
+
 
 ### calendarColor values
 
@@ -343,6 +350,7 @@ Namespace: microsoft.graph
 | lightRed    | 8     |
 | maxColor    | 9     |
 
+
 ### educationSynchronizationProfileState values
 
 | Member             | Value |
@@ -353,6 +361,7 @@ Namespace: microsoft.graph
 | provisioned        | 6     |
 | provisioning       | 7     |
 | unknownFutureValue | 8     |
+
 
 ### educationSynchronizationStatus values
 
@@ -384,6 +393,7 @@ Namespace: microsoft.graph
 | other
 | unknownFutureValue
 
+
 ### eventType values
 
 | Member
@@ -392,6 +402,7 @@ Namespace: microsoft.graph
 | occurrence
 | exception
 | seriesMaster
+
 
 ### sensitivity values
 
@@ -402,6 +413,7 @@ Namespace: microsoft.graph
 | private
 | confidential
 
+
 ### importance values
 
 | Member
@@ -410,13 +422,14 @@ Namespace: microsoft.graph
 | normal
 | high
 
-### educationUserRole values
 
+### educationUserRole values
 | Member
 |:---------------------
 | student
 | teacher
 | faculty
+
 
 ### meetingMessageType values
 
@@ -429,6 +442,7 @@ Namespace: microsoft.graph
 | meetingTentativelyAccepted
 | meetingDeclined
 
+
 ### followupFlagStatus values
 
 | Member
@@ -437,12 +451,14 @@ Namespace: microsoft.graph
 | complete
 | flagged
 
+
 ### inferenceClassificationType values
 
 | Member
 |:-----------------
 | focused
 | other
+
 
 ### iosNotificationAlertType values
 
@@ -469,12 +485,13 @@ Namespace: microsoft.graph
 | enrollmentRestrictionsEnforced
 | clientDisconnected
 
-### bodyType values
 
+### bodyType values
 | Member
 |:---------
 | text
 | html
+
 
 ### locationType values
 
@@ -501,6 +518,7 @@ Namespace: microsoft.graph
 | private
 | bing
 
+
 ### messageActionFlag values
 
 | Member
@@ -517,6 +535,7 @@ Namespace: microsoft.graph
 | replyToAll
 | review
 
+
 ### onenoteUserRole values
 
 | Member      | Value |
@@ -526,6 +545,7 @@ Namespace: microsoft.graph
 | Reader      | 2     |
 | None        | -1    |
 
+
 ### operationStatus values
 
 | Member
@@ -534,6 +554,7 @@ Namespace: microsoft.graph
 | Running
 | Completed
 | Failed
+
 
 ### onenotePatchActionType values
 
@@ -552,6 +573,7 @@ Namespace: microsoft.graph
 | After
 | Before
 
+
 ### phoneType values
 
 | Member
@@ -567,6 +589,7 @@ Namespace: microsoft.graph
 | pager
 | radio
 
+
 ### plannerPreviewType values
 
 | Member
@@ -576,6 +599,7 @@ Namespace: microsoft.graph
 | checklist
 | description
 | reference
+
 
 ### status values
 
@@ -587,6 +611,7 @@ Namespace: microsoft.graph
 | ignored
 | unknownFutureValue
 
+
 ### weekIndex values
 
 | Member
@@ -596,6 +621,7 @@ Namespace: microsoft.graph
 | third
 | fourth
 | last
+
 
 ### dayOfWeek values
 
@@ -620,6 +646,7 @@ Namespace: microsoft.graph
 | absoluteYearly
 | relativeYearly
 
+
 ### recurrenceRangeType values
 
 | Member
@@ -628,14 +655,15 @@ Namespace: microsoft.graph
 | noEnd
 | numbered
 
-### onenoteSourceService values
 
+### onenoteSourceService values
 | Member
 |:---------------------
 | Unknown
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
+
 
 ### responseType values
 
@@ -648,6 +676,7 @@ Namespace: microsoft.graph
 | declined
 | notResponded
 
+
 ### activityDomain values
 
 | Member
@@ -656,6 +685,7 @@ Namespace: microsoft.graph
 | work
 | personal
 | unrestricted
+
 
 ### websiteType values
 
@@ -666,6 +696,7 @@ Namespace: microsoft.graph
 | work
 | blog
 | profile
+
 
 ### categoryColor values
 
@@ -1433,68 +1464,3 @@ Possible values for user account types (group membership), per Windows definitio
 |:---
 | entityUrl
 | text
-
-### cloudPcDeviceImageStatus values
-
-|Member|
-|:---|
-|pending|
-|ready|
-|failed|
-
-### cloudPcDeviceImageStatusDetails values
-
-|Member|
-|:---|
-|internalServerError|
-|sourceImageNotFound|
-
-### cloudPcOnPremisesConnectionHealthCheckErrorType values
-
-|Member|
-|:---|
-|dnsCheckFqdnNotFound|
-|dnsCheckUnknownError|
-|adJoinCheckFqdnNotFound|
-|adJoinCheckIncorrectCredentials|
-|adJoinCheckOrganizationalUnitNotFound|
-|adJoinCheckOrganizationalUnitIncorrectFormat|
-|adJoinCheckUnknownError |
-|endpointConnectivityCheckUrlNotWhitelisted|
-|endpointConnectivityCheckUnknownError|
-|aadConnectivityCheckUnknownError |
-|resourceAvailabilityCheckNoSubnetIP |
-|resourceAvailabilityCheckUnknownError |
-|internalServerUnknownError |
-
-### cloudPcOnPremisesConnectionStatus values
-
-|Member|
-|:---|
-|pending|
-|running|
-|passed|
-|failed|
-|unknownFutureValue|
-
-### cloudPcProvisioningPolicyImageType values
-
-|Member|
-|:---|
-|custom|
-|gallery|
-
-### cloudPcStatus values
-
-|Member|
-|:---|
-|notProvisioned|
-|provisioning|
-|provisioned|
-|upgrading|
-|inGracePeriod|
-|deprovisioning|
-|upgradeFailed|
-|provisionFailed|
-|deprovisionFailed|
-|reprovisionFailed|
