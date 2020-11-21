@@ -72,8 +72,10 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | v1.0 | Added support for [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) (RSC) permissions to v1.0 APIs. |
-| Addition | v1.0 | Added [APIs for reading channel message](/graph/api/resources/chatmessage?view=graph-rest-1.0&preserve-view=true). |
+| Addition | v1.0 | Added support for [resource-specific consent](https://aka.ms/teams-rsc) (RSC) permissions to v1.0 APIs. |
+| Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-v1.0&preserve-view=true). |
+| Addition | Beta | Added the following methods to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource: [List members in channel](/graph/api/channel-list-members?view=graph-rest-beta&preserve-view=true), [Get member of channel](/graph/api/channel-get-members?view=graph-rest-beta&preserve-view=true), [Add member to channel](/graph/api/channel-add-members?view=graph-rest-beta&preserve-view=true),  [Update role of member in channel](/graph/api/channel-update-members?view=graph-rest-beta&preserve-view=true), [Delete member from channel](/graph/api/channel-delete-members?view=graph-rest-beta&preserve-view=true).|
+| Addition | v1.0 | Added the following methods to the [channel](/graph/api/resources/channel?view=graph-rest-v1.0&preserve-view=true) resource: [List members of channel](/graph/api/channel-list-members?view=graph-rest-v1.0&preserve-view=true), [Get member of channel](/graph/api/channel-get-members?view=graph-rest-v1.0&preserve-view=true) [Add member to channel](/graph/api/channel-add-members?view=graph-rest-v1.0&preserve-view=true),  [Update role of member in channel](/graph/api/channel-update-members?view=graph-rest-v1.0&preserve-view=true), [Delete member from channel](/graph/api/channel-delete-members?view=graph-rest-v1.0&preserve-view=true).|
 
 ## October 2020
 
@@ -190,7 +192,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the **channelCreationMode** property to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | v1.0 | Added the [List members](/graph/api/conversationmember-list?view=graph-rest-beta&preserve-view=true), [Get member](/graph/api/conversationmember-get?view=graph-rest-beta&preserve-view=true), [Add member](/graph/api/conversationmember-add?view=graph-rest-beta&preserve-view=true), [Update member](/graph/api/conversationmember-update?view=graph-rest-beta&preserve-view=true), and [Delete member](/graph/api/conversationmember-delete?view=graph-rest-beta&preserve-view=true) methods to the [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) and [aadUserConversationMember](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta&preserve-view=true) resources.|
 |Addition|beta|Added support for **completeMigration** to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) and [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) resources.
-
 
 ### To-do tasks
 
@@ -5557,3 +5558,4 @@ Added support for dynamic group membership through the public preview API, inclu
 | Fix             | v1.0 and beta | Fixed being able to select certain user properties on other users, when referencing the user by user principal name (UPN). For example: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
 | Fix             | v1.0 and beta | Fixed calling the _microsoft.graph.reminderView_ user bound function, which was failing with the following error: Could not find a property named businessPhones on type  Microsoft.OutlookServices.Reminder. |
 | Fix             | v1.0 and beta | Fixed user creation and update (POST/PATCH /v1.0/users), which was failing with a 400 error. |
+
