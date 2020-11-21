@@ -12595,8 +12595,6 @@ items:
           href: api/user-upgrade-teamsappinstallation.md
       - name: Activity feed
         items:
-        - name: Notification topic
-          href: resources/teamworkactivitytopic.md
         - name: Send notification to user in chat
           href: api/chat-sendactivitynotification.md
         - name: Send notification to user in team
