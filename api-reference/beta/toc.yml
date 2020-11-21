@@ -12461,6 +12461,16 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
+        - name: List members of channel
+          href: api/channel-list-members.md
+        - name: Get member of channel
+          href: api/channel-get-members.md
+        - name: Add member to channel 
+          href: api/channel-add-members.md
+        - name: Update role of member in channel
+          href: api/channel-update-members.md
+        - name: Delete member from channel
+          href: api/channel-delete-members.md
         - name: Complete migration for channel
           href: api/channel-completemigration.md
         - name: Get files folder
@@ -12583,6 +12593,14 @@ items:
           href: api/user-delete-teamsappinstallation.md
         - name: Upgrade installed app for user
           href: api/user-upgrade-teamsappinstallation.md
+      - name: Activity feed
+        items:
+        - name: Send notification to user in chat
+          href: api/chat-sendactivitynotification.md
+        - name: Send notification to user in team
+          href: api/team-sendactivitynotification.md
+        - name: Send notification to user
+          href: api/userteamwork-sendactivitynotification.md
       - name: Tab
         href: resources/teamstab.md
         items:

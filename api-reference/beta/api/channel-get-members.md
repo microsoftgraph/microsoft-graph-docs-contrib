@@ -1,17 +1,19 @@
 ---
-title: "Get conversationMember"
-description: "Get member of chat or channel."
+title: "Get member of channel"
+description: "Get member of channel."
 author: "laujan"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get conversationMember
+# Get member of channel
 
 Namespace: microsoft.graph
 
-Retrieve a [conversationMember](../resources/conversationmember.md) from a [chat](../resources/chatmessage.md) or [channel](../resources/channel.md).
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Get a [conversationMember](../resources/conversationmember.md) from a [channel](../resources/channel.md).
 
 ## Permissions
 
@@ -19,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)| For **user** or **chat** resource: Chat.ReadBasic, Chat.Read, Chat.ReadWrite<br/><br/>For **channel** resource: ChannelMember.Read.All, ChannelMember.ReadWrite |
+|Delegated (work or school account)|ChannelMember.Read.All, ChannelMember.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| For **user** or **chat** resource: Not supported.<br/><br/>For **channel** resource: TeamMember.Read.Group*, ChannelMember.Read.All, ChannelMember.ReadWrite.All |
+|Application|ChannelMember.Read.All, ChannelMember.ReadWrite.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
@@ -29,10 +31,8 @@ One of the following permissions is required to call this API. To learn more, in
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "ignored"} -->
 ```http
-GET /chats/{id}/members/{id}
-GET /users/{id}/chats/{id}/members/{id}
 GET /teams/{id}/channels/{id}/members/{id}
 ```
 
@@ -59,46 +59,46 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 ### Request
 
 Here is an example of the request.
-
 <!-- {
   "blockType": "request",
-  "name": "get_conversation_member"
-}-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/V1.0/chats/{id}/members/{id}
+  "name": "channel-get_member"
+} -->
+```http
+GET https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members/8b081ef6-4792-4def-b2c9-c363a1bf41d5
 ```
 
 ### Response
 
 Here is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-<!--
-{
+>**Note:** The response object shown here might be shortened for readability. 
+<!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "get_conversation_member",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 201
 
 {
-  "id": "id-value",
-  "displayName": "display-name-value"
+"@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
+"@odata.type": "#microsoft.graph.aadUserConversationMember",
+"id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+"roles": ["owner"],
+"displayName": "John Doe",
+"userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+"email": null
 }
-```
 
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "conversation: member get",
+  "description": "get_channel_member",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
@@ -106,3 +106,4 @@ Content-length: 201
   ]
 }
 -->
+
