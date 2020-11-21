@@ -1,6 +1,6 @@
 ---
 title: "aadUserNotificationRecipient resource type"
-description:  Represents recipient of a notification sent in Microsoft Teams activity feed where recipient is an AzureAD user.
+description:  Represents an Azure Active Directory (Azure AD) user recipient of a notification sent in a Microsoft Teams activity feed.
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
@@ -11,14 +11,14 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents AzureAD user recipient of a notification sent in Microsoft Teams activity feed.
+Represents an Azure Active Directory (Azure AD) user recipient of a notification sent in a Microsoft Teams activity feed.
 
 Inherits from [teamworkNotificationRecipient](teamworknotificationrecipient.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|userId|String|Azure AD user identifier. This is the Id from [list users](../api/user-list.md)|
+|userId|String|Azure AD user identifier. Use the [List users](../api/user-list.md) method to get this ID.|
 
 ## Relationships
 None.
