@@ -13,6 +13,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## November 2020
 
+
 ### Change notifications
 
 | **Change type** | **Version**   | **Description**                          |
@@ -68,6 +69,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the **firewallSharedSettings** member to the [deviceManagementTemplateType](/graph/api/resources/intune-deviceintent-devicemanagementtemplatetype?view=graph-rest-beta&preserve-view=true) enum type|
 |Addition|beta|Added the **upgradeFailed** member to the [microsoftTunnelServerHealthStatus](/graph/api/resources/intune-mstunnel-microsofttunnelserverhealthstatus?view=graph-rest-beta&preserve-view=true) enum type|
 
+### Search
+
+| **Change type** | **Version** | **Description**                              |
+|:----------------|:------------|:---------------------------------------------|
+| Addition        | v1.0        | Added the [Microsoft Search API](search-concept-overview.md) that constitutes [querying](/graph/api/search-query?view=graph-rest-1.0&preserve-view=true) capabilities for content in M365. |
+| Addition        | v1.0        | Added the [query](/graph/api/search-query?view=graph-rest-1.0&preserve-view=true) action. |
+| Addition        | v1.0        | Added the [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-1.0&preserve-view=true), [searchQuery](/graph/api/resources/searchquery?view=graph-rest-1.0&preserve-view=true), [searchResponse](/graph/api/resources/searchresponse?view=graph-rest-1.0&preserve-view=true), [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-1.0&preserve-view=true), and [searchHit](/graph/api/resources/searchhit?view=graph-rest-1.0&preserve-view=true) complex types. |
+
 ### Teamwork
 
 | **Change type** | **Version** | **Description**                          |
@@ -76,6 +85,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-v1.0&preserve-view=true). |
 | Addition | Beta | Added the following methods to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource: [List members in channel](/graph/api/channel-list-members?view=graph-rest-beta&preserve-view=true), [Get member of channel](/graph/api/channel-get-members?view=graph-rest-beta&preserve-view=true), [Add member to channel](/graph/api/channel-add-members?view=graph-rest-beta&preserve-view=true),  [Update role of member in channel](/graph/api/channel-update-members?view=graph-rest-beta&preserve-view=true), [Delete member from channel](/graph/api/channel-delete-members?view=graph-rest-beta&preserve-view=true).|
 | Addition | v1.0 | Added the following methods to the [channel](/graph/api/resources/channel?view=graph-rest-v1.0&preserve-view=true) resource: [List members of channel](/graph/api/channel-list-members?view=graph-rest-v1.0&preserve-view=true), [Get member of channel](/graph/api/channel-get-members?view=graph-rest-v1.0&preserve-view=true) [Add member to channel](/graph/api/channel-add-members?view=graph-rest-v1.0&preserve-view=true),  [Update role of member in channel](/graph/api/channel-update-members?view=graph-rest-v1.0&preserve-view=true), [Delete member from channel](/graph/api/channel-delete-members?view=graph-rest-v1.0&preserve-view=true).|
+
 
 ## October 2020
 
