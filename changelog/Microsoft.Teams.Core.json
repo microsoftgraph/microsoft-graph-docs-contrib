@@ -55,6 +55,9 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-11-17T11:52:14.154Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
       {
         "ChangeList": [
           {
