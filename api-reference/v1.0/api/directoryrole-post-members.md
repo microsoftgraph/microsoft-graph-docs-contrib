@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 Use this API to create a new directory role member.
 
 > [!Note]
-> You can use both object ID and template ID of the directoryRole with this API. Template ID of a built-in role is immutable and can be seen in role description on Azure portal. It is also documented [here](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+> You can use both the object ID and template ID of the **directoryRole** with this API. The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal. For details, see [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,7 +35,7 @@ POST /directoryRoles/{id}/members/$ref
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Content-Type  | string  | application/json  |
+| Content-Type  | string  | application/json. Required.  |
 
 ## Request body
 In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.
@@ -84,7 +84,7 @@ Content-type: application/json
 
 
 ##### Response
-Note: The response object shown here may be truncated for brevity. 
+>**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -134,7 +134,7 @@ Content-type: application/json
 
 
 ##### Response
-Note: The response object shown here may be truncated for brevity. 
+>**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
