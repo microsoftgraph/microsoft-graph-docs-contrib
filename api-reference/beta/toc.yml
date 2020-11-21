@@ -11970,7 +11970,7 @@ items:
             href: api/reportroot-getyammergroupsactivitygroupcounts.md
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
-    - name: Search (preview)
+    - name: Search
       displayname: Microsoft Search API
       items:
       - name: Query
@@ -11983,7 +11983,7 @@ items:
           href: resources/searchresponse.md
         - name: Query data
           href: api/search-query.md
-      - name: Index
+      - name: Index (preview)
         items:
         - name: Overview
           href: resources/indexing-api-overview.md
