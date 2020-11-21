@@ -26,22 +26,28 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added the **role** property to the [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo?view=graph-rest-1.0&preserve-view=true) complex type.|
 | Addition | v1.0 | Added the **lobbyBypassSettings**, **isEntryExitAnnounced**, and **allowedPresenters** property to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-1.0&preserve-view=true) entity to support meeting option configuration.|
 
-### Identity and access
+### Devices and apps | Cloud PC
 
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the **spa** property to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) resource. |
-| Addition | beta | Added the [organizationalBrandingProperties](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true) resource type and associated methods, which allow for the customization of the visual look and feel of sign-in screens.|
-
-
-### Identity and access | Governance
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-|Addition|beta|Added resource types [accessReviewApplyAction](/graph/api/resources/accessreviewapplyaction?view=graph-rest-beta&preserve-view=true), [accessReviewInstance](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true), [accessReviewInstanceDecisionItem](/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta&preserve-view=true), [accessReviewInstanceDecisionItemServicePrincipalTarget](/graph/api/resources/accessreviewinstancedecisionitemserviceprincipaltarget?view=graph-rest-beta&preserve-view=true), [accessReviewInstanceDecisionItemTarget](/graph/api/resources/accessreviewinstancedecisionitemtarget?view=graph-rest-beta&preserve-view=true), [accessReviewInstanceDecisionItemUserTarget](/graph/api/resources/accessreviewinstancedecisionitemusertarget?view=graph-rest-beta&preserve-view=true), [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true), [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true), [accessReviewScheduleSettings](/graph/api/resources/accessreviewschedulesettings?view=graph-rest-beta&preserve-view=true), [accessReviewScope](/graph/api/resources/accessreviewscope?view=graph-rest-beta&preserve-view=true) and [access reviews root](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true).|
-|Addition|beta|Added [acceptRecommendations](/graph/api/accessreviewinstance-acceptrecommendations?view=graph-rest-beta&preserve-view=true), [applyDecisions](/graph/api/accessreviewinstance-applydecisions?view=graph-rest-beta&preserve-view=true), [get](/graph/api/accessreviewinstance-get?view=graph-rest-beta&preserve-view=true), [list](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true), [list pendingAccessReviewInstances](/graph/api/accessreviewinstance-pendingaccessreviewinstances?view=graph-rest-beta&preserve-view=true), [sendReminder](/graph/api/accessreviewinstance-sendreminder?view=graph-rest-beta&preserve-view=true), [stop](/graph/api/accessreviewinstance-stop?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewInstance](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true) resource.|
-|Addition|beta|Added [list](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true), [listPendingApproval](/graph/api/accessreviewinstancedecisionitem-listpendingapproval?view=graph-rest-beta&preserve-view=true), [update](/graph/api/accessreviewinstancedecisionitem-update?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewInstanceDecisionItem](/graph/api/resources/accessreviewinstancedecisionitem.md) resource.|
-|Addition|beta|Added [create](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true), [delete](/graph/api/accessreviewscheduledefinition-delete?view=graph-rest-beta&preserve-view=true), [get](/graph/api/accessreviewscheduledefinition-get?view=graph-rest-beta&preserve-view=true), [list](/graph/api/accessreviewscheduledefinition-list?view=graph-rest-beta&preserve-view=true), [update](/graph/api/accessreviewscheduledefinition-update?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) resource.|
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the [virtualEndpoint](/graph/api/resources/virtualEndpoint?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPcOnPremisesConnection](/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPcDeviceImage](/graph/api/resources/cloudPcDeviceImage?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPC](/graph/api/resources/cloudPC?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPcProvisioningPolicy](/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPcProvisioningPolicyAssignment](/graph/api/resources/cloudPcProvisioningPolicyAssignment?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPcOnPremisesConnectionStatusDetails](/graph/api/resources/cloudPcOnPremisesConnectionStatusDetails?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudPcOnPremisesConnectionHealthCheck?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPcSourceDeviceImage](/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPcStatusDetails](/graph/api/resources/cloudPcStatusDetails?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [keyValuePair](/graph/api/resources/keyValuePair?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPcManagementAssignmentTarget](/graph/api/resources/cloudPcManagementAssignmentTarget?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPcMaagementGroupAssignmentTarget](/graph/api/resources/cloudPcManagementGroupAssignmentTarget?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [assign](/graph/api/cloudPcProvisioningPolicy-assign?view=graph-rest-beta&preserve-view=true) method to the [cloudPcProvisioningPolicy](/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta&preserve-view=true) resource|
+|Addition|beta|Added the [runHealthChecks](/graph/api/cloudPcOnPremisesConnection-runHealthChecks?view=graph-rest-beta&preserve-view=true) method to the [cloudPcOnPremisesConnection](/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta&preserve-view=true) resource|
+|Addition|beta|Added the [reprovision](/graph/api/cloudPC-reprovision?view=graph-rest-beta&preserve-view=true) method to the [cloudPC](/graph/api/resources/cloudPC?view=graph-rest-beta&preserve-view=true) resource|
+|Addition|beta|Added the [getEffectivePermissions](/graph/api/virtualEndpoint-getEffectivePermissions?view=graph-rest-beta&preserve-view=true) method to the [virtualEndpoint](/graph/api/resources/virtualEndpoint?view=graph-rest-beta&preserve-view=true) resource|
+|Addition|beta|Added the [getSourceImages](/graph/api/cloudPcDeviceImage-getSourceImages?view=graph-rest-beta&preserve-view=true) method to the [cloudPcDeviceImage](/graph/api/resources/cloudPcDeviceImage?view=graph-rest-beta&preserve-view=true) resource|
 
 ### Devices and apps | Corporate management
 
@@ -68,6 +74,23 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the **firewallSharedAppList**, **firewallSharedIpList** and **firewallSharedPortlist** members to the [deviceManagementTemplateSubtype](/graph/api/resources/intune-deviceintent-devicemanagementtemplatesubtype?view=graph-rest-beta&preserve-view=true) enum type|
 |Addition|beta|Added the **firewallSharedSettings** member to the [deviceManagementTemplateType](/graph/api/resources/intune-deviceintent-devicemanagementtemplatetype?view=graph-rest-beta&preserve-view=true) enum type|
 |Addition|beta|Added the **upgradeFailed** member to the [microsoftTunnelServerHealthStatus](/graph/api/resources/intune-mstunnel-microsofttunnelserverhealthstatus?view=graph-rest-beta&preserve-view=true) enum type|
+
+### Identity and access
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the **spa** property to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the [organizationalBrandingProperties](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true) resource type and associated methods, which allow for the customization of the visual look and feel of sign-in screens.|
+
+
+### Identity and access | Governance
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition|beta|Added resource types [accessReviewApplyAction](/graph/api/resources/accessreviewapplyaction?view=graph-rest-beta&preserve-view=true), [accessReviewInstance](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true), [accessReviewInstanceDecisionItem](/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta&preserve-view=true), [accessReviewInstanceDecisionItemServicePrincipalTarget](/graph/api/resources/accessreviewinstancedecisionitemserviceprincipaltarget?view=graph-rest-beta&preserve-view=true), [accessReviewInstanceDecisionItemTarget](/graph/api/resources/accessreviewinstancedecisionitemtarget?view=graph-rest-beta&preserve-view=true), [accessReviewInstanceDecisionItemUserTarget](/graph/api/resources/accessreviewinstancedecisionitemusertarget?view=graph-rest-beta&preserve-view=true), [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true), [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true), [accessReviewScheduleSettings](/graph/api/resources/accessreviewschedulesettings?view=graph-rest-beta&preserve-view=true), [accessReviewScope](/graph/api/resources/accessreviewscope?view=graph-rest-beta&preserve-view=true) and [access reviews root](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true).|
+|Addition|beta|Added [acceptRecommendations](/graph/api/accessreviewinstance-acceptrecommendations?view=graph-rest-beta&preserve-view=true), [applyDecisions](/graph/api/accessreviewinstance-applydecisions?view=graph-rest-beta&preserve-view=true), [get](/graph/api/accessreviewinstance-get?view=graph-rest-beta&preserve-view=true), [list](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true), [list pendingAccessReviewInstances](/graph/api/accessreviewinstance-pendingaccessreviewinstances?view=graph-rest-beta&preserve-view=true), [sendReminder](/graph/api/accessreviewinstance-sendreminder?view=graph-rest-beta&preserve-view=true), [stop](/graph/api/accessreviewinstance-stop?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewInstance](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true) resource.|
+|Addition|beta|Added [list](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true), [listPendingApproval](/graph/api/accessreviewinstancedecisionitem-listpendingapproval?view=graph-rest-beta&preserve-view=true), [update](/graph/api/accessreviewinstancedecisionitem-update?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewInstanceDecisionItem](/graph/api/resources/accessreviewinstancedecisionitem.md) resource.|
+|Addition|beta|Added [create](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true), [delete](/graph/api/accessreviewscheduledefinition-delete?view=graph-rest-beta&preserve-view=true), [get](/graph/api/accessreviewscheduledefinition-get?view=graph-rest-beta&preserve-view=true), [list](/graph/api/accessreviewscheduledefinition-list?view=graph-rest-beta&preserve-view=true), [update](/graph/api/accessreviewscheduledefinition-update?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) resource.|
 
 ### Search
 
