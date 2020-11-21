@@ -26,6 +26,29 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added the **role** property to the [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo?view=graph-rest-1.0&preserve-view=true) complex type.|
 | Addition | v1.0 | Added the **lobbyBypassSettings**, **isEntryExitAnnounced**, and **allowedPresenters** property to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-1.0&preserve-view=true) entity to support meeting option configuration.|
 
+### Devices and apps | Cloud PC
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the [virtualEndpoint](/graph/api/resources/virtualEndpoint?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPcOnPremisesConnection](/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPcDeviceImage](/graph/api/resources/cloudPcDeviceImage?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPC](/graph/api/resources/cloudPC?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPcProvisioningPolicy](/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPcProvisioningPolicyAssignment](/graph/api/resources/cloudPcProvisioningPolicyAssignment?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPcOnPremisesConnectionStatusDetails](/graph/api/resources/cloudPcOnPremisesConnectionStatusDetails?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudPcOnPremisesConnectionHealthCheck?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPcSourceDeviceImage](/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPcStatusDetails](/graph/api/resources/cloudPcStatusDetails?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [keyValuePair](/graph/api/resources/keyValuePair?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPcManagementAssignmentTarget](/graph/api/resources/cloudPcManagementAssignmentTarget?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [cloudPcMaagementGroupAssignmentTarget](/graph/api/resources/cloudPcManagementGroupAssignmentTarget?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [assign](/graph/api/cloudPcProvisioningPolicy-assign?view=graph-rest-beta&preserve-view=true) method to the [cloudPcProvisioningPolicy](/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta&preserve-view=true) resource|
+|Addition|beta|Added the [runHealthChecks](/graph/api/cloudPcOnPremisesConnection-runHealthChecks?view=graph-rest-beta&preserve-view=true) method to the [cloudPcOnPremisesConnection](/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta&preserve-view=true) resource|
+|Addition|beta|Added the [reprovision](/graph/api/cloudPC-reprovision?view=graph-rest-beta&preserve-view=true) method to the [cloudPC](/graph/api/resources/cloudPC?view=graph-rest-beta&preserve-view=true) resource|
+|Addition|beta|Added the [getEffectivePermissions](/graph/api/virtualEndpoint-getEffectivePermissions?view=graph-rest-beta&preserve-view=true) method to the [virtualEndpoint](/graph/api/resources/virtualEndpoint?view=graph-rest-beta&preserve-view=true) resource|
+|Addition|beta|Added the [getSourceImages](/graph/api/cloudPcDeviceImage-getSourceImages?view=graph-rest-beta&preserve-view=true) method to the [cloudPcDeviceImage](/graph/api/resources/cloudPcDeviceImage?view=graph-rest-beta&preserve-view=true) resource|
+
 ### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
