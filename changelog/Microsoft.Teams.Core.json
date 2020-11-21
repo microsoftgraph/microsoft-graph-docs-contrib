@@ -1,5 +1,63 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "5577ef08-28cb-11eb-9746-158983535857",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkActivityTopic",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkActivityTopic](https://docs.microsoft.com/en-us/graph/api/resources/teamworkActivityTopic?view=graph-rest-beta) resource type.",
+          "Target": "teamworkActivityTopic"
+        },
+        {
+          "Id": "5577ef08-28cb-11eb-9746-158983535857",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkNotificationAudience",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkNotificationAudience](https://docs.microsoft.com/en-us/graph/api/resources/teamworkNotificationAudience?view=graph-rest-beta) resource type.",
+          "Target": "teamworkNotificationAudience"
+        },
+        {
+          "Id": "557a53e7-28cb-11eb-9746-158983535857",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aadUserNotificationAudience",
+          "ChangeType": "Addition",
+          "Description": "Added the [aadUserNotificationAudience](https://docs.microsoft.com/en-us/graph/api/resources/aadUserNotificationAudience?view=graph-rest-beta) resource type.",
+          "Target": "aadUserNotificationAudience"
+        },
+        {
+          "Id": "557a53e7-28cb-11eb-9746-158983535857",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the **sendActivityNotification** to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource type.",
+          "Target": "chat"
+        },
+        {
+          "Id": "557a53e7-28cb-11eb-9746-158983535857",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the **sendActivityNotification** to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource type.",
+          "Target": "chat"
+        },
+        {
+          "Id": "557a53e7-28cb-11eb-9746-158983535857",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the **sendActivityNotification** to then [userTeamwork](https://docs.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-beta) resource type.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "556bfff5-28cb-11eb-9746-158983535857",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-11-17T11:52:14.154Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
       {
         "ChangeList": [
           {
