@@ -1,6 +1,6 @@
 ---
 title: "teamworkNotificationRecipient resource type"
-description: Represents recipient of a notification sent in Microsoft Teams activity feed
+description: Represents the recipient of a notification sent in a Microsoft Teams activity feed.
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
@@ -11,10 +11,10 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents recipient of a notification sent in Microsoft Teams activity feed. See also [aadUserNotificationRecipient](aadusernotificationrecipient.md).
+Represents the recipient of a notification sent in a Microsoft Teams activity feed. See also [aadUserNotificationRecipient](aadusernotificationrecipient.md).
 
 ## Properties
-This resource has no properties
+None.
 
 ## Relationships
 None.
