@@ -1,5 +1,5 @@
 ---
-title: "VirtualEndpoint: getEffectivePermissions"
+title: "virtualEndpoint: getEffectivePermissions"
 description: "**GetEffectivePermissions is a function that retrives the effective permissions of the currently authenticated user, which helps UX hide or disable content that the current user doesn't have access to.**"
 author: "AshleyYangSZ"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: ""
 doc_type: apiPageType
 ---
 
-# VirtualEndpoint: getEffectivePermissions
+# virtualEndpoint: getEffectivePermissions
 
 Namespace: microsoft.graph
 

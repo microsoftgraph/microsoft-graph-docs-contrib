@@ -131,7 +131,7 @@
         "Cloud": "prd",
         "Version": "beta",
         "CreatedDateTime": "2020-11-06T15:42:07.177Z",
-        "WorkloadArea": "Cloud PC",
+        "WorkloadArea": "Cloud managed Desktop",
         "SubArea": null
     }]
 }
