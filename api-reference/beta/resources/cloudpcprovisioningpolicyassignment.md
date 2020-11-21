@@ -13,11 +13,6 @@ Namespace: microsoft.graph
 
 Represents a defined collection of provisioning policy assignments.
 
-## Methods
-
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Assign](../api/cloudpcprovisioningpolicy-assign.md)|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md)|Assign [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) to user groups.|
 
 ## Properties
 

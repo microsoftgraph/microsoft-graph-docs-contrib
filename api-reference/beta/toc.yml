@@ -9283,11 +9283,6 @@ items:
             href: api/cloudpcprovisioningpolicy-delete.md
           - name: Assign
             href: api/cloudpcprovisioningpolicy-assign.md
-        - name: Cloud PC provisioning policy assignment
-          href: resources/cloudpcprovisioningpolicyassignment.md
-          items:
-          - name: Assign
-            href: api/cloudpcprovisioningpolicy-assign.md
     - name: Education
       items:
       - name: Overview

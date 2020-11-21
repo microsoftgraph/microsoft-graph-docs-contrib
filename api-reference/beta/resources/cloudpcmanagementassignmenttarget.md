@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Base type for assignment targets.
 
+The [cloudPcManagementGroupAssignmentTarget](cloudpcmanagementgroupassignmenttarget.md) resource. which represents an assignment target group, inherits from this base type, **cloudPcManagementAssignmentTarget**.
+
 ## Properties
 
 Not applicable.

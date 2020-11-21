@@ -1427,6 +1427,13 @@ Possible values for user account types (group membership), per Windows definitio
 | delegated
 | delegatedUserConsentable
 
+### teamworkActivityTopicSource values 
+
+| Member
+|:---
+| entityUrl
+| text
+
 ### cloudPcDeviceImageStatus values
 
 |Member|
