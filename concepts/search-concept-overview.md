@@ -20,7 +20,7 @@ Microsoft Search is an enterprise search engine that delivers productivity gains
 
 The Microsoft Search API provides one unified search endpoint that you can use to [query](/graph/api/search-query) data in the Microsoft cloud - messages and events in Outlook mailboxes, and files on OneDrive and SharePoint - that Microsoft Search already indexes.
 
-### Include custom external data in search experience
+### Include custom external data in search experience (preview)
 
 Use [Microsoft Graph connectors](/microsoftsearch/connectors-overview) to include data outside of the Microsoft cloud in your search experience. For instance, connect to an organization's human resources database or product catalog. Then use the Microsoft Search API to seamlessly [query](/graph/api/search-query) the external data source. 
 
@@ -36,14 +36,14 @@ The Microsoft Search API supports searching the following content in the Microso
 
 - Outlook email [messages](/graph/api/resources/message) and calendar [events](/graph/api/resources/event) objects
 - SharePoint and OneDrive files and folders ([driveItem](/graph/api/resources/driveitem)), [lists](/graph/api/resources/list), [listItems](/graph/api/resources/listitem), [sites](/graph/api/resources/site) and [drives](/graph/api/resources/drive)
-- Content ingested throught the Graph Connectors platform : [externalItems](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true)
+- Content ingested throught the Graph Connectors platform : [externalItems](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) (preview)
 
 ## API reference
 
 Looking for the API reference for this service?
 
 - [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview)
-- [Use the Microsoft Search API to index data](/graph/api/resources/indexing-api-overview)
+- [Use the Microsoft Search API to index data](/graph/api/resources/indexing-api-overview) (preview)
 
 ## Next steps
 
@@ -54,9 +54,9 @@ Looking for the API reference for this service?
   - [Search Outlook messages](search-concept-messages.md)
   - [Search calendar events](search-concept-events.md)
   - [Search content in Sharepoint and OneDrive](search-concept-files.md)
-  - [Search external content](search-concept-custom-types.md)
-  - [Sort search results](search-concept-sort.md)
-  - [Refine search results](search-concept-aggregation.md)
+  - [Search external content](search-concept-custom-types.md) (preview)
+  - [Sort search results](search-concept-sort.md) (preview)
+  - [Refine search results](search-concept-aggregation.md) (preview)
   
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub.
