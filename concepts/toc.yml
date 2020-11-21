@@ -325,9 +325,9 @@ items:
                 href: search-concept-files.md
               - name: Search connectors
                 href: search-concept-custom-types.md
-              - name: Sort search results
+              - name: Sort search results (preview)
                 href: search-concept-sort.md
-              - name: Refine search results
+              - name: Refine search results (preview)
                 href: search-concept-aggregation.md
           - name: Index (preview)
             items:
