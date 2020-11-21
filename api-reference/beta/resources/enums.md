@@ -1457,3 +1457,10 @@ Possible values for user account types (group membership), per Windows definitio
 | application
 | delegated
 | delegatedUserConsentable
+
+### teamworkActivityTopicSource values 
+
+| Member
+|:---
+| entityUrl
+| text
