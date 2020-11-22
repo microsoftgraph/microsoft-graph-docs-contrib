@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 Get the [conversationMember](../resources/conversationmember.md) collection of a [team](../resources/team.md).
 
->**Note**: The membership ids returned by server must be treated as opaque strings. Client should not try to parse these ids.
+>[!NOTE]: The membership ids returned by server must be treated as opaque strings. Client should not try to parse these ids.
 
->**Note**: The membership results could map to users from different tenants, as indicated in the response, in the future. Client should not assume that all members are from the current tenant only.
+>[!NOTE]: The membership results could map to users from different tenants, as indicated in the response, in the future. Client should not assume that all members are from the current tenant only.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
