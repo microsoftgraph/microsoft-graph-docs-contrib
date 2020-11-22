@@ -13,7 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all [conversation members](../resources/conversationmember.md) in a [chat](../resources/chat.md) or [channel](../resources/channel.md).
+List all [conversation members](../resources/conversationmember.md) in a [chat](../resources/chatmessage.md) or [channel](../resources/channel.md) or team[team](../resources/team.md).
+
+>**Note**: The membership ids returned by server must be treated as opaque strings. Client should not try to parse these ids.
+
+>**Note**: The membership results could map to users from different tenants, as indicated in the response, in the future. Client should not assume that all members are from the current tenant only.
 
 ## Permissions
 

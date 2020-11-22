@@ -1,5 +1,5 @@
 ---
-title: "List members"
+title: "List members of team"
 description: "Get the conversationMembers of a team."
 author: "nkramer"
 localization_priority: Priority
@@ -7,14 +7,16 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List members
+# List members of team
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [conversationMember](../resources/conversationmember.md) of a [team](../resources/team.md).
+Get the [conversationMember](../resources/conversationmember.md) collection of a [team](../resources/team.md).
 
->Note: This API currently does not support pagination, so if there's too many members to fit into one request, you won't get all the members.
+>**Note**: The membership ids returned by server must be treated as opaque strings. Client should not try to parse these ids.
+
+>**Note**: The membership results could map to users from different tenants, as indicated in the response, in the future. Client should not assume that all members are from the current tenant only.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,8 +36,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /teams/{teamsId}/members
-GET /teams/{teamsId}/channels/{channelId}/members
+GET /teams/{team-id}/members
 ```
 
 ## Optional query parameters
@@ -64,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teams/{teamsId}/members
+GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-conversationmember-csharp-snippets.md)]

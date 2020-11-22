@@ -15,6 +15,10 @@ Namespace: microsoft.graph
 
 Retrieve a list of [conversationMembers](../resources/conversationmember.md) from a [channel](../resources/channel.md).
 
+>**Note**: The membership ids returned by server must be treated as opaque strings. Client should not try to parse these ids.
+
+>**Note**: The membership results could map to users from different tenants, as indicated in the response, in the future. Client should not assume that all members are from the current tenant only.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +38,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored"} -->
 
 ```http
-GET /teams/{id}/channels/{id}/members
+GET /teams/{team-id}/channels/{channel-id}/members
 ```
 
 ## Optional query parameters
