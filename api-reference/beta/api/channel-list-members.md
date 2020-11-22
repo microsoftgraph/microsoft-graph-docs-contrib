@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Retrieve a list of [conversationMembers](../resources/conversationmember.md) from a [channel](../resources/channel.md).
 
 > [!NOTE]
-> The membership ids returned by server must be treated as opaque strings. Client should not try to parse these ids.
+> The membership ids returned by server must be treated as opaque strings. Client should not try to parse or make any assumptions about these resource ids.
 
 > [!NOTE]
 > The membership results could map to users from different tenants, as indicated in the response, in the future. Client should not assume that all members are from the current tenant only.
