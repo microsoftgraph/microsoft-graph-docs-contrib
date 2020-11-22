@@ -5004,12 +5004,6 @@ items:
           href: api/channel-post-message.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
-        - name: Add a member to a channel
-          href: api/conversationmember-add.md
-        - name: Remove a member from a channel
-          href: api/conversationmember-delete.md
-        - name: Update the role of a member in channel
-          href: api/conversationmember-update.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -5027,32 +5021,6 @@ items:
           href: api/channel-post-messagereply.md
         - name: Update message
           href: api/chatmessage-update.md
-      - name: Conversation member
-        href: resources/conversationmember.md
-        items:
-        - name: List members
-          href: api/conversationmember-list.md
-        - name: Get member
-          href: api/conversationmember-get.md
-        - name: Add member
-          href: api/conversationmember-add.md
-        - name: Update member
-          href: api/conversationmember-update.md
-        - name: Delete member
-          href: api/conversationmember-delete.md
-      - name: Azure AD user conversation member
-        href: resources/aaduserconversationmember.md
-        items:
-        - name: List members
-          href: api/conversationmember-list.md
-        - name: Get member
-          href: api/conversationmember-get.md
-        - name: Add member
-          href: api/conversationmember-add.md
-        - name: Update member
-          href: api/conversationmember-update.md
-        - name: Delete member
-          href: api/conversationmember-delete.md         
       - name: App catalog
         items:
         - name: App in catalog
