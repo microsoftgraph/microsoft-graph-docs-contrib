@@ -1196,6 +1196,13 @@ items:
           href: api/onlinemeeting-delete.md
         - name: Create or get
           href: api/onlinemeeting-createorget.md
+      - name: Presence
+        href: resources/presence.md
+        items:
+        - name: Get presence
+          href: api/presence-get.md
+        - name: Get presence for multiple users
+          href: api/cloudcommunications-getpresencesbyuserid.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
