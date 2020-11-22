@@ -4903,11 +4903,13 @@ items:
         - name: List members
           href: api/team-list-members.md
         - name: Get member
-          href: api/conversationmember-get.md
+          href: api/team-get-members.md
         - name: Add member
           href: api/team-post-members.md
         - name: Remove member
           href: api/team-delete-members.md
+        - name: Update member
+          href: api/team-update-members.md
         - name: Archive team
           href: api/team-archive.md
         - name: Unarchive team

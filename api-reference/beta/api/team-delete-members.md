@@ -89,5 +89,7 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
+## See also
 
+- [Remove member from channel](channel-delete-members.md)
 
