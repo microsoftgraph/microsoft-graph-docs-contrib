@@ -14,6 +14,12 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 
 ## November 2020: New and generally available
 
+### Search
+- GA of the Microsoft Search [query API](/graph/api/resources/search-api-overview), supporting scoped searching of the following types of data:
+  - [Outlook messages](/graph/search-concept-messsages)
+  - [Outlook calendar events](/graph/search-concept-events)
+  - [OneDrive and SharePoint resources](/graph/search-concept-files).
+
 ### Teamwork
 - GA of resource-specific consent (RSC) permissions. RSC permissions allow team owners to grant granular consent to a production app to access and/or modify specific data of a team, for example, reading the team's settings, or modifying channel names, descriptions, and other settings.
 - GA of APIs that apply to a [channel](/graph/api/resources/channel) or messages within a channel. The APIs include:
@@ -22,6 +28,7 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
   - Get a specific message or all messages in a channel.
   - Get a specific reply or all replies in a channel.
   - [Track new or updated messages in a channel](/graph/api/chatmessage-delta).
+
 
 ## November 2020: New in preview only
 
