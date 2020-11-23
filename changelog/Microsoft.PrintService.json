@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "76cd4ab2-7d93-48a2-844d-f991b9c239e4",
+          "ApiChange": "Property",
+          "ChangedApiName": "printer",
+          "ChangeType": "Addition",
+          "Description": "Added HasPhysicalDevice property to [printer](/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Target": "printer"
+        },
+        {
+          "Id": "76cd4ab2-7d93-48a2-844d-f991b9c239e4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "abort,printJob",
+          "ChangeType": "Addition",
+          "Description": "Added [abort](/graph/api/printjob-abort?view=graph-rest-beta) action to [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource.",
+          "Target": "abort,printJob"
+        },
+        {
+          "Id": "76cd4ab2-7d93-48a2-844d-f991b9c239e4",
+          "ApiChange": "Property",
+          "ChangedApiName": "redirect",
+          "ChangeType": "Addition",
+          "Description": "Added configuration property to [redirect](/graph/api/printjob-redirect?view=graph-rest-beta) action on printJob(/graph/api/resources/printjob?view=graph-rest-beta) resource.",
+          "Target": "redirect"
+        }
+      ],
+      "Id": "76cd4ab2-7d93-48a2-844d-f991b9c239e4",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-11-01T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": " Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3a4e1e60-0477-4cda-9665-3a880ab0e927",
           "ApiChange": "Resource",
           "ChangedApiName": "Get printUsageSummaryByPrinter,getPrinterArchivedPrintJobs,List dailyPrintUsageSummariesByPrinter,List monthlyPrintUsageSummariesByPrinter,Get printUsageSummaryByUser,getUserArchivedPrintJobs,getGroupArchivedPrintJobs,List dailyPrintUsageSummariesByUser,List monthlyPrintUsageSummariesByUser",
