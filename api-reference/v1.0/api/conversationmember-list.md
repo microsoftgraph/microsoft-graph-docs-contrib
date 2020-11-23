@@ -14,10 +14,9 @@ Namespace: microsoft.graph
 List all [conversation members](../resources/conversationmember.md) in a [chat](../resources/chatmessage.md) or [channel](../resources/channel.md).
 
 > [!NOTE]
-> The membership ids returned by server must be treated as opaque strings. Client should not try to parse or make any assumptions about these resource ids.
-
-> [!NOTE]
-> The membership results could map to users from different tenants, as indicated in the response, in the future. Client should not assume that all members are from the current tenant only.
+> The membership IDs returned by the server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
+>
+> The membership results could map to users from different tenants, as indicated in the response, in the future.The cClient should not assume that all members are from the current tenant only.
  
 ## Permissions
 
