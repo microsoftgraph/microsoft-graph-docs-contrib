@@ -81,7 +81,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **spa** property to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added the [organizationalBrandingProperties](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true) resource type and associated methods, which allow for the customization of the visual look and feel of sign-in screens.|
-| Addition | beta | Added the **managerLevel** property to [requestorManager](https://docs.microsoft.com/en-us/graph/api/resources/requestorManager?view=graph-rest-beta) resource. |
 
 ### Identity and access | Governance
 
@@ -91,6 +90,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added [acceptRecommendations](/graph/api/accessreviewinstance-acceptrecommendations?view=graph-rest-beta&preserve-view=true), [applyDecisions](/graph/api/accessreviewinstance-applydecisions?view=graph-rest-beta&preserve-view=true), [get](/graph/api/accessreviewinstance-get?view=graph-rest-beta&preserve-view=true), [list](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true), [list pendingAccessReviewInstances](/graph/api/accessreviewinstance-pendingaccessreviewinstances?view=graph-rest-beta&preserve-view=true), [sendReminder](/graph/api/accessreviewinstance-sendreminder?view=graph-rest-beta&preserve-view=true), [stop](/graph/api/accessreviewinstance-stop?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewInstance](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true) resource.|
 |Addition|beta|Added [list](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true), [listPendingApproval](/graph/api/accessreviewinstancedecisionitem-listpendingapproval?view=graph-rest-beta&preserve-view=true), [update](/graph/api/accessreviewinstancedecisionitem-update?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewInstanceDecisionItem](/graph/api/resources/accessreviewinstancedecisionitem.md) resource.|
 |Addition|beta|Added [create](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true), [delete](/graph/api/accessreviewscheduledefinition-delete?view=graph-rest-beta&preserve-view=true), [get](/graph/api/accessreviewscheduledefinition-get?view=graph-rest-beta&preserve-view=true), [list](/graph/api/accessreviewscheduledefinition-list?view=graph-rest-beta&preserve-view=true), [update](/graph/api/accessreviewscheduledefinition-update?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the **managerLevel** property to [requestorManager](https://docs.microsoft.com/en-us/graph/api/resources/requestorManager?view=graph-rest-beta) resource. |
 
 ### Search
 
