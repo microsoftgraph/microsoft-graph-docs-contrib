@@ -812,6 +812,15 @@ items:
           items:
           - name: List
             href: api/serviceprincipal-list-oauth2permissiongrants.md
+        - name: Delegated permission classifications
+          href: resources/delegatedpermissionclassification.md
+          items:
+          - name: List
+            href: api/serviceprincipal-list-delegatedpermissionclassifications.md
+          - name: Create
+            href: api/serviceprincipal-post-delegatedpermissionclassifications.md
+          - name: Delete
+            href: api/serviceprincipal-delete-delegatedpermissionclassifications.md
         - name: Membership
           items:
           - name: List member of
@@ -854,6 +863,34 @@ items:
               href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
             - name: Remove
               href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+          - name: Permission grant policy
+            href: resources/permissiongrantpolicy.md
+            items:
+            - name: Create
+              href: api/permissiongrantpolicy-post-permissiongrantpolicies.md
+            - name: List
+              href: api/permissiongrantpolicy-list.md
+            - name: Get
+              href: api/permissiongrantpolicy-get.md
+            - name: Update
+              href: api/permissiongrantpolicy-update.md
+            - name: Delete
+              href: api/permissiongrantpolicy-delete.md
+            - name: Permission grant condition sets
+              href: resources/permissiongrantconditionset.md
+              items:
+                - name: List includes
+                  href: api/permissiongrantpolicy-list-includes.md
+                - name: Create in includes
+                  href: api/permissiongrantpolicy-post-includes.md
+                - name: Delete from includes
+                  href: api/permissiongrantpolicy-delete-includes.md
+                - name: List excludes
+                  href: api/permissiongrantpolicy-list-excludes.md
+                - name: Create in excludes
+                  href: api/permissiongrantpolicy-post-excludes.md
+                - name: Delete from excludes
+                  href: api/permissiongrantpolicy-delete-excludes.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:
@@ -4667,6 +4704,19 @@ items:
           href: api/reportroot-getyammergroupsactivitygroupcounts.md
         - name: Get activity counts
           href: api/reportroot-getyammergroupsactivitycounts.md
+    - name: Search
+      displayname: Microsoft Search API
+      items:
+      - name: Query
+        items:
+        - name: Overview
+          href: resources/search-api-overview.md
+        - name: Search request type
+          href: resources/searchrequest.md
+        - name: Search response type
+          href: resources/searchresponse.md
+        - name: Query data
+          href: api/search-query.md
     - name: Security
       displayname: Security API, Microsoft Intelligent Security Graph
       items:
@@ -4868,10 +4918,14 @@ items:
           href: api/group-delete.md
         - name: List members
           href: api/team-list-members.md
-        - name: Add members
+        - name: Get member
+          href: api/team-get-members.md
+        - name: Add member
           href: api/team-post-members.md
-        - name: Remove members
+        - name: Remove member
           href: api/team-delete-members.md
+        - name: Update member
+          href: api/team-update-members.md
         - name: Archive team
           href: api/team-archive.md
         - name: Unarchive team
@@ -4882,6 +4936,8 @@ items:
           href: api/user-list-joinedteams.md
         - name: Get primary channel
           href: api/team-get-primarychannel.md
+        - name: List all teams
+          href: /graph/teams-list-all-teams?context=graph/api/1.0
       - name: Group (team)
         href: resources/group.md
         items:
@@ -4938,6 +4994,16 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
+        - name: List members
+          href: api/channel-list-members.md
+        - name: Get member
+          href: api/channel-get-members.md
+        - name: Add member 
+          href: api/channel-post-members.md
+        - name: Remove member
+          href: api/channel-delete-members.md
+        - name: Update member role
+          href: api/channel-update-members.md        
         - name: Get files folder
           href: api/channel-get-filesfolder.md
         - name: List channel messages

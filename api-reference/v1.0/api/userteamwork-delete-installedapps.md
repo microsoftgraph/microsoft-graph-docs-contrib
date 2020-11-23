@@ -53,11 +53,12 @@ The following is an example of the request.
   "blockType": "request",
   "name": "user_delete_teamsApp"
 }-->
+
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/{id}/teamwork/installedApps/{id}
 ```
 
-### Response
+### Responses
 
 The following is an example of the response.
 
@@ -65,6 +66,7 @@ The following is an example of the response.
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -78,5 +80,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

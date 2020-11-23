@@ -9227,7 +9227,66 @@ items:
             - name: Delete
               href: api/intune-tem-telecomexpensemanagementpartner-delete.md
             - name: Update
-              href: api/intune-tem-telecomexpensemanagementpartner-update.md        
+              href: api/intune-tem-telecomexpensemanagementpartner-update.md
+      - name: Cloud PC (preview)
+        items:
+        - name: Virtual endpoint
+          href: resources/virtualendpoint.md
+          items:
+          - name: Get effective permissions
+            href: api/virtualendpoint-geteffectivepermissions.md
+        - name: Cloud PC
+          href: resources/cloudpc.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-cloudpcs.md
+          - name: Get
+            href: api/cloudpc-get.md
+          - name: Reprovision
+            href: api/cloudpc-reprovision.md
+        - name: Cloud PC device image
+          href: resources/cloudpcdeviceimage.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-deviceimages.md
+          - name: Get
+            href: api/cloudpcdeviceimage-get.md
+          - name: Create
+            href: api/virtualendpoint-post-deviceimages.md
+          - name: Delete
+            href: api/cloudpcdeviceimage-delete.md
+          - name: Get source images
+            href: api/cloudpcdeviceimage-getsourceimages.md
+        - name: Cloud PC on-premises connection
+          href: resources/cloudpconpremisesconnection.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-onpremisesconnections.md
+          - name: Get
+            href: api/cloudpconpremisesconnection-get.md
+          - name: Create
+            href: api/virtualendpoint-post-onpremisesconnections.md
+          - name: Update
+            href: api/cloudpconpremisesconnection-update.md
+          - name: Delete
+            href: api/cloudpconpremisesconnection-delete.md
+          - name: Run health checks
+            href: api/cloudpconpremisesconnection-runhealthcheck.md
+        - name: Cloud PC provisioning policy
+          href: resources/cloudpcprovisioningpolicy.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-provisioningpolicies.md
+          - name: Get
+            href: api/cloudpcprovisioningpolicy-get.md
+          - name: Create
+            href: api/virtualendpoint-post-provisioningpolicies.md
+          - name: Update
+            href: api/cloudpcprovisioningpolicy-update.md
+          - name: Delete
+            href: api/cloudpcprovisioningpolicy-delete.md
+          - name: Assign
+            href: api/cloudpcprovisioningpolicy-assign.md
     - name: Education
       items:
       - name: Overview
@@ -11974,7 +12033,7 @@ items:
             href: api/reportroot-getyammergroupsactivitygroupcounts.md
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
-    - name: Search (preview)
+    - name: Search
       displayname: Microsoft Search API
       items:
       - name: Query
@@ -11987,7 +12046,7 @@ items:
           href: resources/searchresponse.md
         - name: Query data
           href: api/search-query.md
-      - name: Index
+      - name: Index (preview)
         items:
         - name: Overview
           href: resources/indexing-api-overview.md
@@ -12387,12 +12446,14 @@ items:
           href: api/group-delete.md
         - name: List members
           href: api/team-list-members.md
-        - name: Add members
+        - name: Get member
+          href: api/team-get-members.md
+        - name: Add member
           href: api/team-post-members.md
-        - name: Remove members
+        - name: Remove member
           href: api/team-delete-members.md
         - name: Update member
-          href: api/conversationmember-update.md
+          href: api/team-update-members.md
         - name: Archive team
           href: api/team-archive.md
         - name: Unarchive team
@@ -12465,6 +12526,16 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
+        - name: List members
+          href: api/channel-list-members.md
+        - name: Get member
+          href: api/channel-get-members.md
+        - name: Add member 
+          href: api/channel-post-members.md
+        - name: Remove member
+          href: api/channel-delete-members.md
+        - name: Update member role
+          href: api/channel-update-members.md
         - name: Complete migration for channel
           href: api/channel-completemigration.md
         - name: Get files folder
@@ -12483,12 +12554,6 @@ items:
           href: api/channel-post-message.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
-        - name: Add a member to a channel
-          href: api/conversationmember-add.md
-        - name: Remove a member from a channel
-          href: api/conversationmember-delete.md
-        - name: Update the role of a member in channel
-          href: api/conversationmember-update.md
       - name: Chat
         href: resources/chat.md
         items:
@@ -12531,32 +12596,6 @@ items:
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
-      - name: Conversation member
-        href: resources/conversationmember.md
-        items:
-        - name: List members
-          href: api/conversationmember-list.md
-        - name: Get member
-          href: api/conversationmember-get.md
-        - name: Add member
-          href: api/conversationmember-add.md
-        - name: Update member
-          href: api/conversationmember-update.md
-        - name: Delete member
-          href: api/conversationmember-delete.md
-      - name: Azure AD user conversation member
-        href: resources/aaduserconversationmember.md
-        items:
-        - name: List members
-          href: api/conversationmember-list.md
-        - name: Get member
-          href: api/conversationmember-get.md
-        - name: Add member
-          href: api/conversationmember-add.md
-        - name: Update member
-          href: api/conversationmember-update.md
-        - name: Delete member
-          href: api/conversationmember-delete.md
       - name: App catalog
         items:
         - name: App in catalog
@@ -12595,6 +12634,15 @@ items:
           href: api/userteamwork-upgrade-installedapps.md
         - name: Get chat between user and app
           href: api/userscopeteamsappinstallation-get-chat.md
+          href: api/user-upgrade-teamsappinstallation.md
+      - name: Activity feed
+        items:
+        - name: Send notification to user in chat
+          href: api/chat-sendactivitynotification.md
+        - name: Send notification to user in team
+          href: api/team-sendactivitynotification.md
+        - name: Send notification to user
+          href: api/userteamwork-sendactivitynotification.md
       - name: Tab
         href: resources/teamstab.md
         items:

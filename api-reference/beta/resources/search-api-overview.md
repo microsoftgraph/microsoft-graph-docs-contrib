@@ -161,7 +161,7 @@ Any combinations involving **message**, **event**, SharePoint and OneDrive types
 
 ## Schema change deprecation warning
 
-Properties used in a search request and response have been renamed or removed. In most cases, the original properties are being deprecated and replaced by the current properties, as listed in the table below.
+**In the beta version**, properties used in a search request and response have been renamed or removed. In most cases, the original properties are being deprecated and replaced by the current properties, as listed in the table below.
 
 Start updating any existing apps to use current property and type names, and to get current property names in the response.
 For backward compatibility, the original properties and types are accessible and functional until **December 31, 2020**, after which they will be removed.
