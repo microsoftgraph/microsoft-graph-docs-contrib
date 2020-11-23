@@ -49,5 +49,3 @@ Operator for rules.
 
 
 
-
-

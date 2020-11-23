@@ -32,5 +32,3 @@ Operating System restart category
 
 
 
-
-

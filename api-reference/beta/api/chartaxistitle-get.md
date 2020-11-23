@@ -31,7 +31,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/title
 GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/title
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chartaxistitle-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chartaxistitle-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -102,5 +106,3 @@ Content-length: 45
   ]
 }
 -->
-
-

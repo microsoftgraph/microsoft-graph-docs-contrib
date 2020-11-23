@@ -12,7 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphLinkedResource *linkedResource = [[MSGraphLinkedResource alloc] init];
-[linkedResource setWebUrl:@"http:://microsoft.com"];
+[linkedResource setWebUrl:@"https://microsoft.com"];
 [linkedResource setApplicationName:@"Microsoft"];
 [linkedResource setDisplayName:@"Microsoft"];
 [linkedResource setExternalId:@"dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"];

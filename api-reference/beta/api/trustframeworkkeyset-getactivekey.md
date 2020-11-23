@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All. |
+| Delegated (work or school account)     | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All. |
+| Application                            | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All |
 
 ## HTTP request
 
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/trustframeworkkeyset-getactivekey-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/trustframeworkkeyset-getactivekey-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

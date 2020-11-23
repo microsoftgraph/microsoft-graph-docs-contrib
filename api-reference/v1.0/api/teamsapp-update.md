@@ -23,8 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
-| Delegated (work or school account)     | AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (work or school account) | AppCatalog.Submit|
+| Delegated (work or school account)     | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported|
 | Application                            | Not supported. |
 
@@ -80,6 +79,10 @@ Content-length: 244
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-teamsapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 POST /deviceManagement/deviceShellScripts/{deviceShellScriptId}/userRunStates
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates
+POST /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeShellScriptId}/userRunStates
 ```
 
 ## Request headers
@@ -91,8 +92,6 @@ Content-Length: 229
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
 
 
 

@@ -6,9 +6,9 @@ localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Refine search results using aggregations
+# Refine search results using aggregations (preview)
 
-Refine search results and show their distribution in the index. 
+Refine search results and show their distribution in the index.
 
 ## Example 1: Request aggregations by string fields
 
@@ -16,7 +16,7 @@ The following example searches **listItem** resources and aggregates results by 
 
 The response includes two [searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) objects for the two aggregations:
 - The **key** property specifies the actual value (by `FileType` or `contentclass`) for those matching **listItem** objects that are aggregated in the same bucket by that value.
-- The **count** property specifies the number of such objects aggregated in the same bucket.
+- The **count** property specifies the number of such objects aggregated in the same bucket. Note that this number is an approximation of the number of matches and will not provide an exact number of matches.
 - Buckets of results aggregated by file type are sorted by count in descending order. In this example, there are 3 buckets for 3 file types: `docx`, `xlsx`, and `pptx`.
 - Buckets of results aggregated by content class are sorted by the string value of the content class in descending order. In this example, there is only one bucket with all the matching objects sharing the same content class, `STS_ListItem_DocumentLibrary`.
 
@@ -212,7 +212,7 @@ The response includes 3 **searchBucket** objects, one for each size range aggreg
 ### Request
 
 ```HTTP
-POST /search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 
 {

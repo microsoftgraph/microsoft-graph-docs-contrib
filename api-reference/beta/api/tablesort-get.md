@@ -30,7 +30,7 @@ GET /workbook/tables/{id|name}/sort
 GET /workbook/worksheets/{id|name}/tables/{id|name}/sort
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|nam
 [!INCLUDE [sample-code](../includes/snippets/objc/get-tablesort-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-tablesort-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -101,5 +105,3 @@ Content-length: 51
   ]
 }
 -->
-
-
