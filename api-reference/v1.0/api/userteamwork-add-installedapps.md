@@ -58,6 +58,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "user_add_teamsApp"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/users/{id}/teamwork/installedApps
 Content-type: application/json
@@ -67,7 +68,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+### Responses
 
 The following is an example of the response.
 
@@ -89,4 +90,3 @@ HTTP/1.1 201 Created
   "section": "documentation",
   "tocPath": ""
 }-->
-
