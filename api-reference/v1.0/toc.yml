@@ -410,15 +410,15 @@ items:
         - name: Installed app
           href: resources/teamsappinstallation.md
         - name: Add app for user
-          href: api/user-add-teamsappinstallation.md
+          href: api/userteamwork-add-installedapps.md
         - name: List apps for user
-          href: api/user-list-teamsappinstallation.md
+          href: api/userteamwork-list-installedapps.md
         - name: Gets installed app for user
-          href: api/user-get-teamsappinstallation.md
+          href: api/userteamwork-get-installedapps.md
         - name: Upgrade installed app for user
-          href: api/user-upgrade-teamsappinstallation.md
+          href: api/userteamwork-upgrade-installedapps.md
         - name: Remove app for user
-          href: api/user-delete-teamsappinstallation.md
+          href: api/userteamwork-delete-installedapps.md
         - name: Get chat between user and app
           href: api/userscopeteamsappinstallation-get-chat.md 
       - name: To-do tasks
@@ -5023,7 +5023,7 @@ items:
         - name: List apps in team
           href: api/teamsappinstallation-list.md
         - name: Get app installed in a team
-          href: api/teamsappinstallation-get.md
+          href: api/team-get-installedapps.md
         - name: Add app to team
           href: api/teamsappinstallation-add.md
         - name: Remove app from team
@@ -5031,15 +5031,15 @@ items:
         - name: Upgrade installed app for team
           href: api/teamsappinstallation-upgrade.md
         - name: List apps for user
-          href: api/user-list-teamsappinstallation.md
+          href: api/userteamwork-list-installedapps.md
         - name: Gets installed app for user
-          href: api/user-get-teamsappinstallation.md
+          href: api/userteamwork-get-installedapps.md
         - name: Add app for user
-          href: api/user-add-teamsappinstallation.md
+          href: api/userteamwork-add-installedapps.md
         - name: Remove app for user
-          href: api/user-delete-teamsappinstallation.md
+          href: api/userteamwork-delete-installedapps.md
         - name: Upgrade installed app for user
-          href: api/user-upgrade-teamsappinstallation.md
+          href: api/userteamwork-upgrade-installedapps.md
         - name: Get chat between user and app
           href: api/userscopeteamsappinstallation-get-chat.md
       - name: Tab
