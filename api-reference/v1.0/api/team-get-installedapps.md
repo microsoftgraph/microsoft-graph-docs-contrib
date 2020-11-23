@@ -48,6 +48,7 @@ If successful, this method returns a `200 OK` response code and a [teamsAppInsta
 ## Examples
 
 ### Example 1: Get the installed app
+
 #### Request
 
 The following is an example of the request.
@@ -63,7 +64,7 @@ GET /teams/{id}/installedApps/{id}
 
 ---
 
-#### Response
+#### Responses
 
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -90,7 +91,7 @@ Content-type: application/json
 
 ### Example 2: Get the names and other details of the installed app
 
-#### Request
+#### Requests
 
 The following is an example of the request.
 
@@ -148,4 +149,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
