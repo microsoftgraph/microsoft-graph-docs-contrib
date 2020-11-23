@@ -18,15 +18,15 @@ Represents a [teamsApp](teamsapp.md) installed in a [team](team.md) or the perso
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List apps installed in team](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) collection | Lists apps installed in a team.|
-|[Get app installed in a team](../api/teamsappinstallation-get.md) | [teamsAppInstallation](teamsappinstallation.md) | Lists apps installed in a team.|
+|[Get app installed in a team](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Lists apps installed in a team.|
 |[Add app to team](../api/teamsappinstallation-add.md) | None | Adds (installs) an app to a team.|
 |[Remove app from team](../api/teamsappinstallation-delete.md) | None | Removes (uninstalls) an app from a team.|
 |[Upgrade app installed in team](../api/teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app installed in team.|
-|[List apps installed for user](../api/user-list-teamsappinstallation.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) collection | Lists apps installed in the personal scope of a user. |
-|[Gets the installed app for user](../api/user-get-teamsappinstallation.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Lists the specified app installed in the personal scope of a user. |
-|[Add app for user](../api/user-add-teamsappinstallation.md) | None | Adds (installs) an app in the personal scope of a user. |
-|[Remove app for user](../api/user-delete-teamsappinstallation.md) | None | Removes (uninstalls) an app from the personal scope of a user. |
-|[Upgrade app installed for user](../api/user-upgrade-teamsappinstallation.md) | None | Upgrades to the latest version of the app installed in the personal scope of a user.|
+|[List apps installed for user](../api/userteamwork-list-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) collection | Lists apps installed in the personal scope of a user. |
+|[Gets the installed app for user](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Lists the specified app installed in the personal scope of a user. |
+|[Add app for user](../api/userteamwork-add-installedapps.md) | None | Adds (installs) an app in the personal scope of a user. |
+|[Remove app for user](../api/userteamwork-delete-installedapps.md) | None | Removes (uninstalls) an app from the personal scope of a user. |
+|[Upgrade app installed for user](../api/userteamwork-upgrade-installedapps.md) | None | Upgrades to the latest version of the app installed in the personal scope of a user.|
 
 ## Properties
 
