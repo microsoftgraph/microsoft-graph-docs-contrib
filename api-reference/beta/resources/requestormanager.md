@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# requestoManager complex type
+# requestorManager complex type
 
 Namespace: microsoft.graph
 
