@@ -16,16 +16,16 @@
             "ApiChange": "Method",
             "ChangedApiName": "teamsappinstallation",
             "ChangeType": "Addition",
-            "Description": "Added the [Get installed app in team](https://docs.microsoft.com/en-us/graph/api/teamsappinstallation-get?view=graph-rest-beta) method.",
-            "Target": "teamsappinstallation-get"
+            "Description": "Added the [Get installed app in team](https://docs.microsoft.com/en-us/graph/api/team-get-installedapps?view=graph-rest-beta) method.",
+            "Target": "team-get-installedapps"
           },
           {
             "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
             "ApiChange": "Method",
             "ChangedApiName": "teamsappinstallation",
             "ChangeType": "Addition",
-            "Description": "Added the [Get intalled app for user](https://docs.microsoft.com/en-us/graph/api/user-get-teamsappinstallation?view=graph-rest-beta) method.",
-            "Target": "user-get-teamsappinstallation"
+            "Description": "Added the [Get intalled app for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-get-installedapps?view=graph-rest-beta) method.",
+            "Target": "userteamwork-get-installedapps"
           },
           {
             "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
@@ -58,48 +58,48 @@
             "ApiChange": "Method",
             "ChangedApiName": "teamsappinstallation",
             "ChangeType": "Addition",
-            "Description": "Added the [Get installed app in team](https://docs.microsoft.com/en-us/graph/api/teamsappinstallation-get?view=graph-rest-v1.0) method.",
-            "Target": "teamsappinstallation-get"
+            "Description": "Added the [Get installed app in team](https://docs.microsoft.com/en-us/graph/api/team-get-installedapps?view=graph-rest-v1.0) method.",
+            "Target": "team-get-installedapps"
           },
           {
             "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
             "ApiChange": "Method",
             "ChangedApiName": "teamsappinstallation",
             "ChangeType": "Addition",
-            "Description": "Added the [List apps for user](https://docs.microsoft.com/en-us/graph/api/user-list-teamsappinstallation?view=graph-rest-v1.0) method.",
-            "Target": "user-list-teamsappinstallation"
+            "Description": "Added the [List apps for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-list-installedapps?view=graph-rest-v1.0) method.",
+            "Target": "userteamwork-list-installedapps"
           },
           {
             "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
             "ApiChange": "Method",
             "ChangedApiName": "teamsappinstallation",
             "ChangeType": "Addition",
-            "Description": "Added the [Get intalled app for user](https://docs.microsoft.com/en-us/graph/api/user-get-teamsappinstallation?view=graph-rest-v1.0) method.",
-            "Target": "user-get-teamsappinstallation"
+            "Description": "Added the [Get intalled app for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-get-installedapps?view=graph-rest-v1.0) method.",
+            "Target": "userteamwork-get-installedapps"
           },
           {
             "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
             "ApiChange": "Method",
             "ChangedApiName": "teamsappinstallation",
             "ChangeType": "Addition",
-            "Description": "Added the [Add app for user](https://docs.microsoft.com/en-us/graph/api/user-add-teamsappinstallation?view=graph-rest-v1.0) method.",
-            "Target": "user-add-teamsappinstallation"
+            "Description": "Added the [Add app for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-add-installedapps?view=graph-rest-v1.0) method.",
+            "Target": "userteamwork-add-installedapps"
           },
           {
             "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
             "ApiChange": "Method",
             "ChangedApiName": "teamsappinstallation",
             "ChangeType": "Addition",
-            "Description": "Added the [Remove app for user](https://docs.microsoft.com/en-us/graph/api/user-delete-teamsappinstallation?view=graph-rest-v1.0) method.",
-            "Target": "user-delete-teamsappinstallation"
+            "Description": "Added the [Remove app for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-delete-installedapps?view=graph-rest-v1.0) method.",
+            "Target": "userteamwork-delete-installedapps"
           },
           {
             "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
             "ApiChange": "Method",
             "ChangedApiName": "teamsappinstallation",
             "ChangeType": "Addition",
-            "Description": "Added the [Upgrade installed app for user](https://docs.microsoft.com/en-us/graph/api/user-upgrade-teamsappinstallation?view=graph-rest-v1.0) method.",
-            "Target": "user-upgrade-teamsappinstallation"
+            "Description": "Added the [Upgrade installed app for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-upgrade-installedapps?view=graph-rest-v1.0) method.",
+            "Target": "userteamwork-upgrade-installedapps"
           },
           {
             "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
