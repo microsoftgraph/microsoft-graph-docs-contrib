@@ -1,17 +1,19 @@
 ---
-title: "Get member of channel"
-description: "Get member of channel."
+title: "Get member of team"
+description: "Get member of team."
 author: "laujan"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get member of channel
+# Get member of team
 
 Namespace: microsoft.graph
 
-Get a [conversationMember](../resources/conversationmember.md) from a [channel](../resources/channel.md).
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Get a [conversationMember](../resources/conversationmember.md) from a [team](../resources/team.md).
 
 ## Permissions
 
@@ -19,15 +21,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)|ChannelMember.Read.All, ChannelMember.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|ChannelMember.Read.All, ChannelMember.ReadWrite.All |
+|Delegated (work or school account)| TeamMember.Read.All, TeamMember.ReadWrite.All |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application| TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All |
 
+> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
 ```http
-GET /teams/{team-id}/channels/{channel-id}/members/{membership-id}
+GET /teams/{team-id}/members/{membership-id}
 ```
 
 ## Optional query parameters
@@ -55,10 +58,10 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "channel-get_member"
+  "name": "team-get_member"
 } -->
 ```http
-GET https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=
+GET https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/members//ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=
 ```
 
 ### Response
@@ -77,9 +80,9 @@ Content-type: application/json
 Content-length: 201
 
 {
-"@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
+"@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/members/microsoft.graph.aadUserConversationMember/$entity",
 "@odata.type": "#microsoft.graph.aadUserConversationMember",
-"id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+"id": "/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
 "roles": ["owner"],
 "displayName": "John Doe",
 "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
@@ -87,17 +90,12 @@ Content-length: 201
 }
 
 ```
-
-## See also
-
-- [Get member of team](team-get-members.md)
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "get_channel_member",
+  "description": "get_team_member",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
@@ -105,3 +103,8 @@ Content-length: 201
   ]
 }
 -->
+
+## See also
+
+- [Get member of channel](channel-get-members.md)
+

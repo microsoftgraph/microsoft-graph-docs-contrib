@@ -1,19 +1,17 @@
 ---
-title: "Update member in channel"
-description: "Update the role of member in a channel."
+title: "Update member in team"
+description: "Update the role of member in a team."
 author: "laujan"
 doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Update member in channel
+# Update member in team
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Update the role of a [conversationMember](../resources/conversationmember.md) in a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `private`.
+Update the role of a [conversationMember](../resources/conversationmember.md) in a [team](../resources/team.md).
 
 ## Permissions
 
@@ -21,14 +19,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)|ChannelMember.ReadWrite.All. |
+|Delegated (work or school account)|TeamMember.ReadWrite.All. |
 |Delegated (personal Microsoft account)|Not supported|
-|Application|ChannelMember.ReadWrite.All. |
+|Application|TeamMember.ReadWrite.All. |
 
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
 ```http
-PATCH /teams/{team-id}/channels/{channel-id}/members/{membership-id}
+PATCH /teams/{team-id}/members/{membership-id}
 ```
 
 ## Request headers
@@ -54,14 +52,14 @@ If successful, this method returns a `200 OK` response code and an updated [conv
 
 ### Request
 
-The following is a request to apply the `owner` role to an existing member of a channel.
+The following is a request to apply the `owner` role to an existing member of a team.
 
 <!-- {
   "blockType": "request",
   "name": "update_member"
 } -->
 ```http
-PATCH https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=
+PATCH https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/members/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=
 content-type: application/json
 content-length: 26
 
@@ -85,7 +83,7 @@ Content-type: application/json
 Content-length: 475
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/members/microsoft.graph.aadUserConversationMember/$entity",
   "@odata.type": "#microsoft.graph.aadUserConversationMember",
   "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
   "roles": ["owner"],
@@ -97,14 +95,14 @@ Content-length: 475
 
 ## See also
 
-- [Update member's role in a team](team-update-members.md)
+- [Update member in channel](channel-update-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "update role of channel member",
+  "description": "update role of team member",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
