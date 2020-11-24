@@ -26,7 +26,7 @@ One of the following permissions is required to call these APIs. To learn more, 
 
 > **Note:**
 > * Maximum of 650 user IDs are supported per API request.
-> * The maximum request rate of this API is 1500 API requests per 30 second period, per app/tenant.
+> * The maximum request rate of this API is 1500 API requests in a 30 second period, per application per tenant.
 
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
