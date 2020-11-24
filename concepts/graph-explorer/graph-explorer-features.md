@@ -1,18 +1,20 @@
 ---
 
-title: "Use Graph Explorer to try Microsoft Graph APIs"
+title: "Graph Explorer features"
 description: "Graph Explorer features documentation"
 localization_priority: Normal
-author: bengugi
+author: bettirosengugi
 
 ---
+# Graph Explorer features
+
 ## Consenting to permissions in Graph Explorer
 
 The user or administrator must grant Microsoft Graph Explorer the correct permissions via a consent process to access data in Microsoft Graph.  You can consent to permissions in Graph Explorer either via the **Modify permissions** tab or the **Select permissions** option in the settings gear next to your profile when you’re signed in. 
 The **Modify permissions** tab lists all permissions you need to run the query in the address bar. 
 
 
-![modify-permissions](./images/modify-permissions.png)
+![how-to-modify-permissions](./images/modify-permissions.png)
 1.	Select a sample query and run it.
 2.	Select the Modify permissions tab.
 3.	See the list of permissions required to run the query.
@@ -21,7 +23,7 @@ The **Modify permissions** tab lists all permissions you need to run the query i
 
 The **Modify  permissions** feature is currently in preview, and some queries might be missing permissions. The **Select permissions** option in the settings gear next to your profile contains the list of all available permissions. You can select the permission(s) you want and consent to them from there.
 
-![select-permissions](./images/select-permissions.png)
+![consent-to permissions-in-bulk](./images/select-permissions.png)
 
 1.	Go the Settings Gear and click on the Select permissions option 
 2.	See the list of all the permissions in Microsoft Graph API and consent to the ones you wish in bulk.
@@ -30,7 +32,7 @@ The **Modify  permissions** feature is currently in preview, and some queries mi
 ## Get and copy the Access or Authentication token
 
 Graph Explorer includes an Access token tab that shows your access token when you are signed in. You can copy the token if you need to use it in your favorite REST client application.
-![access-token](./images/access-token.png)
+![get-and-copy-access-token](./images/access-token.png)
 
 1.	Navigate to the Access token tab.
 2.	Copy access token.
@@ -38,7 +40,7 @@ Graph Explorer includes an Access token tab that shows your access token when yo
 ## Get code snippets that you can use in your application.
 
 For each query that you run in Graph Explorer, the **Code snippets** tab shows you how to implement or call the endpoint in your application in four different programming languages: C#, Java, JavaScript, and Objective C. 
-![code-snippets](./images/code-snippets.png)
+![get-and-copy-code-snippets](./images/code-snippets.png)
 
 1.	Select a sample query.
 2.	Navigate to the Code snippets tab and see the code snippets.
@@ -63,7 +65,7 @@ Graph Explorer includes queries that support Microsoft Graph Toolkit components 
 
 This list will be expanded to include more queries with time as the Microsoft Graph Toolkit team adds more capabilities to the tool. 
 
-![graph-toolkit](./images/graph-toolkit.png)
+![see-graph-toolkit-components](./images/graph-toolkit.png)
 
 1.	Microsoft Graph toolkit UI component.
 2.	Code used to generate the toolkit component.
@@ -73,7 +75,7 @@ This list will be expanded to include more queries with time as the Microsoft Gr
 
 [Adaptive Cards](https://adaptivecards.io/) are platform-agnostic snippets of UI, authored in JSON, that apps and services can openly exchange. When you run a query and an adaptive card is available, you will see a blue dot on the **Adaptive cards** tab.
 
-![adaptive-cards](./images/adaptive-cards.png)
+![see-adaptive-cards-components](./images/adaptive-cards.png)
 
 1.	Select a sample query and run it.
 2.	Navigate to the Adaptive cards tab.
@@ -83,7 +85,7 @@ This list will be expanded to include more queries with time as the Microsoft Gr
 
 You can choose the theme for Graph Explorer by selecting the **Change theme** option under the settings gear. Theme options are Light, Dark, and High contrast.
 
-![change-theme](./images/change-theme.png)
+![how-to-change-theme](./images/change-theme.png)
 
 1.	Navigate to the Settings Gear, then select the Change theme option.
 2.	See the list of available themes and choose your preferred theme.  
@@ -93,7 +95,7 @@ You can choose the theme for Graph Explorer by selecting the **Change theme** op
 
 When you run queries in Graph Explorer, the queries are stored for 30 days. You can access your queries on the **History** tab in the left pane. You can run, view, delete or export the history items.
 
-![history-items](./images/storing-and-sharing-queries.png)
+![see-your-history-items](./images/storing-and-sharing-queries.png)
 
 1.	Export all history items in .har format.
 2.	Delete all history items.
@@ -105,7 +107,7 @@ When you run queries in Graph Explorer, the queries are stored for 30 days. You 
 
 To share queries that you run, click the share query button in the response pane and click **copy**. This copies a link that you can share that will allow others to see your query and the results.
 
-![share-query](./images/share-query.png)
+![how-to-share-a-query](./images/share-query.png)
 
 1.	Select Share query icon.
 2.	Select the Copy button to copy the query to clipboard.
@@ -115,7 +117,7 @@ To share queries that you run, click the share query button in the response pane
 
 You can collapse and expand the sidebar component in Graph Explorer when you want to widen the request and response area. To collapse the sidebar component, select the hamburger icon on the top left of the sidebar.
 
-![collapse-sidebar](./images/expand-collapse-sidebar-component.png)
+![how-to-collapse-sidebar-component](./images/expand-collapse-sidebar-component.png)
 
 1.	Expand the side bar component.
 2.	Collapse the sidebar component.
@@ -123,21 +125,21 @@ You can collapse and expand the sidebar component in Graph Explorer when you wan
 
 You can also expand and collapse the response preview by selecting the expand arrow in the response preview window.
 
-![collapse-response-preview](./images/expand-collapse-response-preview.png)
+![how-to-collapse-response-preview](./images/expand-collapse-response-preview.png)
 
 1.	Expand the response preview.
 2.	Exit the expanded response state.
 
 You can conveniently access the Microsoft 365 Developer Program site from the Graph Explorer UI to get a free sandbox with sample data that you can use to experiment with. Under the setting gear, select **Get a sandbox with sample data**.
 
-![m365-program-link](./images/link-to-m365-dev-program.png)
+![get-the-link-to-m365-program](./images/link-to-m365-dev-program.png)
 
 1.	Link to Microsoft 365 Developer Program
 
 ## Next steps
 
-Go to [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer/)
+Go to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/)
 
-Explore [Microsoft Graph Toolkit documentation](https://docs.microsoft.com/en-us/graph/toolkit/overview)
+Explore [Microsoft Graph Toolkit documentation](https://docs.microsoft.com/graph/toolkit/overview)
 
 File an issue on [Graph Explorer's GitHub repo](https://github.com/microsoftgraph/microsoft-graph-explorer-v4/issues/new/choose)

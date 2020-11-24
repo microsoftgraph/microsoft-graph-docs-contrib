@@ -3,7 +3,7 @@
 title: "Use Graph Explorer to try Microsoft Graph APIs"
 description: "Graph Explorer overview"
 localization_priority: Normal
-author: bengugi
+author: bettirosengugi
 
 ---
 
@@ -29,7 +29,7 @@ Graph Explorer handles the authentication process for you. You can also customiz
 
 Graph Explorer is a web application hosted on this link: [https://developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer). It&#39;s an open source project whose code lives in this GitHub repo: [https://github.com/microsoftgraph/microsoft-graph-explorer-v4](https://github.com/microsoftgraph/microsoft-graph-explorer-v4) and we welcome your contributions and feedback.
 
-![getting-started](./images/getting-started.png)
+![getting-started-on-graph-explorer](./images/getting-started.png)
 
 1. HTTP verb dropdown list
 2. API version dropdown list
@@ -42,7 +42,7 @@ Graph Explorer is a web application hosted on this link: [https://developer.micr
 >**NOTE :** <br>
 > To run a GET request on Graph Explorer you don’t have to be logged in, just click on a sample query and you’ll get sample data in the response preview. 
 
-![making-a-get-request](./images/making-a-get-request.png)
+![making-a-get-request-in-graph-explorer](./images/making-a-get-request.png)
 
 1. Select a sample query and run it.
 2. Get the HTTP response code.
@@ -59,7 +59,7 @@ To try POST, PUT, PATCH and DELETE requests, you need to sign in to Graph Explor
 
 To run a POST request for instance, change the request option to POST, and then add the request body and request headers if necessary.
 
-![making-a-non-get-request](./images/making-a-non-get-request.png)
+![how-to-make-a-non-get-request](./images/making-a-non-get-request.png)
 
 1. Select a POST sample query.
 2. Update the Request body e.g. in this case giving the application a name then run the query.
@@ -67,7 +67,7 @@ To run a POST request for instance, change the request option to POST, and then 
 
 To view the response in a format other than the default JSON, choose the **Request headers** tab in the request pane, define the key/value pair, and click **Add**.
 
-![request-header](./images/request-header.png)
+![modifying-or-updating-the-request-header](./images/request-header.png)
 
 1. Request headers tab to add key value pairs.
 
@@ -78,7 +78,7 @@ To view the response in a format other than the default JSON, choose the **Reque
 
 ## Next steps
 
-Go to [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer/)
+Go to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/)
 
 Explore [Graph Explorer features](./graph-explorer-features.md)
 
