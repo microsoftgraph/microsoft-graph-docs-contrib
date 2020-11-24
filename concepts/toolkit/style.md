@@ -20,17 +20,3 @@ mgt-person {
 You can't style internal elements of a component unless you provide a CSS custom property. The component child elements are hosted in a [shadow dom](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM).
 
 For more flexibility, consider using [custom templates](./templates.md).
-
-## Disable the shadow dom (experimental)
-
-You can disable the shadow dom, and directly style internal elements using normal browser stylesheets, by setting the static property `useShadowDom` of the `MgtBaseComponent` class to false before using any MGT tags.
-
-
-```html
-<script type="module">
-  import { MgtBaseComponent } from './dist/es6/components/baseComponent.js';
-   MgtBaseComponent.useShadowRoot = false;
-</script>
-
-<script type="module" src="./dist/es6/components/mgt-tasks/mgt-tasks.js"></script>
-````
