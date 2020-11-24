@@ -51,7 +51,7 @@ Graph Explorer includes several features to help to make your UI implementation 
 
 ### Microsoft Graph Toolkit integration
 
-The [Microsoft Graph Toolkit](https://docs.microsoft.com/en-us/graph/toolkit/overview) is a collection of reusable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph. The components are fully functional, with built in providers that authenticate with and fetch data from Microsoft Graph.
+The [Microsoft Graph Toolkit](https://docs.microsoft.com/graph/toolkit/overview) is a collection of reusable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph. The components are fully functional, with built in providers that authenticate with and fetch data from Microsoft Graph.
 
 Graph Explorer includes queries that support Microsoft Graph Toolkit components supported. When you run those queries, you will see a blue dot on the **Toolkit component** tab, and you can get the code for that component. The following table lists the sample queries that currently support Toolkit components.
 
