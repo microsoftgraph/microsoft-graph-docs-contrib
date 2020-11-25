@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "c6857dac-2cec-457f-a760-5dac6397e554",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerShare",
+          "ChangeType": "Change",
+          "Description": "Changed type of allowedUsers relationship on [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) resource.",
+          "Target": "printerShare"
+        },
+        {
+          "Id": "c6857dac-2cec-457f-a760-5dac6397e554",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerShare",
+          "ChangeType": "Change",
+          "Description": "Changed type of allowedGroups relationship on [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) resource.",
+          "Target": "printerShare"
+        }
+      ],
+      "Id": "c6857dac-2cec-457f-a760-5dac6397e554",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-11-01T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": " Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3a4e1e60-0477-4cda-9665-3a880ab0e927",
           "ApiChange": "Resource",
           "ChangedApiName": "Get printUsageSummaryByPrinter,getPrinterArchivedPrintJobs,List dailyPrintUsageSummariesByPrinter,List monthlyPrintUsageSummariesByPrinter,Get printUsageSummaryByUser,getUserArchivedPrintJobs,getGroupArchivedPrintJobs,List dailyPrintUsageSummariesByUser,List monthlyPrintUsageSummariesByUser",
