@@ -3,7 +3,7 @@ title: "Delete educationalActivity"
 description: "Delete an educationalActivity object from a user profile."
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "people"
+ms.prod: "educationalactivity"
 doc_type: "apiPageType"
 ---
 

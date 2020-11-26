@@ -4,7 +4,7 @@ description: "Create a Focused Inbox override for a sender identified by an SMTP
 localization_priority: Normal
 doc_type: apiPageType
 author: "svpsiva"
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create inferenceClassificationOverride

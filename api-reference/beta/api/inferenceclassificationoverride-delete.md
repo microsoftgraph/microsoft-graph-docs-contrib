@@ -4,7 +4,7 @@ description: "Delete a Focused Inbox override specified by its ID."
 localization_priority: Normal
 doc_type: apiPageType
 author: "svpsiva"
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Delete inferenceClassificationOverride

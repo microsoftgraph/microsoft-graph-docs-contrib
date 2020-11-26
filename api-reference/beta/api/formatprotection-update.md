@@ -4,7 +4,7 @@ description: "Update the properties of formatprotection object."
 localization_priority: Normal
 doc_type: apiPageType
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Update formatprotection

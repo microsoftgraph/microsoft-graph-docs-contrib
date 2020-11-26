@@ -3,7 +3,7 @@ title: "driveItem: restore"
 description: "Restore a driveItem that has been deleted and is currently in the recycle bin."
 localization_priority: Normal
 author: "JeremyKelley"
-ms.prod: ""
+ms.prod: "sharepoint"
 ms.date: 08/06/2019
 doc_type: "apiPageType"
 ---

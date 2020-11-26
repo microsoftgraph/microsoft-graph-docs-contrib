@@ -3,8 +3,8 @@ title: "Create ediscoveryCase"
 description: "Use this API to create a new ediscoveryCase."
 localization_priority: Normal
 author: "mahage-msft"
-ms.prod: "compliance"
 doc_type: "apiPageType"
+ms.prod: "compliance"
 ---
 
 # Create ediscoveryCase

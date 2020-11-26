@@ -3,7 +3,7 @@ title: "Update educationalactivity"
 description: "Update the properties of an educationalActivity object."
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "people"
+ms.prod: "educationalactivity"
 doc_type: "apiPageType"
 ---
 

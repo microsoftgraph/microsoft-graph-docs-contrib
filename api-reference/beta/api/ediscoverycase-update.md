@@ -3,8 +3,9 @@ title: "Update ediscoverycase"
 description: "Update the properties of an ediscoveryCase object."
 localization_priority: Normal
 author: "mahage-msft"
-ms.prod: "compliance"
 doc_type: "apiPageType"
+ms.prod: "compliance"
+
 ---
 
 # Update ediscoveryCase
