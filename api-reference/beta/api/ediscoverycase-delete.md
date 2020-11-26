@@ -3,8 +3,8 @@ title: "Delete ediscoveryCase"
 description: "Delete an ediscoveryCase object."
 localization_priority: Normal
 author: "mahage-msft"
-doc_type: "apiPageType"
 ms.prod: "compliance"
+doc_type: "apiPageType"
 ---
 
 # Delete ediscoveryCase

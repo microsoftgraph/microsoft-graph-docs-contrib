@@ -4,7 +4,7 @@ description: "Change the **classifyAs** field of a Focused Inbox override as spe
 localization_priority: Normal
 doc_type: apiPageType
 author: "svpsiva"
-ms.prod: "microsoft-identity-platform"
+ms.prod: ""
 ---
 
 # Update inferenceClassificationOverride

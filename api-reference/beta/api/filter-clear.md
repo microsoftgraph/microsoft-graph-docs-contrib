@@ -4,7 +4,7 @@ description: "Clear the filter on the given column."
 localization_priority: Normal
 doc_type: apiPageType
 author: "ruoyingl"
-ms.prod: "microsoft-identity-platform"
+ms.prod: ""
 ---
 
 # Filter: clear

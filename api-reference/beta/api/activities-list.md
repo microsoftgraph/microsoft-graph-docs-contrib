@@ -6,7 +6,7 @@ title: File Activities
 description: "List the recent activities that took place on an item or under a hierarchy."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: ""
 ---
 # Enumerate activities (preview)
 

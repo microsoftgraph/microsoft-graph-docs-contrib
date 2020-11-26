@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of formatprotection obje
 localization_priority: Normal
 doc_type: apiPageType
 author: "ruoyingl"
-ms.prod: "microsoft-identity-platform"
+ms.prod: ""
 ---
 
 # Get FormatProtection

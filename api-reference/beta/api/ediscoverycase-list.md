@@ -3,8 +3,8 @@ title: "List ediscoveryCases"
 description: "Retrieve a list of eDiscovery cases."
 localization_priority: Normal
 author: "mahage-msft"
-doc_type: "apiPageType"
 ms.prod: "compliance"
+doc_type: "apiPageType"
 ---
 
 # List ediscoveryCases
