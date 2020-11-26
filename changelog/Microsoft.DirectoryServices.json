@@ -107,6 +107,42 @@
     {
       "ChangeList": [
         {
+          "Id": "c63feb50-6eee-4be2-b2ad-17ac331ae887",
+          "ApiChange": "Resource",
+          "ChangedApiName": "permissionGrantPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionGrantPolicy](https://docs.microsoft.com/graph/api/resources/permissiongrantpolicy?view=graph-rest-beta) resource type.",
+          "Target": "permissionGrantPolicy"
+        }
+      ],
+      "Id": "b7b778df-24ed-47ae-939a-c80785ef4275",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-09-01T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8064b74f-02c1-4b4b-ade7-90f83d00a858",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delegatedPermissionClassifications",
+          "ChangeType": "Addition",
+          "Description": "Added [delegatedPermissionClassification](https://docs.microsoft.com/graph/api/resources/delegatedpermissionclassification?view=graph-rest-beta) navigation to the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "e224d14c-5408-4f20-93d2-f9dcc678d393",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-09-01T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Application"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4d0e93d9-7b06-4b52-91d9-9766a15d3615",
           "ApiChange": "Property",
           "ChangedApiName": "settings",
