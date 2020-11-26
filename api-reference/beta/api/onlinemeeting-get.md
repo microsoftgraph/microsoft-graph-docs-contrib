@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=Vide
 [!INCLUDE [sample-code](../includes/snippets/objc/get-onlinemeeting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-onlinemeeting-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -134,7 +138,8 @@ Content-Length: 1574
             "displayName": "Tyler Stein"
           }
         },
-        "upn": "upn-value"
+        "upn": "upn-value",
+        "role": "attendee"
       }
     ],
     "organizer": {
@@ -147,7 +152,8 @@ Content-Length: 1574
           "displayName": "Jasmine Miller"
         }
       },
-      "upn": "upn-value"
+      "upn": "upn-value",
+      "role": "presenter"
     }
   },
   "startDateTime": "2018-05-30T00:30:00Z",

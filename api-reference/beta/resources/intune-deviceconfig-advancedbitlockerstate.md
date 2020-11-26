@@ -41,5 +41,3 @@ Advanced BitLocker State
 
 
 
-
-

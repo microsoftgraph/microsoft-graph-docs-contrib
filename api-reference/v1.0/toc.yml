@@ -40,8 +40,8 @@ items:
         href: /graph/webhooks?context=graph/api/1.0
       - name: Tutorial
         href: /learn/modules/msgraph-changenotifications-trackchanges
-      - name: Missing Outlook notifications (preview)
-        href: /graph/webhooks-outlook-authz?context=graph/api/1.0
+      - name: Missing change notifications
+        href: /graph/webhooks-lifecycle
       - name: Notifications with resource data
         href: /graph/webhooks-with-resource-data?context=graph/api/1.0
     - name: Change tracking
@@ -75,7 +75,7 @@ items:
       displayname: Migration, Azure AD Graph
       items:
       - name: Overview
-        href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
+        href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph%252fapi%252f1.0
       - name: Checklist to migrate apps
         href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
       - name: "1: Review differences"
@@ -321,8 +321,9 @@ items:
           - name: Update settings
             href: api/usersettings-update.md
       - name: Mail
-        href: resources/message.md
         items:
+        - name: Message
+          href: resources/message.md
         - name: Create mail folder
           href: api/user-post-mailfolders.md
         - name: Create message
@@ -344,8 +345,9 @@ items:
         - name: Send mail
           href: api/user-sendmail.md
       - name: Notes
-        href: resources/onenote.md
         items:
+        - name: Onenote
+          href: resources/onenote.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
         - name: List notebooks
@@ -403,6 +405,18 @@ items:
         items:
         - name: List tasks
           href: api/planneruser-list-tasks.md
+      - name: To-do tasks
+        items:
+        - name: Task
+          href: resources/todotask.md
+        - name: Create task
+          href: api/todotasklist-post-tasks.md
+        - name: Create task list
+          href: api/todo-post-lists.md
+        - name: List tasks
+          href: api/todotasklist-list-tasks.md
+        - name: List task lists
+          href: api/todo-list-lists.md
     - name: Groups
       items:
       - name: Overview
@@ -582,7 +596,7 @@ items:
         - name: Create rejected sender
           href: api/group-post-rejectedsenders.md
         - name: Remove rejected senders
-          href: api/group-delete-rejectedsenders.md
+          href: api/group-delete-rejectedsenders.md  
       - name: Conversation thread
         href: resources/conversationthread.md
         items:
@@ -782,6 +796,15 @@ items:
           items:
           - name: List
             href: api/serviceprincipal-list-oauth2permissiongrants.md
+        - name: Delegated permission classifications
+          href: resources/delegatedpermissionclassification.md
+          items:
+          - name: List
+            href: api/serviceprincipal-list-delegatedpermissionclassifications.md
+          - name: Create
+            href: api/serviceprincipal-post-delegatedpermissionclassifications.md
+          - name: Delete
+            href: api/serviceprincipal-delete-delegatedpermissionclassifications.md
         - name: Membership
           items:
           - name: List member of
@@ -824,6 +847,34 @@ items:
               href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
             - name: Remove
               href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+          - name: Permission grant policy
+            href: resources/permissiongrantpolicy.md
+            items:
+            - name: Create
+              href: api/permissiongrantpolicy-post-permissiongrantpolicies.md
+            - name: List
+              href: api/permissiongrantpolicy-list.md
+            - name: Get
+              href: api/permissiongrantpolicy-get.md
+            - name: Update
+              href: api/permissiongrantpolicy-update.md
+            - name: Delete
+              href: api/permissiongrantpolicy-delete.md
+            - name: Permission grant condition sets
+              href: resources/permissiongrantconditionset.md
+              items:
+                - name: List includes
+                  href: api/permissiongrantpolicy-list-includes.md
+                - name: Create in includes
+                  href: api/permissiongrantpolicy-post-includes.md
+                - name: Delete from includes
+                  href: api/permissiongrantpolicy-delete-includes.md
+                - name: List excludes
+                  href: api/permissiongrantpolicy-list-excludes.md
+                - name: Create in excludes
+                  href: api/permissiongrantpolicy-post-excludes.md
+                - name: Delete from excludes
+                  href: api/permissiongrantpolicy-delete-excludes.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:
@@ -4637,6 +4688,19 @@ items:
           href: api/reportroot-getyammergroupsactivitygroupcounts.md
         - name: Get activity counts
           href: api/reportroot-getyammergroupsactivitycounts.md
+    - name: Search
+      displayname: Microsoft Search API
+      items:
+      - name: Query
+        items:
+        - name: Overview
+          href: resources/search-api-overview.md
+        - name: Search request type
+          href: resources/searchrequest.md
+        - name: Search response type
+          href: resources/searchresponse.md
+        - name: Query data
+          href: api/search-query.md
     - name: Security
       displayname: Security API, Microsoft Intelligent Security Graph
       items:
@@ -4838,10 +4902,14 @@ items:
           href: api/group-delete.md
         - name: List members
           href: api/team-list-members.md
-        - name: Add members
+        - name: Get member
+          href: api/team-get-members.md
+        - name: Add member
           href: api/team-post-members.md
-        - name: Remove members
+        - name: Remove member
           href: api/team-delete-members.md
+        - name: Update member
+          href: api/team-update-members.md
         - name: Archive team
           href: api/team-archive.md
         - name: Unarchive team
@@ -4852,6 +4920,8 @@ items:
           href: api/user-list-joinedteams.md
         - name: Get primary channel
           href: api/team-get-primarychannel.md
+        - name: List all teams
+          href: /graph/teams-list-all-teams?context=graph/api/1.0
       - name: Group (team)
         href: resources/group.md
         items:
@@ -4900,29 +4970,57 @@ items:
         items:
         - name: List channels
           href: api/channel-list.md
-        - name: Get channel
-          href: api/channel-get.md
         - name: Create channel
           href: api/channel-post.md
+        - name: Get channel
+          href: api/channel-get.md
         - name: Update channel
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
+        - name: List members
+          href: api/channel-list-members.md
+        - name: Get member
+          href: api/channel-get-members.md
+        - name: Add member 
+          href: api/channel-post-members.md
+        - name: Remove member
+          href: api/channel-delete-members.md
+        - name: Update member role
+          href: api/channel-update-members.md        
         - name: Get files folder
           href: api/channel-get-filesfolder.md
+        - name: List channel messages
+          href: api/channel-list-messages.md
+        - name: Get channel messages delta
+          href: api/chatmessage-delta.md
+        - name: Get channel message
+          href: api/channel-get-message.md
+        - name: List message replies
+          href: api/channel-list-messagereplies.md
+        - name: Get message reply
+          href: api/channel-get-messagereply.md
         - name: Send message
-          href: api/channel-post-messages.md
+          href: api/channel-post-message.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
-        - name: Send message
-          href: api/channel-post-messages.md
+        - name: List channel messages
+          href: api/channel-list-messages.md
+        - name: Get channel messages delta
+          href: api/chatmessage-delta.md
+        - name: Get channel message
+          href: api/channel-get-message.md
+        - name: List message replies
+          href: api/channel-list-messagereplies.md
+        - name: Get message reply
+          href: api/channel-get-messagereply.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
         - name: Update message
-          href: api/chatmessage-update.md  
+          href: api/chatmessage-update.md
       - name: App catalog
         items:
         - name: App in catalog
@@ -5148,6 +5246,62 @@ items:
           href: api/onenote-list-notebooks.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
+    - name: To-do tasks
+      displayName: Microsoft To Do
+      items:
+      - name: Overview
+        href: resources/todo-overview.md
+      - name: Task list
+        href: resources/todotasklist.md
+        items:
+        - name: List task lists
+          href: api/todo-list-lists.md
+        - name: Create task list
+          href: api/todo-post-lists.md
+        - name: Get task list
+          href: api/todotasklist-get.md
+        - name: Update task list
+          href: api/todotasklist-update.md
+        - name: Delete task list
+          href: api/todotasklist-delete.md
+        - name: Get task list delta
+          href: api/todotasklist-delta.md
+        - name: Create open extension
+          href: api/opentypeextension-post-opentypeextension.md
+        - name: Get open extension
+          href: api/opentypeextension-get.md
+      - name: Task
+        href: resources/todotask.md
+        items:
+        - name: List tasks
+          href: api/todotasklist-list-tasks.md
+        - name: Create task
+          href: api/todotasklist-post-tasks.md
+        - name: Get task
+          href: api/todotask-get.md
+        - name: Update task
+          href: api/todotask-update.md
+        - name: Delete task
+          href: api/todotask-delete.md
+        - name: Get task delta
+          href: api/todotask-delta.md
+        - name: Create open extension
+          href: api/opentypeextension-post-opentypeextension.md
+        - name: Get open extension
+          href: api/opentypeextension-get.md
+      - name: Linked resource
+        href: resources/linkedresource.md
+        items:
+        - name: List
+          href: api/todotask-list-linkedresources.md
+        - name: Create
+          href: api/todotask-post-linkedresources.md
+        - name: Get
+          href: api/linkedresource-get.md
+        - name: Update
+          href: api/linkedresource-update.md
+        - name: Delete
+          href: api/linkedresource-delete.md
     - name: Workbooks and charts
       displayName: Excel
       items:

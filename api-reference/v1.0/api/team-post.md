@@ -19,9 +19,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Group.ReadWrite.All, Directory.ReadWrite.All |
+| Delegated (work or school account)     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All |
+| Application                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+
 
 ## HTTP request
 
@@ -123,7 +124,7 @@ Content-Type: application/json
    "template@odata.bind":"https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
    "displayName":"My Sample Team",
    "description":"My Sample Team’s Description",
-   "members@odata.bind":[
+   "members":[
       {
          "@odata.type":"#microsoft.graph.aadUserConversationMember",
          "roles":[
