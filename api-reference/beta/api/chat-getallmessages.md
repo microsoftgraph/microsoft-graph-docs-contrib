@@ -1,5 +1,5 @@
 ---
-title: "Get all chat messages"
+title: "Chats: getAllMessages"
 description: "Get messages from all chats that a user is a participant in."
 author: "laujan"
 localization_priority: Priority
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get all chat messages
+# Chats: getAllMessages
 
 Namespace: microsoft.graph
 
