@@ -7,7 +7,7 @@
             "ApiChange": "Method",
             "ChangedApiName": "getAllMessages",
             "ChangeType": "Addition",
-            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/chat-getallmessages?view=graph-rest-beta) method to the [chatmessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resource.",
+            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/chat-getallmessages?view=graph-rest-beta) method to the [chatmessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resource type.",
             "Target": "chat-getallmessages"
           },
           {
@@ -15,7 +15,7 @@
             "ApiChange": "Method",
             "ChangedApiName": "getAllMessages",
             "ChangeType": "Addition",
-            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/channel-getallmessages?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/channel-getallmessages?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource type.",
             "Target": "channel-getallmessages"
           },
           {
@@ -23,14 +23,14 @@
             "ApiChange": "Method",
             "ChangedApiName": "getAllMessages",
             "ChangeType": "Addition",
-            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/resources/team-getallmessages?view=graph-rest-beta) method to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
+            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/team-getallmessages?view=graph-rest-beta) method to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource type.",
             "Target": "team-getallmessages"
           }
         ],
         "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
         "Cloud": "prd",
         "Version": "beta",
-        "CreatedDateTime": "2020-11-05T00:00:00",
+        "CreatedDateTime": "2020-12-01T00:00:00",
         "WorkloadArea": "Teamwork",
         "SubArea": ""
       },  

@@ -11,8 +11,18 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
-## November 2020
+## December 2020
 
+### Teamwork
+
+| **Change type** | **Version** | **Description** |
+| :--------------:| :----------:| :--------------:|
+| Addition | beta | Added the [getAllMessages](/graph/api/chat-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [chatmessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the [getAllMessages](/graph/api/channel-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the [getAllMessages](/graph/api/team-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) resource.|
+
+
+## November 2020
 
 ### Change notifications
 
@@ -82,7 +92,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **spa** property to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added the [organizationalBrandingProperties](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true) resource type and associated methods, which allow for the customization of the visual look and feel of sign-in screens.|
 
-### Identity and access | Governance
+
+### Identity and access | Governance
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -104,14 +115,10 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added support for [resource-specific consent](https://aka.ms/teams-rsc) (RSC) permissions to v1.0 APIs. |
-| Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-1.0&preserve-view=true). |
-| Addition | beta | Added the [getAllMessages](/graph/api/chat-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [chatmessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true)  resource.|
-| Addition | beta | Added the [getAllMessages](/graph/api/channel-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource.|
-| Addition | beta | Added the [getAllMessages](/graph/api/team-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) resource.|
-| Addition | v1.0 | Added support for [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) (RSC) permissions to v1.0 APIs. |
-| Addition | v1.0 | Added [APIs for reading channel message](/graph/api/resources/chatmessage?view=graph-rest-1.0&preserve-view=true). |
+| Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-v1.0&preserve-view=true). |
 | Addition | Beta | Added the following methods to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource: [List channel members](/graph/api/channel-list-members?view=graph-rest-beta&preserve-view=true), [Get channel member](/graph/api/channel-get-members?view=graph-rest-beta&preserve-view=true), [Add channel member](/graph/api/channel-post-members?view=graph-rest-beta&preserve-view=true),  [Update channel member's role](/graph/api/channel-update-members?view=graph-rest-beta&preserve-view=true), [Remove channel member](/graph/api/channel-delete-members?view=graph-rest-beta&preserve-view=true).|
 | Addition | v1.0 | Added the following methods to the [channel](/graph/api/resources/channel?view=graph-rest-v1.0&preserve-view=true) resource: [List channel members](/graph/api/channel-list-members?view=graph-rest-v1.0&preserve-view=true), [Get channel member](/graph/api/channel-get-members?view=graph-rest-v1.0&preserve-view=true), [Add channel member](/graph/api/channel-post-members?view=graph-rest-v1.0&preserve-view=true),  [Update channel member's role](/graph/api/channel-update-members?view=graph-rest-v1.0&preserve-view=true), [Remove channel member](/graph/api/channel-delete-members?view=graph-rest-v1.0&preserve-view=true).|
+
 
 ## October 2020
 
@@ -492,6 +499,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) entity for managing user flows in an Azure Active Directory B2C tenant. |
 | Addition | beta | Added the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) entity for managing self-service sign up user flows in an Azure Active Directory tenant. |
+
 
 ### People and workplace intelligence | Profile
 
@@ -5593,4 +5601,3 @@ Added support for dynamic group membership through the public preview API, inclu
 | Fix             | v1.0 and beta | Fixed being able to select certain user properties on other users, when referencing the user by user principal name (UPN). For example: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
 | Fix             | v1.0 and beta | Fixed calling the _microsoft.graph.reminderView_ user bound function, which was failing with the following error: Could not find a property named businessPhones on type  Microsoft.OutlookServices.Reminder. |
 | Fix             | v1.0 and beta | Fixed user creation and update (POST/PATCH /v1.0/users), which was failing with a 400 error. |
-
