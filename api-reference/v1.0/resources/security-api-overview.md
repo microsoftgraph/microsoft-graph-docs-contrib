@@ -109,7 +109,7 @@ Explore other options to connect with the Microsoft Graph Security API:
 
 - [Microsoft Graph Security connectors for Logic Apps, Flow and PowerApps](https://aka.ms/graphsecurityconnectors)
 - [Microsoft Graph Security connector for Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc)
-- [Jupyter notebook samples](https://aka.ms/graphsecurityjupyternotebooks)
+- [Jupyter Notebook samples](https://aka.ms/graphsecurityjupyternotebooks)
 
 Engage with the community:
 
