@@ -133,7 +133,7 @@ Content-type: application/json
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_count_only"
 }-->
 ```msgraph-interactive
@@ -162,7 +162,7 @@ Content-type: text/plain
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_a_count"
 }-->
 ```msgraph-interactive
@@ -206,7 +206,7 @@ Content-type: application/json
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_phone_count"
 }-->
 ```msgraph-interactive

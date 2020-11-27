@@ -62,7 +62,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/serviceprincipals
+GET https://graph.microsoft.com/v1.0/servicePrincipals
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-serviceprincipal-csharp-snippets.md)]
@@ -119,7 +119,7 @@ Content-type: application/json
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_count_only"
 }-->
 ```msgraph-interactive
@@ -148,7 +148,7 @@ Content-type: text/plain
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_a_count"
 }-->
 ```msgraph-interactive
@@ -194,7 +194,7 @@ Content-type: application/json
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_team_count"
 }-->
 ```msgraph-interactive

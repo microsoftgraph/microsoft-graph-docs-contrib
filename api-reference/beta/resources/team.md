@@ -26,10 +26,11 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |[Get team](../api/team-get.md) | [team](team.md) | Retrieve the properties and relationships of the specified team.|
 |[Update team](../api/team-update.md) | [team](team.md) |Update the properties of the specified team. |
 |[Delete team](../api/group-delete.md) | None |Delete the team and its associated group. |
-|[List members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) collection|Get the conversationMembers from the members navigation property.|
-|[Add members](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Add a new member.|
-|[Remove members](../api/team-delete-members.md)|None|Delete a [conversationMember](../resources/conversationmember.md) object.|
-|[Change member's role](../api/conversationmember-update.md)|[conversationMember](../resources/conversationmember.md)|Change a member to an owner or back to a regular member.|
+|[List members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) collection|Get the list of members in the team.|
+|[Get member](../api/team-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in the team.|
+|[Add member](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Add a new member to the team.|
+|[Remove member](../api/team-delete-members.md)|None|Remove an existing member from the team.|
+|[Update member's role](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Change a member to an owner or back to a regular member.|
 |[Archive team](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Put the team in a read-only state. |
 |[Unarchive team](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
 |[Clone team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
@@ -66,7 +67,7 @@ Instance attributes are properties with special behaviors. These properties are 
 |:-----------------------|:-------|:-------------------------|
 |@microsoft.graph.teamCreationMode|string|Indicates that the team is in migration state and is currently being used for migration purposes. It accepts one value: `migration`.|
 
-For a POST request example, see [Request (create team in migration state)](https://github.com/MicrosoftDocs/msteams-docs/blob/add-import-messages/msteams-platform/graph-api/import-messages/import-external-messages-to-teams.md#request-create-team-in-migration-state).
+For a POST request example, see [Request (create team in migration state)](https://docs.microsoft.com/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 ## Relationships
 

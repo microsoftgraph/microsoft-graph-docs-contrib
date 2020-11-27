@@ -31,7 +31,7 @@ GET /users
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, `$filter`, and `$select`. You can use `$search` on the **displayName** property. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, `$filter`, and `$select`. You can use `$search` on the **displayName** property. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index. The `$count` and `$search` parameters are currently not available in Azure AD B2C tenants.
 
 By default, only a limited set of properties are returned (**businessPhones**, **displayName**, **givenName**, **id**, **jobTitle**, **mail**, **mobilePhone**, **officeLocation**, **preferredLanguage**, **surname**, and **userPrincipalName**). 
 
@@ -62,6 +62,8 @@ If successful, this method returns a `200 OK` response code and collection of [u
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_users"
@@ -69,6 +71,24 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-users-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-users-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-users-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-users-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -106,15 +126,35 @@ Content-type: application/json
 
 The following is an example of the request.
 
->**Note:** When filtering on **identities**, you must supply both **issuer** and **issuerAssignedId**.
+>**Note:** When filtering on **identities**, you must supply both **issuer** and **issuerAssignedId**. The value of **issuerAssignedId** must be the email address of the user account, not the user principal name (UPN). If a UPN is used, the response will be an empty list.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signinname_users"
 } -->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-signinname-users-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-signinname-users-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-signinname-users-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-signinname-users-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -147,13 +187,33 @@ Content-type: application/json
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signin_last_time"
 } -->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,userPrincipalName,signInActivity
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-last-time-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-last-time-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-signin-last-time-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-signin-last-time-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -200,6 +260,8 @@ Content-type: application/json
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signin_last_time_filter"
@@ -207,6 +269,24 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'Eric')&$select=displayName,signInActivity
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-last-time-filter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-last-time-filter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-signin-last-time-filter-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-signin-last-time-filter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -245,10 +325,10 @@ Content-type: application/json
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_signin_last_time_range"
 } -->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users?filter=signInActivity/lastSignInDateTime le 2019-06-01T00:00:00Z
 ```
 
@@ -298,7 +378,7 @@ Content-type: application/json
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_count_only"
 } -->
 ```msgraph-interactive
@@ -327,7 +407,7 @@ Content-type: text/plain
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_a_count"
 } -->
 ```msgraph-interactive
@@ -374,7 +454,7 @@ Content-type: application/json
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_wa_count"
 } -->
 ```msgraph-interactive
@@ -420,7 +500,7 @@ Content-type: application/json
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_to_count"
 } -->
 ```msgraph-interactive

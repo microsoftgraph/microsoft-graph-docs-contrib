@@ -134,7 +134,7 @@ The properties on which the aggregation is requested need to be refinable in the
 
 Once the response is returned containing the collection of [searchBucket](searchBucket.md) objects, it is possible to refine the search request to only the matching elements contained in one [searchBucket](searchBucket.md). This is achieved by passing back the  **aggregationsFilterToken** value in the **aggregationFilters** property of the subsequent [searchRequest](./searchrequest.md).
 
-Aggregations are currently only supported on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md). Soon they will be supported for refinable properties in [externalItem](externalItem.md) of Microsoft Graph connectors.
+Aggregations are currently supported for any refinable property on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md), and on Microsoft Graph connectors [externalItem](externalItem.md).
 
 See [refine search results](/graph/search-concept-aggregation) for examples that show using aggregation to enhance and narrow down search results.
 
@@ -161,7 +161,7 @@ Any combinations involving **message**, **event**, SharePoint and OneDrive types
 
 ## Schema change deprecation warning
 
-Properties used in a search request and response have been renamed or removed. In most cases, the original properties are being deprecated and replaced by the current properties, as listed in the table below.
+**In the beta version**, properties used in a search request and response have been renamed or removed. In most cases, the original properties are being deprecated and replaced by the current properties, as listed in the table below.
 
 Start updating any existing apps to use current property and type names, and to get current property names in the response.
 For backward compatibility, the original properties and types are accessible and functional until **December 31, 2020**, after which they will be removed.
