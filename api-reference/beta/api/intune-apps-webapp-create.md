@@ -3,7 +3,7 @@ title: "Create webApp"
 description: "Create a new webApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -66,6 +66,8 @@ The following table shows the properties that are required when you create the w
 |isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersedingAppCount|Int32|The total number of apps this app directly or indirectly supersedes. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersededAppCount|Int32|The total number of apps this app is directly or indirectly superseded by. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |appUrl|String|The web app URL.|
 |useManagedBrowser|Boolean|Whether or not to use managed browser. This property is only applicable for Android and IOS.|
 
@@ -81,7 +83,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 779
+Content-length: 836
 
 {
   "@odata.type": "#microsoft.graph.webApp",
@@ -106,6 +108,8 @@ Content-length: 779
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "appUrl": "https://example.com/appUrl/",
   "useManagedBrowser": true
 }
@@ -116,7 +120,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 951
+Content-Length: 1008
 
 {
   "@odata.type": "#microsoft.graph.webApp",
@@ -144,10 +148,13 @@ Content-Length: 951
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "appUrl": "https://example.com/appUrl/",
   "useManagedBrowser": true
 }
 ```
+
 
 
 

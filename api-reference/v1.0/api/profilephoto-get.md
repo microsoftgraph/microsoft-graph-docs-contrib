@@ -104,7 +104,7 @@ GET https://graph.microsoft.com/v1.0/me/photo/$value
 ##### Response
 Contains the binary data of the requested photo. The HTTP response code is 200.
 
-### Example 2: Get the 48x48 photo for the signed-in use
+### Example 2: Get the 48x48 photo for the signed-in user
 ##### Request
 <!-- {
   "blockType": "ignored"
@@ -197,3 +197,4 @@ If you want to display the image on a web page, create an in-memory object from 
   "section": "documentation",
   "tocPath": ""
 }-->
+

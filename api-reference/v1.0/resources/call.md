@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 The **call** resource is created when there is an incoming call for the application or the application creates a new outgoing call via a `POST` on `app/calls`.
 
-Calls can be set up as a peer-to-peer or as a group call. For creating or joining a group call, supply the `chatInfo` and `meetingInfo`. If these are not supplied, a new group call is created automatically. For an incoming call, record these values in a highly available store, so that your application to rejoin the call in the event your application crashes.
+Calls can be set up as a peer-to-peer or as a group call. For creating or joining a group call, supply the `chatInfo` and `meetingInfo`. If these are not supplied, a new group call is created automatically. For an incoming call, record these values in a highly available store so that your application can rejoin the call in the event that your application crashes.
 
-Although the same identity cannot be invited multiple times, it is possible for an application to join the same meeting multiple times. Each time the application wants to joins, a separate identity must be provided in order for the clients to display them as different participants.
+Although the same identity cannot be invited multiple times, it is possible for an application to join the same meeting multiple times. Each time the application wants to join a call, a separate identity must be provided in order for the clients to display them as different participants.
 
 > **Note:** You can get the join URL from a meeting scheduled with Microsoft Teams. Extract the data from the URL as shown to populate `chatInfo` and `meetingInfo`.
 ```http
@@ -45,6 +45,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | **Interactive-Voice-Response**                                     |                                                             |                                                                                 |
 | [PlayPrompt](../api/call-playprompt.md)                            | [playPromptOperation](playpromptoperation.md)               | Play prompt in the call.                                                        |
 | [RecordResponse](../api/call-record.md)                            | [recordOperation](recordoperation.md)                       | Records a short audio response from the caller.                                        |
+| [CancelMediaProcessing](../api/call-cancelMediaProcessing.md)                  | [commsOperation](commsoperation.md)                         | Cancel media processing.                                                        |
 | [SubscribeToTone](../api/call-subscribetotone.md)                  | [commsOperation](commsoperation.md)                         | Subscribe to DTMF tones.                                                        |
 | **Self Participant Operations**                                    |                                                             |                                                                                 |
 | [Mute](../api/call-mute.md)                                        | [muteParticipantOperation](muteparticipantoperation.md)     | Mute self in the call.                                                          |
@@ -148,3 +149,4 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+

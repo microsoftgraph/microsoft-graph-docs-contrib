@@ -90,5 +90,10 @@ Content-type: application/json
     "allowedToSignUpEmailBasedSubscriptions": false,
     "allowedToUseSSPR": true,
     "allowEmailVerifiedUsersToJoinOrganization": true,
+    "permissionGrantPolicyIdsAssignedToDefaultUserRole": [
+        "managePermissionGrantsForSelf.microsoft-user-default-low"
+    ]
 }
 ```
+
+

@@ -1,14 +1,14 @@
 ---
 title: "Get change notifications delivered in different ways (preview)"
 description: "Change notifications can be delivered via different technologies, including webhooks and Azure Event Hubs."
-author: "baywet"
+author: "davidmu1"
 localization_priority: Priority
-ms.custom: graphiamtop20
+ms.custom: graphiamtop20, devx-track-azurecli
 ---
 
 # Get change notifications delivered in different ways (preview)
 
-Change notifications can be delivered in different ways to subscribers. If the main delivery mode for change notifications is through webhooks, it can be challenging to take advantage of webhooks for high throughput scenarios or when the receiver cannot expose a publicly available notificiation URL.  
+Change notifications can be delivered in different ways to subscribers. If the main delivery mode for change notifications is through webhooks, it can be challenging to take advantage of webhooks for high throughput scenarios or when the receiver cannot expose a publicly available notification URL.  
 
 This change notifications delivery mode is available for all resources that support Microsoft Graph change notifications.
 
@@ -132,7 +132,7 @@ The main difference during subscription creation will be the **notificationUrl**
 
 #### Receiving notifications
 
-Events will be now delivered to your application by Event Hubs. For details, see [receiving events](https://docs.microsoft.com/azure/event-hubs/get-started-dotnet-standard-send-v2#receive-events) in the Event Hubs documentation.
+Events will be now delivered to your application by Event Hubs. For details, see [receiving events](/azure/event-hubs/get-started-dotnet-standard-send-v2#receive-events) in the Event Hubs documentation.
 
 Before you can receive the notifications in your application, you'll need to create another shared access policy with a "Listen" permission and obtain the connection string, similar to the steps listed in [Configuring the Azure Event Hub](#configuring-the-azure-event-hub).
 
@@ -176,7 +176,7 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 
 > **Note:** This API only works with a school or work account, not with a personal account. Make sure that you are signed in with an account on your domain.
 
-Alternatively, you can use this [Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) script to add the missing service principal.
+Alternatively, you can use this [Azure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) script to add the missing service principal.
 
 ```PowerShell
 Connect-AzureAD -TenantId <tenant-id>
