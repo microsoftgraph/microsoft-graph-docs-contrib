@@ -55,8 +55,9 @@ The following is an example of the request.
   "blockType": "request",
   "name": "user_upgrade_teamsApp"
 }-->
+
 ```http
-POST /users/{id}/teamwork/installedApps/{id}/upgrade
+POST /users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps/NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk/upgrade
 ```
 
 ### Response
@@ -68,6 +69,7 @@ The following is an example of the response.
   "name": "user_upgrade_teamsApp",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```

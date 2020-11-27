@@ -58,7 +58,7 @@ The following is an example of the request.
   "name": "user_list_teamsApps"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/{id}/teamwork/installedApps/{id}
+GET https://graph.microsoft.com/v1.0/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps/NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk
 ```
 
 #### Response
@@ -80,11 +80,12 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "id-value"
+      "id": "YTZiNjMzNjUtMzFhNC00ZjQzLTkyZWMtNzEwYjcxNTU3YWY5IyMwLjk"
     }
   ]
 }
 ```
+
 ### Example 2: Get the names and other details of the app installed for the user
 
 #### Request
@@ -93,7 +94,8 @@ The following is an example of the request.
 <!-- {
   "blockType": "ignored",
   "name": "user_list_teamsApps_details"
-}-->
+} -->
+
 ```http
 GET https://graph.microsoft.com/v1.0/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps/NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk=?$expand=teamsAppDefinition
 ```
