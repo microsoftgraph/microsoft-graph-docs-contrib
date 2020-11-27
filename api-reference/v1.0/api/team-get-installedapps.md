@@ -62,9 +62,7 @@ The following is an example of the request.
 GET /teams/{id}/installedApps/{id}
 ```
 
----
-
-#### Responses
+#### Response
 
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -103,8 +101,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps/{id}?$expand=teamsAppDefinition
 ```
-
----
 
 #### Response
 
