@@ -12634,7 +12634,7 @@ items:
           href: api/userteamwork-upgrade-installedapps.md
         - name: Get chat between user and app
           href: api/userscopeteamsappinstallation-get-chat.md
-        - name: Activity feed
+      - name: Activity feed
         items:
         - name: Send notification to user in chat
           href: api/chat-sendactivitynotification.md
