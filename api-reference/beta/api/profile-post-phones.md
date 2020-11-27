@@ -91,6 +91,10 @@ Content-length: 382
 [!INCLUDE [sample-code](../includes/snippets/objc/create-itemphone-from--objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-itemphone-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -134,3 +138,5 @@ Content-Type: application/json
   "number": "+7 499 342 22 13"
 }
 ```
+
+

@@ -1,6 +1,6 @@
 ---
 title: "onlineMeeting: createOrGet"
-description: "Create an online meeting with a custom specified external ID. If the external ID already exists, this API will return the **onlineMeeting** object with that external ID."
+description: "Create an online meeting with a custom specified external ID. If the external ID already exists, this API will return the onlineMeeting object with that external ID."
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -21,34 +21,47 @@ Create an [onlineMeeting](../resources/onlinemeeting.md) object with a custom sp
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
-| Delegated (personal Microsoft account) | Not Supported                               |
-| Application                            | Not Supported                |
+| Delegated (personal Microsoft account) | Not Supported.                              |
+| Application                            | OnlineMeetings.ReadWrite.All*                |
+
+> [!IMPORTANT]
+> \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to create or get an online meeting with external ID on behalf of that user (user ID specified in the request path).
 
 ## HTTP request
+
+Request when using a delegated token:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/createOrGet
 ```
 
+Request when using an application token:
+<!-- { "blockType": "ignored" } -->
+```http
+POST /users/{userId}/onlineMeetings/createOrGet
+```
+
+> **Note:** `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+
 ## Request headers
-| Name          | Description               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
 | Content-type  | application/json. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter        | Type                                     |Description                                                                                                                                    |
-|:-----------------|:-----------------------------------------|:--------------------------------------------------------------------------|
-| chatInfo         |[chatInfo](../resources/chatinfo.md)                   |The chat information associated with this online meeting.|
-| endDateTime      | DateTime                                 | The meeting end time in UTC. |
-| externalId       | String                                   | The external ID. A custom ID. (Required) |
-| participants     | [meetingParticipants](../resources/meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
-| startDateTime    | DateTime                                 | The meeting start time in UTC. |
-| subject          | String                                   | The subject of the online meeting. |
+| Parameter     | Type                                                       | Description                                                                                          |
+| :------------ | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+| chatInfo      | [chatInfo](../resources/chatinfo.md)                       | The chat information associated with this online meeting.                                            |
+| endDateTime   | DateTime                                                   | The meeting end time in UTC.                                                                         |
+| externalId    | String                                                     | The external ID. A custom ID. (Required)                                                             |
+| participants  | [meetingParticipants](../resources/meetingparticipants.md) | The participants associated with the online meeting.  This includes the organizer and the attendees. |
+| startDateTime | DateTime                                                   | The meeting start time in UTC.                                                                       |
+| subject       | String                                                     | The subject of the online meeting.                                                                   |
 
 > **Notes:**
 >
@@ -69,6 +82,8 @@ If successful, this method returns a `201 Created` response code if a new meetin
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-or-get-onlinemeeting"
@@ -91,12 +106,31 @@ Content-Type: application/json
                         "id": "1f35f2e6-9cab-44ad-8d5a-b74c14720000"
                     }
                 },
+                "role": "presenter",
                 "upn": "test1@contoso.com"
             }
         ]
     }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-or-get-onlinemeeting-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-or-get-onlinemeeting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-or-get-onlinemeeting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-or-get-onlinemeeting-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -285,3 +319,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

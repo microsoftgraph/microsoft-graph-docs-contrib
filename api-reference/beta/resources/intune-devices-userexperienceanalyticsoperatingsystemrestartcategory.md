@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsOperatingSystemRestartCategory enum type"
 description: "Operating System restart category"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -26,6 +26,9 @@ Operating System restart category
 |blueScreen|3|Blue screen restart|
 |shutdownWithUpdate|4|Shutdown with update|
 |shutdownWithoutUpdate|5|Shutdown without update|
+|longPowerButtonPress|6|Long power button press|
+|bootError|7|Boot error|
+
 
 
 

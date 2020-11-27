@@ -10,17 +10,19 @@ const options = {
 
 const client = Client.init(options);
 
-const tasks = {
-  title:"A new task",
-  linkedResources: [{
-			webUrl: "http://microsoft.com",
-			applicationName: "Microsoft",
-			displayName: "Microsoft"
-		}]
+const todoTask = {
+   title:"A new task",
+   linkedResources:[
+      {
+         webUrl:"http://microsoft.com",
+         applicationName:"Microsoft",
+         displayName:"Microsoft"
+      }
+   ]
 };
 
 let res = await client.api('/me/todo/lists/AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM/tasks')
 	.version('beta')
-	.post(tasks);
+	.post(todoTask);
 
 ```

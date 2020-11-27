@@ -6,12 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("$filter", "id eq '876df28f-2e78-423b-94a5-44181bd0e225',"));
-
 ITeamsAppCollectionPage teamsApps = graphClient.appCatalogs().teamsApps()
-	.buildRequest( requestOptions )
-	.expand("appDefinitions")
+	.buildRequest()
+	.filter("id eq 'b1c5353a-7aca-41b3-830f-27d5218fe0e5'")
 	.get();
 
 ```

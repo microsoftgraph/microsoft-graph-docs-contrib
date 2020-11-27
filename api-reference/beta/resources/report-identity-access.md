@@ -43,3 +43,5 @@ Reports resources and APIs can open up new ways for you to engage with users and
 
 - Drill down on the methods and properties of the resources most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+
+

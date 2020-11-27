@@ -3,7 +3,7 @@ title: "Create iosUpdateDeviceStatus"
 description: "Create a new iosUpdateDeviceStatus object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -117,6 +117,7 @@ Content-Length: 619
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 
