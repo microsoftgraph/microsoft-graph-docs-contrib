@@ -265,6 +265,8 @@ items:
       - name: Directory objects
         href: resources/directoryobject.md
         items:
+        - name: Activate service plan
+          href: api/user-activateserviceplan.md
         - name: Assign license
           href: api/user-assignlicense.md
         - name: Check member groups
