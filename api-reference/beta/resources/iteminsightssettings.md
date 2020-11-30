@@ -11,7 +11,13 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents privacy settings for [itemInsights](iteminsights.md), which configure the visibility of insights derived from Microsoft Graph, between users and other items (such as documents or sites) in Microsoft 365.
+Represents privacy settings for [itemInsights](iteminsights.md) and privacy setting for meeting hours insights. Use this API to disable/enable calculation and visibility of item insights and meeting hours insights. 
+
+- Item insights: Calculates relationship between users and items such as documents or sites in Microsoft 365.  
+- Meeting hours insights: Calculates a person's calendar meeting hours based on activities in Word, Excel, PowerPoint, email, and Outlook Calendar in Microsoft 365.
+
+> [!NOTE]
+> As of November 2020, meeting hours insights are being rolled out to customers and are not yet generally available. 
 
 ## Methods
 
