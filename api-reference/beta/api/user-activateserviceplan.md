@@ -68,8 +68,8 @@ Content-Type: application/json
 Content-length: 51
 
 {
-  "servicePlanId": "Guid",
-  "skuId": "Guid"
+  "servicePlanId": "28f42d6f-8034-4a0f-9d8a-a218a63b3299",
+  "skuId": "465a2a90-5e59-456d-a7b8-127b9fb2e484"
 }
 ```
 
