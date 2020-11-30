@@ -54,7 +54,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: List userAttributeAssignments in a b2xIdentityUserFlow
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -66,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userAttributeAssignments
 ```
 
-### Response
+#### Response
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -78,8 +80,66 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userAttributeAss
 
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
 
+Content-Type: application/json
+{
+    "@odata.type": "#microsoft.graph.identityUserFlowAttributeAssignment",
+    "value": [
+        {
+            "id": "City",
+            "isOptional": false,
+            "requiresVerification": false,
+            "userInputType": "RadioSingleSelect",
+            "displayName": "City",
+            "userAttributeValues": [
+                {
+                    "name": "S",
+                    "value": "1",
+                    "isDefault": true
+                }
+            ]
+        },
+        {
+            "id": "extension_guid_shoeSize",
+            "isOptional": false,
+            "requiresVerification": false,
+            "userInputType": "TextBox",
+            "displayName": "Shoe size",
+            "userFlowId": "B2C_1_Consumer",
+            "userAttributeValues": []
+        }
+    ]
+}
+```
+
+### Example 2: List userAttributeAssignments in a b2xIdentityUserFlow and expand userAttribute
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_identityuserflowattributeassignment_expand"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userAttributeAssignments?$expand=userAttribute
+```
+
+#### Response
+
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.identityUserFlowAttributeAssignment)"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+
+Content-Type: application/json
 {
     "@odata.type": "#microsoft.graph.identityUserFlowAttributeAssignment",
     "value": [

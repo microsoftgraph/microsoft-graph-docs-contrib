@@ -37,7 +37,7 @@ GET /identity/b2xUserFlows/{id}/userAttributeAssignments/{id}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` query parameters to get the details of the user flow attribute. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -55,7 +55,9 @@ If successful, this method returns a `200 OK` response code and an [identityUser
 
 ## Examples
 
-### Request
+### Example 1: Get the details of an identityUserFlowAttributeAssignment
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -67,7 +69,7 @@ If successful, this method returns a `200 OK` response code and an [identityUser
 GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttributeAssignments/{id}
 ```
 
-### Response
+#### Response
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -95,5 +97,57 @@ Content-Type: application/json
             "isDefault": true
         }
     ]
+}
+```
+
+### Example 2: Get the details of an identityUserFlowAttributeAssignment and expand userAttribute
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_identityuserflowattributeassignment_expand"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttributeAssignments/{id}?$expand=userAttribute
+```
+
+#### Response
+
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityUserFlowAttributeAssignment"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows('userFlowId')/userAttributeAssignments/$entity",
+    "id": "City",
+    "isOptional": false,
+    "requiresVerification": false,
+    "userInputType": "TextBox",
+    "displayName": "City",
+    "userAttributeValues": [
+        {
+            "name": "S",
+            "value": "1",
+            "isDefault": true
+        }
+    ],
+    "userAttribute": {
+        "id": "City",
+        "displayName": "City",
+        "description": "Your city",
+        "userFlowAttributeType": "builtIn",
+        "dataType": "string"
+  }
 }
 ```

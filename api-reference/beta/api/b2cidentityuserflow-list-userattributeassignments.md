@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# List userAttributeAssignments in  b2cIdentityUserFlow
+# List userAttributeAssignments in b2cIdentityUserFlow
 
 Namespace: microsoft.graph
 
@@ -36,7 +36,7 @@ GET /identity/b2cUserFlows/{id}/userAttributeAssignments
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` parameters to get the details of the user flow attribute. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -54,7 +54,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: List userAttributeAssignments in a b2cIdentityUserFlow
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -63,10 +65,68 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 
 ``` http
+GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttributeAssignments?
+```
+
+#### Response
+
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.identityUserFlowAttributeAssignment)"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+
+Content-Type: application/json
+{
+    "@odata.type": "#microsoft.graph.identityUserFlowAttributeAssignment",
+    "value": [
+        {
+            "id": "City",
+            "isOptional": false,
+            "requiresVerification": false,
+            "userInputType": "RadioSingleSelect",
+            "displayName": "City",
+            "userAttributeValues": [
+                {
+                    "name": "S",
+                    "value": "1",
+                    "isDefault": true
+                }
+            ]
+        },
+        {
+            "id": "extension_guid_shoeSize",
+            "isOptional": false,
+            "requiresVerification": false,
+            "userInputType": "TextBox",
+            "displayName": "Shoe size",
+            "userFlowId": "B2C_1_Consumer",
+            "userAttributeValues": []
+        }
+    ]
+}
+```
+
+### Example 2: List userAttributeAssignments in a b2cIdentityUserFlow and expand userAttribute
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_identityuserflowattributeassignment_expand"
+}
+-->
+
+``` http
 GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttributeAssignments?$expand=userAttribute
 ```
 
-### Response
+#### Response
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
