@@ -1453,7 +1453,7 @@ items:
           - name: List
             href: api/custodian-list.md
           - name: Create
-            href: api/custodian-post.md
+            href: api/custodian-create.md
           - name: Get
             href: api/custodian-get.md
           - name: Update
@@ -1490,7 +1490,7 @@ items:
           - name: List
             href: api/sitesource-list.md
           - name: Create
-            href: api/sitesource-post.md
+            href: api/sitesource-create.md
           - name: Get
             href: api/sitesource-get.md
           - name: Delete
@@ -1501,7 +1501,7 @@ items:
           - name: List
             href: api/unifiedgroupsource-list.md
           - name: Create
-            href: api/unifiedgroupsource-post.md
+            href: api/unifiedgroupsource-create.md
           - name: Get
             href: api/unifiedgroupsource-get.md
           - name: Delete
@@ -1512,7 +1512,7 @@ items:
           - name: List
             href: api/usersource-list.md
           - name: Create
-            href: api/usersource-post.md
+            href: api/usersource-create.md
           - name: Get
             href: api/usersource-get.md
           - name: Delete

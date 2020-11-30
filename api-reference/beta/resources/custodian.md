@@ -20,17 +20,17 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List custodians](../api/custodian-list.md)|[custodian](../resources/custodian.md) collection|Get a list of **custodian** objects and their properties.|
-|[Create custodian](../api/custodian-post.md)|[custodian](../resources/custodian.md)|Create a new **custodian** object.|
+|[Create custodian](../api/custodian-create.md)|[custodian](../resources/custodian.md)|Create a new **custodian** object.|
 |[Get custodian](../api/custodian-get.md)|[custodian](../resources/custodian.md)|Read the properties and relationships of a **custodian** object.|
 |[Update custodian](../api/custodian-update.md)|[custodian](../resources/custodian.md)|Update the properties of a **custodian** object.|
 |[release](../api/custodian-release.md)|None|Release a custodian from a case.|
 |[activate](../api/custodian-activate.md)|None|Reactivate a custodian that has been released from a case and make them part of the case again.|
 |[List siteSources](../api/sitesource-list.md)|[siteSource](../resources/sitesource.md) collection|Get the **siteSource** resources from the **siteSources** navigation property.|
-|[Create siteSources](../api/sitesource-post.md)|[siteSource](../resources/sitesource.md)|Create a new **siteSource** object.|
+|[Create siteSources](../api/sitesource-create.md)|[siteSource](../resources/sitesource.md)|Create a new **siteSource** object.|
 |[List unifiedGroupSources](../api/unifiedgroupsource-list.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md) collection|Get the **unifiedGroupSource** resources from the **unifiedGroupSources** navigation property.|
-|[Create unifiedGroupSources](../api/unifiedgroupsource-post.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md)|Create a new **unifiedGroupSource** object.|
+|[Create unifiedGroupSources](../api/unifiedgroupsource-create.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md)|Create a new **unifiedGroupSource** object.|
 |[List userSources](../api/usersource-list.md)|[userSource](../resources/usersource.md) collection|Get the **userSource** resources from the **userSources** navigation property.|
-|[Create userSources](../api/usersource-post.md)|[userSource](../resources/usersource.md)|Create a new **userSource** object.|
+|[Create userSources](../api/usersource-create.md)|[userSource](../resources/usersource.md)|Create a new **userSource** object.|
 
 ## Properties
 

@@ -20,7 +20,7 @@ Data source entity for SharePoint sites - This is the container for a custodian'
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List siteSources](../api/sitesource-list.md)|[siteSource](../resources/sitesource.md) collection|Get a list of **siteSource** objects and their properties.|
-|[Create siteSource](../api/sitesource-post.md)|[siteSource](../resources/sitesource.md)|Create a new **siteSource** object.|
+|[Create siteSource](../api/sitesource-create.md)|[siteSource](../resources/sitesource.md)|Create a new **siteSource** object.|
 |[Get siteSource](../api/sitesource-get.md)|[siteSource](../resources/sitesource.md)|Read the properties and relationships of a **siteSource** object.|
 |[Delete siteSource](../api/sitesource-delete.md)|None|Delete a **siteSource** object.|
 
