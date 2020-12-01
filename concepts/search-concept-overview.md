@@ -42,9 +42,9 @@ The Microsoft Search API supports searching the following content in the Microso
 
 Looking for the API reference for this service?
 
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-1.0) (1.0 release)
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta) (preview)
-- [Use the Microsoft Search API to index data](/graph/api/resources/indexing-api-overview) (preview)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-1.0) (v1.0)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta) (beta)
+- [Use the Microsoft Search API to index data](/graph/api/resources/indexing-api-overview) (beta)
 
 ## Next steps
 
