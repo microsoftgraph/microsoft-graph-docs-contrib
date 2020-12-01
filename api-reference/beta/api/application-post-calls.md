@@ -1119,37 +1119,35 @@ Content-Type: application/json
 
 ### Example 9: Create peer-to-peer PSTN call with service hosted media
 
-> **Note:** This call needs the Calls.Initiate.All permission.
+> **Note:** This call requires the Calls.Initiate.All permission.
 
-##### Prerequisite
 This call needs application instance with PSTN number assigned.
-###### Step 1: Create application instance.
-The tenant admin should call the following cmdlets on the tenant remote PowerShell to create application instance. For more information, see [New-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) and [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
+
+#### Step 1: Create application instance
+The tenant admin should call the following cmdlets on the tenant remote PowerShell to create the application instance. For more information, see [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) and [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
 ```
 PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
 PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 ```
-###### Step 2: Assign Microsoft 365 licenses.
-1. Use tenant admin credential to sign in https://admin.microsoft.com/ and navigate to **Users -> Active users** tab.
-2. Select the application instance and assign **Microsoft 365 Domestic and International Calling Plan** and **Microsoft 365 Phone System - Virtual User** licenses and click **Save changes**. If the tenant is running out of those licenses, navigate to **Billing -> Purchase services** tab to purchase.
-###### Step 3: Acquire PSTN number.
-1. Use tenant admin credential to sign in https://admin.teams.microsoft.com/ and click on **Legacy portal** tab on the left panel.
-2. In the new page, navigate to **voice -> phone numbers** tab.
-3. Click **+** button and select **New Service Numbers** and go to **Add new service numbers** page.
-4. Select **Country/Region**, **State/Region**, **City** and input **Quantity**, and click **add** button to search. Then click **acquire numbers** button. The newly acquired number will be shown on **phone numbers** tab.
-###### Step 4: Assign PSTN number to application instance.
+#### Step 2: Assign Microsoft 365 licenses
+1. Use tenant admin credential to sign in https://admin.microsoft.com/ and go to the **Users -> Active users** tab.
+2. Select the application instance, assign **Microsoft 365 Domestic and International Calling Plan** and **Microsoft 365 Phone System - Virtual User** licenses, and click **Save changes**. If the tenant is running out of those licenses, go to the **Billing -> Purchase services** tab to purchase.
+#### Step 3: Acquire PSTN number
+1. Use tenant admin credential to sign in to https://admin.teams.microsoft.com/ and click the **Legacy portal** tab on the left panel.
+2. In the new page, go to the **voice -> phone numbers** tab.
+3. Click the **+** button, select **New Service Numbers**, and go to the **Add new service numbers** page.
+4. Select **Country/Region**, **State/Region**, **City**, input **Quantity**, and click **add** to search. click **acquire numbers**. The newly acquired number will be shown on  the **phone numbers** tab.
+#### Step 4: Assign PSTN number to application instance
 The tenant admin should call the following cmdlets on the tenant remote PowerShell to assign PSTN number to  application instance. For more information, see [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) and [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
 ```
 PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
 PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 ```
-> **Note:** If a tenant has Australian PSTN numbers assigned to any application instances, this call may not be working. If a tenant is newly created, it may take several days to have this feature available.
+> **Note:** If a tenant has Australian PSTN numbers assigned to any application instances, this call might not work. If a tenant is newly created, it mmight take several days for this feature to be available.
 
-##### Request
-The following example shows the request which makes a peer-to-peer call between the bot and a PSTN number. In this example, the media is hosted by the service. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
+#### Request
+The following example shows the request to make a peer-to-peer call between the bot and a PSTN number. In this example, the media is hosted by the service. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-call-service-hosted-media",
@@ -1197,26 +1195,8 @@ Content-Type: application/json
   }
 }
 ```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-call-service-hosted-media-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-call-service-hosted-media-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability. 
 
@@ -1306,18 +1286,15 @@ Content-Type: application/json
 
 ### Example 10: Create peer-to-peer PSTN call with application hosted media
 
-> **Note**: This example needs Calls.Initiate.All and Calls.AccessMedia.All permissions.
+> **Note**: This example requires Calls.Initiate.All and Calls.AccessMedia.All permissions.
 
-##### Prerequisite
-This call needs application instance with PSTN number assigned. Follow same steps in previous example.
+This call needs application instance with PSTN number assigned, as described in Example 9.
 
-> **Note:** If a tenant has Australian PSTN numbers assigned to any application instances, this call may not be working. If a tenant is newly created, it may take several days to have this feature available.
+> **Note:** If a tenant has Australian PSTN numbers assigned to any application instances, this call might not work. If a tenant is newly created, it might take several days for this feature to be available.
 
-##### Request
-The following example shows the request which makes a peer-to-peer call between the bot and a PSTN number. In this example the media is hosted locally by the application. The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.
+#### Request
+The following example shows a request to make a peer-to-peer call between the bot and a PSTN number. In this example, the media is hosted locally by the application. The values of authorization token, callback url, application id, application name, user id, user name, and tenant id must be replaced with actual values to make the example work.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-call-service-hosted-media",
@@ -1366,26 +1343,8 @@ Content-Type: application/json
   }
 }
 ```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-call-service-hosted-media-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-call-service-hosted-media-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability. 
 
