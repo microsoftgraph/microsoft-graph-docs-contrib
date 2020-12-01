@@ -454,12 +454,10 @@ dataPolicyOperation.
 
 > **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
-
 <!-- { "blockType": "throttlinggenstart" } -->
 ### Education service limits
 
 [!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
-
 
 ### Excel service limits
 
