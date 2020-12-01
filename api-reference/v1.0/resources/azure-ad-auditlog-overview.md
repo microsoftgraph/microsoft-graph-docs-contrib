@@ -15,7 +15,7 @@ Azure Active Directory (Azure AD) tracks user activity and creates reports that 
 
 ## What are Azure AD activity logs?
 
-Azure AD provides these types of activity reports:
+Azure AD provides the following types of activity reports:
 
 - Directory audits
 - Sign-ins
