@@ -9,7 +9,7 @@ author: nmetulev
 
 The MSAL provider uses [MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) to sign in users and acquire tokens to use with Microsoft Graph.
 
-To learn more, see [providers](../providers.md).
+To learn more, see [providers](./providers.md).
 
 ## Get started
 
