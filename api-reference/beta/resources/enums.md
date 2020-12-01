@@ -1496,6 +1496,10 @@ Possible values for user account types (group membership), per Windows definitio
 |aadConnectivityCheckUnknownError |
 |resourceAvailabilityCheckNoSubnetIP |
 |resourceAvailabilityCheckUnknownError |
+|permissionCheckNoSubscriptionReaderRole |
+|permissionCheckNoResourceGroupOwnerRole |
+|permissionCheckNoVNetContributorRol |
+|permissionCheckUnknownError |
 |internalServerUnknownError |
 
 ### cloudPcOnPremisesConnectionStatus values
