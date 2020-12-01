@@ -1,5 +1,5 @@
 ---
-title: "teams: getAllMessages"
+title: "team: getAllMessages"
 description: "Get messages from teams that a user is a participant in."
 author: "nkramer"
 localization_priority: Priority
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# teams: getAllMessages
+# team: getAllMessages
 
 Namespace: microsoft.graph
 
