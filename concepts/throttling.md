@@ -454,23 +454,12 @@ dataPolicyOperation.
 
 > **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
+
 <!-- { "blockType": "throttlinggenstart" } -->
 ### Education service limits
 
 [!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
 
-### Assignment service limits
-The following limits apply to requests on the assignment service beta API:
-
-| Request Type                 | Limit per app per tenant     | Limit per tenant for all apps |
-|---------------------------|------------------------------|----------------------------|
-| Any         | 5000 requests per 10 seconds   | 15 000 requests per 10 seconds |
-| GET MeAssignment)  | 50 per 10 sec | 150 per 10 sec |  
-
-The preceding limits apply to the following resources: 
-[educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta)
-[educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta)
-[educationResource](/graph/api/resources/educationresource?view=graph-rest-beta)
 
 ### Excel service limits
 
@@ -511,3 +500,16 @@ The preceding limits apply to the following resources:
 [!INCLUDE [Subscription services throttling documentation](../includes/throttling-subscription-services.md)]
 
 <!-- { "blockType": "throttlinggenend" } -->
+
+### Assignment service limits
+The following limits apply to requests on the assignment service beta API:
+
+| Request Type                 | Limit per app per tenant     | Limit per tenant for all apps |
+|---------------------------|------------------------------|----------------------------|
+| Any         | 5000 requests per 10 seconds   | 15 000 requests per 10 seconds |
+| GET me/Assignment)  | 50 requests per 10 seconds | 150 requests per 10 seconds |  
+
+The preceding limits apply to the following resources: 
+[educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta)
+[educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta)
+[educationResource](/graph/api/resources/educationresource?view=graph-rest-beta)
