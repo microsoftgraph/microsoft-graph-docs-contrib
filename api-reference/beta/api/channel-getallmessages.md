@@ -1,5 +1,5 @@
 ---
-title: "Channels: getAllMessages"
+title: "channel: getAllMessages"
 description: "Retrieve all messages in a team channel."
 author: "laujan"
 localization_priority: Priority
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Channels: getAllMessages
+# channel: getAllMessages
 
 Namespace: microsoft.graph
 
