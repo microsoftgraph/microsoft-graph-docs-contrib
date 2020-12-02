@@ -13,14 +13,26 @@ Namespace: microsoft.graph
 
 The **assignedPlans** property of both the [user](user.md) entity and the [organization](organization.md) entity is a collection of **assignedPlan**.
 
+
 ## Properties
 
-| Property|Type|Description|
+| Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |assignedDateTime|DateTimeOffset|The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|capabilityStatus|String|Condition of the capability assignment. The possible values are: <br /> `Enabled` - available for normal use. <br /> `Warning` - available for normal use but is in a grace period. <br /> `Suspended` - unavailable but any data associated with the capability must be preserved. <br /> `Deleted` - unavailable and any data associated with the capability must be preserved. <br />  `LockedOut` - unavailable for all administrators and users but any data associated with the capability must be preserved. |
+|capabilityStatus|[capabilityStatus](#capabilitystatus-values)|Condition of the capability assignment. The possible values are `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`.|
 |service|String|The name of the service; for example, “Exchange”.|
 |servicePlanId|Guid|A GUID that identifies the service plan.|
+
+
+### capabilityStatus values
+
+| Member | Description	|
+|:---------------|:--------|
+| Enabled | Available for normal use. |
+| Warning | Available for normal use but is in a grace period. |
+| Suspended | Unavailable but any data associated with the capability must be preserved. |
+| Deleted | Unavailable and any data associated with the capability may be deleted. |
+| LockedOut | Unavailable for all administrators and users but any data associated with the capability must be preserved. |
 
 ## JSON representation
 
