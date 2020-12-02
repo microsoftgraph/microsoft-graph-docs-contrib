@@ -3,7 +3,7 @@ title: "assignedPlan resource type"
 description: "The **assignedPlans** property of both the user entity and the organization entity is a collection of **assignedPlan**."
 localization_priority: Normal
 author: "krbain"
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
