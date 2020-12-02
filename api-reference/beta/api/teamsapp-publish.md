@@ -17,6 +17,8 @@ Publish an [app](../resources/teamsapp.md) to the Microsoft Teams app catalog.
 Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);
 the created resource will have a **distributionMethod** property value of `organization`.
 
+The **requiresReview** property allows any user to submit an app for review by an administrator. Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -163,5 +165,57 @@ Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-4
   "name": "Test App",
   "version": "1.0.0",
   "distributionMethod": "organization"
+}
+```
+
+### Example 3: Approve or reject an app pending review
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_teamsapp"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/appCatalogs/teamsApps/{teams-app-id}/appDefinitions/ba032008-b8b6-496f-a5c9-6fe00f23cf4f
+Content-type: application/json
+
+{
+  "publishingState":"published"
+}
+```
+
+---
+
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appDefinition",
+    "@odata.etag": "158749011",
+    "id": "MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==",
+    "teamsAppId": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",
+    "displayName": "Test app",
+    "version": "1.0.11",
+    "azureADAppId": "a651cc7d-ec54-4fb2-9d0e-2c58dc830b0b",
+    "requiredResourceSpecificApplicationPermissions":[
+         "ChannelMessage.Read.Group",
+         "Channel.Create.Group",
+         "Tab.ReadWrite.Group",
+         "Member.Read.Group"
+    ],
+    "publishingState": "published",
+    "lastModifiedDateTime": "2020-02-10 22:48:33.841",
 }
 ```
