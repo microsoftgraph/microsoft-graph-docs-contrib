@@ -1,28 +1,30 @@
 ---
-title: "agreementFile resource type"
-description: "Represents a customizable terms of use agreement file that a tenant manages with Azure Active Directory (Azure AD). It contains metadata about the agreement file (for example, the name, the language, and whether it is the default file)."
+title: "agreementFileVersion resource type"
+description: "Represents a customized version of the localized policy files of terms of use agreement in Azure Active Directory (Azure AD). It contains metadata about the agreement file (for example, the name, the language, and whether it is the default file)."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: raprakasMSFT
+author: rajadineshmurugesan-microsoft
 ---
 
-# agreementFile resource type
+# agreementFileVersion resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a customizable terms of use agreement file that a tenant manages with Azure Active Directory (Azure AD). It contains metadata about the agreement file (for example, the name, the language, and whether it is the default file).
+Represents a customized version of terms of use agreement file that a tenant manages with Azure Active Directory (Azure AD). It contains metadata about the agreement file (for example, the name, the language, and whether it is the default file).
 
 <!--
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get agreementFile](../api/agreementfile-get.md) | [agreementFile](agreementfile.md) | Read properties and relationships of an **agreementFile** object. |
-| [Update](../api/agreementfile-update.md) | [agreementFile](agreementfile.md) | Update an **agreementFile** object. |
-| [Delete](../api/agreementfile-delete.md) | None | Delete an **agreementFile** object. |
+| [Create agreementFileLocalization](../api/agreementfilelocalization-post-agreementfilelocalizations.md) | [agreementfilelocalization](agreementfilelocalization.md) | Create a new agreementFileLocalization. |
+| [List agreementFileLocalizations](../api/agreementfilelocalization-list.md) | [agreementfilelocalization](agreementfilelocalization.md) collection | Get an agreementFileLocalization object collection. |
+| [Get agreementFileLocalization](../api/agreementfilelocalization-get.md) | [agreementfilelocalization](agreementfilelocalization.md) | Read properties and relationships of an agreementFileLocalization object. |
+| [List agreementFileVersions](../api/agreementfileversion-list.md) | [agreementfileversion](agreementfileversion.md) collection | Get an agreementFileVersion object collection. |
+| [Get agreementFileVersion](../api/agreementfileversion-get.md) | [agreementfileversion](agreementfileversion.md) | Read properties and relationships of an agreementFileVersion object. |
 -->
 
 ## Properties
@@ -40,7 +42,7 @@ Represents a customizable terms of use agreement file that a tenant manages with
 ## Relationships
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|localizations|[agreementFileLocalization](agreementfilelocalization.md) collection|The localized version of the agreement files attached to the agreement.|
+|versions|[agreementFileVersion](agreementfileversion.md) collection|The version history for the localized agreement file.|
 -->
 
 ## JSON representation
@@ -52,7 +54,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.agreementFile"
+  "@odata.type": "microsoft.graph.agreementFileVersion"
 }-->
 
 ```json
@@ -60,7 +62,7 @@ The following is a JSON representation of the resource.
   "fileData": {"@odata.type": "microsoft.graph.agreementFileData"},
   "fileName": "String",
   "id": "String (identifier)",
-  "isDefault": true,
+  "isDefault": "Boolean",
   "language": "String"
 }
 
@@ -71,12 +73,10 @@ The following is a JSON representation of the resource.
 <!--
 {
   "type": "#page.annotation",
-  "description": "agreementFile resource",
+  "description": "agreementFileLocalization resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": []
 }
 -->
-
-
