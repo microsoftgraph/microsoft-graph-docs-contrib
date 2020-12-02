@@ -311,7 +311,7 @@ items:
             href: reportroot-concept-overview.md
           - name: Authorization for Microsoft 365 usage reports
             href: reportroot-authorization.md
-      - name: Search (preview)
+      - name: Search
         items:
           - name: Overview
             href: search-concept-overview.md
@@ -325,11 +325,11 @@ items:
                 href: search-concept-files.md
               - name: Search connectors
                 href: search-concept-custom-types.md
-              - name: Sort search results
+              - name: Sort search results (preview)
                 href: search-concept-sort.md
-              - name: Refine search results
+              - name: Refine search results (preview)
                 href: search-concept-aggregation.md
-          - name: Index
+          - name: Index (preview)
             items:
               - name: Manage connections
                 href: search-index-manage-connections.md
@@ -376,6 +376,8 @@ items:
             href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: teams-proactive-messaging.md
+          - name: Send activity feed notifications
+            href: teams-send-activityfeednotifications.md
       - name: To-do tasks
         href: todo-concept-overview.md
         displayName: Microsoft To Do
@@ -586,7 +588,7 @@ items:
           - name: Providers
             items:
               - name: Using the providers
-                href: toolkit/providers.md
+                href: toolkit/providers/providers.md
               - name: MSAL provider
                 href: toolkit/providers/msal.md
               - name: SharePoint provider
@@ -597,16 +599,19 @@ items:
                 href: toolkit/providers/proxy.md
               - name: Custom provider
                 href: toolkit/providers/custom.md
-          - name: Styling components
-            href: toolkit/style.md
-          - name: Templating components
-            href: toolkit/templates.md
-          - name: Caching
-            href: toolkit/cache.md
-          - name: Localizing components
-            href: toolkit/localization.md
-          - name: Right-To-Left
-            href: toolkit/right-to-left.md
+          - name: Customize components
+            items:
+              - name: Styling components
+                href: toolkit/customize-components/style.md
+              - name: Templating components
+                href: toolkit/customize-components/templates.md
+              - name: Cache
+                href: toolkit/customize-components/cache.md
+              - name: Localizing components
+                href: toolkit/localization.md
+              - name: Right-To-Left
+                href: toolkit/right-to-left.md
+
       - name: Resources
         expanded: true
         items:
