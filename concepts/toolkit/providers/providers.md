@@ -116,7 +116,7 @@ Providers.removeProviderUpdatedListener(providerStateChanged);
 
 ## Getting an access token
 
-Each provider exposes a function called `getAccessToken` that can retreive the current access token or retrieve a new access token for the provided scopes. The following example shows how to get a new access token with the `User.Read` permission scope.
+Each provider exposes a function called `getAccessToken` that can retrieve the current access token or retrieve a new access token for the provided scopes. The following example shows how to get a new access token with the `User.Read` permission scope.
 
 ```js
 import { Providers, ProviderState } from "@microsoft/mgt";

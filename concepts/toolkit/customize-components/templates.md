@@ -7,7 +7,7 @@ author: nmetulev
 
 # Templates in the Microsoft Graph Toolkit
 
-Use custom templates to modify the content of a component.
+Most components support the use of custom templates to modify the content of a component.
 
 All web components support templates based on the `<template>` element. For example, to override the template of a component, add a `<template>` element inside a component.
 
@@ -30,6 +30,8 @@ All web components support templates based on the `<template>` element. For exam
   </template>
 </mgt-agenda>
 ```
+
+If you are using the Microsoft Graph Toolkit React components, you can use React for authoring templates as documented in the [`mgt-react` docs](../mgt-react).
 
 ## Data-type
 

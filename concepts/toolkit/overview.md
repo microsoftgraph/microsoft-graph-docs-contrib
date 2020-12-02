@@ -1,13 +1,13 @@
 ---
-title: "Microsoft Graph Toolkit: Web Components powered by Microsoft Graph"
-description: "The Microsoft Graph Toolkit is a collection of resuable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph."
+title: "Microsoft Graph Toolkit: Authentication Providers and UI Components powered by Microsoft Graph"
+description: "The Microsoft Graph Toolkit is a collection of authentication providers and resuable, framework-agnostic web components for accessing and working with Microsoft Graph."
 localization_priority: Normal
 author: elisenyang
 ---
 
-# Microsoft Graph Toolkit: Web Components powered by Microsoft Graph
+# Microsoft Graph Toolkit: Authentication Providers and UI Components powered by Microsoft Graph
 
-The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph. The components are fully functional right of out of the box, with built in providers that authenticate with and fetch data from Microsoft Graph.
+The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic components and authentication providers for accessing and working with Microsoft Graph. The components are fully functional right of out of the box, with built in providers that authenticate with and fetch data from Microsoft Graph.
 
 The Microsoft Graph Toolkit makes it easy to use Microsoft Graph in your application. In the example below, see how a signed in user and their calendar events are displayed with just two lines of code by using the [Login](./components/login.md) and [Agenda](./components/agenda.md) components.
 
@@ -19,7 +19,9 @@ The Microsoft Graph Toolkit makes it easy to use Microsoft Graph in your applica
 
 ### Components
 
-The Microsoft Graph Toolkit includes a collection of web components for the most commonly built experiences powered by Microsoft Graph APIs.
+The Microsoft Graph Toolkit includes a collection of web components for the most commonly built experiences powered by Microsoft Graph APIs. 
+
+The components are also available as [React components](./mgt-react).
 
 |Component|Description|
 |---------|-----------|
@@ -35,7 +37,7 @@ The Microsoft Graph Toolkit includes a collection of web components for the most
 
 ### Providers
 
-The components work best when used with a [provider](/providers/providers.md). Providers enable authentication and provide the implementation for acquiring the access tokens for calling the Microsoft Graph APIs.
+[Providers](/providers/providers.md) enable authentication and provide the implementation for acquiring access tokens on various platforms and expose a Microsoft Graph Client for calling the Microsoft Graph APIs. The components work best when used with a provider, but the providers can be used on their own.
 
 |Providers|Description|
 |---------|-----------|

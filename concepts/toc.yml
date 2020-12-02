@@ -607,6 +607,8 @@ items:
                 href: toolkit/customize-components/templates.md
               - name: Cache
                 href: toolkit/customize-components/cache.md
+          - name: Toolkit React package
+            href: toolkit/mgt-react.md
       - name: Resources
         expanded: true
         items:
