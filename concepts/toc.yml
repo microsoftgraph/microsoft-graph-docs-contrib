@@ -549,10 +549,15 @@ items:
         items:
           - name: Toolkit overview
             href: toolkit/overview.md
+              
           - name: Get started
             items:
               - name: Overview
                 href: toolkit/get-started/overview.md
+              - name: NPM packages
+                href: toolkit/get-started/packages.md
+              - name: Toolkit React package
+                href: toolkit/get-started/mgt-react.md
               - name: Create an Azure Active Directory app
                 href: toolkit/get-started/add-aad-app-registration.md
               - name: Build a web application (JavaScript)
@@ -607,8 +612,6 @@ items:
                 href: toolkit/customize-components/templates.md
               - name: Cache
                 href: toolkit/customize-components/cache.md
-          - name: Toolkit React package
-            href: toolkit/mgt-react.md
       - name: Resources
         expanded: true
         items:
