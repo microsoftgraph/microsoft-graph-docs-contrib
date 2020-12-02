@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|External Identity User Flow Administrator, Global Administrator|
+|Delegated (work or school account)|IdentityUserFlow.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|External Identity User Flow Administrator, Global Administrator|
+|Application|IdentityUserFlow.ReadWrite.All|
 
 ## HTTP request
 
@@ -46,7 +46,7 @@ PATCH /identity/b2xUserFlows/{id}/userAttributeAssignments/{id}
 
 In the request body, supply a JSON representation of the [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) object.
 
-The following table shows the properties that are required when you create the [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md).
+The following table shows the properties that are available to update in the [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

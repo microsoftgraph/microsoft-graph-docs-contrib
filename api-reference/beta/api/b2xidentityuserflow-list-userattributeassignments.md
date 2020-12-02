@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# List userAttributeAssignments in b2xIdentityUserFlow
+# List userAttributeAssignments
 
 Namespace: microsoft.graph
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Global Reader, External Identity User Flow Administrator, Global Administrator|
+|Delegated (work or school account)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|Global Reader, External Identity User Flow Administrator, Global Administrator|
+|Application|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
 ## HTTP request
 
@@ -36,7 +36,7 @@ GET /identity/b2xUserFlows/{id}/userAttributeAssignments
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` parameters to get the details of the user flow attribute. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

@@ -10685,10 +10685,6 @@ items:
                href: api/identityuserflowattributeassignment-update.md
              - name: Delete user flow attribute assignment
                href: api/identityuserflowattributeassignment-delete.md
-             - name: Get order
-               href: api/identityuserflowattributeassignment-getorder.md
-             - name: Set order
-               href: api/identityuserflowattributeassignment-setorder.md
       - name: Governance
         items:
         - name: Access reviews (groups)

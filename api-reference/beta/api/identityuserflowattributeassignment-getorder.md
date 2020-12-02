@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Global Reader, External Identity User Flow Admin, Global Administrator|
+|Delegated (work or school account)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|Global Reader, External Identity User Flow Admin, Global Administrator|
+|Application|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
 ## HTTP request
 

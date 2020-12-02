@@ -1,5 +1,5 @@
 ---
-title: "List userAttributeAssignments in b2cIdentityUserFlow"
+title: "List userAttributeAssignments"
 description: "Get the identityUserFlowAttributeAssignment resources from the userAttributeAssignments navigation property in a b2cIdentityUserFlow."
 author: "jkdouglas"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# List userAttributeAssignments in b2cIdentityUserFlow
+# List userAttributeAssignments
 
 Namespace: microsoft.graph
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Global Reader, External Identity User Flow Administrator, Global Administrator|
+|Delegated (work or school account)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|Global Reader, External Identity User Flow Administrator, Global Administrator|
+|Application|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
 ## HTTP request
 
