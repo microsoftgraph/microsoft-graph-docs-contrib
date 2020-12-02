@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-identityUserFlowAttributeAssignments are used to collect specific identityUserFlowAttributes within a user flow. This allows control over which attributes will be collected within a user flow and provides customization options on how to collect the attribute within the user flow. You can have multiple identityUserFlowAttributeAssignments within a single user flow, and this ultimately creates the experience the end user will see during sign up when asked to provide the information required by the user flow to complete sign up.
+identityUserFlowAttributeAssignments are used to collect specific identityUserFlowAttributes within a user flow. This allows control over the attributes that are collected within a user flow, and provides customization options on how to collect the attribute within the user flow. You can have multiple identityUserFlowAttributeAssignments within a single user flow that creates the experience the end user sees during sign-up when asked to provide the information required by the user flow to complete sign-up.
 
 ## Methods
 
