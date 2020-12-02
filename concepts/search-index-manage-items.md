@@ -43,8 +43,7 @@ Content is one of the key fields influencing [relevance](/graph/concepts/search-
 
 Content cannot be directly added into a search result template, but you can use a generated result snippet which is a dynamically generated preview of the relevant sections within content.
 
-![search-index-manage-items-3.svg](./images/search-index-manage-items-3.svg)
-*Example result snippet*
+![A screenshot of a search result template](./images/search-index-manage-items-3.svg)
 
 When content in your data source changes, you must sync it with your connection items. You can either update the entire item or update one or more of its components. Once your content has been added to Microsoft Graph, you can search for it through the Microsoft Search experience after setting up [verticals and result types](/MicrosoftSearch/customize-search-page) or using the [Microsoft Graph Search API](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true).
 

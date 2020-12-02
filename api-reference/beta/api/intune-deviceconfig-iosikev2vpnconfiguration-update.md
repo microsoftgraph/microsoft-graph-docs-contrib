@@ -3,7 +3,7 @@ title: "Update iosikEv2VpnConfiguration"
 description: "Update the properties of a iosikEv2VpnConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -76,6 +76,8 @@ The following table shows the properties that are required when you create the [
 |safariDomains|String collection|Safari domains when this VPN per App setting is enabled. In addition to the apps associated with this VPN, Safari domains specified here will also be able to trigger this VPN connection. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |onDemandRules|[vpnOnDemandRule](../resources/intune-deviceconfig-vpnondemandrule.md) collection|On-Demand Rules. This collection can contain a maximum of 500 elements. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |providerType|[vpnProviderType](../resources/intune-deviceconfig-vpnprovidertype.md)|Provider type for per-app VPN. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md). Possible values are: `notConfigured`, `appProxy`, `packetTunnel`.|
+|excludedDomains|String collection|Domains that are accessed through the public internet instead of through VPN, even when per-app VPN is activated Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|disableOnDemandUserOverride|Boolean|Toggle to prevent user from disabling automatic VPN in the Settings app Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Proxy Server. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |optInToDeviceIdSharing|Boolean|Opt-In to sharing the device's Id to third-party vpn clients for use during network access control validation. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |userDomain|String|Zscaler only. Enter a static domain to pre-populate the login field with in the Zscaler app. If this is left empty, the user's Azure Active Directory domain will be used instead. Inherited from [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)|
@@ -83,6 +85,7 @@ The following table shows the properties that are required when you create the [
 |cloudName|String|Zscaler only. Zscaler cloud which the user is assigned to. Inherited from [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)|
 |excludeList|String collection|Zscaler only. List of network addresses which are not sent through the Zscaler cloud. Inherited from [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)|
 |targetedMobileApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|Targeted mobile apps. This collection can contain a maximum of 500 elements. Inherited from [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)|
+|microsoftTunnelSiteId|String|Microsoft Tunnel site ID. Inherited from [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)|
 |childSecurityAssociationParameters|[iosVpnSecurityAssociationParameters](../resources/intune-deviceconfig-iosvpnsecurityassociationparameters.md)|Child Security Association Parameters|
 |clientAuthenticationType|[vpnClientAuthenticationType](../resources/intune-deviceconfig-vpnclientauthenticationtype.md)|Type of Client Authentication the VPN client will use. Possible values are: `userAuthentication`, `deviceAuthentication`.|
 |deadPeerDetectionRate|[vpnDeadPeerDetectionRate](../resources/intune-deviceconfig-vpndeadpeerdetectionrate.md)|Determine how often to check if a peer connection is still active. . Possible values are: `medium`, `none`, `low`, `high`.|
@@ -105,6 +108,7 @@ The following table shows the properties that are required when you create the [
 |allowDefaultChildSecurityAssociationParameters|Boolean|Allows the use of child security association parameters by setting all parameters to the device's default unless explicitly specified.|
 |alwaysOnConfiguration|[appleVpnAlwaysOnConfiguration](../resources/intune-deviceconfig-applevpnalwaysonconfiguration.md)|AlwaysOn Configuration|
 |enableAlwaysOnConfiguration|Boolean|Determines if Always on VPN is enabled|
+|mtuSizeInBytes|Int32|Maximum transmission unit. Valid values 1 to 65536|
 
 
 
@@ -118,7 +122,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 5241
+Content-length: 5428
 
 {
   "@odata.type": "#microsoft.graph.iosikEv2VpnConfiguration",
@@ -201,6 +205,10 @@ Content-length: 5241
     }
   ],
   "providerType": "appProxy",
+  "excludedDomains": [
+    "Excluded Domains value"
+  ],
+  "disableOnDemandUserOverride": true,
   "proxyServer": {
     "@odata.type": "microsoft.graph.vpnProxyServer",
     "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -223,6 +231,7 @@ Content-length: 5241
       "appId": "App Id value"
     }
   ],
+  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
   "childSecurityAssociationParameters": {
     "@odata.type": "microsoft.graph.iosVpnSecurityAssociationParameters",
     "securityEncryptionAlgorithm": "des",
@@ -273,7 +282,8 @@ Content-length: 5241
     "natKeepAliveIntervalInSeconds": 13,
     "natKeepAliveOffloadEnable": true
   },
-  "enableAlwaysOnConfiguration": true
+  "enableAlwaysOnConfiguration": true,
+  "mtuSizeInBytes": 14
 }
 ```
 
@@ -282,7 +292,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5413
+Content-Length: 5600
 
 {
   "@odata.type": "#microsoft.graph.iosikEv2VpnConfiguration",
@@ -368,6 +378,10 @@ Content-Length: 5413
     }
   ],
   "providerType": "appProxy",
+  "excludedDomains": [
+    "Excluded Domains value"
+  ],
+  "disableOnDemandUserOverride": true,
   "proxyServer": {
     "@odata.type": "microsoft.graph.vpnProxyServer",
     "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -390,6 +404,7 @@ Content-Length: 5413
       "appId": "App Id value"
     }
   ],
+  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
   "childSecurityAssociationParameters": {
     "@odata.type": "microsoft.graph.iosVpnSecurityAssociationParameters",
     "securityEncryptionAlgorithm": "des",
@@ -440,9 +455,11 @@ Content-Length: 5413
     "natKeepAliveIntervalInSeconds": 13,
     "natKeepAliveOffloadEnable": true
   },
-  "enableAlwaysOnConfiguration": true
+  "enableAlwaysOnConfiguration": true,
+  "mtuSizeInBytes": 14
 }
 ```
+
 
 
 

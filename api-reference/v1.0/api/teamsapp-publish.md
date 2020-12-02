@@ -17,7 +17,7 @@ the created resource will have a **distributionMethod** property value of `organ
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 >**Note:** Only global administrators can call this API.
 
@@ -32,17 +32,6 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /appCatalogs/teamsApps
 ```
-To publish an app that requires a review:
-
-```http
-POST /appCatalogs/teamsApps?requiresReview:{Boolean}
-```
-
-## Query parameters
-
-|Property|Type|Description|
-|----|----|----|
-|requiresReview| Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set  `requiresReview` to `true`. A user who has admin privileges can opt not to set `requiresReview` or set the value to `false`  and the app will be considered approved and will publish instantly.|
 
 ## Request headers
 
@@ -90,54 +79,6 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "id": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",
-  "externalId": "b5561ec9-8cab-4aa3-8aa2-d8d7172e4311",
-  "name": "Test App",
-  "version": "1.0.0",
-  "distributionMethod": "organization"
-}
-```
-### Example 2: Upload a new application for review to an organization's app catalog
-
-#### Request
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_teamsapp"
-}-->
-
-```http
-POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?requiresReview=true
-Content-type: application/zip
-Content-length: 244
-```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-teamsapp-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### Response
-
-<!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.teamsApp",
-  "truncated": true
-} -->
-
-```http
-HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps/$entity",
   "id": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",
   "externalId": "b5561ec9-8cab-4aa3-8aa2-d8d7172e4311",
   "name": "Test App",

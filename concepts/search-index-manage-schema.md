@@ -36,11 +36,12 @@ The following table represents an example of a possible schema for a work ticket
 
 ### Searchable
 
-
 If a property is searchable, its value is added to the full text index. When a user performs a search, we return results if there is a search hit in one of the searchable fields or its [content](search-index-manage-items.md#content).
 
-![search-index-manage-items-schema-1.svg](./images/search-index-manage-items-schema-1.svg)
-*A search for “design” displaying results for hits against properties (`title`, `tags`) and content*
+<!-- markdownlint-disable MD036 -->
+![A search for "design" displaying results for hits against properties and content](./images/search-index-manage-items-schema-1.svg)
+
+*A search for "design" displaying results for hits against properties (`title`, `tags`) and content*
 
 ### Queryable
 
@@ -49,27 +50,29 @@ If a property is queryable, you can query against it using knowledge query langu
 > [!NOTE]
 > Suffix matching is not supported.
 
-![search-index-manage-items-schema-2.svg](./images/search-index-manage-items-schema-2.svg)
-*A search for “search ba`*`” displaying results that match this prefix*
+![A search for "search ba*" displaying results that match this prefix](./images/search-index-manage-items-schema-2.svg)
 
-![search-index-manage-items-schema-3.svg](./images/search-index-manage-items-schema-3.svg)
-*A search for “tags:design” scoping down results to items with "design" in the tags property*
+*A search for "search ba*" displaying results that match this prefix*
 
+![A search for "tags:design" scoping down results to items with "design" in the tags property](./images/search-index-manage-items-schema-3.svg)
+
+*A search for "tags:design" scoping down results to items with "design" in the tags property*
 
 ### Retrievable
 
-
 If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large properties, such as `editHistory`, or too many properties as retrievable will increase search latency. Be selective and choose relevant properties.
 
-![search-index-manage-schema-4.svg](./images/search-index-manage-schema-4.svg)
+![A set of retrievable properties rendered as a result](./images/search-index-manage-schema-4.svg)
+
 *A set of retrievable properties (`title`, `lastEditedBy` etc.) rendered as a result*
 
 ### Refinable
 
 If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page.
-![search-index-manage-schema-5.svg](./images/search-index-manage-schema-5.svg)
-*Refine results by `tags`, a refinable property*
 
+![Refine results by tags, a refinable property](./images/search-index-manage-schema-5.svg)
+
+*Refine results by `tags`, a refinable property*
 
 ## Labels
 
@@ -111,9 +114,12 @@ For discovery, i.e. search scenarios, please note:
 - When you use a property as label that contains large content, you might increase search latency and have to wait longer for search to return results.
 - Especially in the scenario where you configure a custom vertical that allows search over more than one connection, the search outcomes greatly benefit from appointing as many labels as possible.
 
-### Default Result Types
+### Default result types
+
 Labels also affect how default result types are generated. Adding the title and content labels at a minimum will ensure that a result type is created for your connection.
-![search-index-manage-schema-6.svg](./images/search-index-manage-schema-6.svg)
+
+![A default result type with title and a result snippet](./images/search-index-manage-schema-6.svg)
+
 *A default result type with `title` and a result snippet*
 
 Your default result type will provide a better experience when you define these labels, when applicable, listed by ascending order:
@@ -125,7 +131,7 @@ Your default result type will provide a better experience when you define these 
 - fileName
 - fileExtension
 
-Finally, when assigning labels, please ensure the following:
+Finally, when assigning labels, ensure the following:
 
 - The properties that you select to function as labels need to be marked retrievable.
 - The properties and their assigned labels must have the same datatype.

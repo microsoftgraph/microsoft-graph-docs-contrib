@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/me/todo/lists/35e2-35e2-721a-e235-1a72e2351
 [!INCLUDE [sample-code](../includes/snippets/objc/get-todotask-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-todotask-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -91,31 +95,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-            "@odata.etag": "W/\"xzyPKP0BiUGgld+lMKXwbQAAgdhkVw==\"",
-            "importance": "low",
-            "isReminderOn": false,
-            "status": "notStarted",
-            "title": "Linked entity new task 1",
-            "createdDateTime": "2020-07-08T11:15:19.9359889Z",
-            "lastModifiedDateTime": "2020-07-08T11:15:20.0614375Z",
-            "id": "AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtMDACLTAwCgBGAAAD",
-            "body": {
-                "content": "",
-                "contentType": "text"
-            },
-            "linkedResources@odata.context": "https://graph.microsoft.com/beta/$metadata#users('todoservicetest2412201901%40outlook.com')/todo/lists('35e2-35e2-721a-e235-1a72e2351a7')/tasks('AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtMDACLTAwCgBGAAAD')/linkedResources",
-            "linkedResources": [
-                {
-                    "applicationName": "Partner App Name",
-                    "displayName": "Partner App Name",
-                    "externalId": "teset1243434",
-                    "id": "30911960-7321-4cba-9ba0-cdb68e2984c7"
-                }
-            ]
-        }
-  ]
+   "value":[
+      {
+         "@odata.etag":"W/\"xzyPKP0BiUGgld+lMKXwbQAAgdhkVw==\"",
+         "importance":"low",
+         "isReminderOn":false,
+         "status":"notStarted",
+         "title":"Linked entity new task 1",
+         "createdDateTime":"2020-07-08T11:15:19.9359889Z",
+         "lastModifiedDateTime":"2020-07-08T11:15:20.0614375Z",
+         "id":"AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtMDACLTAwCgBGAAAD",
+         "body":{
+            "content":"",
+            "contentType":"text"
+         },
+         "linkedResources@odata.context":"https://graph.microsoft.com/beta/$metadata#users('todoservicetest2412201901%40outlook.com')/todo/lists('35e2-35e2-721a-e235-1a72e2351a7')/tasks('AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtMDACLTAwCgBGAAAD')/linkedResources",
+         "linkedResources":[
+            {
+               "applicationName":"Partner App Name",
+               "displayName":"Partner App Name",
+               "externalId":"teset1243434",
+               "id":"30911960-7321-4cba-9ba0-cdb68e2984c7"
+            }
+         ]
+      }
+   ]
 }
 ```
+
+
 

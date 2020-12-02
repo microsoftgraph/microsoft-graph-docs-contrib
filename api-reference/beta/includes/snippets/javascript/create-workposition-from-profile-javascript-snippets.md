@@ -26,7 +26,7 @@ const workPosition = {
       webUrl: "https://www.adventureworks.com"
     },
     jobTitle: "Senior Product Branding Manager II",
-    role: "consulting",
+    role: "consulting"
   },
   isCurrent: true
 };
