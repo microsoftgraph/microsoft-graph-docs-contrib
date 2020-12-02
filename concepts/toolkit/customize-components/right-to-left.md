@@ -21,4 +21,4 @@ or
 <html dir="rtl"></html>
 ```
 
-![right-to-left](./images/rightToLeft.png)
+![right-to-left](../images/rightToLeft.png)

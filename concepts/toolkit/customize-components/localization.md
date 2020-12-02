@@ -45,6 +45,21 @@ LocalizationHelper.strings = {
       newTaskPlaceholder: "newTaskTest",
       addTaskButtonSubtitle: "addme",
     },
+    "person-card": {
+      sendEmailLinkSubtitle: "ارسل بريد الكتروني",
+      startChatLinkSubtitle: "ابدأ الدردشة",
+      showMoreSectionButton: "أظهر المزيد", // global declaration
+    },
+    "person-card-contact": {
+      contactSectionTitle: "اتصل",
+    },
+    "person-card-organization": {
+      reportsToSectionTitle: "تقارير ل",
+      directReportsSectionTitle: "تقارير مباشرة",
+      organizationSectionTitle: "منظمة",
+      youWorkWithSubSectionTitle: "انت تعمل مع",
+      userWorksWithSubSectionTitle: "يعمل مع",
+    },
   },
 };
 ```
@@ -110,5 +125,69 @@ LocalizationHelper.strings = {
   cancelNewTaskSubtitle: 'cancel',
   newTaskPlaceholder: 'Task...',
   addTaskButtonSubtitle: 'Add'
+}
+```
+
+### Person-Card
+
+```ts
+{
+  sendEmailLinkSubtitle: 'Send email',
+  startChatLinkSubtitle: 'Start chat',
+  showMoreSectionButton: 'Show more'
+}
+```
+
+### Person-Card-Contact
+
+```ts
+{
+  contactSectionTitle: "Contact";
+}
+```
+
+### Person-Card-Organization
+
+```ts
+{
+  reportsToSectionTitle: 'Reports to',
+  directReportsSectionTitle: 'Direct reports',
+  organizationSectionTitle: 'Organization',
+  youWorkWithSubSectionTitle: 'You work with',
+  userWorksWithSubSectionTitle: 'works with'
+}
+```
+
+### Person-Card-Messages
+
+```ts
+{
+  emailsSectionTitle: "Emails";
+}
+```
+
+### Person-Card-Files
+
+```ts
+{
+  filesSectionTitle: 'Files',
+  sharedTextSubtitle: 'Shared'
+}
+```
+
+### Person-Card-Profile
+
+```ts
+{
+  SkillsAndExperienceSectionTitle: 'Skills & Experience',
+  AboutCompactSectionTitle: 'About',
+  SkillsSubSectionTitle: 'Skills',
+  LanguagesSubSectionTitle: 'Languages',
+  WorkExperienceSubSectionTitle: 'Work Experience',
+  EducationSubSectionTitle: 'Education',
+  professionalInterestsSubSectionTitle: 'Professional Interests',
+  personalInterestsSubSectionTitle: 'Personal Interests',
+  birthdaySubSectionTitle: 'Birthday',
+  currentYearSubtitle: 'Current'
 }
 ```
