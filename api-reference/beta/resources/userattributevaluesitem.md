@@ -19,7 +19,7 @@ Used to populate the values for a user flow attribute within a user flow when th
 |:---|:---|:---|
 |isDefault|Boolean|Used to set the value as the default.|
 |name|String|The display name of the property displayed to the end user in the user flow.|
-|value|String|The value that will be set when this item is selected.|
+|value|String|The value that is set when this item is selected.|
 
 ## Relationships
 

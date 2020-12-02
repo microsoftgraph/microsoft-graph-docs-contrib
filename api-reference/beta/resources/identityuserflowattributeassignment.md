@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-identityUserFlowAttributeAssignments are used to collect specific identityUserFlowAttributes within a user flow. This allows control over which attributes will be collected within a user flow and provides customization options on how to collect the attribute within the user flow. You can have multiple identityUserFlowAttributeAssignments within a single user flow, and this ultimately creates the experience the end user will see during sign up when asked to provide the information required by the user flow to complete sign up.
+identityUserFlowAttributeAssignments are used to collect specific identityUserFlowAttributes within a user flow. This allows control over the attributes that are collected within a user flow, and provides customization options on how to collect the attribute within the user flow. You can have multiple identityUserFlowAttributeAssignments within a single user flow that creates the experience the end user sees during sign-up when asked to provide the information required by the user flow to complete sign-up.
 
 ## Methods
 
@@ -27,9 +27,9 @@ identityUserFlowAttributeAssignments are used to collect specific identityUserFl
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The identifier of the identityUserFlowAttributeAssignment. This identifier is immutable once it is created. This is a read-only property.|
+|id|String|The identifier of the identityUserFlowAttributeAssignment. This identifier is immutable after it is created. This is a read-only property.|
 |displayName|String|The display name of the identityUserFlowAttribute within a user flow.|
-|isOptional|Boolean|Determines whether the identityUserFlowAttribute is optional. `true` means the user does not have to provide a value. `false` means the user cannot complete sign up without providing a value.|
+|isOptional|Boolean|Determines whether the identityUserFlowAttribute is optional. `true` means the user doesn't have to provide a value. `false` means the user cannot complete sign-up without providing a value.|
 |requiresVerification|Boolean|Determines whether the identityUserFlowAttribute requires verification. This is only used for verifying the user's phone number or email address.|
 |userAttributeValues|[userAttributeValuesItem](../resources/userattributevaluesitem.md) collection|The input options for the user flow attribute. Only applicable when the userInputType is `radioSingleSelect`, `dropdownSingleSelect`, or `checkboxMultiSelect`.|
 |userInputType|identityUserFlowAttributeInputType|The input type of the user flow attribute. Possible values are: `textBox`, `dateTimeDropdown`, `radioSingleSelect`, `dropdownSingleSelect`, `emailBox`, `checkboxMultiSelect`.|
