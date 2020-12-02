@@ -92,6 +92,6 @@ DELETE /external/connections/contosohelpdesk/items/SR00145
 
 - [Query using the Microsoft Search API](search-concept-overview.md#why-use-the-microsoft-search-api)
 - [Review the Indexing API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
-- [Customize Microsoft Search results page](/MicrosoftSearch/configure-connector#next-steps-customize-the-search-results-page)
+- [Customize Microsoft Search results page](/MicrosoftSearch/customize-search-page)
 - [Search custom types (externalItem)](search-concept-custom-types.md)
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub
