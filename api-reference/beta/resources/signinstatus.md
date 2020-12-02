@@ -35,9 +35,9 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "additionalDetails": "For more details, see https://login.microsoftonline.com/error",
-  "errorCode": 65001,
-  "failureReason": "The user or administrator has not consented to use the application with ID '{identifier}'{namePhrase}. Send an interactive authorization request for this user and resource."
+  "additionalDetails": "String",
+  "errorCode": 1024,
+  "failureReason": "String"
 }
 
 ```
