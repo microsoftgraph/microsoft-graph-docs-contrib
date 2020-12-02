@@ -588,7 +588,7 @@ items:
           - name: Providers
             items:
               - name: Using the providers
-                href: toolkit/providers.md
+                href: toolkit/providers/providers.md
               - name: MSAL provider
                 href: toolkit/providers/msal.md
               - name: SharePoint provider
@@ -599,12 +599,14 @@ items:
                 href: toolkit/providers/proxy.md
               - name: Custom provider
                 href: toolkit/providers/custom.md
-          - name: Styling components
-            href: toolkit/style.md
-          - name: Templating components
-            href: toolkit/templates.md
-          - name: Caching
-            href: toolkit/cache.md
+          - name: Customize components
+            items:
+              - name: Styling components
+                href: toolkit/customize-components/style.md
+              - name: Templating components
+                href: toolkit/customize-components/templates.md
+              - name: Cache
+                href: toolkit/customize-components/cache.md
       - name: Resources
         expanded: true
         items:

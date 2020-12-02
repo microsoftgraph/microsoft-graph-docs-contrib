@@ -11,17 +11,17 @@ The Microsoft Graph Toolkit providers enable your application to authenticate wi
 
 You can use the providers on their own, without components, to quickly implement authentication for your app and make calls to Microsoft Graph via the JavaScript client SDK.
 
-The providers are required when using the Microsoft Graph Toolkit components as the components use them to access Microsoft Graph. If you already have your own authentication and want to use the components, you can use a [custom provider](./providers/custom.md) instead.
+The providers are required when using the Microsoft Graph Toolkit components as the components use them to access Microsoft Graph. If you already have your own authentication and want to use the components, you can use a [custom provider](./custom.md) instead.
 
 The Toolkit includes the following providers.
 
 |Providers|Description|
 |---------|-----------|
-|[Msal](./providers/msal.md)|Uses MSAL.js to sign in users and acquire tokens to use with Microsoft Graph in a web application.|
-|[SharePoint](./providers/sharepoint.md)|Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.|
-|[Teams](./providers/teams.md)|Authenticates and provides Microsoft Graph access to components inside  Microsoft Teams tabs.|
-|[Proxy](./providers/proxy.md)|Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.|
-|[Custom](./providers/custom.md)|Create a custom provider to enable authentication and access to Microsoft Graph with your application's existing authentication code.|
+|[Msal](./msal.md)|Uses MSAL.js to sign in users and acquire tokens to use with Microsoft Graph in a web application.|
+|[SharePoint](./sharepoint.md)|Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.|
+|[Teams](./teams.md)|Authenticates and provides Microsoft Graph access to components inside  Microsoft Teams tabs.|
+|[Proxy](./proxy.md)|Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.|
+|[Custom](./custom.md)|Create a custom provider to enable authentication and access to Microsoft Graph with your application's existing authentication code.|
 
 ## Initializing a provider
 
