@@ -49,7 +49,7 @@ By default, the `mgt-person` component will pass the person details to the `mgt-
 
 ## Templates
 
-The Person-Card component uses [templates](../templates.md) that allow you to add or replace portions of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following.
+The Person-Card component uses [templates](../customize-components/templates.md) that allow you to add or replace portions of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following.
 
 | Data type | Data context | Description |
 | - | - | - |
@@ -99,7 +99,7 @@ mgt-person {
 }
 ```
 
-To learn more, see [styling components](../style.md).
+To learn more, see [styling components](../customize-components/style.md).
 
 ## Global component configuration
 

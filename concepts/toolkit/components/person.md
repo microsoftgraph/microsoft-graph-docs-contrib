@@ -99,15 +99,15 @@ mgt-person {
 }
 ```
 
-To learn more, see [styling components](../style.md).
+To learn more, see [styling components](../customize-components/style.md).
 
 ## Templates
 
-The `mgt-person` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following:
+The `mgt-person` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following:
 
 | Data type | Data context | Description |
 | --------- | ------------ | ----------- |
-| loading | none | The template to render while the component is in a laoding state. |
+| loading | none | The template to render while the component is in a loading state. |
 | no-data | none | The template to render when no person image or data is available. | 
 | default | person: The person details object <br> `personImage`: The URL of the image | The default template replaces the entire component with your own. |
 | person-card | person: The person details object <br> `personImage`: The URL of the image | The template to update the mgt-person-card displayed on hover or click. |

@@ -65,7 +65,7 @@ The Microsoft Graph Toolkit makes integrating common experiences powered by Micr
   :::column span="":::
     **Beautiful but Flexible**
 
-    The components are designed to look and feel like Microsoft365 experiences, but are also customizable using [CSS custom properties](./style.md) and [templating](./templates.md).
+    The components are designed to look and feel like Microsoft365 experiences, but are also customizable using [CSS custom properties](./customize-components/style.md) and [templating](./customize-components/templates.md).
   :::column-end:::
 :::row-end:::
 

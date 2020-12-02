@@ -82,11 +82,11 @@ mgt-agenda {
 }
 ```
 
-To learn more, see [styling components](../style.md).
+To learn more, see [styling components](../customize-components/style.md).
 
 ## Templates
 
-The `mgt-agenda` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following:
+The `mgt-agenda` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following:
 
 | Data type | Data context | Description |
 | --- | --- | --- |
@@ -119,7 +119,7 @@ The following examples illustrates how to use the `event` template:
 </mgt-agenda>
 ```
 
-To learn more, see [templates](../templates.md).
+To learn more, see [templates](../customize-components/templates.md).
 
 ## Events
 

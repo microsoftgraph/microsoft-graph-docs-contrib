@@ -19,7 +19,7 @@ mgt-person {
 
 You can't style internal elements of a component unless you provide a CSS custom property. The component child elements are hosted in a [shadow dom](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM).
 
-For more flexibility, consider using [custom templates](./templates.md).
+For more flexibility, consider using [custom templates](./customize-components/templates.md).
 
 ## Disable the shadow dom (experimental)
 
