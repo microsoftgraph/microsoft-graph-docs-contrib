@@ -27,7 +27,7 @@ identityUserFlowAttributeAssignments are used to collect specific identityUserFl
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The identifier of the identityUserFlowAttributeAssignment. This identifier is immutable once it is created. This is a read-only property.|
+|id|String|The identifier of the identityUserFlowAttributeAssignment. This identifier is immutable after it is created. This is a read-only property.|
 |displayName|String|The display name of the identityUserFlowAttribute within a user flow.|
 |isOptional|Boolean|Determines whether the identityUserFlowAttribute is optional. `true` means the user doesn't have to provide a value. `false` means the user cannot complete sign-up without providing a value.|
 |requiresVerification|Boolean|Determines whether the identityUserFlowAttribute requires verification. This is only used for verifying the user's phone number or email address.|
