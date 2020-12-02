@@ -3,7 +3,7 @@ title: "Create cloudPcProvisioningPolicy"
 description: "Create a new cloud PC provisioning policy."
 author: "AshleyYangSZ"
 localization_priority: Normal
-ms.prod: ""
+ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -11,7 +11,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a new [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 
