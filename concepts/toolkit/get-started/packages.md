@@ -11,7 +11,7 @@ The Microsoft Graph Toolkit is made up of several NPM packages allowing you to o
 
 ## Mgt Element
 
-The `@microsoft/mgt-element` is the core package that contains only the base classes used for building components and providers. This package exposes all  necessary classes and interfaces needed to build your own components and exports the [the IProvider interface and SimpleProvider class](../providers/custom) for building custom providers.
+The `@microsoft/mgt-element` is the core package that contains only the base classes used for building components and providers. This package exposes all  necessary classes and interfaces needed to build your own components and exports the [IProvider interface and SimpleProvider class](../providers/custom) for building custom providers.
 
 ## Providers 
 
