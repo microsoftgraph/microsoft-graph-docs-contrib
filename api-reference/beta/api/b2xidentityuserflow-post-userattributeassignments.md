@@ -98,8 +98,8 @@ Content-Type: application/json
 
 ``` http
 HTTP/1.1 201 Created
+Location /identity/b2xUserFlows('B2X_1_Partner')/userAttributeAssignments('extension_guid_shoeSize')
 Content-Type: application/json
-Location /identity/b2xUserFlows('B2X_1_Partner')/assignments('extension_guid_shoeSize')
 
 {
     "id": "extension_guid_shoeSize",
