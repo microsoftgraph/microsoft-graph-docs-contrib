@@ -3,6 +3,76 @@
     {
       "ChangeList": [
         {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e2",
+          "ApiChange": "Property",
+          "ChangedApiName": "agreementFile",
+          "ChangeType": "Addition",
+          "Description": "Added the **isMajorVersion**, **createdDateTime** properties to the [agreementFile](https://docs.microsoft.com/en-us/graph/api/resources/agreementfile?view=graph-rest-beta) resource.",
+          "Target": "agreementFile"
+        },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e2",
+          "ApiChange": "Property",
+          "ChangedApiName": "agreementFileLocalization",
+          "ChangeType": "Addition",
+          "Description": "Added the **isMajorVersion**, **createdDateTime** properties to the [agreementFileLocalization](https://docs.microsoft.com/en-us/graph/api/resources/agreementfilelocalization?view=graph-rest-beta) resource.",
+          "Target": "agreementFileLocalization"
+        },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agreementFileVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the [agreementFileVersion](https://docs.microsoft.com/en-us/graph/api/resources/agreementfileversion?view=graph-rest-beta) resource.",
+          "Target": "agreementFileVersion"
+        }
+      ],
+      "Id": "074356c3-d08d-46ec-bf8d-24d90ffb9e54",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-01T17:53:06Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c0a9d0dd-5673-432c-9d93-c5acec21b14c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "permissionGrantPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionGrantPolicy](https://docs.microsoft.com/graph/api/resources/permissiongrantpolicy?view=graph-rest-1.0&preserve-view=true) resource type. Permission grant policies describe the conditions which must be met for permissions to be granted to apps.",
+          "Target": "permissionGrantPolicy"
+        }
+      ],
+      "Id": "e7715044-f69b-4fd9-a3df-acf3ced878fe",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-10-01T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6312b035-c46e-4dce-8c7b-0a9aa13409e1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delegatedPermissionClassifications",
+          "ChangeType": "Addition",
+          "Description": "Added [delegatedPermissionClassifications](https://docs.microsoft.com/graph/api/resources/delegatedpermissionclassification?view=graph-rest-1.0&preserve-view=true) navigation to the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "7f60a6f2-3d32-49ea-9b9b-193b5a94d637",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-10-01T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Application"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "118736d5-b41d-43c0-9328-355d05cff91c",
           "ApiChange": "resource, methods",
           "ChangedApiName": "organizationalBrandingProperties",
