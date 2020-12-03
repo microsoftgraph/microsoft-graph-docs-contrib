@@ -11,7 +11,7 @@ The To Do component is used to enable the signed-in user to view, add, remove, c
 
 ## Example
 
-The following example displays the signed-in user's Microsoft To-do tasks using the `mgt-todo` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
+The following example displays the signed-in user's Microsoft To Do tasks using the `mgt-todo` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-todo--tasks&source=docs" height="500"></iframe>
 
