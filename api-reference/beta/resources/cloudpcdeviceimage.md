@@ -3,7 +3,7 @@ title: "cloudPcDeviceImage resource type"
 description: "Represents the image resource on cloud PC."
 author: "AshleyYangSZ"
 localization_priority: Normal
-ms.prod: ""
+ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents the image resource on cloud PC.
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Methods
 
