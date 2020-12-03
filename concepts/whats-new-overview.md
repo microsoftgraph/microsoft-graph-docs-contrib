@@ -16,7 +16,7 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 
 ### Search
 - GA of the Microsoft Search [query API](/graph/api/resources/search-api-overview), supporting scoped searching of the following types of data:
-  - [Outlook messages](/graph/search-concept-messsages)
+  - [Outlook messages](/graph/search-concept-messages)
   - [Outlook calendar events](/graph/search-concept-events)
   - [OneDrive and SharePoint resources](/graph/search-concept-files).
 
