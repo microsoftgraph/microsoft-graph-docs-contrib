@@ -450,14 +450,18 @@ items:
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
-        - name: Install app
-          href: api/user-add-teamsappinstallation.md
-        - name: List installed apps
-          href: api/user-list-teamsappinstallation.md
-        - name: Upgrade app
-          href: api/user-upgrade-teamsappinstallation.md
-        - name: Uninstall app
-          href: api/user-delete-teamsappinstallation.md
+        - name: Add app for user
+          href: api/userteamwork-add-installedapps.md
+        - name: List apps for user
+          href: api/userteamwork-list-installedapps.md
+        - name: Gets installed app for user
+          href: api/userteamwork-get-installedapps.md
+        - name: Upgrade installed app for user
+          href: api/userteamwork-upgrade-installedapps.md
+        - name: Remove app for user
+          href: api/userteamwork-delete-installedapps.md
+        - name: Get chat between user and app
+          href: api/userscopeteamsappinstallation-get-chat.md 
       - name: To-do tasks
         items:
         - name: Task
@@ -12585,6 +12589,8 @@ items:
           href: api/chat-get-message.md
         - name: Send message in chat
           href: api/chat-post-message.md
+        - name: Get chat between user and app 
+          href: api/userscopeteamsappinstallation-get-chat.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -12626,6 +12632,8 @@ items:
           href: resources/teamsappinstallation.md
         - name: List apps in team
           href: api/teamsappinstallation-list.md
+        - name: Get app installed in a team
+          href: api/team-get-installedapps.md
         - name: Add app to team
           href: api/teamsappinstallation-add.md
         - name: Remove app from team
@@ -12633,13 +12641,17 @@ items:
         - name: Upgrade installed app for team
           href: api/teamsappinstallation-upgrade.md
         - name: List apps for user
-          href: api/user-list-teamsappinstallation.md
+          href: api/userteamwork-list-installedapps.md
+        - name: Gets installed app for user
+          href: api/userteamwork-get-installedapps.md
         - name: Add app for user
-          href: api/user-add-teamsappinstallation.md
+          href: api/userteamwork-add-installedapps.md
         - name: Remove app for user
-          href: api/user-delete-teamsappinstallation.md
+          href: api/userteamwork-delete-installedapps.md
         - name: Upgrade installed app for user
-          href: api/user-upgrade-teamsappinstallation.md
+          href: api/userteamwork-upgrade-installedapps.md
+        - name: Get chat between user and app
+          href: api/userscopeteamsappinstallation-get-chat.md
       - name: Activity feed
         items:
         - name: Send notification to user in chat
