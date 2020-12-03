@@ -19,6 +19,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## December 2020
 
+### Change notifications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added [todoTask](/graph/api/resources/todoTask?view=graph-rest-beta) to the resources supported for [change notifications](/graph/webhooks).|
+
 ### Teamwork
 
 | **Change type** | **Version** | **Description**                          |
@@ -28,20 +34,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added [Get the installed app in team](/graph/api/team-get-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed app for user](/graph/api/userteamwork-get-installedapps?view=graph-rest-beta&preserve-view=true)|
 | Addition | beta | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-beta&preserve-view=true) resource. |
 
-### Change notifications
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added [todoTask](/graph/api/resources/todoTask?view=graph-rest-beta) to the resources supported for [change notifications](/graph/webhooks).|
-
 ## November 2020
 
 ### Change notifications
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added [printTaskDefinition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true) to the resources supported for [change notifications](/graph/webhooks).|
-| Addition | beta | Added [todoTask](/graph/api/resources/todoTask?view=graph-rest-beta) to the resources supported for [change notifications](/graph/webhooks).|
+| Addition | beta | Added [printTaskDefinition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true) to the resources supported for [change notifications](/graph/webhooks).
 
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
