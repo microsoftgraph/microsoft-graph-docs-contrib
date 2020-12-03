@@ -11,19 +11,19 @@ The Microsoft Graph Toolkit is made up of several NPM packages allowing you to o
 
 ## Mgt Element
 
-The `@microsoft/mgt-element` is the core package that contains only the base classes used for building components and providers. This package exposes all  necessary classes and interfaces needed to build your own components and exports the [IProvider interface and SimpleProvider class](../providers/custom) for building custom providers.
+The `@microsoft/mgt-element` is the core package that contains only the base classes used for building components and providers. This package exposes all  necessary classes and interfaces needed to build your own components and exports the [IProvider interface and SimpleProvider class](../providers/custom.md) for building custom providers.
 
 ## Providers 
 
 Providers are available via a single package and can be installed as needed. The following provider packages are available:
 
-* [`@micosoft/mgt-msal-provider`](../providers/msal) contains the `MsalProvider` and `mgt-msal-provider` component. The msal provider leverages msal.js for authenticating in web apps and PWAs.
+* [`@micosoft/mgt-msal-provider`](../providers/msal.md) contains the `MsalProvider` and `mgt-msal-provider` component. The msal provider leverages msal.js for authenticating in web apps and PWAs.
 
-* [`@microsoft/mgt-teams-provider`](../providers/teams) contains the `TeamsProvider` and `mgt-teams-provider` component. The Microsoft Teams provider enables authentication in Microsoft Teams tab application.
+* [`@microsoft/mgt-teams-provider`](../providers/teams.md) contains the `TeamsProvider` and `mgt-teams-provider` component. The Microsoft Teams provider enables authentication in Microsoft Teams tab application.
 
-* [`@microsoft/mgt-sharepoint-provider`](../providers/sharepoint) contains the `SharePointProvider` for authenticating in a SharePoint environment. 
+* [`@microsoft/mgt-sharepoint-provider`](../providers/sharepoint.md) contains the `SharePointProvider` for authenticating in a SharePoint environment. 
 
-* [`@microsoft/mgt-proxy-provider`](../providers/proxy) contains the `ProxyProvider` for application that proxy Graph calls through a backend service. 
+* [`@microsoft/mgt-proxy-provider`](../providers/proxy.md) contains the `ProxyProvider` for application that proxy Graph calls through a backend service. 
 
 ## Components 
 
@@ -35,4 +35,4 @@ The `@microsoft/mgt` is the main package that includes all above packages and re
 
 ## React
 
-The [`@microsoft/mgt-react`](./mgt-react) package contains all auto-generated React components and takes dependency on the `@microsoft/mgt` package.
+The [`@microsoft/mgt-react`](./mgt-react.md) package contains all auto-generated React components and takes dependency on the `@microsoft/mgt` package.

@@ -153,7 +153,7 @@ This control uses the following Microsoft Graph APIs and permissions.
 
 | Resource | Permission | Section |
 | - | - | - |
-| [/me](/graph/api/user-get?view=graph-rest-1.0) | User.Read | Default |
+| [/me](/graph/api/user-get) | User.Read | Default |
 | [/me/photo/$value](/graph/api/profilephoto-get) | User.Read | Default |
 | [/me/people/?$search=](/graph/api/user-list-people) | People.Read | Default |
 | [/me/contacts/\*](/graph/api/user-list-contacts) | Contacts.Read | Default |
@@ -178,4 +178,4 @@ const neededScopes = MgtPersonCard.getScopes();
 
 ## Authentication
 
-The Person-Card control uses the global authentication provider described in the [authentication documentation](./../providers.md). 
+The Person-Card control uses the global authentication provider described in the [authentication documentation](../providers/providers.md). 

@@ -21,7 +21,7 @@ The Microsoft Graph Toolkit makes it easy to use Microsoft Graph in your applica
 
 The Microsoft Graph Toolkit includes a collection of web components for the most commonly built experiences powered by Microsoft Graph APIs. 
 
-The components are also available as [React components](./get-started/mgt-react).
+The components are also available as [React components](./get-started/mgt-react.md).
 
 |Component|Description|
 |---------|-----------|

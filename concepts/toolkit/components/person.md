@@ -167,11 +167,11 @@ This control uses the following Microsoft Graph APIs and permissions.
 
 | Resource                                                                                                    | Permission     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
-| [/me](/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
+| [/me](/graph/api/user-get)                              | User.Read          |
 | [/me/photo/$value](/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
-| [/me/people/?$search=](/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
-| [/me/contacts/\*](/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
-| [/users/{id}/photo/$value](/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
+| [/me/people/?$search=](/graph/api/user-list-people)     | People.Read        |
+| [/me/contacts/\*](/graph/api/user-list-contacts&tabs=cs) | Contacts.Read      |
+| [/users/{id}/photo/$value](/graph/api/user-list-people) | User.ReadBasic.All |
 | [/me/presence](/graph/api/presence-get?view=graph-rest-beta)                | Presence.Read |
 | [/users/{id}/presence](/graph/api/presence-get?view=graph-rest-beta)        | Presence.Read.All |
 
@@ -179,7 +179,7 @@ This control uses the following Microsoft Graph APIs and permissions.
 
 ## Authentication
 
-The control uses the global authentication provider described in the [authentication documentation](./../providers.md) to fetch the required data.
+The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md) to fetch the required data.
 
 ## Extend for more control
 

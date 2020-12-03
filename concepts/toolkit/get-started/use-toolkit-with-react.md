@@ -9,7 +9,7 @@ author: waldekmastykarz
 
 Microsoft Graph Toolkit is a set of web components that simplify connecting to Microsoft Graph and allow you to focus on your application instead. Microsoft Graph Toolkit is available as a generic set of web components distributed through the `@microsoft/mgt` npm package.
 
-If you're building apps with React, you can use the [`@microsoft/mgt-react` package](./mgt-react), which wraps Microsoft Graph Toolkit web components in React components and makes it easier to pass complex data.
+If you're building apps with React, you can use the [`@microsoft/mgt-react` package](./mgt-react.md), which wraps Microsoft Graph Toolkit web components in React components and makes it easier to pass complex data.
 
 This article describes the step-by-step process of using the Microsoft Graph Toolkit to create a React app and connect it to Microsoft 365. After completing the steps, you'll have a React app that shows the upcoming appointments of the currently signed in user from Microsoft 365.
 
@@ -164,7 +164,7 @@ Microsoft Graph Toolkit not only simplifies authentication to Microsoft 365, but
 
 ### Specify permissions needed for your application
 
-Before you can load data from Microsoft 365, you need to specify the list of permission scopes your application must be granted to access user's data. These scopes differ depending on what kind of information you want to show. In this case, you will need access to people's calendar as well as basic access to information about people that is also displayed in the calendar. You can find the scopes required by each API in the [Microsoft Graph API documentation](/graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0).
+Before you can load data from Microsoft 365, you need to specify the list of permission scopes your application must be granted to access user's data. These scopes differ depending on what kind of information you want to show. In this case, you will need access to people's calendar as well as basic access to information about people that is also displayed in the calendar. You can find the scopes required by each API in the [Microsoft Graph API documentation](/graph/api/overview).
 
 1. In the code editor, open the **src/index.tsx** file, and update the provider initialization code.
 

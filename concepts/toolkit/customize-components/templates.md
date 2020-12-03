@@ -31,7 +31,7 @@ All web components support templates based on the `<template>` element. For exam
 </mgt-agenda>
 ```
 
-If you are using the Microsoft Graph Toolkit React components, you can use React for authoring templates as documented in the [`mgt-react` docs](../get-started/mgt-react).
+If you are using the Microsoft Graph Toolkit React components, you can use React for authoring templates as documented in the [`mgt-react` docs](../get-started/mgt-react.md).
 
 ## Data-type
 

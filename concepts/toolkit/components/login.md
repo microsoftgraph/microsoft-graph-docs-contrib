@@ -94,7 +94,7 @@ This component uses the [Person component](./person.md) to display the user and 
 
 ## Authentication
 
-The login control uses the global authentication provider described in the [authentication documentation](./../providers.md). 
+The login control uses the global authentication provider described in the [authentication documentation](../providers/providers.md). 
 
 ## Extend for more control
 
