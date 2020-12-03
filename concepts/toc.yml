@@ -549,7 +549,6 @@ items:
         items:
           - name: Toolkit overview
             href: toolkit/overview.md
-              
           - name: Get started
             items:
               - name: Overview
