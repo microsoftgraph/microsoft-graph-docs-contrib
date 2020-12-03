@@ -553,9 +553,7 @@ items:
             items:
               - name: Overview
                 href: toolkit/get-started/overview.md
-              - name: NPM packages
-                href: toolkit/get-started/packages.md
-              - name: Toolkit React package
+              - name: Toolkit for React
                 href: toolkit/get-started/mgt-react.md
           - name: Build your first app
             items:
