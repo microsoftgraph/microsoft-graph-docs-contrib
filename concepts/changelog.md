@@ -17,8 +17,19 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
-## November 2020
+## December 2020
 
+### Teamwork
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | v1.0 | Added [Get the installed app in team](/graph/api/team-get-installedapps?view=graph-rest-v1.0&preserve-view=true), [List apps for user](/graph/api/userteamwork-list-installedapps?view=graph-rest-v1.0&preserve-view=true), [Get installed app for user](/graph/api/userteamwork-get-installedapps?view=graph-rest-v1.0&preserve-view=true), [Add app for user](/graph/api/userteamwork-add-installedapps?view=graph-rest-v1.0&preserve-view=true), [Remove app for user](/graph/api/userteamwork-delete-installedapps?view=graph-rest-v1.0&preserve-view=true), and [Upgrade installed app for user](/graph/api/userteamwork-upgrade-installedapps?view=graph-rest-v1.0&preserve-view=true) methods to the [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-v1.0&preserve-view=true) resource. |
+| Addition | v1.0 | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-v1.0&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-v1.0&preserve-view=true) resource. |
+| Addition | beta | Added [Get the installed app in team](/graph/api/team-get-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed app for user](/graph/api/userteamwork-get-installedapps?view=graph-rest-beta&preserve-view=true)|
+| Addition | beta | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-beta&preserve-view=true) resource. |
+
+
+## November 2020
 
 ### Change notifications
 
@@ -31,7 +42,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added the **role** property to the [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo?view=graph-rest-1.0&preserve-view=true) complex type.|
 | Addition | v1.0 | Added the **lobbyBypassSettings**, **isEntryExitAnnounced**, and **allowedPresenters** property to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-1.0&preserve-view=true) entity to support meeting option configuration.|
-| Addition | beta | Added the **platformId** property to the [participantInfo](/graph/api/resources/participantInfo?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **platformId** property to the [participantInfo](/graph/api/resources/participantInfo?view=graph-rest-beta&preserve-view=true) resource. |
 
 ### Devices and apps | Cloud PC
 
@@ -88,7 +99,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **spa** property to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added the [organizationalBrandingProperties](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true) resource type and associated methods, which allow for the customization of the visual look and feel of sign-in screens.|
-
 
 ### Identity and access | Governance
 

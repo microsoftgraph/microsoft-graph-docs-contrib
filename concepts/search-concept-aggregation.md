@@ -303,7 +303,7 @@ Content-type: application/json
 
 ## Known limitations
 
-Aggregations are supported only for SharePoint or OneDrive items. They are not supported for **message**, **event**, and **externalItem**.
+Aggregations are supported only for SharePoint or OneDrive items. They are not supported for **message** or **event**.
 
 ## Next steps
 
