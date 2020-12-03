@@ -62,7 +62,7 @@ The Person-Card component uses [templates](../templates.md) that allow you to ad
 For example, you can use a template to customize the component attached to the `mgt-person` component and a template to add additional details in the card. 
 
 ```html
-    <mgt-person person-query="me" show-name show-email person-card="hover">
+    <mgt-person person-query="me" view="twolines" person-card="hover">
       <template data-type="person-card">
         <mgt-person-card inherit-details>
           <template data-type="additional-details">
