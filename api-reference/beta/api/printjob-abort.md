@@ -38,7 +38,7 @@ POST /print/printers/{id}/jobs/{id}/abort
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-In the request body, you can optionally provide the reason why job is being aborted.
+In the request body, you can optionally provide the reason why the job is being aborted.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
