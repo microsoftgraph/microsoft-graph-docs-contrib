@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e2",
+          "ApiChange": "Property",
+          "ChangedApiName": "agreementFile",
+          "ChangeType": "Addition",
+          "Description": "Added the **isMajorVersion**, **createdDateTime** properties to the [agreementFile](https://docs.microsoft.com/en-us/graph/api/resources/agreementfile?view=graph-rest-beta) resource.",
+          "Target": "agreementFile"
+        },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e2",
+          "ApiChange": "Property",
+          "ChangedApiName": "agreementFileLocalization",
+          "ChangeType": "Addition",
+          "Description": "Added the **isMajorVersion**, **createdDateTime** properties to the [agreementFileLocalization](https://docs.microsoft.com/en-us/graph/api/resources/agreementfilelocalization?view=graph-rest-beta) resource.",
+          "Target": "agreementFileLocalization"
+        },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agreementFileVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the [agreementFileVersion](https://docs.microsoft.com/en-us/graph/api/resources/agreementfileversion?view=graph-rest-beta) resource.",
+          "Target": "agreementFileVersion"
+        }
+      ],
+      "Id": "074356c3-d08d-46ec-bf8d-24d90ffb9e54",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-01T17:53:06Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c0a9d0dd-5673-432c-9d93-c5acec21b14c",
           "ApiChange": "Resource",
           "ChangedApiName": "permissionGrantPolicy",
