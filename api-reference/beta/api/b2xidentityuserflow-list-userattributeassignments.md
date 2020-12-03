@@ -80,8 +80,8 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userAttributeAss
 
 ``` http
 HTTP/1.1 200 OK
-
 Content-Type: application/json
+
 {
     "@odata.type": "#microsoft.graph.identityUserFlowAttributeAssignment",
     "value": [
@@ -138,8 +138,8 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userAttributeAss
 
 ``` http
 HTTP/1.1 200 OK
-
 Content-Type: application/json
+
 {
     "@odata.type": "#microsoft.graph.identityUserFlowAttributeAssignment",
     "value": [

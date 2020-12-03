@@ -1460,14 +1460,14 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### identityUserFlowAttributeInputType
 
-|Member|
-|:---|
-|textBox|
-|dateTimeDropDown|
-|radioSingleSelect|
-|dropdownSingleSelect|
-|emailBox|
-|checkboxMultiSelect|
+| Member                | Value |
+|:----------------------|:------|
+| textBox               | 1     |
+| dateTimeDropDown      | 2     |
+| radioSingleSelect     | 3     |
+| dropdownSingleSelect  | 4     |
+| emailBox              | 5     |
+| checkboxMultiSelect   | 6     |
 
 ### teamworkActivityTopicSource values 
 

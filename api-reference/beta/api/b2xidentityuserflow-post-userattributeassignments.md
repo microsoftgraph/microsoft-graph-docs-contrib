@@ -98,7 +98,7 @@ Content-Type: application/json
 
 ``` http
 HTTP/1.1 201 Created
-Location /identity/b2xUserFlows('B2X_1_Partner')/userAttributeAssignments('extension_guid_shoeSize')
+Location https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Partner/userAttributeAssignments/extension_guid_shoeSize
 Content-Type: application/json
 
 {

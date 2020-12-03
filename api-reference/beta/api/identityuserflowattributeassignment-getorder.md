@@ -75,8 +75,8 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttributeAss
 
 ``` http
 HTTP/1.1 200 OK
-
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta$metadata#microsoft.graph.assignmentOrder",
     "order": [
