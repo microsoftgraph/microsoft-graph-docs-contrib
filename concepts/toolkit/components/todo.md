@@ -39,6 +39,8 @@ The following example shows only tasks from the folder with ID *12345* and does 
 
 ## Custom CSS variables
 
+The `mgt-todo` component defines the following CSS custom properties.
+
 ````css
 mgt-todo {
   --tasks-background-color
