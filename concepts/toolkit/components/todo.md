@@ -88,6 +88,8 @@ mgt-todo {
 }
 ````
 
+To learn more, see [styling components](https://docs.microsoft.com/graph/toolkit/style.md).
+
 ## Events
 | Event | Detail | Description |
 | --- | --- | --- |
