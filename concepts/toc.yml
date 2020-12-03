@@ -180,10 +180,10 @@ items:
         items:
           - name: Cloud printing (preview)
             expanded: true
-            items: 
+            items:
               - name: Overview
                 href: universal-print-concept-overview.md
-                displayName: Universal Print                
+                displayName: Universal Print
               - name: Upload data to upload session
                 href: upload-data-to-upload-session.md
                 displayName: Universal Print Job Submission
@@ -607,6 +607,10 @@ items:
                 href: toolkit/customize-components/templates.md
               - name: Cache
                 href: toolkit/customize-components/cache.md
+              - name: Localizing components
+                href: toolkit/customize-components/localization.md
+              - name: Right-To-Left
+                href: toolkit/customize-components/right-to-left.md
       - name: Resources
         expanded: true
         items:
