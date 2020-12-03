@@ -7,7 +7,7 @@ author: shweaver-MSFT
 
 To Do Component in the Microsoft Graph Toolkit
 
-The To-do component enables the user to view, add, remove, complete, or edit tasks. It works with tasks from the Microsoft To-Do API.  
+The To Do component is used to enable the signed-in user to view, add, remove, complete, and/or edit tasks from Microsoft To Do using the To Do tasks API on Microsoft Graph.
 
 ## Example
 
