@@ -28,7 +28,7 @@ There are two themes available - light and dark. By default, all components are 
 Example 1: Global theme
 ```html
 <body class="mgt-light">
-    // light theme will apply to all components in this section
+    <!-- light theme will apply to all components in this section -->
     <header><mgt-login></mgt-login></header>
     <article><mgt-agenda></mgt-agend></article>
     <footer></footer>
