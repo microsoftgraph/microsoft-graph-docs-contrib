@@ -165,17 +165,15 @@ The following properties are available on the config object:
 
 This control uses the following Microsoft Graph APIs and permissions.
 
-| Resource                                                                                                    | Permission     |
-| ----------------------------------------------------------------------------------------------------------- | -------------------- |
+| Resource | Permission     |
+| -| - |
 | [/me](/graph/api/user-get)                              | User.Read          |
-| [/me/photo/$value](/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
+| [/me/photo/$value](/graph/api/profilephoto-get)        | User.Read          |
 | [/me/people/?$search=](/graph/api/user-list-people)     | People.Read        |
 | [/me/contacts/\*](/graph/api/user-list-contacts&tabs=cs) | Contacts.Read      |
 | [/users/{id}/photo/$value](/graph/api/user-list-people) | User.ReadBasic.All |
-| [/me/presence](/graph/api/presence-get?view=graph-rest-beta)                | Presence.Read |
-| [/users/{id}/presence](/graph/api/presence-get?view=graph-rest-beta)        | Presence.Read.All |
-
-> **Note:** to access the `*/photo/$value` resources for personal Microsoft accounts, use the Microsoft Graph beta endpoint.
+| [/me/presence](/graph/api/presence-get)                | Presence.Read |
+| [/users/{id}/presence](/graph/api/presence-get)        | Presence.Read.All |
 
 ## Authentication
 

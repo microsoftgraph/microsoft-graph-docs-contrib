@@ -166,7 +166,7 @@ This control uses the following Microsoft Graph APIs and permissions.
 | [/users/{id}/people](/graph/api/user-list-people) | People.Read.All | Organization |
 | [/me/messages](/graph/api/user-list-messages) | Mail.ReadBasic | Messages |
 | [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Sites.Read.All | Files |
-| [/users/{id}/profile](/graph/api/profile-get?view=graph-rest-beta) | User.Read.All | Profile |
+| [/users/{id}/profile](/graph/api/profile-get) | User.Read.All | Profile |
 
 The `MgtPersonCard` class also exposes a `getScopes` static method that returns an array of scopes required for the person card to function based on the global person card configuration.
 
