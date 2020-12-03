@@ -54,8 +54,6 @@ The following example shows how to call this API.
 ### Request
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob-redirect"
@@ -67,13 +65,6 @@ POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45
   "destinationPrinterId": "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea"
 }
 ```
-# [C#](#tab/csharp)
-
-
----
-
-
----
 
 ### Response
 The following is an example of the response. 
