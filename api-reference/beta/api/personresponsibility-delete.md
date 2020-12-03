@@ -68,3 +68,5 @@ DELETE https://graph.microsoft.com/beta/me/profile/responsibilities/0fb4c1e3-c1e
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+

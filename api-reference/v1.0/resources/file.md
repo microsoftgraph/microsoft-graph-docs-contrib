@@ -1,7 +1,7 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: File resource thype
+title: File resource type
 localization_priority: Normal
 description: "The File resource groups file-related data items into a single structure."
 ms.prod: "sharepoint"
@@ -52,3 +52,4 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/File"
 } -->
+

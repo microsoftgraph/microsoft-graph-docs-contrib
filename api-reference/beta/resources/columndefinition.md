@@ -140,7 +140,8 @@ To see them when showing **field** values on [listItems][listItem], include the 
 [hyperlinkOrPictureColumn]: hyperlinkOrPictureColumn.md
 [columnValidation]: columnValidation.md
 [contentTypeInfo]: contentTypeInfo.md
-[SPFieldType]: https://msdn.microsoft.com/library/microsoft.sharepoint.spfieldtype.aspx
+
+[SPFieldType]: /previous-versions/office/sharepoint-server/ms428806(v=office.15)
 
 <!--
 {
