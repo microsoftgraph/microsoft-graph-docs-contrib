@@ -9,7 +9,7 @@ author: vogtn
 
 The Microsoft Graph Toolkit components support bi-directional markup for right-to-left language scripts.
 
-Implementation relies on the usage of the `dir` attribute which must be implemented in the document structure [w3 spec standard](https://www.w3.org/International/questions/qa-bidi-css-markup#detail), Specific the `body` or `html` tag:
+To change the direction of all components on the page, set the `dir` attribute on the document `html` or `body` tag to `rtl`, as shown in these examples:
 
 ```html
 <body dir="rtl"></body>

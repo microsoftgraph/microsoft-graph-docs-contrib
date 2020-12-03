@@ -611,7 +611,6 @@ items:
                 href: toolkit/customize-components/localization.md
               - name: Right-To-Left
                 href: toolkit/customize-components/right-to-left.md
-
       - name: Resources
         expanded: true
         items:

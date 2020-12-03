@@ -13,11 +13,9 @@ The Microsoft Graph Toolkit components can be localized so the user-interface re
 
 ## Use LocalizationHelper to add localized strings
 
-All strings in the toolkit are not localized, but you can provide your own localized strings and manage different languages through the same process you use for localizing your app. To facilitate localization, the toolkit exposes the `LocalizationHelper` static class:
+All strings in the toolkit are not localized, but you can provide your own localized strings and manage different languages through the same process you use for localizing your app. To facilitate localization, the toolkit exposes the `LocalizationHelper` static class.
 
-The strings can be referenced at a global level or per component (with the `_components:` selector), but global assignment of common properties will cascade unless further specified.
-
-example:
+This is an example of localizing several components:
 
 ```ts
 import { LocalizationHelper } from "@microsoft/mgt";
@@ -25,7 +23,7 @@ import { LocalizationHelper } from "@microsoft/mgt";
 LocalizationHelper.strings = {
   noResultsFound: "لم نجد أي قنوات",
   _components: {
-    login: {
+    "login": {
       signInLinkSubtitle: "login",
       signOutLinkSubtitle: "خروج",
     },
@@ -39,7 +37,7 @@ LocalizationHelper.strings = {
       noResultsFound: "local NoResultsFound Example",
       // loadingMessage: is default string "Loading..." for this example since not defined globally or locally
     },
-    tasks: {
+    "tasks": {
       removeTaskSubtitle: "delete",
       cancelNewTaskSubtitle: "canceltest",
       newTaskPlaceholder: "newTaskTest",
@@ -64,6 +62,9 @@ LocalizationHelper.strings = {
 };
 ```
 
+When the `strings` property is assigned, all components will automatically pick up the new strings and re-render, allowing you to change strings dynamically. 
+
+The strings can be set at a global level or per component (with the `_components:` property).
 ## Strings
 
 ### Login
