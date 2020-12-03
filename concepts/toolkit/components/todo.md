@@ -2,7 +2,7 @@
 title: "To-do component in the Microsoft Graph Toolkit"
 description: "The To-do component enables the user to view, add, remove, complete, or edit todo tasks. It works with any tasks in Microsoft To-Do."
 localization_priority: Normal
-author: shweaver-MSFT, beth-panx
+author: shweaver-MSFT
 ---
 
 # To-do Component in the Microsoft Graph Toolkit
@@ -125,4 +125,4 @@ This control uses the following Microsoft Graph APIs and permissions.
 
 ## Authentication
 
-The tasks component uses the global authentication provider described in the [authentication documentation](./../providers.md).
+The tasks component uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
