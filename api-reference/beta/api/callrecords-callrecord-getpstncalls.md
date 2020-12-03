@@ -47,7 +47,7 @@ The following table shows the parameters that can be used with this function.
 |toDateTime|DateTimeOffset|End of time range to query. UTC, inclusive.|
 
 > [!IMPORTANT]
-> \* The **fromDateTime** and **toDateTime** values cannot be more than a date range of 90 days.
+> The **fromDateTime** and **toDateTime** values cannot be more than a date range of 90 days.
 
 ## Request headers
 
