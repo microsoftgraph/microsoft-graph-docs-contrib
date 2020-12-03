@@ -72,6 +72,8 @@ If successful, this action returns a `204 No Content` response code.
 This example shows how you can send an activity feed notification for a team. This example notifies the team owner about pending finance approval requests.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification"
@@ -102,6 +104,12 @@ Content-Type: application/json
     ] 
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 <!-- {
