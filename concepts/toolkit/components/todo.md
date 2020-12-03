@@ -5,7 +5,7 @@ localization_priority: Normal
 author: shweaver-MSFT
 ---
 
-To Do Component in the Microsoft Graph Toolkit
+# To Do Component in the Microsoft Graph Toolkit
 
 The To Do component is used to enable the signed-in user to view, add, remove, complete, and/or edit tasks from Microsoft To Do using the To Do tasks API on Microsoft Graph.
 
@@ -103,7 +103,7 @@ The following events are fired from the component.
 
 ## Templates
 
-The `tasks` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following:
+The `tasks` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following:
 
 | Data type     | Data context              | Description                                                       |
 | ---------     | ------------------------- | ----------------------------------------------------------------- |
@@ -128,9 +128,9 @@ This control uses the following Microsoft Graph APIs and permissions.
 
 | Resource | Permission |
 | - | - |
-| /me/todo/lists/ | Tasks.ReadWrite |
-| /me/todo/lists/{todoTaskListId}/tasks | Tasks.ReadWrite |
-| /me/todo/lists/{todoTaskListId}/tasks/{taskId} | Tasks.ReadWrite |
+| [/me/todo/lists/](https://docs.microsoft.com/en-us/graph/api/todo-list-lists?view=graph-rest-1.0&tabs=http) | Tasks.ReadWrite |
+| [/me/todo/lists/{todoTaskListId}/tasks](https://docs.microsoft.com/en-us/graph/api/todotasklist-list-tasks?view=graph-rest-1.0&tabs=http) | Tasks.ReadWrite |
+| [/me/todo/lists/{todoTaskListId}/tasks/{taskId}](https://docs.microsoft.com/en-us/graph/api/todotask-get?view=graph-rest-1.0&tabs=http) | Tasks.ReadWrite |
 
 ## Authentication
 
