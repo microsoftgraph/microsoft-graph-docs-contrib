@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 POST /deviceManagement/deviceShellScripts/{deviceShellScriptId}/deviceRunStates
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates
+POST /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeShellScriptId}/deviceRunStates
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates/{deviceManagementScriptUserStateId}/deviceRunStates
 ```
 
@@ -98,8 +99,6 @@ Content-Length: 330
   "errorDescription": "Error Description value"
 }
 ```
-
-
 
 
 

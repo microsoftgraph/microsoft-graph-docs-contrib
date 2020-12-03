@@ -27,5 +27,3 @@ The enum to specify the channels for Microsoft Edge apps.
 
 
 
-
-

@@ -26,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 For delegated scenarios where an admin is acting on another user, the admin needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Global admin
-* Global reader
 * Privileged authentication admin
 * Authentication admin
 
@@ -37,7 +36,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 }
 -->
 ``` http
-PATCH /users/{id | userPrincipalName}/authentication/emailMethods/{id}
+PUT /users/{id | userPrincipalName}/authentication/emailMethods/{id}
 ```
 
 ## Request headers
@@ -72,7 +71,7 @@ If successful, this method returns a `200 OK` response code and an updated [emai
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/emailMethods/3ddfcfc8-9383-446f-83cc-3ab9be4be18f
+PUT https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/emailMethods/3ddfcfc8-9383-446f-83cc-3ab9be4be18f
 Content-Type: application/json
 
 {
@@ -85,6 +84,14 @@ Content-Type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-emailauthenticationmethod-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-emailauthenticationmethod-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-emailauthenticationmethod-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

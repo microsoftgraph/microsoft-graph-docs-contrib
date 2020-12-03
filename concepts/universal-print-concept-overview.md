@@ -22,12 +22,15 @@ As organizations adopt Universal Print, organizations and independent software v
 ### Print documents from web and mobile applications
 
 Moving print infrastructure to the cloud enables printing documents directly from web and mobile applications.
+- Users can submit print jobs to printerShare.
+- Printer admins can also submit print jobs to a printer, for doing preliminary testing before sharing the printer with the organization.
 
-To get started with the Universal Print API:
+Follow these steps to submit print jobs to printerShare:
 
-1. [Create a print job](/graph/api/printer-post-jobs?view=graph-rest-beta) and store the resulting document ID.
-2. [Upload document data](/graph/api/printdocument-uploaddata?view=graph-rest-beta) to the document.
-3. [Start the print job](/graph/api/printjob-startprintjob?view=graph-rest-beta).
+1. [Create a print job](/graph/api/printershare-post-jobs?view=graph-rest-beta) and store the resulting document ID.
+2. [Create an uploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta) for the document. 
+3. [Upload bytes to the created upload session](/graph/upload-data-to-upload-session).
+4. [Start the print job](/graph/api/printjob-start?view=graph-rest-beta).
 
 ### Manage printers
 
@@ -78,8 +81,6 @@ Follow these steps to enable pull printing:
 6. When the user swipes a badge at a physical printer device, the printer will notify your application. At that time, your application can [fetch the jobs of the associated virtual printer](/graph/api/printer-list-jobs?view=graph-rest-beta) and filter the list to jobs created by the current user.
 
 7. When the user selects one or more jobs to print, your application can [redirect the print job(s)](/graph/api/printjob-redirect?view=graph-rest-beta) to the physical printer and the job will start printing! The redirect call will only succeed if there is a [printTask](/graph/api/resources/printtask?view=graph-rest-beta) in `processing` state on the associated printer started by a trigger that this app created in step 4. The task will automatically be set to `completed` state after redirecting it.
-
-   >**NOTE:** Paused print jobs that are not redirected within 2 days will be deleted.
 
 ## API reference
 Looking for the API reference for this service?
