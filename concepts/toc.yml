@@ -557,18 +557,34 @@ items:
                 href: toolkit/get-started/packages.md
               - name: Toolkit React package
                 href: toolkit/get-started/mgt-react.md
-              - name: Create an Azure Active Directory app
+          - name: Build your first app
+            items:
+              - name: Register an Azure Active Directory app
                 href: toolkit/get-started/add-aad-app-registration.md
-              - name: Build a web application (JavaScript)
+              - name: Build a web app (JavaScript)
                 href: toolkit/get-started/build-a-web-app.md
+              - name: Build a web app (React)
+                href: toolkit/get-started/use-toolkit-with-react.md
+              - name: Build a web app (Angular)
+                href: toolkit/get-started/use-toolkit-with-angular.md
               - name: Build a SharePoint web part
                 href: toolkit/get-started/build-a-sharepoint-web-part.md
-              - name: Build a Microsoft Teams tab
+              - name: Build a Microsoft Teams Tab
                 href: toolkit/get-started/build-a-microsoft-teams-tab.md
-              - name: Use the Toolkit with React
-                href: toolkit/get-started/use-toolkit-with-react.md
-              - name: Use the Toolkit with Angular
-                href: toolkit/get-started/use-toolkit-with-angular.md
+          - name: Providers
+            items:
+              - name: Using the providers
+                href: toolkit/providers/providers.md
+              - name: MSAL provider
+                href: toolkit/providers/msal.md
+              - name: SharePoint provider
+                href: toolkit/providers/sharepoint.md
+              - name: Microsoft Teams provider
+                href: toolkit/providers/teams.md
+              - name: Proxy provider
+                href: toolkit/providers/proxy.md
+              - name: Custom provider
+                href: toolkit/providers/custom.md
           - name: Components
             items:
               - name: Login
@@ -589,27 +605,13 @@ items:
                 href: toolkit/components/agenda.md
               - name: Tasks
                 href: toolkit/components/tasks.md
-          - name: Providers
-            items:
-              - name: Using the providers
-                href: toolkit/providers/providers.md
-              - name: MSAL provider
-                href: toolkit/providers/msal.md
-              - name: SharePoint provider
-                href: toolkit/providers/sharepoint.md
-              - name: Microsoft Teams provider
-                href: toolkit/providers/teams.md
-              - name: Proxy provider
-                href: toolkit/providers/proxy.md
-              - name: Custom provider
-                href: toolkit/providers/custom.md
           - name: Customize components
             items:
               - name: Styling components
                 href: toolkit/customize-components/style.md
               - name: Templating components
                 href: toolkit/customize-components/templates.md
-              - name: Cache
+              - name: Caching Microsoft Graph calls in components
                 href: toolkit/customize-components/cache.md
       - name: Resources
         expanded: true
