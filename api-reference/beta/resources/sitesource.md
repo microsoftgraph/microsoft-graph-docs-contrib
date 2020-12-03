@@ -30,7 +30,7 @@ Data source entity for SharePoint sites - This is the container for a custodian'
 |:---|:---|:---|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the **siteSource**.|
 |createdDateTime|DateTimeOffset|The date and time the **siteSource** was created.|
-|displayName|String|The display name of the siteSource. This will be the name of the SharePoint site.|
+|displayName|String|The display name of the **siteSource**. This will be the name of the SharePoint site.|
 |id|String| The ID of the **siteSource**. This is not the ID of the actual site.|
 
 ## Relationships

@@ -95,7 +95,7 @@ Content-Type: application/json
 
 {
   "group@odata.bind": "/groups/000044f9-47c8-4a87-bccf-291fbf006a54",
-  "includedSources":  "mailbox, site"
+  "includedSources":  "mailbox, site",
   "id": "14202dd90a1f4ccc84929586326c7104",
   "displayName": "SFA Videos",
   "createdDateTime": "2020-03-13T22:38:00.8985662Z",
