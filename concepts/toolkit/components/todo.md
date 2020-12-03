@@ -91,6 +91,9 @@ mgt-todo {
 To learn more, see [styling components](https://docs.microsoft.com/graph/toolkit/style.md).
 
 ## Events
+
+The following events are fired from the component.
+
 | Event | Detail | Description |
 | --- | --- | --- |
 | taskAdded | The detail contains the respective `task` object | Fires when a new task has been created. |
