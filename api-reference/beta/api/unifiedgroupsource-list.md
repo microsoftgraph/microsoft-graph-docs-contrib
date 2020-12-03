@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.compliance.ediscovery.contract.unifiedGroupSource)"
+  "@odata.type": "Collection(microsoft.graph.unifiedGroupSource)"
 }
 -->
 

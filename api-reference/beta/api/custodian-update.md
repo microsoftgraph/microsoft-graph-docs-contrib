@@ -82,7 +82,8 @@ Content-length: 254
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.custodian"
 }
 -->
 
@@ -91,7 +92,7 @@ HTTP/1.1 200 OK
 
 Content-Type: application/json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('4c8f8f70-7785-4bd4-b296-c98376a2c5e1')/custodians/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases/4c8f8f70-7785-4bd4-b296-c98376a2c5e1/custodians/$entity",
     "email": "AdeleV@contoso.com",
     "applyHoldToSources": false,
     "status": "active",
