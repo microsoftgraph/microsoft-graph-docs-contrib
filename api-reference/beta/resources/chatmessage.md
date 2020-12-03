@@ -34,7 +34,6 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |[Reply to a chatMessage in a channel](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Reply to an existing chat message in a channel.|
 |[Update chatMessage](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
 |**1:1 and group chat messages**| | |
-|[Get all chat messages](../api/chat-getallmessages.md)| [chatMessage](../resources/chatmessage.md) collection| Get messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats. |
 |[Get chatMessage in chat](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Get a single chat message in a chat. |
 |[List chatMessages in a chat](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | List chat messages in a 1:1 or group chat. |
 |[Create subscription for new chat messages](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Listen for new and edited chat messages, and reactions to them. |
