@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "printer",
           "ChangeType": "Addition",
-          "Description": "Added HasPhysicalDevice property to [printer](/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Description": "Added hasPhysicalDevice property to [printer](/graph/api/resources/printer?view=graph-rest-beta) resource.",
           "Target": "printer"
         },
         {
