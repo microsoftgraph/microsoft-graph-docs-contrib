@@ -228,44 +228,44 @@ This resource supports:
 
 ### Legal age group property definitions
 
-This section explains how the three age group properties (`legalAgeGroupClassification`, `ageGroup` and `consentProvidedForMinor`) are used by Azure AD administrators and enterprise application developers to meet age-related regulations.
+This section explains how the three age group properties (**legalAgeGroupClassification**, **ageGroup** and **consentProvidedForMinor**) are used by Azure AD administrators and enterprise application developers to meet age-related regulations:
+- The **legalAgeGroupClassification** property is read-only. It is used by enterprise application developers to ensure the correct handling of a user based on their legal age group. It is calculated based on the user's **ageGroup** and **consentProvidedForMinor** properties.
+- **ageGroup** and **consentProvidedForMinor** are optional properties used by Azure AD administrators to help ensure the use of an account is handled correctly based on the age-related regulatory rules governing the user's country or region.
 
 For example: Cameron is administrator of a directory for an elementary school in Holyport in the United Kingdom. At the beginning of the school year he uses the admissions paperwork to obtain consent from the minor's parents based on the age-related regulations of the United Kingdom. The consent obtained from the parent allows the minor's account to be used by Holyport school and Microsoft apps. Cameron then creates all the accounts and sets ageGroup to "minor" and consentProvidedForMinor to "granted". Applications used by his students are then able to suppress features that are not suitable for minors.
+<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience. 
+For some reason they are not defined as enums in the CSDL. 
+Hence the type of the corresponding 3 properties remain as string type in the Properties table.
+-->
 
-#### Legal age group classification
+#### legalAgeGroupClassification values
 
-This read-only property is used by enterprise application developers to ensure the correct handling of a user based on their legal age group. It is calculated based on the user's `ageGroup` and `consentProvidedForMinor` properties.
+| Member    | Description|
+|:---------------|:----------|
+|null|Default value, no **ageGroup** has been set for the user.|
+|minorWithoutParentalConsent |(Reserved for future use)|
+|minorWithParentalConsent| The user is considered a minor based on the age-related regulations of their country or region and the administrator of the account has obtained appropriate consent from a parent or guardian.|
+|adult|The user considered an adult based on the age-related regulations of their country or region.|
+|notAdult|The user is from a country or region that has additional age-related regulations (such as the United States, United Kingdom, European Union or South Korea), and the user's age is between a minor and an adult age (as stipulated based on country or region). Generally, this means that teenagers are considered as `notAdult` in regulated countries.|
+|minorNoParentalConsentRequired|The user is a minor but is from a country or region that has no age-related regulations.|
 
-| Value   | # |Description|
+#### ageGroup values
+
+| Member    | Description|
 |:---------------|:--------|:----------|
-|null|0|Default value, no `ageGroup` has been set for the user.|
-|minorWithoutParentalConsent |1|(Reserved for future use)|
-|minorWithParentalConsent|2| The user is considered a minor based on the age-related regulations of their country or region and the administrator of the account has obtained appropriate consent from a parent or guardian.|
-|adult|3|The user considered an adult based on the age-related regulations of their country or region.|
-|notAdult|4|The user is from a country or region that has additional age-related regulations (such as the United States, United Kingdom, European Union or South Korea), and the user's age is between a minor and an adult age (as stipulated based on country or region). Generally, this means that teenagers are considered as `notAdult` in regulated countries.|
-|minorNoParentalConsentRequired|5|The user is a minor but is from a country or region that has no age-related regulations.|
+|null|Default value, no **ageGroup** has been set for the user.|
+|minor|The user is considered a minor.|
+|notAdult|The user is from a country that has statutory regulations  United States, United Kingdom, European Union or South Korea) and user's age is more than the upper limit of kid age (as per country) and less than lower limit of adult age (as stipulated based on country or region). So basically, teenagers are considered as `notAdult` in regulated countries.|
+|adult|The user should be a treated as an adult.|
 
-#### Age group and minor consent
+#### consentProvidedForMinor values
 
-The age group and minor consent properties are optional properties used by Azure AD administrators to help ensure the use of an account is handled correctly based on the age-related regulatory rules governing the user's country or region.
-
-#### ageGroup property
-
-| Value    | # |Description|
-|:---------------|:--------|:----------|
-|null|0|Default value, no `ageGroup` has been set for the user.|
-|minor|1|The user is consider a minor.|
-|notAdult|2|The user is from a country that has statutory regulations  United States, United Kingdom, European Union or South Korea) and user's age is more than the upper limit of kid age (as per country) and less than lower limit of adult age (as stipulated based on country or region). So basically, teenagers are considered as `notAdult` in regulated countries.|
-|adult|3|The user should be a treated as an adult.|
-
-#### consentProvidedForMinor property
-
-| Value    | # |Description|
-|:---------------|:--------|:----------|
-|null|0|Default value, no `consentProvidedForMinor` has been set for the user.|
-|granted|1|Consent has been obtained for the user to have an account.|
-|denied|2|Consent has not been obtained for the user to have an account.|
-|notRequired|3|The user is from a location that does not require consent.|
+| Member    | Description|
+|:---------------|:----------|
+|null|Default value, no **consentProvidedForMinor** has been set for the user.|
+|granted|Consent has been obtained for the user to have an account.|
+|denied|Consent has not been obtained for the user to have an account.|
+|notRequired|The user is from a location that does not require consent.|
 
 ## Relationships
 
