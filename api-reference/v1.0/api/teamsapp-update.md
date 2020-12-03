@@ -23,8 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
-| Delegated (work or school account)     | AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (work or school account) | AppCatalog.Submit|
+| Delegated (work or school account)     | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported|
 | Application                            | Not supported. |
 
@@ -60,6 +59,8 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 <!-- markdownlint-disable MD034 -->
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_teamsapp"
@@ -72,6 +73,20 @@ Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-teamsapp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-teamsapp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- markdownlint-disable MD024 -->
 

@@ -88,6 +88,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/update-useraccountinformation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-useraccountinformation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -136,3 +140,5 @@ Content-type: application/json
   "userPrincipalName": "innocenty.popov@adventureworks.com"
 }
 ```
+
+

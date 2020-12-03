@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
-> \* Administrators must create an [application access policy](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to create an online meeting on behalf of that user (user ID specified in the request path).
+> \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to create an online meeting on behalf of that user (user ID specified in the request path).
 
 ## HTTP request
 
@@ -43,7 +43,7 @@ Request when using an application token:
 POST /users/{userId}/onlineMeetings
 ```
 
-> **Note:** `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md).
+> **Note:** `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## Request headers
 
@@ -94,6 +94,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-onlinemeeting-user-token-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-onlinemeeting-user-token-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -138,6 +142,7 @@ Content-Type: application/json
           "displayName": "Heidi Steen"
         }
       },
+      "role": "presenter",
       "upn": "upn-value"
     }
   },
@@ -213,6 +218,7 @@ Content-Type: application/json
           "displayName": "Heidi Steen"
         }
       },
+      "role": "presenter",
       "upn": "upn-value"
     }
   },
@@ -233,3 +239,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

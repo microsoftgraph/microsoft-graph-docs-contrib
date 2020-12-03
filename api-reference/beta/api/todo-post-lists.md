@@ -67,7 +67,7 @@ Content-Type: application/json
 Content-length: 60
 
 {
-  "displayName": "Travel items",
+  "displayName": "Travel items"
 }
 ```
 # [JavaScript](#tab/javascript)
@@ -80,6 +80,10 @@ Content-length: 60
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-todotasklist-from-lists-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-todotasklist-from-lists-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -107,3 +111,5 @@ Content-Type: application/json
   "wellknownListName": "none"
 }
 ```
+
+

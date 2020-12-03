@@ -26,8 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
-| Delegated (work or school account)     | AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (work or school account) | AppCatalog.Submit |
+| Delegated (work or school account) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported|
 | Application                            | Not supported. |
 
@@ -107,3 +106,4 @@ DELETE https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93
 ```http
 HTTP/1.1 204 No Content
 ```
+

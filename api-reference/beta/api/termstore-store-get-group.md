@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account) | TermStore.Read.All,TermStore.ReadWrite.All |
+|Delegated (work or school account) | TermStore.Read.All, TermStore.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/termStore/groups/{groupId}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -114,3 +118,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

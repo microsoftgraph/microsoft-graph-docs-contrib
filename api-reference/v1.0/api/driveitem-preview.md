@@ -84,3 +84,4 @@ param1=value&param2=another%20value
 ### Page/zoom
 
 The 'page' and 'zoom' options may not be available for all preview apps, but will be applied if the preview app supports it.
+

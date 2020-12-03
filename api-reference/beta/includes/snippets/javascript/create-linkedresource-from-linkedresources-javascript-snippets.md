@@ -11,8 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const linkedResource = {
-  @odata.type: "#microsoft.graph.linkedResource",
-  webUrl: "http:://microsoft.com",
+  webUrl: "https://microsoft.com",
   applicationName: "Microsoft",
   displayName: "Microsoft",
   externalId: "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"

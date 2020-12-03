@@ -3,7 +3,7 @@ title: "Create iosStoreApp"
 description: "Create a new iosStoreApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -66,6 +66,8 @@ The following table shows the properties that are required when you create the i
 |isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersedingAppCount|Int32|The total number of apps this app directly or indirectly supersedes. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersededAppCount|Int32|The total number of apps this app is directly or indirectly superseded by. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |bundleId|String|The Identity Name.|
 |appStoreUrl|String|The Apple App Store URL|
 |applicableDeviceType|[iosDeviceType](../resources/intune-apps-iosdevicetype.md)|The iOS architecture for which this app can run on.|
@@ -83,7 +85,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1160
+Content-length: 1217
 
 {
   "@odata.type": "#microsoft.graph.iosStoreApp",
@@ -108,6 +110,8 @@ Content-length: 1160
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "bundleId": "Bundle Id value",
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "applicableDeviceType": {
@@ -132,7 +136,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1332
+Content-Length: 1389
 
 {
   "@odata.type": "#microsoft.graph.iosStoreApp",
@@ -160,6 +164,8 @@ Content-Length: 1332
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "bundleId": "Bundle Id value",
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "applicableDeviceType": {
@@ -178,6 +184,7 @@ Content-Length: 1332
   }
 }
 ```
+
 
 
 

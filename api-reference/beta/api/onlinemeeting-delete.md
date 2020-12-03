@@ -24,7 +24,7 @@ Delete an [onlineMeeting](../resources/onlinemeeting.md) object.
 | Application                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \* Administrators must create an [application access policy](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to delete an online meeting on behalf of that user (user ID specified in the reuqest path) has created.
+> \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to delete an online meeting on behalf of that user (user ID specified in the reuqest path) has created.
 
 ## HTTP request
 
@@ -42,7 +42,7 @@ DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId
 
 > **Note:**
 >
-> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md).
+> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId` is the **id** of an [onlineMeeting entity](../resources/onlinemeeting.md).
 
 ## Request headers
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/me/onlineMeetings/550fae72-d251-43ec-868
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-call-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-call-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -109,3 +113,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+
