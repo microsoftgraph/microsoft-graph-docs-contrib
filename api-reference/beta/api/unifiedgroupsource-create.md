@@ -91,8 +91,8 @@ Content-length: 219
 
 ``` http
 HTTP/1.1 201 Created
-
 Content-Type: application/json
+
 {
   "group@odata.bind": "/groups/000044f9-47c8-4a87-bccf-291fbf006a54",
   "includedSources":  "mailbox, site"

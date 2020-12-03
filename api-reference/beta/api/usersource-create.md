@@ -91,8 +91,8 @@ Content-length: 233
 
 ``` http
 HTTP/1.1 201 Created
-
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('4c8f8f70-7785-4bd4-b296-c98376a2c5e1')/custodians('45454331323337443946343043464239')/userSources/$entity",
     "displayName": "Megan Bowen",
