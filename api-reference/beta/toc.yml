@@ -11835,8 +11835,12 @@ items:
             href: api/reportroot-getteamsdeviceusageuserdetail.md
           - name: Get user counts
             href: api/reportroot-getteamsdeviceusageusercounts.md
+          - name: Get total user counts
+            href: api/reportroot-getteamsdeviceusagetotalusercounts.md
           - name: Get distribution user counts
             href: api/reportroot-getteamsdeviceusagedistributionusercounts.md
+          - name: Get distribution total user counts
+            href: api/reportroot-getteamsdeviceusagedistributiontotalusercounts.md
         - name: Microsoft Teams user activity
           href: resources/microsoft-teams-user-activity-reports.md
           items:
@@ -11844,8 +11848,12 @@ items:
             href: api/reportroot-getteamsuseractivityuserdetail.md
           - name: Get activity counts
             href: api/reportroot-getteamsuseractivitycounts.md
+          - name: Get activity total counts
+            href: api/reportroot-getteamsuseractivitytotalcounts.md
           - name: Get user counts
             href: api/reportroot-getteamsuseractivityusercounts.md
+          - name: Get total user counts
+            href: api/reportroot-getteamsuseractivitytotalusercounts.md
         - name: Outlook activity
           href: resources/email-activity-reports.md
           items:

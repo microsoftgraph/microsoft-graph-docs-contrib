@@ -1,19 +1,19 @@
 ---
-title: "reportRoot: getTeamsUserActivityCounts"
-description: "Get the number of Microsoft Teams activities by activity type. The activity types are number of teams chat messages, private chat messages, calls, and meetings. The activities are performed by Microsoft Teams licensed users."
+title: "reportRoot: getTeamsUserActivityTotalCounts"
+description: "Get the number of Microsoft Teams activities by activity type. The activity types are number of teams chat messages, private chat messages, calls, and meetings. The activities are performed by Microsoft Teams licensed or non-licensed users."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
 doc_type: apiPageType
 ---
 
-# reportRoot: getTeamsUserActivityCounts
+# reportRoot: getTeamsUserActivityTotalCounts
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of Microsoft Teams activities by activity type. The activity types are number of teams chat messages, private chat messages, calls, and meetings. The activities are performed by Microsoft Teams licensed users.
+Get the number of Microsoft Teams activities by activity type. The activity types are number of teams chat messages, private chat messages, calls, and meetings. The activities are performed by Microsoft Teams licensed or non-licensed users.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getTeamsUserActivityCounts(period='D7')
+GET /reports/getTeamsUserActivityTotalCounts(period='D7')
 ```
 
 ## Function parameters
@@ -83,14 +83,13 @@ The following is an example that outputs CSV.
 
 The following is an example of the request.
 
-
 <!-- {
   "blockType": "ignored",
-  "name": "reportroot_getteamsuseractivitycounts_csv"
+  "name": "reportroot_getteamsuseractivitytotalcounts_csv"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityCounts(period='D7')?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityTotalCounts(period='D7')?$format=text/csv
 ```
 
 
@@ -128,14 +127,13 @@ The following is an example that returns JSON.
 
 The following is an example of the request.
 
-
 <!-- {
   "blockType": "ignored",
-  "name": "reportroot_getteamsuseractivitycounts_json"
+  "name": "reportroot_getteamsuseractivitytotalcounts_json"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityCounts(period='D7')?$format=application/json
+GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityTotalCounts(period='D7')?$format=application/json
 ```
 
 
@@ -182,5 +180,3 @@ Content-Length: 277
   "suppressions": [
   ]
 }-->
-
-

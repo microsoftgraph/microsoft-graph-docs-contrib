@@ -1,19 +1,19 @@
 ---
-title: "reportRoot: getTeamsUserActivityCounts"
-description: "Get the number of Microsoft Teams activities by activity type. The activity types are number of teams chat messages, private chat messages, calls, and meetings. The activities are performed by Microsoft Teams licensed users."
+title: "reportRoot: getTeamsUserActivityTotalUserCounts"
+description: "Get the number of Microsoft Teams licensed or non-licensed users by activity type. The activity types are number of teams chat messages, private chat messages, calls, and meetings."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
 doc_type: apiPageType
 ---
 
-# reportRoot: getTeamsUserActivityCounts
+# reportRoot: getTeamsUserActivityTotalUserCounts
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of Microsoft Teams activities by activity type. The activity types are number of teams chat messages, private chat messages, calls, and meetings. The activities are performed by Microsoft Teams licensed users.
+Get the number of Microsoft Teams licensed or non-licensed users by activity type. The activity types are number of teams chat messages, private chat messages, calls, and meetings.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getTeamsUserActivityCounts(period='D7')
+GET /reports/getTeamsUserActivityTotalUserCounts(period='D7')
 ```
 
 ## Function parameters
@@ -67,11 +67,12 @@ The CSV file has the following headers for columns.
 - Private Chat Messages
 - Calls
 - Meetings
+- Other Actions
 - Report Period
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a **[teamsUserActivityCounts](../resources/teamsuseractivitycounts.md)** object in the response body.
+If successful, this method returns a `200 OK` response code and a **[teamsUserActivityUserCounts](../resources/teamsuseractivityusercounts.md)** object in the response body.
 
 ## Example
 
@@ -83,14 +84,13 @@ The following is an example that outputs CSV.
 
 The following is an example of the request.
 
-
 <!-- {
   "blockType": "ignored",
-  "name": "reportroot_getteamsuseractivitycounts_csv"
+  "name": "reportroot_getteamsuseractivitytotalusercounts_csv"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityCounts(period='D7')?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityTotalUserCounts(period='D7')?$format=text/csv
 ```
 
 
@@ -105,6 +105,7 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
+
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
 <!-- {
@@ -117,7 +118,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Report Date,Team Chat Messages,Private Chat Messages,Calls,Meetings,Report Period
+Report Refresh Date,Report Date,Team Chat Messages,Private Chat Messages,Calls,Meetings,Other Actions,Report Period
 ```
 
 ### JSON
@@ -128,14 +129,13 @@ The following is an example that returns JSON.
 
 The following is an example of the request.
 
-
 <!-- {
   "blockType": "ignored",
-  "name": "reportroot_getteamsuseractivitycounts_json"
+  "name": "reportroot_getteamsuseractivitytotalusercounts_json"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityCounts(period='D7')?$format=application/json
+GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityTotalUserCounts(period='D7')?$format=application/json
 ```
 
 
@@ -148,24 +148,25 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamsUserActivityCounts"
+  "@odata.type": "microsoft.graph.teamsUserActivityUserCounts"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 277
+Content-Length: 291
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsUserActivityCounts)", 
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsUserActivityUserCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
       "reportDate": "2017-09-01", 
-      "teamChatMessages": 26, 
-      "privateChatMessages": 17, 
-      "calls": 4, 
-      "meetings": 0, 
+      "teamChatMessages": 30, 
+      "privateChatMessages": 21, 
+      "calls": 6, 
+      "meetings": 2, 
+      "otherActions": 17, 
       "reportPeriod": "7"
     }
   ]
@@ -182,5 +183,3 @@ Content-Length: 277
   "suppressions": [
   ]
 }-->
-
-
