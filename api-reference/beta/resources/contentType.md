@@ -30,7 +30,6 @@ Content types allow you to define a set of columns that must be present on every
 | **readOnly**      | boolean              | If `true`, the content type cannot be modified unless this value is first set to `false`.
 | **sealed**        | boolean              | If `true`, the content type cannot be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.
 | **isBuiltIn**            | boolean| Specifies if a content type is a built-in content type. 
-| **base**   | [contentType][]  | Parent contentType from which this content type is derived. 
 | **documentSet**       | [documentSet][]      | [Document Set](https://docs.microsoft.com/sharepoint/governance/document-set-planning#about-document-sets) metadata.
 | **documentTemplate**  | [documentSetContent][] | Document template metadata. To make sure that documents have consistent content across a site and its subsites, you can associate a Word, Excel, or PowerPoint template with a site content type.
 | **associatedHubsUrls**       | Collection(string) | List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
@@ -42,6 +41,7 @@ Content types allow you to define a set of columns that must be present on every
 
 | Property name   | Type                      | Description
 |:----------------|:--------------------------|:-------------------------------
+| **base**   | [contentType][]  | Parent contentType from which this content type is derived. 
 | **columnLinks** | [columnLink][] collection | The collection of columns that are required by this content type
 | **baseTypes**   | Collection([contentType][])     | The collection of content types that are ancestors of this content type.
 | **columnPositions**       | Collection([columnDefinition][]) | Column order information in a content type.
@@ -85,9 +85,7 @@ The following is a JSON representation of a **contentType** resource.
   "associatedHubsUrls" : ["string"],
   "propagateChanges" : false,
   "baseTypes" : [{ "@type": "microsoft.graph.contentType" }],
-  "columns" : [{ "@type": "microsoft.graph.columnDefinition" }],
-  "columnPositions" : [{ "@type": "microsoft.graph.columnDefinition" }],
-
+  "columns" : [{ "@type": "microsoft.graph.columnDefinition" }]
 }
 ```
 
