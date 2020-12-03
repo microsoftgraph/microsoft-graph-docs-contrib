@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "printer",
           "ChangeType": "Addition",
-          "Description": "Added hasPhysicalDevice property to [printer](/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Description": "Added the **hasPhysicalDevice** property to the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
           "Target": "printer"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "abort,printJob",
           "ChangeType": "Addition",
-          "Description": "Added [abort](/graph/api/printjob-abort?view=graph-rest-beta) action to [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource.",
+          "Description": "Added the [abort](/graph/api/printjob-abort?view=graph-rest-beta) action to the [printJob]((https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
           "Target": "abort,printJob"
         },
         {
@@ -23,14 +23,14 @@
           "ApiChange": "Property",
           "ChangedApiName": "redirect",
           "ChangeType": "Addition",
-          "Description": "Added configuration property to [redirect](/graph/api/printjob-redirect?view=graph-rest-beta) action on printJob(/graph/api/resources/printjob?view=graph-rest-beta) resource.",
+          "Description": "Added the configuration property to the [redirect]((https://docs.microsoft.com/en-us/graph/api/printjob-redirect?view=graph-rest-beta) action on the [printJob]((https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
           "Target": "redirect"
         }
       ],
       "Id": "76cd4ab2-7d93-48a2-844d-f991b9c239e4",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-11-01T00:00:00",
+      "CreatedDateTime": "2020-12-02T00:00:00",
       "WorkloadArea": "Devices and apps ",
       "SubArea": " Cloud printing"
     },
