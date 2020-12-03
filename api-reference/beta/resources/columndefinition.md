@@ -103,7 +103,11 @@ The type-related properties (boolean, calculated, choice, currency, dateTime, lo
 | **type**         | columnTypes  | For site columns, the type of column. Read-only
 | **contentApprovalStatus**| [contentApprovalStatusColumn][]     | This column stores content approval status.
 
+## Relationships
 
+| Property name   | Type                      | Description
+|:----------------|:--------------------------|:-------------------------------
+| **sourceColumn** | [columnDefinition][] | The source column for content type column.
 
 >**Note:** These properties correspond to SharePoint's [SPFieldType][] enumeration.
 While the most common field types are represented in the previous table, this beta API is still missing some.
@@ -118,6 +122,7 @@ To see them when showing **field** values on [listItems][listItem], include the 
 [booleanColumn]: booleancolumn.md
 [calculatedColumn]: calculatedcolumn.md
 [choiceColumn]: choicecolumn.md
+[columnDefinition]: columnDefinition.md
 [currencyColumn]: currencycolumn.md
 [dateTimeColumn]: datetimecolumn.md
 [defaultColumnValue]: defaultcolumnvalue.md
