@@ -27,9 +27,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-v1.0&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-v1.0&preserve-view=true) resource. |
 | Addition | beta | Added [Get the installed app in team](/graph/api/team-get-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed app for user](/graph/api/userteamwork-get-installedapps?view=graph-rest-beta&preserve-view=true)|
 | Addition | beta | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-beta&preserve-view=true) resource. |
-| Addition | beta | Added the [getAllMessages](/graph/api/chat-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [chatmessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) resource.|
-| Addition | beta | Added the [getAllMessages](/graph/api/channel-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource.|
-| Addition | beta | Added the [getAllMessages](/graph/api/team-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the [getAllMessages](/graph/api/chats-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the [getAllMessages](/graph/api/channels-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the [getAllMessages](/graph/api/teams-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) resource.|
 
 ## November 2020
 
