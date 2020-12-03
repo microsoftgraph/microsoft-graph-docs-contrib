@@ -58,7 +58,7 @@ In the request body, supply the values for relevant fields that should be update
 |body|[ItemBody](../resources/itembody.md)|The body of the message associated with the event.|
 |categories|String collection|The categories associated with the event.|
 | end|DateTimeTimeZone|The date, time, and time zone that the event ends.|
-|hideAttendees|Boolean|When set to `true`, each attendee only sees themselves in the meeting request and meeting **Tracking** list.|
+|hideAttendees|Boolean|When set to `true`, each attendee only sees themselves in the meeting request and meeting **Tracking** list. Default is false.|
 |importance|String|The importance of the event. The possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day.|
 |isOnlineMeeting|Boolean| `True` if this event has online meeting information, `false` otherwise. Default is false. Optional.|
