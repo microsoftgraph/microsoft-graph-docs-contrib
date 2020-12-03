@@ -19,6 +19,8 @@ The following example displays the signed-in user's Microsoft To Do tasks using 
 
 ## Properties
 
+You can use the following attributes and properties to customize the component.
+
 | Attribute | Property | Description |
 | -- | -- | -- |
 | read-only | readOnly | A Boolean to set the task interface to be read only (no adding or removing tasks). Default is `false`. |
