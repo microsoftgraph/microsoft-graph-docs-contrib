@@ -107,8 +107,7 @@ The following examples illustrates how to use the `event` template:
       <div data-for="attendee in event.attendees">
         <mgt-person
           person-query="{{ attendee.emailAddress.name }}"
-          show-name
-          show-email>
+          view="twolines">
         </mgt-person>
       </div>
     </button>
