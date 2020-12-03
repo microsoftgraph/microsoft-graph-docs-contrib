@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create the [
 |requiresVerification|Boolean|Determines whether the identityUserFlowAttribute requires verification. This is only used for verifying the user's phone number or email address.|
 |userAttributeValues|[userAttributeValuesItem](../resources/userattributevaluesitem.md) collection|The input options for the user flow attribute. Only applicable when the userInputType is `radioSingleSelect`, `dropdownSingleSelect`, or `checkboxMultiSelect`.|
 |userInputType|identityUserFlowAttributeInputType|The input type of the user flow attribute. Possible values are: `textBox`, `dateTimeDropdown`, `radioSingleSelect`, `dropdownSingleSelect`, `emailBox`, `checkboxMultiSelect`.|
-|userAttribute|[identityUserFlowAttribute]|The identifier for the user flow attribute to include in the user flow assignment.
+|userAttribute|[identityUserFlowAttribute](../resources/identityuserflowattribute.md)|The identifier for the user flow attribute to include in the user flow assignment.
 
 ## Response
 
@@ -98,7 +98,7 @@ Content-Type: application/json
 
 ``` http
 HTTP/1.1 201 Created
-Location https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Partner/userAttributeAssignments/extension_guid_shoeSize
+Location: https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Partner/userAttributeAssignments/extension_guid_shoeSize
 Content-Type: application/json
 
 {

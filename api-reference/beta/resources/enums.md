@@ -1469,7 +1469,7 @@ Possible values for user account types (group membership), per Windows definitio
 | emailBox              | 5     |
 | checkboxMultiSelect   | 6     |
 
-### teamworkActivityTopicSource values 
+### teamworkActivityTopicSource values
 
 | Member
 |:---
