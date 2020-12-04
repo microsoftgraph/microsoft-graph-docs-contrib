@@ -89,17 +89,17 @@ mgt-people-picker {
     --input-border-top: 2px rgba(255, 255, 255, 0.5) solid;
 
     --input-background-color: #1f1f1f; /* input area background color */
-    --input-hover-color: #008394; /* input area border hover color */
-    --input-focus-color: #0f78d4; /* input area border focus color */
+    --input-border-color--hover: #008394; /* input area border hover color */
+    --input-border-color--focus: #0f78d4; /* input area border focus color */
 
     --dropdown-background-color: #1f1f1f; /* selection area background color */
     --dropdown-item-hover-background: #333d47; /* person background color on hover */
     
     --selected-person-background-color: #f1f1f1; /* person item background color */
     
-    --font-color: white; /* input area border focus color */
-    --placeholder-default-color: #f1f1f1; /* placeholder text color default*/
-    --placeholder-focus-color: rgba(255, 255, 255, 0.8); /* placeholder text focus color */
+    --color: white; /* input area border focus color */
+    --placeholder-color: #f1f1f1; /* placeholder text color */
+    --placeholder-color--focus: rgba(255, 255, 255, 0.8); /* placeholder text focus color */
 }
 ```
 
