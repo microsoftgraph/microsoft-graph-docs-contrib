@@ -1529,3 +1529,12 @@ Possible values for user account types (group membership), per Windows definitio
 |provisionFailed|
 |deprovisionFailed|
 |reprovisionFailed|
+
+### chatType values 
+
+| Member             |
+| :----------------- |
+|oneOnOne            |
+|group               |
+|meeting             |
+|unknownFutureValue  |

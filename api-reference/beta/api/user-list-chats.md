@@ -109,7 +109,8 @@ Content-type: application/json
       "id": "id-value",
       "topic": "topic-value",
       "createdDateTime": "datetime-value",
-      "lastUpdatedDateTime": "datetime-value"
+      "lastUpdatedDateTime": "datetime-value",
+      "chatType": "chatType-value"
     }
   ]
 }

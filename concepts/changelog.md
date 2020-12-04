@@ -27,6 +27,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-v1.0&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-v1.0&preserve-view=true) resource. |
 | Addition | beta | Added [Get the installed app in team](/graph/api/team-get-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed app for user](/graph/api/userteamwork-get-installedapps?view=graph-rest-beta&preserve-view=true)|
 | Addition | beta | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **chatType** property to [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **chatType** enumeration type. |
 
 
 ## November 2020

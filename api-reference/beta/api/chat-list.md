@@ -108,25 +108,29 @@ Content-length: 262
             "id": "19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces",
             "topic": null,
             "createdDateTime": "2019-04-18T23:51:42.099Z",
-            "lastUpdatedDateTime": "2019-04-18T23:51:43.255Z"
+            "lastUpdatedDateTime": "2019-04-18T23:51:43.255Z",
+            "chatType": "oneOnOne"
         },
         {
             "id": "19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_0c5cfdbb-596f-4d39-b557-5d9516c94107@unq.gbl.spaces",
             "topic": null,
             "createdDateTime": "2019-04-18T23:19:23.76Z",
-            "lastUpdatedDateTime": "2019-04-18T23:19:21.994Z"
+            "lastUpdatedDateTime": "2019-04-18T23:19:21.994Z",
+            "chatType": "oneOnOne"
         },
         {
             "id": "19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_3ee373aa-62fa-4fc6-b11f-9627d5b4a73d@unq.gbl.spaces",
-            "topic": null,
+            "topic": "NamedGroupChat",
             "createdDateTime": "2019-03-21T22:30:14.867Z",
-            "lastUpdatedDateTime": "2019-03-21T22:30:15.507Z"
+            "lastUpdatedDateTime": "2019-03-21T22:30:15.507Z",
+            "chatType": "group"
         },
         {
             "id": "19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_90a27c51-5c74-453b-944a-134ba86da790@unq.gbl.spaces",
-            "topic": null,
+            "topic": "Scrum meeting",
             "createdDateTime": "2019-02-06T03:38:58.062Z",
-            "lastUpdatedDateTime": "2019-02-06T03:38:58.063Z"
+            "lastUpdatedDateTime": "2019-02-06T03:38:58.063Z",
+            "chatType": "meeting"
         }
     ]
 }
