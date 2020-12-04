@@ -12,6 +12,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## December 2020
 
+### Cloud communications
+|Addition|v1.0|Added the [presence](/graph/api/resources/presence?view=graph-rest-1.0&preserve-view=true) resource type|
+
 ### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
