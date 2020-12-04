@@ -19,6 +19,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## December 2020
 
+### Devices and apps | Cloud printing
+
+| **Change type** | **Version**   | **Description**                          |
+|:---|:---|:---|
+| Change | beta | Updated enum types in [printerProcessingStateDetail](graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values) resource. |
+
 ### Teamwork
 
 | **Change type** | **Version** | **Description**                          |
@@ -27,12 +33,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-v1.0&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-v1.0&preserve-view=true) resource. |
 | Addition | beta | Added [Get the installed app in team](/graph/api/team-get-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed app for user](/graph/api/userteamwork-get-installedapps?view=graph-rest-beta&preserve-view=true)|
 | Addition | beta | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-beta&preserve-view=true) resource. |
-
-### Devices and apps | Cloud printing
-
-| **Change type** | **Version**   | **Description**                          |
-|:---|:---|:---|
-| Change | beta | Updated enum types in [printerProcessingStateDetail](graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values) resource. |
 
 
 ## November 2020
