@@ -1112,6 +1112,9 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _Mail.Send.Shared_ |    Send mail on behalf of others | Allows the app to send mail as the signed-in user, including sending on-behalf of others. | No | No
 | _MailboxSettings.Read_ |  Read user mailbox settings | Allows the app to the read user's mailbox settings. Does not include permission to send mail. | No | Yes
 | _MailboxSettings.ReadWrite_ |  Read and write user mailbox settings | Allows the app to create, read, update, and delete user's mailbox settings. Does not include permission to directly send mail, but allows the app to create rules that can forward or redirect messages. | No | Yes
+| _IMAP.AccessAsUser.All_ | Read and write access to user mail via IMAP | Allows the app to read, update, create and delete email in user mailboxes. Does not include permission to send mail. | No | Yes
+| _POP.AccessAsUser.All_ | Read and write access to user mail via POP | Allows the app to read, update, create and delete email in user mailboxes. Does not include permission to send mail. | No | Yes
+| _SMTP.Send_ | Send mail as a user using SMTP AUTH | Allows the app to send mail as users in the organization. | No | Yes
 
 #### Application permissions
 
