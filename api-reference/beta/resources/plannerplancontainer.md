@@ -17,7 +17,7 @@ Planner currently supports the container types listed in the following table. Wh
 
 |Type|Description|Path to the resource|
 |----|-----------|--------------------|
-|`group`| Plan is contained by a group.| https://graph.microsoft.com/v1.0/groups/*&lt;id&gt;*|
+|`group`| Plan is contained by a group.| https://graph.microsoft.com/v1.0/groups/&lt;id&gt;|
 
 ## Properties
 |Property|Type|Description|

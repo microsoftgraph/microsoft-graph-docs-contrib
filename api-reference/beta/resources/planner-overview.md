@@ -19,11 +19,11 @@ Before you get started with the Planner API, it will be helpful to understand ho
 In Planner, Plans are always contained by another resource. The containing resource determines the authoization rules of the plan and all the tasks in it, as well as the lifecycle of the plan. For example, for Plans contained by Microsoft 365 groups, 
 group members will be able to create, edit, resolve and delete tasks in the plan, as well as changing some plan level properties, such as the name of the plan or label names. Additionally, when the group is deleted, all the plans in the group are automatically deleted, or if a groups is restored all the plans will be automatically restored.
 
-Most common type of container is a Microsoft 365 group.
+The most common type of container is a Microsoft 365 group.
 
 ### Container Type: Microsoft 365 groups
 
-Microsoft 365 groups are the owners of the plans in the Planner API.
+Microsoft 365 groups are a commonly used container of the plans in the Planner API.
 To [get the plans owned by a group](../api/plannergroup-list-plans.md), make the following HTTP request.
 
 ``` http
