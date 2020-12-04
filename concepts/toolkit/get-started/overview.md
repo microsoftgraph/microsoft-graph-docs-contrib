@@ -52,7 +52,7 @@ Or, just reference the component you need and avoid loading everything else:
 
 The Microsoft Graph Toolkit is made up of several NPM packages, allowing you to only include the code you need for your applications.
 
-<b>@microsoft/mgt-element<b>
+<b>@microsoft/mgt-element</b>
 
 The `@microsoft/mgt-element` is the core package that contains only the base classes used for building components and providers. This package exposes all  necessary classes and interfaces needed to build your own components and exports the [IProvider interface and SimpleProvider class](../providers/custom.md) for building custom providers.
 

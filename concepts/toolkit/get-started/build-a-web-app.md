@@ -36,17 +36,6 @@ npm install @microsoft/mgt
 
 > **Note**: If you're targeting a browser such as IE11 that does not support web components natively, you might need to [include polyfills](./overview.md#polyfills).
 
-Now, you can reference the all the Toolkit components in your application with:
-
-```html
-<script src="node_modules/@microsoft/mgt/dist/es6/components.js"></script>
-```
-Or, reference only the components you need and avoid loading everything else. For example, to add the MSAL Provider:
-
-```html
-<script src="node_modules/@microsoft/mgt/dist/es6/components/providers/mgt-msal-provider.js"></script>
-```
-
 ## Initialize the MSAL Provider
 The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [MSAL Provider](../providers/msal.md) uses MSAL.js to sign in users and acquire tokens. You can initialize the MSAL provider in your HTML or JavaScript.
 
