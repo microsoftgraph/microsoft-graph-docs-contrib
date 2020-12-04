@@ -4,7 +4,6 @@ description: "This changelog covers what's changed in Microsoft Graph, including
 author: "MSGraphDocsVteam"
 localization_priority: Priority
 ---
-
 # Changelog for Microsoft Graph
 
 This changelog covers specific API-level changes in Microsoft Graph v1.0 and beta.
