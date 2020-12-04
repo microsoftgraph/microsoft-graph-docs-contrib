@@ -9,7 +9,7 @@ author: benotter
 
 The Tasks component enables the user to view, add, remove, complete, or edit tasks. It works with tasks in Microsoft Planner or Microsoft To-Do.  
 
-In addition, a user is able to assign a single or multiple Microsoft Graph users to a task. For more details about Microsoft Graph assignments, see [plannerAssignments](/graph/api/resources/plannerassignments?view=graph-rest-1.0).
+In addition, a user is able to assign a single or multiple Microsoft Graph users to a task. For more details about Microsoft Graph assignments, see [plannerAssignments](/graph/api/resources/plannerassignments).
 
 ## Example
 
@@ -124,7 +124,7 @@ mgt-tasks {
 
 ## Templates
 
-The `tasks` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following:
+The `tasks` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following:
 
 | Data type     | Data context              | Description                                                       |
 | ---------     | ------------------------- | ----------------------------------------------------------------- |
@@ -166,4 +166,4 @@ For the Microsoft Todo data source, the Tasks.Read permission is required for fe
 
 ## Authentication
 
-The tasks component uses the global authentication provider described in the [authentication documentation](./../providers.md).
+The tasks component uses the global authentication provider described in the [authentication documentation](../providers/providers.md).

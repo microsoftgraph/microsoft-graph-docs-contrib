@@ -99,15 +99,15 @@ mgt-person {
 }
 ```
 
-To learn more, see [styling components](../style.md).
+To learn more, see [styling components](../customize-components/style.md).
 
 ## Templates
 
-The `mgt-person` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following:
+The `mgt-person` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following:
 
 | Data type | Data context | Description |
 | --------- | ------------ | ----------- |
-| loading | none | The template to render while the component is in a laoding state. |
+| loading | none | The template to render while the component is in a loading state. |
 | no-data | none | The template to render when no person image or data is available. | 
 | default | person: The person details object <br> `personImage`: The URL of the image | The default template replaces the entire component with your own. |
 | person-card | person: The person details object <br> `personImage`: The URL of the image | The template to update the mgt-person-card displayed on hover or click. |
@@ -165,21 +165,19 @@ The following properties are available on the config object:
 
 This control uses the following Microsoft Graph APIs and permissions.
 
-| Resource                                                                                                    | Permission     |
-| ----------------------------------------------------------------------------------------------------------- | -------------------- |
-| [/me](/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
-| [/me/photo/$value](/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
-| [/me/people/?$search=](/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
-| [/me/contacts/\*](/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
-| [/users/{id}/photo/$value](/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
-| [/me/presence](/graph/api/presence-get?view=graph-rest-beta)                | Presence.Read |
-| [/users/{id}/presence](/graph/api/presence-get?view=graph-rest-beta)        | Presence.Read.All |
-
-> **Note:** to access the `*/photo/$value` resources for personal Microsoft accounts, use the Microsoft Graph beta endpoint.
+| Resource | Permission     |
+| -| - |
+| [/me](/graph/api/user-get)                              | User.Read          |
+| [/me/photo/$value](/graph/api/profilephoto-get)        | User.Read          |
+| [/me/people/?$search=](/graph/api/user-list-people)     | People.Read        |
+| [/me/contacts/\*](/graph/api/user-list-contacts&tabs=cs) | Contacts.Read      |
+| [/users/{id}/photo/$value](/graph/api/user-list-people) | User.ReadBasic.All |
+| [/me/presence](/graph/api/presence-get)                | Presence.Read |
+| [/users/{id}/presence](/graph/api/presence-get)        | Presence.Read.All |
 
 ## Authentication
 
-The control uses the global authentication provider described in the [authentication documentation](./../providers.md) to fetch the required data.
+The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md) to fetch the required data.
 
 ## Extend for more control
 

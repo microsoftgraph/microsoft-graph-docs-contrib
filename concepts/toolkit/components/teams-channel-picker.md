@@ -19,7 +19,7 @@ The following example shows the `mgt-teams-channel-picker` component. Start sear
 
 ## Getting the selected channel
 
-Use the `selectedItem` property to retrieve the currently selected channel and parent team. This value will be null if no channel has been selected. `selectedItem` contains two properties: `channel` ([MicrosoftGraph.Channel](/graph/api/resources/channel?view=graph-rest-1.0)) and `team` ([MicrosoftGraph.Team](/graph/api/resources/team?view=graph-rest-1.0)).
+Use the `selectedItem` property to retrieve the currently selected channel and parent team. This value will be null if no channel has been selected. `selectedItem` contains two properties: `channel` ([MicrosoftGraph.Channel](/graph/api/resources/channel)) and `team` ([MicrosoftGraph.Team](/graph/api/resources/team)).
 
 ```javascript
 const channelPicker = document.querySelector('mgt-teams-channel-picker');
@@ -73,11 +73,11 @@ mgt-teams-channel-picker {
 ## Events
 | Event | Detail | Description |
 | --- | --- | --- |
-| selectionChanged | The detail contains the currently selected item  of `{channel : `[MicrosoftGraph.Channel](/graph/api/resources/channel?view=graph-rest-1.0)`, team: `[MicrosoftGraph.Team](/graph/api/resources/team?view=graph-rest-1.0)`}` | Fired when user makes a change in selection of a channel. |
+| selectionChanged | The detail contains the currently selected item  of `{channel : `[MicrosoftGraph.Channel](/graph/api/resources/channel)`, team: `[MicrosoftGraph.Team](/graph/api/resources/team)`}` | Fired when user makes a change in selection of a channel. |
 
 ## Templates
 
- `mgt-teams-channel-picker` supports several [templates](../templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
+ `mgt-teams-channel-picker` supports several [templates](../customize-components/templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
 
 | Data type | Data context | Description |
 | --- | --- | --- |
@@ -101,12 +101,12 @@ This component uses the following Microsoft Graph APIs and permissions.
 
 | API                                                                                                              | Permission  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-1.0)                    | User.Read.All        |
-| [/teams/${id}/channels](/graph/api/channel-list?view=graph-rest-1.0) | Group.Read.All        |
+| [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | User.Read.All        |
+| [/teams/${id}/channels](/graph/api/channel-list) | Group.Read.All        |
 
 ## Authentication
 
-The control uses the global authentication provider described in the [authentication documentation](./../providers.md).
+The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
 
 ## Extend for more control
 
