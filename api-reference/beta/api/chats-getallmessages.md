@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a list of [chatM
 ### Request
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}/chats/getAllMessages
+GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats/getAllMessages
 ```
 
 ### Response
