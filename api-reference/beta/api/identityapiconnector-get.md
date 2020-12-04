@@ -1,25 +1,29 @@
 ---
 title: "Get identityApiConnector"
-description: "Read the properties and relationships of an identityApiConnector object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Read the properties of an API connector."
+author: "nickgmicrosoft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get identityApiConnector
+
 Namespace: microsoft.graph
 
-Read the properties and relationships of an [identityApiConnector](../resources/identityapiconnector.md) object.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Read the properties of an [identityApiConnector](../resources/identityapiconnector.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
+|Delegated (personal Microsoft account)| Not supported.|
+|Application|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
 ## HTTP request
 
@@ -64,22 +68,20 @@ GET https://graph.microsoft.com/beta/identity/apiConnectors/{identityApiConnecto
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.Cpim.Api.DataModels.identityApiConnector"
+  "@odata.type": "microsoft.graph.identityApiConnector",
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
-
 Content-Type: application/json
+
 {
-  "value": {
-    "@odata.type": "#Microsoft.Cpim.Api.DataModels.identityApiConnector",
-    "id": "7fd6431c-431c-7fd6-1c43-d67f1c43d67f",
-    "displayName": "String",
-    "targetUrl": "String",
-    "authenticationConfiguration": {
-      "@odata.type": "microsoft.graph.apiAuthenticationConfigurationBase"
-    }
+  "id": "7fd6431c-431c-7fd6-1c43-d67f1c43d67f",
+  "displayName": "String",
+  "targetUrl": "String",
+  "authenticationConfiguration": {
+    "@odata.type": "microsoft.graph.apiAuthenticationConfigurationBase"
   }
 }
 ```
