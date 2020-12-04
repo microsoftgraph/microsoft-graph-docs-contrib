@@ -34,6 +34,7 @@ The components are also available as [React components](./get-started/mgt-react.
 |[Person card](./components/person-card.md)|A flyout used on the person component to display more profile information about a user.|
 |[Get](./components/get.md)|Make a GET query to any Microsoft Graph API directly in your HTML.|
 |[Channel picker](./components/teams-channel-picker.md)|Provides the ability to search for Microsoft Teams channels to select a channel from a rendered list of results.|
+|[To do](./components/todo.md)|Displays and enables adding, removing, completing, or editing of tasks from Microsoft To-Do.|
 
 ### Providers
 
