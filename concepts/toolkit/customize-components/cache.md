@@ -11,7 +11,7 @@ The Microsoft Graph Toolkit supports caching of select Graph API calls. Currentl
 
 You can view the cache through the developer panel under the "Application" tab, then naviagting on the "IndexedDB" tab under the "Storage" pane.
 
-![devtools indexedDB](images/indexedDBpanel.png)
+![devtools indexedDB](../images/indexedDBpanel.png)
 
 ## Cache configuration
 
