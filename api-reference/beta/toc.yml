@@ -10612,6 +10612,17 @@ items:
                href: api/identityuserflowattribute-update.md
              - name: Delete
                href: api/identityuserflowattribute-delete.md
+          - name: API connectors
+            href: resources/identityapiconnector.md
+            items:
+            - name: List
+              href: api/identityapiconnector-list.md
+            - name: Create
+              href: api/identityapiconnector-post-userflows.md
+            - name: Get
+              href: api/identityapiconnector-get.md
+            - name: Delete
+              href: api/identityapiconnector-delete.md
       - name: Governance
         items:
         - name: Access reviews (groups)
