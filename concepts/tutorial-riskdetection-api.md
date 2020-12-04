@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Identify and remediate risks using Microsoft Graph APIs"
+title: "Tutorial: Identify and remediate risk using Microsoft Graph APIs"
 description: "Learn how to identify and remediate risk using Microsoft Graph APIs."
 author: "davidmu1"
 localization_priority: Normal
