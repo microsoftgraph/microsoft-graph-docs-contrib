@@ -9,27 +9,27 @@ author: bettirosengugi
 
 # Use Graph Explorer to try Microsoft Graph APIs
 
-[Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer/) is a developer tool that you can use make requests using Microsoft Graph APIs and view the responses. You can use Graph Explorer to try new APIs in a sample tenant or your own developer sandbox to explore the capabilities that you can build into your apps. This tool includes helpful features such as code snippets in C#, Java, JavaScript, and Objective C, Microsoft Graph Toolkit, and adaptive card integration, and more.
+[Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/) is a developer tool that you can use make Microsoft Graph API requests and view the responses. You can use Graph Explorer to try new APIs in a sample tenant or your own developer sandbox to explore the capabilities that you can build into your apps. This tool includes helpful features such as code snippets in C#, Java, JavaScript, and Objective C, Microsoft Graph Toolkit and adaptive card integration, and more.
 
 You can access the Graph Explorer web application with or without signing in. Use Graph Explorer to:
 
 - Make requests (GET, POST, PUT, PATCH and DELETE) against Microsoft Graph APIs and see responses and response headers.
 - Consent to permissions.
 - Add a request body and request header to your query.
-- See and copy the access token.
-- See sample queries for different services in Microsoft Graph.
-- See, download, or delete the queries you ran in the last 30 days.
-- See and copy code snippets of each query you run on the tool in C#, Java, JavaScript, and Objective C.
+- View and copy the access token.
+- View sample queries for different services in Microsoft Graph.
+- View, download, or delete the queries you ran in the last 30 days.
+- View and copy code snippets of each query you run in C#, Java, JavaScript, and Objective C.
 - Access Microsoft Graph Toolkit components and Adaptive cards for some sample queries.
 - Share queries, including the request body and request headers.
 
 Graph Explorer handles the authentication process for you. You can also customize the experience by collapsing the sidebar and changing the theme.
 
-## Getting started
+## Get started
 
-Graph Explorer is a web application hosted on this link: [https://developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer). It&#39;s an open source project whose code lives in this GitHub repo: [https://github.com/microsoftgraph/microsoft-graph-explorer-v4](https://github.com/microsoftgraph/microsoft-graph-explorer-v4) and we welcome your contributions and feedback.
+Graph Explorer is a web application hosted on the [Microsoft Graph developer center](https://developer.microsoft.com/en-us/graph/graph-explorer). It's an open source project,  and we welcome your contributions and feedback in the [GitHub repo](https://github.com/microsoftgraph/microsoft-graph-explorer-v4).
 
-![getting-started-on-graph-explorer](./images/getting-started.png)
+Graph Explorer includes the following elements, as shown in the following image:
 
 1. HTTP verb dropdown list
 2. API version dropdown list
@@ -37,10 +37,12 @@ Graph Explorer is a web application hosted on this link: [https://developer.micr
 4. Sample query
 5. Documentation link for the sample query
 
-### Making a GET request on Graph Explorer.
+![Screenshot of the Graph Explorer user interface](./images/getting-started.png)
 
->**NOTE :** <br>
-> To run a GET request on Graph Explorer you don’t have to be logged in, just click on a sample query and you’ll get sample data in the response preview. 
+### Make a GET request in Graph Explorer
+
+>[!NOTE]
+> To run a GET request in Graph Explorer, you don’t have to be signed in. Just click a sample query and sample data will show in the response preview. 
 
 ![making-a-get-request-in-graph-explorer](./images/making-a-get-request.png)
 
