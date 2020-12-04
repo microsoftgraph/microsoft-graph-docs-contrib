@@ -45,20 +45,22 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | externalId            | String                                        | The external ID. A custom ID. Optional.                                                                                                                                                                                                                     |
 | isEntryExitAnnounced  | Boolean                                       | Whether or not to announce when callers join or leave.                                                                                                                                                                                                      |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby.                                                                                                                                                                                                  |
-| allowedPresenters     | onlineMeetingPresenters                       | Specifies who can be a presenter in a meeting. Possible values are `everyone`, `organization`, `roleIsPresenter`, `organizer`, and `unknownFutureValue`.                                                                                                                                                                            |
+| allowedPresenters     | onlineMeetingPresenters                       | Specifies who can be a presenter in a meeting. Possible values are `everyone`, `organization`, `roleIsPresenter`, `organizer`, and `unknownFutureValue`.                                                                                                    |
+| isBroadcast           | Boolean                                       | Indicates if this is a broadcast meeting.                                                                                                                                                                                                                   |
+| broadcastSettings     | [broadcastSettings](broadcastSettings.md)     | Settings related to a broadcast meeting.                                                                                                                                                                                                                    |
 
 > [!IMPORTANT]
 > The **autoAdmittedUsers** property is obsolete. Use **lobbyBypassSettings.scope** instead for meeting option configurations.
 
 ### onlineMeetingPresenters values
 
-| Value              | Description                                                   |
-| ------------------ | ------------------------------------------------------------- |
-| everyone           | Everyone is a presenter (This is default option).             |
-| organization       | Everyone in organizer’s organization is a presenter.          |
-| roleIsPresenter    | Only the participants whose role is presenter are presenters. |
-| organizer          | Only the organizer  is a presenter.                           |
-| unknownFutureValue | Unknow future value.                                          |
+| Value              | Description                                                    |
+| ------------------ | -------------------------------------------------------------- |
+| everyone           | Everyone is a presenter (This is default option).              |
+| organization       | Everyone in organizer’s organization is a presenter.           |
+| roleIsPresenter    | Only the participants whose role is presenter are presenter s. |
+| organizer          | Only the organizer  is a presenter.                            |
+| unknownFutureValue | Unknown future value.                                          |
 
 **Note**: If the value of **allowedPresenters** is set to `roleIsPresenter`, please specify each meeting participant's meeting role using **role** property in [meetingParticipantInfo](../resources/meetingparticipantinfo.md).
 
@@ -86,7 +88,9 @@ Contains information about a meeting, including the URL used to join a meeting, 
   "videoTeleconferenceId": "String",
   "isEntryExitAnnounced": "Boolean",
   "lobbyBypassSettings": {"@odata.type": "#microsoft.graph.lobbyBypassSettings"},
-  "allowedPresenters": "String"
+  "allowedPresenters": "String",
+  "isBroadcast": "Boolean",
+  "broadcastSettings": {"@odata.type": "#microsoft.graph.broadcastSettings"}
 }
 ```
 
