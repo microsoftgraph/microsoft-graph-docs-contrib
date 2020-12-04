@@ -128,9 +128,9 @@ This control uses the following Microsoft Graph APIs and permissions.
 
 | Resource | Permission |
 | - | - |
-| [/me/todo/lists/](https://docs.microsoft.com/en-us/graph/api/todo-list-lists?view=graph-rest-1.0&tabs=http) | Tasks.ReadWrite |
-| [/me/todo/lists/{todoTaskListId}/tasks](https://docs.microsoft.com/en-us/graph/api/todotasklist-list-tasks?view=graph-rest-1.0&tabs=http) | Tasks.ReadWrite |
-| [/me/todo/lists/{todoTaskListId}/tasks/{taskId}](https://docs.microsoft.com/en-us/graph/api/todotask-get?view=graph-rest-1.0&tabs=http) | Tasks.ReadWrite |
+| [/me/todo/lists/](/graph/api/todo-list-lists) | Tasks.ReadWrite |
+| [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) | Tasks.ReadWrite |
+| [/me/todo/lists/{todoTaskListId}/tasks/{taskId}](/graph/api/todotask-get) | Tasks.ReadWrite |
 
 ## Authentication
 
