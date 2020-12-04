@@ -19,9 +19,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the following properties to [Terms of Use agreementfile](/graph/api/resources/agreementfile.md):<ul><li>isMajorVersion</li><li>createdDateTime</li></ul>|
-| Addition | beta | Added the following properties to [Terms of Use agreementfilelocalization](/graph/api/resources/agreementfilelocalization.md):<ul><li>isMajorVersion</li><li>createdDateTime</li></ul>|
-| Addition | beta | Added a new resource type to [Terms of Use agreement](/graph/api/resources/agreement.md):</br>[agreementFileVersion](/graph/api/resources/agreementfileversion.md)|
+| Addition | beta | Added the following properties to [Terms of Use agreementfile](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true):<ul><li>isMajorVersion</li><li>createdDateTime</li></ul>|
+| Addition | beta | Added the following properties to [Terms of Use agreementfilelocalization](/graph/api/resources/agreementfilelocalization?view=graph-rest-beta&preserve-view=true):<ul><li>isMajorVersion</li><li>createdDateTime</li></ul>|
+| Addition | beta | Added a new resource type to [Terms of Use agreement](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true):</br>[agreementFileVersion](/graph/api/resources/agreementfileversion?view=graph-rest-beta&preserve-view=true)|
 | Addition | beta | Added the **managerLevel** property to [requestorManager](/graph/api/resources/requestorManager?view=graph-rest-beta&preserve-view=true) resource. |
 
 ### Teamwork
