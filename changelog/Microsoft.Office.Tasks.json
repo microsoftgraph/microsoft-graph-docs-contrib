@@ -249,6 +249,14 @@
               "ChangeType": "Addition",
               "Description": "Added the **plannerContainerType** enumeration type",
               "Target": "plannerContainerType"
+            },
+            {
+              "Id": "a440f891-340e-11eb-9836-6aeb5ee7dda6",
+              "ApiChange": "Property",
+              "ChangedApiName": "owner",
+              "ChangeType": "Change",
+              "Description": "Deprecated the **owner** property on [plannerPlan](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource",
+              "Target": "plannerPlan"
             }
           ],
           "Id": "a432a5b2-340e-11eb-9836-6aeb5ee7dda6",
