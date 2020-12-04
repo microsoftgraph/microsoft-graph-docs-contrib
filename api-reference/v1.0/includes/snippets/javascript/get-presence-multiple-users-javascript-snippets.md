@@ -15,7 +15,7 @@ const presence = {
 };
 
 let res = await client.api('/communications/getPresencesByUserId')
-	.version('beta')
+	.version('v1.0')
 	.post(presence);
 
 ```

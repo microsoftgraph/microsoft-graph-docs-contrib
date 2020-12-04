@@ -1,7 +1,7 @@
 ---
 title: "cloudCommunications: getPresencesByUserId"
 description: "Get the presence information for multiple users."
-author: "ananmishr"
+author: "elvinyang-msft"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "cloud-communications"
@@ -10,8 +10,6 @@ ms.prod: "cloud-communications"
 # cloudCommunications: getPresencesByUserId
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the [presence](../resources/presence.md) information for multiple users.
 
@@ -67,7 +65,7 @@ The following example shows a request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/communications/getPresencesByUserId
+POST https://graph.microsoft.com/v1.0/communications/getPresencesByUserId
 Content-Type: application/json
 
 {

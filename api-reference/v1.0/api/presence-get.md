@@ -1,7 +1,7 @@
 ---
 title: "Get presence"
 description: "Get a user's presence information."
-author: "ananmishr"
+author: "elvinyang-msft"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "cloud-communications"
@@ -10,8 +10,6 @@ ms.prod: "cloud-communications"
 # Get presence
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a user's [presence](../resources/presence.md) information.
 
@@ -63,7 +61,7 @@ The following example shows how to get your own presence information. This opera
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/presence
+GET https://graph.microsoft.com/v1.0/me/presence
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-your-presence-csharp-snippets.md)]
@@ -116,7 +114,7 @@ The following example shows how to get the presence information for another user
   "name": "get-user-presence"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/66825e03-7ef5-42da-9069-724602c31f6b/presence
+GET https://graph.microsoft.com/v1.0/users/66825e03-7ef5-42da-9069-724602c31f6b/presence
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-presence-csharp-snippets.md)]
@@ -172,7 +170,7 @@ The following example shows how to get the presence information for another user
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d-8eaa-e39d80d3a647
+GET https://graph.microsoft.com/v1.0/communications/presences/dc74d9bb-6afe-433d-8eaa-e39d80d3a647
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-presences-csharp-snippets.md)]
