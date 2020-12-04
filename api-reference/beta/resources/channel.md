@@ -27,7 +27,6 @@ where files are shared, and where tabs are added.
 |[Delete channel](../api/channel-delete.md) | None | Delete a channel.|
 |[Get message delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental messages in a channel. |
 |[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a channel |
-|[Complete migration](../api/channel-completemigration.md)|[channel](channel.md)| Removes thee migration mode from the channel and makes the channel available to users to post and read messages.|
 |[Get all channel messages](../api/channels-getallmessages.md)|[channel](channel.md) collection | Get all messages from all channels that a user is a participant in. |
 |[Create channel message post](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | Send a message to a channel. |
 |[Create reply to channel message post](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Reply to a message in a channel.|
@@ -36,6 +35,7 @@ where files are shared, and where tabs are added.
 |[List channel members](../api/channel-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of members in a channel.|
 |[Get channel member](../api/channel-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in a channel.|
 |[Add channel member](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Add a member to a channel. Only supported for `channel`with membershipType of `private`.|
+|[Complete migration](../api/channel-completemigration.md)|[channel](channel.md)| Removes thee migration mode from the channel and makes the channel available to users to post and read messages.|
 |[Update channel member's role](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Update the properties of a member of the channel. Only supported for channel with membershipType of `private`.|
 |[Remove channel member](../api/channel-delete-members.md) | None | Delete a member from a channel. Only supported for `channelType` of `private`.|
 
