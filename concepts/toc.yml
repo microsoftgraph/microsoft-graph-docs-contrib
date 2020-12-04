@@ -603,7 +603,7 @@ items:
                 href: toolkit/components/agenda.md
               - name: Tasks
                 href: toolkit/components/tasks.md
-              - name: To do
+              - name: To Do
                 href: toolkit/components/todo.md
           - name: Customize components
             items:
