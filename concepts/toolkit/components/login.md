@@ -63,7 +63,7 @@ mgt-login {
 }
 ```
 
-To learn more, see [styling components](../style.md).
+To learn more, see [styling components](../customize-components/style.md).
 
 ## Events
 
@@ -79,7 +79,7 @@ The following events are fired from the control.
 
 ## Templates
 
-The `mgt-login` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the values listed in the following table. 
+The `mgt-login` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the values listed in the following table. 
 
 | Data type | Data context | Description |
 | --- | --- | --- |
@@ -94,7 +94,7 @@ This component uses the [Person component](./person.md) to display the user and 
 
 ## Authentication
 
-The login control uses the global authentication provider described in the [authentication documentation](./../providers.md). 
+The login control uses the global authentication provider described in the [authentication documentation](../providers/providers.md). 
 
 ## Extend for more control
 

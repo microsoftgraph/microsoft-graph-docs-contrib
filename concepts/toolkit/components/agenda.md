@@ -82,11 +82,11 @@ mgt-agenda {
 }
 ```
 
-To learn more, see [styling components](../style.md).
+To learn more, see [styling components](../customize-components/style.md).
 
 ## Templates
 
-The `mgt-agenda` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following:
+The `mgt-agenda` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following:
 
 | Data type | Data context | Description |
 | --- | --- | --- |
@@ -118,7 +118,7 @@ The following examples illustrates how to use the `event` template:
 </mgt-agenda>
 ```
 
-To learn more, see [templates](../templates.md).
+To learn more, see [templates](../customize-components/templates.md).
 
 ## Events
 
@@ -134,7 +134,7 @@ This component uses the following Microsoft Graph APIs and permissions:
 
 | Resource | Permission |
 | - | - |
-| [/me/calendarview](/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | Calendars.Read |
+| [/me/calendarview](/graph/api/calendar-list-calendarview) | Calendars.Read |
 
 The component allows you to specify a different Microsoft Graph query to call (such as `/groups/{id}/calendar/calendarView`). In this case, append the permission to the end of the string, delimited by `|`.
 
@@ -142,13 +142,13 @@ When using the default template and default `renderAttendees` template, addition
 
 | Resource | Permission |
 | - | - |
-| [/users](/graph/api/user-list?view=graph-rest-1.0) | Users.ReadBasic.All |
-| [/me/calendarview](/graph/api/user-list-people?view=graph-rest-1.0) | People.Read |
-| [/me/calendarview](/graph/api/user-list-contacts?view=graph-rest-1.0) | Contacts.Read |
+| [/users](/graph/api/user-list) | Users.ReadBasic.All |
+| [/me/calendarview](/graph/api/user-list-people) | People.Read |
+| [/me/calendarview](/graph/api/user-list-contacts) | Contacts.Read |
 
 ## Authentication
 
-The login control leverages the global authentication provider described in the [authentication documentation](./../providers.md).
+The login control leverages the global authentication provider described in the [authentication documentation](../providers/providers.md).
 
 ## Extend for more control
 
