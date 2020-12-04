@@ -1,6 +1,6 @@
 ---
 title: "plannerTeamsPublicationInfo resource type"
-description: "**TODO: Add Description**"
+description: "The **plannerTeamsPublicationInfo** resource contains detailed information about the publication process which created a plannerTask."
 author: "TarkanSevilmis"
 localization_priority: Normal
 ms.prod: "planner"

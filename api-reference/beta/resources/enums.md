@@ -1529,3 +1529,10 @@ Possible values for user account types (group membership), per Windows definitio
 |provisionFailed|
 |deprovisionFailed|
 |reprovisionFailed|
+
+### plannerContainerType values 
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
