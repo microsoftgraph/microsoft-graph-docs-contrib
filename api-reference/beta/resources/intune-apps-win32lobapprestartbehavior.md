@@ -28,5 +28,3 @@ Indicates the type of restart action.
 
 
 
-
-

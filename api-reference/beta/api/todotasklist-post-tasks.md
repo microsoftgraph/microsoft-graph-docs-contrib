@@ -84,12 +84,14 @@ Content-Type: application/json
 Content-length: 608
 
 {
-  "title":"A new task",
-  "linkedResources": [{
-			"webUrl": "http://microsoft.com",
-			"applicationName": "Microsoft",
-			"displayName": "Microsoft"
-		}]
+   "title":"A new task",
+   "linkedResources":[
+      {
+         "webUrl":"http://microsoft.com",
+         "applicationName":"Microsoft",
+         "displayName":"Microsoft"
+      }
+   ]
 }
 ```
 # [JavaScript](#tab/javascript)
@@ -102,6 +104,10 @@ Content-length: 608
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-todotask-from-tasks-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-todotask-from-tasks-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -121,24 +127,26 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.etag": "W/\"xzyPKP0BiUGgld+lMKXwbQAAnBoTIw==\"",
-    "importance": "low",
-    "isReminderOn": false,
-    "status": "notStarted",
-    "title": "A new task",
-    "createdDateTime": "2020-08-18T09:03:05.8339192Z",
-    "lastModifiedDateTime": "2020-08-18T09:03:06.0827766Z",
-    "id": "AlMKXwbQAAAJws6wcAAAA=",
-    "body": {
-        "content": "",
-        "contentType": "text"
-    },
-    "linkedResources": [{
-      "id": "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9",
-			"webUrl": "http://microsoft.com",
-			"applicationName": "Microsoft",
-			"displayName": "Microsoft"
-		}]
+   "@odata.etag":"W/\"xzyPKP0BiUGgld+lMKXwbQAAnBoTIw==\"",
+   "importance":"low",
+   "isReminderOn":false,
+   "status":"notStarted",
+   "title":"A new task",
+   "createdDateTime":"2020-08-18T09:03:05.8339192Z",
+   "lastModifiedDateTime":"2020-08-18T09:03:06.0827766Z",
+   "id":"AlMKXwbQAAAJws6wcAAAA=",
+   "body":{
+      "content":"",
+      "contentType":"text"
+   },
+   "linkedResources":[
+      {
+         "id":"f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9",
+         "webUrl":"http://microsoft.com",
+         "applicationName":"Microsoft",
+         "displayName":"Microsoft"
+      }
+   ]
 }
 ```
 

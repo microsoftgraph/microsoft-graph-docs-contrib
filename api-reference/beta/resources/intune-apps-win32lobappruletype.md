@@ -26,5 +26,3 @@ Contains rule types for Win32 LOB apps.
 
 
 
-
-

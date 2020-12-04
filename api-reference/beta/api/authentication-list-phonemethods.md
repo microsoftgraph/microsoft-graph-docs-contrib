@@ -38,7 +38,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 
 ```http
 GET /me/authentication/phoneMethods
-GET /users/{id}/authentication/phoneMethods
+GET /users/{id | userPrincipalName}/authentication/phoneMethods
 ```
 
 ## Optional query parameters
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/me/authentication/phoneMethods
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-phonemethods-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-phonemethods-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

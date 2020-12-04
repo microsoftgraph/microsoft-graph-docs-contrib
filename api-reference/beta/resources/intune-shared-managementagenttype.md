@@ -37,5 +37,3 @@ Management agent type.
 
 
 
-
-

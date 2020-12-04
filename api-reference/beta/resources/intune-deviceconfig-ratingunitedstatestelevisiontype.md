@@ -32,5 +32,3 @@ TV content rating labels in United States
 
 
 
-
-

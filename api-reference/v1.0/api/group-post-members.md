@@ -47,7 +47,7 @@ In the request body, supply a JSON representation of a [directoryObject](../reso
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body. This method returns a `400 Bad Request` response code when the object is already a member of the group. This method returns a `404 Not Found` response code when the object being added doesn't exist.
 
 ## Examples
 
@@ -108,7 +108,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Add multiple members to a group in a single request
 
-This example shows how to add multiple members to a group with OData bind support in a PATCH operation. Note that up to 20 members can be added in a single request. The POST operation is not supported.
+This example shows how to add multiple members to a group with OData bind support in a PATCH operation. Note that up to 20 members can be added in a single request. The POST operation is not supported. If an error condition exists in the request body, no members are added and the appropriate response code is returned.
 
 #### Request
 

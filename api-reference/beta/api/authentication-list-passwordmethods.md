@@ -37,7 +37,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 
 ```http
 GET /me/authentication/passwordMethods
-GET /users/{id}/authentication/passwordMethods
+GET /users/{id | userPrincipalName}/authentication/passwordMethods
 ```
 
 ## Optional query parameters
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/me/authentication/passwordMethods
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-passwordmethods-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-passwordmethods-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

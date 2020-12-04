@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents an abstract base type for policy types that control [Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/) behavior.
+Represents an abstract base type for policy types that control [Microsoft identity platform](/azure/active-directory/develop/) behavior.
 
 Inherits from [policyBase](policyBase.md).
 
@@ -66,4 +66,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

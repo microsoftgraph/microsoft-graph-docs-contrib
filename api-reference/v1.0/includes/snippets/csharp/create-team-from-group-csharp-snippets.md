@@ -10,7 +10,7 @@ var team = new Team
 {
 	AdditionalData = new Dictionary<string, object>()
 	{
-		{"template@odata.bind", "https://graph.microsoft.com/beta/teamsTemplates('standard')"},
+		{"template@odata.bind", "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"},
 		{"group@odata.bind", "https://graph.microsoft.com/v1.0/groups('groupId')"}
 	}
 };

@@ -72,6 +72,8 @@ The following table shows the properties that are required when you create the m
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Type of password that is required. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordRequired|Boolean|Whether or not to require a password.|
+|passwordMaximumAttemptCount|Int32|The number of allowed failed attempts to enter the passcode at the device's lock screen. Valid values 2 to 11|
+|passwordMinutesUntilFailedLoginReset|Int32|The number of minutes before the login is reset after the maximum number of unsuccessful login attempts is reached.|
 |keychainBlockCloudSync|Boolean|Indicates whether or not iCloud keychain synchronization is blocked (macOS 10.12 and later).|
 |airPrintBlocked|Boolean|Indicates whether or not AirPrint is blocked (macOS 10.12 and later).|
 |airPrintForceTrustedTLS|Boolean|Indicates if trusted certificates are required for TLS printing communication (macOS 10.13 and later).|
@@ -98,7 +100,6 @@ The following table shows the properties that are required when you create the m
 |passwordBlockProximityRequests|Boolean|Indicates whether or not to block requesting passwords from nearby devices.|
 |passwordBlockAirDropSharing|Boolean|Indicates whether or not to block sharing passwords with the AirDrop passwords feature.|
 |softwareUpdatesEnforcedDelayInDays|Int32|Sets how many days a software update will be delyed for a supervised device. Valid values 0 to 90|
-|softwareUpdatesForceDelayed|Boolean|Indicates whether or not to delay user visibility of software updates when the device is in supervised mode.|
 |updateDelayPolicy|[macOSSoftwareUpdateDelayPolicy](../resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md)|Determines whether to delay OS and/or app updates for macOS. Possible values are: `none`, `delayOSUpdateVisibility`, `delayAppUpdateVisibility`.|
 |contentCachingBlocked|Boolean|Indicates whether or not to allow content caching.|
 |iCloudBlockPhotoLibrary|Boolean|Indicates whether or not to block iCloud Photo Library.|
@@ -123,7 +124,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 4596
+Content-length: 4640
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -177,6 +178,8 @@ Content-length: 4596
   "passwordPreviousPasswordBlockCount": 2,
   "passwordRequiredType": "alphanumeric",
   "passwordRequired": true,
+  "passwordMaximumAttemptCount": 11,
+  "passwordMinutesUntilFailedLoginReset": 4,
   "keychainBlockCloudSync": true,
   "airPrintBlocked": true,
   "airPrintForceTrustedTLS": true,
@@ -203,7 +206,6 @@ Content-length: 4596
   "passwordBlockProximityRequests": true,
   "passwordBlockAirDropSharing": true,
   "softwareUpdatesEnforcedDelayInDays": 2,
-  "softwareUpdatesForceDelayed": true,
   "updateDelayPolicy": "delayOSUpdateVisibility",
   "contentCachingBlocked": true,
   "iCloudBlockPhotoLibrary": true,
@@ -261,7 +263,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4768
+Content-Length: 4812
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -318,6 +320,8 @@ Content-Length: 4768
   "passwordPreviousPasswordBlockCount": 2,
   "passwordRequiredType": "alphanumeric",
   "passwordRequired": true,
+  "passwordMaximumAttemptCount": 11,
+  "passwordMinutesUntilFailedLoginReset": 4,
   "keychainBlockCloudSync": true,
   "airPrintBlocked": true,
   "airPrintForceTrustedTLS": true,
@@ -344,7 +348,6 @@ Content-Length: 4768
   "passwordBlockProximityRequests": true,
   "passwordBlockAirDropSharing": true,
   "softwareUpdatesEnforcedDelayInDays": 2,
-  "softwareUpdatesForceDelayed": true,
   "updateDelayPolicy": "delayOSUpdateVisibility",
   "contentCachingBlocked": true,
   "iCloudBlockPhotoLibrary": true,
@@ -396,8 +399,6 @@ Content-Length: 4768
   ]
 }
 ```
-
-
 
 
 

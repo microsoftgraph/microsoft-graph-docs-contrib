@@ -54,7 +54,8 @@ In the request body, supply the values for relevant fields that should be update
 |defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultUserRolePermissions.md)| Specifies certain customizable permissions for default user role. | 
 |allowedToUseSSPR|Boolean| Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant. | 
 |allowedToSignUpEmailBasedSubscriptions|Boolean| Indicates whether users can sign up for email based subscriptions. | 
-|allowEmailVerifiedUsersToJoinOrganization|Boolean| Indicates whether a user can join the tenant by email validation. | 
+|allowEmailVerifiedUsersToJoinOrganization|Boolean| Indicates whether a user can join the tenant by email validation. |
+| permissionGrantPolicyIdsAssignedToDefaultUserRole | String collection | Indicates whether user consent to apps is allowed, and if it is, which [app consent policy](/azure/active-directory/manage-apps/manage-app-consent-policies) governs the permission for users to grant consent. Values should be in the format `managePermissionGrantsForSelf.{id}`, where `{id}` is the **id** of a built-in or custom [app consent policy](/azure/active-directory/manage-apps/manage-app-consent-policies). An empty list indicates user consent to apps is disabled. |
 
 ## Response
 
@@ -77,10 +78,10 @@ The following is an example of the request. In this example, guest access level 
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-  "guestUserRole": "2af84b1e-32c8-42b7-82bc-daa82404023b"
+   "guestUserRole":"2af84b1e-32c8-42b7-82bc-daa82404023b"
 }
-
 ```
+
 #### Response
 
 The following is an example of the response.
@@ -88,12 +89,11 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+  "@odata.type": "microsoft.graph.authorizationPolicy"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
-
 ```
 
 ### Example 2: Enable new feature for preview on tenant
@@ -113,9 +113,10 @@ The following is an example of the request.
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-  "enabledPreviewFeatures": ["assignGroupsToRoles"]
+   "enabledPreviewFeatures":[
+      "assignGroupsToRoles"
+   ]
 }
-
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-preview-csharp-snippets.md)]
@@ -129,6 +130,10 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 [!INCLUDE [sample-code](../includes/snippets/objc/update-authzpolicy-preview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-preview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -138,20 +143,18 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+  "@odata.type": "microsoft.graph.authorizationPolicy"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-
 ### Example 3: Block MSOL PowerShell in tenant
 
 #### Request
 
 The following is an example of the request.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -163,9 +166,8 @@ The following is an example of the request.
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-  "blockMsolPowerShell": true
+   "blockMsolPowerShell":true
 }
-
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-blockmsolpowershell-csharp-snippets.md)]
@@ -179,6 +181,10 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 [!INCLUDE [sample-code](../includes/snippets/objc/update-authzpolicy-blockmsolpowershell-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-blockmsolpowershell-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -188,12 +194,13 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+  "@odata.type": "microsoft.graph.authorizationPolicy"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
+
 ### Example 4: Disable default user role's permission to create applications
 
 #### Request
@@ -211,12 +218,10 @@ The following is an example of the request.
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-    "defaultUserRolePermissions":
-    {
-      "allowedToCreateApps": false
-    }
+   "defaultUserRolePermissions":{
+      "allowedToCreateApps":false
+   }
 }
-
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-applications-csharp-snippets.md)]
@@ -230,6 +235,10 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 [!INCLUDE [sample-code](../includes/snippets/objc/update-authzpolicy-applications-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-applications-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -239,7 +248,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+  "@odata.type": "microsoft.graph.authorizationPolicy"
 } -->
 
 ```http
@@ -263,9 +272,8 @@ The following is an example of the request.
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-    "allowedToUseSSPR": true
+   "allowedToUseSSPR":true
 }
-
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-sspr-csharp-snippets.md)]
@@ -279,6 +287,10 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 [!INCLUDE [sample-code](../includes/snippets/objc/update-authzpolicy-sspr-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-sspr-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -288,7 +300,117 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+  "@odata.type": "microsoft.graph.authorizationPolicy"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 6: Disable user consent to apps for default user role
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_authZPolicy_disableUserConsent"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+
+{
+   "permissionGrantPolicyIdsAssignedToDefaultUserRole":[
+   
+   ]
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-disableuserconsent-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authzpolicy-disableuserconsent-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-authzpolicy-disableuserconsent-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-disableuserconsent-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authorizationPolicy"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 7: Enable user consent to apps, subject to app consent policy 
+
+#### Request
+
+The following is an example of the request that allows user consent to apps, subject to the built-in [app consent policy](/azure/active-directory/manage-apps/manage-app-consent-policies) `microsoft-user-default-low`, which allows delegated permissions classified "low", for client apps from verified publishers or registered in the same tenant.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_authZPolicy_enableUserConsentLow"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+
+{
+   "permissionGrantPolicyIdsAssignedToDefaultUserRole":[
+      "managePermissionGrantsForSelf.microsoft-user-default-low"
+   ]
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-enableuserconsentlow-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authzpolicy-enableuserconsentlow-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-authzpolicy-enableuserconsentlow-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-enableuserconsentlow-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authorizationpolicy"
 } -->
 
 ```http
