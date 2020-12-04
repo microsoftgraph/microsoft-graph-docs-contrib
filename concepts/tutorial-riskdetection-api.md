@@ -416,7 +416,7 @@ After dismissing the risk user, you can see in the response when listing risky u
 #### Request
 
 ```http
-GET https://graph.microsoft.com/beta/riskyUsers?$filter=userDisplayName eq 'MyTestUser1'
+GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers?$filter=userDisplayName eq 'MyTestUser1'
 ```
 
 #### Response
