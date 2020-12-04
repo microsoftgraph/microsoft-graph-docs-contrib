@@ -24,7 +24,7 @@ One of the following permissions is required to call these APIs. To learn more, 
 | Delegated (personal Microsoft account) | Not Supported.                        |
 | Application                            | Not Supported.                        |
 
-> **Note:** the request rate of this API is limited to 1500 API requests per 30 seconds per app/tenant.
+> **Note:** The maximum request rate for this API is 1500 API requests in a 30 second period, per application per tenant.
 
 ## HTTP Requests
 <!-- { "blockType": "ignored" } -->
