@@ -4,15 +4,32 @@ description: "This changelog covers what's changed in Microsoft Graph, including
 author: "MSGraphDocsVteam"
 localization_priority: Priority
 ---
-
 # Changelog for Microsoft Graph
 
 This changelog covers specific API-level changes in Microsoft Graph v1.0 and beta.
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
-## November 2020
+## December 2020
 
+### Identity and access
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the following properties to [Terms of Use agreementfile](/graph/api/resources/agreementfile.md):<ul><li>isMajorVersion</li><li>createdDateTime</li></ul>|
+| Addition | beta | Added the following properties to [Terms of Use agreementfilelocalization](/graph/api/resources/agreementfilelocalization.md):<ul><li>isMajorVersion</li><li>createdDateTime</li></ul>|
+| Addition | beta | Added a new resource type to [Terms of Use agreement](/graph/api/resources/agreement.md):</br>[agreementFileVersion](/graph/api/resources/agreementfileversion.md)|
+
+### Teamwork
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | v1.0 | Added [Get the installed app in team](/graph/api/team-get-installedapps?view=graph-rest-v1.0&preserve-view=true), [List apps for user](/graph/api/userteamwork-list-installedapps?view=graph-rest-v1.0&preserve-view=true), [Get installed app for user](/graph/api/userteamwork-get-installedapps?view=graph-rest-v1.0&preserve-view=true), [Add app for user](/graph/api/userteamwork-add-installedapps?view=graph-rest-v1.0&preserve-view=true), [Remove app for user](/graph/api/userteamwork-delete-installedapps?view=graph-rest-v1.0&preserve-view=true), and [Upgrade installed app for user](/graph/api/userteamwork-upgrade-installedapps?view=graph-rest-v1.0&preserve-view=true) methods to the [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-v1.0&preserve-view=true) resource. |
+| Addition | v1.0 | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-v1.0&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-v1.0&preserve-view=true) resource. |
+| Addition | beta | Added [Get the installed app in team](/graph/api/team-get-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed app for user](/graph/api/userteamwork-get-installedapps?view=graph-rest-beta&preserve-view=true)|
+| Addition | beta | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-beta&preserve-view=true) resource. |
+
+
+## November 2020
 
 ### Change notifications
 
@@ -25,6 +42,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added the **role** property to the [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo?view=graph-rest-1.0&preserve-view=true) complex type.|
 | Addition | v1.0 | Added the **lobbyBypassSettings**, **isEntryExitAnnounced**, and **allowedPresenters** property to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-1.0&preserve-view=true) entity to support meeting option configuration.|
+| Addition | beta | Added the **platformId** property to the [participantInfo](/graph/api/resources/participantInfo?view=graph-rest-beta&preserve-view=true) resource. |
 |Addition|v1.0|Added the [presence](/graph/api/resources/presence?view=graph-rest-1.0&preserve-view=true) resource type|
 
 ### Devices and apps | Cloud PC
@@ -83,15 +101,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **spa** property to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added the [organizationalBrandingProperties](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true) resource type and associated methods, which allow for the customization of the visual look and feel of sign-in screens.|
 
-
-### Identity and access | Governance
+### Identity and access | Governance
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition|beta|Added resource types [accessReviewApplyAction](/graph/api/resources/accessreviewapplyaction?view=graph-rest-beta&preserve-view=true), [accessReviewInstance](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true), [accessReviewInstanceDecisionItem](/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta&preserve-view=true), [accessReviewInstanceDecisionItemServicePrincipalTarget](/graph/api/resources/accessreviewinstancedecisionitemserviceprincipaltarget?view=graph-rest-beta&preserve-view=true), [accessReviewInstanceDecisionItemTarget](/graph/api/resources/accessreviewinstancedecisionitemtarget?view=graph-rest-beta&preserve-view=true), [accessReviewInstanceDecisionItemUserTarget](/graph/api/resources/accessreviewinstancedecisionitemusertarget?view=graph-rest-beta&preserve-view=true), [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true), [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true), [accessReviewScheduleSettings](/graph/api/resources/accessreviewschedulesettings?view=graph-rest-beta&preserve-view=true), [accessReviewScope](/graph/api/resources/accessreviewscope?view=graph-rest-beta&preserve-view=true) and [access reviews root](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true).|
-|Addition|beta|Added [acceptRecommendations](/graph/api/accessreviewinstance-acceptrecommendations?view=graph-rest-beta&preserve-view=true), [applyDecisions](/graph/api/accessreviewinstance-applydecisions?view=graph-rest-beta&preserve-view=true), [get](/graph/api/accessreviewinstance-get?view=graph-rest-beta&preserve-view=true), [list](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true), [list pendingAccessReviewInstances](/graph/api/accessreviewinstance-pendingaccessreviewinstances?view=graph-rest-beta&preserve-view=true), [sendReminder](/graph/api/accessreviewinstance-sendreminder?view=graph-rest-beta&preserve-view=true), [stop](/graph/api/accessreviewinstance-stop?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewInstance](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true) resource.|
-|Addition|beta|Added [list](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true), [listPendingApproval](/graph/api/accessreviewinstancedecisionitem-listpendingapproval?view=graph-rest-beta&preserve-view=true), [update](/graph/api/accessreviewinstancedecisionitem-update?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewInstanceDecisionItem](/graph/api/resources/accessreviewinstancedecisionitem.md) resource.|
-|Addition|beta|Added [create](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true), [delete](/graph/api/accessreviewscheduledefinition-delete?view=graph-rest-beta&preserve-view=true), [get](/graph/api/accessreviewscheduledefinition-get?view=graph-rest-beta&preserve-view=true), [list](/graph/api/accessreviewscheduledefinition-list?view=graph-rest-beta&preserve-view=true), [update](/graph/api/accessreviewscheduledefinition-update?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) resource.|
+|Addition|beta|Added resource types [accessReviewApplyAction](/graph/api/resources/accessreviewapplyaction?view=graph-rest-beta&preserve-view=true), [accessReviewInstance](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true), [accessReviewInstanceDecisionItem](/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta&preserve-view=true), [accessReviewInstanceDecisionItemServicePrincipalTarget](/graph/api/resources/accessreviewinstancedecisionitemserviceprincipaltarget?view=graph-rest-beta&preserve-view=true), [accessReviewInstanceDecisionItemTarget](/graph/api/resources/accessreviewinstancedecisionitemtarget?view=graph-rest-beta&preserve-view=true), [accessReviewInstanceDecisionItemUserTarget](/graph/api/resources/accessreviewinstancedecisionitemusertarget?view=graph-rest-beta&preserve-view=true), [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true), [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true), [accessReviewScheduleSettings](/graph/api/resources/accessreviewschedulesettings?view=graph-rest-beta&preserve-view=true), [accessReviewScope](/graph/api/resources/accessreviewscope?view=graph-rest-beta&preserve-view=true) and [access reviews root](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true).|
+|Addition|beta|Added [acceptRecommendations](/graph/api/accessreviewinstance-acceptrecommendations?view=graph-rest-beta&preserve-view=true), [applyDecisions](/graph/api/accessreviewinstance-applydecisions?view=graph-rest-beta&preserve-view=true), [get](/graph/api/accessreviewinstance-get?view=graph-rest-beta&preserve-view=true), [list](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true), [list pendingAccessReviewInstances](/graph/api/accessreviewinstance-pendingaccessreviewinstances?view=graph-rest-beta&preserve-view=true), [sendReminder](/graph/api/accessreviewinstance-sendreminder?view=graph-rest-beta&preserve-view=true), [stop](/graph/api/accessreviewinstance-stop?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewInstance](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true) resource.|
+|Addition|beta|Added [list](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true), [listPendingApproval](/graph/api/accessreviewinstancedecisionitem-listpendingapproval?view=graph-rest-beta&preserve-view=true), [update](/graph/api/accessreviewinstancedecisionitem-update?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewInstanceDecisionItem](/graph/api/resources/accessreviewinstancedecisionitem.md) resource.|
+|Addition|beta|Added [create](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true), [delete](/graph/api/accessreviewscheduledefinition-delete?view=graph-rest-beta&preserve-view=true), [get](/graph/api/accessreviewscheduledefinition-get?view=graph-rest-beta&preserve-view=true), [list](/graph/api/accessreviewscheduledefinition-list?view=graph-rest-beta&preserve-view=true), [update](/graph/api/accessreviewscheduledefinition-update?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) resource.|
 
 ### Search
 
@@ -107,8 +124,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added support for [resource-specific consent](https://aka.ms/teams-rsc) (RSC) permissions to v1.0 APIs. |
 | Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-v1.0&preserve-view=true). |
-| Addition | Beta | Added the following methods to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource: [List members in channel](/graph/api/channel-list-members?view=graph-rest-beta&preserve-view=true), [Get member of channel](/graph/api/channel-get-members?view=graph-rest-beta&preserve-view=true), [Add member to channel](/graph/api/channel-add-members?view=graph-rest-beta&preserve-view=true),  [Update role of member in channel](/graph/api/channel-update-members?view=graph-rest-beta&preserve-view=true), [Delete member from channel](/graph/api/channel-delete-members?view=graph-rest-beta&preserve-view=true).|
-| Addition | v1.0 | Added the following methods to the [channel](/graph/api/resources/channel?view=graph-rest-v1.0&preserve-view=true) resource: [List members of channel](/graph/api/channel-list-members?view=graph-rest-v1.0&preserve-view=true), [Get member of channel](/graph/api/channel-get-members?view=graph-rest-v1.0&preserve-view=true) [Add member to channel](/graph/api/channel-add-members?view=graph-rest-v1.0&preserve-view=true),  [Update role of member in channel](/graph/api/channel-update-members?view=graph-rest-v1.0&preserve-view=true), [Delete member from channel](/graph/api/channel-delete-members?view=graph-rest-v1.0&preserve-view=true).|
+| Addition | Beta | Added the following methods to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource: [List channel members](/graph/api/channel-list-members?view=graph-rest-beta&preserve-view=true), [Get channel member](/graph/api/channel-get-members?view=graph-rest-beta&preserve-view=true), [Add channel member](/graph/api/channel-post-members?view=graph-rest-beta&preserve-view=true),  [Update channel member's role](/graph/api/channel-update-members?view=graph-rest-beta&preserve-view=true), [Remove channel member](/graph/api/channel-delete-members?view=graph-rest-beta&preserve-view=true).|
+| Addition | v1.0 | Added the following methods to the [channel](/graph/api/resources/channel?view=graph-rest-v1.0&preserve-view=true) resource: [List channel members](/graph/api/channel-list-members?view=graph-rest-v1.0&preserve-view=true), [Get channel member](/graph/api/channel-get-members?view=graph-rest-v1.0&preserve-view=true), [Add channel member](/graph/api/channel-post-members?view=graph-rest-v1.0&preserve-view=true),  [Update channel member's role](/graph/api/channel-update-members?view=graph-rest-v1.0&preserve-view=true), [Remove channel member](/graph/api/channel-delete-members?view=graph-rest-v1.0&preserve-view=true).|
 
 
 ## October 2020
@@ -5592,4 +5609,3 @@ Added support for dynamic group membership through the public preview API, inclu
 | Fix             | v1.0 and beta | Fixed being able to select certain user properties on other users, when referencing the user by user principal name (UPN). For example: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
 | Fix             | v1.0 and beta | Fixed calling the _microsoft.graph.reminderView_ user bound function, which was failing with the following error: Could not find a property named businessPhones on type  Microsoft.OutlookServices.Reminder. |
 | Fix             | v1.0 and beta | Fixed user creation and update (POST/PATCH /v1.0/users), which was failing with a 400 error. |
-
