@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # Tutorial: Identify and remediate risks using Microsoft Graph APIs
 
-Azure AD Identity Protection provides organizations insight into identity-based risk and different ways to investigate and automatically remediate risk. The Identity Protection APIs used in this tutorial can help you identify risk and configure a workflow to confirm compromise or enable remediation.For more information, see [What is risk?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
+Azure AD Identity Protection provides organizations insight into identity-based risk and different ways to investigate and automatically remediate risk. The Identity Protection APIs used in this tutorial can help you identify risk and configure a workflow to confirm compromise or enable remediation. For more information, see [What is risk?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
 
 In this tutorial, you learn how to generate a risky user and remediate the risky status of the user with a conditional access policy that requires multi-factor authentication (MFA). An optional section shows you how to block the user from signing in also using a conditional access policy, and dismissing the user risk.
 
@@ -41,7 +41,7 @@ To successfully complete this tutorial, make sure that you have the required pre
 
 ## Step 1: Create a user account
 
-For this tutorial, you create a user account that is used to test risk detections. In the request body, change `contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Azure Active Directory overview page.
+For this tutorial, you create a user account that is used to test risk detections. In the request body, change `contoso.com` to the domain name of your tenant. You can find tenant information on the Azure Active Directory overview page.
 
 ### Request
 
@@ -53,7 +53,7 @@ Content-type: application/json
   "accountEnabled":true,
   "displayName":"MyTestUser1",
   "mailNickname":"MyTestUser1",
-  "userPrincipalName":"MyTestUser1@contoso.onmicrosoft.com",
+  "userPrincipalName":"MyTestUser1@contoso.com",
   "passwordProfile": {
     "forceChangePasswordNextSignIn":true,
     "password":"Contoso1234"
@@ -76,7 +76,7 @@ Content-type: application/json
   "officeLocation": null,
   "preferredLanguage": null,
   "surname": null,
-  "userPrincipalName": "MyTestUser1@contoso.onmicrosoft.com"
+  "userPrincipalName": "MyTestUser1@contoso.com"
 }
 ```
 
@@ -124,7 +124,7 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=u
       "lastUpdatedDateTime": "2020-11-03T20:53:12.1984203Z",
       "userId": "4628e7df-dff3-407c-a08f-75f08c0806dc",
       "userDisplayName": "MyTestUser1",
-      "userPrincipalName": "MyTestUser1@contoso.onmicrosoft.com",
+      "userPrincipalName": "MyTestUser1@contoso.com",
       "additionalInfo": "[{\"Key\":\"userAgent\",\"Value\":\"Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0\"}]",
       "location": {
         "city": "Chisinau",
@@ -250,12 +250,12 @@ By signing in to the anonymous browser, a risk is detected, but it is remediated
 
 ### List risk detections
 
-When you signed in to the Azure portal using the anonymous browser, an `anonymizedIPAddress` risk event was detected. You can use the `$filter` query parameter to get only the risk detections that are associated with the **MyTestUser1** user account. Because MFA was completed, the **riskState** shows the event as `remediated`.
+Because MFA was completed. Now, when you list risk detections the **riskState** shows the event as `remediated`.
 
 #### Request
 
 ``` http
-GET https://graph.microsoft.com/beta/identityProtection/riskDetections?$filter=userDisplayName eq 'MyTestUser1'
+GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=userDisplayName eq 'MyTestUser1'
 ```
 
 #### Response
@@ -280,7 +280,7 @@ GET https://graph.microsoft.com/beta/identityProtection/riskDetections?$filter=u
   "lastUpdatedDateTime": "2020-11-12T23:47:57.7831423Z",
   "userId": "4b608561-9258-44ba-8cdb-3286dcbf0e3b",
   "userDisplayName": "MyTestUser1",
-  "userPrincipalName": "MyTestUser1@contoso.onmicrosoft.com",
+  "userPrincipalName": "MyTestUser1@contoso.com",
     "additionalInfo": "[{\"Key\":\"userAgent\",\"Value\":\"Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0\"}]",
   "location": {
     "city": "Schoenwalde-Glien",
@@ -296,7 +296,7 @@ GET https://graph.microsoft.com/beta/identityProtection/riskDetections?$filter=u
 
 ## Step 4 (Optional) Block the user from signing in
 
-Instead of providing the opportunity for the user to self-remediate, you can block the user from signing in. In this step, you create a new conditional access policy that blocks the user from signing in if a medium or higher risk detection occurs. The difference in policies is that the **builtInControls** is set to `block`.
+Instead of providing the opportunity for the user to self-remediate, you can block the user from signing in. In this step, you create a new conditional access policy that blocks the user from signing in if a medium or high risk detection occurs. The difference in policies is that the **builtInControls** is set to `block`.
 
 ### Request
 
@@ -305,7 +305,7 @@ POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies
 Content-type: application/json
 
 {
-  "displayName": "Policy for risky sign-in",
+  "displayName": "Policy for risky sign-in block access",
   "state": "enabled",
   "conditions": {
     "signInRiskLevels": [
@@ -336,7 +336,7 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies/$entity",
   "id": "9ad78153-b1f8-4714-adc1-1445727678a8",
-  "displayName": "Policy for risky sign-in",
+  "displayName": "Policy for risky sign-in block access",
   "createdDateTime": "2020-11-03T20:56:38.6210843Z",
   "modifiedDateTime": null,
   "state": "enabled",
@@ -380,13 +380,13 @@ Content-type: application/json
 }
 ```
 
-With this conditional access policy in place, the **MyTestUser1** account is now blocked from signing in because the sign-in risk level is `medium` or higher.
+With this conditional access policy in place, the **MyTestUser1** account is now blocked from signing in because the sign-in risk level is `medium` or `high`.
 
 ![Blocked sign-in](./images/tutorial-riskdetection-api/conditionalaccess-policy.png)
 
 ## Step 5: Dismiss risky users
 
-If you believe the user is not at risk, and you don’t want to enforce a conditioanl access policy, you can manually dismiss the risky user.
+If you believe the user is not at risk, and you don’t want to enforce a conditional access policy, you can manually dismiss the risky user.
 
 ### Dismiss the risky user
 
@@ -434,7 +434,7 @@ GET https://graph.microsoft.com/beta/riskyUsers?$filter=userDisplayName eq 'MyTe
       "riskDetail": "adminDismissedAllRiskForUser",
       "riskLastUpdatedDateTime": "2020-11-03T21:48:53.4298425Z",
       "userDisplayName": "MyTestUser1",
-      "userPrincipalName": "MyTestUser1@M365x853908.onmicrosoft.com"
+      "userPrincipalName": "MyTestUser1@contoso.com"
     }
   ]
 }
