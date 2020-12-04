@@ -3,7 +3,7 @@ title: "List cloudPcProvisioningPolicy"
 description: "View the properties and relationships of all cloud PC provisioning policies."
 author: "AshleyYangSZ"
 localization_priority: Normal
-ms.prod: ""
+ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -11,7 +11,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 List properties and relationships of the [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) objects.
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 
