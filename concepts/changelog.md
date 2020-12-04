@@ -29,7 +29,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added the [getAllMessages](/graph/api/chats-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource collection.|
 | Addition | beta | Added the [getAllMessages](/graph/api/channels-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource collection.|
-| Addition | beta | Added the [getAllMessages](/graph/api/teams-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) resource collection.|
 
 ## November 2020
 

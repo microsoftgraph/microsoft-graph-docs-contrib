@@ -12470,8 +12470,6 @@ items:
           href: api/profilephoto-update.md
         - name: Complete migration for team
           href: api/team-completemigration.md
-        - name: Get messages across all teams
-          href: api/teams-getallmessages.md
       - name: Group (team)
         href: resources/group.md
         items:
