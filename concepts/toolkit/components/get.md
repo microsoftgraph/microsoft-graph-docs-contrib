@@ -47,7 +47,7 @@ You can use several attributes to change the behavior of the component. The only
 
 ## Templates
 
-The `mgt-get` component supports several [templates](../templates.md) that you can use to define the look and feel. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
+The `mgt-get` component supports several [templates](../customize-components/templates.md) that you can use to define the look and feel. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
 
 | Data type | Data context | Description |
 | --- | --- | --- |
@@ -62,4 +62,4 @@ For more information about permissions, see the Microsoft Graph [permissions ref
 
 ## Authentication
 
-The control uses the global authentication provider described in the [authentication documentation](./../providers.md) to fetch the required data.
+The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md) to fetch the required data.

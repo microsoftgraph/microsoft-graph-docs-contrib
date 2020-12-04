@@ -57,7 +57,7 @@ You can populate selected people data by doing one of the following:
     document.querySelector('mgt-people-picker').selectedPeople.push(personObject);
     ```
 
-- Using the `selectUsersById()` method, which accepts an array of Microsoft graph [user ids](/graph/api/resources/users?view=graph-rest-1.0) to find associated user details for selection.
+- Using the `selectUsersById()` method, which accepts an array of Microsoft graph [user ids](/graph/api/resources/users) to find associated user details for selection.
 
      >**Note:** If no user is found for an `id`, no data will be rendered for that `id`.
 
@@ -105,7 +105,7 @@ mgt-people-picker {
 
 ## Templates
 
- `mgt-people-picker` supports several [templates](../templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
+ `mgt-people-picker` supports several [templates](../customize-components/templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
 
 | Data type | Data context | Description |
 | --- | --- | --- |
@@ -132,15 +132,15 @@ This component uses the following Microsoft Graph APIs and permissions.
 
 | API                                                                                                              | Permission  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/people](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read        |
-| [/users](/graph/api/user-list?view=graph-rest-1.0)  | User.ReadBasic.All |
-| [/groups](/group-list?view=graph-rest-beta)  | Group.Read.All |
-| [/groups/\${groupId}/members](/graph/api/group-list-members?view=graph-rest-1.0) | User.ReadBasic.All        |
-| [/users/${userPrincipleName} ](/graph/api/user-get?view=graph-rest-1.0)  | User.Read |
+| [/me/people](/graph/api/user-list-people)                    | People.Read        |
+| [/users](/graph/api/user-list)  | User.ReadBasic.All |
+| [/groups](/group-list)  | Group.Read.All |
+| [/groups/\${groupId}/members](/graph/api/group-list-members) | User.ReadBasic.All        |
+| [/users/${userPrincipleName} ](/graph/api/user-get)  | User.Read |
 
 ## Authentication
 
-The control uses the global authentication provider described in the [authentication documentation](./../providers.md).
+The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
 
 ## Extend for more control
 
