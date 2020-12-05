@@ -14,6 +14,9 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 
 ## December 2020: New and generally available
 
+### Cloud communications
+GA of the [presence](s/graph/api/resources/presence) resource, allowing getting the presence information of one or more users.
+
 ### Teamwork
 - GA of the [API to manage the installation of a Teams app](/graph/api/resources/teamsappinstallation), including getting installed apps, or adding, removing, or upgrading of the app in a team or in the personal scope of a user.
 - [Get a chat between a user and a Teams app](/graph/api/userscopeteamsappinstallation-get-chat).
