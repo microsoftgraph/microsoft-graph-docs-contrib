@@ -4057,6 +4057,13 @@ items:
               href: api/activitybasedtimeoutpolicy-update.md
             - name: Delete
               href: api/activitybasedtimeoutpolicy-delete.md
+          - name: Authorization policy
+            href: resources/authorizationpolicy.md
+            items:
+            - name: Get
+              href: api/authorizationpolicy-get.md
+            - name: Update
+              href: api/authorizationpolicy-update.md
           - name: Home realm discovery policy
             href: resources/homerealmdiscoverypolicy.md
             items:
