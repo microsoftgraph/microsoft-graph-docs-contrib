@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "d686e617-f373-4e2b-b26e-c71f475b05de",
+          "ApiChange": "Property",
+          "ChangedApiName": "floorNumber,floor",
+          "ChangeType": "Change",
+          "Description": "Changed **floorNumber** (Edm.Int) property on [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta\u0026preserve-view=true) resource to **floor** (Edm.String).",
+          "Target": "printerLocation"
+        },
+        {
+          "Id": "d686e617-f373-4e2b-b26e-c71f475b05de",
+          "ApiChange": "Property",
+          "ChangedApiName": "roomNumber,roomName",
+          "ChangeType": "Change",
+          "Description": "Changed **roomNumber** (Edm.Int) property on [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta\u0026preserve-view=true) resource to **roomName** (Edm.String).",
+          "Target": "printerLocation"
+        }
+      ],
+      "Id": "d686e617-f373-4e2b-b26e-c71f475b05de",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-01T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": " Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3a4e1e60-0477-4cda-9665-3a880ab0e927",
           "ApiChange": "Resource",
           "ChangedApiName": "Get printUsageSummaryByPrinter,getPrinterArchivedPrintJobs,List dailyPrintUsageSummariesByPrinter,List monthlyPrintUsageSummariesByPrinter,Get printUsageSummaryByUser,getUserArchivedPrintJobs,getGroupArchivedPrintJobs,List dailyPrintUsageSummariesByUser,List monthlyPrintUsageSummariesByUser",
