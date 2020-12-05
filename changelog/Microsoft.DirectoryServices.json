@@ -1,5 +1,47 @@
 {
   "changelog": [
+     {
+      "ChangeList": [
+        {
+          "Id": "b9a0fbe9-817b-4b78-bc93-85bbd32e681f",
+          "ApiChange": "Property",
+          "ChangedApiName": "agreementFile",
+          "ChangeType": "Addition",
+          "Description": "Added the following properties to the Terms of Use [agreementfile](https://docs.microsoft.com/en-us/graph/api/resources/agreementfile?view=graph-rest-beta) resource:<ul><li>isMajorVersion</li><li>createdDateTime</li></ul>.",
+          "Target": "agreementFile"
+        },
+        {
+          "Id": "b9a0fbe9-817b-4b78-bc93-85bbd32e681f",
+          "ApiChange": "Property",
+          "ChangedApiName": "agreementFileLocalization",
+          "ChangeType": "Addition",
+          "Description": "Added the **isMajorVersion** and **createdDateTime** properties to the Terms of Use [agreementFileLocalization](https://docs.microsoft.com/en-us/graph/api/resources/agreementfilelocalization?view=graph-rest-beta) resource.",
+          "Target": "agreementFileLocalization"
+        },
+        {
+          "Id": "b9a0fbe9-817b-4b78-bc93-85bbd32e681f",
+          "ApiChange": "Property",
+          "ChangedApiName": "agreementFileVersion",
+          "ChangeType": "Addition",
+          "Description": "Added a new resource type to [Terms of Use agreement](https://docs.microsoft.com/en-us/graph/api/resources/agreement?view=graph-rest-beta):</br>[agreementFileVersion](https://docs.microsoft.com/en-us/graph/api/resources/agreementfileversion?view=graph-rest-beta).",
+          "Target": "agreementFileVersion"
+        },
+        {
+          "Id": "b9a0fbe9-817b-4b78-bc93-85bbd32e681f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "requestorManager",
+          "ChangeType": "Addition",
+          "Description": "Added the **managerLevel** property to [requestorManager](https://docs.microsoft.com/en-us/graph/api/resources/requestorManager?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "requestorManager"
+        }
+      ],
+      "Id": "b9a0fbe9-817b-4b78-bc93-85bbd32e681f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-04T17:53:06Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {

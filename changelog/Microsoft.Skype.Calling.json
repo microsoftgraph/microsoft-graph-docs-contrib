@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "edb25912-4b47-4396-82c0-132c22fe7699",
+          "ApiChange": "Resource",
+          "ChangedApiName": "presence",
+          "ChangeType": "Addition",
+          "Description": "Added the [presence](/graph/api/resources/presence?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Target": "presence"
+        }
+      ],
+      "Id": "edb25912-4b47-4396-82c0-132c22fe7699",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-12-04T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8ff3f9a7-f4f2-4b78-b6d7-97c5ef078f00",
           "ApiChange": "Property",
           "ChangedApiName": "participantInfole",
