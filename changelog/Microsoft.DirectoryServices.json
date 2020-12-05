@@ -1,6 +1,24 @@
 {
   "changelog": [
-     {
+    {
+      "ChangeList": [
+        {
+          "Id": "a4f81577-234e-11eb-8b0e-705e20bbe57e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authorizationPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [authorizationPolicy](https://docs.microsoft.com/graph/api/resources/authorizationPolicy?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Target": "authorizationPolicy"
+        }
+      ],
+      "Id": "a4f353ec-234e-11eb-8b0e-705e20bbe57e",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-12-04T12:17:04.676Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
       "ChangeList": [
         {
           "Id": "b9a0fbe9-817b-4b78-bc93-85bbd32e681f",
@@ -111,24 +129,6 @@
       "CreatedDateTime": "2020-10-01T00:00:00.000Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Application"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "a4f81577-234e-11eb-8b0e-705e20bbe57e",
-          "ApiChange": "Resource",
-          "ChangedApiName": "authorizationPolicy",
-          "ChangeType": "Addition",
-          "Description": "Added the [authorizationPolicy](https://docs.microsoft.com/graph/api/resources/authorizationPolicy?view=graph-rest-1.0&preserve-view=true) resource type.",
-          "Target": "authorizationPolicy"
-        }
-      ],
-      "Id": "a4f353ec-234e-11eb-8b0e-705e20bbe57e",
-      "Cloud": "prd",
-      "Version": "v1.0",
-      "CreatedDateTime": "2020-11-10T12:17:04.676Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
