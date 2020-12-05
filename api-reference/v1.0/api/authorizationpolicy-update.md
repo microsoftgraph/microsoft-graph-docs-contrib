@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Update the properties of a [authorizationPolicy](../resources/authorizationpolicy.md) object.
+Update the properties of an [authorizationPolicy](../resources/authorizationpolicy.md) object.
 
 ## Permissions
 
@@ -35,8 +35,8 @@ PATCH /policies/authorizationPolicy
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
-| Content-type | application/json |
+| Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 
