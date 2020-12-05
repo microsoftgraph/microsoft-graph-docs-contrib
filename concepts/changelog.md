@@ -4,6 +4,7 @@ description: "This changelog covers what's changed in Microsoft Graph, including
 author: "MSGraphDocsVteam"
 localization_priority: Priority
 ---
+
 # Changelog for Microsoft Graph
 
 This changelog covers specific API-level changes in Microsoft Graph v1.0 and beta.
@@ -28,6 +29,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [identityUserFlowAttributeAssignment](/graph/api/resources/identityuserflowattributeassignment?view=graph-rest-beta&preserve-view=true) entity for managing attributes collected by a user flow in an Azure Active Directory or Azure Active Directory B2C tenant.|
+| Addition | beta | Added methods for listing and creating user attribute assignments to the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) resource.|
+| Addition | beta | Added methods for listing and creating user attribute assignments to the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) resource.|
 | Addition | v1.0 | Added the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true) resource type. |
 
 ### Teamwork
@@ -38,7 +42,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-v1.0&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-v1.0&preserve-view=true) resource. |
 | Addition | beta | Added [Get the installed app in team](/graph/api/team-get-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed app for user](/graph/api/userteamwork-get-installedapps?view=graph-rest-beta&preserve-view=true)|
 | Addition | beta | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-beta&preserve-view=true) resource. |
-
 
 ## November 2020
 
