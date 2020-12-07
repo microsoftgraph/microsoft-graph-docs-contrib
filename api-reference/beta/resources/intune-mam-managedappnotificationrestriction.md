@@ -27,5 +27,3 @@ Restrict managed app notification
 
 
 
-
-

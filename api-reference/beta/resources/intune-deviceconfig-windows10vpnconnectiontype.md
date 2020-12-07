@@ -34,5 +34,3 @@ VPN connection types.
 
 
 
-
-

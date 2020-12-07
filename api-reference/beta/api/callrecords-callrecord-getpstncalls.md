@@ -1,7 +1,7 @@
 ---
 title: "callRecord: getPstnCalls"
 description: "Get log of PSTN calls."
-author: "stephenjust"
+author: "williamlooney"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
@@ -45,6 +45,9 @@ The following table shows the parameters that can be used with this function.
 |:---|:---|:---|
 |fromDateTime|DateTimeOffset|Start of time range to query. UTC, inclusive.<br/>Time range is based on the call start time.|
 |toDateTime|DateTimeOffset|End of time range to query. UTC, inclusive.|
+
+> [!IMPORTANT]
+> The **fromDateTime** and **toDateTime** values cannot be more than a date range of 90 days.
 
 ## Request headers
 

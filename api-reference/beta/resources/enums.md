@@ -1347,6 +1347,7 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue
 
 ### userFlowType values
+
 |Member
 |:----------------------
 | signUp
@@ -1354,10 +1355,11 @@ Possible values for user account types (group membership), per Windows definitio
 | signUpOrSignIn
 | passwordReset
 | profileUpdate
-| resourceOwnerPasswordCredentialSignIn
+| resourceOwner
 | unknownFutureValue
 
 ### openIdConnectResponseMode values
+
 | Member
 |:----------------------
 | none
@@ -1366,6 +1368,7 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue
 
 ### openIdConnectResponseTypes values
+
 | Member
 |:----------------------
 | none
@@ -1374,6 +1377,7 @@ Possible values for user account types (group membership), per Windows definitio
 | token
 
 ### wellknownListName values
+
 | Member
 |:----------------------
 | none
@@ -1382,6 +1386,7 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue
 
 ### taskStatus values
+
 | Member
 |:----------------------
 | notStarted
@@ -1412,6 +1417,24 @@ Possible values for user account types (group membership), per Windows definitio
 |user|
 |group|
 
+### identityUserFlowAttributeDataType values
+
+| Member                | Value | Description                         |
+|:----------------------|:------|:------------------------------------|
+| string                | 1     | String data type                    |
+| boolean               | 2     | Boolean data type                   |
+| int64                 | 3     | Int data type                       |
+| stringCollection      | 4     | String collection data type         |
+| unknownFutureValue    | 5     | A sentinel member.                  |
+
+### identityUserFlowAttributeType values
+
+| Member                | Value | Description                                                        |
+|:----------------------|:------|:-------------------------------------------------------------------|
+| builtIn               | 1     | This user flow attribute type denotes it was created by the system |
+| custom                | 2     | This user flow attribute type denotes it was created by the user   |
+| unknownFutureValue    | 3     | A sentinel member.                                                 |
+
 ### connectionState values
 
 |Member|
@@ -1420,3 +1443,100 @@ Possible values for user account types (group membership), per Windows definitio
 |ready|
 |obsolete|
 |limitExceeded|
+
+### permissionClassificationType values
+
+| Member
+|:-------
+| low
+
+### permissionType values
+
+| Member
+|:-------------------------
+| application
+| delegated
+| delegatedUserConsentable
+
+### identityUserFlowAttributeInputType values
+
+| Member                |
+|:----------------------|
+| textBox               |
+| dateTimeDropDown      |
+| radioSingleSelect     |
+| dropdownSingleSelect  |
+| emailBox              |
+| checkboxMultiSelect   |
+
+### teamworkActivityTopicSource values
+
+| Member
+|:---
+| entityUrl
+| text
+
+### cloudPcDeviceImageStatus values
+
+|Member|
+|:---|
+|pending|
+|ready|
+|failed|
+
+### cloudPcDeviceImageStatusDetails values
+
+|Member|
+|:---|
+|internalServerError|
+|sourceImageNotFound|
+
+### cloudPcOnPremisesConnectionHealthCheckErrorType values
+
+|Member|
+|:---|
+|dnsCheckFqdnNotFound|
+|dnsCheckUnknownError|
+|adJoinCheckFqdnNotFound|
+|adJoinCheckIncorrectCredentials|
+|adJoinCheckOrganizationalUnitNotFound|
+|adJoinCheckOrganizationalUnitIncorrectFormat|
+|adJoinCheckUnknownError |
+|endpointConnectivityCheckUrlNotWhitelisted|
+|endpointConnectivityCheckUnknownError|
+|aadConnectivityCheckUnknownError |
+|resourceAvailabilityCheckNoSubnetIP |
+|resourceAvailabilityCheckUnknownError |
+|internalServerUnknownError |
+
+### cloudPcOnPremisesConnectionStatus values
+
+|Member|
+|:---|
+|pending|
+|running|
+|passed|
+|failed|
+|unknownFutureValue|
+
+### cloudPcProvisioningPolicyImageType values
+
+|Member|
+|:---|
+|custom|
+|gallery|
+
+### cloudPcStatus values
+
+|Member|
+|:---|
+|notProvisioned|
+|provisioning|
+|provisioned|
+|upgrading|
+|inGracePeriod|
+|deprovisioning|
+|upgradeFailed|
+|provisionFailed|
+|deprovisionFailed|
+|reprovisionFailed|
