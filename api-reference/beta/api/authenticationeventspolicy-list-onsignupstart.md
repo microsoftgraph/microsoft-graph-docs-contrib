@@ -1,6 +1,6 @@
 ---
 title: "List onSignUpStart"
-description: "Get the collection of authenticationAction resources supported by the onSignupStart event."
+description: "Get the collection of authenticationListener resources supported by the onSignupStart event."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the collection of authenticationAction resources supported by the onSignupStart event.
+Get the collection of authenticationListener resources supported by the onSignupStart event.
 
 ## Permissions
 
@@ -50,17 +50,17 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [authenticationAction](../resources/authenticationaction.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [authenticationListener](../resources/authenticationlistener.md) objects in the response body.
 
 ## Examples
 
-### Example 1: List authenticationActions for the onSignUpStart event
+### Example 1: List authenticationListeners for the onSignUpStart event
 
 #### Request
 
 <!-- {
   "blockType": "request",
-  "name": "list_authenticationaction"
+  "name": "list_authenticationlistener"
 }
 -->
 
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.authenticationAction)"
+  "@odata.type": "Collection(microsoft.graph.authenticationListener)"
 }
 -->
 
@@ -86,7 +86,7 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/events/onSignUpStart",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.invokeUserFlowAction",
+      "@odata.type": "#microsoft.graph.invokeUserFlowListener",
       "id": "2adb5c12-5c12-2adb-125c-db2a125cdb2a",
       "priority": 101,
       "sourceFilter": {
@@ -96,7 +96,7 @@ Content-Type: application/json
       }
     },
     {
-      "@odata.type": "#Microsoft.Graph.InvokeUserFlowAction",
+      "@odata.type": "#Microsoft.Graph.InvokeUserFlowListener",
       "id": "0a09997f-fa0c-4f3c-9d02-76762ac069c8",
       "priority": 100,
       "sourceFilter": {
@@ -109,18 +109,20 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Expand invokeUserFlowActions in authenticationActions for the onSignUpStart event
+### Example 2: Expand invokeUserFlowListeners in authenticationListeners for the onSignUpStart event
+
+The following example lists the listeners defined for the onSignupStart event, and for each listener, expands the user flow that is invoked.
 
 #### Request
 
 <!-- {
   "blockType": "request",
-  "name": "list_authenticationaction_invokeuserflowaction"
+  "name": "list_authenticationlistener_invokeuserflowlistener"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/events/onSignupStart?$expand=microsoft.graph.invokeUserFlowAction/userFlow
+GET https://graph.microsoft.com/beta/identity/events/onSignupStart?$expand=microsoft.graph.invokeUserFlowListener/userFlow
 ```
 
 #### Response
@@ -129,7 +131,7 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart?$expand=micro
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.invokeUserFlowAction)"
+  "@odata.type": "Collection(microsoft.graph.invokeUserFlowListener)"
 }
 -->
 
@@ -138,10 +140,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/events/onSignUpStart(microsoft.graph.invokeUserFlowAction/userFlow())/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/events/onSignUpStart(microsoft.graph.invokeUserFlowListener/userFlow())/$entity",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.invokeUserFlowAction",
+      "@odata.type": "#microsoft.graph.invokeUserFlowListener",
       "id": "2adb5c12-5c12-2adb-125c-db2a125cdb2a",
       "priority": 101,
       "sourceFilter": {
@@ -156,7 +158,7 @@ Content-Type: application/json
       }
     },
     {
-      "@odata.type": "#microsoft.graph.InvokeUserFlowAction",
+      "@odata.type": "#microsoft.graph.InvokeUserFlowListener",
       "id": "0a09997f-fa0c-4f3c-9d02-76762ac069c8",
       "priority": 100,
       "sourceFilter": {

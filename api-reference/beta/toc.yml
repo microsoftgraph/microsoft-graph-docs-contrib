@@ -9935,18 +9935,24 @@ items:
           items:
           - name: Authentication events policy
             href: resources/authenticationeventspolicy.md
-          - name: Get
-            href: api/authenticationeventspolicy-get.md
-          - name: List authenticationActions
-            href: api/authenticationaction-list.md
-          - name: Get authenticationAction
-            href: api/authenticationaction-get.md
-          - name: Create authenticationAction
-            href: api/authenticationaction-create.md
-          - name: Update authenticationAction
-            href: api/authenticationaction-update.md
-          - name: Remove authenticationAction
-            href: api/authenticationaction-remove.md
+          - name: Sign-up-start event
+            items:
+            - name: Authentication listener
+              href: resources/authenticationlistener.md
+            - name: Invoke user flow listener type
+              href: resources/invokeuserflowlistener.md
+            - name: List listeners
+              href: api/authenticationlistener-list.md
+            - name: Create listener
+              href: api/authenticationeventspolicy-post-onsignupstart.md            
+            - name: Get listener
+              href: api/authenticationlistener-get.md
+            - name: Update listener
+              href: api/authenticationlistener-update.md
+            - name: Put listener
+              href: authenticationlistener-put.md
+            - name: Delete listener
+              href: api/authenticationlistener-delete.md
         - name: Authentication flows policy
           items:
           - name: Authentication flows policy

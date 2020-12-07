@@ -1,17 +1,17 @@
 ---
-title: "Get authenticationAction"
-description: "Read the properties and relationships of an authenticationAction object."
+title: "Get authenticationListener"
+description: "Read the properties and relationships of an authenticationListener object."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Get authenticationAction
+# Get authenticationListener
 
 Namespace: microsoft.graph
 
-Read the properties and relationships of an [authenticationAction](../resources/authenticationaction.md) object.
+Get the specified [authenticationListener](../resources/authenticationlistener.md) defined for the onSignupStart event in the authentication pipeline.
 
 ## Permissions
 
@@ -50,17 +50,17 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [authenticationAction](../resources/authenticationaction.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [authenticationListener](../resources/authenticationlistener.md) object in the response body.
 
 ## Examples
 
-### Example 1: Get an authenticationAction by id
+### Example 1: Get an authenticationListener by id
 
 #### Request
 
 <!-- {
   "blockType": "request",
-  "name": "get_authenticationaction"
+  "name": "get_authenticationlistener"
 }
 -->
 
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authenticationAction"
+  "@odata.type": "microsoft.graph.authenticationListener"
 }
 -->
 
@@ -84,7 +84,7 @@ Content-Type: application/json
 
 {
   "odata.context": "https://graph.microsoft.com/beta/$metadata#identity/events/onSignUpStart/$entity",
-  "@odata.type": "#microsoft.graph.invokeUserFlowAction",
+  "@odata.type": "#microsoft.graph.invokeUserFlowListener",
   "id": "2adb5c12-5c12-2adb-125c-db2a125cdb2a",
   "priority": 101,
   "sourceFilter": {
@@ -95,13 +95,15 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Expand invokeUserFlowAction for a specific authenticationAction
+### Example 2: Expand invokeUserFlowListener for a specific authenticationListener
+
+The following example gets the listener by id for the onSignupStart event and expands the user flow that is invoked.
 
 #### Request
 
 <!-- {
   "blockType": "request",
-  "name": "get_authenticationaction_invokeSignUpStart"
+  "name": "get_authenticationlistener_invokeuserflow"
 }
 -->
 
@@ -115,7 +117,7 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart/{id}?$expand=
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.invokeUserFlowAction"
+  "@odata.type": "microsoft.graph.invokeUserFlowListener"
 }
 -->
 
@@ -124,8 +126,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/events/onSignUpStart(microsoft.graph.invokeUserFlowAction/userFlow())/$entity",
-  "@odata.type": "#microsoft.graph.invokeUserFlowAction",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/events/onSignUpStart(microsoft.graph.invokeUserFlowListener/userFlow())/$entity",
+  "@odata.type": "#microsoft.graph.invokeUserFlowListener",
   "id": "2adb5c12-5c12-2adb-125c-db2a125cdb2a",
   "priority": 101,
   "sourceFilter": {

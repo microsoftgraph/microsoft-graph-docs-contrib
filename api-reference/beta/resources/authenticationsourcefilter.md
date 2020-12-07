@@ -1,6 +1,6 @@
 ---
 title: "authenticationSourceFilter resource type"
-description: "Filter based on the source of the authentication which is used to determine whether the action is executed or not."
+description: "Filter based on the source of the authentication which is used to determine whether the listener is executed or not."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Filter based on the source of the authentication that is used to determine whether the action is executed.
+Filter based on the source of the authentication that is used to determine whether the listener is executed.
 
 ## Properties
 

@@ -1,17 +1,17 @@
 ---
-title: "Create authenticationAction"
-description: "Create a new authenticationAction object for the onSignUpStart event."
+title: "Create authenticationListener"
+description: "Create a new authenticationListener object for the onSignUpStart event."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Create authenticationAction
+# Create authenticationListener
 
 Namespace: microsoft.graph
 
-Create a new authenticationAction object for the onSignUpStart event.
+Create a new authenticationListener object for the onSignUpStart event.
 
 ## Permissions
 
@@ -43,9 +43,9 @@ POST /identity/events/onSignupStart
 
 ## Request body
 
-In the request body, supply a JSON representation of the [authenticationAction](../resources/authenticationaction.md) object.
+In the request body, supply a JSON representation of the [authenticationListener](../resources/authenticationlistener.md) object.
 
-The following table shows the properties that are required when you create the [invokeUserFlowAction](../resources/invokeuserflowaction.md) authenticationAction.
+The following table shows the properties that are required when you create the [invokeUserFlowListener](../resources/invokeuserflowlistener.md) authenticationListener.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [authenticationAction](../resources/authenticationaction.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [authenticationListener](../resources/authenticationlistener.md) object in the response body.
 
 ## Examples
 
@@ -63,7 +63,7 @@ If successful, this method returns a `201 Created` response code and an [authent
 
 <!-- {
   "blockType": "request",
-  "name": "create_authenticationaction_from_"
+  "name": "create_authenticationlistener_from_"
 }
 -->
 
@@ -72,7 +72,7 @@ POST https://graph.microsoft.com/beta/identity/events/onSignupStart
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.invokeUserFlowAction",
+    "@odata.type": "#microsoft.graph.invokeUserFlowListener",
     "priority": 101,
     "sourceFilter": {
         "includeApplications": [
@@ -91,7 +91,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authenticationAction"
+  "@odata.type": "microsoft.graph.authenticationListener"
 }
 -->
 
@@ -100,8 +100,8 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/events/onSignupStart/Microsoft.Graph.InvokeUserFlowAction/$entity",
-    "@odata.type": "#microsoft.graph.invokeUserFlowAction",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/events/onSignupStart/Microsoft.Graph.InvokeUserFlowListener/$entity",
+    "@odata.type": "#microsoft.graph.invokeUserFlowListener",
     "id": "2be3336b-e3b4-44f3-9128-b6fd9ad39bb8",
     "priority": 101,
     "sourceFilter": {

@@ -1,17 +1,17 @@
 ---
-title: "Update authenticationAction"
-description: "Update the properties of an authenticationAction object."
+title: "Update authenticationListener"
+description: "Update the specified listener defined for an event in the authentication pipeline."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Update authenticationAction
+# Update authenticationListener
 
 Namespace: microsoft.graph
 
-Update the properties of an authenticationAction object.
+Update the specified [authenticationListener](../resources/authenticationlistener.md) defined for an event in the authentication pipeline.
 
 ## Permissions
 
@@ -43,9 +43,9 @@ PATCH /identity/events/onSignupStart/{id}
 
 ## Request body
 
-In the request body, supply a JSON representation of the [authenticationAction](../resources/authenticationaction.md) object.
+In the request body, supply a JSON representation of the [authenticationListener](../resources/authenticationlistener.md) object.
 
-The following table shows the properties that are required when you update the [invokeUserFlowAction](../resources/invokeuserflowaction.md).
+The following table shows the properties that are required when you update the [invokeUserFlowAction](../resources/invokeuserflowlistener.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

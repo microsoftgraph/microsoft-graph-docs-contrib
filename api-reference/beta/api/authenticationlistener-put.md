@@ -1,17 +1,17 @@
 ---
-title: "Replace onSignupStart"
-description: "Replace an authenticationAction object."
+title: "Put authenticationListener"
+description: "Replace an authenticationListener object."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Replace onSignupStart
+# Put authenticationListener
 
 Namespace: microsoft.graph
 
-Create a new authenticationAction object.
+Replace an [authenticationListener](../resources/authenticationlistener.md) defined for the onSignupStart event in the authentication pipeline.
 
 ## Permissions
 
@@ -43,9 +43,9 @@ PUT /identity/events/onSignupStart/{id}
 
 ## Request body
 
-In the request body, supply a JSON representation of the [authenticationAction](../resources/authenticationaction.md) object.
+In the request body, supply a JSON representation of the [authenticationListener](../resources/authenticationlistener.md) object.
 
-The following table shows the properties that are required when you create the [invokeUserFlowAction](../resources/invokeuserflowaction.md).
+The following table shows the properties that are required when you create the [invokeUserFlowListener](../resources/invokeuserflowlistener.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -63,16 +63,16 @@ If successful, this method returns a `204 No Content` response code.
 
 <!-- {
   "blockType": "request",
-  "name": "put_authenticationaction_from_"
+  "name": "put_authenticationlistener_from_"
 }
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/identity/events/onSignupStart
+PUT https://graph.microsoft.com/beta/identity/events/onSignupStart
 Content-Type: application/json
 
 {
-    "@odata.type": "#Microsoft.Graph.InvokeUserFlowAction",
+    "@odata.type": "#Microsoft.Graph.InvokeUserFlowListener",
     "priority": 101,
     "sourceFilter": {
         "includeApplications": [

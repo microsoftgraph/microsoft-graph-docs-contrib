@@ -1,17 +1,17 @@
 ---
-title: "Delete authenticationAction"
-description: "Deletes an authenticationAction from an event supported by an authenticationEventsPolicy."
+title: "Delete authenticationListener"
+description: "Deletes an authenticationListener from an event supported by an authenticationEventsPolicy."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Remove authenticationAction
+# Remove authenticationListener
 
 Namespace: microsoft.graph
 
-Delete an [authenticationAction](../resources/authenticationaction.md) from an event supported by an [authenticationEventsPolicy](../resources/authenticationeventspolicy.md).
+Delete the specified [authenticationListener](../resources/authenticationlistener.md) defined for the onSignupStart event in the authentication pipeline.
 
 ## Permissions
 
