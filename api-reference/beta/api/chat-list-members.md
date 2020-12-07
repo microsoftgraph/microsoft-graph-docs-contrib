@@ -1,6 +1,6 @@
 ---
 title: "List conversationMembers"
-description: "Retrieve a member of a chat."
+description: "Retrieve members of a chat."
 author: "clearab"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
