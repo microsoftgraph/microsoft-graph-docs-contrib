@@ -3,7 +3,7 @@ title: "List mailFolders"
 description: "Get all the mail folders in the signed-in user's mailbox."
 localization_priority: Normal
 doc_type: apiPageType
-author: "svpsiva"
+author: "abhda"
 ms.prod: "outlook"
 ---
 
@@ -30,8 +30,19 @@ One of the following permissions is required to call this API. To learn more, in
 GET /me/mailFolders
 GET /users/{id | userPrincipalName}/mailFolders
 ```
+
+To optionally also include **hidden** mail folders in the response:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/mailFolders/?$includeHiddenFolders=true
+GET /users/{id | userPrincipalName}/mailFolders/?$includeHiddenFolders=true
+```
+
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+`$includeHiddenFolders`: Adding this optional query parameter in the request and setting it to `true` would return all mailFolders including those that are **hidden**. Additionally, the `isHidden` mail folder property would also be included in the API response.
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -44,7 +55,10 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [mailFolder](../resources/mailfolder.md) objects in the response body.
-## Example
+## Examples
+
+### Example 1
+
 ##### Request
 Here is an example of the request.
 
@@ -172,6 +186,73 @@ Content-type: application/json
             "unreadItemCount": 0,
             "totalItemCount": 0,
             "wellKnownName": "sentitems"
+        }
+    ]
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "List mailFolders",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
+
+### Example 2
+
+##### Request
+The next example uses `$includeHiddenFolders` query parameter to get a list of mail folders that also includes **hidden** mail folders.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_hiddenmailfolders"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/mailFolders/?$includeHiddenFolders=true
+```
+
+##### Response
+Here is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailFolder",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 232
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",
+    "value": [
+        {
+            "id": "AQMkADYAAAIBXQAAAA==",
+            "displayName": "Archive",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "isHidden": true
+        },
+        {
+            "id": "AQMkADYAAAIBFQAAAA==",
+            "displayName": "Conversation History",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 1,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "isHidden": false
         }
     ]
 }
