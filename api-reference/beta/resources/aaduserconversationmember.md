@@ -19,21 +19,27 @@ Represents an Azure Active Directory user in a [chat](chat.md) or [channel](chan
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List members](../api/conversationmember-list.md) | [conversationmember](conversationmember.md) collection | Get the list of all users in the chat or channel.|
-|[Get member](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Get a single user in the chat or channel.|
-|[Add member](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Add a member to a channel.|
-|[Update member](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Update a member in the channel.|
-|[Delete member](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Delete a member from the channel.|
+|[List Channel members](../api/channel-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all users in the channel.|
+|[Get Channel member](../api/channel-get-members.md) | [conversationMember](conversationmember.md) | Get a single user in the channel.|
+|[Add Channel member](../api/channel-post-members.md) | [conversationMember](conversationmember.md)| Add a member to a channel.|
+|[Update Channel member](../api/channel-update-members.md) | [conversationMember](conversationmember.md)| Update a member in the channel.|
+|[Delete Channel member](../api/channel-delete-members.md) | No content | Delete a member from the channel.|
+|[List Chat members](../api/chat-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all users in the chat.|
+|[Get Chat member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a single user in the chat.|
+|[Add Chat member](../api/chat-post-members.md) | [conversationMember](conversationmember.md)| Add a member to a chat.|
+|[Delete Chat member](../api/chat-delete-members.md) | No content | Delete a member from the chat.|
 
 ## Properties
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only. Unique ID of the user.|
-|displayName| string | The display name of the user. |
-|roles| string collection | The roles for that user. |
-|userId| string | The guid of the user. |
-|email| string  | The email address of the user. |
+|id| String | Read-only. Unique ID of the user.|
+|displayName| String | The display name of the user. |
+|roles| String collection | The roles for that user. |
+|userId| String | The guid of the user. |
+|email| String  | The email address of the user. |
+|tenantId| string  | TenantId which the AAD User belongs to. |
+|visibleHistoryStartDateTime| DateTimeOffset  | The timestamp denoting how far back a conversation's history is shared with the conversation member. |
 
 ## JSON representation
 
@@ -41,17 +47,25 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.aadUserConversationMember"
-}-->
-
-```json
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.aadUserConversationMember",
+  "baseType": "microsoft.graph.conversationMember",
+  "openType": false
+}
+-->
+``` json
 {
-  "id": "string (identifier)",
-  "displayName" : "string",
-  "roles" : ["string"],
-  "userId" : "string",
-  "email" : "string"
+  "@odata.type": "#microsoft.graph.aadUserConversationMember",
+  "id": "String (identifier)",
+  "roles": [
+    "String"
+  ],
+  "displayName": "String",
+  "visibleHistoryStartDateTime": "String (timestamp)",
+  "userId": "String",
+  "email": "String",
+  "tenantId": "String",
+  "visibleHistoryStartDateTime": "String (timestamp)"
 }
 ```
 
@@ -67,5 +81,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

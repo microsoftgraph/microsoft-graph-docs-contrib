@@ -20,13 +20,15 @@ See also [aadUserConversationMember](aaduserconversationmember.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List Chat members](../api/conversationmember-list.md) | [conversationMember](conversationmember.md) collection | Get the list of all users in the chat.|
-|[Get Chat member](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | Get a single user in the chat.|
-|[List members](../api/conversationmember-list.md) | [conversationMember](conversationmember.md) collection | Get the list of all users in the chat or channel.|
-|[Get member](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | Get a single user in the chat or channel.|
-|[Add member](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Add a member to a channel.|
-|[Update member](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Update a member in the channel.|
-|[Delete member](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Delete a member from the channel.|
+|[List Channel members](../api/channel-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all users in the channel.|
+|[Get Channel member](../api/channel-get-members.md) | [conversationMember](conversationmember.md) | Get a single user in the channel.|
+|[Add Channel member](../api/channel-post-members.md) | [conversationMember](conversationmember.md)| Add a member to a channel.|
+|[Update Channel member](../api/channel-update-members.md) | [conversationMember](conversationmember.md)| Update a member in the channel.|
+|[Delete Channel member](../api/channel-delete-members.md) | No content | Delete a member from the channel.|
+|[List Chat members](../api/chat-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all users in the chat.|
+|[Get Chat member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a single user in the chat.|
+|[Add Chat member](../api/chat-post-members.md) | [conversationMember](conversationmember.md)| Add a member to a chat.|
+|[Delete Chat member](../api/chat-delete-members.md) | No content | Delete a member from the chat.|
 
 ## Properties
 
@@ -35,6 +37,7 @@ See also [aadUserConversationMember](aaduserconversationmember.md).
 |id|String| Read-only. Unique ID of the user.|
 |displayName| string | The display name of the user. |
 |roles| string collection | The roles for that user. |
+|visibleHistoryStartDateTime| DateTimeOffset | The timestamp denoting how far back a conversation's history is shared with the conversation member. |
 
 ## JSON representation
 
@@ -42,19 +45,21 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.conversationMember",
-  "baseType": "",
-  "keyProperty": "id"
-}-->
-
-```json
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
 {
-  "displayName": "String",
+  "@odata.type": "#microsoft.graph.conversationMember",
   "id": "String (identifier)",
-  "roles": ["String"]
+  "roles": [
+    "String"
+  ],
+  "displayName": "String",
+  "visibleHistoryStartDateTime": "String (timestamp)"
 }
 ```
 

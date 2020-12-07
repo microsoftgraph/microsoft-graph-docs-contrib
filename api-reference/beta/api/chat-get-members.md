@@ -1,6 +1,6 @@
 ---
 title: "Get conversationMember"
-description: "Retrieve a member of a chat or channel."
+description: "Retrieve a member of a chat."
 author: "clearab"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a [conversationMember](../resources/conversationmember.md) from a [chat](../resources/chat.md) or [channel](../resources/channel.md).
+Retrieve a [conversationMember](../resources/conversationmember.md) from a [chat](../resources/chat.md).
 
 ## Permissions
 
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)| For **user** or **chat** resource: Chat.ReadBasic, Chat.Read, Chat.ReadWrite<br/><br/>For **channel** resource: ChannelMember.Read.All, ChannelMember.ReadWrite, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Delegated (work or school account)| Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| For **user** or **chat** resource: Not supported.<br/><br/>For **channel** resource: Member.Read.Group*, ChannelMember.Read.All, ChannelMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Application| Not supported. |
 
 > **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
@@ -35,7 +35,6 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /chats/{id}/members/{id}
 GET /users/{id}/chats/{id}/members/{id}
-GET /teams/{id}/channels/{id}/members/{id}
 ```
 
 ## Optional query parameters
