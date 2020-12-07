@@ -2,7 +2,7 @@
 title: "mailFolder resource type"
 description: "A mail folder in a user's mailbox, such as Inbox and Drafts. Mail folders can contain messages, other Outlook items, and child mail folders."
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -77,7 +77,7 @@ Well-known names work regardless of the locale of the user's mailbox, so the abo
 |childFolderCount|Int32|The number of immediate child mailFolders in the current mailFolder.|
 |displayName|String|The mailFolder's display name.|
 |id|String|The mailFolder's unique identifier.|
-|isHidden|Boolean|Indicates whether the mailFolder is hidden.|
+|isHidden|Boolean|Indicates whether the mailFolder is hidden. This property can only be set once when creating a new mailFolder, but cannot be updated. While listing mailFolders, hidden folders are only included only when `includeHiddenFolders=true` is added in the request.|
 |parentFolderId|String|The unique identifier for the mailFolder's parent mailFolder.|
 |totalItemCount|Int32|The number of items in the mailFolder.|
 |unreadItemCount|Int32|The number of items in the mailFolder marked as unread.|
@@ -126,11 +126,11 @@ The following is a JSON representation of the resource.
   "childFolderCount": 1024,
   "displayName": "string",
   "id": "string (identifier)",
-  "isHidden" true,
   "parentFolderId": "string",
   "totalItemCount": 1024,
   "unreadItemCount": 1024,
   "wellKnownName": "string",
+  "isHidden" false,
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
   "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
