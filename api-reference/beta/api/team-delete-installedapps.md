@@ -1,19 +1,19 @@
 ---
-title: "Add app to team"
-description: "Installs an app to the specified team."
+title: "Remove app from team"
+description: "Uninstalls an app from the specified team."
 author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Add app to team
+# Remove app from team
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Installs an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
+Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [team](../resources/team.md).
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/installedApps
+DELETE /teams/{team-id}/installedApps/{app-installation-id}
 ```
 
 ## Request headers
@@ -39,13 +39,11 @@ POST /teams/{id}/installedApps
 
 ## Request body
 
-| Property   | Type |Description|
-|:---------------|:--------|:----------|
-|teamsApp|String|The id of the app to add.|
+Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 
@@ -56,30 +54,25 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "add_teamsApp"
+  "name": "uninstall_teamsapp"
 }-->
 ```http
-POST /teams/87654321-0abc-zqf0-321456789q/installedApps
-Content-type: application/json
-
-{
-   "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
-}
+DELETE /teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps/NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwMDAwMTAxNi1kZTA1LTQ5MmUtOTEwNi00ODI4ZmM4YTg2ODc=
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/add-teamsapp-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/uninstall-teamsapp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/add-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/uninstall-teamsapp-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/add-teamsapp-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/uninstall-teamsapp-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/add-teamsapp-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/uninstall-teamsapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -91,10 +84,11 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
+  "name": "uninstall_teamsapp",
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -102,7 +96,7 @@ HTTP/1.1 200 OK
 <!--
 {
   "type": "#page.annotation",
-  "description": "Add teamsApp",
+  "description": "Remove app from team",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

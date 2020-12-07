@@ -1,6 +1,6 @@
 ---
 title: "Add app to team"
-description: "Install an app to the specified team."
+description: "Installs an app to the specified team."
 author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Install an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Installs an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
 
 ## Permissions
 
@@ -26,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/installedApps
+POST /teams/{team-id}/installedApps
 ```
 
 ## Request headers
@@ -39,11 +41,11 @@ POST /teams/{id}/installedApps
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|teamsApp| [teamsApp](../resources/teamsapp.md) |The app to add.|
+|teamsApp|String|The id of the app to add.|
 
 ## Response
 
-If successful, this method returns a `201 Created` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
 
 ## Example
 
@@ -51,35 +53,33 @@ If successful, this method returns a `201 Created` response code. It does not re
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_team"
+  "name": "add_teamsApp"
 }-->
-
 ```http
-POST /teams/{id}/installedApps
+POST /teams/87654321-0abc-zqf0-321456789q/installedApps
 Content-type: application/json
 
 {
-   "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+   "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-team-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/add-teamsapp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-team-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-teamsapp-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-team-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/add-teamsapp-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-team-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/add-teamsapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -94,16 +94,20 @@ The following is an example of the response.
   "truncated": true
 } -->
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
-  "description": "Get team",
+  "description": "Add teamsApp",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
+
 

@@ -1,19 +1,19 @@
 ---
-title: "Upgrade an app in a team"
-description: "Upgrades an app installation in a team"
+title: "Add app to team"
+description: "Installs an app to the specified team."
 author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Upgrade an app in a team
+# Add app to team
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upgrades an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md) to the latest version of the app.
+Installs an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/installedApps/{id}/upgrade
+POST /teams/{team-id}/installedApps
 ```
 
 ## Request headers
@@ -39,11 +39,13 @@ POST /teams/{id}/installedApps/{id}/upgrade
 
 ## Request body
 
-Do not supply a request body for this method.
+| Property   | Type |Description|
+|:---------------|:--------|:----------|
+|teamsApp|String|The id of the app to add.|
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
 
 ## Example
 
@@ -54,26 +56,30 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "upgrade_teamsapp"
+  "name": "add_teamsApp"
 }-->
-
 ```http
-POST /teams/{id}/installedApps/{id}/upgrade
+POST /teams/87654321-0abc-zqf0-321456789q/installedApps
+Content-type: application/json
+
+{
+   "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/upgrade-teamsapp-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/add-teamsapp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/upgrade-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-teamsapp-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/upgrade-teamsapp-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/add-teamsapp-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/upgrade-teamsapp-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/add-teamsapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -81,15 +87,14 @@ POST /teams/{id}/installedApps/{id}/upgrade
 
 ### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "name": "upgrade_teamsapp",
   "truncated": true
 } -->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -97,7 +102,7 @@ HTTP/1.1 204 No Content
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get team",
+  "description": "Add teamsApp",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

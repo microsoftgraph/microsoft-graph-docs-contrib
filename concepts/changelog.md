@@ -44,6 +44,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat) method to the new [userScopeTeamsAppInstallation](/graph/api/resources/userScopeTeamsAppInstallation) resource. |
 | Addition | beta | Added [Get the installed app in team](/graph/api/team-get-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed app for user](/graph/api/userteamwork-get-installedapps?view=graph-rest-beta&preserve-view=true)|
 | Addition | beta | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/resources/userScopeTeamsAppInstallation?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added [List apps in chat](/graph/api/chat-list-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed apps in chat](/graph/api/chat-get-installedapps?view=graph-rest-beta&preserve-view=true), [Add app to chat](/graph/api/chat-post-installedapps?view=graph-rest-beta&preserve-view=true), [Uninstall app from chat](/graph/api/chat-delete-installedapps?view=graph-rest-beta&preserve-view=true), [Upgrade installed app in chat](/graph/api/chat-upgrade-installedapps?view=graph-rest-beta&preserve-view=true) methods to [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource type. |
 
 ## November 2020
 

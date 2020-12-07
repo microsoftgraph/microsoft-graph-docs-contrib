@@ -11,8 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Upgrades an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md)
-to the latest version of the app.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Upgrades an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md) to the latest version of the app.
 
 ## Permissions
 
@@ -27,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/installedApps/{id}/upgrade
+POST /teams/{team-id}/installedApps/{app-installation-id}/upgrade
 ```
 
 ## Request headers
@@ -87,18 +88,21 @@ The following is an example of the response.
   "name": "upgrade_teamsapp",
   "truncated": true
 } -->
-
 ```http
 HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
+
 

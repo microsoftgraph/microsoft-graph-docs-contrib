@@ -1,19 +1,19 @@
 ---
-title: "Remove app from team"
-description: "Uninstalls an app from the specified team."
+title: "Upgrade an app in a team"
+description: "Upgrades an app installation in a team"
 author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Remove app from team
+# Upgrade an app in a team
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [team](../resources/team.md).
+Upgrades an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md) to the latest version of the app.
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /teams/{id}/installedApps/{id}
+POST /teams/{team-id}/installedApps/{app-installation-id}/upgrade
 ```
 
 ## Request headers
@@ -54,25 +54,26 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "uninstall_teamsapp"
+  "name": "upgrade_teamsapp"
 }-->
+
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}
+POST /teams/{id}/installedApps/{id}/upgrade
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/uninstall-teamsapp-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/upgrade-teamsapp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/uninstall-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/upgrade-teamsapp-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/uninstall-teamsapp-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/upgrade-teamsapp-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/uninstall-teamsapp-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/upgrade-teamsapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -80,11 +81,11 @@ DELETE https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}
 
 ### Response
 
-The following is an example of the response.
+The following is an example of the response. 
 
 <!-- {
   "blockType": "response",
-  "name": "uninstall_teamsapp",
+  "name": "upgrade_teamsapp",
   "truncated": true
 } -->
 ```http

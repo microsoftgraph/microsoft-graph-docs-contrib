@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 Represents a [teamsApp](teamsapp.md) installed in the personal scope of a [user](user.md). Any bots that are part of the app will become part of a user's personal scope that the app is added to.
 This type inherits from [teamsAppInstallation](teamsappinstallation.md).
 
+> [!NOTE]
+> The 'id' of an teamsAppInstallation resource is not the same value as the 'id' of the associated teamsApp resource.
+
 ## Methods
 
 | Method       | Return Type  |Description|

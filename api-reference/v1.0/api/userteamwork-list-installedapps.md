@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 Retrieve the list of [apps](../resources/teamsappinstallation.md) installed in the personal scope of the specified [user](../resources/user.md).
 
+> [!NOTE]
+> The 'id' of an teamsAppInstallation resource is not the same value as the 'id' of the associated teamsApp resource.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -153,6 +156,67 @@ Content-type: application/json
   ]
 }
 ```
+
+### Example 3: Get the app installation resource based on the manifest id 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee' of the associated app
+
+#### Request
+
+The following is an example of the request.
+<!-- {
+  "blockType": "ignored",
+  "name": "user_list_teamsApps_details"
+}-->
+```http
+GET https://graph.microsoft.com/beta/users/97a5a533-833d-494b-b543-c0afe026cb96/teamwork/installedApps?$expand=teamsApp,teamsAppDefinition&$filter=teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'
+```
+
+#### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "name": "user_list_teamsApps_details",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.count": 1,
+    "value": [
+        {
+            "id": "NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwMjQwYTM2OC0yNWUwLTQ1NjktOGViZS0xMzYwMWNiNTVhMTg=",
+            "teamsApp": {
+                "id": "0240a368-25e0-4569-8ebe-13601cb55a18",
+                "externalId": "cf1ba4c7-f94e-4d80-ba90-5594b641a8ee",
+                "displayName": "YPA",
+                "distributionMethod": "sideloaded"
+            },
+            "teamsAppDefinition": {
+                "id": "MDI0MGEzNjgtMjVlMC00NTY5LThlYmUtMTM2MDFjYjU1YTE4IyM2LjAuMA==",
+                "teamsAppId": "0240a368-25e0-4569-8ebe-13601cb55a18",
+                "azureADAppId": "9fc97ea2-c417-4c76-a2db-197612067b28",
+                "displayName": "YPA",
+                "version": "6.0.0",
+                "requiredResourceSpecificApplicationPermissions": [
+                ],
+                "publishingState": "published",
+                "shortdescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
+                "description": "For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
+                "lastModifiedDateTime": null,
+                "createdBy": null
+            }
+        }
+    ]
+}
+```
+## See also
+- [List apps in catalog](appcatalogs-list-teamsapps.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

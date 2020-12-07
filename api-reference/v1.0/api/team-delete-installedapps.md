@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [team](../resources/team.md).
 
 ## Permissions
@@ -26,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /teams/{id}/installedApps/{id}
+DELETE /teams/{team-id}/installedApps/{app-installation-id}
 ```
 
 ## Request headers
@@ -54,9 +56,8 @@ The following is an example of the request.
   "blockType": "request",
   "name": "uninstall_teamsapp"
 }-->
-
 ```http
-DELETE /teams/{id}/installedApps/{id}
+DELETE /teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps/NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwMDAwMTAxNi1kZTA1LTQ5MmUtOTEwNi00ODI4ZmM4YTg2ODc=
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/uninstall-teamsapp-csharp-snippets.md)]
@@ -79,24 +80,28 @@ DELETE /teams/{id}/installedApps/{id}
 
 ### Response
 
-The following is an example of the response. 
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "name": "uninstall_teamsapp",
   "truncated": true
 } -->
-
 ```http
 HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
-  "description": "Get team",
+  "description": "Remove app from team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
+
 

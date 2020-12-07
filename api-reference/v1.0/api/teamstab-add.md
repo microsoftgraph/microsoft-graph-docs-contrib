@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 
 Adds (pins) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
-The corresponding app must already be [installed in the team](../api/teamsappinstallation-add.md).
+The corresponding app must already be [installed in the team](../api/team-post-installedapps.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
