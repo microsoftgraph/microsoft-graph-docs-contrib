@@ -73,7 +73,7 @@ GET /policies/authenticationMethodsPolicy/email
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.authMethodPolicy.emailAuthenticationMethodConfiguration"
+  "@odata.type": "microsoft.graph.emailAuthenticationMethodConfiguration"
 }
 -->
 
