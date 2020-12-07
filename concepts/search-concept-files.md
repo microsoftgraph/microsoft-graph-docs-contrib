@@ -12,15 +12,7 @@ Use the Microsoft Search API to search content stored in OneDrive or SharePoint:
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-The Search API lets you scope the types of content to retrieve in OneDrive or SharePoint by specifying the **entityTypes** property on the [searchRequest](/graph/api/resources/searchRequest). The later part of this article shows a few examples:
-
-- [Example 1: Search files](#example-1-search-files)
-- [Example 2: Search list items](#example-2-search-list-items)
-- [Example 3: Search sites](#example-3-search-sites)
-- [Example 4: Search all content in OneDrive and SharePoint](#example-4-search-all-content-in-onedrive-and-sharepoint)
-- [Example 5: Use filters in search queries](#example-5-use-filters-in-search-queries)
-- [Example 6: Specify select properties](#example-6-specify-select-properties)
-
+The Search API lets you scope the types of content to retrieve in OneDrive or SharePoint by specifying the **entityTypes** property on the [searchRequest](/graph/api/resources/searchRequest). This article describes some examples.
 
 ## Example 1: Search files
 
