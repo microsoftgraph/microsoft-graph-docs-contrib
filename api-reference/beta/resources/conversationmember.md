@@ -27,8 +27,8 @@ See also [aadUserConversationMember](aaduserconversationmember.md).
 |[Delete Channel member](../api/channel-delete-members.md) | No content | Delete a member from the channel.|
 |[List Chat members](../api/chat-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all users in the chat.|
 |[Get Chat member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a single user in the chat.|
-|[Add Chat member](../api/chat-post-members.md) | [conversationMember](conversationmember.md)| Add a member to a chat.|
-|[Delete Chat member](../api/chat-delete-members.md) | No content | Delete a member from the chat.|
+|[Add chat member](../api/chat-post-members.md) | [conversationMember](conversationmember.md) | Add a user to the chat.| 
+|[Delete chat member](../api/chat-delete-members.md) | No content | Delete a user from the chat.| 
 
 ## Properties
 
