@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A policy that defines events in an authentication pipeline, with each event further defining the appropriate actions.
+A policy that defines events in an authentication pipeline, with each event further defining the appropriate listeners that can be evaluated.
 
 By assigning [invokeUserFlowListener](../resources/invokeuserflowlistener.md) to an onSignUpStart event, you are selecting an application to be associated with a user flow, therefore enabling a [self-service sign up](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) process on it. Once the authentication event for invoking a user flow is created, users who go to that application will be able to initiate a sign-up flow that provisions a guest account.
 
