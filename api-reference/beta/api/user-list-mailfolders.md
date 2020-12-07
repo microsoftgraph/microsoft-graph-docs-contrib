@@ -34,14 +34,14 @@ GET /users/{id | userPrincipalName}/mailFolders
 To optionally also include **hidden** mail folders in the response:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailFolders/?$includeHiddenFolders=true
-GET /users/{id | userPrincipalName}/mailFolders/?$includeHiddenFolders=true
+GET /me/mailFolders/?includeHiddenFolders=true
+GET /users/{id | userPrincipalName}/mailFolders/?includeHiddenFolders=true
 ```
 
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
-`$includeHiddenFolders`: Adding this optional query parameter in the request and setting it to `true` would return all mailFolders including those that are **hidden**. Additionally, the `isHidden` mail folder property would also be included in the API response.
+`includeHiddenFolders`: Adding this optional query parameter in the request and setting it to `true` would return all mailFolders including those that are **hidden**. Additionally, the `isHidden` mail folder property would also be included in the API response.
 
 ## Request headers
 | Header       | Value |
@@ -110,7 +110,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "archive"
+            "wellKnownName": "archive",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBFQAAAA==",
@@ -119,7 +120,8 @@ Content-type: application/json
             "childFolderCount": 1,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "conversationhistory"
+            "wellKnownName": "conversationhistory",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCgAAAA==",
@@ -128,7 +130,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "deleteditems"
+            "wellKnownName": "deleteditems",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBDwAAAA==",
@@ -137,7 +140,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "drafts"
+            "wellKnownName": "drafts",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBDAAAAA==",
@@ -146,7 +150,8 @@ Content-type: application/json
             "childFolderCount": 1,
             "unreadItemCount": 70,
             "totalItemCount": 71,
-            "wellKnownName": "inbox"
+            "wellKnownName": "inbox",
+            "isHidden": false
         },
         {
             "@odata.type": "#microsoft.graph.mailSearchFolder",
@@ -157,6 +162,7 @@ Content-type: application/json
             "unreadItemCount": 4,
             "totalItemCount": 5,
             "wellKnownName": null,
+            "isHidden": false
             "isSupported": true,
             "filterQuery": "contains(subject, 'weekly digest')"
         },
@@ -167,7 +173,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "junkemail"
+            "wellKnownName": "junkemail",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCwAAAA==",
@@ -176,7 +183,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "outbox"
+            "wellKnownName": "outbox",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCQAAAA==",
@@ -185,7 +193,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "sentitems"
+            "wellKnownName": "sentitems",
+            "isHidden": false
         }
     ]
 }
@@ -208,14 +217,14 @@ Content-type: application/json
 ### Example 2
 
 ##### Request
-The next example uses `$includeHiddenFolders` query parameter to get a list of mail folders that also includes **hidden** mail folders.
+The next example uses `includeHiddenFolders` query parameter to get a list of mail folders that also includes the **hidden** mail folders.
 
 <!-- {
   "blockType": "request",
   "name": "get_hiddenmailfolders"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/mailFolders/?$includeHiddenFolders=true
+GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
 ```
 
 ##### Response
@@ -237,21 +246,23 @@ Content-length: 232
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",
     "value": [
         {
-            "id": "AQMkADYAAAIBXQAAAA==",
-            "displayName": "Archive",
-            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "id": "AAMkADg3NTY5MDg4LWMzYmQtNDQzNi05OTgwLWAAA=",
+            "displayName": "Clutters",
+            "parentFolderId": "AAMkADg3NTY5MDg4LWMzYmQtEIAAA=",
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
+            "wellKnownName": null,
             "isHidden": true
         },
         {
-            "id": "AQMkADYAAAIBFQAAAA==",
+            "id": "AAMkADg3NTY5MDg4LWMzYmQtNDQzNi05OTgwLWAAA=",
             "displayName": "Conversation History",
-            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "parentFolderId": "AAMkADg3NTY5MDg4LWMzYmQtEIAAA=",
             "childFolderCount": 1,
             "unreadItemCount": 0,
             "totalItemCount": 0,
+            "wellKnownName": "conversationhistory",
             "isHidden": false
         }
     ]
