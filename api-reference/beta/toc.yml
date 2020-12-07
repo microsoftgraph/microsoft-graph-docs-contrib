@@ -10639,6 +10639,10 @@ items:
                href: api/b2cidentityuserflow-post-identityproviders.md
              - name: Remove identity provider
                href: api/b2cidentityuserflow-delete-identityproviders.md
+             - name: List user attribute assignments
+               href: api/b2cidentityuserflow-list-userattributeassignments.md
+             - name: Create user attribute assignment
+               href: api/b2cidentityuserflow-post-userattributeassignments.md
           - name: Self-service sign up user flows
             items:
              - name: B2X user flow
@@ -10657,6 +10661,10 @@ items:
                href: api/b2xidentityuserflow-post-identityproviders.md
              - name: Remove identity provider
                href: api/b2xidentityuserflow-delete-identityproviders.md
+             - name: List user attribute assignments
+               href: api/b2xidentityuserflow-list-userattributeassignments.md
+             - name: Create user attribute assignment
+               href: api/b2xidentityuserflow-post-userattributeassignments.md
           - name: User flow attributes
             items:
              - name: User flow attribute
@@ -10671,6 +10679,16 @@ items:
                href: api/identityuserflowattribute-update.md
              - name: Delete
                href: api/identityuserflowattribute-delete.md
+          - name: User flow attribute assignment
+            items:
+             - name: User flow attribute assignment
+               href: resources/identityuserflowattributeassignment.md
+             - name: Get user flow attribute assignment
+               href: api/identityuserflowattributeassignment-get.md
+             - name: Update user flow attribute assignment
+               href: api/identityuserflowattributeassignment-update.md
+             - name: Delete user flow attribute assignment
+               href: api/identityuserflowattributeassignment-delete.md
       - name: Governance
         items:
         - name: Access reviews (groups)

@@ -4,12 +4,6 @@ description: "This changelog covers what's changed in Microsoft Graph, including
 author: "MSGraphDocsVteam"
 localization_priority: Priority
 ---
-### Identity and access
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the following properties to [Terms of Use agreementfile](/graph/api/resources/agreementfile.md):<ul><li>isMajorVersion</li><li>createdDateTime</li></ul>|
-| Addition | beta | Added the following properties to [Terms of Use agreementfilelocalization](/graph/api/resources/agreementfilelocalization.md):<ul><li>isMajorVersion</li><li>createdDateTime</li></ul>|
-| Addition | beta | Added a new resource type to [Terms of Use agreement](/graph/api/resources/agreement.md):</br>[agreementFileVersion](/graph/api/resources/agreementfileversion.md)|
 
 # Changelog for Microsoft Graph
 
@@ -19,15 +13,43 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## December 2020
 
+### Change notifications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added [todoTask](/graph/api/resources/todoTask?view=graph-rest-beta) to the resources supported for [change notifications](/graph/webhooks).|
+
+### Cloud communications
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition|v1.0|Added the [presence](/graph/api/resources/presence?view=graph-rest-1.0&preserve-view=true) resource type|
+
+### Identity and access
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the following properties to [Terms of Use agreementfile](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true):<ul><li>isMajorVersion</li><li>createdDateTime</li></ul>|
+| Addition | beta | Added the following properties to [Terms of Use agreementfilelocalization](/graph/api/resources/agreementfilelocalization?view=graph-rest-beta&preserve-view=true):<ul><li>isMajorVersion</li><li>createdDateTime</li></ul>|
+| Addition | beta | Added a new resource type to [Terms of Use agreement](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true):</br>[agreementFileVersion](/graph/api/resources/agreementfileversion?view=graph-rest-beta&preserve-view=true)|
+| Addition | beta | Added the **managerLevel** property to [requestorManager](/graph/api/resources/requestorManager?view=graph-rest-beta&preserve-view=true) resource. |
+
+### Identity and access | Identity and sign-in
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [identityUserFlowAttributeAssignment](/graph/api/resources/identityuserflowattributeassignment?view=graph-rest-beta&preserve-view=true) entity for managing attributes collected by a user flow in an Azure Active Directory or Azure Active Directory B2C tenant.|
+| Addition | beta | Added methods for listing and creating user attribute assignments to the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added methods for listing and creating user attribute assignments to the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | v1.0 | Added the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true) resource type. |
+
 ### Teamwork
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | v1.0 | Added [Get the installed app in team](/graph/api/team-get-installedapps?view=graph-rest-v1.0&preserve-view=true), [List apps for user](/graph/api/userteamwork-list-installedapps?view=graph-rest-v1.0&preserve-view=true), [Get installed app for user](/graph/api/userteamwork-get-installedapps?view=graph-rest-v1.0&preserve-view=true), [Add app for user](/graph/api/userteamwork-add-installedapps?view=graph-rest-v1.0&preserve-view=true), [Remove app for user](/graph/api/userteamwork-delete-installedapps?view=graph-rest-v1.0&preserve-view=true), and [Upgrade installed app for user](/graph/api/userteamwork-upgrade-installedapps?view=graph-rest-v1.0&preserve-view=true) methods to the [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-v1.0&preserve-view=true) resource. |
-| Addition | v1.0 | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-v1.0&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-v1.0&preserve-view=true) resource. |
+| Addition | v1.0 | Added [Get the installed app in team](/graph/api/team-get-installedapps), [List apps for user](/graph/api/userteamwork-list-installedapps), [Get installed app for user](/graph/api/userteamwork-get-installedapps), [Add app for user](/graph/api/userteamwork-add-installedapps), [Remove app for user](/graph/api/userteamwork-delete-installedapps), and [Upgrade installed app for user](/graph/api/userteamwork-upgrade-installedapps) methods to the [teamsAppInstallation](/graph/api/resources/teamsappinstallation) resource. |
+| Addition | v1.0 | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat) method to the new [userScopeTeamsAppInstallation](/graph/api/resources/userScopeTeamsAppInstallation) resource. |
 | Addition | beta | Added [Get the installed app in team](/graph/api/team-get-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed app for user](/graph/api/userteamwork-get-installedapps?view=graph-rest-beta&preserve-view=true)|
-| Addition | beta | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-beta&preserve-view=true) resource. |
-
+| Addition | beta | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/resources/userScopeTeamsAppInstallation?view=graph-rest-beta&preserve-view=true) resource. |
 
 ## November 2020
 
@@ -122,9 +144,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added support for [resource-specific consent](https://aka.ms/teams-rsc) (RSC) permissions to v1.0 APIs. |
-| Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-v1.0&preserve-view=true). |
+| Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage). |
 | Addition | Beta | Added the following methods to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource: [List channel members](/graph/api/channel-list-members?view=graph-rest-beta&preserve-view=true), [Get channel member](/graph/api/channel-get-members?view=graph-rest-beta&preserve-view=true), [Add channel member](/graph/api/channel-post-members?view=graph-rest-beta&preserve-view=true),  [Update channel member's role](/graph/api/channel-update-members?view=graph-rest-beta&preserve-view=true), [Remove channel member](/graph/api/channel-delete-members?view=graph-rest-beta&preserve-view=true).|
-| Addition | v1.0 | Added the following methods to the [channel](/graph/api/resources/channel?view=graph-rest-v1.0&preserve-view=true) resource: [List channel members](/graph/api/channel-list-members?view=graph-rest-v1.0&preserve-view=true), [Get channel member](/graph/api/channel-get-members?view=graph-rest-v1.0&preserve-view=true), [Add channel member](/graph/api/channel-post-members?view=graph-rest-v1.0&preserve-view=true),  [Update channel member's role](/graph/api/channel-update-members?view=graph-rest-v1.0&preserve-view=true), [Remove channel member](/graph/api/channel-delete-members?view=graph-rest-v1.0&preserve-view=true).|
+| Addition | v1.0 | Added the following methods to the [channel](/graph/api/resources/channel) resource: [List channel members](/graph/api/channel-list-members), [Get channel member](/graph/api/channel-get-members), [Add channel member](/graph/api/channel-post-members),  [Update channel member's role](/graph/api/channel-update-members), [Remove channel member](/graph/api/channel-delete-members).|
 
 
 ## October 2020
