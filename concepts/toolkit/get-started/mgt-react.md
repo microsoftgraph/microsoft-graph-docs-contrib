@@ -58,14 +58,20 @@ const App = (props) => {
 Or, register an event handler:
 
 ```jsx
-import { PeoplePicker } from '@microsoft/mgt-react';
+import { PeoplePicker, People } from '@microsoft/mgt-react';
 
 const App = (props) => {
+  const [people, setPeople] = useState([]);
+
   const handleSelectionChanged = (e) => {
-    this.setState({ people: e.target.selectedPeople });
+    setPeople(e.target.selectedPeople);
   };
 
-  return <PeoplePicker selectionChanged={handleSelectionChanged} />;
+  return
+    <div>
+      <PeoplePicker selectionChanged={handleSelectionChanged} />
+      Selected People: <People people={people} />
+    </div>;
 };
 ```
 
