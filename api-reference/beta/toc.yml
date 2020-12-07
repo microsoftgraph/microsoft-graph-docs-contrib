@@ -450,14 +450,18 @@ items:
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
-        - name: Install app
-          href: api/user-add-teamsappinstallation.md
-        - name: List installed apps
-          href: api/user-list-teamsappinstallation.md
-        - name: Upgrade app
-          href: api/user-upgrade-teamsappinstallation.md
-        - name: Uninstall app
-          href: api/user-delete-teamsappinstallation.md
+        - name: Add app for user
+          href: api/userteamwork-add-installedapps.md
+        - name: List apps for user
+          href: api/userteamwork-list-installedapps.md
+        - name: Gets installed app for user
+          href: api/userteamwork-get-installedapps.md
+        - name: Upgrade installed app for user
+          href: api/userteamwork-upgrade-installedapps.md
+        - name: Remove app for user
+          href: api/userteamwork-delete-installedapps.md
+        - name: Get chat between user and app
+          href: api/userscopeteamsappinstallation-get-chat.md 
       - name: To-do tasks
         items:
         - name: Task
@@ -9223,7 +9227,66 @@ items:
             - name: Delete
               href: api/intune-tem-telecomexpensemanagementpartner-delete.md
             - name: Update
-              href: api/intune-tem-telecomexpensemanagementpartner-update.md        
+              href: api/intune-tem-telecomexpensemanagementpartner-update.md
+      - name: Cloud PC (preview)
+        items:
+        - name: Virtual endpoint
+          href: resources/virtualendpoint.md
+          items:
+          - name: Get effective permissions
+            href: api/virtualendpoint-geteffectivepermissions.md
+        - name: Cloud PC
+          href: resources/cloudpc.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-cloudpcs.md
+          - name: Get
+            href: api/cloudpc-get.md
+          - name: Reprovision
+            href: api/cloudpc-reprovision.md
+        - name: Cloud PC device image
+          href: resources/cloudpcdeviceimage.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-deviceimages.md
+          - name: Get
+            href: api/cloudpcdeviceimage-get.md
+          - name: Create
+            href: api/virtualendpoint-post-deviceimages.md
+          - name: Delete
+            href: api/cloudpcdeviceimage-delete.md
+          - name: Get source images
+            href: api/cloudpcdeviceimage-getsourceimages.md
+        - name: Cloud PC on-premises connection
+          href: resources/cloudpconpremisesconnection.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-onpremisesconnections.md
+          - name: Get
+            href: api/cloudpconpremisesconnection-get.md
+          - name: Create
+            href: api/virtualendpoint-post-onpremisesconnections.md
+          - name: Update
+            href: api/cloudpconpremisesconnection-update.md
+          - name: Delete
+            href: api/cloudpconpremisesconnection-delete.md
+          - name: Run health checks
+            href: api/cloudpconpremisesconnection-runhealthcheck.md
+        - name: Cloud PC provisioning policy
+          href: resources/cloudpcprovisioningpolicy.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-provisioningpolicies.md
+          - name: Get
+            href: api/cloudpcprovisioningpolicy-get.md
+          - name: Create
+            href: api/virtualendpoint-post-provisioningpolicies.md
+          - name: Update
+            href: api/cloudpcprovisioningpolicy-update.md
+          - name: Delete
+            href: api/cloudpcprovisioningpolicy-delete.md
+          - name: Assign
+            href: api/cloudpcprovisioningpolicy-assign.md
     - name: Education
       items:
       - name: Overview
@@ -10004,10 +10067,6 @@ items:
             href: api/orgcontact-list.md
           - name: Get org contact
             href: api/orgcontact-get.md
-          - name: Update org contact
-            href: api/orgcontact-update.md
-          - name: Delete org contact
-            href: api/orgcontact-delete.md
           - name: Get org contact delta
             href: api/orgcontact-delta.md
           - name: Groups
@@ -10580,6 +10639,10 @@ items:
                href: api/b2cidentityuserflow-post-identityproviders.md
              - name: Remove identity provider
                href: api/b2cidentityuserflow-delete-identityproviders.md
+             - name: List user attribute assignments
+               href: api/b2cidentityuserflow-list-userattributeassignments.md
+             - name: Create user attribute assignment
+               href: api/b2cidentityuserflow-post-userattributeassignments.md
           - name: Self-service sign up user flows
             items:
              - name: B2X user flow
@@ -10598,6 +10661,10 @@ items:
                href: api/b2xidentityuserflow-post-identityproviders.md
              - name: Remove identity provider
                href: api/b2xidentityuserflow-delete-identityproviders.md
+             - name: List user attribute assignments
+               href: api/b2xidentityuserflow-list-userattributeassignments.md
+             - name: Create user attribute assignment
+               href: api/b2xidentityuserflow-post-userattributeassignments.md
           - name: User flow attributes
             items:
              - name: User flow attribute
@@ -10612,6 +10679,16 @@ items:
                href: api/identityuserflowattribute-update.md
              - name: Delete
                href: api/identityuserflowattribute-delete.md
+          - name: User flow attribute assignment
+            items:
+             - name: User flow attribute assignment
+               href: resources/identityuserflowattributeassignment.md
+             - name: Get user flow attribute assignment
+               href: api/identityuserflowattributeassignment-get.md
+             - name: Update user flow attribute assignment
+               href: api/identityuserflowattributeassignment-update.md
+             - name: Delete user flow attribute assignment
+               href: api/identityuserflowattributeassignment-delete.md
           - name: API connectors
             href: resources/identityapiconnector.md
             items:
@@ -11985,7 +12062,7 @@ items:
             href: api/reportroot-getyammergroupsactivitygroupcounts.md
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
-    - name: Search (preview)
+    - name: Search
       displayname: Microsoft Search API
       items:
       - name: Query
@@ -11998,7 +12075,7 @@ items:
           href: resources/searchresponse.md
         - name: Query data
           href: api/search-query.md
-      - name: Index
+      - name: Index (preview)
         items:
         - name: Overview
           href: resources/indexing-api-overview.md
@@ -12398,12 +12475,14 @@ items:
           href: api/group-delete.md
         - name: List members
           href: api/team-list-members.md
-        - name: Add members
+        - name: Get member
+          href: api/team-get-members.md
+        - name: Add member
           href: api/team-post-members.md
-        - name: Remove members
+        - name: Remove member
           href: api/team-delete-members.md
         - name: Update member
-          href: api/conversationmember-update.md
+          href: api/team-update-members.md
         - name: Archive team
           href: api/team-archive.md
         - name: Unarchive team
@@ -12476,6 +12555,16 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
+        - name: List members
+          href: api/channel-list-members.md
+        - name: Get member
+          href: api/channel-get-members.md
+        - name: Add member 
+          href: api/channel-post-members.md
+        - name: Remove member
+          href: api/channel-delete-members.md
+        - name: Update member role
+          href: api/channel-update-members.md
         - name: Complete migration for channel
           href: api/channel-completemigration.md
         - name: Get files folder
@@ -12494,12 +12583,6 @@ items:
           href: api/channel-post-message.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
-        - name: Add a member to a channel
-          href: api/conversationmember-add.md
-        - name: Remove a member from a channel
-          href: api/conversationmember-delete.md
-        - name: Update the role of a member in channel
-          href: api/conversationmember-update.md
       - name: Chat
         href: resources/chat.md
         items:
@@ -12517,6 +12600,8 @@ items:
           href: api/chat-get-message.md
         - name: Send message in chat
           href: api/chat-post-message.md
+        - name: Get chat between user and app 
+          href: api/userscopeteamsappinstallation-get-chat.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -12540,32 +12625,6 @@ items:
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
-      - name: Conversation member
-        href: resources/conversationmember.md
-        items:
-        - name: List members
-          href: api/conversationmember-list.md
-        - name: Get member
-          href: api/conversationmember-get.md
-        - name: Add member
-          href: api/conversationmember-add.md
-        - name: Update member
-          href: api/conversationmember-update.md
-        - name: Delete member
-          href: api/conversationmember-delete.md
-      - name: Azure AD user conversation member
-        href: resources/aaduserconversationmember.md
-        items:
-        - name: List members
-          href: api/conversationmember-list.md
-        - name: Get member
-          href: api/conversationmember-get.md
-        - name: Add member
-          href: api/conversationmember-add.md
-        - name: Update member
-          href: api/conversationmember-update.md
-        - name: Delete member
-          href: api/conversationmember-delete.md
       - name: App catalog
         items:
         - name: App in catalog
@@ -12584,6 +12643,8 @@ items:
           href: resources/teamsappinstallation.md
         - name: List apps in team
           href: api/teamsappinstallation-list.md
+        - name: Get app installed in a team
+          href: api/team-get-installedapps.md
         - name: Add app to team
           href: api/teamsappinstallation-add.md
         - name: Remove app from team
@@ -12591,13 +12652,25 @@ items:
         - name: Upgrade installed app for team
           href: api/teamsappinstallation-upgrade.md
         - name: List apps for user
-          href: api/user-list-teamsappinstallation.md
+          href: api/userteamwork-list-installedapps.md
+        - name: Gets installed app for user
+          href: api/userteamwork-get-installedapps.md
         - name: Add app for user
-          href: api/user-add-teamsappinstallation.md
+          href: api/userteamwork-add-installedapps.md
         - name: Remove app for user
-          href: api/user-delete-teamsappinstallation.md
+          href: api/userteamwork-delete-installedapps.md
         - name: Upgrade installed app for user
-          href: api/user-upgrade-teamsappinstallation.md
+          href: api/userteamwork-upgrade-installedapps.md
+        - name: Get chat between user and app
+          href: api/userscopeteamsappinstallation-get-chat.md
+      - name: Activity feed
+        items:
+        - name: Send notification to user in chat
+          href: api/chat-sendactivitynotification.md
+        - name: Send notification to user in team
+          href: api/team-sendactivitynotification.md
+        - name: Send notification to user
+          href: api/userteamwork-sendactivitynotification.md
       - name: Tab
         href: resources/teamstab.md
         items:
