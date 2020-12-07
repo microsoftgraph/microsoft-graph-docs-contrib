@@ -41,7 +41,7 @@ GET /users/{id | userPrincipalName}/mailFolders/?includeHiddenFolders=true
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
-`includeHiddenFolders`: Adding this optional query parameter in the request and setting it to `true` would return all mailFolders including those that are **hidden**. Additionally, the `isHidden` mail folder property would also be included in the API response.
+`includeHiddenFolders`: Adding this optional query parameter in the request and setting it to `true` would return a list of all mailFolders including those that are **hidden** (`"isHidden": true`).
 
 ## Request headers
 | Header       | Value |
