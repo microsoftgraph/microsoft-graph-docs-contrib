@@ -77,7 +77,7 @@ Well-known names work regardless of the locale of the user's mailbox, so the abo
 |childFolderCount|Int32|The number of immediate child mailFolders in the current mailFolder.|
 |displayName|String|The mailFolder's display name.|
 |id|String|The mailFolder's unique identifier.|
-|isHidden|Boolean|Indicates whether the mailFolder is hidden. This property can only be set once when creating a new mailFolder, but cannot be updated. While listing mailFolders, hidden folders are only included only when `includeHiddenFolders=true` is added in the request.|
+|isHidden|Boolean|Indicates whether the mailFolder is hidden. This property can only be set once when creating a new mailFolder, but cannot be updated. While listing mailFolders, hidden folders are only included only when `includeHiddenFolders=true` query parameter is added in the API request.|
 |parentFolderId|String|The unique identifier for the mailFolder's parent mailFolder.|
 |totalItemCount|Int32|The number of items in the mailFolder.|
 |unreadItemCount|Int32|The number of items in the mailFolder marked as unread.|
@@ -130,7 +130,7 @@ The following is a JSON representation of the resource.
   "totalItemCount": 1024,
   "unreadItemCount": 1024,
   "wellKnownName": "string",
-  "isHidden" false,
+  "isHidden": false,
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
   "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
