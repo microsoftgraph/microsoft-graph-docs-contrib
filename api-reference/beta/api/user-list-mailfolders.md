@@ -162,7 +162,7 @@ Content-type: application/json
             "unreadItemCount": 4,
             "totalItemCount": 5,
             "wellKnownName": null,
-            "isHidden": false
+            "isHidden": false,
             "isSupported": true,
             "filterQuery": "contains(subject, 'weekly digest')"
         },
