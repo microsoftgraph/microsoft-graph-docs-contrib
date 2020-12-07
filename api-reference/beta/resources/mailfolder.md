@@ -77,6 +77,7 @@ Well-known names work regardless of the locale of the user's mailbox, so the abo
 |childFolderCount|Int32|The number of immediate child mailFolders in the current mailFolder.|
 |displayName|String|The mailFolder's display name.|
 |id|String|The mailFolder's unique identifier.|
+|isHidden|Boolean|Indicates whether the mailFolder is hidden.|
 |parentFolderId|String|The unique identifier for the mailFolder's parent mailFolder.|
 |totalItemCount|Int32|The number of items in the mailFolder.|
 |unreadItemCount|Int32|The number of items in the mailFolder marked as unread.|
@@ -125,6 +126,7 @@ The following is a JSON representation of the resource.
   "childFolderCount": 1024,
   "displayName": "string",
   "id": "string (identifier)",
+  "isHidden" true,
   "parentFolderId": "string",
   "totalItemCount": 1024,
   "unreadItemCount": 1024,
