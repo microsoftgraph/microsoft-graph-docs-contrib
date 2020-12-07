@@ -3,6 +3,100 @@
     {
       "ChangeList": [
         {
+          "Id": "a4f81577-234e-11eb-8b0e-705e20bbe57e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authorizationPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [authorizationPolicy](https://docs.microsoft.com/graph/api/resources/authorizationPolicy?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Target": "authorizationPolicy"
+        }
+      ],
+      "Id": "a4f353ec-234e-11eb-8b0e-705e20bbe57e",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-12-04T12:17:04.676Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b9a0fbe9-817b-4b78-bc93-85bbd32e681f",
+          "ApiChange": "Property",
+          "ChangedApiName": "agreementFile",
+          "ChangeType": "Addition",
+          "Description": "Added the following properties to the Terms of Use [agreementfile](https://docs.microsoft.com/en-us/graph/api/resources/agreementfile?view=graph-rest-beta) resource:<ul><li>isMajorVersion</li><li>createdDateTime</li></ul>.",
+          "Target": "agreementFile"
+        },
+        {
+          "Id": "b9a0fbe9-817b-4b78-bc93-85bbd32e681f",
+          "ApiChange": "Property",
+          "ChangedApiName": "agreementFileLocalization",
+          "ChangeType": "Addition",
+          "Description": "Added the **isMajorVersion** and **createdDateTime** properties to the Terms of Use [agreementFileLocalization](https://docs.microsoft.com/en-us/graph/api/resources/agreementfilelocalization?view=graph-rest-beta) resource.",
+          "Target": "agreementFileLocalization"
+        },
+        {
+          "Id": "b9a0fbe9-817b-4b78-bc93-85bbd32e681f",
+          "ApiChange": "Property",
+          "ChangedApiName": "agreementFileVersion",
+          "ChangeType": "Addition",
+          "Description": "Added a new resource type to [Terms of Use agreement](https://docs.microsoft.com/en-us/graph/api/resources/agreement?view=graph-rest-beta):</br>[agreementFileVersion](https://docs.microsoft.com/en-us/graph/api/resources/agreementfileversion?view=graph-rest-beta).",
+          "Target": "agreementFileVersion"
+        },
+        {
+          "Id": "b9a0fbe9-817b-4b78-bc93-85bbd32e681f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "requestorManager",
+          "ChangeType": "Addition",
+          "Description": "Added the **managerLevel** property to [requestorManager](https://docs.microsoft.com/en-us/graph/api/resources/requestorManager?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "requestorManager"
+        }
+      ],
+      "Id": "b9a0fbe9-817b-4b78-bc93-85bbd32e681f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-04T17:53:06Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8edd9cea-d04c-4a1b-8c50-68270332a880",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityUserFlowAttributeAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityUserFlowAttributeAssignment](https://docs.microsoft.com/en-us/graph/api/resources/identityuserflowattributeassignment?view=graph-rest-beta) entity for managing attributes collected by a user flow in an Azure Active Directory or Azure Active Directory B2C tenant.",
+          "Target": "identityUserFlowAttributeAssignment"
+        },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "b2cIdentityUserFlow",
+          "ChangeType": "Addition",
+          "Description": "Added methods for listing and creating user attribute assignments to the [b2cIdentityUserFlow](https://docs.microsoft.com/en-us/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) resource.",
+          "Target": "b2cIdentityUserFlow"
+        },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "b2xIdentityUserFlow",
+          "ChangeType": "Addition",
+          "Description": "Added methods for listing and creating user attribute assignments to the [b2xIdentityUserFlow](https://docs.microsoft.com/en-us/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) resource.",
+          "Target": "b2xIdentityUserFlow"
+        }
+      ],
+      "Id": "074356c3-d08d-46ec-bf8d-24d90ffb9e54",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-03T17:53:06Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e2",
           "ApiChange": "Property",
           "ChangedApiName": "agreementFile",
