@@ -2,7 +2,7 @@
 title: "Create MailFolder"
 description: "Use this API to create a new mail folder in the root folder of the user's mailbox."
 localization_priority: Normal
-author: "svpsiva"
+author: "abhda"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -36,12 +36,13 @@ POST /users/{id | userPrincipalName}/mailFolders
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, provide a JSON object with the following parameters. **displayName** is the only writable property for a 
+In the request body, provide a JSON object with the following parameters. **displayName** and **isHidden** are the only writable property for a 
 [MailFolder](../resources/mailfolder.md) object.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |displayName|String|The display name of the new folder.|
+|isHidden|Boolean|Optional. Indicates whether the new folder is of hidden type. This property cannot be updated once set.|
 
 ## Response
 
@@ -62,7 +63,8 @@ Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "Clutter"
+  "displayName": "Clutter",
+  "isHidden": true
 }
 ```
 # [C#](#tab/csharp)
@@ -97,12 +99,14 @@ Content-type: application/json
 Content-length: 179
 
 {
+  "id": "hN2Y5OGRhNGYwODEALgAAA0DAKbvJvFhJgcT3lZpkhNQBAA1",
   "displayName": "Clutter",
   "parentFolderId": "AQMkADlmOGQwZmU3LWVjOWMtNDhiYgAtODcxNy1",
   "childFolderCount": 99,
   "unreadItemCount": 99,
   "totalItemCount": 99,
-  "id": "hN2Y5OGRhNGYwODEALgAAA0DAKbvJvFhJgcT3lZpkhNQBAA1"
+  "wellKnownName": null,
+  "isHidden": true
 }
 ```
 
