@@ -62,6 +62,7 @@ If successful, this method returns a `201 Created` response code and a [teamsApp
 ```http
 POST https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@thread.v2/installedApps
 Content-Type: application/json
+
 {
 "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
