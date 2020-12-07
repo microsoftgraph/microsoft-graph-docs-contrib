@@ -1364,7 +1364,7 @@ Possible values for user account types (group membership), per Windows definitio
 | signUpOrSignIn
 | passwordReset
 | profileUpdate
-| resourceOwnerPasswordCredentialSignIn
+| resourceOwner
 | unknownFutureValue
 
 ### openIdConnectResponseMode values
@@ -1466,3 +1466,86 @@ Possible values for user account types (group membership), per Windows definitio
 | application
 | delegated
 | delegatedUserConsentable
+
+### identityUserFlowAttributeInputType values
+
+| Member                |
+|:----------------------|
+| textBox               |
+| dateTimeDropDown      |
+| radioSingleSelect     |
+| dropdownSingleSelect  |
+| emailBox              |
+| checkboxMultiSelect   |
+
+### teamworkActivityTopicSource values
+
+| Member
+|:---
+| entityUrl
+| text
+
+### cloudPcDeviceImageStatus values
+
+|Member|
+|:---|
+|pending|
+|ready|
+|failed|
+
+### cloudPcDeviceImageStatusDetails values
+
+|Member|
+|:---|
+|internalServerError|
+|sourceImageNotFound|
+
+### cloudPcOnPremisesConnectionHealthCheckErrorType values
+
+|Member|
+|:---|
+|dnsCheckFqdnNotFound|
+|dnsCheckUnknownError|
+|adJoinCheckFqdnNotFound|
+|adJoinCheckIncorrectCredentials|
+|adJoinCheckOrganizationalUnitNotFound|
+|adJoinCheckOrganizationalUnitIncorrectFormat|
+|adJoinCheckUnknownError |
+|endpointConnectivityCheckUrlNotWhitelisted|
+|endpointConnectivityCheckUnknownError|
+|aadConnectivityCheckUnknownError |
+|resourceAvailabilityCheckNoSubnetIP |
+|resourceAvailabilityCheckUnknownError |
+|internalServerUnknownError |
+
+### cloudPcOnPremisesConnectionStatus values
+
+|Member|
+|:---|
+|pending|
+|running|
+|passed|
+|failed|
+|unknownFutureValue|
+
+### cloudPcProvisioningPolicyImageType values
+
+|Member|
+|:---|
+|custom|
+|gallery|
+
+### cloudPcStatus values
+
+|Member|
+|:---|
+|notProvisioned|
+|provisioning|
+|provisioned|
+|upgrading|
+|inGracePeriod|
+|deprovisioning|
+|upgradeFailed|
+|provisionFailed|
+|deprovisionFailed|
+|reprovisionFailed|

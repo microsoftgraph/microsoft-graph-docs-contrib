@@ -14,9 +14,305 @@
       "Id": "8faf36d1-4d32-4ef9-bdd1-a6f95c66bc24",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-11-12T00:00:00",
+      "CreatedDateTime": "2020-08-12T00:00:00",
       "WorkloadArea": "Identity and access ",
       "SubArea": " Identity and sign-in"
+    },
+  {
+      "ChangeList": [
+        {
+          "Id": "a4f81577-234e-11eb-8b0e-705e20bbe57e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authorizationPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [authorizationPolicy](https://docs.microsoft.com/graph/api/resources/authorizationPolicy?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Target": "authorizationPolicy"
+        }
+      ],
+      "Id": "a4f353ec-234e-11eb-8b0e-705e20bbe57e",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-12-04T12:17:04.676Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b9a0fbe9-817b-4b78-bc93-85bbd32e681f",
+          "ApiChange": "Property",
+          "ChangedApiName": "agreementFile",
+          "ChangeType": "Addition",
+          "Description": "Added the following properties to the Terms of Use [agreementfile](https://docs.microsoft.com/en-us/graph/api/resources/agreementfile?view=graph-rest-beta) resource:<ul><li>isMajorVersion</li><li>createdDateTime</li></ul>.",
+          "Target": "agreementFile"
+        },
+        {
+          "Id": "b9a0fbe9-817b-4b78-bc93-85bbd32e681f",
+          "ApiChange": "Property",
+          "ChangedApiName": "agreementFileLocalization",
+          "ChangeType": "Addition",
+          "Description": "Added the **isMajorVersion** and **createdDateTime** properties to the Terms of Use [agreementFileLocalization](https://docs.microsoft.com/en-us/graph/api/resources/agreementfilelocalization?view=graph-rest-beta) resource.",
+          "Target": "agreementFileLocalization"
+        },
+        {
+          "Id": "b9a0fbe9-817b-4b78-bc93-85bbd32e681f",
+          "ApiChange": "Property",
+          "ChangedApiName": "agreementFileVersion",
+          "ChangeType": "Addition",
+          "Description": "Added a new resource type to [Terms of Use agreement](https://docs.microsoft.com/en-us/graph/api/resources/agreement?view=graph-rest-beta):</br>[agreementFileVersion](https://docs.microsoft.com/en-us/graph/api/resources/agreementfileversion?view=graph-rest-beta).",
+          "Target": "agreementFileVersion"
+        },
+        {
+          "Id": "b9a0fbe9-817b-4b78-bc93-85bbd32e681f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "requestorManager",
+          "ChangeType": "Addition",
+          "Description": "Added the **managerLevel** property to [requestorManager](https://docs.microsoft.com/en-us/graph/api/resources/requestorManager?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "requestorManager"
+        }
+      ],
+      "Id": "b9a0fbe9-817b-4b78-bc93-85bbd32e681f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-04T17:53:06Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8edd9cea-d04c-4a1b-8c50-68270332a880",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityUserFlowAttributeAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityUserFlowAttributeAssignment](https://docs.microsoft.com/en-us/graph/api/resources/identityuserflowattributeassignment?view=graph-rest-beta) entity for managing attributes collected by a user flow in an Azure Active Directory or Azure Active Directory B2C tenant.",
+          "Target": "identityUserFlowAttributeAssignment"
+        },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "b2cIdentityUserFlow",
+          "ChangeType": "Addition",
+          "Description": "Added methods for listing and creating user attribute assignments to the [b2cIdentityUserFlow](https://docs.microsoft.com/en-us/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) resource.",
+          "Target": "b2cIdentityUserFlow"
+        },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "b2xIdentityUserFlow",
+          "ChangeType": "Addition",
+          "Description": "Added methods for listing and creating user attribute assignments to the [b2xIdentityUserFlow](https://docs.microsoft.com/en-us/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) resource.",
+          "Target": "b2xIdentityUserFlow"
+        }
+      ],
+      "Id": "074356c3-d08d-46ec-bf8d-24d90ffb9e54",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-03T17:53:06Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e2",
+          "ApiChange": "Property",
+          "ChangedApiName": "agreementFile",
+          "ChangeType": "Addition",
+          "Description": "Added the **isMajorVersion**, **createdDateTime** properties to the [agreementFile](https://docs.microsoft.com/en-us/graph/api/resources/agreementfile?view=graph-rest-beta) resource.",
+          "Target": "agreementFile"
+        },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e2",
+          "ApiChange": "Property",
+          "ChangedApiName": "agreementFileLocalization",
+          "ChangeType": "Addition",
+          "Description": "Added the **isMajorVersion**, **createdDateTime** properties to the [agreementFileLocalization](https://docs.microsoft.com/en-us/graph/api/resources/agreementfilelocalization?view=graph-rest-beta) resource.",
+          "Target": "agreementFileLocalization"
+        },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agreementFileVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the [agreementFileVersion](https://docs.microsoft.com/en-us/graph/api/resources/agreementfileversion?view=graph-rest-beta) resource.",
+          "Target": "agreementFileVersion"
+        }
+      ],
+      "Id": "074356c3-d08d-46ec-bf8d-24d90ffb9e54",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-01T17:53:06Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c0a9d0dd-5673-432c-9d93-c5acec21b14c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "permissionGrantPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionGrantPolicy](https://docs.microsoft.com/graph/api/resources/permissiongrantpolicy?view=graph-rest-1.0&preserve-view=true) resource type. Permission grant policies describe the conditions which must be met for permissions to be granted to apps.",
+          "Target": "permissionGrantPolicy"
+        }
+      ],
+      "Id": "e7715044-f69b-4fd9-a3df-acf3ced878fe",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-10-01T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6312b035-c46e-4dce-8c7b-0a9aa13409e1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delegatedPermissionClassifications",
+          "ChangeType": "Addition",
+          "Description": "Added [delegatedPermissionClassifications](https://docs.microsoft.com/graph/api/resources/delegatedpermissionclassification?view=graph-rest-1.0&preserve-view=true) navigation to the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "7f60a6f2-3d32-49ea-9b9b-193b5a94d637",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-10-01T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Application"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "118736d5-b41d-43c0-9328-355d05cff91c",
+          "ApiChange": "resource, methods",
+          "ChangedApiName": "organizationalBrandingProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true) resource type and associated methods, which allow for the customization of the visual look and feel of sign-in screens.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "31bc17bd-c296-4925-8108-fa6ebb795ffe",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewApplyAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewApplyAction](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewapplyaction?view=graph-rest-beta) resource type.",
+          "Target": "accessReviewApplyAction"
+        },
+        {
+          "Id": "3755dbea-0a4d-4bbe-8191-10c43a33b38c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewInstanceDecisionItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource type.",
+          "Target": "accessReviewInstanceDecisionItem"
+        },
+        {
+          "Id": "e1a94efb-b5f3-4642-b866-6f5a40ec4222",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewInstanceDecisionItemServicePrincipalTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewInstanceDecisionItemServicePrincipalTarget](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemServicePrincipalTarget?view=graph-rest-beta) resource type.",
+          "Target": "accessReviewInstanceDecisionItemServicePrincipalTarget"
+        },
+        {
+          "Id": "e41a616b-77de-4af6-860c-c7a9d0ea0c7e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewInstanceDecisionItemTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewInstanceDecisionItemTarget](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemTarget?view=graph-rest-beta) resource type.",
+          "Target": "accessReviewInstanceDecisionItemTarget"
+        },
+        {
+          "Id": "994005ee-295f-47ad-95eb-bde6ce3aa784",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewInstanceDecisionItemUserTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewInstanceDecisionItemUserTarget](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemUserTarget?view=graph-rest-beta) resource type.",
+          "Target": "accessReviewInstanceDecisionItemUserTarget"
+        },
+        {
+          "Id": "c14c72e0-0f9c-4255-81ea-226a88790c80",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewReviewerScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewReviewerScope](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewReviewerScope?view=graph-rest-beta) resource type.",
+          "Target": "accessReviewReviewerScope"
+        },
+        {
+          "Id": "b93d5bef-0b95-4aaf-9be5-d63073eb8c61",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewScheduleDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleDefinition?view=graph-rest-beta) resource type.",
+          "Target": "accessReviewScheduleDefinition"
+        },
+        {
+          "Id": "209fb59f-b9e9-48a6-830d-7ce71b523f0b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewScheduleSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta) resource type.",
+          "Target": "accessReviewScheduleSettings"
+        },
+        {
+          "Id": "49d87d15-c7cf-4c92-8218-8ada999c2f41",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewScope](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScope?view=graph-rest-beta) resource type.",
+          "Target": "accessReviewScope"
+        },
+        {
+          "Id": "b982c822-5efe-47e8-ada3-681e8a9a19b0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "acceptRecommendations, applyDecisions, get, list, list pendingAccessReviewInstances, sendReminder, stop",
+          "ChangeType": "Addition",
+          "Description": "Added the [acceptRecommendations](https://docs.microsoft.com/en-us/graph/api/accessreviewinstance-acceptrecommendations?view=graph-rest-1.0), [applyDecisions](https://docs.microsoft.com/en-us/graph/api/accessreviewinstance-applydecisions?view=graph-rest-1.0), [get](https://docs.microsoft.com/en-us/graph/api/accessreviewinstance-get?view=graph-rest-1.0), [list](https://docs.microsoft.com/en-us/graph/api/accessreviewinstance-list?view=graph-rest-1.0), [list pendingAccessReviewInstances](https://docs.microsoft.com/en-us/graph/api/accessreviewinstance-pendingaccessreviewinstances?view=graph-rest-1.0), [sendReminder](https://docs.microsoft.com/en-us/graph/api/accessreviewinstance-sendreminder?view=graph-rest-1.0), [stop](https://docs.microsoft.com/en-us/graph/api/accessreviewinstance-stop?view=graph-rest-1.0) methods to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+          "Target": "accessReviewInstance"
+        },
+        {
+          "Id": "27a2f94d-5fe6-446d-a3f8-0029141159dc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "list, list pendingApproval, update",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-1.0), [list pendingApproval](https://docs.microsoft.com/en-us/graph/api/accessreviewinstancedecisionitem-listpendingapproval?view=graph-rest-1.0), [update](https://docs.microsoft.com/en-us/graph/api/accessreviewinstancedecisionitem-update?view=graph-rest-1.0) methods to the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-1.0) resource.",
+          "Target": "accessReviewInstanceDecisionItem"
+        },
+        {
+          "Id": "c50b3e23-c879-4d4b-b2fc-c688cc27593b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "create, delete, get, list, update",
+          "ChangeType": "Addition",
+          "Description": "Added the [create](https://docs.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-create?view=graph-rest-1.0), [delete](https://docs.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-delete?view=graph-rest-1.0), [get](https://docs.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-get?view=graph-rest-1.0), [list](https://docs.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-list?view=graph-rest-1.0), [update](https://docs.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-update?view=graph-rest-1.0) methods to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-1.0) resource.",
+          "Target": "accessReviewScheduleDefinition"
+        }
+      ],
+      "Id": "f009a562-01c9-11eb-ae82-4aac1e5e935a",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-11-11T20:33:59.215Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2f7cfb1b-38bc-4842-b90f-bc0b1e401231",
+          "ApiChange": "Property",
+          "ChangedApiName": "application",
+          "ChangeType": "Addition",
+          "Description": "Added the **spa** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "2f7cfb1b-38bc-4842-b90f-bc0b1e401231",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-11-10T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": ""
     },
     {
       "ChangeList": [
