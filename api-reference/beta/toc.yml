@@ -9942,7 +9942,7 @@ items:
             - name: Invoke user flow listener type
               href: resources/invokeuserflowlistener.md
             - name: List listeners
-              href: api/authenticationlistener-list.md
+              href: api/authenticationeventspolicy-list-onsignupstart.md
             - name: Create listener
               href: api/authenticationeventspolicy-post-onsignupstart.md            
             - name: Get listener
@@ -9950,7 +9950,7 @@ items:
             - name: Update listener
               href: api/authenticationlistener-update.md
             - name: Put listener
-              href: authenticationlistener-put.md
+              href: api/authenticationlistener-put.md
             - name: Delete listener
               href: api/authenticationlistener-delete.md
         - name: Authentication flows policy
