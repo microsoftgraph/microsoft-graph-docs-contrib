@@ -1,6 +1,6 @@
 ---
-title: "Uninstall app installed in a chat"
-description: "API to uninstall (remove) an app installed in a chat."
+title: "Uninstall app in a chat"
+description: "Uninstall (remove) an app installed in a chat."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -39,10 +39,11 @@ DELETE /chats/{chat-id}/installedApps/{app-installation-id}
 
 If successful this method returns a `204 No Content` response code.
 
-## Example: Uninstall an app from the specified chat
+## Example
 
 ### Request
 
+The following example uninstalls an app from the specified chat.
 <!-- {
   "blockType": "request",
   "name": "delete_installedApps_in_chat"
