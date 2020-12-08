@@ -1,5 +1,156 @@
 {
   "changelog": [
+    
+    {
+        "ChangeList": [
+          {
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+            "ApiChange": "Resource",
+            "ChangedApiName": "userScopeTeamsAppInstallation",
+            "ChangeType": "Addition",
+            "Description": "Added new API [userScopeTeamsAppInstallation](https://docs.microsoft.com/en-us/graph/api/resources/userscopeteamsappinstallation?view=graph-rest-beta).",
+            "Target": "userscopeteamsappinstallation"
+          },
+          {
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+            "ApiChange": "Method",
+            "ChangedApiName": "teamsappinstallation",
+            "ChangeType": "Addition",
+            "Description": "Added the [Get installed app in team](https://docs.microsoft.com/en-us/graph/api/team-get-installedapps?view=graph-rest-beta) method.",
+            "Target": "team-get-installedapps"
+          },
+          {
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+            "ApiChange": "Method",
+            "ChangedApiName": "teamsappinstallation",
+            "ChangeType": "Addition",
+            "Description": "Added the [Get intalled app for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-get-installedapps?view=graph-rest-beta) method.",
+            "Target": "userteamwork-get-installedapps"
+          },
+          {
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+            "ApiChange": "Method",
+            "ChangedApiName": "userScopeTeamsAppInstallation",
+            "ChangeType": "Addition",
+            "Description": "Added the [Get chat between user and teamsApp](https://docs.microsoft.com/en-us/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta) method.",
+            "Target": "userscopeteamsappinstallation-get-chat"
+          }
+        ],
+        "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2020-12-02T00:00:00",
+        "WorkloadArea": "Teamwork",
+        "SubArea": ""
+      },
+    {
+        "ChangeList": [
+          {
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+            "ApiChange": "Resource",
+            "ChangedApiName": "userScopeTeamsAppInstallation",
+            "ChangeType": "Addition",
+            "Description": "Added the [userScopeTeamsAppInstallation](https://docs.microsoft.com/en-us/graph/api/resources/userscopeteamsappinstallation?view=graph-rest-v1.0) resource type.",
+            "Target": "userscopeteamsappinstallation"
+          },
+          {
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+            "ApiChange": "Method",
+            "ChangedApiName": "teamsappinstallation",
+            "ChangeType": "Addition",
+            "Description": "Added the [Get installed app in team](https://docs.microsoft.com/en-us/graph/api/team-get-installedapps?view=graph-rest-v1.0) method.",
+            "Target": "team-get-installedapps"
+          },
+          {
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+            "ApiChange": "Method",
+            "ChangedApiName": "teamsappinstallation",
+            "ChangeType": "Addition",
+            "Description": "Added the [List apps for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-list-installedapps?view=graph-rest-v1.0) method.",
+            "Target": "userteamwork-list-installedapps"
+          },
+          {
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+            "ApiChange": "Method",
+            "ChangedApiName": "teamsappinstallation",
+            "ChangeType": "Addition",
+            "Description": "Added the [Get intalled app for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-get-installedapps?view=graph-rest-v1.0) method.",
+            "Target": "userteamwork-get-installedapps"
+          },
+          {
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+            "ApiChange": "Method",
+            "ChangedApiName": "teamsappinstallation",
+            "ChangeType": "Addition",
+            "Description": "Added the [Add app for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-add-installedapps?view=graph-rest-v1.0) method.",
+            "Target": "userteamwork-add-installedapps"
+          },
+          {
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+            "ApiChange": "Method",
+            "ChangedApiName": "teamsappinstallation",
+            "ChangeType": "Addition",
+            "Description": "Added the [Remove app for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-delete-installedapps?view=graph-rest-v1.0) method.",
+            "Target": "userteamwork-delete-installedapps"
+          },
+          {
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+            "ApiChange": "Method",
+            "ChangedApiName": "teamsappinstallation",
+            "ChangeType": "Addition",
+            "Description": "Added the [Upgrade installed app for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-upgrade-installedapps?view=graph-rest-v1.0) method.",
+            "Target": "userteamwork-upgrade-installedapps"
+          },
+          {
+            "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+            "ApiChange": "Method",
+            "ChangedApiName": "teamsappinstallation",
+            "ChangeType": "Addition",
+            "Description": "Added the [Get chat between user and app](https://docs.microsoft.com/en-us/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-v1.0) method.",
+            "Target": "userscopeteamsappinstallation-get-chat"
+          }
+        ],
+        "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+        "Cloud": "prd",
+        "Version": "v1.0",
+        "CreatedDateTime": "2020-12-02T00:00:00",
+        "WorkloadArea": "Teamwork",
+        "SubArea": ""
+      },
+    {
+        "ChangeList": [
+          {
+            "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
+            "ApiChange": "Method",
+            "ChangedApiName": "getAllMessages",
+            "ChangeType": "Addition",
+            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/chats-getallmessages?view=graph-rest-beta) method to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource type collection.",
+            "Target": "chats-getallmessages"
+          },
+          {
+            "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
+            "ApiChange": "Method",
+            "ChangedApiName": "getAllMessages",
+            "ChangeType": "Addition",
+            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/channels-getallmessages?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource type collection.",
+            "Target": "channels-getallmessages"
+          },
+          {
+            "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
+            "ApiChange": "Method",
+            "ChangedApiName": "getAllMessages",
+            "ChangeType": "Addition",
+            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/teams-getallmessages?view=graph-rest-beta) method to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource type collection.",
+            "Target": "teams-getallmessages"
+          }
+        ],
+        "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2020-12-07T00:00:00",
+        "WorkloadArea": "Teamwork",
+        "SubArea": ""
+      },  
     {
       "ChangeList": [
         {

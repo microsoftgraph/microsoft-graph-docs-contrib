@@ -450,14 +450,18 @@ items:
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
-        - name: Install app
-          href: api/user-add-teamsappinstallation.md
-        - name: List installed apps
-          href: api/user-list-teamsappinstallation.md
-        - name: Upgrade app
-          href: api/user-upgrade-teamsappinstallation.md
-        - name: Uninstall app
-          href: api/user-delete-teamsappinstallation.md
+        - name: Add app for user
+          href: api/userteamwork-add-installedapps.md
+        - name: List apps for user
+          href: api/userteamwork-list-installedapps.md
+        - name: Gets installed app for user
+          href: api/userteamwork-get-installedapps.md
+        - name: Upgrade installed app for user
+          href: api/userteamwork-upgrade-installedapps.md
+        - name: Remove app for user
+          href: api/userteamwork-delete-installedapps.md
+        - name: Get chat between user and app
+          href: api/userscopeteamsappinstallation-get-chat.md 
       - name: To-do tasks
         items:
         - name: Task
@@ -1447,6 +1451,21 @@ items:
             href: api/ediscoverycase-update.md
           - name: Delete
             href: api/ediscoverycase-delete.md
+        - name: Custodian
+          href: resources/custodian.md
+          items:
+          - name: List
+            href: api/ediscoverycase-list-custodians.md
+          - name: Create
+            href: api/ediscoverycase-post-custodians.md
+          - name: Get
+            href: api/custodian-get.md
+          - name: Update
+            href: api/custodian-update.md
+          - name: Activate
+            href: api/custodian-activate.md
+          - name: Release
+            href: api/custodian-release.md
         - name: eDiscovery Review set
           href: resources/reviewset.md
           items:
@@ -1469,6 +1488,39 @@ items:
             href: api/reviewsetquery-update.md
           - name: Delete
             href: api/reviewsetquery-delete.md
+        - name: Site source
+          href: resources/sitesource.md
+          items:
+          - name: List
+            href: api/custodian-list-sitesources.md
+          - name: Create
+            href: api/custodian-post-sitesources.md
+          - name: Get
+            href: api/sitesource-get.md
+          - name: Delete
+            href: api/sitesource-delete.md
+        - name: Unified group source
+          href: resources/unifiedgroupsource.md
+          items:
+          - name: List
+            href: api/custodian-list-unifiedgroupsources.md
+          - name: Create
+            href: api/custodian-post-unifiedgroupsources.md
+          - name: Get
+            href: api/unifiedgroupsource-get.md
+          - name: Delete
+            href: api/unifiedgroupsource-delete.md
+        - name: User source
+          href: resources/usersource.md
+          items:
+          - name: List
+            href: api/custodian-list-usersources.md
+          - name: Create
+            href: api/custodian-post-usersources.md
+          - name: Get
+            href: api/usersource-get.md
+          - name: Delete
+            href: api/usersource-delete.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -10635,6 +10687,10 @@ items:
                href: api/b2cidentityuserflow-post-identityproviders.md
              - name: Remove identity provider
                href: api/b2cidentityuserflow-delete-identityproviders.md
+             - name: List user attribute assignments
+               href: api/b2cidentityuserflow-list-userattributeassignments.md
+             - name: Create user attribute assignment
+               href: api/b2cidentityuserflow-post-userattributeassignments.md
           - name: Self-service sign up user flows
             items:
              - name: B2X user flow
@@ -10653,6 +10709,10 @@ items:
                href: api/b2xidentityuserflow-post-identityproviders.md
              - name: Remove identity provider
                href: api/b2xidentityuserflow-delete-identityproviders.md
+             - name: List user attribute assignments
+               href: api/b2xidentityuserflow-list-userattributeassignments.md
+             - name: Create user attribute assignment
+               href: api/b2xidentityuserflow-post-userattributeassignments.md
           - name: User flow attributes
             items:
              - name: User flow attribute
@@ -10667,6 +10727,16 @@ items:
                href: api/identityuserflowattribute-update.md
              - name: Delete
                href: api/identityuserflowattribute-delete.md
+          - name: User flow attribute assignment
+            items:
+             - name: User flow attribute assignment
+               href: resources/identityuserflowattributeassignment.md
+             - name: Get user flow attribute assignment
+               href: api/identityuserflowattributeassignment-get.md
+             - name: Update user flow attribute assignment
+               href: api/identityuserflowattributeassignment-update.md
+             - name: Delete user flow attribute assignment
+               href: api/identityuserflowattributeassignment-delete.md
       - name: Governance
         items:
         - name: Access reviews (groups)
@@ -12550,6 +12620,8 @@ items:
           href: api/channel-post-message.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
+        - name: Get messages across all channels
+          href: api/channels-getallmessages.md  
       - name: Chat
         href: resources/chat.md
         items:
@@ -12567,6 +12639,8 @@ items:
           href: api/chat-get-message.md
         - name: Send message in chat
           href: api/chat-post-message.md
+        - name: Get chat between user and app 
+          href: api/userscopeteamsappinstallation-get-chat.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -12586,6 +12660,8 @@ items:
           href: api/channel-post-messagereply.md
         - name: Update message
           href: api/chatmessage-update.md
+        - name: Get all chat messages
+          href: api/chats-getallmessages.md  
         - name: List hosted content
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content
@@ -12608,6 +12684,8 @@ items:
           href: resources/teamsappinstallation.md
         - name: List apps in team
           href: api/teamsappinstallation-list.md
+        - name: Get app installed in a team
+          href: api/team-get-installedapps.md
         - name: Add app to team
           href: api/teamsappinstallation-add.md
         - name: Remove app from team
@@ -12615,13 +12693,17 @@ items:
         - name: Upgrade installed app for team
           href: api/teamsappinstallation-upgrade.md
         - name: List apps for user
-          href: api/user-list-teamsappinstallation.md
+          href: api/userteamwork-list-installedapps.md
+        - name: Gets installed app for user
+          href: api/userteamwork-get-installedapps.md
         - name: Add app for user
-          href: api/user-add-teamsappinstallation.md
+          href: api/userteamwork-add-installedapps.md
         - name: Remove app for user
-          href: api/user-delete-teamsappinstallation.md
+          href: api/userteamwork-delete-installedapps.md
         - name: Upgrade installed app for user
-          href: api/user-upgrade-teamsappinstallation.md
+          href: api/userteamwork-upgrade-installedapps.md
+        - name: Get chat between user and app
+          href: api/userscopeteamsappinstallation-get-chat.md
       - name: Activity feed
         items:
         - name: Send notification to user in chat
