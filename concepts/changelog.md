@@ -52,7 +52,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the **isHidden** property and **includeHiddenFolders** query parameter to the [mailFolder](/graph/api/resources/mailfolder?graph-rest-beta) entity. |
+| Addition | beta | Added the **isHidden** property and **includeHiddenFolders** query parameter to the [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true) entity. |
 
 ### Teamwork
 
