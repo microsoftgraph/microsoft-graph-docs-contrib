@@ -21,13 +21,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsTab.Create, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Delegated (work or school account) | TeamsTab.Create, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-| Application                            | TeamsTab.Create.Group*, TeamsTab.Create, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Application                            | TeamsTab.Create, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
-
-> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -104,6 +101,7 @@ Content-type: application/json
 
 - [Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
 - [Add tab to channel](channel-post-tabs.md)
+- [Add app to chat](chat-post-installedapps.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

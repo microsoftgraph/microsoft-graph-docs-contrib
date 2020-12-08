@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Delegated (work or school account) |  TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsTab.ReadWrite.Group*, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | TeamsTab.ReadWrite.Group*, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```http
-PATCH /teams/{id}/channels/{id}/tabs/{id}
+PATCH /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 ```
 
 ## Request headers

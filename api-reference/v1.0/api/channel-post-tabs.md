@@ -14,16 +14,16 @@ Namespace: microsoft.graph
 
 
 Adds (pins) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
-The corresponding app must already be [installed in the team](../api/team-post-installedapps.md).
+The corresponding app must already be [installed in the team](../api/team-list-installedapps.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsTab.Create, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Delegated (work or school account) | TeamsTab.Create, TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-| Application                            | TeamsTab.Create.Group*, TeamsTab.Create, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Application                            | TeamsTab.Create.Group*, TeamsTab.Create, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/channels/{id}/tabs
+POST /teams/{team-id}/channels/{channel-id}/tabs
 ```
 
 ## Request headers
@@ -100,7 +100,8 @@ Content-type: application/json
 
 ## See also
 
-[Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
+- [Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
+- [Add app to team](team-post-installedapps.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
