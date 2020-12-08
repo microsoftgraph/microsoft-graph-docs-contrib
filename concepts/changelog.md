@@ -51,6 +51,17 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added [Get the installed app in team](/graph/api/team-get-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed app for user](/graph/api/userteamwork-get-installedapps?view=graph-rest-beta&preserve-view=true)|
 | Addition | beta | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/resources/userScopeTeamsAppInstallation?view=graph-rest-beta&preserve-view=true) resource. |
 
+### Users
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [translationPreferences](/graph/api/resources/translationPreferences) entity.|
+| Addition | beta | Added the [translationLanguageOverride](/graph/api/resources/translationLanguageOverride) entity.|
+| Change | beta | Added the [translationPreferences](/graph/api/resources/translationLanguageOverride) property to the [regionalAndLanguageSettings](/graph/resources/regionalandlanguagesettings) resource.|
+| Change | beta | Added the translationPreference property to the [regionalAndLanguageSettings-get](/graph/api/regionalandlanguagesettings-get) JSON example |
+| Change | beta | Added the translationPreference property to the [regionalAndLanguageSettings-update](/graph/api/regionalandlanguagesettings-update) JSON example |
+
+
 ## November 2020
 
 ### Change notifications

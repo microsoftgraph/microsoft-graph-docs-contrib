@@ -100,6 +100,15 @@ Content-type: application/json
         "longTimeFormat": "h:mm:ss tt",
         "timeZone": "Pacific Standard Time"
     }
+    "translationPreferences": {
+        "translationBehavior": "Yes",
+        "languageOverrides": [
+            {
+                "languageTag": "fr",
+                "translationBehavior": "Yes" 
+            }
+        ]
+     }
 }
 ```
 # [C#](#tab/csharp)
