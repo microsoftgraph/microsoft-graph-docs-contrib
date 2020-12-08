@@ -129,6 +129,7 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1
 
 <!-- {
   "blockType": "response",
+  "name": "list_teamsapp_filter_id",
   "@odata.type": "microsoft.graph.teamsApp",
   "truncated": true,
   "isCollection": true
@@ -171,6 +172,7 @@ GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=externalId e
 
 <!-- {
   "blockType": "response",
+  "name": "list_teamsapp_filter_externalid",
   "@odata.type": "microsoft.graph.teamsApp",
   "truncated": true,
   "isCollection": true
@@ -215,6 +217,7 @@ GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id eq '876df
 
 <!-- {
   "blockType": "response",
+  "name": "list_teamsapp_expand_appdefinitions",
   "@odata.type": "microsoft.graph.teamsApp",
   "truncated": true,
   "isCollection": true
@@ -232,26 +235,20 @@ Content-Type: application/json
       "name": "Test App",
       "version": "1.0.1",
       "distributionMethod": "Organization",
-      "appDefinitions": [
-                {
-
-                    "id": "NGQyMGNiNDUtZWViYS00ZTEyLWE3YzktMGQ0NDgzYjYxNzU2IyMxLjAuMA==",
-
-                    "teamsAppId": "876df28f-2e78-423b-94a5-44181bd0e225",
-
-                    "azureADAppId": null,
-
-                    "displayName": "Test App",
-
-                    "version": "1.0.1",
-
-                    "requiredResourceSpecificApplicationPermissions": [],
-
-                    "publishingState": "published"
-
-                  }
-    ]
-  }
+      "appDefinitions": [
+        {
+          "id": "NGQyMGNiNDUtZWViYS00ZTEyLWE3YzktMGQ0NDgzYjYxNzU2IyMxLjAuMA==",
+          "teamsAppId": "876df28f-2e78-423b-94a5-44181bd0e225",
+          "azureADAppId": null,
+          "displayName": "Test App",
+          "version": "1.0.1",
+          "requiredResourceSpecificApplicationPermissions": [],
+          "publishingState": "published"
+        }
+      ]
+    }
+  ]
+}
 ```
 
 ## See also
