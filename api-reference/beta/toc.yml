@@ -1455,9 +1455,9 @@ items:
           href: resources/custodian.md
           items:
           - name: List
-            href: api/custodian-list.md
+            href: api/ediscoverycase-list-custodians.md
           - name: Create
-            href: api/custodian-create.md
+            href: api/ediscoverycase-post-custodians.md
           - name: Get
             href: api/custodian-get.md
           - name: Update
@@ -1492,9 +1492,9 @@ items:
           href: resources/sitesource.md
           items:
           - name: List
-            href: api/sitesource-list.md
+            href: api/custodian-list-sitesources.md
           - name: Create
-            href: api/sitesource-create.md
+            href: api/custodian-post-sitesources.md
           - name: Get
             href: api/sitesource-get.md
           - name: Delete
@@ -1503,9 +1503,9 @@ items:
           href: resources/unifiedgroupsource.md
           items:
           - name: List
-            href: api/unifiedgroupsource-list.md
+            href: api/custodian-list-unifiedgroupsources.md
           - name: Create
-            href: api/unifiedgroupsource-create.md
+            href: api/custodian-post-unifiedgroupsources.md
           - name: Get
             href: api/unifiedgroupsource-get.md
           - name: Delete
@@ -1514,9 +1514,9 @@ items:
           href: resources/usersource.md
           items:
           - name: List
-            href: api/usersource-list.md
+            href: api/custodian-list-usersources.md
           - name: Create
-            href: api/usersource-create.md
+            href: api/custodian-post-usersources.md
           - name: Get
             href: api/usersource-get.md
           - name: Delete

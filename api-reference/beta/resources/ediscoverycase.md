@@ -27,7 +27,7 @@ eDiscovery cases are containers that contain custodians, holds, collections, rev
 | [Close ediscoveryCase](../api/ediscoverycase-close.md)        | None                                              | Close an eDiscovery case. |
 | [Reopen ediscoveryCase](../api/ediscoverycase-reopen.md)      | None                                              | Reopen a closed eDiscovery case.|
 | [List custodians](../api/custodian-get.md)   | [custodian](../resources/custodian.md) collection |Get the custodian resources from the custodians navigation property.|
-| [Create custodians](../api/custodian-create.md)  | [custodian](../resources/custodian.md)           |Create a new custodian object.|
+| [Create custodians](../api/ediscoverycase-post-custodians.md)  | [custodian](../resources/custodian.md)           |Create a new custodian object.|
 | [List reviewSets](../api/reviewset-list.md)   | [reviewSet](../resources/reviewset.md) collection | Get the reviewSet resources from the reviewSets navigation property.|
 | [Create reviewSets](../api/reviewset-post.md)  | [reviewSet](../resources/reviewset.md)           | Create a new reviewSet object.|
 

@@ -1,6 +1,6 @@
 ---
 title: "Delete siteSource"
-description: "Deletes a siteSource object."
+description: "Delete a siteSource object."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "compliance"

@@ -1,6 +1,6 @@
 ---
 title: "custodian: release"
-description: "Releases a custodian"
+description: "Release a custodian from a case."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "compliance"

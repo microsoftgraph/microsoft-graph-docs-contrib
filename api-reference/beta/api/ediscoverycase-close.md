@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryCase: close"
-description: "Method to close an eDiscovery case"
+description: "Close an eDiscovery case."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "compliance"

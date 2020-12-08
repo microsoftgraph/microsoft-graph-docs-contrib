@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryCase: reopen"
-description: "reopens a closed eDiscovery case"
+description: "Reopen an eDiscovery case that was closed."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "compliance"

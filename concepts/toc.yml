@@ -124,8 +124,6 @@ items:
             href: outlook-large-attachments.md
           - name: Immutable ID
             href: outlook-immutable-id.md
-      - name: Users
-        href: compliance-concept-overview.md
       - name: Cloud communications
         items:
           - name: Overview
@@ -146,6 +144,8 @@ items:
             href: cloud-communications-callrecords.md
           - name: Manage phone numbers for bots
             href: cloud-communications-phone-number.md
+      - name: Compliance (preview)
+        href: compliance-concept-overview.md
       - name: Cross-device experiences
         displayName: Project Rome
         items:

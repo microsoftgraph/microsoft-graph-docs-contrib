@@ -1,6 +1,6 @@
 ---
 title: "siteSource resource type"
-description: "Data source entity for SharePoint sites"
+description: "The container for a site associated with a custodian."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "compliance"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Data source entity for SharePoint sites - This is the container for a custodian's site.
+The container for a site associated with a [custodian](custodian.md).
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List siteSources](../api/sitesource-list.md)|[siteSource](../resources/sitesource.md) collection|Get a list of **siteSource** objects and their properties.|
-|[Create siteSource](../api/sitesource-create.md)|[siteSource](../resources/sitesource.md)|Create a new **siteSource** object.|
+|[List siteSources](../api/custodian-list-sitesources.md)|[siteSource](../resources/sitesource.md) collection|Get a list of **siteSource** objects and their properties.|
+|[Create siteSource](../api/custodian-post-sitesources.md)|[siteSource](../resources/sitesource.md)|Create a new **siteSource** object.|
 |[Get siteSource](../api/sitesource-get.md)|[siteSource](../resources/sitesource.md)|Read the properties and relationships of a **siteSource** object.|
 |[Delete siteSource](../api/sitesource-delete.md)|None|Delete a **siteSource** object.|
 

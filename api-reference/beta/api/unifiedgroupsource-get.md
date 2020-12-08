@@ -1,6 +1,6 @@
 ---
 title: "Get unifiedGroupSource"
-description: "Read the properties and relationships of an unifiedGroupSource object."
+description: "Read the properties and relationships of a unifiedGroupSource object."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "compliance"

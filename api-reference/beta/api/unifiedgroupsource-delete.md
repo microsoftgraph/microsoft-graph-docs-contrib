@@ -1,6 +1,6 @@
 ---
 title: "Delete unifiedGroupSource"
-description: "Deletes an unifiedGroupSource object."
+description: "Delete a unifiedGroupSource object."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "compliance"

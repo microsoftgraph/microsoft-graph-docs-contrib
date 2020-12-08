@@ -1,6 +1,6 @@
 ---
 title: "unifiedGroupSource resource type"
-description: "Data source entity for Groups"
+description: "The container for a custodian's group."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "compliance"
@@ -13,25 +13,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Data source entity for Groups - This is the container for a custodian's group
+The container for a [custodian's](custodian.md) group.
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List unifiedGroupSources](../api/unifiedgroupsource-list.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md) collection|Get a list of the [unifiedGroupSource](../resources/unifiedgroupsource.md) objects and their properties.|
-|[Create unifiedGroupSource](../api/unifiedgroupsource-create.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md)|Create a new [unifiedGroupSource](../resources/unifiedgroupsource.md) object.|
-|[Get unifiedGroupSource](../api/unifiedgroupsource-get.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md)|Read the properties and relationships of an [unifiedGroupSource](../resources/unifiedgroupsource.md) object.|
-|[Delete unifiedGroupSource](../api/unifiedgroupsource-delete.md)|None|Deletes an [unifiedGroupSource](../resources/unifiedgroupsource.md) object.|
+|[List unifiedGroupSources](../api/custodian-list-unifiedgroupsources.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md) collection|Get a list of the **unifiedGroupSource** objects and their properties.|
+|[Create unifiedGroupSource](../api/unifiedgroupsource-create.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md)|Create a new **unifiedGroupSource** object.|
+|[Get unifiedGroupSource](../api/unifiedgroupsource-get.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md)|Read the properties and relationships of a **unifiedGroupSource** object.|
+|[Delete unifiedGroupSource](../api/unifiedgroupsource-delete.md)|None|Delete a **unifiedGroupSource** object.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[identitySet](../resources/identityset.md)|The user who created the unifiedGroupSource|
-|createdDateTime|DateTimeOffset|The date and time the unifiedGroupSource was created|
-|displayName|String|The display name of the unifiedGroup - This is the name of the group|
-|id|String|The ID of the unifiedGroupSource - This is not the ID of the actual group|
+|createdBy|[identitySet](../resources/identityset.md)|The user who created the **unifiedGroupSource**.|
+|createdDateTime|DateTimeOffset|The date and time the **unifiedGroupSource** was created.|
+|displayName|String|The display name of the unified group - This is the name of the group.|
+|id|String|The ID of the **unifiedGroupSource**. This is not the ID of the actual group.|
 |includedSources|sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
 
 ### sourceType values
@@ -47,7 +47,7 @@ Types of source related to the user. Includes mailbox and site both by default.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|group|[group](../resources/group.md)|The group associated with the unifiedGroupSource|
+|group|[group](../resources/group.md)|The group associated with the **unifiedGroupSource**.|
 
 ## JSON representation
 
