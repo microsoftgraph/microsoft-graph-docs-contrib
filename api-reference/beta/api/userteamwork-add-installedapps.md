@@ -21,14 +21,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadWriteForUser |
+|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsAppInstallation.ReadWriteForUser.All |
+|Application | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{id}/teamwork/installedApps
+POST /users/{user-id}/teamwork/installedApps
 ```
 
 ## Request headers
@@ -61,7 +61,7 @@ The following is an example of the request.
   "name": "user_add_teamsApp"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
+POST https://graph.microsoft.com/beta/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps
 Content-type: application/json
 
 {
