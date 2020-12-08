@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "ce3c6f2b-b3e3-4efe-aa1a-046ed1b62e3c",
+          "ApiChange": "Property",
+          "ChangedApiName": "mailFolder",
+          "ChangeType": "Addition",
+          "Description": "Added _isHidden_ property to **mailFolder** entity.",
+          "Target": ""
+        }
+      ],
+      "Id": "ce3c6f2b-b3e3-4efe-aa1a-046ed1b62e3c",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-08T00:00:00.000Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "656072a4-9a39-4731-8322-13932419895a",
           "ApiChange": "Property",
           "ChangedApiName": "transactionId",
