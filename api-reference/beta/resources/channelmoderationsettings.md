@@ -1,5 +1,5 @@
 ---
-title: "channelModerationSettings2 resource type"
+title: "channelModerationSettings resource type"
 description: "The channelModerationSettings resource is used to control who can start new posts and reply to posts in a channel."
 author: bhartono
 localization_priority: Normal
@@ -37,12 +37,12 @@ To support channel moderation settings via Graph APIs:
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.channelModerationSettings2"
+  "@odata.type": "microsoft.graph.channelModerationSettings"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.channelModerationSettings2",
+  "@odata.type": "#microsoft.graph.channelModerationSettings",
   "userNewMessageRestriction": "String",
   "replyRestriction": "String",
   "allowNewMessageFromBots": "Boolean",
