@@ -10631,6 +10631,8 @@ items:
                href: api/identitycontainer-post-b2cuserflows.md
              - name: Get
                href: api/b2cidentityuserflow-get.md
+             - name: Update
+               href: api/b2cidentityuserflow-update.md
              - name: Delete
                href: api/b2cidentityuserflow-delete.md
              - name: List identity providers
@@ -10643,6 +10645,10 @@ items:
                href: api/b2cidentityuserflow-list-userattributeassignments.md
              - name: Create user attribute assignment
                href: api/b2cidentityuserflow-post-userattributeassignments.md
+             - name: List languages
+               href: api/b2cidentityuserflow-list-languages.md
+             - name: Create language
+               href: api/b2cidentityuserflow-put-language.md
           - name: Self-service sign up user flows
             items:
              - name: B2X user flow
@@ -10665,6 +10671,8 @@ items:
                href: api/b2xidentityuserflow-list-userattributeassignments.md
              - name: Create user attribute assignment
                href: api/b2xidentityuserflow-post-userattributeassignments.md
+             - name: List languages
+               href: api/b2xidentityuserflow-list-languages.md
           - name: User flow attributes
             items:
              - name: User flow attribute

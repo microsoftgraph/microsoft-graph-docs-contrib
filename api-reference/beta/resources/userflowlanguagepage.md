@@ -1,6 +1,6 @@
 ---
 title: "userFlowLanguagePage resource type"
-description: "**TODO: Add Description**"
+description: "User flow language pages are used determine the strings users will be shown during the user journey you have configured using user flows."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -11,15 +11,15 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+User flow language pages are used determine the strings users will be shown during the user journey you have configured using user flows. These language pages include both the default language translations provided by Microsoft, or custom pages that can be created to customize the language translations.
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get userFlowLanguagePage](../api/userflowlanguagepage-get.md)|[userFlowLanguagePage](../resources/userflowlanguagepage.md)|Read the properties and relationships of a [userFlowLanguagePage](../resources/userflowlanguagepage.md) object.|
-|[Update userFlowLanguagePage](../api/userflowlanguagepage-update.md)|[userFlowLanguagePage](../resources/userflowlanguagepage.md)|Update the properties of a [userFlowLanguagePage](../resources/userflowlanguagepage.md) object.|
-|[Delete userFlowLanguagePage](../api/userflowlanguagepage-delete.md)|None|Deletes a [userFlowLanguagePage](../resources/userflowlanguagepage.md) object.|
+|[Get userFlowLanguagePage](../api/userflowlanguagepage-get.md)|[userFlowLanguagePage](../resources/userflowlanguagepage.md)|Retrieve the values of a default or custom [userFlowLanguagePage](../resources/userflowlanguagepage.md) object.|
+|[Update userFlowLanguagePage](../api/userflowlanguagepage-update.md)|[userFlowLanguagePage](../resources/userflowlanguagepage.md)|Update the values in a custom [userFlowLanguagePage](../resources/userflowlanguagepage.md) object.|
+|[Delete userFlowLanguagePage](../api/userflowlanguagepage-delete.md)|None|Deletes the values from a custom [userFlowLanguagePage](../resources/userflowlanguagepage.md) object.|
 
 ## Properties
 
