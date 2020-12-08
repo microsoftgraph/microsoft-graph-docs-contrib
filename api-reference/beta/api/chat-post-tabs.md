@@ -53,7 +53,9 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "add_tab_to_chat"
-}-->
+}
+-->
+
 ```http
 POST https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/tabs
 Content-Type: application/json
@@ -76,7 +78,7 @@ The following is an example of the response. Note: The response object shown her
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamstab"
+  "@odata.type": "microsoft.graph.teamsTab"
 } -->
 
 ```http

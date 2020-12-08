@@ -55,6 +55,12 @@ DELETE https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f29
 ```
 #### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+}
+-->
+
 ```http
 HTTP/1.1 204 No Content
 ```

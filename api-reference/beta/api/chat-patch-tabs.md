@@ -64,6 +64,14 @@ Content-length: 211
 }
 ```
 ##### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamsTab"
+}
+-->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
