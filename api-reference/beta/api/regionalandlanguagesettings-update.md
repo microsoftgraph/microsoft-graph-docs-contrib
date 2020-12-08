@@ -99,7 +99,7 @@ Content-type: application/json
         "shortTimeFormat": "HH:mm",
         "longTimeFormat": "h:mm:ss tt",
         "timeZone": "Pacific Standard Time"
-    }
+    },
     "translationPreferences": {
         "translationBehavior": "Yes",
         "languageOverrides": [

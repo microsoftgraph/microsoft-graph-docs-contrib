@@ -46,7 +46,7 @@ The following is a JSON definition of the resource.
 ```json
 {
     "translationBehavior": "string",
-    "languageOverrides": {"@odata.type":"microsoft.graph.translationLanguageOverride"},
+    "languageOverrides": [{"@odata.type":"microsoft.graph.translationLanguageOverride"}],
     "untranslatedLanguages": ["string"]
 }
 ```
