@@ -31,7 +31,7 @@ An open type that represents a user's preferences for languages in various conte
 | defaultSpeechInputLanguage | localeInfo                                            | The language a user expected to use as input for text to speech scenarios.<br><br>Returned by default.                                                              |
 | defaultRegionalFormat      | localeInfo                                            | The locale that drives the default date, time, and calendar formatting.<br><br>Returned by default.                                                                 |
 | regionalFormatOverrides    | [regionalFormatOverrides](regionalformatoverrides.md) | Allows a user to override their defaultRegionalFormat with field specific formats.<br><br>Returned by default.                                                      |
-| translationPreferences     | [translationPreferences](translationPreferences.md)   | The user's preferred settings when consuming translated documents, emails, messages, and websites.<br><br>Returned by default                                       |
+| translationPreferences     | [translationPreferences](translationPreferences.md)   | The user's preferred settings when consuming translated documents, emails, messages, and websites.<br><br>Returned by default. Not nullable.                                       |
 
 ## JSON representation
 

@@ -18,9 +18,9 @@ An entry into the translation language override list
 
 |Property             |Type                 		  			    |Description                                                            |
 |---------------------|-------------------------------------------------------------|-----------------------------------------------------------------------|
-|translationBehavior  |[translationBehavior](#translationbehavior-values)  	    |The user's preferred translation behavior.<br><br>Returned by default. |                   
+|translationBehavior  |[translationBehavior](#translationbehavior-values)  	    |The user's preferred translation behavior.<br><br>Returned by default. Not nullable. |                   
 |languageOverrides    |[translationOverride](translationLanguageOverride.md) collection                |The override behavior for the language tag.<br><br>Returned by default.|
-|untranslatedLanguages|String collection| The list of languages the user does not need translated. This is computed from [regionalAndLanguageSettings](regionalandlanguagesettings.md) authoring languages collection and the languageOverrides collection. The list returned will contain neutral language cultures. <br><br> Read only. Returns by default.| 
+|untranslatedLanguages|String collection| The list of languages the user does not need translated. This is computed from [regionalAndLanguageSettings](regionalandlanguagesettings.md) authoring languages collection and the languageOverrides collection. The list returned will contain neutral language cultures. <br><br>Returned by default. Read only.| 
 
 ### translationBehavior values
 
