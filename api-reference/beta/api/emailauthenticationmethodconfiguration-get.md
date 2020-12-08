@@ -79,8 +79,9 @@ GET /policies/authenticationMethodsPolicy/email
 
 ```http
 HTTP/1.1 200 OK
-
 Content-Type: application/json
+Content-length: 491
+
 {
   "value": {
     "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
