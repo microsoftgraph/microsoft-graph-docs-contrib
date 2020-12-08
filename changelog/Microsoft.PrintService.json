@@ -7,14 +7,14 @@
           "ApiChange": "Property",
           "ChangedApiName": "printerStatus",
           "ChangeType": "Change",
-          "Description": "Updated printerProcessingStateDetail enum types in [printerStatus](graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values) resource.",
+          "Description": "Updated the **printerProcessingStateDetail** enum type in the [printerStatus](graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values) resource.",
           "Target": ""
         }
       ],
       "Id": "62d9370f-55fe-465c-9041-644ef9f55a83",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-12-04T00:00:00",
+      "CreatedDateTime": "2020-12-08T00:00:00",
       "WorkloadArea": "Devices and apps ",
       "SubArea": " Cloud printing"
     },
