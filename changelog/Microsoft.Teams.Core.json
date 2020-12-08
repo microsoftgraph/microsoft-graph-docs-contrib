@@ -4,6 +4,56 @@
     {
       "ChangeList": [
         {
+          "Id": "cc9d7c96-12b8-44b3-868d-65f2e6603019",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat-delete-tabs",
+          "ChangeType": "Addition",
+          "Description": "Added the [Remove tab from chat](https://docs.microsoft.com/en-us/graph/api/chat-delete-tabs?view=graph-rest-beta) method",
+          "Target": "chat"
+        },
+        {
+          "Id": "cc9d7c96-12b8-44b3-868d-65f2e6603019",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat-get-tabs",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get specified tab in chat](https://docs.microsoft.com/en-us/graph/api/chat-get-tabs?view=graph-rest-beta) method.",
+          "Target": "chat"
+        },
+        {
+          "Id": "cc9d7c96-12b8-44b3-868d-65f2e6603019",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat-list-tabs",
+          "ChangeType": "Addition",
+          "Description": "Added the [List tabs in chat](https://docs.microsoft.com/en-us/graph/api/chat-list-tabs?view=graph-rest-beta) method.",
+          "Target": "chat"
+        },
+        {
+          "Id": "cc9d7c96-12b8-44b3-868d-65f2e6603019",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat-patch-tabs",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update tab in chat](https://docs.microsoft.com/en-us/graph/api/chat-patch-tabs?view=graph-rest-beta) method.",
+          "Target": "chat"
+        },
+        {
+          "Id": "cc9d7c96-12b8-44b3-868d-65f2e6603019",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat-post-tabs",
+          "ChangeType": "Addition",
+          "Description": "Added the [Add tab to chat](https://docs.microsoft.com/en-us/graph/api/chat-post-tabs?view=graph-rest-beta) method.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "cc9d7c96-12b8-44b3-868d-65f2e6603019",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-08T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
           "ApiChange": "Resource",
           "ChangedApiName": "userScopeTeamsAppInstallation",

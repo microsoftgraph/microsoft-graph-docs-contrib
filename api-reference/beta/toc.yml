@@ -12683,6 +12683,16 @@ items:
           href: api/channel-patch-tabs.md
         - name: Remove tab from channel
           href: api/channel-delete-tabs.md
+        - name: List tabs in chat
+          href: api/channel-list-tabs.md
+        - name: Get tab in chat
+          href: api/chat-get-tabs.md
+        - name: Add tab to chat
+          href: api/chat-post-tabs.md
+        - name: Update tab in chat
+          href: api/chat-patch-tabs.md
+        - name: Remove tab from chat
+          href: api/chat-delete-tabs.md
       - name: Calendar
         href: resources/event.md
         items:
