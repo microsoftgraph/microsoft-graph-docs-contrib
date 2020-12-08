@@ -56,7 +56,7 @@ If successful, this method returns a `201 Created` response code and a [teamsApp
 
 <!-- {
   "blockType": "request",
-  "name": "add_installedApps"
+  "name": "add_app_in_chat"
 }-->
 
 ```http
@@ -73,7 +73,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chat"
+  "@odata.type": "microsoft.graph.teamsAppInstallation"
 } -->
 
 ```http

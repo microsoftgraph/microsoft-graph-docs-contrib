@@ -26,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
 
 ## HTTP request
-
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -43,7 +42,7 @@ If successful, this method returns a `200 OK` response code and an updated [team
 
 <!-- {
   "blockType": "request",
-  "name": "update_installedApps"
+  "name": "upgrade_installedApps_in_chat"
 }-->
 
 ```http

@@ -45,7 +45,7 @@ If successful this method returns a `204 No Content` response code.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_installedApps"
+  "name": "delete_installedApps_in_chat"
 }-->
 
 ```http

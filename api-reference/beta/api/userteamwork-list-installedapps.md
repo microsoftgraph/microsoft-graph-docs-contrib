@@ -119,7 +119,7 @@ Content-type: application/json
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "user_list_teamsApps_details"
 }-->
 ```http
@@ -181,8 +181,8 @@ Content-type: application/json
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
-  "name": "user_list_teamsApps_details"
+  "blockType": "request",
+  "name": "user_list_teamsApps_details_filter"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/users/97a5a533-833d-494b-b543-c0afe026cb96/teamwork/installedApps?$expand=teamsApp,teamsAppDefinition&$filter=teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'

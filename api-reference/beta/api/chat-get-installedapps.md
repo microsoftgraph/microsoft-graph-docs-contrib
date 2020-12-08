@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` and a [teamsApp](../resources/team
 
 <!-- {
   "blockType": "request",
-  "name": "get_installedApps"
+  "name": "get_installedApps_in_chat"
 }-->
 
 ```http
