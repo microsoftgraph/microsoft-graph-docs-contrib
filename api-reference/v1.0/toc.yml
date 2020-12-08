@@ -410,7 +410,7 @@ items:
         - name: Installed app
           href: resources/teamsappinstallation.md
         - name: Add app for user
-          href: api/userteamwork-add-installedapps.md
+          href: api/userteamwork-post-installedapps.md
         - name: List apps for user
           href: api/userteamwork-list-installedapps.md
         - name: Gets installed app for user
@@ -5115,7 +5115,7 @@ items:
         - name: Gets installed app for user
           href: api/userteamwork-get-installedapps.md
         - name: Add app for user
-          href: api/userteamwork-add-installedapps.md
+          href: api/userteamwork-post-installedapps.md
         - name: Remove app for user
           href: api/userteamwork-delete-installedapps.md
         - name: Upgrade installed app for user
