@@ -1451,6 +1451,21 @@ items:
             href: api/ediscoverycase-update.md
           - name: Delete
             href: api/ediscoverycase-delete.md
+        - name: Custodian
+          href: resources/custodian.md
+          items:
+          - name: List
+            href: api/ediscoverycase-list-custodians.md
+          - name: Create
+            href: api/ediscoverycase-post-custodians.md
+          - name: Get
+            href: api/custodian-get.md
+          - name: Update
+            href: api/custodian-update.md
+          - name: Activate
+            href: api/custodian-activate.md
+          - name: Release
+            href: api/custodian-release.md
         - name: eDiscovery Review set
           href: resources/reviewset.md
           items:
@@ -1473,6 +1488,39 @@ items:
             href: api/reviewsetquery-update.md
           - name: Delete
             href: api/reviewsetquery-delete.md
+        - name: Site source
+          href: resources/sitesource.md
+          items:
+          - name: List
+            href: api/custodian-list-sitesources.md
+          - name: Create
+            href: api/custodian-post-sitesources.md
+          - name: Get
+            href: api/sitesource-get.md
+          - name: Delete
+            href: api/sitesource-delete.md
+        - name: Unified group source
+          href: resources/unifiedgroupsource.md
+          items:
+          - name: List
+            href: api/custodian-list-unifiedgroupsources.md
+          - name: Create
+            href: api/custodian-post-unifiedgroupsources.md
+          - name: Get
+            href: api/unifiedgroupsource-get.md
+          - name: Delete
+            href: api/unifiedgroupsource-delete.md
+        - name: User source
+          href: resources/usersource.md
+          items:
+          - name: List
+            href: api/custodian-list-usersources.md
+          - name: Create
+            href: api/custodian-post-usersources.md
+          - name: Get
+            href: api/usersource-get.md
+          - name: Delete
+            href: api/usersource-delete.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -12572,6 +12620,8 @@ items:
           href: api/channel-post-message.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
+        - name: Get messages across all channels
+          href: api/channels-getallmessages.md  
       - name: Chat
         href: resources/chat.md
         items:
@@ -12610,6 +12660,8 @@ items:
           href: api/channel-post-messagereply.md
         - name: Update message
           href: api/chatmessage-update.md
+        - name: Get all chat messages
+          href: api/chats-getallmessages.md  
         - name: List hosted content
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content
