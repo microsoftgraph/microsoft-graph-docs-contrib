@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and collection of [t
 ## Examples
 
 ### Example 1: List all the tabs in the channel along with associated Teams app
-##### Request
+#### Request
 The following is an example of the request.
 
 <!-- {
@@ -65,9 +65,9 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/channels/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/tabs?$expand=teamsApp
 ```
 
-##### Response
+#### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -116,7 +116,7 @@ Content-type: application/json
 ```
 
 ### Example 2: List all the tabs belonging to a specific app in a channel
-##### Request
+#### Request
 The following is an example of the request.
 
 <!-- {
@@ -129,9 +129,9 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/channels/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/tabs?$expand=teamsApp&$filter=teamsApp/id eq 'com.microsoft.teamspace.tab.planner'
 ```
 
-##### Response
+#### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
