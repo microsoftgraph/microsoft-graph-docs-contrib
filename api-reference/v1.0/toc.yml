@@ -5125,16 +5125,16 @@ items:
       - name: Tab
         href: resources/teamstab.md
         items:
-        - name: List tabs
-          href: api/teamstab-list.md
-        - name: Get tab
-          href: api/teamstab-get.md
-        - name: Update tab
-          href: api/teamstab-update.md
-        - name: Delete tab
-          href: api/teamstab-delete.md
-        - name: Add tab
-          href: api/teamstab-add.md
+        - name: List tabs in channel
+          href: api/channel-list-tabs.md
+        - name: Get tab in channel
+          href: api/channel-get-tabs.md
+        - name: Add tab to cannel
+          href: api/channel-post-tabs.md
+        - name: Update tab in channel
+          href: api/channel-patch-tabs.md
+        - name: Remove tab from channel
+          href: api/channel-delete-tabs.md
       - name: Calendar
         href: resources/event.md
         items:

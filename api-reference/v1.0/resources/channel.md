@@ -28,7 +28,7 @@ where files are shared, and where tabs are added.
 |[Create channel message post](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | Send a message to a channel. |
 |[Create reply to channel message post](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Reply to a message in a channel.|
 |[Get files folder](../api/channel-get-filesfolder.md)| [driveItem](driveitem.md) | Retrieves the details of the SharePoint folder where the files for the channel are stored. |
-|[List tabs](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
+|[List tabs](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
 |[List channel members](../api/channel-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of members in a channel.|
 |[Get channel member](../api/channel-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in a channel.|
 |[Add channel member](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Add a member to a channel. Only supported for `channel`with membershipType of `private`.|
