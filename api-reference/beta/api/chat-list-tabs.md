@@ -50,10 +50,13 @@ If successful, this method returns a `200 OK` response code and collection of [t
 ### Example 1: List all the tabs in the chat along with associated Teams app
 ##### Request
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "list_tabs_in_chat"
-}-->
+}
+-->
+
 ```http
 GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/tabs?$expand=teamsApp
 ```
@@ -61,6 +64,14 @@ GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@t
 ##### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.teamsTab)"
+}
+-->
+
 ```http
 HTTP/1.1 200 Success
 Content-type: application/json
@@ -132,10 +143,13 @@ Content-type: application/json
 ### Example 2: List all the tabs belonging to a specific app in a chat
 ##### Request
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "list_tabs_in_chat_app_filter"
-}-->
+}
+-->
+
 ```http
 GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/tabs?$expand=teamsApp&$filter=teamsApp/id eq 'com.microsoft.teamspace.tab.web'
 ```
@@ -143,6 +157,14 @@ GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@t
 ##### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.teamsTab)"
+}
+-->
+
 ```http
 HTTP/1.1 200 Success
 Content-type: application/json
