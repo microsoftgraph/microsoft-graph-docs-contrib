@@ -186,7 +186,7 @@ Content-Type: application/json
             "distributionMethod": "organization"
         }
     ]
-  }
+}
 ```
 
 ## See also

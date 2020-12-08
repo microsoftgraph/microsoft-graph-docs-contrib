@@ -250,8 +250,6 @@ Content-Type: application/json
                     "publishingState": "published"
 
                   }
-            ]
-      }
     ]
   }
 ```
