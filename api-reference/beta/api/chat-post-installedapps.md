@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Installs a [teamsApp](../resources/teamsapp.md) to the specified [chat](../resources/chat.md).
+Install a [teamsApp](../resources/teamsapp.md) to the specified [chat](../resources/chat.md).
 
 ## Permissions
 
@@ -44,13 +44,13 @@ POST /chats/{chat-id}/installedApps
 
 ## Request body
 
-The request body should contain the catalog app's generated app ID. *See* [teamsApp Properties](../resources/teamsapp.md#properties)
+The request body should contain the catalog app's generated app ID. For details, see [teamsApp properties](../resources/teamsapp.md#properties).
 
 ## Response
 
 If successful, this method returns a `201 Created` response code.
 
-## Example:  Install an app in the specified chat
+## Examples
 
 ### Request
 
