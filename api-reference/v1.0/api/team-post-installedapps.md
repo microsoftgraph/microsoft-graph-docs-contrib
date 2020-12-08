@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Installs an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
 
 ## Permissions
