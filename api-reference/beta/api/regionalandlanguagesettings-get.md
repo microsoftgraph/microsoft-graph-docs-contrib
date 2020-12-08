@@ -3,7 +3,7 @@ title: "Get regionalAndLanguageSettings resource"
 description: "Retrieve the properties of a user's regionalAndLanguageSettings"
 author: "jasonbro"
 localization_priority: Normal
-ms.prod: "settings"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

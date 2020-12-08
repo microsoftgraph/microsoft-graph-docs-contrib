@@ -3,7 +3,7 @@ title: "translationLanguageOverride resource type"
 description: "A resource representing an entry in the translation language override list."
 localization_priority: Normal
 author: "jasonbro"
-ms.prod: "settings"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 # translationLanguageOverride resource type

@@ -3,7 +3,7 @@ title: "regionalAndLanguageSettings resource type"
 description: "A resource representing a users regional and language preferences"
 localization_priority: Normal
 author: "jasonbro"
-ms.prod: "settings"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 

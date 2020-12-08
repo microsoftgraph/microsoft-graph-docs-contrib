@@ -3,7 +3,7 @@ title: "Update regionalAndLanguageSettings"
 description: "Update the regional and language settings of a user"
 author: "jasonbro"
 localization_priority: Normal
-ms.prod: "settings"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

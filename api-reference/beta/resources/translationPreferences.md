@@ -3,7 +3,7 @@ title: "translationPreferences resource type"
 description: "A resource representing the user's translation settings preferences."
 localization_priority: Normal
 author: "jasonbro"
-ms.prod: "settings"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 # translationPreferences resource type
@@ -18,8 +18,8 @@ An entry into the translation language override list
 
 |Property             |Type                 		  			    |Description                                                            |
 |---------------------|-------------------------------------------------------------|-----------------------------------------------------------------------|
-|translationBehavior  |[translationBehavior](#translationPreferences-values)  	    |The user's preferred translation behavior.<br><br>Returned by default. |                   
-|languageOverrides    |[translationOverride](translationOverride.md) collection                |The override behavior for the language tag.<br><br>Returned by default.|
+|translationBehavior  |[translationBehavior](#translationBehavior-values)  	    |The user's preferred translation behavior.<br><br>Returned by default. |                   
+|languageOverrides    |[translationOverride](translationLanguageOverride.md) collection                |The override behavior for the language tag.<br><br>Returned by default.|
 |untranslatedLanguages|String collection| The list of languages the user does not need translated. This is computed from [regionalAndLanguageSettings](regionalandlanguagesettings.md) authoring languages collection and the languageOverrides collection. The list returned will contain neutral language cultures. <br><br> Read only. Returns by default.| 
 
 ### translationBehavior values
@@ -46,7 +46,7 @@ The following is a JSON definition of the resource.
 ```json
 {
     "translationBehavior": "string",
-    "languageOverrides": {"@odata.type":"microsoft.graph.translationOverride"},
+    "languageOverrides": {"@odata.type":"microsoft.graph.translationLanguageOverride"},
     "untranslatedLanguages": ["string"]
 }
 ```
