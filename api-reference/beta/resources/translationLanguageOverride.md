@@ -19,7 +19,7 @@ An entry into the translation language override list
 |Property             |Type                 		  			    |Description                                                            |
 |---------------------|-------------------------------------------------------------|-----------------------------------------------------------------------|
 |languageTag	      |String               		  			    |The language to apply the override.<br><br>Returned by default. Not nullable       |                   
-|translationBehavior  |[translationBehavior](translationPreferences.md#translationbehavior-values)        |The override behavior for the language tag.<br><br>Returned by default. Not nullable.|
+|translationBehavior  |[String](translationPreferences.md#translationbehavior-values)        |The override behavior for the language tag.<br><br>Returned by default. Not nullable.|
 
 ## JSON representation
 
