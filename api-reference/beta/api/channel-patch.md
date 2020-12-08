@@ -52,7 +52,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
-### Request
+### Example 1: Update channel
+
+#### Request
 
 Here is an example of the request.
 
@@ -70,7 +72,7 @@ PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 ---
 
-### Response
+#### Response
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -80,6 +82,34 @@ Here is an example of the response. Note: The response object shown here may be 
 } -->
 ```http
 HTTP/1.1 204 No Content
+```
+
+### Example 2: Update channel with moderation settings
+
+#### Request
+
+The following example shows a request to update a channel with moderation settings. Update channel with moderation settings is only allowed to be performed by Team owner.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_channel_from_user"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}
+Content-type: application/json
+{
+    "displayName": "UpdateChannelModeration",
+    "description": "Update channel moderation.",
+    "moderationSettings": {
+        "userNewMessageRestriction": "moderators",
+        "replyRestriction": "everyone",
+        "allowNewMessageFromBots": true,
+        "allowNewMessageFromConnectors": true
+    }
+}
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

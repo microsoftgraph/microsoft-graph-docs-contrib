@@ -50,6 +50,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat) method to the new [userScopeTeamsAppInstallation](/graph/api/resources/userScopeTeamsAppInstallation) resource. |
 | Addition | beta | Added [Get the installed app in team](/graph/api/team-get-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed app for user](/graph/api/userteamwork-get-installedapps?view=graph-rest-beta&preserve-view=true)|
 | Addition | beta | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/resources/userScopeTeamsAppInstallation?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **channelModerationSettings** property to [channel](/graph/api/resources/channel?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **replyRestriction** enumeration type. |
+| Addition | beta | Added the **userNewMessageRestriction** enumeration type. |
 
 ## November 2020
 

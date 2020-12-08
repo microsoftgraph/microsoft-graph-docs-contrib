@@ -152,6 +152,34 @@ Content-type: application/json
 }
 ```
 
+### Example 3: Create standard channel with moderation settings
+
+#### Request
+
+The following example shows a request to create a standard channel with moderation settings. Create channel with moderation settings is only allowed for standard channel.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_channel_from_user"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/{group_id}/channels
+Content-type: application/json
+{
+    "displayName": "TestChannelModeration",
+    "description": "Test channel moderation.",
+    "membershipType": "standard"
+    "moderationSettings": {
+        "userNewMessageRestriction": "everyoneExceptGuests",
+        "replyRestriction": "everyone",
+        "allowNewMessageFromBots": true,
+        "allowNewMessageFromConnectors": true
+    }
+}
+```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

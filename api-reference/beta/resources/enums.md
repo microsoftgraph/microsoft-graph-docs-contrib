@@ -11,6 +11,23 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### replyRestriction values
+
+| Member
+|:--------------
+| everyone
+| authorAndModerators
+| unknownFutureValue
+
+### userNewMessageRestriction values
+
+| Member
+|:--------------
+|everyone
+|everyoneExceptGuests
+|moderators
+|unknownFutureValue
+
 ### volumeType values
 
 | Member

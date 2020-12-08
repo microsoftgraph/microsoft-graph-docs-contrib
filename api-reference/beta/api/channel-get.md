@@ -101,13 +101,79 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
     "description": "description-value",
     "displayName": "display-name-value",
     "id": "id-value",
     "membershipType": "membership-type-value"
+}
+```
+
+Here is an example of the response for standard channel while channel moderation is off.
+
+```http
+HTTP/1.1 200 OK
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('8bb12236-b929-42e0-94a0-1c417466ebf8')/channels/$entity",
+    "id": "19:d468258bc90f4a358361b5d73b89d39b@thread.skype",
+    "displayName": "TestChannelModeration",
+    "description": "Test channel moderation.",
+    "isFavoriteByDefault": null,
+    "email": "",
+    "webUrl": "https://teams.microsoft.com/l/channel/19%3Ad468258bc90f4a358361b5d73b89d39b%40thread.skype/General?groupId=8bb12236-b929-42e0-94a0-1c417466ebf8&tenantId=139d16b4-7223-43ad-b9a8-674ba63c7924",
+    "membershipType": "standard",
+    "moderationSettings": {
+        "userNewMessageRestriction": "everyone",
+        "replyRestriction": "everyone",
+        "allowNewMessageFromBots": true,
+        "allowNewMessageFromConnectors": true
+    }
+}
+```
+
+Here is an example of the response for standard channel while channel moderation is on.
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('8bb12236-b929-42e0-94a0-1c417466ebf8')/channels/$entity",
+    "id": "19:d468258bc90f4a358361b5d73b89d39b@thread.skype",
+    "displayName": "TestChannelModeration",
+    "description": "Test channel moderation.",
+    "isFavoriteByDefault": null,
+    "email": "",
+    "webUrl": "https://teams.microsoft.com/l/channel/19%3Ad468258bc90f4a358361b5d73b89d39b%40thread.skype/General?groupId=8bb12236-b929-42e0-94a0-1c417466ebf8&tenantId=139d16b4-7223-43ad-b9a8-674ba63c7924",
+    "membershipType": "standard",
+    "moderationSettings": {
+        "userNewMessageRestriction": "moderators",
+        "replyRestriction": "everyone",
+        "allowNewMessageFromBots": true,
+        "allowNewMessageFromConnectors": true
+    }
+}
+```
+
+Here is an example of the response for private channel.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('8bb12236-b929-42e0-94a0-1c417466ebf8')/channels/$entity",
+    "id": "19:d468258bc90f4a358361b5d73b89d39b@thread.skype",
+    "displayName": "TestChannelModeration",
+    "description": "Test channel moderation.",
+    "isFavoriteByDefault": null,
+    "email": "",
+    "webUrl": "https://teams.microsoft.com/l/channel/19%3Ad468258bc90f4a358361b5d73b89d39b%40thread.skype/General?groupId=8bb12236-b929-42e0-94a0-1c417466ebf8&tenantId=139d16b4-7223-43ad-b9a8-674ba63c7924",
+    "membershipType": "private",
+    "moderationSettings": null
 }
 ```
 
