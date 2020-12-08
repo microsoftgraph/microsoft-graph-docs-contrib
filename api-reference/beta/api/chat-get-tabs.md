@@ -32,7 +32,7 @@ GET /chats/{chat-id}/tabs/{tab-id}
 
 ## Optional query parameters
 
-This method supports the $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Header       | Value |
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [tab](../resources/teamstab.md) object in the response body.
 ## Example
-#### Request
+### Request
 The following is an example of the request.
 <!-- {
   "blockType": "request",
@@ -55,10 +55,10 @@ The following is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@thread.v2/tabs/d731fca0-0f14-4537-971a-0ef9101ff13d?$expand=teamsApp
 ```
-#### Response
+### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
