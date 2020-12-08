@@ -34,13 +34,15 @@ To help you set up the most common identity tasks for your applications, Azure A
 |[List identity providers](../api/b2cidentityuserflow-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a B2C user flow.|
 |[Add identity provider](../api/b2cidentityuserflow-post-identityproviders.md)|None|Add an identity provider to a B2C user flow.|
 |[Remove identity provider](../api/b2cidentityuserflow-delete-identityproviders.md)|None|Remove an identity provider from a B2C user flow.|
+|[List user attribute assignments](../api/b2cidentityuserflow-list-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|Retrieve all user attribute assignments in a B2C user flow.|
+|[Create user attribute assignment](../api/b2cidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Create a user attribute assignment in a B2C user flow.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
 |id|String|The name of the user flow. This is a required value and is immutable after it's created. The name will be prefixed with the value of `B2C_1_` after creation.|
-|userFlowType|String|The [type of user flow](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-versions). The supported values for **userFlowType** are:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
+|userFlowType|String|The [type of user flow](/azure/active-directory-b2c/user-flow-versions). The supported values for **userFlowType** are:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|Single|The version of the user flow.|
 
 ## Relationships
@@ -48,6 +50,7 @@ To help you set up the most common identity tasks for your applications, Azure A
 | Relationship       | Type  |Description|
 |:---------------|:--------|:----------|
 |identityProviders|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
+|userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|The user attribute assignments included in the user flow.|
 
 ## JSON representation
 
@@ -65,6 +68,7 @@ The following is a JSON representation of the resource.
     "id": "String (identifier)",
     "userFlowType": "String",
     "userFlowTypeVersion": "Single",
-    "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}]
+    "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
+    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}]
 }
 ```
