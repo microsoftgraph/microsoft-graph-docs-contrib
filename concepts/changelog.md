@@ -24,6 +24,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|v1.0|Added the [presence](/graph/api/resources/presence?view=graph-rest-1.0&preserve-view=true) resource type|
 
+### Compliance | eDiscovery
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [custodian](/graph/api/resources/custodian?view=graph-rest-beta&preserve-view=true), [unifiedGroupSource](/graph/api/resources/unifiedgroupsource?view=graph-rest-beta&preserve-view=true), and [siteSource](/graph/api/resources/sitesource?view=graph-rest-beta&preserve-view=true) resources and associated methods. |
+
 ### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
