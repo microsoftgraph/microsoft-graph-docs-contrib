@@ -62,8 +62,6 @@ If successful, this method returns a `200 OK` response code and collection of [t
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "list_installed_apps_in_team"
@@ -112,7 +110,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_installed_teams_apps_expand"
@@ -195,11 +192,11 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Get the app installation resource based on the manifest id 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee' of the associated app
+### Example 3: Get the app installation resource based on the manifest ID of the associated app
 
 #### Request
 
-The following is an example of the request.
+The following is an example of the request. In the example, the manifest ID of the Teams app is 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
 <!-- {
   "blockType": "request",
   "name": "list_installed_apps_in_team_expand_filter_externalid"

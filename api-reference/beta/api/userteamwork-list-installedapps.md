@@ -175,11 +175,11 @@ Content-type: application/json
   ]
 }
 ```
-### Example 3: Get the app installation resource based on the manifest id 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee' of the associated app
+### Example 3: Get the app installation resource based on the manifest ID of the associated app
 
 #### Request
 
-The following is an example of the request.
+The following is an example of the request. In the example, the manifest ID of the Teams app is 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
 <!-- {
   "blockType": "request",
   "name": "user_list_teamsApps_details_filter"

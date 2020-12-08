@@ -63,8 +63,6 @@ The following example lists all applications that are specific to your tenant.
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamsapps_filter_distributionMethod"
@@ -110,8 +108,6 @@ The following example lists applications with a given ID.
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp_filter_id"
@@ -146,14 +142,12 @@ Content-Type: application/json
   ]
 }
 ```
-### Example 3: Find application based on the Teams app manifest id.
+### Example 3: Find application based on the Teams app manifest ID.
 
-The following example lists applications that match the 'id' specified in the Teams app manifest.
+The following example lists applications that match the 'id' specified in the Teams app manifest. In the example, the manifest ID of the Teams app is 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp_filter_externalid"
