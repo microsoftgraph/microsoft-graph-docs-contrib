@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 List all [app installations](../resources/teamsappinstallation.md) within a [chat](../resources/chat.md).
 
 > [!NOTE]
-> The 'id' of an teamsAppInstallation resource is not the same value as the 'id' of the associated teamsApp resource.
+> The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
 
 
 ## Permissions
@@ -39,7 +39,7 @@ GET /chats/{chat-id}/installedApps
 
 ## Optional query parameters
 
-This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -199,7 +199,7 @@ GET https://graph.microsoft.com/beta/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "name": "list_installed_apps_in_chat_expand_filter",
