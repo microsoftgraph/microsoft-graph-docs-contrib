@@ -48,7 +48,7 @@ The request body should contain the catalog app's generated app ID. *See* [teams
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [teamsApp](../resources/channel.md) in the response body.
+If successful, this method returns a `201 Created` response code.
 
 ## Example:  Install an app in the specified chat
 

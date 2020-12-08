@@ -34,7 +34,7 @@ POST /chats/{chat-id}/installedApps/{app-installation-id}/upgrade
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [teamsApp](../resources/teamsapp.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example: Upgrade an app installed in a chat
 
