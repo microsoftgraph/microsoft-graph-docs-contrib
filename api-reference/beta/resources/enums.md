@@ -1540,7 +1540,4 @@ Possible values for user account types (group membership), per Windows definitio
 |upgrading|
 |inGracePeriod|
 |deprovisioning|
-|upgradeFailed|
-|provisionFailed|
-|deprovisionFailed|
-|reprovisionFailed|
+|failed|
