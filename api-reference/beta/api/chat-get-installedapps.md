@@ -45,10 +45,11 @@ GET /chats/{chat-id}/installedApps/{app-installation-id}
 
 If successful, this method returns a `200 OK` and a [teamsApp](../resources/teamsapp.md) object in the body.
 
-## Example: Get an app installed in the specified chat
+## Example
 
 ### Request
 
+The following example gets an app installed in the specified chat.
 <!-- {
   "blockType": "request",
   "name": "get_installedApps_in_chat"
