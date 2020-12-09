@@ -12575,11 +12575,17 @@ items:
       - name: Chat
         href: resources/chat.md
         items:
-	    - name: Get members
+        - name: List chats
+          href: api/chat-list.md
+        - name: Get chat
+          href: api/chat-get.md
+        - name: List members
+          href: api/chat-list-members.md
+        - name: Get members
           href: api/chat-get-members.md
-	    - name: Add member
+        - name: Add member
           href: api/chat-post-members.md
-	    - name: Remove member
+        - name: Remove member
           href: api/chat-delete-members.md
         - name: List messages in a chat
           href: api/chat-list-message.md
