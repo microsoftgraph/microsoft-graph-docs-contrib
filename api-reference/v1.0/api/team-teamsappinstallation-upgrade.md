@@ -1,13 +1,13 @@
 ---
-title: "Upgrade an app in a team"
-description: "Upgrades an app installation in a team"
+title: "teamsAppInstallation: upgrade"
+description: "Upgrade an app installation in a team"
 author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Upgrade an app in a team
+# teamsAppInstallation: upgrade
 
 Namespace: microsoft.graph
 
@@ -49,7 +49,6 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "upgrade_teamsapp_in_team"
