@@ -34,14 +34,14 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "userId": "string"
-    "error": {}
+    "userId": "string",
+    "error": "microsoft.graph.publicError"
 }
 ```
 
 ## See also
 
-- [Add members in bulk to team](../api/team-bulkadd-members.md)
+- [Add members in bulk to team](../api/team-members-add.md)
 
 <!-- uuid: 20fd7863-9545-40d4-ae8f-fee2d115a690
 2015-10-25 14:57:30 UTC -->

@@ -102,6 +102,8 @@ The following is the response.
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.aadUserConversationMemberResult)",
     "values": [
@@ -163,6 +165,8 @@ The following is the response.
 
 ```http
 HTTP/1.1 207 MULTI-STATUS
+Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.addConversationMemberResult)",
     "values": [

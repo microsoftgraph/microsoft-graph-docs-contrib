@@ -17,7 +17,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added [todoTask](/graph/api/resources/todoTask?view=graph-rest-beta) to the resources supported for [change notifications](/graph/webhooks).|
+| Addition | beta | Added [todoTask](/graph/api/resources/todoTask?view=graph-rest-beta&preserve-view=true) to the resources supported for [change notifications](/graph/webhooks).|
 
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |

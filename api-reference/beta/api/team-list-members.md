@@ -41,7 +41,7 @@ GET /teams/{team-id}/members
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -219,6 +219,9 @@ Content-Type: application/json
 ### Example 4: List only those members who are *owners* of the team
 
 This is a request to find all the members who are have *owner* role attached to them.
+
+> [!NOTE]
+> There are some known issues with this functionality that are being investigated.
 
 #### Request
 
