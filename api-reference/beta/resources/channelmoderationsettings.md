@@ -30,8 +30,8 @@ To support channel moderation settings via Graph APIs:
 |:---|:---|:---|
 |allowNewMessageFromBots|Boolean|Indicates whether bots are allowed to post messages.|
 |allowNewMessageFromConnectors|Boolean|Indicates whether connectors are allowed to post messages.|
-|replyRestriction|[replyRestriction](../resources/enums.md#replyRestriction-values)|Indicates who all are allowed to reply to teams channel.|
-|userNewMessageRestriction|[userNewMessageRestriction](../resources/enums.md#userNewMessageRestriction-values)|Indicates who all are allowed to post messages to teams channel.|
+|replyRestriction|[replyRestriction](../resources/enums.md#replyrestriction-values)|Indicates who all are allowed to reply to teams channel.|
+|userNewMessageRestriction|[userNewMessageRestriction](../resources/enums.md#usernewmessagerestriction-values)|Indicates who all are allowed to post messages to teams channel.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
