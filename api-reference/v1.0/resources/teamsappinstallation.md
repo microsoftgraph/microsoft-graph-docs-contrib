@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 Represents a [teamsApp](teamsapp.md) installed in a [team](team.md) or the personal scope of a [user](user.md). Any bots that are part of the app will become part of any team or user's personal scope that the app is added to.
 
 > [!NOTE]
-> The 'id' of an teamsAppInstallation resource is not the same value as the 'id' of the associated teamsApp resource.
+> The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
 
 ## Methods
 
@@ -36,7 +36,7 @@ Represents a [teamsApp](teamsapp.md) installed in a [team](team.md) or the perso
 
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | A unique ID (not the Teams appID). |
+| id                  | string   | A unique ID (not the Teams app ID). |
 
 ## Relationships
 
