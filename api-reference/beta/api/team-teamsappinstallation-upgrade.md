@@ -1,45 +1,44 @@
 ---
-title: "Delete tab from channel"
-description: "Removes (unpins) a tab from the specified channel within a team. "
-author: "nkramer"
+title: "teamsAppInstallation: upgrade"
+description: "Upgrade an app installation in a team"
+author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Delete tab from channel
+# teamsAppInstallation: upgrade
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Removes (unpins) a tab from the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
+Upgrade an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md) to the latest version of the app.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Delegated (work or school account) | TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsTab.Delete.Group*, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
-
-> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+|Application | TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /teams/{id}/channels/{id}/tabs/{id}
+POST /teams/{team-id}/installedApps/{app-installation-id}/upgrade
 ```
 
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -47,17 +46,30 @@ Do not supply a request body for this method.
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-#### Request
+
+### Request
+
 The following is an example of the request.
+
 <!-- {
-  "blockType": "ignored",
-  "name": "get_team"
+  "blockType": "request",
+  "name": "upgrade_teamsapp_in_team"
 }-->
+
 ```http
-DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
+POST https://graph.microsoft.com/beta/teams/db5e04be-daa2-4a35-beb1-5e73cc381599/installedApps/NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwMjQwYTM2OC0yNWUwLTQ1NjktOGViZS0xMzYwMWNiNTVhMTg=/upgrade
 ```
-#### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+
+### Response
+
+The following is an example of the response. 
+
+<!-- {
+  "blockType": "response",
+  "name": "upgrade_teamsapp_in_team",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -67,10 +79,12 @@ HTTP/1.1 204 No Content
 <!--
 {
   "type": "#page.annotation",
-  "description": "Delete tab from channel",
+  "description": "Upgrade app in team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": []
 }
 -->
+
 
