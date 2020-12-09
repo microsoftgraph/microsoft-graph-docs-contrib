@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Retrieve the list of [apps](../resources/teamsappinstallation.md) installed in the personal scope of the specified [user](../resources/user.md).
 
 > [!NOTE]
-> The 'id' of an teamsAppInstallation resource is not the same value as the 'id' of the associated teamsApp resource.
+> The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
 
 ## Permissions
 
@@ -38,7 +38,7 @@ GET /users/{user-id}/teamwork/installedApps
 
 ## Optional query parameters
 
-This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
