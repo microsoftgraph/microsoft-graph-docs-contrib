@@ -1,5 +1,5 @@
 ---
-title: "Update app in a chat"
+title: "teamsAppInstallation: upgrade"
 description: "Update an app installed in a chat and bring it in sync with the current version available in the tenant app catalog."
 author: "laujan"
 localization_priority: Priority
@@ -7,13 +7,13 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Update app in a chat
+# teamsAppInstallation: upgrade
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update [teamsAppInstallation](../resources/teamsappinstallation.md) of an [app](../resources/teamsapp.md) within a [chat](../resources/chat.md).
+Upgrade an [app installation](../resources/teamsappinstallation.md) within a [chat](../resources/chat.md).
 
 ## Permissions
 
@@ -36,10 +36,11 @@ POST /chats/{chat-id}/installedApps/{app-installation-id}/upgrade
 
 If successful, this method returns a `204 No Content` response code.
 
-## Example: Upgrade an app installed in a chat
+## Example
 
 ### Request
 
+The following example upgrades an app installed in a chat.
 <!-- {
   "blockType": "request",
   "name": "upgrade_installedApps_in_chat"
