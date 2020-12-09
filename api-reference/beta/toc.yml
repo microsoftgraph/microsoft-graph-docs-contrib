@@ -12579,7 +12579,7 @@ items:
           href: api/chat-list.md
         - name: Get chat
           href: api/chat-get.md
-	    - name: List member
+	    - name: List members
           href: api/chat-list-members.md
 	    - name: Get members
           href: api/chat-get-members.md
