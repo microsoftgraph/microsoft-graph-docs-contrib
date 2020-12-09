@@ -12738,7 +12738,7 @@ items:
         - name: Remove tab from channel
           href: api/channel-delete-tabs.md
         - name: List tabs in chat
-          href: api/channel-list-tabs.md
+          href: api/chat-list-tabs.md
         - name: Get tab in chat
           href: api/chat-get-tabs.md
         - name: Add tab to chat
