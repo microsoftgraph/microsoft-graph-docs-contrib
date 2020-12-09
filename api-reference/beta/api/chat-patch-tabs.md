@@ -43,7 +43,7 @@ In the request body, supply a JSON representation of [tab](../resources/teamstab
 
 ## Response
 
-If successful, this method returns a `200 OK` response code.
+If successful, this method returns a `200 OK` response code and the updated **teamsTab** resource in the response body.
 
 ## Examples
 ### Example 1: Update the name of a tab in a chat
