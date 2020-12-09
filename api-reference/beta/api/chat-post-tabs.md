@@ -39,7 +39,7 @@ POST /chats/{chat-id}/tabs
 
 ## Request body
 
-A [teamsTab](../resources/teamstab.md).
+In the request body include a JSON representation of a [teamsTab](../resources/teamstab.md).
 
 ## Response
 
@@ -47,7 +47,7 @@ If successful, this method returns a `201 Created` response code and an instance
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of the request.
 <!-- {
@@ -72,9 +72,12 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
 
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
