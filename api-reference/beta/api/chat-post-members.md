@@ -61,7 +61,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_conversation_member"
+  "name": "create_conversation_member_with_specific_visibleHistoryStartDateTime"
 } -->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/chat/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
@@ -86,7 +86,7 @@ Here is an example of the response.
 {
  "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member",
+  "name": "create_conversation_member_with_specific_visibleHistoryStartDateTime",
   "@odata.type": "Microsoft.Teams.GraphSvc.conversationMember"
 }
 -->
@@ -103,7 +103,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_conversation_member"
+  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime"
 } -->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/chat/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
@@ -127,7 +127,7 @@ Here is an example of the response.
 {
  "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member",
+  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime",
   "@odata.type": "Microsoft.Teams.GraphSvc.conversationMember"
 }
 -->
@@ -144,7 +144,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_conversation_member"
+  "name": "create_conversation_member_with_all_visibleHistoryStartDateTime"
 } -->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/chat/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
@@ -169,7 +169,7 @@ Here is an example of the response.
 {
  "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member",
+  "name": "create_conversation_member_with_all_visibleHistoryStartDateTime",
   "@odata.type": "Microsoft.Teams.GraphSvc.conversationMember"
 }
 -->
