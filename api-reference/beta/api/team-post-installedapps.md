@@ -53,7 +53,6 @@ If successful, this method returns a `200 OK` response code. It does not return 
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add_app_in_team"
