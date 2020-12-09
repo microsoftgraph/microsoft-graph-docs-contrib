@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of the specified [tab](../resources/teamstab.md) in a [chat](../resources/chat.md). .
+Update the properties of the specified [tab](../resources/teamstab.md) in a [chat](../resources/chat.md). 
 This can be used to configure the content of the tab.
 
 ## Permissions
@@ -36,7 +36,7 @@ PATCH /chats/{chat-id}/tabs/{tab-id}
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 In the request body, supply a JSON representation of [tab](../resources/teamstab.md) object.
@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and the updated **te
 ## Examples
 ### Example 1: Update the name of a tab in a chat
 
-##### Request
+#### Request
 The following is an example of the request.
 <!-- {
   "blockType": "request",
@@ -63,7 +63,7 @@ Content-length: 211
   "displayName": "My Contoso Tab - updated again"
 }
 ```
-##### Response
+#### Response
 
 <!-- {
   "blockType": "response",

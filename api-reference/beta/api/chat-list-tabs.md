@@ -32,7 +32,7 @@ GET /chats/{chat-id}/tabs
 
 ## Optional query parameters
 
-This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Header       | Value |
@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and collection of [t
 ## Examples
 
 ### Example 1: List all the tabs in the chat along with associated Teams app
-##### Request
+#### Request
 The following is an example of the request.
 
 <!-- {
@@ -61,9 +61,9 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/tabs?$expand=teamsApp
 ```
 
-##### Response
+#### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -141,7 +141,7 @@ Content-type: application/json
 ```
 
 ### Example 2: List all the tabs belonging to a specific app in a chat
-##### Request
+#### Request
 The following is an example of the request.
 
 <!-- {
@@ -154,9 +154,9 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/tabs?$expand=teamsApp&$filter=teamsApp/id eq 'com.microsoft.teamspace.tab.web'
 ```
 
-##### Response
+#### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
