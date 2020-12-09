@@ -12581,7 +12581,7 @@ items:
           href: api/chat-get.md
         - name: List members
           href: api/chat-list-members.md
-        - name: Get members
+        - name: Get member
           href: api/chat-get-members.md
         - name: Add member
           href: api/chat-post-members.md

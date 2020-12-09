@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
 ```http
-DELETE /chats/{id}/members/{membership-id}
+DELETE /chats/{chat-id}/members/{membership-id}
 ```
 
 ## Request headers
@@ -57,7 +57,7 @@ Here is an example of the request.
   "name": "delete_conversation_member"
 } -->
 ```http
-DELETE https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/141c574c-dd90-4131-b173-baf4bb0e894e
+DELETE https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTo1NjEwODJjMGYzZjg0N2E1ODA2OWRlYjhlYjMwMDgwN0B0aHJlYWQudjIjIzJjOGQyYjVjLTE4NDktNDA2Ni1iNTdkLWU3YTBlOWU0NGVjOA==
 ```
 
 ---

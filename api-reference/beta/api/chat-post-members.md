@@ -64,13 +64,12 @@ Here is an example of the request.
   "name": "create_conversation_member_with_specific_visibleHistoryStartDateTime"
 } -->
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/chat/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
+POST https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
 content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-    "tenantId": "6e5147da-6a35-4275-b3f3-fc069456b6eb",
     "visibleHistoryStartDateTime": "2019-04-18T23:51:43.255Z"
 }
 ```
@@ -106,13 +105,12 @@ Here is an example of the request.
   "name": "create_conversation_member_with_no_visibleHistoryStartDateTime"
 } -->
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/chat/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
+POST https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
 Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-    "user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-    "tenantId": "6e5147da-6a35-4275-b3f3-fc069456b6eb",
+    "user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
 }
 ```
 
@@ -147,13 +145,12 @@ Here is an example of the request.
   "name": "create_conversation_member_with_all_visibleHistoryStartDateTime"
 } -->
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/chat/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
+POST https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
 content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-    "tenantId": "6e5147da-6a35-4275-b3f3-fc069456b6eb",
     "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z"
 }
 ```
