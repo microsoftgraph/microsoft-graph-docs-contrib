@@ -1,7 +1,7 @@
 ---
 title: "Add conversationMember"
 description: "Add a conversationMember to a chat."
-author: "clearab"
+author: "bhartono"
 doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"

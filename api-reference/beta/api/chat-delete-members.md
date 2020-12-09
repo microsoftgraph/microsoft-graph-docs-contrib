@@ -1,7 +1,7 @@
 ---
 title: "Remove member from a chat"
 description: "Delete a conversationMember from a chat."
-author: "clearab"
+author: "bhartono"
 doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
