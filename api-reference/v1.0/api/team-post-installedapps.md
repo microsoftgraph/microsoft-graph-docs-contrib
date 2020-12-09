@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Installs an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
+Install an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
 
 ## Permissions
 
