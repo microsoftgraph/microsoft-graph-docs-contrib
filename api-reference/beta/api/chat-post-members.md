@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
 ```http
-POST /chats/{id}/members
+POST /chats/{chat-id}/members
 ```
 
 ## Request headers
@@ -44,11 +44,11 @@ Include the following properties in the request body.
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 |roles|string collection|The role for the user. Must be `owner` or empty.|
-|user|[user](../resources/user.md)|The user to add to the chat.|
+|user|[conversationMember](../resources/conversationmember.md)|The user to add to the chat.|
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a Location header.
 
 ## Examples
 
@@ -64,7 +64,7 @@ Here is an example of the request.
   "name": "create_conversation_member"
 } -->
 ```http
-POST https://graph.microsoft.com/beta/chat/{id}/members/
+POST https://graph.microsoft.com/beta/chat/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
 content-type: application/json
 
 {
@@ -98,7 +98,7 @@ Here is an example of the request.
   "name": "create_conversation_member"
 } -->
 ```http
-POST https://graph.microsoft.com/beta/chat/{id}/members/
+POST https://graph.microsoft.com/beta/chat/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
 Content-type: application/json
 
 {
@@ -131,14 +131,14 @@ Here is an example of the request.
   "name": "create_conversation_member"
 } -->
 ```http
-POST https://graph.microsoft.com/beta/chat/{id}/members/
+POST https://graph.microsoft.com/beta/chat/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
 content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5",
     "tenantId": "6e5147da-6a35-4275-b3f3-fc069456b6eb",
-    "visibleHistoryStartDateTime": null
+    "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z"
 }
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: "Get conversationMember"
+title: "Get member of a chat"
 description: "Retrieve a member of a chat."
 author: "clearab"
 localization_priority: Priority
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get conversationMember
+# Get member of a chat
 
 Namespace: microsoft.graph
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)| Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
+|Delegated (work or school account)| ChatMember.ReadWrite |
 |Delegated (personal Microsoft account)|Not supported.|
 |Application| Not supported. |
 
@@ -33,8 +33,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /chats/{id}/members/{id}
-GET /users/{id}/chats/{id}/members/{id}
+GET /chats/{chat-id}/members/{membership-id}
+GET /users/{user-id}/chats/{chat-id}/members/{membership-id}
 ```
 
 ## Optional query parameters
@@ -67,23 +67,8 @@ Here is an example of the request.
   "name": "get_conversation_member"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
+GET https://graph.microsoft.com/beta/chats/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/141c574c-dd90-4131-b173-baf4bb0e894e
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-conversation-member-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-conversation-member-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-conversation-member-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-conversation-member-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 

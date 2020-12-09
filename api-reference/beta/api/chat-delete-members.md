@@ -1,5 +1,5 @@
 ---
-title: "Delete conversationMember"
+title: "Remove member from a chat"
 description: "Delete a conversationMember from a chat."
 author: "clearab"
 doc_type: "apiPageType"
@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Delete conversationMember
+# Remove member from a chat
 
 Namespace: microsoft.graph
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
 ```http
-DELETE /chats/{id}/members/{id}
+DELETE /chats/{id}/members/{membership-id}
 ```
 
 ## Request headers
@@ -57,7 +57,7 @@ Here is an example of the request.
   "name": "delete_conversation_member"
 } -->
 ```http
-DELETE https://graph.microsoft.com/beta/chats/{id}/members/{id}
+DELETE https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/141c574c-dd90-4131-b173-baf4bb0e894e
 ```
 
 ---
