@@ -24,12 +24,12 @@ Represents a [teamsApp](teamsapp.md) installed in a [team](team.md) or the perso
 |[Get app installed in a team](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Get the specified app installed in a team.|
 |[Add app to team](../api/team-post-installedapps.md) |None | Add (install) an app to a team.|
 |[Remove app from team](../api/team-delete-installedapps.md) | None | Remove (uninstall) an app from a team.|
-|[Upgrade app installed in team](../api/team-upgrade-installedapps.md) | None | Upgrade the app installed in a team to the latest version.|
+|[Upgrade app installed in team](../api/team-teamsappinstallation-upgrade.md) | None | Upgrade the app installed in a team to the latest version.|
 |[List apps installed for user](../api/userteamwork-list-installedapps.md) | [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) collection | List apps installed in the personal scope of a user.|
 |[Get the installed app for user](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Get the specified app installed in the personal scope of a user. |
 |[Add app for user](../api/userteamwork-post-installedapps.md) | | Add (install) an app in the personal scope of a user.|
 |[Remove app for user](../api/userteamwork-delete-installedapps.md) | None | Remove (uninstall) an app in the personal scope of a user.|
-|[Upgrade app installed for user](../api/userteamwork-upgrade-installedapps.md) | None | Upgrade the app installed in the personal scope of a user to the latest version.|
+|[Upgrade app installed for user](../api/userteamwork-teamsappinstallation-upgrade.md) | None | Upgrade the app installed in the personal scope of a user to the latest version.|
 
 
 ## Properties

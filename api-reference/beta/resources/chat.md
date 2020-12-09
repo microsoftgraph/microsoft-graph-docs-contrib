@@ -30,7 +30,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[List apps in chat](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) collection | List apps installed in a chat.|
 |[Get app in chat](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Get a specific app installed in a chat.|
 |[Add app in chat](../api/chat-post-installedapps.md) | | Adds (installs) an app in a chat.|
-|[Upgrade app in chat](../api/chat-upgrade-installedapps.md) | None | Update to the latest version of the app installed in chat.|
+|[Upgrade app in chat](../api/chat-teamsappinstallation-upgrade.md) | None | Update to the latest version of the app installed in chat.|
 |[Uninstall app from chat](../api/chat-delete-installedapps.md) | None | Remove (uninstall) app from a chat.|
 |[List tabs in chat](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | List tabs pinned to a chat.|
 |[Get tab in chat](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | Get a specific tab pinned to a chat.|
