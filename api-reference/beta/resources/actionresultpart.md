@@ -1,7 +1,7 @@
 ---
 title: "actionResultType resource type"
 description: "Abstract type for modeling responses of bulk operations."
-author: "nkramer"
+author: "AkJo"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType

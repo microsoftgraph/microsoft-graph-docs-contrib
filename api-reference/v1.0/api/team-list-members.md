@@ -1,7 +1,7 @@
 ---
 title: "List members of team"
 description: "Get the conversationMembers of a team."
-author: "nkramer"
+author: "AkJo"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -117,7 +117,7 @@ Content-Type: application/json
 
 ### Example 2: Find members of a team by their AzureAD user object ID
 
-This is a request to find the membership resources based on `id` of the [AAD User](../resources/user.md) associated with the of the [aadUserConversationMember](../resources/aaduserconversationmember.md).
+This is a request to find the membership resources based on `id` of the [AAD User](../resources/user.md) associated with the [aadUserConversationMember](../resources/aaduserconversationmember.md).
 
 #### Request
 
