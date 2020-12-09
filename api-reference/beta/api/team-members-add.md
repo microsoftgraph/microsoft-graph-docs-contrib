@@ -106,7 +106,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.aadUserConversationMemberResult)",
-    "values": [
+    "value": [
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMemberResult",
             "userId": "18a80140-b0fb-4489-b360-2f6efaf225a0",
@@ -169,7 +169,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.addConversationMemberResult)",
-    "values": [
+    "value": [
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMemberResult",
             "userId": "18a80140-b0fb-4489-b360-2f6efaf225a0",
