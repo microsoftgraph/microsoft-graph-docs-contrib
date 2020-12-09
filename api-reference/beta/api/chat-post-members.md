@@ -82,6 +82,14 @@ content-type: application/json
 
 Here is an example of the response.
 
+<!-- 
+{
+ "blockType": "response",
+  "truncated": true,
+  "name": "create_conversation_member",
+  "@odata.type": "Microsoft.Teams.GraphSvc.conversationMember"
+}
+-->
 ```http
 HTTP/1.1 201 Created with Location header.
 ```
@@ -115,6 +123,14 @@ Content-type: application/json
 
 Here is an example of the response.
 
+<!-- 
+{
+ "blockType": "response",
+  "truncated": true,
+  "name": "create_conversation_member",
+  "@odata.type": "Microsoft.Teams.GraphSvc.conversationMember"
+}
+-->
 ```http
 HTTP/1.1 201 Created with Location header.
 ```
@@ -149,6 +165,14 @@ content-type: application/json
 
 Here is an example of the response.
 
+<!-- 
+{
+ "blockType": "response",
+  "truncated": true,
+  "name": "create_conversation_member",
+  "@odata.type": "Microsoft.Teams.GraphSvc.conversationMember"
+}
+-->
 ```http
 HTTP/1.1 201 Created with Location header.
 ```
