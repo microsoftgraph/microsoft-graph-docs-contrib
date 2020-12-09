@@ -11,6 +11,8 @@ ms.prod: "microsoft-teams"
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Install an [app](../resources/teamsapp.md) in the personal scope of the specified [user](../resources/user.md).
 
 ## Permissions
@@ -19,14 +21,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser, TeamsAppInstallation.ReadWrite |
+|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWrite.All |
+|Application | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{id}/teamwork/installedApps
+POST /users/{user-id}/teamwork/installedApps
 ```
 
 ## Request headers
@@ -34,7 +36,6 @@ POST /users/{id}/teamwork/installedApps
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-type | application/json. Required.|
 
 ## Request body
 
@@ -54,19 +55,17 @@ If successful, this method returns a `201 Created` response code. It does not re
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_add_teamsApp"
 }-->
-
 ```http
-POST https://graph.microsoft.com/v1.0/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps
+POST https://graph.microsoft.com/beta/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps
 Content-type: application/json
 
 {
-   "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+   "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
 # [C#](#tab/csharp)
@@ -89,6 +88,7 @@ Content-type: application/json
 
 
 ### Response
+
 The following is an example of the response.
 
 <!-- {
@@ -109,3 +109,5 @@ HTTP/1.1 201 Created
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
