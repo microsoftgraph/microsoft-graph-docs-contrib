@@ -148,7 +148,7 @@ When using the default template and default `renderAttendees` template, addition
 
 ## Authentication
 
-The login control leverages the global authentication provider described in the [authentication documentation](../providers/providers.md).
+The login control uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
 
 ## Extend for more control
 
