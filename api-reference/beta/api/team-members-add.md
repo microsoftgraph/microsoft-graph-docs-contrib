@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Bulk add members and encounter partial failure
+### Example 2: Add members in bulk and encounter partial failure
 
 #### Request
 
