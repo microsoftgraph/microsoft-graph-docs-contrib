@@ -22,7 +22,7 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md), or 
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List apps installed in team](../api/team-list-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) collection | Lists apps installed in a team.|
+|[List apps installed in team](../api/team-list-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) collection | List apps installed in a team.|
 |[Get app installed in a team](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Get the specified app installed in a team.|
 |[Add app to team](../api/team-post-installedapps.md) |None | Add (install) an app to a team.|
 |[Remove app from team](../api/team-delete-installedapps.md) | None | Remove (uninstall) an app from a team.|
