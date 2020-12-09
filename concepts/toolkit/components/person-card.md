@@ -9,7 +9,7 @@ author: vogtn
 
 A Person-Card component is a responsive component to display more information related to a person. It is generally used as a flyout on the `mgt-person` component.
 
-For more information about the `mgt-person` component, see [mgt-person docs](./person.md).
+For more information about the `mgt-person` component, see [mgt-person](./person.md).
 
 ## Example
 
@@ -33,33 +33,32 @@ MgtPersonCard.config.useContactApis = false;
 MgtPersonCard.config.sections.profile = false;
 ```
 
-The following properties are available on the config object:
+The following properties are available on the config object.
 
 | Property | Description |
 | ------------ | ------------- |
-| useContactApis | `boolean` - Whether the person card component can use the Microsoft Graph Contact API to search for contact details and photos - default is `true`.  |
+| useContactApis | `boolean` - Indicates whether the person card component can use the Microsoft Graph Contact API to search for contact details and photos. Default value is `true`.  |
 | sections | `object` - Configures what sections are shown in the person card.  |
 
-### Person Card Sections
+### Person card sections
 
 The person card contains several configurable sections for displaying person details:
-* *Contact* - contact information such as email, phone, position, location, and more.
-* *Organization* - organizational graph with managers, direct reports, and relevant people
-* *Messages* - most relevant email messages with the current signed in user
-* *Files* - most relevant shared files with the current signed in user
-* *Profile* - profile information such as projects, skills, languages, and more
+* Contact - Contact information such as email, phone, position, location, and more.
+* Organization - Organizational graph with managers, direct reports, and relevant people.
+* Messages - Most relevant email messages with the current signed in user.
+* Files - Most relevant shared files with the current signed in user.
+* Profile - Profile information such as projects, skills, languages, and more.
 
-Sections are loaded by default, but they can be disabled by the developer globally via the `MgtPersonCard.config.sections` object property. The following properties are available:
+Sections are loaded by default, but they can be disabled globally via the `MgtPersonCard.config.sections` object property. The following properties are available.
 
 | Property | Description |
 | ------------ | ------------- |
-| organization | `boolean` - Whether the person card organization section is shown - default is `true`.  |
-| mailMessages | `boolean` - Whether the person card messages section is shown - default is `true`.  |
-| files | `boolean` - Whether the person card files section is shown - default is `true`.  |
-| profile | `boolean` - Whether the person card profile section is shown - default is `true`.  |
+| organization | `boolean` - Indicates whether the person card organization section is shown. Default value is `true`.  |
+| mailMessages | `boolean` - Indicates whether the person card messages section is shown. Default value is `true`.  |
+| files | `boolean` - Indicates whether the person card files section is shown. Default value is `true`.  |
+| profile | `boolean` - Indicates whether the person card profile section is shown. Default value is `true`.  |
 
-To disable a section, simply set the property to `false` in your app initialization code:
-
+To disable a section, simply set the property to `false` in your app initialization code:.
 ```ts
 import { MgtPersonCard } from `@microsoft/mgt`;
 
@@ -68,7 +67,7 @@ MgtPersonCard.config.sections.profile = false;
 
 ## Setup for Teams integrations
 
-The Person-Card component allows the user to contact the target person, including via Teams chat. If using the component inside a Teams tab app, you can ensure that the component deep links directly to chat instead of opening a browser window by setting the `microsoftTeamsLib` in `TeamsProvider`.
+The Person-Card component allows the user to contact the target person, including via Teams chat. If using the component inside a Teams tab app, you can ensure that the component deep links directly to a chat instead of opening a browser window by setting the `microsoftTeamsLib` in `TeamsProvider`.
 
 If the Person-Card component is unable to detect the Teams lib, the component will attempt to open the Teams web client instead.
 
@@ -149,7 +148,7 @@ To learn more, see [styling components](../customize-components/style.md).
 
 ## Microsoft Graph APIs and permissions
 
-This control uses the following Microsoft Graph APIs and permissions.
+The Person-Card control uses the following Microsoft Graph APIs and permissions.
 
 | Resource | Permission | Section |
 | - | - | - |
