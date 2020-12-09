@@ -15,7 +15,7 @@ To learn more about authentication providers, see [providers](./providers.md).
 
 ## Get started
 
-Before using the Teams provider, you will need to make sure you have referenced the [Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest#using-the-sdk) in your page.
+Before using the Teams provider, you will need to make sure you have referenced the [Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk) in your page.
 
 # [npm](#tab/ts)
 
@@ -40,7 +40,7 @@ where `config` is
 ```ts
 export interface TeamsConfig {
   clientId: string;
-  authPopupUrl: string;
+  authPopupUrl: string; // see below for creating the popup page
   scopes?: string[];
   msalOptions?: Configuration;
 }
@@ -61,9 +61,7 @@ export interface TeamsConfig {
 ></mgt-teams-provider>
 ```
 
----
-
-### <mgt-teams-provider> attributes
+### mgt-teams-provider attributes
 | Attribute | Description |
 | --- | --- |
 | client-id   | String client ID (see [Configure your Teams app](#configure-your-teams-app). Required. |
@@ -72,7 +70,7 @@ export interface TeamsConfig {
 | depends-on | Element selector string of another higher-priority provider component. Optional. |
 | authority    | Authority string. The default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
 
-For a complete example, see [Microsoft Teams tab sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab).
+---
 
 ### Create the popup page
 
@@ -98,15 +96,19 @@ TeamsProvider.handleAuth();
   mgt.TeamsProvider.handleAuth();
 </script>
 ```
+---
+
+### Configure redirect URIs
+
+After you publish the popup page on your website, you need to use the URL in the `auth-popup-url/authPopupUrl` property. This URL also needs to be configured as a valid redirect URI in your app configuration in the Azure AD portal.
 
 ## Configure your Teams app
 
 If you're just getting started with Teams apps, see [Add tabs to Microsoft Teams apps](/microsoftteams/platform/concepts/tabs/tabs-overview). You can also use [App Studio](/microsoftteams/platform/get-started/get-started-app-studio) to quickly develop your app manifest.
-
 ### Creating an app/client ID
 In order to get a client ID, you need to [register your application](../get-started/add-aad-app-registration.md) in Azure AD. 
 >**Note**: MSAL only supports the Implicit Flow for OAuth. Make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under **Authentication**, find the **Implicit grant** section and select the checkboxes for **Access tokens** and **ID tokens**. 
 
-### Configure redirect URIs
-
-After you publish this page on your website, you need to use the URL in the `auth-popup-url/authPopupUrl` property. This URL also needs to be configured as a valid redirect URI in your app configuration in the Azure AD portal.
+## See also
+* [Microsoft Teams tab sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab)
+* [Build a Microsoft Teams tab](../get-started/build-a-microsoft-teams-tab)
