@@ -1,6 +1,55 @@
 {
   "changelog": [
-
+    {
+      "ChangeList": [
+        {
+          "Id": "f69c822d-8c2a-4f34-9882-406e4ddc0273",
+          "ApiChange": "Resource",
+          "ChangedApiName": "publicInnerError",
+          "ChangeType": "Addition",
+          "Description": "Added the [PublicInnerError](https://docs.microsoft.com/en-us/graph/resources/publicinnererror?view=graph-rest-beta) resource.",
+          "Target": "publicInnerError"
+        },
+        {
+          "Id": "f69c822d-8c2a-4f34-9882-406e4ddc0273",
+          "ApiChange": "Resource",
+          "ChangedApiName": "publicErrorDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [PublicErrorDetail](https://docs.microsoft.com/en-us/graph/resources/publicerrordetail?view=graph-rest-beta) resource.",
+          "Target": "publicErrorDetail"
+        },
+        {
+          "Id": "f69c822d-8c2a-4f34-9882-406e4ddc0273",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aadUserConversationMemberResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [AadUserConversationMemberResult](https://docs.microsoft.com/en-us/graph/resources/aaduserconversationmemberresult?view=graph-rest-beta) method.",
+          "Target": "aadUserConversationMemberResult"
+        },
+        {
+          "Id": "f69c822d-8c2a-4f34-9882-406e4ddc0273",
+          "ApiChange": "Resource",
+          "ChangedApiName": "actionresultpart",
+          "ChangeType": "Addition",
+          "Description": "Added the [ActionResultPart](https://docs.microsoft.com/en-us/graph/resources/actionresultpart?view=graph-rest-beta) resource.",
+          "Target": "actionresultpart"
+        },
+        {
+          "Id": "f69c822d-8c2a-4f34-9882-406e4ddc0273",
+          "ApiChange": "Method",
+          "ChangedApiName": "team-members-add",
+          "ChangeType": "Addition",
+          "Description": "Added the [Add members in bulk to team](https://docs.microsoft.com/en-us/graph/api/team-members-add?view=graph-rest-beta) method.",
+          "Target": "conversationmember"
+        }
+      ],
+      "Id": "f69c822d-8c2a-4f34-9882-406e4ddc0273",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-09T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {
@@ -226,39 +275,39 @@
       "SubArea": ""
     },
     {
-        "ChangeList": [
-          {
-            "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
-            "ApiChange": "Method",
-            "ChangedApiName": "getAllMessages",
-            "ChangeType": "Addition",
-            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/chats-getallmessages?view=graph-rest-beta) method to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource type collection.",
-            "Target": "chats-getallmessages"
-          },
-          {
-            "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
-            "ApiChange": "Method",
-            "ChangedApiName": "getAllMessages",
-            "ChangeType": "Addition",
-            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/channels-getallmessages?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource type collection.",
-            "Target": "channels-getallmessages"
-          },
-          {
-            "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
-            "ApiChange": "Method",
-            "ChangedApiName": "getAllMessages",
-            "ChangeType": "Addition",
-            "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/teams-getallmessages?view=graph-rest-beta) method to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource type collection.",
-            "Target": "teams-getallmessages"
-          }
-        ],
-        "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
-        "Cloud": "prd",
-        "Version": "beta",
-        "CreatedDateTime": "2020-12-07T00:00:00",
-        "WorkloadArea": "Teamwork",
-        "SubArea": ""
-      },  
+      "ChangeList": [
+        {
+          "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/chats-getallmessages?view=graph-rest-beta) method to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource type collection.",
+          "Target": "chats-getallmessages"
+        },
+        {
+          "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/channels-getallmessages?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource type collection.",
+          "Target": "channels-getallmessages"
+        },
+        {
+          "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/teams-getallmessages?view=graph-rest-beta) method to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource type collection.",
+          "Target": "teams-getallmessages"
+        }
+      ],
+      "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-07T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {

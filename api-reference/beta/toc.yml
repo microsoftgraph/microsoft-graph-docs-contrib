@@ -12516,6 +12516,8 @@ items:
           href: api/team-get-members.md
         - name: Add member
           href: api/team-post-members.md
+        - name: Add members in bulk
+          href: api/team-members-add.md
         - name: Remove member
           href: api/team-delete-members.md
         - name: Update member

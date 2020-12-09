@@ -57,44 +57,133 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Get list of members in team
 
-# [HTTP](#tab/http)
+#### Request
+
 <!-- {
   "blockType": "request",
-  "name": "get_conversationmember"
+  "name": "get_members_in_team"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-conversationmember-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-conversationmember-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-conversationmember-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-conversationmember-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-
-### Response
+#### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "get_conversationmember",
-  "@odata.type": "collection(microsoft.graph.aadUserConversationMember)"
+  "name": "get_members_in_team",
+  "@odata.type": "collection(microsoft.graph.conversationMember)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062')/members",
+    "@odata.count": 3,
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+            "roles": [],
+            "displayName": "Adele Vance",
+            "userId": "73761f06-2ac9-469c-9f10-279a8cc267f9",
+            "email": "AdeleV@M365x987948.OnMicrosoft.com"
+        },
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM1OThlZmNkNC1lNTQ5LTQwMmEtOTYwMi0wYjUwMjAxZmFlYmU=",
+            "roles": [
+                "owner"
+            ],
+            "displayName": "MOD Administrator",
+            "userId": "598efcd4-e549-402a-9602-0b50201faebe",
+            "email": "admin@M365x987948.OnMicrosoft.com"
+        },
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyM3NTJmNTBiNy0yNTZmLTQ1MzktYjc3NS1jNGQxMmYyZTQ3MjI=",
+            "roles": [],
+            "displayName": "Harry Johnson",
+            "userId": "752f50b7-256f-4539-b775-c4d12f2e4722",
+            "email": "harry@M365x987948.OnMicrosoft.com"
+        }
+    ]
+}
+```
+
+### Example 2: Find members of a team by their AzureAD user object ID
+
+This is a request to find the membership resources based on `id` of the [AAD User](../resources/user.md) associated with the of the [aadUserConversationMember](../resources/aaduserconversationmember.md).
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_members_in_team_filter_by_userid"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members?$filter=(microsoft.graph.aadUserConversationMember/userId eq '73761f06-2ac9-469c-9f10-279a8cc267f9')
+
+```
+
+#### Response
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_members_in_team_filter_by_userid",
+  "@odata.type": "collection(microsoft.graph.conversationMember)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062')/members",
+    "@odata.count": 1,
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+            "roles": [],
+            "displayName": "Adele Vance",
+            "userId": "73761f06-2ac9-469c-9f10-279a8cc267f9",
+            "email": "AdeleV@M365x987948.OnMicrosoft.com"
+        }
+    ]
+}
+```
+
+### Example 3: Find members of a team by their names or email
+
+This is a request to find the membership resources based on `displayName` or `email` of the [aadUserConversationMember](../resources/aaduserconversationmember.md).
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_members_in_team_filter_by_username_or_email"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members?$filter=(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq 'admin@M365x987948.OnMicrosoft.com')
+```
+
+#### Response
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_members_in_team_filter_by_username_or_email",
+  "@odata.type": "collection(microsoft.graph.conversationMember)"
 }
 -->
 ``` http
@@ -107,12 +196,58 @@ Content-Type: application/json
     "value": [
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
-            "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
-            "roles": [],
-            "displayName": "Adele Vance",
-            "userId": "73761f06-2ac9-469c-9f10-279a8cc267f9",
-            "email": "AdeleV@M365x987948.OnMicrosoft.com"
+            "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM1OThlZmNkNC1lNTQ5LTQwMmEtOTYwMi0wYjUwMjAxZmFlYmU=",
+            "roles": [
+                "owner"
+            ],
+            "displayName": "MOD Administrator",
+            "userId": "598efcd4-e549-402a-9602-0b50201faebe",
+            "email": "admin@M365x987948.OnMicrosoft.com"
         },
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyM3NTJmNTBiNy0yNTZmLTQ1MzktYjc3NS1jNGQxMmYyZTQ3MjI=",
+            "roles": [],
+            "displayName": "Harry Johnson",
+            "userId": "752f50b7-256f-4539-b775-c4d12f2e4722",
+            "email": "harry@M365x987948.OnMicrosoft.com"
+        }
+    ]
+}
+```
+
+### Example 4: List only those members who are *owners* of the team
+
+This is a request to find all the members who are have *owner* role attached to them.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_members_in_team_filter_by_owner_role"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members?$filter=roles/any(r:r eq 'owner')
+```
+
+#### Response
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_members_in_team_filter_by_owner_role",
+  "@odata.type": "collection(microsoft.graph.conversationMember)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062')/members",
+    "@odata.count": 1,
+    "value": [
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
             "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM1OThlZmNkNC1lNTQ5LTQwMmEtOTYwMi0wYjUwMjAxZmFlYmU=",
