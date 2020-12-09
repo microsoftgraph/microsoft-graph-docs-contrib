@@ -90,6 +90,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "create_channel_from_group",
   "@odata.type": "microsoft.graph.channel"
 } -->
 ```http
@@ -145,6 +146,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "create_channel_from_user",
   "@odata.type": "microsoft.graph.channel"
 } -->
 
@@ -198,6 +200,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "create_channel_through_migration",
   "@odata.type": "microsoft.graph.channel"
 } -->
 
@@ -244,6 +247,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "create_channel_from_user_with_moderation",
   "@odata.type": "microsoft.graph.channel"
 } -->
 
