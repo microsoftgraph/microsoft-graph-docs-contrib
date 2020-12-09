@@ -61,7 +61,7 @@ POST /teams/87654321-0abc-zqf0-321456789q/installedApps
 Content-type: application/json
 
 {
-   "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+   "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
 
