@@ -12575,8 +12575,6 @@ items:
       - name: Chat
         href: resources/chat.md
         items:
-        - name: List chats
-          href: api/chat-list.md
 	    - name: Get members
           href: api/chat-get-members.md
 	    - name: Add member
