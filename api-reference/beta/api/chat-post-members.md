@@ -63,7 +63,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "create_conversation_member"
 } -->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/chat/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
 content-type: application/json
 
@@ -97,7 +97,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "create_conversation_member"
 } -->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/chat/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
 Content-type: application/json
 
@@ -130,7 +130,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "create_conversation_member"
 } -->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/chat/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
 content-type: application/json
 
