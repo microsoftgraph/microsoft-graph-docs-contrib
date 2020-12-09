@@ -145,7 +145,7 @@ The following example shows a request to create a standard channel with moderati
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_channel_from_user"
+  "name": "create_channel_from_user_with_moderation"
 }-->
 
 ```http
@@ -198,6 +198,12 @@ Content-length: 201
 #### Request
 
 The following example shows how to create a channel for imported messages.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_channel_through_migration"
+}-->
 
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels
