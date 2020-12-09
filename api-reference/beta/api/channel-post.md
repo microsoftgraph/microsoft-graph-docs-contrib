@@ -136,40 +136,12 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Create standard channel with moderation settings
-
-#### Request
-
-The following example shows a request to create a standard channel with moderation settings. Create channel with moderation settings is only allowed for standard channel.
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_channel_from_user_with_moderation"
-}-->
-
-```http
-POST https://graph.microsoft.com/beta/teams/{group_id}/channels
-Content-type: application/json
-
-{
-    "displayName": "TestChannelModeration",
-    "description": "Test channel moderation.",
-    "membershipType": "standard"
-    "moderationSettings": {
-        "userNewMessageRestriction": "everyoneExceptGuests",
-        "replyRestriction": "everyone",
-        "allowNewMessageFromBots": true,
-        "allowNewMessageFromConnectors": true
-    }
-}
-```
-
 ---
 
 #### Response
 
 The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -193,7 +165,7 @@ Content-length: 201
 }
 ```
 
-### Example 4: Create a channel in migration mode
+### Example 3: Create a channel in migration mode
 
 #### Request
 
@@ -233,6 +205,63 @@ The following example shows the response.
 HTTP/1.1 202 Accepted
 Location: /teams/{teamId}/channels/{channelId}/operations/{operationId}
 Content-Location: /teams/{teamId}/channels/{channelId}
+```
+
+### Example 4: Create standard channel with moderation settings
+
+#### Request
+
+The following example shows a request to create a standard channel with moderation settings. Create channel with moderation settings is only allowed for standard channel.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_channel_from_user_with_moderation"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/{group_id}/channels
+Content-type: application/json
+
+{
+    "displayName": "TestChannelModeration",
+    "description": "Test channel moderation.",
+    "membershipType": "standard",
+    "moderationSettings": {
+        "userNewMessageRestriction": "everyoneExceptGuests",
+        "replyRestriction": "everyone",
+        "allowNewMessageFromBots": true,
+        "allowNewMessageFromConnectors": true
+    }
+}
+```
+
+---
+
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 201
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('{group_id}')/channels/$entity",
+    "id": "{channel_id}",
+    "displayName": "My First Private Channel",
+    "description": "This is my first private channels",
+    "isFavoriteByDefault": null,
+    "email": "",
+    "webUrl": "https://teams.microsoft.com/l/channel/{channel_id}/My%20First%20Private%20Channel?groupId={group_id}&tenantId={tenant_id}",
+    "membershipType": "private"
+}
 ```
 
 ## See also
