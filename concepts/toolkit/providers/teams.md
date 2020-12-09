@@ -111,4 +111,4 @@ In order to get a client ID, you need to [register your application](../get-star
 
 ## See also
 * [Microsoft Teams tab sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab)
-* [Build a Microsoft Teams tab](../get-started/build-a-microsoft-teams-tab)
+* [Build a Microsoft Teams tab](../get-started/build-a-microsoft-teams-tab.md)
