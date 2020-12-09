@@ -1,6 +1,6 @@
 ---
 title: "List apps in team"
-description: "Retrieve the list of apps installed in the specified team."
+description: "Retrieve a list of apps installed in the specified team."
 author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -11,11 +11,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve the list of [apps installed](../resources/teamsappinstallation.md) in the specified [team](../resources/team.md).
+Retrieve a list of [apps installed](../resources/teamsappinstallation.md) in the specified [team](../resources/team.md).
 
 
 > [!NOTE]
-> The 'id' of an teamsAppInstallation resource is not the same value as the 'id' of the associated teamsApp resource.
+> The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ GET /teams/{team-id}/installedApps
 
 ## Optional query parameters
 
-This method supports the $filter, $select, and $expand [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`, `$select`, and `$expand` [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
