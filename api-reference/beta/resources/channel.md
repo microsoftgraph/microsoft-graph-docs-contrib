@@ -104,7 +104,7 @@ The following is a JSON representation of the resource.
   "webUrl": "string",
   "membershipType": "channelMembershipType",
   "createdDateTime": "string (timestamp)",
-  "channelModerationSettings": "channelModerationSettings"
+  "moderationSettings": "channelModerationSettings"
     
 }
 ```
