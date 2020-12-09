@@ -11,6 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of the specified [tab](../resources/teamstab.md).
 This can be used to configure the content of the tab.
@@ -21,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Delegated (work or school account) |  TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsTab.ReadWrite.Group*, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | TeamsTab.ReadWrite.Group*, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
@@ -31,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```http
-PATCH /teams/{id}/channels/{id}/tabs/{id}
+PATCH /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 ```
 
 ## Request headers
@@ -51,7 +52,7 @@ If successful, this method returns a `200 OK` response code.
 #### Request
 The following is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
+PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
 Content-length: 211
 
@@ -67,7 +68,7 @@ Content-type: application/json
 {
   "id": "tabId",
   "displayName": "My Contoso Tab - updated",
-  "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('06805b9e-77e3-4b93-ac81-525eb87513b8')",
+  "teamsAppId": "06805b9e-77e3-4b93-ac81-525eb87513b8",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
     "contentUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView",
@@ -91,7 +92,9 @@ Content-type: application/json
   "description": "Update tab in channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": []
 }
 -->
+
 
