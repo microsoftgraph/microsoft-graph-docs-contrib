@@ -51,7 +51,6 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "uninstall_teamsapp_in_team"
