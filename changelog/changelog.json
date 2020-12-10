@@ -17,7 +17,17 @@
           "ChangeType": "Addition",
           "Description": "Added the **visibleHistoryStartDateTime** property to [conversationMember](https://docs.microsoft.com/en-us/graph/api/resources/conversationMember?view=graph-rest-beta) resource",
           "Target": "conversationMember"
-        },
+        }
+      ],
+      "Id": "df28662b-353d-11eb-9836-6aeb5ee7dda6",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-03T08:02:21.817Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
         {
           "Id": "6a6c7aa0-4b67-4d07-9ebf-c2bc1bcef553",
           "ApiChange": "Resource",
