@@ -76,7 +76,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chat"
+  "@odata.type": "microsoft.graph.chatMessage"
 } -->
 ```http
 HTTP/1.1 200 OK
