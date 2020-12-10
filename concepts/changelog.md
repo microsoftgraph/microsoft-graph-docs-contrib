@@ -70,7 +70,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added the **chatType** property to [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added the **chatType** enumeration type. |
-| Addition | beta | Added the following methods to the [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource: [Create chat](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true), [Update chat](/graph/api/chat-patch?view=graph-rest-beta&preserve-view=true).|
+| Addition | beta | Added the following methods to the [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource: [Create chat](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true), [Update chat](/graph/api/chat-patch?view=graph-rest-beta&preserve-view=true). |
 
 
 ## November 2020

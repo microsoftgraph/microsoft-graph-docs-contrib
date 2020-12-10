@@ -17,6 +17,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **chatType** enumeration type",
           "Target": "chatType"
+        },
+        {
+          "Id": "8851b1f6-0ea0-4e13-b30f-e008a339a37d",
+          "ApiChange": "method",
+          "ChangedApiName": "Create chat, Update chat",
+          "ChangeType": "Addition",
+          "Description": "Added the following methods to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource: <ul><li>[Create chat](https://docs.microsoft.com/en-us/graph/api/chat-post?view=graph-rest-beta&preserve-view=true)</li><li>[Update chat](https://docs.microsoft.com/en-us/graph/api/chat-patch?view=graph-rest-beta&preserve-view=true)</li></ul>",
+          "Target": "Create chat, Update chat"
         }
       ],
       "Id": "13bf19f3-1e1e-11eb-aa81-6d719f0c7da5",
