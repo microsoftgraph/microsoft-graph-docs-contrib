@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-### Example 1: Get chats list
+### Example 1: List all the chats
 
 #### Request
 
@@ -63,7 +63,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chats"
+  "name": "list_chats"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats
@@ -75,7 +75,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 Here is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -115,7 +115,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get chats list and expand the chats' members
+### Example 2: List all the chats and expand the chats' members
 
 #### Request
 
@@ -124,7 +124,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chats_expand_members"
+  "name": "list_chats_expand_members"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats?$expand=members
@@ -136,7 +136,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 Here is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -265,7 +265,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Get chats list and expand the chats' members and filter by the chat member's displayname
+### Example 3: List all the chats and expand the chats' members and filter by the chat member's displayname
 
 #### Request
 
@@ -274,7 +274,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chats_expand_members_and_filter"
+  "name": "list_chats_expand_members_and_filter"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats?$expand=members&$filter=members/any(o: o/displayname eq 'Peter Parker')
@@ -286,7 +286,7 @@ GET https://graph.microsoft.com/beta/chats?$expand=members&$filter=members/any(o
 
 Here is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
