@@ -88,7 +88,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.Teams.GraphSvc.chat"
+  "@odata.type": "microsoft.graph.chat"
 }
 -->
 ``` http
@@ -142,7 +142,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.Teams.GraphSvc.chat"
+  "@odata.type": "microsoft.graph.chat"
 }
 -->
 ``` http
