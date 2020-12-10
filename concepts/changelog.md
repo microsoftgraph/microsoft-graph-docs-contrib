@@ -30,6 +30,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [custodian](/graph/api/resources/custodian?view=graph-rest-beta&preserve-view=true), [unifiedGroupSource](/graph/api/resources/unifiedgroupsource?view=graph-rest-beta&preserve-view=true), and [siteSource](/graph/api/resources/sitesource?view=graph-rest-beta&preserve-view=true) resources and associated methods. |
 
+### Devices and apps | Cloud printing
+
+| **Change type** | **Version**   | **Description**                          |
+|:---|:---|:---|
+| Change | beta | Updated enum types in [printerProcessingStateDetail](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values) resource. |
+
 ### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |

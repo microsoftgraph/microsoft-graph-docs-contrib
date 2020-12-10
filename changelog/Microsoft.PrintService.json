@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "62d9370f-55fe-465c-9041-644ef9f55a83",
+          "ApiChange": "Property",
+          "ChangedApiName": "printerStatus",
+          "ChangeType": "Change",
+          "Description": "Updated the **printerProcessingStateDetail** enum type in the [printerStatus](https://docs.microsoft.com/en-us/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values) resource.",
+          "Target": "printerStatus"
+        }
+      ],
+      "Id": "62d9370f-55fe-465c-9041-644ef9f55a83",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-09T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": " Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "76cd4ab2-7d93-48a2-844d-f991b9c239e4",
           "ApiChange": "Property",
           "ChangedApiName": "printer",
@@ -33,7 +51,6 @@
       "CreatedDateTime": "2020-12-02T00:00:00",
       "WorkloadArea": "Devices and apps ",
       "SubArea": " Cloud printing"
-    },
     {
       "ChangeList": [
         {
