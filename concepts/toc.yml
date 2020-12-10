@@ -567,7 +567,7 @@ items:
                 href: toolkit/get-started/use-toolkit-with-angular.md
               - name: Build a SharePoint web part
                 href: toolkit/get-started/build-a-sharepoint-web-part.md
-              - name: Build a Microsoft Teams Tab
+              - name: Build a Microsoft Teams tab
                 href: toolkit/get-started/build-a-microsoft-teams-tab.md
           - name: Providers
             items:
@@ -615,7 +615,7 @@ items:
                 href: toolkit/customize-components/cache.md
               - name: Localizing components
                 href: toolkit/customize-components/localization.md
-              - name: Right-To-Left
+              - name: Right-to-left support
                 href: toolkit/customize-components/right-to-left.md
       - name: Resources
         expanded: true
