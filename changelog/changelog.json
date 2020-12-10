@@ -19,12 +19,12 @@
           "Target": "conversationMember"
         },
         {
-          "Id": "8851b1f6-0ea0-4e13-b30f-e008a339a37d",
+          "Id": "7cc430e4-5141-4799-9582-34220c817573",
           "ApiChange": "method",
-          "ChangedApiName": "Create chat, Update chat",
+          "ChangedApiName": "Add chat member, Delete chat member",
           "ChangeType": "Addition",
           "Description": "Added the following methods to the [conversationMember](https://docs.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) resource: <ul><li>[Add chat member](https://docs.microsoft.com/en-us/graph/api/chat-post-members?view=graph-rest-beta&preserve-view=true)</li><li>[Delete chat member](https://docs.microsoft.com/en-us/graph/api/chat-delete-members?view=graph-rest-beta&preserve-view=true)</li></ul>",
-          "Target": "Create chat, Update chat"
+          "Target": "Add chat member, Delete chat member"
         }
       ],
       "Id": "df28662b-353d-11eb-9836-6aeb5ee7dda6",

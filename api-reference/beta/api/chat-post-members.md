@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Add conversationMember
+# Add member to a chat
 
 Namespace: microsoft.graph
 
