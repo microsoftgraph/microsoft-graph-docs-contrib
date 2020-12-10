@@ -1,5 +1,5 @@
 ---
-title: "conversationMembers: add"
+title: "conversationMember: add"
 description: "Add members in bulk to team."
 author: "nkramer"
 doc_type: "apiPageType"
@@ -7,7 +7,7 @@ localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
 
-# conversationMembers: add
+# conversationMember: add
 
 Namespace: microsoft.graph
 
