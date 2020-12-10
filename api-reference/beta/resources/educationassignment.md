@@ -57,7 +57,7 @@ The assignment APIs are exposed in the class namespace.
 |instructions|[itemBody](itembody.md)| Instructions for the assignment.  This along with the display name tell the student what to do. |
 |lastModifiedBy|[identitySet](identityset.md)| Who last modified the assignment. |
 |lastModifiedDateTime|DateTimeOffset|Moment when the assignment was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|notificationChannelUrl|String|Optional field to specify the URL of the [channel](channel.md) to post the assignment publish notification. If not specified or null, defaults to the `General` channel. This field only applies to assignments where the **assignTo** value is [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Updating the **channelId** is not allowed after the assignment has been published.|
+|notificationChannelUrl|String|Optional field to specify the URL of the [channel](channel.md) to post the assignment publish notification. If not specified or null, defaults to the `General` channel. This field only applies to assignments where the **assignTo** value is [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Updating the **notificationChannelUrl** is not allowed after the assignment has been published.|
 |status|string| Status of the **Assignment**.  You can not PATCH this value.  Possible values are: `draft`, `scheduled`, `published`, `assigned`.|
 
 ## Relationships
