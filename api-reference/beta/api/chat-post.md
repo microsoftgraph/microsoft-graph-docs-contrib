@@ -47,7 +47,7 @@ The following table shows the properties that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |topic|String|The title of the chat. This can only be set for a 'group' type chat.|
-|chatType|[chatType](../resources/enums.md#chatType-values)| Type of chat entity.|
+|chatType|[chatType](../resources/enums.md#chattype-values)| Type of chat entity.|
 |members|[conversationMember](../resources/conversationmember.md) collection|List of conversation members that should be added. The caller user id must be specified in the members collection.|
 
 ## Response
