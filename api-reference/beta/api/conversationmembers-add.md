@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add multiple members in a single request to a [team](../resources/team.md). The response provides details of which memberships could and could not be created.
+Add multiple members in a single request to a [team](../resources/team.md). The response provides details about which memberships could and could not be created.
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP Request
 
-This is a bound action for adding multiple elements to a conversationMember collection in a single request.
+This is a bound action for adding multiple elements to a **conversationMember** collection in a single request.
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -55,7 +55,7 @@ The following table shows the parameters that can be used with this action.
 
 If successful, this action returns a `200 OK` response code and a collection of derivatives of [actionResultPart](../resources/actionresultpart.md) in the response body.
 
-This API returns a `200` response indicating all members supplied were added to the team or a `207` response indicating that only some of the supplied members were added to the team. The caller should inspect the response payload to determine which member additions failed. The response body is a collection of derivatives of [`actionResultPart`](../resources/actionresultpart.md) resource.
+This API returns a `200` response indicating all members supplied were added to the team or a `207` response indicating that only some of the supplied members were added to the team. The caller should inspect the response payload to determine which member additions failed. The response body is a collection of derivatives of the [actionResultPart](../resources/actionresultpart.md) resource.
 
 ## Examples
 
@@ -93,7 +93,7 @@ Content-Type: application/json
 
 The following is the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -156,7 +156,7 @@ Content-Type: application/json
 
 The following is the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -187,6 +187,11 @@ Content-Type: application/json
 }
 ```
 
+
+## See also
+
+- [Add member to team](team-post-members.md)
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -199,8 +204,3 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
-
-
-## See also
-
-- [Add member to team](team-post-members.md)

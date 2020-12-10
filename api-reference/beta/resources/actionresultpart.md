@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type that serves as a base for modeling responses of bulk operations. The 'error' property is selectively populated based on whether the response represents an error.
+An abstract type that serves as a base for modeling responses of bulk operations. The **error** property is selectively populated based on whether the response represents an error.
 
 ## Properties
 

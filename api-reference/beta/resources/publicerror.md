@@ -11,7 +11,7 @@ author: "AkJo"
 
 Namespace: microsoft.graph
 
-This represents a generic error and its details.
+Represents a generic error and its details.
 
 ## Properties
 |Property|Type|Description|
@@ -19,7 +19,7 @@ This represents a generic error and its details.
 |code|string| Represents the error code.
 |details|[publicErrorDetail](publicerrordetail.md) collection|Details of the error.|
 |innerError|[publicInnerError](publicinnererror.md)|Details of the inner error.|
-|message|string| A non-localized message for developer.
+|message|string| A non-localized message for the developer.
 |target|String|The target of the error.|
 
 ## Relationships

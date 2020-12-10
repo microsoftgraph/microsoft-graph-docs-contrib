@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/
 ```
 
 #### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -115,9 +115,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Find members of a team by their AzureAD user object ID
+### Example 2: Find members of a team by their Azure AD user object ID
 
-This is a request to find the membership resources based on `id` of the [AAD User](../resources/user.md) associated with the [aadUserConversationMember](../resources/aaduserconversationmember.md).
+The following example shows a request to find the membership resources based on `id` of the [Azure AD user](../resources/user.md) associated with the [aadUserConversationMember](../resources/aaduserconversationmember.md).
 
 #### Request
 
@@ -132,7 +132,7 @@ GET https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/
 ```
 
 #### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -162,7 +162,7 @@ Content-Type: application/json
 
 ### Example 3: Find members of a team by their names or email
 
-This is a request to find the membership resources based on `displayName` or `email` of the [aadUserConversationMember](../resources/aaduserconversationmember.md).
+The following example shows a request to find the membership resources based on `displayName` or `email` of the [aadUserConversationMember](../resources/aaduserconversationmember.md).
 
 #### Request
 
@@ -176,7 +176,7 @@ GET https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/
 ```
 
 #### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
