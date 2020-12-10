@@ -399,7 +399,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "channel",
           "ChangeType": "Addition",
-          "Description": "Added the following methods to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource: [List members of channel](https://docs.microsoft.com/en-us/graph/api/channel-list-members?view=graph-rest-beta), [Get member of channel](https://docs.microsoft.com/en-us/graph/api/channel-get-members?view=graph-rest-beta) [Add member to channel](https://docs.microsoft.com/en-us/graph/api/channel-post-members?view=graph-rest-beta),  [Update role of member in channel](https://docs.microsoft.com/en-us/graph/api/channel-update-members?view=graph-rest-beta), [Delete member from channel](https://docs.microsoft.com/en-us/graph/api/channel-delete-members?view=graph-rest-beta).",
+          "Description": "Added the following methods to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource: [List members of channel](https://docs.microsoft.com/en-us/graph/api/channel-list-members?view=graph-rest-beta), [Get member of channel](https://docs.microsoft.com/en-us/graph/api/channel-get-members?view=graph-rest-beta) [Create member in channel](https://docs.microsoft.com/en-us/graph/api/channel-post-members?view=graph-rest-beta),  [Update role of member in channel](https://docs.microsoft.com/en-us/graph/api/channel-update-members?view=graph-rest-beta), [Delete member from channel](https://docs.microsoft.com/en-us/graph/api/channel-delete-members?view=graph-rest-beta).",
           "Target": "channel"
         }
       ],
@@ -417,7 +417,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "channel",
           "ChangeType": "Addition",
-          "Description": "Added the following methods to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-v1.0) resource: [List members of channel](https://docs.microsoft.com/en-us/graph/api/channel-list-members?view=graph-rest-v1.0), [Get member of channel](https://docs.microsoft.com/en-us/graph/api/channel-get-members?view=graph-rest-v1.0) [Add member to channel](https://docs.microsoft.com/en-us/graph/api/channel-post-members?view=graph-rest-v1.0),  [Update role of member in channel](https://docs.microsoft.com/en-us/graph/api/channel-update-members?view=graph-rest-v1.0), [Delete member from channel](https://docs.microsoft.com/en-us/graph/api/channel-delete-members?view=graph-rest-v1.0).",
+          "Description": "Added the following methods to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-v1.0) resource: [List members of channel](https://docs.microsoft.com/en-us/graph/api/channel-list-members?view=graph-rest-v1.0), [Get member of channel](https://docs.microsoft.com/en-us/graph/api/channel-get-members?view=graph-rest-v1.0) [Create member in channel](https://docs.microsoft.com/en-us/graph/api/channel-post-members?view=graph-rest-v1.0),  [Update role of member in channel](https://docs.microsoft.com/en-us/graph/api/channel-update-members?view=graph-rest-v1.0), [Delete member from channel](https://docs.microsoft.com/en-us/graph/api/channel-delete-members?view=graph-rest-v1.0).",
           "Target": "channel"
         }
       ],
