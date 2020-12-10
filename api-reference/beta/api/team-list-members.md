@@ -221,7 +221,7 @@ Content-Type: application/json
 The following example shows a request to find all the members who are have *owner* role attached to them.
 
 > [!NOTE]
-> There are some known issues with this functionality.
+> There are some known issues with this functionality that are currently being investigated.
 
 #### Request
 
