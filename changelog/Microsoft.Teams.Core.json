@@ -37,9 +37,9 @@
         {
           "Id": "f69c822d-8c2a-4f34-9882-406e4ddc0273",
           "ApiChange": "Method",
-          "ChangedApiName": "team-members-add",
+          "ChangedApiName": "conversationmembers-add",
           "ChangeType": "Addition",
-          "Description": "Added the [Add members in bulk to team](https://docs.microsoft.com/en-us/graph/api/team-members-add?view=graph-rest-beta) method.",
+          "Description": "Added the [Add members in bulk to team](https://docs.microsoft.com/en-us/graph/api/conversationmembers-add?view=graph-rest-beta) method.",
           "Target": "conversationmember"
         }
       ],
