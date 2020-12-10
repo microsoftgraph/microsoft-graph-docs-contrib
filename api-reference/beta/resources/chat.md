@@ -39,7 +39,7 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
 | createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or membership changed. Read-only.|
-| chatType | chatType | Type of chat entity, which is defined by chatType enum. Possible values are: `oneOnOne`, `group`, `meeting`.|
+| chatType| [chatType](../resources/enums.md#chatType-values) | Type of chat entity.|
 
 ## Relationships
 

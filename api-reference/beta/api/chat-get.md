@@ -30,9 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/chats/{id}
-GET /users/{id}/chats/{id}
-GET /chats/{id}
+GET /me/chats/{chat-id}
+GET /users/{user-id}/chats/{chat-id}
+GET /chats/{chat-id}
 ```
 
 ## Optional query parameters
@@ -64,7 +64,7 @@ Here is an example of the request.
   "name": "get_chat_message"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}/chats/{id}
+GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats/19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces
 ```
 
 ---
