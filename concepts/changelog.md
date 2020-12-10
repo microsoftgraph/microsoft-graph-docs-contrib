@@ -69,6 +69,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added [List tabs in chat](/graph/api/chat-list-tabs?view=graph-rest-beta&preserve-view=true), [Get tab in chat](/graph/api/chat-get-tabs?view=graph-rest-beta&preserve-view=true), [Add tab to chat](/graph/api/chat-post-tab?view=graph-rest-beta&preserve-view=true), [Remove tab from chat](/graph/api/chat-delete-tabs?view=graph-rest-beta&preserve-view=true), [Update tab in chat](/graph/api/chat-patch-tabs?view=graph-rest-beta&preserve-view=true) methods to [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource type. |
 | Addition | beta | Added the **tenantId** property to [aadUserConversationMember](/graph/api/resources/aadUserConversationMember?view=graph-rest-beta&preserve-view=true) resource|
 | Addition | beta | Added the **visibleHistoryStartDateTime** property to [conversationMember](/graph/api/resources/conversationMember?view=graph-rest-beta&preserve-view=true) resource|
+| Addition | beta | Added the following methods to the [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) resource: [Add chat member](/graph/api/chat-post-members?view=graph-rest-beta&preserve-view=true), [Delete chat member](/graph/api/chat-delete-members?view=graph-rest-beta&preserve-view=true).|
 
 ## November 2020
 
