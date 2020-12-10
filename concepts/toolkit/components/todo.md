@@ -5,9 +5,9 @@ localization_priority: Normal
 author: shweaver-MSFT
 ---
 
-# To Do Component in the Microsoft Graph Toolkit
+# To Do component in the Microsoft Graph Toolkit
 
-The To Do component is used to enable the signed-in user to view, add, remove, complete, and/or edit tasks from Microsoft To Do using the To Do tasks API on Microsoft Graph.
+The To Do component is used to enable the signed-in user to view, add, remove, complete, and/or edit tasks from Microsoft To Do using the To Do API in Microsoft Graph.
 
 ## Example
 
@@ -103,12 +103,12 @@ The following events are fired from the component.
 
 ## Templates
 
-The `tasks` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following:
+The `tasks` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
 
 | Data type     | Data context              | Description                                                       |
 | ---------     | ------------------------- | ----------------------------------------------------------------- |
-| task     | task: a to-do task object | replaces the whole default task. |
-| task-details | task: a to-do task object | template replaces the details section of the task. |
+| task     | task: a to-do task object | Replaces the whole default task. |
+| task-details | task: a to-do task object | Template replaces the details section of the task. |
 
 The following example defines a template for the tasks component.
 
