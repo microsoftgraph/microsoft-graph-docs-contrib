@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "8faf36d1-4d32-4ef9-bdd1-a6f95c66bc24",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [emailAuthenticationMethodConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/emailAuthenticationMethodConfiguration?view=graph-rest-beta) entity for managing users\u0027 email OTP authentication method policy.",
+          "Target": "emailAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "8faf36d1-4d32-4ef9-bdd1-a6f95c66bc24",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-09T00:00:00",
+      "WorkloadArea": "Identity and access ",
+      "SubArea": " Identity and sign-in"
+    },
+  {
+      "ChangeList": [
+        {
+          "Id": "a4f81577-234e-11eb-8b0e-705e20bbe57e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authorizationPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [authorizationPolicy](https://docs.microsoft.com/graph/api/resources/authorizationPolicy?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Target": "authorizationPolicy"
+        }
+      ],
+      "Id": "a4f353ec-234e-11eb-8b0e-705e20bbe57e",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-12-04T12:17:04.676Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c9a44ae1-13e8-4d6a-87fc-8bc2841a126b",
           "ApiChange": "Property",
           "ChangedApiName": "Terms of Use agreementfile",

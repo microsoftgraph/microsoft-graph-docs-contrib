@@ -30,6 +30,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [custodian](/graph/api/resources/custodian?view=graph-rest-beta&preserve-view=true), [unifiedGroupSource](/graph/api/resources/unifiedgroupsource?view=graph-rest-beta&preserve-view=true), and [siteSource](/graph/api/resources/sitesource?view=graph-rest-beta&preserve-view=true) resources and associated methods. |
 
+### Devices and apps | Cloud printing
+
+| **Change type** | **Version**   | **Description**                          |
+|:---|:---|:---|
+| Change | beta | Updated enum types in [printerProcessingStateDetail](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values) resource. |
+
 ### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
@@ -47,6 +53,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added methods for listing and creating user attribute assignments to the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added methods for listing and creating user attribute assignments to the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | v1.0 | Added the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true) resource type. |
+| Addition | beta | Added [email authentication method configuration](/graph/api/resources/emailauthenticationmethodconfiguration?view=graph-rest-beta) to the [authentication methods policy](/graph/api/resources/authenticationmethodspolicies-overview) API.|
 
 ### Teamwork
 
@@ -110,6 +117,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the [reprovision](/graph/api/cloudPC-reprovision?view=graph-rest-beta&preserve-view=true) method to the [cloudPC](/graph/api/resources/cloudPC?view=graph-rest-beta&preserve-view=true) resource|
 |Addition|beta|Added the [getEffectivePermissions](/graph/api/virtualEndpoint-getEffectivePermissions?view=graph-rest-beta&preserve-view=true) method to the [virtualEndpoint](/graph/api/resources/virtualEndpoint?view=graph-rest-beta&preserve-view=true) resource|
 |Addition|beta|Added the [getSourceImages](/graph/api/cloudPcDeviceImage-getSourceImages?view=graph-rest-beta&preserve-view=true) method to the [cloudPcDeviceImage](/graph/api/resources/cloudPcDeviceImage?view=graph-rest-beta&preserve-view=true) resource|
+
+### Devices and apps | Cloud printing
+
+| **Change type** | **Version**   | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the **hasPhysicalDevice** property to the [printer](/graph/api/resources/printer?view=graph-rest-beta) resource.|
+|Addition|beta|Added the [abort](/graph/api/printjob-abort?view=graph-rest-beta) action to the [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource.|
+|Addition|beta|Added the configuration property to the [redirect](/graph/api/printjob-redirect?view=graph-rest-beta) action on the [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource.|
 
 ### Devices and apps | Corporate management
 
