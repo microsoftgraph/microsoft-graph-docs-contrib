@@ -40,6 +40,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Change | beta | Changed type of allowedGroups relationship on [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) resource. |
 | Change | beta | Updated enum types in [printerProcessingStateDetail](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values) resource. |
 
+### Education
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added new optional, properties **addedStudentAction**, **notificationChannelUrl** to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta).|
+| Addition | beta | Added new optional, properties **addedStudentAction**, **notificationChannelUrl** to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true).|
+
 ### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
