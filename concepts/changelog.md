@@ -50,6 +50,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat) method to the new [userScopeTeamsAppInstallation](/graph/api/resources/userScopeTeamsAppInstallation) resource. |
 | Addition | beta | Added [Get the installed app in team](/graph/api/team-get-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed app for user](/graph/api/userteamwork-get-installedapps?view=graph-rest-beta&preserve-view=true)|
 | Addition | beta | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/resources/userScopeTeamsAppInstallation?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **tenantId** property to [aadUserConversationMember](/graph/api/resources/aadUserConversationMember?view=graph-rest-beta&preserve-view=true) resource|
+| Addition | beta | Added the **visibleHistoryStartDateTime** property to [conversationMember](/graph/api/resources/conversationMember?view=graph-rest-beta&preserve-view=true) resource|
 
 ## November 2020
 
