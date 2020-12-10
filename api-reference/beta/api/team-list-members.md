@@ -117,7 +117,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Find members of a team by their AzureAD user object ID
+### Example 2: Find members of a team by their Azure AD user object ID
 
 The following example shows a request to find the membership resources based on `id` of the [Azure AD user](../resources/user.md) associated with the [aadUserConversationMember](../resources/aaduserconversationmember.md).
 
@@ -221,7 +221,7 @@ Content-Type: application/json
 The following example shows a request to find all the members who are have *owner* role attached to them.
 
 > [!NOTE]
-> There are some known issues with this functionality that are being investigated.
+> There are some known issues with this functionality.
 
 #### Request
 
