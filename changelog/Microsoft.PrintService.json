@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "abort,printJob",
           "ChangeType": "Addition",
-          "Description": "Added the [abort](/graph/api/printjob-abort?view=graph-rest-beta) action to the [printJob]((https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
+          "Description": "Added the [abort](https://docs.microsoft.com/en-us/graph/api/printjob-abort?view=graph-rest-beta) action to the [printJob]((https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
           "Target": "abort,printJob"
         },
         {
