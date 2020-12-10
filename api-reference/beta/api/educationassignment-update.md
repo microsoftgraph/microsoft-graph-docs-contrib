@@ -50,11 +50,7 @@ In the request body, supply the values for relevant fields that should be update
 |dueDateTime|DateTimeOffset| Date assignment is due. |
 |grading|educationAssignmentGradeType| How the assignment will be graded.|
 |instructions|itemBody| Instructions to be given to the students along with the assignment. |
-<<<<<<< HEAD
 |notificationChannelUrl|String| Channel to post assignment publish notification. Updating the channel URL is not allowed after the assignment has been published and is only allowed when the **assignTo** value is [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
-=======
-|notificationChannelUrl|String| Channel to post assignment publish notification. Updating the channel Url is not allowed after the assignment has been published and is only allowed when **assignTo** value is [educationAssignmentClassRecipient](educationassignmentclassrecipient.md).|
->>>>>>> 76fe36b798 (Add 2 new, optional properties to educationAssignment Object)
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [educationAssignment](../resources/educationassignment.md) object in the response body.
