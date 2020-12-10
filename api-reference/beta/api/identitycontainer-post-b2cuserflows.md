@@ -52,7 +52,7 @@ In the request body, provide a JSON representation of a [b2cIdentityUserFlow](..
 |Property|Type|Description|
 |:---------------|:--------|:----------|
 |id|String|Required. The name of the user flow. The name will be pre-pended with `B2C_1` after creation.|
-|userFlowType|String|Required. The type of user flow you are creating. The supported values for **userFlowType** are:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
+|userFlowType|String|Required. The type of user flow you are creating. The supported values for **userFlowType** are:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|Float|Required. The version of the user flow.|
 |identityProviders|[identityProvider](../resources/identityprovider.md) collection|Optional. The identity providers you want to include in the user flow.|
 
