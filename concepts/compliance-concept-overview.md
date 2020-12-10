@@ -38,5 +38,5 @@ Depending on the current systems and processes in place, organizations might hav
 ## Next steps
 
 - Explore your own data from the user resource in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-- Explore the [Microsoft Graph compliance APIs](graph/api/resources/complianceapioverview).
+- Explore the [Microsoft Graph compliance APIs](/graph/api/resources/complianceapioverview).
 - Explore Microsoft Graph [samples and SDKs](https://developer.microsoft.com/graph/gallery/?filterBy=Samples,SDKs).
