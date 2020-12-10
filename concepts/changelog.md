@@ -53,9 +53,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description** |
 |:---|:---|:---|
-|Addition|beta|Added the **hasPhysicalDevice** property to the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.|
-|Addition|beta|Added the [abort](https://docs.microsoft.com/en-us/graph/api/printjob-abort?view=graph-rest-beta) action to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.|
-|Addition|beta|Added the configuration property to the [redirect](https://docs.microsoft.com/en-us/graph/api/printjob-redirect?view=graph-rest-beta) action on the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.|
+|Addition|beta|Added the **hasPhysicalDevice** property to the [printer](/graph/api/resources/printer?view=graph-rest-beta) resource.|
+|Addition|beta|Added the [abort](/graph/api/printjob-abort?view=graph-rest-beta) action to the [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource.|
+|Addition|beta|Added the configuration property to the [redirect](/graph/api/printjob-redirect?view=graph-rest-beta) action on the [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource.|
 
 ### Devices and apps | Corporate management
 
