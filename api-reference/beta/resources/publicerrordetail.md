@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-This represents the details of [publicError](../resources/publicerror.md) or [publicInnerError](../resources/publicinnererror.md).
+Represents the details of [publicError](../resources/publicerror.md) or [publicInnerError](../resources/publicinnererror.md).
 
 ## Properties
 |Property|Type|Description|
