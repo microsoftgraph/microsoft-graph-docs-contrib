@@ -41,15 +41,7 @@ The assignment APIs are exposed in the class namespace.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only.|
-<<<<<<< HEAD
-<<<<<<< HEAD
 |addedStudentAction|String|Optional field to control the assignment behavior for students who are added after the assignment is published. If not specified, defaults to `none` value. Currently supports only two values: `none` or `assignIfOpen`.|
-=======
-|addedStudentAction|String|Optional field to control the assignment behavior for students who are added after the assignment is published. If not specified, defaults to `none` value. Currently supports only two values: `none` or `assignIfOpen`|
->>>>>>> 76fe36b798 (Add 2 new, optional properties to educationAssignment Object)
-=======
-|addedStudentAction|String|Optional field to control the assignment behavior for students who are added after the assignment is published. If not specified, defaults to `none` value. Currently supports only two values: `none` or `assignIfOpen`.|
->>>>>>> 109ee9e146 (Edit.)
 |allowLateSubmissions|Boolean| Identifies whether students can submit after the due date. If this property is not specified during create, it defaults to true. |
 |allowStudentsToAddResourcesToSubmission|Boolean| Identifies whether students can add their own resources to a submission or if they can only modify resources added by the teacher. |
 |assignDateTime|DateTimeOffset|The date when the assignment should become active.  If in the future, the assignment is not shown to the student until this date.  The **Timestamp** type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
@@ -65,19 +57,7 @@ The assignment APIs are exposed in the class namespace.
 |instructions|[itemBody](itembody.md)| Instructions for the assignment.  This along with the display name tell the student what to do. |
 |lastModifiedBy|[identitySet](identityset.md)| Who last modified the assignment. |
 |lastModifiedDateTime|DateTimeOffset|Moment when the assignment was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 |notificationChannelUrl|String|Optional field to specify the URL of the [channel](channel.md) to post the assignment publish notification. If not specified or null, defaults to the `General` channel. This field only applies to assignments where the **assignTo** value is [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Updating the **notificationChannelUrl** is not allowed after the assignment has been published.|
-=======
-|notificationChannelUrl|String|Optional field to specify the Url of the [channel](channel.md) to post the assignment publish notification. If not specified or a null value defaults to the `General` channel. This field only applies to assignments where the **assignTo** value is [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Updating the channelId is not allowed after the assignment has been published.|
->>>>>>> 76fe36b798 (Add 2 new, optional properties to educationAssignment Object)
-=======
-|notificationChannelUrl|String|Optional field to specify the URL of the [channel](channel.md) to post the assignment publish notification. If not specified or null, defaults to the `General` channel. This field only applies to assignments where the **assignTo** value is [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Updating the **channelId** is not allowed after the assignment has been published.|
->>>>>>> 109ee9e146 (Edit.)
-=======
-|notificationChannelUrl|String|Optional field to specify the URL of the [channel](channel.md) to post the assignment publish notification. If not specified or null, defaults to the `General` channel. This field only applies to assignments where the **assignTo** value is [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Updating the **notificationChannelUrl** is not allowed after the assignment has been published.|
->>>>>>> 6d5dae8cd7 (updated log text and assignments resource info)
 |status|string| Status of the **Assignment**.  You can not PATCH this value.  Possible values are: `draft`, `scheduled`, `published`, `assigned`.|
 
 ## Relationships
