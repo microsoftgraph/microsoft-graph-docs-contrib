@@ -28,9 +28,9 @@ Represents the physical and hierarchical location of a printer.
 |countryOrRegion|String|The country or region that the printer is located in.|
 |site|String|The site that the printer is located in.|
 |building|String|The building that the printer is located in.|
-|floor|String|The floor that the printer is located on. Only numerical values supported right now.|
+|floor|String|The floor that the printer is located on. Only numerical values are supported right now.|
 |floorDescription|String|The description of the floor that the printer is located on.|
-|roomName|String|The room that the printer is located in. Only numerical values supported right now.|
+|roomName|String|The room that the printer is located in. Only numerical values are supported right now.|
 |roomDescription|String|The description of the room that the printer is located in.|
 |organization|String collection|The organizational hierarchy that the printer belongs to. The elements should be in hierarchical order.|
 |subdivision|String collection|The subdivision that the printer is located in. The elements should be in hierarchical order.|
