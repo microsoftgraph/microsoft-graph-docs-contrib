@@ -50,6 +50,7 @@ The `mgt-people` component defines the following CSS custom properties.
 mgt-people {
   --list-margin: 8px 4px 8px 8px; /* Margin for component */
   --avatar-margin: 0 4px 0 0; /* Margin for each person */
+  --color: #000000 /* Text color *?
 }
 ```
 

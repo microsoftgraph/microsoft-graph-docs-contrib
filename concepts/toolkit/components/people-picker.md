@@ -31,7 +31,7 @@ By default, the `mgt-people-picker` component fetches people from the `/me/peopl
 |  selected-people  | selectedPeople     | An array of selected people. Set this value to select people programmatically.|
 | people   | people    | An array of people found and rendered in the search result |
 | placeholder   | placeholder    | A string representing input placeholder text. Default is "Start typing a name".
-| selection-mode   | selectionMode   | A string value allows developer to specify whether the component supports multiple selected people or just one. Default is "multiple", "single" being the other option.
+| selection-mode   | selectionMode   | A string value that allows you to specify whether the component supports multiple selected people or just one. Default is `multiple`; `single` is the other option.
 | default-selected-user-ids | defaultSelectedUserIds | When provided a string of comma-separated Microsoft Graph user IDs, the component renders the respective users as selected upon initialization.
 | selection-mode | selectionMode | Used to indicate whether to allow selecting multiple users or just a single user. Available options are: `single`, `multiple`. Default value is `multiple`.
 | placeholder | placeholder | The default text that appears to explain how to use the component. Default value is `Start typing a name`.
@@ -89,17 +89,17 @@ mgt-people-picker {
     --input-border-top: 2px rgba(255, 255, 255, 0.5) solid;
 
     --input-background-color: #1f1f1f; /* input area background color */
-    --input-hover-color: #008394; /* input area border hover color */
-    --input-focus-color: #0f78d4; /* input area border focus color */
+    --input-border-color--hover: #008394; /* input area border hover color */
+    --input-border-color--focus: #0f78d4; /* input area border focus color */
 
     --dropdown-background-color: #1f1f1f; /* selection area background color */
     --dropdown-item-hover-background: #333d47; /* person background color on hover */
     
     --selected-person-background-color: #f1f1f1; /* person item background color */
     
-    --font-color: white; /* input area border focus color */
-    --placeholder-default-color: #f1f1f1; /* placeholder text color default*/
-    --placeholder-focus-color: rgba(255, 255, 255, 0.8); /* placeholder text focus color */
+    --color: white; /* input area border focus color */
+    --placeholder-color: #f1f1f1; /* placeholder text color */
+    --placeholder-color--focus: rgba(255, 255, 255, 0.8); /* placeholder text focus color */
 }
 ```
 

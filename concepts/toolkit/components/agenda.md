@@ -30,7 +30,7 @@ By default, the `mgt-agenda` component fetches events from the `/me/calendarview
 | event-query | eventQuery | A string that represents an alternative query to be used when fetching events from Microsoft Graph. Optionally, add the delegated scope at the end of the string by delimiting it with `|` (`/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all`). |
 | events | events | An array of events to get or set the list of events rendered by the component - use this property to access the events loaded by the component. Set this value to load your own events - if value is set by developer, the `date`, `days`, or `event-query` attributes have no effect. |
 | group-by-day | groupByDay | A Boolean value to group events by day - by default events are not grouped. |
-| preferred-timezone | preferredTimezone | Name of the preferred timezone to use when retrieving events from Graph, eg. `Pacific Standard Time`. By default uses the UTC timezone. The preferred timezone for the current user can be retrieved by calling the `me/mailboxSettings` Graph endpoint and reading the value of the `timeZone` property. |
+| preferred-timezone | preferredTimezone | Name of the preferred time zone to use when retrieving events from Microsoft Graph; for example, `Pacific Standard Time`. By default, this attribute uses the UTC time zone. The preferred time zone for the current user can be retrieved by calling the `me/mailboxSettings` endpoint and reading the value of the **timeZone** property. |
 
 The following example changes the behavior of the component to fetch data for a specific date and up to three days.
 
@@ -64,7 +64,7 @@ mgt-agenda {
   --event-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.092);
   --event-margin: 0px 10px 14px 10px;
   --event-padding: 8px 0px;
-  --event-background: #ffffff;
+  --event-background-color: #ffffff;
   --event-border: solid 2px rgba(0, 0, 0, 0);
 
   --agenda-header-margin: 40px 10px 14px 10px;
@@ -148,7 +148,7 @@ When using the default template and default `renderAttendees` template, addition
 
 ## Authentication
 
-The login control leverages the global authentication provider described in the [authentication documentation](../providers/providers.md).
+The login control uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
 
 ## Extend for more control
 

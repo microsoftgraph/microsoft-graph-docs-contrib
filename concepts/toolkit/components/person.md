@@ -127,7 +127,7 @@ The following example defines a template for the person component.
 </mgt-person>
 ```
 
-## Person Card
+## Person card
 
 The `mgt-person` component can show an `mgt-person-card` on either hover or click.
 
@@ -155,11 +155,11 @@ import { MgtPerson } from `@microsoft/mgt`;
 MgtPerson.config.useContactApis = false;
 ```
 
-The following properties are available on the config object:
+The following properties are available on the config object.
 
 | Property | Description |
 | ------------ | ------------- |
-| useContactApis | `boolean` - Whether the person component can use the Microsoft Graph Contact API to search for contact details and photos - default is `true`.  |
+| useContactApis | `boolean` - Indicates whether the person component can use the Microsoft Graph personal contacts API to search for contact details and photos. Default value is `true`.  |
 
 ## Microsoft Graph permissions
 
