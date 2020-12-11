@@ -399,7 +399,7 @@ Content-type: application/json
 }
 ```
 
-### Example 7: List dynamic groups, filtered by enabled dynamic groups
+### Example 7: List dynamic groups, filtered by enabled membershipRuleProcessingState
 
 #### Request
 
