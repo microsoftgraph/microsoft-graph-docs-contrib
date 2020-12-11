@@ -9,7 +9,7 @@ author: elisenyang
 
 The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic components and authentication providers for accessing and working with Microsoft Graph. The components are fully functional right of out of the box, with built in providers that authenticate with and fetch data from Microsoft Graph.
 
-The Microsoft Graph Toolkit makes it easy to use Microsoft Graph in your application. In the example below, see how a signed in user and their calendar events are displayed with just two lines of code by using the [Login](./components/login.md) and [Agenda](./components/agenda.md) components.
+The Microsoft Graph Toolkit makes it easy to use Microsoft Graph in your application. In the following example, a signed in user and their calendar events are displayed with just two lines of code by using the [Login](./components/login.md) and [Agenda](./components/agenda.md) components.
 
 <iframe src="https://mgt.dev/iframe.html?id=samples-general--login-to-show-agenda&source=docs&source=docs" height="400"></iframe>
 
@@ -38,7 +38,7 @@ The components are also available as [React components](./get-started/mgt-react.
 
 ### Providers
 
-[Providers](/providers/providers.md) enable authentication and provide the implementation for acquiring access tokens on various platforms and expose a Microsoft Graph Client for calling the Microsoft Graph APIs. The components work best when used with a provider, but the providers can be used on their own.
+[Providers](/providers/providers.md) enable authentication and provide the implementation for acquiring access tokens on various platforms and expose a Microsoft Graph client for calling the Microsoft Graph APIs. The components work best when used with a provider, but the providers can be used on their own.
 
 |Providers|Description|
 |---------|-----------|
