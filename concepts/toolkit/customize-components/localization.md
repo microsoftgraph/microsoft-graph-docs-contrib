@@ -1,21 +1,21 @@
 ---
-title: "Localizing the Microsoft Graph Toolkit Components"
-description: "Use LocalizationHelper to localize Microsoft Graph Toolkit Components"
+title: "Localizing the Microsoft Graph Toolkit components"
+description: "Use LocalizationHelper to localize Microsoft Graph Toolkit components."
 localization_priority: Normal
 author: vogtn
 ---
 
-# Localizing the Microsoft Graph Toolkit Components
+# Localizing the Microsoft Graph Toolkit components
 
 Localization is a important aspect of application development to support users with various language requirements globally.
 
-The Microsoft Graph Toolkit components can be localized so the user-interface reflects the desired linguistic experience.
+You can localize the Microsoft Graph Toolkit components to ensure that the UI reflects the target language.
 
 ## Use LocalizationHelper to add localized strings
 
 All strings in the toolkit are not localized, but you can provide your own localized strings and manage different languages through the same process you use for localizing your app. To facilitate localization, the toolkit exposes the `LocalizationHelper` static class.
 
-This is an example of localizing several components:
+The following example shows how to localize several components.
 
 ```ts
 import { LocalizationHelper } from "@microsoft/mgt";
@@ -65,6 +65,7 @@ LocalizationHelper.strings = {
 When the `strings` property is assigned, all components will automatically pick up the new strings and re-render, allowing you to change strings dynamically. 
 
 The strings can be set at a global level or per component (with the `_components:` property).
+
 ## Strings
 
 ### Login
