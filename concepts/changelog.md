@@ -17,7 +17,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added [todoTask](/graph/api/resources/todoTask?view=graph-rest-beta) to the resources supported for [change notifications](/graph/webhooks).|
+| Addition | beta | Added [todoTask](/graph/api/resources/todoTask?view=graph-rest-beta&preserve-view=true) to the resources supported for [change notifications](/graph/webhooks).|
 
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
@@ -34,7 +34,10 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
+| Change | beta | Changed type of allowedUsers relationship on [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) resource. |
+| Change | beta | Changed type of allowedGroups relationship on [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) resource. |
 | Change | beta | Updated enum types in [printerProcessingStateDetail](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values) resource. |
+
 
 ### Identity and access
 
@@ -67,6 +70,11 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the [getAllMessages](/graph/api/channels-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource collection.|
 | Addition | beta | Added [List apps in chat](/graph/api/chat-list-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed apps in chat](/graph/api/chat-get-installedapps?view=graph-rest-beta&preserve-view=true), [Add app to chat](/graph/api/chat-post-installedapps?view=graph-rest-beta&preserve-view=true), [Uninstall app from chat](/graph/api/chat-delete-installedapps?view=graph-rest-beta&preserve-view=true), [Upgrade installed app in chat](/graph/api/chat-upgrade-installedapps?view=graph-rest-beta&preserve-view=true) methods to [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource type. |
 | Addition | beta | Added [List tabs in chat](/graph/api/chat-list-tabs?view=graph-rest-beta&preserve-view=true), [Get tab in chat](/graph/api/chat-get-tabs?view=graph-rest-beta&preserve-view=true), [Add tab to chat](/graph/api/chat-post-tab?view=graph-rest-beta&preserve-view=true), [Remove tab from chat](/graph/api/chat-delete-tabs?view=graph-rest-beta&preserve-view=true), [Update tab in chat](/graph/api/chat-patch-tabs?view=graph-rest-beta&preserve-view=true) methods to [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource type. |
+| Addition | beta | Added the [add](/graph/api/conversationmembers-add?view=graph-rest-beta&preserve-view=true) method to the [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) resource collection.|
+| Addition | beta | Added the [actionResultPart](/graph/api/resources/actionresultpart?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the [aadUserConversationMemberResult](/graph/api/resources/aaduserconversationmemberresult?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the [publicInnerError](/graph/api/resources/publicinnererror?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the [publicErrorDetail](/graph/api/resources/publicerrordetail?view=graph-rest-beta&preserve-view=true) resource.|
 
 ## November 2020
 
@@ -170,8 +178,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added support for [resource-specific consent](https://aka.ms/teams-rsc) (RSC) permissions to v1.0 APIs. |
 | Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage). |
-| Addition | Beta | Added the following methods to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource: [List channel members](/graph/api/channel-list-members?view=graph-rest-beta&preserve-view=true), [Get channel member](/graph/api/channel-get-members?view=graph-rest-beta&preserve-view=true), [Add channel member](/graph/api/channel-post-members?view=graph-rest-beta&preserve-view=true),  [Update channel member's role](/graph/api/channel-update-members?view=graph-rest-beta&preserve-view=true), [Remove channel member](/graph/api/channel-delete-members?view=graph-rest-beta&preserve-view=true).|
-| Addition | v1.0 | Added the following methods to the [channel](/graph/api/resources/channel) resource: [List channel members](/graph/api/channel-list-members), [Get channel member](/graph/api/channel-get-members), [Add channel member](/graph/api/channel-post-members),  [Update channel member's role](/graph/api/channel-update-members), [Remove channel member](/graph/api/channel-delete-members).|
+| Addition | Beta | Added the following methods to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource: [List channel members](/graph/api/channel-list-members?view=graph-rest-beta&preserve-view=true), [Get channel member](/graph/api/channel-get-members?view=graph-rest-beta&preserve-view=true), [Create channel member](/graph/api/channel-post-members?view=graph-rest-beta&preserve-view=true),  [Update channel member's role](/graph/api/channel-update-members?view=graph-rest-beta&preserve-view=true), [Remove channel member](/graph/api/channel-delete-members?view=graph-rest-beta&preserve-view=true).|
+| Addition | v1.0 | Added the following methods to the [channel](/graph/api/resources/channel) resource: [List channel members](/graph/api/channel-list-members), [Get channel member](/graph/api/channel-get-members), [Create channel member](/graph/api/channel-post-members),  [Update channel member's role](/graph/api/channel-update-members), [Remove channel member](/graph/api/channel-delete-members).|
 
 
 ## October 2020
