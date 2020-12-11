@@ -12689,7 +12689,7 @@ items:
           href: api/teamsapp-update.md
         - name: Delete app from catalog
           href: api/teamsapp-delete.md
-      - name: Apps
+      - name: App
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
