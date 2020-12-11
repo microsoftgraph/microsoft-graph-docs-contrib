@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "c6857dac-2cec-457f-a760-5dac6397e554",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerShare",
+          "ChangeType": "Change",
+          "Description": "Changed type of allowedUsers relationship on [printerShare](https://docs.microsoft.com/en-us/graph/api/resources/printershare?view=graph-rest-beta) resource.",
+          "Target": "printerShare"
+        },
+        {
+          "Id": "c6857dac-2cec-457f-a760-5dac6397e554",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerShare",
+          "ChangeType": "Change",
+          "Description": "Changed type of allowedGroups relationship on [printerShare](https://docs.microsoft.com/en-us/graph/api/resources/printershare?view=graph-rest-beta) resource.",
+          "Target": "printerShare"
+        }
+      ],
+      "Id": "c6857dac-2cec-457f-a760-5dac6397e554",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-10T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": " Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "62d9370f-55fe-465c-9041-644ef9f55a83",
           "ApiChange": "Property",
           "ChangedApiName": "printerStatus",
@@ -51,6 +77,7 @@
       "CreatedDateTime": "2020-12-02T00:00:00",
       "WorkloadArea": "Devices and apps ",
       "SubArea": " Cloud printing"
+    },
     {
       "ChangeList": [
         {
@@ -74,9 +101,9 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowedGroups",
           "ChangeType": "Change",
-          "Description": "Removed the **allowedGroups** property on the [printer](/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Description": "Removed the **allowedGroups** property on the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
           "Target": "printer"
-        }        
+        }
       ],
       "Id": "3a4e1e60-0477-4cda-9665-3a880ab0e927",
       "Cloud": "prd",

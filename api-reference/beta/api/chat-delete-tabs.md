@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Remove (unpin) a tab from the specified [chat](../resources/chat.md). 
 
+> **Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tab will get removed from the meeting.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
