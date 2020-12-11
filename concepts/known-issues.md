@@ -204,6 +204,10 @@ You must first create the resource instance and then do a `PATCH` to that instan
 
 Directory resources, such as **device**, **group** and **user**, currently limit the total number of schema extension property values that can be set on a resource instance, to 100.
 
+### Updating a schemaExtension definition using Microsoft Graph Explorer
+
+When using `PATCH` to update a schemaExtension using Graph Explorer, you must specify the **owner** property and set it to its current `appid` value (which will need to be an `appId` of an application that you own). This is also the case for any client application whose `appId` is not the same as the **owner**.
+
 ### Filtering on schema extension properties not supported on all entity types
 
 Filtering on schema extension properties (using the `$filter` expression) is not supported for Outlook entity types - **contact**, **event**, **message**, or **post**.
@@ -332,8 +336,8 @@ In both the v1 and beta endpoints, the response of `GET /users/id/messages` incl
 To get a list of teams, see [list all teams](teams-list-all-teams.md) and 
 [list your teams](/graph/api/user-list-joinedteams).
 
-### POST /teams is only available in beta
-To create teams in v1.0, see [create team](/graph/api/team-put-teams).
+### Unable to filter team members by roles
+The filter query to get members of a team based on their roles `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')` might not work. The server might respond with a `BAD REQUEST`.
 
 ## Users
 
