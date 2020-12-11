@@ -431,34 +431,34 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus)",
   "value":[
     {
-      "id": "1",
-        "membershipRule": "accountEnabled eq true",
-        "membershipRuleProcessingState": "On",
-        "membershipRuleProcessingStatus": {
-            "status" : "Running",
-            "lastMembershipUpdated"  : "2020-09-14T00:00:00Z",
-            "errorMessage" : null
+      "id": "7c120147-3f88-447b-8c48-954863301048",
+      "membershipRule": "user.accountEnabled -eq true",
+      "membershipRuleProcessingState": "On",
+      "membershipRuleProcessingStatus": {
+          "status" : "Running",
+          "lastMembershipUpdated"  : "2020-09-14T00:00:00Z",
+          "errorMessage" : null
         }
     },
     {
-        "id": "2",
-        "membershipRule": "accountEnabled eq false",
-        "membershipRuleProcessingState": "On",
-        "membershipRuleProcessingStatus": {
-            "status" : "Succeeded",
-            "lastMembershipUpdated"  : "2020-09-14T00:00:00Z",
-            "errorMessage" : null
+      "id": "1cdf9c18-a7dc-46b1-b47f-094d5656376d",
+      "membershipRule": "user.accountEnabled -eq false",
+      "membershipRuleProcessingState": "On",
+      "membershipRuleProcessingStatus": {
+          "status" : "Succeeded",
+          "lastMembershipUpdated"  : "2020-09-14T00:00:00Z",
+          "errorMessage" : null
         }
     },
     {
-        "id": "3",
-        "membershipRule": "extensionAttribute_1234_skypId eq 1",
-        "membershipRuleProcessingState": "On",
-        "membershipRuleProcessingStatus": {
-            "status" : "Failed",
-            "lastMembershipUpdated"  : "2020-09-14T00:00:00Z",
-            "errorMessage" : "Extension attribute no longer exists in directory."
-        }
+      "id": "0742f053-d383-4ed1-ab29-e46398ded328",
+      "membershipRule": "extensionAttribute_1234_skypId eq 1",
+      "membershipRuleProcessingState": "On",
+      "membershipRuleProcessingStatus": {
+          "status" : "Failed",
+          "lastMembershipUpdated"  : "2020-09-14T00:00:00Z",
+          "errorMessage" : "Extension attribute no longer exists in directory."
+      }
     }
   ]
 }
