@@ -66,17 +66,3 @@ mgt-people-picker.custom-class {
     --input-border: $custom-input-border;
 }
 ```
-
-## Disable the shadow dom (experimental)
-
-You can disable the shadow dom, and directly style internal elements using normal browser stylesheets, by setting the static property `useShadowDom` of the `MgtBaseComponent` class to false before using any MGT tags.
-
-
-```html
-<script type="module">
-  import { MgtBaseComponent } from './dist/es6/components/baseComponent.js';
-   MgtBaseComponent.useShadowRoot = false;
-</script>
-
-<script type="module" src="./dist/es6/components/mgt-tasks/mgt-tasks.js"></script>
-````
