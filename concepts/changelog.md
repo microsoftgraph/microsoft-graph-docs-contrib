@@ -13,6 +13,16 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## December 2020
 
+### Devices and apps | Cloud PC
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the `failed` member to the **cloudPcStatus** enumeration|
+|Deletion|beta|Removed the `upgradeFailed` member from the **cloudPcStatus** enumeration|
+|Deletion|beta|Removed the `provisionFailed` member from the **cloudPcStatus** enumeration|
+|Deletion|beta|Removed the `deprovisionFailed` member from the **cloudPcStatus** enumeration|
+|Deletion|beta|Removed the `reprovisionFailed` member from the **cloudPcStatus** enumeration|
+
 ### Change notifications
 
 | **Change type** | **Version**   | **Description**                          |

@@ -1,5 +1,50 @@
 {
-    "changelog": [{
+    "changelog": [
+        {
+            "ChangeList": [{
+                "Id": "97ae5c09-3b8e-11eb-822d-0179b911e3f8",
+                "ApiChange": "Member",
+                "ChangedApiName": "failed",
+                "ChangeType": "Addition",
+                "Description": "Added the `failed` member to the **cloudPcStatus** enumeration",
+                "Target": "cloudPcStatus"
+            }, {
+                "Id": "97b31fed-3b8e-11eb-822d-0179b911e3f8",
+                "ApiChange": "Member",
+                "ChangedApiName": "upgradeFailed",
+                "ChangeType": "Deletion",
+                "Description": "Removed the `upgradeFailed` member from the **cloudPcStatus** enumeration",
+                "Target": "cloudPcStatus"
+            }, {
+                "Id": "97b58140-3b8e-11eb-822d-0179b911e3f8",
+                "ApiChange": "Member",
+                "ChangedApiName": "provisionFailed",
+                "ChangeType": "Deletion",
+                "Description": "Removed the `provisionFailed` member from the **cloudPcStatus** enumeration",
+                "Target": "cloudPcStatus"
+            }, {
+                "Id": "97b7e978-3b8e-11eb-822d-0179b911e3f8",
+                "ApiChange": "Member",
+                "ChangedApiName": "deprovisionFailed",
+                "ChangeType": "Deletion",
+                "Description": "Removed the `deprovisionFailed` member from the **cloudPcStatus** enumeration",
+                "Target": "cloudPcStatus"
+            }, {
+                "Id": "97ba475b-3b8e-11eb-822d-0179b911e3f8",
+                "ApiChange": "Member",
+                "ChangedApiName": "reprovisionFailed",
+                "ChangeType": "Deletion",
+                "Description": "Removed the `reprovisionFailed` member from the **cloudPcStatus** enumeration",
+                "Target": "cloudPcStatus"
+            }],
+            "Id": "97a9977f-3b8e-11eb-822d-0179b911e3f8",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2020-12-11T08:55:18.080Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
         "ChangeList": [{
             "Id": "a02dc7e3-2046-11eb-8f2d-4d95d7faf546",
             "ApiChange": "Resource",
@@ -131,7 +176,7 @@
         "Cloud": "prd",
         "Version": "beta",
         "CreatedDateTime": "2020-11-06T15:42:07.177Z",
-        "WorkloadArea": "Cloud PC",
-        "SubArea": null
+        "WorkloadArea": "Devices and apps",
+        "SubArea": "Cloud PC"
     }]
 }
