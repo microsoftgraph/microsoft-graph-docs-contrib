@@ -9,7 +9,7 @@ author: nmetulev
 
 Use the Teams provider inside your Microsoft Teams tab to facilitate authentication and Microsoft Graph access to all components.
 
-To learn more about authentication providers, see [providers](../providers.md).
+To learn more about authentication providers, see [providers](./providers.md).
 
 >**Tip:** For details about how to get started with creating a Microsot Teams application with the Teams Provider, see the [Build a Microsoft Teams tab](../get-started/build-a-microsoft-teams-tab.md) getting started guide.
 
