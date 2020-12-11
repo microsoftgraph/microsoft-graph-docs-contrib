@@ -13,6 +13,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## December 2020
 
+### Groups
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | beta | Added the `membershipRuleProcessingStatus` property to dynamic groups.|
+
 ### Change notifications
 
 | **Change type** | **Version**   | **Description**                          |
