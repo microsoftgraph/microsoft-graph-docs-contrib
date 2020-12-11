@@ -45,6 +45,19 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added a new resource type to [Terms of Use agreement](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true):</br>[agreementFileVersion](/graph/api/resources/agreementfileversion?view=graph-rest-beta&preserve-view=true)|
 | Addition | beta | Added the **managerLevel** property to [requestorManager](/graph/api/resources/requestorManager?view=graph-rest-beta&preserve-view=true) resource. |
 
+### Identity and access | Governance
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the new [accessPackageAnswer](/graph/api/resources/accesspackageanswer?view=graph-rest-beta&preserve-view=true) complex resource type, including two sub-types [accessPackageAnswerChoice](/graph/api/resources/accesspackageanswerchoice.md) and [accessPackageAnswerString](/graph/api/resources/accesspackageanswerstring.md).|
+| Addition | beta | Added the new [accessPackageQuestion](/graph/api/resources/accesspackagequestion?view=graph-rest-beta&preserve-view=true) complex resource type, including two sub-types [accessPackageMultipleChoiceQuestion](/graph/api/resources/accesspackagemultiplechoicequestion.md) and [accessPackageTextInputQuestion](/graph/api/resources/accesspackagetextinputquestion.md).|
+| Addition | beta | Added the new [accessPackageLocalizedContent](/graph/api/resources/accesspackagelocalizedcontent?view=graph-rest-beta&preserve-view=true) complex resource type. |
+| Addition | beta | Added the new [accessPackageLocalizedText](/graph/api/resources/accesspackagelocalizedtext?view=graph-rest-beta&preserve-view=true) complex resource type. |
+| Change | beta | Added an example of creating a policy with requestor questions configured in POST accessPackageAssignmentPolicy. |
+| Change | beta | Changed example to include updating requestor questions in an existing accessPackagePolicy in UPDATE accessPackageAssignmentPolicy. |
+| Change | beta | Added an example of an access package request that includes answered questions for approval in POST accessPackageAssignmentRequest. |
+
+
 ### Identity and access | Identity and sign-in
 
 | **Change type** | **Version**   | **Description**                          |
@@ -68,17 +81,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added [List apps in chat](/graph/api/chat-list-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed apps in chat](/graph/api/chat-get-installedapps?view=graph-rest-beta&preserve-view=true), [Add app to chat](/graph/api/chat-post-installedapps?view=graph-rest-beta&preserve-view=true), [Uninstall app from chat](/graph/api/chat-delete-installedapps?view=graph-rest-beta&preserve-view=true), [Upgrade installed app in chat](/graph/api/chat-upgrade-installedapps?view=graph-rest-beta&preserve-view=true) methods to [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource type. |
 | Addition | beta | Added [List tabs in chat](/graph/api/chat-list-tabs?view=graph-rest-beta&preserve-view=true), [Get tab in chat](/graph/api/chat-get-tabs?view=graph-rest-beta&preserve-view=true), [Add tab to chat](/graph/api/chat-post-tab?view=graph-rest-beta&preserve-view=true), [Remove tab from chat](/graph/api/chat-delete-tabs?view=graph-rest-beta&preserve-view=true), [Update tab in chat](/graph/api/chat-patch-tabs?view=graph-rest-beta&preserve-view=true) methods to [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource type. |
 
-### Identity and access | Governance
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the new [accessPackageAnswer](/graph/api/resources/accesspackageanswer.md) complex resource type, including two sub-types [accessPackageAnswerChoice](/graph/api/resources/accesspackageanswerchoice.md) and [accessPackageAnswerString](/graph/api/resources/accesspackageanswerstring.md).|
-| Addition | beta | Added the new [accessPackageQuestion](/graph/api/resources/accesspackagequestion.md) complex resource type, including two sub-types [accessPackageMultipleChoiceQuestion](/graph/api/resources/accesspackagemultiplechoicequestion.md) and [accessPackageTextInputQuestion](/graph/api/resources/accesspackagetextinputquestion.md).|
-| Addition | beta | Added the new [accessPackageLocalizedContent](/graph/api/resources/accesspackagelocalizedcontent.md) complex resource type. |
-| Addition | beta | Added the new [accessPackageLocalizedText](/graph/api/resources/accesspackagelocalizedtext.md) complex resource type. |
-| Change | beta | Added an example of creating a policy with requestor questions configured in POST accessPackageAssignmentPolicy. |
-| Change | beta | Changed example to include updating requestor questions in an existing accessPackagePolicy in UPDATE accessPackageAssignmentPolicy. |
-| Change | beta | Added an example of an access package request that includes answered questions for approval in POST accessPackageAssignmentRequest. |
 
 ## November 2020
 
