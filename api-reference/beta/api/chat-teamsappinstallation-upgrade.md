@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Upgrade an [app installation](../resources/teamsappinstallation.md) within a [chat](../resources/chat.md).
 
+> **Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then effectively, the **teamsApp** installed in the meeting will get upgraded.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

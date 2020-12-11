@@ -348,6 +348,9 @@ Certain old teams don't have a **resourceProvisioningOptions** property that con
 which is set on newly created teams and teams that are visited in Microsoft Teams.
 In the future, we will set **resourceProvisioningOptions** on existing teams that have not been opened in Microsoft Teams.
 
+### Unable to filter team members by roles
+The filter query to get members of a team based on their roles `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')` might not work. The server might respond with a `BAD REQUEST`.
+
 ## Users
 
 ### No instant access after creation
