@@ -17,7 +17,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition        | beta | Added the `membershipRuleProcessingStatus` property to dynamic groups.|
+| Addition        | beta | Added the **membershipRuleProcessingStatus** property to dynamic groups.|
 
 ### Change notifications
 
