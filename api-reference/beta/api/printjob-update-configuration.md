@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the [configuration](../resources/printjobconfiguration.md) property of a [print job](../resources/printjob.md).
+Update the [configuration](../resources/printJobConfiguration.md) property of a [print job](../resources/printjob.md).
 
 Update print job configuration API requires the print job to be in a held state by registering a task trigger for the printer. For details about how to register a task trigger, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
