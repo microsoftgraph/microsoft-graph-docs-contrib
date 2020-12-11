@@ -37,6 +37,12 @@ Next, install the `mgt-react` npm package, which contains the Microsoft Graph To
 npm i @microsoft/mgt-react
 ```
 
+Install the `mgt-msal-provider` and `mgt-element` npm package as well, which contains the MSAL auth provider.
+
+```cmd
+npm i @microsoft/mgt-element @microsoft/mgt-msal-provider
+```
+
 Confirm that you can run the app.
 
 ```cmd
@@ -64,7 +70,8 @@ Next, configure the authentication provider that the Microsoft Graph Toolkit sho
 1. In the code editor, open the **src/index.** file, and to the list of imports, add:
 
     ```tsx
-    import { MsalProvider, Providers } from '@microsoft/mgt';
+    import { Providers } from '@microsoft/mgt-element';
+    import { MsalProvider } from '@microsoft/mgt-msal-provider';
     ```
 
 1. After the last `import` statement, initialize the Microsoft Graph Toolkit with MSAL provider.
@@ -80,12 +87,14 @@ Next, configure the authentication provider that the Microsoft Graph Toolkit sho
 With these changes, the **src/index.tsx** file will look like the following.
 
   ```tsx
-  import { MsalProvider, Providers } from '@microsoft/mgt';
   import React from 'react';
   import ReactDOM from 'react-dom';
   import App from './App';
   import './index.css';
   import * as serviceWorker from './serviceWorker';
+
+  import { Providers } from '@microsoft/mgt-element';
+  import { MsalProvider } from '@microsoft/mgt-msal-provider';
   
   Providers.globalProvider = new MsalProvider({
     clientId: 'REPLACE_WITH_CLIENTID'
@@ -126,16 +135,12 @@ Add the **Login** Microsoft Graph Toolkit React component, which will display th
 
 With these changes, the **src/App.tsx** file will look like the following.
 ```tsx
-import { MsalProvider, Providers } from '@microsoft/mgt';
+
 import { Login } from '@microsoft/mgt-react';
 import React from 'react';
 import './App.css';
 
 function App() {
-  Providers.globalProvider = new MsalProvider({
-    clientId: 'REPLACE_WITH_CLIENTID'
-  });
-
   return (
     <div className="App">
       <header>
@@ -189,10 +194,10 @@ To track the user's sign in state in your application, you will use the React `u
     import React, { useState, useEffect } from 'react';
     ```
 
-1. Import the `Provider` and `ProviderState` types from Microsoft Graph Toolkit, by adding to imports.
+1. Import the `Provider` and `ProviderState` types from `mgt-element`, by adding to imports.
 
     ```tsx
-    import { Providers, ProviderState } from '@microsoft/mgt';
+    import { Providers, ProviderState } from '@microsoft/mgt-element';
     ```
 
 1. Add a custom function named `useIsSignedIn` that enables tracking the user's sign in state in your application.
