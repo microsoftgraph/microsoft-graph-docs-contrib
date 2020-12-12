@@ -12693,7 +12693,7 @@ items:
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
-        - name: In team
+        - name: App in team
           items:
           - name: List apps in team
             href: api/team-list-installedapps.md
@@ -12705,7 +12705,7 @@ items:
             href: api/team-teamsappinstallation-upgrade.md
           - name: Remove app from team
             href: api/team-delete-installedapps.md
-        - name: In personal scope of user
+        - name: App in personal scope of user
           items:
           - name: List apps for user
             href: api/userteamwork-list-installedapps.md
@@ -12719,7 +12719,7 @@ items:
             href: api/userscopeteamsappinstallation-get-chat.md
           - name: Remove app for user
             href: api/userteamwork-delete-installedapps.md
-        - name: In chat
+        - name: App in chat
           items:
           - name: List apps in chat
             href: api/chat-list-installedapps.md
@@ -12742,7 +12742,7 @@ items:
       - name: Tab
         href: resources/teamstab.md
         items:
-        - name: In channel
+        - name: Tab in channel
           items:
           - name: List tabs in channel
             href: api/channel-list-tabs.md
@@ -12754,7 +12754,7 @@ items:
             href: api/channel-patch-tabs.md
           - name: Remove tab from channel
             href: api/channel-delete-tabs.md
-        - name: In chat
+        - name: Tab in chat
           items:
           - name: List tabs in chat
             href: api/chat-list-tabs.md
