@@ -159,6 +159,8 @@ Any combinations involving **message**, **event**, SharePoint and OneDrive types
 
 - The search API does not support aggregations for **message**, **event**, **site** or **drive**.
 
+- Customizations in SharePoint search, e.g. custom search schema or result sources, could interfere with the operation of the Microsoft Search API.
+
 ## Schema change deprecation warning
 
 **In the beta version**, properties used in a search request and response have been renamed or removed. In most cases, the original properties are being deprecated and replaced by the current properties, as listed in the table below.
