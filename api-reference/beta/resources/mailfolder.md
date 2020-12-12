@@ -77,7 +77,7 @@ Well-known names work regardless of the locale of the user's mailbox, so the abo
 |childFolderCount|Int32|The number of immediate child mailFolders in the current mailFolder.|
 |displayName|String|The mailFolder's display name.|
 |id|String|The mailFolder's unique identifier.|
-|isHidden|Boolean|Indicates whether the mailFolder is hidden.|
+|isHidden|Boolean|Indicates whether the mailFolder is hidden. This property can be set only when creating the folder. Find more information in [Hidden mail folders](#hidden-mail-folders).|
 |parentFolderId|String|The unique identifier for the mailFolder's parent mailFolder.|
 |totalItemCount|Int32|The number of items in the mailFolder.|
 |unreadItemCount|Int32|The number of items in the mailFolder marked as unread.|
@@ -94,12 +94,12 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 
 Mail folders in Outlook can contain more than one type of items, for example, the Inbox can contain meeting request items which are distinct from mail items. `TotalItemCount` and `UnreadItemCount` include items in a mail folder irrespective of their item types.
 
-### Hidden Mail Folders
-By default, a [list mailFolders](../api/user-list-mailfolders.md) returns only those mail folders which are not hidden. To optionally also include the **hidden mail folders** in the result, the query parameter `includeHiddenFolders=true` needs to be included in the API call. The `isHidden` property indicates whether the mail folder is hidden. 
-
-**Note**: The `isHidden` property can only be set once when [creating a new mailFolder](../api/user-post-mailfolders.md), but cannot be updated using a PATCH. To change the `isHidden` status of a folder, delete the existing folder and create a new one with the desired value.
+### Hidden mail folders
+The default value of the `isHidden` property is `false`. You can set **isHidden** only once when [creating the mailFolder](../api/user-post-mailfolders.md). You cannot update the property using a PATCH operation. To change the **isHidden** property of a folder, delete the existing folder and create a new one with the desired value.
 
 Hidden mail folders support all operations that are supported by a regular mail folder.
+
+By default, [listing mailFolders](../api/user-list-mailfolders.md) returns only mail folders that are not hidden. To include hidden mail folders in the response, use the query parameter `includeHiddenFolders=true`. Then use the **isHidden** property to identify whether a mail folder is hidden. 
 
 ## Relationships
 

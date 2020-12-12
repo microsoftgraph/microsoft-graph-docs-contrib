@@ -5,10 +5,18 @@
         {
           "Id": "ce3c6f2b-b3e3-4efe-aa1a-046ed1b62e3c",
           "ApiChange": "Property",
-          "ChangedApiName": "mailFolder",
+          "ChangedApiName": "isHidden",
           "ChangeType": "Addition",
-          "Description": "Added _isHidden_ property to **mailFolder** entity.",
-          "Target": ""
+          "Description": "Added the **isHidden** property to [mailFolder](https://docs.microsoft.com/en-us/graph/api/resources/mailfolder?view=graph-rest-beta) entity.",
+          "Target": "mailFolder"
+        },
+        {
+          "Id": "ce3c6f2b-b3e3-4efe-aa1a-046ed1b62e3c",
+          "ApiChange": "Method",
+          "ChangedApiName": "includeHiddenFolders",
+          "ChangeType": "Addition",
+          "Description": "Added the support of the optional `includeHiddenFolders` query parameter to the [list mailFolders](https://docs.microsoft.com/en-us/graph/api/user-list-mailfolders?view=graph-rest-beta) operation.",
+          "Target": "mailFolder"
         }
       ],
       "Id": "ce3c6f2b-b3e3-4efe-aa1a-046ed1b62e3c",

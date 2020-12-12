@@ -52,7 +52,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the **isHidden** property and **includeHiddenFolders** query parameter to the [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true) entity. |
+| Addition | beta | Added the **isHidden** property to the [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true) entity. |
+| Addition | beta | Added the optional `includeHiddenFolders` query parameter to the [list mailFolders](/graph/api/user-list-mailfolders?view=graph-rest-beta&preserve-view=true) operation.
 
 ### Teamwork
 
