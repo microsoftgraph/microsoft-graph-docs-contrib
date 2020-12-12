@@ -17,11 +17,13 @@ Settings related to a broadcast meeting.
 
 ## Properties
 
-| Property                | Type                     | Description                                                                            |
-| ----------------------- | ------------------------ | -------------------------------------------------------------------------------------- |
-| allowedAudience         | broadcastMeetingAudience | Who can join the broadcast meeting. Possible values are listed in the following table. |
-| isRecordingEnabled      | Boolean                  | If recording is enabled for this broadcast meeting. Default value is `false`.          |
-| isAttendeeReportEnabled | Boolean                  | If attendee report is enabled for this broadcast meeting. Default value is `false`.    |
+| Property                   | Type                     | Description                                                                            |
+| -------------------------- | ------------------------ | -------------------------------------------------------------------------------------- |
+| allowedAudience            | broadcastMeetingAudience | Who can join the broadcast meeting. Possible values are listed in the following table. |
+| isRecordingEnabled         | Boolean                  | If recording is enabled for this broadcast meeting. Default value is `false`.          |
+| isAttendeeReportEnabled    | Boolean                  | If attendee report is enabled for this broadcast meeting. Default value is `false`.    |
+| isQuestionAndAnswerEnabled | Boolean                  | If Q&A is enabled for this broadcast meeting. Default value is `false`.                |
+| isVideoOnDemandEnabled     | Boolean                  | If video on demand is enabled for this broadcast meeting. Default value is `false`.    |
 
 ### broadcastMeetingAudience values
 
