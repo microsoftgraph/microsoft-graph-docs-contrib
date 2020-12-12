@@ -215,6 +215,10 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Authentication methods
             href: authenticationmethods-get-started.md
+          - name: Identity and sign-in
+            items:
+              - name: Identify and remediate risk
+                href: tutorial-riskdetection-api.md
           - name: Governance
             items:
               - name: Create an access package
