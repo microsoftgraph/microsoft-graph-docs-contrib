@@ -3,23 +3,23 @@
     {
       "ChangeList": [
         {
-          "Id": "ae4c65fe-6b2b-4e1d-9150-9c64fcb690d5",
-          "ApiChange": "Resource",
-          "ChangedApiName": "teamworkbot",
+          "Id": "a659bbcb-28bb-11eb-9746-158983535857",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "bot",
           "ChangeType": "Addition",
-          "Description": "Added the [TeamworkBot](https://docs.microsoft.com/en-us/graph/resources/teamworkbot?view=graph-rest-beta) resource.",
-          "Target": "teamworkbot"
+          "Description": "Added the **bot** relationship to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource",
+          "Target": "teamsAppDefinition"
         },
         {
-          "Id": "ae4c65fe-6b2b-4e1d-9150-9c64fcb690d5",
-          "ApiChange": "Method",
-          "ChangedApiName": "teamsappdefinition-get-teamworkbot",
+          "Id": "a65c2d4b-28bb-11eb-9746-158983535857",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkBot",
           "ChangeType": "Addition",
-          "Description": "Added the [Get bot](https://docs.microsoft.com/en-us/graph/api/teamsappdefinition-get-teamworkbot?view=graph-rest-beta) method.",
-          "Target": "teamsappdefinition"
+          "Description": "Added the [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-beta) resource type",
+          "Target": "teamworkBot"
         }
       ],
-      "Id": "ae4c65fe-6b2b-4e1d-9150-9c64fcb690d5",
+      "Id": "a6575ac5-28bb-11eb-9746-158983535857",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-14T00:00:00",
