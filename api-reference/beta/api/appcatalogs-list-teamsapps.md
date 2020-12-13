@@ -147,7 +147,7 @@ Content-Type: application/json
   ]
 }
 ```
-### Example 3: Find application based on the Teams app manifest ID.
+### Example 3: Find application based on the Teams app manifest ID
 
 The following example lists applications that match the 'id' specified in the Teams app manifest. In the example, the manifest ID of the Teams app is 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
 
@@ -243,7 +243,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 5: List the details of only those apps in the catalog that contain a bot.
+### Example 5: List the details of only those apps in the catalog that contain a bot
 
 The following example lists only those apps in the catalog that contain a bot.
 
@@ -305,7 +305,7 @@ Content-Type: application/json
                             "userIdentityType": "aadUser"
                         }
                     },
-                    "bot@odata.context": "https://canary.graph.microsoft.com/testprodbetateamsbot2/$metadata#appCatalogs/teamsApps('8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6')/appDefinitions('OGExZWQ3YTMtNWM3OC00NmIyLTg1MDQtZjlkYTAwYTFkMWE2IyMxLjAuOSMjUmVqZWN0ZWQ%3D')/bot/$entity",
+                    "bot@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6')/appDefinitions('OGExZWQ3YTMtNWM3OC00NmIyLTg1MDQtZjlkYTAwYTFkMWE2IyMxLjAuOSMjUmVqZWN0ZWQ%3D')/bot/$entity",
                     "bot": {
                         "id": "bb9f67a4-893b-48d7-ab17-40ed466c0f16"
                     }
