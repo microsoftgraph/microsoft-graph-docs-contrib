@@ -69,8 +69,8 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/e4c5c249-bb4b-419e-b7
 -->
 ``` http
 HTTP/1.1 200 OK
-
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.teamworkBot",
   "id": "1f81bb29-bb29-1f81-29bb-811f29bb811f"
