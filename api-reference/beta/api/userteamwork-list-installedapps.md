@@ -108,7 +108,10 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "id-value"
+      "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg="
+    },
+    {
+      "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZmQ5MjVhMC0zNTdmLTRkMjUtODQ1Ni1iMzAyMmFhYTQxYTk="
     }
   ]
 }
@@ -117,13 +120,14 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+In the following example, if an instance of an installed app has a [bot](../resources/teamworkbot.md) associated with it, then the details of the bot are returned as well.
+
 <!-- {
   "blockType": "request",
   "name": "user_list_teamsApps_details"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=teamsAppDefinition
+GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=teamsAppDefinition,teamsAppDefinition/bot
 ```
 
 #### Response
@@ -160,7 +164,10 @@ Content-type: application/json
                 "id": "MGZkOTI1YTAtMzU3Zi00ZDI1LTg0NTYtYjMwMjJhYWE0MWE5IyMxLjc=",
                 "teamsAppId": "0fd925a0-357f-4d25-8456-b3022aaa41a9",
                 "displayName": "SurveyMonkey",
-                "version": "1.7"
+                "version": "1.7",
+                "bot": {
+                    "id":"793a57f9-a795-4264-bf8d-3d90585a4d1f"
+                }
             }
         },
         {

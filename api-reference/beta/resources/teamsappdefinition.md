@@ -26,6 +26,12 @@ The details of one version of a [teamsApp](teamsapp.md).
 | displayName         | string   | The name of the app provided by the app developer. |
 | version             | string   | The version number of the application. |
 
+## Relationships
+
+| Relationship | Type	| Description |
+|:---------------|:--------|:----------|
+|bot|[teamworkBot](teamworkbot.md) | The details of the bot specified in the Teams App manifest. |
+
 ## JSON representation
 
 <!-- {

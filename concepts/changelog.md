@@ -76,6 +76,10 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the [aadUserConversationMemberResult](/graph/api/resources/aaduserconversationmemberresult?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added the [publicInnerError](/graph/api/resources/publicinnererror?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added the [publicErrorDetail](/graph/api/resources/publicerrordetail?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the [teamworkBot](/graph/api/resources/teamworkbot?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the **bot** relationship to the [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta&preserve-view=true) resource.|
+
+
 
 ## November 2020
 

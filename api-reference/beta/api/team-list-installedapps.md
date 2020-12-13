@@ -104,7 +104,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+In the following example, if an instance of an installed app has a [bot](../resources/teamworkbot.md) associated with it, then the details of the bot are returned as well.
 
 <!-- {
   "blockType": "request",
@@ -112,7 +112,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps?$expand=teamsAppDefinition
+GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps?$expand=teamsAppDefinition,teamsAppDefinition/bot
 ```
 
 #### Response
@@ -149,7 +149,11 @@ Content-type: application/json
                 "shortdescription": "Be more productive with Microsoft Flow",
                 "description": "Automate time-consuming and repetitive tasks by integrating your favorite apps and services with Microsoft Power Automate.",
                 "lastModifiedDateTime": null,
-                "createdBy": null
+                "createdBy": null,
+                "bot": {
+                    "id":"9a58a3ec-6b68-4818-ac11-844f1c326784"
+                }
+
             }
         },
         {

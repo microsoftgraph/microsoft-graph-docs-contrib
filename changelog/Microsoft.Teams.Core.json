@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "ae4c65fe-6b2b-4e1d-9150-9c64fcb690d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkbot",
+          "ChangeType": "Addition",
+          "Description": "Added the [TeamworkBot](https://docs.microsoft.com/en-us/graph/resources/teamworkbot?view=graph-rest-beta) resource.",
+          "Target": "teamworkbot"
+        },
+        {
+          "Id": "ae4c65fe-6b2b-4e1d-9150-9c64fcb690d5",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamsappdefinition-get-teamworkbot",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get bot](https://docs.microsoft.com/en-us/graph/api/teamsappdefinition-get-teamworkbot?view=graph-rest-beta) method.",
+          "Target": "teamsappdefinition"
+        }
+      ],
+      "Id": "ae4c65fe-6b2b-4e1d-9150-9c64fcb690d5",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-14T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f69c822d-8c2a-4f34-9882-406e4ddc0273",
           "ApiChange": "Resource",
           "ChangedApiName": "publicInnerError",

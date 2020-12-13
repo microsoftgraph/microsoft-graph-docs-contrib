@@ -104,6 +104,8 @@ Content-type: application/json
 
 ### Example 2: Get the names and other details of apps installed in the specified chat
 
+In the following example, if an instance of an installed app has a [bot](../resources/teamworkbot.md) associated with it, then the details of the bot are returned as well.
+
 #### Request
 
 <!-- {
@@ -113,7 +115,7 @@ Content-type: application/json
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20%40thread.v2/installedApps
+GET https://graph.microsoft.com/beta/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20%40thread.v2/installedApps?$expand=teamsAppDefinition,teamsAppDefinition/bot
 ```
 
 #### Response
@@ -145,7 +147,10 @@ Content-type: application/json
                 "shortdescription": "Be more productive with Microsoft Flow",
                 "description": "Automate time-consuming and repetitive tasks by integrating your favorite apps and services with Microsoft Power Automate.",
                 "lastModifiedDateTime": null,
-                "createdBy": null
+                "createdBy": null,
+                "bot": {
+                    "id":"9a58a3ec-6b68-4818-ac11-844f1c326784"
+                }
             }
         },
         {

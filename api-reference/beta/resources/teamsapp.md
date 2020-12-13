@@ -25,6 +25,7 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 |[Publish an app](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Publish an app to your organization's app catalog.|
 |[Update a published app](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Update a published app in your organization's app catalog.|
 |[Delete a published app](../api/teamsapp-delete.md) | None | Remove a published app from your organization's app catalog.|
+|[Get bot of a published app](../api/teamsappdefinition-get-teamworkbot.md) | [teamworkbot](teamworkbot.md) | Get the bot associated with the Teams app.|
 
 ## Properties
 
