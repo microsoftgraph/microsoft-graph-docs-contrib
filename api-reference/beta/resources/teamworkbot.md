@@ -45,9 +45,9 @@ The following is a JSON representation of the resource.
 
 ## See also
 
-- [Bots installed in a team](/graph/api/team-list-installedapps#example-2-get-the-names-and-other-details-of-installed-apps?view=graph-rest-beta&preserve-view=true)
-- [Bots installed in a chat](/graph/api/chat-list-installedapps#example-2-get-the-names-and-other-details-of-apps-installed-in-the-specified-chat?view=graph-rest-beta&preserve-view=true)
-- [Bots installed in the personal scope of a user](/graph/api/userteamwork-list-installedapps#example-2-get-the-names-and-other-details-of-apps-installed-for-the-user?view=graph-rest-beta&preserve-view=true)
+- [Bots installed in a team](../api/team-list-installedapps.md)
+- [Bots installed in a chat](../api/chat-list-installedapps.md)
+- [Bots installed in the personal scope of a user](../api/userteamwork-list-installedapps.md)
 
 
 

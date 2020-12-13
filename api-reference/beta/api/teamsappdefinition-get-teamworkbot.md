@@ -72,10 +72,8 @@ HTTP/1.1 200 OK
 
 Content-Type: application/json
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.teamworkBot",
-    "id": "1f81bb29-bb29-1f81-29bb-811f29bb811f"
-  }
+  "@odata.type": "#microsoft.graph.teamworkBot",
+  "id": "1f81bb29-bb29-1f81-29bb-811f29bb811f"
 }
 ```
 

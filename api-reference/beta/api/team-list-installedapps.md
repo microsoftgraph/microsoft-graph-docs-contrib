@@ -112,7 +112,7 @@ In the following example, if an instance of an installed app has a [bot](../reso
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps?$expand=teamsAppDefinition,teamsAppDefinition/bot
+GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps?$expand=teamsAppDefinition($expand=bot)
 ```
 
 #### Response

@@ -127,7 +127,7 @@ In the following example, if an instance of an installed app has a [bot](../reso
   "name": "user_list_teamsApps_details"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=teamsAppDefinition,teamsAppDefinition/bot
+GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=teamsAppDefinition($expand=bot)
 ```
 
 #### Response
