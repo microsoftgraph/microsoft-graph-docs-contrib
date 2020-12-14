@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new **plannerPlan**.
+Create a new **plannerPlan**.
 
 ## Permissions
 
@@ -37,6 +37,7 @@ POST /planner/plans
 | Name          | Description               |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required.|
 
 ## Request body
 
@@ -93,11 +94,11 @@ Content-length: 140
 ---
 
 
-In the request body, supply a JSON representation of [plannerPlan](../resources/plannerplan.md) object.
-
 ### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
