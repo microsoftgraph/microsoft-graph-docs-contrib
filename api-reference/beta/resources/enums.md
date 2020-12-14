@@ -11,6 +11,15 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### creationType values
+
+|Member|
+|:---|
+|null|
+|Invitation|
+|LocalAccount|
+|EmailVerified|
+
 ### externalEmailOtpState values
 
 |Member|

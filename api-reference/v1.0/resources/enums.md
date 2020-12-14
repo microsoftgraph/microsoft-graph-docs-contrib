@@ -11,6 +11,15 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### creationType values
+
+|Member|
+|:---|
+|null|
+|Invitation|
+|LocalAccount|
+|EmailVerified|
+
 ### activityType values
 
 |Member|
