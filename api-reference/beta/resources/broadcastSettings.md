@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 Settings related to a broadcast meeting.
 
+> [!IMPORTANT]
+> \* The **broadcastSettings** property is in private preview and not available to public yet.
+
 ## Properties
 
 | Property                   | Type                     | Description                                                                            |
@@ -47,7 +50,9 @@ The following is a JSON representation of the resource.
 {
   "allowedAudience": "everyone | organization | roleIsAttendee | unknownFutureValue",
   "isRecordingEnabled": "Boolean",
-  "isAttendeeReportEnabled": "Boolean"
+  "isAttendeeReportEnabled": "Boolean",
+  "isQuestionAndAnswerEnabled": "Boolean",
+  "isVideoOnDemandEnabled": "Boolean"
 }
 ```
 

@@ -47,10 +47,13 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby.                                                                                                                                                                                                  |
 | allowedPresenters     | onlineMeetingPresenters                       | Specifies who can be a presenter in a meeting. Possible values are `everyone`, `organization`, `roleIsPresenter`, `organizer`, and `unknownFutureValue`.                                                                                                    |
 | isBroadcast           | Boolean                                       | Indicates if this is a broadcast meeting.                                                                                                                                                                                                                   |
-| broadcastSettings     | [broadcastSettings](broadcastSettings.md)     | Settings related to a broadcast meeting.                                                                                                                                                                                                                    |
+| broadcastSettings     | [broadcastSettings](broadcastSettings.md)     | Settings related to a broadcast meeting*                                                                                                                                                                                                                    |
 
 > [!IMPORTANT]
 > The **autoAdmittedUsers** property is obsolete. Use **lobbyBypassSettings.scope** instead for meeting option configurations.
+
+> [!IMPORTANT]
+> \* The **broadcastSettings** property is in private preview and not available to public yet.
 
 ### onlineMeetingPresenters values
 
