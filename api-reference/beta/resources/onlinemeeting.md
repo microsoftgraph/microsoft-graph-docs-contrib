@@ -48,6 +48,9 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | allowedPresenters     | onlineMeetingPresenters                       | Specifies who can be a presenter in a meeting. Possible values are `everyone`, `organization`, `roleIsPresenter`, `organizer`, and `unknownFutureValue`.                                                                                                    |
 | isBroadcast           | Boolean                                       | Indicates if this is a broadcast meeting.                                                                                                                                                                                                                   |
 | broadcastSettings     | [broadcastSettings](broadcastSettings.md)     | Settings related to a broadcast meeting*                                                                                                                                                                                                                    |
+| attendeeReport        | Stream                                        | The content stream of the attendee report of a live event. Read-only.                                                                                                                                                                                       |
+| recording             | Stream                                        | The content stream of the recording of a live event. Read-only.                                                                                                                                                                                             |
+| alternativeRecording  | Stream                                        | The content stream of the alternative recording of a live event. Read-only.                                                                                                                                                                                 |
 
 > [!IMPORTANT]
 > The **autoAdmittedUsers** property is obsolete. Use **lobbyBypassSettings.scope** instead for meeting option configurations.
@@ -57,13 +60,13 @@ Contains information about a meeting, including the URL used to join a meeting, 
 
 ### onlineMeetingPresenters values
 
-| Value              | Description                                                    |
-| ------------------ | -------------------------------------------------------------- |
-| everyone           | Everyone is a presenter (This is default option).              |
-| organization       | Everyone in organizer’s organization is a presenter.           |
+| Value              | Description                                                   |
+| ------------------ | ------------------------------------------------------------- |
+| everyone           | Everyone is a presenter (This is default option).             |
+| organization       | Everyone in organizer’s organization is a presenter.          |
 | roleIsPresenter    | Only the participants whose role is presenter are presenters. |
-| organizer          | Only the organizer  is a presenter.                            |
-| unknownFutureValue | Unknown future value.                                          |
+| organizer          | Only the organizer  is a presenter.                           |
+| unknownFutureValue | Unknown future value.                                         |
 
 **Note**: If the value of **allowedPresenters** is set to `roleIsPresenter`, please specify each meeting participant's meeting role using **role** property in [meetingParticipantInfo](../resources/meetingparticipantinfo.md).
 

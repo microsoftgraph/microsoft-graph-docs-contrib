@@ -226,7 +226,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Create a broadcast meeting with a user token
+### Example 3: Create a live event with a user token
 
 > [!IMPORTANT]
 > The **broadcastSettings** property is in private preview and not available to public yet.
