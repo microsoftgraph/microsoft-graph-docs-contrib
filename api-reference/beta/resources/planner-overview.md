@@ -15,15 +15,15 @@ You can use the Planner API in Microsoft Graph to create tasks and assign them t
 
 Before you get started with the Planner API, it will be helpful to understand how the main objects relate to each other as well as to Microsoft 365 groups.
 
-## Plan Containers
-In Planner, Plans are always contained by another resource. The containing resource determines the authoization rules of the plan and all the tasks in it, as well as the lifecycle of the plan. For example, for Plans contained by Microsoft 365 groups, 
-group members will be able to create, edit, resolve and delete tasks in the plan, as well as changing some plan level properties, such as the name of the plan or label names. Additionally, when the group is deleted, all the plans in the group are automatically deleted, or if a groups is restored all the plans will be automatically restored.
+## Plan containers
+In Planner, plans are always contained by another resource. The containing resource determines the authoization rules of the plan and all the tasks in it, as well as the lifecycle of the plan. For example, for plans contained by Microsoft 365 groups, 
+group members will be able to create, edit, resolve, and delete tasks in the plan, as well as changing some plan-level properties, such as the name of the plan or label names. Additionally, when the group is deleted, all the plans in the group are automatically deleted, or if a group is restored, all the plans will be automatically restored.
 
 The most common type of container is a Microsoft 365 group.
 
-### Container Type: Microsoft 365 groups
+### Container type: Microsoft 365 groups
 
-Microsoft 365 groups are a commonly used container of the plans in the Planner API.
+Plans are commonly contained in Microsoft 365 groups in the Planner API.
 To [get the plans owned by a group](../api/plannergroup-list-plans.md), make the following HTTP request.
 
 ``` http
