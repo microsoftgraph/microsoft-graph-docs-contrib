@@ -84,9 +84,10 @@ The following is a full working example using mgt-loader, the MSAL Provider init
 This is an example using the ES6 modules, the MSAL Provider initialized in HTML, and the Login component:
 
 ```html
-<script src="node_modules/@microsoft/mgt/dist/es6/components/providers/mgt-msal-provider.js"></script>
-<script src="node_modules/@microsoft/mgt/dist/es6/components/mgt-login/mgt-login.js"></script>
+<script type="module" src="node_modules/@microsoft/mgt/dist/es6/index.js"></script>
+
 <mgt-msal-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal-provider>
+
 <mgt-login></mgt-login>
 ```
 # [js](#tab/JavaScript)
