@@ -238,7 +238,7 @@ POST https://graph.microsoft.com/beta/me/onlineMeetings
 Content-Type: application/json
 
 {
-  "subject":"User Token Broadcast Meeting",
+  "subject":"User Token Live Event",
   "startDateTime":"2020-12-02T14:30:34.2444915+00:00",
   "endDateTime":"2020-12-02T15:00:34.2464912+00:00",
   "isBroadcast": true,
@@ -261,7 +261,7 @@ Content-Type: application/json
   "startDateTime": "2020-09-29T22:35:31.389759Z",
   "endDateTime": "2020-12-02T15:00:34.2464912Z",
   "joinWebUrl": "(redacted)",
-  "subject": "User Token Broadcast Meeting",
+  "subject": "User Token Live Event",
   "autoAdmittedUsers": "EveryoneInCompany",
   "isEntryExitAnnounced": true,
   "allowedPresenters": "organization",
