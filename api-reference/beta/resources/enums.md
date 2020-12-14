@@ -11,6 +11,24 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### recipientScopeType values
+
+| Value
+|:-------------------------
+| none
+| internal
+| external
+| externalPartner
+| externalNonPartner
+
+### driveType values
+
+|Member|
+|:---|
+|personal|
+|business|
+|documentLibrary|
+
 ### externalUserState values
 
 |Member|
