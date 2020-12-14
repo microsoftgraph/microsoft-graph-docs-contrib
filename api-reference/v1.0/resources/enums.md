@@ -11,6 +11,14 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### principalType values
+
+|Member|
+|:---|
+|User|
+|Group|
+|ServicePrincipal|
+
 ### recipientScopeType values
 
 | Value
