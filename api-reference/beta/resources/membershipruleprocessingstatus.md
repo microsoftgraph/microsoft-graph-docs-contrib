@@ -46,8 +46,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "status": "String",
+  "status": "string",
   "lastMembershipUpdated": "DateTime",
-  "errorMessage": "String"
+  "errorMessage": "string"
 }
 ```
