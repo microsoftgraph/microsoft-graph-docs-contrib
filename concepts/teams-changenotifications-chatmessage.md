@@ -89,7 +89,9 @@ Channel-level subscriptions also support keyword-based search via the `$search` 
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | ChannelMessage.Read.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | ChannelMessage.Read.All |
+|Application | ChannelMessage.Read.All, ChannelMessage.Read.Group* |
+
+*ChannelMessage.Read.Group is supported as part of [resource specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)*
 
 ### Example 1: Subscribe to all messages (and replies) in a channel
 
@@ -145,11 +147,31 @@ Content-Type: application/json
 }
 ```
 
+### Example 4: Subscribe to message (and replies) in a channel which have a specific user mentioned
+
+To get notifications only for messages where a specific user has been mentioned, you can specify user's Id (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` in the example below) in the query.
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/teams/{id}/channels/{id}/messages?$filter=mentions/any(u: u/mentioned/user/id eq '9a6eb4d1-826b-48b1-9627-b50836c8fee9')",
+  "includeResourceData": false,
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
 ## Subscribe to messages in a chat
 
 To track messages in a chat, you can create a change notification subscription at a chat level. To do this, subscribe to `/chats{id}/messages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in *application-only mode*.
 
 Chat-level subscriptions also support keyword-based search via the `$search` query parameter.
+
+> **Note.** Subcribing to messages in a chat is only supported in `beta` at the moment.
 
 ### Permissions
 
@@ -206,6 +228,24 @@ Content-Type: application/json
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "resource": "/chats/{id}/messages",
+  "includeResourceData": false,
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
+### Example 4: Subscribe to message in a chat which have a specific user mentioned
+
+To get notifications only for messages where a specific user has been mentioned, you can specify user's Id (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` in the example below) in the query.
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/chats/{id}/messages?$filter=mentions/any(u: u/mentioned/user/id eq '9a6eb4d1-826b-48b1-9627-b50836c8fee9')",
   "includeResourceData": false,
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "{secretClientState}"
