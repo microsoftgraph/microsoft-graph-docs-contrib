@@ -11,6 +11,14 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### externalUserState values
+
+|Member|
+|:---|
+|null|
+|Accepted|
+|PendingAcceptance|
+
 ### creationType values
 
 |Member|
