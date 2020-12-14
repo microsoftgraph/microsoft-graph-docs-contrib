@@ -56,9 +56,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the new [accessPackageQuestion](/graph/api/resources/accesspackagequestion?view=graph-rest-beta&preserve-view=true) complex resource type, including two sub-types [accessPackageMultipleChoiceQuestion](/graph/api/resources/accesspackagemultiplechoicequestion.md) and [accessPackageTextInputQuestion](/graph/api/resources/accesspackagetextinputquestion.md).|
 | Addition | beta | Added the new [accessPackageLocalizedContent](/graph/api/resources/accesspackagelocalizedcontent?view=graph-rest-beta&preserve-view=true) complex resource type. |
 | Addition | beta | Added the new [accessPackageLocalizedText](/graph/api/resources/accesspackagelocalizedtext?view=graph-rest-beta&preserve-view=true) complex resource type. |
-| Change | beta | Added an example of creating a policy with requestor questions configured in POST accessPackageAssignmentPolicy. |
-| Change | beta | Changed example to include updating requestor questions in an existing accessPackagePolicy in UPDATE accessPackageAssignmentPolicy. |
-| Change | beta | Added an example of an access package request that includes answered questions for approval in POST accessPackageAssignmentRequest. |
 
 
 ### Identity and access | Identity and sign-in
