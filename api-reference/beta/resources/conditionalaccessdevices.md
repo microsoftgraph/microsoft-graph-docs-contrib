@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Represents devices in the policy scope.
 
->**Note:** We are deprecating the properties **includeDeviceStates** and **excludeDeviceStates**, please use **includeDevices** and **excludeDevices** going forward.
-
 ## Properties
 
 | Property     | Type        | Description |
