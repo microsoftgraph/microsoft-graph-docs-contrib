@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "b2xIdentityUserFlow",
           "ChangeType": "Addition",
-          "Description": "Added methods for listing langauges to the [b2xIdentityUserFlow](https://docs.microsoft.com/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) resource.",
+          "Description": "Added methods for listing languages to the [b2xIdentityUserFlow](https://docs.microsoft.com/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) resource.",
           "Target": "b2xIdentityUserFlow"
         }
       ],
@@ -43,6 +43,8 @@
       "SubArea": "Identity and sign-in"
     },
     {
+    "ChangeList": [
+      {
           "Id": "8faf36d1-4d32-4ef9-bdd1-a6f95c66bc24",
           "ApiChange": "Resource",
           "ChangedApiName": "emailAuthenticationMethodConfiguration",
