@@ -115,6 +115,6 @@ Content-type: application/json
 
 ## See also
 
-- [Add member in channel](channel-post-members.md)
+- [Create member in channel](channel-post-members.md)
 
 
