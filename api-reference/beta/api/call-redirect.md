@@ -479,7 +479,7 @@ PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
               }
             },
             "endpointType": "default",
-            "id": "e20760a8-57c8-46af-b4a0-a3829a09a150",
+            "id": "c339cede-4bd6-4f20-ab9f-3a13e65f6d00",
             "region": "amer",
             "languageId": null
           }
@@ -600,7 +600,7 @@ Content-Type: application/json
               }
             },
             "endpointType": "default",
-            "id": "e20760a8-57c8-46af-b4a0-a3829a09a150",
+            "id": "c339cede-4bd6-4f20-ab9f-3a13e65f6d00",
             "region": "amer",
             "languageId": null
           }
