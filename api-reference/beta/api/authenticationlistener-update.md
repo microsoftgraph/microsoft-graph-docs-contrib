@@ -51,7 +51,6 @@ The following table shows the properties that are required when you update the [
 |:---|:---|:---|
 |priority|Int32|The priority of the action which is used for determining one out of multiple applicable actions.|
 |sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filter based on the source of the authentication which is used to determine whether the action is executed or not.|
-|userFlow|String|The identifier of the [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object that will be invoked in this action.|
 
 ## Response
 
@@ -68,7 +67,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/events/onSignupStart/id
+PATCH https://graph.microsoft.com/beta/identity/events/onSignupStart/{id}
 Content-Type: application/json
 
 {
