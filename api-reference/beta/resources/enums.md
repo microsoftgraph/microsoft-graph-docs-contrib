@@ -11,6 +11,14 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### educationAddedStudentAction values 
+
+|Member|
+|:---|
+|none|
+|assignIfOpen|
+|unknownFutureValue|
+
 ### externalEmailOtpState values
 
 |Member|
