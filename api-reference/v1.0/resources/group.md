@@ -145,10 +145,10 @@ This resource supports:
 |securityIdentifier|String|Security identifier of the group, used in Windows scenarios. <br><br>Returned by default.|
 |theme|String|Specifies an Microsoft 365 group's color theme. Possible values are `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange` or `Red`. <br><br>Returned by default. |
 |unseenCount|Int32|Count of conversations that have received new posts since the signed-in user last visited the group. <br><br>Returned only on $select. |
-|visibility|[groupVisibility](#groupvisibility-values)| Specifies the visibility of a Microsoft 365 group. Possible values are: `Private`, `Public`, or `Hiddenmembership`; blank values are treated as public.  See [group visibility options](#group-visibility-options) to learn more.<br>Visibility can be set only when a group is created; it is not editable.<br>Visibility is supported only for unified groups; it is not supported for security groups. <br><br>Returned by default.|
+|visibility|String| Specifies the visibility of a Microsoft 365 group. Possible values are: `Private`, `Public`, or `Hiddenmembership`; blank values are treated as public.  See [group visibility options](#group-visibility-options) to learn more.<br>Visibility can be set only when a group is created; it is not editable.<br>Visibility is supported only for unified groups; it is not supported for security groups. <br><br>Returned by default.|
 
 
-### groupVisibility values
+### Group visibility options
 
 Here's what each **visibility** property value means:
 
