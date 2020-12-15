@@ -5,7 +5,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "includeDeviceStates,excludeDeviceStates,includeDevices,excludeDevices",
             "ChangeType": "Change",
-            "Description": "Renamed the properties **includeDeviceStates** and **excludeDeviceStates** to **includeDevices** and **excludeDevices** in [conditionalAccessDevices](/graph/api/resources/conditionalaccessdevices?view=graph-rest-beta&preserve-view=true) entity.",
+            "Description": "Renamed the properties **includeDeviceStates** and **excludeDeviceStates** to **includeDevices** and **excludeDevices** on the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessdevices?view=graph-rest-beta&preserve-view=true) resource.",
             "Target": "conditionalAccessDevices"
         }],
         "Id": "d575db13-1814-11ed-9753-157873424852",
