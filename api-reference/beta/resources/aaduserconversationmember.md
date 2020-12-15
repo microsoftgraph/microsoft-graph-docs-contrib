@@ -19,15 +19,21 @@ Represents an Azure Active Directory user in a [chat](chat.md) or [channel](chan
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List Channel members](../api/channel-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all users in the channel.|
-|[Get Channel member](../api/channel-get-members.md) | [conversationMember](conversationmember.md) | Get a single user in the channel.|
-|[Add Channel member](../api/channel-post-members.md) | [conversationMember](conversationmember.md)| Add a member to a channel.|
-|[Update Channel member](../api/channel-update-members.md) | [conversationMember](conversationmember.md)| Update a member in the channel.|
-|[Delete Channel member](../api/channel-delete-members.md) | No content | Delete a member from the channel.|
-|[List Chat members](../api/chat-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all users in the chat.|
-|[Get Chat member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a single user in the chat.|
-|[Add chat member](../api/chat-post-members.md) | No Content and a Location header | Add a user to the chat.| 
-|[Delete chat member](../api/chat-delete-members.md) | No content | Delete a user from the chat.| 
+|[List team members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) collection|Get the list of members in the team.|
+|[Get team member](../api/team-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in the team.|
+|[Add team member](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Add a new member to the team.|
+|[Add team members in bulk](../api/conversationmembers-add.md)|[actionResultPart](../resources/actionresultpart.md) collection|Add multiple members to the team in a single request.|
+|[Update team member's role](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Change a member to an owner or back to a regular member.|
+|[Remove team member](../api/team-delete-members.md)|None|Remove an existing member from the team.|
+|[List channel members](../api/channel-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all members in a channel.|
+|[Get channel member](../api/channel-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in a channel.|
+|[Create channel member](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Add a member to a channel. Only supported for `channel`with membershipType of `private`.|
+|[Update channel member's role](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Update the properties of a member of the channel. Only supported for channel with membershipType of `private`.|
+|[Remove channel member](../api/channel-delete-members.md) | None | Delete a member from a channel. Only supported for `channelType` of `private`.|
+|[List chat members](../api/chat-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all members in a chat.|
+|[Get chat member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a member in a chat.|
+|[Add chat member](../api/chat-post-members.md) | No Content and a Location header | Add a member to a chat.| 
+|[Delete chat member](../api/chat-delete-members.md) | No content | Delete a member from a chat.| 
 
 ## Properties
 
