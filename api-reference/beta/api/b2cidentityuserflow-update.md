@@ -100,7 +100,7 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows/$entity",
   "id": "B2C_1_CustomerSignUp",
   "userFlowType": "signUp",
-  "userFlowTypeVersion": "1",
+  "userFlowTypeVersion": 1,
   "isLanguageCustomizationEnabled": true,
   "defaultLanguageTag": "en"
 }
