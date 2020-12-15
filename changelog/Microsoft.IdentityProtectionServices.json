@@ -1,18 +1,30 @@
 {
-    "changelog": [{
-        "ChangeList": [{
-            "Id": "782he780-f74b-4eqf-b12a-6479c52fe856",
-            "ApiChange": "Property",
-            "ChangedApiName": "includeDeviceStates,excludeDeviceStates,includeDevices,excludeDevices",
-            "ChangeType": "Change",
-            "Description": "Renamed the properties **includeDeviceStates** and **excludeDeviceStates** to **includeDevices** and **excludeDevices** in [conditionalAccessDevices](/graph/api/resources/conditionalaccessdevices?view=graph-rest-beta&preserve-view=true) entity.",
-            "Target": "conditionalAccessDevices"
-        }],
-        "Id": "d575db13-1814-11ed-9753-157873424852",
-        "Cloud": "prd",
-        "Version": "beta",
-        "CreatedDateTime": "2020-12-14T22:32:52.387Z",
-        "WorkloadArea": "Identity and access",
-        "SubArea": "Identity and sign-in"
-    }]
+	"changelog": [
+		{
+			"ChangeList": [
+				{
+					"Id": "d4d6369d-3f0c-11eb-8849-810a86a5025c",
+					"ApiChange": "Property",
+					"ChangedApiName": "includeDevices",
+					"ChangeType": "Addition",
+					"Description": "Added the **includeDevices** property to [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
+					"Target": "conditionalAccessDevices"
+				},
+				{
+					"Id": "d4daff8e-3f0c-11eb-8849-810a86a5025c",
+					"ApiChange": "Property",
+					"ChangedApiName": "excludeDevices",
+					"ChangeType": "Addition",
+					"Description": "Added the **excludeDevices** property to [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
+					"Target": "conditionalAccessDevices"
+				}
+			],
+			"Id": "d4d13c07-3f0c-11eb-8849-810a86a5025c",
+			"Cloud": "prd",
+			"Version": "beta",
+			"CreatedDateTime": "2020-12-15T19:36:30.757Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		}
+	]
 }

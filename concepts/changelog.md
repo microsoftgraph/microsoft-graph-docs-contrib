@@ -66,6 +66,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added methods for listing and creating user attribute assignments to the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | v1.0 | Added the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true) resource type. |
 | Addition | beta | Added [email authentication method configuration](/graph/api/resources/emailauthenticationmethodconfiguration?view=graph-rest-beta) to the [authentication methods policy](/graph/api/resources/authenticationmethodspolicies-overview) API.|
+| Addition | beta | Added the **includeDevices** property to [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.|
+| Addition | beta | Added the **excludeDevices** property to [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.|
 
 ### Teamwork
 
@@ -734,7 +736,6 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 |Addition|beta|Added the [openIDConnectProvider](/graph/api/resources/openidconnectprovider?view=graph-rest-beta&preserve-view=true) complex type, [availableprovidertypes](/graph/api/identityprovider-list-availableprovidertypes?view=graph-rest-beta&preserve-view=true) method and [claimsMapping](/graph/api/resources/claimsmapping?view=graph-rest-beta&preserve-view=true) property.|
 |Change|beta|Updated the [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-beta&preserve-view=true) entity and the [create](/graph/api/identityprovider-post-identityproviders?view=graph-rest-beta&preserve-view=true), [list](/graph/api/identityprovider-list?view=graph-rest-beta&preserve-view=true), [get](/graph/api/identityprovider-get?view=graph-rest-beta&preserve-view=true), [update](/graph/api/identityprovider-update?view=graph-rest-beta&preserve-view=true), [delete](/graph/api/identityprovider-delete?view=graph-rest-beta&preserve-view=true) and [post](/graph/api/identityprovider-post-identityproviders?view=graph-rest-beta&preserve-view=true) operations to include OpenID Connect Provider.|
 | Addition | v1.0 | Added the [namedLocation API](/graph/api/resources/namedLocation?view=graph-rest-1.0&preserve-view=true), which represents named locations in Azure AD conditional access. |
-| Change | beta | Renamed the properties **includeDeviceStates** and **excludeDeviceStates** to **includeDevices** and **excludeDevices** in [conditionalAccessDevices](/graph/api/resources/conditionalaccessdevices?view=graph-rest-beta&preserve-view=true) entity. |
 
 ### People and workplace intelligence | Insights
 | **Change type** | **Version** | **Description**                  |
