@@ -37,8 +37,8 @@ To help you set up the most common identity tasks for your applications, Azure A
 |[Remove identity provider](../api/b2cidentityuserflow-delete-identityproviders.md)|None|Remove an identity provider from a B2C user flow.|
 |[List user attribute assignments](../api/b2cidentityuserflow-list-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|Retrieve all user attribute assignments in a B2C user flow.|
 |[Create user attribute assignment](../api/b2cidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Create a user attribute assignment in a B2C user flow.|
-|[List languages](../api/b2cidentityuserflow-list-languages)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|Retrieve all languages within a B2C user flow.|
-|[Create language](../api/b2cidentityuserflow-put-languages)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Creates a custom language in a B2C user flow.|
+|[List languages](../api/b2cidentityuserflow-list-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|Retrieve all languages within a B2C user flow.|
+|[Create language](../api/b2cidentityuserflow-put-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Creates a custom language in a B2C user flow.|
 
 ## Properties
 

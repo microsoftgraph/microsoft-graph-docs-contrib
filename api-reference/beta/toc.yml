@@ -10775,7 +10775,7 @@ items:
                - name: Put userFlowLanguagePage
                  href: api/userflowlanguagepage-put.md
                - name: Delete userFlowLanguagePage
-                 href: api-userflowlanguagepage-delete.md
+                 href: api/userflowlanguagepage-delete.md
       - name: Governance
         items:
         - name: Access reviews (groups)
