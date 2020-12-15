@@ -6,35 +6,14 @@
                 "ApiChange": "Member",
                 "ChangedApiName": "failed",
                 "ChangeType": "Addition",
-                "Description": "Added the `failed` member to the **cloudPcStatus** enumeration",
+                "Description": "Added the `failed` member to the **cloudPcStatus** enumeration.",
                 "Target": "cloudPcStatus"
             }, {
                 "Id": "97b31fed-3b8e-11eb-822d-0179b911e3f8",
                 "ApiChange": "Member",
-                "ChangedApiName": "upgradeFailed",
+                "ChangedApiName": "upgradeFailed, provisionFailed, deprovisionFailed, reprovisionFailed",
                 "ChangeType": "Deletion",
-                "Description": "Removed the `upgradeFailed` member from the **cloudPcStatus** enumeration",
-                "Target": "cloudPcStatus"
-            }, {
-                "Id": "97b58140-3b8e-11eb-822d-0179b911e3f8",
-                "ApiChange": "Member",
-                "ChangedApiName": "provisionFailed",
-                "ChangeType": "Deletion",
-                "Description": "Removed the `provisionFailed` member from the **cloudPcStatus** enumeration",
-                "Target": "cloudPcStatus"
-            }, {
-                "Id": "97b7e978-3b8e-11eb-822d-0179b911e3f8",
-                "ApiChange": "Member",
-                "ChangedApiName": "deprovisionFailed",
-                "ChangeType": "Deletion",
-                "Description": "Removed the `deprovisionFailed` member from the **cloudPcStatus** enumeration",
-                "Target": "cloudPcStatus"
-            }, {
-                "Id": "97ba475b-3b8e-11eb-822d-0179b911e3f8",
-                "ApiChange": "Member",
-                "ChangedApiName": "reprovisionFailed",
-                "ChangeType": "Deletion",
-                "Description": "Removed the `reprovisionFailed` member from the **cloudPcStatus** enumeration",
+                "Description": "Removed the `upgradeFailed`, `provisionFailed`, `deprovisionFailed`, `reprovisionFailed` member from the **cloudPcStatus** enumeration.",
                 "Target": "cloudPcStatus"
             }],
             "Id": "97a9977f-3b8e-11eb-822d-0179b911e3f8",

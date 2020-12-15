@@ -13,16 +13,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## December 2020
 
-### Devices and apps | Cloud PC
-
-| **Change type** | **Version** | **Description** |
-|:---|:---|:---|
-|Addition|beta|Added the `failed` member to the **cloudPcStatus** enumeration|
-|Deletion|beta|Removed the `upgradeFailed` member from the **cloudPcStatus** enumeration|
-|Deletion|beta|Removed the `provisionFailed` member from the **cloudPcStatus** enumeration|
-|Deletion|beta|Removed the `deprovisionFailed` member from the **cloudPcStatus** enumeration|
-|Deletion|beta|Removed the `reprovisionFailed` member from the **cloudPcStatus** enumeration|
-
 ### Change notifications
 
 | **Change type** | **Version**   | **Description**                          |
@@ -39,6 +29,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [custodian](/graph/api/resources/custodian?view=graph-rest-beta&preserve-view=true), [unifiedGroupSource](/graph/api/resources/unifiedgroupsource?view=graph-rest-beta&preserve-view=true), and [siteSource](/graph/api/resources/sitesource?view=graph-rest-beta&preserve-view=true) resources and associated methods. |
+
+### Devices and apps | Cloud PC
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the `failed` member to the **cloudPcStatus** enumeration.|
+|Deletion|beta|Removed the `upgradeFailed`,`provisionFailed`, `deprovisionFailed`, `reprovisionFailed` member from the **cloudPcStatus** enumeration.|
 
 ### Identity and access
 
