@@ -60,7 +60,7 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
 | installedApps | [teamsAppInstallation](teamsappinstallation.md) collection | A collection of all the apps in the chat. Nullable. |
-| members | [conversationMember](conversationmember.md) collection | A collection of all people in the chat. Nullable. |
+| members | [conversationMember](conversationmember.md) collection | A collection of all the members in the chat. Nullable. |
 | messages | [chatMessage](chatmessage.md) collection | A collection of all the messages in the chat. Nullable. |
 
 ## JSON representation
