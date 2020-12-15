@@ -88,22 +88,11 @@ Content-length: 469
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.b2cIdentityUserFlow"
 }
 -->
 
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows/$entity",
-  "id": "B2C_1_CustomerSignUp",
-  "userFlowType": "signUp",
-  "userFlowTypeVersion": 1,
-  "isLanguageCustomizationEnabled": true,
-  "defaultLanguageTag": "en"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- {

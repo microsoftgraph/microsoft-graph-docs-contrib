@@ -38,7 +38,7 @@ The work or school account needs to belong to one of the following roles:
 -->
 
 ``` http
-PUT /identity/b2cUserFlows/{b2cIdentityUserFlowId}/languages
+PUT /identity/b2cUserFlows/{id}/languages/{id}
 ```
 
 ## Request headers
@@ -52,7 +52,7 @@ PUT /identity/b2cUserFlows/{b2cIdentityUserFlowId}/languages
 
 In the request body, supply a JSON representation of the [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) object.
 
-The following table shows the properties that are required when you create the [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md).
+The following table shows the properties that can be optionally provided when you create the [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
