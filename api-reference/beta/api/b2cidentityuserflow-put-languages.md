@@ -56,7 +56,7 @@ The following table shows the properties that can be optionally provided when yo
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The identifier of the language. This field is Language ID tag [RFC 5646](https://tools.ietf.org/html/rfc5646) compliant and must be a documented Language ID.|
+|id|String|The identifier of the language. This field is Language ID tag [RFC 5646](https://tools.ietf.org/html/rfc5646) compliant and must be a documented Language ID. If provided in the request body, it must match the identifer provided in the request URL.|
 |isEnabled|Boolean|Indicates whether the language is enabled within the user flow. If this is not provided in the request, isEnabled will be set to 'true'.|
 
 ## Response
