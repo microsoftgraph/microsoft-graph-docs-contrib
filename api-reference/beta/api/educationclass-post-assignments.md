@@ -91,6 +91,7 @@ Content-type: application/json
 Content-length: 279
 
 {
+  "addedStudentAction": "none",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "2014-02-01T00:00:00Z",
@@ -126,6 +127,7 @@ Content-length: 279
       }
   },
   "lastModifiedDateTime": "2014-02-01T00:00:00Z",
+  "notificationChannelUrl": null,
   "status": "published"
 }
 ```
