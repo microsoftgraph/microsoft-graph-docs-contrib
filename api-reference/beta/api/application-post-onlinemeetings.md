@@ -229,7 +229,8 @@ Content-Type: application/json
 ### Example 3: Create a live event with a user token
 
 > [!IMPORTANT]
-> The **broadcastSettings** property is in private preview and not available to public yet.
+> Creating a live event with the **broadcastSettings** property is only in private preview and has some limitations. Please refer to
+> [broadcastSettings](../resources/broadcastSettings.md) for more details.
 
 #### Request
 

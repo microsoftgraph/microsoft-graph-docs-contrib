@@ -56,7 +56,8 @@ Contains information about a meeting, including the URL used to join a meeting, 
 > The **autoAdmittedUsers** property is obsolete. Use **lobbyBypassSettings.scope** instead for meeting option configurations.
 
 > [!IMPORTANT]
-> \* The **broadcastSettings** property is in private preview and not available to public yet.
+> *\ Creating a live event with the **broadcastSettings** property is only in private preview and has some limitations. Please refer to
+> [broadcastSettings](../resources/broadcastSettings.md) for more details.
 
 ### onlineMeetingPresenters values
 
