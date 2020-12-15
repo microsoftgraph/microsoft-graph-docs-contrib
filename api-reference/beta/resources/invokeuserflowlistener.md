@@ -36,7 +36,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.invokeUserFlowListener",
-  "baseType": "microsoft.graph.authenticationAction",
+  "baseType": "microsoft.graph.authenticationListener",
   "openType": false
 }
 -->
