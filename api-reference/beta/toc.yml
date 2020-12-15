@@ -10705,7 +10705,7 @@ items:
              - name: List languages
                href: api/b2cidentityuserflow-list-languages.md
              - name: Create language
-               href: api/b2cidentityuserflow-put-language.md
+               href: api/b2cidentityuserflow-put-languages.md
           - name: Self-service sign up user flows
             items:
              - name: B2X user flow
