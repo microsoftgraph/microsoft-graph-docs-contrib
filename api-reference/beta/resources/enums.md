@@ -21,13 +21,13 @@ Namespace: microsoft.graph
 
 ### recipientScopeType values
 
-| Value
-|:-------------------------
-| none
-| internal
-| external
-| externalPartner
-| externalNonPartner
+|Member|
+|:---|
+|none|
+|internal|
+|external|
+|externalPartner|
+|externalNonPartner|
 
 ### driveType values
 
@@ -53,6 +53,14 @@ Namespace: microsoft.graph
 |Invitation|
 |LocalAccount|
 |EmailVerified|
+
+### educationAddedStudentAction values 
+
+|Member|
+|:---|
+|none|
+|assignIfOpen|
+|unknownFutureValue|
 
 ### externalEmailOtpState values
 
