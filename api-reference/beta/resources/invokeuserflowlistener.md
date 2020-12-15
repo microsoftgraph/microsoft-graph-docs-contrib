@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A listener that is used to invoke a user flow during an authentication event. Authentication events are controlled by the [authenticationEventsPolicy](../resources/authenticationeventspolicy.md).
+You can create an [invokeUserFlowListener](../resources/invokeuserflowlistener.md) for the onSignUpStart event. This associates an application with a user flow, which enables [external identities self-service sign up](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) for the application. Once an application is associated with a user flow, users who go to that application will be able to initiate a sign-up flow that provisions a guest account.
 
 Inherits from the abstract base type [authenticationListener](../resources/authenticationlistener.md).
 
