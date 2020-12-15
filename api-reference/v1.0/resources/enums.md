@@ -11,6 +11,22 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### resourceBehaviorOptions values
+
+|Member|
+|:---|
+|AllowOnlyMembersToPost|
+|HideGroupInOutlook|
+|SubscribeNewGroupMembers|
+|WelcomeEmailDisabled|
+
+### membershipRuleProcessingState values
+
+|Member|
+|:---|
+|On|
+|Paused|
+
 ### licenseProcessingState values
 
 |Member|
