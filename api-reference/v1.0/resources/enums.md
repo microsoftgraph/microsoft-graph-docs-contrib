@@ -20,13 +20,6 @@ Namespace: microsoft.graph
 |SubscribeNewGroupMembers|
 |WelcomeEmailDisabled|
 
-### membershipRuleProcessingState values
-
-|Member|
-|:---|
-|On|
-|Paused|
-
 ### licenseProcessingState values
 
 |Member|
