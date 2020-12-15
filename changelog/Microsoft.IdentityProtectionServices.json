@@ -17,6 +17,22 @@
 					"ChangeType": "Addition",
 					"Description": "Added the **excludeDevices** property to [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
 					"Target": "conditionalAccessDevices"
+				},
+				{
+					"Id": "d4d6369e-3f0d-11ec-8840-810a86a5025d",
+					"ApiChange": "Property",
+					"ChangedApiName": "includeDeviceStates",
+					"ChangeType": "Change",
+					"Description": "Deprecated the **includeDeviceStates** property on the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
+					"Target": "conditionalAccessDevices"
+				},
+				{
+					"Id": "d4daff8d-3f0d-11ec-8840-810a86a5025d",
+					"ApiChange": "Property",
+					"ChangedApiName": "excludeDeviceStates",
+					"ChangeType": "Change",
+					"Description": "Deprecated the **excludeDeviceStates** property on the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
+					"Target": "conditionalAccessDevices"
 				}
 			],
 			"Id": "d4d13c07-3f0c-11eb-8849-810a86a5025c",

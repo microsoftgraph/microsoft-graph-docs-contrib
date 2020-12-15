@@ -21,6 +21,8 @@ Represents devices in the policy scope.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+| (deprecated) includeDeviceStates | String collection | States in the scope of the policy. `All` is the only allowed value. |
+| (deprecated) excludeDeviceStates | String collection | States excluded from the scope of the policy. Possible values: `Compliant`, `DomainJoined`. |
 | includeDevices | String collection | States in the scope of the policy. `All` is the only allowed value. |
 | excludeDevices | String collection | States excluded from the scope of the policy. Possible values: `Compliant`, `DomainJoined`. |
 
