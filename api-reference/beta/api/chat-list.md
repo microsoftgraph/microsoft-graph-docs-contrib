@@ -136,7 +136,13 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 Here is an example of the response. 
 
+> [!NOTE]
+> The membership ID returned by server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
+>
+> The membership results could map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are from the current tenant only.
+
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -149,7 +155,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats(members())",
-    "@odata.count": 46,
+    "@odata.count": 3,
     "value": [
         {
             "id": "19:meeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2",
@@ -265,11 +271,11 @@ Content-type: application/json
 }
 ```
 
-### Example 3: List all the chats and expand the chats' members and filter by the chat member's displayname
+### Example 3: List all the chats that have a member with a specific display name
 
 #### Request
 
-Here is an example of the request.
+Here is an example of the request that will filter all the chats based on a specific member's display name.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -286,6 +292,11 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 Here is an example of the response. 
 
+> [!NOTE]
+> The membership ID returned by server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
+>
+> The membership results could map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are from the current tenant only.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -299,7 +310,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats(members())",
-    "@odata.count": 46,
+    "@odata.count": 2,
     "value": [
         {
             "id": "19:meeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2",
@@ -311,7 +322,7 @@ Content-type: application/json
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJkM123=",
                     "roles": [],
                     "displayName": "Tony Stark",
                     "userId": "4595d2f2-7b31-446c-84fd-9b795e63114b",
@@ -319,7 +330,7 @@ Content-type: application/json
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-                    "id": "d74fc2ed-cb0e-4288-a219-b5c71abaf2aa",
+                    "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMz6Jk45=",
                     "roles": [],
                     "displayName": "Peter Parker",
                     "userId": "d74fc2ed-cb0e-4288-a219-b5c71abaf2aa",
@@ -327,7 +338,7 @@ Content-type: application/json
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-                    "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+                    "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJ989kMTQ=",
                     "roles": [],
                     "displayName": "Nick Fury",
                     "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
@@ -345,7 +356,7 @@ Content-type: application/json
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-                    "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+                    "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJ989kMTQ=",
                     "roles": [],
                     "displayName": "Nick Fury",
                     "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
@@ -353,7 +364,7 @@ Content-type: application/json
                 },
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-                    "id": "d74fc2ed-cb0e-4288-a219-b5c71abaf2aa",
+                    "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMz6Jk45=",
                     "roles": [],
                     "displayName": "Peter Parker",
                     "userId": "d74fc2ed-cb0e-4288-a219-b5c71abaf2aa",
