@@ -127,7 +127,7 @@ This resource supports:
 |hideFromOutlookClients |Boolean |True if the group is not displayed in Outlook clients, such as Outlook for Windows and Outlook on the web; otherwise, false. Default value is **false**. <br><br>Returned only on $select.|
 |id|String|The unique identifier for the group. <br><br>Returned by default. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
 |isSubscribedByMail|Boolean|Indicates whether the signed-in user is subscribed to receive email conversations. Default value is **true**. <br><br>Returned only on $select. |
-|licenseProcessingState|String|Indicates status of the group license assignment to all members of the group. Default value is **false**. Read-only. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`.<br><br>Returned only on $select. Read-only.|
+|licenseProcessingState|licenseProcessingState|Indicates status of the group license assignment to all members of the group. Default value is **false**. Read-only. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`.<br><br>Returned only on $select. Read-only.|
 |mail|String|The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com". <br><br>Returned by default. Read-only. Supports $filter.|
 |mailEnabled|Boolean|Specifies whether the group is mail-enabled. <br><br>Returned by default.|
 |membershipRule|String|The rule that determines members for this group if the group is a dynamic group (groupTypes contains `DynamicMembership`). For more information about the syntax of the membership rule, see [Membership Rules syntax](/azure/active-directory/users-groups-roles/groups-dynamic-membership). <br><br>Returned by default. |

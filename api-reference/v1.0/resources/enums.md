@@ -11,6 +11,14 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### licenseProcessingState values
+
+|Member|
+|:---|
+|QueuedForProcessing|
+|ProcessingInProgress|
+|ProcessingComplete|
+
 ### principalType values
 
 |Member|
@@ -21,13 +29,13 @@ Namespace: microsoft.graph
 
 ### recipientScopeType values
 
-| Value
-|:-------------------------
-| none
-| internal
-| external
-| externalPartner
-| externalNonPartner
+|Member|
+|:---|
+|none|
+|internal|
+|external|
+|externalPartner|
+|externalNonPartner|
 
 ### driveType values
 
@@ -384,10 +392,10 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-| NotStarted
-| Running
-| Completed
-| Failed
+|notStarted
+|running
+|completed
+|failed
 
 
 ### onenotePatchActionType values

@@ -11,6 +11,14 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### licenseProcessingState values
+
+|Member|
+|:---|
+|QueuedForProcessing|
+|ProcessingInProgress|
+|ProcessingComplete|
+
 ### principalType values
 
 |Member|
@@ -610,10 +618,10 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-| NotStarted
-| Running
-| Completed
-| Failed
+|notStarted
+|running
+|completed
+|failed
 
 
 ### onenotePatchActionType values

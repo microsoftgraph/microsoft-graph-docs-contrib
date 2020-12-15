@@ -128,7 +128,7 @@ This resource supports:
 |isAssignableToRole|Boolean|Indicates whether this group can be assigned to an Azure Active Directory role or not.<br><br>This property can only be set while creating the group and is immutable. Only Global Administrator and Privileged Role Administrator roles can set this property. For more information, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Returned by default.|
 |infoCatalogs|String collection|Identifies the info segments assigned to the group. Returned by default.|
 |isSubscribedByMail|Boolean|Indicates whether the signed-in user is subscribed to receive email conversations. Default value is **true**. <br><br>Returned only on $select. |
-|licenseProcessingState|String|Indicates status of the group license assignment to all members of the group. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`. <br><br>Returned only on $select. Read-only. |
+|licenseProcessingState|licenseProcessingState|Indicates status of the group license assignment to all members of the group. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`. <br><br>Returned only on $select. Read-only. |
 |mail|String|The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com". <br><br>Returned by default. Read-only. Supports $filter.|
 |mailEnabled|Boolean|Specifies whether the group is mail-enabled. <br><br>Returned by default.|
 |mailNickname|String|The mail alias for the group, unique in the organization. This property must be specified when a group is created. These characters cannot be used in the mailNickName: `@()\[]";:.<>,SPACE`. <br><br>Returned by default. Supports $filter.|
