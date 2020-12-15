@@ -1,5 +1,31 @@
 {
   "changelog": [
+   {
+      "ChangeList": [
+        {
+          "Id": "d686e617-f373-4e2b-b26e-c71f475b05de",
+          "ApiChange": "Property",
+          "ChangedApiName": "floorNumber,floor",
+          "ChangeType": "Change",
+          "Description": "Changed **floorNumber** (Edm.Int) property on [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **floor** (Edm.String).",
+          "Target": "printerLocation"
+        },
+        {
+          "Id": "d686e617-f373-4e2b-b26e-c71f475b05de",
+          "ApiChange": "Property",
+          "ChangedApiName": "roomNumber,roomName",
+          "ChangeType": "Change",
+          "Description": "Changed **roomNumber** (Edm.Int) property on [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **roomName** (Edm.String).",
+          "Target": "printerLocation"
+        }
+      ],
+      "Id": "d686e617-f373-4e2b-b26e-c71f475b05de",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-10T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": " Cloud printing"
+    },
     {
       "ChangeList": [
         {
