@@ -91,7 +91,7 @@ Channel-level subscriptions also support keyword-based search via the `$search` 
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | ChannelMessage.Read.All, ChannelMessage.Read.Group* |
 
-*ChannelMessage.Read.Group is supported as part of [resource specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)*
+>**Note:** ChannelMessage.Read.Group is supported as part of [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### Example 1: Subscribe to all messages (and replies) in a channel
 
@@ -147,9 +147,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 4: Subscribe to message (and replies) in a channel which have a specific user mentioned
+### Example 4: Subscribe to messages (and replies) in a channel that mention a specific user
 
-To get notifications only for messages where a specific user has been mentioned, you can specify user's Id (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` in the example below) in the query.
+To get notifications only for messages where a specific user has been mentioned, you can specify the user's ID (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` in this example) in the query.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -171,7 +171,7 @@ To track messages in a chat, you can create a change notification subscription a
 
 Chat-level subscriptions also support keyword-based search via the `$search` query parameter.
 
-> **Note.** Subcribing to messages in a chat is only supported in `beta` at the moment.
+> **Note.** Subcribing to messages in a chat is currently in preview.
 
 ### Permissions
 
@@ -234,9 +234,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 4: Subscribe to message in a chat which have a specific user mentioned
+### Example 4: Subscribe to message in a chat in which a specific user is mentioned
 
-To get notifications only for messages where a specific user has been mentioned, you can specify user's Id (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` in the example below) in the query.
+To get notifications only for messages in which a specific user has been mentioned, you can specify the user's ID (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` in this example) in the query.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
