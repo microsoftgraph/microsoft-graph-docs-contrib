@@ -1,0 +1,18 @@
+{
+    "changelog": [{
+        "ChangeList": [{
+            "Id": "782he780-f74b-4eqf-b12a-6479c52fe856",
+            "ApiChange": "Property",
+            "ChangedApiName": "includeDeviceStates,excludeDeviceStates,includeDevices,excludeDevices",
+            "ChangeType": "Change",
+            "Description": "Renamed the properties **includeDeviceStates** and **excludeDeviceStates** to **includeDevices** and **excludeDevices** in [conditionalAccessDevices](/graph/api/resources/conditionalaccessdevices?view=graph-rest-beta&preserve-view=true) entity.",
+            "Target": "conditionalAccessDevices"
+        }],
+        "Id": "d575db13-1814-11ed-9753-157873424852",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2020-12-14T22:32:52.387Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Identity and sign-in"
+    }]
+}
