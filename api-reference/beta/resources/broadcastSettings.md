@@ -16,11 +16,11 @@ Namespace: microsoft.graph
 Settings related to a live event.
 
 > [!IMPORTANT]
-> Creating a live event with the **broadcastSettings** property is only in private preview. The major limitation is those live event settings that are managed 
-> by [policy](https://docs.microsoft.com/microsoftteams/teams-live-events/set-teams-live-events-policies-using-powershell) will not be validated
-> in Graph online meeting API. For example, if the admin has set a live event policy using `Set-CsTeamsMeetingBroadcastPolicy -Identity Global -BroadcastAttendeeVisibility EveryoneInCompany`, 
-> users will not be able to set "live event permissions" to "public" in Teams client, but can still create a live event via Graph
-> and set **allowedAudience** to `everyone`. The request will go through and take effect.
+> Creating live events with the **broadcastSettings** property is in Beta, with important limitations. This Beta release of the Graph onlineMeeting
+> API does not validate live event settings that are managed by [policy](https://docs.microsoft.com/microsoftteams/teams-live-events/set-teams-live-events-policies-using-powershell).
+> For example, if an admin sets a live event policy using `Set-CsTeamsMeetingBroadcastPolicy -Identity Global -BroadcastAttendeeVisibility EveryoneInCompany`, 
+> users will be prevented from setting "live event permissions" to "public" in their Teams client, but will be able to create a live event via Graph
+> with **allowedAudience** set to `everyone`. 
 
 ## Properties
 
