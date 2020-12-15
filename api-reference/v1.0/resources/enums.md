@@ -11,6 +11,18 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### groupColor values
+
+|Member|
+|:---|
+|Teal|
+|Purple|
+|Green|
+|Blue|
+|Pink|
+|Orange|
+|Red|
+
 ### resourceBehaviorOptions values
 
 |Member|
