@@ -1,6 +1,6 @@
 ---
 title: "plannerPlanContainer resource type"
-description: "The **plannerPlanContainer** resource represents a container for a plannerPlan. The container is a resource which specifies authorization rules and the lifetime of the plan. This means only the people who are authorized to work with the resource containing the plan will be able to work with the plan and the tasks within that Plan."
+description: "Represents a container for a plannerPlan. The container is a resource that specifies authorization rules and the lifetime of the plan."
 author: "TarkanSevilmis"
 localization_priority: Normal
 ms.prod: "planner"
@@ -11,20 +11,20 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **plannerPlanContainer** resource represents a container for a [plannerPlan](plannerPlan.md). The container is a resource which specifies authorization rules and the lifetime of the plan. This means only the people who are authorized to work with the resource containing the plan will be able to work with the plan and the tasks within that Plan. When the containing resource is deleted, the contained plans are also deleted. Properties of plannerPlanContainer cannot be changed after the plan is created.
+Represents a container for a [plannerPlan](plannerPlan.md). The container is a resource that specifies authorization rules and the lifetime of the plan. This means that only the people who are authorized to work with the resource containing the plan will be able to work with the plan and the tasks within it. When the containing resource is deleted, the contained plans are also deleted. Properties of **plannerPlanContainer** cannot be changed after the plan is created.
 
-Planner currently supports the container types listed in the following table. When creating a plan, the containerUrl property must be specified with the parth of the resource identified in the table below.
+Planner currently supports the container types listed in the following table. When creating a plan, the **containerUrl** property must be specified with the path of the resource identified in the table.
 
 |Type|Description|Path to the resource|
 |----|-----------|--------------------|
-|`group`| Plan is contained by a group.| https://graph.microsoft.com/v1.0/groups/&lt;id&gt;|
+|group| Plan is contained by a group.| https://graph.microsoft.com/v1.0/groups/&lt;id&gt;|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |containerId|String|The identifier of the resource that contains the plan.|
-|type|plannerContainerType| The type of the resource that contains the plan. See the table above for supported types. Possible values are: `group`, `unknownFutureValue`.|
-|url|String|The full canonical url of the container.|
+|type|plannerContainerType| The type of the resource that contains the plan. See the previous table for supported types. Possible values are: `group`, `unknownFutureValue`.|
+|url|String|The full canonical URL of the container.|
 
 ## Relationships
 None.
