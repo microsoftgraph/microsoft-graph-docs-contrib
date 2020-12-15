@@ -10,6 +10,7 @@ doc_type: resourcePageType
 # plannerTaskCreation resource type
 
 Namespace: microsoft.graph
+
 The **plannerTaskCreation** resource contains information about the origin of the [plannerTask](plannerTask.md). This resource will either have all its properties set to `null`, or exactly one property will have a value indicating the task was created by the process described by that property. Having all properties `null` indicates this task was not created by any specialized process. Apps do not need to know the origin of the task to be able to work with it, however discerning apps can use the additional information to provide specific experiences around these tasks. Please refer to documentation of specific resources to learn more about them.
 
 ## Properties
