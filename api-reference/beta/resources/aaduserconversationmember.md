@@ -45,7 +45,7 @@ Represents an Azure Active Directory user in a [chat](chat.md) or [channel](chan
 |userId| String | The guid of the user. |
 |email| String  | The email address of the user. |
 |tenantId| string  | TenantId which the AAD User belongs to. |
-|visibleHistoryStartDateTime| DateTimeOffset  | The timestamp denoting how far back a conversation's history is shared with the conversation member. |
+|visibleHistoryStartDateTime| DateTimeOffset  | The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.|
 
 ## JSON representation
 

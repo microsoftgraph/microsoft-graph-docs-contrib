@@ -43,7 +43,7 @@ See also [aadUserConversationMember](aaduserconversationmember.md).
 |id|String| Read-only. Unique ID of the user.|
 |displayName| string | The display name of the user. |
 |roles| string collection | The roles for that user. |
-|visibleHistoryStartDateTime| DateTimeOffset | The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable on for members of a chat. |
+|visibleHistoryStartDateTime| DateTimeOffset | The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat. |
 
 ## JSON representation
 
