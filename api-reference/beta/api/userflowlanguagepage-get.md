@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/langua
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.Cpim.Api.DataModels.userFlowLanguagePage"
+  "@odata.type": "microsoft.graph.userFlowLanguagePage"
 }
 -->
 

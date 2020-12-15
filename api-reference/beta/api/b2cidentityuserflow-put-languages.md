@@ -80,7 +80,7 @@ PUT https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSignUp/
 Content-Type: application/json
 
 {
-  "id": "es-ES"
+  "id": "es-ES",
   "isEnabled": true
 }
 ```

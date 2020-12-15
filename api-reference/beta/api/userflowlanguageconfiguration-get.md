@@ -82,8 +82,8 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/langua
 
 ``` http
 HTTP/1.1 200 OK
-
 Content-Type: application/json
+
 {
   "value": {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows('B2C_1_Customer')/languages/$entity",
