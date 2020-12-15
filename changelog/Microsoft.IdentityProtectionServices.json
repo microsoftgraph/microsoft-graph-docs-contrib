@@ -7,7 +7,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "includeDevices",
 					"ChangeType": "Addition",
-					"Description": "Added the **includeDevices** property to [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
+					"Description": "Added the **includeDevices** property to the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
 					"Target": "conditionalAccessDevices"
 				},
 				{
@@ -15,7 +15,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "excludeDevices",
 					"ChangeType": "Addition",
-					"Description": "Added the **excludeDevices** property to [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
+					"Description": "Added the **excludeDevices** property to the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
 					"Target": "conditionalAccessDevices"
 				}
 			],
