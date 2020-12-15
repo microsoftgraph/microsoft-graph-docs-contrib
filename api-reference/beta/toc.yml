@@ -10697,6 +10697,28 @@ items:
                href: api/identityuserflowattributeassignment-update.md
              - name: Delete user flow attribute assignment
                href: api/identityuserflowattributeassignment-delete.md
+          - name: User flow language configuration
+            items:
+             - name: User flow language configuration
+               href: resources/userflowlanguageconfiguration.md
+             - name: Get userFlowLanguageConfiguration
+               href: api/userflowlanguageconfiguration-get.md
+             - name: Delete userFlowLanguageConfiguration
+               href: api/userflowlanguageconfiguration-delete.md
+             - name: List defaultPages
+               href: api/userflowlanguageconfiguration-list-defaultpages.md
+             - name: List overridesPages
+               href: api/userflowlanguageconfiguration-list-overridespages.md
+             - name: User flow language page
+               items:
+               - name: User flow language page
+                 href: resources/userflowlanguagepage.md
+               - name: Get userFlowLanguagePage
+                 href: api/userflowlanguagepage-get.md
+               - name: Put userFlowLanguagePage
+                 href: api/userflowlanguagepage-put.md
+               - name: Delete userFlowLanguagePage
+                 href: api-userflowlanguagepage-delete.md
       - name: Governance
         items:
         - name: Access reviews (groups)

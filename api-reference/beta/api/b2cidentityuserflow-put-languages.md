@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 This method is used to create or update a custom language in a B2C user flow.
 
+**Note:** You must enable language customization in the Azure AD B2C user flow before you can create a custom language. See the [Update b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md) topic for an example.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -95,8 +97,8 @@ Content-Type: application/json
 
 ``` http
 HTTP/1.1 201 Created
-
 Content-Type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows('B2C_1_CustomerSignUp')/languages/$entity",
   "id": "es-ES",

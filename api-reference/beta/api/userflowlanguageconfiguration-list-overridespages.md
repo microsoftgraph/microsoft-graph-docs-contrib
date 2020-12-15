@@ -1,17 +1,17 @@
 ---
-title: "List languages"
-description: "Retrieve a list of languages supported for customization within a B2X user flow."
+title: "List overridesPages"
+description: "Get the userFlowLanguagePage resources from the overridesPages navigation property."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# List languages
+# List overridesPages
 
 Namespace: microsoft.graph
 
-Retrieve a list of languages supported for customization in a B2X user flow.
+Get the userFlowLanguagePage resources from the overridesPages navigation property. These pages are used to customize the values shown to the user during a user journey in a user flow.
 
 ## Permissions
 
@@ -36,7 +36,8 @@ The work or school account needs to belong to one of the following roles:
 -->
 
 ``` http
-GET /identity/b2xUserFlows/{id}/languages
+GET /identity/b2cUserFlows/{id}/languages/{id}/overridesPages
+GET /identity/b2xUserFlows/{id}/languages/{id}/overridesPages
 ```
 
 ## Request headers
@@ -51,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [userFlowLanguagePage](../resources/userflowlanguagepage.md) objects in the response body.
 
 ## Examples
 
@@ -59,12 +60,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 <!-- {
   "blockType": "request",
-  "name": "get_userflowlanguageconfiguration"
+  "name": "get_userflowlanguagepage"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_PartnerSignUp/languages
+GET https://graph.microsoft.com/beta/b2cUserFlows/B2C_1_Customer/languages/en/overridesPages
 ```
 
 ### Response
@@ -73,7 +74,7 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_PartnerSignUp/l
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.userFlowLanguageConfiguration)"
+  "@odata.type": "Collection(microsoft.graph.userFlowLanguagePage)"
 }
 -->
 
@@ -82,17 +83,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2xUserFlows('B2X_1_PartnerSignUp')/languages",
   "value": [
     {
-      "id": "en",
-      "isEnabled": true,
-      "displayName": "English"
+      "id": "idpselections"
     },
     {
-      "id": "de",
-      "isEnabled": true,
-      "displayName": "Deutsch"
+      "id": "phonefactor"
     }
   ]
 }
