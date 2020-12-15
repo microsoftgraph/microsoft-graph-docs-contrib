@@ -65,6 +65,7 @@ The following is a JSON representation of the resource.
     "userFlowType": "String",
     "userFlowTypeVersion": "Single",
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
-    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}]
+    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
+    "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}]
 }
 ```

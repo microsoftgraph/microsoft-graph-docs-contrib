@@ -77,6 +77,7 @@ The following is a JSON representation of the resource.
     "isLanguageCustomizationEnabled": "Boolean",
     "defaultLanguageTag": "String",
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
-    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}]
+    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
+    "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}]
 }
 ```
