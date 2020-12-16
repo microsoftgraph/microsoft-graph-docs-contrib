@@ -99,11 +99,13 @@ These properties are temporary and either a) define behavior the service should 
 | @microsoft.graph.downloadUrl      | string | A URL that can be used to download this file's content. Authentication is not required with this URL. Read-only.
 | @microsoft.graph.sourceUrl        | string | When issuing a PUT request, this instance annotation can be used to instruct the service to download the contents of the URL, and store it as the file. Write-only.
 
-**Note:** The @microsoft.graph.downloadUrl value is a short-lived URL and can't be cached.
+>**Note:** The parameter `@microsoft.graph.conflictBehavior` should be included in the URL instead of the body of the request.
+
+>**Note:** The `@microsoft.graph.downloadUrl` value is a short-lived URL and can't be cached.
 The URL will only be available for a short period of time (1 hour) before it is invalidated.
 Removing file permissions for a user may not immediately invalidate the URL.
 
->**Note:** The parameter @microsoft.graph.conflictBehavior should be included in the URL instead of the body of the request.
+>**Note:** Using the `@microsoft.graph.sourceUrl` property for file uploading is not supported in OneDrive for Business, SharePoint Online and SharePoint Server 2016.
 
 ## JSON representation
 
