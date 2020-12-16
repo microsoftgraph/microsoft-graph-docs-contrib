@@ -15,9 +15,7 @@ Namespace: microsoft.graph
 
 The base type to hold authentication information for calling the API.
 
-Resources that derive from **baseItem** include:
-
-* [basicAuthentication](basicauthentication.md)
+A [basicAuthentication](basicauthentication.md) is derived from apiAuthenticationConfigurationBase.
 
 ## Properties
 
