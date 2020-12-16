@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Read the values in a [userFlowLanguagePage](../resources/userflowlanguagepage.md) object for a language in a user flow. These values are what are shown to a user during a user journey defined by a user flow. To reference the content within the object, you must use `$value`. This returns the content within the object and allows you to reference it directly.
+Read the values in a [userFlowLanguagePage](../resources/userflowlanguagepage.md) object for a language in a user flow. These values are shown to a user during a user journey defined by a user flow.
 
 ## Permissions
 
@@ -29,6 +29,8 @@ The work or school account needs to belong to one of the following roles:
 * External Identity User Flow administrator
 
 ## HTTP request
+
+To reference the content within the object, you must use `$value`. This returns the content within the object and allows you to reference it directly.
 
 <!-- {
   "blockType": "ignored"

@@ -54,8 +54,8 @@ In the request body, provide a JSON representation of a [b2cIdentityUserFlow](..
 |id|String|Required. The name of the user flow. The name will be pre-pended with `B2C_1` after creation.|
 |userFlowType|String|Required. The type of user flow you are creating. The supported values for **userFlowType** are:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|Float|Required. The version of the user flow.|
-|isLanguageCustomizationEnabled|Boolean|Optional. The property that determines whether language customization is enabled within the B2C user flow. Language customization is not enabled by default for B2C user flows.|
-|defaultLanguageTag|String|Optional. Indicates the default language of the b2cIdentityUserFlow that is used when no `ui_locale` tag is specified in the request. This field is [RFC 5646](https://tools.ietf.org/html/rfc5646) compliant.|
+|isLanguageCustomizationEnabled|Boolean|Optional. Determines whether language customization is enabled within the Azure AD B2C user flow. Language customization is not enabled by default for Azure AD B2C user flows.|
+|defaultLanguageTag|String|Optional.  Specifies the default language of the b2cIdentityUserFlow that is used when no `ui_locale` tag is specified in the request. This field is [RFC 5646](https://tools.ietf.org/html/rfc5646) compliant.|
 |identityProviders|[identityProvider](../resources/identityprovider.md) collection|Optional. The identity providers you want to include in the user flow.|
 
 ## Response

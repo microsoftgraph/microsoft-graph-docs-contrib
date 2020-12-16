@@ -1,6 +1,6 @@
 ---
 title: "Delete userFlowLanguagePage"
-description: "Deletes the values in an userFlowLanguagePage object. You may only delete the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow."
+description: "Deletes the values in an userFlowLanguagePage object."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"

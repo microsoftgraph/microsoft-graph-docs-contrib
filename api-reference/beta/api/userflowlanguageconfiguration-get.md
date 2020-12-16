@@ -1,6 +1,6 @@
 ---
 title: "Get userFlowLanguageConfiguration"
-description: "Read the properties and relationships of a [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) object. These objects represent a language available in a user flow."
+description: "Read the properties and relationships of a [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) object."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) object. These objects represent a language available in a user flow.
 
-**Note:** To retrieve a language supported for customization, you must first enable language customization on your B2C user flow. See the [Update b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md) topic for an example. Language customization is enabled by default in [Azure Active Directory user flows](../resources/b2xidentityuserflow.md).
+**Note:** To retrieve a language supported for customization, you must first enable language customization on your Azure AD B2C user flow. For more information, see [Update b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md). Language customization is enabled by default in [Azure Active Directory user flows](../resources/b2xidentityuserflow.md).
 
 ## Permissions
 
