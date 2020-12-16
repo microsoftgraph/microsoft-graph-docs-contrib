@@ -65,7 +65,7 @@ If successful, this method returns a `201 Created` response code and a [userFlow
 
 ## Examples
 
-### Example 1: Create a custom language in a B2C user flow
+### Example 1: Create a custom language in an Azure AD B2C user flow
 
 #### Request
 
