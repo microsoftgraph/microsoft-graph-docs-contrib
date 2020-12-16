@@ -26,7 +26,7 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The date and time that this app was registered. This property is null if the device is not registered for passwordless Phone Sign-In.|
-|displayName|String|The name of the device on which this app is registered. This property is null if the device is not registered for passwordless Phone Sign-In.|
+|displayName|String|The name of the device on which this app is registered.|
 |id|String|A unique identifier for this authentication method. Inherited from [authenticationMethod](../resources/authenticationmethod.md)|
 |deviceTag|String|Tags containing app metadata.|
 |phoneAppVersion|String|Numerical version of this instance of the Authenticator app.|

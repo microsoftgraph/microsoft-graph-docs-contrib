@@ -35,7 +35,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 }
 -->
 ``` http
-GET /user/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
+GET /user/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
 ```
 
 ## Optional query parameters
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [microsoftAuth
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
+GET https://graph.microsoft.com/beta/user/anirban@contoso.com/authentication/microsoftAuthenticatorMethods/_jpuR-TGZtk6aQCLF3BQjA2
 ```
 
 
