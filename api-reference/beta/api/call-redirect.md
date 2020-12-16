@@ -64,9 +64,9 @@ These examples will cover a workflow of an incoming call notification and how th
 
 > **Note:** The response objects shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-### Example 1: Forward a Call to a Target
+### Example 1: Forward a call to a target
 
-##### Notification - incoming
+#### Notification - incoming
 <!-- {
   "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
@@ -118,7 +118,7 @@ These examples will cover a workflow of an incoming call notification and how th
 }
 ```
 
-##### Request
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -164,7 +164,7 @@ Content-Type: application/json
 
 ---
 
-##### Response
+#### Response
 
 <!-- {
   "blockType": "response", 
@@ -173,7 +173,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 ```
-##### Notification - terminated
+#### Notification - terminated
 
 <!-- {
   "blockType": "example", 
@@ -237,7 +237,7 @@ Content-Type: application/json
 
 ### Example 2: Forward a call to multiple targets with simultaneous ring
 
-##### Notification - incoming
+#### Notification - incoming
 
 <!-- {
   "blockType": "example", 
@@ -299,7 +299,7 @@ Content-Type: application/json
 }
 ```
 
-##### Request
+#### Request
 
 <!-- {
   "blockType": "ignored", 
@@ -342,7 +342,7 @@ Content-Type: application/json
 }
 ```
 
-##### Response
+#### Response
 
 <!-- {
   "blockType": "response", 
@@ -353,7 +353,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### Notification - terminated
+#### Notification - terminated
 
 <!-- {
   "blockType": "example", 
@@ -412,7 +412,7 @@ Content-Type: application/json
 
 ### Example 3: Forward a Call to a PSTN number
 
-This call needs application instance with PSTN number assigned.
+This call needs an application instance with a PSTN number assigned.
 
 #### Step 1: Create application instance
 The tenant admin should call the following cmdlets on the tenant remote PowerShell to create the application instance. For more information, see [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) and [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
@@ -436,7 +436,7 @@ PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 ```
 > **Note:** If a tenant has Australian PSTN numbers assigned to any application instances, this call might not work. If a tenant is newly created, it might take several days for this feature to be available.
 
-##### Notification - incoming
+#### Notification - incoming
 <!-- {
   "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
@@ -493,9 +493,8 @@ PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 }
 ```
 
-##### Request
+#### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request", 
   "name": "call-redirect"
@@ -520,25 +519,7 @@ Content-Type: application/json
   "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-redirect-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/call-redirect-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-##### Response
+#### Response
 
 <!-- {
   "blockType": "response", 
@@ -547,7 +528,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 ```
-##### Notification - terminated
+#### Notification - terminated
 
 <!-- {
   "blockType": "example", 
