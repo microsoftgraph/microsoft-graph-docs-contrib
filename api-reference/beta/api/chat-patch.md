@@ -46,12 +46,12 @@ The following table shows the properties that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|topic|String|The title of the chat. This can only be set for a 'group' type chat.|
+|topic|String|The title of the chat. This can only be set for a chat of type `group`.|
 
 
 ## Response
 
-If successful, this method returns a 200 OK response code and the chatType and the topic for 'group' chatType and members added to the chat in the response body.
+If successful, this method returns a `200 OK response` code and the chatType and the topic for `group` chatType and members added to the chat in the response body.
 
 ## Examples
 
