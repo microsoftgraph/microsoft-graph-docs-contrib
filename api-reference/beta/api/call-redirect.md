@@ -422,7 +422,7 @@ PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 ```
 #### Step 2: Assign Microsoft 365 licenses
 1. Use tenant admin credentials sign-in to https://admin.microsoft.com/ and go to the **Users -> Active users** tab.
-2. Select the application instance, assign **Microsoft 365 Domestic and International Calling Plan** and **Microsoft 365 Phone System - Virtual User** licenses, and click **Save changes**. If the tenant is out of the required licenses, more can be purchased at the **Billing -> Purchase services** tab.
+2. Select the application instance, assign **Microsoft 365 Domestic and International Calling Plan** and **Microsoft 365 Phone System - Virtual User** licenses, and click **Save changes**. If the required licenses are not available in the tenant, they can be acquired in the **Billing -> Purchase services** tab.
 #### Step 3: Acquire PSTN number
 1. Use tenant admin credential to sign-in to https://admin.teams.microsoft.com/ and click the **Legacy portal** tab on the left panel.
 2. In the new page, go to the **voice -> phone numbers** tab.
