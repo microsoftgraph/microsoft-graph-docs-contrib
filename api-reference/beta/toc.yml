@@ -10767,15 +10767,13 @@ items:
              - name: List overridesPages
                href: api/userflowlanguageconfiguration-list-overridespages.md
              - name: User flow language page
-               items:
-               - name: User flow language page
-                 href: resources/userflowlanguagepage.md
-               - name: Get userFlowLanguagePage
-                 href: api/userflowlanguagepage-get.md
-               - name: Put userFlowLanguagePage
-                 href: api/userflowlanguagepage-put.md
-               - name: Delete userFlowLanguagePage
-                 href: api/userflowlanguagepage-delete.md
+               href: resources/userflowlanguagepage.md
+             - name: Get userFlowLanguagePage
+               href: api/userflowlanguagepage-get.md
+             - name: Put userFlowLanguagePage
+               href: api/userflowlanguagepage-put.md
+             - name: Delete userFlowLanguagePage
+               href: api/userflowlanguagepage-delete.md
       - name: Governance
         items:
         - name: Access reviews (groups)
