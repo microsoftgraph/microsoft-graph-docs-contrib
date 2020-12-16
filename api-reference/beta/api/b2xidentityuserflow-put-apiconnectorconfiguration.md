@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Create userFlowApiConnectorConfiguration
+# Configure userFlowApiConnectorConfiguration
 
 Namespace: microsoft.graph
 

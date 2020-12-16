@@ -1,6 +1,6 @@
 ---
 title: "userFlowApiConnectorConfiguration resource type"
-description: "Represents configuration for using Basic authentication in an API call."
+description: "Represents which API connectors are enabled for a user flow."
 author: "nickgmicrosoft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"

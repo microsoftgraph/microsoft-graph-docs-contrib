@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Get identityApiConnector
+# List identityApiConnectors
 
 Namespace: microsoft.graph
 

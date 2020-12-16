@@ -93,7 +93,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.Cpim.Api.DataModels.identityApiConnector"
+  "@odata.type": "microsoft.graph.identityApiConnector"
 }
 -->
 

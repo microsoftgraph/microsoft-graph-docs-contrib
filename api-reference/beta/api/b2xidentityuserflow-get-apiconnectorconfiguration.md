@@ -1,17 +1,17 @@
 ---
-title: "Create userFlowApiConnectorConfiguration"
-description: "Create a new userFlowApiConnectorConfiguration object in a b2xIdentityUserFlow."
+title: "Get userFlowApiConnectorConfiguration"
+description: "Get the userFlowApiConnectorConfiguration property of a b2xIdentityUserFlow."
 author: "nickgmicrosoft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Create userFlowApiConnectorConfiguration
+# Get userFlowApiConnectorConfiguration
 
 Namespace: microsoft.graph
 
-Get the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property in a [b2xIdentityUserFlow](../resources/userFlowApiConnectorConfiguration.md).
+Get the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property in a [b2xIdentityUserFlow](../resources/userFlowApiConnectorConfiguration.md) to detail the API connectors enabled for the user flow.
 
 ## Permissions
 
