@@ -199,8 +199,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## October 2020
 
-### Calendar
-
 ### Applications
 
 | **Change type** | **Version**   | **Description**                          |
