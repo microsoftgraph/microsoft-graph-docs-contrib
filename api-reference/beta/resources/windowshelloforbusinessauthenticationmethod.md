@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A representation of a FIDO2 security key registered to a user. FIDO2 is a sign-in authentication method.
+A representation of a Windows Hello for Business authentication method registered to a user. Windows Hello for Business is a sign-in authentication method for Windows devices.
 
 Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 
