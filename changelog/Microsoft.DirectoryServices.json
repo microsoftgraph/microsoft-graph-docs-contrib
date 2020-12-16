@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityApiConnector",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityApiConnector](/graph/api/resources/identityapiconnector.md?view=graph-rest-beta&preserve-view=true) object which represents configuration used to call web APIs. Added methods for listing, getting, creating, updating, and deleting API connectors.",
+          "Target": "identityApiConnector"
+        },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "apiAuthenticationConfigurationBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [apiAuthenticationConfigurationBase](/graph/api/resources/apiauthenticationconfigurationbase?view=graph-rest-beta&preserve-view=true) entity for authentication configuration used to call web APIs.",
+          "Target": "apiAuthenticationConfigurationBase"
+      },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "basicAuthentication",
+          "ChangeType": "Addition",
+          "Description": "Added the [basicAuthentication](/graph/api/resources/basicauthentication?view=graph-rest-beta&preserve-view=true) entity that extends apiAuthenticationConfigurationBase for HTTP Basic authentication of web API calls.",
+          "Target": "basicAuthentication"
+        },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userFlowApiConnectorConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [userFlowApiConnectorConfiguration](/graph/api/resources/userflowapiconnectorconfiguration?view=graph-rest-beta&preserve-view=true) entity for managing API connectors used by an External Identities self-service sign-up user flow.",
+          "Target": "userFlowApiConnectorConfiguration"
+        },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e8",
+          "ApiChange": "Property",
+          "ChangedApiName": "b2xIdentityUserFlow",
+          "ChangeType": "Addition",
+          "Description": "Added **apiConnectorConfiguration** property to the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) resource.",
+          "Target": "b2xIdentityUserFlow"
+        }
+      ],
+      "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e8",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-03T17:53:06Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8faf36d1-4d32-4ef9-bdd1-a6f95c66bc24",
           "ApiChange": "Resource",
           "ChangedApiName": "emailAuthenticationMethodConfiguration",
