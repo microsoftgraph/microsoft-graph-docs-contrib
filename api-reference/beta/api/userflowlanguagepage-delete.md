@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Deletes the values in an [userFlowLanguagePage](../resources/userflowlanguagepage.md) object. You may only delete the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow. To reference the content within the object, you must use `$value`. This returns the content within the object and allows you to reference it directly.
+Deletes the values in an [userFlowLanguagePage](../resources/userflowlanguagepage.md) object. You may only delete the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow.
 
 ## Permissions
 
@@ -29,6 +29,8 @@ The work or school account needs to belong to one of the following roles:
 * External Identity User Flow administrator
 
 ## HTTP request
+
+To reference the content within the object, you must use `$value`. This returns the content within the object and allows you to reference it directly.
 
 <!-- {
   "blockType": "ignored"
