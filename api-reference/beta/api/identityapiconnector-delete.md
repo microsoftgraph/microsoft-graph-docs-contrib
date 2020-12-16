@@ -59,7 +59,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/apiConnectors/{identityApiConnectorId}
+DELETE https://graph.microsoft.com/beta/identity/apiConnectors/{id}
 ```
 
 ### Response
