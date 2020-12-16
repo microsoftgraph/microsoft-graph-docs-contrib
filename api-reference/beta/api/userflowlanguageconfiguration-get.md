@@ -60,6 +60,8 @@ If successful, this method returns a `200 OK` response code and a [userFlowLangu
 
 ### Request
 
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_userflowlanguageconfiguration"
@@ -71,6 +73,8 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/langua
 ```
 
 ### Response
+
+The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

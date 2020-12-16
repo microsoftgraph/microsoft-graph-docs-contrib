@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Deletes the values in an [userFlowLanguagePage](../resources/userflowlanguagepage.md) object. You may only delete the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow.
+Deletes the values in an [userFlowLanguagePage](../resources/userflowlanguagepage.md) object. You may only delete the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow. To reference the content within the object, you must use `$value`. This returns the content within the object and allows you to reference it directly.
 
 ## Permissions
 
@@ -58,6 +58,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "delete_userflowlanguagepage"
@@ -69,6 +71,8 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/lan
 ```
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

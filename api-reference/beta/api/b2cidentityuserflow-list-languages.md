@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve a list of languages supported for customization in a B2C user flow.
+Retrieve a list of languages supported for customization in an Azure AD B2C user flow.
 
 **Note:** To retrieve a list of languages supported for customization, you must first enable language customization on your B2C user flow. See the [Update b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md) topic for an example.
 
@@ -65,6 +65,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_userflowlanguageconfiguration"
@@ -76,6 +78,8 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSignUp/
 ```
 
 #### Response
+
+The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -110,6 +114,8 @@ Content-Type: application/json
 
 #### Request
 
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_userflowlanguageconfiguration_filter"
@@ -121,6 +127,8 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSignUp/
 ```
 
 #### Response
+
+The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

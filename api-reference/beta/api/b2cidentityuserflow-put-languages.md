@@ -1,6 +1,6 @@
 ---
 title: "Create languages"
-description: "Create a custom language in a B2C user flow."
+description: "Create a custom language in an Azure AD B2C user flow."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-This method is used to create or update a custom language in a B2C user flow.
+This method is used to create or update a custom language in an Azure AD B2C user flow.
 
 **Note:** You must enable language customization in the Azure AD B2C user flow before you can create a custom language. See the [Update b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md) topic for an example.
 
@@ -65,9 +65,11 @@ If successful, this method returns a `201 Created` response code and a [userFlow
 
 ## Examples
 
-### Example 1: Create a custom language in a B2C user flow
+### Example 1: Create a custom language in an Azure AD B2C user flow
 
 #### Request
+
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -86,6 +88,8 @@ Content-Type: application/json
 ```
 
 #### Response
+
+The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -107,9 +111,11 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Update a custom language in a B2C user flow
+### Example 2: Update a custom language in an Azure AD B2C user flow
 
 #### Request
+
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -127,6 +133,8 @@ Content-Type: application/json
 ```
 
 #### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

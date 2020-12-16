@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the values in an userFlowLanguagePage object. You may only update the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow.
+Update the values in an userFlowLanguagePage object. You may only update the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow. To reference the content within the object, you must use `$value`. This returns the content within the object and allows you to reference it directly.
 
 ## Permissions
 
@@ -59,6 +59,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "update_overridespages"
@@ -83,6 +85,8 @@ Content-Type: application/json
 ```
 
 ### Response
+
+The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

@@ -65,6 +65,8 @@ If successful, this method returns a `200 OK` response code and an updated [b2cI
 
 ### Request
 
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "update_b2cidentityuserflow"
@@ -83,6 +85,8 @@ Content-length: 469
 ```
 
 ### Response
+
+The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

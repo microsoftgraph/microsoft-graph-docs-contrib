@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Read the values in a [userFlowLanguagePage](../resources/userflowlanguagepage.md) object for a language in a user flow. These values are what are shown to a user during a user journey defined by a user flow.
+Read the values in a [userFlowLanguagePage](../resources/userflowlanguagepage.md) object for a language in a user flow. These values are what are shown to a user during a user journey defined by a user flow. To reference the content within the object, you must use `$value`. This returns the content within the object and allows you to reference it directly.
 
 ## Permissions
 
@@ -60,6 +60,8 @@ If successful, this method returns a `200 OK` response code and a [userFlowLangu
 
 ### Request
 
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_userflowlanguagepage"
@@ -71,6 +73,8 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/langua
 ```
 
 ### Response
+
+The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
