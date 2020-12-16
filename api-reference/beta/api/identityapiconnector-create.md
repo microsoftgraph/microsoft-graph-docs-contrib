@@ -84,6 +84,7 @@ Content-Type: application/json
       "username":"<USERNAME>",
       "password":"<PASSWORD>"
     }
+}
 ```
 
 ### Response
