@@ -93,7 +93,7 @@ Content-Type: application/json
             "username": "<USERNAME>",
             "password": "******"
         }
-    }
+    },
     "postAttributeCollection@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2xUserFlows('B2X_1_testuserflow')/apiConnectorConfiguration/microsoft.graph.userFlowApiConnectorConfiguration/microsoft.graph.userFlowApiConnectorConfiguration/postAttributeCollection/$entity",
     "postAttributeCollection": {
         "id": "<guid2>",
