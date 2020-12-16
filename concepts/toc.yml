@@ -58,6 +58,8 @@ items:
             href: /graph/tutorials/javascript
           - name: Node.js
             href: /graph/tutorials/node
+          - name: Office Add-in
+            href: /graph/tutorials/office-addin
           - name: PHP
             href: /graph/tutorials/php
           - name: Power Automate
@@ -72,6 +74,8 @@ items:
             href: /graph/tutorials/ruby
           - name: SharePoint Framework
             href: /graph/tutorials/spfx
+          - name: Teams
+            href: /graph/tutorials/teams
           - name: UWP
             href: /graph/tutorials/uwp
           - name: Xamarin
@@ -144,6 +148,8 @@ items:
             href: cloud-communications-callrecords.md
           - name: Manage phone numbers for bots
             href: cloud-communications-phone-number.md
+      - name: Compliance (preview)
+        href: compliance-concept-overview.md
       - name: Cross-device experiences
         displayName: Project Rome
         items:
@@ -180,10 +186,10 @@ items:
         items:
           - name: Cloud printing (preview)
             expanded: true
-            items: 
+            items:
               - name: Overview
                 href: universal-print-concept-overview.md
-                displayName: Universal Print                
+                displayName: Universal Print
               - name: Upload data to upload session
                 href: upload-data-to-upload-session.md
                 displayName: Universal Print Job Submission
@@ -209,6 +215,10 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Authentication methods
             href: authenticationmethods-get-started.md
+          - name: Identity and sign-in
+            items:
+              - name: Identify and remediate risk
+                href: tutorial-riskdetection-api.md
           - name: Governance
             items:
               - name: Create an access package
@@ -311,7 +321,7 @@ items:
             href: reportroot-concept-overview.md
           - name: Authorization for Microsoft 365 usage reports
             href: reportroot-authorization.md
-      - name: Search (preview)
+      - name: Search
         items:
           - name: Overview
             href: search-concept-overview.md
@@ -325,11 +335,11 @@ items:
                 href: search-concept-files.md
               - name: Search connectors
                 href: search-concept-custom-types.md
-              - name: Sort search results
+              - name: Sort search results (preview)
                 href: search-concept-sort.md
-              - name: Refine search results
+              - name: Refine search results (preview)
                 href: search-concept-aggregation.md
-          - name: Index
+          - name: Index (preview)
             items:
               - name: Manage connections
                 href: search-index-manage-connections.md
@@ -376,6 +386,8 @@ items:
             href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: teams-proactive-messaging.md
+          - name: Send activity feed notifications
+            href: teams-send-activityfeednotifications.md
       - name: To-do tasks
         href: todo-concept-overview.md
         displayName: Microsoft To Do
@@ -551,18 +563,36 @@ items:
             items:
               - name: Overview
                 href: toolkit/get-started/overview.md
-              - name: Create an Azure Active Directory app
+              - name: Toolkit for React
+                href: toolkit/get-started/mgt-react.md
+          - name: Build your first app
+            items:
+              - name: Register an Azure Active Directory app
                 href: toolkit/get-started/add-aad-app-registration.md
-              - name: Build a web application (JavaScript)
+              - name: Build a web app (JavaScript)
                 href: toolkit/get-started/build-a-web-app.md
+              - name: Build a web app (React)
+                href: toolkit/get-started/use-toolkit-with-react.md
+              - name: Build a web app (Angular)
+                href: toolkit/get-started/use-toolkit-with-angular.md
               - name: Build a SharePoint web part
                 href: toolkit/get-started/build-a-sharepoint-web-part.md
               - name: Build a Microsoft Teams tab
                 href: toolkit/get-started/build-a-microsoft-teams-tab.md
-              - name: Use the Toolkit with React
-                href: toolkit/get-started/use-toolkit-with-react.md
-              - name: Use the Toolkit with Angular
-                href: toolkit/get-started/use-toolkit-with-angular.md
+          - name: Providers
+            items:
+              - name: Using the providers
+                href: toolkit/providers/providers.md
+              - name: MSAL provider
+                href: toolkit/providers/msal.md
+              - name: SharePoint provider
+                href: toolkit/providers/sharepoint.md
+              - name: Microsoft Teams provider
+                href: toolkit/providers/teams.md
+              - name: Proxy provider
+                href: toolkit/providers/proxy.md
+              - name: Custom provider
+                href: toolkit/providers/custom.md
           - name: Components
             items:
               - name: Login
@@ -583,24 +613,20 @@ items:
                 href: toolkit/components/agenda.md
               - name: Tasks
                 href: toolkit/components/tasks.md
-          - name: Providers
+              - name: To Do
+                href: toolkit/components/todo.md
+          - name: Customize components
             items:
-              - name: Using the providers
-                href: toolkit/providers.md
-              - name: MSAL provider
-                href: toolkit/providers/msal.md
-              - name: SharePoint provider
-                href: toolkit/providers/sharepoint.md
-              - name: Microsoft Teams provider
-                href: toolkit/providers/teams.md
-              - name: Proxy provider
-                href: toolkit/providers/proxy.md
-              - name: Custom provider
-                href: toolkit/providers/custom.md
-          - name: Styling components
-            href: toolkit/style.md
-          - name: Templating components
-            href: toolkit/templates.md
+              - name: Styling components
+                href: toolkit/customize-components/style.md
+              - name: Templating components
+                href: toolkit/customize-components/templates.md
+              - name: Caching Microsoft Graph calls in components
+                href: toolkit/customize-components/cache.md
+              - name: Localizing components
+                href: toolkit/customize-components/localization.md
+              - name: Right-to-left support
+                href: toolkit/customize-components/right-to-left.md
       - name: Resources
         expanded: true
         items:
