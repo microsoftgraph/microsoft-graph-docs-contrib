@@ -25,7 +25,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application| Not supported. |
 
-## HTTP request
 <!-- { "blockType": "ignored"} -->
 ```http
 POST /chats/{chat-id}/members
@@ -36,29 +35,24 @@ POST /chats/{chat-id}/members
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+|Content-Type|application/json. Required. |
 
 ## Request body
 
-Include the following properties in the request body.
-
-| Property   | Type |Description|
-|:---------------|:--------|:----------|
-|roles|string collection|The role for the user. Must be `owner` or empty.|
-|user|[conversationMember](../resources/conversationmember.md)|The user to add to the chat.|
+In the request body, supply a JSON representation of the [conversationMember](../resources/conversationmember.md) object.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a Location header.
+If successful, this method returns a `201 Created` response code and a Location header that provides a url path to the newly created member object.
 
 ## Examples
 
-### Example 1: Adding a single member to a Microsoft Teams chat while specifying a specific time the conversation history is shared back to
+### Example 1: Add a single member to a chat and specify the timespan for the conversation history
 
 #### Request
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_conversation_member_with_specific_visibleHistoryStartDateTime"
@@ -90,7 +84,8 @@ Here is an example of the response.
 }
 -->
 ```http
-HTTP/1.1 201 Created with Location header.
+HTTP/1.1 201 Created
+Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
 ### Example 2: Adding a single member to a Microsoft Teams chat, sharing no chat history
@@ -99,7 +94,6 @@ HTTP/1.1 201 Created with Location header.
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_conversation_member_with_no_visibleHistoryStartDateTime"
@@ -130,7 +124,8 @@ Here is an example of the response.
 }
 -->
 ```http
-HTTP/1.1 201 Created with Location header.
+HTTP/1.1 201 Created
+Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
 ### Example 3: Adding a single member to a Microsoft Teams chat, sharing the whole history of the chat
@@ -139,7 +134,6 @@ HTTP/1.1 201 Created with Location header.
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_conversation_member_with_all_visibleHistoryStartDateTime"
@@ -171,7 +165,8 @@ Here is an example of the response.
 }
 -->
 ```http
-HTTP/1.1 201 Created with Location header.
+HTTP/1.1 201 Created
+Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
 
