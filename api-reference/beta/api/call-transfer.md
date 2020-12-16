@@ -58,7 +58,7 @@ These examples show the flow of an incoming call all the way to the different ty
 
 ### Example 1: Call transfer
 
-##### Request
+#### Request
 The following example shows the request.
 
 
@@ -103,7 +103,7 @@ Content-Length: 430
 ---
 
 
-##### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -116,7 +116,7 @@ Content-Length: 430
 HTTP/1.1 202 Accepted
 ```
 
-##### Notification - transferring
+#### Notification - transferring
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -144,7 +144,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - transfer accepted
+#### Notification - transfer accepted
 
 > **Note:** Transfer accepted may happen after or before media state audio inactive.
 
@@ -174,7 +174,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - transfer completed
+#### Notification - transfer completed
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -208,7 +208,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - transfer failed
+#### Notification - transfer failed
 
 > **Note:** When a call transfer fails, the call state will be `established`.
 
@@ -246,7 +246,7 @@ Content-Type: application/json
 
 ### Example 2: Consultative transfer
 
-##### Request
+#### Request
 The following example shows the request.
 
 <!-- {
@@ -279,7 +279,7 @@ Content-Type: application/json
 }
 ```
 
-##### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -292,7 +292,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### Notification - transferring
+#### Notification - transferring
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -320,7 +320,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - transfer accepted
+#### Notification - transfer accepted
 
 > **Note:** Transfer accepted may happen after or before media state audio inactive.
 
@@ -350,7 +350,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - transfer completed
+#### Notification - transfer completed
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -379,7 +379,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - transfer failed
+#### Notification - transfer failed
 
 > **Note:** When a call transfer fails, the call state will be `established`.
 
@@ -442,11 +442,9 @@ PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 ```
 > **Note:** If a tenant has Australian PSTN numbers assigned to any application instances, this call might not work. If a tenant is newly created, it might take several days for this feature to be available.
 
-##### Request
+#### Request
 The following example shows the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-transfer"
@@ -471,22 +469,8 @@ Content-Length: 430
   "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-transfer-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -499,7 +483,7 @@ Content-Length: 430
 HTTP/1.1 202 Accepted
 ```
 
-##### Notification - transferring
+#### Notification - transferring
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -527,7 +511,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - transfer accepted
+#### Notification - transfer accepted
 
 > **Note:** Transfer accepted may happen after or before media state audio inactive.
 
@@ -557,7 +541,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - transfer completed
+#### Notification - transfer completed
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -590,8 +574,7 @@ Content-Type: application/json
   ]
 }
 ```
-
-##### Notification - transfer failed
+### Notification - transfer failed
 
 > **Note:** When a call transfer fails, the call state will be `established`.
 
@@ -634,7 +617,7 @@ This call needs application instance with PSTN number assigned, as described in 
 > **Note:** If a tenant has Australian PSTN numbers assigned to any application instances, this call might not work. If a tenant is newly created, it might take several days for this feature to be available.
 
 
-##### Request
+#### Request
 The following example shows the request.
 
 <!-- {
@@ -665,7 +648,7 @@ Content-Type: application/json
 }
 ```
 
-##### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -678,7 +661,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### Notification - transferring
+#### Notification - transferring
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -706,7 +689,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - transfer accepted
+#### Notification - transfer accepted
 
 > **Note:** Transfer accepted may happen after or before media state audio inactive.
 
@@ -736,7 +719,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - transfer completed
+#### Notification - transfer completed
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -765,7 +748,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - transfer failed
+#### Notification - transfer failed
 
 > **Note:** When a call transfer fails, the call state will be `established`.
 
