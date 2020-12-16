@@ -36,7 +36,7 @@ The work or school account needs to belong to one of the following roles:
 -->
 
 ``` http
-GET identity/b2xUserFlows/{b2xUserFlowId}/apiConnectorConfiguration
+GET identity/b2xUserFlows/{id}/apiConnectorConfiguration
 ```
 
 ## Request headers
