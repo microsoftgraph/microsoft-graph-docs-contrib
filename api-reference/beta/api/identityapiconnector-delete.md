@@ -63,7 +63,7 @@ The following is an example of the request.
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/apiConnectors/{identityApiConnectorId}
+DELETE https://graph.microsoft.com/beta/identity/apiConnectors/{id}
 ```
 
 ### Response
