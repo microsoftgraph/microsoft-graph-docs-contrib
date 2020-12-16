@@ -257,6 +257,11 @@ The following is an example of the response.
 
 **Note:** The `apiConnectorConfiguration` property shows a '{}' value. To see full value, use [this](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md) API.
 
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Partner
+Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2xUserFlows/$entity",
     "id": "B2X_1_UserFlowWithAPIConnector",
@@ -264,3 +269,4 @@ The following is an example of the response.
     "userFlowTypeVersion": 1,
     "apiConnectorConfiguration": {}
 }
+```
