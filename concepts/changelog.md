@@ -13,14 +13,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## December 2020
 
-### Change notifications
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added [todoTask](/graph/api/resources/todoTask?view=graph-rest-beta&preserve-view=true) to the resources supported for [change notifications](/graph/webhooks).|
-
-### Cloud communications
-
 ### Identity and access | Identity and sign-in
 
 | **Change type** | **Version**   | **Description**                          |
@@ -29,9 +21,15 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the [apiAuthenticationConfigurationBase](/graph/api/resources/apiauthenticationconfigurationbase?view=graph-rest-beta&preserve-view=true) entity for authentication configuration used to call web APIs.|
 | Addition | beta | Added the [basicAuthentication](/graph/api/resources/basicauthentication?view=graph-rest-beta&preserve-view=true) entity that extends apiAuthenticationConfigurationBase for HTTP Basic authentication of web API calls.|
 | Addition | beta | Added the [userFlowApiConnectorConfiguration](/graph/api/resources/userflowapiconnectorconfiguration?view=graph-rest-beta&preserve-view=true) entity for managing API connectors used by a user flow in an Azure Active Directory or Azure Active Directory B2C tenant.|
-| Addition | beta | Added **apiConnectorConfiguration** property to the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) resource.|
-| Addition | beta | Added **apiConnectorConfiguration** property to the [b2xIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) resource.|
+| Addition | beta | Added **apiConnectorConfiguration** property to the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) resource.|
 
+### Change notifications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added [todoTask](/graph/api/resources/todoTask?view=graph-rest-beta&preserve-view=true) to the resources supported for [change notifications](/graph/webhooks).|
+
+### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|v1.0|Added the [presence](/graph/api/resources/presence?view=graph-rest-1.0&preserve-view=true) resource type|
