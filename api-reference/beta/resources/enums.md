@@ -11,7 +11,15 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-### educationAddedStudentAction values 
+### authenticationMethodKeyStrength
+
+|Member|
+|:---|
+|normal|
+|weak|
+|unknown|
+
+### educationAddedStudentAction values
 
 |Member|
 |:---|

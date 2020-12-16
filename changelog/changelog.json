@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "78f63c95-8c9e-4438-ad45-63f6174a4e33",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsHelloForBusinessAuthenticationMethod, microsoftAuthenticatorAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [windowsHelloForBusinessAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/windowshelloforbusinessauthenticationmethod?view=graph-rest-beta) and [microsoftAuthenticatorAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethod?view=graph-rest-beta) resources and associated methods.",
+          "Target": "authenticationMethod,passwordAuthenticationMethod,phoneAuthenticationMethod"
+        },
+        {
+          "Id": "b3b25845-1cec-49be-b49f-5b51123e43aa",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationMethod,passwordAuthenticationMethod,phoneAuthenticationMethod,emailAuthenticationMethod,passwordlessMicrosoftAuthenticatorAuthenticationMethod",
+          "ChangeType": "Change",
+          "Description": "Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
+          "Target": "authenticationMethod,passwordAuthenticationMethod,phoneAuthenticationMethod,emailAuthenticationMethod,passwordlessMicrosoftAuthenticatorAuthenticationMethod"
+        },
+      ],
+      "Id": "151b955d-fe34-496d-a76c-7cf7865da63d",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-16T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "6a6c7aa0-4b67-4d07-9ebf-c2bc1bcef553",
           "ApiChange": "Resource",
           "ChangedApiName": "ediscoveryCase,reviewSet,reviewSetQuery",

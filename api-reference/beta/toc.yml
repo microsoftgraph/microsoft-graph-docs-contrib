@@ -10207,6 +10207,15 @@ items:
               href: api/fido2authenticationmethod-get.md
             - name: Delete
               href: api/fido2authenticationmethod-delete.md
+          - name: Microsoft Authenticator 
+            href: resources/microsoftauthenticatorauthenticationmethod.md
+            items:
+            - name: List
+              href: api/microsoftauthenticatorauthenticationmethod-list.md
+            - name: Get
+              href: api/microsoftauthenticatorauthenticationmethod-get.md
+            - name: Delete
+              href: api/microsoftauthenticatorauthenticationmethod-delete.md
           - name: Microsoft Authenticator Passwordless Phone Sign-In
             href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
             items:
@@ -10216,6 +10225,15 @@ items:
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
             - name: Delete
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
+          - name: Windows Hello for Business
+            href: resources/windowshelloforbusinessauthenticationmethod.md
+            items:
+            - name: List
+              href: api/windowshelloforbusinessauthenticationmethod-list.md
+            - name: Get
+              href: api/windowshelloforbusinessauthenticationmethod-get.md
+            - name: Delete
+              href: api/windowshelloforbusinessauthenticationmethod-delete.md
           - name: Phone
             href: resources/phoneauthenticationmethod.md
             items:
