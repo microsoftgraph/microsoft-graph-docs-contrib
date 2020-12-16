@@ -15,6 +15,10 @@ Namespace: microsoft.graph
 
 Defines which APIs are called at specific points in the user flow. Each property of this object corresponds to a specific "step" in the user flow that can be configured to call an API connector.
 
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+
 ## Relationships
 
 | Relationship            | Type                                            | Description                                                                                                                                             |
@@ -25,20 +29,14 @@ Defines which APIs are called at specific points in the user flow. Each property
 ## JSON representation
 
 The following is a JSON representation of the resource.
-
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.userFlowApiConnectorConfiguration"
 }
 -->
 
-```json
+``` json
 {
-  "postFederationSignup": {
-    "@odata.type": "https://graph.microsoft.com/beta/apiconnector/{id}"
-  },
-  "postAttributeCollection": {
-    "@odata.type": "https://graph.microsoft.com/beta/apiconnector/{id}"
-  }
+  "@odata.type": "#microsoft.graph.userFlowApiConnectorConfiguration"
 }
 ```

@@ -10756,7 +10756,7 @@ items:
             - name: List
               href: api/identityapiconnector-list.md
             - name: Create
-              href: api/identityapiconnector-post.md
+              href: api/identityapiconnector-create.md
             - name: Get
               href: api/identityapiconnector-get.md
             - name: Update
