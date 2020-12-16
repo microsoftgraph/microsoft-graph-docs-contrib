@@ -718,7 +718,7 @@ PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 3. Click the **+** button, select **New Service Numbers**, and go to the **Add new service numbers** page.
 4. Select **Country/Region**, **State/Region**, **City**, input **Quantity**, and click **add** to search. click **acquire numbers**. The newly acquired number will be shown on  the **phone numbers** tab.
 #### Step 4: Assign PSTN number to application instance
-The tenant admin should call the following cmdlets on the tenant remote PowerShell to assign PSTN number to  application instance. For more information, see [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) and [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
+With tenant admin credentials call the following cmdlets on the tenant remote PowerShell to assign PSTN number to  application instance. For more information, see [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) and [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
 ```
 PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
 PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
