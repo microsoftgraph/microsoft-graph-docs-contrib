@@ -10724,7 +10724,7 @@ items:
                href: api/b2xidentityuserflow-post-userattributeassignments.md
              - name: Get API connectors configuration for user flow
                href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
-             - name: Configure an API connector in a user flow
+             - name: Configure an API connector
                href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md
           - name: User flow attributes
             items:
