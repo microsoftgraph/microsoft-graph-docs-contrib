@@ -36,6 +36,10 @@ An API connector used in your Azure AD External Identities self-service sign-up 
 |targetUrl|String| The URL of the API endpoint to call. |
 |authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|The object which describes the authentication configuration details for calling the API. Only [Basic authentication](basicauthentication.md) is supported at this time.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following is a JSON representation of the resource.
@@ -50,11 +54,12 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-    "id": "String",
-    "displayName": "String",
-    "targetUrl": "String",
-    "authenticationConfiguration": {
-        "@odata.type": "#microsoft.graph.apiAuthenticationConfigurationBase"
-    }
+  "@odata.type": "#microsoft.graph.identityApiConnector",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "targetUrl": "String",
+  "authenticationConfiguration": {
+    "@odata.type": "microsoft.graph.apiAuthenticationConfigurationBase"
+  }
 }
 ```
