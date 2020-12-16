@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and an [identit
 
 ### Request
 
-See an example of the request below.
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -90,6 +90,8 @@ Content-Type: application/json
 ```
 
 ### Response
+
+The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 
