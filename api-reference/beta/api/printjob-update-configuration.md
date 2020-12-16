@@ -41,10 +41,6 @@ PATCH /print/printers/{id}/jobs/{id}/configuration
 ## Request body
 In the request body, supply the values of the relevant [printJobConfiguration](../resources/printjobconfiguration.md) fields. Existing properties that are not included in the request body will maintain their previous values.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|configuration|[printJobConfiguration](../resources/printjobconfiguration.md)|Updated configuration of print job.|
-
 ## Response
 If successful, this method returns a `204 No Content` response code.
 
