@@ -44,6 +44,8 @@ items:
         href: /graph/webhooks-lifecycle
       - name: Notifications with resource data
         href: /graph/webhooks-with-resource-data?context=graph/api/1.0
+      - name: Get change notifications for chat and channel messages
+        href: /graph/teams-changenotifications-chatmessage?context=graph/api/1.0
     - name: Change tracking
       displayname: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
       items:
