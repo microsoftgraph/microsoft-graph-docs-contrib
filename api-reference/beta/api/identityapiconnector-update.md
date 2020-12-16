@@ -56,7 +56,7 @@ The following table shows the properties of the [identityApiConnector](../resour
 |:---|:---|:---|
 |displayName|String| The name of the API connector. |
 |targetUrl|String| The URL of the API endpoint to call. |
-|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|The object which describes the authentication configuration details for calling the API. Only [Basic authentication](basicauthentication.md) is supported at this time. All properties of the apiAuthenticationConfigurationBase must be set at the same time, like both username and password.|
+|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|The object which describes the authentication configuration details for calling the API. Only [Basic authentication](../resources/basicauthentication.md) is supported at this time. All properties of the apiAuthenticationConfigurationBase must be set at the same time, like both username and password.|
 
 ## Response
 

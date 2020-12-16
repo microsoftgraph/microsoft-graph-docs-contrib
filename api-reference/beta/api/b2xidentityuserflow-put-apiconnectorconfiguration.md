@@ -1,7 +1,7 @@
 ---
 title: "Configure an API connector in a user flow"
 description: "Link or un-link an API connector to a specific step in a user flow by updating the apiConnectorConfiguration property."
-author: "edgomezc"
+author: "nickgmicrosoft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType

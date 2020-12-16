@@ -1,7 +1,7 @@
 ---
 title: "Create userFlowApiConnectorConfiguration"
 description: "Create a new userFlowApiConnectorConfiguration object in a b2xIdentityUserFlow."
-author: "edgomezc"
+author: "nickgmicrosoft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType

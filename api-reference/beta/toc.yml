@@ -10756,9 +10756,11 @@ items:
             - name: List
               href: api/identityapiconnector-list.md
             - name: Create
-              href: api/identityapiconnector-post-userflows.md
+              href: api/identityapiconnector-post.md
             - name: Get
               href: api/identityapiconnector-get.md
+            - name: Update
+              href: api/identityapiconnector-update.md
             - name: Delete
               href: api/identityapiconnector-delete.md
       - name: Governance

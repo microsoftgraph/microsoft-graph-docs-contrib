@@ -1,9 +1,9 @@
 ---
 title: "Create identityApiConnector"
 description: "Create a new identityApiConnector object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "nickgmicrosoft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -56,7 +56,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |displayName|String| The name of the API connector. |
 |targetUrl|String| The URL of the API endpoint to call. |
-|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|The object which describes the authentication configuration details for calling the API. Only [Basic authentication](basicauthentication.md) is supported at the moment.|
+|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|The object which describes the authentication configuration details for calling the API. Only [Basic authentication](../resources/basicauthentication.md) is supported at the moment.|
 
 ## Response
 
