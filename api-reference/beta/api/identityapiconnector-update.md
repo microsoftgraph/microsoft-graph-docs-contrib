@@ -36,6 +36,7 @@ The work or school account needs to belong to one of the following roles:
   "blockType": "ignored"
 }
 -->
+
 ``` http
 PATCH /identity/apiConnectors/{identityApiConnectorId}
 ```
@@ -65,11 +66,15 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "update_identityapiconnector"
 }
 -->
+
 ``` http
 PATCH https://graph.microsoft.com/beta/identity/apiConnectors/{identityApiConnectorId}
 Content-Type: application/json
@@ -86,6 +91,8 @@ Content-Type: application/json
 ```
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

@@ -66,9 +66,11 @@ If successful, this method returns a `201 Created` response code and an [identit
 
 ### Request
 
+See an example of the request below.
+
 <!-- {
   "blockType": "request",
-  "name": "create_identityapiconnector_from_"
+  "name": "create_identityapiconnector"
 }
 -->
 

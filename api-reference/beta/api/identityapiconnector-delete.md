@@ -53,16 +53,22 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "delete_identityapiconnector"
 }
 -->
+
 ``` http
 DELETE https://graph.microsoft.com/beta/identity/apiConnectors/{identityApiConnectorId}
 ```
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

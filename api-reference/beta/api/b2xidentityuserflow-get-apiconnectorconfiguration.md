@@ -39,6 +39,10 @@ The work or school account needs to belong to one of the following roles:
 GET identity/b2xUserFlows/{b2xUserFlowId}/apiConnectorConfiguration
 ```
 
+## Optional query parameters
+
+This method supports some of the OData query parameters to help customize the response. For example, to retrieve the API connector for the `postFederationSignup` and `postAttributeCollection` steps, add `$expand=postFederationSignup,postAttributeCollection`. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 
 |Name|Description|

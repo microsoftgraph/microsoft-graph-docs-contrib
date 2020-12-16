@@ -63,7 +63,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_identityApiConnectors"
+  "name": "list_identityApiConnectors"
 }
 -->
 
