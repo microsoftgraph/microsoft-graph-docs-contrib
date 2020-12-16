@@ -75,6 +75,8 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_testuserflow/ap
 
 ### Response
 
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
