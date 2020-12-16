@@ -45,7 +45,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version** | **Description** |
 |:---|:---|:---|
 |Addition|beta|Added the `failed` member to the **cloudPcStatus** enumeration.|
-|Deletion|beta|Removed the `upgradeFailed`,`provisionFailed`, `deprovisionFailed`, `reprovisionFailed` member from the **cloudPcStatus** enumeration.|
+|Deletion|beta|Removed the `upgradeFailed`,`provisionFailed`, `deprovisionFailed`, `reprovisionFailed` members from the **cloudPcStatus** enumeration.|
 ### Education
 
 | **Change type** | **Version**   | **Description**                          |
