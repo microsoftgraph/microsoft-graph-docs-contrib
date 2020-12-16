@@ -13,7 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines which APIs are called at specific points in the user flow. Each property of this object corresponds to a specific "step" in the user flow that can be configured to call an API connector.
+Defines which APIs are called at specific points in the user flow.  Each relationship of this object corresponds to a specific step in the user flow that can be configured to call an API connector.
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
 
 ## Properties
 |Property|Type|Description|
