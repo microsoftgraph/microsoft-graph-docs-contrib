@@ -105,7 +105,7 @@ These properties are temporary and either a) define behavior the service should 
 The URL will only be available for a short period of time (1 hour) before it is invalidated.
 Removing file permissions for a user may not immediately invalidate the URL.
 
->**Note:** Using the `@microsoft.graph.sourceUrl` property for file uploading is [not supported](https://docs.microsoft.com/da-dk/onedrive/developer/rest-api/api/driveitem_upload_url?view=odsp-graph-online#remarks) in OneDrive for Business, SharePoint Online and SharePoint Server 2016.
+>**Note:** Using the `@microsoft.graph.sourceUrl` property for file uploading is [not supported](https://docs.microsoft.com/onedrive/developer/rest-api/api/driveitem_upload_url?view=odsp-graph-online#remarks&preserve-view=true) in OneDrive for Business, SharePoint Online and SharePoint Server 2016.
 
 ## JSON representation
 
