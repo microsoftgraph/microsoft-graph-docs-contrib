@@ -43,7 +43,7 @@ GET /identity/b2cUserFlows/{id}/languages
 
 ## Optional query parameters
 
-This method supports the `$filter` for filtering the results to show only the enabled languages. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` query parameter to show only the enabled languages. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
