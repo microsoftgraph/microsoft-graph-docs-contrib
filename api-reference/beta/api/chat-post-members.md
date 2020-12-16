@@ -1,5 +1,5 @@
 ---
-title: "Add conversationMember"
+title: "Add member to a chat"
 description: "Add a conversationMember to a chat."
 author: "bhartono"
 doc_type: "apiPageType"

@@ -33,7 +33,7 @@ See also [aadUserConversationMember](aaduserconversationmember.md).
 |[Remove channel member](../api/channel-delete-members.md) | None | Delete a member from a channel. Only supported for `channelType` of `private`.|
 |[List chat members](../api/chat-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all members in a chat.|
 |[Get chat member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a member in a chat.|
-|[Add chat member](../api/chat-post-members.md) | No Content and a Location header | Add a member to a chat.| 
+|[Add chat member](../api/chat-post-members.md) | Location header | Add a member to a chat.| 
 
 ## Properties
 

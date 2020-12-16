@@ -84,8 +84,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the [aadUserConversationMemberResult](/graph/api/resources/aaduserconversationmemberresult?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added the [publicInnerError](/graph/api/resources/publicinnererror?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added the [publicErrorDetail](/graph/api/resources/publicerrordetail?view=graph-rest-beta&preserve-view=true) resource.|
-| Addition | beta | Added the **tenantId** property to [aadUserConversationMember](/graph/api/resources/aadUserConversationMember?view=graph-rest-beta&preserve-view=true) resource|
-| Addition | beta | Added the **visibleHistoryStartDateTime** property to [conversationMember](/graph/api/resources/conversationMember?view=graph-rest-beta&preserve-view=true) resource|
+| Addition | beta | Added the **tenantId** property to [aadUserConversationMember](/graph/api/resources/aadUserConversationMember?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the **visibleHistoryStartDateTime** property to [conversationMember](/graph/api/resources/conversationMember?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added the following methods to the [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) resource: [Add chat member](/graph/api/chat-post-members?view=graph-rest-beta&preserve-view=true), [Delete chat member](/graph/api/chat-delete-members?view=graph-rest-beta&preserve-view=true).|
 
 ## November 2020
