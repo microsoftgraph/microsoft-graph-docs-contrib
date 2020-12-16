@@ -35,7 +35,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 }
 -->
 ``` http
-GET /user/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
+GET /user/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
 ```
 
 ## Optional query parameters
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [windowsHelloF
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
+GET https://graph.microsoft.com/beta/user/annie@contoso.com/authentication/windowsHelloForBusinessMethods/_jpuR-TGZtk6aQCLF3BQjA2
 ```
 
 ### Response
