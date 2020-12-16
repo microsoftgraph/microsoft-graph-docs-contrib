@@ -26,11 +26,11 @@ Settings related to a live event.
 
 | Property                   | Type                     | Description                                                                     |
 | -------------------------- | ------------------------ | ------------------------------------------------------------------------------- |
-| allowedAudience            | broadcastMeetingAudience | Who can join the live event. Possible values are listed in the following table. |
-| isRecordingEnabled         | Boolean                  | If recording is enabled for this live event. Default value is `false`.          |
-| isAttendeeReportEnabled    | Boolean                  | If attendee report is enabled for this live event. Default value is `false`.    |
-| isQuestionAndAnswerEnabled | Boolean                  | If Q&A is enabled for this live event. Default value is `false`.                |
-| isVideoOnDemandEnabled     | Boolean                  | If video on demand is enabled for this live event. Default value is `false`.    |
+| allowedAudience            | broadcastMeetingAudience | Specifies sho can join the live event. Possible values are listed in the following table. |
+| isRecordingEnabled         | Boolean                  | Indicates whether recording is enabled for this live event. Default value is `false`.          |
+| isAttendeeReportEnabled    | Boolean                  | Indicates whether attendee report is enabled for this live event. Default value is `false`.    |
+| isQuestionAndAnswerEnabled | Boolean                  | Indicates whether Q&A is enabled for this live event. Default value is `false`.                |
+| isVideoOnDemandEnabled     | Boolean                  | Indicates whether video on demand is enabled for this live event. Default value is `false`.    |
 
 ### broadcastMeetingAudience values
 
