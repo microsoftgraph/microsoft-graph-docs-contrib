@@ -218,7 +218,7 @@ Content-type: application/json
   ]
 }-->
 
-### Example 3: Create a user flow with the default values and a link to API connector
+### Example 3: Create a user flow with the default values and configuration for API connectors
 
 #### Request
 
@@ -262,7 +262,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.b2xIdentityUserFlow"
 } -->
 
-**Note:** The `apiConnectorConfiguration` property shows a '{}' value. To see full value with the navigation properties, use [this](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md) API.
+**Note:** The `apiConnectorConfiguration` property always returns a '{}' value. To see full value with the navigation properties, use [this](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md) API.
 
 ```http
 HTTP/1.1 201 Created
