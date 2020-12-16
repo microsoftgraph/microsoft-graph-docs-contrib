@@ -36,7 +36,7 @@ GET /chats
 
 ## Optional query parameters
 
-This method supports the $expand (only for members property) and $filter [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$expand` (only for members property) and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -137,9 +137,9 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 Here is an example of the response. 
 
 > [!NOTE]
-> The membership ID returned by server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
+> The membership IDs returned by the server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
 >
-> The membership results could map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are from the current tenant only.
+> The membership results can map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are from the current tenant only.
 
 >**Note:** The response object shown here might be shortened for readability.
 
