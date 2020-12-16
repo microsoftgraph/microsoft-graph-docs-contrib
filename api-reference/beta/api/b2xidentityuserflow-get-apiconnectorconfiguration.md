@@ -57,7 +57,8 @@ If successful, this method returns a `200 OK` response code and an [apiConnector
 
 ### Request
 
-# [HTTP](#tab/http)
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_b2xuserflows-apiconnectorconfiguration"
@@ -73,7 +74,7 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_testuserflow/ap
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.identityUserFlowAttributeAssignment"
+  "@odata.type": "microsoft.graph.userFlowApiConnectorConfiguration"
 }
 -->
 
