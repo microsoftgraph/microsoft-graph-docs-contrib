@@ -7,7 +7,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "bot",
           "ChangeType": "Addition",
-          "Description": "Added the **bot** relationship to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource",
+          "Description": "Added the **bot** relationship to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource.",
           "Target": "teamsAppDefinition"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkBot",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-beta) resource type",
+          "Description": "Added the [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-beta) resource type.",
           "Target": "teamworkBot"
         }
       ],
