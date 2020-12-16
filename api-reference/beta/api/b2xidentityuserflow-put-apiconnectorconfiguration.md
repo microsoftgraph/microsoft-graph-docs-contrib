@@ -56,9 +56,11 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example for postFederationSignup
+### Example 1: Post Federation Sign Up
 
 #### Request
+
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -79,6 +81,8 @@ Content-Type: application/json
 
 #### Response 
 
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
 }
@@ -88,11 +92,12 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example for postAttributeCollection
+### Example 2: Post Attribute Collection
 
 #### Request 
 
-# [HTTP](#tab/http)
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "put_b2xuserflows-apiconnectorconfiguration_postAttributeCollection"
@@ -100,7 +105,7 @@ HTTP/1.1 204 No Content
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_testuserflow/apiConnectorConfiguration/postAttributeCollection/$ref
+PUT https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_testuserflow/apiConnectorConfiguration/postAttributeCollection/$ref
 Content-Type: application/json
 
 {
@@ -109,6 +114,8 @@ Content-Type: application/json
 ```
 
 #### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
