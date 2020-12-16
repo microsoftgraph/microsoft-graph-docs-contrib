@@ -410,7 +410,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Forward a Call to a PSTN number
+### Example 3: Forward a call to a PSTN number
 
 This call needs an application instance with a PSTN number assigned.
 
