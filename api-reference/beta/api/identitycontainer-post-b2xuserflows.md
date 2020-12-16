@@ -224,7 +224,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_b2xuserflow_from_b2xuserflows_apiconnectors"
@@ -255,7 +254,15 @@ Content-length: 154
 
 The following is an example of the response.
 
-**Note:** The `apiConnectorConfiguration` property shows a '{}' value. To see full value, use [this](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md) API.
+**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.b2xIdentityUserFlow"
+} -->
+
+**Note:** The `apiConnectorConfiguration` property shows a '{}' value. To see full value with the navigation properties, use [this](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md) API.
 
 ```http
 HTTP/1.1 201 Created
