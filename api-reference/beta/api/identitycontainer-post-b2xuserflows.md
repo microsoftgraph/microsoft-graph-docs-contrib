@@ -218,4 +218,49 @@ Content-type: application/json
   ]
 }-->
 
+### Example 3: Create a user flow with the default values and a link to API connector
 
+#### Request
+
+The following is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_b2xuserflow_from_b2xuserflows_apiconnectors"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/identity/b2xUserFlows
+Content-type: application/json
+Content-length: 154
+
+{
+    "id": "UserFlowWithAPIConnector",
+    "userFlowType": "signUpOrSignIn",
+    "userFlowTypeVersion": 1,
+    "apiConnectorConfiguration":{
+        "postFederationSignup":{
+            "@odata.id": "https://graph.microsoft.com/beta/apiConnectors/{apiConnectorId}"
+        },
+        "postAttributeCollection":{
+            "@odata.id": "https://graph.microsoft.com/beta/apiConnectors/{apiConnectorId}"
+        }
+    }
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+**Note:** The `apiConnectorConfiguration` property shows a '{}' value. To see full value, use [this](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md) API.
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2xUserFlows/$entity",
+    "id": "B2X_1_UserFlowWithAPIConnector",
+    "userFlowType": "signUpOrSignIn",
+    "userFlowTypeVersion": 1,
+    "apiConnectorConfiguration": {}
+}

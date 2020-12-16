@@ -105,7 +105,7 @@ POST https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_testuserflow/a
 Content-Type: application/json
 
 {
-    "@odata.id": "https://graph.microsoft.com/beta/apiConnectors/{id}"   
+    "@odata.id": "https://graph.microsoft.com/beta/apiConnectors/{apiConnectorId}"   
 }
 ```
 
