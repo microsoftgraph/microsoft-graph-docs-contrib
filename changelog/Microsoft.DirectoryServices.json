@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "b2cIdentityUserFlow",
           "ChangeType": "Addition",
-          "Description": "Added methods for listing and creating languages to the [b2cIdentityUserFlow](https://docs.microsoft.com/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) resource.",
+          "Description": "Added properties for **isLanguageCustomizationEnabled** and **defaultLanguageTag** and methods for listing and creating languages to the [b2cIdentityUserFlow](https://docs.microsoft.com/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) resource.",
           "Target": "b2cIdentityUserFlow"
         },
         {

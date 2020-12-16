@@ -59,7 +59,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true) resource type. |
 | Addition | beta | Added the [userFlowLanguageConfiguration](/graph/api/resources/userflowlanguageconfiguration?view=graph-rest-beta&preserve-view=true) entity for managing the language defaults and customizations within a user flow in an Azure Active Directory or Azure Active Directory B2C tenant. |
 | Addition | beta | Added the [userFlowLanguagePage](/graph/api/resources/userflowlanguagepage?view=graph-rest-beta&preserve-view=true) entity that defines the language defaults and customizations within a user flow in an Azure Active Directory or Azure Active Directory B2C tenant. |
-| Addition | beta | Added methods for listing and creating languages to the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added properties for **isLanguageCustomizationEnabled** and **defaultLanguageTag** and methods for listing and creating languages to the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added methods for listing langauges to the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added [email authentication method configuration](/graph/api/resources/emailauthenticationmethodconfiguration?view=graph-rest-beta) to the [authentication methods policy](/graph/api/resources/authenticationmethodspolicies-overview) API.|
 
