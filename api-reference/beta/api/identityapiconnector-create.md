@@ -56,7 +56,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |displayName|String| The name of the API connector. |
 |targetUrl|String| The URL of the API endpoint to call. |
-|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|The object which describes the authentication configuration details for calling the API. Only [Basic authentication](../resources/basicauthentication.md) is supported at the moment.|
+|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|The object which describes the authentication configuration details for calling the API. Only [Basic authentication](../resources/basicauthentication.md) is supported.|
 
 ## Response
 
