@@ -10216,7 +10216,7 @@ items:
               href: api/microsoftauthenticatorauthenticationmethod-get.md
             - name: Delete
               href: api/microsoftauthenticatorauthenticationmethod-delete.md
-          - name: Microsoft Authenticator Passwordless Phone Sign-In
+          - name: Microsoft Authenticator Passwordless Phone Sign-In (deprecated)
             href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
             items:
             - name: List
