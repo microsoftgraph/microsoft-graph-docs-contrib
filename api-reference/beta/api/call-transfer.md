@@ -418,7 +418,7 @@ Content-Type: application/json
 
 ### Example 3: Call transfer to PSTN number
 
-This call requires an application instance with a PSTN number assigned.
+This call requires application instance with a PSTN number assigned.
 
 #### Step 1: Create application instance
 With tenant admin credentials call the following cmdlets on the tenant remote PowerShell to create the application instance. For more information, see [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) and [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
@@ -427,10 +427,10 @@ PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <D
 PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 ```
 #### Step 2: Assign Microsoft 365 licenses
-1. Use tenant admin credentials to sign-in to https://admin.microsoft.com/ and go to the **Users -> Active users** tab.
+1. Use tenant admin credentials sign-in to https://admin.microsoft.com/ and go to the **Users -> Active users** tab.
 2. Select the application instance, assign **Microsoft 365 Domestic and International Calling Plan** and **Microsoft 365 Phone System - Virtual User** licenses, and click **Save changes**. If the required licenses are not available in the tenant, they can be acquired in the **Billing -> Purchase services** tab.
 #### Step 3: Acquire PSTN number
-1. Use tenant admin credentials to sign-in to https://admin.teams.microsoft.com/ and click the **Legacy portal** tab on the left panel.
+1. Use tenant admin credential to sign-in to https://admin.teams.microsoft.com/ and click the **Legacy portal** tab on the left panel.
 2. In the new page, go to the **voice -> phone numbers** tab.
 3. Click the **+** button, select **New Service Numbers**, and go to the **Add new service numbers** page.
 4. Select **Country/Region**, **State/Region**, **City**, input **Quantity**, and click **add** to search. click **acquire numbers**. The newly acquired number will be shown on  the **phone numbers** tab.
