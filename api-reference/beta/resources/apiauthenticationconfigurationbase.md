@@ -19,6 +19,15 @@ Resources that derive from **baseItem** include:
 
 * [basicAuthentication](basicauthentication.md)
 
+## Properties
+
+|Property|Type|Description|
+|:---|:---|:---|
+
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following is a JSON representation of the resource.
