@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Update the [configuration](../resources/printjobconfiguration.md) property of a [print job](../resources/printjob.md).
 
-Update print job configuration API requires the print job to be in a held state by registering a task trigger for the printer. For details about how to register a task trigger, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+Updating a print job configuration requires the print job to be in a held state by registering a task trigger for the printer. For details about how to register a task trigger, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ In the request body, supply the values of the relevant [printJobConfiguration](.
 |configuration|[printJobConfiguration](../resources/printjobconfiguration.md)|Updated configuration of print job.|
 
 ## Response
-If successful, this method returns a `204 NoContent` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 The following example shows how to call this API.
