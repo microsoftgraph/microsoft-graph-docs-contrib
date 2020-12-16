@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|:--|
 | Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. | Not supported. |
-| Application                            | UserAuthenticationMethod.ReadWrite.All | UserAuthenticationMethod.ReadWrite.All |
+| Application                            | Not applicable. | UserAuthenticationMethod.ReadWrite.All |
 
 For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
