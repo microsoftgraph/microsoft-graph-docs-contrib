@@ -4,17 +4,17 @@
             "ChangeList": [{
                 "Id": "97a9977f-3b8e-11eb-822d-0179b911e3f8",
                 "ApiChange": "Member",
-                "ChangedApiName": "cloudPcStatus",
+                "ChangedApiName": "failed",
                 "ChangeType": "Addition",
                 "Description": "Added the `failed` member to the **cloudPcStatus** enumeration.",
-                "Target": "cloudPc"
+                "Target": "cloudPcStatus"
             }, {
                 "Id": "97a9977f-3b8e-11eb-822d-0179b911e3f8",
                 "ApiChange": "Member",
-                "ChangedApiName": "cloudPcStatus",
+                "ChangedApiName": "upgradeFailed, provisionFailed, deprovisionFailed, reprovisionFailed",
                 "ChangeType": "Deletion",
                 "Description": "Removed the `upgradeFailed`, `provisionFailed`, `deprovisionFailed`, `reprovisionFailed` members from the **cloudPcStatus** enumeration.",
-                "Target": "cloudPc"
+                "Target": "cloudPcStatus"
             }],
             "Id": "97a9977f-3b8e-11eb-822d-0179b911e3f8",
             "Cloud": "prd",
