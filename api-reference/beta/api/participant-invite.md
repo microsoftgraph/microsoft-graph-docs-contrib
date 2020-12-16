@@ -63,7 +63,7 @@ The following examples show how to call this API.
 
 ### Example 1: Invite one participant to an existing group call
 
-##### Request
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -108,7 +108,7 @@ Content-Length: 464
 ---
 
 
-##### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -147,7 +147,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - operation completed
+#### Notification - operation completed
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -192,7 +192,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - roster updated with participant added
+#### Notification - roster updated with participant added
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -251,7 +251,7 @@ Content-Type: application/json
 
 > **Note**: The existing group call must have a valid [chatInfo](../resources/chatInfo.md). Inviting up to 5 participants is supported.
 
-##### Request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -308,7 +308,7 @@ Content-Type: application/json
 
 ---
 
-##### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -361,7 +361,7 @@ Content-Type: application/json
 }
 
 ```
-##### Notification - operation completed
+#### Notification - operation completed
 ```http
 POST https://bot.contoso.com/api/calls
 Content-Type: application/json
@@ -415,7 +415,7 @@ Content-Type: application/json
 }
 
 ```
-##### Notification - roster updated with participants added
+#### Notification - roster updated with participants added
 ```http
 POST https://bot.contoso.com/api/calls
 Content-Type: application/json
@@ -511,7 +511,7 @@ will be read and the rest of the participants will be ignored.
 > For  details about using `replacesCallId` to replace an existing peer-to-peer call, 
 > see [invitationParticipantInfo](../resources/invitationparticipantinfo.md).
 
-##### Request
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -556,7 +556,7 @@ Content-Type: application/json
 ---
 
 
-##### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -595,7 +595,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - operation completed
+#### Notification - operation completed
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -641,7 +641,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - roster updated with participant added
+#### Notification - roster updated with participant added
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -725,9 +725,8 @@ PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 ```
 > **Note:** If a tenant has Australian PSTN numbers assigned to any application instances, this call might not work. If a tenant is newly created, it might take several days for this feature to be available.
 
-##### Request
+#### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "participant-invite"
@@ -753,22 +752,8 @@ Content-Length: 464
   "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -810,7 +795,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - operation completed
+#### Notification - operation completed
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -853,7 +838,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - roster updated with participant added
+#### Notification - roster updated with participant added
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -907,7 +892,7 @@ Content-Type: application/json
 
 ```
 
->**Note:** With a "completed" status, you can expect to receive notifications on how your original peer-to-peer call has been terminated and deleted.
+>**Note:** With a `completed` status, you can expect to receive notifications about how your original peer-to-peer call has been terminated and deleted.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
