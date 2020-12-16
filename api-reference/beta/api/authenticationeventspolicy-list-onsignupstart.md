@@ -1,5 +1,5 @@
 ---
-title: "List onSignUpStart"
+title: "List onSignUpStart listeners"
 description: "Get the collection of authenticationListener resources supported by the onSignupStart event."
 author: "jkdouglas"
 localization_priority: Normal
@@ -7,11 +7,15 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# List onSignUpStart
+# List onSignUpStart listeners
 
 Namespace: microsoft.graph
 
-Get the collection of authenticationListener resources supported by the onSignupStart event.
+Get the collection of authenticationListener resources supported by the onSignupStart event. The onSignUpStart event supports the following listener types:
+
+* [invokeUserFlowListener](../resources/invokeuserflowlistener.md)
+
+When an [invokeUserFlowListener](../resources/invokeuserflowlistener.md) is assigned to an onSignUpStart event, an application is associated with a user flow, therefore enabling a [self-service sign up](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) process on it. Once the authentication event for invoking a user flow is created, users who go to that application will be able to initiate a sign-up flow that provisions a guest account.
 
 ## Permissions
 

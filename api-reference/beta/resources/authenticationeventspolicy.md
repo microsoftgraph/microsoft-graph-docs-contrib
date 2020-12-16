@@ -13,13 +13,11 @@ Namespace: microsoft.graph
 
 A resource that specifies the events in the authentication experience, with each event further defining the available types of listeners that can be created for the event. Events are inherent to the authentication experience; this resource is not user configurable.
 
-By assigning [invokeUserFlowListener](../resources/invokeuserflowlistener.md) to an onSignUpStart event, you are selecting an application to be associated with a user flow, therefore enabling a [self-service sign up](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) process on it. Once the authentication event for invoking a user flow is created, users who go to that application will be able to initiate a sign-up flow that provisions a guest account.
-
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List onSignUpStart](../api/authenticationeventspolicy-list-onsignupstart.md)|[authenticationListener](../resources/authenticationlistener.md) collection|Get the collection of authenticationListener resources supported by the onSignupStart event.|
+|[List onSignUpStart listeners](../api/authenticationeventspolicy-list-onsignupstart.md)|[authenticationListener](../resources/authenticationlistener.md) collection|Get the collection of authenticationListener resources supported by the onSignupStart event.|
 |[Create authenticationListener](../api/authenticationeventspolicy-post-onsignupstart.md)|[authenticationListener](../resources/authenticationlistener.md)|Create a new authenticationListener object for the onSignupStart event.|
 
 ## Properties
