@@ -19,11 +19,16 @@ Read the properties of an [identityApiConnector](../resources/identityapiconnect
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | APIConnectors.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.  |
+| Application                            | APIConnectors.ReadWrite.All |
+
+The work or school account needs to belong to one of the following roles:
+
+* Global administrator
+* External Identity User Flow administrator
 
 ## HTTP request
 
@@ -77,12 +82,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "id": "7fd6431c-431c-7fd6-1c43-d67f1c43d67f",
-  "displayName": "String",
-  "targetUrl": "String",
-  "authenticationConfiguration": {
-    "@odata.type": "microsoft.graph.apiAuthenticationConfigurationBase"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/apiConnectors/$entity",
+    "id":"guid",
+    "displayName": "Test API",
+    "targetUrl": "https://someapi.com/api",
+    "authenticationConfiguration": {
+        "@odata.type": "#microsoft.graph.basicAuthentication",
+        "username": "<USERNAME>",
+        "password": "******"
+    }
 }
 ```
 

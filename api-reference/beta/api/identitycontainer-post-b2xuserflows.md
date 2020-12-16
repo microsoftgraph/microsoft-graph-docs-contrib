@@ -55,6 +55,7 @@ In the request body, provide a JSON representation of a [b2xIdentityUserFlow](..
 |userFlowType|String|Required. The type of user flow you are creating. This value will always be `signUpOrSignIn`.|
 |userFlowTypeVersion|Float|Required. The version of the user flow. This value will always be 1.|
 |identityProviders|[identityProvider](../resources/identityprovider.md) collection|Optional. The identity providers you want to include in the user flow.|
+|apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Optional. Configuration for enabling an API connector for use as part of the user flow.|
 
 ## Response
 

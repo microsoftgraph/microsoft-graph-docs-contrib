@@ -1,0 +1,121 @@
+---
+title: "Configure an API connector in a user flow"
+description: "Link or un-link an API connector to a specific step in a user flow by updating the apiConnectorConfiguration property."
+author: "edgomezc"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
+---
+
+# Create userFlowApiConnectorConfiguration
+
+Namespace: microsoft.graph
+
+Update the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property in a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) to enable an API connector in a user flow. Each relationship of the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) corresponds to a specific "step" in the user flow that can be configured to call an API connector. You configure an API connector for a particular step one at a time as shown below.
+
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|IdentityUserFlow.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|IdentityUserFlow.ReadWrite.All|
+
+The work or school account needs to belong to one of the following roles:
+
+* Global administrator
+* External Identity User Flow administrator
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
+``` http
+PUT /identity/b2xUserFlows/{b2xUserFlowId}/apiConnectorConfiguration/{step}/$ref
+```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
+## Request body
+
+In the request body, provide a JSON representation of the `id` of the [identityApiConnector](../resources/identityapiconnector.md) you want to use the particular step.
+
+## Response
+
+If successful, this method returns a `204 No Content` response code.
+
+## Examples
+
+### Example for postFederationSignup
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "put_b2xuserflows-apiconnectorconfiguration_postFederationSignup"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_testuserflow/apiConnectorConfiguration/postFederationSignup/$ref
+Content-Type: application/json
+
+{
+    "@odata.id": "https://graph.microsoft.com/beta/apiConnectors/{id}"   
+}
+```
+
+---
+
+#### Response 
+
+<!-- {
+  "blockType": "response",
+}
+-->
+
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example for postAttributeCollection
+
+#### Request 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "put_b2xuserflows-apiconnectorconfiguration_postAttributeCollection"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_testuserflow/apiConnectorConfiguration/postAttributeCollection/$ref
+Content-Type: application/json
+
+{
+    "@odata.id": "https://graph.microsoft.com/beta/apiConnectors/{id}"   
+}
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+}
+-->
+
+``` http
+HTTP/1.1 204 No Content
+```

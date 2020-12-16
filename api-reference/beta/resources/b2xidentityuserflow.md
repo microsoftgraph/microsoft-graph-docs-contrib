@@ -30,6 +30,8 @@ User flows are used to enable a [self-service sign up](/azure/active-directory/e
 |[Remove identity provider](../api/b2xidentityuserflow-delete-identityproviders.md)|None|Remove an identity provider from a B2X user flow.|
 |[List user attribute assignments](../api/b2xidentityuserflow-list-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|Retrieve all user attribute assignments in a B2X user flow.|
 |[Create user attribute assignment](../api/b2xidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Create a user attribute assignment in a B2X user flow.|
+|[Get API connectors configuration for user flow](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| Get the configuration for API connectors used in the user flow. Expand does not work in this|
+|[Configure an API connector in a user flow](../api/b2xidentityuserflow-put-apiConnectorConfiguration.md)|None| Link or un-link an API connector to specific steps in a user flow by updating the [apiConnectorConfiguration](../resources/identityuserflowattributeassignment.md) property.|
 
 ## Properties
 
@@ -38,6 +40,7 @@ User flows are used to enable a [self-service sign up](/azure/active-directory/e
 |id|String|The name of the user flow. This is a required value and is immutable after it's created. The name will be prefixed with the value of `B2X_1_` after creation.|
 |userFlowType|String|The type of user flow. For self-service sign up user flows, the value can only be `signUpOrSignIn` and cannot be modified after creation.|
 |userFlowTypeVersion|Single|The version of the user flow. For B2X user flows, the version is always `1`.|
+|apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Configuration for enabling an API connector for use as part of the user flow. Only way to obtain the value of this object is using [this](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md) API.|
 
 ## Relationships
 
@@ -63,6 +66,9 @@ The following is a JSON representation of the resource.
     "userFlowType": "String",
     "userFlowTypeVersion": "Single",
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
-    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}]
+    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
+    "apiConnectorConfiguration": {
+      "@odata.type": "microsoft.graph.userFlowApiConnectorConfiguration"
+    }
 }
 ```

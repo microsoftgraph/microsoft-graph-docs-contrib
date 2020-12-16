@@ -1,25 +1,32 @@
 ---
 title: "Delete identityApiConnector"
 description: "Deletes an identityApiConnector object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "nickgmicrosoft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Delete identityApiConnector
+
 Namespace: microsoft.graph
 
 Deletes an [identityApiConnector](../resources/identityapiconnector.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | APIConnectors.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.  |
+| Application                            | APIConnectors.ReadWrite.All |
+
+The work or school account needs to belong to one of the following roles:
+
+* Global administrator
+* External Identity User Flow administrator
 
 ## HTTP request
 
@@ -55,15 +62,13 @@ If successful, this method returns a `204 No Content` response code.
 DELETE https://graph.microsoft.com/beta/identity/apiConnectors/{identityApiConnectorId}
 ```
 
-
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
-  "truncated": true
 }
 -->
+
 ``` http
 HTTP/1.1 204 No Content
 ```
-

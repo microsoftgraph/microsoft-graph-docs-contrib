@@ -19,11 +19,16 @@ Update the properties of an [identityApiConnector](../resources/identityapiconne
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | APIConnectors.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.  |
+| Application                            | APIConnectors.ReadWrite.All |
+
+The work or school account needs to belong to one of the following roles:
+
+* Global administrator
+* External Identity User Flow administrator
 
 ## HTTP request
 
@@ -44,20 +49,18 @@ PATCH /identity/apiConnectors/{identityApiConnectorId}
 ## Request body
 In the request body, supply a JSON representation of the [identityApiConnector](../resources/identityapiconnector.md) object.
 
-The following table shows the properties that are required when you create the [identityApiConnector](../resources/identityapiconnector.md).
+The following table shows the properties of the [identityApiConnector](../resources/identityapiconnector.md) that can be updated.
+
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|targetUrl|String|**TODO: Add Description**|
-|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|**TODO: Add Description**|
-
-
+|displayName|String| The name of the API connector. |
+|targetUrl|String| The URL of the API endpoint to call. |
+|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|The object which describes the authentication configuration details for calling the API. Only [Basic authentication](basicauthentication.md) is supported at this time. All properties of the apiAuthenticationConfigurationBase must be set at the same time, like both username and password.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [identityApiConnector](../resources/identityapiconnector.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -70,38 +73,25 @@ If successful, this method returns a `200 OK` response code and an updated [iden
 ``` http
 PATCH https://graph.microsoft.com/beta/identity/apiConnectors/{identityApiConnectorId}
 Content-Type: application/json
-Content-length: 231
 
 {
-  "@odata.type": "#microsoft.graph.identityApiConnector",
-  "displayName": "String",
-  "targetUrl": "String",
+  "displayName": "New Test API",
+  "targetUrl": "https://otherapi.com/api/endpoint",
   "authenticationConfiguration": {
-    "@odata.type": "microsoft.graph.apiAuthenticationConfigurationBase"
+    "@odata.type": "microsoft.graph.basicAuthentication",
+    "username":"<NEW_USERNAME>", 
+    "password":"<NEW_PASSWORD>"
   }
 }
 ```
-
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
-  "truncated": true
 }
 -->
+
 ``` http
-HTTP/1.1 200 OK
-
-Content-Type: application/json
-{
-  "@odata.type": "#microsoft.graph.identityApiConnector",
-  "id": "7fd6431c-431c-7fd6-1c43-d67f1c43d67f",
-  "displayName": "String",
-  "targetUrl": "String",
-  "authenticationConfiguration": {
-    "@odata.type": "microsoft.graph.apiAuthenticationConfigurationBase"
-  }
-}
+HTTP/1.1 204 No Content
 ```
-

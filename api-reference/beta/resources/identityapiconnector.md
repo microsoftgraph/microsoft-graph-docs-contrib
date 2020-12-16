@@ -1,6 +1,6 @@
 ---
 title: "identityApiConnector resource type"
-description: "Represents API connectors in an Azure Active Directory tenant and an Azure AD B2C tenant."
+description: "Represents API connectors in an Azure Active Directory tenant."
 author: "nickgmicrosoft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents API connectors in an Azure Active Directory (Azure AD) tenant and an Azure AD B2C tenant.
+Represents API connectors in an Azure Active Directory (Azure AD) tenant.
 
-An API connector used in your Azure AD or Azure AD B2C user flows allows you to call an API during the execution of an authentication flow. An API connector provides Azure Active Directory with the information needed to call an API including an endpoint URL and authentication. An API connector can be used at a specific step in a user flow to affect the execution of the user flow. For example, the API response can block a user from signing up, show an input validation error, or overwrite user collected attributes.
+An API connector used in your Azure AD External Identities self-service sign-up user flows allows you to call an API during the execution of the user flow. An API connector provides Azure Active Directory with the information needed to call an API including an endpoint URL and authentication. An API connector can be used at a specific step in a user flow to affect the execution of the user flow. For example, the API response can block a user from signing up, show an input validation error, or overwrite user collected attributes.
 
 ## Methods
 
@@ -34,7 +34,7 @@ An API connector used in your Azure AD or Azure AD B2C user flows allows you to 
 |id|String|The randomly generated ID of the API connector. |
 |displayName|String| The name of the API connector. |
 |targetUrl|String| The URL of the API endpoint to call. |
-|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|The object which describes the authentication configuration details for calling the API. Only [Basic authentication](basicauthentication.md) is supported at the moment.|
+|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|The object which describes the authentication configuration details for calling the API. Only [Basic authentication](basicauthentication.md) is supported at this time.|
 
 ## JSON representation
 
@@ -50,12 +50,11 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.identityApiConnector",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "targetUrl": "String",
-  "authenticationConfiguration": {
-    "@odata.type": "microsoft.graph.apiAuthenticationConfigurationBase"
-  }
+    "id": "String",
+    "displayName": "String",
+    "targetUrl": "String",
+    "authenticationConfiguration": {
+        "@odata.type": "#microsoft.graph.apiAuthenticationConfigurationBase"
+    }
 }
 ```

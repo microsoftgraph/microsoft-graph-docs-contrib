@@ -13,27 +13,32 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines which APIs are called at specific points in the user flow.
+Defines which APIs are called at specific points in the user flow. Each property of this object corresponds to a specific "step" in the user flow that can be configured to call an API connector.
 
 ## Relationships
 
-|Relationship|Type|Description|
-|:---|:---|:---|
-|postFederationSignup|[identityApiConnector](identityapiconnector.md)| Specifies an API to call after federation with an external identity provider (like Google, Facebook, or Azure AD) is completed when user is signing up.|
-|postAttributeCollection|[identityApiConnector](identityapiconnector.md)| Specifies an API to call after a user submits collected attributes and before the user is created.|
+| Relationship            | Type                                            | Description                                                                                                                                             |
+| :---------------------- | :---------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| postFederationSignup    | [identityApiConnector](identityapiconnector.md) | Specifies an API to call after federation with an external identity provider (like Google, Facebook, or Azure AD) is completed when user is signing up. |
+| postAttributeCollection | [identityApiConnector](identityapiconnector.md) | Specifies an API to call after a user submits collected attributes and before the user is created.                                                      |
 
 ## JSON representation
 
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.userFlowApiConnectorConfiguration"
 }
 -->
 
-``` json
+```json
 {
-  "@odata.type": "#microsoft.graph.userFlowApiConnectorConfiguration"
+  "postFederationSignup": {
+    "@odata.type": "https://graph.microsoft.com/beta/apiconnector/{id}"
+  },
+  "postAttributeCollection": {
+    "@odata.type": "https://graph.microsoft.com/beta/apiconnector/{id}"
+  }
 }
 ```
-
