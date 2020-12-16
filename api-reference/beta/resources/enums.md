@@ -11,6 +11,23 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### educationAddedStudentAction values 
+
+|Member|
+|:---|
+|none|
+|assignIfOpen|
+|unknownFutureValue|
+
+### externalEmailOtpState values
+
+|Member|
+|:---|
+|default|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
 ### volumeType values
 
 | Member
@@ -1355,7 +1372,7 @@ Possible values for user account types (group membership), per Windows definitio
 | signUpOrSignIn
 | passwordReset
 | profileUpdate
-| resourceOwnerPasswordCredentialSignIn
+| resourceOwner
 | unknownFutureValue
 
 ### openIdConnectResponseMode values
@@ -1458,7 +1475,18 @@ Possible values for user account types (group membership), per Windows definitio
 | delegated
 | delegatedUserConsentable
 
-### teamworkActivityTopicSource values 
+### identityUserFlowAttributeInputType values
+
+| Member                |
+|:----------------------|
+| textBox               |
+| dateTimeDropDown      |
+| radioSingleSelect     |
+| dropdownSingleSelect  |
+| emailBox              |
+| checkboxMultiSelect   |
+
+### teamworkActivityTopicSource values
 
 | Member
 |:---
