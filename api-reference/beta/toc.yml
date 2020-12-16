@@ -12689,42 +12689,48 @@ items:
           href: api/teamsapp-update.md
         - name: Delete app from catalog
           href: api/teamsapp-delete.md
-      - name: Apps
+      - name: App
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
-        - name: List apps in team
-          href: api/team-list-installedapps.md
-        - name: Get app installed in team
-          href: api/team-get-installedapps.md
-        - name: Add app to team
-          href: api/team-post-installedapps.md
-        - name: Upgrade app installed in team
-          href: api/team-teamsappinstallation-upgrade.md
-        - name: Remove app from team
-          href: api/team-delete-installedapps.md
-        - name: List apps for user
-          href: api/userteamwork-list-installedapps.md
-        - name: Get app installed for user
-          href: api/userteamwork-get-installedapps.md
-        - name: Add app for user
-          href: api/userteamwork-post-installedapps.md
-        - name: Upgrade installed app for user
-          href: api/userteamwork-teamsappinstallation-upgrade.md
-        - name: Get chat between user and app
-          href: api/userscopeteamsappinstallation-get-chat.md
-        - name: Remove app for user
-          href: api/userteamwork-delete-installedapps.md
-        - name: List apps in chat
-          href: api/chat-list-installedapps.md
-        - name: Get app installed in chat
-          href: api/chat-get-installedapps.md
-        - name: Add app in chat
-          href: api/chat-post-installedapps.md        
-        - name: Upgrade app installed in chat
-          href: api/chat-teamsappinstallation-upgrade.md
-        - name: Remove app from chat
-          href: api/chat-delete-installedapps.md
+        - name: App in team
+          items:
+          - name: List apps in team
+            href: api/team-list-installedapps.md
+          - name: Get app installed in team
+            href: api/team-get-installedapps.md
+          - name: Add app to team
+            href: api/team-post-installedapps.md
+          - name: Upgrade app installed in team
+            href: api/team-teamsappinstallation-upgrade.md
+          - name: Remove app from team
+            href: api/team-delete-installedapps.md
+        - name: App in personal scope of user
+          items:
+          - name: List apps for user
+            href: api/userteamwork-list-installedapps.md
+          - name: Get app installed for user
+            href: api/userteamwork-get-installedapps.md
+          - name: Add app for user
+            href: api/userteamwork-post-installedapps.md
+          - name: Upgrade installed app for user
+            href: api/userteamwork-teamsappinstallation-upgrade.md
+          - name: Get chat between user and app
+            href: api/userscopeteamsappinstallation-get-chat.md
+          - name: Remove app for user
+            href: api/userteamwork-delete-installedapps.md
+        - name: App in chat
+          items:
+          - name: List apps in chat
+            href: api/chat-list-installedapps.md
+          - name: Get app installed in chat
+            href: api/chat-get-installedapps.md
+          - name: Add app in chat
+            href: api/chat-post-installedapps.md        
+          - name: Upgrade app installed in chat
+            href: api/chat-teamsappinstallation-upgrade.md
+          - name: Remove app from chat
+            href: api/chat-delete-installedapps.md
       - name: Activity feed
         items:
         - name: Send notification to user in chat
@@ -12736,26 +12742,30 @@ items:
       - name: Tab
         href: resources/teamstab.md
         items:
-        - name: List tabs in channel
-          href: api/channel-list-tabs.md
-        - name: Get tab in channel
-          href: api/channel-get-tabs.md
-        - name: Add tab to cannel
-          href: api/channel-post-tabs.md
-        - name: Update tab in channel
-          href: api/channel-patch-tabs.md
-        - name: Remove tab from channel
-          href: api/channel-delete-tabs.md
-        - name: List tabs in chat
-          href: api/chat-list-tabs.md
-        - name: Get tab in chat
-          href: api/chat-get-tabs.md
-        - name: Add tab to chat
-          href: api/chat-post-tabs.md
-        - name: Update tab in chat
-          href: api/chat-patch-tabs.md
-        - name: Remove tab from chat
-          href: api/chat-delete-tabs.md
+        - name: Tab in channel
+          items:
+          - name: List tabs in channel
+            href: api/channel-list-tabs.md
+          - name: Get tab in channel
+            href: api/channel-get-tabs.md
+          - name: Add tab to cannel
+            href: api/channel-post-tabs.md
+          - name: Update tab in channel
+            href: api/channel-patch-tabs.md
+          - name: Remove tab from channel
+            href: api/channel-delete-tabs.md
+        - name: Tab in chat
+          items:
+          - name: List tabs in chat
+            href: api/chat-list-tabs.md
+          - name: Get tab in chat
+            href: api/chat-get-tabs.md
+          - name: Add tab to chat
+            href: api/chat-post-tabs.md
+          - name: Update tab in chat
+            href: api/chat-patch-tabs.md
+          - name: Remove tab from chat
+            href: api/chat-delete-tabs.md
       - name: Calendar
         href: resources/event.md
         items:
