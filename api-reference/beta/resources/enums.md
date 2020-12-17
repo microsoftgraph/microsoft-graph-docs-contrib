@@ -11,7 +11,7 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-### authenticationMethodKeyStrength
+### authenticationMethodKeyStrength values
 
 |Member|
 |:---|
