@@ -12668,14 +12668,16 @@ items:
         items:
         - name: List chats
           href: api/chat-list.md
+        - name: Create chat
+          href: api/chat-post.md
         - name: Get chat
           href: api/chat-get.md
         - name: List members
           href: api/chat-list-members.md
-        - name: Get member
-          href: api/chat-get-members.md
         - name: Add member
           href: api/chat-post-members.md
+        - name: Get member
+          href: api/chat-get-members.md
         - name: List messages in a chat
           href: api/chat-list-message.md
         - name: Get message in chat
