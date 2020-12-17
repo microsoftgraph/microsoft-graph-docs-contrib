@@ -12,14 +12,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An entry into the translation language override list 
+Represents any translation override for a language.
 
 ## Properties
 
 |Property             |Type                 		  			    |Description                                                            |
 |---------------------|-------------------------------------------------------------|-----------------------------------------------------------------------|
-|languageTag	      |String               		  			    |The language to apply the override.<br><br>Returned by default. Not nullable       |                   
-|translationBehavior  |[String](translationPreferences.md#translationbehavior-values)        |The override behavior for the language tag.<br><br>Returned by default. Not nullable.|
+|languageTag	      |String               		  			    |The language to apply the override.<br><br>Returned by default. Not nullable.       |                   
+|translationBehavior  |[translationBehavior](translationPreferences.md#translationbehavior-values)        |The translation override behavior for the language, if any.<br><br>Returned by default. Not nullable.|
 
 ## JSON representation
 

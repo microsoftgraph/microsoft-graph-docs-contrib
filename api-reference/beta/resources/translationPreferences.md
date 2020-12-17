@@ -18,9 +18,9 @@ An entry into the translation language override list
 
 |Property             |Type                 		  			    |Description                                                            |
 |---------------------|-------------------------------------------------------------|-----------------------------------------------------------------------|
-|translationBehavior  |[String](#translationbehavior-values)  	    |The user's preferred translation behavior.<br><br>Returned by default. Not nullable. |                   
-|languageOverrides    |[translationLanguageOverride](translationLanguageOverride.md) collection                |The override behavior for the language tag.<br><br>Returned by default.|
-|untranslatedLanguages|String collection| The list of languages the user does not need translated. This is computed from [regionalAndLanguageSettings](regionalandlanguagesettings.md) authoring languages collection and the languageOverrides collection. The list returned will contain neutral language cultures. <br><br>Returned by default. Read only.| 
+|translationBehavior  |[translationBehavior](#translationbehavior-values)  	    |The user's preferred translation behavior.<br><br>Returned by default. Not nullable. |                   
+|languageOverrides    |[translationLanguageOverride](translationLanguageOverride.md) collection                | Translation override behavior for languages, if any.<br><br>Returned by default.|
+|untranslatedLanguages|String collection| The list of languages the user does not need translated. This is computed from the **authoringLanguages** collection in [regionalAndLanguageSettings](regionalandlanguagesettings.md), and the **languageOverrides** collection in **translationPreferences**. The list specifies neutral culture values that include the language code without any country or region association. For example, it would specify "fr" for the neutral French culture, but not "fr-FR" for the French culture in France. <br><br>Returned by default. Read only.| 
 
 ### translationBehavior values
 
