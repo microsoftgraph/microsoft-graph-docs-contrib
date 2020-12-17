@@ -129,7 +129,6 @@ In the following example, if an instance of an installed app has a [bot](../reso
 #### Request
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_installed_apps_in_chat_expand"

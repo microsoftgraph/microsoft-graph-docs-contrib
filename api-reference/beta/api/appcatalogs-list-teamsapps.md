@@ -334,7 +334,7 @@ The following example lists only those apps in the catalog that contain a bot.
   "name": "list_teamsapp_with_bots"
 }-->
 
-```msgraph-interactive
+```http
 GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitions($expand=bot)&$filter=appDefinitions/any(a:a/bot ne null)
 ```
 
