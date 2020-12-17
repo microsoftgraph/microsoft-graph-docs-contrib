@@ -17,7 +17,7 @@
           "ChangeType": "Change",
           "Description": "Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
           "Target": "authenticationMethod,passwordAuthenticationMethod,phoneAuthenticationMethod,emailAuthenticationMethod,passwordlessMicrosoftAuthenticatorAuthenticationMethod"
-        },
+        }
       ],
       "Id": "151b955d-fe34-496d-a76c-7cf7865da63d",
       "Cloud": "prd",
