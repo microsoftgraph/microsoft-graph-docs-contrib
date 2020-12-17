@@ -12670,10 +12670,12 @@ items:
           href: api/chat-list.md
         - name: Get chat
           href: api/chat-get.md
-        - name: List chat members
-          href: api/conversationmember-list.md
-        - name: Get chat member
-          href: api/conversationmember-get.md
+        - name: List members
+          href: api/chat-list-members.md
+        - name: Get member
+          href: api/chat-get-members.md
+        - name: Add member
+          href: api/chat-post-members.md
         - name: List messages in a chat
           href: api/chat-list-message.md
         - name: Get message in chat
