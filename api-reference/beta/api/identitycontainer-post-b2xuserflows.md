@@ -256,13 +256,14 @@ The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 
+
+**Note:** The `apiConnectorConfiguration` property always returns a '{}' value. To see full value with the navigation properties, use [this](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md) API.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.b2xIdentityUserFlow"
 } -->
-
-**Note:** The `apiConnectorConfiguration` property always returns a '{}' value. To see full value with the navigation properties, use [this](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md) API.
 
 ```http
 HTTP/1.1 201 Created

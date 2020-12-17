@@ -41,7 +41,7 @@ GET identity/b2xUserFlows/{id}/apiConnectorConfiguration
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For example, to retrieve the API connector for the `postFederationSignup` and `postAttributeCollection` steps, add `$expand=postFederationSignup,postAttributeCollection`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the expand OData query parameter to help customize the response. For example, to retrieve the API connector for the `postFederationSignup` and `postAttributeCollection` steps, add `$expand=postFederationSignup,postAttributeCollection`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
