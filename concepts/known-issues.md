@@ -339,6 +339,9 @@ To get a list of teams, see [list all teams](teams-list-all-teams.md) and
 ### Unable to filter team members by roles
 The filter query to get members of a team based on their roles `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')` might not work. The server might respond with a `BAD REQUEST`.
 
+### Missing tenantId for chat members
+In certain instances, the `tenantId` property for the individual members of a chat might not be populated on a `GET /chats/chat-id/members` or `GET /chats/chat-id/members/membership-id` request.
+
 ## Users
 
 ### No instant access after creation

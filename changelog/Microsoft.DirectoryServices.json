@@ -37,6 +37,48 @@
         {
         "ChangeList": [
         {
+          "Id": "8edd9cea-d04c-4a1b-8c50-68270332a880",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userFlowLanguageConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [userFlowLanguageConfiguration](https://docs.microsoft.com/graph/api/resources/userflowlanguageconfiguration?view=graph-rest-beta) entity for managing the language defaults and customizations within a user flow in an Azure Active Directory or Azure Active Directory B2C tenant.",
+          "Target": "userFlowLanguageConfiguration"
+        },
+        {
+          "Id": "8edd9cea-d04c-4a1b-8c50-68270332a880",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userFlowLanguagePage",
+          "ChangeType": "Addition",
+          "Description": "Added the [userFlowLanguagePage](https://docs.microsoft.com/graph/api/resources/userflowlanguagepage?view=graph-rest-beta) entity that defines the language defaults and customizations within a user flow in an Azure Active Directory or Azure Active Directory B2C tenant.",
+          "Target": "userFlowLanguagePage"
+        },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "b2cIdentityUserFlow",
+          "ChangeType": "Addition",
+          "Description": "Added properties for **isLanguageCustomizationEnabled** and **defaultLanguageTag** and methods for listing and creating languages to the [b2cIdentityUserFlow](https://docs.microsoft.com/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) resource.",
+          "Target": "b2cIdentityUserFlow"
+        },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "b2xIdentityUserFlow",
+          "ChangeType": "Addition",
+          "Description": "Added methods for listing languages to the [b2xIdentityUserFlow](https://docs.microsoft.com/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) resource.",
+          "Target": "b2xIdentityUserFlow"
+        }
+      ],
+      "Id": "074356c3-d08d-46ec-bf8d-24d90ffb9e54",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-07T17:53:06Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+    "ChangeList": [
+      {
           "Id": "8faf36d1-4d32-4ef9-bdd1-a6f95c66bc24",
           "ApiChange": "Resource",
           "ChangedApiName": "emailAuthenticationMethodConfiguration",

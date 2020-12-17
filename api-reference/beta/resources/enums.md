@@ -11,6 +11,14 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### educationAddedStudentAction values 
+
+|Member|
+|:---|
+|none|
+|assignIfOpen|
+|unknownFutureValue|
+
 ### externalEmailOtpState values
 
 |Member|
@@ -19,6 +27,23 @@ Namespace: microsoft.graph
 |enabled|
 |disabled|
 |unknownFutureValue|
+
+### replyRestriction values
+
+| Member
+|:--------------
+| everyone
+| authorAndModerators
+| unknownFutureValue
+
+### userNewMessageRestriction values
+
+| Member
+|:--------------
+|everyone
+|everyoneExceptGuests
+|moderators
+|unknownFutureValue
 
 ### volumeType values
 
@@ -1545,7 +1570,17 @@ Possible values for user account types (group membership), per Windows definitio
 |upgrading|
 |inGracePeriod|
 |deprovisioning|
+|failed|
 |upgradeFailed|
 |provisionFailed|
 |deprovisionFailed|
 |reprovisionFailed|
+
+### chatType values 
+
+| Member             | Value | Description               |
+| :----------------- | :---- | :------------------------ |
+|oneOnOne            | 0     | Indicates that the chat is a 1:1 chat. The roster size is fixed for this type of chat, the member cannot be removed / added.                  |
+|group               | 1     | Indicates that the chat is a Group chat. The roster size (of at least 2 person) can be updated for this type of chat. The members can be removed / added later on.   |
+|meeting             | 2     | Indicates that the chat is a Meeting chat, which is created as a side effect of creation of an OnlineMeeting.  |
+|unknownFutureValue  | 3     | Sentinel value to indicate future values. |

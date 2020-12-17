@@ -29,7 +29,7 @@ The container for a [custodian's](custodian.md) mailbox and OneDrive for Busines
 |Property|Type|Description|
 |:---|:---|:---|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the **userSource**.|
-|createdDateTime|DateTimeOffset|The date and time the us**userSource**erSource was created|
+|createdDateTime|DateTimeOffset|The date and time the **userSource** was created|
 |displayName|String|The display name associated with the mailbox and site.|
 |email|String|Email address of the user's mailbox.|
 |id|String|The ID of the **userSource**. This is not the ID of the actual group|
