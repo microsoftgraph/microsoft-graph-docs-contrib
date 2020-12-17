@@ -1,6 +1,6 @@
 ---
 title: "channelModerationSettings resource type"
-description: "The channelModerationSettings resource is used to control who can start new posts and reply to posts in a channel."
+description: "Used to control who can start new posts and reply to posts in a channel."
 author: "bhartono"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,25 +13,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In Microsoft Teams, team owners can turn on moderation for a channel to control who can start new posts and reply to posts in that channel. Some examples scenarios for channel moderation are:
-- Use a channel as an announcement channel.
-- Use a channel for discussions in class team where only teacher can starts new discussions.
-- Use a channel for livesite issues where new post can be started by connnector on getting new ICM.
+In Microsoft Teams, team owners can turn on moderation for a channel to control who can start new posts and reply to posts in that channel. For example, owners might want to do the following:
 
-By default, moderation is 'OFF' which means that the usual channel settings apply to team owners and team members with additional control to allow only team members or everyone including guests for starting new channel post. Setting channel moderation to 'ON' allow only moderators to start new posts with additonal control for team members.
+- Use a channel for announcements only.
+- Use a channel for discussions in a class team where only the teacher can start new discussions.
+- Use a channel for livesite issues where new posts can be started by connectors.
 
-To support channel moderation settings via Graph APIs:
+By default, moderation is `OFF`, which means that the usual channel settings apply to team owners and team members, with additional control to allow only team members or everyone including guests to start a new channel post. Setting channel moderation to `ON` allows only moderators to start new posts, with additonal control for team members.
 
-- Team member should be able to query channel moderation setting.
-- Team owner should be able to set channel moderation setting.
+To support channel moderation settings via Microsoft Graph APIs:
+
+- Team members should be able to query channel moderation settings.
+- Team owners should be able to set channel moderation settings.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |allowNewMessageFromBots|Boolean|Indicates whether bots are allowed to post messages.|
 |allowNewMessageFromConnectors|Boolean|Indicates whether connectors are allowed to post messages.|
-|replyRestriction|[replyRestriction](../resources/enums.md#replyrestriction-values)|Indicates who all are allowed to reply to teams channel.|
-|userNewMessageRestriction|[userNewMessageRestriction](../resources/enums.md#usernewmessagerestriction-values)|Indicates who all are allowed to post messages to teams channel.|
+|replyRestriction|[replyRestriction](../resources/enums.md#replyrestriction-values)|Indicates who is allowed to reply to the teams channel.|
+|userNewMessageRestriction|[userNewMessageRestriction](../resources/enums.md#usernewmessagerestriction-values)|Indicates who is allowed to post messages to teams channel.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
