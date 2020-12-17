@@ -37,7 +37,7 @@ GET /teams/{id}/channels/{id}
 
 ## Optional query parameters
 
-This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`, `$s`elect`,` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -110,10 +110,11 @@ Content-type: application/json
 }
 ```
 
-Here is an example of the response for standard channel while channel moderation is off.
+Here is an example of the response for a standard channel with channel moderation off.
 
 ```http
 HTTP/1.1 200 OK
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('8bb12236-b929-42e0-94a0-1c417466ebf8')/channels/$entity",
     "id": "19:d468258bc90f4a358361b5d73b89d39b@thread.skype",
@@ -132,7 +133,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-Here is an example of the response for standard channel while channel moderation is on.
+Here is an example of the response for a standard channel with channel moderation on.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -158,7 +159,7 @@ Content-type: application/json
 }
 ```
 
-Here is an example of the response for private channel.
+Here is an example of the response for a private channel.
 
 ```http
 HTTP/1.1 200 OK
