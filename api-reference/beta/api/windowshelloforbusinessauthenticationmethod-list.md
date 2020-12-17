@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/beta/user/annie@contoso.com/authentication/windo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.strongAuthentication.windowsHelloForBusinessAuthenticationMethod)"
+  "@odata.type": "Collection(microsoft.graph.windowsHelloForBusinessAuthenticationMethod)"
 }
 -->
 ``` http
@@ -81,14 +81,14 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.strongAuthentication.windowsHelloForBusinessAuthenticationMethod",
+      "@odata.type": "#microsoft.graph.windowsHelloForBusinessAuthenticationMethod",
       "id": "b5e01f81-1f81-b5e0-811f-e0b5811fe0b5",
       "displayName": "Annie's Surface Book",
       "createdDateTime": "2020-11-27T23:12:49Z",
       "keyStrength": "normal"
     },
     {
-      "@odata.type": "#microsoft.strongAuthentication.windowsHelloForBusinessAuthenticationMethod",
+      "@odata.type": "#microsoft.graph.windowsHelloForBusinessAuthenticationMethod",
       "id": "e6dab818-e68d-433e-89d5-547357870cb2",
       "displayName": "New Surface Duo",
       "createdDateTime": "2020-12-25T02:20:13Z",

@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/beta/user/anirban@contoso.com/authentication/mic
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.strongAuthentication.microsoftAuthenticatorAuthenticationMethod)"
+  "@odata.type": "Collection(microsoft.graph.microsoftAuthenticatorAuthenticationMethod)"
 }
 -->
 ``` http
@@ -81,7 +81,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.strongAuthentication.microsoftAuthenticatorAuthenticationMethod",
+      "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethod",
       "id": "6803c096-c096-6803-96c0-036896c00368",
       "displayName": "Anirban's iPhone",
       "deviceTag": "",

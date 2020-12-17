@@ -41,7 +41,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsHelloForBusinessAuthenticationMethod",
-  "baseType": "microsoft.strongAuthentication.authenticationMethod",
+  "baseType": "microsoft.graph.authenticationMethod",
   "openType": false
 }
 -->
