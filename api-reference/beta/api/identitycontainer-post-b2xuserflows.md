@@ -206,18 +206,6 @@ Content-type: application/json
 }
 ```
 
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create b2xUserFlow",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: create_b2xUserFlow_from_b2xUserFlows/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
-    "Error: create_b2xUserFlow_from_b2xUserFlows_identityProviders/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
-  ]
-}-->
-
 ### Example 3: Create a user flow with the default values and configuration for API connectors
 
 #### Request
@@ -278,3 +266,16 @@ Content-type: application/json
     "apiConnectorConfiguration": {}
 }
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Create b2xUserFlow",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: create_b2xUserFlow_from_b2xUserFlows/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
+    "Error: create_b2xUserFlow_from_b2xUserFlows_identityProviders/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
+    "Error: create_b2xUserFlow_from_b2xuserflows_apiconnectors/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
+  ]
+}-->
