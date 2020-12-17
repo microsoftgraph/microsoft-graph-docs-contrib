@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/channels
+POST /teams/{team-id}/channels
 ```
 
 ## Request headers
@@ -68,7 +68,7 @@ The following example shows a request to create a standard channel.
   "name": "create_channel_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
 Content-type: application/json
 
 {
@@ -112,11 +112,11 @@ The following example shows a request to create a private channel and add a user
 
 <!-- {
   "blockType": "request",
-  "name": "create_channel_from_user"
+  "name": "create_private_channel_with_member"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{group_id}/channels
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
 Content-type: application/json
 
 {
@@ -128,7 +128,7 @@ Content-type: application/json
      [
         {
            "@odata.type":"#microsoft.graph.aadUserConversationMember",
-           "user@odata.bind":"https://graph.microsoft.com/beta/users('{user_id}')",
+           "user@odata.bind":"https://graph.microsoft.com/beta/users('62855810-484b-4823-9e01-60667f8b12ae')",
            "roles":["owner"]
         }
      ]
@@ -144,7 +144,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "create_channel_from_user",
+  "name": "create_private_channel_with_member",
   "@odata.type": "microsoft.graph.channel"
 } -->
 
@@ -154,13 +154,13 @@ Content-type: application/json
 Content-length: 201
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('{group_id}')/channels/$entity",
-    "id": "{channel_id}",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
+    "id": "19:33b76eea88574bd1969dca37e2b7a819@thread.skype",
     "displayName": "My First Private Channel",
     "description": "This is my first private channels",
     "isFavoriteByDefault": null,
     "email": "",
-    "webUrl": "https://teams.microsoft.com/l/channel/{channel_id}/My%20First%20Private%20Channel?groupId={group_id}&tenantId={tenant_id}",
+    "webUrl": "https://teams.microsoft.com/l/channel/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/My%20First%20Private%20Channel?groupId=57fb72d0-d811-46f4-8947-305e6072eaa5&tenantId=0fddfdc5-f319-491f-a514-be1bc1bf9ddc",
     "membershipType": "private"
 }
 ```
@@ -169,15 +169,15 @@ Content-length: 201
 
 #### Request
 
-The following example shows how to create a channel for imported messages.
+The following example shows how to create a channel that will be used for importing messages.
 
 <!-- {
   "blockType": "request",
-  "name": "create_channel_through_migration"
+  "name": "create_channel_for_migration"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
 Content-Type: application/json
 
 {
@@ -191,18 +191,19 @@ Content-Type: application/json
 
 #### Response
 
-The following example shows the response.
+The following example shows the response. The Content-Location header in the response specifies the path to the channel that is being provisioned.
+Once provisioned, this channel can be used for [importing messages](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "create_channel_through_migration",
+  "name": "create_channel_for_migration",
   "@odata.type": "microsoft.graph.channel"
 } -->
 
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams/{teamId}/channels/{channelId}/operations/{operationId}
-Content-Location: /teams/{teamId}/channels/{channelId}
+Location: /teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/{channelId}/operations/{operationId}
+Content-Location: /teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/{channelId}
 ```
 
 ### Example 4: Create standard channel with moderation settings
@@ -213,11 +214,11 @@ The following example shows a request to create a standard channel with moderati
 
 <!-- {
   "blockType": "request",
-  "name": "create_channel_from_user_with_moderation"
+  "name": "create_channel_with_moderation_settings"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{group_id}/channels
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
 Content-type: application/json
 
 {
@@ -241,7 +242,6 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "create_channel_from_user_with_moderation",
   "@odata.type": "microsoft.graph.channel"
 } -->
 
@@ -251,13 +251,13 @@ Content-type: application/json
 Content-length: 201
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('{group_id}')/channels/$entity",
-    "id": "{channel_id}",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
+    "id": "19:12b76eea88574bd1969dca37e2b7a819@thread.skype",
     "displayName": "My First Private Channel",
     "description": "This is my first private channels",
     "isFavoriteByDefault": null,
     "email": "",
-    "webUrl": "https://teams.microsoft.com/l/channel/{channel_id}/My%20First%20Private%20Channel?groupId={group_id}&tenantId={tenant_id}",
+    "webUrl": "https://teams.microsoft.com/l/channel/19:12b76eea88574bd1969dca37e2b7a819@thread.skype/My%20First%20Private%20Channel?groupId=57fb72d0-d811-46f4-8947-305e6072eaa5&tenantId=0fddfdc5-f319-491f-a514-be1bc1bf9ddc",
     "membershipType": "private"
 }
 ```
