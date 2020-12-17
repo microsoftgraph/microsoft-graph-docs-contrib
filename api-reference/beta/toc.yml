@@ -10770,7 +10770,7 @@ items:
                href: resources/userflowlanguagepage.md
              - name: Get userFlowLanguagePage
                href: api/userflowlanguagepage-get.md
-             - name: Put userFlowLanguagePage
+             - name: Update userFlowLanguagePage
                href: api/userflowlanguagepage-put.md
              - name: Delete userFlowLanguagePage
                href: api/userflowlanguagepage-delete.md
