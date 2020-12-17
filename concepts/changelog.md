@@ -101,6 +101,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **chatType** property to [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added the **chatType** enumeration type. |
 | Addition | beta | Added the following methods to the [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource: [Create chat](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true), [Update chat](/graph/api/chat-patch?view=graph-rest-beta&preserve-view=true). |
+| Addition | beta | Added the [teamworkBot](/graph/api/resources/teamworkbot?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the **bot** relationship to the [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta&preserve-view=true) resource.|
+
 
 
 ## November 2020

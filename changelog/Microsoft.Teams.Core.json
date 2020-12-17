@@ -19,7 +19,7 @@
           "Target": "chatType"
         },
         {
-          "Id": "8851b1f6-0ea0-4e13-b30f-e008a339a37d",
+          "Id": "13c3dcc8-1e1e-11eb-aa81-6d719f0c7da5",
           "ApiChange": "method",
           "ChangedApiName": "Create chat, Update chat",
           "ChangeType": "Addition",
@@ -27,7 +27,7 @@
           "Target": "Create chat, Update chat"
         }
       ],
-      "Id": "13bf19f3-1e1e-11eb-aa81-6d719f0c7da5",
+      "Id": "13c3dcc8-1e1e-11eb-aa81-6d719f0c7da5",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-16T21:46:49.407Z",
@@ -53,7 +53,7 @@
           "Target": "conversationMember"
         },
         {
-          "Id": "7cc430e4-5141-4799-9582-34220c817573",
+          "Id": "df2d2808-353d-11eb-9836-6aeb5ee7dda6",
           "ApiChange": "method",
           "ChangedApiName": "Add chat member, Delete chat member",
           "ChangeType": "Addition",
@@ -65,6 +65,32 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-03T08:02:21.817Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a659bbcb-28bb-11eb-9746-158983535857",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "bot",
+          "ChangeType": "Addition",
+          "Description": "Added the **bot** relationship to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource.",
+          "Target": "teamsAppDefinition"
+        },
+        {
+          "Id": "a65c2d4b-28bb-11eb-9746-158983535857",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkBot",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-beta) resource type.",
+          "Target": "teamworkBot"
+        }
+      ],
+      "Id": "a6575ac5-28bb-11eb-9746-158983535857",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-14T00:00:00",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
