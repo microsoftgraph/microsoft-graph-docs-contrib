@@ -24,7 +24,7 @@ An entry into the translation language override list
 
 ### translationBehavior values
 
-|Values |Description                                                                  |
+|Member |Description                                                                  |
 |-------|-----------------------------------------------------------------------------|
 |Ask    |Prompt the user before translating the messages/chats/web pages for the user.|
 |Yes    |Automatically translate the messages/chats/web pages for the user.           |
