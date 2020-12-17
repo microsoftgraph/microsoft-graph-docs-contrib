@@ -37,14 +37,14 @@ by providing a [delta](../api/event-delta.md) function.
 |[Create event](../api/user-post-events.md) |[event](event.md)| Create a new event by posting to the instances collection.|
 |[Get event](../api/event-get.md) | [event](event.md) |Read properties and relationships of event object.|
 |[Update](../api/event-update.md) | [event](event.md) |Update event object. |
-|[cancel](../api/event-cancel.md) | None | Send cancellation message from the organizer to all the attendees and cancel the specified meeting. |
 |[Delete](../api/event-delete.md) | None |Delete event object. |
+|[delta](../api/event-delta.md)|[event](event.md) collection|Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) of the user's primary calendar.|
+|[forward](../api/event-forward.md)| None |Lets the organizer or attendee of a meeting event forward the meeting request to a new recipient.|
+|[cancel](../api/event-cancel.md) | None | Send cancellation message from the organizer to all the attendees and cancel the specified meeting. |
 |[accept](../api/event-accept.md)|None|Accept the specified event in a user calendar.|
 |[tentativelyAccept](../api/event-tentativelyaccept.md)|None|Tentatively accept the specified event in a user calendar.|
 |[decline](../api/event-decline.md)|None|Decline invitation to the specified event in a user calendar.|
-|[delta](../api/event-delta.md)|[event](event.md) collection|Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) of the user's primary calendar.|
 |[dismissReminder](../api/event-dismissreminder.md)|None|Dismiss the reminder for the specified event in a user calendar.|
-|[forward](../api/event-forward.md)| None |Lets the organizer or attendee of a meeting event forward the meeting request to a new recipient.|
 |[snoozeReminder](../api/event-snoozereminder.md)|None|Postpone a reminder for the specified event in a user calendar until a new time.|
 |[List instances](../api/event-list-instances.md) |[event](event.md) collection| Get the instances (occurrences) of an event for a specified time range. If the event is a `SeriesMaster` type, this returns the occurrences and exceptions of the event in the specified time range.|
 |**Attachments**| | |

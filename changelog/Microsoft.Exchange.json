@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cancel,forward",
+          "ChangeType": "Addition",
+          "Description": "Added [cancel](/graph/api/event-cancel?view=graph-rest-v1.0) and [forward](/graph/api/event-forward?view=graph-rest-v1.0) operations to manage [event](/graph/api/resources/event?view=graph-rest-v1.0) resources on [calendar](/graph/api/resources/calendar?view=graph-rest-v1.0).",
+          "Target": "event"
+        }
+      ],
+      "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-12-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "656072a4-9a39-4731-8322-13932419895a",
           "ApiChange": "Property",
           "ChangedApiName": "transactionId",

@@ -13,6 +13,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## December 2020
 
+### Calendar
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition | v1.0| Added [cancel](/graph/api/event-cancel?view=graph-rest-v1.0) and [forward](/graph/api/event-forward?view=graph-rest-v1.0) operations to manage [event](/graph/api/resources/event?view=graph-rest-v1.0) resources on [calendar](/graph/api/resources/calendar?view=graph-rest-v1.0). |
+
 ### Change notifications
 
 | **Change type** | **Version**   | **Description**                          |
@@ -365,7 +371,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition | v1.0| Added [cancel](/graph/api/event-cancel?view=graph-rest-v1.0) and [forward](/graph/api/event-forward?view=graph-rest-v1.0) operations to manage [event](/graph/api/resources/event?view=graph-rest-v1.0) resources on [calendar](/graph/api/resources/calendar?view=graph-rest-v1.0). |
 | Addition | v1.0 | Added the **transactionId** property to the [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true) entity.
 
 ### Change notifications

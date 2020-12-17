@@ -186,12 +186,12 @@ Here is a JSON representation of the resource
 |[Get event](../api/event-get.md) | [event](event.md) |Read properties and relationships of event object.|
 |[Update](../api/event-update.md) | [event](event.md)	|Update event object. |
 |[Delete](../api/event-delete.md) | None |Delete event object. |
+|[delta](../api/event-delta.md)|[event](event.md) collection|Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) of the user's primary calendar.|
+|[forward](../api/event-forward.md)|None|Lets the organizer or attendee of a meeting event forward the meeting request to a new recipient.|
 |[cancel](../api/event-cancel.md) | None | Send cancellation message from the organizer to all the attendees and cancel the specified meeting. |
 |[accept](../api/event-accept.md)|None|Accept the specified event in a user calendar.|
 |[tentativelyAccept](../api/event-tentativelyaccept.md)|None|Tentatively accept the specified event in a user calendar.|
 |[decline](../api/event-decline.md)|None|Decline invitation to the specified event in a user calendar.|
-|[forward](../api/event-forward.md)|None|Lets the organizer or attendee of a meeting event forward the meeting request to a new recipient.|
-|[delta](../api/event-delta.md)|[event](event.md) collection|Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) of the user's primary calendar.|
 |[dismissReminder](../api/event-dismissreminder.md)|None|Dismiss the reminder for the specified event in a user calendar.|
 |[snoozeReminder](../api/event-snoozereminder.md)|None|Postpone a reminder for the specified event in a user calendar until a new time.|
 |[List instances](../api/event-list-instances.md) |[Event](event.md) collection| Get a Event object collection.|
