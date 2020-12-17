@@ -13,6 +13,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## December 2020
 
+### Calendar
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added the **hideAttendees** property to the [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) entity.
+
 ### Change notifications
 
 | **Change type** | **Version**   | **Description**                          |
@@ -202,12 +208,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta and v1.0 | Added [verified publisher](/graph/api/resources/verifiedPublisher) properties to the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) resources. |
 | Addition | beta and v1.0 | Added [setVerifiedPublisher](/graph/api/application-setverifiedpublisher) and [unsetVerifiedPublisher](/graph/api/application-unsetverifiedpublisher) methods to the [application](/graph/api/resources/application) resource. |
 | Addition | v1.0 | Added [delegatedPermissionClassification](/graph/api/resources/delegatedpermissionclassification?view=graph-rest-1.0&preserve-view=true) navigation to the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0&preserve-view=true) resource.
-
-### Calendar
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | Beta | Added the **hideAttendees** property to the [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) entity.
 
 ### Change notifications
 
