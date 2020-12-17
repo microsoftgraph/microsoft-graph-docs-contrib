@@ -36,7 +36,7 @@ GET /chats
 
 ## Optional query parameters
 
-This method supports the `$expand` (only for members property) and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$expand` (only for the **members** property) and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
