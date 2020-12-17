@@ -1,5 +1,5 @@
 ---
-title: Update print job configuration
+title: Update printJob configuration
 description: Update the configuration of a print job
 author: tomsato-ms
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# Update print job configuration
+# Update printJob configuration
 
 Namespace: microsoft.graph
 
