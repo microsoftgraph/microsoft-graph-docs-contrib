@@ -103,7 +103,7 @@ The following example gets the listener by id for the onSignupStart event and ex
 
 <!-- {
   "blockType": "request",
-  "name": "get_authenticationlistener_invokeuserflow"
+  "name": "get_authenticationlistener_invokeuserflowlistener"
 }
 -->
 
