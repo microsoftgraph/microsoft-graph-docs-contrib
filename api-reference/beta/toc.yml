@@ -10751,8 +10751,9 @@ items:
              - name: Delete user flow attribute assignment
                href: api/identityuserflowattributeassignment-delete.md
           - name: API connectors
-            href: resources/identityapiconnector.md
             items:
+            - name: API connector
+              href: resources/identityapiconnector.md
             - name: List
               href: api/identityapiconnector-list.md
             - name: Create
