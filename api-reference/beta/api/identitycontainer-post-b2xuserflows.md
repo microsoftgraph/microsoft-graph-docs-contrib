@@ -241,10 +241,10 @@ Content-length: 154
     "userFlowTypeVersion": 1,
     "apiConnectorConfiguration":{
         "postFederationSignup":{
-            "@odata.id": "https://graph.microsoft.com/beta/apiConnectors/{apiConnectorId}"
+            "@odata.id": "https://graph.microsoft.com/beta/apiConnectors/{id}"
         },
         "postAttributeCollection":{
-            "@odata.id": "https://graph.microsoft.com/beta/apiConnectors/{apiConnectorId}"
+            "@odata.id": "https://graph.microsoft.com/beta/apiConnectors/{id}"
         }
     }
 }

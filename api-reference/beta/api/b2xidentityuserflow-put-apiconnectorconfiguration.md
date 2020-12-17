@@ -109,7 +109,7 @@ PUT https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_testuserflow/ap
 Content-Type: application/json
 
 {
-    "@odata.id": "https://graph.microsoft.com/beta/apiConnectors/{apiConnectorId}"   
+    "@odata.id": "https://graph.microsoft.com/beta/apiConnectors/{id}"   
 }
 ```
 
