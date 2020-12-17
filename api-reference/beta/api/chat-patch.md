@@ -46,7 +46,7 @@ The following table shows the properties that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|topic|String|The title of the chat. This can only be set for a chat of type `group`.|
+|topic|String|The title of the chat. This can only be set for a chat with a **chatType** value of `group`.|
 
 
 ## Response
