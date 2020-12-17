@@ -10690,6 +10690,8 @@ items:
                href: api/identitycontainer-post-b2cuserflows.md
              - name: Get
                href: api/b2cidentityuserflow-get.md
+             - name: Update
+               href: api/b2cidentityuserflow-update.md
              - name: Delete
                href: api/b2cidentityuserflow-delete.md
              - name: List identity providers
@@ -10702,6 +10704,10 @@ items:
                href: api/b2cidentityuserflow-list-userattributeassignments.md
              - name: Create user attribute assignment
                href: api/b2cidentityuserflow-post-userattributeassignments.md
+             - name: List languages
+               href: api/b2cidentityuserflow-list-languages.md
+             - name: Create language
+               href: api/b2cidentityuserflow-put-languages.md
           - name: Self-service sign up user flows
             items:
              - name: B2X user flow
@@ -10724,6 +10730,8 @@ items:
                href: api/b2xidentityuserflow-list-userattributeassignments.md
              - name: Create user attribute assignment
                href: api/b2xidentityuserflow-post-userattributeassignments.md
+             - name: List languages
+               href: api/b2xidentityuserflow-list-languages.md
           - name: User flow attributes
             items:
              - name: User flow attribute
@@ -10748,6 +10756,26 @@ items:
                href: api/identityuserflowattributeassignment-update.md
              - name: Delete user flow attribute assignment
                href: api/identityuserflowattributeassignment-delete.md
+          - name: User flow language configuration
+            items:
+             - name: User flow language configuration
+               href: resources/userflowlanguageconfiguration.md
+             - name: Get userFlowLanguageConfiguration
+               href: api/userflowlanguageconfiguration-get.md
+             - name: Delete userFlowLanguageConfiguration
+               href: api/userflowlanguageconfiguration-delete.md
+             - name: List defaultPages
+               href: api/userflowlanguageconfiguration-list-defaultpages.md
+             - name: List overridesPages
+               href: api/userflowlanguageconfiguration-list-overridespages.md
+             - name: User flow language page
+               href: resources/userflowlanguagepage.md
+             - name: Get userFlowLanguagePage
+               href: api/userflowlanguagepage-get.md
+             - name: Update userFlowLanguagePage
+               href: api/userflowlanguagepage-put.md
+             - name: Delete userFlowLanguagePage
+               href: api/userflowlanguagepage-delete.md
       - name: Governance
         items:
         - name: Access reviews (groups)
