@@ -9,7 +9,7 @@ author: nmetulev
 
 The MSAL provider uses [MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) to sign in users and acquire tokens to use with Microsoft Graph.
 
-To learn more, see [providers](../providers.md).
+To learn more, see [providers](./providers.md).
 
 ## Get started
 
@@ -47,7 +47,11 @@ import {UserAgentApplication} from "msal";
 Providers.globalProvider = new MsalProvider(config: MsalConfig);
 ```
 
-where MsalConfig is:
+You can configure the `MsalProvider` constructor parameter in two ways, as described in the following sections.
+
+#### Provide a `clientId` to create a new `UserAgentApplication`
+
+This option makes sense when Graph Toolkit is responsible for all authentication in your application.
 
 ```ts
 interface MsalConfig {
@@ -61,7 +65,20 @@ interface MsalConfig {
 }
 ```
 
-You must provide a `clientId` (to create a new `UserAgentApplication`).
+#### Pass an existing `UserAgentApplication` in the `userAgentApplication` property.
+
+Use this when your app uses MSAL functionality beyond what's exposed by the `MsalProvider` and other Microsoft Graph Toolkit features. This is particularly appropriate if a framework automatically instantiates and exposes a `UserAgentApplication` for you; for example, when using [msal-angular](https://docs.microsoft.com/azure/active-directory/develop/tutorial-v2-angular).
+
+Be sure to understand opportunities for collisions when using this option. By its very nature, there is a risk that the `MsalProvider` can change the state of a session, for example by having the user sign in or consent to additional scopes. Make sure that your app and other frameworks respond gracefully to these changes in state, or consider using a [custom provider](/graph/toolkit/providers/custom) instead.
+
+```ts
+interface MsalConfig {
+  userAgentApplication: UserAgentApplication;
+  scopes?: string[];
+  loginType?: LoginType; // LoginType.Popup or LoginType.Redirect (redirect is default)
+  loginHint?: string;
+}
+```
 
 To learn more about MSAL.js and for additional options you can use when initializing the MSAL library, see the [MSAL documentation](/azure/active-directory/develop/msal-js-initializing-client-applications).
 
