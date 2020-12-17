@@ -16,7 +16,7 @@ Represents a bot in the Microsoft Teams ecosystem.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get bot](../api/teamsappdefinition-get-teamworkbot.md)|[teamworkBot](../resources/teamworkbot.md)|Read the properties and relationships of a [teamworkBot](../resources/teamworkbot.md) object.|
+|[Get bot](../api/teamworkbot-get.md)|[teamworkBot](../resources/teamworkbot.md)|Read the properties and relationships of a [teamworkBot](../resources/teamworkbot.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -1,5 +1,5 @@
 ---
-title: "Get bot"
+title: "Get teamworkBot"
 description: "Read the properties and relationships of a teamworkBot object."
 author: "AkJo"
 localization_priority: Normal
@@ -7,10 +7,10 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get bot
+# Get teamworkBot
 Namespace: microsoft.graph
 
-Read the properties and relationships of a [teamworkBot](../resources/teamworkbot.md) object inside a [teamsAppDefinition](../resources/teamsappdefinition.md) resource.
+Get the bot associated with a specific [definition](../resources/teamsappdefinition.md) of the  [TeamsApp](../resources/teamsapp.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
