@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Put userFlowLanguagePage
+# Update userFlowLanguagePage
 
 Namespace: microsoft.graph
 
