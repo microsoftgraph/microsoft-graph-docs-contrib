@@ -142,3 +142,14 @@ Content-Type: application/json
   }
 }
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get authenticationListener",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: get_authenticationlistener_invokeuserflowlistener/container/userFlow/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
+  ]
+}-->

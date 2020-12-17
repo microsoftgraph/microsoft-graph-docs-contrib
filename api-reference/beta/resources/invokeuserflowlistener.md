@@ -43,7 +43,6 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.invokeUserFlowListener",
   "id": "String (identifier)",
   "priority": "Integer",
   "sourceFilter": {
