@@ -13,6 +13,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## December 2020
 
+### Calendar
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added the **hideAttendees** property to the [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true) entity.
+
 ### Change notifications
 
 | **Change type** | **Version**   | **Description**                          |
@@ -100,12 +106,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the following methods to the [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) resource: [Add chat member](/graph/api/chat-post-members?view=graph-rest-beta&preserve-view=true), [Delete chat member](/graph/api/chat-delete-members?view=graph-rest-beta&preserve-view=true).|
 
 ## November 2020
-
-### Calendar
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | Added the **hideAttendees** property to the [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true) entity.
 
 ### Change notifications
 
