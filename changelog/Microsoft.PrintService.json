@@ -31,16 +31,16 @@
         {
           "Id": "2241d4d1-9372-4ce3-9888-61cf63abea21",
           "ApiChange": "Resource",
-          "ChangedApiName": "update printJob configuration",
+          "ChangedApiName": "printJob",
           "ChangeType": "Addition",
-          "Description": "Added the [update configuration](https://docs.microsoft.com/en-us/graph/api/printjob-update-configuration?view=graph-rest-beta) action to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
-          "Target": "update printJob configuration"
+          "Description": "Added the [update configuration](https://docs.microsoft.com/en-us/graph/api/printjob-update-configuration?view=graph-rest-beta) method to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
+          "Target": "printJob"
         }
       ],
       "Id": "2241d4d1-9372-4ce3-9888-61cf63abea21",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-12-11T00:00:00",
+      "CreatedDateTime": "2020-12-16T00:00:00",
       "WorkloadArea": "Devices and apps ",
       "SubArea": " Cloud printing"
     },
