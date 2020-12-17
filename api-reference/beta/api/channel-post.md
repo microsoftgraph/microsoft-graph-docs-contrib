@@ -1,6 +1,6 @@
 ---
 title: "Create channel"
-description: "Create new channel in a Microsoft Team, as specified in the request body."
+description: "Create new channel in a team, as specified in the request body."
 localization_priority: Normal
 author: "laujan"
 ms.prod: "microsoft-teams"
@@ -44,7 +44,7 @@ POST /teams/{id}/channels
 
 ## Request body
 
-In the request body, supply a JSON representation of [channel](../resources/channel.md) object.
+In the request body, supply a JSON representation of a [channel](../resources/channel.md) object.
 
 ## Response
 
@@ -63,7 +63,6 @@ If the request is unsuccessful, this method returns a `400 Bad Request` response
 
 The following example shows a request to create a standard channel.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_group"
@@ -85,7 +84,7 @@ Content-type: application/json
 
 The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -111,7 +110,6 @@ Content-length: 201
 
 The following example shows a request to create a private channel and add a user as an team owner.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_user"
@@ -173,7 +171,6 @@ Content-length: 201
 
 The following example shows how to create a channel for imported messages.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_through_migration"
@@ -191,8 +188,6 @@ Content-Type: application/json
   "createdDateTime": "2020-03-14T11:22:17.067Z"
 }
 ```
-
----
 
 #### Response
 
@@ -214,9 +209,8 @@ Content-Location: /teams/{teamId}/channels/{channelId}
 
 #### Request
 
-The following example shows a request to create a standard channel with moderation settings. Create channel with moderation settings is only allowed for standard channel.
+The following example shows a request to create a standard channel with moderation settings. This operation can only be performed for a standard channel.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_user_with_moderation"
