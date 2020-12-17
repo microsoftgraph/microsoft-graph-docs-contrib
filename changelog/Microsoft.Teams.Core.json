@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "d5c3eb10-400c-11eb-ae35-ed470c456b69",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkTag",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkTag](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTag?view=graph-rest-beta) resource type",
+          "Target": "teamworkTag"
+        },
+        {
+          "Id": "d5c64f04-400c-11eb-ae35-ed470c456b69",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkTagMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkTagMember](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTagMember?view=graph-rest-beta) resource type",
+          "Target": "teamworkTagMember"
+        },
+        {
+          "Id": "d5c8aed6-400c-11eb-ae35-ed470c456b69",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "teamworkTagType",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamworkTagType** enumeration type",
+          "Target": "teamworkTagType"
+        }
+      ],
+      "Id": "b7bad23d-b41d-4d07-8990-3a02d3ddac4a",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-17T21:46:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "13c3dcc8-1e1e-11eb-aa81-6d719f0c7da5",
           "ApiChange": "Property",
           "ChangedApiName": "chatType",
