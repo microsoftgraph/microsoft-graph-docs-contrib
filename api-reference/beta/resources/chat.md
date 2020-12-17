@@ -52,8 +52,17 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | id| String| The chat's unique identifier. Read-only.|
 | topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
 | createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
-| lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or membership changed. Read-only.|
-| chatType| [chatType](../resources/enums.md#chattype-values) | Type of chat entity.|
+| lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or list of members were last changed. Read-only.|
+| chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. Possible values are:`group`, `oneOnOne` and `meeting`.|
+
+### chatType values 
+
+| Member             | Value | Description               |
+| :----------------- | :---- | :------------------------ |
+|oneOnOne            | 0     | Indicates that the chat is a 1:1 chat. The roster size is fixed for this type of chat; members cannot be removed/added.|
+|group               | 1     | Indicates that the chat is a group chat. The roster size (of at least two people) can be updated for this type of chat. Members can be removed/added later.|
+|meeting             | 2     | Indicates that the chat is associated with an online meeting. This type of chat is only created as part of the creation of an online meeting.|
+|unknownFutureValue  | 3     | Sentinel value to indicate future values. |
 
 ## Relationships
 

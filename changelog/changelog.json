@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "chatType",
           "ChangeType": "Addition",
-          "Description": "Added the **chatType** property to [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource",
+          "Description": "Added the **chatType** property to [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
           "Target": "chat"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "chatType",
           "ChangeType": "Addition",
-          "Description": "Added the **chatType** enumeration type",
+          "Description": "Added the **chatType** enumeration type.",
           "Target": "chatType"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "method",
           "ChangedApiName": "Create chat, Update chat",
           "ChangeType": "Addition",
-          "Description": "Added the following methods to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource: <ul><li>[Create chat](https://docs.microsoft.com/en-us/graph/api/chat-post?view=graph-rest-beta&preserve-view=true)</li><li>[Update chat](https://docs.microsoft.com/en-us/graph/api/chat-patch?view=graph-rest-beta&preserve-view=true)</li></ul>",
+          "Description": "Added the following methods to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource: <ul><li>[Create chat](https://docs.microsoft.com/en-us/graph/api/chat-post?view=graph-rest-beta&preserve-view=true)</li><li>[Update chat](https://docs.microsoft.com/en-us/graph/api/chat-patch?view=graph-rest-beta&preserve-view=true)</li></ul>.",
           "Target": "Create chat, Update chat"
         }
       ],

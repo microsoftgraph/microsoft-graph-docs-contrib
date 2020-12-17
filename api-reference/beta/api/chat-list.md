@@ -115,8 +115,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: List all the chats and expand the chats' members
-
+### Example 2: List all the chats along with the members of each chat
 #### Request
 
 Here is an example of the request.
@@ -275,7 +274,7 @@ Content-type: application/json
 
 #### Request
 
-Here is an example of the request that will filter all the chats based on a specific member's display name.
+Here is an example of a request that will filter all the chats based on a specific member's display name.
 
 # [HTTP](#tab/http)
 <!-- {

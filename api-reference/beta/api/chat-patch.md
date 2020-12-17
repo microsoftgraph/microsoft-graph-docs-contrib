@@ -51,7 +51,7 @@ The following table shows the properties that can be used with this action.
 
 ## Response
 
-If successful, this method returns a `200 OK response` code and the chatType and the topic for `group` chatType and members added to the chat in the response body.
+If successful, this method returns a `200 OK response` code and the updated **chat** resource in the response body.
 
 ## Examples
 
@@ -72,7 +72,7 @@ Content-Type: application/json
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

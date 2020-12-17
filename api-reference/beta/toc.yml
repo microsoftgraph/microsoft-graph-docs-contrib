@@ -12638,10 +12638,10 @@ items:
         items:
         - name: List chats
           href: api/chat-list.md
-        - name: Get chat
-          href: api/chat-get.md
         - name: Create chat
           href: api/chat-post.md
+        - name: Get chat
+          href: api/chat-get.md
         - name: Update chat
           href: api/chat-patch.md
         - name: List chat members

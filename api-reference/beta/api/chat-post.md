@@ -42,21 +42,21 @@ POST /chats
 ## Request body
 In the request body, supply a JSON representation of the [chat](../resources/chat.md) object.
 
-The following table shows the properties that can be used with this action.
+The following table lists the properties that are required to create a chat object.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|topic|String|The title of the chat. This can only be set for a 'group' type chat.|
-|chatType|[chatType](../resources/enums.md#chattype-values)| Type of chat entity.|
-|members|[conversationMember](../resources/conversationmember.md) collection|List of conversation members that should be added. The caller user id must be specified in the members collection.|
+|topic|(Optional) String|The title of the chat. The chat title can be provided only if the chat is of 'group' type.|
+|chatType|[chatType](../resources/chat.md#chattype-values)| Specifies the type of chat. Possible values are:`group` and `oneOnOne`. |
+|members|[conversationMember](../resources/conversationmember.md) collection|List of conversation members that should be added. Every single user, including the user initiating the create request, who will participate in the chat must be specified in this list.|
 
 ## Response
 
-If successful, this method returns a 201 Created response code and a Location header and the chatType and the topic (for 'group' chatType only if any) and members added to the chat in the response body.
+If successful, this method returns a 201 Created response code and the newly created **chat** resource in the response body.
 
 ## Examples
 
-### Example 1: Create oneOnOne chat
+### Example 1: Create a one-on-one chat
 
 #### Request
 <!-- {
@@ -69,22 +69,25 @@ POST https://graph.microsoft.com/beta/chats
 Content-Type: application/json
 
 {
-    "chatType": "OneOnOne",
-    "members": [{
-        "@odata.type": "microsoft.graph.aadUserConversationMember",
-        "roles": ["owner"],
-        "user@odata.bind": "https://graph.microsoft.com/beta/users('8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca')"
-    }, {
-        "@odata.type": "microsoft.graph.aadUserConversationMember",
-        "roles": ["owner"],
-        "user@odata.bind": "https://graph.microsoft.com/beta/users('82fe7758-5bb3-4f0d-a43f-e555fd399c6f')"
-    }]
+  "chatType": "oneOnOne",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
+    },
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')"
+    }
+  ]
 }
 ```
 ---
 
 #### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -105,7 +108,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Create group chat
+### Example 2: Create a group chat
 
 #### Request
 <!-- {
@@ -118,27 +121,31 @@ POST https://graph.microsoft.com/beta/chats
 Content-Type: application/json
 
 {
-    "chatType": "Group",
-    "topic": "Group chat title",
-    "members": [{
-        "@odata.type": "microsoft.graph.aadUserConversationMember",
-        "roles": ["owner"],
-        "user@odata.bind": "https://graph.microsoft.com/beta/users('8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca')"
-    }, {
-        "@odata.type": "microsoft.graph.aadUserConversationMember",
-        "roles": ["owner"],
-        "user@odata.bind": "https://graph.microsoft.com/beta/users('82fe7758-5bb3-4f0d-a43f-e555fd399c6f')"
-    }, {
-        "@odata.type": "microsoft.graph.aadUserConversationMember",
-        "roles": ["owner"],
-        "user@odata.bind": "https://graph.microsoft.com/beta/users('3626a173-f2bc-4883-bcf7-01514c3bfb82')"
-    }]
+  "chatType": "group",
+  "topic": "Group chat title",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca')"
+    },
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('82fe7758-5bb3-4f0d-a43f-e555fd399c6f')"
+    },
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('3626a173-f2bc-4883-bcf7-01514c3bfb82')"
+    }
+  ]
 }
 ```
 ---
 
 #### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
