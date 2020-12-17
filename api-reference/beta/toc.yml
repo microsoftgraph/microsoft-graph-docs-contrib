@@ -1677,6 +1677,8 @@ items:
             href: api/printjob-get.md
           - name: Start
             href: api/printjob-start.md
+          - name: Update
+            href: api/printjob-update-configuration.md
           - name: Cancel
             href: api/printjob-cancel.md
         - name: Print operation
