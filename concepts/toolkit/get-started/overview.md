@@ -27,6 +27,9 @@ To use the Toolkit via mgt-loader, add the reference in a script to your code:
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+
+<mgt-msal-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal-provider>
+<mgt-login></mgt-login>
 ```
 # [npm](#tab/npm)
 Using the Toolkit via ES6 modules will give you full control of the bundling process and allow you to bundle only the code you need for your application. To use the ES6 modules, add the npm package to your project:
@@ -37,13 +40,12 @@ npm install @microsoft/mgt
 Now you can reference all the components in the page you're using:
 
 ```html
-<script src="node_modules/@microsoft/mgt/dist/es6/components.js"></script>
+<script type="module" src="node_modules/@microsoft/mgt/dist/es6/index.js"></script>
+
+<mgt-login></mgt-login>
+<mgt-agenda></mgt-agenda>
 ```
 
-Or, just reference the component you need and avoid loading everything else:
-```html
-<script src="node_modules/@microsoft/mgt/dist/es6/components/mgt-login/mgt-login.js"></script>
-```
 
 ---
 
@@ -90,7 +92,7 @@ The [`@microsoft/mgt-react`](./mgt-react.md) package contains all auto-generated
 
 ## Polyfills
 
-If you're using the ES6 modules from the npm package and you're [targeting a browser such as IE11](https://caniuse.com/#search=components) that does not support web components natively, you will need to include polyfills in your project, as they are not automatically included. Polyfills help to fill in missing browser capabilities in browsers that are still in the process of updating to support webcComponent standards. For instructions and to learn more, see [polyfills documentation](https://www.webcomponents.org/polyfills). 
+If you're using the ES6 modules from the npm package and you're [targeting a browser such as IE11](https://caniuse.com/#search=components) that does not support web components natively, you will need to include polyfills in your project, as they are not automatically included. Polyfills help to fill in missing browser capabilities in browsers that are still in the process of updating to support Web Component standards. For instructions and to learn more, see [polyfills documentation](https://www.webcomponents.org/polyfills). 
 
 The polyfills are already included if you're using the Toolkit via the mgt-loader script.
 

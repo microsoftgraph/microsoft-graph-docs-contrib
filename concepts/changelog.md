@@ -34,10 +34,26 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
+| Change | beta | Changed **floorNumber** (Edm.Int) property on [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta&preserve-view=true) resource to **floor** (Edm.String). |
+| Change | beta | Changed **roomNumber** (Edm.Int) property on [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta&preserve-view=true) resource to **roomName** (Edm.String). |
 | Change | beta | Changed type of allowedUsers relationship on [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) resource. |
 | Change | beta | Changed type of allowedGroups relationship on [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) resource. |
 | Change | beta | Updated enum types in [printerProcessingStateDetail](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values) resource. |
+| Addition | beta | Added the [update configuration](/graph/api/printjob-update-configuration?view=graph-rest-beta) action to the [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource.|
 
+### Devices and apps | Cloud PC
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the `failed` member to the **cloudPcStatus** enumeration.|
+|Deletion|beta|Removed the `upgradeFailed`,`provisionFailed`, `deprovisionFailed`, `reprovisionFailed` members from the **cloudPcStatus** enumeration.|
+### Education
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the **notificationChannelUrl** optional property to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) resource | 
+| Addition | beta | Added the **addedStudentAction** optional property to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) resource |
+| Addition | beta | Added the **educationAddedStudentAction** enumeration type |
 
 ### Identity and access
 
@@ -56,6 +72,10 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added methods for listing and creating user attribute assignments to the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added methods for listing and creating user attribute assignments to the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | v1.0 | Added the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true) resource type. |
+| Addition | beta | Added the [userFlowLanguageConfiguration](/graph/api/resources/userflowlanguageconfiguration?view=graph-rest-beta&preserve-view=true) entity for managing the language defaults and customizations within a user flow in an Azure Active Directory or Azure Active Directory B2C tenant. |
+| Addition | beta | Added the [userFlowLanguagePage](/graph/api/resources/userflowlanguagepage?view=graph-rest-beta&preserve-view=true) entity that defines the language defaults and customizations within a user flow in an Azure Active Directory or Azure Active Directory B2C tenant. |
+| Addition | beta | Added properties for **isLanguageCustomizationEnabled** and **defaultLanguageTag** and methods for listing and creating languages to the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added methods for listing langauges to the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added [email authentication method configuration](/graph/api/resources/emailauthenticationmethodconfiguration?view=graph-rest-beta) to the [authentication methods policy](/graph/api/resources/authenticationmethodspolicies-overview) API.|
 
 ### Teamwork
@@ -75,6 +95,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the [aadUserConversationMemberResult](/graph/api/resources/aaduserconversationmemberresult?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added the [publicInnerError](/graph/api/resources/publicinnererror?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added the [publicErrorDetail](/graph/api/resources/publicerrordetail?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the **tenantId** property to [aadUserConversationMember](/graph/api/resources/aadUserConversationMember?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the **visibleHistoryStartDateTime** property to [conversationMember](/graph/api/resources/conversationMember?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the following methods to the [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) resource: [Add chat member](/graph/api/chat-post-members?view=graph-rest-beta&preserve-view=true), [Delete chat member](/graph/api/chat-delete-members?view=graph-rest-beta&preserve-view=true).|
 | Addition | beta | Added the **chatType** property to [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added the **chatType** enumeration type. |
 | Addition | beta | Added the following methods to the [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource: [Create chat](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true), [Update chat](/graph/api/chat-patch?view=graph-rest-beta&preserve-view=true). |

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->This documentation applies to access reviews of Microsoft 365 groups. For access reviews for all other resource types, see [Access reviews (all resources)](accessreviews-root.md).
+>This documentation applies to access reviews of group memberships. For access reviews on all other supported resource types, see [Access reviews (all resources)](accessreviews-root.md).
 >
 >Currently, this API only supports access reviews of group memberships.
 

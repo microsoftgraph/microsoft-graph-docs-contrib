@@ -11,6 +11,14 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### educationAddedStudentAction values 
+
+|Member|
+|:---|
+|none|
+|assignIfOpen|
+|unknownFutureValue|
+
 ### externalEmailOtpState values
 
 |Member|
@@ -1545,6 +1553,7 @@ Possible values for user account types (group membership), per Windows definitio
 |upgrading|
 |inGracePeriod|
 |deprovisioning|
+|failed|
 |upgradeFailed|
 |provisionFailed|
 |deprovisionFailed|
