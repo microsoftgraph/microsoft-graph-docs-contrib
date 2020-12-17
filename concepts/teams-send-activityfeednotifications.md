@@ -140,7 +140,6 @@ Content-Type: application/json
         }
     ]
 }
-
 ```
 
 #### Response
@@ -153,7 +152,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2 : Notify a user about a task created in a team
+### Example 2: Notify a user about a task created in a team
 
 This example shows how you can send an activity feed notification for a team. This example notifies the team owner about a new task created that requires their attention.
 
@@ -187,7 +186,6 @@ Content-Type: application/json
         }
     ]
 }
-
 ```
 
 #### Response
