@@ -1,5 +1,5 @@
 ---
-title: "Patch channel"
+title: "Update channel"
 description: "Update the properties of the specified channel."
 author: "clearab"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Patch channel
+# Update channel
 
 Namespace: microsoft.graph
 
@@ -38,13 +38,13 @@ PATCH /teams/{id}/channels/{id}
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
 In the request body, supply a JSON representation of [channel](../resources/channel.md) object.
 
-> Note: You cannot update the `membershipType` value for an existing channel.
+> **Note:** You cannot update the `membershipType` value for an existing channel.
 
 ## Response
 
@@ -74,7 +74,8 @@ PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 #### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,9 +89,8 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following example shows a request to update a channel with moderation settings. Update channel with moderation settings is only allowed to be performed by Team owner.
+The following example shows a request to update a channel with moderation settings. This operation can only be performed by a team owner.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_channel_with_moderationSettings"
@@ -115,7 +115,8 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
