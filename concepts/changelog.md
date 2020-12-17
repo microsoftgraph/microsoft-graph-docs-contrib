@@ -103,8 +103,10 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the following methods to the [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource: [Create chat](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true), [Update chat](/graph/api/chat-patch?view=graph-rest-beta&preserve-view=true). |
 | Addition | beta | Added the [teamworkBot](/graph/api/resources/teamworkbot?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added the **bot** relationship to the [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta&preserve-view=true) resource.|
-
-
+| Addition | beta | Added the **moderationSettings** property to [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the [channelModerationSettings](https://docs.microsoft.com/en-us/graph/api/resources/channelModerationSettings2?view=graph-rest-beta&preserve-view=true) resource type. |
+| Addition | beta | Added the **replyRestriction** enumeration type. |
+| Addition | beta | Added the **userNewMessageRestriction** enumeration type. |
 
 ## November 2020
 

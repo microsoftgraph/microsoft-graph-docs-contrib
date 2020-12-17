@@ -28,6 +28,23 @@ Namespace: microsoft.graph
 |disabled|
 |unknownFutureValue|
 
+### replyRestriction values
+
+| Member
+|:--------------
+| everyone
+| authorAndModerators
+| unknownFutureValue
+
+### userNewMessageRestriction values
+
+| Member
+|:--------------
+|everyone
+|everyoneExceptGuests
+|moderators
+|unknownFutureValue
+
 ### volumeType values
 
 | Member
