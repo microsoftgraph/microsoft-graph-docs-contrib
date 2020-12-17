@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "31b49e7e-38e9-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Property",
+          "ChangedApiName": "moderationSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **moderationSettings** property to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "31c7b2f0-38e9-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channelModerationSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [channelModerationSettings](https://docs.microsoft.com/en-us/graph/api/resources/channelModerationSettings?view=graph-rest-beta) resource type.",
+          "Target": "channelModerationSettings"
+        },
+        {
+          "Id": "31ced9c7-38e9-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "replyRestriction",
+          "ChangeType": "Addition",
+          "Description": "Added the **replyRestriction** enumeration type.",
+          "Target": "replyRestriction"
+        },
+        {
+          "Id": "31d13b58-38e9-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "userNewMessageRestriction",
+          "ChangeType": "Addition",
+          "Description": "Added the **userNewMessageRestriction** enumeration type.",
+          "Target": "userNewMessageRestriction"
+        }
+      ],
+      "Id": "31b23bd2-38e9-11eb-9836-6aeb5ee7dda6",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-16T00:06:17.723Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f69c822d-8c2a-4f34-9882-406e4ddc0273",
           "ApiChange": "Resource",
           "ChangedApiName": "publicInnerError",
