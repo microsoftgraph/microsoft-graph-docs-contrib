@@ -3,6 +3,100 @@
     {
       "ChangeList": [
         {
+          "Id": "13c3dcc8-1e1e-11eb-aa81-6d719f0c7da5",
+          "ApiChange": "Property",
+          "ChangedApiName": "chatType",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatType** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "13c8a17d-1e1e-11eb-aa81-6d719f0c7da5",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "chatType",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatType** enumeration type.",
+          "Target": "chatType"
+        },
+        {
+          "Id": "13c3dcc8-1e1e-11eb-aa81-6d719f0c7da5",
+          "ApiChange": "method",
+          "ChangedApiName": "Create chat, Update chat",
+          "ChangeType": "Addition",
+          "Description": "Added the following methods to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource: <ul><li>[Create chat](https://docs.microsoft.com/en-us/graph/api/chat-post?view=graph-rest-beta&preserve-view=true)</li><li>[Update chat](https://docs.microsoft.com/en-us/graph/api/chat-patch?view=graph-rest-beta&preserve-view=true)</li></ul>.",
+          "Target": "Create chat, Update chat"
+        }
+      ],
+      "Id": "13c3dcc8-1e1e-11eb-aa81-6d719f0c7da5",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-16T21:46:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "df2ac698-353d-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to [aadUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/aadUserConversationMember?view=graph-rest-beta) resource",
+          "Target": "aadUserConversationMember"
+        },
+        {
+          "Id": "df2d2808-353d-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Property",
+          "ChangedApiName": "visibleHistoryStartDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **visibleHistoryStartDateTime** property to [conversationMember](https://docs.microsoft.com/en-us/graph/api/resources/conversationMember?view=graph-rest-beta) resource",
+          "Target": "conversationMember"
+        },
+        {
+          "Id": "df2d2808-353d-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "method",
+          "ChangedApiName": "Add chat member, Delete chat member",
+          "ChangeType": "Addition",
+          "Description": "Added the following methods to the [conversationMember](https://docs.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) resource: <ul><li>[Add chat member](https://docs.microsoft.com/en-us/graph/api/chat-post-members?view=graph-rest-beta&preserve-view=true)</li><li>[Delete chat member](https://docs.microsoft.com/en-us/graph/api/chat-delete-members?view=graph-rest-beta&preserve-view=true)</li></ul>",
+          "Target": "Add chat member, Delete chat member"
+        }
+      ],
+      "Id": "df28662b-353d-11eb-9836-6aeb5ee7dda6",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-03T08:02:21.817Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a659bbcb-28bb-11eb-9746-158983535857",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "bot",
+          "ChangeType": "Addition",
+          "Description": "Added the **bot** relationship to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource.",
+          "Target": "teamsAppDefinition"
+        },
+        {
+          "Id": "a65c2d4b-28bb-11eb-9746-158983535857",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkBot",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-beta) resource type.",
+          "Target": "teamworkBot"
+        }
+      ],
+      "Id": "a6575ac5-28bb-11eb-9746-158983535857",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-14T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "31b49e7e-38e9-11eb-9836-6aeb5ee7dda6",
           "ApiChange": "Property",
           "ChangedApiName": "moderationSettings",
