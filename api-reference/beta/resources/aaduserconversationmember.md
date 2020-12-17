@@ -41,9 +41,9 @@ Represents an Azure Active Directory user in a [chat](chat.md) or [channel](chan
 |id| String | Read-only. Unique ID of the user.|
 |displayName| String | The display name of the user. |
 |roles| String collection | The roles for that user. |
-|userId| String | The guid of the user. |
+|userId| String | The GUID of the user. |
 |email| String  | The email address of the user. |
-|tenantId| string  | TenantId which the AAD User belongs to. |
+|tenantId| string  | TenantId which the Azure AD user belongs to. |
 |visibleHistoryStartDateTime| DateTimeOffset  | The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.|
 
 ## JSON representation
