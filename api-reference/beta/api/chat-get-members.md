@@ -1,5 +1,5 @@
 ---
-title: "Get member of a chat"
+title: "Get conversationMember in a chat"
 description: "Retrieve a member of a chat."
 author: "clearab"
 localization_priority: Priority
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get member of a chat
+# Get conversationMember in a chat
 
 Namespace: microsoft.graph
 
