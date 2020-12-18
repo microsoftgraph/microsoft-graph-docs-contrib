@@ -13,6 +13,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## December 2020
 
+### Calendar
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added the **hideAttendees** property to the [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) entity.
+
 ### Change notifications
 
 | **Change type** | **Version**   | **Description**                          |
