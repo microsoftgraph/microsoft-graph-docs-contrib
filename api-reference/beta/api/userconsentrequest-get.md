@@ -1,27 +1,27 @@
 ---
-title: "Get adminConsentRequestPolicy"
-description: "Read the properties and relationships of an adminConsentRequestPolicy object."
+title: "Get userConsentRequest"
+description: "Read the properties and relationships of a userConsentRequest object."
 author: ""
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Get adminConsentRequestPolicy
+# Get userConsentRequest
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) object.
+Read the properties and relationships of a [userConsentRequest](../resources/userconsentrequest.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.ConsentRequest |
+|Delegated (work or school account)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported. |
+|Application|Not supported.|
 
 The work or school account needs to belong to one of the following roles: *Global administrator*, *Global Reader*, *Cloud App Administrator*, or *Application Administrator*.
 
@@ -32,7 +32,7 @@ The work or school account needs to belong to one of the following roles: *Globa
 }
 -->
 ``` http
-GET /policies/adminConsentRequestPolicy
+GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/{id}
 ```
 
 ## Optional query parameters
@@ -48,18 +48,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [userConsentRequest](../resources/userconsentrequest.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_adminconsentrequestpolicy"
+  "name": "get_userconsentrequest"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/adminConsentRequestPolicy
+GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/{id} 
 ```
 
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/policies/adminConsentRequestPolicy
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.adminConsentRequestPolicy"
+  "@odata.type": "microsoft.graph.userConsentRequest"
 }
 -->
 ``` http
@@ -77,18 +77,15 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "https://graph.microsoft.com/beta/$metadata#policies/adminConsentRequestPolicy/$entity",
-    "isEnabled": true,
-    "notifyReviewers": true,
-    "remindersEnabled": true,
-    "version": 0,
-    "requestDurationInDays": 15,
-    "reviewers": [
-      {
-        "query": "/users/02b7b641-2c01-4bd4-bd5e-8ec618a9fbfd",
-        "queryType": "MicrosoftGraph"
-      }
-    ]
+    "@odata.type": "#microsoft.graph.userConsentRequest",
+    "id": "6e9eb21d-b21d-6e9e-1db2-9e6e1db29e6e",
+    "reason": "String",
+    "createdBy": {
+      "@odata.type": "microsoft.graph.identitySet"
+    },
+    "status": "String",
+    "createdDateTime": "String (timestamp)"
   }
 }
 ```
+

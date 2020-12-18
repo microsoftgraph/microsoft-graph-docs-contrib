@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 A userConsentRequest is used for requesting access for an application when the application doesn't have the necessary consent to access organizational data it needs. 
 
 Inherits from [request](../resources/request.md).
@@ -25,10 +27,10 @@ Inherits from [request](../resources/request.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |createdBy|[userIdentity](../resources/useridentity.md)|The user who created the request. |
-|createdDateTime|DateTimeOffset|The date and time when the request was created.<br>The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.|
+|createdDateTime|DateTimeOffset|The date and time when the request was created.<br>The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.<br><br>Supports `$filter` (`eq` only) and `$sort`.|
 |id|String|The identifier of a request. Inherited from [request](../resources/request.md)|
-|reason|String|Reason for creating this request. |
-|status|String|Status of request. Initializing, InProgress, Completed |
+|reason|String|Reason for creating this request.<br><br>Supports `$filter` (`eq` only) and `$sort`. |
+|status|String|Status of request. `Initializing`, `InProgress`, `Completed`. <br><br>Supports `$filter` (`eq` only) and `$sort`. |
 
 ## Relationships
 |Relationship|Type|Description|
