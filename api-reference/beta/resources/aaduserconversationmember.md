@@ -33,7 +33,7 @@ Represents an Azure Active Directory user in a [team](team.md) or a [channel](ch
 |[List chat members](../api/chat-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all members in a chat.|
 |[Add chat member](../api/chat-post-members.md) | Location header | Add a member to a chat.| 
 |[Get chat member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a member in a chat.|
-|[Remove chat member](../api/chat-post-members.md) | Location header | Remove a member from a chat.| 
+|[Remove chat member](../api/chat-delete-members.md) | None | Remove a member from a chat.| 
 
 ## Properties
 
