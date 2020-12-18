@@ -25,9 +25,9 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[Create chat](../api/chat-post.md) | [chat](chat.md) | Create a new chat.| 
 |[Get chat](../api/chat-get.md) | [chat](chat.md) | Read properties and relationships of the chat.| 
 |[List chat members](../api/chat-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all users in the chat.| 
-|[Create chat member](../api/chat-post-members.md) | Location header | Add a user to the chat.| 
+|[Add chat member](../api/chat-post-members.md) | Location header | Add a user to the chat.| 
 |[Get chat member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a single user in the chat.| 
-|[Delete chat member](../api/chat-delete-members.md)|None|Remove a user from the chat.|
+|[Remove chat member](../api/chat-delete-members.md)|None|Remove a user from the chat.|
 |[List messages in a chat](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a 1:1 or group chat. | 
 |[Get message in chat](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. | 
 |[Get chat between user and app](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Get one-on-one chat between user and the app |
