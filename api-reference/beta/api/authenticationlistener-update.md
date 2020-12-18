@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the specified [authenticationListener](../resources/authenticationlistener.md) defined for an event in the authentication pipeline.
+Update the [authenticationListener](../resources/authenticationlistener.md) defined for an event in the authentication pipeline.
 
 ## Permissions
 
