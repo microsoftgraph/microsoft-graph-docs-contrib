@@ -47,17 +47,16 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby.                                                                                                                                                                                                  |
 | allowedPresenters     | onlineMeetingPresenters                       | Specifies who can be a presenter in a meeting. Possible values are `everyone`, `organization`, `roleIsPresenter`, `organizer`, and `unknownFutureValue`.                                                                                                    |
 | isBroadcast           | Boolean                                       | Indicates if this is a live event.                                                                                                                                                                                                                   |
-| broadcastSettings     | [broadcastSettings](broadcastSettings.md)     | Settings related to a live event*                                                                                                                                                                                                                    |
+| broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Settings related to a live event*                                                                                                                                                                                                                    |
 | attendeeReport        | Stream                                        | The content stream of the attendee report of a live event. Read-only.                                                                                                                                                                                       |
 | recording             | Stream                                        | The content stream of the recording of a live event. Read-only.                                                                                                                                                                                             |
 | alternativeRecording  | Stream                                        | The content stream of the alternative recording of a live event. Read-only.                                                                                                                                                                                 |
 
 > [!IMPORTANT]
 > The **autoAdmittedUsers** property is obsolete. Use **lobbyBypassSettings.scope** instead for meeting option configurations.
-
-> [!IMPORTANT]
-> Creating live events with the **broadcastSettings** property is in Beta, with important limitations. Please refer to
-> [broadcastSettings](../resources/broadcastSettings.md) for more details.
+> 
+> *\Creating live events with the **broadcastSettings** property is in Beta, with important limitations. Please refer to
+> [broadcastSettings](broadcastMeetingSettings.md) for more details.
 
 ### onlineMeetingPresenters values
 

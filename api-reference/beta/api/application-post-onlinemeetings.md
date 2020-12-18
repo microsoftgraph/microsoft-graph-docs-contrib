@@ -230,7 +230,7 @@ Content-Type: application/json
 
 > [!IMPORTANT]
 > Creating live events with the **broadcastSettings** property is in Beta, with important limitations. Please refer to
-> [broadcastSettings](../resources/broadcastSettings.md) for more details.
+> [broadcastSettings](../resources/broadcastMeetingSettings.md) for more details.
 
 #### Request
 
