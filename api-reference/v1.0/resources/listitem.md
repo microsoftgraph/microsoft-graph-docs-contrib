@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: listItem resource
 description: Represents an item in a sharepoint list.
 localization_priority: Priority
