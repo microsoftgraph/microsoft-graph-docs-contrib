@@ -10708,6 +10708,10 @@ items:
                href: api/b2cidentityuserflow-list-languages.md
              - name: Create language
                href: api/b2cidentityuserflow-put-languages.md
+             - name: Get API connectors configuration
+               href: api/b2cidentityuserflow-get-apiConnectorConfiguration.md
+             - name: Configure an API connector
+               href: api/b2cidentityuserflow-put-apiConnectorConfiguration.md
           - name: Self-service sign up user flows
             items:
              - name: B2X user flow

@@ -41,6 +41,14 @@
           "ChangeType": "Addition",
           "Description": "Added **apiConnectorConfiguration** property to the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) resource.",
           "Target": "b2xIdentityUserFlow"
+        },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e8",
+          "ApiChange": "Property",
+          "ChangedApiName": "b2cIdentityUserFlow",
+          "ChangeType": "Addition",
+          "Description": "Added **apiConnectorConfiguration** property to the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) resource.",
+          "Target": "b2cIdentityUserFlow"
         }
       ],
       "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e8",

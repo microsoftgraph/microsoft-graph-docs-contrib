@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property in a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) to enable or disable an API connector in a user flow. Each relationship of the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) corresponds to a specific step in the user flow that can be configured to call an API connector. You configure an API connector for a particular step one at a time as shown below.
+Update the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property in a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) to enable or disable an API connector in a user flow. Each relationship of the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) corresponds to a specific step in the user flow that can be configured to call an API connector. You configure an API connector for a particular step one at a time as shown below.
 
 ## Permissions
 
@@ -36,7 +36,7 @@ The work or school account needs to belong to one of the following roles:
 -->
 
 ``` http
-PUT /identity/b2xUserFlows/{b2xUserFlowId}/apiConnectorConfiguration/{step}/$ref
+PUT /identity/b2cUserFlows/{b2cUserFlowId}/apiConnectorConfiguration/{step}/$ref
 ```
 
 ## Request headers
@@ -64,12 +64,12 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "put_b2xuserflows-apiconnectorconfiguration_postFederationSignup"
+  "name": "put_b2cuserflows-apiconnectorconfiguration_postFederationSignup"
 }
 -->
 
 ``` http
-PUT https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_testuserflow/apiConnectorConfiguration/postFederationSignup/$ref
+PUT https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_testuserflow/apiConnectorConfiguration/postFederationSignup/$ref
 Content-Type: application/json
 
 {
@@ -100,12 +100,12 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "put_b2xuserflows-apiconnectorconfiguration_postAttributeCollection"
+  "name": "put_b2cuserflows-apiconnectorconfiguration_postAttributeCollection"
 }
 -->
 
 ``` http
-PUT https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_testuserflow/apiConnectorConfiguration/postAttributeCollection/$ref
+PUT https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_testuserflow/apiConnectorConfiguration/postAttributeCollection/$ref
 Content-Type: application/json
 
 {
@@ -134,12 +134,12 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "put_b2xuserflows-apiconnectorconfiguration_disable-postAttributeCollection"
+  "name": "put_b2cuserflows-apiconnectorconfiguration_disable-postAttributeCollection"
 }
 -->
 
 ``` http
-PUT https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_testuserflow/apiConnectorConfiguration/postAttributeCollection/$ref
+PUT https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_testuserflow/apiConnectorConfiguration/postAttributeCollection/$ref
 Content-Type: application/json
 
 { }
