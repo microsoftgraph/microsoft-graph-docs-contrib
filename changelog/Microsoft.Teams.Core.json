@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "a38f6f66-acdd-495e-8b76-9f32878e2c0a",
+          "ApiChange": "method",
+          "ChangedApiName": "Remove chat member",
+          "ChangeType": "Addition",
+          "Description": "Added the [Remove member from chat](https://docs.microsoft.com/en-us/graph/api/chat-delete-members?view=graph-rest-beta) method.",
+          "Target": "Chat"
+        }
+      ],
+      "Id": "a38f6f66-acdd-495e-8b76-9f32878e2c0a",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-17T21:46:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "13c3dcc8-1e1e-11eb-aa81-6d719f0c7da5",
           "ApiChange": "Property",
           "ChangedApiName": "chatType",
