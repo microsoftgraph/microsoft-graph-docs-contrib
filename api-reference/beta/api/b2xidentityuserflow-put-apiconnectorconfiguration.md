@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property in a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) to enable an API connector in a user flow. Each relationship of the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) corresponds to a specific step in the user flow that can be configured to call an API connector. You configure an API connector for a particular step one at a time as shown below.
+Update the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property in a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) to enable or disable an API connector in a user flow. Each relationship of the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) corresponds to a specific step in the user flow that can be configured to call an API connector. You configure an API connector for a particular step one at a time as shown below.
 
 ## Permissions
 
@@ -48,7 +48,7 @@ PUT /identity/b2xUserFlows/{b2xUserFlowId}/apiConnectorConfiguration/{step}/$ref
 
 ## Request body
 
-In the request body, provide a JSON representation of the `id` of the [identityApiConnector](../resources/identityapiconnector.md) you want to use the particular step.
+In the request body, provide a JSON representation of the `id` of the [identityApiConnector](../resources/identityapiconnector.md) you want to use the particular step. To disable an API connector, the value can be {}.
 
 ## Response
 
@@ -56,7 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Post Federation Sign Up
+### Example 1: Enable API connector for Post IDP Federation on sign up
 
 #### Request
 
@@ -73,7 +73,7 @@ PUT https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_testuserflow/ap
 Content-Type: application/json
 
 {
-    "@odata.id": "https://graph.microsoft.com/beta/apiConnectors/{id}"   
+    "@odata.id": "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"   
 }
 ```
 
@@ -92,7 +92,7 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Post Attribute Collection
+### Example 2: Enable API connector for Post Attribute Collection on sign up
 
 #### Request 
 
@@ -109,7 +109,7 @@ PUT https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_testuserflow/ap
 Content-Type: application/json
 
 {
-    "@odata.id": "https://graph.microsoft.com/beta/apiConnectors/{id}"   
+    "@odata.id": "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"   
 }
 ```
 

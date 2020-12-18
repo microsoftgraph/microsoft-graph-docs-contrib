@@ -229,10 +229,10 @@ Content-length: 154
     "userFlowTypeVersion": 1,
     "apiConnectorConfiguration":{
         "postFederationSignup":{
-            "@odata.id": "https://graph.microsoft.com/beta/apiConnectors/{id}"
+            "@odata.id": "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"
         },
         "postAttributeCollection":{
-            "@odata.id": "https://graph.microsoft.com/beta/apiConnectors/{id}"
+            "@odata.id": "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"
         }
     }
 }
@@ -243,7 +243,6 @@ Content-length: 154
 The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
-
 
 **Note:** The `apiConnectorConfiguration` property always returns a '{}' value. To see full value with the navigation properties, use [this](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md) API.
 
