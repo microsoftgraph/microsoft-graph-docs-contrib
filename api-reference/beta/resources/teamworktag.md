@@ -1,9 +1,9 @@
 ---
 title: "teamworkTag resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Tags provide a flexible way for customers to classify users or groups based on a common attribute"
+author: "rasikadhumal"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+Tags provide a flexible way for customers to classify users or groups based on a common attribute.
 
 ## Methods
 |Method|Return type|Description|
@@ -21,23 +21,21 @@ Namespace: microsoft.graph
 |[Get teamworkTag](../api/teamworktag-get.md)|[teamworkTag](../resources/teamworktag.md)|Read the properties and relationships of a [teamworkTag](../resources/teamworktag.md) object.|
 |[Update teamworkTag](../api/teamworktag-update.md)|[teamworkTag](../resources/teamworktag.md)|Update the properties of a [teamworkTag](../resources/teamworktag.md) object.|
 |[Delete teamworkTag](../api/teamworktag-delete.md)|None|Deletes a [teamworkTag](../resources/teamworktag.md) object.|
-|[List members](../api/teamworktag-list-members.md)|[teamworkTagMember](../resources/teamworktagmember.md) collection|Get the teamworkTagMember resources from the members navigation property.|
-|[Create teamworkTagMember](../api/teamworktag-post-members.md)|[teamworkTagMember](../resources/teamworktagmember.md)|Create a new teamworkTagMember object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|memberCount|Int32|**TODO: Add Description**|
-|tagType|teamworkTagType|**TODO: Add Description**. Possible values are: `standard`.|
-|teamId|String|**TODO: Add Description**|
+|description|String|Tag description as it will appear to the user in Microsoft Teams.|
+|displayName|String|Tag name as it will appear to the user in Microsoft Teams.|
+|id|String|Id of the tag.|
+|memberCount|Int32|The number of users assigned to the tag.|
+|tagType|teamworkTagType|The type of tag. Default is standard.|
+|teamId|String|Id of the team in which the tag is defined.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|members|[teamworkTagMember](../resources/teamworktagmember.md) collection|**TODO: Add Description**|
+|members|[teamworkTagMember](../resources/teamworktagmember.md) collection|Users assigned to the tag.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

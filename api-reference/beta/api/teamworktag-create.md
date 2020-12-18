@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Create teamworkTag
 Namespace: microsoft.graph
 
-Create a new [teamworkTag](../resources/teamworktag.md) object.
+Create a standard tag for members in the team. Create a new [teamworkTag](../resources/teamworktag.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,8 +45,8 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of the tag. The value can not be more than 40 characters.|
-|description|String|Description of the tag. The value can not be more than 200 characters.|
-
+|description|String|(Optional) Description of the tag. The value can not be more than 200 characters.|
+|members| [teamworkTagMember](../resources/teamworktagmember.md) |Members of the team to add to the tag. Set the user identifier property of each member. Members count should not be more than 25.|
 
 
 
@@ -63,7 +63,7 @@ If successful, this method returns a `201 Created` response code and a [teamwork
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/teams/{teamsId}/tags
+POST https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/tags
 Content-Type: application/json
 
 {
@@ -71,7 +71,10 @@ Content-Type: application/json
   "description": "sample tag name description",
   "members":[
 	{
-		"userId":"user-aad-id-value"
+		"userId":"92f6952f-61ca-4a94-8910-508a240bc167"
+	},
+	{
+		"userId":"085d800c-b86b-4bfc-a857-9371ad1caf29"
 	}
   ]
 }
@@ -79,7 +82,7 @@ Content-Type: application/json
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,12 +95,12 @@ Content-Type: application/json
 
 {
   "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkTag",
-  "id": "teamworkTag-id-value",
-  "teamId": "team-id-value",
+  "id": "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==",
+  "teamId": "53c53217-fe77-4383-bc5a-ed4937a1aecd",
   "displayName": "Sample tag name",
   "description": "sample tag name description",
-  "memberCount": "Integer",
-  "tagType": "String"
+  "memberCount": "2",
+  "tagType": "standard"
 }
 ```
 

@@ -1,25 +1,25 @@
 ---
 title: "Get teamworkTag"
 description: "Read the properties and relationships of a teamworkTag object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "rasikadhumal"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
 # Get teamworkTag
 Namespace: microsoft.graph
 
-Read the properties and relationships of a [teamworkTag](../resources/teamworktag.md) object.
+Get a standard tag in a team. Read the properties and relationships of a [teamworkTag](../resources/teamworktag.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|TeamworkTagReadWrite, TeamworkTagRead|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [teamworkTag](
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teams/{teamsId}/tags/{teamworkTagId}
+GET https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/tags/MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==
 ```
 
 
@@ -74,12 +74,12 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkTag",
-    "id": "f47b7f55-7f55-f47b-557f-7bf4557f7bf4",
-    "teamId": "String",
-    "displayName": "String",
-    "description": "String",
-    "memberCount": "Integer",
-    "tagType": "String"
+    "id": "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==",
+    "teamId": "53c53217-fe77-4383-bc5a-ed4937a1aecd",
+    "displayName": "Sample tag name",
+    "description": "sample tag name description",
+    "memberCount": "2",
+    "tagType": "standard"
   }
 }
 ```

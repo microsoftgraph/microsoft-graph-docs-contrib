@@ -1,25 +1,25 @@
 ---
 title: "List teamworkTags"
 description: "Get a list of the teamworkTag objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "rasikadhumal"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
 # List teamworkTags
 Namespace: microsoft.graph
 
-Get a list of the [teamworkTag](../resources/teamworktag.md) objects and their properties.
+Get all the standard tags in the team. Get a list of the [teamworkTag](../resources/teamworktag.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|TeamworkTagReadWrite, TeamworkTagRead|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teams/{teamsId}/tags
+GET https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/tags
 ```
 
 
@@ -74,13 +74,22 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkTag",
-      "id": "f47b7f55-7f55-f47b-557f-7bf4557f7bf4",
-      "teamId": "String",
-      "displayName": "String",
-      "description": "String",
-      "memberCount": "Integer",
-      "tagType": "String"
+        "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkTag",
+        "id": "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==",
+        "teamId": "53c53217-fe77-4383-bc5a-ed4937a1aecd",
+        "displayName": "Sample tag name 1",
+        "description": "sample tag name description 1",
+        "memberCount": "2",
+        "tagType": "standard"
+    },
+    {
+        "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkTag",
+        "id": "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyNlYjY1M2Y5Mi04MzczLTRkZTYtYmZlYy01YjRkMjE2YjZhZGUjIzk3ZjYyMzQ0LTU3ZGMtNDA5Yy04OGFkLWM0YWYxNDE1OGZmNQ==",
+        "teamId": "53c53217-fe77-4383-bc5a-ed4937a1aecd",
+        "displayName": "Sample tag name 2",
+        "description": "sample tag name description 2",
+        "memberCount": "4",
+        "tagType": "standard"
     }
   ]
 }

@@ -1,25 +1,25 @@
 ---
 title: "Get teamworkTagMember"
 description: "Read the properties and relationships of a teamworkTagMember object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "rasikadhumal"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
 # Get teamworkTagMember
 Namespace: microsoft.graph
 
-Read the properties and relationships of a [teamworkTagMember](../resources/teamworktagmember.md) object.
+Get a member of the standard tag in the team. Read the properties and relationships of a [teamworkTagMember](../resources/teamworktagmember.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|TeamworkTagReadWrite, TeamworkTagRead|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [teamworkTagMe
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teams/{teamsId}/tags/{teamworkTagId}/members/{teamworkTagMemberId}
+GET https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/tags/MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==/members/MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyNlYjY1M2Y5Mi04MzczLTRkZTYtYmZlYy01YjRkMjE2YjZhZGUjI2QzYjJiM2ViLWM0N2YtNDViOS05NWYyLWIyZjJlZjYyMTVjZQ==
 ```
 
 
@@ -74,10 +74,10 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkTagMember",
-    "id": "c3da5a05-5a05-c3da-055a-dac3055adac3",
-    "displayName": "String",
-    "tenantId": "String",
-    "userId": "String"
+    "id": "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyNlYjY1M2Y5Mi04MzczLTRkZTYtYmZlYy01YjRkMjE2YjZhZGUjI2QzYjJiM2ViLWM0N2YtNDViOS05NWYyLWIyZjJlZjYyMTVjZQ==",
+    "displayName": "Sample user name",
+    "tenantId": "18be64a9-c73a-4862-bccc-76c31ef09b9d",
+    "userId": "92f6952f-61ca-4a94-8910-508a240bc167"
   }
 }
 ```

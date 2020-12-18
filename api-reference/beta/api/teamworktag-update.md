@@ -1,25 +1,25 @@
 ---
 title: "Update teamworkTag"
 description: "Update the properties of a teamworkTag object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "rasikadhumal"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
 # Update teamworkTag
 Namespace: microsoft.graph
 
-Update the properties of a [teamworkTag](../resources/teamworktag.md) object.
+Update the name or the description or both, of a tag in the team. Update the properties of a [teamworkTag](../resources/teamworktag.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|TeamworkTagReadWrite|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -44,14 +44,8 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description**|
-|teamId|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|memberCount|Int32|**TODO: Add Description**|
-|tagType|teamworkTagType|**TODO: Add Description**. Possible values are: `standard`.|
-
-
+|displayName|String|Name of the tag. The value can not be more than 40 characters.|
+|description|String|Description of the tag. The value can not be more than 200 characters.|
 
 ## Response
 
@@ -66,17 +60,13 @@ If successful, this method returns a `200 OK` response code and an updated [team
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/teams/{teamsId}/tags/{teamworkTagId}
+PATCH https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/tags/MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==
 Content-Type: application/json
 Content-length: 185
 
 {
-  "@odata.type": "#microsoft.graph.teamworkTag",
-  "teamId": "String",
-  "displayName": "String",
-  "description": "String",
-  "memberCount": "Integer",
-  "tagType": "String"
+  "displayName": "Sample tag name",
+  "description": "sample tag name description",
 }
 ```
 
@@ -93,13 +83,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.teamworkTag",
-  "id": "f47b7f55-7f55-f47b-557f-7bf4557f7bf4",
-  "teamId": "String",
-  "displayName": "String",
-  "description": "String",
-  "memberCount": "Integer",
-  "tagType": "String"
+  "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkTag",
+  "id": "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==",
+  "teamId": "53c53217-fe77-4383-bc5a-ed4937a1aecd",
+  "displayName": "Sample tag name",
+  "description": "sample tag name description",
+  "memberCount": "2",
+  "tagType": "standard"
 }
 ```
 
