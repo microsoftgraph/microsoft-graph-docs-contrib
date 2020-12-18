@@ -11,9 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the collection of authenticationListener resources supported by the onSignupStart event. The onSignUpStart event supports the following listener types:
-
-* [invokeUserFlowListener](../resources/invokeuserflowlistener.md)
+Get the collection of authenticationListener resources supported by the onSignupStart event. The onSignUpStart event supports the [invokeUserFlowListener](../resources/invokeuserflowlistener.md) type.
 
 When an [invokeUserFlowListener](../resources/invokeuserflowlistener.md) is assigned to an onSignUpStart event, an application is associated with a user flow, therefore enabling a [self-service sign up](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) process on it. Once the authentication event for invoking a user flow is created, users who go to that application will be able to initiate a sign-up flow that provisions a guest account.
 
@@ -40,7 +38,7 @@ GET /identity/events/onSignupStart
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$expand` OData query parameter to expand the details of an invokeUserFlowListener. See below for an example. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -62,6 +60,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "list_authenticationlistener"
@@ -73,6 +73,8 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart
 ```
 
 #### Response
+
+The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -119,6 +121,8 @@ The following example lists the listeners defined for the onSignupStart event, a
 
 #### Request
 
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "list_authenticationlistener_invokeuserflowlistener"
@@ -130,6 +134,8 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart?$expand=micro
 ```
 
 #### Response
+
+The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

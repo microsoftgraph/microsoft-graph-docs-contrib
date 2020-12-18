@@ -49,9 +49,9 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|priority|Int32|The priority of the action that is used to determine one out of multiple applicable actions.|
-|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filter based on the source of the authentication that is used to determine whether the action is executed.|
-|userFlow|[b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)|The [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object that will be invoked when this action executes.|
+|priority|Int32|The priority of the listener. Determines the order of evaluation when an event has multiple listeners. The priority is evaluated from low to high.|
+|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filter based on the source of the authentication that is used to determine whether the listener is evaluated. This is currently limited to evaluations based on application the user is authenticating to.|
+|userFlow|[b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)|The [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object that will be invoked when this action is evaluated.|
 
 ## Response
 
@@ -60,6 +60,8 @@ If successful, this method returns a `201 Created` response code and an [authent
 ## Examples
 
 ### Request
+
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -86,6 +88,8 @@ Content-Type: application/json
 ```
 
 ### Response
+
+The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

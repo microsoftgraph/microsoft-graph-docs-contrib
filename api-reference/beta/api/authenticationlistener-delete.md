@@ -52,6 +52,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "delete_onsignupstart_from_authenticationeventspolicy"
@@ -63,6 +65,8 @@ DELETE https://graph.microsoft.com/beta/identity/events/onSignupStart/{id}
 ```
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

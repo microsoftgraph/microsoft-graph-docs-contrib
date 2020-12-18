@@ -49,8 +49,8 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|priority|Int32|The priority of the action which is used for determining one out of multiple applicable actions.|
-|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filter based on the source of the authentication which is used to determine whether the action is executed or not.|
+|priority|Int32|The priority of the listener. Determines the order of evaluation when an event has multiple listeners. The priority is evaluated from low to high.|
+|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filter based on the source of the authentication which is used to determine whether the listener is evaluated. This is currently limited to evaluations based on application the user is authenticating to.|
 
 ## Response
 
@@ -59,6 +59,8 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -76,6 +78,8 @@ Content-Type: application/json
 ```
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

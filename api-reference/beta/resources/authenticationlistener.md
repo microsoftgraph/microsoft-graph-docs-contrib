@@ -31,8 +31,8 @@ You can create an [invokeUserFlowListener](../resources/invokeuserflowlistener.m
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The identifier of the action.|
-|priority|Int32|The priority of the action that is used to determine one out of multiple applicable actions.|
-|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filter based on the source of the authentication that is used to determine whether the action is executed.|
+|priority|Int32|The priority of the listener. Determines the order of evaluation when an event has multiple listeners. The priority is evaluated from low to high.|
+|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filter based on the source of the authentication that is used to determine whether the listener is evaluated. This is currently limited to evaluations based on application the user is authenticating to.|
 
 ## Relationships
 

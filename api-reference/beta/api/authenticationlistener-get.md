@@ -36,7 +36,7 @@ GET /identity/events/onSignupStart/{id}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$expand` OData query parameter to expand the details of an invokeUserFlowListener. See below for an example. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -58,6 +58,8 @@ If successful, this method returns a `200 OK` response code and an [authenticati
 
 #### Request
 
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_authenticationlistener"
@@ -69,6 +71,8 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart/{id}
 ```
 
 #### Response
+
+The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -101,6 +105,8 @@ The following example gets the listener by id for the onSignupStart event and ex
 
 #### Request
 
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_authenticationlistener_invokeuserflowlistener"
@@ -112,6 +118,8 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart/{id}?$expand=
 ```
 
 #### Response
+
+The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
