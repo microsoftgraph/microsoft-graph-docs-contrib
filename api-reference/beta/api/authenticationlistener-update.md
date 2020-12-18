@@ -1,6 +1,6 @@
 ---
 title: "Update authenticationListener"
-description: "Update the specified listener defined for an event in the authentication pipeline."
+description: "Update the listener defined for an event in the authentication pipeline."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the specified [authenticationListener](../resources/authenticationlistener.md) defined for an event in the authentication pipeline.
+Update the [authenticationListener](../resources/authenticationlistener.md) defined for an event in the authentication pipeline.
 
 ## Permissions
 
