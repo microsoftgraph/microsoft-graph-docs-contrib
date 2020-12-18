@@ -450,10 +450,10 @@ items:
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
-        - name: Add app for user
-          href: api/userteamwork-post-installedapps.md
         - name: List apps for user
           href: api/userteamwork-list-installedapps.md
+        - name: Add app for user
+          href: api/userteamwork-post-installedapps.md        
         - name: Get installed app for user
           href: api/userteamwork-get-installedapps.md
         - name: Upgrade installed app for user
@@ -12551,12 +12551,12 @@ items:
           href: api/group-delete.md
         - name: List members
           href: api/team-list-members.md
-        - name: Get member
-          href: api/team-get-members.md
         - name: Add member
           href: api/team-post-members.md
         - name: Add members in bulk
           href: api/conversationmembers-add.md
+        - name: Get member
+          href: api/team-get-members.md
         - name: Remove member
           href: api/team-delete-members.md
         - name: Update member
@@ -12634,15 +12634,15 @@ items:
         - name: Delete channel
           href: api/channel-delete.md
         - name: List members
-          href: api/channel-list-members.md
-        - name: Get member
-          href: api/channel-get-members.md
+          href: api/channel-list-members.md        
         - name: Create member 
           href: api/channel-post-members.md
-        - name: Remove member
-          href: api/channel-delete-members.md
+        - name: Get member
+          href: api/channel-get-members.md
         - name: Update member role
           href: api/channel-update-members.md
+        - name: Remove member
+          href: api/channel-delete-members.md
         - name: Complete migration for channel
           href: api/channel-completemigration.md
         - name: Get files folder
@@ -12678,6 +12678,8 @@ items:
           href: api/chat-post-members.md
         - name: Get member
           href: api/chat-get-members.md
+        - name: Remove member
+          href: api/chat-delete-members.md
         - name: List messages in a chat
           href: api/chat-list-message.md
         - name: Get message in chat
@@ -12714,11 +12716,11 @@ items:
       - name: App catalog
         items:
         - name: App in catalog
-          href: resources/teamsapp.md
-        - name: Publish apps to catalog
-          href: api/teamsapp-publish.md
+          href: resources/teamsapp.md        
         - name: List apps in catalog
           href: api/appcatalogs-list-teamsapps.md
+        - name: Publish apps to catalog
+          href: api/teamsapp-publish.md
         - name: Update app in catalog
           href: api/teamsapp-update.md
         - name: Delete app from catalog
@@ -12731,10 +12733,10 @@ items:
           items:
           - name: List apps in team
             href: api/team-list-installedapps.md
-          - name: Get app installed in team
-            href: api/team-get-installedapps.md
           - name: Add app to team
             href: api/team-post-installedapps.md
+          - name: Get app installed in team
+            href: api/team-get-installedapps.md
           - name: Upgrade app installed in team
             href: api/team-teamsappinstallation-upgrade.md
           - name: Remove app from team
@@ -12743,24 +12745,24 @@ items:
           items:
           - name: List apps for user
             href: api/userteamwork-list-installedapps.md
-          - name: Get app installed for user
-            href: api/userteamwork-get-installedapps.md
           - name: Add app for user
             href: api/userteamwork-post-installedapps.md
-          - name: Upgrade installed app for user
-            href: api/userteamwork-teamsappinstallation-upgrade.md
+          - name: Get app installed for user
+            href: api/userteamwork-get-installedapps.md
           - name: Get chat between user and app
             href: api/userscopeteamsappinstallation-get-chat.md
+          - name: Upgrade installed app for user
+            href: api/userteamwork-teamsappinstallation-upgrade.md
           - name: Remove app for user
             href: api/userteamwork-delete-installedapps.md
         - name: App in chat
           items:
           - name: List apps in chat
             href: api/chat-list-installedapps.md
+          - name: Add app in chat
+            href: api/chat-post-installedapps.md     
           - name: Get app installed in chat
             href: api/chat-get-installedapps.md
-          - name: Add app in chat
-            href: api/chat-post-installedapps.md        
           - name: Upgrade app installed in chat
             href: api/chat-teamsappinstallation-upgrade.md
           - name: Remove app from chat
@@ -12780,10 +12782,10 @@ items:
           items:
           - name: List tabs in channel
             href: api/channel-list-tabs.md
-          - name: Get tab in channel
-            href: api/channel-get-tabs.md
           - name: Add tab to cannel
             href: api/channel-post-tabs.md
+          - name: Get tab in channel
+            href: api/channel-get-tabs.md
           - name: Update tab in channel
             href: api/channel-patch-tabs.md
           - name: Remove tab from channel
@@ -12792,10 +12794,10 @@ items:
           items:
           - name: List tabs in chat
             href: api/chat-list-tabs.md
-          - name: Get tab in chat
-            href: api/chat-get-tabs.md
           - name: Add tab to chat
             href: api/chat-post-tabs.md
+          - name: Get tab in chat
+            href: api/chat-get-tabs.md
           - name: Update tab in chat
             href: api/chat-patch-tabs.md
           - name: Remove tab from chat
