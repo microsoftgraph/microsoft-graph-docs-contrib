@@ -1,4 +1,4 @@
-****---
+---
 title: "b2xIdentityUserFlow resource type"
 description: "Represents a user flow within an Azure Active Directory tenant."
 localization_priority: Priority
