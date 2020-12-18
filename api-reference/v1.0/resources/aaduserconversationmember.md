@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an Azure Active Directory user in a [team](team.md) or a [channel](channel.md) or a [chat](chat.md).
+Represents an Azure Active Directory user in a [team](team.md), a [channel](channel.md), or a [chat](chat.md).
 This type inherits from [conversationMember](conversationmember.md).
 
 ## Methods
