@@ -38,7 +38,7 @@
       "Id": "074356c3-d08d-46ec-bf8d-24d90ffb9e54",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-12-07T17:53:06Z",
+      "CreatedDateTime": "2020-12-17T17:53:06Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },
@@ -193,17 +193,17 @@
         {
           "Id": "ed857cbd-2aec-4ad5-a9a6-8fd628bb863f",
           "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageAnswer,accessPackageAnswerChoice,accessPackageAnswerString",
+          "ChangedApiName": "accessPackageAnswer",
           "ChangeType": "Addition",
-          "Description": "Added the new [accessPackageAnswer](/graph/api/resources/accesspackageanswer?view=graph-rest-beta\u0026preserve-view=true) complex resource type, including two sub-types [accessPackageAnswerChoice](/graph/api/resources/accesspackageanswerchoice.md) and [accessPackageAnswerString](/graph/api/resources/accesspackageanswerstring.md).",
-          "Target": "accessPackageAnswer,accessPackageAnswerChoice,accessPackageAnswerString"
+          "Description": "Added the new [accessPackageAnswer](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageanswer?view=graph-rest-beta\u0026preserve-view=true) complex type, including two subtypes [accessPackageAnswerChoice](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageanswerchoice?view=graph-rest-beta\u0026preserve-view=true) and [accessPackageAnswerString](/graph/api/resources/accesspackageanswerstring?view=graph-rest-beta\u0026preserve-view=true).",
+          "Target": "accessPackageAnswer"
         },
         {
           "Id": "ed857cbd-2aec-4ad5-a9a6-8fd628bb863f",
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageQuestion,accessPackageMultipleChoiceQuestion,accessPackageTextInputQuestion",
           "ChangeType": "Addition",
-          "Description": "Added the new [accessPackageQuestion](/graph/api/resources/accesspackagequestion?view=graph-rest-beta\u0026preserve-view=true) complex resource type, including two sub-types [accessPackageMultipleChoiceQuestion](/graph/api/resources/accesspackagemultiplechoicequestion.md) and [accessPackageTextInputQuestion](/graph/api/resources/accesspackagetextinputquestion.md).",
+          "Description": "Added the new [accessPackageQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accesspackagequestion?view=graph-rest-beta\u0026preserve-view=true) complex type, including two subtypes [accessPackageMultipleChoiceQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accesspackagemultiplechoicequestion?view=graph-rest-beta\u0026preserve-view=true) and [accessPackageTextInputQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accesspackagetextinputquestion?view=graph-rest-beta\u0026preserve-view=true).",
           "Target": "accessPackageQuestion,accessPackageMultipleChoiceQuestion,accessPackageTextInputQuestion"
         },
         {
@@ -211,7 +211,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageLocalizedContent",
           "ChangeType": "Addition",
-          "Description": "Added the new [accessPackageLocalizedContent](/graph/api/resources/accesspackagelocalizedcontent?view=graph-rest-beta\u0026preserve-view=true) complex resource type.",
+          "Description": "Added the new [accessPackageLocalizedContent](https://docs.microsoft.com/en-us/graph/api/resources/accesspackagelocalizedcontent?view=graph-rest-beta\u0026preserve-view=true) complex type.",
           "Target": "accessPackageLocalizedContent"
         },
         {
@@ -219,14 +219,14 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageLocalizedText",
           "ChangeType": "Addition",
-          "Description": "Added the new [accessPackageLocalizedText](/graph/api/resources/accesspackagelocalizedtext?view=graph-rest-beta\u0026preserve-view=true) complex resource type.",
+          "Description": "Added the new [accessPackageLocalizedText](https://docs.microsoft.com/en-us/graph/api/resources/accesspackagelocalizedtext?view=graph-rest-beta\u0026preserve-view=true) complex type.",
           "Target": "accessPackageLocalizedText"
         }
       ],
       "Id": "ed857cbd-2aec-4ad5-a9a6-8fd628bb863f",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-12-01T00:00:00",
+      "CreatedDateTime": "2020-12-17T00:00:00",
       "WorkloadArea": "Identity and access ",
       "SubArea": " Governance"
     },
