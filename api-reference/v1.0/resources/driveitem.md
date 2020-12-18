@@ -12,7 +12,8 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 The **driveItem** resource represents a file, folder, or other item stored in a drive.
-All file system objects in OneDrive and SharePoint are returned as **driveItem** resources.
+
+All file system objects in OneDrive and SharePoint are returned as **driveItem** resources. Items in SharePoint document libraries can be represented as [listItem][] or **driveItem** resources.
 
 There are two primary ways of addressing a **driveItem** resource:
 
