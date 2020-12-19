@@ -11,7 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A complex type which would be used to represent a string in a specific language.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+A complex type used to represent a string in a specific language.
 
 ## Properties
 |Property|Type|Description|
