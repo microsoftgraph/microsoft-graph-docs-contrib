@@ -17,8 +17,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 and beta | Added the **hideAttendees** property to the [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) entity.
-| Addition | v1.0 | Added the **isDefaultCalendar** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity.
+| Addition | v1.0 and beta | Added the **hideAttendees** property to the [event](/graph/api/resources/event) entity.
+| Addition | v1.0 | Added the **isDefaultCalendar** property to the [calendar](/graph/api/resources/calendar) entity.
 
 ### Change notifications
 
