@@ -53,7 +53,6 @@ The following is an example of the request.
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/applications/{id}/connectorGroup/$ref
-
 Content-type: application/json
 Content-length: 30
 

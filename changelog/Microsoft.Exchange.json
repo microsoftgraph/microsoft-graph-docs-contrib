@@ -1,5 +1,41 @@
 {
-  "changelog": [
+  "changelog": [    
+    {
+      "ChangeList": [
+        {
+          "Id": "58585680-2aae-4690-a3f0-7828dc866c20",
+          "ApiChange": "Property",
+          "ChangedApiName": "hideAttendees",
+          "ChangeType": "Addition",
+          "Description": "Added the **hideAttendees** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta) entity.",
+          "Target": "event"
+        }
+      ],
+      "Id": "58585680-2aae-4690-a3f0-7828dc866c20",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-09T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7cb824eb-562c-4e5d-bbad-655310bf25e0",
+          "ApiChange": "Property",
+          "ChangedApiName": "hideAttendees",
+          "ChangeType": "Addition",
+          "Description": "Added the **hideAttendees** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0) entity.",
+          "Target": "event"
+        }
+      ],
+      "Id": "7cb824eb-562c-4e5d-bbad-655310bf25e0",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-12-17T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {

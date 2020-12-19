@@ -52,7 +52,6 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$ref
-
 Content-type: application/json
 Content-length: 99
 
