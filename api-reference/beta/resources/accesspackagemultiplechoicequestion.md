@@ -11,19 +11,21 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A child of `accessPackageQuestion` that presents multiple options that the requestor must choose an answer from.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+A child of **accessPackageQuestion** that presents multiple options that the requestor must choose an answer from.
 
 Inherits from [accessPackageQuestion](../resources/accesspackagequestion.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowsMultipleSelection|Boolean|Whether requestor can select multiple choices as their answer.|
+|allowsMultipleSelection|Boolean|Indicates whether requestor can select multiple choices as their answer.|
 |choices|[accessPackageAnswerChoice](../resources/accesspackageanswerchoice.md) collection|List of answer choices.|
-|id|String|ID of the question. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md)|
-|isRequired|Boolean|Whether the requestor is required to supply an answer or not. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md)|
-|sequence|Int32|Relative position of this question when displaying a list of questions to the requestor. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md)|
-|text|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|The text of the question to show the requestor. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md)|
+|id|String|ID of the question. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md).|
+|isRequired|Boolean|Indicates whether the requestor is required to supply an answer or not. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md).|
+|sequence|Int32|Relative position of this question when displaying a list of questions to the requestor. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md).|
+|text|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|The text of the question to show the requestor. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md).|
 
 ## Relationships
 None.
