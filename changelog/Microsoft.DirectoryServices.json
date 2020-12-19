@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+              "Id": "a4f81577-234e-11eb-8b0e-705e20bbe57e",
+              "ApiChange": "Resource",
+              "ChangedApiName": "authenticationEventsPolicy",
+              "ChangeType": "Addition",
+              "Description": "Added the [authenticationEventsPolicy](https://docs.microsoft.com/graph/api/resources/authenticationeventspolicy?view=graph-rest-beta&preserve-view=true) resource type.",
+              "Target": "authenticationEventsPolicy"
+            },
+            {
+              "Id": "a4f81577-234e-11eb-8b0e-705e20bbe57e",
+              "ApiChange": "Resource",
+              "ChangedApiName": "authenticationListener",
+              "ChangeType": "Addition",
+              "Description": "Added the [authenticationListener](https://docs.microsoft.com/graph/api/resources/authenticationlistener?view=graph-rest-beta&preserve-view=true) resource type.",
+              "Target": "authenticationListener"
+            },
+            {
+              "Id": "a4f81577-234e-11eb-8b0e-705e20bbe57e",
+              "ApiChange": "Resource",
+              "ChangedApiName": "invokeUserFlowListener",
+              "ChangeType": "Addition",
+              "Description": "Added the [invokeUserFlowListener](https://docs.microsoft.com/graph/api/resources/invokeuserflowlistener?view=graph-rest-beta&preserve-view=true) resource type.",
+              "Target": "invokeUserFlowListener"
+            }
+          ],
+          "Id": "a4f353ec-234e-11eb-8b0e-705e20bbe57e",
+          "Cloud": "prd",
+          "Version": "v1.0",
+          "CreatedDateTime": "2020-12-04T12:17:04.676Z",
+          "WorkloadArea": "Identity and access",
+          "SubArea": "Identity and sign-in"
+        },
+        {
+        "ChangeList": [
+        {
           "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e8",
           "ApiChange": "Resource",
           "ChangedApiName": "identityApiConnector",
