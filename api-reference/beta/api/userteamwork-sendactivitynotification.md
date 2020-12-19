@@ -136,7 +136,6 @@ If you want to link an aspect that is not represented by Microsoft Graph, or you
 -->
 ``` http
 POST https://graph.microsoft.com/beta/users/{userId}/teamwork/sendActivityNotification
-
 Content-Type: application/json
 
 {
