@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the [authenticationListener](../resources/authenticationlistener.md) defined for an event in the authentication pipeline.
 
 ## Permissions

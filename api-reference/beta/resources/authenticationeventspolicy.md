@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 A resource that specifies the events in the authentication experience, with each event further defining the available types of listeners that can be created for the event. Events are inherent to the authentication experience; this resource is not user configurable.
 
 ## Methods
