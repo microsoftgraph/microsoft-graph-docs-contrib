@@ -70,7 +70,7 @@ The following is an example of the request.
 -->
 
 ``` http
-PUT https://graph.microsoft.com/beta/identity/events/onSignupStart
+PUT https://graph.microsoft.com/beta/identity/events/onSignupStart/{id}
 Content-Type: application/json
 
 {
