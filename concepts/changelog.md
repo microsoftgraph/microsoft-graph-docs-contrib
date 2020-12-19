@@ -70,6 +70,16 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added a new resource type to [Terms of Use agreement](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true):</br>[agreementFileVersion](/graph/api/resources/agreementfileversion?view=graph-rest-beta&preserve-view=true)|
 | Addition | beta | Added the **managerLevel** property to [requestorManager](/graph/api/resources/requestorManager?view=graph-rest-beta&preserve-view=true) resource. |
 
+### Identity and access | Governance
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the new [accessPackageAnswer](/graph/api/resources/accesspackageanswer?view=graph-rest-beta&preserve-view=true) complex type, including two subtypes, [accessPackageAnswerChoice](/graph/api/resources/accesspackageanswerchoice?view=graph-rest-beta&preserve-view=true) and [accessPackageAnswerString](/graph/api/resources/accesspackageanswerstring?view=graph-rest-beta&preserve-view=true).|
+| Addition | beta | Added the new [accessPackageQuestion](/graph/api/resources/accesspackagequestion?view=graph-rest-beta&preserve-view=true) complex type, including two subtypes, [accessPackageMultipleChoiceQuestion](/graph/api/resources/accesspackagemultiplechoicequestion?view=graph-rest-beta&preserve-view=true) and [accessPackageTextInputQuestion](/graph/api/resources/accesspackagetextinputquestion?view=graph-rest-beta&preserve-view=true).|
+| Addition | beta | Added the new [accessPackageLocalizedContent](/graph/api/resources/accesspackagelocalizedcontent?view=graph-rest-beta&preserve-view=true) complex type. |
+| Addition | beta | Added the new [accessPackageLocalizedText](/graph/api/resources/accesspackagelocalizedtext?view=graph-rest-beta&preserve-view=true) complex  type. |
+
+
 ### Identity and access | Identity and sign-in
 
 | **Change type** | **Version**   | **Description**                          |
@@ -114,6 +124,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **replyRestriction** enumeration type. |
 | Addition | beta | Added the **userNewMessageRestriction** enumeration type. |
 | Addition | beta | Added the [Remove chat member](/graph/api/chat-post-members?view=graph-rest-beta&preserve-view=true) method to [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource type.|
+
 
 ## November 2020
 

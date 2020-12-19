@@ -191,6 +191,48 @@
     {
       "ChangeList": [
         {
+          "Id": "ed857cbd-2aec-4ad5-a9a6-8fd628bb863f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAnswer",
+          "ChangeType": "Addition",
+          "Description": "Added the new [accessPackageAnswer](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageanswer?view=graph-rest-beta\u0026preserve-view=true) complex type, including two subtypes [accessPackageAnswerChoice](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageanswerchoice?view=graph-rest-beta\u0026preserve-view=true) and [accessPackageAnswerString](/graph/api/resources/accesspackageanswerstring?view=graph-rest-beta\u0026preserve-view=true).",
+          "Target": "accessPackageAnswer"
+        },
+        {
+          "Id": "ed857cbd-2aec-4ad5-a9a6-8fd628bb863f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageQuestion,accessPackageMultipleChoiceQuestion,accessPackageTextInputQuestion",
+          "ChangeType": "Addition",
+          "Description": "Added the new [accessPackageQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accesspackagequestion?view=graph-rest-beta\u0026preserve-view=true) complex type, including two subtypes [accessPackageMultipleChoiceQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accesspackagemultiplechoicequestion?view=graph-rest-beta\u0026preserve-view=true) and [accessPackageTextInputQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accesspackagetextinputquestion?view=graph-rest-beta\u0026preserve-view=true).",
+          "Target": "accessPackageQuestion,accessPackageMultipleChoiceQuestion,accessPackageTextInputQuestion"
+        },
+        {
+          "Id": "ed857cbd-2aec-4ad5-a9a6-8fd628bb863f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageLocalizedContent",
+          "ChangeType": "Addition",
+          "Description": "Added the new [accessPackageLocalizedContent](https://docs.microsoft.com/en-us/graph/api/resources/accesspackagelocalizedcontent?view=graph-rest-beta\u0026preserve-view=true) complex type.",
+          "Target": "accessPackageLocalizedContent"
+        },
+        {
+          "Id": "ed857cbd-2aec-4ad5-a9a6-8fd628bb863f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageLocalizedText",
+          "ChangeType": "Addition",
+          "Description": "Added the new [accessPackageLocalizedText](https://docs.microsoft.com/en-us/graph/api/resources/accesspackagelocalizedtext?view=graph-rest-beta\u0026preserve-view=true) complex type.",
+          "Target": "accessPackageLocalizedText"
+        }
+      ],
+      "Id": "ed857cbd-2aec-4ad5-a9a6-8fd628bb863f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-17T00:00:00",
+      "WorkloadArea": "Identity and access ",
+      "SubArea": " Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c0a9d0dd-5673-432c-9d93-c5acec21b14c",
           "ApiChange": "Resource",
           "ChangedApiName": "permissionGrantPolicy",
