@@ -18,7 +18,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | Beta | Added the **hideAttendees** property to the [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) entity.
-| Addition | v1.0 | Added the **hideAttendees** property to the [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true) entity.
 
 ### Change notifications
 
