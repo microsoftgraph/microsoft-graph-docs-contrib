@@ -1,19 +1,19 @@
 ---
-title: "List conversationMembers"
-description: "Retrieve a member of a chat or channel."
+title: "List members of a chat"
+description: "Retrieve members of a chat."
 author: "clearab"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List conversationMembers
+# List members of a chat
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all [conversation members](../resources/conversationmember.md) in a [chat](../resources/chatmessage.md) or [channel](../resources/channel.md) or team[team](../resources/team.md).
+List all [conversation members](../resources/conversationmember.md) in a [chat](../resources/chat.md).
 
 > [!NOTE]
 > The membership IDs returned by the server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)| Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
+|Delegated (work or school account)| ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegated (personal Microsoft account)|Not supported.|
 |Application| Not supported. |
 
@@ -36,8 +36,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /chats/{id}/members
-GET /users/{id}/chats/{id}/members
+GET /chats/{chat-id}/members
+GET /users/{user-id}/chats/{chat-id}/members
 ```
 
 ## Optional query parameters
@@ -58,6 +58,9 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a list of [conversationMember](../resources/conversationmember.md) objects in the response body.
 
+> [!NOTE]
+> There are some known issues with this functionality. For details, see [known issues](/graph/known-issues.md#missing-tenantid-for-chat-members).
+
 ## Example
 
 ### Request
@@ -70,23 +73,8 @@ Here is an example of the request.
   "name": "list_conversation_members"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/chats/{id}/members
+GET https://graph.microsoft.com/beta/me/chats/19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d@unq.gbl.spaces/members
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-conversation-members-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-conversation-members-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-conversation-members-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-conversation-members-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -108,6 +96,7 @@ Content-length: 201
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')/chats('19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d%40unq.gbl.spaces')/members",
+    "@odata.count": 3,
     "value": [
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -115,7 +104,29 @@ Content-length: 201
             "roles": [],
             "displayName": "John Doe",
             "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-            "email": null
+            "email": null,
+            "tenantId": "6e5147da-6a35-4275-b3f3-fc069456b6eb",
+            "visibleHistoryStartDateTime": "2019-04-18T23:51:43.255Z"
+        },
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "2de87aaf-844d-4def-9dee-2c317f0be1b3",
+            "roles": [],
+            "displayName": "Bart Hogan",
+            "userId": "2de87aaf-844d-4def-9dee-2c317f0be1b3",
+            "email": null,
+            "tenantId": "6e5147da-6a35-4275-b3f3-fc069456b6eb",
+            "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z"
+    },
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
+            "roles": [],
+            "displayName": "Minna Pham",
+            "userId": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
+            "email": null,
+            "tenantId": "6e5147da-6a35-4275-b3f3-fc069456b6eb",
+            "visibleHistoryStartDateTime": "2019-04-18T23:51:43.255Z"
         }
     ]
 }
