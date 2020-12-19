@@ -39,6 +39,24 @@
     {
       "ChangeList": [
         {
+          "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDefaultCalendar",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDefaultCalendar** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity.",
+          "Target": "Calendar"
+        }
+      ],
+      "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-09-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "656072a4-9a39-4731-8322-13932419895a",
           "ApiChange": "Property",
           "ChangedApiName": "transactionId",
