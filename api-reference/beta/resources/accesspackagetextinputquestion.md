@@ -11,18 +11,20 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A child of `accessPackageQuestion` which has text input as an answer.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+A child of **accessPackageQuestion** that has text input as an answer.
 
 Inherits from [accessPackageQuestion](../resources/accesspackagequestion.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|ID of the question. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md)|
-|isRequired|Boolean|Whether the requestor is required to supply an answer or not. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md)|
-|isSingleLineQuestion|Boolean|Whether the answer will be in single or multiple line format.|
-|sequence|Int32|Relative position of this question when displaying a list of questions to the requestor. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md)|
-|text|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|The text of the question to show to the requestor. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md)|
+|id|String|ID of the question. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md).|
+|isRequired|Boolean|Indicates whether the requestor is required to supply an answer or not. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md).|
+|isSingleLineQuestion|Boolean|Indicates whether the answer will be in single or multiple line format.|
+|sequence|Int32|Relative position of this question when displaying a list of questions to the requestor. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md).|
+|text|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|The text of the question to show to the requestor. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md).|
 
 ## Relationships
 None.
