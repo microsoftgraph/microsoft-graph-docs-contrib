@@ -1,19 +1,19 @@
 ---
-title: "Get conversationMember"
-description: "Retrieve a member of a chat or channel."
+title: "Get conversationMember in a chat"
+description: "Retrieve a member of a chat."
 author: "clearab"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get conversationMember
+# Get conversationMember in a chat
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a [conversationMember](../resources/conversationmember.md) from a [chat](../resources/chat.md) or [channel](../resources/channel.md).
+Retrieve a [conversationMember](../resources/conversationmember.md) from a [chat](../resources/chat.md).
 
 ## Permissions
 
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)| For **user** or **chat** resource: Chat.ReadBasic, Chat.Read, Chat.ReadWrite<br/><br/>For **channel** resource: ChannelMember.Read.All, ChannelMember.ReadWrite, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Delegated (work or school account)| ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| For **user** or **chat** resource: Not supported.<br/><br/>For **channel** resource: Member.Read.Group*, ChannelMember.Read.All, ChannelMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Application| Not supported. |
 
 > **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
@@ -33,9 +33,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /chats/{id}/members/{id}
-GET /users/{id}/chats/{id}/members/{id}
-GET /teams/{id}/channels/{id}/members/{id}
+GET /chats/{chat-id}/members/{membership-id}
+GET /users/{user-id}/chats/{chat-id}/members/{membership-id}
 ```
 
 ## Optional query parameters
@@ -56,35 +55,22 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.
 
+> [!NOTE]
+> There are some known issues with this functionality. For details, see [known issues](/graph/known-issues.md#missing-tenantid-for-chat-members).
+
 ## Example
 
 ### Request
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_conversation_member"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
+GET https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/141c574c-dd90-4131-b173-baf4bb0e894e
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-conversation-member-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-conversation-member-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-conversation-member-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-conversation-member-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
