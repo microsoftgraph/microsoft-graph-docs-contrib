@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Deletes an [identityApiConnector](../resources/identityapiconnector.md) object.
 
 ## Permissions
