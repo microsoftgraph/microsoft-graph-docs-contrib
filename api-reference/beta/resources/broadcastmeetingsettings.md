@@ -1,5 +1,5 @@
 ---
-title: "broadcastMeetingSettings complex type"
+title: "broadcastMeetingSettings resource type"
 description: "Settings related to a live event"
 author: "frankpeng7"
 localization_priority: Normal
