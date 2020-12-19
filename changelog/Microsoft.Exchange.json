@@ -83,6 +83,32 @@
     {
       "ChangeList": [
         {
+          "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancel",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](https://docs.microsoft.com/en-us/graph/api/event-cancel) method to manage [event](https://docs.microsoft.com/en-us/graph/api/resources/event) resources in a calendar.",
+          "Target": "event"
+        },
+        {
+          "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+          "ApiChange": "Method",
+          "ChangedApiName": "forward",
+          "ChangeType": "Addition",
+          "Description": "Added the [forward](https://docs.microsoft.com/en-us/graph/api/event-forward) method to manage [event](https://docs.microsoft.com/en-us/graph/api/resources/event) resources in a calendar.",
+          "Target": "event"
+        }
+      ],
+      "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-12-19T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "656072a4-9a39-4731-8322-13932419895a",
           "ApiChange": "Property",
           "ChangedApiName": "transactionId",

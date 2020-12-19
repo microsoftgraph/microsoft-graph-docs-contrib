@@ -21,7 +21,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added the **isDraft** property to the [event](/graph/api/resources/event) entity. |
 | Addition | v1.0 | Added the **hexColor** property to the [calendar](/graph/api/resources/calendar) entity. |
 | Addition | v1.0 | Added the **isDefaultCalendar** property to the [calendar](/graph/api/resources/calendar) entity.
-
+| Addition | v1.0 | Added the [cancel](/graph/api/event-cancel) and [forward](/graph/api/event-forward) methods to manage [event](/graph/api/resources/event) resources in a calendar. |
 
 
 ### Change notifications
