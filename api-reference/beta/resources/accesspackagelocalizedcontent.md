@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 A complex type used to represent a text in multiple localalized forms. It includes a default text, which is used in any case where the requested localization is not available.
 
 ## Properties
