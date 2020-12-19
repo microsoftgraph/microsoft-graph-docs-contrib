@@ -13,6 +13,17 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## December 2020
 
+### Identity and access | Identity and sign-in
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [identityApiConnector](/graph/api/resources/identityapiconnector.md?view=graph-rest-beta&preserve-view=true) object which represents configuration used to call web APIs. Added methods for listing, getting, creating, updating, and deleting API connectors.|
+| Addition | beta | Added the [apiAuthenticationConfigurationBase](/graph/api/resources/apiauthenticationconfigurationbase?view=graph-rest-beta&preserve-view=true) entity for authentication configuration used to call web APIs.|
+| Addition | beta | Added the [basicAuthentication](/graph/api/resources/basicauthentication?view=graph-rest-beta&preserve-view=true) entity that extends apiAuthenticationConfigurationBase for HTTP Basic authentication of web API calls.|
+| Addition | beta | Added the [userFlowApiConnectorConfiguration](/graph/api/resources/userflowapiconnectorconfiguration?view=graph-rest-beta&preserve-view=true) entity for managing API connectors used by a user flow in an Azure Active Directory or Azure Active Directory B2C tenant.|
+| Addition | beta | Added **apiConnectorConfiguration** property to the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added **apiConnectorConfiguration** property to the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) resource.|
+
 ### Calendar
 
 | **Change type** | **Version**   | **Description**                          |
