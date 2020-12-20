@@ -1466,7 +1466,7 @@ items:
             href: api/custodian-activate.md
           - name: Release
             href: api/custodian-release.md
-        - name: eDiscovery Review set
+        - name: eDiscovery review set
           href: resources/reviewset.md
           items:
           - name: List
