@@ -19,10 +19,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 and beta | Added the **hideAttendees** property to the [event](/graph/api/resources/event) entity.
 | Addition | v1.0 | Added the **isDraft** property to the [event](/graph/api/resources/event) entity. |
+| Addition | v1.0 | Added the [cancel](/graph/api/event-cancel) and [forward](/graph/api/event-forward) methods to manage [event](/graph/api/resources/event) resources in a calendar. |
 | Addition | v1.0 | Added the **hexColor** property to the [calendar](/graph/api/resources/calendar) entity. |
 | Addition | v1.0 | Added the **isDefaultCalendar** property to the [calendar](/graph/api/resources/calendar) entity.
-| Addition | v1.0 | Added the [cancel](/graph/api/event-cancel) and [forward](/graph/api/event-forward) methods to manage [event](/graph/api/resources/event) resources in a calendar. |
-
 
 ### Change notifications
 
@@ -33,13 +32,20 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition|v1.0|Added the [presence](/graph/api/resources/presence?view=graph-rest-1.0&preserve-view=true) resource type|
+|Addition|v1.0|Added the [presence](/graph/api/resources/presence?view=graph-rest-1.0&preserve-view=true) resource type.|
 
 ### Compliance | eDiscovery
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [custodian](/graph/api/resources/custodian?view=graph-rest-beta&preserve-view=true), [unifiedGroupSource](/graph/api/resources/unifiedgroupsource?view=graph-rest-beta&preserve-view=true), and [siteSource](/graph/api/resources/sitesource?view=graph-rest-beta&preserve-view=true) resources and associated methods. |
+
+### Devices and apps | Cloud PC
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the `failed` member to the **cloudPcStatus** enumeration.|
+|Deletion|beta|Removed the `upgradeFailed`,`provisionFailed`, `deprovisionFailed`, `reprovisionFailed` members from the **cloudPcStatus** enumeration.|
 
 ### Devices and apps | Cloud printing
 
@@ -52,19 +58,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Change | beta | Updated enum types in [printerProcessingStateDetail](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values) resource. |
 | Addition | beta | Added the [update configuration](/graph/api/printjob-update-configuration?view=graph-rest-beta&preserve-view=true) action to the [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource.|
 
-### Devices and apps | Cloud PC
-
-| **Change type** | **Version** | **Description** |
-|:---|:---|:---|
-|Addition|beta|Added the `failed` member to the **cloudPcStatus** enumeration.|
-|Deletion|beta|Removed the `upgradeFailed`,`provisionFailed`, `deprovisionFailed`, `reprovisionFailed` members from the **cloudPcStatus** enumeration.|
 ### Education
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the **notificationChannelUrl** optional property to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) resource | 
-| Addition | beta | Added the **addedStudentAction** optional property to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) resource |
-| Addition | beta | Added the **educationAddedStudentAction** enumeration type |
+| Addition | beta | Added the **notificationChannelUrl** optional property to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) resource. | 
+| Addition | beta | Added the **addedStudentAction** optional property to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **educationAddedStudentAction** enumeration type. |
 
 ### Identity and access
 
@@ -93,9 +93,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added methods for listing and creating user attribute assignments to the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added methods for listing and creating user attribute assignments to the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | v1.0 | Added the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true) resource type. |
-| Addition | beta | "Added the [authenticationEventsPolicy](https://docs.microsoft.com/graph/api/resources/authenticationeventspolicy?view=graph-rest-beta&preserve-view=true) resource type. |
-| Addition | beta | "Added the [authenticationListener](https://docs.microsoft.com/graph/api/resources/authenticationlistener?view=graph-rest-beta&preserve-view=true) resource type. |
-| Addition | beta | "Added the [invokeUserFlowListener](https://docs.microsoft.com/graph/api/resources/invokeUserFlowListener?view=graph-rest-beta&preserve-view=true) resource type. |
+| Addition | beta | Added the [authenticationEventsPolicy](https://docs.microsoft.com/graph/api/resources/authenticationeventspolicy?view=graph-rest-beta&preserve-view=true) resource type. |
+| Addition | beta | Added the [authenticationListener](https://docs.microsoft.com/graph/api/resources/authenticationlistener?view=graph-rest-beta&preserve-view=true) resource type. |
+| Addition | beta | Added the [invokeUserFlowListener](https://docs.microsoft.com/graph/api/resources/invokeUserFlowListener?view=graph-rest-beta&preserve-view=true) resource type. |
 | Addition | beta | Added the [userFlowLanguageConfiguration](/graph/api/resources/userflowlanguageconfiguration?view=graph-rest-beta&preserve-view=true) entity for managing the language defaults and customizations within a user flow in an Azure Active Directory or Azure Active Directory B2C tenant. |
 | Addition | beta | Added the [userFlowLanguagePage](/graph/api/resources/userflowlanguagepage?view=graph-rest-beta&preserve-view=true) entity that defines the language defaults and customizations within a user flow in an Azure Active Directory or Azure Active Directory B2C tenant. |
 | Addition | beta | Added properties for **isLanguageCustomizationEnabled** and **defaultLanguageTag** and methods for listing and creating languages to the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) resource. |

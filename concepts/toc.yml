@@ -603,17 +603,17 @@ items:
                 href: toolkit/components/person.md
               - name: People
                 href: toolkit/components/people.md
-              - name: Person Card
+              - name: Person card
                 href: toolkit/components/person-card.md
-              - name: People Picker
+              - name: People picker
                 href: toolkit/components/people-picker.md
-              - name: Teams Channel Picker
+              - name: Teams channel picker
                 href: toolkit/components/teams-channel-picker.md
               - name: Agenda
                 href: toolkit/components/agenda.md
-              - name: Tasks
+              - name: Planner tasks
                 href: toolkit/components/tasks.md
-              - name: To Do
+              - name: To-do tasks
                 href: toolkit/components/todo.md
           - name: Customize components
             items:
