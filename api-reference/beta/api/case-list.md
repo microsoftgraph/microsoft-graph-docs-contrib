@@ -1,5 +1,5 @@
 ---
-title: "List ediscoveryCases"
+title: "List cases"
 description: "Retrieve a list of eDiscovery cases."
 localization_priority: Normal
 author: "mahage-msft"
@@ -7,11 +7,11 @@ ms.prod: "compliance"
 doc_type: "apiPageType"
 ---
 
-# List ediscoveryCases
+# List cases
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [ediscoveryCase](../resources/ediscoverycase.md) objects.
+Retrieve a list of [case](../resources/case.md) objects.
 
 ## Permissions
 
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [ediscoveryCase](../resources/ediscoverycase.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [case](../resources/case.md) objects in the response body.
 
 ## Examples
 
@@ -56,14 +56,16 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
-  "name": "list_ediscoverycase"
+  "name": "list_case"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-ediscoverycase-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -82,7 +84,6 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
@@ -92,7 +93,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.ediscoveryCase",
+  "@odata.type": "microsoft.graph.case",
   "isCollection": true
 } -->
 
@@ -163,5 +164,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -1,5 +1,5 @@
 ---
-title: "ediscoveryCase resource type"
+title: "case resource type"
 description: "eDiscovery cases are containers that contain custodians, holds, collections, review sets, and exports."
 localization_priority: Normal
 author: "mahage-msft"
@@ -7,7 +7,7 @@ ms.prod: "compliance"
 doc_type: "resourcePageType"
 ---
 
-# ediscoveryCase resource type
+# case resource type
 
 Namespace: microsoft.graph
 
@@ -19,13 +19,13 @@ eDiscovery cases are containers that contain custodians, holds, collections, rev
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List ediscoveryCases](../api/ediscoverycase-list.md)          | [ediscoveryCase](ediscoverycase.md) collection   | Get a list of eDiscovery cases.|
-| [Get ediscoveryCase](../api/ediscoverycase-get.md)            | [ediscoveryCase](ediscoverycase.md)               | Read eDiscovery case properties. |
-| [Create ediscoveryCase](../api/ediscoverycase-post.md)        | [ediscoveryCase](ediscoverycase.md)               | Create a new **ediscoveryCase** by posting to the cases collection. |
-| [Update ediscoveryCase](../api/ediscoverycase-update.md)      | [ediscoveryCase](ediscoverycase.md)               | Update an eDiscovery case. |
-| [Delete ediscoveryCase](../api/ediscoverycase-delete.md)      | None                                              | Delete an eDiscovery case. |
-| [Close ediscoveryCase](../api/ediscoverycase-close.md)        | None                                              | Close an eDiscovery case. |
-| [Reopen ediscoveryCase](../api/ediscoverycase-reopen.md)      | None                                              | Reopen a closed eDiscovery case.|
+| [List Case](../api/case-list.md) | [case](case.md) collection | Get a list of eDiscovery **case**s.|
+| [Get Case](../api/case-get.md) | [case](case.md) | Read eDiscovery **case** properties. |
+| [Create Case](../api/case-post.md) | [case](case.md) | Create a new **case** by posting to the cases collection. |
+| [Update Case](../api/case-update.md) | [case](case.md) | Update an eDiscovery **case**. |
+| [Delete Case](../api/case-delete.md) | None | Delete an eDiscovery **case**. |
+| [Close Case](../api/ediscoverycase-close.md)        | None                                              | Close an eDiscovery case. |
+| [Reopen Case](../api/ediscoverycase-reopen.md)      | None                                              | Reopen a closed eDiscovery case.|
 | [List custodians](../api/custodian-get.md)   | [custodian](../resources/custodian.md) collection |Get the custodian resources from the custodians navigation property.|
 | [Create custodians](../api/ediscoverycase-post-custodians.md)  | [custodian](../resources/custodian.md)           |Create a new custodian object.|
 | [List reviewSets](../api/reviewset-list.md)   | [reviewSet](../resources/reviewset.md) collection | Get the reviewSet resources from the reviewSets navigation property.|
@@ -62,8 +62,9 @@ eDiscovery cases are containers that contain custodians, holds, collections, rev
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|custodians|[custodian](../resources/custodian.md) collection| People in an organization who may possess data relevant to the case. |
-|reviewSets|[reviewSet](reviewset.md) collection| Collection of review sets in the case. Read-only. Nullable. |
+|Legal holds|[legalhold](../resources/legalhold.md) collection| Returns a list of case **legalHold**s for this **case**.  Nullable. |
+|Operations|[caseOperation](../resources/caseoperation.md) collection| Returns a list of case **operation**s for this **case**. Nullable. |
+|Review sets|[reviewSet](../resources/reviewset.md) collection| Collection of review sets in the case. Read-only. Nullable. |
 
 ## JSON representation
 
@@ -75,7 +76,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
  
   ],
-  "@odata.type": "microsoft.graph.ediscoveryCase"
+  "@odata.type": "microsoft.graph.case"
 }-->
 
 ```json
@@ -102,7 +103,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ediscoveryCase resource",
+  "description": "case resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -19,11 +19,11 @@ Represents static set of electronically stored information collected for use in 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List reviewSet](../api/reviewset-list.md) | [reviewSet](reviewset.md) collection | Get a collection of review sets. |
+| [List reviewSets](../api/reviewset-list.md) | [reviewSet](reviewset.md) collection | Get a collection of **reviewset**s. |
 | [Get reviewSet](../api/reviewset-get.md) | [reviewSet](reviewset.md) | Read the properties and relationships of a **reviewSet** object. |
-| [Create reviewSet](../api/reviewset-post.md) | [reviewSet](reviewset.md) | Create a new review set. |
+| [Create reviewSet](../api/reviewset-post.md) | [reviewSet](reviewset.md) | Create a new **reviewset**. |
 | [List queries](../api/reviewsetquery-list.md)|[reviewSetQuery](../resources/reviewsetquery.md) collection|Get the reviewSetQuery resources from the queries navigation property.|
-| [Create queries](../api/reviewsetquery-post.md)|[reviewSetQuery](../resources/reviewsetquery.md)|Create a new reviewSetQuery object.|
+| [Export](../api/reviewset-export.md) | None | Initiates a export of data from the **reviewset**. |
 
 ## Properties
 

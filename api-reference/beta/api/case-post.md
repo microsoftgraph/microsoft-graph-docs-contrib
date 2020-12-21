@@ -1,17 +1,17 @@
 ---
-title: "Get ediscoveryCase"
-description: "Retrieve the properties and relationships of ediscoverycase object."
+title: "Create case"
+description: "Use this API to create a new case."
 localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "compliance"
 doc_type: "apiPageType"
 ---
 
-# Get ediscoveryCase
+# Create case
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [ediscoveryCase](../resources/ediscoverycase.md) object.
+Create a new [case](../resources/case.md) object.
 
 ## Permissions
 
@@ -28,40 +28,65 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /compliance/ediscovery/cases/{id}
+POST /compliance/ediscovery/cases
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization | Bearer {token} |
+| Name          | Description   |
+|:--------------|:--------------|
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, supply a JSON representation of an [case](../resources/case.md) object. The following table lists properties that can be submitted with the call.
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+| displayName  | string      | The name of the eDiscovery case. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [ediscoveryCase](../resources/ediscoverycase.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [case](../resources/case.md) object in the response body.
 
 ## Examples
 
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_ediscoverycase"
+  "name": "post_case"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/cases/061b9a92-8926-4bd9-b41d-abf35edc7583
+POST https://graph.microsoft.com/beta/compliance/ediscovery/cases
+Content-type: application/json
+
+{
+    "displayName": "My Case 1",
+}
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-ediscoverycase-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-ediscoverycase-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/post-ediscoverycase-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-ediscoverycase-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -72,14 +97,15 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.ediscoveryCase"
+  "@odata.type": "microsoft.graph.case"
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/compliance/ediscovery/$metadata#cases/$entity",
     "id": "061b9a92-8926-4bd9-b41d-abf35edc7583",
     "displayName": "My Case 1",
     "description": "",
@@ -108,9 +134,8 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get ediscoveryCase",
+  "description": "Create case",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
 }-->
-

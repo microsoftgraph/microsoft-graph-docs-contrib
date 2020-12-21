@@ -1439,33 +1439,31 @@ items:
         - name: Overview
           href: resources/eDiscoveryapioverview.md
         - name: eDiscovery case
-          href: resources/ediscoverycase.md
+          href: resources/case.md
           items:
           - name: List
-            href: api/ediscoverycase-list.md
+            href: api/case-list.md
           - name: Create
-            href: api/ediscoverycase-post.md
+            href: api/case-post.md
           - name: Get
-            href: api/ediscoverycase-get.md
+            href: api/case-get.md
           - name: Update
-            href: api/ediscoverycase-update.md
+            href: api/case-update.md
           - name: Delete
-            href: api/ediscoverycase-delete.md
-        - name: Custodian
-          href: resources/custodian.md
+            href: api/case-delete.md
+        - name: Legal hold
+          href: resources/legalhold.md
           items:
           - name: List
-            href: api/ediscoverycase-list-custodians.md
+            href: api/legalhold-list.md
           - name: Create
-            href: api/ediscoverycase-post-custodians.md
+            href: api/legalhold-post.md
           - name: Get
-            href: api/custodian-get.md
+            href: api/legalhold-get.md
           - name: Update
-            href: api/custodian-update.md
-          - name: Activate
-            href: api/custodian-activate.md
-          - name: Release
-            href: api/custodian-release.md
+            href: api/legalhold-update.md
+          - name: Delete
+            href: api/legalhold-delete.md
         - name: eDiscovery Review set
           href: resources/reviewset.md
           items:
