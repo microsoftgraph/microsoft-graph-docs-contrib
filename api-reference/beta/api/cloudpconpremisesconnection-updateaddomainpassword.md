@@ -1,5 +1,5 @@
 ---
-title: "cloudPcOnPremisesConnection: UpdateAdDomainPassword"
+title: "cloudPcOnPremisesConnection: updateAdDomainPassword"
 description: "Update AD domain password for a successful onPremisesConnection."
 author: "AshleyYangSZ"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# cloudPcOnPremisesConnection: UpdateAdDomainPassword
+# cloudPcOnPremisesConnection: updateAdDomainPassword
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
