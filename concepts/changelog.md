@@ -58,6 +58,19 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Change | beta | Updated enum types in [printerProcessingStateDetail](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values) resource. |
 | Addition | beta | Added the [update configuration](/graph/api/printjob-update-configuration?view=graph-rest-beta&preserve-view=true) action to the [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource.|
 
+### Devices and apps | Cloud PC
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the `failed` member to the **cloudPcStatus** enumeration.|
+|Deletion|beta|Removed the `upgradeFailed`,`provisionFailed`, `deprovisionFailed`, `reprovisionFailed` members from the **cloudPcStatus** enumeration.|
+|Addition|beta|Added the `resourceAvailabilityCheckSubscriptionDisabled` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.|
+|Addition|beta|Added the `permissionCheckNoSubscriptionReaderRole` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.|
+|Addition|beta|Added the `permissionCheckNoResourceGroupOwnerRole` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.|
+|Addition|beta|Added the `permissionCheckNoVNetContributorRole` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.|
+|Addition|beta|Added the `permissionCheckUnknownError` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.|
+|Addition|beta|Added the [UpdateAdDomainPassword](https://docs.microsoft.com/en-us/graph/api/cloudPcOnPremisesConnection-UpdateAdDomainPassword?view=graph-rest-beta) method to the [cloudPcOnPremisesConnection](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta) resource.|
+
 ### Education
 
 | **Change type** | **Version**   | **Description**                          |
