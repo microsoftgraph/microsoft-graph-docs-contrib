@@ -40,13 +40,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [custodian](/graph/api/resources/custodian?view=graph-rest-beta&preserve-view=true), [unifiedGroupSource](/graph/api/resources/unifiedgroupsource?view=graph-rest-beta&preserve-view=true), and [siteSource](/graph/api/resources/sitesource?view=graph-rest-beta&preserve-view=true) resources and associated methods. |
 
-### Devices and apps | Cloud PC
-
-| **Change type** | **Version** | **Description** |
-|:---|:---|:---|
-|Addition|beta|Added the `failed` member to the **cloudPcStatus** enumeration.|
-|Deletion|beta|Removed the `upgradeFailed`,`provisionFailed`, `deprovisionFailed`, `reprovisionFailed` members from the **cloudPcStatus** enumeration.|
-
 ### Devices and apps | Cloud printing
 
 | **Change type** | **Version**   | **Description**                          |
@@ -64,12 +57,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |:---|:---|:---|
 |Addition|beta|Added the `failed` member to the **cloudPcStatus** enumeration.|
 |Deletion|beta|Removed the `upgradeFailed`,`provisionFailed`, `deprovisionFailed`, `reprovisionFailed` members from the **cloudPcStatus** enumeration.|
+|Addition|beta|Added the `failed` member to the **cloudPcStatus** enumeration.|
+|Deletion|beta|Removed the `upgradeFailed`,`provisionFailed`, `deprovisionFailed`, `reprovisionFailed` members from the **cloudPcStatus** enumeration.|
 |Addition|beta|Added the `resourceAvailabilityCheckSubscriptionDisabled` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.|
 |Addition|beta|Added the `permissionCheckNoSubscriptionReaderRole` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.|
 |Addition|beta|Added the `permissionCheckNoResourceGroupOwnerRole` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.|
 |Addition|beta|Added the `permissionCheckNoVNetContributorRole` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.|
 |Addition|beta|Added the `permissionCheckUnknownError` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.|
-|Addition|beta|Added the [updateAdDomainPassword](https://docs.microsoft.com/en-us/graph/api/cloudPcOnPremisesConnection-updateAdDomainPassword?view=graph-rest-beta) method to the [cloudPcOnPremisesConnection](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta) resource.|
+|Addition|beta|Added the [updateAdDomainPassword](https://docs.microsoft.com/graph/api/cloudPcOnPremisesConnection-updateAdDomainPassword?view=graph-rest-beta&preserve-view=true) method to the [cloudPcOnPremisesConnection](https://docs.microsoft.com/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta&preserve-view=true) resource.|
 
 ### Education
 
