@@ -61,8 +61,8 @@ As part of Azure Active Directory [entitlement management](/graph/api/resources/
 - Define an [email OTP authentication methods policy](/graph/api/resources/emailauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) for a tenant.
 
 ### Teamwork
-- For a [member](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) resource in a [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true), [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true), or a [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) context:
-  - Differentiate team members who are [Azure AD users](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta&preserve-view=true), noting their user ID, email address and Azure AD tenant ID. Programmatically, such **aaduserconversationmember** inherits from the base type of team members, [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true).
+- For a [member](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) resource in a [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true), [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true), or a [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) context, you can now:
+  - Differentiate a member who is an [Azure AD user](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta&preserve-view=true), noting the user ID, email address, and Azure AD tenant ID. 
   - [Add multiple users as members of a team](/graph/api/conversationmembers-add?view=graph-rest-beta&preserve-view=true).
 - For a [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource:
   - [Get all the messages in chats that the specified user has participated in](/graph/api/chats-getallmessages?view=graph-rest-beta&preserve-view=true), including one-on-one chats, group chats, and meeting chats.
@@ -74,7 +74,7 @@ As part of Azure Active Directory [entitlement management](/graph/api/resources/
 - For a [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource:
   - [Get all the messages across all the channels in a team](/graph/api/channels-getallmessages?view=graph-rest-beta&preserve-view=true).
   - Team owners can turn on [moderation for a channel](/graph/api/resources/channelmoderationsettings?view=graph-rest-beta&preserve-view=true) to control who can start new posts or reply to posts in that channel, using the **moderationSettings** property of the channel.
-- As part of a [Teams app definition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta&preserve-view=true), use the **bot** relationship to connect to a teamwork bot](/graph/api/resources/teamworkbot?view=graph-rest-beta&preserve-view=true).
+- As part of a [Teams app definition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta&preserve-view=true), use the **bot** relationship to connect to a [teamwork bot](/graph/api/resources/teamworkbot?view=graph-rest-beta&preserve-view=true).
 
 ### To-do tasks
 Subscribe to [change notifications](webhooks.md) of a [To Do task](/graph/api/resources/todoTask?view=graph-rest-beta&preserve-view=true).
