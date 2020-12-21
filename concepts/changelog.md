@@ -134,10 +134,10 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the [teamworkBot](/graph/api/resources/teamworkbot?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added the **bot** relationship to the [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added the **moderationSettings** property to [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource. |
-| Addition | beta | Added the [channelModerationSettings](/graph/api/resources/channelModerationSettings2?view=graph-rest-beta&preserve-view=true) resource type. |
+| Addition | beta | Added the [channelModerationSettings](/graph/api/resources/channelmoderationsettings?view=graph-rest-beta&preserve-view=true) resource type. |
 | Addition | beta | Added the **replyRestriction** enumeration type. |
 | Addition | beta | Added the **userNewMessageRestriction** enumeration type. |
-| Addition | beta | Added the [Remove chat member](/graph/api/chat-post-members?view=graph-rest-beta&preserve-view=true) method to [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource type.|
+
 
 
 ## November 2020
