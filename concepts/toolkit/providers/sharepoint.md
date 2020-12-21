@@ -9,7 +9,7 @@ author: nmetulev
 
 Use the SharePoint provider inside your SharePoint web parts to power the components with Microsoft Graph access.
 
-To learn more about authentication providers, see [Providers](../providers.md).
+To learn more about authentication providers, see [Providers](./providers.md).
 
 ## Get started
 

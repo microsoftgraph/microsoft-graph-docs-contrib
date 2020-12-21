@@ -60,6 +60,8 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "identityuserflowattributeassignment_setorder"
@@ -68,7 +70,6 @@ If successful, this action returns a `204 No Content` response code.
 
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttributeAssignments/setOrder
-
 Content-Type: application/json
 Content-length: 90
 
@@ -81,6 +82,12 @@ Content-length: 90
   }
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/identityuserflowattributeassignment-setorder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

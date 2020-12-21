@@ -71,7 +71,7 @@ In the request body, supply a JSON representation of the [accessReviewScheduleDe
   "name": "create_accessReviewScheduleDefinition"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/accessReviews
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
 Content-type: application/json
 
 {
