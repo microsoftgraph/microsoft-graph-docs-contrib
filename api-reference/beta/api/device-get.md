@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/devices/{id}
 
 > Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.
 
-##### Response
+### Response for device with no hostNames
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -95,9 +95,33 @@ Content-length: 322
   "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
   "deviceId": "deviceId-value",
   "deviceMetadata": "deviceMetadata-value",
-  "deviceVersion": 99
+  "deviceVersion": 99,
+  "hostNames": []
 }
 ```
+
+### Response for device with hostNames
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 322
+
+{
+  "accountEnabled": true,
+  "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
+  "deviceId": "deviceId-value",
+  "deviceMetadata": "deviceMetadata-value",
+  "deviceVersion": 99,
+  "hostnames":["hostname1.contoso.onmicrosoft.com", "hostname1"]
+}
+```
+
 
 ## See also
 
