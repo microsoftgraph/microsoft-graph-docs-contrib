@@ -1,7 +1,7 @@
 ---
 title: "Get adminConsentRequestPolicy"
 description: "Read the properties and relationships of an adminConsentRequestPolicy object."
-author: ""
+author: "Zawad"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
@@ -76,19 +76,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "https://graph.microsoft.com/beta/$metadata#policies/adminConsentRequestPolicy/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/adminConsentRequestPolicy/$entity",
     "isEnabled": true,
     "notifyReviewers": true,
     "remindersEnabled": true,
-    "version": 0,
     "requestDurationInDays": 15,
+    "version": 4,
     "reviewers": [
-      {
-        "query": "/users/02b7b641-2c01-4bd4-bd5e-8ec618a9fbfd",
-        "queryType": "MicrosoftGraph"
-      }
+        {
+            "query": "/users/22075847-329a-4195-8bcf-2775ee97f0a8",
+            "queryType": "MicrosoftGraph"
+        },
+        {
+            "query": "/users/39e3d858-882a-405f-ad74-28321d87a5b4",
+            "queryType": "MicrosoftGraph"
+        }
     ]
-  }
 }
 ```

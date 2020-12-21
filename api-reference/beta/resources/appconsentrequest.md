@@ -1,7 +1,7 @@
 ---
 title: "appConsentRequest resource type"
 description: "A request that represents an aggregation of userConsentRequests for a specific application."
-author: ""
+author: "Zawad"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
@@ -27,8 +27,8 @@ A request that represents an aggregation of [userConsentRequests](../resources/u
 |appDisplayName|String|The app display name of the app consent request.<br><br>Supports `$filter` (`eq` only) and `$sort`.|
 |appId|String|The identifier of the application.<br><br>Supports `$filter` (`eq` only) and `$sort`. |
 |consentType|String|The consent type of the request. Possible values are: `Static` and `Dynamic`.<br><br>Supports `$filter` (`eq` only) and `$sort`. |
-|id|String|The identifier of the request. |
-|pendingScopes|[accessReviewScope](../resources/accessreviewscope.md) collection|A list of pending scopes that need approval. |
+|id|String|The identifier of the app consent request. |
+|pendingScopes|[appConsentRequestScope](../resources/appconsentrequestscope.md) collection|A list of pending dynamic scopes that need approval. |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -54,7 +54,7 @@ The following is a JSON representation of the resource.
   "consentType": "String",
   "pendingScopes": [
     {
-      "@odata.type": "microsoft.graph.accessReviewScope"
+      "@odata.type": "microsoft.graph.appConsentRequestScope"
     }
   ]
 }

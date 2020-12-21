@@ -1,7 +1,7 @@
 ---
 title: "List appConsentRequests"
 description: "Get a list of the appConsentRequest objects and their properties."
-author: ""
+author: "Zawad"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
@@ -76,10 +76,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#appConsentRequests",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests",
+  "@odata.count": 1,
   "value": [
     {
-      "@odata.type": "#microsoft.graph.appConsentRequest",
       "id": "5a3a0f94-b89d-4cd3-a4ad-fd78faec333f",
       "appId": "3fa97b03-0af0-4773-93ed-4c247cb62ce2",
       "appDisplayName": "Salesforce",
@@ -96,4 +96,5 @@ Content-Type: application/json
   ]
 }
 ```
+
 

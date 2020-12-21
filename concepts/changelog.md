@@ -59,6 +59,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [adminConsentRequestPolicy](/graph/api/resources/adminconsentrequestpolicy?view=graph-rest-beta&preserve-view=true) resource type and associated methods.|
+| Addition | beta | Added the [userConsentRequest](/graph/api/resources/userconsentrequest?view=graph-rest-beta&preserve-view=true) resource type and associated methods.|
+| Addition | beta | Added the [appConsentRequest](/graph/api/resources/appconsentrequest?view=graph-rest-beta&preserve-view=true) resource type and associated methods.|
+| Addition | beta | Added the [request](/graph/api/resources/request?view=graph-rest-beta&preserve-view=true) complex type.|
+| Addition | beta | Added the [approval](/graph/api/resources/approval?view=graph-rest-beta&preserve-view=true) complex type.|
+| Addition | beta | Added the [appConsentRequestScope](/graph/api/resources/appconsentrequestscope?view=graph-rest-beta&preserve-view=true) complex type.|
+| Addition | beta | Added the [appConsentRequestsForApproval](/graph/api/resources/appconsentrequestsforapproval?view=graph-rest-beta&preserve-view=true) resource type and associated methods.|
 | Addition | beta | Added the following properties to [Terms of Use agreementfile](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true):<ul><li>isMajorVersion</li><li>createdDateTime</li></ul>|
 | Addition | beta | Added the following properties to [Terms of Use agreementfilelocalization](/graph/api/resources/agreementfilelocalization?view=graph-rest-beta&preserve-view=true):<ul><li>isMajorVersion</li><li>createdDateTime</li></ul>|
 | Addition | beta | Added a new resource type to [Terms of Use agreement](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true):</br>[agreementFileVersion](/graph/api/resources/agreementfileversion?view=graph-rest-beta&preserve-view=true)|

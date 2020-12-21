@@ -24,7 +24,8 @@ GA of the [presence](/graph/api/resources/presence) resource, allowing getting t
 ## December 2020: New in preview only
 
 ### Identity and access
-Get or set the version and creation metadata for an Azure AD [terms of use](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true) [agreement](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true), [agreement file](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true), and [agreementfilelocalization](/graph/api/resources/agreementfilelocalization?view=graph-rest-beta&preserve-view=true)
+- Use the [consent request APIs](/graph/api/resources/consentrequests-root?view=graph-rest-beta&preserve-view=true) to manage the request workflow for users attempting to access apps that require access to organizational data.
+- Get or set the version and creation metadata for an Azure AD [terms of use](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true) [agreement](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true), [agreement file](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true), and [agreementfilelocalization](/graph/api/resources/agreementfilelocalization?view=graph-rest-beta&preserve-view=true)
 
 ## November 2020: New and generally available
 

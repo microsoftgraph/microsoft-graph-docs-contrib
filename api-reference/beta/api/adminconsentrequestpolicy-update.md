@@ -1,7 +1,7 @@
 ---
 title: "Update adminConsentRequestPolicy"
 description: "Update the properties of an adminConsentRequestPolicy object."
-author: ""
+author: "Zawad"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
@@ -48,11 +48,11 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|Indicates whether the admin consent policy is enabled or disabled.<br>Note: this flag manages the policy, while the directory settings flag **EnableAdminConsentRequests** determines if users are shown the prompt to request access. The directory settings flag **EnableAdminConsentRequests** must be set to `true`.|
+|isEnabled|Boolean|Indicates whether the admin consent policy is enabled or disabled.<br><br>Note: this flag manages the policy, while the **EnableAdminConsentRequests** flag of the **Consent Policy Settings** object of the [directory settings](../resources/directorysetting.md) resource determines if users are shown the prompt to request access. The **EnableAdminConsentRequests** flag must be set to `true`.|
 |notifyReviewers|Boolean|Indicates whether reminder emails to reviewers is enabled or disabled. |
 |remindersEnabled|Boolean|Indicates whether reminder emails to reviewers is enabled or disabled. |
 |requestDurationInDays|Int32|Specifies the duration of the request. |
-|reviewers|[accessReviewScope](../resources/accessreviewscope.md) collection|Contains the list of reviewers for admin consent. |
+|reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|Contains the list of reviewers for admin consent. |
 
 
 
@@ -73,15 +73,13 @@ PUT https://graph.microsoft.com/beta/policies/adminConsentRequestPolicy
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.adminConsentRequestPolicy",
-  "isEnabled": true,
-  "notifyReviewers": true,
-  "remindersEnabled": true,
-  "requestDurationInDays": 15,
-  "reviewers": [
+  "isEnabled":true,
+  "notifyReviewers":true,
+  "remindersEnabled":true,
+  "requestDurationInDays":3,
+  "reviewers":[
     {
-      "query": "/users/02b7b641-2c01-4bd4-bd5e-8ec618a9fbfd",
-      "queryType": "MicrosoftGraph"
+      "query":"/users/22075847-329a-4195-8bcf-2775ee97f0a8","queryType":"MicrosoftGraph"
     }
   ]
 }

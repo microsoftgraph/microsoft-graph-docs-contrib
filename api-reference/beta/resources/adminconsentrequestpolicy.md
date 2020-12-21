@@ -1,7 +1,7 @@
 ---
 title: "adminConsentRequestPolicy resource type"
 description: "Specifies the policy by which app consent requests can be created and managed for the entire tenant."
-author: ""
+author: "Zawad"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
@@ -30,7 +30,7 @@ The **adminConsentRequestPolicy** provides additional settings when creating a c
 |notifyReviewers|Boolean|Indicates whether notification to requestors is enabled or disabled.|
 |remindersEnabled|Boolean|Indicates whether reminder emails to reviewers is enabled or disabled. |
 |requestDurationInDays|Int32|Specifies the duration of the request. |
-|reviewers|[accessReviewScope](../resources/accessreviewscope.md) collection|Contains the list of reviewers for admin consent. |
+|reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|Contains the list of reviewers for admin consent. |
 |version|Int32|Specifies version updates to this policy. When the policy is updated, this version is updated. Read-only.|
 
 ## Relationships
@@ -56,7 +56,7 @@ The following is a JSON representation of the resource.
   "requestDurationInDays": "Integer",
   "reviewers": [
     {
-      "@odata.type": "microsoft.graph.accessReviewScope"
+      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
     }
   ]
 }

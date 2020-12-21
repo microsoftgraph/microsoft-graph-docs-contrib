@@ -1,7 +1,7 @@
 ---
 title: "Get userConsentRequest"
 description: "Read the properties and relationships of a userConsentRequest object."
-author: ""
+author: "Zawad"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
