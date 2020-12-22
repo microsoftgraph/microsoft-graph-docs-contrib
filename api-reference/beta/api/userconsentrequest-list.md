@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests 
+GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests 
 ```
 
 
@@ -168,11 +168,11 @@ Content-Type: application/json
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_userconsentrequest"
+  "name": "list_userconsentrequest_approved"
 }
 -->
 ``` http
-https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests 
+GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests 
 ```
 
 

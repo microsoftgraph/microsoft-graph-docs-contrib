@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_appconsentrequest"
+  "name": "get_appconsentrequest"
 }
 -->
 ``` http
@@ -99,7 +99,7 @@ Content-Type: application/json
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_appconsentrequest_userconsentrequest"
+  "name": "get_appconsentrequest_userconsentrequest"
 }
 -->
 ``` http
