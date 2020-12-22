@@ -283,7 +283,7 @@ Content-Type: application/json
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_appconsentrequest_userconsentrequest"
+  "name": "list_userconsentrequest_appconsentrequest"
 }
 -->
 ``` http
