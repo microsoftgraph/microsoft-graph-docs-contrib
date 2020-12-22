@@ -1,6 +1,6 @@
 ---
 title: "approvalStep resource type"
-description: "**TODO: Add Description**"
+description: "Multi-step approval decisions associated with a request."
 author: "Zawad"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"

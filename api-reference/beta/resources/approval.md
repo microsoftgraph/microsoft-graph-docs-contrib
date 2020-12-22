@@ -1,6 +1,6 @@
 ---
 title: "approval resource type"
-description: "**TODO: Add Description**"
+description: "Approval decisions associated with a request"
 author: "Zawad"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"

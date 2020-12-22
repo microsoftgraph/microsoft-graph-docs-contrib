@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: conceptualPageType
 ---
 
-# Azure AD access reviews (Group memberships)
+# Azure AD consent requests
 
 Namespace: microsoft.graph
 
@@ -30,12 +30,12 @@ The consent request resource types include:
 
 ## Methods
 
-The following table lists the methods that you can use to interact with access review-related resources.
+The following table lists the methods that you can use to interact with consent request resources.
 
 | Method		   | Return type	|Description|
 |:---------------|:--------|:----------|
 |[Get adminConsentRequestPolicy](../api/adminconsentrequestpolicy-get.md) | [adminConsentRequestPolicy](adminconsentrequestpolicy.md) collection | Read the properties of the [adminConsentRequestPolicy](adminconsentrequestpolicy.md) |
-|[Update adminConsentRequestPolicy](../api/adminconsentrequestpolicy-update) | [adminConsentRequestPolicy](adminconsentrequestpolicy.md) collection | Set configurations for the [adminConsentRequestPolicy](adminconsentrequestpolicy.md) |
+|[Update adminConsentRequestPolicy](../api/adminconsentrequestpolicy-update.md) | [adminConsentRequestPolicy](adminconsentrequestpolicy.md) collection | Set configurations for the [adminConsentRequestPolicy](adminconsentrequestpolicy.md) |
 |Update Consent Policy Settings| none | The **EnableAdminConsentRequest** flag of the Consent Policy Settings object of the [directory settings](../resources/directorysetting.md) resource  determines if users are shown the prompt to request access. |
 |[List appConsentRequests ](../api/appconsentrequest-list.md) | [appConsentRequest](appconsentrequest.md) collection | Retrieve a list of all [appConsentRequests](appconsentrequest.md) |
 |[Get appConsentRequests ](../api/appconsentrequest-get.md) | [appConsentRequest](appconsentrequest.md) collection | Read a given [appConsentRequest](appconsentrequest.md) |

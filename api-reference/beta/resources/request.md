@@ -1,6 +1,6 @@
 ---
 title: "request resource type"
-description: "**TODO: Add Description**"
+description: "Represents a base request model"
 author: "Zawad"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
