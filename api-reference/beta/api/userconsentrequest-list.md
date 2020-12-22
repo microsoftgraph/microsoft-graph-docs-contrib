@@ -315,7 +315,7 @@ Content-Type: application/json
         "id": "37244623-9df1-44df-846c-e11b37e7400f",
         "displayName": "Grady Archie",
         "userPrincipalName": "GradyA@contoso.com",
-        "mail": "GradyA@constoso.com",
+        "mail": "GradyA@contoso.com",
         "user": {
           "id": "37244623-9df1-44df-846c-e11b37e7400f",
           "displayName": "Grady Archie",
@@ -339,7 +339,7 @@ Content-Type: application/json
         "user": {
           "id": "eda30546-2cec-4bb2-bd89-ff04aaf135a7",
           "displayName": "Adele Vance",
-          "userPrincipalName": "AdeleV@contoso.com"
+          "userPrincipalName": "AdeleV@contoso.com",
           "mail": "AdeleV@contoso.com"
         }
       },
