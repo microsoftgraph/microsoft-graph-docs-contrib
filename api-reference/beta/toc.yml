@@ -10945,6 +10945,10 @@ items:
               href: api/appconsentrequest-list.md
             - name: Get app consent request
               href: api/appconsentrequest-get.md
+            - name: List app consent requests for my approval
+              href: api/user-list-appconsentrequestsforapproval.md
+            - name: Get app consent request for my approval
+              href: api/user-get-appconsentrequestsforapproval.md
           - name: User consent requests
             href: resources/userconsentrequest.md
             items:
@@ -10952,10 +10956,6 @@ items:
               href: api/userconsentrequest-list.md
             - name: Get
               href: api/userconsentrequest-get.md
-            - name: List app consent requests for my approval
-              href: api/user-list-appconsentrequestsforapproval.md
-            - name: Get app consent request for my approval
-              href: api/user-get-appconsentrequestsforapproval.md
         - name: Entitlement management
           href: resources/entitlementmanagement-root.md
           items:

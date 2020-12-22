@@ -75,19 +75,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests/$entity",
-  "id": "5a3a0f94-b89d-4cd3-a4ad-fd78faec333f",
-  "appId": "3fa97b03-0af0-4773-93ed-4c247cb62ce2",
-  "appDisplayName": "Salesforce",
-  "consentType": "Dynamic",
-  "pendingScopes": [
-    {
-      "displayName": "Salesforce.ReadWrite.Users"
-    },
-    {
-      "displayName": "Salesforce.ReadWrite.Groups"
-    }
-  ]
+  "value": {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests/$entity",
+    "id": "5a3a0f94-b89d-4cd3-a4ad-fd78faec333f",
+    "appId": "3fa97b03-0af0-4773-93ed-4c247cb62ce2",
+    "appDisplayName": "Salesforce",
+    "consentType": "Dynamic",
+    "pendingScopes": [
+      {
+        "displayName": "Salesforce.ReadWrite.Users"
+      },
+      {
+        "displayName": "Salesforce.ReadWrite.Groups"
+        }
+    ]
+  }
 }
 ```
 
