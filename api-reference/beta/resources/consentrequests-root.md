@@ -47,19 +47,16 @@ The following table lists the methods that you can use to interact with access r
 
 ## Role and application permission authorization checks
 
-The following directory roles are required for a calling user to manage access reviews. Note that only access reviews on groups are supported currently through Microsoft Graph APIs.
+The following directory roles are required for a calling user to manage the requets workflow or read the list of requests.
 
 | Operation | Application permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|
-| Read | AccessReview.Read.All or AccessReview.ReadWrite.All | Global Administrator, Global Reader, Security Administrator, Security Reader or User Administrator |
-| Create, Update or Delete | AccessReview.ReadWrite.All | Global Administrator or User Administrator |
-
-In addition, a user who is an assigned reviewer of an access review can manage their decisions, without needing to be in a directory role.
+| Read | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All | Global Administrator, Global Reader, Cloud App Administrator, and Application Administrator |
+| Update | ConsentRequest.ReadWrite.All |Global Administrator |
 
 ## See also
 
-- [How an administrator can manage user access with Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
-- [How an administrator can manage guest access with Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
+- [Configure the admin consent workflow (preview)](/azure/active-directory/manage-apps/configure-admin-consent-workflow)
 
 
 <!--

@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the [appConsentRequest](../resources/appconsentrequest.md) resources from the **appConsentRequestsForApproval** navigation property.
+List the [appConsentRequest](../resources/appconsentrequest.md) resources from the **appConsentRequestsForApproval** navigation property. Registered reviewers can obtain the list of pending appConsentRequests that require their review. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,10 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /me/appConsentRequestsForApproval/ 
-GET /me/appConsentRequestsForApproval/{id}
+GET /me/appConsentRequestsForApproval/
 GET /me/appConsentRequestsForApproval/{id}/userConsentRequests
-GET /me/appConsentRequestsForApproval/{id}/userConsentRequests/{userConsentRequest-id}
 ```
 
 ## Optional query parameters
@@ -153,7 +151,7 @@ Content-Type: application/json
         },
         {
             "id": "2689fcfd-cb87-4e36-a51f-5720fd88429d",
-            "reason": "I'd like to beta test this app.",
+            "reason": "I wish to beta test this app.",
             "status": "InProgress",
             "createdDateTime": "2020-12-21T21:11:25.3493113Z",
             "createdBy": {

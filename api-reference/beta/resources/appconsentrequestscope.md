@@ -1,7 +1,7 @@
 ---
 title: "appConsentRequestScope resource type"
 description: "Details of the dynamic permission scopes for which access is being requested"
-author: ""
+author: "Zawad"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType

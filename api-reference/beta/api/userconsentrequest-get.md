@@ -59,12 +59,12 @@ If successful, this method returns a `200 OK` response code and a [userConsentRe
 }
 -->
 ``` http
-GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/{id} 
+GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/{userConsentRequest-id} 
 ```
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+The following response shows a userConsentRequest that's approved.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -76,16 +76,45 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.userConsentRequest",
-    "id": "6e9eb21d-b21d-6e9e-1db2-9e6e1db29e6e",
-    "reason": "String",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('b3c380a0-9180-445c-b20e-1d76e7b51df7')/userConsentRequests/$entity",
+    "id": "2689fcfd-cb87-4e36-a51f-5720fd88429d",
+    "reason": "I wish to beta test this app.",
+    "status": "Completed",
+    "createdDateTime": "2020-12-21T21:11:25.3493113Z",
     "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
+        "id": "eda30546-2cec-4bb2-bd89-ff04aaf135a7",
+        "displayName": "Adele Vance",
+        "userPrincipalName": "AdeleV@contoso.com",
+        "mail": "AdeleV@contoso.com",
+        "user": {
+            "id": "eda30546-2cec-4bb2-bd89-ff04aaf135a7",
+            "displayName": "Adele Vance",
+            "userPrincipalName": "AdeleV@contoso.com",
+            "mail": "AdeleV@contoso.com"
+        }
     },
-    "status": "String",
-    "createdDateTime": "String (timestamp)"
-  }
+    "approval@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('b3c380a0-9180-445c-b20e-1d76e7b51df7')/userConsentRequests('2689fcfd-cb87-4e36-a51f-5720fd88429d')/approval/$entity",
+    "approval": {
+        "id": "2689fcfd-cb87-4e36-a51f-5720fd88429d",
+        "pendingSteps@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('b3c380a0-9180-445c-b20e-1d76e7b51df7')/userConsentRequests('2689fcfd-cb87-4e36-a51f-5720fd88429d')/approval/pendingSteps",
+        "pendingSteps": [],
+        "completedSteps@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('b3c380a0-9180-445c-b20e-1d76e7b51df7')/userConsentRequests('2689fcfd-cb87-4e36-a51f-5720fd88429d')/approval/completedSteps",
+        "completedSteps": [
+            {
+                "id": "ee90b1fa-5082-48d6-ba61-8fe64dddfd4c",
+                "displayName": null,
+                "reviewedDateTime": "2020-12-23T00:36:42.177Z",
+                "reviewResult": "Approve",
+                "justification": "Admin consent granted.",
+                "reviewedBy": {
+                    "id": "00000001-0000-0000-c000-000000000000",
+                    "displayName": "",
+                    "userPrincipalName": "",
+                    "mail": ""
+                }
+            }
+        ]
+    }
 }
 ```
 

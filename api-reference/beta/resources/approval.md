@@ -1,7 +1,7 @@
 ---
 title: "approval resource type"
 description: "**TODO: Add Description**"
-author: ""
+author: "Zawad"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
