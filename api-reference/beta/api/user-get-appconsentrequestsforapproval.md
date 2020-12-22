@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_appconsentrequest"
+  "name": "get_appconsentrequestforapproval"
 }
 -->
 ``` http
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/me/appConsentRequestsForApproval/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.appConsentRequest)"
+  "@odata.type": "microsoft.graph.appConsentRequest"
 }
 -->
 ``` http

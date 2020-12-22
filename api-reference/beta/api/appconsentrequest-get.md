@@ -75,12 +75,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests/$entity",
-  "id": "fd63baaf-9d2a-4ac1-87be-6fd11df20aa3",
-  "appId": "2a426858-d369-43c2-85c9-8b8ace79cd33",
-  "appDisplayName": "Demo game",
-  "consentType": "Static",
-  "pendingScopes": []
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('22075847-329a-4195-8bcf-2775ee97f0a8')/appConsentRequestsForApproval/$entity",
+  "id": "5a3a0f94-b89d-4cd3-a4ad-fd78faec333f",
+  "appId": "3fa97b03-0af0-4773-93ed-4c247cb62ce2",
+  "appDisplayName": "Salesforce",
+  "consentType": "Dynamic",
+  "pendingScopes": [
+    {
+      "displayName": "Salesforce.ReadWrite.Users"
+    },
+    {
+      "displayName": "Salesforce.ReadWrite.Groups"
+    }
+  ]
 }
 ```
 
