@@ -20,9 +20,6 @@ A request that represents an aggregation of [userConsentRequests](../resources/u
 |:---|:---|:---|
 |[List appConsentRequests](../api/appconsentrequest-list.md)|[appConsentRequest](../resources/appconsentrequest.md) collection|Get a list of the [appConsentRequest](../resources/appconsentrequest.md) objects and their properties.|
 |[Get appConsentRequest](../api/appconsentrequest-get.md)|[appConsentRequest](../resources/appconsentrequest.md)|Read the properties and relationships of an [appConsentRequest](../resources/appconsentrequest.md) object.|
-|[List appConsentRequestsForApproval](../api/user-list-appconsentrequestsforapproval.md)|[appConsentRequest](../resources/appconsentrequest.md)|Read the [appConsentRequest](../resources/appconsentrequest.md) object pending your approval.|
-|[Get appConsentRequestsForApproval](../api/user-get-appconsentrequestsforapproval.md)|[appConsentRequest](../resources/appconsentrequest.md)|Read an [appConsentRequest](../resources/appconsentrequest.md) object pending your approval.|
-
 
 ## Properties
 |Property|Type|Description|

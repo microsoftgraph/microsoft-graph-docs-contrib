@@ -33,6 +33,7 @@ The work or school account needs to belong to one of the following roles: *Globa
 -->
 ``` http
 GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/{id}
+GET /me/appConsentRequestsForApproval/{id}/userConsentRequests/{userConsentRequest-id}
 ```
 
 ## Optional query parameters
@@ -50,7 +51,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [userConsentRequest](../resources/userconsentrequest.md) object in the response body.
 
-## Examples
+## Example 1: Get a userConsentRequest
 
 ### Request
 <!-- {
@@ -118,3 +119,49 @@ Content-Type: application/json
 }
 ```
 
+## Example 2: Get a userConsentRequest for the appConsentRequest that is pending your approval
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_userconsentrequest_appconsentrequest"
+}
+-->
+``` http
+GET /me/appConsentRequestsForApproval/{id}/userConsentRequests/{userConsentRequest-id}
+```
+
+
+### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.appConsentRequest"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('22075847-329a-4195-8bcf-2775ee97f0a8')/appConsentRequestsForApproval('b3c380a0-9180-445c-b20e-1d76e7b51df7')/userConsentRequests/$entity",
+  "id": "e8b37cac-33a9-4be9-b728-87281944058f",
+  "reason": "I need this app to work.",
+  "status": "InProgress",
+  "createdDateTime": "2020-12-21T21:17:05.8975992Z",
+  "createdBy": {
+    "id": "37244623-9df1-44df-846c-e11b37e7400f",
+    "displayName": "Grady Archie",
+    "userPrincipalName": "GradyA@contoso.com",
+    "mail": "GradyA@contoso.com",
+    "user": {
+      "id": "37244623-9df1-44df-846c-e11b37e7400f",
+      "displayName": "Grady Archie",
+      "userPrincipalName": "GradyA@contoso.com",
+      "mail": "GradyA@contoso.com"
+    }
+  },
+  "approval@odata.context": "https://graph.microsoft.com/beta/$metadata#users('22075847-329a-4195-8bcf-2775ee97f0a8')/appConsentRequestsForApproval('b3c380a0-9180-445c-b20e-1d76e7b51df7')/userConsentRequests('e8b37cac-33a9-4be9-b728-87281944058f')/approval/$entity",
+  "approval": null
+}
+```
