@@ -319,7 +319,7 @@ Content-Type: application/json
         "user": {
           "id": "37244623-9df1-44df-846c-e11b37e7400f",
           "displayName": "Grady Archie",
-          "userPrincipalName": "GradyA@contosocom",
+          "userPrincipalName": "GradyA@contoso.com",
           "mail": "GradyA@contoso.com"
         }
       },
