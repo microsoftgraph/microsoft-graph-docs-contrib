@@ -259,7 +259,7 @@ Content-Type: application/json
         "completedSteps@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('b3c380a0-9180-445c-b20e-1d76e7b51df7')/userConsentRequests('2689fcfd-cb87-4e36-a51f-5720fd88429d')/approval/completedSteps",
         "completedSteps": [
           {
-            "id": "ee90b1fa-5082-48d6-ba61-8fe64dddfd4c"
+            "id": "ee90b1fa-5082-48d6-ba61-8fe64dddfd4c",
             "displayName": null,
             "reviewedDateTime": "2020-12-23T00:36:42.177Z",
             "reviewResult": "Approve",
@@ -322,7 +322,7 @@ Content-Type: application/json
           "userPrincipalName": "GradyA@contosocom",
           "mail": "GradyA@contoso.com"
         }
-      }
+      },
       "approval@odata.context": "https://graph.microsoft.com/beta/$metadata#users('22075847-329a-4195-8bcf-2775ee97f0a8')/appConsentRequestsForApproval('b3c380a0-9180-445c-b20e-1d76e7b51df7')/userConsentRequests('e8b37cac-33a9-4be9-b728-87281944058f')/approval/$entity",
       "approval": null
     },

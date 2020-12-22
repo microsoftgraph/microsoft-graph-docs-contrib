@@ -31,7 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /me/appConsentRequestsForApproval/
-GET /me/appConsentRequestsForApproval/{id}/userConsentRequests
 ```
 
 ## Optional query parameters
@@ -49,7 +48,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [appConsentRequest](../resources/appconsentrequest.md) objects in the response body.
 
-## Example 1: List all appConsentRequestsForApproval that you are an approver of
+## Example: List appConsentRequestsForApproval that you are an approver of
 
 ### Request
 <!-- {
