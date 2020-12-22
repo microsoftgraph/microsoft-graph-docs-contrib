@@ -64,7 +64,6 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
