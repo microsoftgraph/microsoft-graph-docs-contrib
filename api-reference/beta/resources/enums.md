@@ -11,6 +11,22 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### approvalReviewResult values
+
+| Member
+|:-----------------
+| NotReviewed
+| Approved
+| Denied
+
+### consentRequestStatus values
+
+| Member
+|:-----------------
+| Initializing
+| InProgress
+| Completed
+
 ### educationAddedStudentAction values 
 
 |Member|
