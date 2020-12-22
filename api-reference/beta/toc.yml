@@ -10953,9 +10953,9 @@ items:
             href: resources/userconsentrequest.md
             items:
               - name: List
-              href: api/userconsentrequest-list.md
+                href: api/userconsentrequest-list.md
               - name: Get
-              href: api/userconsentrequest-get.md
+                href: api/userconsentrequest-get.md
         - name: Entitlement management
           href: resources/entitlementmanagement-root.md
           items:
