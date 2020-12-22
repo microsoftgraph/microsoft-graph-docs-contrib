@@ -55,9 +55,10 @@ The following table lists some common use cases for Azure AD resources.
 | Get information about the service SKUs that a company is subscribed to. | [subscribedSku](../resources/subscribedsku.md) | N/A |
 | Invite external (guest) users to an organization. | [invitation](../resources/invitation.md) | [What is Azure AD B2B collaboration?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
 | Manage branding for the sign-in experience of an organization. | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [Add branding to your organization's Azure Active Directory sign-in page](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)|
-
 | **Access reviews** | | |
 | Ensure group memberships and application access rights are correct with access reviews | [access reviews API](../resources/accessreviews-root.md) |[Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
+| **Consent requests** | | |
+| Manage the consent request workflow for users attempting to access apps that require access to organizational data. | [Consent request API](../resources/consentrequests-root.md) |[Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
