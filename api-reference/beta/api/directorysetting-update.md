@@ -43,7 +43,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| values | [settingValue](../resources/settingvalue.md) collection | The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values. |
+| values | [settingValue](../resources/settingvalue.md) collection | The updated set of values. <br><br>NOTE: You **must** supply the entire collection set. You cannot update a single set of values. |
 
 ## Response
 
@@ -51,7 +51,7 @@ If successful, this method returns a `204 OK` response code.
 
 ## Example
 ##### Request
-Here is an example of the request.
+Here is an example of the request. You must supply the entire collection set in the `PATCH` request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -61,15 +61,26 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/settings/{id}
 Content-type: application/json
-Content-length: 178
 
 {
-  "values": [
-    {
-      "name": "name-value",
-      "value": "value-value"
-    }
-  ]
+    "values": [
+        {
+            "name": "EnableGroupSpecificConsent",
+            "value": ""
+        },
+        {
+            "name": "BlockUserConsentForRiskyApps",
+            "value": "true"
+        },
+        {
+            "name": "EnableAdminConsentRequests",
+            "value": "false"
+        },
+        {
+            "name": "ConstrainGroupSpecificConsentToMembersOfGroupId",
+            "value": ""
+        }
+    ]
 }
 ```
 # [C#](#tab/csharp)
