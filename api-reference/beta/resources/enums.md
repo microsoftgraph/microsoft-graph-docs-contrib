@@ -11,6 +11,48 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### callState values
+
+|Member|
+|:---|
+|incoming|
+|establishing|
+|ringing|
+|established|
+|hold|
+|transferring|
+|transferAccepted|
+|redirecting|
+|terminating|
+|terminated|
+
+### routingPolicies values
+
+|Member|
+|:---|
+|none|
+|noMissedCall|
+|disableForwardingExceptPhone|
+|disableForwarding|
+|preferSkypeForBusiness|
+
+### callDirection values
+
+|Member|
+|:---|
+|incoming|
+|outgoing|
+
+### modalities values
+
+|Member|
+|:---|
+|unknown|
+|audio|
+|video|
+|videoBasedScreenSharing|
+|data|
+
 ### signInAudience values
 
 |Member|

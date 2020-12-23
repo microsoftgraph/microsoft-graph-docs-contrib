@@ -11,6 +11,38 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### callState values
+
+|Member|
+|:---|
+|incoming|
+|establishing|
+|ringing|
+|established|
+|hold|
+|transferring|
+|transferAccepted|
+|redirecting|
+|terminating|
+|terminated|
+
+### modalities values
+
+|Member|
+|:---|
+|unknown|
+|audio|
+|video|
+|videoBasedScreenSharing|
+|data|
+
+### callDirection values
+
+|Member|
+|:---|
+|incoming|
+|outgoing|
+
 ### signInAudience values
 
 |Member|
