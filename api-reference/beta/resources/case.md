@@ -24,10 +24,10 @@ eDiscovery cases are containers that contain custodians, holds, collections, rev
 | [Create Case](../api/case-post.md) | [case](case.md) | Create a new **case** by posting to the cases collection. |
 | [Update Case](../api/case-update.md) | [case](case.md) | Update an eDiscovery **case**. |
 | [Delete Case](../api/case-delete.md) | None | Delete an eDiscovery **case**. |
-| [Close Case](../api/ediscoverycase-close.md)        | None                                              | Close an eDiscovery case. |
-| [Reopen Case](../api/ediscoverycase-reopen.md)      | None                                              | Reopen a closed eDiscovery case.|
+| [Close Case](../api/case-close.md)        | None                                              | Close an eDiscovery case. |
+| [Reopen Case](../api/case-reopen.md)      | None                                              | Reopen a closed eDiscovery case.|
 | [List custodians](../api/custodian-get.md)   | [custodian](../resources/custodian.md) collection |Get the custodian resources from the custodians navigation property.|
-| [Create custodians](../api/ediscoverycase-post-custodians.md)  | [custodian](../resources/custodian.md)           |Create a new custodian object.|
+| [Create custodians](../api/case-post-custodians.md)  | [custodian](../resources/custodian.md)           |Create a new custodian object.|
 | [List reviewSets](../api/reviewset-list.md)   | [reviewSet](../resources/reviewset.md) collection | Get the reviewSet resources from the reviewSets navigation property.|
 | [Create reviewSets](../api/reviewset-post.md)  | [reviewSet](../resources/reviewset.md)           | Create a new reviewSet object.|
 

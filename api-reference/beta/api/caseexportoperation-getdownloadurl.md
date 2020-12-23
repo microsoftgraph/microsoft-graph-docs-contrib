@@ -1,5 +1,5 @@
 ---
-title: "case: reopen"
+title: "caseExportOperation: getDownloadUrl"
 description: "**TODO: Add Description**"
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo
 doc_type: apiPageType
 ---
 
-# case: reopen
+# caseExportOperation: getDownloadUrl
 Namespace: microsoft.graph
 
 **TODO: Add Description**
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /compliance/ediscovery/cases/{caseId}/reopen
+GET /caseExportOperation/getDownloadUrl
 ```
 
 ## Request headers
@@ -41,18 +41,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this function returns a `200 OK` response code and a String in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "case_reopen"
+  "name": "caseexportoperation_getdownloadurl"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/reopen
+GET https://graph.microsoft.com/beta/caseExportOperation/getDownloadUrl
 ```
 
 
@@ -60,10 +60,16 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/reope
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "Edm.String"
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": "String"
+}
 ```
 

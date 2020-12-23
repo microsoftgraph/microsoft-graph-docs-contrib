@@ -3,7 +3,6 @@ title: "reviewSet: export"
 description: "Initiates an export from a reviewSet"
 author: "mahage-msft"
 ms.prod: "compliance"
-doc_type: "resourcePageType"
 doc_type: apiPageType
 ---
 
@@ -53,8 +52,8 @@ The following table shows the parameters that can be used with this action.
 |description|String| Description of the export |
 |azureBlobContainer|String| When exporting to your own Azure storage account, this is the container URL. |
 |azureBlobToken|String| When exporting to your own Azure storage account, SAS token for the container URL. |
-|exportOptions| [exportOptions](reviewset-export.md#exportOptions-values) |specifies options that control the format of the export. |
-|exportStructure|[exportFileStructure](reviewset-export.md#exportFileStructurevalues)| Options that control file structure and packaging of the export. |
+|exportOptions| [exportOptions](reviewset-export.md) |specifies options that control the format of the export. |
+|exportStructure|[exportFileStructure](reviewset-export.md)| Options that control file structure and packaging of the export. |
 
 ### exportOptions values
 
@@ -88,7 +87,7 @@ If successful, this action returns a `204 No Content` response code.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/caseExportOperation/reviewSet/export
+POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/99e865fc-e29f-479a-ba83-9e58eb017103/reviewsets/e44ac2cb-f8b4-4fd8-aa1c-1391b46ba9cc/export
 
 Content-Type: application/json
 Content-length: 186
@@ -96,8 +95,8 @@ Content-length: 186
 {
   "outputName": "2020-12-06 Contoso investigation export",
   "description": "Export for the Contoso investigation",
-  "exportOptions": "originalFiles,fileInfo",
-  "exportStructure": "pst"
+  "exportOptions": "originalFiles,fileInfo,tags",
+  "exportStructure": "directory"
 }
 ```
 
