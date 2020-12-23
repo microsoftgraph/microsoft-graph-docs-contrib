@@ -11,6 +11,14 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### certificateSigningOptions values
+
+|Member|
+|:---|
+|ResponseOnly|
+|TokenOnly|
+|ResponseAndToken|
+
 ### autoAdmittedUsers values
 |Member|
 |:---|

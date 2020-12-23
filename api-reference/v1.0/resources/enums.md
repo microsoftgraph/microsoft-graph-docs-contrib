@@ -11,6 +11,14 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### certificateSigningOptions values
+
+|Member|
+|:---|
+|ResponseOnly|
+|TokenOnly|
+|ResponseAndToken|
+
 ### callState values
 
 |Member|
