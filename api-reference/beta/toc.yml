@@ -1455,9 +1455,9 @@ items:
           href: api/custodian-update.md
           items:
           - name: List
-            href: api/ediscoverycase-list-custodians.md
+            href: api/case-list-custodians.md
           - name: Create
-            href: api/ediscoverycase-post-custodians.md
+            href: api/case-post-custodians.md
           - name: Get
             href: api/custodian-get.md
           - name: Update
