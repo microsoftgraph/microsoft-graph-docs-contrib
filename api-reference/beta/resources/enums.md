@@ -11,6 +11,23 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### signInAudience values
+
+|Member|
+|:---|
+|AzureADMyOrg|
+|AzureADMultipleOrgs|
+|AzureADandPersonalMicrosoftAccount|
+|PersonalMicrosoftAccount|
+
+### groupMembershipClaims values
+
+|Member|
+|:---|
+|None|
+|SecurityGroup|
+|All|
+
 ### educationAddedStudentAction values 
 
 |Member|

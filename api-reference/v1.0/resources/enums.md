@@ -11,6 +11,23 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### signInAudience values
+
+|Member|
+|:---|
+|AzureADMyOrg|
+|AzureADMultipleOrgs|
+|AzureADandPersonalMicrosoftAccount|
+|PersonalMicrosoftAccount|
+
+### groupMembershipClaims values
+
+|Member|
+|:---|
+|None|
+|SecurityGroup|
+|All|
+
 ### activityType values
 
 |Member|
