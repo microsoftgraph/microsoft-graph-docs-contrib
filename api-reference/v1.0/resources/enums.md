@@ -11,6 +11,13 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### basicStatus values
+
+|Member|
+|:---|
+|active|
+|inactive|
+
 ### certificateSigningOptions values
 
 |Member|

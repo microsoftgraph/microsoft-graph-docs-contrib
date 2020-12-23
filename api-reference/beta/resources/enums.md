@@ -11,6 +11,23 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### onPremAgentPublishingType values
+
+|Member|
+|:---|
+|applicationProxy|
+|exchangeOnline|
+|authentication|
+|provisioning|
+|adAdministration|
+
+### basicStatus values
+
+|Member|
+|:---|
+|active|
+|inactive|
+
 ### certificateSigningOptions values
 
 |Member|
