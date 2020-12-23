@@ -11,6 +11,27 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### discoverabilities values
+
+|Member|
+|:---|
+|AttributeDataTypes|
+|AttributeNames|
+|AttributeReadOnly|
+|None|
+|ReferenceAttributes|
+|UnknownFutureValue|
+
+### connectorGroupRegion values
+
+|Member|
+|:---|
+|nam|
+|eur|
+|aus|
+|asia|
+|ind|
+
 ### onPremAgentPublishingType values
 
 |Member|
