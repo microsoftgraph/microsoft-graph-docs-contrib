@@ -8,19 +8,19 @@ doc_type: apiPageType
 
 # reviewSet: export
 
-Namespace: microsoft.graph
+Namespace: Microsoft.graph.ediscovery
 
-This operation initiates an export from a **reviewSet**.  See [Export documents from a review set in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/export-documents-from-review-set) to learn more.  Once the export is created, you can retrieve the status of the operation from the [**caseOperation**s collection]().
+This operation initiates an export from a **reviewSet**.  See [Export documents from a review set in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/export-documents-from-review-set) to learn more.  Once the export is created, you can retrieve the status of the operation by retrieving the Location parameter from the response headers, the location provides a URL that will return a [caseExportOperation](../resources/caseexportoperation.md).
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.Read      |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|eDiscovery.ReadWrite.All, eDiscovery.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|eDiscovery.ReadWrite.All, eDiscovery.Read.All|
 
 ## HTTP request
 

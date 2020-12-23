@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # caseExportOperation: getDownloadUrl
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
 
 Operation that provides progress and status for export
 

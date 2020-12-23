@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # ediscoveryCase: reopen
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
 
 Reopen an eDiscovery case that was closed. For details, see [Reopen a closed case](/microsoft-365/compliance/close-or-delete-case#reopen-a-closed-case).
 
@@ -18,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|User.Read|
+|Delegated (work or school account)|eDiscovery.ReadWrite.All, eDiscovery.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|eDiscovery.ReadWrite.All, eDiscovery.Read.All|
 
 ## HTTP request
 

@@ -9,9 +9,9 @@ doc_type: resourcePageType
 
 # caseExportOperation resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
 
-**caseExportOperation** represents the process of an eDiscovery export.
+**caseExportOperation** represents the process of an eDiscovery export.  The **caseExportOperation** can only be retrieved with the Location header in the response to a [reviewset export](../api/reviewset-export.md).
 
 Inherits from [caseOperation](../resources/caseoperation.md).
 
@@ -82,4 +82,3 @@ The following is a JSON representation of the resource.
   "exportStructure": "String"
 }
 ```
-

@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # legalhold resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
 
 Legal holds are holds that are tied to an eDiscovery case.  Legal holds should not be confused with retention holds which are used to control retention policies of content on Microsoft 365. eDiscovery legal holds are for holding content indefinitely for Litigation, internal investigations, and other legal actions where content needs to be protected against deletion.  For more information about eDiscovery Holds, see [Manage holds in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/managing-holds)
 

@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # caseOperation resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
 
 **caseOperation** is an abstract entity that represents a long running eDiscovery process. It contains a common set of properties that are shared amongst inheriting entities.  Entities that derive from **caseOperation** include:
 

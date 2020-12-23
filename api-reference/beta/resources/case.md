@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # case resource type
 
-Namespace: microsoft.graph
+Namespace: Microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

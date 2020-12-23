@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # List legalholds
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
 
 Get a list of the [legalhold](../resources/legalhold.md) objects and their properties.
 
@@ -18,10 +18,10 @@ Get a list of the [legalhold](../resources/legalhold.md) objects and their prope
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.Read |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+|:---|:---|
+|Delegated (work or school account)|eDiscovery.ReadWrite.All, eDiscovery.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|eDiscovery.ReadWrite.All, eDiscovery.Read.All|
 
 ## HTTP request
 

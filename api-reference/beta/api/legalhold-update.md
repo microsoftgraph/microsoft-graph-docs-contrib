@@ -8,18 +8,20 @@ doc_type: apiPageType
 ---
 
 # Update legalhold
-Namespace: microsoft.graph
+
+Namespace: microsoft.graph.ediscovery
 
 Update the properties of a [legalhold](../resources/legalhold.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.Read |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+|:---|:---|
+|Delegated (work or school account)|eDiscovery.ReadWrite.All, eDiscovery.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|eDiscovery.ReadWrite.All, eDiscovery.Read.All|
 
 ## HTTP request
 
