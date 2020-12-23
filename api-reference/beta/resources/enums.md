@@ -11,6 +11,15 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### autoAdmittedUsers values
+|Member|
+|:---|
+|everyone|
+|everyoneInSameAndFederatedCompany|
+|everyoneInCompany|
+|invitedUsersInCompany|
+|organizer|
+
 ### callState values
 
 |Member|
