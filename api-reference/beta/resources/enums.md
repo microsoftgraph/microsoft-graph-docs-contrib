@@ -11,6 +11,28 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### statusBase values
+
+|Member|
+|:---|
+|success|
+|warning|
+|failure|
+|skipped|
+|unknownFutureValue|
+
+### provisioningStepType values
+
+|Member|
+|:---|
+|import|
+|scoping|
+|matching|
+|processing|
+|referenceResolution|
+|export|
+|unknownFutureValue|
+
 ### conditionalAccessStatus values
 
 |Member|
