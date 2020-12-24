@@ -11,6 +11,13 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### credentialResetFeature values
+
+|Member|
+|:---|
+|registration|
+|reset|
+
 ### migrationValidationName values
 
 |Member|
