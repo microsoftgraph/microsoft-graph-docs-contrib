@@ -11,6 +11,15 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### conditionalAccessStatus values
+
+|Member|
+|:---|
+|success|
+|failure|
+|notApplied|
+|unknownFutureValue|
+
 ### activityResult values
 
 |Member|

@@ -11,6 +11,27 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### conditionalAccessStatus values
+
+|Member|
+|:---|
+|success|
+|failure|
+|notApplied|
+|unknownFutureValue|
+
+### signInAuthMethods values
+
+|Member|
+|:---|
+|SMS|
+|Authenticator App|
+|App Verification code|
+|Password|
+|FIDO|
+|PTA|
+|PHS|
+
 ### activityResult values
 
 |Member|
