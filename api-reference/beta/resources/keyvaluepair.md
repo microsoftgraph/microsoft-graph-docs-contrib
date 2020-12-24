@@ -19,8 +19,8 @@ Key value pair for action parameters.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|name|String|Name for this key-value pair|
-|value|String|Value for this key-value pair|
+|name|migrationValidationName|Name for this key-value pair. <br><br>Possible names are: `AdditionalWSFedEndpointCheckResult`,  `AllowedAuthenticationClassReferencesCheckResult`, `AlwaysRequireAuthenticationCheckResult`,   `AutoUpdateEnabledCheckResult`, `ClaimsProviderNameCheckResult`, `EncryptClaimsCheckResult`,  `EncryptedNameIdRequiredCheckResult`, `MonitoringEnabledCheckResult`,`NotBeforeSkewCheckResult`,  `RequestMFAFromClaimsProvidersCheckResult`, `SignedSamlRequestsRequiredCheckResult`, `AdditionalAuthenticationRulesCheckResult`, `TokenLifetimeCheckResult`,  `DelegationAuthorizationRulesCheckResult`, `IssuanceAuthorizationRulesCheckResult`, `IssuanceTransformRulesCheckResult`.|
+|value|String|Value for this key-value pair. <br><br>Possible result values are `0`, `1`, or `2`.<ul><li> `0` when the validation check passed.</li><li>`1` when the validation check failed.</li><li> `2` when the validation check is a warning.</li></ul>|
 
 ## JSON representation
 

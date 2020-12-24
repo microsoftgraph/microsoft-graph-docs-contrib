@@ -11,6 +11,35 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### migrationValidationName values
+
+|Member|
+|:---|
+|AdditionalWSFedEndpointCheckResult|
+|AllowedAuthenticationClassReferencesCheckResult|
+|AlwaysRequireAuthenticationCheckResult|
+|AutoUpdateEnabledCheckResult|
+|ClaimsProviderNameCheckResult|
+|EncryptClaimsCheckResult|
+|EncryptedNameIdRequiredCheckResult|
+|MonitoringEnabledCheckResult|
+|NotBeforeSkewCheckResult|
+|RequestMFAFromClaimsProvidersCheckResult|
+|SignedSamlRequestsRequiredCheckResult|
+|AdditionalAuthenticationRulesCheckResult|
+|TokenLifetimeCheckResult|
+|DelegationAuthorizationRulesCheckResult|
+|IssuanceAuthorizationRulesCheckResult|
+|IssuanceTransformRulesCheckResult|
+
+### migrationStatus values
+
+|Member|
+|:---|
+|ready|
+|needsReview|
+|additionalStepsRequired|
+
 ### statusBase values
 
 |Member|
