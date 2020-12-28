@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [reviewSet](../resources/reviewset.md) objects in an [ediscoveryCase](../resources/ediscoverycase.md) object.
+Retrieve the list of [reviewSet](../resources/reviewset.md) objects in an [ediscoveryCase](../resources/case.md) object.
 
 ## Permissions
 

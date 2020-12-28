@@ -11,9 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Create a new [siteSource](../resources/sitesource.md) object.
+Create a new siteSource object.
 
 ## Permissions
 
@@ -33,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/siteSources
+POST /compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}/siteSources
 ```
 
 ## Request headers
@@ -61,7 +59,6 @@ If successful, this method returns a `201 Created` response code and a [siteSour
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_sitesource_from_"
@@ -69,33 +66,14 @@ If successful, this method returns a `201 Created` response code and a [siteSour
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4bd4-b296-c98376a2c5e1/custodians/2192ca408ea2410eba3bec8ae873be6b/siteSources
+POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-40c5-a760-331361e05c60/legalholds/387566cc-38ae-4e85-ab4b-cd2dd34faa07/siteSources
 Content-Type: application/json
-Content-length: 179
+Content-length: 154
 
 {
     "site@odata.bind": "https://graph.microsoft.com/v1.0/sites/50073f3e-cb22-48e5-95a9-51a3da455181"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-sitesource-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-sitesource-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-sitesource-from--objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-sitesource-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 
@@ -112,19 +90,15 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('4c8f8f70-7785-4bd4-b296-c98376a2c5e1')/custodians('2192ca408ea2410eba3bec8ae873be6b')/siteSources",
-    "value": [
-        {
-            "displayName": "Human resources site",
-            "createdDateTime": "2020-10-27T15:14:11.0048392Z",
-            "id": "38304445-3741-3333-4233-344238454333",
-            "createdBy": {
-                "user": {
-                    "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
-                    "displayName": null
-                }
-            }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('c816dd6f-5af8-40c5-a760-331361e05c60')/legalholds('387566cc-38ae-4e85-ab4b-cd2dd34faa07')/siteSources/$entity",
+    "displayName": "Adele Vance",
+    "createdDateTime": "2020-12-28T20:08:57.857Z",
+    "id": "50073f3e-cb22-48e5-95a9-51a3da455181",
+    "createdBy": {
+        "user": {
+            "id": null,
+            "displayName": "EDiscovery admin"
         }
-    ]
+    }
 }
 ```

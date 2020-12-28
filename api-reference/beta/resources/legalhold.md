@@ -19,7 +19,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List legalholds](../api/legalhold-list.md)|[legalhold](../resources/legalhold.md) collection|Get a list of the [legalhold](../resources/legalhold.md) objects and their properties.|
-|[Create legalhold](../api/legalhold-create.md)|[legalhold](../resources/legalhold.md)|Create a new [legalhold](../resources/legalhold.md) object.|
+|[Create legalhold](../api/legalhold-post.md)|[legalhold](../resources/legalhold.md)|Create a new [legalhold](../resources/legalhold.md) object.|
 |[Get legalhold](../api/legalhold-get.md)|[legalhold](../resources/legalhold.md)|Read the properties and relationships of a [legalhold](../resources/legalhold.md) object.|
 |[Update legalhold](../api/legalhold-update.md)|[legalhold](../resources/legalhold.md)|Update the properties of a [legalhold](../resources/legalhold.md) object.|
 |[Delete legalhold](../api/legalhold-delete.md)|None|Deletes a [legalhold](../resources/legalhold.md) object.|

@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Create legalhold
+
 Namespace: microsoft.graph
 
 Create a new [legalhold](../resources/legalhold.md) object.
