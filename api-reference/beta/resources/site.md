@@ -26,6 +26,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Get analytics][]              | GET /sites/{site-id}/analytics
 | [Get activities by interval][] | GET /sites/{site-id}/getActivitiesByInterval
 | [List pages][]                 | GET /sites/{site-id}/pages
+| [List site setting][]          | GET /sites/{site-id}/settings
 | [List root sites][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
 | [Search for sites][]           | GET /sites?search={query}
 | [Follow site][]                | POST /users/{user-id}/followedSites/add
@@ -39,6 +40,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Get analytics]: ../api/itemanalytics-get.md
 [Get activities by interval]: ../api/itemactivity-getbyinterval.md
 [List pages]: ../api/sitepage-list.md
+[List site setting]: ../api/siteSettings-get.md
 [List root sites]: ../api/site-list.md
 [Search for sites]: ../api/site-search.md
 [Follow site]: ../api/site-follow.md
@@ -86,6 +88,7 @@ The `root` identifier always references the root site for a given target, as fol
 | **lists**         | Collection([list][])             | The collection of lists under this site.
 | **pages**         | Collection([sitePage][])         | The collection of pages in the SitePages list in this site.
 | **sites**         | Collection([site][])             | The collection of the sub-sites under this site.
+| **settings**       | [siteSettings]                 | The settings on this site.
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
@@ -97,6 +100,7 @@ The `root` identifier always references the root site for a given target, as fol
 [sitePage]: sitepage.md
 [root]: root.md
 [site]: site.md
+[siteSettings]: siteSettings.md
 [sharepointIds]: sharepointids.md
 [siteCollection]: sitecollection.md
 
@@ -138,6 +142,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
+  "siteSettings": [ { "@odata.type": "microsoft.graph.siteSettings" }],
 
   /* inherited from baseItem */
   "name": "string",

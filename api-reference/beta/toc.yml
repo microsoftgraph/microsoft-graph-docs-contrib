@@ -12366,6 +12366,8 @@ items:
         items:
         - name: Get site
           href: api/site-get.md
+        - name: Get site settings
+          href: api/siteSettings-get.md
         - name: Get lists
           href: api/list-list.md
         - name: List subsites
