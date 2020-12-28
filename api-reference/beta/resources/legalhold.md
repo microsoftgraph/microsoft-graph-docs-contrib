@@ -25,8 +25,6 @@ Inherits from [entity](../resources/entity.md).
 |[Delete legalhold](../api/legalhold-delete.md)|None|Deletes a [legalhold](../resources/legalhold.md) object.|
 |[List siteSources](../api/legalhold-list-sitesources.md)|[siteSource](../resources/sitesource.md) collection|Get the siteSource resources from the siteSources navigation property.|
 |[Create siteSource](../api/legalhold-post-sitesources.md)|[siteSource](../resources/sitesource.md)|Create a new siteSource object.|
-|[List unifiedGroupSources](../api/legalhold-list-unifiedgroupsources.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md) collection|Get the unifiedGroupSource resources from the unifiedGroupSources navigation property.|
-|[Create unifiedGroupSource](../api/legalhold-post-unifiedgroupsources.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md)|Create a new unifiedGroupSource object.|
 |[List userSources](../api/legalhold-list-usersources.md)|[userSource](../resources/usersource.md) collection|Get the userSource resources from the userSources navigation property.|
 |[Create userSource](../api/legalhold-post-usersources.md)|[userSource](../resources/usersource.md)|Create a new userSource object.|
 

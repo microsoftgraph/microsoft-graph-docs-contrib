@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /compliance/ediscovery/cases/{id}/reviewSets/{id}
+POST /compliance/ediscovery/cases/{id}/reviewSets
 ```
 
 ## Request headers

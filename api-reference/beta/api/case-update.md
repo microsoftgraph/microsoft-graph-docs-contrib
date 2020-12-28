@@ -39,17 +39,12 @@ PATCH /compliance/ediscovery/cases/{id}
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+The following table shows the properties that are required when you update the [case](../resources/case.md).
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|description|String| The case description. |
-|displayName|String| The case name. |
-|externalId|String| The external case number for customer reference. |
-
+None
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code and an updated [case](../resources/case.md) object in the response body.
 
 ## Examples
 

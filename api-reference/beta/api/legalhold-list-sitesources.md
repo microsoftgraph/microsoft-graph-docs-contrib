@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # List siteSources
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
 
 Get the siteSource resources from the siteSources navigation property.
 

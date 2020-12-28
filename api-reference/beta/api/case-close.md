@@ -56,7 +56,7 @@ If successful, this action returns a `204 No Content` response code.
 
 <!-- {
   "blockType": "request",
-  "name": "ediscoverycase_close"
+  "name": "case_close"
 }
 -->
 

@@ -1470,9 +1470,9 @@ items:
           href: resources/legalhold.md
           items:
           - name: List
-            href: api/legalhold-list.md
+            href: api/case-list-legalholds.md
           - name: Create
-            href: api/legalhold-post.md
+            href: api/case-post-legalholds.md
           - name: Get
             href: api/legalhold-get.md
           - name: Update
@@ -1483,9 +1483,9 @@ items:
           href: resources/reviewset.md
           items:
           - name: List
-            href: api/reviewset-list.md
+            href: api/case-list-reviewsets.md
           - name: Create
-            href: api/reviewset-post.md
+            href: api/case-post-reviewsets.md
           - name: Get
             href: api/reviewset-get.md
         - name: Review set query

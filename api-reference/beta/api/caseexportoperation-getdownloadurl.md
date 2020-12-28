@@ -1,6 +1,6 @@
 ---
 title: "caseExportOperation: getDownloadUrl"
-description: "**TODO: Add Description**"
+description: "Returns the download URL "
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
@@ -8,18 +8,20 @@ doc_type: apiPageType
 ---
 
 # caseExportOperation: getDownloadUrl
-Namespace: microsoft.graph
 
-**TODO: Add Description**
+Namespace: microsoft.graph.ediscovery
+
+Returns the download URL for an export once the export is ready
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.ReadWrite.All, eDiscovery.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|eDiscovery.ReadWrite.All, eDiscovery.Read.All|
 
 ## HTTP request
 
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /caseExportOperation/getDownloadUrl
+GET /microsoft.graph.caseExportOperation/getDownloadUrl
 ```
 
 ## Request headers
@@ -52,7 +54,7 @@ If successful, this function returns a `200 OK` response code and a String in th
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/caseExportOperation/getDownloadUrl
+GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/99e865fc-e29f-479a-ba83-9e58eb017103/operations/63926d4779c243458902328d83f61f53/microsoft.graph.caseExportOperation/getDownloadUrl
 ```
 
 
@@ -69,7 +71,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": "String"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Edm.String",
+    "value": "https://nam01pkgg0052.blob.edproxy.nam01.ediscovery.outlook.com/packaging0041e27c6c924a48befe670d34066c25/d0b6d2a7-5fc5-44f0-9bca-6b9d34a9410b.zip?sv=2018-03-28&sr=c&sig=TRFQNUGFtuVO7zd39oNJjzcQYJus2TXY%2B50aed4pJJM%3D&se=2020-12-28T23%3A06%3A26Z&sp=racwdl"
 }
 ```
 
