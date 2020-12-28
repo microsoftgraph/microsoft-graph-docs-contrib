@@ -26,10 +26,12 @@ eDiscovery cases are containers that contain custodians, holds, collections, rev
 | [Delete Case](../api/case-delete.md) | None | Delete an eDiscovery **case**. |
 | [Close Case](../api/case-close.md)        | None                                              | Close an eDiscovery case. |
 | [Reopen Case](../api/case-reopen.md)      | None                                              | Reopen a closed eDiscovery case.|
-| [List custodians](../api/custodian-get.md)   | [custodian](../resources/custodian.md) collection |Get the custodian resources from the custodians navigation property.|
+| [List custodians](../api/case-list-custodians.md)   | [custodian](../resources/custodian.md) collection |Get the custodian resources from the custodians navigation property.|
 | [Create custodians](../api/case-post-custodians.md)  | [custodian](../resources/custodian.md)           |Create a new custodian object.|
-| [List reviewSets](../api/reviewset-list.md)   | [reviewSet](../resources/reviewset.md) collection | Get the reviewSet resources from the reviewSets navigation property.|
+| [List reviewSets](../api/case-list-reviewsets.md)   | [reviewSet](../resources/reviewset.md) collection | Get the reviewSet resources from the reviewSets navigation property.|
 | [Create reviewSets](../api/reviewset-post.md)  | [reviewSet](../resources/reviewset.md)           | Create a new reviewSet object.|
+| [List legal holds](../api/case-list-legalholds.md)   | [legalhold](../resources/legalhold.md) collection | Get the legalhold resources from the case navigation property.|
+| [Create legal holds](../api/case-post-legalholds.md)  | [legalhold](../resources/legalhold.md)           | Create a new legalhold object.|
 
 ## Properties
 

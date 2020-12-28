@@ -1,25 +1,27 @@
 ---
 title: "List custodians"
 description: "Get the custodian resources from the custodians navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mahage-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: apiPageType
+ms.prod: "compliance"
+doc_type: resourcePageType
 ---
 
 # List custodians
-Namespace: microsoft.graph
+
+Namespace: microsoft.graph.ediscovery
 
 Get the custodian resources from the custodians navigation property.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.ReadWrite.All, eDiscovery.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|eDiscovery.ReadWrite.All, eDiscovery.Read.All|
 
 ## HTTP request
 
