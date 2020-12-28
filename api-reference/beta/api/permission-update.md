@@ -63,7 +63,6 @@ These properties on these permission types can be modified:
 Unsupported permission modifications include the following:
 - Organizational sharing links
 - People sharing links
-- BlocksDownload state on any sharing links
 
 ## Response
 
