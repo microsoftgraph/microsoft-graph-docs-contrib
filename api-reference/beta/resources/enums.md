@@ -11,6 +11,26 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### conditionalAccessRiskLevels
+
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+|none|
+
+### clientAppTypes
+
+|Member|
+|:---|
+|all|
+|browser|
+|mobileAppsAndDesktopClients|
+|exchangeActiveSync|
+|easSupported|
+|other|
+
 ### authenticationPhoneType values
 |Member|
 |:---|
