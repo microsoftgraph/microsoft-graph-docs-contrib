@@ -29,13 +29,10 @@ Represents the type of conditions that govern when the policy applies.
 |signInRiskLevels|String collection| Sign-in risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `none`.|
 |userRiskLevels|String collection| User risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `none`.|
 
->**Note:** 
-
->**clientAppType** `modern` is going to be deprecated and replaced by `mobileAppsAndDesktopClients`. 
-
->**clientAppType** `easUnsupported` is going to be deprecated in favor of `exchangeActiveSync` which includes EAS supported and unsupported platforms. 
-
->We are deprecating the **deviceStates** condition, and it may be removed in the future. Going forward, use **devices** condition.
+>**Note:** <br>
+>* **clientAppType** `modern` is going to be deprecated and replaced by `mobileAppsAndDesktopClients`. <br>
+>* **clientAppType** `easUnsupported` is going to be deprecated in favor of `exchangeActiveSync` which includes EAS supported and unsupported platforms. <br>
+>* We are deprecating the **deviceStates** condition, and it may be removed in the future. Going forward, use **devices** condition.
 
 ## Relationships
 
