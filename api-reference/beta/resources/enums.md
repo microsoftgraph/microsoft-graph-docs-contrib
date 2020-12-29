@@ -1129,6 +1129,7 @@ Possible values for user account types (group membership), per Windows definitio
 | passthroughAuthentication | Passthrough Authentication    |
 | seamlessSso               | Seamless Single Sign-on       |
 | passwordHashSync          | Password Hash Synchronization |
+| unknownFutureValue        | A sentinel member             |
 
 ### tokenIssuerType values
 
