@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.ediscovery
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a new legalhold userSource object.
 
 ## Permissions

@@ -9,7 +9,9 @@ doc_type: resourcePageType
 
 # dataSource resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The dataSource entity is an abstract baseclass used to identify sources of content for eDiscovery.
 
@@ -41,6 +43,7 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
+
 ``` json
 {
   "@odata.type": "#microsoft.graph.dataSource",

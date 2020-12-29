@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete case
 
+Namespace: microsoft.graph.ediscovery
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [case](../resources/case.md) object.

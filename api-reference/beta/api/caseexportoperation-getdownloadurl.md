@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.ediscovery
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Returns the download URL for an export once the export is ready
 
 ## Permissions

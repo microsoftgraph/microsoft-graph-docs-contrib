@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List cases
 
+Namespace: microsoft.graph.ediscovery
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [case](../resources/case.md) objects.

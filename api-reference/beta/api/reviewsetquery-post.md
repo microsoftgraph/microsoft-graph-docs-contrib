@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create reviewSetQuery
 
+Namespace: microsoft.graph.ediscovery
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [reviewSetQuery](../resources/reviewsetquery.md) object.

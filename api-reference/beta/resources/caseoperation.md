@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.ediscovery
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 **caseOperation** is an abstract entity that represents a long running eDiscovery process. It contains a common set of properties that are shared amongst inheriting entities.  Entities that derive from **caseOperation** include:
 
 - [caseExportOperation](../resources/caseexportoperation.md)

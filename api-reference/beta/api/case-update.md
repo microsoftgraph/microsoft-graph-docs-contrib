@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Update case
 
+Namespace: microsoft.graph.ediscovery
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of an [case](../resources/case.md) object.

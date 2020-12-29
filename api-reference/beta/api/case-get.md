@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get case
 
+Namespace: microsoft.graph.ediscovery
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of an [case](../resources/case.md) object.

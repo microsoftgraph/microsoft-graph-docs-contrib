@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.ediscovery
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of a [legalhold](../resources/legalhold.md) object.
 
 ## Permissions

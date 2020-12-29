@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete reviewSetQuery
 
+Namespace: microsoft.graph.ediscovery
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [reviewSetQuery](../resources/reviewsetquery.md) object.

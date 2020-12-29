@@ -9,7 +9,9 @@ doc_type: apiPageType
 
 # Create legalhold siteSource
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new legalhold siteSource object.
 

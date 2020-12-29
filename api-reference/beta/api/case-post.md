@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create case
 
+Namespace: microsoft.graph.ediscovery
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [case](../resources/case.md) object.

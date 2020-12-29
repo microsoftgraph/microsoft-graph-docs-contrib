@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List reviewSetQueries
 
+Namespace: microsoft.graph.ediscovery
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of eDiscovery [reviewSetQuery](../resources/reviewsetquery.md) objects.

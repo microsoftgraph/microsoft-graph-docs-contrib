@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Update reviewSetQuery
 
+Namespace: microsoft.graph.ediscovery
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of an eDiscovery [reviewSetQuery](../resources/reviewsetquery.md).

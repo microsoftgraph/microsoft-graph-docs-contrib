@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create reviewSet
 
+Namespace: microsoft.graph.ediscovery
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [reviewSet](../resources/reviewset.md) object. The request body contains the display name of the review set, which is the only writable property.

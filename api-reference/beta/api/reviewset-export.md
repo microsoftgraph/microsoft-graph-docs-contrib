@@ -9,7 +9,9 @@ doc_type: apiPageType
 
 # reviewSet: export
 
-Namespace: Microsoft.graph.ediscovery
+Namespace: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This operation initiates an export from a **reviewSet**.  See [Export documents from a review set in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/export-documents-from-review-set) to learn more.  Once the export is created, you can retrieve the status of the operation by retrieving the Location parameter from the response headers, the location provides a URL that will return a [caseExportOperation](../resources/caseexportoperation.md).
 
