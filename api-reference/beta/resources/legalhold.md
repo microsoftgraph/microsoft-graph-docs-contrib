@@ -18,7 +18,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List legalholds](../api/legalhold-list.md)|[legalhold](../resources/legalhold.md) collection|Get a list of the [legalhold](../resources/legalhold.md) objects and their properties.|
+|[List legalholds](../api/case-list-legalholds.md)|[legalhold](../resources/legalhold.md) collection|Get a list of the [legalhold](../resources/legalhold.md) objects and their properties.|
 |[Create legalhold](../api/case-post-legalholds.md)|[legalhold](../resources/legalhold.md)|Create a new [legalhold](../resources/legalhold.md) object.|
 |[Get legalhold](../api/legalhold-get.md)|[legalhold](../resources/legalhold.md)|Read the properties and relationships of a [legalhold](../resources/legalhold.md) object.|
 |[Update legalhold](../api/legalhold-update.md)|[legalhold](../resources/legalhold.md)|Update the properties of a [legalhold](../resources/legalhold.md) object.|

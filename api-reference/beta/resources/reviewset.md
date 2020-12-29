@@ -19,7 +19,7 @@ Represents static set of electronically stored information collected for use in 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List reviewSets](../api/reviewset-list.md) | [reviewSet](reviewset.md) collection | Get a collection of **reviewset**s. |
+| [List reviewSets](../api/case-list-reviewsets.md) | [reviewSet](reviewset.md) collection | Get a collection of **reviewset**s. |
 | [Get reviewSet](../api/reviewset-get.md) | [reviewSet](reviewset.md) | Read the properties and relationships of a **reviewSet** object. |
 | [Create reviewSet](../api/case-post-reviewsets.md) | [reviewSet](reviewset.md) | Create a new **reviewset**. |
 | [List queries](../api/reviewsetquery-list.md)|[reviewSetQuery](../resources/reviewsetquery.md) collection|Get the reviewSetQuery resources from the queries navigation property.|
