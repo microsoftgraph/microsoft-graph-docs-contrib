@@ -18,6 +18,7 @@ Namespace: microsoft.graph
 |mcasConfigured|
 |monitorOnly|
 |blockDownloads|
+|unknownFutureValue|
 
 ### conditionalAccessGrantControl
 
