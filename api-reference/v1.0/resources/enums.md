@@ -11,6 +11,12 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### adminUnitVisibility values
+|Member|
+|:---|
+|HiddenMembership|
+|Public|
+
 ### activityType values
 
 |Member|

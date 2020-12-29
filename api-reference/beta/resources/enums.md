@@ -11,6 +11,12 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### adminUnitVisibility values
+|Member|
+|:---|
+|HiddenMembership|
+|Public|
+
 ### educationAddedStudentAction values 
 
 |Member|
