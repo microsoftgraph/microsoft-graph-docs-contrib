@@ -105,5 +105,6 @@ Content-Type: application/json
                 }
             }
         }
+    ]
 }
 ```
