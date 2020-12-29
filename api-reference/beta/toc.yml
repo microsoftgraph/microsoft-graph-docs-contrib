@@ -12744,6 +12744,8 @@ items:
           href: api/chat-post.md
         - name: Get chat
           href: api/chat-get.md
+        - name: Update chat
+          href: api/chat-patch.md
         - name: List members
           href: api/chat-list-members.md
         - name: Add member
