@@ -1,5 +1,5 @@
 ---
-title: "List siteSources"
+title: "List custodian siteSources"
 description: "Get a list of the siteSource objects and their properties."
 author: "mahage-msft"
 localization_priority: Normal
@@ -7,9 +7,9 @@ ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
-# List siteSources
+# List custodian siteSources
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

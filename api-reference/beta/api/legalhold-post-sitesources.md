@@ -1,5 +1,5 @@
 ---
-title: "Create siteSource"
+title: "Create legalhold siteSource"
 description: "Create a new siteSource object."
 author: "mahage-msft"
 localization_priority: Normal
@@ -7,11 +7,11 @@ ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
-# Create siteSource
+# Create legalhold siteSource
 
 Namespace: microsoft.graph
 
-Create a new siteSource object.
+Create a new legalhold siteSource object.
 
 ## Permissions
 

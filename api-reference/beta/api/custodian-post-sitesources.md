@@ -1,5 +1,5 @@
 ---
-title: "Create siteSource"
+title: "Create custodian siteSource"
 description: "Create a new siteSource object."
 author: "mahage-msft"
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
-# Create siteSource
+# Create custodian siteSource
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [siteSource](../resources/sitesource.md) object.
+Create a new custodian [siteSource](../resources/sitesource.md) object.
 
 ## Permissions
 

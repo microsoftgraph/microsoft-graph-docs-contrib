@@ -1,5 +1,5 @@
 ---
-title: "Create userSource"
+title: "Create custodian userSource"
 description: "Create a new userSource object."
 author: "mahage-msft"
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
-# Create userSource
+# Create custodian userSource
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [userSource](../resources/usersource.md) object.
+Create a new custodian [userSource](../resources/usersource.md) object.
 
 ## Permissions
 

@@ -1,5 +1,5 @@
 ---
-title: "Create userSource"
+title: "Create legalhold userSource"
 description: "Create a new userSource object."
 author: "mahage-msft"
 localization_priority: Normal
@@ -7,11 +7,11 @@ ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
-# Create userSource
+# Create legalhold userSource
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
 
-Create a new userSource object.
+Create a new legalhold userSource object.
 
 ## Permissions
 

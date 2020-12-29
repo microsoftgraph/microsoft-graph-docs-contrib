@@ -1,5 +1,5 @@
 ---
-title: "List siteSources"
+title: "List legalhold siteSources"
 description: "Get the siteSource resources from the siteSources navigation property."
 author: "mahage-msft"
 localization_priority: Normal
@@ -7,15 +7,15 @@ ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
-# List siteSources
+# List legalhold siteSources
 
 Namespace: microsoft.graph.ediscovery
 
-Get the siteSource resources from the siteSources navigation property.
+Get the legalhold siteSource resources from the siteSources navigation property.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions- reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|

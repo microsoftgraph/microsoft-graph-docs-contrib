@@ -1,5 +1,5 @@
 ---
-title: "List userSources"
+title: "List custodian userSources"
 description: "Get a list of the userSource objects and their properties."
 author: "mahage-msft"
 localization_priority: Normal
@@ -7,9 +7,9 @@ ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
-# List userSources
+# List custodian userSources
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

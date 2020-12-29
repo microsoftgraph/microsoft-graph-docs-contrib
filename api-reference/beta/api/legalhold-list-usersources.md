@@ -1,5 +1,5 @@
 ---
-title: "List userSources"
+title: "List legalhold userSources"
 description: "Get the userSource resources from the userSources navigation property."
 author: "mahage-msft"
 localization_priority: Normal
@@ -7,11 +7,11 @@ ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
-# List userSources
+# List legalhold userSources
 
 Namespace: microsoft.graph
 
-Get the userSource resources from the userSources navigation property.
+Get the legalhold userSource resources from the userSources navigation property.
 
 ## Permissions
 
@@ -66,8 +66,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-40c5-a760-331361e05c60/legalholds/277107ff-fee3-41a0-a665-a9d7f6c4824f/userSources
 ```
 
-
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
