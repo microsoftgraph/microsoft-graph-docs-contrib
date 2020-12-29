@@ -11,6 +11,13 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### conditionalOperators
+
+| Member       |
+|:--------------|
+|AND|
+|OR|
+
 ### conditionalAccessDeviceStates
 
 |Member|

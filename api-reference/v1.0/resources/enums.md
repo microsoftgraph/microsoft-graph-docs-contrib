@@ -11,6 +11,13 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### conditionalOperators
+
+| Member       |
+|:--------------|
+|AND|
+|OR|
+
 ### cloudAppSecuritySessionControlType
 
 | Member       |
