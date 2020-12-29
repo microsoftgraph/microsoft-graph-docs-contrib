@@ -11,6 +11,22 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### deviceTrustType values
+|Member|
+|:---|
+|Workplace|
+|AzureAd|
+|ServerAd|
+
+#### deviceProfileType values
+|Member|
+|:---|
+|RegisteredDevice|
+|SecureVM|
+|Printer|
+|Shared|
+|IoT|
+
 ### adminUnitVisibility values
 |Member|
 |:---|

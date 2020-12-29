@@ -58,11 +58,11 @@ This resource lets you add your own data to custom properties using [extensions]
 |operatingSystem|String| The type of operating system on the device. Required. |
 |operatingSystemVersion|String| Operating system version of the device. Required. |
 |physicalIds|String collection| For internal use only. Not nullable. |
-|profileType|String|The profile type of the device. Possible values:<br />**RegisteredDevice** (default)<br />**SecureVM**<br />**Printer**<br />**Shared**<br />**IoT**|
+|profileType|deviceProfileType|The profile type of the device. Possible values:<br />`RegisteredDevice` (default)<br />`SecureVM`<br />`Printer`<br />`Shared`<br />`IoT`|
 |systemLabels|String collection| List of labels applied to the device by the system. |
-|trustType|String| Type of trust for the joined device. Read-only. Possible values: <br />**Workplace** - indicates *bring your own personal devices*<br />**AzureAd** - Cloud only joined devices<br />**ServerAd** - on-premises domain joined devices joined to Azure AD. For more details, see [Introduction to device management in Azure Active Directory](/azure/active-directory/device-management-introduction) |
+|trustType|deviceTrustType| Type of trust for the joined device. Read-only. Possible values: <br />`Workplace` - indicates *bring your own personal devices*<br />`AzureAd` - Cloud only joined devices<br />`ServerAd` - on-premises domain joined devices joined to Azure AD. <br>For more details, see [Introduction to device management in Azure Active Directory](/azure/active-directory/device-management-introduction) |
 |Name| String | Friendly name of a device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
-|Status | String| Device is online or offline. Only returned if user signs in with a Microsoft account as part of Project Rome. |
+|Status | deviceStatus| Device is `online` or `offline`. Only returned if user signs in with a Microsoft account as part of Project Rome. |
 |Platform |String|Platform of device. Only returned if user signs in with a Microsoft account as part of Project Rome. Only returned if user signs in with a Microsoft account as part of Project Rome.|
 |Kind| String| Form factor of device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
 |Model| String| Model of device. Only returned if user signs in with a Microsoft account as part of Project Rome. |

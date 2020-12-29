@@ -11,6 +11,28 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### deviceStatus values
+|Member|
+|:---|
+|online|
+|offline|
+
+### deviceTrustType values
+|Member|
+|:---|
+|Workplace|
+|AzureAd|
+|ServerAd|
+
+### deviceProfileType values
+|Member|
+|:---|
+|RegisteredDevice|
+|SecureVM|
+|Printer|
+|Shared|
+|IoT|
+
 ### adminUnitVisibility values
 |Member|
 |:---|
