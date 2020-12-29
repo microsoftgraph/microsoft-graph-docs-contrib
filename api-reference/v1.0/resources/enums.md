@@ -11,6 +11,15 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### subscribedSkuCapabilityStatus values
+|Member|
+|:---|
+|Enabled|
+|Warning|
+|Suspended|
+|Deleted|
+|LockedOut|
+
 ### domainAvailability values
 |Member|
 |:---|

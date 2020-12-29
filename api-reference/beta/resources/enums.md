@@ -11,6 +11,22 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### authenticationPhoneType values
+|Member|
+|:---|
+|mobile|
+|alternateMobile|
+|office|
+
+### subscribedSkuCapabilityStatus values
+|Member|
+|:---|
+|Enabled|
+|Warning|
+|Suspended|
+|Deleted|
+|LockedOut|
+
 ### domainAvailability values
 |Member|
 |:---|
