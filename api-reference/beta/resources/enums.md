@@ -11,6 +11,18 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### domainAvailability values
+|Member|
+|:---|
+|AvailableImmediately|
+|EmailVerifiedDomainTakeoverScheduled|
+
+### domainAuthType values
+|Member|
+|:---|
+|Managed|
+|Federated|
+
 ### deviceStatus values
 |Member|
 |:---|

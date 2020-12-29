@@ -11,6 +11,18 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### domainAvailability values
+|Member|
+|:---|
+|AvailableImmediately|
+|EmailVerifiedDomainTakeoverScheduled|
+
+### domainAuthType values
+|Member|
+|:---|
+|Managed|
+|Federated|
+
 ### deviceTrustType values
 |Member|
 |:---|
