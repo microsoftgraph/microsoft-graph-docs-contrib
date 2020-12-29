@@ -69,18 +69,7 @@ Content-Type: application/json
 Content-length: 295
 
 {
-  "@odata.type": "#microsoft.graph.legalhold",
-  "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "isEnabled": "Boolean",
-  "status": "String",
-  "contentQuery": "String",
-  "errors": [
-    "String"
-  ],
-  "displayName": "String"
+  "description": "This is a description for a legalhold"
 }
 ```
 
@@ -99,7 +88,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('99e865fc-e29f-479a-ba83-9e58eb017103')/legalholds/$entity",
-    "description": "this is a test of the american broadcast system, this is only a test.",
+    "description": "This is a description for a legalhold",
     "lastModifiedDateTime": "2020-12-29T01:00:26.193Z",
     "isEnabled": true,
     "status": "Pending",
