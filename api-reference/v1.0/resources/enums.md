@@ -11,6 +11,14 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### conditionalAccessPolicyState
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+|enabledForReportingButNotEnforced|
+
 ### subscribedSkuCapabilityStatus values
 |Member|
 |:---|
