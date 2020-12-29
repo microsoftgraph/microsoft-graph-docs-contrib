@@ -11,6 +11,24 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### conditionalAccessGrantControl
+
+| Member       |
+|:--------------|
+|block|
+|mfa|
+|compliantDevice|
+|domainJoinedDevice|
+|approvedApplication|
+|compliantApplication|
+
+### conditionalAccessUserActions
+
+|Member|
+|:---|
+|urn:user:registersecurityinfo|
+|urn:user:registerdevice|
+
 ### conditionalAccessRiskLevels
 
 |Member|

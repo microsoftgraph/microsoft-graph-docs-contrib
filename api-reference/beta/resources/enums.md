@@ -11,6 +11,20 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### conditionalAccessDeviceStates
+
+|Member|
+|:---|
+|Compliant|
+|DomainJoined|
+
+### conditionalAccessUserActions
+
+|Member|
+|:---|
+|urn:user:registersecurityinfo|
+|urn:user:registerdevice|
+
 ### conditionalAccessRiskLevels
 
 |Member|
@@ -1326,6 +1340,7 @@ Possible values for user account types (group membership), per Windows definitio
 |domainJoinedDevice|
 |approvedApplication|
 |compliantApplication|
+|passwordChange|
 
 ### cloudAppSecuritySessionControlType
 

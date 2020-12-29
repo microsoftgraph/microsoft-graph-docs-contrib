@@ -20,7 +20,7 @@ Represents device states in the policy scope.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 | includeStates | String collection | States in the scope of the policy. `All` is the only allowed value. |
-| excludeStates | String collection | States excluded from the scope of the policy. Possible values: `Compliant`, `DomainJoined`. |
+| excludeStates | conditionalAccessDeviceStates collection | States excluded from the scope of the policy. Possible values: `Compliant`, `DomainJoined`. |
 
 ## Relationships
 
