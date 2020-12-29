@@ -11,6 +11,13 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### sessionControlMode
+
+| Member       |
+|:--------------|
+|always|
+|never|
+
 ### conditionalOperators
 
 | Member       |

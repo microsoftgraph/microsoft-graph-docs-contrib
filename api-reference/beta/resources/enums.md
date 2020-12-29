@@ -11,6 +11,13 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### sessionControlMode
+
+| Member       |
+|:--------------|
+|always|
+|never|
+
 ### conditionalOperators
 
 | Member       |
