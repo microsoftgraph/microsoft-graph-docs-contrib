@@ -47,19 +47,7 @@ In the request body, supply a JSON representation of the [legalhold](../resource
 
 The following table shows the properties that are required when you update the [legalhold](../resources/legalhold.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|description|String|**TODO: Add Description**|
-|createdBy|[identitySet](../resources/identityset.md)|**TODO: Add Description**|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|isEnabled|Boolean|**TODO: Add Description**|
-|status|legalHoldStatus|**TODO: Add Description**. Possible values are: `Pending`, `Error`, `Success`, `UnknownFutureValue`.|
-|contentQuery|String|**TODO: Add Description**|
-|errors|String collection|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
+None
 
 ## Response
 
@@ -110,23 +98,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.legalhold",
-  "id": "700cd868-d868-700c-68d8-0c7068d80c70",
-  "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "isEnabled": "Boolean",
-  "status": "String",
-  "contentQuery": "String",
-  "errors": [
-    "String"
-  ],
-  "displayName": "String",
-  "createdDateTime": "String (timestamp)"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('99e865fc-e29f-479a-ba83-9e58eb017103')/legalholds/$entity",
+    "description": "this is a test of the american broadcast system, this is only a test.",
+    "lastModifiedDateTime": "2020-12-29T01:00:26.193Z",
+    "isEnabled": true,
+    "status": "Pending",
+    "contentQuery": "",
+    "errors": [],
+    "id": "2a523442-cfe7-41a9-aa54-0c14ae0d7daa",
+    "displayName": "My first legal hold",
+    "createdDateTime": "2020-12-28T23:33:13.337Z",
+    "createdBy": {
+        "user": {
+            "id": null,
+            "displayName": "EDiscovery Admin"
+        }
+    },
+    "lastModifiedBy": {
+        "user": {
+            "id": null,
+            "displayName": "EDiscovery Admin"
+        }
+    }
 }
 ```

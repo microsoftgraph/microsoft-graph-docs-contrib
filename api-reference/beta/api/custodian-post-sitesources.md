@@ -1,6 +1,6 @@
 ---
 title: "Create custodian siteSource"
-description: "Create a new siteSource object."
+description: "Create a new custodian siteSource object."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "compliance"

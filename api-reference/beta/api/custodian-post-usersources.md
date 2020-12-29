@@ -1,6 +1,6 @@
 ---
 title: "Create custodian userSource"
-description: "Create a new userSource object."
+description: "Create a new custodian userSource object."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "compliance"
