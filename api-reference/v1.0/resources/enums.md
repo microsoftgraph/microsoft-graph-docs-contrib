@@ -38,7 +38,7 @@ Namespace: microsoft.graph
 |failed|
 |unknownFutureValue|
 
-### conditionalAccessDevicePlatform
+### conditionalAccessDevicePlatform values
 
 | Member       |
 |:--------------|
@@ -49,7 +49,14 @@ Namespace: microsoft.graph
 |macOS|
 |all|
 
-### sessionControlMode
+### signinFrequencySessionControlType values
+
+| Member       |
+|:--------------|
+|days|
+|hours|
+
+### sessionControlMode values
 
 | Member       |
 |:--------------|

@@ -224,7 +224,14 @@ Namespace: microsoft.graph
 |failed|
 |unknownFutureValue|
 
-### sessionControlMode
+### signinFrequencySessionControlType values
+
+| Member       |
+|:--------------|
+|days|
+|hours|
+
+### sessionControlMode values
 
 | Member       |
 |:--------------|
@@ -1567,21 +1574,7 @@ Possible values for user account types (group membership), per Windows definitio
 |monitorOnly|
 |blockDownloads|
 
-### signinFrequencyType
-
-| Member       |
-|:--------------|
-|days|
-|hours|
-
-### persistentBrowserSessionMode
-
-| Member       |
-|:--------------|
-|always|
-|never|
-
-### conditionalAccessDevicePlatform
+### conditionalAccessDevicePlatform values
 
 | Member       |
 |:--------------|
