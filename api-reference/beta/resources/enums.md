@@ -11,6 +11,19 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### accessPackageAssignmentRequestState values
+
+|Member|
+|:---|
+|PendingApproval|
+|Canceled|
+|Denied|
+|Delivering|
+|Delivered|
+|PartiallyDelivered|
+|Submitted|
+|Scheduled|
+
 ### accessPackageAssignmentStatus values
 
 |Member|

@@ -32,9 +32,9 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |id|String| Read-only.|
 |isValidationOnly|Boolean|True if the request is not to be processed for assignment.|
 |justification|String|The requestor's supplied justification.|
-|requestState|String|One of `PendingApproval`, `Canceled`,  `Denied`, `Delivering`, `Delivered`, `PartiallyDelivered`, `Submitted` or `Scheduled`. Read-only.|
+|requestState|accessPackageAssignmentRequestState|One of `PendingApproval`, `Canceled`,  `Denied`, `Delivering`, `Delivered`, `PartiallyDelivered`, `Submitted` or `Scheduled`. Read-only.|
 |requestStatus|String|More information on the request processing status. Read-only.|
-|requestType|String|One of `UserAdd`, `UserRemove`, `AdminAdd`, `AdminRemove` or `SystemRemove`. A request from the user themselves would have requestType of `UserAdd` or `UserRemove`. Read-only.|
+|requestType|accessPackageAssignmentRequestType|One of `UserAdd`, `UserRemove`, `AdminAdd`, `AdminRemove` or `SystemRemove`. A request from the user themselves would have requestType of `UserAdd` or `UserRemove`. Read-only.|
 |schedule|[requestSchedule](requestschedule.md)| The range of dates that access is to be assigned to the requestor. Read-only.|
 |accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| For a requestType of `UserAdd` or `AdminAdd`, this is an access package assignment requested to be created.  For a requestType of `UserRemove`, `AdminRemove` or `SystemRemove`, this has the `id` property of an existing assignment to be removed.|
 |answers|[accessPackageAnswer](accesspackageanswer.md) collection|Answers provided by the requestor to [accessPackageQuestions](accesspackagequestion.md) asked of them at the time of request.|
