@@ -11,6 +11,33 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### accessReviewAutoRecommendation values
+
+|Member|
+|:---|
+|Approve|
+|Deny|
+|NotAvailable|
+
+### accessReviewApplyDecisionResult values
+
+|Member|
+|:---|
+|NotApplied|
+|Success|
+|Failed|
+|NotFound|
+|NotSupported|
+
+### accessReviewDecision values
+
+|Member|
+|:---|
+|Approve|
+|Deny|
+|NotReviewed|
+|DontKnow|
+
 ### accessReviewStatus values
 
 |Member|
