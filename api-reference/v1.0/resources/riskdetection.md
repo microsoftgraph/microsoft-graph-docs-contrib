@@ -30,14 +30,14 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |Property|Type|Description|
 |:---|:---|:---|
 |activity|activityType|Indicates the activity type the detected risk is linked to. . Possible values are: `signin`, `user`, `unknownFutureValue`.|
-|activityDateTime|DateTimeOffset|Date and time that the risky activity occurred.|
+|activityDateTime|DateTimeOffset|Date and time that the risky activity occurred.<br /> The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z`|
 |additionalInfo|String|Additional information associated with the risk detection in JSON format.|
-|correlationId|String|Correlation ID of the sign-in associated with the risk detection. This property is null if the risk detection is not associated with a sign-in.|
-|detectedDateTime|DateTimeOffset|Date and time that the risk was detected.|
+|correlationId|String|Correlation ID of the sign-in associated with the risk detection. This property is `null` if the risk detection is not associated with a sign-in.|
+|detectedDateTime|DateTimeOffset|Date and time that the risk was detected.<br /> The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z`|
 |detectionTimingType|riskDetectionTimingType|Timing of the detected risk (real-time/offline). Possible values are: `notDefined`, `realtime`, `nearRealtime`, `offline`, `unknownFutureValue`.|
 |id|String|Unique ID of the risk detection. Inherited from [entity](../resources/entity.md)|
 |ipAddress|String|Provides the IP address of the client from where the risk occurred.|
-|lastUpdatedDateTime|DateTimeOffset|Date and time that the risk detection was last updated.|
+|lastUpdatedDateTime|DateTimeOffset|Date and time that the risk detection was last updated.<br /> The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z`|
 |location|[signInLocation](../resources/signinlocation.md)|Location of the sign-in.|
 |requestId|String|Request ID of the sign-in associated with the risk detection. This property is null if the risk detection is not associated with a sign-in.|
 |riskDetail|riskDetail|Details of the detected risk. Possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
