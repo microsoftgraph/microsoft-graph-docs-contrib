@@ -48,8 +48,8 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |location|[signInLocation](signinlocation.md)|Location of the sign-in. |
 |activityDateTime|DateTimeOffset|Date and time that the risky activity occurred. <br /> The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z`|
 |detectedDateTime|DateTimeOffset|Date and time that the risk was detected.<br /> The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z` |
-|lastUpdatedDateTime|datetime|Date and time that the risk detection was last updated. |
-|userId|string|Unique ID of the user. |
+|lastUpdatedDateTime|DateTimeOffset|Date and time that the risk detection was last updated. |
+|userId|string|Unique ID of the user. <br /> The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z`|
 |userDisplayName|string|Name of the user. |
 |userPrincipalName|string|The user principal name (UPN) of the user. |
 |additionalInfo|string|Additional information associated with the risk detection in JSON format. |
