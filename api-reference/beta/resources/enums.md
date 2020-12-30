@@ -1539,7 +1539,7 @@ Possible values for user account types (group membership), per Windows definitio
 | horizontal | 0     | Use a horizontal watermark. |
 | diagonal   | 1     | Use a diagonal watermark.   |
 
-### conditionalAccessPolicyState
+### conditionalAccessPolicyState values
 
 |Member|
 |:---|

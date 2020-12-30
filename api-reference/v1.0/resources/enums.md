@@ -110,7 +110,7 @@ Namespace: microsoft.graph
 |easSupported|
 |other|
 
-### conditionalAccessPolicyState
+### conditionalAccessPolicyState values
 
 |Member|
 |:---|
