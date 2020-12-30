@@ -11,6 +11,35 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### governanceRoleAssignmentType values
+
+|Member|
+|:---|
+|AdminAdd|
+|UserAdd|
+|AdminUpdate|
+|AdminRemove|
+|UserRemove|
+|UserExtend|
+|AdminExtend|
+|UserRenew|
+|AdminRenew|
+
+### governanceRoleMemberType values
+
+|Member|
+|:---|
+|Inherited|
+|Group|
+|User|
+
+### governanceRoleAssignmentState values
+
+|Member|
+|:---|
+|Eligible|
+|Active|
+
 ### privilegedOperationRequestType values
 
 |Member|
