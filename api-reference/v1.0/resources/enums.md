@@ -11,6 +11,15 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### allowInvitesFrom
+
+|Member|
+|:---|
+|none|
+|adminsAndGuestInviters|
+|adminsGuestInvitersAndAllMembers|
+|everyone|
+
 ### dataPolicyOperationStatus
 
 |Member|

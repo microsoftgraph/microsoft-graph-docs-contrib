@@ -11,6 +11,15 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### allowInvitesFrom
+
+|Member|
+|:---|
+|none|
+|adminsAndGuestInviters|
+|adminsGuestInvitersAndAllMembers|
+|everyone|
+
 ### dataPolicyOperationStatus
 
 |Member|
