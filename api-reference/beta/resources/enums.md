@@ -11,6 +11,47 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### privilegedOperationRequestType values
+
+|Member|
+|:---|
+|Assign|
+|Activate|
+|Unassign|
+|Deactivate|
+|ScanAlersNow|
+|DismissAlert|
+|FixAlertItem|
+|AccessReview_Review|
+|AccessReview_Create|
+|AccessReview_Update|
+|AccessReview_Delete|
+
+### privilegedApprovalState values
+
+|Member|
+|:---|
+|pending|
+|approved|
+|denied|
+|aborted|
+|canceled|
+
+### privilegedRoleAssignmentStatus values
+
+|Member|
+|:---|
+|ok|
+|bad|
+
+### externalUserLifecycleAction values
+
+|Member|
+|:---|
+|None|
+|BlockSignIn|
+|BlockSignInAndDelete|
+
 ### accessPackageCatalogType values
 
 |Member|
