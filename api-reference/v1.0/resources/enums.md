@@ -11,6 +11,17 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### conditionalAccessDevicePlatform
+
+| Member       |
+|:--------------|
+|android|
+|iOS|
+|windows|
+|windowsPhone|
+|macOS|
+|all|
+
 ### sessionControlMode
 
 | Member       |
