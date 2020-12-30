@@ -72,7 +72,7 @@ Namespace: microsoft.graph
 |blockDownloads|
 |unknownFutureValue|
 
-### conditionalAccessGrantControl
+### conditionalAccessGrantControl values
 
 | Member       |
 |:--------------|
@@ -83,14 +83,14 @@ Namespace: microsoft.graph
 |approvedApplication|
 |compliantApplication|
 
-### conditionalAccessUserActions
+### conditionalAccessUserActions values
 
 |Member|
 |:---|
 |urn:user:registersecurityinfo|
 |urn:user:registerdevice|
 
-### conditionalAccessRiskLevels
+### conditionalAccessRiskLevels values
 
 |Member|
 |:---|
@@ -99,7 +99,7 @@ Namespace: microsoft.graph
 |high|
 |none|
 
-### clientAppTypes
+### clientAppTypes values
 
 |Member|
 |:---|

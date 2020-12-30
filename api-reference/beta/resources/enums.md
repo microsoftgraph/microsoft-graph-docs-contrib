@@ -231,28 +231,28 @@ Namespace: microsoft.graph
 |always|
 |never|
 
-### conditionalOperators
+### conditionalOperators values
 
 | Member       |
 |:--------------|
 |AND|
 |OR|
 
-### conditionalAccessDeviceStates
+### conditionalAccessDeviceStates values
 
 |Member|
 |:---|
 |Compliant|
 |DomainJoined|
 
-### conditionalAccessUserActions
+### conditionalAccessUserActions values
 
 |Member|
 |:---|
 |urn:user:registersecurityinfo|
 |urn:user:registerdevice|
 
-### conditionalAccessRiskLevels
+### conditionalAccessRiskLevels values
 
 |Member|
 |:---|
@@ -261,7 +261,7 @@ Namespace: microsoft.graph
 |high|
 |none|
 
-### clientAppTypes
+### clientAppTypes values
 
 |Member|
 |:---|
@@ -1547,17 +1547,7 @@ Possible values for user account types (group membership), per Windows definitio
 |disabled|
 |enabledForReportingButNotEnforced|
 
-### conditionalAccessClientApp
-
-| Member       |
-|:--------------|
-|browser|
-|modern|
-|easSupported|
-|easUnsupported|
-|other|
-
-### conditionalAccessGrantControl
+### conditionalAccessGrantControl values
 
 | Member       |
 |:--------------|
