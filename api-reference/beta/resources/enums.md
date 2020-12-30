@@ -11,6 +11,14 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### accessReviewReviewerType values
+
+|Member|
+|:---|
+|self|
+|delegated|
+|entityOwners|
+
 ### accessReviewAutoRecommendation values
 
 |Member|
