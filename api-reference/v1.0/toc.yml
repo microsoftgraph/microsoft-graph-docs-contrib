@@ -5016,7 +5016,7 @@ items:
           href: api/channel-delete.md
         - name: List members
           href: api/channel-list-members.md
-        - name: Create member 
+        - name: Add member 
           href: api/channel-post-members.md
         - name: Get member
           href: api/channel-get-members.md
