@@ -11,6 +11,20 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### publicKeyType
+
+|Member|
+|:---|
+|rsa|
+|oct|
+
+### publicKeyUse
+
+|Member|
+|:---|
+|sig|
+|enc|
+
 ### tokenSigningOptions
 
 |Member|

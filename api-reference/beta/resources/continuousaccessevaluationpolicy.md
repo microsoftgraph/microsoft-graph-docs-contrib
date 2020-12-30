@@ -25,7 +25,7 @@ Continuous Access Evaluation (CAE) manages authentication sessions in real time.
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|Continuous access evaluation automatically blocks access to resources and applications in near real time when a user's access is removed or a client IP address changes. Read-only.|
-|displayName|String| The value is always 'Continuous Access Evaluation'. Read-only.|
+|displayName|String| The value is always `Continuous Access Evaluation`. Read-only.|
 |groups|String collection|The collection of group identifiers in scope for evaluation. All groups are in scope when the collection is empty.|
 |id|String|Specifies the identifier of a continuousAccessEvaluationPolicy object. Read-only.|
 |isEnabled|Boolean| `true` to indicate whether continuous access evaluation should be performed; otherwise `false`. |
