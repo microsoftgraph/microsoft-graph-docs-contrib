@@ -56,14 +56,14 @@ Namespace: microsoft.graph
 |always|
 |never|
 
-### conditionalOperators
+### conditionalOperators values
 
 | Member       |
 |:--------------|
 |AND|
 |OR|
 
-### cloudAppSecuritySessionControlType
+### cloudAppSecuritySessionControlType values
 
 | Member       |
 |:--------------|
