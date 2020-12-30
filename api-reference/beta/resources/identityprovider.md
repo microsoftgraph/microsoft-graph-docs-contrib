@@ -42,10 +42,10 @@ If it is a custom OpenID Connect identity provider with `OpenIDConnect` as `type
 |Property|Type|Description|
 |:---------------|:--------|:----------|
 |clientId|String|The client ID for the application obtained when registering the application with the identity provider. This is a required field.|
-|clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return "\*\*\*\*". This is a required field.|
+|clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return `****`. This is a required field.|
 |id|String|The ID of the identity provider.|
 |name|String|The display name of the identity provider.|
-|type|String|The identity provider type is a required field.<ul>For B2B scenario:<li/>Google<li/>Facebook</ul><ul>For B2C scenario:<li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat<li/>OpenIDConnect</ul>|
+|type|String|The identity provider type is a required field.<br/><ul><li>For B2B scenario:</li><ul><li>Google</li><li>Facebook</li></ul></ul><ul><li>For B2C scenario:</li><ul><li>Microsoft</li><li>Google</li><li>Amazon</li><li>LinkedIn</li><li>Facebook</li><li>GitHub</li><li>Twitter</li><li>Weibo</li><li>QQ</li><li>WeChat</li><li>OpenIDConnect</li></ul></ul>|
 
 ### Where to get the client ID and secret
 

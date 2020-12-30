@@ -34,10 +34,10 @@ Configuring an identity provider in your Azure AD tenant enables future B2B gues
 |Property|Type|Required|Nullable|Description|
 |:---------------|:--------|:--------|:--------|:----------|
 |clientId|String|Yes|No|The client ID for the application. This is the client ID obtained when registering the application with the identity provider.|
-|clientSecret|String|Yes|No|The client secret for the application. This is the client secret obtained when registering the application with the identity provider. This is write-only. A read operation will return "\*\*\*\*".|
+|clientSecret|String|Yes|No|The client secret for the application. This is the client secret obtained when registering the application with the identity provider. This is write-only. A read operation will return `****`.|
 |id|String|No|No|The ID of the identity provider.|
 |name|String|No|No|The display name of the identity provider.|
-|type|String|Yes|No|The identity provider type. It must be one of the following values for B2C scenarios: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>For B2B scenarios, the value must be Google or Facebook.|
+|type|String|Yes|No|The identity provider type is a required field.<br/><ul><li>For B2B scenario:</li><ul><li>Google</li><li>Facebook</li></ul></ul><ul><li>For B2C scenario:</li><ul><li>Microsoft</li><li>Google</li><li>Amazon</li><li>LinkedIn</li><li>Facebook</li><li>GitHub</li><li>Twitter</li><li>Weibo</li><li>QQ</li><li>WeChat</li><li>OpenIDConnect</li></ul></ul>|
 
 ### Where to get the client ID and secret
 
