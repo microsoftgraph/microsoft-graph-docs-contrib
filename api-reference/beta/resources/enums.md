@@ -11,6 +11,19 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### accessReviewStatus values
+
+|Member|
+|:---|
+|Initializing|
+|NotStarted|
+|Starting|
+|InProgress|
+|Completing|
+|Completed|
+|AutoReviewing|
+|AutoReviewed|
+
 ### publicKeyType
 
 |Member|
