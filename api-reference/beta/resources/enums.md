@@ -11,6 +11,23 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### accessPackageAssignmentStatus values
+
+|Member|
+|:---|
+|Delivering|
+|Delivered|
+|NearExpiry1DayNotificationTriggered|
+|ExpiredNotificationTriggered|
+
+### accessPackageAssignmentState values
+
+|Member|
+|:---|
+|Delivering|
+|Delivered|
+|Expired|
+
 ### accessReviewReviewerType values
 
 |Member|
