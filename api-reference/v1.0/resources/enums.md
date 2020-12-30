@@ -11,6 +11,14 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### tokenSigningOptions
+
+|Member|
+|:---|
+|ResponseOnly|
+|TokenOnly|
+|ResponseAndToken|
+
 ### allowInvitesFrom
 
 |Member|
