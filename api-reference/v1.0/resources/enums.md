@@ -11,6 +11,16 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### dataPolicyOperationStatus
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|complete|
+|failed|
+|unknownFutureValue|
+
 ### conditionalAccessDevicePlatform
 
 | Member       |
