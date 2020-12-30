@@ -28,7 +28,7 @@ Represents a submitted data policy operation. It contains necessary information 
 |:---------------|:--------|:----------|
 |completedDateTime|DateTimeOffset|Represents when the request for this data policy operation was completed, in UTC time, using the ISO 8601 format. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Null until the operation completes.|
 |id|String| Unique key for this operation. |
-|status|String| Possible values are: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
+|status|dataPolicyOperationStatus| Possible values are: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
 |storageLocation|String|The URL location to where data is being exported for export requests.|
 |userId|String|The id for the user on whom the operation is performed.|
 |submittedDateTime|DateTimeOffset|Represents when the request for this data operation was submitted, in UTC time, using the ISO 8601 format. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|

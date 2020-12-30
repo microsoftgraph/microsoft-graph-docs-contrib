@@ -183,21 +183,21 @@ Namespace: microsoft.graph
 |AutoReviewing|
 |AutoReviewed|
 
-### publicKeyType
+### publicKeyType values
 
 |Member|
 |:---|
 |rsa|
 |oct|
 
-### publicKeyUse
+### publicKeyUse values
 
 |Member|
 |:---|
 |sig|
 |enc|
 
-### tokenSigningOptions
+### tokenSigningOptions values
 
 |Member|
 |:---|
@@ -205,7 +205,7 @@ Namespace: microsoft.graph
 |TokenOnly|
 |ResponseAndToken|
 
-### allowInvitesFrom
+### allowInvitesFrom values
 
 |Member|
 |:---|
@@ -214,7 +214,7 @@ Namespace: microsoft.graph
 |adminsGuestInvitersAndAllMembers|
 |everyone|
 
-### dataPolicyOperationStatus
+### dataPolicyOperationStatus values
 
 |Member|
 |:---|
