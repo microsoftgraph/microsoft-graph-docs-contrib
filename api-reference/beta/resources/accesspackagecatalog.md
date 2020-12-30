@@ -33,7 +33,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |catalogStatus|String|Has the value `Published` if the access packages are available for management.|
-|catalogType|String|One of `UserManaged` or `ServiceDefault`. |
+|catalogType|accessPackageCatalogType|One of `UserManaged` or `ServiceDefault`. |
 |createdBy|String|UPN of the user who created this resource. Read-only.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
 |description|String|The description of the access package catalog.|

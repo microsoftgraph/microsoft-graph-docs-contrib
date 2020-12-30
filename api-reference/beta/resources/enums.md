@@ -11,6 +11,23 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### accessPackageCatalogType values
+
+|Member|
+|:---|
+|UserManaged|
+|ServiceDefault|
+
+### accessPackageAssignmentRequestType values
+
+|Member|
+|:---|
+|UserAdd|
+|UserRemove|
+|AdminAdd|
+|AdminRemove|
+|SystemRemove|
+
 ### accessPackageAssignmentRequestState values
 
 |Member|
@@ -23,6 +40,13 @@ Namespace: microsoft.graph
 |PartiallyDelivered|
 |Submitted|
 |Scheduled|
+
+### accessPackageAssignmentResourceRoleStatus values
+
+|Member|
+|:---|
+|PendingFulfillment|
+|Fulfilled|
 
 ### accessPackageAssignmentStatus values
 
