@@ -28,7 +28,7 @@ Inherits from [request](../resources/request.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |createdBy|[userIdentity](../resources/useridentity.md)|The user who created the request. |
-|createdDateTime|DateTimeOffset|The date and time when the request was created.<br>The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.<br><br>Supports `$filter` (`eq` only) and `$sort`.|
+|createdDateTime|DateTimeOffset|The date and time when the request was created.<br>The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.<br><br>Supports `$filter` (`eq` only) and `$sort`.|
 |id|String|The identifier of an application consent request. Inherited from [request](../resources/request.md)|
 |reason|String|Reason for creating this request.<br><br>Supports `$filter` (`eq` only) and `$sort`. |
 |status|consentRequestStatus|Status of request. `Initializing`, `InProgress`, `Completed`. <br><br>Supports `$filter` (`eq` only) and `$sort`. |
