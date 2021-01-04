@@ -46,8 +46,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [device](../resources/device.md) object in the response body.
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -76,10 +76,12 @@ GET https://graph.microsoft.com/beta/devices/{id}
 ---
 
 
-> Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.
+> **Note:** The `id` in the request is the **id** property of the device, not the **deviceId** property.
 
-### Response for device with no hostNames
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+The following example shows a response for a device with no **hostNames**. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,8 +102,9 @@ Content-length: 322
 }
 ```
 
-### Response for device with hostNames
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows a response for a device with **hostNames**. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
