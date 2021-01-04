@@ -1589,4 +1589,4 @@ Possible values for user account types (group membership), per Windows definitio
 
 |Member| Value | Description               |
 |:---|:---- | :------------------------ |
-|standard| 0     |The default teamworkTag type. This represents a tag that can be managed manually in the team.|
+|standard| 0     |Default type for a tag. Tags of type standard can be managed in the team by members who have permissions.|
