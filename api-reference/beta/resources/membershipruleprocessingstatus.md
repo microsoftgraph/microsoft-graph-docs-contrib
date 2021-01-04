@@ -2,7 +2,7 @@
 title: "membershipRuleProcessingStatus resource type"
 description: "Represents the current status of dynamic group processing."
 localization_priority: Normal
-author: "davidmu1"
+author: "yyuank"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
