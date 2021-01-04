@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|TeamworkTagReadWrite, TeamworkTagRead|
+|Delegated (work or school account)|TeamworkTag.ReadWrite, TeamworkTag.Read|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /teams/{teamsId}/tags/{teamworkTagId}/members
+GET /teams/{team-Id}/tags/{teamworkTag-Id}/members
 ```
 
 ## Optional query parameters

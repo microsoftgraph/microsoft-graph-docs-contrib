@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|TeamworkTagReadWrite|
+|Delegated (work or school account)|TeamworkTag.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /teams/{teamsId}/tags/{teamworkTagId}/members/{teamworkTagMemberId}
+DELETE /teams/{team-Id}/tags/{teamworkTag-Id}/members/{teamworkTagMember-Id}
 ```
 
 ## Request headers

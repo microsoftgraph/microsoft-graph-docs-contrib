@@ -11,7 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Tags provide a flexible way for customers to classify users or groups based on a common attribute.
+Tags provide a flexible way for customers to classify users or groups based on a common attribute within a team. For example, a "Nurse" or "Manager" or Designer" tag will enable users to reach groups of people in Teams without having to type every single name.
+
+Once a tag is added, users can @mention it in a channel. Everyone who has been assigned that tag will receive a notification just as they would if they were @mentioned individually. Users can also use a tag is to start a new chat with the members of that tag.
 
 ## Methods
 |Method|Return type|Description|

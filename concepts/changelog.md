@@ -137,8 +137,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the [channelModerationSettings](/graph/api/resources/channelmoderationsettings?view=graph-rest-beta&preserve-view=true) resource type. |
 | Addition | beta | Added the **replyRestriction** enumeration type. |
 | Addition | beta | Added the **userNewMessageRestriction** enumeration type. |
-| Addition | beta | Added the [teamworkTag](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTag?view=graph-rest-beta) resource type. |
-| Addition | beta | Added the [teamworkTagMember](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTagMember?view=graph-rest-beta) resource type.|
+| Addition | beta | Added the [teamworkTag](/graph/api/resources/teamworkTag?view=graph-rest-beta&preserve-view=true) resource type. |
+| Addition | beta | Added the [teamworkTagMember](/graph/api/resources/teamworkTagMember?view=graph-rest-beta&preserve-view=true) resource type.|
 | Addition | beta | Added the **teamworkTagType** enumeration type.|
 
 

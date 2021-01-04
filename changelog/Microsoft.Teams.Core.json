@@ -43,6 +43,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **teamworkTagType** enumeration type",
           "Target": "teamworkTagType"
+        },
+        {
+          "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
+          "ApiChange": "Property",
+          "ChangedApiName": "teamworkTag,team",
+          "ChangeType": "Addition",
+          "Description": "Added the [tags](https://docs.microsoft.com/en-us/graph/api/teamworktag-create?view=graph-rest-beta) navigation property to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource type, enabling tags to be added with increased reliability and lower latency.",
+          "Target": "teamworkTag,team"
         }
       ],
       "Id": "b7bad23d-b41d-4d07-8990-3a02d3ddac4a",
