@@ -3,6 +3,98 @@
     {
       "ChangeList": [
         {
+              "Id": "a4f81577-234e-11eb-8b0e-705e20bbe57e",
+              "ApiChange": "Resource",
+              "ChangedApiName": "authenticationEventsPolicy",
+              "ChangeType": "Addition",
+              "Description": "Added the [authenticationEventsPolicy](https://docs.microsoft.com/graph/api/resources/authenticationeventspolicy?view=graph-rest-beta&preserve-view=true) resource type.",
+              "Target": "authenticationEventsPolicy"
+            },
+            {
+              "Id": "a4f81577-234e-11eb-8b0e-705e20bbe57e",
+              "ApiChange": "Resource",
+              "ChangedApiName": "authenticationListener",
+              "ChangeType": "Addition",
+              "Description": "Added the [authenticationListener](https://docs.microsoft.com/graph/api/resources/authenticationlistener?view=graph-rest-beta&preserve-view=true) resource type.",
+              "Target": "authenticationListener"
+            },
+            {
+              "Id": "a4f81577-234e-11eb-8b0e-705e20bbe57e",
+              "ApiChange": "Resource",
+              "ChangedApiName": "invokeUserFlowListener",
+              "ChangeType": "Addition",
+              "Description": "Added the [invokeUserFlowListener](https://docs.microsoft.com/graph/api/resources/invokeuserflowlistener?view=graph-rest-beta&preserve-view=true) resource type.",
+              "Target": "invokeUserFlowListener"
+            }
+          ],
+          "Id": "a4f353ec-234e-11eb-8b0e-705e20bbe57e",
+          "Cloud": "prd",
+          "Version": "v1.0",
+          "CreatedDateTime": "2020-12-04T12:17:04.676Z",
+          "WorkloadArea": "Identity and access",
+          "SubArea": "Identity and sign-in"
+        },
+        {
+        "ChangeList": [
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityApiConnector",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityApiConnector](https://docs.microsoft.com/graph/api/resources/identityapiconnector.md?view=graph-rest-beta&preserve-view=true) object which represents configuration used to call web APIs. Added methods for listing, getting, creating, updating, and deleting API connectors.",
+          "Target": "identityApiConnector"
+        },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "apiAuthenticationConfigurationBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [apiAuthenticationConfigurationBase](https://docs.microsoft.com/graph/api/resources/apiauthenticationconfigurationbase?view=graph-rest-beta&preserve-view=true) entity for authentication configuration used to call web APIs.",
+          "Target": "apiAuthenticationConfigurationBase"
+      },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "basicAuthentication",
+          "ChangeType": "Addition",
+          "Description": "Added the [basicAuthentication](https://docs.microsoft.com/graph/api/resources/basicauthentication?view=graph-rest-beta&preserve-view=true) entity that extends apiAuthenticationConfigurationBase for HTTP Basic authentication of web API calls.",
+          "Target": "basicAuthentication"
+        },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userFlowApiConnectorConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [userFlowApiConnectorConfiguration](https://docs.microsoft.com/graph/api/resources/userflowapiconnectorconfiguration?view=graph-rest-beta&preserve-view=true) entity for managing API connectors used by an External Identities self-service sign-up user flow.",
+          "Target": "userFlowApiConnectorConfiguration"
+        },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e8",
+          "ApiChange": "Property",
+          "ChangedApiName": "b2xIdentityUserFlow",
+          "ChangeType": "Addition",
+          "Description": "Added **apiConnectorConfiguration** property to the [b2xIdentityUserFlow](https://docs.microsoft.com/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) resource.",
+          "Target": "b2xIdentityUserFlow"
+        },
+        {
+          "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e8",
+          "ApiChange": "Property",
+          "ChangedApiName": "b2cIdentityUserFlow",
+          "ChangeType": "Addition",
+          "Description": "Added **apiConnectorConfiguration** property to the [b2cIdentityUserFlow](https://docs.microsoft.com/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) resource.",
+          "Target": "b2cIdentityUserFlow"
+        }
+      ],
+      "Id": "0690c96c-8a69-4bfb-89c9-07dc397065e8",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-03T17:53:06Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8edd9cea-d04c-4a1b-8c50-68270332a880",
           "ApiChange": "Resource",
           "ChangedApiName": "userFlowLanguageConfiguration",
@@ -187,6 +279,48 @@
       "CreatedDateTime": "2020-12-01T17:53:06Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ed857cbd-2aec-4ad5-a9a6-8fd628bb863f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAnswer",
+          "ChangeType": "Addition",
+          "Description": "Added the new [accessPackageAnswer](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageanswer?view=graph-rest-beta\u0026preserve-view=true) complex type, including two subtypes [accessPackageAnswerChoice](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageanswerchoice?view=graph-rest-beta\u0026preserve-view=true) and [accessPackageAnswerString](/graph/api/resources/accesspackageanswerstring?view=graph-rest-beta\u0026preserve-view=true).",
+          "Target": "accessPackageAnswer"
+        },
+        {
+          "Id": "ed857cbd-2aec-4ad5-a9a6-8fd628bb863f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageQuestion,accessPackageMultipleChoiceQuestion,accessPackageTextInputQuestion",
+          "ChangeType": "Addition",
+          "Description": "Added the new [accessPackageQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accesspackagequestion?view=graph-rest-beta\u0026preserve-view=true) complex type, including two subtypes [accessPackageMultipleChoiceQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accesspackagemultiplechoicequestion?view=graph-rest-beta\u0026preserve-view=true) and [accessPackageTextInputQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accesspackagetextinputquestion?view=graph-rest-beta\u0026preserve-view=true).",
+          "Target": "accessPackageQuestion,accessPackageMultipleChoiceQuestion,accessPackageTextInputQuestion"
+        },
+        {
+          "Id": "ed857cbd-2aec-4ad5-a9a6-8fd628bb863f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageLocalizedContent",
+          "ChangeType": "Addition",
+          "Description": "Added the new [accessPackageLocalizedContent](https://docs.microsoft.com/en-us/graph/api/resources/accesspackagelocalizedcontent?view=graph-rest-beta\u0026preserve-view=true) complex type.",
+          "Target": "accessPackageLocalizedContent"
+        },
+        {
+          "Id": "ed857cbd-2aec-4ad5-a9a6-8fd628bb863f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageLocalizedText",
+          "ChangeType": "Addition",
+          "Description": "Added the new [accessPackageLocalizedText](https://docs.microsoft.com/en-us/graph/api/resources/accesspackagelocalizedtext?view=graph-rest-beta\u0026preserve-view=true) complex type.",
+          "Target": "accessPackageLocalizedText"
+        }
+      ],
+      "Id": "ed857cbd-2aec-4ad5-a9a6-8fd628bb863f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-17T00:00:00",
+      "WorkloadArea": "Identity and access ",
+      "SubArea": " Governance"
     },
     {
       "ChangeList": [
