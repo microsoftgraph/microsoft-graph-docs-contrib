@@ -12828,7 +12828,7 @@ items:
           items:
           - name: List tabs in channel
             href: api/channel-list-tabs.md
-          - name: Add tab to cannel
+          - name: Add tab to channel
             href: api/channel-post-tabs.md
           - name: Get tab in channel
             href: api/channel-get-tabs.md
