@@ -50,3 +50,7 @@ The following is a JSON representation of the resource.
   "allowNewMessageFromConnectors": "Boolean"
 }
 ```
+
+## See also
+
+- To modify moderation settings of a channel, see example 2 in [Update channel](../api/channel-patch.md).
