@@ -29,7 +29,7 @@ Represents the current status of dynamic group processing.
 | Running | Processing has started.|
 | Succeeded | Processing has completed. Incremental object changes will be processed perpetually. |
 | Failed | Processing ran into an error. See **errorMessage** for details. |
-| UnknownFutureValue | Sentinel value for supporting future unknown values. |
+| UnknownFutureValue | Supports future values. |
 
 ## JSON representation
 
