@@ -3,7 +3,7 @@ title: "userSource resource type"
 description: "The container for a custodian's mailbox and OneDrive for Business site."
 author: "mahage-msft"
 localization_priority: Normal
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 

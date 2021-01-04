@@ -3,7 +3,7 @@ title: "custodian resource type"
 description: "In the context of eDiscovery, represents a user and all of their digital assets, such as email and documents."
 author: "mahage-msft"
 localization_priority: Normal
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 

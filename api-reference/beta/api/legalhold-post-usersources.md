@@ -3,7 +3,7 @@ title: "Create legalhold userSource"
 description: "Create a new legalhold userSource object."
 author: "mahage-msft"
 localization_priority: Normal
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 

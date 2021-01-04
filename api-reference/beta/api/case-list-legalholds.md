@@ -3,7 +3,7 @@ title: "List legalholds"
 description: "Get the legalhold resources from the legalholds navigation property."
 author: "mahage-msft"
 localization_priority: Normal
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 

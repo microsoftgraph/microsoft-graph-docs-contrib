@@ -3,7 +3,7 @@ title: "List custodian userSources"
 description: "Get a list of the userSource objects and their properties."
 author: "mahage-msft"
 localization_priority: Normal
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 

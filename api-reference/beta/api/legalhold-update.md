@@ -3,7 +3,7 @@ title: "Update legalhold"
 description: "Update the properties of a legalhold object."
 localization_priority: Normal
 author: "mahage-msft"
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
@@ -80,7 +80,8 @@ Content-length: 295
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.legalhold"
 }
 -->
 

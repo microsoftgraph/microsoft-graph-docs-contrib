@@ -3,7 +3,7 @@ title: "custodian: release"
 description: "Release a custodian from a case."
 author: "mahage-msft"
 localization_priority: Normal
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "case resource type"
 description: "eDiscovery cases are containers that contain custodians, holds, collections, review sets, and exports."
 localization_priority: Normal
 author: "mahage-msft"
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: "resourcePageType"
 ---
 

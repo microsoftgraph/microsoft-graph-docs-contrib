@@ -3,7 +3,7 @@ title: "Get legalhold"
 description: "Read the properties and relationships of a legalhold object."
 localization_priority: Normal
 author: "mahage-msft"
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 

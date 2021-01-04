@@ -3,7 +3,7 @@ title: "Get case"
 description: "Retrieve the properties and relationships of case object."
 localization_priority: Normal
 author: "mahage-msft"
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 

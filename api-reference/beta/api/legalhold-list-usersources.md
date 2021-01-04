@@ -3,7 +3,7 @@ title: "List legalhold userSources"
 description: "Get the userSource resources from the userSources navigation property."
 author: "mahage-msft"
 localization_priority: Normal
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 

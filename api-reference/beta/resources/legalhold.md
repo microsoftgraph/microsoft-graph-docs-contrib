@@ -3,7 +3,7 @@ title: "legalhold resource type"
 description: "legalHold resource type"
 localization_priority: Normal
 author: "mahage-msft"
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 

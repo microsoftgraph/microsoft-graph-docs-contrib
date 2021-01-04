@@ -3,7 +3,7 @@ title: "Delete siteSource"
 description: "Delete a siteSource object."
 author: "mahage-msft"
 localization_priority: Normal
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 

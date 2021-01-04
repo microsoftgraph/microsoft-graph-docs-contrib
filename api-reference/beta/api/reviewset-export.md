@@ -3,7 +3,7 @@ title: "reviewSet: export"
 description: "Initiates an export from a reviewSet"
 author: "mahage-msft"
 localization_priority: Normal
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 

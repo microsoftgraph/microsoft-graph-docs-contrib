@@ -3,7 +3,7 @@ title: "List reviewSetQueries"
 description: "Retrieve a list of reviewSetQuery objects."
 localization_priority: Normal
 author: "mahage-msft"
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 

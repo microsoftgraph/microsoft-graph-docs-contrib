@@ -3,7 +3,7 @@ title: "ediscoveryCase: reopen"
 description: "Reopen an eDiscovery case that was closed."
 author: "mahage-msft"
 localization_priority: Normal
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 

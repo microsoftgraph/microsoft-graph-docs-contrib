@@ -3,7 +3,7 @@ title: "Create case"
 description: "Use this API to create a new case."
 localization_priority: Normal
 author: "mahage-msft"
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 

@@ -3,7 +3,7 @@ title: "Use the Microsoft Graph compliance API"
 description: "The Microsoft Graph Compliance API provides a unified interface and schema to integrate with compliance solutions from Microsoft and ecosystem partners. This can help customers streamline their compliance operations to better manage and monitor their data, protect information, minimize insider risk, perform legal and internal investigations, and comply with legal or regulatory standards."
 localization_priority: Priority
 author: "mahage-msft"
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: conceptualPageType
 ---
 

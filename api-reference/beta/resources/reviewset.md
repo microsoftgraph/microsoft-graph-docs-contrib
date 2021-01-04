@@ -3,7 +3,7 @@ title: "reviewSet resource type"
 description: "Represents static set of electronically stored information collected for use in a litigation, investigation, or regulatory request."
 localization_priority: Normal
 author: "mahage-msft"
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: "resourcePageType"
 ---
 

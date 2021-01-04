@@ -3,7 +3,7 @@ title: "Get reviewSetQuery"
 description: "Retrieve the properties and relationships of an eDiscovery reviewsetquery object."
 localization_priority: Normal
 author: "mahage-msft"
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 

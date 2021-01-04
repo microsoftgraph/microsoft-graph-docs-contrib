@@ -3,7 +3,7 @@ title: "Create reviewSetQuery"
 description: "Use this API to create a new reviewSetQuery."
 localization_priority: Normal
 author: "mahage-msft"
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 

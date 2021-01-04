@@ -3,7 +3,7 @@ title: "Get siteSource"
 description: "Read the properties and relationships of a siteSource object."
 author: "mahage-msft"
 localization_priority: Normal
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Update custodian"
 description: "Update the properties of a custodian object."
 author: "mahage-msft"
 localization_priority: Normal
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 

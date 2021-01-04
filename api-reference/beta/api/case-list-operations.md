@@ -3,7 +3,7 @@ title: "List operations"
 description: "Get the caseOperation resources from the operations navigation property."
 author: "mahage-msft"
 localization_priority: Normal
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 

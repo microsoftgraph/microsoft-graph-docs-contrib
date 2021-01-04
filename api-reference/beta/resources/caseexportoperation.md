@@ -3,7 +3,7 @@ title: "caseExportOperation resource type"
 description: "Export operation entity"
 localization_priority: Normal
 author: "mahage-msft"
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 

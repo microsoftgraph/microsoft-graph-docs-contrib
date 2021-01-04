@@ -3,7 +3,7 @@ title: "caseOperation resource type"
 description: "Case operation abstract base class"
 localization_priority: Normal
 author: "mahage-msft"
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 

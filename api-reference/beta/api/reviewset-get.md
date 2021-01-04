@@ -3,7 +3,7 @@ title: "Get reviewSet"
 description: "Retrieve the properties and relationships of a reviewSet object."
 localization_priority: Normal
 author: "mahage-msft"
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 

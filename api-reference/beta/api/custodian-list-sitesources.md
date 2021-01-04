@@ -3,7 +3,7 @@ title: "List custodian siteSources"
 description: "Get a list of the siteSource objects and their properties."
 author: "mahage-msft"
 localization_priority: Normal
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 

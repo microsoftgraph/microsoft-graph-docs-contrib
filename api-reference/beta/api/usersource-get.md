@@ -3,7 +3,7 @@ title: "Get userSource"
 description: "Read the properties and relationships of a userSource object."
 author: "mahage-msft"
 localization_priority: Normal
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
