@@ -23,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported. |
 |Application|Not supported. |
 
+The signed-in user must be a registered reviewer but does not need to be assigned any of the special directory roles to call this API.
+
 ## HTTP request
 
 <!-- {

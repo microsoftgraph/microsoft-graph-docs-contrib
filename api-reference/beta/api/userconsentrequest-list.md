@@ -165,6 +165,8 @@ Content-Type: application/json
 ```
 ## Example 2: List all userConsentRequests for the appConsentRequests that are pending your approval
 
+The following call will return only **userConsentRequests** for the **appConsentRequests** for which the signed-in user is the assigned reviewer. The signed-in user does not need to be assigned any of the roles specified in the [permissions table](#permissions).
+
 ### Request
 <!-- {
   "blockType": "request",

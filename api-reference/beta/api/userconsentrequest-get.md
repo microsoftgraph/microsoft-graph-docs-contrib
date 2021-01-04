@@ -121,6 +121,8 @@ Content-Type: application/json
 
 ## Example 2: Get a userConsentRequest for the appConsentRequest that is pending your approval
 
+The following call will return only a **userConsentRequest** for the **appConsentRequests** for which the signed-in user is the assigned reviewer. The signed-in user does not need to be assigned any of the special directory roles to call this API.
+
 ### Request
 <!-- {
   "blockType": "request",
