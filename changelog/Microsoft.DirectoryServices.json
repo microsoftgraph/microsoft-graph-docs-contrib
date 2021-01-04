@@ -5,7 +5,7 @@
         {
           "Id": "7a992070-a9ab-42f3-a13e-8e5fd8d46bcf",
           "ApiChange": "Resource",
-          "ChangedApiName": "",
+          "ChangedApiName": "device",
           "ChangeType": "Addition",
           "Description": "Added the **hostNames** property to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) entity.",
           "Target": "device"
@@ -16,7 +16,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-12-21T00:00:00",
       "WorkloadArea": "Identity and access",
-      "SubArea": ""
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
