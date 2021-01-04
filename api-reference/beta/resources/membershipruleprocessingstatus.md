@@ -27,7 +27,7 @@ Represents the current status of dynamic group processing.
 |:-------- |:----------- |
 | NotStarted | Group has been created or updated, and awaiting processing.|
 | Running | Processing has started.|
-| Succeeded | Processing has completed. Incremental object changes will be processed perpetually. |
+| Succeeded | Processing has completed. Incremental object changes are processed perpetually. |
 | Failed | Processing ran into an error. See **errorMessage** for details. |
 | UnknownFutureValue | Supports future values. |
 
