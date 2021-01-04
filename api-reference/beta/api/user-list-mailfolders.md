@@ -52,7 +52,6 @@ This method also supports [OData query parameters](/graph/query-parameters) to h
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json  |
 
 ## Request body
 Do not supply a request body for this method.
@@ -96,7 +95,9 @@ GET https://graph.microsoft.com/beta/me/mailFolders
 ---
 
 #### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. 
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
