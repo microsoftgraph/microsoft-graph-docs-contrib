@@ -96,13 +96,13 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/getEffecti
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
-
 Content-Type: application/json
+
 {
-  "value": [
-    "Microsoft.CloudPC/CloudPCs/Read"
-  ]
+   "value":[
+      "Microsoft.CloudPC/CloudPCs/Read"
+   ]
 }
 ```
