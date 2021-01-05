@@ -39,7 +39,7 @@ The following is a JSON representation of this resource.
 ```json
 {
    "startDateTime": "2018-10-01T00:00:00.0000000Z",
-   "frequency": "PT1M"
+   "frequency": "Duration"
 }
 ```
 
