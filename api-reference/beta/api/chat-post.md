@@ -46,7 +46,7 @@ The following table lists the properties that are required to create a chat obje
 
 |Property|Type|Description|
 |:---|:---|:---|
-|topic|(Optional) String|The title of the chat. The chat title can be provided only if the chat is of 'group' type.|
+|topic|(Optional) String|The title of the chat. The chat title can be provided only if the chat is of `group` type.|
 |chatType|[chatType](../resources/chat.md#chattype-values)| Specifies the type of chat. Possible values are: `group` and `oneOnOne`. |
 |members|[conversationMember](../resources/conversationmember.md) collection|List of conversation members that should be added. Every single user, including the user initiating the create request, who will participate in the chat must be specified in this list.|
 
