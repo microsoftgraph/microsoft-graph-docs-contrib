@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # reviewSetQuery resource type
 
-Namespace: microsoft.graph.ediscovery
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

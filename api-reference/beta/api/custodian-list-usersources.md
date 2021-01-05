@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # List custodian userSources
 
-Namespace: microsoft.graph.ediscovery
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,11 +19,11 @@ Get a list of the [userSource](../resources/usersource.md) objects and their pro
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|eDiscovery.ReadWrite.All, eDiscovery.Read.All|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|eDiscovery.ReadWrite.All, eDiscovery.Read.All|
+|Application|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
 
 ## HTTP request
 
