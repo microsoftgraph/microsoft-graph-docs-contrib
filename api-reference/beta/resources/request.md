@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a base request model. ELM, PIM and Admin Consent Requests are derived models for this request. Request also contains a link to the navigation properties associated with approvals. 
+Represents a base request model. Entitlement Management (ELM), Privileged Identity Management (PIM), and Admin Consent Requests are derived models for this request. **request** also contains a link to the navigation properties associated with approvals. 
 
 ## Properties
 |Property|Type|Description|
