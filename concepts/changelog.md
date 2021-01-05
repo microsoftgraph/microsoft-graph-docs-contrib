@@ -11,19 +11,6 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
-
-## January 2021
-
-### Users
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [translationPreferences](/graph/api/resources/translationPreferences?view=graph-rest-beta&preserve-view=true) entity.|
-| Addition | beta | Added the [translationLanguageOverride](/graph/api/resources/translationLanguageOverride?view=graph-rest-beta&preserve-view=true) entity.|
-| Change | beta | Added the [translationPreferences](/graph/api/resources/translationLanguageOverride) property to the [regionalAndLanguageSettings](/graph/resources/regionalandlanguagesettings?view=graph-rest-beta&preserve-view=true) resource.|
-| Change | beta | Added the translationPreference property to the [regionalAndLanguageSettings-get](/graph/api/regionalandlanguagesettings-get?view=graph-rest-beta&preserve-view=true) JSON example |
-| Change | beta | Added the translationPreference property to the [regionalAndLanguageSettings-update](/graph/api/regionalandlanguagesettings-update?view=graph-rest-beta&preserve-view=true) JSON example |
-
 ## December 2020
 
 ### Change notifications
@@ -97,7 +84,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the [aadUserConversationMemberResult](/graph/api/resources/aaduserconversationmemberresult?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added the [publicInnerError](/graph/api/resources/publicinnererror?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added the [publicErrorDetail](/graph/api/resources/publicerrordetail?view=graph-rest-beta&preserve-view=true) resource.|
-
 
 ## November 2020
 
