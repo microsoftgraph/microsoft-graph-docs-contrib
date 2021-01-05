@@ -45,7 +45,7 @@ This method supports some of the OData query parameters to help customize the re
 Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and [printer](../resources/printer.md) object in the response body.
-By default, the response will not contain [printerCapabilities](../resources/printerCapabilities.md). **To get printerCapabilities, use $select query parameter**. e.g. 
+By default, the response will not contain [printerCapabilities](../resources/printerCapabilities.md). **To get printerCapabilities, use the $select query parameter**. e.g.:
 ```http
 GET /print/printers/{id}?$select=id,displayName,capabilities
 ```

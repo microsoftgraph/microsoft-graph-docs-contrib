@@ -20,7 +20,7 @@ Updating a print job configuration requires the print job to be in a held state 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, either of _Printer.Read.All_ or _Printer.ReadWrite.All_ application permission, and one of the permissions listed in the following table.
+To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, either the _Printer.Read.All_ or _Printer.ReadWrite.All_ application permission, and one of the permissions listed in the following table.
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|

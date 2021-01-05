@@ -60,7 +60,7 @@ In the request body, provide a JSON object with the following parameters.
 |:-------------|:------------|:------------|
 |properties|[printDocumentUploadProperties](../resources/printDocumentUploadProperties.md)|Represents properties of the binary file to be uploaded.|
 
-The **contentType** property in request body should be supported by printer/printerShare, i.e., it should be present in [printerCapabilities](../resources/printercapabilities.md). The only exception to this is the scenario where Universal Print converts **oxps to pdf**, which will happen if **all of the following conditions are met**: 
+The **contentType** property in request body should be supported by the printer/printerShare (included in [printerCapabilities](../resources/printercapabilities.md)). The only exception to this is the scenario where Universal Print converts **oxps to pdf**, which will happen if **all of the following conditions are met**: 
 1.	Printer/PrinterShare supports “application/pdf” in printerCapabilities. 
 2.	Printer/PrinterShare does NOT support “application/oxps” in printerCapabilities. 
 3.	The contentType property in request body is “application/oxps”.
