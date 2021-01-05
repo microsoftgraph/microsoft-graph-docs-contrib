@@ -1,6 +1,6 @@
 ---
 title: "appConsentRequestScope resource type"
-description: "Details of the dynamic permission scopes for which access is being requested"
+description: "Details of the dynamic permission scopes for which access is being requested."
 author: "Zawad"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -36,4 +36,3 @@ The following is a JSON representation of the resource.
   "displayName": "String"
 }
 ```
-
