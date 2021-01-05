@@ -1681,6 +1681,10 @@ items:
             href: api/printjob-update-configuration.md
           - name: Cancel
             href: api/printjob-cancel.md
+          - name: Abort
+            href: api/printjob-abort.md
+          - name: Redirect
+            href: api/printjob-redirect.md
         - name: Print operation
           href: resources/printoperation.md
           items:
