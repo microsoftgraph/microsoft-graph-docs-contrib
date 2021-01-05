@@ -25,7 +25,7 @@ The consent request resource types include:
 * [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md): Specifies the policy by which app consent requests can be created and managed for the entire tenant. There is a single adminConsentRequestPolicy per tenant.
 * [userConsentRequest](../resources/userconsentrequest.md): A request created by a user to use an app that requires access to organizational data the user is unauthorized to grant consent to themselves.
 * [appConsentRequest](../resources/appconsentrequest.md): A request that represents an aggregation of userConsentRequests for a specific application.
-* [appConsentRequestScope](../resources/appconsentrequestscope.md): A complex type that contains details of the dynamic permission scopes being requested for a given application.  
+* [appConsentRequestScope](../resources/appconsentrequestscope.md): A resource that contains details of the dynamic permission scopes being requested for a given application.  
 
 
 ## Methods
@@ -36,7 +36,7 @@ The following table lists the methods that you can use to interact with consent 
 |:---------------|:--------|:----------|
 |[Get adminConsentRequestPolicy](../api/adminconsentrequestpolicy-get.md) | [adminConsentRequestPolicy](adminconsentrequestpolicy.md) collection | Read the properties of the [adminConsentRequestPolicy](adminconsentrequestpolicy.md) |
 |[Update adminConsentRequestPolicy](../api/adminconsentrequestpolicy-update.md) | [adminConsentRequestPolicy](adminconsentrequestpolicy.md) collection | Set configurations for the [adminConsentRequestPolicy](adminconsentrequestpolicy.md) |
-|Update Consent Policy Settings| none | The **EnableAdminConsentRequest** flag of the Consent Policy Settings object of the [directory settings](../resources/directorysetting.md) resource  determines if users are shown the prompt to request access. |
+|Update Consent Policy Settings| none | The **EnableAdminConsentRequest** property of the Consent Policy Settings object of the [directory settings](../resources/directorysetting.md) resource  determines if users are shown the prompt to request access. |
 |[List appConsentRequests ](../api/appconsentrequest-list.md) | [appConsentRequest](appconsentrequest.md) collection | Retrieve a list of all [appConsentRequests](appconsentrequest.md) |
 |[Get appConsentRequests ](../api/appconsentrequest-get.md) | [appConsentRequest](appconsentrequest.md) collection | Read a given [appConsentRequest](appconsentrequest.md) |
 |[Get userConsentRequests ](../api/userconsentrequest-get.md) | [userConsentRequest](userconsentrequest.md) collection | Retrieve a given [userConsentRequests](userconsentrequest.md) for a given [appConsentRequest](appconsentrequest.md) |
@@ -69,5 +69,4 @@ The following directory roles are required for a calling user to manage the requ
   "suppressions": []
 }
 -->
-
 

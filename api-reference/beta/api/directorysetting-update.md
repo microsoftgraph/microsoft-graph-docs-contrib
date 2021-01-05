@@ -43,7 +43,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| values | [settingValue](../resources/settingvalue.md) collection | The updated set of values. <br><br>NOTE: You **must** supply the entire collection set. You cannot update a single set of values. |
+| values | [settingValue](../resources/settingvalue.md) collection | The updated set of values. <br>You **must** supply the entire collection set. You cannot update a single set of values. |
 
 ## Response
 
@@ -124,5 +124,4 @@ HTTP/1.1 204 OK
   ]
 }
 -->
-
 
