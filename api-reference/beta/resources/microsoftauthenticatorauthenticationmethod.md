@@ -49,10 +49,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethod",
-  "id": "57c388b3-cfe5-45c6-be88-54dc00aed7fc",
-  "displayName": "Ananda's iPhone",
-  "deviceTag": "",
-  "phoneAppVersion": "6.5.4",
-  "createdDateTime": "2020-12-15T15:17:31.000124Z"
+  "id": "String (Identifier)",
+  "displayName": "String",
+  "deviceTag": "String",
+  "phoneAppVersion": "String",
+  "createdDateTime": "DateTimeOffset"
 }
 ```
