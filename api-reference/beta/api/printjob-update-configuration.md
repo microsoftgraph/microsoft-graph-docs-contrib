@@ -26,7 +26,7 @@ To use the Universal Print service, the user or app's tenant must have an active
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| Not supported. |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application| PrintJob.Manage.All |
+|Application| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
