@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "7a992070-a9ab-42f3-a13e-8e5fd8d46bcf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "device",
+          "ChangeType": "Addition",
+          "Description": "Added the **hostNames** property to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) entity.",
+          "Target": "device"
+        }
+      ],
+      "Id": "7a992070-a9ab-42f3-a13e-8e5fd8d46bcf",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-21T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
               "Id": "a4f81577-234e-11eb-8b0e-705e20bbe57e",
               "ApiChange": "Resource",
               "ChangedApiName": "authenticationEventsPolicy",
