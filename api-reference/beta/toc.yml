@@ -12679,7 +12679,7 @@ items:
           href: api/channel-delete.md
         - name: List members
           href: api/channel-list-members.md        
-        - name: Create member 
+        - name: Add member 
           href: api/channel-post-members.md
         - name: Get member
           href: api/channel-get-members.md
@@ -12716,6 +12716,8 @@ items:
           href: api/chat-post.md
         - name: Get chat
           href: api/chat-get.md
+        - name: Update chat
+          href: api/chat-patch.md
         - name: List members
           href: api/chat-list-members.md
         - name: Add member
@@ -12826,7 +12828,7 @@ items:
           items:
           - name: List tabs in channel
             href: api/channel-list-tabs.md
-          - name: Add tab to cannel
+          - name: Add tab to channel
             href: api/channel-post-tabs.md
           - name: Get tab in channel
             href: api/channel-get-tabs.md

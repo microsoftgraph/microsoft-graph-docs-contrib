@@ -101,7 +101,6 @@ Here is a JSON representation of the resource
   "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }],
   "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }]
 }
-
 ```
 ## Properties
 | Property	   | Type	|Description|
