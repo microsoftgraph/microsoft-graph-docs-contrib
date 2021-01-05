@@ -23,7 +23,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
-| Addition | beta | Added new [Delegated permissions](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>PrintJob.Create</li><li>PrintShare.ReadBasic.All</li></ul> |
+| Addition | beta | Added new [Delegated permissions](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>PrintJob.Create</li><li>PrinterShare.ReadBasic.All</li></ul> |
 
 ## December 2020
 
