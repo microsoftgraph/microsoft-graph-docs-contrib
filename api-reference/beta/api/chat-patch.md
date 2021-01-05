@@ -68,7 +68,7 @@ PATCH https://graph.microsoft.com/beta/chats/19:1c5b01696d2e4a179c292bc9cf04e63b
 Content-Type: application/json
 
 {
-    "topic": "Group chat title update",
+    "topic": "Group chat title update"
 }
 ```
 # [C#](#tab/csharp)
