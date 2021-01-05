@@ -23,7 +23,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported. |
 
-The work or school account needs to belong to one of the following roles: *Global administrator*, *Global Reader*, *Cloud App Administrator*, or *Application Administrator*.
+The work or school account needs to belong to one of the following roles:
+* Global administrator
+* Global Reader
+* Cloud App Administrator, or
+* Application Administrator
 
 ## HTTP request
 

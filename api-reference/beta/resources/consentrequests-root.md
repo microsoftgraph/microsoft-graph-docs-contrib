@@ -22,10 +22,10 @@ By defining the consent request policy, you can enable the consent request workf
 
 The consent request resource types include:
 
-  1. [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md): Specifies the policy by which app consent requests can be created and managed for the entire tenant. There is a single adminConsentRequestPolicy per tenant.
-  2. [userConsentRequest](../resources/userconsentrequest.md): A request created by a user to use an app that requires access to organizational data the user is unauthorized to grant consent to themselves.
-  3. [appConsentRequest](../resources/appconsentrequest.md): A request that represents an aggregation of userConsentRequests for a specific application.
-  4. [appConsentRequestScope](../resources/appconsentrequestscope.md): A complex type that contains details of the dynamic permission scopes being requested for a given application.  
+* [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md): Specifies the policy by which app consent requests can be created and managed for the entire tenant. There is a single adminConsentRequestPolicy per tenant.
+* [userConsentRequest](../resources/userconsentrequest.md): A request created by a user to use an app that requires access to organizational data the user is unauthorized to grant consent to themselves.
+* [appConsentRequest](../resources/appconsentrequest.md): A request that represents an aggregation of userConsentRequests for a specific application.
+* [appConsentRequestScope](../resources/appconsentrequestscope.md): A complex type that contains details of the dynamic permission scopes being requested for a given application.  
 
 
 ## Methods
