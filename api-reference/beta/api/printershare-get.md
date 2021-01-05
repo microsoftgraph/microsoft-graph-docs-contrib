@@ -48,13 +48,13 @@ This method supports some of the OData query parameters to help customize the re
 Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a [printerShare](../resources/printershare.md) object in the response body.
-By default, the response will not contain [printerCapabilities](../resources/printerCapabilities.md). **To get printerCapabilities, use the $select query option**. e.g.:
+By default, the response will not contain [printerCapabilities](../resources/printerCapabilities.md). To get **printerCapabilities**, use the `$select` query parameter, as shown. 
 ```http
 GET /print/shares/{id}?$select=id,displayName,capabilities
 ```
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/print/shares/{id}
 
 ---
 
-##### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
