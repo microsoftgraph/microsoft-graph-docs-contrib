@@ -48,6 +48,14 @@ The paths match to the nouns. For the first form, you start with `users`, then `
 
 Another way of looking at this is what owns or contains what. The user owns mail folders, and mail folders contain messages. Add the prefix and you get `Get-MgUserMailFolderMessage`.
 
+### Listing parameters
+
+Once you've found the right command, you can examine all of the available parameters by using the `Get-Help` command. For example, the following command lists all of the available parameters for the `Get-MgUser` command.
+
+```powershell
+Get-Help Get-MgUser -Detailed
+```
+
 ## Finding available commands
 
 Sometimes just knowing the naming conventions isn't enough to guess the right command. In this case, you can use the `Get-Command` command to search the available commands in the SDK. For example, if you're looking for commands related to Microsoft Teams, you can run the following command.
