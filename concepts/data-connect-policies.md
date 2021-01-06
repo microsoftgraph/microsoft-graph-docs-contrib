@@ -22,7 +22,7 @@ If you would like to request support for additional policies , let us know on [U
 
 ## Licensing
 
-Access to the Microsoft Graph data connect toolset is available either through assigning licenses for Workplace Analytics or through Azure Billing. Pricing through Azure Billing will enter preview on February 1, 2021.
+Access to the Microsoft Graph data connect toolset is available either through assigning licenses for Workplace Analytics or through Azure Billing. Pricing through Azure Billing will become available as a preview approach on February 1, 2021.
 
 Unlimited use of Microsoft Graph data connect is available through Workplace Analytics, which is licensed on a per-user, per-month basis.  Organizations with Workplace Analytics can extend their insights from Microsoft 365 data by granting and governing access to their data at scale. To learn more, including how to purchase, visit the [Workplace Analytics product page](https://products.office.com/business/workplace-analytics).
 
