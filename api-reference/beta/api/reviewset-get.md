@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Application|Not supported.|
 
 ## HTTP request
 
