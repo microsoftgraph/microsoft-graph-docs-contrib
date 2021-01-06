@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "0a9a22d5-603a-4c0e-b15a-b08790c67c39",
+          "ApiChange": "Property",
+          "ChangedApiName": "membershipRuleProcessingStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **membershipRuleProcessingStatus** property to dynamic groups.",
+          "Target": ""
+        }
+      ],
+      "Id": "0a9a22d5-603a-4c0e-b15a-b08790c67c39",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-01T00:00:00",
+      "WorkloadArea": "Groups",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
               "Id": "a4f81577-234e-11eb-8b0e-705e20bbe57e",
               "ApiChange": "Resource",
               "ChangedApiName": "authenticationEventsPolicy",
