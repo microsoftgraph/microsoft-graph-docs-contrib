@@ -50,7 +50,7 @@ Another way of looking at this is what owns or contains what. The user owns mail
 
 ### Listing parameters
 
-Once you've found the right command, you can examine all of the available parameters by using the `Get-Help` command. For example, the following command lists all of the available parameters for the `Get-MgUser` command.
+After you've found the right command, you can examine all the available parameters by using the `Get-Help` command. For example, the following command lists all the available parameters for the `Get-MgUser` command.
 
 ```powershell
 Get-Help Get-MgUser -Detailed
