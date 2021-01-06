@@ -44,8 +44,7 @@ The following is a JSON representation of the **requestorSettings** property of 
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.requestorSettings",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.requestorSettings"
 }-->
 
 ```json
