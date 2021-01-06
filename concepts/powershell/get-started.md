@@ -124,6 +124,14 @@ This command differs from the previous commands you used. Instead of just queryi
 New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" } -Importance "urgent"
 ```
 
+### Sign out
+
+Use the `Disconnect-MgGraph` command to sign out.
+
+```powershell
+Disconnect-MgGraph
+```
+
 ## Next steps
 
 - [Learn how to navigate the SDK](navigating.md)
