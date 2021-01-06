@@ -39,11 +39,11 @@ This API supports the $filter [OData query parameter](/graph/query-parameters). 
 |Examples|
 |:---|:---|
 |$filter = state eq 'value'|
-|$filter = serviceIdenfier eq 'value'|
+|$filter = serviceIdentifier eq 'value'|
 |$filter = state eq 'value' and serviceIdentifier eq 'value'|
 |$filter = state in ('value1', 'value2')|
-|$filter = serviceIdenfier in ('value1', 'value2')|
-|$filter = state in ('value1', 'value2') and serviceIdenfier in ('value1', 'value2')|
+|$filter = serviceIdentifier in ('value1', 'value2')|
+|$filter = state in ('value1', 'value2') and serviceIdentifier in ('value1', 'value2')|
 
 ## Request headers
 |Name|Description|
