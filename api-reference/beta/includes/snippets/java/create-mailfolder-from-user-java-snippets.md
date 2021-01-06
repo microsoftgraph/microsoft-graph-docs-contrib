@@ -8,6 +8,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 MailFolder mailFolder = new MailFolder();
 mailFolder.displayName = "Clutter";
+mailFolder.isHidden = true;
 
 graphClient.me().mailFolders()
 	.buildRequest()
