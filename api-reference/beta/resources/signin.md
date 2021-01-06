@@ -16,6 +16,9 @@ Namespace: microsoft.graph
 
 Provides details about user or application sign-in activity in your directory. 
 
+>[!NOTE]
+>You must have an Azure AD Premium P1 or P2 license to download sign-in logs using the Microsoft Graph API.
+
 ## Methods
 
 | Method		   | Return Type	|Description|
