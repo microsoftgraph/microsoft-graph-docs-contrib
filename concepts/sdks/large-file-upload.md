@@ -39,8 +39,8 @@ using (var fileStream = System.IO.File.OpenRead(filePath))
         new LargeFileUploadTask<DriveItem>(uploadSession, fileStream, maxSliceSize);
 
     // Create a callback that is invoked after each slice is uploaded
-    IProgress<long> progress = new Progress<long>(progress => {
-        Console.WriteLine($"Uploaded {progress} bytes of {fileStream.Length} bytes");
+    IProgress<long> progress = new Progress<long>(prog => {
+        Console.WriteLine($"Uploaded {prog} bytes of {fileStream.Length} bytes");
     });
 
     try
