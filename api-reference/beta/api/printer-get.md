@@ -3,7 +3,7 @@ title: Get printer
 description: Retrieve the properties and relationships of a printer object.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
