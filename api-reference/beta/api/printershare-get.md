@@ -3,7 +3,7 @@ title: Get printerShare
 description: Retrieve the properties and relationships of a printer share.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
