@@ -15,12 +15,12 @@ Namespace: microsoft.graph
 
 Update the [configuration](../resources/printjobconfiguration.md) property of a [print job](../resources/printjob.md).
 
-Updating a print job configuration requires the print job to be in a held state by registering a task trigger for the printer. For details about how to register a task trigger, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+Updating a print job configuration will only succeed if there is a [printTask](../resources/printTask.md) in `processing` state on the associated printer started by a trigger that requesting app created. For details about how to register a task trigger, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, either the _Printer.Read.All_ or _Printer.ReadWrite.All_ application permission, and one of the permissions listed in the following table.
+To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, either the Printer.Read.All or Printer.ReadWrite.All application permission, and one of the permissions listed in the following table.
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
