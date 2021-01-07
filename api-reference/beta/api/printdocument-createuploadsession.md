@@ -60,7 +60,10 @@ In the request body, provide a JSON object with the following parameters.
 |:-------------|:------------|:------------|
 |properties|[printDocumentUploadProperties](../resources/printDocumentUploadProperties.md)|Represents properties of the binary file to be uploaded.|
 
-The value of the **contentType** property in the request body should be supported by the printer/printer share (defined in [printerCapabilities](../resources/printercapabilities.md)). The only exception to this is the scenario where Universal Print converts **OXPS to PDF**, which will happen if **all** the following conditions are met: 
+The value of the **contentType** property in the request body should be supported by the printer/printerShare. You can get the supported content types by getting [printerCapabilities](../resources/printercapabilities.md) of the printer/printerShare. 
+
+For **OXPS to PDF** conversion, you need to pass `application/oxps` as contentType for printer/printerShare that supports `application/pdf`. 
+Universal Print converts **OXPS to PDF**, when **all** the following conditions are met: 
 1.	The printer/printer share supports `application/pdf` in **printerCapabilities**. 
 2.	The printer/printer share does NOT support `application/oxps` in **printerCapabilities**. 
 3.	The value for the **contentType** property in the request body is `application/oxps`.
