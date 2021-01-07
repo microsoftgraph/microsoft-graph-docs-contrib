@@ -3,7 +3,7 @@ title: "Download printDocument binary file"
 description: Download the binary file associated with the document.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
