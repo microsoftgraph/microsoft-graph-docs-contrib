@@ -3,7 +3,7 @@ title: Update printJob configuration
 description: Update the configuration of a print job
 author: tomsato-ms
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
