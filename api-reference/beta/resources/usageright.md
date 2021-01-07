@@ -55,14 +55,14 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.UsageRight",
+  "@odata.type": "microsoft.graph.usageRight",
   "baseType": "",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.UsageRight",
+  "@odata.type": "#microsoft.graph.usageRight",
   "id": "String (identifier)",
   "catalogId": "String",
   "serviceIdentifier": "String",
