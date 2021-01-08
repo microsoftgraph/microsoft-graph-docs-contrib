@@ -301,8 +301,8 @@ The following table lists the latency to expect between an event happening in th
 |[list][] | Less than 1 minute | 5 minutes |
 |[message][] | Unknown | Unknown |
 |[presence][] (preview) | Less than 10 seconds | 1 minute |
-|[printer][] | Less than 3 minute | 15 minutes |
-|[printTaskDefinition][] | Less than 3 minute | 15 minutes |
+|[printer][] | Less than 1 minute | 5 minutes |
+|[printTaskDefinition][] | Less than 1 minute | 5 minutes |
 |[todoTask][] | Less than 2 minutes | 15 minutes |
 |[user][] | Less than 2 minutes | 15 minutes |
 
