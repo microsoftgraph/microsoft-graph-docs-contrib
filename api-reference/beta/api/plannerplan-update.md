@@ -40,11 +40,6 @@ PATCH /planner/plans/{plan-id}
 ## Request body
 In the request body, supply the values for relevant fields to update. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|owner|String|[Group](../resources/group.md) `id` by which the plan is owned. A valid group must exist before this field can be set. Once set, this can only be updated by the owner.|
-|title|String|Title of the plan.|
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [plannerPlan](../resources/plannerplan.md) object in the response body.
