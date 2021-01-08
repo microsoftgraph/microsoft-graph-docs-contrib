@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Content presence = graphClient.users("66825e03-7ef5-42da-9069-724602c31f6b").presence()
+Presence presence = graphClient.users("66825e03-7ef5-42da-9069-724602c31f6b").presence()
 	.buildRequest()
 	.get();
 
