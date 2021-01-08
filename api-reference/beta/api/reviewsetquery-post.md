@@ -54,6 +54,8 @@ If successful, this method returns a `201 Created` response code and a new [revi
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_reviewsetquery"
@@ -64,10 +66,28 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2eef613a-ca2d-
 Content-type: application/json
 
 {
-     "displayName" : "My Query 1",
-     "query": "(subject:\"Quarterly Financials\")"
+   "displayName":"My Query 1",
+   "query":"(subject:\"Quarterly Financials\")"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-reviewsetquery-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-reviewsetquery-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/post-reviewsetquery-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-reviewsetquery-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -116,3 +136,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -10,14 +10,11 @@ const options = {
 
 const client = Client.init(options);
 
-const directoryObject = Content-Type: application/json
-Content-length: 43
-
-{
+const extensionProperty = {
   isSyncedFromOnPremises: "Boolean"
 };
 
 let res = await client.api('/directoryObjects/getAvailableExtensionProperties')
-	.post(directoryObject);
+	.post(extensionProperty);
 
 ```

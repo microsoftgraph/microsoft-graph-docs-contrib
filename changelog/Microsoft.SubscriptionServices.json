@@ -1,17 +1,133 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
         {
-          "Id": "c2730f30-1238-451f-8d41-8f061993fbf5",
+          "Id": "4db99971-9137-4010-aa6b-7a53dbfb0c23",
+          "ApiChange": "Resource",
+          "ChangedApiName": "todoTask, change notifications",
+          "ChangeType": "Addition",
+          "Description": "Added [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) to the resources supported for [change notifications](https://docs.microsoft.com/en-us/graph/webhooks).",
+          "Target": "todoTask, change notifications"
+        }
+      ],
+      "Id": "4db99971-9137-4010-aa6b-7a53dbfb0c23",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-02T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4db99971-9137-4010-aa6b-7a53dbfb0c23",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printTaskDefinition, change notifications",
+          "ChangeType": "Addition",
+          "Description": "Added [printTaskDefinition](https://docs.microsoft.com/en-us/graph/api/resources/printtaskdefinition?view=graph-rest-beta) to the resources supported for [change notifications](https://docs.microsoft.com/en-us/graph/webhooks).",
+          "Target": "printTaskDefinition, change notifications"
+        }
+      ],
+      "Id": "4db99971-9137-4010-aa6b-7a53dbfb0c23",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-11-04T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4db99971-9137-4010-aa6b-7a53dbfb0c23",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecycle notifications,chatMessage,contact,event,message",
+          "ChangeType": "Addition",
+          "Description": "Added [lifecycle notifications](https://docs.microsoft.com/en-us/graph/webhooks-lifecycle) for personal [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0), [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-1.0), [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0), and [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0).",
+          "Target": "lifecycle notifications,chatMessage,contact,event,message"
+        }
+      ],
+      "Id": "4db99971-9137-4010-aa6b-7a53dbfb0c23",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-10-15T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9cd9ef05-7850-4763-93cd-56a94ccf3d75",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatMessage,change notifications",
+          "ChangeType": "Addition",
+          "Description": "Added [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/presence) to the resources supported for [change notifications](https://docs.microsoft.com/en-us/graph/webhooks).",
+          "Target": "chatMessage,change notifications"
+        }
+      ],
+      "Id": "9cd9ef05-7850-4763-93cd-56a94ccf3d75",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-09-01T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "913cf70c-c249-4389-bb59-488cf12c4767",
+          "ApiChange": "Property",
+          "ChangedApiName": "includeProperties,includeResourceData",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **includeProperties** property from the [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) entity. This property is replaced by the **includeResourceData** property.",
+          "Target": "subscription"
+        },
+        {
+          "Id": "913cf70c-c249-4389-bb59-488cf12c4767",
+          "ApiChange": "Resource",
+          "ChangedApiName": "change notifications delivered via Event Hub",
+          "ChangeType": "Addition",
+          "Description": "Added the ability to get [change notifications delivered via Event Hub](change-notifications-delivery.md).",
+          "Target": "change notifications delivered via Event Hub"
+        }
+      ],
+      "Id": "913cf70c-c249-4389-bb59-488cf12c4767",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-08-01T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "913cf70c-c249-4389-bb59-488cf12c4767",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delta queries",
+          "ChangeType": "Addition",
+          "Description": "Change tracking through [delta queries](https://docs.microsoft.com/en-us/graph/api/event-delta) is available for Microsoft Graph for US Government.",
+          "Target": "delta queries"
+        }
+      ],
+      "Id": "913cf70c-c249-4389-bb59-488cf12c4767",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-08-01T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2eed30d7-6776-4ac5-823c-5472b7c987b0",
           "ApiChange": "Resource",
           "ChangedApiName": "presence,change notifications",
           "ChangeType": "Addition",
-          "Description": "Adds [presence](https://docs.microsoft.com/en-us/graph/api/resources/presence) to the resources supported for [change notifications](https://docs.microsoft.com/en-us/graph/webhooks).",
+          "Description": "Added [presence](https://docs.microsoft.com/en-us/graph/api/resources/presence) to the resources supported for [change notifications](https://docs.microsoft.com/en-us/graph/webhooks).",
           "Target": "presence,change notifications"
         }
       ],
-      "Id": "c2730f30-1238-451f-8d41-8f061993fbf5",
+      "Id": "2eed30d7-6776-4ac5-823c-5472b7c987b0",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
@@ -21,7 +137,7 @@
     {
       "ChangeList": [
         {
-          "Id": "a0c530b4-69af-4385-aa4b-2a57782bf023",
+          "Id": "9d6c77dc-99f3-4369-bfa6-97785f548e24",
           "ApiChange": "Resource",
           "ChangedApiName": "changeNotification,changeNotificationCollection,resourceData,change notification",
           "ChangeType": "Addition",
@@ -29,7 +145,7 @@
           "Target": "changeNotification,changeNotificationCollection,resourceData,change notification"
         }
       ],
-      "Id": "a0c530b4-69af-4385-aa4b-2a57782bf023",
+      "Id": "9d6c77dc-99f3-4369-bfa6-97785f548e24",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-06-01T00:00:00",
@@ -39,7 +155,7 @@
     {
       "ChangeList": [
         {
-          "Id": "6b780968-9065-49f7-9a18-54705313d446",
+          "Id": "f35f880d-fd0e-4352-aedb-294cde7dea05",
           "ApiChange": "Resource",
           "ChangedApiName": "changeNotification,changeNotificationCollection,changeNotificationEncryptedContent,change notification",
           "ChangeType": "Addition",
@@ -47,7 +163,7 @@
           "Target": "changeNotification,changeNotificationCollection,changeNotificationEncryptedContent,change notification"
         }
       ],
-      "Id": "6b780968-9065-49f7-9a18-54705313d446",
+      "Id": "f35f880d-fd0e-4352-aedb-294cde7dea05",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-05-01T00:00:00",
@@ -57,7 +173,7 @@
     {
       "ChangeList": [
         {
-          "Id": "6b780968-9065-49f7-9a18-54705313d446",
+          "Id": "f35f880d-fd0e-4352-aedb-294cde7dea05",
           "ApiChange": "Resource",
           "ChangedApiName": "subscription,Microsoft Cloud for US Government",
           "ChangeType": "Addition",
@@ -65,7 +181,7 @@
           "Target": "subscription,Microsoft Cloud for US Government"
         }
       ],
-      "Id": "6b780968-9065-49f7-9a18-54705313d446",
+      "Id": "f35f880d-fd0e-4352-aedb-294cde7dea05",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-05-01T00:00:00",
@@ -75,7 +191,7 @@
     {
       "ChangeList": [
         {
-          "Id": "e4d88b92-b0f7-4cd7-b418-d8c32f26968e",
+          "Id": "8d387285-5143-475a-af21-dac8aad73f39",
           "ApiChange": "Property",
           "ChangedApiName": "chatMessage,Set up change notifications for chat messages, including message properties (preview)",
           "ChangeType": "Addition",
@@ -83,7 +199,7 @@
           "Target": "chatMessage,Set up change notifications for chat messages, including message properties (preview)"
         }
       ],
-      "Id": "e4d88b92-b0f7-4cd7-b418-d8c32f26968e",
+      "Id": "8d387285-5143-475a-af21-dac8aad73f39",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-12-01T00:00:00",
@@ -93,7 +209,7 @@
     {
       "ChangeList": [
         {
-          "Id": "ba049ab5-fb64-4b81-a70d-5efd2fd7e274",
+          "Id": "b30b0401-4ecd-4ce4-bed1-1829bf50b832",
           "ApiChange": "Resource",
           "ChangedApiName": "Create and send notifications",
           "ChangeType": "Addition",
@@ -101,7 +217,7 @@
           "Target": "Create and send notifications"
         },
         {
-          "Id": "ba049ab5-fb64-4b81-a70d-5efd2fd7e274",
+          "Id": "b30b0401-4ecd-4ce4-bed1-1829bf50b832",
           "ApiChange": "Property",
           "ChangedApiName": "targetPolicy",
           "ChangeType": "Addition",
@@ -109,7 +225,7 @@
           "Target": "notification"
         },
         {
-          "Id": "ba049ab5-fb64-4b81-a70d-5efd2fd7e274",
+          "Id": "b30b0401-4ecd-4ce4-bed1-1829bf50b832",
           "ApiChange": "Property",
           "ChangedApiName": "fallbackPolicy",
           "ChangeType": "Addition",
@@ -117,7 +233,7 @@
           "Target": "notification"
         }
       ],
-      "Id": "ba049ab5-fb64-4b81-a70d-5efd2fd7e274",
+      "Id": "b30b0401-4ecd-4ce4-bed1-1829bf50b832",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
@@ -127,25 +243,25 @@
     {
       "ChangeList": [
         {
-          "Id": "9aae42a5-1690-48d6-97cc-e2c722e83a6f",
+          "Id": "cad40a53-4aae-43ac-bfb0-c12dc684fcfa",
           "ApiChange": "Resource",
           "ChangedApiName": "subscriptionRemoved,missed",
           "ChangeType": "Addition",
-          "Description": "Added two types of lifecycle notifications, **subscriptionRemoved** and **missed**, available for Outlook resources. Subscribing apps can take appropriate actions to mitigate notification interruptions. For more details, see [Reduce missing subscriptions and notifications for Outlook resources (preview)](webhooks-outlook-authz.md).",
+          "Description": "Added two types of lifecycle notifications, **subscriptionRemoved** and **missed**, available for Outlook resources. Subscribing apps can take appropriate actions to mitigate notification interruptions. For more details, see [Reduce missing subscriptions and notifications for Outlook resources (preview)](webhooks-lifecycle.md).",
           "Target": "Reduce missing subscriptions and notifications for Outlook resources (preview)"
         }
       ],
-      "Id": "9aae42a5-1690-48d6-97cc-e2c722e83a6f",
+      "Id": "cad40a53-4aae-43ac-bfb0-c12dc684fcfa",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-04-01T00:00:00",
-      "WorkloadArea": "Change notifications (webhooks)",
+      "WorkloadArea": "Change notifications",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "ce644127-3473-40ee-a73f-d5e2298e3dc8",
+          "Id": "ca9750f6-c86f-4634-8fc2-350929131d55",
           "ApiChange": "Resource",
           "ChangedApiName": "notification",
           "ChangeType": "Addition",
@@ -153,7 +269,7 @@
           "Target": "notification"
         },
         {
-          "Id": "ce644127-3473-40ee-a73f-d5e2298e3dc8",
+          "Id": "ca9750f6-c86f-4634-8fc2-350929131d55",
           "ApiChange": "Resource",
           "ChangedApiName": "Create and publish notification",
           "ChangeType": "Addition",
@@ -161,17 +277,17 @@
           "Target": "Create and publish notification"
         }
       ],
-      "Id": "ce644127-3473-40ee-a73f-d5e2298e3dc8",
+      "Id": "ca9750f6-c86f-4634-8fc2-350929131d55",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-09-01T00:00:00",
-      "WorkloadArea": "Notifications (Project Rome)",
+      "WorkloadArea": "User notifications",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "073e5edc-fd62-4fba-a436-970ee06c3913",
+          "Id": "7ef120d5-951b-4639-aeb9-be91c7caaa2a",
           "ApiChange": "Resource",
           "ChangedApiName": "webhooks",
           "ChangeType": "Change",
@@ -179,7 +295,7 @@
           "Target": "webhooks"
         }
       ],
-      "Id": "073e5edc-fd62-4fba-a436-970ee06c3913",
+      "Id": "7ef120d5-951b-4639-aeb9-be91c7caaa2a",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -189,7 +305,7 @@
     {
       "ChangeList": [
         {
-          "Id": "497a1ed4-dcdd-4161-b625-413d3f4ff831",
+          "Id": "fac1d829-477b-4363-98be-e12b20773a35",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -197,7 +313,7 @@
           "Target": ""
         }
       ],
-      "Id": "497a1ed4-dcdd-4161-b625-413d3f4ff831",
+      "Id": "fac1d829-477b-4363-98be-e12b20773a35",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-09-01T00:00:00",
@@ -207,7 +323,7 @@
     {
       "ChangeList": [
         {
-          "Id": "2296e874-2b6d-4f83-825c-e64babe5d9eb",
+          "Id": "87dc2ada-5a12-43cd-9caf-38efeded8061",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -215,7 +331,7 @@
           "Target": ""
         }
       ],
-      "Id": "2296e874-2b6d-4f83-825c-e64babe5d9eb",
+      "Id": "87dc2ada-5a12-43cd-9caf-38efeded8061",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-06-01T00:00:00",
@@ -225,7 +341,7 @@
     {
       "ChangeList": [
         {
-          "Id": "02f03c8d-caa7-4aed-8d03-7690fb94dc6f",
+          "Id": "2f9fda70-fab6-4e5d-817b-27882fb5a38d",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -233,7 +349,7 @@
           "Target": ""
         }
       ],
-      "Id": "02f03c8d-caa7-4aed-8d03-7690fb94dc6f",
+      "Id": "2f9fda70-fab6-4e5d-817b-27882fb5a38d",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2016-03-01T00:00:00",
@@ -243,7 +359,7 @@
     {
       "ChangeList": [
         {
-          "Id": "9a5c4956-95b2-42c1-967a-d478a677f506",
+          "Id": "627aaf66-33d2-4362-9c3f-9b936df6d1ef",
           "ApiChange": "Resource",
           "ChangedApiName": "Microsoft Graph WebHooks Update - January 2016",
           "ChangeType": "Addition",
@@ -251,7 +367,7 @@
           "Target": "Microsoft Graph WebHooks Update - January 2016"
         },
         {
-          "Id": "9a5c4956-95b2-42c1-967a-d478a677f506",
+          "Id": "627aaf66-33d2-4362-9c3f-9b936df6d1ef",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -259,7 +375,7 @@
           "Target": ""
         }
       ],
-      "Id": "9a5c4956-95b2-42c1-967a-d478a677f506",
+      "Id": "627aaf66-33d2-4362-9c3f-9b936df6d1ef",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-02-01T00:00:00",

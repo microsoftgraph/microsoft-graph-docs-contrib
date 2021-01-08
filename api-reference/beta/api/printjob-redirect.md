@@ -44,6 +44,7 @@ In the request body, supply the ID of the printer that the print job should be r
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |destinationPrinterId|String|The ID of the printer the print job should be redirected to.|
+|configuration|microsoft.graph.printJobConfiguration|Updated configuration of print job.|
 
 ## Response
 If successful, this method returns a `200 OK` response code and a [printJob](../resources/printjob.md) object queued for the destination printer.
@@ -53,6 +54,8 @@ The following example shows how to call this API.
 ### Request
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob-redirect"
@@ -64,8 +67,24 @@ POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45
   "destinationPrinterId": "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/printjob-redirect-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/printjob-redirect-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/printjob-redirect-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/printjob-redirect-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 ### Response
 The following is an example of the response. 
@@ -105,3 +124,5 @@ Content-length: 437
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

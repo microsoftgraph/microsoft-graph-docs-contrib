@@ -34,8 +34,7 @@ The following is a JSON representation of the request approval settings property
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.approvalSettings",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.approvalSettings"
 }-->
 
 ```json
@@ -57,3 +56,5 @@ The following is a JSON representation of the request approval settings property
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -47,8 +47,9 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-| `displayName`  |`String` | The connected organization name.  |
-| `description`  |`String` | The connected organization description. |
+| displayName  |String | The connected organization name.  |
+| description  |String | The connected organization description. |
+| state        |connectedOrganizationState|The state of a connected organization defines whether assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects` are applicable or not. Possible values are: `configured`, `proposed`.|
 
 ## Response
 
@@ -57,6 +58,8 @@ If successful, this method returns a `204 Accepted` response code and a [connect
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_connectedorganization"
@@ -69,9 +72,28 @@ Content-length: 100
 
 {
   "displayName":"Connected organization new name",
-  "description":"Connected organization new description"
+  "description":"Connected organization new description",
+  "state":"configured"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-connectedorganization-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-connectedorganization-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-connectedorganization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-connectedorganization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response
@@ -89,7 +111,8 @@ Content-type: application/json
 {
   "id": "006111db-0810-4494-a6df-904d368bd81b",
   "displayName":"Connected organization new name",
-  "description":"Connected organization new description"
+  "description":"Connected organization new description",
+  "state":"configured"
 }
 ```
 
@@ -104,3 +127,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

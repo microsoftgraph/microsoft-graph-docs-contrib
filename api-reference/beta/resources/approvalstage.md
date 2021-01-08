@@ -37,8 +37,7 @@ The following is a JSON representation of the request approval stage.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.approvalStage",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.approvalStage"
 }-->
 
 ```json
@@ -62,3 +61,5 @@ The following is a JSON representation of the request approval stage.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
