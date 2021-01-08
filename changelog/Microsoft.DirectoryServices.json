@@ -3,40 +3,6 @@
     {
       "ChangeList": [
         {
-          "Id": "8b01dd68-ee2a-47d9-b949-9c30d2862313",
-          "ApiChange": "Resource",
-          "ChangedApiName": "regionalAndLanguageSettings",
-          "ChangeType": "Addition",
-          "Description": "Added the [translationPreferences](/graph/api/resources/translationPreferences?view=graph-rest-beta&preserve-view=true) resource.",
-          "Target": "regionalAndLanguageSettings"
-        },
-        {
-          "Id": "8b01dd68-ee2a-47d9-b949-9c30d2862313",
-          "ApiChange": "Resource",
-          "ChangedApiName": "regionalAndLanguageSettings",
-          "ChangeType": "Addition",
-          "Description": "Added the [translationLanguageOverride](/graph/api/resources/translationLanguageOverride?view=graph-rest-beta&preserve-view=true) resource.",
-          "Target": "regionalAndLanguageSettings"
-        },
-        {
-          "Id": "8b01dd68-ee2a-47d9-b949-9c30d2862313",
-          "ApiChange": "Property",
-          "ChangedApiName": "regionalAndLanguageSettings",
-          "ChangeType": "Addition",
-          "Description": "Added the [translationPreferences](/graph/api/resources/translationLanguageOverride) property to the [regionalAndLanguageSettings](/graph/resources/regionalandlanguagesettings?view=graph-rest-beta&preserve-view=true) resource.",
-          "Target": "regionalAndLanguageSettings"
-        }
-      ],
-      "Id": "8b01dd68-ee2a-47d9-b949-9c30d2862313",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2021-01-05T00:00:00",
-      "WorkloadArea": "Users",
-      "SubArea": "Preferred langauges and regional formats (preview)"
-    },
-    { 
-      "ChangeList": [
-        {
           "Id": "7a992070-a9ab-42f3-a13e-8e5fd8d46bcf",
           "ApiChange": "Resource",
           "ChangedApiName": "device",
