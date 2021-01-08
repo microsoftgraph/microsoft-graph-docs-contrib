@@ -5,18 +5,18 @@
         {
           "Id": "8b01dd68-ee2a-47d9-b949-9c30d2862313",
           "ApiChange": "Resource",
-          "ChangedApiName": "regionalAndLanguageSettings",
+          "ChangedApiName": "translationPreferences",
           "ChangeType": "Addition",
           "Description": "Added the [translationPreferences](/graph/api/resources/translationPreferences?view=graph-rest-beta&preserve-view=true) resource.",
-          "Target": "regionalAndLanguageSettings"
+          "Target": "translationPreferences"
         },
         {
           "Id": "8b01dd68-ee2a-47d9-b949-9c30d2862313",
           "ApiChange": "Resource",
-          "ChangedApiName": "regionalAndLanguageSettings",
+          "ChangedApiName": "translationLanguageOverride",
           "ChangeType": "Addition",
           "Description": "Added the [translationLanguageOverride](/graph/api/resources/translationLanguageOverride?view=graph-rest-beta&preserve-view=true) resource.",
-          "Target": "regionalAndLanguageSettings"
+          "Target": "translationLanguageOverride"
         },
         {
           "Id": "8b01dd68-ee2a-47d9-b949-9c30d2862313",
