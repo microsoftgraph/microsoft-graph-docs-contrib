@@ -53,11 +53,11 @@ If successful, this method returns a `302 Found` response code and a location of
 > * Attendee report and recordings are only available when the live event has concluded.
 > * The download link in the `302 Found` response expires in one minute, so the client should start downloading before expiry.
 
-## Examples
+## Example
 
-### Example: download attendee report
+The following example shows a request to download an attendee report.
 
-#### Request
+### Request
 
 <!-- {
   "blockType": "request",
@@ -67,7 +67,7 @@ If successful, this method returns a `302 Found` response code and a location of
 GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/6c48f2c0-382d-40d2-b1f9-fe108901242a/attendeeReport
 ```
 
-#### Response
+### Response
 
 <!-- {
   "blockType": "response"
