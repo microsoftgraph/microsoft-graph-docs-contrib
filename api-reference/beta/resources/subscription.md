@@ -24,7 +24,7 @@ A subscription allows a client app to receive change notifications about changes
 - A [message][], [event][], or [contact][] in Outlook
 - The [presence][] of a user in Microsoft Teams
 - A [user][] or [group][] in Azure Active Directory
-- A [printer][] in Print Service
+- A [printer][] in Print Service (when a print job for the printer gets to JobFetchable state - ready to be fetched for printing).
 - A [printTaskDefinition][] in Print Service
 - A [todoTask] of a user in Microsoft To Do
 
