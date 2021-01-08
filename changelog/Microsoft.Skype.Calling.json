@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "91d6c619-fb51-4183-b8ab-83613256650d",
+          "ApiChange": "Property",
+          "ChangedApiName": "onlineMeeting",
+          "ChangeType": "Addition",
+          "Description": "Added the **isBroadcast** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) entity.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "91d6c619-fb51-4183-b8ab-83613256650d",
+          "ApiChange": "Property",
+          "ChangedApiName": "onlineMeeting",
+          "ChangeType": "Addition",
+          "Description": "Added the **broadcastSettings** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) entity.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "91d6c619-fb51-4183-b8ab-83613256650d",
+          "ApiChange": "Property",
+          "ChangedApiName": "onlineMeeting",
+          "ChangeType": "Addition",
+          "Description": "Added the **attendeeReport** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) entity.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "91d6c619-fb51-4183-b8ab-83613256650d",
+          "ApiChange": "Property",
+          "ChangedApiName": "onlineMeeting",
+          "ChangeType": "Addition",
+          "Description": "Added the **recording** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) entity.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "91d6c619-fb51-4183-b8ab-83613256650d",
+          "ApiChange": "Property",
+          "ChangedApiName": "onlineMeeting",
+          "ChangeType": "Addition",
+          "Description": "Added the **alternativeRecording** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) entity.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "91d6c619-fb51-4183-b8ab-83613256650d",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-07T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "edb25912-4b47-4396-82c0-132c22fe7699",
           "ApiChange": "Resource",
           "ChangedApiName": "presence",
