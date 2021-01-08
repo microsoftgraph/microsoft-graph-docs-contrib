@@ -73,8 +73,10 @@ Note: One printer may be associated to only one printTaskTrigger and one printTa
 With the printTaskDefinition that exists for customer’s Azure AD tenant, application may [create subscription for printTask triggered (JobStarted) event using the printTaskDefinition](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http). While creating the subscription,  
 
 * `resource` field needs to be set as *print/taskDefinitions/{printTaskDefinition ID}/tasks*. 
-* [changeType](/graph/api/resources/subscription?view=graph-rest-beta#properties) field needs to be set as *created*. 
+* `changeType` field needs to be set as *created*. 
 * `expirationDateTime` field needs to be less than [maximum expiration time](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type). 
+
+[Subscription resource type properties](/graph/api/resources/subscription?view=graph-rest-beta#properties)
 
 Here is an example code block: 
 ```
@@ -119,9 +121,11 @@ There are cloud applications that need to download print jobs from Universal Pri
 Please note that print job may not be modified when it is in the JobFetchable state. 
 JobFetchable notification need to be created for each printer queue. While creating the subscription,  
 * `resource` field needs to be set as “print/printers/{printer id}/jobs” 
-* [changeType](/graph/api/resources/subscription?view=graph-rest-beta#properties) field needs to be set as “updated”. 
+* `changeType` field needs to be set as “updated”. 
 * `notificationQueryOptions` field needs to be set as "$filter = isFetchable eq true". 
 * `expirationDateTime` field needs to be less than [maximum expiration time](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type). 
+
+[Subscription resource type properties](/graph/api/resources/subscription?view=graph-rest-beta#properties)
 
 Here is an example code block:
 ```
@@ -176,12 +180,12 @@ To get details on specific print APIs, please start with [Microsoft Graph API do
 We are happy to help you move your existing solutions to cloud or bring new innovations to the market that will redefine printing for organizations. If you have any new ideas or feedback on the current APIs, please reach out to us via the [Universal Print tech community](https://aka.ms/community/UniversalPrint).
 
 ## FAQ
-1. How notification url is validated from Microsoft Graph?
+1. How is notification url validated by Microsoft Graph?
 > Microsoft Graph validates the notification endpoint provided in the notificationUrl property of the subscription request before creating the subscription.
 Refer to the [Notification endpoint validation](/graph/webhooks#notification-endpoint-validation) for more details.
 
-2. Once we send a notification, what is expected and how should partner acknowledges it?
-> Your process should process every change notification it receives. The following are the minimum tasks that your app must perform to process a change notification. Refer to the [Processing the change notification](/graph/webhooks#processing-the-change-notification) for more details.
+2. Once we send a notification, what is expected and how should partner acknowledge it?
+> Your process should process every change notification it receives. For minimum tasks that the application must perform to process a change notification, refer to [Processing the change notification](/graph/webhooks#processing-the-change-notification) for more details.
 
 2. How to get list of active subscriptions?
 > Retrieve a list of webhook subscriptions. Refer to the [Processing the change notification](/graph/api/subscription-list?view=graph-rest-beta&tabs=http) for more details.
