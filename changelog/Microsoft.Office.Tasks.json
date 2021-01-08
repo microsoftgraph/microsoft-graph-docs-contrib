@@ -54,7 +54,7 @@
           "Id": "a440f891-340e-11eb-9836-6aeb5ee7dda6",
           "ApiChange": "Property",
           "ChangedApiName": "owner",
-          "ChangeType": "Change",
+          "ChangeType": "Deprecation",
           "Description": "Deprecated the **owner** property on the [plannerPlan](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         }
