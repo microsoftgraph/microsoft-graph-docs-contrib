@@ -1423,7 +1423,7 @@ items:
         - name: Delete
           href: api/onlinemeeting-delete.md
         - name: Live event attendee report and recordings
-          href: api/onlinemeeting-live-event-attendee-report-recording.md
+          href: api/live-event-attendee-report-recording.md
       - name: Presence (preview)
         href: resources/presence.md
         items:
