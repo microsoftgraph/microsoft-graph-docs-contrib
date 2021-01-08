@@ -31,6 +31,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |:---|:---|:---|
 | Addition | beta | Added new [Delegated permissions](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>PrintJob.Create</li><li>PrinterShare.ReadBasic.All</li></ul> |
 
+### Users
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [translationPreferences](/graph/api/resources/translationPreferences?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the [translationLanguageOverride](/graph/api/resources/translationLanguageOverride?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the [translationPreferences](/graph/api/resources/translationLanguageOverride?view=graph-rest-beta&preserve-view=true) property to the [regionalAndLanguageSettings](/graph/resources/regionalandlanguagesettings?view=graph-rest-beta&preserve-view=true) resource.|
+
 ## December 2020
 
 ### Calendar
