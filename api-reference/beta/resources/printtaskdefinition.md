@@ -17,6 +17,9 @@ Represents an abstract definition for a task that can be triggered when various 
 
 For details about how to use this resource to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
+This resource supports:
+* Subscribing to change notifications.
+
 ## Methods
 
 | Method       | Return Type | Description |

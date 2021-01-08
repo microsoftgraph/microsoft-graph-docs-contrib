@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 Represents a printer device that has been registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata and registration status.
 
+This resource supports:
+* Subscribing to change notifications.
+
 ## Methods
 
 | Method       | Return Type | Description |
