@@ -177,12 +177,12 @@ We are happy to help you move your existing solutions to cloud or bring new inno
 
 ## FAQ
 1. How notification url is validated from Microsoft Graph?
-- Microsoft Graph validates the notification endpoint provided in the notificationUrl property of the subscription request before creating the subscription.
+> Microsoft Graph validates the notification endpoint provided in the notificationUrl property of the subscription request before creating the subscription.
 Refer to the [Notification endpoint validation](/graph/webhooks#notification-endpoint-validation) for more details.
 
 2. Once we send a notification, what is expected and how should partner acknowledges it?
-- Your process should process every change notification it receives. The following are the minimum tasks that your app must perform to process a change notification. Refer to the [Processing the change notification](/graph/webhooks#processing-the-change-notification) for more details.
+> Your process should process every change notification it receives. The following are the minimum tasks that your app must perform to process a change notification. Refer to the [Processing the change notification](/graph/webhooks#processing-the-change-notification) for more details.
 
 2. How to get list of active subscriptions?
-- Retrieve a list of webhook subscriptions. Refer to the [Processing the change notification](/graph/api/subscription-list?view=graph-rest-beta&tabs=http) for more details.
+> Retrieve a list of webhook subscriptions. Refer to the [Processing the change notification](/graph/api/subscription-list?view=graph-rest-beta&tabs=http) for more details.
 
