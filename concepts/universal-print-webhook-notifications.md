@@ -167,7 +167,7 @@ Microsoft Graph has a limit on the expiration time. Please refer to the [maximum
 
 ## Other operations on notification subscriptions 
 
-Application may [get](/graph/api/subscription-get?view=graph-rest-beta&tabs=http) details of the subscription or may [delete](/graph/api/subscription-delete?view=graph-rest-beta&tabs=http) a subscription when required. Refer to the [Use Microsoft Graph API to get change notifications documentation](/graph/api/resources/webhooks?view=graph-rest-beta) for more details. v
+Application may [get](/graph/api/subscription-get?view=graph-rest-beta&tabs=http) details of the subscription or may [delete](/graph/api/subscription-delete?view=graph-rest-beta&tabs=http) a subscription when required. Refer to the [Use Microsoft Graph API to get change notifications documentation](/graph/api/resources/webhooks?view=graph-rest-beta) for more details.
 
 ## Other Resources
 
@@ -176,9 +176,13 @@ To get details on specific print APIs, please start with [Microsoft Graph API do
 We are happy to help you move your existing solutions to cloud or bring new innovations to the market that will redefine printing for organizations. If you have any new ideas or feedback on the current APIs, please reach out to us via the [Universal Print tech community](https://aka.ms/community/UniversalPrint).
 
 ## FAQ
+1. How notification url is validated from Microsoft Graph?
+Microsoft Graph validates the notification endpoint provided in the notificationUrl property of the subscription request before creating the subscription.
+Refer to the [Notification endpoint validation](/graph/webhooks#notification-endpoint-validation) for more details.
 
-1. Once we send a notification, what is expected?
-2. How should partner acknowledge it?
-3. if they dont acknowledge then how frequently do we resend notification?
-4. How many times do we resend before giving up or until how long do we keep retrying?
-5. How to get list of active subscriptions?
+2. Once we send a notification, what is expected and how should partner acknowledges it?
+Your process should process every change notification it receives. The following are the minimum tasks that your app must perform to process a change notification. Refer to the [Processing the change notification](/graph/webhooks#processing-the-change-notification) for more details.
+
+2. How to get list of active subscriptions?
+Retrieve a list of webhook subscriptions. Refer to the [Processing the change notification](/graph/api/subscription-list?view=graph-rest-beta&tabs=http) for more details.
+
