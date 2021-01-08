@@ -2085,9 +2085,10 @@ Threat assessment permissions are valid only on work or school accounts.
 | _PrintJob.ReadWriteBasic_ | Read and write basic information of user's print jobs | Allows the application to read and update the metadata of print jobs that the signed-in user created. Does not allow access to print job document content. | No | No |
 | _PrintJob.ReadWriteBasic.All_ | Read and write basic information of print jobs | Allows the application to read and update the metadata of print jobs on behalf of the signed-in user. Does not allow access to print job document content. | Yes | No |
 | _PrintConnector.Read.All_ | Read connectors | Allows the application to read connectors on behalf of the signed-in user. | Yes | No |
-| _PrintConnector.ReadWrite.All_ | Read, update and unregister connectors | Allows the application to read, update and delete (unregister) connectors on behalf of the signed-in user. | Yes | No |
-| _PrintSettings.Read.All_ | Read print settings | Allows the application to read print settings on behalf of the signed-in user. | Yes | No |
-| _PrintSettings.ReadWrite.All_ | Read and update print settings | Allows the application to read and update print settings on behalf of the signed-in user. | Yes | No |
+| _PrintConnector.ReadWrite.All_ | Read and write print connectors | Allows the application to read and write print connectors on behalf of the signed-in user. | Yes | No |
+| _PrintSettings.Read.All_ | Read tenant-wide print settings | Allows the application to read print settings on behalf of the signed-in user. | Yes | No |
+| _PrintSettings.ReadWrite.All_ | Read and write tenant-wide print settings | Allows the application to read and update print settings on behalf of the signed-in user. | Yes | No |
+| _Reports.Read.All_ | Read all usage reports | Allows the application to read reports on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 
