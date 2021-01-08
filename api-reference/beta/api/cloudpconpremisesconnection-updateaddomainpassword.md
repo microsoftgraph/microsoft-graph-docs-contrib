@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
+PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
 ```
 
 ## Request headers
@@ -64,14 +64,14 @@ If successful, this action returns a `204 No Content` response code.
   "name": "cloudpconpremisesconnection_updateaddomainpassword"
 }
 -->
+
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
-
+PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
 Content-Type: application/json
-Content-length: 36
 
+Content-length: 36
 {
-  "adDomainPassword": "String"
+  "adDomainPassword": "AdDomainPassword value"
 }
 ```
 
