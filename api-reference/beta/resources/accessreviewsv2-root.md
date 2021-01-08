@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->This documentation applies to access reviews of only group memberships. For access reviews on all other supported resource types, see [Access reviews](accessreviews-root.md).
+>The access review APIs in this section apply to only group memberships. For access reviews on all other supported resource types, see [Access reviews](accessreviews-root.md).
 
 
 You can use [Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of user's access rights.
