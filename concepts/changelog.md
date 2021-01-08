@@ -13,6 +13,11 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## January 2021
 
+### Cloud communications
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition|beta|Added the **isBroadcast**, **broadcastSettings**, **attendeeReport**, **recording** and **alternativeRecording** properties to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) entity to support creating live events.|
+
 ### Identity and access | Identity and sign-in
 
 | **Change type** | **Version**   | **Description**                          |
