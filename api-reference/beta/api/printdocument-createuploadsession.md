@@ -3,7 +3,7 @@ title: "printDocument: createUploadSession"
 description: "Create an upload session to iteratively upload ranges of binary file of printDocument."
 localization_priority: Normal
 author: "nilakhan"
-ms.prod: "universal-print"
+ms.prod: "cloud-printing"
 doc_type: "apiPageType"
 ---
 
@@ -59,6 +59,14 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
 |properties|[printDocumentUploadProperties](../resources/printDocumentUploadProperties.md)|Represents properties of the binary file to be uploaded.|
+
+The value of the **contentType** property in the request body should be supported by the printer/printerShare. You can get the supported content types by getting [printerCapabilities](../resources/printercapabilities.md) of the printer/printerShare. 
+
+For **OXPS to PDF** conversion, you need to pass `application/oxps` as contentType for printer/printerShare that supports `application/pdf`. 
+Universal Print converts **OXPS to PDF**, when **all** the following conditions are met: 
+1.	The printer/printer share supports `application/pdf` in **printerCapabilities**. 
+2.	The printer/printer share does NOT support `application/oxps` in **printerCapabilities**. 
+3.	The value for the **contentType** property in the request body is `application/oxps`.
 
 ## Response
 
