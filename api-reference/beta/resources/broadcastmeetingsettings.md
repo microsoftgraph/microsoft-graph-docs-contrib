@@ -16,21 +16,20 @@ Namespace: microsoft.graph
 Settings related to a live event.
 
 > [!IMPORTANT]
-> Creating live events with the **broadcastSettings** property is in Beta, with important limitations. This Beta release of the Microsoft Graph onlineMeeting
-> API does not validate live event settings that are managed by [policy](https://docs.microsoft.com/microsoftteams/teams-live-events/set-teams-live-events-policies-using-powershell).
+> This API does not validate live event settings that are managed by [policy](/microsoftteams/teams-live-events/set-teams-live-events-policies-using-powershell).
 > For example, if an admin sets a live event policy using `Set-CsTeamsMeetingBroadcastPolicy -Identity Global -BroadcastAttendeeVisibility EveryoneInCompany`, 
-> users will be prevented from setting "live event permissions" to "public" in their Teams client, but will be able to create a live event via Graph
-> with **allowedAudience** set to `everyone`. 
+> users will be prevented from setting live event permissions to `public` in their Teams client, but will be able to create a live event via Microsoft Graph
+> by setting **allowedAudience** to `everyone`. 
 
 ## Properties
 
 | Property                   | Type                     | Description                                                                     |
 | -------------------------- | ------------------------ | ------------------------------------------------------------------------------- |
-| allowedAudience            | broadcastMeetingAudience | Who can join the live event. Possible values are listed in the following table. |
-| isRecordingEnabled         | Boolean                  | If recording is enabled for this live event. Default value is `false`.          |
-| isAttendeeReportEnabled    | Boolean                  | If attendee report is enabled for this live event. Default value is `false`.    |
-| isQuestionAndAnswerEnabled | Boolean                  | If Q&A is enabled for this live event. Default value is `false`.                |
-| isVideoOnDemandEnabled     | Boolean                  | If video on demand is enabled for this live event. Default value is `false`.    |
+| allowedAudience            | broadcastMeetingAudience | Defines who can join the live event. Possible values are listed in the following table. |
+| isRecordingEnabled         | Boolean                  | Indicates whether recording is enabled for this live event. Default value is `false`.          |
+| isAttendeeReportEnabled    | Boolean                  | Indicates whether attendee report is enabled for this live event. Default value is `false`.    |
+| isQuestionAndAnswerEnabled | Boolean                  | Indicates whether Q&A is enabled for this live event. Default value is `false`.                |
+| isVideoOnDemandEnabled     | Boolean                  | Indicates whether video on demand is enabled for this live event. Default value is `false`.    |
 
 ### broadcastMeetingAudience values
 
