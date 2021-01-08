@@ -24,6 +24,7 @@ A subscription allows a client app to receive change notifications about changes
 - A [message][], [event][], or [contact][] in Outlook
 - The [presence][] of a user in Microsoft Teams
 - A [user][] or [group][] in Azure Active Directory
+- A [printer][] in Print Service
 - A [printTaskDefinition][] in Print Service
 - A [todoTask] of a user in Microsoft To Do
 
@@ -70,6 +71,7 @@ See [Use the Microsoft Graph API to get change notifications](webhooks.md) for t
 | Outlook **message**, **event**, **contact**              | 4230 minutes (under 3 days)    |
 | **user**, **group**, other directory resources   | 4230 minutes (under 3 days)    |
 | **presence**        | 60 minutes (1 hour) |
+| Print **printer** | 4230 minutes (under 3 days)    |
 | Print **printTaskDefinition** | 4230 minutes (under 3 days)    |
 | **todoTask**              | 4230 minutes (under 3 days)    |
 
@@ -136,6 +138,7 @@ Here is a JSON representation of the resource.
 [chatMessage]: ./chatmessage.md
 [callRecord]: ./callrecords-callrecord.md
 [presence]: ./presence.md
+[printer]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
 [todoTask]: ./todotask.md
 

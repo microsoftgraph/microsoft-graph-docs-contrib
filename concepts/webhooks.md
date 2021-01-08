@@ -27,6 +27,7 @@ An app can also subscribe to change notifications that include resource data, to
 
 Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
 
+- Cloud printing [printer][]
 - Cloud printing [printTaskDefinition][]
 - Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
 - Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
@@ -300,7 +301,8 @@ The following table lists the latency to expect between an event happening in th
 |[list][] | Less than 1 minute | 5 minutes |
 |[message][] | Unknown | Unknown |
 |[presence][] (preview) | Less than 10 seconds | 1 minute |
-|[printTaskDefinition][] | Less than 1 minute | 5 minutes |
+|[printer][] | Less than 3 minute | 15 minutes |
+|[printTaskDefinition][] | Less than 3 minute | 15 minutes |
 |[todoTask][] | Less than 2 minutes | 15 minutes |
 |[user][] | Less than 2 minutes | 15 minutes |
 
@@ -328,5 +330,6 @@ The following table lists the latency to expect between an event happening in th
 [presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
+[printer]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
 [todoTask]: /graph/api/resources/todotask

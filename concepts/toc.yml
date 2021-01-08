@@ -193,6 +193,9 @@ items:
               - name: Upload data to upload session
                 href: upload-data-to-upload-session.md
                 displayName: Universal Print Job Submission
+              - name: Webhook Notifications
+                href: universal-print-webhook-notifications.md
+                displayName: Universal Print Webhook Notifications
           - name: Corporate management
             href: intune-concept-overview.md
             displayName: Intune
