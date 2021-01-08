@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update AD domain password for a successful [onPremisesConnection](../resources/cloudpconpremisesconnection.md).
+Update Active Directory domain password for an [onPremisesConnection](../resources/cloudpconpremisesconnection.md).
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
+PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
 ```
 
 ## Request headers
@@ -65,7 +65,7 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
+PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
 
 Content-Type: application/json
 Content-length: 36
