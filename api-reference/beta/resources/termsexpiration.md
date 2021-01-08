@@ -33,7 +33,6 @@ The following is a JSON representation of this resource.
 
   ],
   "@odata.type": "microsoft.graph.termsExpiration",
-  "baseType": ""
 }-->
 
 ```json
