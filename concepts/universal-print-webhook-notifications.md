@@ -76,7 +76,7 @@ With the printTaskDefinition that exists for customer’s Azure AD tenant, appli
 * `changeType` field needs to be set as *created*. 
 * `expirationDateTime` field needs to be less than [maximum expiration time](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type). 
 
-[Subscription resource type properties](/graph/api/resources/subscription?view=graph-rest-beta#properties)
+Refer to [Subscription resource type properties](/graph/api/resources/subscription?view=graph-rest-beta#properties) for more details.
 
 Here is an example code block: 
 ```
@@ -125,7 +125,7 @@ JobFetchable notification need to be created for each printer queue. While creat
 * `notificationQueryOptions` field needs to be set as "$filter = isFetchable eq true". 
 * `expirationDateTime` field needs to be less than [maximum expiration time](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type). 
 
-[Subscription resource type properties](/graph/api/resources/subscription?view=graph-rest-beta#properties)
+Refer to [Subscription resource type properties](/graph/api/resources/subscription?view=graph-rest-beta#properties) for more details.
 
 Here is an example code block:
 ```
