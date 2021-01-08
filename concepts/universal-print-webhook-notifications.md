@@ -73,7 +73,7 @@ Note: One printer may be associated to only one printTaskTrigger and one printTa
 With the printTaskDefinition that exists for customer’s Azure AD tenant, application may [create subscription for printTask triggered (JobStarted) event using the printTaskDefinition](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http). While creating the subscription,  
 
 * `resource` field needs to be set as *print/taskDefinitions/{printTaskDefinition ID}/tasks*. 
-* `[changeType]`(/graph/api/resources/subscription?view=graph-rest-beta#properties) field needs to be set as *created*. 
+* [changeType](/graph/api/resources/subscription?view=graph-rest-beta#properties) field needs to be set as *created*. 
 * `expirationDateTime` field needs to be less than [maximum expiration time](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type). 
 
 Here is an example code block: 
@@ -119,7 +119,7 @@ There are cloud applications that need to download print jobs from Universal Pri
 Please note that print job may not be modified when it is in the JobFetchable state. 
 JobFetchable notification need to be created for each printer queue. While creating the subscription,  
 * `resource` field needs to be set as “print/printers/{printer id}/jobs” 
-* `[changeType]`(/graph/api/resources/subscription?view=graph-rest-beta#properties) field needs to be set as “updated”. 
+* [changeType](/graph/api/resources/subscription?view=graph-rest-beta#properties) field needs to be set as “updated”. 
 * `notificationQueryOptions` field needs to be set as "$filter = isFetchable eq true". 
 * `expirationDateTime` field needs to be less than [maximum expiration time](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type). 
 
