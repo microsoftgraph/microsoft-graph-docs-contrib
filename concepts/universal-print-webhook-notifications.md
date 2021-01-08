@@ -1,13 +1,13 @@
 ---
 title: "Universal Print job notifications using Microsoft Graph APIs"
 description: "Universal Print is a modern print solution that organizations can use to manage their print infrastructure through cloud services from Microsoft."
-author: "jahsu/saurabhb/nilakhan"
+author: "jahsu"
 localization_priority: Priority
-ms.prod: "universal-print"
+ms.prod: "cloud-printing"
 ms.custom: scenarios:getting-started
 ---
 
-# 
+# Subscribe to change notifications on cloud printing APIs using Microsoft Graph
 
 Universal Print targets to help customers in their move to cloud. One of the important components in customers’ deployments is third-party vendor solutions that provide advanced print functionality while piggybacking on the base infrastructure provided by Universal Print. 
 

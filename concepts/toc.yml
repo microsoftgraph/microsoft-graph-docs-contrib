@@ -193,7 +193,7 @@ items:
               - name: Upload data to upload session
                 href: upload-data-to-upload-session.md
                 displayName: Universal Print Job Submission
-              - name: Webhook Notifications
+              - name: Change notifications
                 href: universal-print-webhook-notifications.md
                 displayName: Universal Print Webhook Notifications
           - name: Corporate management
