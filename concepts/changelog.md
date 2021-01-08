@@ -19,14 +19,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added property for **hostNames** to the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) entity. |
 
-### Users
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [translationPreferences](/graph/api/resources/translationPreferences?view=graph-rest-beta&preserve-view=true) resource.|
-| Addition | beta | Added the [translationLanguageOverride](/graph/api/resources/translationLanguageOverride?view=graph-rest-beta&preserve-view=true) resource.|
-| Addition | beta | Added the [translationPreferences](/graph/api/resources/translationLanguageOverride) property to the [regionalAndLanguageSettings](/graph/resources/regionalandlanguagesettings?view=graph-rest-beta&preserve-view=true) resource.|
-
 ## December 2020
 
 ### Calendar
