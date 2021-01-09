@@ -27,7 +27,7 @@ Universal Print currently supports notifications for two scenarios related to pr
 
 1. PrintTask is triggered (JobStarted): Partner can subscribe to receive notifications when their printTask(hook) is triggered. Currently, printTask can be triggered only for JobStarted event. JobStarted event is raised when a print job has been successfully created, payload has been uploaded and job processing has started.   
 
-2. JobFetchable: After the job has started there might be processing done by third-party print applications or by Universal Print itself (like converting XPS payload to PDF for a PDF printer). Once all the processing is complete and payload is ready to be downloaded by a printer, JobFetchable event is raised for the corresponding print job. 
+2. JobFetchable: After the job has started, there might be processing done by third-party print applications or by Universal Print itself (like converting XPS payload to PDF for a PDF printer). Once all the processing is complete and payload is ready to be downloaded by a printer, JobFetchable event is raised for the corresponding print job. Note: For listening to the change notifications for JobFetchable event, a printTaskDefinition resource is not required.
 
 ### Create an application to listen to notifications
 
