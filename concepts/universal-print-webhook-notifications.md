@@ -28,7 +28,8 @@ Universal Print currently supports notifications for two scenarios related to pr
 1. PrintTask is triggered (JobStarted): Partner can subscribe to receive notifications when their printTask(hook) is triggered. Currently, printTask can be triggered only for JobStarted event. JobStarted event is raised when a print job has been successfully created, payload has been uploaded and job processing has started.   
 
 2. JobFetchable: After the job has started, there might be processing done by third-party print applications or by Universal Print itself (like converting XPS payload to PDF for a PDF printer). Once all the processing is complete and payload is ready to be downloaded by a printer, JobFetchable event is raised for the corresponding print job. 
-[!NOTE]For listening to the change notifications for JobFetchable event, a printTaskDefinition resource is not required.
+>[!NOTE]
+>For listening to the change notifications for JobFetchable event, a printTaskDefinition resource is not required.
 
 ### Create an application to listen to notifications
 
@@ -69,7 +70,8 @@ Before creating a notification for printTask triggered event, ensure that applic
 
 2. Created [printTaskTrigger](/graph/api/printer-post-tasktriggers?view=graph-rest-beta&tabs=http) for each of the printer queues for which partner wishes to receive notification when a new print job starts. The printTaskTrigger needs to be bound to the printTaskDefinition. 
 
-[!NOTE]One printer may be associated to only one printTaskTrigger and one printTaskTrigger may be associated to only one printTaskDefinition. However, one printTaskDefinition may have one or more printTaskTriggers associated to it. 
+>[!NOTE]
+>One printer may be associated to only one printTaskTrigger and one printTaskTrigger may be associated to only one printTaskDefinition. However, one printTaskDefinition may have one or more printTaskTriggers associated to it. 
 
 With the printTaskDefinition that exists for customer’s Azure AD tenant, application may [create subscription for printTask triggered (JobStarted) event using the printTaskDefinition](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http). While creating the subscription,  
 
