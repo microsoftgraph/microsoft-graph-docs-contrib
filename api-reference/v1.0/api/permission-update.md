@@ -51,8 +51,8 @@ In the request body, supply the values for relevant fields that should be update
 Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
 For best performance you shouldn't include existing values that haven't changed.
 
-### Supported properties
-These properties on these permission types can be modified:
+The following properties on these permission types can be modified.
+
 | Permission Type        | Property | Type              | Description                   |
 |:-----------------------|:---------|:------------------|:------------------------------|
 | User                   | roles    | String collection | An array of permission types. |
