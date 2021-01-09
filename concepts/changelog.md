@@ -11,6 +11,26 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## January 2021
+
+### Groups
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | beta | Added the **membershipRuleProcessingStatus** property to dynamic groups.|
+
+### Identity and access | Identity and sign-in
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added property for **hostNames** to the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) entity. |
+
+### Devices and apps | Cloud printing
+
+| **Change type** | **Version**   | **Description**                          |
+|:---|:---|:---|
+| Addition | beta | Added new [Delegated permissions](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>PrintJob.Create</li><li>PrinterShare.ReadBasic.All</li></ul> |
+
 ## December 2020
 
 ### Calendar
@@ -116,17 +136,24 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added **apiConnectorConfiguration** property to the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added **apiConnectorConfiguration** property to the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) resource.|
 
+### Mail
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the **isHidden** property to the [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true) entity. |
+| Addition | beta | Added the optional `includeHiddenFolders` query parameter to the [list mailFolders](/graph/api/user-list-mailfolders?view=graph-rest-beta&preserve-view=true) operation.
+
 ### Teamwork
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | v1.0 | Added [Get the installed app in team](/graph/api/team-get-installedapps), [List apps for user](/graph/api/userteamwork-list-installedapps), [Get installed app for user](/graph/api/userteamwork-get-installedapps), [Add app for user](/graph/api/userteamwork-add-installedapps), [Remove app for user](/graph/api/userteamwork-delete-installedapps), and [Upgrade installed app for user](/graph/api/userteamwork-upgrade-installedapps) methods to the [teamsAppInstallation](/graph/api/resources/teamsappinstallation) resource. |
+| Addition | v1.0 | Added [Get the installed app in team](/graph/api/team-get-installedapps), [List apps for user](/graph/api/userteamwork-list-installedapps), [Get installed app for user](/graph/api/userteamwork-get-installedapps), [Add app for user](/graph/api/userteamwork-post-installedapps), [Remove app for user](/graph/api/userteamwork-delete-installedapps), and [Upgrade installed app for user](/graph/api/userteamwork-teamsappinstallation-upgrade) methods to the [teamsAppInstallation](/graph/api/resources/teamsappinstallation) resource. |
 | Addition | v1.0 | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat) method to the new [userScopeTeamsAppInstallation](/graph/api/resources/userScopeTeamsAppInstallation) resource. |
 | Addition | beta | Added [Get the installed app in team](/graph/api/team-get-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed app for user](/graph/api/userteamwork-get-installedapps?view=graph-rest-beta&preserve-view=true)|
 | Addition | beta | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/resources/userScopeTeamsAppInstallation?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added the [getAllMessages](/graph/api/chats-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource collection.|
 | Addition | beta | Added the [getAllMessages](/graph/api/channels-getallmessages?view=graph-rest-beta&preserve-view=true) method to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource collection.|
-| Addition | beta | Added [List apps in chat](/graph/api/chat-list-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed apps in chat](/graph/api/chat-get-installedapps?view=graph-rest-beta&preserve-view=true), [Add app to chat](/graph/api/chat-post-installedapps?view=graph-rest-beta&preserve-view=true), [Uninstall app from chat](/graph/api/chat-delete-installedapps?view=graph-rest-beta&preserve-view=true), [Upgrade installed app in chat](/graph/api/chat-upgrade-installedapps?view=graph-rest-beta&preserve-view=true) methods to [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource type. |
+| Addition | beta | Added [List apps in chat](/graph/api/chat-list-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed apps in chat](/graph/api/chat-get-installedapps?view=graph-rest-beta&preserve-view=true), [Add app to chat](/graph/api/chat-post-installedapps?view=graph-rest-beta&preserve-view=true), [Uninstall app from chat](/graph/api/chat-delete-installedapps?view=graph-rest-beta&preserve-view=true), [Upgrade installed app in chat](/graph/api/chat-teamsappinstallation-upgrade?view=graph-rest-beta&preserve-view=true) methods to [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource type. |
 | Addition | beta | Added [List tabs in chat](/graph/api/chat-list-tabs?view=graph-rest-beta&preserve-view=true), [Get tab in chat](/graph/api/chat-get-tabs?view=graph-rest-beta&preserve-view=true), [Add tab to chat](/graph/api/chat-post-tab?view=graph-rest-beta&preserve-view=true), [Remove tab from chat](/graph/api/chat-delete-tabs?view=graph-rest-beta&preserve-view=true), [Update tab in chat](/graph/api/chat-patch-tabs?view=graph-rest-beta&preserve-view=true) methods to [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource type. |
 | Addition | beta | Added the [add](/graph/api/conversationmembers-add?view=graph-rest-beta&preserve-view=true) method to the [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) resource collection.|
 | Addition | beta | Added the [actionResultPart](/graph/api/resources/actionresultpart?view=graph-rest-beta&preserve-view=true) resource.|
@@ -142,10 +169,10 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the [teamworkBot](/graph/api/resources/teamworkbot?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added the **bot** relationship to the [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added the **moderationSettings** property to [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource. |
-| Addition | beta | Added the [channelModerationSettings](/graph/api/resources/channelModerationSettings2?view=graph-rest-beta&preserve-view=true) resource type. |
+| Addition | beta | Added the [channelModerationSettings](/graph/api/resources/channelmoderationsettings?view=graph-rest-beta&preserve-view=true) resource type. |
 | Addition | beta | Added the **replyRestriction** enumeration type. |
 | Addition | beta | Added the **userNewMessageRestriction** enumeration type. |
-| Addition | beta | Added the [Remove chat member](/graph/api/chat-post-members?view=graph-rest-beta&preserve-view=true) method to [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource type.|
+
 
 
 ## November 2020
