@@ -432,8 +432,9 @@ items:
         - name: Update settings
           href: api/planneruser-update.md
       - name: Preferred languages and regional formats (preview)
-        href: resources/regionalandlanguagesettings.md
         items:
+        - name: Regional and language settings
+          href: resources/regionalandlanguagesettings.md
         - name: Get
           href: api/regionalandlanguagesettings-get.md
         - name: Update

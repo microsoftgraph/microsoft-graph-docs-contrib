@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "translationPreferences",
           "ChangeType": "Addition",
-          "Description": "Added the [translationPreferences](/graph/api/resources/translationPreferences?view=graph-rest-beta&preserve-view=true) resource.",
+          "Description": "Added the [translationPreferences](https://docs.microsoft.com/en-us/graph/api/resources/translationpreferences?view=graph-rest-beta) resource.",
           "Target": "translationPreferences"
         },
         {
@@ -15,15 +15,15 @@
           "ApiChange": "Resource",
           "ChangedApiName": "translationLanguageOverride",
           "ChangeType": "Addition",
-          "Description": "Added the [translationLanguageOverride](/graph/api/resources/translationLanguageOverride?view=graph-rest-beta&preserve-view=true) resource.",
+          "Description": "Added the [translationLanguageOverride](https://docs.microsoft.com/en-us/graph/api/resources/translationlanguageoverride?view=graph-rest-beta) resource.",
           "Target": "translationLanguageOverride"
         },
         {
           "Id": "8b01dd68-ee2a-47d9-b949-9c30d2862313",
           "ApiChange": "Property",
-          "ChangedApiName": "regionalAndLanguageSettings",
+          "ChangedApiName": "translationPreferences",
           "ChangeType": "Addition",
-          "Description": "Added the [translationPreferences](/graph/api/resources/translationLanguageOverride) property to the [regionalAndLanguageSettings](/graph/resources/regionalandlanguagesettings?view=graph-rest-beta&preserve-view=true) resource.",
+          "Description": "Added the translationPreferences property to the [regionalAndLanguageSettings](https://docs.microsoft.com/en-us/graph/api/resources/regionalandlanguagesettings?view=graph-rest-beta) resource.",
           "Target": "regionalAndLanguageSettings"
         }
       ],
@@ -32,7 +32,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-01-05T00:00:00",
       "WorkloadArea": "Users",
-      "SubArea": "Preferred langauges and regional formats (preview)"
+      "SubArea": ""
     },
     { 
 
