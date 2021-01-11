@@ -15,7 +15,7 @@ Number of users capable of Multi-Factor Authentication, Self-Service Password Re
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Reports.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -46,8 +46,21 @@ The following table shows the parameters that can be used with this function.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |includedUserTypes|includedUserTypes|User type. Possible values are: `all`, `member`, `guest`, `unknownFutureValue`.|
-|includedUserRoles|includedUserRoles|User role type. Possible values are: `all`, `privilegedAdmin` (e.g. Global admin, Security admin, Conditional Access admin, Exchange admin, SharePoint admin, Helpdesk admin, Billing admin, User admin, and Authentication admin), `admin` (any Azure AD admin role), `user`, `unknownFutureValue`.|
+|includedUserRoles|includedUserRoles|User role type. Possible values are: `all`, `privilegedAdmin`, `admin`, `user`, `unknownFutureValue`.|
 
+The value `privilegedAdmin` consists of the following privileged admin roles:
+
+* Global admin
+* Security admin
+* Conditional Access admin
+* Exchange admin
+* SharePoint admin
+* Helpdesk admin
+* Billing admin
+* User admin
+* Authentication admin
+
+The value `admin` includes all Azure AD admin roles. 
 
 ## Request headers
 |Name|Description|
