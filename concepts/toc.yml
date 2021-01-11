@@ -223,6 +223,10 @@ items:
             items:
               - name: Create an access package
                 href: tutorial-access-package-api.md
+              - name: Access reviews overview
+                href: accessreviews-overview.md
+              - name: Using the Access Reviews API
+                href: tutorial-access-reviews-api.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
