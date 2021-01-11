@@ -51,15 +51,6 @@ To subscribe to notifications for print jobs, applications must have the followi
 
 Vendor applications must [generate and use the Azure AD security token](/graph/auth-v2-service?context=graph%2Fapi%2Fbeta&view=graph-rest-beta) in the Microsoft Graph API request header. The security token contains the claims as per the scopes approved for the customer’s Azure AD tenant by its administrator.  
 
-Here is a sample header block for one of the API calls: 
-
-```
-Authorization: Bearer {Azure AD security token} 
-Content-Type: application/json 
-Cache-Control: no-cache 
-Connection: keep-alive 
-Content-Length: 68 
-```
 
 ### Create subscription: printTask triggered (JobStarted) event 
 
@@ -122,7 +113,6 @@ Content-Type: application/json
     "lifecycleNotificationUrl": null, 
     "expirationDateTime": "2020-12-30T22:42:09Z", 
     "creatorId": "{Creator ID}", 
-    "includeProperties": null, 
     "includeResourceData": null, 
     "latestSupportedTlsVersion": "v1_2", 
     "encryptionCertificate": null, 
@@ -184,7 +174,6 @@ Content-Type: application/json
     "lifecycleNotificationUrl": null, 
     "expirationDateTime": "2020-12-30T22:42:09Z", 
     "creatorId": "{Creator ID}", 
-    "includeProperties": null, 
     "includeResourceData": null, 
     "latestSupportedTlsVersion": "v1_2", 
     "encryptionCertificate": null, 
