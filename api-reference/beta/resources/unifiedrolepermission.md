@@ -19,7 +19,7 @@ Represents a collection of allowed resource actions and the conditions that must
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|allowedResourceActions|String collection| Set of tasks that can be perfomed on a resource. |
+|allowedResourceActions|String collection| Set of tasks that can be performed on a resource. |
 |condition|String| Optional constraints that must be met for the permission to be effective. |
 
 ### allowedResourceActions property
