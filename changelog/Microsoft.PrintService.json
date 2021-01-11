@@ -1,5 +1,23 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "0ec62390-2472-42a1-9298-2f36275c58bf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printJob, printerShare",
+          "ChangeType": "Addition",
+          "Description": "Added new [Delegated permissions](/graph/permissions-reference#universal-print-permissions): \u003Cul\u003E\u003Cli\u003EPrintJob.Create\u003C/li\u003E\u003Cli\u003EPrinterShare.ReadBasic.All\u003C/li\u003E\u003C/ul\u003E",
+          "Target": "printJob, printerShare"
+        }
+      ],
+      "Id": "0ec62390-2472-42a1-9298-2f36275c58bf",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-07T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": " Cloud printing"
+    },
    {
       "ChangeList": [
         {
