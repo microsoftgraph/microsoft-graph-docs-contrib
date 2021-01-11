@@ -1,42 +1,36 @@
 ---
 title: "microsoftAuthenticatorAuthenticationMethodConfiguration resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # microsoftAuthenticatorAuthenticationMethodConfiguration resource type
-
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
+Represents a Microsoft Authenticator authentication methods policy. Authentication methods policies define configuration settings and users or groups that are enabled to use the authentication method.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List microsoftAuthenticatorAuthenticationMethodConfigurations](../api/microsoftauthenticatorauthenticationmethodconfiguration-list.md)|[microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) collection|Get a list of the [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) objects and their properties.|
-|[Create microsoftAuthenticatorAuthenticationMethodConfiguration](../api/microsoftauthenticatorauthenticationmethodconfiguration-create.md)|[microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)|Create a new [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) object.|
-|[Get microsoftAuthenticatorAuthenticationMethodConfiguration](../api/microsoftauthenticatorauthenticationmethodconfiguration-get.md)|[microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)|Read the properties and relationships of a [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) object.|
-|[Update microsoftAuthenticatorAuthenticationMethodConfiguration](../api/microsoftauthenticatorauthenticationmethodconfiguration-update.md)|[microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)|Update the properties of a [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) object.|
-|[Delete microsoftAuthenticatorAuthenticationMethodConfiguration](../api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md)|None|Deletes a [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) object.|
-|[List includeTargets](../api/microsoftauthenticatorauthenticationmethodconfiguration-list-includetargets.md)|[microsoftAuthenticatorAuthenticationMethodTarget](../resources/microsoftauthenticatorauthenticationmethodtarget.md) collection|Get the microsoftAuthenticatorAuthenticationMethodTarget resources from the includeTargets navigation property.|
-|[Create microsoftAuthenticatorAuthenticationMethodTarget](../api/microsoftauthenticatorauthenticationmethodconfiguration-post-includetargets.md)|[microsoftAuthenticatorAuthenticationMethodTarget](../resources/microsoftauthenticatorauthenticationmethodtarget.md)|Create a new microsoftAuthenticatorAuthenticationMethodTarget object.|
+|[Get](../api/microsoftauthenticatorauthenticationmethodconfiguration-get.md)|[microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)|Read the properties and relationships of a microsoftAuthenticatorAuthenticationMethodConfiguration object.|
+|[Update](../api/microsoftauthenticatorauthenticationmethodconfiguration-update.md)|[microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)|Update the properties of a microsoftAuthenticatorAuthenticationMethodConfiguration object.|
+|[Delete](../api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md)|None|Reverts the microsoftAuthenticatorAuthenticationMethodConfiguration object to its default configuration.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md)|
-|state|authenticationMethodState|**TODO: Add Description** Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). Possible values are: `enabled`, `disabled`.|
+|id|String|The authentication method policy identifier.|
+|state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|includeTargets|[microsoftAuthenticatorAuthenticationMethodTarget](../resources/microsoftauthenticatorauthenticationmethodtarget.md) collection|**TODO: Add Description**|
+|includeTargets|[microsoftAuthenticatorAuthenticationMethodTarget](../resources/microsoftauthenticatorauthenticationmethodtarget.md) collection|A collection of users or groups who are enabled to use the authentication method.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
