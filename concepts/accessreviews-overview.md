@@ -36,10 +36,10 @@ The Access Reviews API structures information logically and comprises three majo
 
 ## Next steps
 
-- [Use the Access Reviews API to create access and read definitions, instances, and decisions.]()
+- [Use the Access Reviews API to create access and read definitions, instances, and decisions.](tutorial-access-reviews-api.md)
 
 ## See also
 
-- [Planning Azure Active Directory Access Reviews deployment.]()
+- [Planning Azure Active Directory Access Reviews deployment.](https://docs.microsoft.com/azure/active-directory/governance/deploy-access-reviews)
 - [Get access on behalf of a user.](https://docs.microsoft.com/graph/auth-v2-user)
-- [Get access without a user.](https://docs.microsoft.com/en-us/auth-v2-service)
+- [Get access without a user.](https://docs.microsoft.com/auth-v2-service)

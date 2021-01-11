@@ -428,8 +428,8 @@ Content-type: text/plain
 
 ## See also:
 
-+ [Access Reviews License requirements.](https://docs.microsoft.com/en-us/azure/active-directory/governance/access-reviews-overview#license-requirements)
-+ [Access Reviews License scenarios.](https://docs.microsoft.com/en-us/azure/active-directory/governance/access-reviews-overview#example-license-scenarios)
-+ [Create an access review of groups & applications](https://docs.microsoft.com/en-us/azure/active-directory/governance/create-access-review)
-+ [Access review API reference – Create an access review schedule definition.](https://docs.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&tabs=http#request-body)
++ [Access Reviews License requirements.](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview#license-requirements)
++ [Access Reviews License scenarios.](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview#example-license-scenarios)
++ [Create an access review of groups & applications](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
++ [Access review API reference – Create an access review schedule definition.](https://docs.microsoft.com/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&tabs=http#request-body&preserve-view=true)
 
