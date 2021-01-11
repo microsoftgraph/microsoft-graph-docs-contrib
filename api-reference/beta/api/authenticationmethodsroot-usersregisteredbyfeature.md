@@ -17,9 +17,17 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Reports.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+In order to access the API, [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) is required:
+
+* Reports reader
+* Security reader
+* Security admin
+* Global reader
+* Global admin
 
 ## HTTP request
 
