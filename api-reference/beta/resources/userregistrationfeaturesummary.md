@@ -17,9 +17,23 @@ Represents the current state of how many users in your organization are capable 
 |Property|Type|Description|
 |:---|:---|:---|
 |totalUserCount|Int64|Total number of users accounts, excluding those that are blocked|
-|userRegistrationFeatureCounts|[userRegistrationFeatureCount](../resources/userregistrationfeaturecount.md) collection|**TODO: Add Description**|
-|userRoles|includedUserRoles|User role type. Possible values are: `all`, `privilegedAdmin` (e.g. Global admin, Security admin, Conditional Access admin, Exchange admin, SharePoint admin, Helpdesk admin, Billing admin, User admin, and Authentication admin), `admin` (any Azure AD admin role), `user`, `unknownFutureValue`.|
-|userTypes|includedUserTypes|User type. Possible values are: `all`, `member`, `guest`, `unknownFutureValue`.|
+|userRegistrationFeatureCounts|[userRegistrationFeatureCount](../resources/userregistrationfeaturecount.md) collection|Number of users registered or capable for Multi-Factor Authentication, Self-Service Password Reset and Passwordless Authentication.|
+|userRoles|includedUserRoles|User role type. Possible values are: `all`, `privilegedAdmin`, `admin`, `user`.|
+|userTypes|includedUserTypes|User type. Possible values are: `all`, `member`, `guest`.|
+
+The value `privilegedAdmin` consists of the following privileged admin roles:
+
+* Global admin
+* Security admin
+* Conditional Access admin
+* Exchange admin
+* SharePoint admin
+* Helpdesk admin
+* Billing admin
+* User admin
+* Authentication admin
+
+The value `admin` includes all Azure AD admin roles. 
 
 ## Relationships
 None.

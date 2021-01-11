@@ -45,8 +45,8 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|includedUserTypes|includedUserTypes|User type. Possible values are: `all`, `member`, `guest`, `unknownFutureValue`.|
-|includedUserRoles|includedUserRoles|User role type. Possible values are: `all`, `privilegedAdmin`, `admin`, `user`, `unknownFutureValue`.|
+|includedUserTypes|includedUserTypes|User type. Possible values are: `all`, `member`, `guest`.|
+|includedUserRoles|includedUserRoles|User role type. Possible values are: `all`, `privilegedAdmin`, `admin`, `user`.|
 
 The value `privilegedAdmin` consists of the following privileged admin roles:
 
@@ -83,7 +83,7 @@ If successful, this function returns a `200 OK` response code and a [userRegistr
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/reports/authenticationMethods/usersRegisteredByFeature(includedUserTypes='parameterValue',includedUserRoles='parameterValue')
+GET https://graph.microsoft.com/beta/reports/authenticationMethods/usersRegisteredByFeature(includedUserTypes='all',includedUserRoles='all')
 ```
 
 
@@ -98,9 +98,19 @@ GET https://graph.microsoft.com/beta/reports/authenticationMethods/usersRegister
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-{
-  "value": {
-    "@odata.type": "microsoft.graph.userRegistrationFeatureSummary"
-  }
-}
+
+{​​
+	"@odata.type": "#microsoft.graph.userRegistrationFeatureSummary",
+	"totalUserCount" : 23123,
+	"userTypes" : "all",
+	"userRoles" : "all",
+	"userRegistrationFeatureCounts" :
+	[
+		{​​ "feature":"ssprRegistered", "userCount": 23423 }​​,
+		{​​ "feature":"ssprEnabled", "userCount": 4234 }​​,
+		{​​ "feature":"ssprCapable", "userCount": 4234 }​​,
+		{​​ "feature":"passwordlessRegistered", "userCount": 323 }​​,
+		{​​ "feature":"mfaCapable", "userCount": 33 }​​,
+	]
+}​​
 ```

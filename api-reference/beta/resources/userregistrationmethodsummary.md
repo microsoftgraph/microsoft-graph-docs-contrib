@@ -18,8 +18,22 @@ Summary of number of users registered for each authentication method.
 |:---|:---|:---|
 |totalUserCount|Int64|Total number of users in the tenant.|
 |userRegistrationMethodCounts|[userRegistrationMethodCount](../resources/userregistrationmethodcount.md) collection|Number of users registered for each authentication method.|
-|userRoles|includedUserRoles|User role type. Possible values are: `all`, `privilegedAdmin` (e.g. Global admin, Security admin, Conditional Access admin, Exchange admin, SharePoint admin, Helpdesk admin, Billing admin, User admin, and Authentication admin), `admin` (any Azure AD admin role), `user`, `unknownFutureValue`.|
-|userTypes|includedUserTypes|User type. Possible values are: `all`, `member`, `guest`, `unknownFutureValue`.|
+|userRoles|includedUserRoles|User role type. Possible values are: `all`, `privilegedAdmin`, `admin`, `user`.|
+|userTypes|includedUserTypes|User type. Possible values are: `all`, `member`, `guest`.|
+
+The value `privilegedAdmin` consists of the following privileged admin roles:
+
+* Global admin
+* Security admin
+* Conditional Access admin
+* Exchange admin
+* SharePoint admin
+* Helpdesk admin
+* Billing admin
+* User admin
+* Authentication admin
+
+The value `admin` includes all Azure AD admin roles. 
 
 ## Relationships
 None.

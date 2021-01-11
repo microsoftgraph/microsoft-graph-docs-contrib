@@ -45,8 +45,8 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|includedUserTypes|includedUserTypes|User type. Possible values are: `all`, `member`, `guest`, `unknownFutureValue`.|
-|includedUserRoles|includedUserRoles|User role type. Possible values are: `all`, `privilegedAdmin`, `admin`, `user`, `unknownFutureValue`.|
+|includedUserTypes|includedUserTypes|User type. Possible values are: `all`, `member`, `guest`.|
+|includedUserRoles|includedUserRoles|User role type. Possible values are: `all`, `privilegedAdmin`, `admin`, `user`.|
 
 The value `privilegedAdmin` consists of the following privileged admin roles:
 
@@ -83,7 +83,7 @@ If successful, this function returns a `200 OK` response code and a [userRegistr
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/reports/authenticationMethods/usersRegisteredByMethod(includedUserTypes='parameterValue',includedUserRoles='parameterValue')
+GET https://graph.microsoft.com/beta/reports/authenticationMethods/usersRegisteredByMethod(includedUserTypes='all',includedUserRoles='all')
 ```
 
 
@@ -98,9 +98,16 @@ GET https://graph.microsoft.com/beta/reports/authenticationMethods/usersRegister
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-{
-  "value": {
-    "@odata.type": "microsoft.graph.userRegistrationMethodSummary"
-  }
-}
+
+{​​
+    "@odata.type": "#microsoft.graph.userRegistrationMethodSummary",
+    "userTypes" : "all",
+    "userRoles" : "all",
+    "userRegistrationMethodCounts":
+	[
+        {​​ "authenticationMethod": "password", "userCount": 12209 }​​,
+        {​​ "authenticationMethod": "windowsHellowForBusiness", "userCount": 1233 }​​,
+        {​​ "authenticationMethod": "fido", "userCount": 299 }​​
+    ]
+}​​
 ```
