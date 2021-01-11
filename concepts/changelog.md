@@ -13,8 +13,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## January 2021
 
-
-
 ### Groups
 
 | **Change type** | **Version**   | **Description**                          |
