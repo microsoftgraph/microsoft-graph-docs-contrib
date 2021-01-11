@@ -11,6 +11,15 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## January 2021
+
+### Identity and access | Identity and sign-in
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added [Windows Hello for Business](/graph/api/resources/windowshelloforbusinessauthenticationmethod?view=graph-rest-beta) and [Microsoft Authenticator](/graph/api/resources/microsoftauthenticatorauthenticationmethod?view=graph-rest-beta) authentication methods to the [authentication methods](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta) API.|
+| Change | beta | Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta). |
+
 ## December 2020
 
 ### Change notifications
