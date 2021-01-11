@@ -1,6 +1,6 @@
 ---
 title: "Access reviews overview"
-description: "Access reviews API provide programmatic access to access reviews"
+description: "Introduction to the Access Reviews API"
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # Access Reviews API overview
 
-The [Access Reviews](https://docs.microsoft.com/en-us/azure/active-directory/governance/access-reviews-overview) Graph API allows management of Access Reviews programmatically. The API allows for creating, reading, updating, and deleting Access Reviews and their settings, Access Reviews schedules, as well as following up on past Access Reviews and the decisions taken by reviewers, including understanding which steps Azure AD took automatically.
+The [Access Reviews](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) Graph API allows management of Access Reviews programmatically. The API allows for creating, reading, updating, and deleting Access Reviews and their settings, Access Reviews schedules, as well as following up on past Access Reviews and the decisions taken by reviewers, including understanding which steps Azure AD took automatically.
 
 The Access Reviews APIs support reviews for groups, such as Office 365 Groups or security groups, only.
 
@@ -24,8 +24,8 @@ The Access Reviews APIs support both delegated and application contexts.
   + A resource owner using an app or a script to create an Access Review for a resource they own.
   + An administrator automatically collecting all decisions for one or more access reviews.
   
-    In this scenario, the app leverages the user’s permissions to interact with the API. To authorize your app in this context, see [get access on behalf of a user](https://docs.microsoft.com/en-us/graph/auth-v2-user).
-+ In an application context: A “headless” application such as a script, a scheduled task, or bot, with no user logged in, calls the Access Reviews API to retrieve data. A typical scenario would be an app or script running scheduled tasks, such as regularly collecting decisions for all Access Reviews. To authorize your app in this context, see [get access without a user](https://docs.microsoft.com/en-us/graph/auth-v2-service).
+    In this scenario, the app leverages the user’s permissions to interact with the API. To authorize your app in this context, see [get access on behalf of a user](https://docs.microsoft.com/graph/auth-v2-user).
++ In an application context: A “headless” application such as a script, a scheduled task, or bot, with no user logged in, calls the Access Reviews API to retrieve data. A typical scenario would be an app or script running scheduled tasks, such as regularly collecting decisions for all Access Reviews. To authorize your app in this context, see [get access without a user](https://docs.microsoft.com/graph/auth-v2-service).
 
 ## Building blocks of the Access Reviews API
 
@@ -41,5 +41,5 @@ The Access Reviews API structures information logically and comprises three majo
 ## See also
 
 - [Planning Azure Active Directory Access Reviews deployment.]()
-- [Get access on behalf of a user.](https://docs.microsoft.com/en-us/graph/auth-v2-user)
-- [Get access without a user.](https://docs.microsoft.com/en-us/graph/auth-v2-service)
+- [Get access on behalf of a user.](https://docs.microsoft.com/graph/auth-v2-user)
+- [Get access without a user.](https://docs.microsoft.com/en-us/auth-v2-service)

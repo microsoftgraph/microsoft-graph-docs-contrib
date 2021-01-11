@@ -1,6 +1,6 @@
 ---
-title: "Access reviews overview"
-description: "Access reviews API provide programmatic access to access reviews"
+title: "Using the Access Reviews API in Graoh Explorer"
+description: "Access reviews definitons, instances, and decisions"
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
