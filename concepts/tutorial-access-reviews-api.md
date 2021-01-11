@@ -27,7 +27,7 @@ Using Graph Explorer to try and test your Access Reviews API calls before you au
 
 ## Step 1: Create a security group
 
-Create a security group named **Test security group** that is the target of the access reviews in this tutorial. You will assign a two group owners to this group.
+Create a security group named **Test security group** that is the target of the access reviews in this tutorial. You will assign two group owners to this group.
 
 ### Request
 
@@ -159,7 +159,7 @@ Content-type: application/json
 
 ### Response
 
-```
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -175,7 +175,7 @@ Content-type: application/json
     "createdBy": {
         "id": "70c9c3f5-a550-42be-ba11-d11c3dc36324",
         "displayName": "MOD Administrator",
-        "userPrincipalName": "admin@M365x705034.onmicrosoft.com"
+        "userPrincipalName": "admin@contoso.onmicrosoft.com"
     },
     "scope": {
         "query": "/groups/9fbd2c38-bccb-4d07-84e3-bdeb0f42473b/transitiveMembers/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
@@ -227,7 +227,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 ### Response
 
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -246,7 +246,7 @@ Content-type: application/json
             "createdBy": {
                 "id": "70c9c3f5-a550-42be-ba11-d11c3dc36324",
                 "displayName": "MOD Administrator",
-                "userPrincipalName": "admin@M365x705034.onmicrosoft.com"
+                "userPrincipalName": "admin@contoso.onmicrosoft.com"
             },
             "scope": {
                 "query": "/groups/9fbd2c38-bccb-4d07-84e3-bdeb0f42473b/transitiveMembers/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
@@ -302,7 +302,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 In this response, the **status** of the access review is marked as `InProgress`.
 
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -337,7 +337,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 The following response shows two decisions were taken for the instance of the review.
 
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -352,13 +352,13 @@ In the previous example response, two decisions were taken for the access review
 
 ### Request
 
-```
+```http
 
 ```
 
 ### Response
 
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -372,13 +372,13 @@ You can list pending access review instances for which you are the reviewer.
 
 ### Request
 
-```
+```http
 GET /me/pendingAccessReviewInstances
 ```
 
 ### Response
 
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -403,7 +403,7 @@ Since the access review schedule definition is the blueprint for the access revi
 
 #### Request
 
-```
+```http
 ```
 
 ### Response
@@ -416,12 +416,12 @@ Content-type: text/plain
 ### Delete the acess review definition
 
 #### Request
-```
+```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/46ed9917-be7b-4ce4-b8b0-a6a488cc48ab
 ```
 
 #### Response
-```
+```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
