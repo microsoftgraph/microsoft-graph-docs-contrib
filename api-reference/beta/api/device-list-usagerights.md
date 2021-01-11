@@ -3,7 +3,7 @@ title: "List device usageRights"
 description: "Retrieve a list of usageRights objects for a device"
 author: "AkshayMSFT"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -17,11 +17,11 @@ Retrieve a list of [usageRight](../resources/usageright.md) objects for a given 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Directory.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All, Device.Read.All|
+|Delegated (work or school account)|Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Directory.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All, Device.Read.All|
+|Application|Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
 
 ## HTTP request
 

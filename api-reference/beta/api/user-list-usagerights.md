@@ -3,7 +3,7 @@ title: "List user usageRights"
 description: "Retrieve a list of usageRights objects for a user"
 author: "AkshayMSFT"
 localization_priority: Normal
-ms.prod: "users"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -17,11 +17,11 @@ Retrieve a list of [usageRight](../resources/usageright.md) objects for a given 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Directory.ReadWrite.All, Directory.Read.All, User.Read.All, User.ReadWrite.All, User.ReadWrite, User.Read|
+|Delegated (work or school account)|User.Read, User.ReadWrite, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Directory.ReadWrite.All, Directory.Read.All, User.ReadWrite.All, User.Read.All|
+|Application|User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
 
 ## HTTP request
 

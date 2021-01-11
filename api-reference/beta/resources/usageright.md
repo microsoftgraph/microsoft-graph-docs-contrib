@@ -3,7 +3,7 @@ title: "UsageRight resource type"
 description: "Contains information about a usageRight a user/device has assigned"
 author: "AkshayMSFT"
 localization_priority: Normal
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The usage right resource type contains metadata about a benefit that a user or device was granted.
+A Usage Right represents a license that a user or device has for either third party software built on power apps or for device based subscriptions (device only).
 
 ## Methods
 
