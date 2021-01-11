@@ -13,6 +13,12 @@ Namespace: microsoft.graph
 
 Summary of number of users registered for each authentication method.
 
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [usersRegisteredByMethod](../api/authenticationmethodsroot-usersregisteredbymethod.md) | Get the number of users registered for each authentication method. |
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

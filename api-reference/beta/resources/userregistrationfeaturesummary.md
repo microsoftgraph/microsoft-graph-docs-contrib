@@ -13,6 +13,12 @@ Namespace: microsoft.graph
 
 Represents the current state of how many users in your organization are capable of multi-factor authentication, self-service password reset and passwordless authentication.
 
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [usersRegisteredByFeature](../api/authenticationmethodsroot-usersregisteredbyfeature.md) | Get the number of users capable of Multi-Factor Authentication, Self-Service Password Reset, and Passwordless authentication. |
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

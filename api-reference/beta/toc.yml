@@ -11980,12 +11980,12 @@ items:
           - name: User registration feature summary
             href: resources/userregistrationfeaturesummary.md
             items:
-            - name: Users registered by feature
+            - name: Get users registered by feature
               href: api/authenticationmethodsroot-usersregisteredbyfeature.md
           - name: User registration method summary
             href: resources/userregistrationmethodsummary.md
             items:
-            - name: User registration method count
+            - name: Get users registered by authentication method
               href: api/authenticationmethodsroot-usersregisteredbymethod.md             
       - name: Microsoft 365 usage reports
         items:
