@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "windowsHelloForBusinessAuthenticationMethod, microsoftAuthenticatorAuthenticationMethod",
           "ChangeType": "Addition",
-          "Description": "Added the [windowsHelloForBusinessAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/windowshelloforbusinessauthenticationmethod?view=graph-rest-beta) and [microsoftAuthenticatorAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethod?view=graph-rest-beta) resources and associated methods.",
+          "Description": "Added the [windowsHelloForBusinessAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/windowshelloforbusinessauthenticationmethod?view=graph-rest-beta) and [microsoftAuthenticatorAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethod?view=graph-rest-beta) resources and associated API methods.",
           "Target": "authenticationMethod,passwordAuthenticationMethod,phoneAuthenticationMethod"
         },
         {
