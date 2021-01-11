@@ -151,7 +151,7 @@ Here is an example of the request.
 }--> 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
-Body:
+Content-Type: application/json
 {
     "changeType":"updated",
     "resource":"print/printers/{printer id}/jobs",
