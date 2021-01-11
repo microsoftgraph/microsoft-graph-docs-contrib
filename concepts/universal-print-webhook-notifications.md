@@ -25,7 +25,8 @@ Before leveraging the notification functionality via Microsoft Graph, print vend
 
 Universal Print currently supports notifications for two scenarios related to print jobs: 
 
-1. PrintTask is triggered (JobStarted): Partner can subscribe to receive notifications when their printTask(hook) is triggered. Currently, printTask can be triggered only for JobStarted event. JobStarted event is raised when a print job has been successfully created, payload has been uploaded and job processing has started.   
+1. PrintTask is triggered (JobStarted): Partner can subscribe to receive notifications when their printTask(hook) is triggered.
+For details about how to trigger task, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing). Currently, printTask can be triggered only for JobStarted event. JobStarted event is raised when a print job has been successfully created, payload has been uploaded and job processing has started.  
 
 2. JobFetchable: After the job has started, there might be processing done by third-party print applications or by Universal Print itself (like converting XPS payload to PDF for a PDF printer). Once all the processing is complete and payload is ready to be downloaded by a printer, JobFetchable event is raised for the corresponding print job. 
 >[!NOTE]
@@ -66,7 +67,7 @@ Some applications monitor print queues for incoming jobs and want to be notified
 
 Before creating a notification for printTask triggered event, ensure that application has: 
 
-1. Created a [printTaskDefinition](/graph/api/print-post-taskdefinitions?view=graph-rest-beta&tabs=http)  for the customer’s Azure AD tenant. Single task definition may be associated with one or more printers withing the same Azure AD tenant. 
+1. Created a [printTaskDefinition](/graph/api/print-post-taskdefinitions?view=graph-rest-beta&tabs=http)  for the customer’s Azure AD tenant. Single task definition may be associated with one or more printers within the same Azure AD tenant. 
 
 2. Created [printTaskTrigger](/graph/api/printer-post-tasktriggers?view=graph-rest-beta&tabs=http) for each of the printer queues for which partner wishes to receive notification when a new print job starts. The printTaskTrigger needs to be bound to the printTaskDefinition. 
 
@@ -81,11 +82,15 @@ With the printTaskDefinition that exists for customer’s Azure AD tenant, appli
 
 Refer to [Subscription resource type properties](/graph/api/resources/subscription?view=graph-rest-beta#properties) for more details.
 
-Here is an example code block: 
-```
-Request: 
+Here is an example of the request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_subscription"
+}--> 
+```http
 POST https://graph.microsoft.com/beta/subscriptions 
-Body:
+Content-Type: application/json
 { 
     "changeType":"created", 
     "resource":"print/taskDefinitions/{printTaskDefinition ID}/tasks", 
@@ -93,10 +98,18 @@ Body:
     "notificationUrl":"{URL for receiving the event – e.g. https://webhookappexample.azurewebsites.net/api/notifications}", 
     "expirationDateTime":"2020-01-30T22:42:09Z" 
 } 
+```
 
-Response: 
-201 Created.  
-Body: 
+### Response
+
+Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
 { 
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity", 
     "id": "{Subscription ID}", 
@@ -130,10 +143,14 @@ JobFetchable notification need to be created for each printer queue. While creat
 
 Refer to [Subscription resource type properties](/graph/api/resources/subscription?view=graph-rest-beta#properties) for more details.
 
-Here is an example code block:
-```
-Request:
-POST https://graph.microsoft.com/beta//subscriptions
+Here is an example of the request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_subscription"
+}--> 
+```http
+POST https://graph.microsoft.com/beta/subscriptions
 Body:
 {
     "changeType":"updated",
@@ -143,10 +160,18 @@ Body:
     "expirationDateTime":"2020-12-30T22:42:09Z",
     "clientState":"mysecret"
 } 
+```
 
-Response: 
-201 Created.
-Body:
+### Response
+
+Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
 { 
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity", 
     "id": "{Subscription ID}", 
