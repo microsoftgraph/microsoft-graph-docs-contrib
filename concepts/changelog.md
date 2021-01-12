@@ -30,6 +30,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added property for **hostNames** to the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) entity. |
+| Addition | beta | Added [Windows Hello for Business](/graph/api/resources/windowshelloforbusinessauthenticationmethod?view=graph-rest-beta) and [Microsoft Authenticator](/graph/api/resources/microsoftauthenticatorauthenticationmethod?view=graph-rest-beta) authentication methods to the [authentication methods](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta) API.|
+| Change | beta | Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta). |
 
 ### Devices and apps | Cloud printing
 
