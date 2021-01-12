@@ -85,14 +85,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64952b80-51fd-4378-9ba5-589a840afb80')/usageRights",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/users/64952b80-51fd-4378-9ba5-589a840afb80/usageRights?$skiptoken=W4diD29cGKX1bX",
   "value": [
     {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64952b80-51fd-4378-9ba5-589a840afb80')/usageRights",
       "id": "c2e034cb-3cbc-41be-a496-bfcd031e4cfc",
       "catalogId": "CFQ7TTC0KCRG:0001",
       "serviceIdentifier": "mscrm.f6d23ec7-255c-4bd8-8c99-dc041d5cb8b3.517f7ddd-df45-4f1c-83ec-a081a047f546",
-      "state": "Active",
-      "@odata.nextLink": "https://graph.microsoft.com/beta/users/64952b80-51fd-4378-9ba5-589a840afb80/usageRights?$skiptoken=W4diD29cGKX1bX"
+      "state": "active"
     }
   ]
 }
@@ -123,13 +123,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64952b80-51fd-4378-9ba5-589a840afb80')/usageRights",
   "value": [
     {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64952b80-51fd-4378-9ba5-589a840afb80')/usageRights",
       "id": "505261eb-b4ee-421c-8206-05529ae2c150",
       "catalogId": "CFQ7TTC0KCRG:0001",
       "serviceIdentifier": "ABCD",
-      "state": "Active",
+      "state": "active"
     }
   ]
 }

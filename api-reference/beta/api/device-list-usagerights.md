@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /devices/{deviceId}/usageRights
+GET /devices/{objectId}/usageRights
 ```
 
 ## Optional query parameters
@@ -69,7 +69,7 @@ This example shows how to get all usageRights for a device.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/devices/{deviceId}/usageRights
+GET https://graph.microsoft.com/beta/devices/{objectId}/usageRights
 ```
 
 ### Response 1
@@ -85,14 +85,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#devices('fead5c35-ebc5-47c4-a909-c43b4faf2160')/usageRights",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/devices/fead5c35-ebc5-47c4-a909-c43b4faf2160/usageRights?$skiptoken=W4diD29cGKX1bX",
   "value": [
     {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#devices('fead5c35-ebc5-47c4-a909-c43b4faf2160')/usageRights",
       "id": "99f828b9-09f2-445d-a758-b6727316dbe1",
       "catalogId": "CFQ7TTC0KCRG:0001",
       "serviceIdentifier": "mscrm.f6d23ec7-255c-4bd8-8c99-dc041d5cb8b3.517f7ddd-df45-4f1c-83ec-a081a047f546",
-      "state": "Active",
-      "@odata.nextLink": "https://graph.microsoft.com/beta/devices/fead5c35-ebc5-47c4-a909-c43b4faf2160/usageRights?$skiptoken=W4diD29cGKX1bX"
+      "state": "active"
     }
   ]
 }
@@ -107,7 +107,7 @@ This example shows how to get usageRights for a device which have a service iden
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/devices/{deviceId}/usageRights?$filter=state in ('active', 'suspended') and serviceIdentifier in ('ABCD')
+GET https://graph.microsoft.com/beta/devices/{objectId}/usageRights?$filter=state in ('active', 'suspended') and serviceIdentifier in ('ABCD')
 ```
 
 ### Response 2
@@ -123,13 +123,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#devices('fead5c35-ebc5-47c4-a909-c43b4faf2160')/usageRights",
   "value": [
     {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#devices('fead5c35-ebc5-47c4-a909-c43b4faf2160')/usageRights",
       "id": "9905e6b1-9040-4926-b028-fdb748c359d6",
       "catalogId": "CFQ7TTC0KCRG:0001",
       "serviceIdentifier": "ABCD",
-      "state": "Active",
+      "state": "active"
     }
   ]
 }
