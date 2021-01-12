@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The authentication methods usage reports help you understand how users in your organization use Azure Active Directory (Azure AD) capabilities, such as self-service password rest and multi-factor authentication (MFA).
+The authentication methods usage reports help you understand how users in your organization use Azure Active Directory (Azure AD) features such as Multi-Factor Authentication (MFA), Self-Service Password Reset (SSPR), and Passwordless authentication.
 
 These reports provide information such as:
 
-- Which authentication methods are more successful for your organization. 
-- What types of errors end users are running into.
-- What campaign you need to run to help your end users adopt the use of self-service password rest and MFA.
+- How many users are registered for each authentication method
+- How many users are registered for features such as Multi-Factor Authentication (MFA), Self-Service Password Reset (SSPR), and Passwordless authentication.
+- The failure rates of each authentication method 
 
 ## Permissions
 The following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
