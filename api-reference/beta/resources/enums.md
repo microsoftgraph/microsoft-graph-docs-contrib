@@ -11,15 +11,7 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-### authenticationMethodKeyStrength values
-
-|Member|
-|:---|
-|normal|
-|weak|
-|unknown|
-
-### educationAddedStudentAction values
+### educationAddedStudentAction values 
 
 |Member|
 |:---|
@@ -926,7 +918,7 @@ Possible values for user account types (group membership), per Windows definitio
 | power         | 1     | Member of Power Users group.    |
 | administrator | 2     | Member of Administrators group. |
 
-### chatMessagePolicyViolationDlpActionType values
+### chatMessagePolicyViolationDlpActionType values
 
 | Value |
 |:-----------------|
