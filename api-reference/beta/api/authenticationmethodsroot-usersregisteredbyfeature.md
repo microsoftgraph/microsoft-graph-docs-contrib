@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/reports/authenticationMethods/usersRegister
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.AAD.Reporting.userRegistrationFeatureSummary"
+  "@odata.type": "microsoft.graph.userRegistrationFeatureSummary"
 }
 -->
 ``` http
