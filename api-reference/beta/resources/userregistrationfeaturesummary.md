@@ -17,7 +17,7 @@ Represents the current state of how many users in your organization are capable 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [usersRegisteredByFeature](../api/authenticationmethodsroot-usersregisteredbyfeature.md) | Get the number of users capable of Multi-Factor Authentication, Self-Service Password Reset, and Passwordless authentication. |
+| [usersRegisteredByFeature](../api/authenticationmethodsroot-usersregisteredbyfeature.md) | userRegistrationFeatureSummary | Get the number of users capable of Multi-Factor Authentication, Self-Service Password Reset, and Passwordless authentication. |
 
 ## Properties
 |Property|Type|Description|

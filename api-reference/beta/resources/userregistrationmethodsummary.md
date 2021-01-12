@@ -17,7 +17,7 @@ Summary of number of users registered for each authentication method.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [usersRegisteredByMethod](../api/authenticationmethodsroot-usersregisteredbymethod.md) | Get the number of users registered for each authentication method. |
+| [usersRegisteredByMethod](../api/authenticationmethodsroot-usersregisteredbymethod.md) | userRegistrationMethodSummary | Get the number of users registered for each authentication method. |
 
 ## Properties
 |Property|Type|Description|
