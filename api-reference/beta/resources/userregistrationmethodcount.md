@@ -1,6 +1,6 @@
 ---
 title: "userRegistrationMethodCount resource type"
-description: "Number of users registered for each authentication method."
+description: "Number of users registered for an authentication method."
 author: "danielwood95"
 localization_priority: Normal
 ms.prod: "reports"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Number of users registered for each authentication method.
+Number of users registered for an authentication method.
 
 ## Properties
 |Property|Type|Description|

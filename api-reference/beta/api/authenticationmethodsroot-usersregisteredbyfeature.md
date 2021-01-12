@@ -1,6 +1,6 @@
 ---
 title: "authenticationMethodsRoot: usersRegisteredByFeature"
-description: "Number of users capable of Multi-Factor Authentication, Self-Service Password Reset, and Passwordless authentication."
+description: "Get the number of users capable of Multi-Factor Authentication, Self-Service Password Reset, and Passwordless authentication."
 author: "danielwood95"
 localization_priority: Normal
 ms.prod: "reports"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # authenticationMethodsRoot: usersRegisteredByFeature
 Namespace: microsoft.graph
 
-Number of users capable of Multi-Factor Authentication, Self-Service Password Reset, and Passwordless authentication.
+Get the number of users capable of Multi-Factor Authentication, Self-Service Password Reset, and Passwordless authentication.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

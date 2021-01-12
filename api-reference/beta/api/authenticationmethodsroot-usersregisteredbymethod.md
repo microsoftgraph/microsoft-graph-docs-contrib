@@ -1,6 +1,6 @@
 ---
 title: "authenticationMethodsRoot: usersRegisteredByMethod"
-description: "Number of users registered for each authentication method."
+description: "Get the number of users registered for each authentication method."
 author: "danielwood95"
 localization_priority: Normal
 ms.prod: "reports"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # authenticationMethodsRoot: usersRegisteredByMethod
 Namespace: microsoft.graph
 
-Number of users registered for each authentication method.
+Get the number of users registered for each authentication method.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
