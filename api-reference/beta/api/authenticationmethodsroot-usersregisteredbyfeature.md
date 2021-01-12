@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 Get the number of users capable of Multi-Factor Authentication, Self-Service Password Reset, and Passwordless authentication.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
