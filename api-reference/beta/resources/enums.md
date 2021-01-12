@@ -56,8 +56,6 @@ Namespace: microsoft.graph
 
 ### azureADLicenseType values 
 
-
-
 |Member|
 |:---|
 |none|
@@ -94,6 +92,8 @@ Namespace: microsoft.graph
 
 ### featureType values 
 
+
+
 |Member|
 |:---|
 |registration|
@@ -119,6 +119,8 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### includedUserTypes values 
+
+
 
 |Member|
 |:---|
@@ -186,6 +188,8 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### registrationAuthMethod values 
+
+
 
 |Member|
 |:---|
@@ -302,8 +306,15 @@ Namespace: microsoft.graph
 |appPassword|
 |unknownFutureValue|
 
+### authenticationMethodKeyStrength values
 
-### educationAddedStudentAction values 
+|Member|
+|:---|
+|normal|
+|weak|
+|unknown|
+
+### educationAddedStudentAction values
 
 |Member|
 |:---|
@@ -1210,7 +1221,7 @@ Possible values for user account types (group membership), per Windows definitio
 | power         | 1     | Member of Power Users group.    |
 | administrator | 2     | Member of Administrators group. |
 
-### chatMessagePolicyViolationDlpActionType values
+### chatMessagePolicyViolationDlpActionType values
 
 | Value |
 |:-----------------|
