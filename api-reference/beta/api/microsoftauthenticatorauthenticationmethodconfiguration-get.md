@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.authMethodPolicy.microsoftAuthenticatorAuthenticationMethodConfiguration"
+  "@odata.type": "microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration"
 }
 -->
 ``` http
@@ -76,7 +76,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.authMethodPolicy.microsoftAuthenticatorAuthenticationMethodConfiguration",
+    "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
     "id": "129ae788-e788-129a-88e7-9a1288e79a12",
     "state": "String"
   }

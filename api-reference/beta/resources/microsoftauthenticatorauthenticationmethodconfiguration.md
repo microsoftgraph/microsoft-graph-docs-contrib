@@ -38,7 +38,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
-  "baseType": "microsoft.authMethodPolicy.authenticationMethodConfiguration",
+  "baseType": "microsoft.graph.authenticationMethodConfiguration",
   "openType": false
 }
 -->

@@ -1,39 +1,28 @@
 ---
 title: "microsoftAuthenticatorAuthenticationMethodTarget resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "A collection of users or groups enabled to use Microsoft Authenticator authentication methods policy."
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # microsoftAuthenticatorAuthenticationMethodTarget resource type
-
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Inherits from [authenticationMethodTarget](../resources/authenticationmethodtarget.md).
-
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List microsoftAuthenticatorAuthenticationMethodTargets](../api/microsoftauthenticatorauthenticationmethodtarget-list.md)|[microsoftAuthenticatorAuthenticationMethodTarget](../resources/microsoftauthenticatorauthenticationmethodtarget.md) collection|Get a list of the [microsoftAuthenticatorAuthenticationMethodTarget](../resources/microsoftauthenticatorauthenticationmethodtarget.md) objects and their properties.|
-|[Create microsoftAuthenticatorAuthenticationMethodTarget](../api/microsoftauthenticatorauthenticationmethodtarget-create.md)|[microsoftAuthenticatorAuthenticationMethodTarget](../resources/microsoftauthenticatorauthenticationmethodtarget.md)|Create a new [microsoftAuthenticatorAuthenticationMethodTarget](../resources/microsoftauthenticatorauthenticationmethodtarget.md) object.|
-|[Get microsoftAuthenticatorAuthenticationMethodTarget](../api/microsoftauthenticatorauthenticationmethodtarget-get.md)|[microsoftAuthenticatorAuthenticationMethodTarget](../resources/microsoftauthenticatorauthenticationmethodtarget.md)|Read the properties and relationships of a [microsoftAuthenticatorAuthenticationMethodTarget](../resources/microsoftauthenticatorauthenticationmethodtarget.md) object.|
-|[Update microsoftAuthenticatorAuthenticationMethodTarget](../api/microsoftauthenticatorauthenticationmethodtarget-update.md)|[microsoftAuthenticatorAuthenticationMethodTarget](../resources/microsoftauthenticatorauthenticationmethodtarget.md)|Update the properties of a [microsoftAuthenticatorAuthenticationMethodTarget](../resources/microsoftauthenticatorauthenticationmethodtarget.md) object.|
-|[Delete microsoftAuthenticatorAuthenticationMethodTarget](../api/microsoftauthenticatorauthenticationmethodtarget-delete.md)|None|Deletes a [microsoftAuthenticatorAuthenticationMethodTarget](../resources/microsoftauthenticatorauthenticationmethodtarget.md) object.|
+A collection of users or groups enabled to use [Microsoft Authenticator authentication methods policy](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md) in Azure AD.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
+|id|String|Object ID of an Azure AD user or group.|
 |isNumberMatchingRequired|Boolean|**TODO: Add Description**|
-|isRegistrationRequired|Boolean|**TODO: Add Description** Inherited from [authenticationMethodTarget](../resources/authenticationmethodtarget.md)|
+|isRegistrationRequired|Boolean|Determines whether the user is enforced to register the authentication method. *Not yet supported*. |
 |shownContext|authenticatorAppContextType|**TODO: Add Description**. Possible values are: `location`, `app`.|
-|targetType|authenticationMethodTargetType|**TODO: Add Description** Inherited from [authenticationMethodTarget](../resources/authenticationmethodtarget.md). Possible values are: `user`, `group`, `unknownFutureValue`.|
-|useForSignIn|Boolean|**TODO: Add Description** Inherited from [authenticationMethodTarget](../resources/authenticationmethodtarget.md)|
+|targetType|authenticationMethodTargetType| Possible values are: `user`, `group`.|
+|useForSignIn|Boolean|**TODO: Add Description**|
 
 ## Relationships
 None.
