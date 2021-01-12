@@ -99,15 +99,22 @@ GET https://graph.microsoft.com/beta/reports/authenticationMethods/usersRegister
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-{​​
-    "@odata.type": "#microsoft.graph.userRegistrationMethodSummary",
-    "userTypes" : "all",
-    "userRoles" : "all",
-    "userRegistrationMethodCounts":
-	[
-        {​​ "authenticationMethod": "password", "userCount": 12209 }​​,
-        {​​ "authenticationMethod": "windowsHellowForBusiness", "userCount": 1233 }​​,
-        {​​ "authenticationMethod": "fido", "userCount": 299 }​​
-    ]
-}​​
+{
+	"@odata.type": "#microsoft.graph.userRegistrationMethodSummary",
+	"userTypes": "all",
+	"userRoles": "all",
+	"userRegistrationMethodCounts": [{
+			"authenticationMethod": "password",
+			"userCount": 12209
+		},
+		{
+			"authenticationMethod": "windowsHelloForBusiness",
+			"userCount": 223
+		},
+		{
+			"authenticationMethod": "mobilePhone",
+			"userCount": 4234
+		}
+	]
+}
 ```

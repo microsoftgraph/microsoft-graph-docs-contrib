@@ -93,24 +93,36 @@ GET https://graph.microsoft.com/beta/reports/authenticationMethods/usersRegister
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.userRegistrationFeatureSummary"
-}
--->
+} -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-{​​
+{
 	"@odata.type": "#microsoft.graph.userRegistrationFeatureSummary",
-	"totalUserCount" : 23123,
-	"userTypes" : "all",
-	"userRoles" : "all",
-	"userRegistrationFeatureCounts" :
-	[
-		{​​ "feature":"ssprRegistered", "userCount": 23423 }​​,
-		{​​ "feature":"ssprEnabled", "userCount": 4234 }​​,
-		{​​ "feature":"ssprCapable", "userCount": 4234 }​​,
-		{​​ "feature":"passwordlessRegistered", "userCount": 323 }​​,
-		{​​ "feature":"mfaCapable", "userCount": 33 }​​,
+	"totalUserCount": 23123,
+	"userTypes": "all",
+	"userRoles": "all",
+	"userRegistrationFeatureCounts": [{
+			"feature": "ssprRegistered",
+			"userCount": 23423
+		},
+		{
+			"feature": "ssprEnabled",
+			"userCount": 4234
+		},
+		{
+			"feature": "ssprCapable",
+			"userCount": 4234
+		}, {
+			"feature": "passwordlessRegistered",
+			"userCount": 323
+		},
+		{
+			"feature": "mfaCapable",
+			"userCount": 3345
+		}
 	]
-}​​
+}
 ```
