@@ -7,25 +7,25 @@ ms.prod: "cloud-printing"
 ms.custom: scenarios:getting-started
 ---
 
-# Subscribe to change notifications on cloud printing APIs using Microsoft Graph
+# Subscribe to change notifications from cloud printing APIs using Microsoft Graph
 
-Universal Print targets to help customers in their move to cloud. One of the important components in customers’ deployments is third-party vendor solutions that provide advanced print functionality while piggybacking on the base infrastructure provided by Universal Print. 
+Universal Print helps customers move their print infrastructure to the cloud, and is part of a robust ecosystem of partner solutions that offer advanced print functionality. These solutions can become even more powerful by integrating with Universal Print by using our Microsoft Graph API.
 
-Most of the print vendors need to build capabilities to process print jobs in real-time as the job transits from users’ devices to printers. Universal Print provides hooks for print vendor solutions to be notified as jobs transitions through the cloud, and APIs that allow them to manage printers and print jobs. 
+Many partner solutions need to process print jobs in real time as they're sent from users' devices to printers, which means they need to be notified when print jobs are available for processing. Universal Print provides hooks for print vendor solutions to be notified as jobs move through the cloud, and APIs that enable management of printers and print jobs.
 
-In this article, we describe how to subscribe to notifications for various print job events. 
+In this article, we describe how to subscribe to notifications for various print job events.
 
 
 ## Getting Started
 
-Before leveraging the notification functionality via Microsoft Graph, print vendor’s application needs to be [registered in Azure](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal) and provisioned in the customers Azure Active Directory (Azure AD) tenant. While registering the application, ensure it has required scopes enabled (as described below in the document). 
+Before leveraging the notification functionality via Microsoft Graph, an application needs to be [registered in Azure](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal) and provisioned in the customer's Azure Active Directory (Azure AD) tenant. While registering the application, ensure it has required scopes enabled (as described below in the document). 
 
 
 ### Notifications and subscriptions
 
-Universal Print currently supports notifications for two scenarios related to print jobs: 
+Universal Print currently supports notifications for two scenarios related to print jobs:
 
-1. PrintTask is triggered (JobStarted): Partner can subscribe to receive notifications when their printTask(hook) is triggered.
+1. PrintTask is triggered (JobStarted): An application can subscribe to receive notifications when their printTask(hook) is triggered.
 For details about how to trigger task, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing). Currently, printTask can be triggered only for JobStarted event. JobStarted event is raised when a print job has been successfully created, payload has been uploaded and job processing has started.  
 
 2. JobFetchable: After the job has started, there might be processing done by third-party print applications or by Universal Print itself (like converting XPS payload to PDF for a PDF printer). Once all the processing is complete and payload is ready to be downloaded by a printer, JobFetchable event is raised for the corresponding print job. 
@@ -197,13 +197,13 @@ To get details on specific print APIs, please start with [Microsoft Graph API do
 We are happy to help you move your existing solutions to cloud or bring new innovations to the market that will redefine printing for organizations. If you have any new ideas or feedback on the current APIs, please reach out to us via the [Universal Print tech community](https://aka.ms/community/UniversalPrint).
 
 ## FAQ
-1. How is notification url validated by Microsoft Graph?
+1. How does Microsoft Graph validate notification URLs?
 > Microsoft Graph validates the notification endpoint provided in the notificationUrl property of the subscription request before creating the subscription.
 Refer to the [Notification endpoint validation](/graph/webhooks#notification-endpoint-validation) for more details.
 
-2. Once we send a notification, what is expected and how should partner acknowledge it?
-> Your process should process every change notification it receives. For minimum tasks that the application must perform to process a change notification, refer to [Processing the change notification](/graph/webhooks#processing-the-change-notification) for more details.
+2. What are applications expected to do after receiving a change notification?
+> Applications should process and acknowledge every change notification they receive. See [Processing the change notification](/graph/webhooks#processing-the-change-notification) for more details.
 
-2. How to get list of active subscriptions?
-> Retrieve a list of webhook subscriptions. Refer to the [Processing the change notification](/graph/api/subscription-list?view=graph-rest-beta&tabs=http) for more details.
+2. How can I get a list of active subscriptions?
+> Retrieve a list of webhook subscriptions. See [Processing the change notification](/graph/api/subscription-list?view=graph-rest-beta&tabs=http) for details about listing webhook notifications.
 
