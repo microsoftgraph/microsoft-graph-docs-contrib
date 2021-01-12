@@ -44,6 +44,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 }
 -->
 ``` http
+DELETE /me/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
 DELETE /user/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
 ```
 

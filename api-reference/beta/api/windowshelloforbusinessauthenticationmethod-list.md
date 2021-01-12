@@ -45,6 +45,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 }
 -->
 ``` http
+GET /me/authentication/windowsHelloForBusinessMethods
 GET /user/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods
 ```
 
