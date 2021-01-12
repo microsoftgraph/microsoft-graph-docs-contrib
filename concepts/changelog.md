@@ -37,22 +37,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |:---|:---|:---|
 | Addition | beta | Added new [Delegated permissions](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>PrintJob.Create</li><li>PrinterShare.ReadBasic.All</li></ul> |
 
-### Reports | Authentication Methods
-
-| **Change type** | **Version** | **Description** |
-|:---|:---|:---|
-|Addition|beta|Added the **authenticationMethods** relationship to [reportRoot](https://docs.microsoft.com/graph/api/resources/reportRoot?view=graph-rest-beta&preserve-view=true) resource|
-|Addition|beta|Added the [userRegistrationFeatureSummary](https://docs.microsoft.com/graph/api/resources/userRegistrationFeatureSummary?view=graph-rest-beta&preserve-view=true) resource type|
-|Addition|beta|Added the [userRegistrationFeatureCount](https://docs.microsoft.com/graph/api/resources/userRegistrationFeatureCount?view=graph-rest-beta&preserve-view=true) resource type|
-|Addition|beta|Added the [userRegistrationMethodSummary](https://docs.microsoft.com/graph/api/resources/userRegistrationMethodSummary?view=graph-rest-beta&preserve-view=true) resource type|
-|Addition|beta|Added the [userRegistrationMethodCount](https://docs.microsoft.com/graph/api/resources/userRegistrationMethodCount?view=graph-rest-beta&preserve-view=true) resource type|
-|Addition|beta|Added the [authenticationMethodsRoot](https://docs.microsoft.com/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta&preserve-view=true) resource type|
-|Addition|beta|Added the **authenticationMethodFeature** enumeration type|
-|Addition|beta|Added the **includedUserTypes** enumeration type|
-|Addition|beta|Added the **includedUserRoles** enumeration type|
-|Addition|beta|Added the [usersRegisteredByFeature](https://docs.microsoft.com/graph/api/authenticationMethodsRoot-usersRegisteredByFeature?view=graph-rest-beta&preserve-view=true) method to the [authenticationMethodsRoot](https://docs.microsoft.com/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta&preserve-view=true) resource|
-|Addition|beta|Added the [usersRegisteredByMethod](https://docs.microsoft.com/graph/api/authenticationMethodsRoot-usersRegisteredByMethod?view=graph-rest-beta&preserve-view=true) method to the [authenticationMethodsRoot](https://docs.microsoft.com/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta&preserve-view=true) resource|
-
 ## December 2020
 
 ### Calendar
