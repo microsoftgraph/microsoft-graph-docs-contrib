@@ -12,7 +12,7 @@
           "Target": "windowsHelloForBusinessAuthenticationMethod"
         },
         {
-          "Id": "8b77b2ee-006e-4639-b714-704f2ed89224",
+          "Id": "78f63c95-8c9e-4438-ad45-63f6174a4e33",
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftAuthenticatorAuthenticationMethod",
           "ChangeType": "Addition",
@@ -20,7 +20,7 @@
           "Target": "microsoftAuthenticatorAuthenticationMethod"
         },
         {
-          "Id": "b3b25845-1cec-49be-b49f-5b51123e43aa",
+          "Id": "78f63c95-8c9e-4438-ad45-63f6174a4e33",
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationMethod",
           "ChangeType": "Change",
@@ -28,7 +28,7 @@
           "Target": "authenticationMethod"
         },
         {
-          "Id": "5d15ad1b-9f2e-48e0-ac8c-5fb0fa08b070",
+          "Id": "78f63c95-8c9e-4438-ad45-63f6174a4e33",
           "ApiChange": "Resource",
           "ChangedApiName": "passwordAuthenticationMethod",
           "ChangeType": "Change",
@@ -36,23 +36,23 @@
           "Target": "passwordAuthenticationMethod"
         },
         {
-          "Id": "51e5db45-93b1-4183-b281-9a36a3b0603c",
+          "Id": "78f63c95-8c9e-4438-ad45-63f6174a4e33",
           "ApiChange": "Resource",
           "ChangedApiName": "phoneAuthenticationMethod",
           "ChangeType": "Change",
           "Description": "Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
           "Target": "phoneAuthenticationMethod"
-        }m
+        },
         {
-          "Id": "0a1d7d62-f347-4670-aeb9-b2ad9f61aada",
+          "Id": "78f63c95-8c9e-4438-ad45-63f6174a4e33",
           "ApiChange": "Resource",
           "ChangedApiName": "emailAuthenticationMethod",
           "ChangeType": "Change",
           "Description": "Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
           "Target": "emailAuthenticationMethod"
-        }
+        },
         {
-          "Id": "d870f819-9c5c-486f-b70c-c5999e8fafd8",
+          "Id": "78f63c95-8c9e-4438-ad45-63f6174a4e33",
           "ApiChange": "passwordlessMicrosoftAuthenticatorAuthenticationMethod",
           "ChangedApiName": "passwordlessMicrosoftAuthenticatorAuthenticationMethod",
           "ChangeType": "Change",
@@ -60,10 +60,10 @@
           "Target": "passwordlessMicrosoftAuthenticatorAuthenticationMethod"
         }
       ],
-      "Id": "151b955d-fe34-496d-a76c-7cf7865da63d",
+      "Id": "78f63c95-8c9e-4438-ad45-63f6174a4e33",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-01-12T00:00:00.000Z",
+      "CreatedDateTime": "2021-01-12T00:00:00.000Z",
       "WorkloadArea": "Identity and access",
       "SubArea": ""
     },
