@@ -11977,12 +11977,12 @@ items:
             items:
             - name: Get usage summary
               href: api/reportroot-getcredentialusagesummary.md
-          - name: User registration feature summary
+          - name: Users registered by feature
             href: resources/userregistrationfeaturesummary.md
             items:
             - name: Get users registered by feature
               href: api/authenticationmethodsroot-usersregisteredbyfeature.md
-          - name: User registration method summary
+          - name: Users registered by method
             href: resources/userregistrationmethodsummary.md
             items:
             - name: Get users registered by authentication method
