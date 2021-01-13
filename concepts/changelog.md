@@ -17,10 +17,10 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description** |
 |:---|:---|:---|
-|Addition|beta|Added the **accessPackageResourceEnvironments** relationship to [entitlementManagement](https://docs.microsoft.com/en-us/graph/api/resources/entitlementManagement?view=graph-rest-beta).|
-|Addition|beta|Added the **accessPackageResourceEnvironment** relationship to [accessPackageResource](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageResource?view=graph-rest-beta) resource.|
-|Addition|beta|Added the [accessPackageResourceEnvironment](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageResourceEnvironment?view=graph-rest-beta) resource type.|
-|Addition|beta|Added the [connectionInfo](https://docs.microsoft.com/en-us/graph/api/resources/connectionInfo?view=graph-rest-beta) resource type.|
+|Addition|beta|Added the **accessPackageResourceEnvironments** relationship to [entitlementManagement](graph/api/resources/entitlementManagement?view=graph-rest-beta&preserve-view=true).|
+|Addition|beta|Added the **accessPackageResourceEnvironment** relationship to [accessPackageResource](graph/api/resources/accessPackageResource?view=graph-rest-beta&preserve-view=true) resource.|
+|Addition|beta|Added the [accessPackageResourceEnvironment](graph/api/resources/accessPackageResourceEnvironment?view=graph-rest-beta&preserve-view=true) resource type.|
+|Addition|beta|Added the [connectionInfo](graph/api/resources/connectionInfo?view=graph-rest-beta&preserve-view=true) resource type.|
 
 ### Applications
 
