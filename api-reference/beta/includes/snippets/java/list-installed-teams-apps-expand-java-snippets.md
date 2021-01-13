@@ -8,7 +8,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 ITeamsAppInstallationCollectionPage installedApps = graphClient.teams("6903fa93-605b-43ef-920e-77c4729f8258").installedApps()
 	.buildRequest()
-	.expand("teamsAppDefinition")
+	.expand("teamsAppDefinition($expand=bot)")
 	.get();
 
 ```
