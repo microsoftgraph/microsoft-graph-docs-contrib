@@ -183,7 +183,7 @@ For backward compatibility, the original properties and types are accessible and
   - [Search Outlook messages](/graph/search-concept-messages)
   - [Search calendar events](/graph/search-concept-events)
   - [Search content in Sharepoint and OneDrive](/graph/search-concept-files)
-  - [Search across Graph connectors](/graph/search-concept-custom-types)
+  - [Search custom types imported using connectors](/graph/search-concept-custom-types)
   - [Sort search results](/graph/search-concept-sort)
   - [Refine search results](/graph/search-concept-aggregation)
 
