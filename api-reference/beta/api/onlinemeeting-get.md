@@ -15,13 +15,24 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
+For instance:
+- You can get details of an onlineMeeting using VideoTeleconferenceId([example](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)), meeting ID([example](#example-2-retrieve-an-online-meeting-by-meeting-id)) or JoinWebURL([example](#example-3-retrieve-an-online-meeting-by-joinweburl)).
+- You can  use `/attendeeReport` path to get attendee report of a live event. See an [example](#example-4-retrieve-the-attendee-report-of-a-live-event) below.
+- You can use `/recording` and `/alternativeRecording` paths to get the recordings of a live event.
+
+Here are some notes for attendee report and recordings:
+- Currently, these two resources are available exclusively to live events.
+- Only the event organizer can access attendee reports and recordings.
+- Attendee report and recordings are only available when the live event has concluded.
+- The download link in the `302 Found` [response](#example-4-retrieve-the-attendee-report-of-a-live-event) expires in **60** seconds.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged)           |
 | :------------------------------------- | :---------------------------------------------------- |
-| Delegated (work or school account)     | Not Supported.                                        |
+| Delegated (work or school account)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
 | Delegated (personal Microsoft account) | Not Supported.                                        |
 | Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
 
@@ -29,21 +40,46 @@ One of the following permissions is required to call this API. To learn more, in
 > \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to retrieve an online meeting on behalf of that user (user ID specified in the request path).
 
 ## HTTP request
+
+To get the specified onlineMeeting via VideoTeleconferenceId:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
+```
+
+To get the specified onlineMeeting via meeting ID:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/onlineMeetings/{meetingId}
 GET /users/{userId}/onlineMeetings/{meetingId}
+```
+
+To get the specified onlineMeeting via JoinWebUrl:
+<!-- { "blockType": "ignored" } -->
+```http
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
-> **Notes:**
->
-> - The `/app` path is deprecated. Going forward, use the `/communications` path.
-> - `id` in the first two routes refers to [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up).
-> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
-> - `meetingId` is the **id** of an [onlineMeeting entity](../resources/onlinemeeting.md).
-> - `joinWebUrl` must be URL encoded and this route can only be used to retrieve meetings created by `userId`.
+To get the attendee report of a live event:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
+```
+
+To get the recordings of a live event:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{userId}/onlineMeetings/{meetingId}/recording
+GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
+```
+
+**Notes:**
+- The `/app` path is deprecated. Going forward, use the `/communications` path.
+- `id` in the first two routes refers to [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up).
+- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+- `meetingId` is the **id** of an [onlineMeeting entity](../resources/onlinemeeting.md).
+- `joinWebUrl` must be URL encoded and this route can only be used to retrieve meetings created by `userId`.
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -293,6 +329,28 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
     ]
 }
 ```
+
+### Example 4: Retrieve the attendee report of a live event
+The following example shows a request to download an attendee report.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "get-attendeeReport"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/6c48f2c0-382d-40d2-b1f9-fe108901242a/attendeeReport
+```
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 302 Found
+Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
