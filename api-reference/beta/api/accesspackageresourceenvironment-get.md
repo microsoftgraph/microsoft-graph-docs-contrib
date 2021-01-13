@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "Microsoft.IGAELM.EC.FrontEnd.ExternalModel.accessPackageResourceEnvironment"
+  "@odata.type": "Microsoft.graph.accessPackageResourceEnvironment"
 }
 -->
 ``` http

@@ -1,7 +1,7 @@
 ---
 title: "List accessPackageResourceEnvironments"
 description: "Retrieve a list of accessPackageResourceEnvironments."
-author: "markwahl-msft*"
+author: "markwahl-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.IGAELM.EC.FrontEnd.ExternalModel.accessPackageResourceEnvironment)"
+  "@odata.type": "Collection(Microsoft.graph.accessPackageResourceEnvironment)"
 }
 -->
 ``` http

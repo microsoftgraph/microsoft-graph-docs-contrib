@@ -137,7 +137,7 @@ Content-type: application/json
 
 The following is an example of the request. In this example, we use the `@odata.bind` annotation to assign the `id` of the `accessPackageResourceEnvironment` to an `accessPackageResourceEnvironment` object.
 
-# [HTTP](#tab/http)
+# HTTP request
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests_with_accessPackageResourceEnvironment"
@@ -195,7 +195,7 @@ Content-type: application/json
 
 The following is an example of the request. In this example, we specify the parameters of an `accessPackageResourceEnvironment` in an `accessPackageResourceEnvironment` object.
 
-# [HTTP](#tab/http)
+# HTTP request
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests_with_accessPackageResourceEnvironment_Ex2"
