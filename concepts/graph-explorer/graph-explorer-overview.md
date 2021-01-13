@@ -32,7 +32,7 @@ Graph Explorer is a web application hosted on the [Microsoft Graph developer cen
 Graph Explorer includes the following elements, as shown in the following image:
 
 1. HTTP verb dropdown list
-2. API version dropdown list
+2. API version drop-down list
 3. Request query address bar
 4. Sample query
 5. Documentation link for the sample query

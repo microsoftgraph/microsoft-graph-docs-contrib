@@ -47,7 +47,7 @@ For each REST API query you select or enter in Graph Explorer, you can find how 
 
 ## Implement user interface conveniently using components
 
-Graph Explorer includes several features to help to make your UI implementation process easier. Reuse these components directly in your applications.
+Graph Explorer includes several features to make implementing user interface easier. Reuse these components in your apps too.
 
 ### Microsoft Graph Toolkit integration
 
@@ -81,13 +81,13 @@ TThis table will include more queries over time when the Microsoft Graph Toolkit
 2.	Navigate to the **Adaptive cards** tab.
 3.	See the adaptive card with the response details.
 
-### Changing themes
+## Customize the theme in Graph Explorer
 
 Choose the theme for Graph Explorer by selecting the **Change theme** option under the settings gear. Theme options are Light, Dark, and High contrast.
 
 ![how-to-change-theme](./images/change-theme.png)
 
-1.	Navigate to the settings gear, then select the **Change theme**.
+1.	Choose your preferred theme from the list of available themes.
 2.	See the list of available themes and choose your preferred theme.  
 
 
