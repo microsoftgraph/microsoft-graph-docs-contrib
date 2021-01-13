@@ -18,11 +18,10 @@ A collection of users or groups enabled to use [Microsoft Authenticator authenti
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Object ID of an Azure AD user or group.|
-|isNumberMatchingRequired|Boolean|**TODO: Add Description**|
+|isNumberMatchingRequired (Private Preview)|Boolean|Require the user to match the number displayed on the sign in page to approve the MFA notification.|
 |isRegistrationRequired|Boolean|Determines whether the user is enforced to register the authentication method. *Not yet supported*. |
-|shownContext|authenticatorAppContextType|**TODO: Add Description**. Possible values are: `location`, `app`.|
+|shownContext (Private Preview)|authenticatorAppContextType|Possible values are: `location`, `app`.|
 |targetType|authenticationMethodTargetType| Possible values are: `user`, `group`.|
-|useForSignIn|Boolean|**TODO: Add Description**|
 
 ## Relationships
 None.
