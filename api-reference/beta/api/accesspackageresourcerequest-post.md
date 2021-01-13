@@ -46,12 +46,16 @@ In the request body, supply a JSON representation of an [accessPackageResourceRe
 
 To add an Azure AD group as a resource to a catalog, the value of the **originSystem** property within the `accessPackageResource` should be **AadGroup** and the value of the **originId** is the identifier of the group.
 
+To specify the geolocation environment for a multi-geolocation Sharepoint Onnline resource, include the `accessPackageResourceEnvironment` relationship in the `accessPackageResource` object. This can be done in two ways:
++ Use `@odata.bind` annotation to assign the `id` of the `accessPackageResourceEnvironment` to an `accessPackageResourceEnvironment` object.
++ Specify the parameters of an `accessPackageResourceEnvironment` in an `accessPackageResourceEnvironment` object.
+
 
 ## Response
 
 If successful, this method returns a 200-series response code and a new [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) object in the response body.
 
-## Examples
+## Example 1: Create an accessPackageResourceRequest
 
 ### Request
 
@@ -126,6 +130,125 @@ Content-type: application/json
   "requestType": "AdminAdd"
 }
 ```
+
+## Example 2: Create an accessPackageResourceRequest for a resource with an assigned accessPackageResourceEnvironment
+
+### Request
+
+The following is an example of the request. In this example, we use the `@odata.bind` annotation to assign the `id` of the `accessPackageResourceEnvironment` to an `accessPackageResourceEnvironment` object.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests_with_accessPackageResourceEnvironment"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageResourceRequests
+Content-type: application/json
+
+{
+    "catalogId": "de9315c1-272b-4905-924b-cc112ca180c7",
+    "accessPackageResource": {
+        "displayName": "Community Outreach",
+        "description": "https://contoso.sharepoint.com/sites/CSR",
+        "resourceType": "SharePoint Online Site",
+        "originId": "https://contoso.sharepoint.com/sites/CSR",
+        "originSystem": "SharePointOnline",
+        "accessPackageResourceEnvironment@odata.bind": "accessPackageResourceEnvironments/615f2218-678f-471f-a60a-02c2f4f80c57"
+    },
+    "requestType": "AdminAdd"
+}
+```
+
+### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageResourceRequests/$entity",
+    "catalogId": "de9315c1-272b-4905-924b-cc112ca180c7",
+    "executeImmediately": false,
+    "id": "d3f800d5-0dd6-47f3-9e90-ef562c7551dc",
+    "requestType": "AdminAdd",
+    "requestState": "Delivered",
+    "requestStatus": "Fulfilled",
+    "isValidationOnly": false,
+    "expirationDateTime": null,
+    "justification": null
+}
+```
+
+## Example 3: Create an accessPackageResourceRequest for a resource with an assigned accessPackageResourceEnvironment
+
+### Request
+
+The following is an example of the request. In this example, we specify the parameters of an `accessPackageResourceEnvironment` in an `accessPackageResourceEnvironment` object.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests_with_accessPackageResourceEnvironment_Ex2"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageResourceRequests
+Content-type: application/json
+
+{
+    "catalogId": "de9315c1-272b-4905-924b-cc112ca180c7",
+    "accessPackageResource": {
+        "displayName": "Community Outreach",
+        "description": "https://contoso.sharepoint.com/sites/CSR",
+        "resourceType": "SharePoint Online Site",
+        "originId": "https://contoso.sharepoint.com/sites/CSR",
+        "originSystem": "SharePointOnline",
+        "accessPackageResourceEnvironment": {
+            "originId": "https://contoso-admin.sharepoint.com/"
+        }
+    },
+    "requestType": "AdminAdd"
+}
+```
+
+### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageResourceRequests/$entity",
+    "catalogId": "de9315c1-272b-4905-924b-cc112ca180c7",
+    "executeImmediately": false,
+    "id": "eadf3fbb-668c-4c3a-8d84-7c8bd73dc3e4",
+    "requestType": "AdminAdd",
+    "requestState": "Delivered",
+    "requestStatus": "Fulfilled",
+    "isValidationOnly": false,
+    "expirationDateTime": null,
+    "justification": null
+}
+```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
