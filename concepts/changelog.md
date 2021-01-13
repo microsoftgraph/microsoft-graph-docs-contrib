@@ -13,6 +13,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## January 2021
 
+### Applications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added delegated permissions support for personal Microsoft accounts to v1.0 APIs. |
+
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -30,6 +36,17 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added property for **hostNames** to the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) entity. |
+
+### Devices and apps | Cloud PC
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the `resourceAvailabilityCheckSubscriptionDisabled` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.|
+|Addition|beta|Added the `permissionCheckNoSubscriptionReaderRole` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.|
+|Addition|beta|Added the `permissionCheckNoResourceGroupOwnerRole` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.|
+|Addition|beta|Added the `permissionCheckNoVNetContributorRole` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.|
+|Addition|beta|Added the `permissionCheckUnknownError` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.|
+|Addition|beta|Added the [updateAdDomainPassword](graph/api/cloudPcOnPremisesConnection-updateAdDomainPassword?view=graph-rest-beta&preserve-view=true) method to the [cloudPcOnPremisesConnection](graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta&preserve-view=true) resource.|
 
 ### Devices and apps | Cloud printing
 
