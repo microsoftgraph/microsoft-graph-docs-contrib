@@ -1,7 +1,48 @@
 {
   "changelog": [
     {
-
+      "ChangeList": [
+        {
+          "Id": "731b5d0e-65c2-4731-83e8-bfcda65a0ab1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceEnvironments",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageResourceEnvironments** relationship to [entitlementManagement](graph/api/resources/entitlementManagement?view=graph-rest-beta\u0026preserve-view=true).",
+          "Target": "entitlementManagement"
+        },
+        {
+          "Id": "731b5d0e-65c2-4731-83e8-bfcda65a0ab1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceEnvironment",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageResourceEnvironment** relationship to [accessPackageResource](graph/api/resources/accessPackageResource?view=graph-rest-beta\u0026preserve-view=true) resource.",
+          "Target": "accessPackageResource"
+        },
+        {
+          "Id": "731b5d0e-65c2-4731-83e8-bfcda65a0ab1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceEnvironment",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageResourceEnvironment](graph/api/resources/accessPackageResourceEnvironment?view=graph-rest-beta\u0026preserve-view=true) resource type.",
+          "Target": "accessPackageResourceEnvironment"
+        },
+        {
+          "Id": "731b5d0e-65c2-4731-83e8-bfcda65a0ab1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "connectionInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [connectionInfo](graph/api/resources/connectionInfo?view=graph-rest-beta\u0026preserve-view=true) resource type.",
+          "Target": "connectionInfo"
+        }
+      ],
+      "Id": "731b5d0e-65c2-4731-83e8-bfcda65a0ab1",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-01T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": ""
+    },
+    {
       "ChangeList": [
         {
           "Id": "78f63c95-8c9e-4438-ad45-63f6174a4e33",

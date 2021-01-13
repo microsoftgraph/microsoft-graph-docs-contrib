@@ -55,9 +55,11 @@ To specify the geolocation environment for a multi-geolocation Sharepoint Onnlin
 
 If successful, this method returns a 200-series response code and a new [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) object in the response body.
 
-## Example 1: Create an accessPackageResourceRequest
+## Examples
 
-### Request
+### Example 1: Create an accessPackageResourceRequest
+
+#### Request
 
 The following is an example of the request.
 
@@ -104,7 +106,7 @@ Content-type: application/json
 ---
 
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -131,9 +133,9 @@ Content-type: application/json
 }
 ```
 
-## Example 2: Create an accessPackageResourceRequest for a resource with an assigned accessPackageResourceEnvironment
+### Example 2: Create an accessPackageResourceRequest for a resource with an assigned accessPackageResourceEnvironment
 
-### Request
+#### Request
 
 The following is an example of the request. In this example, we use the `@odata.bind` annotation to assign the `id` of the `accessPackageResourceEnvironment` to an `accessPackageResourceEnvironment` object.
 
@@ -161,7 +163,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -189,9 +191,9 @@ Content-type: application/json
 }
 ```
 
-## Example 3: Create an accessPackageResourceRequest for a resource with an assigned accessPackageResourceEnvironment
+### Example 3: Create an accessPackageResourceRequest for a resource with an assigned accessPackageResourceEnvironment
 
-### Request
+#### Request
 
 The following is an example of the request. In this example, we specify the parameters of an `accessPackageResourceEnvironment` in an `accessPackageResourceEnvironment` object.
 
@@ -221,7 +223,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
