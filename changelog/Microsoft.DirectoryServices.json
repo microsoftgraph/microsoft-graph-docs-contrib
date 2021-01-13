@@ -15,8 +15,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-01-11T00:00:00",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Application"
+      "WorkloadArea": "Applications",
+      "SubArea": ""
     },
     {
       "ChangeList": [
