@@ -72,7 +72,7 @@ The following is a JSON representation of the resource.
 - Search [mail messages](/graph/search-concept-messages)
 - Search [calendar events](/graph/search-concept-events)
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
-- Search [Graph Connectors)](/graph/search-concept-custom-types) data
+- Search [custom types imported using connectors)](/graph/search-concept-custom-types) data
 - [Sort](/graph/search-concept-sort) search results
 - Use [aggregations](/graph/search-concept-aggregations) to refine search results
 
