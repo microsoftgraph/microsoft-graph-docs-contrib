@@ -1,6 +1,73 @@
 {
   "changelog": [
     {
+
+      "ChangeList": [
+        {
+          "Id": "78f63c95-8c9e-4438-ad45-63f6174a4e33",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsHelloForBusinessAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [windowsHelloForBusinessAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/windowshelloforbusinessauthenticationmethod?view=graph-rest-beta) resource and associated methods.",
+          "Target": "windowsHelloForBusinessAuthenticationMethod"
+        },
+        {
+          "Id": "78f63c95-8c9e-4438-ad45-63f6174a4e33",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftAuthenticatorAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftAuthenticatorAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethod?view=graph-rest-beta) resource and associated methods.",
+          "Target": "microsoftAuthenticatorAuthenticationMethod"
+        },
+        {
+          "Id": "78f63c95-8c9e-4438-ad45-63f6174a4e33",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationMethod",
+          "ChangeType": "Change",
+          "Description": "Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
+          "Target": "authenticationMethod"
+        },
+        {
+          "Id": "78f63c95-8c9e-4438-ad45-63f6174a4e33",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passwordAuthenticationMethod",
+          "ChangeType": "Change",
+          "Description": "Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
+          "Target": "passwordAuthenticationMethod"
+        },
+        {
+          "Id": "78f63c95-8c9e-4438-ad45-63f6174a4e33",
+          "ApiChange": "Resource",
+          "ChangedApiName": "phoneAuthenticationMethod",
+          "ChangeType": "Change",
+          "Description": "Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
+          "Target": "phoneAuthenticationMethod"
+        },
+        {
+          "Id": "78f63c95-8c9e-4438-ad45-63f6174a4e33",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailAuthenticationMethod",
+          "ChangeType": "Change",
+          "Description": "Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
+          "Target": "emailAuthenticationMethod"
+        },
+        {
+          "Id": "78f63c95-8c9e-4438-ad45-63f6174a4e33",
+          "ApiChange": "passwordlessMicrosoftAuthenticatorAuthenticationMethod",
+          "ChangedApiName": "passwordlessMicrosoftAuthenticatorAuthenticationMethod",
+          "ChangeType": "Change",
+          "Description": "Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
+          "Target": "passwordlessMicrosoftAuthenticatorAuthenticationMethod"
+        }
+      ],
+      "Id": "78f63c95-8c9e-4438-ad45-63f6174a4e33",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-12T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": ""
+    },
+    {
       "ChangeList": [
         {
           "Id": "0a9a22d5-603a-4c0e-b15a-b08790c67c39",
