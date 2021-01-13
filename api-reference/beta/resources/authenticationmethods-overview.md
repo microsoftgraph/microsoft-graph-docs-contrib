@@ -36,6 +36,7 @@ The authentication method APIs are used to manage a user's authentication method
 |[microsoftAuthenticatorAuthenticationMethod](microsoftauthenticatorauthenticationmethod.md)|Microsoft Authenticator can be used by a user to sign in or perform multi-factor authentication to Azure AD|Delete a Microsoft Authenticator authentication method.|
 |[passwordlessmicrosoftauthenticatorauthenticationmethod](passwordlessmicrosoftauthenticatorauthenticationmethod.md) (deprecated)|Microsoft Authenticator Passwordless Phone Sign-in can be used by a user to sign in to Azure AD|Delete a Passwordless Phone Sign-in authentication method.|
 |[emailAuthenticationMethod](emailauthenticationmethod.md)|An email address can be user by a user as part of the Self-Service Password Reset (SSPR) process.|See a user's authentication email address. Add, update, or remove an email address to a user.|
+|[windowsHelloForBusinessAuthenticationMethod](windowsHelloForBusinessAuthenticationMethod.md)|Windows Hello for Business is a passwordless sign in method on Windows devices.|See devices where a user has enabled Windows Hello for Business sign in. Delete a Windows Hello for Business credential.|
 
 ## Next steps
 
