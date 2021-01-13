@@ -26,6 +26,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
 |**Schema extensions**| 
 |[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
+| [Get branding](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) collection | Get a organizationalBrandingProperties object collection. |
 
 ## Properties
 
@@ -61,6 +62,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) collection| Navigation property to manage certificate-based authentication configuration. Only a single instance of certificateBasedAuthConfiguration can be created in the collection.  |
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the organization. Read-only. Nullable.|
+|organizationalBranding|[organizationalBrandingProperties](organizationalbrandingproperties.md) collection| Branding for the organization. Nullable.|
 
 ## JSON representation
 
