@@ -13,12 +13,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## January 2021
 
-### Identity and access | Application
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | Added delegated permissions support for personal Microsoft accounts to v1.0 APIs. |
-
 ### Identity and access | Identity and sign-in
 
 | **Change type** | **Version**   | **Description**                          |
