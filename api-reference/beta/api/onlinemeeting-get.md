@@ -17,11 +17,11 @@ Retrieve the properties and relationships of an [onlineMeeting](../resources/onl
 
 For instance:
 - You can get details of an onlineMeeting using VideoTeleconferenceId([example](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)), meeting ID([example](#example-2-retrieve-an-online-meeting-by-meeting-id)) or JoinWebURL([example](#example-3-retrieve-an-online-meeting-by-joinweburl)).
-- You can  use `/attendeeReport` path to get attendee report of a live event. See an [example](#example-4-retrieve-the-attendee-report-of-a-live-event) below.
-- You can use `/recording` and `/alternativeRecording` paths to get the recordings of a live event.
+- You can use `/attendeeReport` path to get attendee report of a live event. See an [example](#example-4-retrieve-the-attendee-report-of-a-live-event) below.
+- You can use `/recording` and `/alternativeRecording` paths to get the recordings of a live event. See also an [example](#example-5-retrieve-the-recording-of-a-live-event) below.
 
 Here are some notes for attendee report and recordings:
-- Currently, these two resources are available exclusively to live events.
+- Currently, these resources are available exclusively to live events.
 - Only the event organizer can access attendee reports and recordings.
 - Attendee report and recordings are only available when the live event has concluded.
 - The download link in the `302 Found` [response](#example-4-retrieve-the-attendee-report-of-a-live-event) expires in **60** seconds.
@@ -339,7 +339,7 @@ The following example shows a request to download an attendee report.
   "name": "get-attendeeReport"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/6c48f2c0-382d-40d2-b1f9-fe108901242a/attendeeReport
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/attendeeReport
 ```
 
 #### Response
@@ -349,6 +349,27 @@ GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/
 ```http
 HTTP/1.1 302 Found
 Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
+```
+
+### Example 5: Retrieve the recording of a live event
+The following example shows a request to download a recording.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "get-recording"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/recording
+```
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 302 Found
+Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/recording
 ```
 
 
