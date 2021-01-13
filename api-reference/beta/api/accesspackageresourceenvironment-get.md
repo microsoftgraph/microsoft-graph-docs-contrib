@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.accessPackageResourceEnvironment"
 }
 -->
