@@ -54,6 +54,18 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |:---|:---|:---|
 | Addition | beta | Added new [Delegated permissions](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>PrintJob.Create</li><li>PrinterShare.ReadBasic.All</li></ul> |
 
+### Tasks and plans
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the **creationSource** property to [plannerTask](/graph/api/resources/plannerTask?view=graph-rest-beta&preserve-view=true) resource.|
+|Addition|beta|Added the **container** property to [plannerPlan](/graph/api/resources/plannerPlan?view=graph-rest-beta&preserve-view=true) resource.|
+|Addition|beta|Added the [plannerPlanContainer](/graph/api/resources/plannerPlanContainer?view=graph-rest-beta&preserve-view=true) resource type.|
+|Addition|beta|Added the [plannerTaskCreation](/graph/api/resources/plannerTaskCreation?view=graph-rest-beta&preserve-view=true) resource type.|
+|Addition|beta|Added the [plannerTeamsPublicationInfo](/graph/api/resources/plannerTeamsPublicationInfo?view=graph-rest-beta&preserve-view=true) resource type.|
+|Addition|beta|Added the **plannerContainerType** enumeration type.|
+|Change|beta| Deprecated the **owner** property on [plannerPlan](/graph/api/resources/plannerPlan?view=graph-rest-beta&preserve-view=true) resource.|
+
 ## December 2020
 
 ### Calendar
