@@ -88,6 +88,24 @@
     {
       "ChangeList": [
         {
+          "Id": "70e2d8db-5314-4a8d-9529-937609e55ce8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "application",
+          "ChangeType": "Addition",
+          "Description": "Added delegated permissions support for personal Microsoft accounts to v1.0 APIs.",
+          "Target": "application"
+        }
+      ],
+      "Id": "70e2d8db-5314-4a8d-9529-937609e55ce8",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-01-11T00:00:00",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7a992070-a9ab-42f3-a13e-8e5fd8d46bcf",
           "ApiChange": "Resource",
           "ChangedApiName": "device",
