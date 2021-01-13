@@ -1,52 +1,6 @@
 {
   "changelog": [
     {
-      "changelog": [
-        {
-          "ChangeList": [
-            {
-              "Id": "a23cf969-c80d-4cb5-8c50-4afff2535fac",
-              "ApiChange": "Resource",
-              "ChangedApiName": "accessPackageResourceEnvironments",
-              "ChangeType": "Addition",
-              "Description": "Added the **accessPackageResourceEnvironments** relationship to [entitlementManagement](https://docs.microsoft.com/en-us/graph/api/resources/entitlementManagement?view=graph-rest-beta).",
-              "Target": "entitlementManagement"
-            },
-            {
-              "Id": "a23cf969-c80d-4cb5-8c50-4afff2535fac",
-              "ApiChange": "Resource",
-              "ChangedApiName": "accessPackageResourceEnvironment",
-              "ChangeType": "Addition",
-              "Description": "Added the **accessPackageResourceEnvironment** relationship to [accessPackageResource](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageResource?view=graph-rest-beta) resource.",
-              "Target": "accessPackageResource"
-            },
-            {
-              "Id": "a23cf969-c80d-4cb5-8c50-4afff2535fac",
-              "ApiChange": "Resource",
-              "ChangedApiName": "accessPackageResourceEnvironment",
-              "ChangeType": "Addition",
-              "Description": "Added the [accessPackageResourceEnvironment](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageResourceEnvironment?view=graph-rest-beta) resource type.",
-              "Target": "accessPackageResourceEnvironment"
-            },
-            {
-              "Id": "a23cf969-c80d-4cb5-8c50-4afff2535fac",
-              "ApiChange": "Resource",
-              "ChangedApiName": "connectionInfo",
-              "ChangeType": "Addition",
-              "Description": "Added the [connectionInfo](https://docs.microsoft.com/en-us/graph/api/resources/connectionInfo?view=graph-rest-beta) resource type.",
-              "Target": "connectionInfo"
-            }
-          ],
-          "Id": "a23cf969-c80d-4cb5-8c50-4afff2535fac",
-          "Cloud": "prd",
-          "Version": "beta",
-          "CreatedDateTime": "2021-01-01T00:00:00",
-          "WorkloadArea": "Identity and access",
-          "SubArea": ""
-        }
-      ]
-    },
-    {
 
       "ChangeList": [
         {
