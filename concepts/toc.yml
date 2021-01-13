@@ -464,9 +464,9 @@ items:
               - name: Use schema extensions (example)
                 href: extensibility-schema-groups.md
           - name: Graph explorer overview
-            href: graph-explorer-overview
+            href: graph-explorer-overview.md
           - name: Graph explorer features
-            href: graph-explorer-features          
+            href: graph-explorer-features.md          
           - name: Use Postman
             href: use-postman.md
 
