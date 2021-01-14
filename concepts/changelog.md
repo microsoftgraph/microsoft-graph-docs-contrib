@@ -13,26 +13,34 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## January 2021
 
+### Applications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added delegated permissions support for personal Microsoft accounts to v1.0 APIs. |
+
 ### Reports | Authentication Methods
+
 | **Change type** | **Version** | **Description** |
 |:---|:---|:---|
-|Addition|beta|Added the **authenticationMethods** relationship to [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource|
-|Addition|beta|Added the [userRegistrationFeatureSummary](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationFeatureSummary?view=graph-rest-beta) resource type|
-|Addition|beta|Added the [userRegistrationFeatureCount](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationFeatureCount?view=graph-rest-beta) resource type|
-|Addition|beta|Added the [userRegistrationMethodSummary](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationMethodSummary?view=graph-rest-beta) resource type|
-|Addition|beta|Added the [userRegistrationMethodCount](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationMethodCount?view=graph-rest-beta) resource type|
-|Addition|beta|Added the [authenticationMethodsRoot](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource type|
+|Addition|beta|Added the **authenticationMethods** relationship to [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta&preserve-view=true) resource|
+|Addition|beta|Added the [userRegistrationFeatureSummary](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationFeatureSummary?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [userRegistrationFeatureCount](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationFeatureCount?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [userRegistrationMethodSummary](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationMethodSummary?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [userRegistrationMethodCount](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationMethodCount?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the [authenticationMethodsRoot](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta&preserve-view=true) resource type|
 |Addition|beta|Added the **authenticationMethodFeature** enumeration type|
 |Addition|beta|Added the **includedUserTypes** enumeration type|
 |Addition|beta|Added the **includedUserRoles** enumeration type|
-|Addition|beta|Added the [usersRegisteredByFeature](https://docs.microsoft.com/en-us/graph/api/authenticationMethodsRoot-usersRegisteredByFeature?view=graph-rest-beta) method to the [authenticationMethodsRoot](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource|
-|Addition|beta|Added the [usersRegisteredByMethod](https://docs.microsoft.com/en-us/graph/api/authenticationMethodsRoot-usersRegisteredByMethod?view=graph-rest-beta) method to the [authenticationMethodsRoot](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource|
+|Addition|beta|Added the [usersRegisteredByFeature](https://docs.microsoft.com/en-us/graph/api/authenticationMethodsRoot-usersRegisteredByFeature?view=graph-rest-beta&preserve-view=true) method to the [authenticationMethodsRoot](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta&preserve-view=true) resource|
+|Addition|beta|Added the [usersRegisteredByMethod](https://docs.microsoft.com/en-us/graph/api/authenticationMethodsRoot-usersRegisteredByMethod?view=graph-rest-beta&preserve-view=true) method to the [authenticationMethodsRoot](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta&preserve-view=true) resource|
 
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta|Added the [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta) complex type.|
 |Addition|beta|Added the **outOfOfficeSettings** property to the [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the **isBroadcast**, **broadcastSettings**, **attendeeReport**, **recording** and **alternativeRecording** properties to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) entity to support creating live events.|
 
 ### Groups
 
@@ -45,6 +53,17 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added property for **hostNames** to the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) entity. |
+
+### Devices and apps | Cloud PC
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the `resourceAvailabilityCheckSubscriptionDisabled` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.|
+|Addition|beta|Added the `permissionCheckNoSubscriptionReaderRole` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.|
+|Addition|beta|Added the `permissionCheckNoResourceGroupOwnerRole` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.|
+|Addition|beta|Added the `permissionCheckNoVNetContributorRole` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.|
+|Addition|beta|Added the `permissionCheckUnknownError` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.|
+|Addition|beta|Added the [updateAdDomainPassword](graph/api/cloudPcOnPremisesConnection-updateAdDomainPassword?view=graph-rest-beta&preserve-view=true) method to the [cloudPcOnPremisesConnection](graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta&preserve-view=true) resource.|
 
 ### Devices and apps | Cloud printing
 
