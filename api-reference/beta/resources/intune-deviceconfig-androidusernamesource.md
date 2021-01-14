@@ -28,5 +28,3 @@ Android username source.
 
 
 
-
-

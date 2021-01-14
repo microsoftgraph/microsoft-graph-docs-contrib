@@ -183,7 +183,7 @@ PATCH https://graph.microsoft.com/v1.0/places/Building1RroomList@contoso.onmicro
 Content-type: application/json
 
 {
-  "@odata.type": "microsoft.graph.roomlist",
+  "@odata.type": "microsoft.graph.roomList",
   "displayName": "Building 1",
   "phone":"555-555-0100",
   "address": {

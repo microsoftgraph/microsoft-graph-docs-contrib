@@ -174,14 +174,12 @@ Content-type: application/json
 
 ### Example 2: Create a group with owners and members
 
-The following example creates a Microsoft 365 group with an owner and members specified. Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation. You can subsequently add more members by using the [add member](group-post-members.md) API or JSON batching.
+The following example creates a Security group with an owner and members specified. Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation. You can subsequently add more members by using the [add member](group-post-members.md) API or JSON batching.
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "create_prepopulated_group"
 }-->
 ``` http
@@ -192,11 +190,10 @@ Content-Type: application/json
   "description": "Group with designated owner and members",
   "displayName": "Operations group",
   "groupTypes": [
-    "Unified"
   ],
-  "mailEnabled": true,
+  "mailEnabled": false,
   "mailNickname": "operations2019",
-  "securityEnabled": false,
+  "securityEnabled": true,
   "owners@odata.bind": [
     "https://graph.microsoft.com/v1.0/users/26be1845-4119-4801-a799-aea79d09f1a2"
   ],
@@ -206,24 +203,6 @@ Content-Type: application/json
   ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-prepopulated-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-prepopulated-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-prepopulated-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-prepopulated-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 
