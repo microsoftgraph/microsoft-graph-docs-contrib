@@ -11,23 +11,15 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-### approvalReviewResult values
+### authenticationMethodKeyStrength values
 
-| Member
-|:-----------------
-| NotReviewed
-| Approved
-| Denied
+|Member|
+|:---|
+|normal|
+|weak|
+|unknown|
 
-### consentRequestStatus values
-
-| Member
-|:-----------------
-| Initializing
-| InProgress
-| Completed
-
-### educationAddedStudentAction values 
+### educationAddedStudentAction values
 
 |Member|
 |:---|
@@ -1551,13 +1543,18 @@ Possible values for user account types (group membership), per Windows definitio
 |adJoinCheckIncorrectCredentials|
 |adJoinCheckOrganizationalUnitNotFound|
 |adJoinCheckOrganizationalUnitIncorrectFormat|
-|adJoinCheckUnknownError |
+|adJoinCheckUnknownError|
 |endpointConnectivityCheckUrlNotWhitelisted|
 |endpointConnectivityCheckUnknownError|
-|aadConnectivityCheckUnknownError |
-|resourceAvailabilityCheckNoSubnetIP |
-|resourceAvailabilityCheckUnknownError |
-|internalServerUnknownError |
+|aadConnectivityCheckUnknownError|
+|resourceAvailabilityCheckNoSubnetIP|
+|resourceAvailabilityCheckSubscriptionDisabled|
+|resourceAvailabilityCheckUnknownError|
+|permissionCheckNoSubscriptionReaderRole|
+|permissionCheckNoResourceGroupOwnerRole|
+|permissionCheckNoVNetContributorRole|
+|permissionCheckUnknownError|
+|internalServerUnknownError|
 
 ### cloudPcOnPremisesConnectionStatus values
 
