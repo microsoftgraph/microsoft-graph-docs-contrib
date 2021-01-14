@@ -147,9 +147,14 @@ Content-length: 160
 > **Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario.
 
 #### Request
-<!-- { "blockType": "ignored" } -->
+
 The following example show how to import back-in-time messages using the `createDateTime` and `from` keys in the request body.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies
 
@@ -194,7 +199,6 @@ The following is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 

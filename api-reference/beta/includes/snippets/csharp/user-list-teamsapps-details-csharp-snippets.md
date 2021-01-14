@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var installedApps = await graphClient.Users["{id}"].Teamwork.InstalledApps
 	.Request()
-	.Expand("teamsAppDefinition")
+	.Expand("teamsAppDefinition($expand=bot)")
 	.GetAsync();
 
 ```
