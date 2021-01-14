@@ -23,7 +23,7 @@ In the case of multi-step approvals, it's important to distinguish between decis
 |justification|String|The approval decision justification. |
 |reviewedBy|[userIdentity](../resources/useridentity.md)|The details of the reviewer. |
 |reviewedDateTime|DateTimeOffset|The date and time when a decision was recorded. <br>The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.|
-|reviewResult|approvalReviewResult|The result of the approval record. Possible values are: `NotReviewed`,  `Approved`, or  `Denied.` |
+|reviewResult|String|The result of the approval record. Possible values are: `NotReviewed`,  `Approved`, or  `Denied.` |
 
 ## Relationships
 None.
