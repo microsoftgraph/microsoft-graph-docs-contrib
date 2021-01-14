@@ -24,7 +24,7 @@ Inherits from [entity](../resources/entity.md).
 |[Get tag](../api/tag-get.md)|[tag](../resources/tag.md)|Read the properties and relationships of a [tag](../resources/tag.md) object.|
 |[Update tag](../api/tag-update.md)|[tag](../resources/tag.md)|Update the properties of a [tag](../resources/tag.md) object.|
 |[Delete tag](../api/tag-delete.md)|None|Deletes a [tag](../resources/tag.md) object.|
-|[asHierarchy](../api/tag-ashierarchy.md)|[tag](../resources/tag.md) collection|Lists all tags including their hierarchy.|
+|[asHierarchy](../api/tag-list-ashierarchy.md)|[tag](../resources/tag.md) collection|Lists all tags including their hierarchy.|
 |[List childTags](../api/tag-list-childtags.md)|[tag](../resources/tag.md) collection|Get the tag resources from the childTags navigation property.|
 
 ## Properties
