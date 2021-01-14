@@ -183,7 +183,7 @@ items:
     - name: Known issues
       href: /graph/known-issues?context=graph/api/beta
     - name: Changelog
-      href: /graph/changelog?context=graph/api/beta
+      href: https://developer.microsoft.com/en-us/graph/changelog
     - name: Errors
       href: /graph/errors?context=graph/api/beta
   - name: Beta reference
