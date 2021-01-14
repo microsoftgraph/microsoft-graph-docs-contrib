@@ -466,9 +466,9 @@ items:
           - name: Use Graph Explorer
             items:
             - name: Get started
-              href: graph-explorer-overview.md
+              href: graph-explorer/graph-explorer-overview.md
             - name: Features
-              href: graph-explorer-features.md
+              href: graph-explorer/graph-explorer-features.md
           - name: Use Postman
             href: use-postman.md
       - name: Migrate

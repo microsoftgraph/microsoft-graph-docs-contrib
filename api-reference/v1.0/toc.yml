@@ -69,9 +69,9 @@ items:
     - name: Use Graph Explorer
       items:
       - name: Get started
-        href: /graph/graph-explorer-overview?context=graph/api/1.0
+        href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/1.0
       - name: Features
-        href: /graph/graph-explorer-features?context=graph/api/1.0
+        href: /graph/graph-explorer/graph-explorer-features?context=graph/api/1.0
     - name: Use Postman
       href: /graph/use-postman?context=graph/api/1.0
   - name: Migrate
