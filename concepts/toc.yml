@@ -17,7 +17,7 @@ items:
           - name: What's new highlights
             href: whats-new-overview.md
           - name: API changelog
-            href: https://developer.microsoft.com/en-us/graph/changelog
+            href: https://developer.microsoft.com/graph/changelog
       - name: Users you can reach
         items:
           - name: Overview
