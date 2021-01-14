@@ -3,24 +3,6 @@
     {
       "ChangeList": [
         {
-          "Id": "029ff30d-e114-46fa-9096-c82536acdd6f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "profile,addresses,anniversaries,awards,certifications,notes,patents,publications",
-          "ChangeType": "Addition",
-          "Description": "Added the following new relationships to the [profile](https://docs.microsoft.com/en-us/graph/api/resources/profile?view=graph-rest-beta) API with associated entities and methods: \u003Cul\u003E\u003Cli\u003E[addresses](https://docs.microsoft.com/en-us/graph/api/resources/itemAddress?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[anniversaries](https://docs.microsoft.com/en-us/graph/api/resources/personAnniversary?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[awards](https://docs.microsoft.com/en-us/graph/api/resources/personAward?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[certifications](https://docs.microsoft.com/en-us/graph/api/resources/personCertification?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[notes](https://docs.microsoft.com/en-us/graph/api/resources/personAnnotation?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[patents](https://docs.microsoft.com/en-us/graph/api/resources/itemPatent?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[publications](https://docs.microsoft.com/en-us/graph/api/resources/itemPublication?view=graph-rest-beta)\u003C/li\u003E\u003C/ul\u003E",
-          "Target": "profile,addresses,anniversaries,awards,certifications,notes,patents,publications"
-        }
-      ],
-      "Id": "31591e8c-641d-455a-bdea-5b111f39b085",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2020-08-01T00:00:00",
-      "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " Profile"
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "31591e8c-641d-455a-bdea-5b111f39b085",
           "ApiChange": "Resource",
           "ChangedApiName": "profile,addresses,anniversaries,awards,certifications,notes,patents,publications",
