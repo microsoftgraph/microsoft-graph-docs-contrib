@@ -1694,6 +1694,10 @@ items:
             href: api/printjob-update-configuration.md
           - name: Cancel
             href: api/printjob-cancel.md
+          - name: Abort
+            href: api/printjob-abort.md
+          - name: Redirect
+            href: api/printjob-redirect.md
         - name: Print operation
           href: resources/printoperation.md
           items:
@@ -10244,7 +10248,16 @@ items:
               href: api/fido2authenticationmethod-get.md
             - name: Delete
               href: api/fido2authenticationmethod-delete.md
-          - name: Microsoft Authenticator Passwordless Phone Sign-In
+          - name: Microsoft Authenticator 
+            href: resources/microsoftauthenticatorauthenticationmethod.md
+            items:
+            - name: List
+              href: api/microsoftauthenticatorauthenticationmethod-list.md
+            - name: Get
+              href: api/microsoftauthenticatorauthenticationmethod-get.md
+            - name: Delete
+              href: api/microsoftauthenticatorauthenticationmethod-delete.md
+          - name: Microsoft Authenticator Passwordless Phone Sign-In (deprecated)
             href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
             items:
             - name: List
@@ -10253,6 +10266,15 @@ items:
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
             - name: Delete
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
+          - name: Windows Hello for Business
+            href: resources/windowshelloforbusinessauthenticationmethod.md
+            items:
+            - name: List
+              href: api/windowshelloforbusinessauthenticationmethod-list.md
+            - name: Get
+              href: api/windowshelloforbusinessauthenticationmethod-get.md
+            - name: Delete
+              href: api/windowshelloforbusinessauthenticationmethod-delete.md
           - name: Phone
             href: resources/phoneauthenticationmethod.md
             items:
@@ -10835,7 +10857,7 @@ items:
               href: api/identityapiconnector-delete.md
       - name: Governance
         items:
-        - name: Access reviews (groups)
+        - name: Access reviews for groups
           href: resources/accessreviewsv2-root.md
           items:
           - name: Access review schedule definition
@@ -10877,7 +10899,7 @@ items:
               href: api/accessreviewinstancedecisionitem-listpendingapproval.md
             - name: Update
               href: api/accessreviewinstancedecisionitem-update.md
-        - name: Access reviews (all resources)
+        - name: Access reviews
           href: resources/accessreviews-root.md
           items:
           - name: Access review

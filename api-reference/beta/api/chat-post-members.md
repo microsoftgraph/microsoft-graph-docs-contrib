@@ -43,7 +43,7 @@ In the request body, supply a JSON representation of the [conversationMember](..
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a Location header that provides a url path to the newly created member object.
+If successful, this method returns a `201 Created` response code and a Location header that provides a URL path to the newly created member object.
 
 ## Examples
 

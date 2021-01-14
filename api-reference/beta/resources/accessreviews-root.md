@@ -7,14 +7,14 @@ ms.prod: "microsoft-identity-platform"
 doc_type: conceptualPageType
 ---
 
-# Azure AD access reviews (all resources)
+# Azure AD access reviews (for resources excluding groups)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->For access review APIs that apply to group memberships, see [Access Reviews (group memberships)](accessreviewsv2-root.md). These access review APIs apply to all other resource types.
+>The access review APIs in this section apply to all supported resource types _except for groups_. For access review APIs that apply to group memberships, see [Access reviews for groups](accessreviewsv2-root.md). 
 
 You can use [Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of user's access rights.
 
