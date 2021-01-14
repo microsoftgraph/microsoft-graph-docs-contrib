@@ -24,6 +24,3 @@ The following Graph resources are available to manage company terms and conditio
 - [Terms and conditions acceptance status](intune-companyterms-termsandconditionsacceptancestatus.md)
 - [Terms and conditions assignment](intune-companyterms-termsandconditionsassignment.md)
 - [Terms and conditions group assignment](intune-companyterms-termsandconditionsgroupassignment.md)
-
-
-

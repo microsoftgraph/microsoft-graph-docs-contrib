@@ -27,5 +27,3 @@ Defender TamperProtection setting options
 
 
 
-
-
