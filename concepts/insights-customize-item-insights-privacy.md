@@ -31,7 +31,7 @@ Confirm the following additional prerequisites. Then you can use the [Microsoft 
 
 #### Command examples
 > [!NOTE]
-> Because item insights commands are only available in Beta, switch to the beta Profile before calling it.
+> Because item insights commands are only available in beta, switch to the beta profile before calling it.
 > ```powershell
 >    Select-MgProfile beta
 > ```
@@ -40,18 +40,18 @@ To get item insights configuration for an organization, use the Microsoft Graph 
    Get-MgOrganizationSettingItemInsight -OrganizationId $OrgID
 ```
 
-By default, item insights are enabled for the entire organization. You can use the Microsoft Graph PowerShell module  to change that and disable item insights for everyone in the organization. 
+By default, item insights are enabled for the entire organization. You can use the Microsoft Graph PowerShell module to change that and disable item insights for everyone in the organization. 
 > [!NOTE]
-> Update method requires additional `User.ReadWrite` permissions. To create Graph session with specific required scope use the following command and consent requested permissions.
+> The update method requires additional `User.ReadWrite` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
 > ```powershell
 >    Connect-MgGraph -Scopes "User.Read","User.ReadWrite"
 > ```
 
-Use the following command, where you replace `$OrgID` with your organization ID and specify `-IsEnabledInOrganization` as `false` :
+Use the following command, where you replace `$OrgID` with your organization ID and specify `-IsEnabledInOrganization` as `false`.
 ```powershell
    Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -IsEnabledInOrganization:$false
 ```
-Alternatively, you can change the default and disable item insights for a specific Azure AD group. Use the following command, where you replace `$OrgID` with your organization ID, and `$GroupID` with the Azure AD group ID:
+Alternatively, you can change the default and disable item insights for a specific Azure AD group. Use the following command, where you replace `$OrgID` with your organization ID, and `$GroupID` with the Azure AD group ID.
 ```powershell
    Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -DisabledForGroup $GroupId
 ```
