@@ -68,6 +68,12 @@ items:
         href: /graph/extensibility-open-users?context=graph/api/beta
       - name: Use schema extensions (example)
         href: /graph/extensibility-schema-groups?context=graph/api/beta
+    - name: Use Graph Explorer
+      items:
+      - name: Get started
+        href: /graph/graph-explorer-overview?context=graph/api/beta
+      - name: Features
+        href: /graph/graph-explorer-features?context=graph/api/beta
     - name: Use Postman
       href: /graph/use-postman?context=graph/api/beta
   - name: Migrate

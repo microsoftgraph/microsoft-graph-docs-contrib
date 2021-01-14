@@ -463,13 +463,14 @@ items:
                 href: extensibility-open-users.md
               - name: Use schema extensions (example)
                 href: extensibility-schema-groups.md
-          - name: Graph explorer overview
-            href: graph-explorer-overview.md
-          - name: Graph explorer features
-            href: graph-explorer-features.md          
+          - name: Use Graph Explorer
+            items:
+            - name: Get started
+              href: graph-explorer-overview.md
+            - name: Features
+              href: graph-explorer-features.md
           - name: Use Postman
             href: use-postman.md
-
       - name: Migrate
         expanded: false
         items:

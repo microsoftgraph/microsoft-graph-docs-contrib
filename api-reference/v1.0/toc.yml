@@ -66,6 +66,12 @@ items:
         href: /graph/extensibility-open-users?context=graph/api/1.0
       - name: Use schema extensions (example)
         href: /graph/extensibility-schema-groups?context=graph/api/1.0
+    - name: Use Graph Explorer
+      items:
+      - name: Get started
+        href: /graph/graph-explorer-overview?context=graph/api/1.0
+      - name: Features
+        href: /graph/graph-explorer-features?context=graph/api/1.0
     - name: Use Postman
       href: /graph/use-postman?context=graph/api/1.0
   - name: Migrate
