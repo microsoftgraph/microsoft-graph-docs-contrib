@@ -62,8 +62,8 @@ If successful, this method returns a `201 Created` response code and a [userSour
 
 ### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_usersource_from_"
@@ -80,6 +80,7 @@ Content-length: 233
     "includedSources":"mailbox, site"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-usersource-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -97,7 +98,6 @@ Content-length: 233
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

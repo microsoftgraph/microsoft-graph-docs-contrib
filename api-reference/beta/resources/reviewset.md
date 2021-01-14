@@ -24,6 +24,7 @@ Represents static set of electronically stored information collected for use in 
 | [Create reviewSet](../api/case-post-reviewsets.md) | [reviewSet](reviewset.md) | Create a new **reviewset**. |
 | [List queries](../api/reviewsetquery-list.md)|[reviewSetQuery](../resources/reviewsetquery.md) collection|Get the reviewSetQuery resources from the queries navigation property.|
 | [Export](../api/reviewset-export.md) | None | Initiates a export of data from the **reviewset**. |
+| [addToReviewSet](../api/reviewset-addtoreviewset.md)|None|Adds data from a **sourceCollection** to a **reviewset**|
 
 ## Properties
 

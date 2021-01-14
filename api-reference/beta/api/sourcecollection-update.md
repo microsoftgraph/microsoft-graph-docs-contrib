@@ -1,19 +1,17 @@
 ---
-title: "Update legalhold"
-description: "Update the properties of a legalhold object."
-localization_priority: Normal
+title: "Update sourceCollection"
+description: "Update the properties of a sourceCollection object."
 author: "mahage-msft"
+localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Update legalhold
+# Update sourceCollection
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Update the properties of a [legalhold](../resources/legalhold.md) object.
+Update the properties of a [sourceCollection](../resources/sourcecollection.md) object.
 
 ## Permissions
 
@@ -33,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-PATCH /compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}
+PATCH /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId}
 ```
 
 ## Request headers
@@ -45,9 +43,9 @@ PATCH /compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}
 
 ## Request body
 
-In the request body, supply a JSON representation of the [legalhold](../resources/legalhold.md) object.
+In the request body, supply a JSON representation of the [sourceCollection](../resources/sourcecollection.md) object.
 
-The following table shows the properties that are required when you update the [legalhold](../resources/legalhold.md).
+The following table shows the properties that are required when you update the [sourceCollection](../resources/sourcecollection.md).
 
 None
 
@@ -61,17 +59,17 @@ If successful, this action returns a `204 No Content` response code.
 
 <!-- {
   "blockType": "request",
-  "name": "update_legalhold"
+  "name": "update_sourcecollection"
 }
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}
+PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sourceCollections/1a9b4145d8f84e39bc45a7f68c5c5119
 Content-Type: application/json
-Content-length: 295
+Content-length: 247
 
 {
-  "description": "This is a description for a legalhold"
+    "displayName": "Quarterly Financials search",
 }
 ```
 
@@ -80,8 +78,7 @@ Content-length: 295
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.legalhold"
+  "truncated": true
 }
 -->
 

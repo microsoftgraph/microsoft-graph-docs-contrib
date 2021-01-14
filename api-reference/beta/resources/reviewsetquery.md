@@ -22,8 +22,9 @@ Review set queries are used to query and cull data stored in an eDiscovery [revi
 | [List queries](../api/reviewsetquery-list.md) | [reviewSetQuery](reviewsetquery.md) collection | List the review set queries in a review set. |
 | [Create queries](../api/reviewsetquery-post.md) | [reviewSetQuery](reviewsetquery.md) | Create a new review set query. |
 | [Get queries](../api/reviewsetquery-get.md) | [reviewSetQuery](reviewsetquery.md) | Read the properties and relationships of a **reviewSetQuery** object. |
-| [Update queries](../api/reviewsetquery-update.md) | None | Update a review set query. |
-| [Delete queries](../api/reviewsetquery-delete.md) | None | Delete review set query. |
+| [Update reviewSetQuery](../api/reviewsetquery-update.md) | None | Update a review set query. |
+| [Delete reviewSetQuery](../api/reviewsetquery-delete.md) | None | Delete review set query. |
+| [applyTags](../api/reviewsetquery-applytags.md)|None|Apply tags to documents that match the specified query|
 
 ## Properties
 

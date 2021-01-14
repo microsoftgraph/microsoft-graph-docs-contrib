@@ -49,13 +49,11 @@ In the request body, supply a JSON representation of the [custodian](../resource
 
 The following table lists the properties of a [custodian](../resources/custodian.md) object that can be modified.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|applyHoldToSources|Boolean|Identifies whether a custodian's sources were placed on hold during creation. For details, see [Place custodians on hold](/microsoft-365/compliance/add-custodians-to-case#step-4-place-custodians-on-hold).|
+None
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [custodian](../resources/custodian.md) object in the response body.
+If successful, this action returns a `204 No Content` response code.
 
 ## Examples
 
@@ -78,6 +76,7 @@ Content-length: 254
   "applyHoldToSources": "false",
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-custodian-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -96,7 +95,6 @@ Content-length: 254
 
 ---
 
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
@@ -108,19 +106,5 @@ Content-length: 254
 -->
 
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases/4c8f8f70-7785-4bd4-b296-c98376a2c5e1/custodians/$entity",
-    "email": "AdeleV@contoso.com",
-    "applyHoldToSources": false,
-    "status": "active",
-    "createdDateTime": "2020-10-30T20:59:54.9900703Z",
-    "lastModifiedDateTime": "2020-10-30T21:01:34.1400013Z",
-    "releasedDateTime": null,
-    "acknowledgedDateTime": null,
-    "id": "45454331323337443946343043464239",
-    "displayName": "Adele Vance"
-}
+HTTP/1.1 204 No Content
 ```

@@ -1,8 +1,8 @@
 ---
 title: "case resource type"
 description: "eDiscovery cases are containers that contain custodians, holds, collections, review sets, and exports."
-localization_priority: Normal
 author: "mahage-msft"
+localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: "resourcePageType"
 ---
@@ -32,6 +32,10 @@ eDiscovery cases are containers that contain custodians, holds, collections, rev
 | [Create reviewSets](../api/case-post-reviewsets.md)  | [reviewSet](../resources/reviewset.md)           | Create a new reviewSet object.|
 | [List legal holds](../api/case-list-legalholds.md)   | [legalhold](../resources/legalhold.md) collection | Get the legalhold resources from the case navigation property.|
 | [Create legal holds](../api/case-post-legalholds.md)  | [legalhold](../resources/legalhold.md)           | Create a new legalhold object.|
+| [List sourceCollections](../api/case-list-sourcecollections.md)|[sourceCollection](../resources/sourcecollection.md) collection|Get the sourceCollection resources from the sourceCollections navigation property.|
+| [Create sourceCollection](../api/case-post-sourcecollections.md)|[sourceCollection](../resources/sourcecollection.md)|Create a new sourceCollection object.|
+| [List tags](../api/case-list-tags.md)|[tag](../resources/tag.md) collection|Get the tag resources from the tags navigation property.|
+| [Create tag](../api/case-post-tags.md)|[tag](../resources/tag.md)|Create a new tag object.|
 
 ## Properties
 
@@ -67,6 +71,8 @@ eDiscovery cases are containers that contain custodians, holds, collections, rev
 |Legal holds|[legalhold](../resources/legalhold.md) collection| Returns a list of case **legalHold**s for this **case**.  Nullable. |
 |Operations|[caseOperation](../resources/caseoperation.md) collection| Returns a list of case **operation**s for this **case**. Nullable. |
 |Review sets|[reviewSet](../resources/reviewset.md) collection| Collection of review sets in the case. Read-only. Nullable. |
+|sourceCollections|[sourceCollection](../resources/sourcecollection.md) collection|**TODO: Add Description**|
+|tags|[tag](../resources/tag.md) collection|**TODO: Add Description**|
 
 ## JSON representation
 

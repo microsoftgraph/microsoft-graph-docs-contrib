@@ -41,11 +41,10 @@ None
 |Member|Description|
 |:----|-----------|
 | `contentExport` | The operation represents a content export. |
-| `tag` | The operation represents bulk tagging documents in a review set. |
+| `applyTags` | The operation represents bulk tagging documents in a review set. |
 | `convertToPdf` | The operation represents converting documents to PDFs with redactions. |
-| `index` | The operation represents initiation of re-indexing a custodian's index. |
-| `search`  | The operation represents searching against Microsoft 365 services such as Exchange, SharePoint and OneDrive for business. |
-| `addDataToReviewSet` | The operation represents adding data to a review set from an eDiscovery collection. |
+| `estimateStatistics`  | The operation represents searching against Microsoft 365 services such as Exchange, SharePoint and OneDrive for business. |
+| `addToReviewSet` | The operation represents adding data to a review set from an eDiscovery collection. |
 
 ### caseOperationStatus values
 

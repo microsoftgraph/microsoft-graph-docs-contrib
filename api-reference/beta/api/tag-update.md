@@ -1,19 +1,17 @@
 ---
-title: "Update legalhold"
-description: "Update the properties of a legalhold object."
-localization_priority: Normal
+title: "Update tag"
+description: "Update the properties of a tag object."
 author: "mahage-msft"
+localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Update legalhold
+# Update tag
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Update the properties of a [legalhold](../resources/legalhold.md) object.
+Update the properties of a [tag](../resources/tag.md) object.
 
 ## Permissions
 
@@ -33,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-PATCH /compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}
+PATCH /compliance/ediscovery/cases/{caseId}/tags/{tagId}
 ```
 
 ## Request headers
@@ -45,15 +43,15 @@ PATCH /compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}
 
 ## Request body
 
-In the request body, supply a JSON representation of the [legalhold](../resources/legalhold.md) object.
+In the request body, supply a JSON representation of the [tag](../resources/tag.md) object.
 
-The following table shows the properties that are required when you update the [legalhold](../resources/legalhold.md).
+The following table shows the properties that are required when you update the [tag](../resources/tag.md).
 
 None
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -61,17 +59,17 @@ If successful, this action returns a `204 No Content` response code.
 
 <!-- {
   "blockType": "request",
-  "name": "update_legalhold"
+  "name": "update_tag"
 }
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}
+PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/tags/e54b3f535b434a9a8743b84e34c00504
 Content-Type: application/json
-Content-length: 295
+Content-length: 210
 
 {
-  "description": "This is a description for a legalhold"
+  "description":"This is an updated description."
 }
 ```
 
@@ -80,8 +78,7 @@ Content-length: 295
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.legalhold"
+  "truncated": true
 }
 -->
 

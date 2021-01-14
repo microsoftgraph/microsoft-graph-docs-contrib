@@ -1,19 +1,17 @@
 ---
-title: "Update legalhold"
-description: "Update the properties of a legalhold object."
-localization_priority: Normal
+title: "reviewSetQuery: applyTags"
+description: "Apply tags to documents that match the specified query"
 author: "mahage-msft"
+localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Update legalhold
+# reviewSetQuery: applyTags
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Update the properties of a [legalhold](../resources/legalhold.md) object.
+Apply tags to documents that match the specified query
 
 ## Permissions
 
@@ -33,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-PATCH /compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}
+POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewSetId}/queries/{reviewSetQueryId}/applyTags
 ```
 
 ## Request headers
@@ -45,11 +43,14 @@ PATCH /compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}
 
 ## Request body
 
-In the request body, supply a JSON representation of the [legalhold](../resources/legalhold.md) object.
+In the request body, supply JSON representation of the parameters.
 
-The following table shows the properties that are required when you update the [legalhold](../resources/legalhold.md).
+The following table shows the parameters that can be used with this action.
 
-None
+|Parameter|Type|Description|
+|:---|:---|:---|
+|tagsToAdd|[tag](../resources/tag.md) collection|Ids of tags to add to the documents that match the query.|
+|tagsToRemove|[tag](../resources/tag.md) collection|Ids of tags to add to the documents that match the query.|
 
 ## Response
 
@@ -61,17 +62,22 @@ If successful, this action returns a `204 No Content` response code.
 
 <!-- {
   "blockType": "request",
-  "name": "update_legalhold"
+  "name": "reviewsetquery_applytags"
 }
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}
+POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/reviewsets/6c95c2a6-31fa-45a8-93ef-dd4531974783/queries/b4798d14-748d-468e-a1ec-96a2b1d49677/applyTags
+
 Content-Type: application/json
-Content-length: 295
+Content-length: 778
 
 {
-  "description": "This is a description for a legalhold"
+    "tagsToAdd": [
+        {
+            "ID": "b4798d14-748d-468e-a1ec-96a2b1d49677"
+        }
+    ]
 }
 ```
 
@@ -80,8 +86,7 @@ Content-length: 295
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.legalhold"
+  "truncated": true
 }
 -->
 
