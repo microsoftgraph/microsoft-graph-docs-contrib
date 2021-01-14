@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     |  EntitlementManagement.ReadWrite.All  |
+| Delegated (work or school account)     | EntitlementManagement.ReadWrite.All  |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -139,7 +139,7 @@ Content-type: application/json
 
 The following is an example of the request. In this example, we use the `@odata.bind` annotation to assign the `id` of the `accessPackageResourceEnvironment` to an `accessPackageResourceEnvironment` object.
 
-# HTTP request
+
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests_with_accessPackageResourceEnvironment"
@@ -197,7 +197,7 @@ Content-type: application/json
 
 The following is an example of the request. In this example, we specify the parameters of an `accessPackageResourceEnvironment` in an `accessPackageResourceEnvironment` object.
 
-# HTTP request
+
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests_with_accessPackageResourceEnvironment_New"
