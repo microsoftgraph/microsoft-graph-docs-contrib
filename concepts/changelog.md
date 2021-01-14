@@ -13,12 +13,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## January 2021
 
-### Applications
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | Added delegated permissions support for personal Microsoft accounts to v1.0 APIs. |
-
 ### Reports | Authentication Methods
 
 | **Change type** | **Version** | **Description** |
@@ -34,6 +28,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the **includedUserRoles** enumeration type|
 |Addition|beta|Added the [usersRegisteredByFeature](https://docs.microsoft.com/en-us/graph/api/authenticationMethodsRoot-usersRegisteredByFeature?view=graph-rest-beta&preserve-view=true) method to the [authenticationMethodsRoot](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta&preserve-view=true) resource|
 |Addition|beta|Added the [usersRegisteredByMethod](https://docs.microsoft.com/en-us/graph/api/authenticationMethodsRoot-usersRegisteredByMethod?view=graph-rest-beta&preserve-view=true) method to the [authenticationMethodsRoot](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta&preserve-view=true) resource|
+
+### Applications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added delegated permissions support for personal Microsoft accounts to v1.0 APIs. |
 
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |

@@ -349,6 +349,7 @@ Namespace: microsoft.graph
 |fido|
 |appPassword|
 |unknownFutureValue|
+
 ### authenticationMethodKeyStrength values
 
 |Member|
