@@ -11,22 +11,18 @@ var team = new Team
 	MemberSettings = new TeamMemberSettings
 	{
 		AllowCreatePrivateChannels = true,
-		AllowCreateUpdateChannels = true,
-		ODataType = null
+		AllowCreateUpdateChannels = true
 	},
 	MessagingSettings = new TeamMessagingSettings
 	{
 		AllowUserEditMessages = true,
-		AllowUserDeleteMessages = true,
-		ODataType = null
+		AllowUserDeleteMessages = true
 	},
 	FunSettings = new TeamFunSettings
 	{
 		AllowGiphy = true,
-		GiphyContentRating = GiphyRatingType.Strict,
-		ODataType = null
-	},
-	ODataType = null
+		GiphyContentRating = GiphyRatingType.Strict
+	}
 };
 
 await graphClient.Groups["{id}"].Team
