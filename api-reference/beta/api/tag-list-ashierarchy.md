@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.compliance.ediscovery.contract.tag)"
+  "@odata.type": "Collection(microsoft.graph.tag)"
 }
 -->
 
@@ -79,7 +79,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.compliance.ediscovery.contract.tag",
+      "@odata.type": "#microsoft.graph.tag",
       "id": "String (identifier)",
       "displayName": "String",
       "description": "String",

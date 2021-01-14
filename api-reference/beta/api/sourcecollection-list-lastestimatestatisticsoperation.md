@@ -94,14 +94,7 @@ Content-Type: application/json
         "unindexedItemCount": 0,
         "unindexedItemsSize": 0,
         "mailboxCount": 2,
-        "siteCount": 0,
-        "createdBy": {
-            "user": {
-                "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
-                "displayName": "EDisco Admin",
-                "userPrincipalName": "admin@contoso.com"
-            }
-        }
+        "siteCount": 0
     }
   ]
 }
