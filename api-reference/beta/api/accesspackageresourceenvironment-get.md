@@ -1,6 +1,6 @@
 ---
 title: "Get accessPackageResourceEnvironment"
-description: "Retrieve an accessPackageResourceEnvironment."
+description: "Read the properties and relationships of an accessPackageResourceEnvironment object."
 author: "markwahl-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"

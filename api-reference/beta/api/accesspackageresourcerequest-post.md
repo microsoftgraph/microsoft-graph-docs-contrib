@@ -46,14 +46,14 @@ In the request body, supply a JSON representation of an [accessPackageResourceRe
 
 To add an Azure AD group as a resource to a catalog, the value of the **originSystem** property within the `accessPackageResource` should be **AadGroup** and the value of the **originId** is the identifier of the group.
 
-To specify the geolocation environment for a multi-geolocation Sharepoint Onnline resource, include the `accessPackageResourceEnvironment` relationship in the `accessPackageResource` object. This can be done in two ways:
+To assign the geolocation environment for a multi-geolocation Sharepoint Online resource, include the **accessPackageResourceEnvironment** relationship in the `accessPackageResource` object. This can be done in two ways:
 + Use `@odata.bind` annotation to assign the `id` of the `accessPackageResourceEnvironment` to an `accessPackageResourceEnvironment` object.
 + Specify the parameters of an `accessPackageResourceEnvironment` in an `accessPackageResourceEnvironment` object.
 
 
 ## Response
 
-If successful, this method returns a 200-series response code and a new [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) object in the response body.
 
 ## Examples
 
@@ -133,7 +133,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Create an accessPackageResourceRequest for a resource with an assigned accessPackageResourceEnvironment
+### Example 2: Create an accessPackageResourceRequest for a resource and assign an existing accessPackageResourceEnvironment
 
 #### Request
 
@@ -191,7 +191,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Create an accessPackageResourceRequest for a resource with an assigned accessPackageResourceEnvironment
+### Example 3: Create an accessPackageResourceRequest for a resource and assign a new accessPackageResourceEnvironment
 
 #### Request
 
@@ -200,7 +200,7 @@ The following is an example of the request. In this example, we specify the para
 # HTTP request
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests_with_accessPackageResourceEnvironment_Ex2"
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests_with_accessPackageResourceEnvironment_New"
 }-->
 
 ```http

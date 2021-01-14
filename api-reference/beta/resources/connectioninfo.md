@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The connectionInfo object holds the connection information which will be used by Entitlement Management (ELM) to communicate with a resource.
+The connectionInfo object holds the resource locator which will be used by Entitlement Management (ELM) to communicate with a resource.
 
 ## Properties
 |Property|Type|Description|
