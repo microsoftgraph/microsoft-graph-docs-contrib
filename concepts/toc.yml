@@ -385,7 +385,7 @@ items:
           - name: Licenses for subscribing to chat messages
             href: teams-licenses.md
           - name: Send proactive messages with a bot
-            href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages
+            href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
           - name: Send activity feed notifications
             href: teams-send-activityfeednotifications.md
       - name: To-do tasks
