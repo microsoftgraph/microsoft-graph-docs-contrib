@@ -85,7 +85,7 @@ Content-length: 272
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.compliance.ediscovery.contract.sourceCollection"
+  "@odata.type": "microsoft.graph.sourceCollection"
 }
 -->
 

@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/source
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.compliance.ediscovery.contract.sourceCollection"
+  "@odata.type": "microsoft.graph.sourceCollection"
 }
 -->
 
@@ -99,14 +99,14 @@ Content-Type: application/json
         "user": {
             "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
             "displayName": "EDisco Admin",
-            "userPrincipalname": "admin@ediscodemo.onmicrosoft.com"
+            "userPrincipalname": "admin@contoso.com"
         }
     },
     "lastModifiedBy": {
         "user": {
             "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
             "displayName": "EDisco Admin",
-            "userPrincipalname": "admin@ediscodemo.onmicrosoft.com"
+            "userPrincipalname": "admin@contoso.onmicrosoft.com"
         }
     },
     "addToReviewSetOperation": {

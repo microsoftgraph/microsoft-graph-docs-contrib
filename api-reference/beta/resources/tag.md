@@ -59,7 +59,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.tag",
-  "baseType": "microsoft.compliance.ediscovery.contract.entity",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->

@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/source
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.compliance.ediscovery.contract.dataSource)"
+  "@odata.type": "Collection(microsoft.graph.dataSource)"
 }
 -->
 
@@ -83,7 +83,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.compliance.ediscovery.contract.dataSource",
+      "@odata.type": "#microsoft.graph.dataSource",
       "id": "0fb67fc5-7fc5-0fb6-c57f-b60fc57fb60f",
       "displayName": "String",
       "createdDateTime": "String (timestamp)",

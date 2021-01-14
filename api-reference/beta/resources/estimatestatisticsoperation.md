@@ -51,7 +51,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.estimateStatisticsOperation",
-  "baseType": "microsoft.compliance.ediscovery.contract.caseOperation",
+  "baseType": "microsoft.graph.caseOperation",
   "openType": false
 }
 -->

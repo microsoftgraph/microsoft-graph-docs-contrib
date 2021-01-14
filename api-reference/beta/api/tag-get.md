@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.compliance.ediscovery.contract.tag"
+  "@odata.type": "microsoft.graph.tag"
 }
 -->
 
@@ -91,7 +91,7 @@ Content-Type: application/json
         "user": {
             "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
             "displayName": "EDisco Admin",
-            "userPrincipalName": "admin@ediscodemo.onmicrosoft.com"
+            "userPrincipalName": "admin@contoso.com"
         }
     },
     "childTags": []

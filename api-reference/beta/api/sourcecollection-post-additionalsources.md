@@ -54,7 +54,6 @@ The following table shows the properties that are required when you create the [
 |createdDateTime|DateTimeOffset|**TODO: Add Description**|
 |createdBy|[identitySet](../resources/identityset.md)|**TODO: Add Description**|
 
-
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [dataSource](../resources/datasource.md) object in the response body.
@@ -86,7 +85,7 @@ Content-length: 179
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.compliance.ediscovery.contract.dataSource"
+  "@odata.type": "microsoft.graph.dataSource"
 }
 -->
 
@@ -95,7 +94,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.compliance.ediscovery.contract.dataSource",
+  "@odata.type": "#microsoft.graph.dataSource",
   "id": "0fb67fc5-7fc5-0fb6-c57f-b60fc57fb60f",
   "displayName": "String",
   "createdDateTime": "String (timestamp)",
