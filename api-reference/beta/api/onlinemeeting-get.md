@@ -15,15 +15,15 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
-For instance:
-- You can get details of an onlineMeeting using VideoTeleconferenceId([example](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)), meeting ID([example](#example-2-retrieve-an-online-meeting-by-meeting-id)) or JoinWebURL([example](#example-3-retrieve-an-online-meeting-by-joinweburl)).
-- You can use `/attendeeReport` path to get attendee report of a live event. See an [example](#example-4-retrieve-the-attendee-report-of-a-live-event) below.
-- You can use `/recording` and `/alternativeRecording` paths to get the recordings of a live event. See also an [example](#example-5-retrieve-the-recording-of-a-live-event) below.
+For example, you can:
+- Get details of an onlineMeeting using [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID]((#example-2-retrieve-an-online-meeting-by-meeting-id), or [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
+- Use the `/attendeeReport` path to get an attendee report of a live event, as shown in [example 4](#example-4-retrieve-the-attendee-report-of-a-live-event).
+- Use the `/recording` and `/alternativeRecording` paths to get the recordings of a live event, as shown in [example 5](#example-5-retrieve-the-recording-of-a-live-event).
 
-Here are some notes for attendee report and recordings:
-- Currently, these resources are available exclusively to live events.
+>**Notes:** 
+- Currently, attendee reports and recordings are available only to live events.
 - Only the event organizer can access attendee reports and recordings.
-- Attendee report and recordings are only available when the live event has concluded.
+- Attendee reports and recordings are only available when the live event has concluded.
 - The download link in the `302 Found` [response](#example-4-retrieve-the-attendee-report-of-a-live-event) expires in **60** seconds.
 
 ## Permissions
