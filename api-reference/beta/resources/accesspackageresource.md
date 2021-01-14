@@ -41,6 +41,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
+|accessPackageResourceEnvironment|[accessPackageResourceEnvironment](accesspackageresourceenvironment.md)| Nullable.|
 |accessPackageResourceRoles|[accessPackageResourceRole](accesspackageresourcerole.md) collection| Read-only. Nullable.|
 |accessPackageResourceScopes|[accessPackageResourceScope](accesspackageresourcescope.md) collection| Read-only. Nullable.|
 
