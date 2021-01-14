@@ -1,6 +1,6 @@
 ---
 title: "microsoftAuthenticatorAuthenticationMethodConfiguration resource type"
-description: "**TODO: Add Description**"
+description: "Represents a Microsoft Authenticator authentication methods policy."
 author: "mmcla"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"

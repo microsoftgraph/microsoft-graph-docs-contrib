@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Represents a Microsoft Authenticator Passwordless Phone Sign-in authentication methods policy. Authentication methods policies define configuration settings and users or groups that are enabled to use the authentication method.
 
 > [!CAUTION]
-> The Microsoft Authenticator Passwordless Phone Sign-in authentication method policy API is deprecated and will stop returning results on December 31, 2020. Please use the new [Microsoft Authenticator authentication method policy](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md).
+> The Microsoft Authenticator Passwordless Phone Sign-in authentication method policy API is deprecated and stopped returning results on December 31, 2020. Please use the new [Microsoft Authenticator authentication method policy](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md).
 
 
 ## Methods
