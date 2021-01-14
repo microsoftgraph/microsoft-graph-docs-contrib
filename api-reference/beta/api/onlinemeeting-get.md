@@ -41,21 +41,21 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To get the specified onlineMeeting via VideoTeleconferenceId:
-<!-- { "blockType": "ignored" } -->
-```http
-GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
-GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
-```
-
-To get the specified onlineMeeting via meeting ID:
+To get the specified onlineMeeting using meeting ID:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-To get the specified onlineMeeting via JoinWebUrl:
+To get the specified onlineMeeting using **videoTeleconferenceId**:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
+GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
+```
+
+To get the specified onlineMeeting using **joinWebUrl**:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
@@ -96,7 +96,10 @@ If the request contains an `Accept-Language` HTTP header, the `content` of `join
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
+If successful, this method returns a `200 OK` response code. The method also includes one of the following:
+
+- If you're getting an online meeting based on meeting ID, **videoTeleconferenceId** or **joinWebUrl**, this method also returns an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
+- If you're getting the attendee report or recording of a live online meeting, this method also returns a `Location` header that indicates the URI to the attendee report or recording, respectively.
 
 ## Examples
 
