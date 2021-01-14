@@ -38,7 +38,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta        | Added the [usageRight](/graph/api/resources/usageright?view=graph-rest-beta&preserve-view=true) resource type. | 
 | Addition          | beta        | Added [usageRights](/graph/api/device-list-usagerights?view=graph-rest-beta&preserve-view=true) navigation property on [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) entity. |
-| Addition          | beta        | Added the **usageRightState** enumeration type. |
+| Addition          | beta        | Added the usageRightState enumeration type. |
 
 ### Identity and access | Identity and sign-in
 
@@ -69,7 +69,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta        | Added the [usageRight](/graph/api/resources/usageright?view=graph-rest-beta&preserve-view=true) resource type. | 
 | Addition          | beta        | Added [usageRights](/graph/api/user-list-usagerights?view=graph-rest-beta&preserve-view=true) navigation property on [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) entity. |
-| Addition          | beta        | Added the **usageRightState** enumeration type. |
+| Addition          | beta        | Added the usageRightState enumeration type. |
 
 ## December 2020
 

@@ -1,7 +1,7 @@
 ---
 title: "List device usageRights"
-description: "Retrieve a list of usageRights objects for a device"
-author: "AkshayMSFT"
+description: "Retrieve a list of usageRights objects for a device."
+author: "jeeshnair"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
@@ -36,14 +36,12 @@ GET /devices/{objectId}/usageRights
 ## Optional query parameters
 This API supports the $filter [OData query parameter](/graph/query-parameters). The following patterns of $filter are supported:
 
-|Examples|
-|:---|:---|
-|$filter = state eq 'value'|
-|$filter = serviceIdentifier eq 'value'|
-|$filter = state eq 'value' and serviceIdentifier eq 'value'|
-|$filter = state in ('value1', 'value2')|
-|$filter = serviceIdentifier in ('value1', 'value2')|
-|$filter = state in ('value1', 'value2') and serviceIdentifier in ('value1', 'value2')|
+- $filter = state eq 'value'
+- $filter = serviceIdentifier eq 'value'
+- $filter = state eq 'value' and serviceIdentifier eq 'value'
+- $filter = state in ('value1', 'value2')
+- $filter = serviceIdentifier in ('value1', 'value2')
+- $filter = state in ('value1', 'value2') and serviceIdentifier in ('value1', 'value2')
 
 ## Request headers
 |Name|Description|
@@ -59,10 +57,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 Additionally, if there are more pages in the response an @odata.nextLink is returned.
 
-## Examples
-
-### Request 1
-This example shows how to get all usageRights for a device.
+## Example 1: Get all usage rights for a device
+ 
+### Request
 <!-- {
   "blockType": "request",
   "name": "list_usageright"
@@ -72,7 +69,7 @@ This example shows how to get all usageRights for a device.
 GET https://graph.microsoft.com/beta/devices/{objectId}/usageRights
 ```
 
-### Response 1
+### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -98,9 +95,9 @@ Content-Type: application/json
 }
 ```
 
-### Request 2
-This example shows how to get usageRights for a device which have a service identifier of 'ABCD' and are in either active or suspended state.
+## Example 2: Get usage rights for a device with specific service identifiers and states
 
+### Request
 <!-- {
   "blockType": "request",
   "name": "list_usageright"
@@ -110,7 +107,7 @@ This example shows how to get usageRights for a device which have a service iden
 GET https://graph.microsoft.com/beta/devices/{objectId}/usageRights?$filter=state in ('active', 'suspended') and serviceIdentifier in ('ABCD')
 ```
 
-### Response 2
+### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

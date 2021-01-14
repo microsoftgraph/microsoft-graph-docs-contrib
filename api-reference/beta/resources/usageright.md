@@ -1,7 +1,7 @@
 ---
 title: "UsageRight resource type"
 description: "Contains information about a usageRight a user/device has assigned"
-author: "AkshayMSFT"
+author: "jeeshnair"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A Usage Right represents a license that a user or device has for either third party software built on power apps or for device based subscriptions (device only).
+A usage right represents a license that a user or device has for either third party software built on power apps or for device based subscriptions (device only).
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List user usageRights](../api/user-list-usagerights.md)|[UsageRight](../resources/usageright.md) collection|Get the list of usage rights a user has.|
-|[List device usageRights](../api/device-list-usagerights.md)|[UsageRight](../resources/usageright.md) collection|Get the list of usage rights a device has.|
+|[List user usageRights](../api/user-list-usagerights.md)|[UsageRight](../resources/usageright.md) collection|Get the list of usage rights for a user.|
+|[List device usageRights](../api/device-list-usagerights.md)|[UsageRight](../resources/usageright.md) collection|Get the list of usage rights for a device.|
 
 ## Properties
 
