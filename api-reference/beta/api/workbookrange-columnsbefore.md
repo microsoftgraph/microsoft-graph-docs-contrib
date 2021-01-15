@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
+GET /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
 
 ```
 
@@ -60,7 +60,7 @@ Here is an example of the request.
   "name": "workbookrange_columnsbefore"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=2)
+GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=2)
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-columnsbefore-csharp-snippets.md)]
