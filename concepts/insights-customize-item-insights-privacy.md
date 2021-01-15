@@ -23,7 +23,7 @@ Item insights settings provide flexibility for administrators to use Azure AD to
 The next section describes using PowerShell cmdlets to configure insights settings. If you're using the REST API, skip the next section and continue with [Configure item insights using REST API](#configure-item-insights-using-rest-api). Then refer to the [read](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) REST operations for more information.
 
 ### How to configure item insights setting via PowerShell?
-Confirm the following additional prerequisites. Then you can use the [Microsoft Graph PowerShell SDK](/graph/powershell/installation) to set item insights for an entire organization or for specific groups.
+Confirm the following additional prerequisites. Then you can use the [Microsoft Graph PowerShell SDK](./powershell/installation.md) to set item insights for an entire organization or for specific groups.
 
 #### Additional prerequisites
 * **PowerShell module** - Install [module version 0.9.1 or higher](https://www.powershellgallery.com/packages/Microsoft.Graph).
