@@ -33,15 +33,15 @@ A usage right represents a license that a user or device has for either third pa
 
 ### usageRightState values 
 
-| Member             | Value | Description               |
-| :----------------- | :---- | :------------------------ |
-|active            | 0     | Indicates that the usage right is active and can be used for provisioning benefits.|
-|inactive               | 1     | Indicates that the usage right is not active and cannot be used for provisioning benefits.|
-|warning             | 2     | Indicates that the usage right is in grace likely due to payment violation. This state can be used to either remind of pending payment or offer a degraded experience.|
-|suspended             | 3     | Indicates that the usage right is suspended likely due to Payment violation|
-|unknownFutureValue  | 4    | Sentinel value to indicate future values. |
+| Member             |  Description               |
+| :----------------- |  :------------------------ |
+|active              | Indicates that the usage right is active and can be used for provisioning benefits.|
+|inactive                | Indicates that the usage right is not active and cannot be used for provisioning benefits.|
+|warning                | Indicates that the usage right is in grace likely due to payment violation. This state can be used to either remind of pending payment or offer a degraded experience.|
+|suspended                | Indicates that the usage right is suspended likely due to Payment violation|
+|unknownFutureValue      | Sentinel value to indicate future values. |
 
->**Note:** Only the active and warning states represent a usable benefit. All other states should be treated as not resulting in a usable benefit (including any future additions to this enum).
+>**Note:** Only the active and warning states represent a usable benefit. All other states should be treated as not resulting in a usable benefit.
 
 
 
