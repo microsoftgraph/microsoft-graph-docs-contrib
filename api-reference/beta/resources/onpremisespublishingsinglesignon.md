@@ -1,5 +1,5 @@
 ---
-title: "kerberosSignOnSettings resource type"
+title: "onPremisesPublishingSingleSignOn resource type"
 description: "Represents the single-sign on settings for an on-premises application published via Application Proxy."
 localization_priority: Normal
 author: "japere"
