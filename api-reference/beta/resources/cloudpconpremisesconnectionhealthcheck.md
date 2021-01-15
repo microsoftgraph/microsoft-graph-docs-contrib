@@ -28,10 +28,10 @@ The result of a cloud PC on-premises connection health check.
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name for this health check item.|
-|status|cloudPcOnPremisesConnectionStatus|The status of the health check item. Read-only. Possible values are: `Pending`, `Running`, `Passed`, `Failed`, `UnknownFutureValue`.|
+|status|[cloudPcOnPremisesConnectionStatus](../resources/enums.md)|The status of the health check item. Read-only. Possible values are: `Pending`, `Running`, `Passed`, `Failed`, `UnknownFutureValue`.|
 |startDateTime|DateTimeOffset|The start time of the health check item. Read-only.|
 |endDateTime|DateTimeOffset|The end time of the health check item. Read-only.|
-|errorType|cloudPcOnPremisesConnectionHealthCheckErrorType|The type of error that occurred during this health check. Possible values are: `DnsCheckFqdnNotFound`, `DnsCheckUnknownError`, `AdJoinCheckFqdnNotFound`, `AdJoinCheckIncorrectCredentials`, `AdJoinCheckOrganizationalUnitNotFound`, `AdJoinCheckOrganizationalUnitIncorrectFormat`, `AdJoinCheckUnknownError`, `EndpointConnectivityCheckUrlNotWhitelisted`, `EndpointConnectivityCheckUnknownError`, `AadConnectivityCheckUnknownError`, `ResourceAvailabilityCheckNoSubnetIP`, `resourceAvailabilityCheckSubscriptionDisabled`, `resourceAvailabilityCheckUnknownError`,`permissionCheckNoSubscriptionReaderRole`, `permissionCheckNoResourceGroupOwnerRole`, `permissionCheckNoVNetContributorRole`, `permissionCheckUnknownError`, `internalServerUnknownError`.|
+|errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](../resources/enums.md)|The type of error that occurred during this health check. Possible values are: `DnsCheckFqdnNotFound`, `DnsCheckUnknownError`, `AdJoinCheckFqdnNotFound`, `AdJoinCheckIncorrectCredentials`, `AdJoinCheckOrganizationalUnitNotFound`, `AdJoinCheckOrganizationalUnitIncorrectFormat`, `AdJoinCheckUnknownError`, `EndpointConnectivityCheckUrlNotWhitelisted`, `EndpointConnectivityCheckUnknownError`, `AadConnectivityCheckUnknownError`, `ResourceAvailabilityCheckNoSubnetIP`, `resourceAvailabilityCheckSubscriptionDisabled`, `resourceAvailabilityCheckUnknownError`,`permissionCheckNoSubscriptionReaderRole`, `permissionCheckNoResourceGroupOwnerRole`, `permissionCheckNoVNetContributorRole`, `permissionCheckUnknownError`, `internalServerUnknownError`.|
 |recommendedAction|String|The recommended action to fix the corresponding error.|
 |additionalDetails|String|Additional details about the health check or the recommended action.|
 
