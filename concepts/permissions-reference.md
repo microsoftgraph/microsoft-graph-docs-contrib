@@ -2088,7 +2088,6 @@ Threat assessment permissions are valid only on work or school accounts.
 | _PrintConnector.ReadWrite.All_ | Read and write print connectors | Allows the application to read and write print connectors on behalf of the signed-in user. | Yes | No |
 | _PrintSettings.Read.All_ | Read tenant-wide print settings | Allows the application to read print settings on behalf of the signed-in user. | Yes | No |
 | _PrintSettings.ReadWrite.All_ | Read and write tenant-wide print settings | Allows the application to read and update print settings on behalf of the signed-in user. | Yes | No |
-| _Reports.Read.All_ | Read all usage reports | Allows the application to read reports on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 
