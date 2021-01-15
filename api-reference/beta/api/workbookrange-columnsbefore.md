@@ -59,7 +59,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "workbookrange_columnsbefore"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=2)
 ```
 # [C#](#tab/csharp)
