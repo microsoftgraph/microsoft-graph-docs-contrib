@@ -38,8 +38,23 @@ Represents the image resource on cloud PC.
 |osBuildNumber|String|The image's OS build version. For example: 1909.|
 |operatingSystem|String|The image's operating system. For example: Windows 10 Enterprise.|
 |lastModifiedDateTime|DateTimeOffset|The data and time that the image was last modified. The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|
-|status|[cloudPcDeviceImageStatus](../resources/enums.md)|The status of the image on cloud PC. Possible status include upload pending, failed to upload, or ready to use. Possible values are: `pending`, `ready`, `failed`.|
-|statusDetails|[cloudPcDeviceImageStatusDetails](../resources/enums.md)|The details of the image's status, which indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`.|
+|status|[cloudPcDeviceImageStatus](#cloudPcDeviceImageStatus)|The status of the image on cloud PC. Possible status include upload pending, failed to upload, or ready to use. Possible values are: `pending`, `ready`, `failed`.|
+|statusDetails|[cloudPcDeviceImageStatusDetails](#cloudPcDeviceImageStatusDetails)|The details of the image's status, which indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`.|
+
+### cloudPcDeviceImageStatus values <a id="cloudPcDeviceImageStatus"></a>
+
+|Member|value|Description|
+|:---|:---|:---|
+|pending|0|The image upload is in progress.|
+|ready|1|The image is ready for use on Cloud PCs.|
+|failed|2|The image couldn’t be uploaded. |
+
+### cloudPcDeviceImageStatusDetails values <a id="cloudPcDeviceImageStatusDetails"></a>
+
+|Member|value|Description|
+|:---|:---|:---|
+|internalServerError|0|There was an internal server error while processing the image.|
+|sourceImageNotFound|1|The source image is not valid for provisioning a windows VM with it.|
 
 ## Relationships
 

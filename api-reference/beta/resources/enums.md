@@ -1518,72 +1518,12 @@ Possible values for user account types (group membership), per Windows definitio
 | entityUrl
 | text
 
-### cloudPcDeviceImageStatus values
-
-|Member|value|Description|
-|:---|:---|:---|
-|pending|0|The image upload is in progress.|
-|ready|1|The image is ready for use on Cloud PCs.|
-|failed|2|The image couldn’t be uploaded. |
-
-### cloudPcDeviceImageStatusDetails values
-
-|Member|value|Description|
-|:---|:---|:---|
-|internalServerError|0|There was an internal server error while processing the image.|
-|sourceImageNotFound|1|The source image is not valid for provisioning a windows VM with it.|
-
-### cloudPcOnPremisesConnectionHealthCheckErrorType values
-
-|Member|value|Description|
-|:---|:---|:---|
-|dnsCheckFqdnNotFound|100|The DNS check failed because the fully qualified domain name was not found. Please re-enter fully qualified domain name.|
-|dnsCheckUnknownError|199|The DNS check failed due to an unknown error.  Please contact Customer Support.|
-|adJoinCheckFqdnNotFound|200|The active domain join check failed because the fully qualified domain name was not found. Please re-enter fully qualified domain name.|
-|adJoinCheckIncorrectCredentials|201|The active domain join check failed because the domain credentials are incorrect. Please update the username and password.|
-|adJoinCheckOrganizationalUnitNotFound|202|The active domain join check failed because the specified organizational unit was not found. Please re-enter organization unit.|
-|adJoinCheckOrganizationalUnitIncorrectFormat|203|The active domain join check failed beccause the format of the specified organizational unit is incorrect. Example format: “OU=OU1,OU=OU2,OU=OU3,DC=DC1”.|
-|adJoinCheckUnknownError|299|The active domain join check failed due to an unknown error.  Please contact Customer Support.|
-|endpointConnectivityCheckUrlNotWhitelisted|300|The endpoint connectivity check failed because the url isn’t on the allowlist in the network firewall settings. Please add URLs to whitelisted network firewall settings. See here for URLs information.|
-|endpointConnectivityCheckUnknownError|399|The endpoint connectivity check failed due to an unknown error. Please contact Customer Support.|
-|aadConnectivityCheckUnknownError|499|The Azure Active Directory connectivity check failed due to an unknown error. Please contact Customer Support.|
-|resourceAvailabilityCheckNoSubnetIP|500|The resource availability check failed because there were no available IP addresses in the subnet. Please free up some or change to another subnet and retry.|
-|resourceAvailabilityCheckSubscriptionDisabled|501|The resource availability check failed due to a disabled Azure subscription. Please re-enable the subscription.|
-|resourceAvailabilityCheckUnknownError|599|The resource availability check failed due to an unknown error. Please contact Customer Support.|
-|permissionCheckNoSubscriptionReaderRole|600|Cloud PC service principal does not have reader permissions on the specified Azure subscription. Please work with subscription owner to add reader role assignment on the Azure subscription for the Cloud PC service principal.|
-|permissionCheckNoResourceGroupOwnerRole|601|Cloud PC service principal does not have owner permissions on the specified resource group. Please work with subscription owner to add owner role assignment on the resource group for the Cloud PC service principal.|
-|permissionCheckNoVNetContributorRole|602|Cloud PC service principal does not have network contributor permissions on the specified virtual network. Please work with subscription owner to add the network contributor role assignment for the Cloud PC service principal. |
-|permissionCheckUnknownError|699|The permission check failed due to an unknown error. Please contact Customer Support.|
-|internalServerUnknownError|999|The health check failed due to an unknown internal server error. Please contact Customer Support.|
-
-### cloudPcOnPremisesConnectionStatus values
-
-|Member|value|Description|
-|:---|:---|:---|
-|pending|0|Created and waiting for health checks.
-|running|10|Health checks are running.|
-|passed|20|Health checks passed.|
-|failed|30|Health checks failed.|
-|unknownFutureValue|999|Unknown future status (reserved, not used right now).|
-
 ### cloudPcProvisioningPolicyImageType values
 
-|Member|value|Description|
-|:---|:---|:---|
-|custom|0|Use to identify the image type as gallery.|
-|gallery|1|Use to identify the image type as custom. |
-
-### cloudPcStatus values
-
-|Member|value|Description|
-|:---|:---|:---|
-|notProvisioned|0|The Cloud PC hasn’t been provisioned.|
-|provisioning|1|Cloud PC provisioning is in progress.|
-|provisioned|2|The Cloud PC is provisioned and can be accessed by end users.|
-|upgrading|3|Cloud PC resize is in progress.|
-|inGracePeriod|4|The Cloud PC is in the one week grace period before it’s deprovisioned.|
-|deprovisioning|5|The Cloud PC is deprovisioning.|
-|failed|6|The operation on Cloud PC has failed.|
+|Member|
+|:---|
+|custom|
+|gallery|
 
 ### chatType values 
 

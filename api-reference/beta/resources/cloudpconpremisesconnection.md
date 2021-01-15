@@ -44,9 +44,19 @@ Represents a defined collection of Azure resource information that can be used t
 |resourceGroupId|String|The ID of the target resource group. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
 |virtualNetworkId|String|The ID of the target virtual network. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
 |subnetId|String|The ID of the target subnet. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
-|healthCheckStatus|[cloudPcOnPremisesConnectionStatus](../resources/enums.md)|The status of the most recent health check done on the on-premises connection. For example, if status is "passed", the on-premises connection has passed all checks run by the service. Read-only. Possible values are: `Pending`, `Running`, `Passed`, `Failed`, `UnknownFutureValue`.|
+|healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudPcOnPremisesConnectionStatus)|The status of the most recent health check done on the on-premises connection. For example, if status is "passed", the on-premises connection has passed all checks run by the service. Read-only. Possible values are: `Pending`, `Running`, `Passed`, `Failed`, `UnknownFutureValue`.|
 |healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|The details of the connection's health checks and the corresponding results. Returned only on `$select`. See an [example](../api/cloudpconpremisesconnection-get.md) of getting the healthCheckStatusDetails property.Read-only.|
 |inUse|Boolean|When true, the on-premises connection is in use. When false, the connection is not in use. You cannot delete a connection that’s in use. Read-only.|
+
+### cloudPcOnPremisesConnectionStatus values <a id="cloudPcOnPremisesConnectionStatus"></a>
+
+|Member|value|Description|
+|:---|:---|:---|
+|pending|0|Created and waiting for health checks.
+|running|10|Health checks are running.|
+|passed|20|Health checks passed.|
+|failed|30|Health checks failed.|
+|unknownFutureValue|999|Unknown future status (reserved, not used right now).|
 
 ## Relationships
 
