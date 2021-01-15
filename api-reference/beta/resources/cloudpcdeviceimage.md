@@ -43,7 +43,7 @@ Represents the image resource on cloud PC.
 
 ### cloudPcDeviceImageStatus values
 
-|Member|value|Description|
+|Member|Value|Description|
 |:---|:---|:---|
 |pending|0|The image upload is in progress.|
 |ready|1|The image is ready for use on Cloud PCs.|
@@ -51,7 +51,7 @@ Represents the image resource on cloud PC.
 
 ### cloudPcDeviceImageStatusDetails values
 
-|Member|value|Description|
+|Member|Value|Description|
 |:---|:---|:---|
 |internalServerError|0|There was an internal server error while processing the image.|
 |sourceImageNotFound|1|The source image is not valid for provisioning a windows VM with it.|

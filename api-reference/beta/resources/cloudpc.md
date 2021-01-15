@@ -44,7 +44,7 @@ Represents a cloud-managed virtual desktop.
 
 ### cloudPcStatus values
 
-|Member|value|Description|
+|Member|Value|Description|
 |:---|:---|:---|
 |notProvisioned|0|The Cloud PC hasn’t been provisioned.|
 |provisioning|1|Cloud PC provisioning is in progress.|

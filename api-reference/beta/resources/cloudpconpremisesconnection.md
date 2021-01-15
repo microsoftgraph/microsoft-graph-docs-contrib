@@ -50,7 +50,7 @@ Represents a defined collection of Azure resource information that can be used t
 
 ### cloudPcOnPremisesConnectionStatus values
 
-|Member|value|Description|
+|Member|Value|Description|
 |:---|:---|:---|
 |pending|0|Created and waiting for health checks.
 |running|10|Health checks are running.|

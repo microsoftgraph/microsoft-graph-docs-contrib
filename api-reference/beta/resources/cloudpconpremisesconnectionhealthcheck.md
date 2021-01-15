@@ -37,7 +37,7 @@ The result of a cloud PC on-premises connection health check.
 
 ### cloudPcOnPremisesConnectionHealthCheckErrorType values
 
-|Member|value|Description|
+|Member|Value|Description|
 |:---|:---|:---|
 |dnsCheckFqdnNotFound|100|The DNS check failed because the fully qualified domain name was not found. Please re-enter fully qualified domain name.|
 |dnsCheckUnknownError|199|The DNS check failed due to an unknown error.  Please contact Customer Support.|
