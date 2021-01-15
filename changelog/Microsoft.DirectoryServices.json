@@ -4,6 +4,22 @@
 
       "ChangeList": [
         {
+          "Id": "168232ce-84de-4160-a457-fa68dd2c35fc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftAuthenticatorAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftAuthenticatorAuthenticationMethodConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-beta) resource and associated methods.",
+          "Target": "microsoftauthenticatorauthenticationmethodconfiguration"
+        },
+        {
+          "Id": "a11a69cf-1424-41a2-87a7-7dde63072a76",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",
+          "ChangeType": "Change",
+          "Description": "Deprecated the [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) resource and associated methods. Please use the new [microsoftAuthenticatorAuthenticationMethodConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-beta) resource",
+          "Target": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration"
+        },
+        {
           "Id": "78f63c95-8c9e-4438-ad45-63f6174a4e33",
           "ApiChange": "Resource",
           "ChangedApiName": "windowsHelloForBusinessAuthenticationMethod",
