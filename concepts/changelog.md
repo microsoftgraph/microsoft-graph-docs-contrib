@@ -18,6 +18,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added delegated permissions support for personal Microsoft accounts to v1.0 APIs. |
+| Addition | beta | Updated the **singleSignOnMode** property of [onpremisesPublishingSingleSignOn](/graph/api/resources/onpremisespublishingsinglesignon.md?view=graph-rest-beta) to include **aadHeaderBased** and **pingHeaderBased** as enumeration types.|
 
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
