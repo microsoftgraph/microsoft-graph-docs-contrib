@@ -34,7 +34,7 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
 |[Sort search results](#sort-search-results)| **sort** |
 |[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
-|[Search Graph connectors](/graph/search-concept-custom-types)| **contentSources** |
+|[Search custom types imported using connectors](/graph/search-concept-custom-types)| **contentSources** |
 
 ## Scope search based on entity types
 
