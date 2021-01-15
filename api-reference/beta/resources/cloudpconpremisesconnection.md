@@ -50,13 +50,13 @@ Represents a defined collection of Azure resource information that can be used t
 
 ### cloudPcOnPremisesConnectionStatus values
 
-|Member|Value|Description|
-|:---|:---|:---|
-|pending|0|Created and waiting for health checks.
-|running|10|Health checks are running.|
-|passed|20|Health checks passed.|
-|failed|30|Health checks failed.|
-|unknownFutureValue|999|Unknown future status (reserved, not used right now).|
+|Member|Description|
+|:---|:---|
+|pending|Created and waiting for health checks.
+|running|Health checks are running.|
+|passed|Health checks passed.|
+|failed|Health checks failed.|
+|unknownFutureValue|Unknown future status (reserved, not used right now).|
 
 ## Relationships
 

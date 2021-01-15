@@ -43,18 +43,18 @@ Represents the image resource on cloud PC.
 
 ### cloudPcDeviceImageStatus values
 
-|Member|Value|Description|
-|:---|:---|:---|
-|pending|0|The image upload is in progress.|
-|ready|1|The image is ready for use on Cloud PCs.|
-|failed|2|The image couldn’t be uploaded. |
+|Member|Description|
+|:---|:---|
+|pending|The image upload is in progress.|
+|ready|The image is ready for use on Cloud PCs.|
+|failed|The image couldn’t be uploaded. |
 
 ### cloudPcDeviceImageStatusDetails values
 
-|Member|Value|Description|
-|:---|:---|:---|
-|internalServerError|0|There was an internal server error while processing the image.|
-|sourceImageNotFound|1|The source image is not valid for provisioning a windows VM with it.|
+|Member|Description|
+|:---|:---|
+|internalServerError|There was an internal server error while processing the image.|
+|sourceImageNotFound|The source image is not valid for provisioning a windows VM with it.|
 
 ## Relationships
 
