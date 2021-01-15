@@ -23,7 +23,7 @@ Represents a Microsoft Authenticator Passwordless Phone Sign-in authentication m
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-get.md) (deprecated)|[passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)|Read the properties and relationships of a passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration object.|
-|[Update](../api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md) (deprecated)|[passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)|Update the properties of a passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration object.|
+|[Update](../api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md) (deprecated) |[passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)|Update the properties of a passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration object.|
 |[Delete](../api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md) (deprecated)|None|Reverts the passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration object to its default configuration.|
 
 
