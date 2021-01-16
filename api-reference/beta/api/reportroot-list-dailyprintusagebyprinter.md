@@ -3,7 +3,7 @@ title: List dailyPrintUsageByPrinter
 description: Retrieve a list of daily print usage summaries, grouped by printer.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 

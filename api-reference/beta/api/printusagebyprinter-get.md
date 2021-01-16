@@ -3,7 +3,7 @@ title: Get printUsageByPrinter
 description: Retrieve a printer's usage summary for a particular time period.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 ms.date: 2/4/2020
 doc_type: apiPageType
 ---

@@ -3,7 +3,7 @@ title: Get printUsageByUser
 description: Retrieve a user's usage summary for a particular time period.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
