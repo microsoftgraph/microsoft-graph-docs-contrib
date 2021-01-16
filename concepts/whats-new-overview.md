@@ -60,7 +60,7 @@ Try a new [tutorial](tutorial-riskdetection-api.md) to learn how to use the [ide
 - [Get a chat between a user and a Teams app](/graph/api/userscopeteamsappinstallation-get-chat).
 
 ### Use the Toolkit
-GA of Microsoft Graph Toolkit 2.0 - this release includes a new [component for Microsoft Graph To-Do tasks](/graph/toolkit/components/todo), distinct from the[Planner tasks component](/graph/toolkit/components/tasks), and an enhanced [person card component](/graph/toolkit/components/person-card). See the [related blog post](https://developer.microsoft.com/en-us/graph/blogs/announcing-the-general-availability-of-microsoft-graph-toolkit-2-0/) for more information.
+GA of Microsoft Graph Toolkit 2.0 - this release includes a new [component for Microsoft Graph To-Do tasks](./toolkit/components/todo.md), distinct from the[Planner tasks component](./toolkit/components/tasks.md), and an enhanced [person card component](./toolkit/components/person-card.md). See the [related blog post](https://developer.microsoft.com/graph/blogs/announcing-the-general-availability-of-microsoft-graph-toolkit-2-0/) for more information.
 
 ## December 2020: New in preview only
 

@@ -17,9 +17,9 @@ localization_priority: Priority
 
 ### Search
 - GA of the Microsoft Search [query API](/graph/api/resources/search-api-overview), supporting scoped searching of the following types of data:
-  - [Outlook messages](/graph/search-concept-messages)
-  - [Outlook calendar events](/graph/search-concept-events)
-  - [OneDrive and SharePoint resources](/graph/search-concept-files).
+  - [Outlook messages](./search-concept-messages.md)
+  - [Outlook calendar events](./search-concept-events.md)
+  - [OneDrive and SharePoint resources](./search-concept-files.md).
 
 ### Teamwork
 
