@@ -1766,25 +1766,25 @@ items:
           - name: Organized by printer
             items:
             - name: Get
-              href: api/printusagesummarybyprinter-get.md
+              href: api/printusagebyprinter-get.md
             - name: List a printer's archived print jobs
               href: api/reports-getprinterarchivedprintjobs.md
             - name: List daily reports by printer
-              href: api/reportroot-list-dailyprintusagesummariesbyprinter.md
+              href: api/reportroot-list-dailyprintusagebyprinter.md
             - name: List monthly reports by printer
-              href: api/reportroot-list-monthlyprintusagesummariesbyprinter.md
+              href: api/reportroot-list-monthlyprintusagebyprinter.md
           - name: Organized by user or group
             items:
             - name: Get
-              href: api/printusagesummarybyuser-get.md
+              href: api/printusagebyuser-get.md
             - name: List a user's archived print jobs
               href: api/reports-getuserarchivedprintjobs.md
             - name: List a group's archived print jobs
               href: api/reports-getgrouparchivedprintjobs.md
             - name: List daily reports by user
-              href: api/reportroot-list-dailyprintusagesummariesbyuser.md
+              href: api/reportroot-list-dailyprintusagebyuser.md
             - name: List monthly reports by user
-              href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
+              href: api/reportroot-list-monthlyprintusagebyuser.md
         - name: Print service
           href: resources/printservice.md
           items:
