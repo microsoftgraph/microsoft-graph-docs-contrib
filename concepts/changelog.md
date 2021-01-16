@@ -101,6 +101,19 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Change | beta | Changed type of allowedGroups relationship on [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) resource. |
 | Change | beta | Updated enum types in [printerProcessingStateDetail](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values) resource. |
 | Addition | beta | Added the [update configuration](/graph/api/printjob-update-configuration?view=graph-rest-beta&preserve-view=true) action to the [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource.|
+| Change | beta | Renamed [printusagesummarybyprinter](/graph/api/resources/printusagesummarybyprinter) resource to **printusagebyprinter**. |
+| Change | beta | Renamed [printusagesummarybyuser](/graph/api/resources/printusagesummarybyuser) resource to **printusagebyuser**. |
+| Change | beta | Renamed api path for [getting dailyprintusagesummariesbyuser](/graph/api/printusagesummarybyuser-get) to `/reports/dailyprintusagebyuser/{id}`. |
+| Change | beta | Renamed api path for [listing dailyprintusagesummariesbyuser](/graph/api/reportroot-list-dailyprintusagesummariesbyuser) to `/reports/dailyprintusagebyuser`. |
+| Change | beta | Renamed api path for [getting dailyprintusagesummariesbyprinter](/graph/api/printusagesummarybyprinter-get) to `/reports/dailyprintusagebyprinter/{id}`. |
+| Change | beta | Renamed api path for [listing dailyprintusagesummariesbyprinter](/graph/api/reportroot-list-dailyprintusagesummariesbyprinter) to `/reports/monthlyprintusagebyprinter`. |
+| Change | beta | Renamed api path for [getting monthlyprintusagesummariesbyuser](/graph/api/printusagesummarybyuser-get) to `/reports/monthlyprintusagebyuser/{id}`. |
+| Change | beta | Renamed api path for [listing monthlyprintusagesummariesbyuser](/graph/api/reportroot-list-monthlyprintusagesummariesbyuser) to `/reports/monthlyprintusagebyuser`. |
+| Change | beta | Renamed api path for [getting monthlyprintusagesummariesbyprinter](/graph/api/printusagesummarybyprinter-get) to `/reports/monthlyprintusagebyprinter/{id}`. |
+| Change | beta | Renamed api path for [listing monthlyprintusagesummariesbyprinter](/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter) to `/reports/monthlyprintusagebyprinter`. |
+| Change | beta | Renamed **periodStart** and **periodEnd** arguments of [getuserarchivedprintjobs](/graph/api/reports-getuserarchivedprintjobs) function to **startDateTime** and **endDateTime** respectively. |
+| Change | beta | Renamed **periodStart** and **periodEnd** arguments of [getprinterarchivedprintjobs](/graph/api/reports-getprinterarchivedprintjobs) function to **startDateTime** and **endDateTime** respectively. |
+| Change | beta | Renamed **periodStart** and **periodEnd** arguments of [getgrouparchivedprintjobs](/graph/api/reports-getgrouparchivedprintjobs) function to **startDateTime** and **endDateTime** respectively. |
 
 ### Education
 
