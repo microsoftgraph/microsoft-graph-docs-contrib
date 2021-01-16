@@ -62,6 +62,7 @@ Try a new [tutorial](tutorial-riskdetection-api.md) to learn how to use the [ide
 ### Use the Toolkit
 GA of Microsoft Graph Toolkit 2.0 - this release includes a new [component for Microsoft Graph To-Do tasks](./toolkit/components/todo.md), distinct from the[Planner tasks component](./toolkit/components/tasks.md), and an enhanced [person card component](./toolkit/components/person-card.md). See the [related blog post](https://developer.microsoft.com/graph/blogs/announcing-the-general-availability-of-microsoft-graph-toolkit-2-0/) for more information.
 
+
 ## December 2020: New in preview only
 
 ### Compliance | eDiscovery
@@ -108,7 +109,6 @@ As part of Azure Active Directory [entitlement management](/graph/api/resources/
 
 ### To-do tasks
 Subscribe to [change notifications](webhooks.md) of a [To Do task](/graph/api/resources/todoTask?view=graph-rest-beta&preserve-view=true).
-
 
 ## Want to stay in the loop?
 
