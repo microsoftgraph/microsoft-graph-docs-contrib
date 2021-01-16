@@ -1,5 +1,5 @@
 ---
-title: List dailyPrintUsageSummariesByUser
+title: List dailyPrintUsageByUser
 description: Retrieve a list of daily print usage summaries, grouped by user.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# List dailyPrintUsageSummariesByUser
+# List dailyPrintUsageByUser
 
 Namespace: microsoft.graph
 
@@ -29,8 +29,8 @@ In addition to the following permissions, the user's tenant must have an active 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /reports/dailyPrintUsageSummariesByUser
-GET /print/reports/dailyPrintUsageSummariesByUser
+GET /reports/dailyPrintUsageByUser
+GET /print/reports/dailyPrintUsageByUser
 ```
 
 ## Optional query parameters
@@ -44,7 +44,7 @@ This method supports some of the OData query parameters to help customize the re
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [printUsageSummaryByUser](../resources/printusagesummarybyuser.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [printUsageByUser](../resources/printUsageByUser.md) objects in the response body.
 ## Example
 ##### Request
 The following is an example of the request.
@@ -55,7 +55,7 @@ The following is an example of the request.
   "name": "get_endpoints"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageSummariesByUser
+GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByUser
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-endpoints-csharp-snippets.md)]
@@ -81,7 +81,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.printUsageSummaryByUser",
+  "@odata.type": "microsoft.graph.printUsageByUser",
   "isCollection": true
 } -->
 ```http
@@ -107,7 +107,7 @@ Content-length: 268
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List dailyPrintUsageSummariesByUser",
+  "description": "List dailyPrintUsageByUser",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

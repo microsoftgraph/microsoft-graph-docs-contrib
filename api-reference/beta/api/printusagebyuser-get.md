@@ -1,20 +1,19 @@
 ---
-title: Get printUsageSummaryByPrinter
-description: Retrieve a printer's usage summary for a particular time period.
+title: Get printUsageByUser
+description: Retrieve a user's usage summary for a particular time period.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
-ms.date: 2/4/2020
 doc_type: apiPageType
 ---
 
-# Get printUsageSummaryByPrinter
+# Get printUsageByUser
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a [printer](../resources/printer.md)'s usage summary for a particular time period. For descriptions of each of the endpoints, see [printUsageSummaryByPrinter](../resources/printUsageSummaryByPrinter.md).
+Retrieve a user's usage summary for a particular time period. See the [printUsageByUser](../resources/printUsageByUser.md) documentation for descriptions of each of the endpoints.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,10 +29,10 @@ To use the Universal Print service, the user or app's tenant must have an active
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /reports/dailyPrintUsageSummariesByPrinter/{id}
-GET /reports/monhtlyPrintUsageSummariesByPrinter/{id}
-GET /print/reports/dailyPrintUsageSummariesByPrinter/{id}
-GET /print/reports/monthlyPrintUsageSummariesByPrinter/{id}
+GET /reports/dailyPrintUsageByUser/{id}
+GET /reports/monthlyPrintUsageByUser/{id}
+GET /print/reports/dailyPrintUsageByUser/{id}
+GET /print/reports/monthlyPrintUsageByUser/{id}
 ```
 
 ## Optional query parameters
@@ -47,16 +46,16 @@ This method supports some of the OData query parameters to help customize the re
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and a [printUsageSummaryByPrinter](../resources/printusagesummarybyprinter.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [printUsageByUser](../resources/printUsageByUser.md) object in the response body.
 ## Example
 ##### Request
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_printUsageSummaryByPrinter"
+  "name": "get_printUsageByUser"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageSummariesByPrinter/{id}
+GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByUser/{id}
 ```
 ##### Response
 The following is an example of the response.
@@ -64,20 +63,20 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.printUsageSummaryByPrinter"
+  "@odata.type": "microsoft.graph.printUsageByUser"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 269
+Content-length: 251
 
 {
-    "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-    "printerId": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-    "usageDate": "2020-02-04T00:00:00.0000000Z",
-    "completedBlackAndWhiteJobCount": 42,
-    "completedColorJobCount": 0,
-    "incompleteJobCount": 6
+  "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
+  "userPrincipalName": "username@microsoft.com",
+  "usageDate": "2020-02-04T00:00:00.0000000Z",
+  "completedBlackAndWhiteJobCount": 42,
+  "completedColorJobCount": 0,
+  "incompleteJobCount": 6
 }
 ```
 
@@ -85,7 +84,7 @@ Content-length: 269
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get printUsageSummaryByPrinter",
+  "description": "Get printUsageByUser",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

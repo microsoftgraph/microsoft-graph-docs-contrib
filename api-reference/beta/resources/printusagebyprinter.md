@@ -1,5 +1,5 @@
 ---
-title: printUsageSummaryByPrinter resource type
+title: printUsageByPrinter resource type
 description: Describes print activity for a printer during a specified time period (usageDate).
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: resourcePageType
 ---
 
-# printUsageSummaryByPrinter resource type
+# printUsageByPrinter resource type
 
 Namespace: microsoft.graph
 
@@ -19,9 +19,9 @@ Describes print activity for a printer during a specified time period (usageDate
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List (daily)](../api/reportroot-list-dailyprintusagesummariesbyprinter.md) | [printUsageSummaryByPrinter](printusagesummarybyprinter.md) | Get a list of daily print usage summaries, grouped by printer. |
-| [List (monthly)](../api/reportroot-list-monthlyprintusagesummariesbyprinter.md) | [printUsageSummaryByPrinter](printusagesummarybyprinter.md) | Get a list of monthly print usage summaries, grouped by printer. |
-| [Get](../api/printusagesummarybyprinter-get.md) | [printUsageSummaryByPrinter](printusagesummarybyprinter.md) | Read the properties and relationships of a **printUsageSummaryByPrinter** object. |
+| [List (daily)](../api/reportroot-list-dailyprintusagebyprinter.md) | [printUsageByPrinter](printUsageByPrinter.md) | Get a list of daily print usage summaries, grouped by printer. |
+| [List (monthly)](../api/reportroot-list-monthlyprintusagebyprinter.md) | [printUsageByPrinter](printUsageByPrinter.md) | Get a list of monthly print usage summaries, grouped by printer. |
+| [Get](../api/printUsageByPrinter-get.md) | [printUsageByPrinter](printUsageByPrinter.md) | Read the properties and relationships of a **printUsageByPrinter** object. |
 
 ## Properties
 | Property     | Type        | Description |
@@ -42,7 +42,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.printUsageSummaryByPrinter"
+  "@odata.type": "microsoft.graph.printUsageByPrinter"
 }-->
 
 ```json
@@ -60,7 +60,7 @@ The following is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "printUsageSummaryByPrinter resource",
+  "description": "printUsageByPrinter resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

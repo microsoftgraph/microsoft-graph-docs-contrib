@@ -1,5 +1,5 @@
 ---
-title: List monthlyPrintUsageSummariesByPrinter
+title: List monthlyPrintUsageByPrinter
 description: Retrieve a list of monthly print usage summaries, grouped by printer.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# List monthlyPrintUsageSummariesByPrinter
+# List monthlyPrintUsageByPrinter
 
 Namespace: microsoft.graph
 
@@ -29,8 +29,8 @@ In addition to the following permissions, the user's tenant must have an active 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /reports/monthlyPrintUsageSummariesByPrinter
-GET /print/reports/monthlyPrintUsageSummariesByPrinter
+GET /reports/monthlyPrintUsageByPrinter
+GET /print/reports/monthlyPrintUsageByPrinter
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ GET /print/reports/monthlyPrintUsageSummariesByPrinter
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [printUsageSummaryByPrinter](../resources/printusagesummarybyprinter.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [printUsageByPrinter](../resources/printUsageByPrinter.md) objects in the response body.
 ## Example
 ##### Request
 The following is an example of the request.
@@ -52,7 +52,7 @@ The following is an example of the request.
   "name": "get_endpoints"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/reports/monthlyPrintUsageSummariesByPrinter
+GET https://graph.microsoft.com/beta/print/reports/monthlyPrintUsageByPrinter
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-endpoints-csharp-snippets.md)]
@@ -78,7 +78,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.printUsageSummaryByPrinter",
+  "@odata.type": "microsoft.graph.printUsageByPrinter",
   "isCollection": true
 } -->
 ```http
@@ -104,7 +104,7 @@ Content-length: 268
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List monthlyPrintUsageSummariesByPrinter",
+  "description": "List monthlyPrintUsageByPrinter",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

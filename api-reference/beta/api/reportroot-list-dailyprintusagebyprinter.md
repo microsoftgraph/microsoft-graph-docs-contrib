@@ -1,5 +1,5 @@
 ---
-title: List dailyPrintUsageSummariesByPrinter
+title: List dailyPrintUsageByPrinter
 description: Retrieve a list of daily print usage summaries, grouped by printer.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# List dailyPrintUsageSummariesByPrinter
+# List dailyPrintUsageByPrinter
 
 Namespace: microsoft.graph
 
@@ -29,8 +29,8 @@ In addition to the following permissions, the user's tenant must have an active 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /reports/dailyPrintUsageSummariesByPrinter
-GET /print/reports/dailyPrintUsageSummariesByPrinter
+GET /reports/dailyPrintUsageByPrinter
+GET /print/reports/dailyPrintUsageByPrinter
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ GET /print/reports/dailyPrintUsageSummariesByPrinter
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [printUsageSummaryByPrinter](../resources/printusagesummarybyprinter.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [printUsageByPrinter](../resources/printUsageByPrinter.md) objects in the response body.
 ## Example
 ##### Request
 The following is an example of the request.
@@ -52,7 +52,7 @@ The following is an example of the request.
   "name": "get_endpoints"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageSummariesByPrinter
+GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByPrinter
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-endpoints-csharp-snippets.md)]
@@ -78,7 +78,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.printUsageSummaryByPrinter",
+  "@odata.type": "microsoft.graph.printUsageByPrinter",
   "isCollection": true
 } -->
 ```http
@@ -104,7 +104,7 @@ Content-length: 314
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List dailyPrintUsageSummariesByPrinter",
+  "description": "List dailyPrintUsageByPrinter",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

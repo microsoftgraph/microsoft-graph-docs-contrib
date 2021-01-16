@@ -1,5 +1,5 @@
 ---
-title: printUsageSummaryByUser resource type
+title: printUsageByUser resource type
 description: Describes print activity for a user during a specified time period (usageDate).
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: resourcePageType
 ---
 
-# printUsageSummaryByUser resource type
+# printUsageByUser resource type
 
 Namespace: microsoft.graph
 
@@ -19,9 +19,9 @@ Describes print activity for a user during a specified time period (usageDate).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List (daily)](../api/reportroot-list-dailyprintusagesummariesbyuser.md) | [printUsageSummaryByUser](printusagesummarybyuser.md) | Get a list of daily print usage summaries, grouped by user. |
-| [List (monthly)](../api/reportroot-list-monthlyprintusagesummariesbyuser.md) | [printUsageSummaryByUser](printusagesummarybyuser.md) | Get a list of monthly print usage summaries, grouped by user. |
-| [Get](../api/printusagesummarybyuser-get.md) | [printUsageSummaryByUser](printusagesummarybyuser.md) | Read properties and relationships of a printUsageSummaryByUser object. |
+| [List (daily)](../api/reportroot-list-dailyprintusagebyuser.md) | [printUsageByUser](printusagebyuser.md) | Get a list of daily print usage summaries, grouped by user. |
+| [List (monthly)](../api/reportroot-list-monthlyprintusagebyuser.md) | [printUsageByUser](printusagebyuser.md) | Get a list of monthly print usage summaries, grouped by user. |
+| [Get](../api/printusagebyuser-get.md) | [printUsageByUser](printusagebyuser.md) | Read properties and relationships of a printUsageByUser object. |
 
 ## Properties
 | Property     | Type        | Description |
@@ -42,7 +42,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.printUsageSummaryByUser"
+  "@odata.type": "microsoft.graph.printUsageByUser"
 }-->
 
 ```json
@@ -60,7 +60,7 @@ The following is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "printUsageSummaryByUser resource",
+  "description": "printUsageByUser resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

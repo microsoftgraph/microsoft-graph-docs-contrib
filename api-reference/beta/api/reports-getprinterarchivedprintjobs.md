@@ -42,8 +42,8 @@ GET /reports/getPrinterArchivedPrintJobs
 | Parameter     | Type                 | Required? | Description                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
 | `printerId`   | `Edm.String`         | Yes       | The ID of the printer to return data for.                            |
-| `periodStart` | `Edm.DateTimeOffset` | No        | The start date (inclusive) for the time period to include data from. |
-| `periodEnd`   | `Edm.DateTimeOffset` | No        | The end date (inclusive) for the time period to include data from.   |
+| `startDateTime` | `Edm.DateTimeOffset` | No        | The start date (inclusive) for the time period to include data from. |
+| `endDateTime`   | `Edm.DateTimeOffset` | No        | The end date (inclusive) for the time period to include data from.   |
 
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [archivedPrintJob](../resources/archivedprintjob.md) objects in the response body.
@@ -57,7 +57,7 @@ The following is an example of the request.
   "name": "reports-getprinterarchivedprintjobs"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(printerId='{id}',periodStart=<timestamp>,periodEnd=<timestamp>)
+GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(printerId='{id}',startDateTime=<timestamp>,endDateTime=<timestamp>)
 ```
 
 ##### Response
