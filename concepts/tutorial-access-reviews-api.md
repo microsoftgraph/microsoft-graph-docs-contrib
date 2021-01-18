@@ -8,24 +8,26 @@ ms.prod: "microsoft-identity-platform"
 
 # Tutorial: Using the Access Reviews API in Graph Explorer
 
-In this tutorial, we will use Graph Explorer to create and read access reviews and to understand its main building blocks: definitions, instances, and decisions.
+In this tutorial, you will use Graph Explorer to create and read access reviews and to understand its main building blocks: definitions, instances, and decisions.
 
 Using Graph Explorer to try and test your Access Reviews API calls before you automate them into a script or an app saves you time by helping you properly define and validate your queries without recompiling your application.
 
 ## Prerequisites
 
-+ A security group. We will use this group to apply access reviews.
-  
-+ **License requirements:** Using this feature requires an Azure AD Premium P2 or trial license enabled.
+To complete this tutorial, you need the following resources and privileges:
 
-+ **Permissions:**
++ A working Azure AD tenant with an Azure AD Premium P2 or trial license enabled.
+  
++ A security group. You will use this group to apply access reviews.
+
++ Permissions:
   + To call the Access Reviews APIs in this tutorial, consent to one or all the following permissions (from least to most privileged):
     + AccessReview.Read.All
     + AccessReview.ReadWrite.All
     + AccessReview.ReadWrite.Membership
-  + To create the test group in Step 1, first consent to the *Group.ReadWrite.All* permission.
+  + To create the test group, first consent to the *Group.ReadWrite.All* permission.
 
-## Step 1: Create a security group
+## Step 1: Create a security group and assign owners
 
 Create a security group named **Test security group** that is the target of the access reviews in this tutorial. You will assign two group owners to this group.
 
@@ -403,10 +405,13 @@ Since the access review schedule definition is the blueprint for the access revi
 
 #### Request
 
+In this request, replace `9fbd2c38-bccb-4d07-84e3-bdeb0f42473b` with the `id` of your **Test security group**.
+
 ```http
+DELETE https://graph.microsoft.com/beta/groups/9fbd2c38-bccb-4d07-84e3-bdeb0f42473b
 ```
 
-### Response
+#### Response
 
 ```http
 HTTP/1.1 204 No Content
@@ -415,9 +420,11 @@ Content-type: text/plain
 
 ### Delete the acess review definition
 
+In this request, replace `46ed9917-be7b-4ce4-b8b0-a6a488cc48ab` with the `id` of your access review definition.
+
 #### Request
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/46ed9917-be7b-4ce4-b8b0-a6a488cc48ab
+DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/46ed9917-be7b-4ce4-b8b0-a6a488cc48ab
 ```
 
 #### Response
