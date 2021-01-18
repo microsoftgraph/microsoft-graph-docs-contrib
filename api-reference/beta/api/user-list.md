@@ -488,7 +488,7 @@ Content-type: application/json
 }
 ```
 
-### Example 8: Use $search to get users with display names that contain the letters 'wa' including a count of returned objects
+### Example 9: Use $search to get users with display names that contain the letters 'wa' including a count of returned objects
 
 #### Request
 
@@ -534,7 +534,7 @@ Content-type: application/json
 
 ```
 
-### Example 9: Use $search to get users with display names that contain the letters 'wa' or the letters 'to' including a count of returned objects
+### Example 10: Use $search to get users with display names that contain the letters 'wa' or the letters 'to' including a count of returned objects
 
 #### Request
 
