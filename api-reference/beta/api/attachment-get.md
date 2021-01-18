@@ -346,6 +346,7 @@ Content-type: application/json
     "hasAttachments":false,
     "internetMessageId":"<BY2PR15MB05189A084C01F466709E414F9CA40@BY2PR15MB0518.namprd15.prod.outlook.com>",
     "subject":"Reminder - please bring laptop",
+    "bodyPreview": "PFA\r\n\r\nThanks,\r\nRob",
     "importance":"normal",
     "conversationId":"AAQkADA1MzMyOGI4LTlkZDctNDkzYy05M2RiLTdiN2E1NDE3MTRkOQAQAMG_NSCMBqdKrLa2EmR-lO0=",
     "conversationIndex":"AQHTAbcSwb41IIwGp0qstrYSZH+U7Q==",
@@ -354,6 +355,7 @@ Content-type: application/json
     "isRead":false,
     "isDraft":false,
     "webLink":"https://outlook.office365.com/owa/?ItemID=AAMkADA1M3MTRkOQAAAA%3D%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "internetMessageHeaders": [ ],
     "body":{
       "contentType":"html",
       "content":"<html><head>\r\n</head>\r\n<body>\r\n</body>\r\n</html>"
@@ -388,7 +390,23 @@ Content-type: application/json
     ],
     "flag":{
       "flagStatus":"notFlagged"
-    }
+    },
+    "attachments@odata.context": "https://graph.microsoft.com/beta/$metadata#users('ddfcd489-628b-40d7-b48b-57002df800e5')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/microsoft.graph.itemAttachment/microsoft.graph.itemAttachment/item/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/attachments",
+    "attachments": [
+        {
+            "@odata.type": "#microsoft.graph.fileAttachment",
+            "@odata.mediaContentType": "application/pdf",
+            "id": "AAMkADA1M-CJKtzmnlcqVgqI=",
+            "lastModifiedDateTime": "2017-07-21T00:20:34Z",
+            "name": "Info.pdf",
+            "contentType": "application/pdf",
+            "size": 417,
+            "isInline": false,
+            "contentId": null,
+            "contentLocation": null,
+            "contentBytes": "JVBERi0xLjUNCiW1tbW1DQoxIDAgb2JqDQo8PC9UeXBlRU9G"
+        }
+    ]
   }
 }
 ```
