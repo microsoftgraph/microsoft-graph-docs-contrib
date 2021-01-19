@@ -76,13 +76,19 @@ The CSV file has the following headers for columns.
 - Call Count
 - Meeting Count
 - Meetings Organized Count
+- Meetings Attended Count
 - AdHoc Meetings Organized Count
 - AdHoc Meetings Attended Count
-- Scheduled Meetings Organized Count
-- Scheduled Meetings Attended Count
+- Scheduled One Time Meetings Organized Count
+- Scheduled One Time Meetings Attended Count
+- Scheduled Recurring Meetings Organized Count
+- Scheduled Recurring Meetings Attended Count
 - Audio Duration
 - Video Duration
 - Screen Share Duration
+- Audio Duration In Seconds
+- Video Duration In Seconds
+- Screen Share Duration In Seconds
 - Has Other Action
 - Is Licensed
 - Report Period
@@ -138,7 +144,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Meetings Organized Count,AdHoc Meetings Organized Count,AdHoc Meetings Attended Count,Scheduled Meetings Organized Count,Scheduled Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Has Other Action,Is Licensed,Report Period
+Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Meetings Organized Count,Meetings Attended Count,AdHoc Meetings Organized Count,AdHoc Meetings Attended Count,Scheduled One Time Meetings Organized Count,Scheduled One Time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
 ```
 
 ### JSON
@@ -195,10 +201,13 @@ Content-Length: 452
       "callCount": 2, 
       "meetingCount": 0, 
       "meetingsOrganizedCount": 0, 
+      "meetingsAttendedCount": 0, 
       "adHocMeetingsOrganizedCount": 0, 
       "adHocMeetingsAttendedCount": 0, 
-      "scheduledMeetingsOrganizedCount": 0, 
-      "scheduledMeetingsAttendedCount": 0, 
+      "scheduledOneTimeMeetingsOrganizedCount": 0, 
+      "scheduledOneTimeMeetingsAttendedCount": 0, 
+      "scheduledRecurringMeetingsOrganizedCount": 0, 
+      "scheduledRecurringMeetingsAttendedCount": 0, 
       "audioDuration": 00:00:00, 
       "videoDuration": 00:00:00, 
       "screenShareDuration": 00:00:00, 
