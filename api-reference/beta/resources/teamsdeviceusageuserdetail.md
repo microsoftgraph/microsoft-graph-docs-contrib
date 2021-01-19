@@ -17,6 +17,7 @@ Namespace: microsoft.graph
 | :---------------- | :------ |
 | reportRefreshDate | Date    |
 | userPrincipalName | String  |
+| isLicensed        | Boolean |
 | lastActivityDate  | Date    |
 | isDeleted         | Boolean |
 | deletedDate       | Date    |
@@ -26,6 +27,8 @@ Namespace: microsoft.graph
 | usedMac           | Boolean |
 | usedAndroidPhone  | Boolean |
 | usedWindows       | Boolean |
+| usedChromeOS      | Boolean |
+| usedLinux         | Boolean |
 | reportPeriod      | String  |
 
 ## JSON representation
@@ -41,6 +44,7 @@ The following is a JSON representation of the resource.
 {
   "reportRefreshDate": "Date", 
   "userPrincipalName": "String", 
+  "isLicensed": true, 
   "lastActivityDate": "Date", 
   "isDeleted": true, 
   "deletedDate": "Date", 
@@ -50,6 +54,8 @@ The following is a JSON representation of the resource.
   "usedMac": true, 
   "usedAndroidPhone": true, 
   "usedWindows": true, 
+  "usedChromeOS": true, 
+  "usedLinux": true, 
   "reportPeriod": "String"
 }
 ```

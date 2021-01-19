@@ -22,6 +22,8 @@ Namespace: microsoft.graph
 | ios               | Int64  |
 | mac               | Int64  |
 | windows           | Int64  |
+| chromeOS          | Int64  |
+| linux             | Int64  |
 | reportDate        | Date   |
 | reportPeriod      | String |
 
@@ -43,6 +45,8 @@ The following is a JSON representation of the resource.
   "ios": 1024, 
   "mac": 1024, 
   "windows": 1024, 
+  "chromeOS": 1024, 
+  "linux": 1024, 
   "reportDate": "Date", 
   "reportPeriod": "String"
 }
