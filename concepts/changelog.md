@@ -79,6 +79,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added the **hexColor** property to the [calendar](/graph/api/resources/calendar) entity. |
 | Addition | v1.0 | Added the **isDefaultCalendar** property to the [calendar](/graph/api/resources/calendar) entity.
 
+### Education
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the **assignmentSettings** relationship to [educationClass](https://docs.microsoft.com/en-us/graph/api/resources/educationClass?view=graph-rest-beta&preserve-view=true) resource|
+|Addition|beta|Added the [educationAssignmentSettings](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignmentSettings?view=graph-rest-beta&preserve-view=true) resource type|
+
 ### Change notifications
 
 | **Change type** | **Version**   | **Description**                          |
