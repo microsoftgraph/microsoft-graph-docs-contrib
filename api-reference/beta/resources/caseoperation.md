@@ -40,8 +40,8 @@ None
 
 |Member|Description|
 |:----|-----------|
-| `contentExport` | The operation represents a content export. |
-| `applyTags` | The operation represents bulk tagging documents in a review set. |
+| `contentExport` | The operation represents a content export from a review set. |
+| `applyTags` | The operation represents bulk tagging documents in a review set for the specified review set query. |
 | `convertToPdf` | The operation represents converting documents to PDFs with redactions. |
 | `estimateStatistics`  | The operation represents searching against Microsoft 365 services such as Exchange, SharePoint and OneDrive for business. |
 | `addToReviewSet` | The operation represents adding data to a review set from an eDiscovery collection. |

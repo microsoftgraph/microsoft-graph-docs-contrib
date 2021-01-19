@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Starts the process of adding a collection from M365 services to a review set
+Starts the process of adding a collection from M365 services to a review set. Once the operation is created, you can retrieve the status of the operation by retrieving the Location parameter from the response headers, the location provides a URL that will return a [caseExportOperation](../resources/caseexportoperation.md).
 
 ## Permissions
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /caseExportOperation/reviewSet/addToReviewSet
+POST /cases/{caseId}/reviewSets/{reviewsetId}/addToReviewSet
 ```
 
 ## Request headers
@@ -61,7 +61,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `202 Accepted` response code.
 
 ## Examples
 
@@ -74,7 +74,7 @@ If successful, this action returns a `204 No Content` response code.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/caseExportOperation/reviewSet/addToReviewSet
+POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/080e8cad-f21f-4452-8826-0ddf7e949fdd/reviewSets/6fe25d32-8167-4625-b75c-c4181ccbd9d5/addToReviewSet
 Content-Type: application/json
 Content-length: 531
 
@@ -96,5 +96,5 @@ Content-length: 531
 -->
 
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```

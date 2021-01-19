@@ -1,6 +1,6 @@
 ---
 title: "List addToReviewSetOperation"
-description: "Get the addToReviewSetOperation resources from the addToReviewSetOperation navigation property."
+description: "Get the last addToReviewSetOperation resources from the addToReviewSetOperation navigation property."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the addToReviewSetOperation resources from the addToReviewSetOperation navigation property.
+Get the last addToReviewSetOperation resources from the addToReviewSetOperation navigation property. Note - this will only list the last operation, not a history of all operations.
 
 ## Permissions
 

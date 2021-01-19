@@ -1,6 +1,6 @@
 ---
 title: "tagOperation resource type"
-description: "The operation that handles applying tags to documents"
+description: "The operation that handles applying tags to documents in a review set based on a review set query"
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The operation that handles applying tags to documents.
+The operation that handles applying tags to documents in a review set based on a review set query.
 
 Inherits from [caseOperation](../resources/caseoperation.md).
 

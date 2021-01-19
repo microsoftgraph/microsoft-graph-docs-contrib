@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Apply tags to documents that match the specified query
+Apply tags to documents that match the specified query. Once the operation is created, you can retrieve the status of the operation by retrieving the Location parameter from the response headers, the location provides a URL that will return a [caseExportOperation](../resources/caseexportoperation.md).
 
 ## Permissions
 
@@ -54,7 +54,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `202 Accepted` response code.
 
 ## Examples
 
@@ -90,5 +90,5 @@ Content-length: 778
 -->
 
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```

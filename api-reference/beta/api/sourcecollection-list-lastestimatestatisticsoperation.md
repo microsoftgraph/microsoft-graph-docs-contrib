@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the estimateStatisticsOperation resources from the lastEstimateStatisticsOperation navigation property.
+Get the last estimateStatisticsOperation resources from the lastEstimateStatisticsOperation navigation property. Note - this will only list the last operation, not a history of all operations.
 
 ## Permissions
 

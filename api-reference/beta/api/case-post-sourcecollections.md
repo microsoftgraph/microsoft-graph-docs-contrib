@@ -47,6 +47,8 @@ In the request body, supply a JSON representation of the [sourceCollection](../r
 
 The following table shows the properties that are required when you create the [sourceCollection](../resources/sourcecollection.md).
 
+You must provide either a **custodianSource** or **additionalSource**
+
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the **sourceCollection**|
