@@ -70,9 +70,9 @@ The following is a JSON representaion of the resource.
   "scheduledOneTimeMeetingsAttendedCount": 1024, 
   "scheduledRecurringMeetingsOrganizedCount": 1024, 
   "scheduledRecurringMeetingsAttendedCount": 1024, 
-  "audioDuration": 00:00:00, 
-  "videoDuration": 00:00:00, 
-  "screenShareDuration": 00:00:00, 
+  "audioDuration": "Duration", 
+  "videoDuration": "Duration", 
+  "screenShareDuration": "Duration", 
   "hasOtherAction": true, 
   "reportPeriod": "String"
 }
