@@ -1488,6 +1488,52 @@ items:
             href: api/case-post-reviewsets.md
           - name: Get
             href: api/reviewset-get.md
+        - name: Source Collection
+          href: resources/sourcecollection.md
+          items:
+          - name: List
+            href: api/case-list-sourcecollections.md
+          - name: Create
+            href: api/case-post-sourcecollections.md
+          - name: Get
+            href: api/sourcecollection-get.md
+          - name: Update
+            href: api/sourcecollection-update.md
+          - name: Delete
+            href: api/sourcecollection-delete.md
+          - name: List custodian sources
+            href: api/sourcecollection-list-custodiansources.md
+          - name: Add custodian sources
+            href: api/sourcecollection-post-custodiansources.md
+          - name: List additional sources
+            href: api/sourcecollection-list-additionalsources.md
+          - name: Add additional sources
+            href: api/sourcecollection-post-additionalsources.md
+          - name: Estimate statistics
+            href: api/sourcecollection-estimatestatistics.md
+          - name: List add to review set operations
+            href: api/sourcecollection-list-addtoreviewsetoperation.md
+          - name: List last estimate operation
+            href: api/sourcecollection-list-lastestimateestatisticsoperation.md
+        - name: Tag
+          href: resources/tag.md
+          items:
+          - name: List
+            href: api/case-list-tags.md
+          - name: Create
+            href: api/case-post-tags.md
+          - name: Get
+            href: api/tag-get.md
+          - name: Update
+            href: api/tag-update.md
+          - name: Delete
+            href: api/tag-delete.md
+          - name: List child tags
+            href: api/tag-list-childtags.md
+          - name: List tags - as hierarchy
+            href: api/tag-list-ashierarchy.md
+          - name: Apply tags
+            href: api/reviewsetquery-applytags.md
         - name: Review set query
           href: resources/reviewsetquery.md
           items:
