@@ -60,7 +60,7 @@ The following is an example of a role permission with a condition.
                 "microsoft.directory/applications/basic/update",
                 "microsoft.directory/applications/credentials/update"
             ],
-            "condition":  "#SubjectIsOwnerOfResource"
+            "condition":  "#SubjectIsOwner"
         }
     ]
 
