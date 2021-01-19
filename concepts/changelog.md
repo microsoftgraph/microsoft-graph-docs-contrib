@@ -83,8 +83,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description** |
 |:---|:---|:---|
-|Addition|beta|Added the **assignmentSettings** relationship to [educationClass](https://docs.microsoft.com/en-us/graph/api/resources/educationClass?view=graph-rest-beta&preserve-view=true) resource|
-|Addition|beta|Added the [educationAssignmentSettings](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignmentSettings?view=graph-rest-beta&preserve-view=true) resource type|
+|Addition|beta|Added the **assignmentSettings** relationship to [educationClass](https://docs.microsoft.com/en-us/graph/api/resources/educationClass?view=graph-rest-beta&preserve-view=true) resource.|
+|Addition|beta|Added the [educationAssignmentSettings](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignmentSettings?view=graph-rest-beta&preserve-view=true) resource type.|
 
 ### Change notifications
 
