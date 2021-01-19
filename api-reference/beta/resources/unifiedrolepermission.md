@@ -49,7 +49,7 @@ For example: `microsoft.directory/applications/credentials/update`.
 Conditions define constraints that must be met. For example, a requirement that the principal be an "owner" of the target. The following are the supported conditions:
 
 - Self: "$ResourceIsSelf"
-- Owner: "$SubjectIsOwnerOfResource"
+- Owner: "$SubjectIsOwner"
 
 The following is an example of a role permission with a condition.
 
@@ -60,7 +60,7 @@ The following is an example of a role permission with a condition.
                 "microsoft.directory/applications/basic/update",
                 "microsoft.directory/applications/credentials/update"
             ],
-            "condition":  "$SubjectIsOwnerOfResource"
+            "condition":  "$SubjectIsOwner"
         }
     ]
 
