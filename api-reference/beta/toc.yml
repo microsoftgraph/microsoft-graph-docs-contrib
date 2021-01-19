@@ -1514,7 +1514,7 @@ items:
           - name: List add to review set operations
             href: api/sourcecollection-list-addtoreviewsetoperation.md
           - name: List last estimate operation
-            href: api/sourcecollection-list-lastestimateestatisticsoperation.md
+            href: api/sourcecollection-list-lastestimatestatisticsoperation.md
         - name: Tag
           href: resources/tag.md
           items:
