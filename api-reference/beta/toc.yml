@@ -1422,7 +1422,7 @@ items:
           href: api/onlinemeeting-update.md
         - name: Delete
           href: api/onlinemeeting-delete.md
-      - name: Presence (preview)
+      - name: Presence
         href: resources/presence.md
         items:
         - name: Get presence

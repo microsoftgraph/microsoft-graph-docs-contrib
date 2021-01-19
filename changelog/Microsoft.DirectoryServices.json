@@ -40,7 +40,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationMethod",
           "ChangeType": "Change",
-          "Description": "Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
+          "Description": "Updated authentication method permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
           "Target": "authenticationMethod"
         },
         {
@@ -48,7 +48,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "passwordAuthenticationMethod",
           "ChangeType": "Change",
-          "Description": "Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
+          "Description": "Updated password authentication method permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
           "Target": "passwordAuthenticationMethod"
         },
         {
@@ -56,7 +56,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "phoneAuthenticationMethod",
           "ChangeType": "Change",
-          "Description": "Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
+          "Description": "Updated phone authentication method permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
           "Target": "phoneAuthenticationMethod"
         },
         {
@@ -64,7 +64,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "emailAuthenticationMethod",
           "ChangeType": "Change",
-          "Description": "Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
+          "Description": "Updated email authentication method permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
           "Target": "emailAuthenticationMethod"
         },
         {
@@ -72,7 +72,7 @@
           "ApiChange": "passwordlessMicrosoftAuthenticatorAuthenticationMethod",
           "ChangedApiName": "passwordlessMicrosoftAuthenticatorAuthenticationMethod",
           "ChangeType": "Change",
-          "Description": "Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
+          "Description": "Updated passwordless Microsoft Authenticator authentication method permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
           "Target": "passwordlessMicrosoftAuthenticatorAuthenticationMethod"
         }
       ],
