@@ -1606,3 +1606,11 @@ Possible values for user account types (group membership), per Windows definitio
 |onPremisesKerberos|
 |aadHeaderBased|
 |pingHeaderBased|
+
+### plannerContainerType values 
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
+
