@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and an [educationAss
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/educationClass/assignmentSettings
+GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
 ```
 
 
@@ -73,8 +73,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.education.assignments.api.educationAssignmentSettings",
-    "submissionAnimationDisabled": "Boolean"
+    "submissionAnimationDisabled": false
   }
 }
 ```

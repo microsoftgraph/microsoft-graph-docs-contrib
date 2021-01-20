@@ -61,13 +61,12 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/educationClass/assignmentSettings
+PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
 Content-Type: application/json
 Content-length: 114
 
 {
-  "@odata.type": "#microsoft.graph.educationAssignmentSettings",
-  "submissionAnimationDisabled": "Boolean"
+  "submissionAnimationDisabled": true
 }
 ```
 
@@ -84,8 +83,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.educationAssignmentSettings",
-  "submissionAnimationDisabled": "Boolean"
+  "submissionAnimationDisabled": true
 }
 ```
 
