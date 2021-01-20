@@ -1,5 +1,5 @@
 ---
-title: "Using the Access Reviews API in Graoh Explorer"
+title: "Using the Access Reviews API in Graph Explorer"
 description: "Access reviews definitons, instances, and decisions"
 author: "isabelleatmsft"
 localization_priority: Normal
@@ -16,16 +16,11 @@ Using Graph Explorer to try and test your Access Reviews API calls before you au
 
 To complete this tutorial, you need the following resources and privileges:
 
-+ A working Azure AD tenant with an Azure AD Premium P2 or trial license enabled.
-  
-+ A security group. You will use this group to apply access reviews.
++ A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
 
 + Permissions:
-  + To call the Access Reviews APIs in this tutorial, consent to one or all the following permissions (from least to most privileged):
-    + AccessReview.Read.All
-    + AccessReview.ReadWrite.All
-    + AccessReview.ReadWrite.Membership
-  + To create the test group, first consent to the *Group.ReadWrite.All* permission.
+  + To call the Access Reviews APIs in this tutorial, consent to the *AccessReview.Read.All* permission.
+  + To create a test group, and delete it later after completing the tutorial, consent to the *Group.ReadWrite.All* permission.
 
 ## Step 1: Create a security group and assign owners
 
@@ -100,15 +95,15 @@ Content-Type: application/json
 
 ## Step 2: Create an access review
 
-*Tip:* You require the *AccessReview.ReadWrite.All* permission to create (POST) an access review.
+*Tip:* You require the *AccessReview.ReadWrite.All* permission to create an access review.
 
 Create an access review for external identities for the security group, with the following settings:
-+ It is a self-reviewing access review.
++ It is a self-reviewing access review. In this case, users under review will self-attest to their need for access.
 + This is a one-time access review.
-+ The review scope applies to **Guest users** only.
-+ Apply disable and delete action to denied guest users. 
++ The review scope applies to **Guest users** only. This limits the access review to just the Azure AD B2B guest users in your directory.
++ Apply disable and delete action to denied guest users. In this case, the denied guest user's sign in is blocked for 30 days prior to being deleted from the tenant. [Learn more about the implications of this action](https://docs.microsoft.com/azure/active-directory/governance/create-access-review#create-one-or-more-access-reviews).
 
-For more information about the parameters required in the request body of these examples, see the [Access Reviews API Reference]().
+For more information about the parameters required in the request body of these examples, see the [Access Reviews API Reference](https://docs.microsoft.com/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta).
 
 ### Request
 
@@ -302,7 +297,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 ### Response
 
-In this response, the **status** of the access review is marked as `InProgress`.
+In this response, the **status** of the access review instance is marked as `InProgress`.
 
 ```http
 HTTP/1.1 200 OK
@@ -325,60 +320,17 @@ Content-type: application/json
 }
 ```
 
-## Step 5: Get decisions
+### Get pending access reviews as a reviewer
 
-You are interested in the decisions taken for the instance of an access review. Decisions are available only when the **status** of the access review is marked as `Completed`.
+You can also list pending access review instances for which you, the signed-in user, are the reviewer.
 
-### Request
-
-```http
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/46ed9917-be7b-4ce4-b8b0-a6a488cc48ab/instances/46ed9917-be7b-4ce4-b8b0-a6a488cc48ab/decisions
-```
-
-### Response
-
-The following response shows two decisions were taken for the instance of the review.
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-
-}
-```
-
-## Step 6: Inspect a decision
-
-In the previous example response, two decisions were taken for the access review instance. In this example, we will inspect one of the decisions.
-
-### Request
-
-```http
-
-```
-
-### Response
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-}
-```
-
-## Get pending access reviews as a reviewer
-
-You can list pending access review instances for which you are the reviewer. 
-
-### Request
+#### Request
 
 ```http
 GET /me/pendingAccessReviewInstances
 ```
 
-### Response
+#### Response
 
 ```http
 HTTP/1.1 200 OK
@@ -391,11 +343,34 @@ Content-type: application/json
 }
 ```
 
-You can use an id from the pending access reviews to read the access review definition. Using the call `/me/pendingAccessReviewInstances` in user context has a number of advantages:
-+ It runs in user context, so there is no service principal required. A user can call and read their pending Access Reviews actions.
-+ This pattern could be used easily for widgets or plugins on the Intranet page, or a bot in runs in a user context and could notify the user if a new Access Review is coming in – or just give an update on the open requests. 
+You can use an `id` from the pending access reviews to read the access review definition. Using the call `/me/pendingAccessReviewInstances` in user context has a number of advantages:
++ No service principal is required. A user can call and read their pending access review actions.
++ Can be used by widgets or plugins on an Intranet page, or a bot or daemon that run as a background service. These can notify the user of new access reviews or of updates to access reviews. 
 
-## Step 7: Clean up resources
+## Step 5: Get decisions
+
+You are interested in the decisions taken for the instance of an access review..
+
+### Request
+
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/46ed9917-be7b-4ce4-b8b0-a6a488cc48ab/instances/46ed9917-be7b-4ce4-b8b0-a6a488cc48ab/decisions
+```
+
+### Response
+
+The following response shows the decision taken for the instance of the review.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+
+}
+```
+
+## Step 6: Clean up resources
 
 You will now delete the two resources that you created for this tutorial-**Test security group** and the access review schedule definition.
 
@@ -433,7 +408,7 @@ HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
-## See also:
+## See also
 
 + [Access Reviews License requirements.](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview#license-requirements)
 + [Access Reviews License scenarios.](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview#example-license-scenarios)
