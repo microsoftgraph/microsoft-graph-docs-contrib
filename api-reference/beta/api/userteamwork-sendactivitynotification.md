@@ -10,6 +10,8 @@ doc_type: apiPageType
 # userTeamwork: sendActivityNotification
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Send an activity feed notification to a user. For more details about sending notifications and the requirements for doing so, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
 ## Permissions
