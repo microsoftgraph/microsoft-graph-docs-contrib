@@ -9,7 +9,9 @@ doc_type: resourcePageType
 
 # sourceCollection resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an eDiscovery collection - commonly known as a search.  See [Collect data for a case in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/collecting-data-for-ediscovery) to learn more.
 

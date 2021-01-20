@@ -9,7 +9,9 @@ doc_type: apiPageType
 
 # reviewSetQuery: applyTags
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Apply tags to documents that match the specified query. Once the operation is created, you can retrieve the status of the operation by retrieving the Location parameter from the response headers, the location provides a URL that will return a [caseExportOperation](../resources/caseexportoperation.md).
 

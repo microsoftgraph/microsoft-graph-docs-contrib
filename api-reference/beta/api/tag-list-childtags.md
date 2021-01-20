@@ -9,7 +9,9 @@ doc_type: apiPageType
 
 # List childTags
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the tag resources from the childTags navigation property.
 

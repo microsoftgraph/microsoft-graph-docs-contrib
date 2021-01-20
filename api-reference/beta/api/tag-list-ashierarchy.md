@@ -9,7 +9,9 @@ doc_type: apiPageType
 
 # tag: asHierarchy
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Returns a list of tags in their hierarchial form
 

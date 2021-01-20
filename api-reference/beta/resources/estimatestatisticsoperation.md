@@ -9,7 +9,9 @@ doc_type: resourcePageType
 
 # estimateStatisticsOperation resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The operation that handles estimating the count and size of a [sourceCollection](../resources/sourcecollection.md). See [Collect data for a case in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/collecting-data-for-ediscovery) to learn more.
 

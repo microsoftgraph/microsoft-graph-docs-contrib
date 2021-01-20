@@ -9,7 +9,9 @@ doc_type: apiPageType
 
 # Get sourceCollection
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of a [sourceCollection](../resources/sourcecollection.md) object.
 

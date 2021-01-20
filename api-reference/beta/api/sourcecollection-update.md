@@ -9,7 +9,9 @@ doc_type: apiPageType
 
 # Update sourceCollection
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [sourceCollection](../resources/sourcecollection.md) object.
 

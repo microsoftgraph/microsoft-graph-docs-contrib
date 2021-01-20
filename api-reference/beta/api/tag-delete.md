@@ -9,7 +9,9 @@ doc_type: apiPageType
 
 # Delete tag
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes a [tag](../resources/tag.md) object.
 

@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # Get reviewSet
 
-Namespace: microsoft.graph.ediscovery
+Namespace: microsoft.graph.ediscovery.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

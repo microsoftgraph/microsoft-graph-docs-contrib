@@ -9,7 +9,9 @@ doc_type: apiPageType
 
 # List estimateStatisticsOperation
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the last estimateStatisticsOperation resources from the lastEstimateStatisticsOperation navigation property. Note - this will only list the last operation, not a history of all operations.
 

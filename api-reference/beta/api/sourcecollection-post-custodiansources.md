@@ -9,7 +9,9 @@ doc_type: apiPageType
 
 # Add dataSource
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add custodianSources by posting to the custodianSources collection.
 

@@ -9,7 +9,9 @@ doc_type: apiPageType
 
 # List tags
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the tag resources from the tags navigation property.
 

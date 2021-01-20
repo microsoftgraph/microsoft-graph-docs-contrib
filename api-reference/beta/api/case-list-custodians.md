@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # List custodians
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

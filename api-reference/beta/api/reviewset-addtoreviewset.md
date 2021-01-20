@@ -9,7 +9,9 @@ doc_type: apiPageType
 
 # reviewSet: addToReviewSet
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Starts the process of adding a collection from M365 services to a review set. Once the operation is created, you can retrieve the status of the operation by retrieving the Location parameter from the response headers, the location provides a URL that will return a [caseExportOperation](../resources/caseexportoperation.md).
 

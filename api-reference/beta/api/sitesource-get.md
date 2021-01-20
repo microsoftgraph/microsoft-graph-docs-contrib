@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Get siteSource
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -9,7 +9,9 @@ doc_type: resourcePageType
 
 # tagOperation resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The operation that handles applying tags to documents in a review set based on a review set query.
 

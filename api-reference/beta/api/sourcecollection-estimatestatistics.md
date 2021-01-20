@@ -9,7 +9,9 @@ doc_type: apiPageType
 
 # sourceCollection: estimateStatistics
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Executes an estimate of the source collection. To learn more about source collections, see [Collect data for a case in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/collecting-data-for-ediscovery)
 

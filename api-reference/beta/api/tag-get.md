@@ -9,7 +9,9 @@ doc_type: apiPageType
 
 # Get tag
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of a [tag](../resources/tag.md) object.
 

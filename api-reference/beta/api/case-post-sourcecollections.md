@@ -9,7 +9,9 @@ doc_type: apiPageType
 
 # Create sourceCollection
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new sourceCollection object.
 

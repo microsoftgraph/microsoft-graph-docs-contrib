@@ -9,7 +9,9 @@ doc_type: apiPageType
 
 # Delete sourceCollection
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes a [sourceCollection](../resources/sourcecollection.md) object.
 
