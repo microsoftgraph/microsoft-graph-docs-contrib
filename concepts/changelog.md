@@ -249,13 +249,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the [abort](/graph/api/printjob-abort?view=graph-rest-beta&preserve-view=true) action to the [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource.|
 |Addition|beta|Added the configuration property to the [redirect](/graph/api/printjob-redirect?view=graph-rest-beta&preserve-view=true) action on the [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource.|
 
-### Identity and access | Identity and sign-in
-
-| **Change type** | **Version** | **Description** |
-|:---|:---|:---|
-|Addition|v1.0|Added the **userRiskLevels** property to [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-1.0) resource|
-|Addition|v1.0|Added the `passwordChange` member to the **conditionalAccessGrantControl** enumeration|
-
 ### Devices and apps | Corporate management
 
 | **Change type** | **Version**   | **Description** |
