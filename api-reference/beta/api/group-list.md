@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type | Permissions (from least to most privileged) |
 |:--------------- |:------------------------------------------- |
-| Delegated (work or school account) | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (work or school account) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Application | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -394,6 +394,51 @@ Content-type: application/json
       "displayName":"Video Production",
       "mail":"videoprod@service.contoso.com",
       "mailNickname":"VideoProduction"
+    }
+  ]
+}
+```
+
+### Example 7: List dynamic groups, filtered by enabled membershipRuleProcessingState
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_enabled_dynamic_groups"
+}-->
+```http
+GET https://graph.microsoft.com/beta/groups?$select=id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus&$filter=membershipRuleProcessingState eq 'On'
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus)",
+  "value":[
+    {
+      "id": "1cdf9c18-a7dc-46b1-b47f-094d5656376d",
+      "membershipRule": "user.accountEnabled -eq false",
+      "membershipRuleProcessingState": "On",
+      "membershipRuleProcessingStatus": {
+          "status" : "Succeeded",
+          "lastMembershipUpdated"  : "2020-09-14T00:00:00Z",
+          "errorMessage" : null
+        }
     }
   ]
 }
