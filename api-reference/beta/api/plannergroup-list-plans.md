@@ -97,7 +97,12 @@ Content-length: 421
         }
       },
       "createdDateTime": "2015-03-30T18:36:49.2407981Z",
-      "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+      "container": {
+         "@odata.type": "microsoft.graph.plannerPlanContainer",
+         "url": "https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874",
+         "containerId": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+         "type": "group"
+      },
       "title": "title-value",
       "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
     }
