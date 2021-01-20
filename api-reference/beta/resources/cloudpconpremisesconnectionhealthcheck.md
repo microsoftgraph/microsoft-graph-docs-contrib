@@ -46,7 +46,7 @@ The result of a cloud PC on-premises connection health check.
 |adJoinCheckOrganizationalUnitNotFound|The active domain join check failed because the specified organizational unit was not found. Please re-enter organization unit.|
 |adJoinCheckOrganizationalUnitIncorrectFormat|The active domain join check failed beccause the format of the specified organizational unit is incorrect. Example format: “OU=OU1,OU=OU2,OU=OU3,DC=DC1”.|
 |adJoinCheckUnknownError|The active domain join check failed due to an unknown error.  Please contact Customer Support.|
-|endpointConnectivityCheckUrlNotWhitelisted|The endpoint connectivity check failed because the URL isn’t on the allowlist in the network firewall settings. Please add the URLs to the allowlist for the network firewall settings. See [required URL list](https://docs.microsoft.com/en-us/azure/virtual-desktop/safe-url-list) for URL information.|
+|endpointConnectivityCheckUrlNotWhitelisted|The endpoint connectivity check failed because the URL isn’t on the allowlist in the network firewall settings. Please add the URLs to the allowlist for the network firewall settings. See [required URL list](/azure/virtual-desktop/safe-url-list) for URL information.|
 |endpointConnectivityCheckUnknownError|The endpoint connectivity check failed due to an unknown error. Please contact Customer Support.|
 |aadConnectivityCheckUnknownError|The Azure Active Directory connectivity check failed due to an unknown error. Please contact Customer Support.|
 |resourceAvailabilityCheckNoSubnetIP|The resource availability check failed because there were no available IP addresses in the subnet. Please free up some or change to another subnet and retry.|
