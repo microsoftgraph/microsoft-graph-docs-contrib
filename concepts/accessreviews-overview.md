@@ -12,10 +12,6 @@ The [Access Reviews](https://docs.microsoft.com/azure/active-directory/governanc
 
 The Access Reviews APIs support reviews for groups, such as Microsoft 365 Groups or security groups, only.
 
-## Why use the Access reviews API?
-
-*proposed section*
-
 ## Scope of use
 
 The Access Reviews APIs support both delegated and application contexts.
