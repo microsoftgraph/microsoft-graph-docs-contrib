@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "c9105e15-6dd7-482a-994c-e156afed581c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subscription",
+          "ChangeType": "Addition",
+          "Description": "Add printer to the resources supported for change notification",
+          "Target": "printer"
+        }
+      ],
+      "Id": "c9105e15-6dd7-482a-994c-e156afed581c",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-20T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": " Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0ec62390-2472-42a1-9298-2f36275c58bf",
           "ApiChange": "Resource",
           "ChangedApiName": "printJob, printerShare, printConnector, printSetting",

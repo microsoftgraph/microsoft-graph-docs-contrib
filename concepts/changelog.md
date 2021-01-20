@@ -37,7 +37,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added property for **hostNames** to the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) entity. |
-| Addition | beta | Added [printer](/graph/api/resources/printer?view=graph-rest-beta) to the resources supported for [change notifications](/graph/webhooks).|
 
 ### Devices and apps | Cloud PC
 
