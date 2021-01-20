@@ -95,7 +95,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
