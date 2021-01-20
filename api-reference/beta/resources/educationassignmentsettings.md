@@ -22,7 +22,7 @@ Specifies class-level assignments settings
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|submissionAnimationDisabled|Boolean|setting - When true turn-in animation celebration will not be shown. Default value - false|
+|submissionAnimationDisabled|Boolean|setting - When true turn-in animation celebration will not be shown. Default value - false.|
 
 ## Relationships
 None.
