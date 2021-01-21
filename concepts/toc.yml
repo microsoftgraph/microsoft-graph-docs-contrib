@@ -339,7 +339,7 @@ items:
                 href: search-concept-sort.md
               - name: Refine search results (preview)
                 href: search-concept-aggregation.md
-          - name: Index (preview)
+          - name: Index
             items:
               - name: Manage connections
                 href: search-index-manage-connections.md

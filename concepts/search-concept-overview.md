@@ -11,7 +11,6 @@ scenarios: "getting-started"
 
 Microsoft Search is an enterprise search engine that delivers productivity gains and relevant search results for your organization. It harnesses the collective knowledge and productivity of an organization, and surfaces relevant content to keep end users up to date. Microsoft Search is available in various experiences including Office, SharePoint, Delve, Windows, and Bing. You can use the Microsoft Search API in Microsoft Graph to extend Microsoft Search to your apps.
 
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 <!-- markdownlint-disable MD026 -->
 ## Why use the Microsoft Search API?
@@ -20,7 +19,7 @@ Microsoft Search is an enterprise search engine that delivers productivity gains
 
 The Microsoft Search API provides one unified search endpoint that you can use to [query](/graph/api/search-query) data in the Microsoft cloud - messages and events in Outlook mailboxes, and files on OneDrive and SharePoint - that Microsoft Search already indexes.
 
-### Include custom external data in search experience (preview)
+### Include custom external data in search experience
 
 Use [Microsoft Graph connectors](/microsoftsearch/connectors-overview) to include data outside of the Microsoft cloud in your search experience. For instance, connect to an organization's human resources database or product catalog. Then use the Microsoft Search API to seamlessly [query](/graph/api/search-query) the external data source. 
 

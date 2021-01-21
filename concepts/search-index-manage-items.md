@@ -11,8 +11,6 @@ doc_type: conceptualPageType
 
 Items added by your application to the Microsoft Search service are represented by the [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) resource in Microsoft Graph.
 
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
-
 Once you have created a connection, you can add your content. Each item from your data source must be represented as an [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) in Microsoft Graph with a unique item id. This id is used to create, update or delete the item from Microsoft Graph. You can use the primary key from your data source as the itemId or derive it from one or more fields. An [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) has three key components: access control list, properties, and content.
 
 ## Access control list
