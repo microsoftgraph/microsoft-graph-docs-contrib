@@ -336,8 +336,14 @@ In both the v1 and beta endpoints, the response of `GET /users/id/messages` incl
 To get a list of teams, see [list all teams](teams-list-all-teams.md) and 
 [list your teams](/graph/api/user-list-joinedteams).
 
+### Unable to remove members from chat
+In certain situations, the call to `DELETE /chats/chat-id/members/membership-id` will fail with a `404` even if the chat member exists. This is due to a issue with the computation of the `membership-id`.
+
 ### Unable to filter team members by roles
 The filter query to get members of a team based on their roles `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')` might not work. The server might respond with a `BAD REQUEST`.
+
+### Missing tenantId for chat members
+In certain instances, the `tenantId` property for the individual members of a chat might not be populated on a `GET /chats/chat-id/members` or `GET /chats/chat-id/members/membership-id` request.
 
 ## Users
 

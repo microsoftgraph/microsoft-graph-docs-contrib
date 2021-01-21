@@ -1,5 +1,23 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "0ec62390-2472-42a1-9298-2f36275c58bf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printJob, printerShare, printConnector, printSetting",
+          "ChangeType": "Addition",
+          "Description": "Added new [Delegated permissions](https://docs.microsoft.com/en-us/graph/permissions-reference#universal-print-permissions): \u003Cul\u003E\u003Cli\u003EPrintJob.Create\u003C/li\u003E\u003Cli\u003EPrinterShare.ReadBasic.All\u003Cli\u003E\u003Cli\u003EPrintConnector.Read.All\u003Cli\u003E\u003Cli\u003EPrintConnector.ReadWrite.All\u003Cli\u003E\u003Cli\u003EPrintSettings.Read.All\u003Cli\u003E\u003Cli\u003EPrintSettings.ReadWrite.All\u003Cli\u003E\u003Cli\u003EReports.Read.All\u003Cli\u003E\u003Cul\u003E",
+          "Target": "printJob, printerShare, printConnector, printSetting"
+        }
+      ],
+      "Id": "0ec62390-2472-42a1-9298-2f36275c58bf",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-07T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": " Cloud printing"
+    },
    {
       "ChangeList": [
         {
@@ -7,7 +25,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "floorNumber,floor",
           "ChangeType": "Change",
-          "Description": "Changed **floorNumber** (Edm.Int) property on [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **floor** (Edm.String).",
+          "Description": "Changed **floorNumber** (Edm.Int) property on [printerLocation](https://docs.microsoft.com/en-us/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **floor** (Edm.String).",
           "Target": "printerLocation"
         },
         {
@@ -15,7 +33,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "roomNumber,roomName",
           "ChangeType": "Change",
-          "Description": "Changed **roomNumber** (Edm.Int) property on [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **roomName** (Edm.String).",
+          "Description": "Changed **roomNumber** (Edm.Int) property on [printerLocation](https://docs.microsoft.com/en-us/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **roomName** (Edm.String).",
           "Target": "printerLocation"
         }
       ],
@@ -23,6 +41,24 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-10T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": " Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2241d4d1-9372-4ce3-9888-61cf63abea21",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [update configuration](https://docs.microsoft.com/en-us/graph/api/printjob-update-configuration?view=graph-rest-beta) method to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
+          "Target": "printJob"
+        }
+      ],
+      "Id": "2241d4d1-9372-4ce3-9888-61cf63abea21",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-16T00:00:00",
       "WorkloadArea": "Devices and apps ",
       "SubArea": " Cloud printing"
     },
@@ -85,7 +121,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "abort,printJob",
           "ChangeType": "Addition",
-          "Description": "Added the [abort](https://docs.microsoft.com/en-us/graph/api/printjob-abort?view=graph-rest-beta) action to the [printJob]((https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
+          "Description": "Added the [abort](https://docs.microsoft.com/en-us/graph/api/printjob-abort?view=graph-rest-beta) action to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
           "Target": "abort,printJob"
         },
         {
@@ -93,7 +129,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "redirect",
           "ChangeType": "Addition",
-          "Description": "Added the configuration property to the [redirect]((https://docs.microsoft.com/en-us/graph/api/printjob-redirect?view=graph-rest-beta) action on the [printJob]((https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
+          "Description": "Added the configuration property to the [redirect](https://docs.microsoft.com/en-us/graph/api/printjob-redirect?view=graph-rest-beta) action on the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
           "Target": "redirect"
         }
       ],
