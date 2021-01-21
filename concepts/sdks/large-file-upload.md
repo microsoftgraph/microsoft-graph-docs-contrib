@@ -109,19 +109,6 @@ IProgressCallback<DriveItem> callback = new IProgressCallback<DriveItem>() {
             String.format("Uploaded %d bytes of %d total bytes", current, max)
         );
     }
-
-    @Override
-    public void success(final DriveItem result) {
-        System.out.println(
-            String.format("Uploaded file with ID: %s", result.id)
-        );
-    }
-
-    public void failure(final ClientException ex) {
-        System.out.println(
-            String.format("Error uploading file: %s", ex.getMessage())
-        );
-    }
 };
 
 // Create an upload session
