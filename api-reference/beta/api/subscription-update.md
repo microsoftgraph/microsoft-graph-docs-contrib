@@ -52,6 +52,7 @@ Depending on the resource and the permission type (delegated or application) req
 
 > **Note:** `/teams/getAllMessages` and `/chats/getAllMessages` are available to users that have the 
 [required licenses](https://aka.ms/teams-changenotification-licenses).
+In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
 
 ### driveItem
 
