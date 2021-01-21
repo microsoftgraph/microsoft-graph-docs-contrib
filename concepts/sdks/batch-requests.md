@@ -181,23 +181,8 @@ final String calendarViewRequestStepId = batchRequestContent
                                           .withHttpMethod(HttpMethod.GET)
                                           .getHttpRequest());
 
-final ICoreAuthenticationProvider auth =
-    (ICoreAuthenticationProvider)graphClient.getAuthenticationProvider();
-final OkHttpClient client = HttpClients.createDefault(auth);
-
 // Send the batch request content to the /$batch endpoint
-final String batchContent = batchRequestContent.getBatchRequestContent();
-final Request batchRequest = new Request.Builder()
-    .url("https://graph.microsoft.com/v1.0/$batch")
-    .post(RequestBody.create(MediaType.parse("application/json"), batchContent))
-    .build();
-
-final Response batchResponse = client.newCall(batchRequest).execute();
-
-final ISerializer graphSerializer = graphClient.getSerializer();
-
-// Create an MSBatchResponseContent object to parse the response
-final MSBatchResponseContent batchResponseContent = new MSBatchResponseContent(batchResponse);
+final MSBatchResponseContent batchResponseContent = batchRequestContent.execute(graphClient);
 // Get the user response using the id assigned to the request
 final Response userResponse = batchResponseContent.getResponseById(meGetId);
 
@@ -469,23 +454,8 @@ final String calendarViewRequestStepId = batchRequestContent
                                           .getHttpRequest(),
                                           addEventRequestId);
 
-final ICoreAuthenticationProvider auth =
-    (ICoreAuthenticationProvider)graphClient.getAuthenticationProvider();
-final OkHttpClient client = HttpClients.createDefault(auth);
-
 // Send the batch request content to the /$batch endpoint
-final String batchContent = batchRequestContent.getBatchRequestContent();
-final Request batchRequest = new Request.Builder()
-    .url("https://graph.microsoft.com/v1.0/$batch")
-    .post(RequestBody.create(MediaType.parse("application/json"), batchContent))
-    .build();
-
-final Response batchResponse = client.newCall(batchRequest).execute();
-
-final ISerializer graphSerializer = graphClient.getSerializer();
-
-// Create an MSBatchResponseContent object to parse the response
-final MSBatchResponseContent batchResponseContent = new MSBatchResponseContent(batchResponse);
+final MSBatchResponseContent batchResponseContent = batchRequestContent.execute(client);
 // Get the user response using the id assigned to the request
 final Response addEventResponse = batchResponseContent.getResponseById(addEventRequestId);
 
