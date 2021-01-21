@@ -69,4 +69,3 @@ The following is a JSON representation of the resource.
   "modifiedDateTime": "String (timestamp)"
 }
 ```
-
