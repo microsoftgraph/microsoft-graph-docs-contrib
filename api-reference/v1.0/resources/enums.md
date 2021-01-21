@@ -66,23 +66,6 @@ Namespace: microsoft.graph
 |business|
 |documentLibrary|
 
-### externalUserState values
-
-|Member|
-|:---|
-|null|
-|Accepted|
-|PendingAcceptance|
-
-### creationType values
-
-|Member|
-|:---|
-|null|
-|Invitation|
-|LocalAccount|
-|EmailVerified|
-
 ### activityType values
 
 |Member|
@@ -413,10 +396,10 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-|notStarted
-|running
-|completed
-|failed
+|NotStarted
+|Running
+|Completed
+|Failed
 
 
 ### onenotePatchActionType values
