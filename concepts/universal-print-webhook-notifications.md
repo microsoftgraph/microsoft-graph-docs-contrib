@@ -48,7 +48,7 @@ To subscribe to notifications for print jobs, applications must have the followi
 Applications must [generate and use the Azure AD security token](/graph/auth-v2-service?context=graph%2Fapi%2Fbeta&view=graph-rest-beta) in the Microsoft Graph API request header. The security token contains the claims as per the scopes approved for the customer’s Azure AD tenant by its administrator.  
 
 
-### Create subscription: printTask triggered (JobStarted) event 
+## Create subscription: printTask triggered (JobStarted) event 
 
 Some applications monitor print queues for incoming jobs and want to be notified as soon as there is a valid job in the queue. After notified they can collect the relevant job metadata or even perform modifications in the print job – including aborting the job or even redirecting the job from current print queue to another queue after modifying the job attributes accordingly. 
 
@@ -70,7 +70,6 @@ With the printTaskDefinition that exists for customer’s Azure AD tenant, appli
 For more details, see [Subscription resource type properties](/graph/api/resources/subscription?view=graph-rest-beta#properties).
 
 Here is an example of the request.
-[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_subscription"
@@ -117,7 +116,7 @@ Content-Type: application/json
 ```
 
 
-### Create subscription: JobFetchable event 
+## Create subscription: JobFetchable event 
 Some cloud applications need to download print jobs from Universal Print when they are ready. Because these applications running in the cloud are not behind the customer's firewall, they can use Microsoft Graph change notifications to be notified when a print job is ready to be downloaded.
 
 >[!NOTE]
@@ -131,7 +130,6 @@ A JobFetchable notification needs to be created for each printer queue. While cr
 For more details, see [Subscription resource type properties](/graph/api/resources/subscription?view=graph-rest-beta#properties).
 
 Here is an example of the request.
-[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_subscription"
