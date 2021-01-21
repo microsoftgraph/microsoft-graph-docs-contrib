@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Get educationAssignmentSettings
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Read the properties and relationships of an [educationAssignmentSettings](../resources/educationassignmentsettings.md) object.
 
 ## Permissions
@@ -62,7 +64,8 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationAssignmentSettings"
 }
 -->
 ``` http

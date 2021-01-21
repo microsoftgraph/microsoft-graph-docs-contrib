@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Update educationAssignmentSettings
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of an [educationAssignmentSettings](../resources/educationassignmentsettings.md) object. Only Teachers can update these settings.
 
 ## Permissions
@@ -75,7 +77,8 @@ Content-length: 114
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationAssignmentSettings"
 }
 -->
 ``` http
