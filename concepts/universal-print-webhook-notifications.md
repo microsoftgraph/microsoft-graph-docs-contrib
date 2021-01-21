@@ -1,6 +1,6 @@
 ---
-title: "Universal Print job notifications using Microsoft Graph APIs"
-description: "Universal Print is a modern print solution that organizations can use to manage their print infrastructure through cloud services from Microsoft."
+title: "Subscribe to change notifications from cloud printing APIs using Microsoft Graph"
+description: "Learn how to subscribe to change notifications for print job events by using the Microsoft Graph API."
 author: "jahsu"
 localization_priority: Priority
 ms.prod: "cloud-printing"
@@ -9,32 +9,32 @@ ms.custom: scenarios:getting-started
 
 # Subscribe to change notifications from cloud printing APIs using Microsoft Graph
 
-Universal Print helps customers move their print infrastructure to the cloud, and is part of a robust ecosystem of partner solutions that offer advanced print functionality. These solutions can become even more powerful by integrating with Universal Print by using our Microsoft Graph API.
+Universal Print helps customers move their print infrastructure to the cloud, and is part of a robust ecosystem of partner solutions that offer advanced print functionality. These solutions can become even more powerful when you use the cloud printing APIs in Microsoft Graph to integrate with Universal Print.
 
 Many partner solutions need to process print jobs in real time as they're sent from users' devices to printers, which means they need to be notified when print jobs are available for processing. Universal Print provides hooks for print vendor solutions to be notified as jobs move through the cloud, and APIs that enable management of printers and print jobs.
 
-In this article, we describe how to subscribe to notifications for various print job events.
+This article describes how to subscribe to notifications for various print job events.
 
 
-## Getting Started
+## Get Started
 
-Before leveraging the notification functionality via Microsoft Graph, an application needs to be [registered in Azure](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal) and provisioned in the customer's Azure Active Directory (Azure AD) tenant. While registering the application, ensure it has required scopes enabled (as described below in the document). 
+Before you can take advantage of change notifications via Microsoft Graph, you must [register your application in Azure](/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal) and provision your application in the customers Azure Active Directory (Azure AD) tenant. Make sure that the application has the required permission scopes enabled, as described later in this article.
 
 
 ### Notifications and subscriptions
 
 Universal Print currently supports notifications for two scenarios related to print jobs:
 
-1. PrintTask is triggered (JobStarted): An application can subscribe to receive notifications when their printTask(hook) is triggered.
-For details about how to trigger a task, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing). Currently, a printTask can be triggered only for JobStarted event. A JobStarted event is raised when a print job has been successfully created, its payload has been uploaded, and job processing has started.  
+* PrintTask is triggered (JobStarted): An application can subscribe to receive notifications when their printTask(hook) is triggered.
+For details about how to trigger a task, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing). Currently, a printTask can be triggered only for a JobStarted event. A JobStarted event is raised when a print job has been successfully created, its payload has been uploaded, and job processing has started.  
 
-2. JobFetchable: After the job has started, there might be processing done by third-party print applications or by Universal Print itself (like converting XPS payload to PDF for a PDF printer). Once processing is complete and the payload is ready to be downloaded by a printer, a JobFetchable event is raised for the corresponding print job.
+* JobFetchable: After the job has started, third-party print applications or Universal Print might do some processing (like converting XPS payload to PDF for a PDF printer). After processing is complete and the payload is ready to be downloaded by a printer, a JobFetchable event is raised for the corresponding print job.
 >[!NOTE]
 >For listening to the change notifications for JobFetchable event, a printTaskDefinition resource is not required.
 
 ### Create an application to listen to notifications
 
-For more information about how to listen for Microsoft Graph notifications, see [Use Change Notifications and Track Changes with Microsoft Graph](https://docs.microsoft.com/learn/modules/msgraph-changenotifications-trackchanges/) and [Set up notifications for changes in user data – Code Samples](https://docs.microsoft.com/graph/webhooks#code-samples)
+For more information about how to listen for Microsoft Graph notifications, see [Use Change Notifications and Track Changes with Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges/) and [Set up notifications for changes in user data – Code Samples](/graph/webhooks#code-samples)
 
 
 ### Scopes
@@ -50,7 +50,7 @@ Applications must [generate and use the Azure AD security token](/graph/auth-v2-
 
 ### Create subscription: printTask triggered (JobStarted) event 
 
-Some applications monitor print queues for incoming jobs and want to be notified as soon as there is a valid job in the queue. Once notified they can collect the relevant job metadata or even perform modifications in the print job – including aborting the job or even redirecting the job from current print queue to another queue after modifying the job attributes accordingly. 
+Some applications monitor print queues for incoming jobs and want to be notified as soon as there is a valid job in the queue. After notified they can collect the relevant job metadata or even perform modifications in the print job – including aborting the job or even redirecting the job from current print queue to another queue after modifying the job attributes accordingly. 
 
 Before creating a notification for printTask triggered event, ensure that application has: 
 
@@ -61,7 +61,7 @@ Before creating a notification for printTask triggered event, ensure that applic
 >[!NOTE]
 >One printer may be associated to only one printTaskTrigger and one printTaskTrigger may be associated to only one printTaskDefinition. However, one printTaskDefinition may have one or more printTaskTriggers associated to it. 
 
-With the printTaskDefinition that exists for customer’s Azure AD tenant, application may [create subscription for printTask triggered (JobStarted) event using the printTaskDefinition](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http). While creating the subscription,  
+With the printTaskDefinition that exists for customer’s Azure AD tenant, application may [create subscription for printTask triggered (JobStarted) event using the printTaskDefinition](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http). While creating the subscription:  
 
 * `resource` field needs to be set as *print/taskDefinitions/{printTaskDefinition ID}/tasks*. 
 * `changeType` field needs to be set as *created*. 
