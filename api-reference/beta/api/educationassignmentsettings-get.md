@@ -62,8 +62,7 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.education.assignments.api.educationAssignmentSettings"
+  "truncated": true
 }
 -->
 ``` http
