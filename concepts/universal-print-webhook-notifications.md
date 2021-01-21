@@ -67,10 +67,10 @@ With the printTaskDefinition that exists for customer’s Azure AD tenant, appli
 * `changeType` field needs to be set as *created*. 
 * `expirationDateTime` field needs to be less than [maximum expiration time](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type). 
 
-Refer to [Subscription resource type properties](/graph/api/resources/subscription?view=graph-rest-beta#properties) for more details.
+For more details, see [Subscription resource type properties](/graph/api/resources/subscription?view=graph-rest-beta#properties).
 
 Here is an example of the request.
-# [HTTP](#tab/http)
+[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_subscription"
@@ -118,19 +118,20 @@ Content-Type: application/json
 
 
 ### Create subscription: JobFetchable event 
-There are cloud applications that need to download print jobs from Universal Print when they are ready. Since these applications running in the cloud are not behind the customer’s firewall, they can leverage the Microsoft Graph change notification mechanism to be notified when a print job is ready to be downloaded. 
+Some cloud applications need to download print jobs from Universal Print when they are ready. Because these applications running in the cloud are not behind the customer's firewall, they can use Microsoft Graph change notifications to be notified when a print job is ready to be downloaded.
 
-Please note that print jobs may not be modified once they enter the JobFetchable state.
-A JobFetchable notification needs to be created for each printer queue. While creating the subscription,  
-* `resource` field needs to be set as “print/printers/{printer id}/jobs” 
+>[!NOTE]
+>Print jobs can't be modified when they enter the JobFetchable state.
+A JobFetchable notification needs to be created for each printer queue. While creating the subscription:
+* `resource` field needs to be set as 'print/printers/{printer id}/jobs'. 
 * `changeType` field needs to be set as “updated”. 
 * `notificationQueryOptions` field needs to be set as "$filter = isFetchable eq true". 
 * `expirationDateTime` field needs to be less than [maximum expiration time](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type). 
 
-Refer to [Subscription resource type properties](/graph/api/resources/subscription?view=graph-rest-beta#properties) for more details.
+For more details, see [Subscription resource type properties](/graph/api/resources/subscription?view=graph-rest-beta#properties).
 
 Here is an example of the request.
-# [HTTP](#tab/http)
+[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_subscription"
@@ -180,26 +181,28 @@ Content-Type: application/json
 
 ## Renewing notification subscription
 
-Microsoft Graph has a limit on the expiration time. Please refer to the [maximum expiration time](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type) documentation. To continue receiving notifications, the subscription needs to be renewed periodically by using the [Update Subscription API](/graph/api/subscription-update?view=graph-rest-beta&tabs=http). 
+Microsoft Graph has a limit on the expiration time. For details, see [maximum expiration time](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type). To continue receiving notifications, the subscription needs to be renewed periodically by using the [Update Subscription API](/graph/api/subscription-update?view=graph-rest-beta&tabs=http). 
 
 ## Other operations on notification subscriptions 
 
-Applications may [get](/graph/api/subscription-get?view=graph-rest-beta&tabs=http) details of the subscription or may [delete](/graph/api/subscription-delete?view=graph-rest-beta&tabs=http) a subscription when required. Refer to the [Use Microsoft Graph API to get change notifications documentation](/graph/api/resources/webhooks?view=graph-rest-beta) for more details.
+Applications can [get](/graph/api/subscription-get?view=graph-rest-beta&tabs=http) details of the subscription or can [delete](/graph/api/subscription-delete?view=graph-rest-beta&tabs=http) a subscription when required. Refer to the [Use Microsoft Graph API to get change notifications documentation](/graph/api/resources/webhooks?view=graph-rest-beta) for more details.
 
-## Other Resources
 
-To get details on specific print APIs, please start with [Microsoft Graph API documentation for Universal Print](https://aka.ms/UPGraphDocs). 
-
-If you have any new ideas or feedback on the Universal Print Microsoft Graph API, please reach out via the [Universal Print tech community](https://aka.ms/community/UniversalPrint).
-
-## FAQ
-1. How does Microsoft Graph validate notification URLs?
-> Microsoft Graph validates the notification endpoint provided in the notificationUrl property of the subscription request before creating the subscription.
+## FAQs
+### How does Microsoft Graph validate notification URLs?
+Microsoft Graph validates the notification endpoint provided in the notificationUrl property of the subscription request before creating the subscription.
 Refer to the [Notification endpoint validation](/graph/webhooks#notification-endpoint-validation) for more details.
 
-2. What are applications expected to do after receiving a change notification?
-> Applications should process and acknowledge every change notification they receive. See [Processing the change notification](/graph/webhooks#processing-the-change-notification) for more details.
+### What are applications expected to do after receiving a change notification?
+Applications should process and acknowledge every change notification they receive. See [Processing the change notification](/graph/webhooks#processing-the-change-notification) for more details.
 
-2. How can I get a list of active subscriptions?
-> Retrieve a list of webhook subscriptions. See [Processing the change notification](/graph/api/subscription-list?view=graph-rest-beta&tabs=http) for details about listing webhook notifications.
+### How can I get a list of active subscriptions?
+Retrieve a list of webhook subscriptions. See [Processing the change notification](/graph/api/subscription-list?view=graph-rest-beta&tabs=http) for details about listing webhook notifications.
+
+
+## See also
+
+To learn more about the cloud printing API in Microsoft Graph, see [Microsoft Graph API documentation for Universal Print](https://aka.ms/UPGraphDocs). 
+
+For suggestions or feedback about the cloud printing API in Microsoft Graph, visit the [Universal Print tech community](https://aka.ms/community/UniversalPrint).
 
