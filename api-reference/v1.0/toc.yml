@@ -3917,6 +3917,67 @@ items:
               href: api/subscribedsku-get.md
       - name: Identity and sign-in
         items:
+        - name: Authentication methods
+          href: resources/authenticationmethods-overview.md
+          items:
+          - name: FIDO2 security keys
+            href: resources/fido2authenticationmethod.md
+            items:
+            - name: List
+              href: api/fido2authenticationmethod-list.md
+            - name: Get
+              href: api/fido2authenticationmethod-get.md
+            - name: Delete
+              href: api/fido2authenticationmethod-delete.md
+          - name: Microsoft Authenticator 
+            href: resources/microsoftauthenticatorauthenticationmethod.md
+            items:
+            - name: List
+              href: api/microsoftauthenticatorauthenticationmethod-list.md
+            - name: Get
+              href: api/microsoftauthenticatorauthenticationmethod-get.md
+            - name: Delete
+              href: api/microsoftauthenticatorauthenticationmethod-delete.md
+          - name: Windows Hello for Business
+            href: resources/windowshelloforbusinessauthenticationmethod.md
+            items:
+            - name: List
+              href: api/windowshelloforbusinessauthenticationmethod-list.md
+            - name: Get
+              href: api/windowshelloforbusinessauthenticationmethod-get.md
+            - name: Delete
+              href: api/windowshelloforbusinessauthenticationmethod-delete.md
+        - name: Authentication method policy
+          items:
+          - name: Overview
+            href: resources/authenticationmethodspolicies-overview.md
+          - name: FIDO2 policy
+            href: resources/fido2authenticationmethodconfiguration.md
+            items:
+            - name: Get
+              href: api/fido2authenticationmethodconfiguration-get.md
+            - name: Update
+              href: api/fido2authenticationmethodconfiguration-update.md
+            - name: Delete
+              href: api/fido2authenticationmethodconfiguration-delete.md
+          - name: Microsoft Authenticator policy
+            href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
+            items:
+            - name: Get
+              href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
+            - name: Update
+              href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
+            - name: Delete
+              href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+          - name: Email policy
+            href: resources/emailauthenticationmethodconfiguration.md
+            items:
+            - name: Get
+              href: api/emailauthenticationmethodconfiguration-get.md
+            - name: Update
+              href: api/emailauthenticationmethodconfiguration-update.md
+            - name: Delete
+              href: api/emailauthenticationmethodconfiguration-delete.md
         - name: Certificate-based auth configuration
           href: resources/certificatebasedauthconfiguration.md
           items:
