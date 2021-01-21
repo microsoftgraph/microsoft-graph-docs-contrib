@@ -7,7 +7,7 @@ ms.prod: "planner"
 doc_type: apiPageType
 ---
 
-# List members
+# List Roster members
 Namespace: microsoft.graph
 
 Get the plannerRosterMember resources from the members navigation property.
