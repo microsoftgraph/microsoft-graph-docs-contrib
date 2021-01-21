@@ -50,7 +50,7 @@ To remove an Azure AD app from a catalog, set the **catalogId** to be of the ID 
 
 To assign the geolocation environment for a multi-geolocation Sharepoint Online resource, include the **accessPackageResourceEnvironment** relationship in the `accessPackageResource` object. This can be done in two ways:
 + Use `@odata.bind` annotation to assign the `id` of the `accessPackageResourceEnvironment` to an `accessPackageResourceEnvironment` object.
-+ Specify the `originId` parameter of an `accessPackageResourceEnvironment` in an `accessPackageResourceEnvironment` object.
++ Specify the `originId` parameter of the `accessPackageResourceEnvironment` in an `accessPackageResourceEnvironment` object.
 
 
 ## Response

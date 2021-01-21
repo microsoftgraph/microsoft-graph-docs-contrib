@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The connectionInfo object holds the resource locator which will be used by Entitlement Management (ELM) to communicate with a resource.
+The connectionInfo object defines the resource locator that is used to communicate with a resource in Azure AD Entitlement Management.
 
 ## Properties
 |Property|Type|Description|
