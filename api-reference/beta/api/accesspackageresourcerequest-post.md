@@ -135,7 +135,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Create an accessPackageResourceRequest for a resource and assign an existing accessPackageResourceEnvironment
+### Example 2: Create an accessPackageResourceRequest for a resource and assign an accessPackageResourceEnvironment using @odata.bind
 
 #### Request
 
@@ -193,7 +193,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Create an accessPackageResourceRequest for a resource and assign a new accessPackageResourceEnvironment
+### Example 3: Create an accessPackageResourceRequest for a resource and assign an accessPackageResourceEnvironment using originId
 
 #### Request
 
