@@ -81,6 +81,10 @@ The CSV file has the following headers for columns:
 - Active File Count
 - Page View Count
 - Visited Page Count
+- Anonymous Link Count
+- Company Link Count
+- Secure Link For Guest Count
+- Secure Link For Member Count
 - Storage Used (Byte)
 - Storage Allocated (Byte)
 - Root Web Template
