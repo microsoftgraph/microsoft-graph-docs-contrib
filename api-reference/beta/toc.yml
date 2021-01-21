@@ -1479,7 +1479,7 @@ items:
             href: api/legalhold-update.md
           - name: Delete
             href: api/legalhold-delete.md
-        - name: eDiscovery review set
+        - name: Review set
           href: resources/reviewset.md
           items:
           - name: List
@@ -1547,39 +1547,6 @@ items:
             href: api/reviewsetquery-update.md
           - name: Delete
             href: api/reviewsetquery-delete.md
-        - name: Site source
-          href: resources/sitesource.md
-          items:
-          - name: List
-            href: api/custodian-list-sitesources.md
-          - name: Create
-            href: api/custodian-post-sitesources.md
-          - name: Get
-            href: api/sitesource-get.md
-          - name: Delete
-            href: api/sitesource-delete.md
-        - name: Unified group source
-          href: resources/unifiedgroupsource.md
-          items:
-          - name: List
-            href: api/custodian-list-unifiedgroupsources.md
-          - name: Create
-            href: api/custodian-post-unifiedgroupsources.md
-          - name: Get
-            href: api/unifiedgroupsource-get.md
-          - name: Delete
-            href: api/unifiedgroupsource-delete.md
-        - name: User source
-          href: resources/usersource.md
-          items:
-          - name: List
-            href: api/custodian-list-usersources.md
-          - name: Create
-            href: api/custodian-post-usersources.md
-          - name: Get
-            href: api/usersource-get.md
-          - name: Delete
-            href: api/usersource-delete.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:

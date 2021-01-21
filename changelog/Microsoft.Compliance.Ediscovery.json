@@ -193,6 +193,174 @@
 					"ChangeType": "Change",
 					"Description": "Changed the type of the **bindingParameter** parameter in the [reopen](https://docs.microsoft.com/en-us/graph/api/ediscoveryCase-reopen?view=graph-rest-beta) method",
 					"Target": "reopen"
+				},
+				{
+					"Id": "7c43819e-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Relationship",
+					"ChangedApiName": "tags",
+					"ChangeType": "Addition",
+					"Description": "Added the **tags** relationship to [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource",
+					"Target": "case"
+				},
+				{
+					"Id": "7c45e3cf-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Relationship",
+					"ChangedApiName": "sourceCollections",
+					"ChangeType": "Addition",
+					"Description": "Added the **sourceCollections** relationship to [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource",
+					"Target": "case"
+				},
+				{
+					"Id": "7c4845d9-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "sourceCollection",
+					"ChangeType": "Addition",
+					"Description": "Added the [sourceCollection](https://docs.microsoft.com/en-us/graph/api/resources/sourceCollection?view=graph-rest-beta) resource type",
+					"Target": "sourceCollection"
+				},
+				{
+					"Id": "7c4aaa0c-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "tag",
+					"ChangeType": "Addition",
+					"Description": "Added the [tag](https://docs.microsoft.com/en-us/graph/api/resources/tag?view=graph-rest-beta) resource type",
+					"Target": "tag"
+				},
+				{
+					"Id": "7c4d09b3-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "tagOperation",
+					"ChangeType": "Addition",
+					"Description": "Added the [tagOperation](https://docs.microsoft.com/en-us/graph/api/resources/tagOperation?view=graph-rest-beta) resource type",
+					"Target": "tagOperation"
+				},
+				{
+					"Id": "7c4f6f69-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "estimateStatisticsOperation",
+					"ChangeType": "Addition",
+					"Description": "Added the [estimateStatisticsOperation](https://docs.microsoft.com/en-us/graph/api/resources/estimateStatisticsOperation?view=graph-rest-beta) resource type",
+					"Target": "estimateStatisticsOperation"
+				},
+				{
+					"Id": "7c51ced7-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "addToReviewSetOperation",
+					"ChangeType": "Addition",
+					"Description": "Added the [addToReviewSetOperation](https://docs.microsoft.com/en-us/graph/api/resources/addToReviewSetOperation?view=graph-rest-beta) resource type",
+					"Target": "addToReviewSetOperation"
+				},
+				{
+					"Id": "7c543116-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Member",
+					"ChangedApiName": "applyTags",
+					"ChangeType": "Addition",
+					"Description": "Added the `applyTags` member to the **caseAction** enumeration",
+					"Target": "caseAction"
+				},
+				{
+					"Id": "7c5692f5-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Member",
+					"ChangedApiName": "estimateStatistics",
+					"ChangeType": "Addition",
+					"Description": "Added the `estimateStatistics` member to the **caseAction** enumeration",
+					"Target": "caseAction"
+				},
+				{
+					"Id": "7c58fa39-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Member",
+					"ChangedApiName": "addToReviewSet",
+					"ChangeType": "Addition",
+					"Description": "Added the `addToReviewSet` member to the **caseAction** enumeration",
+					"Target": "caseAction"
+				},
+				{
+					"Id": "7c5b591e-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Member",
+					"ChangedApiName": "unknownFutureValue",
+					"ChangeType": "Addition",
+					"Description": "Added the `unknownFutureValue` member to the **caseAction** enumeration",
+					"Target": "caseAction"
+				},
+				{
+					"Id": "7c5dbba1-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Enum type",
+					"ChangedApiName": "childSelectability",
+					"ChangeType": "Addition",
+					"Description": "Added the **childSelectability** enumeration type",
+					"Target": "childSelectability"
+				},
+				{
+					"Id": "7c601fe8-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Enum type",
+					"ChangedApiName": "tenantSources",
+					"ChangeType": "Addition",
+					"Description": "Added the **tenantSources** enumeration type",
+					"Target": "tenantSources"
+				},
+				{
+					"Id": "7c62816f-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Enum type",
+					"ChangedApiName": "dataCollectionScope",
+					"ChangeType": "Addition",
+					"Description": "Added the **dataCollectionScope** enumeration type",
+					"Target": "dataCollectionScope"
+				},
+				{
+					"Id": "7c64e6b4-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Method",
+					"ChangedApiName": "applyTags",
+					"ChangeType": "Addition",
+					"Description": "Added the [applyTags](https://docs.microsoft.com/en-us/graph/api/reviewSetQuery-applyTags?view=graph-rest-beta) method to the [reviewSetQuery](https://docs.microsoft.com/en-us/graph/api/resources/reviewSetQuery?view=graph-rest-beta) resource",
+					"Target": "reviewSetQuery"
+				},
+				{
+					"Id": "7c6745eb-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Method",
+					"ChangedApiName": "estimateStatistics",
+					"ChangeType": "Addition",
+					"Description": "Added the [estimateStatistics](https://docs.microsoft.com/en-us/graph/api/sourceCollection-estimateStatistics?view=graph-rest-beta) method to the [sourceCollection](https://docs.microsoft.com/en-us/graph/api/resources/sourceCollection?view=graph-rest-beta) resource",
+					"Target": "sourceCollection"
+				},
+				{
+					"Id": "7c69a97c-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Method",
+					"ChangedApiName": "addToReviewSet",
+					"ChangeType": "Addition",
+					"Description": "Added the [addToReviewSet](https://docs.microsoft.com/en-us/graph/api/reviewSet-addToReviewSet?view=graph-rest-beta) method to the [reviewSet](https://docs.microsoft.com/en-us/graph/api/resources/reviewSet?view=graph-rest-beta) resource",
+					"Target": "reviewSet"
+				},
+				{
+					"Id": "7c6c0c57-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Method",
+					"ChangedApiName": "asHierarchy",
+					"ChangeType": "Addition",
+					"Description": "Added the [asHierarchy](https://docs.microsoft.com/en-us/graph/api/tag-asHierarchy?view=graph-rest-beta) method to the [tag](https://docs.microsoft.com/en-us/graph/api/resources/tag?view=graph-rest-beta) resource",
+					"Target": "tag"
+				},
+				{
+					"Id": "7c6e6d68-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Member",
+					"ChangedApiName": "tag",
+					"ChangeType": "Deletion",
+					"Description": "Removed the `tag` member from the **caseAction** enumeration",
+					"Target": "caseAction"
+				},
+				{
+					"Id": "7c70d2ca-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Member",
+					"ChangedApiName": "search",
+					"ChangeType": "Deletion",
+					"Description": "Removed the `search` member from the **caseAction** enumeration",
+					"Target": "caseAction"
+				},
+				{
+					"Id": "7c733572-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Member",
+					"ChangedApiName": "addDataToReviewSet",
+					"ChangeType": "Deletion",
+					"Description": "Removed the `addDataToReviewSet` member from the **caseAction** enumeration",
+					"Target": "caseAction"
 				}
 			],
 			"Id": "782dc913-17be-11eb-baa1-5b13c31fb2cd",
