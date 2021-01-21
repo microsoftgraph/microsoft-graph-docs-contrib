@@ -162,7 +162,6 @@ The following is a JSON representation of the resource.
   "collate": true,
   "scaling": {"@odata.type": "microsoft.graph.printScaling"}
 }
-
 ```
 
 

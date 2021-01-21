@@ -44,6 +44,6 @@ const printJobConfiguration = {
 
 let res = await client.api('/print/printers/d5ef6ec4-07ca-4212-baf9-d45be126bfbb/jobs/44353/configuration')
 	.version('beta')
-	.post(printJobConfiguration);
+	.update(printJobConfiguration);
 
 ```
