@@ -1,6 +1,6 @@
 ---
 title: "connectionInfo resource type"
-description: "The connectionInfo object holds the connection information which will be used by ELM to communicate with a resource."
+description: "The connectionInfo object defines the connection information that is used to communicate with a resource."
 author: "markwahl-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -36,4 +36,3 @@ The following is a JSON representation of the resource.
   "url": "String"
 }
 ```
-
