@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # Tutorial: Using the Access Reviews API for groups
 
-In this tutorial, you will use Graph Explorer to create and read access reviews and to understand its main building blocks: definitions, instances, and decisions.
+In this tutorial, you will use Graph Explorer to create and read access reviews and understand its main building blocks: definitions, instances, and decisions.
 
 Using Graph Explorer to try and test your Access Reviews API calls before you automate them into a script or an app saves you time by helping you properly define and validate your queries without recompiling your application.
 
@@ -27,6 +27,7 @@ To complete this tutorial, you need the following resources and privileges:
 Create a security group named **Test security group** that is the target of the access reviews in this tutorial. You will assign two group owners to this group.
 
 ### Request
+In this call, replace `c42981f1-213b-4856-9eff-9f9ab400363b` and `30eec5e3-65cc-4b06-bf8b-6137dd79ae96` with the id's of your two group owners.
 
 ```http
 POST https://graph.microsoft.com/beta/groups
@@ -106,8 +107,10 @@ Create an access review for external identities for the security group, with the
 For more information about the parameters required in the request body of these examples, see the [Access Reviews API Reference](https://docs.microsoft.com/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta).
 
 ### Request
-
-In the following call, replace `9fbd2c38-bccb-4d07-84e3-bdeb0f42473b` with the group id of your **Test security group**.
+In this call, replace the following:
++ values of **displayName**, **descriptionForAdmins**, and **descriptionForReviewers** with your preferred values.
++ `9fbd2c38-bccb-4d07-84e3-bdeb0f42473b` with the group id of your **Test security group**.
++ value of **startDate** with today's date and value of **endDate** with a date one year from the start date. 
 
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
@@ -285,11 +288,12 @@ Content-type: application/json
 }
 ```
 
-## Step 3: List instances
+## Step 4: List instances
 
 The following query lists all instances of the access review definition. Because you created a one-time access review in Step 1, the request returns only one instance whose `id` property is the same as the access definition’s `id` property.
 
 ### Request
+In this call, replace `46ed9917-be7b-4ce4-b8b0-a6a488cc48ab` with the `id` of a definition returned in Step 3.
 
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/46ed9917-be7b-4ce4-b8b0-a6a488cc48ab/instances
@@ -352,6 +356,7 @@ You can use an `id` from the pending access reviews to read the access review de
 You are interested in the decisions taken for the instance of an access review..
 
 ### Request
+In this call, replace `46ed9917-be7b-4ce4-b8b0-a6a488cc48ab` with the `id` of your access review definition returned in Step 3.
 
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/46ed9917-be7b-4ce4-b8b0-a6a488cc48ab/instances/46ed9917-be7b-4ce4-b8b0-a6a488cc48ab/decisions
@@ -379,8 +384,7 @@ Since the access review schedule definition is the blueprint for the access revi
 ### Delete the security group
 
 #### Request
-
-In this request, replace `9fbd2c38-bccb-4d07-84e3-bdeb0f42473b` with the `id` of your **Test security group**.
+In this call, replace `9fbd2c38-bccb-4d07-84e3-bdeb0f42473b` with the `id` of your **Test security group**.
 
 ```http
 DELETE https://graph.microsoft.com/beta/groups/9fbd2c38-bccb-4d07-84e3-bdeb0f42473b
@@ -395,7 +399,7 @@ Content-type: text/plain
 
 ### Delete the acess review definition
 
-In this request, replace `46ed9917-be7b-4ce4-b8b0-a6a488cc48ab` with the `id` of your access review definition.
+In this call, replace `46ed9917-be7b-4ce4-b8b0-a6a488cc48ab` with the `id` of your access review definition.
 
 #### Request
 ```http
