@@ -453,7 +453,7 @@ items:
         - name: List apps for user
           href: api/userteamwork-list-installedapps.md
         - name: Add app for user
-          href: api/userteamwork-post-installedapps.md        
+          href: api/userteamwork-post-installedapps.md
         - name: Get installed app for user
           href: api/userteamwork-get-installedapps.md
         - name: Upgrade installed app for user
@@ -461,7 +461,7 @@ items:
         - name: Remove app for user
           href: api/userteamwork-delete-installedapps.md
         - name: Get chat between user and app
-          href: api/userscopeteamsappinstallation-get-chat.md 
+          href: api/userscopeteamsappinstallation-get-chat.md
       - name: To-do tasks
         items:
         - name: Task
@@ -524,7 +524,7 @@ items:
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List endpoints
-          href: api/group-list-endpoints.md        
+          href: api/group-list-endpoints.md
         - name: List joined teams
           href: api/user-list-joinedteams.md
         - name: List lifecycle policies
@@ -556,7 +556,7 @@ items:
         - name: Subscribe by mail
           href: api/group-subscribebymail.md
         - name: Unsubscribe by mail
-          href: api/group-unsubscribebymail.md       
+          href: api/group-unsubscribebymail.md
         - name: Validate properties
           href: api/group-validateproperties.md
       - name: App role assignments
@@ -1670,7 +1670,7 @@ items:
           href: resources/printjob.md
           items:
           - name: Create job for a printer
-            href: api/printer-post-jobs.md            
+            href: api/printer-post-jobs.md
           - name: Create job for a printer share
             href: api/printershare-post-jobs.md
           - name: Get
@@ -10207,7 +10207,7 @@ items:
             - name: List listeners
               href: api/authenticationeventspolicy-list-onsignupstart.md
             - name: Create listener
-              href: api/authenticationeventspolicy-post-onsignupstart.md            
+              href: api/authenticationeventspolicy-post-onsignupstart.md
             - name: Get listener
               href: api/authenticationlistener-get.md
             - name: Update listener
@@ -10525,26 +10525,26 @@ items:
           href: resources/invitation.md
           items:
           - name: Create invitation
-            href: api/invitation-post.md        
+            href: api/invitation-post.md
         - name: Organizational branding
           href: resources/organizationalbrandingproperties.md
           items:
           - name: Create
             href: api/organizationalbrandingproperties-create.md
-          - name: Get 
+          - name: Get
             href: api/organizationalbrandingproperties-get.md
           - name: Update
             href: api/organizationalbrandingproperties-update.md
           - name: Delete
             href: api/organizationalbrandingproperties-delete.md
-          - name: Create localized 
+          - name: Create localized
             href: api/organizationalbrandingpropertieslocalization-create.md
           - name: Get localized
             href: api/organizationalbrandingpropertieslocalization-get.md
           - name: Update localized
             href: api/organizationalbrandingpropertieslocalization-update.md
           - name: Delete localized
-            href: api/organizationalbrandingpropertieslocalization-delete.md 
+            href: api/organizationalbrandingpropertieslocalization-delete.md
         - name: Organizational contacts
           href: resources/orgcontact.md
           items:
@@ -10559,7 +10559,7 @@ items:
           - name: Get org contact delta
             href: api/orgcontact-delta.md
           - name: Groups
-            href: resources/group.md       
+            href: resources/group.md
         - name: Policy
           href: resources/policy-overview.md
           items:
@@ -10868,7 +10868,7 @@ items:
             - name: Create
               href: api/accessreviewscheduledefinition-create.md
             - name: Delete
-              href: api/accessreviewscheduledefinition-delete.md 
+              href: api/accessreviewscheduledefinition-delete.md
             - name: Update
               href: api/accessreviewscheduledefinition-update.md
           - name: Access review instance
@@ -10961,6 +10961,34 @@ items:
             items:
             - name: List
               href: api/programcontroltype-list.md
+        - name: Consent requests
+          href: resources/consentrequests-root.md
+          items:
+          - name: Admin consent request policy
+            href: resources/adminconsentrequestpolicy.md
+            items:
+            - name: List
+              href: api/adminconsentrequestpolicy-get.md
+            - name: Update
+              href: api/adminconsentrequestpolicy-update.md
+          - name: App consent requests
+            href: resources/appconsentrequest.md
+            items:
+            - name: List app consent requests
+              href: api/appconsentrequest-list.md
+            - name: Get app consent request
+              href: api/appconsentrequest-get.md
+            - name: List app consent requests for my approval
+              href: api/user-list-appconsentrequestsforapproval.md
+            - name: Get app consent request for my approval
+              href: api/user-get-appconsentrequestsforapproval.md
+          - name: User consent requests
+            href: resources/userconsentrequest.md
+            items:
+            - name: List
+              href: api/userconsentrequest-list.md
+            - name: Get
+              href: api/userconsentrequest-get.md
         - name: Entitlement management
           href: resources/entitlementmanagement-root.md
           items:
@@ -12622,7 +12650,7 @@ items:
         href: resources/teams-api-overview.md
       - name: Team
         href: resources/team.md
-        items:       
+        items:
         - name: Create team
           href: api/team-post.md
         - name: Create team from group
@@ -12746,7 +12774,7 @@ items:
         - name: Reply to message
           href: api/channel-post-messagereply.md
         - name: Get messages across all channels
-          href: api/channels-getallmessages.md  
+          href: api/channels-getallmessages.md
       - name: Chat
         href: resources/chat.md
         items:
@@ -12772,7 +12800,7 @@ items:
           href: api/chat-get-message.md
         - name: Send message in chat
           href: api/chat-post-message.md
-        - name: Get chat between user and app 
+        - name: Get chat between user and app
           href: api/userscopeteamsappinstallation-get-chat.md
       - name: Chat message
         href: resources/chatmessage.md
@@ -12794,7 +12822,7 @@ items:
         - name: Update message
           href: api/chatmessage-update.md
         - name: Get all chat messages
-          href: api/chats-getallmessages.md  
+          href: api/chats-getallmessages.md
         - name: List hosted content
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content
@@ -12802,7 +12830,7 @@ items:
       - name: App catalog
         items:
         - name: App in catalog
-          href: resources/teamsapp.md        
+          href: resources/teamsapp.md
         - name: List apps in catalog
           href: api/appcatalogs-list-teamsapps.md
         - name: Publish apps to catalog
@@ -12846,7 +12874,7 @@ items:
           - name: List apps in chat
             href: api/chat-list-installedapps.md
           - name: Add app in chat
-            href: api/chat-post-installedapps.md     
+            href: api/chat-post-installedapps.md
           - name: Get app installed in chat
             href: api/chat-get-installedapps.md
           - name: Upgrade app installed in chat

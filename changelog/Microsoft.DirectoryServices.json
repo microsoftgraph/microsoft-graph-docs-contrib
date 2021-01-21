@@ -163,6 +163,72 @@
     {
       "ChangeList": [
         {
+          "Id": "5109df9e-97a2-45b4-abf1-d2515c076fb4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "adminConsentRequestPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [adminConsentRequestPolicy](/graph/api/resources/adminconsentrequestpolicy?view=graph-rest-beta\u0026preserve-view=true) resource type and associated methods.",
+          "Target": "adminConsentRequestPolicy"
+        },
+        {
+          "Id": "5109df9e-97a2-45b4-abf1-d2515c076fb4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userConsentRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [userConsentRequest](/graph/api/resources/userconsentrequest?view=graph-rest-beta\u0026preserve-view=true) resource type and associated methods.",
+          "Target": "userConsentRequest"
+        },
+        {
+          "Id": "5109df9e-97a2-45b4-abf1-d2515c076fb4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appConsentRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [appConsentRequest](/graph/api/resources/appconsentrequest?view=graph-rest-beta\u0026preserve-view=true) resource type and associated methods.",
+          "Target": "appConsentRequest"
+        },
+        {
+          "Id": "5109df9e-97a2-45b4-abf1-d2515c076fb4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "request",
+          "ChangeType": "Addition",
+          "Description": "Added the [request](/graph/api/resources/request?view=graph-rest-beta\u0026preserve-view=true) complex type.",
+          "Target": "request"
+        },
+        {
+          "Id": "5109df9e-97a2-45b4-abf1-d2515c076fb4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "approval",
+          "ChangeType": "Addition",
+          "Description": "Added the [approval](/graph/api/resources/approval?view=graph-rest-beta\u0026preserve-view=true) complex type.",
+          "Target": "approval"
+        },
+        {
+          "Id": "5109df9e-97a2-45b4-abf1-d2515c076fb4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appConsentRequestScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [appConsentRequestScope](/graph/api/resources/appconsentrequestscope?view=graph-rest-beta\u0026preserve-view=true) complex type.",
+          "Target": "appConsentRequestScope"
+        },
+        {
+          "Id": "5109df9e-97a2-45b4-abf1-d2515c076fb4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appConsentRequestsForApproval",
+          "ChangeType": "Addition",
+          "Description": "Added the [appConsentRequestsForApproval](/graph/api/resources/appconsentrequestsforapproval?view=graph-rest-beta\u0026preserve-view=true) resource type and associated methods.",
+          "Target": "appConsentRequestsForApproval"
+        }
+      ],
+      "Id": "5109df9e-97a2-45b4-abf1-d2515c076fb4",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-01T00:00:00",
+      "WorkloadArea": "Identity and access ",
+      "SubArea": " Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7a992070-a9ab-42f3-a13e-8e5fd8d46bcf",
           "ApiChange": "Resource",
           "ChangedApiName": "device",
