@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the list of [apps installed](../resources/teamsappinstallation.md) in the specified [team](../resources/team.md).
 
 ## Permissions
