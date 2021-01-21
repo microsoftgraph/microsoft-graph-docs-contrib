@@ -140,7 +140,7 @@ This resource supports:
 |consentProvidedForMinor|[consentProvidedForMinor](#consentprovidedforminor-values)|Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.|
 |country|String|The country/region in which the user is located; for example, "US" or "UK". Supports `$filter`.|
 |createdDateTime | DateTimeOffset |The created date of the user object. |
-|creationType|creationType|Indicates whether the user account was created as a regular school or work account (`null`), an external account (`Invitation`), a local account for an Azure Active Directory B2C tenant (`LocalAccount`) or self-service sign-up using email verification (`EmailVerified`). Read-only.|
+|creationType|String|Indicates whether the user account was created as a regular school or work account (`null`), an external account (`Invitation`), a local account for an Azure Active Directory B2C tenant (`LocalAccount`) or self-service sign-up using email verification (`EmailVerified`). Read-only.|
 |deletedDateTime| DateTimeOffset | The date and time the user was deleted. <br><br>Returned only on `$select`. |
 |department|String|The name for the department in which the user works. Supports `$filter`.|
 |displayName|String|The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. <br><br>Returned by default. Supports `$filter` and `$orderby`.|
@@ -148,7 +148,7 @@ This resource supports:
 | employeeId | String | The employee identifier assigned to the user by the organization. <br><br>Returned only on `$select`. Supports `$filter`.|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |Represents organization data (e.g. division and costCenter) associated with a user. <br><br>Returned only on `$select`.|
 | employeeType | String | Captures enterprise worker type: Employee, Contractor, Consultant, Vendor, etc. <br><br>Returned only on `$select`. Supports `$filter`.|
-|externalUserState|externalUserState|For an external user invited to the tenant using the [invitation API](../api/invitation-post.md), this property represents the invited user's invitation status. For invited users, the state can be `PendingAcceptance` or `Accepted`, or `null` for all other users. <br><br>Returned only on `$select`. Supports `$filter` with the supported values. For example: `$filter=externalUserState eq 'PendingAcceptance'`.|
+|externalUserState|String|For an external user invited to the tenant using the [invitation API](../api/invitation-post.md), this property represents the invited user's invitation status. For invited users, the state can be `PendingAcceptance` or `Accepted`, or `null` for all other users. <br><br>Returned only on `$select`. Supports `$filter` with the supported values. For example: `$filter=externalUserState eq 'PendingAcceptance'`.|
 |externalUserStateChangeDateTime|DateTimeOffset|Shows the timestamp for the latest change to the **externalUserState** property. <br><br>Returned only on `$select`.|
 |faxNumber|String|The fax number of the user.|
 |givenName|String|The given name (first name) of the user. Returned by default. Supports `$filter`.|
