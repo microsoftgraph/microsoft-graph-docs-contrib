@@ -5,10 +5,10 @@
         {
           "Id": "0ec62390-2472-42a1-9298-2f36275c58bf",
           "ApiChange": "Resource",
-          "ChangedApiName": "printJob, printerShare",
+          "ChangedApiName": "printJob, printerShare, printConnector, printSetting",
           "ChangeType": "Addition",
-          "Description": "Added new [Delegated permissions](/graph/permissions-reference#universal-print-permissions): \u003Cul\u003E\u003Cli\u003EPrintJob.Create\u003C/li\u003E\u003Cli\u003EPrinterShare.ReadBasic.All\u003C/li\u003E\u003C/ul\u003E",
-          "Target": "printJob, printerShare"
+          "Description": "Added new [Delegated permissions](https://docs.microsoft.com/en-us/graph/permissions-reference#universal-print-permissions): \u003Cul\u003E\u003Cli\u003EPrintJob.Create\u003C/li\u003E\u003Cli\u003EPrinterShare.ReadBasic.All\u003Cli\u003E\u003Cli\u003EPrintConnector.Read.All\u003Cli\u003E\u003Cli\u003EPrintConnector.ReadWrite.All\u003Cli\u003E\u003Cli\u003EPrintSettings.Read.All\u003Cli\u003E\u003Cli\u003EPrintSettings.ReadWrite.All\u003Cli\u003E\u003Cli\u003EReports.Read.All\u003Cli\u003E\u003Cul\u003E",
+          "Target": "printJob, printerShare, printConnector, printSetting"
         }
       ],
       "Id": "0ec62390-2472-42a1-9298-2f36275c58bf",
@@ -25,7 +25,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "floorNumber,floor",
           "ChangeType": "Change",
-          "Description": "Changed **floorNumber** (Edm.Int) property on [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **floor** (Edm.String).",
+          "Description": "Changed **floorNumber** (Edm.Int) property on [printerLocation](https://docs.microsoft.com/en-us/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **floor** (Edm.String).",
           "Target": "printerLocation"
         },
         {
@@ -33,7 +33,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "roomNumber,roomName",
           "ChangeType": "Change",
-          "Description": "Changed **roomNumber** (Edm.Int) property on [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **roomName** (Edm.String).",
+          "Description": "Changed **roomNumber** (Edm.Int) property on [printerLocation](https://docs.microsoft.com/en-us/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **roomName** (Edm.String).",
           "Target": "printerLocation"
         }
       ],

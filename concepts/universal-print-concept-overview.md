@@ -29,7 +29,7 @@ Follow these steps to submit print jobs to printerShare:
 
 1. [Create a print job](/graph/api/printershare-post-jobs?view=graph-rest-beta) and store the resulting document ID.
 2. [Create an uploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta) for the document. 
-3. [Upload bytes to the created upload session](/graph/upload-data-to-upload-session).
+3. [Upload bytes to the created upload session](./upload-data-to-upload-session.md).
 4. [Start the print job](/graph/api/printjob-start?view=graph-rest-beta).
 
 ### Manage printers
