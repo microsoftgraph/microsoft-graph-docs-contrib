@@ -34,7 +34,7 @@ For details about how to trigger a task, see [Extending Universal Print to suppo
 
 ### Create an application to listen to notifications
 
-For more information about how to listen for Microsoft Graph notifications, see [Use Change Notifications and Track Changes with Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges/) and [Set up notifications for changes in user data – Code Samples](/graph/webhooks#code-samples)
+For more information about how to listen for Microsoft Graph notifications, see [Use Change Notifications and Track Changes with Microsoft Graph](https://docs.microsoft.com/learn/modules/msgraph-changenotifications-trackchanges/) and [Set up notifications for changes in user data – Code Samples](/graph/webhooks#code-samples)
 
 
 ### Scopes
