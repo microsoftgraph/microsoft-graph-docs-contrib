@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-root.md), an access package resource environment is a reference to the geolocation environment in which a resource is located.
+In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access package resource environment is a reference to the geolocation environment in which a resource is located.
 
 ## Methods
 |Method|Return type|Description|
@@ -69,4 +69,3 @@ The following is a JSON representation of the resource.
   "modifiedDateTime": "String (timestamp)"
 }
 ```
-
