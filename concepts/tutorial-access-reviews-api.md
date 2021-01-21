@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Tutorial: Using the Access Reviews API in Graph Explorer
+# Tutorial: Using the Access Reviews API for groups
 
 In this tutorial, you will use Graph Explorer to create and read access reviews and to understand its main building blocks: definitions, instances, and decisions.
 
