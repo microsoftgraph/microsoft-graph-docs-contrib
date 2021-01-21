@@ -1,5 +1,5 @@
 ---
-title: "List members"
+title: "List Roster members"
 description: "Get the plannerRosterMember resources from the members navigation property."
 author: "tarkansevilmis"
 localization_priority: Normal
