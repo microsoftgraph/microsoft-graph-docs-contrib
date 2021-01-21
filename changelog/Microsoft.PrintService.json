@@ -95,7 +95,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "outputAreaAlmostFull",
           "ChangeType": "Addition",
-          "Description": "Added the `outputAreaAlmostFull` member to the **printerProcessingStateDetail** enumeration",
+          "Description": "Added the `outputAreaAlmostFull` member to the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         },
         {
@@ -103,7 +103,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "none",
           "ChangeType": "Addition",
-          "Description": "Added the `none` member to the **printerProcessingStateDetail** enumeration",
+          "Description": "Added the `none` member to the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         },
         {
@@ -111,7 +111,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "movingToPaused",
           "ChangeType": "Addition",
-          "Description": "Added the `movingToPaused` member to the **printerProcessingStateDetail** enumeration",
+          "Description": "Added the `movingToPaused` member to the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         },
         {
@@ -119,7 +119,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "shutdown",
           "ChangeType": "Addition",
-          "Description": "Added the `shutdown` member to the **printerProcessingStateDetail** enumeration",
+          "Description": "Added the `shutdown` member to the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         },
         {
@@ -127,7 +127,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "connectingToDevice",
           "ChangeType": "Addition",
-          "Description": "Added the `connectingToDevice` member to the **printerProcessingStateDetail** enumeration",
+          "Description": "Added the `connectingToDevice` member to the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         },
         {
@@ -135,7 +135,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "timedOut",
           "ChangeType": "Addition",
-          "Description": "Added the `timedOut` member to the **printerProcessingStateDetail** enumeration",
+          "Description": "Added the `timedOut` member to the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         },
         {
@@ -143,7 +143,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "stopping",
           "ChangeType": "Addition",
-          "Description": "Added the `stopping` member to the **printerProcessingStateDetail** enumeration",
+          "Description": "Added the `stopping` member to the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         },
         {
@@ -151,7 +151,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "stoppedPartially",
           "ChangeType": "Addition",
-          "Description": "Added the `stoppedPartially` member to the **printerProcessingStateDetail** enumeration",
+          "Description": "Added the `stoppedPartially` member to the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         },
         {
@@ -159,7 +159,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "tonerLow",
           "ChangeType": "Addition",
-          "Description": "Added the `tonerLow` member to the **printerProcessingStateDetail** enumeration",
+          "Description": "Added the `tonerLow` member to the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         },
         {
@@ -167,7 +167,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "tonerEmpty",
           "ChangeType": "Addition",
-          "Description": "Added the `tonerEmpty` member to the **printerProcessingStateDetail** enumeration",
+          "Description": "Added the `tonerEmpty` member to the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         },
         {
@@ -175,7 +175,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "spoolAreaFull",
           "ChangeType": "Addition",
-          "Description": "Added the `spoolAreaFull` member to the **printerProcessingStateDetail** enumeration",
+          "Description": "Added the `spoolAreaFull` member to the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         },
         {
@@ -183,7 +183,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "doorOpen",
           "ChangeType": "Addition",
-          "Description": "Added the `doorOpen` member to the **printerProcessingStateDetail** enumeration",
+          "Description": "Added the `doorOpen` member to the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         },
         {
@@ -191,7 +191,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "opticalPhotoConductorNearEndOfLife",
           "ChangeType": "Addition",
-          "Description": "Added the `opticalPhotoConductorNearEndOfLife` member to the **printerProcessingStateDetail** enumeration",
+          "Description": "Added the `opticalPhotoConductorNearEndOfLife` member to the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         },
         {
@@ -199,7 +199,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "opticalPhotoConductorLifeOver",
           "ChangeType": "Addition",
-          "Description": "Added the `opticalPhotoConductorLifeOver` member to the **printerProcessingStateDetail** enumeration",
+          "Description": "Added the `opticalPhotoConductorLifeOver` member to the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         },
         {
@@ -207,7 +207,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "developerLow",
           "ChangeType": "Addition",
-          "Description": "Added the `developerLow` member to the **printerProcessingStateDetail** enumeration",
+          "Description": "Added the `developerLow` member to the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         },
         {
@@ -215,7 +215,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "developerEmpty",
           "ChangeType": "Addition",
-          "Description": "Added the `developerEmpty` member to the **printerProcessingStateDetail** enumeration",
+          "Description": "Added the `developerEmpty` member to the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         },
         {
@@ -223,7 +223,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "interpreterResourceUnavailable",
           "ChangeType": "Addition",
-          "Description": "Added the `interpreterResourceUnavailable` member to the **printerProcessingStateDetail** enumeration",
+          "Description": "Added the `interpreterResourceUnavailable` member to the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         },
         {
@@ -231,7 +231,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "disconnected",
           "ChangeType": "Deletion",
-          "Description": "Removed the `disconnected` member from the **printerProcessingStateDetail** enumeration",
+          "Description": "Removed the `disconnected` member from the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         },
         {
@@ -239,7 +239,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "queueFull",
           "ChangeType": "Deletion",
-          "Description": "Removed the `queueFull` member from the **printerProcessingStateDetail** enumeration",
+          "Description": "Removed the `queueFull` member from the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         },
         {
@@ -247,7 +247,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "outputAlmostFull",
           "ChangeType": "Deletion",
-          "Description": "Removed the `outputAlmostFull` member from the **printerProcessingStateDetail** enumeration",
+          "Description": "Removed the `outputAlmostFull` member from the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         },
         {
@@ -255,7 +255,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "unknownFutureValue",
           "ChangeType": "Deletion",
-          "Description": "Removed the `unknownFutureValue` member from the **printerProcessingStateDetail** enumeration",
+          "Description": "Removed the `unknownFutureValue` member from the **printerProcessingStateDetail** enumeration.",
           "Target": "printerProcessingStateDetail"
         }
       ],
