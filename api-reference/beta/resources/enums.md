@@ -1604,3 +1604,15 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |group|
 |unknownFutureValue|
+|roster|
+
+
+### plannerPlanContextType values 
+
+|Member|
+|:---|
+|teamsTab|
+|sharePointPage|
+|meetingNotes|
+|other|
+|unknownFutureValue|

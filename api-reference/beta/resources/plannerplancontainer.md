@@ -17,13 +17,14 @@ Planner currently supports the container types listed in the following table. Wh
 
 |Type|Description|Path to the resource|
 |----|-----------|--------------------|
-|group| Plan is contained by a group.| https://graph.microsoft.com/v1.0/groups/&lt;id&gt;|
+|group| Plan is contained by a [group](group.md).| https://graph.microsoft.com/beta/groups/&lt;id&gt;|
+|roster| Plan is container by a [plannerRoster](plannerroster.md) | https://graph.microsoft.com/beta/planner/rosters/&lt;id&gt;|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |containerId|String|The identifier of the resource that contains the plan.|
-|type|plannerContainerType| The type of the resource that contains the plan. See the previous table for supported types. Possible values are: `group`, `unknownFutureValue`.|
+|type|plannerContainerType| The type of the resource that contains the plan. See the previous table for supported types. Possible values are: `group`, `roster`, `unknownFutureValue`.|
 |url|String|The full canonical URL of the container.|
 
 ## Relationships
