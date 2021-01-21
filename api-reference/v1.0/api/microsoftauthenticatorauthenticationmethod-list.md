@@ -46,7 +46,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 -->
 ``` http
 GET /me/authentication/microsoftAuthenticatorMethods
-GET /user/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods
+GET /users/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods
 ```
 
 ## Optional query parameters
@@ -76,7 +76,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/user/anirban@contoso.com/authentication/microsoftAuthenticatorMethods
+GET https://graph.microsoft.com/v1.0/users/sandeep@contoso.com/authentication/microsoftAuthenticatorMethods
 ```
 
 

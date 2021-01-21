@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Retrieve a list of [authentication method](../resources/authenticationmethod.md) objects. Currently only [phone authentication method](../resources/phoneauthenticationmethod.md) and [password authentication method](../resources/passwordauthenticationmethod.md) objects are returned.
+Retrieve a list of [authentication method](../resources/authenticationmethod.md) objects.
 
 ## Permissions
 
@@ -80,7 +80,7 @@ The following is an example of the request.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/authentication/methods
-GET https://graph.microsoft.com/v1.0/users/{user principal name or id}/authentication/methods
+GET https://graph.microsoft.com/v1.0/users/{user principal name or ID}/authentication/methods
 ```
 
 # [C#](#tab/csharp)
