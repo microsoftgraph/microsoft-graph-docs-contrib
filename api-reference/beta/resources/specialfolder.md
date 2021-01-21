@@ -49,15 +49,9 @@ If a user deletes one, it is recreated when written to again.
 
 ## Special folders
 
-Here are the special folders available in OneDrive Personal and OneDrive for Business.
+[!INCLUDE [files-special-folder-list](../includes/files-special-folder-list.md)]
 
-| Name        | Folder id    | Description                                                              |
-|:------------|:-------------|:-------------------------------------------------------------------------|
-| App Root    | `approot`    | The application's personal folder. Usually in `/Apps/{Application Name}` |
-| Camera Roll | `cameraroll` | The Camera Roll Backup folder. Not available in OneDrive for Business.   |
-| Documents   | `documents`  | The Documents folder.                                                    |
-| Music       | `music`      | The Music folder. Not available in OneDrive for Business.                |
-| Photos      | `photos`     | The Photos folder.                                                       |
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Remarks 
 
