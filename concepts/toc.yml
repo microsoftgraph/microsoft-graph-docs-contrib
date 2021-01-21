@@ -17,7 +17,7 @@ items:
           - name: What's new highlights
             href: whats-new-overview.md
           - name: API changelog
-            href: changelog.md
+            href: https://developer.microsoft.com/graph/changelog
       - name: Users you can reach
         items:
           - name: Overview
@@ -385,7 +385,7 @@ items:
           - name: Licenses for subscribing to chat messages
             href: teams-licenses.md
           - name: Send proactive messages with a bot
-            href: teams-proactive-messaging.md
+            href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
           - name: Send activity feed notifications
             href: teams-send-activityfeednotifications.md
       - name: To-do tasks
