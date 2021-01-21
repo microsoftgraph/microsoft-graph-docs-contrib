@@ -27,7 +27,6 @@ Deleting a **plannerRoster** will also delete the plan and all tasks in the plan
 |:---|:---|:---|
 |[Create plannerRoster](../api/plannerroster-create.md)|[plannerRoster](../resources/plannerroster.md)|Create a new [plannerRoster](../resources/plannerroster.md) object.|
 |[Get plannerRoster](../api/plannerroster-get.md)|[plannerRoster](../resources/plannerroster.md)|Read the properties and relationships of a [plannerRoster](../resources/plannerroster.md) object.|
-|[Update plannerRoster](../api/plannerroster-update.md)|[plannerRoster](../resources/plannerroster.md)|Update the properties of a [plannerRoster](../resources/plannerroster.md) object.|
 |[Delete plannerRoster](../api/plannerroster-delete.md)|None|Deletes a [plannerRoster](../resources/plannerroster.md) object.|
 |[List members](../api/plannerroster-list-members.md)|[plannerRosterMember](../resources/plannerrostermember.md) collection|Get the plannerRosterMember resources from the members navigation property.|
 |[Create plannerRosterMember](../api/plannerroster-post-members.md)|[plannerRosterMember](../resources/plannerrostermember.md)|Create a new plannerRosterMember object.|

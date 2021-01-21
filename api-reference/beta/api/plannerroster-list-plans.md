@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the plannerPlan resources from the plans navigation property.
+Get the [plannerPlans](../resources/plannerplan.md) contained by the [plannerRoster](../resources/plannerRoster.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -82,7 +82,6 @@ Content-Type: application/json
         "@odata.type": "microsoft.graph.identitySet"
       },
       "createdDateTime": "String (timestamp)",
-      "owner": "String",
       "title": "String",
       "contexts": {
         "@odata.type": "microsoft.graph.plannerPlanContextCollection"

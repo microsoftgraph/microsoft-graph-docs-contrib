@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new plannerRosterMember object.
+Add a member to the [plannerRoster](../resources/plannerrostermember.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,10 +46,9 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|userId|String|**TODO: Add Description**|
-|tenantId|String|**TODO: Add Description**|
-|roles|String collection|**TODO: Add Description**|
+|userId|String|Identifier of the .|
+|tenantId|String|Identifier of the tenant the user belongs to. Optional. Currently roster members cannot be from different tenants.|
+|roles|String collection|Additional roles assigned to the user. Optional. Currently there are no additional roles available for users.|
 
 
 
@@ -68,15 +67,11 @@ If successful, this method returns a `201 Created` response code and a [plannerR
 ``` http
 POST https://graph.microsoft.com/beta/planner/rosters/{plannerRosterId}/members
 Content-Type: application/json
-Content-length: 143
+Content-length: 78
 
 {
   "@odata.type": "#microsoft.graph.plannerRosterMember",
-  "userId": "String",
-  "tenantId": "String",
-  "roles": [
-    "String"
-  ]
+  "userId": "String"
 }
 ```
 
@@ -99,7 +94,6 @@ Content-Type: application/json
   "userId": "String",
   "tenantId": "String",
   "roles": [
-    "String"
   ]
 }
 ```

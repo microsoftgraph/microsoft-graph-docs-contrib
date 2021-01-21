@@ -42,13 +42,7 @@ POST /planner/rosters
 ## Request body
 In the request body, supply a JSON representation of the [plannerRoster](../resources/plannerroster.md) object.
 
-The following table shows the properties that are required when you create the [plannerRoster](../resources/plannerroster.md).
-
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-
-
+There are no writable properties on [plannerRoster](../resources/plannerroster.md).
 
 ## Response
 
