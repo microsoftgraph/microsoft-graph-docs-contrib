@@ -4,7 +4,7 @@ description: "Renew a subscription by extending its expiry time."
 localization_priority: Normal
 author: "davidmu1"
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "change-notifications"
 ---
 
 # Update subscription
