@@ -12,10 +12,7 @@ You can use the Microsoft Graph Postman collection to get started with Microsoft
 
 This article explains how to get up and running with Postman and Microsoft Graph. You can also explore Microsoft Graph APIs directly in your web browser by using [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-For details about how to do this, follow the steps in this article, or watch the following video.
-
-> [!VIDEO https://www.youtube.com/watch?v=3RTHY3jScmA&feature=youtu.be]
-
+For details about how to do this, follow the steps in this article.
 
 ## Step 1 - Forking the Microsoft Graph Postman collection
 To use the Postman collection, you will need to fork it to your own Postman workspace.
@@ -110,7 +107,3 @@ You can follow these steps to make other requests to Microsoft Graph. Remember t
 
 ## Contribute to the collection
 If you want to contribute your own requests, you can make your changes to the collection, and then hover over the collection and select **Create pull request**.
-
-For details about how to do this, watch the following video.
-
-> [!VIDEO https://www.youtube.com/watch?v=3RTHY3jScmA&feature=youtu.be]
