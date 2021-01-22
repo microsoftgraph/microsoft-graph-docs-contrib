@@ -88,30 +88,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 263
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#settings",
   "value": [
     {
-      "id": "d5ff5adc-e975-49b4-b118-292298a4b851",
-      "displayName": "Consent Policy Settings",
-      "templateId": "dffd5d46-495d-40a9-8e21-954ff55e198a",
+      "id": "id-value",
+      "displayName": "displayName-value",
+      "settingTemplateId": "settingTemplateId-value",
       "values": [
         {
-          "name": "EnableGroupSpecificConsent",
-          "value": ""
-        },
-        {
-          "name": "BlockUserConsentForRiskyApps",
-          "value": "true"
-        },
-        {
-          "name": "EnableAdminConsentRequests",
-          "value": "true"
-        },
-        {
-          "name": "ConstrainGroupSpecificConsentToMembersOfGroupId",
-          "value": ""
+          "name": "name-value",
+          "value": "value-value"
         }
       ]
     }

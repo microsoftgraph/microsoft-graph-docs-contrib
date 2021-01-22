@@ -164,13 +164,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [adminConsentRequestPolicy](/graph/api/resources/adminconsentrequestpolicy?view=graph-rest-beta&preserve-view=true) resource type and associated methods.|
-| Addition | beta | Added the [userConsentRequest](/graph/api/resources/userconsentrequest?view=graph-rest-beta&preserve-view=true) resource type and associated methods.|
-| Addition | beta | Added the [appConsentRequest](/graph/api/resources/appconsentrequest?view=graph-rest-beta&preserve-view=true) resource type and associated methods.|
-| Addition | beta | Added the [request](/graph/api/resources/request?view=graph-rest-beta&preserve-view=true) complex type.|
-| Addition | beta | Added the [approval](/graph/api/resources/approval?view=graph-rest-beta&preserve-view=true) complex type.|
-| Addition | beta | Added the [appConsentRequestScope](/graph/api/resources/appconsentrequestscope?view=graph-rest-beta&preserve-view=true) complex type.|
-| Addition | beta | Added the [appConsentRequestsForApproval](/graph/api/resources/appconsentrequestsforapproval?view=graph-rest-beta&preserve-view=true) resource type and associated methods.|
 | Addition | beta | Added the new [accessPackageAnswer](/graph/api/resources/accesspackageanswer?view=graph-rest-beta&preserve-view=true) complex type, including two subtypes, [accessPackageAnswerChoice](/graph/api/resources/accesspackageanswerchoice?view=graph-rest-beta&preserve-view=true) and [accessPackageAnswerString](/graph/api/resources/accesspackageanswerstring?view=graph-rest-beta&preserve-view=true).|
 | Addition | beta | Added the new [accessPackageQuestion](/graph/api/resources/accesspackagequestion?view=graph-rest-beta&preserve-view=true) complex type, including two subtypes, [accessPackageMultipleChoiceQuestion](/graph/api/resources/accesspackagemultiplechoicequestion?view=graph-rest-beta&preserve-view=true) and [accessPackageTextInputQuestion](/graph/api/resources/accesspackagetextinputquestion?view=graph-rest-beta&preserve-view=true).|
 | Addition | beta | Added the new [accessPackageLocalizedContent](/graph/api/resources/accesspackagelocalizedcontent?view=graph-rest-beta&preserve-view=true) complex type. |
