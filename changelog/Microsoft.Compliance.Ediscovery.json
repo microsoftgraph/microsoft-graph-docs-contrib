@@ -361,6 +361,70 @@
 					"ChangeType": "Deletion",
 					"Description": "Removed the `addDataToReviewSet` member from the **caseAction** enumeration",
 					"Target": "caseAction"
+				},
+				{
+					"Id": "7c733572-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "case",
+					"ChangeType": "Change",
+					"Description": "Moved the `case` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace",
+					"Target": "case"
+				},
+				{
+					"Id": "7c733572-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "Custodian",
+					"ChangeType": "Change",
+					"Description": "Moved the `Custodian` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace",
+					"Target": "Custodian"
+				},
+				{
+					"Id": "7c733572-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "datasource",
+					"ChangeType": "Change",
+					"Description": "Moved the `datasource` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace",
+					"Target": "datasource"
+				},
+				{
+					"Id": "7c733572-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "reviewSet",
+					"ChangeType": "Change",
+					"Description": "Moved the `reviewSet` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace",
+					"Target": "reviewSet"
+				},
+				{
+					"Id": "7c733572-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "reviewSetQuery",
+					"ChangeType": "Change",
+					"Description": "Moved the `reviewSetQuery` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace",
+					"Target": "reviewSetQuery"
+				},
+				{
+					"Id": "7c733572-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "siteSource",
+					"ChangeType": "Change",
+					"Description": "Moved the `siteSource` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace",
+					"Target": "siteSource"
+				},
+				{
+					"Id": "7c733572-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "unifiedGroupSource",
+					"ChangeType": "Change",
+					"Description": "Moved the `unifiedGroupSource` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace",
+					"Target": "unifiedGroupSource"
+				},
+				{
+					"Id": "7c733572-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "userSource",
+					"ChangeType": "Change",
+					"Description": "Moved the `userSource` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace",
+					"Target": "userSource"
 				}
 			],
 			"Id": "782dc913-17be-11eb-baa1-5b13c31fb2cd",
