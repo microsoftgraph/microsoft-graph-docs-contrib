@@ -14,7 +14,7 @@ This article explains how to get up and running with Postman and Microsoft Graph
 
 For details about how to do this, follow the steps in this article, or watch the following video.
 
-> [!VIDEO https://youtu.be/3RTHY3jScmA]
+> [!VIDEO https://www.youtube.com/watch?v=3RTHY3jScmA&feature=youtu.be]
 
 
 ## Step 1 - Forking the Microsoft Graph Postman collection
@@ -113,4 +113,4 @@ If you want to contribute your own requests, you can make your changes to the co
 
 For details about how to do this, watch the following video.
 
-> [!VIDEO https://youtu.be/3RTHY3jScmA]
+> [!VIDEO https://www.youtube.com/watch?v=3RTHY3jScmA&feature=youtu.be]
