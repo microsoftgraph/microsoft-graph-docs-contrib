@@ -5,10 +5,18 @@
         {
           "Id": "0ec62390-2472-42a1-9298-2f36275c58bf",
           "ApiChange": "Resource",
-          "ChangedApiName": "printJob, printerShare",
+          "ChangedApiName": "printJob",
           "ChangeType": "Addition",
-          "Description": "Added new [Delegated permissions](/graph/permissions-reference#universal-print-permissions): \u003Cul\u003E\u003Cli\u003EPrintJob.Create\u003C/li\u003E\u003Cli\u003EPrinterShare.ReadBasic.All\u003C/li\u003E\u003C/ul\u003E",
-          "Target": "printJob, printerShare"
+          "Description": "Added new PrintJob.Create [delegated permission](https://docs.microsoft.com/en-us/graph/permissions-reference#universal-print-permissions).",
+          "Target": "printJob"
+        },
+        {
+          "Id": "0ec62390-2472-42a1-9298-2f36275c58bf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerShare",
+          "ChangeType": "Addition",
+          "Description": "Added new PrinterShare.ReadBasic.All [delegated permission](https://docs.microsoft.com/en-us/graph/permissions-reference#universal-print-permissions).",
+          "Target": "printerShare"
         }
       ],
       "Id": "0ec62390-2472-42a1-9298-2f36275c58bf",
