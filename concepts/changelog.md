@@ -22,9 +22,21 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition|beta|Added the [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta&preserve-view=true) complex type.|
+|Addition|beta|Added the [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta) complex type.|
 |Addition|beta|Added the **outOfOfficeSettings** property to the [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) resource type|
 |Addition|beta|Added the **isBroadcast**, **broadcastSettings**, **attendeeReport**, **recording** and **alternativeRecording** properties to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) entity to support creating live events.|
+
+### Groups
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | beta | Added the **membershipRuleProcessingStatus** property to dynamic groups.|
+
+### Identity and access | Identity and sign-in
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added property for **hostNames** to the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) entity. |
 
 ### Devices and apps | Cloud PC
 
@@ -54,27 +66,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the [plannerTeamsPublicationInfo](/graph/api/resources/plannerTeamsPublicationInfo?view=graph-rest-beta&preserve-view=true) resource type.|
 |Addition|beta|Added the **plannerContainerType** enumeration type.|
 |Change|beta| Deprecated the **owner** property on [plannerPlan](/graph/api/resources/plannerPlan?view=graph-rest-beta&preserve-view=true) resource.|
-
-### Groups
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition        | beta | Added the **membershipRuleProcessingStatus** property to dynamic groups.|
-
-### Identity and access | Governance
-
-| **Change type** | **Version** | **Description** |
-|:---|:---|:---|
-|Addition|beta|Added the **accessPackageResourceEnvironments** relationship to [entitlementManagement](graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true).|
-|Addition|beta|Added the **accessPackageResourceEnvironment** relationship to [accessPackageResource](graph/api/resources/accesspackageresource?view=graph-rest-beta&preserve-view=true) resource.|
-|Addition|beta|Added the [accessPackageResourceEnvironment](graph/api/resources/accesspackageresourceenvironment?view=graph-rest-beta&preserve-view=true) resource type.|
-|Addition|beta|Added the [connectionInfo](graph/api/resources/connectioninfo?view=graph-rest-beta&preserve-view=true) resource type.|
-
-### Identity and access | Identity and sign-in
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added property for **hostNames** to the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) entity. |
 
 ## December 2020
 
