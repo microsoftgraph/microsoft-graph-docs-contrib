@@ -11,43 +11,6 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-### groupColor values
-
-|Member|
-|:---|
-|Teal|
-|Purple|
-|Green|
-|Blue|
-|Pink|
-|Orange|
-|Red|
-
-### resourceBehaviorOptions values
-
-|Member|
-|:---|
-|AllowOnlyMembersToPost|
-|HideGroupInOutlook|
-|SubscribeNewGroupMembers|
-|WelcomeEmailDisabled|
-
-### licenseProcessingState values
-
-|Member|
-|:---|
-|QueuedForProcessing|
-|ProcessingInProgress|
-|ProcessingComplete|
-
-### principalType values
-
-|Member|
-|:---|
-|User|
-|Group|
-|ServicePrincipal|
-
 ### recipientScopeType values
 
 |Member|
@@ -57,14 +20,6 @@ Namespace: microsoft.graph
 |external|
 |externalPartner|
 |externalNonPartner|
-
-### driveType values
-
-|Member|
-|:---|
-|personal|
-|business|
-|documentLibrary|
 
 ### authenticationMethodKeyStrength values
 
