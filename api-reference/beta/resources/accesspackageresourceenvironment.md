@@ -1,7 +1,7 @@
 ---
 title: "accessPackageResourceEnvironment resource type"
 description: "An access package resource environment is a reference to the geolocation environment in which a resource is located."
-author: "markwahl-msft"
+author: "hanki-microsoft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access package resource environment is a reference to the geolocation environment in which a resource is located. This API supports operations on SharePoint Online resources only.
+In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access package resource environment is a reference to the geolocation environment in which a resource is located. This environment is automatically provided as part of Azure AD Entilement Management. The API is only applicable to SharePoint Online sites.
 
 ## Methods
 |Method|Return type|Description|

@@ -1,7 +1,7 @@
 ---
 title: "List accessPackageResourceEnvironments"
 description: "Retrieve a list of accessPackageResourceEnvironment objects."
-author: "markwahl-msft"
+author: "hanki-microsoft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|EntitlementManagement.Read.All|
+|Delegated (work or school account)|EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
