@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a subscription."
 localization_priority: Normal
 author: "davidmu1"
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "cloud-printing"
 ---
 
 # Get subscription
