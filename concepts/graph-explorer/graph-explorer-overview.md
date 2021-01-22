@@ -9,7 +9,7 @@ author: bettirosengugi
 
 # Use Graph Explorer to try Microsoft Graph APIs
 
-[Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/) is a developer tool that lets you conveniently make Microsoft Graph REST API requests and view corresponding responses. Use Graph Explorer Explorer to try APIs on the default sample tenant to explore capabilities, or sign in to your own tenant and use it as a prototyping tool to fulfill your app scenarios. This tool includes helpful features such as code snippets in C#, Java, JavaScript, and Objective C; Microsoft Graph Toolkit and adaptive cards integration; and more.
+[Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/) is a developer tool that lets you conveniently make Microsoft Graph REST API requests and view corresponding responses. Use Graph Explorer to try APIs on the default sample tenant to explore capabilities, or sign in to your own tenant and use it as a prototyping tool to fulfill your app scenarios. This tool includes helpful features such as code snippets in C#, Java, JavaScript, and Objective C; Microsoft Graph Toolkit and adaptive cards integration; and more.
 
 Use Graph Explorer to:
 
@@ -55,14 +55,14 @@ When you sign in to Graph Explorer and click the same query, the response will b
 
 ### Running non-GET requests in Graph Explorer
 
-To try POST, PUT, PATCH and DELETE requests, sign in to Graph Explorer using a Microsoft 365 account. This can be an organizational test or demo account. To get a free sample Microsoft 365 E5 developer subscription, along with tools and other resources to help you build solutions for the Microsoft 365 platform, join the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program). 
+To try POST, PUT, PATCH and DELETE requests, sign in to Graph Explorer using a Microsoft 365 account.This can be an organizational account for testing or demonstration purpose. To get a free sample Microsoft 365 E5 developer subscription, along with tools and other resources to help you build solutions for the Microsoft 365 platform, join the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program). 
 
 >[!IMPORTANT]
 >If you choose to sign in using your organizational account, running a non-GET request can affect the data in the tenant.
 
 For example, to run a POST request, select POST in the dropdown list for the HTTP verb, and add a request body and request headers as appropriate.
 
-![Screenshot of a POST request in Graph Explorer](./images/making-a-non-get-request.png)
+![Screenshot of a POST request in Graph Explorer](./images/making-a-post-request.png)
 
 1. Select a POST sample query.
 2. Update **Request body**; for example, give the application a name.
@@ -71,7 +71,10 @@ For example, to run a POST request, select POST in the dropdown list for the HTT
 
 To view the response in a format other than the default JSON, choose the **Request headers** tab in the request pane, define the key/value pair, and click **Add**.
 
-![Screenshot that shows the Request headers tab in Graph Explorer](./images/request-header.png)
+![Screenshot that shows the Request headers tab in Graph Explorer](./images/adding-key-value-pairs.png)
+1. Select **Request headers** tab
+2. Add  **Key** and **Value** pairs 
+3. Click **Add**
 
 ## Next steps
 
