@@ -1,9 +1,9 @@
 ---
 title: "Get unifiedRoleAssignmentRequest"
 description: "Read the properties and relationships of an unifiedRoleAssignmentRequest object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "shauliu"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -17,9 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|PrivilegedAccess.ReadWrite.AzureAD|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|PrivilegedAccess.Read.AzureAD|
 
 ## HTTP request
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /unifiedRoleAssignmentRequests/{unifiedRoleAssignmentRequestsId}
+GET /roleManagement/directory/unifiedRoleAssignmentRequests/{unifiedRoleAssignmentRequestsId}
 ```
 
 ## Optional query parameters
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleA
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/unifiedRoleAssignmentRequests/{unifiedRoleAssignmentRequestsId}
+GET https://graph.microsoft.com/beta/roleManagement/directory/unifiedRoleAssignmentRequests/{unifiedRoleAssignmentRequestsId}
 ```
 
 

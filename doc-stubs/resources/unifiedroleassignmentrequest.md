@@ -1,9 +1,9 @@
 ---
 title: "unifiedRoleAssignmentRequest resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents the request for active role assignment operations through Azure AD Privileged Identity Management."
+author: "shauliu"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -11,10 +11,16 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Represents the request for active role assignment operations through Azure AD Privileged Identity Management.
+
+`unifiedRoleAssignmentRequest` is a ticket-modeled entity used to manage the lifecycle of active role assignments in the directory. It represents the intention/decision of the users and administrators, and also provides the flexibility to enable implementation of recurrent scheduling, approval gates, and so on, as compared to directly exposing `POST`, `PUT`, and `DELETE` operations on `unifiedRoleAssignmentSchedule` and `unifiedRoleAssignmentInstance`.
+
+Administrators can use `unifiedRoleAssignmentRequest` to create active role assignments with or without start and end time. While an eligible administrators, can use it to create a request to activate an eligible role assignment. 
 
 Inherits from [request](../resources/request.md).
+
 
 ## Methods
 |Method|Return type|Description|
@@ -23,43 +29,32 @@ Inherits from [request](../resources/request.md).
 |[Create unifiedRoleAssignmentRequest](../api/unifiedroleassignmentrequest-post-unifiedroleassignmentrequests.md)|[unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md)|Create a new [unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) object.|
 |[Get unifiedRoleAssignmentRequest](../api/unifiedroleassignmentrequest-get.md)|[unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md)|Read the properties and relationships of an [unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) object.|
 |[Update unifiedRoleAssignmentRequest](../api/unifiedroleassignmentrequest-update.md)|[unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md)|Update the properties of an [unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) object.|
-|[Delete unifiedRoleAssignmentRequest](../api/unifiedroleassignmentrequest-delete.md)|None|Deletes an [unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) object.|
-|[filterByCurrentUser](../api/unifiedroleassignmentrequest-filterbycurrentuser.md)|[unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) collection|**TODO: Add Description**|
-|[cancel](../api/unifiedroleassignmentrequest-cancel.md)|None|**TODO: Add Description**|
-|[List unifiedRoleEligibilitySchedule](../api/unifiedroleassignmentrequest-list-activatedusing.md)|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) collection|Get the unifiedRoleEligibilitySchedule resources from the activatedUsing navigation property.|
-|[Add unifiedRoleEligibilitySchedule](../api/unifiedroleassignmentrequest-post-activatedusing.md)|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|Add activatedUsing by posting to the activatedUsing collection.|
-|[List appScope](../api/unifiedroleassignmentrequest-list-appscope.md)|[appScope](../resources/appscope.md) collection|Get the appScope resources from the appScope navigation property.|
-|[Add appScope](../api/unifiedroleassignmentrequest-post-appscope.md)|[appScope](../resources/appscope.md)|Add appScope by posting to the appScope collection.|
-|[List directoryScope](../api/unifiedroleassignmentrequest-list-directoryscope.md)|[directoryObject](../resources/directoryobject.md) collection|Get the directoryObject resources from the directoryScope navigation property.|
-|[Add directoryScope](../api/unifiedroleassignmentrequest-post-directoryscope.md)|[directoryObject](../resources/directoryobject.md)|Add directoryScope by posting to the directoryScope collection.|
-|[List principal](../api/unifiedroleassignmentrequest-list-principal.md)|[directoryObject](../resources/directoryobject.md) collection|Get the directoryObject resources from the principal navigation property.|
-|[Add principal](../api/unifiedroleassignmentrequest-post-principal.md)|[directoryObject](../resources/directoryobject.md)|Add principal by posting to the principal collection.|
-|[List unifiedRoleDefinition](../api/unifiedroleassignmentrequest-list-roledefinition.md)|[unifiedRoleDefinition](../resources/unifiedroledefinition.md) collection|Get the unifiedRoleDefinition resources from the roleDefinition navigation property.|
-|[Add unifiedRoleDefinition](../api/unifiedroleassignmentrequest-post-roledefinition.md)|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|Add roleDefinition by posting to the roleDefinition collection.|
+|[filterByCurrentUser](../api/unifiedroleassignmentrequest-filterbycurrentuser.md)|[unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) collection|Get a list of the [unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) objects and their properties that are related to a particular user.|
+|[cancel](../api/unifiedroleassignmentrequest-cancel.md)|None|Cancels a [unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) immediately and marks it for deletion in 30 days|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|String|**TODO: Add Description**|
-|appScopeId|String|**TODO: Add Description**|
-|directoryScopeId|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [request](../resources/request.md)|
-|isValidationOnly|Boolean|**TODO: Add Description**|
-|justification|String|**TODO: Add Description**|
-|principalId|String|**TODO: Add Description**|
-|roleDefinitionId|String|**TODO: Add Description**|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|**TODO: Add Description**|
-|targetScheduleId|String|**TODO: Add Description**|
-|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|**TODO: Add Description**|
+|action|String|Representing the type of the operation on the role assignment. The value can be <ul><li>`AdminAdd`: Administrators assign users/groups to roles;</li><li>`UserAdd`: Users activate eligible assignments;</li><li> `AdminUpdate`: Administrators change existing role assignments</li><li>`AdminRemove`: Administrators remove users/groups from roles;<li>`UserRemove`: Users deactivate active assignments;<li>`UserExtend`: Users request to extend their expiring assignments;</li><li>`AdminExtend`: Administrators extend expiring assignments.</li><li>`UserRenew`: Users request to renew their expired assignments;</li><li>`AdminRenew`: Administrators extend expiring assignments.</li></ul>|
+|appScopeId|String|Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use "/" for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.|
+|directoryScopeId|String|Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.|
+|id|String|The unique identifier for the unifiedRoleAssignmentRequest. Key, not nullable, Read-only. Inherited from [request](../resources/request.md)|
+|isValidationOnly|Boolean|A boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.|
+|justification|String|A message provided by users and administrators when create the request about why it is needed.|
+|principalId|String| Objectid of the principal to which the assignment is being granted to.|
+|roleDefinitionId|String|ID of the unifiedRoleDefinition the assignment is for. Read only.|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The schedule object of the role assignment request.|
+|targetScheduleId|String|ID of the schedule object attached to the assignment.|
+|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|The ticketInfo object attached to the role assignment request which includes details of the ticket number and ticket system.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|activatedUsing|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|**TODO: Add Description**|
-|appScope|[appScope](../resources/appscope.md)|**TODO: Add Description**|
-|directoryScope|[directoryObject](../resources/directoryobject.md)|**TODO: Add Description**|
-|principal|[directoryObject](../resources/directoryobject.md)|**TODO: Add Description**|
-|roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|**TODO: Add Description**|
+|activatedUsing|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.|
+|appScope|[appScope](../resources/appscope.md)|Read-only property with details of the app specific scope when the assignment scope is app specific. Containment entity.|
+|directoryScope|[directoryObject](../resources/directoryobject.md)|Property referencing the directory object that is the scope of the assignment. Provided so that callers can get the directory object using `$expand` at the same time as getting the role assignment. Read-only. |
+|principal|[directoryObject](../resources/directoryobject.md)|Property referencing the principal that is getting a role assignment through the request. Provided so that callers can get the principal using `$expand` at the same time as getting the role assignment. Read-only. |
+|roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|Property indicating the roleDefinition the assignment is for. Provided so that callers can get the role definition using `$expand` at the same time as getting the role assignment. roleDefinition.Id will be auto expanded|
 
 ## JSON representation
 The following is a JSON representation of the resource.

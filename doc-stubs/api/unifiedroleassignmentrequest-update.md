@@ -17,9 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|PrivilegedAccess.ReadWrite.AzureAD|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /unifiedRoleAssignmentRequests/{unifiedRoleAssignmentRequestsId}
+PATCH /roleManagement/directory/unifiedRoleAssignmentRequests/{unifiedRoleAssignmentRequestsId}
 ```
 
 ## Request headers
@@ -44,19 +44,17 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [request](../resources/request.md)|
-|action|String|**TODO: Add Description**|
-|principalId|String|**TODO: Add Description**|
-|roleDefinitionId|String|**TODO: Add Description**|
-|directoryScopeId|String|**TODO: Add Description**|
-|appScopeId|String|**TODO: Add Description**|
-|isValidationOnly|Boolean|**TODO: Add Description**|
-|targetScheduleId|String|**TODO: Add Description**|
-|justification|String|**TODO: Add Description**|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|**TODO: Add Description**|
-|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|**TODO: Add Description**|
-
-
+|id|String|The unique identifier for the unifiedRoleAssignmentRequest. Key, not nullable, Read-only. Inherited from [request](../resources/request.md)|
+|action|String|Representing the type of the operation on the role assignment. The value can be <ul><li>`AdminAdd`: Administrators assign users/groups to roles;</li><li>`UserAdd`: Users activate eligible assignments;</li><li> `AdminUpdate`: Administrators change existing role assignments</li><li>`AdminRemove`: Administrators remove users/groups from roles;<li>`UserRemove`: Users deactivate active assignments;<li>`UserExtend`: Users request to extend their expiring assignments;</li><li>`AdminExtend`: Administrators extend expiring assignments.</li><li>`UserRenew`: Users request to renew their expired assignments;</li><li>`AdminRenew`: Administrators extend expiring assignments.</li></ul>|
+|principalId|String|Objectid of the principal to which the assignment is being granted to.|
+|roleDefinitionId|String|ID of the unifiedRoleDefinition the assignment is for. Read only.|
+|directoryScopeId|String|Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.|
+|appScopeId|String|Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use "/" for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.|
+|isValidationOnly|Boolean|A boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.|
+|targetScheduleId|String|ID of the schedule object attached to the assignment.|
+|justification|String|A message provided by users and administrators when create the request about why it is needed.|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The schedule object of the role assignment request.|
+|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|The ticketInfo object attached to the role assignment request which includes details of the ticket number and ticket system.|
 
 ## Response
 
@@ -71,7 +69,7 @@ If successful, this method returns a `200 OK` response code and an updated [unif
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/unifiedRoleAssignmentRequests/{unifiedRoleAssignmentRequestsId}
+PATCH https://graph.microsoft.com/beta/roleManagement/directory/unifiedRoleAssignmentRequests/{unifiedRoleAssignmentRequestsId}
 Content-Type: application/json
 Content-length: 466
 
