@@ -4,7 +4,7 @@ description: "Subscribes a listener application to receive change notifications 
 localization_priority: Normal
 author: "davidmu1"
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "cloud-printing"
 ---
 
 # Create subscription
