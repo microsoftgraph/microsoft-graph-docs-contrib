@@ -33,6 +33,9 @@ Make sure you have the corresponding permissions to call the following APIs.
 2. Select **Sign-in with Microsoft** and sign in using an Azure AD global administrator or App Admin credentials.
 3. Upon successful sign in, you'll see the user account details in the left pane.
 
+> [!NOTE]
+> Using service principal is not supported currently. 
+
 ### Create an application
 
 To configure Application Proxy for an app using the API, you create an application, add a service principal to the app, and then update the application's **onPremisesPublishing** property to configure the App Proxy settings. When creating the application, set the application's **signInAudience** to "AzureADMyOrg".
