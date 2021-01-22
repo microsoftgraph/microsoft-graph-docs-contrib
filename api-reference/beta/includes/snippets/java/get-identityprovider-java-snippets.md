@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IIdentityProviderCollectionPage identityProviders = graphClient.identityProviders()
+IdentityProvider identityProvider = graphClient.identityProviders("{id}")
 	.buildRequest()
 	.get();
 
