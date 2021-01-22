@@ -37,6 +37,7 @@ Represents an eDiscovery collection - commonly known as a search.  See [Collect 
 |createdDateTime|DateTimeOffset|The date and time the **sourceCollection** was created.|
 |description|String|The description of the **sourceCollection**|
 |displayName|String|The display name of the **sourceCollection**|
+|id|String| The ID for the **sourceCollection**. Read-only. |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The last user who modified the **sourceCollection**.|
 |lastModifiedDateTime|DateTimeOffset|The last date and time the **sourceCollection** was modified.|
 |tenantSources|tenantSources|When specified, the collection will span across a service for an entire workload. Possible values are: `allMailboxes`, `allSites`.|
