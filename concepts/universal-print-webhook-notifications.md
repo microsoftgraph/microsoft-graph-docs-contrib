@@ -40,11 +40,11 @@ For information about how to listen for Microsoft Graph notifications, see [Use 
 
 ### Scopes
 
-To subscribe to notifications for print jobs, applications must have the following scopes approved in the customer’s Azure AD tenant: 
+To subscribe to notifications for print jobs, applications must have the following permission scopes approved in the customer’s Azure AD tenant: 
 
-* For printTask triggered (JobStarted) event: Same as permissions to [get printTaskDefinition resource](/graph/api/printtaskdefinition-get?view=graph-rest-beta&tabs=http%22%20%5Cl%20%22permissions%22%20%5C). 
+* For printTask triggered (JobStarted) event, the permissions listed in [Get taskDefinition](/graph/api/printtaskdefinition-get?view=graph-rest-beta&tabs=http%22%20%5Cl%20%22permissions%22%20%5C). 
 
-* For JobFetchable event: Same as permissions to [create printer webhook subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http).
+* For JobFetchable event, the permissions listed in [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http).
 
 Applications must [generate and use the Azure AD security token](/graph/auth-v2-service?context=graph%2Fapi%2Fbeta&view=graph-rest-beta) in the Microsoft Graph API request header. The security token contains the claims as per the scopes approved for the customer’s Azure AD tenant by its administrator.  
 
