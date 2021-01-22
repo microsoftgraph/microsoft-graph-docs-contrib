@@ -74,15 +74,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.plannerRosterMember",
-    "id": "670095cd-95cd-6700-cd95-0067cd950067",
-    "userId": "String",
-    "tenantId": "String",
-    "roles": [
-      "String"
-    ]
-  }
+  "@odata.type": "#microsoft.graph.plannerRosterMember",
+  "id": "670095cd-95cd-6700-cd95-0067cd950067",
+  "userId": "String",
+  "tenantId": "String",
+  "roles": [
+    "String"
+  ]
 }
 ```
 

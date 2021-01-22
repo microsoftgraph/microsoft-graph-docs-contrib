@@ -46,11 +46,7 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|userId|String|**TODO: Add Description**|
-|tenantId|String|**TODO: Add Description**|
-|roles|String collection|**TODO: Add Description**|
-
+|roles|String collection|Roles assigned to the member. Currently there are no supported roles.|
 
 
 ## Response
@@ -72,10 +68,7 @@ Content-length: 143
 
 {
   "@odata.type": "#microsoft.graph.plannerRosterMember",
-  "userId": "String",
-  "tenantId": "String",
   "roles": [
-    "String"
   ]
 }
 ```
@@ -98,7 +91,6 @@ Content-Type: application/json
   "userId": "String",
   "tenantId": "String",
   "roles": [
-    "String"
   ]
 }
 ```
