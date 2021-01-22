@@ -196,7 +196,7 @@ For details, see [Notification endpoint validation](/graph/webhooks#notification
 Applications should process and acknowledge every change notification they receive. For details, see [Processing the change notification](/graph/webhooks#processing-the-change-notification).
 
 ### How can I get a list of active subscriptions?
-For details about how to retrieve a list of webhook subscriptions, see [Processing the change notification](/graph/api/subscription-list?view=graph-rest-beta&tabs=http)- .
+For details about how to retrieve a list of webhook subscriptions, see [List subscriptions](/graph/api/subscription-list?view=graph-rest-beta&tabs=http).
 
 
 ## See also
