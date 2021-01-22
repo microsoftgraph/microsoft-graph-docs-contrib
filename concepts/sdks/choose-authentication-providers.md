@@ -337,7 +337,7 @@ MSALAuthenticationProvider msalAuthenticationProvider = new MSALAuthenticationPr
     publicClientApplication,
     scopes);
 
-IGraphServiceClient graphClient =
+GraphServiceClient graphClient =
   GraphServiceClient
     .builder()
     .authenticationProvider(msalAuthenticationProvider)
