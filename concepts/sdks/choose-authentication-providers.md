@@ -53,12 +53,22 @@ Authorization code, client credential, and on-behalf-of OAuth flows require that
 # [Java](#tab/Java)
 
 ```java
-AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(
-                                                    clientId,
-                                                    scopes,
-                                                    authorizationCode,
-                                                    redirectUri,
-                                                    clientSecret);
+final AuthorizationCodeCredential authCodeCredential = new AuthorizationCodeCredentialBuilder()
+        .clientId(clientId)
+        .clientSecret(clientSecret) //required for web apps, do not set for native apps
+        .authorizationCode(authorizationCode)
+        .redirectUrl(redirectUri)
+        .build();
+
+final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, authCodeCredential);
+
+final GraphServiceClient graphClient =
+  GraphServiceClient
+    .builder()
+    .authenticationProvider(tokenCredentialAuthProvider)
+    .buildClient();
+
+final User me = graphClient.me().buildRequest().get();
 ```
 
 # [Android](#tab/Android)
@@ -102,12 +112,21 @@ Authorization code, client credential, and on-behalf-of OAuth flows require that
 # [Java](#tab/Java)
 
 ```java
-ClientCredentialProvider authProvider = new ClientCredentialProvider(
-                                                    clientId,
-                                                    scopes,
-                                                    clientSecret,
-                                                    tenant,
-                                                    NationalCloud.Global);
+final ClientSecretCredential clientSecretCredential = new ClientSecretCredentialBuilder()
+        .clientId(clientId)
+        .clientSecret(clientSecret)
+        .tenantId(tenant)
+        .build();
+
+final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, clientSecretCredential);
+
+final GraphServiceClient graphClient =
+  GraphServiceClient
+    .builder()
+    .authenticationProvider(tokenCredentialAuthProvider)
+    .buildClient();
+
+final User me = graphClient.me().buildRequest().get();
 ```
 
 # [Android](#tab/Android)
@@ -244,7 +263,24 @@ Not yet available. Please vote for or open a [Microsoft Graph feature request](h
 
 # [Java](#tab/Java)
 
-Not available, yet. Please support or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+```java
+final DeviceCodeCredential deviceCodeCredential = new DeviceCodeCredentialBuilder()
+                    .clientId(clientId)
+                    .challengeConsumer(challenge -> {
+                        // lets user know of the challenge
+                        System.out.println(challenge.getMessage());
+                    })
+                    .build();
+final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, deviceCodeCredential);
+
+final GraphServiceClient graphClient =
+  GraphServiceClient
+    .builder()
+    .authenticationProvider(tokenCredentialAuthProvider)
+    .buildClient();
+
+final User me = graphClient.me().buildRequest().get();
+```
 
 # [Android](#tab/Android)
 
@@ -325,23 +361,38 @@ Not yet available. Please vote for or open a [Microsoft Graph feature request](h
 
 # [Java](#tab/Java)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+```java
+final InteractiveBrowserCredential interactiveBrowserCredential = new InteractiveBrowserCredentialBuilder()
+                .clientId(clientId)
+                .redirectUrl("http://localhost:8765")
+                .build();
+final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, interactiveBrowserCredential);
+
+final GraphServiceClient graphClient =
+  GraphServiceClient
+    .builder()
+    .authenticationProvider(tokenCredentialAuthProvider)
+    .buildClient();
+
+final User me = graphClient.me().buildRequest().get();
+```
 
 # [Android](#tab/Android)
 
 ```java
-PublicClientApplication publicClientApplication = new PublicClientApplication(getApplicationContext(), "CLIENT_ID_OF_YOUR_APPLICATION");
-MSALAuthenticationProvider msalAuthenticationProvider = new MSALAuthenticationProvider(
-    getActivity(),
-    getApplication(),
-    publicClientApplication,
-    scopes);
+final InteractiveBrowserCredential interactiveBrowserCredential = new InteractiveBrowserCredentialBuilder()
+                .clientId(clientId)
+                .redirectUrl("http://localhost:8765")
+                .build();
+final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, interactiveBrowserCredential);
 
-GraphServiceClient graphClient =
+final GraphServiceClient graphClient =
   GraphServiceClient
     .builder()
-    .authenticationProvider(msalAuthenticationProvider)
+    .authenticationProvider(tokenCredentialAuthProvider)
     .buildClient();
+
+final User me = graphClient.me().buildRequest().get();
 ```
 
 # [Objective-C](#tab/Objective-C)
@@ -397,11 +448,21 @@ Not yet available. Please vote for or open a [Microsoft Graph feature request](h
 # [Java](#tab/Java)
 
 ```java
-UsernamePasswordProvider authProvider = new UsernamePasswordProvider(
-                                                    clientId,
-                                                    scopes,
-                                                    username,
-                                                    password);
+final UsernamePasswordCredential usernamePasswordCredential = new UsernamePasswordCredentialBuilder()
+        .clientId(clientId)
+        .username(username)
+        .password(password)
+        .build();
+
+final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, usernamePasswordCredential);
+
+final GraphServiceClient graphClient =
+  GraphServiceClient
+    .builder()
+    .authenticationProvider(tokenCredentialAuthProvider)
+    .buildClient();
+
+final User me = graphClient.me().buildRequest().get();
 ```
 
 # [Android](#tab/Android)
