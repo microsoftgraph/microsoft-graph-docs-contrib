@@ -3,7 +3,7 @@ title: "managedDevice resource type"
 description: "Devices that are managed or pre-enrolled through Intune"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -20,11 +20,11 @@ Devices that are managed or pre-enrolled through Intune
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List managedDevices](../api/intune-policyset-manageddevice-list.md)|[managedDevice](../resources/intune-policyset-manageddevice.md) collection|List properties and relationships of the [managedDevice](../resources/intune-policyset-manageddevice.md) objects.|
-|[Get managedDevice](../api/intune-policyset-manageddevice-get.md)|[managedDevice](../resources/intune-policyset-manageddevice.md)|Read properties and relationships of the [managedDevice](../resources/intune-policyset-manageddevice.md) object.|
-|[Create managedDevice](../api/intune-policyset-manageddevice-create.md)|[managedDevice](../resources/intune-policyset-manageddevice.md)|Create a new [managedDevice](../resources/intune-policyset-manageddevice.md) object.|
-|[Delete managedDevice](../api/intune-policyset-manageddevice-delete.md)|None|Deletes a [managedDevice](../resources/intune-policyset-manageddevice.md).|
-|[Update managedDevice](../api/intune-policyset-manageddevice-update.md)|[managedDevice](../resources/intune-policyset-manageddevice.md)|Update the properties of a [managedDevice](../resources/intune-policyset-manageddevice.md) object.|
+|[List managedDevices](../api/intune-policyset-manageddevice-list.md)|[managedDevice](../resources/intune-shared-manageddevice.md) collection|List properties and relationships of the [managedDevice](../resources/intune-shared-manageddevice.md) objects.|
+|[Get managedDevice](../api/intune-policyset-manageddevice-get.md)|[managedDevice](../resources/intune-shared-manageddevice.md)|Read properties and relationships of the [managedDevice](../resources/intune-shared-manageddevice.md) object.|
+|[Create managedDevice](../api/intune-policyset-manageddevice-create.md)|[managedDevice](../resources/intune-shared-manageddevice.md)|Create a new [managedDevice](../resources/intune-shared-manageddevice.md) object.|
+|[Delete managedDevice](../api/intune-policyset-manageddevice-delete.md)|None|Deletes a [managedDevice](../resources/intune-shared-manageddevice.md).|
+|[Update managedDevice](../api/intune-policyset-manageddevice-update.md)|[managedDevice](../resources/intune-shared-manageddevice.md)|Update the properties of a [managedDevice](../resources/intune-shared-manageddevice.md) object.|
 |[executeAction action](../api/intune-devices-manageddevice-executeaction.md)|[bulkManagedDeviceActionResult](../resources/intune-devices-bulkmanageddeviceactionresult.md)|Not yet documented|
 |[enableLostMode action](../api/intune-devices-manageddevice-enablelostmode.md)|None|Enable lost mode|
 |[playLostModeSound action](../api/intune-devices-manageddevice-playlostmodesound.md)|None|Remote lock|
@@ -70,10 +70,10 @@ Devices that are managed or pre-enrolled through Intune
 |lastSyncDateTime|DateTimeOffset|The date and time that the device last completed a successful sync with Intune. This property is read-only.|
 |chassisType|[chassisType](../resources/intune-devices-chassistype.md)|Chassis type of the device. This property is read-only. Possible values are: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
 |operatingSystem|String|Operating system of the device. Windows, iOS, etc. This property is read-only.|
-|deviceType|[deviceType](../resources/intune-devices-devicetype.md)|Platform of the device. This property is read-only. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `linux`, `blackberry`, `palm`, `unknown`, `cloudPC`.|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Platform of the device. This property is read-only. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `linux`, `blackberry`, `palm`, `unknown`, `cloudPC`.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Compliance state of the device. This property is read-only. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|whether the device is jail broken or rooted. This property is read-only.|
-|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Management channel of the device. Intune, EAS, etc. This property is read-only. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`.|
+|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|Management channel of the device. Intune, EAS, etc. This property is read-only. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`.|
 |osVersion|String|Operating system version of the device. This property is read-only.|
 |easActivated|Boolean|Whether the device is Exchange ActiveSync activated. This property is read-only.|
 |easDeviceId|String|Exchange ActiveSync Id of the device. This property is read-only.|
