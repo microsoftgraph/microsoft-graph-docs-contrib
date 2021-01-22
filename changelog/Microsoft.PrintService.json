@@ -7,14 +7,14 @@
           "ApiChange": "Resource",
           "ChangedApiName": "subscription",
           "ChangeType": "Addition",
-          "Description": "Add printer to the resources supported for change notification",
+          "Description": "Add **printer** to the resources that support change notifications.",
           "Target": "printer"
         }
       ],
       "Id": "c9105e15-6dd7-482a-994c-e156afed581c",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-01-20T00:00:00",
+      "CreatedDateTime": "2021-01-21T00:00:00",
       "WorkloadArea": "Change notifications",
       "SubArea": " Cloud printing"
     },
