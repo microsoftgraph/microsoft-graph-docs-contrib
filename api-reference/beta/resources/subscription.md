@@ -4,7 +4,7 @@ description: "A subscription allows a client app to receive change notifications
 localization_priority: Normal
 author: "davidmu1"
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "change-notifications"
 ---
 
 # subscription resource type
