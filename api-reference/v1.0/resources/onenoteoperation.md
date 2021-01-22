@@ -46,7 +46,7 @@ Here is a JSON representation of the resource.
 |lastActionDateTime| DateTimeOffset |The time of the last action of the operation.|
 |resourceId|string|The resource id.|
 |resourceLocation|string|The resource URI for the object. For example, the resource URI for a copied page or section. |
-|status|operationStatus|The current status of the operation: `notstarted`, `running`, `completed`, `failed` |
+|status|operationStatus|The current status of the operation: `NotStarted`, `Running`, `Completed`, `Failed` |
 |percentComplete|string|The operation percent complete if the operation is still in `running` status
 
 ## Relationships
