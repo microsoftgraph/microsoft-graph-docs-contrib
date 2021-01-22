@@ -48,6 +48,7 @@ Subscribes a listener application to receive change notifications when the reque
 
 > **Note:** `/chats/getAllMessages` only returns messages from chats owned by the tenant. 
 If a chat thread is initiated by a user outside the tenant, that chat thread is not owned by the tenant, and does not create change notifications.
+In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
 
 ### driveItem
 
