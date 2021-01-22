@@ -137,7 +137,7 @@ Content-length: 317
           {
               "emailAddress": {
                   "name": "Megan Bowen",
-                  "address": "MeganB@M365x214355.onmicrosoft.com"
+                  "address": "MeganB@contoso.com"
               }
           }
       ],

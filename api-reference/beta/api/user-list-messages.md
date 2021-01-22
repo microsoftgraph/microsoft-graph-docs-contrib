@@ -292,8 +292,8 @@ Content-length: 987
       "subject":"Re: Start planning soon",
       "sender":{
         "emailAddress":{
-          "name":"Randi Welch",
-          "address":"randiw@contoso.com"
+          "name":"Adele Vance",
+          "address":"AdeleV@contoso.com"
         }
       },
       "mentionsPreview":{
@@ -308,8 +308,8 @@ Content-length: 987
       "subject":"Re: Start planning soon",
       "sender":{
         "emailAddress":{
-          "name":"Randi Welch",
-          "address":"randiw@contoso.com"
+          "name":"Adele Vance",
+          "address":"AdeleV@contoso.com"
         }
       },
       "mentionsPreview":{
