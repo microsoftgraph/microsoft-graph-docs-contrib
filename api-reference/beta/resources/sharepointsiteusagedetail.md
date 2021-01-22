@@ -59,7 +59,7 @@ The following is a JSON representation of the resource.
   "lastActivityDate": "Date",
   "lastActivityDate": "2017-09-01", 
   "SiteSensitivityLabelId": "String",
-  "ExternalSharing": false,
+  "ExternalSharing": true,
   "UnmanagedDevicePolicy": "String",
   "GeoLocation": "String",
   "fileCount": 1024,
