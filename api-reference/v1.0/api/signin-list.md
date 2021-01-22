@@ -64,7 +64,6 @@ This method supports the following OData query parameters to help customize the 
 |deviceDetail/browser| eq, startswith|
 |deviceDetail/operatingSystem| eq, startswith|
 |correlationId| eq|
-|isRisky| eq|
 
 ## Response
 
