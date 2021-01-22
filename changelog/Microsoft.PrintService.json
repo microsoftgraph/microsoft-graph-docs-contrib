@@ -107,7 +107,7 @@
           "Target": "printerProcessingStateDetail"
         },
         {
-          "Id": "16d43520-53eb-11eb-a966-cb5b1188a896",
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
           "ApiChange": "Member",
           "ChangedApiName": "none",
           "ChangeType": "Addition",
@@ -115,7 +115,7 @@
           "Target": "printerProcessingStateDetail"
         },
         {
-          "Id": "16d6983a-53eb-11eb-a966-cb5b1188a896",
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
           "ApiChange": "Member",
           "ChangedApiName": "movingToPaused",
           "ChangeType": "Addition",
@@ -123,7 +123,7 @@
           "Target": "printerProcessingStateDetail"
         },
         {
-          "Id": "16d8fb26-53eb-11eb-a966-cb5b1188a896",
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
           "ApiChange": "Member",
           "ChangedApiName": "shutdown",
           "ChangeType": "Addition",
@@ -131,7 +131,7 @@
           "Target": "printerProcessingStateDetail"
         },
         {
-          "Id": "16db5c9d-53eb-11eb-a966-cb5b1188a896",
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
           "ApiChange": "Member",
           "ChangedApiName": "connectingToDevice",
           "ChangeType": "Addition",
@@ -139,7 +139,7 @@
           "Target": "printerProcessingStateDetail"
         },
         {
-          "Id": "16ddbe33-53eb-11eb-a966-cb5b1188a896",
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
           "ApiChange": "Member",
           "ChangedApiName": "timedOut",
           "ChangeType": "Addition",
@@ -147,7 +147,7 @@
           "Target": "printerProcessingStateDetail"
         },
         {
-          "Id": "16e021bb-53eb-11eb-a966-cb5b1188a896",
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
           "ApiChange": "Member",
           "ChangedApiName": "stopping",
           "ChangeType": "Addition",
@@ -155,7 +155,7 @@
           "Target": "printerProcessingStateDetail"
         },
         {
-          "Id": "16e282bc-53eb-11eb-a966-cb5b1188a896",
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
           "ApiChange": "Member",
           "ChangedApiName": "stoppedPartially",
           "ChangeType": "Addition",
@@ -163,7 +163,7 @@
           "Target": "printerProcessingStateDetail"
         },
         {
-          "Id": "16e4e680-53eb-11eb-a966-cb5b1188a896",
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
           "ApiChange": "Member",
           "ChangedApiName": "tonerLow",
           "ChangeType": "Addition",
@@ -171,7 +171,7 @@
           "Target": "printerProcessingStateDetail"
         },
         {
-          "Id": "16e749a0-53eb-11eb-a966-cb5b1188a896",
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
           "ApiChange": "Member",
           "ChangedApiName": "tonerEmpty",
           "ChangeType": "Addition",
@@ -179,7 +179,7 @@
           "Target": "printerProcessingStateDetail"
         },
         {
-          "Id": "16e9ab76-53eb-11eb-a966-cb5b1188a896",
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
           "ApiChange": "Member",
           "ChangedApiName": "spoolAreaFull",
           "ChangeType": "Addition",
@@ -187,7 +187,7 @@
           "Target": "printerProcessingStateDetail"
         },
         {
-          "Id": "16ec0bba-53eb-11eb-a966-cb5b1188a896",
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
           "ApiChange": "Member",
           "ChangedApiName": "doorOpen",
           "ChangeType": "Addition",
@@ -195,7 +195,7 @@
           "Target": "printerProcessingStateDetail"
         },
         {
-          "Id": "16ee705e-53eb-11eb-a966-cb5b1188a896",
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
           "ApiChange": "Member",
           "ChangedApiName": "opticalPhotoConductorNearEndOfLife",
           "ChangeType": "Addition",
@@ -203,7 +203,7 @@
           "Target": "printerProcessingStateDetail"
         },
         {
-          "Id": "16f0d488-53eb-11eb-a966-cb5b1188a896",
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
           "ApiChange": "Member",
           "ChangedApiName": "opticalPhotoConductorLifeOver",
           "ChangeType": "Addition",
@@ -211,7 +211,7 @@
           "Target": "printerProcessingStateDetail"
         },
         {
-          "Id": "16f33795-53eb-11eb-a966-cb5b1188a896",
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
           "ApiChange": "Member",
           "ChangedApiName": "developerLow",
           "ChangeType": "Addition",
@@ -219,7 +219,7 @@
           "Target": "printerProcessingStateDetail"
         },
         {
-          "Id": "16f6b6c5-53eb-11eb-a966-cb5b1188a896",
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
           "ApiChange": "Member",
           "ChangedApiName": "developerEmpty",
           "ChangeType": "Addition",
@@ -227,7 +227,7 @@
           "Target": "printerProcessingStateDetail"
         },
         {
-          "Id": "16f91e8d-53eb-11eb-a966-cb5b1188a896",
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
           "ApiChange": "Member",
           "ChangedApiName": "interpreterResourceUnavailable",
           "ChangeType": "Addition",
@@ -235,7 +235,7 @@
           "Target": "printerProcessingStateDetail"
         },
         {
-          "Id": "16fb7ee9-53eb-11eb-a966-cb5b1188a896",
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
           "ApiChange": "Member",
           "ChangedApiName": "disconnected",
           "ChangeType": "Deletion",
@@ -243,7 +243,7 @@
           "Target": "printerProcessingStateDetail"
         },
         {
-          "Id": "16fddf92-53eb-11eb-a966-cb5b1188a896",
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
           "ApiChange": "Member",
           "ChangedApiName": "queueFull",
           "ChangeType": "Deletion",
@@ -251,7 +251,7 @@
           "Target": "printerProcessingStateDetail"
         },
         {
-          "Id": "170045c5-53eb-11eb-a966-cb5b1188a896",
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
           "ApiChange": "Member",
           "ChangedApiName": "outputAlmostFull",
           "ChangeType": "Deletion",
@@ -259,7 +259,7 @@
           "Target": "printerProcessingStateDetail"
         },
         {
-          "Id": "1702a7f0-53eb-11eb-a966-cb5b1188a896",
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
           "ApiChange": "Member",
           "ChangedApiName": "unknownFutureValue",
           "ChangeType": "Deletion",
@@ -267,10 +267,10 @@
           "Target": "printerProcessingStateDetail"
         }
       ],
-      "Id": "62d9370f-55fe-465c-9041-644ef9f55a83",
+      "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-12-09T00:00:00",
+      "CreatedDateTime": "2021-01-21T00:00:00",
       "WorkloadArea": "Devices and apps ",
       "SubArea": " Cloud printing"
     },
