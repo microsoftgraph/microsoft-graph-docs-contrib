@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 | isDeleted               | Boolean |
 | lastActivityDate        | Date    |
 | SiteSensitivityLabelId  | String  |
-| ExternalSharing         | String  |
+| ExternalSharing         | Boolean |
 | UnmanagedDevicePolicy   | String  |
 | GeoLocation             | String  |
 | fileCount               | Int64   |
