@@ -55,7 +55,7 @@ If you do not have a developer tenant, sign up for one through the [Microsoft 36
 The Azure AD application now has permissions to make requests on behalf of a user to call Mail.Read and as an application for User.Read.All.
 
 ## Step 4 - Configuring authentication
-After forking the **Microsoft Graph** collection in your own workspace, set up the environment variables to get an access token.
+After forking the **Microsoft Graph** collection in your own workspace, set up environment variables to get an access token.
 
 1. In the top right corner, choose the **No environment** drop-down list.
 2. Select **Microsoft Graph environment**.
