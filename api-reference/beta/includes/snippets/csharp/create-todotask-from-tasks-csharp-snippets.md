@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var todoTask = new TodoTask
 {
 	Title = "A new task",
-	LinkedResources = (ITodoTaskLinkedResourcesCollectionPage)new List<LinkedResource>()
+	LinkedResources = new TodoTaskLinkedResourcesCollectionPage()
 	{
 		new LinkedResource
 		{
