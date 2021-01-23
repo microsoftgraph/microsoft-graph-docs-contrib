@@ -54,7 +54,7 @@ Initialize the ElectronAuthenticator in the main process and set up the configur
 | authority    | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |                                                                                                                                                                                          |
 | mainWindow  | Instance of the main BrowserWindow
 
-Note : Right now the provider does not support incremental support. Please provide all the scopes that are needed for the components to work when you initialize ElectronAuthenticator.
+Note : Right now the provider does not support incremental support. Please make sure you have consented to all the scopes that the components would require as a best practice.
     
 ## Creating an app/client ID
 
