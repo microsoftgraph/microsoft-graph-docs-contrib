@@ -589,6 +589,8 @@ items:
                 href: toolkit/providers/sharepoint.md
               - name: Microsoft Teams provider
                 href: toolkit/providers/teams.md
+              - name: Electron provider
+                href: toolkit/providers/electron.md
               - name: Proxy provider
                 href: toolkit/providers/proxy.md
               - name: Custom provider
