@@ -1,21 +1,39 @@
 ---
-title: "MSAL provider for Electron"
+title: "Electron Provider"
 description: "The MSAL provider for electron uses msal-node to sign in users and acquire tokens to use with the Microsoft Graph"
 localization_priority: Normal
 author: amrutha95
 ---
-# MSAL provider for electron
+# Electron Provider
 
-The MSAL provider uses [msal-node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node) to sign in users and acquire tokens to use with Microsoft Graph in an Electron application.
+The Electron provider uses [msal-node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node) to sign in users and acquire tokens to use with Microsoft Graph in an Electron application.
 
-To learn more, see [providers](./providers.md).
+To learn more about authentication providers, see [providers](./providers.md).
 
 ## Get started
+### Install the packages
 
+```bash
+   npm install @microsoft/mgt-element @microsoft/mgt-electron-provider
+```
 You need to initialize ElectronProvider in the renderer process (front-end), and ElectronAuthenticator in the main process (back-end).
+
+
+### Initializing ElectronProvider in the renderer process (renderer.ts)
+
+The ElectronProvider is responsible for communicating with ElectronAuthenticator (in the main process) to request access tokens and receive information regarding logged in state that are required for the mgt components to work. 
+
+ ```ts
+    import {Providers} from '@microsoft/mgt-element';
+    import {ElectronProvider} from '@microsoft/mgt-electron-provider/dist/es6/ElectronProvider';
+
+    // initialize the auth provider globally
+    Providers.globalProvider = new ElectronProvider();
+ ```
 
 ### Initializing ElectronAuthenticator in the main process (main.ts)
 
+The ElectronAuthenticator is responsible for setting up the configuration variables for MSAL authentication, acquiring access tokens and communicating with ElectronProvider.
 Initialize the ElectronAuthenticator in the main process and set up the configuration variables such as client-id.
 
 ```ts
@@ -35,19 +53,8 @@ Initialize the ElectronAuthenticator in the main process and set up the configur
 | scopes       | Comma separated strings for scopes the user must consent to on sign in. Optional.                                                                                                                                                                                     |
 | authority    | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |                                                                                                                                                                                          |
 | mainWindow  | Instance of the main BrowserWindow
-| isIncrementalConsentEnabled | Enable/Disable incremental consent, false by default. Incrememntal consent is currently not fully supported. |
 
-
-
-### Initializing ElectronProvider in the renderer process (renderer.ts)
-
- ```ts
-    import {Providers} from '@microsoft/mgt-element';
-    import {ElectronProvider} from '@microsoft/mgt-electron-provider/dist/es6/ElectronProvider';
-
-    // initialize the auth provider globally
-    Providers.globalProvider = new ElectronProvider();
- ```
+Note : Right now the provider does not support incremental support. Please provide all the scopes that are needed for the components to work when you initialize ElectronAuthenticator.
     
 ## Creating an app/client ID
 
@@ -66,15 +73,3 @@ To create the app in Azure Active Directory:
 1. In the **Redirect URI** field, in the dropdown, select **Public client/native (mobile & desktop)**, and in the URL field, enter `msal://redirect`.
 1. Confirm changes by selecting the **Register** button.
 
-### Enable OAuth implicit flow
-
-In most cases, you will use Microsoft Graph Toolkit in client-side applications that consist only of client-side code. Because client-side apps can't store secrets securely, you need to use [OAuth implicit flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow?WT.mc_id=m365-10340-wmastyka), which assumes an app's identity based on its ID and URL.
-
-1. In the Azure Portal, open your newly created app registration.
-1. From the menu, choose **Authentication**.
-1. In the **Implicit grant** section, enable both **Access tokens** and **ID tokens** options.
-1. Confirm your changes by choosing the **Save** button.
-
-
-    
-   
