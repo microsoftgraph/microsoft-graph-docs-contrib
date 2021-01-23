@@ -53,13 +53,15 @@ This API supports the $filter [OData query parameter](/graph/query-parameters). 
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [UsageRight](../resources/usageright.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [usageRight](../resources/usageright.md) objects in the response body.
 
 Additionally, if there are more pages in the response an @odata.nextLink is returned.
 
-## Example 1: Get all usage rights for a user
+## Examples
 
-### Request
+### Example 1: Get all usage rights for a user
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "list_usageright"
@@ -69,8 +71,8 @@ Additionally, if there are more pages in the response an @odata.nextLink is retu
 GET https://graph.microsoft.com/beta/users/{userId}/usageRights
 ```
 
-### Response
-**Note:** The response object shown here might be shortened for readability.
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,9 +97,9 @@ Content-Type: application/json
 }
 ```
 
-## Example 2: Get usage rights for a user with specific service identifiers and states
+### Example 2: Get usage rights for a user with specific service identifiers and states
 
-### Request
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -108,8 +110,8 @@ Content-Type: application/json
 GET https://graph.microsoft.com/beta/users/{userId}/usageRights?$filter=state in ('active', 'suspended') and serviceIdentifier in ('ABCD')
 ```
 
-### Response
-**Note:** The response object shown here might be shortened for readability.
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

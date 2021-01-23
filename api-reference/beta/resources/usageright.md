@@ -1,5 +1,5 @@
 ---
-title: "UsageRight resource type"
+title: "usageRight resource type"
 description: "Contains information about a usageRight a user/device has assigned"
 author: "jeeshnair"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
-# UsageRight resource type
+# usageRight resource type
 
 Namespace: microsoft.graph
 
@@ -19,8 +19,8 @@ A usage right represents a license that a user or device has for either third pa
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List user usageRights](../api/user-list-usagerights.md)|[UsageRight](../resources/usageright.md) collection|Get the list of usage rights for a user.|
-|[List device usageRights](../api/device-list-usagerights.md)|[UsageRight](../resources/usageright.md) collection|Get the list of usage rights for a device.|
+|[List user usageRights](../api/user-list-usagerights.md)|[usageRight](../resources/usageright.md) collection|Get the list of usage rights for a user.|
+|[List device usageRights](../api/device-list-usagerights.md)|[usageRight](../resources/usageright.md) collection|Get the list of usage rights for a device.|
 
 ## Properties
 
