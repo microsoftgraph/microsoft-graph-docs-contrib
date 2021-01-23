@@ -291,6 +291,8 @@ items:
           href: api/user-list-registereddevices.md
         - name: List scoped administrator memberships
           href: api/user-list-scopedrolememberof.md
+        - name: List user usage rights
+          href: api/user-list-usagerights.md
         - name: Reprocess license assignment
           href: api/user-reprocesslicenseassignment.md
         - name: Revoke sign-in session
@@ -10009,6 +10011,8 @@ items:
             href: api/device-list-memberof.md
           - name: List device transitive groups
             href: api/device-list-transitivememberof.md
+          - name: List device usage rights
+            href: api/device-list-usagerights.md
           - name: Check member objects
             href: api/device-checkmemberobjects.md
         - name: Directory object
