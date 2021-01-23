@@ -10192,6 +10192,72 @@ items:
               href: api/unifiedroleassignmentmultiple-update.md
             - name: Delete
               href: api/unifiedroleassignmentmultiple-delete.md
+          - name: Role assignment request
+            href: resources/unifiedroleassignmentrequest.md
+            items:
+            - name: List
+              href: api/unifiedroleassignmentrequest-list.md
+            - name: Get
+              href: api/unifiedroleassignmentrequest-get.md
+            - name: Create
+              href: api/unifiedroleassignmentrequest-post-unifiedroleassignmentrequests.md
+            - name: Update
+              href: api/unifiedroleassignmentrequest-update.md
+            - name: Cancel
+              href: api/unifiedroleassignmentrequest-cancel.md
+            - name: Filter by current user
+              href: api/unifiedroleassignmentrequest-filterbycurrentuser.md
+          - name: Role eligibility request
+            href: resources/unifiedroleeligibilityrequest.md
+            items:
+            - name: List
+              href: api/unifiedroleeligibilityrequest-list.md
+            - name: Get
+              href: api/unifiedroleeligibilityrequest-get.md
+            - name: Create
+              href: api/unifiedroleeligibilityrequest-post-unifiedroleeligibilityrequests.md
+            - name: Update
+              href: api/unifiedroleeligibilityrequest-update.md
+            - name: Cancel
+              href: api/unifiedroleeligibilityrequest-cancel.md
+            - name: Filter by current user
+              href: api/unifiedroleeligibilityrequest-filterbycurrentuser.md
+          - name: Role assignment schedule
+            href: resources/unifedRoleAssignmentSchedule.md
+            items:
+            - name: List
+              href: api/unifiedroleassignmentschedule-list.md
+            - name: Get
+              href: api/unifiedroleassignmentschedule-get.md
+            - name: Filter by current user
+              href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+          - name: Role eligibility schedule
+            href: resources/unifedRoleEligibilitySchedule.md
+            items:
+            - name: List
+              href: api/unifedRoleEligibilitySchedule-list.md
+            - name: Get
+              href: api/unifedRoleEligibilitySchedule-get.md
+            - name: Filter by current user
+              href: api/unifedRoleEligibilitySchedule-filterbycurrentuser.md
+          - name: Role assignment instance
+            href: resources/unifedRoleAssignmentScheduleInstance.md
+            items:
+            - name: List
+              href: api/unifedRoleAssignmentScheduleInstance-list.md
+            - name: Get
+              href: api/unifedRoleAssignmentScheduleInstance-get.md
+            - name: Filter by current user
+              href: api/unifedRoleAssignmentScheduleInstance-filterbycurrentuser.md
+          - name: Role eligibility instance
+            href: resources/unifedRoleEligibilityScheduleInstance.md
+            items:
+            - name: List
+              href: api/unifedRoleEligibilityScheduleInstance-list.md
+            - name: Get
+              href: api/unifedRoleEligibilityScheduleInstance-get.md
+            - name: Filter by current user
+              href: api/unifedRoleEligibilityScheduleInstance-filterbycurrentuser.md
       - name: Identity and sign-in
         items:
         - name: Authentication events policy
@@ -10641,6 +10707,33 @@ items:
                   href: api/permissiongrantpolicy-post-excludes.md
                 - name: Delete from excludes
                   href: api/permissiongrantpolicy-delete-excludes.md
+          - name: Role management policy
+            href: resources/unifiedRoleManagementPolicy.md
+            items:
+            - name: List
+              href: api/unifiedrolemanagementpolicy-list.md
+            - name: Get
+              href: api/unifiedrolemanagementpolicy-get.md
+            - name: List effective rules
+              href: api/unifiedrolemanagementpolicy-list-effectiverules.md
+            - name: List rules
+              href: api/unifiedrolemanagementpolicy-list-rules.md
+          - name: Role management policy assignment
+            href: resources/unifiedRoleManagementPolicyAssignment.md
+            items:
+            - name: List
+              href: api/unifiedRoleManagementPolicyAssignment-list.md
+            - name: Get
+              href: api/unifiedRoleManagementPolicyAssignment-get.md
+          - name: Role management policy rule
+            href: resources/unifiedRoleManagementPolicyRule.md
+            items:
+            - name: List
+              href: api/unifiedRoleManagementPolicyRule-list.md
+            - name: Get
+              href: api/unifiedRoleManagementPolicyRule-get.md
+            - name: Update
+              href: api/unifiedRoleManagementPolicyRule-update.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:
