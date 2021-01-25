@@ -16,7 +16,7 @@
             "ChangedApiName": "fido2AuthenticationMethod",
             "ChangeType": "Addition",
             "Description": "Added the [FIDO2 authentication method](https://docs.microsoft.com/en-us/graph/api/resources/fido2authenticationmethod?view=graph-rest-1.0) resource and associated methods to v1.0",
-            "Target": 
+            "Target": "fido2AuthenticationMethod"
         },
         {
             "Id": "6764a93d-cdd8-4b47-9371-032690b96e33",
