@@ -99,14 +99,17 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
+```json
 {
-    "customKeyIdentifier": null,
-    "endDateTime": "2021-09-09T19:50:29.3086381Z",
-    "keyId": "f0b0b335-1d71-4883-8f98-567911bfdca6",
-    "startDateTime": "2019-09-09T19:50:29.3086381Z",
-    "secretText": "[6gyXA5S20@MN+WRXAJ]I-TO7g1:h2P8",
-    "hint": "[6g",
-    "displayName": "Password friendly name"
+    "customKeyIdentifier": "AHfJDhRzRVvlSRk6fPe6V8tEZMpGrhfeL586QUpD94U=",
+    "displayName": "customDisplayName",
+    "endDateTime": "2023-06-29T00:00:00Z",
+    "key":"V8tEZMpGrhfeL586QUpD94UAHfJDhRzRVvlSRk6fPe6V8tEZMpGrhfeL586QUpD94UV8tEZMpGrhfeL586QUpD94U=",
+    "keyId": "b859fc29-969f-48b2-9a27-8399b69f441e",
+    "startDateTime": "2020-06-29T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "thumbprint":"QWESRTGFWQWEDSASDTGGSADASDWQW",
+    "usage": "Verify"
 }
 ```
 
