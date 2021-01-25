@@ -63,7 +63,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "user_chat_teamsApps"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/teamwork/installedApps/ZjMyYjgzYmItNGZjOC00ZGI3LWI3ZjUtNzZjZGJiYjhhYTFjIyMyMmY3M2JiZS1mNjdhLTRkZWEtYmQ1NC01NGNhYzcxOGNiMmI=/chat
 ```
 # [C#](#tab/csharp)
@@ -102,9 +102,9 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats/$entity",
-   "id": "19:0de69e5e-2da8-4cf2-821f-5e6585b2c65b_f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c@unq.gbl.spaces"
- }
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#chats/$entity",
+   "id":"19:0de69e5e-2da8-4cf2-821f-5e6585b2c65b_f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c@unq.gbl.spaces"
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
