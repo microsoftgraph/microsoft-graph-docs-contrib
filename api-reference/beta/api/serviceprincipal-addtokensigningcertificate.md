@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-It creates a self-signed signing certificate and returns a [selfSignedCertificate](../resources/selfsignedcertificate.md) which is the public part of the generated certificate. The self-signed signing certificate is composed of 3 resources: the private key ([keyCredential](../resrouces/keycredential.md) with usage = 'Sign'), the public key ([keyCredential](../resources/keycredential.md) with usage = 'verify'), and the [passwordCredentials](../resources/passwordcredential.md).
+It creates a self-signed signing certificate and returns a [selfSignedCertificate](../resources/selfsignedcertificate.md) which is the public part of the generated certificate. The self-signed signing certificate is composed of 3 resources: the private key ([keyCredential](../resources/keycredential.md) with usage = 'Sign'), the public key ([keyCredential](../resources/keycredential.md) with usage = 'verify'), and the [passwordCredentials](../resources/passwordcredential.md).
 
 All 3 created resources have the same customKeyIdentifier.
 
@@ -110,5 +110,17 @@ Content-Type: application/json
     "usage": "Verify"
 }
 ```
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2021-01-15 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "servicePrincipal: selfSignedCertificate",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: serviceprincipal_selfsignedcertificate:\r\n      Resource type was null or missing, so we assume there is no response to validate."
+    ]
+}-->
 
 
