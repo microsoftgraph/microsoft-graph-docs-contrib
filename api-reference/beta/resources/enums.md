@@ -78,18 +78,6 @@ Namespace: microsoft.graph
 |notApplied|
 |unknownFutureValue|
 
-### signInAuthMethods values
-
-|Member|
-|:---|
-|SMS|
-|Authenticator App|
-|App Verification code|
-|Password|
-|FIDO|
-|PTA|
-|PHS|
-
 ### activityResult values
 
 |Member|
