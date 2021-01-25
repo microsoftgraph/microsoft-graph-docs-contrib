@@ -1,6 +1,6 @@
 ---
 title: "Update educationAssignmentSettings"
-description: "Update the properties of an educationAssignmentSettings object. Only Teachers can update these settings"
+description: "Update the properties of an educationAssignmentSettings object."
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
@@ -46,7 +46,7 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|submissionAnimationDisabled|Boolean|setting - When true turn-in animation celebration will not be shown. Default value - false|
+|submissionAnimationDisabled|Boolean|Indicates whether turn-in celebration animation will be shown. A value of `true` indicates that the animation will not be shown. Default value is `false`.|
 
 
 
