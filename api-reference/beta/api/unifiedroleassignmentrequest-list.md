@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentRequ
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleAssignmentRequest)"
+  "@odata.type": "Collection(microsoft.graph.unifiedRoleAssignmentRequest)"
 }
 -->
 
@@ -84,7 +84,6 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.context": "https://canary.graph.microsoft.com/testprodbetapimv3/$metadata#unifiedRoleAssignmentRequests/$entity",
       "id": "024fadf0-d058-4c27-b676-a8e3a4a75960",
       "status": "Provisioned",
       "createdDateTime": "2021-01-15T20:41:01.897Z",
