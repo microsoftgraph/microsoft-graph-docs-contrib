@@ -1,0 +1,114 @@
+---
+title: "servicePrincipal: addTokenSigningCertificate"
+description: "Add a signing certificate to a servicePrincipal."
+localization_priority: Normal
+author: "luleon"
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
+---
+
+# servicePrincipal: addKey
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+It creates a self-signed signing certificate and returns a [selfSignedCertificate](../resources/selfsignedcertificate.md) which is the public part of the generated certificate. The self-signed signing certificate is composed of 3 resources: the private key ([keyCredential](../resrouces/keycredential.md) with usage = 'Sign'), the public key ([keyCredential](../resources/keycredential.md) with usage = 'verify'), and the [passwordCredentials](../resources/passwordcredential.md).
+
+All 3 created resources have the same customKeyIdentifier.
+
+The passwordCredential is used to open the pfx/private key. Also, it's associated with the privateKey having both the same `keyId`. 
+
+The subject of the certificate is a constant value. It won't be affected by the optional displayName provided in the POST call.
+
+The startDateTime is set to the same time the certificate is created using the action. 
+
+The endDateTime can be up to 3 years after the certificate is created.
+
+## Permissions
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | None.  |
+|Delegated (personal Microsoft account) | None.    |
+|Application | None. |
+
+
+## HTTP request
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /servicePrincipals/{id}/addTokenSigningCertificate
+```
+
+## Request body
+
+In the request body, provide the following required properties.
+
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+
+| Parameter             | Type     |Description|
+| --------------------- | -------- | --------- | ------------------------ |
+| `displayName` | `string` | Friendly name for the key.  It must start with 'CN='.|
+| `endDateTime` | `DateTimeOffset` |The date and time at which the credential expires. It can be up to 3 years from the date the certifcate is created. If not supplied, the default is 3 years from the time of creation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z' |
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a new [selfSignedCertificate](../resources/selfsignedcertificate.md) object in the response body.
+
+## Examples
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "serviceprincipal_addtokensigningcertificate"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/addTokenSigningCertificate
+Content-type: application/json
+
+{
+    "displayName":"CN=customDisplayName",
+    "endDateTime":"2024-01-25T00:00:00Z"
+}
+```
+
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.selfsignedcertificate"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+
+```json
+{
+    "customKeyIdentifier": "AHfJDhRzRVvlSRk6fPe6V8tEZMpGrhfeL586QUpD94U=",
+    "displayName": "customDisplayName",
+    "endDateTime": "2023-06-29T00:00:00Z",
+    "key": "V8tEZMpGrhfeL586QUpD94UAHfJDhRzRVvlSRk6fPe6V8tEZMpGrhfeL586QUpD94UV8tEZMpGrhfeL586QUpD94U=",
+    "keyId": "b859fc29-969f-48b2-9a27-8399b69f441e",
+    "startDateTime": "2020-06-29T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "thumbprint":"QWESRTGFWQWEDSASDTGGSADASDWQW",
+    "usage": "Verify"
+}
+```
+
+
