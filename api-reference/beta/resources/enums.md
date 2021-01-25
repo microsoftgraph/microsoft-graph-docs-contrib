@@ -11,6 +11,18 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### usageAuthMethod values
+
+|Member|
+|:---|
+|email|
+|mobilePhone|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appCode|
+|alternateMobilePhone|
+
 ### credentialResetFeature values
 
 |Member|
@@ -78,7 +90,7 @@ Namespace: microsoft.graph
 |notApplied|
 |unknownFutureValue|
 
-### activityResult values
+### operationResult values
 
 |Member|
 |:---|
