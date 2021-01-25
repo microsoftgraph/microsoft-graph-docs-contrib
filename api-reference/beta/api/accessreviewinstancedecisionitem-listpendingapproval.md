@@ -117,7 +117,7 @@ Content-type: application/json
                 "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
                 "userId": "7eae986b-d425-48b2-adf2-3c777f6256f3",
                 "userDisplayName": "Adele Vance",
-                "userPrincipalName": "AdeleV@microsoft.com"
+                "userPrincipalName": "AdeleV@contoso.com"
             }
         },
         {
@@ -143,7 +143,7 @@ Content-type: application/json
                 "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
                 "userId": "957f1027-c0ee-460d-9269-b8828e59e0fe",
                 "userDisplayName": "MOD Administrator",
-                "userPrincipalName": "admin@microsoft.com"
+                "userPrincipalName": "admin@contoso.com"
             }
         }
     ]
