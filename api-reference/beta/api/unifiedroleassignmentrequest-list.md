@@ -84,29 +84,20 @@ Content-Type: application/json
 {
   "value": [
     {
-      "id": "024fadf0-d058-4c27-b676-a8e3a4a75960",
-      "status": "Provisioned",
-      "createdDateTime": "2021-01-15T20:41:01.897Z",
-      "completedDateTime": null,
-      "action": "AdminAssign",
-      "principalId": "310f12cc-979f-42ba-84f5-dc1dd3aa5392",
-      "roleDefinitionId": "d37c8bed-0711-4417-ba38-b4abe66ce4c2",
-      "directoryScopeId": "/",
-      "appScopeId": null,
-      "isValidationOnly": false,
-      "targetScheduleId": "29f84688-4095-4f1b-bca3-9b822cbae49a",
-      "justification": "test",
+      "id": "c13ee236-e236-c13e-36e2-3ec136e23ec1",
+      "action": "String",
+      "principalId": "String",
+      "roleDefinitionId": "String",
+      "directoryScopeId": "String",
+      "appScopeId": "String",
+      "isValidationOnly": "Boolean",
+      "targetScheduleId": "String",
+      "justification": "String",
       "scheduleInfo": {
-      "startDateTime": "2021-01-15T20:40:20.079Z",
-      "expiration": {
-      "type": "afterDuration",
-      "endDateTime": null,
-      "duration": "PT0S"
-      }
+        "@odata.type": "microsoft.graph.requestSchedule"
       },
       "ticketInfo": {
-      "ticketNumber": null,
-      "ticketSystem": null
+        "@odata.type": "microsoft.graph.ticketInfo"
       }
     }
   ]
