@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 |notApplied|
 |unknownFutureValue|
 
-### activityResult values
+### operationResult values
 
 |Member|
 |:---|
