@@ -1,6 +1,6 @@
 ---
 title: "educationAssignmentSettings resource type"
-description: "Specifies class-level assignments settings"
+description: "Specifies class-level assignments settings."
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies class-level assignments settings
+Specifies class-level assignments settings.
 
 ## Methods
 |Method|Return type|Description|
@@ -24,7 +24,7 @@ Specifies class-level assignments settings
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|submissionAnimationDisabled|Boolean|setting - When true turn-in animation celebration will not be shown. Default value - false.|
+|submissionAnimationDisabled|Boolean|Indicates whether turn-in celebration animation will be shown. A value of `true` indicates that the animation will not be shown. Default value is `false`.|
 
 ## Relationships
 None.
