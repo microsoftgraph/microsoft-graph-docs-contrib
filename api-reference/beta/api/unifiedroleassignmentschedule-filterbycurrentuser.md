@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSche
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleAssignmentSchedule)"
+  "@odata.type": "Collection(Microsoft.graph.unifiedRoleAssignmentSchedule)"
 }
 -->
 ``` http
@@ -80,7 +80,6 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleAssignmentSchedule",
       "id": "String (identifier)",
       "principalId": "String",
       "roleDefinitionId": "String",
