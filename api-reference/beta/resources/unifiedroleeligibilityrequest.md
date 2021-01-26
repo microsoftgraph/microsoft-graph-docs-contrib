@@ -19,8 +19,6 @@ Represents the request for eligible role assignment operations through Azure AD 
 
 Administrators can use `unifiedRoleEligibilityRequest` to create and/or update eligible role assignments with or without start and end time. While eligible administrators, can use it to create a request to extend or renew their eligible assignments.
 
-Inherits from [request](../resources/request.md).
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -37,7 +35,7 @@ Inherits from [request](../resources/request.md).
 |action|String|Representing the type of the operation on the role assignment. The value can be <ul><li>`AdminAdd`: Administrators assign users/groups to roles;</li><li>`UserAdd`: Users activate eligible assignments;</li><li> `AdminUpdate`: Administrators change existing role assignments</li><li>`AdminRemove`: Administrators remove users/groups from roles;<li>`UserRemove`: Users deactivate active assignments;<li>`UserExtend`: Users request to extend their expiring assignments;</li><li>`AdminExtend`: Administrators extend expiring assignments.</li><li>`UserRenew`: Users request to renew their expired assignments;</li><li>`AdminRenew`: Administrators extend expiring assignments.</li></ul>|
 |appScopeId|String|Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use "/" for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.|
 |directoryScopeId|String|Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.|
-|id|String|The unique identifier for the unifiedRoleEligibilityRequest. Key, not nullable, Read-only. Inherited from [request](../resources/request.md)|
+|id|String|The unique identifier for the unifiedRoleEligibilityRequest.|
 |isValidationOnly|Boolean|Boolean|A boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.|
 |justification|String|A message provided by users and administrators when create the request about why it is needed.|
 |principalId|String| Objectid of the principal to which the assignment is being granted to.|

@@ -10223,7 +10223,7 @@ items:
             - name: Filter by current user
               href: api/unifiedroleeligibilityrequest-filterbycurrentuser.md
           - name: Role assignment schedule
-            href: resources/unifedRoleAssignmentSchedule.md
+            href: resources/unifiedRoleAssignmentSchedule.md
             items:
             - name: List
               href: api/unifiedroleassignmentschedule-list.md
@@ -10232,32 +10232,32 @@ items:
             - name: Filter by current user
               href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
           - name: Role eligibility schedule
-            href: resources/unifedRoleEligibilitySchedule.md
+            href: resources/unifiedRoleEligibilitySchedule.md
             items:
             - name: List
-              href: api/unifedRoleEligibilitySchedule-list.md
+              href: api/unifiedRoleEligibilitySchedule-list.md
             - name: Get
-              href: api/unifedRoleEligibilitySchedule-get.md
+              href: api/unifiedRoleEligibilitySchedule-get.md
             - name: Filter by current user
-              href: api/unifedRoleEligibilitySchedule-filterbycurrentuser.md
+              href: api/unifiedRoleEligibilitySchedule-filterbycurrentuser.md
           - name: Role assignment instance
-            href: resources/unifedRoleAssignmentScheduleInstance.md
+            href: resources/unifiedRoleAssignmentScheduleInstance.md
             items:
             - name: List
-              href: api/unifedRoleAssignmentScheduleInstance-list.md
+              href: api/unifiedRoleAssignmentScheduleInstance-list.md
             - name: Get
-              href: api/unifedRoleAssignmentScheduleInstance-get.md
+              href: api/unifiedRoleAssignmentScheduleInstance-get.md
             - name: Filter by current user
-              href: api/unifedRoleAssignmentScheduleInstance-filterbycurrentuser.md
+              href: api/unifiedRoleAssignmentScheduleInstance-filterbycurrentuser.md
           - name: Role eligibility instance
-            href: resources/unifedRoleEligibilityScheduleInstance.md
+            href: resources/unifiedRoleEligibilityScheduleInstance.md
             items:
             - name: List
-              href: api/unifedRoleEligibilityScheduleInstance-list.md
+              href: api/unifiedRoleEligibilityScheduleInstance-list.md
             - name: Get
-              href: api/unifedRoleEligibilityScheduleInstance-get.md
+              href: api/unifiedRoleEligibilityScheduleInstance-get.md
             - name: Filter by current user
-              href: api/unifedRoleEligibilityScheduleInstance-filterbycurrentuser.md
+              href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
       - name: Identity and sign-in
         items:
         - name: Authentication events policy
