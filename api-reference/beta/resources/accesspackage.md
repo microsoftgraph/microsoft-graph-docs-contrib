@@ -29,6 +29,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 | [Delete accessPackage](../api/accesspackage-delete.md) |None | Delete an **accesspackage**. |
 | [List accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection | Retrieve a list of **accessPackageResourceRoleScope** objects for this access package. |
 | [Create accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) |None | Create a new **accessPackageResourceRoleScope** object for this access package. |
+|[FilterByCurrentUser](../api/accesspackage-filterbycurrentuser.md)|[accessPackage](../resources/accesspackage.md) collection|Retrieve the list of accessPackage objects filtered on the signed-in user. This method supports parameter `on` to retrieve objects corresponding to current user being the `allowedRequestor`. Additional options may be available in the future.|
 
 ## Properties
 

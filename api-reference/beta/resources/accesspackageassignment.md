@@ -20,7 +20,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access p
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [List accessPackageAssignments](../api/accesspackageassignment-list.md) | [accessPackageAssignment](accesspackageassignment.md) collection | Retrieve a list of accessPackageAssignment objects. |
-|[FilterByCurrentUser](../api/accesspackageassignment-filterbycurrentuser.md)|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|Retrieve the list of accessPackageAssignment objects filtered on the signed-in user. This method supports parameter `on` to retrieve objects corresponding to current user being the `target`, or objects `createdBy` current user.|
+|[FilterByCurrentUser](../api/accesspackageassignment-filterbycurrentuser.md)|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|Retrieve the list of accessPackageAssignment objects filtered on the signed-in user. This method supports parameter `on` to retrieve objects corresponding to current user being the `target`, or objects `createdBy` current user. Additional options may be available in the future.|
 
 
 >**Note:** You can't use a method to create or remove an access package assignment. Instead, a client that wants to request an access package assignment for a user, or remove an access package assignment from a user, can [create an accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md).
