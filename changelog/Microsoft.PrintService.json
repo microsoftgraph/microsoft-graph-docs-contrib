@@ -16,10 +16,11 @@
       "Version": "beta",
       "CreatedDateTime": "2021-01-21T00:00:00",
       "WorkloadArea": "Devices and apps",
-      "SubArea": " Cloud printing"
+      "SubArea": "Cloud printing"
     },
     {
       "ChangeList": [
+        {
           "Id": "bb46f739-3c69-46ab-a3e1-75cd4e9aae46",
           "ApiChange": "Resource",
           "ChangedApiName": "printJob",
@@ -57,7 +58,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-01-07T00:00:00",
       "WorkloadArea": "Devices and apps ",
-      "SubArea": " Cloud printing"
+      "SubArea": "Cloud printing"
     },  
    {
       "ChangeList": [
@@ -83,7 +84,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-12-10T00:00:00",
       "WorkloadArea": "Devices and apps ",
-      "SubArea": " Cloud printing"
+      "SubArea": "Cloud printing"
     },
     {
       "ChangeList": [
@@ -101,7 +102,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-12-16T00:00:00",
       "WorkloadArea": "Devices and apps ",
-      "SubArea": " Cloud printing"
+      "SubArea": "Cloud printing"
     },
     {
       "ChangeList": [
@@ -127,7 +128,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-12-10T00:00:00",
       "WorkloadArea": "Devices and apps ",
-      "SubArea": " Cloud printing"
+      "SubArea": "Cloud printing"
     },
     {
       "ChangeList": [
@@ -305,7 +306,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-01-21T00:00:00",
       "WorkloadArea": "Devices and apps ",
-      "SubArea": " Cloud printing"
+      "SubArea": "Cloud printing"
     },
     {
       "ChangeList": [
@@ -339,7 +340,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-12-02T00:00:00",
       "WorkloadArea": "Devices and apps ",
-      "SubArea": " Cloud printing"
+      "SubArea": "Cloud printing"
     },
     {
       "ChangeList": [
@@ -373,7 +374,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-10-16T00:00:00",
       "WorkloadArea": "Devices and apps ",
-      "SubArea": " Cloud printing"
+      "SubArea": "Cloud printing"
     }
   ]
 }
