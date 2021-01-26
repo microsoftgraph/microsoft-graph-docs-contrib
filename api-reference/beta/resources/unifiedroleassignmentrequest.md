@@ -60,7 +60,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.unifiedRoleAssignmentRequest",
-  "baseType": "microsoft.graph.request",
   "openType": false
 }
 -->
