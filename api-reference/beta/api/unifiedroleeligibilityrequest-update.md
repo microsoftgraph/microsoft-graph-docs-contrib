@@ -99,13 +99,15 @@ Content-length: 467
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleEligibilityRequest"
 }
 -->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
+```http
+HTTP/1.1 204 OK
 
+```
+<!--
 {
   "@odata.type": "#microsoft.graph.unifiedRoleEligibilityRequest",
   "id": "a2e242a0-42a0-a2e2-a042-e2a2a042e2a2",
@@ -125,4 +127,4 @@ Content-Type: application/json
   }
 }
 ```
-
+-->

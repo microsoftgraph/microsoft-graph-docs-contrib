@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityReq
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleEligibilityRequest"
+  "@odata.type": "microsoft.graph.unifiedRoleEligibilityRequest"
 }
 -->
 ``` http
@@ -73,7 +73,6 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleEligibilityRequest",
     "id": "a2e242a0-42a0-a2e2-a042-e2a2a042e2a2",
     "action": "String",
     "principalId": "String",

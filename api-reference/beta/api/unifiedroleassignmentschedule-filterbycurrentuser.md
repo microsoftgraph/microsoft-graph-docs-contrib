@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSche
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.graph.unifiedRoleAssignmentSchedule)"
+  "@odata.type": "Collection(microsoft.graph.unifiedRoleAssignmentSchedule)"
 }
 -->
 ``` http
