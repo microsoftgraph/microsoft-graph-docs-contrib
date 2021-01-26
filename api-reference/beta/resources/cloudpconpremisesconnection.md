@@ -38,7 +38,7 @@ Represents a defined collection of Azure resource information that can be used t
 |subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
 |subscriptionName|String|The name of the target Azure subscription. Read-only.|
 |adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join.|
-|adDomainUsername|String|The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: contoso@microsoft.com.|
+|adDomainUsername|String|The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: admin@contoso.com.|
 |adDomainPassword|String|The password associated with adDomainUsername.|
 |organizationalUnit|String|The organizational unit (OU) in which the computer account is created. If left null, the OU that’s configured as the default (a well-known computer object container) in your Active Directory domain (OU) is used. Optional.|
 |resourceGroupId|String|The ID of the target resource group. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|

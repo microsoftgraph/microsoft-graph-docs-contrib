@@ -26,7 +26,7 @@ The entitlement management resource types include:
 - [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md): Indicates the resource-specific role which a subject has been assigned through an access package assignment.
 - [accessPackageCatalog](accesspackagecatalog.md): A container for access packages.
 - [accessPackageResourceRequest](accesspackageresourcerequest.md): A request to add a resource to an access package catalog.
-- [accessPackageResourceEnvironment](accesspackageresourceenvironment.md): A reference to the geolocation of the resource.
+- [accessPackageResourceEnvironment](accesspackageresourceenvironment.md): A reference to the geolocation of the resource. Applicable to Multi-Geo SharePoint Online sites.
 - [connectedOrganization](connectedorganization.md): A connected organization for external users who can request access.
 - [entitlementManagementSettings](entitlementmanagementsettings.md): Tenant-wide settings for Azure AD entitlement management.
 
