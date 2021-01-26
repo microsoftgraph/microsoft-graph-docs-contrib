@@ -101,6 +101,16 @@ mgt-person {
 
 To learn more, see [styling components](../customize-components/style.md).
 
+## Events
+
+The following events are fired from the component.
+
+| Event | Detail | Description |
+| --- | --- | --- |
+| line1clicked | The detail contains the respective `person` object | Fired when line1 is clicked. |
+| line2clicked | The detail contains the respective `person` object | Fired when line2 is clicked. |
+| line3clicked | The detail contains the respective `person` object | Fired when line3 is clicked. |
+
 ## Templates
 
 The `mgt-person` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following:
