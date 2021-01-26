@@ -18,18 +18,18 @@ For details about how to do this follow the detailed steps below or watch the fo
 
 
 ## Step 1 - Forking the Microsoft Graph Postman collection
-To use the Postman collection you will need to fork it to your own Postman workspace.
+To use the Postman collection you will need to fork it to your own Postman workspace. This has to be done from the web browser.
 
-1. Navigate to [Microsoft Graph Postman Collection](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/overview) in your web browser.
-2. Hover over teh **Microsoft Graph** on left hand side and click the elipsis.
-3. Selct **Create a fork** from the collection menu.
-3. Fill in a label for your own fork. This can be any text.
-4. Under Workspace, select **My Workspace** in the drop down. 
+1. Navigate to [Microsoft Graph Postman Collection](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148c/fork) in your web browser.
+2. Fill in a label for your own fork. This can be any text.
+3. Under Workspace ensure that **My Workspace** is selected in the drop down. 
 
 You will now be redirected to a fork of the main Microsoft Graph Postman collection in your own workspace.
 
 ## Step 2 - (Optional) Download the Postman Agent
-To use this particular postman collection in your web browser you will need to download the [Postman Desktop Agent](https://www.postman.com/downloads). You will not be able to use Postman for the web without this due to CORS restrictions in the web browser. You do not need the agent if you are using the Postman for Windows app.
+To use this particular postman collection in your web browser you will need to download the [Postman Desktop Agent](https://www.postman.com/downloads). You will not be able to use Postman for the web without this due to CORS restrictions in the web browser. 
+
+You do not need the agent if you are using the Postman for Windows app. If you open Postman for Windows you will now see this forked collection in your workspace.
 
 ## Step 3 - Create an Azure AD application
 To use this collection in your own developer tenant you will need to create a Azure AD application and give it the appropriate permissions for the requests you would like to call. If you do not have a developer tenant you can sign up for one through the [Microsoft 365 Developer Program](https://developer.microsoft.com/en-us/microsoft-365/dev-program).
@@ -60,9 +60,9 @@ You will need to set up some environment variables used to retrieve an access to
 1. Click on the eye icon in the top right next to the **No environment** drop down.
 2. Click **Add** in the top right of that pop up.
 3. Change **New Environment** to **M365 Environment**.
-4. Create a new variable called **ClientID** and set the **Current value** to the Application (client) ID value from the step 5.15.
-5. Create a new variable called **ClientSecret** and  set the **Current value** to the Client Secret value from the step 5.17.
-6. Create a new variable called **TenantID** and  set the **Current value** to the Directory (tenant) ID value from the step 5.17.
+4. Create a new variable called `ClientID` and set the **Current value** to the Application (client) ID value from the step 5.15.
+5. Create a new variable called `ClientSecret` and  set the **Current value** to the Client Secret value from the step 5.17.
+6. Create a new variable called `TenantID` and  set the **Current value** to the Directory (tenant) ID value from the step 5.17.
 7. Select **Save**/**Update**. 
 8. Close the **Manage Environments** dialog box. 
 
@@ -110,7 +110,7 @@ You have now successfully made a Microsoft Graph call using application authenti
 You can follow these steps to make other requests to the Microsoft Graph. Remember that you will have to add permissions to your Azure AD application for other requests to work. Otherwise you will get permission denied errors in your responses.
 
 ### Contribute to the collection
-If you want to contribute your own requests, you can simply make your changes to the collection and then hover over the collection and select **Create pull request**.
+If you want to contribute your own requests, currently you will require a license of Postman. You can simply make your changes to the forked collection and then hover over the collection top node and select **Create pull request**.
 
 For details about how to do this, watch the following video.
 
