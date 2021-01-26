@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleManagementPolicy)"
+  "@odata.type": "Collection(microsoft.graph.unifiedRoleManagementPolicy)"
 }
 -->
 ``` http
@@ -74,7 +74,6 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleManagementPolicy",
       "id": "f93a5c37-5c37-f93a-375c-3af9375c3af9",
       "displayName": "String",
       "description": "String",

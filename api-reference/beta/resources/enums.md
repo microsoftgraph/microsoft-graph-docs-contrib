@@ -1604,3 +1604,49 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |group|
 |unknownFutureValue|
+
+### roleAssignmentRequestFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+### roleAssignmentScheduleFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### roleAssignmentScheduleInstanceFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### roleEligibilityRequestFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+### roleEligibilityScheduleFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### roleEligibilityScheduleInstanceFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|

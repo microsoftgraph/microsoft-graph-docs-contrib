@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentRequ
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleAssignmentRequest"
+  "@odata.type": "microsoft.graph.unifiedRoleAssignmentRequest"
 }
 -->
 ``` http
@@ -73,7 +73,6 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleAssignmentRequest",
     "id": "c13ee236-e236-c13e-36e2-3ec136e23ec1",
     "action": "String",
     "principalId": "String",

@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentRequ
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleAssignmentRequest)"
+  "@odata.type": "Collection(microsoft.graph.unifiedRoleAssignmentRequest)"
 }
 -->
 ``` http

@@ -51,7 +51,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.unifiedRoleEligibilityScheduleInstance",
-  "baseType": "Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleScheduleInstanceBase",
+  "baseType": "microsoft.graph.unifiedRoleScheduleInstanceBase",
   "openType": false
 }
 -->

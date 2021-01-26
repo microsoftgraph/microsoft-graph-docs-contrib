@@ -98,7 +98,7 @@ Content-length: 510
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleAssignmentRequest"
+  "@odata.type": "microsoft.graph.unifiedRoleAssignmentRequest"
 }
 -->
 ``` http
@@ -106,7 +106,6 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleAssignmentRequest",
   "id": "c13ee236-e236-c13e-36e2-3ec136e23ec1",
   "action": "String",
   "principalId": "String",

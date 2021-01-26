@@ -34,7 +34,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyNotificationRule",
-  "baseType": "Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleManagementPolicyRule",
+  "baseType": "microsoft.graph.unifiedRoleManagementPolicyRule",
   "openType": false
 }
 -->

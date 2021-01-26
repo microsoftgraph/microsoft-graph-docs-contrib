@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleScheduleInstan
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleScheduleInstanceBase)"
+  "@odata.type": "Collection(microsoft.graph.unifiedRoleScheduleInstanceBase)"
 }
 -->
 ``` http

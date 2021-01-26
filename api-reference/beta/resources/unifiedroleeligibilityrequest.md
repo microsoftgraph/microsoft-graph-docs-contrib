@@ -58,13 +58,11 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.unifiedRoleEligibilityRequest",
-  "baseType": "Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.request",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.unifiedRoleEligibilityRequest",
   "id": "String (identifier)",
   "action": "String",
   "principalId": "String",
