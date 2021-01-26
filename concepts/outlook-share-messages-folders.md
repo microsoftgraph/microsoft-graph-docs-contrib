@@ -14,7 +14,13 @@ Programmatically, Microsoft Graph supports getting messages in mail folders that
 
 As an example, Garth has shared with John and given read access to Garth's Inbox. If John has signed into your app and provided delegated permissions (Mail.Read.Shared or Mail.ReadWrite.Shared), your app will be able to access Garth's mail and Garth's Inbox as described below.
 
-> **Note** The sharing permissions (Mail.Read.Shared or Mail.ReadWrite.Shared) allow you to read or write messages in a shared or delegated folder. They do not support [subscribing to change notifications](webhooks.md) on items in such folders. To set up change notification subscriptions on messages in a shared, delegated, or any other user's mail folder in the tenant, use the application permission, Mail.Read.
+## Microsoft Graph permissions
+
+Use the delegated permissions, `Mail.Read.Shared` or `Mail.ReadWrite.Shared`, to respectively read or write messages in a shared or delegated folder. 
+
+Note that those two permissions do not support [subscribing to change notifications](webhooks.md) on items in shared or delegated folders. To set up change notification subscriptions on messages in a shared, delegated, or any other user's mail folder in the tenant, use the application permission, `Mail.Read`.
+
+For more information, see [mail permissions](permissions-reference.md#mail-permissions).
 
 ## Get a message in the shared folder
 

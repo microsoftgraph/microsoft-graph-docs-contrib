@@ -26,9 +26,13 @@ This article illustrates the second approach step by step, creating and using an
 
 A successful operation returns `HTTP 201 Created` and a new [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-1.0) instance, which contains an opaque URL that you can use in subsequent `PUT` operations to upload portions of the file. The **uploadSession** provides a temporary storage location where the bytes of the file are saved until you have uploaded the complete file.
 
-Make sure to request `Mail.ReadWrite` permission to create the **uploadSession** for a message, and `Calendars.ReadWrite` for an event. The opaque URL, returned in the **uploadUrl** property of the new **uploadSession**, is pre-authenticated and contains the appropriate authorization token for subsequent `PUT` queries in the `https://outlook.office.com` domain. That token expires by **expirationDateTime**. Do not customize this URL for the `PUT` operations.
-
 The **uploadSession** object in the response also includes the **nextExpectedRanges** property, which indicates the initial upload starting location should be byte 0.
+
+### Permissions
+Make sure to request `Mail.ReadWrite` permission to create the **uploadSession** for a message, and `Calendars.ReadWrite` for an event. 
+
+The opaque URL, returned in the **uploadUrl** property of the new **uploadSession**, is pre-authenticated and contains the appropriate authorization token for subsequent `PUT` queries in the `https://outlook.office.com` domain. That token expires by **expirationDateTime**. Do not customize this URL for the `PUT` operations.
+
 
 ### Example: create an upload session for a message
 
@@ -336,7 +340,10 @@ However, getting a large file attachment in base64-encoded format affects API pe
 - To [get the metadata of the file attachment](/graph/api/attachment-get?view=graph-rest-1.0#example-1-get-the-properties-of-a-file-attachment), append a `$select` parameter to include only those metadata properties you want, excluding the **contentBytes** property which returns the file attachment in base64 format.
 
 ### Example: Get the raw file attached to the event
-Following the event example and using the attachment ID returned in the `Location` header of the previous step, the next example request shows using a `$value` parameter to get the attachment raw content data.
+Following the event example and using the attachment ID returned in the `Location` header of the previous step, the example request in this section shows using a `$value` parameter to get the attachment raw content data.
+
+#### Permissions
+Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
 
 #### Request
 
@@ -366,7 +373,10 @@ Content-type: image/jpeg
 
 
 ### Example: Get the metadata of the file attached to the message
-Following the message example, the next example request shows using a `$select` parameter to get some of the metadata of a file attachment on a message, excluding **contentBytes**.
+Following the message example, the example request in this section shows using a `$select` parameter to get some of the metadata of a file attachment on a message, excluding **contentBytes**.
+
+#### Permissions
+Use the least privileged delegated or application permission, `Mail.Read`, as appropriate, for this operation. For more information, see [mail permissions](permissions-reference.md#mail-permissions).
 
 #### Request
 
@@ -408,6 +418,9 @@ Content-type: application/json
 ## Alternative: Cancel the upload session
 
 At any point of time before the upload session expires, if you have to cancel the upload, you can use the same initial opaque URL to delete the upload session. A successful operation returns `HTTP 204 No Content`.
+
+### Permissions
+Because the initial opaque URL is pre-authenticated and contains the appropriate authorization token for subsequent queries for that upload session, do not specify an Authorization request header for this operation.
 
 ### Example: cancel the upload session for the message
 
