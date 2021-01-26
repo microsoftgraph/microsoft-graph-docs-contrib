@@ -6,7 +6,8 @@ localization_priority: Normal
 author: bettirosengugi
 
 ---
-# Graph Explorer features
+# Working with Graph Explorer
+This article describes some of the important features in Graph Explorer.
 
 ## Consent to permissions in Graph Explorer
 
