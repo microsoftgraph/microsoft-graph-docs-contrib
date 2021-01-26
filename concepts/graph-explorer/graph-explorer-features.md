@@ -41,9 +41,9 @@ For each REST API query you select or enter in Graph Explorer, you can find how 
 
 ![Screenshot of Graph Explorer with the code snippets tab highlighted](./images/code-snippets.png)
 
-## Implement user interface conveniently using components
+## UI component integration
 
-Graph Explorer includes several features to make implementing user interface easier. Reuse these components in your apps too.
+Graph Explorer includes several features to make implementing UI easier. Reuse these components in your apps too.
 
 ### Microsoft Graph Toolkit integration
 
@@ -61,37 +61,23 @@ The following table lists the sample queries that currently include a Toolkit co
 | GET my events for the next week | [https://mgt.dev/iframe.html?id=components-mgt-agenda—get-events-for-next-week](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmgt.dev%2Fiframe.html%3Fid%3Dcomponents-mgt-agenda--get-events-for-next-week&amp;data=04%7C01%7CElise.Yang%40microsoft.com%7Ca81f0f07873240d8571b08d7dac329d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637218404083382869%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=VVFcx3gXMmg%2B%2BdQCZXjAmkCk5zKcrntK6fI35jbdN94%3D&amp;reserved=0) |
 | GET my photo | [https://mgt.dev/iframe.html?id=components-mgt-person—person-photo-only](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmgt.dev%2Fiframe.html%3Fid%3Dcomponents-mgt-person--person-photo-only&amp;data=04%7C01%7CElise.Yang%40microsoft.com%7Ca81f0f07873240d8571b08d7dac329d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637218404083392872%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=aI%2BUqciLPOxEqlIpbjT8wtWBgcaJWM6sqooRlLVspZ0%3D&amp;reserved=0) |
 
-![see-graph-toolkit-components](./images/graph-toolkit.png)
-
-1.	Microsoft Graph Toolkit UI component.
-2.	Code used to generate the Toolkit component.
-
+![Screenshot showing the Toolkit components tab with the code to generate the component highlighted](./images/graph-toolkit.png)
 
 ### Adaptive cards integration
 
 [Adaptive cards](https://adaptivecards.io/) are platform-agnostic snippets of UI, authored in JSON, that apps and services can openly exchange. When you run a query and an adaptive card is available, a blue dot appears on the **Adaptive cards** tab.
 
-![see-adaptive-cards-components](./images/adaptive-cards.png)
-
-1.	Select and run a sample query in Graph Explorer.
-2.	Navigate to the **Adaptive cards** tab.
-3.	See the adaptive card with the response details.
+![Screenshot of the adaptive cards tab in Graph Explorer with the response details highlighted](./images/adaptive-cards.png)
 
 ## Customize the theme in Graph Explorer
 
 Choose the theme for Graph Explorer by selecting the **Change theme** option under the settings gear. Theme options are Light, Dark, and High contrast.
 
-![how-to-change-theme](./images/change-theme.png)
-
-1.	Choose your preferred theme from the list of available themes.
-2.	See the list of available themes and choose your preferred theme.  
-
+![Screenshot of the Change theme option in Graph Explorer with the theme options highlighted](./images/change-theme.png)
 
 ## Storing and sharing queries
 
-Queries run in Graph Explorer are saved for 30 days in the **History tab**. You can view, run, export, or delete queries in the history.
-
-![see-your-history-items](./images/storing-and-sharing-queries.png)
+Queries run in Graph Explorer are saved for 30 days in the **History** tab. On the History tab, you can:
 
 1.	Export all history items in .har format.
 2.	Delete all history items.
@@ -100,42 +86,29 @@ Queries run in Graph Explorer are saved for 30 days in the **History tab**. You 
 5.	Export this history item in .har format.
 6.	Delete this history item.
 
+![Screenshot of the History tab with options highlighted](./images/storing-and-sharing-queries.png)
 
 To share queries that you run, click the share query button in the response pane and click **copy**. This copies a link to share and allow others to see your query and the results.
 
-![how-to-share-a-query](./images/share-query.png)
-
-1.	Select Share query icon.
-2.	Select the Copy button to copy the query to clipboard.
-
+![Screenshot of Graph Explorer with the Share and Copy options highlighted](./images/share-query.png)
 
 ## Graph Explorer UI features
 
 Collapse and expand the sidebar component in Graph Explorer when you want to widen the request and response area. To collapse the sidebar component, select the hamburger icon on the top left of the sidebar.
 
-![how-to-collapse-sidebar-component](./images/expand-collapse-sidebar-component.png)
-
-1.	Expand the side bar component.
-2.	Collapse the sidebar component.
-
+![Screenshot of Graph Explorer with the expand and collapse options highlighted](./images/expand-collapse-sidebar-component.png)
 
 Expand and collapse the response preview by selecting the expand arrow in the response preview window.
 
-![how-to-collapse-response-preview](./images/expand-collapse-response-preview.png)
-
-1.	Expand the response preview.
-2.	Exit the expanded response state.
+![Screenshot of the response pane with the expand and collapse options highlighted](./images/expand-collapse-response-preview.png)
 
 Conveniently access the Microsoft 365 Developer Program site from the Graph Explorer UI to get a free sandbox with sample data to experiment with. Under the setting gear, select **Get a sandbox with sample data**.
 
-![get-the-link-to-m365-program](./images/link-to-m365-dev-program.png)
+![Screenshot of Graph Explorer with the Get a sandbox with sample data option highlighted](./images/link-to-m365-dev-program.png)
 
-1.	Link to Microsoft 365 Developer Program
 
 ## Next steps
 
-Go to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/)
-
-Explore [Microsoft Graph Toolkit documentation](https://docs.microsoft.com/graph/toolkit/overview)
-
-File an issue on [Graph Explorer's GitHub repo](https://github.com/microsoftgraph/microsoft-graph-explorer-v4/issues/new/choose)
+- Visit [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/) and explore sample queries.
+- Explore the [Microsoft Graph Toolkit documentation](/graph/toolkit/overview).
+- Contribute or provide feedback in the [Graph Explorer GitHub repo](https://github.com/microsoftgraph/microsoft-graph-explorer-v4/issues/new/choose).
