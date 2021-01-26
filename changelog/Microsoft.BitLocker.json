@@ -1,7 +1,7 @@
 {
     "changelog": [
         {
-            "changeList": [
+            "ChangeList": [
                 {
                     "Id": "b550e1fd-cd34-11ea-bd3f-bcf14830d361",
                     "ApiChange": "Resource",
