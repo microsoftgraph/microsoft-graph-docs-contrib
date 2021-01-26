@@ -20,18 +20,16 @@ For details about how to do this follow the detailed steps below or watch the fo
 ## Step 1 - Forking the Microsoft Graph Postman collection
 To use the Postman collection you will need to fork it to your own Postman workspace.
 
-1. Navigate to https://www.postman.com/microsoftgraph/workspace/microsoft-graph/overview in your browser
-2. Hover over the **Microsoft Graph** collection on the left hand side and click on the parathensis and select **Create a fork**.
-3. Type a label for your fork (this can be any name)
-4. On Workspace drop down select **My Workspace**
-5. Click the **Create fork** button
+1. Navigate to [Microsoft Graph Postman Collection](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/overview) in your web browser.
+2. Hover over teh **Microsoft Graph** on left hand side and click the elipsis.
+3. Selct **Create a fork** from the collection menu.
+3. Fill in a label for your own fork. This can be any text.
+4. Under Workspace, select **My Workspace** in the drop down. 
 
-You will now be redirected to a fork of the main Microsoft Graph Postman collection.
+You will now be redirected to a fork of the main Microsoft Graph Postman collection in your own workspace.
 
-## Step 2 - Download the Postman Agent
-To use this particular postman collection in your web browser you will need to download the [Postman Desktop Agent](https://www.postman.com/downloads). YOu will not be able to use Postman for the web without this due to CORS restrictions in the browser.
-
-Alternatively, now that you have forked the collection, you can open your **My workspace** in the [Postman App](https://www.postman.com/downloads).
+## Step 2 - (Optional) Download the Postman Agent
+To use this particular postman collection in your web browser you will need to download the [Postman Desktop Agent](https://www.postman.com/downloads). You will not be able to use Postman for the web without this due to CORS restrictions in the web browser. You do not need the agent if you are using the Postman for Windows app.
 
 ## Step 3 - Create an Azure AD application
 To use this collection in your own developer tenant you will need to create a Azure AD application and give it the appropriate permissions for the requests you would like to call. If you do not have a developer tenant you can sign up for one through the [Microsoft 365 Developer Program](https://developer.microsoft.com/en-us/microsoft-365/dev-program).
@@ -41,7 +39,7 @@ To use this collection in your own developer tenant you will need to create a Az
 3. Click on **App registrations** in the left hand menu.
 4. Click on **New registration** in the horizontal menu.
 5. Set the **Application name** to `Postman`.
-6. Set the **Redirect URI** to `https://app.getpostman.com/oauth2/callback`
+6. Set the **Redirect URI** to `https://oauth.pstmn.io/v1/browser-callback`
 7. Click **Register** button.
 8. Click on **API Permissions** in left hand menu.
 9. Click on **Add a permission** in the horizontal menu. Then select **Microsoft Graph** and then **Delegated Permissions**.
@@ -57,18 +55,21 @@ To use this collection in your own developer tenant you will need to create a Az
 The Azure AD application now has permissions to make requests on behalf of a user to call Mail.Read and as an application for User.Read.All.
 
 ## Step 4 - Configuring authentication
-After you have the **Microsoft Graph** collection fork in your own workspace. You will need to set up some environment variables used to retrieve an access token.
+You will need to set up some environment variables used to retrieve an access token.
 
-1. Choose the **No environment** drop down in top right corner.
-2. Select **Microsoft Graph environment**.
-3. Choose the **eye** icon to the right and then choose **Edit**.
-4. Enter your Microsoft Identity Application in the **current value** (not **initial value**) variables: **ClientID**, **ClientSecret** and **TenantID**. 
-5. Select **Update**. Close the **Manage Environments** dialog box. 
+1. Click on the eye icon in the top right next to the **No environment** drop down.
+2. Click **Add** in the top right of that pop up.
+3. Change **New Environment** to **M365 Environment**.
+4. Create a new variable called **ClientID** and set the **Current value** to the Application (client) ID value from the step 5.15.
+5. Create a new variable called **ClientSecret** and  set the **Current value** to the Client Secret value from the step 5.17.
+6. Create a new variable called **TenantID** and  set the **Current value** to the Directory (tenant) ID value from the step 5.17.
+7. Select **Save**/**Update**. 
+8. Close the **Manage Environments** dialog box. 
 
 ## Step 5 - Obtain a delegated access token
 As this is the first time you are running a request as a delegated authentication flow you will need to obtain an access token.
 
-1. Hover over **On behalf of a User** folder and click on the parenthesis and select **Edit**
+1. Hover over **On behalf of a User** folder and click on the ellipsis and select **Edit**
 2. Click on the **Authorization** tab
 3. Scroll down on the right hand side and click **Get New Access Token**.
 4. Sign in with your developer tenant adminstrator.
@@ -89,7 +90,7 @@ You have now successfully made a Microsoft Graph call using delegated authentica
 ## Step 5 - Obtain a application access token
 As this is the first time you are running a request as a application authentication flow you will need to obtain an access token.
 
-1. Hover over **Application** folder and click on the parenthesis and select **Edit**
+1. Hover over **Application** folder and click on the ellipsis and select **Edit**
 2. Click on the **Authorization** tab
 3. Scroll down on the right hand side and click **Get New Access Token**.
 5. Once this completes click **Proceed** and then click the **Use Token** button.
