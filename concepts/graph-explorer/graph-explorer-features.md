@@ -10,40 +10,36 @@ author: bettirosengugi
 
 ## Consent to permissions in Graph Explorer
 
-The user or administrator must grant Microsoft Graph Explorer the correct permissions via a consent process to access data in Microsoft Graph.  Consent to permissions in Graph Explorer either via the **Modify permissions** tab or the **Select permissions** option in the settings gear next to your profile when you’re signed in. 
+The user or administrator must grant Graph Explorer the correct permissions via a consent process to access data in Microsoft Graph. Consent to permissions in Graph Explorer either via the **Modify permissions** tab or the **Select permissions** option in the settings gear next to your profile when you’re signed in. 
 The **Modify permissions** tab lists all permissions you need to run the query in the address bar. 
 
+To consent to permissions:
 
-![how-to-modify-permissions](./images/modify-permissions.png)
 1.	Select a sample query and run it.
 2.	Select the **Modify permissions** tab.
 3.	See the list of permissions required to run the query.
 4.	Select the consent button next to the permission you wish to consent to. 
 
+![Screenshot of Graph Explorer with the steps to consent to permissions highlighted](./images/modify-permissions.png)
 
-The **Modify  permissions** feature is currently in preview, and some queries might be missing permissions. The **Select permissions** option in the settings gear next to your profile contains the list of all available permissions. Select the permission(s) you want and consent to them from there.
+The **Modify  permissions** feature is currently in preview, and some queries might be missing permissions. If permissions are missing for a query, the **Select permissions** option in the settings gear next to your profile contains the list of all available permissions:
 
-![consent-to permissions-in-bulk](./images/select-permissions.png)
+1.	Go the settings gear and click the **Select permissions** option. This option contains the list of all available permissions.
+2.	From the list of all the permissions, consent to the ones you want.
 
-1.	Go the settings gear and click on the **Select permissions** option 
-2.	See the list of all the permissions in Microsoft Graph API and consent to the ones you wish in bulk.
-
+![Screenshot of Graph Explorer with the Select permissions option highlighted](./images/select-permissions.png)
 
 ## Get an access or authentication token
 
-Graph Explorer includes an **Access token** tab that shows your access token when you are signed in. Copy the token if you need to use it in your favorite REST client application.
-![get-and-copy-access-token](./images/access-token.png)
+Graph Explorer includes an **Access token** tab that shows your access token when you are signed in. On the **Access token** tab, you can copy the token if you need to use it in your favorite REST client application.
 
-1.	Navigate to the **Access token** tab.
-2.	Click the Copy icon to copy the access token.
+![Screenshot of the Access token tab in Graph Explorer with the Copy button highlighted](./images/access-token.png)
 
 ## Copy code snippets
 
 For each REST API query you select or enter in Graph Explorer, you can find how to call that API in each of the four languages showcased under the **Code snippets** tab - C#, Java, JavaScript, and Objective-C. 
-![get-and-copy-code-snippets](./images/code-snippets.png)
 
-1.	Select a sample query.
-2.	Navigate to the **Code snippets** tab and see the code snippets.
+![Screenshot of Graph Explorer with the code snippets tab highlighted](./images/code-snippets.png)
 
 ## Implement user interface conveniently using components
 
