@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyAssignment)"
+  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyAssignment"
 }
 -->
 ``` http

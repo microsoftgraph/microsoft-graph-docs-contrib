@@ -97,13 +97,16 @@ Content-length: 466
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignmentRequest"
 }
 -->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
+```http
+HTTP/1.1 204 OK
 
+```
+
+<!--
 {
   "@odata.type": "#microsoft.graph.unifiedRoleAssignmentRequest",
   "id": "c13ee236-e236-c13e-36e2-3ec136e23ec1",
@@ -122,5 +125,5 @@ Content-Type: application/json
     "@odata.type": "microsoft.graph.ticketInfo"
   }
 }
-```
+```-->
 

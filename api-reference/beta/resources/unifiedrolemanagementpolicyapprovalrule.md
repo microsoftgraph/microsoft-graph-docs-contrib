@@ -31,7 +31,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyApprovalRule",
-  "baseType": microsoft.graph.unifiedRoleManagementPolicyRule",
+  "baseType": "microsoft.graph.unifiedRoleManagementPolicyRule",
   "openType": false
 }
 -->
