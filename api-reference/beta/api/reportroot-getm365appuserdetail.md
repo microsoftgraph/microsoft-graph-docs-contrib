@@ -3,7 +3,7 @@ title: "reportRoot: getM365AppUserDetail"
 description: "Get a report that provides the details about which apps and platforms users have used."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 

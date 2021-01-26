@@ -3,7 +3,7 @@ title: "cloudPcOnPremisesConnectionHealthCheck resource type"
 description: "The result of a cloud PC on-premises connection health check."
 author: "AshleyYangSZ"
 localization_priority: Normal
-ms.prod: ""
+ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 The result of a cloud PC on-premises connection health check.
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Methods
 
@@ -27,7 +31,7 @@ The result of a cloud PC on-premises connection health check.
 |status|cloudPcOnPremisesConnectionStatus|The status of the health check item. Read-only. Possible values are: `Pending`, `Running`, `Passed`, `Failed`, `UnknownFutureValue`.|
 |startDateTime|DateTimeOffset|The start time of the health check item. Read-only.|
 |endDateTime|DateTimeOffset|The end time of the health check item. Read-only.|
-|errorType|cloudPcOnPremisesConnectionHealthCheckErrorType|The type of error that occurred during this health check. Possible values are: `DnsCheckFqdnNotFound`, `DnsCheckUnknownError`, `AdJoinCheckFqdnNotFound`, `AdJoinCheckIncorrectCredentials`, `AdJoinCheckOrganizationalUnitNotFound`, `AdJoinCheckOrganizationalUnitIncorrectFormat`, `AdJoinCheckUnknownError`, `EndpointConnectivityCheckUrlNotWhitelisted`, `EndpointConnectivityCheckUnknownError`, `AadConnectivityCheckUnknownError`.|
+|errorType|cloudPcOnPremisesConnectionHealthCheckErrorType|The type of error that occurred during this health check. Possible values are: `DnsCheckFqdnNotFound`, `DnsCheckUnknownError`, `AdJoinCheckFqdnNotFound`, `AdJoinCheckIncorrectCredentials`, `AdJoinCheckOrganizationalUnitNotFound`, `AdJoinCheckOrganizationalUnitIncorrectFormat`, `AdJoinCheckUnknownError`, `EndpointConnectivityCheckUrlNotWhitelisted`, `EndpointConnectivityCheckUnknownError`, `AadConnectivityCheckUnknownError`, `ResourceAvailabilityCheckNoSubnetIP`, `resourceAvailabilityCheckSubscriptionDisabled`, `resourceAvailabilityCheckUnknownError`,`permissionCheckNoSubscriptionReaderRole`, `permissionCheckNoResourceGroupOwnerRole`, `permissionCheckNoVNetContributorRole`, `permissionCheckUnknownError`, `internalServerUnknownError`.|
 |recommendedAction|String|The recommended action to fix the corresponding error.|
 |additionalDetails|String|Additional details about the health check or the recommended action.|
 
