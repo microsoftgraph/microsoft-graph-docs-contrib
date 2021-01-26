@@ -79,7 +79,6 @@ Content-Type: application/json
   "userId": "String",
   "tenantId": "String",
   "roles": [
-    "String"
   ]
 }
 ```

@@ -24,7 +24,6 @@ Inherits from [entity](../resources/entity.md).
 |[List plannerRosterMembers](../api/plannerrostermember-list.md)|[plannerRosterMember](../resources/plannerrostermember.md) collection|Get a list of the [plannerRosterMember](../resources/plannerrostermember.md) objects and their properties.|
 |[Create plannerRosterMember](../api/plannerroster-post-members.md)|[plannerRosterMember](../resources/plannerrostermember.md)|Create a new [plannerRosterMember](../resources/plannerrostermember.md) object.|
 |[Get plannerRosterMember](../api/plannerrostermember-get.md)|[plannerRosterMember](../resources/plannerrostermember.md)|Read the properties and relationships of a [plannerRosterMember](../resources/plannerrostermember.md) object.|
-|[Update plannerRosterMember](../api/plannerrostermember-update.md)|[plannerRosterMember](../resources/plannerrostermember.md)|Update the properties of a [plannerRosterMember](../resources/plannerrostermember.md) object.|
 |[Delete plannerRosterMember](../api/plannerrostermember-delete.md)|None|Deletes a [plannerRosterMember](../resources/plannerrostermember.md) object.|
 
 ## Properties
