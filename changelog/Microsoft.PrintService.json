@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Printer",
           "ChangeType": "Change",
-          "Description": "Update application permission for Printer resource.",
+          "Description": "Added application permissions to the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printerlocation?view=graph-rest-beta) resource.",
           "Target": "printer"
         }
       ],
@@ -15,7 +15,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-01-27T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud printing"
     }, 
     {
