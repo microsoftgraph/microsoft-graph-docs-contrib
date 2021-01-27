@@ -3,7 +3,7 @@ title: "delegatedPermissionClassification resource type"
 description: "Used to specify the classification of a delegated permission."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 

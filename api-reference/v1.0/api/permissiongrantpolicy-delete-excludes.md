@@ -3,7 +3,7 @@ title: "Delete permissionGrantConditionSet from excludes collection of permissio
 description: "Deletes an excluded condition set from permission grant policy."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "applications"
+ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 
