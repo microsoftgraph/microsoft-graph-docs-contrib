@@ -3,7 +3,7 @@ title: "reportRoot: getM365AppPlatformUserCounts"
 description: "Get a report that provides the trend of active users across all apps for each platform – Windows, Mac, web, and mobile - in your organization."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 

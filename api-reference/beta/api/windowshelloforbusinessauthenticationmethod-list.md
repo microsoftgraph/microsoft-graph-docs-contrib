@@ -10,6 +10,8 @@ doc_type: apiPageType
 # List windowsHelloForBusinessAuthenticationMethods
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get a list of the [windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) objects and their properties.
 
 ## Permissions
@@ -46,7 +48,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 -->
 ``` http
 GET /me/authentication/windowsHelloForBusinessMethods
-GET /user/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods
+GET /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods
 ```
 
 ## Optional query parameters
@@ -74,7 +76,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/annie@contoso.com/authentication/windowsHelloForBusinessMethods
+GET https://graph.microsoft.com/beta/users/annie@contoso.com/authentication/windowsHelloForBusinessMethods
 ```
 
 
