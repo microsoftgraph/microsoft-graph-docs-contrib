@@ -20,9 +20,11 @@ For details about how to do this follow the detailed steps below or watch the fo
 ## Step 1 - Forking the Microsoft Graph Postman collection
 To use the Postman collection you will need to fork it to your own Postman workspace. This has to be done from the web browser.
 
-1. Navigate to [Microsoft Graph Postman Collection](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148c/fork) in your web browser.
-2. Fill in a label for your own fork. This can be any text.
-3. Under Workspace ensure that **My Workspace** is selected in the drop down. 
+1. Navigate to [Postman](https://www.postman.com/) and register and sign into Postman.
+2. Navigate to [Microsoft Graph Postman Collection](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148c/fork) in your web browser.
+3. Fill in a label for your own fork. This can be any text.
+4. Under Workspace ensure that **My Workspace** is selected in the drop down. 
+5. Click the **Fork** button.
 
 You will now be redirected to a fork of the main Microsoft Graph Postman collection in your own workspace.
 
@@ -62,7 +64,7 @@ You will need to set up some environment variables used to retrieve an access to
 3. Change **New Environment** to **M365 Environment**.
 4. Create a new variable called `ClientID` and set the **Current value** to the Application (client) ID value from the step 3.15.
 5. Create a new variable called `ClientSecret` and  set the **Current value** to the Client Secret value from the step 3.17.
-6. Create a new variable called `TenantID` and  set the **Current value** to the Directory (tenant) ID value from the step 3.17.
+6. Create a new variable called `TenantID` and  set the **Current value** to the Directory (tenant) ID value from the step 3.15.
 7. Select **Save**/**Update**. 
 8. Close the **Manage Environments** dialog box. 
 9. Double check that **M365 Environment** is selected in the drop down and not **No environment**.
