@@ -54,7 +54,7 @@ If successful, this function returns a `200 OK` response code and a [accessPacka
 
 ## Examples
 
-### Example 1: Get the status of access package assignment requests targeted for the signed-in user
+### Example: Get the access packages that can be requested by the signed-in user
 
 #### Request
 <!-- {

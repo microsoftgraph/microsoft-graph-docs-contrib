@@ -59,7 +59,7 @@ When a result set spans multiple pages, Microsoft Graph returns that page with a
 
 ## Examples
 
-### Example 1: Get the status of access package assignments targeted for the signed-in user
+### Example: Get the status of access package assignments targeted for the signed-in user
 
 #### Request
 <!-- {
