@@ -88,7 +88,7 @@ Inside of the **On Behalf of a User** folder there are requests for various Micr
 
 You have now successfully made a Microsoft Graph call using delegated authentication.
 
-## Step 5 - Obtain a application access token
+## Step 7 - Obtain a application access token
 As this is the first time you are running a request as a application authentication flow you will need to obtain an access token.
 
 1. Hover over **Application** folder and click on the ellipsis and select **Edit**
