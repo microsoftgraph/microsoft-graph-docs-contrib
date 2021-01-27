@@ -3,7 +3,7 @@ title: "List permissionGrantPolicies"
 description: "Retrieve a list of permissionGrantPolicy objects."
 localization_priority: Normal
 doc_type: "apiPageType"
-ms.prod: "applications"
+ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 
