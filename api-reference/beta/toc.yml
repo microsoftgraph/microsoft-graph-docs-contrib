@@ -74,7 +74,7 @@ items:
       items:
       - name: Get started
         href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/beta
-      - name: Features
+      - name: Work with Graph Explorer
         href: /graph/graph-explorer/graph-explorer-features?context=graph/api/beta
     - name: Use Postman
       href: /graph/use-postman?context=graph/api/beta
