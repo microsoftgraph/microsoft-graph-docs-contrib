@@ -1,15 +1,16 @@
 ---
 
-title: "Graph Explorer features"
-description: "Graph Explorer features documentation"
+title: "Working with Graph Explorer"
+description: "Find out how to use some of the important features in Graph Explorer."
 localization_priority: Normal
 author: bettirosengugi
 
 ---
 # Working with Graph Explorer
-This article describes some of the important features in Graph Explorer.
 
-## Consent to permissions in Graph Explorer
+[Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/) is a developer tool that lets you conveniently make Microsoft Graph REST API requests and view corresponding responses. This article describes how to use some of the important features in Graph Explorer.
+
+## Consent to permissions
 
 The user or administrator must grant Graph Explorer the correct permissions via a consent process to access data in Microsoft Graph. Consent to permissions in Graph Explorer either via the **Modify permissions** tab or the **Select permissions** option in the settings gear next to your profile when you’re signed in. 
 The **Modify permissions** tab lists all permissions you need to run the query in the address bar. 
@@ -19,7 +20,7 @@ To consent to permissions:
 1.	Select a sample query and run it.
 2.	Select the **Modify permissions** tab.
 3.	See the list of permissions required to run the query.
-4.	Select the consent button next to the permission you wish to consent to. 
+4.	Select the consent button next to the permission you want to consent to. 
 
 ![Screenshot of Graph Explorer with the steps to consent to permissions highlighted](./images/modify-permissions.png)
 
