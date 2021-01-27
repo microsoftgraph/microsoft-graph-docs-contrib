@@ -19,9 +19,11 @@ A new navigation properties binding for unifiedRoleManagementPolicy and unifiedR
 |[List roleManagementPolicies](../api/policyroot-list-rolemanagementpolicies.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) collection|Get the unifiedRoleManagementPolicy resources from the roleManagementPolicies navigation property.|
 |[List roleManagementPolicyAssignments](../api/policyroot-list-rolemanagementpolicyassignments.md)|[unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) collection|Get the unifiedRoleManagementPolicyAssignment resources from the roleManagementPolicyAssignments navigation property.|
 
+<!--
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+-->
 
 ## Relationships
 |Relationship|Type|Description|
