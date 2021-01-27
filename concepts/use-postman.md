@@ -26,7 +26,7 @@ To use the Postman collection you will need to fork it to your own Postman works
 
 You will now be redirected to a fork of the main Microsoft Graph Postman collection in your own workspace.
 
-## Step 2 - (Optional) Download the Postman Agent
+## Step 2 - (Optional - Postman Web browser only) Download the Postman Agent
 To use this particular postman collection in your web browser you will need to download the [Postman Desktop Agent](https://www.postman.com/downloads). You will not be able to use Postman for the web without this due to CORS restrictions in the web browser. 
 
 You do not need the agent if you are using the Postman for Windows app. If you open Postman for Windows you will now see this forked collection in your workspace.
@@ -60,11 +60,12 @@ You will need to set up some environment variables used to retrieve an access to
 1. Click on the eye icon in the top right next to the **No environment** drop down.
 2. Click **Add** in the top right of that pop up.
 3. Change **New Environment** to **M365 Environment**.
-4. Create a new variable called `ClientID` and set the **Current value** to the Application (client) ID value from the step 5.15.
-5. Create a new variable called `ClientSecret` and  set the **Current value** to the Client Secret value from the step 5.17.
-6. Create a new variable called `TenantID` and  set the **Current value** to the Directory (tenant) ID value from the step 5.17.
+4. Create a new variable called `ClientID` and set the **Current value** to the Application (client) ID value from the step 3.15.
+5. Create a new variable called `ClientSecret` and  set the **Current value** to the Client Secret value from the step 3.17.
+6. Create a new variable called `TenantID` and  set the **Current value** to the Directory (tenant) ID value from the step 3.17.
 7. Select **Save**/**Update**. 
 8. Close the **Manage Environments** dialog box. 
+9. Double check that **M365 Environment** is selected in the drop down and not **No environment**.
 
 ## Step 5 - Obtain a delegated access token
 As this is the first time you are running a request as a delegated authentication flow you will need to obtain an access token.
