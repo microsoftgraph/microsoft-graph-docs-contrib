@@ -23,13 +23,14 @@ A new navigation properties binding for unifiedRoleManagementPolicy and unifiedR
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
--->
+
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |roleManagementPolicies|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) collection|Represents the role management policies.|
 |roleManagementPolicyAssignments|[unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) collection|Represents the role management policy assignments.|
+-->
 
 ## JSON representation
 The following is a JSON representation of the resource.
