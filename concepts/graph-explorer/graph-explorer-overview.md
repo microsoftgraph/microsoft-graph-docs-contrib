@@ -1,7 +1,7 @@
 ---
 
 title: "Use Graph Explorer to try Microsoft Graph APIs"
-description: "Graph Explorer overview"
+description: "Use Graph Explorer to try Microsoft Graph APIs on the default sample tenant to explore capabilities, or sign in to your own tenant and use it as a prototyping tool to fulfill your app scenarios."
 localization_priority: Normal
 author: bettirosengugi
 
@@ -31,8 +31,8 @@ Graph Explorer is a web application hosted on the [Microsoft Graph developer cen
 
 Graph Explorer includes the following elements:
 
-1. HTTP verb dropdown list
-2. API version dropdown list
+1. HTTP verb drop-down list
+2. API version drop-down list
 3. Request query address bar
 4. Sample query
 5. Documentation link for the sample query
@@ -60,7 +60,7 @@ To try POST, PUT, PATCH and DELETE requests, sign in to Graph Explorer using a M
 >[!IMPORTANT]
 >If you choose to sign in using your organizational account, running a non-GET request can affect the data in the tenant.
 
-For example, to run a POST request, select POST in the dropdown list for the HTTP verb, and add a request body and request headers as appropriate.
+For example, to run a POST request, select POST in the drop-down list for the HTTP verb, and add a request body and request headers as appropriate.
 
 ![Screenshot of a POST request in Graph Explorer](./images/making-a-post-request.png)
 
@@ -72,9 +72,6 @@ For example, to run a POST request, select POST in the dropdown list for the HTT
 To view the response in a format other than the default JSON, choose the **Request headers** tab in the request pane, define the key/value pair, and click **Add**.
 
 ![Screenshot that shows the Request headers tab in Graph Explorer](./images/adding-key-value-pairs.png)
-1. Select **Request headers** tab
-2. Add  **Key** and **Value** pairs 
-3. Click **Add**
 
 ## Next steps
 
