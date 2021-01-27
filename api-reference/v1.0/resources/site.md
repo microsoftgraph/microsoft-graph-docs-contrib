@@ -90,6 +90,7 @@ The `root` identifier always references the root site for a given target, as fol
 [identitySet]: identityset.md
 [itemAnalytics]: itemanalytics.md
 [list]: list.md
+[permission]: permission.md
 [site]: site.md
 [onenote]: onenote.md
 
