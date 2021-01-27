@@ -3,7 +3,7 @@ title: "permissionGrantPolicy resource type"
 description: "Specifies the conditions under which consent can be authorized."
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "psignoret"
 ---
 

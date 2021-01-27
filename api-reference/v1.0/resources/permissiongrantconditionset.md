@@ -3,7 +3,7 @@ title: "permissionGrantConditionSet resource type"
 description: "Specifies a matching rule with conditions under which an event is included or excluded from a permission grant policy."
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "psignoret"
 ---
 
