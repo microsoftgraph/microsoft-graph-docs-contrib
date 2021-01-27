@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: driveItem resource type
 description: Item is the main data model in the OneDrive API. Everything is an item.
 localization_priority: Priority
@@ -12,7 +11,8 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 The **driveItem** resource represents a file, folder, or other item stored in a drive.
-All file system objects in OneDrive and SharePoint are returned as **driveItem** resources.
+
+All file system objects in OneDrive and SharePoint are returned as **driveItem** resources. Items in SharePoint document libraries can be represented as [listItem][] or **driveItem** resources.
 
 There are two primary ways of addressing a **driveItem** resource:
 
@@ -241,7 +241,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 [thumbnailSet]: thumbnailset.md
 [video]: video.md
 [workbook]: workbook.md
-[user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
+[user]: /graph/api/resources/users
 [publicationFacet]: publicationfacet.md
 
 [DriveItemVersion]: driveitemversion.md
@@ -257,4 +257,3 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "tocPath": "Items",
   "tocBookmarks": { "Resources/Item": "#" }
 } -->
-

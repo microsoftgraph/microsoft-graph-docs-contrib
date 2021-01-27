@@ -28,5 +28,3 @@ Possible values for the recurrence of a scheduled report
 
 
 
-
-

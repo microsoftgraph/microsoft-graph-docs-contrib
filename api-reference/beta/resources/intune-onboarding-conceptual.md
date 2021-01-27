@@ -22,6 +22,7 @@ The following Graph resources are available to manage enrollment in Intune:
 - [Compliance management partner](intune-onboarding-compliancemanagementpartner.md)
 - [Compliance management partner assignment](intune-onboarding-compliancemanagementpartnerassignment.md)
 - [Device and app management data](intune-onboarding-deviceandappmanagementdata.md)
+- [Device comanagement authority configuration](intune-onboarding-devicecomanagementauthorityconfiguration.md)
 - [Device enrollment limit configuration](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [Device enrollment platform restriction](intune-onboarding-deviceenrollmentplatformrestriction.md)
 - [Device enrollment platform restrictions configuration](intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)
@@ -56,5 +57,3 @@ The following Graph resources are available to manage enrollment in Intune:
 - [VPP token sync status](intune-onboarding-vpptokensyncstatus.md)
 - [Windows 10 enrollment completion page configuration](intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)
 - [Windows Hello for business PIN usage](intune-onboarding-windowshelloforbusinesspinusage.md)
-
-
