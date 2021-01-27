@@ -491,7 +491,7 @@ items:
             items:
             - name: Get started
               href: graph-explorer/graph-explorer-overview.md
-            - name: Features
+            - name: Work with Graph Explorer
               href: graph-explorer/graph-explorer-features.md
           - name: Use Postman
             href: use-postman.md
