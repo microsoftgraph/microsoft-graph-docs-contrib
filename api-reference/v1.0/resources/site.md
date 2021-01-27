@@ -79,6 +79,7 @@ The `root` identifier always references the root site for a given target, as fol
 | **drives**        | Collection([drive][])            | The collection of drives (document libraries) under this site.
 | **items**         | Collection([baseItem][])         | Used to address any item contained in this site. This collection cannot be enumerated.
 | **lists**         | Collection([list][])             | The collection of lists under this site.
+| **permissions**   | Collection([permission][])         | The permissions associated with the site. Nullable.
 | **sites**         | Collection([site][])             | The collection of the sub-sites under this site.
 | **onenote**       | [onenote][]                      | Calls the OneNote service for notebook related operations.
 
@@ -106,6 +107,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
     "siteCollection",
     "drive",
     "drives",
+    "permissions",
     "sites"
   ],
   "keyProperty": "id",
@@ -128,6 +130,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
+  "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "onenote": { "@odata.type": "microsoft.graph.onenote"},
@@ -150,4 +153,3 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "tocPath": "Sites",
   "tocBookmarks": { "Resources/Site": "#" }
 } -->
-
