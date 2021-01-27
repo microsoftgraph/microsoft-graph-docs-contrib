@@ -10,6 +10,8 @@ doc_type: apiPageType
 # List Roster members
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get the plannerRosterMember resources from the members navigation property.
 
 ## Permissions
@@ -17,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Tasks.ReadWrite|
+|Delegated (work or school account)|Tasks.Read, Tasks.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 

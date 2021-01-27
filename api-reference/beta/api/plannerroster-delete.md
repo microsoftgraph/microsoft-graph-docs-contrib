@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Delete plannerRoster
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Deletes a [plannerRoster](../resources/plannerroster.md) object.
 
 ## Permissions
