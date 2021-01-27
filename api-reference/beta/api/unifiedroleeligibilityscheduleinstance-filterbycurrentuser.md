@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleEligibilityScheduleInstance)"
+  "@odata.type": "Collection(microsoft.graph.unifiedRoleEligibilityScheduleInstance)"
 }
 -->
 ``` http
@@ -80,7 +80,6 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleEligibilityScheduleInstance",
       "id": "String (identifier)",
       "principalId": "String",
       "roleDefinitionId": "String",

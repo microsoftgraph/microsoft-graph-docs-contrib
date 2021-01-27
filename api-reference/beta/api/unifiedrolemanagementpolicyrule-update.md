@@ -80,13 +80,15 @@ Content-length: 170
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRule"
 }
 -->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
+```http
+HTTP/1.1 204 OK
 
+```
+<!--
 {
   "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyRule",
   "id": "ba9cc2d6-c2d6-ba9c-d6c2-9cbad6c29cba",
@@ -95,4 +97,4 @@ Content-Type: application/json
   }
 }
 ```
-
+-->
