@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "6C5FE045-824E-411C-A316-35ECE4F6DD08",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "type",
+          "ChangeType": "Change",
+          "Description": "Changed **type** (string) property to be optional in [createLink](https://docs.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource.",
+          "Target": "createLink,driveItem"
+        }
+      ],
+      "Id": "6C5FE045-824E-411C-A316-35ECE4F6DD08",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-27T00:00:00.000Z",
+      "WorkloadArea": "Files",
+      "SubArea": "Permissions"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d0ae3ac8-8d01-4235-b584-66a251ba1605",
           "ApiChange": "Resource",
           "ChangedApiName": "revokeGrants,permission",
