@@ -1,8 +1,65 @@
 {
   "changelog": [
     {
-
       "ChangeList": [
+       {
+         "Id": "0a73cfac-4f88-11eb-ae35-ed470c456b69",
+         "ApiChange": "Resource",
+         "ChangedApiName": "UsageRight",
+         "ChangeType": "Addition",
+         "Description": "Added the [usageRight](https://docs.microsoft.com/en-us/graph/api/resources/UsageRight?view=graph-rest-beta) resource type.",
+         "Target": "UsageRight"
+       },
+       {
+         "Id": "0a73cfac-4f88-11eb-ae35-ed470c456b69",
+         "ApiChange": "Resource",
+         "ChangedApiName": "user",
+         "ChangeType": "Addition",
+         "Description": "Added [usageRights](https://docs.microsoft.com/en-us/graph/api/resources/UsageRight?view=graph-rest-beta) navigational property on [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity.",
+         "Target": "user"
+       },
+       {
+         "Id": "0a73cfac-4f88-11eb-ae35-ed470c456b69",
+         "ApiChange": "Resource",
+         "ChangedApiName": "device",
+         "ChangeType": "Addition",
+         "Description": "Added [usageRights](https://docs.microsoft.com/en-us/graph/api/resources/UsageRight?view=graph-rest-beta) navigational property on [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) entity.",
+         "Target": "device"
+       },
+       {
+         "Id": "0a763395-4f88-11eb-ae35-ed470c456b69",
+         "ApiChange": "Enum type",
+         "ChangedApiName": "usageRightState",
+         "ChangeType": "Addition",
+         "Description": "Added the **usageRightState** enumeration type.",
+         "Target": "usageRightState"
+       }
+      ],
+      "Id": "0a717548-4f88-11eb-ae35-ed470c456b69",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-05T18:58:47.428Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "168232ce-84de-4160-a457-fa68dd2c35fc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftAuthenticatorAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftAuthenticatorAuthenticationMethodConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-beta) resource and associated methods.",
+          "Target": "microsoftauthenticatorauthenticationmethodconfiguration"
+        },
+        {
+          "Id": "a11a69cf-1424-41a2-87a7-7dde63072a76",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",
+          "ChangeType": "Change",
+          "Description": "Deprecated the [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) resource and associated methods. Please use the new [microsoftAuthenticatorAuthenticationMethodConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-beta) resource",
+          "Target": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration"
+        },
         {
           "Id": "78f63c95-8c9e-4438-ad45-63f6174a4e33",
           "ApiChange": "Resource",
@@ -24,7 +81,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationMethod",
           "ChangeType": "Change",
-          "Description": "Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
+          "Description": "Updated authentication method permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
           "Target": "authenticationMethod"
         },
         {
@@ -32,7 +89,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "passwordAuthenticationMethod",
           "ChangeType": "Change",
-          "Description": "Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
+          "Description": "Updated password authentication method permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
           "Target": "passwordAuthenticationMethod"
         },
         {
@@ -40,7 +97,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "phoneAuthenticationMethod",
           "ChangeType": "Change",
-          "Description": "Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
+          "Description": "Updated phone authentication method permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
           "Target": "phoneAuthenticationMethod"
         },
         {
@@ -48,7 +105,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "emailAuthenticationMethod",
           "ChangeType": "Change",
-          "Description": "Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
+          "Description": "Updated email authentication method permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
           "Target": "emailAuthenticationMethod"
         },
         {
@@ -56,7 +113,7 @@
           "ApiChange": "passwordlessMicrosoftAuthenticatorAuthenticationMethod",
           "ChangedApiName": "passwordlessMicrosoftAuthenticatorAuthenticationMethod",
           "ChangeType": "Change",
-          "Description": "Updated permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
+          "Description": "Updated passwordless Microsoft Authenticator authentication method permissions to reflect the ability of users to call the APIs on themselves and for admins to use app-only permissions on all [authentication methods](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta).",
           "Target": "passwordlessMicrosoftAuthenticatorAuthenticationMethod"
         }
       ],
@@ -271,7 +328,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-12-09T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
   {
       "ChangeList": [
@@ -441,7 +498,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-12-17T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -701,7 +758,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-10-15T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -795,7 +852,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2020-09-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Directory management"
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -829,7 +886,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-09-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -939,7 +996,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-08-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -1129,7 +1186,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -1171,7 +1228,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2020-07-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -1837,7 +1894,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -2227,7 +2284,7 @@
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -2591,7 +2648,7 @@
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -3089,7 +3146,7 @@
       "Version": "beta",
       "CreatedDateTime": "2019-05-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -3217,7 +3274,7 @@
       "Version": "beta",
       "CreatedDateTime": "2019-03-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -3421,7 +3478,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2018-12-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -3515,7 +3572,7 @@
       "Version": "beta",
       "CreatedDateTime": "2018-12-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -3533,7 +3590,7 @@
       "Version": "beta",
       "CreatedDateTime": "2018-11-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -3693,7 +3750,7 @@
       "Version": "beta",
       "CreatedDateTime": "2018-10-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -3727,7 +3784,7 @@
       "Version": "beta",
       "CreatedDateTime": "2018-10-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -3935,7 +3992,7 @@
       "Version": "beta",
       "CreatedDateTime": "2018-06-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -4209,7 +4266,7 @@
       "Version": "beta",
       "CreatedDateTime": "2018-03-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -4287,7 +4344,7 @@
       "Version": "beta",
       "CreatedDateTime": "2018-03-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -4487,7 +4544,7 @@
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Directory Management"
+      "SubArea": "Directory Management"
     },
     {
       "ChangeList": [
@@ -4567,7 +4624,7 @@
       "Version": "beta",
       "CreatedDateTime": "2017-04-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Directory Management"
+      "SubArea": "Directory Management"
     },
     {
       "ChangeList": [
@@ -4731,7 +4788,7 @@
       "Version": "beta",
       "CreatedDateTime": "2016-10-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -4799,7 +4856,7 @@
       "Version": "beta",
       "CreatedDateTime": "2016-09-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -4817,7 +4874,7 @@
       "Version": "beta",
       "CreatedDateTime": "2016-09-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -4895,7 +4952,7 @@
       "Version": "beta",
       "CreatedDateTime": "2016-08-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -4913,7 +4970,7 @@
       "Version": "beta",
       "CreatedDateTime": "2016-07-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Directory Management"
+      "SubArea": "Directory Management"
     },
     {
       "ChangeList": [
@@ -4931,7 +4988,7 @@
       "Version": "beta",
       "CreatedDateTime": "2016-06-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [

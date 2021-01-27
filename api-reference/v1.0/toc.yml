@@ -68,6 +68,12 @@ items:
         href: /graph/extensibility-open-users?context=graph/api/1.0
       - name: Use schema extensions (example)
         href: /graph/extensibility-schema-groups?context=graph/api/1.0
+    - name: Use Graph Explorer
+      items:
+      - name: Get started
+        href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/1.0
+      - name: Work with Graph Explorer
+        href: /graph/graph-explorer/graph-explorer-features?context=graph/api/1.0
     - name: Use Postman
       href: /graph/use-postman?context=graph/api/1.0
   - name: Migrate
@@ -181,7 +187,7 @@ items:
     - name: Known issues
       href: /graph/known-issues?context=graph/api/1.0
     - name: Changelog
-      href: /graph/changelog?context=graph/api/1.0
+      href: https://developer.microsoft.com/graph/changelog
     - name: Errors
       href: /graph/errors?context=graph/api/1.0
   - name: v1.0 reference
@@ -466,8 +472,6 @@ items:
           href: api/group-checkmemberobjects.md 
         - name: Get delta
           href: api/group-delta.md
-        - name: Get endpoint
-          href: api/endpoint-get.md
         - name: Get member groups
           href: api/group-getmembergroups.md
         - name: Get member objects
@@ -492,8 +496,6 @@ items:
             href: api/groupsettingtemplate-list.md
           - name: Get group setting template
             href: api/groupsettingtemplate-get.md
-        - name: List endpoints
-          href: api/group-list-endpoints.md
         - name: List lifecycle policies
           href: api/group-list-grouplifecyclepolicies.md
         - name: List member of

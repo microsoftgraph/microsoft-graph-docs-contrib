@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a subscription."
 localization_priority: Normal
 author: "davidmu1"
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "change-notifications"
 ---
 
 # Get subscription
@@ -35,6 +35,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[list](../resources/list.md) | Sites.ReadWrite.All | Not supported | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[presence](../resources/presence.md) | Presence.Read.All | Not supported | Not supported |
+|[printer](../resources/printer.md) | Not supported | Not supported | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Not supported | Not supported | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
@@ -50,6 +51,7 @@ Depending on the resource and the permission type (delegated or application) req
 
 > **Note:** `/teams/getAllMessages` and `/chats/getAllMessages` are available to users that have the 
 [required licenses](https://aka.ms/teams-changenotification-licenses).
+In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
 
 ### driveItem
 
