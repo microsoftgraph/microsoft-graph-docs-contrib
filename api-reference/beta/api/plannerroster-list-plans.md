@@ -83,11 +83,11 @@ Content-Type: application/json
       },
       "createdDateTime": "String (timestamp)",
       "title": "String",
-      "contexts": {
-        "@odata.type": "microsoft.graph.plannerPlanContextCollection"
-      },
       "container": {
-        "@odata.type": "microsoft.graph.plannerPlanContainer"
+        "@odata.type": "microsoft.graph.plannerPlanContainer",
+        "url": "https://graph.microsoft.com/beta/planner/rosters/{plannerRosterId}",
+        "containerId": "{plannerRosterId}",
+        "type": "roster"
       }
     }
   ]
