@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# accessPackageAssignmentRequest: FilterByCurrentUser
+# accessPackage: FilterByCurrentUser
 Namespace: microsoft.graph
 
 In [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackage](../resources/accesspackage.md) objects filtered on the signed-in user.
