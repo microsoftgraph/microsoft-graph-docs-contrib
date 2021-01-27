@@ -1,5 +1,23 @@
 {
-  "changelog": [   
+  "changelog": [  
+    {
+      "ChangeList": [
+        {
+          "Id": "118e092d-5c9b-4d50-928f-12aaa33abaf6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Printer",
+          "ChangeType": "Change",
+          "Description": "Update application permission for Printer resource.",
+          "Target": "printer"
+        }
+      ],
+      "Id": "118e092d-5c9b-4d50-928f-12aaa33abaf6",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-01-27T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": "Cloud printing"
+    }, 
     {
       "ChangeList": [
         {
