@@ -94,6 +94,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "customKeyIdentifier": "AHfJDhRzRVvlSRk6fPe6V8tEZMpGrhfeL586QUpD94U=",
     "displayName": "customDisplayName",
@@ -117,6 +118,6 @@ Content-Type: application/json
   "suppressions": [
     "Error: serviceprincipal_selfsignedcertificate:\r\n      Resource type was null or missing, so we assume there is no response to validate."
     ]
-}-->
+} -->
 
 
