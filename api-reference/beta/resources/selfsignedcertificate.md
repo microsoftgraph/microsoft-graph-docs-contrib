@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 author: "luleon"
 ---
 
-# keyCredential resource type
+# selfSignedCertificate resource type
 
 Namespace: microsoft.graph
 

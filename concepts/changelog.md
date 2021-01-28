@@ -11,6 +11,15 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## February 2021
+
+### Identity and access
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+Addition | beta | Added [selfSignedCertificate](/graph/api/resources/selfsignedcertificate?view=graph-rest-beta) resource type.
+Addition | beta | Added the [addTokenSigningCertificate](/graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-beta) method to the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta).
+
+
 ## January 2021
 
 ### Applications
