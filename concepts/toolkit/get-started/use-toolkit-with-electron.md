@@ -1,0 +1,230 @@
+---
+title: "Use the Microsoft Graph Toolkit with Electron"
+description: "Get started using the Microsoft Graph Toolkit in an Electron application."
+localization_priority: Normal
+author: amrutha95
+---
+
+# Use the Microsoft Graph Toolkit with Electron
+
+Microsoft Graph Toolkit is a set of web components that simplify connecting to Microsoft Graph and allow you to focus on your application instead. Microsoft Graph Toolkit is available as a generic set of web components distributed through the `@microsoft/mgt` npm package.
+This article describes the step-by-step process of using the Microsoft Graph Toolkit to create an Electron app and connect it to Microsoft 365. After completing the steps, you'll have a React app that shows the upcoming appointments of the currently signed in user from Microsoft 365.
+
+## Create an Electron app 
+Create a new Electron app by cloning this git repository ([electron-quick-start-typescript](https://github.com/electron/electron-quick-start-typescript)). This will create a new Electron app using TypeScript, which will help you write more robust code and avoid runtime errors.
+
+```cmd
+git clone https://github.com/electron/electron-quick-start-typescript
+```
+
+Change the working directory to the newly created app.
+
+```cmd
+cd electron-quick-start-typescript
+```
+
+Install the 'mgt-components' package that contains all the Microsoft Graph connected web components.
+
+```cmd
+npm i @microsoft/mgt-components
+```
+
+Install the `mgt-electron-provider` and `mgt-element` npm packages as well. These will allow you to provide authentication for your app using MSAL, and further be able to use the MGT components.
+
+```cmd
+npm i @microsoft/mgt-element @microsoft/mgt-electron-provider
+```
+
+Confirm that you can run the app.
+
+```cmd
+npm start
+```
+
+## Creating an app/client ID
+
+### Add new application registration in Azure Active Directory to get a Client ID
+
+To create an application in Azure Active Directory, you need to add a new application registration, and then configure an app name and Redirect URI.
+
+To create the app in Azure Active Directory:
+
+1. Go to the Azure portal at https://portal.azure.com.
+1. From the menu, select **Azure Active Directory**.
+1. From the Azure Active Directory menu, select **App registrations**.
+1. From the top menu, select the **New registration** button.
+1. Enter the name for your app; for example, `My Electron-App`.
+1. For the type of [supported account types](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app), select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
+1. In the **Redirect URI** field, in the dropdown, select **Public client/native (mobile & desktop)**, and in the URL field, enter `msal://redirect`.
+1. Confirm changes by selecting the **Register** button.
+1. Go to your application registration.
+1. Verify that you are on the **Overview** page.
+1. From the **Essentials** section, copy the value of the **Application (client) ID** property.
+
+## Configure the Microsoft Graph Toolkit authentication provider
+
+### Initializing ElectronProvider in your renderer process (renderer.ts, Front end)
+
+The ElectronProvider is responsible for communicating with ElectronAuthenticator (in the main process) to request access tokens and receive information regarding logged in state that are required for the mgt components to work. 
+
+ ```ts
+    import {Providers} from '@microsoft/mgt-element';
+    import {ElectronProvider} from '@microsoft/mgt-electron-provider/dist/es6/ElectronProvider';
+
+    // initialize the auth provider globally
+    Providers.globalProvider = new ElectronProvider();
+ ```
+
+### Initializing ElectronAuthenticator in your main process (main.ts, Back end)
+
+The ElectronAuthenticator is responsible for setting up the configuration variables for MSAL authentication, acquiring access tokens and communicating with ElectronProvider.
+Initialize the ElectronAuthenticator in the main process and set up the configuration variables such as client-id.
+
+```ts
+    import { ElectronAuthenticator } from '@microsoft/mgt-electron-provider/dist/es6/ElectronAuthenticator';
+
+    const authProvider = new ElectronAuthenticator({
+      clientId: '[client-id]]',
+      authority: '[authority-url]',
+      mainWindow: mainWindow 
+      scopes: ['User.Read'], 
+    });
+```
+
+### Set nodeIntegration to true
+ 
+In main.ts where the new instance of BrowserWindow is created, make sure that you set `nodeIntegration` to `true` under webPreferences. If you skip this step, you may run into a ```Uncaught ReferenceError: require is not defined``` error.
+
+```ts
+    const mainWindow = new BrowserWindow({
+    height: 600,
+    webPreferences: {
+      preload: path.join(__dirname, 'preload.js'),
+      nodeIntegration: true
+    },
+    width: 800
+  });
+ ```
+ 
+ ### Add MGT components to your HTML page
+ 
+ Here is an example index.html:
+ 
+ ```html
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset="UTF-8" />
+          <title>Sample Electron-MGT App</title>
+        </head>
+        <body>
+          <mgt-login></mgt-login>
+          <mgt-person person-query="me" view="twoLines" person-card="hover" show-presence></mgt-person>
+          <mgt-people-picker></mgt-people-picker>
+          <mgt-teams-channel-picker></mgt-teams-channel-picker>
+          <mgt-tasks data-source="todo"></mgt-tasks>
+          <mgt-agenda group-by-day></mgt-agenda>
+          <mgt-people show-presence></mgt-people>
+          <mgt-todo></mgt-todo>
+          <script type="module" src="./dist/renderer.js"></script>
+        </body>
+      </html>
+
+ ```
+ 
+ 
+ ### Bundle your app using webpack
+ 
+ We recommend this step to avoid running into errors by bundling all the modular dependencies in this project.
+ 
+ #### Install webpack
+ 
+ ```cmd 
+    npm install webpack webpack-cli ts-loader --save-dev
+ ```
+ 
+ Create a webpack.config.js file in the root folder of your project.
+ 
+ #### webpack.config.js
+ ```js
+    const path = require('path');
+module.exports = [
+  {
+    mode: 'development',
+    entry: './src/renderer.ts',
+    target: 'electron-renderer',
+    module: {
+      rules: [
+        {
+          test: /\.ts$/,
+          include: [/src/],
+          use: [{ loader: 'ts-loader' }]
+        }
+      ]
+    },
+    output: {
+      path: __dirname + '/dist',
+      filename: 'renderer.js'
+    },
+    resolve: {
+      extensions: ['.ts', '.js'],
+      modules: ['node_modules', path.resolve(__dirname + 'src')]
+    }
+  },
+  {
+    mode: 'development',
+    entry: './src/main.ts',
+    target: 'electron-main',
+    module: {
+      rules: [
+        {
+          test: /\.ts$/,
+          include: [/src/],
+          use: [{ loader: 'ts-loader' }]
+        }
+      ]
+    },
+    output: {
+      path: __dirname + '/dist',
+      filename: 'main.js'
+    },
+    resolve: {
+      extensions: ['.ts', '.js'],
+      modules: ['node_modules', path.resolve(__dirname + 'src')]
+    }
+  }
+];
+
+ ```
+ 
+ As you can see, the front end (renderer process) and the back-end (main process), are bundled separately. This is because in Electron, the renderer process runs in the browser context and the main process runs in the node context.
+ 
+ #### Add the webpacking script in ```package.json```
+ 
+ Add the following under ```scripts``` in your ```package.json```
+ ```json
+   "scripts": {
+      "webpack": "webpack",
+      "start": "npm run webpack && electron dist/main.js"
+    }
+                
+ ```
+ 
+ #### Run your app
+ 
+```cmd
+npm start
+```
+
+### [Optional] Add token caching capabilities to your app and enable silent log-ins.
+
+If you would like to enable persistent caching of access tokens to disk, you can install a plugin from [msal-node-extensions](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions).
+Follow the sample [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/extensions/samples/msal-node-extensions/index.js) to learn more about how this plugin can work in your app.
+
+
+
+
+
+
+
+
