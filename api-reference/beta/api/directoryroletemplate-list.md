@@ -3,7 +3,7 @@ title: "List directoryRoleTemplates"
 description: "Retrieve a list of directoryroletemplate objects."
 author: "abhijeetsinha"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

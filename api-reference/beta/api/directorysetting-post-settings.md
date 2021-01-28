@@ -3,7 +3,7 @@ title: "Create a directory setting"
 description: "Use this API to create a new setting, based on the templates available in directorySettingTemplates."
 localization_priority: Normal
 author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
