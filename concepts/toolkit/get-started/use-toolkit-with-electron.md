@@ -97,12 +97,12 @@ In main.ts where the new instance of BrowserWindow is created, make sure that yo
 
 ```ts
 const mainWindow = new BrowserWindow({
-height: 600,
-webPreferences: {
-  preload: path.join(__dirname, 'preload.js'),
-  nodeIntegration: true
-},
-width: 800
+  height: 600,
+  webPreferences: {
+    preload: path.join(__dirname, 'preload.js'),
+    nodeIntegration: true
+  },
+  width: 800
 });
 ```
  
@@ -216,7 +216,7 @@ width: 800
 npm start
 ```
 
-### [Optional] Add token caching capabilities to your app and enable silent log-ins.
+### [Advanced] Add token caching capabilities to your app and enable silent log-ins.
 
 If you would like to enable persistent caching of access tokens to disk, you can install a node plugin.
 ```cmd 
@@ -230,11 +230,22 @@ You can then pass the cachePlugin during the initialization of the ElectronAuthe
 ```ts
 import { ElectronAuthenticator } from '@microsoft/mgt-electron-provider/dist/es6/ElectronAuthenticator';
 
+function createPersistence() {
+//Implement this function to enable encrypted caching for all supported platform. Only Windows is shown here.
+ if (process.platform === 'win32') {
+    return FilePersistenceWithDataProtection.create(cachePath, DataProtectionScope.CurrentUser);
+  }
+}
+
+createAuthenticator() {
+const filePersistence = await createPersistence();
+
 const authProvider = new ElectronAuthenticator({
   ...
   scopes: ['User.Read'], 
   cachePlugin: mycachePlugin
 });
+}
 ```
 
 
