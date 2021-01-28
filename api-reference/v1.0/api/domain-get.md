@@ -3,7 +3,7 @@ title: "Get domain"
 description: "Retrieve the properties and relationships of domain object."
 author: "adimitui"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

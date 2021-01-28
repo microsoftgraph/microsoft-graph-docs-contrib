@@ -3,7 +3,7 @@ title: "device: checkMemberObjects"
 description: "Check for membership in a list of groups or directory roles for the specified device object."
 localization_priority: Normal
 author: "spunukol"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
 

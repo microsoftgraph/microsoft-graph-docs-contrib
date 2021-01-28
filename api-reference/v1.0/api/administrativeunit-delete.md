@@ -3,7 +3,7 @@ title: "Delete administrativeUnit"
 description: "Delete an administrativeUnit."
 author: "anandyadavMSFT"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
