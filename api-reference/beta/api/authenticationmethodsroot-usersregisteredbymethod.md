@@ -10,6 +10,8 @@ doc_type: apiPageType
 # authenticationMethodsRoot: usersRegisteredByMethod
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get the number of users registered for each authentication method.
 
 ## Permissions
@@ -40,7 +42,6 @@ GET /reports/authenticationMethods/usersRegisteredByMethod
 ```
 
 ## Function parameters
-In the request URL, provide the following query parameters with values.
 The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|

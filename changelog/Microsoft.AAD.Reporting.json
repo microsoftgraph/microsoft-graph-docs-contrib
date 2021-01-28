@@ -7,7 +7,7 @@
                "ApiChange":"Relationship",
                "ChangedApiName":"authenticationMethods",
                "ChangeType":"Addition",
-               "Description":"Added the **authenticationMethods** relationship to [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+               "Description":"Added the **authenticationMethods** relationship to [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
                "Target":"reportRoot"
             },
             {
@@ -15,7 +15,7 @@
                "ApiChange":"Resource",
                "ChangedApiName":"userRegistrationFeatureSummary",
                "ChangeType":"Addition",
-               "Description":"Added the [userRegistrationFeatureSummary](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationFeatureSummary?view=graph-rest-beta) resource type",
+               "Description":"Added the [userRegistrationFeatureSummary](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationFeatureSummary?view=graph-rest-beta) resource type.",
                "Target":"userRegistrationFeatureSummary"
             },
             {
@@ -23,7 +23,7 @@
                "ApiChange":"Resource",
                "ChangedApiName":"userRegistrationFeatureCount",
                "ChangeType":"Addition",
-               "Description":"Added the [userRegistrationFeatureCount](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationFeatureCount?view=graph-rest-beta) resource type",
+               "Description":"Added the [userRegistrationFeatureCount](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationFeatureCount?view=graph-rest-beta) resource type.",
                "Target":"userRegistrationFeatureCount"
             },
             {
@@ -31,7 +31,7 @@
                "ApiChange":"Resource",
                "ChangedApiName":"userRegistrationMethodSummary",
                "ChangeType":"Addition",
-               "Description":"Added the [userRegistrationMethodSummary](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationMethodSummary?view=graph-rest-beta) resource type",
+               "Description":"Added the [userRegistrationMethodSummary](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationMethodSummary?view=graph-rest-beta) resource type.",
                "Target":"userRegistrationMethodSummary"
             },
             {
@@ -39,7 +39,7 @@
                "ApiChange":"Resource",
                "ChangedApiName":"userRegistrationMethodCount",
                "ChangeType":"Addition",
-               "Description":"Added the [userRegistrationMethodCount](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationMethodCount?view=graph-rest-beta) resource type",
+               "Description":"Added the [userRegistrationMethodCount](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationMethodCount?view=graph-rest-beta) resource type.",
                "Target":"userRegistrationMethodCount"
             },
             {
@@ -47,7 +47,7 @@
                "ApiChange":"Resource",
                "ChangedApiName":"authenticationMethodsRoot",
                "ChangeType":"Addition",
-               "Description":"Added the [authenticationMethodsRoot](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource type",
+               "Description":"Added the [authenticationMethodsRoot](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource type.",
                "Target":"authenticationMethodsRoot"
             },
             {
@@ -55,7 +55,7 @@
                "ApiChange":"Enum type",
                "ChangedApiName":"authenticationMethodFeature",
                "ChangeType":"Addition",
-               "Description":"Added the **authenticationMethodFeature** enumeration type",
+               "Description":"Added the **authenticationMethodFeature** enumeration type.",
                "Target":"authenticationMethodFeature"
             },
             {
@@ -63,7 +63,7 @@
                "ApiChange":"Enum type",
                "ChangedApiName":"includedUserTypes",
                "ChangeType":"Addition",
-               "Description":"Added the **includedUserTypes** enumeration type",
+               "Description":"Added the **includedUserTypes** enumeration type.",
                "Target":"includedUserTypes"
             },
             {
@@ -71,7 +71,7 @@
                "ApiChange":"Enum type",
                "ChangedApiName":"includedUserRoles",
                "ChangeType":"Addition",
-               "Description":"Added the **includedUserRoles** enumeration type",
+               "Description":"Added the **includedUserRoles** enumeration type.",
                "Target":"includedUserRoles"
             },
             {
@@ -79,7 +79,7 @@
                "ApiChange":"Method",
                "ChangedApiName":"usersRegisteredByFeature",
                "ChangeType":"Addition",
-               "Description":"Added the [usersRegisteredByFeature](https://docs.microsoft.com/en-us/graph/api/authenticationMethodsRoot-usersRegisteredByFeature?view=graph-rest-beta) method to the [authenticationMethodsRoot](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource",
+               "Description":"Added the [usersRegisteredByFeature](https://docs.microsoft.com/en-us/graph/api/authenticationMethodsRoot-usersRegisteredByFeature?view=graph-rest-beta) method to the [authenticationMethodsRoot](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource.",
                "Target":"authenticationMethodsRoot"
             },
             {
@@ -87,7 +87,7 @@
                "ApiChange":"Method",
                "ChangedApiName":"usersRegisteredByMethod",
                "ChangeType":"Addition",
-               "Description":"Added the [usersRegisteredByMethod](https://docs.microsoft.com/en-us/graph/api/authenticationMethodsRoot-usersRegisteredByMethod?view=graph-rest-beta) method to the [authenticationMethodsRoot](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource",
+               "Description":"Added the [usersRegisteredByMethod](https://docs.microsoft.com/en-us/graph/api/authenticationMethodsRoot-usersRegisteredByMethod?view=graph-rest-beta) method to the [authenticationMethodsRoot](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource.",
                "Target":"authenticationMethodsRoot"
             },
             {
@@ -95,7 +95,7 @@
                "ApiChange":"Member",
                "ChangedApiName":"warning",
                "ChangeType":"Deletion",
-               "Description":"Removed the `warning` member from the **provisioningResult** enumeration",
+               "Description":"Removed the `warning` member from the **provisioningResult** enumeration.",
                "Target":"provisioningResult"
             },
             {
@@ -103,7 +103,7 @@
                "ApiChange":"Member",
                "ChangedApiName":"unknownFutureValue",
                "ChangeType":"Deletion",
-               "Description":"Removed the `unknownFutureValue` member from the **provisioningResult** enumeration",
+               "Description":"Removed the `unknownFutureValue` member from the **provisioningResult** enumeration.",
                "Target":"provisioningResult"
             }
          ],
@@ -111,7 +111,7 @@
          "Cloud":"prd",
          "Version":"beta",
          "CreatedDateTime":"2021-01-04T22:32:47.956Z",
-         "WorkloadArea":"Reports and audit",
+         "WorkloadArea":"Reports",
          "SubArea":"Identity and access reports"
       },
       {

@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Number of users registered or capable for Multi-Factor Authentication, Self-Service Password Reset and Passwordless Authentication.
+Represents the number of users registered or capable for Multi-Factor Authentication, Self-Service Password Reset and Passwordless Authentication.
 
 ## Properties
 |Property|Type|Description|
