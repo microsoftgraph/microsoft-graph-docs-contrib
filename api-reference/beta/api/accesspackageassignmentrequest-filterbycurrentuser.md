@@ -31,12 +31,12 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/FilterByCurrentUser
 ```
 
-## Function parameters
-The following table shows the parameters that can be used with this function.
+## Query parameters
+The following table shows the parameters that can be used with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|String|The list of options that can be used to filter on current user. Possible options are: `target`, `createdBy` and `approver`. |
+|on|String|The list of options that can be used to filter on current user. Possible options are: `target`, `createdBy` and `approver`. Additional options may be available in the future.|
 
 - `target` is used to get the `accessPackageAssignmentRequest` objects where the signed-in user is the target. The resulting list includes all the assignment requests, current and expired, that were requested by the called or for the caller, across all catalogs and access packages.
 
@@ -54,7 +54,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection in the response body.
+If successful, this method returns a `200 OK` response code and a [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection in the response body.
 
 ## Examples
 

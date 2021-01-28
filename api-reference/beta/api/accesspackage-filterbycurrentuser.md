@@ -31,8 +31,8 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identityGovernance/entitlementManagement/accessPackages/FilterByCurrentUser
 ```
 
-## Function parameters
-The following table shows the parameters that can be used with this function.
+## Query parameters
+The following table shows the parameters that can be used with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [accessPackage](../resources/accesspackage.md) collection in the response body.
+If successful, this method returns a `200 OK` response code and a [accessPackage](../resources/accesspackage.md) collection in the response body.
 
 ## Examples
 
