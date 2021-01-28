@@ -67,12 +67,12 @@ To create the app in Azure Active Directory:
 
 The ElectronProvider is responsible for communicating with ElectronAuthenticator (in the main process) to request access tokens and receive information regarding logged in state that are required for the mgt components to work. 
 
- ```ts
-    import {Providers} from '@microsoft/mgt-element';
-    import {ElectronProvider} from '@microsoft/mgt-electron-provider/dist/es6/ElectronProvider';
+```ts
+import {Providers} from '@microsoft/mgt-element';
+import {ElectronProvider} from '@microsoft/mgt-electron-provider/dist/es6/ElectronProvider';
 
-    // initialize the auth provider globally
-    Providers.globalProvider = new ElectronProvider();
+ // initialize the auth provider globally
+ Providers.globalProvider = new ElectronProvider();
  ```
 
 ### Initializing ElectronAuthenticator in your main process (main.ts, Back end)
@@ -81,14 +81,14 @@ The ElectronAuthenticator is responsible for setting up the configuration variab
 Initialize the ElectronAuthenticator in the main process and set up the configuration variables such as client-id.
 
 ```ts
-    import { ElectronAuthenticator } from '@microsoft/mgt-electron-provider/dist/es6/ElectronAuthenticator';
+import { ElectronAuthenticator } from '@microsoft/mgt-electron-provider/dist/es6/ElectronAuthenticator';
 
-    const authProvider = new ElectronAuthenticator({
-      clientId: '[client-id]]',
-      authority: '[authority-url]',
-      mainWindow: mainWindow 
-      scopes: ['User.Read'], 
-    });
+const authProvider = new ElectronAuthenticator({
+  clientId: '[client-id]]',
+  authority: '[authority-url]',
+  mainWindow: mainWindow 
+  scopes: ['User.Read'], 
+ });
 ```
 
 ### Set nodeIntegration to true
@@ -96,39 +96,39 @@ Initialize the ElectronAuthenticator in the main process and set up the configur
 In main.ts where the new instance of BrowserWindow is created, make sure that you set `nodeIntegration` to `true` under webPreferences. If you skip this step, you may run into a ```Uncaught ReferenceError: require is not defined``` error.
 
 ```ts
-    const mainWindow = new BrowserWindow({
-    height: 600,
-    webPreferences: {
-      preload: path.join(__dirname, 'preload.js'),
-      nodeIntegration: true
-    },
-    width: 800
-  });
- ```
+const mainWindow = new BrowserWindow({
+height: 600,
+webPreferences: {
+  preload: path.join(__dirname, 'preload.js'),
+  nodeIntegration: true
+},
+width: 800
+});
+```
  
  ### Add MGT components to your HTML page
  
  Here is an example index.html:
  
  ```html
-      <!DOCTYPE html>
-      <html>
-        <head>
-          <meta charset="UTF-8" />
-          <title>Sample Electron-MGT App</title>
-        </head>
-        <body>
-          <mgt-login></mgt-login>
-          <mgt-person person-query="me" view="twoLines" person-card="hover" show-presence></mgt-person>
-          <mgt-people-picker></mgt-people-picker>
-          <mgt-teams-channel-picker></mgt-teams-channel-picker>
-          <mgt-tasks data-source="todo"></mgt-tasks>
-          <mgt-agenda group-by-day></mgt-agenda>
-          <mgt-people show-presence></mgt-people>
-          <mgt-todo></mgt-todo>
-          <script type="module" src="./dist/renderer.js"></script>
-        </body>
-      </html>
+ <!DOCTYPE html>
+ <html>
+   <head>
+     <meta charset="UTF-8" />
+     <title>Sample Electron-MGT App</title>
+   </head>
+   <body>
+     <mgt-login></mgt-login>
+     <mgt-person person-query="me" view="twoLines" person-card="hover" show-presence></mgt-person>
+     <mgt-people-picker></mgt-people-picker>
+     <mgt-teams-channel-picker></mgt-teams-channel-picker>
+     <mgt-tasks data-source="todo"></mgt-tasks>
+     <mgt-agenda group-by-day></mgt-agenda>
+     <mgt-people show-presence></mgt-people>
+     <mgt-todo></mgt-todo>
+     <script type="module" src="./dist/renderer.js"></script>
+   </body>
+ </html>
 
  ```
  
@@ -140,15 +140,15 @@ In main.ts where the new instance of BrowserWindow is created, make sure that yo
  #### Install webpack
  
  ```cmd 
-    npm install webpack webpack-cli ts-loader --save-dev
+ npm install webpack webpack-cli ts-loader --save-dev
  ```
  
  Create a webpack.config.js file in the root folder of your project.
  
  #### webpack.config.js
  ```js
-    const path = require('path');
-module.exports = [
+ const path = require('path');
+ module.exports = [
   {
     mode: 'development',
     entry: './src/renderer.ts',
@@ -193,7 +193,7 @@ module.exports = [
       modules: ['node_modules', path.resolve(__dirname + 'src')]
     }
   }
-];
+ ];
 
  ```
  
@@ -203,10 +203,10 @@ module.exports = [
  
  Add the following under ```scripts``` in your ```package.json```
  ```json
-   "scripts": {
-      "webpack": "webpack",
-      "start": "npm run webpack && electron dist/main.js"
-    }
+"scripts": {
+   "webpack": "webpack",
+   "start": "npm run webpack && electron dist/main.js"
+ }
                 
  ```
  
@@ -220,7 +220,7 @@ npm start
 
 If you would like to enable persistent caching of access tokens to disk, you can install a node plugin.
 ```cmd 
-     npm install @azure/msal-node-extensions --save-dev
+npm install @azure/msal-node-extensions --save-dev
 ```
 To learn more, visit [msal-node-extensions](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions).
 Follow the sample [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/extensions/samples/msal-node-extensions/index.js) to learn more about how this plugin can work in your app.
@@ -228,13 +228,13 @@ Follow the sample [here](https://github.com/AzureAD/microsoft-authentication-lib
 You can then pass the cachePlugin during the initialization of the ElectronAuthenticator object:
 
 ```ts
-    import { ElectronAuthenticator } from '@microsoft/mgt-electron-provider/dist/es6/ElectronAuthenticator';
+import { ElectronAuthenticator } from '@microsoft/mgt-electron-provider/dist/es6/ElectronAuthenticator';
 
-    const authProvider = new ElectronAuthenticator({
-      ...
-      scopes: ['User.Read'], 
-      cachePlugin: mycachePlugin
-    });
+const authProvider = new ElectronAuthenticator({
+  ...
+  scopes: ['User.Read'], 
+  cachePlugin: mycachePlugin
+});
 ```
 
 
