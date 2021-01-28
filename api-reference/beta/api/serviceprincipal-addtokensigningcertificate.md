@@ -96,10 +96,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "customKeyIdentifier": "AHfJDhRzRVvlSRk6fPe6V8t...",
+    "customKeyIdentifier": null,
     "displayName": "customDisplayName",
     "endDateTime": "2023-06-29T00:00:00Z",
-    "key": "V8tEZMpGrhfeL58...",
+    "key": null,
     "keyId": "b859fc29-969f-48b2-9a27-8399b69f441e",
     "startDateTime": "2020-06-29T00:00:00Z",
     "type": "AsymmetricX509Cert",
