@@ -94,9 +94,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-
-
-```json
 {
     "customKeyIdentifier": "AHfJDhRzRVvlSRk6fPe6V8tEZMpGrhfeL586QUpD94U=",
     "displayName": "customDisplayName",
