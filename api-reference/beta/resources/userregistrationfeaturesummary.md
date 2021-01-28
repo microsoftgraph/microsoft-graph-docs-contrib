@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents the current state of how many users in your organization are capable of multi-factor authentication, self-service password reset and passwordless authentication.
 
 ## Methods
