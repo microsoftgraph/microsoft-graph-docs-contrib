@@ -96,10 +96,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "customKeyIdentifier": "AHfJDhRzRVvlSRk6fPe6V8tEZMpGrhfeL586QUpD94U=",
+    "customKeyIdentifier": "AHfJDhRzRVvlSRk6fPe6V8t...",
     "displayName": "customDisplayName",
     "endDateTime": "2023-06-29T00:00:00Z",
-    "key": "V8tEZMpGrhfeL586QUpD94UAHfJDhRzRVvlSRk6fPe6V8tEZMpGrhfeL586QUpD94UV8tEZMpGrhfeL586QUpD94U=",
+    "key": "V8tEZMpGrhfeL58...",
     "keyId": "b859fc29-969f-48b2-9a27-8399b69f441e",
     "startDateTime": "2020-06-29T00:00:00Z",
     "type": "AsymmetricX509Cert",
