@@ -8,7 +8,7 @@ author: amrutha95
 # Use the Microsoft Graph Toolkit with Electron
 
 Microsoft Graph Toolkit is a set of web components that simplify connecting to Microsoft Graph and allow you to focus on your application instead. Microsoft Graph Toolkit is available as a generic set of web components distributed through the `@microsoft/mgt` npm package.
-This article describes the step-by-step process of using the Microsoft Graph Toolkit to create an Electron app and connect it to Microsoft 365. After completing the steps, you'll have a React app that shows the upcoming appointments of the currently signed in user from Microsoft 365.
+This article describes the step-by-step process of using the Microsoft Graph Toolkit to create an Electron app and connect it to Microsoft 365. After completing the steps, you'll have a Electron app that shows the upcoming appointments of the currently signed in user from Microsoft 365.
 
 ## Create an Electron app 
 Create a new Electron app by cloning this git repository ([electron-quick-start-typescript](https://github.com/electron/electron-quick-start-typescript)). This will create a new Electron app using TypeScript, which will help you write more robust code and avoid runtime errors.
@@ -218,12 +218,24 @@ npm start
 
 ### [Optional] Add token caching capabilities to your app and enable silent log-ins.
 
-If you would like to enable persistent caching of access tokens to disk, you can install a plugin from [msal-node-extensions](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions).
+If you would like to enable persistent caching of access tokens to disk, you can install a node plugin.
+```cmd 
+     npm install @azure/msal-node-extensions --save-dev
+```
+To learn more, visit [msal-node-extensions](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions).
 Follow the sample [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/extensions/samples/msal-node-extensions/index.js) to learn more about how this plugin can work in your app.
 
+You can then pass the cachePlugin during the initialization of the ElectronAuthenticator object:
 
+```ts
+    import { ElectronAuthenticator } from '@microsoft/mgt-electron-provider/dist/es6/ElectronAuthenticator';
 
-
+    const authProvider = new ElectronAuthenticator({
+      ...
+      scopes: ['User.Read'], 
+      cachePlugin: mycachePlugin
+    });
+```
 
 
 
