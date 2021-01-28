@@ -9413,6 +9413,8 @@ items:
           href: api/educationclass-list-assignments.md
         - name: Create assignment
           href: api/educationclass-post-assignments.md
+        - name: Get assignment settings
+          href: api/educationassignmentsettings-get.md
         - name: List categories
           href: api/educationclass-list-categories.md
         - name: Create category
@@ -9475,6 +9477,13 @@ items:
           href: api/educationassignment-put-rubric.md
         - name: Remove rubric from assignment
           href: api/educationassignment-delete-rubric.md
+      - name: Assignment settings
+        href: resources/educationassignmentsettings.md
+        items:
+        - name: Get assignment settings
+          href: api/educationassignmentsettings-get.md
+        - name: Update assignment settings
+          href: api/educationassignmentsettings-update.md
       - name: Category
         href: resources/educationcategory.md
         items:
