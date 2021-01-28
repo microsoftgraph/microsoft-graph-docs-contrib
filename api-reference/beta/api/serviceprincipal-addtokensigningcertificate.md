@@ -29,9 +29,9 @@ The endDateTime can be up to 3 years after the certificate is created.
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | None.  |
+|Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegated (personal Microsoft account) | None.    |
-|Application | None. |
+|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 
 ## HTTP request
@@ -60,10 +60,9 @@ If successful, this method returns a `200 OK` response code and a new [selfSigne
 
 ## Examples
 
-#### Request
+### Request
 
 The following is an example of the request.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -82,7 +81,7 @@ Content-type: application/json
 ```
 
 
-#### Response
+### Response
 
 The following is an example of the response.
 
