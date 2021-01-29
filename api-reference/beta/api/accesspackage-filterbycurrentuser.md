@@ -38,7 +38,7 @@ The following table shows the parameters that can be used with this method.
 |:---|:---|:---|
 |on|String|The list of options that can be used to filter on current user. Possible option is: `allowedRequestor`. Additional options may be available in the future.|
 
-- `allowedRequestor` is used to get the `accessPackage` objects for which the signed-in user is allowed to submit access requests. The resulting list includes all access packages, that can be requested by the caller across all catalogs.
+- `allowedRequestor` is used to get the `accessPackage` objects for which the signed-in user is allowed to submit access requests. The resulting list includes all access packages that can be requested by the caller across all catalogs.
 
 ## Request headers
 |Name|Description|
@@ -50,11 +50,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [accessPackage](../resources/accesspackage.md) collection in the response body.
+If successful, this method returns a `200 OK` response code and an [accessPackage](../resources/accesspackage.md) collection in the response body.
 
 ## Examples
 
-### Example: Get the access packages that can be requested by the signed-in user
+The following example gets the access packages that can be requested by the signed-in user.
 
 #### Request
 <!-- {
