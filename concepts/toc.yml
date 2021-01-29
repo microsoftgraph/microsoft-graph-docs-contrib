@@ -342,7 +342,7 @@ items:
                 href: search-concept-sort.md
               - name: Refine search results (preview)
                 href: search-concept-aggregation.md
-          - name: Index
+          - name: Index (preview)
             items:
               - name: Manage connections
                 href: search-index-manage-connections.md
