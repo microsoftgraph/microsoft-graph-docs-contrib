@@ -25,6 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.ReadWrite.All |
 
+Deleting users is only allowed on users who are non-administrators or assigned one of the following limited administrator roles: Directory Readers, Groups Administrator, Guest Inviter, Helpdesk Administrator, Message Center Reader, Password Administrator, Reports Reader, or User Administrator. For more details, see [Administrator role permissions in Azure AD](/azure/active-directory/roles/permissions-reference#available-roles).
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
