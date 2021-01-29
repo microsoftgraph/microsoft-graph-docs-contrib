@@ -66,8 +66,7 @@ This will send an email that includes a link to your profile photo.
 
 >- If you stop and rerun the sample from Visual Studio, you might need to explicitly sign out for the sample to work.
 >- If you get an exception that indicates that the User is not authenticated, you might need to repeat the [Add the Connected Service](#add-the-connected-service) step.
->- Make sure to sign-in using an account in the same domain as the one you selected in the Select Domain step of the wizard.
-    
+>- Make sure to sign in using an account in the same domain as the one you selected in the **Select Domain** step of the wizard.
 
 ## Explore the code
 
