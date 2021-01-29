@@ -3,7 +3,7 @@ title: "openIdConnectProvider resource type"
 description: "Represents OpenIDConnect identity providers in an Azure Active Directory B2C tenant."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 author: "namkedia"
 ---
 
