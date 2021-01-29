@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "1bf0cc62-5711-11eb-a8c7-1c1de43addf1",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "assignmentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignmentSettings** relationship to the [educationClass](https://docs.microsoft.com/en-us/graph/api/resources/educationClass?view=graph-rest-beta) resource.",
+          "Target": "educationClass"
+        },
+        {
+          "Id": "1bf33303-5711-11eb-a8c7-1c1de43addf1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationAssignmentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationAssignmentSettings](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignmentSettings?view=graph-rest-beta) resource type.",
+          "Target": "educationAssignmentSettings"
+        }
+      ],
+      "Id": "1bee68be-5711-11eb-a8c7-1c1de43addf1",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-25T09:07:35.960Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8c2766a4-3c0b-11eb-822d-0179b911e3f8",
           "ApiChange": "Property",
           "ChangedApiName": "notificationChannelUrl",
