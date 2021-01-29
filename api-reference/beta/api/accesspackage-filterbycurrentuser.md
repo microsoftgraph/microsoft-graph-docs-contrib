@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and an [accessPackag
 
 The following example gets the access packages that can be requested by the signed-in user.
 
-#### Request
+### Request
 <!-- {
   "blockType": "request",
   "name": "accesspackageassignmentrequest_filterbycurrentuser"
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 ```
 
 
-#### Response
+### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
