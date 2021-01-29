@@ -335,8 +335,8 @@
           "ApiChange": "Method",
           "ChangedApiName": "teamsappinstallation",
           "ChangeType": "Addition",
-          "Description": "Added the [Add app for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-add-installedapps?view=graph-rest-v1.0) method.",
-          "Target": "userteamwork-add-installedapps"
+          "Description": "Added the [Add app for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-post-installedapps?view=graph-rest-v1.0) method.",
+          "Target": "userteamwork-post-installedapps"
         },
         {
           "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
@@ -351,8 +351,8 @@
           "ApiChange": "Method",
           "ChangedApiName": "teamsappinstallation",
           "ChangeType": "Addition",
-          "Description": "Added the [Upgrade installed app for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-upgrade-installedapps?view=graph-rest-v1.0) method.",
-          "Target": "userteamwork-upgrade-installedapps"
+          "Description": "Added the [Upgrade installed app for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-teamsappinstallation-upgrade?view=graph-rest-v1.0) method.",
+          "Target": "userteamwork-teamsappinstallation-upgrade"
         },
         {
           "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
@@ -386,7 +386,7 @@
           "ChangedApiName": "chat-post-installedApps",
           "ChangeType": "Addition",
           "Description": "Added [install app in chat APIs](https://docs.microsoft.com/en-us/graph/api/chat-post-installedapps?view=graph-rest-beta).",
-          "Target": "chat-add-installedApps"
+          "Target": "chat-post-installedapps"
         },
         {
           "Id": "d8bd8f81-7086-40bf-aef9-a4424a42bee2",
@@ -407,10 +407,10 @@
         {
           "Id": "d8bd8f81-7086-40bf-aef9-a4424a42bee2",
           "ApiChange": "Method",
-          "ChangedApiName": "chat-upgrade-installedApps",
+          "ChangedApiName": "chat-teamsappinstallation-upgrade",
           "ChangeType": "Addition",
-          "Description": "Added [Upgrade an app in chat APIs](https://docs.microsoft.com/en-us/graph/api/chat-upgrade-installedapps?view=graph-rest-beta).",
-          "Target": "chat-upgrade-installedApps"
+          "Description": "Added [Upgrade an app in chat APIs](https://docs.microsoft.com/en-us/graph/api/chat-teamsappinstallation-upgrade?view=graph-rest-beta).",
+          "Target": "chat-teamsappinstallation-upgrade"
         },
         {
           "Id": "d8bd8f81-7086-40bf-aef9-a4424a42bee2",

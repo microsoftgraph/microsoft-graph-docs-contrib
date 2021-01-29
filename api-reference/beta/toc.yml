@@ -70,6 +70,12 @@ items:
         href: /graph/extensibility-open-users?context=graph/api/beta
       - name: Use schema extensions (example)
         href: /graph/extensibility-schema-groups?context=graph/api/beta
+    - name: Use Graph Explorer
+      items:
+      - name: Get started
+        href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/beta
+      - name: Work with Graph Explorer
+        href: /graph/graph-explorer/graph-explorer-features?context=graph/api/beta
     - name: Use Postman
       href: /graph/use-postman?context=graph/api/beta
   - name: Migrate
@@ -183,7 +189,7 @@ items:
     - name: Known issues
       href: /graph/known-issues?context=graph/api/beta
     - name: Changelog
-      href: /graph/changelog?context=graph/api/beta
+      href: https://developer.microsoft.com/graph/changelog
     - name: Errors
       href: /graph/errors?context=graph/api/beta
   - name: Beta reference
@@ -291,6 +297,8 @@ items:
           href: api/user-list-registereddevices.md
         - name: List scoped administrator memberships
           href: api/user-list-scopedrolememberof.md
+        - name: List user usage rights
+          href: api/user-list-usagerights.md
         - name: Reprocess license assignment
           href: api/user-reprocesslicenseassignment.md
         - name: Revoke sign-in session
@@ -1094,12 +1102,12 @@ items:
           href: api/event-get.md
         - name: Update event
           href: api/event-update.md
-        - name: Forward event
-          href: api/event-forward.md
         - name: Delete event
           href: api/event-delete.md
         - name: Get delta
           href: api/event-delta.md
+        - name: Forward event
+          href: api/event-forward.md
         - name: Cancel event
           href: api/event-cancel.md
         - name: Accept event
@@ -1422,7 +1430,7 @@ items:
           href: api/onlinemeeting-update.md
         - name: Delete
           href: api/onlinemeeting-delete.md
-      - name: Presence (preview)
+      - name: Presence
         href: resources/presence.md
         items:
         - name: Get presence
@@ -1466,7 +1474,7 @@ items:
             href: api/custodian-activate.md
           - name: Release
             href: api/custodian-release.md
-        - name: eDiscovery Review set
+        - name: eDiscovery review set
           href: resources/reviewset.md
           items:
           - name: List
@@ -1681,6 +1689,10 @@ items:
             href: api/printjob-update-configuration.md
           - name: Cancel
             href: api/printjob-cancel.md
+          - name: Abort
+            href: api/printjob-abort.md
+          - name: Redirect
+            href: api/printjob-redirect.md
         - name: Print operation
           href: resources/printoperation.md
           items:
@@ -9322,6 +9334,8 @@ items:
             href: api/cloudpconpremisesconnection-delete.md
           - name: Run health checks
             href: api/cloudpconpremisesconnection-runhealthcheck.md
+          - name: Update Active Directory domain password
+            href: api/cloudpconpremisesconnection-updateaddomainpassword.md
         - name: Cloud PC provisioning policy
           href: resources/cloudpcprovisioningpolicy.md
           items:
@@ -9399,6 +9413,8 @@ items:
           href: api/educationclass-list-assignments.md
         - name: Create assignment
           href: api/educationclass-post-assignments.md
+        - name: Get assignment settings
+          href: api/educationassignmentsettings-get.md
         - name: List categories
           href: api/educationclass-list-categories.md
         - name: Create category
@@ -9461,6 +9477,13 @@ items:
           href: api/educationassignment-put-rubric.md
         - name: Remove rubric from assignment
           href: api/educationassignment-delete-rubric.md
+      - name: Assignment settings
+        href: resources/educationassignmentsettings.md
+        items:
+        - name: Get assignment settings
+          href: api/educationassignmentsettings-get.md
+        - name: Update assignment settings
+          href: api/educationassignmentsettings-update.md
       - name: Category
         href: resources/educationcategory.md
         items:
@@ -10003,6 +10026,8 @@ items:
             href: api/device-list-memberof.md
           - name: List device transitive groups
             href: api/device-list-transitivememberof.md
+          - name: List device usage rights
+            href: api/device-list-usagerights.md
           - name: Check member objects
             href: api/device-checkmemberobjects.md
         - name: Directory object
@@ -10188,6 +10213,28 @@ items:
               href: api/unifiedroleassignmentmultiple-delete.md
       - name: Identity and sign-in
         items:
+        - name: Authentication events policy
+          items:
+          - name: Authentication events policy
+            href: resources/authenticationeventspolicy.md
+          - name: Sign-up-start event
+            items:
+            - name: Authentication listener
+              href: resources/authenticationlistener.md
+            - name: Invoke user flow listener type
+              href: resources/invokeuserflowlistener.md
+            - name: List listeners
+              href: api/authenticationeventspolicy-list-onsignupstart.md
+            - name: Create listener
+              href: api/authenticationeventspolicy-post-onsignupstart.md            
+            - name: Get listener
+              href: api/authenticationlistener-get.md
+            - name: Update listener
+              href: api/authenticationlistener-update.md
+            - name: Put listener
+              href: api/authenticationlistener-put.md
+            - name: Delete listener
+              href: api/authenticationlistener-delete.md
         - name: Authentication flows policy
           items:
           - name: Authentication flows policy
@@ -10209,7 +10256,16 @@ items:
               href: api/fido2authenticationmethod-get.md
             - name: Delete
               href: api/fido2authenticationmethod-delete.md
-          - name: Microsoft Authenticator Passwordless Phone Sign-In
+          - name: Microsoft Authenticator 
+            href: resources/microsoftauthenticatorauthenticationmethod.md
+            items:
+            - name: List
+              href: api/microsoftauthenticatorauthenticationmethod-list.md
+            - name: Get
+              href: api/microsoftauthenticatorauthenticationmethod-get.md
+            - name: Delete
+              href: api/microsoftauthenticatorauthenticationmethod-delete.md
+          - name: Microsoft Authenticator Passwordless Phone Sign-In (deprecated)
             href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
             items:
             - name: List
@@ -10218,6 +10274,15 @@ items:
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
             - name: Delete
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
+          - name: Windows Hello for Business
+            href: resources/windowshelloforbusinessauthenticationmethod.md
+            items:
+            - name: List
+              href: api/windowshelloforbusinessauthenticationmethod-list.md
+            - name: Get
+              href: api/windowshelloforbusinessauthenticationmethod-get.md
+            - name: Delete
+              href: api/windowshelloforbusinessauthenticationmethod-delete.md
           - name: Phone
             href: resources/phoneauthenticationmethod.md
             items:
@@ -10272,7 +10337,16 @@ items:
               href: api/fido2authenticationmethodconfiguration-update.md
             - name: Delete
               href: api/fido2authenticationmethodconfiguration-delete.md
-          - name: Microsoft Authenticator Passwordless Phone Sign-in policy
+          - name: Microsoft Authenticator policy
+            href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
+            items:
+            - name: Get
+              href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
+            - name: Update
+              href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
+            - name: Delete
+              href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+          - name: Microsoft Authenticator Passwordless Phone Sign-in policy (deprecated)
             href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
             items:
             - name: Get
@@ -10708,6 +10782,10 @@ items:
                href: api/b2cidentityuserflow-list-languages.md
              - name: Create language
                href: api/b2cidentityuserflow-put-languages.md
+             - name: Get API connectors configuration
+               href: api/b2cidentityuserflow-get-apiConnectorConfiguration.md
+             - name: Configure an API connector
+               href: api/b2cidentityuserflow-put-apiConnectorConfiguration.md
           - name: Self-service sign up user flows
             items:
              - name: B2X user flow
@@ -10732,6 +10810,10 @@ items:
                href: api/b2xidentityuserflow-post-userattributeassignments.md
              - name: List languages
                href: api/b2xidentityuserflow-list-languages.md
+             - name: Get API connectors configuration
+               href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
+             - name: Configure an API connector
+               href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md
           - name: User flow attributes
             items:
              - name: User flow attribute
@@ -10776,9 +10858,23 @@ items:
                href: api/userflowlanguagepage-put.md
              - name: Delete userFlowLanguagePage
                href: api/userflowlanguagepage-delete.md
+          - name: API connectors
+            items:
+            - name: API connector
+              href: resources/identityapiconnector.md
+            - name: List
+              href: api/identityapiconnector-list.md
+            - name: Create
+              href: api/identityapiconnector-create.md
+            - name: Get
+              href: api/identityapiconnector-get.md
+            - name: Update
+              href: api/identityapiconnector-update.md
+            - name: Delete
+              href: api/identityapiconnector-delete.md
       - name: Governance
         items:
-        - name: Access reviews (groups)
+        - name: Access reviews for groups
           href: resources/accessreviewsv2-root.md
           items:
           - name: Access review schedule definition
@@ -10820,7 +10916,7 @@ items:
               href: api/accessreviewinstancedecisionitem-listpendingapproval.md
             - name: Update
               href: api/accessreviewinstancedecisionitem-update.md
-        - name: Access reviews (all resources)
+        - name: Access reviews
           href: resources/accessreviews-root.md
           items:
           - name: Access review
@@ -11929,6 +12025,16 @@ items:
             items:
             - name: Get usage summary
               href: api/reportroot-getcredentialusagesummary.md
+          - name: Users registered by feature
+            href: resources/userregistrationfeaturesummary.md
+            items:
+            - name: Get users registered by feature
+              href: api/authenticationmethodsroot-usersregisteredbyfeature.md
+          - name: Users registered by method
+            href: resources/userregistrationmethodsummary.md
+            items:
+            - name: Get users registered by authentication method
+              href: api/authenticationmethodsroot-usersregisteredbymethod.md             
       - name: Microsoft 365 usage reports
         items:
         - name: Overview
@@ -12635,7 +12741,7 @@ items:
           href: api/channel-delete.md
         - name: List members
           href: api/channel-list-members.md        
-        - name: Create member 
+        - name: Add member 
           href: api/channel-post-members.md
         - name: Get member
           href: api/channel-get-members.md
@@ -12672,6 +12778,8 @@ items:
           href: api/chat-post.md
         - name: Get chat
           href: api/chat-get.md
+        - name: Update chat
+          href: api/chat-patch.md
         - name: List members
           href: api/chat-list-members.md
         - name: Add member
@@ -12782,7 +12890,7 @@ items:
           items:
           - name: List tabs in channel
             href: api/channel-list-tabs.md
-          - name: Add tab to cannel
+          - name: Add tab to channel
             href: api/channel-post-tabs.md
           - name: Get tab in channel
             href: api/channel-get-tabs.md
