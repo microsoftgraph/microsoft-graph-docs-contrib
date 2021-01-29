@@ -29,7 +29,7 @@ The work or school account must be in one of the following roles:
 + Global Administrator
 + User Administrator
 
-Deleting users is only allowed on users who are non-administrators or assigned one of the following limited administrator roles: Directory Readers, Groups Administrator, Guest Inviter, Helpdesk Administrator, Message Center Reader, Password Administrator, Reports Reader, or User Administrator. For more details, see [Administrator role permissions in Azure AD](/azure/active-directory/roles/permissions-reference#available-roles).
+Deleting users is only allowed on users who are non-administrators. To delete a user in an administrator role, first unassign them the role. For more details, see [Administrator role permissions in Azure AD](/azure/active-directory/roles/permissions-reference#available-roles).
 
 ## HTTP request
 
