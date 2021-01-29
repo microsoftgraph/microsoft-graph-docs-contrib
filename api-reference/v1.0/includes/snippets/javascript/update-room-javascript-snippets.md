@@ -15,7 +15,7 @@ const place = {
   nickname: "Conf Room",
   building: "1",
   label: "100",
-  capacity: "50",
+  capacity: 50,
   isWheelChairAccessible: false
 };
 
