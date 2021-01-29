@@ -3,7 +3,7 @@ title: "List appliesTo"
 description: "Get a list of directoryObject objects that a tokenLifetimePolicy object has been applied to."
 localization_priority: Normal
 author: "lujiangfeng666"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 

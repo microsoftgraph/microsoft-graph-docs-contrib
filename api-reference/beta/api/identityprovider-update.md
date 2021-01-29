@@ -4,7 +4,7 @@ description: "Update properties of an identityProvider."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
 # Update identityProvider
