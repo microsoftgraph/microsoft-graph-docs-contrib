@@ -53,15 +53,15 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [accessPackageAssignment](../resources/accesspackageassignment.md) collection in the response body.
+If successful, this method returns a `200 OK` response code and an [accessPackageAssignment](../resources/accesspackageassignment.md) collection in the response body.
 
 When a result set spans multiple pages, Microsoft Graph returns that page with an `@odata.nextLink` property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the `@odata.nextLink` URL in each response, until all the results are returned. Refer to [paging Microsoft Graph data in your app](/graph/paging.md) for more details.
 
 ## Examples
 
-### Example: Get the status of access package assignments targeted for the signed-in user
+The following example gets the status of access package assignments targeted for the signed-in user.
 
-#### Request
+### Request
 <!-- {
   "blockType": "request",
   "name": "accesspackageassignment_filterbycurrentuser"
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 ```
 
 
-#### Response
+### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
