@@ -6,8 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IDirectoryObjectCollectionWithReferencesPage rejectedSenders = graphClient.groups("{id}").rejectedSenders()
+TrustFrameworkKeySet trustFrameworkKeySet = new TrustFrameworkKeySet();
+trustFrameworkKeySet.id = "keyset1";
+
+graphClient.trustFramework().keySets()
 	.buildRequest()
-	.get();
+	.post(trustFrameworkKeySet);
 
 ```
