@@ -17,7 +17,7 @@ items:
           - name: What's new highlights
             href: whats-new-overview.md
           - name: API changelog
-            href: changelog.md
+            href: https://developer.microsoft.com/graph/changelog
       - name: Users you can reach
         items:
           - name: Overview
@@ -193,6 +193,9 @@ items:
               - name: Upload data to upload session
                 href: upload-data-to-upload-session.md
                 displayName: Universal Print Job Submission
+              - name: Change notifications
+                href: universal-print-webhook-notifications.md
+                displayName: Universal Print Webhook Notifications
           - name: Corporate management
             href: intune-concept-overview.md
             displayName: Intune
@@ -385,7 +388,7 @@ items:
           - name: Licenses for subscribing to chat messages
             href: teams-licenses.md
           - name: Send proactive messages with a bot
-            href: teams-proactive-messaging.md
+            href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
           - name: Send activity feed notifications
             href: teams-send-activityfeednotifications.md
       - name: To-do tasks
@@ -487,6 +490,12 @@ items:
                 href: extensibility-open-users.md
               - name: Use schema extensions (example)
                 href: extensibility-schema-groups.md
+          - name: Use Graph Explorer
+            items:
+            - name: Get started
+              href: graph-explorer/graph-explorer-overview.md
+            - name: Work with Graph Explorer
+              href: graph-explorer/graph-explorer-features.md
           - name: Use Postman
             href: use-postman.md
       - name: Migrate
@@ -603,17 +612,17 @@ items:
                 href: toolkit/components/person.md
               - name: People
                 href: toolkit/components/people.md
-              - name: Person Card
+              - name: Person card
                 href: toolkit/components/person-card.md
-              - name: People Picker
+              - name: People picker
                 href: toolkit/components/people-picker.md
-              - name: Teams Channel Picker
+              - name: Teams channel picker
                 href: toolkit/components/teams-channel-picker.md
               - name: Agenda
                 href: toolkit/components/agenda.md
-              - name: Tasks
+              - name: Planner tasks
                 href: toolkit/components/tasks.md
-              - name: To Do
+              - name: To-do tasks
                 href: toolkit/components/todo.md
           - name: Customize components
             items:

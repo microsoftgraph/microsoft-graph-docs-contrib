@@ -21,7 +21,7 @@ Do not try to extract the `$skip` value from the `@odata.nextLink` URL to manipu
 
 You can filter on the messages and get only those that include a [mention](../resources/mention.md) of the signed-in user. See an [example](#request-2) below. 
 By default, the `GET /me/messages` operation does not return the **mentions** property. Use the `$expand` query parameter 
-to [find details of each mention in a message](../api/message-get.md#example-2).
+to [find details of each mention in a message](../api/message-get.md#example-2-get-all-mentions-in-a-specific-message).
 
 There are two scenarios where an app can get messages in another user's mail folder:
 
@@ -171,7 +171,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Microsoft Azure",
-                    "address": "azure-noreply@microsoft.com"
+                    "address": "azure-noreply@contoso.com"
                 }
             }
         },
@@ -182,7 +182,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         },
@@ -193,7 +193,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         },
@@ -204,7 +204,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         },
@@ -215,7 +215,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         },
@@ -227,7 +227,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         }
@@ -292,8 +292,8 @@ Content-length: 987
       "subject":"Re: Start planning soon",
       "sender":{
         "emailAddress":{
-          "name":"Randi Welch",
-          "address":"randiw@contoso.onmicrosoft.com"
+          "name":"Adele Vance",
+          "address":"AdeleV@contoso.com"
         }
       },
       "mentionsPreview":{
@@ -308,8 +308,8 @@ Content-length: 987
       "subject":"Re: Start planning soon",
       "sender":{
         "emailAddress":{
-          "name":"Randi Welch",
-          "address":"randiw@contoso.onmicrosoft.com"
+          "name":"Adele Vance",
+          "address":"AdeleV@contoso.com"
         }
       },
       "mentionsPreview":{
