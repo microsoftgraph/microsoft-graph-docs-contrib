@@ -4721,14 +4721,14 @@ items:
           - name: Get user counts
             href: api/reportroot-getyammerdeviceusageusercounts.md
         - name: Yammer groups activity
-        href: resources/yammer-groups-activity-reports.md
-        items:
-        - name: Get group detail
-          href: api/reportroot-getyammergroupsactivitydetail.md
-        - name: Get group counts
-          href: api/reportroot-getyammergroupsactivitygroupcounts.md
-        - name: Get activity counts
-          href: api/reportroot-getyammergroupsactivitycounts.md
+          href: resources/yammer-groups-activity-reports.md
+          items:
+          - name: Get group detail
+            href: api/reportroot-getyammergroupsactivitydetail.md
+          - name: Get group counts
+            href: api/reportroot-getyammergroupsactivitygroupcounts.md
+          - name: Get activity counts
+            href: api/reportroot-getyammergroupsactivitycounts.md
     - name: Search
       displayname: Microsoft Search API
       items:
