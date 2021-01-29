@@ -54,13 +54,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection in the response body.
+If successful, this method returns a `200 OK` response code and an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection in the response body.
 
 ## Examples
 
-### Example 1: Get the status of access package assignment requests targeted for the signed-in user
+The following example gets the status of access package assignment requests targeted for the signed-in user.
 
-#### Request
+### Request
 <!-- {
   "blockType": "request",
   "name": "accesspackageassignmentrequest_filterbycurrentuser"
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 ```
 
 
-#### Response
+### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
