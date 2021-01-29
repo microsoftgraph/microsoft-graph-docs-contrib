@@ -37,9 +37,9 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
+In the request body, supply a JSON representation of an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
-For a non-administrator user to cancel their own request, the body must contain the request `id` and `requestStatus`. The value of the *requestStatus* property is `cancelled`. The `id` is the identifier of the [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).
+For a non-administrator user to cancel their own request, the body must contain the request `id` and `requestStatus`. The value of the **requestStatus** property is `cancelled`. The `id` is the identifier of the [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).
 
 ## Response
 
