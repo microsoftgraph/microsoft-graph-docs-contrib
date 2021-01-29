@@ -1,6 +1,6 @@
 ---
 title: "smsAuthenticationMethodConfiguration resource type"
-description: "A collection of users or groups enabled to use Text Message authentication methods policy."
+description: "Represents a Text Message authentication methods policy."
 author: "mmcla"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
