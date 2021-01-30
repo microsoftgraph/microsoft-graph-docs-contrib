@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties
 in a new or existing instance of a supported resource.
 
+See the table in the [Permissions](#permissions) section for the list of resources that support open extensions.
+
 > **Note:** If you're creating open extensions on Outlook resources, see **Outlook-specific considerations** in [openTypeExtension resource type](../resources/opentypeextension.md#outlook-specific-considerations).
 
 ## Permissions

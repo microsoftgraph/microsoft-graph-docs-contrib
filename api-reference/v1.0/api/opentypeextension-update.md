@@ -19,6 +19,8 @@ extension is updated.
 
 The data in an extension can be primitive types, or arrays of primitive types.
 
+See the table in the [Permissions](#permissions) section for the list of resources that support open extensions.
+
 ## Permissions
 
 Depending on the resource that the extension was created in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including higher privileged permissions and how to choose permissions, see [Permissions](/graph/permissions-reference).
