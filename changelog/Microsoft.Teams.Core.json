@@ -16,7 +16,7 @@
              "ApiChange": "Resource",
              "ChangedApiName": "channelIdentity",
              "ChangeType": "Addition",
-             "Description": "Added [channelIdentity](https://docs.microsoft.com/en-us/graph/api/resources/channelIdentityresource?view=graph-rest-beta) resource type",
+             "Description": "Added [channelIdentity](https://docs.microsoft.com/en-us/graph/api/resources/channelIdentity?view=graph-rest-beta) resource type",
              "Target": "channelIdentity"
            }
       ],
