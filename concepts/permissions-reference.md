@@ -10,6 +10,8 @@ ms.custom: graphiamtop20, scenarios:getting-started
 
 For your app to access data in Microsoft Graph, the user or administrator must grant it the correct permissions via a consent process. This topic lists the permissions associated with each major set of Microsoft Graph APIs. It also provides guidance about how to use the permissions.
 
+[!INCLUDE [auth-use-least-privileged](../includes/auth-use-least-privileged.md)]
+
 To learn more about how permissions work, see [Authentication and authorization basics](auth/auth-concepts.md#microsoft-graph-permissions), and watch the following video.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/yXYzgWWVdSM]
