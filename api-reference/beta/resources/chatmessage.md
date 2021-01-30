@@ -68,7 +68,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |locale|string|Locale of the chat message set by the client.|
 | policyViolation | [chatMessagePolicyViolation](../resources/chatmessagepolicyviolation.md) |Defines the properties of a policy violation set by a data loss prevention (DLP) application.|
 |chatId|string|  This is the identity of the chat in which the message was posted.|
-|channelIdentity | [channelIdentity resource](../resources/channelIdentityresource.md) |This is the identity of the channel in which the message was posted.|
+|channelIdentity | [channelIdentity](../resources/channelIdentity.md) |This is the identity of the channel in which the message was posted.|
 ## JSON representation
 
 The following is a JSON representation of the resource.
