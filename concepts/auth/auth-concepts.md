@@ -60,7 +60,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 Microsoft Graph exposes granular permissions that control the access that apps have to resources, like users, groups, and mail. As a developer, you decide which permissions to request for Microsoft Graph. When a user signs in to your app they, or, in some cases, an administrator, are given a chance to consent to these permissions. If the user consents, your app is given access to the resources and APIs that it has requested. For apps that don't take a signed-in user, permissions can be pre-consented to by an administrator when the app is installed.
 
-[!INCLUDE [auth-use-least-privileged](../includes/auth-use-least-privileged.md)]
+[!INCLUDE [auth-use-least-privileged](../../includes/auth-use-least-privileged.md)]
 
 Microsoft Graph has two types of permissions:
 
