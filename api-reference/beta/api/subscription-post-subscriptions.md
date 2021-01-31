@@ -4,7 +4,7 @@ description: "Subscribes a listener application to receive change notifications 
 localization_priority: Normal
 author: "davidmu1"
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "change-notifications"
 ---
 
 # Create subscription
@@ -37,6 +37,7 @@ Creating a subscription requires read permission to the resource. For example, t
 |[list](../resources/list.md) | Sites.ReadWrite.All | Not supported | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[presence](../resources/presence.md) | Presence.Read.All | Not supported | Not supported |
+|[printer](../resources/printer.md) | Not supported | Not supported | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Not supported | Not supported | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
@@ -44,17 +45,7 @@ Creating a subscription requires read permission to the resource. For example, t
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
-### chatMessage
-
-**chatMessage** subscriptions with delegated permissions do not support resource data (**includeResourceData** must be `false`), and do not require [encryption](/graph/webhooks-with-resource-data).
-
-**chatMessage** subscriptions with application permissions include resource data, and require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified. Before creating a **chatMessage** subscription, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis). 
-
-> **Note:** `/teams/getAllMessages` and `/chats/getAllMessages` are available to users that have the 
-[required licenses](https://aka.ms/teams-changenotification-licenses).
-
-> **Note:** `/chats/getAllMessages` only returns messages from chats owned by the tenant. 
-If a chat thread is initiated by a user outside the tenant, that chat thread is not owned by the tenant, and does not create change notifications.
+[!INCLUDE [beta-disclaimer](../../includes/teams-subscription-notes.md)]
 
 ### driveItem
 
@@ -161,6 +152,7 @@ The following are valid values for the resource property.
 |[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Mail](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
 |[Presence](../resources/presence.md)| `/communications/presences/{id}` (single user), `/communications/presences?$filter=id in ({id},{id}…)` (multiple users)|
+|[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Users](../resources/user.md)|`users`|
 |[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`

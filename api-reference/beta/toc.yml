@@ -70,6 +70,12 @@ items:
         href: /graph/extensibility-open-users?context=graph/api/beta
       - name: Use schema extensions (example)
         href: /graph/extensibility-schema-groups?context=graph/api/beta
+    - name: Use Graph Explorer
+      items:
+      - name: Get started
+        href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/beta
+      - name: Work with Graph Explorer
+        href: /graph/graph-explorer/graph-explorer-features?context=graph/api/beta
     - name: Use Postman
       href: /graph/use-postman?context=graph/api/beta
   - name: Migrate
@@ -291,6 +297,8 @@ items:
           href: api/user-list-registereddevices.md
         - name: List scoped administrator memberships
           href: api/user-list-scopedrolememberof.md
+        - name: List user usage rights
+          href: api/user-list-usagerights.md
         - name: Reprocess license assignment
           href: api/user-reprocesslicenseassignment.md
         - name: Revoke sign-in session
@@ -9405,6 +9413,8 @@ items:
           href: api/educationclass-list-assignments.md
         - name: Create assignment
           href: api/educationclass-post-assignments.md
+        - name: Get assignment settings
+          href: api/educationassignmentsettings-get.md
         - name: List categories
           href: api/educationclass-list-categories.md
         - name: Create category
@@ -9467,6 +9477,13 @@ items:
           href: api/educationassignment-put-rubric.md
         - name: Remove rubric from assignment
           href: api/educationassignment-delete-rubric.md
+      - name: Assignment settings
+        href: resources/educationassignmentsettings.md
+        items:
+        - name: Get assignment settings
+          href: api/educationassignmentsettings-get.md
+        - name: Update assignment settings
+          href: api/educationassignmentsettings-update.md
       - name: Category
         href: resources/educationcategory.md
         items:
@@ -10009,6 +10026,8 @@ items:
             href: api/device-list-memberof.md
           - name: List device transitive groups
             href: api/device-list-transitivememberof.md
+          - name: List device usage rights
+            href: api/device-list-usagerights.md
           - name: Check member objects
             href: api/device-checkmemberobjects.md
         - name: Directory object
@@ -12006,6 +12025,16 @@ items:
             items:
             - name: Get usage summary
               href: api/reportroot-getcredentialusagesummary.md
+          - name: Users registered by feature
+            href: resources/userregistrationfeaturesummary.md
+            items:
+            - name: Get users registered by feature
+              href: api/authenticationmethodsroot-usersregisteredbyfeature.md
+          - name: Users registered by method
+            href: resources/userregistrationmethodsummary.md
+            items:
+            - name: Get users registered by authentication method
+              href: api/authenticationmethodsroot-usersregisteredbymethod.md             
       - name: Microsoft 365 usage reports
         items:
         - name: Overview

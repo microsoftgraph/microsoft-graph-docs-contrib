@@ -10,6 +10,8 @@ doc_type: apiPageType
 # List windowsHelloForBusinessAuthenticationMethods
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get a list of the [windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) objects and their properties.
 
 ## Permissions
