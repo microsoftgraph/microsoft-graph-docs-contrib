@@ -29,7 +29,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
     
   ],
-  "@odata.type": "microsoft.graph.channelIdentity"
+  "@odata.type": "microsoft.graph.chatMessagechannelIdentity"
 }-->
 
 ```json
