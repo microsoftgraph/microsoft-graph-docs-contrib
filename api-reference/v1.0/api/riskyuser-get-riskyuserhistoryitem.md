@@ -3,7 +3,7 @@ title: "Get history"
 description: "Read the properties and relationships of a riskyUserHistoryItem object."
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

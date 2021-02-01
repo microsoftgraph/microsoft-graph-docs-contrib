@@ -3,7 +3,7 @@ title: "Get authorizationPolicy"
 description: "Retrieve the properties and relationships of authorizationPolicy object."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

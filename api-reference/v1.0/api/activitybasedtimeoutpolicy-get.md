@@ -3,7 +3,7 @@ title: "Get activityBasedTimeoutPolicy"
 description: "Get the properties of an activityBasedTimeoutPolicy object."
 localization_priority: Normal
 author: "lujiangfeng666"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

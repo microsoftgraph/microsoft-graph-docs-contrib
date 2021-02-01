@@ -3,7 +3,7 @@ title: "Create identityProvider"
 description: "Create a new identityProvider"
 localization_priority: Priority
 author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

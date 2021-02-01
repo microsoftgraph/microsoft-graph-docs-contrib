@@ -3,7 +3,7 @@ title: "List claimsMappingPolicies"
 description: "Get a list of claimsMappingPolicy objects."
 localization_priority: Normal
 author: "paulgarn"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

@@ -3,7 +3,7 @@ title: "List oAuth2PermissionGrants"
 description: "Retrieve a list of oauth2PermissionGrant objects, representing delegated permission grants."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 

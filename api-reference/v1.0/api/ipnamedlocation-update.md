@@ -3,7 +3,7 @@ title: "Update ipnamedlocation"
 description: "Update the properties of an ipNamedLocation object."
 localization_priority: Normal
 author: "videor"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

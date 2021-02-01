@@ -3,7 +3,7 @@ title: "Get permissionGrantPolicy"
 description: "Retrieve a single permissionGrantPolicy object."
 localization_priority: Normal
 doc_type: "apiPageType"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 

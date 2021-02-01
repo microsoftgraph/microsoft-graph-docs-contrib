@@ -3,7 +3,7 @@ title: "Update identityProvider"
 description: "Update properties in an existing identityProvider"
 localization_priority: Priority
 author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
