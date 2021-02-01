@@ -2,6 +2,24 @@
   "changelog": [
     {
       "ChangeList": [
+        {
+          "Id": "9d59855b-109d-4201-b9cb-a7a7a72fe0ee",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entitlementManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the **entitlementManagement** relationship to the [roleManagement](https://docs.microsoft.com/graph/api/resources/roleManagement?view=graph-rest-beta) resource.",
+          "Target": "roleManagement"
+        }
+      ],
+      "Id": "9d59855b-109d-4201-b9cb-a7a7a72fe0ee",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-01T22:30:01Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "governance"
+    },
+    {
+      "ChangeList": [
        {
          "Id": "0a73cfac-4f88-11eb-ae35-ed470c456b69",
          "ApiChange": "Resource",
