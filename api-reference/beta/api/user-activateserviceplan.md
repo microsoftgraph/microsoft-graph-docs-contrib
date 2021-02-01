@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # user: activateServicePlan
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,6 +16,7 @@ Namespace: microsoft.graph
 Activate a service plan with a given `servicePlanId` and `skuId` for a given user.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
@@ -29,17 +31,20 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
 ``` http
 POST /users/{id | userPrincipalName}/activateServicePlan
 ```
 
 ## Request headers
+
 | Name | Description |
 | :--- | :--- |
 | Authorization | Bearer {token}. Required. |
 | Content-Type | application/json. Required. |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameter:
 
 | Parameter | Type | Description |
@@ -47,20 +52,20 @@ In the request body, provide a JSON object with the following parameter:
 | servicePlanId | Guid | PlanId of the ServicePlan to activate |
 | skuId | Guid | SkuId of SKU the service plan is on |
 
-
-
 ## Response
 
 If successful, this action returns a `204 NO CONTENT` response code.
 
 ## Examples
 
-### Request
+### Sample Request
+
 <!-- {
   "blockType": "request",
   "name": "user_activateserviceplan"
 }
 -->
+
 ``` http
 POST https://graph.microsoft.com/beta/me/activateServicePlan
 
@@ -73,8 +78,8 @@ Content-length: 51
 }
 ```
 
+### Sample Response
 
-### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -82,7 +87,7 @@ Content-length: 51
   "@odata.type": "Edm.Boolean"
 }
 -->
+
 ``` http
 HTTP/1.1 204 No Content
 ```
-
