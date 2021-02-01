@@ -2,6 +2,17 @@
   "changelog": [
     {
       "ChangeList": [
+      ],
+      "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-01T22:00:01Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "governance"
+    },
+    },
+    {
+      "ChangeList": [
        {
          "Id": "0a73cfac-4f88-11eb-ae35-ed470c456b69",
          "ApiChange": "Resource",
