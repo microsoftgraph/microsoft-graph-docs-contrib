@@ -3,7 +3,7 @@ title: "Delete accessPackage"
 description: "Delete accessPackage."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 

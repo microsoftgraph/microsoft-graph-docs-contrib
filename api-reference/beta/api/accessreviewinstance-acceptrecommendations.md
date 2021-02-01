@@ -3,7 +3,7 @@ title: "accessReviewInstance: acceptRecommendations"
 description: "Allows the acceptance of recommendations on all not reviewed decisions on an access review instance` that they are the reviewer on. "
 localization_priority: Normal
 author: "isabelleatmsft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
