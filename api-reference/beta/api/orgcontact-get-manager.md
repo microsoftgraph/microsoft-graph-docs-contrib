@@ -3,7 +3,7 @@ title: "orgContact: Get manager"
 description: "Get the contact's manager"
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
