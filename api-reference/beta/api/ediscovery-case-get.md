@@ -1,6 +1,6 @@
 ---
 title: "Get case"
-description: "Retrieve the properties and relationships of case object."
+description: "Retrieve the properties and relationships of a case object."
 localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "ediscovery"
@@ -41,7 +41,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/cases/061b9a92-8926-4bd9-b41d-abf35edc7583
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
