@@ -3,7 +3,7 @@ title: "connectedOrganization resource type"
 description: "In Azure AD entitlement management, a connected organization is a reference to a directory or domain of another organization whose users can request access."
 author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 

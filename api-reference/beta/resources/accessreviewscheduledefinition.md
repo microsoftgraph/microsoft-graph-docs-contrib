@@ -3,7 +3,7 @@ title: "accessReviewScheduleDefinition resource type"
 description: "Represents an access review or access review series."
 author: "isabelleatmsft"
 localization_priority: Normal
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
