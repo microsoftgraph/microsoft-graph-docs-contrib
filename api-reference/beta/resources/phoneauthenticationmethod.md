@@ -3,7 +3,7 @@ title: "phoneAuthenticationMethod resource type"
 description: "A representation of a phone registered to a user."
 localization_priority: Normal
 author: "mmcla"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 

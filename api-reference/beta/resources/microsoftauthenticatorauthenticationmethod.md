@@ -3,7 +3,7 @@ title: "microsoftAuthenticatorAuthenticationMethod resource type"
 description: "A representation of the Microsoft Authenticator app registered to a user. Microsoft Authenticator is an authentication method."
 author: "mmcla"
 localization_priority: Normal
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 

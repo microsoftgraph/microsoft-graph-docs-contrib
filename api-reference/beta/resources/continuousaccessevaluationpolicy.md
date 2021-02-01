@@ -3,7 +3,7 @@ title: "continuousAccessEvaluationPolicy resource type"
 description: "Continuous Access Evaluation (CAE) helps in managing authentication sessions in real time. CAE allows customers to handle access to resources by supporting instant revocation events."
 author: "jerrysai"
 localization_priority: Normal
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 

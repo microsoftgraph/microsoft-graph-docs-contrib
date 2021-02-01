@@ -3,7 +3,7 @@ title: "riskDetection resource type"
 description: "Represents all risk detections in AzureAD tenants."
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 # riskDetection resource type

@@ -4,7 +4,7 @@ description: "Represents Azure AD users who are at risk. Azure AD continually ev
 author: "cloudhandler"
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # riskyUser resource type

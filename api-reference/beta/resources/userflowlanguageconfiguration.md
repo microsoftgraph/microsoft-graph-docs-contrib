@@ -3,7 +3,7 @@ title: "userFlowLanguageConfiguration resource type"
 description: "The userFlowsLanguageConfiguration object allows a user flow to support customization of multiple languages."
 author: "jkdouglas"
 localization_priority: Normal
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 

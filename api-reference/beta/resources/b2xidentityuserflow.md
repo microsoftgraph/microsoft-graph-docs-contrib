@@ -3,7 +3,7 @@ title: "b2xIdentityUserFlow resource type"
 description: "Represents a user flow within an Azure Active Directory tenant."
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 author: "jkdouglas"
 ---
 
