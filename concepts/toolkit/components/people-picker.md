@@ -33,6 +33,7 @@ By default, the `mgt-people-picker` component fetches people from the `/me/peopl
 | placeholder   | placeholder    | The default text that appears to explain how to use the component. Default value is `Start typing a name`.
 | default-selected-user-ids | defaultSelectedUserIds | When provided a string of comma-separated Microsoft Graph user IDs, the component renders the respective users as selected upon initialization.
 | selection-mode | selectionMode | Used to indicate whether to allow selecting multiple items (users or groups) or just a single item. Available options are: `single`, `multiple`. Default value is `multiple`.
+| disabled | disabled | Sets whether the people picker is disabled. When disabled, the user is not able to search or select people.
 
 The following is a `show-max` example.
 
