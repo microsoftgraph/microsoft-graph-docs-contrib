@@ -1,5 +1,5 @@
 ---
-title: "accessPackageAssignmentRequest: Cancel"
+title: "accessPackageAssignmentRequest: cancel"
 description: "Cancel accessPackageAssignmentRequest objects that are in a cancellable state."
 localization_priority: Normal
 author: "sbounouh"
@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # accessPackageAssignmentRequest: cancel
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md), cancel [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects that are in a cancellable state: `accepted`, `pendingApproval`, `pendingNotBefore`, `pendingApprovalEscalated`.
 

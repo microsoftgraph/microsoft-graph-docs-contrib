@@ -11,6 +11,8 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 In [Azure AD Entitlement Management](entitlementmanagement-root.md), the approval object associated with the `accessPackageAssignmentRequest`.
 
 ## Properties

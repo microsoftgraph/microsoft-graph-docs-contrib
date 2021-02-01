@@ -10981,14 +10981,14 @@ items:
               href: api/accesspackage-update.md
             - name: Delete
               href: api/accesspackage-delete.md
-            - name: FilterbyCurrentUser
+            - name: Filter by current user
               href: api/accesspackage-filterbycurrentuser.md
           - name: Access package assignment
             href: resources/accesspackageassignment.md
             items:
             - name: List
               href: api/accesspackageassignment-list.md
-            - name: FilterbyCurrentUser
+            - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
           - name: Access package assignment policy
             href: resources/accesspackageassignmentpolicy.md
@@ -11012,7 +11012,7 @@ items:
               href: api/accesspackageassignmentrequest-post.md
             - name: Get
               href: api/accesspackageassignmentrequest-get.md
-            - name: FilterbyCurrentUser
+            - name: Filter by current user
               href: api/accesspackageassignmentrequest-filterbycurrentuser.md
             - name: Cancel
               href: api/accesspackageassignmentrequest-cancel.md

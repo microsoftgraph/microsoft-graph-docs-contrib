@@ -1,5 +1,5 @@
 ---
-title: "accessPackage: FilterByCurrentUser"
+title: "accessPackage: filterByCurrentUser"
 description: "Retrieve a list of accesspackage objects filtered on the signed-in user."
 localization_priority: Normal
 author: "sbounouh"
@@ -7,8 +7,10 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# accessPackage: FilterByCurrentUser
+# accessPackage: filterByCurrentUser
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackage](../resources/accesspackage.md) objects filtered on the signed-in user.
 
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/entitlementManagement/accessPackages/FilterByCurrentUser
+GET /identityGovernance/entitlementManagement/accessPackages/filterByCurrentUser
 ```
 
 ## Query parameters
@@ -36,7 +38,7 @@ The following table shows the parameters that can be used with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|String|The list of options that can be used to filter on current user. Possible option is: `allowedRequestor`. Additional options may be available in the future.|
+|on|String|The list of options that can be used to filter on current user. Possible option is: `allowedRequestor`. filterByCurrentUser|
 
 - `allowedRequestor` is used to get the `accessPackage` objects for which the signed-in user is allowed to submit access requests. The resulting list includes all access packages that can be requested by the caller across all catalogs.
 
@@ -53,17 +55,16 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and an [accessPackage](../resources/accesspackage.md) collection in the response body.
 
 ## Examples
-
 The following example gets the access packages that can be requested by the signed-in user.
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "accesspackageassignmentrequest_filterbycurrentuser"
+  "name": "accesspackageassignmentrequest_filterByCurrentUser"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/FilterByCurrentUser(on='allowedRequestor')
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/filterByCurrentUser(on='allowedRequestor')
 ```
 
 

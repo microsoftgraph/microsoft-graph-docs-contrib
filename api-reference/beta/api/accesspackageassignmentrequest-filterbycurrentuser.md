@@ -1,5 +1,5 @@
 ---
-title: "accessPackageAssignmentRequest: FilterByCurrentUser"
+title: "accessPackageAssignmentRequest: filterByCurrentUser"
 description: "Retrieve a list of accesspackageassignmentrequest objects filtered on the signed-in user."
 localization_priority: Normal
 author: "sbounouh"
@@ -7,8 +7,10 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# accessPackageAssignmentRequest: FilterByCurrentUser
+# accessPackageAssignmentRequest: filterByCurrentUser
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects filtered on the signed-in user.
 
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/FilterByCurrentUser
+GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/filterByCurrentUser
 ```
 
 ## Query parameters
@@ -67,7 +69,7 @@ The following example gets the status of access package assignment requests targ
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/FilterByCurrentUser(on='target')
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/filterByCurrentUser(on='target')
 ```
 
 
