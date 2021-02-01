@@ -3,7 +3,7 @@ title: "List directoryRoles"
 description: "List the directory roles that are activated in the tenant."
 author: "abhijeetsinha"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

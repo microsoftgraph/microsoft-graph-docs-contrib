@@ -3,7 +3,7 @@ title: "Update a directory setting"
 description: "Update the properties of a specific directory setting object."
 author: "adimitui"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "bitlockerRecoveryKey resource type"
 description: "BitLocker recovery key resource"
 author: "hafowler"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 

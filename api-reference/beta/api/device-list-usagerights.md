@@ -3,7 +3,7 @@ title: "List device usageRights"
 description: "Retrieve a list of usageRights objects for a device."
 author: "jeeshnair"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

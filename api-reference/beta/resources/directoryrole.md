@@ -3,7 +3,7 @@ title: "directoryRole resource type"
 description: "Represents an Azure AD directory role. Azure AD directory roles are also known as *administrator roles*."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 

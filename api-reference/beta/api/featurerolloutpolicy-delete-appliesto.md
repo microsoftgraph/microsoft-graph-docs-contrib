@@ -3,7 +3,7 @@ title: "Remove appliesTo"
 description: "Remove a directoryObject from feature rollout."
 localization_priority: Normal
 author: "keylimesoda"
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

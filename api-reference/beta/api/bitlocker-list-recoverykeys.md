@@ -3,7 +3,7 @@ title: "List recoveryKeys"
 description: "Get a list of the bitlockerRecoveryKey objects and their properties."
 author: "hafowler"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

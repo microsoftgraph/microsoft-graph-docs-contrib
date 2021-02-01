@@ -3,7 +3,7 @@ title: "Update organization"
 description: "Update the properties of the currently authenticated organization."
 localization_priority: Normal
 author: "adimitui"
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

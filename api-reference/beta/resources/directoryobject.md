@@ -3,7 +3,7 @@ title: "directoryObject resource type"
 description: "Represents an Azure Active Directory object. The **directoryObject** type is the base type for many other directory entity types."
 localization_priority: Priority
 author: "keylimesoda"
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 

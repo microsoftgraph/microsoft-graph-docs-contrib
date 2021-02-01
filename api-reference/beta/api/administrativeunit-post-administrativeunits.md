@@ -3,7 +3,7 @@ title: "Create administrativeUnit"
 description: "Use this API to create a new administrativeUnit."
 author: "anandyadavMSFT"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

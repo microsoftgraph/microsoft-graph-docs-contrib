@@ -3,7 +3,7 @@ title: "List verificationDnsRecords"
 description: "Retrieve a list of domainDnsRecord objects."
 author: "adimitui"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

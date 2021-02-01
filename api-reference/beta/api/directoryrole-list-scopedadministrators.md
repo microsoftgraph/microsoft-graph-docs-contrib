@@ -3,7 +3,7 @@ title: "List scopedMembers for a directory role"
 description: "Retrieve a list of scopedRoleMembership objects for a directory role."
 author: "abhijeetsinha"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

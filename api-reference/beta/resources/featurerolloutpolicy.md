@@ -3,7 +3,7 @@ title: "featureRolloutPolicy resource type"
 description: "Represents a feature rollout policy associated with a directory object."
 localization_priority: Normal
 author: "keylimesoda"
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 

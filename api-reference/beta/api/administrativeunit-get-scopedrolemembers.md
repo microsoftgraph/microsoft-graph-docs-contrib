@@ -3,7 +3,7 @@ title: "Get a scopedRoleMember"
 description: "Retrieve a specific scopedRoleMembership resource."
 author: "anandyadavMSFT"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

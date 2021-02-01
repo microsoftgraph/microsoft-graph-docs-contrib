@@ -3,7 +3,7 @@ title: "Get bitlockerRecoveryKey"
 description: "Retrieve the properties and relationships of a bitlockerRecoveryKey object."
 author: "hafowler"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

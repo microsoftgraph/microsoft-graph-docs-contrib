@@ -3,7 +3,7 @@ title: "directorySetting resource type"
 description: "Directory settings can be created based on the available directorySettingTemplates, and changed from their preset defaults."
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 

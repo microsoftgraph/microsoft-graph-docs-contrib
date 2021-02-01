@@ -3,7 +3,7 @@ title: "Permanently delete item"
 description: "Permanently delete an item from deleted items."
 author: "keylimesoda"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

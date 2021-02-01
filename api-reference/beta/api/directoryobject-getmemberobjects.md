@@ -3,7 +3,7 @@ title: "Get member objects"
 description: " Returns all the groups, administrative units and directory roles that a user, group, service principals or directory object is a member of. This function is transitive. "
 localization_priority: Normal
 author: "keylimesoda"
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

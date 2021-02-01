@@ -3,7 +3,7 @@ title: "Create registeredOwner"
 description: "Add a user as a registered owner of the device."
 author: "spunukol"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
