@@ -3,7 +3,7 @@ title: "Remove connected organization internal sponsor"
 description: "Remove a user or group from the connected organization's internal sponsors."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

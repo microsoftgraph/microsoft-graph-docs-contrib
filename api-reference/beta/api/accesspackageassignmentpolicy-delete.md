@@ -3,7 +3,7 @@ title: "Delete accessPackageAssignmentPolicy"
 description: "Delete an accessPackageAssignmentPolicy."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

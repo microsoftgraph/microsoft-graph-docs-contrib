@@ -3,7 +3,7 @@ title: "List accessPackageResourceRequests"
 description: "Retrieve a list of accessPackageResourceRequest objects."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

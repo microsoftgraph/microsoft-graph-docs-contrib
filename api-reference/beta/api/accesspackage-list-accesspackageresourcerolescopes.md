@@ -3,7 +3,7 @@ title: "List accessPackageResourceRoleScopes"
 description: "Retrieve a list of accesspackageresourcerolescope objects."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

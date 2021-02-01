@@ -3,7 +3,7 @@ title: "Delete privilegedRoleAssignment"
 description: "Delete privilegedRoleAssignment."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 author: "shauliu"
 ---
 

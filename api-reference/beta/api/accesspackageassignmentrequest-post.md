@@ -3,7 +3,7 @@ title: "Create accessPackageAssignmentRequest"
 description: "Create a new accessPackageAssignmentRequest."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

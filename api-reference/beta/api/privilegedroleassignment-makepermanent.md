@@ -3,7 +3,7 @@ title: "privilegedRoleAssignment: makePermanent"
 description: "Make the role assignment permanent."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 author: "shauliu"
 ---
 

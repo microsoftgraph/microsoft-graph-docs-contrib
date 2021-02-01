@@ -3,7 +3,7 @@ title: "Create accessPackageResourceRoleScope"
 description: "Create a new accessPackageResourceRoleScope for adding a resource role to an access package."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

@@ -3,7 +3,7 @@ title: "Update entitlementManagementSettings"
 description: "Update a entitlementManagementSettings object to change one or more of its properties."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

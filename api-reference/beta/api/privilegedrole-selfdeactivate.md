@@ -3,7 +3,7 @@ title: "privilegedRole: selfDeactivate"
 description: "Deactivate the role that is assigned to the requestor."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 author: "shauliu"
 ---
 

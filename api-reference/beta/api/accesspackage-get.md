@@ -3,7 +3,7 @@ title: "Get accessPackage"
 description: "Retrieve the properties and relationships of an accessPackage object."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

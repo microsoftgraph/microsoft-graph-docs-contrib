@@ -3,7 +3,7 @@ title: "Create accessReviewScheduleDefinition"
 description: "Create a new accessReviewScheduleDefinition object."
 localization_priority: Normal
 author: "isabelleatmsft"
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

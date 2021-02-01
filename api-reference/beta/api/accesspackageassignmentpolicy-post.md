@@ -3,7 +3,7 @@ title: "Create accessPackageAssignmentPolicy"
 description: "Use this API to create a new accessPackageAssignmentPolicy."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

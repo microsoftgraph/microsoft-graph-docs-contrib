@@ -3,7 +3,7 @@ title: "Update program"
 description: "In the Azure AD access reviews feature, update an existing program object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 author: "markwahl-msft"
 ---
 

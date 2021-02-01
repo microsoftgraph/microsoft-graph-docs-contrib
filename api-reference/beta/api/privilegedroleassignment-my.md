@@ -3,7 +3,7 @@ title: "privilegedRoleAssignment: my"
 description: "Get the requestor's privileged role assignments."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 author: "shauliu"
 ---
 

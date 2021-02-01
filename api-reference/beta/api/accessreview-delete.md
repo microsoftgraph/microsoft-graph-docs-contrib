@@ -3,7 +3,7 @@ title: "Delete accessReview"
 description: "In the Azure AD access reviews feature, delete an accessReview object."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

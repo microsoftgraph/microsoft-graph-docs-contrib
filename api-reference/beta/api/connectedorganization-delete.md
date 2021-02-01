@@ -3,7 +3,7 @@ title: "Delete connectedOrganization"
 description: "Delete connectedOrganization."
 author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

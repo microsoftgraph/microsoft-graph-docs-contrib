@@ -3,7 +3,7 @@ title: "Create connectedOrganization"
 description: "Create a new connectedOrganization."
 author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

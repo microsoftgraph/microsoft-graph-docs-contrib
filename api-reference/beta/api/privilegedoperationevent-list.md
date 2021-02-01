@@ -3,7 +3,7 @@ title: "List privilegedOperationEvents"
 description: "filter`` expression."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 author: "shauliu"
 ---
 

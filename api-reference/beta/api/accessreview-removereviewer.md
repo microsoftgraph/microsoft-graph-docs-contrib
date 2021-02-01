@@ -3,7 +3,7 @@ title: "Remove accessReview reviewer"
 description: "Remove an access review reviewer."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

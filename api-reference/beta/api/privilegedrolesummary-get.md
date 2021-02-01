@@ -3,7 +3,7 @@ title: "Get privilegedRoleSummary"
 description: "Retrieve the properties and relationships of privilegedRoleSummary object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "governance"
+ms.prod: "microsoft-identity-platform"
 author: "shauliu"
 ---
 
