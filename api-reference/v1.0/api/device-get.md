@@ -3,7 +3,7 @@ title: "Get device"
 description: "Get the properties and relationships of a device object."
 author: "spunukol"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

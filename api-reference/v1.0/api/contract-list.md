@@ -3,7 +3,7 @@ title: "List contracts"
 description: "Retrieve a list of contract objects associated to a partner tenant."
 localization_priority: Normal
 author: "adimitui"
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

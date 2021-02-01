@@ -3,7 +3,7 @@ title: "Update administrativeunit"
 description: "Update the properties of an administrativeUnit object."
 author: "anandyadavMSFT"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

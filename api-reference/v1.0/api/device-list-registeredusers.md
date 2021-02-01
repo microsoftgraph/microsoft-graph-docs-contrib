@@ -3,7 +3,7 @@ title: "List registeredUsers"
 description: "Retrieve a list of users that are registered users of the device."
 author: "spunukol"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

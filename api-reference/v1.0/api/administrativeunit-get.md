@@ -3,7 +3,7 @@ title: "Get administrativeUnit"
 description: "Retrieve the properties and relationships of an administrativeUnit object."
 author: "anandyadavMSFT"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "List devices"
 description: "Retrieve a list of device objects registered in the organization."
 author: "spunukol"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

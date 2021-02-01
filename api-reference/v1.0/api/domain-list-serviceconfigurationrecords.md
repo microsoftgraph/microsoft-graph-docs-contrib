@@ -3,7 +3,7 @@ title: "List serviceConfigurationRecords"
 description: "Retrieves a list of domainDnsRecord objects needed to enable services for the domain."
 author: "adimitui"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

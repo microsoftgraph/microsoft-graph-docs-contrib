@@ -3,7 +3,7 @@ title: "Get subscribedSku"
 description: "Retrieve a specific commercial subscription that an organization has acquired."
 localization_priority: Normal
 author: "SumitParikh"
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

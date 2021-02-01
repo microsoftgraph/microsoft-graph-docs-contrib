@@ -3,7 +3,7 @@ title: "Update device"
 description: "Update the properties of a registered device."
 author: "spunukol"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "List members"
 description: "Use this API to get the members list (user and group) in an administrative unit."
 author: "anandyadavMSFT"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

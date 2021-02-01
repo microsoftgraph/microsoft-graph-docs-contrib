@@ -3,7 +3,7 @@ title: "Create device"
 description: "Create and register a new device in the organization."
 author: "spunukol"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

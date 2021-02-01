@@ -3,7 +3,7 @@ title: "Contract resource type"
 description: "Represents an existing partnership that the partner tenant has with a customer tenant."
 localization_priority: Normal
 author: "adimitui"
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 

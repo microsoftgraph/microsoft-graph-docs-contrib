@@ -3,7 +3,7 @@ title: "List domains"
 description: "Retrieve a list of domain objects."
 author: "adimitui"
 localization_priority: Normal
-ms.prod: "directory-management"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
