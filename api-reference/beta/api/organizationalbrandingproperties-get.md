@@ -3,7 +3,7 @@ title: "Get organizationalBrandingProperties"
 description: "Retrieve the properties and relationships of an organizationalBrandingProperties object."
 localization_priority: Normal
 author: "kexia"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

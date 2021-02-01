@@ -3,7 +3,7 @@ title: "Get authenticationFlowsPolicy"
 description: "Read the properties and relationships of an authenticationFlowsPolicy object."
 author: "linkhp"
 localization_priority: Priority
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

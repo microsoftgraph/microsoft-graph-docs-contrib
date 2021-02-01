@@ -4,7 +4,7 @@ description: "Delete an identityProvider from a b2cIdentityUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Delete an identityProvider from a b2cIdentityUserFlow

@@ -3,7 +3,7 @@ title: "Delete conditionalAccessPolicy"
 description: "Delete a conditionalAccessPolicy."
 localization_priority: Normal
 author: "videor"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

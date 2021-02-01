@@ -3,7 +3,7 @@ title: "Get b2cAuthenticationMethodsPolicy"
 description: "Read the properties of a b2cAuthenticationMethodsPolicy object."
 localization_priority: Priority
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

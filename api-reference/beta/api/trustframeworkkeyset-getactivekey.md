@@ -3,7 +3,7 @@ title: "trustFrameworkKeySet: getActiveKey"
 description: "Get the active key in the keyset."
 localization_priority: Normal
 author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

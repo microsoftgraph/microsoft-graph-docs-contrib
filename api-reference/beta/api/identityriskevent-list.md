@@ -3,7 +3,7 @@ title: "List identityRiskEvents"
 description: "Retrieve a list of identityriskevent objects."
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

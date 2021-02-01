@@ -4,7 +4,7 @@ description: "Delete an identityProvider."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Delete identityProvider

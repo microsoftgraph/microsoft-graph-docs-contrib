@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships a b2xIdentityUserFlow ob
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get b2xIdentityUserFlow

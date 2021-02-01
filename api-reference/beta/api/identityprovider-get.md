@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of an identityProvider o
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get identityProvider

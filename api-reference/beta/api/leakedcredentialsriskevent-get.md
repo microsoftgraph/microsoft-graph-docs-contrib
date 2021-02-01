@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a leakedcredentialsri
 localization_priority: Normal
 doc_type: apiPageType
 author: "cloudhandler"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get leakedCredentialsRiskEvent (deprecated)

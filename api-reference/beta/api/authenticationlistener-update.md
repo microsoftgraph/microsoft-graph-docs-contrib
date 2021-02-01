@@ -3,7 +3,7 @@ title: "Update authenticationListener"
 description: "Update the listener defined for an event in the authentication pipeline."
 author: "jkdouglas"
 localization_priority: Normal
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

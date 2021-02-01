@@ -3,7 +3,7 @@ title: "Update tokenIssuancePolicy"
 description: "Update the properties of tokenIssuancePolicy object."
 localization_priority: Normal
 author: "luleonpla"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

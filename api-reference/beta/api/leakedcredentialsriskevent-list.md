@@ -4,7 +4,7 @@ description: "Retrieve a list of leakedcredentialsriskevent objects."
 localization_priority: Normal
 doc_type: apiPageType
 author: "cloudhandler"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List leakedCredentialsRiskEvents (deprecated)

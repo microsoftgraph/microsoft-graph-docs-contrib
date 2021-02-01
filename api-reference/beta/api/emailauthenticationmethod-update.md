@@ -3,7 +3,7 @@ title: "Update emailAuthenticationMethod"
 description: "Update the properties of an emailAuthenticationMethod object."
 author: "mmcla"
 localization_priority: Normal
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

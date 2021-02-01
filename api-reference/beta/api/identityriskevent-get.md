@@ -3,7 +3,7 @@ title: "Get identityRiskEvent"
 description: "Retrieve the properties and relationships of identityriskevent object."
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

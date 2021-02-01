@@ -3,7 +3,7 @@ title: "List anonymousIpRiskEvents"
 description: "Retrieve a list of anonymousipriskevent objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 author: "cloudhandler"
 ---
 

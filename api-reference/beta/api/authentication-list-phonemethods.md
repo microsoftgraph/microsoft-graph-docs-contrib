@@ -3,7 +3,7 @@ title: "List phoneMethods"
 description: "Retrieve a list of phone authentication method objects."
 localization_priority: Normal
 author: "mmcla"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

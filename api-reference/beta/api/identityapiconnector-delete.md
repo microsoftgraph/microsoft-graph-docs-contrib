@@ -3,7 +3,7 @@ title: "Delete identityApiConnector"
 description: "Deletes an identityApiConnector object."
 author: "nickgmicrosoft"
 localization_priority: Normal
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

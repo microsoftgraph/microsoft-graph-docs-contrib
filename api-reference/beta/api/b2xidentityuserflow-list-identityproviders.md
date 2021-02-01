@@ -4,7 +4,7 @@ description: "List all identityProviders in a b2xIdentityUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List all identityProviders in a b2xIdentityUserFlow

@@ -3,7 +3,7 @@ title: "Get emailAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of an emailAuthenticationMethodConfiguration object."
 author: "mmcla"
 localization_priority: Normal
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

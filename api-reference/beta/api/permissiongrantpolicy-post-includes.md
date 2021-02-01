@@ -3,7 +3,7 @@ title: "Create permissionGrantConditionSet in includes collection of permissionG
 description: "Add conditions under which a permission grant event is included in a permission grant policy."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 

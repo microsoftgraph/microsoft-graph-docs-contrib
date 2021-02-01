@@ -3,7 +3,7 @@ title: "Delete microsoftAuthenticatorAuthenticationMethod"
 description: "Deletes a microsoftAuthenticatorAuthenticationMethod object."
 author: "mmcla"
 localization_priority: Normal
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

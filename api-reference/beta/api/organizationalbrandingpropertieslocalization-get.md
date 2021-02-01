@@ -3,7 +3,7 @@ title: "Get localized organizationalBrandingProperties"
 description: "Retrieve organizationalbrandingproperties object for a specific locale."
 localization_priority: Normal
 author: "kexia"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

@@ -3,7 +3,7 @@ title: "Update homerealmdiscoverypolicy"
 description: "Update the properties of homeRealmDiscoveryPolicy object."
 localization_priority: Normal
 author: "hpsin"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

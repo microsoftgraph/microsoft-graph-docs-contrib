@@ -3,7 +3,7 @@ title: "Get ipNamedLocation"
 description: "Retrieve the properties and relationships of an ipnamedlocation object."
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "List history of riskyUser"
 description: "Retrieve the risk history"
 localization_priority: Normal
 author: "cloudhandler"
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 # List history of riskyUser

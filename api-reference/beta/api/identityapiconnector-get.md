@@ -3,7 +3,7 @@ title: "Get identityApiConnector"
 description: "Read the properties of an API connector."
 author: "nickgmicrosoft"
 localization_priority: Normal
-ms.prod: "identity-and-sign-in"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
