@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-PrintConnector printConnector = graphClient.print().connectors("{id}")
+Connector connector = graphClient.onPremisesPublishingProfiles("applicationProxy").connectors("{id}")
 	.buildRequest()
 	.get();
 

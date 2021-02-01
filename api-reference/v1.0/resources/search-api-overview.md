@@ -120,16 +120,14 @@ Any combinations involving **message**, **event**, SharePoint and OneDrive types
 
 - The search API does not support aggregations for **message**, **event**, **site** or **drive**.
 
-## Search samples
+- Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with the operation of the Microsoft Search API.
+
+## See also
 
 - Learn more about a few key use cases:
   - [Search Outlook messages](/graph/search-concept-messages)
   - [Search calendar events](/graph/search-concept-events)
-  - [Search content in Sharepoint and OneDrive](/graph/search-concept-files)
+  - [Search content in SharePoint and OneDrive](/graph/search-concept-files)
 
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-
-
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+- Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
