@@ -696,6 +696,29 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Domain.ReadWrite.All_ | Read and write domains | Allows the app to read and write domains without a signed-in user. | Yes |
 
+## eDiscovery permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_eDiscovery.Read.All_ |Read user eDiscovery case data |Allows the app to read eDiscovery objects such as cases, custodians, review sets and other related objects on behalf of the signed-in user. |Yes | No |
+|_eDiscovery.ReadWrite.All_ | Read and write eDiscovery case data |Allows the app to read and write eDiscovery objects such as cases, custodians, review sets and other related objects on behalf of the signed-in user. |Yes | No |
+
+#### Application permissions
+
+None
+
+### Example usage
+
+#### Delegated
+
+* _eDiscovery.Read.All_: Get the list of cases available to the user (`GET /compliance/ediscovery/cases`)
+* _eDiscovery.ReadWrite.All_: Create a reviewset query in a review set (`POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewSetId}/queries`)
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
 
 ## Education permissions
 
