@@ -73,7 +73,7 @@ Content-Type: application/json
 Content-length: 295
 
 {
-  "@odata.type": "#microsoft.graph.ediscovery.legalhold",
+  "@odata.type": "#microsoft.graph.ediscovery.legalHold",
   "description": "String",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
@@ -94,7 +94,7 @@ Content-length: 295
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.legalhold"
+  "@odata.type": "microsoft.graph.ediscovery.legalHold"
 }
 -->
 
@@ -103,7 +103,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.ediscovery.legalhold",
+  "@odata.type": "#microsoft.graph.ediscovery.legalHold",
   "id": "700cd868-d868-700c-68d8-0c7068d80c70",
   "description": "String",
   "createdBy": {

@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalH
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.ediscovery.legalhold)"
+  "@odata.type": "Collection(microsoft.graph.ediscovery.legalHold)"
 }
 -->
 ``` http
@@ -78,7 +78,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.ediscovery.legalhold",
+      "@odata.type": "#microsoft.graph.ediscovery.legalHold",
       "id": "700cd868-d868-700c-68d8-0c7068d80c70",
       "description": "String",
       "createdBy": {

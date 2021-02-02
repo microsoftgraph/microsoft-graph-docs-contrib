@@ -68,7 +68,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.ediscovery.legalhold",
+  "@odata.type": "microsoft.graph.ediscovery.legalHold",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
@@ -76,7 +76,7 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.ediscovery.legalhold",
+  "@odata.type": "#microsoft.graph.ediscovery.legalHold",
   "id": "String (identifier)",
   "description": "String",
   "createdBy": {

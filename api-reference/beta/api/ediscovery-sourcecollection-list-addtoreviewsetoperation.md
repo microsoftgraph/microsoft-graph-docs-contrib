@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.addToReviewSetOperation)"
+  "@odata.type": "Collection(microsoft.graph.ediscovery.addToReviewSetOperation)"
 }
 -->
 
@@ -85,7 +85,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.addToReviewSetOperation",
+      "@odata.type": "#microsoft.graph.ediscovery.addToReviewSetOperation",
       "id": "9055c657-c657-9055-57c6-559057c65590",
       "createdDateTime": "String (timestamp)",
       "completedDateTime": "String (timestamp)",
