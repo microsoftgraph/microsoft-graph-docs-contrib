@@ -23,13 +23,34 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:------------------------------------------------------|
 | Delegated (work or school account)     | Not Supported.                                        |
 | Delegated (personal Microsoft account) | Not Supported.                                        |
-| Application                            | OnlineMeetings.Read.All |
+| Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
+
+> [!IMPORTANT]
+> \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to retrieve an online meeting on behalf of that user (user ID specified in the request path).
 
 ## HTTP request
+To get the specified onlineMeeting using meeting ID with delegated token:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
+GET /me/onlineMeetings/{meetingId}
 ```
+
+To get the specified onlineMeeting using meeting ID with application token:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{userId}/onlineMeetings/{meetingId}
+```
+
+To get the specified onlineMeeting using **videoTeleconferenceId***:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
+```
+
+> **Note:**
+> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+> - `meetingId` is the **id** of an [onlineMeeting entity](../resources/onlinemeeting.md).
+> - \* This scenario is application token only and does not support application access policy.
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.

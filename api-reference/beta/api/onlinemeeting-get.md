@@ -41,10 +41,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To get the specified onlineMeeting using meeting ID:
+To get the specified onlineMeeting using meeting ID with delegated permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
+```
+
+To get the specified onlineMeeting using meeting ID with application permission:
+<!-- { "blockType": "ignored" } -->
+```http
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
