@@ -50,14 +50,14 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.reviewSet",
+  "@odata.type": "microsoft.graph.ediscovery.reviewSet",
   "baseType": "",
   "keyProperty": "id"
 }-->
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.reviewSet",
+  "@odata.type": "#microsoft.graph.ediscovery.reviewSet",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
   },

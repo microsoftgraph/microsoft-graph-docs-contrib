@@ -51,14 +51,14 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.reviewSetQuery",
+  "@odata.type": "microsoft.graph.ediscovery.reviewSetQuery",
   "baseType": "",
   "keyProperty": "id"
 }-->
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.reviewSetQuery",
+  "@odata.type": "#microsoft.graph.ediscovery.reviewSetQuery",
   "query": "String",
   "lastModifiedBy": {
     "@odata.type": "microsoft.graph.identitySet"

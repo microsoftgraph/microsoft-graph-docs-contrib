@@ -64,7 +64,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.sourceCollection",
+  "@odata.type": "microsoft.graph.ediscovery.sourceCollection",
   "baseType": "",
   "openType": false
 }
@@ -72,7 +72,7 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.sourceCollection",
+  "@odata.type": "#microsoft.graph.ediscovery.sourceCollection",
   "displayName": "String",
   "description": "String",
   "createdBy": {

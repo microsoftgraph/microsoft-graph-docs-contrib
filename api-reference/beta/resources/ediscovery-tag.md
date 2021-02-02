@@ -60,7 +60,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.tag",
+  "@odata.type": "microsoft.graph.ediscovery.tag",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
@@ -68,7 +68,7 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.tag",
+  "@odata.type": "#microsoft.graph.ediscovery.tag",
   "id": "String (identifier)",
   "displayName": "String",
   "description": "String",

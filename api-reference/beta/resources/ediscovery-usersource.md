@@ -54,15 +54,15 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.userSource",
-  "baseType": "microsoft.graph.dataSource",
+  "@odata.type": "microsoft.graph.ediscovery.userSource",
+  "baseType": "microsoft.graph.ediscovery.dataSource",
   "openType": false
 }
 -->
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.userSource",
+  "@odata.type": "#microsoft.graph.ediscovery.userSource",
   "displayName": "String",
   "createdDateTime": "String (timestamp)",
   "createdBy": {

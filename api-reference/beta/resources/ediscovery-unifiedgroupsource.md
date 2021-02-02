@@ -55,7 +55,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.unifiedGroupSource",
+  "@odata.type": "microsoft.graph.ediscovery.unifiedGroupSource",
   "baseType": "microsoft.graph.dataSource",
   "openType": false
 }
