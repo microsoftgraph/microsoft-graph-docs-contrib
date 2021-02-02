@@ -221,20 +221,20 @@ Content-Length: 1574
 ```
 
 ### Example 2: Retrieve an online meeting by meeting ID
-You can retrieve meeting information via meeting ID with either a user or application token. The meeting ID is provided in the response object when creating an [onlineMeeting](../resources/onlinemeeting.md). This option is available to support use cases where the meeting ID is known, such as when an application first creates the meeting, then retrieves meeting information later as a seperate action.
+You can retrieve meeting information via meeting ID with either a user or application token. The meeting ID is provided in the response object when creating an [onlineMeeting](../resources/onlinemeeting.md). This option is available to support use cases where the meeting ID is known, such as when the online meeting has been created using Graph API first then user/app retrieves meeting information later as a separate action.
 
 #### Request
 
 The following request uses a user token.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZjZhNDQyZTQ2MjIqMCoqMTk6bWVldGluZ19NelEyTURrNU9EY3RNakJsTWkwME5ESTRMV0poTWpZdFpHRTNaR1F6WTJRd056QTBAdGhyZWFkLnYy
 ```
 
 The following request uses an app token.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2
+GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZjZhNDQyZTQ2MjIqMCoqMTk6bWVldGluZ19NelEyTURrNU9EY3RNakJsTWkwME5ESTRMV0poTWpZdFpHRTNaR1F6WTJRd056QTBAdGhyZWFkLnYy
 ```
 
 #### Response
@@ -243,7 +243,7 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 ```json
 {
-    "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2",
+    "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZjZhNDQyZTQ2MjIqMCoqMTk6bWVldGluZ19NelEyTURrNU9EY3RNakJsTWkwME5ESTRMV0poTWpZdFpHRTNaR1F6WTJRd056QTBAdGhyZWFkLnYy",
     "creationDateTime": "2020-09-29T22:35:33.1594516Z",
     "startDateTime": "2020-09-29T22:35:31.389759Z",
     "endDateTime": "2020-09-29T23:35:31.389759Z",
