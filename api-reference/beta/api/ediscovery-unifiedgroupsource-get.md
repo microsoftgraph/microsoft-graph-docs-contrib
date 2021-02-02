@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.ediscovery.unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) object in the response body.
 
 ## Examples
 

@@ -51,8 +51,8 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|tagsToAdd|[tag](../resources/ediscovery-tag.md) collection|Ids of tags to add to the documents that match the query.|
-|tagsToRemove|[tag](../resources/ediscovery-tag.md) collection|Ids of tags to add to the documents that match the query.|
+|tagsToAdd|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Ids of tags to add to the documents that match the query.|
+|tagsToRemove|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Ids of tags to add to the documents that match the query.|
 
 ## Response
 

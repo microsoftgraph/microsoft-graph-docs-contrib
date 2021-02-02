@@ -19,9 +19,9 @@ The container for a [custodian's](ediscovery-custodian.md) mailbox and OneDrive 
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List userSources](../api/ediscovery-custodian-list-usersources.md)|[userSource](../resources/ediscovery-usersource.md) collection|Get a list of the **userSource** objects and their properties.|
-|[Create userSource](../api/ediscovery-custodian-post-usersources.md)|[userSource](../resources/ediscovery-usersource.md)|Create a new **userSource** object.|
-|[Get userSource](../api/ediscovery-usersource-get.md)|[userSource](../resources/ediscovery-usersource.md)|Read the properties and relationships of a **userSource** object.|
+|[List userSources](../api/ediscovery-custodian-list-usersources.md)|[microsoft.graph.ediscovery.userSource](../resources/ediscovery-usersource.md) collection|Get a list of the **userSource** objects and their properties.|
+|[Create userSource](../api/ediscovery-custodian-post-usersources.md)|[microsoft.graph.ediscovery.userSource](../resources/ediscovery-usersource.md)|Create a new **userSource** object.|
+|[Get userSource](../api/ediscovery-usersource-get.md)|[microsoft.graph.ediscovery.userSource](../resources/ediscovery-usersource.md)|Read the properties and relationships of a **userSource** object.|
 |[Delete userSource](../api/ediscovery-usersource-delete.md)|None|Delete a **userSource** object.|
 
 ## Properties

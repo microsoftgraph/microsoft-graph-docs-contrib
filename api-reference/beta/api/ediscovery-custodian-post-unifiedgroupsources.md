@@ -56,7 +56,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.ediscovery.unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) object in the response body.
 
 ## Examples
 

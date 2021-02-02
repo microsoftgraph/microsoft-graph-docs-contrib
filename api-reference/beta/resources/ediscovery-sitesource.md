@@ -19,9 +19,9 @@ The container for a site associated with a [custodian](ediscovery-custodian.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List siteSources](../api/ediscovery-custodian-list-sitesources.md)|[siteSource](../resources/ediscovery-sitesource.md) collection|Get a list of **siteSource** objects and their properties.|
-|[Create siteSource](../api/ediscovery-custodian-post-sitesources.md)|[siteSource](../resources/ediscovery-sitesource.md)|Create a new **siteSource** object.|
-|[Get siteSource](../api/ediscovery-sitesource-get.md)|[siteSource](../resources/ediscovery-sitesource.md)|Read the properties and relationships of a **siteSource** object.|
+|[List siteSources](../api/ediscovery-custodian-list-sitesources.md)|[microsoft.graph.ediscovery.siteSource](../resources/ediscovery-sitesource.md) collection|Get a list of **siteSource** objects and their properties.|
+|[Create siteSource](../api/ediscovery-custodian-post-sitesources.md)|[microsoft.graph.ediscovery.siteSource](../resources/ediscovery-sitesource.md)|Create a new **siteSource** object.|
+|[Get siteSource](../api/ediscovery-sitesource-get.md)|[microsoft.graph.ediscovery.siteSource](../resources/ediscovery-sitesource.md)|Read the properties and relationships of a **siteSource** object.|
 |[Delete siteSource](../api/ediscovery-sitesource-delete.md)|None|Delete a **siteSource** object.|
 
 ## Properties

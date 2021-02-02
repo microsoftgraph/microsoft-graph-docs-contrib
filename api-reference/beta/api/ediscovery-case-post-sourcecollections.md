@@ -57,7 +57,7 @@ You must provide either a **custodianSource** or **additionalSource**
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [sourceCollection](../resources/ediscovery-sourcecollection.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md) object in the response body.
 
 ## Examples
 

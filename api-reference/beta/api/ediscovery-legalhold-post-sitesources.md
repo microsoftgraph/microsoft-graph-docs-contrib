@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [siteSource](../resources/ediscovery-sitesource.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.ediscovery.siteSource](../resources/ediscovery-sitesource.md) object in the response body.
 
 ## Examples
 

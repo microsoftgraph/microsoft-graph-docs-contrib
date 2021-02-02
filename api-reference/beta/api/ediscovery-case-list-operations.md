@@ -31,14 +31,17 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /compliance/ediscovery/cases/{caseId}/operations
 ```
 
 ## Optional query parameters
+
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
@@ -48,22 +51,24 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [caseOperation](../resources/ediscovery-caseoperation.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.ediscovery.caseOperation](../resources/ediscovery-caseoperation.md) objects in the response body.
 
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "list_caseoperation"
 }
 -->
+
 ``` http
-GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/operations
+GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-4bd9-b41d-abf35edc7583/operations
 ```
 
-
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -71,6 +76,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/operat
   "@odata.type": "Collection(microsoft.graph.caseOperation)"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -95,4 +101,3 @@ Content-Type: application/json
   ]
 }
 ```
-

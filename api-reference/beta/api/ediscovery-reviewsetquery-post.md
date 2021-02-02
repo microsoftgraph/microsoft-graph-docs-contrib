@@ -49,7 +49,7 @@ In the request body, supply a JSON representation of [reviewSetQuery](../resourc
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a new [reviewSetQuery](../resources/ediscovery-reviewsetquery.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [microsoft.graph.ediscovery.reviewSetQuery](../resources/ediscovery-reviewsetquery.md) object in the response body.
 
 ## Examples
 

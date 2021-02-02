@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [case](../resources/ediscovery-case.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [microsoft.graph.ediscovery.case](../resources/ediscovery-case.md) object in the response body.
 
 ## Examples
 
@@ -74,7 +74,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.case"
+  "@odata.type": "microsoft.graph.ediscovery.case"
 } -->
 
 ```http

@@ -46,7 +46,7 @@ Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|reviewSet|[reviewSet](../resources/ediscovery-reviewset.md)| The review set the content is being exported from. |
+|reviewSet|[microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md)| The review set the content is being exported from. |
 
 ## JSON representation
 

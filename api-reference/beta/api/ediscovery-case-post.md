@@ -41,7 +41,7 @@ POST /compliance/ediscovery/cases
 
 ## Request body
 
-In the request body, supply a JSON representation of an [case](../resources/ediscovery-case.md) object. The following table lists properties that can be submitted with the call.
+In the request body, supply a JSON representation of an [microsoft.graph.ediscovery.case](../resources/ediscovery-case.md) object. The following table lists properties that can be submitted with the call.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -49,7 +49,7 @@ In the request body, supply a JSON representation of an [case](../resources/edis
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a new [case](../resources/ediscovery-case.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [microsoft.graph.ediscovery.case](../resources/ediscovery-case.md) object in the response body.
 
 ## Examples
 
@@ -99,7 +99,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.case"
+  "@odata.type": "microsoft.graph.ediscovery.case"
 } -->
 
 ```http

@@ -51,7 +51,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|sourceCollection|[sourceCollection](../resources/ediscovery-sourcecollection.md)|The ID of the **sourceCollection**|
+|sourceCollection|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|The ID of the **sourceCollection**|
 |additionalData|dataCollectionScope|The **dataCollectionScope** that will be included with the collection|
 
 ### dataCollectionScope values
