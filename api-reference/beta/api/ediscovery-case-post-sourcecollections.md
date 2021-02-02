@@ -89,7 +89,7 @@ Content-length: 272
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sourceCollection"
+  "@odata.type": "microsoft.graph.ediscovery.sourceCollection"
 }
 -->
 

@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/review
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.reviewSet)"
+  "@odata.type": "Collection(microsoft.graph.ediscovery.reviewSet)"
 }
 -->
 

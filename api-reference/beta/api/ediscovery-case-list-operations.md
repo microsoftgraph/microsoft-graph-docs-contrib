@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-4
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.caseOperation)"
+  "@odata.type": "Collection(microsoft.graph.ediscovery.caseOperation)"
 }
 -->
 
@@ -84,7 +84,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.caseOperation",
+      "@odata.type": "#microsoft.graph.ediscovery.caseOperation",
       "id": "41362b70-2b70-4136-702b-3641702b3641",
       "createdDateTime": "String (timestamp)",
       "completedDateTime": "String (timestamp)",

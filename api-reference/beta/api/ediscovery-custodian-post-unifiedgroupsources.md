@@ -104,7 +104,7 @@ Content-length: 219
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedGroupSource"
+  "@odata.type": "microsoft.graph.ediscovery.unifiedGroupSource"
 }
 -->
 

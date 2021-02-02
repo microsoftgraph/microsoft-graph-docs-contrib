@@ -100,7 +100,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.reviewSetQuery"
+  "@odata.type": "microsoft.graph.ediscovery.reviewSetQuery"
 } -->
 
 ```http

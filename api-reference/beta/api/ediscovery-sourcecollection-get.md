@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/source
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sourceCollection"
+  "@odata.type": "microsoft.graph.ediscovery.sourceCollection"
 }
 -->
 

@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/source
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.sourceCollection)"
+  "@odata.type": "Collection(microsoft.graph.ediscovery.sourceCollection)"
 }
 -->
 

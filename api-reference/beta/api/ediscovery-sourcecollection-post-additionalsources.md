@@ -76,7 +76,7 @@ Content-Type: application/json
 Content-length: 179
 
 {
-    "@odata.type": "#microsoft.graph.userSource",
+    "@odata.type": "#microsoft.graph.ediscovery.userSource",
     "email": "badguy@contoso.com"
 }
 ```
@@ -96,7 +96,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.dataSource",
+  "@odata.type": "#microsoft.graph.ediscovery.dataSource",
   "id": "0fb67fc5-7fc5-0fb6-c57f-b60fc57fb60f",
   "displayName": "String",
   "createdDateTime": "String (timestamp)",

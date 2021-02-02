@@ -44,15 +44,15 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.tagOperation",
-  "baseType": "microsoft.graph.caseOperation",
+  "@odata.type": "microsoft.graph.ediscovery.tagOperation",
+  "baseType": "microsoft.graph.ediscovery.caseOperation",
   "openType": false
 }
 -->
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.tagOperation",
+  "@odata.type": "#microsoft.graph.ediscovery.tagOperation",
   "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
   "completedDateTime": "String (timestamp)",
