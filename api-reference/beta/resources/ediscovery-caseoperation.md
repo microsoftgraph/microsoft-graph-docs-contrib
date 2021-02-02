@@ -27,14 +27,14 @@ None
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|caseAction| The type of action the operation represents. Possible values are: `contentExport`, `tag`, `convertToPdf`, `index`, `search`, `addDataToReviewSet`.|
+|action|microsoft.graph.ediscovery.caseAction| The type of action the operation represents. Possible values are: `contentExport`, `tag`, `convertToPdf`, `index`, `search`, `addDataToReviewSet`.|
 |completedDateTime|DateTimeOffset| The date and time the operation was completed. |
 |createdBy|[identitySet](../resources/identityset.md)| The user that created the operation. |
 |createdDateTime|DateTimeOffset| The date and time the operation was created. |
 |id|String| The ID for the operation. Read-only. |
 |percentProgress|Int32| The progress of the operation. |
 |resultInfo|[resultInfo](../resources/resultinfo.md)| Contains success and failure-specific result information. |
-|status|caseOperationStatus| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
+|status|microsoft.graph.ediscovery.caseOperationStatus| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
 
 ### caseAction values
 

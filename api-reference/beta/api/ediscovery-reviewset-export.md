@@ -56,7 +56,7 @@ The following table shows the parameters that can be used with this action.
 |azureBlobContainer|String| When exporting to your own Azure storage account, this is the container URL. |
 |azureBlobToken|String| When exporting to your own Azure storage account, SAS token for the container URL. |
 |exportOptions| [exportOptions](ediscovery-reviewset-export.md) |specifies options that control the format of the export. |
-|exportStructure|[exportFileStructure](ediscovery-reviewset-export.md)| Options that control file structure and packaging of the export. |
+|exportStructure|[microsoft.graph.ediscovery.exportFileStructure](ediscovery-reviewset-export.md)| Options that control file structure and packaging of the export. |
 
 ### exportOptions values
 

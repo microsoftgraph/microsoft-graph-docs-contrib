@@ -25,8 +25,8 @@ Represents an eDiscovery collection - commonly known as a search.  See [Collect 
 |[Update sourceCollection](../api/ediscovery-sourcecollection-update.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Update the properties of a [microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md) object.|
 |[Delete sourceCollection](../api/ediscovery-sourcecollection-delete.md)|None|Deletes a [microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md) object.|
 |[Estimate Statistics](../api/ediscovery-sourcecollection-estimatestatistics.md)|None|Estimates the count and size of items that could be collected - Added to a review set.|
-|[List additionalSources](../api/ediscovery-sourcecollection-list-additionalsources.md)|[dataSource](../resources/ediscovery-datasource.md) collection|Get the dataSource resources from the additionalSources navigation property.|
-|[List custodianSources](../api/ediscovery-sourcecollection-list-custodiansources.md)|[dataSource](../resources/ediscovery-datasource.md) collection|Get the dataSource resources from the custodianSources navigation property.|
+|[List additionalSources](../api/ediscovery-sourcecollection-list-additionalsources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Get the dataSource resources from the additionalSources navigation property.|
+|[List custodianSources](../api/ediscovery-sourcecollection-list-custodiansources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Get the dataSource resources from the custodianSources navigation property.|
 
 ## Properties
 
@@ -53,10 +53,10 @@ Represents an eDiscovery collection - commonly known as a search.  See [Collect 
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|additionalSources|[dataSource](../resources/ediscovery-datasource.md) collection|Adds an additional source to the **sourceCollection**.|
-|addToReviewSetOperation|[addToReviewSetOperation](../resources/ediscovery-addtoreviewsetoperation.md)|Adds the results of the **sourceCollection** to the specified **reviewSet**.|
-|custodianSources|[dataSource](../resources/ediscovery-datasource.md) collection|**Custodian** sources that are included in the **sourceCollection**.|
-|lastEstimateStatisticsOperation|[estimateStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md)|The last estimate operation associated with the **sourceCollection**.|
+|additionalSources|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Adds an additional source to the **sourceCollection**.|
+|addToReviewSetOperation|[microsoft.graph.ediscovery.addToReviewSetOperation](../resources/ediscovery-addtoreviewsetoperation.md)|Adds the results of the **sourceCollection** to the specified **reviewSet**.|
+|custodianSources|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|**Custodian** sources that are included in the **sourceCollection**.|
+|lastEstimateStatisticsOperation|[microsoft.graph.ediscovery.estimateStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md)|The last estimate operation associated with the **sourceCollection**.|
 
 ## JSON representation
 

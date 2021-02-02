@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|childSelectability|childSelectability|Indicates whether a single or multiple child tags can be associated with a document. Possible values are: `One`, `Many`.  This value controls whether the UX presents the tags as checkboxes or a radio button group.|
+|childSelectability|microsoft.graph.ediscovery.childSelectability|Indicates whether a single or multiple child tags can be associated with a document. Possible values are: `One`, `Many`.  This value controls whether the UX presents the tags as checkboxes or a radio button group.|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the tag.|
 |description|String|The description for the tag.|
 |displayName|String|Display name of the tag.|

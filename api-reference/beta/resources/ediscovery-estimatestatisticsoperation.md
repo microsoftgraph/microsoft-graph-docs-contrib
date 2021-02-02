@@ -25,7 +25,7 @@ None
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|caseAction| The type of operation - `estimateStatistics`. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
+|action|microsoft.graph.ediscovery.caseAction| The type of operation - `estimateStatistics`. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
 |completedDateTime|DateTimeOffset|The date and time the operation was completed. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md)|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the operation. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md)|
 |createdDateTime|DateTimeOffset|The date and time the operation was started. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md)|
@@ -36,7 +36,7 @@ None
 |percentProgress|Int32|The progress of the operation. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md)|
 |resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md)|
 |siteCount|Int32|The number of mailboxes that had search hits.|
-|status|caseOperationStatus|The status of the case operation. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md). Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
+|status|microsoft.graph.ediscovery.caseOperationStatus|The status of the case operation. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md). Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
 |unindexedItemCount|Int64|The estimated count of unindexed items for the collection.|
 |unindexedItemsSize|Int64|The estimated size of unindexed items for the collection.|
 
