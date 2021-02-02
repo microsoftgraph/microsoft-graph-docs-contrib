@@ -85,10 +85,10 @@
 				{
 					"Id": "44007372-3358-11eb-9836-6aeb5ee7dda6",
 					"ApiChange": "Resource",
-					"ChangedApiName": "legalhold",
+					"ChangedApiName": "legalHold",
 					"ChangeType": "Addition",
-					"Description": "Added the [legalhold](https://docs.microsoft.com/en-us/graph/api/resources/legalhold?view=graph-rest-beta) resource type",
-					"Target": "legalhold"
+					"Description": "Added the [legalHold](https://docs.microsoft.com/en-us/graph/api/resources/legalHold?view=graph-rest-beta) resource type",
+					"Target": "legalHold"
 				},
 				{
 					"Id": "4402d88b-3358-11eb-9836-6aeb5ee7dda6",

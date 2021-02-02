@@ -1,19 +1,19 @@
 ---
-title: "Get legalhold"
-description: "Read the properties and relationships of a legalhold object."
+title: "Get legalHold"
+description: "Read the properties and relationships of a legalHold object."
 localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Get legalhold
+# Get legalHold
 
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [legalhold](../resources/ediscovery-legalhold.md) object.
+Read the properties and relationships of a [legalHold](../resources/ediscovery-legalhold.md) object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}
+GET /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}
 ```
 
 ## Optional query parameters
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [legalhold](../resources/ediscovery-legalhold.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [legalHold](../resources/ediscovery-legalhold.md) object in the response body.
 
 ## Examples
 
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a [legalhold](..
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}
+GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}
 ```
 
 ### Response

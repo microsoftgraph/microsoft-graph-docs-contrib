@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [sourceCollection](../resources/ediscovery-sourcecollection.md) resources from the sourceCollections navigation property.
+Get the [sourceCollection](../resources/ediscovery-sourcecollection.md) from a [case](../resources/case.md) object.
 
 ## Permissions
 

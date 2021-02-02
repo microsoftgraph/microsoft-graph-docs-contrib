@@ -13,15 +13,15 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Review set queries are used to query and cull data stored in an eDiscovery [reviewSet](reviewset.md).
+Review set queries are used to query and cull data stored in an eDiscovery [reviewSet](ediscovery-reviewset.md).
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List queries](../api/ediscovery-reviewsetquery-list.md) | [reviewSetQuery](reviewsetquery.md) collection | List the review set queries in a review set. |
-| [Create queries](../api/ediscovery-reviewsetquery-post.md) | [reviewSetQuery](reviewsetquery.md) | Create a new review set query. |
-| [Get queries](../api/ediscovery-reviewsetquery-get.md) | [reviewSetQuery](reviewsetquery.md) | Read the properties and relationships of a **reviewSetQuery** object. |
+| [List queries](../api/ediscovery-reviewsetquery-list.md) | [reviewSetQuery](ediscovery-reviewsetquery.md) collection | List the review set queries in a review set. |
+| [Create queries](../api/ediscovery-reviewsetquery-post.md) | [reviewSetQuery](ediscovery-reviewsetquery.md) | Create a new review set query. |
+| [Get queries](../api/ediscovery-reviewsetquery-get.md) | [reviewSetQuery](ediscovery-reviewsetquery.md) | Read the properties and relationships of a **reviewSetQuery** object. |
 | [Update reviewSetQuery](../api/ediscovery-reviewsetquery-update.md) | None | Update a review set query. |
 | [Delete reviewSetQuery](../api/ediscovery-reviewsetquery-delete.md) | None | Delete review set query. |
 | [applyTags](../api/ediscovery-reviewsetquery-applytags.md)|None|Apply tags to documents that match the specified query|

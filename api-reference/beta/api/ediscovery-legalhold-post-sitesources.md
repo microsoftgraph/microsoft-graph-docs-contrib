@@ -1,19 +1,19 @@
 ---
-title: "Create legalhold siteSource"
-description: "Create a new legalhold siteSource object."
+title: "Create legalHold siteSource"
+description: "Create a new legalHold siteSource object."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Create legalhold siteSource
+# Create legalHold siteSource
 
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new legalhold siteSource object.
+Create a new legalHold siteSource object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}/siteSources
+POST /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/siteSources
 ```
 
 ## Request headers
@@ -68,7 +68,7 @@ If successful, this method returns a `201 Created` response code and a [siteSour
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-40c5-a760-331361e05c60/legalholds/387566cc-38ae-4e85-ab4b-cd2dd34faa07/siteSources
+POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-40c5-a760-331361e05c60/legalHolds/387566cc-38ae-4e85-ab4b-cd2dd34faa07/siteSources
 Content-Type: application/json
 Content-length: 154
 
@@ -92,7 +92,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('c816dd6f-5af8-40c5-a760-331361e05c60')/legalholds('387566cc-38ae-4e85-ab4b-cd2dd34faa07')/siteSources/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('c816dd6f-5af8-40c5-a760-331361e05c60')/legalHolds('387566cc-38ae-4e85-ab4b-cd2dd34faa07')/siteSources/$entity",
     "displayName": "Adele Vance",
     "createdDateTime": "2020-12-28T20:08:57.857Z",
     "id": "50073f3e-cb22-48e5-95a9-51a3da455181",

@@ -1,5 +1,5 @@
 ---
-title: "List legalhold userSources"
+title: "List legalHold userSources"
 description: "Get the userSource resources from the userSources navigation property."
 author: "mahage-msft"
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# List legalhold userSources
+# List legalHold userSources
 
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the legalhold userSource resources from the userSources navigation property.
+Get the legalHold userSource resources from the userSources navigation property.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}/userSources
+GET /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/userSources
 ```
 
 ## Optional query parameters
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-40c5-a760-331361e05c60/legalholds/277107ff-fee3-41a0-a665-a9d7f6c4824f/userSources
+GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-40c5-a760-331361e05c60/legalHolds/277107ff-fee3-41a0-a665-a9d7f6c4824f/userSources
 ```
 
 ### Response

@@ -1,19 +1,19 @@
 ---
-title: "Create legalhold userSource"
-description: "Create a new legalhold userSource object."
+title: "Create legalHold userSource"
+description: "Create a new legalHold userSource object."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Create legalhold userSource
+# Create legalHold userSource
 
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new legalhold userSource object.
+Create a new legalHold userSource object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}/userSources
+POST /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/userSources
 ```
 
 ## Request headers
@@ -52,7 +52,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |email|String|SMTP address of the user.|
-|includedSources|sourceType|Specifies which sources are included in this group. This value must be `mailbox`, `site` is not supported for legalholds at this time.|
+|includedSources|sourceType|Specifies which sources are included in this group. This value must be `mailbox`, `site` is not supported for legalHolds at this time.|
 
 ## Response
 
@@ -69,7 +69,7 @@ If successful, this method returns a `201 Created` response code and a [userSour
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-40c5-a760-331361e05c60/legalholds/387566cc-38ae-4e85-ab4b-cd2dd34faa07/userSources
+POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-40c5-a760-331361e05c60/legalHolds/387566cc-38ae-4e85-ab4b-cd2dd34faa07/userSources
 Content-Type: application/json
 Content-length: 208
 

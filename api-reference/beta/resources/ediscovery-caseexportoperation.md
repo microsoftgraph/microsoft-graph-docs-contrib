@@ -35,7 +35,7 @@ Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).
 |createdDateTime|DateTimeOffset| The date and time the export was created. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md)|
 |description|String| The description provided for the export. |
 |exportOptions|exportOptions| The options provided for the export. See [reviewSet: export](../api/ediscovery-reviewset-export.md) for more details. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`, `unknownFutureValue`.|
-|exportStructure|exportFileStructure|The options provided that specify the structure of the export. See [reviewSet: export](../apiediscovery-reviewset-export.md) for more details. Possible values are: `none`, `directory`, `pst`, `unknownFutureValue`.|
+|exportStructure|exportFileStructure|The options provided that specify the structure of the export. See [reviewSet: export](../api/ediscovery-reviewset-export.md) for more details. Possible values are: `none`, `directory`, `pst`, `unknownFutureValue`.|
 |id|String| The ID for the operation. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
 |outputName|String| The name provided for the export.|
 |percentProgress|Int32| The progress of the operation. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md)|

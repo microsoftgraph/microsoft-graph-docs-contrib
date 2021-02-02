@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the reviewSet resources from the reviewSets navigation property.
+Get the list of [reviewSets](../resources/ediscovery-reviewset.md) from a [case](../resources/case.md) object
 
 ## Permissions
 

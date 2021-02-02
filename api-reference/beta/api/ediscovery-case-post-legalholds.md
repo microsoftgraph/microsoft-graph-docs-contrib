@@ -1,19 +1,19 @@
 ---
-title: "Create legalhold"
-description: "Create a new legalhold object."
+title: "Create legalHold"
+description: "Create a new legalHold object."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
-# Create legalhold
+# Create legalHold
 
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new legalhold object.
+Create a new legalHold object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /compliance/ediscovery/cases/{caseId}/legalholds
+POST /compliance/ediscovery/cases/{caseId}/legalHolds
 ```
 
 ## Request headers
@@ -45,9 +45,9 @@ POST /compliance/ediscovery/cases/{caseId}/legalholds
 
 ## Request body
 
-In the request body, supply a JSON representation of the [legalhold](../resources/ediscovery-legalhold.md) object.
+In the request body, supply a JSON representation of the [legalHold](../resources/ediscovery-legalhold.md) object.
 
-The following table shows the properties that are required when you create the [legalhold](../resources/ediscovery-legalhold.md).
+The following table shows the properties that are required when you create the [legalHold](../resources/ediscovery-legalhold.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [legalhold](../resources/ediscovery-legalhold.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [legalHold](../resources/ediscovery-legalhold.md) object in the response body.
 
 ## Examples
 
@@ -68,7 +68,7 @@ If successful, this method returns a `201 Created` response code and a [legalhol
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalholds
+POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalHolds
 Content-Type: application/json
 Content-length: 295
 

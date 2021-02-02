@@ -23,7 +23,7 @@ The Microsoft Graph Compliance API includes the following key entities.
 
 eDiscovery in Microsoft 365 provides an end-to-end workflow to preserve, collect, review, analyze, and export data that's responsive to your organization's internal and external investigations. Learn more about [Microsoft 365 Advanced eDiscovery](/microsoft-365/compliance/overview-ediscovery-20).
 
-Learn more about [Microsoft 365 eDiscovery APIs](ediscoveryapioverview.md).
+Learn more about [Microsoft 365 eDiscovery APIs](ediscovery-ediscoveryapioverview.md).
 
 <!--
 ## Labels

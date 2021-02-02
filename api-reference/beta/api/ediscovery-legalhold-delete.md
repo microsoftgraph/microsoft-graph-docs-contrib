@@ -1,19 +1,19 @@
 ---
-title: "Delete legalhold"
-description: "Deletes a legalhold object."
+title: "Delete legalHold"
+description: "Deletes a legalHold object."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# Delete legalhold
+# Delete legalHold
 
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [legalhold](../resources/ediscovery-legalhold.md) object.
+Deletes a [legalHold](../resources/ediscovery-legalhold.md) object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-DELETE /compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}
+DELETE /compliance/ediscovery/cases/{caseId}/legalHolds/{legalHoldId}
 ```
 
 ## Request headers
@@ -61,7 +61,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}
+DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}
 ```
 
 ### Response

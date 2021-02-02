@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The container for a [custodian's](custodian.md) group.
+The container for a [custodian's](ediscovery-custodian.md) group.
 
 ## Methods
 

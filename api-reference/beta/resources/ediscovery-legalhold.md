@@ -1,5 +1,5 @@
 ---
-title: "legalhold resource type"
+title: "legalHold resource type"
 description: "legalHold resource type"
 localization_priority: Normal
 author: "mahage-msft"
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
-# legalhold resource type
+# legalHold resource type
 
 Namespace: microsoft.graph.ediscovery
 
@@ -21,11 +21,11 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List legalholds](../api/ediscovery-case-list-legalholds.md)|[legalhold](../resources/ediscovery-legalhold.md) collection|Get a list of the [legalhold](../resources/ediscovery-legalhold.md) objects and their properties.|
-|[Create legalhold](../api/ediscovery-case-post-legalholds.md)|[legalhold](../resources/ediscovery-legalhold.md)|Create a new [legalhold](../resources/ediscovery-legalhold.md) object.|
-|[Get legalhold](../api/ediscovery-legalhold-get.md)|[legalhold](../resources/ediscovery-legalhold.md)|Read the properties and relationships of a [legalhold](../resources/ediscovery-legalhold.md) object.|
-|[Update legalhold](../api/ediscovery-legalhold-update.md)|[legalhold](../resources/ediscovery-legalhold.md)|Update the properties of a [legalhold](../resources/ediscovery-legalhold.md) object.|
-|[Delete legalhold](../api/ediscovery-legalhold-delete.md)|None|Deletes a [legalhold](../resources/ediscovery-legalhold.md) object.|
+|[List legalHolds](../api/ediscovery-case-list-legalholds.md)|[legalHold](../resources/ediscovery-legalhold.md) collection|Get a list of the [legalHold](../resources/ediscovery-legalhold.md) objects and their properties.|
+|[Create legalHold](../api/ediscovery-case-post-legalholds.md)|[legalHold](../resources/ediscovery-legalhold.md)|Create a new [legalHold](../resources/ediscovery-legalhold.md) object.|
+|[Get legalHold](../api/ediscovery-legalhold-get.md)|[legalHold](../resources/ediscovery-legalhold.md)|Read the properties and relationships of a [legalHold](../resources/ediscovery-legalhold.md) object.|
+|[Update legalHold](../api/ediscovery-legalhold-update.md)|[legalHold](../resources/ediscovery-legalhold.md)|Update the properties of a [legalHold](../resources/ediscovery-legalhold.md) object.|
+|[Delete legalHold](../api/ediscovery-legalhold-delete.md)|None|Deletes a [legalHold](../resources/ediscovery-legalhold.md) object.|
 |[List siteSources](../api/ediscovery-legalhold-list-sitesources.md)|[siteSource](../resources/ediscovery-sitesource.md) collection|Get the siteSource resources from the siteSources navigation property.|
 |[Create siteSource](../api/ediscovery-legalhold-post-sitesources.md)|[siteSource](../resources/ediscovery-sitesource.md)|Create a new siteSource object.|
 |[List userSources](../api/ediscovery-legalhold-list-usersources.md)|[userSource](../resources/ediscovery-usersource.md) collection|Get the userSource resources from the userSources navigation property.|

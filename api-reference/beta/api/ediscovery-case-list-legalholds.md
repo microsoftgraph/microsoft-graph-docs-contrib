@@ -1,19 +1,19 @@
 ---
-title: "List legalholds"
-description: "Get the legalhold resources from the legalholds navigation property."
+title: "List legalHolds"
+description: "Get the legalHold resources from the legalHolds navigation property."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
-# List legalholds
+# List legalHolds
 
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the legalhold resources from the legalholds navigation property.
+Get the [legalHolds](../resources/ediscovery-legalhold.md) that are applied to a case.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /compliance/ediscovery/cases/{caseId}/legalholds
+GET /compliance/ediscovery/cases/{caseId}/legalHolds
 ```
 
 ## Optional query parameters
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [legalhold](../resources/ediscovery-legalhold.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [legalHold](../resources/ediscovery-legalhold.md) objects in the response body.
 
 ## Examples
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalholds
+GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalHolds
 ```
 
 

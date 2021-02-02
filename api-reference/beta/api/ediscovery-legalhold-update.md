@@ -1,19 +1,19 @@
 ---
-title: "Update legalhold"
-description: "Update the properties of a legalhold object."
+title: "Update legalHold"
+description: "Update the properties of a legalHold object."
 localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Update legalhold
+# Update legalHold
 
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [legalhold](../resources/ediscovery-legalhold.md) object.
+Update the properties of a [legalHold](../resources/ediscovery-legalhold.md) object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-PATCH /compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}
+PATCH /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}
 ```
 
 ## Request headers
@@ -45,9 +45,9 @@ PATCH /compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}
 
 ## Request body
 
-In the request body, supply a JSON representation of the [legalhold](../resources/ediscovery-legalhold.md) object.
+In the request body, supply a JSON representation of the [legalHold](../resources/ediscovery-legalhold.md) object.
 
-The following table shows the properties that are required when you update the [legalhold](../resources/ediscovery-legalhold.md).
+The following table shows the properties that are required when you update the [legalHold](../resources/ediscovery-legalhold.md).
 
 None
 
@@ -66,12 +66,12 @@ If successful, this action returns a `204 No Content` response code.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}
+PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}
 Content-Type: application/json
 Content-length: 295
 
 {
-  "description": "This is a description for a legalhold"
+  "description": "This is a description for a legalHold"
 }
 ```
 

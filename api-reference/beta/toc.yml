@@ -1460,7 +1460,7 @@ items:
           - name: Delete
             href: api/ediscovery-case-delete.md
         - name: Custodian
-          href: api/ediscovery-custodian.md
+          href: resources/ediscovery-custodian.md
           items:
           - name: List
             href: api/ediscovery-case-list-custodians.md

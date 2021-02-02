@@ -1,5 +1,5 @@
 ---
-title: "List legalhold siteSources"
+title: "List legalHold siteSources"
 description: "Get the siteSource resources from the siteSources navigation property."
 author: "mahage-msft"
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# List legalhold siteSources
+# List legalHold siteSources
 
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the legalhold siteSource resources from the siteSources navigation property.
+Get the legalHold siteSource resources from the siteSources navigation property.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}/siteSources
+GET /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/siteSources
 ```
 
 ## Optional query parameters
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-40c5-a760-331361e05c60/legalholds/277107ff-fee3-41a0-a665-a9d7f6c4824f/siteSources
+GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-40c5-a760-331361e05c60/legalHolds/277107ff-fee3-41a0-a665-a9d7f6c4824f/siteSources
 ```
 
 ### Response
@@ -83,7 +83,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('c816dd6f-5af8-40c5-a760-331361e05c60')/legalholds('277107ff-fee3-41a0-a665-a9d7f6c4824f')/siteSources",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('c816dd6f-5af8-40c5-a760-331361e05c60')/legalHolds('277107ff-fee3-41a0-a665-a9d7f6c4824f')/siteSources",
     "value": [
         {
             "displayName": "Microsoft Team Site",
