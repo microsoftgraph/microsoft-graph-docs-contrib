@@ -22,7 +22,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition|beta|Added the [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta) complex type.|
+|Addition|beta|Added the [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta&preserve-view=true) complex type.|
 |Addition|beta|Added the **outOfOfficeSettings** property to the [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) resource type|
 |Addition|beta|Added the **isBroadcast**, **broadcastSettings**, **attendeeReport**, **recording** and **alternativeRecording** properties to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) entity to support creating live events.|
 
@@ -54,6 +54,18 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
 | Addition | beta | Added new [Delegated permissions](./permissions-reference.md#universal-print-permissions): <br/><ul><li>PrintJob.Create</li><li>PrinterShare.ReadBasic.All</li><li>PrintConnector.Read.All</li><li>PrintConnector.ReadWrite.All</li><li>PrintSettings.Read.All</li><li>PrintSettings.ReadWrite.All</li><li>Reports.Read.All</li></ul> |
+
+### Tasks and plans
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the **creationSource** property to [plannerTask](/graph/api/resources/plannerTask?view=graph-rest-beta&preserve-view=true) resource.|
+|Addition|beta|Added the **container** property to [plannerPlan](/graph/api/resources/plannerPlan?view=graph-rest-beta&preserve-view=true) resource.|
+|Addition|beta|Added the [plannerPlanContainer](/graph/api/resources/plannerPlanContainer?view=graph-rest-beta&preserve-view=true) resource type.|
+|Addition|beta|Added the [plannerTaskCreation](/graph/api/resources/plannerTaskCreation?view=graph-rest-beta&preserve-view=true) resource type.|
+|Addition|beta|Added the [plannerTeamsPublicationInfo](/graph/api/resources/plannerTeamsPublicationInfo?view=graph-rest-beta&preserve-view=true) resource type.|
+|Addition|beta|Added the **plannerContainerType** enumeration type.|
+|Change|beta| Deprecated the **owner** property on [plannerPlan](/graph/api/resources/plannerPlan?view=graph-rest-beta&preserve-view=true) resource.|
 
 ## December 2020
 
@@ -99,8 +111,28 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Change | beta | Changed **roomNumber** (Edm.Int) property on [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta&preserve-view=true) resource to **roomName** (Edm.String). |
 | Change | beta | Changed type of allowedUsers relationship on [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) resource. |
 | Change | beta | Changed type of allowedGroups relationship on [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) resource. |
-| Change | beta | Updated enum types in [printerProcessingStateDetail](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values) resource. |
 | Addition | beta | Added the [update configuration](/graph/api/printjob-update-configuration?view=graph-rest-beta&preserve-view=true) action to the [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the `outputAreaAlmostFull` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `none` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `movingToPaused` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `shutdown` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `connectingToDevice` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `timedOut` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `stopping` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `stoppedPartially` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `tonerLow` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `tonerEmpty` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `spoolAreaFull` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `doorOpen` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `opticalPhotoConductorNearEndOfLife` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `opticalPhotoConductorLifeOver` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `developerLow` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `developerEmpty` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `interpreterResourceUnavailable` member to the **printerProcessingStateDetail** enumeration|
+| Deletion | beta | Removed the `disconnected` member from the **printerProcessingStateDetail** enumeration|
+| Deletion | beta | Removed the `queueFull` member from the **printerProcessingStateDetail** enumeration|
+| Deletion | beta | Removed the `outputAlmostFull` member from the **printerProcessingStateDetail** enumeration|
+| Deletion | beta | Removed the `unknownFutureValue` member from the **printerProcessingStateDetail** enumeration|
 
 ### Education
 

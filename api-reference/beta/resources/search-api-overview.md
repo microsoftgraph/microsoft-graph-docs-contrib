@@ -34,7 +34,7 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
 |[Sort search results](#sort-search-results)| **sort** |
 |[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
-|[Search across Graph connectors](/graph/search-concept-custom-types)| **contentSources** |
+|[Search custom types imported using connectors](/graph/search-concept-custom-types)| **contentSources** |
 
 ## Scope search based on entity types
 
@@ -185,9 +185,12 @@ For backward compatibility, the original properties and types are accessible and
   - [Search Outlook messages](/graph/search-concept-messages)
   - [Search calendar events](/graph/search-concept-events)
   - [Search content in Sharepoint and OneDrive](/graph/search-concept-files)
-  - [Search external content](/graph/search-concept-custom-types)
+  - [Search custom types imported using connectors](/graph/search-concept-custom-types)
   - [Sort search results](/graph/search-concept-sort)
   - [Refine search results](/graph/search-concept-aggregation)
 
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-- Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+
+## What's new
+
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

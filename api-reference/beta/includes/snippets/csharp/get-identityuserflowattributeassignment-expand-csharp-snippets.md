@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var identityUserFlowAttributeAssignment = await graphClient.Identity.B2cUserFlows["{id}"].UserAttributeAssignments["{id}"]
+var userAttributeAssignments = await graphClient.Identity.B2xUserFlows["{id}"].UserAttributeAssignments
 	.Request()
 	.Expand("userAttribute")
 	.GetAsync();
