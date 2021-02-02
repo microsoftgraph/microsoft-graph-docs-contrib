@@ -19,18 +19,18 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List custodians](../api/case-list-custodians.md)|[custodian](../resources/custodian.md) collection|Get a list of **custodian** objects and their properties.|
-|[Create custodian](../api/case-post-custodians.md)|[custodian](../resources/custodian.md)|Create a new **custodian** object.|
-|[Get custodian](../api/custodian-get.md)|[custodian](../resources/custodian.md)|Read the properties and relationships of a **custodian** object.|
-|[Update custodian](../api/custodian-update.md)|[custodian](../resources/custodian.md)|Update the properties of a **custodian** object.|
-|[release](../api/custodian-release.md)|None|Release a custodian from a case.|
-|[activate](../api/custodian-activate.md)|None|Reactivate a custodian that has been released from a case and make them part of the case again.|
-|[List siteSources](../api/custodian-list-sitesources.md)|[siteSource](../resources/sitesource.md) collection|Get the **siteSource** resources from the **siteSources** navigation property.|
-|[Create siteSources](../api/custodian-post-sitesources.md)|[siteSource](../resources/sitesource.md)|Create a new **siteSource** object.|
-|[List unifiedGroupSources](../api/custodian-list-unifiedgroupsources.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md) collection|Get the **unifiedGroupSource** resources from the **unifiedGroupSources** navigation property.|
-|[Create unifiedGroupSources](../api/custodian-post-unifiedgroupsources.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md)|Create a new **unifiedGroupSource** object.|
-|[List userSources](../api/custodian-list-usersources.md)|[userSource](../resources/usersource.md) collection|Get the **userSource** resources from the **userSources** navigation property.|
-|[Create userSources](../api/custodian-post-usersources.md)|[userSource](../resources/usersource.md)|Create a new **userSource** object.|
+|[List custodians](../api/ediscovery-case-list-custodians.md)|[custodian](../resources/ediscovery-custodian.md) collection|Get a list of **custodian** objects and their properties.|
+|[Create custodian](../api/ediscovery-case-post-custodians.md)|[custodian](../resources/ediscovery-custodian.md)|Create a new **custodian** object.|
+|[Get custodian](../api/ediscovery-custodian-get.md)|[custodian](../resources/ediscovery-custodian.md)|Read the properties and relationships of a **custodian** object.|
+|[Update custodian](../api/ediscovery-custodian-update.md)|[custodian](../resources/ediscovery-custodian.md)|Update the properties of a **custodian** object.|
+|[release](../api/ediscovery-custodian-release.md)|None|Release a custodian from a case.|
+|[activate](../api/ediscovery-custodian-activate.md)|None|Reactivate a custodian that has been released from a case and make them part of the case again.|
+|[List siteSources](../api/ediscovery-custodian-list-sitesources.md)|[siteSource](../resources/ediscovery-sitesource.md) collection|Get the **siteSource** resources from the **siteSources** navigation property.|
+|[Create siteSources](../api/ediscovery-custodian-post-sitesources.md)|[siteSource](../resources/ediscovery-sitesource.md)|Create a new **siteSource** object.|
+|[List unifiedGroupSources](../api/ediscovery-custodian-list-unifiedgroupsources.md)|[unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) collection|Get the **unifiedGroupSource** resources from the **unifiedGroupSources** navigation property.|
+|[Create unifiedGroupSources](../api/ediscovery-custodian-post-unifiedgroupsources.md)|[unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md)|Create a new **unifiedGroupSource** object.|
+|[List userSources](../api/ediscovery-custodian-list-usersources.md)|[userSource](../resources/ediscovery-usersource.md) collection|Get the **userSource** resources from the **userSources** navigation property.|
+|[Create userSources](../api/ediscovery-custodian-post-usersources.md)|[userSource](../resources/ediscovery-usersource.md)|Create a new **userSource** object.|
 
 ## Properties
 
@@ -57,9 +57,9 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|siteSources|[siteSource](../resources/sitesource.md) collection|Data source entity for SharePoint sites associated with the custodian.|
-|unifiedGroupSources|[unifiedGroupSource](../resources/unifiedgroupsource.md) collection|Data source entity for groups associated with the custodian.|
-|userSources|[userSource](../resources/usersource.md) collection|Data source entity for a the custodian. This is the container for a custodian's mailbox and OneDrive for Business site.|
+|siteSources|[siteSource](../resources/ediscovery-sitesource.md) collection|Data source entity for SharePoint sites associated with the custodian.|
+|unifiedGroupSources|[unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) collection|Data source entity for groups associated with the custodian.|
+|userSources|[userSource](../resources/ediscovery-usersource.md) collection|Data source entity for a the custodian. This is the container for a custodian's mailbox and OneDrive for Business site.|
 
 <!--|lastIndexOperation|[caseIndexOperation](../resources/caseindexoperation.md)|**TODO: Add Description**| -->
 

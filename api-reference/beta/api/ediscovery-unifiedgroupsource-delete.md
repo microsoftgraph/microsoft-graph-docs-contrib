@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [unifiedGroupSource](../resources/unifiedgroupsource.md) object.
+Delete a [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) object.
 
 ## Permissions
 
@@ -63,7 +63,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/unifiedGroupSources/{unifiedGroupSourceId}
+DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/unifiedGroupSources/{unifiedGroupSourceId}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-unifiedgroupsource-csharp-snippets.md)]

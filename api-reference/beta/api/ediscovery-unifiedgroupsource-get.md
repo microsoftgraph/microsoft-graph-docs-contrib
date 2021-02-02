@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [unifiedGroupSource](../resources/unifiedgroupsource.md) object.
+Read the properties and relationships of a [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/unifiedGroupSources/{unifiedGroupSourceId}
+GET /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/unifiedGroupSources/{unifiedGroupSourceId}
 ```
 
 ## Optional query parameters
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [unifiedGroupSource](../resources/unifiedgroupsource.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) object in the response body.
 
 ## Examples
 

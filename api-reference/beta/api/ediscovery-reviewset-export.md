@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This operation initiates an export from a **reviewSet**.  See [Export documents from a review set in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/export-documents-from-review-set) to learn more.  Once the export is created, you can retrieve the status of the operation by retrieving the Location parameter from the response headers, the location provides a URL that will return a [caseExportOperation](../resources/caseexportoperation.md).
+This operation initiates an export from a **reviewSet**.  See [Export documents from a review set in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/export-documents-from-review-set) to learn more.  Once the export is created, you can retrieve the status of the operation by retrieving the Location parameter from the response headers, the location provides a URL that will return a [caseExportOperation](../resources/ediscovery-caseexportoperation.md).
 
 ## Permissions
 
@@ -55,8 +55,8 @@ The following table shows the parameters that can be used with this action.
 |description|String| Description of the export |
 |azureBlobContainer|String| When exporting to your own Azure storage account, this is the container URL. |
 |azureBlobToken|String| When exporting to your own Azure storage account, SAS token for the container URL. |
-|exportOptions| [exportOptions](reviewset-export.md) |specifies options that control the format of the export. |
-|exportStructure|[exportFileStructure](reviewset-export.md)| Options that control file structure and packaging of the export. |
+|exportOptions| [exportOptions](ediscovery-reviewset-export.md) |specifies options that control the format of the export. |
+|exportStructure|[exportFileStructure](ediscovery-reviewset-export.md)| Options that control file structure and packaging of the export. |
 
 ### exportOptions values
 

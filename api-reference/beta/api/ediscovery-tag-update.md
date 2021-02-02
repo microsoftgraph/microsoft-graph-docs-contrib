@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [tag](../resources/tag.md) object.
+Update the properties of a [tag](../resources/ediscovery-tag.md) object.
 
 ## Permissions
 
@@ -45,9 +45,9 @@ PATCH /compliance/ediscovery/cases/{caseId}/tags/{tagId}
 
 ## Request body
 
-In the request body, supply a JSON representation of the [tag](../resources/tag.md) object.
+In the request body, supply a JSON representation of the [tag](../resources/ediscovery-tag.md) object.
 
-The following table shows the properties that are required when you update the [tag](../resources/tag.md).
+The following table shows the properties that are required when you update the [tag](../resources/ediscovery-tag.md).
 
 None
 

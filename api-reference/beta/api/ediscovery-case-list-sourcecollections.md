@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [sourceCollection](../resources/sourcecollection.md) resources from the sourceCollections navigation property.
+Get the [sourceCollection](../resources/ediscovery-sourcecollection.md) resources from the sourceCollections navigation property.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [sourceCollection](../resources/sourcecollection.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [sourceCollection](../resources/ediscovery-sourcecollection.md) objects in the response body.
 
 ## Examples
 

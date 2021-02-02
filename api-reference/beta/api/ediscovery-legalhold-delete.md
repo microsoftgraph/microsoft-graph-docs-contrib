@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [legalhold](../resources/legalhold.md) object.
+Deletes a [legalhold](../resources/ediscovery-legalhold.md) object.
 
 ## Permissions
 

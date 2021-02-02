@@ -1,5 +1,5 @@
 ---
-title: "ediscoveryCase: reopen"
+title: "Case: reopen"
 description: "Reopen an eDiscovery case that was closed."
 author: "mahage-msft"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# ediscoveryCase: reopen
+# Case: reopen
 
 Namespace: microsoft.graph.ediscovery
 
@@ -16,6 +16,7 @@ Namespace: microsoft.graph.ediscovery
 Reopen an eDiscovery case that was closed. For details, see [Reopen a closed case](/microsoft-365/compliance/close-or-delete-case#reopen-a-closed-case).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -53,11 +54,11 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
-  "name": "ediscoverycase_reopen"
+  "name": "case_reopen"
 }
 -->
 
@@ -81,7 +82,6 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

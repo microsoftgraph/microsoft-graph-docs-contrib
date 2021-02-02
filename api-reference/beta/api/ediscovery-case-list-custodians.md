@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [custodian](../resources/custodian.md) objects and their properties.
+Get a list of the [custodian](../resources/ediscovery-custodian.md) objects and their properties.
 
 ## Permissions
 
@@ -52,12 +52,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [custodian](../resources/custodian.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [custodian](../resources/ediscovery-custodian.md) objects in the response body.
 
 ## Examples
 
 ### Request
-
 
 # [HTTP](#tab/http)
 <!-- {

@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [custodian](../resources/custodian.md) object. After the custodian object is created, you will need to create the custodian's [userSource](../resources/usersource.md) to reference their mailbox and OneDrive for Business site.
+Create a new [custodian](../resources/ediscovery-custodian.md) object. After the custodian object is created, you will need to create the custodian's [userSource](../resources/ediscovery-usersource.md) to reference their mailbox and OneDrive for Business site.
 
 ## Permissions
 
@@ -45,9 +45,9 @@ POST /compliance/ediscovery/cases/{caseId}/custodians
 
 ## Request body
 
-In the request body, supply a JSON representation of the [custodian](../resources/custodian.md) object.
+In the request body, supply a JSON representation of the [custodian](../resources/ediscovery-custodian.md) object.
 
-The following table shows the properties that are required when you create the [custodian](../resources/custodian.md).
+The following table shows the properties that are required when you create the [custodian](../resources/ediscovery-custodian.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -56,7 +56,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [custodian](../resources/custodian.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [custodian](../resources/ediscovery-custodian.md) object in the response body.
 
 ## Examples
 

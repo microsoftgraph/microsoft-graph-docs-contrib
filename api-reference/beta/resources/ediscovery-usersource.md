@@ -19,10 +19,10 @@ The container for a [custodian's](custodian.md) mailbox and OneDrive for Busines
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List userSources](../api/custodian-list-usersources.md)|[userSource](../resources/usersource.md) collection|Get a list of the **userSource** objects and their properties.|
-|[Create userSource](../api/custodian-post-usersources.md)|[userSource](../resources/usersource.md)|Create a new **userSource** object.|
-|[Get userSource](../api/usersource-get.md)|[userSource](../resources/usersource.md)|Read the properties and relationships of a **userSource** object.|
-|[Delete userSource](../api/usersource-delete.md)|None|Delete a **userSource** object.|
+|[List userSources](../api/ediscovery-custodian-list-usersources.md)|[userSource](../resources/ediscovery-usersource.md) collection|Get a list of the **userSource** objects and their properties.|
+|[Create userSource](../api/ediscovery-custodian-post-usersources.md)|[userSource](../resources/ediscovery-usersource.md)|Create a new **userSource** object.|
+|[Get userSource](../api/ediscovery-usersource-get.md)|[userSource](../resources/ediscovery-usersource.md)|Read the properties and relationships of a **userSource** object.|
+|[Delete userSource](../api/ediscovery-usersource-delete.md)|None|Delete a **userSource** object.|
 
 ## Properties
 

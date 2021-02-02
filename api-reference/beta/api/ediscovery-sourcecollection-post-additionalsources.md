@@ -45,9 +45,9 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 ## Request body
 
-In the request body, supply a JSON representation of the [dataSource](../resources/datasource.md) object.
+In the request body, supply a JSON representation of the [dataSource](../resources/ediscovery-datasource.md) object.
 
-The following table shows the properties that are required when you create the [dataSource](../resources/datasource.md).
+The following table shows the properties that are required when you create the [dataSource](../resources/ediscovery-datasource.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -58,7 +58,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [dataSource](../resources/datasource.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [dataSource](../resources/ediscovery-datasource.md) object in the response body.
 
 ## Examples
 

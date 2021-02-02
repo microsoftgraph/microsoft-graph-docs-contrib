@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an eDiscovery [reviewSetQuery](../resources/reviewsetquery.md).
+Update the properties of an eDiscovery [reviewSetQuery](../resources/ediscovery-reviewsetquery.md).
 
 ## Permissions
 

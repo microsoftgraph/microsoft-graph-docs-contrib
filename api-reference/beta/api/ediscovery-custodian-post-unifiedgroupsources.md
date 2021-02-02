@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [unifiedGroupSource](../resources/unifiedgroupsource.md) object.
+Create a new [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) object.
 
 ## Permissions
 
@@ -45,9 +45,9 @@ POST /compliance/ediscovery/cases/4c8f8f70-7785-4bd4-b296-c98376a2c5e1/custodian
 
 ## Request body
 
-In the request body, supply a JSON representation of the [unifiedGroupSource](../resources/unifiedgroupsource.md) object.
+In the request body, supply a JSON representation of the [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) object.
 
-The following table shows the properties that are required when you create the [unifiedGroupSource](../resources/unifiedgroupsource.md).
+The following table shows the properties that are required when you create the [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -56,7 +56,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [unifiedGroupSource](../resources/unifiedgroupsource.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) object in the response body.
 
 ## Examples
 
@@ -70,7 +70,7 @@ If successful, this method returns a `201 Created` response code and a [unifiedG
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/unifiedGroupSources
+POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/unifiedGroupSources
 Content-Type: application/json
 Content-length: 219
 

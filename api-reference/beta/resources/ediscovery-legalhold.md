@@ -21,15 +21,15 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List legalholds](../api/case-list-legalholds.md)|[legalhold](../resources/legalhold.md) collection|Get a list of the [legalhold](../resources/legalhold.md) objects and their properties.|
-|[Create legalhold](../api/case-post-legalholds.md)|[legalhold](../resources/legalhold.md)|Create a new [legalhold](../resources/legalhold.md) object.|
-|[Get legalhold](../api/legalhold-get.md)|[legalhold](../resources/legalhold.md)|Read the properties and relationships of a [legalhold](../resources/legalhold.md) object.|
-|[Update legalhold](../api/legalhold-update.md)|[legalhold](../resources/legalhold.md)|Update the properties of a [legalhold](../resources/legalhold.md) object.|
-|[Delete legalhold](../api/legalhold-delete.md)|None|Deletes a [legalhold](../resources/legalhold.md) object.|
-|[List siteSources](../api/legalhold-list-sitesources.md)|[siteSource](../resources/sitesource.md) collection|Get the siteSource resources from the siteSources navigation property.|
-|[Create siteSource](../api/legalhold-post-sitesources.md)|[siteSource](../resources/sitesource.md)|Create a new siteSource object.|
-|[List userSources](../api/legalhold-list-usersources.md)|[userSource](../resources/usersource.md) collection|Get the userSource resources from the userSources navigation property.|
-|[Create userSource](../api/legalhold-post-usersources.md)|[userSource](../resources/usersource.md)|Create a new userSource object.|
+|[List legalholds](../api/ediscovery-case-list-legalholds.md)|[legalhold](../resources/ediscovery-legalhold.md) collection|Get a list of the [legalhold](../resources/ediscovery-legalhold.md) objects and their properties.|
+|[Create legalhold](../api/ediscovery-case-post-legalholds.md)|[legalhold](../resources/ediscovery-legalhold.md)|Create a new [legalhold](../resources/ediscovery-legalhold.md) object.|
+|[Get legalhold](../api/ediscovery-legalhold-get.md)|[legalhold](../resources/ediscovery-legalhold.md)|Read the properties and relationships of a [legalhold](../resources/ediscovery-legalhold.md) object.|
+|[Update legalhold](../api/ediscovery-legalhold-update.md)|[legalhold](../resources/ediscovery-legalhold.md)|Update the properties of a [legalhold](../resources/ediscovery-legalhold.md) object.|
+|[Delete legalhold](../api/ediscovery-legalhold-delete.md)|None|Deletes a [legalhold](../resources/ediscovery-legalhold.md) object.|
+|[List siteSources](../api/ediscovery-legalhold-list-sitesources.md)|[siteSource](../resources/ediscovery-sitesource.md) collection|Get the siteSource resources from the siteSources navigation property.|
+|[Create siteSource](../api/ediscovery-legalhold-post-sitesources.md)|[siteSource](../resources/ediscovery-sitesource.md)|Create a new siteSource object.|
+|[List userSources](../api/ediscovery-legalhold-list-usersources.md)|[userSource](../resources/ediscovery-usersource.md) collection|Get the userSource resources from the userSources navigation property.|
+|[Create userSource](../api/ediscovery-legalhold-post-usersources.md)|[userSource](../resources/ediscovery-usersource.md)|Create a new userSource object.|
 
 ## Properties
 
@@ -59,8 +59,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|siteSources|[siteSource](../resources/sitesource.md) collection|Data source entity for SharePoint sites associated with the legal hold. |
-|userSources|[userSource](../resources/usersource.md) collection| Data source entity for a the legal hold. This is the container for a mailbox and OneDrive for Business site.|
+|siteSources|[siteSource](../resources/ediscovery-sitesource.md) collection|Data source entity for SharePoint sites associated with the legal hold. |
+|userSources|[userSource](../resources/ediscovery-usersource.md) collection| Data source entity for a the legal hold. This is the container for a mailbox and OneDrive for Business site.|
 
 ## JSON representation
 

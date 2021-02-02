@@ -45,9 +45,9 @@ POST /compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}/userSources
 
 ## Request body
 
-In the request body, supply a JSON representation of the [userSource](../resources/usersource.md) object.
+In the request body, supply a JSON representation of the [userSource](../resources/ediscovery-usersource.md) object.
 
-The following table shows the properties that are required when you create the [userSource](../resources/usersource.md).
+The following table shows the properties that are required when you create the [userSource](../resources/ediscovery-usersource.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -56,7 +56,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [userSource](../resources/usersource.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [userSource](../resources/ediscovery-usersource.md) object in the response body.
 
 ## Examples
 

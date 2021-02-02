@@ -21,13 +21,13 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List tags](../api/case-list-tags.md)|[tag](../resources/tag.md) collection|Get a list of the [tag](../resources/tag.md) objects and their properties.|
-|[Create tag](../api/case-post-tags.md)|[tag](../resources/tag.md)|Create a new [tag](../resources/tag.md) object.|
-|[Get tag](../api/tag-get.md)|[tag](../resources/tag.md)|Read the properties and relationships of a [tag](../resources/tag.md) object.|
-|[Update tag](../api/tag-update.md)|[tag](../resources/tag.md)|Update the properties of a [tag](../resources/tag.md) object.|
-|[Delete tag](../api/tag-delete.md)|None|Deletes a [tag](../resources/tag.md) object.|
-|[asHierarchy](../api/tag-list-ashierarchy.md)|[tag](../resources/tag.md) collection|Lists all tags including their hierarchy.|
-|[List childTags](../api/tag-list-childtags.md)|[tag](../resources/tag.md) collection|Get the tag resources from the childTags navigation property.|
+|[List tags](../api/ediscovery-case-list-tags.md)|[tag](../resources/ediscovery-tag.md) collection|Get a list of the [tag](../resources/ediscovery-tag.md) objects and their properties.|
+|[Create tag](../api/ediscovery-case-post-tags.md)|[tag](../resources/ediscovery-tag.md)|Create a new [tag](../resources/ediscovery-tag.md) object.|
+|[Get tag](../api/ediscovery-tag-get.md)|[tag](../resources/ediscovery-tag.md)|Read the properties and relationships of a [tag](../resources/ediscovery-tag.md) object.|
+|[Update tag](../api/ediscovery-tag-update.md)|[tag](../resources/ediscovery-tag.md)|Update the properties of a [tag](../resources/ediscovery-tag.md) object.|
+|[Delete tag](../api/ediscovery-tag-delete.md)|None|Deletes a [tag](../resources/ediscovery-tag.md) object.|
+|[asHierarchy](../api/ediscovery-tag-list-ashierarchy.md)|[tag](../resources/ediscovery-tag.md) collection|Lists all tags including their hierarchy.|
+|[List childTags](../api/ediscovery-tag-list-childtags.md)|[tag](../resources/ediscovery-tag.md) collection|Get the tag resources from the childTags navigation property.|
 
 ## Properties
 
@@ -51,8 +51,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|childTags|[tag](../resources/tag.md) collection|Returns the tags that are a child of a tag.|
-|parent|[tag](../resources/tag.md)|Returns the parent tag of the specified tag.|
+|childTags|[tag](../resources/ediscovery-tag.md) collection|Returns the tags that are a child of a tag.|
+|parent|[tag](../resources/ediscovery-tag.md)|Returns the parent tag of the specified tag.|
 
 ## JSON representation
 

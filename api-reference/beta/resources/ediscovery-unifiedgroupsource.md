@@ -19,10 +19,10 @@ The container for a [custodian's](custodian.md) group.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List unifiedGroupSources](../api/custodian-list-unifiedgroupsources.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md) collection|Get a list of the **unifiedGroupSource** objects and their properties.|
-|[Create unifiedGroupSource](../api/custodian-post-unifiedgroupsources.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md)|Create a new **unifiedGroupSource** object.|
-|[Get unifiedGroupSource](../api/unifiedgroupsource-get.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md)|Read the properties and relationships of a **unifiedGroupSource** object.|
-|[Delete unifiedGroupSource](../api/unifiedgroupsource-delete.md)|None|Delete a **unifiedGroupSource** object.|
+|[List unifiedGroupSources](../api/ediscovery-custodian-list-unifiedgroupsources.md)|[unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) collection|Get a list of the **unifiedGroupSource** objects and their properties.|
+|[Create unifiedGroupSource](../api/ediscovery-custodian-post-unifiedgroupsources.md)|[unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md)|Create a new **unifiedGroupSource** object.|
+|[Get unifiedGroupSource](../api/ediscovery-unifiedgroupsource-get.md)|[unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md)|Read the properties and relationships of a **unifiedGroupSource** object.|
+|[Delete unifiedGroupSource](../api/ediscovery-unifiedgroupsource-delete.md)|None|Delete a **unifiedGroupSource** object.|
 
 ## Properties
 

@@ -13,9 +13,9 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adds the results of a [sourceCollection](../resources/sourcecollection.md) to a [reviewSet](../resources/reviewset.md)
+Adds the results of a [sourceCollection](../resources/ediscovery-sourcecollection.md) to a [reviewSet](../resources/ediscovery-reviewset.md)
 
-Inherits from [caseOperation](../resources/caseoperation.md).
+Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).
 
 ## Methods
 
@@ -25,14 +25,14 @@ None
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|caseAction| The type of operation - `addToReviewSet`. Read-only. Inherited from [caseOperation](../resources/caseoperation.md).|
-|completedDateTime|DateTimeOffset|The date and time the operation was completed. Read-only. Inherited from [caseOperation](../resources/caseoperation.md)|
-|createdBy|[identitySet](../resources/identityset.md)|The user who created the operation. Read-only. Inherited from [caseOperation](../resources/caseoperation.md)|
-|createdDateTime|DateTimeOffset|The date and time the operation was started. Read-only. Inherited from [caseOperation](../resources/caseoperation.md)|
-|id|String| The ID for the operation. Read-only. Inherited from [caseOperation](../resources/caseoperation.md).|
-|percentProgress|Int32|The progress of the operation. Read-only. Inherited from [caseOperation](../resources/caseoperation.md)|
-|resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/caseoperation.md)|
-|status|caseOperationStatus|The status of the case operation. Inherited from [caseOperation](../resources/caseoperation.md). Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
+|action|caseAction| The type of operation - `addToReviewSet`. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
+|completedDateTime|DateTimeOffset|The date and time the operation was completed. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md)|
+|createdBy|[identitySet](../resources/identityset.md)|The user who created the operation. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md)|
+|createdDateTime|DateTimeOffset|The date and time the operation was started. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md)|
+|id|String| The ID for the operation. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
+|percentProgress|Int32|The progress of the operation. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md)|
+|resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md)|
+|status|caseOperationStatus|The status of the case operation. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md). Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
 
 ## Relationships
 

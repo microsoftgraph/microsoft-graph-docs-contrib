@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [case](../resources/case.md) objects.
+Retrieve a list of [case](../resources/ediscovery-case.md) objects.
 
 ## Permissions
 
@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [case](../resources/case.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [case](../resources/ediscovery-case.md) objects in the response body.
 
 ## Examples
 

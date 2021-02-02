@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [sourceCollection](../resources/sourcecollection.md) object.
+Update the properties of a [sourceCollection](../resources/ediscovery-sourcecollection.md) object.
 
 ## Permissions
 
@@ -45,9 +45,9 @@ PATCH /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionI
 
 ## Request body
 
-In the request body, supply a JSON representation of the [sourceCollection](../resources/sourcecollection.md) object.
+In the request body, supply a JSON representation of the [sourceCollection](../resources/ediscovery-sourcecollection.md) object.
 
-The following table shows the properties that are required when you update the [sourceCollection](../resources/sourcecollection.md).
+The following table shows the properties that are required when you update the [sourceCollection](../resources/ediscovery-sourcecollection.md).
 
 None
 

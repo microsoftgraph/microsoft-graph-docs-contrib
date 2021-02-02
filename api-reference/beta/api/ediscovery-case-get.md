@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [case](../resources/case.md) object.
+Retrieve the properties and relationships of a [case](../resources/ediscovery-case.md) object.
 
 ## Permissions
 
@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [case](../resources/case.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [case](../resources/ediscovery-case.md) object in the response body.
 
 ## Examples
 
@@ -110,7 +110,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get ediscoveryCase",
+  "description": "Get Case",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

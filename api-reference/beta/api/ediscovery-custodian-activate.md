@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/activate
+POST /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/activate
 ```
 
 ## Request headers

@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Starts the process of adding a collection from M365 services to a review set. Once the operation is created, you can retrieve the status of the operation by retrieving the Location parameter from the response headers, the location provides a URL that will return a [caseExportOperation](../resources/caseexportoperation.md).
+Starts the process of adding a collection from M365 services to a review set. Once the operation is created, you can retrieve the status of the operation by retrieving the Location parameter from the response headers, the location provides a URL that will return a [caseExportOperation](../resources/ediscovery-caseexportoperation.md).
 
 ## Permissions
 
@@ -51,7 +51,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|sourceCollection|[sourceCollection](../resources/sourcecollection.md)|The ID of the **sourceCollection**|
+|sourceCollection|[sourceCollection](../resources/ediscovery-sourcecollection.md)|The ID of the **sourceCollection**|
 |additionalData|dataCollectionScope|The **dataCollectionScope** that will be included with the collection|
 
 ### dataCollectionScope values

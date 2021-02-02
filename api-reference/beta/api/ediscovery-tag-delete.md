@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [tag](../resources/tag.md) object.
+Deletes a [tag](../resources/ediscovery-tag.md) object.
 
 ## Permissions
 

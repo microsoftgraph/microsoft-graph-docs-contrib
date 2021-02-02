@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new custodian [siteSource](../resources/sitesource.md) object.
+Create a new custodian [siteSource](../resources/ediscovery-sitesource.md) object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/siteSources
+POST /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/siteSources
 ```
 
 ## Request headers
@@ -45,9 +45,9 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/si
 
 ## Request body
 
-In the request body, supply a JSON representation of the [siteSource](../resources/sitesource.md) object.
+In the request body, supply a JSON representation of the [siteSource](../resources/ediscovery-sitesource.md) object.
 
-The following table shows the properties that are required when you create the [siteSource](../resources/sitesource.md).
+The following table shows the properties that are required when you create the [siteSource](../resources/ediscovery-sitesource.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [siteSource](../resources/sitesource.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [siteSource](../resources/ediscovery-sitesource.md) object in the response body.
 
 ## Examples
 

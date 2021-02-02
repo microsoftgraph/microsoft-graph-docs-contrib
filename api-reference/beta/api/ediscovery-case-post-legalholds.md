@@ -45,9 +45,9 @@ POST /compliance/ediscovery/cases/{caseId}/legalholds
 
 ## Request body
 
-In the request body, supply a JSON representation of the [legalhold](../resources/legalhold.md) object.
+In the request body, supply a JSON representation of the [legalhold](../resources/ediscovery-legalhold.md) object.
 
-The following table shows the properties that are required when you create the [legalhold](../resources/legalhold.md).
+The following table shows the properties that are required when you create the [legalhold](../resources/ediscovery-legalhold.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [legalhold](../resources/legalhold.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [legalhold](../resources/ediscovery-legalhold.md) object in the response body.
 
 ## Examples
 

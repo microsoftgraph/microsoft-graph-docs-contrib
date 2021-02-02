@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [custodian](../resources/custodian.md) object.
+Update the properties of a [custodian](../resources/ediscovery-custodian.md) object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-PATCH /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}
+PATCH /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}
 ```
 
 ## Request headers
@@ -45,9 +45,9 @@ PATCH /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}
 
 ## Request body
 
-In the request body, supply a JSON representation of the [custodian](../resources/custodian.md) object.
+In the request body, supply a JSON representation of the [custodian](../resources/ediscovery-custodian.md) object.
 
-The following table lists the properties of a [custodian](../resources/custodian.md) object that can be modified.
+The following table lists the properties of a [custodian](../resources/ediscovery-custodian.md) object that can be modified.
 
 None
 

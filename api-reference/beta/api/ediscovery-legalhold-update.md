@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [legalhold](../resources/legalhold.md) object.
+Update the properties of a [legalhold](../resources/ediscovery-legalhold.md) object.
 
 ## Permissions
 
@@ -45,9 +45,9 @@ PATCH /compliance/ediscovery/cases/{caseId}/legalholds/{legalholdId}
 
 ## Request body
 
-In the request body, supply a JSON representation of the [legalhold](../resources/legalhold.md) object.
+In the request body, supply a JSON representation of the [legalhold](../resources/ediscovery-legalhold.md) object.
 
-The following table shows the properties that are required when you update the [legalhold](../resources/legalhold.md).
+The following table shows the properties that are required when you update the [legalhold](../resources/ediscovery-legalhold.md).
 
 None
 

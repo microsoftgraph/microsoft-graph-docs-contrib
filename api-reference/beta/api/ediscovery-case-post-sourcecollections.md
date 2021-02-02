@@ -45,9 +45,9 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections
 
 ## Request body
 
-In the request body, supply a JSON representation of the [sourceCollection](../resources/sourcecollection.md) object.
+In the request body, supply a JSON representation of the [sourceCollection](../resources/ediscovery-sourcecollection.md) object.
 
-The following table shows the properties that are required when you create the [sourceCollection](../resources/sourcecollection.md).
+The following table shows the properties that are required when you create the [sourceCollection](../resources/ediscovery-sourcecollection.md).
 
 You must provide either a **custodianSource** or **additionalSource**
 
@@ -57,7 +57,7 @@ You must provide either a **custodianSource** or **additionalSource**
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [sourceCollection](../resources/sourcecollection.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [sourceCollection](../resources/ediscovery-sourcecollection.md) object in the response body.
 
 ## Examples
 

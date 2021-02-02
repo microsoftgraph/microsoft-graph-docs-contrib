@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [siteSource](../resources/sitesource.md) objects and their properties.
+Get a list of [siteSource](../resources/ediscovery-sitesource.md) objects and their properties.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/siteSources
+GET /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/siteSources
 ```
 
 ## Optional query parameters
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [siteSource](../resources/sitesource.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [siteSource](../resources/ediscovery-sitesource.md) objects in the response body.
 
 ## Examples
 

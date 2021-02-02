@@ -19,14 +19,14 @@ Represents an eDiscovery collection - commonly known as a search.  See [Collect 
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List sourceCollections](../api/case-list-sourcecollections.md)|[sourceCollection](../resources/sourcecollection.md) collection|Get a list of the [sourceCollection](../resources/sourcecollection.md) objects and their properties.|
-|[Create sourceCollection](../api/case-post-sourcecollections.md)|[sourceCollection](../resources/sourcecollection.md)|Create a new [sourceCollection](../resources/sourcecollection.md) object.|
-|[Get sourceCollection](../api/sourcecollection-get.md)|[sourceCollection](../resources/sourcecollection.md)|Read the properties and relationships of a [sourceCollection](../resources/sourcecollection.md) object.|
-|[Update sourceCollection](../api/sourcecollection-update.md)|[sourceCollection](../resources/sourcecollection.md)|Update the properties of a [sourceCollection](../resources/sourcecollection.md) object.|
-|[Delete sourceCollection](../api/sourcecollection-delete.md)|None|Deletes a [sourceCollection](../resources/sourcecollection.md) object.|
-|[Estimate Statistics](../api/sourcecollection-estimatestatistics.md)|None|Estimates the count and size of items that could be collected - Added to a review set.|
-|[List additionalSources](../api/sourcecollection-list-additionalsources.md)|[dataSource](../resources/datasource.md) collection|Get the dataSource resources from the additionalSources navigation property.|
-|[List custodianSources](../api/sourcecollection-list-custodiansources.md)|[dataSource](../resources/datasource.md) collection|Get the dataSource resources from the custodianSources navigation property.|
+|[List sourceCollections](../api/ediscovery-case-list-sourcecollections.md)|[sourceCollection](../resources/ediscovery-sourcecollection.md) collection|Get a list of the [sourceCollection](../resources/ediscovery-sourcecollection.md) objects and their properties.|
+|[Create sourceCollection](../api/ediscovery-case-post-sourcecollections.md)|[sourceCollection](../resources/ediscovery-sourcecollection.md)|Create a new [sourceCollection](../resources/ediscovery-sourcecollection.md) object.|
+|[Get sourceCollection](../api/ediscovery-sourcecollection-get.md)|[sourceCollection](../resources/ediscovery-sourcecollection.md)|Read the properties and relationships of a [sourceCollection](../resources/ediscovery-sourcecollection.md) object.|
+|[Update sourceCollection](../api/ediscovery-sourcecollection-update.md)|[sourceCollection](../resources/ediscovery-sourcecollection.md)|Update the properties of a [sourceCollection](../resources/ediscovery-sourcecollection.md) object.|
+|[Delete sourceCollection](../api/ediscovery-sourcecollection-delete.md)|None|Deletes a [sourceCollection](../resources/ediscovery-sourcecollection.md) object.|
+|[Estimate Statistics](../api/ediscovery-sourcecollection-estimatestatistics.md)|None|Estimates the count and size of items that could be collected - Added to a review set.|
+|[List additionalSources](../api/ediscovery-sourcecollection-list-additionalsources.md)|[dataSource](../resources/ediscovery-datasource.md) collection|Get the dataSource resources from the additionalSources navigation property.|
+|[List custodianSources](../api/ediscovery-sourcecollection-list-custodiansources.md)|[dataSource](../resources/ediscovery-datasource.md) collection|Get the dataSource resources from the custodianSources navigation property.|
 
 ## Properties
 
@@ -53,10 +53,10 @@ Represents an eDiscovery collection - commonly known as a search.  See [Collect 
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|additionalSources|[dataSource](../resources/datasource.md) collection|Adds an additional source to the **sourceCollection**.|
-|addToReviewSetOperation|[addToReviewSetOperation](../resources/addtoreviewsetoperation.md)|Adds the results of the **sourceCollection** to the specified **reviewSet**.|
-|custodianSources|[dataSource](../resources/datasource.md) collection|**Custodian** sources that are included in the **sourceCollection**.|
-|lastEstimateStatisticsOperation|[estimateStatisticsOperation](../resources/estimatestatisticsoperation.md)|The last estimate operation associated with the **sourceCollection**.|
+|additionalSources|[dataSource](../resources/ediscovery-datasource.md) collection|Adds an additional source to the **sourceCollection**.|
+|addToReviewSetOperation|[addToReviewSetOperation](../resources/ediscovery-addtoreviewsetoperation.md)|Adds the results of the **sourceCollection** to the specified **reviewSet**.|
+|custodianSources|[dataSource](../resources/ediscovery-datasource.md) collection|**Custodian** sources that are included in the **sourceCollection**.|
+|lastEstimateStatisticsOperation|[estimateStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md)|The last estimate operation associated with the **sourceCollection**.|
 
 ## JSON representation
 

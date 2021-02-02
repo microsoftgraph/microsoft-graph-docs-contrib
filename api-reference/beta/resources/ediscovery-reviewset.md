@@ -19,12 +19,12 @@ Represents static set of electronically stored information collected for use in 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List reviewSets](../api/case-list-reviewsets.md) | [reviewSet](reviewset.md) collection | Get a collection of **reviewset**s. |
-| [Get reviewSet](../api/reviewset-get.md) | [reviewSet](reviewset.md) | Read the properties and relationships of a **reviewSet** object. |
-| [Create reviewSet](../api/case-post-reviewsets.md) | [reviewSet](reviewset.md) | Create a new **reviewset**. |
-| [List queries](../api/reviewsetquery-list.md)|[reviewSetQuery](../resources/reviewsetquery.md) collection|Get the reviewSetQuery resources from the queries navigation property.|
-| [Export](../api/reviewset-export.md) | None | Initiates a export of data from the **reviewset**. |
-| [addToReviewSet](../api/reviewset-addtoreviewset.md)|None|Adds data from a **sourceCollection** to a **reviewset**|
+| [List reviewSets](../api/ediscovery-case-list-reviewsets.md) | [reviewSet](reviewset.md) collection | Get a collection of **reviewset**s. |
+| [Get reviewSet](../api/ediscovery-reviewset-get.md) | [reviewSet](reviewset.md) | Read the properties and relationships of a **reviewSet** object. |
+| [Create reviewSet](../api/ediscovery-case-post-reviewsets.md) | [reviewSet](reviewset.md) | Create a new **reviewset**. |
+| [List queries](../api/ediscovery-reviewsetquery-list.md)|[reviewSetQuery](../resources/ediscovery-reviewsetquery.md) collection|Get the reviewSetQuery resources from the queries navigation property.|
+| [Export](../api/ediscovery-ediscovery-reviewset-export.md) | None | Initiates a export of data from the **reviewset**. |
+| [addToReviewSet](../api/ediscovery-reviewset-addtoreviewset.md)|None|Adds data from a **sourceCollection** to a **reviewset**|
 
 ## Properties
 
@@ -39,7 +39,7 @@ Represents static set of electronically stored information collected for use in 
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-| Review set query |[reviewSetQuery](reviewsetquery.md) collection| Read-only. Nullable.|
+| Review set query |[reviewSetQuery](ediscovery-reviewsetquery.md) collection| Read-only. Nullable.|
 
 ## JSON representation
 

@@ -15,7 +15,7 @@ Namespace: microsoft.graph.ediscovery
 
 Executes an estimate of the source collection. To learn more about source collections, see [Collect data for a case in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/collecting-data-for-ediscovery)
 
-Once the estimate operation is created, you can retrieve the status of the operation by retrieving the Location parameter from the response headers, the location provides a URL that will return a [estimateStatisticsOperation](../resources/caseexportoperation.md)
+Once the estimate operation is created, you can retrieve the status of the operation by retrieving the Location parameter from the response headers, the location provides a URL that will return a [estimateStatisticsOperation](../resources/ediscovery-caseexportoperation.md)
 
 ## Permissions
 

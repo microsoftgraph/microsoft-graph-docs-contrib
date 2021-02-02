@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [case](../resources/case.md) object.
+Delete a [case](../resources/ediscovery-case.md) object.
 
 ## Permissions
 

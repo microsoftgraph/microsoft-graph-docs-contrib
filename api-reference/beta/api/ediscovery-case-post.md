@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [case](../resources/case.md) object.
+Create a new [case](../resources/ediscovery-case.md) object.
 
 ## Permissions
 
@@ -41,7 +41,7 @@ POST /compliance/ediscovery/cases
 
 ## Request body
 
-In the request body, supply a JSON representation of an [case](../resources/case.md) object. The following table lists properties that can be submitted with the call.
+In the request body, supply a JSON representation of an [case](../resources/ediscovery-case.md) object. The following table lists properties that can be submitted with the call.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -49,7 +49,7 @@ In the request body, supply a JSON representation of an [case](../resources/case
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a new [case](../resources/case.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [case](../resources/ediscovery-case.md) object in the response body.
 
 ## Examples
 

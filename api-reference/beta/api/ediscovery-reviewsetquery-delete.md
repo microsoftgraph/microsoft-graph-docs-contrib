@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [reviewSetQuery](../resources/reviewsetquery.md) object.
+Delete a [reviewSetQuery](../resources/ediscovery-reviewsetquery.md) object.
 
 ## Permissions
 

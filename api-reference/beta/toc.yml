@@ -1445,116 +1445,116 @@ items:
       - name: eDiscovery
         items:
         - name: Overview
-          href: resources/eDiscoveryapioverview.md
+          href: resources/ediscovery-eDiscoveryapioverview.md
         - name: eDiscovery case
-          href: resources/case.md
+          href: resources/ediscovery-case.md
           items:
           - name: List
-            href: api/case-list.md
+            href: api/ediscovery-case-list.md
           - name: Create
-            href: api/case-post.md
+            href: api/ediscovery-case-post.md
           - name: Get
-            href: api/case-get.md
+            href: api/ediscovery-case-get.md
           - name: Update
-            href: api/case-update.md
+            href: api/ediscovery-case-update.md
           - name: Delete
-            href: api/case-delete.md
+            href: api/ediscovery-case-delete.md
         - name: Custodian
-          href: api/custodian-update.md
+          href: api/ediscovery-custodian.md
           items:
           - name: List
-            href: api/case-list-custodians.md
+            href: api/ediscovery-case-list-custodians.md
           - name: Create
-            href: api/case-post-custodians.md
+            href: api/ediscovery-case-post-custodians.md
           - name: Get
-            href: api/custodian-get.md
+            href: api/ediscovery-custodian-get.md
           - name: Update
-            href: api/custodian-update.md
+            href: api/ediscovery-custodian-update.md
           - name: Activate
-            href: api/custodian-activate.md
+            href: api/ediscovery-custodian-activate.md
           - name: Release
-            href: api/custodian-release.md
+            href: api/ediscovery-custodian-release.md
         - name: Legal hold
-          href: resources/legalhold.md
+          href: resources/ediscovery-legalhold.md
           items:
           - name: List
-            href: api/case-list-legalholds.md
+            href: api/ediscovery-case-list-legalholds.md
           - name: Create
-            href: api/case-post-legalholds.md
+            href: api/ediscovery-case-post-legalholds.md
           - name: Get
-            href: api/legalhold-get.md
+            href: api/ediscovery-legalhold-get.md
           - name: Update
-            href: api/legalhold-update.md
+            href: api/ediscovery-legalhold-update.md
           - name: Delete
-            href: api/legalhold-delete.md
+            href: api/ediscovery-legalhold-delete.md
         - name: Review set
-          href: resources/reviewset.md
+          href: resources/ediscovery-reviewset.md
           items:
           - name: List
-            href: api/case-list-reviewsets.md
+            href: api/ediscovery-case-list-reviewsets.md
           - name: Create
-            href: api/case-post-reviewsets.md
+            href: api/ediscovery-case-post-reviewsets.md
           - name: Get
-            href: api/reviewset-get.md
+            href: api/ediscovery-reviewset-get.md
         - name: Source Collection
-          href: resources/sourcecollection.md
+          href: resources/ediscovery-sourcecollection.md
           items:
           - name: List
-            href: api/case-list-sourcecollections.md
+            href: api/ediscovery-case-list-sourcecollections.md
           - name: Create
-            href: api/case-post-sourcecollections.md
+            href: api/ediscovery-case-post-sourcecollections.md
           - name: Get
-            href: api/sourcecollection-get.md
+            href: api/ediscovery-sourcecollection-get.md
           - name: Update
-            href: api/sourcecollection-update.md
+            href: api/ediscovery-sourcecollection-update.md
           - name: Delete
-            href: api/sourcecollection-delete.md
+            href: api/ediscovery-sourcecollection-delete.md
           - name: List custodian sources
-            href: api/sourcecollection-list-custodiansources.md
+            href: api/ediscovery-sourcecollection-list-custodiansources.md
           - name: Add custodian sources
-            href: api/sourcecollection-post-custodiansources.md
+            href: api/ediscovery-sourcecollection-post-custodiansources.md
           - name: List additional sources
-            href: api/sourcecollection-list-additionalsources.md
+            href: api/ediscovery-sourcecollection-list-additionalsources.md
           - name: Add additional sources
-            href: api/sourcecollection-post-additionalsources.md
+            href: api/ediscovery-sourcecollection-post-additionalsources.md
           - name: Estimate statistics
-            href: api/sourcecollection-estimatestatistics.md
+            href: api/ediscovery-sourcecollection-estimatestatistics.md
           - name: List add to review set operations
-            href: api/sourcecollection-list-addtoreviewsetoperation.md
+            href: api/ediscovery-sourcecollection-list-addtoreviewsetoperation.md
           - name: List last estimate operation
-            href: api/sourcecollection-list-lastestimatestatisticsoperation.md
+            href: api/ediscovery-sourcecollection-list-lastestimatestatisticsoperation.md
         - name: Tag
-          href: resources/tag.md
+          href: resources/ediscovery-tag.md
           items:
           - name: List
-            href: api/case-list-tags.md
+            href: api/ediscovery-case-list-tags.md
           - name: Create
-            href: api/case-post-tags.md
+            href: api/ediscovery-case-post-tags.md
           - name: Get
-            href: api/tag-get.md
+            href: api/ediscovery-tag-get.md
           - name: Update
-            href: api/tag-update.md
+            href: api/ediscovery-tag-update.md
           - name: Delete
-            href: api/tag-delete.md
+            href: api/ediscovery-tag-delete.md
           - name: List child tags
-            href: api/tag-list-childtags.md
+            href: api/ediscovery-tag-list-childtags.md
           - name: List tags - as hierarchy
-            href: api/tag-list-ashierarchy.md
+            href: api/ediscovery-tag-list-ashierarchy.md
           - name: Apply tags
-            href: api/reviewsetquery-applytags.md
+            href: api/ediscovery-reviewsetquery-applytags.md
         - name: Review set query
-          href: resources/reviewsetquery.md
+          href: resources/ediscovery-reviewsetquery.md
           items:
           - name: List
-            href: api/reviewsetquery-list.md
+            href: api/ediscovery-reviewsetquery-list.md
           - name: Create
-            href: api/reviewsetquery-post.md
+            href: api/ediscovery-reviewsetquery-post.md
           - name: Get
-            href: api/reviewsetquery-get.md
+            href: api/ediscovery-reviewsetquery-get.md
           - name: Update
-            href: api/reviewsetquery-update.md
+            href: api/ediscovery-reviewsetquery-update.md
           - name: Delete
-            href: api/reviewsetquery-delete.md
+            href: api/ediscovery-reviewsetquery-delete.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
