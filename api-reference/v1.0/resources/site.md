@@ -28,6 +28,11 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Follow site][]          | collection of site | Follow a user's site or multiple sites.
 | [Unfollow site][]        | collection of site | Follow a user's site or multiple sites.
 | [List followed sites][]  | collection of site | List the sites that have been followed by the signed in user.
+| [Get permission][]             | GET /sites/{site-id}/permissions/{permission-id}
+| [List permissions][]           | GET /sites/{site-id}/permissions
+| [Create permissions][]         | POST /sites/{site-id}/permissions
+| [Delete permission][]         | DELETE /sites/{site-id}/permissions/{permission-id}
+| [Update permission][]         | PATCH /sites/{site-id}/permissions/{permission-id}
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -40,6 +45,11 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Follow site]: ../api/site-follow.md
 [Unfollow site]: ../api/site-unfollow.md
 [List followed sites]: ../api/sites-list-followed.md
+[Get permission]: ../api/site-get-permission.md
+[List permissions]: ../api/site-list-permissions.md
+[Create permissions]: ../api/site-post-permissions.md
+[Delete permission]: ../api/site-delete-permission.md
+[Update permission]: ../api/site-update-permission.md
 
 ## Properties
 
