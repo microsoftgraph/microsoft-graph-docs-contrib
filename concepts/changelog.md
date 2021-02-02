@@ -138,7 +138,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the **notificationChannelUrl** optional property to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) resource. | 
+| Addition | beta | Added the **notificationChannelUrl** optional property to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added the **addedStudentAction** optional property to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added the **educationAddedStudentAction** enumeration type. |
 
@@ -169,13 +169,10 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added methods for listing and creating user attribute assignments to the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added methods for listing and creating user attribute assignments to the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | v1.0 | Added the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true) resource type. |
-<<<<<<< HEAD
-| Addition | beta | Added [email authentication method configuration](/graph/api/resources/emailauthenticationmethodconfiguration?view=graph-rest-beta) to the [authentication methods policy](/graph/api/resources/authenticationmethodspolicies-overview) API.|
 | Addition | beta | Added the **includeDevices** property to [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.|
 | Addition | beta | Added the **excludeDevices** property to [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.|
 | Change | beta | Deprecated the **includeDeviceStates** property on the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.|
 | Change | beta | Deprecated the **excludeDeviceStates** property on the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.|
-=======
 | Addition | beta | Added the [authenticationEventsPolicy](/graph/api/resources/authenticationeventspolicy?preserve-view=true&view=graph-rest-beta) resource type. |
 | Addition | beta | Added the [authenticationListener](/graph/api/resources/authenticationlistener?preserve-view=true&view=graph-rest-beta) resource type. |
 | Addition | beta | Added the [invokeUserFlowListener](/graph/api/resources/invokeUserFlowListener?preserve-view=true&view=graph-rest-beta) resource type. |
@@ -197,7 +194,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **isHidden** property to the [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true) entity. |
 | Addition | beta | Added the optional `includeHiddenFolders` query parameter to the [list mailFolders](/graph/api/user-list-mailfolders?view=graph-rest-beta&preserve-view=true) operation.
->>>>>>> 2d694bf7f7b90ec16126dcd77d7e0d852f08c0d9
 
 ### Teamwork
 
@@ -384,9 +380,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Change | beta | Deprecated **feedDirections** property on [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource. |
 | Change | beta | Added **details** property to [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource. |
 | Change | beta | Deprecated **processingStateReasons** property on [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource. |
-| Change | beta | Renamed properties on [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource: <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li></ul> |  
+| Change | beta | Renamed properties on [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource: <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li></ul> |
 | Change | beta | Added **details** property to [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true) resource. |
-| Change | beta | Renamed properties on [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true) resource: <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li><li>acquiredByPrinter -> isAcquiredByPrinter</li></ul> |  
+| Change | beta | Renamed properties on [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true) resource: <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li><li>acquiredByPrinter -> isAcquiredByPrinter</li></ul> |
 
 ### Devices and apps | Corporate management
 
