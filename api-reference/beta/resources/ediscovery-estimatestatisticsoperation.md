@@ -52,7 +52,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.estimateStatisticsOperation",
+  "@odata.type": "microsoft.graph.ediscovery.estimateStatisticsOperation",
   "baseType": "microsoft.graph.ediscovery.caseOperation",
   "openType": false
 }
@@ -61,7 +61,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/operations/$entity",
-    "@odata.type": "#microsoft.graph.estimateStatisticsOperation",
+    "@odata.type": "#microsoft.graph.ediscovery.estimateStatisticsOperation",
     "createdDateTime": "2021-01-12T18:47:23.3974907Z",
     "completedDateTime": "2021-01-12T18:47:51.1461805Z",
     "percentProgress": 100,

@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [estimateStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.ediscovery.estimateStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md) objects in the response body.
 
 ## Examples
 
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/source
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.estimateStatisticsOperation)"
+  "@odata.type": "Collection(microsoft.graph.ediscovery.estimateStatisticsOperation)"
 }
 -->
 

@@ -33,7 +33,7 @@ The container for a [custodian's](ediscovery-custodian.md) mailbox and OneDrive 
 |displayName|String|The display name associated with the mailbox and site.|
 |email|String|Email address of the user's mailbox.|
 |id|String|The ID of the **userSource**. This is not the ID of the actual group|
-|includedSources|sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
+|includedSources|microsoft.graph.ediscovery.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
 
 ### sourceType values
 

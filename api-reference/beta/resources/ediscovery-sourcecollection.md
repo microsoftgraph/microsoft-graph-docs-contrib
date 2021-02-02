@@ -40,7 +40,7 @@ Represents an eDiscovery collection - commonly known as a search.  See [Collect 
 |id|String| The ID for the **sourceCollection**. Read-only. |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The last user who modified the **sourceCollection**.|
 |lastModifiedDateTime|DateTimeOffset|The last date and time the **sourceCollection** was modified.|
-|tenantSources|tenantSources|When specified, the collection will span across a service for an entire workload. Possible values are: `allMailboxes`, `allSites`.|
+|tenantSources|microsoft.graph.ediscovery.tenantSources|When specified, the collection will span across a service for an entire workload. Possible values are: `allMailboxes`, `allSites`.|
 
 ### tenantSources values
 
