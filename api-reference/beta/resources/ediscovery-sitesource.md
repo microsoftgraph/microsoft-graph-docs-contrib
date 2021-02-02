@@ -46,7 +46,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.ediscovery.siteSource",
-  "baseType": "microsoft.graph.dataSource",
+  "baseType": "microsoft.graph.ediscovery.dataSource",
   "openType": false
 }
 -->
