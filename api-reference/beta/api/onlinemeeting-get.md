@@ -56,8 +56,8 @@ GET /users/{userId}/onlineMeetings/{meetingId}
 To get the specified onlineMeeting using **videoTeleconferenceId**:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
-GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
+GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
+GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
 To get the specified onlineMeeting using **joinWebUrl**:
@@ -81,9 +81,9 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 
 >**Notes:**
 >- The `/app` path is deprecated. Going forward, use the `/communications` path.
->- `id` in the first two routes refers to [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up).
 >- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
->- `meetingId` is the **id** of an [onlineMeeting entity](../resources/onlinemeeting.md).
+>- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
+> - **videoTeleconferenceId** is generated for Cloud-Video-Interop licensed users and can be found in an [onlineMeeting](../resources/onlinemeeting.md) object. Refer to [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up) for more details.
 >- `joinWebUrl` must be URL encoded and this route can only be used to retrieve meetings created by `userId`.
 
 ## Optional query parameters

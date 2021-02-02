@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object.You can get details of an onlineMeeting using [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) or [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id).
+Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object. You can get details of an onlineMeeting using [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) or [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id).
 
 
 ## Permissions
@@ -48,9 +48,9 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{video
 
 > **Note:**
 > - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
-> - `meetingId` is the **id** of an [onlineMeeting entity](../resources/onlinemeeting.md).
-> - **videoTeleconferenceId** is generated for Cloud-Video-Interop licensed users and can be found in an [onlineMeeting entity](../resources/onlinemeeting.md). Refer to [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up) for more details.
-> - \* This scenario is application token only and does not support application access policy.
+> - `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
+> - **videoTeleconferenceId** is generated for Cloud-Video-Interop licensed users and can be found in an [onlineMeeting](../resources/onlinemeeting.md) object. Refer to [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up) for more details.
+> - \* This scenario only supports application token and does not support application access policy.
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
