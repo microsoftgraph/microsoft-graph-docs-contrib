@@ -51,7 +51,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|includedSources|sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
+|includedSources|microsoft.graph.ediscovery.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
 |group@odata.bind|String|ID of the group. To get the group ID, use the [List groups](../api/group-list.md) operation.|
 
 ## Response

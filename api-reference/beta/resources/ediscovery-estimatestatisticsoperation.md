@@ -44,7 +44,7 @@ None
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|sourceCollection|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|**TODO: Add Description**|
+|sourceCollection|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|eDiscovery collection - commonly known as a search|
 
 ## JSON representation
 

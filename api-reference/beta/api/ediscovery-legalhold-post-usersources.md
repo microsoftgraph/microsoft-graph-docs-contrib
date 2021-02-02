@@ -52,7 +52,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |email|String|SMTP address of the user.|
-|includedSources|sourceType|Specifies which sources are included in this group. This value must be `mailbox`, `site` is not supported for legalHolds at this time.|
+|includedSources|microsoft.graph.ediscovery.sourceType|Specifies which sources are included in this group. This value must be `mailbox`, `site` is not supported for legalHolds at this time.|
 
 ## Response
 
