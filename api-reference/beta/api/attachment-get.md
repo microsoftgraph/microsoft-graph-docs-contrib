@@ -15,16 +15,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-Read the properties, relationships, or raw contents of an attachment, attached to a user [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).
+Read the properties, relationships, or raw contents of an attachment that is attached to a user [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or group [post](../resources/post.md). 
 
 An attachment can be one of the following types:
 
-* A file ([fileAttachment](../resources/fileattachment.md) resource).
-* An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource). You can use `$expand` to further get the properties of that item. See an [example](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message).
-* A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).
+* A file. Programmatically, this is a [fileAttachment](../resources/fileattachment.md) resource.
+* An Outlook item (contact, event or message). Programmatically, an item attachment is an [itemAttachment](../resources/itemattachment.md) resource. You can use `$expand` to further get the properties of that item. See an [example](#request-2) below.
+* A link to a file stored in the cloud. Programmatically, this is a [referenceAttachment](../resources/referenceattachment.md) resource.
 
-All these types of attachment resources are derived from the [attachment](../resources/attachment.md)
-resource.
+All these types of attachments are derived from the [attachment](../resources/attachment.md) resource. 
 
 ### Get the raw contents of a file or item attachment
 You can append the path segment `/$value` to get the raw contents of a file or item attachment. 
@@ -43,12 +42,15 @@ Attempting to get the `$value` of a reference attachment returns HTTP 405.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the resource (**event**, **message**, **outlookTask**, or **post**) that the attachment is attached to and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
-* If accessing attachments in messages: Mail.Read
-* If accessing attachments in events: Calendars.Read
-* If accessing attachments in Outlook tasks: Tasks.Read
-* If accessing attachments in group posts: Group.Read.All
+| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
+|:-----|:-----|:-----|:-----|
+| [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [outlookTask](../resources/outlooktask.md) |  Tasks.Read | Tasks.Read | Not supported |
+| [post](../resources/post.md) | Group.Read.All | Not supported | Not supported |
+
 
 <!--
 * If accessing attachments in group events or posts: Group.Read.All
