@@ -58,7 +58,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -94,7 +93,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.siteSource)"
+  "@odata.type": "Collection(microsoft.graph.ediscovery.siteSource)"
 }
 -->
 

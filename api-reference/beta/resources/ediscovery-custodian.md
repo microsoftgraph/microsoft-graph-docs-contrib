@@ -69,7 +69,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.custodian",
+  "@odata.type": "microsoft.graph.ediscovery.custodian",
   "baseType": "",
   "openType": false
 }
@@ -77,7 +77,7 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.custodian",
+  "@odata.type": "#microsoft.graph.ediscovery.custodian",
   "email": "String",
   "applyHoldToSources": "Boolean",
   "status": "String",

@@ -54,7 +54,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.caseExportOperation",
+  "@odata.type": "microsoft.graph.ediscovery.caseExportOperation",
   "baseType": "microsoft.graph.caseOperation",
   "openType": false
 }
@@ -62,7 +62,7 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.caseExportOperation",
+  "@odata.type": "#microsoft.graph.ediscovery.caseExportOperation",
   "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
   "completedDateTime": "String (timestamp)",

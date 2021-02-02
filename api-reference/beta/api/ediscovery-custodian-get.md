@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea2410
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.custodian"
+  "@odata.type": "microsoft.graph.ediscovery.custodian"
 }
 -->
 

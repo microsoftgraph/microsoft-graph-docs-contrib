@@ -81,7 +81,7 @@ Content-length: 295
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.legalhold"
+  "@odata.type": "microsoft.graph.ediscovery.legalhold"
 }
 -->
 

@@ -101,7 +101,7 @@ Content-length: 254
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.custodian"
+  "@odata.type": "microsoft.graph.ediscovery.custodian"
 }
 -->
 

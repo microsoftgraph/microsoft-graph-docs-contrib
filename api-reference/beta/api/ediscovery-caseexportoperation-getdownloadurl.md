@@ -50,17 +50,19 @@ If successful, this function returns a `200 OK` response code and a String in th
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "caseexportoperation_getdownloadurl"
 }
 -->
+
 ``` http
-GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/99e865fc-e29f-479a-ba83-9e58eb017103/operations/63926d4779c243458902328d83f61f53/microsoft.graph.caseExportOperation/getDownloadUrl
+GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/99e865fc-e29f-479a-ba83-9e58eb017103/operations/63926d4779c243458902328d83f61f53/microsoft.graph.ediscovery.caseExportOperation/getDownloadUrl
 ```
 
-
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -68,6 +70,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/99e865fc-e29f-4
   "@odata.type": "Edm.String"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
