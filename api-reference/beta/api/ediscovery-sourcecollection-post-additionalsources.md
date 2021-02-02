@@ -87,7 +87,7 @@ Content-length: 179
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.dataSource"
+  "@odata.type": "microsoft.graph.ediscovery.dataSource"
 }
 -->
 
