@@ -254,11 +254,11 @@ Content-Type: application/json
 
 ## What should you expect in the notification
 
-Depending on your subscription, you can either get the notification with resource data, or without it. Subscribing with resource data allows you to get the message payload along with the notification, thus removing the need to call back and get the content.
+Depending on your subscription, you can either get the notification with resource data, or without it. Subscribing with resource data allows you to get the message payload along with the notification, removing the need to call back and get the content.
 
 ### Notifications with resource data
 
-For notifications with resource data, the payload looks like the following. The payload below is for a message sent in a chat
+For notifications with resource data, the payload looks like the following. This payload is for a message sent in a chat.
 
 ```json
 {
@@ -285,9 +285,9 @@ For notifications with resource data, the payload looks like the following. The 
 }
 ```
 
-For specifics on how to validate tokens and decrypt the payload, refer to [notifications with resource data documentation](webhooks-with-resource-data.md).
+For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
 
-The decrypted notification payload looks like the following. The payload abide by [chatMessage](/graph/api/resources/chatMessage?preserve-view=true) schema. The payload will be similar to to what one would get from GET APIs
+The decrypted notification payload looks like the following. The payload conforms to the [chatMessage](/graph/api/resources/chatMessage?preserve-view=true) schema. The payload is similar to that returned by GET operations.
 
 ```json
 {
@@ -331,9 +331,9 @@ The decrypted notification payload looks like the following. The payload abide b
 
 ### Notifications without resource data
 
-Notifications without resource data give you enough information to make call into GET APIs to get the message content. Subscriptions for notifications without resource data do not require encryption certificate (since actual resource data is not sent over).
+Notifications without resource data give you enough information to make gET calls to get the message content. Subscriptions for notifications without resource data do not require an encryption certificate (because actual resource data is not sent over).
 
-The payload looks like the following. The payload below is for a message sent in a channel
+The payload looks like the following. This payload is for a message sent in a channel.
 
 ```json
  {
@@ -351,7 +351,7 @@ The payload looks like the following. The payload below is for a message sent in
 }
 ```
 
-`resource` and `@odata.id` properties can be used to make call back into Microsoft Graph to get the payload for the message. GET APIs will always give the current state of the message. So if the message is changed between the notification being sent and message being retrieved, the APIs will give the current state.
+The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the message. GET calls will always return the current state of the message. If the message is changed between when the notification is sent and when the message is retrieved, the operation will return the updated message.
 
 ## See also
 - [Microsoft Graph change notifications](webhooks.md)
