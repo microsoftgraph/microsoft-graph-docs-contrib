@@ -55,25 +55,8 @@ The following table shows the parameters that can be used with this action.
 |description|String| Description of the export |
 |azureBlobContainer|String| When exporting to your own Azure storage account, this is the container URL. |
 |azureBlobToken|String| When exporting to your own Azure storage account, SAS token for the container URL. |
-|exportOptions| [microsoft.graph.ediscovery.exportOptions](#exportoptions-values) |specifies options that control the format of the export. |
-|exportStructure|[microsoft.graph.ediscovery.exportFileStructure](#exportfilestructure-values)| Options that control file structure and packaging of the export. |
-
-### exportOptions values
-
-|Member| Description |
-|:---|:---|
-|originalFiles| Include copies of the original files - exclude this option when generating reports only |
-|text| Include raw extracted text files for each document. |
-|pdfReplacement| If redacted PDF files are generated during review, these files are available for export. You can choose to export the redacted PDFs instead of the original native files by including this option. |
-|fileInfo| Include the summery and load file - this should always be included. |
-|tags| Include document tags that were applied during review in the load file. |
-
-### exportFileStructure values
-
-|Member| Description |
-|:---|:---|
-|directory| Maps to the condensed directory structure commonly used by eDiscovery tools. All files are exported to a root file called NativeFiles. |
-|pst| Emails are stored in PSTs while documents from sites are stored in folders that represent the original native folder structure. |
+|exportOptions| [microsoft.graph.ediscovery.exportOptions](../resources/ediscovery-caseexportoperation.md#exportoptions-values) |specifies options that control the format of the export. |
+|exportStructure|[microsoft.graph.ediscovery.exportFileStructure](../resources/ediscovery-caseexportoperation.md#exportfilestructure-values)| Options that control file structure and packaging of the export. |
 
 ## Response
 
