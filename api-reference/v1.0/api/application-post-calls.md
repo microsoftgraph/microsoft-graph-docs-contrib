@@ -1068,8 +1068,6 @@ Content-Type: application/json
 
 This call needs application instance with PSTN number assigned, as described in Example 7.
 
-> **Note:** If a tenant has Australian PSTN numbers assigned to any application instances, this call might not work. If a tenant is newly created, it might take several days for this feature to be available.
-
 #### Request
 The following example shows a request to make a peer-to-peer call between the bot and a PSTN number. In this example, the media is hosted locally by the application. Replace the values for authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID to make the example work.
 
