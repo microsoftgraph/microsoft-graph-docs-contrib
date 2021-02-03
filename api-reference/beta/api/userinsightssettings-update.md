@@ -1,0 +1,113 @@
+---
+title: "Update userInsightsSettings"
+description: "Update properties of userInsightsSettings object"
+author: "simonhult"
+localization_priority: Normal
+ms.prod: "insights"
+doc_type: "apiPageType"
+---
+
+# Update userInsightsSettings
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Update properties of the specified [userInsightsSettings](../resources/userinsightssettings.md) resource.
+
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.ReadWrite |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
+
+## HTTP request
+<!-- { "blockType": "ignored" } -->
+
+```http
+PATCH /users/{userId}/settings/itemInsights
+```
+
+## Request headers
+
+| Header       | Value|
+|:-----------|:------|
+| Authorization  | Bearer {token}. Required.  |
+| Content-Type  | application/json  |
+
+## Request body
+
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|isEnabled|Boolean| `true` if user's item insights are enabled; `false` if user's item insights are disabled. Default is `true`. Optional.|
+
+## Response
+
+If successful, this method returns a `200 OK` response code and [userInsightsSettings](../resources/userinsightssettings.md) object in the response body.
+
+## Example 
+
+### Request
+
+Here is an example request on how user updates "**isEnabled**" privacy setting in order to disable his item insights.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_userinsightssettings"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/users/{userId}/settings/itemInsights
+Content-type: application/json
+
+{
+  "isEnabled": "false"
+}
+```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-iteminsightssettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-iteminsightssettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-iteminsightssettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-iteminsightssettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### Response
+
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.userinsightssettings",
+  "name": "update_userinsightssettings"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "isEnabled": false,
+}
+```
+
+
