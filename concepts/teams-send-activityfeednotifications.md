@@ -267,7 +267,7 @@ Target user must have the Teams app which is sending notifications installed.
 
 ##### Can a user send notifications to themselves?
 
-No, at the moment a user cannot send notifications to themselves. For scenario like these, please use application permissions.
+No, at the moment a user cannot send notifications to themselves. For scenarios like these, please use application permissions.
 
 ##### Can a Teams app control how the notifications are shown to user (banner, feed etc)
 
@@ -275,10 +275,10 @@ No, only users are allowed to change notification settings.
 
 ##### I installed my app, but I do not see notification settings under the user account
 
-The settings will appear once the first notification has been sent by the Teams app. This reduces the amount of settings users see and help in better management.
+The settings will appear once the first notification has been sent by the Teams app. This reduces the amount of settings that the users see and help in better management.
 
-##### I started getting a Conflict error, how do I resolve it
+##### I started getting a 409 (conflict) error, how do I resolve it
 
-The biggest reason for conflict errors is because multiple Teams apps installed in the scope (team, chat, user etc) have the same AzureAD appId being used in `webApplicationInfo` section of the manifest. When this happens you will get an error like `Found multiple applications with the same AAD App ID 'Your AzureAD AppId'.`. In such cases, ensure that you use unique AzureAD apps for unique Teams apps. However, having the same Teams app installed in multiple scopes (team + user for example) is not an issue.
+The biggest reason for `Conflict` errors is multiple Teams apps installed in the same scope (team, chat, user etc) have the same AzureAD appId being used in `webApplicationInfo` section of the manifest. When this happens, you will get an error like `Found multiple applications with the same AAD App ID 'Your AzureAD AppId'.`. In such cases, ensure that you use unique AzureAD apps for unique Teams apps. *Note, having the same Teams app installed in multiple scopes (team + user for example) is not an issue.*
 
 
