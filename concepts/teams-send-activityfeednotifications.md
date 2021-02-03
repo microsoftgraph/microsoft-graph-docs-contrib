@@ -261,24 +261,24 @@ Users can click **Edit** next to an app and customize the notifications, as show
 
 ## FAQs
 
-##### Who needs the Teams app to be installed?
+### Who needs to install the Teams app?
 
-Target user must have the Teams app which is sending notifications installed.
+The target user must have the Teams app that is sending notifications installed.
 
-##### Can a user send notifications to themselves?
+### Can a user send notifications to themselves?
 
-No, at the moment a user cannot send notifications to themselves. For scenarios like these, please use application permissions.
+No, a user cannot send notifications to themselves. For this scenario, use application permissions.
 
-##### Can a Teams app control how the notifications are shown to user (banner, feed etc)
+### Can a Teams app control how the notifications are shown to the user?
 
 No, only users are allowed to change notification settings.
 
-##### I installed my app, but I do not see notification settings under the user account
+### I installed my app, why don't I see notification settings under the user account?
 
-The settings will appear once the first notification has been sent by the Teams app. This reduces the amount of settings that the users see and help in better management.
+The settings will appear after the first notification is sent by the Teams app. This reduces the number of settings that users see.
 
-##### I started getting a 409 (conflict) error, how do I resolve it
+### I started getting a 409 (conflict) error, how do I resolve it?
 
-The biggest reason for `Conflict` errors is multiple Teams apps installed in the same scope (team, chat, user etc) have the same AzureAD appId being used in `webApplicationInfo` section of the manifest. When this happens, you will get an error like `Found multiple applications with the same AAD App ID 'Your AzureAD AppId'.`. In such cases, ensure that you use unique AzureAD apps for unique Teams apps. *Note, having the same Teams app installed in multiple scopes (team + user for example) is not an issue.*
+`Conflict` errors primarily occur when multiple Teams apps installed in the same scope (team, chat, user, and so on) have the same Azure AD appId in the `webApplicationInfo` section of the manifest. When this happens, you will get an error such as `Found multiple applications with the same Azure AD App ID 'Your AzureAD AppId'.`. Make sure that you use unique Azure AD apps for unique Teams apps. Note that you can have the same Teams app installed in multiple scopes (team + user for example).
 
 
