@@ -42,6 +42,23 @@ Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).
 |resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md)|
 |status|microsoft.graph.ediscovery.caseOperationStatus|The status of the case operation. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md). Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
 
+### exportOptions values
+
+|Member| Description |
+|:---|:---|
+|originalFiles| Include copies of the original files - exclude this option when generating reports only |
+|text| Include raw extracted text files for each document. |
+|pdfReplacement| If redacted PDF files are generated during review, these files are available for export. You can choose to export the redacted PDFs instead of the original native files by including this option. |
+|fileInfo| Include the summery and load file - this should always be included. |
+|tags| Include document tags that were applied during review in the load file. |
+
+### exportFileStructure values
+
+|Member| Description |
+|:---|:---|
+|directory| Maps to the condensed directory structure commonly used by eDiscovery tools. All files are exported to a root file called NativeFiles. |
+|pst| Emails are stored in PSTs while documents from sites are stored in folders that represent the original native folder structure. |
+
 ## Relationships
 
 |Relationship|Type|Description|
