@@ -3,7 +3,7 @@ title: "usageRight resource type"
 description: "Contains information about a usageRight a user/device has assigned"
 author: "jeeshnair"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
