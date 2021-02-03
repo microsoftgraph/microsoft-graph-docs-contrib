@@ -155,15 +155,13 @@ if (calendarResponse.ok) {
 
 ```java
 // Create the batch request content with the steps
-final MSBatchRequestContent batchRequestContent = new MSBatchRequestContent();
+final BatchRequestContent batchRequestContent = new BatchRequestContent();
 
 // Use the Graph client to generate the request for GET /me
 final String meGetId = batchRequestContent
                         .addBatchRequestStep(graphClient
                                               .me()
-                                              .buildRequest()
-                                              .withHttpMethod(HttpMethod.GET)
-                                              .getHttpRequest());
+                                              .buildRequest());
 
 final ZoneOffset localTimeZone = OffsetDateTime.now().getOffset();
 final OffsetDateTime today = OffsetDateTime.of(LocalDate.now(), LocalTime.MIDNIGHT, localTimeZone);
@@ -177,44 +175,17 @@ final String calendarViewRequestStepId = batchRequestContent
                                         .addBatchRequestStep(graphClient
                                           .me()
                                           .calendarView()
-                                          .buildRequest(calendarViewOptions)
-                                          .withHttpMethod(HttpMethod.GET)
-                                          .getHttpRequest());
+                                          .buildRequest(calendarViewOptions));
 
 // Send the batch request content to the /$batch endpoint
-final MSBatchResponseContent batchResponseContent = batchRequestContent.execute(graphClient);
+final BatchResponseContent batchResponseContent = graphClient.batch().buildRequest().post(graphClient);
 // Get the user response using the id assigned to the request
-final Response userResponse = batchResponseContent.getResponseById(meGetId);
-
-// For a single entity, the JSON payload can be deserialized
-// into the expected type
-if (userResponse.isSuccessful()) {
-    final User user = graphSerializer.deserializeObject(userResponse.body().string(), User.class);
-    System.out.println(String.format("Hello %s!", user.displayName));
-} else {
-    GraphErrorResponse error = graphSerializer
-        .deserializeObject(userResponse.body().string(), GraphErrorResponse.class);
-    System.out.println(
-        String.format("Error getting user: %s - %s", error.error.code, error.error.message));
-}
+final User user = batchResponseContent.getResponseById(meGetId).getDeserializedBody(User.class);
+System.out.println(String.format("Hello %s!", user.displayName));
 
 // Get the calendar view response by id
-final Response calendarViewResponse = batchResponseContent.getResponseById(calendarViewRequestStepId);
-
-// For a collection of entities, the JSON payload can be deserialized
-// into a *CollectionResponse object. The collection can then be
-// accessed via the value property
-if (calendarViewResponse.isSuccessful()) {
-    final EventCollectionResponse events = graphSerializer
-        .deserializeObject(calendarViewResponse.body().string(), EventCollectionResponse.class);
-    System.out.println(
-        String.format("You have %d events on your calendar today", events.value.size()));
-} else {
-    GraphErrorResponse error = graphSerializer
-        .deserializeObject(calendarViewResponse.body().string(), GraphErrorResponse.class);
-    System.out.println(
-        String.format("Error getting calendar view: %s - %s", error.error.code, error.error.message));
-}
+final EventCollectionResponse events = batchResponseContent.getResponseById(calendarViewRequestStepId).getDeserializedBody(EventCollectionResponse.class);
+System.out.println(String.format("You have %d events on your calendar today", events.value.size()));
 ```
 
 ---
@@ -413,7 +384,7 @@ if (calendarResponse.ok)
 
 ```java
 // Create the batch request content with the steps
-final MSBatchRequestContent batchRequestContent = new MSBatchRequestContent(batchSteps);
+final BatchRequestContent batchRequestContent = new BatchRequestContent(batchSteps);
 
 final ZoneOffset localTimeZone = OffsetDateTime.now().getOffset();
 final OffsetDateTime today = OffsetDateTime.of(LocalDate.now(), LocalTime.MIDNIGHT, localTimeZone);
@@ -437,9 +408,7 @@ final String addEventRequestId = batchRequestContent
                                 .addBatchRequestStep(graphClient
                                                 .me()
                                                 .events()
-                                                .buildRequest()
-                                                .withHttpMethod(HttpMethod.POST)
-                                                .getHttpRequest(newEvent));
+                                                .buildRequest(), HttpMethod.POST, newEvent);
 
 // Use the Graph client to generate the request URL for
 // GET /me/calendarview?startDateTime="start"&endDateTime="end"
@@ -449,45 +418,20 @@ final String calendarViewRequestStepId = batchRequestContent
                                         .addBatchRequestStep(graphClient
                                           .me()
                                           .calendarView()
-                                          .buildRequest(calendarViewOptions)
-                                          .withHttpMethod(HttpMethod.GET)
-                                          .getHttpRequest(),
+                                          .buildRequest(calendarViewOptions),
+                                          HttpMethod.GET,
+                                          null,
                                           addEventRequestId);
 
 // Send the batch request content to the /$batch endpoint
-final MSBatchResponseContent batchResponseContent = batchRequestContent.execute(client);
+final BatchResponseContent batchResponseContent = client.batch().buildRequest().post(client);
 // Get the user response using the id assigned to the request
-final Response addEventResponse = batchResponseContent.getResponseById(addEventRequestId);
-
-// For a single entity, the JSON payload can be deserialized
-// into the expected type
-  if (addEventResponse.isSuccessful()) {
-    final Event event = graphSerializer.deserializeObject(addEventResponse.body().string(), Event.class);
-    System.out.println(String.format("New event created with ID: %s", event.id));
-} else {
-    GraphErrorResponse error = graphSerializer
-        .deserializeObject(addEventResponse.body().string(), GraphErrorResponse.class);
-    System.out.println(
-        String.format("Error creating event: %s - %s", error.error.code, error.error.message));
-}
+final Event event = batchResponseContent.getResponseById(addEventRequestId).getDeserializedBody(Event.class);
+System.out.println(String.format("New event created with ID: %s", event.id));
 
 // Get the calendar view response by id
-final Response calendarViewResponse = batchResponseContent.getResponseById(calendarViewRequestStepId);
-
-// For a collection of entities, the JSON payload can be deserialized
-// into a *CollectionResponse object. The collection can then be
-// accessed via the value property
-if (calendarViewResponse.isSuccessful()) {
-    final EventCollectionResponse events = graphSerializer
-        .deserializeObject(calendarViewResponse.body().string(), EventCollectionResponse.class);
-    System.out.println(
-        String.format("You have %d events on your calendar today", events.value.size()));
-} else {
-    GraphErrorResponse error = graphSerializer
-        .deserializeObject(calendarViewResponse.body().string(), GraphErrorResponse.class);
-    System.out.println(
-        String.format("Error getting calendar view: %s - %s", error.error.code, error.error.message));
-}
+final EventCollectionResponse events = batchResponseContent.getResponseById(calendarViewRequestStepId).getDeserializedBody(EventCollectionResponse.class);
+System.out.println(String.format("You have %d events on your calendar today", events.value.size()));
 ```
 
 ---
