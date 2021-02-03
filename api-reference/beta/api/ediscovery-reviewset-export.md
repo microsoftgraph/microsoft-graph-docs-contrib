@@ -55,8 +55,8 @@ The following table shows the parameters that can be used with this action.
 |description|String| Description of the export |
 |azureBlobContainer|String| When exporting to your own Azure storage account, this is the container URL. |
 |azureBlobToken|String| When exporting to your own Azure storage account, SAS token for the container URL. |
-|exportOptions| [microsoft.graph.ediscovery.exportOptions](../resources/ediscovery-caseexportoperation.md#exportoptions-values) |specifies options that control the format of the export. |
-|exportStructure|[microsoft.graph.ediscovery.exportFileStructure](../resources/ediscovery-caseexportoperation.md#exportfilestructure-values)| Options that control file structure and packaging of the export. |
+|exportOptions| [microsoft.graph.ediscovery.exportOptions](../resources/ediscovery-caseexportoperation.md#exportoptions-values) |Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
+|exportStructure|[microsoft.graph.ediscovery.exportFileStructure](../resources/ediscovery-caseexportoperation.md#exportfilestructure-values)| Options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`.|
 
 ## Response
 
