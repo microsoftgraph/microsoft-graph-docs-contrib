@@ -609,9 +609,6 @@ Content-Type: application/json
 
 This call requires an application instance with PSTN number assigned, as described in Example 3.
 
-> **Note:** This call may fail if a tenant has Australian PSTN numbers assigned to any application instances. If a tenant is newly created, it might take several days for this feature to be available.
-
-
 #### Request
 The following example shows the request.
 
