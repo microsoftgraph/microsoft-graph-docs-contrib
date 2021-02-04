@@ -13,9 +13,11 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a subscription.
 
+See the table in the [Permissions](#permissions) section for the list of resources that support subscribing to change notifications.
+
 ## Permissions
 
-Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
@@ -37,12 +39,7 @@ Depending on the resource and the permission type (delegated or application) req
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
-### chatMessage
-
-**chatMessage** subscriptions with application permissions include resource data, and require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified. Before creating a **chatMessage** subscription, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis). 
-
-> **Note:** `/teams/getAllMessages` and `/chats/getAllMessages` are available to users that have the 
-[required licenses](https://aka.ms/teams-changenotification-licenses).
+[!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
 ### driveItem
 

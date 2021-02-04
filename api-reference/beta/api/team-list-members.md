@@ -22,7 +22,7 @@ Get the [conversationMember](../resources/conversationmember.md) collection of a
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)| TeamMember.Read.All, TeamMember.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
@@ -281,7 +281,7 @@ Content-Type: application/json
 The following example shows a request to find all the members who are have *owner* role attached to them.
 
 > [!NOTE]
-> There are some known issues with this functionality. For details, see [known issues](/graph/known-issues.md#unable-to-filter-team-members-by-roles).
+> There are some known issues with this functionality. For details, see [known issues](/graph/known-issues#unable-to-filter-team-members-by-roles).
 
 #### Request
 

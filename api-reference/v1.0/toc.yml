@@ -68,6 +68,12 @@ items:
         href: /graph/extensibility-open-users?context=graph/api/1.0
       - name: Use schema extensions (example)
         href: /graph/extensibility-schema-groups?context=graph/api/1.0
+    - name: Use Graph Explorer
+      items:
+      - name: Get started
+        href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/1.0
+      - name: Work with Graph Explorer
+        href: /graph/graph-explorer/graph-explorer-features?context=graph/api/1.0
     - name: Use Postman
       href: /graph/use-postman?context=graph/api/1.0
   - name: Migrate
@@ -181,7 +187,7 @@ items:
     - name: Known issues
       href: /graph/known-issues?context=graph/api/1.0
     - name: Changelog
-      href: /graph/changelog?context=graph/api/1.0
+      href: https://developer.microsoft.com/graph/changelog
     - name: Errors
       href: /graph/errors?context=graph/api/1.0
   - name: v1.0 reference
@@ -411,10 +417,10 @@ items:
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
-        - name: Add app for user
-          href: api/userteamwork-post-installedapps.md
         - name: List apps for user
           href: api/userteamwork-list-installedapps.md
+        - name: Add app for user
+          href: api/userteamwork-post-installedapps.md
         - name: Gets installed app for user
           href: api/userteamwork-get-installedapps.md
         - name: Upgrade installed app for user
@@ -466,8 +472,6 @@ items:
           href: api/group-checkmemberobjects.md 
         - name: Get delta
           href: api/group-delta.md
-        - name: Get endpoint
-          href: api/endpoint-get.md
         - name: Get member groups
           href: api/group-getmembergroups.md
         - name: Get member objects
@@ -492,8 +496,6 @@ items:
             href: api/groupsettingtemplate-list.md
           - name: Get group setting template
             href: api/groupsettingtemplate-get.md
-        - name: List endpoints
-          href: api/group-list-endpoints.md
         - name: List lifecycle policies
           href: api/group-list-grouplifecyclepolicies.md
         - name: List member of
@@ -931,6 +933,10 @@ items:
           href: api/event-delete.md
         - name: Get delta
           href: api/event-delta.md
+        - name: Forward event
+          href: api/event-forward.md
+        - name: Cancel event
+          href: api/event-cancel.md
         - name: Accept event
           href: api/event-accept.md
         - name: Tentatively accept
@@ -4934,10 +4940,10 @@ items:
           href: api/group-delete.md
         - name: List members
           href: api/team-list-members.md
-        - name: Get member
-          href: api/team-get-members.md
         - name: Add member
           href: api/team-post-members.md
+        - name: Get member
+          href: api/team-get-members.md
         - name: Remove member
           href: api/team-delete-members.md
         - name: Update member
@@ -5012,10 +5018,10 @@ items:
           href: api/channel-delete.md
         - name: List members
           href: api/channel-list-members.md
+        - name: Add member 
+          href: api/channel-post-members.md
         - name: Get member
           href: api/channel-get-members.md
-        - name: Create member 
-          href: api/channel-post-members.md
         - name: Update member role
           href: api/channel-update-members.md   
         - name: Remove member
@@ -5092,14 +5098,14 @@ items:
           items:
           - name: List apps for user
             href: api/userteamwork-list-installedapps.md
-          - name: Get app installed for user
-            href: api/userteamwork-get-installedapps.md
           - name: Add app for user
             href: api/userteamwork-post-installedapps.md
-          - name: Upgrade installed app for user
-            href: api/userteamwork-teamsappinstallation-upgrade.md
+          - name: Get app installed for user
+            href: api/userteamwork-get-installedapps.md
           - name: Get chat between user and app
             href: api/userscopeteamsappinstallation-get-chat.md
+          - name: Upgrade installed app for user
+            href: api/userteamwork-teamsappinstallation-upgrade.md
           - name: Remove app for user
             href: api/userteamwork-delete-installedapps.md
       - name: Tab
@@ -5108,11 +5114,11 @@ items:
         - name: Tab in channel
           items:
           - name: List tabs in channel
-            href: api/channel-list-tabs.md
+            href: api/channel-list-tabs.md          
+          - name: Add tab to channel
+            href: api/channel-post-tabs.md
           - name: Get tab in channel
             href: api/channel-get-tabs.md
-          - name: Add tab to cannel
-            href: api/channel-post-tabs.md
           - name: Update tab in channel
             href: api/channel-patch-tabs.md
           - name: Remove tab from channel

@@ -71,6 +71,7 @@ This resource supports:
 | [List ownedObjects](../api/user-list-ownedobjects.md) | [directoryObject](directoryobject.md) collection | Get the directory objects that are owned by the user from the ownedObjects navigation property. |
 | [List registeredDevices](../api/user-list-registereddevices.md) | [directoryObject](directoryobject.md) collection | Get the devices that are registered for the user from the registeredDevices navigation property. |
 | [List scoped-role memberships](../api/user-list-scopedrolememberof.md) | [scopedRoleMembership](scopedrolemembership.md) collection | Get the scoped-role administrative units memberships for this user. |
+| [List usageRights](../api/user-list-usagerights.md) | [usageRight](usageright.md) collection | Get a collection of usage rights granted to the user. |
 | [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | Reprocess subscription assignments for the user. |
 | [revokeSignInSessions](../api/user-revokesigninsessions.md) | None | Revokes all the user's refresh and session tokens issued to applications, by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. This forces the user to sign in to those applications again. This method replaces **invalidateAllRefreshTokens**. |
 | **Drive** |||
@@ -188,7 +189,7 @@ This resource supports:
 | lastPasswordChangeDateTime | DateTimeOffset | The time when this Azure AD user last changed their password. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` <br><br>Returned only on `$select`. |
 | legalAgeGroupClassification | [legalAgeGroupClassification](#legalagegroupclassification-values) | Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on **ageGroup** and **consentProvidedForMinor** properties. Allowed values: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. <br><br>Returned only on `$select`. |
 | licenseAssignmentStates | [licenseAssignmentState](licenseassignmentstate.md) collection | State of license assignments for this user. <br><br>Returned only on `$select`. Read-only. |
-| mail | String | The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". <br><br>Returned by default. Supports `$filter`. |
+| mail | String | The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". <br><br>Returned by default. Supports `$filter` and `endsWith`. |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | Settings for the primary mailbox of the signed-in user. You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update-mailboxsettings.md) settings for sending automatic replies to incoming messages, locale, and time zone. <br><br>Returned only on `$select`. |
 | mailNickname | String | The mail alias for the user. This property must be specified when a user is created. <br><br>Returned only on `$select`. Supports `$filter`. |
 | mobilePhone | String | The primary cellular telephone number for the user. <br><br>Returned by default. Read-only for users synced from on-premises directory. |
@@ -225,7 +226,7 @@ This resource supports:
 | streetAddress | String | The street address of the user's place of business. <br><br>Returned only on `$select`.|
 | surname | String | The user's surname (family name or last name). <br><br>Returned by default. Supports `$filter`. |
 | usageLocation | String | A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: "US", "JP", and "GB". Not nullable. <br><br>Returned only on `$select`. Supports `$filter`.|
-| userPrincipalName | String | The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). <br><br>Returned by default. Supports `$filter` and `$orderby`.
+| userPrincipalName | String | The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). <br><br>Returned by default. Supports `$filter`, `$orderby`, and `endsWith`.
 | userType | String | A string value that can be used to classify user types in your directory, such as "Member" and "Guest". <br><br>Returned only on `$select`. Supports `$filter`. |
 
 ### Legal age group property definitions
@@ -309,6 +310,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |settings|[userSettings](usersettings.md) | Read-only. Nullable.|
 |teamwork|[userTeamwork](userteamwork.md)| A container for Microsoft Teams features available for the user. Read-only. Nullable.|
 |todo|[todo](todo.md)|Represents the To Do services available to a user. |
+|usageRight|[usageRight](usageright.md) collection|Represents the usage rights a user has been granted. |
 
 ### User preferences for languages and regional formats
 The **user** resource contains a [mailboxSettings](../resources/mailboxsettings.md) property which includes the user's preferred language, date and time formatting, default time zone, and other settings specifically for their primary Exchange mailbox. These preferences are targeted for mail clients and are only available if the user has a mailbox provisioned. You can choose to use **mailboxSettings** if your scenario focuses only on Outlook mail, calendar, contacts, or to-do tasks.
