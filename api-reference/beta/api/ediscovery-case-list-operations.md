@@ -1,6 +1,6 @@
 ---
 title: "List operations"
-description: "Get the caseOperation resources from the operations navigation property."
+description: "Get the list caseOperations from a case object."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of [caseOperations](../resources/ediscovery-caseoperation.md) from a [case](../resources/ediscovery-case.md) object
+Get the list of [caseOperations](../resources/ediscovery-caseoperation.md) from a [case](../resources/ediscovery-case.md) object.
 
 ## Permissions
 
