@@ -8,7 +8,7 @@ ms.prod: "onenote"
 
 # Best practices for working with the OneNote API in Microsoft Graph
 
-This article provides recommendations for working with the OneNote APIs in Microsoft Graph. These recommendations are based on answers to common questions on [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/products/) and Twitter.
+This article provides recommendations for working with the OneNote APIs in Microsoft Graph. These recommendations are based on answers to common questions on [Microsoft Q&A](https://docs.microsoft.com/answers/products/) and Twitter.
 
 ## Use $select to select the minimum set of properties you need
 
