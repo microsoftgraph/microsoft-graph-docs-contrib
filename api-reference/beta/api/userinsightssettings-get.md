@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and [userInsightsSet
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_userinsightssettings"
+  "name": "get_userInsightsSettings"
 }-->
 
 ```msgraph-interactive
@@ -94,8 +94,8 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.userinsightssettings",
-  "name": "get_userinsightssettings"
+  "@odata.type": "microsoft.graph.userInsightsSettings",
+  "name": "get_userInsightsSettings"
 } -->
 
 ```http
