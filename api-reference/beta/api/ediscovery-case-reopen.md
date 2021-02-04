@@ -1,5 +1,5 @@
 ---
-title: "Case: reopen"
+title: "case: reopen"
 description: "Reopen an eDiscovery case that was closed."
 author: "mahage-msft"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Case: reopen
+# case: reopen
 
 Namespace: microsoft.graph.ediscovery
 
