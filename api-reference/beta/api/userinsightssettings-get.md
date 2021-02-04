@@ -61,26 +61,26 @@ If successful, this method returns a `200 OK` response code and [userInsightsSet
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_userInsightsSettings"
+  "name": "get_userinsightssettings"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{userId}/settings/itemInsights
+GET https://graph.microsoft.com/beta/me/settings/itemInsights
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-userInsightsSettings-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-userinsightssettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-userInsightsSettings-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-userinsightssettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-userInsightsSettings-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-userinsightssettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-userInsightsSettings-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-userinsightssettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
