@@ -11,6 +11,16 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+
+## February 2021
+
+### People and workplace intelligence | Insights
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition | beta | Added the **itemInsights** navigation property to the **userSettings** entity. |
+| Addition | beta | Added the **userInsightsSettings** entity and the following operations: <br/> [Get userInsightsSettings](/graph/api/userinsightssettings-get?view=graph-rest-beta) <br/> [Update userInsightsSettings](/graph/api/userinsightssettings-update?view=graph-rest-beta) |
+
+
 ## January 2021
 
 ### Applications
