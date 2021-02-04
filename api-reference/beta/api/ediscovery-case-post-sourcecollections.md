@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new sourceCollection object.
+Create a new [sourceCollection](../resources/ediscovery-sourcecollection.md) object.
 
 ## Permissions
 
@@ -49,11 +49,11 @@ In the request body, supply a JSON representation of the [sourceCollection](../r
 
 The following table shows the properties that are required when you create the [sourceCollection](../resources/ediscovery-sourcecollection.md).
 
-You must provide either a **custodianSource** or **additionalSource**
+You must provide either a **custodianSource** or an **additionalSource**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the **sourceCollection**|
+|displayName|String|The display name of the **sourceCollection**.|
 
 ## Response
 
