@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [case](../resources/ediscovery-case.md) object.
+Update the properties of a [case](../resources/ediscovery-case.md) object.
 
 ## Permissions
 
