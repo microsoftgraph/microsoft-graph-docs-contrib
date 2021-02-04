@@ -338,6 +338,14 @@ items:
             href: api/iteminsightssettings-get.md
           - name: Update
             href: api/iteminsightssettings-update.md
+          - name: Control access to user item insights
+            items:
+            - name: User insights settings
+              href: resources/userinsightssettings.md
+            - name: Get
+              href: api/userinsightssettings-get.md
+            - name: Update
+              href: api/userinsightssettings-update.md
       - name: Mail
         items:
         - name: Message
