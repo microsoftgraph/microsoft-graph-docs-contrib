@@ -58,13 +58,16 @@ If successful, this method returns a `200 OK` response code and [userInsightsSet
 
 ##### Request
 
+Here is an example of the request to get user insight settings.
+
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_userInsightsSettings"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/settings/itemInsights
 ```
 # [C#](#tab/csharp)
