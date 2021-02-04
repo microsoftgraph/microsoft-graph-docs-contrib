@@ -52,7 +52,7 @@ This is step 4 of the [process to migrate apps](migrate-azure-ad-graph-planning-
 If you run into problems or need help during the migration process, you can:
 
 - Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again
-- Post questions to [StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph)
+- Post questions to [Microsoft Q&A](https://docs.microsoft.com/answers/topics/azure-ad-graph.html)
 - Review Microsoft Graph samples to contrast and compare with your existing application code:
   - **Apps that use the REST API**: explore [quick starts and samples](https://developer.microsoft.com/graph/get-started), choosing your platform of choice and run through the quick start or search for an appropriate sample
   - **App that use the .NET client library**: review [console-csharp-snippets-sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) and/or [dotnetcore-console-sample](https://github.com/microsoftgraph/dotnetcore-console-sample)
