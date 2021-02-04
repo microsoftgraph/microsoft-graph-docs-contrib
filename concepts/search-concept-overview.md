@@ -64,4 +64,4 @@ Looking for the API reference for this service?
 
 ## See also
 
-- Engage with the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph-search) or on GitHub
+- Engage with the community on [Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-search.html) or on GitHub
