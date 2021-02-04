@@ -2,7 +2,7 @@
 title: "Get attachment"
 description: "Read the properties and relationships of an attachment, attached to an event, "
 localization_priority: Priority
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -15,24 +15,24 @@ Read the properties, relationships, or raw contents of an attachment that is att
 
 An attachment can be one of the following types:
 
-* A file. Programmatically, this is a [fileAttachment](../resources/fileattachment.md) resource.
-* An Outlook item (contact, event or message). Programmatically, an item attachment is an [itemAttachment](../resources/itemattachment.md) resource. You can use `$expand` to further get the properties of that item. See an [example](#request-2) below.
-* A link to a file stored in the cloud. Programmatically, this is a [referenceAttachment](../resources/referenceattachment.md) resource.
+* A file. Programmatically, this is a [fileAttachment](../resources/fileattachment.md) resource. See an [example](#example-1-get-the-properties-of-a-file-attachment) below.
+* An Outlook item (contact, event or message). Programmatically, an item attachment is an [itemAttachment](../resources/itemattachment.md) resource. You can use `$expand` to further get the properties of that item. See [example 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) and [example 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item) below.
+* A link to a file stored in the cloud. Programmatically, this is a [referenceAttachment](../resources/referenceattachment.md) resource. See an [example](#example-5-get-the-properties-of-a-reference-attachment) below.
 
 All these types of attachments are derived from the [attachment](../resources/attachment.md) resource. 
 
 ### Get the raw contents of a file or item attachment
 You can append the path segment `/$value` to get the raw contents of a file or item attachment. 
 
-For a file attachment, the content type is based on its original content type. See an [example](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) below.
+For a file attachment, the content type is based on its original content type. See an [example](#example-6-get-the-raw-contents-of-a-file-attachment-on-a-message) below.
 
 For an item attachment that is a [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md), the raw contents returned is in MIME format.
 
 | Item attachment type  | Raw contents returned |
 |:-----------|:----------|
-| **contact** | [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME format. See [example](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
-| **event** | iCal MIME format. See [example](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
-| **message** | MIME format. See [example](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
+| **contact** | [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME format. See [example](#example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
+| **event** | iCal MIME format. See [example](#example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
+| **message** | MIME format. See [example](#example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
 
 Attempting to get the `$value` of a reference attachment returns HTTP 405.
 
@@ -142,7 +142,10 @@ GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports some of the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+Use `$expand` to get the properties of an item attachment (contact, event, or message). See [example 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) and [example 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item) below.
+
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -409,9 +412,15 @@ Content-type: application/json
 }
 ```
 
+### Example 4: Expand and get the properties of an item attached to a message, including any attachment to the item
+#### Request
+The next example uses the same request as in [example 3](#example-3) to get the properties of an item attachment on a message by using `$expand`. In this case, because the attached item also has a file attachment, the response includes the properties of the file attachment as well. 
 
 
-### Example 4: Get the properties of a reference attachment
+#### Response
+
+
+### Example 5: Get the properties of a reference attachment
 
 #### Request
 Here is an example of the request to get a reference attachment on a message.
@@ -467,7 +476,7 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Get the raw contents of a file attachment on a message
+### Example 6: Get the raw contents of a file attachment on a message
 
 #### Request
 
@@ -499,7 +508,7 @@ HTTP/1.1 200 OK
 ```
 
 
-### Example 6: Get the MIME raw contents of a contact attachment on a message
+### Example 7: Get the MIME raw contents of a contact attachment on a message
 
 #### Request
 
@@ -548,7 +557,7 @@ END:VCARD
 ```
 
 
-### Example 7: Get the MIME raw contents of an event attachment on a message
+### Example 8: Get the MIME raw contents of an event attachment on a message
 
 #### Request
 
@@ -628,7 +637,7 @@ END:VCALENDAR
 ```
 
 
-### Example 8: Get the MIME raw contents of a meeting invitation item attachment on a message
+### Example 9: Get the MIME raw contents of a meeting invitation item attachment on a message
 
 #### Request
 
