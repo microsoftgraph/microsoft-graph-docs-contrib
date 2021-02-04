@@ -1,6 +1,6 @@
 ---
 title: "List tags"
-description: "Get the tag resources from the tags navigation property."
+description: "Get a list of tag resources from an eDiscovery case."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
