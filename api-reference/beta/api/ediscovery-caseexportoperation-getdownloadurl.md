@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns the download URL for an export once the export is ready
+Returns the download URL for an export when the export is ready.
 
 ## Permissions
 
@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a String in the response body.
+If successful, this function returns a `200 OK` response code and a string in the response body.
 
 ## Examples
 
