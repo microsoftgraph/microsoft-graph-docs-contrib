@@ -68,19 +68,19 @@ If successful, this method returns a `200 OK` response code and [userInsightsSet
 GET https://graph.microsoft.com/beta/users/{userId}/settings/itemInsights
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-iteminsightssettings-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-userInsightsSettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-iteminsightssettings-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-userInsightsSettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-iteminsightssettings-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-userInsightsSettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-iteminsightssettings-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-userInsightsSettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -94,7 +94,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.userInsightsSettings",
+  "@odata.type": "microsoft.graph.userinsightssettings",
   "name": "get_userinsightssettings"
 } -->
 
