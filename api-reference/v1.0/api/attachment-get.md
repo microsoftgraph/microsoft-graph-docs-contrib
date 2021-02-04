@@ -16,7 +16,7 @@ Read the properties, relationships, or raw contents of an attachment that is att
 An attachment can be one of the following types:
 
 * A file. Programmatically, this is a [fileAttachment](../resources/fileattachment.md) resource. See an [example](#example-1-get-the-properties-of-a-file-attachment) below.
-* An Outlook item (contact, event or message). Programmatically, an item attachment is an [itemAttachment](../resources/itemattachment.md) resource. You can use `$expand` to further get the properties of that item. See [example 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) and [example 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item) below.
+* An Outlook item (contact, event or message). Programmatically, an item attachment is an [itemAttachment](../resources/itemattachment.md) resource. You can use `$expand` to further get the properties of that item, including any nested attachments up to 30 levels. See [example 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) and [example 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item) below.
 * A link to a file stored in the cloud. Programmatically, this is a [referenceAttachment](../resources/referenceattachment.md) resource. See an [example](#example-5-get-the-properties-of-a-reference-attachment) below.
 
 All these types of attachments are derived from the [attachment](../resources/attachment.md) resource. 
@@ -414,7 +414,7 @@ Content-type: application/json
 
 ### Example 4: Expand and get the properties of an item attached to a message, including any attachment to the item
 #### Request
-The next example uses the same request as in [example 3](#example-3) to get the properties of an item attachment on a message by using `$expand`. In this case, because the attached item also has a file attachment, the response includes the properties of the file attachment as well. 
+The next example uses the same request as in [example 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) to get the properties of an item attachment on a message by using `$expand`. In this case, because the attached item also has a file attachment, the response includes the properties of the file attachment as well. 
 
 
 #### Response
