@@ -197,7 +197,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request. In this example, we specify the parameters of an `accessPackageResourceEnvironment` in an `accessPackageResourceEnvironment` object.
+The following is an example of the request. In this example, the parameters of an `accessPackageResourceEnvironment` are specified in an `accessPackageResourceEnvironment` object.
 
 
 <!-- {
@@ -263,4 +263,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
