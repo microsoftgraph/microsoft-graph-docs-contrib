@@ -43,7 +43,7 @@ LocalizationHelper.strings = {
       newTaskPlaceholder: "newTaskTest",
       addTaskButtonSubtitle: "addme",
     },
-    "person-card": {,
+    "person-card": {
       sendEmailLinkSubtitle: "ارسل بريد الكتروني",
       startChatLinkSubtitle: "ابدأ الدردشة",
       showExpandedDetailsButton: 'Show expanded details',
