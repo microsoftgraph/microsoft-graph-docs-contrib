@@ -14,45 +14,49 @@ To learn more about authentication providers, see [providers](./providers.md).
 ### Install the packages
 
 ```bash
-   npm install @microsoft/mgt-element @microsoft/mgt-electron-provider
+npm install @microsoft/mgt-element @microsoft/mgt-electron-provider
 ```
 You need to initialize ElectronProvider in the renderer process (front-end), and ElectronAuthenticator in the main process (back-end).
 
 
-### Initializing ElectronProvider in the renderer process (renderer.ts)
+### Initializing ElectronProvider in the renderer process (eg. renderer.ts)
 
 The ElectronProvider is responsible for communicating with ElectronAuthenticator (in the main process) to request access tokens and receive information regarding logged in state that are required for the mgt components to work. 
 
- ```ts
-    import {Providers} from '@microsoft/mgt-element';
-    import {ElectronProvider} from '@microsoft/mgt-electron-provider/dist/es6/ElectronProvider';
+```ts
+import {Providers} from '@microsoft/mgt-element';
+import {ElectronProvider} from '@microsoft/mgt-electron-provider/dist/ElectronProvider';
 
-    // initialize the auth provider globally
-    Providers.globalProvider = new ElectronProvider();
- ```
+// initialize the auth provider globally
+Providers.globalProvider = new ElectronProvider();
+```
 
-### Initializing ElectronAuthenticator in the main process (main.ts)
+### Initializing ElectronAuthenticator in the main process (eg. main.ts)
 
 The ElectronAuthenticator is responsible for setting up the configuration variables for MSAL authentication, acquiring access tokens and communicating with ElectronProvider.
 Initialize the ElectronAuthenticator in the main process and set up the configuration variables such as client-id.
 
 ```ts
-    import { ElectronAuthenticator } from '@microsoft/mgt-electron-provider/dist/es6/ElectronAuthenticator';
-
-    const authProvider = new ElectronAuthenticator({
-      clientId: '[client-id]]',
-      authority: '[authority-url]',
-      mainWindow: mainWindow 
-      scopes: ['User.Read'], 
-    });
+import { ElectronAuthenticator, MsalElectronConfig } from '@microsoft/mgt-electron-provider/dist/Authenticator'; 
+...
+let config: MsalElectronConfig = {
+clientId: '<your_client_id>',
+authority: '<your_authority_url>', 
+mainWindow: mainWindow, 
+scopes: [
+  'user.read',
+ ],
+};
+ElectronAuthenticator.initialize(config);
 ```
  
 | Attribute    | Description                                                                                                                                                                                                                                                           |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| client-id    | String client ID (see Creating an app/client ID). Required.                                                                                                                                                                                                           |                                                                                                                                                                               |
+| clientId    | String client ID (see Creating an app/client ID). Required.                                                                                                                                                                                                           |                                                                                                                                                                               |
 | scopes       | Comma separated strings for scopes the user must consent to on sign in. Optional.                                                                                                                                                                                     |
 | authority    | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |                                                                                                                                                                                          |
-| mainWindow  | Instance of the main BrowserWindow
+| mainWindow  | Instance of the main BrowserWindow that requires authentication|
+| cachePlugin | Cache plugin you would like to use for persistent storage of tokens. See [Microsoft Authentication Extensions for Node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions). Optional. | 
 
 Note : Right now the provider does not support incremental support. Please make sure you have consented to all the scopes that the components would require as a best practice.
     
@@ -73,3 +77,5 @@ To create the app in Azure Active Directory:
 1. In the **Redirect URI** field, in the dropdown, select **Public client/native (mobile & desktop)**, and in the URL field, enter `msal://redirect`.
 1. Confirm changes by selecting the **Register** button.
 
+## Getting started
+Check out this step-by-step tutorial on [building an electron app](../toolkit/get-started/build-an-electron-app.md).
