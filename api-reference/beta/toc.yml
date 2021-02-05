@@ -12608,6 +12608,23 @@ items:
           href: api/plannerprogresstaskboardtaskformat-get.md
         - name: Update progress task board format
           href: api/plannerprogresstaskboardtaskformat-update.md
+      - name: Planner rosters
+        href: resources/plannerroster.md
+        items:
+        - name: Create roster
+          href: api/plannerroster-create.md
+        - name: Delete roster
+          href: api/plannerroster-delete.md
+        - name: List roster's members
+          href: api/plannerroster-list-members.md
+        - name: Add a member to roster
+          href: api/plannerroster-post-members.md
+        - name: Remove a member from roster
+          href: api/plannerrostermember-delete.md
+        - name: List plans in roster
+          href: api/plannerroster-list-plans.md
+        - name: List user's plans in rosters
+          href: api/planneruser-list-rosterplans.md
     - name: Teamwork
       displayName: Microsoft Teams
       items:
