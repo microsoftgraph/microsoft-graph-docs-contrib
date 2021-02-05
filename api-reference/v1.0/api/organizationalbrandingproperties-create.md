@@ -37,7 +37,7 @@ PATCH /organization/{id}/branding
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -70,7 +70,6 @@ The following example creates default branding and localization for en-US.
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_organizationalbrandingproperties"
@@ -87,10 +86,6 @@ Content-Language: en-US
     "usernameHintText":"hint"
 }
 ```
-
-
----
-
 
 ### Response
 
