@@ -69,7 +69,7 @@ The ElectronProvider is responsible for communicating with ElectronAuthenticator
 
 ```ts
 import {Providers} from '@microsoft/mgt-element';
-import {ElectronProvider} from '@microsoft/mgt-electron-provider/dist/ElectronProvider';
+import {ElectronProvider} from '@microsoft/mgt-electron-provider/dist/Provider';
 
 // initialize the auth provider globally
 Providers.globalProvider = new ElectronProvider();
@@ -89,6 +89,16 @@ let config: MsalElectronConfig = {
   mainWindow: mainWindow, //This is the BrowserWindow instance that requires authentication
   scopes: [
     'user.read',
+        'people.read',
+        'user.readbasic.all',
+        'contacts.read',
+        'calendars.read',
+        'presence.read.all',
+        'tasks.readwrite',
+        'presence.read',
+        'user.read.all',
+        'group.read.all',
+        'tasks.read'
   ],
 };
 ElectronAuthenticator.initialize(config);
@@ -96,13 +106,12 @@ ElectronAuthenticator.initialize(config);
 
 ### Set nodeIntegration to true
  
-In main.ts where the new instance of BrowserWindow is created, make sure that you set `nodeIntegration` to `true` under webPreferences. If you skip this step, you may run into a ```Uncaught ReferenceError: require is not defined``` error.
+In main.ts where the new instance of BrowserWindow is created, make sure that you set `nodeIntegration` to `true` under webPreferences. If you skip this step, you may run into a ```Uncaught ReferenceError: require is not defined``` error. To keep this simple, remove preloading scripts if any.
 
 ```ts
 const mainWindow = new BrowserWindow({
   height: 600,
   webPreferences: {
-    ...
     nodeIntegration: true //Set this to true
   },
   width: 800
