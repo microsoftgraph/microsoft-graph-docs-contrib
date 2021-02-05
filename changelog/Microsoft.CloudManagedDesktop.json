@@ -236,6 +236,22 @@
             "CreatedDateTime": "2020-11-06T15:42:07.177Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [{
+                "Id": "db18fa68-57bd-4326-84cb-ac217c065b91",
+                "ApiChange": "Property",
+                "ChangedApiName": "inUse",
+                "ChangeType": "Deletion",
+                "Description": "Remove the ags:Default member from inUse property",
+                "Target": "virtualEndpoint"
+            }],
+            "Id": "db18fa68-57bd-4326-84cb-ac217c065b91",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-05-02T15:13:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"   
         }
     ]
 }
