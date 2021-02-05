@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 A branding is created for an organization, if one does not already exist, using PUT or PATCH.
 
-If branding is already configured, PUT will overwrite all existing values regardless of what's in the request body. PATCH will only overite the values that are included in the request body, leaving the values not included unchanged.
+If branding is already configured, PUT overwrites all existing values regardless of what's in the request body. PATCH only overwrites the values that are included in the request body, leaving the values not included unchanged.
 
 The **id** property is ignored on PUT/PATCH to the /branding singleton. If Content-Language is not specified, the default branding is created, which corresponds to an **id** of `und`. If Content-Language is specified, branding is created for that locale.
 <!-- { "blockType": "ignored" } -->
