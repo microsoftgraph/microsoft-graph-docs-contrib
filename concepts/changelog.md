@@ -58,6 +58,21 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the [plannerRosterMember](/graph/api/resources/plannerRosterMember?view=graph-rest-beta) resource type|
 |Addition|beta|Added the `roster` member to the **plannerContainerType** enumeration|
 |Addition|beta|Added the **plannerPlanContextType** enumeration type|
+### Education
+
+| **Change type** | **Version** | **Description**                                                                                                                       |
+| :-------------- | :---------- | :------------------------------------------------------------------------------------------------------------------------------------ |
+| Change          | v1.0        | The [educationTeacher](/graph/api/resources/educationteacher) `externalId` property is now returned when using delegated permissions. |
+| Change          | v1.0        | The [educationStudent](/graph/api/resources/educationstudent) `externalId` property is now returned when using delegated permissions. |
+| Addition        | v1.0        | Added `faculty` to the list of possible values for `primaryRole`                                                                      |
+| Addition        | v1.0        | Added `lms` to the list of possible values for `educationExternalSource`.                                                             |
+| Addition        | v1.0        | Added [delta](./delta-query-overview.md) support to [educationClass](/graph/api/resources/educationClass).                            |
+| Addition        | v1.0        | Added new properties `grade`, `course`, and `externalSourceDetail` to [educationClass](/graph/api/resources/educationClass).          |
+| Addition        | v1.0        | Added [delta](./delta-query-overview.md) support to [educationUser](/graph/api/resources/educationUser).                              |
+| Addition        | v1.0        | Added new property `externalSourceDetail` property to [educationUser](/graph/api/resources/educationUser).                            |
+| Addition        | v1.0        | Added new relationship `taughtClasses` to [educationUser](/graph/api/resources/educationUser).                                        |
+| Addition        | v1.0        | Added [delta](./delta-query-overview.md) support to [educationSchool](/graph/api/resources/educationSchool).                          |
+| Addition        | v1.0        | Added new property `externalSourceDetail` property to [educationSchool](/graph/api/resources/educationSchool).                        |
 
 ### Identity and access | Devices
 
