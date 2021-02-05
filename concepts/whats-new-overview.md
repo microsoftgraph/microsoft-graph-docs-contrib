@@ -13,6 +13,12 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to generally available (GA) status. Do not use preview features in production apps.
 
 
+## February 2021: New in preview only
+
+### Identity and access | Governance
+- Assign geolocation information to an [access package](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true) resource in the [access package assignment request](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true).
+- Get a list of all [access package resource environments](/graph/api/resources/accesspackageresourceenvironment?view=graph-rest-beta&preserve-view=true) which represent the geolocations that store Sharepoint Online resources.
+
 ## January 2021: New in preview only
 
 ### Cloud communications
@@ -36,10 +42,6 @@ Use delegated permissions in apps on behalf of the signed-in user:
 
 ### Groups
 Get the processing status of a rule-based dynamic group by using the **membershipRuleProcessingStatus** property. This is useful when an attribute of a user changes, the user's membership in a rule-based [Microsoft 365 group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) is re-evaluated based on the group membership rules set for the organization. 
-
-### Identity and access | Governance
-- Assign geolocation information to an [access package](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true) resource in the [access package assignment request](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true).
-- Get a list of all [access package resource environments](/graph/api/resources/accesspackageresourceenvironment?view=graph-rest-beta&preserve-view=true) which represent the geolocations that store Sharepoint Online resources.
 
 ### Identity and access | Identity and sign-in
 - Apps can use application permissions to let administrators manage [authentication methods](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta&preserve-view=true) for users.
