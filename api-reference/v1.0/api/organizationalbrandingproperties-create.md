@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # Create organizationalBrandingProperties
 
-Create an [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object. This creates the default branding and optionally a localized branding at the same time. The default branding is loaded when a localized branding set isn't configured for the user's browser language.
+Create an [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object. This creates the default branding and optionally a localized branding. The default branding is loaded when a localized branding set isn't configured for the user's browser language.
 
 ## Permissions
 
