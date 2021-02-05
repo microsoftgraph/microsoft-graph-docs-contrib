@@ -37,22 +37,21 @@ Initialize the ElectronAuthenticator in the main process and set up the configur
 
 ```ts
 import { ElectronAuthenticator, MsalElectronConfig } from '@microsoft/mgt-electron-provider/dist/Authenticator'; 
-...
+
 let config: MsalElectronConfig = {
-clientId: '<your_client_id>',
-authority: '<your_authority_url>', 
-mainWindow: mainWindow, 
-scopes: [
-  'user.read',
- ],
+  clientId: '<your_client_id>',
+  authority: '<your_authority_url>', 
+  mainWindow: mainWindow, 
+  scopes: ['user.read'],
 };
+
 ElectronAuthenticator.initialize(config);
 ```
  
 | Attribute    | Description                                                                                                                                                                                                                                                           |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientId    | String client ID (see Creating an app/client ID). Required.                                                                                                                                                                                                           |                                                                                                                                                                               |
-| scopes       | Comma separated strings for scopes the user must consent to on sign in. Optional.                                                                                                                                                                                     |
+| scopes       | Comma separated strings for scopes the user must consent to on sign in. Recomended.                                                                                                                                                                                     |
 | authority    | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |                                                                                                                                                                                          |
 | mainWindow  | Instance of the main BrowserWindow that requires authentication|
 | cachePlugin | Cache plugin you would like to use for persistent storage of tokens. See [Microsoft Authentication Extensions for Node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions). Optional. | 
