@@ -124,20 +124,20 @@ Content-length: 317
       "sender": {
           "emailAddress": {
               "name": "MyAnalytics",
-              "address": "no-reply@microsoft.com"
+              "address": "no-reply@contoso.com"
           }
       },
       "from": {
           "emailAddress": {
               "name": "MyAnalytics",
-              "address": "no-reply@microsoft.com"
+              "address": "no-reply@contoso.com"
           }
       },
       "toRecipients": [
           {
               "emailAddress": {
                   "name": "Megan Bowen",
-                  "address": "MeganB@M365x214355.onmicrosoft.com"
+                  "address": "MeganB@contoso.com"
               }
           }
       ],

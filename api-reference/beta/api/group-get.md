@@ -194,7 +194,47 @@ Content-type: application/json
     "unseenCount": 0
 }
 ```
+### Example 3: Read a specific dynamic group
 
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "ignored",
+  "sampleKeys": ["1cdf9c18-a7dc-46b1-b47f-094d5656376d"],
+  "name": "get_dynamic_group"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/groups/1cdf9c18-a7dc-46b1-b47f-094d5656376d?$select=id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus)/$entity",
+  "id": "1cdf9c18-a7dc-46b1-b47f-094d5656376d",
+  "membershipRule": "accountEnabled eq true",
+  "membershipRuleProcessingState": "On",
+  "membershipRuleProcessingStatus": {
+    "status" : "NotStarted",
+    "lastMembershipUpdated"  : null,
+    "errorMessage" : null
+  }
+}
+```
 
 ## See also
 
