@@ -124,7 +124,7 @@ Content-Language: en-US
 }
 ```
 
-In this case, the default branding object is set. Localized branding for en-US is also set due to the Content-Language in the header, even though the en-US branding set is not returned in the response. Note that Content-Language in the request is optional, and if not present, will only set default branding.
+In this case, the default branding object is set. Localized branding for en-US is also set due to the Content-Language header, even though the en-US branding set is not returned in the response. The Content-Language header in the request is optional, and if not present, only sets the default branding.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
