@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Update Localized organizationalbrandingproperties
+# Update localized organizationalbrandingproperties
 
 Update the properties of the [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object for a specific localization.
 
@@ -67,7 +67,6 @@ The following request updates the banner logo for the fr localization. Using PUT
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organizationalbrandingproperties"
@@ -79,10 +78,6 @@ Content-Type: image/jpeg
 
 <Image>
 ```
-
-
----
-
 
 #### Response
 
