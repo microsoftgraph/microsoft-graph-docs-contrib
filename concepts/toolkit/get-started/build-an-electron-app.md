@@ -69,11 +69,11 @@ The ElectronProvider is responsible for communicating with ElectronAuthenticator
 
 ```ts
 import {Providers} from '@microsoft/mgt-element';
-import {ElectronProvider} from '@microsoft/mgt-electron-provider/dist/es6/ElectronProvider';
+import {ElectronProvider} from '@microsoft/mgt-electron-provider/dist/ElectronProvider';
 
- // initialize the auth provider globally
- Providers.globalProvider = new ElectronProvider();
- ```
+// initialize the auth provider globally
+Providers.globalProvider = new ElectronProvider();
+```
 
 ### Initializing ElectronAuthenticator in your main process (main.ts, Back end)
 
@@ -81,14 +81,17 @@ The ElectronAuthenticator is responsible for setting up the configuration variab
 Initialize the ElectronAuthenticator in the main process and set up the configuration variables such as client-id.
 
 ```ts
-import { ElectronAuthenticator } from '@microsoft/mgt-electron-provider/dist/es6/ElectronAuthenticator';
-
-const authProvider = new ElectronAuthenticator({
-  clientId: '[client-id]]',
-  authority: '[authority-url]',
-  mainWindow: mainWindow 
-  scopes: ['User.Read'], 
- });
+import { ElectronAuthenticator, MsalElectronConfig } from '@microsoft/mgt-electron-provider/dist/Authenticator'; 
+...
+let config: MsalElectronConfig = {
+  clientId: '<your_client_id>',
+  authority: '<your_authority_url>', //optional, uses common authority by default
+  mainWindow: mainWindow, //This is the BrowserWindow instance that requires authentication
+  scopes: [
+    'user.read',
+  ],
+};
+ElectronAuthenticator.initialize(config);
 ```
 
 ### Set nodeIntegration to true
@@ -99,8 +102,8 @@ In main.ts where the new instance of BrowserWindow is created, make sure that yo
 const mainWindow = new BrowserWindow({
   height: 600,
   webPreferences: {
-    preload: path.join(__dirname, 'preload.js'),
-    nodeIntegration: true
+    ...
+    nodeIntegration: true //Set this to true
   },
   width: 800
 });
@@ -212,42 +215,27 @@ const mainWindow = new BrowserWindow({
  
  #### Run your app
  
-```cmd
-npm start
-```
+ ```cmd
+ npm start
+ ```
 
-### [Advanced] Add token caching capabilities to your app and enable silent log-ins.
+### [Optional] Add token caching capabilities to your app and enable silent log-ins.
 
-If you would like to enable persistent caching of access tokens to disk, you can install a node plugin.
-```cmd 
-npm install @azure/msal-node-extensions --save-dev
-```
-To learn more, visit [msal-node-extensions](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions).
-Follow the sample [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/extensions/samples/msal-node-extensions/index.js) to learn more about how this plugin can work in your app.
-
-You can then pass the cachePlugin during the initialization of the ElectronAuthenticator object:
+[MSAL Node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node) supports an in-memory cache by default and provides the ICachePlugin interface to perform cache serialization, but does not provide a default way of storing the token cache to disk. If you need persistent cache storage to enable silent log-ins or cross-platform caching, we recommend using the default implementation provided by MSAL Node [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions). You can import this plugin, and pass the instance of the cache plugin while initializing ElectronAuthenticator.
 
 ```ts
-import { ElectronAuthenticator } from '@microsoft/mgt-electron-provider/dist/es6/ElectronAuthenticator';
-
-function createPersistence() {
-//Implement this function to enable encrypted caching for all supported platform. Only Windows is shown here.
- if (process.platform === 'win32') {
-    return FilePersistenceWithDataProtection.create(cachePath, DataProtectionScope.CurrentUser);
-  }
-}
-
-createAuthenticator() {
-const filePersistence = await createPersistence();
-
-const authProvider = new ElectronAuthenticator({
+let config: MsalElectronConfig = {
   ...
-  scopes: ['User.Read'], 
-  cachePlugin: mycachePlugin
-});
-}
+  cachePlugin: new PersistenceCachePlugin(filePersistence)
+};
 ```
+For more details on how to implement this, refer to the sample for this extension [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/samples/msal-node-extensions). 
 
 
+## Next Steps
+- Try out the components in the [playground](https://mgt.dev).
+- Ask a question on [Stack Overflow](https://aka.ms/mgt-question).
+- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).
+    
 
 
