@@ -77,4 +77,4 @@ To create the app in Azure Active Directory:
 1. Confirm changes by selecting the **Register** button.
 
 ## Getting started
-Check out this step-by-step tutorial on [building an electron app](../toolkit/get-started/build-an-electron-app.md).
+Check out this step-by-step tutorial on [building an electron app](../get-started/build-an-electron-app.md).
