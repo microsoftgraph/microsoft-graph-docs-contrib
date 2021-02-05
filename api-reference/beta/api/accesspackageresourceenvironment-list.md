@@ -32,7 +32,7 @@ GET identityGovernance/entitlementManagement/accessPackageResourceEnvironments?$
 ```
 
 ## Optional query parameters
-This method requires the `$filter` OData query parameter. You must apply `$filter` for an **originSystem** set to (`eq`) `SharePointOnline`.
+This method requires the `$filter` [OData query parameter](/graph/query-parameters). You must apply `$filter` for an **originSystem** set to (`eq`) `SharePointOnline`.
 
 ## Request headers
 |Name|Description|

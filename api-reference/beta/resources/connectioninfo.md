@@ -18,7 +18,7 @@ The connectionInfo object defines the resource locator that is used to communica
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|url|String|The endpoint that is used by ELM to communicate with the access package resource.|
+|url|String|The endpoint that is used by Entitlement Management to communicate with the access package resource.|
 
 ## Relationships
 None.
