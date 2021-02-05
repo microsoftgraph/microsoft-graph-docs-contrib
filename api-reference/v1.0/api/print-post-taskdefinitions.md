@@ -1,0 +1,98 @@
+---
+title: Create taskDefinition
+description: Create a new task definition.
+author: nilakhan
+localization_priority: Normal
+ms.prod: universal-print
+doc_type: apiPageType
+---
+
+# Create printTaskDefinition
+Namespace: microsoft.graph
+
+Create a new task definition.
+
+For details about how to use this API to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+In addition to the following permissions, the user's tenant must have an active Universal Print subscription.
+
+|Permission type | Permissions (from least to most privileged) |
+|:---------------|:--------------------------------------------|
+|Delegated (work or school account)| Not supported. |
+|Delegated (personal Microsoft account)|Not Supported.|
+|Application| PrintTaskDefinition.ReadWrite.All |
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /print/taskDefinitions
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
+## Request body
+In the request body, supply a JSON representation of [printTaskDefinition](../resources/printtaskdefinition.md) object.
+
+The [printTaskDefinition](../resources/printtaskdefinition.md)'s **id** and **createdBy.appId** properties are set automatically upon resource creation.
+
+## Response
+
+If successful, this method returns a `201 Created` response code and a [printTaskDefinition](../resources/printtaskdefinition.md) object in the response body.
+
+## Examples
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "create_printtaskdefinition_from_"
+}
+-->
+# [HTTP](#tab/http)
+``` http
+POST https://graph.microsoft.com/v1.0/print/taskDefinitions
+Content-Type: application/json
+Content-length: 163
+
+{
+  "@odata.type": "#microsoft.graph.printTaskDefinition",
+  "displayName": "String",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.appIdentity"
+  }
+}
+```
+
+
+### Response
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.printTaskDefinition"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.printTaskDefinition",
+  "id": "94aff05b-f05b-94af-5bf0-af945bf0af94",
+  "displayName": "String",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.appIdentity"
+  }
+}
+```
+

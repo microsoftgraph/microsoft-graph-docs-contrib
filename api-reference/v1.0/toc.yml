@@ -1254,8 +1254,183 @@ items:
           - name: Delete a history item
             href: api/projectrome-delete-historyitem.md
     - name: Devices and apps
-      displayName: Intune
-      items:
+      expanded: true
+      items:        
+      - name: Cloud printing
+        items:
+        - name: Print
+          href: resources/print.md
+          displayName: Universal Print
+        - name: Print connector
+          href: resources/printconnector.md
+          items:
+          - name: List
+            href: api/print-list-connectors.md
+          - name: Get
+            href: api/printconnector-get.md
+          - name: Update
+            href: api/printconnector-update.md
+          - name: Delete
+            href: api/printconnector-delete.md
+        - name: Print document
+          href: resources/printdocument.md
+          items:
+          - name: Create upload session
+            href: api/printdocument-createuploadsession.md
+          - name: Download binary file
+            href: api/printdocument-get-file.md
+        - name: Print job
+          href: resources/printjob.md
+          items:
+          - name: Create job for a printer
+            href: api/printer-post-jobs.md            
+          - name: Create job for a printer share
+            href: api/printershare-post-jobs.md
+          - name: List jobs for a printer
+            href: api/printer-list-jobs.md
+          - name: List jobs for a printer share
+            href: api/printershare-list-jobs.md
+          - name: Get
+            href: api/printjob-get.md
+          - name: Start
+            href: api/printjob-start.md
+          - name: Update
+            href: api/printjob-update-configuration.md
+          - name: Cancel
+            href: api/printjob-cancel.md
+          - name: Abort
+            href: api/printjob-abort.md
+          - name: Redirect
+            href: api/printjob-redirect.md
+        - name: Print operation
+          href: resources/printoperation.md
+          items:
+            - name: Get
+              href: api/printoperation-get.md
+        - name: Printer
+          href: resources/printer.md
+          items:
+          - name: List
+            href: api/print-list-printers.md
+          - name: Create
+            href: api/printer-create.md
+          - name: Get
+            href: api/printer-get.md
+          - name: Update
+            href: api/printer-update.md
+          - name: Delete
+            href: api/printer-delete.md
+          - name: Get task trigger
+            href: api/printtasktrigger-get.md
+          - name: List connectors
+            href: api/printer-list-connectors.md
+          - name: List print jobs
+            href: api/printer-list-jobs.md
+          - name: List printerShares
+            href: api/printer-list-shares.md
+          - name: Create print job
+            href: api/printer-post-jobs.md
+          - name: List task triggers
+            href: api/printer-list-tasktriggers.md
+          - name: Create task trigger
+            href: api/printer-post-tasktriggers.md
+          - name: Delete task trigger
+            href: api/printer-delete-tasktrigger.md
+          - name: Restore factory defaults
+            href: api/printer-restorefactorydefaults.md
+        - name: Printer share
+          href: resources/printershare.md
+          items:
+          - name: List
+            href: api/print-list-shares.md
+          - name: Create
+            href: api/print-post-shares.md
+          - name: Get
+            href: api/printershare-get.md
+          - name: Update
+            href: api/printershare-update.md
+          - name: Delete
+            href: api/printershare-delete.md
+          - name: List allowed users
+            href: api/printershare-list-allowedusers.md
+          - name: Create allowed user
+            href: api/printershare-post-allowedusers.md
+          - name: Delete allowed user
+            href: api/printershare-delete-alloweduser.md
+          - name: List allowed groups
+            href: api/printershare-list-allowedgroups.md
+          - name: Create allowed group
+            href: api/printershare-post-allowedgroups.md
+          - name: Delete allowed group
+            href: api/printershare-delete-allowedgroup.md
+        - name: Print task definition
+          href: resources/printtaskdefinition.md
+          items:
+          - name: List
+            href: api/print-list-taskdefinitions.md
+          - name: Create
+            href: api/print-post-taskdefinitions.md
+          - name: Get
+            href: api/printtaskdefinition-get.md
+          - name: Update
+            href: api/print-update-taskdefinition.md
+          - name: Delete
+            href: api/print-delete-taskdefinition.md
+          - name: List tasks
+            href: api/printtaskdefinition-list-tasks.md
+          - name: Get task
+            href: api/printtask-get.md
+          - name: Update task
+            href: api/printtaskdefinition-update-task.md
+        - name: Reports
+          items:
+          - name: Organized by printer
+            items:
+            - name: Get
+              href: api/printusagesummarybyprinter-get.md
+            - name: List a printer's archived print jobs
+              href: api/reports-getprinterarchivedprintjobs.md
+            - name: List daily reports by printer
+              href: api/reportroot-list-dailyprintusagesummariesbyprinter.md
+            - name: List monthly reports by printer
+              href: api/reportroot-list-monthlyprintusagesummariesbyprinter.md
+          - name: Organized by user or group
+            items:
+            - name: Get
+              href: api/printusagesummarybyuser-get.md
+            - name: List a user's archived print jobs
+              href: api/reports-getuserarchivedprintjobs.md
+            - name: List a group's archived print jobs
+              href: api/reports-getgrouparchivedprintjobs.md
+            - name: List daily reports by user
+              href: api/reportroot-list-dailyprintusagesummariesbyuser.md
+            - name: List monthly reports by user
+              href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
+        - name: Print service
+          href: resources/printservice.md
+          items:
+          - name: List
+            href: api/print-list-services.md
+          - name: Get
+            href: api/printservice-get.md
+          - name: Endpoint
+            href: resources/printserviceendpoint.md
+            items:
+            - name: Get endpoint
+              href: api/printserviceendpoint-get.md
+            - name: List a service's endpoints
+              href: api/printservice-list-endpoints.md
+        - name: Print settings
+          href: resources/printsettings.md
+          items:
+          - name: Get
+            href: api/print-get-settings.md
+          - name: Update
+            href: api/print-update-settings.md
+    - name: Corporate management
+        href: resources/intune-graph-overview.md
+        displayName: Intune 
+        items:
       - name: Overview
         href: resources/intune-graph-overview.md
       - name: App management

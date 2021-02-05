@@ -925,3 +925,99 @@ Possible values for user account types (group membership), per Windows definitio
 | application
 | delegated
 | delegatedUserConsentable
+
+### printColorMode values 
+
+|Member|
+|:---|
+|blackAndWhite|
+|grayscale|
+|color|
+|auto|
+|unknownFutureValue|
+
+### printDuplexMode values 
+
+|Member|
+|:---|
+|flipOnLongEdge|
+|flipOnShortEdge|
+|oneSided|
+|unknownFutureValue|
+
+### printerFeedOrientation values 
+
+|Member|
+|:---|
+|longEdgeFirst|
+|shortEdgeFirst|
+|unknownFutureValue|
+
+### printFinishing values 
+
+|Member|
+|:---|
+|none|
+|staple|
+|punch|
+|cover|
+|bind|
+|saddleStitch|
+|stitchEdge|
+|stapleTopLeft|
+|stapleBottomLeft|
+|stapleTopRight|
+|stapleBottomRight|
+|stitchLeftEdge|
+|stitchTopEdge|
+|stitchRightEdge|
+|stitchBottomEdge|
+|stapleDualLeft|
+|stapleDualTop|
+|stapleDualRight|
+|stapleDualBottom|
+|unknownFutureValue|
+
+### printMultipageLayout values 
+
+|Member|
+|:---|
+|clockwiseFromTopLeft|
+|counterclockwiseFromTopLeft|
+|counterclockwiseFromTopRight|
+|clockwiseFromTopRight|
+|counterclockwiseFromBottomLeft|
+|clockwiseFromBottomLeft|
+|counterclockwiseFromBottomRight|
+|clockwiseFromBottomRight|
+|unknownFutureValue|
+
+### printOrientation values 
+
+|Member|
+|:---|
+|portrait|
+|landscape|
+|reverseLandscape|
+|reversePortrait|
+|unknownFutureValue|
+
+### printQuality values 
+
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+|unknownFutureValue|
+
+### printScaling values 
+
+|Member|
+|:---|
+|auto|
+|shrinkToFit|
+|fill|
+|fit|
+|none|
+|unknownFutureValue|

@@ -1,0 +1,100 @@
+---
+title: Update task
+description: Update a print task.
+author: nilakhan
+localization_priority: Normal
+ms.prod: cloud-printing
+doc_type: apiPageType
+---
+
+# Update printTask
+Namespace: microsoft.graph
+
+Update a print task.
+
+For details about how to use this API to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+In addition to the following permissions, the user's tenant must have an active Universal Print subscription.
+
+|Permission type | Permissions (from least to most privileged) |
+|:---------------|:--------------------------------------------|
+|Delegated (work or school account)| Not supported. |
+|Delegated (personal Microsoft account)|Not Supported.|
+|Application| PrintTaskDefinition.ReadWrite.All |
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /print/taskDefinitions/{taskDefinitionId}/tasks/{taskId}
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
+## Request body
+
+In the request body, supply the values for the relevant [printTask](../resources/printtask.md) fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|status|String|Include `state` and `description` values that describe the current state of the task.|
+
+## Response
+
+If successful, this method returns a `200 OK` response code and an updated [printTask](../resources/printtask.md) object in the response body.
+
+## Examples
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "update_printtask"
+}
+-->
+# [HTTP](#tab/http)
+``` http
+PATCH https://graph.microsoft.com/v1.0/print/taskDefinitions/{taskDefinitionId}/tasks/{taskId}
+Content-Type: application/json
+Content-length: 152
+
+{
+  "@odata.type": "#microsoft.graph.printTask",
+  "status": {
+    "@odata.type": "microsoft.graph.printTaskStatus"
+  },
+  "parentUrl": "String"
+}
+```
+
+
+### Response
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.printTask",
+  "id": "0f806e8f-6e8f-0f80-8f6e-800f8f6e800f",
+  "status": {
+    "@odata.type": "microsoft.graph.printTaskStatus"
+  },
+  "parentUrl": "String"
+}
+```
+

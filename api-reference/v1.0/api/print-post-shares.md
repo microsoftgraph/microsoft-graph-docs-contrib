@@ -1,0 +1,111 @@
+---
+title: Create printerShare
+description: Creates a new printer share for the specified printer.
+author: nilakhan    
+localization_priority: Normal
+ms.prod: cloud-printing
+doc_type: apiPageType
+---
+
+# Create printerShare
+Namespace: microsoft.graph
+
+Create a new **printerShare** for the specified [printer](../resources/printer.md).
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+
+|Permission type | Permissions (from least to most privileged) |
+|:---------------|:--------------------------------------------|
+|Delegated (work or school account)| PrinterShare.ReadWrite.All |
+|Delegated (personal Microsoft account)|Not Supported.|
+|Application|Not Supported.|
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /print/shares
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
+## Request body
+In the request body, supply a JSON representation of the [printerShare](../resources/printershare.md) object.
+
+The following table shows the properties that can be provided when you create the [printerShare](../resources/printershare.md).
+
+|Property|Type|Description|Required?|
+|:---|:---|:---|:---|
+|printer|microsoft.graph.printer|The printer that this printer share is related to. Use the `printer@odata.bind` syntax as shown in the following example.|Yes|
+|displayName|String|The name of the printer share that print clients should display. Maximum length allowed is 50 characters.|Yes|
+|allowAllUsers|Boolean|	If true, all users and groups will be granted access to this printer share. This supersedes the allow lists defined by the allowedUsers and allowedGroups navigation properties.|No|
+
+## Response
+
+If successful, this method returns a `201 Created` response code and a [printerShare](../resources/printershare.md) object in the response body.
+
+## Examples
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "create_printershare_from_"
+}
+-->
+# [HTTP](#tab/http)
+``` http
+POST https://graph.microsoft.com/v1.0/print/shares
+Content-Type: application/json
+Content-length: 509
+
+{
+  "@odata.type": "#microsoft.graph.printerShare",
+  "displayName": "String",
+  "allowAllUsers": "Boolean",
+  "printer@odata.bind": "https://graph.microsoft.com/v1.0/print/printers/{printerId}"
+}
+```
+
+### Response
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.printerShare"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.printerShare",
+  "id": "0341efb6-efb6-0341-b6ef-4103b6ef4103",
+  "displayName": "String",
+  "manufacturer": "String",
+  "model": "String",
+  "isAcceptingJobs": "Boolean",
+  "defaults": {
+    "@odata.type": "microsoft.graph.printerDefaults"
+  },
+  "location": {
+    "@odata.type": "microsoft.graph.printerLocation"
+  },
+  "status": {
+    "@odata.type": "microsoft.graph.printerStatus"
+  },
+  "allowAllUsers": "Boolean",
+  "createdDateTime": "String (timestamp)"
+}
+```
+
