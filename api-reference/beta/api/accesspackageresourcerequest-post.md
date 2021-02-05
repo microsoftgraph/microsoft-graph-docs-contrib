@@ -139,7 +139,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request. In this example, we use the `@odata.bind` annotation to assign the `id` of the `accessPackageResourceEnvironment` to an `accessPackageResourceEnvironment` object.
+The following is an example of the request. In this example, the `@odata.bind` annotation is used to assign the `id` of the `accessPackageResourceEnvironment` to an `accessPackageResourceEnvironment` object.
 
 
 <!-- {
@@ -263,5 +263,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
 
