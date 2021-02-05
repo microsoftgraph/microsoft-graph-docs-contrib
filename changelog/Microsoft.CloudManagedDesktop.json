@@ -243,13 +243,13 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "inUse",
                 "ChangeType": "Deletion",
-                "Description": "Remove the ags:Default member from inUse property",
+                "Description": "Remove the ags:Default member from the **inUse** property.",
                 "Target": "virtualEndpoint"
             }],
             "Id": "db18fa68-57bd-4326-84cb-ac217c065b91",
             "Cloud": "prd",
             "Version": "beta",
-            "CreatedDateTime": "2021-05-02T15:13:07.177Z",
+            "CreatedDateTime": "2021-02-05T15:13:07.177Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"   
         }
