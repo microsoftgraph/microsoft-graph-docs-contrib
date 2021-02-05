@@ -7,7 +7,6 @@ author: amrutha95
 # Electron Provider
 
 The Electron provider uses [msal-node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node) to sign in users and acquire tokens to use with Microsoft Graph in an Electron application.
-
 To learn more about authentication providers, see [providers](./providers.md).
 
 ## Get started
