@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [plannerRoster
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/planner/rosters/{plannerRosterId}
+GET https://graph.microsoft.com/beta/planner/rosters/6519868f-868f-6519-8f86-19658f861965
 ```
 
 

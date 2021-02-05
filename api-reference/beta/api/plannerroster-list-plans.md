@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/planner/rosters/{plannerRosterId}/plans
+GET https://graph.microsoft.com/beta/planner/rosters/6519868f-868f-6519-8f86-19658f861965/plans
 ```
 
 
@@ -81,12 +81,11 @@ Content-Type: application/json
       "createdBy": {
         "@odata.type": "microsoft.graph.identitySet"
       },
-      "createdDateTime": "String (timestamp)",
-      "title": "String",
+      "title": "Test plan",
       "container": {
         "@odata.type": "microsoft.graph.plannerPlanContainer",
-        "url": "https://graph.microsoft.com/beta/planner/rosters/{plannerRosterId}",
-        "containerId": "{plannerRosterId}",
+        "url": "https://graph.microsoft.com/beta/planner/rosters/6519868f-868f-6519-8f86-19658f861965",
+        "containerId": "6519868f-868f-6519-8f86-19658f861965",
         "type": "roster"
       }
     }

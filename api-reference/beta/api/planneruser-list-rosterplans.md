@@ -81,13 +81,11 @@ Content-Type: application/json
       "createdBy": {
         "@odata.type": "microsoft.graph.identitySet"
       },
-      "createdDateTime": "String (timestamp)",
-      "owner": "String",
-      "title": "String",
+      "title": "Test plan",
       "container": {
         "@odata.type": "microsoft.graph.plannerPlanContainer",
-        "url": "https://graph.microsoft.com/beta/planner/rosters/{plannerRosterId}",
-        "containerId": "{plannerRosterId}",
+        "url": "https://graph.microsoft.com/beta/planner/rosters/5ba84f7a-aa11-4a51-a298-9f2c7ec6bb38",
+        "containerId": "5ba84f7a-aa11-4a51-a298-9f2c7ec6bb38",
         "type": "roster"
       }
     }
