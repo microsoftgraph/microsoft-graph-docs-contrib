@@ -26,7 +26,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access p
 |:---|:---|:---|
 |connectionInfo|[connectionInfo](../resources/connectioninfo.md)|Connection information of an environment used to connect to a resource. |
 |createdBy|String|The display name of the user that created this object.|
-|createdDateTime|DateTimeOffset|The date and time that this object was created. <br>The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|The date and time that this object was created. <br>The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `'2014-01-01T00:00:00Z'`.|
 |description|String|The description of this *accessPackageResourceEnvironment* object.|
 |displayName|String|The display name of this object.|
 |id|String|The system-assigned unique identifier of the object.|
