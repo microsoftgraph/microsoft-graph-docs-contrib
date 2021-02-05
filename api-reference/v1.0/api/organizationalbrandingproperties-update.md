@@ -64,7 +64,6 @@ If the branding already exists, PATCH will replace only the specified properties
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organizationalbrandingproperties"
