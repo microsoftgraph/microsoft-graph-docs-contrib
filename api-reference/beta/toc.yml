@@ -10100,7 +10100,7 @@ items:
             href: api/domain-post-domains.md
           - name: Delete domain
             href: api/domain-delete.md
-          - name: ForceDelete domain
+          - name: Force delete domain
             href: api/domain-forcedelete.md
           - name: Get domain
             href: api/domain-get.md
