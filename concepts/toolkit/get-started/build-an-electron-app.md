@@ -79,13 +79,15 @@ Providers.globalProvider = new ElectronProvider();
 
 The ElectronAuthenticator is responsible for setting up the configuration variables for MSAL authentication, acquiring access tokens and communicating with ElectronProvider.
 Initialize the ElectronAuthenticator in the main process and set up the configuration variables such as client-id.
+First, import `ElectronAuthenticator` and  `MsalElectronConfig` from `@microsoft/mgt-electron-provider`"
 
 ```ts
 import { ElectronAuthenticator, MsalElectronConfig } from '@microsoft/mgt-electron-provider/dist/Authenticator'; 
-...
-let config: MsalElectronConfig = {
+```
+Next, add this code in the `createWindow()` function to initialize the ElectronAuthenticator, right after where `mainWindow` is initiated. 
+```ts
+const config: MsalElectronConfig = {
   clientId: '<your_client_id>',
-  authority: '<your_authority_url>', //optional, uses common authority by default
   mainWindow: mainWindow, //This is the BrowserWindow instance that requires authentication
   scopes: [
     'user.read',
