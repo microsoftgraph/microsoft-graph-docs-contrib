@@ -24,7 +24,7 @@ The ElectronProvider is responsible for communicating with ElectronAuthenticator
 
 ```ts
 import {Providers} from '@microsoft/mgt-element';
-import {ElectronProvider} from '@microsoft/mgt-electron-provider/dist/ElectronProvider';
+import {ElectronProvider} from '@microsoft/mgt-electron-provider/dist/Provider';
 
 // initialize the auth provider globally
 Providers.globalProvider = new ElectronProvider();
@@ -42,7 +42,7 @@ let config: MsalElectronConfig = {
   clientId: '<your_client_id>',
   authority: '<your_authority_url>', 
   mainWindow: mainWindow, 
-  scopes: ['user.read'],
+  scopes: ['user.read'], //We recommend pre-consenting all the required scopes on the Azure portal
 };
 
 ElectronAuthenticator.initialize(config);
