@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Deletes a domain using an asynchronous operation.
 
-Prior to calling [forceDelete](domain-forcedelete.md), you must update or remove any references of **Exchange** as the provisioning service.
+Prior to calling [forceDelete](domain-forcedelete.md), you must update or remove any references to **Exchange** as the provisioning service.
 
 The following actions are performed as part of this operation:
 
@@ -71,7 +71,7 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns `200 OK` response code. 
 
 ## Example
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -106,7 +106,7 @@ Content-length: 33
 ---
 
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response",
