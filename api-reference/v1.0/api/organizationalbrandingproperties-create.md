@@ -49,6 +49,8 @@ This method supports the OData query parameters to help customize the response. 
 
 ## Request body
 
+In the request body, include a JSON representation of an organizationalBrandingProperties object. The following table lists the required properties.
+
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |backgroundColor|String|Color that appears in place of the background image in low-bandwidth connections. The primary color of your banner logo or your organization color is recommended to be used here. Specify this in hexadecimal (for example, white is #FFFFFF).|
