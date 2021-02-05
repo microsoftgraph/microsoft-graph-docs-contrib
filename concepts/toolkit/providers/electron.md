@@ -42,7 +42,7 @@ let config: MsalElectronConfig = {
   clientId: '<your_client_id>',
   authority: '<your_authority_url>', 
   mainWindow: mainWindow, 
-  scopes: ['user.read'], //We recommend pre-consenting all the required scopes on the Azure portal
+  scopes: ['user.read'] //We recommend pre-consenting all the required scopes on the Azure portal
 };
 
 ElectronAuthenticator.initialize(config);
