@@ -6,7 +6,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "inUse",
                 "ChangeType": "Deletion",
-                "Description": "Changed the inUse property to be returned only on select and not by default.",
+                "Description": "Changed the inUse property to be returned only on `select` and not by default.",
                 "Target": "virtualEndpoint"
             }],
             "Id": "db18fa68-57bd-4326-84cb-ac217c065b91",
