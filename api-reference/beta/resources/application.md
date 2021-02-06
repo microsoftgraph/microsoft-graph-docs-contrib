@@ -3,7 +3,7 @@ title: "application resource type"
 description: "Represents an application."
 localization_priority: Priority
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: resourcePageType
 ---
 
@@ -162,3 +162,4 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
