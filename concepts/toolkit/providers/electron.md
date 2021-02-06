@@ -77,3 +77,4 @@ To create the app in Azure Active Directory:
 
 ## Getting started
 Check out this step-by-step tutorial on [building an electron app](../get-started/build-an-electron-app.md).
+Take a look at a [sample Electron application](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/samples/electron-app) that demonstrates the usage of the Electron provider.
