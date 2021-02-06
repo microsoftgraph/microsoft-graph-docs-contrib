@@ -25,6 +25,7 @@ The ElectronProvider is responsible for communicating with ElectronAuthenticator
 ```ts
 import {Providers} from '@microsoft/mgt-element';
 import {ElectronProvider} from '@microsoft/mgt-electron-provider/dist/Provider';
+import '@microsoft/mgt-components';
 
 // initialize the auth provider globally
 Providers.globalProvider = new ElectronProvider();
