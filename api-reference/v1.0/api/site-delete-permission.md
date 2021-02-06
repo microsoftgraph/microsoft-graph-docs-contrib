@@ -7,7 +7,7 @@ ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
-# Delete site's permission
+# Delete permission
 Namespace: microsoft.graph
 
 Delete a permission object on a site.
