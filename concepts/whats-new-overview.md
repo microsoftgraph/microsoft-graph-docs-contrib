@@ -23,7 +23,7 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 Get more properties included in [detail reports for SharePoint site usage](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta&preserve-view=true): anonymousLinkCount, companyLinkCount, externalSharing, geolocation, secureLinkForGuestCount, secureLinkForMemberCount, siteSensitivityLabelId, and unmanagedDevicePolicy.
 
 ### Use SDKs
-Try the preview release of the [Microsoft Graph Java SDK v3](https://github.com/microsoftgraph/msgraph-sdk-java/tree/feature/v3)! For more information, see the related [blog post](https://developer.microsoft.com/en-us/graph/blogs/announcing-the-public-preview-of-microsoft-graph-java-sdk-v3/).
+Try the preview release of the [Microsoft Graph Java SDK v3](https://github.com/microsoftgraph/msgraph-sdk-java/tree/feature/v3)! For more information, see the related [blog post](https://developer.microsoft.com/graph/blogs/announcing-the-public-preview-of-microsoft-graph-java-sdk-v3/).
 
 ## January 2021: New in preview only
 
