@@ -49,7 +49,7 @@ Try the preview release of the [Microsoft Graph Java SDK v3](https://github.com/
   - `Reports.Read.All` to read print usage summary per specified user or per printer.
 
 ### Education
-Use class-level assignment settings to enable or disable animation to celebrate turning in an assignment.
+Use class-level [assignment settings](/graph/api/resources/educationAssignmentSettings?view=graph-rest-beta&preserve-view=true) to enable or disable animation to celebrate turning in an assignment.
 
 ### Groups
 Get the processing status of a rule-based dynamic group by using the **membershipRuleProcessingStatus** property. This is useful when an attribute of a user changes, the user's membership in a rule-based [Microsoft 365 group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) is re-evaluated based on the group membership rules set for the organization. 
@@ -64,8 +64,8 @@ Get the [usage right](/graph/api/resources/UsageRight?view=graph-rest-beta&prese
 - Support [Windows Hello for Business](/graph/api/resources/windowshelloforbusinessauthenticationmethod?view=graph-rest-beta&preserve-view=true) as an authentication method of a user to sign in on Windows devices without using a password.
 
 ### Reports | Identity and access reports
-- [Get the number of users who are registered, or who are capable of multi-factor authentication, self-service password reset, or passwordless authentication](/graph/api/authenticationmethodsroot-usersregisteredbyfeature?view=graph-rest-beta&preserve-view=true).
-- [Get the number of users registered for each authentication method](/graph/api/authenticationmethodsroot-usersregisteredbymethod?view=graph-rest-beta&preserve-view=true), including password, Windows Hello for Business, or passwordless phone sign-in.
+- [Get a report of the number of users who are registered, or who are capable of various registration features](/graph/api/authenticationmethodsroot-usersregisteredbyfeature?view=graph-rest-beta&preserve-view=true), including multi-factor authentication, self-service password reset, or passwordless authentication.
+- [Get a report of the number of users registered for each authentication method](/graph/api/authenticationmethodsroot-usersregisteredbymethod?view=graph-rest-beta&preserve-view=true), including password, Windows Hello for Business, or passwordless phone sign-in.
 
 ## Want to stay in the loop?
 
