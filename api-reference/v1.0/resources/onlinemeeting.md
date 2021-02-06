@@ -38,8 +38,8 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | videoTeleconferenceId | String                                        | The video teleconferencing ID. Read-only.                                                                                  |
 | joinInformation       | [itemBody](itembody.md)                       | The join information in the language and locale variant specified in the `Accept-Language` request HTTP header. Read-only. |
 | isEntryExitAnnounced  | Boolean                                       | Whether or not to announce when callers join or leave.                                                                     |
-| lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting   lobby.                                                                 |
-| allowedPresenters     | onlineMeetingPresenters                       | Specifies who can be a presenter in a meeting. Possible values are listed in the following table.                                           |
+| lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting   lobby.                                                               |
+| allowedPresenters     | onlineMeetingPresenters                       | Specifies who can be a presenter in a meeting. Possible values are listed in the following table.                          |
 
 ### onlineMeetingPresenters values
 

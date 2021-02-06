@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/teams/0e05a7e4-a48d-4615-b0b7-c7494da9ce68/
 HTTP/1.1 200 OK
 
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metdata#Collection(chatMessage)"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metdata#Collection(chatMessage)",
     "@odata.count": 2,
     "@odata.nextLink": "https://graph.microsoft.com/beta/teams/a5212c6a-a8b1-49cd-bd40-7f83f0a42861/channels/getAllMessages?$top=2&$skip=2",
     "value": [

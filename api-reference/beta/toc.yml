@@ -70,6 +70,12 @@ items:
         href: /graph/extensibility-open-users?context=graph/api/beta
       - name: Use schema extensions (example)
         href: /graph/extensibility-schema-groups?context=graph/api/beta
+    - name: Use Graph Explorer
+      items:
+      - name: Get started
+        href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/beta
+      - name: Work with Graph Explorer
+        href: /graph/graph-explorer/graph-explorer-features?context=graph/api/beta
     - name: Use Postman
       href: /graph/use-postman?context=graph/api/beta
   - name: Migrate
@@ -183,7 +189,7 @@ items:
     - name: Known issues
       href: /graph/known-issues?context=graph/api/beta
     - name: Changelog
-      href: /graph/changelog?context=graph/api/beta
+      href: https://developer.microsoft.com/graph/changelog
     - name: Errors
       href: /graph/errors?context=graph/api/beta
   - name: Beta reference
@@ -291,6 +297,8 @@ items:
           href: api/user-list-registereddevices.md
         - name: List scoped administrator memberships
           href: api/user-list-scopedrolememberof.md
+        - name: List user usage rights
+          href: api/user-list-usagerights.md
         - name: Reprocess license assignment
           href: api/user-reprocesslicenseassignment.md
         - name: Revoke sign-in session
@@ -1422,7 +1430,7 @@ items:
           href: api/onlinemeeting-update.md
         - name: Delete
           href: api/onlinemeeting-delete.md
-      - name: Presence (preview)
+      - name: Presence
         href: resources/presence.md
         items:
         - name: Get presence
@@ -1681,6 +1689,10 @@ items:
             href: api/printjob-update-configuration.md
           - name: Cancel
             href: api/printjob-cancel.md
+          - name: Abort
+            href: api/printjob-abort.md
+          - name: Redirect
+            href: api/printjob-redirect.md
         - name: Print operation
           href: resources/printoperation.md
           items:
@@ -9322,6 +9334,8 @@ items:
             href: api/cloudpconpremisesconnection-delete.md
           - name: Run health checks
             href: api/cloudpconpremisesconnection-runhealthcheck.md
+          - name: Update Active Directory domain password
+            href: api/cloudpconpremisesconnection-updateaddomainpassword.md
         - name: Cloud PC provisioning policy
           href: resources/cloudpcprovisioningpolicy.md
           items:
@@ -9399,6 +9413,8 @@ items:
           href: api/educationclass-list-assignments.md
         - name: Create assignment
           href: api/educationclass-post-assignments.md
+        - name: Get assignment settings
+          href: api/educationassignmentsettings-get.md
         - name: List categories
           href: api/educationclass-list-categories.md
         - name: Create category
@@ -9461,6 +9477,13 @@ items:
           href: api/educationassignment-put-rubric.md
         - name: Remove rubric from assignment
           href: api/educationassignment-delete-rubric.md
+      - name: Assignment settings
+        href: resources/educationassignmentsettings.md
+        items:
+        - name: Get assignment settings
+          href: api/educationassignmentsettings-get.md
+        - name: Update assignment settings
+          href: api/educationassignmentsettings-update.md
       - name: Category
         href: resources/educationcategory.md
         items:
@@ -10003,6 +10026,8 @@ items:
             href: api/device-list-memberof.md
           - name: List device transitive groups
             href: api/device-list-transitivememberof.md
+          - name: List device usage rights
+            href: api/device-list-usagerights.md
           - name: Check member objects
             href: api/device-checkmemberobjects.md
         - name: Directory object
@@ -10074,6 +10099,8 @@ items:
           - name: Create domain
             href: api/domain-post-domains.md
           - name: Delete domain
+            href: api/domain-delete.md
+          - name: Force delete domain
             href: api/domain-forcedelete.md
           - name: Get domain
             href: api/domain-get.md
@@ -10231,7 +10258,16 @@ items:
               href: api/fido2authenticationmethod-get.md
             - name: Delete
               href: api/fido2authenticationmethod-delete.md
-          - name: Microsoft Authenticator Passwordless Phone Sign-In
+          - name: Microsoft Authenticator 
+            href: resources/microsoftauthenticatorauthenticationmethod.md
+            items:
+            - name: List
+              href: api/microsoftauthenticatorauthenticationmethod-list.md
+            - name: Get
+              href: api/microsoftauthenticatorauthenticationmethod-get.md
+            - name: Delete
+              href: api/microsoftauthenticatorauthenticationmethod-delete.md
+          - name: Microsoft Authenticator Passwordless Phone Sign-In (deprecated)
             href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
             items:
             - name: List
@@ -10240,6 +10276,15 @@ items:
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
             - name: Delete
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
+          - name: Windows Hello for Business
+            href: resources/windowshelloforbusinessauthenticationmethod.md
+            items:
+            - name: List
+              href: api/windowshelloforbusinessauthenticationmethod-list.md
+            - name: Get
+              href: api/windowshelloforbusinessauthenticationmethod-get.md
+            - name: Delete
+              href: api/windowshelloforbusinessauthenticationmethod-delete.md
           - name: Phone
             href: resources/phoneauthenticationmethod.md
             items:
@@ -10294,7 +10339,16 @@ items:
               href: api/fido2authenticationmethodconfiguration-update.md
             - name: Delete
               href: api/fido2authenticationmethodconfiguration-delete.md
-          - name: Microsoft Authenticator Passwordless Phone Sign-in policy
+          - name: Microsoft Authenticator policy
+            href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
+            items:
+            - name: Get
+              href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
+            - name: Update
+              href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
+            - name: Delete
+              href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+          - name: Microsoft Authenticator Passwordless Phone Sign-in policy (deprecated)
             href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
             items:
             - name: Get
@@ -10822,7 +10876,7 @@ items:
               href: api/identityapiconnector-delete.md
       - name: Governance
         items:
-        - name: Access reviews (groups)
+        - name: Access reviews for groups
           href: resources/accessreviewsv2-root.md
           items:
           - name: Access review schedule definition
@@ -10864,7 +10918,7 @@ items:
               href: api/accessreviewinstancedecisionitem-listpendingapproval.md
             - name: Update
               href: api/accessreviewinstancedecisionitem-update.md
-        - name: Access reviews (all resources)
+        - name: Access reviews
           href: resources/accessreviews-root.md
           items:
           - name: Access review
@@ -11002,6 +11056,13 @@ items:
               href: api/accesspackageresourcerequest-list.md
             - name: Create
               href: api/accesspackageresourcerequest-post.md
+          - name: Access package resource environment
+            href: resources/accesspackageresourceenvironment.md
+            items:
+            - name: List
+              href: api/accesspackageresourceenvironment-list.md
+            - name: Get
+              href: api/accesspackageresourceenvironment-get.md
           - name: Access package resource role scope
             href: resources/accesspackageresourcerolescope.md
             items:
@@ -11973,6 +12034,16 @@ items:
             items:
             - name: Get usage summary
               href: api/reportroot-getcredentialusagesummary.md
+          - name: Users registered by feature
+            href: resources/userregistrationfeaturesummary.md
+            items:
+            - name: Get users registered by feature
+              href: api/authenticationmethodsroot-usersregisteredbyfeature.md
+          - name: Users registered by method
+            href: resources/userregistrationmethodsummary.md
+            items:
+            - name: Get users registered by authentication method
+              href: api/authenticationmethodsroot-usersregisteredbymethod.md             
       - name: Microsoft 365 usage reports
         items:
         - name: Overview

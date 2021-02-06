@@ -3,7 +3,7 @@ title: "relyingPartyDetailedSummary resource type"
 description: "Represents a relying party in AD FS."
 localization_priority: Normal
 author: "besiler"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 
