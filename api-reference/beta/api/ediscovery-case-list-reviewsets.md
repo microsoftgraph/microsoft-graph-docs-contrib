@@ -1,6 +1,6 @@
 ---
 title: "List reviewSets"
-description: "Get the reviewSet resources from the reviewSets navigation property."
+description: "Get the reviewSet resources from a case object."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [reviewSet](../resources/ediscovery-reviewset.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) objects in the response body.
 
 ## Examples
 

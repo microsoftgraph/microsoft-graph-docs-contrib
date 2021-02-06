@@ -1,6 +1,6 @@
 ---
 title: "List sourceCollections"
-description: "Get the sourceCollection resources from the sourceCollections navigation property."
+description: "Get the list of sourceCollections resources from a case object."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [sourceCollection](../resources/ediscovery-sourcecollection.md) from a [case](../resources/ediscovery-case.md) object.
+Get the list of [sourceCollections](../resources/ediscovery-sourcecollection.md) from a [case](../resources/ediscovery-case.md) object.
 
 ## Permissions
 

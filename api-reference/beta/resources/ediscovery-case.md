@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-eDiscovery cases are containers that contain custodians, holds, collections, review sets, and exports.  Learn more about cases and [Advanced eDiscovery](/microsoft-365/compliance/overview-ediscovery-20).
+Contain custodians, holds, collections, review sets, and exports. For details, see [Advanced eDiscovery](/microsoft-365/compliance/overview-ediscovery-20).
 
 ## Methods
 
@@ -51,7 +51,7 @@ eDiscovery cases are containers that contain custodians, holds, collections, rev
 |id|String| The ID for the eDiscovery case. Read-only. |
 |lastModifiedBy|[identitySet](/graph/api/resources/identityset)|The last user who modified the entity.|
 |lastModifiedDateTime|DateTimeOffset| The latest date and time when the case was modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|status|String| The case status. Possible values are `unknown`, `active`, `pendingDelete`, `closing`, `closed`, and `closedWithError`. For details see the following table.|
+|status|microsoft.graph.ediscovery.caseStatus| The case status. Possible values are `unknown`, `active`, `pendingDelete`, `closing`, `closed`, and `closedWithError`. For details, see the following table.|
 
 ### caseStatus values
 

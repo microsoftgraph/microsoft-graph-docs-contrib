@@ -41,7 +41,7 @@ POST /compliance/ediscovery/cases
 
 ## Request body
 
-In the request body, supply a JSON representation of an [microsoft.graph.ediscovery.case](../resources/ediscovery-case.md) object. The following table lists properties that can be submitted with the call.
+In the request body, supply a JSON representation of a [case](../resources/ediscovery-case.md) object. The following table lists properties that can be submitted with the call.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|

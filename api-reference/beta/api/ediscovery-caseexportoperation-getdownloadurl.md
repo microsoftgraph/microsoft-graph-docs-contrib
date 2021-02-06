@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns the download URL for an export once the export is ready
+Returns the download URL for an export when the export is ready.
 
 ## Permissions
 

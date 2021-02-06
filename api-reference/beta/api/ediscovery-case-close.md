@@ -1,5 +1,5 @@
 ---
-title: "Case: close"
+title: "case: close"
 description: "Close an eDiscovery case."
 author: "mahage-msft"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Case: close
+# case: close
 
 Namespace: microsoft.graph.ediscovery
 
