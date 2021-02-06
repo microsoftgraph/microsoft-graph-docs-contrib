@@ -7,7 +7,7 @@ ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
-# Get site's permission
+# Get permission
 Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a permission object on a site.
