@@ -31,19 +31,23 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /compliance/ediscovery/cases/{caseId}/legalHolds
 ```
 
 ## Optional query parameters
+
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -53,17 +57,19 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "list_legalhold"
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalHolds
 ```
 
-
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -71,6 +77,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalH
   "@odata.type": "Collection(microsoft.graph.ediscovery.legalHold)"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -100,4 +107,3 @@ Content-Type: application/json
   ]
 }
 ```
-

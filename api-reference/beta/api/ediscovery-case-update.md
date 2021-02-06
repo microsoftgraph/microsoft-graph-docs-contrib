@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [case](../resources/ediscovery-case.md) object.
+Update the properties of a [case](../resources/ediscovery-case.md) object.
 
 ## Permissions
 
@@ -44,6 +44,7 @@ PATCH /compliance/ediscovery/cases/{id}
 The following table shows the properties that are required when you update the [case](../resources/ediscovery-case.md).
 
 None
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.ediscovery.case](../resources/ediscovery-case.md) object in the response body.

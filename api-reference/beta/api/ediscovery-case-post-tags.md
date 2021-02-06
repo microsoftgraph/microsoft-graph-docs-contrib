@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new tag object.
+Create a new tag for the specified case.  The tags are used in review sets while reviewing content.
 
 ## Permissions
 

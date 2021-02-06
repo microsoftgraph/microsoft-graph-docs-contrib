@@ -49,11 +49,13 @@ In the request body, supply a JSON representation of the [sourceCollection](../r
 
 The following table shows the properties that are required when you create the [sourceCollection](../resources/ediscovery-sourcecollection.md).
 
-You must provide either a **custodianSource** or **additionalSource**
+You must provide either a **custodianSources** or **tenantSources**
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the **sourceCollection**|
+|custodianSources@odata.bind|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|The custodian sources to include in this search. The URL for this source can be obtained from custodian [siteSources](../api/ediscovery-custodian-list-sitesources.md), [unifiedGroupSources](../api/ediscovery-custodian-list-unifiedgroupsources.md), or [userSources](../api/ediscovery-custodian-list-usersources.md) plus the ID of the source. NOTE: Either 1 custodian or specifying tenant sources is required when creating a source collection. |
+|tenantSources|microsoft.graph.ediscovery.tenantSources|When specified, the collection will span across a service for an entire workload. Possible values are: `allMailboxes`, `allSites`. NOTE: Either 1 custodian or specifying tenant sources is required when creating a source collection.|
 
 ## Response
 
