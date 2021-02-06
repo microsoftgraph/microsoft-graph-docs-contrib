@@ -16,7 +16,7 @@ Create a new Electron app by cloning this git repository ([electron-quick-start-
 git clone https://github.com/electron/electron-quick-start-typescript
 ```
 
-Change the working directory to the newly created app.
+Change the working directory to the newly created app and install all dependencies.
 
 ```cmd
 cd electron-quick-start-typescript
@@ -92,16 +92,14 @@ const config: MsalElectronConfig = {
   mainWindow: mainWindow, //This is the BrowserWindow instance that requires authentication
   scopes: [
     'user.read',
+        'user.read',
         'people.read',
         'user.readbasic.all',
         'contacts.read',
-        'calendars.read',
         'presence.read.all',
-        'tasks.readwrite',
         'presence.read',
         'user.read.all',
-        'group.read.all',
-        'tasks.read'
+        'calendars.read'
   ],
 };
 ElectronAuthenticator.initialize(config);
@@ -126,25 +124,18 @@ const mainWindow = new BrowserWindow({
  Here is an example index.html:
  
  ```html
- <!DOCTYPE html>
- <html>
-   <head>
-     <meta charset="UTF-8" />
-     <title>Sample Electron-MGT App</title>
-   </head>
-   <body>
-     <mgt-login></mgt-login>
-     <mgt-person person-query="me" view="twoLines" person-card="hover" show-presence></mgt-person>
-     <mgt-people-picker></mgt-people-picker>
-     <mgt-teams-channel-picker></mgt-teams-channel-picker>
-     <mgt-tasks data-source="todo"></mgt-tasks>
-     <mgt-agenda group-by-day></mgt-agenda>
-     <mgt-people show-presence></mgt-people>
-     <mgt-todo></mgt-todo>
-     <script type="module" src="./dist/renderer.js"></script>
-   </body>
- </html>
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sample Electron-MGT App</title>
+  </head>
+  <body>
+    <mgt-login></mgt-login>
+    <mgt-agenda group-by-day></mgt-agenda>
+    <script type="module" src="./dist/renderer.js"></script>
+  </body>
+</html>
  ```
  
  
