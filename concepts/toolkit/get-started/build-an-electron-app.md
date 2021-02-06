@@ -212,8 +212,7 @@ const mainWindow = new BrowserWindow({
 "scripts": {
    "webpack": "webpack",
    "start": "npm run webpack && electron dist/main.js"
- }
-                
+ }                
  ```
  
  #### Run your app
