@@ -7,7 +7,6 @@ author: amrutha95
 
 # Use the Microsoft Graph Toolkit with Electron
 
-Microsoft Graph Toolkit is a set of web components that simplify connecting to Microsoft Graph and allow you to focus on your application instead. Microsoft Graph Toolkit is available as a generic set of web components distributed through the `@microsoft/mgt` npm package.
 This article describes the step-by-step process of using the Microsoft Graph Toolkit to create an Electron app and connect it to Microsoft 365. After completing the steps, you'll have a Electron app that shows the upcoming appointments of the currently signed in user from Microsoft 365.
 
 ## Create an Electron app 
@@ -294,4 +293,3 @@ For more details on how to implement this, refer to the sample for this extensio
 - Ask a question on [Stack Overflow](https://aka.ms/mgt-question).
 - Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).
     
-
