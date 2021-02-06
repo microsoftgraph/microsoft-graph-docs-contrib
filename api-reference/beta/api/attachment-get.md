@@ -403,6 +403,15 @@ Content-type: application/json
 #### Request
 The next example uses the same request as in [example 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) to get the properties of an item attachment on a message by using `$expand`. In this case, because the attached item also has a file attachment, the response includes the properties of the file attachment as well. 
 
+<!-- {
+  "blockType": "request",
+  "name": "get_and_expand_nested_item_attachment",
+  "sampleKeys": ["AAMkADA1M-zAAA=","AAMkADA1M-CJKtzmnlcqVgqI="]
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
+```
 
 #### Response
 <!-- {
@@ -473,12 +482,12 @@ Content-type: application/json
         "flag": {
             "flagStatus": "notFlagged"
         },
-        "attachments@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADg3NTY5MDg4LWMzYmQtNDQzNi05OTgwLWQyZjg2YWQwMTNkZABGAAAAAABovLYeNNaVTqLtDrPKCY1jBwA9TX1A44yVSYZq-GJlk8mvAAAAAAEMAAA9TX1A44yVSYZq-GJlk8mvAACJM67TAAABEgAQAAjwqdMcRCNPuYbIxPcuTIw%3D')/microsoft.graph.itemAttachment/microsoft.graph.itemAttachment/item/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/attachments",
+        "attachments@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/microsoft.graph.itemAttachment/item/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/attachments",
         "attachments": [
             {
                 "@odata.type": "#microsoft.graph.fileAttachment",
                 "@odata.mediaContentType": "application/pdf",
-                "id": "AAMkADg3NTY5MDg4LWMzYmQtNDQzNi05OTgwLWQyZjg2YWQwMTNkZABGAAAZq-GJlk8mvAACJM67TAAACEgAQAAjwqdMcRCNPuYbIxPcuTIwSABAAPpIFKcNT4kGnkULmbsDYNg==",
+                "id": "AAMkADg3NTYULmbsDYNg==",
                 "lastModifiedDateTime": "2021-01-21T14:56:18Z",
                 "name": "Info.pdf",
                 "contentType": "application/pdf",
