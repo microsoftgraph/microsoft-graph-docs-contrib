@@ -7,7 +7,7 @@ ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
-# Create site's permission
+# Create permission
 Namespace: microsoft.graph
 
 Create a new permission object on a site.
