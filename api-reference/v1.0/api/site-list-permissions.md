@@ -7,7 +7,7 @@ ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
-# List site's permissions
+# List permissions
 Namespace: microsoft.graph
 
 Get the permission resources from the permissions navigation property on a site.
