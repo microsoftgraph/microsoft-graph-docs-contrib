@@ -7,10 +7,10 @@ ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
-# Update site's permission
+# Update permission
 Namespace: microsoft.graph
 
-Update the permission object on a site..
+Update the permission object on a site.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
