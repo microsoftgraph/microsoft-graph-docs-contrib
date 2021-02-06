@@ -329,13 +329,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added the following methods to the [channel](/graph/api/resources/channel) resource: [List channel members](/graph/api/channel-list-members), [Get channel member](/graph/api/channel-get-members), [Create channel member](/graph/api/channel-post-members),  [Update channel member's role](/graph/api/channel-update-members), [Remove channel member](/graph/api/channel-delete-members).|
 
 
-### Users | Outlook settings
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-|Addition | v1.0 | Added the new **userPurpose** property to [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-v1.0). See [userPurpose resource type](/graph/api/resources/userPurpose?view=graph-rest-beta) for information on the supported use cases.|
-|Addition | v1.0 | Added new [userPurpose](/graph/api/resources/userPurpose?view=graph-rest-v1.0) enum type.|
-
 ## October 2020
 
 ### Applications
