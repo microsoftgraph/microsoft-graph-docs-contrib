@@ -41,7 +41,7 @@ import { ElectronAuthenticator, MsalElectronConfig } from '@microsoft/mgt-electr
 
 let config: MsalElectronConfig = {
   clientId: '<your_client_id>',
-  authority: '<your_authority_url>', 
+  authority: '<your_authority_url>', //optional
   mainWindow: mainWindow, 
   scopes: ['user.read'] //We recommend pre-consenting all the required scopes on the Azure portal
 };
