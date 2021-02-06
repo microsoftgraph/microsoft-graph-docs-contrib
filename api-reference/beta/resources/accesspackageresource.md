@@ -3,7 +3,7 @@ title: "accessPackageResource resource type"
 description: "An access package resource is a reference to a resource associated with a catalog the roles for which can be used in one or more access packages."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
