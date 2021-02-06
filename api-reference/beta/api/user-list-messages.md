@@ -324,7 +324,7 @@ Content-length: 987
 }
 ```
 
-### Example 3: Use prefer header to get message bosy and uniqueBody is text format
+### Example 3: Use prefer header to get the message body and uniqueBody is text format
 #### Request
 The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** properties of each message in text format.
 
