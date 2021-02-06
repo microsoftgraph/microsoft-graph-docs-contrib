@@ -10125,6 +10125,8 @@ items:
           - name: Create domain
             href: api/domain-post-domains.md
           - name: Delete domain
+            href: api/domain-delete.md
+          - name: Force delete domain
             href: api/domain-forcedelete.md
           - name: Get domain
             href: api/domain-get.md
@@ -11080,6 +11082,13 @@ items:
               href: api/accesspackageresourcerequest-list.md
             - name: Create
               href: api/accesspackageresourcerequest-post.md
+          - name: Access package resource environment
+            href: resources/accesspackageresourceenvironment.md
+            items:
+            - name: List
+              href: api/accesspackageresourceenvironment-list.md
+            - name: Get
+              href: api/accesspackageresourceenvironment-get.md
           - name: Access package resource role scope
             href: resources/accesspackageresourcerolescope.md
             items:
