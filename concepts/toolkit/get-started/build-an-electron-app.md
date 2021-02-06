@@ -20,6 +20,7 @@ Change the working directory to the newly created app.
 
 ```cmd
 cd electron-quick-start-typescript
+npm install
 ```
 
 Install the 'mgt-components' package that contains all the Microsoft Graph connected web components.
