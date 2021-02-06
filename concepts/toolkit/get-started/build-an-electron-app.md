@@ -225,12 +225,12 @@ const mainWindow = new BrowserWindow({
 
 [MSAL Node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node) supports an in-memory cache by default and provides the ICachePlugin interface to perform cache serialization, but does not provide a default way of storing the token cache to disk. If you need persistent cache storage to enable silent log-ins or cross-platform caching, we recommend using the default implementation provided by MSAL Node [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions). 
 
-Install this plugin
+Install the `@azure/msal-node-extensions` package:
 ```cmd
 npm install @azure/msal-node-extensions
 ```
 
-Add this import statement to main.ts
+Add this import statement to main.ts:
 ```ts
 import {
   FilePersistenceWithDataProtection,
@@ -241,7 +241,7 @@ import {
 } from '@azure/msal-node-extensions';
 ```
 
-Add this function to your main.ts file
+Add this function to your main.ts file:
 ```ts
 async function createPersistence(cachePath: string) {
   // On Windows, uses a DPAPI encrypted file
