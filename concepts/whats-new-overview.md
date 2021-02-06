@@ -38,7 +38,7 @@ Try the preview release of the [Microsoft Graph Java SDK v3](https://github.com/
 
 ### Devices and apps | Cloud printing
 - [Subscribe to change notifications of cloud printing](universal-print-webhook-notifications.md) - when a print job is started, and when the print job is ready to be downloaded by a printer.
-- Get a fuller range of [possible values](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values) for the status of a [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view).
+- Get a fuller range of [possible values](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values) for the status of a [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true).
 - Use delegated permissions in apps on behalf of the signed-in user:
   - `PrinterShare.ReadBasic.All` to read basic information about printer shares, excluding access control information.
   - `PrintConnector.Read.All` to read print connectors.
