@@ -274,5 +274,5 @@ For more information about permission scopes and how they work, see [Microsoft G
 - [Use note tags](onenote-note-tags.md)
 - [Integrate with OneNote](integrate-with-onenote.md)
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Microsoft Q&A](https://docs.microsoft.com/answers/topics/office-onenote-client-itpro.html)
+- [OneNote development questions on Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-onenote.html)
 - [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)
