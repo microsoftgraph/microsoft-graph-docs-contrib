@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object. Use this object to create role assignments in Microsoft Intune. For other Micrsoft 365 applications (like Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
+Create a new [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object. Use this object to create role assignments in Microsoft Intune. For other Microsoft 365 applications (like Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
 
 ## Permissions
 
@@ -54,7 +54,8 @@ If successful, this method returns a `201 Created` response code and a new [unif
 
 #### Request
 
-The following is an example of the request. Note the use of the **roleTemplateId** for **roleDefinitionId**. **roleDefinitionId** can be either the service-wide template ID or the directory-specific **roleDefinitionId**.
+The following is an example of the request:
+> **Note:** the use of the **roleTemplateId** for **roleDefinitionId**. **roleDefinitionId** can be either the service-wide template ID or the directory-specific **roleDefinitionId**.
 
 
 # [HTTP](#tab/http)
@@ -96,7 +97,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following is an example of the response:
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
@@ -128,7 +129,7 @@ Use the following information for creating Intune role assignments:
 
 #### Request
 
-The following is an example of the request.
+The following is an example of the request:
 
 
 # [HTTP](#tab/http)
@@ -170,7 +171,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following is an example of the response:
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
