@@ -77,10 +77,10 @@ The CSV file has the following headers for columns.
 - Meeting Count
 - Meetings Organized Count
 - Meetings Attended Count
-- AdHoc Meetings Organized Count
-- AdHoc Meetings Attended Count
-- Scheduled One Time Meetings Organized Count
-- Scheduled One Time Meetings Attended Count
+- Ad Hoc Meetings Organized Count
+- Ad Hoc Meetings Attended Count
+- Scheduled One-time Meetings Organized Count
+- Scheduled One-time Meetings Attended Count
 - Scheduled Recurring Meetings Organized Count
 - Scheduled Recurring Meetings Attended Count
 - Audio Duration
@@ -144,7 +144,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Meetings Organized Count,Meetings Attended Count,AdHoc Meetings Organized Count,AdHoc Meetings Attended Count,Scheduled One Time Meetings Organized Count,Scheduled One Time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
+Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
 ```
 
 ### JSON
