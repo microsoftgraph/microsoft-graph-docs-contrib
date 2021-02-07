@@ -161,48 +161,75 @@ Content-type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
-  "value": [
-    {
-      "searchTerms": ["ya"],
-      "hitsContainers": [
-        {
-          "total": 2,
-          "moreResultsAvailable": false,
-          "hits": [
-            {
-              "hitId": "AAMkADc0NDNlNTE0",
-              "rank": 1,
-              "summary": "<ddd/>",
-              "contentSource": "/external/connections/azuresqlconnector",
-              "resource": {
-                "@odata.type": "#microsoft.graph.externalItem",
-                "properties": {
-                  "businessEntityID": 20704,
-                  "firstName": "Amy",
-                  "lastName": "Yang"
+"value": [
+      {
+        "searchTerms": [
+          "test"
+        ],
+        "hitsContainers": [
+          {
+            "hits": [
+              {
+                "_id": "AQMkAGRjZWJjZTFkLTkzYWItNDhlOC1iODA2LTgwMTNjNjEzYzI2YwBGAAADOx0/YV2JckefuDmJtUO7mwcAHNjGq33S50uXSFeU/U9mogAAAgEWAAAAHNjGq33S50uXSFeU/U9mogAAAgleAAAA",
+                "_contentSource": "FileAsUdt",
+                "_score": 1,
+                "_summary": "<c0>Test</c0> component to move data files and messages between the gateway and internal <ddd/>",
+                "_source": {
+                  "@odata.type": "#microsoft.graph.externalItem",
+                  "properties": {
+                    "label_Title": "SONIC Operations support and test Guide for the month of March",
+                    "label_URL": "D:\\\\ConnectorsEcho\\\\New\\\\MSW06SecondSet\\\\teams\\\\Enterprise_Platforms\\\\CCO\\\\Projects\\\\BTSi Modernization\\\\SONIC Retirement\\\\SONIC_Operations_Support_Guide.docx",
+                    "label_LastModifiedBy": [
+                      "Bob",
+                      "Scott"
+                    ],
+                    "label_LastModifiedDateTime": "2020-01-30T12:44:19Z"
+                  }
+                }
+              },
+              {
+                "_id": "AQMkAGRjZWJjZTFkLTkzYWItNDhlOC1iODA2LTgwMTNjNjEzYzI2YwBGAAADOx0/YV2JckefuDmJtUO7mwcAHNjGq33S50uXSFeU/U9mogAAAgEWAAAAHNjGq33S50uXSFeU/U9mogAAAgldAAAA",
+                "_contentSource": "FileAsUdt",
+                "_score": 2,
+                "_summary": "File Transfer Workbench A <c0>test</c0> File transfer Management Solution File Transfer the number <ddd/>",
+                "_source": {
+                  "@odata.type": "#microsoft.graph.externalItem",
+                  "properties": {
+                    "label_Title": "Test File Transfer Workbench for the month of January",
+                    "label_URL": "D:\\\\ConnectorsEcho\\\\New\\\\MSW06SecondSet\\\\teams\\\\IssueLog\\\\FCAGA Organisation\\\\NSN CO CCA Infra YBCFTPAR entry\\\\File Transfer Workbench.ppt",
+                    "label_LastModifiedBy": [
+                      "Alice",
+                      "Scott"
+                    ],
+                    "label_LastModifiedDateTime": "2020-01-31T11:44:19Z"
+                  }
+                }
+              },
+              {
+                "_id": "AQMkAGRjZWJjZTFkLTkzYWItNDhlOC1iODA2LTgwMTNjNjEzYzI2YwBGAAADOx0/YV2JckefuDmJtUO7mwcAHNjGq33S50uXSFeU/U9mogAAAgEWAAAAHNjGq33S50uXSFeU/U9mogAAAglgAAAA",
+                "_contentSource": "FileAsUdt",
+                "_score": 3,
+                "_summary": "document and the associated <c0>test</c0> software are the sole property of Express Logic.<ddd/>",
+                "_source": {
+                  "@odata.type": "#microsoft.graph.externalItem",
+                  "properties": {
+                    "label_Title": "System User Guide Express Logic 858.613.6640",
+                    "label_URL": "D:\\\\ConnectorsEcho\\\\New\\\\MSW06FirstSet\\\\teams\\\\AzureIoTMarketing\\\\Shared Documents\\\\Whitepapers\\\\RTOS Whitepapers\\\\User Guides\\\\Azure_RTOS_FileX_User_Guide.pdf",
+                    "label_LastModifiedBy": [
+                      "Alice",
+                      "Bob"
+                    ],
+                    "label_LastModifiedDateTime": "2020-05-25T10:20:19Z"
+                  }
                 }
               }
-            },
-           {
-              "hitId": "AQMkADg3M2I3YWMyLTEwZ",
-              "rank": 2,
-              "summary": "<ddd/>",
-              "contentSource": "/external/connections/azuresqlconnector2",
-              "resource": {
-                "@odata.type": "#microsoft.graph.externalItem",
-                "properties": {
-                  "businessEntityID": 20704,
-                  "shortdescription": "Contoso maintenance guidelines",
-                  "firstName": "Amy",
-                  "lastName": "Yang"
-                }
-              }
-            },
-          ]
-        }
-      ]
-    }
-  ]
+            ],
+            "total": 3,
+            "moreResultsAvailable": false
+          }
+        ]
+      }
+    ]
 }
 ```
 
