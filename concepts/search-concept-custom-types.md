@@ -118,6 +118,96 @@ Content-type: application/json
 }
 ```
 
+## Example 2: Retrieve items using semantic labels.
+
+### Request
+
+```HTTP
+POST https://graph.microsoft.com/beta/search/query
+Content-Type: application/json
+
+{
+    "requests": [
+      {
+        "entityTypes": [
+          "microsoft.graph.externalItem"
+        ],
+        "contentSources": [
+          "/external/connections/FileAsUdt"
+        ],
+        "query": {
+          "query_string": {
+            "query": "test"
+          }
+        },
+        "stored_fields": [
+          "label_Title",
+          "label_URL",
+          "label_LastModifiedBy",
+          "label_LastModifiedDateTime"
+        ],
+        "from": 0,
+        "size": 25
+      }
+    ]
+}
+```
+
+### Response
+
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
+  "value": [
+    {
+      "searchTerms": ["ya"],
+      "hitsContainers": [
+        {
+          "total": 2,
+          "moreResultsAvailable": false,
+          "hits": [
+            {
+              "hitId": "AAMkADc0NDNlNTE0",
+              "rank": 1,
+              "summary": "<ddd/>",
+              "contentSource": "/external/connections/azuresqlconnector",
+              "resource": {
+                "@odata.type": "#microsoft.graph.externalItem",
+                "properties": {
+                  "businessEntityID": 20704,
+                  "firstName": "Amy",
+                  "lastName": "Yang"
+                }
+              }
+            },
+           {
+              "hitId": "AQMkADg3M2I3YWMyLTEwZ",
+              "rank": 2,
+              "summary": "<ddd/>",
+              "contentSource": "/external/connections/azuresqlconnector2",
+              "resource": {
+                "@odata.type": "#microsoft.graph.externalItem",
+                "properties": {
+                  "businessEntityID": 20704,
+                  "shortdescription": "Contoso maintenance guidelines",
+                  "firstName": "Amy",
+                  "lastName": "Yang"
+                }
+              }
+            },
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+- [docs: Retrieve items using semantic labels.](/https://docs.microsoft.com/en-us/microsoftsearch/configure-connector#step-5-assign-property-labels)
+
 ## Next steps
 
 - [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
