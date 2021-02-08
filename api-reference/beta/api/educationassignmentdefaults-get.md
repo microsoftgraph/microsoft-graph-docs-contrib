@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and an [educationAss
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/educationClass/assignmentDefaults
+GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentDefaults
 ```
 
 
