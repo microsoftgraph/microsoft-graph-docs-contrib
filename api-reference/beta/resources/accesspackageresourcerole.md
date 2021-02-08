@@ -3,7 +3,7 @@ title: "accessPackageResourceRole resource type"
 description: "A reference to a role defined in a resource."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
