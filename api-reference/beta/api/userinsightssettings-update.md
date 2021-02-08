@@ -67,7 +67,7 @@ Here is an example request on how user updates "**isEnabled**" privacy setting i
 
 <!-- {
   "blockType": "request",
-  "name": "update_userinsightssettings"
+  "name": "update_userInsightsSettings"
 }-->
 
 ```http
@@ -86,8 +86,8 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.userinsightssettings",
-  "name": "update_userinsightssettings"
+  "@odata.type": "microsoft.graph.userInsightsSettings",
+  "name": "update_userInsightsSettings"
 } -->
 
 ```http
