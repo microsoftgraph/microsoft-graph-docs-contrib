@@ -2,6 +2,24 @@
   "changelog": [
     {
       "ChangeList": [
+        {
+          "Id": "0ab336b4-a823-4dd7-819d-72d076a8b881",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronization",
+          "ChangeType": "Addition",
+          "Description": "Added application permission support for the [synchronization](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-overview?view=graph-rest-beta) (provisioning) APIs.",
+          "Target": "synchronization"
+        }
+      ],
+      "Id": "0ab336b4-a823-4dd7-819d-72d076a8b881",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-10T18:58:47.428Z",
+      "WorkloadArea": "Applications",
+      "SubArea": "Directory management"
+    },
+     {
+      "ChangeList": [
        {
          "Id": "0a73cfac-4f88-11eb-ae35-ed470c456b69",
          "ApiChange": "Resource",
