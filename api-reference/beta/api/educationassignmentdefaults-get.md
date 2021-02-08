@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Get educationAssignmentDefaults
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Read the properties and relationships of an [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) object. these are the class-level assignment defaults respected by new assignments created in the class. Callers can continue to specify custom-values on each assignment creation if they do not desire the default behaviors.
 
 ## Permissions

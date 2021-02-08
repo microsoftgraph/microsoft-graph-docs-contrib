@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Update educationAssignmentDefaults
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of an [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) object. Only Teachers can update these settings.
 
 ## Permissions

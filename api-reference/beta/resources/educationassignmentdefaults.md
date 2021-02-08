@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Specifies class-level defaults respected by new assignments created in the class. Callers can continue to specify custom-values on each assignment creation if they do not desire the default behaviors.
 
 ## Methods
