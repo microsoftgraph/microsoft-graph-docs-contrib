@@ -3,7 +3,7 @@ title: "onPremisesPublishingProfile resource type"
 description: "onPremisesPublishingProfile resource type."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 
@@ -73,5 +73,6 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 
