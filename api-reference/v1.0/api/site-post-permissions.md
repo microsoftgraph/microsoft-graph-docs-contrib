@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Create permission
 Namespace: microsoft.graph
 
-Create a new permission object on a site.
+Create a new [permission](../resources/permission.md) object on a site.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -95,5 +95,5 @@ Content-Type: application/json
 <!-- {
   "type": "#page.annotation",
   "section": "documentation",
-  "tocPath": "Sites/permission"
+  "tocPath": "Sites/Create permission"
 } -->

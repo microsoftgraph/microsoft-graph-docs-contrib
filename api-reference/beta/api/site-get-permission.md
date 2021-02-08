@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Get permission
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of a permission object on a site.
+Retrieve the properties and relationships of a [permission](../resources/permission.md) object on a site.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -85,5 +85,5 @@ Content-Type: application/json
 <!-- {
   "type": "#page.annotation",
   "section": "documentation",
-  "tocPath": "Sites/permission"
+  "tocPath": "Sites/Get permission"
 } -->

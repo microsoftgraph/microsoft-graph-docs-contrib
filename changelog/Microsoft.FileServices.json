@@ -15,7 +15,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-02-05T01:49:05.616Z",
-      "WorkloadArea": "Files",
+      "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },
     {
@@ -25,7 +25,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "permissions",
           "ChangeType": "Addition",
-          "Description": "Added the **permissions** relationship to [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource",
+          "Description": "Added the **permissions** relationship to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
           "Target": "site"
         }
       ],
@@ -33,7 +33,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-01-27T01:49:05.616Z",
-      "WorkloadArea": "Files",
+      "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },
     {

@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List permissions
 Namespace: microsoft.graph
 
-Get the permission resources from the permissions navigation property on a site.
+Get the [permission](../resources/permission.md) resources from the permissions navigation property on a site.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -99,5 +99,5 @@ Content-Type: application/json
 <!-- {
   "type": "#page.annotation",
   "section": "documentation",
-  "tocPath": "Sites/permission",
+  "tocPath": "Sites/List permissions",
 } -->
