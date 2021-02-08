@@ -2,6 +2,40 @@
   "changelog": [
     {
       "ChangeList": [
+        {
+          "Id": "399dec32-117c-4129-b943-47a6f1d3033b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceEnvironment",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageResourceEnvironment](graph/api/resources/accesspackageresourceenvironment?view=graph-rest-beta\u0026preserve-view=true) resource type.",
+          "Target": "accessPackageResourceEnvironment"
+        },
+        {
+          "Id": "399dec32-117c-4129-b943-47a6f1d3033b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "accessPackageResourceEnvironment",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageResourceEnvironment** relationship to [accessPackageResource](graph/api/resources/accesspackageresource?view=graph-rest-beta\u0026preserve-view=true) resource.",
+          "Target": "accessPackageResource"
+        },
+        {
+          "Id": "399dec32-117c-4129-b943-47a6f1d3033b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "connectionInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [connectionInfo](graph/api/resources/connectioninfo?view=graph-rest-beta\u0026preserve-view=true) resource type.",
+          "Target": "connectionInfo"
+        }
+      ],
+      "Id": "399dec32-117c-4129-b943-47a6f1d3033b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-05T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": " Governance"
+    },
+    {
+      "ChangeList": [
        {
          "Id": "0a73cfac-4f88-11eb-ae35-ed470c456b69",
          "ApiChange": "Resource",
@@ -328,7 +362,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-12-09T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
   {
       "ChangeList": [
@@ -498,7 +532,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-12-17T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -758,7 +792,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-10-15T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -852,7 +886,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2020-09-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Directory management"
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -886,7 +920,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-09-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -996,7 +1030,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-08-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -1186,7 +1220,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -1228,7 +1262,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2020-07-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -1894,7 +1928,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -2284,7 +2318,7 @@
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -2648,7 +2682,7 @@
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -3146,7 +3180,7 @@
       "Version": "beta",
       "CreatedDateTime": "2019-05-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -3274,7 +3308,7 @@
       "Version": "beta",
       "CreatedDateTime": "2019-03-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -3478,7 +3512,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2018-12-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -3572,7 +3606,7 @@
       "Version": "beta",
       "CreatedDateTime": "2018-12-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -3590,7 +3624,7 @@
       "Version": "beta",
       "CreatedDateTime": "2018-11-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -3750,7 +3784,7 @@
       "Version": "beta",
       "CreatedDateTime": "2018-10-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -3784,7 +3818,7 @@
       "Version": "beta",
       "CreatedDateTime": "2018-10-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -3992,7 +4026,7 @@
       "Version": "beta",
       "CreatedDateTime": "2018-06-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -4266,7 +4300,7 @@
       "Version": "beta",
       "CreatedDateTime": "2018-03-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -4344,7 +4378,7 @@
       "Version": "beta",
       "CreatedDateTime": "2018-03-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -4544,7 +4578,7 @@
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Directory Management"
+      "SubArea": "Directory Management"
     },
     {
       "ChangeList": [
@@ -4624,7 +4658,7 @@
       "Version": "beta",
       "CreatedDateTime": "2017-04-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Directory Management"
+      "SubArea": "Directory Management"
     },
     {
       "ChangeList": [
@@ -4788,7 +4822,7 @@
       "Version": "beta",
       "CreatedDateTime": "2016-10-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -4856,7 +4890,7 @@
       "Version": "beta",
       "CreatedDateTime": "2016-09-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -4874,7 +4908,7 @@
       "Version": "beta",
       "CreatedDateTime": "2016-09-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -4952,7 +4986,7 @@
       "Version": "beta",
       "CreatedDateTime": "2016-08-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -4970,7 +5004,7 @@
       "Version": "beta",
       "CreatedDateTime": "2016-07-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Directory Management"
+      "SubArea": "Directory Management"
     },
     {
       "ChangeList": [
@@ -4988,7 +5022,7 @@
       "Version": "beta",
       "CreatedDateTime": "2016-06-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": " Identity and sign-in"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
