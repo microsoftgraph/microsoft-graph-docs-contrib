@@ -89,5 +89,5 @@ Content-Type: application/json
 <!-- {
   "type": "#page.annotation",
   "section": "documentation",
-  "tocPath": "Sites/Upadate permission"
+  "tocPath": "Sites/Permissions/Update site permission"
 } -->

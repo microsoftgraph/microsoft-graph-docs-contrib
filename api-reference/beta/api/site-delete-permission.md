@@ -70,5 +70,5 @@ HTTP/1.1 204 No Content
 <!-- {
   "type": "#page.annotation",
   "section": "documentation",
-  "tocPath": "Sites/Delete permission"
+  "tocPath": "Sites/Permissions/Delete site permission"
 } -->

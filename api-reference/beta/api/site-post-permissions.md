@@ -95,5 +95,5 @@ Content-Type: application/json
 <!-- {
   "type": "#page.annotation",
   "section": "documentation",
-  "tocPath": "Sites/Create permissions"
+  "tocPath": "Sites/Permissions/Create site permissions"
 } -->

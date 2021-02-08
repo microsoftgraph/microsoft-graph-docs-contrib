@@ -12417,6 +12417,19 @@ items:
           href: api/site-unfollow.md
         - name: List followed sites
           href: api/sites-list-followed.md
+        - name: Permissions
+          href: resources/permission.md
+          items:
+          - name: Get site permission
+            href: api/site-get-permission.md
+          - name: List site permissions
+            href: api/site-list-permissions.md 
+          - name: Create site permissions
+            href: api/site-post-permissions.md
+          - name: Update site permission
+            href: api/site-update-permission.md
+          - name: Delete site permission
+            href: api/site-delete-permission.md
       - name: Lists
         href: resources/list.md
         items:

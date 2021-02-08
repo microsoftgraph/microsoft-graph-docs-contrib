@@ -91,7 +91,7 @@ Content-Type: application/json
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Sites/Update permission",
+  "tocPath": "Sites/Permissions/Update site permission",
   "suppressions": [
   ]
 } -->
