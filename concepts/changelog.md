@@ -11,8 +11,7 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
-<<<<<<< HEAD
-## November 2020
+## Feburary 2020
 
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                                                                                              |
@@ -24,7 +23,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition        | beta          | Added new resource type [acceptJoinResponse](/graph/api/resource/acceptjoinresponse)                         |
 | Addition        | beta          | Added new resource type [rejectJoinResponse](/graph/api/resource/rejectjoinresponse)                         |
 | Addition        | beta          | Added new resource type [inviteNewBotResponse](/graph/api/resource/invitenewbotresponse)                     |
-=======
+
+
 ## January 2021
 
 ### Applications
@@ -341,7 +341,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage). |
 | Addition | Beta | Added the following methods to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource: [List channel members](/graph/api/channel-list-members?view=graph-rest-beta&preserve-view=true), [Get channel member](/graph/api/channel-get-members?view=graph-rest-beta&preserve-view=true), [Create channel member](/graph/api/channel-post-members?view=graph-rest-beta&preserve-view=true),  [Update channel member's role](/graph/api/channel-update-members?view=graph-rest-beta&preserve-view=true), [Remove channel member](/graph/api/channel-delete-members?view=graph-rest-beta&preserve-view=true).|
 | Addition | v1.0 | Added the following methods to the [channel](/graph/api/resources/channel) resource: [List channel members](/graph/api/channel-list-members), [Get channel member](/graph/api/channel-get-members), [Create channel member](/graph/api/channel-post-members),  [Update channel member's role](/graph/api/channel-update-members), [Remove channel member](/graph/api/channel-delete-members).|
->>>>>>> master
 
 
 ## October 2020
