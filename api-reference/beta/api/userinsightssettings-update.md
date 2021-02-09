@@ -1,6 +1,6 @@
 ---
 title: "Update userInsightsSettings"
-description: "Update properties of userInsightsSettings object"
+description: "Update the properties of a userInsightsSettings object."
 author: "simonhult"
 localization_priority: Normal
 ms.prod: "insights"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update properties of the specified [userInsightsSettings](../resources/userinsightssettings.md) resource.
+Update the properties of the specified [userInsightsSettings](../resources/userinsightssettings.md) resource.
 
 ## Permissions
 
@@ -30,22 +30,17 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/settings/itemInsights
-```
-
-Request with a 'user id' or 'userPrincipalName' is only accessible by the user or by a user with the User.ReadWrite.All permissions. To learn more, see [Permissions](/graph/permissions-reference). 
-
-<!-- { "blockType": "ignored" } -->
-
-```http
 PATCH /users/{userId}/settings/itemInsights
 ```
+
+>**Note:** Requests with a `userId` or `userPrincipalName` are only accessible by the user or by a user with the User.ReadWrite.All permissions. To learn more, see [Permissions](/graph/permissions-reference).
 
 ## Request headers
 
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
@@ -63,7 +58,7 @@ If successful, this method returns a `200 OK` response code and [userInsightsSet
 
 ### Request
 
-Here is an example request on how user updates "**isEnabled**" privacy setting in order to disable his item insights.
+The following is an example request on how user updates "**isEnabled**" privacy setting in order to disable his item insights.
 
 <!-- {
   "blockType": "request",
@@ -80,9 +75,11 @@ Content-type: application/json
 ```
 
 
-##### Response
+### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
