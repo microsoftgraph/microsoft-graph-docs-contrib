@@ -1,6 +1,6 @@
 ---
 title: "Get userInsightsSettings"
-description: "Retrieve properties of userInsightsSettings object"
+description: "Retrieve the properties of a userInsightsSettings object."
 author: "simonhult"
 localization_priority: Normal
 ms.prod: "insights"
