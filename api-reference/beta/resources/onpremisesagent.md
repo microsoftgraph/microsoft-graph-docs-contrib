@@ -50,7 +50,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.onPremisesAgent",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
