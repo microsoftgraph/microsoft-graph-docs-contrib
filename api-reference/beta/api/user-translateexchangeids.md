@@ -50,7 +50,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ### exchangeIdFormat values
 
-| Values | Description |
+| Member | Description |
 |:-------|:------------|
 | entryId | The binary entry ID format used by MAPI clients. |
 | ewsId | The ID format used by Exchange Web Services clients. |
