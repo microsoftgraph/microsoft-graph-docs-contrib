@@ -41,9 +41,13 @@ PATCH /compliance/ediscovery/cases/{id}
 
 ## Request body
 
-The following table shows the properties that are required when you update the [case](../resources/ediscovery-case.md).
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-None
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|description|String|The case description.|
+|displayName|String|The case name.|
+|externalId|String|The external case number for customer reference.|
 
 ## Response
 
