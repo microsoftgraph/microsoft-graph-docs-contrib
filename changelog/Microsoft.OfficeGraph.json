@@ -1,0 +1,30 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "6bd25da3-69ed-11eb-8539-acd03a94fa95",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [userSettings](https://docs.microsoft.com/en-us/graph/api/resources/userSettings?view=graph-rest-beta) resource type.",
+          "Target": "userSettings"
+        },
+        {
+          "Id": "6bd4b5f2-69ed-11eb-8539-acd03a94fa95",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userInsightsSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [userInsightsSettings](https://docs.microsoft.com/en-us/graph/api/resources/userInsightsSettings?view=graph-rest-beta) resource type.",
+          "Target": "userInsightsSettings"
+        },
+      ],
+      "Id": "6bcff4f9-69ed-11eb-8539-acd03a94fa95",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-08T09:10:00.188Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": ""
+    }
+  ]
+}
