@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Read properties and relationships of the [managedDevice](../resources/intune-devices-manageddevice.md) object.
+Read properties and relationships of the [managedDevice](../resources/intune-shared-manageddevice.md) object.
 
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -54,7 +54,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and [managedDevice](../resources/intune-devices-manageddevice.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [managedDevice](../resources/intune-shared-manageddevice.md) object in the response body.
 
 ## Example
 
@@ -69,7 +69,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8455
+Content-Length: 8548
 
 {
   "value": {
@@ -113,7 +113,9 @@ Content-Length: 8455
       "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
       "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
       "osBuildNumber": "Os Build Number value",
-      "operatingSystemProductType": 10
+      "operatingSystemProductType": 10,
+      "ipAddressV4": "Ip Address V4 value",
+      "subnetAddress": "Subnet Address value"
     },
     "ownerType": "company",
     "managedDeviceOwnerType": "company",
@@ -260,8 +262,6 @@ Content-Length: 8455
   }
 }
 ```
-
-
 
 
 

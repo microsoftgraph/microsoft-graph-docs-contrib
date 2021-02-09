@@ -28,5 +28,3 @@ Bind status of the tenant with the Google EMM API
 
 
 
-
-

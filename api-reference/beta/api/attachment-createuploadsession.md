@@ -2,7 +2,7 @@
 title: "attachment: createUploadSession"
 description: "Create an upload session to iteratively upload ranges of a file so as to attach the file to the specified message."
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
@@ -124,6 +124,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/attachment-createuploadsession-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/attachment-createuploadsession-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

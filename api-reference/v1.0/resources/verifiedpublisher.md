@@ -3,7 +3,7 @@ title: "verifiedPublisher resource type"
 description: "Represents the verified publisher of the application."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "jesakowi"
 ---
 
@@ -11,7 +11,7 @@ author: "jesakowi"
 
 Namespace: microsoft.graph
 
-Represents the verified publisher of the [application](application.md). For more information, see [Publisher verification](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview). Verified publishers are set using [setVerifiedPublisher](../api/application-setverifiedpublisher.md) and can only be removed using [unsetVerifiedPublisher](../api/application-unsetverifiedpublisher.md).
+Represents the verified publisher of the [application](application.md). For more information, see [Publisher verification](/azure/active-directory/develop/publisher-verification-overview). Verified publishers are set using [setVerifiedPublisher](../api/application-setverifiedpublisher.md) and can only be removed using [unsetVerifiedPublisher](../api/application-unsetverifiedpublisher.md).
 
 ## Properties
 

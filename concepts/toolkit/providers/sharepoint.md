@@ -9,14 +9,13 @@ author: nmetulev
 
 Use the SharePoint provider inside your SharePoint web parts to power the components with Microsoft Graph access.
 
-To learn more, see [Providers](../providers.md).
+To learn more about authentication providers, see [Providers](./providers.md).
 
 ## Get started
 
 Initialize the provider inside the `onInit()` method of your web part.
 
 ```ts
-
 // import the providers at the top of the page
 import {Providers, SharePointProvider} from '@microsoft/mgt';
 
@@ -29,7 +28,6 @@ protected async onInit() {
 Now you can add any component in your `render()` method and it will use the SharePoint context to access Microsoft Graph.
 
 ```ts
-
 public render(): void {
     this.domElement.innerHTML = `
       <mgt-agenda></mgt-agenda>
@@ -41,7 +39,9 @@ public render(): void {
 
 ## Sample
 
-For an example that shows you how to use the various components in your SharePoint web parts, see the [SharePoint webpart sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) in the Microsoft Graph Toolkit repository.
+For details about how to initialize the SharePoint provider, see the [Build a SharePoint web part](../get-started/build-a-sharepoint-web-part.md) getting started guide.
+
+For a pre-built example that shows you how to use the various components in your SharePoint web parts, see the [SharePoint web part sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) in the Microsoft Graph Toolkit repository.
 
 ## Test in the workbench
 
@@ -51,7 +51,10 @@ After you've created a web part, and you're ready to use the components, you wil
 
 In short, it's important to add the right permission to your `package-solution.json`. You will need to upload a package of your web part to SharePoint and have an administrator approve the requested permissions.
 
->**Tip:** if you're not sure what permissions to add, the documentation for each component includes all the permissions it needs.
+>[!TIP]
+>The [Build a SharePoint web part](../get-started/build-a-sharepoint-web-part.md#configure-permissions) getting started guide provides step-by-step instructions for configuring and approving permissions.
+
+>**Note:** if you're not sure what permissions to add, the documentation for each component includes all the permissions it needs.
 
 ## Polyfills
 

@@ -3,7 +3,7 @@ title: "Create connectorGroup"
 description: "Create a connectorGroup object."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -82,6 +82,10 @@ Content-length: 99
 [!INCLUDE [sample-code](../includes/snippets/objc/update-connectorgroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-connectorgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -119,5 +123,6 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
 
 

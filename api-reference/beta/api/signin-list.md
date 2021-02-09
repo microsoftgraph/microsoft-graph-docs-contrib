@@ -3,8 +3,8 @@ title: "List signIns"
 doc_type: apiPageType
 description: "Get a list of the user sign-ins in an Azure Active Directory tenant."
 localization_priority: Normal
-author: "khotz"
-ms.prod: "microsoft-identity-platform"
+author: "besiler"
+ms.prod: "identity-and-access-reports"
 ---
 
 # List signIns
@@ -124,6 +124,10 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signins-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-signins-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -273,6 +277,10 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signins-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-signins-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

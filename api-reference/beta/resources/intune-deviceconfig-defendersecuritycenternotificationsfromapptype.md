@@ -27,5 +27,3 @@ Possible values for defenderSecurityCenterNotificationsFromApp
 
 
 
-
-

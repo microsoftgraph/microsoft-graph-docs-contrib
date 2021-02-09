@@ -2,7 +2,7 @@
 title: "callRecord resource type"
 description: "Represents a single peer-to-peer call or a group call between multiple participants, sometimes referred to as an online meeting."
 localization_priority: Normal
-author: "stephenjust"
+author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---
@@ -54,7 +54,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.callRecords.callRecord",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

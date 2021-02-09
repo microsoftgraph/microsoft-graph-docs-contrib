@@ -280,7 +280,7 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.synchronizationJob"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 OK
 Content-type: application/json
 
 {
@@ -311,15 +311,15 @@ Content-type: application/json
 
 ### Test the connection to the application
 
-Test the connection with the third-party application. The following example is for an application that requires a client secret and secret token. Each application has its own requirements. Applications often use a base address in place of a client secret. To determine what credentials your app requires, go to the provisioning configuration page for your application and in developer mode click test connection. The network traffic will show the parameters used for credentials. For a full list of credentials, see [synchronizationJob: validateCredentials](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta). 
+Test the connection with the third-party application. The following example is for an application that requires a client secret and secret token. Each application has its own requirements. Applications often use a base address in place of a client secret. To determine what credentials your app requires, go to the provisioning configuration page for your application, and in developer mode, click **test connection**. The network traffic will show the parameters used for credentials. For a full list of credentials, see [synchronizationJob: validateCredentials](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta). Most applications, such as Azure Databricks, rely on a BaseAddress and SecretToken. The BaseAddress is refered to as a tenant URL in the Azure Portal. 
 
 #### Request
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 { 
-    credentials: [ 
-        { key: "ClientSecret", value: "xxxxxxxxxxxxxxxxxxxxx" },
-        { key: "SecretToken", value: "xxxxxxxxxxxxxxxxxxxxx" }
+    "credentials": [ 
+        { "key": "ClientSecret", "value": "xxxxxxxxxxxxxxxxxxxxx" },
+        { "key": "SecretToken", "value": "xxxxxxxxxxxxxxxxxxxxx" }
     ]
 }
 ```
@@ -342,9 +342,9 @@ Configuring provisioning requires establishing a trust between Azure AD and the 
 PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/secrets 
  
 { 
-    value: [ 
-        { key: "ClientSecret", value: "xxxxxxxxxxxxxxxxxxxxx" },
-        { key: "SecretToken", value: "xxxxxxxxxxxxxxxxxxxxx" }
+    "value": [ 
+        { "key": "ClientSecret", "value": "xxxxxxxxxxxxxxxxxxxxx" },
+        { "key": "SecretToken", "value": "xxxxxxxxxxxxxxxxxxxxx" }
     ]
 }
 ```

@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6589
+Content-Length: 7876
 
 {
   "value": {
@@ -132,6 +132,11 @@ Content-Length: 6589
       "proxyAutoConfigURL": "Proxy Auto Config URL value"
     },
     "googleAccountsBlocked": true,
+    "kioskCustomizationDeviceSettingsBlocked": true,
+    "kioskCustomizationPowerButtonActionsBlocked": true,
+    "kioskCustomizationStatusBar": "notificationsAndSystemInfoEnabled",
+    "kioskCustomizationSystemErrorWarnings": true,
+    "kioskCustomizationSystemNavigation": "navigationEnabled",
     "kioskModeScreenSaverConfigurationEnabled": true,
     "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
     "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -163,6 +168,36 @@ Content-Length: 6589
     "kioskModeFolderIcon": "darkSquare",
     "kioskModeWifiAllowedSsids": [
       "Kiosk Mode Wifi Allowed Ssids value"
+    ],
+    "kioskModeAppOrderEnabled": true,
+    "kioskModeAppsInFolderOrderedByName": true,
+    "kioskModeGridHeight": 3,
+    "kioskModeGridWidth": 2,
+    "kioskModeLockHomeScreen": true,
+    "kioskModeManagedFolders": [
+      {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeManagedFolder",
+        "folderName": "Folder Name value",
+        "folderIdentifier": "Folder Identifier value",
+        "items": [
+          {
+            "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+            "label": "Label value",
+            "link": "Link value"
+          }
+        ]
+      }
+    ],
+    "kioskModeAppPositions": [
+      {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeAppPositionItem",
+        "position": 8,
+        "item": {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+          "label": "Label value",
+          "link": "Link value"
+        }
+      }
     ],
     "microphoneForceMute": true,
     "networkEscapeHatchAllowed": true,
@@ -223,8 +258,6 @@ Content-Length: 6589
   }
 }
 ```
-
-
 
 
 

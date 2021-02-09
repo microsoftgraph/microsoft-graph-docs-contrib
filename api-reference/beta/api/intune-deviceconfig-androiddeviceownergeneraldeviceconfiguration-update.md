@@ -87,6 +87,11 @@ The following table shows the properties that are required when you create the [
 |factoryResetBlocked|Boolean|Indicates whether or not the factory reset option in settings is disabled.|
 |globalProxy|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|Proxy is set up directly with host, port and excluded hosts.|
 |googleAccountsBlocked|Boolean|Indicates whether or not google accounts will be blocked.|
+|kioskCustomizationDeviceSettingsBlocked|Boolean|Indicates whether a user can access the device's Settings app while in Kiosk Mode.|
+|kioskCustomizationPowerButtonActionsBlocked|Boolean|Whether the power menu is shown when a user long presses the Power button of a device in Kiosk Mode.|
+|kioskCustomizationStatusBar|[androidDeviceOwnerKioskCustomizationStatusBar](../resources/intune-deviceconfig-androiddeviceownerkioskcustomizationstatusbar.md)|Indicates whether system info and notifications are disabled in Kiosk Mode. Possible values are: `notConfigured`, `notificationsAndSystemInfoEnabled`, `systemInfoOnly`.|
+|kioskCustomizationSystemErrorWarnings|Boolean|Indicates whether system error dialogs for crashed or unresponsive apps are shown in Kiosk Mode.|
+|kioskCustomizationSystemNavigation|[androidDeviceOwnerKioskCustomizationSystemNavigation](../resources/intune-deviceconfig-androiddeviceownerkioskcustomizationsystemnavigation.md)|Indicates which navigation features are enabled in Kiosk Mode. Possible values are: `notConfigured`, `navigationEnabled`, `homeButtonOnly`.|
 |kioskModeScreenSaverConfigurationEnabled|Boolean|Whether or not to enable screen saver mode or not in Kiosk Mode.|
 |kioskModeScreenSaverImageUrl|String|URL for an image that will be the device's screen saver in Kiosk Mode.|
 |kioskModeScreenSaverDisplayTimeInSeconds|Int32|The number of seconds that the device will display the screen saver for in Kiosk Mode. Valid values 0 to 9999999|
@@ -109,6 +114,13 @@ The following table shows the properties that are required when you create the [
 |kioskModeIconSize|[androidDeviceOwnerKioskModeIconSize](../resources/intune-deviceconfig-androiddeviceownerkioskmodeiconsize.md)|Icon size configuration for managed home screen in Kiosk Mode. Possible values are: `notConfigured`, `smallest`, `small`, `regular`, `large`, `largest`.|
 |kioskModeFolderIcon|[androidDeviceOwnerKioskModeFolderIcon](../resources/intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md)|Folder icon configuration for managed home screen in Kiosk Mode. Possible values are: `notConfigured`, `darkSquare`, `darkCircle`, `lightSquare`, `lightCircle`.|
 |kioskModeWifiAllowedSsids|String collection|The restricted set of WIFI SSIDs available for the user to configure in Kiosk Mode. This collection can contain a maximum of 500 elements.|
+|kioskModeAppOrderEnabled|Boolean|Whether or not to enable app ordering in Kiosk Mode.|
+|kioskModeAppsInFolderOrderedByName|Boolean|Whether or not to alphabetize applications within a folder in Kiosk Mode.|
+|kioskModeGridHeight|Int32|Number of rows for Managed Home Screen grid with app ordering enabled in Kiosk Mode. Valid values 1 to 9999999|
+|kioskModeGridWidth|Int32|Number of columns for Managed Home Screen grid with app ordering enabled in Kiosk Mode. Valid values 1 to 9999999|
+|kioskModeLockHomeScreen|Boolean|Whether or not to lock home screen to the end user in Kiosk Mode.|
+|kioskModeManagedFolders|[androidDeviceOwnerKioskModeManagedFolder](../resources/intune-deviceconfig-androiddeviceownerkioskmodemanagedfolder.md) collection|A list of managed folders for a device in Kiosk Mode. This collection can contain a maximum of 500 elements.|
+|kioskModeAppPositions|[androidDeviceOwnerKioskModeAppPositionItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodeapppositionitem.md) collection|The ordering of items on Kiosk Mode Managed Home Screen. This collection can contain a maximum of 500 elements.|
 |microphoneForceMute|Boolean|Indicates whether or not to block unmuting the microphone on the device.|
 |networkEscapeHatchAllowed|Boolean|Indicates whether or not the device will allow connecting to a temporary network connection at boot time.|
 |nfcBlockOutgoingBeam|Boolean|Indicates whether or not to block NFC outgoing beam.|
@@ -174,7 +186,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 6096
+Content-length: 7313
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -237,6 +249,11 @@ Content-length: 6096
     "proxyAutoConfigURL": "Proxy Auto Config URL value"
   },
   "googleAccountsBlocked": true,
+  "kioskCustomizationDeviceSettingsBlocked": true,
+  "kioskCustomizationPowerButtonActionsBlocked": true,
+  "kioskCustomizationStatusBar": "notificationsAndSystemInfoEnabled",
+  "kioskCustomizationSystemErrorWarnings": true,
+  "kioskCustomizationSystemNavigation": "navigationEnabled",
   "kioskModeScreenSaverConfigurationEnabled": true,
   "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
   "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -268,6 +285,36 @@ Content-length: 6096
   "kioskModeFolderIcon": "darkSquare",
   "kioskModeWifiAllowedSsids": [
     "Kiosk Mode Wifi Allowed Ssids value"
+  ],
+  "kioskModeAppOrderEnabled": true,
+  "kioskModeAppsInFolderOrderedByName": true,
+  "kioskModeGridHeight": 3,
+  "kioskModeGridWidth": 2,
+  "kioskModeLockHomeScreen": true,
+  "kioskModeManagedFolders": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeManagedFolder",
+      "folderName": "Folder Name value",
+      "folderIdentifier": "Folder Identifier value",
+      "items": [
+        {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+          "label": "Label value",
+          "link": "Link value"
+        }
+      ]
+    }
+  ],
+  "kioskModeAppPositions": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeAppPositionItem",
+      "position": 8,
+      "item": {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+        "label": "Label value",
+        "link": "Link value"
+      }
+    }
   ],
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
@@ -333,7 +380,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6268
+Content-Length: 7485
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -399,6 +446,11 @@ Content-Length: 6268
     "proxyAutoConfigURL": "Proxy Auto Config URL value"
   },
   "googleAccountsBlocked": true,
+  "kioskCustomizationDeviceSettingsBlocked": true,
+  "kioskCustomizationPowerButtonActionsBlocked": true,
+  "kioskCustomizationStatusBar": "notificationsAndSystemInfoEnabled",
+  "kioskCustomizationSystemErrorWarnings": true,
+  "kioskCustomizationSystemNavigation": "navigationEnabled",
   "kioskModeScreenSaverConfigurationEnabled": true,
   "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
   "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -430,6 +482,36 @@ Content-Length: 6268
   "kioskModeFolderIcon": "darkSquare",
   "kioskModeWifiAllowedSsids": [
     "Kiosk Mode Wifi Allowed Ssids value"
+  ],
+  "kioskModeAppOrderEnabled": true,
+  "kioskModeAppsInFolderOrderedByName": true,
+  "kioskModeGridHeight": 3,
+  "kioskModeGridWidth": 2,
+  "kioskModeLockHomeScreen": true,
+  "kioskModeManagedFolders": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeManagedFolder",
+      "folderName": "Folder Name value",
+      "folderIdentifier": "Folder Identifier value",
+      "items": [
+        {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+          "label": "Label value",
+          "link": "Link value"
+        }
+      ]
+    }
+  ],
+  "kioskModeAppPositions": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeAppPositionItem",
+      "position": 8,
+      "item": {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+        "label": "Label value",
+        "link": "Link value"
+      }
+    }
   ],
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
@@ -489,8 +571,6 @@ Content-Length: 6268
   "workProfilePasswordRequiredType": "required"
 }
 ```
-
-
 
 
 

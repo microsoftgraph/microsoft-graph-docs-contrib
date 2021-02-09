@@ -1,7 +1,7 @@
 ---
 title: "callRecord: getDirectRoutingCalls"
 description: "Get a log of direct routing calls."
-author: "stephenjust"
+author: "williamlooney"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
@@ -19,7 +19,7 @@ Get a log of direct routing calls as a collection of [directRoutingLogRow](../re
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported. |
 | Delegated (personal Microsoft account) | Not supported. |

@@ -4,7 +4,7 @@ description: "You can add related content to an event,"
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "outlook"
-author: "svpsiva"
+author: "abheek-das"
 ---
 
 # attachment resource type
@@ -89,7 +89,6 @@ Here is a JSON representation of the resource
   "name": "string",
   "size": 1024
 }
-
 ```
 
 
