@@ -226,10 +226,12 @@ items:
             items:
               - name: Create an access package
                 href: tutorial-access-package-api.md
-              - name: Access reviews for groups
-                href: accessreviews-overview.md
-              - name: Using the Access Reviews API for groups
-                href: tutorial-access-reviews-api.md
+              - name: Review access for your groups
+                items:
+                  - name: Overview of the Access Reviews API
+                    href: accessreviews-overview.md
+                  - name: Review access for a security group
+                    href: tutorial-access-reviews-api.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:

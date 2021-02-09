@@ -6,9 +6,9 @@ localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Overview of Access Reviews API for groups
+# Overview of the Access Reviews API for groups
 
-The [Access Reviews](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) Graph API allows management of access reviews programmatically. This includes:
+The [Access Reviews](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) Graph API allows you to programmatically review access to resources. This includes:
 + Creating, reading, updating, and deleting access reviews, their settings, and schedules.
 + Investigating past access reviews and the decisions taken by reviewers, including the steps Azure AD took automatically.
 
