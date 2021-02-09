@@ -1,6 +1,6 @@
 ---
 title: "userInsightsSettings resource type"
-description: "A resource representing a users item insights preferences"
+description: "Represents user privacy settings for item insights and meeting hours insights."
 localization_priority: Normal
 author: "simonhul"
 ms.prod: "insights"
@@ -22,8 +22,8 @@ Represents user privacy settings for [itemInsights](iteminsights.md) and meetin
 
 | Method                                                 | Return Type                                                   | Description                                                                                        |
 |:-------------------------------------------------------|:--------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
-| [Get](../api/userinsightssettings-get.md)       | [userInsightsSettings](userinsightssettings.md) | Read properties of an **userinsightssettings** object.  |
-| [Update](../api/userinsightssettings-update.md) | [userInsightsSettings](userinsightssettings.md) | Update properties of the **userinsightssettings** object. |
+| [Get](../api/userinsightssettings-get.md)       | [userInsightsSettings](userinsightssettings.md) | Read the properties of a **userinsightssettings** object.  |
+| [Update](../api/userinsightssettings-update.md) | [userInsightsSettings](userinsightssettings.md) | Update the properties of a **userinsightssettings** object. |
 
 ## Properties
 | Property                   | Type                                                  | Description                                                                                                                                                         |
@@ -32,7 +32,8 @@ Represents user privacy settings for [itemInsights](iteminsights.md) and meetin
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "optionalProperties": [],
