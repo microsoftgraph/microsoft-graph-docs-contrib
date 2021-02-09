@@ -15,16 +15,16 @@ Read the properties, relationships, or raw contents of an attachment that is att
 
 An attachment can be one of the following types:
 
-* A file. Programmatically, this is a [fileAttachment](../resources/fileattachment.md) resource. See an [example](#example-1-get-the-properties-of-a-file-attachment) below.
-* An Outlook item (contact, event or message). Programmatically, an item attachment is an [itemAttachment](../resources/itemattachment.md) resource. You can use `$expand` to further get the properties of that item, including any nested attachments up to 30 levels. See [example 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) and [example 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item) below.
-* A link to a file stored in the cloud. Programmatically, this is a [referenceAttachment](../resources/referenceattachment.md) resource. See an [example](#example-5-get-the-properties-of-a-reference-attachment) below.
+* A file. Programmatically, this is a [fileAttachment](../resources/fileattachment.md) resource. See [example 1](#example-1-get-the-properties-of-a-file-attachment).
+* An Outlook item (contact, event or message). Programmatically, an item attachment is an [itemAttachment](../resources/itemattachment.md) resource. You can use `$expand` to further get the properties of that item, including any nested attachments up to 30 levels. See [example 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) and [example 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item).
+* A link to a file stored in the cloud. Programmatically, this is a [referenceAttachment](../resources/referenceattachment.md) resource. See [example 5](#example-5-get-the-properties-of-a-reference-attachment).
 
 All these types of attachments are derived from the [attachment](../resources/attachment.md) resource. 
 
 ### Get the raw contents of a file or item attachment
 You can append the path segment `/$value` to get the raw contents of a file or item attachment. 
 
-For a file attachment, the content type is based on its original content type. See an [example](#example-6-get-the-raw-contents-of-a-file-attachment-on-a-message) below.
+For a file attachment, the content type is based on its original content type. See [example 6](#example-6-get-the-raw-contents-of-a-file-attachment-on-a-message).
 
 For an item attachment that is a [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md), the raw contents returned is in MIME format.
 
@@ -144,7 +144,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 ## Optional query parameters
 This method supports some of the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
-Use `$expand` to get the properties of an item attachment (contact, event, or message). See [example 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) and [example 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item) below.
+Use `$expand` to get the properties of an item attachment (contact, event, or message). See [example 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) and [example 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item).
 
 ## Request headers
 | Name       | Type | Description|
