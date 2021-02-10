@@ -3,7 +3,7 @@ title: "Activity reports API overview"
 description: "Use the activity reports API in Microsoft Graph to access the reports that Azure Active Directory creates to help you track user activity in a tenant."
 localization_priority: Priority
 author: "besiler"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: conceptualPageType
 ---
 
@@ -12,6 +12,8 @@ doc_type: conceptualPageType
 Namespace: microsoft.graph
 
 Azure Active Directory (Azure AD) tracks user activity and creates reports that help you understand how your users access and use Azure AD services. Use the Microsoft Graph API for Azure AD to analyze the data in these reports and to create custom solutions tailored to your organization's specific needs.
+
+The availability of these activity reports is governed by the Azure AD data retention policies. For more information, see [data retention policies](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
 ## What are Azure AD activity logs?
 

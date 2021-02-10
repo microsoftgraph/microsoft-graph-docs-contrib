@@ -184,9 +184,7 @@ Content-type: application/json
 If-Match: InFtSStsNVJHVWdzWUJRU2ZVWGp4RWc9PSI=
 
 {
-   "Body":{
-      "publishingState":"published"
-   }
+  "publishingState":"published"
 }
 ```
 
