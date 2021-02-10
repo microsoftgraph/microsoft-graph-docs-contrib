@@ -1,5 +1,5 @@
 ---
-title: "List Roster members"
+title: "List members of a roster"
 description: "Get the plannerRosterMember resources from the members navigation property."
 author: "tarkansevilmis"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "planner"
 doc_type: apiPageType
 ---
 
-# List Roster members
+# List members of a roster
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
