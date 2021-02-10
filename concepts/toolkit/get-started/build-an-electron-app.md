@@ -23,7 +23,7 @@ cd electron-quick-start-typescript
 npm install
 ```
 
-Install the 'mgt-components' package that contains all the Microsoft Graph connected web components.
+Install the '@microsoft/mgt-components' package that contains all the Microsoft Graph connected web components.
 
 ```cmd
 npm i @microsoft/mgt-components
@@ -71,17 +71,18 @@ To initialize the `ElectronProvider`, add the following code to the *src/rendere
 ```ts
 import {Providers} from '@microsoft/mgt-element';
 import {ElectronProvider} from '@microsoft/mgt-electron-provider/dist/Provider';
+// import the mgt components so we can use them in our html
 import '@microsoft/mgt-components';
 
 // initialize the auth provider globally
 Providers.globalProvider = new ElectronProvider();
 ```
 
-### Initializing ElectronAuthenticator in your main process (main.ts, Back end)
+### Initializing ElectronAuthenticator in your main process
 
-The ElectronAuthenticator is responsible for setting up the configuration variables for MSAL authentication, acquiring access tokens and communicating with ElectronProvider.
-Initialize the ElectronAuthenticator in the main process and set up the configuration variables such as client-id.
-First, import `ElectronAuthenticator` and  `MsalElectronConfig` from `@microsoft/mgt-electron-provider`"
+The `ElectronAuthenticator` is responsible for setting up the configuration variables for MSAL authentication, acquiring access tokens and communicating with the `ElectronProvider`. Let's Initialize the `ElectronAuthenticator` in the main process and set up the configuration variables such as client-id and required scopes. 
+
+First, open *src/main.ts* and import `ElectronAuthenticator` and  `MsalElectronConfig` from `@microsoft/mgt-electron-provider` at the top of the page:
 
 ```ts
 import { ElectronAuthenticator, MsalElectronConfig } from '@microsoft/mgt-electron-provider/dist/Authenticator'; 
@@ -122,7 +123,7 @@ const mainWindow = new BrowserWindow({
  
  ### Add MGT components to your HTML page
  
- Here is an example index.html:
+Let's add some content to our app. We can now use the Microsoft Graph toolkit components in our *index.html* page and show the user's agenda. Replace the content of the *index.html* page with the following:
  
  ```html
 <!DOCTYPE html>
@@ -142,7 +143,7 @@ const mainWindow = new BrowserWindow({
  
  ### Bundle your app using webpack
  
- We recommend this step to avoid running into errors by bundling all the modular dependencies in this project.
+ Before we can run the app, we will need to bundle our code to ensure all of our modular dependencies are included in the final payload. If you are already bundling your app code, you can skip this step.
  
  #### Install webpack
  
@@ -150,9 +151,10 @@ const mainWindow = new BrowserWindow({
  npm install webpack webpack-cli ts-loader --save-dev
  ```
  
- Create a webpack.config.js file in the root folder of your project.
- 
  #### webpack.config.js
+ 
+Create a new *webpack.config.js* file in the root folder of your project, and paste the following configuration:
+ 
  ```js
  const path = require('path');
  module.exports = [
