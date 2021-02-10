@@ -48,6 +48,9 @@ The **plannerCategoryDescriptions** resource represents the descriptive labels f
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
+  "optionalProperties": [
+
+  ],
   "@odata.type": "microsoft.graph.plannerCategoryDescriptions"
 }-->
 
