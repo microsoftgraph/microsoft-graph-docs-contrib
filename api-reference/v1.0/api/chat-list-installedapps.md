@@ -122,7 +122,7 @@ Content-type: application/json
 
 ### Example 2: Get the names and other details of apps installed in the specified chat
 
-In the following example, if an instance of an installed app has a [bot](../resources/teamworkbot.md) associated with it, then the details of the bot are returned as well.
+In the following example, if an instance of an installed app has a bot associated with it, then the details of the bot are returned as well.
 
 #### Request
 
