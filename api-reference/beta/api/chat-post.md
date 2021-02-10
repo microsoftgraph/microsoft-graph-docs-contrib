@@ -102,7 +102,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-chat-oneonone-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
 
 ---
 
@@ -180,7 +179,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-chat-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
 
 ---
 
