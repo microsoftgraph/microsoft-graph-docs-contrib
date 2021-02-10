@@ -233,7 +233,7 @@ Content-type: application/json
 }
 ```
 
-- [Docs: Retrieve items using semantic labels.](https://docs.microsoft.com/en-us/microsoftsearch/configure-connector#step-5-assign-property-labels)
+- [Docs: Retrieve items using semantic labels.](https://docs.microsoft.com/microsoftsearch/configure-connector#step-5-assign-property-labels)
 
 ## Next steps
 
