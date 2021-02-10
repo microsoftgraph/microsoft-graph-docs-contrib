@@ -3,7 +3,7 @@ title: "application resource type"
 description: "Represents an application."
 localization_priority: Priority
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[List applications](../api/application-list.md) | [application](application.md) collection | Retrieve the list of applications in the organization. |
 |[Create application](../api/application-post-applications.md) | [application](application.md) | Creates (registers) a new application.|
 |[Get application](../api/application-get.md) | [application](application.md) |Read properties and relationships of application object.|
-|[Update application](../api/application-update.md) | [application](application.md) |Update application object. |
+|[Update application](../api/application-update.md) | None |Update application object. |
 |[Delete application](../api/application-delete.md) | None |Delete application object. |
 |[Get delta](../api/application-delta.md)|[application](application.md)|Get newly created, updated, or deleted applications without performing a full read of the entire resource collection.|
 |[List deleted applications](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted applications. |
@@ -76,7 +76,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | parentalControlSettings | [parentalControlSettings](parentalcontrolsettings.md) |Specifies parental control settings for an application. |
 | passwordCredentials | [passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
 | publicClient | [publicClientApplication](publicclientapplication.md) | Specifies settings for installed clients such as desktop or mobile devices. |
-| publisherDomain | String | The verified publisher domain for the application. Read-only.|
+| publisherDomain | String | The verified publisher domain for the application. Read-only. For more information, see [How to: Configure an application's publisher domain](/azure/active-directory/develop/howto-configure-publisher-domain).|
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) collection|Specifies the resources that the application needs to access. This property also specifies the set of OAuth permission scopes and application roles that it needs for each of those resources. This configuration of access to the required resources drives the consent experience. Not nullable.|
 | signInAudience | String | Specifies the Microsoft accounts that are supported for the current application. Supported values are:<ul><li>`AzureADMyOrg`: Users with a Microsoft work or school account in my organization’s Azure AD tenant (single tenant)</li><li>`AzureADMultipleOrgs`: Users with a Microsoft work or school account in any organization’s Azure AD tenant (multi-tenant).</li><li>`AzureADandPersonalMicrosoftAccount`: Users with a personal Microsoft account, or a work or school account in any organization’s Azure AD tenant.</li><li>`PersonalMicrosoftAccount`: Users with a personal Microsoft account only.</li></ul>For authenticating users with Azure AD B2C user flows, use `AzureADandPersonalMicrosoftAccount`. This value allows for the widest set of user identities including local accounts and user identities from Microsoft, Facebook, Google, Twitter, or any OpenID Connect provider. |
 | tags |String collection| Custom strings that can be used to categorize and identify the application. Not nullable.|
@@ -90,7 +90,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |:---------------|:--------|:----------|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
 |extensionProperties|[extensionProperty](extensionproperty.md) collection| Read-only. Nullable.|
-|owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer. Read-only. Nullable.|
+|owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. Read-only. Nullable.|
 
 ## JSON representation
 

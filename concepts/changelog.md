@@ -11,6 +11,22 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## February 2021
+
+### Tasks and plans
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the **rosterPlans** relationship to [plannerUser](https://docs.microsoft.com/en-us/graph/api/resources/plannerUser?view=graph-rest-beta) resource|
+|Addition|beta|Added the **rosters** relationship to [planner](https://docs.microsoft.com/en-us/graph/api/resources/planner?view=graph-rest-beta) resource|
+|Addition|beta|Added the **isCreationContext** property to [plannerPlanContext](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContext?view=graph-rest-beta) resource|
+|Addition|beta|Added the **customLinkText** property to [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) resource|
+|Addition|beta|Added the **displayLinkType** property to [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) resource|
+|Addition|beta|Added the [plannerRoster](https://docs.microsoft.com/en-us/graph/api/resources/plannerRoster?view=graph-rest-beta) resource type|
+|Addition|beta|Added the [plannerRosterMember](https://docs.microsoft.com/en-us/graph/api/resources/plannerRosterMember?view=graph-rest-beta) resource type|
+|Addition|beta|Added the `roster` member to the **plannerContainerType** enumeration|
+|Addition|beta|Added the **plannerPlanContextType** enumeration type|
+
 ## January 2021
 
 ### Applications
@@ -22,7 +38,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition|beta|Added the [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta) complex type.|
+|Addition|beta|Added the [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta&preserve-view=true) complex type.|
 |Addition|beta|Added the **outOfOfficeSettings** property to the [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) resource type|
 |Addition|beta|Added the **isBroadcast**, **broadcastSettings**, **attendeeReport**, **recording** and **alternativeRecording** properties to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) entity to support creating live events.|
 
@@ -111,8 +127,28 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Change | beta | Changed **roomNumber** (Edm.Int) property on [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta&preserve-view=true) resource to **roomName** (Edm.String). |
 | Change | beta | Changed type of allowedUsers relationship on [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) resource. |
 | Change | beta | Changed type of allowedGroups relationship on [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) resource. |
-| Change | beta | Updated enum types in [printerProcessingStateDetail](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values) resource. |
 | Addition | beta | Added the [update configuration](/graph/api/printjob-update-configuration?view=graph-rest-beta&preserve-view=true) action to the [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the `outputAreaAlmostFull` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `none` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `movingToPaused` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `shutdown` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `connectingToDevice` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `timedOut` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `stopping` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `stoppedPartially` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `tonerLow` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `tonerEmpty` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `spoolAreaFull` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `doorOpen` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `opticalPhotoConductorNearEndOfLife` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `opticalPhotoConductorLifeOver` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `developerLow` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `developerEmpty` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `interpreterResourceUnavailable` member to the **printerProcessingStateDetail** enumeration|
+| Deletion | beta | Removed the `disconnected` member from the **printerProcessingStateDetail** enumeration|
+| Deletion | beta | Removed the `queueFull` member from the **printerProcessingStateDetail** enumeration|
+| Deletion | beta | Removed the `outputAlmostFull` member from the **printerProcessingStateDetail** enumeration|
+| Deletion | beta | Removed the `unknownFutureValue` member from the **printerProcessingStateDetail** enumeration|
 
 ### Education
 
