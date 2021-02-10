@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of the specified [userInsightsSettings](../resources/userinsightssettings.md) resource.
+Update the privacy settings for [itemInsights](../resources/iteminsights.md) and meeting hour insights of a user.
 
 ## Permissions
 
@@ -48,7 +48,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|isEnabled|Boolean| `true` if user's item insights are enabled; `false` if user's item insights are disabled. Default is `true`. Optional.|
+|isEnabled|Boolean| `true` if user's **itemInsights** and meeting hours insights are enabled; `false` if user's **itemInsights** and meeting hours insights are disabled. Default is `true`. Optional.|
 
 ## Response
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and [userInsightsSet
 
 ### Request
 
-The following is an example request on how user updates "**isEnabled**" privacy setting in order to disable his item insights.
+The following is an example request on how user updates "**isEnabled**" privacy setting in order to disable his item insights and meeting hours insights.
 
 <!-- {
   "blockType": "request",
