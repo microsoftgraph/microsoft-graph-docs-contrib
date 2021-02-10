@@ -34,9 +34,9 @@ For an item attachment that is a [contact](../resources/contact.md), [event](../
 
 | Item attachment type  | Raw contents returned |
 |:-----------|:----------|
-| **contact** | [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME format. See [example](#example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
-| **event** | iCal MIME format. See [example](#example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
-| **message** | MIME format. See [example](#example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
+| **contact** | [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME format. See [example 7](#example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
+| **event** | iCal MIME format. See [example 8](#example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
+| **message** | MIME format. See [example 9](#example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
 
 Attempting to get the `$value` of a reference attachment returns HTTP 405.
 
