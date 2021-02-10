@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerRoster** resource represents a collection of users who are collaborating on a [plannerPlan](plannerplan.md). **PlannerRoster** is a simple set of users, where everyone has the same level of permissions and they can be created by everyone, unless disabled by the tenant administrator. **PlannerRoster** can contain one plan.
+The **plannerRoster** resource represents a collection of users who are collaborating on a [plannerPlan](plannerplan.md). A **plannerRoster** is a simple set of users, where everyone has the same level of permissions and they can be created by everyone, unless disabled by the tenant administrator. A **plannerRoster** can contain one plan.
 
-Deleting a **plannerRoster** will also delete the plan and all tasks in the plan. A plannerRoster will also be automatically deleted under the following conditions:
+Deleting a **plannerRoster** will also delete the plan and all tasks in the plan. A **plannerRoster** will also be automatically deleted under the following conditions:
 
-* If **plannerRoster** doesn't contain a plan 24 hours after its creation. Membership information will be completely erased within 30 days of this deletion.
-* If **PlannerRoster** doesn't have any users remaining in the membership list because the last user removed themselves. Roster, its plan and all contained tasks will be deleted within 30 days of this operation.
-* If **PlannerRoster** doesn't have any users remaining in the membership list because the last user was permanently deleted. Roster, its plan and all contained tasks will be deleted immediately. Deleted users are permanently erased wihtin 30 days of their deletion, however, tenant administrators can also choose to permanently delete users without this delay.
+* The **plannerRoster** doesn't contain a plan 24 hours after its creation. Membership information will be completely erased within 30 days of this deletion.
+* The **plannerRoster** doesn't have any users remaining in the membership list because the last user removed themselves. Roster, its plan and all contained tasks will be deleted within 30 days of this operation.
+* The **plannerRoster** doesn't have any users remaining in the membership list because the last user was permanently deleted. Roster, its plan and all contained tasks will be deleted immediately. Deleted users are permanently erased wihtin 30 days of their deletion; however, tenant administrators can also choose to permanently delete users without this delay.
 
 
 ## Methods
