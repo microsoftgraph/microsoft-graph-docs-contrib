@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties of a [userInsightsSettings](../resources/userinsightssettings.md) object.
+Get the user-customizable privacy settings for [itemInsights](../resources/iteminsights.md) and meeting hours insights.
 
 ## Permissions
 
@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a [userInsightsS
 
 ### Request
 
-The following is an example of the request to get user insight settings.
+The following is an example of the request to get user item insights and meeting hours insights settings.
 
 <!-- {
   "blockType": "request",
