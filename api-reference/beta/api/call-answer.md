@@ -460,7 +460,7 @@ Content-Type: application/json
 Under the [Policy-based recording scenario](/microsoftteams/teams-recording-policy), before a participant under policy joins a call, an incoming call notification will be sent to the bot associated with the policy.
 The join information can be found under the **botData** property. The bot can then choose to answer the call and [update the recording status](call-updaterecordingstatus.md) accordingly.
 
-When `participantCpapacity` is specified in the `Answer` request for a policy-based recording notification, subsequent participant joining event belonging to the same policy group will be sent out as [participantJoiningNotification](participantJoiningNotification.md) instead of
+When `participantCpapacity` is specified in the `Answer` request for a policy-based recording notification, subsequent participant joining event belonging to the same policy group will be sent out as [participantJoiningNotification](../resources/participantJoiningNotification.md) instead of
 new incoming call notification, until number of participants that current call instance is handling has reached the number specified in `participantCapacity`.
 
 The following is an example of the incoming call notification that a bot would recieve in this case.

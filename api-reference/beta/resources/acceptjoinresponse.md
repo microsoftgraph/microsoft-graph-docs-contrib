@@ -1,7 +1,7 @@
 ---
 title: "acceptJoinResponse resource type"
-description: "An abstract base class that contains the response to participant joining notification."
-author: "yizwei"
+description: "A class that contains the response to accept participant joining notification."
+author: "yizhenww"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType

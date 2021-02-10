@@ -1,7 +1,7 @@
 ---
 title: "participantJoiningNotification resource type"
 description: "Contains details on the policy based participant joining a call"
-author: "yizwei"
+author: "yizhenww"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -17,7 +17,7 @@ Under the [Policy-based recording scenario](/microsoftteams/teams-recording-poli
 
 Contains details on policy based participant.
 
-An [participantJoiningResponse](participantJoiningResponse) in the response payload is expected from bot.
+An [participantJoiningResponse](participantjoiningResponse.md) in the response payload is expected from bot.
 
 ## Properties
 | Property       | Type            | Description                                                        |
