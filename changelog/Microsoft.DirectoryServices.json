@@ -1,15 +1,15 @@
 {
   "changelog": [
     {
-      "ChangeList": [
+     "ChangeList": [
         {
-          "Id": "0ab336b4-a823-4dd7-819d-72d076a8b881",
-          "ApiChange": "Resource",
-          "ChangedApiName": "synchronization",
-          "ChangeType": "Addition",
-          "Description": "Added application permission support for the [synchronization](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-overview?view=graph-rest-beta) (provisioning) APIs.",
-          "Target": "synchronization"
-        }
+      "Id": "0ab336b4-a823-4dd7-819d-72d076a8b881",
+      "ApiChange": "Resource",
+      "ChangedApiName": "synchronization",
+      "ChangeType": "Addition",
+      "Description": "Added application permission support for the [synchronization](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-overview?view=graph-rest-beta) (provisioning) APIs.",
+      "Target": "synchronization"
+     }
       ],
       "Id": "0ab336b4-a823-4dd7-819d-72d076a8b881",
       "Cloud": "prd",
@@ -19,6 +19,40 @@
       "SubArea": "Directory management"
     },
      {
+      "ChangeList": [
+        {
+          "Id": "399dec32-117c-4129-b943-47a6f1d3033b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceEnvironment",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageResourceEnvironment](graph/api/resources/accesspackageresourceenvironment?view=graph-rest-beta\u0026preserve-view=true) resource type.",
+          "Target": "accessPackageResourceEnvironment"
+        },
+        {
+          "Id": "399dec32-117c-4129-b943-47a6f1d3033b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "accessPackageResourceEnvironment",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageResourceEnvironment** relationship to [accessPackageResource](graph/api/resources/accesspackageresource?view=graph-rest-beta\u0026preserve-view=true) resource.",
+          "Target": "accessPackageResource"
+        },
+        {
+          "Id": "399dec32-117c-4129-b943-47a6f1d3033b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "connectionInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [connectionInfo](graph/api/resources/connectioninfo?view=graph-rest-beta\u0026preserve-view=true) resource type.",
+          "Target": "connectionInfo"
+        }
+      ],
+      "Id": "399dec32-117c-4129-b943-47a6f1d3033b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-05T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": " Governance"
+    },
+    {
       "ChangeList": [
        {
          "Id": "0a73cfac-4f88-11eb-ae35-ed470c456b69",
