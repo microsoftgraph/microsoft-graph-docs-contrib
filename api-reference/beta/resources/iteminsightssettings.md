@@ -16,6 +16,8 @@ Represents privacy settings for [itemInsights](iteminsights.md) and privacy set
 - Item insights: Calculates relationship between users and items such as documents or sites in Microsoft 365.  
 - Meeting hours insights: Calculates a person's calendar meeting hours based on activities in Word, Excel, PowerPoint, email, and Outlook calendar in Microsoft 365.
 
+Use the [userInsightsSettings](userinsightssettings.md) resource to disable/enable calculation and visibility of item insights and meeting hours insights of a user.
+
 > [!NOTE]
 > Meeting hours insights are rolling out to customers starting November 2020. 
 
