@@ -27,9 +27,9 @@ Enable discovery of content and document-centric insights:
   - Checking whether a user and the user's organization contribute to content discovery.
   - Disabling or enabling content discovery for specific users. This also disables documents in Office Delve.
 
-Configure the visibility of [insights](../resources/iteminsights.md) derived from Microsoft Graph, between users and other items (such as documents or sites) in Microsoft 365:
-  - Checking whether a user's item insights are enabled.
-  - Disabling or enabling item insights for specific user.
+Configure the visibility of [itemInsights](../resources/iteminsights.md) and meeting hours insights. ItemInsights are derived between users and other items (such as documents or sites) in Microsoft 365:
+  - Checking whether a user's item and meeting hours insights are enabled.
+  - Disabling or enabling item and meeting hours insights for specific user.
 
 To learn how to get or update user settings, see [Get settings](../api/usersettings-get.md) and [Update settings](../api/usersettings-update.md).
 
@@ -55,7 +55,7 @@ To learn how to get or update user settings, see [Get settings](../api/usersetti
 |:---------------|:--------|:----------|
 |shiftPreferences|[shiftPreferences](shiftpreferences.md)| The shift preferences for the user. |
 |regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| The user's preferences for languages, regional locale and date/time formatting. |
-|itemInsights|[userInsightsSettings](userinsightssettings.md)| The user's settings for the visibility of Microsoft Graph-derived insights, between a user and other items in Microsoft 365, such as documents or sites. [Get userinsightssettings](../api/userinsightssettings-get.md) through this navigation property. |
+|itemInsights|[userInsightsSettings](userinsightssettings.md)| The user's settings for the visibility of insights derived between a user and other items in Microsoft 365, such as documents or sites. [Get userInsightsSettings](../api/userinsightssettings-get.md) through this navigation property. |
 
 ## JSON representation
 
