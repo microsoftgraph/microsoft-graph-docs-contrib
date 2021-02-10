@@ -1,6 +1,6 @@
 ---
 title: "plannerRosterMember resource type"
-description: "**TODO: Add Description**"
+description: "Represents a member of a plannerRoster."
 author: "tarkansevilmis"
 localization_priority: Normal
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerRosterMember** resource represents a member of a [plannerRoster](plannerRoster.md).
+Represents a member of a [plannerRoster](plannerRoster.md).
 
 
 Inherits from [entity](../resources/entity.md).
