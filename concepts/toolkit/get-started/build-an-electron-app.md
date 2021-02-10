@@ -67,7 +67,7 @@ To create the app in Azure Active Directory:
 
 The `ElectronProvider` is responsible for communicating with `ElectronAuthenticator` (in the main process) to request access tokens and receive information regarding logged in state that are required for the mgt components to work. 
 
-To initialize the `ElectronProvider`, add the following code to the *src/rendered.ts* file:
+To initialize the `ElectronProvider`, add the following code to the *src/renderer.ts* file:
 ```ts
 import {Providers} from '@microsoft/mgt-element';
 import {ElectronProvider} from '@microsoft/mgt-electron-provider/dist/Provider';
