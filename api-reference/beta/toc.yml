@@ -330,7 +330,7 @@ items:
             href: api/insights-list-trending.md
           - name: List used
             href: api/insights-list-used.md
-        - name: Control access to item insights
+        - name: Organization control
           items:
           - name: Item insights settings
             href: resources/iteminsightssettings.md
@@ -338,14 +338,14 @@ items:
             href: api/iteminsightssettings-get.md
           - name: Update
             href: api/iteminsightssettings-update.md
-          - name: Control access to user item insights
-            items:
-            - name: User insights settings
-              href: resources/userinsightssettings.md
-            - name: Get
-              href: api/userinsightssettings-get.md
-            - name: Update
-              href: api/userinsightssettings-update.md
+        - name: User control
+          items:
+          - name: User insights settings
+            href: resources/userinsightssettings.md
+          - name: Get
+            href: api/userinsightssettings-get.md
+          - name: Update
+            href: api/userinsightssettings-update.md
       - name: Mail
         items:
         - name: Message
@@ -11844,7 +11844,7 @@ items:
               items:
               - name: List used
                 href: api/insights-list-used.md
-          - name: Control access to item insights
+          - name: Organization control
             items:
             - name: Item insights settings
               href: resources/iteminsightssettings.md
@@ -11852,6 +11852,14 @@ items:
               href: api/iteminsightssettings-get.md
             - name: Update
               href: api/iteminsightssettings-update.md
+          - name: User control
+            items:
+            - name: User insights settings
+              href: resources/userinsightssettings.md
+            - name: Get
+              href: api/userinsightssettings-get.md
+            - name: Update
+              href: api/userinsightssettings-update.md
       - name: Mention (preview)
         href: resources/mention.md
       - name: Analytics (preview)
