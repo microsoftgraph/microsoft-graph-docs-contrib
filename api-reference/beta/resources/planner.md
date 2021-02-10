@@ -22,7 +22,7 @@ The **planner** resource is the entry point for the Planner object model. It ret
 |:---------------|:--------|:----------|
 |[Create plannerBucket](../api/planner-post-buckets.md) |[plannerBucket](plannerbucket.md)| Create a new **plannerBucket** by posting to the buckets collection.|
 |[Create plannerPlan](../api/planner-post-plans.md) |[plannerPlan](plannerplan.md)| Create a new **plannerPlan** by posting to the plans collection.|
-|[Create plannerRoster](../api/plannerroster-create.md)|[plannerRoster](plannerroster.md)|Create a new **plannerRoster** by posting to rosters collection.|
+|[Create plannerRoster](../api/planner-post-rosters.md)|[plannerRoster](plannerroster.md)|Create a new **plannerRoster** by posting to rosters collection.|
 |[Create plannerTask](../api/planner-post-tasks.md) |[plannerTask](plannertask.md)| Create a new **plannerTask** by posting to the tasks collection.|
 
 ## Properties
