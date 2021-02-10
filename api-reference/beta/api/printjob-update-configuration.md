@@ -26,7 +26,7 @@ To use the Universal Print service, the user or app's tenant must have an active
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| Not supported. |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+|Application| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ PATCH /print/printers/{id}/jobs/{id}/configuration
 In the request body, supply the values of the relevant [printJobConfiguration](../resources/printjobconfiguration.md) fields. Existing properties that are not included in the request body will maintain their previous values.
 
 ## Response
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code, with updated printJobConfiguration object in the response body.
 
 ## Example
 The following example shows how to call this API.
@@ -119,7 +119,38 @@ The following is an example of the response.
   "truncated": true
 } -->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+{
+  "feedOrientation": "longEdgeFirst",
+  "pageRanges": [
+    {
+      "start": 1,
+      "end": 1
+    }
+  ],
+  "quality": "medium",
+  "dpi": 600,
+  "orientation": "landscape",
+  "copies": 1,
+  "duplexMode": "oneSided",
+  "colorMode": "blackAndWhite",
+  "inputBin": "by-pass-tray",
+  "outputBin": "output-tray",
+  "mediaSize": "A4",
+  "margin": {
+    "top": 0,
+    "bottom": 0,
+    "left": 0,
+    "right": 0
+  },
+  "mediaType": "stationery",
+  "finishings": null,
+  "pagesPerSheet": 1,
+  "multipageLayout": "clockwiseFromBottomLeft",
+  "collate": false,
+  "scaling": "shrinkToFit",
+  "fitPdfToPage": false
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
