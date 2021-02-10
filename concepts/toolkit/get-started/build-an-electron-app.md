@@ -226,61 +226,15 @@ Create a new *webpack.config.js* file in the root folder of your project, and pa
 
 ### [Optional] Add token caching capabilities to your app and enable silent log-ins.
 
-[MSAL Node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node) supports an in-memory cache by default and provides the ICachePlugin interface to perform cache serialization, but does not provide a default way of storing the token cache to disk. If you need persistent cache storage to enable silent log-ins or cross-platform caching, we recommend using the default implementation provided by MSAL Node [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions). 
+MSAL Node supports an in-memory cache by default and provides the ICachePlugin interface to perform cache serialization, but does not provide a default way of storing the token cache to disk. If you need persistent cache storage to enable silent log-ins or cross-platform caching, we recommend using the default implementation provided by MSAL Node as an [extension](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions). You can import this plugin, and pass the instance of the cache plugin while initializing `ElectronAuthenticator`.
 
-Install the `@azure/msal-node-extensions` package:
-```cmd
-npm install @azure/msal-node-extensions
-```
-
-Add this import statement to main.ts:
-```ts
-import {
-  FilePersistenceWithDataProtection,
-  DataProtectionScope,
-  KeychainPersistence,
-  LibSecretPersistence,
-  PersistenceCachePlugin
-} from '@azure/msal-node-extensions';
-```
-
-Add this function to your main.ts file:
-```ts
-async function createPersistence(cachePath: string) {
-  // On Windows, uses a DPAPI encrypted file
-  if (process.platform === 'win32') {
-    return FilePersistenceWithDataProtection.create(cachePath, DataProtectionScope.CurrentUser);
-  }
-
-  // On Mac, uses keychain.
-  if (process.platform === 'darwin') {
-    return KeychainPersistence.create(cachePath, 'serviceName', 'accountName'); // Replace serviceName and accountName
-  }
-
-  // On Linux, uses  libsecret to store to secret service. Libsecret has to be installed.
-  if (process.platform === 'linux') {
-    return LibSecretPersistence.create(cachePath, 'serviceName', 'accountName'); // Replace serviceName and accountName
-  }
-
-  throw new Error('Could not create persistence. Platform not supported');
-}
-```
-
-Add the following lines of code in your `createWindow()` function, before declaring the `config` object. You may choose a different location for your cache path.
-```ts
-const cachePath = './data/cache.json'; //Change this if needed
-const filePersistence = await createPersistence(cachePath);
-```
-
-Create an instance of PersistenceCachePlugin, and pass it in your MSAL configuration object.
 ```ts
 let config: MsalElectronConfig = {
   ...
-  cachePlugin: new PersistenceCachePlugin(filePersistence)
+  cachePlugin: new PersistenceCachePlugin(filePersistence) //filePersistence is the instance of type IPersistence that you will need to create
 };
 ```
-For more details on how to implement this, refer to the sample for this extension [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/samples/msal-node-extensions). 
-
+For more details on how to implement this, refer to the sample for this extension [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/extensions/samples/msal-node-extensions/index.js).
 
 ## Next Steps
 - Try out the components in the [playground](https://mgt.dev).
