@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A class that represents a response to reject participant who tries to join the meeting.
+This will have the same effect as rejecting a policy recording incoming call notification using the [reject-call](../api/call-reject.md) api.
+Bot will continue to receive participant joining notification for new user joining until it's capacity has been reached.
 
 ## Properties
 
