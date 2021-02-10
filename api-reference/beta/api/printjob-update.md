@@ -107,7 +107,8 @@ The following is an example of the response.
 >Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
-
+Content-type: application/json
+Content-length: 1688
 {
  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('d5ef6ec4-07ca-4212-baf9-d45be126bfbb')/jobs(documents())/$entity",
   "id": "44353",
