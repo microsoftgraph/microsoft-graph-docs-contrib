@@ -224,7 +224,7 @@ Create a new *webpack.config.js* file in the root folder of your project, and pa
  npm start
  ```
 
-### [Optional] Add token caching capabilities to your app and enable silent log-ins.
+### [Advanced] Add token caching capabilities to your app and enable silent log-ins.
 
 MSAL Node supports an in-memory cache by default and provides the ICachePlugin interface to perform cache serialization, but does not provide a default way of storing the token cache to disk. If you need persistent cache storage to enable silent log-ins or cross-platform caching, we recommend using the default implementation provided by MSAL Node as an [extension](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions). You can import this plugin, and pass the instance of the cache plugin while initializing `ElectronAuthenticator`.
 
