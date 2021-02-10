@@ -63,10 +63,11 @@ To create the app in Azure Active Directory:
 
 ## Configure the Microsoft Graph Toolkit authentication provider
 
-### Initializing ElectronProvider in your renderer process (renderer.ts, Front end)
+### Initializing ElectronProvider in your renderer process
 
-The ElectronProvider is responsible for communicating with ElectronAuthenticator (in the main process) to request access tokens and receive information regarding logged in state that are required for the mgt components to work. 
+The `ElectronProvider` is responsible for communicating with `ElectronAuthenticator` (in the main process) to request access tokens and receive information regarding logged in state that are required for the mgt components to work. 
 
+To initialize the `ElectronProvider`, add the following code to the *src/rendered.ts* file:
 ```ts
 import {Providers} from '@microsoft/mgt-element';
 import {ElectronProvider} from '@microsoft/mgt-electron-provider/dist/Provider';
