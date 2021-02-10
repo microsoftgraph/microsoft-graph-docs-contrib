@@ -59,8 +59,6 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_custodian"
@@ -76,8 +74,6 @@ Content-length: 254
   "applyHoldToSources": "false",
 }
 ```
-
----
 
 ### Response
 
