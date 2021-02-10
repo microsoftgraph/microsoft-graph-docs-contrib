@@ -1,6 +1,6 @@
 ---
 title: "Access reviews overview"
-description: "Introduction to the Access Reviews API"
+description: "Overview of the Access Reviews API for groups"
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
