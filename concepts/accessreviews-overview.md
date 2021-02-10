@@ -35,7 +35,8 @@ The Access Reviews API structures information logically and comprises three majo
 
 ## Next steps
 
-- [Use the Access Reviews API for groups to create access and read definitions, instances, and decisions.](tutorial-access-reviews-api.md)
+- [Use the Access Reviews API for groups to create access and read definitions, instances, and decisions.](tutorial-accessreviews-securitygroup.md)
+- [Use the Access Reviews API for groups to review access for all your M365 groups with external identities.](tutorial-accessreviews-M365group.md)
 
 ## See also
 

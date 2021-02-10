@@ -1,5 +1,5 @@
 ---
-title: "Using the Access Reviews API in Graph Explorer"
+title: "Using the Access Reviews API for your M365 groups"
 description: "Use the Access Reviews API to review access for your M365 group"
 author: "isabelleatmsft"
 localization_priority: Normal
@@ -34,7 +34,8 @@ To consent to the required permissions in Microsoft Graph Exporer:
    
    ![Consent to the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png)
 
-   >[!NOTE] While consenting to the permissions, in the pop window, do not consent on behalf of your organization because these permissiosn are not needed by other users. Select **Accept** to accept the consent of the permissions. You do not need to consent to the *User.Invite.All* or *Group.ReadWrite.All* permissions on behalf of your organization because these permission is not needed by other users.
+   >[!NOTE]
+   While consenting to the permissions, in the pop window, do not consent on behalf of your organization because these permissiosn are not needed by other users. Select **Accept** to accept the consent of the permissions.
 
 ## Step 1: Invite a new person (an external identity) into your tenant as a B2B guest
 
@@ -184,7 +185,7 @@ The access review series will have the following settings:
 + **autoApplyDecisionsEnabled** is set to `true`. In this case, once the reviewer completes the access review, their decisions are applied automatically. If not enabled, a user must, after the review completes, apply the decisions manually.
 + Apply **removeAccessApplyAction** action to denied guest users. This removes the denied guest user's membership to the group, though they'll still be able to sign in to your tenant.[Learn more about the implications of this action](https://docs.microsoft.com/azure/active-directory/governance/create-access-review#create-one-or-more-access-reviews).
 
-For more information about the parameters required in the request body of these examples, see the [Access Reviews API Reference](https://docs.microsoft.com/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta).
+For more information about the parameters required in the request body of these examples, see the [Access Reviews API Reference](https://docs.microsoft.com/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true).
 
 ### Request
 In this call, replace the following:

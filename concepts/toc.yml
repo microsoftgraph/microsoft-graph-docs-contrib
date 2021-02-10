@@ -231,7 +231,9 @@ items:
                   - name: Overview of the Access Reviews API
                     href: accessreviews-overview.md
                   - name: Review access for a security group
-                    href: tutorial-access-reviews-api.md
+                    href: tutorial-accessreviews-securitygroup.md
+                  - name: Review access for an M365 group
+                    href: tutorial-accessreviews-M365group.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:

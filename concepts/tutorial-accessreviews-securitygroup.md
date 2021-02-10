@@ -1,5 +1,5 @@
 ---
-title: "Using the Access Reviews API in Graph Explorer"
+title: "Using the Access Reviews API for your security groups"
 description: "Use the Access Reviews API to review access for your groups"
 author: "isabelleatmsft"
 localization_priority: Normal
@@ -120,7 +120,7 @@ Create an access review for the members of the security group, with the followin
 + This is a one-time access review. In this case, once access is granted, the user does not need to
 + The review scope is limited to members of **Building security group**.
 
-For more information about the parameters required in the request body of these examples, see the [Access Reviews API Reference](https://docs.microsoft.com/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta).
+For more information about the parameters required in the request body of these examples, see the [Access Reviews API Reference](https://docs.microsoft.com/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true).
 
 ### Request
 In this call, replace the following:
