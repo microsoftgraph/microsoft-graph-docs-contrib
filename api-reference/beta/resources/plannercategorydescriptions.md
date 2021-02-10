@@ -1,6 +1,6 @@
 ---
 title: "plannerCategoryDescriptions resource type"
-description: "The **plannerCategoryDescriptions** resource represents the descriptive labels for the categories that have been defined for a plan. It belongs to the plan details object. There can be up to 25 categories defined."
+description: "Represents the descriptive labels for the categories that have been defined for a plan."
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerCategoryDescriptions** resource represents the descriptive labels for the categories that have been defined for a plan. It belongs to the [plan details](plannerplandetails.md) object. There can be up to 25 categories defined. 
+Represents the descriptive labels for the categories that have been defined for a plan. This resource is associated with the [plan details](plannerplandetails.md) object. Up to 25 categories can be defined. 
 
 ## Properties
 |Property|Type|Description|
