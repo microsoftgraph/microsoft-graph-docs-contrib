@@ -12612,7 +12612,7 @@ items:
         href: resources/plannerroster.md
         items:
         - name: Create roster
-          href: api/plannerroster-create.md
+          href: api/planner-post-rosters.md
         - name: Delete roster
           href: api/plannerroster-delete.md
         - name: List roster's members
