@@ -5129,8 +5129,8 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "singleSignOnMode",
           "ChangeType": "Addition",
-          "Description": "Added **aadHeaderBased** and **pingHeaderBased** enumerations.",
-          "Target": ""
+          "Description": "Added the `aadHeaderBased` and `pingHeaderBased` values to the **singleSignOnMode** enumeration.",
+          "Target": "singleSignOnMode"
         }
       ],
       "Id": "f7c9599a-1e37-4506-a16b-3ba8ffa9e530",
