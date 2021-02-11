@@ -7,67 +7,51 @@ ms.prod: "notification"
 ---
 
 # Best practices for working with the Notification API in Microsoft Graph
-This document consolidates the best practices that the Microsoft partners are expected to adhere to, as they build experiences using the Notification API, across visual elements and notification behavior. These practices cover aspects needed for 1P, 2P, and 3P partners. - clarification from Nikhit - do we need to elaborate on 1P, 2P, and 3P? What they stand for?
+This document consolidates the best practices that the Microsoft partners are expected to adhere to, as they build experiences using the Notification API, across visual elements and notification behavior. These practices cover aspects needed for 1P, 2P, and 3P partners. - clarification from Nihit - do we need to elaborate on 1P, 2P, and 3P? What they stand for?
 
-Document links - Clarification about the document links to be checked with Nikhit.	
-	
-## List of best practices
-The following list provides an overview of the best practices for Notification API:
+Document links - Clarification about the document links to be checked with Nihit.
 
-* Partner scenarios must respect the Activity Feed guidelines.
-* Trade-offs between the Notification API and other bot ‘notification’ tools. - need clarification from Nikhit on this point
-* Expectations in terms of performance and similar considerations. - need clarification from Nikhit on this point 
+At a high-level the best practices are as follows:
+* Ensure that the Partner scenarios respect the activity feed guidelines.
+* Ensure trade-offs between the Notification API and other bot *notification* tools are adhered to. - need clarification from Nikhit on this point
+* Ensure that the expectations in terms of performance and other such considerations are met. - need clarification from Nihit on this point.
 
-## Notification API Scenarios
-The Notification API is a platform that enables partner apps to send notifications to users as toast items and activity feed items that point users to relevant content that can be consumed within Teams.
+## Notification API Partner scenarios
+The Notification API is a platform that enables Partner apps to send notifications to users as toast items and activity feed items that point users to relevant content that can be consumed within Teams.
 
 Following are the core expectations and requirements for partners using the Notification API:
-
 |**No.**|**Requirement**|**PRI** - what is the fullform of PRI?|
 |-------|---------------|------------------------|	
-|**1**|Direct relationship  between a notification (toast or feed) and the content deeplinked to|1|
-||For example, if an @mention notification is received, the panel on the right in the activity feed (app) should display or reference the corresponding @mention; users must not be confused about what they need to address/triage|1|
-||If the notification pertains to removal or deletion of scenarios, the user must be directed to content indicating this so that the user understands the outcome before taking action. For example, removal from a group or deletion of a list.|1|
-|**2**|	The right pane experience in the feed is self-contained and does not break the feed experience.|1|
-||Any notification in the activity feed is one among many, the right pane experience must be self contained to the pane, to allow the user to switch to another item or triage the item in the feed.|1|	
-||	For example, if the notification leads to a modal or pop-up dialog, the modal must exist only within the app and not over the activity feed experience.| 1|
-|**3**| Apps cannot send more than 10 notifications per minute, per user.|1|
-||	Notifications will be throttled if the per-user notification count exceeds the limit.|1|
-|4|	Partners must ensure apps are performing. The time it takes for an app to load is measured and can impact the user experience when a user switches between notifications in the Activity Feed.|1|
-|| Notifications may be turned off if a partner’s notifications adversely regress Activity Switch times. *More information will be published in the forthcoming release.*| 1|
+|**1**|Understand the direct relationship  between a notification toast or feed and the content deeplinked to:<br/> The notification must not confuse the user about what they need to address or triage. For example, if an @mention notification is received, the panel on the right in the activity feed app must display or reference the corresponding @mention.<br/>If the notification pertains to removal or deletion of scenarios, users must be directed to the content indicating this, so that they understand the outcome before taking action.For example, remove a user from a group or delete a list.|1<br/><br/><br/><br/><br/>1<br/><br/><br/><br/><br/>1|
+|**2**|Ensure that the right pane experience in the feed is self-contained and does not break the feed experience.<br/>For example, if the notification leads to a modal or pop-up dialog, the modal must exist only within the app and not over the activity feed experience.|1<br/><br/><br/>1|
+|**3**|Ensure that apps are not sending more than 10 notifications per minute, per user.<br/>Notifications will be throttled if the per user notification count exceeds the limit.|1<br/><br/><br/>1|
+|**4**|Ensure that the apps are performing. The time it takes for an app to load is measured and can impact the user experience when a user switches between notifications in the activity feed.<br/>Turn off the notifications if a partner's notifications adversely regress **Activity Switch** time.*More information will be published in the forthcoming release.*|1<br/><br/><br/>1|
 
-## Additional guidelines and feature behavior 	
+### Best practices for feature behavior in Partner scenarios	
 |**No.**|**Requirement**|
 |-------|---------------|
-|**1**|	Selecting a toast notification will lead to the activity feed, selecting a notification in the activity feed will switch to the activity within the activity feed, it will not switch to the app.|
-|**2**|	Content in a notification toast or feed will be localized only if the app’s content has been localized. (link to be added to localized.)|
-|**3**|	Settings are created based on the **Activity Types** defined in the app manifest, the setting titles that are read from the description field must be named appropriately to convey what setting will be affected. For example:<br/> ✔ (image to be added)<br/><br/>❌ (image to be added)|
-|**4**|	Notifications must not be promotional, they must convey something important that the user must be aware about. For example:<br/>*Try the new feature in the Cycling app!* ❌<br/>*Lynne mentioned you in a message.* ✔|
-|**5**| Users will see notification settings for an app only when a notification is received from the app in question.|
-|**6**|	Icons cannot be currently customized, every notification from an app will have the same icon [except for 1P apps] - clarification required from Nihit - can we provide example of 1P apps?|
-|**7**|	Notifications can be sent at a user level but not a group or team level as of now. Priority notifications cannot be sent. - clarification required from Nihit- priority notifications cannot be sent at any level or only specific level?|
-|**8**|	Notifications are stored in the activity feed for 30 days. <br/>*The 30 days storage limit applies to all notifications and is not specific to Notification API.*|
+|**1**|Select the following:<br/>A toast notification to lead to the activity feed.<br/>A notification in the activity feed to switch to the activity within the activity feed. *The selection will not switch to the app.*|
+|**2**|Ensure that you localize the content in a notification toast or feed. The localization happens only if the app’s content is [localized](/platform/concepts/build-and-test/apps-localization).<br/>![Screenshot of App level settings](images/notifications-api-best-practice1.png "Image of App level settings")|
+|**3**|Ensure that you create the settings based on the **Activity Types** defined in the app manifest. The setting titles read from the description field must be named appropriately to convey what setting is affected. For example:<br/> ✔ <br/>![Screenshot of Activity types](images/notifications-api-best-practice2.png "Image of Activity type settings")<br/><br/>❌<br/>![Screenshot of Activity Types](images/notifications-api-best-practice3.png "Image of App level settings")|
+|**4**|Ensure the notifications are not promotional in nature. They must convey something important that the user must be aware about. For example:<br/>*Try the new feature in the Cycling app!* ❌<br/>*Lynne mentioned you in a message.* ✔|
+|**5**|Ensure that users see the notification settings for an app only when a notification is received from the selected app.|
+|**6**|Select an appropriate icon, as it cannot be currently customized. Every notification from an app has the same icon. However, you can customize 1P apps.- clarification required from Nihit - can we provide example of 1P apps?|
+|**7**|Understand that currently, notifications can only be sent at a user level and not at a group or team level. *Priority notifications cannot be sent.* - clarification required from Nihit- priority notifications cannot be sent at any level or only specific level?|
+|**8**|Understand that notifications are stored in the activity feed for 30 days. <br/>*The 30 days storage limit applies to all notifications and is not specific to Notification API.*|
 
 ## Best practices to minimize noise and build high quality notification experiences
 |**No.**|**Requirement**|**PRI**|
 |-------|---------------|-------|
-|**1**| Users receive notifications from multiple sources across chats, channels, meetings, or other apps. To improve the likelihood of your notifications being acted upon, avoid a large volume of non-directed broadcast notifications instead of notifications directly relevant to the user:</br> *Joni left the sales team.* - This notification may be noisy unless this is materially important.<br/>*Diego assigned a sales ticket to you* ✔|	1|
-|**2**|	Avoid duplicate notifications from bot messages and the Notification API. See the [Best practices to use the bot framework and Notification API]() table:|	1|
-|**3**|	Utilize the third line for the preview to give users information that allows users to take gauge importance and action. Select a toast or mark for follow-up.|	1|
-|**4**|	Avoid full stops at the end of the notification title, to achieve parity with all other notifications in Teams.|1|
+|**1**|Users receive notifications from multiple sources across chats, channels, meetings, or other apps. To improve the chances of users acting on your notifications, send notifications that are directly relevant to users. Avoid sending a large volume of non-directed broadcast notifications. For example:</br> *Joni left the sales team.* ❌ - This notification may be noisy unless this is materially important.<br/>*Diego assigned a sales ticket to you* ✔|1|
+|**2**|Avoid duplicate notifications from bot messages and the Notification API. See the [Best practices to use the bot framework and Notification API](#best-practices-to-use-the-bot-framework-and-the-notification-api) table.|1|
+|**3**|Utilize the third line for the preview to give users information that allows them to gauge the importance and take action. Select a toast or mark for follow-up. - need clarification from Nihit on this point|1|
+|**4**|Ensure there is no *period* at the end of the notification title to achieve parity with all other notifications in Teams.|1|
 
-## Best practices to use the bot framework and the Notification API
+## Best practices to use the bot framework and Notification API
 |**No.**|**Requirement**|
 |-------|---------------|
-|**1**|	Bot messages are delivered as chat or channel messages.| 
-||	If a user has chat or channel notifications turned on, they will receive a notification alerting the user to a message in a chat or channel.|
-||	These notifications will not appear in the Activity Feed (unless @mentioned).| 
-|| Such bot messages are useful when the alert is best consumed as a chat or channel message or if the information is meant to be consumed broadly. For example, by all channel members.|
-|**2**|	Notification API notifications land in the Activity Feed and can deeplink to various locations.|
-||Notifications land in the Activity Feed, allowing the user to take action or triage this notification.|
-||The notification can lead the user to a tab in a chat or channel, a personal app, or a chat or channel message.|
-||Such notifications are directed at a user level (at this time) and are not posted broadly in a channel for all channel members to see (unless the notification deeplinks to a channel message).|
-|**3**|	The Notification API allows users to configure notifications for each notification type from the app.|
-||This granularity empowers users to turn on or turn off specific notifications.|
-|**4**|	If an app sends to chats or channels and sends Notification API notifications, there is a risk of users receiving double notifications and it is not recommended unless the scenario demands it.|
+|**1**|Ensure that the bot messages are delivered as chat or channel messages.<br/>Users must turn on a chat or channel notifications to receive a notification alert.<br/>Ensure you @mention the user name for the notifications to appear in the activity feed.<br/>For bot messages, ensure that the alert is consumed as a chat or channel message or is consumed broadly. For example, by all channel members.| 
+|**2**|Ensure that the Notification API notifications land in the activity feed and deeplink to various locations.<br/>Notifications in the activity feed allow the user to take action or triage the notification.<br/>Ensure that the notification leads the user to a tab in a chat or channel, a personal app, or a chat or channel message.<br/>Activity feed notifications are currently directed at a user level and are not posted broadly in a channel for all channel members to see. However, if the notification is deeplinked to a channel message then it is posted broadly in a channel.|
+|**3**|Ensure that the Notification API allows users to configure notifications for each notification type from the app. This granularity empowers users to turn on or turn off specific notifications.|
+|**4**|Ensure that users do not receive double notifications from bots and Notification API. *Send  double notifications only if the scenario requires you to send them.* - clarification required from Nihit - can we give an example here? |
 
