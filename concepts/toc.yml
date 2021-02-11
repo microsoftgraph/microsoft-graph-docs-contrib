@@ -282,6 +282,8 @@ items:
         items:
           - name: Overview
             href: notifications-concept-overview.md
+          - name: Best practices
+            href: notifications-api-best-practices.md
           - name: Get started
             displayName: Notifications
             items:
