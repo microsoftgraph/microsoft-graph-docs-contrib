@@ -281,9 +281,7 @@ items:
         displayName: Notifications
         items:
           - name: Overview
-            href: notifications-concept-overview.md
-          - name: Best practices
-            href: notifications-api-best-practices.md
+            href: notifications-concept-overview.md                  
           - name: Get started
             displayName: Notifications
             items:
@@ -301,6 +299,8 @@ items:
                 href: notifications-integrating-with-android.md
               - name: IOS app integration
                 href: notifications-integrating-with-ios.md
+          - name: Best practices
+            href: notifications-api-best-practices.md      
       - name: People and workplace intelligence
         items:
           - name: Overview
