@@ -110,9 +110,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1688
 {
- "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('d5ef6ec4-07ca-4212-baf9-d45be126bfbb')/jobs(documents())/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('d5ef6ec4-07ca-4212-baf9-d45be126bfbb')/jobs/$entity",
   "id": "44353",
   "createdDateTime": "2020-06-26T04:20:06.5715544Z",
+  "createdBy": {
+    "id": "",
+    "displayName": "",
+    "userPrincipalName": ""
+  },
+  "status": {
+    "state": "paused",
+    "description": "The job is not a candidate for processing yet."
+  },
   "configuration": {
     "feedOrientation": "longEdgeFirst",
     "pageRanges": [
