@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var installedApps = await graphClient.Users["{id}"].Teamwork.InstalledApps
+var accessPackageResourceEnvironments = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageResourceEnvironments
 	.Request()
-	.Expand("teamsAppDefinition($expand=bot)")
+	.Filter("originSystem eq 'SharePointOnline'")
 	.GetAsync();
 
 ```

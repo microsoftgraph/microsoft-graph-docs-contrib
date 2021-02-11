@@ -6,9 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IUserScopeTeamsAppInstallationCollectionPage installedApps = graphClient.users("{id}").teamwork().installedApps()
+Permission permission = graphClient.sites("{sitesId}").permissions("{permissionId}")
 	.buildRequest()
-	.expand("teamsAppDefinition($expand=bot)")
 	.get();
 
 ```
