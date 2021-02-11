@@ -74,9 +74,9 @@ Content-Type: application/json
 Content-Length: 110
 
 {
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "appRoleId": "appRoleId-value"
+  "principalId": "c9a5aff7-9298-4d71-adab-0a222e0a05e4",
+  "resourceId": "8e881353-1735-45af-af21-ee1344582a4d",
+  "appRoleId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 # [C#](#tab/csharp)
@@ -118,13 +118,13 @@ Content-type: application/json
 Content-length: 253
 
 {
-  "id": "id-value",
-  "creationTimestamp": "2016-10-19T10:37:00Z",
-  "principalType": "principalType-value",
-  "principalId": "principalId-value",
-  "principalDisplayName": "principalDisplayName-value",
-  "resourceId": "resourceId-value",
-  "resourceDisplayName": "resourceDisplayName-value"
+  "id": "41W1zT6z1U-kJxf62svfp1HFE8pMZhxDun-ThPczmJE",
+  "creationTimestamp": "2021-02-02T04:22:45.9480566Z",
+  "principalType": "User",
+  "principalId": "c9a5aff7-9298-4d71-adab-0a222e0a05e4",
+  "principalDisplayName": "Alex Wilber",
+  "resourceId": "8e881353-1735-45af-af21-ee1344582a4d",
+  "resourceDisplayName": "dxprovisioning-graphapi-client"
 }
 ```
 
