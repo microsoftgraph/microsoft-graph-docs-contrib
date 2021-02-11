@@ -3,7 +3,7 @@ title: "Best practices for Notification APIs in Microsoft Graph"
 description: "List best practices and examples for Notification APIs in Microsoft Graph"
 author: "merzink"
 localization_priority: Normal
-ms.prod: "notification"
+ms.prod: "notifications"
 ---
 
 # Best practices for working with the Notification API in Microsoft Graph
