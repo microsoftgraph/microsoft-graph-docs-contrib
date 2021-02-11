@@ -124,6 +124,7 @@ Content-type: application/json
 Content-length: 1688
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('d5ef6ec4-07ca-4212-baf9-d45be126bfbb')/jobs('44353')/configuration",
   "feedOrientation": "longEdgeFirst",
   "pageRanges": [
     {
