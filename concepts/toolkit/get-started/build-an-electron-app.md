@@ -87,7 +87,8 @@ First, open *src/main.ts* and import `ElectronAuthenticator` and  `MsalElectronC
 ```ts
 import { ElectronAuthenticator, MsalElectronConfig } from '@microsoft/mgt-electron-provider/dist/Authenticator'; 
 ```
-Next, add these lines of code in the `createWindow()` function to initialize the ElectronAuthenticator, right after where `mainWindow` is declared. 
+Next, add these lines of code in the `createWindow()` function to initialize the ElectronAuthenticator, right after where `mainWindow` is declared. Replace `<your_client_id>` with the client id from your app registration.
+
 ```ts
 const config: MsalElectronConfig = {
   clientId: '<your_client_id>',
