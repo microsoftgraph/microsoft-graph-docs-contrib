@@ -11,7 +11,8 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
-## Feburary 2020
+## February 2021
+
 
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                                                                                              |
@@ -24,6 +25,20 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition        | beta          | Added new resource type [rejectJoinResponse](/graph/api/resource/rejectjoinresponse)                         |
 | Addition        | beta          | Added new resource type [inviteNewBotResponse](/graph/api/resource/invitenewbotresponse)                     |
 
+
+### Tasks and plans
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the **rosterPlans** relationship to [plannerUser](https://docs.microsoft.com/en-us/graph/api/resources/plannerUser?view=graph-rest-beta) resource|
+|Addition|beta|Added the **rosters** relationship to [planner](https://docs.microsoft.com/en-us/graph/api/resources/planner?view=graph-rest-beta) resource|
+|Addition|beta|Added the **isCreationContext** property to [plannerPlanContext](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContext?view=graph-rest-beta) resource|
+|Addition|beta|Added the **customLinkText** property to [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) resource|
+|Addition|beta|Added the **displayLinkType** property to [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) resource|
+|Addition|beta|Added the [plannerRoster](https://docs.microsoft.com/en-us/graph/api/resources/plannerRoster?view=graph-rest-beta) resource type|
+|Addition|beta|Added the [plannerRosterMember](https://docs.microsoft.com/en-us/graph/api/resources/plannerRosterMember?view=graph-rest-beta) resource type|
+|Addition|beta|Added the `roster` member to the **plannerContainerType** enumeration|
+|Addition|beta|Added the **plannerPlanContextType** enumeration type|
 
 ## January 2021
 
