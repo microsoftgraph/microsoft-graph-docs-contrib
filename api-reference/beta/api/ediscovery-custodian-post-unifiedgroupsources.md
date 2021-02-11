@@ -62,7 +62,6 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedgroupsource_from_"
@@ -79,8 +78,6 @@ Content-length: 219
   "includedSources":  "mailbox, site"
 }
 ```
-
----
 
 ### Response
 
