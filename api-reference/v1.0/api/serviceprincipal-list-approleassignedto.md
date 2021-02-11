@@ -66,7 +66,7 @@ The following is an example of the request to retrieve the app roles assignments
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/8e881353-1735-45af-af21-ee1344582a4d/appRoleAssignedTo
+GET https://graph.microsoft.com/v1.0/servicePrincipals/8e881353-1735-45af-af21-ee1344582a4d/appRoleAssignedTo
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-get-approleassignedto-csharp-snippets.md)]
@@ -105,7 +105,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#appRoleAssignments",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appRoleAssignments",
   "value": [
     {
       "id": "41W1zT6z1U-kJxf62svfp1HFE8pMZhxDun-ThPczmJE",
