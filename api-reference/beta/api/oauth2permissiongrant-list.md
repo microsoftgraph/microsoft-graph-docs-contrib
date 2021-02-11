@@ -41,7 +41,7 @@ This method supports the [OData query parameters](/graph/query_parameters) to he
 
 | Name | Description |
 |:----------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-oauth2permissiongrants-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-oauth2permissiongrants-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -124,3 +128,5 @@ Content-Length: 259
   ]
 }
 -->
+
+

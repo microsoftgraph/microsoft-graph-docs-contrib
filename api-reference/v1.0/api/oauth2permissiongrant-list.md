@@ -37,9 +37,9 @@ This method supports the [OData query parameters](/graph/query_parameters) to he
 
 ## Request headers
 
-| Name | Description |
-|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name          | Description               |
+|:--------------|:--------------------------|
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -125,3 +125,4 @@ Content-Length: 259
   ]
 }
 -->
+

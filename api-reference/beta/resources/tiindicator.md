@@ -19,25 +19,25 @@ Threat indicators uploaded via **tiIndicators** will be used in conjunction with
 
 Current **targetProduct** support includes the following:
 
-- **Azure Sentinel** – Supports all documented **tiIndicators** methods listed in the following section. 
-- **Microsoft Defender ATP (Microsoft Defender Advanced Threat Protection)** – Supports the following **tiIndicators** methods: 
+- **Azure Sentinel** – Supports all documented **tiIndicators** methods listed in the following section.
+- **Microsoft Defender ATP (Microsoft Defender Advanced Threat Protection)** – Supports the following **tiIndicators** methods:
      - [Get tiIndicator](../api/tiindicator-get.md)
      - [Create tiIndicator](../api/tiindicators-post.md)
      - [List tiIndicators](../api/tiindicators-list.md)
      - [Update](../api/tiindicator-update.md)
      - [Delete](../api/tiindicator-delete.md)
-     
+
      Support for the bulk methods is coming soon.
-     
+
   > [!NOTE]
   >The following indicator types are supported by Microsoft Defender ATP targetProduct:
   > - Files
   > - IP addresses: Microsoft Defender ATP supports destination IPv4/IPv6 only – set property in networkDestinationIPv4 or    networkDestinationIPv6 properties in Microsoft Graph Security API **tiIndicator**.
   > - URLs/domains
 
-   There is a limit of 5000 indicators per tenant for Microsoft Defender ATP.
-   
-For details about the types of indicators supported and limits on indicator counts per tenant, see [Manage indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
+   There is a limit of 15000 indicators per tenant for Microsoft Defender ATP.
+
+For details about the types of indicators supported and limits on indicator counts per tenant, see [Manage indicators](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 ## Methods
 
@@ -55,14 +55,14 @@ For details about the types of indicators supported and limits on indicator coun
 
 ### Methods supported by each target product
 
-| Method | Azure Sentinel | Microsoft Defender ATP |
-|:-------------|:---------|:-----------------------|
-| [Create tiIndicator](../api/tiindicators-post.md)| Required fields are: `action`, `azureTenantId`, `description`, `expirationDateTime`, `targetProduct`, `threatType`, `tlpLevel`, and at least one email, network, or file observable.| Required fields are: `action`, and one of these following values: `domainName`, `url`, `networkDestinationIPv4`, `networkDestinationIPv6`, `fileHashValue` ( must supply `fileHashType` in case of `fileHashValue`).
-| [Submit tiIndicators](../api/tiindicator-submittiindicators.md)| Refer to the [Create tiIndicator](../api/tiindicators-post.md) method for required fields for each tiIndicator. There's a limit of 100 tiIndicators per request. | Refer to the [Create tiIndicator](../api/tiindicators-post.md) method for required fields for each tiIndicator. There's a limit of 100 tiIndicators per request.|
-| [Update tiIndicator](../api/tiindicator-update.md) | Required fields are: `id`, `expirationDateTime`, `targetProduct`. <br> Editable fields are:  `action`, `activityGroupNames`, `additionalInformation`, `confidence`, `description`, `diamondModel`, `expirationDateTime`, `externalId`, `isActive`, `killChain`, `knownFalsePositives`, `lastReportedDateTime`, `malwareFamilyNames`, `passiveOnly`, `severity`, `tags`, `tlpLevel`. | Required fields are: `id`, `expirationDateTime`, `targetProduct`. <br> Editable fields are: `expirationDateTime`, `severity`, `description`. |
-| [Update tiIndicators](../api/tiindicator-updatetiindicators.md)| Refer to the [Update tiIndicator](../api/tiindicator-update.md) method for required and editable fields for each tiIndicator.| <p align="center">[File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center">&#x2713;</p> |
-| [Delete tiIndicator](../api/tiindicator-delete.md) | Required field is: `id`. | Required field is: `id`. |
-| [Delete tiIndicators](../api/tiindicator-deletetiindicators.md)| Refer to the [Delete tiIndicator](../api/tiindicator-delete.md) method above for required field for each tiIndicator.| <p align="center">[File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center">&#x2713;</p> |
+| Method                                                          | Azure Sentinel                                                                                                                                                                                                                                                                                                                                                                      | Microsoft Defender ATP                                                                                                                                                                                               |
+|:----------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Create tiIndicator](../api/tiindicators-post.md)               | Required fields are: `action`, `azureTenantId`, `description`, `expirationDateTime`, `targetProduct`, `threatType`, `tlpLevel`, and at least one email, network, or file observable.                                                                                                                                                                                                | Required fields are: `action`, and one of these following values: `domainName`, `url`, `networkDestinationIPv4`, `networkDestinationIPv6`, `fileHashValue` ( must supply `fileHashType` in case of `fileHashValue`). |
+| [Submit tiIndicators](../api/tiindicator-submittiindicators.md) | Refer to the [Create tiIndicator](../api/tiindicators-post.md) method for required fields for each tiIndicator. There's a limit of 100 tiIndicators per request.                                                                                                                                                                                                                    | Refer to the [Create tiIndicator](../api/tiindicators-post.md) method for required fields for each tiIndicator. There's a limit of 100 tiIndicators per request.                                                     |
+| [Update tiIndicator](../api/tiindicator-update.md)              | Required fields are: `id`, `expirationDateTime`, `targetProduct`. <br> Editable fields are:  `action`, `activityGroupNames`, `additionalInformation`, `confidence`, `description`, `diamondModel`, `expirationDateTime`, `externalId`, `isActive`, `killChain`, `knownFalsePositives`, `lastReportedDateTime`, `malwareFamilyNames`, `passiveOnly`, `severity`, `tags`, `tlpLevel`. | Required fields are: `id`, `expirationDateTime`, `targetProduct`. <br> Editable fields are: `expirationDateTime`, `severity`, `description`.                                                                         |
+| [Update tiIndicators](../api/tiindicator-updatetiindicators.md) | Refer to the [Update tiIndicator](../api/tiindicator-update.md) method for required and editable fields for each tiIndicator.                                                                                                                                                                                                                                                       | <p align="center">[File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p>                                                                                                             |
+| [Delete tiIndicator](../api/tiindicator-delete.md)              | Required field is: `id`.                                                                                                                                                                                                                                                                                                                                                            | Required field is: `id`.                                                                                                                                                                                             |
+| [Delete tiIndicators](../api/tiindicator-deletetiindicators.md) | Refer to the [Delete tiIndicator](../api/tiindicator-delete.md) method above for required field for each tiIndicator.                                                                                                                                                                                                                                                               | <p align="center">[File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p>                                                                                                             |
 
 ## Properties
 
@@ -209,7 +209,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.tiIndicator",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

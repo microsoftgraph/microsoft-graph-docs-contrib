@@ -3,7 +3,7 @@ title: "assign action"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -63,7 +63,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/assign
 
 Content-type: application/json
-Content-length: 312
+Content-length: 487
 
 {
   "managedEBookAssignments": [
@@ -71,7 +71,9 @@ Content-length: 312
       "@odata.type": "#microsoft.graph.managedEBookAssignment",
       "id": "ae8b0d27-0d27-ae8b-270d-8bae270d8bae",
       "target": {
-        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
+        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+        "deviceAndAppManagementAssignmentFilterType": "include"
       },
       "installIntent": "required"
     }
@@ -84,6 +86,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "List win32LobApps"
 description: "List properties and relationships of the win32LobApp objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3442
+Content-Length: 4050
 
 {
   "value": [
@@ -90,6 +90,8 @@ Content-Length: 3442
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
@@ -106,7 +108,9 @@ Content-Length: 3442
         "v10_1709": true,
         "v10_1803": true,
         "v10_1809": true,
-        "v10_1903": true
+        "v10_1903": true,
+        "v10_1909": true,
+        "v10_2004": true
       },
       "minimumFreeDiskSpaceInMB": 8,
       "minimumMemoryInMB": 1,
@@ -134,6 +138,18 @@ Content-Length: 3442
           "detectionType": "exists"
         }
       ],
+      "rules": [
+        {
+          "@odata.type": "microsoft.graph.win32LobAppRegistryRule",
+          "ruleType": "requirement",
+          "check32BitOn64System": true,
+          "keyPath": "Key Path value",
+          "valueName": "Value Name value",
+          "operationType": "exists",
+          "operator": "equal",
+          "comparisonValue": "Comparison Value value"
+        }
+      ],
       "installExperience": {
         "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
         "runAsAccount": "user",
@@ -157,11 +173,13 @@ Content-Length: 3442
         "publisher": "Publisher value"
       },
       "setupFilePath": "Setup File Path value",
-      "installLanguage": "Install Language value"
+      "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
+      "displayVersion": "Display Version value"
     }
   ]
 }
 ```
+
 
 
 

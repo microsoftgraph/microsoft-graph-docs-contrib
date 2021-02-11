@@ -3,7 +3,7 @@ title: "assign action"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -63,7 +63,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assign
 
 Content-type: application/json
-Content-length: 513
+Content-length: 756
 
 {
   "deviceHealthScriptAssignments": [
@@ -71,7 +71,10 @@ Content-length: 513
       "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
       "id": "c08c4eb1-4eb1-c08c-b14e-8cc0b14e8cc0",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       },
       "runRemediationScript": true,
       "runSchedule": {
@@ -90,6 +93,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

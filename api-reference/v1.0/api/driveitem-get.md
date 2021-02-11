@@ -48,6 +48,10 @@ This method supports the `$expand` and `$select` [OData query parameters](/graph
 
 You can use the [`$expand` query string parameter](/graph/query-parameters) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.
 
+You can also use the `includeDeletedItems=true` query parameter to return deleted items.
+This query parameter is only valid when targeting a [driveItem](../resources/driveitem.md) by ID, and otherwise will be ignored.
+This is currently only supported on OneDrive Personal.
+
 ## Optional request headers
 
 | Name          | Value  | Description                                                                                                                                              |
@@ -145,3 +149,4 @@ how errors are returned.
   "suppressions": [
   ]
 } -->
+

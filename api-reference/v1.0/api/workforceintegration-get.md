@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teamwork/workforceIntegrations/workforceIntegrationId}
+GET /teamwork/workforceIntegrations/{workforceIntegrationId}
 ```
 
 ## Optional query parameters
@@ -85,10 +85,6 @@ GET https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforcein
 
 ---
 
-
----
-
-
 ### Response
 
 The following is an example of the response.
@@ -128,3 +124,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

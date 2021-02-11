@@ -1,18 +1,18 @@
 ---
-title: "Add an application to a connectorGroup"
-description: "Use this API to assign an app to a connector group"
+title: "Assign a connectorGroup to an application"
+description: "Use this API to assign a connectorGroup to an application"
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
-# Add an application to a connectorGroup
+# Assign a connectorGroup to an application
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an [application](../resources/application.md) to a [connectorGroup](../resources/connectorgroup.md).
+Assign a [connectorGroup](../resources/connectorgroup.md) to an [application](../resources/application.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -26,24 +26,25 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applications
+PUT /applications/{id}/connectorGroup/$ref
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer. Required|
+| Authorization  | Bearer. Required.|
+| Content-type | application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [application](../resources/application.md) object.
+In the request body, supply a JSON representation of a [connectorGroup](../resources/connectorgroup.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [application](../resources/application.md) object in the response body.
+If successful, this method returns `201 Created` response code and an [application](../resources/application.md) object in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -51,52 +52,43 @@ Here is an example of the request.
   "name": "create_application_from_connectorgroup"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applications
+PUT https://graph.microsoft.com/beta/applications/{id}/connectorGroup/$ref
 Content-type: application/json
-Content-length: 329
+Content-length: 30
 
 {
-  "@odata.id": "https://graph.microsoft.com/beta/applications/{id}"
+  "@odata.id": "https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-application-from-connectorgroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-application-from-connectorgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-application-from-connectorgroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-application-from-connectorgroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-application-from-connectorgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-In the request body, supply a JSON representation of [application](../resources/application.md) object.
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+### Response
+The following is an example of the response. 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.application"
 } -->
 ```http
-HTTP/1.1 201 Created
-Content-type: application/json
-Content-length: 355
-
-{
-  "appId": "appId-value",
-  "onPremisesPublishing": {
-    "externalUrl": "externalUrl-value",
-    "internalUrl": "internalUrl-value",
-    "externalAuthenticationType": "externalAuthenticationType-value",
-    "customDomainCertificate": "customDomainCertificate-value",
-    "isTranslateHostHeaderEnabled": true,
-    "isOnPremPublishingEnabled": true
-  }
-}
+HTTP/1.1 204 No content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -104,10 +96,13 @@ Content-length: 355
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create application",
+  "description": "Assign a connectorGroup to an application",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": []
 }
 -->
+
+
+

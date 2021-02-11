@@ -16,9 +16,9 @@ Namespace: microsoft.graph
 Check for membership in the specified list of groups. Returns from the list those groups of which
 the specified group has a direct or transitive membership.
 
-You can check up to a maximum of 20 groups per request. This function supports Office 365 and other
-types of groups provisioned in Azure AD. Note that Office 365 Groups cannot contain groups. So membership
-in an Office 365 Group is always direct.
+You can check up to a maximum of 20 groups per request. This function supports Microsoft 365 and other
+types of groups provisioned in Azure AD. Note that Microsoft 365 groups cannot contain groups. So membership
+in a Microsoft 365 group is always direct.
 
 ## Permissions
 
@@ -94,6 +94,10 @@ Content-length: 44
 [!INCLUDE [sample-code](../includes/snippets/objc/group-checkmembergroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-checkmembergroups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -134,3 +138,5 @@ Content-length: 39
   ]
 }
 -->
+
+

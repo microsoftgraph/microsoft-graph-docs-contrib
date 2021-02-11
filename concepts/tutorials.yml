@@ -54,15 +54,33 @@ landingContent:
         links:
           - text: Angular
             url: /graph/tutorials/angular
+          - text: Blazor WebAssembly
+            url: /graph/tutorials/blazor
           - text: JavaScript
             url: /graph/tutorials/javascript
           - text: React
             url: /graph/tutorials/react
+  - title: Microsoft platforms
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Azure Functions
+            url: /graph/tutorials/azure-functions
+          - text: Bot Framework
+            url: /graph/tutorials/bot-framework
+          - text: Office Add-in
+            url: /graph/tutorials/office-addin
+          - text: Power Automate
+            url: /graph/tutorials/power-automate
+          - text: SharePoint Framework
+            url: /graph/tutorials/spfx
+          - text: Teams
+            url: /graph/tutorials/teams
   - title: Scenarios
     linkLists:
       - linkListType: tutorial
         links:
-          - text: Change notifications and delta query
+          - text: Change notifications and change tracking
             url: /learn/modules/msgraph-changenotifications-trackchanges
           - text: Optimize data usage with query parameters
             url: /learn/modules/optimize-data-usage

@@ -1,6 +1,6 @@
 ---
 title: "calendar resource type"
-description: "A calendar which is a container for events. It can be a calendar for a user, or the default calendar of an Office 365 group."
+description: "A calendar which is a container for events. It can be a calendar for a user, or the default calendar of a Microsoft 365 group."
 localization_priority: Priority
 author: "harini84"
 ms.prod: "outlook"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A calendar which is a container for events. It can be a calendar for a [user](user.md), or the default calendar of an Office 365 [group](group.md).
+A calendar which is a container for events. It can be a calendar for a [user](user.md), or the default calendar of a Microsoft 365 [group](group.md).
 
 > **Note:** There are a few minor differences in the way you can interact with user calendars and group calendars:
 
@@ -25,8 +25,8 @@ A calendar which is a container for events. It can be a calendar for a [user](us
 |:---------------|:--------|:----------|
 |[List calendars](../api/user-list-calendars.md)|[calendar](calendar.md) collection|Get all the user's calendars, or the calendars in the default or other specific calendar group.|
 |[Create calendar](../api/user-post-calendars.md) |[calendar](calendar.md)| Create a new calendar in the default calendar group or specified calendar group for a user.|
-|[Get calendar](../api/calendar-get.md) | [calendar](calendar.md) |Get the properties and relationships of a **calendar** object. The calendar can be one for a user, or the default calendar of an Office 365 group. |
-|[Update](../api/calendar-update.md) | [calendar](calendar.md)  |Update the properties of a **calendar** object. The calendar can be one for a user, or the default calendar of an Office 365 group. |
+|[Get calendar](../api/calendar-get.md) | [calendar](calendar.md) |Get the properties and relationships of a **calendar** object. The calendar can be one for a user, or the default calendar of a Microsoft 365 group. |
+|[Update](../api/calendar-update.md) | [calendar](calendar.md)  |Update the properties of a **calendar** object. The calendar can be one for a user, or the default calendar of a Microsoft 365 group. |
 |[Delete](../api/calendar-delete.md) | None |Delete calendar object. |
 |[List calendarView](../api/calendar-list-calendarview.md) |[event](event.md) collection| Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's primary calendar `(../me/calendarview)` or from a specified calendar.|
 |[List events](../api/calendar-list-events.md) |[event](event.md) collection| Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.|
@@ -48,7 +48,9 @@ A calendar which is a container for events. It can be a calendar for a [user](us
 |changeKey|String|Identifies the version of the calendar object. Every time the calendar is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.|
 |color|calendarColor|Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|The default online meeting provider for meetings sent from this calendar. Possible values are: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
+|hexColor |String |The calendar color, expressed in a hex color code of three hexidecimal values, each ranging from 00 to FF and representing the red, green, or blue components of the color in the RGB color space. If the user has never explicitly set a color for the calendar, this property is empty. Read-only.|
 |id|String|The calendar's unique identifier. Read-only.|
+|isDefaultCalendar|Boolean|True if this is the default calendar where new events are created by default, false otherwise.|
 |isRemovable|Boolean| Indicates whether this user calendar can be deleted from the user mailbox.|
 |isTallyingResponses|Boolean|Indicates whether this user calendar supports tracking of meeting responses. Only meeting invites sent from users' primary calendars support tracking of meeting responses.|
 |name|String|The calendar name.|
@@ -112,7 +114,9 @@ Here is a JSON representation of the resource
   "changeKey": "string",
   "color": "String",
   "defaultOnlineMeetingProvider": "string",
+  "hexColor": "String",
   "id": "string (identifier)",
+  "isDefaultCalendar": "boolean",
   "isRemovable": "boolean",
   "isTallyingResponses": "boolean",
   "name": "string",
@@ -129,3 +133,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -1,9 +1,9 @@
 ---
-title: "kerberosSignOnSettings resource type"
+title: "onPremisesPublishingSingleSignOn resource type"
 description: "Represents the single-sign on settings for an on-premises application published via Application Proxy."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the single sign-on settings for the [onPremisesPublishing](onpremisespublishing.md) resource when publishing an on-premises application with Azure AD Application Proxy. This resource is used for setting Integrated Windows Authentication and header-based authentication as the single-sign on mode. For more information, see [Kerberos Constrained Delegation for single-sign on to your apps with Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd).
+Represents the single sign-on settings for the [onPremisesPublishing](onpremisespublishing.md) resource when publishing an on-premises application with Azure AD Application Proxy. This resource is used for setting Integrated Windows Authentication and header-based authentication as the single-sign on mode. For more information, see [Kerberos Constrained Delegation for single-sign on to your apps with Application Proxy](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd).
 
 >[!NOTE]
 >Do not use this property for configuring SAML or password-based single-sign on. If you are configuring SAML single-sign-on this must be set on the [servicePrincipal](serviceprincipal.md).
@@ -23,8 +23,8 @@ If you are configuring password-based single-sign this must be set using [create
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|kerberosSignOnSettings| [kerberosSignOnSettings](kerberossignonsettings.md)| The Kerberos Constrained Delegation settings for the application. |
-|singleSignOnMode|String| The preferred single-sign on mode for the application. Possible values are: `none`, `onPremisesKerberos`, `headerBased`.|
+|kerberosSignOnSettings| [kerberosSignOnSettings](kerberossignonsettings.md)| The Kerberos Constrained Delegation settings for applications that use Integrated Window Authentication. |
+|singleSignOnMode|singleSignOnMode| The preferred single-sign on mode for the application. Possible values are: `none`, `onPremisesKerberos`, `aadHeaderBased`,`pingHeaderBased`. |
 
 ## JSON representation
 
@@ -41,8 +41,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "KerberosSignOnSettings": {"@odata.type": "microsoft.graph.kerberosSignOnSettings"},
-  "SingleSignOnMode": "String"
+  "kerberosSignOnSettings": {"@odata.type": "microsoft.graph.kerberosSignOnSettings"},
+  "singleSignOnMode": "String"
 }
 ```
 

@@ -3,7 +3,7 @@ title: "Update deviceHealthScriptAssignment"
 description: "Update the properties of a deviceHealthScriptAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -33,6 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments/{deviceHealthScriptAssignmentId}
+PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assignments/{deviceHealthScriptAssignmentId}
 ```
 
 ## Request headers
@@ -65,12 +66,15 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments/{deviceHealthScriptAssignmentId}
 Content-type: application/json
-Content-length: 359
+Content-length: 590
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "collectionId": "Collection Id value"
   },
   "runRemediationScript": true,
   "runSchedule": {
@@ -87,13 +91,16 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 408
+Content-Length: 639
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
   "id": "c08c4eb1-4eb1-c08c-b14e-8cc0b14e8cc0",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "collectionId": "Collection Id value"
   },
   "runRemediationScript": true,
   "runSchedule": {
@@ -104,6 +111,7 @@ Content-Length: 408
   }
 }
 ```
+
 
 
 

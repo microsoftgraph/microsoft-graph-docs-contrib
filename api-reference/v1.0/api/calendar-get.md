@@ -12,7 +12,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get the properties and relationships of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md), 
-or the default calendar of an Office 365 [group](../resources/group.md).
+or the default calendar of a Microsoft 365 [group](../resources/group.md).
 
 There are two scenarios where an app can get another user's calendar:
 
@@ -50,7 +50,7 @@ GET /me/calendarGroups/{id}/calendars/{id}
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -109,9 +109,11 @@ Content-type: application/json
     "id": "AAMkAGI2TGuLAAA=",
     "name": "Calendar",
     "color": "auto",
+    "isDefaultCalendar": false,
     "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
     "canShare":true,
     "canViewPrivateItems":true,
+    "hexColor": "",
     "canEdit":true,
     "allowedOnlineMeetingProviders": [
                 "teamsForBusiness"

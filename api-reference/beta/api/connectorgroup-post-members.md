@@ -3,7 +3,7 @@ title: "Add connector to connectorGroup"
 description: "Use this API to add a connector to a connectorGroup."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -32,18 +32,19 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/members
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer. Required|
+| Authorization  | Bearer. Required.|
+| Content-type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of a link to a   [connector](../resources/connector.md) object.
+In the request body, supply a JSON representation of a link to a [connector](../resources/connector.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [connector](../resources/connector.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [connector](../resources/connector.md) object in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -71,27 +72,22 @@ Content-length: 104
 [!INCLUDE [sample-code](../includes/snippets/objc/create-connector-from-connectorgroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-connector-from-connectorgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-In the request body, supply a JSON representation of a link to a  [connector](../resources/connector.md) object.
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+The following is an example of the response. 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.connector"
 } -->
 ```http
-HTTP/1.1 201 Created
-Content-type: application/json
-Content-length: 124
-
-{
-  "id": "id-value",
-  "machineName": "machineName-value",
-  "externalIp": "externalIp-value",
-  "status": "status-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -99,10 +95,13 @@ Content-length: 124
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create connector",
+  "description": "Add connector to connectorGroup",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": []
 }
 -->
+
+
+

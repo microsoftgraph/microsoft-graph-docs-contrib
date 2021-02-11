@@ -3,7 +3,7 @@ title: "Get managedDeviceMobileAppConfigurationAssignment"
 description: "Read properties and relationships of the managedDeviceMobileAppConfigurationAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -63,18 +63,21 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 257
+Content-Length: 428
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationAssignment",
     "id": "4df81c9c-1c9c-4df8-9c1c-f84d9c1cf84d",
     "target": {
-      "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
+      "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+      "deviceAndAppManagementAssignmentFilterType": "include"
     }
   }
 }
 ```
+
 
 
 

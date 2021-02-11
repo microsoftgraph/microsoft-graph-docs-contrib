@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/beta/programControlTypes
 [!INCLUDE [sample-code](../includes/snippets/objc/get-programcontroltype-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-programcontroltype-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -96,7 +100,7 @@ Content-type: application/json
         },
         {
             "id": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-            "displayName": "Access Reviews for Office 365 Groups' membership"
+            "displayName": "Access Reviews for Microsoft 365 groups' membership"
         }
     ]
 }
@@ -121,3 +125,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

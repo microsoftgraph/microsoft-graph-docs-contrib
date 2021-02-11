@@ -14,8 +14,8 @@ Namespace: microsoft.graph
 Return all the groups that the user is a member of. The check is transitive, unlike reading the
 [memberOf](../api/user-list-memberof.md) navigation property, which returns only the groups that the user is a direct member of.
 
-This function supports Office 365 and other types of groups provisioned in Azure AD. The maximum number of groups each
-request can return is 2046. Note that Office 365 Groups cannot contain groups. So membership in an Office 365 Group is
+This function supports Microsoft 365 and other types of groups provisioned in Azure AD. The maximum number of groups each
+request can return is 2046. Note that Microsoft 365 groups cannot contain groups. So membership in a Microsoft 365 group is
 always direct.
 
 ## Permissions
@@ -24,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | User.ReadBasic.All and GroupMember.Read.All, User.Read and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read and Group.Read.All,  User.Read.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (work or school account)     | User.ReadBasic.All, User.Read, User.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported.                                                                                                                                       |
-| Application                            |  User.Read.All and GroupMember.Read.All, User.Read.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+| Application                            |  User.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -133,3 +133,4 @@ Content-length: 39
   "suppressions": [
   ]
 }-->
+

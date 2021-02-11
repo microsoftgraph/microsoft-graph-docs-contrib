@@ -17,7 +17,7 @@ Configuring an identity provider in your Azure AD B2C tenant enables users to:
 * Sign up and sign in using a social account in a consumer application. For example, an application can use Azure AD B2C to allow users to sign up for the service using a Facebook account.
 * Link an existing local account to a social account in a consumer application. For example, a user has created a username and password (local account) in the application. The user later decides to link the existing local account to their Facebook account so they can sign in using Facebook.
 
-Configuring an identity provider in your Azure AD tenant enables future B2B guest scenarios. For example, an organization has resources in Office 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
+Configuring an identity provider in your Azure AD tenant enables future B2B guest scenarios. For example, an organization has resources in Microsoft 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
 
 ## Methods
 
@@ -61,3 +61,4 @@ The following is a JSON representation of the resource.
     "clientSecret": "String"
 }
 ```
+

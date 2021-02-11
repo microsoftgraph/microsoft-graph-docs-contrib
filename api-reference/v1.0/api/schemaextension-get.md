@@ -3,7 +3,7 @@ title: "Get schemaExtension"
 description: "Get the properties of the specified schemaExtension definition."
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: ""
+ms.prod: "extensions"
 doc_type: apiPageType
 ---
 
@@ -18,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | User.Read, Application.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Application.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /schemaExtensions/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|

@@ -22,7 +22,7 @@ In addition to the following permissions, the user's tenant must have an active 
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Users.Read.All |
+|Delegated (work or school account)| Reports.Read.All |
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application|Not Supported.|
 
@@ -39,11 +39,11 @@ GET /reports/getUserArchivedPrintJobs
 
 ## Function Parameters
 
-|Parameter|Type|Required?|Description|
-|-|-|-|-|-|
-|`userId`|`Edm.String`|Yes|The ID of the user to return data for.|
-|`periodStart`|`Edm.DateTimeOffset`|No|The start date (inclusive) for the time period to include data from.|
-|`periodEnd`|`Edm.DateTimeOffset`|No|The end date (inclusive) for the time period to include data from.|
+| Parameter     | Type                 | Required? | Description                                                          |
+|---------------|----------------------|-----------|----------------------------------------------------------------------|
+| `userId`      | `Edm.String`         | Yes       | The ID of the user to return data for.                               |
+| `periodStart` | `Edm.DateTimeOffset` | No        | The start date (inclusive) for the time period to include data from. |
+| `periodEnd`   | `Edm.DateTimeOffset` | No        | The end date (inclusive) for the time period to include data from.   |
 
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [archivedPrintJob](../resources/archivedprintjob.md) objects in the response body.
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/print/reports/getUserArchivedPrintJobs(user
 ```
 
 ##### Response
-The following is an example of the response. 
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -96,3 +96,4 @@ Content-length: 236
   "section": "documentation",
   "tocPath": ""
 }-->
+

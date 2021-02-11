@@ -3,7 +3,7 @@ title: "Create deviceManagementScript"
 description: "Create a new deviceManagementScript object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -55,6 +55,7 @@ The following table shows the properties that are required when you create the d
 |id|String|Unique Identifier for the device management script.|
 |displayName|String|Name of the device management script.|
 |description|String|Optional description for the device management script.|
+|scriptContent|Binary|The script content.|
 |createdDateTime|DateTimeOffset|The date and time the device management script was created. This property is read-only.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified. This property is read-only.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Possible values are: `system`, `user`.|
@@ -116,6 +117,7 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
+
 
 
 
