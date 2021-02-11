@@ -122,7 +122,7 @@ const mainWindow = new BrowserWindow({
 });
 ```
  
- ### Add MGT components to your HTML page
+### Add components to your HTML page
  
 Let's add some content to our app. We can now use the Microsoft Graph toolkit components in our *index.html* page and show the user's agenda. Replace the content of the *index.html* page with the following:
  
