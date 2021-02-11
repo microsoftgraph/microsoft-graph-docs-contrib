@@ -18,7 +18,7 @@ At a high-level the best practices are as follows:
 
 ## Notification API Partner scenarios
 The Notification API is a platform that enables Partner apps to send notifications to users as toast items and activity feed items that point users to relevant content that can be consumed within Teams.
-The following table lists the expectations and requirements for partners using the Notification API:
+
 | **No.** | **Requirement** | **PRI**-what is the fullform of PRI? |
 |------------|---------------|-------------------------------------|
 | **1** |Understand the direct relationship  between a notification toast or feed and the content deeplinked to: <br/> The notification must not confuse the user about what they need to address or triage. For example, if an @mention notification is received, the panel on the right in the activity feed app must display or reference the corresponding @mention.<br/> |1 |
