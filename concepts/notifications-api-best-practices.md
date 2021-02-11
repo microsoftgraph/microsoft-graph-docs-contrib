@@ -12,22 +12,23 @@ This document consolidates the best practices that the Microsoft partners are ex
 Document links - Clarification about the document links to be checked with Nihit.
 
 At a high-level the best practices are as follows:
-* Ensure that the Partner scenarios respect the activity feed guidelines.
+* Ensure that Partner scenarios respect the activity feed guidelines.
 * Ensure trade-offs between the Notification API and other bot *notification* tools are adhered to. - need clarification from Nikhit on this point
-* Ensure that the expectations in terms of performance and other such considerations are met. - need clarification from Nihit on this point.
+* Ensure that expectations in terms of performance and other such considerations are met. - need clarification from Nihit on this point.
 
 ## Notification API Partner scenarios
 The Notification API is a platform that enables Partner apps to send notifications to users as toast items and activity feed items that point users to relevant content that can be consumed within Teams.
 
 Following are the core expectations and requirements for partners using the Notification API:
+
 |**No.**|**Requirement**|**PRI** - what is the fullform of PRI?|
-|-------|---------------|------------------------|	
-|**1**|Understand the direct relationship  between a notification toast or feed and the content deeplinked to:</br> The notification must not confuse the user about what they need to address or triage. For example, if an @mention notification is received, the panel on the right in the activity feed app must display or reference the corresponding @mention.</br>If the notification pertains to removal or deletion of scenarios, users must be directed to the content indicating this, so that they understand the outcome before taking action.For example, remove a user from a group or delete a list.|1</br><br/><br/><br/><br/>1<br/><br/><br/><br/><br/>1|
+|-------|---------------|--------------------------------------|	
+|**1**|Understand the direct relationship  between a notification toast or feed and the content deeplinked to:<br/> The notification must not confuse the user about what they need to address or triage. For example, if an @mention notification is received, the panel on the right in the activity feed app must display or reference the corresponding @mention.<br/>If the notification pertains to removal or deletion of scenarios, users must be directed to the content indicating this, so that they understand the outcome before taking action.For example, remove a user from a group or delete a list. | 1<br/><br/><br/><br/><br/>1<br/><br/><br/><br/><br/>1 |
 |**2**|Ensure that the right pane experience in the feed is self-contained and does not break the feed experience.<br/>For example, if the notification leads to a modal or pop-up dialog, the modal must exist only within the app and not over the activity feed experience.|1<br/><br/><br/>1|
 |**3**|Ensure that apps are not sending more than 10 notifications per minute, per user.<br/>Notifications will be throttled if the per user notification count exceeds the limit.|1<br/><br/><br/>1|
 |**4**|Ensure that the apps are performing. The time it takes for an app to load is measured and can impact the user experience when a user switches between notifications in the activity feed.<br/>Turn off the notifications if a partner's notifications adversely regress **Activity Switch** time.*More information will be published in the forthcoming release.*|1<br/><br/><br/>1|
 
-### Best practices for feature behavior in Partner scenarios	
+### Feature behavior in Partner scenarios	
 |**No.**|**Requirement**|
 |-------|---------------|
 |**1**|Select the following:<br/>A toast notification to lead to the activity feed.<br/>A notification in the activity feed to switch to the activity within the activity feed. *The selection will not switch to the app.*|
