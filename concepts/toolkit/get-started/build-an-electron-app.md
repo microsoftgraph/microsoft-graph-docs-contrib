@@ -29,7 +29,7 @@ Install the '@microsoft/mgt-components' package that contains all the Microsoft 
 npm i @microsoft/mgt-components
 ```
 
-Install the `@microsoft/mgt-electron-provider` and `@microsoft/mgt-element` npm packages as well. These will allow you to provide authentication for your app using MSAL, and further be able to use the MGT components.
+Install the `@microsoft/mgt-electron-provider` and `@microsoft/mgt-element` npm packages as well. These will allow you to provide authentication for your app using MSAL, and further be able to use the Microsoft Graph Toolkit components.
 
 ```cmd
 npm i @microsoft/mgt-element @microsoft/mgt-electron-provider

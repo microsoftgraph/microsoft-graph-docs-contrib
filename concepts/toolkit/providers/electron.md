@@ -20,7 +20,7 @@ You need to initialize ElectronProvider in the renderer process (front-end), and
 
 ### Initializing ElectronProvider in the renderer process (eg. renderer.ts)
 
-The ElectronProvider is responsible for communicating with ElectronAuthenticator (in the main process) to request access tokens and receive information regarding logged in state that are required for the mgt components to work. 
+The ElectronProvider is responsible for communicating with ElectronAuthenticator (in the main process) to request access tokens and receive information regarding logged in state that are required for the components to work. 
 
 ```ts
 import {Providers} from '@microsoft/mgt-element';
