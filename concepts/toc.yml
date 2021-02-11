@@ -582,6 +582,8 @@ items:
                 href: toolkit/get-started/build-a-sharepoint-web-part.md
               - name: Build a Microsoft Teams tab
                 href: toolkit/get-started/build-a-microsoft-teams-tab.md
+              - name: Build an Electron app
+                href: toolkit/get-started/build-an-electron-app.md
           - name: Providers
             items:
               - name: Using the providers
@@ -592,6 +594,8 @@ items:
                 href: toolkit/providers/sharepoint.md
               - name: Microsoft Teams provider
                 href: toolkit/providers/teams.md
+              - name: Electron provider
+                href: toolkit/providers/electron.md
               - name: Proxy provider
                 href: toolkit/providers/proxy.md
               - name: Custom provider
