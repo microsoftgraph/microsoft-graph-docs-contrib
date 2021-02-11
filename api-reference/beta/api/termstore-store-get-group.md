@@ -103,6 +103,61 @@ Content-Type: application/json
   "displayName": "myGroup"  
 }
 ```
+### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_group"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/termStore/groups/{groupId}?$select=*,parentSiteId
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+### Response
+
+**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.termStore.group"
+} -->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "createdDateTime": "2019-06-21T20:01:37Z",
+  "description": "My term group",
+  "scope" : "global",
+  "id": "1FFD3F87-9464-488A-A0EC-8FB90911182C",
+  "displayName": "myGroup",
+  "parentSiteId": "microsoft.sharepoint.com,05259ba9-25a8-4c93-a9a9-f995ef1fc51f,a785ad58-1d57-4f8a-aa71-77170459bd0d"
+}
+```
 
 [microsoft.graph.termStore.store]: ../resources/termstore-store.md
 [microsoft.graph.termStore.group]: ../resources/termstore-group.md
