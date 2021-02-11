@@ -71,8 +71,9 @@ Content-Type: application/json
 Content-length: 100
 
 {
-  "@odata.type": "#microsoft.graph.smsAuthenticationMethodConfiguration",
-  "state": "String"
+    "@odata.type": "#microsoft.graph.smsAuthenticationMethodConfiguration",
+    "id": "Sms",
+    "state": "enabled"
 }
 ```
 
