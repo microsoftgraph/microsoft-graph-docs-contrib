@@ -140,7 +140,7 @@ Let's add some content to our app. We can now use the Microsoft Graph toolkit co
   </body>
 </html>
  ```
- 
+ Note: Make sure to remove any Content-Security-Policy response headers or `meta` tags if you are copying this onto an existing file.
  
  ### Bundle your app using webpack
  
