@@ -21,12 +21,12 @@ The Notification API is a platform that enables Partner apps to send notificatio
 
 Following are the core expectations and requirements for partners using the Notification API:
 
-|**No.**|**Requirement**|**PRI** - what is the fullform of PRI?|
-|-------|---------------|--------------------------------------|	
-|**1**|Understand the direct relationship  between a notification toast or feed and the content deeplinked to:<br/> The notification must not confuse the user about what they need to address or triage. For example, if an @mention notification is received, the panel on the right in the activity feed app must display or reference the corresponding @mention.<br/>If the notification pertains to removal or deletion of scenarios, users must be directed to the content indicating this, so that they understand the outcome before taking action.For example, remove a user from a group or delete a list. | 1<br/><br/><br/><br/><br/>1<br/><br/><br/><br/><br/>1 |
-|**2**|Ensure that the right pane experience in the feed is self-contained and does not break the feed experience.<br/>For example, if the notification leads to a modal or pop-up dialog, the modal must exist only within the app and not over the activity feed experience.|1<br/><br/><br/>1|
-|**3**|Ensure that apps are not sending more than 10 notifications per minute, per user.<br/>Notifications will be throttled if the per user notification count exceeds the limit.|1<br/><br/><br/>1|
-|**4**|Ensure that the apps are performing. The time it takes for an app to load is measured and can impact the user experience when a user switches between notifications in the activity feed.<br/>Turn off the notifications if a partner's notifications adversely regress **Activity Switch** time.*More information will be published in the forthcoming release.*|1<br/><br/><br/>1|
+| **No.** | **Requirement** | **PRI**-what is the fullform of PRI? |
+|---------|-------------------|--------------------------------------|	
+| **1** | Understand the direct relationship  between a notification toast or feed and the content deeplinked to:<br/> The notification must not confuse the user about what they need to address or triage. For example, if an @mention notification is received, the panel on the right in the activity feed app must display or reference the corresponding @mention.<br/> If the notification pertains to removal or deletion of scenarios, users must be directed to the content indicating this, so that they understand the outcome before taking action.For example, remove a user from a group or delete a list. | 1 <br/><br/><br/><br/><br/> 1 <br/><br/><br/><br/><br/> 1 |
+| **2** |Ensure that the right pane experience in the feed is self-contained and does not break the feed experience.<br/>For example, if the notification leads to a modal or pop-up dialog, the modal must exist only within the app and not over the activity feed experience. | 1<br/><br/><br/>1 |
+| **3** |Ensure that apps are not sending more than 10 notifications per minute, per user.<br/>Notifications will be throttled if the per user notification count exceeds the limit. | 1<br/><br/><br/>1 |
+| **4** |Ensure that the apps are performing. The time it takes for an app to load is measured and can impact the user experience when a user switches between notifications in the activity feed.<br/>Turn off the notifications if a partner's notifications adversely regress **Activity Switch** time.*More information will be published in the forthcoming release.* | 1<br/><br/><br/>1 |
 
 ### Feature behavior in Partner scenarios	
 |**No.**|**Requirement**|
