@@ -20,10 +20,9 @@ At a high-level the best practices are as follows:
 The Notification API is a platform that enables Partner apps to send notifications to users as toast items and activity feed items that point users to relevant content that can be consumed within Teams.
 
 Following are the core expectations and requirements for partners using the Notification API:
-
 | **No.** | **Requirement** | **PRI**-what is the fullform of PRI? |
 |---------|-------------------|--------------------------------------|	
-| **1** | Understand the direct relationship  between a notification toast or feed and the content deeplinked to:<br/> The notification must not confuse the user about what they need to address or triage. For example, if an @mention notification is received, the panel on the right in the activity feed app must display or reference the corresponding @mention.<br/> If the notification pertains to removal or deletion of scenarios, users must be directed to the content indicating this, so that they understand the outcome before taking action.For example, remove a user from a group or delete a list. | 1 <br/><br/><br/><br/><br/> 1 <br/><br/><br/><br/><br/> 1 |
+| **1**   | Understand the direct relationship  between a notification toast or feed and the content deeplinked to: <br/> The notification must not confuse the user about what they need to address or triage. For example, if an @mention notification is received, the panel on the right in the activity feed app must display or reference the corresponding @mention.<br/> If the notification pertains to removal or deletion of scenarios, users must be directed to the content indicating this, so that they understand the outcome before taking action.For example, remove a user from a group or delete a list. | 1 <br/><br/><br/><br/><br/> 1 <br/><br/><br/><br/><br/> 1 |
 | **2** |Ensure that the right pane experience in the feed is self-contained and does not break the feed experience.<br/>For example, if the notification leads to a modal or pop-up dialog, the modal must exist only within the app and not over the activity feed experience. | 1<br/><br/><br/>1 |
 | **3** |Ensure that apps are not sending more than 10 notifications per minute, per user.<br/>Notifications will be throttled if the per user notification count exceeds the limit. | 1<br/><br/><br/>1 |
 | **4** |Ensure that the apps are performing. The time it takes for an app to load is measured and can impact the user experience when a user switches between notifications in the activity feed.<br/>Turn off the notifications if a partner's notifications adversely regress **Activity Switch** time.*More information will be published in the forthcoming release.* | 1<br/><br/><br/>1 |
@@ -40,7 +39,7 @@ Following are the core expectations and requirements for partners using the Noti
 |**7**|Understand that currently, notifications can only be sent at a user level and not at a group or team level. *Priority notifications cannot be sent.* - clarification required from Nihit- priority notifications cannot be sent at any level or only specific level?|
 |**8**|Understand that notifications are stored in the activity feed for 30 days. <br/>*The 30 days storage limit applies to all notifications and is not specific to Notification API.*|
 
-## Best practices to minimize noise and build high quality notification experiences
+## Minimize noise and build high quality notification experiences
 |**No.**|**Requirement**|**PRI**|
 |-------|---------------|-------|
 |**1**|Users receive notifications from multiple sources across chats, channels, meetings, or other apps. To improve the chances of users acting on your notifications, send notifications that are directly relevant to users. Avoid sending a large volume of non-directed broadcast notifications. For example:</br> *Joni left the sales team.* ❌ - This notification may be noisy unless this is materially important.<br/>*Diego assigned a sales ticket to you* ✔|1|
@@ -48,7 +47,7 @@ Following are the core expectations and requirements for partners using the Noti
 |**3**|Utilize the third line for the preview to give users information that allows them to gauge the importance and take action. Select a toast or mark for follow-up. - need clarification from Nihit on this point|1|
 |**4**|Ensure there is no *period* at the end of the notification title to achieve parity with all other notifications in Teams.|1|
 
-## Best practices to use the bot framework and Notification API
+## Use Bot Framework and Notification API
 |**No.**|**Requirement**|
 |-------|---------------|
 |**1**|Ensure that the bot messages are delivered as chat or channel messages.<br/>Users must turn on a chat or channel notifications to receive a notification alert.<br/>Ensure you @mention the user name for the notifications to appear in the activity feed.<br/>For bot messages, ensure that the alert is consumed as a chat or channel message or is consumed broadly. For example, by all channel members.| 
