@@ -18,8 +18,11 @@ At a high-level the best practices are as follows:
 
 ## Notification API Partner scenarios
 The Notification API is a platform that enables Partner apps to send notifications to users as toast items and activity feed items that point users to relevant content that can be consumed within Teams.
+The following table lists the expectations and requirements for partners using the Notification API:
+| **No.** | **Requirement** | **PRI**-what is the fullform of PRI? |
+|------------|---------------|-------------------------------------|
+| **1** |Understand the direct relationship  between a notification toast or feed and the content deeplinked to: <br/> The notification must not confuse the user about what they need to address or triage. For example, if an @mention notification is received, the panel on the right in the activity feed app must display or reference the corresponding @mention.<br/> |1 |
 
-Following are the core expectations and requirements for partners using the Notification API:
 | **No.** | **Requirement** | **PRI**-what is the fullform of PRI? |
 |---------|-------------------|--------------------------------------|	
 | **1**   | Understand the direct relationship  between a notification toast or feed and the content deeplinked to: <br/> The notification must not confuse the user about what they need to address or triage. For example, if an @mention notification is received, the panel on the right in the activity feed app must display or reference the corresponding @mention.<br/> If the notification pertains to removal or deletion of scenarios, users must be directed to the content indicating this, so that they understand the outcome before taking action.For example, remove a user from a group or delete a list. | 1 <br/><br/><br/><br/><br/> 1 <br/><br/><br/><br/><br/> 1 |
@@ -43,7 +46,7 @@ Following are the core expectations and requirements for partners using the Noti
 |**No.**|**Requirement**|**PRI**|
 |-------|---------------|-------|
 |**1**|Users receive notifications from multiple sources across chats, channels, meetings, or other apps. To improve the chances of users acting on your notifications, send notifications that are directly relevant to users. Avoid sending a large volume of non-directed broadcast notifications. For example:</br> *Joni left the sales team.* ❌ - This notification may be noisy unless this is materially important.<br/>*Diego assigned a sales ticket to you* ✔|1|
-|**2**|Avoid duplicate notifications from bot messages and the Notification API. See the [Best practices to use the bot framework and Notification API](#best-practices-to-use-the-bot-framework-and-notification-api) table.|1|
+|**2**|Avoid duplicate notifications from bot messages and the Notification API. See the [Best practices to use the bot framework and Notification API](#use-bot-framework-and-notification-api) table.|1|
 |**3**|Utilize the third line for the preview to give users information that allows them to gauge the importance and take action. Select a toast or mark for follow-up. - need clarification from Nihit on this point|1|
 |**4**|Ensure there is no *period* at the end of the notification title to achieve parity with all other notifications in Teams.|1|
 
