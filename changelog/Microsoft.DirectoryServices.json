@@ -3,6 +3,7 @@
     {
       "ChangeList": [
         {
+<<<<<<< HEAD
           "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
           "ApiChange": "Resource",
           "ChangedApiName": "EntitlementManagement.ReadWrite.All,EntitlementManagement.Read.All",
@@ -17,6 +18,22 @@
       "CreatedDateTime": "2021-02-01T22:00:01Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
+=======
+          "Id": "399bbffc-8877-4a39-b313-af196b341560",
+          "ApiChange": "Resource",
+          "ChangedApiName": "smsAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [smsAuthenticationMethodConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/smsAuthenticationMethodConfiguration?view=graph-rest-beta) resource and associated methods.",
+          "Target": "smsAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "26e0a036-cc6d-4fb1-8eea-4e82c6492650",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-10T18:58:47.428Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+>>>>>>> e1551b472ce2323a8161017ef75719693c0af921
     },
     {
       "ChangeList": [
@@ -5138,6 +5155,24 @@
       "Version": "v1.0",
       "CreatedDateTime": "2016-02-01T00:00:00",
       "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f7c9599a-1e37-4506-a16b-3ba8ffa9e530",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "singleSignOnMode",
+          "ChangeType": "Addition",
+          "Description": "Added the `aadHeaderBased` and `pingHeaderBased` values to the **singleSignOnMode** enumeration.",
+          "Target": "singleSignOnMode"
+        }
+      ],
+      "Id": "f7c9599a-1e37-4506-a16b-3ba8ffa9e530",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2016-02-10T00:00:00",
+      "WorkloadArea": "Applications",
       "SubArea": ""
     }
   ]
