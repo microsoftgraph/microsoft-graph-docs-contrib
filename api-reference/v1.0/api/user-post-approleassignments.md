@@ -111,7 +111,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 253
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('eabd2f81-0d6a-485b-8b72-28faaea2ce04')/appRoleAssignments/$entity",
