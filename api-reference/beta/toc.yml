@@ -10413,6 +10413,15 @@ items:
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
             - name: Delete
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
+            - name: Temporary Access Pass policy
+            href: resources/temporaryaccesspassauthenticationmethodconfiguration.md
+            items:
+            - name: Get
+              href: api/temporaryaccesspassauthenticationmethodconfiguration-get.md
+            - name: Update
+              href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
+            - name: Delete
+              href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
           - name: Email policy
             href: resources/emailauthenticationmethodconfiguration.md
             items:
