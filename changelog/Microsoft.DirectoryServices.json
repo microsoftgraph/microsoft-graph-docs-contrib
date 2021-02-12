@@ -18,10 +18,9 @@
       "WorkloadArea": "Applications",
       "SubArea": "Directory management"
     },
-     {
+    {
       "ChangeList": [
         {
-<<<<<<< HEAD
           "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
           "ApiChange": "Resource",
           "ChangedApiName": "EntitlementManagement.ReadWrite.All,EntitlementManagement.Read.All",
@@ -36,7 +35,10 @@
       "CreatedDateTime": "2021-02-01T22:00:01Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
-=======
+    },
+     {
+      "ChangeList": [
+        {
           "Id": "399bbffc-8877-4a39-b313-af196b341560",
           "ApiChange": "Resource",
           "ChangedApiName": "smsAuthenticationMethodConfiguration",
@@ -51,7 +53,6 @@
       "CreatedDateTime": "2021-02-10T18:58:47.428Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
->>>>>>> e1551b472ce2323a8161017ef75719693c0af921
     },
     {
       "ChangeList": [
