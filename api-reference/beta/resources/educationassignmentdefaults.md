@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies class-level defaults respected by new assignments created in the class. Callers can continue to specify custom-values on each assignment creation if they do not desire the default behaviors.
+Specifies class-level defaults respected by new assignments created in the class. Callers can continue to specify custom values on each assignment creation if they do not want the default behaviors.
 
 ## Methods
 |Method|Return type|Description|
@@ -24,9 +24,9 @@ Specifies class-level defaults respected by new assignments created in the class
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|addedStudentAction|educationAddedStudentAction|class-level default behavior for handling students who are added after the assignment is published. Possible values are: `none`, `assignIfOpen`, `unknownFutureValue`.|
-|dueTime|TimeOfDay|class-level default value for due time field. Default value - 23:59:00.|
-|notificationChannelUrl|String|Default Teams channel to which notifications will be sent. Default value - null.|
+|addedStudentAction|educationAddedStudentAction|Class-level default behavior for handling students who are added after the assignment is published. Possible values are: `none`, `assignIfOpen`, `unknownFutureValue`.|
+|dueTime|TimeOfDay|Class-level default value for due time field. Default value is `23:59:00`.|
+|notificationChannelUrl|String|Default Teams channel to which notifications will be sent. Default value is `null`.|
 
 ## Relationships
 None.
