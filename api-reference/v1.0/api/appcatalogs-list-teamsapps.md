@@ -354,7 +354,7 @@ Content-Type: application/json
                     "version": "1.0.9",
                     "requiredResourceSpecificApplicationPermissions": [],
                     "publishingState": "rejected",
-                    "shortdescription": "quaerat quasi magnam. slight change. 5",
+                    "shortDescription": "quaerat quasi magnam. slight change. 5",
                     "description": "Aliquid placeat animi debitis accusamus. Non perferendis ullam. Quis est consequuntur vitae provident. Sunt laudantium id aut. slight change 5",
                     "lastModifiedDateTime": "2020-11-23T21:36:00.9437445Z",
                     "createdBy": {
@@ -390,7 +390,7 @@ Content-Type: application/json
                     "version": "6.0.0",
                     "requiredResourceSpecificApplicationPermissions": [],
                     "publishingState": "submitted",
-                    "shortdescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
+                    "shortDescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
                     "description": "For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
                     "lastModifiedDateTime": "2020-08-25T18:40:13.035341Z",
                     "createdBy": {

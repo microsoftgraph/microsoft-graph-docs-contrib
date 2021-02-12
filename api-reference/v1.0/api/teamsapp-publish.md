@@ -190,7 +190,7 @@ Content-type: application/json
     "version": "1.1.8",
     "requiredResourceSpecificApplicationPermissions": [],
     "publishingState": "published",
-    "shortdescription": "quaerat quasi magnam. slight change. 5",
+    "shortDescription": "quaerat quasi magnam. slight change. 5",
     "description": "Aliquid placeat animi debitis accusamus. Non perferendis ullam. Quis est consequuntur vitae provident. Sunt laudantium id aut. slight change 5",
     "lastModifiedDateTime": null,
     "createdBy": null
