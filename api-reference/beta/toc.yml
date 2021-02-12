@@ -10341,7 +10341,7 @@ items:
               href: api/windowshelloforbusinessauthenticationmethod-get.md
             - name: Delete
               href: api/windowshelloforbusinessauthenticationmethod-delete.md
-           - name: Phone
+          - name: Phone
             href: resources/phoneauthenticationmethod.md
             items:
             - name: List
