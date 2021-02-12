@@ -14,7 +14,7 @@ In this article, you'll learn how to create and configure a SAML-based single si
 This article uses an AWS Azure AD application template as an example, but you can use the steps in this article for any SAML-based app in the Azure AD Gallery.
 
 >[!NOTE]
->The response objects shown in this article might be shortened for readability. All the properties will be returned from an actual call.
+>The response objects and keys shown in this article might be shortened for readability.
 
 ## Prerequisites
 
@@ -73,7 +73,7 @@ This article uses an AWS Azure AD application template as an example, but you ca
 
           // Generate the customKeyIdentifier using hash of thumbprint.
           Console.WriteLine("Cert thumprint: {0}{1}", selfsignedCert.Thumbprint, Environment.NewLine);
-          Console.WriteLine("customeKeyIdentifier:");
+          Console.WriteLine("customKeyIdentifier:");
           string keyIdentifier = GetSha256FromThumbprint(selfsignedCert.Thumbprint);
           Console.WriteLine(keyIdentifier);
         }
@@ -120,7 +120,9 @@ This article uses an AWS Azure AD application template as an example, but you ca
     - End date and time
     - Certificate password
     - Display name
+    - Public key
     - Hash of the thumbprint
+    - Key identifier
 
     In addition to the certificate values, you also need two new GUIDS for the keyIds that are used. The following example shows the output of the previously listed code:
 
@@ -138,7 +140,7 @@ This article uses an AWS Azure AD application template as an example, but you ca
 
     Cert thumprint: 14B73D02E5094675063DF66A42B914DAD71633D7
 
-    customeKeyIdentifier:
+    customKeyIdentifier:
     dD5ft4q5qrAQVusP6dDI7qKPnvZQbhkCxl1uNXQXwX0=
     ```
 
@@ -160,7 +162,7 @@ This article uses an AWS Azure AD application template as an example, but you ca
 
 ## Step 1: Create the application
 
-Azure Active Directory (Azure AD) has a gallery that contains thousands of pre-integrated applications that you can use as a template for your application. The application template describes the metadata for that application. Using this template, you can create an instance of the application and service principal in your tenant for management. 
+Azure AD has a gallery that contains thousands of pre-integrated applications that you can use as a template for your application. The application template describes the metadata for that application. Using this template, you can create an instance of the application and service principal in your tenant for management. 
 
 To create the application from the gallery, you first get the identifier of the application template and then use that identifier to create the application.
 
@@ -431,7 +433,7 @@ Content-type: claimsMappingPolicies/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/claimsMappingPolicies/$entity",
-  "id": "ed646e89-1f69-4c1d-a19e-088c05c2542c",
+  "id": "218e7879-5330-4ca6-8bca-ddb1f2402e73",
   "deletedDateTime": null,
   "definition": [
     "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Source\":\"user\",\"ID\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
@@ -452,7 +454,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/3161ab85-8f57-4ae0-82d3-
 Content-type: claimsMappingPolicies/json
 
 {
-  "@odata.id":"https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/ed646e89-1f69-4c1d-a19e-088c05c2542c"
+  "@odata.id":"https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/218e7879-5330-4ca6-8bca-ddb1f2402e73"
 }
 ```
 
@@ -510,7 +512,7 @@ Content-type: servicePrincipals/json
       "type": "X509CertAndPassword",
       "usage": "Sign",
       "key":"MIIKIAIBAz.....HBgUrDgMCERE20nuTptI9MEFCh2Ih2jaaLZBZGeZBRFVNXeZmAAgIH0A==",
-      "displayName": "CN=awsAPI"
+      "displayName": "CN=Example"
     },
     {
       "customKeyIdentifier": "dD5ft4q5qrAQVusP6dDI7qKPnvZQbhkCxl1uNXQXwX0=",
@@ -669,6 +671,59 @@ The following shows an example of what you might see for your application:
 <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://login.microsoftonline.com/2f82f566-5953-43f4-9251-79c6009bdf24/saml2"/>
 </IDPSSODescriptor>
 </EntityDescriptor>
+```
+
+## Step 7: Clean up resources
+
+In this step, you remove the resources that you created.
+
+
+### Delete the application
+
+Delete the application that you created.
+
+#### Request
+
+```http
+DELETE https://graph.microsoft.com/beta/applications/4b01f51f-079b-4634-b767-7e19ad502cdb
+```
+
+#### Response
+
+```http
+No Content - 204
+```
+
+### Delete the user account
+
+Delete the MyTestUser1 user account.
+
+#### Request
+
+```http
+DELETE https://graph.microsoft.com/v1.0/users/3ee91cc2-8edc-4f1a-8d71-7dd61348f8c4
+```
+
+#### Response
+
+```http
+No Content - 204
+```
+
+### Delete the claims mapping policy
+
+Delete the claims mapping policy.
+
+#### Request
+
+```http
+DELETE https://graph.microsoft.com/beta/policies/claimsMappingPolicies/218e7879-5330-4ca6-8bca-ddb1f2402e73
+```
+
+#### Response
+
+```http
+No Content - 204
 ```
 
 ## See also
