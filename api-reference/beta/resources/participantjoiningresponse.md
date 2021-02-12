@@ -1,6 +1,6 @@
 ---
 title: "participantJoiningResponse resource type"
-description: "An abstract base class that contains the response to participant joining notification."
+description: "An abstract base class that contains the response to a participant joining notification."
 author: "yizhenww"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract base class that contains the response to participant joining notification.
+An abstract base class that contains the response to a participant joining notification.
 
 ## Derived types
 
 | Type                                                   | Description                                                                                          |
 | :----------------------------------------------------- | :--------------------------------------------------------------------                                |
-| [acceptJoinResponse](./acceptjoinresponse.md)          | Response to accept participant to the call                                                           |
-| [rejectJoinResponse](./rejectjoinresponse.md)          | Response to reject participant to the call                                                           |
-| [inviteNewBotResponse](./invitenewbotresponse.md)      | Response to request participant joining notification sent out again as an incoming call notification |
+| [acceptJoinResponse](./acceptjoinresponse.md)          | Response to accept participant to the call.                                                           |
+| [rejectJoinResponse](./rejectjoinresponse.md)          | Response to reject participant to the call.                                                           |
+| [inviteNewBotResponse](./invitenewbotresponse.md)      | Response to request participant joining notification sent out again as an incoming call notification. |
 
 ## JSON representation
 
