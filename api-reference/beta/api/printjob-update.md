@@ -102,7 +102,9 @@ PATCH https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d4
 The following is an example of the response. 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.printJob",
+  "name": "printjob-update"
 } -->
 >Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 ```http
