@@ -99,13 +99,13 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.printJob",
-  "name": "printjob-update"
+  "@odata.type": "microsoft.graph.printJob"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1688
+Content-length: 225
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('d5ef6ec4-07ca-4212-baf9-d45be126bfbb')/jobs/$entity",
   "id": "44353",
