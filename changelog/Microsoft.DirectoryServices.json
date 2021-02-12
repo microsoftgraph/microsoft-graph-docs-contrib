@@ -72,6 +72,80 @@
     },
     {
       "ChangeList": [
+        {
+          "Id": "c2371dc5-140b-11eb-baa1-5b13c31fb2cd",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceCategory** property to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
+          "Target": "device"
+        },
+        {
+          "Id": "c2397f24-140b-11eb-baa1-5b13c31fb2cd",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceOwnership",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceOwnership** property to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
+          "Target": "device"
+        },
+        {
+          "Id": "c23be154-140b-11eb-baa1-5b13c31fb2cd",
+          "ApiChange": "Property",
+          "ChangedApiName": "domainName",
+          "ChangeType": "Addition",
+          "Description": "Added the **domainName** property to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
+          "Target": "device"
+        },
+        {
+          "Id": "c23e428f-140b-11eb-baa1-5b13c31fb2cd",
+          "ApiChange": "Property",
+          "ChangedApiName": "enrollmentProfileName",
+          "ChangeType": "Addition",
+          "Description": "Added the **enrollmentProfileName** property to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
+          "Target": "device"
+        },
+        {
+          "Id": "c240a534-140b-11eb-baa1-5b13c31fb2cd",
+          "ApiChange": "Property",
+          "ChangedApiName": "enrollmentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **enrollmentType** property to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
+          "Target": "device"
+        },
+        {
+          "Id": "c2456a63-140b-11eb-baa1-5b13c31fb2cd",
+          "ApiChange": "Property",
+          "ChangedApiName": "isRooted",
+          "ChangeType": "Addition",
+          "Description": "Added the **isRooted** property to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
+          "Target": "device"
+        },
+        {
+          "Id": "c247cd6c-140b-11eb-baa1-5b13c31fb2cd",
+          "ApiChange": "Property",
+          "ChangedApiName": "managementType",
+          "ChangeType": "Addition",
+          "Description": "Added the **managementType** property to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
+          "Target": "device"
+        },
+        {
+          "Id": "c24a307e-140b-11eb-baa1-5b13c31fb2cd",
+          "ApiChange": "Property",
+          "ChangedApiName": "registrationDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrationDateTime** property to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
+          "Target": "device"
+        }
+      ],
+      "Id": "c234b9d1-140b-11eb-baa1-5b13c31fb2cd",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-11T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
        {
          "Id": "0a73cfac-4f88-11eb-ae35-ed470c456b69",
          "ApiChange": "Resource",
