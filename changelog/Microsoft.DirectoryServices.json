@@ -21,13 +21,77 @@
     {
       "ChangeList": [
         {
-          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
+          "Id": "218a742f-17a1-4046-8d62-4f04a9bc6857",
           "ApiChange": "Resource",
-          "ChangedApiName": "EntitlementManagement.ReadWrite.All,EntitlementManagement.Read.All",
+          "ChangedApiName": "accessPackage",
           "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** applications permissions to the [Permissions reference](permissions-reference.md).",
-          "Target": "Permissions reference"
-        }
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Target": "accessPackage"
+      },
+      {
+          "Id": "28e928ba-cd45-4afa-809d-8b29a9c1a515",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Target": "accessPackageAssignment"
+      },
+      {
+          "Id": "dd1839d9-860e-4ea0-ba5b-f2c9550970ee",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Target": "accessPackageAssignmentPolicy"
+      },
+      {
+          "Id": "067c1844-ec66-40af-a0fe-c64da2bc6087",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Target": "accessPackageAssignmentRequest"
+      },
+      {
+          "Id": "ee5c72dc-9bce-4d8b-8095-fec303e0589f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentResourceRole",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Target": "accessPackageAssignmentResourceRole"
+      },
+      {
+          "Id": "88508a19-e547-4f89-bced-f975f4121810",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageCatalog",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Target": "accessPackageCatalog"
+      },
+      {
+          "Id": "41091dc6-f6d4-4ea0-b9b1-5efc17a44902",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Target": "accessPackageResourceRequest"
+      },
+      {
+          "Id": "efd12ab7-bd62-4c5f-a367-d4ae05015ddb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "connectedOrganization",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Target": "connectedOrganization"
+      },
+      {
+          "Id": "f406177a-3983-47c7-be27-ce27503adf15",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entitlementManagementSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Target": "entitlementManagementSettings"
+      }
       ],
       "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
       "Cloud": "prd",
