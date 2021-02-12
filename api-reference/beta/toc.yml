@@ -10422,7 +10422,7 @@ items:
               href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
             - name: Delete
               href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
-              - name: Email policy
+          - name: Email policy
             href: resources/emailauthenticationmethodconfiguration.md
             items:
             - name: Get
