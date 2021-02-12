@@ -13,9 +13,9 @@
         {
           "Id": "48f9bb34-6c06-11eb-83a5-b441f1c9dab3",
           "ApiChange": "Property",
-          "ChangedApiName": "shortdescription",
+          "ChangedApiName": "shortDescription",
           "ChangeType": "Addition",
-          "Description": "Added the **shortdescription** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource",
+          "Description": "Added the **shortDescription** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource",
           "Target": "teamsAppDefinition"
         },
         {
