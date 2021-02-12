@@ -10341,7 +10341,18 @@ items:
               href: api/windowshelloforbusinessauthenticationmethod-get.md
             - name: Delete
               href: api/windowshelloforbusinessauthenticationmethod-delete.md
-          - name: Phone
+           - name: Temporary Access Pass 
+            href: resources/temporaryaccesspassauthenticationmethod.md
+            items:
+            - name: List
+              href: api/temporaryaccesspassauthenticationmethod-list.md
+            - name: Get
+              href: api/temporaryaccesspassauthenticationmethod-get.md
+            - name: Delete
+              href: api/temporaryaccesspassauthenticationmethod-delete.md
+            - name: Add
+              href: api/temporaryaccesspassauthenticationmethod-create
+           - name: Phone
             href: resources/phoneauthenticationmethod.md
             items:
             - name: List
@@ -10413,18 +10424,16 @@ items:
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
             - name: Delete
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
-           - name: Temporary Access Pass
-            href: resources/temporaryaccesspassauthenticationmethod.md
+          - name: Temporary Access Pass policy
+            href: resources/temporaryaccesspassauthenticationmethodconfiguration.md
             items:
-            - name: List
-              href: api/temporaryaccesspassauthenticationmethod-list.md
-           - name: Create
-               href: api/temporaryaccesspassauthenticationmethod-create.md 
-           - name: Get
-              href: api/temporaryaccesspassauthenticationmethod-get.md
+            - name: Get
+              href: api/temporaryaccesspassauthenticationmethodconfiguration-get.md
+            - name: Update
+              href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
             - name: Delete
-              href: api/temporaryaccesspassauthenticationmethod-delete.md
-          - name: Email policy
+              href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
+              - name: Email policy
             href: resources/emailauthenticationmethodconfiguration.md
             items:
             - name: Get
