@@ -41,7 +41,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deviceCategory",
           "ChangeType": "Addition",
-          "Description": "Added the **deviceCategory** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource",
+          "Description": "Added the **deviceCategory** property to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
           "Target": "device"
         },
         {
@@ -49,7 +49,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deviceOwnership",
           "ChangeType": "Addition",
-          "Description": "Added the **deviceOwnership** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource",
+          "Description": "Added the **deviceOwnership** property to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
           "Target": "device"
         },
         {
@@ -57,7 +57,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "domainName",
           "ChangeType": "Addition",
-          "Description": "Added the **domainName** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource",
+          "Description": "Added the **domainName** property to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
           "Target": "device"
         },
         {
@@ -65,7 +65,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "enrollmentProfileName",
           "ChangeType": "Addition",
-          "Description": "Added the **enrollmentProfileName** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource",
+          "Description": "Added the **enrollmentProfileName** property to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
           "Target": "device"
         },
         {
@@ -73,7 +73,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "enrollmentType",
           "ChangeType": "Addition",
-          "Description": "Added the **enrollmentType** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource",
+          "Description": "Added the **enrollmentType** property to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
           "Target": "device"
         },
         {
@@ -81,7 +81,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isRooted",
           "ChangeType": "Addition",
-          "Description": "Added the **isRooted** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource",
+          "Description": "Added the **isRooted** property to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
           "Target": "device"
         },
         {
@@ -89,7 +89,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "managementType",
           "ChangeType": "Addition",
-          "Description": "Added the **managementType** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource",
+          "Description": "Added the **managementType** property to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
           "Target": "device"
         },
         {
@@ -97,14 +97,14 @@
           "ApiChange": "Property",
           "ChangedApiName": "registrationDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **registrationDateTime** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource",
+          "Description": "Added the **registrationDateTime** property to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
           "Target": "device"
         }
       ],
       "Id": "c234b9d1-140b-11eb-baa1-5b13c31fb2cd",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-02-01T00:00:00.000Z",
+      "CreatedDateTime": "2021-02-11T00:00:00.000Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
