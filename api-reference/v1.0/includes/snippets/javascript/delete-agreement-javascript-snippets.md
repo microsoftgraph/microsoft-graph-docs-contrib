@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/agreements/{id}')
-	.version('beta')
+	.version('v1.0')
 	.delete();
 
 ```
