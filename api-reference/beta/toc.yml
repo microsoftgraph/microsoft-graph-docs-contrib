@@ -10422,6 +10422,15 @@ items:
               href: api/emailauthenticationmethodconfiguration-update.md
             - name: Delete
               href: api/emailauthenticationmethodconfiguration-delete.md
+          - name: Text Message policy
+            href: resources/smsAuthenticationMethodConfiguration.md
+            items:
+            - name: Get
+              href: api/smsAuthenticationMethodConfiguration-get.md
+            - name: Update
+              href: api/smsAuthenticationMethodConfiguration-update.md
+            - name: Delete
+              href: api/smsAuthenticationMethodConfiguration-delete.md
         - name: B2C authentication methods policy
           href: resources/b2cauthenticationmethodspolicy.md
           items:
