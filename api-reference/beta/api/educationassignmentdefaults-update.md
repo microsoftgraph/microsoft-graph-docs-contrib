@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) object. Only Teachers can update these settings.
+Update the properties of an [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) object. Only teachers can update these settings.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,9 +44,9 @@ In the request body, supply the values for relevant fields of the [educationAssi
 
 |Property|Type|Description|
 |:---|:---|:---|
-|addedStudentAction|educationAddedStudentAction|class-level default behavior for handling students who are added after the assignment is published. Default value - none. Possible values are: `none`, `assignIfOpen`.|
-|dueTime|TimeOfDay|class-level default value for due time field. Default value - 23:59:00|
-|notificationChannelUrl|String|Default Teams channel to which notifications will be sent. Default value - null.|
+|addedStudentAction|educationAddedStudentAction|Class-level default behavior for handling students who are added after the assignment is published. Possible values are: `none`, `assignIfOpen`. The default value is `none`.|
+|dueTime|TimeOfDay|Class-level default value for due time field. Default value is `23:59:00`|
+|notificationChannelUrl|String|Default Teams channel to which notifications will be sent. Default value is `null`.|
 
 
 
