@@ -24,7 +24,7 @@ Specifies class-level defaults respected by new assignments created in the class
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|addedStudentAction|educationAddedStudentAction|Class-level default behavior for handling students who are added after the assignment is published. Possible values are: `none`, `assignIfOpen`, `unknownFutureValue`.|
+|addedStudentAction|educationAddedStudentAction|Class-level default behavior for handling students who are added after the assignment is published. Possible values are: `none`, `assignIfOpen`.|
 |dueTime|TimeOfDay|Class-level default value for due time field. Default value is `23:59:00`.|
 |notificationChannelUrl|String|Default Teams channel to which notifications will be sent. Default value is `null`.|
 
