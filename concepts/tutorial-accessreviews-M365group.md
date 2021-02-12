@@ -1,12 +1,12 @@
 ---
 title: "Using the Access Reviews API for your M365 groups"
-description: "Use the Access Reviews API to review access for your M365 group"
+description: "Use the Access Reviews API to review access to your M365 groups"
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
 ---
 
-# Tutorial: Use the Access Reviews API to review access for all your M365 groups with external identities
+# Tutorial: Use the Access Reviews API to review access to all your M365 groups with external identities
 
 In this tutorial, you will use Graph Explorer to create and read access reviews that targets all M365 Groups with external identities in the tenant. To achieve this, you'll first use Azure AD B2B to invite and create an external identity in your tenant. Then, you'll add this external identity to your M365 group prior to creating and reading the access review.
 
@@ -482,7 +482,7 @@ HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
-Congratulations! You have created an access review for the M365 group and the group owners have approved the access review.
+Congratulations! You have created an access review for the M365 group and the group owners have approved access for the current review cycle. You have also triggered a scheduled quarterly re-evaluation and re-attestation of access for all guest users. The group owners will review access during these cycles, choosing either to approve or deny access for the guest users.
 
 ## See also
 

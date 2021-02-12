@@ -1,12 +1,12 @@
 ---
 title: "Using the Access Reviews API for your security groups"
-description: "Use the Access Reviews API to review access for your groups"
+description: "Use the Access Reviews API to review access to your groups"
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
 ---
 
-# Tutorial: Use the Access Reviews API to review access for your groups
+# Tutorial: Use the Access Reviews API to review access to your groups
 
 In this tutorial, you will use Microsoft Graph Explorer to create and read access reviews and understand its main building blocks: definitions, instances, and decisions.
 
@@ -403,7 +403,7 @@ Now, in the same incognito browser session, log in to https://myaccess.microsoft
 
 Back in the main browser session with you logged in as the global administrator user, repeat Step 4 to see that the **decision** property for the member who completed step 5 is `Approve`.
 
-Congratulations! You have created an access review and self-attested to the need for access.
+Congratulations! You have created an access review and self-attested to the need for access. You only do this once, and maintain access until after a year when the access review definition expires.
 
 ## Step 6: Clean up resources
 
