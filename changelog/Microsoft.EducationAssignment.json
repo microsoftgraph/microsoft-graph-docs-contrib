@@ -7,7 +7,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "assignmentDefaults",
           "ChangeType": "Addition",
-          "Description": "Added the **assignmentDefaults** relationship to [educationClass](https://docs.microsoft.com/en-us/graph/api/resources/educationClass?view=graph-rest-beta) resource",
+          "Description": "Added the **assignmentDefaults** relationship to [educationClass](https://docs.microsoft.com/en-us/graph/api/resources/educationClass?view=graph-rest-beta) resource.",
           "Target": "educationClass"
         },
         {
@@ -15,14 +15,14 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationAssignmentDefaults",
           "ChangeType": "Addition",
-          "Description": "Added the [educationAssignmentDefaults](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta) resource type",
+          "Description": "Added the [educationAssignmentDefaults](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta) resource type.",
           "Target": "educationAssignmentDefaults"
         }
       ],
       "Id": "b3c675dd-6774-11eb-bfcb-fe6ee26532c0",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-02-05T05:40:49.492Z",
+      "CreatedDateTime": "2021-02-12T05:40:49.492Z",
       "WorkloadArea": "Education",
       "SubArea": ""
     },
