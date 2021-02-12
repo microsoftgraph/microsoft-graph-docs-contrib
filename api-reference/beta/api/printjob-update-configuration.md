@@ -95,7 +95,8 @@ PATCH https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d4
 The following is an example of the response. 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.printJobConfiguration"
 } -->
 ```http
 HTTP/1.1 200 OK
