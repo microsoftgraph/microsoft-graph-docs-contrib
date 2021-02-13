@@ -389,7 +389,6 @@ items:
             href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
-          displayName: Activity feed notifications  
           - name: Send activity feed notifications
             href: teams-send-activityfeednotifications.md
           - name: Best practices
