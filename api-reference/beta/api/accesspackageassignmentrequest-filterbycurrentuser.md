@@ -38,7 +38,7 @@ The following table shows the parameters that can be used with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|String|The list of options that can be used to filter on current user. Possible options are: `target`, `createdBy` and `approver`. Additional options may be available in the future.|
+|on|accessPackageAssignmentRequestFilterByCurrentUserOptions **TODO-new article for enum**|The list of options that can be used to filter on current user. Possible options are: `target`, `createdBy` and `approver`. Additional options may be available in the future.|
 
 - `target` is used to get the `accessPackageAssignmentRequest` objects where the signed-in user is the target. The resulting list includes all the assignment requests, current and expired, that were requested by the called or for the caller, across all catalogs and access packages.
 
