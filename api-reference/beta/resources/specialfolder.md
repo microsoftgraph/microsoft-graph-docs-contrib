@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: SpecialFolder
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "sharepoint"
 ---
 # SpecialFolder resource type
 
