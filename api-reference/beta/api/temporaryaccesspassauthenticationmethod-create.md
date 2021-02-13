@@ -2,6 +2,7 @@
 title: "Create temporaryAccessPassAuthenticationMethod"
 description: "Create a new temporaryAccessPassAuthenticationMethod object."
 author: "inbarckMS"
+ms.author: inbarc
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
