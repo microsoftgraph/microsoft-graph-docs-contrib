@@ -10341,6 +10341,17 @@ items:
               href: api/windowshelloforbusinessauthenticationmethod-get.md
             - name: Delete
               href: api/windowshelloforbusinessauthenticationmethod-delete.md
+          - name: Temporary Access Pass 
+            href: resources/temporaryaccesspassauthenticationmethod.md
+            items:
+            - name: List
+              href: api/temporaryaccesspassauthenticationmethod-list.md
+            - name: Get
+              href: api/temporaryaccesspassauthenticationmethod-get.md
+            - name: Create
+              href: api/temporaryaccesspassauthenticationmethod-create
+            - name: Delete
+              href: api/temporaryaccesspassauthenticationmethod-delete.md
           - name: Phone
             href: resources/phoneauthenticationmethod.md
             items:
