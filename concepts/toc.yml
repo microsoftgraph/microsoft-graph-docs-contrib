@@ -298,9 +298,7 @@ items:
               - name: Android app integration
                 href: notifications-integrating-with-android.md
               - name: IOS app integration
-                href: notifications-integrating-with-ios.md
-          - name: Best practices
-            href: notifications-api-best-practices.md      
+                href: notifications-integrating-with-ios.md                
       - name: People and workplace intelligence
         items:
           - name: Overview
@@ -391,8 +389,11 @@ items:
             href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
+          displayName: Activity feed notifications  
           - name: Send activity feed notifications
             href: teams-send-activityfeednotifications.md
+          - name: Best practices
+            href: activity-feed-notifications-best-practices.md  
       - name: To-do tasks
         href: todo-concept-overview.md
         displayName: Microsoft To Do
