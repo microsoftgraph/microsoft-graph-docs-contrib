@@ -112,6 +112,7 @@ The `root` identifier always references the root site for a given target, as fol
 [site]: site.md
 [sharepointIds]: sharepointids.md
 [siteCollection]: sitecollection.md
+[store]: termstore-store.md
 
 ## JSON representation
 
@@ -153,7 +154,6 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
-  "termStore": { "@odata.type": "microsoft.graph.termStore.store" },
 
   /* inherited from baseItem */
   "name": "string",
