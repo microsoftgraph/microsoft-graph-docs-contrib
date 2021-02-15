@@ -1,6 +1,6 @@
 ---
-title: Update printJob configuration
-description: Update the configuration of a print job
+title: Update printJob 
+description: Update the configuration of a print job.
 author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates the [print job](../resources/printjob.md). Only the **configuration** property can be updated.
+Update a [print job](../resources/printjob.md). Only the **configuration** property can be updated.
 
-Updating a print job will only succeed if there is a [printTask](../resources/printTask.md) in `processing` state on the associated print job, started by a trigger that requesting app created. For details about how to register a task trigger, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+Updating a print job configuration will only succeed if a [printTask](../resources/printTask.md) in a `processing` state, started by a trigger that the requesting app created, is associated with the print job. For details about how to register a task trigger, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,15 +42,13 @@ PATCH /print/printers/{id}/jobs/{id}
 In the request body, supply the values of the relevant [printJob](../resources/printjob.md) fields. Existing properties that are not included in the request body will maintain their previous values.
 
 ## Response
-If successful, this method returns a `200 OK` response code with updated printJob object in the response body.
+If successful, this method returns a `200 OK` response code with an updated [printJob](../resources/printjob.md) object in the response body.
 
 ## Example
 The following example shows how to call this API.
 ### Request
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob-update"
@@ -95,7 +93,7 @@ PATCH https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d4
 
 ### Response
 The following is an example of the response. 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
