@@ -73,6 +73,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appRoleAssignments
 Content-Type: application/json
+Content-Length: 110
 
 {
   "principalId": "c9a5aff7-9298-4d71-adab-0a222e0a05e4",
