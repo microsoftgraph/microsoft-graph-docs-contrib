@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Update the [configuration](../resources/printjobconfiguration.md) property of a [print job](../resources/printjob.md).
 
-Updating a print job configuration will only succeed if there is a [printTask](../resources/printTask.md) in `processing` state on the associated print job, started by a trigger that requesting app created. For details about how to register a task trigger, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+Updating a print job configuration will only succeed if a [printTask](../resources/printTask.md) in a `processing` state, started by a trigger that the requesting app created, is associated with the print job. For details about how to register a task trigger, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,14 +42,13 @@ PATCH /print/printers/{id}/jobs/{id}/configuration
 In the request body, supply the values of the relevant [printJobConfiguration](../resources/printjobconfiguration.md) fields. Existing properties that are not included in the request body will maintain their previous values.
 
 ## Response
-If successful, this method returns a `200 OK` response code, with updated printJobConfiguration object in the response body.
+If successful, this method returns a `200 OK` response code, with an updated **printJobConfiguration** object in the response body.
 
 ## Example
 The following example shows how to call this API.
 ### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob-update-configuration"
