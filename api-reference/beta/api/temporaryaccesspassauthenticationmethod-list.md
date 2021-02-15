@@ -59,14 +59,14 @@ This method does not support optional query parameters to customize the response
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}|
+|Authorization|Bearer {token}. Required.|
 
 ## Request 
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) objects in the response body.  This call will only return a single object as only one temporaryAccessPassAuthenticationMethod can be set on users.
+If successful, this method returns a `200 OK` response code and a collection of [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) objects in the response body.  This call will only return a single object because only one **temporaryAccessPassAuthenticationMethod** can be set on users.
 
 ## Examples
 
