@@ -1,6 +1,6 @@
 ---
 title: "Delete temporaryAccessPassAuthenticationMethodConfiguration"
-description: "Deletes a temporaryAccessPassAuthenticationMethodConfiguration object."
+description: "Remove changes made to a temporaryAccessPassAuthenticationMethodConfiguration object."
 author: "inbarckms"
 ms.author: inbarc
 localization_priority: Normal
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove changes made to the [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) by reverting the policy to its default configuration.
+Remove changes made to the [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object by reverting the policy to its default configuration.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
