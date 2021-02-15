@@ -72,14 +72,13 @@ Here is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignments
+POST https://graph.microsoft.com/beta/servicePrincipals/9028d19c-26a9-4809-8e3f-20ff73e2d75e/appRoleAssignments
 Content-Type: application/json
-Content-Length: 110
 
 {
-  "principalId": "c9a5aff7-9298-4d71-adab-0a222e0a05e4",
-  "resourceId": "8e881353-1735-45af-af21-ee1344582a4d",
-  "appRoleId": "00000000-0000-0000-0000-000000000000"
+  "principalId": "8fce32da-1246-437b-99cd-76d1d4677bd5",
+  "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e",
+  "appRoleId": "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7"
 }
 ```
 # [C#](#tab/csharp)
@@ -120,13 +119,15 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "id": "41W1zT6z1U-kJxf62svfp1HFE8pMZhxDun-ThPczmJE",
-  "creationTimestamp": "2021-02-02T04:22:45.9480566Z",
-  "principalType": "User",
-  "principalId": "c9a5aff7-9298-4d71-adab-0a222e0a05e4",
-  "principalDisplayName": "Alex Wilber",
-  "resourceId": "8e881353-1735-45af-af21-ee1344582a4d",
-  "resourceDisplayName": "dxprovisioning-graphapi-client"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#appRoleAssignments/$entity",
+  "id": "2jLOj0YSe0OZzXbR1Gd71fDqFUrPM1xIgUfvWBHJ9n0",
+  "creationTimestamp": "2021-02-15T16:39:38.2975029Z",
+  "appRoleId": "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7",
+  "principalDisplayName": "Remote living",
+  "principalId": "8fce32da-1246-437b-99cd-76d1d4677bd5",
+  "principalType": "Group",
+  "resourceDisplayName": "Yammer",
+  "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e"
 }
 ```
 
