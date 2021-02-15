@@ -66,7 +66,7 @@ The following is an example of the request to retrieve the app roles assignments
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/8e881353-1735-45af-af21-ee1344582a4d/appRoleAssignedTo
+GET https://graph.microsoft.com/v1.0/servicePrincipals/8e881353-1735-45af-af21-ee1344582a4d/appRoleAssignedTo
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-get-approleassignedto-csharp-snippets.md)]
@@ -105,13 +105,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#appRoleAssignments",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals('8e881353-1735-45af-af21-ee1344582a4d')/appRoleAssignedTo",
   "value": [
     {
       "id": "41W1zT6z1U-kJxf62svfp1HFE8pMZhxDun-ThPczmJE",
-      "creationTimestamp": "2021-02-02T04:22:45.9480566Z",
+      "deletedDateTime": null,
       "appRoleId": "00000000-0000-0000-0000-000000000000",
-      "principalDisplayName": "Alex Wilber",
+      "createdDateTime": "2021-02-02T04:22:45.9480566Z",
+      "principalDisplayName": "MOD Administrator",
       "principalId": "cdb555e3-b33e-4fd5-a427-17fadacbdfa7",
       "principalType": "User",
       "resourceDisplayName": "dxprovisioning-graphapi-client",
