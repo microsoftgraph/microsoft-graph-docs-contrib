@@ -19,7 +19,7 @@ Represents a Temporaty Access Pass registered to a user. A Temporary Access Pass
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/temporaryaccesspassauthenticationmethod-list.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) collection|Retrieve a list of the user's temporaryAccessPassAuthenticationMethod. Users can only have one Temporary Access Pass authentication method.|
+|[List](../api/temporaryaccesspassauthenticationmethod-list.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) collection|Retrieve a list of a user's **temporaryAccessPassAuthenticationMethod** objects and their properties. Users can only have one Temporary Access Pass authentication method.|
 |[Create](../api/temporaryaccesspassauthenticationmethod-create.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Create a user's **temporaryAccessPassAuthenticationMethod** object.|
 |[Get](../api/temporaryaccesspassauthenticationmethod-get.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Retrieve the properties of the user's **temporaryAccessPassAuthenticationMethod** object.||
 |[Delete](../api/temporaryaccesspassauthenticationmethod-delete.md)|None|Delete a user's **temporaryAccessPassAuthenticationMethod** object.|
