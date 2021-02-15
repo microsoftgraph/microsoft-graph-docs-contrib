@@ -29,8 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /me/profile/accounts
-POST /users/{id | userPrincipalName}/profile/accounts
+POST /me/profile/account
+POST /users/{id | userPrincipalName}/profile/account
 ```
 
 ## Request headers
@@ -65,7 +65,7 @@ If successful, this method returns a `201 Created` response code and a [userAcco
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/profile/accounts
+POST https://graph.microsoft.com/beta/me/profile/account
 Content-Type: application/json
 Content-length: 494
 
