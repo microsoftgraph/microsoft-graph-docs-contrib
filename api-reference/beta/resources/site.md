@@ -97,7 +97,7 @@ The `root` identifier always references the root site for a given target, as fol
 | **pages**         | Collection([sitePage][])         | The collection of pages in the SitePages list in this site.
 | **permissions**   | Collection([permission][])         | The permissions associated with the site. Nullable.
 | **sites**         | Collection([site][])             | The collection of the sub-sites under this site.
-| **termStore**     | [microsoft.graph.termStore.store]                          | The termStore under this site.
+| **termStore**     | [microsoft.graph.termStore.store]  | The termStore under this site.
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
@@ -154,6 +154,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
+  "termStore": { "@odata.type": "microsoft.graph.termStore.store" },
 
   /* inherited from baseItem */
   "name": "string",
