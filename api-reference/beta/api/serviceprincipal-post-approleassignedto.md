@@ -69,14 +69,13 @@ Here is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignedTo
+POST https://graph.microsoft.com/beta/servicePrincipals/9028d19c-26a9-4809-8e3f-20ff73e2d75e/appRoleAssignedTo
 Content-Type: application/json
-Content-Length: 110
 
 {
-  "principalId": "c9a5aff7-9298-4d71-adab-0a222e0a05e4",
-  "resourceId": "8e881353-1735-45af-af21-ee1344582a4d",
-  "appRoleId": "00000000-0000-0000-0000-000000000000"
+  "principalId": "33ad69f9-da99-4bed-acd0-3f24235cb296",
+  "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e",
+  "appRoleId": "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7"
 }
 ```
 # [C#](#tab/csharp)
@@ -115,16 +114,18 @@ Here is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 253
 
 {
-  "id": "41W1zT6z1U-kJxf62svfp1HFE8pMZhxDun-ThPczmJE",
-  "creationTimestamp": "2021-02-02T04:22:45.9480566Z",
-  "principalType": "User",
-  "principalId": "c9a5aff7-9298-4d71-adab-0a222e0a05e4",
-  "principalDisplayName": "Alex Wilber",
-  "resourceId": "8e881353-1735-45af-af21-ee1344582a4d",
-  "resourceDisplayName": "dxprovisioning-graphapi-client"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals('9028d19c-26a9-4809-8e3f-20ff73e2d75e')/appRoleAssignedTo/$entity",
+  "id": "-WmtM5na7Uus0D8kI1yylpU9Mdo0Pb9OoBJvd3T5eKc",
+  "deletedDateTime": null,
+  "appRoleId": "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7",
+  "createdDateTime": "2021-02-15T16:14:59.8643039Z",
+  "principalDisplayName": "Parents of Contoso",
+  "principalId": "33ad69f9-da99-4bed-acd0-3f24235cb296",
+  "principalType": "Group",
+  "resourceDisplayName": "Yammer",
+  "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e"
 }
 ```
 
