@@ -70,6 +70,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appRoleAssignedTo
 Content-Type: application/json
+Content-Length: 110
 
 {
   "principalId": "c9a5aff7-9298-4d71-adab-0a222e0a05e4",
@@ -113,6 +114,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+Content-length: 253
 
 {
   "id": "41W1zT6z1U-kJxf62svfp1HFE8pMZhxDun-ThPczmJE",

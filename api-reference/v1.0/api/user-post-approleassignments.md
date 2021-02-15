@@ -66,13 +66,14 @@ Here is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/users/eabd2f81-0d6a-485b-8b72-28faaea2ce04/appRoleAssignments
+POST https://graph.microsoft.com/v1.0/users/{id}/appRoleAssignments
 Content-Type: application/json
+Content-Length: 110
 
 {
-  "principalId": "eabd2f81-0d6a-485b-8b72-28faaea2ce04",
-  "resourceId": "8e881353-1735-45af-af21-ee1344582a4d",
-  "appRoleId": "00000000-0000-0000-0000-000000000000"
+  "principalId": "principalId-value",
+  "resourceId": "resourceId-value",
+  "appRoleId": "appRoleId-value"
 }
 ```
 # [C#](#tab/csharp)
@@ -114,16 +115,13 @@ Content-type: application/json
 Content-length: 253
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('eabd2f81-0d6a-485b-8b72-28faaea2ce04')/appRoleAssignments/$entity",
-  "id": "gS-96moNW0iLcij6rqLOBJaWSsOfpEpFujl3T7sDGeQ",
-  "deletedDateTime": null,
-  "appRoleId": "00000000-0000-0000-0000-000000000000",
-  "createdDateTime": "2021-02-11T19:56:57.9585052Z",
-  "principalDisplayName": "Adele Vance",
-  "principalId": "eabd2f81-0d6a-485b-8b72-28faaea2ce04",
-  "principalType": "User",
-  "resourceDisplayName": "dxprovisioning-graphapi-client",
-  "resourceId": "8e881353-1735-45af-af21-ee1344582a4d"
+  "id": "id-value",
+  "creationTimestamp": "2016-10-19T10:37:00Z",
+  "principalType": "principalType-value",
+  "principalId": "principalId-value",
+  "principalDisplayName": "principalDisplayName-value",
+  "resourceId": "resourceId-value",
+  "resourceDisplayName": "resourceDisplayName-value"
 }
 ```
 
