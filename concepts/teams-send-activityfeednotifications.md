@@ -1,8 +1,7 @@
 ---
 title: "Send activity feed notifications to users in Microsoft Teams"
 description: "Send activity feed notifications to users in Microsoft Teams using Teams app and microsoft graph."
-author: "Ramjot Singh"
-ms.author: "RamjotSingh"
+ms.author: "lajanuar"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
@@ -283,4 +282,4 @@ The settings will appear after the first notification is sent by the Teams app. 
 `Conflict` errors primarily occur when multiple Teams apps installed in the same scope (team, chat, user, and so on) have the same Azure AD appId in the `webApplicationInfo` section of the manifest. When this happens, you will get an error such as `Found multiple applications with the same Azure AD App ID 'Your AzureAD AppId'.`. Make sure that you use unique Azure AD apps for unique Teams apps. Note that you can have the same Teams app installed in multiple scopes (team + user for example).
 
 ## See also
-[Best practices for Activity feed notifications](activity-feed-notifications-best-practices.md)
+[Best practices for Activity Feed Notifications](activity-feed-notifications-best-practices.md)
