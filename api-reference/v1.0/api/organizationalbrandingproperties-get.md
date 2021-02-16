@@ -2,6 +2,7 @@
 ms.author: "almars"
 title: "Get organizationalBrandingProperties"
 description: "Retrieve the properties and relationships of an organizationalBrandingProperties object."
+author: "kexia"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
