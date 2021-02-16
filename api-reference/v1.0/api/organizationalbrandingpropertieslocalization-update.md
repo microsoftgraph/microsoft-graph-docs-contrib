@@ -1,8 +1,8 @@
 ---
+ms.author: "almars"
 title: "Update localized organizationalbrandingproperties"
 description: "Update the properties of the organizationalbrandingproperties object for a specific localization."
 localization_priority: Normal
-author: "kexia"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
