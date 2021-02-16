@@ -1,7 +1,8 @@
 ---
 title: "Send activity feed notifications to users in Microsoft Teams"
 description: "Send activity feed notifications to users in Microsoft Teams using Teams app and microsoft graph."
-author: "RamjotSingh"
+author: "Ramjot Singh"
+ms.author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
