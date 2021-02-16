@@ -2,7 +2,7 @@
 title: "Create organizationalBrandingProperties"
 description: "Create organization branding."
 localization_priority: Normal
-ms.author "almars"
+ms.author: "almars"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
