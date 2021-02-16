@@ -8,7 +8,7 @@ ms.prod: "governance"
 
 # Overview of the Access Reviews API for groups
 
-The [Access Reviews](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) Graph API allows you to programmatically review access to your resources. This includes:
+The [Access Reviews Graph API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta) allows you to programmatically review access to your resources. This includes:
 + Creating, reading, updating, and deleting access reviews, their settings, and schedules.
 + Investigating past access reviews and the decisions taken by reviewers, including the steps Azure AD took automatically.
 
@@ -22,9 +22,9 @@ The Access Reviews APIs support both delegated and application contexts.
   + A resource owner using an app or a script to create an access review for a resource they own.
   + An administrator automatically collecting all decisions for one or more access reviews.
   
-    To authorize your app in this context, see [get access on behalf of a user](https://docs.microsoft.com/graph/auth-v2-user).
+    To authorize your app in this context, see [get access on behalf of a user](/graph/auth-v2-user).
 
-+ In an application context: an application calls the Access Reviews API without a signed-in user present. A typical scenario is a scheduled background script regularly collecting decisions for all access reviews. To authorize your app in this context, see [get access without a user](https://docs.microsoft.com/graph/auth-v2-service).
++ In an application context: an application calls the Access Reviews API without a signed-in user present. A typical scenario is a scheduled background script regularly collecting decisions for all access reviews. To authorize your app in this context, see [get access without a user](/graph/auth-v2-service).
 
 ## Building blocks of the Access Reviews API
 
@@ -40,6 +40,6 @@ The Access Reviews API structures information logically and comprises three majo
 
 ## See also
 
-- [Planning Azure Active Directory Access Reviews deployment.](https://docs.microsoft.com/azure/active-directory/governance/deploy-access-reviews)
-- [Get access on behalf of a user.](https://docs.microsoft.com/graph/auth-v2-user)
-- [Get access without a user.](https://docs.microsoft.com/auth-v2-service)
+- [Planning Azure Active Directory Access Reviews deployment.](/azure/active-directory/governance/deploy-access-reviews)
+- [Get access on behalf of a user.](/graph/auth-v2-user)
+- [Get access without a user.](/graph/auth-v2-service)

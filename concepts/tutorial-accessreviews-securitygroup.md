@@ -10,31 +10,30 @@ ms.prod: "governance"
 
 In this tutorial, you will use Microsoft Graph Explorer to create and read access reviews and understand its main building blocks: definitions, instances, and decisions.
 
-Using Microsoft Graph Explorer to try and test your Access Reviews API calls before you automate them into a script or an app saves you time by helping you properly define and validate your queries without recompiling your application.
+You can use Microsoft Graph Explorer or Postman to try out and test your Access Reviews API calls before you automate them into a script or an app. This saves you time by helping you properly define and validate your queries without repeatedly recompiling your application.
 
 ## Prerequisites
 
 To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
-+ Log in to Microsoft Graph Explorer as a user in a global administrator role.
++ Log in to [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a global administrator role.
   + [Optional] Start a new incognito session, logged in as one of the members you will add to the security group.
 + Permissions:
-  + To call the Access Reviews APIs in this tutorial, consent to the *AccessReview.ReadWrite.All* permission.
+  + To call the Access Reviews APIs, consent to the *AccessReview.ReadWrite.All* permission.
   + To create the security group, and delete it later after completing the tutorial, consent to the *Group.ReadWrite.All* permission.
 
-To consent to the required permissions in Microsoft Graph Exporer:
-1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-2. Click **Sign in to Graph Explorer** and sign in using the account that has a global administrator role.
-3. Select the settings gear icon to the right of the user account details, and then select **Select permissions**.
+To consent to the required permissions in Microsoft Graph Explorer:
+1. Click **Sign in to Graph Explorer** and sign in using the account that has a global administrator role.
+2. Select the settings gear icon to the right of the user account details, and then select **Select permissions**.
    
    ![Select the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/settings.png)
 
-4. Scroll through the list of permissions to find the *AccessReview.ReadWrite.All* and *Group.ReadWrite.All* permissions. To consent to the permission, select it first, then select **Consent**.
+3. Scroll through the list of permissions to find the *AccessReview.ReadWrite.All* and *Group.ReadWrite.All* permissions. To consent to the permission, select it first, then select **Consent**.
    
    ![Consent to the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png)
 
-5. While consenting to the *AccessReview.ReadWrite.All* permission, in the pop window, choose to **Consent on behalf of your organization** and then select **Accept** to accept the consent of the permissions. You do not need to consent to the *Group.ReadWrite.All* permission on behalf of your organization because the permission is not needed by other users.
+4. While consenting to the *AccessReview.ReadWrite.All* permission, in the pop window, choose to **Consent on behalf of your organization** and then select **Accept** to accept the consent of the permissions. You do not need to consent to the *Group.ReadWrite.All* permission on behalf of your organization because the permission is not needed by other users.
 
 ## Step 1: Create a security group, assign owners, and add members
 
@@ -115,12 +114,10 @@ Content-Type: application/json
 
 ## Step 2: Create an access review
 
-Create an access review for the members of the security group, with the following settings:
+Create an access review for members of the security group, with the following settings:
 + It is a self-reviewing access review. In this case, users under review will self-attest to their need for access to the group.
-+ This is a one-time access review. In this case, once access is granted, the user does not need to
++ This is a one-time access review. In this case, once access is granted, the user does not need to self-attest again within the access review period.
 + The review scope is limited to members of **Building security group**.
-
-For more information about the parameters required in the request body of these examples, see the [Access Reviews API Reference](https://docs.microsoft.com/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true).
 
 ### Request
 In this call, replace the following:
@@ -232,14 +229,14 @@ Content-type: application/json
     }
 }
 ```
-This is an access review definition. You can list and read this and any other existing definitions by running `GET` on `https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions`.
+This is an access review definition. You can list and read this and any other existing definitions defined in your tenant by running `GET` on `https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions`.
 
 ## Step 3: List instances of the access review
 
 The following query lists all instances of the access review definition. Because you created a one-time access review in Step 2, the request returns only one instance whose `id` is the same as the access definition’s `id`.
 
 ### Request
-In this call, replace `d7286a17-3a01-406a-b872-986b6b40317c` with the `id` of a definition returned in Step 2.
+In this call, replace `d7286a17-3a01-406a-b872-986b6b40317c` with the `id` of your access review definition returned in Step 2.
 
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c/instances
@@ -247,7 +244,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 ### Response
 
-In this response, the **status** of the access review instance is marked as `InProgress` because **startDateTime** is past and **endDateTime** is in the future. If **startDateTime** is in the future, the status will be marked as `NotStarted`. On the other hand, if **endDateTime** is in the past, the status will be marked as `Completed`.
+In this response, the **status** of the access review instance is `InProgress` because **startDateTime** is past and **endDateTime** is in the future. If **startDateTime** is in the future, the status will be `NotStarted`. On the other hand, if **endDateTime** is in the past, the status will be `Completed`.
 
 ```http
 HTTP/1.1 200 OK
@@ -349,17 +346,17 @@ Content-type: application/json
 }
 ```
 
-From the call, the **decision** property is `NotReviewed`. This is because none of the two members has completed their self-attestation. Follow step 5 to learn how each member can self-attest to their need for access review.
+From the call, the **decision** property has the value of `NotReviewed`. This is because none of the two members has completed their self-attestation. Follow step 5 to learn how each member can self-attest to their need for access review.
 
 ## Step 5: Self-review your pending access
 
-In Step 2, you configured the access review as a self-reviewing. This means that both members of the **Building security group** must self-attest to their need to maintain access to the group. Now you must perform your self-review action.
+In Step 2, you configured the access review as a self-reviewing. This means that both members of **Building security group** must self-attest to their need to maintain access to the group. You will complete this step as one of the two members of Building security group.
 
 In this step, you will:
 1. List your pending access review instances.
 2. Complete the access review self-attestation process.
 
-Start a new browser session in **Incognito** mode, or via an anonymous browser and log in as one of the two members of the **Building security group**. By doing so, you will not interrupt your current session as a user in the global administrator role. Alternatively, you can interrupt your current session by logging out and logging in to the portal as one of the two group members.
+Start a new browser session in **Incognito** mode, or via an anonymous browser, and log in as one of the two members of **Building security group**. By doing so, you will not interrupt your current session as a user in the global administrator role. Alternatively, you can interrupt your current session by logging out and logging in to the portal as one of the two group members.
 
 To list your pending access review instances, run the following query:
 
@@ -370,7 +367,7 @@ GET /me/pendingAccessReviewInstances
 ```
 
 #### Response
-From the response below, you have 1 pending access review to self-attest.
+From the response below, user Alex Wilber of `id` `43b12b0c-ee2c-4257-96fe-505d823e06ab` has 1 pending access review to self-attest to.
 
 ```http
 HTTP/1.1 200 OK
@@ -393,17 +390,17 @@ Content-type: application/json
     ]
 }
 ```
-You can use an `id` from the pending access reviews to read the access review definition. Using the call `/me/pendingAccessReviewInstances` in user context has a number of advantages:
+Using the call `/me/pendingAccessReviewInstances` in a user context has a number of advantages:
 + No service principal is required. A user can call and read their pending access review actions.
-+ Can be used by widgets or plugins on an Intranet page, or a bot or daemon that run as a background service. These can notify the user of new access reviews or of updates to access reviews. 
++ Can be used by widgets or plugins on an Intranet page, or a bot or daemon that run as a background service. These can notify you of new access reviews or of updates to access reviews. 
 
-Now, in the same incognito browser session, log in to https://myaccess.microsoft.com/ to complete the self-attestation. from the right navigation bar, select **Access reviews** and choose your access review. Select **Yes**, that you still need access to Building security group and enter a reason, then click **Submit**.
+In the same incognito browser session, log in to https://myaccess.microsoft.com/ to complete the self-attestation. From the right navigation bar, select **Access reviews** and choose your access review. Select **Yes**, that you still need access to **Building security group**, enter a reason, then click **Submit**.
 
    ![Self-attest to access review](../images/../concepts/images/tutorial-accessreviews-api/selfattest.png)
 
-Back in the main browser session with you logged in as the global administrator user, repeat Step 4 to see that the **decision** property for the member who completed step 5 is `Approve`.
+Back in the main browser session with you logged in as the global administrator user, repeat Step 4 to see that the **decision** property for the member who completed step 5 is now `Approve`.
 
-Congratulations! You have created an access review and self-attested to the need for access. You only do this once, and maintain access until after a year when the access review definition expires.
+Congratulations! You have created an access review and self-attested to the need for access. You only do this once, and maintain access until when the access review definition expires.
 
 ## Step 6: Clean up resources
 
@@ -442,8 +439,8 @@ Content-type: text/plain
 
 ## See also
 
-+ [Access Reviews License requirements.](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview#license-requirements)
-+ [Access Reviews License scenarios.](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview#example-license-scenarios)
-+ [Create an access review of groups & applications](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
-+ [Access review API reference – Create an access review schedule definition.](https://docs.microsoft.com/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&tabs=http#request-body&preserve-view=true)
++ [Access Reviews overview and license requirements.](/azure/active-directory/governance/access-reviews-overview)
++ [Access Reviews license scenarios.](/azure/active-directory/governance/access-reviews-overview#example-license-scenarios)
++ [Create an access review of groups & applications](/azure/active-directory/governance/create-access-review)
++ [Access Reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
 
