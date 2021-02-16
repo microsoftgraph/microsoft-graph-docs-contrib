@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "temporaryAccessPassAuthenticationMethodConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [temporaryaccesspassauthenticationmethodconfiguration](https://docs.microsoft.com/en-us/graph/api/resources/temporaryaccesspassauthenticationmethodconfiguration?view=graph-rest-beta) entity for managing Temporary Access Pass authentication method policy - Get, Update and Delete",
+          "Description": "Added [temporaryaccesspassauthenticationmethodconfiguration](https://docs.microsoft.com/en-us/graph/api/resources/temporaryaccesspassauthenticationmethodconfiguration?view=graph-rest-beta) resource and associated methods.",
           "Target": "temporaryAccessPassAuthenticationMethodConfiguration"
       },
       {
@@ -15,7 +15,7 @@
         "ApiChange": "Resource",
         "ChangedApiName": "temporaryAccessPassAuthenticationMethod",
         "ChangeType": "Addition",
-        "Description": "Added the [temporaryAccessPassAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/temporaryAccessPassAuthenticationMethod?view=graph-rest-beta) entity for managing Temporary Access Pass authentication method - List, Get, Create and Delete",
+        "Description": "Added [temporaryAccessPassAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/temporaryAccessPassAuthenticationMethod?view=graph-rest-beta) resource and associated methods.",
         "Target": "temporaryAccessPassAuthenticationMethod"
       }
        ],
