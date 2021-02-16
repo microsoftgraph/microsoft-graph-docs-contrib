@@ -9471,6 +9471,8 @@ items:
           href: api/educationclass-post-assignments.md
         - name: Get assignment settings
           href: api/educationassignmentsettings-get.md
+        - name: Get assignment defaults
+          href: api/educationassignmentdefaults-get.md
         - name: List categories
           href: api/educationclass-list-categories.md
         - name: Create category
@@ -9540,6 +9542,13 @@ items:
           href: api/educationassignmentsettings-get.md
         - name: Update assignment settings
           href: api/educationassignmentsettings-update.md
+      - name: Assignment defaults
+        href: resources/educationassignmentdefaults.md
+        items:
+        - name: Get assignment defaults
+          href: api/educationassignmentdefaults-get.md
+        - name: Update assignment defaults
+          href: api/educationassignmentdefaults-update.md
       - name: Category
         href: resources/educationcategory.md
         items:
@@ -10422,6 +10431,15 @@ items:
               href: api/emailauthenticationmethodconfiguration-update.md
             - name: Delete
               href: api/emailauthenticationmethodconfiguration-delete.md
+          - name: Text Message policy
+            href: resources/smsAuthenticationMethodConfiguration.md
+            items:
+            - name: Get
+              href: api/smsAuthenticationMethodConfiguration-get.md
+            - name: Update
+              href: api/smsAuthenticationMethodConfiguration-update.md
+            - name: Delete
+              href: api/smsAuthenticationMethodConfiguration-delete.md
         - name: B2C authentication methods policy
           href: resources/b2cauthenticationmethodspolicy.md
           items:
@@ -12715,6 +12733,23 @@ items:
           href: api/plannerprogresstaskboardtaskformat-get.md
         - name: Update progress task board format
           href: api/plannerprogresstaskboardtaskformat-update.md
+      - name: Planner rosters
+        href: resources/plannerroster.md
+        items:
+        - name: Create roster
+          href: api/planner-post-rosters.md
+        - name: Delete roster
+          href: api/plannerroster-delete.md
+        - name: List roster's members
+          href: api/plannerroster-list-members.md
+        - name: Add a member to roster
+          href: api/plannerroster-post-members.md
+        - name: Remove a member from roster
+          href: api/plannerrostermember-delete.md
+        - name: List plans in roster
+          href: api/plannerroster-list-plans.md
+        - name: List user's plans in rosters
+          href: api/planneruser-list-rosterplans.md
     - name: Teamwork
       displayName: Microsoft Teams
       items:
