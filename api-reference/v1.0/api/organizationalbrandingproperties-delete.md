@@ -2,8 +2,8 @@
 ms.author: "almars"
 title: "Delete organizationalBrandingProperties"
 description: "Delete organizationalBrandingProperties."
-author: "kexia"
 localization_priority: Normal
+author: "kexia"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
