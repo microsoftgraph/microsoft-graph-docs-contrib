@@ -486,6 +486,6 @@ Congratulations! You have created an access review for the M365 group and the gr
 + [Access Reviews overview and license requirements.](/azure/active-directory/governance/access-reviews-overview)
 + [Access Reviews license scenarios.](/azure/active-directory/governance/access-reviews-overview#example-license-scenarios)
 + [Create an access review of groups & applications](/azure/active-directory/governance/create-access-review)
-+ [Invite/add external users to your organization](/graph/api/resources/invitation?view=graph-rest-beta)
++ [Invite/add external users to your organization](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true)
 + [Access Reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
 
