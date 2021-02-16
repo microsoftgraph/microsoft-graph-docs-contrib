@@ -3,6 +3,7 @@ ms.author: "almars"
 title: "Get localized organizationalBrandingProperties"
 description: "Retrieve organizationalbrandingproperties object for a specific locale."
 localization_priority: Normal
+author: "kexia"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
