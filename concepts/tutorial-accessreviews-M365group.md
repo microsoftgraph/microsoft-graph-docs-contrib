@@ -89,7 +89,7 @@ Take note of the invited user's id from the response. In this case, john.doe@out
 ## Step 2: Create a new M365 group and add the external guest
 
 In this step:
-1. Create a new M365 Group named **Feelgood marketing campaign** and add `john.doe@outlook.com` to the group.
+1. Create a new M365 group named **Feelgood marketing campaign** and add `john.doe@outlook.com` to the group.
 2. Assign yourself as the group owner.
 3. Add john.doe@outlook.com as a group member. Their access to the group will be the subject of review by you, the group owner.
 
@@ -349,6 +349,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 ```
 
 ### Response
+In this response, te scope includes a group of `id` `59ab642a-2776-4e32-9b68-9ff7a47b7f6a`. This is the **Feelgood marketing campaign** group created in Step 2.
 
 ```http
 HTTP/1.1 200 OK
@@ -478,7 +479,7 @@ HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
-Congratulations! You have created an access review for the M365 group and the group owners have approved access for the current review cycle. You have also triggered a scheduled quarterly re-evaluation and re-attestation of access for all guest users. The group owners will review access during these cycles, choosing either to approve or deny access for the guest users.
+Congratulations! You have created an access review for the M365 group and the group owners have approved access for the current review cycle. You have also triggered a scheduled quarterly re-evaluation and re-attestation of access for all guest users in M365 groups. The group owners will review access during these cycles, choosing either to approve or deny access.
 
 ## See also
 
