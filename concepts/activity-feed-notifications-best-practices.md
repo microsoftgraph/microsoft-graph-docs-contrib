@@ -30,8 +30,8 @@ The Activity Feed Notification is a platform that enables Partner apps to send n
 * Ensure to select a toast notification to lead to the activity feed. To switch to an activity within the activity feed, select a notification in the activity feed.
   >[!NOTE] 
   >The notification selection will not switch to the app.
-* Ensure that you localize the content in a notification toast or feed. The localization happens only if the app’s content is [localized](/platform/concepts/build-and-test/apps-localization).<br/> ![Screenshot of App level settings to be added]
-* Ensure that you create the settings based on the **Activity Types** defined in the app manifest. The setting titles read from the description field must be named appropriately to convey what setting is affected. For example:<br/> ✔ <br/>![Screenshot of Activity Types to be added]<br/><br/>❌<br/>![Screenshot of Activity Types to be added]
+* Ensure that you localize the content in a notification toast or feed. The localization happens only if the app’s content is [localized](/platform/concepts/build-and-test/apps-localization).<br/> ![Screenshot of App level settings](../concepts/images/notifications-api-best-practice1.png)
+* Ensure that you create the settings based on the **Activity Types** defined in the app manifest. The setting titles read from the description field must be named appropriately to convey what setting is affected. For example:<br/><br/>![Screenshot of Activity Types](../concepts/images/notifications-api-best-practice2.png)<br/><br/><br/>![Screenshot of Activity Types](../concepts/images/notifications-api-best-practice3.png)
 * Ensure the notifications are not promotional in nature. They must convey something important that the user must be aware about. For example:<br/>*Try the new feature in the Cycling app!* ❌<br/>*Lynne mentioned you in a message.* ✔
 * Ensure that users see the notification settings for an app only when a notification is received from the selected app.
 * Inform the user that the notification icon cannot be customized. Every notification from an app has the same icon, as included in the app manifest.
@@ -42,7 +42,7 @@ The Activity Feed Notification is a platform that enables Partner apps to send n
   >The 30 days storage limit applies to all notifications and is not specific to activity feed notification.
 
 ## Minimize noise and build high quality notification experiences
-* Users receive notifications from multiple sources across chats, channels, meetings, or other apps. To improve the chances of users acting on your notifications, send notifications that are directly relevant to users. <br/>Avoid sending a large volume of non-directed broadcast notifications. For example:</br> *Joni left the sales team.* ❌ - This notification may be noisy unless this is materially important.<br/>*Diego assigned a sales ticket to you.* ✔
+* Improve chances of users acting on your notifications by sending directly relevant notifications. Users receive notifications from multiple sources across chats, channels, meetings, or other apps, therefore, do not send large volume of non-directed broadcast notifications. For example:</br> *Joni left the sales team.* ❌ - This notification may be noisy unless this is materially important.<br/>*Diego assigned a sales ticket to you.* ✔
 * Avoid duplicate notifications from bot messages and activity feed notification. See the [Best practices to use the bot framework and activity feed notification](#use-bot-framework-and-activity-feed-notification) table.
 * Utilize the third line for the preview to give users information that allows them to gauge the importance and take action. Select a toast or mark for follow-up.
 
