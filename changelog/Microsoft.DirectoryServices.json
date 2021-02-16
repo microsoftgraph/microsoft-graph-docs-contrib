@@ -5,25 +5,18 @@
          {
           "Id": "a9ef9c12-53b3-40fe-9191-a879dc4bc6a8",
           "ApiChange": "Resource",
-          "ChangedApiName": "temporaryaccesspassauthenticationmethodconfiguration",
+          "ChangedApiName": "temporaryAccessPassAuthenticationMethodConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [temporaryaccesspassauthenticationmethodconfiguration](https://docs.microsoft.com/en-us/graph/api/resources/temporaryaccesspassauthenticationmethodconfiguration?view=graph-rest-beta) entity for managing users\u0027 Temporary Access Pass authentication method policy.",
-          "Target": "temporaryaccesspassauthenticationmethodconfiguration"
+          "Description": "Added the [temporaryaccesspassauthenticationmethodconfiguration](https://docs.microsoft.com/en-us/graph/api/resources/temporaryaccesspassauthenticationmethodconfiguration?view=graph-rest-beta) entity for managing Temporary Access Pass authentication method policy - Get, Update and Delete",
+          "Target": "temporaryAccessPassAuthenticationMethodConfiguration"
       },
       {
         "Id": "db3f45ee-068c-4dbd-aa53-b574dfab3b76",
         "ApiChange": "Resource",
         "ChangedApiName": "temporaryAccessPassAuthenticationMethod",
         "ChangeType": "Addition",
-        "Description": "Added the [temporaryAccessPassAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/temporaryAccessPassAuthenticationMethod?view=graph-rest-beta) entity for managing users\u0027 Temporary Access Pass authentication method.",
+        "Description": "Added the [temporaryAccessPassAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/temporaryAccessPassAuthenticationMethod?view=graph-rest-beta) entity for managing Temporary Access Pass authentication method - List, Get, Create and Delete",
         "Target": "temporaryAccessPassAuthenticationMethod"
-      }, {
-        "Id": "a9ab56be-8d27-45bb-8de5-31649df03c06",
-        "ApiChange": "Relationship",
-        "ChangedApiName": "temporaryAccessPassMethods",
-        "ChangeType": "Addition",
-        "Description": "Added the temporaryAccessPassMethods [methods](https://docs.microsoft.com/en-us/graph/api/resources/temporaryAccessPassAuthenticationMethod?view=graph-rest-beta) resource",
-        "Target": "authentication"
       }
        ],
        "Id": "785f553a-e5dd-416e-91fa-14c698ab40b0",
