@@ -2,6 +2,7 @@
 ms.author: "almars"
 title: "Create organizationalBrandingProperties"
 description: "Create organization branding."
+author: "kexia"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
