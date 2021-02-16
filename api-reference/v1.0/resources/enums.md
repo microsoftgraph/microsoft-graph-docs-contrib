@@ -11,6 +11,14 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### groupType values 
+
+|Member|
+|:---|
+|unifiedGroups|
+|azureAD|
+|unknownFutureValue|
+
 ### conditionalAccessStatus values
 
 |Member|
@@ -20,7 +28,7 @@ Namespace: microsoft.graph
 |notApplied|
 |unknownFutureValue|
 
-### activityResult values
+### operationResult values
 
 |Member|
 |:---|

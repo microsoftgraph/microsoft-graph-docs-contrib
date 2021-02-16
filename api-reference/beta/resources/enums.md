@@ -225,15 +225,6 @@ Namespace: microsoft.graph
 |PTA|
 |PHS|
 
-### activityResult values
-
-|Member|
-|:---|
-|success|
-|failure|
-|timeout|
-|unknownFutureValue|
-
 ### registrationAuthMethod values 
 
 |Member|
