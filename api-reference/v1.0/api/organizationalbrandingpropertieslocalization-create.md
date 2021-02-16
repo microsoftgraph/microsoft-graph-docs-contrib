@@ -1,8 +1,8 @@
 ---
+ms.author: "almars"
 title: "Create localized organizationalBrandingProperties"
 description: "Create organization branding for a specific locale."
 localization_priority: Normal
-author: "kexia"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
