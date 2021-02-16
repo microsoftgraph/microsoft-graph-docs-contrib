@@ -4,10 +4,10 @@ description: "The approval step object associated with the accessPackageAssignme
 localization_priority: Normal
 author: "sbounouh"
 ms.prod: "microsoft-identity-platform"
-doc_type: "apiPageType"
+doc_type: "resourcePageType"
 ---
 
-# approval resource type
+# approval step resource type
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), the approva
 |displayName|String|The step Label provided by the policy creator to identify an approval step. Read-only|
 |status|String|The step status, which can be InProgress or Completed. Read-only.|
 |assignedToMe|Boolean|Indicates if the step is assigned to the calling user to review. Read-only.|
-|reviewedBy|[userIdentity](useridentity.md) | The identifier of the reviewer. Read-only.|
+|reviewedBy|[userIdentity](useridentity.md) collection | The identifier of the reviewer. Read-only.|
 |reviewedDateTime|DateTimeOffset|The date and time when a decision was recorded. Read-only.|
 |reviewResult|String|The result of this approval record. Current possible values include: NotReviewed, Approved, Denied.|
 |justification|String|The justification associated with the approval step decision.|
@@ -49,7 +49,7 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "status": "String",
   "assignedToMe": true,
-  "reviewedBy": [{"@odata.type": "microsoft.graph.userSet"}],
+  "reviewedBy": [{"@odata.type": "microsoft.graph.userIdentity"}],
   "reviewedDateTime": "String (timestamp)",
   "reviewResult": "String",
   "justification": "String",

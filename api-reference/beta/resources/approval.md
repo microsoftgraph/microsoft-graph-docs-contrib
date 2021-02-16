@@ -4,7 +4,7 @@ description: "The approval object associated with the accessPackageAssignmentReq
 localization_priority: Normal
 author: "sbounouh"
 ms.prod: "microsoft-identity-platform"
-doc_type: "apiPageType"
+doc_type: "resourcePageType"
 ---
 
 # approval resource type
