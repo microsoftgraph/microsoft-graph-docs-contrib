@@ -39,7 +39,8 @@ PATCH /print/printers/{id}/jobs/{id}
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply the values of the relevant [printJob](../resources/printjob.md) fields. Existing properties that are not included in the request body will maintain their previous values.
+In the request body, supply the values of the relevant [printJob](../resources/printjob.md) fields. Existing properties that are not included in the request body will maintain their previous values. 
+Only the "configuration" property can be updated.
 
 ## Response
 If successful, this method returns a `200 OK` response code with an updated [printJob](../resources/printjob.md) object in the response body.
