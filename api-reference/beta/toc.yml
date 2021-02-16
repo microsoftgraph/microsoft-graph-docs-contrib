@@ -10349,7 +10349,7 @@ items:
             - name: Get
               href: api/temporaryaccesspassauthenticationmethod-get.md
             - name: Create
-              href: api/temporaryaccesspassauthenticationmethod-create.md
+              href: api/temporaryaccesspassauthenticationmethod-post.md
             - name: Delete
               href: api/temporaryaccesspassauthenticationmethod-delete.md
           - name: Phone
