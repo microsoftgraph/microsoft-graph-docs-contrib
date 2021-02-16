@@ -13,6 +13,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## February 2021
 
+### Devices and apps | Cloud printing
+
+| **Change type** | **Version**   | **Description**                          |
+|:---|:---|:---|
+| Addition | beta | Added [update](/graph/api/printjob-update?view=graph-rest-beta&preserve-view=true) support to the [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource|
+
 ### Tasks and plans
 
 | **Change type** | **Version** | **Description** |
