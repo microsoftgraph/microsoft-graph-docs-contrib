@@ -1,7 +1,7 @@
 ---
 title: "Best practices for Activity Feed Notification in Microsoft Graph"
 description: "List best practices and examples for Activity Feed Notification in Microsoft Graph"
-author: "merzink"
+ms.author: "lajanuar"
 localization_priority: Normal
 ms.prod: "notifications"
 ---
@@ -16,7 +16,7 @@ At a high-level the best practices are as follows:
 
 ## Activity Feed Notification Partner scenarios
 The Activity Feed Notification is a platform that enables Partner apps to send notifications to users as toast items and activity feed items that point users to relevant content that can be consumed within Teams.
-* Understand the direct relationship between a notification toast or feed and the content deeplinked to.
+* Understand the direct relationship between a notification toast or feed and the content it is deeplinked to.
     * The notification must not confuse the user about what they need to address or triage. For example, if an *@mention* notification is received, the panel on the right in the activity feed app must display or reference the corresponding *@mention*.
     * If the notification pertains to removal or deletion of scenarios, direct users to the content indicating the action, so that they understand the outcome before taking action.For example, remove a user from a group or delete a list.
 * Ensure that the right pane experience in the feed is self-contained and does not break the feed experience.
@@ -50,9 +50,7 @@ The Activity Feed Notification is a platform that enables Partner apps to send n
 * Ensure there is no *period* at the end of the notification title to achieve parity with all other notifications in Teams.
 
 ## Use Bot Framework and Activity Feed Notification
-* Ensure that the bot messages are delivered as chat or channel messages.
-    * Users must turn on a chat or channel notifications to receive a notification alert.
-    * Ensure you *@mention* the user name for the notifications to appear in the activity feed.
+* Deliver bot messages by turning on a chat or channel notification, such that the users receive a notification alert in the chat or channel. You must *@mention* the name of the user for the notification to appear in the activity feed. 
     * For bot messages, ensure that the alert is consumed as a chat or channel message or is consumed broadly. For example, message is consumed by all channel members.
 * Ensure that the activity feed notification lands in the activity feed and deeplinks to various locations.
    * Notifications in the activity feed allow the user to take action or triage the notification.
