@@ -391,7 +391,7 @@ items:
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
           - name: Send activity feed notifications
             href: teams-send-activityfeednotifications.md
-           items:
+            items:
               - name: Best practices 
                 href: activity-feed-notifications-best-practices.md  
       - name: To-do tasks
