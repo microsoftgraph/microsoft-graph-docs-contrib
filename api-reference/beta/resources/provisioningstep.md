@@ -23,7 +23,7 @@ Describes the steps taken to perform an action.
 |details|[detailsInfo](detailsinfo.md)|Details of what occurred during the step.|
 |name|String|Name of the step.|
 |provisioningStepType|provisioningStepType| Type of step. Possible values are: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.|
-|status|statusBase| Status of the step. Possible values are: `success`, `warning`,  `failure`, `skipped`, `unknownFutureValue`.|
+|status|provisioningResult| Status of the step. Possible values are: `success`, `warning`,  `failure`, `skipped`, `unknownFutureValue`.|
 
 ## JSON representation
 

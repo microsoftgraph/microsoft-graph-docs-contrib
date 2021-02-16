@@ -25,7 +25,7 @@ Represents the self-service password reset usage for a given tenant. Details inc
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| authMethod | registrationAuthMethod | Represents the authentication method that the user used. Possible values are:<ul><li>`email`</li><li> `mobileSMS`</li><li> `mobileCall`</li><li>`officePhone`</li><li>`securityQuestion` (only used for self-service password reset)</li><li>`appNotification`</li><li>`appCode`</li><li>`alternateMobileCall` (supported only in registration).</li></ul> |
+| authMethod | usageAuthMethod | Represents the authentication method that the user used. Possible values are:<ul><li>`email`</li><li> `mobileSMS`</li><li> `mobileCall`</li><li>`officePhone`</li><li>`securityQuestion` (only used for self-service password reset)</li><li>`appNotification`</li><li>`appCode`</li><li>`alternateMobileCall` (supported only in registration).</li><li>fido</li><li>appPassword</li><li>unknownFutureValue</li></ul> |
 | eventDateTime | DateTimeOffset | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. |
 | failureReason | String | Provides the failure reason for the corresponding reset or registration workflow. |
 | feature | credentialResetFeature | Possible values are: `registration` and `reset`. |

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 ### appliedConditionalAccessPolicyResult values 
 
+
+
 |Member|
 |:---|
 |success|
@@ -28,6 +30,8 @@ Namespace: microsoft.graph
 
 ### authenticationMethodFeature values 
 
+
+
 |Member|
 |:---|
 |ssprRegistered|
@@ -37,6 +41,8 @@ Namespace: microsoft.graph
 |mfaCapable|
 
 ### authMethodsType values 
+
+
 
 |Member|
 |:---|
@@ -56,6 +62,8 @@ Namespace: microsoft.graph
 
 ### azureADLicenseType values 
 
+
+
 |Member|
 |:---|
 |none|
@@ -66,6 +74,8 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### conditionalAccessConditions values 
+
+
 
 |Member|
 |:---|
@@ -83,6 +93,8 @@ Namespace: microsoft.graph
 
 ### conditionalAccessStatus values 
 
+
+
 |Member|
 |:---|
 |success|
@@ -92,33 +104,17 @@ Namespace: microsoft.graph
 
 ### featureType values 
 
+
+
 |Member|
 |:---|
 |registration|
 |reset|
-
-### migrationValidationName values
-
-|Member|
-|:---|
-|AdditionalWSFedEndpointCheckResult|
-|AllowedAuthenticationClassReferencesCheckResult|
-|AlwaysRequireAuthenticationCheckResult|
-|AutoUpdateEnabledCheckResult|
-|ClaimsProviderNameCheckResult|
-|EncryptClaimsCheckResult|
-|EncryptedNameIdRequiredCheckResult|
-|MonitoringEnabledCheckResult|
-|NotBeforeSkewCheckResult|
-|RequestMFAFromClaimsProvidersCheckResult|
-|SignedSamlRequestsRequiredCheckResult|
-|AdditionalAuthenticationRulesCheckResult|
-|TokenLifetimeCheckResult|
-|DelegationAuthorizationRulesCheckResult|
-|IssuanceAuthorizationRulesCheckResult|
-|IssuanceTransformRulesCheckResult|
+|unknownFutureValue|
 
 ### groupType values 
+
+
 
 |Member|
 |:---|
@@ -127,6 +123,8 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### includedUserRoles values 
+
+
 
 |Member|
 |:---|
@@ -138,6 +136,8 @@ Namespace: microsoft.graph
 
 ### includedUserTypes values 
 
+
+
 |Member|
 |:---|
 |all|
@@ -146,6 +146,8 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### initiatorType values 
+
+
 
 |Member|
 |:---|
@@ -156,6 +158,8 @@ Namespace: microsoft.graph
 
 ### migrationStatus values 
 
+
+
 |Member|
 |:---|
 |ready|
@@ -164,6 +168,8 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### networkType values 
+
+
 
 |Member|
 |:---|
@@ -175,6 +181,8 @@ Namespace: microsoft.graph
 
 ### operationResult values 
 
+
+
 |Member|
 |:---|
 |success|
@@ -184,15 +192,18 @@ Namespace: microsoft.graph
 
 ### provisioningResult values 
 
+
+
 |Member|
 |:---|
 |success|
-|warning|
 |failure|
 |skipped|
 |unknownFutureValue|
 
 ### provisioningStepType values 
+
+
 
 |Member|
 |:---|
@@ -204,28 +215,9 @@ Namespace: microsoft.graph
 |export|
 |unknownFutureValue|
 
-### conditionalAccessStatus values
-
-|Member|
-|:---|
-|success|
-|failure|
-|notApplied|
-|unknownFutureValue|
-
-### signInAuthMethods values
-
-|Member|
-|:---|
-|SMS|
-|Authenticator App|
-|App Verification code|
-|Password|
-|FIDO|
-|PTA|
-|PHS|
-
 ### registrationAuthMethod values 
+
+
 
 |Member|
 |:---|
@@ -242,6 +234,8 @@ Namespace: microsoft.graph
 
 ### registrationStatusType values 
 
+
+
 |Member|
 |:---|
 |registered|
@@ -252,6 +246,8 @@ Namespace: microsoft.graph
 
 ### requirementProvider values 
 
+
+
 |Member|
 |:---|
 |MFA|
@@ -259,6 +255,8 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### riskDetail values 
+
+
 
 |Member|
 |:---|
@@ -276,6 +274,8 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### riskEventType values 
+
+
 
 |Member|
 |:---|
@@ -297,6 +297,8 @@ Namespace: microsoft.graph
 
 ### riskLevel values 
 
+
+
 |Member|
 |:---|
 |low|
@@ -307,6 +309,8 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### riskState values 
+
+
 
 |Member|
 |:---|
