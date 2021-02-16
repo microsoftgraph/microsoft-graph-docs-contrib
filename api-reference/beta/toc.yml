@@ -11160,6 +11160,19 @@ items:
               href: api/connectedorganization-delete-externalsponsors.md
             - name: Remove internal sponsors
               href: api/connectedorganization-delete-internalsponsors.md
+          - name: Approval
+            href: resources/approval.md
+            items:
+            - name: approval-get
+              href: api/approval-get.md
+            - name: approval-list-steps
+              href: api/approval-list-steps.md
+            - name: approval-get-steps
+              href: api/approval-get-steps.md
+            - name: approval-patch
+              href: api/approval-patch.md
+          - name: Approval step
+            href: resources/approvalstep.md
           - name: Entitlement management settings
             href: resources/entitlementmanagementsettings.md
             items:

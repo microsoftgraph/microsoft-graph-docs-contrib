@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# approval step resource type
+# approvalStep resource type
 
 Namespace: microsoft.graph
 
@@ -37,14 +37,14 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.approval",
+  "@odata.type": "microsoft.graph.approvalStep",
   "baseType": "",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.approval",
+  "@odata.type": "#microsoft.graph.approvalStep",
   "id": "String (identifier)",
   "displayName": "String",
   "status": "String",
