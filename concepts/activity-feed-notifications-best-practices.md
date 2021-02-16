@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "notifications"
 ---
 
-# Best practices for working with the Activity Feed Notification
+# Best practices for working with Activity Feed Notification
 This document consolidates the best practices that the Microsoft partners are expected to adhere to, as they build experiences using the Activity Feed Notification, across visual elements and notification behavior.
 
 At a high-level the best practices are as follows:
@@ -15,7 +15,8 @@ At a high-level the best practices are as follows:
 * Ensure that expectations in terms of performance are met.
 
 ## Activity Feed Notification Partner scenarios
-The Activity Feed Notification is a platform that enables Partner apps to send notifications to users as toast items and activity feed items that point users to relevant content that can be consumed within Teams.
+The Activity Feed Notification is a platform that enables Partner apps to send notifications to users as toast items and activity feed items that point users to relevant content that can be consumed within Teams. 
+Following is a list of best practices:
 * Understand the direct relationship between a notification toast or feed and the content it is deeplinked to.
     * The notification must not confuse the user about what they need to address or triage. For example, if an *@mention* notification is received, the panel on the right in the activity feed app must display or reference the corresponding *@mention*.
     * If the notification pertains to removal or deletion of scenarios, direct users to the content indicating the action, so that they understand the outcome before taking action.For example, remove a user from a group or delete a list.
@@ -24,14 +25,14 @@ The Activity Feed Notification is a platform that enables Partner apps to send n
 * Ensure that apps are not sending more than 10 notifications per minute, per user.
   >[!NOTE]
   >Notifications will be throttled if the per user notification count exceeds the limit.
-* Ensure that the apps are performing. The time it takes for an app to load is measured and can impact the user experience when a user switches between notifications in the activity feed.
+* Ensure that the apps are performing. The time taken for an app to load is measured and can impact the user experience when a user switches between notifications in the activity feed.
 
 ### Feature behavior in Partner scenarios
 * Ensure to select a toast notification to lead to the activity feed. To switch to an activity within the activity feed, select a notification in the activity feed.
   >[!NOTE] 
   >The notification selection will not switch to the app.
 * Ensure that you localize the content in a notification toast or feed. The localization happens only if the app’s content is [localized](/platform/concepts/build-and-test/apps-localization).<br/> ![Screenshot of App level settings](../concepts/images/notifications-api-best-practice1.png)
-* Ensure that you create the settings based on the **Activity Types** defined in the app manifest. The setting titles read from the description field must be named appropriately to convey what setting is affected. For example:<br/><br/>![Screenshot of Activity Types](../concepts/images/notifications-api-best-practice2.png)<br/><br/><br/>![Screenshot of Activity Types](../concepts/images/notifications-api-best-practice3.png)
+* Ensure that you create the settings based on the **Activity Types** defined in the app manifest. The setting titles read from the description field must be named appropriately to convey what setting is affected. For example:<br/><br/>![Screenshot of correct Activity Types](../concepts/images/notifications-api-best-practice2.png)<br/><br/><br/>![Screenshot of incorrect Activity Types](../concepts/images/notifications-api-best-practice3.png)
 * Ensure the notifications are not promotional in nature. They must convey something important that the user must be aware about. For example:<br/>*Try the new feature in the Cycling app!* ❌<br/>*Lynne mentioned you in a message.* ✔
 * Ensure that users see the notification settings for an app only when a notification is received from the selected app.
 * Inform the user that the notification icon cannot be customized. Every notification from an app has the same icon, as included in the app manifest.
