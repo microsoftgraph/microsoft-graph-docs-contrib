@@ -392,9 +392,8 @@ items:
           - name: Send activity feed notifications
             href: teams-send-activityfeednotifications.md
             displayName: Best practices
-            item:
-                - name: Best practices
-                  href: activity-feed-notifications-best-practices.md  
+             - name: Best practices
+               href: activity-feed-notifications-best-practices.md  
       - name: To-do tasks
         href: todo-concept-overview.md
         displayName: Microsoft To Do
