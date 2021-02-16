@@ -10346,10 +10346,10 @@ items:
             items:
             - name: List
               href: api/temporaryaccesspassauthenticationmethod-list.md
-            - name: Get
-              href: api/temporaryaccesspassauthenticationmethod-get.md
             - name: Create
               href: api/temporaryaccesspassauthenticationmethod-post.md
+            - name: Get
+              href: api/temporaryaccesspassauthenticationmethod-get.md
             - name: Delete
               href: api/temporaryaccesspassauthenticationmethod-delete.md
           - name: Phone
