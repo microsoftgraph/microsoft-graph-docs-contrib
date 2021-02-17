@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Printer",
           "ChangeType": "Addition",
-          "Description": "Added lastSeenDateTime property to the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Description": "Added the **lastSeenDateTime** property to the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
           "Target": "printer"
         }
       ],
