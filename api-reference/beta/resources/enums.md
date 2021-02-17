@@ -11,7 +11,7 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-### recipientScopeType
+### recipientScopeType values
 |Member|
 |:---|
 |none|
