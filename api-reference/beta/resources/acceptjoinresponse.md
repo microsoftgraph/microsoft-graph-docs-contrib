@@ -1,6 +1,6 @@
 ---
 title: "acceptJoinResponse resource type"
-description: "A class that contains the response to accept participant joining notification."
+description: "Represents a response to accept a participant who tries to join the meeting."
 author: "yizhenww"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -13,9 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A class that represents a response to accept participant who tries to join the meeting.
+Represents a response to accept a participant who tries to join the meeting.
 
 ## Properties
+
+None.
 
 ## JSON representation
 

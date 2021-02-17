@@ -1,6 +1,6 @@
 ---
 title: "inviteNewBotResponse resource type"
-description: "A class that contains the response to participant joining notification to ask for new invite."
+description: "Contains a response to a request to have a participant joining notification sent out again as a incoming call notification to the desired location."
 author: "yizhenww"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A class that represents a response to have participant joining notification sent out again as a incoming call notification to the desired location
+Contains a response to a request to have a participant joining notification sent out again as a incoming call notification to the desired location.
 
 ## Properties
 
 | Property         | Type                            | Description                                                                                                                                                  |
 | :--------------- | :------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| inviteUri        | String                          | Uri to receive new incoming call notification                                                                                                                |
+| inviteUri        | String                          | URI to receive new incoming call notification.                                                                                                                |
 
 ## JSON representation
 

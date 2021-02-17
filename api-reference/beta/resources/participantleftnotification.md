@@ -1,6 +1,6 @@
 ---
 title: "participantLeftNotification resource type"
-description: "Contains details on the policy based participant who has left the call"
+description: "Contains details about the policy-based participant who has left the call."
 author: "yizhenww"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -13,13 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Under the [Policy-based recording scenario](/microsoftteams/teams-recording-policy) scenario, when a participant who is managed by the bot call has left the meeting, a `participantLeftNotification` will be sent to the bot to notify the bot with details of the participant left event.
+Contains details about the policy-based participant who has left the call.
+
+Under the [Policy-based recording](/microsoftteams/teams-recording-policy) scenario, when a participant who is managed by the bot call has left the meeting, a `participantLeftNotification` will be sent to the bot to notify the bot with details of the participant left event.
 
 ## Properties
 | Property       | Type            | Description                                                        |
 | -------------- | --------------  | -------------------------------------------                        |
-| call           | [call](call.md) | The call object containing detail on the participant joining event |
-| participantId  | String          | Id of the participant under policy who has left the meeting        |
+| call           | [call](call.md) | The call object that contains details about the participant joining event. |
+| participantId  | String          | ID of the participant under the policy who has left the meeting.        |
 
 ## JSON representation
 

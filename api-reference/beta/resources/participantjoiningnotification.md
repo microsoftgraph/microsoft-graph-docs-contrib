@@ -1,6 +1,6 @@
 ---
 title: "participantJoiningNotification resource type"
-description: "Contains details on the policy based participant joining a call"
+description: "Contains details about the policy-based participant joining a call."
 author: "yizhenww"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Under the [Policy-based recording scenario](/microsoftteams/teams-recording-policy), before a participant under policy joins a call, an `participantJoiningNotification` will be sent to the bot associated with the policy, who has available capacity to handle new participant.
+Contains details about the policy-based participant joining a call.
 
-Contains details on policy based participant.
+Under the [Policy-based recording scenario](/microsoftteams/teams-recording-policy), before a participant under the policy joins a call, a `participantJoiningNotification` will be sent to the bot associated with the policy that has available capacity to handle the new participant.
 
-An [participantJoiningResponse](participantjoiningResponse.md) in the response payload is expected from bot.
+A [participantJoiningResponse](participantjoiningResponse.md) in the response payload is expected from the bot.
 
 ## Properties
 | Property       | Type            | Description                                                        |
 | -------------- | --------------  | -------------------------------------------                        |
-| call           | [call](call.md) | The call object containing details on the participant joining event |
+| call           | [call](call.md) | The call object that contains details about the participant joining event. |
 
 ## JSON representation
 
