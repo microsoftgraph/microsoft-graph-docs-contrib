@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Content shiftPreferences = graphClient.users("871dbd5c-3a6a-4392-bfe1-042452793a50").shiftPreferences()
+Shift shift = graphClient.teams("{teamId}").schedule().shifts("{shiftId}")
 	.buildRequest()
 	.get();
 
