@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [pers
 ## Examples
 
 ### Request
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f"],
