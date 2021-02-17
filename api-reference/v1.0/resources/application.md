@@ -62,8 +62,8 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | api | [apiApplication](apiapplication.md) | Specifies settings for an application that implements a web API. |
 | appId | String | The unique identifier for the application that is assigned to an application by Azure AD. Not nullable. Read-only. |
 | appRoles | [appRole](approle.md) collection | The collection of roles assigned to the application. With [app role assignments](approleassignment.md), these roles can be assigned to users, groups, or service principals associated with other applications. Not nullable. |
-| createdDateTime | DateTimeOffset | The date and time the application was registered. Read-only. |
-| deletedDateTime | DateTimeOffset | The date and time the application was deleted. Read-only. |
+| createdDateTime | DateTimeOffset | The date and time the application was registered. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `'2014-01-01T00:00:00Z'`. Read-only. |
+| deletedDateTime | DateTimeOffset | The date and time the application was deleted. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `'2014-01-01T00:00:00Z'`. Read-only. |
 | displayName | String | The display name for the application. |
 | groupMembershipClaims | String | Configures the `groups` claim issued in a user or OAuth 2.0 access token that the application expects. To set this attribute, use one of the following valid string values:<ul><li>`None`</li><li>`SecurityGroup`: For security groups and Azure AD roles</li><li>`All`: This gets all of the security groups, distribution groups, and Azure AD directory roles that the signed-in user is a member of.</li></ul> |
 | id | String | The unique identifier for the application. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |
