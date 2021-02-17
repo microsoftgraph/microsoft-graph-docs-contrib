@@ -5,6 +5,7 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
 ms.author: "luleon"
+author: "luleon"
 ---
 
 # selfSignedCertificate resource type
