@@ -3,7 +3,6 @@ title: "statusDetails resource type"
 description: "Describes the status of the provisioning event and the associated errors."
 localization_priority: Normal
 author: "ArvindHarinder1"
-ms.author: "arvinh"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
@@ -14,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the status of the provisioning event and the associated errors. It is inherited from [statusBase](/graph/api/resources/statusbase) and only used when status is set to 'failure'.  
+Describes the status of the provisioning event and the associated errors. It is inherited from [statusBase](/graph/api/resources/statusbase) and only used when status is set to `failure`.  
 
 ## Properties
 
