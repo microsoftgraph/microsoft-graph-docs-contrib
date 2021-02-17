@@ -11,6 +11,35 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## February 2021
+
+### Tasks and plans
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the **rosterPlans** relationship to [plannerUser](https://docs.microsoft.com/en-us/graph/api/resources/plannerUser?view=graph-rest-beta) resource|
+|Addition|beta|Added the **rosters** relationship to [planner](https://docs.microsoft.com/en-us/graph/api/resources/planner?view=graph-rest-beta) resource|
+|Addition|beta|Added the **isCreationContext** property to [plannerPlanContext](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContext?view=graph-rest-beta) resource|
+|Addition|beta|Added the **customLinkText** property to [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) resource|
+|Addition|beta|Added the **displayLinkType** property to [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) resource|
+|Addition|beta|Added the [plannerRoster](https://docs.microsoft.com/en-us/graph/api/resources/plannerRoster?view=graph-rest-beta) resource type|
+|Addition|beta|Added the [plannerRosterMember](https://docs.microsoft.com/en-us/graph/api/resources/plannerRosterMember?view=graph-rest-beta) resource type|
+|Addition|beta|Added the `roster` member to the **plannerContainerType** enumeration|
+|Addition|beta|Added the **plannerPlanContextType** enumeration type|
+
+### Identity and access | Devices
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+| Addition | beta | Added the **deviceCategory** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **deviceOwnership** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **domainName** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **enrollmentProfileName** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **enrollmentType** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **isRooted** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **managementType** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **registrationDateTime** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+
 ## January 2021
 
 ### Applications
@@ -22,7 +51,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition|beta|Added the [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta) complex type.|
+|Addition|beta|Added the [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta&preserve-view=true) complex type.|
 |Addition|beta|Added the **outOfOfficeSettings** property to the [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) resource type|
 |Addition|beta|Added the **isBroadcast**, **broadcastSettings**, **attendeeReport**, **recording** and **alternativeRecording** properties to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) entity to support creating live events.|
 
@@ -221,8 +250,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the [channelModerationSettings](/graph/api/resources/channelmoderationsettings?view=graph-rest-beta&preserve-view=true) resource type. |
 | Addition | beta | Added the **replyRestriction** enumeration type. |
 | Addition | beta | Added the **userNewMessageRestriction** enumeration type. |
-
-
 
 ## November 2020
 
