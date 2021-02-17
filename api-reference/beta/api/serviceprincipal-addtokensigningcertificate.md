@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-It creates a self-signed signing certificate and returns a [selfSignedCertificate](../resources/selfsignedcertificate.md) which is the public part of the generated certificate. The self-signed signing certificate is composed of 3 resources: the private key ([keyCredential](../resources/keycredential.md) with usage = 'Sign'), the public key ([keyCredential](../resources/keycredential.md) with usage = 'verify'), and the [passwordCredentials](../resources/passwordcredential.md).
+Creates a self-signed signing certificate and returns a [selfSignedCertificate](../resources/selfsignedcertificate.md), which is the public part of the generated certificate. The self-signed signing certificate is composed of these resources: the private key ([keyCredential](../resources/keycredential.md) with usage = 'Sign'), the public key ([keyCredential](../resources/keycredential.md) with usage = 'verify'), and the [passwordCredentials](../resources/passwordcredential.md).
 
-All 3 created resources have the same customKeyIdentifier.
+All of the created resources have the same customKeyIdentifier.
 
 The passwordCredential is used to open the pfx/private key. Also, it's associated with the privateKey having both the same `keyId`. 
 
@@ -30,7 +30,7 @@ The endDateTime can be up to 3 years after the certificate is created.
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | None.    |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -52,8 +52,8 @@ In the request body, provide the following required properties.
 
 | Parameter             | Type     |Description|
 | --------------------- | -------- | --------- | ------------------------ |
-| `displayName` | `string` | Friendly name for the key.  It must start with 'CN='.|
-| `endDateTime` | `DateTimeOffset` |The date and time at which the credential expires. It can be up to 3 years from the date the certifcate is created. If not supplied, the default is 3 years from the time of creation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z' |
+| displayName | string | Friendly name for the key.  It must start with `CN=`.|
+| endDateTime | DateTimeOffset |The date and time when the credential expires. It can be up to 3 years from the date the certificate is created. If not supplied, the default is 3 years from the time of creation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z' .|
 
 ## Response
 
@@ -120,5 +120,4 @@ Content-Type: application/json
     "Error: serviceprincipal_selfsignedcertificate:\r\n      Resource type was null or missing, so we assume there is no response to validate."
     ]
 } -->
-
 
