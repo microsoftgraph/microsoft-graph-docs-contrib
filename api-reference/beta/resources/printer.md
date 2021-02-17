@@ -49,7 +49,7 @@ This resource supports:
 |location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer.|
 |defaults|[printerDefaults](printerdefaults.md)|The printer's default print settings.|
 |capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer associated with this printer share.|
-|lastSeenDateTime|DateTimeOffset|The dateTimeOffset when a printer interacted with Universal Print. Read-only.|
+|lastSeenDateTime|DateTimeOffset|The most recent dateTimeOffset when a printer interacted with Universal Print. Read-only.|
 
 ## Relationships
 | Relationship | Type        | Description |
