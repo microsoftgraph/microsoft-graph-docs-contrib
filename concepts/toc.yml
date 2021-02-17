@@ -224,7 +224,7 @@ items:
                 href: tutorial-riskdetection-api.md
           - name: Governance
             items:
-              - name: Create an access package
+              - name: Manage access to resources
                 href: tutorial-access-package-api.md
       - name: Mail
         displayName: Outlook, Outlook mail
@@ -648,6 +648,6 @@ items:
           - name: Errors
             href: errors.md
       - name: v1.0 reference
-        href: /graph/api/overview?view=graph-rest-1.0
+        href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
       - name: Beta reference
-        href: /graph/api/overview?view=graph-rest-beta
+        href: /graph/api/overview?view=graph-rest-beta&preserve-view=true
