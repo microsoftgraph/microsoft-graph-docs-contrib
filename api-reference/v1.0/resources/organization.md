@@ -1,5 +1,4 @@
 ---
-ms.author: "addimitu"
 title: "organization resource type"
 description: " create and delete are not supported. Inherits from directoryObject."
 localization_priority: Priority
