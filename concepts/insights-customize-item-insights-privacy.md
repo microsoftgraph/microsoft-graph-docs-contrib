@@ -1,7 +1,7 @@
 ---
 title: "Customizing item insights privacy in Microsoft Graph"
 description: ""
-author: "simonhult"
+ms.author: "simonhul"
 localization_priority: Priority
 ms.prod: "insights"
 ms.custom: scenarios:getting-started
