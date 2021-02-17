@@ -5,6 +5,7 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: "applications"
 ms.author: "sureshja"
+author: "luleon"
 ---
 
 # servicePrincipal resource type

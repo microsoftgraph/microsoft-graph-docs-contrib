@@ -3,6 +3,7 @@ title: "servicePrincipal: addTokenSigningCertificate"
 description: "Add a signing certificate to a servicePrincipal."
 localization_priority: Normal
 ms.author: "luleon"
+author: "luleon"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
