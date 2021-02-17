@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /me/responsibilities
-POST /users/{id | userPrincipalName}/profile/responsibilities
+POST /users/{id | userPrincipalName}/responsibilities
 ```
 
 ## Request headers
@@ -67,7 +67,7 @@ If successful, this method returns a `201 Created` response code and a [personRe
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/responsibilities
+POST https://graph.microsoft.com/beta/me/profile/responsibilities
 Content-Type: application/json
 Content-length: 413
 

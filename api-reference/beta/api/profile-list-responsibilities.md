@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /me/responsibilities
-GET /users/{id | userPrincipalName}/profile/responsibilities
+GET /users/{id | userPrincipalName}/responsibilities
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/responsibilities
+GET https://graph.microsoft.com/beta/me/profile/responsibilities
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-interests-csharp-snippets.md)]

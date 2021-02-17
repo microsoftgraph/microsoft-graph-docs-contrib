@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 DELETE /me/responsibilities/{id}
-DELETE /users/{id | userPrincipalName}/profile/responsibilities/{id}
+DELETE /users/{id | userPrincipalName}/responsibilities/{id}
 ```
 
 ## Request headers

@@ -75,7 +75,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/profile/account
+GET https://graph.microsoft.com/beta/me/profile/accounts
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-account-csharp-snippets.md)]
