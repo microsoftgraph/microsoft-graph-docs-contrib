@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 ### appliedConditionalAccessPolicyResult values 
 
-
-
 |Member|
 |:---|
 |success|

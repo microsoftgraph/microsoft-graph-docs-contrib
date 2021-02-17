@@ -11,6 +11,21 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### appliedConditionalAccessPolicyResult values 
+
+|Member|
+|:---|
+|success|
+|failure|
+|notApplied|
+|notEnabled|
+|unknown|
+|unknownFutureValue|
+|reportOnlySuccess|
+|reportOnlyFailure|
+|reportOnlyNotApplied|
+|reportOnlyInterrupted|
+
 ### groupType values 
 
 |Member|
