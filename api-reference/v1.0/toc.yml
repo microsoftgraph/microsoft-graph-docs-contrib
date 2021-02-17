@@ -312,8 +312,9 @@ items:
       - name: Insights
         items:
         - name: Office Graph insights
-          href: resources/officegraphinsights.md
           items:
+          - name: Office Graph insights
+            href: resources/officegraphinsights.md
           - name: List shared
             href: api/insights-list-shared.md
           - name: List trending
@@ -4410,8 +4411,14 @@ items:
         - name: List people
           href: api/user-list-people.md
       - name: Insights
-        href: resources/officegraphinsights.md
         items:
+        - name: Office Graph insights
+          href: resources/officegraphinsights.md
+        - name: Shared
+          href: resources/insights-shared.md
+          items:
+          - name: List shared
+            href: api/insights-list-shared.md
         - name: Trending
           href: resources/insights-trending.md
           items:
@@ -4422,11 +4429,6 @@ items:
           items:
           - name: List used
             href: api/insights-list-used.md
-        - name: Shared
-          href: resources/insights-shared.md
-          items:
-          - name: List shared
-            href: api/insights-list-shared.md
     - name: Personal contacts
       href: resources/contact.md
       displayName: Outlook, Outlook contacts, Outlook contact, People
