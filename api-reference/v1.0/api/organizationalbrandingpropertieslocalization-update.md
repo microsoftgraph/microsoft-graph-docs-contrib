@@ -1,5 +1,4 @@
 ---
-ms.author: "almars"
 title: "Update localized organizationalbrandingproperties"
 description: "Update the properties of the organizationalbrandingproperties object for a specific localization."
 localization_priority: Normal
