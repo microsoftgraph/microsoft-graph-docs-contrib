@@ -83,7 +83,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |appRoleAssignmentRequired|Boolean|Specifies whether users or other service principals need to be granted an app role assignment for this service principal before users can sign in or apps can get tokens. The default value is **false**. Not nullable. |
 |appRoles|[appRole](approle.md) collection|The roles exposed by the application which this service principal represents. For more information see the **appRoles** property definition on the [application](application.md) entity. Not nullable. |
 | deletedDateTime | DateTimeOffset | The date and time the service principal was deleted. Read-only. |
-|description| String | Free text field to provide an internal end-user facing description of the service principal. End-users portal such [MyApps](https://docs.microsoft.com/azure/active-directory/user-help/my-apps-portal-end-user-access) will display the description in this field describing the application. The maximum allowed size is 1024 characters.|
+|description| String | Free text field to provide an internal end-user facing description of the service principal. End-user portals such [MyApps](/azure/active-directory/user-help/my-apps-portal-end-user-access) will display the application description in this field. The maximum allowed size is 1024 characters.|
 |displayName|String|The display name for the service principal.|
 |homepage|String|Home page or landing page of the application.|
 |id|String|The unique identifier for the service principal. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
