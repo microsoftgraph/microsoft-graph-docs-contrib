@@ -1,6 +1,32 @@
 {
   "changelog": [
     {
+      "ChangeList": [
+         {
+          "Id": "a9ef9c12-53b3-40fe-9191-a879dc4bc6a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "temporaryAccessPassAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [temporaryaccesspassauthenticationmethodconfiguration](https://docs.microsoft.com/en-us/graph/api/resources/temporaryaccesspassauthenticationmethodconfiguration?view=graph-rest-beta) resource and associated methods.",
+          "Target": "temporaryAccessPassAuthenticationMethodConfiguration"
+      },
+      {
+        "Id": "db3f45ee-068c-4dbd-aa53-b574dfab3b76",
+        "ApiChange": "Resource",
+        "ChangedApiName": "temporaryAccessPassAuthenticationMethod",
+        "ChangeType": "Addition",
+        "Description": "Added the [temporaryAccessPassAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/temporaryAccessPassAuthenticationMethod?view=graph-rest-beta) resource and associated methods.",
+        "Target": "temporaryAccessPassAuthenticationMethod"
+      }
+       ],
+       "Id": "785f553a-e5dd-416e-91fa-14c698ab40b0",
+       "Cloud": "prd",
+       "Version": "beta",
+       "CreatedDateTime": "2021-02-16T00:00:00.428Z",
+       "WorkloadArea": "Identity and access",
+       "SubArea": "Directory management"
+     },
+    {
      "ChangeList": [
         {
       "Id": "0ab336b4-a823-4dd7-819d-72d076a8b881",
