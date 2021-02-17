@@ -2,29 +2,20 @@
 title: "servicePrincipal: addTokenSigningCertificate"
 description: "Add a signing certificate to a servicePrincipal."
 localization_priority: Normal
-ms.author: "luleon"
-author: "luleon"
+author: "luleonpla"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# servicePrincipal: addKey
+# servicePrincipal: addTokenSigningCertificate
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a self-signed signing certificate and returns a [selfSignedCertificate](../resources/selfsignedcertificate.md), which is the public part of the generated certificate. The self-signed signing certificate is composed of these resources: the private key ([keyCredential](../resources/keycredential.md) with usage = 'Sign'), the public key ([keyCredential](../resources/keycredential.md) with usage = 'verify'), and the [passwordCredentials](../resources/passwordcredential.md).
+Creates a self-signed signing certificate and returns a [selfSignedCertificate](../resources/selfsignedcertificate.md), which is the public part of the generated certificate. The self-signed signing certificate is composed of these resources: the private key ([keyCredential](../resources/keycredential.md) with usage = 'Sign'), the public key ([keyCredential](../resources/keycredential.md) with usage = 'verify'), and the [passwordCredentials](../resources/passwordcredential.md).All of the created resources have the same customKeyIdentifier.
 
-All of the created resources have the same customKeyIdentifier.
-
-The passwordCredential is used to open the pfx/private key. Also, it's associated with the privateKey having both the same `keyId`. 
-
-The subject of the certificate is a constant value. It won't be affected by the optional displayName provided in the POST call.
-
-The startDateTime is set to the same time the certificate is created using the action. 
-
-The endDateTime can be up to 3 years after the certificate is created.
+The passwordCredential is used to open the pfx/private key. Also, it's associated with the privateKey having both the same `keyId`. The subject of the certificate is a constant value. It won't be affected by the optional displayName provided in the POST call. The startDateTime is set to the same time the certificate is created using the action. The endDateTime can be up to 3 years after the certificate is created.
 
 ## Permissions
 
@@ -49,9 +40,6 @@ In the request body, provide the following required properties.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-
-| Parameter             | Type     |Description|
-| --------------------- | -------- | --------- | ------------------------ |
 | displayName | string | Friendly name for the key.  It must start with `CN=`.|
 | endDateTime | DateTimeOffset |The date and time when the credential expires. It can be up to 3 years from the date the certificate is created. If not supplied, the default is 3 years from the time of creation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z' .|
 
@@ -65,14 +53,13 @@ If successful, this method returns a `200 OK` response code and a new [selfSigne
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_addtokensigningcertificate"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/addTokenSigningCertificate
+POST https://graph.microsoft.com/beta/servicePrincipals/7c8d4399-b4bf-413a-8b6a-c577790cae7d/addTokenSigningCertificate
 Content-type: application/json
 
 {
