@@ -1,5 +1,4 @@
 ---
-ms.author: "almars"
 title: "Get organizationalBrandingProperties"
 description: "Retrieve the properties and relationships of an organizationalBrandingProperties object."
 localization_priority: Normal
