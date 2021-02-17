@@ -1,7 +1,7 @@
 ---
 title: "Update userInsightsSettings"
 description: "Update the properties of a userInsightsSettings object."
-author: "simonhult"
+ms.author: "simonhul"
 localization_priority: Normal
 ms.prod: "insights"
 doc_type: "apiPageType"
