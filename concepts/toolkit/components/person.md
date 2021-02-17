@@ -57,6 +57,7 @@ You can use several properties to customize the component.
 | person-image    | personImage    | Set the image to show for the person. |
 | person-presence | personPresence | Set the presence for the person. |
 | fetch-image     | fetchImage     | Set flag to fetch `personImage` automatically from Microsoft Graph based on the `personDetails` object provided by the user. |
+| avatar-type     | avatarType     | Set to `initials` or `photo` to render either display state - default is photo. |
 | view            | view           | Set to control how the person is rendered. Default is `avatar` <br /> `avatar` - show only avatar <br /> `oneline` - show avatar and first line (`displayName` by default) <br /> `twolines` - show avatar and two lines of text (`displayName` and `mail` by default)|
 | line1-property  | line1Property  | Sets the property of the personDetails to use for the first line of text. Default is `displayName`.|
 | line2-property  | line2Property  | Sets the property of the personDetails to use for the second line of text. Default is `mail`.|
