@@ -1,5 +1,4 @@
 ---
-ms.author: "almars"
 title: "Delete organizationalBrandingProperties"
 description: "Delete organizationalBrandingProperties."
 localization_priority: Normal
