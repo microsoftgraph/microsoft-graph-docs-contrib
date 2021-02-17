@@ -75,7 +75,6 @@ Here is a JSON representation of the vendor.
   "balance": "decimal",
   "lastModifiedDateTime": "datetime"
 }
-
 ```
 
 
