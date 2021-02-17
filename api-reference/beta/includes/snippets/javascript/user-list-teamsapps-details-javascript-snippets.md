@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 let res = await client.api('/users/{id}/teamwork/installedApps')
 	.version('beta')
-	.expand('teamsAppDefinition')
+	.expand('teamsAppDefinition($expand=bot)')
 	.get();
 
 ```

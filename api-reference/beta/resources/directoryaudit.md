@@ -3,7 +3,7 @@ title: "directoryAudit resource type"
 description: "Describes the directoryAudit resource (entity) of Microsoft Graph API (REST), which helps audit directory (tenant) activities (beta version)."
 author: "SarahBar"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ Represents the directory audit items and its collection.
 | additionalDetails   | [keyValue](keyvalue.md) collection                  | Indicates additional details on the activity.                                                                                                                                                                                                                          |
 | category            | String                                              | Indicates which resource category that's targeted by the activity. (For example: User Management, Group Management etc..)                                                                                                                                              |
 | correlationId       | GUID                                                | Indicates a unique ID that helps correlate activities that span across various services. Can be used to trace logs across services.                                                                                                                                    |
-| id                  | String                                              | Indicates the unique ID for the activity. This is a GUID.                                                                                                                                                                                                              |
+| id                  | String                                              | Indicates the unique ID for the activity.                                                                                                                                                                                                            |
 | initiatedBy         | [auditActivityInitiator](auditactivityinitiator.md) | Indicates information about the user or app initiated the activity.                                                                                                                                                                                                    |
 | loggedByService     | String                                              | Indicates information on which service initiated the activity (For example: Self-service Password Management, Core Directory, B2C, Invited Users, Microsoft Identity Manager, Privileged Identity Management.                                                          |
 | result              | string                                              | Indicates the result of the activity. Possible values are: `success`, `failure`, `timeout`, `unknownFutureValue`.                                                                                                                                                       |
