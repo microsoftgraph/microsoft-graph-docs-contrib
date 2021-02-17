@@ -60,7 +60,6 @@ If successful, this method returns a `201 Created` response code and a [personRe
 
 ## Examples
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_personresponsibility_from_profile"
