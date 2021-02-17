@@ -76,7 +76,7 @@ The Microsoft Graph Toolkit makes integrating common experiences powered by Micr
 The Microsoft Graph Toolkit is great for developers of all experience levels looking to develop an app that connects to and accesses data from Microsoft Graph, such as a:
 - Web app
 - Microsoft Teams tab
-- Progressive Web app (PWA)
+- Progressive Web App (PWA)
 - Electron app
 - SharePoint web part
 
