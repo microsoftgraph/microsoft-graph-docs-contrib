@@ -156,8 +156,6 @@ Namespace: microsoft.graph
 
 ### migrationStatus values 
 
-
-
 |Member|
 |:---|
 |ready|
@@ -166,8 +164,6 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### networkType values 
-
-
 
 |Member|
 |:---|
@@ -190,14 +186,14 @@ Namespace: microsoft.graph
 
 ### provisioningResult values 
 
-
-
 |Member|
 |:---|
 |success|
 |failure|
 |skipped|
+|warning|
 |unknownFutureValue|
+
 
 ### provisioningStepType values 
 
