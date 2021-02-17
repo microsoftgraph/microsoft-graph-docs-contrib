@@ -1,11 +1,11 @@
 ---
 author: isabelleatmsft
 ms.topic: include
-ms.date: 02/08/2021
+ms.date: 02/17/2021
 ms.author: isabelleatmsft
 ---
 
 <!-- markdownlint-disable MD041-->
 
 >[!NOTE]
->The access review APIs in this section apply only to group memberships. For access reviews on all other supported resource types, see [Access reviews](accessreviews-root.md).
+>The access review APIs in this section apply to access reviews on all supported resource types. However, for access review that review group memberships, see [Access reviews for groups](accessreviewsv2-root.md), which will replace the access review APIs in this section.
