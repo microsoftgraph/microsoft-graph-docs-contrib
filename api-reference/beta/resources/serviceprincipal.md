@@ -4,7 +4,7 @@ description: "Represents an instance of an application in a directory. Inherits 
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: "applications"
-author: "sureshja"
+ms.author: "sureshja"
 ---
 
 # servicePrincipal resource type

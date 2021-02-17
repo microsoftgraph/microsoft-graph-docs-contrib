@@ -4,7 +4,7 @@ description: "Contains information about the public part of a signing certificat
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "luleon"
+ms.author: "luleon"
 ---
 
 # selfSignedCertificate resource type
