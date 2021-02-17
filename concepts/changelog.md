@@ -17,13 +17,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                                                                                              |
 | :-------------- | :------------ | :---------------------------------------                                                                     |
-| Addition        | beta          | Added the **participantCapacity** option to [answer](/graph/api-reference/beta/api/call-answer) method.      |
-| Addition        | beta          | Added new resource type [participantJoiningNotification](/graph/api/resource/participantjoiningnotification) |
-| Addition        | beta          | Added new resource type [participantLeftNotification](/graph/api/resource/participantleftnotification)       |
-| Addition        | beta          | Added new resource type [participantJoiningResponse](/graph/api/resource/participantjoiningresponse)         |
-| Addition        | beta          | Added new resource type [acceptJoinResponse](/graph/api/resource/acceptjoinresponse)                         |
-| Addition        | beta          | Added new resource type [rejectJoinResponse](/graph/api/resource/rejectjoinresponse)                         |
-| Addition        | beta          | Added new resource type [inviteNewBotResponse](/graph/api/resource/invitenewbotresponse)                     |
+| Addition        | beta          | Added the **participantCapacity** option to [answer](https://docs.microsoft.com/en-us/graph/api/call-answer?view=graph-rest-beta) operation.|
+| Addition        | beta          | Added the [participantJoiningNotification](https://docs.microsoft.com/en-us/graph/api/resources/participantJoiningNotification?view=graph-rest-beta) resource type.|
+| Addition        | beta          | Added the [participantLeftNotification](https://docs.microsoft.com/en-us/graph/api/resources/participantLeftNotification?view=graph-rest-beta) resource type.|
+| Addition        | beta          | Added the [participantJoiningResponse](https://docs.microsoft.com/en-us/graph/api/resources/participantJoiningResponse?view=graph-rest-beta) resource type.|
+| Addition        | beta          | Added the [acceptJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/acceptJoinResponse?view=graph-rest-beta) resource type.|
+| Addition        | beta          | Added the [rejectJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/rejectJoinResponse?view=graph-rest-beta) resource type.|
+| Addition        | beta          | Added the [inviteNewBotResponse](https://docs.microsoft.com/en-us/graph/api/resources/inviteNewBotResponse?view=graph-rest-beta) resource type.|
 
 
 ### Tasks and plans
