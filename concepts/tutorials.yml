@@ -8,7 +8,6 @@ metadata:
   description: Microsoft Graph tutorials are step-by-step training exercises that guide you through creating a basic application that accesses data via the Microsoft Graph.
   ms.topic: landing-page
   author: jasonjoh
-  ms.author: jasonjoh
   ms.date: 04/02/2020
 
 landingContent:
@@ -54,6 +53,8 @@ landingContent:
         links:
           - text: Angular
             url: /graph/tutorials/angular
+          - text: Blazor WebAssembly
+            url: /graph/tutorials/blazor
           - text: JavaScript
             url: /graph/tutorials/javascript
           - text: React
@@ -64,10 +65,16 @@ landingContent:
         links:
           - text: Azure Functions
             url: /graph/tutorials/azure-functions
+          - text: Bot Framework
+            url: /graph/tutorials/bot-framework
+          - text: Office Add-in
+            url: /graph/tutorials/office-addin
           - text: Power Automate
             url: /graph/tutorials/power-automate
           - text: SharePoint Framework
             url: /graph/tutorials/spfx
+          - text: Teams
+            url: /graph/tutorials/teams
   - title: Scenarios
     linkLists:
       - linkListType: tutorial

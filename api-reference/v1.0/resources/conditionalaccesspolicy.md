@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents an Azure Active Directory conditional access policy. Conditional access policies are custom rules that define an access scenario. For more information, see the [Conditional access documentation](https://docs.microsoft.com/azure/active-directory/conditional-access/).
+Represents an Azure Active Directory conditional access policy. Conditional access policies are custom rules that define an access scenario. For more information, see the [Conditional access documentation](/azure/active-directory/conditional-access/).
 
 ## Methods
 
@@ -52,7 +52,6 @@ The following is a JSON representation of the resource.
     "grantControls"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -78,4 +77,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

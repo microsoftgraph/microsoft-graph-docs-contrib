@@ -72,11 +72,14 @@ The following table shows the properties that are required when you create the d
 |minimumPinLength|Int32|Minimum pin length required for an app-level pin if PinRequired is set to True Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |pinCharacterSet|[managedAppPinCharacterSet](../resources/intune-mam-managedapppincharacterset.md)|Character set which may be used for an app-level pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `numeric`, `alphanumericAndSymbol`.|
 |periodBeforePinReset|Duration|TimePeriod before the all-level pin must be reset if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|allowedDataStorageLocations|[managedAppDataStorageLocation](../resources/intune-mam-managedappdatastoragelocation.md) collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `oneDriveForBusiness`, `sharePoint`, `localStorage`.|
+|allowedDataStorageLocations|[managedAppDataStorageLocation](../resources/intune-mam-managedappdatastoragelocation.md) collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `oneDriveForBusiness`, `sharePoint`, `box`, `localStorage`.|
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |fingerprintBlocked|Boolean|Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |disableAppPinIfDevicePinIsSet|Boolean|Indicates whether use of the app pin is required if the device pin is set. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|maximumRequiredOsVersion|String|Versions bigger than the specified version will block the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|maximumWarningOsVersion|String|Versions bigger than the specified version will block the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|maximumWipeOsVersion|String|Versions bigger than the specified version will block the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumRequiredOsVersion|String|Versions less than the specified version will block the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumWarningOsVersion|String|Versions less than the specified version will result in warning message on the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumRequiredAppVersion|String|Versions less than the specified version will block the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -135,6 +138,11 @@ The following table shows the properties that are required when you create the d
 |customDialerAppDisplayName|String|Friendly name of a custom dialer app to click-to-open a phone number on Android.|
 |biometricAuthenticationBlocked|Boolean|Indicates whether use of the biometric authentication is allowed in place of a pin if PinRequired is set to True. (Android Only)|
 |requiredAndroidSafetyNetEvaluationType|[androidManagedAppSafetyNetEvaluationType](../resources/intune-mam-androidmanagedappsafetynetevaluationtype.md)|Defines the Android SafetyNet evaluation type requirement for a managed app to work. (Android Only). Possible values are: `basic`, `hardwareBacked`.|
+|blockAfterCompanyPortalUpdateDeferralInDays|Int32|Maximum number of days Company Portal update can be deferred on the device or app access will be blocked.|
+|warnAfterCompanyPortalUpdateDeferralInDays|Int32|Maximum number of days Company Portal update can be deferred on the device or the user will receive the warning|
+|wipeAfterCompanyPortalUpdateDeferralInDays|Int32|Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped|
+|deviceLockRequired|Boolean|Defines if any kind of lock must be required on device. (android only)|
+|appActionIfDeviceLockNotSet|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn, block or wipe, if the screen lock is required on device but is not set. (android only). Possible values are: `block`, `wipe`, `warn`.|
 
 
 
@@ -148,7 +156,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections
 Content-type: application/json
-Content-length: 4881
+Content-length: 5308
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -182,6 +190,9 @@ Content-length: 4881
   "printBlocked": true,
   "fingerprintBlocked": true,
   "disableAppPinIfDevicePinIsSet": true,
+  "maximumRequiredOsVersion": "Maximum Required Os Version value",
+  "maximumWarningOsVersion": "Maximum Warning Os Version value",
+  "maximumWipeOsVersion": "Maximum Wipe Os Version value",
   "minimumRequiredOsVersion": "Minimum Required Os Version value",
   "minimumWarningOsVersion": "Minimum Warning Os Version value",
   "minimumRequiredAppVersion": "Minimum Required App Version value",
@@ -261,7 +272,12 @@ Content-length: 4881
   "customDialerAppPackageId": "Custom Dialer App Package Id value",
   "customDialerAppDisplayName": "Custom Dialer App Display Name value",
   "biometricAuthenticationBlocked": true,
-  "requiredAndroidSafetyNetEvaluationType": "hardwareBacked"
+  "requiredAndroidSafetyNetEvaluationType": "hardwareBacked",
+  "blockAfterCompanyPortalUpdateDeferralInDays": 11,
+  "warnAfterCompanyPortalUpdateDeferralInDays": 10,
+  "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
+  "deviceLockRequired": true,
+  "appActionIfDeviceLockNotSet": "wipe"
 }
 ```
 
@@ -270,7 +286,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 5053
+Content-Length: 5480
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -307,6 +323,9 @@ Content-Length: 5053
   "printBlocked": true,
   "fingerprintBlocked": true,
   "disableAppPinIfDevicePinIsSet": true,
+  "maximumRequiredOsVersion": "Maximum Required Os Version value",
+  "maximumWarningOsVersion": "Maximum Warning Os Version value",
+  "maximumWipeOsVersion": "Maximum Wipe Os Version value",
   "minimumRequiredOsVersion": "Minimum Required Os Version value",
   "minimumWarningOsVersion": "Minimum Warning Os Version value",
   "minimumRequiredAppVersion": "Minimum Required App Version value",
@@ -386,11 +405,14 @@ Content-Length: 5053
   "customDialerAppPackageId": "Custom Dialer App Package Id value",
   "customDialerAppDisplayName": "Custom Dialer App Display Name value",
   "biometricAuthenticationBlocked": true,
-  "requiredAndroidSafetyNetEvaluationType": "hardwareBacked"
+  "requiredAndroidSafetyNetEvaluationType": "hardwareBacked",
+  "blockAfterCompanyPortalUpdateDeferralInDays": 11,
+  "warnAfterCompanyPortalUpdateDeferralInDays": 10,
+  "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
+  "deviceLockRequired": true,
+  "appActionIfDeviceLockNotSet": "wipe"
 }
 ```
-
-
 
 
 

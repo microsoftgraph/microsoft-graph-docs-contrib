@@ -2,8 +2,8 @@
 title: "applicationSignInDetailedSummary resource type"
 description: "Represents an application sign-in summary."
 localization_priority: Normal
-author: "khotz"
-ms.prod: "microsoft-identity-platform"
+author: "besiler"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 

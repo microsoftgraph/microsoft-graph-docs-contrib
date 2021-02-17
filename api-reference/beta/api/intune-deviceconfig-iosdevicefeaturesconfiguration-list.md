@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7737
+Content-Length: 7863
 
 {
   "value": [
@@ -140,7 +140,8 @@ Content-Length: 7737
                 {
                   "@odata.type": "microsoft.graph.iosHomeScreenApp",
                   "displayName": "Display Name value",
-                  "bundleID": "Bundle ID value"
+                  "bundleID": "Bundle ID value",
+                  "isWebClip": true
                 }
               ]
             }
@@ -163,7 +164,8 @@ Content-Length: 7737
                     {
                       "@odata.type": "microsoft.graph.iosHomeScreenApp",
                       "displayName": "Display Name value",
-                      "bundleID": "Bundle ID value"
+                      "bundleID": "Bundle ID value",
+                      "isWebClip": true
                     }
                   ]
                 }
@@ -183,7 +185,8 @@ Content-Length: 7737
           "showOnLockScreen": true,
           "alertType": "banner",
           "badgesEnabled": true,
-          "soundsEnabled": true
+          "soundsEnabled": true,
+          "previewVisibility": "alwaysShow"
         }
       ],
       "singleSignOnSettings": {
@@ -274,8 +277,6 @@ Content-Length: 7737
   ]
 }
 ```
-
-
 
 
 

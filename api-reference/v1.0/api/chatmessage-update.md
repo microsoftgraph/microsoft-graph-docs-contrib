@@ -17,15 +17,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.    |
+|Delegated (work or school account) | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Chat.UpdatePolicyViolation.All for a chat message.</br>ChannelMessage.UpdatePolicyViolation.All for a channel message. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /teams/(team-id)/channels/{channel-id}/chatMessages/{message-id}
-PATCH /users/(user-id)/chats/{chatThread-id}/chatMessages/{message-id}
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}
+PATCH /chats/{chatThread-id}/messages/{message-id}
 ```
 
 ## Request headers

@@ -147,11 +147,11 @@ Content-Type: application/json
     }
   ],  
   "locationConstraint": { 
-    "isRequired": "false",  
-    "suggestLocation": "false",  
+    "isRequired": false,  
+    "suggestLocation": false,  
     "locations": [ 
       { 
-        "resolveAvailability": "false",
+        "resolveAvailability": false,
         "displayName": "Conf room Hood" 
       } 
     ] 
@@ -380,12 +380,8 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-      "Warning: /api-reference/v1.0/api/user-findmeetingtimes.md:
-      Failed to parse any rows out of table with headers: |activityDomain value|Suggestions for meeting times|",
       "Error: user_findmeetingtimes/meetingTimeSuggestions/member/confidence:\r\n
-      Expected type Double but actual was Int64. Property: confidence, actual value: '100'",
-      "Error: user_findmeetingtimes/meetingTimeSuggestions/member/confidence:\r\n
-      Expected type Float but actual was Int64. Property: confidence, actual value: '100'"
+      Expected type Double but actual was Int64. Property: confidence, actual value: '100'"
   ],
   "tocPath": ""
 }-->

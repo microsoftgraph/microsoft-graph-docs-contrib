@@ -1,5 +1,5 @@
 ---
-title: List printJobs
+title: List printJobs for a printer
 description: Retrieve a list of print jobs associated with the printer.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# List printJobs
+# List printJobs for a printer
 
 Namespace: microsoft.graph
 
@@ -75,6 +75,13 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/jobs
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-jobs-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-jobs-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

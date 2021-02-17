@@ -1,6 +1,5 @@
 ---
 author: kevklam
-ms.author: kevinlam
 title: Grant permission
 description: Grant a list of users access to use the specified link
 localization_priority: Normal
@@ -106,6 +105,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/permission-grant-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/permission-grant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

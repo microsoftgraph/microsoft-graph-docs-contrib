@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 ms.date: 09/10/2017
 title: File Activities
 description: "List the recent activities that took place on an item or under a hierarchy."
@@ -62,6 +61,10 @@ GET https://graph.microsoft.com/beta/me/drive/activities
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-activities-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-activities-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

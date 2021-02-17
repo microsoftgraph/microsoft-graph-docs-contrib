@@ -27,5 +27,3 @@ Wi-Fi Network Single Sign On Type Settings.
 
 
 
-
-

@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const authorizationPolicy = {
-  guestUserRole: "2af84b1e-32c8-42b7-82bc-daa82404023b"
+   guestUserRole:"2af84b1e-32c8-42b7-82bc-daa82404023b"
 };
 
 let res = await client.api('/policies/authorizationPolicy/authorizationPolicy')
