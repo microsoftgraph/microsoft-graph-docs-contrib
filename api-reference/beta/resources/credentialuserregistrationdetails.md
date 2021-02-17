@@ -26,7 +26,7 @@ Represents the details of the usage of self-service password reset and multi-fac
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| authMethods | registrationAuthMethod collection | Represents the authentication method that the user has registered. Possible values are: <ul><li>`email`</li><li>`mobilePhone`</li><li>`officePhone`</li><li> `securityQuestion` (only used for self-service password reset)</li> <li>`appNotification`</li><li> `appCode`</li><li>`alternateMobilePhone` (supported only in registration).</li></ul> |
+| authMethods | registrationAuthMethod collection | Represents the authentication method that the user has registered. Possible values are: <ul><li>`email`</li><li>`mobilePhone`</li><li>`officePhone`</li><li> `securityQuestion` (only used for self-service password reset)</li> <li>`appNotification`</li><li> `appCode`</li><li>`alternateMobilePhone` (supported only in registration).</li><li> `fido`</li><li> `appPassword`</li><li> `unknownFutureValue`</li></ul> |
 | id | String | The unique identifier for the activity. Read-only.|
 | isCapable | Boolean | Indicates whether the user is ready to perform self-service password reset or MFA. |
 | isEnabled | Boolean | Indiciates whether the user enabled to perform self-service password reset. |
