@@ -1,5 +1,4 @@
 ---
-ms.author: "almars"
 title: "organizationalBrandingProperties resource type"
 description: "Contains details of the organization's branding."
 localization_priority: Normal
