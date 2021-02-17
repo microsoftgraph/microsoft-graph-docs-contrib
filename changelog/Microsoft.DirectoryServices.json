@@ -1,6 +1,1427 @@
 {
   "changelog": [
-    {"ChangeList":[{"Id":"a3bc69fb-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"administrativeUnit","ChangeType":"Addition","Description":"Added the [administrativeUnit](https://docs.microsoft.com/en-us/graph/api/resources/administrativeUnit?view=graph-rest-1.0) resource type.","Target":"administrativeUnit"},{"Id":"a3c38fd8-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"authorizationPolicy","ChangeType":"Addition","Description":"Added the [authorizationPolicy](https://docs.microsoft.com/en-us/graph/api/resources/authorizationPolicy?view=graph-rest-1.0) resource type.","Target":"authorizationPolicy"},{"Id":"a3c5f3b4-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"directory","ChangeType":"Addition","Description":"Added the [directory](https://docs.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource type.","Target":"directory"},{"Id":"a3c85766-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"directoryObject","ChangeType":"Addition","Description":"Added the [directoryObject](https://docs.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource type.","Target":"directoryObject"},{"Id":"a3cab729-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"certificateBasedAuthConfiguration","ChangeType":"Addition","Description":"Added the [certificateBasedAuthConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/certificateBasedAuthConfiguration?view=graph-rest-1.0) resource type.","Target":"certificateBasedAuthConfiguration"},{"Id":"a3cd1892-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"orgContact","ChangeType":"Addition","Description":"Added the [orgContact](https://docs.microsoft.com/en-us/graph/api/resources/orgContact?view=graph-rest-1.0) resource type.","Target":"orgContact"},{"Id":"a3cf7e18-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"device","ChangeType":"Addition","Description":"Added the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource type.","Target":"device"},{"Id":"a3d1ded6-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"directoryObjectPartnerReference","ChangeType":"Addition","Description":"Added the [directoryObjectPartnerReference](https://docs.microsoft.com/en-us/graph/api/resources/directoryObjectPartnerReference?view=graph-rest-1.0) resource type.","Target":"directoryObjectPartnerReference"},{"Id":"a3d486b9-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"directoryRole","ChangeType":"Addition","Description":"Added the [directoryRole](https://docs.microsoft.com/en-us/graph/api/resources/directoryRole?view=graph-rest-1.0) resource type.","Target":"directoryRole"},{"Id":"a3d6e9c2-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"directoryRoleTemplate","ChangeType":"Addition","Description":"Added the [directoryRoleTemplate](https://docs.microsoft.com/en-us/graph/api/resources/directoryRoleTemplate?view=graph-rest-1.0) resource type.","Target":"directoryRoleTemplate"},{"Id":"a3d94c06-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"domain","ChangeType":"Addition","Description":"Added the [domain](https://docs.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0) resource type.","Target":"domain"},{"Id":"a3dbb105-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"domainDnsRecord","ChangeType":"Addition","Description":"Added the [domainDnsRecord](https://docs.microsoft.com/en-us/graph/api/resources/domainDnsRecord?view=graph-rest-1.0) resource type.","Target":"domainDnsRecord"},{"Id":"a3de1492-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"domainDnsCnameRecord","ChangeType":"Addition","Description":"Added the [domainDnsCnameRecord](https://docs.microsoft.com/en-us/graph/api/resources/domainDnsCnameRecord?view=graph-rest-1.0) resource type.","Target":"domainDnsCnameRecord"},{"Id":"a3e07583-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"domainDnsMxRecord","ChangeType":"Addition","Description":"Added the [domainDnsMxRecord](https://docs.microsoft.com/en-us/graph/api/resources/domainDnsMxRecord?view=graph-rest-1.0) resource type.","Target":"domainDnsMxRecord"},{"Id":"a3e2d6f5-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"domainDnsSrvRecord","ChangeType":"Addition","Description":"Added the [domainDnsSrvRecord](https://docs.microsoft.com/en-us/graph/api/resources/domainDnsSrvRecord?view=graph-rest-1.0) resource type.","Target":"domainDnsSrvRecord"},{"Id":"a3e53a74-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"domainDnsTxtRecord","ChangeType":"Addition","Description":"Added the [domainDnsTxtRecord](https://docs.microsoft.com/en-us/graph/api/resources/domainDnsTxtRecord?view=graph-rest-1.0) resource type.","Target":"domainDnsTxtRecord"},{"Id":"a3e88723-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"domainDnsUnavailableRecord","ChangeType":"Addition","Description":"Added the [domainDnsUnavailableRecord](https://docs.microsoft.com/en-us/graph/api/resources/domainDnsUnavailableRecord?view=graph-rest-1.0) resource type.","Target":"domainDnsUnavailableRecord"},{"Id":"a3eaeb1e-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"endpoint","ChangeType":"Addition","Description":"Added the [endpoint](https://docs.microsoft.com/en-us/graph/api/resources/endpoint?view=graph-rest-1.0) resource type.","Target":"endpoint"},{"Id":"a3f2128a-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"organizationalBranding","ChangeType":"Addition","Description":"Added the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-1.0) resource type.","Target":"organizationalBranding"},{"Id":"a3f474ad-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"organizationalBrandingLocalization","ChangeType":"Addition","Description":"Added the [organizationalBrandingLocalization](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-1.0) resource type.","Target":"organizationalBrandingLocalization"},{"Id":"a3f6d6db-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"organizationalBrandingProperties","ChangeType":"Addition","Description":"Added the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource type.","Target":"organizationalBrandingProperties"},{"Id":"a3fe035e-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"policyRoot","ChangeType":"Addition","Description":"Added the [policyRoot](https://docs.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-1.0) resource type.","Target":"policyRoot"},{"Id":"a400607e-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"activityBasedTimeoutPolicy","ChangeType":"Addition","Description":"Added the [activityBasedTimeoutPolicy](https://docs.microsoft.com/en-us/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-1.0) resource type.","Target":"activityBasedTimeoutPolicy"},{"Id":"a402c329-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"claimsMappingPolicy","ChangeType":"Addition","Description":"Added the [claimsMappingPolicy](https://docs.microsoft.com/en-us/graph/api/resources/claimsMappingPolicy?view=graph-rest-1.0) resource type.","Target":"claimsMappingPolicy"},{"Id":"a405239f-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"homeRealmDiscoveryPolicy","ChangeType":"Addition","Description":"Added the [homeRealmDiscoveryPolicy](https://docs.microsoft.com/en-us/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-1.0) resource type.","Target":"homeRealmDiscoveryPolicy"},{"Id":"a40786f1-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"tokenIssuancePolicy","ChangeType":"Addition","Description":"Added the [tokenIssuancePolicy](https://docs.microsoft.com/en-us/graph/api/resources/tokenIssuancePolicy?view=graph-rest-1.0) resource type.","Target":"tokenIssuancePolicy"},{"Id":"a409e9b5-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"tokenLifetimePolicy","ChangeType":"Addition","Description":"Added the [tokenLifetimePolicy](https://docs.microsoft.com/en-us/graph/api/resources/tokenLifetimePolicy?view=graph-rest-1.0) resource type.","Target":"tokenLifetimePolicy"},{"Id":"a40c4bc2-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"policyBase","ChangeType":"Addition","Description":"Added the [policyBase](https://docs.microsoft.com/en-us/graph/api/resources/policyBase?view=graph-rest-1.0) resource type.","Target":"policyBase"},{"Id":"a40eaf5d-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"stsPolicy","ChangeType":"Addition","Description":"Added the [stsPolicy](https://docs.microsoft.com/en-us/graph/api/resources/stsPolicy?view=graph-rest-1.0) resource type.","Target":"stsPolicy"},{"Id":"a41114e5-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"contract","ChangeType":"Addition","Description":"Added the [contract](https://docs.microsoft.com/en-us/graph/api/resources/contract?view=graph-rest-1.0) resource type.","Target":"contract"},{"Id":"a415d91f-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"subscribedSku","ChangeType":"Addition","Description":"Added the [subscribedSku](https://docs.microsoft.com/en-us/graph/api/resources/subscribedSku?view=graph-rest-1.0) resource type.","Target":"subscribedSku"},{"Id":"a41a9e0e-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"organization","ChangeType":"Addition","Description":"Added the [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0) resource type.","Target":"organization"},{"Id":"a41f63f1-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"groupSetting","ChangeType":"Addition","Description":"Added the [groupSetting](https://docs.microsoft.com/en-us/graph/api/resources/groupSetting?view=graph-rest-1.0) resource type.","Target":"groupSetting"},{"Id":"a421c58d-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"groupSettingTemplate","ChangeType":"Addition","Description":"Added the [groupSettingTemplate](https://docs.microsoft.com/en-us/graph/api/resources/groupSettingTemplate?view=graph-rest-1.0) resource type.","Target":"groupSettingTemplate"},{"Id":"a42427bf-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"delegatedPermissionClassification","ChangeType":"Addition","Description":"Added the [delegatedPermissionClassification](https://docs.microsoft.com/en-us/graph/api/resources/delegatedPermissionClassification?view=graph-rest-1.0) resource type.","Target":"delegatedPermissionClassification"},{"Id":"a42689d8-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"permissionGrantPolicy","ChangeType":"Addition","Description":"Added the [permissionGrantPolicy](https://docs.microsoft.com/en-us/graph/api/resources/permissionGrantPolicy?view=graph-rest-1.0) resource type.","Target":"permissionGrantPolicy"},{"Id":"a428ed20-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"permissionGrantConditionSet","ChangeType":"Addition","Description":"Added the [permissionGrantConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/permissionGrantConditionSet?view=graph-rest-1.0) resource type.","Target":"permissionGrantConditionSet"},{"Id":"a42b4dbf-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"scopedRoleMembership","ChangeType":"Addition","Description":"Added the [scopedRoleMembership](https://docs.microsoft.com/en-us/graph/api/resources/scopedRoleMembership?view=graph-rest-1.0) resource type.","Target":"scopedRoleMembership"},{"Id":"a42db108-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"ComplexExtensionValue","ChangeType":"Addition","Description":"Added the [ComplexExtensionValue](https://docs.microsoft.com/en-us/graph/api/resources/ComplexExtensionValue?view=graph-rest-1.0) resource type.","Target":"ComplexExtensionValue"},{"Id":"a432737b-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"alternativeSecurityId","ChangeType":"Addition","Description":"Added the [alternativeSecurityId](https://docs.microsoft.com/en-us/graph/api/resources/alternativeSecurityId?view=graph-rest-1.0) resource type.","Target":"alternativeSecurityId"},{"Id":"a440c3fa-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"certificateAuthority","ChangeType":"Addition","Description":"Added the [certificateAuthority](https://docs.microsoft.com/en-us/graph/api/resources/certificateAuthority?view=graph-rest-1.0) resource type.","Target":"certificateAuthority"},{"Id":"a443261c-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"defaultUserRolePermissions","ChangeType":"Addition","Description":"Added the [defaultUserRolePermissions](https://docs.microsoft.com/en-us/graph/api/resources/defaultUserRolePermissions?view=graph-rest-1.0) resource type.","Target":"defaultUserRolePermissions"},{"Id":"a4458914-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"domainState","ChangeType":"Addition","Description":"Added the [domainState](https://docs.microsoft.com/en-us/graph/api/resources/domainState?view=graph-rest-1.0) resource type.","Target":"domainState"},{"Id":"a447ebc9-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"instanceResourceAccess","ChangeType":"Addition","Description":"Added the [instanceResourceAccess](https://docs.microsoft.com/en-us/graph/api/resources/instanceResourceAccess?view=graph-rest-1.0) resource type.","Target":"instanceResourceAccess"},{"Id":"a44a4c31-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"resourcePermission","ChangeType":"Addition","Description":"Added the [resourcePermission](https://docs.microsoft.com/en-us/graph/api/resources/resourcePermission?view=graph-rest-1.0) resource type.","Target":"resourcePermission"},{"Id":"a44caff5-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"identity","ChangeType":"Addition","Description":"Added the [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0) resource type.","Target":"identity"},{"Id":"a44f123f-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"employeeOrgData","ChangeType":"Addition","Description":"Added the [employeeOrgData](https://docs.microsoft.com/en-us/graph/api/resources/employeeOrgData?view=graph-rest-1.0) resource type.","Target":"employeeOrgData"},{"Id":"a453d796-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"informationalUrl","ChangeType":"Addition","Description":"Added the [informationalUrl](https://docs.microsoft.com/en-us/graph/api/resources/informationalUrl?view=graph-rest-1.0) resource type.","Target":"informationalUrl"},{"Id":"a4589cda-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"keyValue","ChangeType":"Addition","Description":"Added the [keyValue](https://docs.microsoft.com/en-us/graph/api/resources/keyValue?view=graph-rest-1.0) resource type.","Target":"keyValue"},{"Id":"a46225fd-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"licenseUnitsDetail","ChangeType":"Addition","Description":"Added the [licenseUnitsDetail](https://docs.microsoft.com/en-us/graph/api/resources/licenseUnitsDetail?view=graph-rest-1.0) resource type.","Target":"licenseUnitsDetail"},{"Id":"a47537e8-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"physicalOfficeAddress","ChangeType":"Addition","Description":"Added the [physicalOfficeAddress](https://docs.microsoft.com/en-us/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0) resource type.","Target":"physicalOfficeAddress"},{"Id":"a477a5ba-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"phone","ChangeType":"Addition","Description":"Added the [phone](https://docs.microsoft.com/en-us/graph/api/resources/phone?view=graph-rest-1.0) resource type.","Target":"phone"},{"Id":"a486ebbf-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"samlSingleSignOnSettings","ChangeType":"Addition","Description":"Added the [samlSingleSignOnSettings](https://docs.microsoft.com/en-us/graph/api/resources/samlSingleSignOnSettings?view=graph-rest-1.0) resource type.","Target":"samlSingleSignOnSettings"},{"Id":"a4894f06-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"settingValue","ChangeType":"Addition","Description":"Added the [settingValue](https://docs.microsoft.com/en-us/graph/api/resources/settingValue?view=graph-rest-1.0) resource type.","Target":"settingValue"},{"Id":"a48bb194-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"settingTemplateValue","ChangeType":"Addition","Description":"Added the [settingTemplateValue](https://docs.microsoft.com/en-us/graph/api/resources/settingTemplateValue?view=graph-rest-1.0) resource type.","Target":"settingTemplateValue"},{"Id":"a48e11df-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"servicePlanInfo","ChangeType":"Addition","Description":"Added the [servicePlanInfo](https://docs.microsoft.com/en-us/graph/api/resources/servicePlanInfo?view=graph-rest-1.0) resource type.","Target":"servicePlanInfo"},{"Id":"a4907576-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"spaApplication","ChangeType":"Addition","Description":"Added the [spaApplication](https://docs.microsoft.com/en-us/graph/api/resources/spaApplication?view=graph-rest-1.0) resource type.","Target":"spaApplication"},{"Id":"a492d850-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"verifiedDomain","ChangeType":"Addition","Description":"Added the [verifiedDomain](https://docs.microsoft.com/en-us/graph/api/resources/verifiedDomain?view=graph-rest-1.0) resource type.","Target":"verifiedDomain"},{"Id":"a4953a1b-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"privacyProfile","ChangeType":"Addition","Description":"Added the [privacyProfile](https://docs.microsoft.com/en-us/graph/api/resources/privacyProfile?view=graph-rest-1.0) resource type.","Target":"privacyProfile"},{"Id":"a49c60db-70c5-11eb-8401-e19c685756df","ApiChange":"Enum type","ChangedApiName":"permissionClassificationType","ChangeType":"Addition","Description":"Added the **permissionClassificationType** enumeration type.","Target":"permissionClassificationType"},{"Id":"a49ec276-70c5-11eb-8401-e19c685756df","ApiChange":"Enum type","ChangedApiName":"permissionType","ChangeType":"Addition","Description":"Added the **permissionType** enumeration type.","Target":"permissionType"},{"Id":"a4a12696-70c5-11eb-8401-e19c685756df","ApiChange":"Enum type","ChangedApiName":"allowInvitesFrom","ChangeType":"Addition","Description":"Added the **allowInvitesFrom** enumeration type.","Target":"allowInvitesFrom"},{"Id":"a4a38a46-70c5-11eb-8401-e19c685756df","ApiChange":"Enum type","ChangedApiName":"phoneType","ChangeType":"Addition","Description":"Added the **phoneType** enumeration type.","Target":"phoneType"},{"Id":"a4a5e9a7-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"getByIds","ChangeType":"Addition","Description":"Added the [getByIds](https://docs.microsoft.com/en-us/graph/api/directoryObject-getByIds?view=graph-rest-1.0) method to the [directoryObject](https://docs.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.","Target":"directoryObject"},{"Id":"a4b1d767-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"checkMemberGroups","ChangeType":"Addition","Description":"Added the [checkMemberGroups](https://docs.microsoft.com/en-us/graph/api/directoryObject-checkMemberGroups?view=graph-rest-1.0) method to the [directoryObject](https://docs.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.","Target":"directoryObject"},{"Id":"a4b43925-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"checkMemberObjects","ChangeType":"Addition","Description":"Added the [checkMemberObjects](https://docs.microsoft.com/en-us/graph/api/directoryObject-checkMemberObjects?view=graph-rest-1.0) method to the [directoryObject](https://docs.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.","Target":"directoryObject"},{"Id":"a4b69cd6-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"getAvailableExtensionProperties","ChangeType":"Addition","Description":"Added the [getAvailableExtensionProperties](https://docs.microsoft.com/en-us/graph/api/directoryObject-getAvailableExtensionProperties?view=graph-rest-1.0) method to the [directoryObject](https://docs.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.","Target":"directoryObject"},{"Id":"a4b8fec7-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"getMemberGroups","ChangeType":"Addition","Description":"Added the [getMemberGroups](https://docs.microsoft.com/en-us/graph/api/directoryObject-getMemberGroups?view=graph-rest-1.0) method to the [directoryObject](https://docs.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.","Target":"directoryObject"},{"Id":"a4bb610e-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"getMemberObjects","ChangeType":"Addition","Description":"Added the [getMemberObjects](https://docs.microsoft.com/en-us/graph/api/directoryObject-getMemberObjects?view=graph-rest-1.0) method to the [directoryObject](https://docs.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.","Target":"directoryObject"},{"Id":"a4bdc213-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"forceDelete","ChangeType":"Addition","Description":"Added the [forceDelete](https://docs.microsoft.com/en-us/graph/api/domain-forceDelete?view=graph-rest-1.0) method to the [domain](https://docs.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0) resource.","Target":"domain"},{"Id":"a4c9ad7b-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"verify","ChangeType":"Addition","Description":"Added the [verify](https://docs.microsoft.com/en-us/graph/api/domain-verify?view=graph-rest-1.0) method to the [domain](https://docs.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0) resource.","Target":"domain"},{"Id":"a4d59933-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"restore","ChangeType":"Addition","Description":"Added the [restore](https://docs.microsoft.com/en-us/graph/api/directoryObject-restore?view=graph-rest-1.0) method to the [directoryObject](https://docs.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.","Target":"directoryObject"},{"Id":"a4dcc0b5-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"validateProperties","ChangeType":"Addition","Description":"Added the [validateProperties](https://docs.microsoft.com/en-us/graph/api/directoryObject-validateProperties?view=graph-rest-1.0) method to the [directoryObject](https://docs.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.","Target":"directoryObject"},{"Id":"a4e8ac58-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"delta","ChangeType":"Addition","Description":"Added the [delta](https://docs.microsoft.com/en-us/graph/api/administrativeUnit-delta?view=graph-rest-1.0) method to the [administrativeUnit](https://docs.microsoft.com/en-us/graph/api/resources/administrativeUnit?view=graph-rest-1.0) resource.","Target":"administrativeUnit"},{"Id":"a4eb0f88-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"delta","ChangeType":"Addition","Description":"Added the [delta](https://docs.microsoft.com/en-us/graph/api/orgContact-delta?view=graph-rest-1.0) method to the [orgContact](https://docs.microsoft.com/en-us/graph/api/resources/orgContact?view=graph-rest-1.0) resource.","Target":"orgContact"},{"Id":"a4efd36c-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"delta","ChangeType":"Addition","Description":"Added the [delta](https://docs.microsoft.com/en-us/graph/api/directoryRole-delta?view=graph-rest-1.0) method to the [directoryRole](https://docs.microsoft.com/en-us/graph/api/resources/directoryRole?view=graph-rest-1.0) resource.","Target":"directoryRole"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Identity and access","SubArea":"Directory management"},{"ChangeList":[{"Id":"a3becd22-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"application","ChangeType":"Addition","Description":"Added the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource type.","Target":"application"},{"Id":"a4a84bda-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"addKey","ChangeType":"Addition","Description":"Added the [addKey](https://docs.microsoft.com/en-us/graph/api/application-addKey?view=graph-rest-1.0) method to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.","Target":"application"},{"Id":"a4aaafaf-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"addPassword","ChangeType":"Addition","Description":"Added the [addPassword](https://docs.microsoft.com/en-us/graph/api/application-addPassword?view=graph-rest-1.0) method to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.","Target":"application"},{"Id":"a4cc1041-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"removeKey","ChangeType":"Addition","Description":"Added the [removeKey](https://docs.microsoft.com/en-us/graph/api/application-removeKey?view=graph-rest-1.0) method to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.","Target":"application"},{"Id":"a4ce7465-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"removePassword","ChangeType":"Addition","Description":"Added the [removePassword](https://docs.microsoft.com/en-us/graph/api/application-removePassword?view=graph-rest-1.0) method to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.","Target":"application"},{"Id":"a4e186ce-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"delta","ChangeType":"Addition","Description":"Added the [delta](https://docs.microsoft.com/en-us/graph/api/application-delta?view=graph-rest-1.0) method to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.","Target":"application"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""},{"ChangeList":[{"Id":"a3c12f68-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"appRoleAssignment","ChangeType":"Addition","Description":"Added the [appRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/appRoleAssignment?view=graph-rest-1.0) resource type.","Target":"appRoleAssignment"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""},{"ChangeList":[{"Id":"a3ed4d7c-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"extensionProperty","ChangeType":"Addition","Description":"Added the [extensionProperty](https://docs.microsoft.com/en-us/graph/api/resources/extensionProperty?view=graph-rest-1.0) resource type.","Target":"extensionProperty"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""},{"ChangeList":[{"Id":"a3efb004-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"licenseDetails","ChangeType":"Addition","Description":"Added the [licenseDetails](https://docs.microsoft.com/en-us/graph/api/resources/licenseDetails?view=graph-rest-1.0) resource type.","Target":"licenseDetails"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Users","SubArea":""},{"ChangeList":[{"Id":"a3f93904-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"group","ChangeType":"Addition","Description":"Added the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource type.","Target":"group"},{"Id":"a4c287be-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"assignLicense","ChangeType":"Addition","Description":"Added the [assignLicense](https://docs.microsoft.com/en-us/graph/api/group-assignLicense?view=graph-rest-1.0) method to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.","Target":"group"},{"Id":"a4c4ebe7-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"checkGrantedPermissionsForApp","ChangeType":"Addition","Description":"Added the [checkGrantedPermissionsForApp](https://docs.microsoft.com/en-us/graph/api/group-checkGrantedPermissionsForApp?view=graph-rest-1.0) method to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.","Target":"group"},{"Id":"a4df27d3-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"validateProperties","ChangeType":"Addition","Description":"Added the [validateProperties](https://docs.microsoft.com/en-us/graph/api/group-validateProperties?view=graph-rest-1.0) method to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.","Target":"group"},{"Id":"a4e64bcb-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"delta","ChangeType":"Addition","Description":"Added the [delta](https://docs.microsoft.com/en-us/graph/api/group-delta?view=graph-rest-1.0) method to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.","Target":"group"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Groups","SubArea":""},{"ChangeList":[{"Id":"a3fb9c7c-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"resourceSpecificPermissionGrant","ChangeType":"Addition","Description":"Added the [resourceSpecificPermissionGrant](https://docs.microsoft.com/en-us/graph/api/resources/resourceSpecificPermissionGrant?view=graph-rest-1.0) resource type.","Target":"resourceSpecificPermissionGrant"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""},{"ChangeList":[{"Id":"a4137693-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"servicePrincipal","ChangeType":"Addition","Description":"Added the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-1.0) resource type.","Target":"servicePrincipal"},{"Id":"a4ad11fa-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"addKey","ChangeType":"Addition","Description":"Added the [addKey](https://docs.microsoft.com/en-us/graph/api/servicePrincipal-addKey?view=graph-rest-1.0) method to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-1.0) resource.","Target":"servicePrincipal"},{"Id":"a4af747f-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"addPassword","ChangeType":"Addition","Description":"Added the [addPassword](https://docs.microsoft.com/en-us/graph/api/servicePrincipal-addPassword?view=graph-rest-1.0) method to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-1.0) resource.","Target":"servicePrincipal"},{"Id":"a4d0d4dd-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"removeKey","ChangeType":"Addition","Description":"Added the [removeKey](https://docs.microsoft.com/en-us/graph/api/servicePrincipal-removeKey?view=graph-rest-1.0) method to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-1.0) resource.","Target":"servicePrincipal"},{"Id":"a4d33797-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"removePassword","ChangeType":"Addition","Description":"Added the [removePassword](https://docs.microsoft.com/en-us/graph/api/servicePrincipal-removePassword?view=graph-rest-1.0) method to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-1.0) resource.","Target":"servicePrincipal"},{"Id":"a4ed718b-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"delta","ChangeType":"Addition","Description":"Added the [delta](https://docs.microsoft.com/en-us/graph/api/servicePrincipal-delta?view=graph-rest-1.0) method to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-1.0) resource.","Target":"servicePrincipal"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""},{"ChangeList":[{"Id":"a4183be7-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"oAuth2PermissionGrant","ChangeType":"Addition","Description":"Added the [oAuth2PermissionGrant](https://docs.microsoft.com/en-us/graph/api/resources/oAuth2PermissionGrant?view=graph-rest-1.0) resource type.","Target":"oAuth2PermissionGrant"},{"Id":"a4f23707-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"delta","ChangeType":"Addition","Description":"Added the [delta](https://docs.microsoft.com/en-us/graph/api/oAuth2PermissionGrant-delta?view=graph-rest-1.0) method to the [oAuth2PermissionGrant](https://docs.microsoft.com/en-us/graph/api/resources/oAuth2PermissionGrant?view=graph-rest-1.0) resource.","Target":"oAuth2PermissionGrant"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""},{"ChangeList":[{"Id":"a41d01ce-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"user","ChangeType":"Addition","Description":"Added the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource type.","Target":"user"},{"Id":"a4c025c4-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"assignLicense","ChangeType":"Addition","Description":"Added the [assignLicense](https://docs.microsoft.com/en-us/graph/api/user-assignLicense?view=graph-rest-1.0) method to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.","Target":"user"},{"Id":"a4c74cc1-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"changePassword","ChangeType":"Addition","Description":"Added the [changePassword](https://docs.microsoft.com/en-us/graph/api/user-changePassword?view=graph-rest-1.0) method to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.","Target":"user"},{"Id":"a4d7fd03-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"revokeSignInSessions","ChangeType":"Addition","Description":"Added the [revokeSignInSessions](https://docs.microsoft.com/en-us/graph/api/user-revokeSignInSessions?view=graph-rest-1.0) method to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.","Target":"user"},{"Id":"a4da5fc6-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"reprocessLicenseAssignment","ChangeType":"Addition","Description":"Added the [reprocessLicenseAssignment](https://docs.microsoft.com/en-us/graph/api/user-reprocessLicenseAssignment?view=graph-rest-1.0) method to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.","Target":"user"},{"Id":"a4e3e73c-70c5-11eb-8401-e19c685756df","ApiChange":"Method","ChangedApiName":"delta","ChangeType":"Addition","Description":"Added the [delta](https://docs.microsoft.com/en-us/graph/api/user-delta?view=graph-rest-1.0) method to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.","Target":"user"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Users","SubArea":""},{"ChangeList":[{"Id":"a4301410-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"addIn","ChangeType":"Addition","Description":"Added the [addIn](https://docs.microsoft.com/en-us/graph/api/resources/addIn?view=graph-rest-1.0) resource type.","Target":"addIn"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""},{"ChangeList":[{"Id":"a434d7bd-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"apiApplication","ChangeType":"Addition","Description":"Added the [apiApplication](https://docs.microsoft.com/en-us/graph/api/resources/apiApplication?view=graph-rest-1.0) resource type.","Target":"apiApplication"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""},{"ChangeList":[{"Id":"a4373bc4-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"appRole","ChangeType":"Addition","Description":"Added the [appRole](https://docs.microsoft.com/en-us/graph/api/resources/appRole?view=graph-rest-1.0) resource type.","Target":"appRole"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""},{"ChangeList":[{"Id":"a4399ca3-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"assignedLabel","ChangeType":"Addition","Description":"Added the [assignedLabel](https://docs.microsoft.com/en-us/graph/api/resources/assignedLabel?view=graph-rest-1.0) resource type.","Target":"assignedLabel"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Groups","SubArea":""},{"ChangeList":[{"Id":"a43bff3f-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"assignedLicense","ChangeType":"Addition","Description":"Added the [assignedLicense](https://docs.microsoft.com/en-us/graph/api/resources/assignedLicense?view=graph-rest-1.0) resource type.","Target":"assignedLicense"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Users","SubArea":""},{"ChangeList":[{"Id":"a43e6279-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"assignedPlan","ChangeType":"Addition","Description":"Added the [assignedPlan](https://docs.microsoft.com/en-us/graph/api/resources/assignedPlan?view=graph-rest-1.0) resource type.","Target":"assignedPlan"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Users","SubArea":""},{"ChangeList":[{"Id":"a45175a3-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"implicitGrantSettings","ChangeType":"Addition","Description":"Added the [implicitGrantSettings](https://docs.microsoft.com/en-us/graph/api/resources/implicitGrantSettings?view=graph-rest-1.0) resource type.","Target":"implicitGrantSettings"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""},{"ChangeList":[{"Id":"a4563a19-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"keyCredential","ChangeType":"Addition","Description":"Added the [keyCredential](https://docs.microsoft.com/en-us/graph/api/resources/keyCredential?view=graph-rest-1.0) resource type.","Target":"keyCredential"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""},{"ChangeList":[{"Id":"a45affc6-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"licenseAssignmentState","ChangeType":"Addition","Description":"Added the [licenseAssignmentState](https://docs.microsoft.com/en-us/graph/api/resources/licenseAssignmentState?view=graph-rest-1.0) resource type.","Target":"licenseAssignmentState"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Users","SubArea":""},{"ChangeList":[{"Id":"a45d5f96-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"licenseProcessingState","ChangeType":"Addition","Description":"Added the [licenseProcessingState](https://docs.microsoft.com/en-us/graph/api/resources/licenseProcessingState?view=graph-rest-1.0) resource type.","Target":"licenseProcessingState"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Groups","SubArea":""},{"ChangeList":[{"Id":"a45fc40b-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"objectIdentity","ChangeType":"Addition","Description":"Added the [objectIdentity](https://docs.microsoft.com/en-us/graph/api/resources/objectIdentity?view=graph-rest-1.0) resource type.","Target":"objectIdentity"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Users","SubArea":""},{"ChangeList":[{"Id":"a46487ea-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"onPremisesProvisioningError","ChangeType":"Addition","Description":"Added the [onPremisesProvisioningError](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesProvisioningError?view=graph-rest-1.0) resource type.","Target":"onPremisesProvisioningError"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Users","SubArea":""},{"ChangeList":[{"Id":"a466eb2a-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"optionalClaims","ChangeType":"Addition","Description":"Added the [optionalClaims](https://docs.microsoft.com/en-us/graph/api/resources/optionalClaims?view=graph-rest-1.0) resource type.","Target":"optionalClaims"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""},{"ChangeList":[{"Id":"a4694d86-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"optionalClaim","ChangeType":"Addition","Description":"Added the [optionalClaim](https://docs.microsoft.com/en-us/graph/api/resources/optionalClaim?view=graph-rest-1.0) resource type.","Target":"optionalClaim"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""},{"ChangeList":[{"Id":"a46bae11-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"parentalControlSettings","ChangeType":"Addition","Description":"Added the [parentalControlSettings](https://docs.microsoft.com/en-us/graph/api/resources/parentalControlSettings?view=graph-rest-1.0) resource type.","Target":"parentalControlSettings"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""},{"ChangeList":[{"Id":"a46e108d-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"passwordCredential","ChangeType":"Addition","Description":"Added the [passwordCredential](https://docs.microsoft.com/en-us/graph/api/resources/passwordCredential?view=graph-rest-1.0) resource type.","Target":"passwordCredential"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""},{"ChangeList":[{"Id":"a4707282-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"passwordProfile","ChangeType":"Addition","Description":"Added the [passwordProfile](https://docs.microsoft.com/en-us/graph/api/resources/passwordProfile?view=graph-rest-1.0) resource type.","Target":"passwordProfile"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Users","SubArea":""},{"ChangeList":[{"Id":"a472d891-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"permissionScope","ChangeType":"Addition","Description":"Added the [permissionScope](https://docs.microsoft.com/en-us/graph/api/resources/permissionScope?view=graph-rest-1.0) resource type.","Target":"permissionScope"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""},{"ChangeList":[{"Id":"a47a090e-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"preAuthorizedApplication","ChangeType":"Addition","Description":"Added the [preAuthorizedApplication](https://docs.microsoft.com/en-us/graph/api/resources/preAuthorizedApplication?view=graph-rest-1.0) resource type.","Target":"preAuthorizedApplication"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""},{"ChangeList":[{"Id":"a47c6b11-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"provisionedPlan","ChangeType":"Addition","Description":"Added the [provisionedPlan](https://docs.microsoft.com/en-us/graph/api/resources/provisionedPlan?view=graph-rest-1.0) resource type.","Target":"provisionedPlan"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Users","SubArea":""},{"ChangeList":[{"Id":"a47eceae-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"publicClientApplication","ChangeType":"Addition","Description":"Added the [publicClientApplication](https://docs.microsoft.com/en-us/graph/api/resources/publicClientApplication?view=graph-rest-1.0) resource type.","Target":"publicClientApplication"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""},{"ChangeList":[{"Id":"a481316a-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"requiredResourceAccess","ChangeType":"Addition","Description":"Added the [requiredResourceAccess](https://docs.microsoft.com/en-us/graph/api/resources/requiredResourceAccess?view=graph-rest-1.0) resource type.","Target":"requiredResourceAccess"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""},{"ChangeList":[{"Id":"a4848821-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"resourceAccess","ChangeType":"Addition","Description":"Added the [resourceAccess](https://docs.microsoft.com/en-us/graph/api/resources/resourceAccess?view=graph-rest-1.0) resource type.","Target":"resourceAccess"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""},{"ChangeList":[{"Id":"a4979db9-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"onPremisesExtensionAttributes","ChangeType":"Addition","Description":"Added the [onPremisesExtensionAttributes](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesExtensionAttributes?view=graph-rest-1.0) resource type.","Target":"onPremisesExtensionAttributes"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Users","SubArea":""},{"ChangeList":[{"Id":"a49a0331-70c5-11eb-8401-e19c685756df","ApiChange":"Resource","ChangedApiName":"webApplication","ChangeType":"Addition","Description":"Added the [webApplication](https://docs.microsoft.com/en-us/graph/api/resources/webApplication?view=graph-rest-1.0) resource type.","Target":"webApplication"}],"Id":"a3ba065b-70c5-11eb-8401-e19c685756df","Cloud":"prd","Version":"v1.0","CreatedDateTime":"2021-02-17T02:12:52.267Z","WorkloadArea":"Applications","SubArea":""}]
+    {
+      "ChangeList": [
+      {
+        "Id":"a3bc69fb-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"administrativeUnit",
+        "ChangeType":"Addition",
+        "Description":"Added the [administrativeUnit](https://docs.microsoft.com/en-us/graph/api/resources/administrativeUnit?view=graph-rest-1.0) resource type.",
+        "Target":"administrativeUnit"
+      },
+      {
+        "Id":"a3c38fd8-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"authorizationPolicy",
+        "ChangeType":"Addition",
+        "Description":"Added the [authorizationPolicy](https://docs.microsoft.com/en-us/graph/api/resources/authorizationPolicy?view=graph-rest-1.0) resource type.",
+        "Target":"authorizationPolicy"
+      },
+      {
+        "Id":"a3c5f3b4-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"directory",
+        "ChangeType":"Addition",
+        "Description":"Added the [directory](https://docs.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource type.",
+        "Target":"directory"
+      },
+      {
+        "Id":"a3c85766-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource","ChangedApiName":"directoryObject",
+        "ChangeType":"Addition",
+        "Description":"Added the [directoryObject](https://docs.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource type.",
+        "Target":"directoryObject"
+      },
+      {
+        "Id":"a3cab729-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"certificateBasedAuthConfiguration",
+        "ChangeType":"Addition",
+        "Description":"Added the [certificateBasedAuthConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/certificateBasedAuthConfiguration?view=graph-rest-1.0) resource type.",
+        "Target":"certificateBasedAuthConfiguration"
+      },
+      {
+        "Id":"a3cd1892-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"orgContact",
+        "ChangeType":"Addition",
+        "Description":"Added the [orgContact](https://docs.microsoft.com/en-us/graph/api/resources/orgContact?view=graph-rest-1.0) resource type.",
+        "Target":"orgContact"
+      },
+      {
+        "Id":"a3cf7e18-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"device",
+        "ChangeType":"Addition",
+        "Description":"Added the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource type.",
+        "Target":"device"
+      },
+      {
+        "Id":"a3d1ded6-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"directoryObjectPartnerReference",
+        "ChangeType":"Addition",
+        "Description":"Added the [directoryObjectPartnerReference](https://docs.microsoft.com/en-us/graph/api/resources/directoryObjectPartnerReference?view=graph-rest-1.0) resource type.",
+        "Target":"directoryObjectPartnerReference"
+      },
+      {
+        "Id":"a3d486b9-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"directoryRole",
+        "ChangeType":"Addition",
+        "Description":"Added the [directoryRole](https://docs.microsoft.com/en-us/graph/api/resources/directoryRole?view=graph-rest-1.0) resource type.",
+        "Target":"directoryRole"
+      },
+      {
+        "Id":"a3d6e9c2-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"directoryRoleTemplate",
+        "ChangeType":"Addition",
+        "Description":"Added the [directoryRoleTemplate](https://docs.microsoft.com/en-us/graph/api/resources/directoryRoleTemplate?view=graph-rest-1.0) resource type.",
+        "Target":"directoryRoleTemplate"
+      },
+      {
+        "Id":"a3d94c06-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"domain",
+        "ChangeType":"Addition",
+        "Description":"Added the [domain](https://docs.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0) resource type.",
+        "Target":"domain"
+      },
+      {
+        "Id":"a3dbb105-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"domainDnsRecord",
+        "ChangeType":"Addition",
+        "Description":"Added the [domainDnsRecord](https://docs.microsoft.com/en-us/graph/api/resources/domainDnsRecord?view=graph-rest-1.0) resource type.",
+        "Target":"domainDnsRecord"
+      },
+      {
+        "Id":"a3de1492-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"domainDnsCnameRecord",
+        "ChangeType":"Addition",
+        "Description":"Added the [domainDnsCnameRecord](https://docs.microsoft.com/en-us/graph/api/resources/domainDnsCnameRecord?view=graph-rest-1.0) resource type.",
+        "Target":"domainDnsCnameRecord"
+      },
+      {
+        "Id":"a3e07583-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"domainDnsMxRecord",
+        "ChangeType":"Addition",
+        "Description":"Added the [domainDnsMxRecord](https://docs.microsoft.com/en-us/graph/api/resources/domainDnsMxRecord?view=graph-rest-1.0) resource type.",
+        "Target":"domainDnsMxRecord"
+      },
+      {
+        "Id":"a3e2d6f5-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"domainDnsSrvRecord",
+        "ChangeType":"Addition",
+        "Description":"Added the [domainDnsSrvRecord](https://docs.microsoft.com/en-us/graph/api/resources/domainDnsSrvRecord?view=graph-rest-1.0) resource type.",
+        "Target":"domainDnsSrvRecord"
+      },
+      {
+        "Id":"a3e53a74-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"domainDnsTxtRecord",
+        "ChangeType":"Addition",
+        "Description":"Added the [domainDnsTxtRecord](https://docs.microsoft.com/en-us/graph/api/resources/domainDnsTxtRecord?view=graph-rest-1.0) resource type.",
+        "Target":"domainDnsTxtRecord"
+      },
+      {
+        "Id":"a3e88723-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"domainDnsUnavailableRecord",
+        "ChangeType":"Addition",
+        "Description":"Added the [domainDnsUnavailableRecord](https://docs.microsoft.com/en-us/graph/api/resources/domainDnsUnavailableRecord?view=graph-rest-1.0) resource type.",
+        "Target":"domainDnsUnavailableRecord"
+      },
+      {
+        "Id":"a3eaeb1e-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"endpoint",
+        "ChangeType":"Addition",
+        "Description":"Added the [endpoint](https://docs.microsoft.com/en-us/graph/api/resources/endpoint?view=graph-rest-1.0) resource type.",
+        "Target":"endpoint"
+      },
+      {
+        "Id":"a3f2128a-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"organizationalBranding",
+        "ChangeType":"Addition",
+        "Description":"Added the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-1.0) resource type.",
+        "Target":"organizationalBranding"
+      },
+      {
+        "Id":"a3f474ad-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"organizationalBrandingLocalization",
+        "ChangeType":"Addition",
+        "Description":"Added the [organizationalBrandingLocalization](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-1.0) resource type.",
+        "Target":"organizationalBrandingLocalization"
+      },
+      {
+        "Id":"a3f6d6db-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"organizationalBrandingProperties",
+        "ChangeType":"Addition",
+        "Description":"Added the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource type.",
+        "Target":"organizationalBrandingProperties"
+      },
+      {
+        "Id":"a3fe035e-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"policyRoot",
+        "ChangeType":"Addition",
+        "Description":"Added the [policyRoot](https://docs.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-1.0) resource type.",
+        "Target":"policyRoot"
+      },
+      {
+        "Id":"a400607e-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"activityBasedTimeoutPolicy",
+        "ChangeType":"Addition",
+        "Description":"Added the [activityBasedTimeoutPolicy](https://docs.microsoft.com/en-us/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-1.0) resource type.",
+        "Target":"activityBasedTimeoutPolicy"
+      },
+      {
+        "Id":"a402c329-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"claimsMappingPolicy",
+        "ChangeType":"Addition",
+        "Description":"Added the [claimsMappingPolicy](https://docs.microsoft.com/en-us/graph/api/resources/claimsMappingPolicy?view=graph-rest-1.0) resource type.",
+        "Target":"claimsMappingPolicy"
+      },
+      {
+        "Id":"a405239f-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"homeRealmDiscoveryPolicy",
+        "ChangeType":"Addition",
+        "Description":"Added the [homeRealmDiscoveryPolicy](https://docs.microsoft.com/en-us/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-1.0) resource type.",
+        "Target":"homeRealmDiscoveryPolicy"
+      },
+      {
+        "Id":"a40786f1-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"tokenIssuancePolicy",
+        "ChangeType":"Addition",
+        "Description":"Added the [tokenIssuancePolicy](https://docs.microsoft.com/en-us/graph/api/resources/tokenIssuancePolicy?view=graph-rest-1.0) resource type.",
+        "Target":"tokenIssuancePolicy"
+      },
+      {
+        "Id":"a409e9b5-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"tokenLifetimePolicy",
+        "ChangeType":"Addition",
+        "Description":"Added the [tokenLifetimePolicy](https://docs.microsoft.com/en-us/graph/api/resources/tokenLifetimePolicy?view=graph-rest-1.0) resource type.",
+        "Target":"tokenLifetimePolicy"
+      },
+      {
+        "Id":"a40c4bc2-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"policyBase",
+        "ChangeType":"Addition",
+        "Description":"Added the [policyBase](https://docs.microsoft.com/en-us/graph/api/resources/policyBase?view=graph-rest-1.0) resource type.",
+        "Target":"policyBase"
+      },
+      {
+        "Id":"a40eaf5d-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"stsPolicy",
+        "ChangeType":"Addition",
+        "Description":"Added the [stsPolicy](https://docs.microsoft.com/en-us/graph/api/resources/stsPolicy?view=graph-rest-1.0) resource type.",
+        "Target":"stsPolicy"
+      },
+      {
+        "Id":"a41114e5-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"contract",
+        "ChangeType":"Addition",
+        "Description":"Added the [contract](https://docs.microsoft.com/en-us/graph/api/resources/contract?view=graph-rest-1.0) resource type.",
+        "Target":"contract"
+      },
+      {
+        "Id":"a415d91f-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"subscribedSku",
+        "ChangeType":"Addition",
+        "Description":"Added the [subscribedSku](https://docs.microsoft.com/en-us/graph/api/resources/subscribedSku?view=graph-rest-1.0) resource type.",
+        "Target":"subscribedSku"
+      },
+      {
+        "Id":"a41a9e0e-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"organization",
+        "ChangeType":"Addition",
+        "Description":"Added the [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0) resource type.",
+        "Target":"organization"
+      },
+      {
+        "Id":"a41f63f1-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"groupSetting",
+        "ChangeType":"Addition",
+        "Description":"Added the [groupSetting](https://docs.microsoft.com/en-us/graph/api/resources/groupSetting?view=graph-rest-1.0) resource type.",
+        "Target":"groupSetting"
+      },
+      {
+        "Id":"a421c58d-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"groupSettingTemplate",
+        "ChangeType":"Addition",
+        "Description":"Added the [groupSettingTemplate](https://docs.microsoft.com/en-us/graph/api/resources/groupSettingTemplate?view=graph-rest-1.0) resource type.",
+        "Target":"groupSettingTemplate"
+      },
+      {
+        "Id":"a42427bf-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"delegatedPermissionClassification",
+        "ChangeType":"Addition",
+        "Description":"Added the [delegatedPermissionClassification](https://docs.microsoft.com/en-us/graph/api/resources/delegatedPermissionClassification?view=graph-rest-1.0) resource type.",
+        "Target":"delegatedPermissionClassification"
+      },
+      {
+        "Id":"a42689d8-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"permissionGrantPolicy",
+        "ChangeType":"Addition",
+        "Description":"Added the [permissionGrantPolicy](https://docs.microsoft.com/en-us/graph/api/resources/permissionGrantPolicy?view=graph-rest-1.0) resource type.",
+        "Target":"permissionGrantPolicy"
+      },
+      {
+        "Id":"a428ed20-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"permissionGrantConditionSet",
+        "ChangeType":"Addition",
+        "Description":"Added the [permissionGrantConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/permissionGrantConditionSet?view=graph-rest-1.0) resource type.",
+        "Target":"permissionGrantConditionSet"
+      },
+      {
+        "Id":"a42b4dbf-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"scopedRoleMembership",
+        "ChangeType":"Addition",
+        "Description":"Added the [scopedRoleMembership](https://docs.microsoft.com/en-us/graph/api/resources/scopedRoleMembership?view=graph-rest-1.0) resource type.",
+        "Target":"scopedRoleMembership"
+      },
+      {
+        "Id":"a42db108-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"ComplexExtensionValue",
+        "ChangeType":"Addition",
+        "Description":"Added the [ComplexExtensionValue](https://docs.microsoft.com/en-us/graph/api/resources/ComplexExtensionValue?view=graph-rest-1.0) resource type.",
+        "Target":"ComplexExtensionValue"
+      },
+      {
+        "Id":"a432737b-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"alternativeSecurityId",
+        "ChangeType":"Addition",
+        "Description":"Added the [alternativeSecurityId](https://docs.microsoft.com/en-us/graph/api/resources/alternativeSecurityId?view=graph-rest-1.0) resource type.",
+        "Target":"alternativeSecurityId"
+      },
+      {
+        "Id":"a440c3fa-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"certificateAuthority",
+        "ChangeType":"Addition",
+        "Description":"Added the [certificateAuthority](https://docs.microsoft.com/en-us/graph/api/resources/certificateAuthority?view=graph-rest-1.0) resource type.",
+        "Target":"certificateAuthority"
+      },
+      {
+        "Id":"a443261c-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"defaultUserRolePermissions",
+        "ChangeType":"Addition",
+        "Description":"Added the [defaultUserRolePermissions](https://docs.microsoft.com/en-us/graph/api/resources/defaultUserRolePermissions?view=graph-rest-1.0) resource type.",
+        "Target":"defaultUserRolePermissions"
+      },
+      {
+        "Id":"a4458914-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"domainState",
+        "ChangeType":"Addition",
+        "Description":"Added the [domainState](https://docs.microsoft.com/en-us/graph/api/resources/domainState?view=graph-rest-1.0) resource type.",
+        "Target":"domainState"
+      },
+      {
+        "Id":"a447ebc9-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"instanceResourceAccess",
+        "ChangeType":"Addition",
+        "Description":"Added the [instanceResourceAccess](https://docs.microsoft.com/en-us/graph/api/resources/instanceResourceAccess?view=graph-rest-1.0) resource type.",
+        "Target":"instanceResourceAccess"
+      },
+      {
+        "Id":"a44a4c31-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"resourcePermission",
+        "ChangeType":"Addition",
+        "Description":"Added the [resourcePermission](https://docs.microsoft.com/en-us/graph/api/resources/resourcePermission?view=graph-rest-1.0) resource type.",
+        "Target":"resourcePermission"
+      },
+      {
+        "Id":"a44caff5-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"identity",
+        "ChangeType":"Addition",
+        "Description":"Added the [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0) resource type.",
+        "Target":"identity"
+      },
+      {
+        "Id":"a44f123f-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"employeeOrgData",
+        "ChangeType":"Addition",
+        "Description":"Added the [employeeOrgData](https://docs.microsoft.com/en-us/graph/api/resources/employeeOrgData?view=graph-rest-1.0) resource type.",
+        "Target":"employeeOrgData"
+      },
+      {
+        "Id":"a453d796-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"informationalUrl",
+        "ChangeType":"Addition",
+        "Description":"Added the [informationalUrl](https://docs.microsoft.com/en-us/graph/api/resources/informationalUrl?view=graph-rest-1.0) resource type.",
+        "Target":"informationalUrl"
+      },
+      {
+        "Id":"a4589cda-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"keyValue",
+        "ChangeType":"Addition",
+        "Description":"Added the [keyValue](https://docs.microsoft.com/en-us/graph/api/resources/keyValue?view=graph-rest-1.0) resource type.",
+        "Target":"keyValue"
+      },
+      {
+        "Id":"a46225fd-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"licenseUnitsDetail",
+        "ChangeType":"Addition",
+        "Description":"Added the [licenseUnitsDetail](https://docs.microsoft.com/en-us/graph/api/resources/licenseUnitsDetail?view=graph-rest-1.0) resource type.",
+        "Target":"licenseUnitsDetail"
+      },
+      {
+        "Id":"a47537e8-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"physicalOfficeAddress",
+        "ChangeType":"Addition",
+        "Description":"Added the [physicalOfficeAddress](https://docs.microsoft.com/en-us/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0) resource type.",
+        "Target":"physicalOfficeAddress"
+      },
+      {
+        "Id":"a477a5ba-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"phone",
+        "ChangeType":"Addition",
+        "Description":"Added the [phone](https://docs.microsoft.com/en-us/graph/api/resources/phone?view=graph-rest-1.0) resource type.",
+        "Target":"phone"
+      },
+      {
+        "Id":"a486ebbf-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"samlSingleSignOnSettings",
+        "ChangeType":"Addition",
+        "Description":"Added the [samlSingleSignOnSettings](https://docs.microsoft.com/en-us/graph/api/resources/samlSingleSignOnSettings?view=graph-rest-1.0) resource type.",
+        "Target":"samlSingleSignOnSettings"
+      },
+      {
+        "Id":"a4894f06-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"settingValue",
+        "ChangeType":"Addition",
+        "Description":"Added the [settingValue](https://docs.microsoft.com/en-us/graph/api/resources/settingValue?view=graph-rest-1.0) resource type.",
+        "Target":"settingValue"
+      },
+      {
+        "Id":"a48bb194-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"settingTemplateValue",
+        "ChangeType":"Addition",
+        "Description":"Added the [settingTemplateValue](https://docs.microsoft.com/en-us/graph/api/resources/settingTemplateValue?view=graph-rest-1.0) resource type.",
+        "Target":"settingTemplateValue"
+      },
+      {
+        "Id":"a48e11df-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"servicePlanInfo",
+        "ChangeType":"Addition",
+        "Description":"Added the [servicePlanInfo](https://docs.microsoft.com/en-us/graph/api/resources/servicePlanInfo?view=graph-rest-1.0) resource type.",
+        "Target":"servicePlanInfo"
+      },
+      {
+        "Id":"a4907576-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"spaApplication",
+        "ChangeType":"Addition",
+        "Description":"Added the [spaApplication](https://docs.microsoft.com/en-us/graph/api/resources/spaApplication?view=graph-rest-1.0) resource type.",
+        "Target":"spaApplication"
+      },
+      {
+        "Id":"a492d850-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"verifiedDomain",
+        "ChangeType":"Addition",
+        "Description":"Added the [verifiedDomain](https://docs.microsoft.com/en-us/graph/api/resources/verifiedDomain?view=graph-rest-1.0) resource type.",
+        "Target":"verifiedDomain"
+      },
+      {
+        "Id":"a4953a1b-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"privacyProfile",
+        "ChangeType":"Addition",
+        "Description":"Added the [privacyProfile](https://docs.microsoft.com/en-us/graph/api/resources/privacyProfile?view=graph-rest-1.0) resource type.",
+        "Target":"privacyProfile"
+      },
+      {
+        "Id":"a49c60db-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Enum type",
+        "ChangedApiName":"permissionClassificationType",
+        "ChangeType":"Addition",
+        "Description":"Added the **permissionClassificationType** enumeration type.",
+        "Target":"permissionClassificationType"
+      },
+      {
+        "Id":"a49ec276-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Enum type",
+        "ChangedApiName":"permissionType",
+        "ChangeType":"Addition",
+        "Description":"Added the **permissionType** enumeration type.",
+        "Target":"permissionType"
+      },
+      {
+        "Id":"a4a12696-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Enum type",
+        "ChangedApiName":"allowInvitesFrom",
+        "ChangeType":"Addition",
+        "Description":"Added the **allowInvitesFrom** enumeration type.",
+        "Target":"allowInvitesFrom"
+      },
+      {
+        "Id":"a4a38a46-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Enum type",
+        "ChangedApiName":"phoneType",
+        "ChangeType":"Addition",
+        "Description":"Added the **phoneType** enumeration type.",
+        "Target":"phoneType"
+      },
+      {
+        "Id":"a4a5e9a7-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"getByIds",
+        "ChangeType":"Addition",
+        "Description":"Added the [getByIds](https://docs.microsoft.com/en-us/graph/api/directoryObject-getByIds?view=graph-rest-1.0) method to the [directoryObject](https://docs.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.",
+        "Target":"directoryObject"
+      },
+      {
+        "Id":"a4b1d767-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"checkMemberGroups",
+        "ChangeType":"Addition",
+        "Description":"Added the [checkMemberGroups](https://docs.microsoft.com/en-us/graph/api/directoryObject-checkMemberGroups?view=graph-rest-1.0) method to the [directoryObject](https://docs.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.",
+        "Target":"directoryObject"
+      },
+      {
+        "Id":"a4b43925-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"checkMemberObjects",
+        "ChangeType":"Addition",
+        "Description":"Added the [checkMemberObjects](https://docs.microsoft.com/en-us/graph/api/directoryObject-checkMemberObjects?view=graph-rest-1.0) method to the [directoryObject](https://docs.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.",
+        "Target":"directoryObject"
+      },
+      {
+        "Id":"a4b69cd6-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"getAvailableExtensionProperties",
+        "ChangeType":"Addition",
+        "Description":"Added the [getAvailableExtensionProperties](https://docs.microsoft.com/en-us/graph/api/directoryObject-getAvailableExtensionProperties?view=graph-rest-1.0) method to the [directoryObject](https://docs.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.",
+        "Target":"directoryObject"
+      },
+      {
+        "Id":"a4b8fec7-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"getMemberGroups",
+        "ChangeType":"Addition",
+        "Description":"Added the [getMemberGroups](https://docs.microsoft.com/en-us/graph/api/directoryObject-getMemberGroups?view=graph-rest-1.0) method to the [directoryObject](https://docs.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.",
+        "Target":"directoryObject"
+      },
+      {
+        "Id":"a4bb610e-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"getMemberObjects",
+        "ChangeType":"Addition",
+        "Description":"Added the [getMemberObjects](https://docs.microsoft.com/en-us/graph/api/directoryObject-getMemberObjects?view=graph-rest-1.0) method to the [directoryObject](https://docs.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.",
+        "Target":"directoryObject"
+      },
+      {
+        "Id":"a4bdc213-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"forceDelete",
+        "ChangeType":"Addition",
+        "Description":"Added the [forceDelete](https://docs.microsoft.com/en-us/graph/api/domain-forceDelete?view=graph-rest-1.0) method to the [domain](https://docs.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0) resource.",
+        "Target":"domain"
+      },
+      {
+        "Id":"a4c9ad7b-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"verify",
+        "ChangeType":"Addition",
+        "Description":"Added the [verify](https://docs.microsoft.com/en-us/graph/api/domain-verify?view=graph-rest-1.0) method to the [domain](https://docs.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0) resource.",
+        "Target":"domain"
+      },
+      {
+        "Id":"a4d59933-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"restore",
+        "ChangeType":"Addition",
+        "Description":"Added the [restore](https://docs.microsoft.com/en-us/graph/api/directoryObject-restore?view=graph-rest-1.0) method to the [directoryObject](https://docs.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.",
+        "Target":"directoryObject"
+      },
+      {
+        "Id":"a4dcc0b5-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"validateProperties",
+        "ChangeType":"Addition",
+        "Description":"Added the [validateProperties](https://docs.microsoft.com/en-us/graph/api/directoryObject-validateProperties?view=graph-rest-1.0) method to the [directoryObject](https://docs.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.",
+        "Target":"directoryObject"
+      },
+      {
+        "Id":"a4e8ac58-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"delta",
+        "ChangeType":"Addition",
+        "Description":"Added the [delta](https://docs.microsoft.com/en-us/graph/api/administrativeUnit-delta?view=graph-rest-1.0) method to the [administrativeUnit](https://docs.microsoft.com/en-us/graph/api/resources/administrativeUnit?view=graph-rest-1.0) resource.",
+        "Target":"administrativeUnit"
+      },
+      {
+        "Id":"a4eb0f88-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"delta",
+        "ChangeType":"Addition",
+        "Description":"Added the [delta](https://docs.microsoft.com/en-us/graph/api/orgContact-delta?view=graph-rest-1.0) method to the [orgContact](https://docs.microsoft.com/en-us/graph/api/resources/orgContact?view=graph-rest-1.0) resource.",
+        "Target":"orgContact"
+      },
+      {
+        "Id":"a4efd36c-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"delta",
+        "ChangeType":"Addition",
+        "Description":"Added the [delta](https://docs.microsoft.com/en-us/graph/api/directoryRole-delta?view=graph-rest-1.0) method to the [directoryRole](https://docs.microsoft.com/en-us/graph/api/resources/directoryRole?view=graph-rest-1.0) resource.",
+        "Target":"directoryRole"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Identity and access",
+      "SubArea":"Directory management"
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a3becd22-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"application",
+        "ChangeType":"Addition",
+        "Description":"Added the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource type.",
+        "Target":"application"
+      },
+      {
+        "Id":"a4a84bda-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"addKey",
+        "ChangeType":"Addition",
+        "Description":"Added the [addKey](https://docs.microsoft.com/en-us/graph/api/application-addKey?view=graph-rest-1.0) method to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.",
+        "Target":"application"
+      },
+      {
+        "Id":"a4aaafaf-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"addPassword",
+        "ChangeType":"Addition",
+        "Description":"Added the [addPassword](https://docs.microsoft.com/en-us/graph/api/application-addPassword?view=graph-rest-1.0) method to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.",
+        "Target":"application"
+      },
+      {
+        "Id":"a4cc1041-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"removeKey",
+        "ChangeType":"Addition",
+        "Description":"Added the [removeKey](https://docs.microsoft.com/en-us/graph/api/application-removeKey?view=graph-rest-1.0) method to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.",
+        "Target":"application"
+      },
+      {
+        "Id":"a4ce7465-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"removePassword",
+        "ChangeType":"Addition",
+        "Description":"Added the [removePassword](https://docs.microsoft.com/en-us/graph/api/application-removePassword?view=graph-rest-1.0) method to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.",
+        "Target":"application"
+      },
+      {
+        "Id":"a4e186ce-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"delta",
+        "ChangeType":"Addition",
+        "Description":"Added the [delta](https://docs.microsoft.com/en-us/graph/api/application-delta?view=graph-rest-1.0) method to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.",
+        "Target":"application"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
+    },
+    {
+    "ChangeList":[
+      {
+      "Id":"a3c12f68-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"appRoleAssignment",
+        "ChangeType":"Addition",
+        "Description":"Added the [appRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/appRoleAssignment?view=graph-rest-1.0) resource type.",
+        "Target":"appRoleAssignment"
+      }
+    ],
+    
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a3ed4d7c-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"extensionProperty",
+        "ChangeType":"Addition",
+        "Description":"Added the [extensionProperty](https://docs.microsoft.com/en-us/graph/api/resources/extensionProperty?view=graph-rest-1.0) resource type.",
+        "Target":"extensionProperty"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a3efb004-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"licenseDetails",
+        "ChangeType":"Addition",
+        "Description":"Added the [licenseDetails](https://docs.microsoft.com/en-us/graph/api/resources/licenseDetails?view=graph-rest-1.0) resource type.",
+        "Target":"licenseDetails"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Users",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a3f93904-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"group",
+        "ChangeType":"Addition",
+        "Description":"Added the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource type.",
+        "Target":"group"
+      },
+      {
+        "Id":"a4c287be-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"assignLicense",
+        "ChangeType":"Addition",
+        "Description":"Added the [assignLicense](https://docs.microsoft.com/en-us/graph/api/group-assignLicense?view=graph-rest-1.0) method to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+        "Target":"group"
+      },
+      {
+        "Id":"a4c4ebe7-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"checkGrantedPermissionsForApp",
+        "ChangeType":"Addition",
+        "Description":"Added the [checkGrantedPermissionsForApp](https://docs.microsoft.com/en-us/graph/api/group-checkGrantedPermissionsForApp?view=graph-rest-1.0) method to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+        "Target":"group"
+      },
+      {
+        "Id":"a4df27d3-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"validateProperties",
+        "ChangeType":"Addition",
+        "Description":"Added the [validateProperties](https://docs.microsoft.com/en-us/graph/api/group-validateProperties?view=graph-rest-1.0) method to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+        "Target":"group"
+      },
+      {
+        "Id":"a4e64bcb-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"delta",
+        "ChangeType":"Addition",
+        "Description":"Added the [delta](https://docs.microsoft.com/en-us/graph/api/group-delta?view=graph-rest-1.0) method to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+        "Target":"group"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Groups",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a3fb9c7c-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"resourceSpecificPermissionGrant",
+        "ChangeType":"Addition",
+        "Description":"Added the [resourceSpecificPermissionGrant](https://docs.microsoft.com/en-us/graph/api/resources/resourceSpecificPermissionGrant?view=graph-rest-1.0) resource type.",
+        "Target":"resourceSpecificPermissionGrant"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a4137693-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"servicePrincipal",
+        "ChangeType":"Addition",
+        "Description":"Added the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-1.0) resource type.",
+        "Target":"servicePrincipal"
+      },
+      {
+        "Id":"a4ad11fa-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"addKey",
+        "ChangeType":"Addition",
+        "Description":"Added the [addKey](https://docs.microsoft.com/en-us/graph/api/servicePrincipal-addKey?view=graph-rest-1.0) method to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-1.0) resource.",
+        "Target":"servicePrincipal"
+      },
+      {
+        "Id":"a4af747f-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"addPassword",
+        "ChangeType":"Addition",
+        "Description":"Added the [addPassword](https://docs.microsoft.com/en-us/graph/api/servicePrincipal-addPassword?view=graph-rest-1.0) method to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-1.0) resource.",
+        "Target":"servicePrincipal"
+      },
+      {
+        "Id":"a4d0d4dd-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"removeKey",
+        "ChangeType":"Addition",
+        "Description":"Added the [removeKey](https://docs.microsoft.com/en-us/graph/api/servicePrincipal-removeKey?view=graph-rest-1.0) method to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-1.0) resource.",
+        "Target":"servicePrincipal"
+      },
+      {
+        "Id":"a4d33797-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"removePassword",
+        "ChangeType":"Addition",
+        "Description":"Added the [removePassword](https://docs.microsoft.com/en-us/graph/api/servicePrincipal-removePassword?view=graph-rest-1.0) method to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-1.0) resource.",
+        "Target":"servicePrincipal"
+      },
+      {
+        "Id":"a4ed718b-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"delta",
+        "ChangeType":"Addition",
+        "Description":"Added the [delta](https://docs.microsoft.com/en-us/graph/api/servicePrincipal-delta?view=graph-rest-1.0) method to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-1.0) resource.",
+        "Target":"servicePrincipal"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a4183be7-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"oAuth2PermissionGrant",
+        "ChangeType":"Addition",
+        "Description":"Added the [oAuth2PermissionGrant](https://docs.microsoft.com/en-us/graph/api/resources/oAuth2PermissionGrant?view=graph-rest-1.0) resource type.",
+        "Target":"oAuth2PermissionGrant"
+      },
+      {
+        "Id":"a4f23707-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Method",
+        "ChangedApiName":"delta",
+        "ChangeType":"Addition",
+        "Description":"Added the [delta](https://docs.microsoft.com/en-us/graph/api/oAuth2PermissionGrant-delta?view=graph-rest-1.0) method to the [oAuth2PermissionGrant](https://docs.microsoft.com/en-us/graph/api/resources/oAuth2PermissionGrant?view=graph-rest-1.0) resource.",
+        "Target":"oAuth2PermissionGrant"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+        {
+          "Id":"a41d01ce-70c5-11eb-8401-e19c685756df",
+          "ApiChange":"Resource",
+          "ChangedApiName":"user",
+          "ChangeType":"Addition",
+          "Description":"Added the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource type.",
+          "Target":"user"
+        },
+        {
+          "Id":"a4c025c4-70c5-11eb-8401-e19c685756df",
+          "ApiChange":"Method",
+          "ChangedApiName":"assignLicense",
+          "ChangeType":"Addition",
+          "Description":"Added the [assignLicense](https://docs.microsoft.com/en-us/graph/api/user-assignLicense?view=graph-rest-1.0) method to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target":"user"
+        },
+        {
+          "Id":"a4c74cc1-70c5-11eb-8401-e19c685756df",
+          "ApiChange":"Method",
+          "ChangedApiName":"changePassword",
+          "ChangeType":"Addition",
+          "Description":"Added the [changePassword](https://docs.microsoft.com/en-us/graph/api/user-changePassword?view=graph-rest-1.0) method to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target":"user"
+        },
+        {
+          "Id":"a4d7fd03-70c5-11eb-8401-e19c685756df",
+          "ApiChange":"Method",
+          "ChangedApiName":"revokeSignInSessions",
+          "ChangeType":"Addition",
+          "Description":"Added the [revokeSignInSessions](https://docs.microsoft.com/en-us/graph/api/user-revokeSignInSessions?view=graph-rest-1.0) method to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target":"user"
+        },
+        {
+          "Id":"a4da5fc6-70c5-11eb-8401-e19c685756df",
+          "ApiChange":"Method",
+          "ChangedApiName":"reprocessLicenseAssignment",
+          "ChangeType":"Addition",
+          "Description":"Added the [reprocessLicenseAssignment](https://docs.microsoft.com/en-us/graph/api/user-reprocessLicenseAssignment?view=graph-rest-1.0) method to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target":"user"
+        },
+        {
+          "Id":"a4e3e73c-70c5-11eb-8401-e19c685756df",
+          "ApiChange":"Method",
+          "ChangedApiName":"delta",
+          "ChangeType":"Addition",
+          "Description":"Added the [delta](https://docs.microsoft.com/en-us/graph/api/user-delta?view=graph-rest-1.0) method to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target":"user"
+        }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Users",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a4301410-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"addIn",
+        "ChangeType":"Addition",
+        "Description":"Added the [addIn](https://docs.microsoft.com/en-us/graph/api/resources/addIn?view=graph-rest-1.0) resource type.",
+        "Target":"addIn"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a434d7bd-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"apiApplication",
+        "ChangeType":"Addition",
+        "Description":"Added the [apiApplication](https://docs.microsoft.com/en-us/graph/api/resources/apiApplication?view=graph-rest-1.0) resource type.",
+        "Target":"apiApplication"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a4373bc4-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"appRole",
+        "ChangeType":"Addition",
+        "Description":"Added the [appRole](https://docs.microsoft.com/en-us/graph/api/resources/appRole?view=graph-rest-1.0) resource type.",
+        "Target":"appRole"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a4399ca3-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"assignedLabel",
+        "ChangeType":"Addition",
+        "Description":"Added the [assignedLabel](https://docs.microsoft.com/en-us/graph/api/resources/assignedLabel?view=graph-rest-1.0) resource type.",
+        "Target":"assignedLabel"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Groups",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a43bff3f-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"assignedLicense",
+        "ChangeType":"Addition",
+        "Description":"Added the [assignedLicense](https://docs.microsoft.com/en-us/graph/api/resources/assignedLicense?view=graph-rest-1.0) resource type.",
+        "Target":"assignedLicense"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd","Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Users",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a43e6279-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"assignedPlan",
+        "ChangeType":"Addition",
+        "Description":"Added the [assignedPlan](https://docs.microsoft.com/en-us/graph/api/resources/assignedPlan?view=graph-rest-1.0) resource type.",
+        "Target":"assignedPlan"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Users",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a45175a3-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"implicitGrantSettings",
+        "ChangeType":"Addition",
+        "Description":"Added the [implicitGrantSettings](https://docs.microsoft.com/en-us/graph/api/resources/implicitGrantSettings?view=graph-rest-1.0) resource type.",
+        "Target":"implicitGrantSettings"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a4563a19-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"keyCredential",
+        "ChangeType":"Addition",
+        "Description":"Added the [keyCredential](https://docs.microsoft.com/en-us/graph/api/resources/keyCredential?view=graph-rest-1.0) resource type.",
+        "Target":"keyCredential"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a45affc6-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"licenseAssignmentState",
+        "ChangeType":"Addition",
+        "Description":"Added the [licenseAssignmentState](https://docs.microsoft.com/en-us/graph/api/resources/licenseAssignmentState?view=graph-rest-1.0) resource type.",
+        "Target":"licenseAssignmentState"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Users",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a45d5f96-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"licenseProcessingState",
+        "ChangeType":"Addition",
+        "Description":"Added the [licenseProcessingState](https://docs.microsoft.com/en-us/graph/api/resources/licenseProcessingState?view=graph-rest-1.0) resource type.",
+        "Target":"licenseProcessingState"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Groups",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a45fc40b-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"objectIdentity",
+        "ChangeType":"Addition",
+        "Description":"Added the [objectIdentity](https://docs.microsoft.com/en-us/graph/api/resources/objectIdentity?view=graph-rest-1.0) resource type.",
+        "Target":"objectIdentity"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd","Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Users",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a46487ea-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"onPremisesProvisioningError",
+        "ChangeType":"Addition",
+        "Description":"Added the [onPremisesProvisioningError](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesProvisioningError?view=graph-rest-1.0) resource type.",
+        "Target":"onPremisesProvisioningError"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Users",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a466eb2a-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"optionalClaims",
+        "ChangeType":"Addition",
+        "Description":"Added the [optionalClaims](https://docs.microsoft.com/en-us/graph/api/resources/optionalClaims?view=graph-rest-1.0) resource type.",
+        "Target":"optionalClaims"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a4694d86-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"optionalClaim",
+        "ChangeType":"Addition",
+        "Description":"Added the [optionalClaim](https://docs.microsoft.com/en-us/graph/api/resources/optionalClaim?view=graph-rest-1.0) resource type.",
+        "Target":"optionalClaim"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a46bae11-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"parentalControlSettings",
+        "ChangeType":"Addition",
+        "Description":"Added the [parentalControlSettings](https://docs.microsoft.com/en-us/graph/api/resources/parentalControlSettings?view=graph-rest-1.0) resource type.",
+        "Target":"parentalControlSettings"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+       {
+         "Id":"a46e108d-70c5-11eb-8401-e19c685756df",
+         "ApiChange":"Resource",
+         "ChangedApiName":"passwordCredential",
+         "ChangeType":"Addition",
+         "Description":"Added the [passwordCredential](https://docs.microsoft.com/en-us/graph/api/resources/passwordCredential?view=graph-rest-1.0) resource type.",
+         "Target":"passwordCredential"
+       }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a4707282-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"passwordProfile",
+        "ChangeType":"Addition",
+        "Description":"Added the [passwordProfile](https://docs.microsoft.com/en-us/graph/api/resources/passwordProfile?view=graph-rest-1.0) resource type.",
+        "Target":"passwordProfile"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Users",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a472d891-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"permissionScope",
+        "ChangeType":"Addition",
+        "Description":"Added the [permissionScope](https://docs.microsoft.com/en-us/graph/api/resources/permissionScope?view=graph-rest-1.0) resource type.",
+        "Target":"permissionScope"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a47a090e-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"preAuthorizedApplication",
+        "ChangeType":"Addition",
+        "Description":"Added the [preAuthorizedApplication](https://docs.microsoft.com/en-us/graph/api/resources/preAuthorizedApplication?view=graph-rest-1.0) resource type.",
+        "Target":"preAuthorizedApplication"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a47c6b11-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"provisionedPlan",
+        "ChangeType":"Addition",
+        "Description":"Added the [provisionedPlan](https://docs.microsoft.com/en-us/graph/api/resources/provisionedPlan?view=graph-rest-1.0) resource type.",
+        "Target":"provisionedPlan"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Users",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a47eceae-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"publicClientApplication",
+        "ChangeType":"Addition",
+        "Description":"Added the [publicClientApplication](https://docs.microsoft.com/en-us/graph/api/resources/publicClientApplication?view=graph-rest-1.0) resource type.",
+        "Target":"publicClientApplication"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a481316a-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"requiredResourceAccess",
+        "ChangeType":"Addition",
+        "Description":"Added the [requiredResourceAccess](https://docs.microsoft.com/en-us/graph/api/resources/requiredResourceAccess?view=graph-rest-1.0) resource type.",
+        "Target":"requiredResourceAccess"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a4848821-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"resourceAccess",
+        "ChangeType":"Addition",
+        "Description":"Added the [resourceAccess](https://docs.microsoft.com/en-us/graph/api/resources/resourceAccess?view=graph-rest-1.0) resource type.",
+        "Target":"resourceAccess"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a4979db9-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"onPremisesExtensionAttributes",
+        "ChangeType":"Addition",
+        "Description":"Added the [onPremisesExtensionAttributes](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesExtensionAttributes?view=graph-rest-1.0) resource type.",
+        "Target":"onPremisesExtensionAttributes"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Users",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+      {
+        "Id":"a49a0331-70c5-11eb-8401-e19c685756df",
+        "ApiChange":"Resource",
+        "ChangedApiName":"webApplication",
+        "ChangeType":"Addition",
+        "Description":"Added the [webApplication](https://docs.microsoft.com/en-us/graph/api/resources/webApplication?view=graph-rest-1.0) resource type.",
+        "Target":"webApplication"
+      }
+      ],
+      
+      "Id":"a3ba065b-70c5-11eb-8401-e19c685756df",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2021-02-17T02:12:52.267Z",
+      "WorkloadArea":"Applications","SubArea":""
+    }],
+    
     {
      "ChangeList": [
         {
