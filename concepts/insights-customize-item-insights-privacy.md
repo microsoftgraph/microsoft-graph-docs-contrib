@@ -1,6 +1,6 @@
 ---
 title: "Customizing item insights privacy in Microsoft Graph"
-description: ""
+description: "The overview of customization of item insights on the organization level"
 ms.author: "simonhul"
 localization_priority: Priority
 ms.prod: "insights"
