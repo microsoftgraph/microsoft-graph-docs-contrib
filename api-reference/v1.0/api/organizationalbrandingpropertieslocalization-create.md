@@ -1,5 +1,4 @@
 ---
-ms.author: "almars"
 title: "Create localized organizationalBrandingProperties"
 description: "Create organization branding for a specific locale."
 localization_priority: Normal
