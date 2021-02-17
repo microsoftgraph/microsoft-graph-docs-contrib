@@ -175,7 +175,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
   "loginUrl": "string",
   "logoutUrl": "string",
   "notificationEmailAddresses": ["string"],
-  "notes": ["string"],
+  "notes": "string",
   "publishedPermissionScopes": [{"@odata.type": "microsoft.graph.permissionScope"}],
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
   "passwordSingleSignOnSettings": {"@odata.type": "microsoft.graph.passwordSingleSignOnSettings"},
