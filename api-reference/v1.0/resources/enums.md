@@ -11,6 +11,33 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### tone values
+|tone0|
+|tone1|
+|tone2|
+|tone3|
+|tone4|
+|tone5|
+|tone6|
+|tone7|
+|tone8|
+|tone9|
+|star|
+|pound|
+|a|
+|b|
+|c|
+|d|
+|flash|
+
+### mediaState values
+
+|Member|
+|:---|
+|active|
+|inactive|
+|unknownFutureValue|
+
 ### basicStatus values
 
 |Member|
@@ -41,15 +68,16 @@ Namespace: microsoft.graph
 |terminating|
 |terminated|
 
-### modalities values
+### modality values 
 
 |Member|
 |:---|
-|unknown|
 |audio|
 |video|
 |videoBasedScreenSharing|
 |data|
+|screenSharing|
+|unknownFutureValue|
 
 ### callDirection values
 

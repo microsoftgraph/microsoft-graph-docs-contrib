@@ -11,6 +11,84 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### tone values
+|tone0|
+|tone1|
+|tone2|
+|tone3|
+|tone4|
+|tone5|
+|tone6|
+|tone7|
+|tone8|
+|tone9|
+|star|
+|pound|
+|a|
+|b|
+|c|
+|d|
+|flash|
+
+### callState values
+
+|Member|
+|:---|
+|incoming|
+|establishing|
+|ringing|
+|established|
+|hold|
+|transferring|
+|transferAccepted|
+|redirecting|
+|terminating|
+|terminated|
+
+### routingPolicy values
+
+|Member|
+|:---|
+|none|
+|noMissedCall|
+|disableForwardingExceptPhone|
+|disableForwarding|
+|preferSkypeForBusiness|
+|unknownFutureValue|
+
+### autoAdmittedUsersType values
+
+|Member|
+|:---|
+|everyoneInCompany|
+|everyone|
+
+### mediaState values
+
+|Member|
+|:---|
+|active|
+|inactive|
+|unknownFutureValue|
+
+### callDirection values 
+
+|Member|
+|:---|
+|incoming|
+|outgoing|
+
+### modality values 
+
+|Member|
+|:---|
+|audio|
+|video|
+|videoBasedScreenSharing|
+|data|
+|screenSharing|
+|unknownFutureValue|
+
 ### kerberosSignOnMappingAttributeType values 
 
 |Member|
