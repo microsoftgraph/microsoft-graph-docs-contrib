@@ -9,6 +9,14 @@
           "ChangeType": "Change",
           "Description": "Changed [microsoftAuthenticatorAuthenticationMethodTarget](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodtarget?view=graph-rest-beta) entity for requiring number matching.",
           "Target": "microsoftAuthenticatorAuthenticationMethodTarget"
+        },
+        {
+          "Id": "199b8d37-1c0b-4db0-8227-290dd289d774",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "authenticatorAppFeatureSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticatorAppFeatureSettings** enumeration type.",
+          "Target": "authenticatorAppFeatureSettings"
         }
       ],
       "Id": "bc6921dd-06a2-4b53-8afb-04a0d090e519",
