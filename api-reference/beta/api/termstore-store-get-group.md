@@ -49,6 +49,8 @@ If successful, this method returns a `200 OK` response code and a [group](../res
 
 ## Examples
 
+### Example 1: Getting a TermGroup
+
 ### Request
 
 # [HTTP](#tab/http)
@@ -103,6 +105,8 @@ Content-Type: application/json
   "displayName": "myGroup"  
 }
 ```
+### Example 2: Getting a TermGroup along with its parent Site Collection Id
+
 ### Request
 
 # [HTTP](#tab/http)
@@ -115,22 +119,6 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/termStore/groups/{groupId}?$select=*,parentSiteId
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
