@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/v1.0/reports/monthlyPrintUsageByPrinter
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.Graph.printUsageByPrinter)"
+  "@odata.type": "Collection(microsoft.graph.printUsageByPrinter)"
 }
 -->
 ``` http

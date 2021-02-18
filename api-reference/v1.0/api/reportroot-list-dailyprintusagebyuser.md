@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/v1.0/reports/dailyPrintUsageByUser
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.Graph.printUsageByUser)"
+  "@odata.type": "Collection(microsoft.graph.printUsageByUser)"
 }
 -->
 ``` http
