@@ -62,7 +62,7 @@ If successful, this function returns a `200 OK` response code and a [archivedPri
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/reports/getPrinterArchivedPrintJobs(printerId='parameterValue',startDateTime=String (timestamp),endDateTime=String (timestamp))
+GET https://graph.microsoft.com/v1.0/reports/getPrinterArchivedPrintJobs(printerId='{id}',startDateTime=<timestamp>,endDateTime=<timestamp>)
 ```
 
 
@@ -82,9 +82,7 @@ Content-Type: application/json
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-      "printer": {
-        "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6"
-      },
+      "printerId": "fe6ff85a-f0d3-4c4f-aec6-b9d5154356a1",
       "createdBy": {},
       "processingState": "completed"
     }
