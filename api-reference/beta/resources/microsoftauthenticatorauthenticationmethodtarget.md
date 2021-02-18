@@ -18,7 +18,7 @@ A collection of users or groups enabled to use [Microsoft Authenticator authenti
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Object ID of an Azure AD user or group.|
-|featureSettings|authenticatorAppFeatureSettings|Determines what additional settings should be applied to Microsoft Authenticator. Possible values are: `requireNumberMatching` (Requires number matching for MFA notifications. Value is ignored for phone sign-in notifications).|
+|featureSettings|authenticatorAppFeatureSettings|Determines what additional settings should be applied to Microsoft Authenticator. Possible values are: `null`, `requireNumberMatching` (Requires number matching for MFA notifications. Value is ignored for phone sign-in notifications).|
 |isRegistrationRequired|Boolean|Determines whether the user is enforced to register the authentication method. *Not supported*. |
 |shownContext (Private Preview)|authenticatorAppContextType|Determines what types of context about the sign-in should be shown to the user in the body of the notification. Possible values are: `location`, `app`.|
 |targetType|authenticationMethodTargetType| Possible values are: `user`, `group`.|
