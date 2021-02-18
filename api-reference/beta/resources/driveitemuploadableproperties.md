@@ -4,6 +4,7 @@ description: "The driveItemUploadableProperties resource represents an item bein
 localization_priority: Normal
 author: "JeremyKelley"
 ms.prod: "sharepoint"
+ms.author: brcrowne
 doc_type: "resourcePageType"
 ---
 

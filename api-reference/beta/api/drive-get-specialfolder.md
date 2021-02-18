@@ -5,6 +5,7 @@ ms.date: 07/15/2020
 title: Get Special Folders
 localization_priority: Normal
 ms.prod: "sharepoint"
+ms.author: brcrowne
 doc_type: apiPageType
 ---
 # Get a special folder by name

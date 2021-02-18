@@ -6,6 +6,7 @@ title: SpecialFolder
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "sharepoint"
+ms.author: brcrowne
 ---
 # SpecialFolder resource type
 
