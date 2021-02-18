@@ -22,7 +22,11 @@ Represents an inclusive range of integers described by two Int64 boundaries.
 ## JSON representation
 
 The following is a JSON representation of the resource.
-
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.integerRange"
+}
+-->
 ```json
 {
     "start": 12345,
