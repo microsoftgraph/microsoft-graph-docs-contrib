@@ -24,10 +24,6 @@ A record of a "final state" (completed, aborted or failed) print job that is use
 |completionDateTime|DateTimeOffset|The dateTimeOffset when the job was completed, canceled or aborted. Read-only.|
 |acquiredByPrinter|Boolean|True if the job was acquired by a printer; false otherwise. Read-only.|
 |copiesPrinted|Int32|The number of copies that were printed. Read-only.|
-|pageCount|Int32|The total number of pages that were printed. Read-only.|
-|blackAndWhitePageCount|Int32|The number of black and white pages that were printed. Read-only.|
-|colorPageCount|Int32|The number of color pages that were printed. Read-only.|
-|duplexPageCount|Int32|The number of duplex (double-sided) pages that were printed. Read-only.|
 |createdBy|[userIdentity](useridentity.md)|The user who created the print job. Read-only.|
 
 ## JSON representation
@@ -45,10 +41,6 @@ The following is a JSON representation of the resource.
   "completionDateTime": "String (timestamp)",	
   "acquiredByPrinter": "Boolean",	
   "copiesPrinted": "Integer",	
-  "pageCount": "Integer",	
-  "blackAndWhitePageCount": "Integer",	
-  "colorPageCount": "Integer",	
-  "duplexPageCount": "Integer",	
   "createdBy": {	
     "@odata.type": "microsoft.graph.userIdentity"	
   }	

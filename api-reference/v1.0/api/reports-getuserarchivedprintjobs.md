@@ -81,7 +81,12 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "microsoft.graph.archivedPrintJob"
+      "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
+      "printer": {
+        "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6"
+      },
+      "createdBy": {},
+      "processingState": "completed"
     }
   ]
 }

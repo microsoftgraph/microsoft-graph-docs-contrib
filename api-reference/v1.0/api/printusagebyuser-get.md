@@ -59,7 +59,6 @@ If successful, this method returns a `200 OK` response code and a [printUsageByU
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/reports/dailyPrintUsageByUser/{id}
-GET https://graph.microsoft.com/v1.0/reports/monthlyPrintUsageByUser/{id}
 ```
 
 ### Response
@@ -77,7 +76,7 @@ Content-Type: application/json
 {
   "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
   "userPrincipalName": "username@contoso.com",
-  "usageDate": "2020-02-04T00:00:00.0000000Z",
+  "usageDate": "2020-02-04",
   "completedBlackAndWhiteJobCount": 42,
   "completedColorJobCount": 0,
   "incompleteJobCount": 6
