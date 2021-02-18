@@ -75,8 +75,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.printSettings",
-  "documentConversionEnabled": {Boolean}
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/settings",
+  "documentConversionEnabled": true
 }
 ```
 

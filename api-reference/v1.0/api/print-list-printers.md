@@ -81,23 +81,72 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.printer",
-      "id": "5b94422c-422c-5b94-2c42-945b2c42945b",
-      "displayName": "String",
-      "manufacturer": "String",
-      "model": "String",
-      "isAcceptingJobs": "Boolean",
-      "location": {
-        "@odata.type": "microsoft.graph.printerLocation"
-      },
+      "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
+      "displayName": "PrinterName",
+      "manufacturer": "PrinterManufacturer",
+      "model": "PrinterModel",
+      "isShared": true,
+      "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
+      "isAcceptingJobs": true,
       "status": {
-        "@odata.type": "microsoft.graph.printerStatus"
+        "state": "stopped",
+        "details": [
+          "disconnected"
+        ],
+        "description": ""
       },
-      "registeredDateTime": "String (timestamp)",
-      "isShared": "Boolean",
-      "hasPhysicalDevice": "Boolean"
+      "defaults": {
+        "copiesPerJob": 1,
+        "finishings": [
+          "none"
+        ],
+        "mediaColor": "Unknown",
+        "mediaType": "stationery",
+        "mediaSize": "North America Letter",
+        "pagesPerSheet": 1,
+        "orientation": "portrait",
+        "outputBin": "auto",
+        "inputBin": "auto",
+        "contentType": "application/oxps",
+        "fitPdfToPage": false,
+        "multipageLayout": null,
+        "colorMode": "color",
+        "quality": "medium",
+        "duplexMode": "oneSided",
+        "dpi": 600,
+        "scaling": null
+      },
+      "location": {
+        "latitude": 1.1,
+        "longitude": 2.2,
+        "altitudeInMeters": 3,
+        "streetAddress": "One Microsoft Way",
+        "subUnit": [
+          "Main Plaza",
+          "Unit 400"
+        ],
+        "city": "Redmond",
+        "postalCode": "98052",
+        "countryOrRegion": "USA",
+        "site": "Puget Sound",
+        "building": "Studio E",
+        "floor": "1",
+        "floorDescription": "First Floor",
+        "roomName": "1234",
+        "roomDescription": "First floor copy room",
+        "organization": [
+          "C+AI",
+          "Microsoft Graph"
+        ],
+        "subdivision": [
+          "King County",
+          "Red West"
+        ],
+        "stateOrProvince": "Washington"
+      }
     }
   ]
 }

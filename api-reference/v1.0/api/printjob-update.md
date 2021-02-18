@@ -1,29 +1,29 @@
 ---
-title: "printJob: redirect"
-description: Redirect a print job to a different printer.
+title: Update printJob
+description: Update print job
 author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
-# printJob: redirect
+# Update printJob
 Namespace: microsoft.graph
 
-Redirect a [print job](../resources/printjob.md) to a different [printer](../resources/printer.md).
+Update a [print job](../resources/printjob.md). Only the **configuration** property can be updated.
 
-For details about how to use this API to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+Updating a print job will only succeed if there is a [printTask](../resources/printTask.md) in `processing` state on the associated print job, started by a trigger that requesting app created. For details about how to register a task trigger, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, a permission that grants [Get printer](printer-get.md) access, and one of the permissions listed in the following table.
+To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, either the Printer.Read.All or Printer.ReadWrite.All application permission, and one of the permissions listed in the following table.
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| Not supported. |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application| PrintJob.Manage.All |
+|Application| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All |
 
 ## HTTP request
 
@@ -32,7 +32,7 @@ To use the Universal Print service, the user or app's tenant must have an active
 }
 -->
 ``` http
-POST /print/printers/{printerId}/jobs/{printJobId}/redirect
+PATCH /print/printers/{printerId}/jobs/{printJobId}
 ```
 
 ## Request headers
@@ -42,32 +42,28 @@ POST /print/printers/{printerId}/jobs/{printJobId}/redirect
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply the ID of the printer that the print job should be redirected to.
-
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|destinationPrinterId|String|The ID of the printer the print job should be redirected to.|
-|configuration|microsoft.graph.printJobConfiguration|Updated configuration of print job.|
+In the request body, supply the values of the relevant [printJob](../resources/printjob.md) fields. Existing properties that are not included in the request body will maintain their previous values. 
+Only the "configuration" property can be updated.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a [printJob](../resources/printjob.md) object queued for the destination printer.
+
+If successful, this method returns a `200 OK` response code with an updated [printJob](../resources/printjob.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "printjob_redirect"
+  "name": "update_printjob"
 }
 -->
 # [HTTP](#tab/http)
 ``` http
-POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}/redirect
+PATCH https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}
 Content-Type: application/json
-Content-length: 128
+Content-length: 376
 
 {
-  "destinationPrinterId": "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea",
   "configuration": {
     "feedOrientation": "longEdgeFirst",
     "pageRanges": [
@@ -106,8 +102,7 @@ Content-length: 128
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.printJob"
+  "truncated": true
 }
 -->
 ``` http
@@ -115,8 +110,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea')/jobs/$entity",
-  "id": "24123",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('d5ef6ec4-07ca-4212-baf9-d45be126bfbb')/jobs/$entity",
+  "id": "44353",
   "createdDateTime": "2020-06-26T04:20:06.5715544Z",
   "createdBy": {
     "id": "",
@@ -124,9 +119,8 @@ Content-Type: application/json
     "userPrincipalName": ""
   },
   "status": {
-    "state": "processing",
-    "description": "The print job is currently being processed by the printer.",
-    "details": ["interpreting"]
+    "state": "paused",
+    "description": "The job is not a candidate for processing yet."
   },
   "configuration": {
     "feedOrientation": "longEdgeFirst",

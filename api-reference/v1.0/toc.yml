@@ -1253,10 +1253,7 @@ items:
             href: api/projectrome-put-historyitem.md
           - name: Delete a history item
             href: api/projectrome-delete-historyitem.md
-    - name: Devices and apps
-      expanded: true
-      items:        
-      - name: Cloud printing
+    - name: Cloud printing
         items:
         - name: Print
           href: resources/print.md
@@ -1295,6 +1292,8 @@ items:
           - name: Start
             href: api/printjob-start.md
           - name: Update
+            href: api/printjob-update.md
+          - name: Update configuration
             href: api/printjob-update-configuration.md
           - name: Cancel
             href: api/printjob-cancel.md
@@ -1427,10 +1426,9 @@ items:
             href: api/print-get-settings.md
           - name: Update
             href: api/print-update-settings.md
-    - name: Corporate management
-        href: resources/intune-graph-overview.md
-        displayName: Intune 
-        items:
+    - name: Devices and apps
+      displayName: Intune
+      items:
       - name: Overview
         href: resources/intune-graph-overview.md
       - name: App management

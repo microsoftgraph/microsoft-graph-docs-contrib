@@ -71,14 +71,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.printOperation",
-    "id": "4278172b-172b-4278-2b17-78422b177842",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/operations/$entity",
+    "@odata.type": "#microsoft.graph.printerCreateOperation",
+    "id": "81f4cca3-b3b7-47ea-9f88-7ddbf7208ef4",
+    "createdDateTime": "2020-06-15T22:27:03.031849Z",
+    "certificate": "{ceritificate}",
     "status": {
-      "@odata.type": "microsoft.graph.printOperationStatus"
+        "state": "succeeded",
+        "description": "The operation has completed successfully."
     },
-    "createdDateTime": "String (timestamp)"
-  }
+    "printer": {
+        "registeredDateTime": "2020-06-15T22:27:12.0920077Z",
+        "isShared": false,
+        "id": "e56f9cdd-acec-486f-a05e-b622ff0bcc7d",
+        "displayName": "Test Printer",
+        "manufacturer": "Test Printer Manufacturer",
+        "model": "Test Printer Model",
+        "isAcceptingJobs": null,
+        "status": {
+            "state": "unknown",
+            "details": [],
+            "description": ""
+        },
+        "location": {
+            "latitude": null,
+            "longitude": null
+        }
+    }
 }
 ```
 

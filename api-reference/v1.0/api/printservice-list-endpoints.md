@@ -67,12 +67,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.printServiceEndpoint)",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.printServiceEndpoint",
-      "id": "785c2321-2321-785c-2123-5c7821235c78",
-      "displayName": "String",
-      "uri": "String"
+      "id": "mpsdiscovery",
+      "displayName": "Microsoft Universal Print Discovery Service",
+      "uri": "https://discovery.print.microsoft.com"
     }
   ]
 }

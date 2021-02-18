@@ -83,23 +83,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('2f3453b7-4686-4b5b-9575-4f1e5b909ba7')/jobs",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.printJob",
-      "id": "455215a5-15a5-4552-a515-5245a5155245",
-      "createdDateTime": "String (timestamp)",
+      "id": "103",
+      "createdDateTime": "2020-02-04T00:00:00.0000000Z",
+      "createdBy": {        
+      },
       "status": {
-        "@odata.type": "microsoft.graph.printJobStatus"
+        "state": "completed",
+        "description": "The print job has completed successfully and no further processing will take place.",
+        "details": [          
+        ],
+        "isAcquiredByPrinter": true
       },
-      "createdBy": {
-        "@odata.type": "microsoft.graph.userIdentity"
+      "configuration": {        
       },
-      "configuration": {
-        "@odata.type": "microsoft.graph.printJobConfiguration"
-      },
-      "redirectedTo": "String",
-      "redirectedFrom": "String",
-      "isFetchable": "Boolean"
+      "redirectedTo": null,
+      "redirectedFrom": null,
+      "isFetchable": false     
     }
   ]
 }

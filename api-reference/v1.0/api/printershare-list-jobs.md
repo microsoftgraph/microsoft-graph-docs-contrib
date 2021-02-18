@@ -69,7 +69,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/jobs
 ```
 
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -83,23 +82,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/shares('f37141d9-0afb-484f-96d3-0ef0a679e6c1')/jobs",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.printJob",
-      "id": "455215a5-15a5-4552-a515-5245a5155245",
-      "createdDateTime": "String (timestamp)",
+      "id": "103",
+      "createdDateTime": "2020-02-04T00:00:00.0000000Z",
+      "createdBy": {        
+      },
       "status": {
-        "@odata.type": "microsoft.graph.printJobStatus"
+        "state": "completed",
+        "description": "The print job has completed successfully and no further processing will take place.",
+        "details": [          
+        ],
+        "isAcquiredByPrinter": true
       },
-      "createdBy": {
-        "@odata.type": "microsoft.graph.userIdentity"
+      "configuration": {        
       },
-      "configuration": {
-        "@odata.type": "microsoft.graph.printJobConfiguration"
-      },
-      "redirectedTo": "String",
-      "redirectedFrom": "String",
-      "isFetchable": "Boolean"
+      "redirectedTo": null,
+      "redirectedFrom": null,
+      "isFetchable": false
     }
   ]
 }

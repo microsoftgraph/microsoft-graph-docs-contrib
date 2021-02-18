@@ -75,15 +75,16 @@ Content-Type: application/json
 Content-length: 287
 
 {
-  "displayName": "String",
-  "manufacturer": "String",
-  "model": "String",
-  "physicalDeviceId": "String",
-  "hasPhysicalDevice": "Boolean",
-  "certificateSigningRequest": {
-    "@odata.type": "microsoft.graph.printCertificateSigningRequest"
+  "displayName": "Test Printer",
+  "manufacturer": "Test Printer Manufacturer",
+  "model": "Test Printer Model",
+  "physicalDeviceId": null,
+  "hasPhysicalDevice": false,
+  "certificateSigningRequest": { 
+    "content": "{content}",
+    "transportKey": "{sampleTransportKey}"
   },
-  "connectorId": "String"
+  "connectorId": null
 }
 ```
 
@@ -97,7 +98,7 @@ Content-length: 287
 -->
 ``` http
 HTTP/1.1 202 Accepted
-Operation-Location: https://graph.microsoft.com/beta/print/operations/f221760a-52e8-4c11-b8c5-5dfaef3a49db
+Operation-Location: https://graph.microsoft.com/v1.0/print/operations/f221760a-52e8-4c11-b8c5-5dfaef3a49db
 Retry-After: 5
 ```
 

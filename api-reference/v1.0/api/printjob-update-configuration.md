@@ -23,7 +23,7 @@ To use the Universal Print service, the user or app's tenant must have an active
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| Not supported. |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+|Application| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All |
 
 ## HTTP request
 
@@ -63,7 +63,35 @@ Content-Type: application/json
 Content-length: 376
 
 {
-    "@odata.type": "microsoft.graph.printJobConfiguration"
+  "feedOrientation": "longEdgeFirst",
+  "pageRanges": [
+    {
+      "start": 1,
+      "end": 1
+    }
+  ],
+  "quality": "medium",
+  "dpi": 600,
+  "orientation": "landscape",
+  "copies": 1,
+  "duplexMode": "oneSided",
+  "colorMode": "blackAndWhite",
+  "inputBin": "by-pass-tray",
+  "outputBin": "output-tray",
+  "mediaSize": "A4",
+  "margin": {
+    "top": 0,
+    "bottom": 0,
+    "left": 0,
+    "right": 0
+  },
+  "mediaType": "stationery",
+  "finishings": null,
+  "pagesPerSheet": 1,
+  "multipageLayout": "clockwiseFromBottomLeft",
+  "collate": false,
+  "scaling": "shrinkToFit",
+  "fitPdfToPage": false
 }
 ```
 
@@ -79,7 +107,36 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "microsoft.graph.printJobConfiguration"
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('d5ef6ec4-07ca-4212-baf9-d45be126bfbb')/jobs('44353')/configuration",
+  "feedOrientation": "longEdgeFirst",
+  "pageRanges": [
+    {
+      "start": 1,
+      "end": 1
+    }
+  ],
+  "quality": "medium",
+  "dpi": 600,
+  "orientation": "landscape",
+  "copies": 1,
+  "duplexMode": "oneSided",
+  "colorMode": "blackAndWhite",
+  "inputBin": "by-pass-tray",
+  "outputBin": "output-tray",
+  "mediaSize": "A4",
+  "margin": {
+    "top": 0,
+    "bottom": 0,
+    "left": 0,
+    "right": 0
+  },
+  "mediaType": "stationery",
+  "finishings": null,
+  "pagesPerSheet": 1,
+  "multipageLayout": "clockwiseFromBottomLeft",
+  "collate": false,
+  "scaling": "shrinkToFit",
+  "fitPdfToPage": false
 }
 ```
 

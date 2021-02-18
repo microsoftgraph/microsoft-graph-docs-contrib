@@ -75,11 +75,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.printTaskTrigger",
-    "id": "77cd4a13-4a13-77cd-134a-cd77134acd77",
-    "event": "String"
-  }
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers/taskTriggers/$entity",
+  "id": "b6a843ca-e60e-4e20-a222-a58d85eead6d",
+  "event": "jobStarted"
 }
 ```
 

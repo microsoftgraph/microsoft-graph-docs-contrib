@@ -21,7 +21,7 @@ In addition to the following permissions, the app's tenant must have an active U
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| Not Supported |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+|Application| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All |
 
 ## HTTP request
 

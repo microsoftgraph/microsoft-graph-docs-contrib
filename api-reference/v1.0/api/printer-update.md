@@ -107,12 +107,11 @@ Content-Type: application/json
 Content-length: 581
 
 {
-  "@odata.type": "#microsoft.graph.printer",
-  "defaults": {
-    "@odata.type": "microsoft.graph.printerDefaults"
-  },
+  "name": "PrinterName",
   "location": {
-    "@odata.type": "microsoft.graph.printerLocation"
+    "latitude": 1.1,
+    "longitude": 2.2,
+    "altitudeInMeters": 3
   }
 }
 ```
@@ -130,24 +129,53 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.printer",
-  "id": "5b94422c-422c-5b94-2c42-945b2c42945b",
-  "displayName": "String",
-  "manufacturer": "String",
-  "model": "String",
-  "isAcceptingJobs": "Boolean",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers/$entity",
+  "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
+  "displayName": "PrinterName",
+  "manufacturer": "PrinterManufacturer",
+  "model": "PrinterModel",
+  "isShared": true,
+  "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
+  "isAcceptingJobs": true,
+  "status": {
+    "state": "idle",
+    "details": [],
+    "description": ""
+  },
   "defaults": {
-    "@odata.type": "microsoft.graph.printerDefaults"
+    "copiesPerJob":1,
+    "contentType": "application/oxps",
+    "finishings": ["none"],
+    "mediaType": "stationery"
   },
   "location": {
-    "@odata.type": "microsoft.graph.printerLocation"
-  },
-  "status": {
-    "@odata.type": "microsoft.graph.printerStatus"
-  },
-  "registeredDateTime": "String (timestamp)",
-  "isShared": "Boolean",
-  "hasPhysicalDevice": "Boolean"
+    "latitude": 1.1,
+    "longitude": 2.2,
+    "altitudeInMeters": 3,
+    "streetAddress": "One Microsoft Way",
+    "subUnit": [
+        "Main Plaza",
+        "Unit 400"
+    ],
+    "city": "Redmond",
+    "postalCode": "98052",
+    "countryOrRegion": "USA",
+    "site": "Puget Sound",
+    "building": "Studio E",
+    "floor": "1",
+    "floorDescription": "First Floor",
+    "roomName": "1234",
+    "roomDescription": "First floor copy room",
+    "organization": [
+        "C+AI",
+        "Microsoft Graph"
+    ],
+    "subdivision": [
+        "King County",
+        "Red West"
+    ],
+    "stateOrProvince": "Washington"
+  }
 }
 ```
 

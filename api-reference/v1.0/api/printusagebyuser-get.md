@@ -75,15 +75,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.printUsageByUser",
-    "id": "799de92b-e92b-799d-2be9-9d792be99d79",
-    "usageDate": "Date",
-    "completedBlackAndWhiteJobCount": "Integer",
-    "completedColorJobCount": "Integer",
-    "incompleteJobCount": "Integer",
-    "userPrincipalName": "String"
-  }
+  "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
+  "userPrincipalName": "username@contoso.com",
+  "usageDate": "2020-02-04T00:00:00.0000000Z",
+  "completedBlackAndWhiteJobCount": 42,
+  "completedColorJobCount": 0,
+  "incompleteJobCount": 6
 }
 ```
 

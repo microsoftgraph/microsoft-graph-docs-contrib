@@ -69,14 +69,12 @@ Content-Type: application/json
 Content-length: 163
 
 {
-  "@odata.type": "#microsoft.graph.printTaskDefinition",
-  "displayName": "String",
+  "displayName": "Test TaskDefinitionName",
   "createdBy": {
-    "@odata.type": "microsoft.graph.appIdentity"
+    "displayName": "Requesting App Display Name"
   }
 }
 ```
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.
@@ -90,11 +88,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.printTaskDefinition",
-  "id": "94aff05b-f05b-94af-5bf0-af945bf0af94",
-  "displayName": "String",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/taskDefinitions/$entity",
+  "id": "fab143fd-ee61-4358-8558-2c7dee953982",
+  "displayName": "Test TaskDefinitionName",
   "createdBy": {
-    "@odata.type": "microsoft.graph.appIdentity"
+    "appId" : "479688a0-cc3a-4993-ab24-54c7c80b047e",
+    "displayName": "Requesting App Display Name"
   }
 }
 ```

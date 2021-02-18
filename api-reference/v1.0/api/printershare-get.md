@@ -86,24 +86,67 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.printerShare",
-    "id": "0341efb6-efb6-0341-b6ef-4103b6ef4103",
-    "displayName": "String",
-    "manufacturer": "String",
-    "model": "String",
-    "isAcceptingJobs": "Boolean",
-    "defaults": {
-      "@odata.type": "microsoft.graph.printerDefaults"
-    },
-    "location": {
-      "@odata.type": "microsoft.graph.printerLocation"
-    },
-    "status": {
-      "@odata.type": "microsoft.graph.printerStatus"
-    },
-    "allowAllUsers": "Boolean",
-    "createdDateTime": "String (timestamp)"
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/shares/$entity",
+  "id": "d837c17b-3296-4384-a053-828d56e10f50",
+  "displayName": "PrinterShare Name",
+  "createdDateTime": "2020-02-04T00:00:00.0000000Z",
+  "isAcceptingJobs": true,
+  "allowAllUsers": false,
+  "status": {
+    "state": "stopped",
+    "details": [
+      "disconnected"
+    ],
+    "description": ""
+  },
+  "defaults": {
+    "copiesPerJob": 1,
+    "finishings": [
+      "none"
+    ],
+    "mediaColor": "Unknown",
+    "mediaType": "stationery",
+    "mediaSize": "North America Letter",
+    "pagesPerSheet": 1,
+    "orientation": "portrait",
+    "outputBin": "auto",
+    "inputBin": "auto",
+    "contentType": "application/oxps",
+    "fitPdfToPage": false,
+    "multipageLayout": null,
+    "colorMode": "color",
+    "quality": "medium",
+    "duplexMode": "oneSided",
+    "dpi": 600,
+    "scaling": null
+  },
+  "location": {
+    "latitude": 47.6450,
+    "longitude": -122.1409,
+    "altitudeInMeters": 3,
+    "streetAddress": "One Microsoft Way",
+    "subUnit": [
+      "Main Plaza",
+      "Unit 400"
+    ],
+    "city": "Redmond",
+    "postalCode": "98052",
+    "countryOrRegion": "USA",
+    "site": "Puget Sound",
+    "building": "Studio E",
+    "floor": "1",
+    "floorDescription": "First Floor",
+    "roomName": "1234",
+    "roomDescription": "First floor copy room",
+    "organization": [
+      "C+AI",
+      "Microsoft Graph"
+    ],
+    "subdivision": [
+      "King County",
+      "Red West"
+    ],
+    "stateOrProvince": "Washington"
   }
 }
 ```
@@ -116,12 +159,55 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.printerShare",
-    "id": "0341efb6-efb6-0341-b6ef-4103b6ef4103",
-    "displayName": "String",
-    "capabilities": {
-      "@odata.type": "microsoft.graph.printerCapabilities"
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/shares/$entity",
+  "id": "d837c17b-3296-4384-a053-828d56e10f50",
+  "displayName": "PrinterShare Name",
+  "capabilities": {
+    "isColorPrintingSupported": true,
+    "supportsFitPdfToPage": false,
+    "contentTypes": [
+      "application/pdf",
+      "image/pwg-raster",
+      "application/PCLm"
+    ],
+    "isPageRangeSupported": false,
+    "qualities": [
+      "medium"
+    ],
+    "dpis": [
+      600
+    ],
+    "duplexModes": [
+      "oneSided",
+      "flipOnLongEdge",
+      "flipOnShortEdge"
+    ],
+    "finishings": [
+      "none"
+    ],
+    "mediaTypes": [
+      "stationery"
+    ],
+    "mediaSizes": [
+      "North America Letter"
+    ],
+    "outputBins": [
+      "tray-1"
+    ],
+    "colorModes": [
+      "grayscale",
+      "color"
+    ],
+    "inputBins": [
+      "tray-1"
+    ],
+    "collation": true,
+    "scalings": [
+      "fill"
+    ],
+    "copiesPerJob": {
+      "start": 1,
+      "end": 38
     }
   }
 }

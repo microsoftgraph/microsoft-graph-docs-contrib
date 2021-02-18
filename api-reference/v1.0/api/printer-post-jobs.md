@@ -65,9 +65,36 @@ Content-Type: application/json
 Content-length: 376
 
 {
-  "@odata.type": "#microsoft.graph.printJob",
   "configuration": {
-    "@odata.type": "microsoft.graph.printJobConfiguration"
+    "feedOrientation": "longEdgeFirst",
+    "pageRanges": [
+      {
+        "start": 1,
+        "end": 1
+      }
+    ],
+    "quality": "medium",
+    "dpi": 600,
+    "orientation": "landscape",
+    "copies": 1,
+    "duplexMode": "oneSided",
+    "colorMode": "blackAndWhite",
+    "inputBin": "by-pass-tray",
+    "outputBin": "output-tray",
+    "mediaSize": "A4",
+    "margin": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "mediaType": "stationery",
+    "finishings": null,
+    "pagesPerSheet": 1,
+    "multipageLayout": "clockwiseFromBottomLeft",
+    "collate": false,
+    "scaling": "shrinkToFit",
+    "fitPdfToPage": false
   }
 }
 ```
@@ -86,24 +113,63 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.printJob",
-  "id": "455215a5-15a5-4552-a515-5245a5155245",
-  "createdDateTime": "String (timestamp)",
-  "status": {
-    "@odata.type": "microsoft.graph.printJobStatus"
-  },
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printJobs/$entity",
+  "id": "1825",
+  "createdDateTime": "2020-10-14T05:16:49-07:00",
+  "isFetchable": false,
+  "redirectedFrom": null,
+  "redirectedTo": null,
   "createdBy": {
-    "@odata.type": "microsoft.graph.userIdentity"
+    "id": "{userId}",
+    "displayName": "{username}",
+    "ipAddress": null,
+    "userPrincipalName": "{userupn}"
+  },
+  "status": {
+    "state": "paused",
+    "description": "The job is not a candidate for processing yet.",
+    "isAcquiredByPrinter": false,
+    "details": [
+      "uploadPending"
+    ]
   },
   "configuration": {
-    "@odata.type": "microsoft.graph.printJobConfiguration"
+    "quality": "medium",
+    "dpi": 600,
+    "feedOrientation": "longEdgeFirst",
+    "orientation": "landscape",
+    "duplexMode": "oneSided",
+    "copies": 1,
+    "colorMode": "blackAndWhite",
+    "inputBin": "by-pass-tray",
+    "outputBin": "output-tray",
+    "mediaSize": "A4",
+    "mediaType": "stationery",
+    "finishings": null,
+    "pagesPerSheet": 1,
+    "multipageLayout": "clockwiseFromBottomLeft",
+    "collate": false,
+    "scaling": "shrinkToFit",
+    "fitPdfToPage": false,
+    "pageRanges": [
+      {
+        "start": 1,
+        "end": 1
+      }
+    ],
+    "margin": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    }
   },
-  "redirectedTo": "String",
-  "redirectedFrom": "String",
-  "isFetchable": "Boolean",
   "documents": [
     {
-      "@odata.type": "microsoft.graph.printDocument"
+      "id": "1477576d-5dab-4ea9-865c-c0b82cd70bd5",
+      "displayName": "",
+      "contentType": "",
+      "size": 0
     }
   ]
 }

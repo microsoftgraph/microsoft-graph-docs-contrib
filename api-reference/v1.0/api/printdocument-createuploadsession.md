@@ -91,7 +91,9 @@ Content-length: 96
 
 {
   "properties": {
-    "@odata.type": "microsoft.graph.printDocumentUploadProperties"
+    "documentName": "TestFile.pdf",
+    "contentType": "application/pdf", 
+    "size": 4533322
   }
 }
 ```
@@ -110,9 +112,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.uploadSession"
-  }
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.uploadSession",
+    "uploadUrl": "https://print.print.microsoft.com/uploadSessions/5400be13-5a4e-4c20-be70-90c85bfe5d6e?tempauthtoken={token}",
+    "expirationDateTime": "2020-10-25T02:19:38.1694207Z",
+    "nextExpectedRanges": [
+        "0-4533321"
+    ]
 }
 ```
 

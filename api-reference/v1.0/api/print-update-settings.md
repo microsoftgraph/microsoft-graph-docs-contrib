@@ -64,8 +64,7 @@ PATCH https://graph.microsoft.com/v1.0/print/settings
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.printSettings",
-  "documentConversionEnabled": "Boolean"
+  "documentConversionEnabled": true
 }
 ```
 

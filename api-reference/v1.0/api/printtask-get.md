@@ -73,13 +73,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.printTask",
-    "id": "0f806e8f-6e8f-0f80-8f6e-800f8f6e800f",
-    "status": {
-      "@odata.type": "microsoft.graph.printTaskStatus"
-    },
-    "parentUrl": "String"
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/taskDefinitions('3203656e-6069-4e10-8147-d25290b00a3c')/tasks/$entity",
+  "id": "d036638b-1272-4bba-9227-732463823ed3",
+  "parentUrl": "https://graph.microsoft.com/v1.0/print/printers/d5ef6ec4-07ca-4212-baf9-d45be126bfbb/jobs/44353",
+  "status": {
+    "state": "completed",
+    "description": "completed"
   }
 }
 ```

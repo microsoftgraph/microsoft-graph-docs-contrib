@@ -75,17 +75,40 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.printConnector",
-    "id": "93323d33-3d33-9332-333d-3293333d3293",
-    "displayName": "String",
-    "fullyQualifiedDomainName": "String",
-    "operatingSystem": "String",
-    "appVersion": "String",
-    "location": {
-      "@odata.type": "microsoft.graph.printerLocation"
-    },
-    "registeredDateTime": "String (timestamp)"
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/connectors/$entity",
+  "id": "9953d245-3f6e-418c-a438-67f50e69a430",
+  "displayName": "ConnectorName",
+  "fullyQualifiedDomainName": "CONNECTOR-MACHINE",
+  "operatingSystem": "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555",
+  "appVersion": "0.19.7338.23496",
+  "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
+  "location": {
+    "latitude": 1.1,
+    "longitude": 2.2,
+    "altitudeInMeters": 3,
+    "streetAddress": "One Microsoft Way",
+    "subUnit": [
+        "Main Plaza",
+        "Unit 400"
+    ],
+    "city": "Redmond",
+    "postalCode": "98052",
+    "countryOrRegion": "USA",
+    "site": "Puget Sound",
+    "building": "Studio E",
+    "floor": "1",
+    "floorDescription": "First Floor",
+    "roomName": "1234",
+    "roomDescription": "First floor copy room",
+    "organization": [
+        "C+AI",
+        "Microsoft Graph"
+    ],
+    "subdivision": [
+        "King County",
+        "Red West"
+    ],
+    "stateOrProvince": "Washington"
   }
 }
 ```

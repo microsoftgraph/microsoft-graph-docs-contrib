@@ -70,9 +70,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.printJobStatus"
-  }
+    "state": "processing",
+    "description": "The print job is currently being processed.",
+    "isAcquiredByPrinter": false,
+    "details": ["interpreting"]
 }
 ```
 

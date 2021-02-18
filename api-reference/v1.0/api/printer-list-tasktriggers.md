@@ -80,11 +80,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('fcc7fe6a-5ba7-4059-8017-702f3a41c8a4')/taskTriggers",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.printTaskTrigger",
-      "id": "77cd4a13-4a13-77cd-134a-cd77134acd77",
-      "event": "String"
+      "id": "b6a843ca-e60e-4e20-a222-a58d85eead6d",
+      "event": "jobStarted"
     }
   ]
 }

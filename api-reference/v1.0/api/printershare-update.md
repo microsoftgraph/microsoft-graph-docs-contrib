@@ -1,7 +1,7 @@
 ---
 title: Update printershare
 description: Update the properties of printer share. This method can be used to "swap" printers.
-author: braedenp-msft
+author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
@@ -71,10 +71,9 @@ Content-Type: application/json
 Content-length: 509
 
 {
-  "@odata.type": "#microsoft.graph.printerShare",
-  "displayName": "String",
+  "displayName": "PrinterShare Name",
   "printer@odata.bind": "https://graph.microsoft.com/v1.0/print/printers/{printerId}",
-  "allowAllUsers": "Boolean"
+  "allowAllUsers": false
 }
 ```
 
@@ -90,23 +89,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.printerShare",
-  "id": "0341efb6-efb6-0341-b6ef-4103b6ef4103",
-  "displayName": "String",
-  "manufacturer": "String",
-  "model": "String",
-  "isAcceptingJobs": "Boolean",
-  "defaults": {
-    "@odata.type": "microsoft.graph.printerDefaults"
-  },
-  "location": {
-    "@odata.type": "microsoft.graph.printerLocation"
-  },
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/shares/$entity",
+  "id": "d837c17b-3296-4384-a053-828d56e10f50",
+  "displayName": "PrinterShare Name",
+  "createdDateTime": "2020-02-04T00:00:00.0000000Z",
+  "isAcceptingJobs": true,
+  "allowAllUsers": false,
   "status": {
-    "@odata.type": "microsoft.graph.printerStatus"
-  },
-  "allowAllUsers": "Boolean",
-  "createdDateTime": "String (timestamp)"
+    "state": "stopped",
+    "details": ["disconnected"],
+    "description": ""
+  }
 }
 ```
 

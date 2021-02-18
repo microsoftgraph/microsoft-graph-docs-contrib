@@ -81,23 +81,22 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.printJob",
-    "id": "455215a5-15a5-4552-a515-5245a5155245",
-    "createdDateTime": "String (timestamp)",
-    "status": {
-      "@odata.type": "microsoft.graph.printJobStatus"
-    },
-    "createdBy": {
-      "@odata.type": "microsoft.graph.userIdentity"
-    },
-    "configuration": {
-      "@odata.type": "microsoft.graph.printJobConfiguration"
-    },
-    "redirectedTo": "String",
-    "redirectedFrom": "String",
-    "isFetchable": "Boolean"
-  }
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs/$entity",
+  "id": "5182",
+  "createdDateTime": "2020-02-04T00:00:00.0000000Z",
+  "createdBy": {    
+  },
+  "configuration": {    
+  },
+  "status": {
+    "state": "completed",
+    "description": "The print job has completed successfully and no further processing will take place.",
+    "details": [      
+    ]
+  },
+  "redirectedTo": null,
+  "redirectedFrom": null,
+  "isFetchable": "false"
 }
 ```
 
@@ -127,29 +126,32 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.printJob",
-    "id": "455215a5-15a5-4552-a515-5245a5155245",
-    "createdDateTime": "String (timestamp)",
-    "status": {
-      "@odata.type": "microsoft.graph.printJobStatus"
-    },
-    "createdBy": {
-      "@odata.type": "microsoft.graph.userIdentity"
-    },
-    "configuration": {
-      "@odata.type": "microsoft.graph.printJobConfiguration"
-    },
-    "redirectedTo": "String",
-    "redirectedFrom": "String",
-    "isFetchable": "Boolean",
-    "tasks": 
-     [
-       {
-         "@odata.type": "microsoft.graph.printTask"
-       }
-     ]
-  }
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs/$entity",
+  "id": "5182",
+  "createdDateTime": "2020-02-04T00:00:00.0000000Z",
+  "createdBy": {    
+  },
+  "configuration": {    
+  },
+  "status": {
+    "state": "completed",
+    "description": "The print job has completed successfully and no further processing will take place.",
+    "details": [      
+    ]
+  },
+  "redirectedTo": null,
+  "redirectedFrom": null,
+  "isFetchable": "false",
+  "tasks": [
+    {
+      "id": "d036638b-1272-4bba-9227-732463823ed3",
+      "parentUrl": "https://graph.microsoft.com/v1.0/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb/jobs/5182",
+      "status": {
+        "state": "processing",
+        "description": "The task is being processed."
+      }
+    }
+  ]
 }
 ```
 
@@ -179,28 +181,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.printJob",
-    "id": "455215a5-15a5-4552-a515-5245a5155245",
-    "createdDateTime": "String (timestamp)",
-    "status": {
-      "@odata.type": "microsoft.graph.printJobStatus"
-    },
-    "createdBy": {
-      "@odata.type": "microsoft.graph.userIdentity"
-    },
-    "configuration": {
-      "@odata.type": "microsoft.graph.printJobConfiguration"
-    },
-    "redirectedTo": "String",
-    "redirectedFrom": "String",
-    "isFetchable": "Boolean",
-    "documents": 
-     [
-       {
-         "@odata.type": "microsoft.graph.printDocument"
-       }
-     ]
-  }
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs/$entity",
+  "id": "5182",
+  "createdDateTime": "2020-02-04T00:00:00.0000000Z",
+  "createdBy": {    
+  },
+  "configuration": {    
+  },
+  "status": {
+    "state": "completed",
+    "description": "The print job has completed successfully and no further processing will take place.",
+    "details": [      
+    ],
+    "isAcquiredByPrinter": "true"
+  },
+  "redirectedTo": null,
+  "redirectedFrom": null,
+  "isFetchable": "false",
+  "documents@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs('5182')/documents",
+  "documents": [
+    {
+      "id": "ca96c367-c3ad-478a-bbce-fbd1cd856e73",
+      "displayName": "",
+      "contentType": "application/oxps",
+      "size": 276604
+    }
+  ]
 }
 ```

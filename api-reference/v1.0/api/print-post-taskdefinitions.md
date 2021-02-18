@@ -65,10 +65,9 @@ Content-Type: application/json
 Content-length: 163
 
 {
-  "@odata.type": "#microsoft.graph.printTaskDefinition",
-  "displayName": "String",
+  "displayName": "Test TaskDefinitionName",
   "createdBy": {
-    "@odata.type": "microsoft.graph.appIdentity"
+    "displayName": "Requesting App Display Name"
   }
 }
 ```
@@ -87,11 +86,12 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.printTaskDefinition",
-  "id": "94aff05b-f05b-94af-5bf0-af945bf0af94",
-  "displayName": "String",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/taskDefinitions/$entity",
+  "id": "fab143fd-ee61-4358-8558-2c7dee953982",
+  "displayName": "Test TaskDefinitionName",
   "createdBy": {
-    "@odata.type": "microsoft.graph.appIdentity"
+    "appId": "815f204f-c791-4ee6-9098-614ecdb003f6",
+    "displayName": "Requesting App Display Name"
   }
 }
 ```

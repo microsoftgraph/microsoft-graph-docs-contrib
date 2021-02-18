@@ -68,14 +68,12 @@ Content-Type: application/json
 Content-length: 152
 
 {
-  "@odata.type": "#microsoft.graph.printTask",
   "status": {
-    "@odata.type": "microsoft.graph.printTaskStatus"
-  },
-  "parentUrl": "String"
+    "state": "completed",
+    "description": "completed"
+  }
 }
 ```
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.
@@ -89,12 +87,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.printTask",
-  "id": "0f806e8f-6e8f-0f80-8f6e-800f8f6e800f",
+  "id": "d036638b-1272-4bba-9227-732463823ed3",
+  "parentUrl": "https://graph.microsoft.com/v1.0/print/printers/d5ef6ec4-07ca-4212-baf9-d45be126bfbb/jobs/44353",
   "status": {
-    "@odata.type": "microsoft.graph.printTaskStatus"
-  },
-  "parentUrl": "String"
+    "state": "completed",
+    "description": "Task execution is completed."
+  }
 }
 ```
 

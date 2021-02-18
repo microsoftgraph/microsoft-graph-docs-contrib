@@ -72,9 +72,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.group)",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.group"
+      "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
+      "displayName": "GroupName"
     }
   ]
 }
