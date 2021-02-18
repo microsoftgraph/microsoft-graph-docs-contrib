@@ -62,9 +62,8 @@ If successful, this function returns a `200 OK` response code and a [archivedPri
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/reports/getUserArchivedPrintJobs(userId='parameterValue',startDateTime=String (timestamp),endDateTime=String (timestamp))
+GET https://graph.microsoft.com/v1.0/reports/getUserArchivedPrintJobs(userId='{id}',startDateTime=<timestamp>,endDateTime=<timestamp>)
 ```
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.
