@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # printJob: abort
+
 Namespace: microsoft.graph
 
 Abort a print job. Only applications using application permissions can abort a print job.
@@ -60,7 +61,6 @@ If successful, this method returns a `204 No Content` response code. It does not
 # [HTTP](#tab/http)
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}/abort
-
 Content-Type: application/json
 Content-length: 26
 

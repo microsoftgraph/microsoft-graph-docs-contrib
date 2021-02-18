@@ -70,7 +70,6 @@ Making a GET request to the linked URL can be used to get the status of an ongoi
 # [HTTP](#tab/http)
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/create
-
 Content-Type: application/json
 Content-length: 287
 
