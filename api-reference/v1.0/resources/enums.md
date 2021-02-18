@@ -12,6 +12,9 @@ doc_type: enumPageType
 Namespace: microsoft.graph
 
 ### tone values
+
+|Member|
+|:---|
 |tone0|
 |tone1|
 |tone2|
@@ -45,14 +48,6 @@ Namespace: microsoft.graph
 |active|
 |inactive|
 
-### certificateSigningOptions values
-
-|Member|
-|:---|
-|ResponseOnly|
-|TokenOnly|
-|ResponseAndToken|
-
 ### callState values
 
 |Member|
@@ -67,6 +62,23 @@ Namespace: microsoft.graph
 |redirecting|
 |terminating|
 |terminated|
+
+### callType values
+
+|Member|
+|:---|
+|unknown|
+|groupCall|
+|peerToPeer|
+|unknownFutureValue|
+
+### onlineMeetingRole values
+
+|Member|
+|:---|
+|attendee|
+|presenter|
+|unknownFutureValue|
 
 ### modality values 
 

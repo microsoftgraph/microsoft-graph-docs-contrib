@@ -34,11 +34,11 @@ After a connector group is created, you can add or move connectors to the connec
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| Indicates the type of hybrid agent. This pre-set by the system. Read-only. |
+|connectorGroupType|connectorGroupType| Indicates the type of hybrid agent. This pre-set by the system. Possible values are: `applicationProxy`. <br/>Read-only. |
 |id|string| Unique identifier for this connectorGroup. Read-only. |
 |isDefault|boolean| Indicates if the connectorGroup is the default connectorGroup. Only a single connector group can be the default connectorGroup and this is pre-set by the system. Read-only. |
 |name|string| The name associated with the connectorGroup. |
-|region|connectorGroupRegion| The region the connectorGroup is assigned to and will optimize traffic for. This region can only be set if **no connectors or applications** are assigned to the connectorGroup. The possible values are:<ul><li>`nam` - Represents **North America**</li><li>`eur` - Represents **Europe**</li><li>`aus` - Represents **Australia**</li><li>`asia` - Represents Asia</li><li>`ind` - Represents **India**</li>|
+|region|connectorGroupRegion| The region the connectorGroup is assigned to and will optimize traffic for. This region can only be set if **no connectors or applications** are assigned to the connectorGroup. The possible values are:<ul><li>`nam` - for **North America**</li><li>`eur` - for **Europe**</li><li>`aus` - for **Australia**</li><li>`asia` - for **Asia**</li><li>`ind` - for **India**</li><li>`unknownFutureValue`</li></ul>|
 
 ## Relationships
 | Relationship | Type	|Description|
