@@ -16,11 +16,9 @@ Represents a print connector that has been registered by using a Universal Print
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List printConnectors](../api/printconnector-list.md)|[printConnector](../resources/printconnector.md) collection|Get a list of the [printConnector](../resources/printconnector.md) objects and their properties.|
-|[Create printConnector](../api/printconnector-create.md)|[printConnector](../resources/printconnector.md)|Create a new [printConnector](../resources/printconnector.md) object.|
-|[Get printConnector](../api/printconnector-get.md)|[printConnector](../resources/printconnector.md)|Read the properties and relationships of a [printConnector](../resources/printconnector.md) object.|
-|[Update printConnector](../api/printconnector-update.md)|[printConnector](../resources/printconnector.md)|Update the properties of a [printConnector](../resources/printconnector.md) object.|
-|[Delete printConnector](../api/printconnector-delete.md)|None|Deletes a [printConnector](../resources/printconnector.md) object.|
+| [Get connector](../api/printconnector-get.md) | [printConnector](printconnector.md) | Read the properties and relationships of the connector object. |
+| [Update connector](../api/printconnector-update.md) | [printConnector](printconnector.md) | Update the connector object. |
+| [Delete connector](../api/printconnector-delete.md) | None | Unregister the connector from the Universal Print service. |
 
 ## Properties
 |Property|Type|Description|

@@ -7,7 +7,7 @@ ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
-# List connectors
+# List printConnectors for a printer
 Namespace: microsoft.graph
 
 Retrieve a list of **connectors** associated with the [printer](../resources/printer.md).

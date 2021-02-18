@@ -7,7 +7,7 @@ ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
-# List shares
+# List printerShares for a printer
 Namespace: microsoft.graph
 
 Retrieve a list of printer shares associated with the [printer](../resources/printer.md).

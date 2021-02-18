@@ -7,7 +7,7 @@ ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
-# List jobs
+# List printJobs for a printerShare
 Namespace: microsoft.graph
 
 Retrieve a list of print jobs associated with the [printerShare](../resources/printershare.md).

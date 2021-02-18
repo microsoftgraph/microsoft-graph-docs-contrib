@@ -66,9 +66,11 @@ Content-length: 376
 
 {
   "configuration": {
+    "@odata.type": "microsoft.graph.printJobConfiguration",
     "feedOrientation": "longEdgeFirst",
     "pageRanges": [
       {
+        "@odata.type": "microsoft.graph.integerRange",
         "start": 1,
         "end": 1
       }
