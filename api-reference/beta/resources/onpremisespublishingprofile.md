@@ -30,7 +30,7 @@ Various Azure services (for example, Azure Active Directory Connect [Passthrough
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md)| Represents a **hybridAgentUpdaterConfiguration** object.|
-|id|onPremAgentPublishingType| Represents a publishing type. Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`. Read-only.|
+|id|String| Represents a publishing type. Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`. Read-only.|
 |isEnabled|Boolean| Represents if [Azure AD Application Proxy](https://aka.ms/whyappproxy) is enabled for the tenant. |
 
 ## Relationships
