@@ -3,7 +3,7 @@ title: printerCapabilities complex type
 description: Represents the capabilities reported by a printer.
 author: nilakhan
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
 
@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 Represents the capabilities reported by a printer/printerShare.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |contentTypes|String collection|A list of supported content (MIME) types that the printer supports. It is not guaranteed that the Universal Print service supports printing all of these MIME types.|
