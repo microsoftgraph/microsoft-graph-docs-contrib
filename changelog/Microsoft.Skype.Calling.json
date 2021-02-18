@@ -15,7 +15,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "OnlineMeetings.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the policy-based application permission of **OnlineMeetings.Read.All** to the read o and write perations of the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Description": "Added support for the policy-based application permission of **OnlineMeetings.ReadWrite.All** to the read and write operations of the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
           "Target": "onlineMeeting"
         }
       ],
