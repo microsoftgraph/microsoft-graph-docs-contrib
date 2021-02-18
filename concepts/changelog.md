@@ -13,6 +13,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## February 2021
 
+### Sites and lists | Taxonomy
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [termStore.store](/graph/api/resources/termstore-store?view=graph-rest-beta&preserve-view=true) navigation property to the [site](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true) entity |
+| Addition | beta | Added the **parentSiteId** property to the [termStore.group](/graph/api/resources/termstore-group?view=graph-rest-beta&preserve-view=true) resource |
+
 ### Tasks and plans
 
 | **Change type** | **Version** | **Description** |
