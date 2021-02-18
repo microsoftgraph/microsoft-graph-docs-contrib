@@ -1873,9 +1873,29 @@ Possible values for user account types (group membership), per Windows definitio
 |meeting             | 2     | Indicates that the chat is a Meeting chat, which is created as a side effect of creation of an OnlineMeeting.  |
 |unknownFutureValue  | 3     | Sentinel value to indicate future values. |
 
+### singleSignOnMode values
+
+|Member|
+|:---|
+|none|
+|onPremisesKerberos|
+|aadHeaderBased|
+|pingHeaderBased|
+
 ### plannerContainerType values 
 
 |Member|
 |:---|
 |group|
 |unknownFutureValue|
+
+### plannerPlanContextType values 
+
+|Member|
+|:---|
+|teamsTab|
+|sharePointPage|
+|meetingNotes|
+|other|
+|unknownFutureValue|
+
