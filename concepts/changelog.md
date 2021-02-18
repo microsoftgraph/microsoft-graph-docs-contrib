@@ -27,6 +27,19 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the `roster` member to the **plannerContainerType** enumeration|
 |Addition|beta|Added the **plannerPlanContextType** enumeration type|
 
+### Identity and access | Devices
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+| Addition | beta | Added the **deviceCategory** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **deviceOwnership** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **domainName** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **enrollmentProfileName** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **enrollmentType** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **isRooted** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **managementType** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **registrationDateTime** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+
 ## January 2021
 
 ### Applications
@@ -70,6 +83,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
 | Addition | beta | Added new [Delegated permissions](./permissions-reference.md#universal-print-permissions): <br/><ul><li>PrintJob.Create</li><li>PrinterShare.ReadBasic.All</li><li>PrintConnector.Read.All</li><li>PrintConnector.ReadWrite.All</li><li>PrintSettings.Read.All</li><li>PrintSettings.ReadWrite.All</li><li>Reports.Read.All</li></ul> |
+|Addition|beta|Added the **inputBin** property to [printerDefaults](/graph/api/resources/printerDefaults?view=graph-rest-beta) resource|
 
 ### Tasks and plans
 
@@ -236,8 +250,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the [channelModerationSettings](/graph/api/resources/channelmoderationsettings?view=graph-rest-beta&preserve-view=true) resource type. |
 | Addition | beta | Added the **replyRestriction** enumeration type. |
 | Addition | beta | Added the **userNewMessageRestriction** enumeration type. |
-
-
 
 ## November 2020
 
