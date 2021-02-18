@@ -5,17 +5,17 @@
         {
           "Id": "6ebc1737-3f93-4ef1-a9e7-cafa03262cf8",
           "ApiChange": "Permission",
-          "ChangedApiName": "OnlineMeetings.Read",
+          "ChangedApiName": "OnlineMeetings.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added the **OnlineMeetings.Read** permission to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) entity.",
+          "Description": "Added support for the policy-based application permission of **OnlineMeetings.Read.All** to the read operations of the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
           "Target": "onlineMeeting"
         },
         {
           "Id": "6ebc1737-3f93-4ef1-a9e7-cafa03262cf8",
           "ApiChange": "Permission",
-          "ChangedApiName": "OnlineMeetings.ReadWrite",
+          "ChangedApiName": "OnlineMeetings.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added the **OnlineMeetings.ReadWrite** permission to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) entity.",
+          "Description": "Added support for the policy-based application permission of **OnlineMeetings.Read.All** to the read o and write perations of the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
           "Target": "onlineMeeting"
         }
       ],
