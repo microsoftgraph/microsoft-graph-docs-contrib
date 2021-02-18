@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|Financials.ReadWrite.All|
 
 ## HTTP request
-```
+```http
 POST /financials/companies/{id}/vendors
 ```
 
@@ -93,7 +93,6 @@ Content-type: application/json
   "displayName": "Wide World Importers",
   "lastModifiedDateTime": "2015-11-09T02:14:32Z"
 }
-
 ```
 
 
