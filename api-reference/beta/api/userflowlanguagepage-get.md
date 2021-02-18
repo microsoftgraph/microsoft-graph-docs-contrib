@@ -3,7 +3,7 @@ title: "Get userFlowLanguagePage"
 description: "Read the values in a userFlowLanguagePage object for a language in a user flow."
 author: "jkdouglas"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 

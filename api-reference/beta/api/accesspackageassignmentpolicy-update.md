@@ -3,7 +3,7 @@ title: "Update accessPackageAssignmentPolicy"
 description: "Update the properties of an accessPackageAssignmentPolicy object."
 author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

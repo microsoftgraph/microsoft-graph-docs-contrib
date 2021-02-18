@@ -3,7 +3,7 @@ title: "Create programControl"
 description: "In the Azure AD access reviews feature, create a new programControl object.  This links an access review to a program."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "markwahl-msft"
 ---
 

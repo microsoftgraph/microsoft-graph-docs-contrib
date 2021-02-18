@@ -3,7 +3,7 @@ title: "List identityProviders"
 description: "Retrieve all identityProviders"
 localization_priority: Priority
 author: "Nickgmicrosoft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 

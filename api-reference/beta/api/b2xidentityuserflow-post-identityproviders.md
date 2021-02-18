@@ -4,7 +4,7 @@ description: "Add identityProvider in a b2xIdentityUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
 # Add identityProvider to a b2xIdentityUserFlow

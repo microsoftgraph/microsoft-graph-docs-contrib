@@ -3,7 +3,7 @@ title: "Get accessReviewInstance"
 description: "Retrieve an accessReviewInstance object."
 localization_priority: Normal
 author: "isabelleatmsft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

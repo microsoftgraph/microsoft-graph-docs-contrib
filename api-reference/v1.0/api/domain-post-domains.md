@@ -3,7 +3,7 @@ title: "Create domain"
 description: "Adds a domain to the tenant."
 author: "adimitui"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

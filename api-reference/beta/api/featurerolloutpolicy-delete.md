@@ -3,7 +3,7 @@ title: "Delete featureRolloutPolicy"
 description: "Delete a featureRolloutPolicy object."
 localization_priority: Normal
 author: "keylimesoda"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
 

@@ -3,7 +3,7 @@ title: "administrativeUnit: delta"
 description: "Get newly created, updated, or deleted administrative units without having to perform a full read of the entire resource collection."
 localization_priority: Normal
 author: "anandyadavMSFT"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

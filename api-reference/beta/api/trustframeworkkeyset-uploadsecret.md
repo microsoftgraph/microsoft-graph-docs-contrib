@@ -3,7 +3,7 @@ title: "trustFrameworkKeySet: uploadSecret"
 description: "Upload a secret to a keyset."
 localization_priority: Normal
 author: "Nickgmicrosoft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 

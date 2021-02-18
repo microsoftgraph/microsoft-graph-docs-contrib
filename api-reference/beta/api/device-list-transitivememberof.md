@@ -3,7 +3,7 @@ title: "List device transitive groups"
 description: "Get groups that the device is a member of."
 localization_priority: Normal
 author: "spunukol"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

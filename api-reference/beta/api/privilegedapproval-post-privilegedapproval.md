@@ -3,7 +3,7 @@ title: "Create privilegedApproval"
 description: "Use this API to create a new privilegedApproval."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "shauliu"
 ---
 

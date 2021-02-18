@@ -3,7 +3,7 @@ title: "Get accessReview"
 description: "In the Azure AD access reviews feature, retrieve an accessReview object."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "List accessPackageCatalogs"
 description: "Retrieve a list of accessPackageCatalog objects."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 

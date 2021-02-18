@@ -3,7 +3,7 @@ title: "Create unifiedRoleDefinition"
 description: "Create a new unifiedRoleDefinition object."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
 

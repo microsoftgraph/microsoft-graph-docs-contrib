@@ -3,7 +3,7 @@ title: "organization resource type"
 description: "Represents an Azure Active Directory tenant. "
 localization_priority: Normal
 author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "domain resource type"
 description: "Represents a domain associated with the tenant."
 author: "adimitui"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 

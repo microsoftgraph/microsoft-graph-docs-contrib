@@ -3,7 +3,7 @@ title: "List keySets"
 description: "Retrieve a list of trustframeworkkeyset objects."
 localization_priority: Normal
 author: "Nickgmicrosoft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 

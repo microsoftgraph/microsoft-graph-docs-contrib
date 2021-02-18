@@ -3,7 +3,7 @@ title: "List accessPackageAssignmentRequests"
 description: "Retrieve a list of accessPackageAssignmentRequest objects."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 

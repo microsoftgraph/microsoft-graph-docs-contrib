@@ -3,7 +3,7 @@ title: "device resource type"
 description: "Represents a device registered in the directory."
 localization_priority: Normal
 author: "spunukol"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 

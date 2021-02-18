@@ -3,7 +3,7 @@ title: "accessReviewInstanceDecisionItem resource type"
 description: "Represents a decision on a user's access on an accessReviewInstance."
 author: "isabelleatmsft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

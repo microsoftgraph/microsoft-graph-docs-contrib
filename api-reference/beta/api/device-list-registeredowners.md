@@ -3,7 +3,7 @@ title: "List registeredOwners"
 description: "Retrieve a list of users that are registered owners of the device."
 localization_priority: Normal
 author: "spunukol"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

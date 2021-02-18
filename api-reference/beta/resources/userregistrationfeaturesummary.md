@@ -3,7 +3,7 @@ title: "userRegistrationFeatureSummary resource type"
 description: "Summary of users capable of Multi-Factor Authentication, Self-Service Password Reset, and Passwordless authentication."
 author: "danielwood95"
 localization_priority: Normal
-ms.prod: "identity-and-access-reports"
+ms.prod: "reports"
 doc_type: resourcePageType
 ---
 

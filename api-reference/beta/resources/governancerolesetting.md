@@ -3,7 +3,7 @@ title: "governanceRoleSetting resource type"
 description: "Represents a set of configurations on each role definition that needs to be evaluated against when role assignments are created or modified."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "shauliu"
 ---
 
