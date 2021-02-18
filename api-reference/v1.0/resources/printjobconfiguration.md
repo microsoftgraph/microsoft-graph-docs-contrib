@@ -17,23 +17,23 @@ A group of settings that a printer should use to print a job.
 |Property|Type|Description|
 |:---|:---|:---|
 |pageRanges|[integerRange](integerrange.md) collection|The page ranges to print. Read-only.|
-|quality|[printQuality](enums.md#printQuality-values)|The print quality to use when printing the job. Valid values are described in the table below. Read-only.|
+|quality|[printQuality](enums.md#printquality-values)|The print quality to use when printing the job. Valid values are described in the table below. Read-only.|
 |dpi|Int32|The resolution to use when printing the job, expressed in dots per inch (DPI). Read-only.|
 |feedOrientation|printerFeedOrientation|The orientation to use when feeding media into the printer. Valid values are described in the following table. Read-only.|
-|orientation|[printOrientation](enums.md#printOrientation-values)|The orientation setting the printer should use when printing the job. Valid values are described in the following table.|
-|duplexMode|[printDuplexMode](enums.md#printDuplexMode-values)|The duplex mode the printer should use when printing the job. Valid values are described in the table below. Read-only.|
+|orientation|[printOrientation](enums.md#printorientation-values)|The orientation setting the printer should use when printing the job. Valid values are described in the following table.|
+|duplexMode|[printDuplexMode](enums.md#printduplexmode-values)|The duplex mode the printer should use when printing the job. Valid values are described in the table below. Read-only.|
 |copies|Int32|The number of copies that should be printed. Read-only.|
-|colorMode|[printColorMode](enums.md#printColorMode-values)|The color mode the printer should use to print the job. Valid values are described in the table below. Read-only.|
+|colorMode|[printColorMode](enums.md#printcolormode-values)|The color mode the printer should use to print the job. Valid values are described in the table below. Read-only.|
 |inputBin|String|The input bin (tray) to use when printing. See the printer's [capabilities](printercapabilities.md) for a list of supported input bins.|
 |outputBin|String|The output bin to place completed prints into. See the printer's [capabilities](printercapabilities.md) for a list of supported output bins.|
 |mediaSize|String|The media sizeto use when printing. Supports standard size names for ISO and ANSI media sizes, along with any custom sizes supported by the associated printer.|
 |margin|[printMargin](printmargin.md)|The margin settings to use when printing.|
 |mediaType|String|The default media (such as paper) type to print the document on. Valid values are described in the following table.|
-|finishings|[printFinishing](enums.md#printFinishing-values) collection|Finishing processes to use when printing.|
+|finishings|[printFinishing](enums.md#printfinishing-values) collection|Finishing processes to use when printing.|
 |pagesPerSheet|Int32|The number of document pages to print on each sheet.
-|multipageLayout|[printMultipageLayout](enums.md#printMultipageLayout-values)|The direction to lay out pages when multiple pages are being printed per sheet. Valid values are described in the following table.|
+|multipageLayout|[printMultipageLayout](enums.md#printmultipagelayout-values)|The direction to lay out pages when multiple pages are being printed per sheet. Valid values are described in the following table.|
 |collate|Boolean|Whether the printer should collate pages wehen printing multiple copies of a multi-page document.|
-|scaling|[printScaling](enums.md#printScaling-values)|Specifies how the printer should scale the document data to fit the requested media. Valid values are described in the following table.|
+|scaling|[printScaling](enums.md#printscaling-values)|Specifies how the printer should scale the document data to fit the requested media. Valid values are described in the following table.|
 
 ## Relationships
 None.

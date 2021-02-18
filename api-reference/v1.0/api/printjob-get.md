@@ -92,11 +92,12 @@ Content-Type: application/json
     "state": "completed",
     "description": "The print job has completed successfully and no further processing will take place.",
     "details": [      
-    ]
+    ],
+    "isAcquiredByPrinter": true
   },
   "redirectedTo": null,
   "redirectedFrom": null,
-  "isFetchable": "false"
+  "isFetchable": false
 }
 ```
 
@@ -137,11 +138,12 @@ Content-Type: application/json
     "state": "completed",
     "description": "The print job has completed successfully and no further processing will take place.",
     "details": [      
-    ]
+    ],
+    "isAcquiredByPrinter": true
   },
   "redirectedTo": null,
   "redirectedFrom": null,
-  "isFetchable": "false",
+  "isFetchable": false,
   "tasks": [
     {
       "id": "d036638b-1272-4bba-9227-732463823ed3",
@@ -193,11 +195,11 @@ Content-Type: application/json
     "description": "The print job has completed successfully and no further processing will take place.",
     "details": [      
     ],
-    "isAcquiredByPrinter": "true"
+    "isAcquiredByPrinter": true
   },
   "redirectedTo": null,
   "redirectedFrom": null,
-  "isFetchable": "false",
+  "isFetchable": false,
   "documents@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs('5182')/documents",
   "documents": [
     {
