@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.printUsageByUser"
+  "@odata.type": "microsoft.graph.printUsageByUser",
   "openType": false
 }
 -->
