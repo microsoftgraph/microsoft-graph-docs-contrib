@@ -1016,7 +1016,7 @@
         {
           "Id": "8edd9cea-d04c-4a1b-8c50-68270332a880",
           "ApiChange": "Resource",
-          "ChangedApiName": "b2cPolicy,Get b2cAuthenticationMethodsPolicy,Update b2cAuthenticationMethodsPolicy",
+          "ChangedApiName": "b2cAuthenticationMethodsPolicy,Get b2cAuthenticationMethodsPolicy,Update b2cAuthenticationMethodsPolicy",
           "ChangeType": "Addition",
           "Description": "Added the [b2cAuthenticationMethodsPolicy](https://docs.microsoft.com/en-us/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta) resource type and the following opertations: [Get b2cAuthenticationMethodsPolicy](https://docs.microsoft.com/en-us/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta) and [Update b2cAuthenticationMethodsPolicy](https://docs.microsoft.com/en-us/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta).",
           "Target": "b2cAuthenticationMethodsPolicy,Get b2cAuthenticationMethodsPolicy,Update b2cAuthenticationMethodsPolicy"
