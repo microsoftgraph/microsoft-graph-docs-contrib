@@ -28,6 +28,7 @@ Namespace: microsoft.graph
 |reportOnlyNotApplied|
 |reportOnlyInterrupted|
 
+
 ### authenticationMethodFeature values 
 
 
@@ -39,6 +40,15 @@ Namespace: microsoft.graph
 |ssprCapable|
 |passwordlessCapable|
 |mfaCapable|
+
+### authenticatorAppFeatureSettings values 
+
+
+
+|Member|
+|:---|
+|requireNumberMatching|
+|unknownFutureValue|
 
 ### authMethodsType values 
 
