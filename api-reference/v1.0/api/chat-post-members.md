@@ -68,9 +68,6 @@ content-type: application/json
 ```
 
 
----
-
-
 #### Response
 
 Here is an example of the response.
@@ -108,8 +105,6 @@ Content-type: application/json
     "user@odata.bind": "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
 }
 ```
-
----
 
 
 #### Response
@@ -150,11 +145,6 @@ content-type: application/json
     "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z"
 }
 ```
-
----
-
-
----
 
 
 #### Response

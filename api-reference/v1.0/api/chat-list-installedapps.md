@@ -71,8 +71,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 GET https://graph.microsoft.com/v1.0/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20%40thread.v2/installedApps
 ```
 
----
-
 
 #### Response
 
@@ -204,8 +202,6 @@ The following is an example of the request. In the example, the manifest ID of t
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20%40thread.v2/installedApps?$expand=teamsApp,teamsAppDefinition&$filter=teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'
 ```
-
----
 
 
 #### Response

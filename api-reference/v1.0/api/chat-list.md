@@ -66,10 +66,6 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats
 ```
 
----
-
-
----
 
 #### Response
 
@@ -128,10 +124,6 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats?$expand=members
 ```
 
----
-
-
----
 
 #### Response
 
@@ -286,10 +278,6 @@ Here is an example of a request that will filter all the chats based on a specif
 GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats?$expand=members&$filter=members/any(o: o/displayname eq 'Peter Parker')
 ```
 
----
-
-
----
 
 #### Response
 

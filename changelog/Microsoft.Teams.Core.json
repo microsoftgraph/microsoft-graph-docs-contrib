@@ -3,20 +3,62 @@
     {
       "ChangeList": [
         {
-          "Id": "0b8f6f74-6c96-11eb-8401-e19c685756df",
-          "ApiChange": "Resource",
-          "ChangedApiName": "conversationMember",
+          "Id": "df2ac698-353d-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
           "ChangeType": "Addition",
-          "Description": "Added the [conversationMember](https://docs.microsoft.com/en-us/graph/api/resources/conversationMember?view=graph-rest-1.0) resource type.",
-          "Target": "conversationMember"
-        }, {
-          "Id": "0b91d4c8-6c96-11eb-8401-e19c685756df",
-          "ApiChange": "Resource",
-          "ChangedApiName": "aadUserConversationMember",
-          "ChangeType": "Addition",
-          "Description": "Added the [aadUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/aadUserConversationMember?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **tenantId** property to [aadUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/aadUserConversationMember?view=graph-rest-1.0) resource",
           "Target": "aadUserConversationMember"
-        }, {
+        },
+        {
+          "Id": "df2d2808-353d-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Property",
+          "ChangedApiName": "visibleHistoryStartDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **visibleHistoryStartDateTime** property to [conversationMember](https://docs.microsoft.com/en-us/graph/api/resources/conversationMember?view=graph-rest-1.0) resource",
+          "Target": "conversationMember"
+        },
+        {
+          "Id": "a0a2d994-e70d-45b9-8b43-20da79eef2d9",
+          "ApiChange": "Property",
+          "ChangedApiName": "List chats, Create chat, Get chat, Update chat, List chat members, Add chat member, Get chat member, Remove chat member, List apps in chat, Get app in chat, Add app in chat, Upgrade app in chat, Uninstall app from chat, List tabs in chat, Get tab in chat, Add tab to chat, Update tab in chat, Remove tab from chat",
+          "ChangeType": "Addition",
+          "Description": "Added the **topic**, **createdDateTime**, **lastUpdatedDateTime**, **chatType**, **members**, **installedApps**, **tabs** properties to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "df2ac698-353d-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "method",
+          "ChangedApiName": "List chat members, Add chat member, Get chat member, Remove chat member",
+          "ChangeType": "Addition",
+          "Description": "Added the following methods to the [conversationMember](https://docs.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-1.0&preserve-view=true) resource: <ul><li>[List chat members](https://docs.microsoft.com/en-us/graph/api/chat-list-members?view=graph-rest-1.0&preserve-view=true)</li><li>[Add chat member](https://docs.microsoft.com/en-us/graph/api/chat-post-members?view=graph-rest-1.0&preserve-view=true)</li><li>[Get chat member](https://docs.microsoft.com/en-us/graph/api/chat-get-members?view=graph-rest-1.0&preserve-view=true)</li><li>[Remove chat member](https://docs.microsoft.com/en-us/graph/api/chat-delete-members?view=graph-rest-1.0&preserve-view=true)</li></ul>",
+          "Target": "List chat members, Add chat member, Get chat member, Remove chat member"
+        },
+        {
+          "Id": "df2ac698-353d-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "method",
+          "ChangedApiName": "List chats, Create chat, Get chat, Update chat",
+          "ChangeType": "Addition",
+          "Description": "Added the following methods to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0&preserve-view=true) resource: <ul><li>[List chats](https://docs.microsoft.com/en-us/graph/api/chat-list?view=graph-rest-1.0&preserve-view=true)</li><li>[Create chat](https://docs.microsoft.com/en-us/graph/api/chat-post?view=graph-rest-1.0&preserve-view=true)</li><li>[Get chat](https://docs.microsoft.com/en-us/graph/api/chat-get?view=graph-rest-1.0&preserve-view=true)</li><li>[Update chat](https://docs.microsoft.com/en-us/graph/api/chat-patch?view=graph-rest-1.0&preserve-view=true)</li></ul>",
+          "Target": "List chats, Create chat, Get chat, Update chat"
+        },
+        {
+          "Id": "df2ac698-353d-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "method",
+          "ChangedApiName": "List apps in chat, Get app in chat, Add app in chat, Upgrade app in chat, Uninstall app from chat",
+          "ChangeType": "Addition",
+          "Description": "Added the following methods to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0&preserve-view=true) resource: <ul><li>[List apps in chat](https://docs.microsoft.com/en-us/graph/api/chat-list-installedapps?view=graph-rest-1.0&preserve-view=true)</li><li>[Get app in chat](https://docs.microsoft.com/en-us/graph/api/chat-get-installedapps?view=graph-rest-1.0&preserve-view=true)</li><li>[Add app in chat](https://docs.microsoft.com/en-us/graph/api/chat-post-installedapps?view=graph-rest-1.0&preserve-view=true)</li><li>[Upgrade app in chat](https://docs.microsoft.com/en-us/graph/api/chat-teamsappinstallation-upgrade?view=graph-rest-1.0&preserve-view=true)</li><li>[Uninstall app from chat](https://docs.microsoft.com/en-us/graph/api/chat-delete-installedapps?view=graph-rest-1.0&preserve-view=true)</li></ul>",
+          "Target": "List apps in chat, Get app in chat, Add app in chat, Upgrade app in chat, Uninstall app from chat"
+        },
+        {
+          "Id": "df2ac698-353d-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "method",
+          "ChangedApiName": "List tabs in chat, Get tab in chat, Add tab to chat, Update tab in chat, Remove tab from chat",
+          "ChangeType": "Addition",
+          "Description": "Added the following methods to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0&preserve-view=true) resource: <ul><li>[List tabs in chat](https://docs.microsoft.com/en-us/graph/api/chat-list-tabs?view=graph-rest-1.0&preserve-view=true)</li><li>[Get tab in chat](https://docs.microsoft.com/en-us/graph/api/chat-get-tabs?view=graph-rest-1.0&preserve-view=true)</li><li>[Add tab to chat](https://docs.microsoft.com/en-us/graph/api/chat-post-tabs?view=graph-rest-1.0&preserve-view=true)</li><li>[Update tab in chat](https://docs.microsoft.com/en-us/graph/api/chat-patch-tabs?view=graph-rest-1.0&preserve-view=true)</li><li>[Remove tab from chat](https://docs.microsoft.com/en-us/graph/api/chat-delete-tabs?view=graph-rest-1.0&preserve-view=true)</li></ul>",
+          "Target": "List tabs in chat, Get tab in chat, Add tab to chat, Update tab in chat, Remove tab from chat"
+        },
+        {
           "Id": "0bc56bd0-6c96-11eb-8401-e19c685756df",
           "ApiChange": "Enum type",
           "ChangedApiName": "chatType",

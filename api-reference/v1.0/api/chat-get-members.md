@@ -54,7 +54,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.
 
 > [!NOTE]
-> There are some known issues with this functionality. For details, see [known issues](/graph/known-issues.md#missing-tenantid-for-chat-members).
+> There are some known issues with this functionality. For details, see [known issues](/graph/known-issues#missing-tenantid-for-chat-members).
 
 ## Example
 
@@ -70,10 +70,6 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/141c574c-dd90-4131-b173-baf4bb0e894e
 ```
 
----
-
-
----
 
 ### Response
 

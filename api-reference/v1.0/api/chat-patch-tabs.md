@@ -65,7 +65,6 @@ Content-length: 211
 }
 ```
 
----
 
 #### Response
 
