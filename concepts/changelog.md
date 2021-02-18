@@ -13,13 +13,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## February 2021
 
-### Teamwork
-
-| **Change type** | **Version** | **Description** |
-|:---|:---|:---|
-|Addition|v1.0|Added the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource type.|
-|Addition|v1.0|Added the **chatType** enumeration type.|
-
 ### Tasks and plans
 
 | **Change type** | **Version** | **Description** |
