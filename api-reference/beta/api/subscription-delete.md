@@ -2,9 +2,9 @@
 title: "Delete subscription"
 description: "Delete a subscription."
 localization_priority: Normal 
-author: "davidmu1"
+author: "Jumaodhiss"
 doc_type: apiPageType 
-ms.prod: "microsoft-identity-platform"
+ms.prod: "change-notifications"
 ---
 
 # Delete subscription

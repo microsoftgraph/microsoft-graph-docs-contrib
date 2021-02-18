@@ -2,8 +2,8 @@
 title: "Get subscription"
 description: "Retrieve the properties and relationships of a subscription."
 localization_priority: Priority
-author: "davidmu1"
-ms.prod: ""
+author: "Jumaodhiss"
+ms.prod: "change-notifications"
 doc_type: apiPageType
 ---
 

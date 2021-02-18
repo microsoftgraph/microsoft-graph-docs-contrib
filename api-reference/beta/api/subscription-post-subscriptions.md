@@ -2,7 +2,7 @@
 title: "Create subscription"
 description: "Subscribes a listener application to receive change notifications when data on a Microsoft Graph resource changes."
 localization_priority: Normal
-author: "davidmu1"
+author: "Jumaodhiss"
 doc_type: apiPageType
 ms.prod: "change-notifications"
 ---
