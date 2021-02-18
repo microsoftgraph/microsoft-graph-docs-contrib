@@ -54,6 +54,7 @@ You can use several properties to customize the component.
 | user-id         | userId         | Set to a user id to fetch that user's details and image from Microsoft Graph.|
 | person-query    | personQuery    | Set to a name or email of a person to search for a person in Microsoft Graph and fetch the first person's details and image.|
 | person-details  | personDetails  | Set to an object representing a person. Works with object from the people, users, contacts, or group, resources. |
+| fallback-details| fallbackDetails| Set to an object representing a person when no user/person/contact is found in the graph.
 | person-image    | personImage    | Set the image to show for the person. |
 | person-presence | personPresence | Set the presence for the person. |
 | fetch-image     | fetchImage     | Set flag to fetch `personImage` automatically from Microsoft Graph based on the `personDetails` object provided by the user. |
