@@ -1,6 +1,24 @@
 {
   "changelog": [
     {
+      "ChangeList": [
+        {
+          "Id": "f1ba54fc-500b-4c9a-be59-6cc31c254f55",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftAuthenticatorAuthenticationMethodTarget",
+          "ChangeType": "Change",
+          "Description": "Changed [microsoftAuthenticatorAuthenticationMethodTarget](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodtarget?view=graph-rest-beta) entity for requiring number matching.",
+          "Target": "microsoftAuthenticatorAuthenticationMethodTarget"
+        }
+      ],
+      "Id": "bc6921dd-06a2-4b53-8afb-04a0d090e519",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-18T00:00:00",
+      "WorkloadArea": "Identity and access ",
+      "SubArea": "Identity and sign-in"
+    },
+    {
      "ChangeList": [
         {
       "Id": "0ab336b4-a823-4dd7-819d-72d076a8b881",
@@ -965,7 +983,7 @@
         {
           "Id": "8edd9cea-d04c-4a1b-8c50-68270332a880",
           "ApiChange": "Resource",
-          "ChangedApiName": "b2cAuthenticationMethodsPolicy,Get b2cAuthenticationMethodsPolicy,Update b2cAuthenticationMethodsPolicy",
+          "ChangedApiName": "b2cPolicy,Get b2cAuthenticationMethodsPolicy,Update b2cAuthenticationMethodsPolicy",
           "ChangeType": "Addition",
           "Description": "Added the [b2cAuthenticationMethodsPolicy](https://docs.microsoft.com/en-us/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta) resource type and the following opertations: [Get b2cAuthenticationMethodsPolicy](https://docs.microsoft.com/en-us/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta) and [Update b2cAuthenticationMethodsPolicy](https://docs.microsoft.com/en-us/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta).",
           "Target": "b2cAuthenticationMethodsPolicy,Get b2cAuthenticationMethodsPolicy,Update b2cAuthenticationMethodsPolicy"
