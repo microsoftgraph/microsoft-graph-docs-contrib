@@ -30,6 +30,13 @@ A record of a "final state" (completed, aborted or failed) print job that is use
 
 The following is a JSON representation of the resource.
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.archivedPrintJob"
+}-->
 ```json
 	{	
   "@odata.type": "#microsoft.graph.archivedPrintJob",	
