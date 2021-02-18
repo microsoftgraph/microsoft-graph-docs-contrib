@@ -49,6 +49,7 @@ It is available on the source property of [driveItem][item-resource] resources.
 | oneDrive            | The application is OneDrive.                      |
 | stream              | The application is Stream.                        |
 | powerPoint          | The application is PowerPoint                     |
+| office              | The application is Office                         |
 | unknownFutureValue  | Marker value for future compatibility.            |
 
 ## Remarks

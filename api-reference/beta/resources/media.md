@@ -32,7 +32,7 @@ It is available on the media property of [driveItem][item-resource] resources.
 
 | Property                 | Type                  | Description                                                                                                   |
 | :----------------------- | :-------------------- | :------------------------------------------------------------------------------------------------------------ 
-| **isTranscriptionShown** | boolean               | Indicates whether the transcription is shown. Read-Write.                                                     |
+| **isTranscriptionShown** | boolean               | If a file has a transcript, this setting controls if the closed captions / transcription for the media file should be shown to people during viewing. Read-Write.                                                    |
 | **mediaSource**          | [mediaSource](mediaSource.md)         | Information about the source of media. Read-only.                                                             | 
 
 ## Remarks
