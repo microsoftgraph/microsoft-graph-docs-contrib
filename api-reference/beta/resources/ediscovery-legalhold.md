@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Legal holds are holds that are tied to an eDiscovery case.  Legal holds should not be confused with retention holds which are used to control retention policies of content on Microsoft 365. eDiscovery legal holds are for holding content indefinitely for Litigation, internal investigations, and other legal actions where content needs to be protected against deletion.  For more information about eDiscovery Holds, see [Manage holds in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/managing-holds)
+Represents a legal hold. Legal holds are holds that are tied to an eDiscovery case. Legal holds should not be confused with retention holds, which are used to control retention policies for Microsoft 365 content. eDiscovery legal holds are for holding content indefinitely for litigation, internal investigations, and other legal actions where content needs to be protected against deletion. For more information, see [Manage holds in Advanced eDiscovery](/microsoft-365/compliance/managing-holds)
 
 Inherits from [entity](../resources/entity.md).
 
@@ -21,21 +21,21 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List legalHolds](../api/ediscovery-case-list-legalholds.md)|[microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md) collection|Get a list of the [microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md) objects and their properties.|
-|[Create legalHold](../api/ediscovery-case-post-legalholds.md)|[microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md)|Create a new [microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md) object.|
-|[Get legalHold](../api/ediscovery-legalhold-get.md)|[microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md)|Read the properties and relationships of a [microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md) object.|
-|[Update legalHold](../api/ediscovery-legalhold-update.md)|[microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md)|Update the properties of a [microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md) object.|
-|[Delete legalHold](../api/ediscovery-legalhold-delete.md)|None|Deletes a [microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md) object.|
-|[List siteSources](../api/ediscovery-legalhold-list-sitesources.md)|[microsoft.graph.ediscovery.siteSource](../resources/ediscovery-sitesource.md) collection|Get the siteSource resources from the siteSources navigation property.|
+|[List legalHolds](../api/ediscovery-case-list-legalholds.md)|[microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md) collection|Get a list of the  **legalHold** objects and their properties.|
+|[Create legalHold](../api/ediscovery-case-post-legalholds.md)|[microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md)|Create a new **legalHold** object.|
+|[Get legalHold](../api/ediscovery-legalhold-get.md)|[microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md)|Read the properties and relationships of a **legalHold** object.|
+|[Update legalHold](../api/ediscovery-legalhold-update.md)|[microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md)|Update the properties of a **legalHold** object.|
+|[Delete legalHold](../api/ediscovery-legalhold-delete.md)|None|Delete a **legalHold** object.|
+|[List siteSources](../api/ediscovery-legalhold-list-sitesources.md)|[microsoft.graph.ediscovery.siteSource](../resources/ediscovery-sitesource.md) collection|Get the list of [siteSource](../resources/ediscovery-sitesource.md) objecs associated with a legal hold.|
 |[Create siteSource](../api/ediscovery-legalhold-post-sitesources.md)|[microsoft.graph.ediscovery.siteSource](../resources/ediscovery-sitesource.md)|Create a new siteSource object.|
-|[List userSources](../api/ediscovery-legalhold-list-usersources.md)|[microsoft.graph.ediscovery.userSource](../resources/ediscovery-usersource.md) collection|Get the userSource resources from the userSources navigation property.|
-|[Create userSource](../api/ediscovery-legalhold-post-usersources.md)|[microsoft.graph.ediscovery.userSource](../resources/ediscovery-usersource.md)|Create a new userSource object.|
+|[List userSources](../api/ediscovery-legalhold-list-usersources.md)|[microsoft.graph.ediscovery.userSource](../resources/ediscovery-usersource.md) collection|Get the list of [userSource](../resources/ediscovery-usersource.md) objects associated with a legal hold.|
+|[Create userSource](../api/ediscovery-legalhold-post-usersources.md)|[microsoft.graph.ediscovery.userSource](../resources/ediscovery-usersource.md)|Create a new **userSource** object.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|contentQuery|String|KQL query that specifies content to be held in the specified locations - to learn more about KQL in eDiscovery see [Keyword queries and search conditions for Content Search and eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions).  To hold all content in the specified locations, leave contentQuery blank. |
+|contentQuery|String|KQL query that specifies content to be held in the specified locations - to learn more about KQL in eDiscovery see [Keyword queries and search conditions for Content Search and eDiscovery](/microsoft-365/compliance/keyword-queries-and-search-conditions).  To hold all content in the specified locations, leave **contentQuery** blank. |
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the legal hold. |
 |createdDateTime|DateTimeOffset|The date and time the legal hold was created. |
 |description|String| The legal hold description. |
@@ -52,7 +52,7 @@ Inherits from [entity](../resources/entity.md).
 |Member|Description|
 |:---|-----------|
 |Pending| The hold distribution process is in progress. |
-|Error| There was an error when the hold was applied, See legalHold errors for more detailed information. |
+|Error| There was an error when the hold was applied. For details, see legalHold errors. |
 |Success| The hold was successfully applied and is holding the specified content. |
 
 ## Relationships
