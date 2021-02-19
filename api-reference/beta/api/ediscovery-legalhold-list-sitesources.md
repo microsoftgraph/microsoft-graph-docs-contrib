@@ -1,6 +1,6 @@
 ---
 title: "List legalHold siteSources"
-description: "Get the siteSource resources from the siteSources navigation property."
+description: "Get the list of siteSource objecs associated with a legal hold."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the legalHold siteSource resources from the siteSources navigation property.
+Get the list of [siteSource](../resources/ediscovery-sitesource.md) objecs associated with a legal hold.
 
 ## Permissions
 
