@@ -20,6 +20,15 @@ Namespace: microsoft.graph
 |disabled|
 |unknownFutureValue|
 
+### externalEmailOtpState values
+
+|Member|
+|:---|
+|default|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
 ### authenticatorAppContextType values
 
 |Member|
@@ -56,6 +65,14 @@ Namespace: microsoft.graph
 |disabled|
 
 ### keyStrength values
+
+|Member|
+|:---|
+|normal|
+|weak|
+|unknown|
+
+### authenticationMethodKeyStrength values
 
 |Member|
 |:---|
