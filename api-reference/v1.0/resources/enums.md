@@ -11,7 +11,7 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
-### externalEmailOtpState values
+### allowExternalIdToUseEmailOtp values
 
 |Member|
 |:---|
@@ -55,7 +55,7 @@ Namespace: microsoft.graph
 |enabled|
 |disabled|
 
-### authenticationMethodKeyStrength values
+### keyStrength values
 
 |Member|
 |:---|
