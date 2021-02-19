@@ -45,11 +45,13 @@ PATCH /compliance/ediscovery/cases/{caseId}/tags/{tagId}
 
 ## Request body
 
-In the request body, supply a JSON representation of the [tag](../resources/ediscovery-tag.md) object.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-The following table shows the properties that are required when you update the [tag](../resources/ediscovery-tag.md).
-
-None
+|Property|Type|Description|
+|:---|:---|:---|
+|childSelectability|microsoft.graph.ediscovery.childSelectability|Indicates whether a single or multiple child tags can be associated with a document. Possible values are: `One`, `Many`.  This value controls whether the UX presents the tags as checkboxes or a radio button group.|
+|description|String|The description for the tag.|
+|displayName|String|Display name of the tag.|
 
 ## Response
 

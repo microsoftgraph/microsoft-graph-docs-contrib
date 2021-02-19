@@ -45,11 +45,11 @@ PATCH /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}
 
 ## Request body
 
-In the request body, supply a JSON representation of the [custodian](../resources/ediscovery-custodian.md) object.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-The following table lists the properties of a [custodian](../resources/ediscovery-custodian.md) object that can be modified.
-
-None
+|Property|Type|Description|
+|:---|:---|:---|
+|applyHoldToSources|Boolean|Identifies whether a custodian's sources were placed on hold during creation.|
 
 ## Response
 
