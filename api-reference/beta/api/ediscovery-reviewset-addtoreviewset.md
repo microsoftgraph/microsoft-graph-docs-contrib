@@ -1,6 +1,6 @@
 ---
 title: "reviewSet: addToReviewSet"
-description: "Starts the process of adding a collection from M365 services to a review set"
+description: "Start the process of adding a collection from Microsoft 365 services to a review set."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Starts the process of adding a collection from M365 services to a review set. Once the operation is created, you can retrieve the status of the operation by retrieving the Location parameter from the response headers, the location provides a URL that will return a [caseExportOperation](../resources/ediscovery-caseexportoperation.md).
+Start the process of adding a collection from Microsoft 365 services to a review set. After the operation is created, you can get the status of the operation by retrieving the Location parameter from the response headers. The location provides a URL that will return a [caseExportOperation](../resources/ediscovery-caseexportoperation.md).
 
 ## Permissions
 
@@ -51,15 +51,15 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|sourceCollection|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|The ID of the **sourceCollection**|
-|additionalData|dataCollectionScope|The **dataCollectionScope** that will be included with the collection|
+|sourceCollection|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|The ID of the **sourceCollection**.|
+|additionalData|microsoft.graph.ediscovery.dataCollectionScope|The **dataCollectionScope** that will be included with the collection.|
 
 ### dataCollectionScope values
 
 |Member|Description|
 |:----|-----------|
-|allVersions|Include all versions of files from sites|
-|linkedFiles|Include **cloud attachment** with emails in the collection|
+|allVersions|Include all versions of files from sites.|
+|linkedFiles|Include **cloud attachment** with emails in the collection.|
 
 ## Response
 
@@ -90,7 +90,6 @@ Content-length: 531
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
