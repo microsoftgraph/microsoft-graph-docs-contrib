@@ -1,6 +1,6 @@
 ---
 title: "reviewSetQuery: applyTags"
-description: "Apply tags to documents that match the specified query"
+description: "Apply tags to documents that match the specified query."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Apply tags to documents that match the specified query. Once the operation is created, you can retrieve the status of the operation by retrieving the Location parameter from the response headers, the location provides a URL that will return a [caseExportOperation](../resources/ediscovery-caseexportoperation.md).
+Apply tags to documents that match the specified query. After the operation is created, you can get the status of the operation by retrieving the `Location` parameter from the response headers. The location provides a URL that will return a [caseExportOperation](../resources/ediscovery-caseexportoperation.md).
 
 ## Permissions
 
@@ -51,8 +51,8 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|tagsToAdd|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Ids of tags to add to the documents that match the query.|
-|tagsToRemove|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Ids of tags to add to the documents that match the query.|
+|tagsToAdd|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|IDs of tags to add to the documents that match the query.|
+|tagsToRemove|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|IDs of tags to remove from the documents that match the query.|
 
 ## Response
 
@@ -84,7 +84,6 @@ Content-length: 778
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
