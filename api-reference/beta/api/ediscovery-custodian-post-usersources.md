@@ -62,8 +62,6 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 ### Request
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "create_usersource_from_"
