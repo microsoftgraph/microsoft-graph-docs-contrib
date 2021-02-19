@@ -1,6 +1,6 @@
 ---
 title: "Delete sourceCollection"
-description: "Deletes a sourceCollection object."
+description: "Delete a sourceCollection object."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [sourceCollection](../resources/ediscovery-sourcecollection.md) object.
+Delete a [sourceCollection](../resources/ediscovery-sourcecollection.md) object.
 
 ## Permissions
 
@@ -66,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sou
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
