@@ -27,10 +27,10 @@ None
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Created date and time of the dataSourceContainer entity.|
 |displayName|String|Display name of the dataSourceContainer entity.|
-|id|String|Unique identifier of the dataSourceContainer. Inherited from [entity](../resources/ediscovery-entity.md)|
+|id|String|Unique identifier of the dataSourceContainer. Inherited from [entity](../resources/entity.md)|
 |lastModifiedDateTime|DateTimeOffset|Last modified date and time of the dataSourceContainer.|
 |releasedDateTime|DateTimeOffset|Date and time that the dataSourceContainer was released from the case.|
-|status|dataSourceContainerStatus|Latest status of the dataSourceContainer. Possible values are: `Active`, `Released`.|
+|status|microsoft.graph.ediscovery.dataSourceContainerStatus|Latest status of the dataSourceContainer. Possible values are: `Active`, `Released`.|
 
 ### dataSourceContainerStatus values
 

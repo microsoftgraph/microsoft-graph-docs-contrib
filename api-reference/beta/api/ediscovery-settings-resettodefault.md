@@ -75,6 +75,7 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/setti
 
 ``` http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('5b840b94-f821-4c4a-8cad-3a90062bf51a')/settings/$entity",

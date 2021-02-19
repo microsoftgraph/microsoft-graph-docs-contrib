@@ -69,8 +69,7 @@ If successful, this method returns a `201 Created` response code and a [noncusto
 -->
 
 ``` http
-
-POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/noncustodialDataSources
+POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/5b840b94-f821-4c4a-8cad-3a90062bf51a/noncustodialDataSources
 Content-Type: application/json
 Content-length: 206
 
