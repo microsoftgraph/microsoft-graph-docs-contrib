@@ -1,9 +1,9 @@
 ---
 title: "ocrSettings resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "OCR settings for an eDiscovery case"
+author: "mahage-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -13,25 +13,29 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The OCR (Optical Character Recognition) settings for the eDiscovery case.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|**TODO: Add Description**|
-|maxImageSize|Int32|**TODO: Add Description**|
-|timeout|Duration|**TODO: Add Description**|
+|isEnabled|Boolean|Indicates whether or not OCR is enabled for the case.|
+|maxImageSize|Int32|Maximum image size that will be processed in KB).|
+|timeout|Duration|The timeout duration for the OCR engine. A longer timeout may increase success of OCR, but may add to the total processing time.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.ediscovery.ocrSettings"
 }
 -->
+
 ``` json
 {
   "@odata.type": "#microsoft.graph.ediscovery.ocrSettings",
@@ -40,4 +44,3 @@ The following is a JSON representation of the resource.
   "timeout": "String (duration)"
 }
 ```
-

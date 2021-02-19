@@ -1,9 +1,9 @@
 ---
 title: "redundancyDetectionSettings resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Redundancy settings for an eDiscovery case"
+author: "mahage-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -13,26 +13,30 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Redundancy (email threading and near duplicate detection) settings for an eDiscovery case.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|**TODO: Add Description**|
-|maxWords|Int32|**TODO: Add Description**|
-|minWords|Int32|**TODO: Add Description**|
-|similarityThreshold|Int32|**TODO: Add Description**|
+|isEnabled|Boolean|Indicates whether email threading and near duplicate detection are enabled.|
+|maxWords|Int32|See [Minimum/maximum number of words](https://docs.microsoft.com/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading) to learn more.|
+|minWords|Int32|See [Minimum/maximum number of words](https://docs.microsoft.com/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading) to learn more.|
+|similarityThreshold|Int32|See [Document and email similarity threshold](https://docs.microsoft.com/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading) to learn more.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.ediscovery.redundancyDetectionSettings"
 }
 -->
+
 ``` json
 {
   "@odata.type": "#microsoft.graph.ediscovery.redundancyDetectionSettings",
@@ -42,4 +46,3 @@ The following is a JSON representation of the resource.
   "maxWords": "Integer"
 }
 ```
-

@@ -1,9 +1,9 @@
 ---
 title: "settings resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Settings for an eDiscovery case"
+author: "mahage-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -13,33 +13,33 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Settings for an eDiscovery case.  See [Configure search and analytics settings in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery) to learn more.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List settings](../api/settings-list.md)|[settings](../resources/ediscovery-settings.md) collection|Get a list of the [settings](../resources/settings.md) objects and their properties.|
-|[Create settings](../api/ediscovery-settings-create.md)|[settings](../resources/ediscovery-settings.md)|Create a new [settings](../resources/ediscovery-settings.md) object.|
 |[Get settings](../api/ediscovery-settings-get.md)|[settings](../resources/ediscovery-settings.md)|Read the properties and relationships of a [settings](../resources/ediscovery-settings.md) object.|
 |[Update settings](../api/ediscovery-settings-update.md)|[settings](../resources/ediscovery-settings.md)|Update the properties of a [settings](../resources/ediscovery-settings.md) object.|
-|[Delete settings](../api/ediscovery-settings-delete.md)|None|Deletes a [settings](../resources/ediscovery-settings.md) object.|
-|[resetToDefault](../api/ediscovery-settings-resettodefault.md)|None|**TODO: Add Description**|
+|[resetToDefault](../api/ediscovery-settings-resettodefault.md)|None|Resets all settings to the default values|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/ediscovery-entity.md)|
-|ocr|[ocrSettings](../resources/ediscovery-ocrsettings.md)|**TODO: Add Description**|
-|redundancyDetection|[redundancyDetectionSettings](../resources/ediscovery-redundancydetectionsettings.md)|**TODO: Add Description**|
-|topicModeling|[topicModelingSettings](../resources/ediscovery-topicmodelingsettings.md)|**TODO: Add Description**|
+|id|String|The Id of the eDiscovery case. Inherited from [entity](../resources/ediscovery-entity.md)|
+|ocr|[ocrSettings](../resources/ediscovery-ocrsettings.md)|The OCR (Optical Character Recognition) settings for the case.|
+|redundancyDetection|[redundancyDetectionSettings](../resources/ediscovery-redundancydetectionsettings.md)|The redundancy (near duplicate and email threading) detection settings for the case.|
+|topicModeling|[topicModelingSettings](../resources/ediscovery-topicmodelingsettings.md)|The Topic Modeling (Themes) settings for the case.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -49,6 +49,7 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
+
 ``` json
 {
   "@odata.type": "#microsoft.graph.ediscovery.settings",
@@ -64,4 +65,3 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-
