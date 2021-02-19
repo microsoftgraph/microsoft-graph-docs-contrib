@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the last [addToReviewSetOperation]() object associated with a source collection. 
+Get the last [addToReviewSetOperation](../resources/ediscovery-addtoreviewsetoperation.md) object associated with a source collection. 
 
 >**Note:** This method only lists the last operation; it does not return a history of all operations.
 
@@ -54,7 +54,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [addToReviewSetOperation](../resources/ediscovery-addtoreviewsetoperation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.ediscovery.addToReviewSetOperation](../resources/ediscovery-addtoreviewsetoperation.md) object in the response body.
 
 ## Examples
 
