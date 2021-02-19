@@ -90,8 +90,14 @@ Content-type: application/json
 Content-length: 201
 
 {
-  "id": "id-value",
-  "displayName": "display-name-value"
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "id": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
+    "roles": [ "owner" ],
+    "displayName": "Minna Pham",
+    "userId": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
+    "email": null,
+    "tenantId": "6e5147da-6a35-4275-b3f3-fc069456b6eb",
+    "visibleHistoryStartDateTime": "2019-04-18T23:51:43.255Z"
 }
 ```
 
