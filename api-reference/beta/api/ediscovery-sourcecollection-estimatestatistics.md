@@ -1,6 +1,6 @@
 ---
 title: "sourceCollection: estimateStatistics"
-description: "Executes an estimate of the source collection"
+description: "Runs an estimate of the source collection."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Executes an estimate of the source collection. To learn more about source collections, see [Collect data for a case in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/collecting-data-for-ediscovery)
+Runs an estimate of the source collection. To learn more about source collections, see [Collect data for a case in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/collecting-data-for-ediscovery).
 
-Once the estimate operation is created, you can retrieve the status of the operation by retrieving the Location parameter from the response headers, the location provides a URL that will return a [estimateStatisticsOperation](../resources/ediscovery-caseexportoperation.md)
+After the estimate operation is created, you can get the status of the operation by retrieving the `Location` parameter from the response headers. The location provides a URL that will return an [estimateStatisticsOperation](../resources/ediscovery-caseexportoperation.md).
 
 ## Permissions
 
@@ -67,8 +67,6 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sourc
 ```
 
 ### Response
-
-**Note:** The response object shown here might be shortened for readability.
 
 ## Response headers
 
