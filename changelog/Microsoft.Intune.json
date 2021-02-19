@@ -3,42 +3,82 @@
     {
       "ChangeList": [
         {
-          "Id":"814b2858-6b0e-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"settingUsage",
+          "Id":"e226595e-70aa-11eb-8401-e19c685756df",
+          "ApiChange":"Member",
+          "ChangedApiName":"exclude",
           "ChangeType":"Addition",
-          "Description":"Added the **settingUsage** property to [deviceManagementConfigurationCategory](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationCategory?view=graph-rest-beta) resource",
-          "Target":"deviceManagementConfigurationCategory"
+          "Description":"Added the `exclude` member to the **deviceAndAppManagementAssignmentFilterType** enumeration",
+          "Target":"deviceAndAppManagementAssignmentFilterType"
         },
         {
-          "Id":"814d889b-6b0e-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"parentCategoryId",
+          "Id":"e226595e-70aa-11eb-8401-e19c685756df",
+          "ApiChange":"Member",
+          "ChangedApiName":"ciscoAnyConnect",
           "ChangeType":"Addition",
-          "Description":"Added the **parentCategoryId** property to [deviceManagementConfigurationCategory](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationCategory?view=graph-rest-beta) resource",
-          "Target":"deviceManagementConfigurationCategory"
+          "Description":"Added the `ciscoAnyConnect` member to the **windows10VpnConnectionType** enumeration",
+          "Target":"windows10VpnConnectionType"
         },
         {
-          "Id":"814fed36-6b0e-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"rootCategoryId",
+          "Id":"74278eb2-715b-11eb-8401-e19c685756df",
+          "ApiChange":"Resource",
+          "ChangedApiName":"windowsKioskSingleWin32App",
           "ChangeType":"Addition",
-          "Description":"Added the **rootCategoryId** property to [deviceManagementConfigurationCategory](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationCategory?view=graph-rest-beta) resource",
-          "Target":"deviceManagementConfigurationCategory"
+          "Description":"Added the [windowsKioskSingleWin32App](https://docs.microsoft.com/en-us/graph/api/resources/intune-windowsKioskSingleWin32App?view=graph-rest-beta) resource type.",
+          "Target":"windowsKioskSingleWin32App"
         },
         {
-          "Id":"81524d6e-6b0e-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"childCategoryIds",
+          "Id":"7696100f-715b-11eb-8401-e19c685756df",
+          "ApiChange":"Enum type",
+          "ChangedApiName":"windowsEdgeKioskType",
           "ChangeType":"Addition",
-          "Description":"Added the **childCategoryIds** property to [deviceManagementConfigurationCategory](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationCategory?view=graph-rest-beta) resource",
-          "Target":"deviceManagementConfigurationCategory"
+          "Description":"Added the **windowsEdgeKioskType** enumeration type.",
+          "Target":"windowsEdgeKioskType"
+        },
+        {
+          "Id":"78cc283b-715b-11eb-8401-e19c685756df",
+          "ApiChange":"Resource",
+          "ChangedApiName":"userExperienceAnalyticsRemoteConnection",
+          "ChangeType":"Addition",
+          "Description":"Added the [userExperienceAnalyticsRemoteConnection](https://docs.microsoft.com/en-us/graph/api/resources/intune-userExperienceAnalyticsRemoteConnection?view=graph-rest-beta) resource type.",
+          "Target":"userExperienceAnalyticsRemoteConnection"
+        },
+        {
+          "Id":"79b0d65b-715b-11eb-8401-e19c685756df",
+          "ApiChange":"Resource",
+          "ChangedApiName":"userExperienceAnalyticsImpactingProcess",
+          "ChangeType":"Addition",
+          "Description":"Added the [userExperienceAnalyticsImpactingProcess](https://docs.microsoft.com/en-us/graph/api/resources/intune-userExperienceAnalyticsImpactingProcess?view=graph-rest-beta) resource type.",
+          "Target":"userExperienceAnalyticsImpactingProcess"
+        },
+        {
+          "Id":"7ab9e741-715b-11eb-8401-e19c685756df",
+          "ApiChange":"Method",
+          "ChangedApiName":"summarizeDeviceRemoteConnection",
+          "ChangeType":"Addition",
+          "Description":"Added the [summarizeDeviceRemoteConnection](https://docs.microsoft.com/en-us/graph/api/intune-userExperienceAnalyticsRemoteConnection-summarizeDeviceRemoteConnection?view=graph-rest-beta) method to the [userExperienceAnalyticsRemoteConnection](https://docs.microsoft.com/en-us/graph/api/resources/intune-userExperienceAnalyticsRemoteConnection?view=graph-rest-beta) resource.",
+          "Target":"userExperienceAnalyticsRemoteConnection"
+        },
+        {
+          "Id":"7ae992e5-715b-11eb-8401-e19c685756df",
+          "ApiChange":"Enum type",
+          "ChangedApiName":"policyPlatformType",
+          "ChangeType":"Addition",
+          "Description":"Added the **policyPlatformType** enumeration type.",
+          "Target":"policyPlatformType"
+        },
+        {
+          "Id":"7daa7bf0-715b-11eb-8401-e19c685756df",
+          "ApiChange":"Enum type",
+          "ChangedApiName":"deviceManagementExportJobLocalizationType",
+          "ChangeType":"Addition",
+          "Description":"Added the **deviceManagementExportJobLocalizationType** enumeration type.",
+          "Target":"deviceManagementExportJobLocalizationType"
         }
       ],
-      "Id":"8148c18c-6b0e-11eb-83a5-b441f1c9dab3",
+      "Id":"e226595e-70aa-11eb-8401-e19c685756df",
       "Cloud":"prd",
       "Version":"beta",
-      "CreatedDateTime":"2021-02-09T19:39:20.767Z",
+      "CreatedDateTime":"2021-02-16T23:01:20.584Z",
       "WorkloadArea":"Devices and apps",
       "SubArea":"Corporate management"
     },

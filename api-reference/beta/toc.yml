@@ -1814,7 +1814,7 @@ items:
             href: api/print-get-settings.md
           - name: Update
             href: api/print-update-settings.md
-      - name: Corporate management
+      - name: Corprate management
         href: resources/intune-graph-overview.md
         displayName: Intune
         items:
@@ -4087,6 +4087,19 @@ items:
               href: api/intune-deviceconfig-androidworkprofilewificonfiguration-delete.md
             - name: Update
               href: api/intune-deviceconfig-androidworkprofilewificonfiguration-update.md
+          - name: Aosp device owner device configuration
+            href: resources/intune-deviceconfig-aospdeviceownerdeviceconfiguration.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-list.md
+            - name: Get
+              href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-get.md
+            - name: Create
+              href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-update.md
           - name: App install control type
             href: resources/intune-deviceconfig-appinstallcontroltype.md
           - name: App list item
@@ -6346,6 +6359,8 @@ items:
               href: api/intune-deviceconfig-windowsdeliveryoptimizationconfiguration-update.md
           - name: Windows delivery optimization mode
             href: resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md
+          - name: Windows edge kiosk type
+            href: resources/intune-deviceconfig-windowsedgekiosktype.md
           - name: Windows firewall network profile
             href: resources/intune-deviceconfig-windowsfirewallnetworkprofile.md
           - name: Windows firewall rule
@@ -6425,12 +6440,16 @@ items:
             href: resources/intune-deviceconfig-windowskioskprofile.md
           - name: Windows kiosk single UWP app
             href: resources/intune-deviceconfig-windowskiosksingleuwpapp.md
+          - name: Windows kiosk single win32 app
+            href: resources/intune-deviceconfig-windowskiosksinglewin32app.md
           - name: Windows kiosk user
             href: resources/intune-deviceconfig-windowskioskuser.md
           - name: Windows kiosk UWP app
             href: resources/intune-deviceconfig-windowskioskuwpapp.md
           - name: Windows kiosk visitor
             href: resources/intune-deviceconfig-windowskioskvisitor.md
+          - name: Windows kiosk win32 app
+            href: resources/intune-deviceconfig-windowskioskwin32app.md
           - name: Windows network isolation policy
             href: resources/intune-deviceconfig-windowsnetworkisolationpolicy.md
           - name: Windows Phone 8.1 certificate profile base
@@ -6716,6 +6735,8 @@ items:
             href: resources/intune-devices-bulkmanageddeviceactionresult.md
           - name: Chassis type
             href: resources/intune-devices-chassistype.md
+          - name: Chrome o s device property
+            href: resources/intune-devices-chromeosdeviceproperty.md
           - name: Circular geofence management condition
             href: resources/intune-fencing-circulargeofencemanagementcondition.md
             items:
@@ -7965,6 +7986,19 @@ items:
               href: api/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity-update.md
           - name: User experience analytics health state
             href: resources/intune-devices-userexperienceanalyticshealthstate.md
+          - name: User experience analytics impacting process
+            href: resources/intune-devices-userexperienceanalyticsimpactingprocess.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsimpactingprocess-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsimpactingprocess-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsimpactingprocess-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsimpactingprocess-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsimpactingprocess-update.md
           - name: User experience analytics insight
             href: resources/intune-devices-userexperienceanalyticsinsight.md
           - name: User experience analytics insight severity
@@ -8015,6 +8049,21 @@ items:
               href: api/intune-devices-userexperienceanalyticsregressionsummary-update.md
             - name: summarizeDeviceRegressionPerformance
               href: api/intune-devices-userexperienceanalyticsregressionsummary-summarizedeviceregressionperformance.md
+          - name: User experience analytics remote connection
+            href: resources/intune-devices-userexperienceanalyticsremoteconnection.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsremoteconnection-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsremoteconnection-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsremoteconnection-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsremoteconnection-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsremoteconnection-update.md
+            - name: summarizeDeviceRemoteConnection
+              href: api/intune-devices-userexperienceanalyticsremoteconnection-summarizedeviceremoteconnection.md
           - name: User experience analytics resource performance
             href: resources/intune-devices-userexperienceanalyticsresourceperformance.md
             items:
@@ -8970,29 +9019,6 @@ items:
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
-          - name: Device management reports
-            href: resources/intune-shared-devicemanagementreports.md
-            items:
-            - name: Get
-              href: api/intune-reporting-devicemanagementreports-get.md
-            - name: Update
-              href: api/intune-reporting-devicemanagementreports-update.md
-            - name: getDeviceNonComplianceReport action
-              href: api/intune-reporting-devicemanagementreports-getdevicenoncompliancereport.md
-            - name: getPolicyNonComplianceReport action
-              href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancereport.md
-            - name: getPolicyNonComplianceMetadata action
-              href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancemetadata.md
-            - name: getPolicyNonComplianceSummaryReport action
-              href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancesummaryreport.md
-            - name: getSettingNonComplianceReport action
-              href: api/intune-reporting-devicemanagementreports-getsettingnoncompliancereport.md
-            - name: getReportFilters action
-              href: api/intune-reporting-devicemanagementreports-getreportfilters.md
-            - name: getHistoricalReport action
-              href: api/intune-reporting-devicemanagementreports-gethistoricalreport.md
-            - name: getCachedReport action
-              href: api/intune-reporting-devicemanagementreports-getcachedreport.md
           - name: Device management script
             href: resources/intune-shared-devicemanagementscript.md
             items:
@@ -9012,8 +9038,6 @@ items:
               href: api/intune-shared-devicemanagementscript-haspayloadlinks.md
           - name: Device platform type
             href: resources/intune-shared-deviceplatformtype.md
-          - name: Device type
-            href: resources/intune-shared-devicetype.md
           - name: Enablement
             href: resources/intune-shared-enablement.md
           - name: Enrollment availability options
@@ -9086,79 +9110,8 @@ items:
             href: resources/intune-shared-macoslobappassignmentsettings.md
           - name: macOS VPP app assignment settings
             href: resources/intune-shared-macosvppappassignmentsettings.md
-          - name: Managed device
-            href: resources/intune-shared-manageddevice.md
-            items:
-            - name: List
-              href: api/intune-policyset-manageddevice-list.md
-            - name: Get
-              href: api/intune-policyset-manageddevice-get.md
-            - name: Create
-              href: api/intune-policyset-manageddevice-create.md
-            - name: Delete
-              href: api/intune-policyset-manageddevice-delete.md
-            - name: Update
-              href: api/intune-policyset-manageddevice-update.md
-            - name: executeAction action
-              href: api/intune-devices-manageddevice-executeaction.md
-            - name: enableLostMode action
-              href: api/intune-devices-manageddevice-enablelostmode.md
-            - name: playLostModeSound action
-              href: api/intune-devices-manageddevice-playlostmodesound.md
-            - name: setDeviceName action
-              href: api/intune-devices-manageddevice-setdevicename.md
-            - name: rotateFileVaultKey action
-              href: api/intune-devices-manageddevice-rotatefilevaultkey.md
-            - name: createDeviceLogCollectionRequest action
-              href: api/intune-devices-manageddevice-createdevicelogcollectionrequest.md
-            - name: retire action
-              href: api/intune-devices-manageddevice-retire.md
-            - name: wipe action
-              href: api/intune-devices-manageddevice-wipe.md
-            - name: resetPasscode action
-              href: api/intune-devices-manageddevice-resetpasscode.md
-            - name: remoteLock action
-              href: api/intune-devices-manageddevice-remotelock.md
-            - name: requestRemoteAssistance action
-              href: api/intune-devices-manageddevice-requestremoteassistance.md
-            - name: disableLostMode action
-              href: api/intune-devices-manageddevice-disablelostmode.md
-            - name: locateDevice action
-              href: api/intune-devices-manageddevice-locatedevice.md
-            - name: bypassActivationLock action
-              href: api/intune-devices-manageddevice-bypassactivationlock.md
-            - name: rebootNow action
-              href: api/intune-devices-manageddevice-rebootnow.md
-            - name: shutDown action
-              href: api/intune-devices-manageddevice-shutdown.md
-            - name: recoverPasscode action
-              href: api/intune-devices-manageddevice-recoverpasscode.md
-            - name: cleanWindowsDevice action
-              href: api/intune-devices-manageddevice-cleanwindowsdevice.md
-            - name: logoutSharedAppleDeviceActiveUser action
-              href: api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser.md
-            - name: deleteUserFromSharedAppleDevice action
-              href: api/intune-devices-manageddevice-deleteuserfromsharedappledevice.md
-            - name: syncDevice action
-              href: api/intune-devices-manageddevice-syncdevice.md
-            - name: windowsDefenderScan action
-              href: api/intune-devices-manageddevice-windowsdefenderscan.md
-            - name: windowsDefenderUpdateSignatures action
-              href: api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md
-            - name: updateWindowsDeviceAccount action
-              href: api/intune-devices-manageddevice-updatewindowsdeviceaccount.md
-            - name: revokeAppleVppLicenses action
-              href: api/intune-devices-manageddevice-revokeapplevpplicenses.md
-            - name: rotateBitLockerKeys action
-              href: api/intune-devices-manageddevice-rotatebitlockerkeys.md
-            - name: sendCustomNotificationToCompanyPortal action
-              href: api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md
-            - name: triggerConfigurationManagerAction action
-              href: api/intune-devices-manageddevice-triggerconfigurationmanageraction.md
           - name: Managed device owner type
             href: resources/intune-shared-manageddeviceownertype.md
-          - name: Management agent type
-            href: resources/intune-shared-managementagenttype.md
           - name: MDM windows information protection policy
             href: resources/intune-shared-mdmwindowsinformationprotectionpolicy.md
             items:
@@ -9212,8 +9165,6 @@ items:
               href: api/intune-shared-mobileapptroubleshootingevent-update.md
           - name: Owner type
             href: resources/intune-shared-ownertype.md
-          - name: Policy platform type
-            href: resources/intune-shared-policyplatformtype.md
           - name: Proxied domain
             href: resources/intune-shared-proxieddomain.md
           - name: Report
