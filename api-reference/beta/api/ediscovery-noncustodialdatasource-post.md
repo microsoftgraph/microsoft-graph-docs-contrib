@@ -51,8 +51,8 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|applyHoldToSource|Boolean|**TODO: Add Description**|
-|datasource|dataSource|Either a userSource or siteSource.  For userSource, use "dataSource" : { "@odata.type" : "microsoft.compliance.ediscovery.userSource", "email" : "SMTP address"}.  For site source use "dataSource" : { "@odata.type" : "microsoft.compliance.ediscovery.siteSource", "site@odata.bind" : "siteId" }, where siteId can be derived from the site URL, e.g. `https://contoso.sharepoint.com/sites/HumanResources`, the Microsoft Graph request would be `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources`. The ID is the first GUID listed in the ID field.
+|applyHoldToSource|Boolean|Indicates if hold is applied to non-custodial data source (such as mailbox or site).|
+|datasource|dataSource|Either a userSource or siteSource.  For userSource, use "dataSource" : { "@odata.type" : "microsoft.graph.ediscovery.userSource", "email" : "SMTP address"}.  For site source use "dataSource" : { "@odata.type" : "microsoft.graph.ediscovery.siteSource", "site@odata.bind" : "siteId" }, where siteId can be derived from the site URL, e.g. `https://contoso.sharepoint.com/sites/HumanResources`, the Microsoft Graph request would be `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources`. The ID is the first GUID listed in the ID field.
 
 ## Response
 
@@ -77,7 +77,7 @@ Content-length: 206
 {
     "applyHoldToSource" : true,
     "dataSource" : {
-        "@odata.type" : "microsoft.compliance.ediscovery.userSource",
+        "@odata.type" : "microsoft.graph.ediscovery.userSource",
         "email" : "adelev@contoso.com"
     }
 }
@@ -98,18 +98,13 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('5b840b94-f821-4c4a-8cad-3a90062bf51a')/noncustodialDataSources('8e402dd7f3c94a3abc086e5d07db1c6d')/dataSource/$entity",
-    "@odata.type": "#microsoft.graph.ediscovery.userSource",
-    "displayName": "Adele Vance",
-    "createdDateTime": "2021-02-17T19:41:22.5902664Z",
-    "id": "8e402dd7f3c94a3abc086e5d07db1c6d",
-    "email": "adelev@contoso.com",
-    "includedSources": "mailbox",
-    "createdBy": {
-        "user": {
-            "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
-            "displayName": "ediscovery admin"
-        }
-    }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('5b840b94-f821-4c4a-8cad-3a90062bf51a')/noncustodialDataSources/$entity",
+    "status": "0",
+    "lastModifiedDateTime": "2021-02-19T07:02:45.7732516Z",
+    "releasedDateTime": "0001-01-01T00:00:00Z",
+    "id": "39374346363831303741353341373443",
+    "displayName": null,
+    "createdDateTime": "2021-02-19T07:02:45.4863718Z",
+    "applyHoldToSource": true
 }
 ```

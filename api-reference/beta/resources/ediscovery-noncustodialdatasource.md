@@ -36,7 +36,7 @@ I don't think this is needed
 
 |Property|Type|Description|
 |:---|:---|:---|
-|applyHoldToSource|Boolean|Indicate if hold is applied to non-custodial data source (such as mailbox or site).|
+|applyHoldToSource|Boolean|Indicates if hold is applied to non-custodial data source (such as mailbox or site).|
 |createdDateTime|DateTimeOffset|Created date and time of the nonCustodialDataSource. Inherited from [dataSourceContainer](../resources/ediscovery-datasourcecontainer.md)|
 |displayName|String|Display name of the nonCustodialDataSource. Inherited from [dataSourceContainer](../resources/ediscovery-datasourcecontainer.md)|
 |id|String|Unique identifier of the nonCustodialDataSource. Inherited from [entity](../resources/ediscovery-entity.md)|

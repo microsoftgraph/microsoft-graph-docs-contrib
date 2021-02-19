@@ -74,5 +74,27 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/setti
 -->
 
 ``` http
-HTTP/1.1 200 No Content
+HTTP/1.1 200 OK
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('5b840b94-f821-4c4a-8cad-3a90062bf51a')/settings/$entity",
+    "id": "5b840b94-f821-4c4a-8cad-3a90062bf51a",
+    "redundancyDetection": {
+        "isEnabled": true,
+        "similarityThreshold": 65,
+        "minWords": 10,
+        "maxWords": 500000
+    },
+    "topicModeling": {
+        "isEnabled": true,
+        "ignoreNumbers": true,
+        "topicCount": 100,
+        "dynamicallyAdjustTopicCount": true
+    },
+    "ocr": {
+        "isEnabled": false,
+        "maxImageSize": 24576,
+        "timeout": "PT1M"
+    }
+}
 ```
