@@ -80,7 +80,6 @@ The following is an example of the request.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/authentication/methods
-GET https://graph.microsoft.com/v1.0/users/{user principal name or ID}/authentication/methods
 ```
 
 ### Response

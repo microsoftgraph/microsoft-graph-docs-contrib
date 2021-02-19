@@ -11,7 +11,59 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
-### authenticatorAppFeatureSettings values 
+### externalEmailOtpState values
+
+|Member|
+|:---|
+|default|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
+### authenticatorAppContextType values
+
+|Member|
+|:---|
+|location|
+|app|
+
+### fido2RestrictionEnforcementType values
+
+|Member|
+|:---|
+|allow|
+|block|
+
+### attestationLevel values
+
+|Member|
+|:---|
+|attested|
+|notAttested|
+
+### authenticationMethodTargetType values
+
+|Member|
+|:---|
+|user|
+|group|
+
+### authenticationMethodState values
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+
+### authenticationMethodKeyStrength values
+
+|Member|
+|:---|
+|normal|
+|weak|
+|unknown|
+
+### authenticatorAppFeatureSettings values
 
 |Member|
 |:---|
