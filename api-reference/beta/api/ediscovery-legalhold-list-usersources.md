@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the legalHold userSource resources from the userSources navigation property.
+Get the list of [userSource](../resources/ediscovery-usersource.md) objects associated with a legal hold.
 
 ## Permissions
 
