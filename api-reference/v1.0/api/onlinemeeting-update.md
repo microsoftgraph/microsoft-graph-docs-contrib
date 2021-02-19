@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the properties of the specified [onlineMeeting](../resources/onlinemeeting.md) object.
 
 Please see [Request body](#request-body) section for the list of properties that support updating.
@@ -23,7 +21,7 @@ Please see [Request body](#request-body) section for the list of properties that
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
 | Delegated (personal Microsoft account) | Not Supported.                              |
-| Application                            | OnlineMeetings.ReadWrite.All*                |
+| Application                            | OnlineMeetings.ReadWrite.All*               |
 
 > [!IMPORTANT]
 > \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to update an online meeting on behalf of that user (user ID specified in the request path).
@@ -52,7 +50,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | Content-type  | application/json. Required. |
 
 ## Request body
-In the request body, supply the values for relevant properties that need updating.  
+In the request body, supply the values for relevant properties that need updating.
 
 ### Properties that allows updating
 | Property             | Type                                                         | Description                                                                                                                                    |
@@ -68,7 +66,7 @@ In the request body, supply the values for relevant properties that need updatin
 **Notes:**
 - The **startDateTime** and **endDateTime** must appear in pairs.
 - Provide a full list of attendees to update `participants.attendees`. For example, when adding a new attendee, please provide
-a collection including all existing attendees and the new one to be added.
+  a collection including all existing attendees and the new one to be added.
 
 
 ## Response
