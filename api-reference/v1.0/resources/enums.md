@@ -11,6 +11,13 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### authenticatorAppFeatureSettings values 
+
+|Member|
+|:---|
+|requireNumberMatching|
+|unknownFutureValue|
+
 ### activityType values
 
 |Member|
