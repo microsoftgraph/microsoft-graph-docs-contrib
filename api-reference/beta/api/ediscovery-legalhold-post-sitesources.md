@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new legalHold siteSource object.
+Adds a siteSource to a legalHold object.
 
 ## Permissions
 
