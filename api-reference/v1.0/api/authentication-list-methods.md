@@ -102,24 +102,23 @@ Content-type: application/json
 {
   "value": [
     {
-      "odata.type": "#microsoft.graph.passwordAuthenticationMethod",
-      "id": "28c10230-6103-485e-b985-444c60001490",
-      "password": null,
-      "creationDateTime": null
+      "@odata.type": "#microsoft.graph.fido2AuthenticationMethod",
+      "id": "-2_GRUg2-HYz6_1YG4YRAQ2",
+      "displayName": "Red key",
+      "creationDateTime": "2020-08-10T06:44:09Z",
+      "aaGuid": "2fc0579f-8113-47ea-b116-555a8db9202a",
+      "model": "NFC key",
+      "attestationCertificates": [
+          "dbe793efdf1945e2df25d93653a1e8a3268a9075"
+      ],
+      "attestationLevel": "attested"
     },
     {
-      "odata.type": "#microsoft.graph.phoneAuthenticationMethod",
-      "id": "3179e48a-750b-4051-897c-87b9720928f7",
-      "phoneNumber": "+1 2065555555",
-      "authenticationPhoneType": "mobile",
-      "smsSignInState": "ready"
-    },
-    {
-      "odata.type": "#microsoft.graph.phoneAuthenticationMethod",
-      "id": "b6332ec1-7057-4abe-9331-3d72feddfe41",
-      "phoneNumber": "+1 2065555556",
-      "authenticationPhoneType": "alternateMobile",
-      "smsSignInState": "notSupported"
+    "@odata.type": "#microsoft.graph.windowsHelloForBusinessAuthenticationMethod",
+    "id": "b5e01f81-1f81-b5e0-811f-e0b5811fe0b5",
+    "displayName": "Jordan's Surface Book",
+    "createdDateTime": "2020-11-27T23:12:49Z",
+    "keyStrength": "normal"
     }
   ]
 }

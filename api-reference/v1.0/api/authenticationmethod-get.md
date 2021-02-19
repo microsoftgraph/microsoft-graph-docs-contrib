@@ -99,11 +99,11 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "odata.type": "#microsoft.graph.phoneAuthenticationMethod",
-  "id": "3179e48a-750b-4051-897c-87b9720928f7",
-  "phoneNumber": "+1 2065555555",
-  "authenticationPhoneType": "mobile",
-  "smsSignInState": "ready"
+    "@odata.type": "#microsoft.graph.windowsHelloForBusinessAuthenticationMethod",
+    "id": "b5e01f81-1f81-b5e0-811f-e0b5811fe0b5",
+    "displayName": "Jordan's Surface Book",
+    "createdDateTime": "2020-11-27T23:12:49Z",
+    "keyStrength": "normal"
 }
 ```
 
