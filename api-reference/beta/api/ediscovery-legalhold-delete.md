@@ -1,6 +1,6 @@
 ---
 title: "Delete legalHold"
-description: "Deletes a legalHold object."
+description: "Delete a legalHold object."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [legalHold](../resources/ediscovery-legalhold.md) object.
+Delete a [legalHold](../resources/ediscovery-legalhold.md) object.
 
 ## Permissions
 
@@ -66,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/leg
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
