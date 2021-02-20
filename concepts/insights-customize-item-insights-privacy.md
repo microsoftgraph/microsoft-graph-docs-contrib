@@ -11,7 +11,7 @@ ms.custom: scenarios:getting-started
 
 Item insights privacy settings provide the ability to configure the visibility of insights derived from Microsoft Graph, between users and other items (such as documents or sites) in Microsoft 365. You can disable the Delve app via the pre-existing controls, but allow other insights-based experiences to continue to provide assistance.
 
-This topic focuses on customization of item insights on the organization level. How to customize on the user level see the itemInsights nav property in the [userSettings](/graph/api/resources/usersettings?view=graph-rest-beta&preserve-view=true) resource, and the [userInsightsSettings](/graph/api/resources/userinsightssettings?view=graph-rest-beta&preserve-view=true) resource.
+This article describes customizing item insights privacy in an organization. To customize item insights for a user, see the [userInsightsSettings](/graph/api/resources/userinsightssettings?view=graph-rest-beta&preserve-view=true) resource. These user-centric settings are exposed through a navigation property named **itemInsights** in the [userSettings](/graph/api/resources/usersettings?view=graph-rest-beta&preserve-view=true) resource.
 
 ## Background
 At the time of first release in 2014, Office Graph was a backend service for Delve. They shared a set of privacy controls over both the Office Graph insights and the Delve user experience. Office Graph has since evolved and become more independent and powerful, as part of every Microsoft 365 experience and of Microsoft Graph. To offer a coherent Microsoft Graph schema, Microsoft introduced an [itemInsights](/graph/api/resources/iteminsights?view=graph-rest-beta&preserve-view=true) entity which inherits all the properties of the pre-existing [officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-beta&preserve-view=true) resource, and has kept **officeGraphInsights** around for backward compatibility. The introduction of **itemInsights** also de-couples the privacy story for the two independent pieces.  
@@ -59,7 +59,7 @@ Alternatively, you can change the default and disable item insights for a specif
 ```
 
 ### Configure item insights using REST API
-As stated earlier, by default, item insights privacy settings are enabled for the entire organization. You can change the default in one of two ways:
+As stated earlier, by default, item insights privacy settings are enabled for the entire organization. These settings are exposed through a navigation property named **itemInsights** in [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta&preserve-view=true). You can change the default in one of two ways:
 
 - Disable item insights for all users in the organization, by setting the **isEnabledInOrganization** property of the [itemInsightsSettings](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) resource to `false`. 
 - Disable item insights for a _subset_ of users, by assigning these users in an Azure AD group, and setting the **disabledForGroup** property to the ID of that group. Find out more about [creating a group and adding users as members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 

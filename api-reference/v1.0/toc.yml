@@ -442,6 +442,14 @@ items:
           href: api/todotasklist-list-tasks.md
         - name: List task lists
           href: api/todo-list-lists.md
+      - name: User settings
+        items:
+        - name: User settings
+          href: resources/usersettings.md
+        - name: Get settings
+          href: api/usersettings-get.md
+        - name: Update settings
+          href: api/usersettings-update.md
     - name: Groups
       items:
       - name: Overview

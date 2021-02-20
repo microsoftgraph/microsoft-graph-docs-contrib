@@ -55,7 +55,7 @@ To learn how to get or update user settings, see [Get settings](../api/usersetti
 |:---------------|:--------|:----------|
 |shiftPreferences|[shiftPreferences](shiftpreferences.md)| The shift preferences for the user. |
 |regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| The user's preferences for languages, regional locale and date/time formatting. |
-|itemInsights|[userInsightsSettings](userinsightssettings.md)| The user's settings for the visibility of insights derived between a user and other items in Microsoft 365, such as documents or sites. [Get userInsightsSettings](../api/userinsightssettings-get.md) through this navigation property. |
+|itemInsights|[userInsightsSettings](userinsightssettings.md)| The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites. [Get userInsightsSettings](../api/userinsightssettings-get.md) through this navigation property. |
 
 ## JSON representation
 
