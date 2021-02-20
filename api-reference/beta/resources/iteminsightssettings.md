@@ -2,7 +2,7 @@
 title: "itemInsightsSettings resource type"
 description: "Represents privacy settings for itemInsights."
 localization_priority: Normal
-ms.author: "simonhul"
+author: "simonhul"
 ms.prod: "insights"
 doc_type: resourcePageType
 ---
