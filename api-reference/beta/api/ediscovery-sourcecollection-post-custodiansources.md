@@ -1,6 +1,6 @@
 ---
 title: "Add dataSource"
-description: "Add dataSource objects to a source collection."
+description: "Add custodial dataSource objects to a source collection."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
