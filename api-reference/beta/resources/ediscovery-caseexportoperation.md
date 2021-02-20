@@ -1,6 +1,6 @@
 ---
 title: "caseExportOperation resource type"
-description: "Export operation entity"
+description: "Represents the process of an eDiscovery export."
 localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**caseExportOperation** represents the process of an eDiscovery export.  The **caseExportOperation** can only be retrieved with the Location header in the response to a [reviewset export](../api/ediscovery-reviewset-export.md).
+Represents the process of an eDiscovery export. The **caseExportOperation** can only be retrieved from the `Location` header in the response to a [reviewset export](../api/ediscovery-reviewset-export.md).
 
 Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).
 
@@ -21,7 +21,7 @@ Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[getDownloadUrl](../api/ediscovery-caseexportoperation-getdownloadurl.md)|String| Returns the url for the export.|
+|[getDownloadUrl](../api/ediscovery-caseexportoperation-getdownloadurl.md)|String| Returns the URL for the export.|
 
 ## Properties
 
