@@ -1,6 +1,6 @@
 ---
 title: "List estimateStatisticsOperation"
-description: "Get the estimateStatisticsOperation resources from the lastEstimateStatisticsOperation navigation property."
+description: "Get the last estimateStatisticsOperation object associated with a source collection."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the last [estimateStatisticsOperation]() object associated with a source collection. 
+Get the last [estimateStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md) object associated with a source collection. 
 
 >**Note:** This method only lists the last operation; it does not return a history of all operations.
 
