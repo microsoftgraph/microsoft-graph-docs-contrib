@@ -1,6 +1,6 @@
 ---
 title: "Create dataSource"
-description: "Create a new dataSource object."
+description: "Add additional data sources to a source collection."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add additional sources to source collection.
+Add additional data sources to a source collection.
 
 ## Permissions
 
@@ -58,7 +58,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [dataSource](../resources/ediscovery-datasource.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) object in the response body.
 
 ## Examples
 
