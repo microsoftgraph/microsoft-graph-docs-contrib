@@ -1,6 +1,6 @@
 ---
 title: "Delete tag"
-description: "Deletes a tag object."
+description: "Delete a tag object."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [tag](../resources/ediscovery-tag.md) object.
+Delete a [tag](../resources/ediscovery-tag.md) object.
 
 ## Permissions
 
@@ -66,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
