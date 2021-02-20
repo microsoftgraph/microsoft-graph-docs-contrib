@@ -35,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|contentQuery|String|KQL query that specifies content to be held in the specified locations - to learn more about KQL in eDiscovery see [Keyword queries and search conditions for Content Search and eDiscovery](/microsoft-365/compliance/keyword-queries-and-search-conditions).  To hold all content in the specified locations, leave **contentQuery** blank. |
+|contentQuery|String|KQL query that specifies content to be held in the specified locations. To learn more, see [Keyword queries and search conditions for Content Search and eDiscovery](/microsoft-365/compliance/keyword-queries-and-search-conditions).  To hold all content in the specified locations, leave **contentQuery** blank. |
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the legal hold. |
 |createdDateTime|DateTimeOffset|The date and time the legal hold was created. |
 |description|String| The legal hold description. |
