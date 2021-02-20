@@ -1,6 +1,6 @@
 ---
 title: "List custodianSources"
-description: "Get the dataSource resources from the custodianSources navigation property."
+description: "Get the list of dataSource objects associated with a source collection."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the dataSource resources from the custodianSources navigation property.
+Get the list of [dataSource](../resources/ediscovery-datasource.md) objects associated with a source collection.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [dataSource](../resources/ediscovery-datasource.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) objects in the response body.
 
 ## Examples
 

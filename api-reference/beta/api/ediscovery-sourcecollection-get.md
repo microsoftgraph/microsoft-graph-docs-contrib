@@ -40,7 +40,7 @@ GET /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId}
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-Use #expand to expand review set operations, custodian sources and the last estimate statistics operation
+Use `$expand` to expand review set operations, custodian sources, and the last estimate statistics operation.
 
 ```http
 https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/sourcecollections/1a9b4145d8f84e39bc45a7f68c5c5119?$expand=addToReviewSetOperation,custodianSources,lastEstimateStatisticsOperation

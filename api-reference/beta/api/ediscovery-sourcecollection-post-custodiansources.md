@@ -1,19 +1,19 @@
 ---
-title: "Add dataSource"
-description: "Add custodianSources by posting to the custodianSources collection."
+title: "Add custodianSources"
+description: "Add custodial dataSource objects to a source collection."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Add dataSource
+# Add custodianSources
 
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add custodianSources by posting to the custodianSources collection.
+Add custodian [dataSource](../resources/ediscovery-datasource.md) objects to a source collection.
 
 ## Permissions
 
@@ -51,11 +51,11 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@odata.id|String|String that defines the custodial object.  See example below.|
+|@odata.id|String|String that defines the custodial object. See the example that follows.|
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and a [dataSource](../resources/ediscovery-datasource.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and a [microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) object in the response body.
 
 ## Examples
 
