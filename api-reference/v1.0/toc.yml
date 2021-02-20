@@ -1218,6 +1218,8 @@ items:
           href: api/onlinemeeting-get.md
         - name: Delete
           href: api/onlinemeeting-delete.md
+        - name: Update
+          href: api/onlinemeeting-update.md
         - name: Create or get
           href: api/onlinemeeting-createorget.md
       - name: Presence
