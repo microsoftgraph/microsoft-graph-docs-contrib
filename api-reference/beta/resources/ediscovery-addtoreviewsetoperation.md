@@ -25,7 +25,7 @@ None.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|[microsoft.graph.ediscovery.caseAction](../resources/ediscovery-caseoperation.md#caseaction-values.md)| The case action for this entity will always be `addToReviewSet`. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
+|action|[microsoft.graph.ediscovery.caseAction](../resources/ediscovery-caseoperation.md#caseaction-values)| The case action for this entity will always be `addToReviewSet`. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
 |completedDateTime|DateTimeOffset|The date and time the operation was completed. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md)|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the operation. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md)|
 |createdDateTime|DateTimeOffset|The date and time the operation was started. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md)|
