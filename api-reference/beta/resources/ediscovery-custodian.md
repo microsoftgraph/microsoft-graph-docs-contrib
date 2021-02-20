@@ -25,11 +25,11 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |[Update custodian](../api/ediscovery-custodian-update.md)|[microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md)|Update the properties of a **custodian** object.|
 |[release](../api/ediscovery-custodian-release.md)|None|Release a custodian from a case.|
 |[activate](../api/ediscovery-custodian-activate.md)|None|Reactivate a custodian that has been released from a case and make them part of the case again.|
-|[List siteSources](../api/ediscovery-custodian-list-sitesources.md)|[microsoft.graph.ediscovery.siteSource](../resources/ediscovery-sitesource.md) collection|Get the **siteSource** resources from the **siteSources** navigation property.|
+|[List siteSources](../api/ediscovery-custodian-list-sitesources.md)|[microsoft.graph.ediscovery.siteSource](../resources/ediscovery-sitesource.md) collection|Get the **siteSource** resources associated with the custodian.|
 |[Create siteSources](../api/ediscovery-custodian-post-sitesources.md)|[microsoft.graph.ediscovery.siteSource](../resources/ediscovery-sitesource.md)|Create a new **siteSource** object.|
-|[List unifiedGroupSources](../api/ediscovery-custodian-list-unifiedgroupsources.md)|[microsoft.graph.ediscovery.unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) collection|Get the **unifiedGroupSource** resources from the **unifiedGroupSources** navigation property.|
+|[List unifiedGroupSources](../api/ediscovery-custodian-list-unifiedgroupsources.md)|[microsoft.graph.ediscovery.unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) collection|Get the list of **unifiedGroupSource** resources associated with the custodian.|
 |[Create unifiedGroupSources](../api/ediscovery-custodian-post-unifiedgroupsources.md)|[microsoft.graph.ediscovery.unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md)|Create a new **unifiedGroupSource** object.|
-|[List userSources](../api/ediscovery-custodian-list-usersources.md)|[microsoft.graph.ediscovery.userSource](../resources/ediscovery-usersource.md) collection|Get the **userSource** resources from the **userSources** navigation property.|
+|[List userSources](../api/ediscovery-custodian-list-usersources.md)|[microsoft.graph.ediscovery.userSource](../resources/ediscovery-usersource.md) collection|Get the list of **userSource** resources associated with the custodian.|
 |[Create userSources](../api/ediscovery-custodian-post-usersources.md)|[microsoft.graph.ediscovery.userSource](../resources/ediscovery-usersource.md)|Create a new **userSource** object.|
 
 ## Properties
