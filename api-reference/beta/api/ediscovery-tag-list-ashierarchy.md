@@ -1,6 +1,6 @@
 ---
 title: "tag: asHierarchy"
-description: "Returns a list of tags in their hierarchial form"
+description: "Return a list of tags in hierarchial form."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns a list of tags in their hierarchial form
+Return a list of [tag](../resources/ediscovery-tag.md) objects in hierarchial form
 
 ## Permissions
 
