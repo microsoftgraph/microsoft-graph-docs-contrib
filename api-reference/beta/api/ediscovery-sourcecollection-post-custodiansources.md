@@ -1,5 +1,5 @@
 ---
-title: "Add dataSource"
+title: "Add custodianSources"
 description: "Add custodial dataSource objects to a source collection."
 author: "mahage-msft"
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Add dataSource
+# Add custodianSources
 
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add custodial [dataSource](../resources/ediscovery-datasource.md) objects to a source collection.
+Add custodian [dataSource](../resources/ediscovery-datasource.md) objects to a source collection.
 
 ## Permissions
 
