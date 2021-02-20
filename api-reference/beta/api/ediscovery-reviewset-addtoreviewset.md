@@ -52,14 +52,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |sourceCollection|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|The ID of the **sourceCollection**.|
-|additionalData|microsoft.graph.ediscovery.dataCollectionScope|The **dataCollectionScope** that will be included with the collection.|
-
-### dataCollectionScope values
-
-|Member|Description|
-|:----|-----------|
-|allVersions|Include all versions of files from sites.|
-|linkedFiles|Include **cloud attachment** with emails in the collection.|
+|additionalData|[microsoft.graph.ediscovery.dataCollectionScope](../resources/ediscovery-addtoreviewsetoperation.md#dataCollectionScope-values)|The **dataCollectionScope** that will be included with the collection.|
 
 ## Response
 
