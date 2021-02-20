@@ -11,15 +11,6 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
-### allowExternalIdToUseEmailOtp values
-
-|Member|
-|:---|
-|default|
-|enabled|
-|disabled|
-|unknownFutureValue|
-
 ### externalEmailOtpState values
 
 |Member|
