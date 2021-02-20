@@ -1,6 +1,6 @@
 ---
 title: "List addToReviewSetOperation"
-description: "Get the last addToReviewSetOperation resources from the addToReviewSetOperation navigation property."
+description: "Get the last addToReviewSetOperation object associated with a source collection."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
