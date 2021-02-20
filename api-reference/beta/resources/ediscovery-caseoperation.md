@@ -1,6 +1,6 @@
 ---
 title: "caseOperation resource type"
-description: "Case operation abstract base class"
+description: "An abstract entity that represents a long-running eDiscovery process."
 localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**caseOperation** is an abstract entity that represents a long running eDiscovery process. It contains a common set of properties that are shared amongst inheriting entities.  Entities that derive from **caseOperation** include:
+An abstract entity that represents a long-running eDiscovery process. It contains a common set of properties that are shared among inheriting entities.  Entities that derive from **caseOperation** include:
 
 - [caseExportOperation](../resources/ediscovery-caseexportoperation.md)
 - [tagOperation](../resources/ediscovery-tagoperation.md)
@@ -23,13 +23,13 @@ Inherits from [entity](../resources/entity.md).
 
 ## Methods
 
-None
+None.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|[microsoft.graph.ediscovery.caseAction](../resources/ediscovery-caseoperation#caseAction-values.md)| The type of action the operation represents. Possible values are: `contentExport`, `tag`, `convertToPdf`, `index`, `search`, `addDataToReviewSet`.|
+|action|microsoft.graph.ediscovery.caseAction| The type of action the operation represents. Possible values are: `contentExport`, `tag`, `convertToPdf`, `index`, `search`, `addDataToReviewSet`.|
 |completedDateTime|DateTimeOffset| The date and time the operation was completed. |
 |createdBy|[identitySet](../resources/identityset.md)| The user that created the operation. |
 |createdDateTime|DateTimeOffset| The date and time the operation was created. |
@@ -42,11 +42,11 @@ None
 
 |Member|Description|
 |:----|-----------|
-| `contentExport` | The operation represents a content export from a review set. |
-| `applyTags` | The operation represents bulk tagging documents in a review set for the specified review set query. |
-| `convertToPdf` | The operation represents converting documents to PDFs with redactions. |
-| `estimateStatistics`  | The operation represents searching against Microsoft 365 services such as Exchange, SharePoint and OneDrive for business. |
-| `addToReviewSet` | The operation represents adding data to a review set from an eDiscovery collection. |
+| contentExport | The operation represents a content export from a review set. |
+| applyTags | The operation represents bulk tagging documents in a review set for the specified review set query. |
+| convertToPdf | The operation represents converting documents to PDFs with redactions. |
+| estimateStatistics  | The operation represents searching against Microsoft 365 services such as Exchange, SharePoint, and OneDrive for business. |
+| addToReviewSet | The operation represents adding data to a review set from an eDiscovery collection. |
 
 ### caseOperationStatus values
 
