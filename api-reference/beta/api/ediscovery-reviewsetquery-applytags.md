@@ -13,8 +13,6 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Apply tags to documents that match the specified query. After the operation is created, you can get the status of the operation by retrieving the `Location` parameter from the response headers. The location provides a URL that will return a [caseExportOperation](../resources/ediscovery-caseexportoperation.md).
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -58,6 +56,8 @@ The following table shows the parameters that can be used with this action.
 
 If successful, this action returns a `202 Accepted` response code.
 
+If the tagging operation is started successfully, this action returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [tagOperation](../resources/ediscovery-tagOperation.md) that was created to handle the tagging. Check the status of the tagging operation by making a GET request to the location, when successfully completed, the [status](../resources/ediscovery-caseoperation.md#caseOperationStatus-values) will change to `succeeded`.
+
 ## Examples
 
 ### Request
@@ -92,4 +92,10 @@ Content-length: 778
 
 ``` http
 HTTP/1.1 202 Accepted
+cache-control: private
+client-request-id: af32de50-99d9-e3a8-371b-a4f366cc78e7
+content-length: 0
+content-type: text/plain
+location: https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/operations/82edd40e182a464fa02c24a36fa94873
+request-id: e890176f-640f-4222-9cd8-be26e71c5e5d
 ```

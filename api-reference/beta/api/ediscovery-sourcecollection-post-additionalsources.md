@@ -51,10 +51,10 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|displayName|String|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|createdBy|[identitySet](../resources/identityset.md)|**TODO: Add Description**|
+|id|String|The ID for [sourceCollection](../resources/ediscovery-sourcecollection.md) case. Read-only. Inherited from [entity](../resources/entity.md)|
+|displayName|String|The name of the [sourceCollection](../resources/ediscovery-sourcecollection.md)|
+|createdDateTime|DateTimeOffset|The date and time when the [sourceCollection](../resources/ediscovery-sourcecollection.md) was created.|
+|createdBy|[identitySet](../resources/identityset.md)|The user who created the [sourceCollection](../resources/ediscovery-sourcecollection.md).|
 
 ## Response
 

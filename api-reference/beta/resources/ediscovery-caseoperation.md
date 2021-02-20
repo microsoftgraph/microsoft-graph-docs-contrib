@@ -16,6 +16,8 @@ Namespace: microsoft.graph.ediscovery
 **caseOperation** is an abstract entity that represents a long running eDiscovery process. It contains a common set of properties that are shared amongst inheriting entities.  Entities that derive from **caseOperation** include:
 
 - [caseExportOperation](../resources/ediscovery-caseexportoperation.md)
+- [tagOperation](../resources/ediscovery-tagoperation.md)
+- [estimateStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md)
 
 Inherits from [entity](../resources/entity.md).
 
@@ -34,7 +36,7 @@ None
 |id|String| The ID for the operation. Read-only. |
 |percentProgress|Int32| The progress of the operation. |
 |resultInfo|[resultInfo](../resources/resultinfo.md)| Contains success and failure-specific result information. |
-|status|microsoft.graph.ediscovery.caseOperationStatus| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
+|status|[microsoft.graph.ediscovery.caseOperationStatus](../resources/ediscovery-caseoperation.md#caseOperationStatus-values)| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
 
 ### caseAction values
 
