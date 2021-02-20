@@ -52,7 +52,7 @@ Inherits from [entity](../resources/entity.md).
 |Member|Description|
 |:---|-----------|
 |Pending| The hold distribution process is in progress. |
-|Error| There was an error when the hold was applied. For details, see legalHold errors. |
+|Error| There was an error when the hold was applied. For details, see legalHold errors property. |
 |Success| The hold was successfully applied and is holding the specified content. |
 
 ## Relationships
