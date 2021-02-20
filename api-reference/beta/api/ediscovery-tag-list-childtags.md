@@ -1,6 +1,6 @@
 ---
 title: "List childTags"
-description: "Get the tag resources from the childTags navigation property."
+description: "Get a list of child [tag] objects associated with a tag."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the tag resources from the childTags navigation property.
+Get a list of child [tag](../resources/ediscovery-tag.md) objects associated with a tag.
 
 ## Permissions
 
