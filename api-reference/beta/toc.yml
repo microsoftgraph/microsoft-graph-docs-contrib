@@ -1537,9 +1537,9 @@ items:
           - name: Delete
             href: api/ediscovery-tag-delete.md
           - name: List child tags
-            href: api/ediscovery-tag-list-childtags.md
+            href: api/ediscovery-tag-childtags.md
           - name: List tags - as hierarchy
-            href: api/ediscovery-tag-list-ashierarchy.md
+            href: api/ediscovery-tag-ashierarchy.md
           - name: Apply tags
             href: api/ediscovery-reviewsetquery-applytags.md
         - name: Review set query

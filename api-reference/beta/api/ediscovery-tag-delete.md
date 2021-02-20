@@ -36,6 +36,14 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /compliance/ediscovery/cases/{caseId}/tags/{tagId}?forcedelete=true
 ```
 
+## Query parameters
+
+In the request URL, provide the following required query parameter.
+
+| Parameter     | Type    | Description                                                                              |
+|:--------------|:--------|:-----------------------------------------------------------------------------------------|
+| forcedelete   | Boolean | If set to true, the tag and children will be deleted, if false, only the tag is deleted. |
+
 ## Request headers
 
 |Name|Description|

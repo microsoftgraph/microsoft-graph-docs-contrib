@@ -29,7 +29,7 @@ None
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|microsoft.graph.ediscovery.caseAction| The type of action the operation represents. Possible values are: `contentExport`, `tag`, `convertToPdf`, `index`, `search`, `addDataToReviewSet`.|
+|action|[microsoft.graph.ediscovery.caseAction](../resources/ediscovery-caseoperation#caseAction-values.md)| The type of action the operation represents. Possible values are: `contentExport`, `tag`, `convertToPdf`, `index`, `search`, `addDataToReviewSet`.|
 |completedDateTime|DateTimeOffset| The date and time the operation was completed. |
 |createdBy|[identitySet](../resources/identityset.md)| The user that created the operation. |
 |createdDateTime|DateTimeOffset| The date and time the operation was created. |

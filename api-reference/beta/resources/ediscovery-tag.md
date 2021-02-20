@@ -26,8 +26,8 @@ Inherits from [entity](../resources/entity.md).
 |[Get tag](../api/ediscovery-tag-get.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Read the properties and relationships of a [microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) object.|
 |[Update tag](../api/ediscovery-tag-update.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Update the properties of a [microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) object.|
 |[Delete tag](../api/ediscovery-tag-delete.md)|None|Deletes a [microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) object.|
-|[asHierarchy](../api/ediscovery-tag-list-ashierarchy.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Lists all tags including their hierarchy.|
-|[List childTags](../api/ediscovery-tag-list-childtags.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Get the tag resources from the childTags navigation property.|
+|[asHierarchy](../api/ediscovery-tag-ashierarchy.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Lists all tags including their hierarchy.|
+|[List childTags](../api/ediscovery-tag-childtags.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Get the tag resources from the childTags navigation property.|
 
 ## Properties
 

@@ -27,7 +27,7 @@ Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|microsoft.graph.ediscovery.caseAction| The type of operation - `contentExport`. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
+|action|[microsoft.graph.ediscovery.caseAction](../resources/ediscovery-caseoperation#caseAction-values.md)| The type of operation - `contentExport`. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
 |azureBlobContainer|String| The name of the Azure storage location where the export will be stored. This only applies to exports stored in your own Azure storage location. |
 |azureBlobToken|String| The SAS token for the Azure storage location.  This only applies to exports stored in your own Azure storage location. |
 |completedDateTime|DateTimeOffset| The date and time the export was completed.  Inherited from [caseOperation](../resources/ediscovery-caseoperation.md)|
