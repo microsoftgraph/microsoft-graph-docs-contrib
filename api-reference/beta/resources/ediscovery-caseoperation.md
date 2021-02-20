@@ -29,7 +29,7 @@ None
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|[microsoft.graph.ediscovery.caseAction](../resources/ediscovery-caseoperation#caseAction-values.md)| The type of action the operation represents. Possible values are: `contentExport`, `tag`, `convertToPdf`, `index`, `search`, `addDataToReviewSet`.|
+|action|[microsoft.graph.ediscovery.caseAction](../resources/ediscovery-caseoperation#caseAction-values.md)| The type of action the operation represents. Possible values are: `contentExport`, `tag`, `convertToPdf`, `index`, `estimateStatistics`, `addToReviewSet`.|
 |completedDateTime|DateTimeOffset| The date and time the operation was completed. |
 |createdBy|[identitySet](../resources/identityset.md)| The user that created the operation. |
 |createdDateTime|DateTimeOffset| The date and time the operation was created. |
@@ -56,7 +56,7 @@ None
 | submissionFailed | Submission of the operation failed. |
 | running | The operation is currently running. |
 | succeeded | The operation was successfully completed without any errors. |
-| partiallySucceeded | The operation completed, but there were errors - See result info for error details. |
+| partiallySucceeded | The operation completed, but there were errors - See [resultInfo](../resources/resultinfo.md) for error details. |
 | failed | The operation failed - See result info for error details. |
 
 ## Relationships
