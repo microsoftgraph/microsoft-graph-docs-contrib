@@ -1,6 +1,6 @@
 ---
 title: "tagOperation resource type"
-description: "The operation that handles applying tags to documents in a review set based on a review set query"
+description: "Represents the operation that handles applying tags to documents in a review set based on a review set query."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The operation that handles applying tags to documents in a review set based on a review set query.
+Represents the operation that handles applying tags to documents in a review set based on a review set query.
 
 Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).
 
 ## Methods
 
-None
+None.
 
 ## Properties
 
