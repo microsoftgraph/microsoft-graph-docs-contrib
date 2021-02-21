@@ -1,6 +1,6 @@
 ---
 title: "dataSource resource type"
-description: "Datasource entity - abstract base class"
+description: "The dataSource entity is an abstract base class used to identify sources of content for eDiscovery."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The dataSource entity is an abstract baseclass used to identify sources of content for eDiscovery.
+The dataSource entity is an abstract base class used to identify sources of content for eDiscovery.
 
 ## Methods
 
