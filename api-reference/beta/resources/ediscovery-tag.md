@@ -1,6 +1,6 @@
 ---
 title: "tag resource type"
-description: "Tags are used to mark documents during review to separate responsive and non-responsive content"
+description: "Represents an eDiscovery tag, which is used to mark documents during review to separate responsive and non-responsive content"
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Tags are used to mark documents during review to separate responsive and non-responsive content.
+Represents an eDiscovery tag, which is used to mark documents during review to separate responsive and non-responsive content.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -21,13 +21,13 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List tags](../api/ediscovery-case-list-tags.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Get a list of the [microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) objects and their properties.|
-|[Create tag](../api/ediscovery-case-post-tags.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Create a new [microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) object.|
-|[Get tag](../api/ediscovery-tag-get.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Read the properties and relationships of a [microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) object.|
-|[Update tag](../api/ediscovery-tag-update.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Update the properties of a [microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) object.|
-|[Delete tag](../api/ediscovery-tag-delete.md)|None|Deletes a [microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) object.|
-|[asHierarchy](../api/ediscovery-tag-ashierarchy.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Lists all tags including their hierarchy.|
-|[List childTags](../api/ediscovery-tag-childtags.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Get the tag resources from the childTags navigation property.|
+|[List tags](../api/ediscovery-case-list-tags.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Get a list of the **tag** objects and their properties.|
+|[Create tag](../api/ediscovery-case-post-tags.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Create a new **tag** object.|
+|[Get tag](../api/ediscovery-tag-get.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Read the properties and relationships of a **tag** object.|
+|[Update tag](../api/ediscovery-tag-update.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Update the properties of a **tag** object.|
+|[Delete tag](../api/ediscovery-tag-delete.md)|None|Delete a **tag** object.|
+|[asHierarchy](../api/ediscovery-tag-ashierarchy.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Lists all tags, including their hierarchy.|
+|[List childTags](../api/ediscovery-tag-childtags.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Get a list of child **tag** objects associated with a tag.|
 
 ## Properties
 
@@ -44,8 +44,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description|
 |:----|-----------|
-|One|Only one child can be selected - this corresponds to a user interface that presents the tags with radio buttons.|
-|Many|Zero or many children can be selected - this corresponds to a user interface that presents the tags with checkboxes.|
+|One|Only one child can be selected. This corresponds to a UI that presents the tags with radio buttons.|
+|Many|Zero or many children can be selected. This corresponds to a UI that presents the tags with checkboxes.|
 
 ## Relationships
 
