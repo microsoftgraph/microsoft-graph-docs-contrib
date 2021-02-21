@@ -1,6 +1,6 @@
 ---
 title: "List additionalSources"
-description: "Get a list of dataSource objects associated with a source collection."
+description: "Get a list of additional dataSource objects associated with a source collection."
 author: "mahage-msft"
 localization_priority: Normal
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [dataSource](../resources/ediscovery-datasource.md) objects associated with a source collection.
+Get a list of additional [dataSource](../resources/ediscovery-datasource.md) objects associated with a source collection.
 
 ## Permissions
 
