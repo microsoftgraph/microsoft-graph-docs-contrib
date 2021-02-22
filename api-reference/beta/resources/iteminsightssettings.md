@@ -18,9 +18,6 @@ Represents privacy settings for [itemInsights](iteminsights.md) and privacy set
 
 Use the [userInsightsSettings](userinsightssettings.md) resource to disable/enable calculation and visibility of item insights and meeting hours insights of a user.
 
-> [!NOTE]
-> Meeting hours insights are rolling out to customers starting November 2020. 
-
 ## Methods
 
 | Method       | Return Type | Description |
