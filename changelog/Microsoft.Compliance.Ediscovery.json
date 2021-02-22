@@ -435,7 +435,7 @@
 					"ChangeType": "Addition",
 					"Description": "Added the [activate](https://docs.microsoft.com/graph/api/custodian-activate?view=graph-rest-beta) method to the [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta) resource.",
 					"Target": "custodian"
-				},
+				}
 			],
 			"Id": "782dc913-17be-11eb-baa1-5b13c31fb2cd",
 			"Cloud": "prd",
