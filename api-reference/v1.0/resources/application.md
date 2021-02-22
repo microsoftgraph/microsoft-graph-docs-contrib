@@ -72,6 +72,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | isFallbackPublicClient | Boolean | Specifies the fallback application type as public client, such as an installed application running on a mobile device. The default value is `false` which means the fallback application type is confidential client such as a web app. There are certain scenarios where Azure AD cannot determine the client application type. For example, the [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) flow where it is configured without specifying a redirect URI. In those cases Azure AD interprets the application type based on the value of this property.|
 | keyCredentials | [keyCredential](keycredential.md) collection | The collection of key credentials associated with the application. Not nullable. |
 | logo | Stream | The main logo for the application. Not nullable. |
+| notes | String | Notes relevant for the management of the application. |
 | optionalClaims | [optionalClaims](optionalclaims.md) | Application developers can configure optional claims in their Azure AD applications to specify the claims that are sent to their application by the Microsoft security token service. For more information, see [How to: Provide optional claims to your app](/azure/active-directory/develop/active-directory-optional-claims).|
 | parentalControlSettings | [parentalControlSettings](parentalcontrolsettings.md) |Specifies parental control settings for an application. |
 | passwordCredentials | [passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
@@ -122,6 +123,7 @@ The following is a JSON representation of the resource.
   "isFallbackPublicClient": false,
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",
+  "notes": "String",
   "optionalClaims": {"@odata.type": "microsoft.graph.optionalClaims"},
   "parentalControlSettings": {"@odata.type": "microsoft.graph.parentalControlSettings"},
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
