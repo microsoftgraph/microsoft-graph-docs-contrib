@@ -127,27 +127,6 @@ Namespace: microsoft.graph
 |disabled|
 |enabledForReportingButNotEnforced|
 
-### subscribedSkuCapabilityStatus values
-|Member|
-|:---|
-|Enabled|
-|Warning|
-|Suspended|
-|Deleted|
-|LockedOut|
-
-### domainAvailability values
-|Member|
-|:---|
-|AvailableImmediately|
-|EmailVerifiedDomainTakeoverScheduled|
-
-### domainAuthType values
-|Member|
-|:---|
-|Managed|
-|Federated|
-
 #### deviceProfileType values
 |Member|
 |:---|
