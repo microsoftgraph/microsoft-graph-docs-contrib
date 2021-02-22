@@ -370,6 +370,7 @@ Namespace: microsoft.graph
 |:---|
 |attested|
 |notAttested|
+|unknownFutureValue|
 
 ### emailType values
 
@@ -380,6 +381,28 @@ Namespace: microsoft.graph
 |personal|
 |main|
 |other|
+
+### authenticationMethodSignInState values
+
+|Member|
+|:---|
+|notSupported|
+|notAllowedByPolicy|
+|notEnabled|
+|phoneNumberNotUnique|
+|ready|
+|notConfigured|
+|unknownFutureValue|
+
+### authenticationPhoneType values
+
+|Member|
+|:---|
+|mobile|
+|alternateMobile|
+|office|
+|unknownFutureValue|
+
 
 ### authenticationMethodTargetType values
 
@@ -401,6 +424,7 @@ Namespace: microsoft.graph
 |:---|
 |allow|
 |block|
+|unknownFutureValue|
 
 ### authenticatorAppContextType values
 
@@ -1540,6 +1564,20 @@ Possible values for user account types (group membership), per Windows definitio
 |compliantApplication|
 |passwordChange|
 |unknownFutureValue|
+
+### signinFrequencyType values
+
+| Member       |
+|:--------------|
+|days|
+|hours|
+
+### persistentBrowserSessionMode values
+
+| Member       |
+|:--------------|
+|always|
+|never|
 
 ### cloudAppSecuritySessionControlType values
 

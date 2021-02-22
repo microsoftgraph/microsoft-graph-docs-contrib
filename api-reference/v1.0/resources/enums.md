@@ -49,14 +49,14 @@ Namespace: microsoft.graph
 |macOS|
 |all|
 
-### signinFrequencySessionControlType values
+### signinFrequencyType values
 
 | Member       |
 |:--------------|
 |days|
 |hours|
 
-### sessionControlMode values
+### persistentBrowserSessionMode values
 
 | Member       |
 |:--------------|
