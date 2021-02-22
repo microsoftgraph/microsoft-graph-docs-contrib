@@ -41,11 +41,11 @@ This resource lets you add your own data to custom properties using [extensions]
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. default is true.|
-|alternativeSecurityIds|alternativeSecurityId collection| For internal use only. Not nullable. |
+|alternativeSecurityIds|[alternativeSecurityId](alternativeSecurityId.md) collection| For internal use only. Not nullable. |
 |approximateLastSignInDateTime|DateTimeOffset| The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
 |complianceExpirationDateTime|DateTimeOffset| The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
 |deviceCategory|String|User-defined property set by Intune to automatically add devices to groups and simplify managing devices.|
-|deviceId|Guid| Unique identifier set by Azure Device Registration Service at the time of registration. |
+|deviceId|String| Unique identifier set by Azure Device Registration Service at the time of registration. |
 |deviceMetadata|String| For internal use only. Set to null. |
 |deviceOwnership|String|Ownership of the device. This property is set by Intune. Possible values are: unknown, company, personal.|
 |deviceVersion|Int32| For internal use only. |
@@ -69,14 +69,14 @@ This resource lets you add your own data to custom properties using [extensions]
 |profileType|String|The profile type of the device. Possible values:<br /><ul><li>`RegisteredDevice` (default)</li><li>`SecureVM`</li><li>`Printer`</li><li>`Shared`</li><li>`IoT`</li></ul>|
 |registrationDateTime|DateTimeOffset|Date and time of when the device was registered. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
 |systemLabels|String collection| List of labels applied to the device by the system. |
-|hostNames|String collection| List of hostNames for the device.|
+|hostnames|String collection| List of hostNames for the device.|
 |trustType|String| Type of trust for the joined device. Read-only. Possible values: <br /><ul><li>`Workplace` - indicates *bring your own personal devices*</li><li>`AzureAd` - Cloud only joined devices</li><li>`ServerAd` - on-premises domain joined devices joined to Azure AD.</li></ul>For more details, see [Introduction to device management in Azure Active Directory](/azure/active-directory/device-management-introduction) |
-|Name| String | Friendly name of a device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
-|Status | deviceStatus| Device is `online` or `offline`. Only returned if user signs in with a Microsoft account as part of Project Rome. |
-|Platform |String|Platform of device. Only returned if user signs in with a Microsoft account as part of Project Rome. Only returned if user signs in with a Microsoft account as part of Project Rome.|
-|Kind| String| Form factor of device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
-|Model| String| Model of device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
-|Manufacturer| String| Manufacturer of device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
+|name| String | Friendly name of a device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
+|status | String| Device is `online` or `offline`. Only returned if user signs in with a Microsoft account as part of Project Rome. |
+|platform |String|Platform of device. Only returned if user signs in with a Microsoft account as part of Project Rome. Only returned if user signs in with a Microsoft account as part of Project Rome.|
+|kind| String| Form factor of device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
+|model| String| Model of device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
+|manufacturer| String| Manufacturer of device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
 
 ## Relationships
 | Relationship | Type	|Description|

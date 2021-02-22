@@ -344,12 +344,12 @@ Namespace: microsoft.graph
 
 ### volumeType values
 
-| Member
-|:--------------
-| operatingSystemVolume
-| fixedDataVolume
-| removableDataVolume
-| unknownFutureValue
+|Member|
+|:---|
+|operatingSystemVolume|
+|fixedDataVolume|
+|removableDataVolume|
+|unknownFutureValue|
 
 ### allowedAudiences values
 

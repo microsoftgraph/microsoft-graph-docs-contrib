@@ -148,13 +148,6 @@ Namespace: microsoft.graph
 |Managed|
 |Federated|
 
-### deviceTrustType values
-|Member|
-|:---|
-|Workplace|
-|AzureAd|
-|ServerAd|
-
 #### deviceProfileType values
 |Member|
 |:---|
@@ -163,12 +156,6 @@ Namespace: microsoft.graph
 |Printer|
 |Shared|
 |IoT|
-
-### adminUnitVisibility values
-|Member|
-|:---|
-|HiddenMembership|
-|Public|
 
 ### activityType values
 
