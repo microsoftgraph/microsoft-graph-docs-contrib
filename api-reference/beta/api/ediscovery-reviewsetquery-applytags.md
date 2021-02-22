@@ -76,7 +76,7 @@ Content-length: 778
 {
     "tagsToAdd": [
         {
-            "ID": "b4798d14-748d-468e-a1ec-96a2b1d49677"
+            "id": "b4798d14-748d-468e-a1ec-96a2b1d49677"
         }
     ]
 }
@@ -92,10 +92,8 @@ Content-length: 778
 
 ``` http
 HTTP/1.1 202 Accepted
-cache-control: private
-client-request-id: af32de50-99d9-e3a8-371b-a4f366cc78e7
-content-length: 0
-content-type: text/plain
-location: https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/operations/82edd40e182a464fa02c24a36fa94873
-request-id: e890176f-640f-4222-9cd8-be26e71c5e5d
+cache-control: no-cache,
+client-request-id: 56c9dd8b-d8f7-59ae-6733-38191862c9c9,
+location: https://graph.microsoft.com/beta/compliance/ediscovery/cases('47746044-fd0b-4a30-acfc-5272b691ba5b')/operations('d77f7933e88842bab3221e280be9dc0b'),
+request-id: c2397a81-e9c2-4851-b669-d87e0751e45a
 ```
