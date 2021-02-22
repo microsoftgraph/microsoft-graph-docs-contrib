@@ -3,7 +3,7 @@ title: "conditionalAccessConditionSet resource type"
 description: "Represents the type of conditions that govern when the policy applies."
 localization_priority: Normal
 author: "videor"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -26,8 +26,8 @@ Represents the type of conditions that govern when the policy applies.
 |devices|[conditionalAccessDevices](conditionalaccessdevices.md)| Devices in the policy. |
 |locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locations included in and excluded from the policy. |
 |platforms|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Platforms included in and excluded from the policy. |
-|signInRiskLevels|conditionalAccessRiskLevels collection| Sign-in risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `none`.|
-|userRiskLevels|conditionalAccessRiskLevels collection| User risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `none`.|
+|signInRiskLevels|riskLevel collection| Sign-in risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
+|userRiskLevels|riskLevel collection| User risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
 
 >**Note:** <br>
 >* **clientAppType** `modern` is going to be deprecated and replaced by `mobileAppsAndDesktopClients`. <br>

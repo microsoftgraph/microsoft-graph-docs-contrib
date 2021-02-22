@@ -89,6 +89,8 @@ Namespace: microsoft.graph
 |domainJoinedDevice|
 |approvedApplication|
 |compliantApplication|
+|passwordChange|
+|unknownFutureValue|
 
 ### conditionalAccessUserActions values
 

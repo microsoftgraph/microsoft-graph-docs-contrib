@@ -11,331 +11,304 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-### governanceRoleAssignmentType values
+### appliedConditionalAccessPolicyResult values 
 
 |Member|
 |:---|
-|AdminAdd|
-|UserAdd|
-|AdminUpdate|
-|AdminRemove|
-|UserRemove|
-|UserExtend|
-|AdminExtend|
-|UserRenew|
-|AdminRenew|
+|success|
+|failure|
+|notApplied|
+|notEnabled|
+|unknown|
+|unknownFutureValue|
+|reportOnlySuccess|
+|reportOnlyFailure|
+|reportOnlyNotApplied|
+|reportOnlyInterrupted|
 
-### governanceRoleMemberType values
-
-|Member|
-|:---|
-|Inherited|
-|Group|
-|User|
-
-### governanceRoleAssignmentState values
+### authenticationMethodFeature values 
 
 |Member|
 |:---|
-|Eligible|
-|Active|
+|ssprRegistered|
+|ssprEnabled|
+|ssprCapable|
+|passwordlessCapable|
+|mfaCapable|
 
-### privilegedOperationRequestType values
-
-|Member|
-|:---|
-|Assign|
-|Activate|
-|Unassign|
-|Deactivate|
-|ScanAlersNow|
-|DismissAlert|
-|FixAlertItem|
-|AccessReview_Review|
-|AccessReview_Create|
-|AccessReview_Update|
-|AccessReview_Delete|
-
-### privilegedApprovalState values
+### authMethodsType values 
 
 |Member|
 |:---|
-|pending|
-|approved|
-|denied|
-|aborted|
-|canceled|
+|email|
+|mobileSMS|
+|mobilePhone|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appNotificationCode|
+|appNotificationAndCode|
+|appPassword|
+|fido|
+|alternateMobilePhone|
+|mobilePhoneAndSMS|
+|unknownFutureValue|
 
-### privilegedRoleAssignmentStatus values
-
-|Member|
-|:---|
-|ok|
-|bad|
-
-### externalUserLifecycleAction values
-
-|Member|
-|:---|
-|None|
-|BlockSignIn|
-|BlockSignInAndDelete|
-
-### accessPackageCatalogType values
-
-|Member|
-|:---|
-|UserManaged|
-|ServiceDefault|
-
-### accessPackageAssignmentRequestType values
-
-|Member|
-|:---|
-|UserAdd|
-|UserRemove|
-|AdminAdd|
-|AdminRemove|
-|SystemRemove|
-
-### accessPackageAssignmentRequestState values
-
-|Member|
-|:---|
-|PendingApproval|
-|Canceled|
-|Denied|
-|Delivering|
-|Delivered|
-|PartiallyDelivered|
-|Submitted|
-|Scheduled|
-
-### accessPackageAssignmentResourceRoleStatus values
-
-|Member|
-|:---|
-|PendingFulfillment|
-|Fulfilled|
-
-### accessPackageAssignmentStatus values
-
-|Member|
-|:---|
-|Delivering|
-|Delivered|
-|NearExpiry1DayNotificationTriggered|
-|ExpiredNotificationTriggered|
-
-### accessPackageAssignmentState values
-
-|Member|
-|:---|
-|Delivering|
-|Delivered|
-|Expired|
-
-### accessReviewReviewerType values
-
-|Member|
-|:---|
-|self|
-|delegated|
-|entityOwners|
-
-### accessReviewAutoRecommendation values
-
-|Member|
-|:---|
-|Approve|
-|Deny|
-|NotAvailable|
-
-### accessReviewApplyDecisionResult values
-
-|Member|
-|:---|
-|NotApplied|
-|Success|
-|Failed|
-|NotFound|
-|NotSupported|
-
-### accessReviewDecision values
-
-|Member|
-|:---|
-|Approve|
-|Deny|
-|NotReviewed|
-|DontKnow|
-
-### accessReviewStatus values
-
-|Member|
-|:---|
-|Initializing|
-|NotStarted|
-|Starting|
-|InProgress|
-|Completing|
-|Completed|
-|AutoReviewing|
-|AutoReviewed|
-
-### publicKeyType values
-
-|Member|
-|:---|
-|rsa|
-|oct|
-
-### publicKeyUse values
-
-|Member|
-|:---|
-|sig|
-|enc|
-
-### tokenSigningOptions values
-
-|Member|
-|:---|
-|ResponseOnly|
-|TokenOnly|
-|ResponseAndToken|
-
-### allowInvitesFrom values
+### azureADLicenseType values 
 
 |Member|
 |:---|
 |none|
-|adminsAndGuestInviters|
-|adminsGuestInvitersAndAllMembers|
-|everyone|
-
-### dataPolicyOperationStatus values
-
-|Member|
-|:---|
-|notStarted|
-|running|
-|complete|
-|failed|
+|free|
+|basic|
+|premiumP1|
+|premiumP2|
 |unknownFutureValue|
 
-### signinFrequencySessionControlType values
-
-| Member       |
-|:--------------|
-|days|
-|hours|
-
-### sessionControlMode values
-
-| Member       |
-|:--------------|
-|always|
-|never|
-
-### conditionalOperators values
-
-| Member       |
-|:--------------|
-|AND|
-|OR|
-
-### conditionalAccessDeviceStates values
+### conditionalAccessConditions values 
 
 |Member|
 |:---|
-|Compliant|
-|DomainJoined|
+|none|
+|application|
+|users|
+|devicePlatform|
+|location|
+|clientType|
+|signInRisk|
+|userRisk|
+|time|
+|deviceState|
+|client|
 
-### conditionalAccessUserActions values
+### conditionalAccessStatus values 
 
 |Member|
 |:---|
-|urn:user:registersecurityinfo|
-|urn:user:registerdevice|
+|success|
+|failure|
+|notApplied|
+|unknownFutureValue|
 
-### conditionalAccessRiskLevels values
+### featureType values 
+
+|Member|
+|:---|
+|registration|
+|reset|
+|unknownFutureValue|
+
+### groupType values 
+
+|Member|
+|:---|
+|unifiedGroups|
+|azureAD|
+|unknownFutureValue|
+
+### includedUserRoles values 
+
+|Member|
+|:---|
+|all|
+|privilegedAdmin|
+|admin|
+|user|
+|unknownFutureValue|
+
+### includedUserTypes values 
+
+|Member|
+|:---|
+|all|
+|member|
+|guest|
+|unknownFutureValue|
+
+### initiatorType values 
+
+|Member|
+|:---|
+|user|
+|app|
+|system|
+|unknownFutureValue|
+
+### migrationStatus values 
+
+|Member|
+|:---|
+|ready|
+|needsReview|
+|additionalStepsRequired|
+|unknownFutureValue|
+
+### networkType values 
+
+|Member|
+|:---|
+|intranet|
+|extranet|
+|namedNetwork|
+|trusted|
+|unknownFutureValue|
+
+### operationResult values 
+
+|Member|
+|:---|
+|success|
+|failure|
+|timeout|
+|unknownFutureValue|
+
+### provisioningResult values 
+
+|Member|
+|:---|
+|success|
+|failure|
+|skipped|
+|unknownFutureValue|
+
+### provisioningStepType values 
+
+|Member|
+|:---|
+|import|
+|scoping|
+|matching|
+|processing|
+|referenceResolution|
+|export|
+|unknownFutureValue|
+
+### registrationAuthMethod values 
+
+|Member|
+|:---|
+|email|
+|mobilePhone|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appCode|
+|alternateMobilePhone|
+|fido|
+|appPassword|
+|unknownFutureValue|
+
+### registrationStatusType values 
+
+|Member|
+|:---|
+|registered|
+|enabled|
+|capable|
+|mfaRegistered|
+|unknownFutureValue|
+
+### requirementProvider values 
+
+|Member|
+|:---|
+|MFA|
+|CA|
+|unknownFutureValue|
+
+### riskDetail values 
+
+|Member|
+|:---|
+|none|
+|adminGeneratedTemporaryPassword|
+|userPerformedSecuredPasswordChange|
+|userPerformedSecuredPasswordReset|
+|adminConfirmedSigninSafe|
+|aiConfirmedSigninSafe|
+|userPassedMFADrivenByRiskBasedPolicy|
+|adminDismissedAllRiskForUser|
+|adminConfirmedSigninCompromised|
+|hidden|
+|adminConfirmedUserCompromised|
+|unknownFutureValue|
+
+### riskEventType values 
+
+|Member|
+|:---|
+|unlikelyTravel|
+|anonymizedIPAddress|
+|maliciousIPAddress|
+|unfamiliarFeatures|
+|malwareInfectedIPAddress|
+|suspiciousIPAddress|
+|leakedCredentials|
+|investigationsThreatIntelligence|
+|generic|
+|adminConfirmedUserCompromised|
+|mcasImpossibleTravel|
+|mcasSuspiciousInboxManipulationRules|
+|investigationsThreatIntelligenceSigninLinked|
+|maliciousIPAddressValidCredentialsBlockedIP|
+|unknownFutureValue|
+
+### riskLevel values 
 
 |Member|
 |:---|
 |low|
 |medium|
 |high|
+|hidden|
 |none|
+|unknownFutureValue|
 
-### clientAppTypes values
+### riskState values 
 
 |Member|
 |:---|
-|all|
-|browser|
-|mobileAppsAndDesktopClients|
-|exchangeActiveSync|
-|easSupported|
-|other|
+|none|
+|confirmedSafe|
+|remediated|
+|dismissed|
+|atRisk|
+|confirmedCompromised|
+|unknownFutureValue|
 
-### authenticationPhoneType values
+### tokenIssuerType values 
+
 |Member|
 |:---|
-|mobile|
-|alternateMobile|
-|office|
+|AzureAD|
+|ADFederationServices|
+|UnknownFutureValue|
 
-### subscribedSkuCapabilityStatus values
+### usageAuthMethod values 
+
 |Member|
 |:---|
-|Enabled|
-|Warning|
-|Suspended|
-|Deleted|
-|LockedOut|
+|email|
+|mobileSMS|
+|mobileCall|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appCode|
+|alternateMobileCall|
+|fido|
+|appPassword|
+|unknownFutureValue|
 
-### domainAvailability values
+### authenticationMethodKeyStrength values
+
 |Member|
 |:---|
-|AvailableImmediately|
-|EmailVerifiedDomainTakeoverScheduled|
+|normal|
+|weak|
+|unknown|
 
-### domainAuthType values
-|Member|
-|:---|
-|Managed|
-|Federated|
-
-### deviceStatus values
-|Member|
-|:---|
-|online|
-|offline|
-
-### deviceTrustType values
-|Member|
-|:---|
-|Workplace|
-|AzureAd|
-|ServerAd|
-
-### deviceProfileType values
-|Member|
-|:---|
-|RegisteredDevice|
-|SecureVM|
-|Printer|
-|Shared|
-|IoT|
-
-### adminUnitVisibility values
-|Member|
-|:---|
-|HiddenMembership|
-|Public|
-
-### educationAddedStudentAction values 
+### educationAddedStudentAction values
 
 |Member|
 |:---|
@@ -1565,6 +1538,7 @@ Possible values for user account types (group membership), per Windows definitio
 |approvedApplication|
 |compliantApplication|
 |passwordChange|
+|unknownFutureValue|
 
 ### cloudAppSecuritySessionControlType values
 
@@ -1813,71 +1787,12 @@ Possible values for user account types (group membership), per Windows definitio
 | entityUrl
 | text
 
-### cloudPcDeviceImageStatus values
-
-|Member|
-|:---|
-|pending|
-|ready|
-|failed|
-
-### cloudPcDeviceImageStatusDetails values
-
-|Member|
-|:---|
-|internalServerError|
-|sourceImageNotFound|
-
-### cloudPcOnPremisesConnectionHealthCheckErrorType values
-
-|Member|
-|:---|
-|dnsCheckFqdnNotFound|
-|dnsCheckUnknownError|
-|adJoinCheckFqdnNotFound|
-|adJoinCheckIncorrectCredentials|
-|adJoinCheckOrganizationalUnitNotFound|
-|adJoinCheckOrganizationalUnitIncorrectFormat|
-|adJoinCheckUnknownError |
-|endpointConnectivityCheckUrlNotWhitelisted|
-|endpointConnectivityCheckUnknownError|
-|aadConnectivityCheckUnknownError |
-|resourceAvailabilityCheckNoSubnetIP |
-|resourceAvailabilityCheckUnknownError |
-|internalServerUnknownError |
-
-### cloudPcOnPremisesConnectionStatus values
-
-|Member|
-|:---|
-|pending|
-|running|
-|passed|
-|failed|
-|unknownFutureValue|
-
 ### cloudPcProvisioningPolicyImageType values
 
 |Member|
 |:---|
 |custom|
 |gallery|
-
-### cloudPcStatus values
-
-|Member|
-|:---|
-|notProvisioned|
-|provisioning|
-|provisioned|
-|upgrading|
-|inGracePeriod|
-|deprovisioning|
-|failed|
-|upgradeFailed|
-|provisionFailed|
-|deprovisionFailed|
-|reprovisionFailed|
 
 ### chatType values 
 
@@ -1887,3 +1802,30 @@ Possible values for user account types (group membership), per Windows definitio
 |group               | 1     | Indicates that the chat is a Group chat. The roster size (of at least 2 person) can be updated for this type of chat. The members can be removed / added later on.   |
 |meeting             | 2     | Indicates that the chat is a Meeting chat, which is created as a side effect of creation of an OnlineMeeting.  |
 |unknownFutureValue  | 3     | Sentinel value to indicate future values. |
+
+### singleSignOnMode values
+
+|Member|
+|:---|
+|none|
+|onPremisesKerberos|
+|aadHeaderBased|
+|pingHeaderBased|
+
+### plannerContainerType values 
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
+
+### plannerPlanContextType values 
+
+|Member|
+|:---|
+|teamsTab|
+|sharePointPage|
+|meetingNotes|
+|other|
+|unknownFutureValue|
+

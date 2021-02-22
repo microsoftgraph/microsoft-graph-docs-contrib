@@ -1,13 +1,109 @@
 {
-  "changelog": [
-   {
+  "changelog": [  
+    {
+      "ChangeList": [
+        {
+          "Id": "118e092d-5c9b-4d50-928f-12aaa33abaf6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Printer",
+          "ChangeType": "Change",
+          "Description": "Added application permissions to the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printerlocation?view=graph-rest-beta) resource.",
+          "Target": "printer"
+        }
+      ],
+      "Id": "118e092d-5c9b-4d50-928f-12aaa33abaf6",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-01-27T00:00:00",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    }, 
+    {
+      "ChangeList": [
+        {
+          "Id": "3c6809b4-5b51-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Property",
+          "ChangedApiName": "printerDefaults",
+          "ChangeType": "Addition",
+          "Description": "Added the **inputBin** property to the [printerDefaults](https://docs.microsoft.com/en-us/graph/api/resources/printerDefaults?view=graph-rest-beta) resource.",
+          "Target": "printerDefaults"
+        }
+      ],
+      "Id": "3c65a6d7-5b51-11eb-93a5-6e9aaa10c0ef",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-17T18:56:42.870Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c9105e15-6dd7-482a-994c-e156afed581c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subscription",
+          "ChangeType": "Addition",
+          "Description": "Add **printer** to the resources that support change notifications.",
+          "Target": "printer"
+        }
+      ],
+      "Id": "c9105e15-6dd7-482a-994c-e156afed581c",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-21T00:00:00",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bb46f739-3c69-46ab-a3e1-75cd4e9aae46",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printJob",
+          "ChangeType": "Addition",
+          "Description": "Added new PrintJob.Create [delegated permission](https://docs.microsoft.com/en-us/graph/permissions-reference#universal-print-permissions).",
+          "Target": "printJob"
+        },
+        {
+          "Id": "bb46f739-3c69-46ab-a3e1-75cd4e9aae46",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerShare",
+          "ChangeType": "Addition",
+          "Description": "Added new PrinterShare.ReadBasic.All [delegated permission](https://docs.microsoft.com/en-us/graph/permissions-reference#universal-print-permissions).",
+          "Target": "printerShare"
+        },
+        {
+          "Id": "0ec62390-2472-42a1-9298-2f36275c58bf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printConnector",
+          "ChangeType": "Addition",
+          "Description": "Added new PrintConnector.Read.All [delegated permission](https://docs.microsoft.com/en-us/graph/permissions-reference#universal-print-permissions).",
+          "Target": "printConnector"
+        },
+        {
+          "Id": "0ec62390-2472-42a1-9298-2f36275c58bf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printSetting",
+          "ChangeType": "Addition",
+          "Description": "Added new PrintSettings.Read.All and PrintSettings.ReadWrite.All [delegated permissions](https://docs.microsoft.com/en-us/graph/permissions-reference#universal-print-permissions).",
+          "Target": "printSetting"
+        }
+      ],
+      "Id": "bb46f739-3c69-46ab-a3e1-75cd4e9aae46",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-07T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": " Cloud printing"
+    },
+    {
       "ChangeList": [
         {
           "Id": "d686e617-f373-4e2b-b26e-c71f475b05de",
           "ApiChange": "Property",
           "ChangedApiName": "floorNumber,floor",
           "ChangeType": "Change",
-          "Description": "Changed **floorNumber** (Edm.Int) property on [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **floor** (Edm.String).",
+          "Description": "Changed **floorNumber** (Edm.Int) property on [printerLocation](https://docs.microsoft.com/en-us/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **floor** (Edm.String).",
           "Target": "printerLocation"
         },
         {
@@ -15,7 +111,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "roomNumber,roomName",
           "ChangeType": "Change",
-          "Description": "Changed **roomNumber** (Edm.Int) property on [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **roomName** (Edm.String).",
+          "Description": "Changed **roomNumber** (Edm.Int) property on [printerLocation](https://docs.microsoft.com/en-us/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **roomName** (Edm.String).",
           "Target": "printerLocation"
         }
       ],
@@ -24,7 +120,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-12-10T00:00:00",
       "WorkloadArea": "Devices and apps ",
-      "SubArea": " Cloud printing"
+      "SubArea": "Cloud printing"
     },
     {
       "ChangeList": [
@@ -42,7 +138,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-12-16T00:00:00",
       "WorkloadArea": "Devices and apps ",
-      "SubArea": " Cloud printing"
+      "SubArea": "Cloud printing"
     },
     {
       "ChangeList": [
@@ -68,25 +164,185 @@
       "Version": "beta",
       "CreatedDateTime": "2020-12-10T00:00:00",
       "WorkloadArea": "Devices and apps ",
-      "SubArea": " Cloud printing"
+      "SubArea": "Cloud printing"
     },
     {
       "ChangeList": [
         {
-          "Id": "62d9370f-55fe-465c-9041-644ef9f55a83",
-          "ApiChange": "Property",
-          "ChangedApiName": "printerStatus",
-          "ChangeType": "Change",
-          "Description": "Updated the **printerProcessingStateDetail** enum type in the [printerStatus](https://docs.microsoft.com/en-us/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values) resource.",
-          "Target": "printerStatus"
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "outputAreaAlmostFull",
+          "ChangeType": "Addition",
+          "Description": "Added the `outputAreaAlmostFull` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "none",
+          "ChangeType": "Addition",
+          "Description": "Added the `none` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "movingToPaused",
+          "ChangeType": "Addition",
+          "Description": "Added the `movingToPaused` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "shutdown",
+          "ChangeType": "Addition",
+          "Description": "Added the `shutdown` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "connectingToDevice",
+          "ChangeType": "Addition",
+          "Description": "Added the `connectingToDevice` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "timedOut",
+          "ChangeType": "Addition",
+          "Description": "Added the `timedOut` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "stopping",
+          "ChangeType": "Addition",
+          "Description": "Added the `stopping` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "stoppedPartially",
+          "ChangeType": "Addition",
+          "Description": "Added the `stoppedPartially` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "tonerLow",
+          "ChangeType": "Addition",
+          "Description": "Added the `tonerLow` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "tonerEmpty",
+          "ChangeType": "Addition",
+          "Description": "Added the `tonerEmpty` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "spoolAreaFull",
+          "ChangeType": "Addition",
+          "Description": "Added the `spoolAreaFull` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "doorOpen",
+          "ChangeType": "Addition",
+          "Description": "Added the `doorOpen` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "opticalPhotoConductorNearEndOfLife",
+          "ChangeType": "Addition",
+          "Description": "Added the `opticalPhotoConductorNearEndOfLife` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "opticalPhotoConductorLifeOver",
+          "ChangeType": "Addition",
+          "Description": "Added the `opticalPhotoConductorLifeOver` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "developerLow",
+          "ChangeType": "Addition",
+          "Description": "Added the `developerLow` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "developerEmpty",
+          "ChangeType": "Addition",
+          "Description": "Added the `developerEmpty` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "interpreterResourceUnavailable",
+          "ChangeType": "Addition",
+          "Description": "Added the `interpreterResourceUnavailable` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "disconnected",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `disconnected` member from the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "queueFull",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `queueFull` member from the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "outputAlmostFull",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `outputAlmostFull` member from the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknownFutureValue",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `unknownFutureValue` member from the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
         }
       ],
-      "Id": "62d9370f-55fe-465c-9041-644ef9f55a83",
+      "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-12-09T00:00:00",
+      "CreatedDateTime": "2021-01-21T00:00:00",
       "WorkloadArea": "Devices and apps ",
-      "SubArea": " Cloud printing"
+      "SubArea": "Cloud printing"
     },
     {
       "ChangeList": [
@@ -120,7 +376,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-12-02T00:00:00",
       "WorkloadArea": "Devices and apps ",
-      "SubArea": " Cloud printing"
+      "SubArea": "Cloud printing"
     },
     {
       "ChangeList": [
@@ -154,7 +410,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-10-16T00:00:00",
       "WorkloadArea": "Devices and apps ",
-      "SubArea": " Cloud printing"
+      "SubArea": "Cloud printing"
     }
   ]
 }

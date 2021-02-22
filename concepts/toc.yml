@@ -17,7 +17,7 @@ items:
           - name: What's new highlights
             href: whats-new-overview.md
           - name: API changelog
-            href: changelog.md
+            href: https://developer.microsoft.com/graph/changelog
       - name: Users you can reach
         items:
           - name: Overview
@@ -193,6 +193,9 @@ items:
               - name: Upload data to upload session
                 href: upload-data-to-upload-session.md
                 displayName: Universal Print Job Submission
+              - name: Change notifications
+                href: universal-print-webhook-notifications.md
+                displayName: Universal Print Webhook Notifications
           - name: Corporate management
             href: intune-concept-overview.md
             displayName: Intune
@@ -221,7 +224,7 @@ items:
                 href: tutorial-riskdetection-api.md
           - name: Governance
             items:
-              - name: Create an access package
+              - name: Manage access to resources
                 href: tutorial-access-package-api.md
       - name: Mail
         displayName: Outlook, Outlook mail
@@ -385,7 +388,7 @@ items:
           - name: Licenses for subscribing to chat messages
             href: teams-licenses.md
           - name: Send proactive messages with a bot
-            href: teams-proactive-messaging.md
+            href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
           - name: Send activity feed notifications
             href: teams-send-activityfeednotifications.md
       - name: To-do tasks
@@ -487,6 +490,12 @@ items:
                 href: extensibility-open-users.md
               - name: Use schema extensions (example)
                 href: extensibility-schema-groups.md
+          - name: Use Graph Explorer
+            items:
+            - name: Get started
+              href: graph-explorer/graph-explorer-overview.md
+            - name: Work with Graph Explorer
+              href: graph-explorer/graph-explorer-features.md
           - name: Use Postman
             href: use-postman.md
       - name: Migrate
@@ -639,6 +648,6 @@ items:
           - name: Errors
             href: errors.md
       - name: v1.0 reference
-        href: /graph/api/overview?view=graph-rest-1.0
+        href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
       - name: Beta reference
-        href: /graph/api/overview?view=graph-rest-beta
+        href: /graph/api/overview?view=graph-rest-beta&preserve-view=true
