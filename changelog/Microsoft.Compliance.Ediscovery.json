@@ -3,83 +3,11 @@
 		{
 			"ChangeList": [
 				{
-					"Id": "7830257c-17be-11eb-baa1-5b13c31fb2cd",
-					"ApiChange": "Relationship",
-					"ChangedApiName": "custodians",
-					"ChangeType": "Addition",
-					"Description": "Added the **custodians** relationship to [ediscoveryCase](https://docs.microsoft.com/graph/api/resources/ediscoveryCase?view=graph-rest-beta) resource",
-					"Target": "ediscoveryCase"
-				},
-				{
-					"Id": "783286cc-17be-11eb-baa1-5b13c31fb2cd",
-					"ApiChange": "Resource",
-					"ChangedApiName": "custodian",
-					"ChangeType": "Addition",
-					"Description": "Added the [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta) resource type",
-					"Target": "custodian"
-				},
-				{
-					"Id": "783ac40d-17be-11eb-baa1-5b13c31fb2cd",
-					"ApiChange": "Resource",
-					"ChangedApiName": "unifiedGroupSource",
-					"ChangeType": "Addition",
-					"Description": "Added the [unifiedGroupSource](https://docs.microsoft.com/graph/api/resources/unifiedGroupSource?view=graph-rest-beta) resource type",
-					"Target": "unifiedGroupSource"
-				},
-				{
-					"Id": "783d27dc-17be-11eb-baa1-5b13c31fb2cd",
-					"ApiChange": "Resource",
-					"ChangedApiName": "siteSource",
-					"ChangeType": "Addition",
-					"Description": "Added the [siteSource](https://docs.microsoft.com/graph/api/resources/siteSource?view=graph-rest-beta) resource type",
-					"Target": "siteSource"
-				},
-				{
-					"Id": "783f8b3b-17be-11eb-baa1-5b13c31fb2cd",
-					"ApiChange": "Resource",
-					"ChangedApiName": "userSource",
-					"ChangeType": "Addition",
-					"Description": "Added the [userSource](https://docs.microsoft.com/graph/api/resources/userSource?view=graph-rest-beta) resource type",
-					"Target": "userSource"
-				},
-				{
-					"Id": "7842c333-17be-11eb-baa1-5b13c31fb2cd",
-					"ApiChange": "Enum type",
-					"ChangedApiName": "custodianStatus",
-					"ChangeType": "Addition",
-					"Description": "Added the **custodianStatus** enumeration type to [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta)",
-					"Target": "custodianStatus"
-				},
-				{
-					"Id": "78452752-17be-11eb-baa1-5b13c31fb2cd",
-					"ApiChange": "Enum type",
-					"ChangedApiName": "sourceType",
-					"ChangeType": "Addition",
-					"Description": "Added the **sourceType** enumeration type to [userSource](https://docs.microsoft.com/graph/api/resources/usersource?view=graph-rest-beta) and [unifiedGroupSource](https://docs.microsoft.com/graph/api/resources/unifiedgroupsource?view=graph-rest-beta)",
-					"Target": "sourceType"
-				},
-				{
-					"Id": "784c4f76-17be-11eb-baa1-5b13c31fb2cd",
-					"ApiChange": "Method",
-					"ChangedApiName": "release",
-					"ChangeType": "Addition",
-					"Description": "Added the [release](https://docs.microsoft.com/graph/api/custodian-release?view=graph-rest-beta) method to the [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta) resource",
-					"Target": "custodian"
-				},
-				{
-					"Id": "784eb056-17be-11eb-baa1-5b13c31fb2cd",
-					"ApiChange": "Method",
-					"ChangedApiName": "activate",
-					"ChangeType": "Addition",
-					"Description": "Added the [activate](https://docs.microsoft.com/graph/api/custodian-activate?view=graph-rest-beta) method to the [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta) resource",
-					"Target": "custodian"
-				},
-				{
 					"Id": "43fe0f3f-3358-11eb-9836-6aeb5ee7dda6",
 					"ApiChange": "Resource",
 					"ChangedApiName": "case",
 					"ChangeType": "Addition",
-					"Description": "Added the [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource type",
+					"Description": "Added the [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource type.",
 					"Target": "case"
 				},
 				{
@@ -87,7 +15,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "legalHold",
 					"ChangeType": "Addition",
-					"Description": "Added the [legalHold](https://docs.microsoft.com/en-us/graph/api/resources/legalHold?view=graph-rest-beta) resource type",
+					"Description": "Added the [legalHold](https://docs.microsoft.com/en-us/graph/api/resources/legalHold?view=graph-rest-beta) resource type.",
 					"Target": "legalHold"
 				},
 				{
@@ -95,7 +23,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "caseOperation",
 					"ChangeType": "Addition",
-					"Description": "Added the [caseOperation](https://docs.microsoft.com/en-us/graph/api/resources/caseOperation?view=graph-rest-beta) resource type",
+					"Description": "Added the [caseOperation](https://docs.microsoft.com/en-us/graph/api/resources/caseOperation?view=graph-rest-beta) resource type.",
 					"Target": "caseOperation"
 				},
 				{
@@ -103,7 +31,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "caseExportOperation",
 					"ChangeType": "Addition",
-					"Description": "Added the [caseExportOperation](https://docs.microsoft.com/en-us/graph/api/resources/caseExportOperation?view=graph-rest-beta) resource type",
+					"Description": "Added the [caseExportOperation](https://docs.microsoft.com/en-us/graph/api/resources/caseExportOperation?view=graph-rest-beta) resource type.",
 					"Target": "caseExportOperation"
 				},
 				{
@@ -111,7 +39,7 @@
 					"ApiChange": "Enum type",
 					"ChangedApiName": "legalHoldStatus",
 					"ChangeType": "Addition",
-					"Description": "Added the **legalHoldStatus** enumeration type",
+					"Description": "Added the **legalHoldStatus** enumeration type.",
 					"Target": "legalHoldStatus"
 				},
 				{
@@ -119,7 +47,7 @@
 					"ApiChange": "Enum type",
 					"ChangedApiName": "exportOptions",
 					"ChangeType": "Addition",
-					"Description": "Added the **exportOptions** enumeration type",
+					"Description": "Added the **exportOptions** enumeration type.",
 					"Target": "exportOptions"
 				},
 				{
@@ -127,7 +55,7 @@
 					"ApiChange": "Enum type",
 					"ChangedApiName": "exportFileStructure",
 					"ChangeType": "Addition",
-					"Description": "Added the **exportFileStructure** enumeration type",
+					"Description": "Added the **exportFileStructure** enumeration type.",
 					"Target": "exportFileStructure"
 				},
 				{
@@ -135,7 +63,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "close",
 					"ChangeType": "Addition",
-					"Description": "Added the [close](https://docs.microsoft.com/en-us/graph/api/case-close?view=graph-rest-beta) method to the [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource",
+					"Description": "Added the [close](https://docs.microsoft.com/en-us/graph/api/case-close?view=graph-rest-beta) method to the [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource.",
 					"Target": "case"
 				},
 				{
@@ -143,7 +71,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "reopen",
 					"ChangeType": "Addition",
-					"Description": "Added the [reopen](https://docs.microsoft.com/en-us/graph/api/case-reopen?view=graph-rest-beta) method to the [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource",
+					"Description": "Added the [reopen](https://docs.microsoft.com/en-us/graph/api/case-reopen?view=graph-rest-beta) method to the [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource.",
 					"Target": "case"
 				},
 				{
@@ -151,7 +79,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "export",
 					"ChangeType": "Addition",
-					"Description": "Added the [export](https://docs.microsoft.com/en-us/graph/api/reviewSet-export?view=graph-rest-beta) method to the [reviewSet](https://docs.microsoft.com/en-us/graph/api/resources/reviewSet?view=graph-rest-beta) resource",
+					"Description": "Added the [export](https://docs.microsoft.com/en-us/graph/api/reviewSet-export?view=graph-rest-beta) method to the [reviewSet](https://docs.microsoft.com/en-us/graph/api/resources/reviewSet?view=graph-rest-beta) resource.",
 					"Target": "reviewSet"
 				},
 				{
@@ -159,7 +87,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "getDownloadUrl",
 					"ChangeType": "Addition",
-					"Description": "Added the [getDownloadUrl](https://docs.microsoft.com/en-us/graph/api/caseExportOperation-getDownloadUrl?view=graph-rest-beta) method to the [caseExportOperation](https://docs.microsoft.com/en-us/graph/api/resources/caseExportOperation?view=graph-rest-beta) resource",
+					"Description": "Added the [getDownloadUrl](https://docs.microsoft.com/en-us/graph/api/caseExportOperation-getDownloadUrl?view=graph-rest-beta) method to the [caseExportOperation](https://docs.microsoft.com/en-us/graph/api/resources/caseExportOperation?view=graph-rest-beta) resource.",
 					"Target": "caseExportOperation"
 				},
 				{
@@ -167,7 +95,7 @@
 					"ApiChange": "Relationship",
 					"ChangedApiName": "cases",
 					"ChangeType": "Deletion",
-					"Description": "Removed the **cases** relationship from [ediscovery](https://docs.microsoft.com/en-us/graph/api/resources/ediscovery?view=graph-rest-beta) resource",
+					"Description": "Removed the **cases** relationship from [ediscovery](https://docs.microsoft.com/en-us/graph/api/resources/ediscovery?view=graph-rest-beta) resource.",
 					"Target": "ediscovery"
 				},
 				{
@@ -175,7 +103,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "ediscoveryCase",
 					"ChangeType": "Deletion",
-					"Description": "Removed the **ediscoveryCase** resource type",
+					"Description": "Removed the **ediscoveryCase** resource type.",
 					"Target": "ediscoveryCase"
 				},
 				{
@@ -183,7 +111,7 @@
 					"ApiChange": "Parameter",
 					"ChangedApiName": "bindingParameter",
 					"ChangeType": "Change",
-					"Description": "Changed the type of the **bindingParameter** parameter in the [close](https://docs.microsoft.com/en-us/graph/api/ediscoveryCase-close?view=graph-rest-beta) method",
+					"Description": "Changed the type of the **bindingParameter** parameter in the [close](https://docs.microsoft.com/en-us/graph/api/ediscoveryCase-close?view=graph-rest-beta) method.",
 					"Target": "close"
 				},
 				{
@@ -191,7 +119,7 @@
 					"ApiChange": "Parameter",
 					"ChangedApiName": "bindingParameter",
 					"ChangeType": "Change",
-					"Description": "Changed the type of the **bindingParameter** parameter in the [reopen](https://docs.microsoft.com/en-us/graph/api/ediscoveryCase-reopen?view=graph-rest-beta) method",
+					"Description": "Changed the type of the **bindingParameter** parameter in the [reopen](https://docs.microsoft.com/en-us/graph/api/ediscoveryCase-reopen?view=graph-rest-beta) method.",
 					"Target": "reopen"
 				},
 				{
@@ -199,7 +127,7 @@
 					"ApiChange": "Relationship",
 					"ChangedApiName": "tags",
 					"ChangeType": "Addition",
-					"Description": "Added the **tags** relationship to [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource",
+					"Description": "Added the **tags** relationship to [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource.",
 					"Target": "case"
 				},
 				{
@@ -207,7 +135,7 @@
 					"ApiChange": "Relationship",
 					"ChangedApiName": "sourceCollections",
 					"ChangeType": "Addition",
-					"Description": "Added the **sourceCollections** relationship to [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource",
+					"Description": "Added the **sourceCollections** relationship to [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource.",
 					"Target": "case"
 				},
 				{
@@ -215,7 +143,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "sourceCollection",
 					"ChangeType": "Addition",
-					"Description": "Added the [sourceCollection](https://docs.microsoft.com/en-us/graph/api/resources/sourceCollection?view=graph-rest-beta) resource type",
+					"Description": "Added the [sourceCollection](https://docs.microsoft.com/en-us/graph/api/resources/sourceCollection?view=graph-rest-beta) resource type.",
 					"Target": "sourceCollection"
 				},
 				{
@@ -223,7 +151,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "tag",
 					"ChangeType": "Addition",
-					"Description": "Added the [tag](https://docs.microsoft.com/en-us/graph/api/resources/tag?view=graph-rest-beta) resource type",
+					"Description": "Added the [tag](https://docs.microsoft.com/en-us/graph/api/resources/tag?view=graph-rest-beta) resource type.",
 					"Target": "tag"
 				},
 				{
@@ -231,7 +159,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "tagOperation",
 					"ChangeType": "Addition",
-					"Description": "Added the [tagOperation](https://docs.microsoft.com/en-us/graph/api/resources/tagOperation?view=graph-rest-beta) resource type",
+					"Description": "Added the [tagOperation](https://docs.microsoft.com/en-us/graph/api/resources/tagOperation?view=graph-rest-beta) resource type.",
 					"Target": "tagOperation"
 				},
 				{
@@ -239,7 +167,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "estimateStatisticsOperation",
 					"ChangeType": "Addition",
-					"Description": "Added the [estimateStatisticsOperation](https://docs.microsoft.com/en-us/graph/api/resources/estimateStatisticsOperation?view=graph-rest-beta) resource type",
+					"Description": "Added the [estimateStatisticsOperation](https://docs.microsoft.com/en-us/graph/api/resources/estimateStatisticsOperation?view=graph-rest-beta) resource type.",
 					"Target": "estimateStatisticsOperation"
 				},
 				{
@@ -247,7 +175,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "addToReviewSetOperation",
 					"ChangeType": "Addition",
-					"Description": "Added the [addToReviewSetOperation](https://docs.microsoft.com/en-us/graph/api/resources/addToReviewSetOperation?view=graph-rest-beta) resource type",
+					"Description": "Added the [addToReviewSetOperation](https://docs.microsoft.com/en-us/graph/api/resources/addToReviewSetOperation?view=graph-rest-beta) resource type.",
 					"Target": "addToReviewSetOperation"
 				},
 				{
@@ -255,7 +183,7 @@
 					"ApiChange": "Member",
 					"ChangedApiName": "applyTags",
 					"ChangeType": "Addition",
-					"Description": "Added the `applyTags` member to the **caseAction** enumeration",
+					"Description": "Added the `applyTags` member to the **caseAction** enumeration.",
 					"Target": "caseAction"
 				},
 				{
@@ -263,7 +191,7 @@
 					"ApiChange": "Member",
 					"ChangedApiName": "estimateStatistics",
 					"ChangeType": "Addition",
-					"Description": "Added the `estimateStatistics` member to the **caseAction** enumeration",
+					"Description": "Added the `estimateStatistics` member to the **caseAction** enumeration.",
 					"Target": "caseAction"
 				},
 				{
@@ -271,7 +199,7 @@
 					"ApiChange": "Member",
 					"ChangedApiName": "addToReviewSet",
 					"ChangeType": "Addition",
-					"Description": "Added the `addToReviewSet` member to the **caseAction** enumeration",
+					"Description": "Added the `addToReviewSet` member to the **caseAction** enumeration.",
 					"Target": "caseAction"
 				},
 				{
@@ -279,7 +207,7 @@
 					"ApiChange": "Member",
 					"ChangedApiName": "unknownFutureValue",
 					"ChangeType": "Addition",
-					"Description": "Added the `unknownFutureValue` member to the **caseAction** enumeration",
+					"Description": "Added the `unknownFutureValue` member to the **caseAction** enumeration.",
 					"Target": "caseAction"
 				},
 				{
@@ -287,7 +215,7 @@
 					"ApiChange": "Enum type",
 					"ChangedApiName": "childSelectability",
 					"ChangeType": "Addition",
-					"Description": "Added the **childSelectability** enumeration type",
+					"Description": "Added the **childSelectability** enumeration type.",
 					"Target": "childSelectability"
 				},
 				{
@@ -295,7 +223,7 @@
 					"ApiChange": "Enum type",
 					"ChangedApiName": "tenantSources",
 					"ChangeType": "Addition",
-					"Description": "Added the **tenantSources** enumeration type",
+					"Description": "Added the **tenantSources** enumeration type.",
 					"Target": "tenantSources"
 				},
 				{
@@ -303,7 +231,7 @@
 					"ApiChange": "Enum type",
 					"ChangedApiName": "dataCollectionScope",
 					"ChangeType": "Addition",
-					"Description": "Added the **dataCollectionScope** enumeration type",
+					"Description": "Added the **dataCollectionScope** enumeration type.",
 					"Target": "dataCollectionScope"
 				},
 				{
@@ -311,7 +239,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "applyTags",
 					"ChangeType": "Addition",
-					"Description": "Added the [applyTags](https://docs.microsoft.com/en-us/graph/api/reviewSetQuery-applyTags?view=graph-rest-beta) method to the [reviewSetQuery](https://docs.microsoft.com/en-us/graph/api/resources/reviewSetQuery?view=graph-rest-beta) resource",
+					"Description": "Added the [applyTags](https://docs.microsoft.com/en-us/graph/api/reviewSetQuery-applyTags?view=graph-rest-beta) method to the [reviewSetQuery](https://docs.microsoft.com/en-us/graph/api/resources/reviewSetQuery?view=graph-rest-beta) resource.",
 					"Target": "reviewSetQuery"
 				},
 				{
@@ -319,7 +247,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "estimateStatistics",
 					"ChangeType": "Addition",
-					"Description": "Added the [estimateStatistics](https://docs.microsoft.com/en-us/graph/api/sourceCollection-estimateStatistics?view=graph-rest-beta) method to the [sourceCollection](https://docs.microsoft.com/en-us/graph/api/resources/sourceCollection?view=graph-rest-beta) resource",
+					"Description": "Added the [estimateStatistics](https://docs.microsoft.com/en-us/graph/api/sourceCollection-estimateStatistics?view=graph-rest-beta) method to the [sourceCollection](https://docs.microsoft.com/en-us/graph/api/resources/sourceCollection?view=graph-rest-beta) resource.",
 					"Target": "sourceCollection"
 				},
 				{
@@ -327,7 +255,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "addToReviewSet",
 					"ChangeType": "Addition",
-					"Description": "Added the [addToReviewSet](https://docs.microsoft.com/en-us/graph/api/reviewSet-addToReviewSet?view=graph-rest-beta) method to the [reviewSet](https://docs.microsoft.com/en-us/graph/api/resources/reviewSet?view=graph-rest-beta) resource",
+					"Description": "Added the [addToReviewSet](https://docs.microsoft.com/en-us/graph/api/reviewSet-addToReviewSet?view=graph-rest-beta) method to the [reviewSet](https://docs.microsoft.com/en-us/graph/api/resources/reviewSet?view=graph-rest-beta) resource.",
 					"Target": "reviewSet"
 				},
 				{
@@ -335,7 +263,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "asHierarchy",
 					"ChangeType": "Addition",
-					"Description": "Added the [asHierarchy](https://docs.microsoft.com/en-us/graph/api/tag-asHierarchy?view=graph-rest-beta) method to the [tag](https://docs.microsoft.com/en-us/graph/api/resources/tag?view=graph-rest-beta) resource",
+					"Description": "Added the [asHierarchy](https://docs.microsoft.com/en-us/graph/api/tag-asHierarchy?view=graph-rest-beta) method to the [tag](https://docs.microsoft.com/en-us/graph/api/resources/tag?view=graph-rest-beta) resource.",
 					"Target": "tag"
 				},
 				{
@@ -343,7 +271,7 @@
 					"ApiChange": "Member",
 					"ChangedApiName": "tag",
 					"ChangeType": "Deletion",
-					"Description": "Removed the `tag` member from the **caseAction** enumeration",
+					"Description": "Removed the `tag` member from the **caseAction** enumeration.",
 					"Target": "caseAction"
 				},
 				{
@@ -351,7 +279,7 @@
 					"ApiChange": "Member",
 					"ChangedApiName": "search",
 					"ChangeType": "Deletion",
-					"Description": "Removed the `search` member from the **caseAction** enumeration",
+					"Description": "Removed the `search` member from the **caseAction** enumeration.",
 					"Target": "caseAction"
 				},
 				{
@@ -359,7 +287,7 @@
 					"ApiChange": "Member",
 					"ChangedApiName": "addDataToReviewSet",
 					"ChangeType": "Deletion",
-					"Description": "Removed the `addDataToReviewSet` member from the **caseAction** enumeration",
+					"Description": "Removed the `addDataToReviewSet` member from the **caseAction** enumeration.",
 					"Target": "caseAction"
 				},
 				{
@@ -367,7 +295,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "case",
 					"ChangeType": "Change",
-					"Description": "Moved the `case` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace",
+					"Description": "Moved the `case` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace.",
 					"Target": "case"
 				},
 				{
@@ -375,7 +303,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "Custodian",
 					"ChangeType": "Change",
-					"Description": "Moved the `Custodian` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace",
+					"Description": "Moved the `Custodian` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace.",
 					"Target": "Custodian"
 				},
 				{
@@ -383,7 +311,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "datasource",
 					"ChangeType": "Change",
-					"Description": "Moved the `datasource` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace",
+					"Description": "Moved the `datasource` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace.",
 					"Target": "datasource"
 				},
 				{
@@ -391,7 +319,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "reviewSet",
 					"ChangeType": "Change",
-					"Description": "Moved the `reviewSet` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace",
+					"Description": "Moved the `reviewSet` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace.",
 					"Target": "reviewSet"
 				},
 				{
@@ -399,7 +327,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "reviewSetQuery",
 					"ChangeType": "Change",
-					"Description": "Moved the `reviewSetQuery` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace",
+					"Description": "Moved the `reviewSetQuery` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace.",
 					"Target": "reviewSetQuery"
 				},
 				{
@@ -407,7 +335,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "siteSource",
 					"ChangeType": "Change",
-					"Description": "Moved the `siteSource` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace",
+					"Description": "Moved the `siteSource` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace.",
 					"Target": "siteSource"
 				},
 				{
@@ -415,7 +343,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "unifiedGroupSource",
 					"ChangeType": "Change",
-					"Description": "Moved the `unifiedGroupSource` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace",
+					"Description": "Moved the `unifiedGroupSource` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace.",
 					"Target": "unifiedGroupSource"
 				},
 				{
@@ -423,9 +351,91 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "userSource",
 					"ChangeType": "Change",
-					"Description": "Moved the `userSource` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace",
+					"Description": "Moved the `userSource` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace.",
 					"Target": "userSource"
 				}
+			],
+			"Id": "7c733572-5104-11eb-ae35-ed470c456b69",
+			"Cloud": "prd",
+			"Version": "beta",
+			"CreatedDateTime": "2021-02-22T19:07:19.242Z",
+			"WorkloadArea": "Compliance",
+			"SubArea": "eDiscovery"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "7830257c-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Relationship",
+					"ChangedApiName": "custodians",
+					"ChangeType": "Addition",
+					"Description": "Added the **custodians** relationship to [ediscoveryCase](https://docs.microsoft.com/graph/api/resources/ediscoveryCase?view=graph-rest-beta) resource.",
+					"Target": "ediscoveryCase"
+				},
+				{
+					"Id": "783286cc-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Resource",
+					"ChangedApiName": "custodian",
+					"ChangeType": "Addition",
+					"Description": "Added the [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta) resource type.",
+					"Target": "custodian"
+				},
+				{
+					"Id": "783ac40d-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Resource",
+					"ChangedApiName": "unifiedGroupSource",
+					"ChangeType": "Addition",
+					"Description": "Added the [unifiedGroupSource](https://docs.microsoft.com/graph/api/resources/unifiedGroupSource?view=graph-rest-beta) resource type.",
+					"Target": "unifiedGroupSource"
+				},
+				{
+					"Id": "783d27dc-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Resource",
+					"ChangedApiName": "siteSource",
+					"ChangeType": "Addition",
+					"Description": "Added the [siteSource](https://docs.microsoft.com/graph/api/resources/siteSource?view=graph-rest-beta) resource type.",
+					"Target": "siteSource"
+				},
+				{
+					"Id": "783f8b3b-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Resource",
+					"ChangedApiName": "userSource",
+					"ChangeType": "Addition",
+					"Description": "Added the [userSource](https://docs.microsoft.com/graph/api/resources/userSource?view=graph-rest-beta) resource type.",
+					"Target": "userSource"
+				},
+				{
+					"Id": "7842c333-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Enum type",
+					"ChangedApiName": "custodianStatus",
+					"ChangeType": "Addition",
+					"Description": "Added the **custodianStatus** enumeration type to [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta).",
+					"Target": "custodianStatus"
+				},
+				{
+					"Id": "78452752-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Enum type",
+					"ChangedApiName": "sourceType",
+					"ChangeType": "Addition",
+					"Description": "Added the **sourceType** enumeration type to [userSource](https://docs.microsoft.com/graph/api/resources/usersource?view=graph-rest-beta) and [unifiedGroupSource](https://docs.microsoft.com/graph/api/resources/unifiedgroupsource?view=graph-rest-beta).",
+					"Target": "sourceType"
+				},
+				{
+					"Id": "784c4f76-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Method",
+					"ChangedApiName": "release",
+					"ChangeType": "Addition",
+					"Description": "Added the [release](https://docs.microsoft.com/graph/api/custodian-release?view=graph-rest-beta) method to the [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta) resource.",
+					"Target": "custodian"
+				},
+				{
+					"Id": "784eb056-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Method",
+					"ChangedApiName": "activate",
+					"ChangeType": "Addition",
+					"Description": "Added the [activate](https://docs.microsoft.com/graph/api/custodian-activate?view=graph-rest-beta) method to the [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta) resource.",
+					"Target": "custodian"
+				},
 			],
 			"Id": "782dc913-17be-11eb-baa1-5b13c31fb2cd",
 			"Cloud": "prd",
