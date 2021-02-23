@@ -40,8 +40,8 @@ No `POST`, `PUT`, `PATCH`, or `DELETE` operations are supported on the `roleAssi
 |externalId   |String     |The external ID the resource that is used to identify the role assignment in the provider.|
 |startDateTime|DateTimeOffset|The start time of the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |endDateTime|DateTimeOffset|For a non-permanent role assignment, this is the time when the role assignment will be expired. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|assignmentState|governanceRoleAssignmentState|The state of the assignment. The value can be <ul><li> `Eligible` for eligible assignment</li><li> `Active` - if it is directly assigned `Active` by administrators, or activated on an eligible assignment by the users.</li></ul>|
-|memberType|governanceRoleMemberType|The type of member. The value can be: <ul><li>`Inherited` - the role assignment is inherited from a parent resource scope</li><li>`Group`- the role assignment is not inherited, but comes from the membership of a group assignment</li><li>`User` - the role assignment is neither inherited nor from a group assignment.</li></ul>|
+|assignmentState|String|The state of the assignment. The value can be <ul><li> `Eligible` for eligible assignment</li><li> `Active` - if it is directly assigned `Active` by administrators, or activated on an eligible assignment by the users.</li></ul>|
+|memberType|String|The type of member. The value can be: <ul><li>`Inherited` - the role assignment is inherited from a parent resource scope</li><li>`Group`- the role assignment is not inherited, but comes from the membership of a group assignment</li><li>`User` - the role assignment is neither inherited nor from a group assignment.</li></ul>|
 
 
 ## Relationships

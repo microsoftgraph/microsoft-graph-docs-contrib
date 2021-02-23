@@ -11,14 +11,6 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
-### tokenSigningOptions values
-
-|Member|
-|:---|
-|ResponseOnly|
-|TokenOnly|
-|ResponseAndToken|
-
 ### allowInvitesFrom values
 
 |Member|
@@ -64,13 +56,6 @@ Namespace: microsoft.graph
 |:--------------|
 |always|
 |never|
-
-### conditionalOperators values
-
-| Member       |
-|:--------------|
-|AND|
-|OR|
 
 ### cloudAppSecuritySessionControlType values
 

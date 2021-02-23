@@ -44,10 +44,10 @@ Represents an Azure AD [access review](accessreviews-root.md).
 | displayName | String | The access review name. Required on create. |
 | startDateTime | DateTimeOffset | The DateTime when the review is scheduled to be start.  This could be a date in the future.  Required on create. |
 | endDateTime | DateTimeOffset | The DateTime when the review is scheduled to end. This must be at least one day later than the start date.  Required on create. |
-| status | accessReviewStatus | This read-only field specifies the status of an accessReview. The typical states include `Initializing`, `NotStarted`, `Starting`,`InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`. |
+| status | String | This read-only field specifies the status of an accessReview. The typical states include `Initializing`, `NotStarted`, `Starting`,`InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`. |
 | description | String | The description provided by the access review creator, to show to the reviewers. |
 | businessFlowTemplateId | String | The business flow template identifier. Required on create.  This value is case sensitive. |
-| reviewerType | accessReviewReviewerType | The relationship type of reviewer to the target object, one of `self`, `delegated` or `entityOwners`. Required on create. | 
+| reviewerType | String | The relationship type of reviewer to the target object, one of `self`, `delegated` or `entityOwners`. Required on create. | 
 | createdBy | [userIdentity](useridentity.md) | The user who created this review. |
 | reviewedEntity | [identity](identity.md) | The object for which the access reviews is reviewing the access rights assignments. This can be the group for the review of memberships of users in a group, or the app for a review of assignments of users to an application. Required on create. | 
 | settings | [accessReviewSettings](accessreviewsettings.md) | The settings of an accessReview, see type definition below. |

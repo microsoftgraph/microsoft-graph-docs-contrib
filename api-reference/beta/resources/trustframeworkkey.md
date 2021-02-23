@@ -20,8 +20,8 @@ Represents a JWK (JSON Web Key). TrustFrameworkKey is a JSON data structure that
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 | kid | string | The unique identifier for the key.   |
-| kty | publicKeyType | The **kty** (key type) parameter identifies the cryptographic algorithm family used with the key, The valid values are `rsa`, `oct`. |
-| use | publicKeyUse | The **use** (public key use) parameter identifies the intended use of the public key.  The **use** parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data. Possible values are<ul><li>`sig` - signature.</li><li> `enc` - encryption.</li></ul>   |
+| kty | String | The **kty** (key type) parameter identifies the cryptographic algorithm family used with the key, The valid values are `rsa`, `oct`. |
+| use | String | The **use** (public key use) parameter identifies the intended use of the public key.  The **use** parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data. Possible values are<ul><li>`sig` - signature.</li><li> `enc` - encryption.</li></ul>   |
 | x5c | string collection | The **x5c** (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates [RFC 5280](https://tools.ietf.org/html/rfc5280). |
 | x5t | string | The **x5t** (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (a.k.a. digest) of the DER encoding of an X.509 certificate [RFC 5280](https://tools.ietf.org/html/rfc5280). |
 | e | string | RSA Key - public exponent |

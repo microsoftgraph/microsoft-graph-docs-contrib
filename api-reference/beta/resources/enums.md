@@ -11,6 +11,23 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### approvalState values
+
+|Member|
+|:---|
+|pending|
+|approved|
+|denied|
+|aborted|
+|canceled|
+
+### roleSummaryStatus values
+
+|Member|
+|:---|
+|ok|
+|bad|
+
 ### dataPolicyOperationStatus values
 
 |Member|
@@ -1734,7 +1751,8 @@ Possible values for user account types (group membership), per Windows definitio
 | boolean               | 2     | Boolean data type                   |
 | int64                 | 3     | Int data type                       |
 | stringCollection      | 4     | String collection data type         |
-| unknownFutureValue    | 5     | A sentinel member.                  |
+|dateTime|5||
+| unknownFutureValue    | 6     | A sentinel member.                  |
 
 ### identityUserFlowAttributeType values
 
@@ -1742,7 +1760,8 @@ Possible values for user account types (group membership), per Windows definitio
 |:----------------------|:------|:-------------------------------------------------------------------|
 | builtIn               | 1     | This user flow attribute type denotes it was created by the system |
 | custom                | 2     | This user flow attribute type denotes it was created by the user   |
-| unknownFutureValue    | 3     | A sentinel member.                                                 |
+|required|3||
+| unknownFutureValue    | 4     | A sentinel member.                                                 |
 
 ### connectionState values
 

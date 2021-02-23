@@ -26,7 +26,7 @@ Represents settings that control the behavior of [Azure AD entitlement managemen
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|externalUserLifecycleAction|externalUserLifecycleAction|One of `None`, `BlockSignIn`, or `BlockSignInAndDelete`. |
+|externalUserLifecycleAction|String|One of `None`, `BlockSignIn`, or `BlockSignInAndDelete`. |
 |daysUntilExternalUserDeletedAfterBlocked|Int64|If **externalUserLifecycleAction** is `BlockSignInAndDelete`, the number of days after an external user is blocked from sign in before their account is deleted.|
 
 ## Relationships
