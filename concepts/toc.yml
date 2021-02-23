@@ -224,7 +224,7 @@ items:
                 href: tutorial-riskdetection-api.md
           - name: Governance
             items:
-              - name: Create an access package
+              - name: Manage access to resources
                 href: tutorial-access-package-api.md
       - name: Mail
         displayName: Outlook, Outlook mail
@@ -490,6 +490,12 @@ items:
                 href: extensibility-open-users.md
               - name: Use schema extensions (example)
                 href: extensibility-schema-groups.md
+          - name: Use Graph Explorer
+            items:
+            - name: Get started
+              href: graph-explorer/graph-explorer-overview.md
+            - name: Work with Graph Explorer
+              href: graph-explorer/graph-explorer-features.md
           - name: Use Postman
             href: use-postman.md
       - name: Migrate
@@ -646,6 +652,6 @@ items:
           - name: Errors
             href: errors.md
       - name: v1.0 reference
-        href: /graph/api/overview?view=graph-rest-1.0
+        href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
       - name: Beta reference
-        href: /graph/api/overview?view=graph-rest-beta
+        href: /graph/api/overview?view=graph-rest-beta&preserve-view=true
