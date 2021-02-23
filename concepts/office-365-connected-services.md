@@ -89,4 +89,4 @@ The starter sample includes the following files:
 
 ## Need help?
 
-If you need help, post your questions on [Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-azure-ad.html). Tag your post with {microsoft-graph-azure-ad}.
+If you need help, post your questions on [Microsoft Q&A](https://aka.ms/askgraph).
