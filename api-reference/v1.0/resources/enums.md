@@ -27,6 +27,7 @@ Namespace: microsoft.graph
 |adminsAndGuestInviters|
 |adminsGuestInvitersAndAllMembers|
 |everyone|
+|unknownFutureValue|
 
 ### dataPolicyOperationStatus values
 

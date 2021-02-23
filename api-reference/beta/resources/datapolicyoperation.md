@@ -57,7 +57,7 @@ Here is a JSON representation of the resource.
   "storageLocation": "String",
   "userId": "String",
   "submittedDateTime": "String (timestamp)",
-  "progress": "Double"
+  "progress": "String (double)"
 }
 
 ```

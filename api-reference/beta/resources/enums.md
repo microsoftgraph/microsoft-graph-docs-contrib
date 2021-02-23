@@ -11,6 +11,16 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### dataPolicyOperationStatus values
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|complete|
+|failed|
+|unknownFutureValue|
+
 ### conditionalAccessClientApp values
 
 |Member|
@@ -228,43 +238,6 @@ Namespace: microsoft.graph
 |CA|
 |unknownFutureValue|
 
-### riskDetail values 
-
-|Member|
-|:---|
-|none|
-|adminGeneratedTemporaryPassword|
-|userPerformedSecuredPasswordChange|
-|userPerformedSecuredPasswordReset|
-|adminConfirmedSigninSafe|
-|aiConfirmedSigninSafe|
-|userPassedMFADrivenByRiskBasedPolicy|
-|adminDismissedAllRiskForUser|
-|adminConfirmedSigninCompromised|
-|hidden|
-|adminConfirmedUserCompromised|
-|unknownFutureValue|
-
-### riskEventType values 
-
-|Member|
-|:---|
-|unlikelyTravel|
-|anonymizedIPAddress|
-|maliciousIPAddress|
-|unfamiliarFeatures|
-|malwareInfectedIPAddress|
-|suspiciousIPAddress|
-|leakedCredentials|
-|investigationsThreatIntelligence|
-|generic|
-|adminConfirmedUserCompromised|
-|mcasImpossibleTravel|
-|mcasSuspiciousInboxManipulationRules|
-|investigationsThreatIntelligenceSigninLinked|
-|maliciousIPAddressValidCredentialsBlockedIP|
-|unknownFutureValue|
-
 ### riskLevel values 
 
 |Member|
@@ -275,26 +248,6 @@ Namespace: microsoft.graph
 |hidden|
 |none|
 |unknownFutureValue|
-
-### riskState values 
-
-|Member|
-|:---|
-|none|
-|confirmedSafe|
-|remediated|
-|dismissed|
-|atRisk|
-|confirmedCompromised|
-|unknownFutureValue|
-
-### tokenIssuerType values 
-
-|Member|
-|:---|
-|AzureAD|
-|ADFederationServices|
-|UnknownFutureValue|
 
 ### usageAuthMethod values 
 
@@ -1694,21 +1647,6 @@ Possible values for user account types (group membership), per Windows definitio
 | threatCategory               | 1     | Aggregate threat assessment request by `threatCategory`.               |
 | mailDestinationRoutingReason | 2     | Aggregate threat assessment request by `mailDestinationRoutingReason`. |
 
-### riskEventTypes values
-
-| Member
-|:-------------------------
-| unlikelyTravel
-| anonymizedIPAddress
-| maliciousIPAddress
-| unfamiliarFeatures
-| malwareInfectedIPAddress
-| suspiciousIPAddress
-| leakedCredentials
-| investigationsThreatIntelligence
-| generic
-| unknownFutureValue
-
 ### userFlowType values
 
 |Member
@@ -1725,16 +1663,24 @@ Possible values for user account types (group membership), per Windows definitio
 
 | Member
 |:----------------------
-| none
 | form_post
 | query
 | unknownFutureValue
+
+### allowInvitesFrom values
+
+|Member|
+|:---|
+|none|
+|adminsAndGuestInviters|
+|adminsGuestInvitersAndAllMembers|
+|everyone|
+|unknownFutureValue|
 
 ### openIdConnectResponseTypes values
 
 | Member
 |:----------------------
-| none
 | code
 | id_token
 | token
