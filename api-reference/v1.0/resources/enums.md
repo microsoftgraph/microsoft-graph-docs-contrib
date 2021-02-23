@@ -48,6 +48,7 @@ Namespace: microsoft.graph
 |windowsPhone|
 |macOS|
 |all|
+|unknownFutureValue|
 
 ### signinFrequencyType values
 
@@ -92,23 +93,7 @@ Namespace: microsoft.graph
 |passwordChange|
 |unknownFutureValue|
 
-### conditionalAccessUserActions values
-
-|Member|
-|:---|
-|urn:user:registersecurityinfo|
-|urn:user:registerdevice|
-
-### conditionalAccessRiskLevels values
-
-|Member|
-|:---|
-|low|
-|medium|
-|high|
-|none|
-
-### clientAppTypes values
+### conditionalAccessClientApp values
 
 |Member|
 |:---|
@@ -118,6 +103,7 @@ Namespace: microsoft.graph
 |exchangeActiveSync|
 |easSupported|
 |other|
+|unknownFutureValue|
 
 ### conditionalAccessPolicyState values
 

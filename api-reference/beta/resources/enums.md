@@ -11,6 +11,18 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### conditionalAccessClientApp values
+
+|Member|
+|:---|
+|all|
+|browser|
+|mobileAppsAndDesktopClients|
+|exchangeActiveSync|
+|easSupported|
+|other|
+|unknownFutureValue|
+
 ### appliedConditionalAccessPolicyResult values 
 
 |Member|
@@ -1597,6 +1609,7 @@ Possible values for user account types (group membership), per Windows definitio
 |windowsPhone|
 |macOS|
 |all|
+|unknownFutureValue|
 
 ### priority values
 
