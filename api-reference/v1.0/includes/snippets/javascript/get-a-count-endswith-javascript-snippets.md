@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 let res = await client.api('/users')
 	.header('ConsistencyLevel','eventual')
-	.filter('endswith(mail,'a@contoso.com')')
+	.filter('endswith(mail,\'a@contoso.com\')')
 	.orderby('userPrincipalName')
 	.get();
 
