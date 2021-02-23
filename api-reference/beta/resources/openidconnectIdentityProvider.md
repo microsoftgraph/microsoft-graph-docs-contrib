@@ -1,5 +1,5 @@
 ---
-title: "openIdConnectProvider resource type"
+title: "openIdConnectIdentityProvider resource type"
 description: "Represents OpenIDConnect identity providers in an Azure Active Directory B2C tenant."
 localization_priority: Normal
 doc_type: resourcePageType
@@ -7,17 +7,15 @@ ms.prod: "microsoft-identity-platform"
 author: "namkedia"
 ---
 
-# openIdConnectProvider resource type
+# openIdConnectIdentityProvider resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents OpenID Connect identity providers in an Azure Active Directory B2C tenant. 
+Represents OpenID Connect identity providers in an Azure Active Directory B2C tenant.
 
 Configuring an OpenID Connect provider in B2C tenant enables users to sign up and sign in using their custom identity provider in an application.
-
-Inherits from [identityProvider](../resources/identityprovider.md).
 
 ## Methods
 
@@ -37,8 +35,8 @@ Inherits from [identityProvider](../resources/identityprovider.md).
 |clientId|String|The client ID for the application obtained when registering the application with the identity provider. Inherited from [identityProvider](../resources/identityprovider.md). This is a required property.|
 |clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. The clientSecret has a dependency on responseType. In the case of responseType = code, a secret is required for the auth code exchange, but in the case of responseType = id_token it is not required because there is no code exchange, the id_token is returned directly from the authorization response.This is write-only. A read operation will return "\*\*\*\*". Inherited from [identityProvider](../resources/identityprovider.md).|
 |id|String|The ID of the identity provider. It is a required property and is read only after creation.|
-|name|String|The display name of the identity provider. It is a required property and is read only after creation.|
-|type|String|The identity provider type. It must be `OpenIDConnect`.It is a required property and is read only after creation.|
+|displayName|String|The display name of the identity provider. It is a required property and is read only after creation.|
+|identityProviderType|String|The identity provider type. It must be `OpenIDConnect`.It is a required property and is read only after creation.|
 |claimsMapping|[claimsMapping](../resources/claimsmapping.md)|After the OIDC provider sends an ID token back to Azure AD, Azure AD needs to be able to map the claims from the received token to the claims that Azure AD recognizes and uses. This complex type captures that mapping. It is a required property.|
 |domainHint|String|The domain hint can be used to skip directly to the sign in page of the specified identity provider, instead of having the user make a selection among the list of available identity providers.|
 |metadataUrl|String|The URL for the metadata document of the OpenID Connect identity provider. Every OpenID Connect identity provider describes a metadata document that contains most of the information required to perform sign-in. This includes information such as the URLs to use and the location of the service's public signing keys. The OpenID Connect metadata document is always located at an endpoint that ends in .well-known/openid-configuration . For the OpenID Connect identity provider you are looking to add, you will need to provide the metadata URL. It is a required property and is read only after creation.|
@@ -52,7 +50,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.openIdConnectProvider"
+  "@odata.type": "microsoft.graph.openIdConnectIdentityProvider"
 } -->
 
 ```json
@@ -77,5 +75,3 @@ The following is a JSON representation of the resource.
   "scope": "String"
 }
 ```
-
-
