@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Associate a [content type][contentType] with a list of hub sites.
 
->**Note:** This feature is limited to tenants that have an intelligent content services license.
+>**Note:** This feature is limited to tenants that have a SharePoint Syntex license.
   
 
 ## Permissions  
