@@ -1,5 +1,5 @@
 ---
-title: Get printers
+title: List printers
 description: Retrieve the list of printers that are registered in the tenant.
 author: nilakhan
 localization_priority: Normal
