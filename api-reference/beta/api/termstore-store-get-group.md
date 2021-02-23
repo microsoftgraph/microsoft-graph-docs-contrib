@@ -12,7 +12,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [group](../resources/termstore-group.md) object.
+Read the properties and relationships of a term store [group](../resources/termstore-group.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,13 +45,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [group](../resources/termstore-group.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.termStore.group](../resources/termstore-group.md) object in the response body.
 
 ## Examples
 
-### Example 1: Getting a TermGroup
+### Example 1: Get a termStore group
 
-### Request
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -81,9 +81,7 @@ GET https://graph.microsoft.com/beta/termStore/groups/{groupId}
 
 ---
 
-
-
-### Response
+#### Response
 
 **Note:** The response object shown here might be shortened for readability.
 
@@ -105,11 +103,10 @@ Content-Type: application/json
   "displayName": "myGroup"  
 }
 ```
-### Example 2: Getting a TermGroup along with its parent Site Collection Id
+### Example 2: Get a termStore group and its parent site collection ID
 
-### Request
+#### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_group"
@@ -119,11 +116,8 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/termStore/groups/{groupId}?$select=*,parentSiteId
 ```
----
 
-
-
-### Response
+#### Response
 
 **Note:** The response object shown here might be shortened for readability.
 
