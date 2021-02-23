@@ -103,7 +103,7 @@ Content-Type: application/json
   "displayName": "myGroup"  
 }
 ```
-### Example 2: Get a termStore group and its parent site collection ID
+### Example 2: Get a termStore group and its parent site ID
 
 #### Request
 
