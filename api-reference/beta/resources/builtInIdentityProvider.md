@@ -1,6 +1,6 @@
 ---
 title: "builtInIdentityProvider resource type"
-description: "Represents identity providers in an Azure Active Directory tenant and an Azure AD B2C tenant."
+description: "Represents built in identity providers in an Azure Active Directory tenant."
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents built in identity providers with [External Identities](/azure/active-directory/external-identities/) for Azure Active Directory tenant.
 
-For Azure AD B2B scenarios in an Azure AD tenant, the built in identity provider type can be Microsoft Account or email one time passcode.
+For Azure AD B2B scenarios in an Azure AD tenant, the built in identity provider type can be Microsoft Account or Email One Time Passcode.
 
 ## Methods
 

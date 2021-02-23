@@ -56,8 +56,8 @@ The following is a JSON representation of the resource.
 ```json
 {
   "id": "String",
-  "name": "String",
-  "type": "String",
+  "displayName": "String",
+  "identityProviderType": "String",
   "clientId": "String",
   "clientSecret": "String",
   "claimsMapping": {
