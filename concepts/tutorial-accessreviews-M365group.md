@@ -25,7 +25,7 @@ To complete this tutorial, you need the following resources and privileges:
 
 To consent to the required permissions in Microsoft Graph Explorer:
 1. Click **Sign in to Graph Explorer** and sign in using the account that has a global administrator role.
-2. Select the settings gear icon to the right of the user account details, and then select **Select permissions**.
+2. Select the settings icon to the right of the user account details, and then choose **Select permissions**.
    
    ![Select the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/settings.png)
 
