@@ -39,6 +39,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **isRooted** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added the **managementType** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added the **registrationDateTime** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added delegated permission [Policy.ReadWrite.MobilityManagement](./permissions-reference.md#policy-permissions) |
 
 ## January 2021
 
