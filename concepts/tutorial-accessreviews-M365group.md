@@ -1,5 +1,5 @@
 ---
-title: "Using the Access Reviews API for your M365 groups"
+title: "Review access to M365 groups with guest users using Microsoft Graph APIs."
 description: "Use the Access Reviews API to review access to your M365 groups"
 author: "isabelleatmsft"
 localization_priority: Normal
@@ -24,7 +24,7 @@ To complete this tutorial, you need the following resources and privileges:
 
 To consent to the required permissions in Microsoft Graph Explorer:
 1. Click **Sign in to Graph Explorer** and sign in using the account that has a global administrator role.
-2. Select the settings gear icon to the right of the user account details, and then select **Select permissions**.
+2. Select the settings icon to the right of the user account details, and then choose **Select permissions**.
    
    ![Select the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/settings.png)
 
@@ -73,7 +73,7 @@ Content-Type: application/json
     }
 }
 ```
-Take note of the `invitedUser`'s id from the response. In this case, john.doe@outlook.com has been assigned user `id` `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` in your tenant.
+Record the **id** of the **invitedUser** from the response to be used later in this tutorial.
 
 ## Step 2: Create a new M365 group and add the guest user
 
@@ -137,7 +137,7 @@ The access review series uses following settings:
 + The review scope is limited to M365 groups with **Guest users** only.
 + A backup reviewer. This can be a fallback user or a group that can review the access in case the group doesn't have any owners assigned.
 + **autoApplyDecisionsEnabled** is set to `true`. In this case, decisions are applied automatically once the reviewer completes the access review or the access review duration ends. If not enabled, a user must, after the review completes, apply the decisions manually.
-+ Apply **removeAccessApplyAction** action to denied guest users. This removes the denied guest user's membership to the group, though they'll still be able to sign in to your tenant.[Learn more about the implications of this action](/azure/active-directory/governance/create-access-review#create-one-or-more-access-reviews).
++ Apply **removeAccessApplyAction** action to denied guest users. TThis removes the membership in the group of the denied guest. The guest user can still sign in to your tenant.
 
 ### Request
 In this call, replace the following:
@@ -293,7 +293,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 ```
 
 ### Response
-In this response, te scope includes a group of `id` `59ab642a-2776-4e32-9b68-9ff7a47b7f6a`. This is the **Feelgood marketing campaign** group created in Step 2.
+In this response, the scope includes a group of `id` `59ab642a-2776-4e32-9b68-9ff7a47b7f6a`. This is the **Feelgood marketing campaign** group created in Step 2.
 
 ```http
 HTTP/1.1 200 OK
