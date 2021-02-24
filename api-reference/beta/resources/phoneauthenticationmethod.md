@@ -47,12 +47,12 @@ The SMS sign-in state property gives information about whether or not a phone nu
 
 |Value|Description|
 |--------|-----------|
-|`notSupported`|Primary sign-in not supported on this authentication method - for example, sign-in can be enabled only on a user's primary mobile number, not the alternate number.|
-|`notAllowedByPolicy`|This user isn't enabled by policy to use this method as a primary sign-in.|
-|`notConfigured`|This user is enabled by policy to use this method as primary sign-in but needs to take additional action to configure it.|
-|`phoneNumberNotUnique`|This user attempted to set up a phone number as primary sign-in but the number was not unique and can't be used as a sign-in name.|
-|`ready`|This authentication method is ready for use in primary sign-in.|
-|`notEnabled`|This sign-in method is not enabled|
+|notSupported|Primary sign-in not supported on this authentication method - for example, sign-in can be enabled only on a user's primary mobile number, not the alternate number.|
+|notAllowedByPolicy|This user isn't enabled by policy to use this method as a primary sign-in.|
+|notConfigured|This user is enabled by policy to use this method as primary sign-in but needs to take additional action to configure it.|
+|phoneNumberNotUnique|This user attempted to set up a phone number as primary sign-in but the number was not unique and can't be used as a sign-in name.|
+|ready|This authentication method is ready for use in primary sign-in.|
+|notEnabled|This sign-in method is not enabled|
 
 ## Relationships
 
