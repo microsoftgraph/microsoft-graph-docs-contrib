@@ -43,7 +43,7 @@ This topic describes implementation and operational limits for Microsoft Graph c
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **4 items/sec (250 MB/hour)**         | The throughput limit to ingest items through a connection.                     |
 | **4 MB**         | The maximum size of an item; this limit applies to the request body when [ingesting and indexing an item](/graph/api/externalconnection-put-items?view=graph-rest-beta&preserve-view=true).                               |
-| **N/A**      |Max size of a property      |
+| **N/A**      |The maximum size of a property.      |
 
 <br/><br/>
 
