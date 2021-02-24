@@ -17,7 +17,7 @@ These APIs support reviews for groups, such as Microsoft 365 groups and security
 ## Scope of use
 
 The Access Reviews APIs support both delegated and application contexts.
-+ In a user (delegated) context: an application calls the Access Reviews API on behalf of a user. Typical scenarios include:
++ In a user (delegated) context, an application calls the Access Reviews API on behalf of a user. Typical scenarios include:
   + An administrator using a script to create, read, or update an access review.
   + A resource owner using an app or a script to create an access review for a resource they own.
   + An administrator automatically collecting all decisions for one or more access reviews.
