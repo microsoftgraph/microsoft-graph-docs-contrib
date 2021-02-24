@@ -56,7 +56,6 @@ If successful, this method returns a `200 OK` response code and a [printTaskTrig
   "name": "get_printtasktrigger"
 }
 -->
-# [HTTP](#tab/http)
 ``` http
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}/taskTriggers/{printTaskTriggerId}
 ```

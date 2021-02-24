@@ -54,7 +54,6 @@ If successful, this method returns a `204 No Content` response code. It does not
   "name": "delete_printershare"
 }
 -->
-# [HTTP](#tab/http)
 ``` http
 DELETE https://graph.microsoft.com/v1.0/print/shares/{printerShareId}
 ```

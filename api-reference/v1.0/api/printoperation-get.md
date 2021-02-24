@@ -52,7 +52,6 @@ If successful, this method returns a `200 OK` response code and a [printOperatio
   "name": "get_printoperation"
 }
 -->
-# [HTTP](#tab/http)
 ``` http
 GET https://graph.microsoft.com/v1.0/print/operations/{printOperationId}
 ```

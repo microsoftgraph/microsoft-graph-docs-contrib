@@ -57,7 +57,6 @@ If successful, this method returns a `200 OK` response code with an updated [pri
   "name": "update_printjob"
 }
 -->
-# [HTTP](#tab/http)
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}
 Content-Type: application/json

@@ -53,7 +53,6 @@ If successful, this method returns a `204 No Content` response code. It does not
   "name": "printer_restorefactorydefaults"
 }
 -->
-# [HTTP](#tab/http)
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/restoreFactoryDefaults
 ```

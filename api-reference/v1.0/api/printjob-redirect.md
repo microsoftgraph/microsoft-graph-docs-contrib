@@ -60,7 +60,6 @@ If successful, this method returns a `200 OK` response code and a [printJob](../
   "name": "printjob_redirect"
 }
 -->
-# [HTTP](#tab/http)
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}/redirect
 Content-Type: application/json

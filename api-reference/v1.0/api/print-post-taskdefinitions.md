@@ -58,7 +58,6 @@ If successful, this method returns a `201 Created` response code and a [printTas
   "name": "create_printtaskdefinition_from_"
 }
 -->
-# [HTTP](#tab/http)
 ``` http
 POST https://graph.microsoft.com/v1.0/print/taskDefinitions
 Content-Type: application/json

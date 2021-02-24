@@ -68,7 +68,6 @@ If successful, this method returns a `200 OK` response code and a [printerShare]
   "name": "get_printershare"
 }
 -->
-# [HTTP](#tab/http)
 ``` http
 GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}
 ```

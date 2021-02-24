@@ -54,7 +54,6 @@ If successful, this method returns a `204 No Content` response code.
   "name": "create_group_from_"
 }
 -->
-# [HTTP](#tab/http)
 ``` http
 POST https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/allowedGroups/$ref
 Content-Type: application/json

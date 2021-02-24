@@ -55,7 +55,6 @@ If successful, this method returns a `200 OK` response code and a [printTask](..
   "name": "get_printtask"
 }
 -->
-# [HTTP](#tab/http)
 ``` http
 GET https://graph.microsoft.com/v1.0/print/taskDefinitions/{taskDefinitionId}/tasks/{taskId}
 ```

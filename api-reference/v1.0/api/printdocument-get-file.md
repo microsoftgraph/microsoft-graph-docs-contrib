@@ -45,7 +45,6 @@ The following example shows how to call this API to acquire a pre-authenticated 
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_document_value"
@@ -53,9 +52,6 @@ The following example shows how to call this API to acquire a pre-authenticated 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}/documents/{printDocumentId}/$value
 ```
-
----
-
 
 ### Response
 

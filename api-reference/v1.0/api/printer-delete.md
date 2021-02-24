@@ -53,7 +53,6 @@ If successful, this method returns a `204 No Content` response code.
   "name": "delete_printer"
 }
 -->
-# [HTTP](#tab/http)
 ``` http
 DELETE https://graph.microsoft.com/v1.0/print/printers/{printerId}
 ```

@@ -59,7 +59,6 @@ The following is an example of the response.
   "blockType": "response",
   "truncated": true
 } -->
-# [HTTP](#tab/http)
 ```http
 HTTP/1.1 204 No Content
 ```

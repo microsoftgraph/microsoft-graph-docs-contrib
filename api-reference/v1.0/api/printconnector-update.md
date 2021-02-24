@@ -53,7 +53,6 @@ If successful, this method returns a `200 OK` response code and an updated [prin
   "name": "update_printconnector"
 }
 -->
-# [HTTP](#tab/http)
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/connectors/{printConnectorId}
 Content-Type: application/json

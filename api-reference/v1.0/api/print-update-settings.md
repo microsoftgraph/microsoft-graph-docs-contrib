@@ -58,7 +58,6 @@ If successful, this method returns a `204 No Content` response code and an empty
   "name": "update_printsettings"
 }
 -->
-# [HTTP](#tab/http)
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/settings
 Content-type: application/json

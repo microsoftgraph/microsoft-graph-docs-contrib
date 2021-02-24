@@ -58,7 +58,6 @@ If successful, this method returns a `204 No Content` response code. It does not
   "name": "delete_printconnector"
 }
 -->
-# [HTTP](#tab/http)
 ``` http
 DELETE https://graph.microsoft.com/v1.0/print/connectors/{printConnectorId}
 ```

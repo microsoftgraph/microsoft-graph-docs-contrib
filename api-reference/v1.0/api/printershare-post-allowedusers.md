@@ -54,7 +54,6 @@ If successful, this method returns a `204 No Content` response code.
   "name": "create_user_from_"
 }
 -->
-# [HTTP](#tab/http)
 ``` http
 POST https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/allowedUsers/$ref
 Content-Type: application/json

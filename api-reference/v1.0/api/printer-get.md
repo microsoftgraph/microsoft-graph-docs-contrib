@@ -62,7 +62,6 @@ By default, the response will not contain [printerCapabilities](../resources/pri
   "name": "get_printer"
 }
 -->
-# [HTTP](#tab/http)
 ``` http
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}
 ```

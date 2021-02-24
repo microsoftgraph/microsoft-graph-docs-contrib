@@ -53,7 +53,6 @@ If successful, this method returns a `201 Created` response code and a [printTas
   "name": "create_printtasktrigger_from_"
 }
 -->
-# [HTTP](#tab/http)
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/taskTriggers
 Content-Type: application/json

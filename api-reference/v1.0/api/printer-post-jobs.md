@@ -58,7 +58,6 @@ If successful, this method returns a `201 Created` response code and a [printJob
   "name": "create_printjob_from_"
 }
 -->
-# [HTTP](#tab/http)
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs
 Content-Type: application/json
