@@ -46,6 +46,10 @@ If successful, this method returns `204 No Content` response code. It does not r
 ##### Request
 Here is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "post_administrativeUnits_members"
+} -->
 ```http
 POST https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
 Content-type: application/json
