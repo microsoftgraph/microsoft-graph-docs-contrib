@@ -7,10 +7,10 @@ ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
-# List services
+# List printServices
 Namespace: microsoft.graph
 
-Get the printService resources from the services navigation property.
+Retrieve a list of **printService** objects that represent the services available to your tenant.
 
 ## Permissions
 One of the **delegated** Universal Print [permissions](/graph/permissions-reference#universal-print-permissions) is required to call this API.
