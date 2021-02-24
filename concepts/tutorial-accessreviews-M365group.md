@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "governance"
 ---
 
-# Tutorial: Use the Access Reviews API to review access to all your M365 groups with external identities
+# Tutorial: Review access to your M365 groups with guest users using the Microsoft Graph API.
 
 In this tutorial, you will use Graph Explorer to create and read access reviews that targets all M365 Groups with external identities in the tenant. To achieve this, you'll first use Azure AD B2B to invite and create an external identity in your tenant. Then, you'll add this external identity to your M365 group prior to creating and reading the access review.
 
