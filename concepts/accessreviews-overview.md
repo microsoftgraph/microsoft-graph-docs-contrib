@@ -30,13 +30,13 @@ The Access Reviews APIs support both delegated and application contexts.
 
 The Access Reviews API structures information logically and comprises three major building blocks:
 + Access reviews schedule *definitions*: is the logical blueprint that contains the settings of an access review and its instances.
-+ An access review *instance*: represents a review activity that has a scope, reviewers, and a status. An access review definition may have multiple instances as is the case in monthly recurring reviews. One-off reviews have exactly one instance.
++ An access review *instance*: represents a review activity that has a scope, reviewers, and a status. An access review definition may have multiple instances as is the case in recurring reviews. One-off reviews have exactly one instance.
 + *Decision items* recorded for a review: represent a decision a reviewer made on an instance, including the time stamp and justification for the decision. Each review instance has as many decisions as the number of users under review. If there are no decisions taken, that is, reviewers haven’t responded to the review, there will be no decision objects for the instance.
 
 ## Next steps
 
 - [Use the Access Reviews API for groups to create access and read definitions, instances, and decisions.](tutorial-accessreviews-securitygroup.md)
-- [Use the Access Reviews API for groups to review access for all your M365 groups with external identities.](tutorial-accessreviews-M365group.md)
+- [Use the Access Reviews API for groups to review access for all your M365 groups with guest users.](tutorial-accessreviews-M365group.md)
 
 ## See also
 

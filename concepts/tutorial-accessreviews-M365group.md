@@ -6,22 +6,21 @@ localization_priority: Normal
 ms.prod: "governance"
 ---
 
-# Tutorial: Use the Access Reviews API to review access to all your M365 groups with external identities
+# Tutorial: Use the Access Reviews API to review access to all your M365 groups with guest users
 
-In this tutorial, you will use Graph Explorer to create and read access reviews that targets all M365 Groups with external identities in the tenant. To achieve this, you'll first use Azure AD B2B to invite and create an external identity in your tenant. Then, you'll add this external identity to your M365 group prior to creating and reading the access review.
+In this tutorial, you will use Graph Explorer to create and read access reviews that targets all M365 Groups with guest users in the tenant. To achieve this, you'll first use Azure AD B2B to invite and create an guest user, also referred to as an external identity, in your tenant. Then, you'll add this guest user to your M365 group prior to creating and reading the access review.
+
+>[!NOTE]
+The response objects shown in this tutorial might be shortened for readability.
 
 ## Prerequisites
 
 To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled. 
-+ An account in a different Azure AD tenant or a social identity that you can invite as an external identity (B2B user).
-+ Log in to [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)  as a user in a global administrator role. 
-+ Permissions:
-  + To call the invitation APIs to invite a user, consent to *User.Invite.All* permission.
-  + To call the Access Reviews APIs, consent to the *AccessReview.ReadWrite.All* permission.
-  + To create the M365 group, and delete it later after completing the tutorial, consent to the *Group.ReadWrite.All* permission.
-  + To remove the guest user from the tenant after completing the tutorial, consent to the *Directory.AccessAsUser.All* permission.
++ An account in a different Azure AD tenant or a social identity that you can invite as a guest user (B2B user).
++ Sign in to [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)  as a user in a global administrator role. 
++ Permissions: For this tutorial, the following delegated permissions are needed: `User.Invite.All`, `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.AccessAsUser.All`.
 
 To consent to the required permissions in Microsoft Graph Explorer:
 1. Click **Sign in to Graph Explorer** and sign in using the account that has a global administrator role.
@@ -29,17 +28,21 @@ To consent to the required permissions in Microsoft Graph Explorer:
    
    ![Select the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/settings.png)
 
-3. Scroll through the list of permissions to find the *AccessReview.ReadWrite.All*, *Directory.AccessAsUser.All*, *Group.ReadWrite.All*, and *User.Invite.All* permissions. To consent to the permission, select it first, then select **Consent**.
+3. Scroll through the list of permissions to these permissions:
+   + AccessReviews (3), expand and then select **AccessReviews.ReadWrite.All**.
+   + Directory (3), expand and then select **Directory.AccessAsUser.All**.
+   + Group (2), expand and then select **Group.ReadWrite.All**.
+   + User (8), expand and then select **User.Invite.All**.
    
-   ![Consent to the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png)
+   Select **Consent**, and then select **Accept** to accept the consent of the permissions. You do not need to consent on behalf of your organization for these permissions.
+   
+   ![Consent to the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png)
 
-   >[!NOTE]
-   While consenting to the permissions, in the pop window, do not consent on behalf of your organization because these permissions are not needed by other users. Select **Accept** to accept the consent of the permissions.
+## Step 1: Invite a guest user into your tenant
 
-## Step 1: Invite a new person (an external identity) into your tenant as a B2B guest
+Invite a guest user with the email address of **john.doe@outlook.com** to your tenant.
 
 ### Request
-Run the following request to invite an external user with the email address **john.doe@outlook.com** to your tenant.
 
 ```http
 POST https://graph.microsoft.com/beta/invitations
@@ -63,40 +66,26 @@ Content-Type: application/json
     "invitedUserDisplayName": "John Doe (Tailspin Toys)",
     "invitedUserType": "Guest",
     "invitedUserEmailAddress": "john.doe@outlook.com",
-    "sendInvitationMessage": false,
-    "resetRedemption": false,
     "inviteRedirectUrl": "https://myapps.microsoft.com/",
     "status": "PendingAcceptance",
-    "invitedUserMessageInfo": {
-        "messageLanguage": null,
-        "customizedMessageBody": null,
-        "ccRecipients": [
-            {
-                "emailAddress": {
-                    "name": null,
-                    "address": null
-                }
-            }
-        ]
-    },
     "invitedUser": {
         "id": "baf1b0a0-1f9a-4a56-9884-6a30824f8d20"
     }
 }
 ```
-Take note of the invited user's id from the response. In this case, john.doe@outlook.com has been assigned user `id` `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` in your tenant.
+Take note of the `invitedUser`'s id from the response. In this case, john.doe@outlook.com has been assigned user `id` `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` in your tenant.
 
-## Step 2: Create a new M365 group and add the external guest
+## Step 2: Create a new M365 group and add the guest user
 
 In this step:
 1. Create a new M365 group named **Feelgood marketing campaign** and add `john.doe@outlook.com` to the group.
 2. Assign yourself as the group owner.
-3. Add john.doe@outlook.com as a group member. Their access to the group will be the subject of review by you, the group owner.
+3. Add john.doe@outlook.com as a group member. Their access to the group is the subject of review by you, the group owner.
 
 ### Request
 In this call, replace:
 + `cdb555e3-b33e-4fd5-a427-17fadacbdfa7` with your `id`.
-+ `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` with the `id` john.doe@outlook.com has been assigned in your tenant.
++ `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` with the `id` that you recorded for the invited user.
 
 ```http
 POST https://graph.microsoft.com/beta/groups
@@ -126,68 +115,33 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
     "id": "59ab642a-2776-4e32-9b68-9ff7a47b7f6a",
-    "deletedDateTime": null,
-    "classification": null,
     "createdDateTime": "2021-02-10T16:55:34Z",
-    "createdByAppId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
     "description": "Feelgood Marketing Campaign with external partners and vendors.",
     "displayName": "Feelgood Marketing Campaign",
-    "expirationDateTime": null,
     "groupTypes": [
         "Unified"
     ],
-    "infoCatalogs": [],
-    "isAssignableToRole": null,
-    "isManagementRestricted": null,
     "mail": "FeelGoodCampaign@contoso.com",
     "mailEnabled": true,
-    "mailNickname": "FeelGoodCampaign",
-    "membershipRule": null,
-    "membershipRuleProcessingState": null,
-    "onPremisesDomainName": null,
-    "onPremisesLastSyncDateTime": null,
-    "onPremisesNetBiosName": null,
-    "onPremisesSamAccountName": null,
-    "onPremisesSecurityIdentifier": null,
-    "onPremisesSyncEnabled": null,
-    "preferredDataLocation": null,
-    "preferredLanguage": null,
-    "proxyAddresses": [
-        "SMTP:FeelGoodCampaign@contoso.com"
-    ],
-    "renewedDateTime": "2021-02-10T16:55:34Z",
-    "resourceBehaviorOptions": [],
-    "resourceProvisioningOptions": [],
-    "securityEnabled": true,
-    "securityIdentifier": "S-1-12-1-1504404522-1311909750-4154419355-1786739620",
-    "theme": null,
-    "visibility": "Public",
-    "writebackConfiguration": {
-        "isEnabled": null,
-        "onPremisesGroupType": null
-    },
-    "onPremisesProvisioningErrors": []
+    "mailNickname": "FeelGoodCampaign"
 }
 ```
 
-## Step 3: Create an access review for all M365 groups with external identities
+## Step 3: Create an access review for all M365 groups with guest users
 
-You have an M365 group and it has an external identity. Now, create a recurring access review series for all M365 groups with external guests. This means that for all M365 groups with external guests, you will schedule a periodic review of the guests' access to the M365 group.
+You have an M365 group and it has an guest user. You can then create a recurring access review series for all M365 groups with guest users. This means that for all M365 groups with guest users, you will schedule a periodic review of the guests' access to the M365 group.
 
-The access review series will have the following settings:
-+ Its a recurring access review, reviewed quarterly.
-+ The group owners review the external identity's continued access.
-+ The review scope is limited to M365 groups with **Guest users** (external identities) only.
-+ A backup reviewer. This can be a fallback user or a group that can review the access in case the group doesn't have any owners assigned even though its group owners are the access review reviewers. 
-+ **autoApplyDecisionsEnabled** is set to `true`. In this case, once the reviewer completes the access review, their decisions are applied automatically. If not enabled, a user must, after the review completes, apply the decisions manually.
+The access review series uses following settings:
++ It's a recurring access review and reviewed quarterly.
++ The group owners review the continued access of guest users.
++ The review scope is limited to M365 groups with **Guest users** only.
++ A backup reviewer. This can be a fallback user or a group that can review the access in case the group doesn't have any owners assigned.
++ **autoApplyDecisionsEnabled** is set to `true`. In this case, decisions are applied automatically once the reviewer completes the access review or the access review duration ends. If not enabled, a user must, after the review completes, apply the decisions manually.
 + Apply **removeAccessApplyAction** action to denied guest users. This removes the denied guest user's membership to the group, though they'll still be able to sign in to your tenant.[Learn more about the implications of this action](/azure/active-directory/governance/create-access-review#create-one-or-more-access-reviews).
-
-For more information about the parameters in the request body of these examples, see the [Access Reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true).
 
 ### Request
 In this call, replace the following:
 
-+ Value of **displayName** with your preferred value.
 + `c9a5aff7-9298-4d71-adab-0a222e0a05e4` with the `id` of the user you are designating as a backup reviewer.
 + Value of **startDate** with today's date and value of **endDate** with a date one year from the start date. 
 
@@ -267,11 +221,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions/$entity",
     "id": "c22ae540-b89a-4d24-bac0-4ef35e6591ea",
     "displayName": "Group owners review guest across Microsoft 365 groups in the tenant (Quarterly)",
-    "createdDateTime": null,
-    "lastModifiedDateTime": null,
     "status": "NotStarted",
-    "descriptionForAdmins": "",
-    "descriptionForReviewers": "",
     "createdBy": {
         "id": "cdb555e3-b33e-4fd5-a427-17fadacbdfa7",
         "displayName": "MOD Administrator",
@@ -300,12 +250,8 @@ Content-type: application/json
         }
     ],
     "settings": {
-        "mailNotificationsEnabled": true,
-        "reminderNotificationsEnabled": true,
-        "justificationRequiredOnApproval": true,
         "defaultDecisionEnabled": true,
         "defaultDecision": "Approve",
-        "instanceDurationInDays": 0,
         "autoApplyDecisionsEnabled": true,
         "recommendationsEnabled": true,
         "recurrence": {
@@ -335,14 +281,12 @@ Content-type: application/json
 }
 ```
 
-This is an access review definition. You can list and read this and any other existing definitions by running `GET` on `https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions`.
-
 ## Step 4: List instances of the access review
 
-The following query lists all instances of the access review definition. If your test tenant contains other M365 groups with external guests, this request will return more than 1 instance.
+The following query lists all instances of the access review definition. If your test tenant contains other M365 groups with guest users, this request will return 1 instance for every M365 group with guest users in the tenant.
 
 ### Request
-In this call, replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the `id` of a definition returned in Step 3.
+In this call, replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the `id` of your access review definition returned in Step 3.
 
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances
@@ -362,7 +306,7 @@ Content-type: application/json
             "id": "6392b1a7-9c25-4844-83e5-34e23c88e16a",
             "startDateTime": "2021-02-10T17:00:36.96Z",
             "endDateTime": "2021-02-10T17:00:36.96Z",
-            "status": "Applied",
+            "status": "InProgress",
             "scope": {
                 "query": "/groups/59ab642a-2776-4e32-9b68-9ff7a47b7f6a/members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
                 "queryType": "MicrosoftGraph"
@@ -371,11 +315,11 @@ Content-type: application/json
     ]
 }
 ```
-In this response, the **status** of the access review instance is marked as `Applied` because the current review cycle has ended. Because this is a quarterly review, every 3 months time, a new review instance is created and you—the reviewer—can apply new decisions.
+In this response, the access review instance is currently `InProgress`. Because this is a quarterly review, every 3 months time, a new review instance is created and you—the reviewer—can apply new decisions.
 
 ## Step 5: Get decisions
 
-You are interested in the decisions taken for the instance of an access review..
+Get the decisions taken for the instance of an access review.
 
 ### Request
 In this call:
@@ -479,13 +423,16 @@ HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
-Congratulations! You have created an access review for the M365 group and the group owners have approved access for the current review cycle. You have also triggered a scheduled quarterly re-evaluation and re-attestation of access for all guest users in M365 groups. The group owners will review access during these cycles, choosing either to approve or deny access.
+Congratulations! You have created an access review for all guest users in M365 groups in your tenant, and scheduled quarterly for the evaluation and attestation of the guest users' access. The group owners will review access during these cycles, choosing either to approve or deny access.
 
 ## See also
 
 + [Access Reviews overview and license requirements.](/azure/active-directory/governance/access-reviews-overview)
 + [Access Reviews license scenarios.](/azure/active-directory/governance/access-reviews-overview#example-license-scenarios)
 + [Create an access review of groups & applications](/azure/active-directory/governance/create-access-review)
-+ [Invite/add external users to your organization](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true)
++ [Invite/add guest users to your organization](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true)
 + [Access Reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [Create accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
++ [List accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
++ [List accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)
 

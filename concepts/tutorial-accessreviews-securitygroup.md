@@ -18,7 +18,7 @@ To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
 + Log in to [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a global administrator role.
-  + [Optional] Start a new incognito session, logged in as one of the members you will add to the security group.
+  + [Optional] Start a new **incognito** or **InPrivate browser** session or via an anonymous browser, logged in as one of the members you will add to the security group.
 + Permissions:
   + To call the Access Reviews APIs, consent to the *AccessReview.ReadWrite.All* permission.
   + To create the security group, and delete it later after completing the tutorial, consent to the *Group.ReadWrite.All* permission.
@@ -72,56 +72,25 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
     "id": "825f1b5e-6fb2-4d9a-b393-d491101acc0c",
-    "deletedDateTime": null,
-    "classification": null,
     "createdDateTime": "2021-02-10T15:00:05Z",
-    "createdByAppId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
     "description": "Building security group",
     "displayName": "Building security group",
-    "expirationDateTime": null,
     "groupTypes": [],
-    "infoCatalogs": [],
-    "isAssignableToRole": null,
-    "isManagementRestricted": null,
     "mail": null,
     "mailEnabled": false,
-    "mailNickname": "buildingsecurity",
-    "membershipRule": null,
-    "membershipRuleProcessingState": null,
-    "onPremisesDomainName": null,
-    "onPremisesLastSyncDateTime": null,
-    "onPremisesNetBiosName": null,
-    "onPremisesSamAccountName": null,
-    "onPremisesSecurityIdentifier": null,
-    "onPremisesSyncEnabled": null,
-    "preferredDataLocation": null,
-    "preferredLanguage": null,
-    "proxyAddresses": [],
-    "renewedDateTime": "2021-02-10T15:00:05Z",
-    "resourceBehaviorOptions": [],
-    "resourceProvisioningOptions": [],
-    "securityEnabled": true,
-    "securityIdentifier": "S-1-12-1-2187271006-1301966770-2446627763-214702608",
-    "theme": null,
-    "visibility": null,
-    "writebackConfiguration": {
-        "isEnabled": null,
-        "onPremisesGroupType": null
-    },
-    "onPremisesProvisioningErrors": []
+    "mailNickname": "buildingsecurity"
 }
 ```
 
 ## Step 2: Create an access review
 
-Create an access review for members of the security group, with the following settings:
+Create an access review for members of the security group, using the following settings:
 + It is a self-reviewing access review. In this case, users under review will self-attest to their need for access to the group.
 + This is a one-time access review. In this case, once access is granted, the user does not need to self-attest again within the access review period.
 + The review scope is limited to members of **Building security group**.
 
 ### Request
 In this call, replace the following:
-+ Values of **displayName**, **descriptionForAdmins**, and **descriptionForReviewers** with your preferred values.
 + `825f1b5e-6fb2-4d9a-b393-d491101acc0c` with the `id` of your **Building security group**.
 + Value of **startDate** with today's date and value of **endDate** with a date one year from the start date.
 
@@ -182,11 +151,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions/$entity",
     "id": "d7286a17-3a01-406a-b872-986b6b40317c",
     "displayName": "One-time self-review for members of Building security group",
-    "createdDateTime": null,
-    "lastModifiedDateTime": null,
     "status": "NotStarted",
-    "descriptionForAdmins": "One-time self-review for members of Building security group",
-    "descriptionForReviewers": "One-time self-review for members of Building security group",
     "createdBy": {
         "id": "b828cc0e-4240-46ed-bb25-888744487e2d",
         "displayName": "MOD Administrator",
@@ -203,12 +168,8 @@ Content-type: application/json
     "reviewers": [],
     "backupReviewers": [],
     "settings": {
-        "mailNotificationsEnabled": true,
-        "reminderNotificationsEnabled": true,
-        "justificationRequiredOnApproval": true,
         "defaultDecisionEnabled": false,
         "defaultDecision": "Deny",
-        "instanceDurationInDays": 0,
         "autoApplyDecisionsEnabled": true,
         "recommendationsEnabled": true,
         "recurrence": {
@@ -229,7 +190,6 @@ Content-type: application/json
     }
 }
 ```
-This is an access review definition. You can list and read this and any other existing definitions defined in your tenant by running `GET` on `https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions`.
 
 ## Step 3: List instances of the access review
 
@@ -356,9 +316,11 @@ In this step, you will:
 1. List your pending access review instances.
 2. Complete the access review self-attestation process.
 
-Start a new browser session in **Incognito** mode, or via an anonymous browser, and log in as one of the two members of **Building security group**. By doing so, you will not interrupt your current session as a user in the global administrator role. Alternatively, you can interrupt your current session by logging out and logging in to the portal as one of the two group members.
+Start a new browser session in **incognito** or **InPrivate browsing** mode, or via an anonymous browser, and log in as one of the two members of **Building security group**. By doing so, you will not interrupt your current session as a user in the global administrator role. Alternatively, you can interrupt your current session by logging out and logging in to the portal as one of the two group members.
 
-To list your pending access review instances, run the following query:
+### List your pending access review instances
+
+In the incognito browser session, run the following query to list your pending access review instances:
 
 #### Request
 
@@ -394,11 +356,15 @@ Using the call `/me/pendingAccessReviewInstances` in a user context has a number
 + No service principal is required. A user can call and read their pending access review actions.
 + Can be used by widgets or plugins on an Intranet page, or a bot or daemon that run as a background service. These can notify you of new access reviews or of updates to access reviews. 
 
+### Complete the access review self-attestation
+
 In the same incognito browser session, log in to https://myaccess.microsoft.com/ to complete the self-attestation. From the right navigation bar, select **Access reviews** and choose your access review. Select **Yes**, that you still need access to **Building security group**, enter a reason, then click **Submit**.
 
    ![Self-attest to access review](../images/../concepts/images/tutorial-accessreviews-api/selfattest.png)
 
-Back in the main browser session with you logged in as the global administrator user, repeat Step 4 to see that the **decision** property for the member who completed step 5 is now `Approve`.
+You can now logout and exit the incognito browser session.
+
+Back in the main browser session where you are still logged in as the global administrator user, repeat Step 4 to see that the **decision** property for the member who completed step 5 is now `Approve`.
 
 Congratulations! You have created an access review and self-attested to the need for access. You only do this once, and maintain access until when the access review definition expires.
 
@@ -443,4 +409,7 @@ Content-type: text/plain
 + [Access Reviews license scenarios.](/azure/active-directory/governance/access-reviews-overview#example-license-scenarios)
 + [Create an access review of groups & applications](/azure/active-directory/governance/create-access-review)
 + [Access Reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [Create accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
++ [List accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
++ [List accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)
 
