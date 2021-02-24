@@ -1,6 +1,40 @@
 {
   "changelog": [
     {
+    {
+      "ChangeList": [
+        {
+          "Id": "57281ce6-70f8-4348-8b99-9fd38d42b03d",
+          "ApiChange": "Property",
+          "ChangedApiName": "agreementFile",
+          "ChangeType": "Addition",
+          "Description": "Added the **displayName** property to the Terms of Use [agreementfile](https://docs.microsoft.com/en-us/graph/api/resources/agreementfile?view=graph-rest-beta) resource.",
+          "Target": "agreementFile"
+        },
+        {
+          "Id": "57281ce6-70f8-4348-8b99-9fd38d42b03d",
+          "ApiChange": "Property",
+          "ChangedApiName": "agreementFileLocalization",
+          "ChangeType": "Addition",
+          "Description": "Added the **displayName** property to the Terms of Use [agreementFileLocalization](https://docs.microsoft.com/en-us/graph/api/resources/agreementfilelocalization?view=graph-rest-beta) resource.",
+          "Target": "agreementFileLocalization"
+        },
+        {
+          "Id": "57281ce6-70f8-4348-8b99-9fd38d42b03d",
+          "ApiChange": "Property",
+          "ChangedApiName": "agreementFileVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **displayName** property to Terms of Use [agreementFileVersion](https://docs.microsoft.com/en-us/graph/api/resources/agreementfileversion?view=graph-rest-beta) resource.",
+          "Target": "agreementFileVersion"
+        }
+      ],
+      "Id": "57281ce6-70f8-4348-8b99-9fd38d42b03d",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-02-24T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": ""
+    },
 	{
 	 "ChangeList": [
 	  {
