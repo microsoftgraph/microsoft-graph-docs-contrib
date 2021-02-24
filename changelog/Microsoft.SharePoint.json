@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "site",
           "ChangeType": "Addition",
-          "Description": "Added the [termStore.store](https://docs.microsoft.com/en-us/graph/api/resources/termstore-store?view=graph-rest-beta&preserve-view=true) navigation property to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta&preserve-view=true) entity,
+          "Description": "Added the [termStore.store](https://docs.microsoft.com/en-us/graph/api/resources/termstore-store?view=graph-rest-beta&preserve-view=true) navigation property to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta&preserve-view=true) entity",
           "Target": "site"
         },
         {
