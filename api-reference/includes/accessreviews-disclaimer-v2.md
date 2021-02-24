@@ -8,4 +8,4 @@ ms.author: isabelleatmsft
 <!-- markdownlint-disable MD041-->
 
 >[!NOTE]
->The access review APIs in this section apply only to group memberships. For access reviews on all other supported resource types, see [Access reviews](accessreviews-root.md).
+>The access review APIs in this section apply only to group memberships. For access reviews on all other supported resource types, see [Access reviews](../beta/resources/accessreviews-root.md).
