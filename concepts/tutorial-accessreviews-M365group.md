@@ -84,7 +84,7 @@ Content-Type: application/json
     }
 }
 ```
-Take note of the invited user's id from the response. In this case, john.doe@outlook.com has been assigned user `id` `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` in your tenant.
+Record the **id** of the **invitedUser** from the response to be used later in this tutorial.
 
 ## Step 2: Create a new M365 group and add the external guest
 
