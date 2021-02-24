@@ -26,7 +26,7 @@ The Access Reviews APIs support both delegated and application contexts.
 
 + In an application context, an application calls the Access Reviews API without a signed-in user present. A typical scenario is a scheduled background script regularly collecting decisions for all access reviews. To authorize your app in this context, see [get access without a user](/graph/auth-v2-service).
 
-## Building blocks of the Access Reviews API
+## Building blocks of an access review
 
 The Access Reviews API structures information logically and comprises three major building blocks:
 + Access reviews schedule *definitions*: is the logical blueprint that contains the settings of an access review and its instances.
