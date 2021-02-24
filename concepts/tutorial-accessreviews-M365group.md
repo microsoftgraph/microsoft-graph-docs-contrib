@@ -1,5 +1,5 @@
 ---
-title: "Using the Access Reviews API for your M365 groups"
+title: "Review access to M365 groups with guest users using Microsoft Graph APIs."
 description: "Use the Access Reviews API to review access to your M365 groups"
 author: "isabelleatmsft"
 localization_priority: Normal
@@ -488,4 +488,3 @@ Congratulations! You have created an access review for the M365 group and the gr
 + [Create an access review of groups & applications](/azure/active-directory/governance/create-access-review)
 + [Invite/add external users to your organization](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true)
 + [Access Reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
-
