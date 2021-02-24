@@ -349,7 +349,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 ```
 
 ### Response
-In this response, te scope includes a group of `id` `59ab642a-2776-4e32-9b68-9ff7a47b7f6a`. This is the **Feelgood marketing campaign** group created in Step 2.
+In this response, the scope includes a group of `id` `59ab642a-2776-4e32-9b68-9ff7a47b7f6a`. This is the **Feelgood marketing campaign** group created in Step 2.
 
 ```http
 HTTP/1.1 200 OK
