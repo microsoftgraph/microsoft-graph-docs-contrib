@@ -180,7 +180,7 @@ The access review series will have the following settings:
 + The review scope is limited to M365 groups with **Guest users** (external identities) only.
 + A backup reviewer. This can be a fallback user or a group that can review the access in case the group doesn't have any owners assigned even though its group owners are the access review reviewers. 
 + **autoApplyDecisionsEnabled** is set to `true`. In this case, once the reviewer completes the access review, their decisions are applied automatically. If not enabled, a user must, after the review completes, apply the decisions manually.
-+ Apply **removeAccessApplyAction** action to denied guest users. This removes the denied guest user's membership to the group, though they'll still be able to sign in to your tenant.[Learn more about the implications of this action](/azure/active-directory/governance/create-access-review#create-one-or-more-access-reviews).
++ Apply **removeAccessApplyAction** action to denied guest users. This removes the membership in the group of the denied guest. The guest user can still sign in to your tenant.
 
 For more information about the parameters in the request body of these examples, see the [Access Reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true).
 
