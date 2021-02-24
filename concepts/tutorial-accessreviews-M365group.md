@@ -16,7 +16,7 @@ To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled. 
 + An account in a different Azure AD tenant or a social identity that you can invite as an external identity (B2B user).
-+ Log in to [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)  as a user in a global administrator role. 
++ Sign in to [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)  as a user in a global administrator role. 
 + Permissions:
   + To call the invitation APIs to invite a user, consent to *User.Invite.All* permission.
   + To call the Access Reviews APIs, consent to the *AccessReview.ReadWrite.All* permission.
