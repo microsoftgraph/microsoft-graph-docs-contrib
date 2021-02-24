@@ -46,9 +46,9 @@ The following table shows the properties that can be provided when you create th
 
 |Property|Type|Description|Required?|
 |:---|:---|:---|:---|
-|printer|microsoft.graph.printer|The printer that this printer share is related to. Use the `printer@odata.bind` syntax as shown in the following example.|Yes|
+|printer|microsoft.graph.printer|The printer that this printer share is related to. Use the `printer@odata.bind` syntax, as shown in the following example.|Yes|
 |displayName|String|The name of the printer share that print clients should display. Maximum length allowed is 50 characters.|Yes|
-|allowAllUsers|Boolean|	If true, all users and groups will be granted access to this printer share. This supersedes the allow lists defined by the allowedUsers and allowedGroups navigation properties.|No|
+|allowAllUsers|Boolean|	If `true`, all users and groups will be granted access to this printer share. This supersedes the allow lists defined by the **allowedUsers** and **allowedGroups** navigation properties.|No|
 
 ## Response
 
