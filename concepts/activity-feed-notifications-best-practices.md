@@ -12,8 +12,7 @@ This document consolidates the best practices that you are expected to adhere to
 At a high-level the best practices are as follows:
 * [Ensure that partner scenarios respect the activity feed guidelines](#activity-feed-notifications-partner-scenarios).
 * [Ensure that expectations in terms of performance are met](#minimize-noise-and-build-high-quality-notification-experiences).
-* [Ensure that you use the activity feed notifications and other bot *notification* tools as required](#use-bot-framework-and-activity-feed-notifications).
-
+* [Ensure that you understand the differences in the activity feed notifications and other bot *notifications*](#understand-the-differences-in-bot-framework-notifications-and-activity-feed-notifications).
 
 ## Activity feed notifications partner scenarios
 The **Activity Feed Notification** is a platform that enables partner apps to send notifications to users. These notifications are sent as toast items and activity feed items that point users to relevant content that can be consumed within Teams. 
@@ -32,10 +31,10 @@ Following is the list of best practices:
   > [!NOTE] 
   > The notification selection will not switch to the app.
 * Ensure that you localize the content in a notification toast or feed. The localization happens only if the app’s content is [localized](/platform/concepts/build-and-test/apps-localization).<br/> ![Screenshot of App level settings](../concepts/images/notifications-api-best-practice1.png)
-* Ensure that you provide appropriate titles and descriptions for your **Activity Types**, since the setting titles are read from the app manifest. For example:<br/><br/>![Screenshot of correct Activity Types](../concepts/images/notifications-api-best-practice2.png)<br/><br/><br/>![Screenshot of incorrect Activity Types](../concepts/images/notifications-api-best-practice3.png)
+* Ensure that you provide appropriate titles and descriptions for your **Activity Types**, since the setting titles are read from the app manifest. For example:<br/>![Screenshot of correct Activity Types](../concepts/images/notifications-api-best-practice2.png)<br/>![Screenshot of incorrect Activity Types](../concepts/images/notifications-api-best-practice3.png)
 * Ensure that the notifications are not promotional in nature. They must convey something important that the user must be aware about. For example:<br/>*Try the new feature in the Cycling app!* ❌<br/>*Lynne mentioned you in a message.* ✔
-* Understand that the setting appears only when the selected app sends a notification.
-* Understand that the app cannot be customized. For example, every notification from an app has the same icon, as included in the app manifest.
+* Understand that the setting appears for the user  only when the selected app sends a notification.
+* Understand that the app icon for each notification cannot be customized, and is the one that is included in the app manifest.
 * Understand that currently, notifications can only be sent at a user level and not at a group or a team level.
   > [!NOTE]
   > Currently, priority notifications are not supported.
@@ -45,28 +44,28 @@ Following is the list of best practices:
 
 ## Minimize noise and build high quality notification experiences
 * Improve chances of users acting on your notifications by sending relevant notifications directly. Users receive notifications from multiple sources across chats, channels, meetings, or other apps, therefore, do not send large volume of non-directed notifications. For example:</br> *Joni left the sales team.* ❌ - This notification may be noisy unless this is materially important.<br/>*Diego assigned a sales ticket to you.* ✔
-* Avoid duplicate notifications from bot messages and activity feed notifications. See [best practices to use the bot framework and activity feed notifications](#use-bot-framework-and-activity-feed-notifications).
+* Avoid duplicate notifications from bot messages and activity feed notifications. See [understand differences in bot framework notifications and activity feed notifications](#understand-the-differences-in-bot-framework-notifications-and-activity-feed-notifications).
 * Utilize the third line for the preview to give users information that allows them to gauge the importance and take action. Select a toast or mark for follow-up.
 
   ![Notification text preview](../concepts/images/notification-preview.png)
 * Ensure there is no *period* at the end of the notification title to achieve parity with all other notification settings in Teams.
 
-## Use bot framework and activity feed notifications
-
-* Understand that bot messages are delivered as chat or channel messages 
-    * The bot messages trigger notifications as chat or channel notifications if the user's notifications for chat or channel is turned on.
+## Understand the differences in bot framework notifications and activity feed notifications
+The following list provides the key differences in bot notifications and activity feed notifications:
+* Bot messages are delivered as chat or channel messages. 
+    * Bot messages trigger notifications as chat or channel notifications if the user's notifications for chat or channel is turned on.
     * You must *@mention* the name of the user for the notification to appear in the activity feed. 
     * Bot messages are useful if the alert is consumed as a chat or channel message or is consumed broadly. For example, message is consumed by all channel members.
-* Understand that the activity feed notification API notifications land in the activity feed and can deep link to various locations.
+* The activity feed notification API notifications land in the activity feed and can deep link to various locations.
     * Notifications land in the activity feed, which allows the user to take action or triage the notification.
     * Notifications lead the user to a tab in a chat or channel, a personal app, or a chat or channel message.
     * Activity feed notifications are currently directed at a user level and are not posted broadly in a channel for all channel members to see. However, if the notification is deep linked to a channel message, then it is posted broadly in a channel.
-* Understand that the activity feed notification API allows users to configure notifications for each **Notification type** from the app. The capability to configure a notification allows the user to turn on or turn off specific notifications.
-* Understand that users can receive double notifications from the app. The app can send bot notifications to chats or channels and also activity feed notifications API notifications.
+* The activity feed notification API allows users to configure notifications for each **Notification type** from the app. The capability to configure a notification allows the user to turn on or turn off specific notifications.
+* Users can receive double notifications from the app. The app can send bot notifications to chats or channels and also activity feed notifications API notifications.
    > [!NOTE]
    > Send double notifications only if the scenario requires you to send them.
-* Understand that the activity feed notification API allows notifications in app or user context.
-* Understand that you can update an existing notification instead of creating a new notification.
+* The `actor` parameter allows the activity feed notification API to send notifications with the name of the caller. In delegated calls, `actor` is the name of the user, for example, *johndoe*. In application-only calls, the Teams app name appears, for example, *Contoso*.
+* You can update an existing notification instead of creating a new notification by using the `chainId` parameter.
 
 ## See also
 * [Send activity feed notifications](teams-send-activityfeednotifications.md)
