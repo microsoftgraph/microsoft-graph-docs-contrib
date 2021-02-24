@@ -31,7 +31,7 @@ The Access Reviews APIs support both delegated and application contexts.
 Access reviews are structured logically and are comprised of these building blocks:
 + **Access reviews schedule definitions** -  The logical blueprint that contains the settings of an access review and its instances.
 + An access review *instance*: represents a review activity that has a scope, reviewers, and a status. An access review definition may have multiple instances as is the case in monthly recurring reviews. One-off reviews have exactly one instance.
-+ *Decision items* recorded for a review: represent a decision a reviewer made on an instance, including the time stamp and justification for the decision. Each review instance has as many decisions as the number of users under review. If there are no decisions taken, that is, reviewers haven’t responded to the review, there will be no decision objects for the instance.
++ **Decision items recorded for a review** - Represent a decision a reviewer made on an instance, including the time stamp and justification for the decision. Each review instance has as many decisions as the number of users under review. If there are no decisions taken, that is, reviewers haven’t responded to the review, there will be no decision objects for the instance.
 
 ## Next steps
 
