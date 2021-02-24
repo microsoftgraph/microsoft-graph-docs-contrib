@@ -24,7 +24,7 @@ The Access Reviews APIs support both delegated and application contexts.
   
     To authorize your app in this context, see [get access on behalf of a user](/graph/auth-v2-user).
 
-+ In an application context: an application calls the Access Reviews API without a signed-in user present. A typical scenario is a scheduled background script regularly collecting decisions for all access reviews. To authorize your app in this context, see [get access without a user](/graph/auth-v2-service).
++ In an application context, an application calls the Access Reviews API without a signed-in user present. A typical scenario is a scheduled background script regularly collecting decisions for all access reviews. To authorize your app in this context, see [get access without a user](/graph/auth-v2-service).
 
 ## Building blocks of the Access Reviews API
 
