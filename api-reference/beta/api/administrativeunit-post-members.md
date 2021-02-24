@@ -66,6 +66,10 @@ In the request body, provide the `id` of the [user](../resources/user.md) or [gr
 ##### Response
 Here is an example of the response.
  
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```
