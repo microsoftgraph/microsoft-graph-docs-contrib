@@ -1,5 +1,5 @@
 ---
-title: Get shares
+title: List shares
 description: Retrieve a list of printer shares.
 author: braedenp-msft
 localization_priority: Normal
@@ -53,7 +53,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [printerShare](../resources/printershare.md) objects in the response body.
 
->**Note**: The response will not contain 'defaults' and 'capabilities' properties. These properties can be queried using [Get PrinterShare](printershare-get.md) request.
+>**Note**: The response will not contain the **defaults** and **capabilities** properties. You can get these properties via a [Get printerShare](printershare-get.md) request.
 
 ## Examples
 
