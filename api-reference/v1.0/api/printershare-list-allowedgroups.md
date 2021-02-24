@@ -53,7 +53,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_group"
 }
 -->
-# [HTTP](#tab/http)
 ``` http
 GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/allowedGroups
 ```
@@ -72,7 +71,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.group)",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.group)",
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",

@@ -48,7 +48,7 @@ The following table shows the properties that can be provided when you create th
 |:---|:---|:---|:---|
 |printer|microsoft.graph.printer|The printer that this printer share is related to. Use the `printer@odata.bind` syntax, as shown in the following example.|Yes|
 |displayName|String|The name of the printer share that print clients should display. Maximum length allowed is 50 characters.|Yes|
-|allowAllUsers|Boolean|	If `true`, all users and groups will be granted access to this printer share. This supersedes the allow lists defined by the **allowedUsers** and **allowedGroups** navigation properties.|No|
+|allowAllUsers|Boolean|If `true`, all users and groups will be granted access to this printer share. This supersedes the allow lists defined by the **allowedUsers** and **allowedGroups** navigation properties.|No|
 
 ## Response
 
@@ -62,7 +62,6 @@ If successful, this method returns a `201 Created` response code and a [printerS
   "name": "create_printershare_from_"
 }
 -->
-# [HTTP](#tab/http)
 ``` http
 POST https://graph.microsoft.com/v1.0/print/shares
 Content-Type: application/json
