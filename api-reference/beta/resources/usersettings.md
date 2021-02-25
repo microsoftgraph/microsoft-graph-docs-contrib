@@ -27,7 +27,7 @@ Enable discovery of content and document-centric insights:
   - Checking whether a user and the user's organization contribute to content discovery.
   - Disabling or enabling content discovery for specific users. This also disables documents in Office Delve.
 
-Configure the visibility of [itemInsights](../resources/iteminsights.md) and meeting hours insights. ItemInsights are derived between users and other items (such as documents or sites) in Microsoft 365:
+Configure the visibility of [itemInsights](../resources/iteminsights.md) and [meeting hours insights](https://support.microsoft.com/en-us/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1). ItemInsights are derived between users and other items (such as documents or sites) in Microsoft 365:
   - Checking whether a user's item and meeting hours insights are enabled.
   - Disabling or enabling item and meeting hours insights for specific user.
 
