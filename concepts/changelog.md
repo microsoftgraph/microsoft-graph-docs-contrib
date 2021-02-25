@@ -13,6 +13,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## February 2021
 
+### Identity and access
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added the **displayName** property to [Terms of Use agreementfile](/graph/api/resources/agreementfile?view=graph-rest-1.0&preserve-view=true)|
+| Addition | v1.0 | Added the **displayName** property to [Terms of Use agreementfilelocalization](/graph/api/resources/agreementfilelocalization?view=graph-rest-1.0&preserve-view=true)|
+| Addition | v1.0 | Added the **displayName** property to [Terms of Use agreementfileversion](/graph/api/resources/agreementfileversion?view=graph-rest-1.0&preserve-view=true)|
+
 ### Identity and access | Governance
 
 | **Change type** | **Version** | **Description**                          |
