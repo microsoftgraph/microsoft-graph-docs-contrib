@@ -68,7 +68,6 @@ If successful, this method returns a `200 OK` response code and a [teamsApp](../
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_teamsapp"
@@ -110,8 +109,6 @@ Content-Type: application/json
 
 #### Request
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "create_teamsapp"
@@ -151,7 +148,6 @@ Location: https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e3e29acb-8c79-4
 
 #### Request
 
-**HTTP**
 <!-- {
   "blockType": "request",
   "name": "create_teamsapp"

@@ -87,7 +87,6 @@ If successful, this method returns a `204 No Content` response code.
 
 <!-- markdownlint-disable MD034 -->
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_teamsapp"
@@ -100,9 +99,6 @@ Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
-
----
-
 
 <!-- markdownlint-disable MD024 -->
 
