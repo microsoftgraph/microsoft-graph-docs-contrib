@@ -20,7 +20,7 @@ To complete this tutorial, you need the following resources and privileges:
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled. 
 + An account in a different Azure AD tenant or a social identity that you can invite as a guest user (B2B user).
 + Sign in to [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)  as a user in a global administrator role. 
-+ Permission - For this tutorial, the following delegated permissions are needed: `User.Invite.All`, `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.AccessAsUser.All`.
++ Permission - For this tutorial, the following delegated permissions are needed: `User.Invite.All`, `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`, `User.ReadWrite.All`.
 
 To consent to the required permissions in Microsoft Graph Explorer:
 1. Click **Sign in to Graph Explorer** and sign in using the account that has a global administrator role.
@@ -39,7 +39,7 @@ To consent to the required permissions in Microsoft Graph Explorer:
 
 ## Step 1: Create a test user in your tenant
 
-Create a new user and record their `id`. You will assign them a role in the access review later in this tutorial. 
+Create a new user and record their **id**. You will assign them a role in the access review later in this tutorial. 
 
 ### Request
 
@@ -77,7 +77,7 @@ Content-type: application/json
 
 ## Step 2: Invite a guest user into your tenant
 
-Invite a guest user with the email address of **john.doe@outlook.com** to your tenant.
+Invite a guest user with the email address **john.doe@outlook.com** to your tenant.
 
 ### Request
 
@@ -114,19 +114,19 @@ Content-type: application/json
     }    
 }
 ```
-Record the **id** of the **invitedUser** from the response to be used later in this tutorial.
+Record the **id** of the **invitedUser** from the response to be used later in this tutorial. This is **john.doe@outlook.com**'s user **id** in your tenant.
 
 ## Step 3: Create a new M365 group and add the guest user
 
 In this step:
-1. Create a new M365 group named **Feelgood marketing campaign** and add `john.doe@outlook.com` to the group.
+1. Create a new M365 group named **Feelgood marketing campaign**.
 2. Assign yourself as the group owner.
 3. Add john.doe@outlook.com as a group member. Their access to the group is the subject of review by you, the group owner.
 
 ### Request
 In this call, replace:
-+ `cdb555e3-b33e-4fd5-a427-17fadacbdfa7` with your `id`. To retrieve your `id`, run `GET` on `https://graph.microsoft.com/beta/me`.
-+ `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` with the `id` that you recorded for the invited user.
++ `cdb555e3-b33e-4fd5-a427-17fadacbdfa7` with your **id**. To retrieve your **id**, run `GET` on `https://graph.microsoft.com/beta/me`.
++ `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` with **john.doe@outlook.com**'s **id** that you recorded.
 
 ```http
 POST https://graph.microsoft.com/beta/groups
@@ -181,12 +181,12 @@ The access review series uses following settings:
 + The review scope is limited to M365 groups with **Guest users** only.
 + A backup reviewer. This can be a fallback user or a group that can review the access in case the group doesn't have any owners assigned.
 + **autoApplyDecisionsEnabled** is set to `true`. In this case, decisions are applied automatically once the reviewer completes the access review or the access review duration ends. If not enabled, a user must, after the review completes, apply the decisions manually.
-+ Apply **removeAccessApplyAction** action to denied guest users. TThis removes the membership in the group of the denied guest. The guest user can still sign in to your tenant.
++ Apply **removeAccessApplyAction** action to denied guest users. This removes the membership in the group of the denied guest. The guest user can still sign in to your tenant.
 
 ### Request
 In this call, replace the following:
 
-+ `c9a5aff7-9298-4d71-adab-0a222e0a05e4` with the `id` of the user you are designating as a backup reviewer. This is the `id` you recorded from Step 1.
++ `c9a5aff7-9298-4d71-adab-0a222e0a05e4` with the **id** of the user you are designating as a backup reviewer. This is the **id** you recorded from Step 1.
 + Value of **startDate** with today's date and value of **endDate** with a date one year from the start date. 
 
 ```http
@@ -330,14 +330,14 @@ Content-type: application/json
 The following query lists all instances of the access review definition. If your test tenant contains other M365 groups with guest users, this request will return 1 instance for every M365 group with guest users in the tenant.
 
 ### Request
-In this call, replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the `id` of your access review definition returned in Step 4.
+In this call, replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the **id** of your access review definition returned in Step 4.
 
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances
 ```
 
 ### Response
-In this response, the scope includes a group with `id` `59ab642a-2776-4e32-9b68-9ff7a47b7f6a`. This is the **Feelgood marketing campaign** group created in Step 3.
+In this response, the scope includes a group with **id** `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` because it has a guest user. This is the **Feelgood marketing campaign** group created in Step 3.
 
 ```http
 HTTP/1.1 200 OK
@@ -367,8 +367,8 @@ Get the decisions taken for the instance of an access review.
 
 ### Request
 In this call:
-+ Replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the `id` of your access review definition returned in Step 4.
-+ Replace `6392b1a7-9c25-4844-83e5-34e23c88e16a` with the `id` of your access review instance returned in Step 5.
++ Replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the **id** of your access review definition returned in Step 4.
++ Replace `6392b1a7-9c25-4844-83e5-34e23c88e16a` with the **id** of your access review instance returned in Step 5.
 
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances/6392b1a7-9c25-4844-83e5-34e23c88e16a/decisions
@@ -425,7 +425,7 @@ Delete the resources that you created for this tutorial—**Feelgood marketing c
 ### Delete the M365 group
 
 #### Request
-In this call, replace `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` with the `id` of your **Feelgood marketing campaign** M365 group.
+In this call, replace `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` with the **id** of your **Feelgood marketing campaign** M365 group.
 
 ```http
 DELETE https://graph.microsoft.com/beta/groups/59ab642a-2776-4e32-9b68-9ff7a47b7f6a
@@ -440,7 +440,7 @@ Content-type: text/plain
 
 ### Delete the access review definition
 
-In this call, replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the `id` of your access review definition. Since the access review schedule definition is the blueprint for the access review, deleting the definition will remove the settings, instances, and decisions associated with the access review.
+In this call, replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the **id** of your access review definition. Since the access review schedule definition is the blueprint for the access review, deleting the definition will remove the settings, instances, and decisions associated with the access review.
 
 #### Request
 ```http
@@ -454,7 +454,7 @@ Content-type: text/plain
 ```
 ### Remove the guest user
 
-In this call, replace `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` with the `id` of the guest user, john.doe@outlook.com.
+In this call, replace `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` with the **id** of the guest user, john.doe@outlook.com.
 
 #### Request
 ```http
@@ -470,7 +470,7 @@ Content-type: text/plain
 ### Delete the test user
 
 #### Request
-In this call, replace `c9a5aff7-9298-4d71-adab-0a222e0a05e4` with the `id` of your test user.
+In this call, replace `c9a5aff7-9298-4d71-adab-0a222e0a05e4` with the **id** of your test user.
 
 ```http
 DELETE https://graph.microsoft.com/beta/users/c9a5aff7-9298-4d71-adab-0a222e0a05e4

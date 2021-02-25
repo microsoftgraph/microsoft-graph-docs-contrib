@@ -35,11 +35,12 @@ Access reviews are structured logically and are comprised of these building bloc
 
 ## Next steps
 
-- [Use the Access Reviews API for groups to create access and read definitions, instances, and decisions.](tutorial-accessreviews-securitygroup.md)
-- [Use the Access Reviews API for groups to review access for all your M365 groups with guest users.](tutorial-accessreviews-M365group.md)
++ [Use the Access Reviews API for groups to create access and read definitions, instances, and decisions.](tutorial-accessreviews-securitygroup.md)
++ [Use the Access Reviews API for groups to review access to all your M365 groups with guest users.](tutorial-accessreviews-M365group.md)
 
 ## See also
 
-- [Planning Azure Active Directory Access Reviews deployment.](/azure/active-directory/governance/deploy-access-reviews)
-- [Get access on behalf of a user.](/graph/auth-v2-user)
-- [Get access without a user.](/graph/auth-v2-service)
++ [Planning Azure Active Directory Access Reviews deployment.](/azure/active-directory/governance/deploy-access-reviews)
++ [Create an access review of groups & applications](/azure/active-directory/governance/create-access-review)
++ [Get access on behalf of a user.](/graph/auth-v2-user)
++ [Get access without a user.](/graph/auth-v2-service)

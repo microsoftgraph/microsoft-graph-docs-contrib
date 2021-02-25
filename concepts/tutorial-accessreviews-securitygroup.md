@@ -18,7 +18,7 @@ To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
 + Log in to [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a global administrator role.
-  + [Optional] Start a new **incognito** or **InPrivate browser** session or via an anonymous browser. You will log in later in this tutorial.
+  + [Optional] Start a new **incognito** or **InPrivate browser** session or start a session in an anonymous browser. You will log in later in this tutorial.
 + Permissions - For this tutorial, the following delegated permissions are needed: `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`.
 
 To consent to the required permissions in Microsoft Graph Explorer:
@@ -31,13 +31,13 @@ To consent to the required permissions in Microsoft Graph Explorer:
    + AccessReviews (3), expand and then select **AccessReviews.ReadWrite.All**.
    + Group (2), expand and then select **Group.ReadWrite.All**.
   
-    Select **Consent**, and then select **Accept** to accept the consent of the permissions. While consenting to the *AccessReview.ReadWrite.All* permission, in the pop window, choose to **Consent on behalf of your organization** and then select **Accept** to accept the consent of the permissions. You do not need to consent to the *Group.ReadWrite.All* permission on behalf of your organization because the permission is not needed by other users.
+    Select **Consent**, and in the pop window, choose to **Consent on behalf of your organization** and then select **Accept** to accept the consent of the permissions.
    
    ![Consent to the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png)
 
 ## Step 1: Create test users in your tenant
 
-Create three new test users by running the request below three times, changing the **displayName**, **mailNickname**, and **userPrincipalName** properties each time. Record their `id`s.
+Create three new test users by running the request below three times, changing the **displayName**, **mailNickname**, and **userPrincipalName** properties each time. Record their **id**s.
 
 ### Request
 
@@ -79,10 +79,10 @@ Create a security group named **Building security group** that is the target of 
 
 ### Request
 In this call, replace:
-+ `010b2de0-0ed4-4ece-bfa2-22fff71d0497` and `b828cc0e-4240-46ed-bb25-888744487e2d` with the `id`'s of your two group owners.
-  + One of the `id`s belongs to one of the users you created in Step 1.
-  + The other is your `id`. To retrieve your `id`, run `GET` on `https://graph.microsoft.com/beta/me`.
-+ `43b12b0c-ee2c-4257-96fe-505d823e06ab` and `859924d0-7115-422a-9ee8-ea8c0c014707` with the `id`'s of you two group members. These are the other two members you created in Step 1.
++ `010b2de0-0ed4-4ece-bfa2-22fff71d0497` and `b828cc0e-4240-46ed-bb25-888744487e2d` with the **id**s of your two group owners.
+  + One of the **id**s belongs to one of the users you created in Step 1.
+  + The other is your **id**. To retrieve your **id**, run `GET` on `https://graph.microsoft.com/beta/me`.
++ `43b12b0c-ee2c-4257-96fe-505d823e06ab` and `859924d0-7115-422a-9ee8-ea8c0c014707` with the **id**s of you two group members. These are the other two members you created in Step 1.
 
 ```http
 POST https://graph.microsoft.com/beta/groups
@@ -132,7 +132,7 @@ Create an access review for members of the security group, using the following s
 
 ### Request
 In this call, replace the following:
-+ `825f1b5e-6fb2-4d9a-b393-d491101acc0c` with the `id` of your **Building security group**.
++ `825f1b5e-6fb2-4d9a-b393-d491101acc0c` with the **id** of your **Building security group**.
 + Value of **startDate** with today's date and value of **endDate** with a date one year from the start date.
 
 By failing to specify the value of the **reviewers** property, this access review is configured as self-reviewing with the members as the reviewers.
@@ -234,10 +234,10 @@ Content-type: application/json
 
 ## Step 4: List instances of the access review
 
-The following query lists all instances of the access review definition. Because you created a one-time access review in Step 3, the request returns only one instance whose `id` is the same as the access definition’s `id`.
+The following query lists all instances of the access review definition. Because you created a one-time access review in Step 3, the request returns only one instance whose **id** is the same as the access definition’s **id**.
 
 ### Request
-In this call, replace `d7286a17-3a01-406a-b872-986b6b40317c` with the `id` of your access review definition returned in Step 3.
+In this call, replace `d7286a17-3a01-406a-b872-986b6b40317c` with the **id** of your access review definition returned in Step 3.
 
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c/instances
@@ -273,7 +273,7 @@ Content-type: application/json
 You are interested in the decisions taken for the instances of an access review.
 
 ### Request
-In this call, replace `d7286a17-3a01-406a-b872-986b6b40317c` with the `id` of your access review definition returned in Step 3.
+In this call, replace `d7286a17-3a01-406a-b872-986b6b40317c` with the **id** of your access review definition returned in Step 3.
 
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c/instances/d7286a17-3a01-406a-b872-986b6b40317c/decisions
@@ -357,11 +357,11 @@ In this step, you will:
 1. List your pending access review instances.
 2. Complete the access review self-attestation process.
 
-Start a new browser session in **incognito** or **InPrivate browsing** mode, or via an anonymous browser, and log in as one of the two members of **Building security group**. By doing so, you will not interrupt your current session as a user in the global administrator role. Alternatively, you can interrupt your current session by logging out and logging in to the portal as one of the two group members.
+Start a new browser session in **incognito** or **InPrivate browsing** mode, or via an anonymous browser, and log in as one of the two members of **Building security group**. By doing so, you will not interrupt your current session as a user in the global administrator role. Alternatively, you can interrupt your current session by logging out of Microsoft Graph Explorer and logging back in as one of the two group members.
 
 ### List your pending access review instances
 
-In the incognito browser session, run the following query to list your pending access review instances:
+In the incognito browser session and in Microsoft Graph Explorer, run the following query to list your pending access review instances:
 
 #### Request
 
@@ -370,7 +370,7 @@ GET /me/pendingAccessReviewInstances
 ```
 
 #### Response
-From the response below, user Alex Wilber of `id` `43b12b0c-ee2c-4257-96fe-505d823e06ab` has 1 pending access review to self-attest to.
+From the response below, user Alex Wilber of **id** `43b12b0c-ee2c-4257-96fe-505d823e06ab` has 1 pending access review to self-attest to.
 
 ```http
 HTTP/1.1 200 OK
@@ -416,7 +416,7 @@ Delete the resources that you created for this tutorial—**Building security gr
 ### Delete the security group
 
 #### Request
-In this call, replace `825f1b5e-6fb2-4d9a-b393-d491101acc0c` with the `id` of your **Building security group**.
+In this call, replace `825f1b5e-6fb2-4d9a-b393-d491101acc0c` with the **id** of your **Building security group**.
 
 ```http
 DELETE https://graph.microsoft.com/beta/groups/825f1b5e-6fb2-4d9a-b393-d491101acc0c
@@ -431,7 +431,7 @@ Content-type: text/plain
 
 ### Delete the access review definition
 
-In this call, replace `d7286a17-3a01-406a-b872-986b6b40317c` with the `id` of your access review definition. Since the access review schedule definition is the blueprint for the access review, deleting the definition will remove the settings, instances, and decisions associated with the access review.
+In this call, replace `d7286a17-3a01-406a-b872-986b6b40317c` with the **id** of your access review definition. Since the access review schedule definition is the blueprint for the access review, deleting the definition will remove the settings, instances, and decisions associated with the access review.
 
 #### Request
 ```http
@@ -447,7 +447,7 @@ Content-type: text/plain
 ### Delete the three test users
 
 #### Request
-In this call, replace `43b12b0c-ee2c-4257-96fe-505d823e06ab` with the `id` of your test user. Repeat this twice with the `id`s of the other two users to delete them.
+In this call, replace `43b12b0c-ee2c-4257-96fe-505d823e06ab` with the **id** of your test user. Repeat this twice with the **id**s of the other two users to delete them.
 
 ```http
 DELETE https://graph.microsoft.com/beta/users/43b12b0c-ee2c-4257-96fe-505d823e06ab
