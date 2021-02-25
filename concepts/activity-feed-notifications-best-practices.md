@@ -12,7 +12,7 @@ This document consolidates the best practices that you are expected to adhere to
 At a high-level the best practices are as follows:
 * [Ensure that partner scenarios respect the activity feed guidelines](#activity-feed-notifications-partner-scenarios).
 * [Ensure that expectations in terms of performance are met](#minimize-noise-and-build-high-quality-notification-experiences).
-* [Ensure that you understand the differences in the activity feed notifications and other bot *notifications*](#understand-the-differences-in-bot-framework-notifications-and-activity-feed-notifications).
+* [Understand the differences in the activity feed notifications and other bot *notifications*, and use them in appropriate scenarios](#understand-activity-feed-notifiations-and-bot-framework-notifications).
 
 ## Activity feed notifications partner scenarios
 The **Activity Feed Notification** is a platform that enables partner apps to send notifications to users. These notifications are sent as toast items and activity feed items that point users to relevant content that can be consumed within Teams. 
@@ -44,14 +44,14 @@ Following is the list of best practices:
 
 ## Minimize noise and build high quality notification experiences
 * Improve chances of users acting on your notifications by sending relevant notifications directly. Users receive notifications from multiple sources across chats, channels, meetings, or other apps, therefore, do not send large volume of non-directed notifications. For example:</br> *Joni left the sales team.* ❌ - This notification may be noisy unless this is materially important.<br/>*Diego assigned a sales ticket to you.* ✔
-* Avoid duplicate notifications from bot messages and activity feed notifications. See [understand differences in bot framework notifications and activity feed notifications](#understand-the-differences-in-bot-framework-notifications-and-activity-feed-notifications).
+* Avoid duplicate notifications from bot messages and activity feed notifications. See [understand activity feed notifications and bot framework notifications](#understand-activity-feed-notifiations-and-bot-framework-notifications).
 * Utilize the third line for the preview to give users information that allows them to gauge the importance and take action. Select a toast or mark for follow-up.
 
   ![Notification text preview](../concepts/images/notification-preview.png)
 * Ensure there is no *period* at the end of the notification title to achieve parity with all other notification settings in Teams.
 
-## Understand the differences in bot framework notifications and activity feed notifications
-The following list provides the key differences in bot notifications and activity feed notifications:
+## Understand activity feed notifications and bot framework notifications
+The following list provides the key differences in activity feed notifications and bot notifications:
 * Bot messages are delivered as chat or channel messages. 
     * Bot messages trigger notifications as chat or channel notifications if the user's notifications for chat or channel is turned on.
     * You must *@mention* the name of the user for the notification to appear in the activity feed. 
