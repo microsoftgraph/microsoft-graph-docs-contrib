@@ -10,6 +10,8 @@ doc_type: apiPageType
 # List accessPackageResourceEnvironments
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve a list of [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) objects and their properties.
 
 ## Permissions
