@@ -26,8 +26,8 @@ To consent to the required permissions in Microsoft Graph Explorer:
 1. Click **Sign in to Graph Explorer** and sign in using the account that has a global administrator role.
 2. Select the settings icon to the right of the user account details, and then choose **Select permissions**.
    
-   <!--![Select the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/settings.png)-->
-   :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select the Microsoft Graph permissions":::
+   ![Select the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/settings.png)
+   <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select the Microsoft Graph permissions":::-->
 
 3. Scroll through the list of permissions to these permissions:
    + AccessReviews (3), expand and then select **AccessReviews.ReadWrite.All**.
@@ -36,8 +36,8 @@ To consent to the required permissions in Microsoft Graph Explorer:
    
    Select **Consent**, and then select **Accept** to accept the consent of the permissions. You do not need to consent on behalf of your organization for these permissions.
    
-   <!--![Consent to the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png)-->
-   :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png" alt-text="Consent to the Microsoft Graph permissions":::
+   ![Consent to the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png)
+   <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png" alt-text="Consent to the Microsoft Graph permissions":::-->
 
 ## Step 1: Create a test user in your tenant
 

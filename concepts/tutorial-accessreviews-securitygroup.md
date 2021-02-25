@@ -28,8 +28,8 @@ To consent to the required permissions in Microsoft Graph Explorer:
 1. Click **Sign in to Graph Explorer** and sign in using the account that has a global administrator role.
 2. Select the settings gear icon to the right of the user account details, and then select **Select permissions**.
    
-   <!--![Select the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/settings.png)-->
-   :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select the Microsoft Graph permissions":::
+   ![Select the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/settings.png)
+   <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select the Microsoft Graph permissions":::-->
 
 3. Scroll through the list of permissions to these permissions:
    + AccessReviews (3), expand and then select **AccessReviews.ReadWrite.All**.
@@ -37,8 +37,8 @@ To consent to the required permissions in Microsoft Graph Explorer:
   
     Select **Consent**, and in the pop window, choose to **Consent on behalf of your organization** and then select **Accept** to accept the consent of the permissions.
    
-   <!--![Consent to the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png)-->
-   :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png" alt-text="Consent to the Microsoft Graph permissions":::
+   ![Consent to the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png)
+   <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png" alt-text="Consent to the Microsoft Graph permissions":::-->
 
 ## Step 1: Create test users in your tenant
 
@@ -406,8 +406,8 @@ Using the call `/me/pendingAccessReviewInstances` in a user context has a number
 
 In the same incognito browser session, log in to https://myaccess.microsoft.com/ to complete the self-attestation. From the right navigation bar, select **Access reviews** and choose your access review. Select **Yes**, that you still need access to **Building security group**, enter a reason, then click **Submit**.
 
-   <!--![Self-attest to access review](../images/../concepts/images/tutorial-accessreviews-api/selfattest.png)-->
-   :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/selfattest.png" alt-text="Self-attest to access review":::
+   ![Self-attest to access review](../images/../concepts/images/tutorial-accessreviews-api/selfattest.png)
+   <!-->:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/selfattest.png" alt-text="Self-attest to access review":::-->
 
 You can now logout and exit the incognito browser session.
 
