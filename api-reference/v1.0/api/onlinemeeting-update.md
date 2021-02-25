@@ -50,7 +50,10 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | Content-type  | application/json. Required. |
 
 ## Request body
-In the request body, supply the values for relevant properties that need updating.
+The table below lists the properties that can be updated. In the request body, include only the properties that need updating, with the following exceptions:
+
+- Adjusting the start or end date/time of an online meeting always requires both **startDateTime** and **endDateTime** properties in the request body.
+- Adjusting the **attendees** field of the **participants** property, such as adding or removing an attendee to the meeting, always requires the full list of attendees in the request body.
 
 ### Properties that allows updating
 | Property             | Type                                                         | Description                                                                                                                                    |
