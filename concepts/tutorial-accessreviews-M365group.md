@@ -1,5 +1,5 @@
 ---
-title: "Review access to M365 groups with guest users using Microsoft Graph APIs."
+title: "Tutorial: Review access to M365 groups with guest users using Microsoft Graph APIs."
 description: "Use the Access Reviews API to review access to your M365 groups"
 author: "isabelleatmsft"
 localization_priority: Normal
@@ -38,7 +38,45 @@ To consent to the required permissions in Microsoft Graph Explorer:
    
    ![Consent to the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png)
 
-## Step 1: Invite a guest user into your tenant
+## Step 1: Create a test user in your tenant
+
+Create a new user and record their `id`. You will assign them a role in the access review later in this tutorial. 
+
+### Request
+
+```http
+POST /users
+Content-Type: application/json
+
+{
+    "accountEnabled": true,
+    "displayName": "Aline Dupuy",
+    "mailNickname": "AlineD",
+    "userPrincipalName": "AlineD@contoso.com",
+    "passwordProfile": {
+        "forceChangePasswordNextSignIn": true,
+        "password": "xWwvJ]6NMw+bWH-d"
+    }
+}
+```
+
+### Response
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
+    "id": "c9a5aff7-9298-4d71-adab-0a222e0a05e4",
+    "displayName": "Aline Dupuy",
+    "mailNickname": "AlineD",
+    "userPrincipalName": "AlineD@contoso.com",
+    "userType": "Member"
+}
+```
+
+## Step 2: Invite a guest user into your tenant
 
 Invite a guest user with the email address of **john.doe@outlook.com** to your tenant.
 
@@ -59,6 +97,9 @@ Content-Type: application/json
 ### Response
 
 ```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#invitations/$entity",
     "id": "3043523a-7a7d-4aec-b9c7-141d9c277559",
@@ -68,14 +109,15 @@ Content-Type: application/json
     "invitedUserEmailAddress": "john.doe@outlook.com",
     "inviteRedirectUrl": "https://myapps.microsoft.com/",
     "status": "PendingAcceptance",
+    "invitedUserMessageInfo": {},
     "invitedUser": {
         "id": "baf1b0a0-1f9a-4a56-9884-6a30824f8d20"
-    }
+    }    
 }
 ```
 Record the **id** of the **invitedUser** from the response to be used later in this tutorial.
 
-## Step 2: Create a new M365 group and add the guest user
+## Step 3: Create a new M365 group and add the guest user
 
 In this step:
 1. Create a new M365 group named **Feelgood marketing campaign** and add `john.doe@outlook.com` to the group.
@@ -84,7 +126,7 @@ In this step:
 
 ### Request
 In this call, replace:
-+ `cdb555e3-b33e-4fd5-a427-17fadacbdfa7` with your `id`.
++ `cdb555e3-b33e-4fd5-a427-17fadacbdfa7` with your `id`. To retrieve your `id`, run `GET` on `https://graph.microsoft.com/beta/me`.
 + `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` with the `id` that you recorded for the invited user.
 
 ```http
@@ -112,6 +154,9 @@ Content-Type: application/json
 ### Response
 
 ```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
     "id": "59ab642a-2776-4e32-9b68-9ff7a47b7f6a",
@@ -127,7 +172,7 @@ Content-Type: application/json
 }
 ```
 
-## Step 3: Create an access review for all M365 groups with guest users
+## Step 4: Create an access review for all M365 groups with guest users
 
 You have an M365 group and it has an guest user. You can then create a recurring access review series for all M365 groups with guest users. This means that for all M365 groups with guest users, you will schedule a periodic review of the guests' access to the M365 group.
 
@@ -142,7 +187,7 @@ The access review series uses following settings:
 ### Request
 In this call, replace the following:
 
-+ `c9a5aff7-9298-4d71-adab-0a222e0a05e4` with the `id` of the user you are designating as a backup reviewer.
++ `c9a5aff7-9298-4d71-adab-0a222e0a05e4` with the `id` of the user you are designating as a backup reviewer. This is the `id` you recorded from Step 1.
 + Value of **startDate** with today's date and value of **endDate** with a date one year from the start date. 
 
 ```http
@@ -281,19 +326,19 @@ Content-type: application/json
 }
 ```
 
-## Step 4: List instances of the access review
+## Step 5: List instances of the access review
 
 The following query lists all instances of the access review definition. If your test tenant contains other M365 groups with guest users, this request will return 1 instance for every M365 group with guest users in the tenant.
 
 ### Request
-In this call, replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the `id` of your access review definition returned in Step 3.
+In this call, replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the `id` of your access review definition returned in Step 4.
 
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances
 ```
 
 ### Response
-In this response, the scope includes a group of `id` `59ab642a-2776-4e32-9b68-9ff7a47b7f6a`. This is the **Feelgood marketing campaign** group created in Step 2.
+In this response, the scope includes a group with `id` `59ab642a-2776-4e32-9b68-9ff7a47b7f6a`. This is the **Feelgood marketing campaign** group created in Step 3.
 
 ```http
 HTTP/1.1 200 OK
@@ -317,14 +362,14 @@ Content-type: application/json
 ```
 In this response, the access review instance is currently `InProgress`. Because this is a quarterly review, every 3 months time, a new review instance is created and you—the reviewer—can apply new decisions.
 
-## Step 5: Get decisions
+## Step 6: Get decisions
 
 Get the decisions taken for the instance of an access review.
 
 ### Request
 In this call:
-+ Replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the `id` of your access review definition returned in Step 3.
-+ Replace `6392b1a7-9c25-4844-83e5-34e23c88e16a` with the `id` of your access review instance returned in Step 4.
++ Replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the `id` of your access review definition returned in Step 4.
++ Replace `6392b1a7-9c25-4844-83e5-34e23c88e16a` with the `id` of your access review instance returned in Step 5.
 
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances/6392b1a7-9c25-4844-83e5-34e23c88e16a/decisions
@@ -374,7 +419,7 @@ Content-type: application/json
 
 Because this is a quarterly review, and as long as the definition is still active, that is, the recurrence **endDate** is not a past date, every 3 months time when a new review instance is created, you as the reviewer can apply new decisions.
 
-## Step 6: Clean up resources
+## Step 7: Clean up resources
 
 Delete the three resources that you created for this tutorial—**Feelgood marketing campaign**, the access review schedule definition, and the guest user.
 
@@ -422,6 +467,23 @@ DELETE https://graph.microsoft.com/beta/users/baf1b0a0-1f9a-4a56-9884-6a30824f8d
 HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
+
+### Delete the test user
+
+#### Request
+In this call, replace `c9a5aff7-9298-4d71-adab-0a222e0a05e4` with the `id` of your test user.
+
+```http
+DELETE https://graph.microsoft.com/beta/users/c9a5aff7-9298-4d71-adab-0a222e0a05e4
+```
+
+#### Response
+
+```http
+HTTP/1.1 204 No Content
+Content-type: text/plain
+```
+
 
 Congratulations! You have created an access review for all guest users in M365 groups in your tenant, and scheduled quarterly for the evaluation and attestation of the guest users' access. The group owners will review access during these cycles, choosing either to approve or deny access.
 

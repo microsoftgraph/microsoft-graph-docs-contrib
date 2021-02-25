@@ -1,5 +1,5 @@
 ---
-title: "Using the Access Reviews API for your security groups"
+title: "Tutorial: Using the Access Reviews API for your security groups"
 description: "Use the Access Reviews API to review access to your groups"
 author: "isabelleatmsft"
 localization_priority: Normal
@@ -18,7 +18,7 @@ To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
 + Log in to [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a global administrator role.
-  + [Optional] Start a new **incognito** or **InPrivate browser** session or via an anonymous browser, logged in as one of the members you will add to the security group.
+  + [Optional] Start a new **incognito** or **InPrivate browser** session or via an anonymous browser. You will log in later in this tutorial.
 + Permissions:
   + To call the Access Reviews APIs, consent to the *AccessReview.ReadWrite.All* permission.
   + To create the security group, and delete it later after completing the tutorial, consent to the *Group.ReadWrite.All* permission.
@@ -35,14 +35,54 @@ To consent to the required permissions in Microsoft Graph Explorer:
 
 4. While consenting to the *AccessReview.ReadWrite.All* permission, in the pop window, choose to **Consent on behalf of your organization** and then select **Accept** to accept the consent of the permissions. You do not need to consent to the *Group.ReadWrite.All* permission on behalf of your organization because the permission is not needed by other users.
 
-## Step 1: Create a security group, assign owners, and add members
+## Step 1: Create test users in your tenant
 
-Create a security group named **Building security group** that is the target of the access reviews in this tutorial. Assign to this group two group owners and two members—one of the group owners is yourself. These members will be the subject of review by the group owners.
+Create three new test users by running the request below three times, changing the **displayName**, **mailNickname**, and **userPrincipalName** properties each time. Record their `id`s.
+
+### Request
+
+```http
+POST /users
+Content-Type: application/json
+
+{
+    "accountEnabled": true,
+    "displayName": "Aline Dupuy",
+    "mailNickname": "AlineD",
+    "userPrincipalName": "AlineD@contoso.com",
+    "passwordProfile": {
+        "forceChangePasswordNextSignIn": true,
+        "password": "xWwvJ]6NMw+bWH-d"
+    }
+}
+```
+
+### Response
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
+    "id": "43b12b0c-ee2c-4257-96fe-505d823e06ab",
+    "displayName": "Aline Dupuy",
+    "mailNickname": "AlineD",
+    "userPrincipalName": "AlineD@contoso.com",
+    "userType": "Member"
+}
+```
+
+## Step 2: Create a security group, assign owners, and add members
+
+Create a security group named **Building security group** that is the target of the access reviews in this tutorial. Assign to this group two group owners and two members. These members will be the subject of review by the group owners.
 
 ### Request
 In this call, replace:
-+ `010b2de0-0ed4-4ece-bfa2-22fff71d0497` and `b828cc0e-4240-46ed-bb25-888744487e2d` with the `id`'s of your two group owners—one of which is yourself.
-+ `43b12b0c-ee2c-4257-96fe-505d823e06ab` and `859924d0-7115-422a-9ee8-ea8c0c014707` with the `id`'s of the two members to add to your group.
++ `010b2de0-0ed4-4ece-bfa2-22fff71d0497` and `b828cc0e-4240-46ed-bb25-888744487e2d` with the `id`'s of your two group owners.
+  + One of the `id`s belongs to one of the users you created in Step 1.
+  + The other is your `id`. To retrieve your `id`, run `GET` on `https://graph.microsoft.com/beta/me`.
++ `43b12b0c-ee2c-4257-96fe-505d823e06ab` and `859924d0-7115-422a-9ee8-ea8c0c014707` with the `id`'s of you two group members. These are the other two members you created in Step 1.
 
 ```http
 POST https://graph.microsoft.com/beta/groups
@@ -81,8 +121,9 @@ Content-Type: application/json
     "mailNickname": "buildingsecurity"
 }
 ```
+Record the **id** of the new group from the response to be used later in this tutorial.
 
-## Step 2: Create an access review
+## Step 3: Create an access review
 
 Create an access review for members of the security group, using the following settings:
 + It is a self-reviewing access review. In this case, users under review will self-attest to their need for access to the group.
@@ -191,12 +232,12 @@ Content-type: application/json
 }
 ```
 
-## Step 3: List instances of the access review
+## Step 4: List instances of the access review
 
-The following query lists all instances of the access review definition. Because you created a one-time access review in Step 2, the request returns only one instance whose `id` is the same as the access definition’s `id`.
+The following query lists all instances of the access review definition. Because you created a one-time access review in Step 3, the request returns only one instance whose `id` is the same as the access definition’s `id`.
 
 ### Request
-In this call, replace `d7286a17-3a01-406a-b872-986b6b40317c` with the `id` of your access review definition returned in Step 2.
+In this call, replace `d7286a17-3a01-406a-b872-986b6b40317c` with the `id` of your access review definition returned in Step 3.
 
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c/instances
@@ -227,12 +268,12 @@ Content-type: application/json
 }
 ```
 
-## Step 4: Get decisions
+## Step 5: Get decisions
 
 You are interested in the decisions taken for the instances of an access review.
 
 ### Request
-In this call, replace `d7286a17-3a01-406a-b872-986b6b40317c` with the `id` of your access review definition returned in Step 2.
+In this call, replace `d7286a17-3a01-406a-b872-986b6b40317c` with the `id` of your access review definition returned in Step 3.
 
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c/instances/d7286a17-3a01-406a-b872-986b6b40317c/decisions
@@ -306,11 +347,11 @@ Content-type: application/json
 }
 ```
 
-From the call, the **decision** property has the value of `NotReviewed`. This is because none of the two members has completed their self-attestation. Follow step 5 to learn how each member can self-attest to their need for access review.
+From the call, the **decision** property has the value of `NotReviewed`. This is because none of the two members has completed their self-attestation. Follow step 6 to learn how each member can self-attest to their need for access review.
 
-## Step 5: Self-review your pending access
+## Step 6: Self-review your pending access
 
-In Step 2, you configured the access review as a self-reviewing. This means that both members of **Building security group** must self-attest to their need to maintain access to the group. You will complete this step as one of the two members of Building security group.
+In Step 3, you configured the access review as a self-reviewing. This means that both members of **Building security group** must self-attest to their need to maintain access to the group. You will complete this step as one of the two members of Building security group.
 
 In this step, you will:
 1. List your pending access review instances.
@@ -368,7 +409,7 @@ Back in the main browser session where you are still logged in as the global adm
 
 Congratulations! You have created an access review and self-attested to the need for access. You only do this once, and maintain access until when the access review definition expires.
 
-## Step 6: Clean up resources
+## Step 7: Clean up resources
 
 Delete the two resources that you created for this tutorial—**Building security group** and the access review schedule definition.
 
@@ -402,6 +443,23 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definit
 HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
+
+### Delete the three test users
+
+#### Request
+In this call, replace `43b12b0c-ee2c-4257-96fe-505d823e06ab` with the `id` of your test user. Repeat this twice with the `id`s of the other two users to delete them.
+
+```http
+DELETE https://graph.microsoft.com/beta/users/43b12b0c-ee2c-4257-96fe-505d823e06ab
+```
+
+#### Response
+
+```http
+HTTP/1.1 204 No Content
+Content-type: text/plain
+```
+
 
 ## See also
 
