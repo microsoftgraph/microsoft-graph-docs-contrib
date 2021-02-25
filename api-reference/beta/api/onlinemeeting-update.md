@@ -52,7 +52,10 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | Content-type  | application/json. Required. |
 
 ## Request body
-In the request body, supply the values for relevant properties that need updating.  
+The table below lists the properties that can be updated. In the request body, include only the properties that need updating, with the following exceptions:
+
+- Adjusting the start or end date/time of an online meeting always requires both **startDateTime** and **endDateTime** properties in the request body.
+- Adjusting the **attendees** field of the **participants** property, such as adding or removing an attendee to the meeting, always requires the full list of attendees in the request body.
 
 ### Properties that allows updating
 | Property             | Type                                                         | Description                                                                                                                                    |
@@ -64,12 +67,6 @@ In the request body, supply the values for relevant properties that need updatin
 | isEntryExitAnnounced | Boolean                                                      | Whether or not to announce when callers join or leave.                                                                                         |
 | lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | Specifies which participants can bypass the meeting lobby.                                                                                     |
 | allowedPresenters    | onlineMeetingPresenters                                      | Specifies who can be a presenter in a meeting. Possible values are everyone, organization, roleIsPresenter, organizer, and unknownFutureValue. |
-
-**Notes:**
-- The **startDateTime** and **endDateTime** must appear in pairs.
-- Provide a full list of attendees to update `participants.attendees`. For example, when adding a new attendee, please provide
-a collection including all existing attendees and the new one to be added.
-
 
 ## Response
 If successful, this method returns a `200 OK` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
