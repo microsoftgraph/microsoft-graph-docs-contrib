@@ -20,7 +20,7 @@ To complete this tutorial, you need the following resources and privileges:
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled. 
 + An account in a different Azure AD tenant or a social identity that you can invite as a guest user (B2B user).
 + Sign in to [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)  as a user in a global administrator role. 
-+ Permissions: For this tutorial, the following delegated permissions are needed: `User.Invite.All`, `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.AccessAsUser.All`.
++ Permission - For this tutorial, the following delegated permissions are needed: `User.Invite.All`, `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.AccessAsUser.All`.
 
 To consent to the required permissions in Microsoft Graph Explorer:
 1. Click **Sign in to Graph Explorer** and sign in using the account that has a global administrator role.
@@ -30,9 +30,8 @@ To consent to the required permissions in Microsoft Graph Explorer:
 
 3. Scroll through the list of permissions to these permissions:
    + AccessReviews (3), expand and then select **AccessReviews.ReadWrite.All**.
-   + Directory (3), expand and then select **Directory.AccessAsUser.All**.
    + Group (2), expand and then select **Group.ReadWrite.All**.
-   + User (8), expand and then select **User.Invite.All**.
+   + User (8), expand and then select **User.Invite.All** and **User.ReadWrite.All**.
    
    Select **Consent**, and then select **Accept** to accept the consent of the permissions. You do not need to consent on behalf of your organization for these permissions.
    
@@ -421,7 +420,7 @@ Because this is a quarterly review, and as long as the definition is still activ
 
 ## Step 7: Clean up resources
 
-Delete the three resources that you created for this tutorial—**Feelgood marketing campaign**, the access review schedule definition, and the guest user.
+Delete the resources that you created for this tutorial—**Feelgood marketing campaign** group, the access review schedule definition, the guest user, and the test user.
 
 ### Delete the M365 group
 

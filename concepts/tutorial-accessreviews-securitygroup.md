@@ -19,9 +19,7 @@ To complete this tutorial, you need the following resources and privileges:
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
 + Log in to [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a global administrator role.
   + [Optional] Start a new **incognito** or **InPrivate browser** session or via an anonymous browser. You will log in later in this tutorial.
-+ Permissions:
-  + To call the Access Reviews APIs, consent to the *AccessReview.ReadWrite.All* permission.
-  + To create the security group, and delete it later after completing the tutorial, consent to the *Group.ReadWrite.All* permission.
++ Permissions - For this tutorial, the following delegated permissions are needed: `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`.
 
 To consent to the required permissions in Microsoft Graph Explorer:
 1. Click **Sign in to Graph Explorer** and sign in using the account that has a global administrator role.
@@ -29,11 +27,13 @@ To consent to the required permissions in Microsoft Graph Explorer:
    
    ![Select the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/settings.png)
 
-3. Scroll through the list of permissions to find the *AccessReview.ReadWrite.All* and *Group.ReadWrite.All* permissions. To consent to the permission, select it first, then select **Consent**.
+3. Scroll through the list of permissions to these permissions:
+   + AccessReviews (3), expand and then select **AccessReviews.ReadWrite.All**.
+   + Group (2), expand and then select **Group.ReadWrite.All**.
+  
+    Select **Consent**, and then select **Accept** to accept the consent of the permissions. While consenting to the *AccessReview.ReadWrite.All* permission, in the pop window, choose to **Consent on behalf of your organization** and then select **Accept** to accept the consent of the permissions. You do not need to consent to the *Group.ReadWrite.All* permission on behalf of your organization because the permission is not needed by other users.
    
    ![Consent to the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png)
-
-4. While consenting to the *AccessReview.ReadWrite.All* permission, in the pop window, choose to **Consent on behalf of your organization** and then select **Accept** to accept the consent of the permissions. You do not need to consent to the *Group.ReadWrite.All* permission on behalf of your organization because the permission is not needed by other users.
 
 ## Step 1: Create test users in your tenant
 
@@ -411,7 +411,7 @@ Congratulations! You have created an access review and self-attested to the need
 
 ## Step 7: Clean up resources
 
-Delete the two resources that you created for this tutorial—**Building security group** and the access review schedule definition.
+Delete the resources that you created for this tutorial—**Building security group**, the access review schedule definition, and the three test users..
 
 ### Delete the security group
 
