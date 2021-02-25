@@ -1,6 +1,74 @@
 {
   "changelog": [
     {
+      "changelist": [
+        {
+          "Id": "fcd2a19c-ac71-4867-bacc-8394e7e4b6cf",
+          "ApiChange": "Property",
+          "ChangedApiName": "notes",
+          "ChangeType": "Addition",
+          "Description": "Added the **notes** property to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "b66a7433-00a9-445c-857a-2ff595d0cc2d",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** property to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "7e6b995d-8601-430f-b7e4-b7b1f29ec8f6",
+          "ApiChange": "Property",
+          "ChangedApiName": "appDescription",
+          "ChangeType": "Addition",
+          "Description": "Added the **appDescription** property to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "87dc25a5-fe55-454f-ad6f-b6d2c30ea9a4",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-25T08:55:18.080Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Application"
+    },
+    {
+      "changelist": [
+        {
+          "Id": "4dffaedd-d52e-4e98-904f-61916a840d21",
+          "ApiChange": "Property",
+          "ChangedApiName": "notes",
+          "ChangeType": "Addition",
+          "Description": "Added the **notes** property to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-1.0) resource.",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "4f2bf88b-1633-4259-9a5f-bd3eecc1ae76",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** property to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-1.0) resource.",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "ba9b1431-b529-4b51-9d6c-b954a695f01a",
+          "ApiChange": "Property",
+          "ChangedApiName": "appDescription",
+          "ChangeType": "Addition",
+          "Description": "Added the **appDescription** property to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-1.0) resource.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "82e48b8e-d525-4d36-870e-452e677f22d3",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-02-25T08:55:18.080Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Application"
+    },
+    {
       "ChangeList": [
          {
           "Id": "a9ef9c12-53b3-40fe-9191-a879dc4bc6a8",
