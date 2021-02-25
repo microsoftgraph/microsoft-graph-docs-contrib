@@ -89,16 +89,19 @@ In order to allow users to sign in, you need to provide a URL that the Teams app
 You can do this by adding a new `auth.html` file in the `public` folder (which should be at the same level as `index.html`) and adding the following code: 
 
 ```html
-<head>
-  <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
-</head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+  </head>
 
-<body>
-  <script>
-    mgt.TeamsProvider.handleAuth();
-  </script>
-</body>
+  <body>
+    <script>
+      mgt.TeamsProvider.handleAuth();
+    </script>
+  </body>
+</html>
 ```
 
 ## Add components
