@@ -1,7 +1,7 @@
 {
   "changelog": [
     {
-      "changelist": [
+      "Changelist": [
         {
           "Id": "fcd2a19c-ac71-4867-bacc-8394e7e4b6cf",
           "ApiChange": "Property",
@@ -35,7 +35,7 @@
       "SubArea": "Application"
     },
     {
-      "changelist": [
+      "Changelist": [
         {
           "Id": "4dffaedd-d52e-4e98-904f-61916a840d21",
           "ApiChange": "Property",
