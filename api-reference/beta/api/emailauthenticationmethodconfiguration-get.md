@@ -37,7 +37,7 @@ For delegated scenarios the administrator needs one of the following [roles](/az
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfiguration/email
+GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
 
 ## Request headers
@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and an [emailAuthent
 -->
 
 ```http
-GET /policies/authenticationMethodsPolicy/email
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
 
 ### Response
