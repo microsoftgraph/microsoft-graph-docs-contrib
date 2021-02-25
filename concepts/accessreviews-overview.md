@@ -40,7 +40,7 @@ Access reviews are structured logically and are comprised of these building bloc
 
 ## See also
 
-+ [Planning Azure Active Directory Access Reviews deployment.](/azure/active-directory/governance/deploy-access-reviews)
++ [Planning Azure Active Directory Access Reviews deployment](/azure/active-directory/governance/deploy-access-reviews)
 + [Create an access review of groups & applications](/azure/active-directory/governance/create-access-review)
-+ [Get access on behalf of a user.](/graph/auth-v2-user)
-+ [Get access without a user.](/graph/auth-v2-service)
++ [Get access on behalf of a user](/graph/auth-v2-user)
++ [Get access without a user](/graph/auth-v2-service)

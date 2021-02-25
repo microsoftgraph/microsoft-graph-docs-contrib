@@ -488,8 +488,8 @@ Congratulations! You have created an access review for all guest users in M365 g
 
 ## See also
 
-+ [Access Reviews overview and license requirements.](/azure/active-directory/governance/access-reviews-overview)
-+ [Access Reviews license scenarios.](/azure/active-directory/governance/access-reviews-overview#example-license-scenarios)
++ [Access Reviews overview and license requirements](/azure/active-directory/governance/access-reviews-overview)
++ [Access Reviews license scenarios](/azure/active-directory/governance/access-reviews-overview#example-license-scenarios)
 + [Create an access review of groups & applications](/azure/active-directory/governance/create-access-review)
 + [Invite/add guest users to your organization](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true)
 + [Access Reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
