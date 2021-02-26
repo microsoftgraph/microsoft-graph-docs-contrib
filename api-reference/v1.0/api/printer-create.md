@@ -1,6 +1,6 @@
 ---
 title: "printer: create"
-description: Creates (registers) a printer with the Universal Print service.
+description: Create (register) a printer with the Universal Print service.
 author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
@@ -40,7 +40,7 @@ POST /print/printers/create
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
@@ -52,12 +52,12 @@ The following table shows the parameters that can be used with this action.
 |physicalDeviceId|String|The physical device UUID of the printer. Required if the `hasPhysicalDevice` property is true.|No|
 |hasPhysicalDevice|Boolean|True if the printer has physical output device, false otherwise. If omitted, the default value is true.|No|
 |certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|The X.509 Certificate Signing Request (CSR) for the certificate created and used by the printer to identify itself.|Yes|
-|connectorId|String|Id of Connector acting as proxy to the printer.|No|
+|connectorId|String|ID of the connector acting as proxy to the printer.|No|
 
 ## Response
 If successful, this method returns a `202 Accepted` response code and a link to the associated [printerCreateOperation](../resources/printercreateoperation.md) in the `Operation-Location` header.
 
-Making a GET request to the linked URL can be used to get the status of an ongoing printer registration. Once printer registration has completed successfully, a GET request to the linked URL will contain the created printer object and registered certificate.
+You make a GET request to the linked URL to get the status of an ongoing printer registration. After printer registration has completed successfully, a GET request to the linked URL will contain the created printer object and registered certificate.
 
 ## Examples
 
@@ -88,7 +88,7 @@ Content-length: 287
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
