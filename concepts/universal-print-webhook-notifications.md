@@ -42,11 +42,11 @@ For information about how to listen for Microsoft Graph notifications, see [Use 
 
 To subscribe to notifications for print jobs, applications must have the following permission scopes approved in the customer’s Azure AD tenant: 
 
-* For printTask triggered (JobStarted) event, the permissions listed in [Get taskDefinition](/graph/api/printtaskdefinition-get?view=graph-rest-1.0&tabs=http%22%20%5Cl%20%22permissions%22%20%5C). 
+* For printTask triggered (JobStarted) event, the permissions listed in [Get taskDefinition](/graph/api/printtaskdefinition-get?view=graph-rest-beta&tabs=http%22%20%5Cl%20%22permissions%22%20%5C). 
 
-* For JobFetchable event, the permissions listed in [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&tabs=http).
+* For JobFetchable event, the permissions listed in [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http).
 
-Applications must [generate and use the Azure AD security token](/graph/auth-v2-service?context=graph%2Fapi%2Fbeta&view=graph-rest-1.0) in the Microsoft Graph API request header. The security token contains the claims as per the scopes approved for the customer’s Azure AD tenant by its administrator.  
+Applications must [generate and use the Azure AD security token](/graph/auth-v2-service?context=graph%2Fapi%2Fbeta&view=graph-rest-beta) in the Microsoft Graph API request header. The security token contains the claims as per the scopes approved for the customer’s Azure AD tenant by its administrator.  
 
 
 ## Create subscription: printTask triggered (JobStarted) event 
@@ -55,20 +55,20 @@ Some applications monitor print queues for incoming jobs and want to be notified
 
 Before creating a notification for a **printTask**-triggered event, ensure that application has created the following: 
 
-- A [printTaskDefinition](/graph/api/print-post-taskdefinitions?view=graph-rest-1.0&tabs=http) for the customer’s Azure AD tenant. A single task definition can be associated with one or more printers within the same Azure AD tenant. 
+- A [printTaskDefinition](/graph/api/print-post-taskdefinitions?view=graph-rest-beta&tabs=http) for the customer’s Azure AD tenant. A single task definition can be associated with one or more printers within the same Azure AD tenant. 
 
-- A [printTaskTrigger](/graph/api/printer-post-tasktriggers?view=graph-rest-1.0&tabs=http) for each of the printer queues for which the partner wants to receive a notification when a new print job starts. The **printTaskTrigger** needs to be bound to the **printTaskDefinition**. 
+- A [printTaskTrigger](/graph/api/printer-post-tasktriggers?view=graph-rest-beta&tabs=http) for each of the printer queues for which the partner wants to receive a notification when a new print job starts. The **printTaskTrigger** needs to be bound to the **printTaskDefinition**. 
 
 >[!NOTE]
 >One printer can be associated with only one **printTaskTrigger** and one **printTaskTrigger** can be associated with only one **printTaskDefinition**. However, one **printTaskDefinition** can have one or more **printTaskTriggers** associated with it. 
 
-With the **printTaskDefinition** that exists for customer’s Azure AD tenant, the application can [create a subscription for a printTask triggered (JobStarted) event using the printTaskDefinition](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&tabs=http). While creating the subscription:  
+With the **printTaskDefinition** that exists for customer’s Azure AD tenant, the application can [create a subscription for a printTask triggered (JobStarted) event using the printTaskDefinition](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http). While creating the subscription:  
 
 * The `resource` field needs to be set as `print/taskDefinitions/{printTaskDefinition ID}/tasks`. 
 * The `changeType` field needs to be set as `created`. 
-* The `expirationDateTime` field needs to be less than the [maximum expiration time](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type). 
+* The `expirationDateTime` field needs to be less than the [maximum expiration time](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type). 
 
-For more details, see [Subscription resource type properties](/graph/api/resources/subscription?view=graph-rest-1.0#properties).
+For more details, see [Subscription resource type properties](/graph/api/resources/subscription?view=graph-rest-beta#properties).
 
 The following is an example of the request.
 <!-- {
@@ -126,9 +126,9 @@ A JobFetchable notification needs to be created for each printer queue. While cr
 * The `resource` field needs to be set as 'print/printers/{printer id}/jobs'. 
 * The `changeType` field needs to be set as `updated`. 
 * The `notificationQueryOptions` field needs to be set as `$filter = isFetchable eq true`. 
-* The `expirationDateTime` field needs to be less than the [maximum expiration time](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type). 
+* The `expirationDateTime` field needs to be less than the [maximum expiration time](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type). 
 
-For more details, see [Subscription resource type properties](/graph/api/resources/subscription?view=graph-rest-1.0#properties).
+For more details, see [Subscription resource type properties](/graph/api/resources/subscription?view=graph-rest-beta#properties).
 
 The following is an example of the request.
 <!-- {
@@ -180,11 +180,11 @@ Content-Type: application/json
 
 ## Renewing a notification subscription
 
-Microsoft Graph has a limit on the expiration time. For details, see [maximum expiration time](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type). To continue receiving notifications, the subscription needs to be renewed periodically by using the [Update subscription API](/graph/api/subscription-update?view=graph-rest-1.0&tabs=http). 
+Microsoft Graph has a limit on the expiration time. For details, see [maximum expiration time](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type). To continue receiving notifications, the subscription needs to be renewed periodically by using the [Update subscription API](/graph/api/subscription-update?view=graph-rest-beta&tabs=http). 
 
 ## Other operations on notification subscriptions 
 
-Applications can [get](/graph/api/subscription-get?view=graph-rest-1.0&tabs=http) details of the subscription or can [delete](/graph/api/subscription-delete?view=graph-rest-1.0&tabs=http) a subscription when required. For details, see [Use the Microsoft Graph API to get change notifications](/graph/api/resources/webhooks?view=graph-rest-1.0).
+Applications can [get](/graph/api/subscription-get?view=graph-rest-beta&tabs=http) details of the subscription or can [delete](/graph/api/subscription-delete?view=graph-rest-beta&tabs=http) a subscription when required. For details, see [Use the Microsoft Graph API to get change notifications](/graph/api/resources/webhooks?view=graph-rest-beta).
 
 
 ## FAQs
@@ -196,11 +196,10 @@ For details, see [Notification endpoint validation](/graph/webhooks#notification
 Applications should process and acknowledge every change notification they receive. For details, see [Processing the change notification](/graph/webhooks#processing-the-change-notification).
 
 ### How can I get a list of active subscriptions?
-For details about how to retrieve a list of webhook subscriptions, see [List subscriptions](/graph/api/subscription-list?view=graph-rest-1.0&tabs=http).
+For details about how to retrieve a list of webhook subscriptions, see [List subscriptions](/graph/api/subscription-list?view=graph-rest-beta&tabs=http).
 
 
 ## See also
 
 - To learn more about the cloud printing API in Microsoft Graph, see [Universal Print cloud printing API overview](/graph/universal-print-concept-overview). 
 - For suggestions or feedback about the cloud printing API in Microsoft Graph, visit the [Universal Print tech community](https://aka.ms/community/UniversalPrint).
-
