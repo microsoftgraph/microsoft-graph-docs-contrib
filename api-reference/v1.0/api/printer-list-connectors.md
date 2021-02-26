@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List printConnectors for a printer
 Namespace: microsoft.graph
 
-Retrieve a list of **connectors** associated with the [printer](../resources/printer.md).
+Retrieve a list of [printConnectors](../resources/printConnectors.md) associated with the [printer](../resources/printer.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
