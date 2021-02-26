@@ -35,12 +35,12 @@ GET /print/shares/{id}/printer
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters including $select, $expand to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters, including `$select` and `$expand`, to help customize the response. For example:
 
-e.g. 
 ```http
 GET /print/printers/{id}?$select=id,displayName,capabilities
 ```
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -147,8 +147,10 @@ Content-Type: application/json
 }
 ```
 
-The following is an example of the response, when using $select=id,displayName,capabilities
+The following is an example of the response to a request that includes the `$select=id,displayName,capabilities` parameter.
+
 >**Note:** The response object shown here might be shortened for readability.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
