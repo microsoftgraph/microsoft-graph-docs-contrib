@@ -1,5 +1,5 @@
 ---
-title: Delete taskTrigger
+title: Delete printTaskTrigger
 description: Delete a printer's task trigger.
 author: nilakhan
 localization_priority: Normal
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Delete printTaskTrigger
 Namespace: microsoft.graph
 
-Delete a [printer](../resources/printer.md)'s [task trigger](../resources/printtasktrigger.md) to prevent related print events from triggering tasks on the specified printer.
+Delete the [task trigger](../resources/printtasktrigger.md) of a [printer](../resources/printer.md) to prevent related print events from triggering tasks on the specified printer.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -58,7 +58,7 @@ DELETE https://graph.microsoft.com/v1.0/print/printers/{printerId}/taskTriggers/
 ```
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
