@@ -1,5 +1,5 @@
 ---
-title: Update taskDefinition
+title: Update printTaskDefinition
 description: Update a task definition.
 author: nilakhan
 localization_priority: Normal
@@ -47,7 +47,7 @@ In the request body, supply the values for the relevant [printTaskDefinition](..
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|displayName|String|The name of the printTaskDefinition.|
+|displayName|String|The name of the **printTaskDefinition**.|
 |createdBy|String|Information about the app that created the task definition. Only the `createdBy.displayName` property can be updated.|
 
 ## Response
