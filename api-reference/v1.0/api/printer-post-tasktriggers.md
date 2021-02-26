@@ -1,5 +1,5 @@
 ---
-title: Create taskTrigger
+title: Create printTaskTrigger
 description: Create a new task trigger on the specified printer.
 author: nilakhan
 localization_priority: Normal
