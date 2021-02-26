@@ -53,7 +53,7 @@ All other values on the listItem are left alone.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
-```json
+```http
 PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 Content-Type: application/json
 
@@ -83,7 +83,7 @@ If successful, this method returns a [fieldValueSet][] in the response body for 
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

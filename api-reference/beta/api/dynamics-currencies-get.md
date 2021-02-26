@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a **currencies**
 
 Here is an example of the request.
 
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/currencies/{id}
 ```
 

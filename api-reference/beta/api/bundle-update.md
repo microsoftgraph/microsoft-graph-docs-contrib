@@ -69,7 +69,7 @@ This example renames a bundle.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "rename-bundle" } -->
 
-```json
+```http
 PATCH https://graph.microsoft.com/beta/drive/items/{bundle-id}
 Content-Type: application/json
 
@@ -100,7 +100,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
