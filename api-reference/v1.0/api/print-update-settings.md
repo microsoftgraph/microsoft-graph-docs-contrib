@@ -7,7 +7,7 @@ ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
-# Create printSettings
+# Update printSettings
 Namespace: microsoft.graph
 
 Update tenant-wide settings for the Universal Print service.
@@ -68,7 +68,7 @@ Content-type: application/json
 ```
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -76,6 +76,6 @@ Content-type: application/json
 }
 -->
 ``` http
-HTTP/1.1 204 NoContent
+HTTP/1.1 204 No Content
 ```
 
