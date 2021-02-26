@@ -218,7 +218,6 @@
           "Description": "Added the [Remove tab from chat](https://docs.microsoft.com/en-us/graph/api/chat-delete-tabs?view=graph-rest-1.0&preserve-view=true) method.",
           "Target": "chat"
         },
-
         {
           "Id": "0bc56bd0-6c96-11eb-8401-e19c685756df",
           "ApiChange": "Enum type",
