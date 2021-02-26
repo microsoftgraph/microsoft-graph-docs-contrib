@@ -1,6 +1,6 @@
 ---
-title: Delete connector
-description: Delete (unregister) a connector.
+title: Delete printConnector
+description: Delete (unregister) a printConnector.
 author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
