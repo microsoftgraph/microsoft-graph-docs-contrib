@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [printerShare](../resources/printershare.md) objects in the response body.
 
->**Note**: The response will not contain 'defaults' and 'capabilities' properties. These properties can be queried using [Get PrinterShare](printerShare-get.md) request.
+>**Note**: The response will not contain the **defaults** and **capabilities** properties. These properties can be queried using a [Get printerShare](printerShare-get.md) request.
 
 ## Examples
 
