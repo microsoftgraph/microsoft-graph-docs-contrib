@@ -1,5 +1,5 @@
 ---
-title: Create printJob for a printer
+title: Create printJob
 description: Create a new printJob for a printer. 
 author: nilakhan
 localization_priority: Normal
@@ -42,7 +42,7 @@ POST /print/printers/{printerId}/jobs
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of a [printJob](../resources/printjob.md) object. The printJob object should only contain **configuration** property. All properties of **configuration** are nullable. All other fields, including job and document IDs, are set automatically during resource creation and should not be provided in request.
+In the request body, supply a JSON representation of a [printJob](../resources/printjob.md) object. The printJob object should only contain a **configuration** property. All properties of **configuration** are nullable. All other fields, including job and document IDs, are set automatically during resource creation and should not be provided in request.
 
 Right now, Universal Print supports only one **printDocument** per **printJob** object.
 
