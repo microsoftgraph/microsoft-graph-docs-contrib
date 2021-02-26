@@ -1651,7 +1651,7 @@ items:
     - name: Devices and apps
       expanded: true
       items:
-      - name: Cloud printing (preview)
+      - name: Cloud printing
         items:
         - name: Print
           href: resources/print.md
