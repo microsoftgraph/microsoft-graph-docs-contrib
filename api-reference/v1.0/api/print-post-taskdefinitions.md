@@ -1,5 +1,5 @@
 ---
-title: Create taskDefinition
+title: Create printTaskDefinition
 description: Create a new task definition.
 author: nilakhan
 localization_priority: Normal
@@ -44,7 +44,7 @@ POST /print/taskDefinitions
 ## Request body
 In the request body, supply a JSON representation of [printTaskDefinition](../resources/printtaskdefinition.md) object.
 
-The [printTaskDefinition](../resources/printtaskdefinition.md)'s **id** and **createdBy.appId** properties are set automatically upon resource creation.
+The **id** and **createdBy.appId** properties of the [printTaskDefinition](../resources/printtaskdefinition.md) object are set automatically upon resource creation.
 
 ## Response
 
