@@ -12,14 +12,14 @@ Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It pro
 
 ![Microsoft Graph, Microsoft Graph data connect, and Microsoft Graph connectors enable extending Microsoft 365 experiences and building intelligent apps.](images/microsoft-graph-dataconnect-connectors-enhance.png)
 
-## Data flow that powers the Microsoft 365 platform
+## Data and services powering the Microsoft 365 platform
 In the Microsoft 365 platform, three main components facilitate the access and flow of data:
 
 - The Microsoft Graph API offers a single endpoint, `https://graph.microsoft.com`, to provide access to **rich, people-centric data and insights in the Microsoft cloud**, including Microsoft 365, Windows 10, and Enterprise Mobility + Security. You can use REST APIs or SDKs to access the endpoint and build apps that support Microsoft 365 scenarios, spanning across productivity, collaboration, education, people and workplace intelligence, and much more. Microsoft Graph also includes a powerful set of services that manage user and device identity, access, compliance, security, and help protect organizations from data leakage or loss.
-- [Microsoft Graph connectors (preview)](/microsoftsearch/connectors-overview) work in the incoming direction, **delivering data external to the Microsoft cloud into Microsoft Graph services and applications**, to enhance Microsoft 365 experiences such as Microsoft Search. Connectors exist for commonly used data sources such as Box, Jira, Google Drive, Salesforce, and many more.
-- [Microsoft Graph data connect](#access-microsoft-graph-data-at-scale-using-microsoft-graph-data-connect) provides a set of tools to streamline secure and scalable **delivery of Microsoft Graph data to popular Azure data stores**. This cached data serves as data sources for Azure development tools that you can use to build intelligent applications.
+- [Microsoft Graph connectors (preview)](/microsoftsearch/connectors-overview) work in the incoming direction, **delivering data external to the Microsoft cloud into Microsoft Graph services and applications**, to enhance Microsoft 365 experiences such as Microsoft Search. Connectors exist for many commonly used data sources such as Box, Google Drive, Jira, and Salesforce.
+- [Microsoft Graph data connect](#access-microsoft-graph-data-at-scale-using-microsoft-graph-data-connect) provides a set of tools to streamline secure and scalable **delivery of Microsoft Graph data to popular Azure data stores**. The cached data serves as data sources for Azure development tools that you can use to build intelligent applications.
 
-Together, the Microsoft Graph API, connectors (preview), and data connect power the Microsoft 365 platform. With the ability to access Microsoft Graph data and other datasets to derive insights and analytics, you can extend Microsoft 365 experiences, or build unique, intelligent applications.
+Together, the Microsoft Graph API, connectors (preview), and data connect power the Microsoft 365 platform. With the ability to access Microsoft Graph data and other datasets, you can derive insights and analytics, extend Microsoft 365 experiences, and build unique, intelligent applications.
 
 > [!NOTE]
 > Microsoft Graph connectors is in preview. To use connectors with Microsoft Search or to build connectors, you must sign up for the [connectors preview program](/MicrosoftSearch/connectors-preview). To join in the preview program, submit the [Microsoft Graph connectors preview signup form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
