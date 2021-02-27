@@ -7,7 +7,7 @@ ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
-# Add user
+# Create allowedUser for printerShare
 Namespace: microsoft.graph
 
 Grant the specified user access to submit print jobs to the associated [printerShare](../resources/printershare.md).
