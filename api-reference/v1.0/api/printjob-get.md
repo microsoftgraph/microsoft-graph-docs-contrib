@@ -160,7 +160,7 @@ Content-Type: application/json
 
 #### Request
 The following is an example of a request to get a print job and its associated document data.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_printjob_withdocumentdata"
