@@ -7,7 +7,7 @@ ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
-# Add group
+# Create allowedGroup for printerShare
 Namespace: microsoft.graph
 
 Grant the specified group access to submit print jobs to the associated [printerShare](../resources/printershare.md).
