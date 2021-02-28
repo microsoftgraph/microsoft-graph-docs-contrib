@@ -86,15 +86,6 @@ GET /groups/{id}/events/{id}/attachments/{id}
 GET /groups/{id}/calendar/events/{id}/attachments/{id}
 -->
 
-Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
-
-GET /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}/$value
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}/$value
-```
 Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).
 <!-- { "blockType": "ignored" } -->
 ```http

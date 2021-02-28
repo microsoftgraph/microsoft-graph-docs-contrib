@@ -40,9 +40,6 @@ PATCH /groups/{id}/calendar/events/{id}
 PATCH /me/calendars/{id}/events/{id}
 PATCH /users/{id | userPrincipalName}/calendars/{id}/events/{id}
 
-PATCH /me/calendargroup/calendars/{id}/events/{id}
-PATCH /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
-
 PATCH /me/calendargroups/{id}/calendars/{id}/events/{id}
 PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
