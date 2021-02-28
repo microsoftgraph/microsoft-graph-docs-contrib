@@ -9969,11 +9969,6 @@ items:
           href: api/dynamics-taxgroups-update.md
         - name: Delete tax groups
           href: api/dynamics-taxgroups-delete.md
-      - name: Trial balance
-        href: resources/dynamics-trialbalance.md
-        items:
-        - name: Get trial balance
-          href: api/dynamics-trialbalance-get.md
       - name: Units of measure
         href: resources/dynamics-unitsofmeasure.md
         items:
