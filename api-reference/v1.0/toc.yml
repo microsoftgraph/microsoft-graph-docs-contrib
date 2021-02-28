@@ -1768,42 +1768,6 @@ items:
             href: api/intune-companyterms-termsandconditionsassignment-delete.md
           - name: Update
             href: api/intune-companyterms-termsandconditionsassignment-update.md
-      - name: Corporate enrollment
-        href: resources/intune-enrollment-conceptual.md
-        displayName: Intune
-        items:
-        - name: Imported windows autopilot device identity
-          href: resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
-          items:
-          - name: List
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
-          - name: Get
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md
-          - name: Create
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-create.md
-          - name: Delete
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-delete.md
-          - name: Update
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-update.md
-        - name: Imported windows autopilot device identity import status
-          href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md
-        - name: Imported windows autopilot device identity state
-          href: resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md
-        - name: Imported windows autopilot device identity upload
-          href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md
-          items:
-          - name: List
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-list.md
-          - name: Get
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-get.md
-          - name: Create
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-create.md
-          - name: Delete
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-delete.md
-          - name: Update
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-update.md
-        - name: Imported windows autopilot device identity upload status
-          href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md
       - name: Device configuration
         href: resources/intune-device-cfg-conceptual.md
         displayName: Intune
@@ -2690,25 +2654,6 @@ items:
             href: api/intune-devices-applepushnotificationcertificate-get.md
           - name: Update
             href: api/intune-devices-applepushnotificationcertificate-update.md
-        - name: Audit actor
-          href: resources/intune-auditing-auditactor.md
-        - name: Audit event
-          href: resources/intune-auditing-auditevent.md
-          items:
-          - name: List
-            href: api/intune-auditing-auditevent-list.md
-          - name: Get
-            href: api/intune-auditing-auditevent-get.md
-          - name: Create
-            href: api/intune-auditing-auditevent-create.md
-          - name: Delete
-            href: api/intune-auditing-auditevent-delete.md
-          - name: Update
-            href: api/intune-auditing-auditevent-update.md
-        - name: Audit property
-          href: resources/intune-auditing-auditproperty.md
-        - name: Audit resource
-          href: resources/intune-auditing-auditresource.md
         - name: Compliance state
           href: resources/intune-devices-compliancestate.md
         - name: Configuration manager client enabled features
