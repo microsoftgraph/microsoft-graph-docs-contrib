@@ -168,7 +168,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 * Accessing a contact contained in a child folder of a **contactFolder**.  The example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 
 ```http
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 
