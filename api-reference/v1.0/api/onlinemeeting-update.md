@@ -55,7 +55,6 @@ The table below lists the properties that can be updated. In the request body, i
 - Adjusting the start or end date/time of an online meeting always requires both **startDateTime** and **endDateTime** properties in the request body.
 - Adjusting the **attendees** field of the **participants** property, such as adding or removing an attendee to the meeting, always requires the full list of attendees in the request body.
 
-### Properties that allows updating
 | Property             | Type                                                         | Description                                                                                                                                    |
 |----------------------|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | startDateTime        | DateTime                                                     | The meeting start time in UTC.                                                                                                                 |
@@ -65,12 +64,6 @@ The table below lists the properties that can be updated. In the request body, i
 | isEntryExitAnnounced | Boolean                                                      | Whether or not to announce when callers join or leave.                                                                                         |
 | lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | Specifies which participants can bypass the meeting lobby.                                                                                     |
 | allowedPresenters    | onlineMeetingPresenters                                      | Specifies who can be a presenter in a meeting. Possible values are everyone, organization, roleIsPresenter, organizer, and unknownFutureValue. |
-
-**Notes:**
-- The **startDateTime** and **endDateTime** must appear in pairs.
-- Provide a full list of attendees to update `participants.attendees`. For example, when adding a new attendee, please provide
-  a collection including all existing attendees and the new one to be added.
-
 
 ## Response
 If successful, this method returns a `200 OK` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
@@ -83,23 +76,9 @@ If successful, this method returns a `200 OK` response code and an [onlineMeetin
 
 > **Note:** The meeting ID has been truncated for readability.
 
-The following request uses a user token.
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi
-Content-Type: application/json 
-
-{
-  "startDateTime": "2020-09-09T14:33:30.8546353-07:00",
-  "endDateTime": "2020-09-09T15:03:30.8566356-07:00",
-  "subject": "Patch Meeting Subject"
-}
-```
-
-The following request uses an app token.
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH https://graph.microsoft.com/v1.0/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi
 Content-Type: application/json 
 
 {
@@ -163,23 +142,9 @@ Content-Type: application/json
 #### Example 2: Update the lobbyBypassSettings
 > **Note:** The meeting ID has been truncated for readability.
 
-The following request uses a user token.
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi
-Content-Type: application/json 
-
-{
-  "lobbyBypassSettings": {
-      "isDialInBypassEnabled": true
-  }
-}
-```
-
-The following request uses an app token.
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH https://graph.microsoft.com/v1.0/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi
 Content-Type: application/json 
 
 {

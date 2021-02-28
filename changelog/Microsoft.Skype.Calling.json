@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "onlineMeeting",
           "ChangeType": "Addition",
-          "Description": "Added PATCH method to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Description": "Added [PATCH](https://docs.microsoft.com/en-us/graph/api/onlinemeeting-update?view=graph-rest-v1.0) method to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
           "Target": "onlineMeeting"
         }
       ],
