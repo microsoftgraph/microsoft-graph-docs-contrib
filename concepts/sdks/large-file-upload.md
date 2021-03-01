@@ -123,8 +123,8 @@ UploadSession uploadSession = graphClient
     .buildRequest()
     .post();
 
-ChunkedUploadProvider<DriveItem> chunkedUploadProvider =
-    new ChunkedUploadProvider<DriveItem>
+LargeFileUploadTask<DriveItem> largeFileUploadTask =
+    new LargeFileUploadTask<DriveItem>
         (uploadSession, graphClient, fileStream, streamSize, DriveItem.class);
 
 // Config parameter is an array of integers
@@ -133,7 +133,7 @@ ChunkedUploadProvider<DriveItem> chunkedUploadProvider =
 int[] customConfig = { 320 * 1024 };
 
 // Do the upload
-chunkedUploadProvider.upload(callback, customConfig);
+largeFileUploadTask.upload(callback, customConfig);
 ```
 
 ---
