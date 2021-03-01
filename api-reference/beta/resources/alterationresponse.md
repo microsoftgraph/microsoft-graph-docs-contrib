@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "originalQueryString": "String",
-  "queryAlteration": [{"@odata.type": "microsoft.graph.searchAlteration"}],
-  "queryAlterationType": [{"@odata.type": "microsoft.graph.searchAlterationType"}]
+  "queryAlteration": {"@odata.type": "microsoft.graph.searchAlteration"},
+  "queryAlterationType": "String"
 }
 ```

@@ -20,7 +20,7 @@ Represents the response from a search query.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |queryAlterationResponse|[alterationResponse](alterationResponse.md)|Provides related information of spelling correction.|
-|value|[searchResultSet](searchResultSet.md)|Represents results from a search query, and the terms used for the query.|
+|value|[searchResultSet](searchResultSet.md) collection|Represents results from a search query, and the terms used for the query.|
 
 ## JSON representation
 
@@ -37,7 +37,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "queryAlterationResponse": [{"@odata.type": "microsoft.graph.alterationResponse"}],
+  "queryAlterationResponse": {"@odata.type": "microsoft.graph.alterationResponse"},
   "value": [{"@odata.type": "microsoft.graph.searchResultSet"}]
 }
 ```

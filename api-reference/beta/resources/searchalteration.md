@@ -21,7 +21,7 @@ Provides the details of spelling correction information in the alteration respon
 |:-------------|:------------|:------------|
 |alteredQueryString|String| Defines the altered query string with spelling correction.|
 |alteredHighlightedQueryString|String| Defines the altered highlighted query string with spelling correction. the annotation around the corrected segment is (\ue000, \ue001)|
-|alteredQueryTokens|Collection of [alteredQueryToken](alteredquerytoken.md)| Represents changed segments with respect to original query.|
+|alteredQueryTokens|[alteredQueryToken](alteredquerytoken.md) collection| Represents changed segments with respect to original query.|
 
 ## JSON representation
 
