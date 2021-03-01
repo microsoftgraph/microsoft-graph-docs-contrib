@@ -5065,8 +5065,6 @@ items:
       - name: Chat
         href: resources/chat.md
         items:
-        - name: List chats
-          href: api/chat-list.md
         - name: Create chat
           href: api/chat-post.md
         - name: Get chat
