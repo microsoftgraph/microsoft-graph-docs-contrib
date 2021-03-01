@@ -106,10 +106,9 @@ Content-length: 408
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
   "@odata.type": "microsoft.graph.educationUser"
-}
--->
+} -->
 
 ```http
 HTTP/1.1 200 OK
