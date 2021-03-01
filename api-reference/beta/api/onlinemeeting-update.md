@@ -78,7 +78,11 @@ If successful, this method returns a `200 OK` response code and an [onlineMeetin
 
 > **Note:** The meeting ID has been truncated for readability.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"],
+  "name": "update_start_end_subject"
+}-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi
 Content-Type: application/json 
@@ -144,7 +148,11 @@ Content-Type: application/json
 #### Example 2: Update the lobbyBypassSettings
 > **Note:** The meeting ID has been truncated for readability.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"],
+  "name": "update_lobbyBypassSettings"
+}-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi
 Content-Type: application/json 
