@@ -107,6 +107,7 @@ Content-length: 408
 <!-- {
   "blockType": "response",
   "truncated": true
+  "@odata.type": "microsoft.graph.educationUser"
 }
 -->
 
@@ -115,7 +116,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/users/$entity",
   "id": "4b712dc5-2dc5-4b71-c52d-714bc52d714b",
   "relatedContacts": [
       {
