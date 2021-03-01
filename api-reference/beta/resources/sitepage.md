@@ -94,7 +94,7 @@ The **sitePage** resource has the following content fields.
 
 ## Authoring Metadata
 
-The **sitePage** resource has the following authoring-related metadata. The publishingState property will reflect the page authoring state like checked out or published.
+The **sitePage** resource has the following authoring-related metadata. The `publishingState` property will reflect the page authoring state like checked out or published.
 
 | Property name          | Type                   | Description
 |:-----------------------|:-----------------------|:---------------------------
