@@ -136,8 +136,8 @@ Content-Type: application/json
    },
    "audioConferencing":{
       "conferenceId":"id",
-      "tollNumber":"number",
-      "tollFreeNumber":null,
+      "tollNumber":"+1-900-555-0100",
+      "tollFreeNumber":"+1-800-555-0100",
       "dialinUrl":"url"
    }
 }
@@ -163,6 +163,13 @@ Content-Type: application/json
 ```
 
 #### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
