@@ -52,20 +52,23 @@ Following is the list of best practices:
 
 ## Understand activity feed notifications and bot framework notifications
 The following list provides the key differences in activity feed notifications and bot notifications:
-* Bot messages are delivered as chat or channel messages. 
-    * Bot messages trigger notifications as chat or channel notifications if the user's notifications for chat or channel is turned on.
-    * You must *@mention* the name of the user for the notification to appear in the activity feed. 
-    * Bot messages are useful if the alert is consumed as a chat or channel message or is consumed broadly. For example, message is consumed by all channel members.
-* The activity feed notification API notifications land in the activity feed and can deep link to various locations.
-    * Notifications land in the activity feed, which allows the user to take action or triage the notification.
-    * Notifications lead the user to a tab in a chat or channel, a personal app, or a chat or channel message.
-    * Activity feed notifications are currently directed at a user level and are not posted broadly in a channel for all channel members to see. However, if the notification is deep linked to a channel message, then it is posted broadly in a channel.
-* The activity feed notification API allows users to configure notifications for each **Notification type** from the app. The capability to configure a notification allows the user to turn on or turn off specific notifications.
-* Users can receive double notifications from the app. The app can send bot notifications to chats or channels and also activity feed notifications API notifications.
-   > [!NOTE]
-   > Send double notifications only if the scenario requires you to send them.
-* The `actor` parameter allows the activity feed notification API to send notifications with the name of the caller. In delegated calls, `actor` is the name of the user, for example, *johndoe*. In application-only calls, the Teams app name appears, for example, *Contoso*.
-* You can update an existing notification instead of creating a new notification by using the `chainId` parameter.
+
+* **Bot messages**: 
+    * Bot messages are delivered as chat or channel messages. 
+        * Bot messages trigger notifications as chat or channel notifications if the user's notifications for chat or channel is turned on.
+        * You must *@mention* the name of the user for the notification to appear in the activity feed. 
+        * Bot messages are useful if the alert is consumed as a chat or channel message or is consumed broadly. For example, message is consumed by all channel members.
+* **Activity feed notification API notifications**:
+    * The activity feed notification API notifications land in the activity feed and can deep link to various locations.
+        * Notifications land in the activity feed, which allows the user to take action or triage the notification.
+        * Notifications lead the user to a tab in a chat or channel, a personal app, or a chat or channel message.
+        * Activity feed notifications are currently directed at a user level and are not posted broadly in a channel for all channel members to see. However, if the notification is deep linked to a channel message, then it is posted broadly in a channel.
+    * The activity feed notification API allows users to configure notifications for each **Notification type** from the app. The capability to configure a notification allows the user to turn on or turn off specific notifications.
+    * Users can receive double notifications from the app. The app can send bot notifications to chats or channels and also activity feed notifications API notifications.
+       > [!NOTE]
+       > Send double notifications only if the scenario requires you to send them.
+    * The activity feed notification API can send delegated or application-only calls. In delegated calls, the sender of the notification appears as the user who initiated the notification, for example, *John Doe*, and in application-only the sender appears as the app, for example, *Contoso*. 
+    * You can update an existing activity feed notification instead of creating a new notification by using the `chainId` parameter.
 
 ## See also
 * [Send activity feed notifications](teams-send-activityfeednotifications.md)
