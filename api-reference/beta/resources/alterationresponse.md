@@ -21,7 +21,7 @@ Provides related information of spelling correction in the alteration response.
 |:-------------|:------------|:------------|
 |originalQueryString|String| Defines the original user query string.|
 |queryAlteration|[searchAlteration](searchalteration.md)| Defines the details of alteration information for spelling correction.|
-|queryAlterationType|searchAlterationType| Defines the enum type of query alteration for spelling correction, suggestion or modification.|
+|queryAlterationType|[searchAlterationType](searchalterationtype.md)| Defines the enum type of [searchAlteration](searchalteration.md) for spelling correction.|
 
 ## JSON representation
 
@@ -40,6 +40,6 @@ The following is a JSON representation of the resource.
 {
   "originalQueryString": "String",
   "queryAlteration": {"@odata.type": "microsoft.graph.searchAlteration"},
-  "queryAlterationType": "String"
+  "queryAlterationType": "suggestion"
 }
 ```

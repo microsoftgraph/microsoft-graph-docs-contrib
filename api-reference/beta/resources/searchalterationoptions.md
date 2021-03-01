@@ -1,13 +1,13 @@
 ---
-title: "searchalterationoptions resource type"
-description: "Specifies the searchalterationoptions entity"
+title: "searchAlterationOptions resource type"
+description: "Specifies the searchAlterationOptions entity"
 localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
-# searchalterationoptions resource type
+# searchAlterationOptions resource type
 
 Namespace: microsoft.graph
 
@@ -31,7 +31,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.searchalterationoptions",
+  "@odata.type": "microsoft.graph.searchAlterationOptions",
   "baseType": null
 }-->
 
@@ -46,7 +46,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "searchalterationoptions resource",
+  "description": "searchAlterationOptions resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
