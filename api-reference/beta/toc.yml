@@ -1372,8 +1372,6 @@ items:
           href: api/call-unmute.md
         - name: Mute application
           href: api/call-mute.md
-        - name: Update metadata
-          href: api/call-updatemetadata.md
         - name: Update recording status
           href: api/call-updaterecordingstatus.md
         - name: Audio routing group
