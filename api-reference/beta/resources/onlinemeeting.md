@@ -81,22 +81,22 @@ Contains information about a meeting, including the URL used to join a meeting, 
 }-->
 ```json
 {
-  "audioConferencing": {"@odata.type": "#microsoft.graph.audioConferencing"},
-  "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
+  "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
+  "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "joinWebUrl": "String",
-  "participants": {"@odata.type": "#microsoft.graph.meetingParticipants"},
+  "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
   "subject": "String",
   "capabilities": [ "questionAndAnswer" ],
   "videoTeleconferenceId": "String",
   "isEntryExitAnnounced": "Boolean",
-  "lobbyBypassSettings": {"@odata.type": "#microsoft.graph.lobbyBypassSettings"},
+  "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
   "allowedPresenters": "String",
   "isBroadcast": "Boolean",
-  "broadcastSettings": {"@odata.type": "#microsoft.graph.broadcastSettings"}
+  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"}
 }
 ```
 
