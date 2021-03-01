@@ -1,26 +1,26 @@
 ---
-title: "searchResponse resource type"
-description: "Description of the searchResponse"
+title: "searchResultSet resource type"
+description: "Description of the searchResultSet"
 localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
-# searchResponse resource type
+# searchResultSet resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the response from a search query. 
+Represents results from a search query, and the terms used for the query. 
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|queryAlterationResponse|[alterationResponse](alterationResponse.md)|Provides related information of spelling correction.|
-|value|[searchResultSet](searchResultSet.md)|Represents results from a search query, and the terms used for the query.|
+|hitsContainers|[searchHitsContainer](searchhitscontainer.md) collection|A collection of search results.|
+|searchTerms|String collection|Contains the search terms sent in the initial search query.|
 
 ## JSON representation
 
@@ -31,14 +31,14 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.searchResponse",
+  "@odata.type": "microsoft.graph.searchResultSet",
   "baseType": null
 }-->
 
 ```json
 {
-  "queryAlterationResponse": [{"@odata.type": "microsoft.graph.alterationResponse"}],
-  "value": [{"@odata.type": "microsoft.graph.searchResultSet"}]
+  "hitsContainers": [{"@odata.type": "microsoft.graph.searchHitsContainer"}],
+  "searchTerms": ["String"]
 }
 ```
 
@@ -46,7 +46,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "searchResponse resource",
+  "description": "searchResultSet resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

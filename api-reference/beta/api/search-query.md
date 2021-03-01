@@ -47,6 +47,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
 |requests|[searchRequest](../resources/searchrequest.md) collection|A collection of one or more search requests each formatted in a JSON blob. Each JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, requested fields, and actual search query. <br> Be aware of [known limitations](../resources/search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results. |
+|queryAlterationOptions|[searchAlterationOptions](../resources/searchAlterationOptions.md)|Query alteration options formatted in a JSON blob contains two optional flags to for spelling correction. Optional. |
 
 ## Response
 
@@ -161,6 +162,7 @@ Content-type: application/json
 - Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
 - [Sort](/graph/search-concept-sort) search results
 - Use [aggregations](/graph/search-concept-aggregations) to refine search results
+- Request [spelling correction](/graph/search-concept-speller) to refine search results
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

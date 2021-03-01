@@ -12356,6 +12356,8 @@ items:
           href: resources/search-api-overview.md
         - name: Search request type
           href: resources/searchrequest.md
+        - name: Query alteration options type
+          href: resources/queryalterationoptions.md
         - name: Search response type
           href: resources/searchresponse.md
         - name: Query data

@@ -138,6 +138,14 @@ Aggregations are currently supported for any refinable property on the following
 
 See [refine search results](/graph/search-concept-aggregation) for examples that show using aggregation to enhance and narrow down search results.
 
+## Request spelling correction
+
+Spelling correction is a very popular way to handle mismatch between typos in user query and correct words in matched contents. When typos are detected in the original user query, you can get the search result either for original user query or corrected alterate query and you can also get the spelling correction information for typos in the **queryAlterationResponse** property of the [searchresponse](searchresponse.md). 
+
+In the request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method, specify the queryAlterationOptions that should be applied to the query for spelling correction. The description of queryAlterationOptions is defined in the [searchalterationoptions](./searchalterationoptions.md).
+
+See [Request spelling correction](/graph/search-concept-speller) for examples that show using spelling correction to handle mismatch between typos in user query and correct words in matched contents so as to help users to quickly find the wanted results.
+
 ## Error handling
 
 The search API returns error responses as defined by [OData error object definition](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), each of which is a JSON object containing a code and a message.
