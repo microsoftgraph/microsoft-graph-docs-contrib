@@ -59,7 +59,7 @@ Here is an example of the request.
   "name": "create_outlooktask_from_outlooktaskfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/taskfolders('AAMkADIyAAAhrbPXAAA=')/tasks
+POST https://graph.microsoft.com/beta/me/outlook/taskfolders('AAMkADIyAAAhrbPXAAA=')/tasks
 Content-type: application/json
 Content-length: 376
 
