@@ -11,7 +11,7 @@ doc_type: apiPageType
 # Get printUsageByPrinter
 Namespace: microsoft.graph
 
-Retrieve a [printer](../resources/printer.md)'s usage summary for a particular time period. For descriptions of each of the endpoints, see [printUsageByPrinter](../resources/printUsageByPrinter.md).
+Retrieve a usage summary for a [printer](../resources/printer.md) for a particular time period. For descriptions of each of the endpoints, see [printUsageByPrinter](../resources/printUsageByPrinter.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
