@@ -21,7 +21,7 @@ Represents a bot in the Microsoft Teams ecosystem.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The id of the bot associated with the specific [teamsAppDefinition](../resources/teamsappdefinition.md). This value is usually a GUID.|
+|id|String|The ID of the bot associated with the specific [teamsAppDefinition](../resources/teamsappdefinition.md). This value is usually a GUID.|
 
 ## Relationships
 None.
