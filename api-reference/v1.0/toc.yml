@@ -1214,12 +1214,12 @@ items:
         items:
         - name: Create
           href: api/application-post-onlinemeetings.md
-        - name: Delete
-          href: api/onlinemeeting-delete.md
         - name: Get
           href: api/onlinemeeting-get.md
         - name: Update
           href: api/onlinemeeting-update.md
+        - name: Delete
+          href: api/onlinemeeting-delete.md
         - name: Create or get
           href: api/onlinemeeting-createorget.md
       - name: Presence
