@@ -252,7 +252,6 @@ The following example lists applications with a given ID, and expands **appDefin
 #### Request
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp_with_filter_expand_appdefinitions"
@@ -262,7 +261,6 @@ The following example lists applications with a given ID, and expands **appDefin
 GET  https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id eq '876df28f-2e78-423b-94a5-44181bd0e225'&$expand=appDefinitions
 ```
 
----
 
 #### Response
 
@@ -308,8 +306,6 @@ The following example lists only those apps in the catalog that contain a bot.
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp_with_bots"
@@ -319,7 +315,6 @@ The following example lists only those apps in the catalog that contain a bot.
 GET  https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$expand=appDefinitions($expand=bot)&$filter=appDefinitions/any(a:a/bot ne null)
 ```
 
----
 
 #### Response
 
