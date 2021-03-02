@@ -32,7 +32,7 @@ The work or school account needs to belong to one of the following roles:
 ## HTTP request
 
 <!-- {
-  "blockType": "request"
+  "blockType": "ignore"
 }
 -->
 ``` http

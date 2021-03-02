@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_appconsentrequest"
+  "name": "list_appconsentrequest_filterByCurrentUser"
 }
 -->
 ``` http

@@ -11,6 +11,15 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### approvalFilterByCurrentUserOptions values 
+
+
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
+
 ### appliedConditionalAccessPolicyResult values 
 
 
