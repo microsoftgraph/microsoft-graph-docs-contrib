@@ -2,6 +2,56 @@
   "changelog": [
     {
       "ChangeList": [
+        {
+          "Id": "977ef55a-77aa-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "steps",
+          "ChangeType": "Addition",
+          "Description": "Added the **steps** relationship to the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approval?view=graph-rest-beta) resource.",
+          "Target": "approval"
+        },
+        {
+          "Id": "9786c998-77aa-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "approvalFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **approvalFilterByCurrentUserOptions** enumeration type.",
+          "Target": "approvalFilterByCurrentUserOptions"
+        },
+        {
+          "Id": "97892d3d-77aa-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Method",
+          "ChangedApiName": "filterByCurrentUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/approval-filterByCurrentUser?view=graph-rest-beta) method to the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approval?view=graph-rest-beta) resource.",
+          "Target": "approval"
+        },
+        {
+          "Id": "978b8ebb-77aa-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "pendingSteps",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **pendingSteps** relationship from the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approval?view=graph-rest-beta) resource.",
+          "Target": "approval"
+        },
+        {
+          "Id": "978df041-77aa-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "completedSteps",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **completedSteps** relationship from the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approval?view=graph-rest-beta) resource.",
+          "Target": "approval"
+        }
+      ],
+      "Id": "977c9220-77aa-11eb-8d30-85f45032d4a1",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-02T20:46:53.460Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity governance"
+    },
+    {
+      "ChangeList": [
          {
           "Id": "a9ef9c12-53b3-40fe-9191-a879dc4bc6a8",
           "ApiChange": "Resource",
@@ -151,7 +201,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageResourceEnvironment",
           "ChangeType": "Addition",
-          "Description": "Added the [accessPackageResourceEnvironment](graph/api/resources/accesspackageresourceenvironment?view=graph-rest-beta\u0026preserve-view=true) resource type.",
+          "Description": "Added the [accessPackageResourceEnvironment](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageresourceenvironment?view=graph-rest-beta) resource type.",
           "Target": "accessPackageResourceEnvironment"
         },
         {
@@ -159,7 +209,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "accessPackageResourceEnvironment",
           "ChangeType": "Addition",
-          "Description": "Added the **accessPackageResourceEnvironment** relationship to [accessPackageResource](graph/api/resources/accesspackageresource?view=graph-rest-beta\u0026preserve-view=true) resource.",
+          "Description": "Added the **accessPackageResourceEnvironment** relationship to [accessPackageResource](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageresource?view=graph-rest-beta) resource.",
           "Target": "accessPackageResource"
         },
         {
@@ -167,7 +217,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "connectionInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [connectionInfo](graph/api/resources/connectioninfo?view=graph-rest-beta\u0026preserve-view=true) resource type.",
+          "Description": "Added the [connectionInfo](https://docs.microsoft.com/en-us/graph/api/resources/connectioninfo?view=graph-rest-beta) resource type.",
           "Target": "connectionInfo"
         }
       ],

@@ -10280,6 +10280,13 @@ items:
               href: api/unifiedroleassignmentmultiple-delete.md
       - name: Identity and sign-in
         items:
+        - name: Admin consent request policy
+          href: resources/adminconsentrequestpolicy.md
+          items:
+          - name: Get
+            href: api/adminconsentrequestpolicy-get.md
+          - name: Update
+            href: api/adminconsentrequestpolicy-update.md
         - name: Authentication events policy
           items:
           - name: Authentication events policy
@@ -11076,6 +11083,34 @@ items:
             items:
             - name: List
               href: api/programcontroltype-list.md
+        - name: Consent requests
+          href: resources/consentrequests-root.md
+          items:
+          - name: Admin consent request policy
+            href: resources/adminconsentrequestpolicy.md
+            items:
+            - name: Get
+            href: api/adminconsentrequestpolicy-get.md
+            - name: Update
+            href: api/adminconsentrequestpolicy-update.md
+          - name: App consent requests
+            href: resources/appconsentrequest.md
+            items:
+            - name: List
+            href: api/appconsentrequest-list.md
+            - name: Get
+            href: api/appconsentrequest-get.md
+            - name: Filter by current user
+            href: api/appconsentrequest-filterByCurrentUser.md
+          - name: User consent requests
+            href: resources/userconsentrequest.md
+            items:
+            - name: List
+            href: api/userconsentrequest-list.md
+            - name: Get
+            href: api/userconsentrequest-get.md
+            - name: Filter by current user
+            href: api/userconsentrequest-filterByCurrentUser.md
         - name: Entitlement management
           href: resources/entitlementmanagement-root.md
           items:
