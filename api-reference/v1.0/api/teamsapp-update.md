@@ -62,7 +62,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Example 1: Update an application previously published to the Microsoft Teams app catalog
 
-### Request
+#### Request
 
 <!-- { "blockType": "ignored" } -->
 
@@ -77,13 +77,13 @@ Content-length: 244
 For details about the Teams application zip file, see [Create app package](/microsoftteams/platform/concepts/apps/apps-package).
 <!-- markdownlint-disable MD024 -->
 
-### Response
+#### Response
 
 If successful, this method returns a `204 No Content` response code.
 
 ### Example 2: Update a new version of an existing app for admin review prior to publication in the current tenant catalog
 
-### Request
+#### Request
 
 <!-- markdownlint-disable MD034 -->
 
@@ -102,7 +102,7 @@ Content-length: 244
 
 <!-- markdownlint-disable MD024 -->
 
-### Response
+#### Response
 
 If successful, this method returns a `201 Created` response code and the key/value pair `publishingState`: `submitted` in the response body. *See* [teamsappdefinition](../resources/teamsappdefinition.md).
 
