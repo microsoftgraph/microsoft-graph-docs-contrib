@@ -29,7 +29,7 @@ Represents the details of one version of a [teamsApp](teamsapp.md).
 
 | Relationship | Type	| Description |
 |:---------------|:--------|:----------|
-|bot|[teamworkBot](teamworkbot.md) | The details of the bot specified in the Teams App manifest. |
+|bot|[teamworkBot](teamworkbot.md) | The details of the bot specified in the Teams app manifest. |
 
 ## JSON representation
 
