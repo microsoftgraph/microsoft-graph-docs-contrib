@@ -182,10 +182,8 @@ items:
           - name: Tips
             href: data-connect-tips.md
       - name: Devices and apps
-        expanded: true
         items:
-          - name: Cloud printing (preview)
-            expanded: true
+          - name: Cloud printing
             items:
               - name: Overview
                 href: universal-print-concept-overview.md
