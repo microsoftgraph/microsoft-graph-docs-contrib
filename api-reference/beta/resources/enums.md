@@ -11,9 +11,7 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-### approvalFilterByCurrentUserOptions values 
-
-
+### consentRequestFilterByCurrentUserOptions values 
 
 |Member|
 |:---|
