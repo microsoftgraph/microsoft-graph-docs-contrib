@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.print().printers("{id}")
+PrinterCapabilities printerCapabilities = graphClient.print().printers("{id}")
 	.getCapabilities()
 	.buildRequest()
-	.post();
+	.get();
 
 ```
