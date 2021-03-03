@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.ConsentRequest|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|Policy.Read.All, Policy.ReadWrite.ConsentRequest|
 
 The work or school account needs to belong to one of the following roles:
 + Global administrator
