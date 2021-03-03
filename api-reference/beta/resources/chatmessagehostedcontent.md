@@ -26,6 +26,8 @@ they are stored in SharePoint or OneDrive.
 
 ## Properties
 
+chatMessageHostedContent derives from [teamworkHostedContent](teamworkhostedcontent.md)
+
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id            |String       | Read-only. Represents the chat message hosted content identifier.|
