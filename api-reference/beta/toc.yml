@@ -1523,8 +1523,6 @@ items:
             href: api/ediscovery-sourcecollection-post-additionalsources.md
           - name: Estimate statistics
             href: api/ediscovery-sourcecollection-estimatestatistics.md
-          - name: Add to review set
-            href: api/ediscovery-addtoreviewsetoperation.md
           - name: List add to review set operations
             href: api/ediscovery-sourcecollection-list-addtoreviewsetoperation.md
           - name: List last estimate operation
