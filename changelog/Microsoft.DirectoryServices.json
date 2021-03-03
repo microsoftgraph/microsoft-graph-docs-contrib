@@ -11,22 +11,6 @@
           "Target": "approval"
         },
         {
-          "Id": "9786c998-77aa-11eb-8d30-85f45032d4a1",
-          "ApiChange": "Enum type",
-          "ChangedApiName": "approvalFilterByCurrentUserOptions",
-          "ChangeType": "Addition",
-          "Description": "Added the **approvalFilterByCurrentUserOptions** enumeration type.",
-          "Target": "approvalFilterByCurrentUserOptions"
-        },
-        {
-          "Id": "97892d3d-77aa-11eb-8d30-85f45032d4a1",
-          "ApiChange": "Method",
-          "ChangedApiName": "filterByCurrentUser",
-          "ChangeType": "Addition",
-          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/approval-filterByCurrentUser?view=graph-rest-beta) method to the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approval?view=graph-rest-beta) resource.",
-          "Target": "approval"
-        },
-        {
           "Id": "978b8ebb-77aa-11eb-8d30-85f45032d4a1",
           "ApiChange": "Relationship",
           "ChangedApiName": "pendingSteps",
@@ -41,14 +25,38 @@
           "ChangeType": "Deletion",
           "Description": "Removed the **completedSteps** relationship from the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approval?view=graph-rest-beta) resource.",
           "Target": "approval"
+        },
+        {
+          "Id": "8c73c6ce-8c8f-4a36-ac7f-7d22f940f341",
+          "ApiChange": "Resource",
+          "ChangedApiName": "filterByCurrentUser",
+          "ChangeType": "Addition",
+          "Description": "Added the **filterByCurrentUser** function to [appConsentRequests](https://docs.microsoft.com/en-us/graph/api/resources/appconsentrequest?view=graph-rest-beta\u0026preserve-view=true) resource",
+          "Target": "appConsentRequests"
+        },
+        {
+          "Id": "8c73c6ce-8c8f-4a36-ac7f-7d22f940f341",
+          "ApiChange": "Resource",
+          "ChangedApiName": "filterByCurrentUser",
+          "ChangeType": "Addition",
+          "Description": "Added the **filterByCurrentUser** function to [userConsentRequests](https://docs.microsoft.com/en-us/graph/api/resources/userconsentrequest?view=graph-rest-beta\u0026preserve-view=true) resource",
+          "Target": "userConsentRequests"
+        },
+        {
+          "Id": "8c73c6ce-8c8f-4a36-ac7f-7d22f940f341",
+          "ApiChange": "Resource",
+          "ChangedApiName": "consentRequestFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **consentRequestFilterByCurrentUserOptions** enumeration type.",
+          "Target": ""
         }
       ],
       "Id": "977c9220-77aa-11eb-8d30-85f45032d4a1",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-03-02T20:46:53.460Z",
+      "CreatedDateTime": "2021-03-03T20:46:53.460Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Identity governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [

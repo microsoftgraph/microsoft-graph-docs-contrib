@@ -22,7 +22,7 @@ A request that represents an aggregation of [userConsentRequests](../resources/u
 |[Get appConsentRequest](../api/appconsentrequest-get.md)|[appConsentRequest](../resources/appconsentrequest.md)|Read the properties and relationships of an [appConsentRequest](../resources/appconsentrequest.md) object.|
 
 ## Functions
-|Method|Return type|Description|
+|Function|Return type|Description|
 |:---|:---|:---|
 |[appConsentRequests: filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md)|[appConsentRequest](../resources/appconsentrequest.md)|A list of the [appConsentRequests](../resources/appconsentrequest.md) for which the current user is the reviewer|
 
@@ -31,9 +31,9 @@ A request that represents an aggregation of [userConsentRequests](../resources/u
 |:---|:---|:---|
 |appDisplayName|String|The display name of the app for which consent is requested. Required.<br><br>Supports `$filter` (`eq` only) and `$orderby`. |
 |appId|String|The identifier of the application. Required.<br><br>Supports `$filter` (`eq` only) and `$orderby`. |
-|consentType|String|The consent type of the request. Possible values are: `Static` and `Dynamic`.<br><br>Supports `$filter` (`eq` only) and `$orderby`. Required.|
+|consentType|String|The consent type of the request. Possible values are: `Static` and `Dynamic`. These represent static and dynamic permissions, respectively, requested in the consent workflow.<br><br>Supports `$filter` (`eq` only) and `$orderby`. Required.|
 |id|String|The identifier of the app consent request. Required.|
-|pendingScopes|[appConsentRequestScope](../resources/appconsentrequestscope.md) collection|A list of pending scopes waiting for approval. Required.|
+|pendingScopes|[appConsentRequestScope](../resources/appconsentrequestscope.md) collection|A list of pending scopes waiting for approval. This is empty if the consentType is `Static`. Required.|
 
 ## Relationships
 |Relationship|Type|Description|
