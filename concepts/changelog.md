@@ -17,9 +17,21 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | v1.0        | Added the [agreement](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true) and [agreementAcceptance](/graph/api/resources/agreementacceptance?view=graph-rest-beta&preserve-view=true) resources. |
-| Addition        | v1.0        | Added the following APIs for [agreement](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true): [Create](/graph/api/greement-post-agreements?view=graph-rest-beta&preserve-view=true), [List](/graph/api/agreement-list?view=graph-rest-beta&preserve-view=true), [Get](/graph/api/agreement-get?view=graph-rest-beta&preserve-view=true), [Update](/graph/api/agreement-update?view=graph-rest-beta&preserve-view=true), [Delete](/graph/api/agreement-delete?view=graph-rest-beta&preserve-view=true). |
-| Addition        | v1.0        | Added the [agreementAcceptance](/graph/api/resources/agreementacceptance?view=graph-rest-beta&preserve-view=true) relationships to the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition        | v1.0        | Added the [agreement](/graph/api/resources/agreement?view=graph-rest-1.0&preserve-view=true) and [agreementAcceptance](/graph/api/resources/agreementacceptance?view=graph-rest-1.0&preserve-view=true) resources. |
+| Addition        | v1.0        | Added the following APIs for [agreement](/graph/api/resources/agreement?view=graph-rest-1.0&preserve-view=true): [Create](/graph/api/greement-post-agreements?view=graph-rest-1.0&preserve-view=true), [List](/graph/api/agreement-list?view=graph-rest-1.0&preserve-view=true), [Get](/graph/api/agreement-get?view=graph-rest-1.0&preserve-view=true), [Update](/graph/api/agreement-update?view=graph-rest-1.0&preserve-view=true), [Delete](/graph/api/agreement-delete?view=graph-rest-1.0&preserve-view=true). |
+| Addition        | v1.0        | Added the [agreementAcceptance](/graph/api/resources/agreementacceptance?view=graph-rest-1.0&preserve-view=true) relationships to the [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) resource. |
+
+### Cloud communications
+| **Change type** | **Version**   | **Description**                                                                                              |
+| :-------------- | :------------ | :---------------------------------------                                                                     |
+| Addition        | beta          | Added the **participantCapacity** option to [answer](https://docs.microsoft.com/en-us/graph/api/call-answer?view=graph-rest-beta) operation.|
+| Addition        | beta          | Added the [participantJoiningNotification](https://docs.microsoft.com/en-us/graph/api/resources/participantJoiningNotification?view=graph-rest-beta) resource type.|
+| Addition        | beta          | Added the [participantLeftNotification](https://docs.microsoft.com/en-us/graph/api/resources/participantLeftNotification?view=graph-rest-beta) resource type.|
+| Addition        | beta          | Added the [participantJoiningResponse](https://docs.microsoft.com/en-us/graph/api/resources/participantJoiningResponse?view=graph-rest-beta) resource type.|
+| Addition        | beta          | Added the [acceptJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/acceptJoinResponse?view=graph-rest-beta) resource type.|
+| Addition        | beta          | Added the [rejectJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/rejectJoinResponse?view=graph-rest-beta) resource type.|
+| Addition        | beta          | Added the [inviteNewBotResponse](https://docs.microsoft.com/en-us/graph/api/resources/inviteNewBotResponse?view=graph-rest-beta) resource type.|
+
 
 ### Tasks and plans
 
@@ -176,7 +188,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the **notificationChannelUrl** optional property to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) resource. | 
+| Addition | beta | Added the **notificationChannelUrl** optional property to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added the **addedStudentAction** optional property to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added the **educationAddedStudentAction** enumeration type. |
 
@@ -207,6 +219,10 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added methods for listing and creating user attribute assignments to the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added methods for listing and creating user attribute assignments to the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | v1.0 | Added the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true) resource type. |
+| Addition | beta | Added the **includeDevices** property to [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.|
+| Addition | beta | Added the **excludeDevices** property to [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.|
+| Change | beta | Deprecated the **includeDeviceStates** property on the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.|
+| Change | beta | Deprecated the **excludeDeviceStates** property on the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.|
 | Addition | beta | Added the [authenticationEventsPolicy](/graph/api/resources/authenticationeventspolicy?preserve-view=true&view=graph-rest-beta) resource type. |
 | Addition | beta | Added the [authenticationListener](/graph/api/resources/authenticationlistener?preserve-view=true&view=graph-rest-beta) resource type. |
 | Addition | beta | Added the [invokeUserFlowListener](/graph/api/resources/invokeUserFlowListener?preserve-view=true&view=graph-rest-beta) resource type. |
@@ -412,9 +428,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Change | beta | Deprecated **feedDirections** property on [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource. |
 | Change | beta | Added **details** property to [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource. |
 | Change | beta | Deprecated **processingStateReasons** property on [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource. |
-| Change | beta | Renamed properties on [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource: <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li></ul> |  
+| Change | beta | Renamed properties on [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource: <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li></ul> |
 | Change | beta | Added **details** property to [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true) resource. |
-| Change | beta | Renamed properties on [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true) resource: <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li><li>acquiredByPrinter -> isAcquiredByPrinter</li></ul> |  
+| Change | beta | Renamed properties on [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true) resource: <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li><li>acquiredByPrinter -> isAcquiredByPrinter</li></ul> |
 
 ### Devices and apps | Corporate management
 
