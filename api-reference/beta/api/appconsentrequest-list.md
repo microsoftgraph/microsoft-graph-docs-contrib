@@ -1,6 +1,6 @@
 ---
 title: "List appConsentRequests"
-description: "Get a list of the appConsentRequest objects and their properties."
+description: "Retrieve appConsentRequest objects and their properties."
 author: "psignoret"
 localization_priority: Normal
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [appConsentRequest](../resources/appconsentrequest.md) objects and their properties.
+Retrieve [appConsentRequest](../resources/appconsentrequest.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
