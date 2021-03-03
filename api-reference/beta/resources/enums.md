@@ -11,7 +11,354 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-### educationAddedStudentAction values 
+### appliedConditionalAccessPolicyResult values 
+
+
+
+|Member|
+|:---|
+|success|
+|failure|
+|notApplied|
+|notEnabled|
+|unknown|
+|unknownFutureValue|
+|reportOnlySuccess|
+|reportOnlyFailure|
+|reportOnlyNotApplied|
+|reportOnlyInterrupted|
+
+### authenticationMethodFeature values 
+
+
+
+|Member|
+|:---|
+|ssprRegistered|
+|ssprEnabled|
+|ssprCapable|
+|passwordlessCapable|
+|mfaCapable|
+
+### authMethodsType values 
+
+
+
+|Member|
+|:---|
+|email|
+|mobileSMS|
+|mobilePhone|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appNotificationCode|
+|appNotificationAndCode|
+|appPassword|
+|fido|
+|alternateMobilePhone|
+|mobilePhoneAndSMS|
+|unknownFutureValue|
+
+### azureADLicenseType values 
+
+
+
+|Member|
+|:---|
+|none|
+|free|
+|basic|
+|premiumP1|
+|premiumP2|
+|unknownFutureValue|
+
+### conditionalAccessConditions values 
+
+
+
+|Member|
+|:---|
+|none|
+|application|
+|users|
+|devicePlatform|
+|location|
+|clientType|
+|signInRisk|
+|userRisk|
+|time|
+|deviceState|
+|client|
+
+### conditionalAccessStatus values 
+
+
+
+|Member|
+|:---|
+|success|
+|failure|
+|notApplied|
+|unknownFutureValue|
+
+### featureType values 
+
+
+
+|Member|
+|:---|
+|registration|
+|reset|
+|unknownFutureValue|
+
+### groupType values 
+
+
+
+|Member|
+|:---|
+|unifiedGroups|
+|azureAD|
+|unknownFutureValue|
+
+### includedUserRoles values 
+
+
+
+|Member|
+|:---|
+|all|
+|privilegedAdmin|
+|admin|
+|user|
+|unknownFutureValue|
+
+### includedUserTypes values 
+
+
+
+|Member|
+|:---|
+|all|
+|member|
+|guest|
+|unknownFutureValue|
+
+### initiatorType values 
+
+
+
+|Member|
+|:---|
+|user|
+|app|
+|system|
+|unknownFutureValue|
+
+### migrationStatus values 
+
+
+
+|Member|
+|:---|
+|ready|
+|needsReview|
+|additionalStepsRequired|
+|unknownFutureValue|
+
+### networkType values 
+
+
+
+|Member|
+|:---|
+|intranet|
+|extranet|
+|namedNetwork|
+|trusted|
+|unknownFutureValue|
+
+### operationResult values 
+
+
+
+|Member|
+|:---|
+|success|
+|failure|
+|timeout|
+|unknownFutureValue|
+
+### provisioningResult values 
+
+
+
+|Member|
+|:---|
+|success|
+|failure|
+|skipped|
+|unknownFutureValue|
+
+### provisioningStepType values 
+
+
+
+|Member|
+|:---|
+|import|
+|scoping|
+|matching|
+|processing|
+|referenceResolution|
+|export|
+|unknownFutureValue|
+
+### registrationAuthMethod values 
+
+
+
+|Member|
+|:---|
+|email|
+|mobilePhone|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appCode|
+|alternateMobilePhone|
+|fido|
+|appPassword|
+|unknownFutureValue|
+
+### registrationStatusType values 
+
+
+
+|Member|
+|:---|
+|registered|
+|enabled|
+|capable|
+|mfaRegistered|
+|unknownFutureValue|
+
+### requirementProvider values 
+
+
+
+|Member|
+|:---|
+|MFA|
+|CA|
+|unknownFutureValue|
+
+### riskDetail values 
+
+
+
+|Member|
+|:---|
+|none|
+|adminGeneratedTemporaryPassword|
+|userPerformedSecuredPasswordChange|
+|userPerformedSecuredPasswordReset|
+|adminConfirmedSigninSafe|
+|aiConfirmedSigninSafe|
+|userPassedMFADrivenByRiskBasedPolicy|
+|adminDismissedAllRiskForUser|
+|adminConfirmedSigninCompromised|
+|hidden|
+|adminConfirmedUserCompromised|
+|unknownFutureValue|
+
+### riskEventType values 
+
+
+
+|Member|
+|:---|
+|unlikelyTravel|
+|anonymizedIPAddress|
+|maliciousIPAddress|
+|unfamiliarFeatures|
+|malwareInfectedIPAddress|
+|suspiciousIPAddress|
+|leakedCredentials|
+|investigationsThreatIntelligence|
+|generic|
+|adminConfirmedUserCompromised|
+|mcasImpossibleTravel|
+|mcasSuspiciousInboxManipulationRules|
+|investigationsThreatIntelligenceSigninLinked|
+|maliciousIPAddressValidCredentialsBlockedIP|
+|unknownFutureValue|
+
+### riskLevel values 
+
+
+
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+|hidden|
+|none|
+|unknownFutureValue|
+
+### riskState values 
+
+
+
+|Member|
+|:---|
+|none|
+|confirmedSafe|
+|remediated|
+|dismissed|
+|atRisk|
+|confirmedCompromised|
+|unknownFutureValue|
+
+### tokenIssuerType values 
+
+
+
+|Member|
+|:---|
+|AzureAD|
+|ADFederationServices|
+|UnknownFutureValue|
+
+### usageAuthMethod values 
+
+
+
+|Member|
+|:---|
+|email|
+|mobileSMS|
+|mobileCall|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appCode|
+|alternateMobileCall|
+|fido|
+|appPassword|
+|unknownFutureValue|
+
+### authenticationMethodKeyStrength values
+
+|Member|
+|:---|
+|normal|
+|weak|
+|unknown|
+
+### educationAddedStudentAction values
 
 |Member|
 |:---|
@@ -1429,6 +1776,30 @@ Possible values for user account types (group membership), per Windows definitio
 | waitingOnOthers
 | deferred
 
+### columnTypes values
+
+|Member|Description|
+|:-------|:------
+|note| multiline text. |
+|text | single line text. |
+|choice | choice column |
+|multichoice | multichoice column. |
+|number | number column. |
+|currency | currency column. |
+|dateTime | dateTime column. |
+|lookup | lookup column. |
+|boolean | Yes/No column. |
+|user | person or group column. |
+|url | hyperlink or picture column. |
+|calculated | calculated column. |
+|location | location column. |
+|geolocation | geolocation column. |
+|term | managed metadata column. |
+|multiterm | managed metadata column accepting multiple values. |
+|thumbnail | Image column. |
+|approvalStatus | Content approval status column. |
+|unknownFutureValue | unknownFuturevalue |
+
 ### connectedOrganizationState values
 
 | Member                | Value | Description                                                                                                                                                                                                        |
@@ -1510,71 +1881,12 @@ Possible values for user account types (group membership), per Windows definitio
 | entityUrl
 | text
 
-### cloudPcDeviceImageStatus values
-
-|Member|
-|:---|
-|pending|
-|ready|
-|failed|
-
-### cloudPcDeviceImageStatusDetails values
-
-|Member|
-|:---|
-|internalServerError|
-|sourceImageNotFound|
-
-### cloudPcOnPremisesConnectionHealthCheckErrorType values
-
-|Member|
-|:---|
-|dnsCheckFqdnNotFound|
-|dnsCheckUnknownError|
-|adJoinCheckFqdnNotFound|
-|adJoinCheckIncorrectCredentials|
-|adJoinCheckOrganizationalUnitNotFound|
-|adJoinCheckOrganizationalUnitIncorrectFormat|
-|adJoinCheckUnknownError |
-|endpointConnectivityCheckUrlNotWhitelisted|
-|endpointConnectivityCheckUnknownError|
-|aadConnectivityCheckUnknownError |
-|resourceAvailabilityCheckNoSubnetIP |
-|resourceAvailabilityCheckUnknownError |
-|internalServerUnknownError |
-
-### cloudPcOnPremisesConnectionStatus values
-
-|Member|
-|:---|
-|pending|
-|running|
-|passed|
-|failed|
-|unknownFutureValue|
-
 ### cloudPcProvisioningPolicyImageType values
 
 |Member|
 |:---|
 |custom|
 |gallery|
-
-### cloudPcStatus values
-
-|Member|
-|:---|
-|notProvisioned|
-|provisioning|
-|provisioned|
-|upgrading|
-|inGracePeriod|
-|deprovisioning|
-|failed|
-|upgradeFailed|
-|provisionFailed|
-|deprovisionFailed|
-|reprovisionFailed|
 
 ### chatType values 
 
@@ -1584,3 +1896,30 @@ Possible values for user account types (group membership), per Windows definitio
 |group               | 1     | Indicates that the chat is a Group chat. The roster size (of at least 2 person) can be updated for this type of chat. The members can be removed / added later on.   |
 |meeting             | 2     | Indicates that the chat is a Meeting chat, which is created as a side effect of creation of an OnlineMeeting.  |
 |unknownFutureValue  | 3     | Sentinel value to indicate future values. |
+
+### singleSignOnMode values
+
+|Member|
+|:---|
+|none|
+|onPremisesKerberos|
+|aadHeaderBased|
+|pingHeaderBased|
+
+### plannerContainerType values 
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
+
+### plannerPlanContextType values 
+
+|Member|
+|:---|
+|teamsTab|
+|sharePointPage|
+|meetingNotes|
+|other|
+|unknownFutureValue|
+

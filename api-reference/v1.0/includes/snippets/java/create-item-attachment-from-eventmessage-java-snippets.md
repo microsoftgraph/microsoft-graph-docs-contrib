@@ -8,7 +8,8 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 ItemAttachment attachment = new ItemAttachment();
 attachment.name = "name-value";
-attachment.item = "message or event entity";
+Message item = new Message();
+attachment.item = item;
 
 graphClient.me().events("{id}").attachments()
 	.buildRequest()

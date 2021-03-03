@@ -243,9 +243,7 @@ Here is a JSON representation of the resource
   "instances": [ { "@odata.type": "microsoft.graph.event" }],
   "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
   "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
-
 }
-
 ```
 
 

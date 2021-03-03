@@ -162,7 +162,7 @@ This resource supports:
 |lastPasswordChangeDateTime| DateTimeOffset | The time when this Azure AD user last changed their password. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'|
 |legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on **ageGroup** and **consentProvidedForMinor** properties. Allowed values: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) collection|State of license assignments for this user. Read-only.|
-|mail|String|The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". <br><br>Returned by default. Supports `$filter`.|
+|mail|String|The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". <br><br>Returned by default. Supports `$filter` and `endsWith`.|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|Settings for the primary mailbox of the signed-in user. You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update-mailboxsettings.md) settings for sending automatic replies to incoming messages, locale and time zone.|
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created. Supports `$filter`.|
 |mobilePhone|String|The primary cellular telephone number for the user. Read-only for users synced from on-premises directory. Returned by default. |
@@ -197,7 +197,7 @@ This resource supports:
 |streetAddress|String|The street address of the user's place of business.|
 |surname|String|The user's surname (family name or last name). Returned by default. Supports `$filter`.|
 |usageLocation|String|A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: "US", "JP", and "GB". Not nullable. Supports `$filter`.|
-|userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). <br><br>Returned by default. Supports `$filter` and `$orderby`.
+|userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). <br><br>Returned by default. Supports `$filter`, `$orderby`, and `endsWith`.
 |userType|String|A string value that can be used to classify user types in your directory, such as "Member" and "Guest". Supports `$filter`.          |
 
 ### Legal age group property definitions
@@ -247,6 +247,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 | Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |activities|[userActivity](projectrome-activity.md) collection|The user's activities across devices. Read-only. Nullable.|
+|appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Represents the app roles a user has been granted for an application. |
 |calendar|[calendar](calendar.md)|The user's primary calendar. Read-only.|
 |calendarGroups|[calendarGroup](calendargroup.md) collection|The user's calendar groups. Read-only. Nullable.|
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only. Nullable.|
@@ -545,8 +546,6 @@ Here is a JSON representation of the resource
   "description": "user resource",
   "keywords": "",
   "suppressions" : [
-     "Warning: /api-reference/v1.0/resources/user.md/microsoft.graph.user:
-      Property 'createdDateTime' found in markdown table but not in resource definition."
   ],
   "section": "documentation",
   "tocPath": ""

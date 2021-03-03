@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const chat = {
-    topic: "Group chat title update",
+    topic: "Group chat title update"
 };
 
 let res = await client.api('/chats/19:1c5b01696d2e4a179c292bc9cf04e63b@thread.v2')

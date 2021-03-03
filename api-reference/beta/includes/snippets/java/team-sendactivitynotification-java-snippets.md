@@ -16,6 +16,9 @@ String activityType = "deploymentApprovalRequired";
 ItemBody previewText = new ItemBody();
 previewText.content = "New deployment requires your approval";
 
+AadUserNotificationRecipient recipient = new AadUserNotificationRecipient();
+recipient.userId = "569363e2-4e49-4661-87f2-16f245c5d66a";
+
 LinkedList<KeyValuePair> templateParametersList = new LinkedList<KeyValuePair>();
 KeyValuePair templateParameters = new KeyValuePair();
 templateParameters.name = "deploymentId";
@@ -23,8 +26,8 @@ templateParameters.value = "6788662";
 
 templateParametersList.add(templateParameters);
 
-graphClient.users("{userId}").teamwork()
-	.sendActivityNotification(topic,activityType,null,previewText,templateParametersList)
+graphClient.teams("{teamId}")
+	.sendActivityNotification(topic,activityType,null,previewText,templateParametersList,recipient)
 	.buildRequest()
 	.post();
 
