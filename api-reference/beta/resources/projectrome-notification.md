@@ -66,7 +66,7 @@ The following is a JSON representation of the resource.
   "displayTimeToLive": 1024,
   "expirationDateTime": "String (timestamp)",
   "priority": "string",
-  "fallbackPolicy": {"@odata.type": "microsoft.graph.fallbackpolicy"},  
+  "fallbackPolicy": {"@odata.type": "microsoft.graph.fallbackpolicy"} 
 }
 ```
 

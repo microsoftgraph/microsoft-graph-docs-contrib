@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Transfer an active peer-to-peer call.
 
-> **Note:** This is only supported if both the transferee and transfer target are Microsoft Teams users that belong to the same tenant. Transfer to PSTN number is not supported. To learn more about transferor, transferee and transfer target, see [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2).
+> **Note:** This is only supported if both the transferee and transfer target are Microsoft Teams users that belong to the same tenant. Transfer to PSTN number is supported only for application instance. To learn more about transferor, transferee and transfer target, see [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2).
 
 A consultative transfer means that the transferor can inform the person they want to transfer the call to (the transferee), before the transfer is made. This is opposed to transfering the call directly.
 
