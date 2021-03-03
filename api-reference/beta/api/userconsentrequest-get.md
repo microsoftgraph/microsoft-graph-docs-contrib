@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/{id}
+GET /identityGovernance/appConsent/appConsentRequests/{appconsentrequest-id}/userConsentRequests/{userconsentrequest-id}
 ```
 
 ## Optional query parameters
@@ -109,4 +109,3 @@ Content-Type: application/json
   }
 }
 ```
-
