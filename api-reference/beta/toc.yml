@@ -1500,7 +1500,7 @@ items:
             href: api/ediscovery-case-post-reviewsets.md
           - name: Get
             href: api/ediscovery-reviewset-get.md
-        - name: Source Collection
+        - name: Source collection
           href: resources/ediscovery-sourcecollection.md
           items:
           - name: List
@@ -1544,7 +1544,7 @@ items:
             href: api/ediscovery-tag-delete.md
           - name: List child tags
             href: api/ediscovery-tag-childtags.md
-          - name: List tags - as hierarchy
+          - name: List tags as hierarchy
             href: api/ediscovery-tag-ashierarchy.md
         - name: Review set query
           href: resources/ediscovery-reviewsetquery.md
