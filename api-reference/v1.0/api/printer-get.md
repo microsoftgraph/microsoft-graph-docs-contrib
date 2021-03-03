@@ -56,7 +56,9 @@ By default, the response will not contain [printerCapabilities](../resources/pri
 
 ## Examples
 
-### Request
+### Example 1: Get a printer
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "get_printer"
@@ -66,8 +68,7 @@ By default, the response will not contain [printerCapabilities](../resources/pri
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}
 ```
 
-
-### Response
+#### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -147,9 +148,21 @@ Content-Type: application/json
 }
 ```
 
-The following is an example of the response to a request that includes the `$select=id,displayName,capabilities` parameter.
+### Example 2: Get a printer and its capabilities
 
->**Note:** The response object shown here might be shortened for readability.
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_printer"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/print/printers/{printerId}?$select=id,displayName,capabilities
+```
+
+#### Response
+
+**Note:** The response object shown here might be shortened for readability.
 
 ``` http
 HTTP/1.1 200 OK

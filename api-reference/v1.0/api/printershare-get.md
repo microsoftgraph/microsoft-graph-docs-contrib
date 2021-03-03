@@ -63,7 +63,9 @@ If successful, this method returns a `200 OK` response code and a [printerShare]
 
 ## Examples
 
-### Request
+### Example 1: Get a printerShare
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "get_printershare"
@@ -73,7 +75,7 @@ If successful, this method returns a `200 OK` response code and a [printerShare]
 GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}
 ```
 
-### Response
+#### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -151,7 +153,19 @@ Content-Type: application/json
 }
 ```
 
-The following is an example of the response to a request that includes the `$select=id,displayName,capabilities` parameter.
+### Example 2: Get a printerShare and its capabilities
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_printershare"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}?$select=id,displayName,capabilities
+```
+
+#### Response
 
 **Note:** The response object shown here might be shortened for readability. 
 ``` http
