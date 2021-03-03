@@ -1,9 +1,9 @@
 ---
 title: "accessReviewInstanceDecisionItemResource resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Every decision item in an access review represents a principal's access to a resource. accessReviewInstanceDecisionItemResource represents the resource."
+author: "isabelleatmsft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -12,15 +12,16 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-**TODO: Add Description**
+Every decision item in an access review represents a principal's access to a resource. accessReviewInstanceDecisionItemResource represents the resource.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|type|String|**TODO: Add Description**|
+|displayName|String|Display name of the resource|
+|id|String|Resource ID|
+|type|String|Type of resource. Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy.|
 
 ## Relationships
 None.
@@ -40,4 +41,3 @@ The following is a JSON representation of the resource.
   "type": "String"
 }
 ```
-
