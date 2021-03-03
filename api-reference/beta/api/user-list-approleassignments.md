@@ -50,9 +50,11 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [appRoleAssignment](../resources/approleassignment.md) objects in the response body.
 
-## Example 1: List appRoleAssignments granted to a user
+## Examples
 
-### Request
+### Example 1: List appRoleAssignments granted to a user
+
+#### Request
 
 Here is an example of the request to retrieve the app roles that have been assigned to a user.
 
@@ -85,11 +87,11 @@ GET https://graph.microsoft.com/beta/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7/
 ---
 
 
-### Response
+#### Response
 
 The following is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -119,14 +121,12 @@ Content-type: application/json
 }
 ```
 
-## Example 2: List appRoleAssignments granted to a user, filtered by resourceId
+### Example 2: List appRoleAssignments granted to a user, filtered by resourceId
 
-### Request
+#### Request
 
-Here is an example of the request to retrieve the app roles that have been assigned to a user, filtering by a `resourceId` which is a Guid type.
+Here is an example of the request to retrieve the app roles that have been assigned to a user, filtering by a `resourceId`, which is a GUID type.
 
-
-## HTTP request
 <!-- {
   "blockType": "request",
   "name": "user_get_approleassignments_filterby_resourceId"
@@ -136,11 +136,11 @@ Here is an example of the request to retrieve the app roles that have been assig
 GET https://graph.microsoft.com/beta/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7/appRoleAssignments?$filter=resourceId eq 8e881353-1735-45af-af21-ee1344582a4d
 ```
 
-### Response
+#### Response
 
 The following is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
