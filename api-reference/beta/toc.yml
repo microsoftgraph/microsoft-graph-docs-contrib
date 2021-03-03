@@ -10280,13 +10280,6 @@ items:
               href: api/unifiedroleassignmentmultiple-delete.md
       - name: Identity and sign-in
         items:
-        - name: Admin consent request policy
-          href: resources/adminconsentrequestpolicy.md
-          items:
-          - name: Get
-            href: api/adminconsentrequestpolicy-get.md
-          - name: Update
-            href: api/adminconsentrequestpolicy-update.md
         - name: Authentication events policy
           items:
           - name: Authentication events policy
