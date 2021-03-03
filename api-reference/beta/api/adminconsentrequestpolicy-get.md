@@ -3,7 +3,7 @@ title: "Get adminConsentRequestPolicy"
 description: "Read the properties and relationships of an adminConsentRequestPolicy object."
 author: "psignoret"
 localization_priority: Normal
-ms.prod: "identity-and-sign-in"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -23,10 +23,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.Read.All, Policy.ReadWrite.ConsentRequest|
 
-The work or school account needs to belong to one of the following roles:
-+ Global administrator
+When calling on behalf of a user, the user needs to belong to one of the following directory roles. To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):
++ Global Administrator
 + Global Reader
-+ Cloud App Administrator
++ Cloud Application Administrator
 + Application Administrator
 
 ## HTTP request
@@ -89,4 +89,3 @@ Content-Type: application/json
   "reviewers": []
 }
 ```
-

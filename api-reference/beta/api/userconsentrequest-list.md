@@ -1,6 +1,6 @@
 ---
 title: "List userConsentRequests"
-description: "Get a list of the userConsentRequest objects and their properties."
+description: "Retrieve userConsentRequest objects and their properties."
 author: "psignoret"
 localization_priority: Normal
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [userConsentRequest](../resources/userconsentrequest.md) objects and their properties.
+Retrieve [userConsentRequest](../resources/userconsentrequest.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

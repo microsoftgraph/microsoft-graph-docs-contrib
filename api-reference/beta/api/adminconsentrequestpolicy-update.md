@@ -3,7 +3,7 @@ title: "Update adminConsentRequestPolicy"
 description: "Update the properties of an adminConsentRequestPolicy object."
 author: "psignoret"
 localization_priority: Normal
-ms.prod: "identity-and-sign-in"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -22,6 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Policy.ReadWrite.ConsentRequest|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.ConsentRequest|
+
+When calling on behalf of a user, the user needs to belong to the [Global Administrator](/azure/active-directory/roles/permissions-reference) directory role.
 
 ## HTTP request
 
@@ -100,4 +102,3 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 Content-Type: text/plain
 ```
-

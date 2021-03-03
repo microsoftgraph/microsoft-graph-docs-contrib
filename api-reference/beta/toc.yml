@@ -10280,13 +10280,6 @@ items:
               href: api/unifiedroleassignmentmultiple-delete.md
       - name: Identity and sign-in
         items:
-        - name: Admin consent request policy
-          href: resources/adminconsentrequestpolicy.md
-          items:
-          - name: Get
-            href: api/adminconsentrequestpolicy-get.md
-          - name: Update
-            href: api/adminconsentrequestpolicy-update.md
         - name: Authentication events policy
           items:
           - name: Authentication events policy
@@ -11090,27 +11083,27 @@ items:
             href: resources/adminconsentrequestpolicy.md
             items:
             - name: Get
-            href: api/adminconsentrequestpolicy-get.md
+              href: api/adminconsentrequestpolicy-get.md
             - name: Update
-            href: api/adminconsentrequestpolicy-update.md
+              href: api/adminconsentrequestpolicy-update.md
           - name: App consent requests
             href: resources/appconsentrequest.md
             items:
             - name: List
-            href: api/appconsentrequest-list.md
+              href: api/appconsentrequest-list.md
             - name: Get
-            href: api/appconsentrequest-get.md
+              href: api/appconsentrequest-get.md
             - name: Filter by current user
-            href: api/appconsentrequest-filterByCurrentUser.md
+              href: api/appconsentrequest-filterByCurrentUser.md
           - name: User consent requests
             href: resources/userconsentrequest.md
             items:
             - name: List
-            href: api/userconsentrequest-list.md
+              href: api/userconsentrequest-list.md
             - name: Get
-            href: api/userconsentrequest-get.md
+              href: api/userconsentrequest-get.md
             - name: Filter by current user
-            href: api/userconsentrequest-filterByCurrentUser.md
+              href: api/userconsentrequest-filterByCurrentUser.md
         - name: Entitlement management
           href: resources/entitlementmanagement-root.md
           items:
