@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: conceptualPageType
 ---
 
-# Azure AD consent requests
+# Azure Active Directory consent requests
 
 Namespace: microsoft.graph
 

@@ -1,5 +1,5 @@
 ---
-title: "List userConsentRequests"
+title: "userConsentRequests: filterByCurrentUser"
 description: "Retrieve userConsentRequests for which the current user is the reviewer."
 author: "psignoret"
 localization_priority: Normal

@@ -20,20 +20,16 @@ A [userConsentRequest](../resources/userconsentrequest.md) is created by an user
 |:---|:---|:---|
 |[List userConsentRequests](../api/userconsentrequest-list.md)|[userConsentRequest](../resources/userconsentrequest.md) collection|Get a list of the [userConsentRequest](../resources/userconsentrequest.md) objects and their properties.|
 |[Get userConsentRequest](../api/userconsentrequest-get.md)|[userConsentRequest](../resources/userconsentrequest.md)|Read the properties and relationships of a [userConsentRequest](../resources/userconsentrequest.md) object.|
-
-## Functions
-|Function|Return type|Description|
-|:---|:---|:---|
 |[List userConsentRequests: filterByCurrentUser](../api/userconsentrequest-filterByCurrentUser.md)|[userConsentRequest](../resources/userconsentrequest.md) collection|Get a list of the [userConsentRequest](../resources/userconsentrequest.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the request.|
-|createdDateTime|DateTimeOffset|The date and time when the request was created. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is '2014-01-01T00:00:00Z'. <br><br>Supports `$filter` (`eq` only) and `$orderby`.|
+|createdDateTime|DateTimeOffset|The date and time when the request was created. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is '2014-01-01T00:00:00Z'. <br>Supports `$filter` (`eq` only) and `$orderby`.|
 |id|String|Identifier of the request. |
-|reason|String|The user's justification for requiring access to the app. <br><br>Supports `$filter` (`eq` only) and `$orderby`.  |
-|status|String|The status of the user's app consent request. Possible values are: `Initializing`, `InProgress`, and `Completed`. <br><br>Supports `$filter` (`eq` only) and `$orderby`. |
+|reason|String|The user's justification for requiring access to the app. Supports `$filter` (`eq` only) and `$orderby`.  |
+|status|String|The status of the user's app consent request. Possible values are: `Initializing`, `InProgress`, and `Completed`. Supports `$filter` (`eq` only) and `$orderby`. |
 
 ## Relationships
 |Relationship|Type|Description|
