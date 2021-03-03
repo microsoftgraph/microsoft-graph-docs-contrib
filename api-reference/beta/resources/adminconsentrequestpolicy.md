@@ -27,7 +27,7 @@ The **adminConsentRequestPolicy** provides additional settings when creating a c
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|Specifies if the admin consent request feature is enabled or disabled. Required.|
+|isEnabled|Boolean|Specifies whether the admin consent request feature is enabled or disabled. Required.|
 |notifyReviewers|Boolean|Specifies if reviewers will receive notifications. Required.|
 |remindersEnabled|Boolean|Specifies if reviewers will receive reminder emails. Required.|
 |requestDurationInDays|Int32|Specifies the duration the request is active before it automatically expires if no decision is applied.|
@@ -61,4 +61,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-
