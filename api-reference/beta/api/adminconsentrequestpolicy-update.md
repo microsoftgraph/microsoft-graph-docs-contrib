@@ -48,9 +48,9 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|Specifies if the admin consent request feature is enabled or disabled.|
-|notifyReviewers|Boolean|Specifies if reviewers will receive notifications.|
-|remindersEnabled|Boolean|Specifies if reviewers will receive reminder emails.|
+|isEnabled|Boolean|Specifies whether the admin consent request feature is enabled or disabled.|
+|notifyReviewers|Boolean|Specifies whether reviewers will receive notifications.|
+|remindersEnabled|Boolean|Specifies whether reviewers will receive reminder emails.|
 |requestDurationInDays|Int32|Specifies the duration the request is active before it automatically expires if no decision is applied.|
 |reviewers|[accessReviewScope](../resources/accessreviewscope.md) collection|The list of reviewers for the admin consent.|
 

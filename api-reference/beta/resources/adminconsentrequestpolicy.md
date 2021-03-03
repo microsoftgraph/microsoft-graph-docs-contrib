@@ -27,9 +27,9 @@ The **adminConsentRequestPolicy** provides additional settings when creating a c
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|Specifies if the admin consent request feature is enabled or disabled. Required.|
-|notifyReviewers|Boolean|Specifies if reviewers will receive notifications. Required.|
-|remindersEnabled|Boolean|Specifies if reviewers will receive reminder emails. Required.|
+|isEnabled|Boolean|Specifies whether the admin consent request feature is enabled or disabled. Required.|
+|notifyReviewers|Boolean|Specifies whether reviewers will receive notifications. Required.|
+|remindersEnabled|Boolean|Specifies whether reviewers will receive reminder emails. Required.|
 |requestDurationInDays|Int32|Specifies the duration the request is active before it automatically expires if no decision is applied.|
 |reviewers|[accessReviewScope](../resources/accessreviewscope.md) collection|Required.|
 |version|Int32|Specifies the version of this policy. When the policy is updated, this version is updated. Read-only.|
@@ -61,4 +61,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-
