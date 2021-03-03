@@ -1546,8 +1546,6 @@ items:
             href: api/ediscovery-tag-childtags.md
           - name: List tags - as hierarchy
             href: api/ediscovery-tag-ashierarchy.md
-          - name: Apply tags
-            href: api/ediscovery-reviewsetquery-applytags.md
         - name: Review set query
           href: resources/ediscovery-reviewsetquery.md
           items:
@@ -1561,6 +1559,8 @@ items:
             href: api/ediscovery-reviewsetquery-update.md
           - name: Delete
             href: api/ediscovery-reviewsetquery-delete.md
+          - name: Apply tags
+            href: api/ediscovery-reviewsetquery-applytags.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
