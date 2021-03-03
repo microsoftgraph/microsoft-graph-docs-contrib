@@ -1,167 +1,167 @@
 {
   "changelog": [
     {
-	  "ChangeList": [
-	    {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+      "ChangeList": [
+        {
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
           "ChangedApiName": "isLicensed",
           "ChangeType": "Addition",
-		  "Description": "Added the **isLicensed** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **isLicensed** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
           "Target": "teamsUserActivityUserDetail"
-		},
-	    {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+        },
+        {
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
           "ChangedApiName": "meetingsOrganizedCount",
           "ChangeType": "Addition",
-		  "Description": "Added the **meetingsOrganizedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **meetingsOrganizedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
           "Target": "teamsUserActivityUserDetail"
-		},
-	    {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+        },
+        {
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
           "ChangedApiName": "meetingsAttendedCount",
           "ChangeType": "Addition",
-		  "Description": "Added the **meetingsAttendedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **meetingsAttendedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
           "Target": "teamsUserActivityUserDetail"
-		},
-	    {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+        },
+        {
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
           "ChangedApiName": "adHocMeetingsOrganizedCount",
           "ChangeType": "Addition",
-		  "Description": "Added the **adHocMeetingsOrganizedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **adHocMeetingsOrganizedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
           "Target": "teamsUserActivityUserDetail"
-		},
-	    {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+        },
+        {
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
           "ChangedApiName": "adHocMeetingsAttendedCount",
           "ChangeType": "Addition",
-		  "Description": "Added the **adHocMeetingsAttendedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **adHocMeetingsAttendedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
           "Target": "teamsUserActivityUserDetail"
-		},
-	    {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+        },
+        {
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
           "ChangedApiName": "scheduledOneTimeMeetingsOrganizedCount",
           "ChangeType": "Addition",
-		  "Description": "Added the **scheduledOneTimeMeetingsOrganizedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **scheduledOneTimeMeetingsOrganizedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
           "Target": "teamsUserActivityUserDetail"
-		},
-	    {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+        },
+        {
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
           "ChangedApiName": "scheduledOneTimeMeetingsAttendedCount",
           "ChangeType": "Addition",
-		  "Description": "Added the **scheduledOneTimeMeetingsAttendedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **scheduledOneTimeMeetingsAttendedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
           "Target": "teamsUserActivityUserDetail"
-		},
-	    {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+        },
+        {
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
           "ChangedApiName": "scheduledRecurringMeetingsOrganizedCount",
           "ChangeType": "Addition",
-		  "Description": "Added the **scheduledRecurringMeetingsOrganizedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **scheduledRecurringMeetingsOrganizedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
           "Target": "teamsUserActivityUserDetail"
-		},
-	    {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+        },
+        {
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
           "ChangedApiName": "scheduledRecurringMeetingsAttendedCount",
           "ChangeType": "Addition",
-		  "Description": "Added the **scheduledRecurringMeetingsAttendedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **scheduledRecurringMeetingsAttendedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
           "Target": "teamsUserActivityUserDetail"
-		},
-	    {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+        },
+        {
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
           "ChangedApiName": "audioDuration",
           "ChangeType": "Addition",
-		  "Description": "Added the **audioDuration** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **audioDuration** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
           "Target": "teamsUserActivityUserDetail"
-		},
-	    {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+        },
+        {
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
           "ChangedApiName": "videoDuration",
           "ChangeType": "Addition",
-		  "Description": "Added the **videoDuration** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **videoDuration** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
           "Target": "teamsUserActivityUserDetail"
-		},
-	    {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+        },
+        {
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
           "ChangedApiName": "screenShareDuration",
           "ChangeType": "Addition",
-		  "Description": "Added the **screenShareDuration** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **screenShareDuration** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
           "Target": "teamsUserActivityUserDetail"
-		},
-	    {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+        },
+        {
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
           "ChangedApiName": "isLicensed",
           "ChangeType": "Addition",
-		  "Description": "Added the **isLicensed** property to the [teamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **isLicensed** property to the [teamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageuserdetail?view=graph-rest-beta) resource.",
           "Target": "teamsDeviceUsageUserDetail"
-		},
-	    {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+        },
+        {
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
           "ChangedApiName": "usedChromeOS",
           "ChangeType": "Addition",
-		  "Description": "Added the **usedChromeOS** property to the [teamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **usedChromeOS** property to the [teamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageuserdetail?view=graph-rest-beta) resource.",
           "Target": "teamsDeviceUsageUserDetail"
-		},
-	    {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+        },
+        {
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
           "ChangedApiName": "usedLinux",
           "ChangeType": "Addition",
-		  "Description": "Added the **usedLinux** property to the [teamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **usedLinux** property to the [teamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageuserdetail?view=graph-rest-beta) resource.",
           "Target": "teamsDeviceUsageUserDetail"
-		},
-	    {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+        },
+        {
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
           "ChangedApiName": "chromeOS",
           "ChangeType": "Addition",
-		  "Description": "Added the **chromeOS** property to the [teamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageusercounts?view=graph-rest-beta) resource.",
+          "Description": "Added the **chromeOS** property to the [teamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageusercounts?view=graph-rest-beta) resource.",
           "Target": "teamsDeviceUsageUserCounts"
-		},
-	    {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+        },
+        {
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
           "ChangedApiName": "linux",
           "ChangeType": "Addition",
-		  "Description": "Added the **linux** property to the [teamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageusercounts?view=graph-rest-beta) resource.",
+          "Description": "Added the **linux** property to the [teamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageusercounts?view=graph-rest-beta) resource.",
           "Target": "teamsDeviceUsageUserCounts"
-		},
-	    {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+        },
+        {
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
           "ChangedApiName": "chromeOS",
           "ChangeType": "Addition",
-		  "Description": "Added the **chromeOS** property to the [teamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusagedistributionusercounts?view=graph-rest-beta) resource.",
+          "Description": "Added the **chromeOS** property to the [teamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusagedistributionusercounts?view=graph-rest-beta) resource.",
           "Target": "teamsDeviceUsageDistributionUserCounts"
-		},
-	    {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+        },
+        {
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
           "ChangedApiName": "linux",
           "ChangeType": "Addition",
-		  "Description": "Added the **linux** property to the [teamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusagedistributionusercounts?view=graph-rest-beta) resource.",
+          "Description": "Added the **linux** property to the [teamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusagedistributionusercounts?view=graph-rest-beta) resource.",
           "Target": "teamsDeviceUsageDistributionUserCounts"
-		},
-		{
-		   "Id":"e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		   "ApiChange":"Resource",
-		   "ChangedApiName":"teamsUserActivityDistributionUserCounts",
-		   "ChangeType":"Addition",
-		   "Description":"Added the [teamsUserActivityDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivitydistributionusercounts?view=graph-rest-beta) resource type.",
-		   "Target":"teamsUserActivityDistributionUserCounts"
-		},
+        },
+        {
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsUserActivityDistributionUserCounts",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsUserActivityDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivitydistributionusercounts?view=graph-rest-beta) resource type.",
+          "Target": "teamsUserActivityDistributionUserCounts"
+        },
         {
           "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "method",
@@ -210,14 +210,14 @@
           "Description": "Added the [getTeamsDeviceUsageDistributionTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagedistributiontotalusercounts?view=graph-rest-1.0) method.",
           "Target": "getTeamsDeviceUsageDistributionTotalUserCounts"
         }
-	  ],
+      ],
       "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-03-03T03:46:16.421Z",
       "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
-	},
+    },
     {
       "ChangeList": [
         {
