@@ -4,7 +4,7 @@ title: "contentType: publish"
 description: "Publish a content type present in content type hub site."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "sharepoint"
+ms.prod: "sites-and-lists"
 ---
 
 # contentType: publish

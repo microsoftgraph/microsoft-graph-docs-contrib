@@ -4,7 +4,7 @@ title: "columnValidation resource type"
 description: "Contains data for validating column values."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "sharepoint"
+ms.prod: "sites-and-lists"
 ---
 
 # columnValidation resource type

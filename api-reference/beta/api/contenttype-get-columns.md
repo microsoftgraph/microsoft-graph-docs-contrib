@@ -4,7 +4,7 @@ title: "Get columnDefinition"
 description: " Get a content type column."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "sharepoint"
+ms.prod: "sites-and-lists"
 ---
 
 # Get columnDefinition

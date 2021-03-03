@@ -4,7 +4,7 @@ title: "List contentTypes"
 description: "List content types in a site or a list"
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "sharepoint"
+ms.prod: "sites-and-lists"
 ---
 
 # List contentTypes

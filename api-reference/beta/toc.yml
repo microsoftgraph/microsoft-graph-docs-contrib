@@ -12617,7 +12617,7 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
-      - name: Content Types
+      - name: Content types
         href: resources/contentType.md
         items:
         - name: List
@@ -12636,7 +12636,7 @@ items:
           href: api/contenttype-unpublish.md
         - name: IsPublished
           href: api/contenttype-ispublished.md
-        - name: Add Copy
+        - name: Add copy
           href: api/contenttype-addcopy.md
         - name: Copy to default content location
           href: api/contenttype-copytodefaultcontentlocation.md

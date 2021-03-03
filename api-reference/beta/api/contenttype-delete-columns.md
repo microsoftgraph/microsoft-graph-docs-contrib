@@ -4,7 +4,7 @@ title: "Delete columnDefinition"
 description: "Delete a column from a content type."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "sharepoint"
+ms.prod: "sites-and-lists"
 ---
 
 # Delete columnDefinition

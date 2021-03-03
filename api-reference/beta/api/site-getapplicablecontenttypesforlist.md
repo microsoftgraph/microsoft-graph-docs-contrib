@@ -4,7 +4,7 @@ title: "site: getApplicableContentTypesForList"
 description: "Get site content types that can be added to a list."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "sharepoint"
+ms.prod: "sites-and-lists"
 ---
 
 # site: getApplicableContentTypesForList

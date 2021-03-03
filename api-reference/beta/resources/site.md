@@ -4,7 +4,7 @@ description: "The site resource provides metadata and relationships for a ShareP
 ms.date: 09/10/2017
 title: Site
 localization_priority: Priority
-ms.prod: "sharepoint"
+ms.prod: "sites-and-lists"
 doc_type: resourcePageType
 ---
 # site resource type

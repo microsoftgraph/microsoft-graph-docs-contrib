@@ -4,7 +4,7 @@ title: "Get contentType"
 description: "Get a content type in a site or a list."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "sharepoint"
+ms.prod: "sites-and-lists"
 ---
 
 # Get contentType

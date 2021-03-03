@@ -5,7 +5,7 @@ ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "sharepoint"
+ms.prod: "sites-and-lists"
 ---
 # columnDefinition resource type
 
@@ -73,13 +73,13 @@ The type-related properties (boolean, calculated, choice, currency, dateTime, lo
 | **columnGroup**         | string  | For site columns, the name of the group this column belongs to. Helps organize related columns.
 | **description**         | string  | The user-facing description of the column.
 | **displayName**         | string  | The user-facing name of the column.
-| **enforceUniqueValues** | boolean | If true, no two list items may have the same value for this column.
-| **hidden**              | boolean | Specifies whether the column is displayed in the user interface.
+| **enforceUniqueValues** | Boolean | If true, no two list items may have the same value for this column.
+| **hidden**              | Boolean | Specifies whether the column is displayed in the user interface.
 | **id**                  | string  | The unique identifier for the column.
-| **indexed**             | boolean | Specifies whether the column values can used for sorting and searching.
+| **indexed**             | Boolean | Specifies whether the column values can used for sorting and searching.
 | **name**                | string  | The API-facing name of the column as it appears in the [fields][] on a [listItem][]. For the user-facing name, see **displayName**.
-| **readOnly**            | bool    | Specifies whether the column values can be modified.
-| **required**            | boolean | Specifies whether the column value is not optional.
+| **readOnly**            | Boolean    | Specifies whether the column values can be modified.
+| **required**            | Boolean | Specifies whether the column value is not optional.
 | **boolean**       | [booleanColumn][]       | This column stores boolean values.
 | **calculated**    | [calculatedColumn][]    | This column's data is calculated based on other columns.
 | **choice**        | [choiceColumn][]        | This column stores data from a list of choices.
@@ -91,10 +91,10 @@ The type-related properties (boolean, calculated, choice, currency, dateTime, lo
 | **number**        | [numberColumn][]        | This column stores number values.
 | **personOrGroup** | [personOrGroupColumn][] | This column stores Person or Group values.
 | **text**          | [textColumn][]          | This column stores text values.
-| **isDeletable**       | boolean | Indicates whether this column can be deleted.
-| **propagateChanges**     | boolean | If 'True' changes to this column will be propagated to lists that implement the column. 
-| **isReorderable**         | boolean | Indicates whether values in the column can be reordered. Read-only.
-| **isSealed**              | boolean | Specifies whether column can be changed.
+| **isDeletable**       | Boolean | Indicates whether this column can be deleted.
+| **propagateChanges**     | Boolean | If 'True' changes to this column will be propagated to lists that implement the column. 
+| **isReorderable**         | Boolean | Indicates whether values in the column can be reordered. Read-only.
+| **isSealed**              | Boolean | Specifies whether column can be changed.
 | **validation**   |  [columnValidation][]    | This column stores validation formula and message for the column. 
 | **hyperlinkOrPicture**  | [hyperlinkOrPictureColumn][] | This column stores hyperlink or picture values. 
 | **term**     | [termColumn][] | This column stores taxonomy terms.

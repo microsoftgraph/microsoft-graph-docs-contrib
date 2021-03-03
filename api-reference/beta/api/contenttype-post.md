@@ -4,7 +4,7 @@ title: "Create contentType"
 description: "Create a Content type in a site."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "sharepoint"
+ms.prod: "sites-and-lists"
 ---
 
 # Create contentType

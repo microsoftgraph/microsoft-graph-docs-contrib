@@ -4,7 +4,7 @@ title: "contentType: copyToDefaultContentLocation"
 description: "Copy a file to a default content location in a content type."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "sharepoint"
+ms.prod: "sites-and-lists"
 ---
 
 # contentType: copyToDefaultContentLocation

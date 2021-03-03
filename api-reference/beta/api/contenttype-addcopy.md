@@ -4,7 +4,7 @@ title: "contentType: addCopy"
 description: "Add a copy of a site content type to a list."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "sharepoint"
+ms.prod: "sites-and-lists"
 ---
 
 # contentType: addCopy
