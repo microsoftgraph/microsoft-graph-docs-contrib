@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Create a new reply to a [chatMessage](../resources/chatmessage.md) in a specified [channel](../resources/channel.md).
 
-> **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
-
 > **Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD022 -->
@@ -26,11 +24,13 @@ Create a new reply to a [chatMessage](../resources/chatmessage.md) in a specifie
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | ChannelMessage.Send, Group.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Teamwork.Migrate.All |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | ChannelMessage.Send, Group.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Teamwork.Migrate.All |
+
+> **Note**: Application permissions are *only* supported for [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -147,9 +147,14 @@ Content-length: 160
 > **Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario.
 
 #### Request
-<!-- { "blockType": "ignored" } -->
+
 The following example show how to import back-in-time messages using the `createDateTime` and `from` keys in the request body.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies
 
@@ -194,7 +199,6 @@ The following is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 

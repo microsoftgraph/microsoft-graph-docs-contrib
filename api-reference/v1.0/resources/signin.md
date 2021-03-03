@@ -3,7 +3,7 @@ title: "signIn resource type"
 description: "Details user and application sign-in activity for a tenant (directory)."
 author: "besiler"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Details user and application sign-in activity for a tenant (directory).
+Details user and application sign-in activity for a tenant (directory). You must have an Azure AD Premium P1 or P2 license to download sign-in logs using the Microsoft Graph API.
 
 ## Methods
 
