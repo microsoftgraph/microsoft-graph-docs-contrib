@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A request that represents an aggregation of [userConsentRequests](../resources/userconsentrequest.md) for a specific application.
+An aggregation of [userConsentRequests](../resources/userconsentrequest.md) for a specific application.
 
 ## Methods
 |Method|Return type|Description|
