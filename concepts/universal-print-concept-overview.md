@@ -29,7 +29,7 @@ Follow these steps to submit print jobs to printerShare:
 
 1. [Create a print job](/graph/api/printershare-post-jobs?view=graph-rest-beta) and store the resulting document ID.
 2. [Create an uploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta) for the document. 
-3. [Upload bytes to the created upload session](/graph/upload-data-to-upload-session).
+3. [Upload bytes to the created upload session](./upload-data-to-upload-session.md).
 4. [Start the print job](/graph/api/printjob-start?view=graph-rest-beta).
 
 ### Manage printers
@@ -45,12 +45,12 @@ Keeping track of an organization's printers, printer configurations, and printer
   * [List monthlyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter?view=graph-rest-beta)
 
 * **Configure user permissions** by modifying user and group membership on printers:
-  * [List allowedUsers](/graph/api/printer-list-allowedusers?view=graph-rest-beta)
-  * [Add allowedUser](/graph/api/printer-post-allowedusers?view=graph-rest-beta)
-  * [Remove allowedUser](/graph/api/printer-delete-alloweduser?view=graph-rest-beta)
-  * [List allowedGroups](/graph/api/printer-list-allowedgroups?view=graph-rest-beta)
-  * [Add allowedGroup](/graph/api/printer-post-allowedgroups?view=graph-rest-beta)
-  * [Remove allowedGroup](/graph/api/printer-delete-allowedgroup?view=graph-rest-beta)
+  * [List allowedUsers](/graph/api/printershare-list-allowedusers?view=graph-rest-beta)
+  * [Add allowedUser](/graph/api/printershare-post-allowedusers?view=graph-rest-beta)
+  * [Remove allowedUser](/graph/api/printershare-delete-alloweduser?view=graph-rest-beta)
+  * [List allowedGroups](/graph/api/printershare-list-allowedgroups?view=graph-rest-beta)
+  * [Add allowedGroup](/graph/api/printershare-post-allowedgroups?view=graph-rest-beta)
+  * [Remove allowedGroup](/graph/api/printershare-delete-allowedgroup?view=graph-rest-beta)
 
 ### Seamlessly replace or update printer hardware
 

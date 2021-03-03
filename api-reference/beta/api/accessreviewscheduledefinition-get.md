@@ -96,7 +96,7 @@ Content-type: application/json
     "createdBy": {
         "id": "957f1027-c0ee-460d-4444-b8828e59e0fe",
         "displayName": "MOD Administrator",
-        "userPrincipalName": "admin@microsoft.com"
+        "userPrincipalName": "admin@contoso.com"
     },
     "scope": {
         "query": "/groups/b7a059cb-038a-4802-8fc9-b944440cf11f/transitiveMembers",
