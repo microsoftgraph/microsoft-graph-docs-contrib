@@ -38,19 +38,10 @@ The following table lists the methods that you can use to interact with consent 
 |[Update adminConsentRequestPolicy](../api/adminconsentrequestpolicy-update.md) | [adminConsentRequestPolicy](adminconsentrequestpolicy.md) collection | Set configurations for the [adminConsentRequestPolicy](adminconsentrequestpolicy.md) |
 |[List appConsentRequests ](../api/appconsentrequest-list.md) | [appConsentRequest](appconsentrequest.md) collection | Retrieve a list of all [appConsentRequests](appconsentrequest.md) |
 |[Get appConsentRequests ](../api/appconsentrequest-get.md) | [appConsentRequest](appconsentrequest.md) collection | Read a given [appConsentRequest](appconsentrequest.md) |
+|[List appConsentRequests: filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md) | [appConsentRequests](../resources/appconsentrequest.md) collection | Read the properties of the [appConsentRequests](../resources/appconsentrequest.md) for which the current user is the reviewer and the status of the user consent request is `InProgress`. |
 |[Get userConsentRequests ](../api/userconsentrequest-get.md) | [userConsentRequest](userconsentrequest.md) collection | Retrieve a given [userConsentRequests](userconsentrequest.md) for a given [appConsentRequest](appconsentrequest.md) |
 |[List userConsentRequests ](../api/userconsentrequest-list.md) | [userConsentRequest](userconsentrequest.md) collection | Retrieve a list of all [userConsentRequests](userconsentrequest.md) for a given [appConsentRequest](appconsentrequest.md) |
-
-
-## Functions
-
-The following table lists the functions that you can use to interact with consent request resources.
-
-| Method		   | Return type	|Description|
-|:---------------|:--------|:----------|
-|[List appConsentRequests: filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md) | [appConsentRequests](../resources/appconsentrequest.md) collection | Read the properties of the [appConsentRequests](../resources/appconsentrequest.md) for which the current user is the reviewer and the status of the user consent request is `InProgress`. |
 |[List userConsentRequests: filterByCurrentUser](../api/userconsentrequest-filterByCurrentUser.md) | [appConsentRequests](../resources/userconsentrequest.md) collection | Read the properties of the [userConsentRequests](../resources/userconsentrequest.md) for which the current user is the reviewer and the status of the user consent request is `InProgress`. |
-
 
 ## Role and delegated permission authorization checks
 
