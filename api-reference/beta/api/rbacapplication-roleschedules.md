@@ -53,7 +53,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md) collection in the response body.
+If successful, this method returns a `200 OK` response code and a [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md) collection in the response body.
 
 ## Examples
 
@@ -97,4 +97,3 @@ Content-Type: application/json
   ]
 }
 ```
-
