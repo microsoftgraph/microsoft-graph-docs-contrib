@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /agreements
+POST /identityGovernance/termsOfUse/agreements
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -59,7 +59,7 @@ In the request body, supply a JSON representation of the [agreement](../resource
   "name": "create_agreement_from_agreements"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/agreements
+POST https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements
 Content-type: application/json
 
 {
