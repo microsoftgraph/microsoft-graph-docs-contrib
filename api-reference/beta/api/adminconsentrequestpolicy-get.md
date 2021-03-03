@@ -3,7 +3,7 @@ title: "Get adminConsentRequestPolicy"
 description: "Read the properties and relationships of an adminConsentRequestPolicy object."
 author: "psignoret"
 localization_priority: Normal
-ms.prod: "identity-and-sign-in"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
