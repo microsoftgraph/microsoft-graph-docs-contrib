@@ -49,7 +49,8 @@ The following is a JSON definition of the resource.
     "defaultTranslationLanguage": {"@odata.type":"microsoft.graph.localeInfo"},
     "defaultSpeechInputLanguage": {"@odata.type":"microsoft.graph.localeInfo"},
     "defaultRegionalFormat": {"@odata.type":"microsoft.graph.localeInfo"},
-    "regionalFormatOverrides": {"@odata.type":"microsoft.graph.regionalFormatOverrides"}
+    "regionalFormatOverrides": {"@odata.type":"microsoft.graph.regionalFormatOverrides"},
+    "translationPreferences":{"@odata.type":"microsoft.graph.translationPreferences"}
 }
 ```
 <!-- {
