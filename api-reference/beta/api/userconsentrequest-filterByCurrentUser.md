@@ -3,7 +3,7 @@ title: "List userConsentRequests"
 description: "Retrieve userConsentRequests for which the current user is the reviewer."
 author: "psignoret"
 localization_priority: Normal
-ms.prod: ""
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/filterByCurrentUser
+GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/filterByCurrentUser
 ```
 
 ## Required function parameters
