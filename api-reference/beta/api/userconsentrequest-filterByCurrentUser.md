@@ -1,6 +1,6 @@
 ---
 title: "List userConsentRequests"
-description: "Get a list of the userConsentRequests for which the current user is the reviewer."
+description: "Retrieve userConsentRequests for which the current user is the reviewer."
 author: "psignoret"
 localization_priority: Normal
 ms.prod: ""
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [userConsentRequests](../resources/userconsentrequest.md) for an appConsentRequest for which the current user is the reviewer and the status of the userConsentRequest is `InProgress`.
+Retrieve the [userConsentRequests](../resources/userconsentrequest.md) for an appConsentRequest for which the current user is the reviewer and the status of the userConsentRequest is `InProgress`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /me/appConsentRequests/{id}/userConsentRequests/filterByCurrentUser
+GET identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/filterByCurrentUser
 ```
 
 ## Required function parameters
