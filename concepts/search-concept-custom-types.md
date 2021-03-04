@@ -31,7 +31,7 @@ TODOSEARCHAPI - Bug 1653398
 
 In addition, you can aggregate search results based on properties in an [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) that are numeric or string type, and that are set to be refinable in the [schema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true). For more information, see [Refine search results using aggregations](search-concept-aggregation.md).
 
-## Example
+## Example 1: Retrieve items using Azure SQL built-in connector
 
 In this example, the content of the [AdventureWorks](/sql/samples/adventureworks-install-configure) database has been ingested using the Azure SQL built-in connector.
 
@@ -119,7 +119,7 @@ Content-type: application/json
 }
 ```
 
-## Example 2: Retrieve items using semantic labels.
+## Example 2: Retrieve items using semantic labels
 
 ### Request
 
@@ -234,7 +234,7 @@ Content-type: application/json
 }
 ```
 
-- [Docs: Retrieve items using semantic labels.](https://docs.microsoft.com/microsoftsearch/configure-connector#step-5-assign-property-labels)
+For more details, see [Assign property labels](/microsoftsearch/configure-connector#step-5-assign-property-labels).
 
 ## Next steps
 
