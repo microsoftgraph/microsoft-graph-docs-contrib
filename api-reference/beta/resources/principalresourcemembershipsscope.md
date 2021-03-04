@@ -27,6 +27,218 @@ Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 ## Relationships
 None.
 
+## Supported queries of type principalResourceMembershipsScope
+
+The following documents a list of supported principalResourceMembershipScopes based on the resource(s) being selected
+
+### ServicePrincipal Resource Scope 
+
+```json
+{
+    "odata.type": "#microsoft.graph.principalResourceMembershipsScope",
+    "principalScopes": [
+        {
+            "odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/users",
+            "queryType": "MicrosoftGraph"
+        }
+    ],
+    "resourceScopes": [
+        {
+            "odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/servicePrincipals/7a06f670-2d24-4805-836c-1f4a4d47d567",
+            "queryType": "MicrosoftGraph"
+        }
+    ]
+}
+```
+
+Here are various options for principalScopes for ServicePrincipal Resource Scope: 
+
+###### All users
+
+```json
+"principalScopes": [
+        {
+            "odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/users",
+            "queryType": "MicrosoftGraph"
+        }
+    ]
+
+```
+
+###### Guest users
+
+```json
+"principalScopes": [
+        {
+            "odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/users?$filter=(userType eq 'Guest')",
+            "queryType": "MicrosoftGraph"
+        }
+    ]
+
+```
+
+### Directory Role Resource Scope 
+
+```json
+{
+    "odata.type": "#microsoft.graph.principalResourceMembershipsScope",
+    "principalScopes": [
+        {
+            "odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/users",
+            "queryType": "MicrosoftGraph"
+        }
+    ],
+    "resourceScopes": [
+        {
+            "odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/roleManagement/directory/roleDefinitions/6125d321-9b1f-4f4a-a826-a0483c18c646",
+            "queryType": "MicrosoftGraph"
+        }
+    ]
+}
+```
+
+Here are various options for principalScopes for DirectoryRole Resource Scope: 
+
+###### All users
+
+```json
+"principalScopes": [
+        {
+            "odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/users",
+            "queryType": "MicrosoftGraph"
+        }
+    ]
+
+```
+
+###### All inactive users
+
+```json
+"principalScopes": [
+        {
+            "odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
+            "query": "/users",
+            "queryType": "MicrosoftGraph",
+            "inactiveDuration": "P30D"
+        }
+    ]
+
+```
+
+###### Guest users
+
+```json
+"principalScopes": [
+        {
+            "odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/users?$filter=(userType eq 'Guest')",
+            "queryType": "MicrosoftGraph"
+        }
+    ]
+
+```
+
+
+###### Guest inactive users
+
+```json
+"principalScopes": [
+        {
+            "odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
+            "query": "/users?$filter=(userType eq 'Guest')",
+            "queryType": "MicrosoftGraph",
+            "inactiveDuration": "P30D"
+        }
+    ]
+
+```
+
+### All Directory Roles Resource Scope 
+
+```json
+{
+    "odata.type": "#microsoft.graph.principalResourceMembershipsScope",
+    "principalScopes": [
+        {
+            "odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/users",
+            "queryType": "MicrosoftGraph"
+        }
+    ],
+    "resourceScopes": [
+        {
+            "odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/roleManagement/directory/roleDefinitions",
+            "queryType": "MicrosoftGraph"
+        }
+    ]
+}
+```
+
+Here are various options for principalScopes for All Directory Role Resource Scope: 
+
+###### All users
+
+```json
+"principalScopes": [
+        {
+            "odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/users",
+            "queryType": "MicrosoftGraph"
+        }
+    ]
+
+```
+
+###### All inactive users
+
+```json
+"principalScopes": [
+        {
+            "odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
+            "query": "/users",
+            "queryType": "MicrosoftGraph",
+            "inactiveDuration": "P30D"
+        }
+    ]
+
+```
+
+###### Guest users
+
+```json
+"principalScopes": [
+        {
+            "odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/users?$filter=(userType eq 'Guest')",
+            "queryType": "MicrosoftGraph"
+        }
+    ]
+
+```
+
+
+###### Guest inactive users
+
+```json
+"principalScopes": [
+        {
+            "odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
+            "query": "/users?$filter=(userType eq 'Guest')",
+            "queryType": "MicrosoftGraph",
+            "inactiveDuration": "P30D"
+        }
+    ]
+
+```
+
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
