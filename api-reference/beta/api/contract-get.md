@@ -3,7 +3,7 @@ title: "Get Contract"
 description: "Retrieve the properties and relationships of contract object."
 localization_priority: Normal
 author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
