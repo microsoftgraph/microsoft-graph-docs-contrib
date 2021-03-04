@@ -171,7 +171,19 @@ items:
           - name: Connectors overview
             href: data-inflow-connectors-overview.md
           - name: Connectors API overview
-            href: data-inflow-connectors-api-overview.md        
+            href: data-inflow-connectors-api-overview.md
+              - name: Explore Graph connector APIs on Postman
+                href: data-inflow-connectors-api-postman.md
+              - name: Manage schema
+                href: data-inflow-manage-schema.md
+              - name: Manage connections
+                href: data-inflow-manage-connections.md
+              - name: External groups
+                href: data-inflow-external-groups.md
+              - name: Manage items
+                href: data-inflow-manage-items.md
+              - name: API limits
+                href: data-inflow-api-limits.md                 
       - name: Data access
         displayName: Microsoft Graph data connect
         items:

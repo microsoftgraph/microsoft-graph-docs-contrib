@@ -3,6 +3,7 @@ title: "Common Microsoft Graph connector API errors"
 description: "Common Microsoft Graph connector API errors"
 author: "mecampos"
 localization_priority: Priority
+ms.author: "mecampos"
 ms.prod: "data-inflow"
 ---
 
@@ -18,12 +19,12 @@ Below is the list of different errors that can appear against any connection.
 | 1003 | The account associated with the connector doesn&#39;t have permission to access the item. | Ensure the proper account has access to the item you want indexed. |
 | 1004 | Unable to reach the on-premises data gateway. Make sure the gateway service is running and the gateway details are updated in the connection configuration. | Check the computer with the gateway, open the Power BI Gateway application and make sure the gateway is running. Verify that the gateway is using the same admin account as Microsoft Search, then make sure all the gateway details are all updated in the connection configuration. |
 | 1005 | Credentials associated with this data source have expired. Renew the credentials and update the connection. | Click  **Edit**  to update the authentication credentials. |
-| 1006 | Your gateway version is out of date and doesn&#39;t support this connector anymore. You will need to update the gateway. | Please visit [Install an on-premises data gateway](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-install) to download and install the latest version of the Power BI gateway on the machine containing the gateway. |
+| 1006 | Your gateway version is out of date and doesn&#39;t support this connector anymore. You will need to update the gateway. | Please visit [Install an on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) to download and install the latest version of the Power BI gateway on the machine containing the gateway. |
 | 1007 | No valid Power BI license detected. You need a valid Power BI license to perform this crawl. | You need a valid Power BI license to perform this crawl. Check that your organization has a valid license. If it does, try again. If it doesn&#39;t, obtain a license and then try again. |
 | 1008 | The total quota utilization of your tenant has reached its limit. | Try deleting a connection to free up some of your quota or adjusting your ingestion filters to bring in less data. If these don&#39;t solve the issue, contact Microsoft support. |
 | 1009 | The total quota utilization for your connection has reached its limit. | Try adjusting your ingestion filters to bring in less data. If this doesn&#39;t solve the issue, contact Microsoft support. |
 | 1010 | The total quota utilization for indexing non-Azure AD groups has reached its limit of 100K. | Try deleting a connection to free up some of your quota or adjusting your ingestion filters to bring in less data. If these don&#39;t solve the issue, contact Microsoft support. |
-| 1011 | The Graph connector [agent](https://docs.microsoft.com/en-us/microsoftsearch/on-prem-agent) is not reachable or offline. |
+| 1011 | The Graph connector [agent](https://docs.microsoft.com/microsoftsearch/on-prem-agent) is not reachable or offline. |
  |
 | 1012 | Authentication to your connection failed due to an unsupported authentication mode. | Edit the connection to update the authentication settings for your connection. |
 | 2001 | Indexing is throttled because of a large number of updates in the queue. Depending on the queue, it can take some time for the updates to complete. | Please wait until the queue gets cleared. |

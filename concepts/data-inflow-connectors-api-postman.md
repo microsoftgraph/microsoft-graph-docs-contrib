@@ -3,6 +3,7 @@ title: "Try Graph Connector APIs using Postman"
 description: "Try Graph Connector APIs using Postman"
 author: "mecampos"
 localization_priority: Priority
+ms.author: "mecampos"
 ms.prod: "data-inflow"
 ---
 
@@ -14,7 +15,7 @@ In this topic, learn to play with the Graph Connector APIs using Postman.
 
 Either a Microsoft account or work or school account.
 
-[Microsoft 365 Developer Program](https://developer.microsoft.com/en-us/microsoft-365/dev-program). (Microsoft 365 developer subscription)
+[Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program). (Microsoft 365 developer subscription)
 
 Register application on the [App Registration](#_Step_3_-) Portal.
 
@@ -102,12 +103,12 @@ Because this is the first time you are running a request as an application authe
 client\_id={{client\_id}}&amp;scope=https%3A%2F%2Fgraph.microsoft.com%2F.default&amp;client\_secret={{client\_secret}}&amp;grant\_type=client\_credentials
 **Successful response example** {    &quot;token\_type&quot;: &quot;Bearer&quot;,    &quot;expires\_in&quot;: 3599,    &quot;ext\_expires\_in&quot;: 3599,    &quot;access\_token&quot;: &quot;eyJ0eXAiOiJKV1QiLCJu… &quot;}
 
-Note that we are using the [client credential flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) here. Be sure to get app access token and not get user access token.
+Note that we are using the [client credential flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) here. Be sure to get app access token and not get user access token.
 
 
 ## Step 8 – Create a new connection
 
-A [connection](https://docs.microsoft.com/en-us/graph/search-index-manage-connections) is a logical container for your external data that you can manage as a single unit. Choose a connection name, id, and description.Get the necessary details from the admin to connect to the data source and provide a mechanism to authorize against the content source when setting up the connection. You can use [the Microsoft Graph SDK](https://docs.microsoft.com/en-us/graph/sdks/sdks-overview) and APIs to program your connector setup. If you want to store credentials, you can use Azure Key Vault.
+A [connection](https://docs.microsoft.com/graph/search-index-manage-connections) is a logical container for your external data that you can manage as a single unit. Choose a connection name, id, and description.Get the necessary details from the admin to connect to the data source and provide a mechanism to authorize against the content source when setting up the connection. You can use [the Microsoft Graph SDK](https://docs.microsoft.com/graph/sdks/sdks-overview) and APIs to program your connector setup. If you want to store credentials, you can use Azure Key Vault.
 
 POST /external/connections
 
@@ -121,7 +122,7 @@ POST /external/connections
 ## Step 9 - Register connection schema
 
 
-The [connection schema](https://docs.microsoft.com/en-us/graph/api/externalconnection-post-schema?view=graph-rest-beta&amp;tabs=http) determines how your content will be used in various Microsoft Graph experiences. Schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before adding items into the connection.POST /external/connections/{id}/schema
+The [connection schema](https://docs.microsoft.com/graph/api/externalconnection-post-schema?view=graph-rest-beta&amp;tabs=http) determines how your content will be used in various Microsoft Graph experiences. Schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before adding items into the connection.POST /external/connections/{id}/schema
 **Request** POST https://graph.microsoft.com/beta/external/connections/contosotasks/schemaContent-type: application/jsonPrefer: respond-async
 {&quot;baseType&quot;: &quot;microsoft.graph.externalItem&quot;,&quot;properties&quot;: [{&quot;name&quot;: &quot;title&quot;,&quot;type&quot;: &quot;String&quot;,&quot;isSearchable&quot;: &quot;true&quot;,&quot;isQueryable&quot;: &quot;true&quot;,&quot;isRetrievable&quot;: &quot;true&quot;,&quot;labels&quot;: [&quot;title&quot;]},{&quot;aliases&quot;: &quot;creator&quot;,&quot;name&quot;: &quot;createdBy&quot;,&quot;type&quot;: &quot;String&quot;,&quot;isSearchable&quot;: &quot;true&quot;,&quot;isQueryable&quot;: &quot;true&quot;,&quot;isRetrievable&quot;: &quot;false&quot;,&quot;isRefinable&quot;: &quot;false&quot;,&quot;labels&quot;: [&quot;createdBy&quot;]},{&quot;aliases&quot;: &quot;editedDate&quot;,&quot;name&quot;: &quot;lastEditedDate&quot;,&quot;type&quot;: &quot;DateTime&quot;,&quot;isSearchable&quot;: &quot;false&quot;,&quot;isQueryable&quot;: &quot;true&quot;,&quot;isRetrievable&quot;: &quot;true&quot;,&quot;isRefinable&quot;: &quot;true&quot;,&quot;labels&quot;: [&quot;lastModifiedDateTime&quot;]}]}
 **Response**
@@ -141,7 +142,7 @@ HTTP/1.1 202 AcceptedLocation: [https://graph.microsoft.com/beta/external/connec
 ## Step 10 - Add external group member (Optional)
 
 
-This step is optional. If your external service uses non-Azure AD ACLs, sync those permissions. External groups (along with Azure Active Directory users and groups) are used to set permissions on externalItems added to a Microsoft Graph connection. Use externalGroups to represent non-Azure Active Directory groups or group-like constructs (such as Business units, Teams, and so on) that determine permission over the content in your external data source. See [external group](https://docs.microsoft.com/en-us/graph/api/externalgroup-post-members?view=graph-rest-beta&amp;tabs=http)s.
+This step is optional. If your external service uses non-Azure AD ACLs, sync those permissions. External groups (along with Azure Active Directory users and groups) are used to set permissions on externalItems added to a Microsoft Graph connection. Use externalGroups to represent non-Azure Active Directory groups or group-like constructs (such as Business units, Teams, and so on) that determine permission over the content in your external data source. See [external group](https://docs.microsoft.com/graph/api/externalgroup-post-members?view=graph-rest-beta&amp;tabs=http)s.
 **Request** POST https://graph.microsoft.com/beta/external/connections/contosotasks/groups/31bea3d537902000/membersContent-Type: application/json
 {&quot;@odata.type&quot;: &quot;#microsoft.graph.externalGroupMember&quot;,&quot;id&quot;: &quot;1431b9c38ee647f6a&quot;,&quot;type&quot;: &quot;group&quot;,&quot;identitySource&quot;: &quot;external&quot;} **Response** HTTP/1.1 201 CreatedContent-Type: application/json
 {&quot;@odata.type&quot;: &quot;#microsoft.graph.externalGroupMember&quot;,&quot;id&quot;: &quot;14m1b9c38qe647f6a&quot;,&quot;type&quot;: &quot;group&quot;,&quot;identitySource&quot;: &quot;external&quot;}
@@ -152,7 +153,7 @@ This step is optional. If your external service uses non-Azure AD ACLs, sync tho
 ## Step 11 - Ingest Items
 
 
-Once you have created a connection, you can add your content. Each item from your data source must be represented as an [externalItem](https://docs.microsoft.com/en-us/graph/api/externalconnection-put-items?view=graph-rest-beta&amp;preserve-view=true&amp;tabs=http) in Microsoft Graph with a unique item id. This id is used to create, update or delete the item from Microsoft Graph. You can use the primary key from your data source as the itemId or derive it from one or more fields. An externalItem has three key components: access control list, properties, and content.If you have binary files, you must parse to get the metadata and a text version of the content. If you have non text content such as a pdf or bmp file, you must use object character recognition to convert content to text. You are responsible for converting your source permissions to grant or deny. Deny takes higher precedence over grant. **Request** PUT https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938Content-type: application/json
+Once you have created a connection, you can add your content. Each item from your data source must be represented as an [externalItem](https://docs.microsoft.com/graph/api/externalconnection-put-items?view=graph-rest-beta&amp;preserve-view=true&amp;tabs=http) in Microsoft Graph with a unique item id. This id is used to create, update or delete the item from Microsoft Graph. You can use the primary key from your data source as the itemId or derive it from one or more fields. An externalItem has three key components: access control list, properties, and content.If you have binary files, you must parse to get the metadata and a text version of the content. If you have non text content such as a pdf or bmp file, you must use object character recognition to convert content to text. You are responsible for converting your source permissions to grant or deny. Deny takes higher precedence over grant. **Request** PUT https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938Content-type: application/json
 {&quot;@odata.type&quot;: &quot;microsoft.graph.externalItem&quot;,&quot;acl&quot;: [{&quot;type&quot;: &quot;user&quot;,&quot;value&quot;: &quot;e811976d-83df-4cbd-8b9b-5215b18aa874&quot;,&quot;accessType&quot;: &quot;grant&quot;,&quot;identitySource&quot;: &quot;azureActiveDirectory&quot;},{&quot;type&quot;: &quot;group&quot;,&quot;value&quot;: &quot;14m1b9c38qe647f6a&quot;,&quot;accessType&quot;: &quot;deny&quot;,&quot;identitySource&quot;: &quot;external&quot;}],&quot;properties&quot;: {&quot;ticketID&quot;: &quot;1158&quot;,&quot;priority&quot;: 1,&quot;title&quot;: &quot;Filter design&quot;,},&quot;content&quot;: {&quot;value&quot;: &quot;Build filtering capability by...&quot;,&quot;type&quot;: &quot;text&quot;}}
 
 **Response** If successful, this method returns 200 OK response code.
@@ -161,4 +162,4 @@ Once you have created a connection, you can add your content. Each item from you
 ## Error Handing
 
 
-Resolve [Microsoft Graph authorization errors](https://docs.microsoft.com/en-us/graph/resolve-auth-errors).
+Resolve [Microsoft Graph authorization errors](https://docs.microsoft.com/graph/resolve-auth-errors).
