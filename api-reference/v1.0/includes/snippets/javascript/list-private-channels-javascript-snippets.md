@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 let res = await client.api('/teams/{id}/channels')
 	.version('beta')
-	.filter('membershipType eq 'private'')
+	.filter('membershipType eq \'private\'')
 	.get();
 
 ```
