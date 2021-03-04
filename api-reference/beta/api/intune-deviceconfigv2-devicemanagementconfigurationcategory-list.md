@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 382
+Content-Length: 603
 
 {
   "value": [
@@ -72,7 +72,13 @@ Content-Length: 382
       "name": "Name value",
       "displayName": "Display Name value",
       "platforms": "macOS",
-      "technologies": "mdm"
+      "technologies": "mdm",
+      "settingUsage": "configuration",
+      "parentCategoryId": "Parent Category Id value",
+      "rootCategoryId": "Root Category Id value",
+      "childCategoryIds": [
+        "Child Category Ids value"
+      ]
     }
   ]
 }
