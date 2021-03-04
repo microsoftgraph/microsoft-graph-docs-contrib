@@ -27,6 +27,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 
+A user's default [calendarGroup](../resources/calendargroup.md).
+
+```http
+GET /me/calendars
+GET /users/{id | userPrincipalName}/calendars
+```
+
 Any [calendarGroup](../resources/calendargroup.md) of a user.
 
 ```http
