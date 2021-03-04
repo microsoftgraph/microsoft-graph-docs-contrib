@@ -3,7 +3,7 @@ title: "Create registeredUser"
 description: "Add a registered user for the device."
 author: "spunukol"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
