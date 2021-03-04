@@ -11,7 +11,7 @@ ms.prod: "governance"
 In this tutorial, you will use Graph Explorer to create and read access reviews that targets all M365 Groups with guest users in the tenant. To achieve this, you'll first use Azure AD B2B to invite and create an guest user, also referred to as an external identity, in your tenant. Then, you'll add this guest user to your M365 group prior to creating and reading the access review.
 
 >[!NOTE]
->The response objects shown in this tutorial might be shortened for readability.
+>The response objects shown in this tutorial might be shortened for readability. All the properties will be returned from an actual call.
 
 ## Prerequisites
 

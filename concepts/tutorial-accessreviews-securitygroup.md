@@ -13,7 +13,7 @@ In this tutorial, you will use Microsoft Graph Explorer to create and read acces
 You can use Microsoft Graph Explorer or Postman to try out and test your Access Reviews API calls before you automate them into a script or an app. This saves you time by helping you properly define and validate your queries without repeatedly recompiling your application.
 
 >[!NOTE]
->The response objects shown in this tutorial might be shortened for readability.
+>The response objects shown in this tutorial might be shortened for readability. All the properties will be returned from an actual call.
 
 ## Prerequisites
 
