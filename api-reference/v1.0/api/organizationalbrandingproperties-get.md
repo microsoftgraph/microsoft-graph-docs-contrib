@@ -70,10 +70,6 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
 ```
 
-
----
-
-
 #### Response
 
 The following is an example of the response.
@@ -203,10 +199,6 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo
 Accept-Language: fr
 ```
-
-
----
-
 
 #### Response
 
