@@ -172,6 +172,7 @@ items:
             href: data-inflow-connectors-overview.md
           - name: Connectors API overview
             href: data-inflow-connectors-api-overview.md
+            items:  
               - name: Explore Graph connector APIs on Postman
                 href: data-inflow-connectors-api-postman.md
               - name: Manage schema
