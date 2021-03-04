@@ -61,7 +61,6 @@ If successful, this method returns a `200 OK` response code and the requested [o
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_organizationalbrandingproperties"
@@ -195,7 +194,6 @@ Returns **bannerLogo** for the fr locale if it exists. If the localization does 
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_organizationalbrandingproperties"
