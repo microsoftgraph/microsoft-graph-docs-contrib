@@ -59,12 +59,35 @@ This is an example of approving access for a user represented by an `accessRevie
   "blockType": "request",
   "name": "update_accessReviewInstanceDecisionItem"
 }-->
-```http
-PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/decisions/654b34e7-b48f-4772-a2d4-08f1d0dd014c
+``` http
+PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/{accessReviewInstanceId}/decisions/{accessReviewInstanceDecisionItemId}
+Content-Type: application/json
+Content-length: 730
 
 {
-  "decision": "Approve",
-  "justification": "I trust this person"
+  "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
+  "accessReviewId": "String",
+  "reviewedBy": {
+    "@odata.type": "microsoft.graph.userIdentity"
+  },
+  "reviewedDateTime": "String (timestamp)",
+  "decision": "String",
+  "justification": "String",
+  "appliedBy": {
+    "@odata.type": "microsoft.graph.userIdentity"
+  },
+  "appliedDateTime": "String (timestamp)",
+  "applyResult": "String",
+  "recommendation": "String",
+  "target": {
+    "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemTarget"
+  },
+  "principal": {
+    "@odata.type": "microsoft.graph.identity"
+  },
+  "resource": {
+    "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemResource"
+  }
 }
 ```
 # [C#](#tab/csharp)
@@ -94,8 +117,36 @@ PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-
   "blockType": "response",
   "truncated": false
 } -->
-```http
-HTTP/1.1 204 Accepted
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
+  "id": "6125050e-050e-6125-0e05-25610e052561",
+  "accessReviewId": "String",
+  "reviewedBy": {
+    "@odata.type": "microsoft.graph.userIdentity"
+  },
+  "reviewedDateTime": "String (timestamp)",
+  "decision": "String",
+  "justification": "String",
+  "appliedBy": {
+    "@odata.type": "microsoft.graph.userIdentity"
+  },
+  "appliedDateTime": "String (timestamp)",
+  "applyResult": "String",
+  "recommendation": "String",
+  "target": {
+    "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemTarget"
+  },
+  "principal": {
+    "@odata.type": "microsoft.graph.identity"
+  },
+  "resource": {
+    "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemResource"
+  }
+}
 ```
 
 <!--
