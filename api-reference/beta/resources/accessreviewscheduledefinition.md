@@ -62,6 +62,8 @@ The following are queries supported on an [accessReviewScheduleDefinition](acces
 | List every `accessReviewScheduleDefinition` on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users) | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups/{group id}') |
 | List every `accessReviewScheduleDefinition` scoped to all Microsoft 365 groups with guest users | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, './members') |
 
+
+
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
