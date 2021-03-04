@@ -51,6 +51,7 @@ Following is the list of best practices:
 * Ensure there is no *period* at the end of the notification title to achieve parity with all other notification settings in Teams.
 
 ## Understand activity feed notifications and bot framework notifications
+
 The following list provides the key differences in activity feed notifications and bot notifications:
 
 * **Bot messages**: 
