@@ -172,10 +172,10 @@ Content-type: application/json
         },
         "deviceStates": null,
         "devices": {
-            "includeDeviceStates": [
+            "includeDevices": [
                 "All"
             ],
-            "excludeDeviceStates": [
+            "excludeDevices": [
                 "Compliant"
             ]
         }
