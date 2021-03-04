@@ -35,6 +35,7 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Sort search results](#sort-search-results)| **sort** |
 |[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
 |[Search custom types imported using connectors](/graph/search-concept-custom-types)| **contentSources** |
+|[Request spelling correction](#request-spelling-correction)| **QueryAlterationOptions** |
 
 ## Scope search based on entity types
 
@@ -196,6 +197,7 @@ For backward compatibility, the original properties and types are accessible and
   - [Search custom types imported using connectors](/graph/search-concept-custom-types)
   - [Sort search results](/graph/search-concept-sort)
   - [Refine search results](/graph/search-concept-aggregation)
+  - [Request spelling correction](/graph/search-concept-speller)
 
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
