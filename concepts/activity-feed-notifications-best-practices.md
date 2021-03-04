@@ -27,6 +27,7 @@ Following is the list of best practices:
 * Ensure that the apps are performing. The time taken for an app to load is measured and can impact the user experience when a user switches between notifications in the activity feed.
 
 ### Utilize features in partner scenarios
+
 * Understand that selecting a toast notification leads to the activity feed. To switch to an activity, select a notification in the activity feed.
   > [!NOTE] 
   > The notification selection will not switch to the app.
