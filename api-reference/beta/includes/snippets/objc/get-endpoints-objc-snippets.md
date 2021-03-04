@@ -13,7 +13,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-		MSGraphReportRoot *reportRoot = [[MSGraphReportRoot alloc] initWithData:data error:&nserror];
+		NSError *jsonError = nil;
+		MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+		MSGraphPrintUsageByPrinter *printUsageByPrinter = [[MSGraphPrintUsageByPrinter alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 
