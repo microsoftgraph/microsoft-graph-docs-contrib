@@ -157,7 +157,7 @@ This resource supports:
 | aboutMe | String | A freeform text entry field for the user to describe themselves. <br><br>Returned only on `$select`. |
 | accountEnabled | Boolean | `true` if the account is enabled; otherwise, `false`. This property is required when a user is created. <br><br>Returned only on `$select`. Supports $filter. |
 | ageGroup | [ageGroup](#agegroup-values) | Sets the age group of the user. Allowed values: `null`, `minor`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. <br><br>Returned only on `$select`. |
-| assignedLicenses | [assignedLicense](assignedlicense.md) collection | The licenses that are assigned to the user. <br><br>Returned only on `$select`. Not nullable. |
+| assignedLicenses | [assignedLicense](assignedlicense.md) collection | The licenses that are assigned to the user. <br><br>Not nullable. Supports `$filter`. |
 | assignedPlans | [assignedPlan](assignedplan.md) collection | The plans that are assigned to the user. <br><br>Returned only on `$select`. Read-only. Not nullable. |
 | birthday | DateTimeOffset | The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `'2014-01-01T00:00:00Z'` <br><br>Returned only on `$select`. |
 | businessPhones | String collection | The telephone numbers for the user. Only one number can be set for this property. <br><br>Returned by default. Read-only for users synced from on-premises directory. |
