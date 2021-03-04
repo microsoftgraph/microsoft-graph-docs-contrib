@@ -158,7 +158,7 @@ Content-Type: application/json
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "get_printershare"
+  "name": "get_printershare_capabilities"
 }
 -->
 ``` http
@@ -167,7 +167,13 @@ GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}?$select=id,di
 
 #### Response
 
-**Note:** The response object shown here might be shortened for readability. 
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.printerShare"
+}
+--> 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
