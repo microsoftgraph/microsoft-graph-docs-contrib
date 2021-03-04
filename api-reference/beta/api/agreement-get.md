@@ -3,7 +3,7 @@ title: "Get agreement"
 description: "Retrieve the properties and relationships of an agreement object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "raprakasMSFT"
 ---
 

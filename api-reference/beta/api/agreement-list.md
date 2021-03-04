@@ -3,7 +3,7 @@ title: "List agreements"
 description: "Retrieve a list of agreement objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "raprakasMSFT"
 ---
 

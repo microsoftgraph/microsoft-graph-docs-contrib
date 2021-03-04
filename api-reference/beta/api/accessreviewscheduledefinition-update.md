@@ -3,7 +3,7 @@ title: "Update accessReviewScheduleDefinition"
 description: "Update an existing accessReviewScheduleDefinition object to change one or more of its properties."
 localization_priority: Normal
 author: "isabelleatmsft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

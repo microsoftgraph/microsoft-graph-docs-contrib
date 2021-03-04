@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 let res = await client.api('/appCatalogs/teamsApps')
 	.version('beta')
-	.filter('id eq 'b1c5353a-7aca-41b3-830f-27d5218fe0e5'')
+	.filter('id eq \'b1c5353a-7aca-41b3-830f-27d5218fe0e5\'')
 	.get();
 
 ```
