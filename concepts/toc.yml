@@ -164,6 +164,14 @@ items:
       - name: Customer booking (preview)
         href: booking-concept-overview.md
         displayName: Bookings, Microsoft Bookings
+      - name: Data inflow (preview)
+#        href: booking-concept-overview.md
+        displayName: connectors
+        items:
+          - name: Connectors overview
+            href: data-inflow-connectors-overview.md
+          - name: Connectors API overview
+            href: data-inflow-connectors-api-overview.md        
       - name: Data access
         displayName: Microsoft Graph data connect
         items:
