@@ -4,7 +4,7 @@ description: "Create a new identityProvider object."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
 # Create identityProvider
