@@ -31,7 +31,7 @@ The following are queries supported as the `scope` property in an [accessReviewS
 | Review of all users assigned to a group | /groups/{group id}/transitiveMembers ||
 | Review of guest users assigned to a group | /groups/{group id}/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest') ||
 | Review of guest users assigned to all Microsoft 365 groups | ./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest') | Note that the corresponding instanceEnumerationScope should also be passed in to the accessReviewScheduleDefinition. See table below for instanceEnumerationScope query. |
-| Entitlement Management Access Package Assigment Reviews | /identityGovernance/entitlementManagement/accessPackageAssignments?$filter=(accessPackageId eq '{package id}' and assignmentPolicyId eq '{id}')| Note that only READ is supported for Access Package Assignment Reviews|
+| Entitlement Management Access Package Assignment Reviews | /identityGovernance/entitlementManagement/accessPackageAssignments?$filter=(accessPackageId eq '{package id}' and assignmentPolicyId eq '{id}')| Note that only READ is supported for Access Package Assignment Reviews|
 
 ### Supported queries for accessReviewScope as instanceEnumerationScope
 The following are queries supported as the `instanceEnumerationScope` property in an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md)

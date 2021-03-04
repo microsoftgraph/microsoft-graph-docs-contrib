@@ -17,6 +17,7 @@ Namespace: microsoft.graph
 
 The accessReviewReviewerScope defines who will review instances of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). This is expressed as an OData query, which allows reviewers to be specified both as a static list of users (i.e., specific users, group owners, group members) or dynamically (i.e., the case where every user is reviewed by their manager). To create a self-review (where users review their own access), do not provide reviewers on [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) creation.
 
+Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 
 ## Properties
 | Property | Type | Description |
