@@ -1,5 +1,5 @@
 ---
-title: "Update Related Contacts of a User"
+title: "Update relatedContacts"
 description: "Update the relatedContact collection of an educationUser object."
 author: "mmast-msft"
 ms.author: "mmast-msft"
@@ -16,8 +16,8 @@ Namespace: microsoft.graph
 
 Update the [relatedContact](../resources/relatedContact.md) collection of an [educationUser](../resources/educationuser.md) object.
 
-> [!note]
-> Updating relatedContacts replaces the entire collection. It is not possible up add, remove, or update a single contact.
+> [!NOTE]
+> Updating **relatedContacts** replaces the entire collection. It is not possible to add, remove, or update a single contact.
 
 ## Permissions
 
@@ -57,9 +57,9 @@ The following table shows the properties that are required when you update the [
 | :-------------- | :---------------------------------------------------------- | :--------------------------------------------- |
 | relatedContacts | [relatedContact](../resources/relatedcontact.md) collection | The complete set of related contact for a user |
 
-> [!important]
-> Patching relatedContacts must be done as a distinct operation. It cannot be combined with updates to other [educationUser](../resources/educationuser.md) properties.
-> For example, in order to update both `relatedContacts` and `displayName` would require two distinct requests.
+> [!IMPORTANT]
+> This update must be a distinct operation. It cannot be combined with updates to other [educationUser](../resources/educationuser.md) properties.
+> For example, updating both **relatedContacts** and **displayName** requires two distinct requests.
 
 ## Response
 
