@@ -28,7 +28,7 @@ Together, the Microsoft Graph API, connectors (preview), and data connect power 
 
 Microsoft Graph exposes REST APIs and client libraries to access data on the following Microsoft cloud services:
 
-- Microsoft 365 services: Delve, Microsoft 365 compliance eDiscovery, Excel, Microsoft Bookings, Microsoft Teams, OneDrive, OneNote, Outlook/Exchange, Planner, SharePoint, Workplace Analytics.
+- Microsoft 365 services: Delve, Microsoft 365 compliance eDiscovery, Excel, Microsoft Bookings, Microsoft Search, Microsoft Teams, OneDrive, OneNote, Outlook/Exchange, Planner, SharePoint, Workplace Analytics.
 - Enterprise Mobility and Security services: Advanced Threat Analytics, Advanced Threat Protection, Azure Active Directory, Identity Manager, and Intune.
 - Windows 10 services: activities, devices, notifications, Universal Print.
 - Dynamics 365 Business Central.
@@ -53,16 +53,16 @@ Use Microsoft Graph to build experiences around the user's unique context to hel
 
 Pick the first scenario about researching meeting attendees as an example. With the Microsoft Graph API, you can:
 
-1. Get the email addresses of the [meeting event](/graph/api/resources/event?view=graph-rest-1.0) attendees.
-2. Look them up individually as a [user](/graph/api/resources/user?view=graph-rest-1.0) in Azure Active Directory to [get their profile information](/graph/api/user-get?view=graph-rest-1.0).
+1. Get the email addresses of the [meeting event](/graph/api/resources/event) attendees.
+2. Look them up individually as a [user](/graph/api/resources/user) in Azure Active Directory to [get their profile information](/graph/api/user-get).
 
 You can then navigate to other resources using relationships:
 
-- Connect to their manager through a [manager relationship](/graph/api/user-list-manager?view=graph-rest-1.0).
-- Get valuable insights and intelligence including the popular files [trending around](/graph/api/resources/insights-trending?view=graph-rest-1.0) the user.
-- [Get the most relevant people](/graph/api/user-list-people?view=graph-rest-beta) around the user.
-- Extend the scenario to get to the user's groups through a [memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0) relationship
-- [Reach other members in each group](/graph/api/group-list-members?view=graph-rest-1.0).
+- Connect to their manager through a [manager relationship](/graph/api/user-list-manager).
+- Get valuable insights and intelligence including the popular files [trending around](/graph/api/resources/insights-trending) the user.
+- [Get the most relevant people](/graph/api/user-list-people?view=graph-rest-beta&preserve-view=true) around the user.
+- Extend the scenario to get to the user's groups through a [memberOf](/graph/api/user-list-memberof) relationship
+- [Reach other members in each group](/graph/api/group-list-members).
 - Tap into other scenarios enabled by [groups](office365-groups-concept-overview.md), such as [education](education-concept-overview.md) and [teamwork](teams-concept-overview.md).
 
 Microsoft Graph continues to open up the Microsoft 365 platform for developers, and always only with the appropriate permissions.
