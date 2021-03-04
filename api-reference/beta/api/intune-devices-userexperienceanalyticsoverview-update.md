@@ -53,11 +53,13 @@ The following table shows the properties that are required when you create the [
 |deviceBootPerformanceOverallScore|Int32|The user experience analytics device boot performance overall score.|
 |bestPracticesOverallScore|Int32|The user experience analytics best practices overall score.|
 |appHealthOverallScore|Int32|The user experience analytics app health overall score.|
+|resourcePerformanceOverallScore|Int32|The user experience analytics resource performance overall score.|
 |insights|[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md) collection|The user experience analytics insights.|
 |state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics overview. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |deviceBootPerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics 'BootPerformance' category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |bestPracticesHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics 'BestPractices' category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |appHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics 'BestPractices' category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|resourcePerformanceState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics 'ResourcePerformance' category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
 
@@ -71,7 +73,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOverview
 Content-type: application/json
-Content-length: 813
+Content-length: 906
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -79,6 +81,7 @@ Content-length: 813
   "deviceBootPerformanceOverallScore": 1,
   "bestPracticesOverallScore": 9,
   "appHealthOverallScore": 5,
+  "resourcePerformanceOverallScore": 15,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
@@ -96,7 +99,8 @@ Content-length: 813
   "state": "insufficientData",
   "deviceBootPerformanceHealthState": "insufficientData",
   "bestPracticesHealthState": "insufficientData",
-  "appHealthState": "insufficientData"
+  "appHealthState": "insufficientData",
+  "resourcePerformanceState": "insufficientData"
 }
 ```
 
@@ -105,7 +109,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 862
+Content-Length: 955
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -114,6 +118,7 @@ Content-Length: 862
   "deviceBootPerformanceOverallScore": 1,
   "bestPracticesOverallScore": 9,
   "appHealthOverallScore": 5,
+  "resourcePerformanceOverallScore": 15,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
@@ -131,7 +136,8 @@ Content-Length: 862
   "state": "insufficientData",
   "deviceBootPerformanceHealthState": "insufficientData",
   "bestPracticesHealthState": "insufficientData",
-  "appHealthState": "insufficientData"
+  "appHealthState": "insufficientData",
+  "resourcePerformanceState": "insufficientData"
 }
 ```
 

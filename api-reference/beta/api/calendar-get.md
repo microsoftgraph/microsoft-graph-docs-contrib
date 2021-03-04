@@ -43,9 +43,6 @@ A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../
 ```http
 GET /me/calendars/{id}
 GET /users/{id | userPrincipalName}/calendars/{id}
-
-GET /me/calendarGroup/calendars/{id}
-GET /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
 A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
 ```http
