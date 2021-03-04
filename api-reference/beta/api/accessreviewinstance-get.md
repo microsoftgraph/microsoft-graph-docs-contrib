@@ -87,14 +87,32 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "12490cdb-6a18-4c08-ba2c-44442f0a0138",
-    "startDateTime": "2020-09-21T20:03:36Z",
-    "endDateTime": "2020-09-23T20:03:36Z",
-    "status": "NotStarted",
-    "scope": {
-        "query": "/groups/b7a4444b-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
-        "queryType": "MicrosoftGraph"
+  "value": {
+    "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
+    "id": "6125050e-050e-6125-0e05-25610e052561",
+    "accessReviewId": "String",
+    "reviewedBy": {
+      "@odata.type": "microsoft.graph.userIdentity"
+    },
+    "reviewedDateTime": "String (timestamp)",
+    "decision": "String",
+    "justification": "String",
+    "appliedBy": {
+      "@odata.type": "microsoft.graph.userIdentity"
+    },
+    "appliedDateTime": "String (timestamp)",
+    "applyResult": "String",
+    "recommendation": "String",
+    "target": {
+      "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemTarget"
+    },
+    "principal": {
+      "@odata.type": "microsoft.graph.identity"
+    },
+    "resource": {
+      "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemResource"
     }
+  }
 }
 ```
 
