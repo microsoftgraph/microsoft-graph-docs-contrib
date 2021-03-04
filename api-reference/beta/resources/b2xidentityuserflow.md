@@ -24,7 +24,7 @@ User flows are used to enable a [self-service sign up](/azure/active-directory/e
 |[List user flows](../api/identitycontainer-list-b2xuserflows.md)|b2xIdentityUserFlow collection|Retrieve all self-service sign up user flows.|
 |[Get user flow](../api/b2xidentityuserflow-get.md)|b2xIdentityUserFlow|Retrieve properties of a self-service sign up user flow.|
 |[Create user flow](../api/identitycontainer-post-b2xuserflows.md)|b2xIdentityUserFlow|Create a new self-service sign up user flow.|
-|[Delete user flow](../api/b2xidentityuserflow-delete.md)|None|Delete a B2X user flow.|
+|[Delete user flow](../api/b2xidentityuserflow-delete.md)|None|Delete a self-service sign up user flow.|
 |[List identity providers](../api/b2xidentityuserflow-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a self-service sign up user flow.|
 |[Add identity provider](../api/b2xidentityuserflow-post-identityproviders.md)|None|Add an identity provider to a self-service sign up user flow.|
 |[Remove identity provider](../api/b2xidentityuserflow-delete-identityproviders.md)|None|Remove an identity provider from a self-service sign up user flow.|
