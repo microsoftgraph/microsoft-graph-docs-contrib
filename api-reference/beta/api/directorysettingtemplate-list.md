@@ -3,7 +3,7 @@ title: "List directorySettingTemplates"
 description: "This operation retrieves the list of available directorySettingTemplates objects."
 localization_priority: Normal
 author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

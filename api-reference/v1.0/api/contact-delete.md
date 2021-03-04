@@ -36,7 +36,7 @@ DELETE /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md). The 
 example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 ```http
-DELETE /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+DELETE /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## Request headers
