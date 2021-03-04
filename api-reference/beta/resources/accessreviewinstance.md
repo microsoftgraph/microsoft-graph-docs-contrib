@@ -3,7 +3,7 @@ title: "accessReviewInstance resource type"
 description: "Represents a recurrence of an `accessReviewScheduleDefinition`."
 author: "isabelleatmsft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

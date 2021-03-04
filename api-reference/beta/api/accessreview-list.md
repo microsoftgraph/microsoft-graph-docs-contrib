@@ -3,7 +3,7 @@ title: "List accessReviews"
 description: "Retrieve accessReview objects for a businessFlowTemplate."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

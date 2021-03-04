@@ -3,7 +3,7 @@ title: "organization resource type"
 description: " create and delete are not supported. Inherits from directoryObject."
 localization_priority: Priority
 author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
