@@ -26,8 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/tables/{id|name}/columns/{id|name}/DataBodyRange
-POST /me/drive/root/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/DataBodyRange
+GET /me/drive/root/workbook/tables/{id|name}/columns/{id|name}/DataBodyRange
+GET /me/drive/root/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/DataBodyRange
 
 ```
 ## Request headers
@@ -52,8 +52,8 @@ Here is an example of the request.
   "blockType": "request",
   "name": "tablecolumn_databodyrange"
 }-->
-```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/DataBodyRange
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/DataBodyRange
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablecolumn-databodyrange-csharp-snippets.md)]
