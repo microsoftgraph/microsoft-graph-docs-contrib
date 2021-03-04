@@ -45,7 +45,7 @@ Following is the list of best practices:
 
 ## Minimize noise and build high quality notification experiences
 * Improve chances of users acting on your notifications by sending relevant notifications directly. Users receive notifications from multiple sources across chats, channels, meetings, or other apps, therefore, do not send large volume of non-directed notifications. For example:</br> *Joni left the sales team.* ❌ - This notification may be noisy unless this is materially important.<br/>*Diego assigned a sales ticket to you.* ✔
-* Avoid duplicate notifications from bot messages and activity feed notifications. See [understand activity feed notifications and bot framework notifications](#understand-activity-feed-notifiations-and-bot-framework-notifications).
+* Avoid duplicate notifications from bot messages and activity feed notifications. See [understand activity feed notifications and bot framework notifications](##understand-activity-feed-notifications-and-bot-framework-notifications).
 * Utilize the third line for the preview to give users information that allows them to gauge the importance and take action. Select a toast or mark for follow-up.
 
   ![Notification text preview](../concepts/images/notification-preview.png)
