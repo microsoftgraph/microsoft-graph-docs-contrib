@@ -57,4 +57,6 @@ API services like Microsoft Graph check that the *aud* claim (audience) in the r
 Based on an organization's CA policies, a user accessing Microsoft Graph resources via your app might be challenged for additional information that is not present in the access token your app originally acquired. In this case, your app receives a 400 with an *interaction_required* error during access token acquisition or a 403 with *insufficient_claims* error when calling Microsoft Graph. In both cases, the error response contains additional information that can be presented to the authorize endpoint to challenge the user for additional information (like multi-factor authentication or device enrollment).
 
 * [Handling conditional access challenges using MSAL](/azure/active-directory/develop/msal-handling-exceptions#conditional-access-and-claims-challenges)
-* [Developer guidance for Azure Active Directory conditional access](/azure/active-directory/develop/conditional-access-dev-guide)
+* [Developer guidance for Azure Active Directory conditional access](/azure/active-directory/develop/conditional-access-dev-guide
+
+)
