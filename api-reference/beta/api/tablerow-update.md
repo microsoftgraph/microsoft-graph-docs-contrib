@@ -26,8 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables/{id|name}/rows/{index}
-PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
+PATCH /me/drive/root/workbook/tables/{id|name}/rows/{index}
+PATCH /me/drive/root/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 ```
 ## Optional request headers
 | Name       | Description|

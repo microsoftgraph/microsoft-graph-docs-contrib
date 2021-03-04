@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/cell(row={row},column={column})
+GET /me/drive/root/workbook/worksheets/{id|name}/cell(row={row},column={column})
 
 ```
 

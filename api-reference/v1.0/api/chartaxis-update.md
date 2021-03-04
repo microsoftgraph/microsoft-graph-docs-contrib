@@ -24,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
+PATCH /me/drive/root/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis
+PATCH /me/drive/root/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis
+PATCH /me/drive/root/workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
 ```
 ## Optional request headers
 | Name       | Description|

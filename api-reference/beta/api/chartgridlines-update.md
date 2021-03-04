@@ -26,9 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/minorgridlines
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/majorgridlines
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/majorgridlines
+PATCH /me/drive/root/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/minorgridlines
+PATCH /me/drive/root/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/majorgridlines
+PATCH /me/drive/root/workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/majorgridlines
 ```
 ## Optional request headers
 | Name       | Description|

@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/{name}/setPosition
+POST /me/drive/root/workbook/worksheets/{id|name}/charts/{name}/setPosition
 
 ```
 ## Request headers

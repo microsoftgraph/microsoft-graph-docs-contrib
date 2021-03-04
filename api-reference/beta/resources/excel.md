@@ -1226,7 +1226,7 @@ For example, the following is not a valid update request because the requested r
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets('Sheet1')/range(address="A:B")
+PATCH /me/drive/root/workbook/worksheets('Sheet1')/range(address="A:B")
 
 {
   "values" : "Due Date"
@@ -1255,7 +1255,7 @@ The following request updates the selected range with the text of "Sample text".
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets('Sheet1')/range(address="A1:B00")
+PATCH /me/drive/root/workbook/worksheets('Sheet1')/range(address="A1:B00")
 
 {
   "values" : "Sample text"

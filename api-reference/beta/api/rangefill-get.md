@@ -26,9 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/format/fill
-GET /workbook/worksheets/{id|name}/range(address='<address>')/format/fill
-GET /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
+GET /me/drive/root/workbook/names/{name}/range/format/fill
+GET /me/drive/root/workbook/worksheets/{id|name}/range(address='<address>')/format/fill
+GET /me/drive/root/workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.

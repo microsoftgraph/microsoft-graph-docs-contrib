@@ -26,9 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/unmerge
-POST /workbook/worksheets/{id|name}/range(address='<address>')/unmerge
-POST /workbook/tables/{id|name}/columns/{id|name}/range/unmerge
+POST /me/drive/root/workbook/names/{name}/range/unmerge
+POST /me/drive/root/workbook/worksheets/{id|name}/range(address='<address>')/unmerge
+POST /me/drive/root/workbook/tables/{id|name}/columns/{id|name}/range/unmerge
 
 ```
 ## Request headers

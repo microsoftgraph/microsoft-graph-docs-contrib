@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{table-id}/add
+POST /me/drive/root/workbook/tables/{table-id}/add
 
 ```
 ## Request headers

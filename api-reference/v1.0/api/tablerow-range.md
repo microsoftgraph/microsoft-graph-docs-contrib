@@ -25,8 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/rows/{index}/range
-GET /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/range
+GET /me/drive/root/workbook/tables/{id|name}/rows/{index}/range
+GET /me/drive/root/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/range
 
 ```
 ## Request headers

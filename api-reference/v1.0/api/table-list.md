@@ -24,8 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables
-GET /workbook/worksheets/{id|name}/tables
+GET /me/drive/root/workbook/tables
+GET /me/drive/root/workbook/worksheets/{id|name}/tables
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.

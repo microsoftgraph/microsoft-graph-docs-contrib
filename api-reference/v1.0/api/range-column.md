@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/column
-GET /workbook/worksheets/{id|name}/range(address='<address>')/column
-GET /workbook/tables/{id|name}/columns/{id|name}/range/column
+GET /me/drive/root/workbook/names/{name}/range/column
+GET /me/drive/root/workbook/worksheets/{id|name}/range(address='<address>')/column
+GET /me/drive/root/workbook/tables/{id|name}/columns/{id|name}/range/column
 
 ```
 ## Request headers

@@ -24,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names/{name}/range/format/font
-PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/font
-PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
+PATCH /me/drive/root/workbook/names/{name}/range/format/font
+PATCH /me/drive/root/workbook/worksheets/{id|name}/range(address='<address>')/format/font
+PATCH /me/drive/root/workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
 ## Request headers
 | Name       | Description|

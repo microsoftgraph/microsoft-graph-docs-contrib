@@ -26,9 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/format/line
-GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/line
-GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/majorgridlines/format/line
+GET /me/drive/root/workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/format/line
+GET /me/drive/root/workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/line
+GET /me/drive/root/workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/majorgridlines/format/line
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
