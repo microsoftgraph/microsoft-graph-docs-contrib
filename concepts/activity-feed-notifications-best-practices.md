@@ -27,7 +27,6 @@ Following is the list of best practices:
 * Ensure that the apps are performing. The time taken for an app to load is measured and can impact the user experience when a user switches between notifications in the activity feed.
 
 ### Utilize features in partner scenarios
-
 * Understand that selecting a toast notification leads to the activity feed. To switch to an activity, select a notification in the activity feed.
   > [!NOTE] 
   > The notification selection will not switch to the app.
@@ -45,14 +44,13 @@ Following is the list of best practices:
 
 ## Minimize noise and build high quality notification experiences
 * Improve chances of users acting on your notifications by sending relevant notifications directly. Users receive notifications from multiple sources across chats, channels, meetings, or other apps, therefore, do not send large volume of non-directed notifications. For example:</br> *Joni left the sales team.* ❌ - This notification may be noisy unless this is materially important.<br/>*Diego assigned a sales ticket to you.* ✔
-* Avoid duplicate notifications from bot messages and activity feed notifications. See [understand activity feed notifications and bot framework notifications](##understand-activity-feed-notifications-and-bot-framework-notifications).
+* Avoid duplicate notifications from bot messages and activity feed notifications. For more information, see [understand activity feed notifications and bot framework notifications](#understand-activity-feed-notifications-and-bot-framework-notifications).
 * Utilize the third line for the preview to give users information that allows them to gauge the importance and take action. Select a toast or mark for follow-up.
 
   ![Notification text preview](../concepts/images/notification-preview.png)
 * Ensure there is no *period* at the end of the notification title to achieve parity with all other notification settings in Teams.
 
 ## Understand activity feed notifications and bot framework notifications
-
 The following list provides the key differences in activity feed notifications and bot notifications:
 
 * **Bot messages**: 
