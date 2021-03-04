@@ -446,7 +446,25 @@
       "Id": "8a26dfec-659c-11eb-8de9-f7f8b8b7f046",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-03-02T21:20:57.203Z",
+      "CreatedDateTime": "2021-03-05T21:20:57.203Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "330349f4-de5b-4bb0-92de-0a0a1453d23a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Printer",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastSeenDateTime** property to the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Target": "printer"
+        }
+      ],
+      "Id": "330349f4-de5b-4bb0-92de-0a0a1453d23a",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-03T00:00:00",
       "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud printing"
     },
@@ -464,7 +482,7 @@
       "Id": "118e092d-5c9b-4d50-928f-12aaa33abaf6",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-01-27T00:00:00",
+      "CreatedDateTime": "2021-01-27T00:00:00",
       "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud printing"
     },
@@ -544,7 +562,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-01-07T00:00:00",
       "WorkloadArea": "Devices and apps ",
-      "SubArea": "Cloud printing"
+      "SubArea": " Cloud printing"
     },
     {
       "ChangeList": [

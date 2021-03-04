@@ -345,25 +345,6 @@ Administrators can configure [application access policy](auth-limit-mailbox-acce
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
-## Channel permissions
-
-#### Delegated permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Channel.ReadBasic.All_ | Read the names and descriptions of channels. | Read channel names and channel descriptions, on behalf of the signed-in user.	| No | No |
-| _Channel.Create_ | Create channels. | Create channels in any team, on behalf of the signed-in user.	| Yes | No |
-| _Channel.Delete.All_ | Delete channels. | Delete channels in any team, on behalf of the signed-in user.	| Yes | No |
-
-#### Application permissions 
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Channel.ReadBasic.All_ | Read the names and descriptions  of all channels. | Read all channel names and channel descriptions, without a signed-in user.	| Yes | No |
-| _Channel.Create_ | Create channels. | Create channels in any team, without a signed-in user.	| Yes | No |
-| _Channel.Delete.All_ | Delete channels. | Delete channels in any team, without a signed-in user.	| Yes | No |
-|_Teamwork.Migrate.All_|Manage migration to Microsoft Teams|Creating and managing resources for migration to Microsoft Teams|Yes|Yes|
-
 ## Calls permissions
 
 #### Delegated permissions
@@ -698,6 +679,29 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Domain.ReadWrite.All_ | Read and write domains | Allows the app to read and write domains without a signed-in user. | Yes |
 
+## eDiscovery permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_eDiscovery.Read.All_ |Read user eDiscovery case data |Allows the app to read eDiscovery objects such as cases, custodians, review sets and other related objects on behalf of the signed-in user. |Yes | No |
+|_eDiscovery.ReadWrite.All_ | Read and write eDiscovery case data |Allows the app to read and write eDiscovery objects such as cases, custodians, review sets and other related objects on behalf of the signed-in user. |Yes | No |
+
+#### Application permissions
+
+None
+
+### Example usage
+
+#### Delegated
+
+* _eDiscovery.Read.All_: Get the list of cases available to the user (`GET /compliance/ediscovery/cases`)
+* _eDiscovery.ReadWrite.All_: Create a reviewset query in a review set (`POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewSetId}/queries`)
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
 
 ## Education permissions
 
