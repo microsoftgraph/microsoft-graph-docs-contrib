@@ -3,7 +3,7 @@ title: "accessPackageAssignmentRequest resource type"
 description: "An access package assignment request is created by a user who wants to obtain an access package assignment."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 

@@ -3,7 +3,7 @@ title: "Update localized organizationalbrandingproperties"
 description: "Update the properties of the organizationalbrandingproperties object for a specific localization."
 localization_priority: Normal
 author: "kexia"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -28,8 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /organization/{id}/branding/localizations/{locale}/{property name}
-PUT /organization/{id}/branding/localizations/{locale}/{property name}
+PATCH /organization/{id}/branding/localizations/{locale}
+PUT /organization/{id}/branding/localizations/{locale}
 ```
 
 ## Request headers
