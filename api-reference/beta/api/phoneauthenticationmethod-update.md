@@ -3,7 +3,7 @@ title: "Update phoneAuthenticationMethod"
 description: "Update the phone number associated with a phoneAuthenticationMethod object."
 localization_priority: Normal
 author: "mmcla"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 

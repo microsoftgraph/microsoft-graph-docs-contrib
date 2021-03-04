@@ -15,7 +15,7 @@ const unifiedGroupSource = {
   includedSources:  "mailbox, site"
 };
 
-let res = await client.api('/compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/unifiedGroupSources')
+let res = await client.api('/compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/unifiedGroupSources')
 	.version('beta')
 	.post(unifiedGroupSource);
 

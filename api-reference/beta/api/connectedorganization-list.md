@@ -3,7 +3,7 @@ title: "List connectedOrganizations"
 description: "Retrieve a list of connectedOrganization objects."
 author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
