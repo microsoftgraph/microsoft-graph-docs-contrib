@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/communications/onlineMeetings/')
-	.filter('VideoTeleconferenceId eq '123456789'')
+	.filter('VideoTeleconferenceId eq \'123456789\'')
 	.get();
 
 ```
