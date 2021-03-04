@@ -12,7 +12,7 @@ This document consolidates the best practices that you are expected to adhere to
 At a high-level the best practices are as follows:
 * [Ensure that partner scenarios respect the activity feed guidelines](#activity-feed-notifications-partner-scenarios).
 * [Ensure that expectations in terms of performance are met](#minimize-noise-and-build-high-quality-notification-experiences).
-* [Understand the differences in the activity feed notifications and other bot *notifications*, and use them in appropriate scenarios](#understand-activity-feed-notifiations-and-bot-framework-notifications).
+* [Understand the differences in the activity feed notifications and other bot *notifications*, and use them in appropriate scenarios](#understand-activity-feed-notifications-and-bot-framework-notifications).
 
 ## Activity feed notifications partner scenarios
 The **Activity Feed Notification** is a platform that enables partner apps to send notifications to users. These notifications are sent as toast items and activity feed items that point users to relevant content that can be consumed within Teams. 
