@@ -10859,7 +10859,7 @@ items:
                href: api/b2cidentityuserflow-put-apiConnectorConfiguration.md
           - name: Self-service sign up user flows
             items:
-             - name: B2X user flow
+             - name: Self-service sign up user flow
                href: resources/b2xidentityuserflow.md
              - name: List
                href: api/identitycontainer-list-b2xuserflows.md
