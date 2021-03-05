@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/drive/bundles/{bundle-id}
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -157,7 +157,7 @@ used to request the next page of children in the bundle.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
