@@ -3,7 +3,7 @@ title: "countryNamedLocation resource type"
 description: "Represents an Azure Active Directory named location defined by countries and regions. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy."
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -51,8 +51,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.countryNamedLocation",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.countryNamedLocation"
 }-->
 
 ```json

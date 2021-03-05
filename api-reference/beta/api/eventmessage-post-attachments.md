@@ -1,7 +1,7 @@
 ---
 title: "Add attachment"
 description: "Use this API to create a new Attachment."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -123,7 +123,9 @@ Content-type: application/json
 {
   "@odata.type": "#Microsoft.OutlookServices.ItemAttachment",
   "name": "name-value",
-  "item": "message or event entity"
+  "item": {
+    "@odata.type": "microsoft.graph.message"
+  }
 }
 ```
 # [C#](#tab/csharp)

@@ -3,7 +3,7 @@ title: "passwordAuthenticationMethod resource type"
 description: "A representation of a password registered to a user."
 localization_priority: Normal
 author: "mmcla"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -45,7 +45,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.passwordAuthenticationMethod",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

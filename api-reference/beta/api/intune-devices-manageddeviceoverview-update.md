@@ -69,7 +69,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 1187
+Content-length: 1245
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -90,7 +90,9 @@ Content-length: 1187
     "androidWorkProfileCount": 7,
     "androidCorporateWorkProfileCount": 0,
     "configMgrDeviceCount": 4,
-    "aospUserlessCount": 1
+    "aospUserlessCount": 1,
+    "aospUserAssociatedCount": 7,
+    "linuxCount": 10
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -117,7 +119,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1300
+Content-Length: 1358
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -139,7 +141,9 @@ Content-Length: 1300
     "androidWorkProfileCount": 7,
     "androidCorporateWorkProfileCount": 0,
     "configMgrDeviceCount": 4,
-    "aospUserlessCount": 1
+    "aospUserlessCount": 1,
+    "aospUserAssociatedCount": 7,
+    "linuxCount": 10
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
