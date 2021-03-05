@@ -41,13 +41,13 @@ Confirm that you can run the app.
 npm start
 ```
 
-## Creating an app/client ID
+## Create an app/client ID
 
-### Add new application registration in Azure Active Directory to get a client ID
+### Add new application registration in Azure AD to get a client ID
 
-To create an application in Azure Active Directory, you need to add a new application registration, and then configure an app name and redirect URI.
+To create an application in Azure Active Directory (Azure AD), you need to add a new application registration, and then configure an app name and redirect URI.
 
-To create the app in Azure Active Directory:
+To create the app in Azure AD:
 
 1. Go to the [Azure portal](https://portal.azure.com).
 1. From the menu, select **Azure Active Directory**.
