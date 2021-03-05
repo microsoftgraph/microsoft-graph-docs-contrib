@@ -3,7 +3,7 @@ title: "translationPreferences resource type"
 description: "A resource representing the user's translation settings preferences."
 localization_priority: Normal
 author: "jasonbro"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: resourcePageType
 ---
 # translationPreferences resource type
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An entry into the translation language override list 
+Represents an entry in a user's translation language override list.
 
 ## Properties
 
