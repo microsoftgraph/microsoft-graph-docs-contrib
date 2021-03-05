@@ -55,6 +55,14 @@ Namespace: microsoft.graph
 |enabled|
 |disabled|
 
+### authenticationMode values
+
+|Member|
+|:---|
+|any|
+|push|
+|deviceBasedPush|
+
 ### keyStrength values
 
 |Member|
