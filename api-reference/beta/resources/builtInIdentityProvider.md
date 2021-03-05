@@ -3,7 +3,7 @@ title: "builtInIdentityProvider resource type"
 description: "Represents built in identity providers in an Azure Active Directory tenant."
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 author: "namkedia"
 ---
 
