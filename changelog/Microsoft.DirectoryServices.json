@@ -5,17 +5,17 @@
         {
           "Id": "c372d536-2371-4369-99a2-ba7e6ce7666e",
           "ApiChange": "Resource",
-          "ChangedApiName": "applicationTemplate,instantiate,list,get",
+          "ChangedApiName": "applicationTemplate",
           "ChangeType": "Addition",
-          "Description": "Introduced the new resource type [applicationTemplate](https://docs.microsoft.com/en-us/graph/api/resources/applicationtemplate.md). This resource type supports [instantiate](https://docs.microsoft.com/en-us/graph/api/applicationtemplate-instantiate.md), [list](https://docs.microsoft.com/en-us/graph/api/applicationtemplate-instantiate.md) and [get](https://docs.microsoft.com/en-us/graph/api/applicationtemplate-get.md) applications from the Azure AD application gallery.",
-          "Target": "applicationTemplate,instantiate,list,get"
+          "Description": "Introduced the new resource type [applicationTemplate](https://docs.microsoft.com/en-us/graph/api/resources/applicationtemplate?view=graph-rest-1.0). This resource type supports [instantiate](https://docs.microsoft.com/en-us/graph/api/applicationtemplate-instantiate?view=graph-rest-1.0), [list](https://docs.microsoft.com/en-us/graph/api/applicationtemplate-instantiate?view=graph-rest-1.0), and [get](https://docs.microsoft.com/en-us/graph/api/applicationtemplate-get?view=graph-rest-1.0) applications from the Azure AD application gallery.",
+          "Target": "applicationTemplate"
         }
       ],
       "Id": "c372d536-2371-4369-99a2-ba7e6ce7666e",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-03-04T00:00:00",
-      "WorkloadArea": "Identity and access",
+      "WorkloadArea": "Applications",
       "SubArea": ""
     },
     {
