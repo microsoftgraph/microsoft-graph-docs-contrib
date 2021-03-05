@@ -3,7 +3,7 @@ title: "orgContact resource type"
 description: "Here is a JSON representation of the resource"
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
