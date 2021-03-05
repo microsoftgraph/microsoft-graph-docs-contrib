@@ -20,6 +20,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the [translationLanguageOverride](/graph/api/resources/translationLanguageOverride?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added the **translationPreferences** property to the [regionalAndLanguageSettings](/graph/api/resources/regionalandlanguagesettings?view=graph-rest-beta&preserve-view=true) resource.|
 
+## March 2021
+
+### Identity and access
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+| Addition        | v1.0        | Introduced the new resource type [applicationTemplate](/graph/api/resources/applicationtemplate.md). This resource type supports [instantiate](/graph/api/applicationtemplate-instantiate.md), [list](/graph/api/applicationtemplate-instantiate.md) and [get](/graph/api/applicationtemplate-get.md) applications from the Azure AD application gallery.
+
 ## February 2021
 
 
