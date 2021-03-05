@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "d20c6ccf-5228-475a-b482-b3c2b9a42caf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "updateMetadata",
+          "ChangeType": "Deletion",
+          "Description": "Removed the updateMetadata action.",
+          "Target": "updateMetadata"
+        }
+      ],
+      "Id": "3028d38a-5ce5-437e-91c4-0ef567ecce08",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-03T14:17:53.668Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d077c3c1-70a4-11eb-8401-e19c685756df",
           "ApiChange": "Resource",
           "ChangedApiName": "participantJoiningNotification",

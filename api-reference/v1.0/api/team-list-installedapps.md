@@ -190,7 +190,7 @@ Content-type: application/json
                 "version": "1.0.2",
                 "requiredResourceSpecificApplicationPermissions": [],
                 "publishingState": "published",
-                "shortdescription": "Be more productive with Microsoft Flow",
+                "shortDescription": "Be more productive with Microsoft Flow",
                 "description": "Automate time-consuming and repetitive tasks by integrating your favorite apps and services with Microsoft Power Automate.",
                 "lastModifiedDateTime": null,
                 "createdBy": null
@@ -206,7 +206,7 @@ Content-type: application/json
                 "version": "1.2",
                 "requiredResourceSpecificApplicationPermissions": [],
                 "publishingState": "published",
-                "shortdescription": "Add a tab for a SharePoint news article or page.",
+                "shortDescription": "Add a tab for a SharePoint news article or page.",
                 "description": "This app allows you to tab intranet pages from any SharePoint site so that they can be viewed by your team inside Teams channels.",
                 "lastModifiedDateTime": null,
                 "createdBy": null
@@ -222,7 +222,7 @@ Content-type: application/json
                 "version": "1.0.0",
                 "requiredResourceSpecificApplicationPermissions": [],
                 "publishingState": "published",
-                "shortdescription": "Capture and share ideas, to-do lists and other notes with your team.",
+                "shortDescription": "Capture and share ideas, to-do lists and other notes with your team.",
                 "description": "Capture and share ideas, to-do lists and other thoughts with your team. You can also co-author anytime.",
                 "lastModifiedDateTime": null,
                 "createdBy": null
@@ -302,7 +302,7 @@ Content-type: application/json
                 "requiredResourceSpecificApplicationPermissions": [
                 ],
                 "publishingState": "published",
-                "shortdescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
+                "shortDescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
                 "description": "For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
                 "lastModifiedDateTime": null,
                 "createdBy": null
