@@ -3,7 +3,7 @@ title: "Get regionalAndLanguageSettings resource"
 description: "Retrieve the properties of a user's regionalAndLanguageSettings"
 author: "jasonbro"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,6 @@ For more information on OData query options, see [OData Query Parameters](/graph
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Required.|
-| Content-Type   | application/json |
 
 ## Request body
 Do not supply a request body for this method.
