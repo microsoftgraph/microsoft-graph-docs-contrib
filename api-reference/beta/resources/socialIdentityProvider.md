@@ -3,7 +3,7 @@ title: "socialIdentityProvider resource type"
 description: "Represents social identity providers in an Azure Active Directory tenant and an Azure AD B2C tenant."
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 author: "namkedia"
 ---
 
@@ -38,8 +38,8 @@ Configuring an identity provider in your Azure AD B2C tenant enables users to si
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|clientId|String|The client ID for the application obtained when registering the application with the identity provider. This is a required field.|
-|clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return "\*\*\*\*". This is a required field.|
+|clientId|String|The client ID for the application obtained when registering the application with the identity provider. Required.|
+|clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return "\*\*\*\*". Required.|
 |id|String|The ID of the identity provider.|
 |displayName|String|The display name of the identity provider.|
 |identityProviderType|String|The identity provider type is a required field.<ul>For B2B scenario:<li/>Google<li/>Facebook</ul><ul>For B2C scenario:<li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat<li/>OpenIDConnect</ul>|
