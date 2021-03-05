@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "updateMetadata",
           "ChangeType": "Deletion",
-          "Description": "removed the action [updateMetadata](https://docs.microsoft.com/en-us/graph/api/call-updatemetadata?view=graph-rest-beta).",
+          "Description": "Removed the updateMetadata action.",
           "Target": "updateMetadata"
         }
       ],
