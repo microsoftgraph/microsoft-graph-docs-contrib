@@ -145,7 +145,7 @@ Spelling correction is a very popular way to handle mismatch between typos in us
 
 In the request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method, specify the queryAlterationOptions that should be applied to the query for spelling correction. The description of queryAlterationOptions is defined in the [searchAlterationOptions](./searchalterationoptions.md).
 
-See [Request spelling correction](/graph/search-concept-speller) for for a few examples how to use spell corrections.
+See [Request spelling correction](/graph/search-concept-speller) for a few examples how to use spell corrections.
 
 ## Error handling
 
