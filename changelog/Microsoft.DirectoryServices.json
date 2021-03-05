@@ -2,6 +2,24 @@
   "changelog": [
     {
       "ChangeList": [
+        {
+          "Id": "c372d536-2371-4369-99a2-ba7e6ce7666e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationTemplate,instantiate,list,get",
+          "ChangeType": "Addition",
+          "Description": "Introduced the new resource type [applicationTemplate](https://docs.microsoft.com/en-us/graph/api/resources/applicationtemplate.md). This resource type supports [instantiate](https://docs.microsoft.com/en-us/graph/api/applicationtemplate-instantiate.md), [list](https://docs.microsoft.com/en-us/graph/api/applicationtemplate-instantiate.md) and [get](https://docs.microsoft.com/en-us/graph/api/applicationtemplate-get.md) applications from the Azure AD application gallery.",
+          "Target": "applicationTemplate,instantiate,list,get"
+        }
+      ],
+      "Id": "c372d536-2371-4369-99a2-ba7e6ce7666e",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-03-04T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
          {
           "Id": "a9ef9c12-53b3-40fe-9191-a879dc4bc6a8",
           "ApiChange": "Resource",
