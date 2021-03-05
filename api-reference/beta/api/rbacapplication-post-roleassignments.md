@@ -3,7 +3,7 @@ title: "Create unifiedRoleAssignment"
 description: "Create a new unifiedRoleAssignment object."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
 

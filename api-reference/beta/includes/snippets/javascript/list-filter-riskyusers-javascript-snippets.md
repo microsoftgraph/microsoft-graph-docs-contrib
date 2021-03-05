@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 let res = await client.api('/identityProtection/riskyUsers')
 	.version('beta')
-	.filter('riskLevel eq microsoft.graph.riskLevel'medium'')
+	.filter('riskLevel eq microsoft.graph.riskLevel\'medium\'')
 	.get();
 
 ```
