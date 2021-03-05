@@ -30,9 +30,9 @@
       "Id": "87dc25a5-fe55-454f-ad6f-b6d2c30ea9a4",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-02-25T08:55:18.080Z",
+      "CreatedDateTime": "2021-03-05T08:55:18.080Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Application"
+      "SubArea": "Applications"
     },
     {
       "ChangeList": [
@@ -64,9 +64,9 @@
       "Id": "82e48b8e-d525-4d36-870e-452e677f22d3",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-02-25T08:55:18.080Z",
+      "CreatedDateTime": "2021-03-05T08:55:18.080Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Application"
+      "SubArea": "Applications"
     },
     {
       "ChangeList": [
