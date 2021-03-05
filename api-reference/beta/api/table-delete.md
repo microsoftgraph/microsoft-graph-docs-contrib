@@ -26,8 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/tables/{id|name}/delete
-POST /me/drive/root/workbook/worksheets/{id|name}/tables/{id|name}/delete
+DELETE /me/drive/root/workbook/tables/{id|name}
+DELETE /me/drive/root/workbook/worksheets/{id|name}/tables/{id|name}
 
 ```
 ## Request headers
@@ -51,7 +51,7 @@ Here is an example of the request.
   "name": "table_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/delete
+DELETE https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}
 ```
 
 ##### Response
