@@ -27,9 +27,9 @@ Configuring an identity provider in your Azure AD B2C tenant enables users to si
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/identityprovider-list.md)|identityProvider collection|Retrieve all identity providers configured in a tenant.|
-|[Create](../api/identityprovider-post-identityproviders.md)|identityProvider|Create a new identity provider.|
-|[Get](../api/identityprovider-get.md) |identityProvider|Retrieve properties of an identity provider.|
+|[List](../api/identityprovider-list.md)|[identityProvider](identityprovider.md)  collection|Retrieve all identity providers configured in a tenant.|
+|[Create](../api/identityprovider-post-identityproviders.md)|[identityProvider](identityprovider.md) |Create a new identity provider.|
+|[Get](../api/identityprovider-get.md) |[identityProvider](identityprovider.md) |Retrieve properties of an identity provider.|
 |[Update](../api/identityprovider-update.md)|None|Update an identity provider.|
 |[Delete](../api/identityprovider-delete.md)|None|Delete an identity provider.|
 |[List available provider types](../api/identityprovider-list-availableprovidertypes.md)|String collection|Retrieve all available identity provider types.|
@@ -42,7 +42,7 @@ Configuring an identity provider in your Azure AD B2C tenant enables users to si
 |clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return "\*\*\*\*". Required.|
 |id|String|The ID of the identity provider.|
 |displayName|String|The display name of the identity provider.|
-|identityProviderType|String|The identity provider type is a required field.<ul>For B2B scenario:<li/>Google<li/>Facebook</ul><ul>For B2C scenario:<li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat<li/>OpenIDConnect</ul>|
+|identityProviderType|String|Required. For B2B scenario:<ul><li/>Google<li/>Facebook</ul>For B2C scenario:<ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat<li/>OpenIDConnect</ul>|
 
 ### Where to get the client ID and secret
 
