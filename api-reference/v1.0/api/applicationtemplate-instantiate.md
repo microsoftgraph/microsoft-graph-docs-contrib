@@ -1,6 +1,6 @@
 ---
 title: 'applicationTemplate: instantiate'
-description: 'Use this API to create a new applicationTemplate'
+description: 'Add an instance of an application from the Azure AD application gallery into your directory.'
 localization_priority: Normal
 author: 'luleonpla'
 ms.prod: 'applications'
@@ -77,7 +77,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
