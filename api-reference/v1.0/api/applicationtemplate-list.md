@@ -1,17 +1,15 @@
 ---
-title: "List applicationTemplates"
-description: "Retrieve a list of applicationtemplate objects."
+title: 'List applicationTemplates'
+description: 'Retrieve a list of applicationtemplate objects.'
 localization_priority: Normal
-author: "luleonpla"
-ms.prod: "applications"
-doc_type: "apiPageType"
+author: 'luleonpla'
+ms.prod: 'applications'
+doc_type: 'apiPageType'
 ---
 
 # List applicationTemplates
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [applicationTemplate](../resources/applicationtemplate.md) objects from the Azure AD application gallery.
 
@@ -20,10 +18,10 @@ Retrieve a list of [applicationTemplate](../resources/applicationtemplate.md) ob
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | None. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | None. |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | None.                                       |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | None.                                       |
 
 Additional permissions are not required to call this API, as long as your application has a valid access token to call Microsoft Graph.
 
@@ -37,17 +35,17 @@ GET /applicationTemplates
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. 
+This method supports some of the OData query parameters to help customize the response.
 
-- You can use the `$filter` parameter in a limited way. You can only filter by **displayName** or **categories**. For example,  `$filter=contains(displayName, 'salesf')` or `$filter=categories/any(c:contains(c, 'myCategory'))`.
+- You can use the `$filter` parameter in a limited way. You can only filter by **displayName** or **categories**. For example, `$filter=contains(displayName, 'salesf')` or `$filter=categories/any(c:contains(c, 'myCategory'))`.
 - You can use `$orderby`, `$top,` and `$skip` query parameters in any GET request.
 
 For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description   |
+| :------------ | :------------ |
 | Authorization | Bearer {code} |
 
 ## Request body
@@ -64,33 +62,14 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_applicationtemplates"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/applicationTemplates
+GET https://graph.microsoft.com/v1.0/applicationTemplates
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplates-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplates-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-applicationtemplates-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-applicationtemplates-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 
@@ -134,6 +113,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
-

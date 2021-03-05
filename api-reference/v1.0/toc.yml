@@ -768,6 +768,15 @@ items:
               href: api/application-list-tokenlifetimepolicies.md
             - name: Remove
               href: api/application-delete-tokenlifetimepolicies.md
+        - name: Application template
+          href: resources/applicationtemplate.md
+          items:
+          - name: List
+            href: api/applicationtemplate-list.md
+          - name: Get
+            href: api/applicationtemplate-get.md
+          - name: Instantiate
+            href: api/applicationtemplate-instantiate.md
       - name: Service principal
         href: resources/serviceprincipal.md
         items:
