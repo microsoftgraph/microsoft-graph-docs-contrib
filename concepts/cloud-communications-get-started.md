@@ -62,4 +62,4 @@ For more examples, see the [Communications samples repository](https://microsoft
 
 ## Privacy and compliance
 
-In the requests to our APIs, sensitive data should not be sent in any client side generated ids (such as scenario id or request ids or other correlation ids) in headers or request body. These ids will be logged in server side for diagnostics.
+In the requests to our APIs, sensitive data should not be sent in any client-side generated IDs (such as scenario IDs, request IDs, or other correlation IDs) in headers or the request body. These IDs will be logged on the server side for diagnostics.
