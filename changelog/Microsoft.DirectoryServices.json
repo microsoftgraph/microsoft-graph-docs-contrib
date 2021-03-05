@@ -1,6 +1,5 @@
 {
   "changelog": [
-    {
 	{
       "ChangeList": [
         {
@@ -69,15 +68,16 @@
       "WorkloadArea": "Identity and access ",
       "SubArea": "Governance"
 	 },
-     "ChangeList": [
-		 {
-		  "Id": "a9ef9c12-53b3-40fe-9191-a879dc4bc6a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "temporaryAccessPassAuthenticationMethodConfiguration",
-		  "ChangeType": "Addition",
-		  "Description": "Added the [temporaryaccesspassauthenticationmethodconfiguration](https://docs.microsoft.com/en-us/graph/api/resources/temporaryaccesspassauthenticationmethodconfiguration?view=graph-rest-beta) resource and associated methods.",
-		  "Target": "temporaryAccessPassAuthenticationMethodConfiguration"
-	  },
+    {
+      "ChangeList": [
+         {
+          "Id": "a9ef9c12-53b3-40fe-9191-a879dc4bc6a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "temporaryAccessPassAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [temporaryaccesspassauthenticationmethodconfiguration](https://docs.microsoft.com/en-us/graph/api/resources/temporaryaccesspassauthenticationmethodconfiguration?view=graph-rest-beta) resource and associated methods.",
+          "Target": "temporaryAccessPassAuthenticationMethodConfiguration"
+      },
       {
         "Id": "db3f45ee-068c-4dbd-aa53-b574dfab3b76",
         "ApiChange": "Resource",
