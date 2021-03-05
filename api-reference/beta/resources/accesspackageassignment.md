@@ -3,7 +3,7 @@ title: "accessPackageAssignment resource type"
 description: "An access package assignment is an assignment of an access package to a particular subject, for a period of time."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -57,7 +57,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageAssignment",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

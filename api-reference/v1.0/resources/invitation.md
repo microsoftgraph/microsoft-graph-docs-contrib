@@ -3,7 +3,7 @@ title: "invitation resource type"
 description: "Represents an invitation that is used to add external users to an organization."
 localization_priority: Priority
 author: "elisolMS"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -36,7 +36,7 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Additional configuration for the message being sent to the invited user, including customizing message text, language and cc recipient list.|
 |sendInvitationMessage|Boolean|Indicates whether an email should be sent to the user being invited or not. The default is false.|
 |inviteRedirectUrl|String|The URL the user should be redirected to once the invitation is redeemed. Required.|
-|inviteRedeemUrl|String|The URL the user can use to redeem their invitation. Read-only|.
+|inviteRedeemUrl|String|The URL the user can use to redeem their invitation. Read-only.|
 |invitedUserType|String|The userType of the user being invited. By default, this is Guest. You can invite as Member if you are a company administrator. |
 |status|String|The status of the invitation. Possible values: PendingAcceptance, Completed, InProgress, and Error|
 

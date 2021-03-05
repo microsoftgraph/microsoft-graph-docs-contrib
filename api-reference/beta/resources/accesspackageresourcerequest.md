@@ -3,7 +3,7 @@ title: "accessPackageResourceRequest resource type"
 description: "An access package resource request is a request to a add a resource to a catalog so that the roles of the resource can be used in one or more of the catalog's access packages."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -52,7 +52,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageResourceRequest",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

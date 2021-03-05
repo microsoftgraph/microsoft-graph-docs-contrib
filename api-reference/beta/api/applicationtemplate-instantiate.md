@@ -3,7 +3,7 @@ title: "applicationTemplate: instantiate"
 description: "Use this API to create a new applicationTemplate"
 localization_priority: Normal
 author: "luleonpla"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -58,8 +58,7 @@ The following example shows how to call this API.
 ### Request
 
 The following is an example of the request.
-
-> [!NOTE] 
+ 
 > You can use this API to instantiate [non-gallery apps](/azure/active-directory/manage-apps/add-non-gallery-app). Use the following ID for **applicationTemplate**: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
 # [HTTP](#tab/http)
@@ -99,8 +98,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -171,3 +169,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

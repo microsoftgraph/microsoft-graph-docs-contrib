@@ -3,7 +3,7 @@ title: "accessPackageResourceRoleScope resource type"
 description: "An access package resource role scope is a reference to both a scope within a resource, and a role in that resource."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -49,31 +49,29 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageResourceRoleScope",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
 ```json
 {
-  "createdBy": "String",
-  "createdDateTime": "String (timestamp)",
-  "id": "String (identifier)",
-  "modifiedBy": "String",
-  "modifiedDateTime": "String (timestamp)",
-  "accessPackageResourceRole": {
-    "id": "String (identifier)",
-     "displayName": "String",
-     "originSystem": "String",
-     "originId": "String"
-  },
-  "accessPackageResourceScope": {
-     "id": "String (identifier)",
-     "displayName": "String",
-     "description": "String",
-     "originId": "String (identifier)",
-     "originSystem": "String"
-  }
-
+   "createdBy":"String",
+   "createdDateTime":"String (timestamp)",
+   "id":"String (identifier)",
+   "modifiedBy":"String",
+   "modifiedDateTime":"String (timestamp)",
+   "accessPackageResourceRole":{
+      "id":"String (identifier)",
+      "displayName":"String",
+      "originSystem":"String",
+      "originId":"String"
+   },
+   "accessPackageResourceScope":{
+      "id":"String (identifier)",
+      "displayName":"String",
+      "description":"String",
+      "originId":"String (identifier)",
+      "originSystem":"String"
+   }
 }
 ```
 

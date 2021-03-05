@@ -3,7 +3,7 @@ title: "Update unifiedRoleDefinition"
 description: "Update the properties of a unifiedRoleDefinition object."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
 

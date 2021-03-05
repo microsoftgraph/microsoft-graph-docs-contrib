@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 A user's default [calendarGroup](../resources/calendargroup.md).
 
 ```http
-GET /me/calendarGroup/calendars
-GET /users/{id | userPrincipalName}/calendarGroup/calendars
+GET /me/calendars
+GET /users/{id | userPrincipalName}/calendars
 ```
 
 Any [calendarGroup](../resources/calendargroup.md) of a user.
