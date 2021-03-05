@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Delete printTaskTrigger
 Namespace: microsoft.graph
 
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
+
 Delete the [task trigger](../resources/printtasktrigger.md) of a [printer](../resources/printer.md) to prevent related print events from triggering tasks on the specified printer.
 
 ## Permissions

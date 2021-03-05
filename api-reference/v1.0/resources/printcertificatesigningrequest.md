@@ -10,6 +10,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
+
 The certificate signing request (CSR) to be used during registration of a printer with the Universal Print service.
 
 ## Properties

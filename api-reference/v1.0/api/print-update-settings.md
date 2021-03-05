@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Update printSettings
 Namespace: microsoft.graph
 
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
+
 Update tenant-wide settings for the Universal Print service.
 
 ## Permissions

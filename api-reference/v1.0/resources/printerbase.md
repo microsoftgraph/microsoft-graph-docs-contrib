@@ -10,6 +10,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
+
 Represents a base type for [printer](printer.md) and [printerShare](printerShare.md) entity types.
 
 ## Properties

@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Get printJob
 Namespace: microsoft.graph
 
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
+
 Retrieve the properties and relationships of a print job.
 
 ## Permissions

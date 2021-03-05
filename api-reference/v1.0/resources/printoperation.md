@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
+
 Represents a long-running Universal Print operation. Base class for operation types such as [printerCreateOperation](printercreateoperation.md).
 
 ## Methods

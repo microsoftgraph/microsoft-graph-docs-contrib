@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Get printConnector
 Namespace: microsoft.graph
 
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
+
 Retrieve the properties and relationships of a **printConnector** object.
 
 ## Permissions

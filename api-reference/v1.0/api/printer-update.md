@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Update printer
 Namespace: microsoft.graph
 
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
+
 Update the properties of a [printer](../resources/printer.md) object.
 
 ## Permissions

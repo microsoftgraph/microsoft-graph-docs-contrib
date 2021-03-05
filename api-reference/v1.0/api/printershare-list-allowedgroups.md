@@ -10,6 +10,8 @@ doc_type: apiPageType
 # List allowedGroups
 Namespace: microsoft.graph
 
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
+
 Retrieve a list of groups that have been granted access to submit print jobs to the associated [printerShare](../resources/printershare.md).
 
 ## Permissions
