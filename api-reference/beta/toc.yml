@@ -440,8 +440,9 @@ items:
         - name: Update settings
           href: api/planneruser-update.md
       - name: Preferred languages and regional formats (preview)
-        href: resources/regionalandlanguagesettings.md
         items:
+        - name: Regional and language settings
+          href: resources/regionalandlanguagesettings.md
         - name: Get
           href: api/regionalandlanguagesettings-get.md
         - name: Update
@@ -1372,8 +1373,6 @@ items:
           href: api/call-unmute.md
         - name: Mute application
           href: api/call-mute.md
-        - name: Update metadata
-          href: api/call-updatemetadata.md
         - name: Update recording status
           href: api/call-updaterecordingstatus.md
         - name: Audio routing group
@@ -9950,11 +9949,6 @@ items:
           href: api/dynamics-taxgroups-update.md
         - name: Delete tax groups
           href: api/dynamics-taxgroups-delete.md
-      - name: Trial balance
-        href: resources/dynamics-trialbalance.md
-        items:
-        - name: Get trial balance
-          href: api/dynamics-trialbalance-get.md
       - name: Units of measure
         href: resources/dynamics-unitsofmeasure.md
         items:
@@ -10865,7 +10859,7 @@ items:
                href: api/b2cidentityuserflow-put-apiConnectorConfiguration.md
           - name: Self-service sign up user flows
             items:
-             - name: B2X user flow
+             - name: Self-service sign up user flow
                href: resources/b2xidentityuserflow.md
              - name: List
                href: api/identitycontainer-list-b2xuserflows.md
