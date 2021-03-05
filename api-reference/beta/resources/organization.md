@@ -3,7 +3,7 @@ title: "organization resource type"
 description: "Represents an Azure Active Directory tenant. "
 localization_priority: Normal
 author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -28,8 +28,9 @@ This resource lets you add your own data to custom properties using [extensions]
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
 |**Schema extensions**| | |
-|[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.| [Create organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Create a new organizationalBrandingProperties by posting to the branding collection. |
-| [Get branding](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) collection | Get a organizationalBrandingProperties object collection. |
+|[Add schema extension values](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | Create a schema extension definition and then use it to add custom typed data to a resource.|
+|[Create organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Create a new organizationalBrandingProperties by posting to the branding collection. |
+|[Get branding](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) collection | Get a organizationalBrandingProperties object collection. |
 
 ## Properties 
 | Property | Type	| Description |
