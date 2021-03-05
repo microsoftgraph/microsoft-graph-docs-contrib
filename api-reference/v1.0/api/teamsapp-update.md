@@ -79,7 +79,9 @@ For details about the Teams application zip file, see [Create app package](/micr
 
 #### Response
 
-If successful, this method returns a `204 No Content` response code.
+```http
+HTTP/1.1 204 No Content
+```
 
 ### Example 2: Update a new version of an existing app for admin review prior to publication in the current tenant catalog
 
