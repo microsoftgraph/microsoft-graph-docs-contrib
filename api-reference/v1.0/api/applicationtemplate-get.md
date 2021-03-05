@@ -59,8 +59,6 @@ If successful, this method returns a `200 OK` response code and the requested [a
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "get_applicationtemplate"
@@ -74,7 +72,6 @@ GET https://graph.microsoft.com/v1.0/applicationTemplates/{id}
 
 The following is an example of the response.
 
-> [!NOTE]
 > The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {

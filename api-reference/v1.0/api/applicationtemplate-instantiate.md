@@ -57,10 +57,7 @@ The following example shows how to call this API.
 
 The following is an example of the request.
 
-> [!NOTE]
 > You can use this API to instantiate [non-gallery apps](/azure/active-directory/manage-apps/add-non-gallery-app). Use the following ID for **applicationTemplate**: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
-
-# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -80,7 +77,6 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> [!NOTE]
 > The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
@@ -95,50 +91,86 @@ Content-type: application/json
 
 {
    "servicePrincipal": {
-	  "accountEnabled": true,
-	  "addIns": [
-	    {
-	      "id": "id-value",
-	      "type": "type-value",
-	      "properties": [
-		{
-		  "key": "key-value",
-		  "value": "value-value"
-		}
-	      ]
-	    }
-	  ],
-	  "appDisplayName": "appDisplayName-value",
-	  "appId": "appId-value",
-	  "appOwnerOrganizationId": "appOwnerOrganizationId-value",
-	  "appRoleAssignmentRequired": true
+      "accountEnabled": true,
+      "addIns": [],
+      "alternativeNames": ["http://contoso/a7770d29-4321-41a6-b863-ca11d6639448"],
+      "appDisplayName": "appDisplayName-value",
+      "appId": "appId-value",
+      "appOwnerOrganizationId": "appOwnerOrganizationId-value",
+      "appRoleAssignmentRequired":true,
+      "appRoles": [],
+      "displayName": "Display name",
+      "endpoints": [],
+      "homepage": null,
+      "id": "id-value",
+      "info": {
+        "termsOfServiceUrl": null,
+        "supportUrl": null,
+        "privacyStatementUrl": null,
+        "marketingUrl": null,
+        "logoUrl": null
+      },
+      "keyCredentials": [],
+      "logoutUrl": null,
+      "oauth2PermissionScopes": [],
+      "passwordCredentials": [],
+      "publisherName": null,
+      "replyUrls": [],
+      "servicePrincipalNames": [],
+      "servicePrincipalType": null,
+      "tags": [],
+      "tokenEncryptionKeyId": null
    },
    "application": {
-	  "api": {
-	    "acceptedAccessTokenVersion": 1,
-	    "publishedPermissionScopes": [
-	      {
-		"adminConsentDescription": "adminConsentDescription-value",
-		"adminConsentDisplayName": "adminConsentDisplayName-value",
-		"id": "id-value",
-		"isEnabled": true,
-		"type": "type-value",
-		"userConsentDescription": "userConsentDescription-value",
-		"userConsentDisplayName": "userConsentDisplayName-value",
-		"value": "value-value"
-	      }
-	    ]
-	  },
-	  "allowPublicClient": true,
-	  "applicationAliases": [
-	    "applicationAliases-value"
-	  ],
-	  "createdDateTime": "datetime-value",
-	  "installedClients": {
-	    "redirectUrls": [
-	      "redirectUrls-value"
-	    ]
-	  }
+			"id": "id-value",
+			"isFallbackPublicClient": null,
+			"appId": "appId-value",
+			"applicationTemplateId": null,
+			"identifierUris": [],
+			"createdDateTime": "2019-09-17T19:10:35.2742618Z",
+			"displayName": "Display name",
+			"isDeviceOnlyAuthSupported": null,
+			"groupMembershipClaims": null,
+			"optionalClaims": null,
+			"addIns": [],
+			"publisherDomain": "contoso.onmicrosoft.com",
+			"signInAudience": "AzureADMyOrg",
+			"tags": [],
+			"tokenEncryptionKeyId": null,
+			"api": {
+					"requestedAccessTokenVersion": 2,
+					"acceptMappedClaims": null,
+					"knownClientApplications": [],
+					"oauth2PermissionScopes": [],
+					"preAuthorizedApplications": []
+			},
+			"appRoles": [],
+			"publicClient": {
+					"redirectUris": []
+			},
+			"info": {
+					"termsOfServiceUrl": null,
+					"supportUrl": null,
+					"privacyStatementUrl": null,
+					"marketingUrl": null,
+					"logoUrl": null
+			},
+			"keyCredentials": [],
+			"parentalControlSettings": {
+					"countriesBlockedForMinors": [],
+					"legalAgeGroupRule": "Allow"
+			},
+			"passwordCredentials": [],
+			"requiredResourceAccess": [],
+			"web": {
+					"redirectUris": [],
+					"homePageUrl": null,
+					"logoutUrl": null,
+					"implicitGrantSettings": {
+							"enableIdTokenIssuance": false,
+							"enableAccessTokenIssuance": false
+					}
+			}
    }
 }
 ```

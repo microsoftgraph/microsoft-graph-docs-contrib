@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/applicationTemplates/{id}
 
 The following is an example of the response.
 
-> [!NOTE]
 > The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {

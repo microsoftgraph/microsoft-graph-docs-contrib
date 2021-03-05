@@ -58,8 +58,7 @@ The following example shows how to call this API.
 ### Request
 
 The following is an example of the request.
-
-> [!NOTE] 
+ 
 > You can use this API to instantiate [non-gallery apps](/azure/active-directory/manage-apps/add-non-gallery-app). Use the following ID for **applicationTemplate**: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
 # [HTTP](#tab/http)
