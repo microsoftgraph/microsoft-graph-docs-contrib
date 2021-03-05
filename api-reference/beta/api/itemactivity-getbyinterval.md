@@ -83,7 +83,7 @@ GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='20
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivityStat)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
