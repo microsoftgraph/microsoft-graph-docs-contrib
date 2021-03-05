@@ -70,7 +70,7 @@ GET /sites/{site-id}/lists/{list-id}
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -120,7 +120,7 @@ GET /sites/{site-id}/lists/{list-title}
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -170,7 +170,7 @@ GET /sites/{site-id}/lists/{list-id}?select=id,name,lastModifiedDateTime&expand=
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

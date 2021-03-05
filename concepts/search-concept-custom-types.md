@@ -105,7 +105,7 @@ Content-type: application/json
                 "@odata.type": "#microsoft.graph.externalItem",
                 "properties": {
                   "businessEntityID": 20704,
-                  "shortdescription": "Contoso maintenance guidelines",
+                  "shortDescription": "Contoso maintenance guidelines",
                   "firstName": "Amy",
                   "lastName": "Yang"
                 }
