@@ -1,7 +1,7 @@
 ---
 title: "user resource type"
 description: "Represents an Azure AD user account. Inherits from directoryObject."
-author: "krbain"
+author: "jpettere"
 localization_priority: Priority
 ms.prod: "users"
 doc_type: resourcePageType
