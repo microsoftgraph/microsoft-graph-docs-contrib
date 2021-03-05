@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "publishingState",
           "ChangeType": "Addition",
-          "Description": "Added the **publishingState** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource",
+          "Description": "Added the **publishingState** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
           "Target": "teamsAppDefinition"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "shortDescription",
           "ChangeType": "Addition",
-          "Description": "Added the **shortDescription** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource",
+          "Description": "Added the **shortDescription** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
           "Target": "teamsAppDefinition"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "description",
           "ChangeType": "Addition",
-          "Description": "Added the **description** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource",
+          "Description": "Added the **description** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
           "Target": "teamsAppDefinition"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "lastModifiedDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **lastModifiedDateTime** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource",
+          "Description": "Added the **lastModifiedDateTime** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
           "Target": "teamsAppDefinition"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "createdBy",
           "ChangeType": "Addition",
-          "Description": "Added the **createdBy** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource",
+          "Description": "Added the **createdBy** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
           "Target": "teamsAppDefinition"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "bot",
           "ChangeType": "Addition",
-          "Description": "Added the **bot** relationship to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource",
+          "Description": "Added the **bot** relationship to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
           "Target": "teamsAppDefinition"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkBot",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-1.0) resource type",
+          "Description": "Added the [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-1.0) resource type.",
           "Target": "teamworkBot"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "teamsAppPublishingState",
           "ChangeType": "Addition",
-          "Description": "Added the **teamsAppPublishingState** enumeration type",
+          "Description": "Added the **teamsAppPublishingState** enumeration type.",
           "Target": "teamsAppPublishingState"
         }
       ],
