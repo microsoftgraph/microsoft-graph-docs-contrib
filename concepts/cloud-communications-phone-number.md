@@ -57,7 +57,7 @@ For more information, see [New-CsOnlineApplicationInstance](/powershell/module/s
 
 Assign a virtual user license to your application instance. For details, see [Phone system virtual user license](/microsoftteams/teams-add-on-licensing/virtual-user).
 
-Assign a calling plan to your application instance. For details, see [Calling Plans for Microsoft 365](/microsoftteams/calling-plans-for-office-365).
+Assign a calling plan to your application instance. For details, see [Calling plans for Microsoft 365](/microsoftteams/calling-plans-for-office-365).
 
 ### Assign a phone number to the application instance (only tenant admin)
 
