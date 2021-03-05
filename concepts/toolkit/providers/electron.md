@@ -60,7 +60,7 @@ ElectronAuthenticator.initialize(config);
 
 >**Note:** Currently, the provider does not support incremental support. As a best practice, be sure to consent to all the scopes that the components require.
     
-## Creating an app/client ID
+## Create an app/client ID
 
 ### Add new application registration in Azure Active Directory to get a client ID
 
@@ -77,6 +77,7 @@ To create the app in Azure Active Directory:
 1. In the **Redirect URI** field, in the dropdown, select **Public client/native (mobile & desktop)**, and in the URL field, enter `msal://redirect`.
 1. Confirm changes by selecting the **Register** button.
 
-## Getting started
+## Next steps
+
 * Check out the step-by-step tutorial for [building an electron app](../get-started/build-an-electron-app.md).
 * Take a look at a [sample Electron application](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/samples/electron-app) that shows how to use the Electron provider.
