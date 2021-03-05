@@ -162,7 +162,7 @@ Content-type: application/json
 - Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
 - [Sort](/graph/search-concept-sort) search results
 - Use [aggregations](/graph/search-concept-aggregations) to refine search results
-- Request [spelling correction](/graph/search-concept-speller) to refine search results
+- Enable [spell corrections](/graph/search-concept-speller) in search results
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
