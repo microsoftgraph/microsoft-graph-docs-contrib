@@ -2,6 +2,7 @@
 title: "teamworkHostedContent resource type"
 description: "Represents rich content hosted by Microsoft Teams"
 author: "RamjotSingh"
+ms.author: "ramjsing"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
@@ -11,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents rich content like images and code snippets in Microsoft Teams. For rich content in [channel and chat messages](chatMessage.md) see [chatMessageHostedContent](chatMessageHostedContent.md).
+Represents rich content like images and code snippets in Microsoft Teams. For rich content in [channel and chat messages](chatMessage.md), see [chatMessageHostedContent](chatMessageHostedContent.md).
 
 ## Properties
 |Property|Type|Description|
