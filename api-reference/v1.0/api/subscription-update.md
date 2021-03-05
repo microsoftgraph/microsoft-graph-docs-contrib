@@ -2,7 +2,7 @@
 title: "Update subscription"
 description: "Renew a subscription by extending its expiry time."
 localization_priority: Normal
-author: "davidmu1"
+author: "Jumaodhiss"
 ms.prod: ""
 doc_type: apiPageType
 ---
@@ -145,7 +145,9 @@ Content-length: 252
   "latestSupportedTlsVersion": "v1_2",
   "encryptionCertificate": "",
   "encryptionCertificateId": "",
-  "includeResourceData": false
+  "includeResourceData": false,
+  "notificationContentType": "application/json",
+  "notificationQueryOptions": "$filter=isFetchable eq true or status eq completed"
 }
 ```
 

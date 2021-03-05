@@ -2,7 +2,7 @@
 title: "List subscriptions"
 description: "Retrieve the properties and relationships of webhook subscriptions, based on the app ID, the user, and the user's role with a tenant."
 localization_priority: Priority
-author: "davidmu1"
+author: "Jumaodhiss"
 ms.prod: ""
 doc_type: apiPageType
 ---
@@ -135,7 +135,9 @@ Content-length: 586
       "latestSupportedTlsVersion": "v1_2",
       "encryptionCertificate": "",
       "encryptionCertificateId": "",
-      "includeResourceData": false
+      "includeResourceData": false,
+      "notificationContentType": "application/json",
+      "notificationQueryOptions": "$filter=isFetchable eq true or status eq completed"
     }
   ]
 }
