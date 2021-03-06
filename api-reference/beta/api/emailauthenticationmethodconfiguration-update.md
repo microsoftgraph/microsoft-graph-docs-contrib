@@ -36,7 +36,7 @@ For delegated scenarios, the administrator needs one of the following [roles](/a
 -->
 
 ```http
-PATCH /policies/authenticationMethodsPolicy/email
+PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
 
 ## Request headers
@@ -68,7 +68,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfiguration/email
+PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 Content-Type: application/json
 Content-length: 147
 
