@@ -1423,12 +1423,12 @@ items:
           href: api/application-post-onlinemeetings.md
         - name: Get
           href: api/onlinemeeting-get.md
-        - name: Create or get
-          href: api/onlinemeeting-createorget.md
         - name: Update
           href: api/onlinemeeting-update.md
         - name: Delete
           href: api/onlinemeeting-delete.md
+        - name: Create or get
+          href: api/onlinemeeting-createorget.md
       - name: Presence
         href: resources/presence.md
         items:
@@ -1680,7 +1680,7 @@ items:
     - name: Devices and apps
       expanded: true
       items:
-      - name: Cloud printing (preview)
+      - name: Cloud printing
         items:
         - name: Print
           href: resources/print.md
