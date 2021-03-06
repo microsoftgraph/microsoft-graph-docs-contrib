@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account)| For **user** or **chat** resource: Chat.Read, Chat.ReadWrite<br/><br/>For **channel** resource: ChannelMessage.Read.All |
+|Delegated (work or school account)| For **channel** resource: ChannelMessage.Read.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| For **user** or **chat** resource: Chat.Read.All, Chat.ReadWrite.All<br/><br/>For **channel** resource: ChannelMessage.Read.Group*, ChannelMessage.Read.All |
+|Application| For **channel** resource: ChannelMessage.Read.Group*, ChannelMessage.Read.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/channels/{id}/messages/{id}/hostedContents
+GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/hostedContents
 ```
 
 ## Optional query parameters
