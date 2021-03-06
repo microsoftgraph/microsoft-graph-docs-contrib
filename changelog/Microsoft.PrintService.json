@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "4479ad3e-1fa7-4ed2-aa24-8fbf0b2b8aca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printJob",
+          "ChangeType": "Addition",
+          "Description": "Added [update](/graph/api/printjob-update?view=graph-rest-beta\u0026preserve-view=true) support to the [printJob](/graph/api/resources/printjob?view=graph-rest-beta\u0026preserve-view=true) resource.",
+          "Target": "printJob"
+        }
+      ],
+      "Id": "4479ad3e-1fa7-4ed2-aa24-8fbf0b2b8aca",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-05T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": " Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8a2e05f4-659c-11eb-8de9-f7f8b8b7f046",
           "ApiChange": "Resource",
           "ChangedApiName": "printerBase",
@@ -562,7 +580,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-01-07T00:00:00",
       "WorkloadArea": "Devices and apps ",
-      "SubArea": " Cloud printing"
+      "SubArea": "Cloud printing"
     },
     {
       "ChangeList": [
