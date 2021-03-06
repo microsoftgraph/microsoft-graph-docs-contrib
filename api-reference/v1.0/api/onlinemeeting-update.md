@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the properties of the specified [onlineMeeting](../resources/onlinemeeting.md) object.
 
 Please see [Request body](#request-body) section for the list of properties that support updating.
@@ -23,7 +21,7 @@ Please see [Request body](#request-body) section for the list of properties that
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
 | Delegated (personal Microsoft account) | Not Supported.                              |
-| Application                            | OnlineMeetings.ReadWrite.All*                |
+| Application                            | OnlineMeetings.ReadWrite.All*               |
 
 > [!IMPORTANT]
 > \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to update an online meeting on behalf of that user (user ID specified in the request path).
@@ -84,7 +82,7 @@ If successful, this method returns a `200 OK` response code and an [onlineMeetin
   "name": "update_start_end_subject"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi
+PATCH https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi
 Content-Type: application/json 
 
 {
@@ -154,7 +152,7 @@ Content-Type: application/json
   "name": "update_lobbyBypassSettings"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi
+PATCH https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi
 Content-Type: application/json 
 
 {
