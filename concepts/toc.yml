@@ -182,6 +182,7 @@ items:
           - name: Tips
             href: data-connect-tips.md
       - name: Devices and apps
+        expanded: true
         items:
           - name: Cloud printing
             items:
