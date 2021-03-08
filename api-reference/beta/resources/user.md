@@ -255,7 +255,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 #### ageGroup values
 
 | Member    | Description|
-|:---------------|:--------|:----------|
+|:---------------|:--------|
 |null|Default value, no **ageGroup** has been set for the user.|
 |minor|The user is considered a minor.|
 |notAdult|The user is from a country that has statutory regulations  United States, United Kingdom, European Union or South Korea) and user's age is more than the upper limit of kid age (as per country) and less than lower limit of adult age (as stipulated based on country or region). So basically, teenagers are considered as `notAdult` in regulated countries.|

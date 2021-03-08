@@ -17,7 +17,7 @@ Authorization errors can occur as a result of several different issues, most of 
 
 ## Steps to resolve common errors
 
-To resolve common authorization errors, try the steps described for the error that most closely match the error you're getting. More than one error might apply. You can also check the answers already available on Stack Overflow for [401 errors](https://stackoverflow.com/search?q=%5Bmicrosoft-graph%5D+401+isanswered%3Ayes+views%3A50) and [403 errors](https://stackoverflow.com/search?q=%5Bmicrosoft-graph%5D+403+isanswered%3Ayes+views%3A50). If you can't find a solution to your problem, [ask a new question on Stack Overflow](https://stackoverflow.com/questions/ask) and tag with *microsoft-graph*.
+To resolve common authorization errors, try the steps described for the error that most closely match the error you're getting. More than one error might apply. You can also check the answers already available on Microsoft Q&A for [401 errors](https://docs.microsoft.com/answers/search.html?c=&includeChildren=&f=&type=question+OR+idea+OR+kbentry+OR+answer+OR+topic+OR+user&redirect=search%2Fsearch&sort=relevance&q=%5Bmicrosoft-graph%5D%20401%20) and [403 errors](https://docs.microsoft.com/answers/search.html?c=&includeChildren=&f=&type=question+OR+idea+OR+kbentry+OR+answer+OR+topic+OR+user&redirect=search%2Fsearch&sort=relevance&q=%5Bmicrosoft-graph%5D%20403). If you can't find a solution to your problem, [ask a new question on Microsoft Q&A](https://aka.ms/askgraph) and tag with *microsoft-graph**.
 
 **401 Unauthorized error: Is your token valid?** <br>
 

@@ -65,7 +65,7 @@ This bundle can be used to share a collection of files with other users without 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-bundle" } -->
 
-```json
+```http
 POST https://graph.microsoft.com/beta/drive/bundles
 Content-Type: application/json
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -127,7 +127,7 @@ The request to create a new photo album is similar, although inside the bundle f
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-album" } -->
 
-```json
+```http
 POST https://graph.microsoft.com/beta/drive/bundles
 Content-Type: application/json
 
@@ -163,7 +163,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
