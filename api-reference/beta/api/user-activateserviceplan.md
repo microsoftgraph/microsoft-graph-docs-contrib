@@ -49,18 +49,16 @@ In the request body, provide a JSON object with the following parameter:
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| servicePlanId | Guid | PlanId of the ServicePlan to activate |
-| skuId | Guid | SkuId of SKU the service plan is on |
+| servicePlanId | Guid | PlanId of the ServicePlan to activate. |
+| skuId | Guid | SkuId of SKU the service plan is on. |
 
 ## Response
 
-If successful, this action returns a `204 NO CONTENT` response code.
+If successful, this action returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
-
-# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
