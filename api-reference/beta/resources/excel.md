@@ -138,7 +138,7 @@ content-type: application/json;odata.metadata
  
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /{version}/me/drive/items/root:/workbook/worksheets
+POST /{version}/me/drive/root:/workbook/worksheets
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
