@@ -64,6 +64,16 @@ The following are pre-requisites for each of the features that are currently sup
 |isAppliedToOrganization|Boolean|Indicates whether this feature rollout policy should be applied to the entire organization.|
 |isEnabled|Boolean|Indicates whether the feature rollout is enabled.|
 
+## stagedFeatureName values 
+
+|Member|
+|:---|
+|passthroughAuthentication|
+|seamlessSso|
+|passwordHashSync|
+|emailAsAlternateId|
+|unknownFutureValue|
+
 ## Relationships
 
 | Relationship | Type        | Description |
