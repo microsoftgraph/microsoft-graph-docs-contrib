@@ -1,5 +1,5 @@
 ---
-title: "settings resource type"
+title: "Settings for an eDiscovery case"
 description: "Settings for an eDiscovery case"
 author: "mahage-msft"
 localization_priority: Normal
