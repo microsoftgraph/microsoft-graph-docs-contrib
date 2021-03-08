@@ -3,7 +3,7 @@ title: "signInActivity resource type"
 description: "Provides the last signed-in date for a specific user."
 localization_priority: Normal
 author: "besiler"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 

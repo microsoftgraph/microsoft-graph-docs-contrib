@@ -3,7 +3,7 @@ title: "Get access without a user"
 description: "Some apps call Microsoft Graph with their own identity and not on behalf of a user. In many cases, these are background services or daemons that run on a server without the presence of a signed-in user."
 author: "jackson-woods"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ms.custom: graphiamtop20
 ---
 
