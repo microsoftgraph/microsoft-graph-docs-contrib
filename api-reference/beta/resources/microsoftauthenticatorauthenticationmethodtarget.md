@@ -40,12 +40,12 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodTarget",
-  "id": "String (identifier)",
   "targetType": "String",
+  "id": "String (identifier)",
   "isRegistrationRequired": "Boolean",
-  "useForSignIn": "Boolean",
+  "authenticationMode": "String",
   "shownContext": "String",
   "featureSettings": "String"
 }
-```
 
+```
