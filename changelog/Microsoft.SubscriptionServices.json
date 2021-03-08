@@ -3,6 +3,58 @@
     {
       "ChangeList": [
         {
+          "Id": "38c6662a-29a4-4602-afc3-1bc54ebd8546",
+          "ApiChange": "Property",
+          "ChangedApiName": "notificationContentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **notificationContentType** property to the [subscription](/graph/api/resources/subscription?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Target": "subscription"
+        },
+        {
+          "Id": "38c6662a-29a4-4602-afc3-1bc54ebd8546",
+          "ApiChange": "Property",
+          "ChangedApiName": "notificationQueryOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **notificationQueryOptions** property to the [subscription](/graph/api/resources/subscription?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "38c6662a-29a4-4602-afc3-1bc54ebd8546",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-01T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "38c6662a-29a4-4602-afc3-1bc54ebd8546",
+          "ApiChange": "Property",
+          "ChangedApiName": "notificationContentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **notificationContentType** property to the [subscription](/graph/api/resources/subscription?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Target": "subscription"
+        },
+        {
+          "Id": "38c6662a-29a4-4602-afc3-1bc54ebd8546",
+          "ApiChange": "Property",
+          "ChangedApiName": "notificationQueryOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **notificationQueryOptions** property to the [subscription](/graph/api/resources/subscription?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "38c6662a-29a4-4602-afc3-1bc54ebd8546",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-02-01T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4db99971-9137-4010-aa6b-7a53dbfb0c23",
           "ApiChange": "Resource",
           "ChangedApiName": "todoTask, change notifications",
