@@ -62,7 +62,7 @@ POST https://graph.microsoft.com/v1.0/policies/featureRolloutPolicies/{id}/appli
 Content-type: application/json
 
 {
-  "@odata.id": " https://graph.microsoft.com/v1.0/directoryObjects/2441b489-4f12-4882-b039-8f6006bd66da"
+  "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/2441b489-4f12-4882-b039-8f6006bd66da"
 }
 ```
 
