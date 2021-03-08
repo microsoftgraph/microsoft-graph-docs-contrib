@@ -83,18 +83,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('5b840b94-f821-4c4a-8cad-3a90062bf51a')/noncustodialDataSources('8e402dd7f3c94a3abc086e5d07db1c6d')/dataSource/$entity",
-    "@odata.type": "#microsoft.graph.ediscovery.userSource",
-    "displayName": "Adele Vance",
-    "createdDateTime": "2021-02-17T19:41:22.5902664Z",
-    "id": "8e402dd7f3c94a3abc086e5d07db1c6d",
-    "email": "AdeleV@contoso.com",
-    "includedSources": "mailbox",
-    "createdBy": {
-        "user": {
-            "id": "ediscovery admin",
-            "displayName": "c1db6f13-332a-4d84-b111-914383ff9fc9"
+  "value": [
+    {
+        "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('5b840b94-f821-4c4a-8cad-3a90062bf51a')/noncustodialDataSources('8e402dd7f3c94a3abc086e5d07db1c6d')/dataSource/$entity",
+        "@odata.type": "#microsoft.graph.ediscovery.userSource",
+        "displayName": "Adele Vance",
+        "createdDateTime": "2021-02-17T19:41:22.5902664Z",
+        "id": "8e402dd7f3c94a3abc086e5d07db1c6d",
+        "email": "AdeleV@contoso.com",
+        "includedSources": "mailbox",
+        "createdBy": {
+            "user": {
+                "id": "ediscovery admin",
+                "displayName": "c1db6f13-332a-4d84-b111-914383ff9fc9"
+            }
         }
-    }
+      }
+  ]
+
 }
 ```
