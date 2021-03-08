@@ -139,7 +139,7 @@ content-type: application/json;odata.metadata
  
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets
+POST /{version}/me/drive/items/root:/workbook/worksheets
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -154,7 +154,7 @@ HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets/$entity",
+  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/root/$entity",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets(%27%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D%27)",
   "id": "{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}",
   "name": "Sheet32243",
