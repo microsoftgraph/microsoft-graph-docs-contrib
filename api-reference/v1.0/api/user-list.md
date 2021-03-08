@@ -44,7 +44,7 @@ Certain properties cannot be returned within a user collection. The following pr
 | Header        | Value                      |
 |:--------------|:---------------------------|
 | Authorization | Bearer {token} (required)  |
-| ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter. It uses an index that may not be up-to-date with recent changes to the object. |
+| ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter, or `$filter` with the `endsWith` logical operator. It uses an index that may not be up-to-date with recent changes to the object. |
 
 ## Request body
 
