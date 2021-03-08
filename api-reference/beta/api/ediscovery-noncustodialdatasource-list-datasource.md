@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [dataSource](../resources/datasource.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [dataSource](../resources/ediscovery-datasource.md) objects in the response body.
 
 ## Examples
 
@@ -92,7 +92,7 @@ Content-Type: application/json
     "includedSources": "mailbox",
     "createdBy": {
         "user": {
-            "id": ediscovery admin,
+            "id": "ediscovery admin",
             "displayName": "c1db6f13-332a-4d84-b111-914383ff9fc9"
         }
     }

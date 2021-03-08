@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
-# settings resource type
+# Settings for an eDiscovery case
 
 Namespace: microsoft.graph.ediscovery
 
