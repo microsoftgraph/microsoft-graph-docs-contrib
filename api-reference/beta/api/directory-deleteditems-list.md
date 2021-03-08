@@ -3,7 +3,7 @@ title: "List deleted items"
 description: "Retrieve a list of recently deleted items from deleted items."
 author: "keylimesoda"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get unifiedRoleDefinition"
 description: "Retrieve the properties and relationships of a unifiedRoleDefinition object."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
 

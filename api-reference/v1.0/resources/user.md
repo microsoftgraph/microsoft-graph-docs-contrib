@@ -227,7 +227,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 #### ageGroup values
 
 | Member    | Description|
-|:---------------|:--------|:----------|
+|:---------------|:--------|
 |null|Default value, no **ageGroup** has been set for the user.|
 |minor|The user is considered a minor.|
 |notAdult|The user is from a country that has statutory regulations (such as the United States, United Kingdom, European Union or South Korea) and user's age is more than the upper limit of kid age (as per country) and less than lower limit of adult age (as stipulated based on country or region). So basically, teenagers are considered as `notAdult` in regulated countries.|
@@ -247,6 +247,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 | Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |activities|[userActivity](projectrome-activity.md) collection|The user's activities across devices. Read-only. Nullable.|
+|appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Represents the app roles a user has been granted for an application. |
 |calendar|[calendar](calendar.md)|The user's primary calendar. Read-only.|
 |calendarGroups|[calendarGroup](calendargroup.md) collection|The user's calendar groups. Read-only. Nullable.|
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only. Nullable.|
@@ -545,8 +546,6 @@ Here is a JSON representation of the resource
   "description": "user resource",
   "keywords": "",
   "suppressions" : [
-     "Warning: /api-reference/v1.0/resources/user.md/microsoft.graph.user:
-      Property 'createdDateTime' found in markdown table but not in resource definition."
   ],
   "section": "documentation",
   "tocPath": ""
