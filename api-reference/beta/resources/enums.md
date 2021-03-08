@@ -29,6 +29,17 @@ Namespace: microsoft.graph
 |reportOnlyInterrupted|
 
 
+### authenticationMode values
+
+ 
+
+|Member|
+|:---|
+|any|
+|push|
+|deviceBasedPush|
+
+
 ### authenticationMethodFeature values 
 
 
