@@ -5257,14 +5257,14 @@
           "ApiChange": "Method",
           "ChangedApiName": "activateServicePlan",
           "ChangeType": "Addition",
-          "Description": "Added the [activateServicePlan](https://docs.microsoft.com/en-us/graph/api/user-activateServicePlan?view=graph-rest-beta) method to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource",
+          "Description": "Added the [activateServicePlan](https://docs.microsoft.com/en-us/graph/api/user-activateServicePlan?view=graph-rest-beta) method to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
           "Target": "user"
         }
       ],
       "Id": "5fe7cb81-19bb-11eb-baa1-5b13c31fb2cd",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-29T07:50:12.353Z",
+      "CreatedDateTime": "2021-03-08T07:50:12.353Z",
       "WorkloadArea": "Users",
       "SubArea": ""
     }
