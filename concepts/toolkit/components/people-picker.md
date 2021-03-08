@@ -134,7 +134,7 @@ This component uses the following Microsoft Graph APIs and permissions.
 | [/me/people](/graph/api/user-list-people)                    | People.Read        |
 | [/users](/graph/api/user-list)  | User.ReadBasic.All |
 | [/groups](/group-list)  | Group.Read.All |
-| [/groups/\${groupId}/members](/graph/api/group-list-members) | User.ReadBasic.All        |
+| [/groups/\${groupId}/members](/graph/api/group-list-members) | GroupMember.Read.All        |
 | [/users/${userPrincipleName} ](/graph/api/user-get)  | User.Read |
 
 ## Authentication

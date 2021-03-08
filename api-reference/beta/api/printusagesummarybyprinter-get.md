@@ -31,7 +31,7 @@ To use the Universal Print service, the user or app's tenant must have an active
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /reports/dailyPrintUsageSummariesByPrinter/{id}
-GET /reports/monhtlyPrintUsageSummariesByPrinter/{id}
+GET /reports/monthlyPrintUsageSummariesByPrinter/{id}
 GET /print/reports/dailyPrintUsageSummariesByPrinter/{id}
 GET /print/reports/monthlyPrintUsageSummariesByPrinter/{id}
 ```
