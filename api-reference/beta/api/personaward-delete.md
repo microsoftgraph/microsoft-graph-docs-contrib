@@ -56,7 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/user/{userId}/profile/awards/{personAwardId}
+DELETE https://graph.microsoft.com/beta/users/{userId}/profile/awards/{personAwardId}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
