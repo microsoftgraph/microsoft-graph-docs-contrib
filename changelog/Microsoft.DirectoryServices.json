@@ -2,7 +2,6 @@
   "changelog": [
     {
       "ChangeList": [
-
         {
           "Id": "f1ba54fc-500b-4c9a-be59-6cc31c254f55",
           "ApiChange": "Resource",
@@ -18,6 +17,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **authenticatorAppFeatureSettings** enumeration type.",
           "Target": "authenticatorAppFeatureSettings"
+        },
+        {
+          "Id": "29d0c227-a1da-453f-bff0-cee1bda56ca4",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "authenticationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationMode** enumeration type.",
+          "Target": "microsoftAuthenticatorAuthenticationMode"
         }
       ],
       "Id": "bc6921dd-06a2-4b53-8afb-04a0d090e519",
