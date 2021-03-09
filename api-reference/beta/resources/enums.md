@@ -29,7 +29,7 @@ Namespace: microsoft.graph
 |reportOnlyInterrupted|
 
 
-### authenticationMode values
+### microsoftAuthenticatorAuthenticationMode values
 
  
 
