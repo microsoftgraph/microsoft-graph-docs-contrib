@@ -41,7 +41,7 @@ Configuring an identity provider in your Azure AD B2C tenant enables users to si
 |clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return "\*\*\*\*". Required.|
 |id|String|The ID of the identity provider.|
 |displayName|String|The display name of the identity provider.|
-|identityProviderType|String|Required. For B2B scenario:<ul><li/>Google<li/>Facebook</ul>For B2C scenario:<ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat<li/>OpenIDConnect</ul>|
+|identityProviderType|String|Required. For B2B scenario:<ul><li/>Google<li/>Facebook</ul>For B2C scenario:<ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>|
 
 ### Where to get the client ID and secret
 
