@@ -4,7 +4,7 @@ description: "Retrieve a list of impossibletravelriskevent objects."
 localization_priority: Normal
 doc_type: apiPageType
 author: "cloudhandler"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
 # List impossibleTravelRiskEvents (deprecated)
