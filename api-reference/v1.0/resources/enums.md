@@ -55,7 +55,7 @@ Namespace: microsoft.graph
 |enabled|
 |disabled|
 
-### authenticationMode values
+### microsoftAuthenticatorAuthenticationMode values
 
 |Member|
 |:---|
