@@ -3,6 +3,32 @@
         {
             "ChangeList": [
                 {
+                    "Id": "f015f292-af31-448d-8dc1-72ab3936e63a",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "bitlockerRecoveryKey-get",
+                    "ChangeType": "Change",
+                    "Description": "Changed the [bitlockerRecoveryKey](/graph/api/bitlockerrecoverykey-get.md) method to reflect root node is now /informationProtection",
+                    "Target": "bitlockerRecoveryKey-get"
+                },
+                {
+                    "Id": "6dde914c-cf97-4069-91da-254284cace26",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "bitlocker-list-recoverykeys",
+                    "ChangeType": "Change",
+                    "Description": "Changed the [bitlockerRecoveryKey](/graph/api/bitlocker-list-recoverykeys.md) method to reflect root node is now /informationProtection",
+                    "Target": "bitlocker-list-recoverykeys"
+                },
+                {
+                    "Id": "cf1ac883-3c3f-4cd5-88bd-86c122635e35",
+                    "ApiChange": "Parameter",
+                    "ChangedApiName": "bitlocker-list-recoverykeys",
+                    "ChangeType": "Addition",
+                    "Description": "Clarified that [bitlockerRecoveryKey](/graph/api/bitlocker-list-recoverykeys.md) method does not support the $top OData query parameter.",
+                    "Target": "bitlocker-list-recoverykeys"
+                }
+            ],
+            "ChangeList": [
+                {
                     "Id": "b550e1fd-cd34-11ea-bd3f-bcf14830d361",
                     "ApiChange": "Resource",
                     "ChangedApiName": "bitlockerRecoveryKey",
