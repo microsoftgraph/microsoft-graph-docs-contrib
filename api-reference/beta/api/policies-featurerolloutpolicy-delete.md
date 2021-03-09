@@ -54,11 +54,11 @@ If successful, this method returns a `204 No Content` response code. It does not
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_featurerolloutpolicy"
+  "name": "delete_featurerolloutpolicy_policies"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/directory/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c
+DELETE https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c
 ```
 
 ### Response

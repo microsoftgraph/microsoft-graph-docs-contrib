@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /directory/featureRolloutPolicies
+POST /policies/featureRolloutPolicies
 ```
 
 ## Request headers
@@ -61,14 +61,14 @@ If successful, this method returns a `201 Created` response code and a new [feat
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
+# [HTTP]
 <!-- {
   "blockType": "request",
-  "name": "create_featurerolloutpolicy_from_directory"
+  "name": "create_featurerolloutpolicy_from_policies"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/directory/featureRolloutPolicies
+POST https://graph.microsoft.com/beta/policies/featureRolloutPolicies
 Content-type: application/json
 
 {
@@ -79,24 +79,6 @@ Content-type: application/json
   "isAppliedToOrganization": false
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-featurerolloutpolicy-from-directory-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-featurerolloutpolicy-from-directory-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-featurerolloutpolicy-from-directory-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-featurerolloutpolicy-from-directory-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 
