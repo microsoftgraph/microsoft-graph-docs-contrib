@@ -3,7 +3,7 @@ title: "organization resource type"
 description: " create and delete are not supported. Inherits from directoryObject."
 localization_priority: Priority
 author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -119,16 +119,6 @@ Here is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Warning: /api-reference/v1.0/resources/organization.md:
-      Property 'businessPhones' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
-    "Warning: /api-reference/v1.0/resources/organization.md:
-      Property 'onPremisesLastSyncDateTime' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
-    "Warning: /api-reference/v1.0/resources/organization.md:
-      Property 'onPremisesSyncEnabled' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
-    "Warning: /api-reference/v1.0/resources/organization.md:
-      Property 'securityComplianceNotificationMails' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
-    "Warning: /api-reference/v1.0/resources/organization.md:
-      Property 'securityComplianceNotificationPhones' found in resource definition for 'microsoft.graph.organization', but not described in markdown table."
   ],
   "tocPath": ""
 }-->

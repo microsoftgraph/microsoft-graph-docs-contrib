@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 title: Get item activity stats by interval
 description: Get itemAnalyticyStats for the activities that took place on this resource within the specified time interval.
 localization_priority: Normal
@@ -98,7 +97,7 @@ GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='20
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivityStat)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
