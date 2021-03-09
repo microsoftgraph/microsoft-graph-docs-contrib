@@ -13,15 +13,6 @@ Namespace: microsoft.graph
 
 Stages in the approval indicating the result, reviewer, and the date of approval.
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List approvalStages](../api/approvalstage-list.md)|[approvalStage](../resources/approvalstage.md) collection|Get a list of the [approvalStage](../resources/approvalstage.md) objects and their properties.|
-|[Create approvalStage](../api/approvalstage-create.md)|[approvalStage](../resources/approvalstage.md)|Create a new [approvalStage](../resources/approvalstage.md) object.|
-|[Get approvalStage](../api/approvalstage-get.md)|[approvalStage](../resources/approvalstage.md)|Read the properties and relationships of an [approvalStage](../resources/approvalstage.md) object.|
-|[Update approvalStage](../api/approvalstage-update.md)|[approvalStage](../resources/approvalstage.md)|Update the properties of an [approvalStage](../resources/approvalstage.md) object.|
-|[Delete approvalStage](../api/approvalstage-delete.md)|None|Deletes an [approvalStage](../resources/approvalstage.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
