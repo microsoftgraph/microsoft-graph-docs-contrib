@@ -14,10 +14,22 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 
 ## March 2021: New and generally available
 
+### Applications
+GA of the [applicationTemplate](/graph/api/applicationtemplate-instantiate) resource which supports [listing](/graph/api/applicationtemplate-list) applications in the Azure AD application gallery, and [adding](/graph/api/applicationtemplate-instantiate) an instance of such an application to a directory.
+
 ### Devices and apps | Cloud printing
 GA of the [cloud printing API](universal-print-concept-overview.md) for Universal Print! See the [announcement](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/universal-print-is-ready-for-business/ba-p/2176778), and check out how to [get started with Universal Print](https://docs.microsoft.com/universal-print/fundamentals/universal-print-license).
 
+### Teamwork
+GA of a few more details of a version of an app in the Microsoft Teams app cataglog, represented by properties of [teamsAppDefinition](/graph/api/resources/teamsAppDefinition), including the following:
+- **createdBy**, **description**, **shortDescription**, **lastModifiedDateTime**
+- **publishingState** which can be one of `submitted` and under review, `published`, or `rejected` by the admin
+- **bot** relationship of the [teamworkBot](/graph/api/resources/teamworkbot) type, representing the details of the bot specified in the teams app manifest.
+
 ## March 2021: New in preview only
+
+### Cloud printing
+Get the most recent date/time (**lastSeenDateTime** property) when a printer interacted with Universal Print.
 
 ### Sites and lists
 - Support a specific content type or template for documents or document sets for specific site collections, through a set of new properties and methods on the [contentType](/graph/api/resources/contentType?view=graph-rest-beta&preserve-view=true) entity. The methods include the following:
@@ -31,10 +43,18 @@ GA of the [cloud printing API](universal-print-concept-overview.md) for Universa
 - [Get content types of a site that can be applied to a list](/graph/api/site-getApplicableContentTypesForList?view=graph-rest-beta&preserve-view=true).
 - Differentiate column types by the following properties in the **columnDefinition** entity: boolean, calculated, choice, currency, dateTime, lookup, number, personOrGroup, text. These properties are mutually exclusive.
 
+### Users
+[Get](/graph/api/regionalandlanguagesettings-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/regionalandlanguagesettings-update?view=graph-rest-beta&preserve-view=true) a user's [preferences for translating languages](/graph/api/resources/translationpreferences?view=graph-rest-beta&preserve-view=true). For example, whether or not to translate, translate automatically, or prompt before translating specific languages in messages, chats, and web pages, and any [translation overrides](/graph/api/resources/translationlanguageoverride?view=graph-rest-beta&preserve-view=true).
 
 ## February 2021: New and generally available
 
+### Cloud communications | Oneline meeting
+Use policy-based application permissions of `OnlineMeetings.Read.All` or `OnlineMeetings.ReadWrite.All` to operations and methods of the [onlineMeeting](/graph/api/resources/onlinemeeting) resource. This means administrators can [configure application access policy](cloud-communication-online-meeting-application-access-policy.md) to allow apps to access online meetings on behalf of a user.
+
 ## February 2021: New in preview only
+
+### Applications
+Use application permissions for the [synchronization APIs](/graph/api/resources/synchronization-overview?view=graph-rest-beta&preserve-view=true) that automate provisioning (creation, maintenance) and de-provisioning (removal) of identities in Azure AD.
 
 ### Identity and access | Governance
 - Assign geolocation information to an [access package](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true) resource in the [access package assignment request](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true).
