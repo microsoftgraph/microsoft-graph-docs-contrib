@@ -71,7 +71,7 @@ If successful, this method returns a `200 OK` response code and an updated [item
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/patents/{id}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/patents/{id}
 Content-Type: application/json
 Content-length: 497
 
