@@ -1,5 +1,5 @@
 ---
-title: "Approve or deny approval step"
+title: "Update accessPackageAssignmentApprovals steps"
 description: "Apply approve or deny decision on an approvalStep object."
 localization_priority: Normal
 author: "sbounouh"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Approve or Deny accessPackageAssignmentApprovals steps
+# Update accessPackageAssignmentApprovals steps
 
 Namespace: microsoft.graph
 
@@ -45,7 +45,7 @@ The following table shows the properties that are required for this method.
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-| reviewResult | String | Possible values are: `Approve`, `Deny`.|
+| reviewResult | String | Decision of the approver. Possible values are: `Approve`, `Deny`.|
 | justification | String | Justification related to the approver's decision. |
 
 
@@ -65,7 +65,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/steps/{id}
+PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489/steps/d4fa4045-4716-436d-aec5-57b0a713f095
 ```
 ---
 

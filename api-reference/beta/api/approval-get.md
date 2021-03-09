@@ -1,5 +1,5 @@
 ---
-title: "Get approval"
+title: "Get accessPackageAssignmentApprovals"
 description: "Retrieve the properties of an approval object."
 localization_priority: Normal
 author: "sbounouh"
@@ -59,7 +59,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489
 ```
 ---
 
