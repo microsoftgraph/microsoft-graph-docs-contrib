@@ -3,7 +3,7 @@ title: "Create privilegedRoleAssignmentRequest"
 description: "Create a privilegedroleassignmentrequest object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "shauliu"
 ---
 
