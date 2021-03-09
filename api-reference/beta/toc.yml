@@ -11165,7 +11165,7 @@ items:
             items:
             - name: Get
               href: api/approval-get.md
-            - name: approval-list-steps
+            - name: List steps
               href: api/approval-list-steps.md
             - name: approval-get-steps
               href: api/approval-get-steps.md
