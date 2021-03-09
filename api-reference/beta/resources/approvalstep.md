@@ -30,7 +30,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), the approva
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|approval|[approval](../resources/approval.md) collection|The approval object for decisions associated with the `accessPackageAssignmentRequest`..|
+|approval|[approval](../resources/approval.md) collection|The approval object for decisions associated with the `accessPackageAssignmentRequest`.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
