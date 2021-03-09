@@ -10133,6 +10133,12 @@ items:
               href: api/riskyusers-dismiss.md
         - name: Identity provider
           items:
+          - name: Built in Identity provider type
+            href: resources/builtinidentityprovider.md
+          - name: Social Identity provider type
+            href: resources/socialidentityprovider.md
+          - name: OpenID Connect identity provider type
+            href: resources/openidconnectidentityprovider.md
           - name: Identity provider type (deprecated)
             href: resources/identityprovider.md
           - name: OpenID Connect identity provider type (deprecated)

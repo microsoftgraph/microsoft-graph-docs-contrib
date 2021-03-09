@@ -8,14 +8,13 @@ author: "namkedia"
 ---
 
 # builtInIdentityProvider resource type
-
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents built in identity providers with [External Identities](/azure/active-directory/external-identities/) for an Azure Active Directory tenant.
 
-For Azure AD B2B scenarios in an Azure AD tenant, the built in identity provider type can be a Microsoft account or email one-time passcode (OTP).
+For Azure AD B2B scenarios in an Azure AD tenant, the built in identity provider type can be a Azure Active Directory(AAD), Microsoft account(MSA) or email one-time passcode (EmailOTP).
 
 ## Methods
 
@@ -31,7 +30,7 @@ For Azure AD B2B scenarios in an Azure AD tenant, the built in identity provider
 |:---------------|:--------|:----------|
 |id|String|The ID of the identity provider.|
 |displayName|String|The display name of the identity provider.|
-|identityProviderType|String|For B2B scenario:<ul><li/>Microsoft account<li/>Email OTP</ul>Required.|
+|identityProviderType|String|For B2B scenario:<ul><li/>AADSignup<li/>MicrosoftAccount<li/>EmailOTP</ul>This is a required field.|
 
 ## JSON representation
 
