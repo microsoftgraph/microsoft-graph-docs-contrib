@@ -85,7 +85,7 @@ The following table lists the methods that you can use to interact with entitlem
 |[Get approval](../api/approval-get.md) | [approval](approval.md) | Retrieve the properties of an **approval** object. |
 |[List approvalSteps](../api/approval-list-steps.md) | [approvalStep](approvalstep.md) collection | List the **approvalStep** objects associated with an **approval** object. |
 |[Get approvalStep](../api/approval-get-steps.md) | [approvalStep](approvalstep.md) | Retrieve the properties of an **approvalStep** object. |
-|[Approve/deny approvalStep](../api/approval-patch.md) | None | Apply approve or deny decision on an **approvalStep** object. |
+|[Approve/deny approvalStep](../api/approval-update.md) | None | Apply approve or deny decision on an **approvalStep** object. |
 
 
 ## Types
