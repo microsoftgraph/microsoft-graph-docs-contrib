@@ -3,7 +3,7 @@ title: "List languages"
 description: "Retrieve a list of languages supported for customization within a B2C user flow."
 author: "jkdouglas"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 

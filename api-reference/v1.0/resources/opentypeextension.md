@@ -33,8 +33,8 @@ Open extensions are supported by the following resources in the corresponding ve
 | [organization](organization.md) | GA |
 | [Personal contact](contact.md) | GA |
 | [user](user.md) | GA |
-| [Task](todotask.md)  | GA ||
-| [Task list](todotasklist.md)  | GA ||
+| [Task](todotask.md)  | GA |
+| [Task list](todotasklist.md)  | GA |
 
 ## Outlook-specific considerations
 
