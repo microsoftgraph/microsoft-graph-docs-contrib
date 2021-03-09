@@ -24,10 +24,14 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "samples" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts/{name}/image
-GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640)
-GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480)
-GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/image
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image(width=640)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/image(width=640)
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480)
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
 ```
 ## Request headers
 | Name       | Description|
