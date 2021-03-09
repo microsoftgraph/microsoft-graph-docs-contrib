@@ -96,7 +96,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP]
 <!-- {
   "blockType": "request",
   "name": "get_featurerolloutpolicy_expandAppliesTo_policies"
