@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and the requested [f
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
+# [HTTP]
 <!-- {
   "blockType": "request",
   "name": "get_featurerolloutpolicy_policies"
