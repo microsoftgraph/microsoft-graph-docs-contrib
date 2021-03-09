@@ -30,7 +30,7 @@ For Azure AD B2B scenarios in an Azure AD tenant, the built in identity provider
 |:---------------|:--------|:----------|
 |id|String|The ID of the identity provider.|
 |displayName|String|The display name of the identity provider.|
-|identityProviderType|String|For B2B scenario:<ul><li/>AADSignup<li/>MicrosoftAccount<li/>EmailOTP</ul>This is a required field.|
+|identityProviderType|String|This is a required field. For B2B scenario:<ul><li>AADSignup</li><li>MicrosoftAccount</li><li>EmailOTP</li></ul>|
 
 ## JSON representation
 
