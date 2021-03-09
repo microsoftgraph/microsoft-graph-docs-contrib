@@ -1,6 +1,6 @@
 ---
 title: "teamworkHostedContent resource type"
-description: "Represents rich content hosted by Microsoft Teams"
+description: "Represents rich content hosted by Microsoft Teams."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -16,9 +16,9 @@ Represents rich content like images and code snippets in Microsoft Teams. For ri
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|contentBytes|Binary|Write only. Bytes for the hosted content (images etc).|
-|contentType|String|Write only. Content type e.g. image/png, image/jpg.|
-|id|String|Id of the hosted content.|
+|contentBytes|Binary|Write only. Bytes for the hosted content (such as images).|
+|contentType|String|Write only. Content type. sicj as image/png, image/jpg.|
+|id|String|ID of the hosted content.|
 
 ## Relationships
 None.
