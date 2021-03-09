@@ -32,7 +32,7 @@ To use the Universal Print service, the user or app's tenant must have an active
 }
 -->
 ``` http
-POST /print/printers/{printerShareId}/allowedGroups/$ref
+POST /print/printers/{printerId}/shares/{printerShareId}/allowedGroups/$ref
 ```
 
 ## Request headers

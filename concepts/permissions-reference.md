@@ -573,7 +573,7 @@ Administrators can configure [application access policy](auth-limit-mailbox-acce
 #### Application
 
 * _Contacts.Read_: Read contacts from one of the top-level contact folders of any user in the organization (`GET /users/{id | userPrincipalName}/contactfolders/{Id}/contacts/{id}`).
-* _Contacts.ReadWrite_: Update the photo for any contact of any user in an organization (`PUT /user/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`).
+* _Contacts.ReadWrite_: Update the photo for any contact of any user in an organization (`PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`).
 * _Contacts.ReadWrite_: Add contacts to the root folder of any user in the organization (`POST /users/{id | userPrincipalName}/contacts`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
@@ -2213,12 +2213,12 @@ With the _User.ManageIdentities.All_ delegated or application permission, it is 
 * _User.Read_: Read the full profile for the signed-in user (`GET /me`).
 * _User.ReadWrite_: Update the photo of the signed-in user (`PUT /me/photo/$value`).
 * _User.ReadBasic.All_: Find all users whose name starts with "David" (`GET /users?$filter=startswith(displayName,'David')`).
-* _User.Read.All_: Read a user's manager (`GET /user/{id | userPrincipalName}/manager`).
+* _User.Read.All_: Read a user's manager (`GET /users/{id | userPrincipalName}/manager`).
 
 #### Application
 
 * _User.Read.All_: Read all users and relationships through delta query (`GET /beta/users/delta?$select=displayName,givenName,surname`).
-* _User.ReadWrite.All_: Update the photo for any user in the organization (`PUT /user/{id | userPrincipalName}/photo/$value`).
+* _User.ReadWrite.All_: Update the photo for any user in the organization (`PUT /users/{id | userPrincipalName}/photo/$value`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
