@@ -61,7 +61,7 @@ If successful, this method returns a `204 OK` response code.
 
 ### Example 1: Setting **bannerLogo** for the fr localization using PUT
 
-The following request updates the banner logo for the fr localization. Using PUT, if the fr localization does not exist, "404 not found" is returned. If the payload contains an id property or Content-Language header, and they don't match id in URL, a Bad Request is returned.
+The following request updates the banner logo for the `fr` localization. Using PUT, if the fr localization does not exist, a `404 not found` error is returned. If the payload contains an `id` property or **Content-Language** header, and they don't match `id` in URL, a `Bad Request` error is returned.
 
 #### Request
 
@@ -101,7 +101,6 @@ The following request updates the banner logo for the fr localization.  Using PA
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organizationalbrandingproperties"
@@ -184,7 +183,6 @@ If the payload contains an id property or a Content-Language header, and they do
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organizationalbrandingproperties"

@@ -55,7 +55,6 @@ A GET request to a particular localization returns only the values for that loca
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_organizationalbrandingproperties"
@@ -107,7 +106,6 @@ Content-Type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_organizationalbrandingproperties"
@@ -179,7 +177,6 @@ Requesting a property of a localization returns that value, or 204 if the value 
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_organizationalbrandingproperties"

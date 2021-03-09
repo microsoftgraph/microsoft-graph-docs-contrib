@@ -51,11 +51,11 @@ In the request body, supply the values for relevant fields that should be update
 |squareLogo|Stream|Square version of your company logo. This appears in Windows 10 out-of-box (OOBE) experiences and when Windows Autopilot is enabled for deployment. .png or .jpg no larger than 240x240px and no more than 10kb in size. We recommend using a transparent image with no padding around the logo.|
 |usernameHintText|String|String that shows as the hint in the username textbox on the sign in screen. This text must be Unicode, without links or code, and can't exceed 64 characters.|
 
-The **id** property is ignored when passed in.
+The `id` property is ignored when passed in.
 
 ## Response
 
-If successful, this method returns a `204 OK` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 ### Example 1: Update default branding
@@ -104,7 +104,6 @@ The following request updates the banner logo for the default branding.
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organizationalbrandingproperties"
@@ -175,7 +174,6 @@ If the branding already exists, PUT will replace the default branding and any lo
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organizationalbrandingproperties"

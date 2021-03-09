@@ -40,7 +40,7 @@ This method supports some of the OData query parameters to help customize the re
 | Authorization | Bearer {token}. Required. |
 
 >[!NOTE]
->If you try the query in Graph Explorer, you must also include the Accept-Language request header with a valid ISO-639 locale.
+>If you try the query in Graph Explorer, you must also include the **Accept-Language** request header with a valid ISO-639 locale.
 
 ## Request body
 
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and the requested [o
 ### Example 1: Get the default branding
 
 >[!NOTE]
->If you try the example in Graph Explorer, you must also include the Accept-Language request header with a valid ISO-639 locale to avoid getting an error "Invalid locale id value en-US,en;q=0.9. It must be a valid ISO-639 locale."
+>If you try the example in Graph Explorer, you must also include the **Accept-Language** request header with a valid ISO-639 locale to avoid getting an error "*Invalid locale id value en-US,en;q=0.9. It must be a valid ISO-639 locale.*"
 
 #### Request
 
@@ -134,7 +134,7 @@ HTTP/1.1 404 NOT FOUND
 ```
 
 ### Example 3: Get organizational branding for the French locale
-The Accept-Langauge header is used to apply a particular localization to the branding. Properties that are null in the specified localization are returned from the default branding. If the Accept-Language header is specified in the request, the response will include the Content-Language header, unless it is `und`.
+The **Accept-Language** header is used to apply a particular localization to the branding. Properties that are `null` in the specified localization are returned from the default branding. If the **Accept-Language** header is specified in the request, the response will include the **Content-Language** header, unless it is `und`.
 
 #### Request
 
@@ -184,7 +184,7 @@ Content-Language: fr
 ```
 
 ### Example 4: Get bannerLogo for the French locale
-Returns **bannerLogo** for the fr locale if it exists. If the localization does not exist, returns the default **bannerLogo**.
+Returns **bannerLogo** for the `fr` locale if it exists. If the localization does not exist, returns the default **bannerLogo**.
 
 #### Request
 
@@ -223,7 +223,7 @@ Content-Type: application/json
 
 ### Example 5: Get bannerLogo when no bannerLogo is configured
 
-This example shows a request for a property that does not exist on the default branding or the language specified in the Accept-Language header.
+This example shows a request for a property that does not exist on the default branding or the language specified in the **Accept-Language** header.
 
 #### Request
 

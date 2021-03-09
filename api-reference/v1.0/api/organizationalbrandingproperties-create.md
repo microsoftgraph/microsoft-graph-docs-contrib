@@ -27,7 +27,7 @@ A branding is created for an organization, if one does not already exist, using 
 
 If branding is already configured, PUT overwrites all existing values regardless of what's in the request body. PATCH only overwrites the values that are included in the request body, leaving the values not included unchanged.
 
-The **id** property is ignored on PUT/PATCH to the /branding singleton. If Content-Language is not specified, the default branding is created, which corresponds to an **id** of `und`. If Content-Language is specified, branding is created for that locale.
+The `id` property is ignored on PUT/PATCH to the /branding singleton. If **Content-Language** is not specified, the default branding is created, which corresponds to an `id` of `und`. If **Content-Language** is specified, branding is created for that locale.
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -49,7 +49,7 @@ This method supports the OData query parameters to help customize the response. 
 
 ## Request body
 
-In the request body, include a JSON representation of an organizationalBrandingProperties object. The following table lists the required properties.
+In the request body, include a JSON representation of an [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object. The following table lists the required properties.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and the created
 
 ## Examples
 
-The following example creates default branding and localization for en-US.
+The following example creates default branding and localization where **Content-Language** is `en-US`.
 
 ### Request
 
@@ -121,7 +121,7 @@ Content-Language: en-US
 }
 ```
 
-In this case, the default branding object is set. Localized branding for en-US is also set due to the Content-Language header, even though the en-US branding set is not returned in the response. The Content-Language header in the request is optional, and if not present, only sets the default branding.
+In this case, the default branding object is set. Localized branding for `en-US` is also set due to the **Content-Language** header, even though the `en-US` branding set is not returned in the response. The **Content-Language** header in the request is optional, and if not present, only sets the default branding.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
