@@ -10696,6 +10696,23 @@ items:
               href: api/claimsmappingpolicy-delete.md
             - name: List applied to applications
               href: api/claimsmappingpolicy-list-appliesto.md
+          - name: Feature rollout policy
+            href: resources/featurerolloutpolicy.md
+            items:
+            - name: List
+              href: api/policies-list-featurerolloutpolicies.md
+            - name: Get
+              href: api/policies-featurerolloutpolicy-get.md
+            - name: Create
+              href: api/policies-post-featurerolloutpolicies.md
+            - name: Update
+              href: api/policies-featurerolloutpolicy-update.md
+            - name: Delete
+              href: api/policies-featurerolloutpolicy-delete.md
+            - name: Create appliesTo
+              href: api/policies-featurerolloutpolicy-post-appliesto.md
+            - name: Delete appliesTo
+              href: api/policies-featurerolloutpolicy-delete-appliesto.md
           - name: Home realm discovery policy
             href: resources/homerealmdiscoverypolicy.md
             items:
