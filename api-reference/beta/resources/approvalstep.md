@@ -24,7 +24,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), the approva
 |assignedToMe|Boolean|Indicates whether the step is assigned to the calling user to review. Read-only.|
 |reviewedBy|[userIdentity](useridentity.md) collection | The identifier of the reviewer. Read-only.|
 |reviewedDateTime|DateTimeOffset|The date and time when a decision was recorded. Read-only.|
-|reviewResult|String|The result of this approval record. Current possible values include: NotReviewed, Approved, Denied.|
+|reviewResult|String|The result of this approval record. Possible values include: `NotReviewed`, `Approved`, `Denied`.|
 |justification|String|The justification associated with the approval step decision.|
 
 ## Relationships
