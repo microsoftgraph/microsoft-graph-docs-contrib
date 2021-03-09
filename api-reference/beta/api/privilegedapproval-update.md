@@ -63,7 +63,7 @@ Here is an example of the request.
   "name": "update_privilegedapproval"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/privilegedApproval{request-id}
+PATCH https://graph.microsoft.com/beta/privilegedApproval/{request-id}
 Content-type: application/json
 Content-length: 180
 
