@@ -7,13 +7,13 @@ ms.prod: "microsoft-identity-platform"
 author: "namkedia"
 ---
 
-# openIdConnectProvider resource type
-
+# openIdConnectProvider resource type (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE identityprovider-deprecate]
 
-Represents OpenID Connect identity providers in an Azure Active Directory B2C tenant. 
+Represents OpenID Connect identity providers in an Azure Active Directory B2C tenant.
 
 Configuring an OpenID Connect provider in B2C tenant enables users to sign up and sign in using their custom identity provider in an application.
 

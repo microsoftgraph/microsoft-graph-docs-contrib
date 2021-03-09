@@ -10133,21 +10133,21 @@ items:
               href: api/riskyusers-dismiss.md
         - name: Identity provider
           items:
-          - name: Identity provider type
+          - name: Identity provider type (deprecated)
             href: resources/identityprovider.md
-          - name: OpenID Connect identity provider type
+          - name: OpenID Connect identity provider type (deprecated)
             href: resources/openidconnectprovider.md
-          - name: List
+          - name: List (deprecated)
             href: api/identityprovider-list.md
-          - name: Create
+          - name: Create (deprecated)
             href: api/identityprovider-post-identityproviders.md
-          - name: Get
+          - name: Get (deprecated)
             href: api/identityprovider-get.md
-          - name: Update
+          - name: Update (deprecated)
             href: api/identityprovider-update.md
-          - name: Delete
+          - name: Delete (deprecated)
             href: api/identityprovider-delete.md
-          - name: List available provider types
+          - name: List available provider types (deprecated)
             href: api/identityprovider-list-availableprovidertypes.md
         - name: Invitation manager
           href: resources/invitation.md

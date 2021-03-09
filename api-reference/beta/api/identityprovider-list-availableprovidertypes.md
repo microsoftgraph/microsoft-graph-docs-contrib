@@ -7,11 +7,12 @@ author: "namkedia"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List availableProviderTypes
+# List availableProviderTypes (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE identityprovider-deprecate]
 
 Retrieves all identity provider types available in a directory.
 

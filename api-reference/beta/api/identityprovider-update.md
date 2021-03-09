@@ -7,11 +7,12 @@ author: "namkedia"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Update identityProvider
+# Update identityProvider (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE identityprovider-deprecate]
 
 Update the properties of an [identityProvider](../resources/identityprovider.md) object.
 
