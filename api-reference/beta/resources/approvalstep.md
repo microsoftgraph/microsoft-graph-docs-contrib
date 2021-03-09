@@ -20,7 +20,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), the approva
 |:---|:---|:---|
 |id|String|The identifier of the step associated with an approval object. Read-only.|
 |displayName|String|The label provided by the policy creator to identify an approval step. Read-only|
-|status|String|The step status, which can be InProgress or Completed. Read-only.|
+|status|String|The step status. Possible values: `InProgress` or `Completed`. Read-only.|
 |assignedToMe|Boolean|Indicates if the step is assigned to the calling user to review. Read-only.|
 |reviewedBy|[userIdentity](useridentity.md) collection | The identifier of the reviewer. Read-only.|
 |reviewedDateTime|DateTimeOffset|The date and time when a decision was recorded. Read-only.|
