@@ -10156,23 +10156,23 @@ items:
             href: api/domain-update.md
           - name: Verify domain
             href: api/domain-verify.md
-        - name: Feature rollout policy
+        - name: Feature rollout policy (deprecated)
           href: resources/featurerolloutpolicy.md
           items:
           - name: List
             href: api/directory-list-featurerolloutpolicies.md
           - name: Get
-            href: api/featurerolloutpolicy-get.md
+            href: api/directory-featurerolloutpolicy-get.md
           - name: Create
             href: api/directory-post-featurerolloutpolicies.md
           - name: Update
-            href: api/featurerolloutpolicy-update.md
+            href: api/directory-featurerolloutpolicy-update.md
           - name: Delete
-            href: api/featurerolloutpolicy-delete.md
+            href: api/directory-featurerolloutpolicy-delete.md
           - name: Create appliesTo
-            href: api/featurerolloutpolicy-post-appliesto.md
+            href: api/directory-featurerolloutpolicy-post-appliesto.md
           - name: Delete appliesTo
-            href: api/featurerolloutpolicy-delete-appliesto.md
+            href: api/directory-featurerolloutpolicy-delete-appliesto.md
         - name: Organization
           href: resources/organization.md
           items:

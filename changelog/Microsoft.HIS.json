@@ -1,0 +1,31 @@
+{
+    "changelog": [
+      {
+        "ChangeList": [
+          {
+            "Id": "c8d9b74f-7c6f-11eb-8d30-85f45032d4a1",
+            "ApiChange": "Resource",
+            "ChangedApiName": "featureRolloutPolicy",
+            "ChangeType": "Deletion",
+            "Description": "Removed the **featureRolloutPolicy** resource type.",
+            "Target": "featureRolloutPolicy"
+          },
+          {
+            "Id": "c8dc1fdb-7c6f-11eb-8d30-85f45032d4a1",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "stagedFeatureName",
+            "ChangeType": "Deletion",
+            "Description": "Removed the **stagedFeatureName** enumeration type.",
+            "Target": "stagedFeatureName"
+          }
+        ],
+        "Id": "c8d75472-7c6f-11eb-8d30-85f45032d4a1",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-03-03T22:28:31.770Z",
+        "WorkloadArea": "Application",
+        "SubArea": ""
+      }
+    ]
+  }
+  
