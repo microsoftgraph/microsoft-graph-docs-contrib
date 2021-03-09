@@ -11163,7 +11163,7 @@ items:
           - name: Approval
             href: resources/approval.md
             items:
-            - name: approval-get
+            - name: Get
               href: api/approval-get.md
             - name: approval-list-steps
               href: api/approval-list-steps.md
