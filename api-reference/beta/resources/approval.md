@@ -24,7 +24,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), the approva
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|stages|[approvalStage](../resources/approvalstage.md) collection|Used for the *approvalStages* property of approval settings in the *requestApprovalSettings* property of an [access package assignment policy](accesspackageassignmentpolicy.md). Specifies the primary, fallback, and escalation approvers of each stage.|
+|stages|[approvalStage](../resources/approvalstage.md) collection|Used for the **approvalStages** property of approval settings in the **requestApprovalSettings** property of an [access package assignment policy](accesspackageassignmentpolicy.md). Specifies the primary, fallback, and escalation approvers of each stage.|
 
 
 ## JSON representation
@@ -46,4 +46,3 @@ The following is a JSON representation of the resource.
     }]
 }
 ```
-
