@@ -116,10 +116,6 @@ Content-Type: application/json
 }
 ```
 
-
----
-
-
 #### Response
 The following is an example of the response.
 
@@ -132,8 +128,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-
-
 
 ### Example 3: Override default branding value with a blank string
 
@@ -197,10 +191,6 @@ Content-Type: application/json
     "signInPageText": "fr"
 }
 ```
-
-
----
-
 
 #### Response
 The following is an example of the response.
