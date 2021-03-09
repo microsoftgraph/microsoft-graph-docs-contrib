@@ -1,5 +1,5 @@
 ---
-title: "approval step resource type"
+title: "approvalStep resource type"
 description: "The approval step object associated with the accessPackageAssignmentRequest."
 localization_priority: Normal
 author: "sbounouh"
@@ -55,4 +55,3 @@ The following is a JSON representation of the resource.
   "justification": "String",
 }
 ```
-
