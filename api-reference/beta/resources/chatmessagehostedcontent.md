@@ -2,7 +2,7 @@
 title: "chatMessageHostedContent resource type"
 description: "A content hosted in a chat message"
 localization_priority: Normal
-author: "clearab"
+author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"
 ---
@@ -25,6 +25,8 @@ they are stored in SharePoint or OneDrive.
 | [Get chatMessageHostedContent](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | Read the properties and relationships of a **chatMessageHostedContent** object. |
 
 ## Properties
+
+chatMessageHostedContent derives from [teamworkHostedContent](teamworkhostedcontent.md)
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|

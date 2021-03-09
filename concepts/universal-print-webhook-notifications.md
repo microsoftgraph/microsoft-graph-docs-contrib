@@ -203,4 +203,3 @@ For details about how to retrieve a list of webhook subscriptions, see [List sub
 
 - To learn more about the cloud printing API in Microsoft Graph, see [Universal Print cloud printing API overview](/graph/universal-print-concept-overview). 
 - For suggestions or feedback about the cloud printing API in Microsoft Graph, visit the [Universal Print tech community](https://aka.ms/community/UniversalPrint).
-

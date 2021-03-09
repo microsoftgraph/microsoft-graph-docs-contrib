@@ -3,7 +3,7 @@ title: "Update accessReview"
 description: "In the Azure AD access reviews feature, update an existing accessReview object to change one or more of its properties."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
