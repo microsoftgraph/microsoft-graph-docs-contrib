@@ -12,7 +12,7 @@ ms.prod: "microsoft-identity-platform"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-[!INCLUDE identityprovider-deprecate]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Retrieve the properties and relationships of an [identityProvider](../resources/identityprovider.md).
 

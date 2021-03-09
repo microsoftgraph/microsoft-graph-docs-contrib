@@ -7,11 +7,11 @@ author: "namkedia"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List identityProviders
-
+# List identityProviders (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Retrieve a list of [identityProviders](../resources/identityprovider.md) objects.
 

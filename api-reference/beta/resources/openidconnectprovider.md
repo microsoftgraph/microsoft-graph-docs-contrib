@@ -11,7 +11,7 @@ author: "namkedia"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-[!INCLUDE identityprovider-deprecate]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Represents OpenID Connect identity providers in an Azure Active Directory B2C tenant.
 
