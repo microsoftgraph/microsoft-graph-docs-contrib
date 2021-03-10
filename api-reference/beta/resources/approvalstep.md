@@ -15,6 +15,14 @@ Namespace: microsoft.graph
 
 In [Azure AD Entitlement Management](entitlementmanagement-root.md), the approvalStep object for decisions associated with the `accessPackageAssignmentRequest`. It is used to distinguish decisions for different steps of an approval workflow that approvers can act on.
 
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+|[Get approvalStep](../api/approval-get-steps.md) | [approvalStep](approvalstep.md) | Retrieve the properties of an **approvalStep** object. |
+|[List approvalSteps](../api/approval-list-steps.md) | [approvalStep](approvalstep.md) collection | List the **approvalStep** objects associated with an **approval** object. |
+
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

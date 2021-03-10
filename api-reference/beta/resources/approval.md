@@ -15,6 +15,14 @@ Namespace: microsoft.graph
 
 In [Azure AD Entitlement Management](entitlementmanagement-root.md), the approval object for decisions associated with the `accessPackageAssignmentRequest`. A single step request can have one step associated with it which approvers can act on. Similarly, a multi-step request can have multiple steps associated with it which approvers can act on. However, in multi-step approvals both pending and previously completed steps are shown.
 
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+|[Get approval](../api/approval-get.md) | [approval](approval.md) | Retrieve the properties of an **approval** object. |
+|[Update approvalStep](../api/approvalstep-update.md) | None | Apply approve or deny decision on an **approvalStep** object. |
+
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

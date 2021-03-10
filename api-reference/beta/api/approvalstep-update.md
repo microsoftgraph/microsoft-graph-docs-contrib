@@ -1,5 +1,5 @@
 ---
-title: "Update accessPackageAssignmentApprovals steps"
+title: "Update approvalStep"
 description: "Apply approve or deny decision on an approvalStep object."
 localization_priority: Normal
 author: "sbounouh"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# Update accessPackageAssignmentApprovals steps
+# Update approvalStep
 
 Namespace: microsoft.graph
 

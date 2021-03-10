@@ -1,5 +1,5 @@
 ---
-title: "Get accessPackageAssignmentApprovals"
+title: "Get approval"
 description: "Retrieve the properties of an approval object."
 localization_priority: Normal
 author: "sbounouh"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# Get accessPackageAssignmentApprovals
+# Get approval
 
 Namespace: microsoft.graph
 

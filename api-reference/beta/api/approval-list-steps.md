@@ -1,5 +1,5 @@
 ---
-title: "List accessPackageAssignmentApprovals steps"
+title: "List approvalSteps"
 description: "List approval steps associated with an approval object."
 localization_priority: Normal
 author: "sbounouh"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# List steps
+# List approvalSteps
 
 Namespace: microsoft.graph
 

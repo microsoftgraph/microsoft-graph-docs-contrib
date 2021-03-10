@@ -83,9 +83,9 @@ The following table lists the methods that you can use to interact with entitlem
 |[Add externalSponsors](../api/connectedorganization-post-externalsponsors.md) | None | Add a user or group to a **connectedOrganization's** external sponsors. |
 |[Remove internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | None | Remove a user or group from a **connectedOrganization's** internal sponsors. |
 |[Get approval](../api/approval-get.md) | [approval](approval.md) | Retrieve the properties of an **approval** object. |
-|[List approvalSteps](../api/approval-list-steps.md) | [approvalStep](approvalstep.md) collection | List the **approvalStep** objects associated with an **approval** object. |
+|[Update approvalStep](../api/approvalstep-update.md) | None | Apply approve or deny decision on an **approvalStep** object. |
 |[Get approvalStep](../api/approval-get-steps.md) | [approvalStep](approvalstep.md) | Retrieve the properties of an **approvalStep** object. |
-|[Approve/deny approvalStep](../api/approval-update.md) | None | Apply approve or deny decision on an **approvalStep** object. |
+|[List approvalSteps](../api/approval-list-steps.md) | [approvalStep](approvalstep.md) collection | List the **approvalStep** objects associated with an **approval** object. |
 
 
 ## Types
