@@ -90,7 +90,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 204 NO CONTENT
+HTTP/1.1 204 No Content
 ```
 
 ### Example 2: Update **bannerLogo** for the fr localization using PATCH

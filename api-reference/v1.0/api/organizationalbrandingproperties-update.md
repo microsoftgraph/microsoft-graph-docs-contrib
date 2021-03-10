@@ -79,10 +79,6 @@ Content-Type: application/json
 }
 ```
 
-
----
-
-
 #### Response
 The following is an example of the response.
 
@@ -115,10 +111,6 @@ Content-Type: image/jpeg
 
 <Image>
 ```
-
-
----
-
 
 #### Response
 The following is an example of the response.
@@ -188,10 +180,6 @@ Content-Language: fr
     "backgroundColor":"#FFFF33"
 }
 ```
-
-
----
-
 
 #### Response
 The following is an example of the response.

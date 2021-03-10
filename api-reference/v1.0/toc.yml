@@ -4180,6 +4180,25 @@ items:
           items:
           - name: Create invitation
             href: api/invitation-post.md
+        - name: Organizational branding
+          href: resources/organizationalbrandingproperties.md
+          items:
+          - name: Create
+            href: api/organizationalbrandingproperties-create.md
+          - name: Get 
+            href: api/organizationalbrandingproperties-get.md
+          - name: Update
+            href: api/organizationalbrandingproperties-update.md
+          - name: Delete
+            href: api/organizationalbrandingproperties-delete.md
+          - name: Create localized 
+            href: api/organizationalbrandingpropertieslocalization-create.md
+          - name: Get localized
+            href: api/organizationalbrandingpropertieslocalization-get.md
+          - name: Update localized
+            href: api/organizationalbrandingpropertieslocalization-update.md
+          - name: Delete localized
+            href: api/organizationalbrandingpropertieslocalization-delete.md 
         - name: Policy
           href: resources/policy-overview.md
           items:
@@ -5655,22 +5674,3 @@ items:
           href: api/nameditem-add.md
         - name: List range
           href: api/nameditem-range.md
-      - name: Organizational branding
-        href: resources/organizationalbrandingproperties.md
-        items:
-        - name: Create
-          href: api/organizationalbrandingproperties-create.md
-        - name: Get 
-          href: api/organizationalbrandingproperties-get.md
-        - name: Update
-          href: api/organizationalbrandingproperties-update.md
-        - name: Delete
-          href: api/organizationalbrandingproperties-delete.md
-        - name: Create localized 
-          href: api/organizationalbrandingpropertieslocalization-create.md
-        - name: Get localized
-          href: api/organizationalbrandingpropertieslocalization-get.md
-        - name: Update localized
-          href: api/organizationalbrandingpropertieslocalization-update.md
-        - name: Delete localized
-          href: api/organizationalbrandingpropertieslocalization-delete.md 
