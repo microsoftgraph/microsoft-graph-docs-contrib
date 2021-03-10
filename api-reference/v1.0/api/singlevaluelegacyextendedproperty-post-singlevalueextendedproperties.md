@@ -2,7 +2,7 @@
 title: "Create single-value extended property"
 description: "Create one or more single-value extended properties in a new or existing instance of a resource. "
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: ""
 doc_type: apiPageType
 ---
@@ -258,4 +258,5 @@ To see the newly created extended property, [get the message expanded with the e
   "section": "documentation",
   "tocPath": ""
 }-->
+
 

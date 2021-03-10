@@ -3,7 +3,7 @@ title: "Update iosCustomConfiguration"
 description: "Update the properties of a iosCustomConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -62,7 +62,7 @@ The following table shows the properties that are required when you create the [
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |payloadName|String|Name that is displayed to the user.|
-|payloadFileName|String|Payload file name (*.mobileconfig | *.xml).|
+|payloadFileName|String|Payload file name (*.mobileconfig \| *.xml).|
 |payload|Binary|Payload. (UTF8 encoded byte array)|
 
 
@@ -160,6 +160,7 @@ Content-Length: 1316
   "payload": "cGF5bG9hZA=="
 }
 ```
+
 
 
 

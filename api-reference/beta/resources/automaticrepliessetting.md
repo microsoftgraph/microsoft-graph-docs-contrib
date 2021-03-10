@@ -4,7 +4,7 @@ description: "Configuration settings to automatically notify the sender of an in
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: "svpsiva"
+author: "abheek-das"
 ---
 
 # automaticRepliesSetting resource type
@@ -64,3 +64,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a **paymentMetho
 **Request**
 
 Here is an example of the request.
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/paymentMethods/{id}
 ```
 
@@ -70,5 +70,7 @@ Here is an example of the response.
   "lastModifiedDateTime": "2017-03-22T08:35:48.33Z"
 }
 ```
+
+
 
 

@@ -3,7 +3,7 @@ title: "Create invitation"
 description: "Use this API to create a new invitation. Invitation adds an external user to the organization."
 localization_priority: Normal
 author: "elisolMS"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -71,7 +71,7 @@ Content-length: 551
 
 {
   "invitedUserEmailAddress": "yyy@test.com",
-  "inviteRedirectUrl": "https://myapp.com"
+  "inviteRedirectUrl": "https://myapp.contoso.com"
 }
 ```
 # [C#](#tab/csharp)
@@ -84,6 +84,10 @@ Content-length: 551
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-invitation-post-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-invitation-post-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -119,7 +123,7 @@ Content-length: 551
      ],
      "customizedMessageBody": null
   },
-  "inviteRedirectUrl": "https://myapp.com/",
+  "inviteRedirectUrl": "https://myapp.contoso.com/",
   "status": "Completed",
   "invitedUser":  [ {  "id": "243b1de4-ad9f-421c-a933-d55305fb165d" } ]
 }
@@ -136,3 +140,5 @@ Content-length: 551
   "suppressions": [
   ]
 }-->
+
+

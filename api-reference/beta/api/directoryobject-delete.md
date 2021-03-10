@@ -3,7 +3,7 @@ title: "Delete directoryObject"
 description: "Delete directoryObject."
 author: "keylimesoda"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -51,7 +51,7 @@ Here is an example of the request.
   "name": "delete_directoryobject"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/directoryObject/ffab4dce-9b82-49a6-b7c7-1a143106598c
+DELETE https://graph.microsoft.com/beta/directoryObjects/ffab4dce-9b82-49a6-b7c7-1a143106598c
 ```
 ##### Response
 Here is an example of the response. 
@@ -75,3 +75,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

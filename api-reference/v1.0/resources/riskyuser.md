@@ -3,7 +3,7 @@ title: "riskyUser resource type"
 description: "risky users item"
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Represents Azure AD users who are at risk. Azure AD continually evaluates user risk based on various signals and machine learning. This API provides programmatic access to all at-risk users in your Azure AD.
 
-For more information about risk events, see [Azure Active Directory Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/).
+For more information about risk events, see [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
@@ -70,4 +70,3 @@ The following is a JSON representation of the resource.
   "userPrincipalName": "String"
 }
 ```
-

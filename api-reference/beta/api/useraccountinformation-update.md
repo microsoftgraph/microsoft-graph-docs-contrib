@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/accounts/{id}
-PATCH /users/{id | userPrincipalName}/profile/accounts/{id}
+PATCH /me/profile/account/{id}
+PATCH /users/{id | userPrincipalName}/profile/account/{id}
 ```
 
 ## Request headers
@@ -88,6 +88,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/update-useraccountinformation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-useraccountinformation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -136,3 +140,5 @@ Content-type: application/json
   "userPrincipalName": "innocenty.popov@adventureworks.com"
 }
 ```
+
+

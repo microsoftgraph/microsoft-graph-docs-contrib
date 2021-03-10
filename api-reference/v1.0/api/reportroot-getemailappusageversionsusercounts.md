@@ -3,7 +3,7 @@ title: "reportRoot: getEmailAppUsageVersionsUserCounts"
 description: "Get the count of unique users by Outlook desktop version."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -124,3 +124,4 @@ Report Refresh Date,Outlook 2016,Outlook 2013,Outlook 2010,Outlook 2007,Undeterm
   "suppressions": [
   ]
 }-->
+

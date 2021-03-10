@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-```
+```http
 GET /financials/companies/{id}/vendors/{id}
 ```
 
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a **vendors** ob
 **Request**
 
 Here is an example of the request.
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/vendors/{id}
 ```
 
@@ -88,5 +88,7 @@ Here is an example of the response.
   "lastModifiedDateTime": "2017-03-07T00:35:29.667Z"
 }
 ```
+
+
 
 

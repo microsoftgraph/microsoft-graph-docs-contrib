@@ -3,7 +3,7 @@ title: "Contract resource type"
 description: "Represents an existing partnership that the partner tenant has with a customer tenant."
 localization_priority: Normal
 author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -67,3 +67,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

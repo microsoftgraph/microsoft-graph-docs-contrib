@@ -12,7 +12,7 @@ var team = new Team
 	Description = "My Class Team’s Description",
 	AdditionalData = new Dictionary<string, object>()
 	{
-		{"template@odata.bind", "https://graph.microsoft.com/beta/teamsTemplates('educationClass')"}
+		{"template@odata.bind", "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')"}
 	}
 };
 

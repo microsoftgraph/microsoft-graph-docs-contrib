@@ -3,7 +3,7 @@ title: "invitation resource type"
 description: "Represents an invitation that is used to add external users to an organization."
 localization_priority: Normal
 author: "elisolMS"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -91,3 +91,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

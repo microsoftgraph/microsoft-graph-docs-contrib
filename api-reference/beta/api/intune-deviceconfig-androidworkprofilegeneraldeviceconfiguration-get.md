@@ -3,7 +3,7 @@ title: "Get androidWorkProfileGeneralDeviceConfiguration"
 description: "Read properties and relationships of the androidWorkProfileGeneralDeviceConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3422
+Content-Length: 3482
 
 {
   "value": {
@@ -111,6 +111,7 @@ Content-Length: 3422
     "passwordPreviousPasswordBlockCount": 2,
     "passwordSignInFailureCountBeforeFactoryReset": 12,
     "passwordRequiredType": "lowSecurityBiometric",
+    "workProfileAllowAppInstallsFromUnknownSources": true,
     "workProfileDataSharingType": "preventAny",
     "workProfileBlockNotificationsWhileDeviceLocked": true,
     "workProfileBlockAddingAccounts": true,
@@ -146,6 +147,7 @@ Content-Length: 3422
   }
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "Use the Azure AD identity protection APIs"
 description: "You can use Microsoft Graph to query the Identity Protection APIs to receive information about risk detected by Azure AD Identity Protection."
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: conceptualPageType
 ---
 
@@ -28,5 +28,5 @@ Identity Protection is a tool that allows organizations to discover, investigate
 
 ## See also
 
-* [About Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
-* [Get started with Azure Active Directory identity protection and Microsoft Graph](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-graph-api)
+* [About Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
+* [Get started with Azure Active Directory identity protection and Microsoft Graph](/azure/active-directory/identity-protection/howto-identity-protection-graph-api)

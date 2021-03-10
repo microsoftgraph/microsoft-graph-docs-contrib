@@ -70,7 +70,7 @@ If successful, this method returns a `200 OK` response code and an updated [item
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/publications/{id}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/publications/{id}
 Content-Type: application/json
 Content-length: 497
 
@@ -136,3 +136,5 @@ Content-Type: application/json
   "webUrl": "https://www.iabm.io"
 }
 ```
+
+

@@ -113,3 +113,5 @@ This capability may not be available for all preview apps or file types.
 ### Page/zoom
 
 The `page` and `zoom` options might not be available for all preview apps, but will be applied if the preview app supports it.
+
+

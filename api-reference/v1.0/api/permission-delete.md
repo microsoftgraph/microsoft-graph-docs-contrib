@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Remove access to an item
 localization_priority: Normal
@@ -102,3 +101,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 } -->
+

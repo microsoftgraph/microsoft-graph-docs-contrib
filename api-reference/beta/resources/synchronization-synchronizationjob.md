@@ -4,7 +4,7 @@ description: "Performs synchronization by periodically running in the background
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationJob resource type
@@ -81,3 +81,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

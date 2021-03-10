@@ -3,7 +3,7 @@ title: "privilegedRoleSettings resource type"
 description: "Represents the settings for a privileged role."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "governance"
 author: "shauliu"
 ---
 
@@ -82,3 +82,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

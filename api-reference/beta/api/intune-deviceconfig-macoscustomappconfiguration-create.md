@@ -3,7 +3,7 @@ title: "Create macOSCustomAppConfiguration"
 description: "Create a new macOSCustomAppConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -61,7 +61,7 @@ The following table shows the properties that are required when you create the m
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |bundleId|String|Bundle id for targeting.|
-|fileName|String|Configuration file name (*.plist | *.xml).|
+|fileName|String|Configuration file name (*.plist \| *.xml).|
 |configurationXml|Binary|Configuration xml. (UTF8 encoded byte array)|
 
 
@@ -159,6 +159,7 @@ Content-Length: 1321
   "configurationXml": "Y29uZmlndXJhdGlvblhtbA=="
 }
 ```
+
 
 
 

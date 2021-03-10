@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /synchronizationProfiles/{id}/uploadUrl
+GET /education/synchronizationProfiles/{id}/uploadUrl
 ```
 
 ## Request headers
@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/uplo
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationsynchronizationprofile-uploadurl-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationsynchronizationprofile-uploadurl-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -103,3 +107,5 @@ Content-length: 314
   "suppressions": [
   ]
 }-->
+
+

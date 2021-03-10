@@ -3,7 +3,7 @@ title: "List registeredOwners"
 description: "Retrieve a list of users that are registered owners of the device."
 localization_priority: Normal
 author: "spunukol"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /devices/{id}/registeredOwners
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|

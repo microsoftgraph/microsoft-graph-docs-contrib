@@ -3,7 +3,7 @@ title: "privilegedRoleAssignmentRequest resource type"
 description: "Represents the request for role assignment operations in Privilegd Identity Management."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "shauliu"
 ---
 
@@ -91,3 +91,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

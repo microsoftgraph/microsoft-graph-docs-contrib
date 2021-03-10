@@ -3,7 +3,7 @@ title: "identityProvider resource type"
 description: "Represents identity providers in an Azure Active Directory tenant and an Azure AD B2C tenant."
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 author: "namkedia"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents identity providers with [External Identities](https://docs.microsoft.com/azure/active-directory/external-identities/) for both Azure Active Directory tenant and an Azure AD B2C tenant.
+Represents identity providers with [External Identities](/azure/active-directory/external-identities/) for both Azure Active Directory tenant and an Azure AD B2C tenant.
 
 For Azure AD B2B scenarios in an Azure AD tenant, the identity provider type can be Google or Facebook.
 

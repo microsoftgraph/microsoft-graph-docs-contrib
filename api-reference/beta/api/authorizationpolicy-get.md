@@ -3,7 +3,7 @@ title: "Get authorizationPolicy"
 description: "Retrieve the properties and relationships of authorizationPolicy object."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -90,5 +90,10 @@ Content-type: application/json
     "allowedToSignUpEmailBasedSubscriptions": false,
     "allowedToUseSSPR": true,
     "allowEmailVerifiedUsersToJoinOrganization": true,
+    "permissionGrantPolicyIdsAssignedToDefaultUserRole": [
+        "managePermissionGrantsForSelf.microsoft-user-default-low"
+    ]
 }
 ```
+
+

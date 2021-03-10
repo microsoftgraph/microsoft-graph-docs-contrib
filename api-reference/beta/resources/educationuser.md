@@ -134,7 +134,6 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: Resource educationUser has documented navigation properties, but we thought it was a complex type!"
   ]
 
 }-->
@@ -157,3 +156,5 @@ The following is a JSON representation of the resource.
 [educationonpremisesinfo]: educationonpremisesinfo.md
 [iso 3166 alpha-2]: https://www.iso.org/obp/ui/#search
 [rfc 822]: https://tools.ietf.org/html/rfc822
+
+

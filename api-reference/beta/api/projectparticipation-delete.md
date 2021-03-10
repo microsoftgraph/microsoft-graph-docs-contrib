@@ -76,6 +76,10 @@ DELETE https://graph.microsoft.com/beta/me/profile/projects/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-projectparticipation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-projectparticipation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -90,3 +94,5 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

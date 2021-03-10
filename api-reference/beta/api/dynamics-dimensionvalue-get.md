@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a **dimensionVal
 **Request**
 
 Here is an example of the request.
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/dimensions/{id}/dimensionValues/{id}
 ```
 
@@ -69,4 +69,6 @@ Here is an example of the response.
   "lastModifiedDateTime": "2017-03-17T19:02:22.043Z"
 }
 ```
+
+
 

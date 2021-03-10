@@ -1,7 +1,7 @@
 ---
 title: "outlookUser resource type"
 description: "Represents the Outlook services available to a user."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: resourcePageType
@@ -75,3 +75,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

@@ -58,8 +58,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.personInterest",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.personInterest"
 }-->
 
 ```json
@@ -92,3 +91,5 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
+
+

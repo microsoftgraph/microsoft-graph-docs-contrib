@@ -3,7 +3,7 @@ title: "Update privilegedapproval"
 description: "Update the properties of privilegedapproval object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "shauliu"
 ---
 
@@ -63,7 +63,7 @@ Here is an example of the request.
   "name": "update_privilegedapproval"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/privilegedApproval{request-id}
+PATCH https://graph.microsoft.com/beta/privilegedApproval/{requestId}
 Content-type: application/json
 Content-length: 180
 
@@ -95,3 +95,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

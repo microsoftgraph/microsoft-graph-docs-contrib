@@ -26,9 +26,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/LastCell
-GET /workbook/worksheets/{id|name}/range(address='<address>')/LastCell
-GET /workbook/tables/{id|name}/columns/{id|name}/range/LastCell
+GET /me/drive/items/{id}/workbook/names/{name}/range/LastCell
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/LastCell
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/LastCell
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/LastCell
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/LastCell
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/LastCell
 
 ```
 ## Request headers
@@ -66,6 +69,10 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/r
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/range-lastcell-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/range-lastcell-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -106,3 +113,5 @@ Content-length: 169
   ]
 }
 -->
+
+

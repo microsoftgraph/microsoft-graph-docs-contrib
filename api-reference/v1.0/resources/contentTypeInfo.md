@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentTypeInfo
 localization_priority: Normal
@@ -41,3 +40,4 @@ Here is a JSON representation of a **contentTypeInfo** resource.
   "section": "documentation",
   "tocPath": "Resources/ContentTypeInfo"
 } -->
+

@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET workbook/comments/{id}
+GET /me/drive/items/{id}/workbook/comments/{id}
 ```
 
 ## Request headers
@@ -111,3 +111,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

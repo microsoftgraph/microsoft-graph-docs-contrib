@@ -3,7 +3,7 @@ title: "Update userExperienceAnalyticsAppHealthApplicationPerformance"
 description: "Update the properties of a userExperienceAnalyticsAppHealthApplicationPerformance object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -49,20 +49,17 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics app performance object.|
-|appName|String|The name of the application.|
-|appFriendlyName|String|The friendly name of the application.|
-|appPublisher|String|The publisher of the application.|
-|activeDevices|Int32|The number of devices where the app has been active. Valid values -2147483648 to 2147483647|
-|totalAppUsageDuration|Int32|The total usage time of the application in minutes. Valid values -2147483648 to 2147483647|
-|totalAppCrashes|Int32|The number of crashes for the app. Valid values -2147483648 to 2147483647|
-|totalAppHangs|Int32|The number of hangs for the app. Valid values -2147483648 to 2147483647|
-|meanTimeToFailure|Int32|The mean time to failure for the app in minutes. Valid values -2147483648 to 2147483647|
+|appHangCount|Int32|The number of hangs for the app. Valid values -2147483648 to 2147483647|
 |appHealthScore|Double|The health score of the app. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |appHealthStatus|String|The overall health status of the app.|
 |allOrgsHealthScore|Double|The median health score of the application across all organizations. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
-|allOrgsMeanTimeToFailure|Int32|The median mean time to failure across all orgs for the app in minutes. Valid values -2147483648 to 2147483647|
-|tenantId|String|The id of the tenant associated with this app object.|
-|memaTimeGenerated|String|The time when aggregation was performed in MEMA.|
+|activeDeviceCount|Int32|The number of devices where the app has been active. Valid values -2147483648 to 2147483647|
+|appName|String|The name of the application.|
+|appDisplayName|String|The friendly name of the application.|
+|appPublisher|String|The publisher of the application.|
+|appUsageDuration|Int32|The total usage time of the application in minutes. Valid values -2147483648 to 2147483647|
+|appCrashCount|Int32|The number of crashes for the app. Valid values -2147483648 to 2147483647|
+|meanTimeToFailureInMinutes|Int32|The mean time to failure for the app in minutes. Valid values -2147483648 to 2147483647|
 
 
 
@@ -76,24 +73,21 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance/{userExperienceAnalyticsAppHealthApplicationPerformanceId}
 Content-type: application/json
-Content-length: 591
+Content-length: 473
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthApplicationPerformance",
-  "appName": "App Name value",
-  "appFriendlyName": "App Friendly Name value",
-  "appPublisher": "App Publisher value",
-  "activeDevices": 13,
-  "totalAppUsageDuration": 5,
-  "totalAppCrashes": 15,
-  "totalAppHangs": 13,
-  "meanTimeToFailure": 1,
+  "appHangCount": 12,
   "appHealthScore": 4.666666666666667,
   "appHealthStatus": "App Health Status value",
   "allOrgsHealthScore": 6.0,
-  "allOrgsMeanTimeToFailure": 8,
-  "tenantId": "Tenant Id value",
-  "memaTimeGenerated": "Mema Time Generated value"
+  "activeDeviceCount": 1,
+  "appName": "App Name value",
+  "appDisplayName": "App Display Name value",
+  "appPublisher": "App Publisher value",
+  "appUsageDuration": 0,
+  "appCrashCount": 13,
+  "meanTimeToFailureInMinutes": 10
 }
 ```
 
@@ -102,27 +96,25 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 640
+Content-Length: 522
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthApplicationPerformance",
   "id": "c7962a87-2a87-c796-872a-96c7872a96c7",
-  "appName": "App Name value",
-  "appFriendlyName": "App Friendly Name value",
-  "appPublisher": "App Publisher value",
-  "activeDevices": 13,
-  "totalAppUsageDuration": 5,
-  "totalAppCrashes": 15,
-  "totalAppHangs": 13,
-  "meanTimeToFailure": 1,
+  "appHangCount": 12,
   "appHealthScore": 4.666666666666667,
   "appHealthStatus": "App Health Status value",
   "allOrgsHealthScore": 6.0,
-  "allOrgsMeanTimeToFailure": 8,
-  "tenantId": "Tenant Id value",
-  "memaTimeGenerated": "Mema Time Generated value"
+  "activeDeviceCount": 1,
+  "appName": "App Name value",
+  "appDisplayName": "App Display Name value",
+  "appPublisher": "App Publisher value",
+  "appUsageDuration": 0,
+  "appCrashCount": 13,
+  "meanTimeToFailureInMinutes": 10
 }
 ```
+
 
 
 

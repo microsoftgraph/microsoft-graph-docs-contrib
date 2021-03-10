@@ -26,7 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/Cell(row={row},column={column})
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/Cell(row={row},column={column})
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/Cell(row={row},column={column})
 
 ```
 
@@ -97,3 +98,5 @@ Content-length: 169
   "suppressions": []
 }
 -->
+
+

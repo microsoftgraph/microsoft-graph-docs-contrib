@@ -3,7 +3,7 @@ title: "List suspiciousIpRiskEvents"
 description: "Retrieve a list of suspiciousipriskevent objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 author: "cloudhandler"
 ---
 
@@ -98,3 +98,5 @@ Content-length: 290
   "suppressions": []
 }
 -->
+
+

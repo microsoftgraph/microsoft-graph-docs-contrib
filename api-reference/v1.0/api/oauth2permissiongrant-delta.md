@@ -3,7 +3,7 @@ title: "oauth2permissiongrant: delta"
 description: "Get newly created, updated, or deleted oauth2permissiongrants without performing a full read of the entire resource collection."
 localization_priority: Normal
 author: "psignoret"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /oauth2permissiongrants/delta
+GET /oauth2PermissionGrants/delta
 ```
 
 ## Query parameters
@@ -81,7 +81,7 @@ For details, see [Using delta query](/graph/delta-query-overview). For example r
   "name": "oauth2permissiongrant_delta"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/oauth2permissiongrants/delta
+GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/delta
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/oauth2permissiongrant-delta-csharp-snippets.md)]
@@ -143,3 +143,4 @@ Content-type: application/json
   ]
 }
 -->
+

@@ -4,7 +4,7 @@ description: "Create one or more multi-value extended properties in a new or exi
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: "svpsiva"
+author: "abheek-das"
 ---
 
 # Create multi-value extended property
@@ -305,6 +305,8 @@ To see the newly created extended property, [get the message expanded with the e
   "suppressions": []
 }
 -->
+
+
 
 
 

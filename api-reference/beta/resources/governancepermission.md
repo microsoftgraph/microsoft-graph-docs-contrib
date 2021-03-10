@@ -3,7 +3,7 @@ title: "governancePermission resource type"
 description: "Represents the access permission that a governanceSubject has to a specific governanceResource.  "
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "governance"
 author: "shauliu"
 ---
 
@@ -41,3 +41,5 @@ Here is a JSON representation of the resource.
 }
 
 ```
+
+

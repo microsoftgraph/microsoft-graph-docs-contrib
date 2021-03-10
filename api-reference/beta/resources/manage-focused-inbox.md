@@ -4,7 +4,7 @@ description: "Focused Inbox allows you to view important messages in the `Focuse
 localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ""
-author: "svpsiva"
+author: "abheek-das"
 ---
 
 # Manage Focused Inbox
@@ -47,3 +47,5 @@ including the Inbox.
 [Create an override for a sender](../api/inferenceclassification-post-overrides.md) | [List all user overrides](../api/inferenceclassification-list-overrides.md) |
 
 [Update an override for a sender](../api/inferenceclassificationoverride-update.md) | [Delete a sender override](../api/inferenceclassificationoverride-delete.md)
+
+
