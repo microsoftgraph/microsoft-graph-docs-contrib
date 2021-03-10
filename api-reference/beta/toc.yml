@@ -12565,6 +12565,41 @@ items:
           href: api/itemanalytics-get.md
         - name: Get activities by interval
           href: api/itemactivity-getbyinterval.md
+      - name: Content types
+        href: resources/contentType.md
+        items:
+        - name: List
+          href: api/contenttype-list.md
+        - name: Create
+          href: api/contenttype-create.md
+        - name: Get
+          href: api/contenttype-get.md
+        - name: Update
+          href: api/contenttype-update.md
+        - name: Delete
+          href: api/contenttype-delete.md
+        - name: Publish
+          href: api/contenttype-publish.md
+        - name: Unpublish
+          href: api/contenttype-unpublish.md
+        - name: IsPublished
+          href: api/contenttype-ispublished.md
+        - name: Add copy
+          href: api/contenttype-addcopy.md
+        - name: Copy to default content location
+          href: api/contenttype-copytodefaultcontentlocation.md
+        - name: Associate with hub sites
+          href: api/contenttype-associatewithhubsites.md
+        - name: List content type columns
+          href: api/contenttype-list-columns.md
+        - name: Create content type column
+          href: api/contenttype-post-columns.md
+        - name: Get column definition
+          href: api/columndefinition-get.md
+        - name: Update column definition
+          href: api/columndefinition-update.md
+        - name: Delete column definition
+          href: api/columndefinition-delete.md
       - name: Pages
         href: resources/sitepage.md
         items:
@@ -12634,41 +12669,6 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
-      - name: Content types
-        href: resources/contentType.md
-        items:
-        - name: List
-          href: api/contenttype-list.md
-        - name: Create
-          href: api/contenttype-post.md
-        - name: Get
-          href: api/contenttype-get.md
-        - name: Update
-          href: api/contenttype-update.md
-        - name: Delete
-          href: api/contenttype-delete.md
-        - name: Publish
-          href: api/contenttype-publish.md
-        - name: Unpublish
-          href: api/contenttype-unpublish.md
-        - name: IsPublished
-          href: api/contenttype-ispublished.md
-        - name: Add copy
-          href: api/contenttype-addcopy.md
-        - name: Copy to default content location
-          href: api/contenttype-copytodefaultcontentlocation.md
-        - name: Associate with hub sites
-          href: api/contenttype-associatewithhubsites.md
-        - name: List content type columns
-          href: api/contenttype-list-columns.md
-        - name: Create content type column
-          href: api/contenttype-post-columns.md
-        - name: Get column definition
-          href: api/columndefinition-get.md
-        - name: Update column definition
-          href: api/columndefinition-update.md
-        - name: Delete column definition
-          href: api/columndefinition-delete.md
     - name: Tasks and plans
       displayName: Planner
       items:
