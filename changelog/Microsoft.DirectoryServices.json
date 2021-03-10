@@ -28,33 +28,33 @@
         },
         {
           "Id": "8c73c6ce-8c8f-4a36-ac7f-7d22f940f341",
-          "ApiChange": "Resource",
+          "ApiChange": "Method",
           "ChangedApiName": "filterByCurrentUser",
           "ChangeType": "Addition",
-          "Description": "Added the **filterByCurrentUser** function to [appConsentRequests](https://docs.microsoft.com/en-us/graph/api/resources/appconsentrequest?view=graph-rest-beta\u0026preserve-view=true) resource",
+          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/appConsentRequest-filterByCurrentUser?view=graph-rest-beta) method to the [appConsentRequest](https://docs.microsoft.com/en-us/graph/api/resources/appConsentRequest?view=graph-rest-beta) resource.",
           "Target": "appConsentRequests"
         },
         {
           "Id": "8c73c6ce-8c8f-4a36-ac7f-7d22f940f341",
-          "ApiChange": "Resource",
+          "ApiChange": "Method",
           "ChangedApiName": "filterByCurrentUser",
           "ChangeType": "Addition",
-          "Description": "Added the **filterByCurrentUser** function to [userConsentRequests](https://docs.microsoft.com/en-us/graph/api/resources/userconsentrequest?view=graph-rest-beta\u0026preserve-view=true) resource",
+          "Description": "Added the **filterByCurrentUser** method to [userConsentRequests](Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/userConsentRequest-filterByCurrentUser?view=graph-rest-beta) method to the [userConsentRequest](https://docs.microsoft.com/en-us/graph/api/resources/userConsentRequest?view=graph-rest-beta) resource.",
           "Target": "userConsentRequests"
         },
         {
           "Id": "8c73c6ce-8c8f-4a36-ac7f-7d22f940f341",
-          "ApiChange": "Resource",
+          "ApiChange": "Enum type",
           "ChangedApiName": "consentRequestFilterByCurrentUserOptions",
           "ChangeType": "Addition",
           "Description": "Added the **consentRequestFilterByCurrentUserOptions** enumeration type.",
-          "Target": ""
+          "Target": "consentRequestFilterByCurrentUserOptions"
         }
       ],
       "Id": "977c9220-77aa-11eb-8d30-85f45032d4a1",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-03-03T20:46:53.460Z",
+      "CreatedDateTime": "2021-03-10T20:46:53.460Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },

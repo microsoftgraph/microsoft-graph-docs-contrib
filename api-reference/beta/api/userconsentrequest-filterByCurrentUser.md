@@ -30,10 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/filterByCurrentUser
+GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/filterByCurrentUser(on='parameterValue')
 ```
 
 ## Required function parameters
+In the request URL, provide the following query parameters with values.
 The following table shows the parameters that can be used with this function.
 
 |Property|Type|Description|
@@ -60,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_userconsentrequest_filterByCurrentUser"
+  "name": "userconsentrequest_filterbycurrentuser"
 }
 -->
 ``` http
