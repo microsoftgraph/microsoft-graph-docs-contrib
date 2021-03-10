@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A reviewer can review the principals with access to the resources of an [accessReviewInstance](../resources/accessreviewinstance.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|AccessReviews.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|AccessReviews.ReadWrite.All|
 
 ## HTTP request
 
@@ -46,8 +46,8 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|decision|String|**TODO: Add Description**|
-|justification|String|**TODO: Add Description**|
+| decision  | String | Access decision for the entity being reviewed. Possible values are: `Approve` `Deny` `NotReviewed` `DontKnow`. Required.  |
+|  justification | String | Context of the review provided to admins. Required if justificationRequiredOnApproval is True on the accessReviewScheduleDefinition.  |
 |principalId|String|**TODO: Add Description**|
 |resourceId|String|**TODO: Add Description**|
 
