@@ -80,7 +80,7 @@ Content-Type: application/json
 ### Response
 
 
-<!-- { "blockType": "response" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.contentType", "truncated": true} -->
 
 ```http
 HTTP/1.1 201 Created
