@@ -38,8 +38,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.approvalStep",
-  "baseType": "",
-  "openType": false
 }
 -->
 ``` json
