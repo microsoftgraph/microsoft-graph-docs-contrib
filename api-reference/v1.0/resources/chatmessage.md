@@ -29,6 +29,9 @@ Represents an individual chat message within a [channel](./channel.md) or (in be
 |[Get a reply to a chatMessage](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Get a single reply to a chat message in a channel.|
 |[Reply to a chatMessage in a channel](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Reply to an existing chat message in a channel.|
 |[Update chatMessage](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
+|**Hosted content**| | |
+|[List all hosted content](../api/chatmessage-list-chatmessagehostedcontents.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) collection| Get all hosted content in a chat message.|
+|[Get hosted content](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Get hosted content from a chat message.|
 
 ## Properties
 
