@@ -7,14 +7,14 @@
       "ApiChange": "Resource",
       "ChangedApiName": "synchronization",
       "ChangeType": "Addition",
-      "Description": "Added read permission permission support for the [synchronization](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-overview?view=graph-rest-beta) (provisioning) APIs.",
+      "Description": "Added read permission support for the [synchronization](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-overview?view=graph-rest-beta) (provisioning) APIs.",
       "Target": "synchronization"
      }
       ],
       "Id": "0ab634b3-a823-4dd7-819d-72d076a8b881",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-02-10T18:58:47.428Z",
+      "CreatedDateTime": "2021-03-08T18:58:47.428Z",
       "WorkloadArea": "Applications",
       "SubArea": "Directory management"
     },     
