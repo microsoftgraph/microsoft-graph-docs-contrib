@@ -26,10 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /users/{id | userPrincipalName}/agreementAcceptances
 ```
-<!--
+
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
--->
 
 ## Request headers
 | Name      |Description|
@@ -41,9 +40,8 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [agreementAcceptance](../resources/agreementacceptance.md) objects in the response body.
 ## Example
-##### Request
+### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_agreementacceptances"
@@ -52,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 GET https://graph.microsoft.com/v1.0/me/agreementAcceptances
 ```
 
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
@@ -69,12 +67,12 @@ Content-length: 303
 {
   "value": [
     {
-      "agreementId": "agreementId-value",
-      "userId": "userId-value",
-      "agreementFileId": "agreementFileId-value",
-      "recordedDateTime": "datetime-value",
-      "userDisplayName": "userDisplayName-value",
-      "userPrincipalName": "userPrincipalName-value"
+      "agreementId": "093b947f-8363-4979-a47d-4c52b33ee1be",
+      "userId": "f2f4f8e9-c99d-4c73-b990-34f81fbf7fcf",
+      "agreementFileId": "f2f4f8e9-c99d-4c73-b990-34f81fbf7fcf",
+      "recordedDateTime": "2021-03-10T00:39:56.0523527Z",
+      "userDisplayName": "Test_User",
+      "userPrincipalName": "Test_User@TestTenant.onmicrosoft.com"
     }
   ]
 }

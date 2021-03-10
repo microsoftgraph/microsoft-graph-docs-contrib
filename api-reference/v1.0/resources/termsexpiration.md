@@ -1,6 +1,6 @@
 ---
 title: "termsExpiration resource type"
-description: "Provides additional settings when setting the scheduled expiration of the agreement."
+description: "Provides additional settings for the scheduled expiration of the agreement."
 localization_priority: Normal
 ms.prod: "governance"
 author: "raprakasMSFT"
@@ -12,7 +12,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Provides additional settings when setting the scheduled expiration of the agreement.
+Provides additional settings for the scheduled expiration of the agreement.
 
 ## Properties
 
