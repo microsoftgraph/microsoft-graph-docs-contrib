@@ -11175,8 +11175,8 @@ items:
               href: api/approval-list-steps.md
             - name: Get steps
               href: api/approval-get-steps.md
-            - name: approval-patch
-              href: api/approval-patch.md
+            - name: approval-update
+              href: api/approval-update.md
           - name: Approval step
             href: resources/approvalstep.md
           - name: Entitlement management settings
