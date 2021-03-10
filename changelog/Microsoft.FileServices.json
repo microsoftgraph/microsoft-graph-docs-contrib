@@ -1521,7 +1521,6 @@
       "SubArea": ""
     },
     {
-    	"changelog": [{
     		"ChangeList": [{
     			"Id": "7a7d0aa0-8196-11eb-9fc2-269673f51d94",
     			"ApiChange": "Method",
@@ -1557,7 +1556,6 @@
     		"CreatedDateTime": "2021-03-10T11:48:06.486Z",
     		"WorkloadArea": "Sites and lists",
     		"SubArea": ""
-    	}]
     }
   ]
 }
