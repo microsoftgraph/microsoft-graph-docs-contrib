@@ -1,7 +1,7 @@
 ---
 title: "Add tab to chat"
 description: "Adds (pins) a tab to the specified chat. "
-author: "nkramer"
+author: "subray"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
