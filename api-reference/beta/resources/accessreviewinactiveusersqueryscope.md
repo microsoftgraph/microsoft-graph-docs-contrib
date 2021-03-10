@@ -26,6 +26,16 @@ Inherits from [accessReviewQueryScope](../resources/accessreviewqueryscope.md).
 |queryRoot|String|Inherited from [accessReviewQueryScope](../resources/accessreviewqueryscope.md)|
 |queryType|String|Inherited from [accessReviewQueryScope](../resources/accessreviewqueryscope.md)|
 
+### Supported queries for accessReviewInactiveUserQueryScope as scope
+The same queries supported on [accessReviewScope](../resources/accessreviewscope.md) are also supported on accessReviewInactiveUserQueryScope. The following are the queries. They are supported as the `scope` property in an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md)
+
+|Scenario| Query | Additional Comments |
+|--|--|-- |
+| Review all inactive guest users assigned to a group | /groups/{group ID}/transitiveMembers/microsoft.graph.user/?\$count=true&$filter=(userType eq 'Guest') ||
+| Review all inactive users assigned to a group | /groups/{group ID}/transitiveMembers ||
+| Review all inactive guest users assigned to all groups | ./members/microsoft.graph.user/?\$count=true&$filter=(userType eq 'Guest') |  |
+
+
 ## Relationships
 None.
 
