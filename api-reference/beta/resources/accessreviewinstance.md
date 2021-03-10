@@ -30,8 +30,7 @@ Every **accessReviewInstance** contains a list of [decisions](accessreviewinstan
 |[Stop accessReviewInstance](../api/accessreviewinstance-stop.md) | None. | Manually stop an accessReviewInstance. |
 |[Accept recommendations](../api/accessreviewinstance-acceptrecommendations.md) | None. | Allows the calling user to accept the decision recommendation for each NotReviewed accessReviewInstanceDecisionItem that they are the reviewer on for a specific accessReviewInstance. |
 |[Apply decisions](../api/accessreviewinstance-applydecisions.md) | None. | Manually apply decision on an accessReviewInstance. |
-
-
+|[batchRecordDecisions](../api/accessreviewinstance-batchrecorddecisions.md)|None|**TODO: Add Description**|
 
 ## Properties
 | Property | Type | Description |
