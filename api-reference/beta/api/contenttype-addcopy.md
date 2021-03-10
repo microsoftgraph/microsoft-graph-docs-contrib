@@ -83,8 +83,27 @@ Content-Type: application/json
 <!-- { "blockType": "response" } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 201 Created
 
+{
+    "id": "0x0101",
+    "description": "Create a new custom CSR JavaScript Display Template.",
+    "group": "Display Template Content Types",
+    "hidden": false,
+    "name": "JavaScript Display Template",
+    "parentId": "0x01",
+    "readOnly": false,
+    "sealed": false,
+    "base": {
+        "id": "0x01",
+        "description": "Create a new custom CSR JavaScript Display Template.",
+        "group": "Display Template Content Types",
+        "hidden": false,
+        "name": "JavaScript Display Template",
+        "readOnly": false,
+        "sealed": false
+    }
+}
 ```
 
 [site]: ../resources/site.md

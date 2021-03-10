@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "Get columnDefinition"
-description: " Get a content type column."
+description: " Get a site, list or content type column."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
@@ -11,7 +11,7 @@ ms.prod: "sites-and-lists"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Retrieve the metadata for a [contentType][] [column][columnDefinition].
+Retrieve the metadata for a [site][], [list][] or [contentType][] [column][columnDefinition].
 
   
 
@@ -39,9 +39,10 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-
+GET /sites/{site-id}/columns/{column-id}
+GET /sites/{site-id}/lists/{list-id}/columns/{column-id}
 GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
-GET /sites/{site-id}/lists/{list-id}//contentTypes/{contentType-id}/columns/{column-id}
+GET /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{column-id}
 ```
 
 ## Request headers

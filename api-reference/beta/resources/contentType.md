@@ -15,6 +15,22 @@ Namespace: microsoft.graph
 Represents a _content type_ in SharePoint.
 Content types allow you to define a set of columns that must be present on every [**listItem**][listItem] in a [**list**][list].
 
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List contentTypes](../api/contenttype-list.md)|[contentType](../resources/contenttype.md) collection|Get a list of the [contentType](../resources/contenttype.md) objects and their properties.|
+|[Create contentType](../api/contenttype-create.md)|[contentType](../resources/contenttype.md)|Create a new [contentType](../resources/contenttype.md) object.|
+|[Get contentType](../api/contenttype-get.md)|[contentType](../resources/contenttype.md)|Read the properties and relationships of a [contentType](../resources/contenttype.md) object.|
+|[Update contentType](../api/contenttype-update.md)|[contentType](../resources/contenttype.md)|Update the properties of a [contentType](../resources/contenttype.md) object.|
+|[Delete contentType](../api/contenttype-delete.md)|None|Deletes a [contentType](../resources/contenttype.md) object.|
+|[isPublished](../api/contenttype-ispublished.md)|Boolean| Checks if the [contentType](../resources/contenttype.md) is published.|
+|[associateWithHubSites](../api/contenttype-associatewithhubsites.md)|[contentType](../resources/contenttype.md)|Associates a [contentType](../resources/contenttype.md) with a list of hubsites.|
+|[copyToDefaultContentLocation](../api/contenttype-copytodefaultcontentlocation.md)|[contentType](../resources/contenttype.md)| Copy a file to default content location in a [contentType](../resources/contenttype.md).|
+|[publish](../api/contenttype-publish.md)|[contentType](../resources/contenttype.md)| Publish a [contentType](../resources/contenttype.md).|
+|[unpublish](../api/contenttype-unpublish.md)|[contentType](../resources/contenttype.md)|Unpublish a [contentType](../resources/contenttype.md).|
+|[addCopy](../api/contenttype-addcopy.md)|[contentType](../resources/contenttype.md)|Add copy of a [site](../resources/site.md) [contentType](../resources/contenttype.md) to a [list](../resources/list.md)).|
+
+
 ## Properties
 
 | Property name     | Type                 | Description

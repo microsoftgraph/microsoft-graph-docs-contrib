@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "Update columnDefinition"
-description: "Update a content type column"
+description: "Update a site, list or content type column"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
@@ -11,7 +11,7 @@ ms.prod: "sites-and-lists"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Update a [content type][contentType] [column][columnDefinition].
+Update a [site][], [list][] or [content type][contentType] [column][columnDefinition].
   
 
 ## Permissions  
@@ -36,8 +36,10 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
+PATCH /sites/{site-id}/columns/{column-id}
+PATCH /sites/{site-id}/lists/{list-id}/columns/{column-id}
 PATCH /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
-PATCH /sites/{site-id}/lists/{list-id}//contentTypes/{contentType-id}/columns/{column-id}
+PATCH /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{column-id}
 ```
 
 
@@ -114,3 +116,6 @@ Content-type: application/json
 
 [columnDefinition]: ../resources/columnDefinition.md
 [contentType]: ../resources/contentType.md
+[list]: ../resources/list.md
+[site]: ../resources/site.md
+

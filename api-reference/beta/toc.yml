@@ -12663,12 +12663,12 @@ items:
           href: api/contenttype-list-columns.md
         - name: Create content type column
           href: api/contenttype-post-columns.md
-        - name: Get content type column
-          href: api/contenttype-get-columns.md
-        - name: Update content type column
-          href: api/contenttype-update-columns.md
-        - name: Delete content type column
-          href: api/contenttype-delete-columns.md
+        - name: Get column definition
+          href: api/columndefinition-get.md
+        - name: Update column definition
+          href: api/columndefinition-update.md
+        - name: Delete column definition
+          href: api/columndefinition-delete.md
     - name: Tasks and plans
       displayName: Planner
       items:

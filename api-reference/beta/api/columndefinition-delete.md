@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "Delete columnDefinition"
-description: "Delete a column from a content type."
+description: "Delete a column from a site, list or content type."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
@@ -11,7 +11,7 @@ ms.prod: "sites-and-lists"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Remove a [column][columndefinition] from a [list][] or a [site][] [content type][contentType].
+Remove a [column][columndefinition] from a [site][], [list][] or [content type][contentType].
 
 
 ## Permissions
@@ -28,6 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
+DELETE /sites/{site-id}/columns/{column-id}
+DELETE /sites/{site-id}/lists/{list-id}/columns/{column-id}
 DELETE /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 DELETE /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{column-id}
 ```
