@@ -147,9 +147,9 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
 394
+```
 
 ### Example 3: Use OData cast to get only a count of group membership
 
@@ -179,9 +179,9 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
 394
+```
 
 ### Example 4: Use $search and OData cast to get group membership with display names that contain the letters 'Video' including a count of returned objects
 
@@ -194,7 +194,7 @@ The following is an example of the request.
   "name": "get_video_count"
 }-->
 ```msgraph-interactive
-GET iv.	https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search=”displayName:Video" 
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search=”displayName:Video" 
 ConsistencyLevel: eventual
 ```
 
