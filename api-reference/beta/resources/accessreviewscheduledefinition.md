@@ -61,6 +61,8 @@ The following are queries supported on an [accessReviewScheduleDefinition](acces
 | List every `accessReviewScheduleDefinition` on individual groups (excludes definitions scoped to all Microsoft 365 groups with guest users) | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups') |
 | List every `accessReviewScheduleDefinition` on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users) | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups/{group id}') |
 | List every `accessReviewScheduleDefinition` scoped to all Microsoft 365 groups with guest users | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, './members') |
+| List every `accessReviewScheduleDefinition` on an access package | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments') |
+| List every `accessReviewScheduleDefinition` for service principals assigned to privileged role | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'roleAssignmentScheduleInstances') |
 
 
 
