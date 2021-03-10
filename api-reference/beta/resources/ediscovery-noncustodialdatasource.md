@@ -28,7 +28,6 @@ Inherits from [dataSourceContainer](../resources/ediscovery-datasourcecontainer.
 |[List dataSource](../api/ediscovery-noncustodialdatasource-list-datasource.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Get the dataSource resources from the dataSource navigation property.|
 |[Create dataSource](../api/ediscovery-noncustodialdatasource-post.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|Create a new dataSource object.|
 
-<!--BUGBUG - datasource isn't defined in this PR - it's in the other PR.  Will continue to cause errors until I can merge -->
 ## Properties
 
 |Property|Type|Description|
