@@ -1,24 +1,40 @@
 {
   "changelog": [
     {
-         "ChangeList": [
+      "ChangeList": [
         {
-      "Id": "0ab634b3-a823-4dd7-819d-72d076a8b881",
-      "ApiChange": "Resource",
-      "ChangedApiName": "synchronization",
-      "ChangeType": "Addition",
-      "Description": "Added read permission support for the [synchronization](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-overview?view=graph-rest-beta) (provisioning) APIs.",
-      "Target": "synchronization"
-     }
+          "Id": "92d3155a-1074-4a08-adf8-22b2d4508038",
+          "ApiChange": "Property",
+          "ChangedApiName": "organizationalBranding",
+          "ChangeType": "Addition",
+          "Description": "Added the **organizationalBranding** property to [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0) resource.",
+          "Target": "organization"
+        },
+        {
+          "Id": "92d3155a-1074-4a08-adf8-22b2d4508038",
+          "ApiChange": "Resource",
+          "ChangedApiName": "organizationalBrandingLocalization",
+          "ChangeType": "Addition",
+          "Description": "Added the [organizationalBrandingLocalization](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-1.0) resource type.",
+          "Target": "organizationalBrandingLocalization"
+        },
+        {
+          "Id": "92d3155a-1074-4a08-adf8-22b2d4508038",
+          "ApiChange": "Resource",
+          "ChangedApiName": "organizationalBrandingProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource type.",
+          "Target": "organizationalBrandingProperties"
+        }
       ],
-      "Id": "0ab634b3-a823-4dd7-819d-72d076a8b881",
+      "Id": "92d3155a-1074-4a08-adf8-22b2d4508038",
       "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2021-03-08T18:58:47.428Z",
-      "WorkloadArea": "Applications",
-      "SubArea": "Directory management"
-    },     
-    {
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-03-01T00:00:00",
+      "WorkloadArea": "Identity and access ",
+      "SubArea": " Identity and sign-in"
+    },	
+	{
        "ChangeList": [
         {
           "Id": "8b01dd68-ee2a-47d9-b949-9c30d2862313",
@@ -942,7 +958,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewApplyAction",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewApplyAction](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewapplyaction?view=graph-rest-beta) resource type.",
+          "Description": "Added the [accessReviewApplyAction](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewapplyaction?view=graph-rest-beta) resource type.",
           "Target": "accessReviewApplyAction"
         },
         {
@@ -950,7 +966,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewInstanceDecisionItem",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource type.",
+          "Description": "Added the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource type.",
           "Target": "accessReviewInstanceDecisionItem"
         },
         {
@@ -958,7 +974,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewInstanceDecisionItemServicePrincipalTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewInstanceDecisionItemServicePrincipalTarget](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemServicePrincipalTarget?view=graph-rest-beta) resource type.",
+          "Description": "Added the [accessReviewInstanceDecisionItemServicePrincipalTarget](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemServicePrincipalTarget?view=graph-rest-beta) resource type.",
           "Target": "accessReviewInstanceDecisionItemServicePrincipalTarget"
         },
         {
@@ -966,7 +982,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewInstanceDecisionItemTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewInstanceDecisionItemTarget](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemTarget?view=graph-rest-beta) resource type.",
+          "Description": "Added the [accessReviewInstanceDecisionItemTarget](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemTarget?view=graph-rest-beta) resource type.",
           "Target": "accessReviewInstanceDecisionItemTarget"
         },
         {
@@ -974,7 +990,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewInstanceDecisionItemUserTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewInstanceDecisionItemUserTarget](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemUserTarget?view=graph-rest-beta) resource type.",
+          "Description": "Added the [accessReviewInstanceDecisionItemUserTarget](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemUserTarget?view=graph-rest-beta) resource type.",
           "Target": "accessReviewInstanceDecisionItemUserTarget"
         },
         {
@@ -982,7 +998,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewReviewerScope",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewReviewerScope](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewReviewerScope?view=graph-rest-beta) resource type.",
+          "Description": "Added the [accessReviewReviewerScope](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewReviewerScope?view=graph-rest-beta) resource type.",
           "Target": "accessReviewReviewerScope"
         },
         {
@@ -990,7 +1006,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewScheduleDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleDefinition?view=graph-rest-beta) resource type.",
+          "Description": "Added the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleDefinition?view=graph-rest-beta) resource type.",
           "Target": "accessReviewScheduleDefinition"
         },
         {
@@ -998,7 +1014,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewScheduleSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta) resource type.",
+          "Description": "Added the [accessReviewScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta) resource type.",
           "Target": "accessReviewScheduleSettings"
         },
         {
@@ -1006,7 +1022,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewScope",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewScope](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScope?view=graph-rest-beta) resource type.",
+          "Description": "Added the [accessReviewScope](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScope?view=graph-rest-beta) resource type.",
           "Target": "accessReviewScope"
         },
         {
@@ -1038,7 +1054,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-11-11T20:33:59.215Z",
-      "WorkloadArea": "Identity and access",
+      "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },
     {
