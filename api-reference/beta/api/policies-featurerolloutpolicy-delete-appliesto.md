@@ -53,7 +53,6 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 The following is an example of the request.
 
-# [HTTP]
 <!-- {
   "blockType": "request",
   "name": "delete_directoryobject_from_featurerolloutpolicy_policies"

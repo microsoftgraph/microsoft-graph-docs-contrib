@@ -53,7 +53,6 @@ If successful, this method returns a `201 Created` response code and a new [dire
 
 The following is an example of the request.
 
-# [HTTP]
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_featurerolloutpolicy_policies"
