@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# List accessPackageAssignmentApprovals steps
+# List steps
 
 Namespace: microsoft.graph
 
