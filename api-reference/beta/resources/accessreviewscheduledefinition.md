@@ -53,7 +53,7 @@ An accessReviewScheduleDefinition contains a list of [accessReviewInstance](acce
 |:---------------|:--------|:----------|
 | `instances`               |[accessReviewInstance](accessreviewinstance.md) collection         | If the `accessReviewScheduleDefinition` is a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique resource under review in the `accessReviewScheduleDefinition`. If a review has multiple resources and multiple instances, each resource will have a unique instance for each recurrence. |
 
-### Supported queries for accessReviewScheduleDefinition
+### Supported search queries for accessReviewScheduleDefinition
 The following are queries supported on an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) based on the [accessReviewScope](accessreviewscope.md).
 
 |Scenario| Query |

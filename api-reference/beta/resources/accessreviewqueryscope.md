@@ -26,7 +26,7 @@ Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 |queryType|String|Indicates the type of query. Types include MicrosoftGraph and ARM.|
 
 ### Supported queries for accessReviewQueryScope as scope
-The same queries supported on [accessReviewScope](../resources/accessreviewscope.md) are also supported on accessReviewQueryScope. The following are the queries. They are supported as the `scope` property in an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md)
+The queries are supported as the `scope` property in an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md)
 
 |Scenario| Query | Additional Comments |
 |--|--|-- |
@@ -34,6 +34,13 @@ The same queries supported on [accessReviewScope](../resources/accessreviewscope
 | Review of guest users assigned to a group | /groups/{group id}/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest') ||
 | Review of guest users assigned to all Microsoft 365 groups | ./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest') | Note that the corresponding instanceEnumerationScope should also be passed in to the accessReviewScheduleDefinition. See table below for instanceEnumerationScope query. |
 | Entitlement Management Access Package Assignment Reviews | /identityGovernance/entitlementManagement/accessPackageAssignments?$filter=(accessPackageId eq '{package id}' and assignmentPolicyId eq '{id}')| Note that only READ is supported for Access Package Assignment Reviews|
+
+### Supported queries for "instanceEnumerationScope" property
+
+|Scenario| Query | Additional Comments |
+|--|--|--|
+|  Review of guest users assigned to all Microsoft 365 groups| /v1.0/groups?\$filter=(groupTypes/any(c:c+eq+'Unified'))&$count=true | Note that the corresponding scope should also be passed in along with this|
+| Review of guest users assigned to all teams | /v1.0/groups?\$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team'))&$count=true | Note that the corresponding scope should also be passed in along with this|
 
 ## Relationships
 None.
