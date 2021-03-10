@@ -62,7 +62,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/homeRealmDiscoveryPolicies/{id}/appliesTo
+GET https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/{id}/appliesTo
 ```
 
 ### Response
