@@ -4270,6 +4270,23 @@ items:
               href: api/identitysecuritydefaultsenforcementpolicy-get.md
             - name: Update
               href: api/identitysecuritydefaultsenforcementpolicy-update.md
+    - name: Governance
+      items:
+        - name: Terms of use
+          href: resources/agreement.md
+          items:
+          - name: Create agreement
+            href: api/agreement-post-agreements.md
+          - name: List agreements
+            href: api/agreement-list.md
+          - name: Get agreement
+            href: api/agreement-get.md
+          - name: Update agreement
+            href: api/agreement-update.md
+          - name: Delete agreement
+            href: api/agreement-delete.md
+          - name: List acceptance status
+            href: api/user-list-agreementacceptances.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
