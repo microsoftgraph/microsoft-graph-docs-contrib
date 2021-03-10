@@ -33,6 +33,8 @@ Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 | Group owner as reviewer | /groups/{group id}/owners |MicrosoftGraph||
 | Specific user as reviewer | /users/{user id} |MicrosoftGraph||
 | Manager of user being reviewed as reviewer | ./manager | MicrosoftGraph |decisions|
+| Self Review | Empty list(No reviewers) | MicrosoftGraph  |
+
 
 ## Relationships
 None.
