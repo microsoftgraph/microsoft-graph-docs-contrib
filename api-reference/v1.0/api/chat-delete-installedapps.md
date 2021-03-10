@@ -35,6 +35,14 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /chats/{chat-id}/installedApps/{app-installation-id}
 ```
 
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+Do not supply a request body for this method.
+
 ## Response
 
 If successful this method returns a `204 No Content` response code.
