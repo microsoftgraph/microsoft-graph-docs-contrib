@@ -3,7 +3,7 @@ title: "Get accessPackageAssignmentApprovals steps"
 description: "Retrieve the properties of an approvalStep object."
 localization_priority: Normal
 author: "sbounouh"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 

@@ -3,7 +3,7 @@ title: "approvalStep resource type"
 description: "The approvalStep object associated with the accessPackageAssignmentRequest."
 localization_priority: Normal
 author: "sbounouh"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 

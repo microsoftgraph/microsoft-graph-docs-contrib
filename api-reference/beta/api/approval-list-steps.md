@@ -3,7 +3,7 @@ title: "List accessPackageAssignmentApprovals steps"
 description: "List approval steps associated with an approval object."
 localization_priority: Normal
 author: "sbounouh"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 

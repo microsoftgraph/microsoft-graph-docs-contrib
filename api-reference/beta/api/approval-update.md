@@ -3,7 +3,7 @@ title: "Update accessPackageAssignmentApprovals steps"
 description: "Apply approve or deny decision on an approvalStep object."
 localization_priority: Normal
 author: "sbounouh"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
