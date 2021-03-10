@@ -96,7 +96,7 @@ Content-Type: application/json
         "reviewedDateTime": "2019-10-19T04:12:09.633Z",
         "reviewResult": "Approve",
         "status": "Completed",
-        "assignedToMe": false,
+        "assignedToMe": true,
         "justification": "Admin consent granted.",
         "reviewedBy": {
           "id": "00000001-0000-0000-c000-000000000000",

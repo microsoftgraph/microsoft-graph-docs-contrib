@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The accessReviewReviewerScope defines who will review appConsentRequests and userConsentRequests. This is expressed as an OData query, which allows reviewers to be specified both as a static list of users (i.e., specific users, group owners, group members) or dynamically (i.e., the case where every user is reviewed by their manager).
+The accessReviewReviewerScope defines who is specified in the [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) to review [appConsentRequests](../resources/appconsentrequest.md) and [userConsentRequests](../resources/appconsentrequest.md). This is expressed as an OData query, which allows reviewers to be specified both as a static list of users (i.e., specific users, group owners, group members) or dynamically (i.e., the case where every user is reviewed by their manager).
 
 ## Properties
 |Property|Type|Description|

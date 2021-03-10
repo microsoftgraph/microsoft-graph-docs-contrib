@@ -80,10 +80,10 @@ Content-Type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/adminConsentRequestPolicy/$entity",
   "isEnabled": true,
-  "notifyReviewers": true,
+  "notifyReviewers": false,
   "remindersEnabled": false,
-  "requestDurationInDays": 40,
-  "version": 4,
+  "requestDurationInDays": 0,
+  "version": 0,
   "reviewers": [
     {
       "query": "/users/906e0ee5-6372-4cc8-8248-fdf2846b48ed",

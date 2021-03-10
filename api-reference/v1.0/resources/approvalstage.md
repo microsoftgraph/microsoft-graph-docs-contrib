@@ -16,14 +16,14 @@ Stages in the approval indicating the result, reviewer, and the date of approval
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedToMe|Boolean|**TODO: Add Description**|
+|assignedToMe|Boolean|If the userConsentRequest is assigned to you.|
 |displayName|String|A label to identify an approval step. Read-only.|
 |id|String|The identifier of the step associated with a specific approval.|
 |justification|String|The justification for the approval decision.|
 |reviewedBy|[identity](../resources/identity.md)|The details of the reviewer.|
 |reviewedDateTime|DateTimeOffset|The date and time when a decision was recorded. <br>The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |reviewResult|String|The result of the approval record. Possible values are: `NotReviewed`,  `Approved`, or  `Denied.`|
-|status|String|**TODO: Add Description**|
+|status|String|Status of the approval stage. Possible values are: `Completed`.|
 
 
 ## Relationships
