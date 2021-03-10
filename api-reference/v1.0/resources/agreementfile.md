@@ -35,6 +35,13 @@ Represents a customizable terms of use agreement file that a tenant manages with
 
 The following is a JSON representation of the resource.
 
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.agreementFile",
+   "baseType": "",
+  "keyProperty": "id"
+}-->
+
 ```json
 {
   "fileData": {"@odata.type": "microsoft.graph.agreementFileData"},
