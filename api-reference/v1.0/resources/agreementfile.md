@@ -38,7 +38,6 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.agreementFile",
-   "baseType": "",
   "keyProperty": "id"
 }-->
 
