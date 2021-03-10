@@ -3,8 +3,7 @@ title: "Update featureRolloutPolicy"
 description: "Update the properties of featurerolloutpolicy object."
 localization_priority: Normal
 author: "madhavpatel6"
-ms.author: "madpatel"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
