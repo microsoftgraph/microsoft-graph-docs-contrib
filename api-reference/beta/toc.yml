@@ -1492,6 +1492,19 @@ items:
             href: api/ediscovery-legalhold-update.md
           - name: Delete
             href: api/ediscovery-legalhold-delete.md
+        - name: Non-custodial data sources
+          href: resources/ediscovery-noncustodialdatasource.md
+          items:
+          - name: List
+            href: api/ediscovery-noncustodialdatasource-list.md
+          - name: Create
+            href: api/ediscovery-noncustodialdatasource-post.md
+          - name: Get
+            href: api/ediscovery-noncustodialdatasource-get.md
+          - name: List datasource
+            href: api/ediscovery-noncustodialdatasource-list-datasource.md
+          - name: Release
+            href: api/ediscovery-noncustodialdatasource-release.md
         - name: Review set
           href: resources/ediscovery-reviewset.md
           items:
