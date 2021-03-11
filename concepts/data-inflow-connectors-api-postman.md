@@ -25,27 +25,27 @@ To use the Postman collection, you need to import it into your Postman workspace
 
 1. Go to [Postman](https://identity.getpostman.com/signup) and sign up. If you already have a Postman account, you can [sign in](https://identity.getpostman.com/login).
 
-1. Once you sign in, go to the &quot;My workspace&quot;.
+2. Once you sign in, go to the &quot;My workspace&quot;.
 
-![](RackMultipart20210304-4-yn4o4x_html_ec67553a707b4ab.png)
+![My Workspace](./images/connectors-images/02-postman-my-workspace.png)
 
-1. Once you go into &quot;My workspace&quot;, click the &quot;Import&quot; button.
+3. Once you go into &quot;My workspace&quot;, click the &quot;Import&quot; button.
 
-![](RackMultipart20210304-4-yn4o4x_html_ac984ab8cbfba280.png)
+![Import](./images/connectors-images/03-postman-import.png)
 
-1. In the dialog that opens, select &quot;Link&quot; tab and enter the following URL - [https://www.postman.com/collections/61bfc772fe030514b062](https://www.postman.com/collections/61bfc772fe030514b062) in the textbox.
+4. In the dialog that opens, select &quot;Link&quot; tab and enter the following URL - [https://www.postman.com/collections/61bfc772fe030514b062](https://www.postman.com/collections/61bfc772fe030514b062) in the textbox.
 
-![](RackMultipart20210304-4-yn4o4x_html_d685e55d9ff8194.png)
+![](./images/connectors-images/04-postman-link.png)
 
-1. Click Continue.
+5. Click Continue.
 
-![](RackMultipart20210304-4-yn4o4x_html_aac0a595713a5338.png)
+![](./images/connectors-images/ .png)
 
-1. Click Import.
+6. Click Import.
 
 You should now see the Microsoft graph Connectors API collection inside Postman.
 
-![](RackMultipart20210304-4-yn4o4x_html_da4e4ce3d0422709.png)
+![](./images/connectors-images/ .png)
 
 ## Step 2 - (Optional - Postman Web browser only) Download the Postman Agent
 
@@ -83,11 +83,11 @@ Set up the variables in Postman. This information is used to generate the access
 
 1. Click the &quot;Microsoft Graph Connectors API&quot; tab and go to the &quot;Variables&quot; section.
 
-![](RackMultipart20210304-4-yn4o4x_html_ab5b32a9a42ac839.png)
+![](./images/connectors-images/ .png)
 
 1. In the Variables section, provide the required information using the information from step 3.
 
-![](RackMultipart20210304-4-yn4o4x_html_cda9695e45fa1c4f.png)
+![](./images/connectors-images/ .png)
 
 - Set the  **Current value**  of **client\_id** to the Application (client) ID value from step 3.15.
 - Set the  **Current value** of **client\_secret** to the Client Secret value from step 3.17.
@@ -98,7 +98,10 @@ Set up the variables in Postman. This information is used to generate the access
 ## Step 7 - Get an auth token
 
 
-Because this is the first time you are running a request as an application authentication flow, you need to get an access token. Get the app access token by making the following POST request. ![](RackMultipart20210304-4-yn4o4x_html_497200a3a5d93d5e.png)
+Because this is the first time you are running a request as an application authentication flow, you need to get an access token. Get the app access token by making the following POST request. 
+
+![](./images/connectors-images/ .png)
+
 **Access token request with a shared secret** POST /{{tenant}}/oauth2/v2.0/token HTTP/1.1 //Line breaks for clarityHost: login.microsoftonline.comContent-Type: application/x-www-form-urlencoded
 client\_id={{client\_id}}&amp;scope=https%3A%2F%2Fgraph.microsoft.com%2F.default&amp;client\_secret={{client\_secret}}&amp;grant\_type=client\_credentials
 **Successful response example** {    &quot;token\_type&quot;: &quot;Bearer&quot;,    &quot;expires\_in&quot;: 3599,    &quot;ext\_expires\_in&quot;: 3599,    &quot;access\_token&quot;: &quot;eyJ0eXAiOiJKV1QiLCJu… &quot;}
@@ -134,9 +137,13 @@ HTTP/1.1 202 AcceptedLocation: [https://graph.microsoft.com/beta/external/connec
 **Response** HTTP/1.1 200 OKContent-type: application/json
 {    @odata.context&quot;:&quot;https://graph.microsoft.com/beta/$metadata#external/connections(&#39;coursecatalog&#39;)/operations/$entity&quot;,    &quot;id&quot;: &quot;aa9186d2-893c-4361-ca51-431d88fa45d8&quot;,    &quot;name&quot;: &quot;Contoso Tasks&quot;,    &quot;status&quot;: &quot;inprogress&quot;,    &quot;error&quot;: null }
 
- ![](RackMultipart20210304-4-yn4o4x_html_dde4170b50f9601f.png)Once the connection schema operation status changes from I **nProgress** to **Completed,** you can ingest items for the connection.
+![](./images/connectors-images/ .png)
+Once the connection schema operation status changes from I **nProgress** to **Completed,** you can ingest items for the connection.
 
- ![](RackMultipart20210304-4-yn4o4x_html_b580ebffccb49b04.png) ![](RackMultipart20210304-4-yn4o4x_html_5bbd19f01f9d3d77.png)Once the connection state changes from **draft** to **ready** , you can ingest items into current connection. ![](RackMultipart20210304-4-yn4o4x_html_481c6d13f048adcb.png)
+ ![](./images/connectors-images/ .png)
+ ![](./images/connectors-images/ .png)
+Once the connection state changes from **draft** to **ready** , you can ingest items into current connection. 
+![](./images/connectors-images/ .png)
 
 
 ## Step 10 - Add external group member (Optional)
@@ -147,7 +154,7 @@ This step is optional. If your external service uses non-Azure AD ACLs, sync tho
 {&quot;@odata.type&quot;: &quot;#microsoft.graph.externalGroupMember&quot;,&quot;id&quot;: &quot;1431b9c38ee647f6a&quot;,&quot;type&quot;: &quot;group&quot;,&quot;identitySource&quot;: &quot;external&quot;} **Response** HTTP/1.1 201 CreatedContent-Type: application/json
 {&quot;@odata.type&quot;: &quot;#microsoft.graph.externalGroupMember&quot;,&quot;id&quot;: &quot;14m1b9c38qe647f6a&quot;,&quot;type&quot;: &quot;group&quot;,&quot;identitySource&quot;: &quot;external&quot;}
 
- ![](RackMultipart20210304-4-yn4o4x_html_c3097e20325c09d.png)
+![](./images/connectors-images/ .png)
 
 
 ## Step 11 - Ingest Items

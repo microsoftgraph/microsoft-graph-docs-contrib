@@ -24,7 +24,7 @@ The following diagram provides a high-level overview of Microsoft Graph connecto
 <!---       ![Select the Microsoft Graph permissions](./images/application-saml-sso-configure-api/set-permissions.png) --->
 ![Overview](./images/connectors-images/overview.png)
 
-## Build your own custom connector
+### Build your own custom connector
 We have 100+ connectors built by Microsoft and partners that enable you to connect to popular Microsoft and non-Microsoft services. Examples of existing connectors include Azure services, Box, ServiceNow, SalesForce, Google services, MediaWiki, and more.
 
 While these connectors help connect to popular services, you may want to integrate with services that aren't available in the existing [connectors gallery](https://docs.microsoft.com/microsoftsearch/connectors-gallery). In such situations, you can build a custom connector using the Microsoft Graph Connector APIs to bring the external data you need into Microsoft 365 experiences such as Microsoft Search (and many more coming soon) in your organization.
