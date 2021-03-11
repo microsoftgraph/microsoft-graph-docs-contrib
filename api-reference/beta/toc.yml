@@ -271,6 +271,8 @@ items:
       - name: Directory objects
         href: resources/directoryobject.md
         items:
+        - name: Activate service plan
+          href: api/user-activateserviceplan.md
         - name: Assign license
           href: api/user-assignlicense.md
         - name: Check member groups
@@ -1320,9 +1322,10 @@ items:
       items:
       - name: Overview
         href: resources/communications-api-overview.md
-      - name: Call
-        href: resources/call.md
+      - name: Calls
         items:
+        - name: Call
+          href: resources/call.md
         - name: Create
           href: api/application-post-calls.md
         - name: Get
@@ -1416,9 +1419,10 @@ items:
             href: resources/callrecords-directroutinglogrow.md
           - name: List direct routing calls
             href: api/callrecords-callrecord-getdirectroutingcalls.md
-      - name: Online meeting
-        href: resources/onlinemeeting.md
+      - name: Online meetings
         items:
+        - name: Online meeting
+          href: resources/onlinemeeting.md
         - name: Create
           href: api/application-post-onlinemeetings.md
         - name: Get

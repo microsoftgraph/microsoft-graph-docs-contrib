@@ -1,7 +1,7 @@
 ---
 title: "Update settings"
 description: "Update the properties of the settings object. "
-author: "krbain"
+author: "jpettere"
 localization_priority: Normal
 ms.prod: "users"
 doc_type: apiPageType
