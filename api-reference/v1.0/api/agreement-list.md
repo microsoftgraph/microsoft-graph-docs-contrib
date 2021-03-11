@@ -28,7 +28,7 @@ GET /identityGovernance/termsOfUse/agreements
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name         | Type        | Description |
