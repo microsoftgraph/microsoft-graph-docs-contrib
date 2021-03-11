@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 DELETE /me/profile/phones/{itemPhoneId}
-DELETE /user/{userId}/profile/phones/{itemPhoneId}
+DELETE /users/{userId}/profile/phones/{itemPhoneId}
 ```
 
 ## Request headers
@@ -60,7 +60,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/user/{userId}/profile/phones/{itemPhoneId}
+DELETE https://graph.microsoft.com/beta/users/{userId}/profile/phones/{itemPhoneId}
 ```
 
 ### Response

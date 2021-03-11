@@ -3,7 +3,7 @@ title: "accessReviewInstance: sendReminder"
 description: "Sends a reminder to the reviewers of a currently active accessReviewInstance."
 localization_priority: Normal
 author: "isabelleatmsft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

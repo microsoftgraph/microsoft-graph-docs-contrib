@@ -3,7 +3,7 @@ title: "Activate directoryRole"
 description: "Activate a directory role."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
