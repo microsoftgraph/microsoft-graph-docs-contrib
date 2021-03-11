@@ -110,7 +110,10 @@ Content-Type: application/json
             }
           }
         ]
-      }
+      },
+      "approvalId": "5a3a0f94-b89d-4cd3-a4ad-fd78faec333f",
+      "completedDateTime": null,
+      "customData": null
     }
   ]
 }

@@ -25,7 +25,6 @@ An aggregation of [userConsentRequests](../resources/userconsentrequest.md) for 
 |:---|:---|:---|
 |appDisplayName|String|The display name of the app for which consent is requested. Required. Supports `$filter` (`eq` only) and `$orderby`. |
 |appId|String|The identifier of the application. Required. Supports `$filter` (`eq` only) and `$orderby`. |
-|consentType|String|The consent type of the request. Possible values are: `Static` and `Dynamic`. These represent static and dynamic permissions, respectively, requested in the consent workflow. Supports `$filter` (`eq` only) and `$orderby`. Required.|
 |id|String|The identifier of the app consent request. Required.|
 |pendingScopes|[appConsentRequestScope](../resources/appconsentrequestscope.md) collection|A list of pending scopes waiting for approval. This is empty if the consentType is `Static`. Required.|
 
@@ -49,7 +48,6 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "appId": "String",
   "appDisplayName": "String",
-  "consentType": "String",
   "pendingScopes": [
     {
       "@odata.type": "microsoft.graph.appConsentRequestScope"

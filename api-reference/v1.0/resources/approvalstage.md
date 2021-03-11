@@ -23,7 +23,7 @@ Stages in the approval indicating the result, reviewer, and the date of approval
 |reviewedBy|[identity](../resources/identity.md)|The details of the reviewer.|
 |reviewedDateTime|DateTimeOffset|The date and time when a decision was recorded. <br>The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |reviewResult|String|The result of the approval record. Possible values are: `NotReviewed`,  `Approved`, or  `Denied.`|
-|status|String|Status of the approval stage. Possible values are: `Completed`.|
+|status|String|Status of the approval stage. Possible values are: `InProgress`, `Initializing`, `Completed`, `Expired`.|
 
 
 ## Relationships
