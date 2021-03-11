@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/profile/phones/{id}
-GET /user/{userId}/profile/phones/{id}
+GET /users/{userId}/profile/phones/{id}
 ```
 
 ## Optional query parameters

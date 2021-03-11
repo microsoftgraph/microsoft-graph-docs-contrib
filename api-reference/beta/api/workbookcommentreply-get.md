@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /comments/{id}/replies/{id}
+GET /drive/items/{id}/workbook/comments/{id}/replies/{id}
 ```
 
 ## Request headers

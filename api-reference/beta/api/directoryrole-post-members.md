@@ -3,7 +3,7 @@ title: "Add directory role member"
 description: "Create a new directory role member."
 author: "abhijeetsinha"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

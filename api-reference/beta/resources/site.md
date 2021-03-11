@@ -4,7 +4,7 @@ description: "The site resource provides metadata and relationships for a ShareP
 ms.date: 09/10/2017
 title: Site
 localization_priority: Priority
-ms.prod: "sharepoint"
+ms.prod: "sites-and-lists"
 doc_type: resourcePageType
 ---
 # site resource type
@@ -98,6 +98,7 @@ The `root` identifier always references the root site for a given target, as fol
 | **permissions**   | Collection([permission][])         | The permissions associated with the site. Nullable.
 | **sites**         | Collection([site][])             | The collection of the sub-sites under this site.
 | **termStore**     | [microsoft.graph.termStore.store]  | The termStore under this site.
+| **externalColumns**     | Collection([columnDefinition][])  | The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
@@ -155,7 +156,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "termStore": { "@odata.type": "microsoft.graph.termStore.store" },
-
+  "externalColumns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   /* inherited from baseItem */
   "name": "string",
   "createdDateTime": "datetime",

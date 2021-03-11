@@ -26,8 +26,10 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/rows/{index}
-GET /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
+GET /me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/{index}
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
