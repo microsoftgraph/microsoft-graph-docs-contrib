@@ -10989,8 +10989,6 @@ items:
             items:
             - name: List
               href: api/accessreviewinstancedecisionitem-list.md
-            - name: Get
-              href: api/accessreviewinstancedecisionitem-get.md
             - name: List pending approval
               href: api/accessreviewinstancedecisionitem-listpendingapproval.md
             - name: Update
