@@ -1,7 +1,7 @@
 ---
 title: "userSecurityState resource type"
 description: "Contains stateful information about the user account."
-author: "krbain"
+author: "jpettere"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
