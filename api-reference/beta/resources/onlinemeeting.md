@@ -21,36 +21,36 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | :----------------------------------------------------------------- | :-------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
 | [Create](../api/application-post-onlineMeetings.md)                | [onlineMeeting](onlinemeeting.md) | Create an online meeting.                                                                                         |
 | [Get](../api/onlinemeeting-get.md)                                 | [onlineMeeting](onlinemeeting.md) | Read the properties and relationships of an **onlineMeeting** object.                                             |
+| [Update](../api/onlinemeeting-update.md)                           | [onlineMeeting](onlinemeeting.md) | Update the properties of an **onlineMeeting** object. |
+| [Delete](../api/onlinemeeting-delete.md)                           | None                              | Delete an **onlineMeeting** object.                                                                             |
 | [Create or get onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting with a custom, external ID. If the meeting already exists, retrieve its properties.      |
-| [Update](../api/onlinemeeting-update.md)                           | [onlineMeeting](onlinemeeting.md) | Update the **startDateTime**, **endDateTime**, **subject**, and **participants** properties of an online meeting. |
-| [Delete](../api/onlinemeeting-delete.md)                           | None                              | Delete an **onlineMeeting** resource.                                                                             |
 
 ## Properties
 
 | Property              | Type                                          | Description                                                                                                                                                                                                                                                 |
 | :-------------------- | :-------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| allowedPresenters     | onlineMeetingPresenters                       | Specifies who can be a presenter in a meeting. Possible values are `everyone`, `organization`, `roleIsPresenter`, `organizer`, and `unknownFutureValue`.                                                                                                    |
+| alternativeRecording  | Stream                                        | The content stream of the alternative recording of a live event. Read-only.                                                                                                                                                                                 |
+| attendeeReport        | Stream                                        | The content stream of the attendee report of a live event. Read-only.                                                                                                                                                                                       |
 | autoAdmittedUsers     | String                                        | The setting that specifies the type of participants that will automatically be allowed into the online meeting. Possible values are: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Read-only. |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only.                                                                                                                                                                                    |
+| broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Settings related to a live event*                                                                                                                                                                                                                    |
 | chatInfo              | [chatInfo](chatinfo.md)                       | The chat information associated with this online meeting.                                                                                                                                                                                                   |
 | creationDateTime      | DateTime                                      | The meeting creation time in UTC. Read-only.                                                                                                                                                                                                                |
-| startDateTime         | DateTime                                      | The meeting start time in UTC.                                                                                                                                                                                                                              |
-| endDateTime           | DateTime                                      | The meeting end time in UTC.                                                                                                                                                                                                                                |
-| id                    | String                                        | The default ID associated with the online meeting. Read-only.                                                                                                                                                                                               |
-| joinWebUrl            | String                                        | The join URL of the online meeting. Read-only.                                                                                                                                                                                                              |
-| participants          | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting.  This includes the organizer and the attendees.                                                                                                                                                        |
-| subject               | String                                        | The subject of the online meeting.                                                                                                                                                                                                                          |
 | capabilities          | String collection                             | The list of meeting capabilities. Possible values are: `questionAndAnswer`.                                                                                                                                                                                 |
-| videoTeleconferenceId | String                                        | The video teleconferencing ID. Read-only.                                                                                                                                                                                                                   |
-| joinInformation       | [itemBody](itembody.md)                       | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only                                                                                                                                       |
+| endDateTime           | DateTime                                      | The meeting end time in UTC.                                                                                                                                                                                                                                |
 | externalId            | String                                        | The external ID. A custom ID. Optional.                                                                                                                                                                                                                     |
-| isEntryExitAnnounced  | Boolean                                       | Whether or not to announce when callers join or leave.                                                                                                                                                                                                      |
-| lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby.                                                                                                                                                                                                  |
-| allowedPresenters     | onlineMeetingPresenters                       | Specifies who can be a presenter in a meeting. Possible values are `everyone`, `organization`, `roleIsPresenter`, `organizer`, and `unknownFutureValue`.                                                                                                    |
+| id                    | String                                        | The default ID associated with the online meeting. Read-only.                                                                                                                                                                                               |
 | isBroadcast           | Boolean                                       | Indicates if this is a live event.                                                                                                                                                                                                                   |
-| broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Settings related to a live event*                                                                                                                                                                                                                    |
-| attendeeReport        | Stream                                        | The content stream of the attendee report of a live event. Read-only.                                                                                                                                                                                       |
+| isEntryExitAnnounced  | Boolean                                       | Whether or not to announce when callers join or leave.                                                                                                                                                                                                      |
+| joinWebUrl            | String                                        | The join URL of the online meeting. Read-only.                                                                                                                                                                                                              |
+| joinInformation       | [itemBody](itembody.md)                       | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only                                                                                                                                       |
+| lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby.                                                                                                                                                                                                  |
+| participants          | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting.  This includes the organizer and the attendees.                                                                                                                                                        |
 | recording             | Stream                                        | The content stream of the recording of a live event. Read-only.                                                                                                                                                                                             |
-| alternativeRecording  | Stream                                        | The content stream of the alternative recording of a live event. Read-only.                                                                                                                                                                                 |
+| startDateTime         | DateTime                                      | The meeting start time in UTC.                                                                                                                                                                                                                              |
+| subject               | String                                        | The subject of the online meeting.                                                                                                                                                                                                                          |
+| videoTeleconferenceId | String                                        | The video teleconferencing ID. Read-only.                                                                                                                                                                                                                   |
 
 > [!IMPORTANT]
 > The **autoAdmittedUsers** property is obsolete. Use **lobbyBypassSettings.scope** instead for meeting option configurations.
@@ -81,22 +81,22 @@ Contains information about a meeting, including the URL used to join a meeting, 
 }-->
 ```json
 {
-  "audioConferencing": {"@odata.type": "#microsoft.graph.audioConferencing"},
-  "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
+  "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
+  "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "joinWebUrl": "String",
-  "participants": {"@odata.type": "#microsoft.graph.meetingParticipants"},
+  "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
   "subject": "String",
   "capabilities": [ "questionAndAnswer" ],
   "videoTeleconferenceId": "String",
   "isEntryExitAnnounced": "Boolean",
-  "lobbyBypassSettings": {"@odata.type": "#microsoft.graph.lobbyBypassSettings"},
+  "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
   "allowedPresenters": "String",
   "isBroadcast": "Boolean",
-  "broadcastSettings": {"@odata.type": "#microsoft.graph.broadcastSettings"}
+  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"}
 }
 ```
 

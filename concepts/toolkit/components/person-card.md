@@ -72,10 +72,10 @@ The Person-Card component allows the user to contact the target person, includin
 If the Person-Card component is unable to detect the Teams lib, the component will attempt to open the Teams web client instead.
 
 ```ts
-import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
+import * as microsoftTeams from "@microsoft/teams-js";
 import {TeamsHelper} from '@microsoft/mgt';
 
-TeamsHelper.microsoftTeamsLib = MicrosoftTeams;
+TeamsHelper.microsoftTeamsLib = microsoftTeams;
 ```
 
 For more information about the `TeamsProvider` provider, see [Microsoft Teams provider](../providers/teams.md).
