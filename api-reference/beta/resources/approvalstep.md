@@ -19,9 +19,9 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), the approva
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-|[Get approvalStep](../api/approval-get-steps.md) | [approvalStep](approvalstep.md) | Retrieve the properties of an **approvalStep** object. |
 |[List approvalSteps](../api/approval-list-steps.md) | [approvalStep](approvalstep.md) collection | List the **approvalStep** objects associated with an **approval** object. |
-
+|[Get approvalStep](../api/approvalstep-get.md) | [approvalStep](approvalstep.md) | Retrieve the properties of an **approvalStep** object. |
+|[Update approvalStep](../api/approvalstep-update.md) | None | Apply approve or deny decision on an **approvalStep** object. |
 
 ## Properties
 |Property|Type|Description|
