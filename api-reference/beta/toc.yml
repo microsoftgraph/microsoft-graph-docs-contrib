@@ -10995,7 +10995,7 @@ items:
               href: api/accessreviewinstancedecisionitem-listpendingapproval.md
             - name: Update
               href: api/accessreviewinstancedecisionitem-update.md
-        - name: Access reviews
+        - name: Access reviews (legacy)
           href: resources/accessreviews-root.md
           items:
           - name: Access review
