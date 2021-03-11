@@ -48,8 +48,8 @@ The following table shows the parameters that can be used with this action.
 |:---|:---|:---|
 | decision  | String | Access decision for the entity being reviewed. Possible values are: `Approve` `Deny` `NotReviewed` `DontKnow`. Required.  |
 |  justification | String | Context of the review provided to admins. Required if justificationRequiredOnApproval is True on the accessReviewScheduleDefinition.  |
-|principalId|String|If supplied, all the `accessReviewInstanceDecisionItems` with matching principalId will be reviewed in this batch.|
-|resourceId|String|If supplied, all the `accessReviewInstanceDecisionItems` with matching resourceId will be reviewed in this batch.|
+|principalId|String|If supplied, all the `accessReviewInstanceDecisionItems` with matching principalId will be reviewed in this batch. If not supplied, all principalIds will be reviewed.|
+|resourceId|String|If supplied, all the `accessReviewInstanceDecisionItems` with matching resourceId will be reviewed in this batch. If not supplied, all resourceIds will be reviewed.|
 
 
 
