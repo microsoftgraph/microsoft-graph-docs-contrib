@@ -27,7 +27,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |catalogId|String|The unique ID of the access package catalog.|
-|expirationDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|expirationDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String| Read-only.|
 |isValidationOnly|Boolean|If set, does not add the resource.|
 |justification|String|The requestor's justification for adding or removing the resource.|
