@@ -29,7 +29,7 @@ GA of the [cloud printing API](universal-print-concept-overview.md) for Universa
 
 ## March 2021: New in preview only
 
-### Cloud printing
+### Devices and apps | Cloud printing
 Get the most recent date/time (**lastSeenDateTime** property) when a printer interacted with Universal Print.
 
 ### Sites and lists
