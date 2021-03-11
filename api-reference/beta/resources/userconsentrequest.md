@@ -29,8 +29,8 @@ A [userConsentRequest](../resources/userconsentrequest.md) is created by an user
 |completedDateTime|DateTimeOffset|The date and time when the **status** of the request was marked as `Completed`. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is '2014-01-01T00:00:00Z'.|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the request.|
 |createdDateTime|DateTimeOffset|The date and time when the request was created. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is '2014-01-01T00:00:00Z'. Supports `$filter` (`eq` only) and `$orderby`.|
-|id|String|Identifier of the request. |
 |customData|String|Text field. |
+|id|String|Identifier of the request. |
 |reason|String|The user's justification for requiring access to the app. Supports `$filter` (`eq` only) and `$orderby`.  |
 |status|String|The status of the user's app consent request. Possible values are: `Initializing`, `InProgress`, and `Completed`. Supports `$filter` (`eq` only) and `$orderby`. |
 
