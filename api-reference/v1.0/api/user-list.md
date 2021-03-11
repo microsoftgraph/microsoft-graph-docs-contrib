@@ -1,7 +1,7 @@
 ---
 title: "List users"
 description: "Retrieve a list of user objects."
-author: "krbain"
+author: "jpettere"
 localization_priority: Priority
 ms.prod: "users"
 doc_type: apiPageType

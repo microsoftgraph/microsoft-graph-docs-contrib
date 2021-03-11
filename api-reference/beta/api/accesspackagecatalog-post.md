@@ -3,7 +3,7 @@ title: "Create accessPackageCatalog"
 description: "Create a new accessPackageCatalog."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
