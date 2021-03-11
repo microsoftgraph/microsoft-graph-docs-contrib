@@ -3,7 +3,7 @@ title: "deviceHealthScriptDeviceState resource type"
 description: "Contains properties for device run state of the device health script."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -33,7 +33,7 @@ Contains properties for device run state of the device health script.
 |detectionState|[runState](../resources/intune-shared-runstate.md)|Detection state from the lastest device health script execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|The last timestamp of when the device health script executed|
 |expectedStateUpdateDateTime|DateTimeOffset|The next timestamp of when the device health script is expected to execute|
-|lastSyncDateTime|DateTimeOffset|The last time that Intune Management Extension synced with Intune|
+|lastSyncDateTime|DateTimeOffset|The last time that Intune Managment Extension synced with Intune|
 |preRemediationDetectionScriptOutput|String|Output of the detection script before remediation|
 |preRemediationDetectionScriptError|String|Error from the detection script before remediation|
 |remediationScriptError|String|Error output of the remediation script|
@@ -70,7 +70,6 @@ Here is a JSON representation of the resource.
   "remediationState": "String"
 }
 ```
-
 
 
 

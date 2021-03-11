@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsResourcePerformance resource type"
 description: "The user experience analytics resource performance entity."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -73,7 +73,6 @@ Here is a JSON representation of the resource.
   "deviceResourcePerformanceScore": 1024
 }
 ```
-
 
 
 

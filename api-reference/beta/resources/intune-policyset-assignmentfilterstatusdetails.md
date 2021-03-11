@@ -3,7 +3,7 @@ title: "assignmentFilterStatusDetails resource type"
 description: "Represent status details for device and payload and all associated applied filters."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -58,12 +58,18 @@ Here is a JSON representation of the resource.
       "assignmentFilterPlatform": "String",
       "evaluationResult": "String",
       "evaluationDateTime": "String (timestamp)",
-      "assignmentFilterType": "String"
+      "assignmentFilterType": "String",
+      "assignmentFilterTypeAndEvaluationResults": [
+        {
+          "@odata.type": "microsoft.graph.assignmentFilterTypeAndEvaluationResult",
+          "assignmentFilterType": "String",
+          "evaluationResult": "String"
+        }
+      ]
     }
   ]
 }
 ```
-
 
 
 

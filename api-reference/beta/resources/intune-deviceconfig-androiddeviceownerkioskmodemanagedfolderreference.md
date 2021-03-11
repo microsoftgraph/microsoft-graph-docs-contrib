@@ -3,7 +3,7 @@ title: "androidDeviceOwnerKioskModeManagedFolderReference resource type"
 description: "A reference to folder containing apps and weblinks on the Managed Home Screen"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -43,7 +43,6 @@ Here is a JSON representation of the resource.
   "folderIdentifier": "String"
 }
 ```
-
 
 
 

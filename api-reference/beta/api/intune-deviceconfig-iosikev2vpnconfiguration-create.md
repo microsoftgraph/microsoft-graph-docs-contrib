@@ -3,7 +3,7 @@ title: "Create iosikEv2VpnConfiguration"
 description: "Create a new iosikEv2VpnConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -20,7 +20,7 @@ Create a new [iosikEv2VpnConfiguration](../resources/intune-deviceconfig-iosikev
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -465,7 +465,6 @@ Content-Length: 5664
   "mtuSizeInBytes": 14
 }
 ```
-
 
 
 

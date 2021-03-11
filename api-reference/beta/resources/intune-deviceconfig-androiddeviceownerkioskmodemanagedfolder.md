@@ -3,7 +3,7 @@ title: "androidDeviceOwnerKioskModeManagedFolder resource type"
 description: "A folder containing pages of apps and weblinks on the Managed Home Screen"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -48,7 +48,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

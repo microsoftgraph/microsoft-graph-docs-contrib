@@ -3,7 +3,7 @@ title: "List deviceManagementConfigurationSimpleSettingDefinitions"
 description: "List properties and relationships of the deviceManagementConfigurationSimpleSettingDefinition objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -20,11 +20,11 @@ List properties and relationships of the [deviceManagementConfigurationSimpleSet
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9890
+Content-Length: 9930
 
 {
   "value": [
@@ -92,6 +92,7 @@ Content-Length: 9890
       "categoryId": "Category Id value",
       "settingUsage": "configuration",
       "uxBehavior": "dropdown",
+      "visibility": "settingsCatalog",
       "id": "30dc0613-0613-30dc-1306-dc301306dc30",
       "description": "Description value",
       "helpText": "Help Text value",
@@ -233,7 +234,6 @@ Content-Length: 9890
   ]
 }
 ```
-
 
 
 

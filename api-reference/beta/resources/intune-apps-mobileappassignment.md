@@ -3,7 +3,7 @@ title: "mobileAppAssignment resource type"
 description: "A class containing the properties used for Group Assignment of a Mobile App."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -67,7 +67,6 @@ Here is a JSON representation of the resource.
   "sourceId": "String"
 }
 ```
-
 
 
 

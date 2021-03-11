@@ -3,7 +3,7 @@ title: "Create win32LobApp"
 description: "Create a new win32LobApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -20,7 +20,7 @@ Create a new [win32LobApp](../resources/intune-apps-win32lobapp.md) object.
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -334,7 +334,6 @@ Content-Length: 3577
   "displayVersion": "Display Version value"
 }
 ```
-
 
 
 

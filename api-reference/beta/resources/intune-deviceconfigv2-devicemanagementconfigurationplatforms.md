@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationPlatforms enum type"
 description: "Supported platform types."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -24,7 +24,6 @@ Supported platform types.
 |macOS|8|MacOS.|
 |windows10X|16|Windows 10 X.|
 |windows10|32|Windows 10.|
-
 
 
 

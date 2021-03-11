@@ -1,13 +1,13 @@
 ---
-title: "chromeOSDeviceProperty resource type"
-description: "Not yet documented"
+title: "assignmentFilterState resource type"
+description: "Represents result of GetState API."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
-# chromeOSDeviceProperty resource type
+# assignmentFilterState resource type
 
 Namespace: microsoft.graph
 
@@ -15,15 +15,12 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+Represents result of GetState API.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|Not yet documented|
-|value|String|Not yet documented|
-|valueType|String|Not yet documented|
-|updatable|Boolean|Not yet documented|
+|enabled|Boolean|Indicator to if AssignmentFilter is enabled or disabled.|
 
 ## Relationships
 None
@@ -32,19 +29,15 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.chromeOSDeviceProperty"
+  "@odata.type": "microsoft.graph.assignmentFilterState"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.chromeOSDeviceProperty",
-  "name": "String",
-  "value": "String",
-  "valueType": "String",
-  "updatable": true
+  "@odata.type": "#microsoft.graph.assignmentFilterState",
+  "enabled": true
 }
 ```
-
 
 
 

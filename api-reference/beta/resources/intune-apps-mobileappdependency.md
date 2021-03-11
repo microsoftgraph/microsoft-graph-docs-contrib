@@ -3,7 +3,7 @@ title: "mobileAppDependency resource type"
 description: "Describes a dependency type between two mobile apps."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -67,7 +67,6 @@ Here is a JSON representation of the resource.
   "dependsOnAppCount": 1024
 }
 ```
-
 
 
 

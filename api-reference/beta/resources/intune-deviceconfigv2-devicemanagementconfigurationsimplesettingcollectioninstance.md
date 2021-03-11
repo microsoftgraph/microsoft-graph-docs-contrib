@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationSimpleSettingCollectionInstance resource ty
 description: "Simple setting collection instance"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -48,7 +48,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

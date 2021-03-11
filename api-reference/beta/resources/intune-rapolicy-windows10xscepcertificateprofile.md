@@ -3,7 +3,7 @@ title: "windows10XSCEPCertificateProfile resource type"
 description: "Windows X SCEP Certificate configuration profile"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -109,7 +109,6 @@ Here is a JSON representation of the resource.
   "subjectNameFormatString": "String"
 }
 ```
-
 
 
 

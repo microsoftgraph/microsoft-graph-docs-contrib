@@ -3,7 +3,7 @@ title: "windowsFeatureUpdateProfile resource type"
 description: "Windows Feature Update Profile"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -37,6 +37,7 @@ Windows Feature Update Profile
 |createdDateTime|DateTimeOffset|The date time that the profile was created.|
 |lastModifiedDateTime|DateTimeOffset|The date time that the profile was last modified.|
 |roleScopeTagIds|String collection|List of Scope Tags for this Feature Update entity.|
+|deployableContentDisplayName|String|Friendly display name of the quality update profile deployable content|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -63,10 +64,10 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)",
   "roleScopeTagIds": [
     "String"
-  ]
+  ],
+  "deployableContentDisplayName": "String"
 }
 ```
-
 
 
 

@@ -3,7 +3,7 @@ title: "macOSCustomAppConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the macOSCustomAppConfiguration resource."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -44,7 +44,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |bundleId|String|Bundle id for targeting.|
-|fileName|String|Configuration file name (*.plist \| *.xml).|
+|fileName|String|Configuration file name (*.plist | *.xml).|
 |configurationXml|Binary|Configuration xml. (UTF8 encoded byte array)|
 
 ## Relationships
@@ -105,7 +105,6 @@ Here is a JSON representation of the resource.
   "configurationXml": "binary"
 }
 ```
-
 
 
 

@@ -3,7 +3,7 @@ title: "windowsWifiEnterpriseEAPConfiguration resource type"
 description: "This entity provides descriptions of the declared methods, properties and relationships exposed by the Wifi CSP."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -178,7 +178,6 @@ Here is a JSON representation of the resource.
   "authenticationType": "String"
 }
 ```
-
 
 
 

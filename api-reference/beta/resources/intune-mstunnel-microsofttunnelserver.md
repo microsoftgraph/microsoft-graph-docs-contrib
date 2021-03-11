@@ -3,7 +3,7 @@ title: "microsoftTunnelServer resource type"
 description: "Entity that represents a single Microsoft Tunnel server"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -54,7 +54,6 @@ Here is a JSON representation of the resource.
   "lastCheckinDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

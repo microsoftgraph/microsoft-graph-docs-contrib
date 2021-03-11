@@ -3,7 +3,7 @@ title: "deviceManagementResourceAccessProfileIntent enum type"
 description: "The administrator intent for the assignment of the profile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -22,7 +22,6 @@ The administrator intent for the assignment of the profile.
 |:---|:---|:---|
 |apply|0|Apply the profile.|
 |remove|1|Remove the profile from devices that have installed the profile.|
-
 
 
 
