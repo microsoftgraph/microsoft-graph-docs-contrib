@@ -177,9 +177,9 @@ Chat-level subscriptions also support keyword-based search via the `$search` que
 
 |Permission type      | Permissions (from least to most privileged)              | Supported in version |
 |:--------------------|:---------------------------------------------------------|:---------------------|
-|Delegated (work or school account) | Chat.Read | v1.0 |
+|Delegated (work or school account) | Chat.Read | beta |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Chat.Read.All | v1.0 |
+|Application | Chat.Read.All | beta |
 
 ### Example 1: Subscribe to messages in a chat
 
