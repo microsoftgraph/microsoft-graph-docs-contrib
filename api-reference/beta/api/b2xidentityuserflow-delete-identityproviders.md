@@ -35,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /b2xUserFlows/{id}/identityProviders/{id}/$ref
+DELETE /identity/b2xUserFlows/{id}/identityProviders/{id}/$ref
 ```
 
 ## Request headers

@@ -414,28 +414,7 @@ Content-Type: application/json
 
 ### Example 3: Call transfer to PSTN number
 
-This call requires an application instance with a PSTN number assigned.
-
-#### Step 1: Create application instance
-Using tenant admin credentials, call the following cmdlets on the tenant remote PowerShell to create the application instance. For more information, see [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) and [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
-```
-PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
-PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
-```
-#### Step 2: Assign Microsoft 365 licenses
-1. Use tenant admin credentials to sign in to https://admin.microsoft.com/ and go to the **Users -> Active users** tab.
-2. Select the application instance, assign **Microsoft 365 Domestic and International Calling Plan** and **Microsoft 365 Phone System - Virtual User** licenses, and click **Save changes**. If the required licenses are not available in the tenant, you can get them from the **Billing -> Purchase services** tab.
-#### Step 3: Acquire PSTN number
-1. Use tenant admin credentials to sign in to https://admin.teams.microsoft.com/ and click the **Legacy portal** tab on the left panel.
-2. In the new page, go to the **voice -> phone numbers** tab.
-3. Click the **+** button, select **New Service Numbers**, and go to the **Add new service numbers** page.
-4. Select **Country/Region**, **State/Region**, **City**, input **Quantity**, and click **add** to search. Click **acquire numbers**. The newly acquired number will show on  the **phone numbers** tab.
-#### Step 4: Assign PSTN number to application instance
-With tenant admin credentials, call the following cmdlets on the tenant remote PowerShell to assign the PSTN number to the application instance. For more information, see [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) and [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
-```
-PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
-PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
-```
+This call requires an application instance with a PSTN number assigned. For details, see [Assign a phone number to your bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### Request
 The following example shows the request.
@@ -607,7 +586,7 @@ Content-Type: application/json
 
 ### Example 4: Consultative transfer to PSTN number
 
-This call requires an application instance with PSTN number assigned, as described in Example 3.
+This call requires an application instance with a PSTN number assigned. For details, see [Assign a phone number to your bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### Request
 The following example shows the request.
