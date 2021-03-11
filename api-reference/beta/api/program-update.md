@@ -28,7 +28,7 @@ The signed in user must also be in a directory role that permits them to update 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /programs('{programId}')
+PATCH /programs/{programId}
 ```
 ## Request headers
 | Name         | Type        | Description |
