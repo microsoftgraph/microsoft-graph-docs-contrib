@@ -10,9 +10,11 @@ localization_priority: Priority
 This changelog covers specific API-level changes in Microsoft Graph v1.0 and beta.
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
+## March 2021
 
-## February 2021
+### Users
 
+<<<<<<< HEAD
 ### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
@@ -22,12 +24,23 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added the **displayName** property to [Terms of Use agreementfileversion](/graph/api/resources/agreementfileversion?view=graph-rest-1.0&preserve-view=true)|
 
 ### Identity and access | Governance
+=======
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [translationPreferences](/graph/api/resources/translationPreferences?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the [translationLanguageOverride](/graph/api/resources/translationLanguageOverride?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the **translationPreferences** property to the [regionalAndLanguageSettings](/graph/api/resources/regionalandlanguagesettings?view=graph-rest-beta&preserve-view=true) resource.|
+>>>>>>> master
 
-| **Change type** | **Version** | **Description**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| Addition        | v1.0        | Added the [agreement](/graph/api/resources/agreement?view=graph-rest-1.0&preserve-view=true) and [agreementAcceptance](/graph/api/resources/agreementacceptance?view=graph-rest-1.0&preserve-view=true) resources. |
-| Addition        | v1.0        | Added the following APIs for [agreement](/graph/api/resources/agreement?view=graph-rest-1.0&preserve-view=true): [Create](/graph/api/greement-post-agreements?view=graph-rest-1.0&preserve-view=true), [List](/graph/api/agreement-list?view=graph-rest-1.0&preserve-view=true), [Get](/graph/api/agreement-get?view=graph-rest-1.0&preserve-view=true), [Update](/graph/api/agreement-update?view=graph-rest-1.0&preserve-view=true), [Delete](/graph/api/agreement-delete?view=graph-rest-1.0&preserve-view=true). |
-| Addition        | v1.0        | Added the [agreementAcceptance](/graph/api/resources/agreementacceptance?view=graph-rest-1.0&preserve-view=true) relationships to the [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) resource. |
+## March 2021
+
+### Identity and access
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+| Addition        | v1.0        | Introduced the new resource type [applicationTemplate](/graph/api/resources/applicationtemplate.md). This resource type supports [instantiate](/graph/api/applicationtemplate-instantiate.md), [list](/graph/api/applicationtemplate-instantiate.md) and [get](/graph/api/applicationtemplate-get.md) applications from the Azure AD application gallery.
+
+## February 2021
 
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                                                                                              |

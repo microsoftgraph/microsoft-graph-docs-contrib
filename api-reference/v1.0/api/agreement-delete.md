@@ -3,7 +3,7 @@ title: "Delete agreement"
 description: "Delete an agreement object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "raprakasMSFT"
 ---
 
@@ -39,18 +39,17 @@ Do not supply a request body for this method.
 If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
+### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_agreement"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/{id}
+DELETE https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/093b947f-8363-4979-a47d-4c52b33ee1be
 ```
 
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",

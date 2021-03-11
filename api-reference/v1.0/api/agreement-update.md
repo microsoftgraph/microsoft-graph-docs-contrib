@@ -3,7 +3,7 @@ title: "Update agreement"
 description: "Update the properties of an agreement object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "raprakasMSFT"
 ---
 
@@ -32,7 +32,7 @@ PATCH /identityGovernance/termsOfUse/agreements/{id}
 | Authorization | string | Bearer \{token\}. Required. |
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. Only the following properties are supported for update.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -42,25 +42,24 @@ In the request body, supply the values for relevant fields that should be update
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [agreement](../resources/agreement.md) object in the response body.
 ## Example
-##### Request
+### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_agreement"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/{id}
+PATCH https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/093b947f-8363-4979-a47d-4c52b33ee1be
 Content-type: application/json
 Content-length: 85
 
 {
-  "displayName": "displayName-value",
+  "displayName": "Sample ToU display name",
   "isViewingBeforeAcceptanceRequired": true
 }
 ```
 
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
@@ -74,9 +73,9 @@ Content-type: application/json
 Content-length: 105
 
 {
-  "displayName": "displayName-value",
+  "displayName": "Sample ToU display name",
   "isViewingBeforeAcceptanceRequired": true,
-  "id": "id-value"
+  "id": "093b947f-8363-4979-a47d-4c52b33ee1be"
 }
 ```
 

@@ -3,7 +3,7 @@ title: "Get agreement"
 description: "Retrieve the properties and relationships of an agreement object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "raprakasMSFT"
 ---
 
@@ -26,10 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /identityGovernance/termsOfUse/agreements/{id}
 ```
-<!--
+
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
--->
 
 ## Request headers
 | Name         | Type        | Description |
@@ -41,18 +40,17 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and [agreement](../resources/agreement.md) object in the response body.
 ## Example
-##### Request
+### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_agreement"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/{id}?$expand=files
+GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/093b947f-8363-4979-a47d-4c52b33ee1be?$expand=files
 ```
 
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -69,7 +67,7 @@ Content-type: application/json
   "id": "id-value",
   "files": [
     {
-      "id": "id-value",
+      "id": "093b947f-8363-4979-a47d-4c52b33ee1be",
       "language": "en",
       "fileName": "TOU.pdf",
       "isDefault": true

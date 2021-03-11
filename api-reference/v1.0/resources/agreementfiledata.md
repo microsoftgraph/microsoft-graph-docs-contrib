@@ -1,9 +1,9 @@
 ---
 title: "agreementFileData resource type"
-description: "Represents the blob of an Azure Active Directory (Azure AD) terms of use agreement file."
+description: "Represents an Azure Active Directory (Azure AD) terms of use agreement file."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "governance"
 author: "raprakasMSFT"
 ---
 
@@ -11,12 +11,12 @@ author: "raprakasMSFT"
 
 Namespace: microsoft.graph
 
-Represents the blob of an Azure Active Directory (Azure AD) terms of use agreement file.
+Represents an Azure Active Directory (Azure AD) terms of use agreement file.
 
 ## Properties
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-|data|Binary|Data representing the terms of use PDF document. Read-only.|
+|data|Binary|Data that represents the terms of use PDF document. Read-only.|
 
 ## JSON representation
 
