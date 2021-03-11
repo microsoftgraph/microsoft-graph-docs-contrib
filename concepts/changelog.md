@@ -14,7 +14,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ### Users
 
-<<<<<<< HEAD
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [translationPreferences](/graph/api/resources/translationPreferences?view=graph-rest-beta&preserve-view=true) resource.|
