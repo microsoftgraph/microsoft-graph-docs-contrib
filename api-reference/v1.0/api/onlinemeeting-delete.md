@@ -1,7 +1,7 @@
 ---
 title: "Delete onlineMeeting"
 description: "Delete an online meeting."
-author: "ananmishr"
+author: "jsandoval-msft"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -19,13 +19,26 @@ Delete an [onlineMeeting](../resources/onlinemeeting.md) object.
 | :-------------- | :----------------------------------------------------------- |
 | Delegated (work or school account)     | OnlineMeetings.ReadWrite              |
 | Delegated (personal Microsoft account) | Not Supported.                         |
-| Application                            | Not Supported.                         |
+| Application                            | OnlineMeetings.ReadWrite.All*          |
+
+> [!IMPORTANT]
+> \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to delete an online meeting on behalf of that user (user ID specified in the reuqest path) has created.
 
 ## HTTP request
+To delete the specified onlineMeeting by meeting ID with delegated permission: 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/onlineMeetings/{id}
+DELETE /me/onlineMeetings/{meetingId}
 ```
+
+To delete the specified onlineMeeting by meeting ID with application permission:
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /users/{userId}/onlineMeetings/{meetingId}
+```
+> **Note:**
+> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+> - `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Request headers
 | Name          | Description               |
@@ -47,6 +60,7 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype"],
   "name": "delete-call"
 }-->
 ```http
