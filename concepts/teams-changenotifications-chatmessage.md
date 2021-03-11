@@ -29,6 +29,13 @@ To get to change notifications for all messages and replies across channels in a
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | ChannelMessage.Read.All |
 
+#### Supported in versions
+
+|                                     | beta               | v1.0               |
+|-------------------------------------|--------------------|--------------------|
+| Delegated (work or school accounts) | :x:                | :x:                |
+| Application-only                    | :heavy_check_mark: | :heavy_check_mark: |
+
 #### Example
 
 ```http
@@ -58,6 +65,13 @@ To get change notifications for all messages across chats in a tenant, subscribe
 |Delegated (work or school account) | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Chat.Read.All |
+
+#### Supported in versions
+
+|                                     | beta               | v1.0               |
+|-------------------------------------|--------------------|--------------------|
+| Delegated (work or school accounts) | :x:                | :x:                |
+| Application-only                    | :heavy_check_mark: | :heavy_check_mark: |
 
 #### Example
 
@@ -90,6 +104,13 @@ Channel-level subscriptions also support keyword-based search via the `$search` 
 |Delegated (work or school account) | ChannelMessage.Read.All |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | ChannelMessage.Read.All, ChannelMessage.Read.Group* |
+
+#### Supported in versions
+
+|                                     | beta               | v1.0               |
+|-------------------------------------|--------------------|--------------------|
+| Delegated (work or school accounts) | :heavy_check_mark: | :heavy_check_mark: |
+| Application-only                    | :heavy_check_mark: | :heavy_check_mark: |
 
 >**Note:** ChannelMessage.Read.Group is supported as part of [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -180,6 +201,13 @@ Chat-level subscriptions also support keyword-based search via the `$search` que
 |Delegated (work or school account) | Chat.Read |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Chat.Read.All |
+
+#### Supported in versions
+
+|                                     | beta               | v1.0               |
+|-------------------------------------|--------------------|--------------------|
+| Delegated (work or school accounts) | :heavy_check_mark: | :x:                |
+| Application-only                    | :heavy_check_mark: | :x:                |
 
 ### Example 1: Subscribe to messages in a chat
 
