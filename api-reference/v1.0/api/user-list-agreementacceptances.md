@@ -24,6 +24,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/agreementAcceptances
+```
+
+## HTTP request
+<!-- { "blockType": "ignored" } -->
+```http
 GET /users/{id | userPrincipalName}/agreementAcceptances
 ```
 
@@ -48,6 +54,16 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/agreementAcceptances
+```
+
+### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_agreementacceptances"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/f2f4f8e9-c99d-4c73-b990-34f81fbf7fcf/agreementAcceptances
 ```
 
 ### Response

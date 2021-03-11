@@ -4273,17 +4273,19 @@ items:
     - name: Governance
       items:
         - name: Terms of use
-          href: resources/agreement.md
-          items:
-          - name: Create agreement
-            href: api/agreement-post-agreements.md
-          - name: List agreements
+        items:
+          - name: agreement
+            href: resources/agreement.md
+            items:
+            - name: List
             href: api/agreement-list.md
-          - name: Get agreement
+            - name: Create
+            href: api/agreement-post-agreements.md
+            - name: Get
             href: api/agreement-get.md
-          - name: Update agreement
+            - name: Update
             href: api/agreement-update.md
-          - name: Delete agreement
+            - name: Delete
             href: api/agreement-delete.md
           - name: List acceptance status
             href: api/user-list-agreementacceptances.md

@@ -30,14 +30,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## February 2021
 
-### Identity and access | Governance
-
-| **Change type** | **Version** | **Description**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| Addition        | v1.0        | Added the [agreement](/graph/api/resources/agreement?view=graph-rest-1.0&preserve-view=true) and [agreementAcceptance](/graph/api/resources/agreementacceptance?view=graph-rest-1.0&preserve-view=true) resources. |
-| Addition        | v1.0        | Added the following APIs for [agreement](/graph/api/resources/agreement?view=graph-rest-1.0&preserve-view=true): [Create](/graph/api/greement-post-agreements?view=graph-rest-1.0&preserve-view=true), [List](/graph/api/agreement-list?view=graph-rest-1.0&preserve-view=true), [Get](/graph/api/agreement-get?view=graph-rest-1.0&preserve-view=true), [Update](/graph/api/agreement-update?view=graph-rest-1.0&preserve-view=true), [Delete](/graph/api/agreement-delete?view=graph-rest-1.0&preserve-view=true). |
-| Addition        | v1.0        | Added the [agreementAcceptance](/graph/api/resources/agreementacceptance?view=graph-rest-1.0&preserve-view=true) relationships to the [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) resource. |
-
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                                                                                              |
 | :-------------- | :------------ | :---------------------------------------                                                                     |

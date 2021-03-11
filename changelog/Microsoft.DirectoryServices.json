@@ -5,26 +5,66 @@
 	  {
         "Id": "5fdd380f-e059-43ff-9209-a3e855312f4d",
         "ApiChange": "Resource",
-        "ChangedApiName": "agreement,agreementAcceptance,agreementFile,agreementFileLocalization,agreementFileVersion,agreementFileData,termsExpiration",
+        "ChangedApiName": "agreement",
         "ChangeType": "Addition",
-        "Description": "Added the [agreement](https://docs.microsoft.com/en-us/graph/api/resources/agreement?view=graph-rest-1.0), [agreementAcceptance](https://docs.microsoft.com/en-us/graph/api/resources/agreementacceptance?view=graph-rest-1.0), [agreementFile](https://docs.microsoft.com/en-us/graph/api/resources/agreementfile?view=graph-rest-1.0), [agreementFileLocalization](https://docs.microsoft.com/en-us/graph/api/resources/agreementfilelocalization?view=graph-rest-1.0), [agreementFileVersion](https://docs.microsoft.com/en-us/graph/api/resources/agreementfileversion?view=graph-rest-1.0), [agreementFileData](https://docs.microsoft.com/en-us/graph/api/resources/agreementfiledata?view=graph-rest-1.0) and [termsExpiration](https://docs.microsoft.com/en-us/graph/api/resources/termsexpiration?view=graph-rest-1.0) resources.",
-        "Target": "agreement,agreementAcceptance,agreementFile,agreementFileLocalization,agreementFileVersion,agreementFileData,termsExpiration"
+        "Description": "Added the [agreement](https://docs.microsoft.com/en-us/graph/api/resources/agreement?view=graph-rest-1.0) resource.",
+        "Target": "agreement"
+      },
+	  {
+        "Id": "5fdd380f-e059-43ff-9209-a3e855312f4d",
+        "ApiChange": "Resource",
+        "ChangedApiName": "agreementAcceptance",
+        "ChangeType": "Addition",
+        "Description": "[agreementAcceptance](https://docs.microsoft.com/en-us/graph/api/resources/agreementacceptance?view=graph-rest-1.0) resource.",
+        "Target": "agreementAcceptance"
+      },
+	  {
+        "Id": "5fdd380f-e059-43ff-9209-a3e855312f4d",
+        "ApiChange": "Resource",
+        "ChangedApiName": "agreementFile",
+        "ChangeType": "Addition",
+        "Description": "[agreementFile](https://docs.microsoft.com/en-us/graph/api/resources/agreementfile?view=graph-rest-1.0) resource.",
+        "Target": "agreementFile"
+      },
+	  {
+        "Id": "5fdd380f-e059-43ff-9209-a3e855312f4d",
+        "ApiChange": "Resource",
+        "ChangedApiName": "agreementFileLocalization",
+        "ChangeType": "Addition",
+        "Description": "[agreementFileLocalization](https://docs.microsoft.com/en-us/graph/api/resources/agreementfilelocalization?view=graph-rest-1.0) resource.",
+        "Target": "agreementFileLocalization"
+      },
+	  {
+        "Id": "5fdd380f-e059-43ff-9209-a3e855312f4d",
+        "ApiChange": "Resource",
+        "ChangedApiName": "agreementFileVersion",
+        "ChangeType": "Addition",
+        "Description": "[agreementFileVersion](https://docs.microsoft.com/en-us/graph/api/resources/agreementfileversion?view=graph-rest-1.0) resource.",
+        "Target": "agreementFileVersion"
+      },
+	  {
+        "Id": "5fdd380f-e059-43ff-9209-a3e855312f4d",
+        "ApiChange": "Resource",
+        "ChangedApiName": "agreementFileData",
+        "ChangeType": "Addition",
+        "Description": "[agreementFileData](https://docs.microsoft.com/en-us/graph/api/resources/agreementfiledata?view=graph-rest-1.0) resource.",
+        "Target": "agreementFileData"
+      },
+	  {
+        "Id": "5fdd380f-e059-43ff-9209-a3e855312f4d",
+        "ApiChange": "Resource",
+        "ChangedApiName": "termsExpiration",
+        "ChangeType": "Addition",
+        "Description": "[termsExpiration](https://docs.microsoft.com/en-us/graph/api/resources/termsexpiration?view=graph-rest-1.0) resource.",
+        "Target": "termsExpiration"
       },
       {
         "Id": "5fdd380f-e059-43ff-9209-a3e855312f4d",
         "ApiChange": "Resource",
-        "ChangedApiName": "agreement,Create,List,Get,Update,Delete",
+        "ChangedApiName": "user",
         "ChangeType": "Addition",
-        "Description": "Added the following APIs for [agreement](https://docs.microsoft.com/en-us/graph/api/resources/agreement?view=graph-rest-1.0): [Create](https://docs.microsoft.com/en-us/graph/api/greement-post-agreements?view=graph-rest-1.0), [List](https://docs.microsoft.com/en-us/graph/api/agreement-list?view=graph-rest-1.0), [Get](https://docs.microsoft.com/en-us/graph/api/agreement-get?view=graph-rest-1.0), [Update](https://docs.microsoft.com/en-us/graph/api/agreement-update?view=graph-rest-1.0), [Delete](https://docs.microsoft.com/en-us/graph/api/agreement-delete?view=graph-rest-1.0).",
-        "Target": "agreement,Create,List,Get,Update,Delete"
-      },
-      {
-        "Id": "5fdd380f-e059-43ff-9209-a3e855312f4d",
-        "ApiChange": "Resource",
-        "ChangedApiName": "agreementAcceptance,user",
-        "ChangeType": "Addition",
-        "Description": "Added the [agreementAcceptance](https://docs.microsoft.com/en-us/graph/api/resources/agreementacceptance?view=graph-rest-1.0) relationships to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
-        "Target": "agreementAcceptance,user"
+        "Description": "Added the [agreementAcceptance](https://docs.microsoft.com/en-us/graph/api/resources/agreementacceptance?view=graph-rest-1.0) relationship to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+        "Target": "user"
       }
       ],
       "Id": "5fdd380f-e059-43ff-9209-a3e855312f4d",
@@ -33,7 +73,7 @@
       "CreatedDateTime": "2021-02-17T00:00:00",
       "WorkloadArea": "Identity and access ",
       "SubArea": "Governance"
-	 },
+	},
     {
        "ChangeList": [
         {

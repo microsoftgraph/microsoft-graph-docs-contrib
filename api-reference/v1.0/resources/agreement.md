@@ -17,8 +17,8 @@ Represents a tenant's customizable terms of use agreement that is created and ma
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create agreements](../api/agreement-post-agreements.md) | [agreement](agreement.md) | Create a new agreement by posting to the agreement collection. |
 | [List agreements](../api/agreement-list.md) | [agreement](agreement.md) collection | Get an agreement object collection. |
+| [Create agreements](../api/agreement-post-agreements.md) | [agreement](agreement.md) | Create a new agreement by posting to the agreement collection. |
 | [Get agreement](../api/agreement-get.md) | [agreement](agreement.md) | Read properties and relationships of an agreement object. |
 | [Update agreement](../api/agreement-update.md) | [agreement](agreement.md) | Update an agreement object. |
 | [Delete agreement](../api/agreement-delete.md) | None | Delete an agreement object. |
@@ -40,8 +40,8 @@ Represents a tenant's customizable terms of use agreement that is created and ma
 |acceptances|[agreementAcceptance](agreementacceptance.md) collection|Read-only. Information about acceptances of this agreement.|
 |files|[agreementFileLocalization](agreementfilelocalization.md) collection| PDFs linked to this agreement. This property is in the process of being deprecated. Use the  **file** property instead.|
 |file|[agreementFile](agreementfile.md) | Default PDF linked to this agreement.|
-|file/localizations|[agreementFileLocalization](agreementfilelocalization.md) collection|The localized versions of the agreement files attached to the agreement.|
-|file/localizations/{localizationId}/versions|[agreementFileVersion](agreementfileversion.md) collection|The version history for the localized agreement file.|
+|localizations|[agreementFileLocalization](agreementfilelocalization.md) collection|The localized versions of the agreement files attached to the agreement.|
+|versions|[agreementFileVersion](agreementfileversion.md) collection|The version history for the localized agreement file.|
 
 
 ## JSON representation
