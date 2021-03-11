@@ -27,12 +27,13 @@ One of the following permissions is required to call this API. To learn more, in
 POST /identityGovernance/termsOfUse/agreements
 ```
 ## Request headers
-| Name         | Type        | Description |
-|:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Required. |
+| Name         | Description |
+|:-------------|:------------|
+| Authorization | Bearer \{token\}. Required. |
+| Content-type  | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [agreement](../resources/agreement.md) object.
+In the request body, supply a JSON representation of an [agreement](../resources/agreement.md) object.
 
 The following table shows the properties that are required when you create an agreement.
 
@@ -46,7 +47,7 @@ The following table shows the properties that are required when you create an ag
 |data|Binary|Data that represents the terms of use for the PDF document.|
 
 ## Response
-If successful, this method returns a `201, Created` response code and [agreement](../resources/agreement.md) object in the response body.
+If successful, this method returns a `201, Created` response code and an [agreement](../resources/agreement.md) object in the response body.
 
 ## Example
 ### Request
