@@ -23,18 +23,11 @@ To get to change notifications for all messages and replies across channels in a
 
 #### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported. |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | ChannelMessage.Read.All |
-
-#### Supported in versions
-
-|                                     | beta               | v1.0               |
-|-------------------------------------|--------------------|--------------------|
-| Delegated (work or school accounts) | :x:                | :x:                |
-| Application-only                    | :heavy_check_mark: | :heavy_check_mark: |
+|Permission type      | Permissions (from least to most privileged)              | Supported versions |
+|:--------------------|:---------------------------------------------------------|:-------------------|
+|Delegated (work or school account) | Not supported. | Not supported. |
+|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
+|Application | ChannelMessage.Read.All | beta, v1.0 |
 
 #### Example
 
@@ -60,18 +53,11 @@ To get change notifications for all messages across chats in a tenant, subscribe
 
 #### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported. |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Chat.Read.All |
-
-#### Supported in versions
-
-|                                     | beta               | v1.0               |
-|-------------------------------------|--------------------|--------------------|
-| Delegated (work or school accounts) | :x:                | :x:                |
-| Application-only                    | :heavy_check_mark: | :heavy_check_mark: |
+|Permission type      | Permissions (from least to most privileged)              | Supported versions |
+|:--------------------|:---------------------------------------------------------|:-------------------|
+|Delegated (work or school account) | Not supported. | Not supported. |
+|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
+|Application | Chat.Read.All | beta, v1.0 |
 
 #### Example
 
@@ -99,18 +85,11 @@ Channel-level subscriptions also support keyword-based search via the `$search` 
 
 ### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | ChannelMessage.Read.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | ChannelMessage.Read.All, ChannelMessage.Read.Group* |
-
-#### Supported in versions
-
-|                                     | beta               | v1.0               |
-|-------------------------------------|--------------------|--------------------|
-| Delegated (work or school accounts) | :heavy_check_mark: | :heavy_check_mark: |
-| Application-only                    | :heavy_check_mark: | :heavy_check_mark: |
+|Permission type      | Permissions (from least to most privileged)              |Supported in version |
+|:--------------------|:---------------------------------------------------------|:--------------------|
+|Delegated (work or school account) | ChannelMessage.Read.All | beta, v1.0 |
+|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
+|Application | ChannelMessage.Read.All, ChannelMessage.Read.Group* | beta, v1.0 |
 
 >**Note:** ChannelMessage.Read.Group is supported as part of [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -196,18 +175,11 @@ Chat-level subscriptions also support keyword-based search via the `$search` que
 
 ### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Chat.Read |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Chat.Read.All |
-
-#### Supported in versions
-
-|                                     | beta               | v1.0               |
-|-------------------------------------|--------------------|--------------------|
-| Delegated (work or school accounts) | :heavy_check_mark: | :x:                |
-| Application-only                    | :heavy_check_mark: | :x:                |
+|Permission type      | Permissions (from least to most privileged)              | Supported in version |
+|:--------------------|:---------------------------------------------------------|:---------------------|
+|Delegated (work or school account) | Chat.Read | v1.0 |
+|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
+|Application | Chat.Read.All | v1.0 |
 
 ### Example 1: Subscribe to messages in a chat
 
