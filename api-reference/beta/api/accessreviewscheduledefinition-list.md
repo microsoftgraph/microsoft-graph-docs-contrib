@@ -3,7 +3,7 @@ title: "List accessReviewScheduleDefinitions"
 description: "Retrieve accessReviewScheduleDefinition objects."
 localization_priority: Normal
 author: "isabelleatmsft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

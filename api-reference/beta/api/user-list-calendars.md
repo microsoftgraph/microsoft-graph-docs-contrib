@@ -32,12 +32,6 @@ GET /me/calendars
 GET /users/{id | userPrincipalName}/calendars
 ```
 
-The user's calendars in the default [calendarGroup](../resources/calendargroup.md).
-```http
-GET /me/calendargroups/{calendar_group_id}/calendars
-GET /users/{id | userPrincipalName}/calendarGroup/calendars
-```
-
 The user's calendars in a specific [calendarGroup](../resources/calendargroup.md).
 ```http
 GET /me/calendarGroups/{calendar_group_id}/calendars

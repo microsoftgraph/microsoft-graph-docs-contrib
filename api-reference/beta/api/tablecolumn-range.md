@@ -26,8 +26,10 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/{id|name}/Range
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/Range
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/Range
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
 
 ```
 ## Request headers
@@ -52,8 +54,8 @@ Here is an example of the request.
   "blockType": "request",
   "name": "tablecolumn_range"
 }-->
-```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/Range
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/Range
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablecolumn-range-csharp-snippets.md)]

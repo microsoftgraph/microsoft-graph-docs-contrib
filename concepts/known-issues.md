@@ -168,7 +168,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 * Accessing a contact contained in a child folder of a **contactFolder**.  The example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 
 ```http
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 
@@ -337,7 +337,7 @@ To get a list of teams, see [list all teams](teams-list-all-teams.md) and
 [list your teams](/graph/api/user-list-joinedteams).
 
 ### Unable to remove members from chat
-In certain situations, the call to `DELETE /chats/chat-id/members/membership-id` will fail with a `404` even if the chat member exists. This is due to a issue with the computation of the `membership-id`.
+In certain situations, the call to `DELETE /chats/chat-id/members/membership-id` will fail with a `404` even if the chat member exists. This is due to an issue with the computation of the `membership-id`.
 
 ### Unable to filter team members by roles
 The filter query to get members of a team based on their roles `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')` might not work. The server might respond with a `BAD REQUEST`.
@@ -380,7 +380,7 @@ Requesting objects using [Get directory objects from a list of IDs](/graph/api/d
 ## Query parameter limitations
 
 * Multiple namespaces are not supported.
-* GETs on `$ref` and casting is not supported on users, groups, devices, service principals and applications.
+* GETs on `$ref` and casting are not supported on users, groups, devices, service principals and applications.
 * `@odata.bind` is not supported.  This means that developers won’t be able to properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
 * `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata.
 * `$expand`:

@@ -267,7 +267,7 @@ Content-type: application/json
                 "requiredResourceSpecificApplicationPermissions": [
                 ],
                 "publishingState": "published",
-                "shortdescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
+                "shortDescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
                 "description": "For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
                 "lastModifiedDateTime": null,
                 "createdBy": null

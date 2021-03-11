@@ -4,7 +4,7 @@ description: "Represents an identity used to sign in to a user account."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "users"
-author: "krbain"
+author: "jpettere"
 ---
 
 # objectIdentity resource type

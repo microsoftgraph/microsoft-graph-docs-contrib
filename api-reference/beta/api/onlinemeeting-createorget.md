@@ -1,7 +1,7 @@
 ---
 title: "onlineMeeting: createOrGet"
 description: "Create an online meeting with a custom specified external ID. If the external ID already exists, this API will return the onlineMeeting object with that external ID."
-author: "ananmishr"
+author: "jsandoval-msft"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -30,14 +30,13 @@ One of the following permissions is required to call this API. To learn more, in
 > \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to create or get an online meeting with external ID on behalf of that user (user ID specified in the request path).
 
 ## HTTP request
-
-Request when using a delegated token:
+To call **createOrGet** API with delegated token:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/createOrGet
 ```
 
-Request when using an application token:
+To call **createOrGet** API with application token:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{userId}/onlineMeetings/createOrGet

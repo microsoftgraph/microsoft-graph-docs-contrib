@@ -3,7 +3,7 @@ title: "Get bitlockerRecoveryKey"
 description: "Retrieve the properties and relationships of a bitlockerRecoveryKey object."
 author: "hafowler"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ To get the specified BitLocker key without returning the **key** property:
 }
 -->
 ``` http
-GET /bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
+GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
 ```
 
 To get the specified BitLocker key including its **key** property:
@@ -50,7 +50,7 @@ To get the specified BitLocker key including its **key** property:
 }
 -->
 ``` http
-GET /bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$select=key
+GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$select=key
 ```
 
 ## Optional query parameters
@@ -86,7 +86,7 @@ The following is an example of the request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
+GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
@@ -149,7 +149,7 @@ The following is an example of the request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=key
+GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=key
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-csharp-snippets.md)]
