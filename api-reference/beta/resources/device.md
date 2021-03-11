@@ -42,8 +42,8 @@ This resource lets you add your own data to custom properties using [extensions]
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. default is true.|
 |alternativeSecurityIds|[alternativeSecurityId](alternativeSecurityId.md) collection| For internal use only. Not nullable. |
-|approximateLastSignInDateTime|DateTimeOffset| The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
-|complianceExpirationDateTime|DateTimeOffset| The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
+|approximateLastSignInDateTime|DateTimeOffset| The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
+|complianceExpirationDateTime|DateTimeOffset| The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 |deviceCategory|String|User-defined property set by Intune to automatically add devices to groups and simplify managing devices.|
 |deviceId|String| Unique identifier set by Azure Device Registration Service at the time of registration. |
 |deviceMetadata|String| For internal use only. Set to null. |
@@ -61,13 +61,18 @@ This resource lets you add your own data to custom properties using [extensions]
 |manufacturer|String| Manufacturer of the device. Read-only. |
 |mdmAppId|String|Application identifier used to register device into MDM. <br><br>Read-only. Supports $filter.|
 |model|String| Model of the device. Read-only. |
-|onPremisesLastSyncDateTime|DateTimeOffset|The last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` Read-only. |
+|onPremisesLastSyncDateTime|DateTimeOffset|The last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z` Read-only. |
 |onPremisesSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). Read-only.|
 |operatingSystem|String| The type of operating system on the device. Required. |
 |operatingSystemVersion|String| Operating system version of the device. Required. |
 |physicalIds|String collection| For internal use only. Not nullable. |
+<<<<<<< HEAD
 |profileType|String|The profile type of the device. Possible values:<br /><ul><li>`RegisteredDevice` (default)</li><li>`SecureVM`</li><li>`Printer`</li><li>`Shared`</li><li>`IoT`</li></ul>|
 |registrationDateTime|DateTimeOffset|Date and time of when the device was registered. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+=======
+|profileType|String|The profile type of the device. Possible values:<br />**RegisteredDevice** (default)<br />**SecureVM**<br />**Printer**<br />**Shared**<br />**IoT**|
+|registrationDateTime|DateTimeOffset|Date and time of when the device was registered. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+>>>>>>> a48e0578efca2799d36d325567669a72491082ab
 |systemLabels|String collection| List of labels applied to the device by the system. |
 |hostnames|String collection| List of hostNames for the device.|
 |trustType|String| Type of trust for the joined device. Read-only. Possible values: <br /><ul><li>`Workplace` - indicates *bring your own personal devices*</li><li>`AzureAd` - Cloud only joined devices</li><li>`ServerAd` - on-premises domain joined devices joined to Azure AD.</li></ul>For more details, see [Introduction to device management in Azure Active Directory](/azure/active-directory/device-management-introduction) |
