@@ -2,7 +2,7 @@
 title: "People-Picker component"
 description: "You can use the mgt-people-picker web component to search for a specified number of people and render the list of results via Microsoft Graph."
 localization_priority: Normal
-author: vogtn
+author: elisenyang
 ---
 
 # People-Picker component in the Microsoft Graph Toolkit
@@ -61,7 +61,7 @@ You can populate selected people data by doing one of the following:
      >**Note:** If no user is found for an `id`, no data will be rendered for that `id`.
 
     ```javascript
-    // id = Mirosoft graph User "id"
+    // id = Microsoft graph User "id"
     document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
     ```
 
@@ -134,7 +134,7 @@ This component uses the following Microsoft Graph APIs and permissions.
 | [/me/people](/graph/api/user-list-people)                    | People.Read        |
 | [/users](/graph/api/user-list)  | User.ReadBasic.All |
 | [/groups](/group-list)  | Group.Read.All |
-| [/groups/\${groupId}/members](/graph/api/group-list-members) | User.ReadBasic.All        |
+| [/groups/\${groupId}/members](/graph/api/group-list-members) | GroupMember.Read.All        |
 | [/users/${userPrincipleName} ](/graph/api/user-get)  | User.Read |
 
 ## Authentication

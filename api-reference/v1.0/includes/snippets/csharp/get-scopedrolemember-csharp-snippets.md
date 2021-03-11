@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var scopedRoleMembership = await graphClient.Directory.AdministrativeUnits["{id}"].ScopedRoleMembers["{id}"]
+var scopedRoleMembers = await graphClient.Directory.AdministrativeUnits["{id}"].ScopedRoleMembers
 	.Request()
 	.GetAsync();
 

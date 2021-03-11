@@ -54,6 +54,7 @@ You can use several properties to customize the component.
 | user-id         | userId         | Set to a user id to fetch that user's details and image from Microsoft Graph.|
 | person-query    | personQuery    | Set to a name or email of a person to search for a person in Microsoft Graph and fetch the first person's details and image.|
 | person-details  | personDetails  | Set to an object representing a person. Works with object from the people, users, contacts, or group, resources. |
+| fallback-details| fallbackDetails| Set to an object representing a person when no user/person/contact is found in the graph.
 | person-image    | personImage    | Set the image to show for the person. |
 | person-presence | personPresence | Set the presence for the person. |
 | fetch-image     | fetchImage     | Set flag to fetch `personImage` automatically from Microsoft Graph based on the `personDetails` object provided by the user. |
@@ -122,10 +123,14 @@ The `mgt-person` component supports several [templates](../customize-components/
 | no-data | none | The template to render when no person image or data is available. | 
 | default | person: The person details object <br> `personImage`: The URL of the image | The default template replaces the entire component with your own. |
 | person-card | person: The person details object <br> `personImage`: The URL of the image | The template to update the mgt-person-card displayed on hover or click. |
+| line1 | person: The person details object | The template for the first line of person metadata. |
+| line2 | person: The person details object | The template for the second line of person metadata. |
+| line3 | person: The person details object | The template for the third line of person metadata. |
 
 The following example defines a template for the person component.
 
 ```html
+<!-- Retemplate the entire person component -->
 <mgt-person>
   <template>
     <div data-if="personImage">
@@ -133,6 +138,25 @@ The following example defines a template for the person component.
     </div>
     <div data-else>
       {{person.displayName}}
+    </div>
+  </template>
+</mgt-person>
+
+<!-- Retemplate the line properties -->
+<mgt-person view="threeLines">
+  <template data-type="line1">
+    <div>
+      Hello, my name is: {{person.displayName}}
+    </div>
+  </template>
+  <template data-type="line2">
+    <div>
+      Super cool
+    </div>
+  </template>
+  <template data-type="line3">
+    <div>
+      Loves MGT
     </div>
   </template>
 </mgt-person>

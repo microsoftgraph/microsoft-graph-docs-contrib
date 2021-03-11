@@ -3,7 +3,7 @@ title: "Get directoryObject"
 description: "Retrieve the properties and relationships of directoryObject object."
 author: "keylimesoda"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 853
+Content-Length: 1026
 
 {
   "value": {
@@ -72,6 +72,8 @@ Content-Length: 853
     "overallScore": 12,
     "deviceBootPerformanceOverallScore": 1,
     "bestPracticesOverallScore": 9,
+    "appHealthOverallScore": 5,
+    "resourcePerformanceOverallScore": 15,
     "insights": [
       {
         "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
@@ -88,7 +90,9 @@ Content-Length: 853
     ],
     "state": "insufficientData",
     "deviceBootPerformanceHealthState": "insufficientData",
-    "bestPracticesHealthState": "insufficientData"
+    "bestPracticesHealthState": "insufficientData",
+    "appHealthState": "insufficientData",
+    "resourcePerformanceState": "insufficientData"
   }
 }
 ```

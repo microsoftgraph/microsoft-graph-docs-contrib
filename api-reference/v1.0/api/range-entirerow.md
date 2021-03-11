@@ -25,9 +25,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/entireRow
-GET /workbook/worksheets/{id|name}/range(address='<address>'/entireRow
-GET /workbook/tables/{id|name}/columns/{id|name}/range/entireRow
+GET /me/drive/items/{id}/workbook/names/{name}/range/entireRow
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/entireRow
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>'/entireRow
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>'/entireRow
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/entireRow
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/entireRow
 
 ```
 ## Request headers

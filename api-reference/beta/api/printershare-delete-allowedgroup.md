@@ -50,7 +50,7 @@ The following is an example of the request.
   "name": "delete_allowedgroup"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/print/shares/{id}/allowedGroup/{id}/$ref
+DELETE https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups/{id}/$ref
 ```
 ##### Response
 The following is an example of the response.

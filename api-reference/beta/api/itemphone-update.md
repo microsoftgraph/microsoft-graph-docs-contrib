@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 PATCH /me/profile/phones/{id}
-PATCH /user/{userId}/profile/phones/{id}
+PATCH /users/{userId}/profile/phones/{id}
 ```
 
 ## Request headers
@@ -71,7 +71,7 @@ If successful, this method returns a `200 OK` response code and an updated [item
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/phones/{id}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/phones/{id}
 Content-Type: application/json
 Content-length: 382
 
