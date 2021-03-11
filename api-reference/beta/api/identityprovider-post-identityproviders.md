@@ -236,5 +236,3 @@ Content-type: application/json
   "scope": "openid"
 }
 ```
-
-

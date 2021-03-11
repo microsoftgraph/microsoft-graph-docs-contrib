@@ -1,6 +1,6 @@
 ---
 title: "builtInIdentityProvider resource type"
-description: "Represents built in identity providers in an Azure Active Directory tenant."
+description: "Represents built-in identity providers in an Azure Active Directory tenant."
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents built in identity providers with [External Identities](/azure/active-directory/external-identities/) for an Azure Active Directory tenant.
+Represents built-in identity providers with [External Identities](/azure/active-directory/external-identities/) for an Azure Active Directory tenant.
 
 For Azure AD B2B scenarios in an Azure AD tenant, the built in identity provider type can be a Azure Active Directory(AAD), Microsoft account(MSA) or email one-time passcode (EmailOTP).
 
@@ -20,8 +20,8 @@ For Azure AD B2B scenarios in an Azure AD tenant, the built in identity provider
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/identityprovider-list.md)|[identityProvider](identityprovider.md) collection|Retrieve all identity providers configured in a tenant.|
-|[Get](../api/identityprovider-get.md) |[identityProvider](identityprovider.md)|Retrieve properties of an identity provider.|
+|[List](../api/identityprovider-list.md)|[identityProvider](identityprovider.md) collection|Retrieve all built-in identity providers configured in a tenant.|
+|[Get](../api/identityprovider-get.md) |[identityProvider](identityprovider.md)|Retrieve properties of an built-in identity provider.|
 |[List available provider types](../api/identityprovider-list-availableprovidertypes.md)|String collection|Retrieve all available identity provider types.|
 
 ## Properties
