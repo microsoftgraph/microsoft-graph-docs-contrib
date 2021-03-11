@@ -30,7 +30,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## February 2021
 
-
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                                                                                              |
 | :-------------- | :------------ | :---------------------------------------                                                                     |
