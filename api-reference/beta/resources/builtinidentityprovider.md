@@ -14,23 +14,24 @@ Namespace: microsoft.graph
 
 Represents built-in identity providers with [External Identities](/azure/active-directory/external-identities/) for an Azure Active Directory tenant.
 
-For Azure AD B2B scenarios in an Azure AD tenant, the built in identity provider type can be a Azure Active Directory(AAD), Microsoft account(MSA) or email one-time passcode (EmailOTP).
+For Azure AD B2B scenarios in an Azure AD tenant, the built in identity provider type can be an Azure Active Directory(AAD), Microsoft account(MSA) or email one-time passcode (EmailOTP).
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List](../api/identityprovider-list.md)|[identityProvider](identityprovider.md) collection|Retrieve all built-in identity providers configured in a tenant.|
-|[Get](../api/identityprovider-get.md) |[identityProvider](identityprovider.md)|Retrieve properties of an built-in identity provider.|
+|[Get](../api/identityprovider-get.md) |builtInIdentityProvider|Retrieve properties of an built-in identity provider.|
+|[Update](../api/identityprovider-get.md) |builtInIdentityProvider|Update properties of an built-in identity provider.|
 |[List available provider types](../api/identityprovider-list-availableprovidertypes.md)|String collection|Retrieve all available identity provider types.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|id|String|The ID of the identity provider.|
+|id|String|The identifier of the identity provider.|
 |displayName|String|The display name of the identity provider.|
-|identityProviderType|String|This is a required field. For B2B scenario:<ul><li>AADSignup</li><li>MicrosoftAccount</li><li>EmailOTP</li></ul>|
+|identityProviderType|String|The identity provider type. For a B2B scenario, possible values: `AADSignup`, `MicrosoftAccount`, `EmailOTP`. Required.|
 
 ## JSON representation
 

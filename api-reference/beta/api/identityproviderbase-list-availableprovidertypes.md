@@ -53,7 +53,7 @@ If successful, this function returns a `200 OK` response code and a String colle
 
 ## Example
 
-### Example 1: List all **identityProvider** available in an Azure AD tenant
+### Example 1: List all **identityProvider** available in an Azure AD directory
 
 ### Request
 The following is an example of the request.
@@ -97,7 +97,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: List all **identityProvider** available in an Azure AD B2C tenant
+### Example 2: List all **identityProvider** available in an Azure AD B2C directory
 
 ### Request
 The following is an example of the request.
@@ -105,7 +105,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "identityprovider_availableprovidertypes"
+  "name": "identityprovider_availableprovidertypes_b2c"
 }
 -->
 

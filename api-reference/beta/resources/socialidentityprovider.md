@@ -26,26 +26,24 @@ Configuring an identity provider in your Azure AD B2C tenant enables users to si
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/identityprovider-list.md)|[identityProvider](identityprovider.md)  collection|Retrieve all identity providers configured in a tenant.|
-|[Create](../api/identityprovider-post-identityproviders.md)|[identityProvider](identityprovider.md) |Create a new identity provider.|
-|[Get](../api/identityprovider-get.md) |[identityProvider](identityprovider.md) |Retrieve properties of an identity provider.|
-|[Update](../api/identityprovider-update.md)|None|Update an identity provider.|
-|[Delete](../api/identityprovider-delete.md)|None|Delete an identity provider.|
-|[List available provider types](../api/identityprovider-list-availableprovidertypes.md)|String collection|Retrieve all available identity provider types.|
+|[Create](../api/identityprovider-post-identityproviders.md)|socialidentityprovider |Create a new social identity provider.|
+|[Get](../api/identityprovider-get.md) |socialidentityprovider |Retrieve properties of a social identity provider.|
+|[Update](../api/identityprovider-update.md)|None|Update a social identity provider.|
+|[Delete](../api/identityprovider-delete.md)|None|Delete a social  identity provider.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|clientId|String|The client ID for the application obtained when registering the application with the identity provider. Required.|
-|clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return "\*\*\*\*". Required.|
-|id|String|The ID of the identity provider.|
+|clientId|String|The client identifier for the application obtained when registering the application with the identity provider. Required.|
+|clientSecret|String|The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns "\*\*\*\*". Required.|
+|id|String|The identifier of the identity provider.|
 |displayName|String|The display name of the identity provider.|
-|identityProviderType|String|Required. For B2B scenario:<ul><li>Google</li><li>Facebook</li></ul>For B2C scenario:<ul><li>Microsoft</li><li>Google</li><li>Amazon</li><li>LinkedIn</li><li>Facebook</li><li>GitHub</li><li>Twitter</li><li>Weibo</li><li>QQ</li><li>WeChat</li></ul>|
+|identityProviderType|String|Required. For a B2B scenario, possible values: `Google`, `Facebook`. For a B2C scenario, possible values: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat`.|
 
-### Where to get the client ID and secret
+### Where to get the client identifier and secret
 
-Each identity provider has a process for creating an app registration. For example, users create an app registration with Facebook at [developers.facebook.com](https://developers.facebook.com/). The resulting client ID and client secret can be passed to [create identityProvider](../api/identityprovider-post-identityproviders.md). Then, each user object in the directory can be federated to any of the tenant's identity providers for authentication. This enables the user to sign in by entering credentials on the identity provider's sign in page. The token from the identity provider is validated by Azure AD before the tenant issues a token to the application.
+Each identity provider has a process for creating an app registration. For example, users create an app registration with Facebook at [developers.facebook.com](https://developers.facebook.com/). The resulting client identifier and client secret can be passed to [create identityProvider](../api/identityproviderbase-post-identityproviders.md). Then, each user object in the directory can be federated to any of the tenant's identity providers for authentication. This enables the user to sign in by entering credentials on the identity provider's sign-in page. The token from the identity provider is validated by Azure AD before the tenant issues a token to the application.
 
 ## JSON representation
 

@@ -1,6 +1,6 @@
 ---
 title: "appleIdentityProvider resource type"
-description: "Represents social identity providers in an Azure Active Directory tenant and an Azure AD B2C tenant."
+description: "Represents apple identity providers in an Azure AD B2C tenant."
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: "identity-and-sign-in"
@@ -11,6 +11,10 @@ author: "namkedia"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+You can configure Apple as a social identity provider for an Azure AD B2C tenant. Apple does not directly provide a client secret. The API will create the client secret for you based on the 
+
+Apple has very specific requirements so that the secret can be automatically rotated every six months so the set of data we need to collect is different than a standard social identity provider. This type will inherit from microsoft.graph.identityProviderBase.
 
 Represents social identity providers with [External Identities](/azure/active-directory/external-identities/) for both Azure Active Directory tenant and an Azure AD B2C tenant.
 
@@ -37,9 +41,10 @@ Configuring an identity provider in your Azure AD B2C tenant enables users to si
 |:---------------|:--------|:----------|
 |clientId|String|The client ID for the application obtained when registering the application with the identity provider. Required.|
 |clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return "\*\*\*\*". Required.|
-|id|String|The ID of the identity provider.|
+|id|String|The identifier of the identity provider.|
 |displayName|String|The display name of the identity provider.|
-|identityProviderType|String|Required. For B2B scenario:<ul><li>Google</li><li>Facebook</li></ul>For B2C scenario:<ul><li>Microsoft</li><li>Google</li><li>Amazon</li><li>LinkedIn</li><li>Facebook</li><li>GitHub</li><li>Twitter</li><li>Weibo</li><li>QQ</li><li>WeChat</li></ul>|
+
+
 
 ### Where to get the client ID and secret
 
