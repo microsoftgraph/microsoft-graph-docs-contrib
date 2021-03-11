@@ -39,7 +39,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [agreement](../resources/agreement.md) objects in the response body.
-## Example
+## Examples
 ### Request
 
 <!-- {
@@ -50,8 +50,8 @@ If successful, this method returns a `200 OK` response code and collection of [a
 GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements
 ```
 
-##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+### Response
+>**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
