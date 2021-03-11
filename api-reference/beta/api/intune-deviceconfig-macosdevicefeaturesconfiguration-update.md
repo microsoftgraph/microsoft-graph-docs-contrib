@@ -3,7 +3,7 @@ title: "Update macOSDeviceFeaturesConfiguration"
 description: "Update the properties of a macOSDeviceFeaturesConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -475,6 +475,7 @@ Content-Length: 5834
   "contentCachingPort": 2
 }
 ```
+
 
 
 

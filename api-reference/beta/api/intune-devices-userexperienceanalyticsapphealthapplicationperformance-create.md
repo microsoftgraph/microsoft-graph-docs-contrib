@@ -3,7 +3,7 @@ title: "Create userExperienceAnalyticsAppHealthApplicationPerformance"
 description: "Create a new userExperienceAnalyticsAppHealthApplicationPerformance object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -114,6 +114,7 @@ Content-Length: 522
   "meanTimeToFailureInMinutes": 10
 }
 ```
+
 
 
 

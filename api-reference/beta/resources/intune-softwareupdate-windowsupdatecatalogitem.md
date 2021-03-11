@@ -3,7 +3,7 @@ title: "windowsUpdateCatalogItem resource type"
 description: "Windows update catalog item entity"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -49,6 +49,7 @@ Here is a JSON representation of the resource.
   "releaseDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

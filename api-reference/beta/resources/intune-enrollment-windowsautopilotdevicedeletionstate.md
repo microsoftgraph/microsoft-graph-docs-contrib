@@ -3,7 +3,7 @@ title: "windowsAutopilotDeviceDeletionState enum type"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -24,6 +24,7 @@ Not yet documented
 |failed|1|Request failed status.|
 |accepted|2|Request accepted status.|
 |error|3|Error status.|
+
 
 
 

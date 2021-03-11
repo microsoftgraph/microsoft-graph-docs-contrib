@@ -3,7 +3,7 @@ title: "getCertificatesReport action"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -103,6 +103,7 @@ Content-Length: 87
   "value": "Z2V0Q2VydGlmaWNhdGVzUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDExMzUyMTc4MTI="
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "Update win32LobApp"
 description: "Update the properties of a win32LobApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -336,6 +336,7 @@ Content-Length: 3577
   "displayVersion": "Display Version value"
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "Update userExperienceAnalyticsMetricHistory"
 description: "Update the properties of a userExperienceAnalyticsMetricHistory object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -91,6 +91,7 @@ Content-Length: 257
   "metricType": "Metric Type value"
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "Update userExperienceAnalyticsDeviceStartupHistory"
 description: "Update the properties of a userExperienceAnalyticsDeviceStartupHistory object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -129,6 +129,7 @@ Content-Length: 729
   "restartFaultBucket": "Restart Fault Bucket value"
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "Create enrollmentConfigurationAssignment"
 description: "Create a new enrollmentConfigurationAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -100,6 +100,7 @@ Content-Length: 502
   "sourceId": "Source Id value"
 }
 ```
+
 
 
 

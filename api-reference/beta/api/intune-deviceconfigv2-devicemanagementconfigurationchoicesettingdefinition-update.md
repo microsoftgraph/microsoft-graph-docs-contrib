@@ -3,7 +3,7 @@ title: "Update deviceManagementConfigurationChoiceSettingDefinition"
 description: "Update the properties of a deviceManagementConfigurationChoiceSettingDefinition object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -441,6 +441,7 @@ Content-Length: 9991
   "defaultOptionId": "Default Option Id value"
 }
 ```
+
 
 
 

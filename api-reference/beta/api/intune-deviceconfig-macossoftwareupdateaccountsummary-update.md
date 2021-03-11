@@ -3,7 +3,7 @@ title: "Update macOSSoftwareUpdateAccountSummary"
 description: "Update the properties of a macOSSoftwareUpdateAccountSummary object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -111,6 +111,7 @@ Content-Length: 502
   "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
 }
 ```
+
 
 
 

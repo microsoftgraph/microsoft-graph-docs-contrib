@@ -3,7 +3,7 @@ title: "deviceManagementTemplate resource type"
 description: "Entity that represents a defined collection of device settings"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -73,6 +73,7 @@ Here is a JSON representation of the resource.
   "publishedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "azureAdRegisteredState enum type"
 description: "Work From Anywhere Device Azure Ad Registered"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -23,6 +23,7 @@ Work From Anywhere Device Azure Ad Registered
 |no|0|Not Azure AD Registered|
 |yes|1|Azure AD registered|
 |unknown|2|Unknown Azure AD registered status|
+
 
 
 

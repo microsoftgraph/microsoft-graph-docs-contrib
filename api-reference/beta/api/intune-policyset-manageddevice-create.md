@@ -3,7 +3,7 @@ title: "Create managedDevice"
 description: "Create a new managedDevice object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -81,6 +81,7 @@ Content-Length: 104
   "id": "705c034c-034c-705c-4c03-5c704c035c70"
 }
 ```
+
 
 
 

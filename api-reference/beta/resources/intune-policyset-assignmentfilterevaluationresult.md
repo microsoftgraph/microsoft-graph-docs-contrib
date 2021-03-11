@@ -3,7 +3,7 @@ title: "assignmentFilterEvaluationResult enum type"
 description: "Supported evaluation results for filter."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -26,6 +26,7 @@ Supported evaluation results for filter.
 |inconclusive|3|Inconclusive.|
 |failure|4|Failure.|
 |notEvaluated|5|NotEvaluated.|
+
 
 
 

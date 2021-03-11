@@ -3,7 +3,7 @@ title: "Create userExperienceAnalyticsResourcePerformance"
 description: "Create a new userExperienceAnalyticsResourcePerformance object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -117,6 +117,7 @@ Content-Length: 602
   "deviceResourcePerformanceScore": 14
 }
 ```
+
 
 
 

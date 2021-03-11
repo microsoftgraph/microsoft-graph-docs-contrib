@@ -3,7 +3,7 @@ title: "Create deviceComanagementAuthorityConfiguration"
 description: "Create a new deviceComanagementAuthorityConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -113,6 +113,7 @@ Content-Length: 617
   "configurationManagerAgentCommandLineArgument": "Configuration Manager Agent Command Line Argument value"
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "macOSSoftwareUpdateDelayPolicy enum type"
 description: "Flag enum to determine whether to delay software updates for macOS."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -23,6 +23,7 @@ Flag enum to determine whether to delay software updates for macOS.
 |none|0|Software update delays will not be enforced.|
 |delayOSUpdateVisibility|1|Force delays for OS software updates.|
 |delayAppUpdateVisibility|2|Force delays for app software updates.|
+
 
 
 

@@ -3,7 +3,7 @@ title: "Create userExperienceAnalyticsRemoteConnection"
 description: "Create a new userExperienceAnalyticsRemoteConnection object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -114,6 +114,7 @@ Content-Length: 528
   "cloudPcFailurePercentage": 8.0
 }
 ```
+
 
 
 

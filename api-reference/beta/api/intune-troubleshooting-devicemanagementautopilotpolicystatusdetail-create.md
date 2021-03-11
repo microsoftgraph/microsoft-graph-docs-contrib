@@ -3,7 +3,7 @@ title: "Create deviceManagementAutopilotPolicyStatusDetail"
 description: "Create a new deviceManagementAutopilotPolicyStatusDetail object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -99,6 +99,7 @@ Content-Length: 363
   "errorCode": 9
 }
 ```
+
 
 
 
