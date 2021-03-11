@@ -10133,28 +10133,44 @@ items:
               href: api/riskyusers-dismiss.md
         - name: Identity provider
           items:
+          - name: Identity provider base type
+            href: resources/identityproviderbase.md
           - name: Built in Identity provider type
             href: resources/builtinidentityprovider.md
           - name: Social Identity provider type
             href: resources/socialidentityprovider.md
           - name: OpenID Connect identity provider type
             href: resources/openidconnectidentityprovider.md
-          - name: Identity provider type (deprecated)
-            href: resources/identityprovider.md
-          - name: OpenID Connect identity provider type (deprecated)
-            href: resources/openidconnectprovider.md
-          - name: List (deprecated)
-            href: api/identityprovider-list.md
-          - name: Create (deprecated)
-            href: api/identityprovider-post-identityproviders.md
-          - name: Get (deprecated)
-            href: api/identityprovider-get.md
-          - name: Update (deprecated)
-            href: api/identityprovider-update.md
-          - name: Delete (deprecated)
-            href: api/identityprovider-delete.md
-          - name: List available provider types (deprecated)
-            href: api/identityprovider-list-availableprovidertypes.md
+          - name: List
+            href: api/identityproviderbase-list.md
+          - name: Create
+            href: api/identityproviderbase-post-identityproviders.md
+          - name: Get
+            href: api/identityproviderbase-get.md
+          - name: Update
+            href: api/identityproviderbase-update.md
+          - name: Delete
+            href: api/identityproviderbase-delete.md
+          - name: List available provider types
+            href: api/identityproviderbase-list-availableprovidertypes.md
+          - name: Identity provider (deprecated)
+            items:
+             - name: Identity provider type
+              href: resources/identityprovider.md
+            - name: OpenID Connect identity provider type
+              href: resources/openidconnectprovider.md
+            - name: List
+              href: api/identityprovider-list.md
+            - name: Create
+              href: api/identityprovider-post-identityproviders.md
+            - name: Get
+              href: api/identityprovider-get.md
+            - name: Update
+              href: api/identityprovider-update.md
+            - name: Delete
+              href: api/identityprovider-delete.md
+            - name: List available provider types
+              href: api/identityprovider-list-availableprovidertypes.md
         - name: Invitation manager
           href: resources/invitation.md
           items:
