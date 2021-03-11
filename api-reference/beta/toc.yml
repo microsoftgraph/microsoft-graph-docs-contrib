@@ -10135,9 +10135,9 @@ items:
           items:
           - name: Identity provider base type
             href: resources/identityproviderbase.md
-          - name: Built in Identity provider type
+          - name: Built-in identity provider type
             href: resources/builtinidentityprovider.md
-          - name: Social Identity provider type
+          - name: Social identity provider type
             href: resources/socialidentityprovider.md
           - name: OpenID Connect identity provider type
             href: resources/openidconnectidentityprovider.md
