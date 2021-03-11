@@ -73,7 +73,7 @@ Replace `<YOUR_CLIENT_ID>` with the client ID for your application and `<YOUR_NG
 To initialize the provider in your JavaScript code, Locate the `src/components/App.js` file in your project directory. Import the Teams Provider and initialize the provider.
 
 ```js
-import * as microsoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
+import * as microsoftTeams from "@microsoft/teams-js";
 import { Providers, TeamsProvider } from '@microsoft/mgt';
 
 TeamsProvider.microsoftTeamsLib = microsoftTeams;

@@ -4182,6 +4182,25 @@ items:
           items:
           - name: Create invitation
             href: api/invitation-post.md
+        - name: Organizational branding
+          href: resources/organizationalbrandingproperties.md
+          items:
+          - name: Create
+            href: api/organizationalbrandingproperties-create.md
+          - name: Get 
+            href: api/organizationalbrandingproperties-get.md
+          - name: Update
+            href: api/organizationalbrandingproperties-update.md
+          - name: Delete
+            href: api/organizationalbrandingproperties-delete.md
+          - name: Create localized 
+            href: api/organizationalbrandingpropertieslocalization-create.md
+          - name: Get localized
+            href: api/organizationalbrandingpropertieslocalization-get.md
+          - name: Update localized
+            href: api/organizationalbrandingpropertieslocalization-update.md
+          - name: Delete localized
+            href: api/organizationalbrandingpropertieslocalization-delete.md 
         - name: Policy
           href: resources/policy-overview.md
           items:
@@ -4272,6 +4291,23 @@ items:
               href: api/identitysecuritydefaultsenforcementpolicy-get.md
             - name: Update
               href: api/identitysecuritydefaultsenforcementpolicy-update.md
+    - name: Governance
+      items:
+        - name: Terms of use
+          href: resources/agreement.md
+          items:
+          - name: List
+            href: api/agreement-list.md          
+          - name: Create
+            href: api/agreement-post-agreements.md
+          - name: Get
+            href: api/agreement-get.md
+          - name: Update
+            href: api/agreement-update.md
+          - name: Delete
+            href: api/agreement-delete.md
+          - name: List acceptance status
+            href: api/user-list-agreementacceptances.md      
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
