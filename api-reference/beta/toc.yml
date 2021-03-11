@@ -10133,13 +10133,13 @@ items:
               href: api/riskyusers-dismiss.md
         - name: Identity provider
           items:
-          - name: Identity provider base type
+          - name: Identity provider base
             href: resources/identityproviderbase.md
-          - name: Built-in identity provider type
+          - name: Built-in identity provider
             href: resources/builtinidentityprovider.md
-          - name: Social identity provider type
+          - name: Social identity provider
             href: resources/socialidentityprovider.md
-          - name: OpenID Connect identity provider type
+          - name: OpenID Connect identity provider
             href: resources/openidconnectidentityprovider.md
           - name: List
             href: api/identityproviderbase-list.md

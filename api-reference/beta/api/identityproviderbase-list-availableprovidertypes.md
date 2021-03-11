@@ -7,7 +7,7 @@ author: "namkedia"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List availableProviderTypes (deprecated)
+# List availableProviderTypes
 
 Namespace: microsoft.graph
 
