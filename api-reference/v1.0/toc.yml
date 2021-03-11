@@ -4273,7 +4273,7 @@ items:
     - name: Governance
       items:
         - name: Terms of use
-        items:
+          items:
           - name: agreement
             href: resources/agreement.md
             items:
