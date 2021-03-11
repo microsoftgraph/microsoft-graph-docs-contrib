@@ -108,6 +108,8 @@ Content-Type: application/json
             "displayName": null,
             "reviewedDateTime": "2019-10-19T04:12:09.633Z",
             "reviewResult": "Approve",
+            "status": "Completed",
+            "assignedToMe": true,
             "justification": "Admin consent granted.",
             "reviewedBy": {
               "id": "00000001-0000-0000-c000-000000000000",
@@ -117,7 +119,10 @@ Content-Type: application/json
             }
           }
         ]
-      }
+      },
+      "approvalId": "5a3a0f94-b89d-4cd3-a4ad-fd78faec333f",
+      "completedDateTime": null,
+      "customData": null
     }
   ]
 }
