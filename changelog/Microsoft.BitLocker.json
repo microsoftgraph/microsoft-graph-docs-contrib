@@ -34,6 +34,7 @@
             "WorkloadArea": "Identity and access",
             "SubArea" : "Directory management"
         },
+        {
             "ChangeList": [
                 {
                     "Id": "b550e1fd-cd34-11ea-bd3f-bcf14830d361",
@@ -67,5 +68,4 @@
             "WorkloadArea": "Identity and access (Azure AD)",
             "SubArea" : ""
         }
-    ]
 }
