@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 Retrieve a list of [identityProviders](../resources/identityproviderbase.md) objects.
 
-For an Azure AD tenant it can be a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md).
+For an Azure AD tenant it can be a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) objects.
 
-For an Azure AD B2C tenant it can be a [socialIdentityProviders](../resources/socialidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or [appleIdentityProvider](../resources/appleidentityprovider.md).
+For an Azure AD B2C tenant it can be a [socialIdentityProviders](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or [appleIdentityProvider](../resources/appleidentityprovider.md) objects.
 
 ## Permissions
 
@@ -55,38 +55,25 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) objects in the response body for an Azure AD tenant.
 
-For an Azure AD B2C tenant it can be a [socialIdentityProviders](../resources/socialidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or [appleIdentityProvider](../resources/appleidentityprovider.md)objects in the response body.
+For an Azure AD B2C tenant it can be a [socialIdentityProviders](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or [appleIdentityProvider](../resources/appleidentityprovider.md) objects in the response body.
 
 ## Example
 
-### Request
+### Example 1: List all **identityProvider** configured in an Azure AD tenant
 
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_identityprovider"
+  "name": "get_identityproviderbase"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identityProviders
+GET https://graph.microsoft.com/beta/identity/identityProviders
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityprovider-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityprovider-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-identityprovider-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -97,13 +84,13 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.identityProvider",
   "isCollection": true
-} -->
+}
+-->
 
-```http
+``` http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
    "value":[
@@ -113,6 +100,47 @@ Content-type: application/json
          "identityProviderType": "MicrosoftAccount",
          "displayName": "MicrosoftAccount"
       },
+      {
+         "@odata.type": "microsoft.graph.socialIdentityProvider",
+         "identityProviderType": "Google",
+         "displayName": "Google",
+         "clientId": "string",
+         "clientSecret": "string"
+      }
+   ]
+}
+```
+
+### Example 2: List all **identityProvider** configured in an Azure AD B2C tenant
+
+### Request
+The following is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_identityproviderbase"
+}
+-->
+
+### Response
+
+The following is an example of the response.
+
+**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+   "value":[
       {
          "@odata.type": "microsoft.graph.socialIdentityProvider",
          "identityProviderType": "Google",
@@ -139,6 +167,15 @@ Content-type: application/json
          "responseMode": "form_post",
          "responseType": "code",
          "scope": "openid"
+      },
+      {
+        "@odata.type": "microsoft.graph.appleManagedIdentityProvider",
+        "id": "Apple-Managed-OIDC",
+        "displayName": "Apple",
+        "developerId": "ABC1D29956",
+        "serviceId": "com.microsoft.test.b2c.tt.client",
+        "keyId": "01P657F9C5",
+        "certificateData": null
       }
    ]
 }
