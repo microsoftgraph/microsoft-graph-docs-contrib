@@ -63,8 +63,15 @@ Use application permissions for the [synchronization APIs](/graph/api/resources/
 ### Cloud communications | Calls
 Support for [policy-based recording for calls](/microsoftteams/teams-recording-policy) where using administrative policy, calls are automatically recorded for subsequent processing and retention as required by relevant corporate or regulatory policy. Before a policy-based participant joins a call, policy stipulates sending a [participantJoiningNotification ](/graph/api/resources/participantJoiningNotification?view=graph-rest-beta&preserve-view=true) to the bot associated with the policy that has available capacity to handle the new participant. The bot responds with one of [acceptJoinResponse](/graph/api/resources/acceptjoinresponse?view=graph-rest-beta&preserve-view=true), [rejectJoinResponse](/graph/api/resources/rejectjoinresponse?view=graph-rest-beta&preserve-view=true), or [inviteNewBotResponse](/graph/api/resources/invitenewbotresponse?view=graph-rest-beta&preserve-view=true) in its response payload.
 
-### Compliance 
-
+### Compliance | eDiscovery
+- Use the [legalHold](/graph/api/resources/ediscovery-legalhold?view=graph-rest-beta&preserve-view=true) resource and its APIs to protect content indefinitely from deletion, for the purpose of litigation, internal investigation, or other legal actions.
+- Use the [sourceCollection](/graph/api/resources/ediscovery-sourcecollection?view=graph-rest-beta&preserve-view=true) resource and its APIs to search for and identify relevant documents from custodial and non-custodial locations in Microsoft 365.
+- Use the [tag](/graph/api/resources/ediscovery-tag?view=graph-rest-beta&preserve-view=true) resource and APIs to mark documents during review to separate responsive and non-responsive content.
+- [Export](/graph/api/ediscovery-reviewset-export?view=graph-rest-beta&preserve-view=true) documents from a [review set](/graph/api/resources/ediscovery-reviewset?view=graph-rest-beta).
+- Use the [addToReviewSet](/graph/api/ediscovery-reviewset-addtoreviewset?view=graph-rest-beta&preserve-view=true) action to add documents in a **sourceCollection** to a **reviewSet**.
+- [Apply tags](/graph/api/ediscovery-reviewsetquery-applytags?view=graph-rest-beta&preserve-view=true) to documents based on a [review set query](/graph/api/resources/ediscovery-reviewsetquery?view=graph-rest-beta&preserve-view=true).
+- Defined all eDiscovery API in the `microsoft.graph.ediscovery` namespace.
+- Changed delegated permissions model from `User.Read` to `eDiscovery.Read.All` and `eDiscovery.ReadWrite.All`.
 
 ### Devices and apps | Corporate management
 - Intune [February](https://developer.microsoft.com/graph/changelog/?from=2021-02-01&to=2021-02-28&filterBy=Corporate%20management) updates for the beta version.
