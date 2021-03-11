@@ -118,7 +118,7 @@ Content-type: application/json
 Content-length: 201
 
 {
-  "id": "id-value",
+  "id": "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2",
   "displayName": "Architecture Discussion",
   "description": "This channel is where we debate all future architecture plans"
 }
@@ -261,9 +261,8 @@ Once provisioned, this channel can be used for [importing messages](/microsoftte
 } -->
 
 ```http
-HTTP/1.1 202 Accepted
-Location: /teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/{channelId}/operations/{operationId}
-Content-Location: /teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/{channelId}
+HTTP/1.1 201 Created
+Location: /teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')
 ```
 
 ### Example 4: Create standard channel with moderation settings
