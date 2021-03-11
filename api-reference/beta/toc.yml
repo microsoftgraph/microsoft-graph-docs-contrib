@@ -10155,7 +10155,7 @@ items:
             href: api/identityproviderbase-list-availableprovidertypes.md
           - name: Identity provider (deprecated)
             items:
-             - name: Identity provider type
+            - name: Identity provider type
               href: resources/identityprovider.md
             - name: OpenID Connect identity provider type
               href: resources/openidconnectprovider.md
