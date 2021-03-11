@@ -17,6 +17,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [chatMessageHostedContent](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageHostedContent?view=graph-rest-1.0) resource type.",
           "Target": "chatMessageHostedContent"
+        },
+        {
+          "Id": "c2e70c1a-7b81-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatMessage",
+          "ChangeType": "Addition",
+          "Description": "[chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageview=graph-rest-1.0) now supports creation of [subscriptions](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-1.0) for change notifications in delegated context.",
+          "Target": "chatMessage"
         }
       ],
       "Id": "c2e4a70d-7b81-11eb-8d30-85f45032d4a1",
