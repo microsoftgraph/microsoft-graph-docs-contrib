@@ -11174,11 +11174,11 @@ items:
           - name: Approval step
             href: resources/approvalstep.md
             items:
-            - name: List approval steps
+            - name: List
               href: api/approval-list-steps.md
-            - name: Get approval step
+            - name: Get 
               href: api/approvalstep-get.md
-            - name: Update approval step
+            - name: Update 
               href: api/approvalstep-update.md
           - name: Entitlement management settings
             href: resources/entitlementmanagementsettings.md
