@@ -3,7 +3,7 @@ title: "accessPackageAssignment: s"
 description: "Retrieve a list of accesspackageassignment objects filtered on the signed-in user."
 localization_priority: Normal
 author: "sbounouh"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
@@ -38,7 +38,7 @@ The following table shows the parameters that can be used with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|accessPackageAssignmentFilterByCurrentUserOptions **TODO-new article for enum**|The list of options that can be used to filter on current user. Possible options are: `target`, `createdBy`. Additional options may be available in the future.|
+|on|[accessPackageAssignmentFilterByCurrentUserOptions](../resources/accesspackageassignment-accesspackageassignmentfilterbycurrentuseroptions.md)|The list of current user options that can be used to filter on the access package assignments list.|
 
 - `target` is used to get the `accessPackageAssignment` objects where the signed-in user is the target. The resulting list includes all of the assignments, current and expired, that the caller has across all catalogs and access packages.
 
