@@ -22,7 +22,7 @@ Graph Connector APIs help:
 
 In this topic, let's look at these APIs in detail.
 
-# Connections API
+## Connections API
 
 Connections from external services are represented by the [externalConnection](https://docs.microsoft.com/graph/api/resources/externalconnection?view=graph-rest-beta&amp;preserve-view=true) resource in Microsoft Graph. A connection is a logical container for your external data that you can manage as a single unit.
 
@@ -30,9 +30,9 @@ Once you create a connection to an external data source such as an on-premises c
 
 You can model a connection anyway you want. For example, you can [set up multiple connections using the Microsoft Windows file share connector](https://docs.microsoft.com/microsoftsearch/configure-connector) to connect to different file shares. You can also create a single connection to add all items from your data source. For example, you can create a single connection to add all the tickets and incidents across multiple teams from your helpdesk system.
 
-[Creating a connection](data-inflow-manage-connections#create-a-connection) is the first step for an application to add items to Microsoft Graph. A connection allows your registered application to [define a schema](https://docs.microsoft.com/graph/api/externalconnection-post-schema?view=graph-rest-beta&amp;preserve-view=true) for items that will be ingested, and allows your service to add, update, or delete items from the external data source.
+[Creating a connection](./data-inflow-manage-connections#create-a-connection) is the first step for an application to add items to Microsoft Graph. A connection allows your registered application to [define a schema](https://docs.microsoft.com/graph/api/externalconnection-post-schema?view=graph-rest-beta&amp;preserve-view=true) for items that will be ingested, and allows your service to add, update, or delete items from the external data source.
 
-## Create a connection
+### Create a connection
 
 You must create and configure a connection before an application can ingest external items into Microsoft Graph, using the following steps:
 
@@ -43,15 +43,15 @@ You must create and configure a connection before an application can ingest exte
 
 After a schema has been registered, it cannot be changed for an existing connection.
 
-## Update a connection
+### Update a connection
 
 You can change the display name or description of an existing connection by [updating the connection](https://docs.microsoft.com/graph/api/externalconnection-update?view=graph-rest-beta&amp;preserve-view=true).
 
-## Delete a connection
+### Delete a connection
 
 You can [delete a connection](https://docs.microsoft.com/graph/api/externalconnection-delete?view=graph-rest-beta&amp;preserve-view=true). Deleting a connection removes all items that were indexed via that connection.<!--check this wording --->
 
-## States and operations
+### States and operations
 
 Your connection can exist in one of the following states.
 
@@ -82,11 +82,11 @@ The following table specifies which operations are available in each state.
 | Delete item | ❌ | ✔️ | ❌ | ✔️ |
 | | | | | |
 
-# Schema API
+## Schema API
 
 The connection [schema](https://docs.microsoft.com/graph/api/resources/schema?view=graph-rest-beta&amp;preserve-view=true) determines how your content will be used in various Microsoft 365 experiences. Schema is a flat list of all the properties you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before ingesting items into Microsoft Graph.
 
-## Example schema
+### Example schema
 
 The following table represents an example of a possible schema for a work ticket system connector.
 
@@ -106,9 +106,9 @@ The following table represents an example of a possible schema for a work ticket
 | resolved | Boolean | | ✔️ | ✔️ | | | |
 | | | | | | | | |
 
-## Property attributes
+### Property attributes
 
-### Searchable
+#### Searchable
 
 If a property is searchable, its value is added to the full text index. When a user performs a search, we return results if there is a search hit in one of the searchable fields or its [content](https://docs.microsoft.com/graph/search-index-manage-items#content).
 
@@ -116,7 +116,7 @@ If a property is searchable, its value is added to the full text index. When a u
 
 _A search for &quot;design&quot; displaying results for hits against properties ( __title__ ,  __tags__ ) and content_
 
-### Queryable
+#### Queryable
 
 If a property is queryable, you can query against it using knowledge query language (KQL). KQL consists of 1 or more free text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator(\*).
 
@@ -132,13 +132,13 @@ _A search for &quot;search ba_&quot; displaying results that match this prefix\*
 
 _A search for &quot;tags:design&quot; scoping down results to items with &quot;design&quot; in the tags property_
 
-### Retrievable
+#### Retrievable
 
 If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large properties, such as editHistory, or too many properties as retrievable will increase search latency. Be selective and choose relevant properties.
 
 _A set of retrievable properties ( __title__ ,  __lastEditedBy__  etc.) rendered as a result_
 
-### Refinable
+#### Refinable
 
 If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page.
 
@@ -146,7 +146,7 @@ If a property is refinable, an admin can configure it as a custom filter in the 
 
 _Refine results by  __tags__ , a refinable property_
 
-## Labels
+### Labels
 
 A label is a well-known tag published by Microsoft that you can add against a property in your schema. Adding a label helps various Microsoft products understand the property and provides a better experience.
 
@@ -171,7 +171,7 @@ Add as many labels as you can, but ensure that they are accurately mapped to pro
 
 All properties that you map to labels must be retrievable.
 
-### Relevance
+#### Relevance
 
 By applying as many accurately mapped labels as possible, you can also improve the discovery of your content through search. We highly recommend defining as many of the below labels as possible, listed by potential impact on discovery in descending order:
 
@@ -188,7 +188,7 @@ For discovery, i.e. search scenarios, please note:
 - When you use a property as label that contains large content, you might increase search latency and have to wait longer for search to return results.
 - Especially in the scenario where you configure a custom vertical that allows search over more than one connection, the search outcomes greatly benefit from appointing as many labels as possible.
 
-### Default result types
+#### Default result types
 
 Labels also affect how default result types are generated. Adding the title and content labels at a minimum will ensure that a result type is created for your connection.
 
@@ -211,11 +211,11 @@ Finally, when assigning labels, ensure the following:
 - The properties and their assigned labels must have the same datatype.
 - You can map exactly one label to exactly one property.
 
-## Aliases
+### Aliases
 
 Aliases are friendly names for properties that you assign. These will be used in queries and selections in refinable property filters.
 
-## External item API
+### External item API
 
 External items added by your application to Microsoft Graph are represented by the [externalItem](https://docs.microsoft.com/graph/api/resources/externalitem?view=graph-rest-beta&amp;preserve-view=true) resource.
 
@@ -223,7 +223,7 @@ Once you have created a connection, you can add your content. Each item from you
 
 An [externalItem](https://docs.microsoft.com/graph/api/resources/externalitem?view=graph-rest-beta&amp;preserve-view=true) has three key components: access control list, properties, and content.
 
-## Access control list
+### Access control list
 
 The access control list (ACL) is used to specify whether the given roles are granted or denied access to view items in Microsoft experiences. It is an array of access control entries, each representing an Azure Active Directory user or group. There is a third access control entry type Everyone that represents all the users in the tenant.
 
@@ -235,13 +235,13 @@ If your data source has non Azure Active Directory groups, such as teams within 
 
 External groups can consist of another external group, Azure Active Directory users, and Azure Active Directory groups. If you have non-Azure Active Directory users, you must translate them to Azure Active Directory users in your access control list.
 
-## Properties
+### Properties
 
 The properties component is used to add item metadata that is useful in Microsoft Graph experiences. You must [register the schema](https://docs.microsoft.com/graph/search-index-manage-schema) for the connection before adding items into it and convert datatypes into [supported datatypes](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta&amp;preserve-view=true).
 
 ![API Properties](./images/connectors-images/api-properties.png)
 
-## Content
+### Content
 
 The content component is used to add the bulk of the item that needs to be full text indexed. Examples include ticket description, parsed text from a file body, or a wiki page body.
 
@@ -255,7 +255,7 @@ When content in your data source changes, you must sync it with your connection 
 
 Once your content has been added to Microsoft Graph, you can search for it through the Microsoft Search experience after setting up [verticals and result types](https://docs.microsoft.com/MicrosoftSearch/customize-search-page) or using the [Microsoft Graph Search API](https://docs.microsoft.com/graph/api/resources/search-api-overview?view=graph-rest-beta&amp;preserve-view=true). Integration with many other Microsoft 365 experiences is coming soon.
 
-## Add an item
+### Add an item
 
 You can add an item to the index by [creating an externalItem](https://docs.microsoft.com/graph/api/externalconnection-put-items?view=graph-rest-beta&amp;preserve-view=true). When you create an item, you assign a unique identifier in the URL.
 
@@ -279,7 +279,7 @@ Content-Type: application/json
 
 ![NOTE] Before indexed items can be found in the Microsoft Search UI, an administrator must [customize the search results page](https://docs.microsoft.com/MicrosoftSearch/configure-connector#next-steps-customize-the-search-results-page) for the corresponding connection.
 
-## Update an item
+### Update an item
 
 When an item is updated in the external service (helpdesk ticket is reassigned, or a product description is updated), you can update its entry in Microsoft Graph by [updating the externalItem](https://docs.microsoft.com/graph/api/externalitem-update?view=graph-rest-beta&amp;preserve-view=true), using the unique identifier assigned to the item when you created it.
 
@@ -295,7 +295,7 @@ Content-Type: application/json
 
 }
 
-## Delete an item
+### Delete an item
 
 You can remove items from the index by [deleting the externalItem](https://docs.microsoft.com/graph/api/externalitem-delete?view=graph-rest-beta&amp;preserve-view=true), using the unique identifier assigned to the item when you created it.
 
