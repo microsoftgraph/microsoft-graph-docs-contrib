@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and an updated [pers
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/notes/{id}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/notes/{id}
 Content-Type: application/json
 Content-length: 413
 

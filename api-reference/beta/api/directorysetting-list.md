@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 List tenant-wide or group settings
 ```http
 GET /settings
-GET /group/{id}/settings
+GET /groups/{id}/settings
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
