@@ -9,11 +9,9 @@ ms.prod: "data-inflow"
 
 # Microsoft Graph connectors API overview
 
-Microsoft Graph connectors offer a simple way to bring external data into the Microsoft Graph and enhance Microsoft 365 intelligent experiences. You may want to build a custom connector to integrate with services that aren&#39;t available as prebuilt connectors. To build custom connectors, you use the Microsoft Graph Connector REST APIs.
+Microsoft Graph connectors offer a simple way to bring external data into the Microsoft Graph and enhance Microsoft 365 intelligent experiences. You may want to build a custom connector to integrate with services that aren't available as connectors built by Microsoft. To build custom connectors, you use the Microsoft Graph Connector REST APIs.
 
-image
-
-![](RackMultipart20210304-4-1i32b7z_html_5dcee92978600cd3.png)
+![API overview](./images/connectors-images/api-overview.png)
 
 Graph Connector APIs help:
 
@@ -22,23 +20,21 @@ Graph Connector APIs help:
 3. Ingest external data items into Microsoft Graph.
 4. Sync external groups.
 
-In this topic, let&#39;s look at these APIs in detail.
+In this topic, let's look at these APIs in detail.
 
 # Connections API
 
 Connections from external services are represented by the [externalConnection](https://docs.microsoft.com/graph/api/resources/externalconnection?view=graph-rest-beta&amp;preserve-view=true) resource in Microsoft Graph. A connection is a logical container for your external data that you can manage as a single unit.
 
-table
-
-Once you create a connection to an external data source such as an on-premises content source or an external SaaS service, you can register the schema and ingest the external content into Microsoft Graph. You can only view and manage connections you have created or are explicitly [authorized](https://docs.microsoft.com/graph/api/external-post-connections?view=graph-rest-beta&amp;preserve-view=true) to manage. Note that a search admin can view and manage all the connections in the tenant from the Modern Admin Center.
+Once you create a connection to an external data source such as an on-premises content source or an external SaaS service, you must register the schema and ingest the external content into Microsoft Graph. You can only view and manage connections you have created or are explicitly [authorized](https://docs.microsoft.com/graph/api/external-post-connections?view=graph-rest-beta&amp;preserve-view=true) to manage. Note that a search admin can view and manage all the connections in the tenant from the Microsoft 365 admin center.
 
 You can model a connection anyway you want. For example, you can [set up multiple connections using the Microsoft Windows file share connector](https://docs.microsoft.com/microsoftsearch/configure-connector) to connect to different file shares. You can also create a single connection to add all items from your data source. For example, you can create a single connection to add all the tickets and incidents across multiple teams from your helpdesk system.
 
-[Creating a connection](https://docs.microsoft.com/graph/search-index-manage-connections#create-a-connection) is the first step for an application to add items to Microsoft Graph. A connection allows your application to [define a schema](https://docs.microsoft.com/graph/api/externalconnection-post-schema?view=graph-rest-beta&amp;preserve-view=true) for items that will be ingested, and provides an endpoint for your service to add, update, or delete items from the external data source.
+[Creating a connection](data-inflow-manage-connections#create-a-connection) is the first step for an application to add items to Microsoft Graph. A connection allows your registered application to [define a schema](https://docs.microsoft.com/graph/api/externalconnection-post-schema?view=graph-rest-beta&amp;preserve-view=true) for items that will be ingested, and allows your service to add, update, or delete items from the external data source.
 
 ## Create a connection
 
-Before an application can ingest external items into Microsoft Graph, it must create and configure a connection using the following steps.
+You must create and configure a connection before an application can ingest external items into Microsoft Graph, using the following steps:
 
 - [Create a connection](https://docs.microsoft.com/graph/api/external-post-connections?view=graph-rest-beta&amp;preserve-view=true) with a unique ID, display name, and description.
 - [Register a schema](https://docs.microsoft.com/graph/api/externalconnection-post-schema?view=graph-rest-beta&amp;preserve-view=true) to define the fields that will be included in the index.
@@ -53,63 +49,38 @@ You can change the display name or description of an existing connection by [upd
 
 ## Delete a connection
 
-You can [delete a connection](https://docs.microsoft.com/graph/api/externalconnection-delete?view=graph-rest-beta&amp;preserve-view=true), and remove all items that were indexed via that connection.
+You can [delete a connection](https://docs.microsoft.com/graph/api/externalconnection-delete?view=graph-rest-beta&amp;preserve-view=true). Deleting a connection removes all items that were indexed via that connection.<!--check this wording --->
 
 ## States and operations
 
 Your connection can exist in one of the following states.
 
-| **STATES AND OPERATIONS** |
-| --- |
-| **State** | **Description** |
-|
-| |
-|
-| |
-| **Draft** | An empty connection is provisioned. The data source, schema, or any settings have not been configured yet. |
-| --- | --- |
-| **Ready** | The connection is provisioned with registered schema and is ready for ingestion. |
-| --- | --- |
-| **Obsolete** | This occurs when a dependent feature, such as an API, has been deprecated. Deleting the connection is the only valid operation. |
-| --- | --- |
+| **State**    | **Description**    |
+|----------------------------------------------------------------|-----------------------------------------------------------------------------| 
+| **Draft**           | An empty connection is provisioned. The data source, schema, or any settings have not been configured yet. |
+| **Ready**           | The connection is provisioned with registered schema and is ready for ingestion. |
+| **Obsolete**        | This occurs when a dependent feature, such as an API, has been deprecated. Deleting the connection is the only valid operation. |
 | **LimitExceeded** | If you hit the maximum limit of a single connection or the tenant level quota across all connections, you cannot add more items until you exit the state. |
-| --- | --- |
+| | |
 
 The following table specifies which operations are available in each state.
 
-table
 
-| **STATES AND OPERATIONS** |
-| --- |
 | **Operation** | **Draft** | **Ready** | **Obsolete** | **LimitExceeded** |
-|
-| |
-|
-| |
+|---------------|-----------|-----------|--------------|-------------------|
 | Create connection | ❌ | ✔️ | ❌ | ✔️ |
-| --- | --- | --- | --- | --- |
 | Read connection | ✔️ | ✔️ | ✔️ | ✔️ |
-| --- | --- | --- | --- | --- |
 | Update connection | ✔️ | ✔️ | ❌ | ✔️ |
-| --- | --- | --- | --- | --- |
 | Delete connection | ✔️ | ✔️ | ✔️ | ✔️ |
-| --- | --- | --- | --- | --- |
 | Create schema | ✔️ | ❌ | ❌ | ❌ |
-| --- | --- | --- | --- | --- |
 | Read schema | ❌ | ✔️ | ✔️ | ✔️ |
-| --- | --- | --- | --- | --- |
 | Update schema | ❌ | ❌ | ❌ | ❌ |
-| --- | --- | --- | --- | --- |
 | Delete schema | ❌ | ❌ | ❌ | ❌ |
-| --- | --- | --- | --- | --- |
 | Create item | ❌ | ✔️ | ❌ | ❌ |
-| --- | --- | --- | --- | --- |
 | Read item | ❌ | ✔️ | ✔️ | ✔️ |
-| --- | --- | --- | --- | --- |
 | Update item | ❌ | ✔️ | ❌ | ✔️ |
-| --- | --- | --- | --- | --- |
 | Delete item | ❌ | ✔️ | ❌ | ✔️ |
-| --- | --- | --- | --- | --- |
+| | | | | |
 
 # Schema API
 
@@ -119,78 +90,21 @@ The connection [schema](https://docs.microsoft.com/graph/api/resources/schema?vi
 
 The following table represents an example of a possible schema for a work ticket system connector.
 
-table
-
-| **EXAMPLE SCHEMA** |
-| --- |
-| **Property** | **Type** | **Searchable** | **Queryable** | **Retrievable** | **Refinable** | **Labels** | **Aliases** |
-|
-| |
-|
-| |
-| ticketId | String |
- |
- |
- |
- |
- | ID |
+| **Property** | **Type** | **Searchable** | **Queryable** | **Retrievable** | **Refinable** | **Labels** |**Aliases** |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| title | String | ✔️ | ✔️ | ✔️ |
- | title |
- |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| createdBy | String | ✔️ | ✔️ |
- |
- | createdBy | creator |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| assignedTo | String | ✔️ | ✔️ |
- |
- |
- |
- |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| lastEditedDate | DateTime |
- | ✔️ | ✔️ | ✔️ | lastModifiedDateTime | editedDate |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| lastEditedBy | String | ✔️ | ✔️ | ✔️ |
- | lastModifiedBy | edited |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| workItemType | String |
- | ✔️ | ✔️ |
- |
- | ticketType |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| priority | Int64 | ✔️ |
- |
- |
- |
- |
- |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| tags | StringCollection |
- | ✔️ | ✔️ | ✔️ |
- |
- |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| status | String |
- | ✔️ | ✔️ |
- |
- |
- |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| url | String |
- |
- |
- |
- | url |
- |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| resolved | Boolean |
- | ✔️ | ✔️ |
- |
- |
- |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+| ticketId | String | | | | | | ID |
+| title | String | ✔️ | ✔️ | ✔️ | | title | |
+| createdBy | String | ✔️ | ✔️ | | | createdBy | creator |
+| assignedTo | String | ✔️ | ✔️ | | | | |
+| lastEditedDate | DateTime | | ✔️ | ✔️ | ✔️ | lastModifiedDateTime | editedDate |
+| lastEditedBy | String | ✔️ | ✔️ | ✔️ | | lastModifiedBy | edited |
+| workItemType | String | | ✔️ | ✔️ | | | ticketType |
+| priority | Int64 | ✔️ | | | | | |
+| tags | StringCollection | | ✔️ | ✔️ | ✔️ | | |
+| status | String | | ✔️ | ✔️ | | | |
+| url | String | | | | | url | |
+| resolved | Boolean | | ✔️ | ✔️ | | | |
+| | | | | | | | |
 
 ## Property attributes
 
@@ -198,7 +112,7 @@ table
 
 If a property is searchable, its value is added to the full text index. When a user performs a search, we return results if there is a search hit in one of the searchable fields or its [content](https://docs.microsoft.com/graph/search-index-manage-items#content).
 
-\&lt;Diagram\&gt;
+\<Diagram\>
 
 _A search for &quot;design&quot; displaying results for hits against properties ( __title__ ,  __tags__ ) and content_
 
@@ -210,11 +124,11 @@ If a property is queryable, you can query against it using knowledge query langu
 
 Suffix matching is not supported.
 
-\&lt;Diagram\&gt;
+\<Diagram\>
 
 _A search for &quot;search ba_&quot; displaying results that match this prefix\*
 
-\&lt;Diagram\&gt;
+\<Diagram\>
 
 _A search for &quot;tags:design&quot; scoping down results to items with &quot;design&quot; in the tags property_
 
@@ -222,15 +136,13 @@ _A search for &quot;tags:design&quot; scoping down results to items with &quot;d
 
 If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large properties, such as editHistory, or too many properties as retrievable will increase search latency. Be selective and choose relevant properties.
 
-![](RackMultipart20210304-4-1i32b7z_html_49ac0cb03196381.gif)
-
 _A set of retrievable properties ( __title__ ,  __lastEditedBy__  etc.) rendered as a result_
 
 ### Refinable
 
 If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page.
 
-\&lt;Diagram\&gt;
+\<Diagram\>
 
 _Refine results by  __tags__ , a refinable property_
 
@@ -238,37 +150,22 @@ _Refine results by  __tags__ , a refinable property_
 
 A label is a well-known tag published by Microsoft that you can add against a property in your schema. Adding a label helps various Microsoft products understand the property and provides a better experience.
 
-table
-
-| **LABELS** |
-| --- |
 | **Label** | **Description** |
-|
-| |
-|
-| |
+| --- | --- |
 | title | The title of the item that you want shown in search &amp; other experiences |
-| --- | --- |
 | url | The target URL of the item in the data source |
-| --- | --- |
 | createdBy | Name of the person who created the item in the data source |
-| --- | --- |
 | lastModifiedBy | Name of the person who most recently edited the item in the data source |
-| --- | --- |
 | authors | Name of all the people who participated/collaborated on the item in the data source |
-| --- | --- |
 | createdDateTime | Date &amp; time that the item was created in the data source |
-| --- | --- |
 | lastModifiedDateTime | Date &amp; time the item was last modified in the data source |
-| --- | --- |
 | fileName | In case of a file, the name of the file in the data source |
-| --- | --- |
 | fileExtension | In case of a file, the extension of the file in the data source |
-| --- | --- |
+| | |
 
 For example, the connection property _lastEditedBy_ has the same meaning as the Microsoft label _lastModifiedBy_.
 
-Add as many labels as you can, but ensure that they are accurately mapped to properties. Do not add a label to a property if it doesn&#39;t make sense. Incorrect mappings will deteriorate the experience.
+Add as many labels as you can, but ensure that they are accurately mapped to properties. Do not add a label to a property if it doesn't make sense. Incorrect mappings will deteriorate the experience.
 
   **Important**
 
@@ -328,11 +225,9 @@ An [externalItem](https://docs.microsoft.com/graph/api/resources/externalitem?vi
 
 ## Access control list
 
-The access control list is used to specify whether the given roles are granted or denied access to view items in Microsoft experiences. It is an array of access control entries, each representing an Azure Active Directory user or group. There is a third access control entry type Everyone that represents all the users in the tenant.
+The access control list (ACL) is used to specify whether the given roles are granted or denied access to view items in Microsoft experiences. It is an array of access control entries, each representing an Azure Active Directory user or group. There is a third access control entry type Everyone that represents all the users in the tenant.
 
-image
-
-![](RackMultipart20210304-4-1i32b7z_html_2001020cea93647b.png)
+![API ACL](./images/connectors-images/api-acl.png)
 
 The accessType value deny takes precedence over grant. For example, in the item shown above, while Everyone is granted access and a specific user is denied access, the effective permission for this user is deny.
 
@@ -344,9 +239,7 @@ External groups can consist of another external group, Azure Active Directory us
 
 The properties component is used to add item metadata that is useful in Microsoft Graph experiences. You must [register the schema](https://docs.microsoft.com/graph/search-index-manage-schema) for the connection before adding items into it and convert datatypes into [supported datatypes](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta&amp;preserve-view=true).
 
-image
-
-![](RackMultipart20210304-4-1i32b7z_html_69f2be31b929f180.png)
+![API Properties](./images/connectors-images/api-properties.png)
 
 ## Content
 
@@ -354,13 +247,9 @@ The content component is used to add the bulk of the item that needs to be full 
 
 Content is one of the key fields influencing [relevance](https://docs.microsoft.com/graph/search-index-manage-schema#relevance) across Microsoft experiences. We support content of the type text and HTML. If your data source has binary files, you can parse them to text before adding them to Microsoft Graph.
 
-image
-
-![](RackMultipart20210304-4-1i32b7z_html_302833a1bd4bf8e8.png)
+![API Content](./images/connectors-images/api-content.png)
 
 Content cannot be directly added into a search result template, but you can use a generated result snippet which is a dynamically generated preview of the relevant sections within content.
-
-![](RackMultipart20210304-4-1i32b7z_html_49ac0cb03196381.gif)
 
 When content in your data source changes, you must sync it with your connection items. You can either update the entire item or update one or more of its components.
 
@@ -414,9 +303,8 @@ HTTPCopy
 
 DELETE /external/connections/contosohelpdesk/items/SR00145
 
-##
- External groups API
+## External groups API
 
-Items in the external service can be ACL-ed to different types of non- Azure Active Directory groups. For example, Salesforce items might have permission sets and profiles. ServiceNow items might have local groups. When we ingest these items into Microsoft Graph, we need to honor these ACLs.
+Items in the external service can be granted or denied access via ACL to different types of non- Azure Active Directory groups. For example, Salesforce items might have permission sets and profiles. ServiceNow items might have local groups. When we ingest these items into Microsoft Graph, we need to honor these ACLs.
 
 You can use the External groups API to set permissions on external items ingested into Microsoft Graph. An [externalGroup](https://docs.microsoft.com/graph/api/externalgroup-post-members?view=graph-rest-beta&amp;tabs=http) represents a non-Azure Active Directory group or group-like construct (such as Business units, Teams, and so on) and determines permissions on the content in your external data source.
