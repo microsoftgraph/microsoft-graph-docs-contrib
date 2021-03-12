@@ -119,7 +119,7 @@ Content-length: 730
 } -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
 
 {
   "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
