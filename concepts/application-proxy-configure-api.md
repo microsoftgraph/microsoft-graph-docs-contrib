@@ -4,7 +4,7 @@ description: Configure Application Proxy using the Microsoft Graph APIs to provi
 author: davidmu1
 ms.topic: conceptual
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 ---
 
 # Configure Application Proxy using the Microsoft Graph API
