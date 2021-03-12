@@ -3,7 +3,7 @@ title: "Create claimsMappingPolicy"
 description: "Create a new claimsMappingPolicy."
 localization_priority: Normal
 author: "paulgarn"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -124,3 +124,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

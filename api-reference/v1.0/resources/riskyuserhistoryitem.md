@@ -3,7 +3,7 @@ title: "riskyUserHistoryItem resource type"
 description: "risky user history item"
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -72,4 +72,5 @@ The following is a JSON representation of the resource.
   }
 }
 ```
+
 

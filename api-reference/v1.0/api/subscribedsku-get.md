@@ -3,7 +3,7 @@ title: "Get subscribedSku"
 description: "Retrieve a specific commercial subscription that an organization has acquired."
 localization_priority: Normal
 author: "SumitParikh"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /subscribedSkus/{id}
 ```
 ## Optional query parameters
-This method does **not** support the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response (e.g. $filter is not supported here).
+This method does **not** support the [OData Query Parameters](/graph/query-parameters) to help customize the response (e.g. $filter is not supported here).
 
 ## Request headers
 

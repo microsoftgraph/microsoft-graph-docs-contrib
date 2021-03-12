@@ -13,6 +13,11 @@ Namespace: microsoft.graph.callRecords
 
 Retrieve the properties and relationships of a [callRecord](../resources/callrecords-callrecord.md) object.
 
+There are two ways to get the **id** of a **callRecord**:
+
+* Subscribe to [change notifications](/graph/api/resources/webhooks?view=graph-rest-1.0) to the `/communications/callRecords` endpoint.
+* Use the **callChainId** property of a [call](../resources/call.md). The call record is available only after the associated call is completed.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -176,7 +181,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}?$expand=ses
 
 #### Response
 
-The following is an example of the response. If the sessions list is truncated, a `sessions@odata.nextlink` value will be provided to retrieve the next page of sessions.
+The following is an example of the response. If the sessions list is truncated, a `sessions@odata.nextLink` value will be provided to retrieve the next page of sessions.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -418,7 +423,7 @@ Content-type: application/json
             ]
         }
     ],
-    "sessions@odata.nextlink": "https://graph.microsoft.com/v1.0/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$expand=segments&$skiptoken=abc"
+    "sessions@odata.nextLink": "https://graph.microsoft.com/v1.0/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$expand=segments&$skiptoken=abc"
 }
 ```
 
@@ -431,3 +436,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

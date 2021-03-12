@@ -25,8 +25,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/itemAt
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/itemAt
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/itemAt
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/itemAt
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/itemAt
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/itemAt
 
 ```
 ## Request headers
@@ -92,7 +94,7 @@ Content-type: application/json
 Content-length: 81
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "index": 99,
   "values": "values-value"
@@ -110,3 +112,4 @@ Content-length: 81
   "suppressions": [
   ]
 }-->
+

@@ -3,7 +3,7 @@ title: "Create activityBasedTimeoutPolicy"
 description: "Create a new activityBasedTimeoutPolicy."
 localization_priority: Normal
 author: "lujiangfeng666"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -127,3 +127,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

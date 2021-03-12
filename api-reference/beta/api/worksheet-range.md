@@ -26,7 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/Range
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/Range
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/Range
 
 ```
 ## Request headers
@@ -56,8 +57,8 @@ Here is an example of the request.
   "blockType": "request",
   "name": "worksheet_range"
 }-->
-```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/Range
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/Range
 Content-type: application/json
 Content-length: 32
 
@@ -75,6 +76,10 @@ Content-length: 32
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/worksheet-range-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/worksheet-range-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -115,3 +120,5 @@ Content-length: 169
   ]
 }
 -->
+
+

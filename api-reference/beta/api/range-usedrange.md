@@ -26,9 +26,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/UsedRange
-GET /workbook/worksheets/{id|name}/range(address='<address>')/UsedRange
-GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
+GET /me/drive/items/{id}/workbook/names/{name}/range/UsedRange
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/UsedRange
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/UsedRange
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/UsedRange
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
 
 ```
 ## Request headers
@@ -79,6 +82,10 @@ Content-length: 24
 [!INCLUDE [sample-code](../includes/snippets/objc/range-usedrange-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/range-usedrange-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -117,3 +124,5 @@ Content-length: 169
   ]
 }
 -->
+
+

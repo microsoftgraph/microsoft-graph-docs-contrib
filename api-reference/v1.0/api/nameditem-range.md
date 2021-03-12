@@ -2,7 +2,7 @@
 title: "NamedItem: Range"
 description: "Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range."
 localization_priority: Normal
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType
 ---
@@ -24,7 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range
+GET /me/drive/items/{id}/workbook/names/{name}/range
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range
 
 ```
 ## Request headers
@@ -105,3 +106,4 @@ Content-length: 169
   "suppressions": [
   ]
 }-->
+

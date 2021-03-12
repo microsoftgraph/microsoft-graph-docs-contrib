@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT /synchronizationProfiles
+PUT /education/synchronizationProfiles
 ```
 
 ## Request headers
@@ -185,3 +185,5 @@ Content-type: application/json
     ]
 }
 ```
+
+

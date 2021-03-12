@@ -3,7 +3,7 @@ title: "Delete domain"
 description: "Deletes a domain from a tenant."
 author: "adimitui"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -76,6 +76,10 @@ DELETE https://graph.microsoft.com/beta/domains/contoso.com
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-domain-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-domain-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -103,3 +107,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

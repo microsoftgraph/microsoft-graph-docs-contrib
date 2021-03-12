@@ -7,11 +7,14 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# outlookTask: complete
+# outlookTask: complete (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Complete an Outlook task which sets the **completedDateTime** property to the current date, and the **status** property to `completed`.
 
@@ -68,7 +71,7 @@ Here is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/tasks('AAMkADA1MT15rfAAA=')/complete
+POST https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MT15rfAAA=')/complete
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
@@ -142,3 +145,5 @@ Content-length: 465
   "suppressions": []
 }
 -->
+
+

@@ -3,7 +3,7 @@ title: "Get authorizationPolicy"
 description: "Retrieve the properties and relationships of authorizationPolicy object."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -82,5 +82,18 @@ Content-type: application/json
     "enabledPreviewFeatures": [],
     "guestUserRoleId": "10dae51f-b6af-4016-8d66-8c2a99b929b3",
     "blockMsolPowerShell": ""
+    "defaultUserRolePermissions": {
+        "allowedToCreateApps": true,
+        "allowedToCreateSecurityGroups": false,
+        "allowedToReadOtherUsers": true
+    }
+    "allowedToSignUpEmailBasedSubscriptions": false,
+    "allowedToUseSSPR": true,
+    "allowEmailVerifiedUsersToJoinOrganization": true,
+    "permissionGrantPolicyIdsAssignedToDefaultUserRole": [
+        "managePermissionGrantsForSelf.microsoft-user-default-low"
+    ]
 }
 ```
+
+

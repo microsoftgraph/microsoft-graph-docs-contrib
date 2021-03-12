@@ -4,16 +4,16 @@ description: "Retrieve the properties and relationships of a leakedcredentialsri
 localization_priority: Normal
 doc_type: apiPageType
 author: "cloudhandler"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
-# Get leakedCredentialsRiskEvent
+# Get leakedCredentialsRiskEvent (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
+>[!CAUTION]
 >The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020. For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 Retrieve the properties and relationships of a leakedcredentialsriskevent object.
@@ -91,3 +91,5 @@ Content-length: 251
   "suppressions": []
 }
 -->
+
+

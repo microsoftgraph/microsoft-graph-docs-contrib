@@ -3,7 +3,7 @@ title: "List deviceManagementExportJobs"
 description: "List properties and relationships of the deviceManagementExportJob objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 538
+Content-Length: 593
 
 {
   "value": [
@@ -74,6 +74,7 @@ Content-Length: 538
       ],
       "format": "pdf",
       "snapshotId": "Snapshot Id value",
+      "localizationType": "replaceLocalizableValues",
       "status": "notStarted",
       "url": "Url value",
       "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
@@ -82,6 +83,7 @@ Content-Length: 538
   ]
 }
 ```
+
 
 
 

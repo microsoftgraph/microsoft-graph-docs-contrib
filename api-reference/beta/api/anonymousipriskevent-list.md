@@ -3,17 +3,17 @@ title: "List anonymousIpRiskEvents"
 description: "Retrieve a list of anonymousipriskevent objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 author: "cloudhandler"
 ---
 
-# List anonymousIpRiskEvents
+# List anonymousIpRiskEvents (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
+>[!CAUTION]
 >The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020. For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 Retrieve a list of anonymousipriskevent objects.
@@ -99,3 +99,5 @@ Content-length: 290
   "suppressions": []
 }
 -->
+
+

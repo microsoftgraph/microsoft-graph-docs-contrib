@@ -7,11 +7,14 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Create outlookTask
+# Create outlookTask (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Create an Outlook task in the specified task folder.
 
@@ -23,8 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.    |
-|Delegated (personal Microsoft account) | Not supported.    |
+|Delegated (work or school account) | Tasks.ReadWrite    |
+|Delegated (personal Microsoft account) | Tasks.ReadWrite    |
 |Application | Not supported. |
 
 ## HTTP request
@@ -56,7 +59,7 @@ Here is an example of the request.
   "name": "create_outlooktask_from_outlooktaskfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/taskfolders('AAMkADIyAAAhrbPXAAA=')/tasks
+POST https://graph.microsoft.com/beta/me/outlook/taskfolders('AAMkADIyAAAhrbPXAAA=')/tasks
 Content-type: application/json
 Content-length: 376
 
@@ -132,3 +135,5 @@ Content-length: 376
   "suppressions": []
 }
 -->
+
+

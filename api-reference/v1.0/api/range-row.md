@@ -24,9 +24,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/row
-POST /workbook/worksheets/{id|name}/range(address='<address>')/row
-POST /workbook/tables/{id|name}/columns/{id|name}/range/row
+POST /me/drive/items/{id}/workbook/names/{name}/range/row
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/row
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/row
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/row
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/row
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/row
 
 ```
 ## Request headers
@@ -98,3 +101,4 @@ Content-length: 169
   "section": "documentation",
   "tocPath": ""
 }-->
+

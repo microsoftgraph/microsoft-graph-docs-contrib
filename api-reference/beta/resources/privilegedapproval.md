@@ -3,7 +3,7 @@ title: "privilegedApproval resource type"
 description: "Represents an approval that is requested in Privileged Identity Management for getting into a role."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "shauliu"
 ---
 
@@ -33,11 +33,11 @@ Represents an approval that is requested in Privileged Identity Management for g
 |approvalState|string| Possible values are: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
 |approvalType|String||
 |approverReason|String||
-|endDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|endDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String| Read-only.|
 |requestorReason|String||
 |roleId|String||
-|startDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|startDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |userId|String||
 
 ## Relationships
@@ -87,3 +87,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

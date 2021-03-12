@@ -3,7 +3,7 @@ title: "featureRolloutPolicy resource type"
 description: "Represents a feature rollout policy associated with a directory object."
 localization_priority: Normal
 author: "keylimesoda"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---
 
@@ -37,6 +37,10 @@ The following are pre-requisites for each of the features that are currently sup
 ### PasswordHashSync
 
 * Enable [PasswordHashSync](/azure/active-directory/hybrid/whatis-phs) from the “Optional features” page in Azure AD Connect.
+
+### EmailAsAlternateId
+
+* Associate alternate email  with user accounts.
 
 ## Methods
 
@@ -77,7 +81,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.featureRolloutPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -101,3 +104,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

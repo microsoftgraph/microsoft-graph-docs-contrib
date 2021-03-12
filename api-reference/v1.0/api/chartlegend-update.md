@@ -24,7 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts/{name}/legend
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/legend
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/legend
 ```
 ## Optional request headers
 | Name       | Description|
@@ -112,3 +113,4 @@ Content-length: 72
   "suppressions": [
   ]
 }-->
+

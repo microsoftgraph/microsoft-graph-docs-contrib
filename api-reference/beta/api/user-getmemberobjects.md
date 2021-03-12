@@ -2,7 +2,7 @@
 title: "user: getMemberObjects"
 description: "Return all of the groups, directory roles and administrative units that the user is a member of. The check is transitive."
 localization_priority: Normal
-author: "krbain"
+author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -78,6 +78,10 @@ Content-length: 33
 [!INCLUDE [sample-code](../includes/snippets/objc/user-getmemberobjects-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-getmemberobjects-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -114,3 +118,5 @@ Content-length: 39
   ]
 }
 -->
+
+

@@ -24,11 +24,13 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/columns
-GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -88,7 +90,7 @@ Content-length: 126
 {
   "value": [
     {
-      "id": 99,
+      "id": "99",
       "name": "name-value",
       "index": 99,
       "values": "values-value"

@@ -9,11 +9,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var conversation = new Conversation
 {
 	Topic = "New head count",
-	Threads = (IConversationThreadsCollectionPage)new List<ConversationThread>()
+	Threads = new ConversationThreadsCollectionPage()
 	{
 		new ConversationThread
 		{
-			Posts = (IConversationThreadPostsCollectionPage)new List<Post>()
+			Posts = new ConversationThreadPostsCollectionPage()
 			{
 				new Post
 				{

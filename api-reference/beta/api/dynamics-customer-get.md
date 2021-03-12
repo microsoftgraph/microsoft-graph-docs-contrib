@@ -49,7 +49,7 @@ If successful, this method returns a `200 OK` response code and a **customers** 
 
 Here is an example of the request.
 
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/customers/{id}
 ```
 
@@ -91,4 +91,6 @@ Here is an example of the response.
   "lastModifiedDateTime": "2017-03-07T00:35:28.983Z"
 }
 ```
+
+
 

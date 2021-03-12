@@ -2,7 +2,7 @@
 title: "Working with users in Microsoft Graph"
 description: "Build compelling app experiences based on users, their relationships with other users and groups, and their mail, calendar, and files."
 localization_priority: Priority
-author: "krbain"
+author: "jpettere"
 ms.prod: "microsoft-identity-platform"
 doc_type: conceptualPageType
 ---
@@ -20,7 +20,7 @@ You can access users through Microsoft Graph in two ways:
 
 ## Authorization
 
-One of the following [permissions](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) is required to access user operations. The first three permissions can be granted to an app by a user. The rest can only be granted to an app by the administrator.
+One of the following [permissions](/graph/permissions-reference) is required to access user operations. The first three permissions can be granted to an app by a user. The rest can only be granted to an app by the administrator.
 
 - User.ReadBasic.All
 - User.Read

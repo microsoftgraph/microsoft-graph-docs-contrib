@@ -25,8 +25,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/range
-GET /workbook/worksheets/{id|name}/tables/{id|name}/range
+GET /me/drive/items/{id}/workbook/tables/{id|name}/range
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/range
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/range
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/range
 
 ```
 ## Request headers
@@ -110,3 +112,4 @@ Content-length: 169
   "suppressions": [
   ]
 }-->
+

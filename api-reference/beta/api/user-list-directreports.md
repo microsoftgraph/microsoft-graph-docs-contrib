@@ -2,7 +2,7 @@
 title: "List directReports"
 description: "Get a user's direct reports."
 localization_priority: Normal
-author: "krbain"
+author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/beta/me/directReports
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directreports-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-directreports-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -109,3 +113,5 @@ Content-length: 55
   ]
 }
 -->
+
+

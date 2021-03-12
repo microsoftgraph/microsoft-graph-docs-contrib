@@ -1,7 +1,7 @@
 ---
 title: "checkMemberGroups"
 description: "Check for membership in the specified list of groups. Returns from the list those groups of which"
-author: "krbain"
+author: "jpettere"
 localization_priority: Priority
 ms.prod: "users"
 doc_type: apiPageType
@@ -135,3 +135,4 @@ Content-length: 39
   "suppressions": [
   ]
 }-->
+

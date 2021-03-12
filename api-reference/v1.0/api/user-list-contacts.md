@@ -45,7 +45,7 @@ To get contacts in a specific folder in the user's mailbox:
 GET /me/contactfolders/{Id}/contacts
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts
 
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## Optional query parameters
@@ -144,3 +144,4 @@ Content-length: 263
   "suppressions": [
   ]
 }-->
+

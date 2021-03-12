@@ -25,7 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/itemAt
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/itemAt
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/itemAt
 
 ```
 ## Request headers
@@ -108,3 +109,4 @@ Content-length: 52
   "suppressions": [
   ]
 }-->
+
