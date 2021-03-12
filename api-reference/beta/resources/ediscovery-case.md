@@ -70,7 +70,7 @@ In the context of eDiscovery, contains custodians, holds, collections, review se
 |:-------------|:------------|:------------|
 |Custodians|[microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md) collection| Returns a list of case **custodian** objects for this **case**.  Nullable.|
 |Legal holds|[microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md) collection| Returns a list of case **legalHold** objects for this **case**.  Nullable. |
-|Non custodial data sources|[microsoft.graph.ediscovery.noncustodialDataSources](../resources/ediscovery-noncustodialdatasource.md) collection| Returns a list of case **noncustodialDataSource** objects for this **case**.  Nullable. |
+|Non custodial data sources|[microsoft.graph.ediscovery.noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md) collection| Returns a list of case **noncustodialDataSource** objects for this **case**.  Nullable. |
 |Operations|[microsoft.graph.ediscovery.caseOperation](../resources/ediscovery-caseoperation.md) collection| Returns a list of case **operation** objects for this **case**. Nullable. |
 |Review sets|[microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) collection| Returns a list of **reviewSet** objects in the case. Read-only. Nullable. |
 |Settings|[microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md) collection| Returns a list of **settings** objects in the case. Read-only. Nullable. |

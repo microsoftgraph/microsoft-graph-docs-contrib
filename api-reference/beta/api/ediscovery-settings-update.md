@@ -100,6 +100,7 @@ Content-length: 350
 -->
 
 ``` http
+HTTP/1.1 204 No Content
 cache-control: no-cache
 client-request-id: e9fc7554-ca5e-0928-fc09-9c5825820c88
 content-length: 0
