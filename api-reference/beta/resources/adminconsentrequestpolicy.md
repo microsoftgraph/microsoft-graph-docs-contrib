@@ -56,7 +56,7 @@ The following is a JSON representation of the resource.
   "requestDurationInDays": "Integer",
   "reviewers": [
     {
-      "@odata.type": "microsoft.graph.accessReviewScope"
+      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
     }
   ]
 }
