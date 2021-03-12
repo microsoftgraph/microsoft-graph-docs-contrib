@@ -54,11 +54,11 @@ If successful, this method returns `204 No Content` response code.
 This example removes the permission identified as {perm-id} from the item {item-id} in the current user's OneDrive.
 
 
+
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite" }-->
-
 ```http
-DELETE https://graph.microsoft.com/beta/me/drive/root/items/{item-id}/permissions/{perm-id}
+DELETE https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{perm-id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-permission-csharp-snippets.md)]

@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const approve = {
-  message: "message-value"
+  message: 'message-value'
 };
 
-let res = await client.api('/teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/approve')
+await client.api('/teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/approve')
 	.version('beta')
 	.post(approve);
 

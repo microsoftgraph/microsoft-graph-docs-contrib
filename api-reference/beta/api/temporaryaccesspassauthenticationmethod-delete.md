@@ -4,7 +4,7 @@ description: "Deletes a temporaryAccessPassAuthenticationMethod object."
 author: "inbarckMS"
 ms.author: inbarc
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "List memberOf"
 description: "Get groups and directory roles that the user is a direct member of. "
-author: "krbain"
+author: "jpettere"
 localization_priority: Priority
 ms.prod: "users"
 doc_type: apiPageType

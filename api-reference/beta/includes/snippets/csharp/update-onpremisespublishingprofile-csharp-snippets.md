@@ -14,7 +14,7 @@ var hybridAgentUpdaterConfiguration = new HybridAgentUpdaterConfiguration
 var onPremisesPublishingProfiles = new OnPremisesPublishingProfile();
 onPremisesPublishingProfiles.HybridAgentUpdaterConfiguration = hybridAgentUpdaterConfiguration;
 
-await graphClient.OnPremisesPublishingProfiles["provisioning"]
+await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"]
 	.Request()
 	.UpdateAsync(onPremisesPublishingProfiles);
 
