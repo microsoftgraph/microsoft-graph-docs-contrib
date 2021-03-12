@@ -25,7 +25,7 @@ var permission = new Permission
 	}
 };
 
-await graphClient.Sites["{sitesId}"].Permissions
+await graphClient.Sites["{site-id}"].Permissions
 	.Request()
 	.AddAsync(permission);
 

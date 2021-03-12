@@ -18,7 +18,7 @@ var conversationMember = new AadUserConversationMember
 	}
 };
 
-await graphClient.Teams["ece6f0a1-7ca4-498b-be79-edf6c8fc4d82"].Channels["19:56eb04e133944cf69e603c5dac2d292e@thread.skype"].Members
+await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Members
 	.Request()
 	.AddAsync(conversationMember);
 

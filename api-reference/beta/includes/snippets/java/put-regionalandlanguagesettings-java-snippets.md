@@ -36,6 +36,15 @@ regionalFormatOverrides.shortTimeFormat = "HH:mm";
 regionalFormatOverrides.longTimeFormat = "h:mm:ss tt";
 regionalFormatOverrides.timeZone = "Pacific Standard Time";
 regionalAndLanguageSettings.regionalFormatOverrides = regionalFormatOverrides;
+TranslationPreferences translationPreferences = new TranslationPreferences();
+translationPreferences.translationBehavior = TranslationBehavior.YES;
+LinkedList<TranslationLanguageOverride> languageOverridesList = new LinkedList<TranslationLanguageOverride>();
+TranslationLanguageOverride languageOverrides = new TranslationLanguageOverride();
+languageOverrides.languageTag = "fr";
+languageOverrides.translationBehavior = TranslationBehavior.YES;
+languageOverridesList.add(languageOverrides);
+translationPreferences.languageOverrides = languageOverridesList;
+regionalAndLanguageSettings.translationPreferences = translationPreferences;
 
 graphClient.me().settings().regionalAndLanguageSettings()
 	.buildRequest()

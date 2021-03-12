@@ -23,7 +23,7 @@ var secureScoreControlProfile = new SecureScoreControlProfile
 	}
 };
 
-await graphClient.Security.SecureScoreControlProfiles["NonOwnerAccess"]
+await graphClient.Security.SecureScoreControlProfiles["{secureScoreControlProfile-id}"]
 	.Request()
 	.UpdateAsync(secureScoreControlProfile);
 

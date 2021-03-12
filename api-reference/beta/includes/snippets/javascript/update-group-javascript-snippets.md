@@ -14,12 +14,12 @@ const group = {
   assignedLabels: 
   [
     {
-        "labelId" : "45cd0c48-c540-4358-ad79-a3658cdc5b88"
+        labelId: '45cd0c48-c540-4358-ad79-a3658cdc5b88'
     }
   ]
 };
 
-let res = await client.api('/groups/{id}')
+await client.api('/groups/{id}')
 	.version('beta')
 	.update(group);
 

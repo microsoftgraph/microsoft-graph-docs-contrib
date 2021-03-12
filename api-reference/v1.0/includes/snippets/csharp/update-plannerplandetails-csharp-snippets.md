@@ -23,7 +23,7 @@ var plannerPlanDetails = new PlannerPlanDetails
 	}
 };
 
-await graphClient.Planner.Plans["{plan-id}"].Details
+await graphClient.Planner.Plans["{plannerPlan-id}"].Details
 	.Request()
 	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 	.UpdateAsync(plannerPlanDetails);
