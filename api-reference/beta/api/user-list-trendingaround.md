@@ -1,7 +1,7 @@
 ---
 title: "List trendingAround"
 description: "Calculated insight that returns the list of items trending around a user."
-author: "krbain"
+author: "jpettere"
 localization_priority: Normal
 ms.prod: "users"
 doc_type: apiPageType

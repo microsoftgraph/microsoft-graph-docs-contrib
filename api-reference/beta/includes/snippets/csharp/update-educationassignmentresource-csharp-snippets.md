@@ -11,7 +11,7 @@ var educationAssignmentResource = new EducationAssignmentResource
 	DistributeForStudentWork = false
 };
 
-await graphClient.Education.Classes["11021"].Assignments["19002"].Resources["850f51b7-1df9-4ec0-bd62-64a0214b9cbf"]
+await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Resources["{educationAssignmentResource-id}"]
 	.Request()
 	.UpdateAsync(educationAssignmentResource);
 

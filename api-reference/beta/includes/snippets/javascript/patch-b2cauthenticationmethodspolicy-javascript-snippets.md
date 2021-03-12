@@ -15,7 +15,7 @@ const b2cAuthenticationMethodsPolicy = {
     isUserNameAuthenticationEnabled: true
 };
 
-let res = await client.api('/policies/b2cAuthenticationMethodsPolicy')
+await client.api('/policies/b2cAuthenticationMethodsPolicy')
 	.version('beta')
 	.update(b2cAuthenticationMethodsPolicy);
 

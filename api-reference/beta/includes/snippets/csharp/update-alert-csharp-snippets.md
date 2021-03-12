@@ -27,7 +27,7 @@ var alert = new Alert
 	}
 };
 
-await graphClient.Security.Alerts["{alert_id}"]
+await graphClient.Security.Alerts["{alert-id}"]
 	.Request()
 	.Header("Prefer","return=representation")
 	.UpdateAsync(alert);

@@ -1322,9 +1322,10 @@ items:
       items:
       - name: Overview
         href: resources/communications-api-overview.md
-      - name: Call
-        href: resources/call.md
+      - name: Calls
         items:
+        - name: Call
+          href: resources/call.md
         - name: Create
           href: api/application-post-calls.md
         - name: Get
@@ -1418,9 +1419,10 @@ items:
             href: resources/callrecords-directroutinglogrow.md
           - name: List direct routing calls
             href: api/callrecords-callrecord-getdirectroutingcalls.md
-      - name: Online meeting
-        href: resources/onlinemeeting.md
+      - name: Online meetings
         items:
+        - name: Online meeting
+          href: resources/onlinemeeting.md
         - name: Create
           href: api/application-post-onlinemeetings.md
         - name: Get
@@ -11179,6 +11181,20 @@ items:
               href: api/connectedorganization-delete-externalsponsors.md
             - name: Remove internal sponsors
               href: api/connectedorganization-delete-internalsponsors.md
+          - name: Approval
+            href: resources/approval.md
+            items:
+            - name: Get
+              href: api/approval-get.md
+          - name: Approval step
+            href: resources/approvalstep.md
+            items:
+            - name: List
+              href: api/approval-list-steps.md
+            - name: Get 
+              href: api/approvalstep-get.md
+            - name: Update 
+              href: api/approvalstep-update.md
           - name: Entitlement management settings
             href: resources/entitlementmanagementsettings.md
             items:

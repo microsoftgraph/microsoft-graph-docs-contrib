@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var microsoftAuthenticatorMethods = await graphClient.Users["anirban@contoso.com"].Authentication.MicrosoftAuthenticatorMethods
+var microsoftAuthenticatorMethods = await graphClient.Users["{user-id}"].Authentication.MicrosoftAuthenticatorMethods
 	.Request()
 	.GetAsync();
 

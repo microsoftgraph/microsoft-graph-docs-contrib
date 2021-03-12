@@ -22,7 +22,7 @@ var participants = new List<InvitationParticipantInfo>()
 
 var clientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f";
 
-await graphClient.Communications.Calls["{id}"].Participants
+await graphClient.Communications.Calls["{call-id}"].Participants
 	.Invite(participants,clientContext)
 	.Request()
 	.PostAsync();
