@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Me.Drive.Root.Items["{item-id}"].Permissions["{perm-id}"]
+await graphClient.Sites["{site-id}"].Permissions["{permission-id}"]
 	.Request()
 	.DeleteAsync();
 
