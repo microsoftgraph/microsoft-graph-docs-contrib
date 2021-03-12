@@ -28,11 +28,11 @@ var conditionalAccessPolicy = new ConditionalAccessPolicy
 		},
 		Devices = new ConditionalAccessDevices
 		{
-			IncludeDeviceStates = new List<String>()
+			IncludeDevices = new List<String>()
 			{
 				"All"
 			},
-			ExcludeDeviceStates = new List<String>()
+			ExcludeDevices = new List<String>()
 			{
 				"Compliant"
 			}
