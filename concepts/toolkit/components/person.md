@@ -45,6 +45,9 @@ You can use three properties to set the person details. Use only one of the foll
 
   If no image is provided, one will be fetched (if available).
 
+* By default, the person component will only request the standard Microsoft Graph user set of [properties](https://docs.microsoft.com/graph/api/user-get?&tabs=http#optional-query-parameters). In order to request additional properties, declare them as any part of the `line(x)Property`. 
+
+
 ## Properties
 
 You can use several properties to customize the component.
