@@ -3,7 +3,7 @@ title: "userSettings resource type"
 description: "The current user settings for content discovery. "
 author: "jpettere"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: resourcePageType
 ---
 

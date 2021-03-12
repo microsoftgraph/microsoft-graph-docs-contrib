@@ -21,7 +21,7 @@ GA of the [applicationTemplate](/graph/api/resources/applicationtemplate) resour
 GA of the [cloud printing API](universal-print-concept-overview.md) for Universal Print! See the [announcement](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/universal-print-is-ready-for-business/ba-p/2176778), and check out how to [get started with Universal Print](https://docs.microsoft.com/universal-print/fundamentals/universal-print-license).
 
 ### Teamwork
-- GA of a few more properties of [teamsAppDefinition](/graph/api/resources/teamsAppDefinition), which represent details of a version of an app in the Microsoft Teams app cataglog, including the following:
+- GA of a few more properties of [teamsAppDefinition](/graph/api/resources/teamsAppDefinition), which represent details of a version of an app in the Microsoft Teams app catalog, including the following:
   - **createdBy**, **description**, **shortDescription**, **lastModifiedDateTime**
   - **publishingState** which can be one of `submitted` and under review, `published`, or `rejected` by the admin
   - **bot** relationship of the [teamworkBot](/graph/api/resources/teamworkbot) type, representing the details of the bot specified in the teams app manifest.

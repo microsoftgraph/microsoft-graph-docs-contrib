@@ -3,7 +3,7 @@ title: "List memberOf"
 description: "List the groups that this organizaitonal contact is a member of."
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: Dismiss riskyUser
 description: Dismiss the risk of a riskyUser object.
 author: cloudhandler
 localization_priority: Normal 
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 ms.date: 03/20/2019
 doc_type: apiPageType
 ---
