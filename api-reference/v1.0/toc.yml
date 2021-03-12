@@ -247,6 +247,13 @@ items:
           href: api/user-list-events.md
         - name: Reminder view
           href: api/user-reminderview.md
+      - name: Chats
+        href: /resources/chat.md
+        items:
+        - name: Get chat
+          href: api/chat-get.md
+        - name: List chats
+          href: api/chat-list.md
       - name: Contacts
         href: resources/contact.md
         items:

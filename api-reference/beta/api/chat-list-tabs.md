@@ -28,6 +28,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 GET /chats/{chat-id}/tabs
 ```
