@@ -120,9 +120,7 @@ _A search for &quot;design&quot; displaying results for hits against properties 
 
 If a property is queryable, you can query against it using knowledge query language (KQL). KQL consists of 1 or more free text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator(\*).
 
-  **Note**
-
-Suffix matching is not supported.
+>[!NOTE] Suffix matching is not supported.
 
 \<Diagram\>
 
@@ -134,7 +132,7 @@ _A search for &quot;tags:design&quot; scoping down results to items with &quot;d
 
 #### Retrievable
 
-If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large properties, such as editHistory, or too many properties as retrievable will increase search latency. Be selective and choose relevant properties.
+If a property is retrievable, its value can be returned in search results. Any property that you want to be returned from the query and be relevant in search results must be retrievable. Marking large properties, such as editHistory, or too many properties as retrievable will increase search latency. Be selective and choose relevant properties.
 
 _A set of retrievable properties ( __title__ ,  __lastEditedBy__  etc.) rendered as a result_
 
@@ -192,7 +190,7 @@ For discovery, i.e. search scenarios, please note:
 
 Labels also affect how default result types are generated. Adding the title and content labels at a minimum will ensure that a result type is created for your connection.
 
-\&lt;Diagram\&gt;
+\<Diagram\>
 
 _A default result type with  __title__  and a result snippet_
 
@@ -277,7 +275,7 @@ Content-Type: application/json
 
 }
 
-![NOTE] Before indexed items can be found in the Microsoft Search UI, an administrator must [customize the search results page](https://docs.microsoft.com/MicrosoftSearch/configure-connector#next-steps-customize-the-search-results-page) for the corresponding connection.
+>[!NOTE] Before indexed items can be found in the Microsoft Search UI, an administrator must [customize the search results page](https://docs.microsoft.com/MicrosoftSearch/configure-connector#next-steps-customize-the-search-results-page) for the corresponding connection.
 
 ### Update an item
 
