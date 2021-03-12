@@ -53,7 +53,7 @@ None
 
 ## Response
 
-If successful, this method returns a `204 OK` response code and an updated [settings](../resources/ediscovery-settings.md) object in the response body.
+If successful, this method returns a `204 OK` response code.
 
 ## Examples
 
@@ -100,6 +100,8 @@ Content-length: 350
 -->
 
 ``` http
-HTTP/1.1 204 No Content
-Content-Type: application/json
+cache-control: no-cache
+client-request-id: e9fc7554-ca5e-0928-fc09-9c5825820c88
+content-length: 0
+request-id: 1f53bd55-f099-46cb-91df-8f5d466aba3a
 ```
