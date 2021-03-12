@@ -3,7 +3,7 @@ title: "b2cAuthenticationMethodsPolicy resource type"
 description: "Represents a local account authentication method registered to a user configured in an Azure Active Directory (Azure AD) B2C tenant."
 localization_priority: Priority
 author: "namkedia"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -46,7 +46,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.b2cAuthenticationMethodsPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

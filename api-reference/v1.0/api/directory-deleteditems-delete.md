@@ -3,7 +3,7 @@ title: "Permanently delete an item from deleted items"
 description: "Permanently deletes an item from deleted items."
 author: "keylimesoda"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -32,7 +32,7 @@ For users:
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | User.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application | User.ReadWrite.All |
+|Application | Not supported. |
 
 For groups:
 
@@ -40,7 +40,7 @@ For groups:
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

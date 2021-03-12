@@ -20,6 +20,10 @@ const sendActivityNotification = {
     previewText: {
         content: "New deployment requires your approval"
     },
+    recipient: {
+        @odata.type: "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        userId: "569363e2-4e49-4661-87f2-16f245c5d66a"
+    },
     templateParameters: [
         {
             name: "deploymentId",
@@ -28,7 +32,7 @@ const sendActivityNotification = {
     ]
 };
 
-let res = await client.api('/users/{userId}/teamwork/sendActivityNotification')
+let res = await client.api('/teams/{teamId}/sendActivityNotification')
 	.version('beta')
 	.post(sendActivityNotification);
 

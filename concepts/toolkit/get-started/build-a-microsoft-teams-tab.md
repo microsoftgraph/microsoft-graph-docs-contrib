@@ -73,7 +73,7 @@ Replace `<YOUR_CLIENT_ID>` with the client ID for your application and `<YOUR_NG
 To initialize the provider in your JavaScript code, Locate the `src/components/App.js` file in your project directory. Import the Teams Provider and initialize the provider.
 
 ```js
-import * as microsoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
+import * as microsoftTeams from "@microsoft/teams-js";
 import { Providers, TeamsProvider } from '@microsoft/mgt';
 
 TeamsProvider.microsoftTeamsLib = microsoftTeams;
@@ -121,7 +121,7 @@ First, install `mgt-react`:
 npm install @microsoft/mgt-react
 ```
 
-Locate the `src/components/Tab.js` file and import the components you want to use from the `mgt-react` library. For example to add the `Login` component use:
+Locate the `src/components/Tab.js` file and import the components you want to use from the `mgt-react` library. For example, to add the `Login` component use:
 
 ```js
 import { Login } from "@microsoft/mgt-react"

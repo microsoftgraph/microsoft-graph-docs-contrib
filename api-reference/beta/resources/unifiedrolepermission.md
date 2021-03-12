@@ -3,7 +3,7 @@ title: "unifiedRolePermission resource type"
 description: "A directory role permission is a collection of allowed resource actions and conditions."
 localization_priority: Normal
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---
 
@@ -48,8 +48,8 @@ For example: `microsoft.directory/applications/credentials/update`.
 ### condition property
 Conditions define constraints that must be met. For example, a requirement that the principal be an "owner" of the target. The following are the supported conditions:
 
-- Self: "@Subject.objectId == @Resource.objectId"
-- Owner: "@Subject.objectId Any_of @Resource.owners"
+- Self: "$ResourceIsSelf"
+- Owner: "$SubjectIsOwner"
 
 The following is an example of a role permission with a condition.
 
@@ -60,7 +60,7 @@ The following is an example of a role permission with a condition.
                 "microsoft.directory/applications/basic/update",
                 "microsoft.directory/applications/credentials/update"
             ],
-            "condition":  "@Subject.objectId Any_of @Resource.owners"
+            "condition":  "$SubjectIsOwner"
         }
     ]
 
