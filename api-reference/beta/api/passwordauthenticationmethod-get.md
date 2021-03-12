@@ -3,7 +3,7 @@ title: "Get passwordAuthenticationMethod"
 description: "Retrieve the properties and relationships of passwordauthenticationmethod object."
 localization_priority: Normal
 author: "mmcla"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
