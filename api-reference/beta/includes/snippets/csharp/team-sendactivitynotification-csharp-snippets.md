@@ -34,7 +34,7 @@ var templateParameters = new List<KeyValuePair>()
 	}
 };
 
-await graphClient.Teams["{teamId}"]
+await graphClient.Teams["{team-id}"]
 	.SendActivityNotification(topic,activityType,null,previewText,templateParameters,recipient,null)
 	.Request()
 	.PostAsync();

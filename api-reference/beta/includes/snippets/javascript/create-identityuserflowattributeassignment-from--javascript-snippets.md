@@ -13,15 +13,15 @@ const client = Client.init(options);
 const identityUserFlowAttributeAssignment = {
     isOptional: false,
     requiresVerification: false,
-    userInputType: "TextBox",
-    displayName: "Shoe size",
+    userInputType: 'TextBox',
+    displayName: 'Shoe size',
     userAttributeValues: [],
     userAttribute: {
-        id: "extension_guid_shoeSize"
+        id: 'extension_guid_shoeSize'
     }
 };
 
-let res = await client.api('/identity/b2xUserFlows/B2X_1_Partner/userAttributeAssignments')
+await client.api('/identity/b2cUserFlows/B2C_1_Consumer/userAttributeAssignments')
 	.version('beta')
 	.post(identityUserFlowAttributeAssignment);
 

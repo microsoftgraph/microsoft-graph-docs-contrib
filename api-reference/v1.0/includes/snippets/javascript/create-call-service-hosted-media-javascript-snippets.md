@@ -11,16 +11,16 @@ const options = {
 const client = Client.init(options);
 
 const call = {
-  @odata.type: "#microsoft.graph.call",
-  callbackUri: "https://bot.contoso.com/callback",
+  '@odata.type': '#microsoft.graph.call',
+  callbackUri: 'https://bot.contoso.com/callback',
   source: {
-    @odata.type: "#microsoft.graph.participantInfo",
+    '@odata.type': '#microsoft.graph.participantInfo',
     identity: {
-      @odata.type: "#microsoft.graph.identitySet",
+      '@odata.type': '#microsoft.graph.identitySet',
       applicationInstance: {
-        @odata.type: "#microsoft.graph.identity",
-        displayName: "Calling Bot",
-        id: "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+        '@odata.type': '#microsoft.graph.identity',
+        displayName: 'Calling Bot',
+        id: '3d913abb-aec0-4964-8fa6-3c6850c4f278'
       },
     },
     countryCode: null,
@@ -30,26 +30,26 @@ const call = {
   },
   targets: [
     {
-      @odata.type: "#microsoft.graph.invitationParticipantInfo",
+      '@odata.type': '#microsoft.graph.invitationParticipantInfo',
       identity: {
-        @odata.type: "#microsoft.graph.identitySet",
+        '@odata.type': '#microsoft.graph.identitySet',
         phone: {
-          @odata.type: "#microsoft.graph.identity",
-          id: "+12345678901"
+          '@odata.type': '#microsoft.graph.identity',
+          id: '+12345678901'
         }
       }
     }
   ],
   requestedModalities: [
-    "audio"
+    'audio'
   ],
   mediaConfig: {
-    @odata.type: "#microsoft.graph.appHostedMediaConfig",
-    blob: "<Media Session Configuration>"
+    '@odata.type': '#microsoft.graph.appHostedMediaConfig',
+    blob: '<Media Session Configuration>'
   }
 };
 
-let res = await client.api('/communications/calls')
+await client.api('/communications/calls')
 	.post(call);
 
 ```

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var outlookTask = await graphClient.Me.Outlook.Tasks["AAMkADA1MHgwAAA="]
+var outlookTask = await graphClient.Me.Outlook.Tasks["{outlookTask-id}"]
 	.Request()
 	.Header("Prefer","outlook.timezone=\"Pacific Standard Time\"")
 	.GetAsync();

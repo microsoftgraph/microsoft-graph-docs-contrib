@@ -17,7 +17,7 @@ var plannerAssignedToTaskBoardTaskFormat = new PlannerAssignedToTaskBoardTaskFor
 	}
 };
 
-await graphClient.Planner.Tasks["01gzSlKkIUSUl6DF_EilrmQAKDhh"].AssignedToTaskBoardFormat
+await graphClient.Planner.Tasks["{plannerTask-id}"].AssignedToTaskBoardFormat
 	.Request()
 	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 	.UpdateAsync(plannerAssignedToTaskBoardTaskFormat);
