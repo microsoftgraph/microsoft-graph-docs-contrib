@@ -79,7 +79,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "chat",
           "ChangeType": "Addition",
-          "Description": "Added the [List](https://docs.microsoft.com/en-us/graph/api/chat-list?view=graph-rest-1.0&preserve-view=true), [Create](https://docs.microsoft.com/en-us/graph/api/chat-post?view=graph-rest-1.0&preserve-view=true), [Get](https://docs.microsoft.com/en-us/graph/api/chat-get?view=graph-rest-1.0&preserve-view=true), and [Update](https://docs.microsoft.com/en-us/graph/api/chat-patch?view=graph-rest-1.0&preserve-view=true) methods.",
+          "Description": "Added the [Create](https://docs.microsoft.com/en-us/graph/api/chat-post?view=graph-rest-1.0&preserve-view=true), [Get](https://docs.microsoft.com/en-us/graph/api/chat-get?view=graph-rest-1.0&preserve-view=true), and [Update](https://docs.microsoft.com/en-us/graph/api/chat-patch?view=graph-rest-1.0&preserve-view=true) methods.",
           "Target": "chat"
         },
         {
