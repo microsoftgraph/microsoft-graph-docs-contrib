@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var defaultPages = await graphClient.Identity.B2cUserFlows["B2C_1_Customer"].Languages["en"].DefaultPages
+var defaultPages = await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].Languages["{userFlowLanguageConfiguration-id}"].DefaultPages
 	.Request()
 	.GetAsync();
 

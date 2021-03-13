@@ -29,7 +29,7 @@ var plannerTaskDetails = new PlannerTaskDetails
 	}
 };
 
-await graphClient.Planner.Tasks["{task-id}"].Details
+await graphClient.Planner.Tasks["{plannerTask-id}"].Details
 	.Request()
 	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 	.UpdateAsync(plannerTaskDetails);

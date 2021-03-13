@@ -15,7 +15,7 @@ var fieldValueSet = new FieldValueSet
 	}
 };
 
-await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{item-id}"].Fields
+await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{listItem-id}"].Fields
 	.Request()
 	.UpdateAsync(fieldValueSet);
 

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/roleManagement/deviceManagement/roleAssignments')
+let roleAssignments = await client.api('/roleManagement/deviceManagement/roleAssignments')
 	.version('beta')
 	.get();
 
