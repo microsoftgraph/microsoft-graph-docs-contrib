@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 List all [conversation members](../resources/conversationmember.md) in a [chat](../resources/chat.md).
 
 > [!NOTE]
@@ -67,34 +65,13 @@ If successful, this method returns a `200 OK` response code and a list of [conve
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_conversation_members"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/chats/19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d@unq.gbl.spaces/members
+GET https://graph.microsoft.com/v1.0/me/chats/19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d@unq.gbl.spaces/members
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-conversation-members-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-conversation-members-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-conversation-members-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-conversation-members-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
----
 
 
 ### Response
@@ -113,13 +90,13 @@ Content-type: application/json
 Content-length: 201
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')/chats('19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d%40unq.gbl.spaces')/members",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')/chats('19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d%40unq.gbl.spaces')/members",
     "@odata.count": 3,
     "value": [
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
             "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-            "roles": [],
+            "roles": [ "owner" ],
             "displayName": "John Doe",
             "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
             "email": null,
@@ -129,7 +106,7 @@ Content-length: 201
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
             "id": "2de87aaf-844d-4def-9dee-2c317f0be1b3",
-            "roles": [],
+            "roles": [ "owner" ],
             "displayName": "Bart Hogan",
             "userId": "2de87aaf-844d-4def-9dee-2c317f0be1b3",
             "email": null,
@@ -139,7 +116,7 @@ Content-length: 201
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
             "id": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
-            "roles": [],
+            "roles": [ "owner" ],
             "displayName": "Minna Pham",
             "userId": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
             "email": null,
