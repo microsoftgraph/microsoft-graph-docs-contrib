@@ -1,6 +1,6 @@
 ---
 title: "teamsAppInstallationScope enum type"
-description: "Types of teamsAppInstallationScope. Members will be added here as more async operations are supported."
+description: "Types of teamsAppInstallationScope."
 author: "subray"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Types of [teamsAppInstallationScope](./teamsAppInstallationScope.md). Members will be added here as more async operations are supported.
+Types of [teamsAppInstallationScope](./teamsAppInstallationScope.md).
 
 ## Members
 
