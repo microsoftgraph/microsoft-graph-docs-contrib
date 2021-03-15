@@ -422,6 +422,8 @@ No Content - 204
 
 ### Delete the application
 
+#### Request
+
 ```http
 DELETE https://graph.microsoft.com/v1.0/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
 ```
@@ -433,6 +435,8 @@ No Content - 204
 ```
 
 ### Delete the connector group
+
+#### Request
 
 ```http
 DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6
