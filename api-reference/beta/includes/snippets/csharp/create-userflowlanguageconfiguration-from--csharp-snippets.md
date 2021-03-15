@@ -11,7 +11,7 @@ var userFlowLanguageConfiguration = new UserFlowLanguageConfiguration
 	IsEnabled = false
 };
 
-await graphClient.Identity.B2cUserFlows["B2C_1_CustomerSignUp"].Languages["es-ES"]
+await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].Languages["{userFlowLanguageConfiguration-id}"]
 	.Request()
 	.PutAsync(userFlowLanguageConfiguration);
 

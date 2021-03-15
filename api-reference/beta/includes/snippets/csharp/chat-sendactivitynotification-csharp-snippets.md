@@ -34,8 +34,8 @@ var templateParameters = new List<KeyValuePair>()
 	}
 };
 
-await graphClient.Chats["{chatId}"]
-	.SendActivityNotification(topic,activityType,null,previewText,templateParameters,recipient)
+await graphClient.Chats["{chat-id}"]
+	.SendActivityNotification(topic,activityType,null,previewText,templateParameters,recipient,null)
 	.Request()
 	.PostAsync();
 

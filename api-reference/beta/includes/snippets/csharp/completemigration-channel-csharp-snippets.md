@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Teams["{teamId}"].Channels["{channelId}"]
+await graphClient.Teams["{team-id}"].Channels["{channel-id}"]
 	.CompleteMigration()
 	.Request()
 	.PostAsync();

@@ -3,7 +3,7 @@ title: "identityProvider resource type"
 description: "Represents an Azure Active Directory (Azure AD) identity provider."
 localization_priority: Priority
 author: "Nickgmicrosoft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 # identityProvider resource type

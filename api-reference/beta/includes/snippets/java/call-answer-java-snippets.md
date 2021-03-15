@@ -14,8 +14,10 @@ mediaConfig.blob = "<Media Session Configuration Blob>";
 LinkedList<Modality> acceptedModalitiesList = new LinkedList<Modality>();
 acceptedModalitiesList.add(Modality.AUDIO);
 
+int participantCapacity = 200;
+
 graphClient.communications().calls("{id}")
-	.answer(callbackUri,mediaConfig,acceptedModalitiesList,null)
+	.answer(callbackUri,mediaConfig,acceptedModalitiesList,participantCapacity)
 	.buildRequest()
 	.post();
 
