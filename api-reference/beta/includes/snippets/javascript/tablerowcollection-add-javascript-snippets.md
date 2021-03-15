@@ -18,7 +18,7 @@ const workbookTableRow = {
   ]
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/rows/add')
+await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/rows/add')
 	.version('beta')
 	.post(workbookTableRow);
 

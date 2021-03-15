@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var delta = await graphClient.Teams["{id}"].Channels["{id}"].Messages
+var delta = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages
 	.Delta()
 	.Request()
 	.Top(2)

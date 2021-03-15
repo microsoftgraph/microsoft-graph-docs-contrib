@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const hybridAgentUpdaterConfiguration = {
-    "allowUpdateConfigurationOverride" : false
+    allowUpdateConfigurationOverride: false
 };
 
-let res = await client.api('/onPremisesPublishingProfiles/provisioning/hybridAgentUpdaterConfiguration')
+await client.api('/onPremisesPublishingProfiles/provisioning/hybridAgentUpdaterConfiguration')
 	.version('beta')
 	.update(hybridAgentUpdaterConfiguration);
 
