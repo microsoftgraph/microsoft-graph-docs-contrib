@@ -10,9 +10,25 @@ localization_priority: Priority
 This changelog covers specific API-level changes in Microsoft Graph v1.0 and beta.
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
+## March 2021
+
+### Users
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [translationPreferences](/graph/api/resources/translationPreferences?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the [translationLanguageOverride](/graph/api/resources/translationLanguageOverride?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the **translationPreferences** property to the [regionalAndLanguageSettings](/graph/api/resources/regionalandlanguagesettings?view=graph-rest-beta&preserve-view=true) resource.|
+
+## March 2021
+
+### Identity and access
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+| Addition        | v1.0        | Introduced the new resource type [applicationTemplate](/graph/api/resources/applicationtemplate.md). This resource type supports [instantiate](/graph/api/applicationtemplate-instantiate.md), [list](/graph/api/applicationtemplate-instantiate.md) and [get](/graph/api/applicationtemplate-get.md) applications from the Azure AD application gallery.
 
 ## February 2021
-
 
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                                                                                              |
@@ -24,7 +40,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition        | beta          | Added the [acceptJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/acceptJoinResponse?view=graph-rest-beta) resource type.|
 | Addition        | beta          | Added the [rejectJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/rejectJoinResponse?view=graph-rest-beta) resource type.|
 | Addition        | beta          | Added the [inviteNewBotResponse](https://docs.microsoft.com/en-us/graph/api/resources/inviteNewBotResponse?view=graph-rest-beta) resource type.|
-
 
 ### Tasks and plans
 
@@ -465,6 +480,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added support for `$count`, `$search`, and `$filter` query parameters for improving query capabilities to: <br><ul><li>[List applications](/graph/api/application-list?view=graph-rest-1.0&preserve-view=true)</li><li>[List devices](/graph/api/device-list?view=graph-rest-1.0&preserve-view=true)</li><li>[List device groups](/graph/api/device-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List device transitive groups](/graph/api/device-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List groups](/graph/api/group-list?view=graph-rest-1.0&preserve-view=true)</li><li>[List group memberOf](/graph/api/group-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List group members](/graph/api/group-list-members?view=graph-rest-1.0&preserve-view=true)</li><li>[List group transitive memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List group transitive members](/graph/api/group-list-transitivemembers?view=graph-rest-1.0&preserve-view=true)</li><li>[List orgContacts](/graph/api/orgcontact-list?view=graph-rest-1.0&preserve-view=true)</li><li>[List servicePrincipals](/graph/api/serviceprincipal-list?view=graph-rest-1.0&preserve-view=true)</li><li>[List servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List servicePrincipal transitive memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List users](/graph/api/user-list?view=graph-rest-1.0&preserve-view=true)</li><li>[List user memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List user transitive memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li></ul><br>Added examples for using OData cast to: <ul><li>[List group memberOf](/graph/api/group-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List group members](/graph/api/group-list-members?view=graph-rest-1.0&preserve-view=true)</li><li>[List group transitive memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List servicePrincipal transitive memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List user memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List user transitive memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li></ul> |
+| Addition | beta | Added the [activateServicePlan](/graph/api/user-activateServicePlan?view=graph-rest-beta&preserve-view=true) method to the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource |
 
 ### Identity and access | Identity and sign-in
 

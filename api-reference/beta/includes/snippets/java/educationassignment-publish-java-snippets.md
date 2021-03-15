@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-String string = graphClient.education().classes("11012").assignments("19002")
-	.getResourcesFolderUrl()
+graphClient.education().classes("11021").assignments("19002")
+	.publish()
 	.buildRequest()
-	.get();
+	.post();
 
 ```

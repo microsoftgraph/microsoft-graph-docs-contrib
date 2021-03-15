@@ -1,7 +1,7 @@
 ---
 title: "Get onlineMeeting"
 description: "Retrieve the properties and relationships of an online meeting object."
-author: "ananmishr"
+author: "jsandoval-msft"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -80,6 +80,7 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["123456789"],
   "name": "get-onlineMeeting"
 }-->
 ```msgraph-interactive
