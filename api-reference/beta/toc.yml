@@ -6670,16 +6670,10 @@ items:
           - name: App log collection request
             href: resources/intune-devices-applogcollectionrequest.md
             items:
-            - name: List
-              href: api/intune-devices-applogcollectionrequest-list.md
             - name: Get
               href: api/intune-devices-applogcollectionrequest-get.md
             - name: Create
               href: api/intune-devices-applogcollectionrequest-create.md
-            - name: Delete
-              href: api/intune-devices-applogcollectionrequest-delete.md
-            - name: Update
-              href: api/intune-devices-applogcollectionrequest-update.md
             - name: createDownloadUrl action
               href: api/intune-devices-applogcollectionrequest-createdownloadurl.md
           - name: App log decryption algorithm
