@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Retrieve a [conversationMember](../resources/conversationmember.md) from a [chat](../resources/chat.md).
 
 ## Permissions
@@ -64,35 +62,14 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 
 Here is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_conversation_member"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/141c574c-dd90-4131-b173-baf4bb0e894e
+GET https://graph.microsoft.com/v1.0/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/141c574c-dd90-4131-b173-baf4bb0e894e
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-conversation-member-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-conversation-member-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-conversation-member-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-conversation-member-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
----
 
 ### Response
 
@@ -113,8 +90,14 @@ Content-type: application/json
 Content-length: 201
 
 {
-  "id": "id-value",
-  "displayName": "display-name-value"
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "id": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
+    "roles": [ "owner" ],
+    "displayName": "Minna Pham",
+    "userId": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
+    "email": null,
+    "tenantId": "6e5147da-6a35-4275-b3f3-fc069456b6eb",
+    "visibleHistoryStartDateTime": "2019-04-18T23:51:43.255Z"
 }
 ```
 
