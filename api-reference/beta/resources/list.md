@@ -34,6 +34,10 @@ All examples below are relative to a site, eg: `https://graph.microsoft.com/beta
 | [Create list item][]      | POST /lists/{list-id}
 | [Get recent activities][] | GET /lists/{list-id}/activities
 | [Get WebSocket channel][] | GET /lists/{list-id}/subscriptions/socketIo
+|[List contentTypes][]          | GET /lists/{list-id}/contentTypes
+|[Add copy of a site content type][] | POST /lists/{list-id}/contentTypes/addCopy
+|[List columns][]               | GET /lists/{list-id}/columns
+|[Create column][]              | POST /lists/{list-id}/columns
 
 [Get list]: ../api/list-get.md
 [Create list]: ../api/list-create.md
@@ -43,7 +47,10 @@ All examples below are relative to a site, eg: `https://graph.microsoft.com/beta
 [Create list item]: ../api/listitem-create.md
 [Get recent activities]: ../api/activities-list.md
 [Get WebSocket channel]: ../api/subscriptions-socketio.md
-
+[List contentTypes]: ../api/list-list-contenttypes.md
+[Add copy of a site content type]: ../api/contenttype-addCopy.md
+[List columns]: ../api/list-list-columns.md
+[Create column]: ../api/list-post-columns.md
 ## JSON representation
 
 Here is a JSON representation of a **list** resource.

@@ -12518,6 +12518,10 @@ items:
           href: api/itemanalytics-get.md
         - name: Get activities by interval
           href: api/itemactivity-getbyinterval.md
+        - name: List columns
+          href: api/site-list-columns.md
+        - name: Create column
+          href: api/site-post-columns.md
         - name: Follow site
           href: api/site-follow.md
         - name: Unfollow site
@@ -12548,6 +12552,10 @@ items:
           href: api/listitem-list.md
         - name: Create list
           href: api/list-create.md
+        - name: List columns
+          href: api/list-list-columns.md
+        - name: Create column
+          href: api/list-post-columns.md
       - name: List items
         href: resources/listitem.md
         items:
@@ -12568,10 +12576,12 @@ items:
       - name: Content types
         href: resources/contentType.md
         items:
-        - name: List
-          href: api/contenttype-list.md
-        - name: Create
-          href: api/contenttype-create.md
+        - name: List content types in a site
+          href: api/site-list-contenttypes.md
+        - name: List content types in a list
+          href: api/list-list-contenttypes.md
+        - name: Create a site content type
+          href: api/site-post-contenttypes.md
         - name: Get
           href: api/contenttype-get.md
         - name: Update

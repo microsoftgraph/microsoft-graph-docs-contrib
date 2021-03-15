@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "List contentTypes"
-description: "List content types in a site or a list"
+description: "List content types in a list"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
@@ -11,7 +11,7 @@ ms.prod: "sites-and-lists"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the collection of [content types][contentType] in a [site][] or a [list][]
+Get the collection of [content types][contentType] in a [list][]
 
 ## Permissions
 
@@ -29,7 +29,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-GET /sites/{site-id}/contentTypes
 GET /sites/{site-id}/lists/{list-id}/contentTypes
 ```
 
@@ -56,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 <!-- { "blockType": "request", "name": "enum_contentTypes"} -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/contentTypes
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/contentTypes
 ```
 
 ### Response
@@ -102,5 +101,4 @@ Content-type: application/json
 
 
 [contentType]: ../resources/contentType.md
-[site]: ../resources/site.md
 [list]: ../resources/list.md
