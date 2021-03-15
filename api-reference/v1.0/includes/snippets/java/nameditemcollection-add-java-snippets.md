@@ -6,14 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-String name = "test5";
+String name = "test7";
 
-JsonElement reference = JsonParser.parseString("=Sheet1!$F$15:$N$27");
+String formula = "=SUM(Sheet2!$A$1+Sheet2!$A$2)";
 
 String comment = "Comment for the named item";
 
 graphClient.me().drive().items("{id}").workbook().names()
-	.add(name,reference,comment)
+	.addFormulaLocal(name,formula,comment)
 	.buildRequest()
 	.post();
 

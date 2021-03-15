@@ -3,7 +3,7 @@ title: "publishedResource resource type"
 description: "publishedResource resource type."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 

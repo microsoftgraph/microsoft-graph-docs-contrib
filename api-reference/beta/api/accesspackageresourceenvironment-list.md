@@ -3,7 +3,7 @@ title: "List accessPackageResourceEnvironments"
 description: "Retrieve a list of accessPackageResourceEnvironment objects."
 author: "hanki-microsoft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
