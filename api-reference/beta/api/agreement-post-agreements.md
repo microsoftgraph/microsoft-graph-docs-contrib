@@ -3,7 +3,7 @@ title: "Create agreement"
 description: "Create a new agreement object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "raprakasMSFT"
 ---
 
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /agreements
+POST /identityGovernance/termsOfUse/agreements
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -55,13 +55,14 @@ If successful, this method returns a `201, Created` response code and [agreement
 In the request body, supply a JSON representation of the [agreement](../resources/agreement.md) object.
 
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_agreement_from_agreements"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/agreements
+POST https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 Content-type: application/json
 
 {
@@ -96,6 +97,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 
 ##### Response

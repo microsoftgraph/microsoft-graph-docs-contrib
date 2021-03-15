@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/authentication/fido2Methods')
+let fido2Methods = await client.api('/me/authentication/fido2Methods')
 	.version('beta')
 	.get();
 

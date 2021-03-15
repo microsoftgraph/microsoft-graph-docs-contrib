@@ -14,7 +14,7 @@ var directoryObject = new DirectoryObject
 	}
 };
 
-await graphClient.Contacts["{id}"].MemberOf
+await graphClient.Contacts["{orgContact-id}"].MemberOf
 	.Request()
 	.AddAsync(directoryObject);
 

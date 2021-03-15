@@ -28,7 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /workbook/comments/{id}/replies
+POST /me/drive/items/{id}/workbook/comments/{id}/replies
+POST /me/drive/root:/{item-path}:/workbook/comments/{id}/replies
 ```
 
 ## Request headers

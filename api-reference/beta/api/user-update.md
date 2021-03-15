@@ -1,7 +1,7 @@
 ---
 title: "Update user"
 description: "Update the properties of a user object."
-author: "krbain"
+author: "jpettere"
 localization_priority: Normal
 ms.prod: "users"
 doc_type: apiPageType
@@ -51,7 +51,7 @@ In the request body, supply the values for relevant fields that should be update
 |aboutMe|String|A freeform text entry field for the user to describe themselves.|
 |accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. This property is required when a user is created.    |
 |assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|The licenses that are assigned to the user. Not nullable.            |
-|birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |businessPhones| String collection | The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property.|
 |city|String|The city in which the user is located.|
 |country|String|The country/region in which the user is located; for example, “US” or “UK”.|
@@ -59,7 +59,7 @@ In the request body, supply the values for relevant fields that should be update
 |displayName|String|The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|
 |employeeId|String|The employee identifier assigned to the user by the organization.|
 |givenName|String|The given name (first name) of the user.|
-|hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |identities|[objectIdentity](../resources/objectidentity.md) collection| Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft, by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. Any update to **identities** will replace the entire collection and you must supply the userPrincipalName **signInType** identity in the collection.|
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user’s job title.|

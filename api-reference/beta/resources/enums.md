@@ -1776,6 +1776,30 @@ Possible values for user account types (group membership), per Windows definitio
 | waitingOnOthers
 | deferred
 
+### columnTypes values
+
+|Member|Description|
+|:-------|:------
+|note| multiline text. |
+|text | single line text. |
+|choice | choice column |
+|multichoice | multichoice column. |
+|number | number column. |
+|currency | currency column. |
+|dateTime | dateTime column. |
+|lookup | lookup column. |
+|boolean | Yes/No column. |
+|user | person or group column. |
+|url | hyperlink or picture column. |
+|calculated | calculated column. |
+|location | location column. |
+|geolocation | geolocation column. |
+|term | managed metadata column. |
+|multiterm | managed metadata column accepting multiple values. |
+|thumbnail | Image column. |
+|approvalStatus | Content approval status column. |
+|unknownFutureValue | unknownFuturevalue |
+
 ### connectedOrganizationState values
 
 | Member                | Value | Description                                                                                                                                                                                                        |
@@ -1873,9 +1897,29 @@ Possible values for user account types (group membership), per Windows definitio
 |meeting             | 2     | Indicates that the chat is a Meeting chat, which is created as a side effect of creation of an OnlineMeeting.  |
 |unknownFutureValue  | 3     | Sentinel value to indicate future values. |
 
+### singleSignOnMode values
+
+|Member|
+|:---|
+|none|
+|onPremisesKerberos|
+|aadHeaderBased|
+|pingHeaderBased|
+
 ### plannerContainerType values 
 
 |Member|
 |:---|
 |group|
 |unknownFutureValue|
+
+### plannerPlanContextType values 
+
+|Member|
+|:---|
+|teamsTab|
+|sharePointPage|
+|meetingNotes|
+|other|
+|unknownFutureValue|
+

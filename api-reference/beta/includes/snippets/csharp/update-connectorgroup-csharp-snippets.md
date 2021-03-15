@@ -11,7 +11,7 @@ var connectorGroup = new ConnectorGroup
 	Name = "Connector Group Demo"
 };
 
-await graphClient.OnPremisesPublishingProfiles["applicationProxy"].ConnectorGroups
+await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].ConnectorGroups
 	.Request()
 	.AddAsync(connectorGroup);
 

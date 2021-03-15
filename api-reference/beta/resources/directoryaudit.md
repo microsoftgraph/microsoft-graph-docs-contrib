@@ -3,7 +3,7 @@ title: "directoryAudit resource type"
 description: "Describes the directoryAudit resource (entity) of Microsoft Graph API (REST), which helps audit directory (tenant) activities (beta version)."
 author: "SarahBar"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Represents the directory audit items and its collection.
 ## Properties
 | Property            | Type                                                | Description                                                                                                                                                                                                                                                            |
 |:--------------------|:----------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| activityDateTime    | DateTimeOffset                                      | Indicates the date and time the activity was performed. The Timestamp type is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`                                                                              |
+| activityDateTime    | DateTimeOffset                                      | Indicates the date and time the activity was performed. The Timestamp type is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`                                                                              |
 | activityDisplayName | String                                              | Indicates the activity name or the operation name (E.g. "Create User", "Add member to group"). For a list of activities logged, refer to [Azure Ad activity list](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list). |
 | additionalDetails   | [keyValue](keyvalue.md) collection                  | Indicates additional details on the activity.                                                                                                                                                                                                                          |
 | category            | String                                              | Indicates which resource category that's targeted by the activity. (For example: User Management, Group Management etc..)                                                                                                                                              |

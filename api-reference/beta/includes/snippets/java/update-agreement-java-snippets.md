@@ -10,7 +10,7 @@ Agreement agreement = new Agreement();
 agreement.displayName = "displayName-value";
 agreement.isViewingBeforeAcceptanceRequired = true;
 
-graphClient.agreements("{id}")
+graphClient.identityGovernance().termsOfUse().agreements("{id}")
 	.buildRequest()
 	.patch(agreement);
 

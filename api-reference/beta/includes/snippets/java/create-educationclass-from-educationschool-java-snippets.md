@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.education().schools("10001").users("13006")
+graphClient.education().schools("10001").classes("11001")
 	.buildRequest()
 	.delete();
 

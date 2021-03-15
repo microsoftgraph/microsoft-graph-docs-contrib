@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/policies/tokenLifetimePolicies/{id}/appliesTo')
+let appliesTo = await client.api('/policies/claimsMappingPolicies/{id}/appliesTo')
 	.get();
 
 ```
