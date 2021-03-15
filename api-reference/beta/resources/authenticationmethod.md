@@ -3,7 +3,7 @@ title: "authenticationMethod resource type"
 description: "Represents an authentication method registered to a user."
 localization_priority: Normal
 author: "mmcla"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 

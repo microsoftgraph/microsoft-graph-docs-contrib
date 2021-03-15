@@ -41,7 +41,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition        | beta          | Added the [rejectJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/rejectJoinResponse?view=graph-rest-beta) resource type.|
 | Addition        | beta          | Added the [inviteNewBotResponse](https://docs.microsoft.com/en-us/graph/api/resources/inviteNewBotResponse?view=graph-rest-beta) resource type.|
 
-
 ### Tasks and plans
 
 | **Change type** | **Version** | **Description** |
