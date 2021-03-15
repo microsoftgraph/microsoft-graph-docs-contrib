@@ -13,7 +13,7 @@ var offerShiftRequest = new OfferShiftRequestObject
 	RecipientUserId = "fe278b61-21ac-4872-8b41-1962bbb98e3c"
 };
 
-await graphClient.Teams["788b75d2-a911-48c0-a5e2-dc98480457e3"].Schedule.OfferShiftRequests
+await graphClient.Teams["{team-id}"].Schedule.OfferShiftRequests
 	.Request()
 	.Header("Authorization","Bearer {token}")
 	.AddAsync(offerShiftRequest);

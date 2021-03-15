@@ -11,7 +11,7 @@ var directoryObject = new DirectoryObject
 	Id = "2441b489-4f12-4882-b039-8f6006bd66da"
 };
 
-await graphClient.Directory.FeatureRolloutPolicies["{id}"].AppliesTo.References
+await graphClient.Directory.FeatureRolloutPolicies["{featureRolloutPolicy-id}"].AppliesTo.References
 	.Request()
 	.AddAsync(directoryObject);
 

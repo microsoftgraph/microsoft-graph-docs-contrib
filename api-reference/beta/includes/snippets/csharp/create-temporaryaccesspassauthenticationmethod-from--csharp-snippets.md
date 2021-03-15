@@ -13,7 +13,7 @@ var temporaryAccessPassAuthenticationMethod = new TemporaryAccessPassAuthenticat
 	IsUsableOnce = false
 };
 
-await graphClient.Users["kim@contoso.com"].Authentication.TemporaryAccessPassMethods
+await graphClient.Users["{user-id}"].Authentication.TemporaryAccessPassMethods
 	.Request()
 	.AddAsync(temporaryAccessPassAuthenticationMethod);
 

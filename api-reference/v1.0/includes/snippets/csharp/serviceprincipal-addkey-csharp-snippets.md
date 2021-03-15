@@ -20,7 +20,7 @@ var passwordCredential = new PasswordCredential
 
 var proof = "eyJ0eXAiOiJ...";
 
-await graphClient.ServicePrincipals["{id}"]
+await graphClient.ServicePrincipals["{servicePrincipal-id}"]
 	.AddKey(keyCredential,proof,passwordCredential)
 	.Request()
 	.PostAsync();
