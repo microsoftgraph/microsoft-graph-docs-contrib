@@ -114,6 +114,9 @@ Content-Type: application/json
 ### Response
 
 ```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
     "id": "825f1b5e-6fb2-4d9a-b393-d491101acc0c",
@@ -320,6 +323,12 @@ Content-type: application/json
                 "userId": "43b12b0c-ee2c-4257-96fe-505d823e06ab",
                 "userDisplayName": "Alex Wilber",
                 "userPrincipalName": "AlexW@contoso.com"
+            },
+            "principal": {
+                "@odata.type": "#microsoft.graph.userIdentity",
+                "id": "43b12b0c-ee2c-4257-96fe-505d823e06ab",
+                "displayName": "Alex Wilber",
+                "userPrincipalName": "AlexW@contoso.com"
             }
         },
         {
@@ -345,6 +354,12 @@ Content-type: application/json
                 "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
                 "userId": "859924d0-7115-422a-9ee8-ea8c0c014707",
                 "userDisplayName": "Allan Deyoung",
+                "userPrincipalName": "AllanD@contoso.com"
+            },
+            "principal": {
+                "@odata.type": "#microsoft.graph.userIdentity",
+                "id": "859924d0-7115-422a-9ee8-ea8c0c014707",
+                "displayName": "Allan Deyoung",
                 "userPrincipalName": "AllanD@contoso.com"
             }
         }

@@ -412,6 +412,12 @@ Content-type: application/json
                 "userId": "baf1b0a0-1f9a-4a56-9884-6a30824f8d20",
                 "userDisplayName": "John Doe (Tailspin Toys)",
                 "userPrincipalName": "john.doe@outlook.com"
+            },
+            "principal": {
+                "@odata.type": "#microsoft.graph.userIdentity",
+                "id": "baf1b0a0-1f9a-4a56-9884-6a30824f8d20",
+                "displayName": "John Doe (Tailspin Toys)",
+                "userPrincipalName": "john.doe@outlook.com"
             }
         }
     ]
