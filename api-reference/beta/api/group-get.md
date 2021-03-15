@@ -93,7 +93,7 @@ The following is an example of the response. It includes only the default proper
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
-  "name": "get_group"
+  "name": "get_group_1"
 } -->
 ```http
 HTTP/1.1 200 OK
