@@ -11,85 +11,85 @@ const options = {
 const client = Client.init(options);
 
 const educationRubric = {
-    displayName:"Example Points Rubric",
-    description:{
-        content:"This is an example of a rubric with points",
-        contentType:"text"
+    displayName: 'Example Points Rubric',
+    description: {
+        content: 'This is an example of a rubric with points',
+        contentType: 'text'
     },
-    levels:[
+    levels: [
         {
-            displayName:"Good",
-            description:{
-                content:"",
-                contentType:"text"
+            displayName: 'Good',
+            description: {
+                content: '',
+                contentType: 'text'
             },
-            grading:{
-                @odata.type:"#microsoft.graph.educationAssignmentPointsGradeType",
-                maxPoints:2
+            grading: {
+                '@odata.type':'#microsoft.graph.educationAssignmentPointsGradeType',
+                maxPoints: 2
             }
         },
         {
-            displayName:"Poor",
-            description:{
-                content:"",
-                contentType:"text"
+            displayName: 'Poor',
+            description: {
+                content: '',
+                contentType: 'text'
             },
-            grading:{
-                @odata.type:"#microsoft.graph.educationAssignmentPointsGradeType",
-                maxPoints:1
+            grading: {
+                '@odata.type':'#microsoft.graph.educationAssignmentPointsGradeType',
+                maxPoints: 1
             }
         }
     ],
-    qualities:[
+    qualities: [
         {
-            description:{
-                content:"Argument",
-                contentType:"text"
+            description: {
+                content: 'Argument',
+                contentType: 'text'
             },
-            criteria:[
+            criteria: [
                 {
-                    description:{
-                        content:"The essay's argument is persuasive.",
-                        contentType:"text"
+                    description: {
+                        content: 'The essay\'s argument is persuasive.',
+                        contentType: 'text'
                     }
                 },
                 {
-                    description:{
-                        content:"The essay's argument does not make sense.",
-                        contentType:"text"
+                    description: {
+                        content: 'The essay\'s argument does not make sense.',
+                        contentType: 'text'
                     }
                 }
             ],
-            weight:50.0
+            weight: 50.0
         },
         {
-            description:{
-                content:"Spelling and Grammar",
-                contentType:"text"
+            description: {
+                content: 'Spelling and Grammar',
+                contentType: 'text'
             },
-            criteria:[
+            criteria: [
                 {
-                    description:{
-                        content:"The essay uses proper spelling and grammar with few or no errors.",
-                        contentType:"text"
+                    description: {
+                        content: 'The essay uses proper spelling and grammar with few or no errors.',
+                        contentType: 'text'
                     }
                 },
                 {
-                    description:{
-                        content:"The essay has numerous errors in spelling and/or grammar.",
-                        contentType:"text"
+                    description: {
+                        content: 'The essay has numerous errors in spelling and/or grammar.',
+                        contentType: 'text'
                     }
                 }
             ],
-            weight:50.0
+            weight: 50.0
         }
     ],
-    grading:{
-        @odata.type:"#microsoft.graph.educationAssignmentPointsGradeType"
+    grading: {
+        '@odata.type':'#microsoft.graph.educationAssignmentPointsGradeType'
     }
 };
 
-let res = await client.api('/education/me/rubrics')
+await client.api('/education/me/rubrics')
 	.version('beta')
 	.post(educationRubric);
 

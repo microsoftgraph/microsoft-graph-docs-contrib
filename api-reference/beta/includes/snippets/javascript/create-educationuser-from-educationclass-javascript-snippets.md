@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const educationUser = {
-  @odata.id:"https://graph.microsoft.com/beta/education/users/13015"
+  '@odata.id':'https://graph.microsoft.com/beta/education/users/13015'
 };
 
-let res = await client.api('/education/classes/11011/members/$ref')
+await client.api('/education/classes/11011/members/$ref')
 	.version('beta')
 	.post(educationUser);
 

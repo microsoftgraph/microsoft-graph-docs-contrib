@@ -17,7 +17,7 @@ var group = new Group
 	}
 };
 
-await graphClient.Groups["{id}"]
+await graphClient.Groups["{group-id}"]
 	.Request()
 	.UpdateAsync(group);
 

@@ -11,7 +11,7 @@ var plannerBucketTaskBoardTaskFormat = new PlannerBucketTaskBoardTaskFormat
 	OrderHint = "A6673H Ejkl!"
 };
 
-await graphClient.Planner.Tasks["hsOf2dhOJkqyYYZEtdzDe2QAIUCR"].BucketTaskBoardFormat
+await graphClient.Planner.Tasks["{plannerTask-id}"].BucketTaskBoardFormat
 	.Request()
 	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 	.UpdateAsync(plannerBucketTaskBoardTaskFormat);

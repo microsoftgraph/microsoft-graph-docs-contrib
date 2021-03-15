@@ -11,16 +11,16 @@ const options = {
 const client = Client.init(options);
 
 const namedLocation = {
-    @odata.type: "#microsoft.graph.countryNamedLocation",
-    displayName: "Named location with unknown countries and regions",
+    '@odata.type': '#microsoft.graph.countryNamedLocation',
+    displayName: 'Named location with unknown countries and regions',
     countriesAndRegions: [
-        "US",
-        "GB"
+        'US',
+        'GB'
     ],
     includeUnknownCountriesAndRegions: true
 };
 
-let res = await client.api('/identity/conditionalAccess/namedLocations')
+await client.api('/identity/conditionalAccess/namedLocations')
 	.version('beta')
 	.post(namedLocation);
 

@@ -22,7 +22,7 @@ var governanceRoleAssignmentRequest = new GovernanceRoleAssignmentRequestObject
 	}
 };
 
-await graphClient.PrivilegedAccess["azureResources"].RoleAssignmentRequests
+await graphClient.PrivilegedAccess["{privilegedAccess-id}"].RoleAssignmentRequests
 	.Request()
 	.AddAsync(governanceRoleAssignmentRequest);
 
