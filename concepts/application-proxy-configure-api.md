@@ -115,7 +115,8 @@ Content-type: application/json
 Use the **id** that you recorded for the application to start the configuration of Application Proxy by updating the following properties:
 
 - **onPremisesPublishing** - In this example, you're using an app with the internal URL: `https://contosoiwaapp.com` and the default domain for the external URL: `https://contosoiwaapp-contoso.msappproxy.net`. 
-- **redirectUri**, **identifierUri**, and **homepageUrl** - Set to the same external UR configured in the **onPremisesPublishing** property. Then - [implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0) - Set to `true` for **enabledTokenIssuance** and `false` for **enabledAccessTokenIssuance**.
+- **redirectUri**, **identifierUri**, and **homepageUrl** - Set to the same external UR configured in the **onPremisesPublishing** property. Then - 
+- **implicitGrantSettings** - Set to `true` for **enabledTokenIssuance** and `false` for **enabledAccessTokenIssuance**.
 
 #### Request
 
@@ -254,7 +255,7 @@ HTTP/1.1 204 No content
 
 ## Step 4: Configure single sign-on
 
-This application uses Integrated Windows Authentication (IWA). To configure IWA, set the single sign-on properties in the .
+This application uses Integrated Windows Authentication (IWA). To configure IWA, set the single sign-on properties for **onPremisesPublishing**.
 
 #### Request
 
@@ -319,7 +320,7 @@ Content-type: application/json
 
 ### Create a user account
 
-For this tutorial, you create a user account that is assigned to the app role. In the request body, change contoso.com to the domain name of your tenant. You can find tenant information on the Azure Active Directory overview page. Record the **id** of the user account to be used in the next step.
+For this tutorial, you create a user account that is assigned to the app role. In the request body, change `contoso.com` to the domain name of your tenant. You can find tenant information on the Azure Active Directory overview page. Record the **id** of the user account to be used in the next step.
 
 #### Request
 
@@ -362,9 +363,9 @@ Content-type: application/json
 
 In the following example, replace the values of these properties:
 
-- **principalId** with the **id** of the user account
-- **appRoleId** with the **id** of the app role.
-- **resourceId** with the **id** of the service principle
+- **principalId** with the **id** of the user
+- **appRoleId** with the **id** of the app role
+- **resourceId** with the **id** of the service principal
 
 #### Request
 
@@ -391,12 +392,56 @@ Content-type: application/json
   "id": "I23pL8ZdNU-CIgQmqMEVyLJ0E6fx0ixEo92az8MnhtU",
   "creationTimestamp": "2020-06-09T00:06:07.5129268Z",
   "appRoleId": "18d14569-c3bd-439b-9a66-3a2aee01d14f",
-  "principalDisplayName": "Jean Green",
+  "principalDisplayName": "MyTestUser1",
   "principalId": "2fe96d23-5dc6-4f35-8222-0426a8c115c8",
   "principalType": "User",
   "resourceDisplayName": "Contoso IWA App",
   "resourceId": "a8cac399-cde5-4516-a674-819503c61313"
 }
+```
+
+## Step 6: Clean up resources
+
+The resources that you created in this tutorial are not intended to be used in a production environment. In this step, you remove the resources that you created.
+
+### Delete the user account
+
+Delete the MyTestUser1 user account.
+
+#### Request
+
+```http
+DELETE https://graph.microsoft.com/v1.0/users/4628e7df-dff3-407c-a08f-75f08c0806dc
+```
+
+#### Response
+
+```http
+No Content - 204
+```
+
+### Delete the application
+
+```http
+DELETE https://graph.microsoft.com/v1.0/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
+```
+
+#### Response
+
+```http
+No Content - 204
+```
+
+### Delete the connector group
+
+```http
+DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6
+```
+
+#### Response
+
+```http
+No Content - 204
 ```
 
 ## See also
@@ -406,7 +451,8 @@ Content-type: application/json
 - [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta)
 - [connector](/graph/api/resources/connector?view=graph-rest-beta)
 - [connectorGroup](/graph/api/resources/connectorGroup?view=graph-rest-beta)
-- [On-premises publishing profiles](/graph/api/resources/onpremisespublishingprofile-root?view=graph-rest-beta)
+- [implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0)
+- [on-premises publishing profiles](/graph/api/resources/onpremisespublishingprofile-root?view=graph-rest-beta)
 - [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
 - [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)
 - [user](/graph/api/resources/user?view=graph-rest-1.0)
