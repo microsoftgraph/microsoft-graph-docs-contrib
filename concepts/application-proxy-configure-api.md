@@ -27,7 +27,7 @@ In this article, you'll learn how to configure Azure Active Directory (Azure AD)
     
     5. Select **Consent**, and then select **Accept** to accept the consent of the permissions. You do not need to consent on behalf of your organization for these permissions.
 
-        ![Accept permissions](./images/tutorial-riskdetection-api/accept-permissions.png)
+        ![Accept permissions](./images/application-proxy-configure-api/accept-permissions.png)
 
 > [!NOTE]
 > The response objects shown might also be shortened for readability. 
