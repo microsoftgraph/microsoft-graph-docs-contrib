@@ -3,7 +3,7 @@ title: "List overridesPages"
 description: "Get the userFlowLanguagePage resources from the overridesPages navigation property."
 author: "jkdouglas"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -69,7 +69,7 @@ The following is an example of the request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/b2cUserFlows/B2C_1_Customer/languages/en/overridesPages
+GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/languages/en/overridesPages
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-userflowlanguagepage-csharp-snippets.md)]
@@ -88,6 +88,7 @@ GET https://graph.microsoft.com/beta/b2cUserFlows/B2C_1_Customer/languages/en/ov
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 
 ### Response

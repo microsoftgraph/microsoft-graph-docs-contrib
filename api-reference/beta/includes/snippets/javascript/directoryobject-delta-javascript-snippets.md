@@ -10,9 +10,9 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/directoryObjects/delta')
+let directoryObject = await client.api('/directoryObjects/delta')
 	.version('beta')
-	.filter('isOf('Microsoft.Graph.User') or isOf('Microsoft.Graph.Group')')
+	.filter('isOf(\'Microsoft.Graph.User\') or isOf(\'Microsoft.Graph.Group\')')
 	.get();
 
 ```

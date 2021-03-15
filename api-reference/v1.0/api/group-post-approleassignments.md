@@ -68,14 +68,13 @@ Here is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/appRoleAssignments
+POST https://graph.microsoft.com/v1.0/groups/7679d9a4-2323-44cd-b5c2-673ec88d8b12/appRoleAssignments
 Content-Type: application/json
-Content-Length: 110
 
 {
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "appRoleId": "appRoleId-value"
+  "principalId": "7679d9a4-2323-44cd-b5c2-673ec88d8b12",
+  "resourceId": "076e8b57-bac8-49d7-9396-e3449b685055",
+  "appRoleId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 # [C#](#tab/csharp)
@@ -114,16 +113,18 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 253
 
 {
-  "id": "id-value",
-  "creationTimestamp": "2016-10-19T10:37:00Z",
-  "principalType": "principalType-value",
-  "principalId": "principalId-value",
-  "principalDisplayName": "principalDisplayName-value",
-  "resourceId": "resourceId-value",
-  "resourceDisplayName": "resourceDisplayName-value"
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('7679d9a4-2323-44cd-b5c2-673ec88d8b12')/appRoleAssignments/$entity",
+  "id": "pNl5diMjzUS1wmc-yI2LEkGgWqFFrFdLhG2Ly2CysL4",
+  "deletedDateTime": null,
+  "appRoleId": "00000000-0000-0000-0000-000000000000",
+  "createdDateTime": "2021-02-19T17:55:08.3369542Z",
+  "principalDisplayName": "Young techmakers",
+  "principalId": "7679d9a4-2323-44cd-b5c2-673ec88d8b12",
+  "principalType": "Group",
+  "resourceDisplayName": "Yammer",
+  "resourceId": "076e8b57-bac8-49d7-9396-e3449b685055"
 }
 ```
 
