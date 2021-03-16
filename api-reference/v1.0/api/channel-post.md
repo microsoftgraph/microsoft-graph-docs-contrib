@@ -179,9 +179,8 @@ Content-Type: application/json
 
 {
   "@microsoft.graph.channelCreationMode": "migration",
-  "displayName": "Architecture Discussion",
-  "description": "This channel is where we debate all future architecture plans",
-  "membershipType": "standard",
+  "displayName": "Import_150958_99z",
+  "description": "Import_150958_99z",
   "createdDateTime": "2020-03-14T11:22:17.067Z"
 }
 ```
@@ -203,6 +202,19 @@ Once provisioned, this channel can be used for [importing messages](/microsoftte
 ```http
 HTTP/1.1 201 Created
 Location: /teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
+    "id": "19:987c7a9fbe6447ccb3ea31bcded5c75c@thread.tacv2",
+    "createdDateTime": null,
+    "displayName": "Import_150958_99z",
+    "description": "Import_150958_99z",
+    "isFavoriteByDefault": null,
+    "email": null,
+    "webUrl": null,
+    "membershipType": null,
+    "moderationSettings": null
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

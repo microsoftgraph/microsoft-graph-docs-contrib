@@ -65,25 +65,8 @@ The following example shows a request to list all channels.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels
+GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/channels
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-channels-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-channels-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-channels-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-channels-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Response
@@ -106,12 +89,11 @@ Content-length: 262
 {
   "value": [
     {
-      "description": "description-value",
-      "displayName": "display-name-value",
-      "id": "id-value",
-      "isFavoriteByDefault": false,
-      "webUrl": "webUrl-value",
-      "email": "email-value"
+      "id": "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2",
+      "createdDateTime": "2020-05-27T19:22:25.692Z",
+      "displayName": "General",
+      "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
+      "membershipType": "standard"
     }
   ]
 }
@@ -131,24 +113,8 @@ The following example shows a request to list all private channels.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/{id}/channels?$filter=membershipType eq 'private'
+GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels?$filter=membershipType eq 'private'
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-private-channels-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-private-channels-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-private-channels-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-private-channels-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 ---
 
 #### Response
@@ -172,12 +138,11 @@ Content-length: 262
 {
   "value": [
     {
-      "description": "description-value",
-      "displayName": "display-name-value",
-      "id": "id-value",
-      "isFavoriteByDefault": false,
-      "webUrl": "webUrl-value",
-      "email": "email-value"
+      "id": "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2",
+      "createdDateTime": "2020-05-27T19:22:25.692Z",
+      "displayName": "General",
+      "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
+      "membershipType": "private"
     }
   ]
 }

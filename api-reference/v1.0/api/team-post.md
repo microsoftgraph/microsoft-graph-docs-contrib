@@ -1,7 +1,7 @@
 ---
 title: "Create team"
 description: "Create a new team."
-author: "nkramer"
+author: "anandjo"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -86,8 +86,8 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Location: /teams/{teamId}/operations/{operationId}
-Content-Location: /teams/{teamId}
+Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')/operations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')
+Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
@@ -149,7 +149,7 @@ The following is a request with a full payload. The client can override values i
 
 # [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_team_post_full_payload"
 }-->
 ```http

@@ -1,7 +1,7 @@
 ---
 title: "Get channel"
 description: "Retrieve the properties and relationships of a channel."
-author: "clearab"
+author: "nkramer"
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -66,24 +66,8 @@ Here is an example of the request.
   "name": "get_channel"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
+GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-channel-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-channel-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -101,13 +85,16 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 201
 
 {
-    "description": "description-value",
-    "displayName": "display-name-value",
-    "id": "id-value",
-    "membershipType": "membership-type-value"
+    "id": "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2",
+    "createdDateTime": "2020-05-27T19:22:25.692Z",
+    "displayName": "General",
+    "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
+    "membershipType": "standard"
 }
+
 ```
 
 Here is an example of the response for a standard channel with channel moderation off.

@@ -59,23 +59,9 @@ The following is an example of the request.
   "name": "get_team"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/{id}
+GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-team-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-team-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-team-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-team-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -95,32 +81,32 @@ Content-length: 401
 
 {
   "isArchived": false,
-  "discoverySettings": {
-    "showInTeamsSearchAndSuggestions": true
-  },
   "memberSettings": {
     "allowCreateUpdateChannels": true,
     "allowDeleteChannels": true,
     "allowAddRemoveApps": true,
     "allowCreateUpdateRemoveTabs": true,
-    "allowCreateUpdateRemoveConnectors": true
+    "allowCreateUpdateRemoveConnectors": true    
   },
   "guestSettings": {
     "allowCreateUpdateChannels": true,
-    "allowDeleteChannels": true
+    "allowDeleteChannels": true 
   },
   "messagingSettings": {
     "allowUserEditMessages": true,
     "allowUserDeleteMessages": true,
     "allowOwnerDeleteMessages": true,
     "allowTeamMentions": true,
-    "allowChannelMentions": true
+    "allowChannelMentions": true    
   },
   "funSettings": {
     "allowGiphy": true,
     "giphyContentRating": "strict",
     "allowStickersAndMemes": true,
     "allowCustomMemes": true
+  },
+  "discoverySettings": {
+    "showInTeamsSearchAndSuggestions": true
   }
 }
 ```
