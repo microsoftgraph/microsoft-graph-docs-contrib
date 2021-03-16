@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identity/conditionalAccess/namedLocations')
+let namedLocations = await client.api('/identity/conditionalAccess/namedLocations')
 	.version('beta')
 	.filter('microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq \'CA\')')
 	.get();

@@ -11,7 +11,7 @@ var authenticationMethodConfiguration = new PasswordlessMicrosoftAuthenticatorAu
 	State = AuthenticationMethodState.Enabled
 };
 
-await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["passwordlessMicrosoftAuthenticator"]
+await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"]
 	.Request()
 	.UpdateAsync(authenticationMethodConfiguration);
 

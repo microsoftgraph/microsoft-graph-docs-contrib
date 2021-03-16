@@ -11,18 +11,18 @@ const options = {
 const client = Client.init(options);
 
 const secureScoreControlProfile = {
-  assignedTo: "",
-  comment: "control is reviewed",
-  state: "Reviewed",
+  assignedTo: '',
+  comment: 'control is reviewed',
+  state: 'Reviewed',
   vendorInformation: {
-    provider: "SecureScore",
+    provider: 'SecureScore',
     providerVersion: null,
     subProvider: null,
-    vendor: "Microsoft"
+    vendor: 'Microsoft'
   }
 };
 
-let res = await client.api('/security/secureScoreControlProfiles/NonOwnerAccess')
+await client.api('/security/secureScoreControlProfiles/NonOwnerAccess')
 	.update(secureScoreControlProfile);
 
 ```

@@ -98,6 +98,8 @@ If using application permissions, if successful, this method returns `204 No con
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_printer"
@@ -117,6 +119,16 @@ Content-length: 581
   }
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-printer-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-printer-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response
