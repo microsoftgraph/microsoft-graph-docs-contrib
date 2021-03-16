@@ -12,11 +12,11 @@ const client = Client.init(options);
 
 const chatMessage = {
   body: {
-    content: "Hello World"
+    content: 'Hello World'
   }
 };
 
-let res = await client.api('/teams/{id}/channels/{id}/messages')
+await client.api('/teams/{id}/channels/{id}/messages')
 	.version('beta')
 	.post(chatMessage);
 

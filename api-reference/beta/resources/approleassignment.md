@@ -28,7 +28,7 @@ An app role assignment where the assigned principal is a service principal is an
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 | id | String | A unique identifier for the **appRoleAssignment** Key. Not nullable. Read-only. |
-| creationTimestamp | DateTimeOffset | The time when the app role assignment was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. Does not support `$filter`. |
+| creationTimestamp | DateTimeOffset | The time when the app role assignment was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Does not support `$filter`. |
 | principalId | Guid | The unique identifier (**id**) for the [user](user.md), [group](group.md) or [service principal](serviceprincipal.md) being granted the app role. Required on create. Does not support `$filter`. |
 | principalType | String | The type of the assigned principal. This can either be "User", "Group" or "ServicePrincipal". Read-only. Does not support `$filter`. |
 | principalDisplayName | String |The display name of the user, group, or service principal that was granted the app role assignment. Read-only. Supports `$filter` (`eq` and `startswith`). |

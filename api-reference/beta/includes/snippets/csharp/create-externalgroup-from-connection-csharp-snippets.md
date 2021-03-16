@@ -13,7 +13,7 @@ var externalGroup = new ExternalGroup
 	Description = "The product marketing team"
 };
 
-await graphClient.External.Connections["contosohr"].Groups
+await graphClient.External.Connections["{externalConnection-id}"].Groups
 	.Request()
 	.AddAsync(externalGroup);
 

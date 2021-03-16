@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/print/connectors/{id}')
+let printConnector = await client.api('/print/connectors/{id}')
 	.version('beta')
 	.get();
 

@@ -3,7 +3,7 @@ title: "Get accessPackageResourceEnvironment"
 description: "Read the properties and relationships of an accessPackageResourceEnvironment object."
 author: "hanki-microsoft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

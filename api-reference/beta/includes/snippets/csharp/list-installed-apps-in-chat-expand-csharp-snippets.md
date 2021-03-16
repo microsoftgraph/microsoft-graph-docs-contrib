@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var installedApps = await graphClient.Chats["19:d65713bc498c4a428c71ef9353e6ce20@thread.v2"].InstalledApps
+var installedApps = await graphClient.Chats["{chat-id}"].InstalledApps
 	.Request()
 	.Expand("teamsAppDefinition($expand=bot)")
 	.GetAsync();

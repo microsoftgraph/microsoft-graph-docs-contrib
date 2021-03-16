@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var usageRights = await graphClient.Devices["{objectId}"].UsageRights
+var usageRights = await graphClient.Users["{user-id}"].UsageRights
 	.Request()
 	.Filter("state in ('active', 'suspended') and serviceIdentifier in ('ABCD')")
 	.GetAsync();
