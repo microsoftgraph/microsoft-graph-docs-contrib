@@ -4,7 +4,7 @@ description: "Retrieve all available identity provider types in the directory."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
 # List availableProviderTypes
