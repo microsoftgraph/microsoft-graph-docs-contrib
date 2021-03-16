@@ -40,16 +40,16 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |riskState|riskState|The state of a detected risky user or sign-in. The possible values are `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, and `unknownFutureValue`. |
 |riskLevel|riskLevel|Level of the detected risk. The possible values are `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. <br />**Note:** Details for this property are only available for Azure AD Premium P2 customers. P1 customers will be returned `hidden`.|
 |riskDetail|riskDetail|Details of the detected risk. The possible values are `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`. <br />**Note:** Details for this property are only available for Azure AD Premium P2 customers. P1 customers will be returned `hidden`.|
-|source|string|Source of the risk detection. For example, "activeDirectory". |
+|source|string|Source of the risk detection. For example, `activeDirectory`. |
 |detectionTimingType|riskDetectionTimingType|Timing of the detected risk (real-time/offline). The possible values are `notDefined`, `realtime`, `nearRealtime`, `offline`, `unknownFutureValue`. |
 |activity|activityType|Indicates the activity type the detected risk is linked to. The possible values are `signin`, `user`, `unknownFutureValue`. |
 |tokenIssuerType|tokenIssuerType|Indicates the type of token issuer for the detected sign-in risk. The possible values are `AzureAD`, `ADFederationServices`, and `unknownFutureValue`. |
 |ipAddress|string|Provides the IP address of the client from where the risk occurred. |
 |location|[signInLocation](signinlocation.md)|Location of the sign-in. |
-|activityDateTime|DateTimeOffset|Date and time that the risky activity occurred. <br /> The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z`|
-|detectedDateTime|DateTimeOffset|Date and time that the risk was detected.<br /> The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z` |
+|activityDateTime|DateTimeOffset|Date and time that the risky activity occurred. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|detectedDateTime|DateTimeOffset|Date and time that the risk was detected. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z` |
 |lastUpdatedDateTime|DateTimeOffset|Date and time that the risk detection was last updated. |
-|userId|string|Unique ID of the user. <br /> The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z`|
+|userId|string|Unique ID of the user.  The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |userDisplayName|string|Name of the user. |
 |userPrincipalName|string|The user principal name (UPN) of the user. |
 |additionalInfo|string|Additional information associated with the risk detection in JSON format. |

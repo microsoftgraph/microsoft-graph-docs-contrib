@@ -19,7 +19,7 @@ For Azure AD B2B scenarios in an Azure AD tenant, the identity provider type can
 
 Configuring an identity provider in your Azure AD tenant enables new Azure AD B2B guest scenarios. For example, an organization has resources in Microsoft 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
 
-In an Azure AD B2C tenant, the identity provider type can be Microsoft, Google, Facebook, Amazon, LinkedIn, Twitter or any [openIdConnectProvider](../resources/openidconnectprovider.md). The following identity providers are in preview: Weibo, QQ, WeChat, and GitHub.
+In an Azure AD B2C tenant, the identity provider type can be **Microsoft**, **Google**, **Facebook**, **Amazon**, **LinkedIn**, **Twitter** or any [openIdConnectProvider](../resources/openidconnectprovider.md). The following identity providers are in preview: **Weibo**, **QQ**, **WeChat**, and **GitHub**.
 
 Configuring an identity provider in your Azure AD B2C tenant enables users to sign up and sign in using a social account or a custom OpenID Connect supported provider in an application. For example, an application can use Azure AD B2C to allow users to sign up for the service using a Facebook account or their own custom identity provider that complies with OIDC protocol.
 
@@ -41,11 +41,11 @@ If it is a custom OpenID Connect identity provider with `OpenIDConnect` as `type
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|clientId|String|The client ID for the application obtained when registering the application with the identity provider. This is a required field.|
-|clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return `****`. This is a required field.|
+|clientId|String|The client ID for the application obtained when registering the application with the identity provider. This is a required field.  Required. Not nullable.|
+|clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return `****`. This is a required field. Required. Not nullable.|
 |id|String|The ID of the identity provider.|
-|name|String|The display name of the identity provider.|
-|type|String|The identity provider type is a required field.<br/><ul><li>For B2B scenario:</li><ul><li>Google</li><li>Facebook</li></ul></ul><ul><li>For B2C scenario:</li><ul><li>Microsoft</li><li>Google</li><li>Amazon</li><li>LinkedIn</li><li>Facebook</li><li>GitHub</li><li>Twitter</li><li>Weibo</li><li>QQ</li><li>WeChat</li><li>OpenIDConnect</li></ul></ul>|
+|name|String|The display name of the identity provider. Not nullable.|
+|type|String|The identity provider type is a required field. For B2B scenario: `Google`, `Facebook`. For B2C scenario: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`,`QQ`, `WeChat`, `OpenIDConnect`. Not nullable.|
 
 ### Where to get the client ID and secret
 

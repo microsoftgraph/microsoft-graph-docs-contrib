@@ -41,7 +41,7 @@ No `POST`, `PUT`, `PATCH`, or `DELETE` operations are supported on the `roleAssi
 |startDateTime|DateTimeOffset|The start time of the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |endDateTime|DateTimeOffset|For a non-permanent role assignment, this is the time when the role assignment will be expired. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |assignmentState|String  |The state of the assignment. The value can be `Eligible` for eligible assignment or `Active` if it is directly assigned `Active` by administrators, or activated on an eligible assignment by the users.|
-|memberType|String      |The type of member. The value can be: `Inherited` if the role assignment is inherited from a parent resource scope, `Group` if the role assignment is not inherited, but comes from the membership of a group assignment, or `User` if the role assignment is neither inherited nor from a group assignment.|
+|memberType|String      |The type of member. The value can be: `Inherited` (if the role assignment is inherited from a parent resource scope), `Group` (if the role assignment is not inherited, but comes from the membership of a group assignment), or `User` (if the role assignment is neither inherited nor from a group assignment).|
 
 
 ## Relationships

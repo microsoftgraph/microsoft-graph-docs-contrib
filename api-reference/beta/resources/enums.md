@@ -1684,24 +1684,6 @@ Possible values for user account types (group membership), per Windows definitio
 | query
 | unknownFutureValue
 
-### allowInvitesFrom values
-
-|Member|
-|:---|
-|none|
-|adminsAndGuestInviters|
-|adminsGuestInvitersAndAllMembers|
-|everyone|
-|unknownFutureValue|
-
-### openIdConnectResponseTypes values
-
-| Member
-|:----------------------
-| code
-| id_token
-| token
-
 ### wellknownListName values
 
 | Member
