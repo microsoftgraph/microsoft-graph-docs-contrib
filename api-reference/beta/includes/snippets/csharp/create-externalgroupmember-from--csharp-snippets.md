@@ -13,7 +13,7 @@ var externalGroupMember = new ExternalGroupMember
 	IdentitySource = IdentitySourceType.External
 };
 
-await graphClient.External.Connections["contosohr"].Groups["31bea3d537902000"].Members
+await graphClient.External.Connections["{externalConnection-id}"].Groups["{externalGroup-id}"].Members
 	.Request()
 	.AddAsync(externalGroupMember);
 

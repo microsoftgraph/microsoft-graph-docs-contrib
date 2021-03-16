@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var languages = await graphClient.Identity.B2xUserFlows["B2X_1_PartnerSignUp"].Languages
+var languages = await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].Languages
 	.Request()
 	.GetAsync();
 

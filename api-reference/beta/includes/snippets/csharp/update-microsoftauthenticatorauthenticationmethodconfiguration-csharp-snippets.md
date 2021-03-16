@@ -11,7 +11,7 @@ var authenticationMethodConfiguration = new MicrosoftAuthenticatorAuthentication
 	State = AuthenticationMethodState.Enabled
 };
 
-await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["microsoftAuthenticator"]
+await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"]
 	.Request()
 	.UpdateAsync(authenticationMethodConfiguration);
 

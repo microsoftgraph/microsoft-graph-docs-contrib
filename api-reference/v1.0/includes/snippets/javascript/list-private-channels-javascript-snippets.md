@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{id}/channels')
+let channels = await client.api('/teams/{id}/channels')
 	.version('beta')
 	.filter('membershipType eq \'private\'')
 	.get();
