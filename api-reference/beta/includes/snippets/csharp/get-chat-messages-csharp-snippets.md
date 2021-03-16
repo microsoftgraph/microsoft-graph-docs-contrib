@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var messages = await graphClient.Chats["{id}"].Messages
+var messages = await graphClient.Chats["{chat-id}"].Messages
 	.Request()
 	.GetAsync();
 
