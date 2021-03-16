@@ -36,6 +36,7 @@ The work or school account needs to belong to one of the following roles:
 ```http
 GET /identityProviders/{id}
 ```
+
 ## Request headers
 
 |Name|Description|
