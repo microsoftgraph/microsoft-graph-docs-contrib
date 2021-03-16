@@ -28,14 +28,21 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /policies/featureRolloutPolicies/{id}/appliesTo/{id}/$ref
+DELETE /policies/featureRolloutPolicies/{policyid}/appliesTo/{directoryObjectId}/$ref
 ```
 
 ## Request headers
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required |
+
+## Request parameters
+
+| Name          | Description   |
+|:--------------|:--------------|
+| policyid | The id of the target policy to remove the appliesTo. Required. |
+| directoryObjectId | The id of the directory object to remove. Required |
 
 ## Request body
 
