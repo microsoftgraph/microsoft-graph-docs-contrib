@@ -12,7 +12,7 @@ var accessReviewInstanceDecisionItem = new AccessReviewInstanceDecisionItem
 	Justification = "I trust this person"
 };
 
-await graphClient.Me.PendingAccessReviewInstances["70a68410-67f3-4d4c-b946-6989e050be19"].Decisions["654b34e7-b48f-4772-a2d4-08f1d0dd014c"]
+await graphClient.Me.PendingAccessReviewInstances["{accessReviewInstance-id}"].Decisions["{accessReviewInstanceDecisionItem-id}"]
 	.Request()
 	.UpdateAsync(accessReviewInstanceDecisionItem);
 

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identity/b2cUserFlows/B2C_1_Customer/languages/en/defaultPages')
+let defaultPages = await client.api('/identity/b2cUserFlows/B2C_1_Customer/languages/en/defaultPages')
 	.version('beta')
 	.get();
 

@@ -41,7 +41,7 @@ var conversation = new Conversation
 	}
 };
 
-await graphClient.Groups["37df2ff0-0de0-4c33-8aee-75289364aef6"].Conversations
+await graphClient.Groups["{group-id}"].Conversations
 	.Request()
 	.AddAsync(conversation);
 

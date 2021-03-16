@@ -14,7 +14,7 @@ const userFlowLanguageConfiguration = {
   isEnabled: false
 };
 
-let res = await client.api('/identity/b2cUserFlows/B2C_1_CustomerSignUp/languages/es-ES')
+await client.api('/identity/b2cUserFlows/B2C_1_CustomerSignUp/languages/es-ES')
 	.version('beta')
 	.put(userFlowLanguageConfiguration);
 

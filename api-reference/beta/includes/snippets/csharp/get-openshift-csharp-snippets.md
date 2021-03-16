@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var openShifts = await graphClient.Teams["{id}"].Schedule.OpenShifts
+var openShifts = await graphClient.Teams["{team-id}"].Schedule.OpenShifts
 	.Request()
 	.GetAsync();
 

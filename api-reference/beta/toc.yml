@@ -473,6 +473,10 @@ items:
           href: api/userteamwork-delete-installedapps.md
         - name: Get chat between user and app
           href: api/userscopeteamsappinstallation-get-chat.md 
+        - name: Get chat for user
+          href: api/chat-get.md
+        - name: List chats for user
+          href: api/chat-list.md
       - name: To-do tasks
         items:
         - name: Task
@@ -11168,6 +11172,20 @@ items:
               href: api/connectedorganization-delete-externalsponsors.md
             - name: Remove internal sponsors
               href: api/connectedorganization-delete-internalsponsors.md
+          - name: Approval
+            href: resources/approval.md
+            items:
+            - name: Get
+              href: api/approval-get.md
+          - name: Approval step
+            href: resources/approvalstep.md
+            items:
+            - name: List
+              href: api/approval-list-steps.md
+            - name: Get 
+              href: api/approvalstep-get.md
+            - name: Update 
+              href: api/approvalstep-update.md
           - name: Entitlement management settings
             href: resources/entitlementmanagementsettings.md
             items:

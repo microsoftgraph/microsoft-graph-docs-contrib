@@ -20,7 +20,7 @@ var externalItem = new ExternalItem
 	}
 };
 
-await graphClient.Connections["contosohr"].Items["TSP228082938"]
+await graphClient.Connections["{externalConnection-id}"].Items["{externalItem-id}"]
 	.Request()
 	.UpdateAsync(externalItem);
 
