@@ -21,7 +21,7 @@ To associate a domain with a tenant:
 
 2. [Retrieve](../api/domain-list-verificationdnsrecords.md) the domain verification records. Add the verification record details to the domain's zone file using the domain registrar or DNS server configuration.
 
-3. [Verify](../api/domain-verify.md) the ownership of the domain. This will verify the domain and set the *isVerified* property to *`true`*.
+3. [Verify](../api/domain-verify.md) the ownership of the domain. This will verify the domain and set the **isVerified** property to `true`.
 
 4. [Indicate](../api/domain-update.md) the supported services you plan to use with the domain.
 
@@ -65,8 +65,8 @@ Relationships between a domain and other objects in the directory such as its ve
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
 |domainNameReferences|[directoryObject](directoryobject.md) collection| Read-only, Nullable|
-|serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.<br>Read-only, Nullable |
-|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.<br>Read-only, Nullable|
+|serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services. Read-only, Nullable |
+|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD. Read-only, Nullable|
 
 ## JSON representation
 Here is a JSON representation of the resource.
@@ -84,11 +84,11 @@ Here is a JSON representation of the resource.
   "authenticationType": "String",
   "availabilityStatus": "String",
   "id": "String (identifier)",
-  "isAdminManaged": `true`,
-  "isDefault": `true`,
-  "isInitial": `true`,
-  "isRoot": `true`,
-  "isVerified": `true`,
+  "isAdminManaged": true,
+  "isDefault": true,
+  "isInitial": true,
+  "isRoot": true,
+  "isVerified": true,
   "passwordNotificationWindowInDays": 14,
   "passwordValidityPeriodInDays": 90,
   "state": {"@odata.type": "microsoft.graph.domainState"},
