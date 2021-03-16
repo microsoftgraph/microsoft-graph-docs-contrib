@@ -219,7 +219,7 @@ The following example shows how to create a channel that will be used for import
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
 Content-Type: application/json
 
 {
@@ -249,7 +249,7 @@ HTTP/1.1 201 Created
 Location: /teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
     "id": "19:987c7a9fbe6447ccb3ea31bcded5c75c@thread.tacv2",
     "createdDateTime": null,
     "displayName": "Import_150958_99z",
