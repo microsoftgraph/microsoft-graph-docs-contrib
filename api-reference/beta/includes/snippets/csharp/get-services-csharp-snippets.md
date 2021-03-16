@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var services = await graphClient.Print.Services
+var services = await graphClient.BookingBusinesses["{bookingBusiness-id}"].Services
 	.Request()
 	.GetAsync();
 

@@ -3,6 +3,129 @@
     {
       "ChangeList": [
         {
+          "Id": "df2ac698-353d-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to [aadUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/aadUserConversationMember?view=graph-rest-1.0) resource",
+          "Target": "aadUserConversationMember"
+        },
+        {
+          "Id": "df2d2808-353d-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Property",
+          "ChangedApiName": "visibleHistoryStartDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **visibleHistoryStartDateTime** property to [conversationMember](https://docs.microsoft.com/en-us/graph/api/resources/conversationMember?view=graph-rest-1.0) resource",
+          "Target": "conversationMember"
+        },
+        {
+          "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
+          "ApiChange": "Property",
+          "ChangedApiName": "topic",
+          "ChangeType": "Addition",
+          "Description": "Added the **topic** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdDateTime** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastUpdatedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastUpdatedDateTime** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
+          "ApiChange": "Property",
+          "ChangedApiName": "chatType",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatType** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
+          "ApiChange": "Property",
+          "ChangedApiName": "members",
+          "ChangeType": "Addition",
+          "Description": "Added the **members** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
+          "ApiChange": "Property",
+          "ChangedApiName": "installedApps",
+          "ChangeType": "Addition",
+          "Description": "Added the **installedApps** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
+          "ApiChange": "Property",
+          "ChangedApiName": "tabs",
+          "ChangeType": "Addition",
+          "Description": "Added the **tabs** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "cc9d7c96-12b8-44b3-868d-65f2e6603019",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create](https://docs.microsoft.com/en-us/graph/api/chat-post?view=graph-rest-1.0&preserve-view=true), [Get](https://docs.microsoft.com/en-us/graph/api/chat-get?view=graph-rest-1.0&preserve-view=true), and [Update](https://docs.microsoft.com/en-us/graph/api/chat-patch?view=graph-rest-1.0&preserve-view=true) methods.",
+          "Target": "chat"
+        },
+        {
+          "Id": "cc9d7c96-12b8-44b3-868d-65f2e6603019",
+          "ApiChange": "Method",
+          "ChangedApiName": "conversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [List chat members](https://docs.microsoft.com/en-us/graph/api/chat-list-members?view=graph-rest-1.0&preserve-view=true), [Add chat member](https://docs.microsoft.com/en-us/graph/api/chat-post-members?view=graph-rest-1.0&preserve-view=true), [Get chat member](https://docs.microsoft.com/en-us/graph/api/chat-get-members?view=graph-rest-1.0&preserve-view=true), and [Remove chat member](https://docs.microsoft.com/en-us/graph/api/chat-delete-members?view=graph-rest-1.0&preserve-view=true) methods.",
+          "Target": "conversationMember"
+        },
+        {
+          "Id": "cc9d7c96-12b8-44b3-868d-65f2e6603019",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamsAppInstallation",
+          "ChangeType": "Addition",
+          "Description": "Added the [List apps in chat](https://docs.microsoft.com/en-us/graph/api/chat-list-installedapps?view=graph-rest-1.0&preserve-view=true), [Get app in chat](https://docs.microsoft.com/en-us/graph/api/chat-get-installedapps?view=graph-rest-1.0&preserve-view=true), [Add app in chat](https://docs.microsoft.com/en-us/graph/api/chat-post-installedapps?view=graph-rest-1.0&preserve-view=true), and [Upgrade app in chat](https://docs.microsoft.com/en-us/graph/api/chat-teamsappinstallation-upgrade?view=graph-rest-1.0&preserve-view=true) methods.",
+          "Target": "teamsAppInstallation"
+        },
+   
+        {
+          "Id": "cc9d7c96-12b8-44b3-868d-65f2e6603019",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamsTab",
+          "ChangeType": "Addition",
+          "Description": "Added the [List tabs in chat](https://docs.microsoft.com/en-us/graph/api/chat-list-tabs?view=graph-rest-1.0&preserve-view=true), [Get tab in chat](https://docs.microsoft.com/en-us/graph/api/chat-get-tabs?view=graph-rest-1.0&preserve-view=true), [Add tab to chat](https://docs.microsoft.com/en-us/graph/api/chat-post-tabs?view=graph-rest-1.0&preserve-view=true), [Update tab in chat](https://docs.microsoft.com/en-us/graph/api/chat-patch-tabs?view=graph-rest-1.0&preserve-view=true), and [Remove tab from chat](https://docs.microsoft.com/en-us/graph/api/chat-delete-tabs?view=graph-rest-1.0&preserve-view=true) methods.",
+          "Target": "chat"
+        },
+        {
+          "Id": "0bc56bd0-6c96-11eb-8401-e19c685756df",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "chatType",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatType** enumeration type.",
+          "Target": "chatType"
+        }
+      ],
+      "Id": "0b6949b4-6c96-11eb-8401-e19c685756df",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-03-12T18:22:05.727Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d5f426a2-c032-4e55-9d19-3b2c52d01ff6",
           "ApiChange": "Resource",
           "ChangedApiName": "chatMessage",

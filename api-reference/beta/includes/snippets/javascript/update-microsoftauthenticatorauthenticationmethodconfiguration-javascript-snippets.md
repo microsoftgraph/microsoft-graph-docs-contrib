@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const authenticationMethodConfiguration = {
-  @odata.type: "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
-  state: "String"
+  '@odata.type': '#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration',
+  state: 'String'
 };
 
-let res = await client.api('/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/microsoftAuthenticator')
+await client.api('/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/microsoftAuthenticator')
 	.version('beta')
 	.update(authenticationMethodConfiguration);
 
