@@ -57,7 +57,7 @@ The following is an example of a request.
   "name": "post_reply_message"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages('1590776551682')/replies
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages/1590776551682/replies
 Content-type: application/json
 
 {
@@ -134,7 +134,7 @@ The following example show how to import back-in-time messages using the `create
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
 ```http
-POST https://graph.microsoft.com/v1.0/teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages('1590776551682')/replies
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages/1590776551682/replies
 
 {
    "createdDateTime":"2019-02-04T19:58:15.511Z",
