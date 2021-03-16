@@ -1,6 +1,6 @@
 ---
 title: "approvalStep resource type"
-description: "The approvalStep object associated with the accessPackageAssignmentRequest or userConsentRequest."
+description: "The approvalStep object associated with an accessPackageAssignmentRequest or userConsentRequest."
 localization_priority: Normal
 author: "sbounouh"
 ms.prod: "governance"
