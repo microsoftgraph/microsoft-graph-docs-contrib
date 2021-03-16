@@ -10153,24 +10153,24 @@ items:
             href: api/identityproviderbase-delete.md
           - name: List available provider types
             href: api/identityproviderbase-list-availableprovidertypes.md
-          - name: Identity provider (deprecated)
-            items:
-            - name: Identity provider type
-              href: resources/identityprovider.md
-            - name: OpenID Connect identity provider type
-              href: resources/openidconnectprovider.md
-            - name: List
-              href: api/identityprovider-list.md
-            - name: Create
-              href: api/identityprovider-post-identityproviders.md
-            - name: Get
-              href: api/identityprovider-get.md
-            - name: Update
-              href: api/identityprovider-update.md
-            - name: Delete
-              href: api/identityprovider-delete.md
-            - name: List available provider types
-              href: api/identityprovider-list-availableprovidertypes.md
+        - name: Identity provider (deprecated)
+          items:
+          - name: Identity provider type
+            href: resources/identityprovider.md
+          - name: OpenID Connect identity provider type
+            href: resources/openidconnectprovider.md
+          - name: List
+            href: api/identityprovider-list.md
+          - name: Create
+            href: api/identityprovider-post-identityproviders.md
+          - name: Get
+            href: api/identityprovider-get.md
+          - name: Update
+            href: api/identityprovider-update.md
+          - name: Delete
+            href: api/identityprovider-delete.md
+          - name: List available provider types
+            href: api/identityprovider-list-availableprovidertypes.md
         - name: Invitation manager
           href: resources/invitation.md
           items:
