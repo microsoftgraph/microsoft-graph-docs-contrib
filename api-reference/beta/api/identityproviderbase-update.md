@@ -56,7 +56,7 @@ In the request body, provide a JSON object with one or more properties that need
 |clientId|String|The client ID for the application. This is the client ID obtained when registering the application with the identity provider.|
 |clientSecret|String|The client secret for the application. This is the client secret obtained when registering the application with the identity provider.|
 |name|String|The display name of the identity provider.|
-|type|String|The identity provider type.<ul>For B2B scenario:<li/>Google<li/>Facebook</ul><ul>For B2C scenario:<li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat<li/>OpenIDConnect</ul>|
+|type|String|The identity provider type. For B2B scenario: `Google`, `Facebook`.  For B2C scenario: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat`, `OpenIDConnect`.|
 
 ### openIdConnectProvider object
 
@@ -179,5 +179,4 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-
 
