@@ -26,6 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
 The work or school account needs to belong to one of the following roles:
+
 * Global Administrator
 * External Identity Provider Administrator
 
@@ -70,20 +71,6 @@ The following is an example of the request.
 ``` http
 GET https://graph.microsoft.com/beta/identityProviders/{id}
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityprovider-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityprovider-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-identityprovider-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 
@@ -107,6 +94,7 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
+
 ### Example 2: Retrieve a specific openIDConnectProvider (only for Azure AD B2C)
 
 #### Request
@@ -157,5 +145,3 @@ Content-type: application/json
   "scope": "openid"
 }
 ```
-
-
