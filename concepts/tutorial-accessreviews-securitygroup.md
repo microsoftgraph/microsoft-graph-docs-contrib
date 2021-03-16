@@ -120,13 +120,8 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
     "id": "825f1b5e-6fb2-4d9a-b393-d491101acc0c",
-    "createdDateTime": "2021-02-10T15:00:05Z",
-    "description": "Building security group",
     "displayName": "Building security group",
-    "groupTypes": [],
-    "mail": null,
-    "mailEnabled": false,
-    "mailNickname": "buildingsecurity"
+    "groupTypes": []
 }
 ```
 Record the **id** of the new group from the response to be used later in this tutorial.
@@ -302,10 +297,7 @@ Content-type: application/json
         {
             "id": "1c74f500-9082-4dfe-80ac-784a6edb71d7",
             "accessReviewId": "d7286a17-3a01-406a-b872-986b6b40317c",
-            "reviewedDateTime": null,
             "decision": "NotReviewed",
-            "justification": "",
-            "appliedDateTime": null,
             "applyResult": "New",
             "recommendation": "Approve",
             "reviewedBy": {
@@ -334,10 +326,7 @@ Content-type: application/json
         {
             "id": "7744be81-7d17-40c9-8fd3-c9072b1ccace",
             "accessReviewId": "d7286a17-3a01-406a-b872-986b6b40317c",
-            "reviewedDateTime": null,
             "decision": "NotReviewed",
-            "justification": "",
-            "appliedDateTime": null,
             "applyResult": "New",
             "recommendation": "Approve",
             "reviewedBy": {

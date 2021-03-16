@@ -71,7 +71,6 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
     "id": "c9a5aff7-9298-4d71-adab-0a222e0a05e4",
     "displayName": "Aline Dupuy",
-    "mailNickname": "AlineD",
     "userPrincipalName": "AlineD@contoso.com",
     "userType": "Member"
 }
@@ -103,14 +102,6 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#invitations/$entity",
-    "id": "3043523a-7a7d-4aec-b9c7-141d9c277559",
-    "inviteRedeemUrl": "https://login.microsoftonline.com/redeem?rd=https%3a%2f%2finvitations.microsoft.com%2fredeem%2f%3ftenant%3df9a44fab-6764-4166-aac0-c8aca790a100%26user%3d3043523a-7a7d-4aec-b9c7-141d9c277559%26ticket%3dc7qakt671UqG9jN4csqlXOvT9JipN2C8o4eGbh%252bvLWM%253d%26ver%3d2.0",
-    "invitedUserDisplayName": "John Doe (Tailspin Toys)",
-    "invitedUserType": "Guest",
-    "invitedUserEmailAddress": "john.doe@outlook.com",
-    "inviteRedirectUrl": "https://myapps.microsoft.com/",
-    "status": "PendingAcceptance",
-    "invitedUserMessageInfo": {},
     "invitedUser": {
         "id": "baf1b0a0-1f9a-4a56-9884-6a30824f8d20"
     }    
@@ -161,15 +152,10 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
     "id": "59ab642a-2776-4e32-9b68-9ff7a47b7f6a",
-    "createdDateTime": "2021-02-10T16:55:34Z",
-    "description": "Feelgood Marketing Campaign with external partners and vendors.",
     "displayName": "Feelgood Marketing Campaign",
     "groupTypes": [
         "Unified"
-    ],
-    "mail": "FeelGoodCampaign@contoso.com",
-    "mailEnabled": true,
-    "mailNickname": "FeelGoodCampaign"
+    ]
 }
 ```
 
