@@ -8,7 +8,6 @@ ms.prod: "identity-and-sign-in"
 ---
 
 # Delete identityProvider
-
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -27,6 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|IdentityProvider.ReadWrite.All|
 
 The work or school account needs to belong to one of the following roles:
+
 * Global Administrator
 * External Identity Provider Administrator
 
@@ -68,21 +68,6 @@ The following is an example of the request.
 ``` http
 DELETE https://graph.microsoft.com/beta/identityProviders/{id}
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityprovider-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-identityprovider-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-identityprovider-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 
 ### Response
 
@@ -99,4 +84,3 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-
