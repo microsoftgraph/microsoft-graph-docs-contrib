@@ -41,7 +41,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required |
 
 ## Request body
 
@@ -53,7 +53,9 @@ If successful, this method returns a `200 OK` response code and the requested [f
 
 ## Examples
 
-### Request
+### Example 1: Get a feature rollout policy
+
+#### Request
 
 The following is an example of the request.
 
@@ -65,7 +67,7 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c
 ```
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -91,7 +93,9 @@ Content-type: application/json
 }
 ```
 
-### Request
+### Example 2: Get a feature rollout policy and expand appliesTo
+
+#### Request
 
 The following is an example of the request.
 
@@ -104,7 +108,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c?$expand=appliesTo
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 

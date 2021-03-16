@@ -32,18 +32,21 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directory/featureRolloutPolicies/{id}/appliesTo/{id}/$ref
+DELETE /directory/featureRolloutPolicies/{policyid}/appliesTo/{directoryObjectId}/$ref
 ```
 
 ## Request headers
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required |
 
-## Request body
+## Request parameters
 
-In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) object.
+| Name          | Description   |
+|:--------------|:--------------|
+| policyid | The id of the target policy to remove the appliesTo. Required. |
+| directoryObjectId | The id of the directory object to remove. Required |
 
 ## Response
 
