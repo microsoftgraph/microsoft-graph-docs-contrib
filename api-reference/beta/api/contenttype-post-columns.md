@@ -1,14 +1,14 @@
 ---
 author: swapnil1993
 ms.date: 08/30/2020
-title: "Create columnDefinition"
+title: "Create columnDefinition in a content type"
 description: "Add column to a content type."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
 
-# Create columnDefinition
+# Create columnDefinition in a content type
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -1,13 +1,13 @@
 ---
 author: swapnil1993
-title: "List columnDefinitions"
+title: "List columnDefinitions in a content type"
 description: "List columns in a content type."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
 
-# List columnDefinitions
+# List columnDefinitions in a content type
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

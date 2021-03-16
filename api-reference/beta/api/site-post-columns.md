@@ -1,14 +1,14 @@
 ---
 author: swapnil1993
 ms.date: 08/30/2020
-title: "Create columnDefinition"
+title: "Create columnDefinition in a site"
 description: "Create a site column."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
 
-# Create columnDefinition
+# Create columnDefinition in a site
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

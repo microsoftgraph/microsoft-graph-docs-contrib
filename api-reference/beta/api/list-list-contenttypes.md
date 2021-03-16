@@ -1,13 +1,13 @@
 ---
 author: swapnil1993
-title: "List contentTypes"
+title: "List contentTypes in a list"
 description: "List content types in a list"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
 
-# List contentTypes
+# List contentTypes in a list
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
