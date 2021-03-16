@@ -31,7 +31,7 @@ The **adminConsentRequestPolicy** provides additional settings when creating a c
 |notifyReviewers|Boolean|Specifies whether reviewers will receive notifications. Required.|
 |remindersEnabled|Boolean|Specifies whether reviewers will receive reminder emails. Required.|
 |requestDurationInDays|Int32|Specifies the duration the request is active before it automatically expires if no decision is applied.|
-|reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Required.|
+|reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|Required.|
 |version|Int32|Specifies the version of this policy. When the policy is updated, this version is updated. Read-only.|
 
 ## Relationships

@@ -52,7 +52,7 @@ The following table shows the properties that are required when you update the [
 |notifyReviewers|Boolean|Specifies whether reviewers will receive notifications.|
 |remindersEnabled|Boolean|Specifies whether reviewers will receive reminder emails.|
 |requestDurationInDays|Int32|Specifies the duration the request is active before it automatically expires if no decision is applied.|
-|reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|The list of reviewers for the admin consent.|
+|reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|The list of reviewers for the admin consent.|
 
 
 
