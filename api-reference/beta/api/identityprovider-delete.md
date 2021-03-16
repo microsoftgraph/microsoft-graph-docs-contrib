@@ -8,7 +8,6 @@ ms.prod: "identity-and-sign-in"
 ---
 
 # Delete identityProvider (deprecated)
-
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -27,6 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|IdentityProvider.ReadWrite.All|
 
 The work or school account needs to belong to one of the following roles:
+
 * Global Administrator
 * External Identity Provider Administrator
 

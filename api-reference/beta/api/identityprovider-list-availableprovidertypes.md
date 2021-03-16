@@ -4,11 +4,10 @@ description: "Retrieve all available identity provider types in the directory."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
 # List availableProviderTypes (deprecated)
-
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -27,8 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
 The work or school account needs to belong to one of the following roles:
-* Global administrator
-* External Identity Provider administrator
+
+* Global Administrator
+* External Identity Provider Administrator
 
 ## HTTP request
 
@@ -56,7 +56,6 @@ If successful, this function returns a `200 OK` response code and a String colle
 ### Request
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -67,20 +66,8 @@ The following is an example of the request.
 ``` http
 GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/identityprovider-availableprovidertypes-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/identityprovider-availableprovidertypes-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/identityprovider-availableprovidertypes-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -115,5 +102,3 @@ Content-Type: application/json
   ]
 }
 ```
-
-
