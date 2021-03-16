@@ -32,6 +32,9 @@ If Alex has shared and not delegated his calendar with Adele:
 
 Signed in as Adele, get the calendars she has access to and identify the one Alex has delegated to her, so to use it in the next step to create an event in that calendar. 
 
+**Microsoft Graph permissions**
+
+Use the least privileged delegated permission, `Calendars.Read.Shared`. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -115,7 +118,11 @@ Content-type: application/json
 
 ## Step 2: Adele creates and sends an invitation on Alex' behalf
 
-Signed in as Adele, use the calendar ID obtained from step 1 to create an [event](/graph/api/resources/event?view=graph-rest-1.0) in the delegated calendar and send it to Christie and Megan, on Alex' behalf:
+Signed in as Adele, use the calendar ID obtained from step 1 to create an [event](/graph/api/resources/event?view=graph-rest-1.0) in the delegated calendar and send it to Christie and Megan, on Alex' behalf.
+
+**Microsoft Graph permissions**
+
+Use the least privileged delegated permission, `Calendars.ReadWrite.Shared`. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
 
 <!-- {
   "blockType": "request",
@@ -277,7 +284,11 @@ Content-type: application/json
 
 Upon delivering the meeting request, Outlook automatically creates a tentative [event](/graph/api/resources/event?view=graph-rest-1.0) in Christie's calendar.
 
-Signed in as Christie, get the [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) and **event** that are associated with the meeting request from step 2:
+Signed in as Christie, get the [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) and **event** that are associated with the meeting request from step 2.
+
+**Microsoft Graph permissions**
+
+Use the least privileged delegated permisson, `Mail.Read` and `Calendar.Read.Shared`. For more information, see [mail permissions](permissions-reference.md#mail-permissions) and [calendar permissions](permissions-reference.md#calendars-permissions).
 
 
 # [HTTP](#tab/http)
@@ -502,6 +513,9 @@ Content-type: application/json
 
 Signed in as Christie, reply to the **event** as tentative, and include a reply message in the response:
 
+**Microsoft Graph permissions**
+
+Use the least privileged delegated permission, `Calendars.ReadWrite.Shared`. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -552,7 +566,11 @@ HTTP/1.1 202 Accepted
 
 Because Adele is a delegate of Alex' primary calendar, Adele receives all meeting responses for that calendar on Alex' behalf.
 
-Signed in as Adele, get the [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) that represents the response from Christie in step 4:
+Signed in as Adele, get the [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) that represents the response from Christie in step 4.
+
+**Microsoft Graph permissions**
+
+Use the least privileged delegated permission, `Mail.Read.Shared`. For more information, see [mail permissions](permissions-reference.md#mail-permissions).
 
 
 # [HTTP](#tab/http)
@@ -662,7 +680,11 @@ Content-type: application/json
 
 Because Alex kept the default to have Outlook direct all meeting requests and responses to only delegates, Alex does not receive Christie's response from step 4. He can however get the response through the [event](/graph/api/resources/event?view=graph-rest-1.0) in his primary calendar.
 
-Signed in as Alex, get the [event](/graph/api/resources/event?view=graph-rest-1.0) that Adele created in step 2 and get responses from the **attendees** property:
+Signed in as Alex, get the [event](/graph/api/resources/event?view=graph-rest-1.0) that Adele created in step 2 and get responses from the **attendees** property.
+
+**Microsoft Graph permissions**
+
+Use the least privileged delegated permission, `Calendars.Read`. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
 
 
 # [HTTP](#tab/http)
