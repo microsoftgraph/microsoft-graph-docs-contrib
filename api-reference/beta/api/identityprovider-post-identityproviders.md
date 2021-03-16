@@ -4,7 +4,7 @@ description: "Create a new identityProvider object."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
 # Create identityProvider (deprecated)
@@ -27,8 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|IdentityProvider.ReadWrite.All|
 
 The work or school account needs to belong to one of the following roles:
-* Global administrator
-* External Identity Provider administrator
+* Global Administrator
+* External Identity Provider Administrator
 
 ## HTTP request
 

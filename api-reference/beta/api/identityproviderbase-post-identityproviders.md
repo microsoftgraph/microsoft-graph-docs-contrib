@@ -26,8 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|IdentityProvider.ReadWrite.All|
 
 The work or school account needs to belong to one of the following roles:
-* Global administrator
-* External Identity Provider administrator
+* Global Administrator
+* External Identity Provider Administrator
 
 ## HTTP request
 
