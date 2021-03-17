@@ -26,7 +26,7 @@ Configuring an identity provider in your Azure AD B2C directory enables users to
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/identityproviderbase-list.md)|identityProviderbase collection|Retrieve all identity providers configured in a tenant.|
+|[List](../api/identityproviderbase-list.md)|identityProviderBase collection|Retrieve all identity providers configured in a tenant.|
 |[List available provider types](../api/identityproviderbase-list-availableprovidertypes.md)|String collection|Retrieve all available identity provider types available in the tenant.|
 
 ## Properties

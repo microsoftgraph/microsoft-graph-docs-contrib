@@ -34,7 +34,6 @@ You can configure Apple as a social identity provider for an Azure AD B2C tenant
 
 ### Where to get the client ID and secret
 
-
 ## JSON representation
 
 The following is a JSON representation of the resource.
