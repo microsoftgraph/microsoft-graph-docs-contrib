@@ -21,10 +21,10 @@ Configuring an OpenID Connect provider in B2C tenant enables users to sign up an
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List](../api/identityproviderbase-list.md)|identityProviderBase collection|Retrieve all identity providers configured in a tenant including the OpenID Connect identity providers.|
-|[Create](../api/identityprovider-post-identityproviders.md)|openIdConnectIdentityProvider|Create a new OpenID Connect identity provider.|
-|[Get](../api/identityprovider-get.md) |openIdConnectIdentityProvider|Retrieve properties of an OpenID Connect identity provider.|
-|[Update](../api/identityprovider-update.md)|None|Update an OpenID Connect identity provider.|
-|[Delete](../api/identityprovider-delete.md)|None|Delete an OpenID Connect identity provider.|
+|[Create](../api/identityproviderbase-post-identityproviders.md)|openIdConnectIdentityProvider|Create a new OpenID Connect identity provider.|
+|[Get](../api/identityproviderbase-get.md) |openIdConnectIdentityProvider|Retrieve properties of an OpenID Connect identity provider.|
+|[Update](../api/identityproviderbase-update.md)|None|Update an OpenID Connect identity provider.|
+|[Delete](../api/identityproviderbase-delete.md)|None|Delete an OpenID Connect identity provider.|
 |[List available provider types](../api/identityproviderbase-list-availableprovidertypes.md)|String collection|Retrieve all available identity provider types available in the tenant.|
 
 ## Properties

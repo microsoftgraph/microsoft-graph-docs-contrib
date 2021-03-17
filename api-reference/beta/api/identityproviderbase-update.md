@@ -11,7 +11,6 @@ ms.prod: "identity-and-sign-in"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Update the properties of an [identityProvider](../resources/identityprovider.md) object.
 
