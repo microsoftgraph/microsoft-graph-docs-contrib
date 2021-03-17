@@ -116,8 +116,7 @@ Content-length: 730
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem"
 } -->
 ``` http
 HTTP/1.1 200 OK
