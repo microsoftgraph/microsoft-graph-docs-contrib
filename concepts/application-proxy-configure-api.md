@@ -32,23 +32,23 @@ In this article, you'll learn how to configure Azure Active Directory (Azure AD)
 > [!NOTE]
 > The response objects shown might also be shortened for readability. 
 
-## Step 1: Create an application and service principal
+## Step 1: Create a custom application
 
-To configure Application Proxy for an app using the API, you create an application, add a service principal to the app, and then update the application's **onPremisesPublishing** property to configure the App Proxy settings.
+To configure Application Proxy for an app using the API, you first create a custom application, and then update the application's **onPremisesPublishing** property to configure the App Proxy settings. To create a custom application use the [applicationTemplate: instantiate](graph/api/applicationtemplate-instantiate?view=graph-rest-1.0) to create an instance of a custom application and service principal in your tenant for management. The template ID for a custom application is: 8adf8e6e-67b2-4cf2-a259-e3dc5476c621.
 
-### Create an application
+> [!NOTE]
+> The follow call uses the V1.0 Microsoft Graph endpoint, all other API calls use the beta endpoint.
 
-When creating the application, set the application's **signInAudience** to `AzureADMyOrg`. Record the **id** and the **appId** of the application to use later in the tutorial.
+Record the **id**, **appId**, **servicePrincipalId** of the application to use later in the tutorial.
 
 #### Request
 
 ```http
-POST https://graph.microsoft.com/beta/applications
+POST https://graph.microsoft.com/v1.0/applicationTemplates/8adf8e6e-67b2-4cf2-a259-e3dc5476c621/instantiate
 Content-type: application/json
 
 {
-  "displayName": "Contoso IWA App",
-  "signInAudience":"AzureADMyOrg"
+  "displayName": "Contoso IWA App"
 }
 ```
 
@@ -61,57 +61,35 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
   "id": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
+  "deletedDateTime": null,
+  "addIns": [],
   "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b",
+  "applicationTemplateId": null,
+  "identifierUris": [],
   "createdDateTime": "2020-08-11T21:07:47.5919755Z",
+  "description": null,
   "displayName": "Contoso IWA App",
   "isAuthorizationServiceEnabled": false,
+  "isDeviceOnlyAuthSupported": null,
+  "isFallbackPublicClient": null,
+  "groupMembershipClaims": null,
+  "notes": null,
+  "optionalClaims": null,
+  "orgRestrictions": [],
+  "publisherDomain": "f128.info",
   "signInAudience": "AzureADandPersonalMicrosoftAccount",
-}
-```
-
-### Create a servicePrincipal for the application and add required tags
-
-Use the **appId** that you previously recorded to create a service principal for the application. After you create the service principal, you then add the tags required for configuring Application Proxy for the application.
-
-#### Request
-
-```http
-POST https://graph.microsoft.com/beta/serviceprincipals
-Content-type: appplication/json
-
-{
-  "appId":"d7fbfe28-c60e-46d2-8335-841923950d3b",
-  "tags": [
-    "WindowsAzureActiveDirectoryIntegratedApp",
-    "WindowsAzureActiveDirectoryOnPremApp"
-  ]
-}
-```
-
-#### Response
-
-```http
-HTTP/1.1 201 Created
-Content-type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals/$entity",
-  "id": "a8cac399-cde5-4516-a674-819503c61313",
-  "accountEnabled": true,
-  "appDisplayName": "Contoso IWA App",
-  "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b",
-  "appOwnerOrganizationId": "7918d4b5-0442-4a97-be2d-36f9f9962ece",
-  "appRoleAssignmentRequired": false,
-  "displayName": "Contoso IWA App",
-  "servicePrincipalNames": [
-      "b92b92d4-3874-46a5-b715-a00ea01cff93"
-  ],
-  "servicePrincipalType": "Application",
+  "tags": [],
+  "tokenEncryptionKeyId": null,
+  "uniqueName": null,
+  "verifiedPublisher": {
+      "displayName": null,
+      "verifiedPublisherId": null,
+      "addedDateTime": null
+  },
 }
 ```
 
 ## Step 2: Configure Application Proxy
-
 Use the **id** that you recorded for the application to start the configuration of Application Proxy by updating the following properties:
 
 - **onPremisesPublishing** - In this example, you're using an app with the internal URL: `https://contosoiwaapp.com` and the default domain for the external URL: `https://contosoiwaapp-contoso.msappproxy.net`. 
@@ -456,6 +434,7 @@ No Content - 204
 - [connector](/graph/api/resources/connector?view=graph-rest-beta)
 - [connectorGroup](/graph/api/resources/connectorGroup?view=graph-rest-beta)
 - [implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0)
+- [applicationTemplate: instantiate](graph/api/applicationtemplate-instantiate?view=graph-rest-1.0)
 - [on-premises publishing profiles](/graph/api/resources/onpremisespublishingprofile-root?view=graph-rest-beta)
 - [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
 - [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)
