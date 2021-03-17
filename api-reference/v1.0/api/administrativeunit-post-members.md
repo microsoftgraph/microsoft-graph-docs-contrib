@@ -43,7 +43,7 @@ In the request body, provide the `id` of a [user](../resources/user.md),  [group
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 <!-- {
@@ -62,7 +62,7 @@ Content-length: 109
 ```
 In the request body, provide the `id` of the [user](../resources/user.md) or [group](../resources/group.md) object you want to add.
 
-##### Response
+### Response
 Here is an example of the response.
 
 <!-- {
