@@ -59,7 +59,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Delete permission]: ../api/site-delete-permission.md
 [Update permission]: ../api/site-update-permission.md
 [List contentTypes]: ../api/site-list-contenttypes.md
-[Create contentTypes]: ../api/site-post-contenttypes.md
+[Create contentType]: ../api/site-post-contenttypes.md
 [List columns]: ../api/site-list-columns.md
 [Create column]: ../api/site-post-columns.md
 
