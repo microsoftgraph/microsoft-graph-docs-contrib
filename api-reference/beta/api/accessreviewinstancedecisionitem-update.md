@@ -115,7 +115,9 @@ Content-length: 730
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "truncated": false
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy",
+  "isCollection": true
 } -->
 ``` http
 HTTP/1.1 200 OK
