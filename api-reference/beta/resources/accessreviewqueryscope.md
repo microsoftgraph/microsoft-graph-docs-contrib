@@ -1,9 +1,9 @@
 ---
 title: "accessReviewQueryScope resource type"
-description: "accessReviewQueryScope defines what will be reviewed in an access review"
+description: "Defines what will be reviewed in an access review."
 author: "isabelleatmsft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-accessReviewQueryScope defines what will be reviewed in an [accessReview](../resources/accessreviewsv2-root.md).
+An accessReviewQueryScope object defines what will be reviewed in an [accessReview](../resources/accessreviewsv2-root.md).
 
 Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 
@@ -22,7 +22,7 @@ Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |query|String|The query representing what will be reviewed in an access review. Examples of this include /groups/{id}/members?$filter=…|
-|queryRoot|String|In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query (like ./manager) is specified.|
+|queryRoot|String|In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query is specified. For example, `./manager`.|
 |queryType|String|Indicates the type of query. Types include MicrosoftGraph and ARM.|
 
 ### Supported queries for accessReviewQueryScope as scope

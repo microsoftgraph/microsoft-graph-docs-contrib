@@ -3,7 +3,7 @@ title: "principalResourceMembershipsScope resource type"
 description: "**TODO: Add Description**"
 author: "isabelleatmsft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -14,24 +14,24 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-principalResourceMembershipsScope allows for the selection of a collection of principal scopes and a collection of resource scopes to review access of the selected principals to the selected resources.
+The principalResourceMembershipsScope object allows for the selection of scopes to review access of the selected principals to the selected resources.
 
 Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|principalScopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Defines the scopes of the principals to be included in an access review|
-|resourceScopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Defines the scopes of the resources that access will be reviewed to|
+|principalScopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Defines the scopes of the principals to be included in an access review.|
+|resourceScopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Defines the scopes of the resources for which access will be reviewed.|
 
 ## Relationships
 None.
 
 ## Supported queries of type principalResourceMembershipsScope
 
-The following documents a list of supported principalResourceMembershipScopes based on the resource(s) being selected
+The following section describe the supported principalResourceMembershipScopes based on the resources being selected.
 
-### ServicePrincipal Resource Scope 
+### ServicePrincipal resource scope 
 
 ```json
 {
@@ -53,7 +53,7 @@ The following documents a list of supported principalResourceMembershipScopes ba
 }
 ```
 
-Here are various options for principalScopes for ServicePrincipal Resource Scope: 
+The following are options for principalScopes: 
 
 ###### All users
 
@@ -81,7 +81,7 @@ Here are various options for principalScopes for ServicePrincipal Resource Scope
 
 ```
 
-### Directory Role Resource Scope 
+### Directory role resource scope 
 
 ```json
 {
@@ -160,7 +160,7 @@ Here are various options for principalScopes for DirectoryRole Resource Scope:
 
 ```
 
-### All Directory Roles Resource Scope 
+### All Directory roles resource scope 
 
 ```json
 {

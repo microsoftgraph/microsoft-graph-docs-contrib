@@ -3,7 +3,7 @@ title: "accessReviewInactiveUsersQueryScope resource type"
 description: "A type of accessReviewQueryScope which allows for selection of only inactive users to be in the scope of an access review."
 author: "isabelleatmsft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

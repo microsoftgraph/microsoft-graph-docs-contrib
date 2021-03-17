@@ -1,6 +1,6 @@
 ---
 title: "servicePrincipalIdentity resource type"
-description: "Models a service principal identity"
+description: "Models a service principal identity."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Models a service principal identity
+Models a service principal identity.
 
 Inherits from [identity](../resources/identity.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appId|String|app ID of the service principal|
-|displayName|String|Inherited from [identity](../resources/identity.md)|
-|id|String|Inherited from [identity](../resources/identity.md)|
+|appId|String| The application identifier of the service principal. |
+|displayName|String| The display name of the service principal identity. Inherited from [identity](../resources/identity.md). |
+|id|String| The identifier of the service principal identity. Inherited from [identity](../resources/identity.md). |
 
 ## Relationships
 None.
@@ -42,4 +42,3 @@ The following is a JSON representation of the resource.
   "appId": "String"
 }
 ```
-
