@@ -33,52 +33,20 @@ One of the following permissions is required to call this API. To learn more, in
 
 ### Request
 
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-site" } -->
-
-```msgraph-interactive
+<!-- { "blockType": "request", "name": "get-siteSettings" } -->
 GET /sites/{site-id}/settings
-```
-# [C#](#tab/csharp) //Hwo does this get auto generated?
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-site-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-site-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-site-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-site-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.siteSettings", "truncated": true } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE",
-  "owner": {
-    "user": {  
-      "displayName": "Daron Spektor",
-      "id": "5280E7FE-DC7A-4486-9490-E790D81DFEB3"
-    }
-  },
-  "displayName": "OneDrive Team Site",
-  "name": "1drvteam",
-  "createdDateTime": "2017-05-09T20:56:00Z",
-  "lastModifiedDateTime": "2017-05-09T20:56:01Z",
-  "webUrl": "https://contoso.sharepoint.com/teams/1drvteam"
+  "languageTag": "en-US",
+  "timeZone": "(UTC-08:00) Pacific Time (US and Canada)"
 }
 ```
 
@@ -93,5 +61,3 @@ Content-type: application/json
   ]
 }
 -->
-
-
