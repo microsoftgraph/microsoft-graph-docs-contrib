@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "43F5978B-1BAD-423D-A71A-EFB8CB269A40",
+          "ApiChange": "Resource",
+          "ChangedApiName": "siteSettings,site",
+          "ChangeType": "Addition",
+          "Description": "Added the [siteSettings](https://docs.microsoft.com/en-us/graph/api/siteSettings-get?view=graph-rest-beta) method to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "siteSettings,site"
+        }
+      ],
+      "Id": "43F5978B-1BAD-423D-A71A-EFB8CB269A40",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "202-03-17T00:00:00",
+      "WorkloadArea": "Site",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d0ae3ac8-8d01-4235-b584-66a251ba1605",
           "ApiChange": "Resource",
           "ChangedApiName": "revokeGrants,permission",
