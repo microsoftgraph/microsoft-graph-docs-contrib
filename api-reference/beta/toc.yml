@@ -10139,6 +10139,8 @@ items:
             href: resources/builtinidentityprovider.md
           - name: Social identity provider
             href: resources/socialidentityprovider.md
+          - name: Apple identity provider
+            href: resources/appleidentityprovider.md
           - name: OpenID Connect identity provider
             href: resources/openidconnectidentityprovider.md
           - name: List
