@@ -52,9 +52,11 @@ PATCH /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{co
 
 ## Request body
 
-In the request body, supply a JSON representation of the [columnDefinition][] resource to update.  
+In the request body, supply a JSON representation of those properties of a [columnDefinition][] resource to update. For best performance, don't include existing values that haven't changed.
 
->**Note:** Only the **required** and **hidden** properties can be updated for a columnDefinition in a contentType resource.
+For columns in **site** or **list**, you can update any property of **columnDefinition** other than the **id** property.
+
+For columns in **contentType**, you can update only the **required** or **hidden** property.
 
 ## Response
 
