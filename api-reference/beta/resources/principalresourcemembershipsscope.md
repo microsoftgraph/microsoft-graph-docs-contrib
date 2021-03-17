@@ -1,6 +1,6 @@
 ---
 title: "principalResourceMembershipsScope resource type"
-description: "**TODO: Add Description**"
+description: "Allows for the selection scopes to review access of the selected principals to the selected resources."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
@@ -35,27 +35,27 @@ The following section describe the supported principalResourceMembershipScopes b
 
 ```json
 {
-    "odata.type": "#microsoft.graph.principalResourceMembershipsScope",
-    "principalScopes": [
-        {
-            "odata.type": "#microsoft.graph.accessReviewQueryScope",
-            "query": "/users",
-            "queryType": "MicrosoftGraph"
-        }
-    ],
-    "resourceScopes": [
-        {
-            "odata.type": "#microsoft.graph.accessReviewQueryScope",
-            "query": "/servicePrincipals/7a06f670-2d24-4805-836c-1f4a4d47d567",
-            "queryType": "MicrosoftGraph"
-        }
-    ]
+  "odata.type": "#microsoft.graph.principalResourceMembershipsScope",
+  "principalScopes": [
+    {
+      "odata.type": "#microsoft.graph.accessReviewQueryScope",
+      "query": "/users",
+      "queryType": "MicrosoftGraph"
+    }
+  ],
+  "resourceScopes": [
+    {
+      "odata.type": "#microsoft.graph.accessReviewQueryScope",
+      "query": "/servicePrincipals/7a06f670-2d24-4805-836c-1f4a4d47d567",
+      "queryType": "MicrosoftGraph"
+    }
+  ]
 }
 ```
 
 The following are options for principalScopes: 
 
-###### All users
+#### All users
 
 ```json
 "principalScopes": [
@@ -68,7 +68,7 @@ The following are options for principalScopes:
 
 ```
 
-###### Guest users
+#### Guest users
 
 ```json
 "principalScopes": [
@@ -103,9 +103,9 @@ The following are options for principalScopes:
 }
 ```
 
-Here are various options for principalScopes for DirectoryRole Resource Scope: 
+The following are options for principalScopes:
 
-###### All users
+#### All users
 
 ```json
 "principalScopes": [
@@ -118,7 +118,7 @@ Here are various options for principalScopes for DirectoryRole Resource Scope:
 
 ```
 
-###### All inactive users
+#### All inactive users
 
 ```json
 "principalScopes": [
@@ -132,7 +132,7 @@ Here are various options for principalScopes for DirectoryRole Resource Scope:
 
 ```
 
-###### Guest users
+#### Guest users
 
 ```json
 "principalScopes": [
@@ -146,7 +146,7 @@ Here are various options for principalScopes for DirectoryRole Resource Scope:
 ```
 
 
-###### Guest inactive users
+#### Guest inactive users
 
 ```json
 "principalScopes": [
@@ -184,7 +184,7 @@ Here are various options for principalScopes for DirectoryRole Resource Scope:
 
 Here are various options for principalScopes for All Directory Role Resource Scope: 
 
-###### All users
+#### All users
 
 ```json
 "principalScopes": [
@@ -197,7 +197,7 @@ Here are various options for principalScopes for All Directory Role Resource Sco
 
 ```
 
-###### All inactive users
+#### All inactive users
 
 ```json
 "principalScopes": [
@@ -211,7 +211,7 @@ Here are various options for principalScopes for All Directory Role Resource Sco
 
 ```
 
-###### Guest users
+#### Guest users
 
 ```json
 "principalScopes": [
@@ -225,7 +225,7 @@ Here are various options for principalScopes for All Directory Role Resource Sco
 ```
 
 
-###### Guest inactive users
+#### Guest inactive users
 
 ```json
 "principalScopes": [

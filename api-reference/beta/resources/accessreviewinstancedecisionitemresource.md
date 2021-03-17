@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstanceDecisionItemResource resource type"
-description: "Every decision item in an access review represents a principal's access to a resource. accessReviewInstanceDecisionItemResource represents the resource."
+description: "Every decision item in an access review represents a principal's access to a resource. accessReviewInstanceDecisionItemResource represents the resource associated with the decision item."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Every decision item in an access review represents a principal's access to a resource. accessReviewInstanceDecisionItemResource represents the resource.
+Every decision item in an access review represents a principal's access to a resource. accessReviewInstanceDecisionItemResource represents the resource associated with the decision item.
 
 ## Properties
 |Property|Type|Description|
