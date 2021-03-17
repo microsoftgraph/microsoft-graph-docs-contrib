@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "Create contentType"
-description: "Create a Content type in a site."
+description: "Create a Content type for a site."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [contentType][] in a [site][].
+Create a new [contentType][] for a [site][].
 
 ## Permissions
 

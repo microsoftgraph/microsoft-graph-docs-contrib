@@ -16,12 +16,12 @@ Namespace: microsoft.graph
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List content type columnDefinitions](../api/contenttype-list-columns.md)|[columnDefinition](../resources/columndefinition.md) collection|Get a list of the [columnDefinition](../resources/columndefinition.md) objects and their properties in a [content type](../resources/contenttype.md).|
-|[List columnDefinitions in a site](../api/site-list-columns.md)|[columnDefinition](../resources/columndefinition.md) collection|Get a list of the [columnDefinition](../resources/columndefinition.md) objects and their properties in a [site](../resources/site.md).|
-|[List columnDefinitions in a list](../api/list-list-columns.md)|[columnDefinition](../resources/columndefinition.md) collection|Get a list of the [columnDefinition](../resources/columndefinition.md) objects and their properties in a [list](../resources/list.md).|
-|[Create content type columnDefinition](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Create a new [columnDefinition](../resources/columndefinition.md) object in a [content type](../resources/contenttype.md).|
-|[Create site columnDefinition](../api/site-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Create a new [columnDefinition](../resources/columndefinition.md) object in a [site](../resources/site.md).|
-|[Create list columnDefinition](../api/list-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Create a new [columnDefinition](../resources/columndefinition.md) object in a [list](../resources/list.md).|
+|[List columns in a content type](../api/contenttype-list-columns.md)|[columnDefinition](../resources/columndefinition.md) collection|Get a list of the [columnDefinition](../resources/columndefinition.md) objects and their properties in a [content type](../resources/contenttype.md).|
+|[List columns in a site](../api/site-list-columns.md)|[columnDefinition](../resources/columndefinition.md) collection|Get a list of the [columnDefinition](../resources/columndefinition.md) objects and their properties in a [site](../resources/site.md).|
+|[List columns in a list](../api/list-list-columns.md)|[columnDefinition](../resources/columndefinition.md) collection|Get a list of the [columnDefinition](../resources/columndefinition.md) objects and their properties in a [list](../resources/list.md).|
+|[Create columnDefinition for a content type](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Create a new [columnDefinition](../resources/columndefinition.md) object in a [content type](../resources/contenttype.md).|
+|[Create columnDefinition for a site](../api/site-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Create a new [columnDefinition](../resources/columndefinition.md) object in a [site](../resources/site.md).|
+|[Create columnDefinition for a list](../api/list-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Create a new [columnDefinition](../resources/columndefinition.md) object in a [list](../resources/list.md).|
 |[Get columnDefinition](../api/columndefinition-get.md)|[columnDefinition](../resources/columndefinition.md)|Read the properties and relationships of a [columnDefinition](../resources/columndefinition.md) object.|
 |[Update columnDefinition](../api/columndefinition-update.md)|[columnDefinition](../resources/columndefinition.md)|Update the properties of a [columnDefinition](../resources/columndefinition.md) object.|
 |[Delete columnDefinition](../api/columndefinition-delete.md)|None|Deletes a [columnDefinition](../resources/columndefinition.md) object.|

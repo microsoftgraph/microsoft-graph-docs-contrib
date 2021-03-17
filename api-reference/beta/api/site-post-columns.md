@@ -8,11 +8,11 @@ doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
 
-# Create columnDefinition in a site
+# Create columnDefinition for a site
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Create a [column][columnDefinition] in a [site][site].
+Create a column by specifing a [columnDefinition][columnDefinition] for a [site][site].
 
 ## Permissions
 

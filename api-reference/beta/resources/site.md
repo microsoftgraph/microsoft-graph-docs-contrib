@@ -37,7 +37,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Delete permission][]         | DELETE /sites/{site-id}/permissions/{permission-id}
 | [Update permission][]         | PATCH /sites/{site-id}/permissions/{permission-id}
 |[List contentTypes][]          | GET /sites/{site-id}/contentTypes
-|[Create contentTypes][]        | POST /sites/{site-id}/contentTypes
+|[Create contentType][]        | POST /sites/{site-id}/contentTypes
 |[List columns][]               | GET /sites/{site-id}/columns
 |[Create column][]              | POST /sites/{site-id}/columns
 

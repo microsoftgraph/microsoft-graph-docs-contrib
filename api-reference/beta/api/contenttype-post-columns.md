@@ -8,11 +8,11 @@ doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
 
-# Create columnDefinition in a content type
+# Create columnDefinition for a content type
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Adds existing site or list [column][columnDefinition] to a [content type][contentType].
+Add a column, by specifying a [columnDefinition][columnDefinition], to a [content type][contentType] in a site or list.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /sites/{site-id}/contentTypes/{contentType-id}/columns
-POST /sites/{site-id}/lists/{list-id}//contentTypes/{contentType-id}/columns
+POST /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns
 ```
 
 ## Request body

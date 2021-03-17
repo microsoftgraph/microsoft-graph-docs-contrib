@@ -7,11 +7,11 @@ doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
 
-# List columnDefinitions in a content type
+# List columns in a content type
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the collection of  [columns][columnDefinition] in a [content type][contentType].
+Get the collection of columns, represented by [columnDefinition][columnDefinition] resources, in a [content type][contentType].
 
   
 

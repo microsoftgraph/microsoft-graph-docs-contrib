@@ -20,7 +20,7 @@ Content types allow you to define a set of columns that must be present on every
 |:---|:---|:---|
 |[List contentTypes in a site](../api/site-list-contenttypes.md)|[contentType](../resources/contenttype.md) collection|Get a list of the [contentType](../resources/contenttype.md) objects and their properties in a [site](../resources/site.md).|
 |[List contentTypes in a list](../api/list-list-contenttypes.md)|[contentType](../resources/contenttype.md) collection|Get a list of the [contentType](../resources/contenttype.md) objects and their properties in a [list](../resources/list.md).|
-|[Create a site contentType](../api/site-post-contenttypes.md)|[contentType](../resources/contenttype.md)|Create a new [contentType](../resources/contenttype.md) object in a [site](../resources/site.md).|
+|[Create contentType for a site](../api/site-post-contenttypes.md)|[contentType](../resources/contenttype.md)|Create a new [contentType](../resources/contenttype.md) object in a [site](../resources/site.md).|
 |[Get contentType](../api/contenttype-get.md)|[contentType](../resources/contenttype.md)|Read the properties and relationships of a [contentType](../resources/contenttype.md) object.|
 |[Update contentType](../api/contenttype-update.md)|[contentType](../resources/contenttype.md)|Update the properties of a [contentType](../resources/contenttype.md) object.|
 |[Delete contentType](../api/contenttype-delete.md)|None|Deletes a [contentType](../resources/contenttype.md) object.|

@@ -11,7 +11,7 @@ ms.prod: "sites-and-lists"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the collection of [content types][contentType] in a [list][]
+Get the collection of [contentType][contentType] resources in a [list][].
 
 ## Permissions
 
