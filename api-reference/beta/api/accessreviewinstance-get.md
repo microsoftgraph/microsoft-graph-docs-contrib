@@ -90,19 +90,19 @@ Content-type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
     "id": "6125050e-050e-6125-0e05-25610e052561",
-    "accessReviewId": "String",
+    "accessReviewId": "4321050e-050e-6125-0e05-43210e052561",
     "reviewedBy": {
       "@odata.type": "microsoft.graph.userIdentity"
     },
-    "reviewedDateTime": "String (timestamp)",
-    "decision": "String",
-    "justification": "String",
+    "reviewedDateTime": "0001-01-01T00:00:00Z",
+    "decision": "Approve",
+    "justification": "User is still on my team",
     "appliedBy": {
       "@odata.type": "microsoft.graph.userIdentity"
     },
-    "appliedDateTime": "String (timestamp)",
-    "applyResult": "String",
-    "recommendation": "String",
+    "appliedDateTime": "0001-01-01T00:00:00Z",
+    "applyResult": "New",
+    "recommendation": "Approve",
     "target": {
       "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemTarget"
     },
