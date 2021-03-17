@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstance: batchRecordDecisions"
-description: "A reviewer can review all  accessReviewInstanceDecisionItems in batches by principalId, resourceId, or neither."
+description: "Review all accessReviewInstanceDecisionItems in batches."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A reviewer can review all  [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)s in batches by `principalId`, `resourceId`, or neither.
+A reviewer can review all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects in batches by using `principalId`, `resourceId`, or neither.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
