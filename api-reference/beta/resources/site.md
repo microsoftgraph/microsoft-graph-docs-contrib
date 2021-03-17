@@ -26,7 +26,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Get analytics][]              | GET /sites/{site-id}/analytics
 | [Get activities by interval][] | GET /sites/{site-id}/getActivitiesByInterval
 | [List pages][]                 | GET /sites/{site-id}/pages
-| [List site setting][]          | GET /sites/{site-id}/settings
+| [Get site setting][]           | GET /sites/{site-id}/settings
 | [List root sites][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
 | [Search for sites][]           | GET /sites?search={query}
 | [Follow site][]                | POST /users/{user-id}/followedSites/add
@@ -40,7 +40,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Get analytics]: ../api/itemanalytics-get.md
 [Get activities by interval]: ../api/itemactivity-getbyinterval.md
 [List pages]: ../api/sitepage-list.md
-[List site setting]: ../api/siteSettings-get.md
+[Get site setting]: ../api/siteSettings-get.md
 [List root sites]: ../api/site-list.md
 [Search for sites]: ../api/site-search.md
 [Follow site]: ../api/site-follow.md
@@ -135,14 +135,14 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
 
   /* relationships */
   "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
+  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
-  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
-  "siteSettings": [ { "@odata.type": "microsoft.graph.siteSettings" }],
+  "settings": [ { "@odata.type": "microsoft.graph.siteSettings" }],
 
   /* inherited from baseItem */
   "name": "string",
