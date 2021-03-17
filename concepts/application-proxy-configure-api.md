@@ -377,8 +377,10 @@ Content-type: application/json
   "resourceId": "a8cac399-cde5-4516-a674-819503c61313"
 }
 ```
+## Step 6: Test access to the application
+Test the application by visiting the **External URL** configured for the app on your browser and then sign in with your test user. You should be able to log into the app and access the application.
 
-## Step 6: Clean up resources
+## Step 7: Clean up resources
 
 The resources that you created in this tutorial are not intended to be used in a production environment. In this step, you remove the resources that you created.
 
