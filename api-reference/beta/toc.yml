@@ -12629,10 +12629,12 @@ items:
         items:
         - name: List item
           href: resources/listitem.md
-        - name: Get item
-          href: api/listitem-get.md
+        - name: Get items
+          href: api/listitem-list.md
         - name: Create item
           href: api/listitem-create.md
+        - name: Get item
+          href: api/listitem-get.md
         - name: Update item
           href: api/listitem-update.md
         - name: Delete item
