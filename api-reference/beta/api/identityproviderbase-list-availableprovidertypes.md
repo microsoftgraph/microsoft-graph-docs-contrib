@@ -91,7 +91,7 @@ Content-Type: application/json
     "value": [
         "MicrosoftAccount",
         "EmailOTP",
-        "AADSignup",
+        "Facebook",
         "Google"
     ]
 }
@@ -133,17 +133,19 @@ Content-Type: application/json
 {
  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(Edm.String)",
   "value": [
-      "Amazon",
-      "OpenIDConnect",
-      "Facebook",
-      "GitHub",
-      "Google",
-      "LinkedIn",
-      "Microsoft",
-      "QQ",
-      "Twitter",
-      "WeChat",
-      "Weibo"
+        "Microsoft",
+        "Google",
+        "Facebook",
+        "Amazon",
+        "LinkedIn",
+        "Weibo",
+        "QQ",
+        "WeChat",
+        "Twitter",
+        "GitHub",
+        "Apple",
+        "AppleManaged",
+        "OpenIdConnect"
   ]
 }
 ```

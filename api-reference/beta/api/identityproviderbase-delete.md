@@ -12,7 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [identityProvider](../resources/identityprovider.md).
+Delete a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD.
+
+In Azure AD B2C, delete a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or an [appleIdentityProvider](../resources/appleidentityprovider.md) object.
 
 ## Permissions
 
@@ -33,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /identityProviders/{id}
+DELETE /identity/identityProviders/{id}
 ```
 
 ## Request headers
@@ -65,7 +67,7 @@ The following is an example of the request.
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/identityProviders/{id}
+DELETE https://graph.microsoft.com/beta/identity/identityProviders/{id}
 ```
 
 ### Response
