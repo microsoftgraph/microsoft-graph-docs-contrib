@@ -35,7 +35,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-
 POST /sites/{site-id}/lists/{list-id}/contentTypes/addCopy
 ```
 
@@ -104,7 +103,6 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 204 No Content
-
 ```
 
 [site]: ../resources/site.md
