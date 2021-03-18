@@ -11,6 +11,16 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### recipientScopeType values
+
+|Member|
+|:---|
+|none|
+|internal|
+|external|
+|externalPartner|
+|externalNonPartner|
+
 ### activityType values
 
 |Member|
@@ -341,10 +351,10 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-| NotStarted
-| Running
-| Completed
-| Failed
+|NotStarted
+|Running
+|Completed
+|Failed
 
 
 ### onenotePatchActionType values

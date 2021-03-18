@@ -11,9 +11,16 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### recipientScopeType values
+|Member|
+|:---|
+|none|
+|internal|
+|external|
+|externalPartner|
+|externalNonPartner|
+
 ### appliedConditionalAccessPolicyResult values 
-
-
 
 |Member|
 |:---|
@@ -30,8 +37,6 @@ Namespace: microsoft.graph
 
 ### authenticationMethodFeature values 
 
-
-
 |Member|
 |:---|
 |ssprRegistered|
@@ -41,8 +46,6 @@ Namespace: microsoft.graph
 |mfaCapable|
 
 ### authMethodsType values 
-
-
 
 |Member|
 |:---|
@@ -62,8 +65,6 @@ Namespace: microsoft.graph
 
 ### azureADLicenseType values 
 
-
-
 |Member|
 |:---|
 |none|
@@ -74,8 +75,6 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### conditionalAccessConditions values 
-
-
 
 |Member|
 |:---|
@@ -93,8 +92,6 @@ Namespace: microsoft.graph
 
 ### conditionalAccessStatus values 
 
-
-
 |Member|
 |:---|
 |success|
@@ -104,8 +101,6 @@ Namespace: microsoft.graph
 
 ### featureType values 
 
-
-
 |Member|
 |:---|
 |registration|
@@ -114,8 +109,6 @@ Namespace: microsoft.graph
 
 ### groupType values 
 
-
-
 |Member|
 |:---|
 |unifiedGroups|
@@ -123,8 +116,6 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### includedUserRoles values 
-
-
 
 |Member|
 |:---|
@@ -136,8 +127,6 @@ Namespace: microsoft.graph
 
 ### includedUserTypes values 
 
-
-
 |Member|
 |:---|
 |all|
@@ -146,8 +135,6 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### initiatorType values 
-
-
 
 |Member|
 |:---|
@@ -158,8 +145,6 @@ Namespace: microsoft.graph
 
 ### migrationStatus values 
 
-
-
 |Member|
 |:---|
 |ready|
@@ -168,8 +153,6 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### networkType values 
-
-
 
 |Member|
 |:---|
@@ -181,8 +164,6 @@ Namespace: microsoft.graph
 
 ### operationResult values 
 
-
-
 |Member|
 |:---|
 |success|
@@ -192,8 +173,6 @@ Namespace: microsoft.graph
 
 ### provisioningResult values 
 
-
-
 |Member|
 |:---|
 |success|
@@ -202,8 +181,6 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### provisioningStepType values 
-
-
 
 |Member|
 |:---|
@@ -216,8 +193,6 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### registrationAuthMethod values 
-
-
 
 |Member|
 |:---|
@@ -234,8 +209,6 @@ Namespace: microsoft.graph
 
 ### registrationStatusType values 
 
-
-
 |Member|
 |:---|
 |registered|
@@ -246,8 +219,6 @@ Namespace: microsoft.graph
 
 ### requirementProvider values 
 
-
-
 |Member|
 |:---|
 |MFA|
@@ -256,11 +227,13 @@ Namespace: microsoft.graph
 
 ### riskDetail values 
 
-
-
 |Member|
 |:---|
 |none|
+|internal|
+|external|
+|externalPartner|
+|externalNonPartner|
 |adminGeneratedTemporaryPassword|
 |userPerformedSecuredPasswordChange|
 |userPerformedSecuredPasswordReset|
@@ -274,8 +247,6 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### riskEventType values 
-
-
 
 |Member|
 |:---|
@@ -297,8 +268,6 @@ Namespace: microsoft.graph
 
 ### riskLevel values 
 
-
-
 |Member|
 |:---|
 |low|
@@ -309,8 +278,6 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### riskState values 
-
-
 
 |Member|
 |:---|
@@ -324,8 +291,6 @@ Namespace: microsoft.graph
 
 ### tokenIssuerType values 
 
-
-
 |Member|
 |:---|
 |AzureAD|
@@ -333,8 +298,6 @@ Namespace: microsoft.graph
 |UnknownFutureValue|
 
 ### usageAuthMethod values 
-
-
 
 |Member|
 |:---|
@@ -931,10 +894,10 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-| NotStarted
-| Running
-| Completed
-| Failed
+|NotStarted
+|Running
+|Completed
+|Failed
 
 
 ### onenotePatchActionType values
