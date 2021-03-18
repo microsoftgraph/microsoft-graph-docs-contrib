@@ -25,7 +25,7 @@ The easiest way to create a new Teams app is to use the [Microsoft Teams Toolkit
 You can use the Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm package. To use the Toolkit, you will also need the [Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest).
 
 ### Use via mgt-loader
-To use the Toolkit and the Teams SDK via the loaders, add the following references inside of the `<head>` of the `public/index.html` file:
+To use the Toolkit and the Teams SDK via the loaders, add the following references inside the `<head>` of the `public/index.html` file:
 
 ```html
 <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
@@ -47,7 +47,7 @@ You can choose to initialize the provider in either your HTML or your JavaScript
 
 ### Initialize in HTML
 
-In `public/index.html`, add the Teams provider, as shown below, into the `<body>`.
+In `public/index.html`, add the Teams provider into the `<body>`, as shown.
 
 ```html
 <mgt-teams-provider
@@ -56,7 +56,7 @@ In `public/index.html`, add the Teams provider, as shown below, into the `<body>
 ></mgt-teams-provider>
 ```
 
-Replace `<YOUR_CLIENT_ID>` with the client ID for your application. . 
+Replace `<YOUR_CLIENT_ID>` with the client ID for your application. 
 
 ### Initialize in JavaScript
 
