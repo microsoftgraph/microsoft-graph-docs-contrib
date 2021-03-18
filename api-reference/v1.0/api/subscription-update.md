@@ -125,7 +125,7 @@ Content-type: application/json
 Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.subscription"
 } -->
 
