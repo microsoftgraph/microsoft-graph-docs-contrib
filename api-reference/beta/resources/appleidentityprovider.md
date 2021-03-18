@@ -35,6 +35,8 @@ This type will inherit from [identityProviderBase](../identityproviderbase.md).
 |serviceId|String|The Apple Developer identifier. Required.|
 |keyId|String|The Apple Key identifier. Required.|
 |certificateData|String|The certificate data which is a long string of text from the certificate, can be null.|
+|id|String|The identifier of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md). Read-only.|
+|displayName|String|The display name of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
 
 ### Where to get the client ID and secret
 

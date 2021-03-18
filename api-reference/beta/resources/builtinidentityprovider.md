@@ -29,8 +29,8 @@ For Azure AD B2B scenarios in an Azure AD tenant, the built in identity provider
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|id|String|The identifier of the identity provider.|
-|displayName|String|The display name of the identity provider.|
+|id|String|The identifier of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md). Read-only.|
+|displayName|String|The display name of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
 |identityProviderType|String|The identity provider type. For a B2B scenario, possible values: `AADSignup`, `MicrosoftAccount`, `EmailOTP`. Required.|
 
 ## JSON representation

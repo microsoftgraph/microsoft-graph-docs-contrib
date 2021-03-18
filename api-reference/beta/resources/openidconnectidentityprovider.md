@@ -31,11 +31,11 @@ Configuring an OpenID Connect provider in B2C tenant enables users to sign up an
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|clientId|String|The client ID for the application obtained when registering the application with the identity provider. Inherited from [identityProvider](../resources/identityprovider.md). Required.|
-|clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. The clientSecret has a dependency on **responseType**. <ul><li>When **responseType** is `code`, a secret is required for the auth code exchange.</li><li>When **responseType** is `id_token` the secret is not required because there is no code exchange—the id_token is returned directly from the authorization response.</li></ul> This is write-only. A read operation returns "\*\*\*\*". Inherited from [identityProvider](../resources/identityprovider.md).|
-|id|String|The identifier of the identity provider. Read-only. Required.|
-|displayName|String|The display name of the identity provider. Read-only. Required.|
-|identityProviderType|String|The identity provider type. It must be `OpenIDConnect`. Read-only. Required.|
+|clientId|String|The client ID for the application obtained when registering the application with the identity provider. Required.|
+|clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. The clientSecret has a dependency on **responseType**. <ul><li>When **responseType** is `code`, a secret is required for the auth code exchange.</li><li>When **responseType** is `id_token` the secret is not required because there is no code exchange—the id_token is returned directly from the authorization response.</li></ul> This is write-only. A read operation returns "\*\*\*\*".|
+|id|String|The identifier of the identity provider.Required. Inherited from [identityProviderBase](../resources/identityproviderbase.md). Read-only.|
+|displayName|String|The display name of the identity provider.|
+|identityProviderType|String|The identity provider type. It must be `OpenIDConnect`. Required.|
 |claimsMapping|[claimsMapping](claimsmapping.md)|After the OIDC provider sends an ID token back to Azure AD, Azure AD needs to be able to map the claims from the received token to the claims that Azure AD recognizes and uses. This complex type captures that mapping. Required.|
 |domainHint|String|The domain hint can be used to skip directly to the sign in page of the specified identity provider, instead of having the user make a selection among the list of available identity providers.|
 |metadataUrl|String|The URL for the metadata document of the OpenID Connect identity provider. Every OpenID Connect identity provider describes a metadata document that contains most of the information required to perform sign-in. This includes information such as the URLs to use and the location of the service's public signing keys. The OpenID Connect metadata document is always located at an endpoint that ends in `.well-known/openid-configuration`. Provide the metadata URL for the OpenID Connect identity provider you add. Read-only. Required.|
