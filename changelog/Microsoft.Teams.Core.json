@@ -2,7 +2,7 @@
   "changelog": [
     {
       "ChangeList": [
-	    {
+        {
           "Id": "e38e16e3-d3b6-4c66-a9aa-4bae0c29248z",
           "ApiChange": "Enum type",
           "ChangedApiName": "teamworkActivityTopicSource",
@@ -65,8 +65,8 @@
       "CreatedDateTime": "2021-03-18T23:09:05.727Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
-    },	
-	{
+    },
+    {
       "ChangeList": [
         {
           "Id": "df2ac698-353d-11eb-9836-6aeb5ee7dda6",
