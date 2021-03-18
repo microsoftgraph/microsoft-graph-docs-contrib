@@ -17,7 +17,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 
 | **Resource** | **Supported resource paths** | **Resource data can be included in notifications**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Cloud printing [printer][] | Changes when a print job is ready to be downloaded (JobFetchable event):<br>`print/printers/{id}/jobs` | No |
+| Cloud printing [printer][] | Changes when a print job is ready to be downloaded (JobFetchable event):<br>`/print/printers/{id}/jobs` | No |
 | Cloud printing [printTaskDefinition][] | Changes when there is a valid job in the queue (JobStarted event) :<br>`/print/printtaskdefinition/{id}/tasks` | No |
 | Outlook [message][] | Changes to all messages in a user's mailbox: <br>`/users/{id}/messages`<br>Changes to messages in a user's Inbox:<br>`/users/{id}/mailFolders('inbox')/messages` | No |
 | Outlook [event][] | Changes to all events in a user's mailbox:<br>`/users/{id}/events` | No |
