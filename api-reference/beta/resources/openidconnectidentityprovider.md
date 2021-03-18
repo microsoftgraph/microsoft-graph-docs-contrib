@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Represents OpenID Connect identity providers in an Azure Active Directory B2C tenant.
 
-Configuring an OpenID Connect provider in B2C tenant enables users to sign up and sign in using their custom identity provider in an application.
+Configuring an OpenID Connect provider in a B2C tenant enables users to sign up and sign in using their custom identity provider in an application.
 
 This type will inherit from [identityProviderBase](../identityproviderbase.md).
 
@@ -38,7 +38,7 @@ This type will inherit from [identityProviderBase](../identityproviderbase.md).
 |id|String|The identifier of the identity provider.Required. Inherited from [identityProviderBase](../resources/identityproviderbase.md). Read-only.|
 |displayName|String|The display name of the identity provider. |
 |claimsMapping|[claimsMapping](claimsmapping.md)|After the OIDC provider sends an ID token back to Azure AD, Azure AD needs to be able to map the claims from the received token to the claims that Azure AD recognizes and uses. This complex type captures that mapping. Required.|
-|domainHint|String|The domain hint can be used to skip directly to the sign in page of the specified identity provider, instead of having the user make a selection among the list of available identity providers.|
+|domainHint|String|The domain hint can be used to skip directly to the sign-in page of the specified identity provider, instead of having the user make a selection among the list of available identity providers.|
 |metadataUrl|String|The URL for the metadata document of the OpenID Connect identity provider. Every OpenID Connect identity provider describes a metadata document that contains most of the information required to perform sign-in. This includes information such as the URLs to use and the location of the service's public signing keys. The OpenID Connect metadata document is always located at an endpoint that ends in `.well-known/openid-configuration`. Provide the metadata URL for the OpenID Connect identity provider you add. Read-only. Required.|
 |responseMode|String|The response mode defines the method used to send data back from the custom identity provider to Azure AD B2C. Possible values: `form_post`, `query`. Required.|
 |responseType|String|The response type describes the type of information sent back in the initial call to the authorization_endpoint of the custom identity provider. Possible values: `code` , `id_token` , `token`.  Required.|
