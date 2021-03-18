@@ -1,17 +1,17 @@
 ---
 author: swapnil1993
-title: "List contentTypes"
-description: "List content types in a site or a list"
+title: "List contentTypes in a site"
+description: "List content types in a site"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
 
-# List contentTypes
+# List contentTypes in a site
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the collection of [content types][contentType] in a [site][] or a [list][]
+Get the collection of [contentType][contentType] resources in a [site][].
 
 ## Permissions
 
@@ -30,7 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ```http
 GET /sites/{site-id}/contentTypes
-GET /sites/{site-id}/lists/{list-id}/contentTypes
 ```
 
 ## Optional query parameters
@@ -123,4 +122,3 @@ Content-type: application/json
 
 [contentType]: ../resources/contentType.md
 [site]: ../resources/site.md
-[list]: ../resources/list.md
