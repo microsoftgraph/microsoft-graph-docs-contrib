@@ -38,7 +38,7 @@ This type will inherit from [identityProviderBase](../identityproviderbase.md).
 |id|String|The identifier of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md). Read-only.|
 |displayName|String|The display name of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
 
-### Where to get the client ID and secret
+You can find the developerId, serviceId, keyId and the certificateData from the Apple developer portal. For nore details you can follow the guide to [create an Apple ID application](/azure/active-directory-b2c/identity-provider-apple-id?pivots=b2c-user-flow#create-an-apple-id-application)
 
 ## JSON representation
 
