@@ -131,7 +131,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
- "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(Edm.String)",
+ "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(Edm.String)",
   "value": [
         "Microsoft",
         "Google",
