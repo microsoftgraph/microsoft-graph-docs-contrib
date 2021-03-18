@@ -189,8 +189,7 @@ Content-length: 252
   "expirationDateTime": "2016-11-20T18:23:45.9356913Z",
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
   "latestSupportedTlsVersion": "v1_2",
-  "notificationContentType": "application/json",
-  "notificationQueryOptions": "$filter=isFetchable eq true or status eq completed"
+  "notificationContentType": "application/json"
 }
 ```
 

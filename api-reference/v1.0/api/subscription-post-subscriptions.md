@@ -38,6 +38,8 @@ Depending on the resource and the permission type (delegated or application) req
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+|[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
+|[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
@@ -140,8 +142,10 @@ The following are valid values for the resource property of the subscription:
 |[Groups](../resources/group.md)|`groups`|
 |[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Mail](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
-|[Users](../resources/user.md)|`users`|
+|[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
+|[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Security alert](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
+|[Users](../resources/user.md)|`users`|
 
 > **Note:** Any path starting with `me` can also be used with `users/{id}` instead of `me` to target a specific user instead of the current user.
 
@@ -170,8 +174,7 @@ Content-length: 252
   "expirationDateTime": "2016-11-20T18:23:45.9356913Z",
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
   "latestSupportedTlsVersion": "v1_2",
-  "notificationContentType": "application/json",
-  "notificationQueryOptions": "$filter=isFetchable eq true or status eq completed"
+  "notificationContentType": "application/json"
 }
 ```
 
