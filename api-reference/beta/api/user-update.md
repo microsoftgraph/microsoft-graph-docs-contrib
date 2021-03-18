@@ -57,7 +57,7 @@ In the request body, supply the values for relevant fields that should be update
 |city|String|The city in which the user is located.|
 | companyName | String | The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 characters. |
 | consentProvidedForMinor | [consentProvidedForMinor](../resources/user.md#consentprovidedforminor-values) | Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](../resources/user.md#legal-age-group-property-definitions) for further information. |
-|country|String|The country/region in which the user is located; for example, “US” or “UK”.|
+|country|String|The country/region in which the user is located; for example, `US` or `UK`.|
 |department|String|The name for the department in which the user works.|
 |displayName|String|The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|
 |employeeId|String|The employee identifier assigned to the user by the organization.|
