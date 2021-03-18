@@ -39,13 +39,6 @@ DELETE /policies/featureRolloutPolicies/{policyId}/appliesTo/{directoryObjectId}
 |:--------------|:--------------|
 | Authorization | Bearer {token}. Required |
 
-## Request parameters
-
-| Name          | Description   |
-|:--------------|:--------------|
-| policyId | The id of the target policy to remove the appliesTo. Required. |
-| directoryObjectId | The id of the directory object to remove. Required |
-
 ## Response
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
