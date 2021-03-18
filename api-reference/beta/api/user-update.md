@@ -55,7 +55,7 @@ In the request body, supply the values for relevant fields that should be update
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |businessPhones| String collection | The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property.|
 |city|String|The city in which the user is located.|
-| companyName | String | The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 chararcters. |
+| companyName | String | The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 characters. |
 | consentProvidedForMinor | [consentProvidedForMinor](../resources/user.md#consentprovidedforminor-values) | Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](../resources/user.md#legal-age-group-property-definitions) for further information. |
 |country|String|The country/region in which the user is located; for example, “US” or “UK”.|
 |department|String|The name for the department in which the user works.|
