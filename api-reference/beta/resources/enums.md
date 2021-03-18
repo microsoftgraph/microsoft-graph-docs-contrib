@@ -11,6 +11,7 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+
 ### attributeType values
 
 |Member|
@@ -207,6 +208,16 @@ Namespace: microsoft.graph
 |:---|
 |passthru|
 |aadPreAuthentication|
+
+### recipientScopeType values
+|Member|
+|:---|
+|none|
+|internal|
+|external|
+|externalPartner|
+|externalNonPartner|
+
 
 ### appliedConditionalAccessPolicyResult values 
 
@@ -418,6 +429,10 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |none|
+|internal|
+|external|
+|externalPartner|
+|externalNonPartner|
 |adminGeneratedTemporaryPassword|
 |userPerformedSecuredPasswordChange|
 |userPerformedSecuredPasswordReset|
@@ -1078,10 +1093,10 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-| NotStarted
-| Running
-| Completed
-| Failed
+|NotStarted
+|Running
+|Completed
+|Failed
 
 
 ### onenotePatchActionType values

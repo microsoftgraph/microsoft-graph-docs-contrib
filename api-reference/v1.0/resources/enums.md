@@ -11,6 +11,7 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+
 ### tone values
 
 |Member|
@@ -114,6 +115,17 @@ Namespace: microsoft.graph
 |None|
 |SecurityGroup|
 |All|
+
+### recipientScopeType values
+
+|Member|
+|:---|
+|none|
+|internal|
+|external|
+|externalPartner|
+|externalNonPartner|
+
 
 ### activityType values
 
@@ -445,10 +457,10 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-| NotStarted
-| Running
-| Completed
-| Failed
+|NotStarted
+|Running
+|Completed
+|Failed
 
 
 ### onenotePatchActionType values

@@ -1,7 +1,7 @@
 ---
 title: "broadcastMeetingSettings resource type"
 description: "Settings related to a live event"
-author: "frankpeng7"
+author: "jsandoval-msft"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
