@@ -37,13 +37,6 @@ DELETE /policies/featureRolloutPolicies/{policyId}/appliesTo/{directoryObjectId}
 |:--------------|:--------------|
 | Authorization | Bearer {token}. Required |
 
-## Request parameters
-
-| Name          | Description   |
-|:--------------|:--------------|
-| policyId | The id of the target policy to remove the appliesTo. Required. |
-| directoryObjectId | The id of the directory object to remove. Required |
-
 ## Request body
 
 In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) object.
