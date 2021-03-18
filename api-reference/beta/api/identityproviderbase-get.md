@@ -75,6 +75,8 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/identity/identityProviders/Amazon-OAUTH
 ```
 
+---
+
 #### Response
 
 The following is an example of the response.
@@ -115,6 +117,8 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/identity/identityProviders/MSASignup-OAUTH
 ```
 
+---
+
 #### Response
 
 The following is an example of the response.
@@ -151,6 +155,8 @@ The following is an example of the request.
 ``` http
 GET https://graph.microsoft.com/beta/identity/identityProviders/OIDC-V1-test-icm-4470de58-86c2-4a3f-a22c-63c9366cd000
 ```
+
+---
 
 #### Response
 
@@ -202,6 +208,8 @@ The following is an example of the request.
 ``` http
 GET https://graph.microsoft.com/beta/identity/identityProviders/Apple-Managed-OIDC
 ```
+
+---
 
 #### Response
 

@@ -69,6 +69,8 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/identity/identityProviders/availableProviderTypes
 ```
 
+---
+
 ### Response
 
 The following is an example of the response.
@@ -112,6 +114,8 @@ The following is an example of the request.
 ``` http
 GET https://graph.microsoft.com/beta/identity/identityProviders/availableProviderTypes
 ```
+
+---
 
 ### Response
 

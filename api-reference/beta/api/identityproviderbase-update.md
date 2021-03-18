@@ -113,6 +113,8 @@ Content-length: 41
 }
 ```
 
+---
+
 #### Response
 
 The following is an example of the response.
@@ -149,6 +151,8 @@ Content-length: 41
 }
 ```
 
+---
+
 #### Response
 
 The following is an example of the response.
@@ -184,6 +188,8 @@ Content-length: 41
   "displayName": "Apple"
 }
 ```
+
+---
 
 #### Response
 
