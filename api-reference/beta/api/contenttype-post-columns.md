@@ -12,7 +12,7 @@ ms.prod: "sites-and-lists"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Add a column, by specifying a [columnDefinition][columnDefinition], to a [content type][contentType] in a site or list.
+Add a column to a [content type][contentType] in a site or list by specifying a [columnDefinition][columnDefinition].
 
 ## Permissions
 

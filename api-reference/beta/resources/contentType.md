@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a _content type_ in SharePoint.
+Represents a content type in SharePoint.
 Content types allow you to define a set of columns that must be present on every [**listItem**][listItem] in a [**list**][list].
 
 ## Methods
@@ -24,14 +24,14 @@ Content types allow you to define a set of columns that must be present on every
 |[Get contentType](../api/contenttype-get.md)|[contentType](../resources/contenttype.md)|Read the properties and relationships of a [contentType](../resources/contenttype.md) object.|
 |[Update contentType](../api/contenttype-update.md)|[contentType](../resources/contenttype.md)|Update the properties of a [contentType](../resources/contenttype.md) object.|
 |[Delete contentType](../api/contenttype-delete.md)|None|Deletes a [contentType](../resources/contenttype.md) object.|
-|[List columns](../api/contenttype-list-columns.md)|[columnDefinition](../resources/columnDefinition.md) collection|Get a list of the [columnDefinition](../resources/columnDefinition.md) objects and their properties.|
-|[Create column](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columnDefinition.md)|Add an existing [columnDefinition](../resources/columnDefinition.md) object.|
 |[isPublished](../api/contenttype-ispublished.md)|Boolean| Checks if the [contentType](../resources/contenttype.md) is published.|
-|[associateWithHubSites](../api/contenttype-associatewithhubsites.md)|[contentType](../resources/contenttype.md)|Associates a [contentType](../resources/contenttype.md) with a list of hubsites.|
-|[copyToDefaultContentLocation](../api/contenttype-copytodefaultcontentlocation.md)|[contentType](../resources/contenttype.md)| Copy a file to default content location in a [contentType](../resources/contenttype.md).|
 |[publish](../api/contenttype-publish.md)|[contentType](../resources/contenttype.md)| Publish a [contentType](../resources/contenttype.md).|
 |[unpublish](../api/contenttype-unpublish.md)|[contentType](../resources/contenttype.md)|Unpublish a [contentType](../resources/contenttype.md).|
-|[addCopy](../api/contenttype-addcopy.md)|[contentType](../resources/contenttype.md)|Add copy of a [site](../resources/site.md) [contentType](../resources/contenttype.md) to a [list](../resources/list.md)).|
+|[addCopy](../api/contenttype-addcopy.md)|[contentType](../resources/contenttype.md)|Add copy of a [contentType](../resources/contenttype.md) from a [site](../resources/site.md) to a [list](../resources/list.md)).|
+|[associateWithHubSites](../api/contenttype-associatewithhubsites.md)|[contentType](../resources/contenttype.md)|Associates a [contentType](../resources/contenttype.md) with a list of hubsites.|
+|[copyToDefaultContentLocation](../api/contenttype-copytodefaultcontentlocation.md)|[contentType](../resources/contenttype.md)| Copy a file to default content location in a [contentType](../resources/contenttype.md).|
+|[List columns](../api/contenttype-list-columns.md)|[columnDefinition](../resources/columnDefinition.md) collection|Get a collection of columns, represented as [columnDefinition](../resources/columnDefinition.md) resources, in a **contentType**.|
+|[Create column](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columnDefinition.md)|Add a column to a **content type** in a site or list.|
 
 
 ## Properties

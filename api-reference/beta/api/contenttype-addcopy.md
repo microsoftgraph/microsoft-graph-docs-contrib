@@ -11,7 +11,7 @@ ms.prod: "sites-and-lists"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Add a copy of a [site][site] [content type][contentType] to a [list][list].
+Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
  
   
 

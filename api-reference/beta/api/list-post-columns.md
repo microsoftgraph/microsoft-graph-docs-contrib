@@ -12,7 +12,7 @@ ms.prod: "sites-and-lists"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Create a column, by specifying a [columnDefinition][columnDefinition], for a [list][list].
+Create a column for a [list][list] by specifying a [columnDefinition][columnDefinition].
 
 ## Permissions
 

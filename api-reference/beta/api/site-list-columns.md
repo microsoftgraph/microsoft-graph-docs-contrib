@@ -11,7 +11,7 @@ ms.prod: "sites-and-lists"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the collection of columns, represented by [columnDefinition][columnDefinition] resources, in a [site][site].
+Get the collection of columns, represented as [columnDefinition][columnDefinition] resources, in a [site][site].
 
   
 

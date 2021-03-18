@@ -12541,7 +12541,7 @@ items:
           href: api/sites-list-followed.md
         - name: List columns
           href: api/site-list-columns.md
-        - name: Create columnDefinition
+        - name: Create column
           href: api/site-post-columns.md
         - name: List content types
           href: api/site-list-contenttypes.md
@@ -12583,7 +12583,7 @@ items:
           href: api/listitem-list.md
         - name: List columns
           href: api/list-list-columns.md
-        - name: Create columnDefinition
+        - name: Create column
           href: api/list-post-columns.md
         - name: List content types
           href: api/list-list-contenttypes.md
@@ -12623,7 +12623,7 @@ items:
           href: api/contenttype-copytodefaultcontentlocation.md
         - name: List columns
           href: api/contenttype-list-columns.md
-        - name: Create columnDefinition
+        - name: Create column
           href: api/contenttype-post-columns.md
       - name: List items
         items:
