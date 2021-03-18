@@ -84,7 +84,6 @@ If successful, this method returns a `201 Created` response code and [identityPr
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -133,6 +132,7 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
+
 ### Example 2: Create a specific **openIDConnectProvider** (only for Azure AD B2C)
 
 #### Request
@@ -171,18 +171,6 @@ Content-type: application/json
 }
 
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-openidconnectprovider-from-identityproviders-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-openidconnectprovider-from-identityproviders-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-openidconnectprovider-from-identityproviders-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
